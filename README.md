@@ -4,26 +4,26 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 
 ## Table of Contents
 
-- [Introduction](##Introduction)
+- [Introduction](#Introduction)
 
-- [Getting Started](##Getting-Started)
-  * [Prerequisites](####Prerequisites)
-  * [Installing DocFX](####Installing-DocFX)
-  * [Installing Node JS](####Installing-Node-JS)
+- [Getting Started](#Getting-Started)
+  * [Prerequisites](#Prerequisites)
+  * [Installing DocFX](#Installing-DocFX)
+  * [Installing Node JS](#Installing-Node-JS)
 
-- [Writing Documentation](##Writing-Documentation)
-  * [Creating Branches](####Creating-Branches)
-  * [Changing Docs](####Changing-Docs)
-  * [Creating Pull Requests](####Creating-Pull-Requests)
-  * [Following Rules](####Following-Rules)
-  * [Using Variables](####Using-Variables)
+- [Writing Documentation](#Writing-Documentation)
+  * [Creating Branches](#Creating-Branches)
+  * [Changing Docs](#Changing-Docs)
+  * [Creating Pull Requests](#Creating-Pull-Requests)
+  * [Following Rules](#Following-Rules)
+  * [Using Variables](#Using-Variables)
 
-- [Running Docs](##Running-Docs)
-- [Building Docs](##Building-Docs)
+- [Running Docs](#Running-Docs)
+- [Building Docs](#Building-Docs)
 
-- [Maintenance](##Maintenance)
-  * [Updating API Mapping Files](####Updating-API-Mapping-Files)
-  * [Merging Branches](####Merging-Branches)
+- [Maintenance](#Maintenance)
+  * [Updating API Mapping Files](#Updating-API-Mapping-Files)
+  * [Merging Branches](#Merging-Branches)
 
 
 ## Getting Started
