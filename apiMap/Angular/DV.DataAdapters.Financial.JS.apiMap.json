@@ -1,0 +1,22 @@
+{
+"types": [
+{
+    "originalName": "StockChangedEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-stock-changed-event-args.ts",
+ "mappedName": "IgxStockChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "addedSymbols"}            ],
+           "originalName": "AddedSymbols"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "removedSymbols"}            ],
+           "originalName": "RemovedSymbols"
+       }   ],
+    "originalNamespace": "Infragistics.DataAdapters"
+}
+]
+}

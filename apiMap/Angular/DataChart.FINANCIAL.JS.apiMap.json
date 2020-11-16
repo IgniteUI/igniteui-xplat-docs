@@ -1,0 +1,452 @@
+{
+"extraFiles": [
+"igx-financial-price-series-proxy-module.ts",
+"igx-financial-price-series-proxy-dynamic-module.ts"
+],
+"types": [
+{
+    "originalName": "FinancialEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-financial-event-args.ts",
+ "mappedName": "IgxFinancialEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "position"}            ],
+           "originalName": "Position"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "count"}            ],
+           "originalName": "Count"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxFinancialCalculationDataSource", "mappedName": "dataSource"}            ],
+           "originalName": "DataSource"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxFinancialCalculationSupportingCalculations", "mappedName": "supportingCalculations"}            ],
+           "originalName": "SupportingCalculations"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialPriceSeries",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-financial-price-series-component.ts",
+    "dynamicModuleName": "igx-financial-price-series-dynamic-module.ts",
+    "moduleName": "igx-financial-price-series-module.ts",
+ "mappedName": "IgxFinancialPriceSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
+           "originalName": "TrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
+           "originalName": "ActualTrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "PriceDisplayType", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "negativeOutline"}            ],
+           "originalName": "NegativeOutline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       }   ],
+    "originalBaseTypeName": "FinancialSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialSeries",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-financial-series-component.ts",
+ "mappedName": "IgxFinancialSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
+           "originalName": "IsFinancial"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "negativeBrush"}            ],
+           "originalName": "NegativeBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxCategoryAxisBaseComponent", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxNumericYAxisComponent", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "openMemberPath"}            ],
+           "originalName": "OpenMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "highMemberPath"}            ],
+           "originalName": "HighMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "lowMemberPath"}            ],
+           "originalName": "LowMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "closeMemberPath"}            ],
+           "originalName": "CloseMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "volumeMemberPath"}            ],
+           "originalName": "VolumeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}            ],
+           "originalName": "IsCustomCategoryStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
+           "originalName": "TransitionInMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
+           "originalName": "IsTransitionInEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],
+           "originalName": "IsNegativeColorSupported"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
+           "originalName": "GetOffsetValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
+           "originalName": "GetCategoryWidth"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesCloseValue"}            ],
+           "originalName": "GetSeriesCloseValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesOpenValue"}            ],
+           "originalName": "GetSeriesOpenValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesVolumeValue"}            ],
+           "originalName": "GetSeriesVolumeValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesOpenValuePosition"}            ],
+           "originalName": "GetSeriesOpenValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesCloseValuePosition"}            ],
+           "originalName": "GetSeriesCloseValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesVolumeValuePosition"}            ],
+           "originalName": "GetSeriesVolumeValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialCalculationSupportingCalculations",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-financial-calculation-supporting-calculations.ts",
+ "mappedName": "IgxFinancialCalculationSupportingCalculations"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxColumnSupportingCalculation", "mappedName": "eMA"}            ],
+           "originalName": "EMA"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxColumnSupportingCalculation", "mappedName": "sMA"}            ],
+           "originalName": "SMA"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxColumnSupportingCalculation", "mappedName": "sTDEV"}            ],
+           "originalName": "STDEV"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxColumnSupportingCalculation", "mappedName": "movingSum"}            ],
+           "originalName": "MovingSum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxDataSourceSupportingCalculation", "mappedName": "shortVolumeOscillatorAverage"}            ],
+           "originalName": "ShortVolumeOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxDataSourceSupportingCalculation", "mappedName": "longVolumeOscillatorAverage"}            ],
+           "originalName": "LongVolumeOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxDataSourceSupportingCalculation", "mappedName": "shortPriceOscillatorAverage"}            ],
+           "originalName": "ShortPriceOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxDataSourceSupportingCalculation", "mappedName": "longPriceOscillatorAverage"}            ],
+           "originalName": "LongPriceOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(arg1: number) => number", "mappedName": "makeSafe"}            ],
+           "originalName": "MakeSafe"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ColumnSupportingCalculation",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-column-supporting-calculation.ts",
+ "mappedName": "IgxColumnSupportingCalculation"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SupportingCalculation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DataSourceSupportingCalculation",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-data-source-supporting-calculation.ts",
+ "mappedName": "IgxDataSourceSupportingCalculation"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SupportingCalculation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalculatedColumn",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-calculated-column.ts",
+ "mappedName": "IgxCalculatedColumn"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialCalculationDataSource",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-financial-calculation-data-source.ts",
+ "mappedName": "IgxFinancialCalculationDataSource"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxCalculatedColumn", "mappedName": "typicalColumn"}            ],
+           "originalName": "TypicalColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxCalculatedColumn", "mappedName": "trueRange"}            ],
+           "originalName": "TrueRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxCalculatedColumn", "mappedName": "trueLow"}            ],
+           "originalName": "TrueLow"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "count"}            ],
+           "originalName": "Count"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "calculateFrom"}            ],
+           "originalName": "CalculateFrom"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "calculateCount"}            ],
+           "originalName": "CalculateCount"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "multiplier"}            ],
+           "originalName": "Multiplier"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "specifiesRange"}            ],
+           "originalName": "SpecifiesRange"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

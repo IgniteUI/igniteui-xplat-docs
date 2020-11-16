@@ -1,0 +1,1880 @@
+{
+"types": [
+{
+    "originalName": "SeriesViewer",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SeriesViewer.cs",
+ "mappedName": "SeriesViewer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesCollection", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "CrosshairPoint"}            ],
+           "originalName": "CrosshairPoint"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AnimateSeriesWhenAxisRangeChanges"}            ],
+           "originalName": "AnimateSeriesWhenAxisRangeChanges"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "ViewportRect"}            ],
+           "originalName": "ViewportRect"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "EffectiveViewport"}            ],
+           "originalName": "EffectiveViewport"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "WindowRect"}            ],
+           "originalName": "WindowRect"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseTiledZooming"}            ],
+           "originalName": "UseTiledZooming"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "PreferHigherResolutionTiles"}            ],
+           "originalName": "PreferHigherResolutionTiles"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ZoomTileCacheSize"}            ],
+           "originalName": "ZoomTileCacheSize"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "HighlightingTransitionDuration"}            ],
+           "originalName": "HighlightingTransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsPagePanningAllowed"}            ],
+           "originalName": "IsPagePanningAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ChartHitTestMode", "mappedName": "ContentHitTestMode"}            ],
+           "originalName": "ContentHitTestMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ChartHitTestMode", "mappedName": "ActualContentHitTestMode"}            ],
+           "originalName": "ActualContentHitTestMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSurfaceInteractionDisabled"}            ],
+           "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "WindowResponse", "mappedName": "WindowResponse"}            ],
+           "originalName": "WindowResponse"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "WindowRectMinWidth"}            ],
+           "originalName": "WindowRectMinWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "CrosshairVisibility"}            ],
+           "originalName": "CrosshairVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PlotAreaBackground"}            ],
+           "originalName": "PlotAreaBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "InteractionState", "mappedName": "DefaultInteraction"}            ],
+           "originalName": "DefaultInteraction"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "InteractionState", "mappedName": "RightButtonDefaultInteraction"}            ],
+           "originalName": "RightButtonDefaultInteraction"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ModifierKeys", "mappedName": "DragModifier"}            ],
+           "originalName": "DragModifier"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ModifierKeys", "mappedName": "PanModifier"}            ],
+           "originalName": "PanModifier"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "PreviewRect"}            ],
+           "originalName": "PreviewRect"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "WindowPositionHorizontal"}            ],
+           "originalName": "WindowPositionHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "WindowPositionVertical"}            ],
+           "originalName": "WindowPositionVertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ChartTitle"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "TitleHorizontalAlignment"}            ],
+           "originalName": "TitleHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "SubtitleHorizontalAlignment"}            ],
+           "originalName": "SubtitleHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleTextStyle"}            ],
+           "originalName": "TitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SubtitleTextStyle"}            ],
+           "originalName": "SubtitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleTextColor"}            ],
+           "originalName": "TitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SubtitleTextColor"}            ],
+           "originalName": "SubtitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleTopMargin"}            ],
+           "originalName": "TitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleLeftMargin"}            ],
+           "originalName": "TitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleRightMargin"}            ],
+           "originalName": "TitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleBottomMargin"}            ],
+           "originalName": "TitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleTopMargin"}            ],
+           "originalName": "SubtitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleLeftMargin"}            ],
+           "originalName": "SubtitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleRightMargin"}            ],
+           "originalName": "SubtitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleBottomMargin"}            ],
+           "originalName": "SubtitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Subtitle"}            ],
+           "originalName": "Subtitle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TopMargin"}            ],
+           "originalName": "TopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LeftMargin"}            ],
+           "originalName": "LeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RightMargin"}            ],
+           "originalName": "RightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BottomMargin"}            ],
+           "originalName": "BottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoMarginWidth"}            ],
+           "originalName": "AutoMarginWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoMarginHeight"}            ],
+           "originalName": "AutoMarginHeight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAntiAliasingEnabledDuringInteraction"}            ],
+           "originalName": "IsAntiAliasingEnabledDuringInteraction"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "InteractionPixelScalingRatio"}            ],
+           "originalName": "InteractionPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPixelScalingRatio"}            ],
+           "originalName": "ActualPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualInteractionPixelScalingRatio"}            ],
+           "originalName": "ActualInteractionPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "ActualWindowRect"}            ],
+           "originalName": "ActualWindowRect"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualWindowPositionHorizontal"}            ],
+           "originalName": "ActualWindowPositionHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualWindowPositionVertical"}            ],
+           "originalName": "ActualWindowPositionVertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "HideToolTip"}            ],
+           "originalName": "HideToolTip"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StartTiledZoomingIfNecessary"}            ],
+           "originalName": "StartTiledZoomingIfNecessary"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "EndTiledZoomingIfRunning"}            ],
+           "originalName": "EndTiledZoomingIfRunning"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ClearTileZoomCache"}            ],
+           "originalName": "ClearTileZoomCache"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResetZoom"}            ],
+           "originalName": "ResetZoom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetActualWindowScaleHorizontal"}            ],
+           "originalName": "GetActualWindowScaleHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetActualWindowScaleVertical"}            ],
+           "originalName": "GetActualWindowScaleVertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyContainerResized"}            ],
+           "originalName": "NotifyContainerResized"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Destroy"}            ],
+           "originalName": "Destroy"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RenderToImage"}            ],
+           "originalName": "RenderToImage"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Flush"}            ],
+           "originalName": "Flush"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "RefreshCompletedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "RefreshCompletedEventArgs.cs",
+ "mappedName": "RefreshCompletedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "Axis",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Axis.cs",
+ "mappedName": "Axis"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Title"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Stroke"}            ],
+           "originalName": "Stroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualStroke"}            ],
+           "originalName": "ActualStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Strip"}            ],
+           "originalName": "Strip"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MajorStroke"}            ],
+           "originalName": "MajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMajorStroke"}            ],
+           "originalName": "ActualMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MajorStrokeThickness"}            ],
+           "originalName": "MajorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MinorStroke"}            ],
+           "originalName": "MinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMinorStroke"}            ],
+           "originalName": "ActualMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorStrokeThickness"}            ],
+           "originalName": "MinorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TickStroke"}            ],
+           "originalName": "TickStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TickStrokeThickness"}            ],
+           "originalName": "TickStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TickLength"}            ],
+           "originalName": "TickLength"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDisabled"}            ],
+           "originalName": "IsDisabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsInverted"}            ],
+           "originalName": "IsInverted"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseEnhancedIntervalManagement"}            ],
+           "originalName": "UseEnhancedIntervalManagement"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "EnhancedIntervalMinimumCharacters"}            ],
+           "originalName": "EnhancedIntervalMinimumCharacters"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelTextColor"}            ],
+           "originalName": "labelSettings.textColor"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "LabelLocation"}            ],
+           "originalName": "labelSettings.location"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "LabelVisibility"}            ],
+           "originalName": "labelSettings.visibility"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "LabelShowFirstLabel"}            ],
+           "originalName": "labelSettings.showFirstLabel"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelAngle"}            ],
+           "originalName": "labelSettings.angle"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelExtent"}            ],
+           "originalName": "labelSettings.extent"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelLeftMargin"}            ],
+           "originalName": "labelSettings.leftMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelRightMargin"}            ],
+           "originalName": "labelSettings.rightMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelTopMargin"}            ],
+           "originalName": "labelSettings.topMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelBottomMargin"}            ],
+           "originalName": "labelSettings.bottomMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "LabelHorizontalAlignment"}            ],
+           "originalName": "labelSettings.horizontalAlignment"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "VerticalAlignment", "mappedName": "LabelVerticalAlignment"}            ],
+           "originalName": "labelSettings.verticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Axis", "mappedName": "CrossingAxis"}            ],
+           "originalName": "CrossingAxis"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "CrossingValue"}            ],
+           "originalName": "CrossingValue"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisTitlePosition", "mappedName": "TitlePosition"}            ],
+           "originalName": "titleSettings.position"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleTextColor"}            ],
+           "originalName": "titleSettings.textColor"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "TitleLocation"}            ],
+           "originalName": "titleSettings.location"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "TitleVisibility"}            ],
+           "originalName": "titleSettings.visibility"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "TitleShowFirstLabel"}            ],
+           "originalName": "titleSettings.showFirstLabel"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleAngle"}            ],
+           "originalName": "titleSettings.angle"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleExtent"}            ],
+           "originalName": "titleSettings.extent"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleLeftMargin"}            ],
+           "originalName": "titleSettings.leftMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleRightMargin"}            ],
+           "originalName": "titleSettings.rightMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleTopMargin"}            ],
+           "originalName": "titleSettings.topMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleBottomMargin"}            ],
+           "originalName": "titleSettings.bottomMargin"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "TitleHorizontalAlignment"}            ],
+           "originalName": "titleSettings.horizontalAlignment"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "VerticalAlignment", "mappedName": "TitleVerticalAlignment"}            ],
+           "originalName": "titleSettings.verticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisAnnotationCollection", "mappedName": "Annotations"}            ],
+           "originalName": "Annotations"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "CoercionMethods"}            ],
+           "originalName": "CoercionMethods"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ExpectFunctions"}            ],
+           "originalName": "ExpectFunctions"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RenderAxis"}            ],
+           "originalName": "RenderAxis"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResetCachedEnhancedInterval"}            ],
+           "originalName": "ResetCachedEnhancedInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetValueLabel"}            ],
+           "originalName": "GetValueLabel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScaleValue"}            ],
+           "originalName": "ScaleValue"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryAxisBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "CategoryAxisBase.cs",
+ "mappedName": "CategoryAxisBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
+           "originalName": "ItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemsCount"}            ],
+           "originalName": "ItemsCount"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Gap"}            ],
+           "originalName": "Gap"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Overlap"}            ],
+           "originalName": "Overlap"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseClusteringMode"}            ],
+           "originalName": "UseClusteringMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCategoryBoundingBox"}            ],
+           "originalName": "GetCategoryBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCategoryBoundingBoxHelper"}            ],
+           "originalName": "GetCategoryBoundingBoxHelper"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UnscaleValue"}            ],
+           "originalName": "UnscaleValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalBaseTypeName": "Axis",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryXAxis",
+   "names": [
+        { "platform": "Blazor",     "fileName": "CategoryXAxis.cs",
+ "mappedName": "CategoryXAxis"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Interval"}            ],
+           "originalName": "Interval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualInterval"}            ],
+           "originalName": "ActualInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorInterval"}            ],
+           "originalName": "MinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMinorInterval"}            ],
+           "originalName": "ActualMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollRangeIntoView"}            ],
+           "originalName": "ScrollRangeIntoView"
+       }   ],
+    "originalBaseTypeName": "CategoryAxisBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "NumericAxisBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NumericAxisBase.cs",
+ "mappedName": "NumericAxisBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMinimumValue"}            ],
+           "originalName": "ActualMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualVisibleMinimumValue"}            ],
+           "originalName": "ActualVisibleMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMaximumValue"}            ],
+           "originalName": "ActualMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualVisibleMaximumValue"}            ],
+           "originalName": "ActualVisibleMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Interval"}            ],
+           "originalName": "Interval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualInterval"}            ],
+           "originalName": "ActualInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorInterval"}            ],
+           "originalName": "MinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMinorInterval"}            ],
+           "originalName": "ActualMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ReferenceValue"}            ],
+           "originalName": "ReferenceValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLogarithmic"}            ],
+           "originalName": "IsLogarithmic"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ActualIsLogarithmic"}            ],
+           "originalName": "ActualIsLogarithmic"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "LogarithmBase"}            ],
+           "originalName": "LogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AbbreviateLargeNumbers"}            ],
+           "originalName": "AbbreviateLargeNumbers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UnscaleValue"}            ],
+           "originalName": "UnscaleValue"
+       }   ],
+    "originalBaseTypeName": "Axis",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StraightNumericAxisBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "StraightNumericAxisBase.cs",
+ "mappedName": "StraightNumericAxisBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "NumericScaleMode", "mappedName": "ScaleMode"}            ],
+           "originalName": "ScaleMode"
+       }   ],
+    "originalBaseTypeName": "NumericAxisBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "NumericXAxis",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NumericXAxis.cs",
+ "mappedName": "NumericXAxis"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollRangeIntoView"}            ],
+           "originalName": "ScrollRangeIntoView"
+       }   ],
+    "originalBaseTypeName": "StraightNumericAxisBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "NumericYAxis",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NumericYAxis.cs",
+ "mappedName": "NumericYAxis"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollRangeIntoView"}            ],
+           "originalName": "ScrollRangeIntoView"
+       }   ],
+    "originalBaseTypeName": "StraightNumericAxisBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScalerParams",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ScalerParams.cs",
+ "mappedName": "ScalerParams"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ReferenceValue"}            ],
+           "originalName": "ReferenceValue"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "HighlightingInfo",
+   "names": [
+        { "platform": "Blazor",     "fileName": "HighlightingInfo.cs",
+ "mappedName": "HighlightingInfo"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "StartIndex"}            ],
+           "originalName": "StartIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "EndIndex"}            ],
+           "originalName": "EndIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HighlightingState", "mappedName": "State"}            ],
+           "originalName": "State"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Progress"}            ],
+           "originalName": "Progress"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsMarker"}            ],
+           "originalName": "IsMarker"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "HighlightingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Blazor",     "fileName": "HighlightingMode.cs",
+ "mappedName": "HighlightingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HighlightingMode", "mappedName": "Closest"}            ],
+           "originalName": "Closest"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HighlightingMode", "mappedName": "DirectlyOver"}            ],
+           "originalName": "DirectlyOver"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "RenderRequestedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "RenderRequestedEventArgs.cs",
+ "mappedName": "RenderRequestedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Animate"}            ],
+           "originalName": "Animate"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgsBase.cs",
+ "mappedName": "AssigningCategoryStyleEventArgsBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "StartIndex"}            ],
+           "originalName": "StartIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "EndIndex"}            ],
+           "originalName": "EndIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "StartDate"}            ],
+           "originalName": "StartDate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "EndDate"}            ],
+           "originalName": "EndDate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Stroke"}            ],
+           "originalName": "Stroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "HighlightingInfo", "mappedName": "HighlightingInfo"}            ],
+           "originalName": "HighlightingInfo"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaxAllSeriesHighlightingProgress"}            ],
+           "originalName": "MaxAllSeriesHighlightingProgress"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SumAllSeriesHighlightingProgress"}            ],
+           "originalName": "SumAllSeriesHighlightingProgress"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HighlightingHandled"}            ],
+           "originalName": "HighlightingHandled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasDateRange"}            ],
+           "originalName": "HasDateRange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNegativeShape"}            ],
+           "originalName": "IsNegativeShape"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsThumbnail"}            ],
+           "originalName": "IsThumbnail"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgs.cs",
+ "mappedName": "AssigningCategoryStyleEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusX"}            ],
+           "originalName": "RadiusX"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusY"}            ],
+           "originalName": "RadiusY"
+       }   ],
+    "originalBaseTypeName": "AssigningCategoryStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningCategoryMarkerStyleEventArgs.cs",
+ "mappedName": "AssigningCategoryMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningCategoryStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XamDataChart",
+   "names": [
+        { "platform": "Blazor",     "fileName": "DataChart.cs",
+ "mappedName": "DataChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSquare"}            ],
+           "originalName": "IsSquare"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "WindowScaleHorizontal"}            ],
+           "originalName": "WindowScaleHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "WindowScaleVertical"}            ],
+           "originalName": "WindowScaleVertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualWindowScaleHorizontal"}            ],
+           "originalName": "ActualWindowScaleHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualWindowScaleVertical"}            ],
+           "originalName": "ActualWindowScaleVertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHorizontalZoomEnabled"}            ],
+           "originalName": "IsHorizontalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsVerticalZoomEnabled"}            ],
+           "originalName": "IsVerticalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "GridMode", "mappedName": "GridMode"}            ],
+           "originalName": "GridMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AlignsGridLinesToPixels"}            ],
+           "originalName": "AlignsGridLinesToPixels"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrushes"}            ],
+           "originalName": "MarkerBrushes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutlines"}            ],
+           "originalName": "MarkerOutlines"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DefaultAxisStroke"}            ],
+           "originalName": "DefaultAxisStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DefaultAxisMajorStroke"}            ],
+           "originalName": "DefaultAxisMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DefaultAxisMinorStroke"}            ],
+           "originalName": "DefaultAxisMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisCollection", "mappedName": "Axes"}            ],
+           "originalName": "Axes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginLeft"}            ],
+           "originalName": "PlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginTop"}            ],
+           "originalName": "PlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginRight"}            ],
+           "originalName": "PlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginBottom"}            ],
+           "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StyleUpdated"}            ],
+           "originalName": "StyleUpdated"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "SeriesViewer",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MarkerSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "MarkerSeries.cs",
+ "mappedName": "MarkerSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ActualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AxisOrientation",
+    "isEnum": true,
+   "names": [
+        { "platform": "Blazor",     "fileName": "AxisOrientation.cs",
+ "mappedName": "AxisOrientation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisOrientation", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisOrientation", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisOrientation", "mappedName": "Angular"}            ],
+           "originalName": "Angular"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "AxisOrientation", "mappedName": "Radial"}            ],
+           "originalName": "Radial"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "EnableErrorBars",
+    "isEnum": true,
+   "names": [
+        { "platform": "Blazor",     "fileName": "EnableErrorBars.cs",
+ "mappedName": "EnableErrorBars"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EnableErrorBars", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EnableErrorBars", "mappedName": "Both"}            ],
+           "originalName": "Both"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EnableErrorBars", "mappedName": "Positive"}            ],
+           "originalName": "Positive"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EnableErrorBars", "mappedName": "Negative"}            ],
+           "originalName": "Negative"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AxisRangeChangedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AxisRangeChangedEventArgs.cs",
+ "mappedName": "AxisRangeChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OldMinimumValue"}            ],
+           "originalName": "OldMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OldMaximumValue"}            ],
+           "originalName": "OldMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
+           "originalName": "MaximumValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutStyleUpdatingEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "CalloutStyleUpdatingEventArgs.cs",
+ "mappedName": "CalloutStyleUpdatingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XValue"}            ],
+           "originalName": "XValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YValue"}            ],
+           "originalName": "YValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LeaderBrush"}            ],
+           "originalName": "LeaderBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChartCursorEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ChartCursorEventArgs.cs",
+ "mappedName": "ChartCursorEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesViewer", "mappedName": "SeriesViewer"}            ],
+           "originalName": "SeriesViewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DataChartMouseButtonEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "DataChartMouseButtonEventArgs.cs",
+ "mappedName": "DataChartMouseButtonEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Handled"}            ],
+           "originalName": "Handled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalSource"}            ],
+           "originalName": "OriginalSource"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesViewer", "mappedName": "Chart"}            ],
+           "originalName": "Chart"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPosition"}            ],
+           "originalName": "GetPosition"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChartMouseEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ChartMouseEventArgs.cs",
+ "mappedName": "ChartMouseEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalSource"}            ],
+           "originalName": "OriginalSource"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesViewer", "mappedName": "Chart"}            ],
+           "originalName": "Chart"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPosition"}            ],
+           "originalName": "GetPosition"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "Series",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Series.cs",
+ "mappedName": "Series"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
+           "originalName": "ItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "LegendItemVisibility"}            ],
+           "originalName": "LegendItemVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendItemBadgeTemplate"}            ],
+           "originalName": "LegendItemBadgeTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendItemTemplate"}            ],
+           "originalName": "LegendItemTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DiscreteLegendItemTemplate"}            ],
+           "originalName": "DiscreteLegendItemTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Resolution"}            ],
+           "originalName": "Resolution"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brush"}            ],
+           "originalName": "Brush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualBrush"}            ],
+           "originalName": "ActualBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualOutline"}            ],
+           "originalName": "ActualOutline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Thickness"}            ],
+           "originalName": "Thickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHighlightingEnabled"}            ],
+           "originalName": "IsHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDropShadowEnabled"}            ],
+           "originalName": "IsDropShadowEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ShadowBlur"}            ],
+           "originalName": "ShadowBlur"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ShadowColor"}            ],
+           "originalName": "ShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseSingleShadow"}            ],
+           "originalName": "UseSingleShadow"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ShadowOffsetX"}            ],
+           "originalName": "ShadowOffsetX"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ShadowOffsetY"}            ],
+           "originalName": "ShadowOffsetY"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AreaFillOpacity"}            ],
+           "originalName": "AreaFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualAreaFillOpacity"}            ],
+           "originalName": "ActualAreaFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDefaultToolTipSelected"}            ],
+           "originalName": "IsDefaultToolTipSelected"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowDefaultTooltip"}            ],
+           "originalName": "ShowDefaultTooltip"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionInDuration"}            ],
+           "originalName": "TransitionInDuration"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "TransitionInSpeedType", "mappedName": "TransitionInSpeedType"}            ],
+           "originalName": "TransitionInSpeedType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "MouseOverEnabled"}            ],
+           "originalName": "MouseOverEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "CoercionMethods"}            ],
+           "originalName": "CoercionMethods"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ExpectFunctions"}            ],
+           "originalName": "ExpectFunctions"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHitTestMode", "mappedName": "HitTestMode"}            ],
+           "originalName": "HitTestMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHitTestMode", "mappedName": "ActualHitTestMode"}            ],
+           "originalName": "ActualHitTestMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "FinalValue"}            ],
+           "originalName": "FinalValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PercentChange"}            ],
+           "originalName": "PercentChange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "Visibility"}            ],
+           "originalName": "Visibility"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveTooltipBrush"}            ],
+           "originalName": "ResolveTooltipBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "HideToolTips"}            ],
+           "originalName": "HideToolTips"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToWorldPosition"}            ],
+           "originalName": "ToWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "FromWorldPosition"}            ],
+           "originalName": "FromWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RenderSeries"}            ],
+           "originalName": "RenderSeries"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetEffectiveViewport"}            ],
+           "originalName": "GetEffectiveViewport"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveAllAlternateViews"}            ],
+           "originalName": "RemoveAllAlternateViews"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveAlternateView"}            ],
+           "originalName": "RemoveAlternateView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ReplayTransitionIn"}            ],
+           "originalName": "ReplayTransitionIn"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveAxes"}            ],
+           "originalName": "RemoveAxes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SimulateHover"}            ],
+           "originalName": "SimulateHover"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StyleUpdated"}            ],
+           "originalName": "StyleUpdated"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "MoveCursorPoint"}            ],
+           "originalName": "MoveCursorPoint"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

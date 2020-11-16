@@ -1,0 +1,1280 @@
+{
+"types": [
+{
+    "originalName": "IDataSeriesAdapterRule",
+   "names": [
+        { "platform": "React",     "fileName": "IDataSeriesAdapterRule.ts",
+ "mappedName": "IDataSeriesAdapterRule"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesAdapterRunContext",
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesAdapterRunContext.ts",
+ "mappedName": "DataSeriesAdapterRunContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrDataSeriesAdapterImplementation", "mappedName": "owner"}            ],
+           "originalName": "Owner"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesDataProviderAnalyzer", "mappedName": "analyzer"}            ],
+           "originalName": "Analyzer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrDataSeriesCollection", "mappedName": "_dataSeries"}            ],
+           "originalName": "_dataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceLocalDataProvider", "mappedName": "getSubProvider"}            ],
+           "originalName": "GetSubProvider"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "popSubProvider"}            ],
+           "originalName": "PopSubProvider"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "localize"}            ],
+           "originalName": "Localize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "recurseRules"}            ],
+           "originalName": "RecurseRules"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Stack", "mappedName": "_dataSources"}            ],
+           "originalName": "_dataSources"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Stack", "mappedName": "_paths"}            ],
+           "originalName": "_paths"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Stack", "mappedName": "_parentTitles"}            ],
+           "originalName": "_parentTitles"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "_includedProperties"}            ],
+           "originalName": "_includedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "_excludedProeprties"}            ],
+           "originalName": "_excludedProeprties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HashSet", "mappedName": "_supportedSeriesMap"}            ],
+           "originalName": "_supportedSeriesMap"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
+           "originalName": "IncludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "excludedProperties"}            ],
+           "originalName": "ExcludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceLocalDataProvider", "mappedName": "getCurrentDataSource"}            ],
+           "originalName": "GetCurrentDataSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "pushDataSource"}            ],
+           "originalName": "PushDataSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasValidType"}            ],
+           "originalName": "HasValidType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "popDataSource"}            ],
+           "originalName": "PopDataSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getCurrentPathSegment"}            ],
+           "originalName": "GetCurrentPathSegment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getCurrentPath"}            ],
+           "originalName": "GetCurrentPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getParentTitle"}            ],
+           "originalName": "GetParentTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "pushPath"}            ],
+           "originalName": "PushPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "popPath"}            ],
+           "originalName": "PopPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "pushParentTitle"}            ],
+           "originalName": "PushParentTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "popParentTitle"}            ],
+           "originalName": "PopParentTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "populateDataSeries"}            ],
+           "originalName": "PopulateDataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "addDataSeries"}            ],
+           "originalName": "AddDataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "removeDataSeries"}            ],
+           "originalName": "RemoveDataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "insertDataSeries"}            ],
+           "originalName": "InsertDataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "clearDataSeries"}            ],
+           "originalName": "ClearDataSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "getDataSeriesCount"}            ],
+           "originalName": "GetDataSeriesCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeries", "mappedName": "getDataSeriesAt"}            ],
+           "originalName": "GetDataSeriesAt"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesDataProviderAnalyzer",
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesDataProviderAnalyzer.ts",
+ "mappedName": "DataSeriesDataProviderAnalyzer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAdapterRunContext", "mappedName": "owner"}            ],
+           "originalName": "Owner"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "_includedProperties"}            ],
+           "originalName": "_includedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "_excludedProperties"}            ],
+           "originalName": "_excludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_hasInclusions"}            ],
+           "originalName": "_hasInclusions"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_hasExclusions"}            ],
+           "originalName": "_hasExclusions"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HashSet", "mappedName": "_includedPropertiesSet"}            ],
+           "originalName": "_includedPropertiesSet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "List", "mappedName": "_includedPropertiesMatchers"}            ],
+           "originalName": "_includedPropertiesMatchers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HashSet", "mappedName": "_excludedPropertiesSet"}            ],
+           "originalName": "_excludedPropertiesSet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "List", "mappedName": "_excludedPropertiesMatchers"}            ],
+           "originalName": "_excludedPropertiesMatchers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
+           "originalName": "IncludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "excludedProperties"}            ],
+           "originalName": "ExcludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getParentTitle"}            ],
+           "originalName": "GetParentTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldIncludeProperty"}            ],
+           "originalName": "ShouldIncludeProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "exclusionMatches"}            ],
+           "originalName": "ExclusionMatches"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "inclusionMatches"}            ],
+           "originalName": "InclusionMatches"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "expandCamelCasedWords"}            ],
+           "originalName": "ExpandCamelCasedWords"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasStringProperties"}            ],
+           "originalName": "HasStringProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllStringProperties"}            ],
+           "originalName": "GetAllStringProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCollection"}            ],
+           "originalName": "IsCollection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllPropertiesWithName"}            ],
+           "originalName": "GetAllPropertiesWithName"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllNumericProperties"}            ],
+           "originalName": "GetAllNumericProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllObjectProperties"}            ],
+           "originalName": "GetAllObjectProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllCollectionProperties"}            ],
+           "originalName": "GetAllCollectionProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstNumericProperty"}            ],
+           "originalName": "GetFirstNumericProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasNumericProperties"}            ],
+           "originalName": "HasNumericProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDateTimeType"}            ],
+           "originalName": "IsDateTimeType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "getPropertyType"}            ],
+           "originalName": "GetPropertyType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getMatchingProperties"}            ],
+           "originalName": "GetMatchingProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldPlot"}            ],
+           "originalName": "ShouldPlot"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "containsIntent"}            ],
+           "originalName": "ContainsIntent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllPropertiesWithIntent"}            ],
+           "originalName": "GetAllPropertiesWithIntent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllPropertiesWithValuelessIntent"}            ],
+           "originalName": "GetAllPropertiesWithValuelessIntent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getPropertyIntentValue"}            ],
+           "originalName": "GetPropertyIntentValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllPropertiesWithValuedIntent"}            ],
+           "originalName": "GetAllPropertiesWithValuedIntent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllPropertiesWithIntentHelper"}            ],
+           "originalName": "GetAllPropertiesWithIntentHelper"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "getAllDateTimeProperties"}            ],
+           "originalName": "GetAllDateTimeProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstDateTimeProperty"}            ],
+           "originalName": "GetFirstDateTimeProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstStringProperty"}            ],
+           "originalName": "GetFirstStringProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasDateTimeProperties"}            ],
+           "originalName": "HasDateTimeProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isNumericType"}            ],
+           "originalName": "IsNumericType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isObjectType"}            ],
+           "originalName": "IsObjectType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMonotonic"}            ],
+           "originalName": "IsMonotonic"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstMatchingDistinctProperty"}            ],
+           "originalName": "GetFirstMatchingDistinctProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstDistinctStringProperty"}            ],
+           "originalName": "GetFirstDistinctStringProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstDistinctNumericProperty"}            ],
+           "originalName": "GetFirstDistinctNumericProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstDistinctMonotonicNumericProperty"}            ],
+           "originalName": "GetFirstDistinctMonotonicNumericProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstDistinctDateTimeProperty"}            ],
+           "originalName": "GetFirstDistinctDateTimeProperty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getFirstStringPropertyPreferringDistinct"}            ],
+           "originalName": "GetFirstStringPropertyPreferringDistinct"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getTitleString"}            ],
+           "originalName": "GetTitleString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "extractTitle"}            ],
+           "originalName": "ExtractTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "getNonNullPropertyValue"}            ],
+           "originalName": "GetNonNullPropertyValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isStringPropertyDistinct"}            ],
+           "originalName": "IsStringPropertyDistinct"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDateTimePropertyDistinct"}            ],
+           "originalName": "IsDateTimePropertyDistinct"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "coerceToDouble"}            ],
+           "originalName": "CoerceToDouble"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isNumericPropertyDistinct"}            ],
+           "originalName": "IsNumericPropertyDistinct"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeries",
+   "names": [
+        { "platform": "React",     "fileName": "DataSeries.ts",
+ "mappedName": "DataSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "List", "mappedName": "_memberPathHints"}            ],
+           "originalName": "_memberPathHints"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "name"}            ],
+           "originalName": "Name"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "title"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "data"}            ],
+           "originalName": "Data"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "suggestedPrimaryAxis"}            ],
+           "originalName": "SuggestedPrimaryAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "suggestedSecondaryAxis"}            ],
+           "originalName": "SuggestedSecondaryAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "suggestedSeries"}            ],
+           "originalName": "SuggestedSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "dataPath"}            ],
+           "originalName": "DataPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "suggestedMarker"}            ],
+           "originalName": "SuggestedMarker"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "addMemberPathHint"}            ],
+           "originalName": "AddMemberPathHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "addMemberPathHint1"}            ],
+           "originalName": "AddMemberPathHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "addMemberPathHint2"}            ],
+           "originalName": "AddMemberPathHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "removeMemberPathHint"}            ],
+           "originalName": "RemoveMemberPathHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "clearMemberPathHints"}            ],
+           "originalName": "ClearMemberPathHints"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "getMemberPathHintCount"}            ],
+           "originalName": "GetMemberPathHintCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMemberPathHint", "mappedName": "getMemberPathHintAt"}            ],
+           "originalName": "GetMemberPathHintAt"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMemberPathHint", "mappedName": "findMatchingHint"}            ],
+           "originalName": "FindMatchingHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getMemberPathFor"}            ],
+           "originalName": "GetMemberPathFor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasMatchingHint"}            ],
+           "originalName": "HasMatchingHint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IList", "mappedName": "getAllPathHints"}            ],
+           "originalName": "GetAllPathHints"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "equals"}            ],
+           "originalName": "Equals"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesMemberPathHint",
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesMemberPathHint.ts",
+ "mappedName": "DataSeriesMemberPathHint"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "path"}            ],
+           "originalName": "Path"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "intent"}            ],
+           "originalName": "Intent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "equals"}            ],
+           "originalName": "Equals"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "update1"}            ],
+           "originalName": "Update"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "update"}            ],
+           "originalName": "Update"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasPath"}            ],
+           "originalName": "HasPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMemberPathHint", "mappedName": "clone"}            ],
+           "originalName": "Clone"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesIntent",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesIntent.ts",
+ "mappedName": "DataSeriesIntent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "PrimarySeriesValue"}            ],
+           "originalName": "PrimarySeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesX"}            ],
+           "originalName": "SeriesX"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesY"}            ],
+           "originalName": "SeriesY"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesFill"}            ],
+           "originalName": "SeriesFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesLabel"}            ],
+           "originalName": "SeriesLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesRadius"}            ],
+           "originalName": "SeriesRadius"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesAngle"}            ],
+           "originalName": "SeriesAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesShape"}            ],
+           "originalName": "SeriesShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesValue"}            ],
+           "originalName": "SeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesGroup"}            ],
+           "originalName": "SeriesGroup"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SeriesTitle"}            ],
+           "originalName": "SeriesTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "OpenSeriesValue"}            ],
+           "originalName": "OpenSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "HighSeriesValue"}            ],
+           "originalName": "HighSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "LowSeriesValue"}            ],
+           "originalName": "LowSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "CloseSeriesValue"}            ],
+           "originalName": "CloseSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "VolumeSeriesValue"}            ],
+           "originalName": "VolumeSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "AxisLabelValue"}            ],
+           "originalName": "AxisLabelValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "AxisDateValue"}            ],
+           "originalName": "AxisDateValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "DontPlot"}            ],
+           "originalName": "DontPlot"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesUnit"}            ],
+           "originalName": "SalesUnit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesFixedCost"}            ],
+           "originalName": "SalesFixedCost"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesVariableCost"}            ],
+           "originalName": "SalesVariableCost"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesTotalCost"}            ],
+           "originalName": "SalesTotalCost"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesRevenue"}            ],
+           "originalName": "SalesRevenue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "SalesMarginalProfit"}            ],
+           "originalName": "SalesMarginalProfit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesIntent", "mappedName": "GenerationInput"}            ],
+           "originalName": "GenerationInput"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesType.ts",
+ "mappedName": "DataSeriesType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Line"}            ],
+           "originalName": "Line"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Area"}            ],
+           "originalName": "Area"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Bar"}            ],
+           "originalName": "Bar"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "StepLine"}            ],
+           "originalName": "StepLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "StepArea"}            ],
+           "originalName": "StepArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Spline"}            ],
+           "originalName": "Spline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "SplineArea"}            ],
+           "originalName": "SplineArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Waterfall"}            ],
+           "originalName": "Waterfall"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Stacked"}            ],
+           "originalName": "Stacked"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Point"}            ],
+           "originalName": "Point"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterPoint"}            ],
+           "originalName": "ScatterPoint"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterLine"}            ],
+           "originalName": "ScatterLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterSpline"}            ],
+           "originalName": "ScatterSpline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterArea"}            ],
+           "originalName": "ScatterArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterContour"}            ],
+           "originalName": "ScatterContour"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterHighDensity"}            ],
+           "originalName": "ScatterHighDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterBubble"}            ],
+           "originalName": "ScatterBubble"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterPolygon"}            ],
+           "originalName": "ScatterPolygon"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ScatterPolyline"}            ],
+           "originalName": "ScatterPolyline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "FinancialPrice"}            ],
+           "originalName": "FinancialPrice"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "FinancialIndicator"}            ],
+           "originalName": "FinancialIndicator"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "FinancialOverlay"}            ],
+           "originalName": "FinancialOverlay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ValueOverlay"}            ],
+           "originalName": "ValueOverlay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "Unknown"}            ],
+           "originalName": "Unknown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "ItemToolTipLayer"}            ],
+           "originalName": "ItemToolTipLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "CategoryToolTipLayer"}            ],
+           "originalName": "CategoryToolTipLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "CrosshairLayer"}            ],
+           "originalName": "CrosshairLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "CalloutLayer"}            ],
+           "originalName": "CalloutLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "FinalValueLayer"}            ],
+           "originalName": "FinalValueLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "CategoryHighlightLayer"}            ],
+           "originalName": "CategoryHighlightLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesType", "mappedName": "CategoryItemHighlightLayer"}            ],
+           "originalName": "CategoryItemHighlightLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesAxisType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesAxisType.ts",
+ "mappedName": "DataSeriesAxisType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "Category"}            ],
+           "originalName": "Category"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "Linear"}            ],
+           "originalName": "Linear"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "Logarithmic"}            ],
+           "originalName": "Logarithmic"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "ContinuousDateTime"}            ],
+           "originalName": "ContinuousDateTime"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesAxisType", "mappedName": "DiscreteDateTime"}            ],
+           "originalName": "DiscreteDateTime"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "DataSeriesMarker",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DataSeriesMarker.ts",
+ "mappedName": "DataSeriesMarker"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Automatic"}            ],
+           "originalName": "Automatic"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Circle"}            ],
+           "originalName": "Circle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Triangle"}            ],
+           "originalName": "Triangle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Pyramid"}            ],
+           "originalName": "Pyramid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Square"}            ],
+           "originalName": "Square"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Diamond"}            ],
+           "originalName": "Diamond"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Pentagon"}            ],
+           "originalName": "Pentagon"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Hexagon"}            ],
+           "originalName": "Hexagon"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Tetragram"}            ],
+           "originalName": "Tetragram"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Pentagram"}            ],
+           "originalName": "Pentagram"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Hexagram"}            ],
+           "originalName": "Hexagram"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Hidden"}            ],
+           "originalName": "Hidden"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "IExternalDataSeriesAdapter",
+   "names": [
+        { "platform": "React",     "fileName": "IExternalDataSeriesAdapter.ts",
+ "mappedName": "IExternalDataSeriesAdapter"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceLocalDataProvider", "mappedName": "getDataProvider"}            ],
+           "originalName": "GetDataProvider"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters"
+},
+{
+    "originalName": "SimpleFinancialPriceSeriesRule",
+   "names": [
+        { "platform": "React",     "fileName": "SimpleFinancialPriceSeriesRule.ts",
+ "mappedName": "SimpleFinancialPriceSeriesRule"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "distinctCheckThreshold"}            ],
+           "originalName": "DistinctCheckThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "except"}            ],
+           "originalName": "Except"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "getDataSourceTitle"}            ],
+           "originalName": "GetDataSourceTitle"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules"
+},
+{
+    "originalName": "SimpleScatterSeriesRule",
+   "names": [
+        { "platform": "React",     "fileName": "SimpleScatterSeriesRule.ts",
+ "mappedName": "SimpleScatterSeriesRule"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "monotonicCheckAmount"}            ],
+           "originalName": "MonotonicCheckAmount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "List", "mappedName": "getYProps"}            ],
+           "originalName": "GetYProps"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isYProp"}            ],
+           "originalName": "IsYProp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "List", "mappedName": "getXProps"}            ],
+           "originalName": "GetXProps"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isXProp"}            ],
+           "originalName": "IsXProp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "createScatterSeries"}            ],
+           "originalName": "CreateScatterSeries"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules"
+},
+{
+    "originalName": "SubCollectionsRule",
+   "names": [
+        { "platform": "React",     "fileName": "SubCollectionsRule.ts",
+ "mappedName": "SubCollectionsRule"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "collectionTransformationThreshold"}            ],
+           "originalName": "CollectionTransformationThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules"
+},
+{
+    "originalName": "SimpleCategorySeriesRule",
+   "names": [
+        { "platform": "React",     "fileName": "SimpleCategorySeriesRule.ts",
+ "mappedName": "SimpleCategorySeriesRule"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "priority"}            ],
+           "originalName": "Priority"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "useColumnThreshold"}            ],
+           "originalName": "UseColumnThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "distinctCheckThreshold"}            ],
+           "originalName": "DistinctCheckThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "fallbackTypeIfUnsupported"}            ],
+           "originalName": "FallbackTypeIfUnsupported"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.DataAdapters.Rules"
+}
+]
+}

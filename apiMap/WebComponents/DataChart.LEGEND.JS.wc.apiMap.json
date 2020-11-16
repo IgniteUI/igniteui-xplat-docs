@@ -1,0 +1,205 @@
+{
+"extraFiles": [
+"igc-legend-module.ts",
+"igc-item-legend-module.ts",
+"igc-scale-legend-module.ts",
+"igc-financial-legend-module.ts"
+],
+"types": [
+{
+    "originalName": "LegendMouseEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-legend-mouse-event-args.ts",
+ "mappedName": "IgcLegendMouseEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalSource"}            ],
+           "originalName": "OriginalSource"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ILegendSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ILegendOwner", "mappedName": "chart"}            ],
+           "originalName": "Chart"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "legendItem"}            ],
+           "originalName": "LegendItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendMouseButtonEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-legend-mouse-button-event-args.ts",
+ "mappedName": "IgcLegendMouseButtonEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "handled"}            ],
+           "originalName": "Handled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalSource"}            ],
+           "originalName": "OriginalSource"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ILegendSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ILegendOwner", "mappedName": "chart"}            ],
+           "originalName": "Chart"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "legendItem"}            ],
+           "originalName": "LegendItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ItemLegend",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-item-legend-component.ts",
+ "mappedName": "IgcItemLegendComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
+           "originalName": "IsItemwise"
+       }   ],
+    "originalBaseTypeName": "LegendBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "Legend",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-legend-component.ts",
+ "mappedName": "IgcLegendComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "orientation"}            ],
+           "originalName": "Orientation"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textStyle"}            ],
+           "originalName": "TextStyle"
+       }   ],
+    "originalBaseTypeName": "LegendBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendOrientation",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LegendOrientation.ts",
+ "mappedName": "LegendOrientation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-legend-base-component.ts",
+ "mappedName": "IgcLegendBaseComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
+           "originalName": "IsItemwise"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
+           "originalName": "IsFinancial"
+       }   ],
+    "originalBaseTypeName": "ContentControl",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialLegend",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-legend-component.ts",
+ "mappedName": "IgcFinancialLegendComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
+           "originalName": "IsFinancial"
+       }   ],
+    "originalBaseTypeName": "LegendBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScaleLegend",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scale-legend-component.ts",
+ "mappedName": "IgcScaleLegendComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "LegendBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

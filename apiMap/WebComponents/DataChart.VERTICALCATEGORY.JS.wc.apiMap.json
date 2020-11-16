@@ -1,0 +1,178 @@
+{
+"types": [
+{
+    "originalName": "CategoryYAxis",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-category-y-axis-component.ts",
+    "dynamicModuleName": "igc-category-y-axis-dynamic-module.ts",
+    "moduleName": "igc-category-y-axis-module.ts",
+ "mappedName": "IgcCategoryYAxisComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
+           "originalName": "IsVertical"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "interval"}            ],
+           "originalName": "Interval"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualInterval"}            ],
+           "originalName": "ActualInterval"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minorInterval"}            ],
+           "originalName": "MinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualMinorInterval"}            ],
+           "originalName": "ActualMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCategoryBoundingBox"}            ],
+           "originalName": "GetCategoryBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollRangeIntoView"}            ],
+           "originalName": "ScrollRangeIntoView"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       }   ],
+    "originalBaseTypeName": "CategoryAxisBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "BarSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-bar-series-component.ts",
+    "dynamicModuleName": "igc-bar-series-dynamic-module.ts",
+    "moduleName": "igc-bar-series-module.ts",
+ "mappedName": "IgcBarSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
+           "originalName": "RadiusX"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusY"}            ],
+           "originalName": "RadiusY"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       }   ],
+    "originalBaseTypeName": "VerticalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "VerticalAnchoredCategorySeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-vertical-anchored-category-series-component.ts",
+ "mappedName": "IgcVerticalAnchoredCategorySeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericXAxisComponent", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcCategoryYAxisComponent", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
+           "originalName": "IsVertical"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
+           "originalName": "GetOffsetValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
+           "originalName": "GetCategoryWidth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       }   ],
+    "originalBaseTypeName": "AnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

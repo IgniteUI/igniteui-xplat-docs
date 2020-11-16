@@ -1,0 +1,894 @@
+{
+"extraFiles": [
+"igx-treemap-module.ts"
+],
+"types": [
+{
+    "originalName": "Treemap",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-treemap-component.ts",
+ "mappedName": "IgxTreemapComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "rootTitle"}            ],
+           "originalName": "RootTitle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "breadcrumbSequence"}            ],
+           "originalName": "BreadcrumbSequence"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "parentIdMemberPath"}            ],
+           "originalName": "ParentIdMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
+           "originalName": "LabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "customValueMemberPath"}            ],
+           "originalName": "CustomValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "idMemberPath"}            ],
+           "originalName": "IdMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "dataSource"}            ],
+           "originalName": "ItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "fillBrushes"}            ],
+           "originalName": "FillBrushes"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapFillScaleMode", "mappedName": "fillScaleMode"}            ],
+           "originalName": "FillScaleMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFillScaleLogarithmic"}            ],
+           "originalName": "IsFillScaleLogarithmic"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "fillScaleLogarithmBase"}            ],
+           "originalName": "FillScaleLogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "fillScaleMinimumValue"}            ],
+           "originalName": "FillScaleMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "fillScaleMaximumValue"}            ],
+           "originalName": "FillScaleMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelVerticalFitMode", "mappedName": "labelVerticalFitMode"}            ],
+           "originalName": "LabelVerticalFitMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelHorizontalFitMode", "mappedName": "labelHorizontalFitMode"}            ],
+           "originalName": "LabelHorizontalFitMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "overlayHeaderHoverBackground"}            ],
+           "originalName": "OverlayHeaderHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerHoverBackground"}            ],
+           "originalName": "HeaderHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerBackground"}            ],
+           "originalName": "HeaderBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "overlayHeaderBackground"}            ],
+           "originalName": "OverlayHeaderBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerTextColor"}            ],
+           "originalName": "HeaderTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerDarkTextColor"}            ],
+           "originalName": "HeaderDarkTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "darkTextColor"}            ],
+           "originalName": "DarkTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerHoverTextColor"}            ],
+           "originalName": "HeaderHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerHoverDarkTextColor"}            ],
+           "originalName": "HeaderHoverDarkTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapHeaderDisplayMode", "mappedName": "headerDisplayMode"}            ],
+           "originalName": "HeaderDisplayMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelLeftMargin"}            ],
+           "originalName": "HeaderLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelTopMargin"}            ],
+           "originalName": "HeaderLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelRightMargin"}            ],
+           "originalName": "HeaderLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelBottomMargin"}            ],
+           "originalName": "HeaderLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "overlayHeaderLabelLeftMargin"}            ],
+           "originalName": "OverlayHeaderLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "overlayHeaderLabelTopMargin"}            ],
+           "originalName": "OverlayHeaderLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "overlayHeaderLabelRightMargin"}            ],
+           "originalName": "OverlayHeaderLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "overlayHeaderLabelBottomMargin"}            ],
+           "originalName": "OverlayHeaderLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelLeftMargin"}            ],
+           "originalName": "LabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelTopMargin"}            ],
+           "originalName": "LabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelRightMargin"}            ],
+           "originalName": "LabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelBottomMargin"}            ],
+           "originalName": "LabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeLeftMargin"}            ],
+           "originalName": "ParentNodeLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeTopMargin"}            ],
+           "originalName": "ParentNodeTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeRightMargin"}            ],
+           "originalName": "ParentNodeRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeBottomMargin"}            ],
+           "originalName": "ParentNodeBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeLeftPadding"}            ],
+           "originalName": "ParentNodeLeftPadding"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeTopPadding"}            ],
+           "originalName": "ParentNodeTopPadding"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeRightPadding"}            ],
+           "originalName": "ParentNodeRightPadding"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentNodeBottomPadding"}            ],
+           "originalName": "ParentNodeBottomPadding"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "labelHorizontalAlignment"}            ],
+           "originalName": "LabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "VerticalAlignment", "mappedName": "labelVerticalAlignment"}            ],
+           "originalName": "LabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerHeight"}            ],
+           "originalName": "HeaderHeight"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapOrientation", "mappedName": "layoutOrientation"}            ],
+           "originalName": "LayoutOrientation"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLayoutType", "mappedName": "layoutType"}            ],
+           "originalName": "LayoutType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumDisplaySize"}            ],
+           "originalName": "MinimumDisplaySize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
+           "originalName": "ActualPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "interactionPixelScalingRatio"}            ],
+           "originalName": "InteractionPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualInteractionPixelScalingRatio"}            ],
+           "originalName": "ActualInteractionPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "animating"}            ],
+           "originalName": "Animating"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "focusItem"}            ],
+           "originalName": "FocusItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "markDirty"}            ],
+           "originalName": "MarkDirty"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
+           "originalName": "OnDetachedFromUI"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
+           "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "flush"}            ],
+           "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapNodeStyleMappingTargetType",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapNodeStyleMappingTargetType.ts",
+ "mappedName": "TreemapNodeStyleMappingTargetType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapNodeStyleMappingTargetType", "mappedName": "All"}            ],
+           "originalName": "All"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapNodeStyleMappingTargetType", "mappedName": "Parent"}            ],
+           "originalName": "Parent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapNodeStyleMappingTargetType", "mappedName": "Child"}            ],
+           "originalName": "Child"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapNodeStyleMapping",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-treemap-node-style-mapping-component.ts",
+    "dynamicModuleName": "igx-treemap-node-style-mapping-dynamic-module.ts",
+    "moduleName": "igx-treemap-node-style-mapping-module.ts",
+ "mappedName": "IgxTreemapNodeStyleMappingComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapNodeStyleMappingTargetType", "mappedName": "targetType"}            ],
+           "originalName": "TargetType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
+           "originalName": "Name"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapValueMappingMode", "mappedName": "mappingMode"}            ],
+           "originalName": "MappingMode"
+       }   ],
+    "originalBaseTypeName": "TreemapNodeStyle",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts.Implementation",
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapValueMappingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapValueMappingMode.ts",
+ "mappedName": "TreemapValueMappingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapValueMappingMode", "mappedName": "Sum"}            ],
+           "originalName": "Sum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapValueMappingMode", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapValueMappingMode", "mappedName": "CustomValue"}            ],
+           "originalName": "CustomValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapFillScaleMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapFillScaleMode.ts",
+ "mappedName": "TreemapFillScaleMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapFillScaleMode", "mappedName": "Sum"}            ],
+           "originalName": "Sum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapFillScaleMode", "mappedName": "GlobalSum"}            ],
+           "originalName": "GlobalSum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapFillScaleMode", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapFillScaleMode", "mappedName": "GlobalValue"}            ],
+           "originalName": "GlobalValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapLayoutType",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapLayoutType.ts",
+ "mappedName": "TreemapLayoutType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLayoutType", "mappedName": "Squarified"}            ],
+           "originalName": "Squarified"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLayoutType", "mappedName": "SliceAndDice"}            ],
+           "originalName": "SliceAndDice"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLayoutType", "mappedName": "Stripped"}            ],
+           "originalName": "Stripped"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapLabelHorizontalFitMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapLabelHorizontalFitMode.ts",
+ "mappedName": "TreemapLabelHorizontalFitMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelHorizontalFitMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelHorizontalFitMode", "mappedName": "Ellipsis"}            ],
+           "originalName": "Ellipsis"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelHorizontalFitMode", "mappedName": "Hide"}            ],
+           "originalName": "Hide"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapLabelVerticalFitMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapLabelVerticalFitMode.ts",
+ "mappedName": "TreemapLabelVerticalFitMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelVerticalFitMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelVerticalFitMode", "mappedName": "Show"}            ],
+           "originalName": "Show"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapLabelVerticalFitMode", "mappedName": "Hide"}            ],
+           "originalName": "Hide"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapOrientation",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapOrientation.ts",
+ "mappedName": "TreemapOrientation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapOrientation", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapOrientation", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapHeaderDisplayMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TreemapHeaderDisplayMode.ts",
+ "mappedName": "TreemapHeaderDisplayMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapHeaderDisplayMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapHeaderDisplayMode", "mappedName": "Header"}            ],
+           "originalName": "Header"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TreemapHeaderDisplayMode", "mappedName": "Overlay"}            ],
+           "originalName": "Overlay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapNodeStyle",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-treemap-node-style-component.ts",
+    "dynamicModuleName": "igx-treemap-node-style-dynamic-module.ts",
+    "moduleName": "igx-treemap-node-style-module.ts",
+ "mappedName": "IgxTreemapNodeStyleComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerHoverBackground"}            ],
+           "originalName": "HeaderHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerBackground"}            ],
+           "originalName": "HeaderBackground"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerTextColor"}            ],
+           "originalName": "HeaderTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerHoverTextColor"}            ],
+           "originalName": "HeaderHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelLeftMargin"}            ],
+           "originalName": "HeaderLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelTopMargin"}            ],
+           "originalName": "HeaderLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelRightMargin"}            ],
+           "originalName": "HeaderLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerLabelBottomMargin"}            ],
+           "originalName": "HeaderLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelLeftMargin"}            ],
+           "originalName": "LabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelTopMargin"}            ],
+           "originalName": "LabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelRightMargin"}            ],
+           "originalName": "LabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelBottomMargin"}            ],
+           "originalName": "LabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "headerHeight"}            ],
+           "originalName": "HeaderHeight"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "labelHorizontalAlignment"}            ],
+           "originalName": "LabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "VerticalAlignment", "mappedName": "labelVerticalAlignment"}            ],
+           "originalName": "LabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapNodeStylingEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-treemap-node-styling-event-args.ts",
+ "mappedName": "IgxTreemapNodeStylingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "sum"}            ],
+           "originalName": "Sum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "customValue"}            ],
+           "originalName": "CustomValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "parentItem"}            ],
+           "originalName": "ParentItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentValue"}            ],
+           "originalName": "ParentValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "parentLabel"}            ],
+           "originalName": "ParentLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentSum"}            ],
+           "originalName": "ParentSum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isParent"}            ],
+           "originalName": "IsParent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxTreemapNodeStyleComponent", "mappedName": "style"}            ],
+           "originalName": "Style"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+},
+{
+    "originalName": "TreemapNodePointerEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-treemap-node-pointer-event-args.ts",
+ "mappedName": "IgxTreemapNodePointerEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "sum"}            ],
+           "originalName": "Sum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "customValue"}            ],
+           "originalName": "CustomValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "parentItem"}            ],
+           "originalName": "ParentItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "position"}            ],
+           "originalName": "Position"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isRightButton"}            ],
+           "originalName": "IsRightButton"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHandled"}            ],
+           "originalName": "IsHandled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isOverHeader"}            ],
+           "originalName": "IsOverHeader"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentValue"}            ],
+           "originalName": "ParentValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "parentLabel"}            ],
+           "originalName": "ParentLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "parentSum"}            ],
+           "originalName": "ParentSum"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts.Implementation"
+}
+]
+}

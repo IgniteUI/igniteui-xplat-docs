@@ -1,0 +1,826 @@
+{
+"types": [
+{
+    "originalName": "DomainChart",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-domain-chart-component.ts",
+ "mappedName": "IgcDomainChartComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "titleLeftMargin"}            ],
+           "originalName": "TitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "titleRightMargin"}            ],
+           "originalName": "TitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "titleTopMargin"}            ],
+           "originalName": "TitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "titleBottomMargin"}            ],
+           "originalName": "TitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "subtitleLeftMargin"}            ],
+           "originalName": "SubtitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "subtitleTopMargin"}            ],
+           "originalName": "SubtitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "subtitleRightMargin"}            ],
+           "originalName": "SubtitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "subtitleBottomMargin"}            ],
+           "originalName": "SubtitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "subtitleTextColor"}            ],
+           "originalName": "SubtitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "titleTextColor"}            ],
+           "originalName": "TitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "leftMargin"}            ],
+           "originalName": "LeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "topMargin"}            ],
+           "originalName": "TopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "rightMargin"}            ],
+           "originalName": "RightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomMargin"}            ],
+           "originalName": "BottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "(time: number) => number", "mappedName": "transitionEasingFunction"}            ],
+           "originalName": "TransitionEasingFunction"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "subtitleTextStyle"}            ],
+           "originalName": "SubtitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "titleTextStyle"}            ],
+           "originalName": "TitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
+           "originalName": "IncludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "excludedProperties"}            ],
+           "originalName": "ExcludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
+           "originalName": "IsHorizontalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
+           "originalName": "IsVerticalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSeriesHighlightingEnabled"}            ],
+           "originalName": "IsSeriesHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "windowRect"}            ],
+           "originalName": "WindowRect"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "viewport"}            ],
+           "originalName": "Viewport"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "chartTitle"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "subtitle"}            ],
+           "originalName": "Subtitle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "titleAlignment"}            ],
+           "originalName": "TitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "subtitleAlignment"}            ],
+           "originalName": "SubtitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
+           "originalName": "UnknownValuePlotting"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "resolution"}            ],
+           "originalName": "Resolution"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "thickness"}            ],
+           "originalName": "Thickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcMarkerTypeCollection", "mappedName": "markerTypes"}            ],
+           "originalName": "MarkerTypes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
+           "originalName": "MarkerBrushes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerOutlines"}            ],
+           "originalName": "MarkerOutlines"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerMaxCount"}            ],
+           "originalName": "MarkerMaxCount"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "animateSeriesWhenAxisRangeChanges"}            ],
+           "originalName": "AnimateSeriesWhenAxisRangeChanges"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "trendLineBrushes"}            ],
+           "originalName": "TrendLineBrushes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "alignsGridLinesToPixels"}            ],
+           "originalName": "AlignsGridLinesToPixels"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ToolTipType", "mappedName": "toolTipType"}            ],
+           "originalName": "ToolTipType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "crosshairsDisplayMode"}            ],
+           "originalName": "CrosshairsDisplayMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "crosshairsSnapToData"}            ],
+           "originalName": "CrosshairsSnapToData"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}            ],
+           "originalName": "CrosshairsAnnotationEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}            ],
+           "originalName": "FinalValueAnnotationsVisible"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "calloutsVisible"}            ],
+           "originalName": "CalloutsVisible"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "calloutStyleUpdatingEventEnabled"}            ],
+           "originalName": "CalloutStyleUpdatingEventEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "calloutsXMemberPath"}            ],
+           "originalName": "CalloutsXMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "calloutsYMemberPath"}            ],
+           "originalName": "CalloutsYMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "calloutsLabelMemberPath"}            ],
+           "originalName": "CalloutsLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "calloutsContentMemberPath"}            ],
+           "originalName": "CalloutsContentMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "destroy"}            ],
+           "originalName": "Destroy"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "flush"}            ],
+           "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "hideToolTip"}            ],
+           "originalName": "HideToolTip"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XYChart",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-xy-chart-component.ts",
+ "mappedName": "IgcXYChartComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "(item: any) => string", "mappedName": "xAxisFormatLabel"}            ],
+           "originalName": "XAxisFormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "(item: any) => string", "mappedName": "yAxisFormatLabel"}            ],
+           "originalName": "YAxisFormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisLabelLeftMargin"}            ],
+           "originalName": "XAxisLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisLabelTopMargin"}            ],
+           "originalName": "XAxisLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisLabelRightMargin"}            ],
+           "originalName": "XAxisLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisLabelBottomMargin"}            ],
+           "originalName": "XAxisLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLabelLeftMargin"}            ],
+           "originalName": "YAxisLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLabelTopMargin"}            ],
+           "originalName": "YAxisLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLabelRightMargin"}            ],
+           "originalName": "YAxisLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLabelBottomMargin"}            ],
+           "originalName": "YAxisLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisLabelTextColor"}            ],
+           "originalName": "XAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisLabelTextColor"}            ],
+           "originalName": "YAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleMargin"}            ],
+           "originalName": "XAxisTitleMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleMargin"}            ],
+           "originalName": "YAxisTitleMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleLeftMargin"}            ],
+           "originalName": "XAxisTitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleLeftMargin"}            ],
+           "originalName": "YAxisTitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleTopMargin"}            ],
+           "originalName": "XAxisTitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleTopMargin"}            ],
+           "originalName": "YAxisTitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleRightMargin"}            ],
+           "originalName": "XAxisTitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleRightMargin"}            ],
+           "originalName": "YAxisTitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleBottomMargin"}            ],
+           "originalName": "XAxisTitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleBottomMargin"}            ],
+           "originalName": "YAxisTitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisTitleTextColor"}            ],
+           "originalName": "XAxisTitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisTitleTextColor"}            ],
+           "originalName": "YAxisTitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisLabelTextStyle"}            ],
+           "originalName": "XAxisLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisLabelTextStyle"}            ],
+           "originalName": "YAxisLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisTitleTextStyle"}            ],
+           "originalName": "XAxisTitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisTitleTextStyle"}            ],
+           "originalName": "YAxisTitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "xAxisLabel"}            ],
+           "originalName": "XAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "yAxisLabel"}            ],
+           "originalName": "YAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisMajorStroke"}            ],
+           "originalName": "XAxisMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisMajorStroke"}            ],
+           "originalName": "YAxisMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisMajorStrokeThickness"}            ],
+           "originalName": "XAxisMajorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMajorStrokeThickness"}            ],
+           "originalName": "YAxisMajorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisMinorStrokeThickness"}            ],
+           "originalName": "XAxisMinorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMinorStrokeThickness"}            ],
+           "originalName": "YAxisMinorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisStrip"}            ],
+           "originalName": "XAxisStrip"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisStrip"}            ],
+           "originalName": "YAxisStrip"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisStroke"}            ],
+           "originalName": "XAxisStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisStroke"}            ],
+           "originalName": "YAxisStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisStrokeThickness"}            ],
+           "originalName": "XAxisStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisStrokeThickness"}            ],
+           "originalName": "YAxisStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTickLength"}            ],
+           "originalName": "XAxisTickLength"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTickLength"}            ],
+           "originalName": "YAxisTickLength"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisTickStroke"}            ],
+           "originalName": "XAxisTickStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisTickStroke"}            ],
+           "originalName": "YAxisTickStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTickStrokeThickness"}            ],
+           "originalName": "XAxisTickStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTickStrokeThickness"}            ],
+           "originalName": "YAxisTickStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisTitle"}            ],
+           "originalName": "XAxisTitle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisTitle"}            ],
+           "originalName": "YAxisTitle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisMinorStroke"}            ],
+           "originalName": "XAxisMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisMinorStroke"}            ],
+           "originalName": "YAxisMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisLabelAngle"}            ],
+           "originalName": "XAxisLabelAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLabelAngle"}            ],
+           "originalName": "YAxisLabelAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisExtent"}            ],
+           "originalName": "XAxisExtent"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisExtent"}            ],
+           "originalName": "YAxisExtent"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisTitleAngle"}            ],
+           "originalName": "XAxisTitleAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisTitleAngle"}            ],
+           "originalName": "YAxisTitleAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "xAxisInverted"}            ],
+           "originalName": "XAxisInverted"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "yAxisInverted"}            ],
+           "originalName": "YAxisInverted"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisTitleAlignment"}            ],
+           "originalName": "XAxisTitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "VerticalAlignment", "mappedName": "yAxisTitleAlignment"}            ],
+           "originalName": "YAxisTitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisLabelHorizontalAlignment"}            ],
+           "originalName": "XAxisLabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}            ],
+           "originalName": "YAxisLabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "VerticalAlignment", "mappedName": "xAxisLabelVerticalAlignment"}            ],
+           "originalName": "XAxisLabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "VerticalAlignment", "mappedName": "yAxisLabelVerticalAlignment"}            ],
+           "originalName": "YAxisLabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "xAxisLabelVisibility"}            ],
+           "originalName": "XAxisLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "yAxisLabelVisibility"}            ],
+           "originalName": "YAxisLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
+           "originalName": "YAxisLabelLocation"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getScaledValueX"}            ],
+           "originalName": "GetScaledValueX"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getUnscaledValueX"}            ],
+           "originalName": "GetUnscaledValueX"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getScaledValueY"}            ],
+           "originalName": "GetScaledValueY"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getUnscaledValueY"}            ],
+           "originalName": "GetUnscaledValueY"
+       }   ],
+    "originalBaseTypeName": "DomainChart",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ToolTipType",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ToolTipType.ts",
+ "mappedName": "ToolTipType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ToolTipType", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ToolTipType", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ToolTipType", "mappedName": "Category"}            ],
+           "originalName": "Category"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ToolTipType", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CrosshairsDisplayMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "CrosshairsDisplayMode.ts",
+ "mappedName": "CrosshairsDisplayMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Both"}            ],
+           "originalName": "Both"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChartSeriesEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-chart-series-event-args.ts",
+ "mappedName": "IgcChartSeriesEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcSeriesComponent", "mappedName": "series"}            ],
+           "originalName": "Series"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DomainChartSeriesPointerEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-domain-chart-series-pointer-event-args.ts",
+ "mappedName": "IgcDomainChartSeriesPointerEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcSeriesComponent", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

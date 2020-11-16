@@ -1,0 +1,152 @@
+{
+"extraFiles": [
+"igx-expansion-panel-module.ts"
+],
+"types": [
+{
+    "originalName": "OnExpandedEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-on-expanded-event-args.ts",
+ "mappedName": "IgxOnExpandedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+},
+{
+    "originalName": "OnCollapsedEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-on-collapsed-event-args.ts",
+ "mappedName": "IgxOnCollapsedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+},
+{
+    "originalName": "ExpansionPanel",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-expansion-panel-component.ts",
+ "mappedName": "IgxExpansionPanelComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "caption"}            ],
+           "originalName": "Caption"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
+           "originalName": "CaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
+           "originalName": "ActualCaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
+           "originalName": "CaptionCollapsedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
+           "originalName": "CaptionExpandedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "description"}            ],
+           "originalName": "Description"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
+           "originalName": "DescriptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
+           "originalName": "ActualDescriptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
+           "originalName": "DescriptionCollapsedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
+           "originalName": "DescriptionExpandedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "elevation"}            ],
+           "originalName": "Elevation"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualElevation"}            ],
+           "originalName": "ActualElevation"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "expanded"}            ],
+           "originalName": "Expanded"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
+           "originalName": "HeaderBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
+           "originalName": "ActualHeaderBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
+           "originalName": "HeaderCollapsedBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
+           "originalName": "HeaderExpandedBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
+           "originalName": "ActualUmbraShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
+           "originalName": "ActualPenumbraShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
+           "originalName": "ActualAmbientShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "collapse"}            ],
+           "originalName": "Collapse"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "expand"}            ],
+           "originalName": "Expand"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "toggle"}            ],
+           "originalName": "Toggle"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+}
+]
+}

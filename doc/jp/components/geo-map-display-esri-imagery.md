@@ -1,0 +1,148 @@
+---
+title: $PlatformShort$ マップ | データ可視化ツール | ESRI 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの $PlatformShort$ を使用して ESRI Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $PlatformShort$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background, $PlatformShort$ マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
+mentionedTypes: ['XamGeographicMap']
+_language: ja
+---
+# $PlatformShort$ Esri Maps から地理的画像を表示
+
+`ArcGISOnlineMapImagery` は、<a href="https://www.esri.com/" target="_blank">Esri</a> によって作成された無料の地理的画像マッピング サービスです。世界の地理的画像タイルの 40 スタイル以上を提供します。この地理的画像サービスは、<a href="https://services.arcgisonline.com/ArcGIS/rest/services" target="_blank">www.arcgisonline.com</a> に直接アクセスして利用できます。
+
+## サンプル
+
+<div class="sample-container loading" style="height: 500px">
+    <iframe id="geo-map-display-esri-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+</div>
+<div>
+    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-display-esri-imagery-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    </button>
+</div>
+<sample-button src="maps/geo-map/display-esri-imagery"></sample-button>
+
+<div class="divider--half"></div>
+
+## コード スニペット
+以下のコード スニペットは、`ArcGISOnlineMapImagery` クラスを使用して `XamGeographicMap` で Esri 画像サーバーからの $PlatformShort$ 地理的画像タイルを表示する方法を示します。
+
+```html
+<igx-geographic-map #map
+    width="100%"
+    height="100%"
+    zoomable="true" >
+</igx-geographic-map>
+```
+
+```ts
+import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
+import { IgxArcGISOnlineMapImagery } from 'igniteui-angular-maps';
+// ...
+public geoMap: IgxGeographicMapComponent;
+
+const tileSource = new IgxArcGISOnlineMapImagery();
+tileSource.mapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer";
+
+this.geoMap.backgroundContent = tileSource;
+```
+
+```ts
+import { IgrGeographicMap } from 'igniteui-react-maps';
+import { IgrArcGISOnlineMapImagery } from 'igniteui-react-maps';
+// ...
+const tileSource = new IgrArcGISOnlineMapImagery();
+tileSource.mapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer";
+
+const geoMap = new IgrGeographicMap({ name: "geoMap" });
+geoMap.backgroundContent = tileSource;
+```
+
+```ts
+import { IgcGeographicMap } from 'igniteui-webcomponents-maps';
+import { IgcArcGISOnlineMapImagery } from 'igniteui-webcomponents-maps';
+// ...
+const tileSource = new IgcArcGISOnlineMapImagery();
+tileSource.mapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer";
+
+const geoMap = document.getElementById("geoMap") as IgcGeographicMapComponent
+geoMap.backgroundContent = tileSource;
+```
+
+```razor
+@using IgniteUI.Blazor.Controls
+@inject IIgniteUIBlazor IgniteUIBlazor
+
+<GeographicMap Height="100%" Width="100%"
+    Zoomable="true"
+    BackgroundContent="EsriImagery" />
+
+protected override void OnInitialized()
+{
+    GeographicMapModule.Register(IgniteUIBlazor);
+    ArcGISOnlineMapImagery imagery = new ArcGISOnlineMapImagery()
+    {
+        MapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer"
+    };
+    
+    this.EsriImagery = imagery;    
+}
+```
+
+## Esri ユーティリティ
+また、Esri 画像サーバーのすべてのスタイルを定義する [EsriUtility](geo-map-resources-esri.md) を使用することもできます。
+
+```ts
+import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
+import { IgxArcGISOnlineMapImagery } from 'igniteui-angular-maps';
+import { EsriUtility, EsriStyle } from './EsriUtility';
+// ...
+public geoMap: IgxGeographicMapComponent;
+
+const tileSource = new IgxArcGISOnlineMapImagery();
+tileSource.mapServerUri = EsriUtility.getUri(EsriStyle.WorldOceansMap);
+
+this.geoMap.backgroundContent = tileSource;
+```
+
+```ts
+import { IgrGeographicMap } from 'igniteui-react-maps';
+import { IgrArcGISOnlineMapImagery } from 'igniteui-react-maps';
+import { EsriUtility, EsriStyle } from './EsriUtility';
+// ...
+const tileSource = new IgrArcGISOnlineMapImagery();
+tileSource.mapServerUri = EsriUtility.getUri(EsriStyle.WorldOceansMap);
+
+const geoMap = new IgrGeographicMap({ name: "geoMap" });
+geoMap.backgroundContent = tileSource;
+```
+
+```ts
+import { IgcGeographicMap } from 'igniteui-webcomponents-maps';
+import { IgcArcGISOnlineMapImagery } from 'igniteui-webcomponents-maps';
+import { EsriUtility, EsriStyle } from './EsriUtility';
+// ...
+const tileSource = new IgcArcGISOnlineMapImagery();
+tileSource.mapServerUri = EsriUtility.getUri(EsriStyle.WorldOceansMap);
+
+const geoMap = document.getElementById("geoMap") as IgcGeographicMapComponent
+geoMap.backgroundContent = tileSource;
+```
+
+```razor
+@using IgniteUI.Blazor.Controls
+@inject IIgniteUIBlazor IgniteUIBlazor
+
+<GeographicMap Height="100%" Width="100%"
+    Zoomable="true"
+    BackgroundContent="EsriImagery" />
+
+protected override void OnInitialized()
+{
+    GeographicMapModule.Register(IgniteUIBlazor);
+    ArcGISOnlineMapImagery imagery = new ArcGISOnlineMapImagery()
+    {
+        MapServerUri = EsriStyle.WorldOceansMap
+    };
+    
+    this.EsriImagery = imagery;    
+}
+```

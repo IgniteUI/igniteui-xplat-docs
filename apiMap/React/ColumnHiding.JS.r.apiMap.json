@@ -1,0 +1,50 @@
+{
+"extraFiles": [
+"igr-column-hiding-module.ts"
+],
+"types": [
+{
+    "originalName": "ColumnHiding",
+   "names": [
+        { "platform": "React",     "fileName": "igr-column-hiding.ts",
+ "mappedName": "IgrColumnHiding"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrDataGrid", "mappedName": "targetGrid"}            ],
+           "originalName": "TargetGrid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "title"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
+           "originalName": "TitleStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "titleColor"}            ],
+           "originalName": "TitleColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "showAllText"}            ],
+           "originalName": "ShowAllText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hideAllText"}            ],
+           "originalName": "HideAllText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
+           "originalName": "FilterPlaceholderText"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+}
+]
+}

@@ -1,0 +1,826 @@
+{
+"types": [
+{
+    "originalName": "DomainChart",
+   "names": [
+        { "platform": "React",     "fileName": "igr-domain-chart.ts",
+ "mappedName": "IgrDomainChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "titleLeftMargin"}            ],
+           "originalName": "TitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "titleRightMargin"}            ],
+           "originalName": "TitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "titleTopMargin"}            ],
+           "originalName": "TitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "titleBottomMargin"}            ],
+           "originalName": "TitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "subtitleLeftMargin"}            ],
+           "originalName": "SubtitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "subtitleTopMargin"}            ],
+           "originalName": "SubtitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "subtitleRightMargin"}            ],
+           "originalName": "SubtitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "subtitleBottomMargin"}            ],
+           "originalName": "SubtitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "subtitleTextColor"}            ],
+           "originalName": "SubtitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "titleTextColor"}            ],
+           "originalName": "TitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "leftMargin"}            ],
+           "originalName": "LeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topMargin"}            ],
+           "originalName": "TopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "rightMargin"}            ],
+           "originalName": "RightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomMargin"}            ],
+           "originalName": "BottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(time: number) => number", "mappedName": "transitionEasingFunction"}            ],
+           "originalName": "TransitionEasingFunction"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "subtitleTextStyle"}            ],
+           "originalName": "SubtitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "titleTextStyle"}            ],
+           "originalName": "TitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
+           "originalName": "IncludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "excludedProperties"}            ],
+           "originalName": "ExcludedProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
+           "originalName": "IsHorizontalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
+           "originalName": "IsVerticalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSeriesHighlightingEnabled"}            ],
+           "originalName": "IsSeriesHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "windowRect"}            ],
+           "originalName": "WindowRect"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "viewport"}            ],
+           "originalName": "Viewport"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "chartTitle"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "subtitle"}            ],
+           "originalName": "Subtitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "titleAlignment"}            ],
+           "originalName": "TitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "subtitleAlignment"}            ],
+           "originalName": "SubtitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
+           "originalName": "UnknownValuePlotting"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "resolution"}            ],
+           "originalName": "Resolution"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "thickness"}            ],
+           "originalName": "Thickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrMarkerTypeCollection", "mappedName": "markerTypes"}            ],
+           "originalName": "MarkerTypes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
+           "originalName": "MarkerBrushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "markerOutlines"}            ],
+           "originalName": "MarkerOutlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerMaxCount"}            ],
+           "originalName": "MarkerMaxCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "animateSeriesWhenAxisRangeChanges"}            ],
+           "originalName": "AnimateSeriesWhenAxisRangeChanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "trendLineBrushes"}            ],
+           "originalName": "TrendLineBrushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "alignsGridLinesToPixels"}            ],
+           "originalName": "AlignsGridLinesToPixels"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ToolTipType", "mappedName": "toolTipType"}            ],
+           "originalName": "ToolTipType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "crosshairsDisplayMode"}            ],
+           "originalName": "CrosshairsDisplayMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "crosshairsSnapToData"}            ],
+           "originalName": "CrosshairsSnapToData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}            ],
+           "originalName": "CrosshairsAnnotationEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}            ],
+           "originalName": "FinalValueAnnotationsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "calloutsVisible"}            ],
+           "originalName": "CalloutsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "calloutStyleUpdatingEventEnabled"}            ],
+           "originalName": "CalloutStyleUpdatingEventEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutsXMemberPath"}            ],
+           "originalName": "CalloutsXMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutsYMemberPath"}            ],
+           "originalName": "CalloutsYMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutsLabelMemberPath"}            ],
+           "originalName": "CalloutsLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutsContentMemberPath"}            ],
+           "originalName": "CalloutsContentMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "destroy"}            ],
+           "originalName": "Destroy"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
+           "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "hideToolTip"}            ],
+           "originalName": "HideToolTip"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XYChart",
+   "names": [
+        { "platform": "React",     "fileName": "igr-xy-chart.ts",
+ "mappedName": "IgrXYChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(item: any) => string", "mappedName": "xAxisFormatLabel"}            ],
+           "originalName": "XAxisFormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(item: any) => string", "mappedName": "yAxisFormatLabel"}            ],
+           "originalName": "YAxisFormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisLabelLeftMargin"}            ],
+           "originalName": "XAxisLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisLabelTopMargin"}            ],
+           "originalName": "XAxisLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisLabelRightMargin"}            ],
+           "originalName": "XAxisLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisLabelBottomMargin"}            ],
+           "originalName": "XAxisLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLabelLeftMargin"}            ],
+           "originalName": "YAxisLabelLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLabelTopMargin"}            ],
+           "originalName": "YAxisLabelTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLabelRightMargin"}            ],
+           "originalName": "YAxisLabelRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLabelBottomMargin"}            ],
+           "originalName": "YAxisLabelBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisLabelTextColor"}            ],
+           "originalName": "XAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisLabelTextColor"}            ],
+           "originalName": "YAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleMargin"}            ],
+           "originalName": "XAxisTitleMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleMargin"}            ],
+           "originalName": "YAxisTitleMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleLeftMargin"}            ],
+           "originalName": "XAxisTitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleLeftMargin"}            ],
+           "originalName": "YAxisTitleLeftMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleTopMargin"}            ],
+           "originalName": "XAxisTitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleTopMargin"}            ],
+           "originalName": "YAxisTitleTopMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleRightMargin"}            ],
+           "originalName": "XAxisTitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleRightMargin"}            ],
+           "originalName": "YAxisTitleRightMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleBottomMargin"}            ],
+           "originalName": "XAxisTitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleBottomMargin"}            ],
+           "originalName": "YAxisTitleBottomMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisTitleTextColor"}            ],
+           "originalName": "XAxisTitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisTitleTextColor"}            ],
+           "originalName": "YAxisTitleTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisLabelTextStyle"}            ],
+           "originalName": "XAxisLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisLabelTextStyle"}            ],
+           "originalName": "YAxisLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisTitleTextStyle"}            ],
+           "originalName": "XAxisTitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisTitleTextStyle"}            ],
+           "originalName": "YAxisTitleTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "xAxisLabel"}            ],
+           "originalName": "XAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "yAxisLabel"}            ],
+           "originalName": "YAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisMajorStroke"}            ],
+           "originalName": "XAxisMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisMajorStroke"}            ],
+           "originalName": "YAxisMajorStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisMajorStrokeThickness"}            ],
+           "originalName": "XAxisMajorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMajorStrokeThickness"}            ],
+           "originalName": "YAxisMajorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisMinorStrokeThickness"}            ],
+           "originalName": "XAxisMinorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMinorStrokeThickness"}            ],
+           "originalName": "YAxisMinorStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisStrip"}            ],
+           "originalName": "XAxisStrip"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisStrip"}            ],
+           "originalName": "YAxisStrip"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisStroke"}            ],
+           "originalName": "XAxisStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisStroke"}            ],
+           "originalName": "YAxisStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisStrokeThickness"}            ],
+           "originalName": "XAxisStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisStrokeThickness"}            ],
+           "originalName": "YAxisStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTickLength"}            ],
+           "originalName": "XAxisTickLength"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTickLength"}            ],
+           "originalName": "YAxisTickLength"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisTickStroke"}            ],
+           "originalName": "XAxisTickStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisTickStroke"}            ],
+           "originalName": "YAxisTickStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTickStrokeThickness"}            ],
+           "originalName": "XAxisTickStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTickStrokeThickness"}            ],
+           "originalName": "YAxisTickStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisTitle"}            ],
+           "originalName": "XAxisTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisTitle"}            ],
+           "originalName": "YAxisTitle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisMinorStroke"}            ],
+           "originalName": "XAxisMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisMinorStroke"}            ],
+           "originalName": "YAxisMinorStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisLabelAngle"}            ],
+           "originalName": "XAxisLabelAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLabelAngle"}            ],
+           "originalName": "YAxisLabelAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisExtent"}            ],
+           "originalName": "XAxisExtent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisExtent"}            ],
+           "originalName": "YAxisExtent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisTitleAngle"}            ],
+           "originalName": "XAxisTitleAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisTitleAngle"}            ],
+           "originalName": "YAxisTitleAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "xAxisInverted"}            ],
+           "originalName": "XAxisInverted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisInverted"}            ],
+           "originalName": "YAxisInverted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisTitleAlignment"}            ],
+           "originalName": "XAxisTitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "VerticalAlignment", "mappedName": "yAxisTitleAlignment"}            ],
+           "originalName": "YAxisTitleAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisLabelHorizontalAlignment"}            ],
+           "originalName": "XAxisLabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}            ],
+           "originalName": "YAxisLabelHorizontalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "VerticalAlignment", "mappedName": "xAxisLabelVerticalAlignment"}            ],
+           "originalName": "XAxisLabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "VerticalAlignment", "mappedName": "yAxisLabelVerticalAlignment"}            ],
+           "originalName": "YAxisLabelVerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "xAxisLabelVisibility"}            ],
+           "originalName": "XAxisLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "yAxisLabelVisibility"}            ],
+           "originalName": "YAxisLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
+           "originalName": "YAxisLabelLocation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getScaledValueX"}            ],
+           "originalName": "GetScaledValueX"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getUnscaledValueX"}            ],
+           "originalName": "GetUnscaledValueX"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getScaledValueY"}            ],
+           "originalName": "GetScaledValueY"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getUnscaledValueY"}            ],
+           "originalName": "GetUnscaledValueY"
+       }   ],
+    "originalBaseTypeName": "DomainChart",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ToolTipType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "ToolTipType.ts",
+ "mappedName": "ToolTipType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ToolTipType", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ToolTipType", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ToolTipType", "mappedName": "Category"}            ],
+           "originalName": "Category"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ToolTipType", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CrosshairsDisplayMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CrosshairsDisplayMode.ts",
+ "mappedName": "CrosshairsDisplayMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Both"}            ],
+           "originalName": "Both"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChartSeriesEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-chart-series-event-args.ts",
+ "mappedName": "IgrChartSeriesEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DomainChartSeriesPointerEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-domain-chart-series-pointer-event-args.ts",
+ "mappedName": "IgrDomainChartSeriesPointerEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

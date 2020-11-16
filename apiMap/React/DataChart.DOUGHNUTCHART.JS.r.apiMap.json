@@ -1,0 +1,418 @@
+{
+"extraFiles": [
+"igr-doughnut-chart-module.ts",
+"igr-doughnut-chart-core-module.ts",
+"igr-doughnut-chart-interactivity-module.ts",
+"igr-doughnut-chart-default-tooltips.tsx"
+],
+"types": [
+{
+    "originalName": "HierarchicalRingSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-hierarchical-ring-series.ts",
+    "dynamicModuleName": "igr-hierarchical-ring-series-dynamic-module.ts",
+    "moduleName": "igr-hierarchical-ring-series-module.ts",
+ "mappedName": "IgrHierarchicalRingSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "childrenMemberPath"}            ],
+           "originalName": "ChildrenMemberPath"
+       }   ],
+    "originalBaseTypeName": "RingSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "HoleDimensionsChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-hole-dimensions-changed-event-args.ts",
+ "mappedName": "IgrHoleDimensionsChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "center"}            ],
+           "originalName": "Center"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "Ring",
+   "names": [
+        { "platform": "React",     "fileName": "igr-ring.ts",
+ "mappedName": "IgrRing"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "innerExtend"}            ],
+           "originalName": "InnerExtend"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgSize", "mappedName": "controlSize"}            ],
+           "originalName": "ControlSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "center"}            ],
+           "originalName": "Center"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrRingSeriesBase", "mappedName": "ringSeries"}            ],
+           "originalName": "RingSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "ringBreadth"}            ],
+           "originalName": "RingBreadth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "renderArcs"}            ],
+           "originalName": "RenderArcs"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "prepareArcs"}            ],
+           "originalName": "PrepareArcs"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "RingSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-ring-series.ts",
+    "dynamicModuleName": "igr-ring-series-dynamic-module.ts",
+    "moduleName": "igr-ring-series-module.ts",
+ "mappedName": "IgrRingSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrRing", "mappedName": "ring"}            ],
+           "originalName": "Ring"
+       }   ],
+    "originalBaseTypeName": "RingSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "RingSeriesBase",
+   "names": [
+        { "platform": "React",     "fileName": "igr-ring-series-base.ts",
+ "mappedName": "IgrRingSeriesBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
+           "originalName": "LabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "legendLabelMemberPath"}            ],
+           "originalName": "LegendLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LabelsPosition", "mappedName": "labelsPosition"}            ],
+           "originalName": "LabelsPosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "leaderLineVisibility"}            ],
+           "originalName": "LeaderLineVisibility"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "leaderLineStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "leaderLineStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "leaderLineStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "leaderLineStyle.opacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LeaderLineType", "mappedName": "leaderLineType"}            ],
+           "originalName": "LeaderLineType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "leaderLineMargin"}            ],
+           "originalName": "LeaderLineMargin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "othersCategoryThreshold"}            ],
+           "originalName": "OthersCategoryThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OthersCategoryType", "mappedName": "othersCategoryType"}            ],
+           "originalName": "OthersCategoryType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "othersCategoryText"}            ],
+           "originalName": "OthersCategoryText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(obj: any) => string", "mappedName": "formatLabel"}            ],
+           "originalName": "FormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(obj: any) => string", "mappedName": "formatLegendLabel"}            ],
+           "originalName": "FormatLegendLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "labelExtent"}            ],
+           "originalName": "LabelExtent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "othersCategoryStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "othersCategoryStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "othersCategoryStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "othersCategoryStyle.opacity"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "selectedStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "selectedStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "selectedStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "selectedStyle.opacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelOuterColor"}            ],
+           "originalName": "LabelOuterColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
+           "originalName": "LabelInnerColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
+           "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "radiusFactor"}            ],
+           "originalName": "RadiusFactor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XamDoughnutChart",
+   "names": [
+        { "platform": "React",     "fileName": "igr-doughnut-chart.ts",
+ "mappedName": "IgrDoughnutChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
+           "originalName": "AllowSliceSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
+           "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowSliceExplosion"}            ],
+           "originalName": "AllowSliceExplosion"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "innerExtent"}            ],
+           "originalName": "InnerExtent"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "selectedStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "selectedStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "selectedStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "selectedStyle.opacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
+           "originalName": "ActualPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getContainerID"}            ],
+           "originalName": "GetContainerID"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getCenterCoordinates"}            ],
+           "originalName": "GetCenterCoordinates"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getHoleRadius"}            ],
+           "originalName": "GetHoleRadius"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
+           "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

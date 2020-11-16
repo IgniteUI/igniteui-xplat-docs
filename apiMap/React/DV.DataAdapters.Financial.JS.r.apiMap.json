@@ -1,0 +1,22 @@
+{
+"types": [
+{
+    "originalName": "StockChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-stock-changed-event-args.ts",
+ "mappedName": "IgrStockChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "addedSymbols"}            ],
+           "originalName": "AddedSymbols"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "removedSymbols"}            ],
+           "originalName": "RemovedSymbols"
+       }   ],
+    "originalNamespace": "Infragistics.DataAdapters"
+}
+]
+}

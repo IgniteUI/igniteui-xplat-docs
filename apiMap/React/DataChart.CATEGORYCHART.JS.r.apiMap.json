@@ -1,0 +1,217 @@
+{
+"extraFiles": [
+"igr-category-chart-core-module.ts",
+"igr-category-chart-module.ts"
+],
+"types": [
+{
+    "originalName": "CategoryChart",
+   "names": [
+        { "platform": "React",     "fileName": "igr-category-chart.ts",
+ "mappedName": "IgrCategoryChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "transitionInDuration"}            ],
+           "originalName": "TransitionInDuration"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(time: number) => number", "mappedName": "transitionInEasingFunction"}            ],
+           "originalName": "TransitionInEasingFunction"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "chartType"}            ],
+           "originalName": "ChartType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategorySeriesMarkerCollisionAvoidance", "mappedName": "markerCollisionAvoidance"}            ],
+           "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
+           "originalName": "IsTransitionInEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
+           "originalName": "TransitionInMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransitionInSpeedType", "mappedName": "transitionInSpeedType"}            ],
+           "originalName": "TransitionInSpeedType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisInterval"}            ],
+           "originalName": "XAxisInterval"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisMinorInterval"}            ],
+           "originalName": "XAxisMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisGap"}            ],
+           "originalName": "XAxisGap"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisOverlap"}            ],
+           "originalName": "XAxisOverlap"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisInterval"}            ],
+           "originalName": "YAxisInterval"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}            ],
+           "originalName": "YAxisIsLogarithmic"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLogarithmBase"}            ],
+           "originalName": "YAxisLogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMinimumValue"}            ],
+           "originalName": "YAxisMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMaximumValue"}            ],
+           "originalName": "YAxisMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMinorInterval"}            ],
+           "originalName": "YAxisMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisActualMinimum"}            ],
+           "originalName": "XAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisActualMaximum"}            ],
+           "originalName": "XAxisActualMaximum"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisActualMinimum"}            ],
+           "originalName": "YAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisActualMaximum"}            ],
+           "originalName": "YAxisActualMaximum"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "negativeBrushes"}            ],
+           "originalName": "NegativeBrushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "negativeOutlines"}            ],
+           "originalName": "NegativeOutlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisAbbreviateLargeNumbers"}            ],
+           "originalName": "YAxisAbbreviateLargeNumbers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCategoryHighlightingEnabled"}            ],
+           "originalName": "IsCategoryHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isItemHighlightingEnabled"}            ],
+           "originalName": "IsItemHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "XYChart",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryChartType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CategoryChartType.ts",
+ "mappedName": "CategoryChartType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Line"}            ],
+           "originalName": "Line"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Area"}            ],
+           "originalName": "Area"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Point"}            ],
+           "originalName": "Point"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "StepLine"}            ],
+           "originalName": "StepLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "StepArea"}            ],
+           "originalName": "StepArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Spline"}            ],
+           "originalName": "Spline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "SplineArea"}            ],
+           "originalName": "SplineArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Waterfall"}            ],
+           "originalName": "Waterfall"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryChartType", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

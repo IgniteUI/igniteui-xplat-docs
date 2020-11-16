@@ -1,0 +1,152 @@
+{
+"extraFiles": [
+"igc-expansion-panel-module.ts"
+],
+"types": [
+{
+    "originalName": "OnExpandedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-on-expanded-event-args.ts",
+ "mappedName": "IgcOnExpandedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+},
+{
+    "originalName": "OnCollapsedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-on-collapsed-event-args.ts",
+ "mappedName": "IgcOnCollapsedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+},
+{
+    "originalName": "ExpansionPanel",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-expansion-panel-component.ts",
+ "mappedName": "IgcExpansionPanelComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "caption"}            ],
+           "originalName": "Caption"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
+           "originalName": "CaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
+           "originalName": "ActualCaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
+           "originalName": "CaptionCollapsedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
+           "originalName": "CaptionExpandedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "description"}            ],
+           "originalName": "Description"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
+           "originalName": "DescriptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
+           "originalName": "ActualDescriptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
+           "originalName": "DescriptionCollapsedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
+           "originalName": "DescriptionExpandedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "elevation"}            ],
+           "originalName": "Elevation"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualElevation"}            ],
+           "originalName": "ActualElevation"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "expanded"}            ],
+           "originalName": "Expanded"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
+           "originalName": "HeaderBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
+           "originalName": "ActualHeaderBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
+           "originalName": "HeaderCollapsedBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
+           "originalName": "HeaderExpandedBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
+           "originalName": "ActualUmbraShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
+           "originalName": "ActualPenumbraShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
+           "originalName": "ActualAmbientShadowColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "collapse"}            ],
+           "originalName": "Collapse"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "expand"}            ],
+           "originalName": "Expand"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toggle"}            ],
+           "originalName": "Toggle"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
+}
+]
+}

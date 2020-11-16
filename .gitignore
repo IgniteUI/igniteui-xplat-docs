@@ -1,0 +1,14 @@
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+dist
+dist_BK
+test
+src/**/*.js
+src/**/*.js.map
+
+# excluding auto-generated files:
+docfx/**/components/toc_*.json
+docfx/**/components/toc.yml

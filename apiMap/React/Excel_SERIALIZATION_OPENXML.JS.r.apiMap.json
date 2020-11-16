@@ -1,0 +1,158 @@
+{
+"types": [
+{
+    "originalName": "OpenPackagingNonConformanceReason",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "OpenPackagingNonConformanceReason.ts",
+ "mappedName": "OpenPackagingNonConformanceReason"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "couldNotGetPackagePart"}            ],
+           "originalName": "CouldNotGetPackagePart"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "conformant"}            ],
+           "originalName": "Conformant"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameMissing"}            ],
+           "originalName": "NameMissing"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeMissing"}            ],
+           "originalName": "ContentTypeMissing"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEmpty"}            ],
+           "originalName": "SegmentEmpty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDoesNotStartWithForwardSlash"}            ],
+           "originalName": "NameDoesNotStartWithForwardSlash"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameEndsWithForwardSlash"}            ],
+           "originalName": "NameEndsWithForwardSlash"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasNonPCharCharacters"}            ],
+           "originalName": "SegmentHasNonPCharCharacters"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedSlashCharacters"}            ],
+           "originalName": "SegmentHasPercentEncodedSlashCharacters"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedUnreservedCharacters"}            ],
+           "originalName": "SegmentHasPercentEncodedUnreservedCharacters"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEndsWithDotCharacter"}            ],
+           "originalName": "SegmentEndsWithDotCharacter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentMissingNonDotCharacter"}            ],
+           "originalName": "SegmentMissingNonDotCharacter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDerivesFromExistingPartName"}            ],
+           "originalName": "NameDerivesFromExistingPartName"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "duplicateName"}            ],
+           "originalName": "DuplicateName"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidSyntax"}            ],
+           "originalName": "ContentTypeHasInvalidSyntax"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidWhitespace"}            ],
+           "originalName": "ContentTypeHasInvalidWhitespace"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasComments"}            ],
+           "originalName": "ContentTypeHasComments"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasParameters"}            ],
+           "originalName": "ContentTypeHasParameters"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "growthHintChanged"}            ],
+           "originalName": "GrowthHintChanged"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlEncodingUnsupported"}            ],
+           "originalName": "XmlEncodingUnsupported"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentInvalidForSchema"}            ],
+           "originalName": "XmlContentInvalidForSchema"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentDrawsOnUndefinedNamespace"}            ],
+           "originalName": "XmlContentDrawsOnUndefinedNamespace"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetsOtherRelationship"}            ],
+           "originalName": "RelationshipTargetsOtherRelationship"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipIdInvalid"}            ],
+           "originalName": "RelationshipIdInvalid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTypeInvalid"}            ],
+           "originalName": "RelationshipTypeInvalid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetInvalid"}            ],
+           "originalName": "RelationshipTargetInvalid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetNotRelativeReference"}            ],
+           "originalName": "RelationshipTargetNotRelativeReference"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipNameInvalid"}            ],
+           "originalName": "RelationshipNameInvalid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Documents.Excel.Serialization.Excel2007"
+}
+]
+}

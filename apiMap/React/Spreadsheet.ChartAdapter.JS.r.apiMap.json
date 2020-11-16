@@ -1,0 +1,22 @@
+{
+"extraFiles": [
+"igr-spreadsheet-chart-adapter-module.ts"
+],
+"types": [
+{
+    "originalName": "SpreadsheetChartAdapter",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetChartAdapter.ts",
+ "mappedName": "SpreadsheetChartAdapter"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetChartAdapterBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids",
+    "originalNamespace": "Infragistics.Controls.Grids"
+}
+]
+}

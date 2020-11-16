@@ -1,0 +1,779 @@
+{
+"extraFiles": [
+"igr-overlay-proxy-module.ts",
+"igr-indicator-proxy-module.ts",
+"igr-indicators-module.ts",
+"igr-overlays-module.ts"
+],
+"types": [
+{
+    "originalName": "AbsoluteVolumeOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-absolute-volume-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-absolute-volume-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-absolute-volume-oscillator-indicator-module.ts",
+ "mappedName": "IgrAbsoluteVolumeOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AccumulationDistributionIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-accumulation-distribution-indicator.ts",
+    "dynamicModuleName": "igr-accumulation-distribution-indicator-dynamic-module.ts",
+    "moduleName": "igr-accumulation-distribution-indicator-module.ts",
+ "mappedName": "IgrAccumulationDistributionIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AverageDirectionalIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-average-directional-index-indicator.ts",
+    "dynamicModuleName": "igr-average-directional-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-average-directional-index-indicator-module.ts",
+ "mappedName": "IgrAverageDirectionalIndexIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AverageTrueRangeIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-average-true-range-indicator.ts",
+    "dynamicModuleName": "igr-average-true-range-indicator-dynamic-module.ts",
+    "moduleName": "igr-average-true-range-indicator-module.ts",
+ "mappedName": "IgrAverageTrueRangeIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "BollingerBandsOverlay",
+   "names": [
+        { "platform": "React",     "fileName": "igr-bollinger-bands-overlay.ts",
+    "dynamicModuleName": "igr-bollinger-bands-overlay-dynamic-module.ts",
+    "moduleName": "igr-bollinger-bands-overlay-module.ts",
+ "mappedName": "IgrBollingerBandsOverlay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "multiplier"}            ],
+           "originalName": "Multiplier"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       }   ],
+    "originalBaseTypeName": "FinancialOverlay",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "BollingerBandWidthIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-bollinger-band-width-indicator.ts",
+    "dynamicModuleName": "igr-bollinger-band-width-indicator-dynamic-module.ts",
+    "moduleName": "igr-bollinger-band-width-indicator-module.ts",
+ "mappedName": "IgrBollingerBandWidthIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "multiplier"}            ],
+           "originalName": "Multiplier"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChaikinOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-chaikin-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-chaikin-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-chaikin-oscillator-indicator-module.ts",
+ "mappedName": "IgrChaikinOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ChaikinVolatilityIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-chaikin-volatility-indicator.ts",
+    "dynamicModuleName": "igr-chaikin-volatility-indicator-dynamic-module.ts",
+    "moduleName": "igr-chaikin-volatility-indicator-module.ts",
+ "mappedName": "IgrChaikinVolatilityIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CommodityChannelIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-commodity-channel-index-indicator.ts",
+    "dynamicModuleName": "igr-commodity-channel-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-commodity-channel-index-indicator-module.ts",
+ "mappedName": "IgrCommodityChannelIndexIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-custom-indicator.ts",
+    "dynamicModuleName": "igr-custom-indicator-dynamic-module.ts",
+    "moduleName": "igr-custom-indicator-module.ts",
+ "mappedName": "IgrCustomIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DetrendedPriceOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-detrended-price-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-detrended-price-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-detrended-price-oscillator-indicator-module.ts",
+ "mappedName": "IgrDetrendedPriceOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "EaseOfMovementIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-ease-of-movement-indicator.ts",
+    "dynamicModuleName": "igr-ease-of-movement-indicator-dynamic-module.ts",
+    "moduleName": "igr-ease-of-movement-indicator-module.ts",
+ "mappedName": "IgrEaseOfMovementIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FastStochasticOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-fast-stochastic-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-fast-stochastic-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-fast-stochastic-oscillator-indicator-module.ts",
+ "mappedName": "IgrFastStochasticOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-financial-indicator.ts",
+ "mappedName": "IgrFinancialIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IndicatorDisplayType", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
+           "originalName": "IgnoreFirst"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
+           "originalName": "TrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
+           "originalName": "ActualTrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       }   ],
+    "originalBaseTypeName": "FinancialSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialOverlay",
+   "names": [
+        { "platform": "React",     "fileName": "igr-financial-overlay.ts",
+ "mappedName": "IgrFinancialOverlay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
+           "originalName": "IgnoreFirst"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       }   ],
+    "originalBaseTypeName": "FinancialSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ForceIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-force-index-indicator.ts",
+    "dynamicModuleName": "igr-force-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-force-index-indicator-module.ts",
+ "mappedName": "IgrForceIndexIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FullStochasticOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-full-stochastic-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-full-stochastic-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-full-stochastic-oscillator-indicator-module.ts",
+ "mappedName": "IgrFullStochasticOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "smoothingPeriod"}            ],
+           "originalName": "SmoothingPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "triggerPeriod"}            ],
+           "originalName": "TriggerPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ItemwiseStrategyBasedIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-itemwise-strategy-based-indicator.ts",
+ "mappedName": "IgrItemwiseStrategyBasedIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MarketFacilitationIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-market-facilitation-index-indicator.ts",
+    "dynamicModuleName": "igr-market-facilitation-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-market-facilitation-index-indicator-module.ts",
+ "mappedName": "IgrMarketFacilitationIndexIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MassIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-mass-index-indicator.ts",
+    "dynamicModuleName": "igr-mass-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-mass-index-indicator-module.ts",
+ "mappedName": "IgrMassIndexIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MedianPriceIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-median-price-indicator.ts",
+    "dynamicModuleName": "igr-median-price-indicator-dynamic-module.ts",
+    "moduleName": "igr-median-price-indicator-module.ts",
+ "mappedName": "IgrMedianPriceIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MoneyFlowIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-money-flow-index-indicator.ts",
+    "dynamicModuleName": "igr-money-flow-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-money-flow-index-indicator-module.ts",
+ "mappedName": "IgrMoneyFlowIndexIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MovingAverageConvergenceDivergenceIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-moving-average-convergence-divergence-indicator.ts",
+    "dynamicModuleName": "igr-moving-average-convergence-divergence-indicator-dynamic-module.ts",
+    "moduleName": "igr-moving-average-convergence-divergence-indicator-module.ts",
+ "mappedName": "IgrMovingAverageConvergenceDivergenceIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "signalPeriod"}            ],
+           "originalName": "SignalPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "NegativeVolumeIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-negative-volume-index-indicator.ts",
+    "dynamicModuleName": "igr-negative-volume-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-negative-volume-index-indicator-module.ts",
+ "mappedName": "IgrNegativeVolumeIndexIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "OnBalanceVolumeIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-on-balance-volume-indicator.ts",
+    "dynamicModuleName": "igr-on-balance-volume-indicator-dynamic-module.ts",
+    "moduleName": "igr-on-balance-volume-indicator-module.ts",
+ "mappedName": "IgrOnBalanceVolumeIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PercentagePriceOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-percentage-price-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-percentage-price-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-percentage-price-oscillator-indicator-module.ts",
+ "mappedName": "IgrPercentagePriceOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PercentageVolumeOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-percentage-volume-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-percentage-volume-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-percentage-volume-oscillator-indicator-module.ts",
+ "mappedName": "IgrPercentageVolumeOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PositiveVolumeIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-positive-volume-index-indicator.ts",
+    "dynamicModuleName": "igr-positive-volume-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-positive-volume-index-indicator-module.ts",
+ "mappedName": "IgrPositiveVolumeIndexIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PriceChannelOverlay",
+   "names": [
+        { "platform": "React",     "fileName": "igr-price-channel-overlay.ts",
+    "dynamicModuleName": "igr-price-channel-overlay-dynamic-module.ts",
+    "moduleName": "igr-price-channel-overlay-module.ts",
+ "mappedName": "IgrPriceChannelOverlay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       }   ],
+    "originalBaseTypeName": "FinancialOverlay",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PriceVolumeTrendIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-price-volume-trend-indicator.ts",
+    "dynamicModuleName": "igr-price-volume-trend-indicator-dynamic-module.ts",
+    "moduleName": "igr-price-volume-trend-indicator-module.ts",
+ "mappedName": "IgrPriceVolumeTrendIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "RateOfChangeAndMomentumIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-rate-of-change-and-momentum-indicator.ts",
+    "dynamicModuleName": "igr-rate-of-change-and-momentum-indicator-dynamic-module.ts",
+    "moduleName": "igr-rate-of-change-and-momentum-indicator-module.ts",
+ "mappedName": "IgrRateOfChangeAndMomentumIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "RelativeStrengthIndexIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-relative-strength-index-indicator.ts",
+    "dynamicModuleName": "igr-relative-strength-index-indicator-dynamic-module.ts",
+    "moduleName": "igr-relative-strength-index-indicator-module.ts",
+ "mappedName": "IgrRelativeStrengthIndexIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SlowStochasticOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-slow-stochastic-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-slow-stochastic-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-slow-stochastic-oscillator-indicator-module.ts",
+ "mappedName": "IgrSlowStochasticOscillatorIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StandardDeviationIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-standard-deviation-indicator.ts",
+    "dynamicModuleName": "igr-standard-deviation-indicator-dynamic-module.ts",
+    "moduleName": "igr-standard-deviation-indicator-module.ts",
+ "mappedName": "IgrStandardDeviationIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StochRSIIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-stoch-rsi-indicator.ts",
+    "dynamicModuleName": "igr-stoch-rsi-indicator-dynamic-module.ts",
+    "moduleName": "igr-stoch-rsi-indicator-module.ts",
+ "mappedName": "IgrStochRSIIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StrategyBasedIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-strategy-based-indicator.ts",
+ "mappedName": "IgrStrategyBasedIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "FinancialIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "TRIXIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-trix-indicator.ts",
+    "dynamicModuleName": "igr-trix-indicator-dynamic-module.ts",
+    "moduleName": "igr-trix-indicator-module.ts",
+ "mappedName": "IgrTRIXIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "TypicalPriceIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-typical-price-indicator.ts",
+    "dynamicModuleName": "igr-typical-price-indicator-dynamic-module.ts",
+    "moduleName": "igr-typical-price-indicator-module.ts",
+ "mappedName": "IgrTypicalPriceIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "UltimateOscillatorIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-ultimate-oscillator-indicator.ts",
+    "dynamicModuleName": "igr-ultimate-oscillator-indicator-dynamic-module.ts",
+    "moduleName": "igr-ultimate-oscillator-indicator-module.ts",
+ "mappedName": "IgrUltimateOscillatorIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "WeightedCloseIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-weighted-close-indicator.ts",
+    "dynamicModuleName": "igr-weighted-close-indicator-dynamic-module.ts",
+    "moduleName": "igr-weighted-close-indicator-module.ts",
+ "mappedName": "IgrWeightedCloseIndicator"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "WilliamsPercentRIndicator",
+   "names": [
+        { "platform": "React",     "fileName": "igr-williams-percent-r-indicator.ts",
+    "dynamicModuleName": "igr-williams-percent-r-indicator-dynamic-module.ts",
+    "moduleName": "igr-williams-percent-r-indicator-module.ts",
+ "mappedName": "IgrWilliamsPercentRIndicator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       }   ],
+    "originalBaseTypeName": "StrategyBasedIndicator",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

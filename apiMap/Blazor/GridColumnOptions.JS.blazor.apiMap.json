@@ -1,0 +1,387 @@
+{
+"types": [
+{
+    "originalName": "FilterApplyButtonClickEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "FilterApplyButtonClickEventArgs.cs",
+ "mappedName": "FilterApplyButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterCancelButtonClickEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "FilterCancelButtonClickEventArgs.cs",
+ "mappedName": "FilterCancelButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnOptions.cs",
+ "mappedName": "GridColumnOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingLeft"}            ],
+           "originalName": "PaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingTop"}            ],
+           "originalName": "PaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingRight"}            ],
+           "originalName": "PaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingBottom"}            ],
+           "originalName": "PaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HeaderVisible"}            ],
+           "originalName": "HeaderVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SortOptionsVisible"}            ],
+           "originalName": "SortOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "MoveOptionsVisible"}            ],
+           "originalName": "MoveOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "PinOptionsVisible"}            ],
+           "originalName": "PinOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HideOptionsVisible"}            ],
+           "originalName": "HideOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "GroupOptionsVisible"}            ],
+           "originalName": "GroupOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "FilterOptionsVisible"}            ],
+           "originalName": "FilterOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SortHeaderCaption"}            ],
+           "originalName": "SortHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SortAscendingCaption"}            ],
+           "originalName": "SortAscendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SortDescendingCaption"}            ],
+           "originalName": "SortDescendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MoveHeaderCaption"}            ],
+           "originalName": "MoveHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MoveLeftCaption"}            ],
+           "originalName": "MoveLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MoveRightCaption"}            ],
+           "originalName": "MoveRightCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PinHeaderCaption"}            ],
+           "originalName": "PinHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PinLeftCaption"}            ],
+           "originalName": "PinLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PinRightCaption"}            ],
+           "originalName": "PinRightCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ApplyFiltersButtonCaption"}            ],
+           "originalName": "ApplyFiltersButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CancelFiltersButtonCaption"}            ],
+           "originalName": "CancelFiltersButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ClearColumnFiltersCaption"}            ],
+           "originalName": "ClearColumnFiltersCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "FilterListDensity"}            ],
+           "originalName": "FilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualFilterListDensity"}            ],
+           "originalName": "ActualFilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FilterListPlaceholderText"}            ],
+           "originalName": "FilterListPlaceholderText"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsSimpleSectionBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnOptionsSimpleSectionBase.cs",
+ "mappedName": "GridColumnOptionsSimpleSectionBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Caption"}            ],
+           "originalName": "Caption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowCaption"}            ],
+           "originalName": "ShowCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsSectionBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnOptionsSectionBase.cs",
+ "mappedName": "GridColumnOptionsSectionBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnOptionsBase.cs",
+ "mappedName": "GridColumnOptionsBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AutoSize"}            ],
+           "originalName": "AutoSize"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "BackgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "BaseControlTheme", "mappedName": "ActualBaseTheme"}            ],
+           "originalName": "ActualBaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ButtonDensity"}            ],
+           "originalName": "ButtonDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualButtonDensity"}            ],
+           "originalName": "ActualButtonDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "Density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualDensity"}            ],
+           "originalName": "ActualDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
+           "originalName": "TextColor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnFilterOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnFilterOptions.cs",
+ "mappedName": "GridColumnFilterOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ApplyButtonCaption"}            ],
+           "originalName": "ApplyButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CancelButtonCaption"}            ],
+           "originalName": "CancelButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ClearColumnFiltersCaption"}            ],
+           "originalName": "ClearColumnFiltersCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FilterListPlaceholderText"}            ],
+           "originalName": "FilterListPlaceholderText"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "FilterListDensity"}            ],
+           "originalName": "FilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualFilterListDensity"}            ],
+           "originalName": "ActualFilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextFilterCaption"}            ],
+           "originalName": "TextFilterCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnGroupOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnGroupOptions.cs",
+ "mappedName": "GridColumnGroupOptions"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnHideOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnHideOptions.cs",
+ "mappedName": "GridColumnHideOptions"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnMoveOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnMoveOptions.cs",
+ "mappedName": "GridColumnMoveOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MoveLeftCaption"}            ],
+           "originalName": "MoveLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MoveRightCaption"}            ],
+           "originalName": "MoveRightCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnPinOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnPinOptions.cs",
+ "mappedName": "GridColumnPinOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PinLeftCaption"}            ],
+           "originalName": "PinLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PinRightCaption"}            ],
+           "originalName": "PinRightCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnSortOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnSortOptions.cs",
+ "mappedName": "GridColumnSortOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AscendingCaption"}            ],
+           "originalName": "AscendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DescendingCaption"}            ],
+           "originalName": "DescendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnSortDirection", "mappedName": "SortDirection"}            ],
+           "originalName": "SortDirection"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+}
+]
+}

@@ -1,0 +1,50 @@
+{
+"extraFiles": [
+"igc-column-hiding-module.ts"
+],
+"types": [
+{
+    "originalName": "ColumnHiding",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-column-hiding-component.ts",
+ "mappedName": "IgcColumnHidingComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcDataGridComponent", "mappedName": "targetGrid"}            ],
+           "originalName": "TargetGrid"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "title"}            ],
+           "originalName": "Title"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
+           "originalName": "TitleStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "titleColor"}            ],
+           "originalName": "TitleColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "showAllText"}            ],
+           "originalName": "ShowAllText"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hideAllText"}            ],
+           "originalName": "HideAllText"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
+           "originalName": "FilterPlaceholderText"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+}
+]
+}

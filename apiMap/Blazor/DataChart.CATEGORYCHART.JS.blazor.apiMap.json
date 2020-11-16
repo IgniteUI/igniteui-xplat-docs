@@ -1,0 +1,124 @@
+{
+"types": [
+{
+    "originalName": "CategoryChart",
+   "names": [
+        { "platform": "Blazor",     "fileName": "CategoryChart.cs",
+ "mappedName": "CategoryChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionInDuration"}            ],
+           "originalName": "TransitionInDuration"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CategoryChartType", "mappedName": "ChartType"}            ],
+           "originalName": "ChartType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CategorySeriesMarkerCollisionAvoidance", "mappedName": "MarkerCollisionAvoidance"}            ],
+           "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsTransitionInEnabled"}            ],
+           "originalName": "IsTransitionInEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CategoryTransitionInMode", "mappedName": "TransitionInMode"}            ],
+           "originalName": "TransitionInMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "TransitionInSpeedType", "mappedName": "TransitionInSpeedType"}            ],
+           "originalName": "TransitionInSpeedType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisInterval"}            ],
+           "originalName": "XAxisInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisMinorInterval"}            ],
+           "originalName": "XAxisMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisGap"}            ],
+           "originalName": "XAxisGap"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisOverlap"}            ],
+           "originalName": "XAxisOverlap"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisInterval"}            ],
+           "originalName": "YAxisInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "YAxisIsLogarithmic"}            ],
+           "originalName": "YAxisIsLogarithmic"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "YAxisLogarithmBase"}            ],
+           "originalName": "YAxisLogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisMinimumValue"}            ],
+           "originalName": "YAxisMinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisMaximumValue"}            ],
+           "originalName": "YAxisMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisMinorInterval"}            ],
+           "originalName": "YAxisMinorInterval"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeBrushes"}            ],
+           "originalName": "NegativeBrushes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeOutlines"}            ],
+           "originalName": "NegativeOutlines"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "YAxisAbbreviateLargeNumbers"}            ],
+           "originalName": "YAxisAbbreviateLargeNumbers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCategoryHighlightingEnabled"}            ],
+           "originalName": "IsCategoryHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsItemHighlightingEnabled"}            ],
+           "originalName": "IsItemHighlightingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "XYChart",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

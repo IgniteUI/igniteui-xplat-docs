@@ -1,0 +1,467 @@
+{
+"types": [
+{
+    "originalName": "ColorScale",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-color-scale-component.ts",
+ "mappedName": "IgcColorScaleComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ColorScaleInterpolationMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ColorScaleInterpolationMode.ts",
+ "mappedName": "ColorScaleInterpolationMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "Select"}            ],
+           "originalName": "Select"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "InterpolateRGB"}            ],
+           "originalName": "InterpolateRGB"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "InterpolateHSV"}            ],
+           "originalName": "InterpolateHSV"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomPaletteColorScale",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-custom-palette-color-scale-component.ts",
+    "dynamicModuleName": "igc-custom-palette-color-scale-dynamic-module.ts",
+    "moduleName": "igc-custom-palette-color-scale-module.ts",
+ "mappedName": "IgcCustomPaletteColorScaleComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "palette"}            ],
+           "originalName": "Palette"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "interpolationMode"}            ],
+           "originalName": "InterpolationMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "providePalette"}            ],
+           "originalName": "ProvidePalette"
+       }   ],
+    "originalBaseTypeName": "ColorScale",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomContourValueResolver",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-custom-contour-value-resolver-component.ts",
+    "dynamicModuleName": "igc-custom-contour-value-resolver-dynamic-module.ts",
+    "moduleName": "igc-custom-contour-value-resolver-module.ts",
+ "mappedName": "IgcCustomContourValueResolverComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "ContourValueResolver",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomContourValueResolverEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-custom-contour-value-resolver-event-args.ts",
+ "mappedName": "IgcCustomContourValueResolverEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "values"}            ],
+           "originalName": "Values"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "contourValues"}            ],
+           "originalName": "ContourValues"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterContourSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scatter-contour-series-component.ts",
+    "dynamicModuleName": "igc-scatter-contour-series-dynamic-module.ts",
+    "moduleName": "igc-scatter-contour-series-module.ts",
+ "mappedName": "IgcScatterContourSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcValueBrushScaleComponent", "mappedName": "fillScale"}            ],
+           "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcContourValueResolverComponent", "mappedName": "valueResolver"}            ],
+           "originalName": "ValueResolver"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       }   ],
+    "originalBaseTypeName": "ScatterTriangulationSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ContourValueResolver",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-contour-value-resolver-component.ts",
+ "mappedName": "IgcContourValueResolverComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LinearContourValueResolver",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-linear-contour-value-resolver-component.ts",
+    "dynamicModuleName": "igc-linear-contour-value-resolver-dynamic-module.ts",
+    "moduleName": "igc-linear-contour-value-resolver-module.ts",
+ "mappedName": "IgcLinearContourValueResolverComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "valueCount"}            ],
+           "originalName": "ValueCount"
+       }   ],
+    "originalBaseTypeName": "ContourValueResolver",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterPolylineSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scatter-polyline-series-component.ts",
+    "dynamicModuleName": "igc-scatter-polyline-series-dynamic-module.ts",
+    "moduleName": "igc-scatter-polyline-series-module.ts",
+ "mappedName": "IgcScatterPolylineSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcStyle", "mappedName": "shapeStyle"}            ],
+           "originalName": "ShapeStyle"
+       }   ],
+    "originalBaseTypeName": "ShapeSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterAreaSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scatter-area-series-component.ts",
+    "dynamicModuleName": "igc-scatter-area-series-dynamic-module.ts",
+    "moduleName": "igc-scatter-area-series-module.ts",
+ "mappedName": "IgcScatterAreaSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColorScaleComponent", "mappedName": "colorScale"}            ],
+           "originalName": "ColorScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "colorMemberPath"}            ],
+           "originalName": "ColorMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "attachImage"}            ],
+           "originalName": "AttachImage"
+       }   ],
+    "originalBaseTypeName": "ScatterTriangulationSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterPolygonSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scatter-polygon-series-component.ts",
+    "dynamicModuleName": "igc-scatter-polygon-series-dynamic-module.ts",
+    "moduleName": "igc-scatter-polygon-series-module.ts",
+ "mappedName": "IgcScatterPolygonSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
+           "originalName": "HasMarkers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcStyle", "mappedName": "shapeStyle"}            ],
+           "originalName": "ShapeStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
+           "originalName": "MarkerCollisionAvoidance"
+       }   ],
+    "originalBaseTypeName": "ShapeSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ShapeSeriesBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-shape-series-base-component.ts",
+ "mappedName": "IgcShapeSeriesBaseComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
+           "originalName": "ShapeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericXAxisComponent", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericYAxisComponent", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "shapeFilterResolution"}            ],
+           "originalName": "ShapeFilterResolution"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShape"}            ],
+           "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterTriangulationSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-scatter-triangulation-series-component.ts",
+ "mappedName": "IgcScatterTriangulationSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
+           "originalName": "XMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
+           "originalName": "YMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericXAxisComponent", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericYAxisComponent", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "trianglesSource"}            ],
+           "originalName": "TrianglesSource"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "triangleVertexMemberPath1"}            ],
+           "originalName": "TriangleVertexMemberPath1"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "triangleVertexMemberPath2"}            ],
+           "originalName": "TriangleVertexMemberPath2"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "triangleVertexMemberPath3"}            ],
+           "originalName": "TriangleVertexMemberPath3"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShape"}            ],
+           "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StyleSelector",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "StyleSelector.ts",
+ "mappedName": "StyleSelector"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcStyle", "mappedName": "selectStyle"}            ],
+           "originalName": "SelectStyle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StyleShapeEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-style-shape-event-args.ts",
+ "mappedName": "IgcStyleShapeEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "shapeStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "shapeStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "shapeStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "shapeStyle.opacity"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

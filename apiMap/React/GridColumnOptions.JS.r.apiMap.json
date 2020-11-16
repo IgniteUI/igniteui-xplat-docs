@@ -1,0 +1,431 @@
+{
+"extraFiles": [
+"igr-grid-column-options-module.ts",
+"igr-grid-column-move-options-module.ts",
+"igr-grid-column-sort-options-module.ts",
+"igr-grid-column-pin-options-module.ts",
+"igr-grid-column-hide-options-module.ts",
+"igr-grid-column-filter-options-module.ts",
+"igr-grid-column-group-options-module.ts"
+],
+"types": [
+{
+    "originalName": "FilterApplyButtonClickEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-filter-apply-button-click-event-args.ts",
+ "mappedName": "IgrFilterApplyButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterCancelButtonClickEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-filter-cancel-button-click-event-args.ts",
+ "mappedName": "IgrFilterCancelButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-options.ts",
+ "mappedName": "IgrGridColumnOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "headerOptionsVisibleResolved"}            ],
+           "originalName": "HeaderOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "sortOptionsVisibleResolved"}            ],
+           "originalName": "SortOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "moveOptionsVisibleResolved"}            ],
+           "originalName": "MoveOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "pinOptionsVisibleResolved"}            ],
+           "originalName": "PinOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hideOptionsVisibleResolved"}            ],
+           "originalName": "HideOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "groupOptionsVisibleResolved"}            ],
+           "originalName": "GroupOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "filterOptionsVisibleResolved"}            ],
+           "originalName": "FilterOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "paddingLeft"}            ],
+           "originalName": "PaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "paddingTop"}            ],
+           "originalName": "PaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "paddingRight"}            ],
+           "originalName": "PaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "paddingBottom"}            ],
+           "originalName": "PaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "headerVisible"}            ],
+           "originalName": "HeaderVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "sortOptionsVisible"}            ],
+           "originalName": "SortOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "moveOptionsVisible"}            ],
+           "originalName": "MoveOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "pinOptionsVisible"}            ],
+           "originalName": "PinOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hideOptionsVisible"}            ],
+           "originalName": "HideOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "groupOptionsVisible"}            ],
+           "originalName": "GroupOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "filterOptionsVisible"}            ],
+           "originalName": "FilterOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "sortHeaderCaption"}            ],
+           "originalName": "SortHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "sortAscendingCaption"}            ],
+           "originalName": "SortAscendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "sortDescendingCaption"}            ],
+           "originalName": "SortDescendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "moveHeaderCaption"}            ],
+           "originalName": "MoveHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "moveLeftCaption"}            ],
+           "originalName": "MoveLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "moveRightCaption"}            ],
+           "originalName": "MoveRightCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "pinHeaderCaption"}            ],
+           "originalName": "PinHeaderCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "pinLeftCaption"}            ],
+           "originalName": "PinLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "pinRightCaption"}            ],
+           "originalName": "PinRightCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "applyFiltersButtonCaption"}            ],
+           "originalName": "ApplyFiltersButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "cancelFiltersButtonCaption"}            ],
+           "originalName": "CancelFiltersButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "clearColumnFiltersCaption"}            ],
+           "originalName": "ClearColumnFiltersCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "filterListDensity"}            ],
+           "originalName": "FilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "actualFilterListDensity"}            ],
+           "originalName": "ActualFilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "filterListPlaceholderText"}            ],
+           "originalName": "FilterListPlaceholderText"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsSimpleSectionBase",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-options-simple-section-base.ts",
+ "mappedName": "IgrGridColumnOptionsSimpleSectionBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "caption"}            ],
+           "originalName": "Caption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showCaption"}            ],
+           "originalName": "ShowCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsSectionBase",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-options-section-base.ts",
+ "mappedName": "IgrGridColumnOptionsSectionBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnOptionsBase",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-options-base.ts",
+ "mappedName": "IgrGridColumnOptionsBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "autoSize"}            ],
+           "originalName": "AutoSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "actualBaseTheme"}            ],
+           "originalName": "ActualBaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "buttonDensity"}            ],
+           "originalName": "ButtonDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "actualButtonDensity"}            ],
+           "originalName": "ActualButtonDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumn", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "actualDensity"}            ],
+           "originalName": "ActualDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnFilterOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-filter-options.ts",
+ "mappedName": "IgrGridColumnFilterOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "applyButtonCaption"}            ],
+           "originalName": "ApplyButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "cancelButtonCaption"}            ],
+           "originalName": "CancelButtonCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "clearColumnFiltersCaption"}            ],
+           "originalName": "ClearColumnFiltersCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "filterListPlaceholderText"}            ],
+           "originalName": "FilterListPlaceholderText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "filterListDensity"}            ],
+           "originalName": "FilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "actualFilterListDensity"}            ],
+           "originalName": "ActualFilterListDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textFilterCaption"}            ],
+           "originalName": "TextFilterCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnGroupOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-group-options.ts",
+ "mappedName": "IgrGridColumnGroupOptions"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnHideOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-hide-options.ts",
+ "mappedName": "IgrGridColumnHideOptions"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnMoveOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-move-options.ts",
+ "mappedName": "IgrGridColumnMoveOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "moveLeftCaption"}            ],
+           "originalName": "MoveLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "moveRightCaption"}            ],
+           "originalName": "MoveRightCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnPinOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-pin-options.ts",
+ "mappedName": "IgrGridColumnPinOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "pinLeftCaption"}            ],
+           "originalName": "PinLeftCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "pinRightCaption"}            ],
+           "originalName": "PinRightCaption"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnSortOptions",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-sort-options.ts",
+ "mappedName": "IgrGridColumnSortOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "ascendingCaption"}            ],
+           "originalName": "AscendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "descendingCaption"}            ],
+           "originalName": "DescendingCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColumnSortDirection", "mappedName": "sortDirection"}            ],
+           "originalName": "SortDirection"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+}
+]
+}

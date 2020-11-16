@@ -1,0 +1,314 @@
+{
+"types": [
+{
+    "originalName": "HorizontalAnchoredCategorySeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "HorizontalAnchoredCategorySeries.cs",
+ "mappedName": "HorizontalAnchoredCategorySeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "XAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetOffsetValue"}            ],
+           "originalName": "GetOffsetValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCategoryWidth"}            ],
+           "originalName": "GetCategoryWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       }   ],
+    "originalBaseTypeName": "AnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PointSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "PointSeries.cs",
+ "mappedName": "PointSeries"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AnchoredCategorySeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AnchoredCategorySeries.cs",
+ "mappedName": "AnchoredCategorySeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ValueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "TrendLineType", "mappedName": "TrendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TrendLineBrush"}            ],
+           "originalName": "TrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualTrendLineBrush"}            ],
+           "originalName": "ActualTrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TrendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CategorySeriesMarkerCollisionAvoidance", "mappedName": "MarkerCollisionAvoidance"}            ],
+           "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ConsolidatedItemHitTestBehavior", "mappedName": "ConsolidatedItemHitTestBehavior"}            ],
+           "originalName": "ConsolidatedItemHitTestBehavior"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
+           "originalName": "GetItem"
+       }   ],
+    "originalBaseTypeName": "CategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AreaSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AreaSeries.cs",
+ "mappedName": "AreaSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}            ],
+           "originalName": "UnknownValuePlotting"
+       }   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ColumnSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ColumnSeries.cs",
+ "mappedName": "ColumnSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusX"}            ],
+           "originalName": "RadiusX"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusY"}            ],
+           "originalName": "RadiusY"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ConsolidatedItemsPosition", "mappedName": "ConsolidatedColumnVerticalPosition"}            ],
+           "originalName": "ConsolidatedColumnVerticalPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       }   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LineSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "LineSeries.cs",
+ "mappedName": "LineSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}            ],
+           "originalName": "UnknownValuePlotting"
+       }   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SplineAreaSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SplineAreaSeries.cs",
+ "mappedName": "SplineAreaSeries"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SplineSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SplineSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SplineSeries.cs",
+ "mappedName": "SplineSeries"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SplineSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SplineSeriesBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SplineSeriesBase.cs",
+ "mappedName": "SplineSeriesBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SplineType", "mappedName": "SplineType"}            ],
+           "originalName": "SplineType"
+       }   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StepAreaSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "StepAreaSeries.cs",
+ "mappedName": "StepAreaSeries"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StepLineSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "StepLineSeries.cs",
+ "mappedName": "StepLineSeries"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "WaterfallSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "WaterfallSeries.cs",
+ "mappedName": "WaterfallSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeBrush"}            ],
+           "originalName": "NegativeBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusX"}            ],
+           "originalName": "RadiusX"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusY"}            ],
+           "originalName": "RadiusY"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeOutline"}            ],
+           "originalName": "NegativeOutline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       }   ],
+    "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

@@ -1,0 +1,5 @@
+- name: Components
+  href: 'https://www.infragistics.com/products/$ProductSpinal$'
+- name: Download Now
+  href: 'https://www.infragistics.com/products/$ProductSpinal$/download'
+  cta: true

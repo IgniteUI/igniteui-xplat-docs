@@ -1,0 +1,451 @@
+{
+"extraFiles": [
+"igc-financial-price-series-proxy-module.ts"
+],
+"types": [
+{
+    "originalName": "FinancialEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-event-args.ts",
+ "mappedName": "IgcFinancialEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "position"}            ],
+           "originalName": "Position"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "count"}            ],
+           "originalName": "Count"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcFinancialCalculationDataSource", "mappedName": "dataSource"}            ],
+           "originalName": "DataSource"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcFinancialCalculationSupportingCalculations", "mappedName": "supportingCalculations"}            ],
+           "originalName": "SupportingCalculations"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialPriceSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-price-series-component.ts",
+    "dynamicModuleName": "igc-financial-price-series-dynamic-module.ts",
+    "moduleName": "igc-financial-price-series-module.ts",
+ "mappedName": "IgcFinancialPriceSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
+           "originalName": "TrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
+           "originalName": "ActualTrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "PriceDisplayType", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "negativeOutline"}            ],
+           "originalName": "NegativeOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       }   ],
+    "originalBaseTypeName": "FinancialSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-series-component.ts",
+ "mappedName": "IgcFinancialSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
+           "originalName": "IsFinancial"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "negativeBrush"}            ],
+           "originalName": "NegativeBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcCategoryAxisBaseComponent", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcNumericYAxisComponent", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "openMemberPath"}            ],
+           "originalName": "OpenMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "highMemberPath"}            ],
+           "originalName": "HighMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "lowMemberPath"}            ],
+           "originalName": "LowMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "closeMemberPath"}            ],
+           "originalName": "CloseMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "volumeMemberPath"}            ],
+           "originalName": "VolumeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}            ],
+           "originalName": "IsCustomCategoryStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
+           "originalName": "TransitionInMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
+           "originalName": "IsTransitionInEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],
+           "originalName": "IsNegativeColorSupported"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
+           "originalName": "GetOffsetValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
+           "originalName": "GetCategoryWidth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesCloseValue"}            ],
+           "originalName": "GetSeriesCloseValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesOpenValue"}            ],
+           "originalName": "GetSeriesOpenValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesVolumeValue"}            ],
+           "originalName": "GetSeriesVolumeValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesOpenValuePosition"}            ],
+           "originalName": "GetSeriesOpenValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesCloseValuePosition"}            ],
+           "originalName": "GetSeriesCloseValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesVolumeValuePosition"}            ],
+           "originalName": "GetSeriesVolumeValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
+           "originalName": "SetNegativeColors"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialCalculationSupportingCalculations",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-calculation-supporting-calculations.ts",
+ "mappedName": "IgcFinancialCalculationSupportingCalculations"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnSupportingCalculation", "mappedName": "eMA"}            ],
+           "originalName": "EMA"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnSupportingCalculation", "mappedName": "sMA"}            ],
+           "originalName": "SMA"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnSupportingCalculation", "mappedName": "sTDEV"}            ],
+           "originalName": "STDEV"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnSupportingCalculation", "mappedName": "movingSum"}            ],
+           "originalName": "MovingSum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcDataSourceSupportingCalculation", "mappedName": "shortVolumeOscillatorAverage"}            ],
+           "originalName": "ShortVolumeOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcDataSourceSupportingCalculation", "mappedName": "longVolumeOscillatorAverage"}            ],
+           "originalName": "LongVolumeOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcDataSourceSupportingCalculation", "mappedName": "shortPriceOscillatorAverage"}            ],
+           "originalName": "ShortPriceOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcDataSourceSupportingCalculation", "mappedName": "longPriceOscillatorAverage"}            ],
+           "originalName": "LongPriceOscillatorAverage"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "(arg1: number) => number", "mappedName": "makeSafe"}            ],
+           "originalName": "MakeSafe"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ColumnSupportingCalculation",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-column-supporting-calculation.ts",
+ "mappedName": "IgcColumnSupportingCalculation"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SupportingCalculation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DataSourceSupportingCalculation",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-data-source-supporting-calculation.ts",
+ "mappedName": "IgcDataSourceSupportingCalculation"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SupportingCalculation",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalculatedColumn",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-calculated-column.ts",
+ "mappedName": "IgcCalculatedColumn"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinancialCalculationDataSource",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-financial-calculation-data-source.ts",
+ "mappedName": "IgcFinancialCalculationDataSource"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcCalculatedColumn", "mappedName": "typicalColumn"}            ],
+           "originalName": "TypicalColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcCalculatedColumn", "mappedName": "trueRange"}            ],
+           "originalName": "TrueRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcCalculatedColumn", "mappedName": "trueLow"}            ],
+           "originalName": "TrueLow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "period"}            ],
+           "originalName": "Period"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
+           "originalName": "ShortPeriod"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "longPeriod"}            ],
+           "originalName": "LongPeriod"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "count"}            ],
+           "originalName": "Count"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "calculateFrom"}            ],
+           "originalName": "CalculateFrom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "calculateCount"}            ],
+           "originalName": "CalculateCount"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "multiplier"}            ],
+           "originalName": "Multiplier"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "specifiesRange"}            ],
+           "originalName": "SpecifiesRange"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

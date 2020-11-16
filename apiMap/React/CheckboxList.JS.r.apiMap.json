@@ -1,0 +1,205 @@
+{
+"extraFiles": [
+"igr-checkbox-list-module.ts"
+],
+"types": [
+{
+    "originalName": "CheckboxList",
+   "names": [
+        { "platform": "React",     "fileName": "igr-checkbox-list.ts",
+ "mappedName": "IgrCheckboxList"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedKeysCollection", "mappedName": "keys"}            ],
+           "originalName": "Keys"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "primaryKey"}            ],
+           "originalName": "PrimaryKey"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "dataMemberPath"}            ],
+           "originalName": "DataMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectedMemberPath"}            ],
+           "originalName": "SelectedMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
+           "originalName": "FilterPlaceholderText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "InputGroupDisplayType", "mappedName": "searchInputType"}            ],
+           "originalName": "SearchInputType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "rowHeight"}            ],
+           "originalName": "RowHeight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "cellTextStyle"}            ],
+           "originalName": "CellTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CheckboxListIndexType", "mappedName": "indexType"}            ],
+           "originalName": "IndexType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectAllCaption"}            ],
+           "originalName": "SelectAllCaption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectAllCaptionTextColor"}            ],
+           "originalName": "SelectAllCaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualSelectAllCaptionTextColor"}            ],
+           "originalName": "ActualSelectAllCaptionTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showSelectAll"}            ],
+           "originalName": "ShowSelectAll"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "selectAll"}            ],
+           "originalName": "SelectAll"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "deselectAll"}            ],
+           "originalName": "DeselectAll"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "addKeyValue"}            ],
+           "originalName": "AddKeyValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "removeKeyValue"}            ],
+           "originalName": "RemoveKeyValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "isNothingSelected"}            ],
+           "originalName": "IsNothingSelected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "isEverythingSelected"}            ],
+           "originalName": "IsEverythingSelected"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "CheckedChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-checked-changed-event-args.ts",
+ "mappedName": "IgrCheckedChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isChecked"}            ],
+           "originalName": "IsChecked"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "SelectAllCheckboxChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-select-all-checkbox-changed-event-args.ts",
+ "mappedName": "IgrSelectAllCheckboxChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isChecked"}            ],
+           "originalName": "IsChecked"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "CheckboxListIndexType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CheckboxListIndexType.ts",
+ "mappedName": "CheckboxListIndexType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CheckboxListIndexType", "mappedName": "Selected"}            ],
+           "originalName": "Selected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CheckboxListIndexType", "mappedName": "DeSelected"}            ],
+           "originalName": "DeSelected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+}
+]
+}

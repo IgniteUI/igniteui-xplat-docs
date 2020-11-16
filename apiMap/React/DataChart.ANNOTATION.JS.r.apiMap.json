@@ -1,0 +1,1053 @@
+{
+"extraFiles": [
+"igr-annotation-layer-proxy-module.ts"
+],
+"types": [
+{
+    "originalName": "CategoryToolTipLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-category-tool-tip-layer.ts",
+    "dynamicModuleName": "igr-category-tool-tip-layer-dynamic-module.ts",
+    "moduleName": "igr-category-tool-tip-layer-module.ts",
+ "mappedName": "IgrCategoryToolTipLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}            ],
+           "originalName": "IsDefaultTooltipBehaviorDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
+           "originalName": "UseInterpolation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "hideToolTips"}            ],
+           "originalName": "HideToolTips"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryTooltipLayerPosition",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CategoryTooltipLayerPosition.ts",
+ "mappedName": "CategoryTooltipLayerPosition"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideStart"}            ],
+           "originalName": "OutsideStart"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideStart"}            ],
+           "originalName": "InsideStart"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideEnd"}            ],
+           "originalName": "InsideEnd"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideEnd"}            ],
+           "originalName": "OutsideEnd"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ItemToolTipLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-item-tool-tip-layer.ts",
+    "dynamicModuleName": "igr-item-tool-tip-layer-dynamic-module.ts",
+    "moduleName": "igr-item-tool-tip-layer-module.ts",
+ "mappedName": "IgrItemToolTipLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}            ],
+           "originalName": "IsDefaultTooltipBehaviorDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
+           "originalName": "UseInterpolation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
+           "originalName": "SkipUnknownValues"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "hideToolTips"}            ],
+           "originalName": "HideToolTips"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ValueOverlay",
+   "names": [
+        { "platform": "React",     "fileName": "igr-value-overlay.ts",
+    "dynamicModuleName": "igr-value-overlay-dynamic-module.ts",
+    "moduleName": "igr-value-overlay-module.ts",
+ "mappedName": "IgrValueOverlay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrAxis", "mappedName": "axis"}            ],
+           "originalName": "Axis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}            ],
+           "originalName": "IsAxisAnnotationEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(item: any) => string", "mappedName": "axisAnnotationFormatLabel"}            ],
+           "originalName": "AxisAnnotationFormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationTextColor"}            ],
+           "originalName": "AxisAnnotationTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationBackground"}            ],
+           "originalName": "AxisAnnotationBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}            ],
+           "originalName": "AxisAnnotationInterpolatedValuePrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationOutline"}            ],
+           "originalName": "AxisAnnotationOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}            ],
+           "originalName": "AxisAnnotationPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}            ],
+           "originalName": "AxisAnnotationPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}            ],
+           "originalName": "AxisAnnotationPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}            ],
+           "originalName": "AxisAnnotationPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}            ],
+           "originalName": "AxisAnnotationStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isValueOverlay"}            ],
+           "originalName": "IsValueOverlay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelResolved"}            ],
+           "originalName": "LabelResolved"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getLabel"}            ],
+           "originalName": "GetLabel"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AnnotationLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-annotation-layer.ts",
+ "mappedName": "IgrAnnotationLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useIndex"}            ],
+           "originalName": "UseIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useLegend"}            ],
+           "originalName": "UseLegend"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "cursorPosition"}            ],
+           "originalName": "CursorPosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDefaultCrosshairDisabled"}            ],
+           "originalName": "IsDefaultCrosshairDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDefaultCrosshairBehaviorDisabled"}            ],
+           "originalName": "IsDefaultCrosshairBehaviorDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isIndexed"}            ],
+           "originalName": "IsIndexed"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isUsableInLegend"}            ],
+           "originalName": "IsUsableInLegend"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAnnotationLayer"}            ],
+           "originalName": "IsAnnotationLayer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldRenderAsOverlay"}            ],
+           "originalName": "ShouldRenderAsOverlay"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AxisAnnotation",
+   "names": [
+        { "platform": "React",     "fileName": "igr-axis-annotation.ts",
+ "mappedName": "IgrAxisAnnotation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "text"}            ],
+           "originalName": "Text"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(item: any) => string", "mappedName": "formatLabel"}            ],
+           "originalName": "FormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingLeft"}            ],
+           "originalName": "BackgroundPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingTop"}            ],
+           "originalName": "BackgroundPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingRight"}            ],
+           "originalName": "BackgroundPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingBottom"}            ],
+           "originalName": "BackgroundPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "resetCachedExtent"}            ],
+           "originalName": "ResetCachedExtent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "resolveLabelValue"}            ],
+           "originalName": "ResolveLabelValue"
+       }   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutAnnotation",
+   "names": [
+        { "platform": "React",     "fileName": "igr-callout-annotation.ts",
+ "mappedName": "IgrCalloutAnnotation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "xValue"}            ],
+           "originalName": "XValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "yValue"}            ],
+           "originalName": "YValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "text"}            ],
+           "originalName": "Text"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "key"}            ],
+           "originalName": "Key"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "content"}            ],
+           "originalName": "Content"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(item: any) => string", "mappedName": "formatLabel"}            ],
+           "originalName": "FormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "leaderBrush"}            ],
+           "originalName": "LeaderBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingLeft"}            ],
+           "originalName": "BackgroundPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingTop"}            ],
+           "originalName": "BackgroundPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingRight"}            ],
+           "originalName": "BackgroundPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "backgroundPaddingBottom"}            ],
+           "originalName": "BackgroundPaddingBottom"
+       }   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryHighlightLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-category-highlight-layer.ts",
+    "dynamicModuleName": "igr-category-highlight-layer-dynamic-module.ts",
+    "moduleName": "igr-category-highlight-layer-module.ts",
+ "mappedName": "IgrCategoryHighlightLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrCategoryAxisBase", "mappedName": "targetAxis"}            ],
+           "originalName": "TargetAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
+           "originalName": "UseInterpolation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bandHighlightWidth"}            ],
+           "originalName": "BandHighlightWidth"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-callout-layer.ts",
+    "dynamicModuleName": "igr-callout-layer-dynamic-module.ts",
+    "moduleName": "igr-callout-layer-module.ts",
+ "mappedName": "IgrCalloutLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
+           "originalName": "LabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
+           "originalName": "XMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
+           "originalName": "YMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "keyMemberPath"}            ],
+           "originalName": "KeyMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCalloutOffsettingEnabled"}            ],
+           "originalName": "IsCalloutOffsettingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "contentMemberPath"}            ],
+           "originalName": "ContentMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "targetSeries"}            ],
+           "originalName": "TargetSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "collisionChannel"}            ],
+           "originalName": "CollisionChannel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAutoCalloutBehaviorEnabled"}            ],
+           "originalName": "IsAutoCalloutBehaviorEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useValueForAutoCalloutLabels"}            ],
+           "originalName": "UseValueForAutoCalloutLabels"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomCalloutStyleEnabled"}            ],
+           "originalName": "IsCustomCalloutStyleEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "autoCalloutLabelPrecision"}            ],
+           "originalName": "AutoCalloutLabelPrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutTextColor"}            ],
+           "originalName": "CalloutTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutBackground"}            ],
+           "originalName": "CalloutBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutInterpolatedValuePrecision"}            ],
+           "originalName": "CalloutInterpolatedValuePrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutOutline"}            ],
+           "originalName": "CalloutOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calloutLeaderBrush"}            ],
+           "originalName": "CalloutLeaderBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutPaddingLeft"}            ],
+           "originalName": "CalloutPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutPaddingTop"}            ],
+           "originalName": "CalloutPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutPaddingRight"}            ],
+           "originalName": "CalloutPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutPaddingBottom"}            ],
+           "originalName": "CalloutPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CalloutCollisionMode", "mappedName": "calloutCollisionMode"}            ],
+           "originalName": "CalloutCollisionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutPositionPadding"}            ],
+           "originalName": "CalloutPositionPadding"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "calloutStrokeThickness"}            ],
+           "originalName": "CalloutStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textStyle"}            ],
+           "originalName": "TextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "invalidateCalloutContent"}            ],
+           "originalName": "InvalidateCalloutContent"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutContentUpdatingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-callout-content-updating-event-args.ts",
+ "mappedName": "IgrCalloutContentUpdatingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "xValue"}            ],
+           "originalName": "XValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "yValue"}            ],
+           "originalName": "YValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "content"}            ],
+           "originalName": "Content"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutLabelUpdatingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-callout-label-updating-event-args.ts",
+ "mappedName": "IgrCalloutLabelUpdatingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "xValue"}            ],
+           "originalName": "XValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "yValue"}            ],
+           "originalName": "YValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "label"}            ],
+           "originalName": "Label"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutSeriesSelectingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-callout-series-selecting-event-args.ts",
+ "mappedName": "IgrCalloutSeriesSelectingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "xValue"}            ],
+           "originalName": "XValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "yValue"}            ],
+           "originalName": "YValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "seriesName"}            ],
+           "originalName": "SeriesName"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CalloutCollisionMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CalloutCollisionMode.ts",
+ "mappedName": "CalloutCollisionMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CalloutCollisionMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CalloutCollisionMode", "mappedName": "SimulatedAnnealing"}            ],
+           "originalName": "SimulatedAnnealing"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CalloutCollisionMode", "mappedName": "Greedy"}            ],
+           "originalName": "Greedy"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CalloutCollisionMode", "mappedName": "GreedyCenterOfMass"}            ],
+           "originalName": "GreedyCenterOfMass"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinalValueLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-final-value-layer.ts",
+    "dynamicModuleName": "igr-final-value-layer-dynamic-module.ts",
+    "moduleName": "igr-final-value-layer-module.ts",
+ "mappedName": "IgrFinalValueLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "targetSeries"}            ],
+           "originalName": "TargetSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FinalValueSelectionMode", "mappedName": "finalValueSelectionMode"}            ],
+           "originalName": "FinalValueSelectionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationTextColor"}            ],
+           "originalName": "AxisAnnotationTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationBackground"}            ],
+           "originalName": "AxisAnnotationBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}            ],
+           "originalName": "AxisAnnotationInterpolatedValuePrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "axisAnnotationOutline"}            ],
+           "originalName": "AxisAnnotationOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}            ],
+           "originalName": "AxisAnnotationPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}            ],
+           "originalName": "AxisAnnotationPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}            ],
+           "originalName": "AxisAnnotationPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}            ],
+           "originalName": "AxisAnnotationPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}            ],
+           "originalName": "AxisAnnotationStrokeThickness"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FinalValueSelectionMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "FinalValueSelectionMode.ts",
+ "mappedName": "FinalValueSelectionMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FinalValueSelectionMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisible"}            ],
+           "originalName": "FinalVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisibleInterpolated"}            ],
+           "originalName": "FinalVisibleInterpolated"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FinalValueSelectionMode", "mappedName": "Final"}            ],
+           "originalName": "Final"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryItemHighlightType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CategoryItemHighlightType.ts",
+ "mappedName": "CategoryItemHighlightType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryItemHighlightType", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryItemHighlightType", "mappedName": "Marker"}            ],
+           "originalName": "Marker"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryItemHighlightType", "mappedName": "Shape"}            ],
+           "originalName": "Shape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CategoryItemHighlightLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-category-item-highlight-layer.ts",
+    "dynamicModuleName": "igr-category-item-highlight-layer-dynamic-module.ts",
+    "moduleName": "igr-category-item-highlight-layer-module.ts",
+ "mappedName": "IgrCategoryItemHighlightLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "targetSeries"}            ],
+           "originalName": "TargetSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
+           "originalName": "UseInterpolation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CategoryItemHighlightType", "mappedName": "highlightType"}            ],
+           "originalName": "HighlightType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bandHighlightWidth"}            ],
+           "originalName": "BandHighlightWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
+           "originalName": "SkipUnknownValues"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CrosshairLayer",
+   "names": [
+        { "platform": "React",     "fileName": "igr-crosshair-layer.ts",
+    "dynamicModuleName": "igr-crosshair-layer-dynamic-module.ts",
+    "moduleName": "igr-crosshair-layer-module.ts",
+ "mappedName": "IgrCrosshairLayer"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "horizontalLineStroke"}            ],
+           "originalName": "HorizontalLineStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "verticalLineStroke"}            ],
+           "originalName": "VerticalLineStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "targetSeries"}            ],
+           "originalName": "TargetSeries"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
+           "originalName": "UseInterpolation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}            ],
+           "originalName": "IsAxisAnnotationEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisAnnotationTextColor"}            ],
+           "originalName": "XAxisAnnotationTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisAnnotationBackground"}            ],
+           "originalName": "XAxisAnnotationBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationInterpolatedValuePrecision"}            ],
+           "originalName": "XAxisAnnotationInterpolatedValuePrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xAxisAnnotationOutline"}            ],
+           "originalName": "XAxisAnnotationOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingLeft"}            ],
+           "originalName": "XAxisAnnotationPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingTop"}            ],
+           "originalName": "XAxisAnnotationPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingRight"}            ],
+           "originalName": "XAxisAnnotationPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingBottom"}            ],
+           "originalName": "XAxisAnnotationPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingLeft"}            ],
+           "originalName": "YAxisAnnotationPaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingTop"}            ],
+           "originalName": "YAxisAnnotationPaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingRight"}            ],
+           "originalName": "YAxisAnnotationPaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingBottom"}            ],
+           "originalName": "YAxisAnnotationPaddingBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "xAxisAnnotationStrokeThickness"}            ],
+           "originalName": "XAxisAnnotationStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisAnnotationTextColor"}            ],
+           "originalName": "YAxisAnnotationTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisAnnotationBackground"}            ],
+           "originalName": "YAxisAnnotationBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationInterpolatedValuePrecision"}            ],
+           "originalName": "YAxisAnnotationInterpolatedValuePrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yAxisAnnotationOutline"}            ],
+           "originalName": "YAxisAnnotationOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisAnnotationStrokeThickness"}            ],
+           "originalName": "YAxisAnnotationStrokeThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "verticalLineVisibility"}            ],
+           "originalName": "VerticalLineVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "horizontalLineVisibility"}            ],
+           "originalName": "HorizontalLineVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
+           "originalName": "SkipUnknownValues"
+       }   ],
+    "originalBaseTypeName": "AnnotationLayer",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

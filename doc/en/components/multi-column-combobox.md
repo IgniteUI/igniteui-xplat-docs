@@ -1,0 +1,67 @@
+---
+title: $PlatformShort$ Combo | Data Visualization Tools | Infragistics
+_description: Infragistics' $PlatformShort$ combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  $PlatformShort$!
+_keywords: $PlatformShort$ combo, drop down, $ProductName$, Infragistics
+mentionedTypes: []
+---
+# $PlatformShort$ Multi-Column Combo Box Overview
+
+The Multi-Column Combo Box automatically generates columns for properties on the data object. This component is unique in that it's a combo box that visualizes large amounts of data similar to a data grid embedded in the dropdown. 
+
+Data binding can be achieved using an array of complex objects via the column's `DataSource` property.
+
+The `TextField` property determines which value is shown when users make a selection. 
+
+The `ValueField` property determines the bound value of the underlying data item selected. This is necessary if your list of objects have several properties.
+
+
+## Demo
+
+<div class="sample-container loading" style="height: 500px">
+    <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+</div>
+
+<div>
+    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="multi-column-combobox-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
+    </button>
+<sample-button src="editors/multi-column-combobox/overview"></sample-button>
+
+</div>
+
+<!-- Angular, React, WebComponents -->
+## Dependencies
+When installing the charts component, the core package must also be installed.
+
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npm install --save {PackageCore}
+npm install --save {PackageCharts}
+</pre>
+<!-- end: Angular, React, WebComponents -->
+
+## Required Modules
+
+The Multi-Column Combo Box requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+
+* MultiColumnComboBoxModule
+<!-- end: Blazor -->
+
+## Code Snippet
+
+```razor
+                
+<MultiColumnComboBox Height="50px" Width="400px"
+    DataSource="CountryNames"
+    TextField="Name" />            
+
+@code {
+    protected List<CountryInfo> CountryNames;
+
+    protected override void OnInitialized()
+    {
+        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        this.CountryNames = CountryTreeData.Create();            
+    }
+}
+```
+

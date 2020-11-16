@@ -1,0 +1,9 @@
+{
+"extraFiles": [
+"igx-dv-interactivity-module.ts",
+"igx-simple-default-tooltip-component.ts"
+],
+"types": [
+
+]
+}

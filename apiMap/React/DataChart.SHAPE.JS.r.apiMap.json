@@ -1,0 +1,467 @@
+{
+"types": [
+{
+    "originalName": "ColorScale",
+   "names": [
+        { "platform": "React",     "fileName": "igr-color-scale.ts",
+ "mappedName": "IgrColorScale"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ColorScaleInterpolationMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "ColorScaleInterpolationMode.ts",
+ "mappedName": "ColorScaleInterpolationMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "Select"}            ],
+           "originalName": "Select"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "InterpolateRGB"}            ],
+           "originalName": "InterpolateRGB"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "InterpolateHSV"}            ],
+           "originalName": "InterpolateHSV"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomPaletteColorScale",
+   "names": [
+        { "platform": "React",     "fileName": "igr-custom-palette-color-scale.ts",
+    "dynamicModuleName": "igr-custom-palette-color-scale-dynamic-module.ts",
+    "moduleName": "igr-custom-palette-color-scale-module.ts",
+ "mappedName": "IgrCustomPaletteColorScale"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "minimumValue"}            ],
+           "originalName": "MinimumValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "maximumValue"}            ],
+           "originalName": "MaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "palette"}            ],
+           "originalName": "Palette"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColorScaleInterpolationMode", "mappedName": "interpolationMode"}            ],
+           "originalName": "InterpolationMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "providePalette"}            ],
+           "originalName": "ProvidePalette"
+       }   ],
+    "originalBaseTypeName": "ColorScale",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomContourValueResolver",
+   "names": [
+        { "platform": "React",     "fileName": "igr-custom-contour-value-resolver.ts",
+    "dynamicModuleName": "igr-custom-contour-value-resolver-dynamic-module.ts",
+    "moduleName": "igr-custom-contour-value-resolver-module.ts",
+ "mappedName": "IgrCustomContourValueResolver"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "ContourValueResolver",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "CustomContourValueResolverEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-custom-contour-value-resolver-event-args.ts",
+ "mappedName": "IgrCustomContourValueResolverEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number[]", "mappedName": "values"}            ],
+           "originalName": "Values"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number[]", "mappedName": "contourValues"}            ],
+           "originalName": "ContourValues"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterContourSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-scatter-contour-series.ts",
+    "dynamicModuleName": "igr-scatter-contour-series-dynamic-module.ts",
+    "moduleName": "igr-scatter-contour-series-module.ts",
+ "mappedName": "IgrScatterContourSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrValueBrushScale", "mappedName": "fillScale"}            ],
+           "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrContourValueResolver", "mappedName": "valueResolver"}            ],
+           "originalName": "ValueResolver"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       }   ],
+    "originalBaseTypeName": "ScatterTriangulationSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ContourValueResolver",
+   "names": [
+        { "platform": "React",     "fileName": "igr-contour-value-resolver.ts",
+ "mappedName": "IgrContourValueResolver"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LinearContourValueResolver",
+   "names": [
+        { "platform": "React",     "fileName": "igr-linear-contour-value-resolver.ts",
+    "dynamicModuleName": "igr-linear-contour-value-resolver-dynamic-module.ts",
+    "moduleName": "igr-linear-contour-value-resolver-module.ts",
+ "mappedName": "IgrLinearContourValueResolver"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "valueCount"}            ],
+           "originalName": "ValueCount"
+       }   ],
+    "originalBaseTypeName": "ContourValueResolver",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterPolylineSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-scatter-polyline-series.ts",
+    "dynamicModuleName": "igr-scatter-polyline-series-dynamic-module.ts",
+    "moduleName": "igr-scatter-polyline-series-module.ts",
+ "mappedName": "IgrScatterPolylineSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrStyle", "mappedName": "shapeStyle"}            ],
+           "originalName": "ShapeStyle"
+       }   ],
+    "originalBaseTypeName": "ShapeSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterAreaSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-scatter-area-series.ts",
+    "dynamicModuleName": "igr-scatter-area-series-dynamic-module.ts",
+    "moduleName": "igr-scatter-area-series-module.ts",
+ "mappedName": "IgrScatterAreaSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColorScale", "mappedName": "colorScale"}            ],
+           "originalName": "ColorScale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "colorMemberPath"}            ],
+           "originalName": "ColorMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "attachImage"}            ],
+           "originalName": "AttachImage"
+       }   ],
+    "originalBaseTypeName": "ScatterTriangulationSeries",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterPolygonSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-scatter-polygon-series.ts",
+    "dynamicModuleName": "igr-scatter-polygon-series-dynamic-module.ts",
+    "moduleName": "igr-scatter-polygon-series-module.ts",
+ "mappedName": "IgrScatterPolygonSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
+           "originalName": "HasMarkers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrStyle", "mappedName": "shapeStyle"}            ],
+           "originalName": "ShapeStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "markerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "markerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
+           "originalName": "MarkerCollisionAvoidance"
+       }   ],
+    "originalBaseTypeName": "ShapeSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ShapeSeriesBase",
+   "names": [
+        { "platform": "React",     "fileName": "igr-shape-series-base.ts",
+ "mappedName": "IgrShapeSeriesBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
+           "originalName": "ShapeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrNumericXAxis", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrNumericYAxis", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "shapeFilterResolution"}            ],
+           "originalName": "ShapeFilterResolution"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isShape"}            ],
+           "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ScatterTriangulationSeries",
+   "names": [
+        { "platform": "React",     "fileName": "igr-scatter-triangulation-series.ts",
+ "mappedName": "IgrScatterTriangulationSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
+           "originalName": "XMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
+           "originalName": "YMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrNumericXAxis", "mappedName": "xAxis"}            ],
+           "originalName": "XAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrNumericYAxis", "mappedName": "yAxis"}            ],
+           "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "trianglesSource"}            ],
+           "originalName": "TrianglesSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "triangleVertexMemberPath1"}            ],
+           "originalName": "TriangleVertexMemberPath1"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "triangleVertexMemberPath2"}            ],
+           "originalName": "TriangleVertexMemberPath2"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "triangleVertexMemberPath3"}            ],
+           "originalName": "TriangleVertexMemberPath3"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isShape"}            ],
+           "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
+           "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
+           "originalName": "CanUseAsYAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
+           "originalName": "CanUseAsXAxis"
+       }   ],
+    "originalBaseTypeName": "Series",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StyleSelector",
+   "names": [
+        { "platform": "React",     "fileName": "StyleSelector.ts",
+ "mappedName": "StyleSelector"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrStyle", "mappedName": "selectStyle"}            ],
+           "originalName": "SelectStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "StyleShapeEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-style-shape-event-args.ts",
+ "mappedName": "IgrStyleShapeEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "shapeStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "shapeStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "shapeStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "shapeStyle.opacity"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

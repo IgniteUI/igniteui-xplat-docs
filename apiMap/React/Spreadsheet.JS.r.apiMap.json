@@ -1,0 +1,3209 @@
+{
+"extraFiles": [
+"SpreadsheetCss.ts",
+"igr-spreadsheet-module.ts",
+"igr-spreadsheet-core-module.ts",
+"igr-spreadsheet-shapes-module.ts"
+],
+"types": [
+{
+    "originalName": "SpreadsheetChartAdapterBase",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetChartAdapterBase.ts",
+ "mappedName": "SpreadsheetChartAdapterBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids"
+},
+{
+    "originalName": "Spreadsheet",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet.ts",
+ "mappedName": "IgrSpreadsheet"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isScrollLocked"}            ],
+           "originalName": "IsScrollLocked"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "activeCell"}            ],
+           "originalName": "ActiveCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetPane", "mappedName": "activePane"}            ],
+           "originalName": "ActivePane"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetSelection", "mappedName": "activeSelection"}            ],
+           "originalName": "ActiveSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeFormat", "mappedName": "activeSelectionCellRangeFormat"}            ],
+           "originalName": "ActiveSelectionCellRangeFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorksheetTable", "mappedName": "activeTable"}            ],
+           "originalName": "ActiveTable"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Worksheet", "mappedName": "activeWorksheet"}            ],
+           "originalName": "ActiveWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowAddWorksheet"}            ],
+           "originalName": "AllowAddWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowDeleteWorksheet"}            ],
+           "originalName": "AllowDeleteWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "areGridlinesVisible"}            ],
+           "originalName": "AreGridlinesVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "areHeadersVisible"}            ],
+           "originalName": "AreHeadersVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellEditMode", "mappedName": "cellEditMode"}            ],
+           "originalName": "CellEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetChartAdapterBase", "mappedName": "chartAdapter"}            ],
+           "originalName": "ChartAdapter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "enterKeyNavigationDirection"}            ],
+           "originalName": "EnterKeyNavigationDirection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "fixedDecimalPlaceCount"}            ],
+           "originalName": "FixedDecimalPlaceCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEnterKeyNavigationEnabled"}            ],
+           "originalName": "IsEnterKeyNavigationEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFixedDecimalEnabled"}            ],
+           "originalName": "IsFixedDecimalEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFormulaBarVisible"}            ],
+           "originalName": "IsFormulaBarVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isInEditMode"}            ],
+           "originalName": "IsInEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isInEndMode"}            ],
+           "originalName": "IsInEndMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRenamingWorksheet"}            ],
+           "originalName": "IsRenamingWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isUndoEnabled"}            ],
+           "originalName": "IsUndoEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "nameBoxWidth"}            ],
+           "originalName": "NameBoxWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellSelectionMode", "mappedName": "selectionMode"}            ],
+           "originalName": "SelectionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Worksheet[]", "mappedName": "selectedWorksheets"}            ],
+           "originalName": "SelectedWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "UndoManager", "mappedName": "undoManager"}            ],
+           "originalName": "UndoManager"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "validationInputMessagePosition"}            ],
+           "originalName": "ValidationInputMessagePosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Workbook", "mappedName": "workbook"}            ],
+           "originalName": "Workbook"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "zoomLevel"}            ],
+           "originalName": "ZoomLevel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "containerResized"}            ],
+           "originalName": "ContainerResized"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "executeAction"}            ],
+           "originalName": "ExecuteCommand"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
+           "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "styleUpdated"}            ],
+           "originalName": "StyleUpdated"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualData"}            ],
+           "originalName": "ExportVisualData"
+       }   ],
+    "originalBaseTypeName": "PropertyChangeNotifierExtended",
+    "originalBaseTypeNamespace": "Infragistics",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetContextMenuOpeningEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-context-menu-opening-event-args.ts",
+ "mappedName": "IgrSpreadsheetContextMenuOpeningEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "menuArea"}            ],
+           "originalName": "MenuArea"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCell",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCell.ts",
+ "mappedName": "SpreadsheetCell"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "getHashCode"}            ],
+           "originalName": "GetHashCode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "equals"}            ],
+           "originalName": "Equals"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCellRange",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellRange.ts",
+ "mappedName": "SpreadsheetCellRange"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "getHashCode"}            ],
+           "originalName": "GetHashCode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "firstColumn"}            ],
+           "originalName": "FirstColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "firstRow"}            ],
+           "originalName": "FirstRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSingleCell"}            ],
+           "originalName": "IsSingleCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEmpty"}            ],
+           "originalName": "IsEmpty"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "lastColumn"}            ],
+           "originalName": "LastColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "lastRow"}            ],
+           "originalName": "LastRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "contains"}            ],
+           "originalName": "Contains"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRange", "mappedName": "intersect"}            ],
+           "originalName": "Intersect"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "intersectsWith"}            ],
+           "originalName": "IntersectsWith"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRange", "mappedName": "union"}            ],
+           "originalName": "Union"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "equals"}            ],
+           "originalName": "Equals"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetSelection",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetSelection.ts",
+ "mappedName": "SpreadsheetSelection"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "activeCell"}            ],
+           "originalName": "ActiveCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "activeCellRangeIndex"}            ],
+           "originalName": "ActiveCellRangeIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IList", "mappedName": "cellRanges"}            ],
+           "originalName": "CellRanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "cellRangesAddress"}            ],
+           "originalName": "CellRangesAddress"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "addCellRange"}            ],
+           "originalName": "AddCellRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "clearCellRanges"}            ],
+           "originalName": "ClearCellRanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "resetSelection"}            ],
+           "originalName": "ResetSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "setActiveCell"}            ],
+           "originalName": "SetActiveCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "unselectRange"}            ],
+           "originalName": "UnselectRange"
+       }   ],
+    "originalBaseTypeName": "PropertyChangeNotifierExtended",
+    "originalBaseTypeNamespace": "Infragistics",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCommandType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetAction.ts",
+ "mappedName": "SpreadsheetAction"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activatePreviousPane"}            ],
+           "originalName": "ActivatePreviousPane"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activateNextPane"}            ],
+           "originalName": "ActivateNextPane"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInSelectionRight"}            ],
+           "originalName": "CellInSelectionRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInSelectionLeft"}            ],
+           "originalName": "CellInSelectionLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInSelectionAbove"}            ],
+           "originalName": "CellInSelectionAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInSelectionBelow"}            ],
+           "originalName": "CellInSelectionBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellRight"}            ],
+           "originalName": "CellRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellLeft"}            ],
+           "originalName": "CellLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellAbove"}            ],
+           "originalName": "CellAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellBelow"}            ],
+           "originalName": "CellBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellWithDataLeft"}            ],
+           "originalName": "CellWithDataLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellWithDataRight"}            ],
+           "originalName": "CellWithDataRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellWithDataAbove"}            ],
+           "originalName": "CellWithDataAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellWithDataBelow"}            ],
+           "originalName": "CellWithDataBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "edgeCellWithDataLeft"}            ],
+           "originalName": "EdgeCellWithDataLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "edgeCellWithDataRight"}            ],
+           "originalName": "EdgeCellWithDataRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "edgeCellWithDataAbove"}            ],
+           "originalName": "EdgeCellWithDataAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "edgeCellWithDataBelow"}            ],
+           "originalName": "EdgeCellWithDataBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellPageBelow"}            ],
+           "originalName": "CellPageBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellPageAbove"}            ],
+           "originalName": "CellPageAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellPageRight"}            ],
+           "originalName": "CellPageRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellPageLeft"}            ],
+           "originalName": "CellPageLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollLeft"}            ],
+           "originalName": "ScrollLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollRight"}            ],
+           "originalName": "ScrollRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollUp"}            ],
+           "originalName": "ScrollUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollDown"}            ],
+           "originalName": "ScrollDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollPageLeft"}            ],
+           "originalName": "ScrollPageLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollPageRight"}            ],
+           "originalName": "ScrollPageRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollPageAbove"}            ],
+           "originalName": "ScrollPageAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollPageBelow"}            ],
+           "originalName": "ScrollPageBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstCellInRow"}            ],
+           "originalName": "FirstCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstCellInView"}            ],
+           "originalName": "FirstCellInView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstCellInWorksheet"}            ],
+           "originalName": "FirstCellInWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstScrollableCellInRow"}            ],
+           "originalName": "FirstScrollableCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstScrollableCellInWorksheet"}            ],
+           "originalName": "FirstScrollableCellInWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "lastCellInView"}            ],
+           "originalName": "LastCellInView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "enterEndMode"}            ],
+           "originalName": "EnterEndMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "exitEndMode"}            ],
+           "originalName": "ExitEndMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "lastUsedCell"}            ],
+           "originalName": "LastUsedCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "lastUsedCellInRow"}            ],
+           "originalName": "LastUsedCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCurrentRegion"}            ],
+           "originalName": "SelectCurrentRegion"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellRight"}            ],
+           "originalName": "SelectCellRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellLeft"}            ],
+           "originalName": "SelectCellLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellAbove"}            ],
+           "originalName": "SelectCellAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellBelow"}            ],
+           "originalName": "SelectCellBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellWithDataLeft"}            ],
+           "originalName": "SelectCellWithDataLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellWithDataRight"}            ],
+           "originalName": "SelectCellWithDataRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellWithDataAbove"}            ],
+           "originalName": "SelectCellWithDataAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellWithDataBelow"}            ],
+           "originalName": "SelectCellWithDataBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectEdgeCellWithDataLeft"}            ],
+           "originalName": "SelectEdgeCellWithDataLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectEdgeCellWithDataRight"}            ],
+           "originalName": "SelectEdgeCellWithDataRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectEdgeCellWithDataAbove"}            ],
+           "originalName": "SelectEdgeCellWithDataAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectEdgeCellWithDataBelow"}            ],
+           "originalName": "SelectEdgeCellWithDataBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellPageBelow"}            ],
+           "originalName": "SelectCellPageBelow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellPageAbove"}            ],
+           "originalName": "SelectCellPageAbove"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellPageRight"}            ],
+           "originalName": "SelectCellPageRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCellPageLeft"}            ],
+           "originalName": "SelectCellPageLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectFirstCellInRow"}            ],
+           "originalName": "SelectFirstCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectFirstCellInView"}            ],
+           "originalName": "SelectFirstCellInView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectFirstCellInWorksheet"}            ],
+           "originalName": "SelectFirstCellInWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectFirstScrollableCellInRow"}            ],
+           "originalName": "SelectFirstScrollableCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectFirstScrollableCellInWorksheet"}            ],
+           "originalName": "SelectFirstScrollableCellInWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectLastCellInView"}            ],
+           "originalName": "SelectLastCellInView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectLastUsedCell"}            ],
+           "originalName": "SelectLastUsedCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectLastUsedCellInRow"}            ],
+           "originalName": "SelectLastUsedCellInRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectRows"}            ],
+           "originalName": "SelectRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectColumns"}            ],
+           "originalName": "SelectColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectAllCells"}            ],
+           "originalName": "SelectAllCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "switchToNormalSelectionMode"}            ],
+           "originalName": "SwitchToNormalSelectionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "switchToExtendSelectionMode"}            ],
+           "originalName": "SwitchToExtendSelectionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "switchToAddToSelectionMode"}            ],
+           "originalName": "SwitchToAddToSelectionMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstCellInViewWithinSelection"}            ],
+           "originalName": "FirstCellInViewWithinSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "lastCellInViewWithinSelection"}            ],
+           "originalName": "LastCellInViewWithinSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "enterEditMode"}            ],
+           "originalName": "EnterEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "enterEditModeAndClearValue"}            ],
+           "originalName": "EnterEditModeAndClearValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "exitEditModeAndUpdateActiveCell"}            ],
+           "originalName": "ExitEditModeAndUpdateActiveCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "exitEditModeAndUpdateSelectedCells"}            ],
+           "originalName": "ExitEditModeAndUpdateSelectedCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "exitEditModeAndCreateArrayFormula"}            ],
+           "originalName": "ExitEditModeAndCreateArrayFormula"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "exitEditModeAndDiscardChanges"}            ],
+           "originalName": "ExitEditModeAndDiscardChanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearContents"}            ],
+           "originalName": "ClearContents"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectCurrentArray"}            ],
+           "originalName": "SelectCurrentArray"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInNextSelectionRange"}            ],
+           "originalName": "CellInNextSelectionRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInPreviousSelectionRange"}            ],
+           "originalName": "CellInPreviousSelectionRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectVisibleCellsOnly"}            ],
+           "originalName": "SelectVisibleCellsOnly"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectActiveCellOnly"}            ],
+           "originalName": "SelectActiveCellOnly"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "redo"}            ],
+           "originalName": "Redo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "undo"}            ],
+           "originalName": "Undo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "enterKeyNavigation"}            ],
+           "originalName": "EnterKeyNavigation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "shiftEnterKeyNavigation"}            ],
+           "originalName": "ShiftEnterKeyNavigation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "hideColumns"}            ],
+           "originalName": "HideColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "unhideColumns"}            ],
+           "originalName": "UnhideColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "hideRows"}            ],
+           "originalName": "HideRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "unhideRows"}            ],
+           "originalName": "UnhideRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "autoFitRowHeight"}            ],
+           "originalName": "AutoFitRowHeight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "autoFitColumnWidth"}            ],
+           "originalName": "AutoFitColumnWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "mergeCellsAcross"}            ],
+           "originalName": "MergeCellsAcross"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "mergeCells"}            ],
+           "originalName": "MergeCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "mergeCellsAndCenter"}            ],
+           "originalName": "MergeCellsAndCenter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "unmergeCells"}            ],
+           "originalName": "UnmergeCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "addNewWorksheet"}            ],
+           "originalName": "AddNewWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertNewWorksheets"}            ],
+           "originalName": "InsertNewWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activateNextWorksheet"}            ],
+           "originalName": "ActivateNextWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activatePreviousWorksheet"}            ],
+           "originalName": "ActivatePreviousWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activateAndSelectNextWorksheet"}            ],
+           "originalName": "ActivateAndSelectNextWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activateAndSelectPreviousWorksheet"}            ],
+           "originalName": "ActivateAndSelectPreviousWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollNextWorksheet"}            ],
+           "originalName": "ScrollNextWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollPreviousWorksheet"}            ],
+           "originalName": "ScrollPreviousWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollToFirstWorksheet"}            ],
+           "originalName": "ScrollToFirstWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "scrollToLastWorksheet"}            ],
+           "originalName": "ScrollToLastWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activatePreviousOutOfViewWorksheet"}            ],
+           "originalName": "ActivatePreviousOutOfViewWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "activateNextOutOfViewWorksheet"}            ],
+           "originalName": "ActivateNextOutOfViewWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectAllWorksheets"}            ],
+           "originalName": "SelectAllWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "unselectWorksheets"}            ],
+           "originalName": "UnselectWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "renameWorksheet"}            ],
+           "originalName": "RenameWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteWorksheets"}            ],
+           "originalName": "DeleteWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "zoomIn"}            ],
+           "originalName": "ZoomIn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "zoomOut"}            ],
+           "originalName": "ZoomOut"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "zoomToSelection"}            ],
+           "originalName": "ZoomToSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "zoomTo100"}            ],
+           "originalName": "ZoomTo100"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleBold"}            ],
+           "originalName": "ToggleBold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleItalic"}            ],
+           "originalName": "ToggleItalic"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleStrikeThrough"}            ],
+           "originalName": "ToggleStrikeThrough"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleWrapText"}            ],
+           "originalName": "ToggleWrapText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "increaseIndentation"}            ],
+           "originalName": "IncreaseIndentation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "decreaseIndentation"}            ],
+           "originalName": "DecreaseIndentation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "increaseFontSize"}            ],
+           "originalName": "IncreaseFontSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "decreaseFontSize"}            ],
+           "originalName": "DecreaseFontSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignHorizontalCenter"}            ],
+           "originalName": "AlignHorizontalCenter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignHorizontalJustify"}            ],
+           "originalName": "AlignHorizontalJustify"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignHorizontalLeft"}            ],
+           "originalName": "AlignHorizontalLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignHorizontalRight"}            ],
+           "originalName": "AlignHorizontalRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignVerticalTop"}            ],
+           "originalName": "AlignVerticalTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignVerticalMiddle"}            ],
+           "originalName": "AlignVerticalMiddle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "alignVerticalBottom"}            ],
+           "originalName": "AlignVerticalBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleSplitPanes"}            ],
+           "originalName": "ToggleSplitPanes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleFreezePanes"}            ],
+           "originalName": "ToggleFreezePanes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "freezeFirstRow"}            ],
+           "originalName": "FreezeFirstRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "freezeFirstColumn"}            ],
+           "originalName": "FreezeFirstColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "removeColumnScrollRegionSplit"}            ],
+           "originalName": "RemoveColumnScrollRegionSplit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "snapColumnScrollRegionSplit"}            ],
+           "originalName": "SnapColumnScrollRegionSplit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "removeRowScrollRegionSplit"}            ],
+           "originalName": "RemoveRowScrollRegionSplit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "snapRowScrollRegionSplit"}            ],
+           "originalName": "SnapRowScrollRegionSplit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "removeScrollRegionSplits"}            ],
+           "originalName": "RemoveScrollRegionSplits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "snapScrollRegionSplits"}            ],
+           "originalName": "SnapScrollRegionSplits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteRows"}            ],
+           "originalName": "DeleteRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertRows"}            ],
+           "originalName": "InsertRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteColumns"}            ],
+           "originalName": "DeleteColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertColumns"}            ],
+           "originalName": "InsertColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cut"}            ],
+           "originalName": "Cut"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "copy"}            ],
+           "originalName": "Copy"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "paste"}            ],
+           "originalName": "Paste"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleCellEditMode"}            ],
+           "originalName": "ToggleCellEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertCellsShiftRight"}            ],
+           "originalName": "InsertCellsShiftRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertCellsShiftDown"}            ],
+           "originalName": "InsertCellsShiftDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteCellsShiftLeft"}            ],
+           "originalName": "DeleteCellsShiftLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteCellsShiftUp"}            ],
+           "originalName": "DeleteCellsShiftUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertCells"}            ],
+           "originalName": "InsertCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteCells"}            ],
+           "originalName": "DeleteCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearFormats"}            ],
+           "originalName": "ClearFormats"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleShowFormulasInCells"}            ],
+           "originalName": "ToggleShowFormulasInCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleUnderline"}            ],
+           "originalName": "ToggleUnderline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleDoubleUnderline"}            ],
+           "originalName": "ToggleDoubleUnderline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleSuperscript"}            ],
+           "originalName": "ToggleSuperscript"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleSubscript"}            ],
+           "originalName": "ToggleSubscript"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "openHyperlink"}            ],
+           "originalName": "OpenHyperlink"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "removeHyperlinks"}            ],
+           "originalName": "RemoveHyperlinks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearHyperlinks"}            ],
+           "originalName": "ClearHyperlinks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "firstUnlockedCell"}            ],
+           "originalName": "FirstUnlockedCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "lastUnlockedCell"}            ],
+           "originalName": "LastUnlockedCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "resetNameBoxWidth"}            ],
+           "originalName": "ResetNameBoxWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "circleInvalidData"}            ],
+           "originalName": "CircleInvalidData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearValidationCircles"}            ],
+           "originalName": "ClearValidationCircles"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cancelRenameWorksheet"}            ],
+           "originalName": "CancelRenameWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "commitRenameWorksheet"}            ],
+           "originalName": "CommitRenameWorksheet"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertTableColumns"}            ],
+           "originalName": "InsertTableColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "addTableColumn"}            ],
+           "originalName": "AddTableColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "insertTableRows"}            ],
+           "originalName": "InsertTableRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "addTableRow"}            ],
+           "originalName": "AddTableRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteTableColumns"}            ],
+           "originalName": "DeleteTableColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "deleteTableRows"}            ],
+           "originalName": "DeleteTableRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectTableColumnData"}            ],
+           "originalName": "SelectTableColumnData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectEntireTableColumn"}            ],
+           "originalName": "SelectEntireTableColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "selectTableRow"}            ],
+           "originalName": "SelectTableRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleTableTotalRow"}            ],
+           "originalName": "ToggleTableTotalRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "convertTableToRange"}            ],
+           "originalName": "ConvertTableToRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "toggleFilter"}            ],
+           "originalName": "ToggleFilter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "sortDescending"}            ],
+           "originalName": "SortDescending"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "sortAscending"}            ],
+           "originalName": "SortAscending"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearAllFilterAndSort"}            ],
+           "originalName": "ClearAllFilterAndSort"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "clearFilter"}            ],
+           "originalName": "ClearFilter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "reapplyFilterAndSort"}            ],
+           "originalName": "ReapplyFilterAndSort"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "filterByCellValue"}            ],
+           "originalName": "FilterByCellValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "filterByCellColor"}            ],
+           "originalName": "FilterByCellColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "filterByCellFontColor"}            ],
+           "originalName": "FilterByCellFontColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "filterByCellIcon"}            ],
+           "originalName": "FilterByCellIcon"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "sortByCellColor"}            ],
+           "originalName": "SortByCellColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "sortByCellFontColor"}            ],
+           "originalName": "SortByCellFontColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "sortByCellIcon"}            ],
+           "originalName": "SortByCellIcon"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "showFormatCellsDialog"}            ],
+           "originalName": "ShowFormatCellsDialog"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInTableRight"}            ],
+           "originalName": "CellInTableRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "cellInTableLeft"}            ],
+           "originalName": "CellInTableLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "showCellDropDown"}            ],
+           "originalName": "ShowCellDropDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "pickFromDropDownList"}            ],
+           "originalName": "PickFromDropDownList"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "showCustomSortDialog"}            ],
+           "originalName": "ShowCustomSortDialog"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCellEditMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellEditMode.ts",
+ "mappedName": "SpreadsheetCellEditMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellEditMode", "mappedName": "notInEditMode"}            ],
+           "originalName": "NotInEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellEditMode", "mappedName": "arrowKeysNavigateBetweenCells"}            ],
+           "originalName": "ArrowKeysNavigateBetweenCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellEditMode", "mappedName": "arrowKeysNavigateInCell"}            ],
+           "originalName": "ArrowKeysNavigateInCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCellRangeBorders",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellRangeBorders.ts",
+ "mappedName": "SpreadsheetCellRangeBorders"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "leftBorder"}            ],
+           "originalName": "LeftBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "topBorder"}            ],
+           "originalName": "TopBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "rightBorder"}            ],
+           "originalName": "RightBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "bottomBorder"}            ],
+           "originalName": "BottomBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "insideHorizontal"}            ],
+           "originalName": "InsideHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "insideVertical"}            ],
+           "originalName": "InsideVertical"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "diagonalDown"}            ],
+           "originalName": "DiagonalDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "diagonalUp"}            ],
+           "originalName": "DiagonalUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "outsideBorder"}            ],
+           "originalName": "OutsideBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "insideBorder"}            ],
+           "originalName": "InsideBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRangeBorders", "mappedName": "allBorder"}            ],
+           "originalName": "AllBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCellSelectionMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellSelectionMode.ts",
+ "mappedName": "SpreadsheetCellSelectionMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellSelectionMode", "mappedName": "normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellSelectionMode", "mappedName": "extendSelection"}            ],
+           "originalName": "ExtendSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellSelectionMode", "mappedName": "addToSelection"}            ],
+           "originalName": "AddToSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetContextMenuArea",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetContextMenuArea.ts",
+ "mappedName": "SpreadsheetContextMenuArea"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "tab"}            ],
+           "originalName": "Tab"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "inPlaceEditor"}            ],
+           "originalName": "InPlaceEditor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "formulaBarEditor"}            ],
+           "originalName": "FormulaBarEditor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "selectAllButton"}            ],
+           "originalName": "SelectAllButton"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetContextMenuArea", "mappedName": "tableCell"}            ],
+           "originalName": "TableCell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeValidationErrorAction",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetEditModeValidationErrorAction.ts",
+ "mappedName": "SpreadsheetEditModeValidationErrorAction"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "showPrompt"}            ],
+           "originalName": "ShowPrompt"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "stayInEditMode"}            ],
+           "originalName": "StayInEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "revertChange"}            ],
+           "originalName": "RevertChange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "acceptChange"}            ],
+           "originalName": "AcceptChange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEnterKeyNavigationDirection",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetEnterKeyNavigationDirection.ts",
+ "mappedName": "SpreadsheetEnterKeyNavigationDirection"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "down"}            ],
+           "originalName": "Down"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "right"}            ],
+           "originalName": "Right"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "up"}            ],
+           "originalName": "Up"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "left"}            ],
+           "originalName": "Left"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetUserPromptTrigger",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetUserPromptTrigger.ts",
+ "mappedName": "SpreadsheetUserPromptTrigger"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "clearCellContentError"}            ],
+           "originalName": "ClearCellContentError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "formulaParseError"}            ],
+           "originalName": "FormulaParseError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "editError"}            ],
+           "originalName": "EditError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidWorksheetName"}            ],
+           "originalName": "InvalidWorksheetName"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "conflictingWorksheetName"}            ],
+           "originalName": "ConflictingWorksheetName"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "deletingWorksheets"}            ],
+           "originalName": "DeletingWorksheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidCommandForOverlappingSelections"}            ],
+           "originalName": "InvalidCommandForOverlappingSelections"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidCommandForMultipleSelections"}            ],
+           "originalName": "InvalidCommandForMultipleSelections"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidCommandForMixedCellSelections"}            ],
+           "originalName": "InvalidCommandForMixedCellSelections"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidNameBoxValue"}            ],
+           "originalName": "InvalidNameBoxValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteCellRangeSize"}            ],
+           "originalName": "PasteCellRangeSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteMultipleSourceAndTargetRanges"}            ],
+           "originalName": "PasteMultipleSourceAndTargetRanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteInvalidSourceRanges"}            ],
+           "originalName": "PasteInvalidSourceRanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteInvalidSheetCount"}            ],
+           "originalName": "PasteInvalidSheetCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteError"}            ],
+           "originalName": "PasteError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteIntersectsMergedCells"}            ],
+           "originalName": "PasteIntersectsMergedCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "pasteMultipleSheetsTables"}            ],
+           "originalName": "PasteMultipleSheetsTables"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "intersectsMergedCells"}            ],
+           "originalName": "IntersectsMergedCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "copyInvalidRanges"}            ],
+           "originalName": "CopyInvalidRanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "general"}            ],
+           "originalName": "General"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "tableChangeWithMultipleSelectedSheets"}            ],
+           "originalName": "TableChangeWithMultipleSelectedSheets"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidHyperlinkAddress"}            ],
+           "originalName": "InvalidHyperlinkAddress"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidHyperlinkReference"}            ],
+           "originalName": "InvalidHyperlinkReference"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidProtectedWorksheetChange"}            ],
+           "originalName": "InvalidProtectedWorksheetChange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "noSingleAllowedEditRange"}            ],
+           "originalName": "NoSingleAllowedEditRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidArrayFormulaLockedState"}            ],
+           "originalName": "InvalidArrayFormulaLockedState"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "changePartOfDataTable"}            ],
+           "originalName": "ChangePartOfDataTable"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "deletingLockedColumnCells"}            ],
+           "originalName": "DeletingLockedColumnCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "deletingLockedRowCells"}            ],
+           "originalName": "DeletingLockedRowCells"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "largePasteOperation"}            ],
+           "originalName": "LargePasteOperation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "invalidSortOrFilterRange"}            ],
+           "originalName": "InvalidSortOrFilterRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "largeCopyOperation"}            ],
+           "originalName": "LargeCopyOperation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetActiveCellChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-active-cell-changed-event-args.ts",
+ "mappedName": "IgrSpreadsheetActiveCellChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetActivePaneChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-active-pane-changed-event-args.ts",
+ "mappedName": "IgrSpreadsheetActivePaneChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetPane", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetPane", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetActiveTableChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-active-table-changed-event-args.ts",
+ "mappedName": "IgrSpreadsheetActiveTableChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorksheetTable", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorksheetTable", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetActiveWorksheetChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-active-worksheet-changed-event-args.ts",
+ "mappedName": "IgrSpreadsheetActiveWorksheetChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Worksheet", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Worksheet", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCommandExecutedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-action-executed-event-args.ts",
+ "mappedName": "IgrSpreadsheetActionExecutedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "command"}            ],
+           "originalName": "Command"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "commandParameter"}            ],
+           "originalName": "CommandParameter"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCommandExecutingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-action-executing-event-args.ts",
+ "mappedName": "IgrSpreadsheetActionExecutingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetAction", "mappedName": "command"}            ],
+           "originalName": "Command"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "commandParameter"}            ],
+           "originalName": "CommandParameter"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeExitingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-mode-exiting-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditModeExitingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "acceptChanges"}            ],
+           "originalName": "AcceptChanges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canCancel"}            ],
+           "originalName": "CanCancel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editText"}            ],
+           "originalName": "EditText"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeExitedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-mode-exited-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditModeExitedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeEnteringEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-mode-entering-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditModeEnteringEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeEnteredEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-mode-entered-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditModeEnteredEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditModeValidationErrorEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-mode-validation-error-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditModeValidationErrorEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "action"}            ],
+           "originalName": "Action"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canStayInEditMode"}            ],
+           "originalName": "CanStayInEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCell", "mappedName": "cell"}            ],
+           "originalName": "Cell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataValidationRule", "mappedName": "validationRule"}            ],
+           "originalName": "ValidationRule"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetEditRangePasswordNeededEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-edit-range-password-needed-event-args.ts",
+ "mappedName": "IgrSpreadsheetEditRangePasswordNeededEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorksheetProtectedRange[]", "mappedName": "ranges"}            ],
+           "originalName": "Ranges"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "unprotect"}            ],
+           "originalName": "Unprotect"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetHyperlinkExecutingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-hyperlink-executing-event-args.ts",
+ "mappedName": "IgrSpreadsheetHyperlinkExecutingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorksheetHyperlink", "mappedName": "hyperlink"}            ],
+           "originalName": "Hyperlink"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "workingDirectory"}            ],
+           "originalName": "WorkingDirectory"
+       }   ],
+    "originalBaseTypeName": "CancelEventArgs",
+    "originalBaseTypeNamespace": "System.ComponentModel",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetSelectionChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-selection-changed-event-args.ts",
+ "mappedName": "IgrSpreadsheetSelectionChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetPane", "mappedName": "pane"}            ],
+           "originalName": "Pane"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetUserPromptDisplayingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-user-prompt-displaying-event-args.ts",
+ "mappedName": "IgrSpreadsheetUserPromptDisplayingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canCancel"}            ],
+           "originalName": "CanCancel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "cancel"}            ],
+           "originalName": "Cancel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "caption"}            ],
+           "originalName": "Caption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "displayMessage"}            ],
+           "originalName": "DisplayMessage"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "exception"}            ],
+           "originalName": "Exception"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "message"}            ],
+           "originalName": "Message"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "trigger"}            ],
+           "originalName": "Trigger"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetWorkbookDirtiedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-spreadsheet-workbook-dirtied-event-args.ts",
+ "mappedName": "IgrSpreadsheetWorkbookDirtiedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetCellRangeFormat",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellRangeFormat.ts",
+ "mappedName": "SpreadsheetCellRangeFormat"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "HorizontalCellAlignment", "mappedName": "alignment"}            ],
+           "originalName": "Alignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CellFill", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IWorkbookFont", "mappedName": "font"}            ],
+           "originalName": "Font"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "indent"}            ],
+           "originalName": "Indent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Nullable", "mappedName": "locked"}            ],
+           "originalName": "Locked"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "rotation"}            ],
+           "originalName": "Rotation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Nullable", "mappedName": "shrinkToFit"}            ],
+           "originalName": "ShrinkToFit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorkbookStyle", "mappedName": "style"}            ],
+           "originalName": "Style"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "VerticalCellAlignment", "mappedName": "verticalAlignment"}            ],
+           "originalName": "VerticalAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Nullable", "mappedName": "wrapText"}            ],
+           "originalName": "WrapText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "setBorders"}            ],
+           "originalName": "SetBorders"
+       }   ],
+    "originalBaseTypeName": "PropertyChangeNotifierExtended",
+    "originalBaseTypeNamespace": "Infragistics",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetColumnScrollRegion",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetColumnScrollRegion.ts",
+ "mappedName": "SpreadsheetColumnScrollRegion"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SpreadsheetScrollRegion",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Core",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetPane",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetPane.ts",
+ "mappedName": "SpreadsheetPane"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetColumnScrollRegion", "mappedName": "columnScrollRegion"}            ],
+           "originalName": "ColumnScrollRegion"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetRowScrollRegion", "mappedName": "rowScrollRegion"}            ],
+           "originalName": "RowScrollRegion"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetSelection", "mappedName": "selection"}            ],
+           "originalName": "Selection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellRange", "mappedName": "visibleRange"}            ],
+           "originalName": "VisibleRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "scrollCellIntoView"}            ],
+           "originalName": "ScrollCellIntoView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "scrollColumnIntoView"}            ],
+           "originalName": "ScrollColumnIntoView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "scrollRangeIntoView"}            ],
+           "originalName": "ScrollRangeIntoView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "scrollRowIntoView"}            ],
+           "originalName": "ScrollRowIntoView"
+       }   ],
+    "originalBaseTypeName": "PropertyChangeNotifierExtended",
+    "originalBaseTypeNamespace": "Infragistics",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetRowScrollRegion",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetRowScrollRegion.ts",
+ "mappedName": "SpreadsheetRowScrollRegion"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "SpreadsheetScrollRegion",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.Core",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetScrollRegion",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetScrollRegion.ts",
+ "mappedName": "SpreadsheetScrollRegion"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualExtent"}            ],
+           "originalName": "ActualExtent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "endIndex"}            ],
+           "originalName": "EndIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFrozen"}            ],
+           "originalName": "IsFrozen"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "startIndex"}            ],
+           "originalName": "StartIndex"
+       }   ],
+    "originalBaseTypeName": "PropertyChangeNotifierExtended",
+    "originalBaseTypeNamespace": "Infragistics",
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "SpreadsheetResourceId",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetResourceId.ts",
+ "mappedName": "SpreadsheetResourceId"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionFill"}            ],
+           "originalName": "CellSelectionFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionInnerBorder"}            ],
+           "originalName": "CellSelectionInnerBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionOuterBorder"}            ],
+           "originalName": "CellSelectionOuterBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionDragBorder"}            ],
+           "originalName": "CellSelectionDragBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionDragBorderInHeader"}            ],
+           "originalName": "CellSelectionDragBorderInHeader"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionHandleFill"}            ],
+           "originalName": "CellSelectionHandleFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "cellSelectionHandleBorder"}            ],
+           "originalName": "CellSelectionHandleBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "selectAllBackground"}            ],
+           "originalName": "SelectAllBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "selectAllTriangleFill"}            ],
+           "originalName": "SelectAllTriangleFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "selectAllTriangleHotTrackFill"}            ],
+           "originalName": "SelectAllTriangleHotTrackFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "selectAllTriangleSelectedFill"}            ],
+           "originalName": "SelectAllTriangleSelectedFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderBackground"}            ],
+           "originalName": "RowHeaderBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderSelectedBackground"}            ],
+           "originalName": "RowHeaderSelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderWithSelectedCellsBackground"}            ],
+           "originalName": "RowHeaderWithSelectedCellsBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderHotTrackBackground"}            ],
+           "originalName": "RowHeaderHotTrackBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderForeground"}            ],
+           "originalName": "RowHeaderForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderSelectedForeground"}            ],
+           "originalName": "RowHeaderSelectedForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderWithSelectedCellsForeground"}            ],
+           "originalName": "RowHeaderWithSelectedCellsForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderHotTrackForeground"}            ],
+           "originalName": "RowHeaderHotTrackForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderBorder"}            ],
+           "originalName": "RowHeaderBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderSelectedBorder"}            ],
+           "originalName": "RowHeaderSelectedBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderWithSelectedCellsBorder"}            ],
+           "originalName": "RowHeaderWithSelectedCellsBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderHotTrackBorder"}            ],
+           "originalName": "RowHeaderHotTrackBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "rowHeaderHotTrackSelectedForeground"}            ],
+           "originalName": "RowHeaderHotTrackSelectedForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderBackground"}            ],
+           "originalName": "ColumnHeaderBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderSelectedBackground"}            ],
+           "originalName": "ColumnHeaderSelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderWithSelectedCellsBackground"}            ],
+           "originalName": "ColumnHeaderWithSelectedCellsBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderHotTrackBackground"}            ],
+           "originalName": "ColumnHeaderHotTrackBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderForeground"}            ],
+           "originalName": "ColumnHeaderForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderSelectedForeground"}            ],
+           "originalName": "ColumnHeaderSelectedForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderWithSelectedCellsForeground"}            ],
+           "originalName": "ColumnHeaderWithSelectedCellsForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderHotTrackForeground"}            ],
+           "originalName": "ColumnHeaderHotTrackForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderHotTrackSelectedForeground"}            ],
+           "originalName": "ColumnHeaderHotTrackSelectedForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderBorder"}            ],
+           "originalName": "ColumnHeaderBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderSelectedBorder"}            ],
+           "originalName": "ColumnHeaderSelectedBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderWithSelectedCellsBorder"}            ],
+           "originalName": "ColumnHeaderWithSelectedCellsBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "columnHeaderHotTrackBorder"}            ],
+           "originalName": "ColumnHeaderHotTrackBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "multiSelectActiveCellBorder"}            ],
+           "originalName": "MultiSelectActiveCellBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "automaticGridline"}            ],
+           "originalName": "AutomaticGridline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "resizeColumnLine"}            ],
+           "originalName": "ResizeColumnLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "resizeRowLine"}            ],
+           "originalName": "ResizeRowLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemActiveForeground"}            ],
+           "originalName": "TabItemActiveForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemActiveBackground"}            ],
+           "originalName": "TabItemActiveBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemSelectedForeground"}            ],
+           "originalName": "TabItemSelectedForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemSelectedBackground"}            ],
+           "originalName": "TabItemSelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemHotTrackForeground"}            ],
+           "originalName": "TabItemHotTrackForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemHotTrackBackground"}            ],
+           "originalName": "TabItemHotTrackBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemBackground"}            ],
+           "originalName": "TabItemBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabItemForeground"}            ],
+           "originalName": "TabItemForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "selectedTabHighlight"}            ],
+           "originalName": "SelectedTabHighlight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabAreaBackground"}            ],
+           "originalName": "TabAreaBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabAreaBorder"}            ],
+           "originalName": "TabAreaBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "addSheetButtonForeground"}            ],
+           "originalName": "AddSheetButtonForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "addSheetButtonDisabledForeground"}            ],
+           "originalName": "AddSheetButtonDisabledForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "addSheetButtonHotTrackForeground"}            ],
+           "originalName": "AddSheetButtonHotTrackForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabScrollButtonForeground"}            ],
+           "originalName": "TabScrollButtonForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabScrollButtonDisabledForeground"}            ],
+           "originalName": "TabScrollButtonDisabledForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabScrollButtonHotTrackForeground"}            ],
+           "originalName": "TabScrollButtonHotTrackForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "tabAreaSplitterForeground"}            ],
+           "originalName": "TabAreaSplitterForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "sheetPaneSplitterBackground"}            ],
+           "originalName": "SheetPaneSplitterBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "sheetPaneSplitterPreview"}            ],
+           "originalName": "SheetPaneSplitterPreview"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "inputMessageBorder"}            ],
+           "originalName": "InputMessageBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "inputMessageBackground"}            ],
+           "originalName": "InputMessageBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "inputMessageForeground"}            ],
+           "originalName": "InputMessageForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "invalidDataBorder"}            ],
+           "originalName": "InvalidDataBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonBorder"}            ],
+           "originalName": "DropDownButtonBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonBackground"}            ],
+           "originalName": "DropDownButtonBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonForeground"}            ],
+           "originalName": "DropDownButtonForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonOpenBorder"}            ],
+           "originalName": "DropDownButtonOpenBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonOpenBackground"}            ],
+           "originalName": "DropDownButtonOpenBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "dropDownButtonOpenForeground"}            ],
+           "originalName": "DropDownButtonOpenForeground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "unselectCellsFill"}            ],
+           "originalName": "UnselectCellsFill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetResourceId", "mappedName": "unselectCellsBorder"}            ],
+           "originalName": "UnselectCellsBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core"
+},
+{
+    "originalName": "PaletteEntry",
+   "names": [
+        { "platform": "React",     "fileName": "PaletteEntry.ts",
+ "mappedName": "PaletteEntry"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WorkbookColorInfo", "mappedName": "colorInfo"}            ],
+           "originalName": "ColorInfo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "color"}            ],
+           "originalName": "Color"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core.Dialogs"
+},
+{
+    "originalName": "SpreadsheetFilterDialogOption",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetFilterDialogOption.ts",
+ "mappedName": "SpreadsheetFilterDialogOption"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "equals"}            ],
+           "originalName": "Equals"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "notEqual"}            ],
+           "originalName": "NotEqual"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "greaterThan"}            ],
+           "originalName": "GreaterThan"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "greaterThanOrEqual"}            ],
+           "originalName": "GreaterThanOrEqual"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "lessThan"}            ],
+           "originalName": "LessThan"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "lessThanOrEqual"}            ],
+           "originalName": "LessThanOrEqual"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "beginsWith"}            ],
+           "originalName": "BeginsWith"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "doesNotBeginWith"}            ],
+           "originalName": "DoesNotBeginWith"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "endsWith"}            ],
+           "originalName": "EndsWith"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "doesNotEndWith"}            ],
+           "originalName": "DoesNotEndWith"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "contains"}            ],
+           "originalName": "Contains"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "doesNotContain"}            ],
+           "originalName": "DoesNotContain"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "between"}            ],
+           "originalName": "Between"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetFilterDialogOption", "mappedName": "custom"}            ],
+           "originalName": "Custom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core.Dialogs"
+},
+{
+    "originalName": "ComboBoxListItem",
+   "names": [
+        { "platform": "React",     "fileName": "ComboBoxListItem.ts",
+ "mappedName": "ComboBoxListItem"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "dataValue"}            ],
+           "originalName": "DataValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "displayText"}            ],
+           "originalName": "DisplayText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "tag"}            ],
+           "originalName": "Tag"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core.Dialogs"
+},
+{
+    "originalName": "EnumWrapper",
+   "names": [
+        { "platform": "React",     "fileName": "EnumWrapper`1.ts",
+ "mappedName": "EnumWrapper`1"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "toString"}            ],
+           "originalName": "ToString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "tEnum", "mappedName": "enumValue"}            ],
+           "originalName": "EnumValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "enumValueNameLocalized"}            ],
+           "originalName": "EnumValueNameLocalized"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Core.Dialogs"
+},
+{
+    "originalName": "SpreadsheetVisualDataBase",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetVisualDataBase.ts",
+ "mappedName": "SpreadsheetVisualDataBase"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetVisualData.ts",
+ "mappedName": "SpreadsheetVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetTabItemAreaVisualData", "mappedName": "tabArea"}            ],
+           "originalName": "TabArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetCellAreaVisualDataList", "mappedName": "cellAreas"}            ],
+           "originalName": "CellAreas"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetHeaderAreaVisualDataList", "mappedName": "rowHeaderAreas"}            ],
+           "originalName": "RowHeaderAreas"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetHeaderAreaVisualDataList", "mappedName": "columnHeaderAreas"}            ],
+           "originalName": "ColumnHeaderAreas"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetHeaderAreaVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetHeaderAreaVisualData.ts",
+ "mappedName": "SpreadsheetHeaderAreaVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RectData", "mappedName": "relativeBounds"}            ],
+           "originalName": "RelativeBounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetRowColumnVisualDataList", "mappedName": "items"}            ],
+           "originalName": "Items"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "PrimitiveVisualDataList", "mappedName": "shapes"}            ],
+           "originalName": "Shapes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetHeaderAreaVisualDataList",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetHeaderAreaVisualDataList.ts",
+ "mappedName": "SpreadsheetHeaderAreaVisualDataList"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "List",
+    "originalBaseTypeNamespace": "System.Collections.Generic",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetCellAreaVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellAreaVisualData.ts",
+ "mappedName": "SpreadsheetCellAreaVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RectData", "mappedName": "relativeBounds"}            ],
+           "originalName": "RelativeBounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetRowColumnVisualDataList", "mappedName": "columns"}            ],
+           "originalName": "Columns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetRowColumnVisualDataList", "mappedName": "rows"}            ],
+           "originalName": "Rows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "PrimitiveVisualDataList", "mappedName": "shapes"}            ],
+           "originalName": "Shapes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetCellAreaVisualDataList",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetCellAreaVisualDataList.ts",
+ "mappedName": "SpreadsheetCellAreaVisualDataList"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "List",
+    "originalBaseTypeNamespace": "System.Collections.Generic",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetRowColumnVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetRowColumnVisualData.ts",
+ "mappedName": "SpreadsheetRowColumnVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "offset"}            ],
+           "originalName": "Offset"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "extent"}            ],
+           "originalName": "Extent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetRowColumnVisualDataList",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetRowColumnVisualDataList.ts",
+ "mappedName": "SpreadsheetRowColumnVisualDataList"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "List",
+    "originalBaseTypeNamespace": "System.Collections.Generic",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetTabItemAreaVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetTabItemAreaVisualData.ts",
+ "mappedName": "SpreadsheetTabItemAreaVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RectData", "mappedName": "relativeBounds"}            ],
+           "originalName": "RelativeBounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SpreadsheetTabVisualDataList", "mappedName": "tabs"}            ],
+           "originalName": "Tabs"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetTabVisualData",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetTabVisualData.ts",
+ "mappedName": "SpreadsheetTabVisualData"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "sheetIndex"}            ],
+           "originalName": "SheetIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ColorData", "mappedName": "color"}            ],
+           "originalName": "Color"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isActive"}            ],
+           "originalName": "IsActive"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEditing"}            ],
+           "originalName": "IsEditing"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isProtected"}            ],
+           "originalName": "IsProtected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSelected"}            ],
+           "originalName": "IsSelected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RectData", "mappedName": "relativeBounds"}            ],
+           "originalName": "RelativeBounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "serialize"}            ],
+           "originalName": "Serialize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "SpreadsheetVisualDataBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grids.VisualData",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+},
+{
+    "originalName": "SpreadsheetTabVisualDataList",
+   "names": [
+        { "platform": "React",     "fileName": "SpreadsheetTabVisualDataList.ts",
+ "mappedName": "SpreadsheetTabVisualDataList"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "List",
+    "originalBaseTypeNamespace": "System.Collections.Generic",
+    "originalNamespace": "Infragistics.Controls.Grids.VisualData"
+}
+]
+}

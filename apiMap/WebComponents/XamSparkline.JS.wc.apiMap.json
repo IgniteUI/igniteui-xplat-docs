@@ -1,0 +1,318 @@
+{
+"extraFiles": [
+"SparklineStylingDefaults.ts",
+"igc-sparkline-core-module.ts",
+"igc-sparkline-module.ts"
+],
+"types": [
+{
+    "originalName": "SparklineDisplayType",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SparklineDisplayType.ts",
+ "mappedName": "SparklineDisplayType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SparklineDisplayType", "mappedName": "Line"}            ],
+           "originalName": "Line"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SparklineDisplayType", "mappedName": "Area"}            ],
+           "originalName": "Area"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SparklineDisplayType", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SparklineDisplayType", "mappedName": "WinLoss"}            ],
+           "originalName": "WinLoss"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XamSparkline",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-sparkline-component.ts",
+ "mappedName": "IgcSparklineComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "brush"}            ],
+           "originalName": "Brush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "negativeBrush"}            ],
+           "originalName": "NegativeBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "negativeMarkerBrush"}            ],
+           "originalName": "NegativeMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "firstMarkerBrush"}            ],
+           "originalName": "FirstMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "lastMarkerBrush"}            ],
+           "originalName": "LastMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "highMarkerBrush"}            ],
+           "originalName": "HighMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "lowMarkerBrush"}            ],
+           "originalName": "LowMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
+           "originalName": "TrendLineBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "horizontalAxisBrush"}            ],
+           "originalName": "HorizontalAxisBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "verticalAxisBrush"}            ],
+           "originalName": "VerticalAxisBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "normalRangeFill"}            ],
+           "originalName": "NormalRangeFill"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "horizontalAxisVisibility"}            ],
+           "originalName": "HorizontalAxisVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "verticalAxisVisibility"}            ],
+           "originalName": "VerticalAxisVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "markerVisibility"}            ],
+           "originalName": "MarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "negativeMarkerVisibility"}            ],
+           "originalName": "NegativeMarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "firstMarkerVisibility"}            ],
+           "originalName": "FirstMarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "lastMarkerVisibility"}            ],
+           "originalName": "LastMarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "lowMarkerVisibility"}            ],
+           "originalName": "LowMarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "highMarkerVisibility"}            ],
+           "originalName": "HighMarkerVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "normalRangeVisibility"}            ],
+           "originalName": "NormalRangeVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "displayNormalRangeInFront"}            ],
+           "originalName": "DisplayNormalRangeInFront"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerSize"}            ],
+           "originalName": "MarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "firstMarkerSize"}            ],
+           "originalName": "FirstMarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "lastMarkerSize"}            ],
+           "originalName": "LastMarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "highMarkerSize"}            ],
+           "originalName": "HighMarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "lowMarkerSize"}            ],
+           "originalName": "LowMarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "negativeMarkerSize"}            ],
+           "originalName": "NegativeMarkerSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "lineThickness"}            ],
+           "originalName": "LineThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimum"}            ],
+           "originalName": "Minimum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximum"}            ],
+           "originalName": "Maximum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
+           "originalName": "LabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
+           "originalName": "TrendLineType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
+           "originalName": "TrendLinePeriod"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
+           "originalName": "TrendLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "normalRangeMinimum"}            ],
+           "originalName": "NormalRangeMinimum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "normalRangeMaximum"}            ],
+           "originalName": "NormalRangeMaximum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SparklineDisplayType", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
+           "originalName": "UnknownValuePlotting"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "verticalAxisLabel"}            ],
+           "originalName": "VerticalAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "horizontalAxisLabel"}            ],
+           "originalName": "HorizontalAxisLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "(arg1: any) => string", "mappedName": "formatLabel"}            ],
+           "originalName": "FormatLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
+           "originalName": "ActualPixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportVisualData"}            ],
+           "originalName": "ExportVisualData"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

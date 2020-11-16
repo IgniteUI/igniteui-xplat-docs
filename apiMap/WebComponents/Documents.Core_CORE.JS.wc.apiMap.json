@@ -1,0 +1,19 @@
+{
+"types": [
+{
+    "originalName": "DocumentEncryptedException",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "DocumentEncryptedException.ts",
+ "mappedName": "DocumentEncryptedException"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": ".ctor"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalBaseTypeName": "InvalidOperationException",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Documents.Core"
+}
+]
+}
