@@ -33,6 +33,7 @@
   "repository": "http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/_git/xplat-docfx",
   "license": "ISC",
   "dependencies": {
+    "@octokit/rest": "^18.0.9",
     "es6-shim": "^0.35.3",
     "gulp-autoprefixer": "^6.0.0",
     "to-vfile": "^2.2.0",
