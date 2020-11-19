@@ -778,7 +778,7 @@
   },
   {
     "name": "Charts (NEW)",
-    "href": "charts/types/chart-type-overview.md",
+    "href": "charts/chart-type-overview.md",
     "header": true,
     "status": "NEW"
   },
@@ -799,22 +799,22 @@
   },
   {
     "name": "Area Chart",
-    "href": "charts/types/chart-types-area.md",
+    "href": "charts/chart-types-area.md",
     "status": "NEW"
   },
   {
     "name": "Bar Chart",
-    "href": "charts/types/chart-types-bar.md",
+    "href": "charts/chart-types-bar.md",
     "status": "NEW"
   },
   {
     "name": "Bubble Chart",
-    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
     "status": "NEW"
   },
   {
     "name": "Column Chart",
-    "href": "charts/types/chart-types-column.md",
+    "href": "charts/chart-types-column.md",
     "status": "NEW"
   },
   {
@@ -824,17 +824,17 @@
   },
   {
     "name": "Financial Chart",
-    "href": "charts/types/chart-types-financial.md",
+    "href": "charts/chart-types-financial.md",
     "status": "NEW"
   },
   {
     "name": "Line Chart",
-    "href": "charts/types/chart-types-line.md",
+    "href": "charts/chart-types-line.md",
     "status": "NEW"
   },
   {
     "name": "Polar Chart",
-    "href": "charts/types/chart-types-polar.md",
+    "href": "charts/chart-types-polar.md",
     "status": "NEW"
   },
   {
@@ -844,27 +844,27 @@
   },
   {
     "name": "Radial Chart",
-    "href": "charts/types/chart-types-radial.md",
+    "href": "charts/chart-types-radial.md",
     "status": "NEW"
   },
   {
     "name": "Scatter Chart",
-    "href": "charts/types/chart-types-scatter.md",
+    "href": "charts/chart-types-scatter.md",
     "status": "NEW"
   },
   {
     "name": "Shape Chart",
-    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
     "status": "NEW"
   },
   {
     "name": "Spline Chart",
-    "href": "charts/types/chart-types-spline.md",
+    "href": "charts/chart-types-spline.md",
     "status": "NEW"
   },
   {
     "name": "Step Chart",
-    "href": "charts/types/chart-types-step.md",
+    "href": "charts/chart-types-step.md",
     "status": "NEW"
   },
   {
@@ -879,52 +879,52 @@
   },
   {
     "name": "Chart Features",
-    "href": "charts/features/chart-feature-overview.md",
+    "href": "charts/chart-feature-overview.md",
     "status": "NEW",
     "items": [
         {
           "name": "Axis Gridlines",
-          "href": "charts/features/chart-features-axis-gridlines.md",
+          "href": "charts/chart-features-axis-gridlines.md",
           "status": "NEW"
         },
         {
           "name": "Axis Layouts",
-          "href": "charts/features/chart-features-axis-layouts.md",
+          "href": "charts/chart-features-axis-layouts.md",
           "status": "NEW"
         },
         {
           "name": "Axis Options",
-          "href": "charts/features/chart-features-axis-options.md",
+          "href": "charts/chart-features-axis-options.md",
           "status": "NEW"
         },
         {
           "name": "Chart Annotations",
-          "href": "charts/features/chart-features-annotations.md",
+          "href": "charts/chart-features-annotations.md",
           "status": "NEW"
         },
         {
           "name": "Chart Animations",
-          "href": "charts/features/chart-features-animations.md",
+          "href": "charts/chart-features-animations.md",
           "status": "NEW"
         },
         {
           "name": "Chart Highlighting",
-          "href": "charts/features/chart-features-highlighting.md",
+          "href": "charts/chart-features-highlighting.md",
           "status": "NEW"
         },
         {
           "name": "Chart Markers",
-          "href": "charts/features/chart-features-markers.md",
+          "href": "charts/chart-features-markers.md",
           "status": "NEW"
         },
         {
           "name": "Chart Tooltips",
-          "href": "charts/features/chart-features-tooltips.md",
+          "href": "charts/chart-features-tooltips.md",
           "status": "NEW"
         },
         {
           "name": "Chart Trendlines",
-          "href": "charts/features/chart-features-trendlines.md",
+          "href": "charts/chart-features-trendlines.md",
           "status": "NEW"
         },
         {
