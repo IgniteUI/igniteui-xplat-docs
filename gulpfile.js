@@ -376,9 +376,10 @@ exports.generateTocJson = generateTocJson;
 // converts "toc.json" to "toc.yml" file - this is called before building docs
 function generateTocYML(cb) {
 
-    generateTocFor('React', 'en');
-    // generateTocFor('React', 'jp');
-    // generateTocFor('React', 'kr');
+    // PLAT defaults to "React" if --plat argument is not specified
+    generateTocFor(PLAT, 'en');
+    // generateTocFor(PLAT, 'jp');
+    // generateTocFor(PLAT, 'kr');
     cb();
 }
 exports.generateTocYML = generateTocYML;
