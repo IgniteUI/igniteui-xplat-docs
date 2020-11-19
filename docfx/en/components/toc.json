@@ -292,6 +292,179 @@
     ]
   },
   {
+    "name": "Charts (NEW)",
+    "href": "charts/chart-type-overview.md",
+    "header": true,
+    "status": "NEW"
+  },
+  {
+    "name": "Binding Real Time Data",
+    "href": "category-chart-high-frequency.md",
+    "status": ""
+  },
+  {
+    "name": "Binding High Volume Data",
+    "href": "category-chart-high-volume.md",
+    "status": ""
+  },
+  {
+    "name": "Binding Multiple Data Source",
+    "href": "financial-chart-multiple-data.md",
+    "status": ""
+  },
+  {
+    "name": "Area Chart",
+    "href": "charts/chart-types-area.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Bar Chart",
+    "href": "charts/chart-types-bar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Bubble Chart",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "Column Chart",
+    "href": "charts/chart-types-column.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Donut Chart",
+    "href": "doughnut-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Financial Chart",
+    "href": "charts/chart-types-financial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Line Chart",
+    "href": "charts/chart-types-line.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Polar Chart",
+    "href": "charts/chart-types-polar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Pie Chart",
+    "href": "pie-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Radial Chart",
+    "href": "charts/chart-types-radial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Scatter Chart",
+    "href": "charts/chart-types-scatter.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Shape Chart",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "Spline Chart",
+    "href": "charts/chart-types-spline.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Step Chart",
+    "href": "charts/chart-types-step.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Sparkline",
+    "href": "sparkline.md",
+    "status": ""
+  },
+  {
+    "name": "Treemap",
+    "href": "treemap-overview.md",
+    "status": ""
+  },
+  {
+    "name": "Chart Features",
+    "href": "charts/chart-feature-overview.md",
+    "status": "NEW",
+    "items": [
+        {
+          "name": "Axis Gridlines",
+          "href": "charts/chart-features-axis-gridlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Axis Layouts",
+          "href": "charts/chart-features-axis-layouts.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Axis Options",
+          "href": "charts/chart-features-axis-options.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Annotations",
+          "href": "charts/chart-features-annotations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Animations",
+          "href": "charts/chart-features-animations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Highlighting",
+          "href": "charts/chart-features-highlighting.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Markers",
+          "href": "charts/chart-features-markers.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Tooltips",
+          "href": "charts/chart-features-tooltips.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Trendlines",
+          "href": "charts/chart-features-trendlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Navigation",
+          "href": "data-chart-navigation.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Synchronization",
+          "href": "data-chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "Zoom Slider",
+          "href": "zoomslider-overview.md",
+          "status": ""
+        }
+      ]
+  },
+  {
+    "name": "Data Sources",
+    "href": "data-chart-data-sources.md",
+    "status": ""
+  },
+  {
     "name": "Charts (OLD)",
     "header": true
   },
@@ -774,179 +947,6 @@
   {
     "name": "Sparkline",
     "href": "sparkline.md",
-    "status": ""
-  },
-  {
-    "name": "Charts (NEW)",
-    "href": "charts/chart-type-overview.md",
-    "header": true,
-    "status": "NEW"
-  },
-  {
-    "name": "Binding Real Time Data",
-    "href": "category-chart-high-frequency.md",
-    "status": ""
-  },
-  {
-    "name": "Binding High Volume Data",
-    "href": "category-chart-high-volume.md",
-    "status": ""
-  },
-  {
-    "name": "Binding Multiple Data Source",
-    "href": "financial-chart-multiple-data.md",
-    "status": ""
-  },
-  {
-    "name": "Area Chart",
-    "href": "charts/chart-types-area.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Bar Chart",
-    "href": "charts/chart-types-bar.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Bubble Chart",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
-    "status": "NEW"
-  },
-  {
-    "name": "Column Chart",
-    "href": "charts/chart-types-column.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Donut Chart",
-    "href": "doughnut-chart.md",
-    "status": ""
-  },
-  {
-    "name": "Financial Chart",
-    "href": "charts/chart-types-financial.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Line Chart",
-    "href": "charts/chart-types-line.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Pie Chart",
-    "href": "pie-chart.md",
-    "status": ""
-  },
-  {
-    "name": "Radial Chart",
-    "href": "charts/chart-types-radial.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Scatter Chart",
-    "href": "charts/chart-types-scatter.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Shape Chart",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
-    "status": "NEW"
-  },
-  {
-    "name": "Spline Chart",
-    "href": "charts/chart-types-spline.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Step Chart",
-    "href": "charts/chart-types-step.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Sparkline",
-    "href": "sparkline.md",
-    "status": ""
-  },
-  {
-    "name": "Treemap",
-    "href": "treemap-overview.md",
-    "status": ""
-  },
-  {
-    "name": "Chart Features",
-    "href": "charts/chart-feature-overview.md",
-    "status": "NEW",
-    "items": [
-        {
-          "name": "Axis Gridlines",
-          "href": "charts/chart-features-axis-gridlines.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Axis Layouts",
-          "href": "charts/chart-features-axis-layouts.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Axis Options",
-          "href": "charts/chart-features-axis-options.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Annotations",
-          "href": "charts/chart-features-annotations.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Animations",
-          "href": "charts/chart-features-animations.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Highlighting",
-          "href": "charts/chart-features-highlighting.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Markers",
-          "href": "charts/chart-features-markers.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Tooltips",
-          "href": "charts/chart-features-tooltips.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Trendlines",
-          "href": "charts/chart-features-trendlines.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Navigation",
-          "href": "data-chart-navigation.md",
-          "status": ""
-        },
-        {
-          "name": "Chart Synchronization",
-          "href": "data-chart-synchronization.md",
-          "status": ""
-        },
-        {
-          "name": "Zoom Slider",
-          "href": "zoomslider-overview.md",
-          "status": ""
-        }
-      ]
-  },
-  {
-    "name": "Data Sources",
-    "href": "data-chart-data-sources.md",
     "status": ""
   },
   {
