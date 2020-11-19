@@ -292,7 +292,7 @@
     ]
   },
   {
-    "name": "Charts",
+    "name": "Charts (OLD)",
     "header": true
   },
   {
@@ -310,7 +310,7 @@
         "href": "category-chart-axis-options.md",
         "status": ""
       },
-      {        
+      {
         "name": "Real Time Data",
         "href": "category-chart-high-frequency.md",
         "status": ""
@@ -342,7 +342,7 @@
     "href": "data-chart.md",
     "status": "",
     "items": [
-      {        
+      {
         "name": "Axis",
         "href": "data-chart-axis-types.md",
         "status": "",
@@ -409,7 +409,7 @@
                 "href": "data-chart-type-scatter-area-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Scatter Polygon Chart",
                 "href": "data-chart-type-scatter-polygon-series.md",
                 "status": ""
@@ -419,22 +419,22 @@
                 "href": "data-chart-type-category-spline-area-series.md",
                 "status": ""
               },
-              {               
+              {
                 "name": "Stacked 100 Area Chart",
                 "href": "data-chart-type-stacked-100-area-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked 100 Spline Area Chart",
                 "href": "data-chart-type-stacked-100-spline-area-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Area Chart",
                 "href": "data-chart-type-stacked-area-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Spline Area Chart",
                 "href": "data-chart-type-stacked-spline-area-series.md",
                 "status": ""
@@ -471,22 +471,22 @@
                 "href": "data-chart-type-range-column-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked 100 Bar Chart",
                 "href": "data-chart-type-stacked-100-bar-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked 100 Column Chart",
                 "href": "data-chart-type-stacked-100-column-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Bar Chart",
                 "href": "data-chart-type-stacked-bar-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Column Chart",
                 "href": "data-chart-type-stacked-column-series.md",
                 "status": ""
@@ -586,22 +586,22 @@
                 "href": "data-chart-type-category-spline-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked 100 Line Chart",
                 "href": "data-chart-type-stacked-100-line-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked 100 Spline Chart",
                 "href": "data-chart-type-stacked-100-spline-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Line Chart",
                 "href": "data-chart-type-stacked-line-series.md",
                 "status": ""
               },
-              {                
+              {
                 "name": "Stacked Spline Chart",
                 "href": "data-chart-type-stacked-spline-series.md",
                 "status": ""
@@ -664,7 +664,7 @@
           }
         ]
       },
-      {        
+      {
         "name": "Legend",
         "href": "data-chart-legends.md",
         "status": ""
@@ -681,37 +681,37 @@
         "href": "data-chart-synchronization.md",
         "status": "UPDATED"
       },
-      {        
+      {
         "name": "Title and Subtitle",
         "href": "data-chart-titles.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Annotations",
         "href": "data-chart-series-annotations.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Highlighting",
         "href": "data-chart-series-highlighting.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Markers",
         "href": "data-chart-series-markers.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Tooltips",
         "href": "data-chart-series-tooltips.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Trendlines",
         "href": "data-chart-series-trendlines.md",
         "status": ""
       },
-      {        
+      {
         "name": "Series Value Overlay",
         "href": "data-chart-value-overlay.md",
         "status": ""
@@ -759,7 +759,7 @@
         "href": "financial-chart-axis-types.md",
         "status": ""
       },
-      {        
+      {
         "name": "Chart Performance",
         "href": "financial-chart-performance.md",
         "status": ""
@@ -774,6 +774,179 @@
   {
     "name": "Sparkline",
     "href": "sparkline.md",
+    "status": ""
+  },
+  {
+    "name": "Charts (NEW)",
+    "href": "charts/types/chart-type-overview.md",
+    "header": true,
+    "status": "NEW"
+  },
+  {
+    "name": "Binding Real Time Data",
+    "href": "category-chart-high-frequency.md",
+    "status": ""
+  },
+  {
+    "name": "Binding High Volume Data",
+    "href": "category-chart-high-volume.md",
+    "status": ""
+  },
+  {
+    "name": "Binding Multiple Data Source",
+    "href": "financial-chart-multiple-data.md",
+    "status": ""
+  },
+  {
+    "name": "Area Chart",
+    "href": "charts/types/chart-types-area.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Bubble Chart",
+    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "Bar Chart",
+    "href": "charts/types/chart-types-bar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Column Chart",
+    "href": "charts/types/chart-types-column.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Donut Chart",
+    "href": "doughnut-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Financial Chart",
+    "href": "charts/types/chart-types-financial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Line Chart",
+    "href": "charts/types/chart-types-line.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Polar Chart",
+    "href": "charts/types/chart-types-polar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Pie Chart",
+    "href": "pie-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Radial Chart",
+    "href": "charts/types/chart-types-radial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Scatter Chart",
+    "href": "charts/types/chart-types-scatter.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Shape Chart",
+    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "Spline Chart",
+    "href": "charts/types/chart-types-spline.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Step Chart",
+    "href": "charts/types/chart-types-step.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Sparkline",
+    "href": "sparkline.md",
+    "status": ""
+  },
+  {
+    "name": "Treemap",
+    "href": "treemap-overview.md",
+    "status": ""
+  },
+  {
+    "name": "Chart Features",
+    "href": "charts/features/chart-feature-overview.md",
+    "status": "NEW",
+    "items": [
+        {
+          "name": "Axis Gridlines",
+          "href": "charts/features/chart-features-axis-gridlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Axis Layouts",
+          "href": "charts/features/chart-features-axis-layouts.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Axis Options",
+          "href": "charts/features/chart-features-axis-options.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Annotations",
+          "href": "charts/features/chart-features-annotations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Animations",
+          "href": "charts/features/chart-features-animations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Highlighting",
+          "href": "charts/features/chart-features-highlighting.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Markers",
+          "href": "charts/features/chart-features-markers.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Tooltips",
+          "href": "charts/features/chart-features-tooltips.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Trendlines",
+          "href": "charts/features/chart-features-trendlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Navigation",
+          "href": "data-chart-navigation.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Synchronization",
+          "href": "data-chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "Zoom Slider",
+          "href": "zoom-slider-overview.md",
+          "status": ""
+        }
+      ]
+  },
+  {
+    "name": "Data Sources",
+    "href": "data-chart-data-sources.md",
     "status": ""
   },
   {
