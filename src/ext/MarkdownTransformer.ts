@@ -251,6 +251,18 @@ function getFrontMatterTypes(options: any) {
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
         let reference = node.url;
+
+        if (reference.indexOf("PlatformShort") > 0) {
+            let platform = getPlatformName(options.platform); //.toString();
+            let platformURL = reference.replace("$PlatformShort$", platform).toLowerCase();
+            // platformURL = platformURL.toLowerCase();
+            // platformURL = platformURL.replace(".md", ".html");
+            // console.log("transformDocLinks \n" + reference + "\n" + platformURL);
+            reference = platformURL;
+        }
+
+        node.url = reference.toLowerCase();
+
         let mappings: MappingLoader = options.mappings;
         if (reference.indexOf("doc://") !== 0) {
             return;
@@ -284,6 +296,7 @@ function transformDocLinks(options: any) {
         } else {
             docUrl = docUrl.replace("{CONTROL_NAME}", controlName);
         }
+
 
         node.url = docUrl;
     }
@@ -462,6 +475,11 @@ function isPlatformComment(node: any): boolean {
         }
     }
     return false;
+}
+
+function getPlatformName(enumInt: number): string {
+    let platformEnum = APIPlatform[enumInt];
+    return platformEnum.toString();
 }
 
 function getPlatformsFromString(str: string): APIPlatform[] {
@@ -1075,6 +1093,13 @@ export class MarkdownTransformer {
             if (node.exclude === undefined ||
                 node.exclude.length === 0 ||
                 node.exclude.indexOf(platform) === -1) {
+
+                node.name = node.name.replace("$PlatformShort$", platform);
+                if (node.href) {
+                    node.href = node.href.replace("$PlatformShort$", platform);
+                    node.href = node.href.toLowerCase();
+                    // node.href = node.href.replace(".md", ".html");
+                }
 
                 node.exclude = undefined;
                 // recursively check if child items need to be excluded

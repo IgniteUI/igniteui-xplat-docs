@@ -285,7 +285,12 @@ function buildPlatform(cb) {
         }
         // uncomment to test faster build
         // sources.push('!doc/**/data-grid*.md');
-        // sources.push('!doc/**/*chart*.md');
+        // sources.push('!doc/**/data-chart*.md');
+        // sources.push('!doc/**/financial-chart*.md');
+        // sources.push('!doc/**/category-chart*.md');
+        // sources.push('!doc/**/doughnut-chart.md');
+        // sources.push('!doc/**/pie-chart.md');
+        // sources.push('!doc/**/general*.md');
         // sources.push('!doc/**/*map*.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
@@ -295,6 +300,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/treemap*.md');
         // sources.push('!doc/**/zoomslider*.md');
         // sources.push('!doc/**/sparkline.md');
+        // sources.push('!doc/**/*chart*.md');
 
         gulp.src(sources)
         .pipe(transformFiles())
@@ -370,9 +376,9 @@ exports.generateTocJson = generateTocJson;
 // converts "toc.json" to "toc.yml" file - this is called before building docs
 function generateTocYML(cb) {
 
-    generateTocFor('All', 'en');
-    generateTocFor('All', 'jp');
-    generateTocFor('All', 'kr');
+    generateTocFor('React', 'en');
+    // generateTocFor('React', 'jp');
+    // generateTocFor('React', 'kr');
     cb();
 }
 exports.generateTocYML = generateTocYML;
