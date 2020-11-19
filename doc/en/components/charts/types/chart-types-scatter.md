@@ -44,7 +44,7 @@ Refer to these topics for other types of scatter charts:
 
 - [Scatter Area Chart](chart-types-area.md#$PlatformShort$-Scatter-Area-Chart)
 - [Scatter Line Chart](chart-types-line.md#$PlatformShort$-Scatter-Line-Chart)
-- [Scatter Spline Chart](chart-types-area.md#$PlatformShort$-Scatter-Spline-Chart)
+- [Scatter Spline Chart](chart-types-spline.md#$PlatformShort$-Scatter-Spline-Chart)
 
 
 ## API Members

@@ -803,13 +803,13 @@
     "status": "NEW"
   },
   {
-    "name": "Bubble Chart",
-    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "name": "Bar Chart",
+    "href": "charts/types/chart-types-bar.md",
     "status": "NEW"
   },
   {
-    "name": "Bar Chart",
-    "href": "charts/types/chart-types-bar.md",
+    "name": "Bubble Chart",
+    "href": "charts/types/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
     "status": "NEW"
   },
   {
@@ -939,7 +939,7 @@
         },
         {
           "name": "Zoom Slider",
-          "href": "zoom-slider-overview.md",
+          "href": "zoomslider-overview.md",
           "status": ""
         }
       ]

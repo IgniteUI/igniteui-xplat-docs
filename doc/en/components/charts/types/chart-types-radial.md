@@ -29,8 +29,8 @@ Refer to these topics for other types of radial charts:
 - [Radial Line Chart](chart-types-line.md#$PlatformShort$-Radial-Line-Chart)
 - [Radial Area Chart](chart-types-area.md#$PlatformShort$-Radial-Area-Chart)
 - [Radial Column Chart](chart-types-column.md#$PlatformShort$-Radial-Column-Chart)
-- [Pie Chart](pie-chart.md)
-- [Donut Chart](doughnut-chart.md)
+- [Pie Chart](../../pie-chart.md)
+- [Donut Chart](../../doughnut-chart.md)
 
 ## API Members
 <!-- TODO list API links used in this topic -->
