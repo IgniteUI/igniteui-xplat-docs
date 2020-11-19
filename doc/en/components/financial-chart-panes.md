@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ Financial Chart | Panes | Infragistics
-_description: Use Infragistics' $PlatformShort$  financial chart control's panes, such as price pane, indicator pane, volume pane and zoom pane, to display financial data. Check out $ProductName$ financial chart's panes!
+_description: Use Infragistics' $PlatformShort$ financial chart control's panes, such as price pane, indicator pane, volume pane and zoom pane, to display financial data. Check out $ProductName$ financial chart's panes!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, panes, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart', 'FinancialChartYAxisMode']
 ---

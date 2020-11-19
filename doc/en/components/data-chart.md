@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$  Data Chart | Data Visualization | Infragistics
+title: $PlatformShort$ Data Chart | Data Visualization | Infragistics
 _description: Effortlessly create an $PlatformShort$ data chart that displays multiple instances of visual elements to create composite chart views. Get started today!
 _keywords: data chart, $PlatformShort$ component, $PlatformShort$ chart, $ProductName$, charting component
 mentionedTypes: ['XamDataChart', 'SeriesType']

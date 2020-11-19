@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$  Map | Data Visualization Tools | Infragistics
+title: $PlatformShort$ Map | Data Visualization Tools | Infragistics
 _description: Use Infragistics' $PlatformShort$ JavaScript map to display heat map imagery. Check out $ProductName$ map demos!
 _keywords: $PlatformShort$ map, heat map imagery, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']

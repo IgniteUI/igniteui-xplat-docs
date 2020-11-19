@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Annotations | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to add annotations to your $PlatformShort$ chart axes, such as Crosshair layer, final value layer and value overlay. Improve your $PlatformShort$  charts and visualizations with $ProductName$
+_description: Infragistics' $PlatformShort$ charts control allows you to add annotations to your $PlatformShort$ chart axes, such as Crosshair layer, final value layer and value overlay. Improve your $PlatformShort$ charts and visualizations with $ProductName$
 _keywords: $PlatformShort$ charts, data chart, axis annotations, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','LineSeries','ValueOverlay','CrosshairLayer']
 ---
