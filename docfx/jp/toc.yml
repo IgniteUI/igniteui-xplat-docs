@@ -1,5 +1,4 @@
-﻿- navbarToc: true
-- name: コンポーネント
+﻿- name: コンポーネント
   href: 'https://jp.infragistics.com/products/$ProductSpinal$'
 - name: はじめに
   href: 'https://jp.infragistics.com/products/$ProductSpinal$/getting-started/'
