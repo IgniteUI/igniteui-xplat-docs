@@ -5,14 +5,14 @@ _keywords: $PlatformShort$ map, binding data models, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap', GeographicScatterAreaSeries, GeographicHighDensityScatterSeries, GeographicProportionalSymbolSeries, GeographicScatterAreaSeries, GeographicContourLineSeries, GeographicShapeSeries, GeographicPolylineSeries  ]
 _language: ja
 ---
-# $PlatformShort$ 地理的データ モデルをバインディング
+# $PlatformShort$ 地理的データ モデルのバインディング
 
 $ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
 
-## サンプル
+## $PlatformShort$ 地理的データ モデルのバインディングの例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-model-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="geo-map-binding-data-model-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 地理的データ モデルのバインディングの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-model-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

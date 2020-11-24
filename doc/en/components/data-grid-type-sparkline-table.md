@@ -9,10 +9,10 @@ mentionedTypes: ['Grid', 'CellInfo', 'TemplateCellInfo', 'Sparkline']
 
 The $ProductName$ Data Table / Data Grid supports a Template Column which provides you to a way to embed other components such as $ProductName$ sparkline component. Refer to the [Column Types](data-grid-column-types.md) topic for other types of columns supported in the `Grid` component.
 
-## Demo
+## $PlatformShort$ Column Sparkline Example
 
 <div class="sample-container loading" style="height: 530px">
-    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Sparkline Example"></iframe>
 </div>
 <sample-button src="charts/sparkline/grid"></sample-button>
 

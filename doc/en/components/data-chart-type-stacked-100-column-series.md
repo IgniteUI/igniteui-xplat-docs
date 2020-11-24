@@ -9,10 +9,10 @@ namespace: Infragistics.Controls.Charts
 
 The $ProductName$ stacked 100 column chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked on top of each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the y-axis, and all negative values are grouped on the negative side of the y-axis. The $PlatformShort$ stacked 100 column chart is identical to the $PlatformShort$ stacked column chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point. In addition, the `Stacked100ColumnSeries` uses the same concepts of data plotting as `Stacked100BarSeries` but data points are stacked along vertical line (y-axis) rather than along horizontal line (x-axis). In other words, the stacked 100 column chart is rendered like the stacked 100 bar chart but with 90 degrees counter-clockwise rotation.
 
-## Demo
+## $PlatformShort$ Stacked 100 Column Chart Example
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Column Chart Example"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

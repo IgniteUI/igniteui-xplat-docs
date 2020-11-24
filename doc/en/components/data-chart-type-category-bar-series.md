@@ -8,10 +8,10 @@ mentionedTypes: ['XamDataChart']
 
 The $ProductName$ bar chart belongs to a group of category charts and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points. `BarSeries` uses the same concepts of data plotting as `ColumnSeries` but data points are stretched along a vertical line (y-axis) rather than horizontal line (x-axis). In other words, the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation.
 
-## Demo
+## $PlatformShort$ Bar Chart Example
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart Example"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

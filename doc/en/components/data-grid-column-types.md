@@ -11,10 +11,10 @@ The $ProductName$ Data Table / Data Grid supports 5 column types, plus a Templat
 
 Each column binds to data by setting the `Field` property to the name of the corresponding property on the items of your underlying data source bound to the $PlatformShort$ data grid.
 
-## Demo
+## $PlatformShort$ Column Types Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-types-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-types-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Types Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-types"></sample-button>
 

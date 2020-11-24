@@ -9,10 +9,10 @@ _language: ja
 # $PlatformShort$ グリッド ソートの概要
 $PlatformShort$ Data Table / Data Grid は、単一列、複数列、およびトライステート列のソート構成で昇順および降順の列のソートをサポートします。
 
-## サンプル
+## $PlatformShort$ グリッド ソートの例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-sorting-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-sorting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-sorting-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-sorting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド ソートの例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-sorting"></sample-button>
 

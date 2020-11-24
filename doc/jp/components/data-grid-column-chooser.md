@@ -11,10 +11,10 @@ _language: ja
 $ProductName$ Data Grid は、`DataGridToolbar` コンポーネントまたはページのどこにでも配置できる `ColumnChooser` コンポーネントによって UI から列の表示/非表示を行う機能をサポートしています。列の `IsHidden` プロパティにより、手動生成の列に対してプログラムによって列の表示/非表示を設定することができます。`IsHidden` の値は `ColumnChooser` コンポーネントに反映されます。各方法は列の表示状態を変更するために使用できます。
 
 
-## サンプル
+## $PlatformShort$ Grid 列選択の例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 列選択の例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-chooser-toolbar"></sample-button>
 

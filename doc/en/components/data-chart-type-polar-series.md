@@ -11,10 +11,10 @@ This topic explains various types of polar series in the $PlatformShort$ data ch
 Polar series draw attention to uneven intervals or clusters of data. They are often used to plot scientific data (e.g. wind's direction and speed, strength and direction of magnetic field, location of objects in solar system), and can highlight the deviation of collected data from predicted results.
 
 <!-- Angular, React, WebComponents -->
-## Demo
+## $PlatformShort$ Polar Series Example
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-type-polar-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-type-polar-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Series Example"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-polar-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

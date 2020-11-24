@@ -9,10 +9,10 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
 
-## Demo
+## $PlatformShort$ Row Grouping Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-grouping-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-grouping' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-row-grouping-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-grouping' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Row Grouping Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/row-grouping"></sample-button>
 

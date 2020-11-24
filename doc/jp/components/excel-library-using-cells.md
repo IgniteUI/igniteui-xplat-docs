@@ -9,10 +9,10 @@ _language: ja
 
 Excel ワークシートの `WorksheetCell` オブジェクトは、ワークシートの実際のデータ値を保持するオブジェクトです。このトピックは、名前で領域にアクセス、数式やコメントをセルに追加、結合および書式設定など、セルで実行できる多くの操作について説明します。
 
-## サンプル
+## $PlatformShort$ セルの使用の例
 
 <div class="sample-container loading" style="height: 150px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ セルの使用の例"></iframe>
 </div>
 <sample-button src="excel/excel-library/working-with-cells"></sample-button>
 

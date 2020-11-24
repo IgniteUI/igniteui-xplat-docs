@@ -207,7 +207,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 <div class="divider--half"></div>
 
 <div class="sample-container loading" style="height: 435px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid の例"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid の例" alt="$PlatformShort$ Grid 例"></iframe>
 </div>
 
 このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
@@ -246,7 +246,7 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 
 <div class="divider"></div>
 
-### サンプル
+### 高速 $PlatformShort$ データ グリッド例
 
 <span class="h3">サンプル</span>
 

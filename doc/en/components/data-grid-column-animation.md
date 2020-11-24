@@ -9,10 +9,10 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid supports Column Animation during events like Column Hiding or Column Moving.  When Column Animation on the $PlatformShort$ data grid is set, the corresponding animation will fire for all of the cells in that column.
 
-## Demo
+## $PlatformShort$ Grid Column Animations Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Animations Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-animation"></sample-button>
 

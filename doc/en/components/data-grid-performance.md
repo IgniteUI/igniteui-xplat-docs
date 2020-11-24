@@ -9,12 +9,12 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid is optimized for high-performance with live data scenarios.  With fast load time, smooth scrolling with zero lag time or screen flicker, you can seamlessly scroll through an unlimited number of rows and columns in your $PlatformShort$ data grid application with full virtualization of grid's columns and rows.
 
-## Demo
+## $PlatformShort$ High Performance with Live Data Example
 
 This sample demonstrates this performance by binding thousands of financial records to the $PlatformShort$ data grid, grouping them by 1 column (eg. Territory), and live-updating multiple columns every couple of milliseconds. You can change various options in real-time and the Data Grid performance with no lag, screen flicker, or visual delay
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ High Performance with Live Data Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/performance"></sample-button>
 

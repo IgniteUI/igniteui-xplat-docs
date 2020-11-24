@@ -9,10 +9,10 @@ _language: ja
 
 このトピックは、$PlatformShort$ データ チャート コンポーネントのファイナンシャル シリーズのさまざまなタイプを説明します。ファイナンシャル シリーズはシンプルで最も一般的なチャート シリーズ フォームのグループで、株価などの財務データを取得し、OHLC バーやろうそく足のコレクションとして水平線と一緒に描画します (`FinancialPriceSeries` など)。
 
-## サンプル
+## $PlatformShort$ ファイナンシャル シリーズの例
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-financial-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-type-financial-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ファイナンシャル シリーズの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-financial-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

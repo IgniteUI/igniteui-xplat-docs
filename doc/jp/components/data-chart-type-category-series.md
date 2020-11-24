@@ -11,10 +11,10 @@ _language: ja
 このトピックは、$PlatformShort$ データ チャート コンポーネントのファイナカテゴリ シリーズのさまざまなタイプについて説明します。カテゴリ シリーズは、データを取り入れてそれを水平線 (`ColumnSeries` など) または垂直線 (`BarSeries` など) に沿って延ばしたデータ ポイントのコレクションとして描画するチャート シリーズの中でも、もっとも簡単で一般的な形のグループです。
 
 <!-- Angular, React, WebComponents -->
-## サンプル
+## $PlatformShort$ カテゴリ シリーズの例
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ カテゴリ シリーズの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">Stackblitz で表示

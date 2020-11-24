@@ -10,10 +10,10 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、列集計をサポートしています。エンドユーザーは、グリッドに表示されるデータ量が多い場合などでデータ集計の表示を必要とすることがあります。エンドユーザーは、特定の列のデータから追加情報を取得することもできます。これを実現するには集計が役立ちます。集計を有効にするには、`SummaryScope` プロパティを設定します。
 
-## サンプル
+## $PlatformShort$ 列集計の例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-summaries-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-summaries' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-summaries-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-summaries' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 列集計の例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-summaries"></sample-button>
 

@@ -9,10 +9,10 @@ _language: ja
 
 $ProductName$ スプライン チャートはカテゴリ チャートのグループに属し、スプラインの滑らかな曲線で接続されたポイントのコレクションを使用してレンダリングされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`SplineSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$PlatformShort$ スプライン チャートは、データ ポイントを接続するラインにスプライン補間とデータの表示を改善するスムージングがあること以外は $PlatformShort$ 折れ線チャートと同じです。
 
-## サンプル
+## $PlatformShort$ スプライン チャートの例
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ スプライン チャートの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

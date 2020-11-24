@@ -9,10 +9,10 @@ mentionedTypes: ['Grid', 'DataGridToolbar', 'Button', 'ColumnChooser', 'IsHidden
 
 The $ProductName$ Data Grid supports the ability show and hide columns with the UI through the `DataGridToolbar` component or by the `ColumnChooser` component that provides flexibility to place it anywhere on the page. The `IsHidden` property on the columns can also be used to quickly hide or show a single column programmatically for manual column generation, and the value of `IsHidden` will reflect in the `ColumnChooser` component. Each approach can be used interchangeably to change the visible state of the columns.
 
-## Demo
+## $PlatformShort$ Grid Column Chooser Overview Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Chooser Overview Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-chooser-toolbar"></sample-button>
 

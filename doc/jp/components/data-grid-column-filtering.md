@@ -10,10 +10,10 @@ _language: ja
 
 $PlatformShort$ Data Table / Data Grid には、フィルター処理される列のデータ型に基づいてソート条件を実行する機能を提供する列フィルター API が含まれています。
 
-## サンプル
+## $PlatformShort$ グリッド フィルターの例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-filtering' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-filtering' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド フィルターの例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-filtering"></sample-button>
 

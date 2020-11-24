@@ -9,10 +9,10 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、表形式の $PlatformShort$ コンポーネントでコーディングや設定をほとんど行わずにデータをすばやくバインドして表示できます。$PlatformShort$ の機能には、フィルタリング、ソート、テンプレート、行選択、行のグループ化、行の固定、および列移動があります。$PlatformShort$ データ テーブルは、ライブ ストリーミング データ用に最適化されており、無制限のデータセットサイズを行数または列数で処理することができます。
 
-## サンプル
+## $PlatformShort$ Data Grid の例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Data Grid の例"></iframe>
 </div>
 <sample-button src="grids/data-grid/overview"></sample-button>
 

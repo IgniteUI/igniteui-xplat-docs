@@ -8,10 +8,10 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid supports data binding to remote datasources with one line of code.  With the $PlatformShort$ data table’s Virtual Data Source, you simply configure the $PlatformShort$ grid with your remote URI and which OData Entity you’d like returned, and the $PlatformShort$ grid does the rest of the work for you.
 
-## Demo
+## $PlatformShort$ Grid Binding Virtual Data Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-remote-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-remote-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-binding-remote-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-remote-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Binding Virtual Data Example"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="data-grid-binding-remote-data-iframe" data-demos-base-url="{environment:demosBaseUrl}">View on StackBlitz
