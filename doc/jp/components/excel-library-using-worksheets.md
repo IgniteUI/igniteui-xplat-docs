@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
 
-## サンプル
+## $PlatformShort$ ワークシートの使用例
 
 <div class="sample-container loading" style="height: 200px">
     <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -8,7 +8,7 @@ mentionedTypes: ['FinancialChart']
 
 The $PlatformShort$ financial chart component is very fast control that can handle rendering of data in real-time. The following demo shows how the financial chart component is capable of handling high frequency of data updates.
 
-## Demo
+## $PlatformShort$ Binding Real-Time Data Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-high-frequency-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

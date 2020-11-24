@@ -11,7 +11,7 @@ $ProductName$ マップ コントロールには、Shape ファイルをタイ�
 
 このトピックを読み進めるための前提条件として、[シェープ ファイルを地理的データにバインディング](geo-map-binding-shp-file.md)をお読みください。
 
-## サンプル
+## $PlatformShort$ ヒート画像の表示例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-display-heat-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

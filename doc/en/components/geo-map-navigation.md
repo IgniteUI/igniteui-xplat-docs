@@ -8,7 +8,7 @@ mentionedTypes: ['XamGeographicMap']
 
 Navigation in the `XamGeographicMap` control is enabled by default and it allows zooming and panning of the map content. However, this behavior can be changed using the `Zoomable` property. It is important to know that the map allows only synchronized zooming - scaling the map content with preserved aspect ratio. As result, it is not possible to scale the map content vertically without scaling it also horizontally and vice versa.
 
-## Demo
+## $PlatformShort$ Navigating Map Content Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-navigation-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-navigation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

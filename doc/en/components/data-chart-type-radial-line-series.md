@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart','RadialLineSeries']
 
 The $ProductName$ radial line chart belongs to a group of radial charts and is rendered using a collection of straight lines connecting data points. The `RadialLineSeries` uses the same concepts of data plotting as the `LineSeries`, but wraps data points around a circle rather than stretching them along a horizontal line.
 
-## Demo
+## $PlatformShort$ Radial Line Chart Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-radial-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

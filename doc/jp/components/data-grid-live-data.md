@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、1 秒間に何千もの更新を処理しながら、ユーザーはグリッドをインタラクティブに操作できます。以下のサンプルを使用して、データ更新の間隔とデータ更新の量を調整することにより、さまざまなライブ データシ ナリオでのグリッド処理のパフォーマンスを確認できます。
 
-## サンプル
+## $PlatformShort$ ライブ データのバインド例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-live-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

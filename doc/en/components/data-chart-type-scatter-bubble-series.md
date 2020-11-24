@@ -11,7 +11,7 @@ This topic explains, with code examples, how to use scatter `BubbleSeries` in th
 is similar to [Scatter Marker Series](data-chart-type-scatter-point-series.md) which use the Cartesian (x, y) coordinate system to plot data. This series displays the data as a collection of scaled bubbles, each having a pair of numeric X/Y values that determines its location and 3rd value that determines its size.
 
 
-## Demo
+## $PlatformShort$ Scatter Bubble Chart Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-scatter-bubble-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-bubble-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

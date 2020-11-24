@@ -7,7 +7,7 @@ _keywords: dock manager, layout, updating panes, $ProductName$
 
 The Infragistics $PlatformShort$ Dock Manager component provides you with the layout for creating interactive content in your application using panes that can update based on actions of end-users.
 
-## Demo
+## $PlatformShort$ Updating Panes in Dock Manager Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="dock-manager-updating-panes-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

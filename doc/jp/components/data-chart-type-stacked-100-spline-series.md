@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ 積層型 100 スプライン チャートは、カテゴリ チャートのグループに属し、スプライン セグメントの滑らかな曲線  (`StackedFragmentSeries`) が互いに積み重ねられた点のコレクションを使用してレンダリングされます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$PlatformShort$ 積層型 100 スプライン チャートは、y 軸の値の処理以外は、$PlatformShort$ 積層型スプライン チャートと同じです。データの直接的表現をする代わりに、`Stacked100SplineSeries` はデータポイント内のすべての値の合計のパーセントに関するデータを表します。
 
-## サンプル
+## $PlatformShort$ 積層型 100 スプライン チャート例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -9,7 +9,7 @@ _language: ja
 
 $ProductName$ データ チャート コンポーネントでは、軸は軸線、目盛、タイトル、や軸のラベルのこの外観を設定する基本プロパティを提供します。
 
-## サンプル
+## $PlatformShort$ 軸設定例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-axis-settings-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-axis-settings' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

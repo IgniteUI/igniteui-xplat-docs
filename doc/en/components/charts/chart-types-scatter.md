@@ -8,7 +8,7 @@ mentionedTypes: ["XamDataChart"]
 
 <!-- TODO add introduction to and purpose of using about using scatter series in data-chart -->
 
-## Demo
+## $PlatformShort$ Scatter Chart Example
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe> -->
 

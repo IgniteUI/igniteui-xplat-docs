@@ -9,7 +9,7 @@ mentionedTypes: ['XamDataChart','RadialPieSeries']
 This topic explains various types of radial series in the $PlatformShort$ data chart component. Radial series a group of series that render data as collection of data points wrapped around a circle, rather than stretching along a horizontal line as [Category Series](data-chart-type-category-series.md) do. Radial series are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of [Category Series](data-chart-type-category-series.md).
 
 <!-- Angular, React, WebComponents -->
-## Demo
+## $PlatformShort$ Radial Series Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-radial-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

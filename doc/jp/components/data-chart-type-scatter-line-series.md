@@ -11,7 +11,7 @@ $ProductName$ 散布折れ線チャートは、デカルト (x, y) 座標系を�
 
 `ScatterLineSeries` は、不均等な間隔またはデータのクラスターに注意を促します。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。`ScatterLineSeries` は、データを時系列に整理して X 軸と Y 軸にプロットします (バインド前にデータが時系列に並んでいなくても)。
 
-## サンプル
+## $PlatformShort$ 散布折れ線チャート例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-scatter-line-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

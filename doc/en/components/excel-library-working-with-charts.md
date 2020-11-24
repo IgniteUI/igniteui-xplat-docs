@@ -8,7 +8,7 @@ mentionedTypes: ['Workbook', 'Worksheet']
 
 The Infragistics $PlatformShort$ Excel Engine's `WorksheetChart` functionality allows you to add visual charting representations of data trends across regions of cells in a worksheet. For example, if you want to see your Excel data in a region of cells visualized as a column, line, or over 70 other chart types, this feature can help you to achieve that.
 
-## Demo
+## $PlatformShort$ Working with Charts Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

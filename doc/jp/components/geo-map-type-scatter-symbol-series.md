@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ マップ コンポーネントの `GeographicSymbolSeries` を使用して、地理的コンテキストでポイントまたはマーカーを使用して地理空間データを表示します。地理的シリーズのこのタイプは、都市、空港、地震または興味のあるポイントなどの地理的位置のコレクションを描画するためにしばしば使用されます。
 
-## サンプル
+## $PlatformShort$ 散布図記号シリーズの使用例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-type-scatter-symbol-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

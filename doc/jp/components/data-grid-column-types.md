@@ -12,7 +12,7 @@ $ProductName$ Data Table / Data Grid は、データを $PlatformShort$ デー�
 
 各列は、`Field` プロパティを、グリッドにバインドされた基になる データソースの項目の対応するプロパティの名前に設定することによって $PlatformShort$ データ グリッドにバインドします。
 
-## サンプル
+## $PlatformShort$ 列タイプ例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-column-types-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

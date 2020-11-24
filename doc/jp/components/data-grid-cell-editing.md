@@ -8,7 +8,7 @@ mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 
 $ProductName$ Data Table / Data Grid は、一括更新のセル編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
 
-## サンプル
+## $PlatformShort$ Grid 編集例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-editing' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -8,7 +8,7 @@ mentionedTypes: ['XamGeographicMap']
 
 Use the $PlatformShort$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
-## Demo
+## $PlatformShort$ Using Scatter High Density Series Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="geo-map-type-scatter-density-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

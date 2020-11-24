@@ -10,7 +10,7 @@ The $ProductName$ scatter line chart belongs to a group of scatter charts that u
 
 The `ScatterLineSeries` draws attention to uneven intervals or clusters of data. They can highlight the deviation of collected data from predicted results and they are often used to plot scientific and statistical data. The `ScatterLineSeries` organizes and plots data chronologically (even if the data is not in chronological order before binding) on X-Axis and Y-Axis.
 
-## Demo
+## $PlatformShort$ Scatter Line Chart Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-scatter-line-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

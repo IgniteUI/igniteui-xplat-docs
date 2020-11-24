@@ -9,7 +9,7 @@ _language: ja
 
 このトピックでは、$PlatformShort$ データ チャート コンポーネントコントロールのさまざまな種類のエリア シリーズについて説明します。エリア シリーズは、2 つの数値データ列を使用し、それらを水平方向に引き伸ばされたデータポイントのコレクションとしてレンダリングする一連のチャート シリーズです (`RangeAreaSeries` など)。
 
-## サンプル
+## $PlatformShort$ エリア シリーズ例
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-range-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

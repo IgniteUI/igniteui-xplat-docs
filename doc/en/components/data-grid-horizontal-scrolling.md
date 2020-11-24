@@ -9,7 +9,7 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the $PlatformShort$ data grid.
 
-## Demo
+## $PlatformShort$ Horizontal Scrolling Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-column-scrolling-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-scrolling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

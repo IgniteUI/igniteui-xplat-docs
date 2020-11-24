@@ -9,7 +9,7 @@ _language: ja
 
 $ProductName$ カテゴリ チャート コンポネントは、以下のサンプルのように数百万に及ぶデータ ポイントを含む大量のデータを処理し、数ミリ秒ごとに更新できます。
 
-## サンプル
+## $PlatformShort$ リアルタイムのデータ例
 <div class="sample-container loading" style="height: 500px;">
     <iframe id="category-chart-high-frequency-iframe" align="center" src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' height="100%" width="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
 </div>

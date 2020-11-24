@@ -8,7 +8,7 @@ _language: ja
 
 Dock Manager コンポーネントは、エンドユーザーの操作に基づいて更新できるペインを使用して、アプリケーションでインタラクティブなコンテンツを作成するためのレイアウトを提供します。
 
-## サンプル
+## $PlatformShort$ ドック マネージャー ペインの更新例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="dock-manager-updating-panes-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

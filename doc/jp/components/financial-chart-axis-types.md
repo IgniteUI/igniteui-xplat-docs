@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ Financial Chart コンポーネントでは、軸は軸線、目盛、タイトル、や軸のラベルの外観を設定する基本プロパティを提供します。
 
-## サンプル
+## $PlatformShort$ チャート軸タイプ例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-axis-types-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

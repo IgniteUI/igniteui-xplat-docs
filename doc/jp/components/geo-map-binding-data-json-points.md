@@ -9,7 +9,7 @@ _language: ja
 
 $ProductName$ Map マップは、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、JavaScript Object Notation (JSON) ファイルから地理的位置をロードできます。
 
-## サンプル
+## $PlatformShort$ JSON ファイルを地理的な場所にバインド例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-binding-data-json-points-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

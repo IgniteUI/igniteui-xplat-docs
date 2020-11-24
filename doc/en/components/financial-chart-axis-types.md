@@ -8,7 +8,7 @@ mentionedTypes: ['FinancialChart']
 
 In the $PlatformShort$ financial chart component, an axis provides base properties for specifying appearance of axis main lines, tickmarks, titles, and axis labels.
 
-## Demo
+## $PlatformShort$ Chart Axis Types Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-axis-types-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

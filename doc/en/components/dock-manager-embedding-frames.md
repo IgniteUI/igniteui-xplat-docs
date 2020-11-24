@@ -7,7 +7,7 @@ _keywords: dock manager, embed frames, $ProductName$, Infragistics
 
 The Infragistics $PlatformShort$ Dock Manager component provides you with the layout for embedding interactive content in your application using panes.
 
-## Demo
+## $PlatformShort$ Embedding Frames in Dock Manager Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="dock-manager-embedding-frames-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

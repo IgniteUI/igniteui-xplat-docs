@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ データ チャート コンポーネントは、チャートにプロットされたポイントに関するコンテキスト情報を注釈として表示するレイヤーをサポートします。シリーズのみでは把握できないような、より多くの情報をエンドユーザーに表示する場合に役立つコンポーネントです。
 
-## サンプル
+## $PlatformShort$ シリーズの注釈例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-series-annotations-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

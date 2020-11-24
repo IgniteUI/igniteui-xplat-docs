@@ -9,7 +9,7 @@ mentionedTypes: ['XamGeographicMap']
 
 Use the $PlatformShort$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## Demo
+## $PlatformShort$ Using Shape Polygon Series Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-type-shape-polygon-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

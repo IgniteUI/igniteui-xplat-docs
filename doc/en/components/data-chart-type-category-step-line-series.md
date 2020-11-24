@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart']
 
 The $ProductName$ step line chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the y-axis and categories are displayed on the x-axis. `StepLineSeries` emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ step line chart is identical to the $PlatformShort$ step area chart in all aspects except that the area below the step lines is not filled in.
 
-## Demo
+## $PlatformShort$ Step Line Chart Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -9,7 +9,7 @@ _language: ja
 
 $ProductName$ Doughnut Chart コンポーネントは円チャートと同様、変数の発生を比例的に表示します。ドーナツ型チャート は、複数の変数をコンセントリック リングで表示でき、階層データの可視化を組み込みでサポートします。
 
-## サンプル
+## $PlatformShort$ ドーナツ チャートの概要例
 
 <div class="sample-container loading" style="height: 450px">
     <iframe id="doughnut-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

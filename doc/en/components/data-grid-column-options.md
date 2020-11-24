@@ -11,7 +11,7 @@ The $ProductName$ Data Grid supports the ability to group, hide, sort, move, pin
 
 To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` property to true.
 
-## Demo
+## $PlatformShort$ Grid Column Options Overview Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

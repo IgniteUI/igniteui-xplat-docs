@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart','ScatterAreaSeries','ScatterContourSeries']
 
 This topic explains, with code examples, how to use  `ScatterAreaSeries` in the $PlatformShort$ data chart component. This series draws a colored surface based on a triangulation of X and Y data with a numeric value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. The `ScatterAreaSeries` works a lot like the `ScatterContourSeries` except that it represents data as interpolated and colored surface instead of contour lines connecting data points with the same values.
 
-## Demo
+## $PlatformShort$ Scatter Area Chart Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-area-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

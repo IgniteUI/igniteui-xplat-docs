@@ -245,7 +245,7 @@ This example demonstrates a few of the data grid’s key features:
 
 <div class="divider"></div>
 
-### Demo
+### The Fastest $PlatformShort$ Data Grid Example
 
 <span class="h3">Demo</span>
 

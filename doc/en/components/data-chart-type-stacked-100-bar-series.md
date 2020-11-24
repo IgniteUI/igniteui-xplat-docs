@@ -9,7 +9,7 @@ namespace: Infragistics.Controls.Charts
 
 The $ProductName$ stacked 100 bar chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked next to each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the x-axis, and all negative values are grouped on the negative side of the x-axis. The $PlatformShort$ stacked 100 bar chart is identical to the $PlatformShort$ stacked bar chart in all aspects except in their treatment of the values on x-axis. Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point. In addition, the `Stacked100BarSeries` uses the same concepts of data plotting as `Stacked100ColumnSeries` but data points are stacked along horizontal line (x-axis) rather than along vertical line (y-axis). In other words, the stacked 100 bar chart is rendered like the stacked 100 column chart but with 90 degrees clockwise rotation.
 
-## Demo
+## $PlatformShort$ Stacked 100 Bar Chart Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-bar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 
 Financial Overlays are often used by traders to measure changes and to show trends in stock prices. These overlays are usually displayed in front of the `FinancialPriceSeries` because they share the same Y-Axis scale. In contrast, financial indicators do not share the same Y-Axis scale with the `FinancialPriceSeries` and as result financial indicators are usually plotted below or above the `FinancialPriceSeries` or overlays. However, the chart control supports plotting both overlays as well as indicators in the same plot area, if desired, using multiple axes or by sharing axes.
 
-## Demo
+## $PlatformShort$ Financial Overlays Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-financial-overlays-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

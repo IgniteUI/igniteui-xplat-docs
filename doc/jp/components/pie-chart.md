@@ -11,7 +11,7 @@ $ProductName$ 円チャート コンポネントは、セクションに分割�
 
 コンポーネントは分類したデータを表すために使用されます。カテゴリが少ない場合や各カテゴリが全体としてデータの相対的に大きなパーセンテージを構成する場合、これは最も効率的です。
 
-## サンプル
+## $PlatformShort$ 円チャートの概要例
 
 <div class="sample-container loading" style="height: 350px">
     <iframe id="pie-chart-data-sample-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

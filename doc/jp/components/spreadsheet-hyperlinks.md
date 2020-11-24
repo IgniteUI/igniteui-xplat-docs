@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ Spreadsheet コンポーネントは、Excel ワークブックに既存のハイパーリンクを表示、Webサイト、ファイルディレクトリ、およびワークブック内の他のワークシートにリンクできる新しいハイパーリンクを挿入できます。
 
-## サンプル
+## $PlatformShort$ Spreadsheet ハイパーリンク例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

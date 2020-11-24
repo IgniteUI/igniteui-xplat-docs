@@ -246,7 +246,7 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 
 <div class="divider"></div>
 
-### サンプル
+### 高速 $PlatformShort$ データ グリッド例
 
 <span class="h3">サンプル</span>
 

@@ -9,7 +9,7 @@ _language: ja
 
 The Data Chart is ...TODO ...
 
-## サンプル
+## $PlatformShort$ Data Chart (TODO add feature name)例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-axis-scales-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-axis-scales' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

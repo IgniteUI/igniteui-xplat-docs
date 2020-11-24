@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart']
 
 The $ProductName$ column chart belongs to a group of category charts and it is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points. `ColumnSeries` emphasizes the amount of change over a period of time or compares multiple items. Values are represented on the y-axis and categories are displayed on the x-axis. `ColumnSeries` uses the same concepts of data plotting as `BarSeries` but data points are stretched along a horizontal line (x-axis) rather than vertical line (y-axis). In other words, the column chart is rendered like the bar chart but with 90 degrees counter-clockwise rotation.
 
-## Demo
+## $PlatformShort$ Column Chart Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-column-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ 積層型 100 エリア チャートはカテゴリ チャートのグループに属し、線分 (`StackedFragmentSeries`) で接続された点のコレクションを使用して描画され、線の下の領域が塗りつぶされて積み上げられます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$PlatformShort$ 積層型 100 エリア チャートは、y 軸の値の処理以外は、$PlatformShort$ 積層型エリア チャートと同じです。データを直接的に表す代わりに、`Stacked100AreaSeries` は、データ ポイント内のすべての値の合計の割合でデータを表示します。
 
-## サンプル
+## $PlatformShort$ 積層型 100 エリア チャート例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

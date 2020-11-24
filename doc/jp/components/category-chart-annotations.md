@@ -9,7 +9,7 @@ _language: ja
 
 このトピックでは、$PlatformShort$ カテゴリ チャート コンポーネントの注釈やインタラクションについて説明します。
 
-## サンプル
+## $PlatformShort$ 注釈例
 <div class="sample-container loading" style="height: 500px">
     <iframe id="category-chart-annotations-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
 </div>

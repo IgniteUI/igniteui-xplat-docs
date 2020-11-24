@@ -11,7 +11,7 @@ The $ProductName$ Data Grid supports the ability to pin columns, allowing the en
 
 A column or multiple columns can be pinned to the left-hand or right-hand side of the Data Grid. In addition, you can change the pin state of the columns by utilizing the `PinColumn` function.
 
-## Demo
+## $PlatformShort$ Grid Column Pinning Overview Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

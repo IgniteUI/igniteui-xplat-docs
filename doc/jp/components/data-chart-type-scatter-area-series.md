@@ -9,7 +9,7 @@ _language: ja
 
 このトピックは、コード例を示して $PlatformShort$ データ チャート コンポーネントで `ScatterAreaSeries` を使用する方法を説明します。このシリーズは、各ポイントに数値が割り当てられた X および Y データの三角測量に基づいて色付きの表面を描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。`ScatterAreaSeries` は `ScatterContourSeries` と同様ですが、同じ値を持つデータポイントを接続する等線の置換に補完で色つきサーフェス エリアとしてデータを表します。
 
-## サンプル
+## $PlatformShort$ 散布図 - エリア シリーズ例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-area-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

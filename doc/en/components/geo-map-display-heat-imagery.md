@@ -10,7 +10,7 @@ The $ProductName$ map control has the ability to show heat-map imagery through t
 
 It is highly recommended that you review the [Binding Shape Files with Geo-Spatial Data](geo-map-binding-shp-file.md) topic as a pre-requisite to this topic.
 
-## Demo
+## $PlatformShort$ Displaying Heat Imagery Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-display-heat-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

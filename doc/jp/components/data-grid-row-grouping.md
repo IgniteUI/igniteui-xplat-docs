@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グループにまとめることができます。これ機能は Microsoft Outlook の Group By 機能に似ています。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。
 
-## サンプル
+## $PlatformShort$ 行のグループ化例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-row-grouping-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-grouping' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

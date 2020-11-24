@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ 積層型棒チャートは、カテゴリ チャートのグループに属し、互いに積み重ねられた長方形のコレクション (`StackedFragmentSeries`) を使用して描画されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも x 軸の正の側にグループ化され、負の値は x 軸の負の側にグループ化されます。`StackedBarSeries` は `StackedColumnSeries` と同じデータ プロットの概念を使用しますが、データポイントは垂直線 (y軸) ではなく水平線 (x軸) に沿って積み重ねられます。つまり、積層棒チャートは積層縦棒チャートのように描画されますが、時計回りに 90 度回転します。
 
-## サンプル
+## $PlatformShort$ 積層型棒チャート例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-bar-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

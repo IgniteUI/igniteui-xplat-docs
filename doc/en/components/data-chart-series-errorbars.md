@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart']
 
 The Data Chart is ... TODO ...
 
-## Demo
+## $PlatformShort$ Data Chart (TODO add feature name) Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-series-errorbars-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-errorbars' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

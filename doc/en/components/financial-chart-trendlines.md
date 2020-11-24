@@ -8,7 +8,7 @@ mentionedTypes: ['FinancialChart', 'FinancialOverlayType']
 
 The $PlatformShort$ financial chart component provides many visuals that can be customized, such as the navigation behavior, trendline layers, overlays, legend, chart titles and subtitles.
 
-## Demo
+## $PlatformShort$ Chart Trendlines Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-trendlines-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

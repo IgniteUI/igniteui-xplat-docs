@@ -11,7 +11,7 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 `ScatterSplineSeries` は、不均等な間隔またはデータのクラスターに注意を促します。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。`ScatterSplineSeries` はデータを X 軸および Y 軸で時系列に管理およびプロットします (バインドする前はデータが時系列でない場合も)。
 
-## サンプル
+## $PlatformShort$ 散布スプライン チャート例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-type-scatter-spline-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

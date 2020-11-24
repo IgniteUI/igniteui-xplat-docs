@@ -8,7 +8,7 @@ mentionedTypes: ['XamGeographicMap', 'BingMapsMapImagery']
 
 The $PlatformShort$ `BingMapsMapImagery` is geographic imagery mapping service provided by Microsoft® company. It provides 3 styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> web site. The $ProductName$ map component can display geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class.
 
-## Demo
+## $PlatformShort$ Displaying Imagery from Bing Maps Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-display-bing-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

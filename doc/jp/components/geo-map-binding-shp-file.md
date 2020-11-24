@@ -10,7 +10,7 @@ _language: ja
 $ProductName$ Map コンポーネントの `ShapeDataSource` クラスは、形状ファイルから地理空間データ (ポイント/位置、ポリライン、ポリゴン) を読み込み、それを `ShapefileRecord` オブジェクトのコレクションに変換します。
 
 
-## サンプル
+## $PlatformShort$ シェープ ファイルを地理的データにバインディング例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-binding-shp-polylines-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

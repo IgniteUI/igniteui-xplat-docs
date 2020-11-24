@@ -10,7 +10,7 @@ _language: ja
 
 次のサンプルは、データの配列への $ProductName$ Data Table / Data Grid データ バインディングを示します。
 
-## サンプル
+## $PlatformShort$ ローカル データのバインディング例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-binding-local-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-local-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

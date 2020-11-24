@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ データ チャート コンポーネントは、シリーズにバインドされたデータの傾向を識別するのに役立つトレンドラインをサポートしています。
 
-## サンプル
+## $PlatformShort$ トレンドライン例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-series-trendlines-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-trendlines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

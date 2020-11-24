@@ -9,7 +9,7 @@ _language: ja
 
 ファイナンシャル オーバーレイは、株価の動きの計測やトレンドを確認するためにトレーダーによって使用されます。これらのオーバーレイは、同じY軸スケールを共有するため、通常 `FinancialPriceSeries` の前に表示されます。対照的に、財務指標は `FinancialPriceSeries` と同じ Y 軸スケールを共有しないため、通常、財務指標は `FinancialPriceSeries` またはオーバーレイの上または下にプロットされます。ただし、チャート コントロールは同じプロット領域でオーバーレイとインジケーターをサポートします。複数軸の使用や軸を共有することもできます。
 
-## サンプル
+## $PlatformShort$ ファイナンシャル オーバーレイ例
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-financial-overlays-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

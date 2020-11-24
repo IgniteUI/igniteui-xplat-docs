@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid では、キーまたは基本データ ソースの項目を使用した行のピン固定が可能です。行を固定するとその行が $PlatformShortLower$ データ グリッドの最上部に複製され、薄い灰色の背景で固定されたままになり、実際の行は低い不透明度でレンダリングされます。
 
-## サンプル
+## $PlatformShort$ 行のピン固定例
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-row-pinning-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-pinning' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

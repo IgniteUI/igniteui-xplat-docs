@@ -9,7 +9,7 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid supports [template columns](data-grid-column-types.md#template-column) to insert images.
 
-## Demo
+## $PlatformShort$ Binding Comparison Data Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-type-comparison-table-iframe" src='{environment:demosBaseUrl}/grids/data-grid-type-comparison-table' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

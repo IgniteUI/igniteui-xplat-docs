@@ -10,7 +10,7 @@ The $ProductName$ point chart belongs to the group of category charts. It is des
 
 The $PlatformShort$ data chart supports single or multiple point series objects to be rendered, meaning one collection or more than one collection of data.
 
-## Demo
+## $PlatformShort$ Point Chart Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-point-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

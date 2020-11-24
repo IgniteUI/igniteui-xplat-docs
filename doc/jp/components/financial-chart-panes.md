@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ Financial Chart コンポネントには財務データを表示する複数のペインがあります。
 
-## サンプル
+## $PlatformShort$ チャート ペイン例
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-panes-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
 </div>

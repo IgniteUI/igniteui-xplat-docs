@@ -8,7 +8,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 
 <!-- TODO add introduction with info about using category-chart with the chartType property set to Column -->
 
-## Demo
+## $PlatformShort$ Column Charts Example
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-column' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe> -->
 

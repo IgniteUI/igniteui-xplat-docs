@@ -9,7 +9,7 @@ namespace: Infragistics.Controls.Charts
 
 This topic explains the various types of stacked series in the $PlatformShort$ data chart component. Stacked series are a group of the simplest and most common form of chart series that take data and render it as collection of data points stretched along a horizontal line (e.g. `ColumnSeries`) or vertical line (e.g. `BarSeries`).
 
-## Demo
+## $PlatformShort$ Stacked Series Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

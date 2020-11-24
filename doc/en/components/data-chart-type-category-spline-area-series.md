@@ -8,7 +8,7 @@ mentionedTypes: ['XamDataChart']
 
 The $ProductName$ spline area chart belongs to a group of category charts and it is rendered using a collection of points connected by smooth curves of spline with the area below the spline filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `SplineAreaSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $PlatformShort$ spline area chart is identical to the $PlatformShort$ area chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
 
-## Demo
+## $PlatformShort$ Spline Area Chart Example
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

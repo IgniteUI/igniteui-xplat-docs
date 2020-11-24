@@ -8,7 +8,7 @@ mentionedTypes: ['Spreadsheet', 'Worksheet', 'WorksheetShapeCollection', 'Worksh
 
 The $PlatformShort$ Spreadsheet component allows displaying charts in your `Spreadsheet`.
 
-## Demo
+## $PlatformShort$ Spreadsheet Chart Adapter Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="spreadsheet-adapter-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

@@ -10,7 +10,7 @@ _language: ja
 
 地理的コンテキストで形状ポリゴンを使用して地理空間データを表示するには、$PlatformShort$ マップ コンポーネントの `GeographicShapeSeries` を使用します。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
 
-## サンプル
+## $PlatformShort$ シェイプ ポリゴン シリーズの使用例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-type-shape-polygon-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

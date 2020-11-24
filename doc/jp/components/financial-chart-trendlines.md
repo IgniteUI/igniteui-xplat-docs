@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ Financial Chart コンポーネントで、ナビゲーション動作、トレンドライン レイヤー、オーバーレイ、凡例、チャート タイトル、チャート サブタイトルなどのカスタマイズ可能なビジュアルがあります。
 
-## サンプル
+## $PlatformShort$ 近似曲線例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="financial-chart-trendlines-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

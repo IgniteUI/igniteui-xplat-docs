@@ -9,7 +9,7 @@ mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-## Demo
+## $PlatformShort$ Binding Shape Files with Geo-spatial Data Example
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-binding-shp-polylines-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

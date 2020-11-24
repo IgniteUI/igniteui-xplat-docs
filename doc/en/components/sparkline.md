@@ -11,7 +11,7 @@ The $ProductName$ sparkline component is a lightweight charting control. It is i
 
 The sparkline control has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips.
 
-## Demo
+## $PlatformShort$ Sparkline Overview Example
 
 <div class="sample-container loading" style="height: 450px">
     <iframe id="sparkline-display-types-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-display-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

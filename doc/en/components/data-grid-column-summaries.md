@@ -9,7 +9,7 @@ mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']
 
 The $ProductName$ Data Table / Data Grid supports column summaries. In some cases, your end users may be overwhelmed by the amount of data displayed in the grid, and often may be looking for a summary of the data. Your end users may also want to derive additional information from the data of a specific column. Summaries help your end users achieve this, and you can enable them by setting the `SummaryScope` property.
 
-## Demo
+## $PlatformShort$ Column Summaries Example
 
 <div class="sample-container loading" style="height: 600px">
     <iframe id="data-grid-column-summaries-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-summaries' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>

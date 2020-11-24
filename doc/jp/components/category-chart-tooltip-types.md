@@ -9,7 +9,7 @@ _language: ja
 
 $ProductName$ カテゴリ チャート コンポネントには、さまざまなツールチップ タイプがあります。
 
-## サンプル
+## $PlatformShort$ ツールチップ タイプ例
 <div class="sample-container loading" style="height: 500px">
     <iframe id="category-chart-tooltip-types-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
 </div>

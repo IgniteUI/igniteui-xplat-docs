@@ -12,7 +12,7 @@ $PlatformShort$ データ チャート コンポネントを使用すると、�
 > [!NOTE]
 > 注: ハイライトは、積層型シリーズで現在サポートされていません。
 
-## サンプル
+## $PlatformShort$ ハイライト例
 
 <div class="sample-container loading" style="height: 500px">
     <iframe id="data-chart-series-highlighting-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
