@@ -9,10 +9,10 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、1 行のコードでリモート データソースへのデータ バインドをサポートします。$PlatformShort$ データ テーブルの仮想データソースを使用すると、リモート URI と返される Odata エンティティで $PlatformShort$ グリッドを設定するだけで、残りの作業は $PlatformShort$ グリッドが行います。
 
-## $PlatformShort$ グリッド仮想データのバインド例
+## $PlatformShort$ グリッド仮想データのバインドの例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-remote-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-remote-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド仮想データのバインド例"></iframe>
+    <iframe id="data-grid-binding-remote-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-remote-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド仮想データのバインドの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="data-grid-binding-remote-data-iframe" data-demos-base-url="{environment:demosBaseUrl}">stackblitz で表示

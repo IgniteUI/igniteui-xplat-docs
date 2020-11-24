@@ -6,14 +6,14 @@ mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $PlatformShort$ グリッド列のアニメーション
+# $PlatformShort$ グリッド列アニメーション
 
 $ProductName$ Data Table / Data Grid は、列の非表示や列の移動などのイベント時に列のアニメーションをサポートします。$PlatformShort$ データ グリッドで Column Animation が設定されている場合、対応するアニメーションはその列のすべてのセルに対して発生します。
 
-## $PlatformShort$ グリッド列のアニメーション例
+## $PlatformShort$ グリッド列アニメーションの例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド列のアニメーション例"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド列アニメーションの例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-animation"></sample-button>
 

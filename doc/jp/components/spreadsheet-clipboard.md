@@ -9,10 +9,10 @@ _language: ja
 
 このトピックでは、クリップボードの操作を実行する方法を説明します。
 
-## $PlatformShort$ クリップボードでの作業例
+## $PlatformShort$ クリップボードでの作業の例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-clipboard-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ クリップボードでの作業例"></iframe>
+    <iframe id="spreadsheet-clipboard-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ クリップボードでの作業の例"></iframe>
 </div>
 <sample-button src="excel/spreadsheet/clipboard"></sample-button>
 

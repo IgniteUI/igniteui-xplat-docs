@@ -12,10 +12,10 @@ $PlatformShort$ データ チャート コンポネントを使用すると、�
 > [!NOTE]
 > 注: ハイライトは、積層型シリーズで現在サポートされていません。
 
-## $PlatformShort$ ハイライト例
+## $PlatformShort$ ハイライトの例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-series-highlighting-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ハイライト例"></iframe>
+    <iframe id="data-chart-series-highlighting-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ハイライトの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-series-highlighting-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

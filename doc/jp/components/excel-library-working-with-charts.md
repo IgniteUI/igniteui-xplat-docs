@@ -9,10 +9,10 @@ _language: ja
 
 Infragistics $PlatformShort$ Excel Engine の `WorksheetChart` 機能は、ワークシートのセル領域全体のデータ トレンドをチャートで表示します。たとえば Excel データを縦棒チャートや折れ線チャートで可視化する場合に便利です。
 
-## $PlatformShort$ チャートの使用例
+## $PlatformShort$ チャートの使用の例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ チャートの使用例"></iframe>
+    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ チャートの使用の例"></iframe>
 </div>
 <sample-button src="excel/excel-library/working-with-charts"></sample-button>
 

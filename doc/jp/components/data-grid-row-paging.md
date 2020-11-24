@@ -16,10 +16,10 @@ _language: ja
 > 行ページング機能は開発中であり、近日公開予定です。
 ```
 
-## $PlatformShort$ 行のページング例
+## $PlatformShort$ 行のページングの例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-paging-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-paging' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 行のページング例"></iframe>
+    <iframe id="data-grid-row-paging-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-paging' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 行のページングの例"></iframe>
 </div>
 <sample-button src="grids/data-grid/row-paging"></sample-button>
 

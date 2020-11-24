@@ -12,10 +12,10 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 
 単一または複数の列をデータ グリッドの左側または右側にピン固定できます。その他、`PinColumn` 関数を介して列のピン固定状態を変更できます。
 
-## $PlatformShort$ Grid 列ピン固定の概要例
+## $PlatformShort$ Grid 列ピン固定の例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 列ピン固定の概要例"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 列ピン固定の例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-pinning-picker"></sample-button>
 

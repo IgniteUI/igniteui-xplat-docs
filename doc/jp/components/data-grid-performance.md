@@ -10,12 +10,12 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ データ シナリオに最適化されています。速いロード時間、タイムラグのないスムーズなスクロール、または画面のちらつきにより、グリッドの列と行の完全仮想化を使用して、$PlatformShort$ データ グリッド アプリケーション内の行と列を無制限にスクロールできます。
 
-## $PlatformShort$ ライブ データの高パフォーマンス例
+## $PlatformShort$ ライブ データの高パフォーマンスの例
 
 このサンプルは、何千もの財務記録を $PlatformShort$ Data Grid に結合し、1 つの列 (Territory) にグループ化した複数の列を数ミリ秒ごとにライブ更新します。ラグ、画面のちらつき、または表示の遅延なしに、さまざまなオプションをリアル タイムで変更し、データ グリッドのパフォーマンスを変更できます。
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ライブ データの高パフォーマンス例"></iframe>
+    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ライブ データの高パフォーマンスの例"></iframe>
 </div>
 <sample-button src="grids/data-grid/performance"></sample-button>
 

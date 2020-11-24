@@ -9,10 +9,10 @@ _language: ja
 
 $PlatformShort$ Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分を強調表示できます。
 
-## $PlatformShort$ Spreadsheet の条件付き書式設定例
+## $PlatformShort$ Spreadsheet の条件付き書式設定の例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet の条件付き書式設定例"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet の条件付き書式設定の例"></iframe>
 </div>
 <sample-button src="excel/spreadsheet/conditional-formatting"></sample-button>
 
