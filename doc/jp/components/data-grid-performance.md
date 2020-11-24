@@ -15,7 +15,7 @@ $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ 
 このサンプルは、何千もの財務記録を $PlatformShort$ Data Grid に結合し、1 つの列 (Territory) にグループ化した複数の列を数ミリ秒ごとにライブ更新します。ラグ、画面のちらつき、または表示の遅延なしに、さまざまなオプションをリアル タイムで変更し、データ グリッドのパフォーマンスを変更できます。
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ライブ データの高パフォーマンス例"></iframe>
 </div>
 <sample-button src="grids/data-grid/performance"></sample-button>
 

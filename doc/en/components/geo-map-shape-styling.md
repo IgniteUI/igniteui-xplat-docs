@@ -11,7 +11,7 @@ This topic explains how to apply custom styling to the `GeographicShapeSeries` i
 ## $PlatformShort$ Shape Styling on Geographic Shape Series Example
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-shape-styling-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="geo-map-shape-styling-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Shape Styling on Geographic Shape Series Example"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="geo-map-shape-styling-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

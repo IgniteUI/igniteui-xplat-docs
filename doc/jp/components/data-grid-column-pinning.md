@@ -15,7 +15,7 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 ## $PlatformShort$ Grid 列ピン固定の概要例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 列ピン固定の概要例"></iframe>
 </div>
 <sample-button src="grids/data-grid/column-pinning-picker"></sample-button>
 

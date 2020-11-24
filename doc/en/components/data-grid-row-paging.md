@@ -18,7 +18,7 @@ Row Paging is not currently implemented within the $ProductName$ Data Table / Da
 ## $PlatformShort$ Row Paging Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-paging-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-paging' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-row-paging-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-paging' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Row Paging Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/row-paging"></sample-button>
 

@@ -10,7 +10,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 
 ## $PlatformShort$ Spline Chart Example
 <!-- TODO use this iframe which will point to a new sample:
-<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-spline' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe> -->
+<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-spline' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spline Chart Example"></iframe> -->
 
 ## $PlatformShort$ Simple Spline Chart
 <!-- TODO show code for CategoryChart with

@@ -12,7 +12,7 @@ The $ProductName$ Data Table / Data Grid supports single or multiple row and cel
 ## $PlatformShort$ Grid Selection Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Selection Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/cell-selection"></sample-button>
 

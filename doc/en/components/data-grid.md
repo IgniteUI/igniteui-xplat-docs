@@ -11,7 +11,7 @@ The $ProductName$ Data Table / Data Grid is a tabular $PlatformShort$ grid compo
 ## $PlatformShort$ Data Grid Overview Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Data Grid Overview Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/overview"></sample-button>
 

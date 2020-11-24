@@ -13,7 +13,7 @@ $ProductName$ Data Table / Data Grid は、グリッドのセルを介したキ�
 ## $PlatformShort$ グリッド セルのアクティブ化例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-activation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-activation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド セルのアクティブ化例"></iframe>
 </div>
 <sample-button src="grids/data-grid/cell-activation"></sample-button>
 

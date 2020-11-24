@@ -10,7 +10,7 @@ The Infragistics $PlatformShort$ Dock Manager component provides you with the la
 ## $PlatformShort$ Updating Panes in Dock Manager Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-updating-panes-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="dock-manager-updating-panes-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Updating Panes in Dock Manager Example"></iframe>
 </div>
 <sample-button src="layouts/dock-manager/updating-panes"></sample-button>
 <!-- <div>

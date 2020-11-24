@@ -12,7 +12,7 @@ $ProductName$ Data Table / Data Grid は、$PlatformShort$ データ グリッ�
 ## $PlatformShort$ 水平方向のスクロール例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-scrolling-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-scrolling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-column-scrolling-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-scrolling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 水平方向のスクロール例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="data-grid-column-scrolling-iframe" data-demos-base-url="{environment:demosBaseUrl}">StackBlitz で表示

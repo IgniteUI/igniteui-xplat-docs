@@ -12,7 +12,7 @@ $PlatformShort$ Spreadsheet コンポネントは、セルの編集、グリッ�
 ## $PlatformShort$ Spreadsheet の構成例
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet の構成例"></iframe>
 </div>
 <sample-button src="excel/spreadsheet/config-options"></sample-button>
 

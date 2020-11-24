@@ -12,7 +12,7 @@ The following sample demonstrates the $ProductName$ Data Table / Data Grid data 
 ## $PlatformShort$ Binding Local Data Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-local-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-local-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-binding-local-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-local-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding Local Data Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/binding-local-data"></sample-button>
 

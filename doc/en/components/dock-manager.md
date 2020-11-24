@@ -21,7 +21,7 @@ Please follow the steps outlined in the blog post titled:
 ## $PlatformShort$ Dock Manager Overview Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-overview-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="dock-manager-overview-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Dock Manager Overview Example"></iframe>
 </div>
 <sample-button src="layouts/dock-manager/overview"></sample-button>
 <div>

@@ -11,7 +11,7 @@ The Infragistics $PlatformShort$ Excel Engine's `Worksheet` is where your data i
 ## $PlatformShort$ Using Worksheets Example
 
 <div class="sample-container loading" style="height: 200px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Using Worksheets Example"></iframe>
 </div>
 <sample-button src="excel/excel-library/operations-on-worksheets"></sample-button>
 

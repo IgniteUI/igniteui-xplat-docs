@@ -12,6 +12,6 @@ The $ProductName$ Data Table / Data Grid supports [template columns](data-grid-c
 ## $PlatformShort$ Binding Comparison Data Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-type-comparison-table-iframe" src='{environment:demosBaseUrl}/grids/data-grid-type-comparison-table' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-type-comparison-table-iframe" src='{environment:demosBaseUrl}/grids/data-grid-type-comparison-table' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding Comparison Data Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/type-comparison-table"></sample-button>

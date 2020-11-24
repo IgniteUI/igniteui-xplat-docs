@@ -11,7 +11,7 @@ Dock Manager コンポーネントは、ペインを使用してアプリケー�
 ## $PlatformShort$ ドック マネージャーでのフレームの埋め込み例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-embedding-frames-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="dock-manager-embedding-frames-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドック マネージャーでのフレームの埋め込み例"></iframe>
 </div>
 <sample-button src="layouts/dock-manager/embedding-frames"></sample-button>
 <!-- <div>

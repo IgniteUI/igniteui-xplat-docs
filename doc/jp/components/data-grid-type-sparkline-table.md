@@ -13,7 +13,7 @@ $ProductName$ Data Table / Data Grid は、$ProductName$ スパークライン �
 ## $PlatformShort$ 列スパークライン例
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 列スパークライン例"></iframe>
 </div>
 <sample-button src="charts/sparkline/grid"></sample-button>
 

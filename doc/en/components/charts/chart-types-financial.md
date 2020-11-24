@@ -10,7 +10,7 @@ mentionedTypes: ["XamFinancialChart"]
 
 ## $PlatformShort$ Financial Chart Example
 <!-- TODO use this iframe which will point to a new sample:
-<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe> -->
+<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
 
 ## $PlatformShort$ Simple Stock Chart
 <!-- TODO show code for FinancialChart with:

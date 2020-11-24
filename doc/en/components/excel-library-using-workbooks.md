@@ -11,7 +11,7 @@ The Infragistics $PlatformShort$ Excel Engine enables you to save data to and lo
 ## $PlatformShort$ Using Workbooks Example
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Using Workbooks Example"></iframe>
 </div>
 <sample-button src="excel/excel-library/operations-on-workbooks"></sample-button>
 

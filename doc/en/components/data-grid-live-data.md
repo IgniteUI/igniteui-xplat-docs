@@ -12,6 +12,6 @@ The $ProductName$ Data Table / Data Grid is able to handle thousands of updates 
 ## $PlatformShort$ Binding Live Data Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-live-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-live-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding Live Data Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/binding-live-data"></sample-button>
