@@ -4,7 +4,7 @@ _description: インフラジスティックスの $PlatformShort$ ツリーマ�
 _keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $PlatformShort$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
 mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 ---
-## $PlatformShort$ ツリーマップの概要
+# $PlatformShort$ ツリーマップの概要
 $ProductName$ ツリーマップは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
 
 
