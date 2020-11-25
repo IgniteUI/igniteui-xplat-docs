@@ -235,10 +235,8 @@ This will automatically install packages for $ProductName$, along with all of th
 
 First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
-<!-- Blazor -->
 * GeographicMapModule
 * DataChartInteractivityModule
-<!-- end: Blazor -->
 
 ```ts
 import { IgrGeographicMapModule } from 'igniteui-react-maps';
