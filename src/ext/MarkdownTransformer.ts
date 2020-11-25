@@ -252,16 +252,23 @@ function transformDocLinks(options: any) {
     function transformLink(node: any) {
         let reference = node.url;
 
-        if (reference.indexOf("PlatformShort") > 0) {
-            let platform = getPlatformName(options.platform); //.toString();
+        // allows usage of $PlatformShort$ in links to topics/sections
+        if (reference.indexOf("$PlatformShort$") > 0) {
+            let platform = getPlatformName(options.platform);
             let platformURL = reference.replace("$PlatformShort$", platform).toLowerCase();
-            // platformURL = platformURL.toLowerCase();
-            // platformURL = platformURL.replace(".md", ".html");
             // console.log("transformDocLinks \n" + reference + "\n" + platformURL);
             reference = platformURL;
         }
 
-        node.url = reference.toLowerCase();
+        var isApiDocLink = reference.indexOf("{environment:dvApiBaseUrl") > 0;
+        var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
+                           reference.indexOf("{environment:demo") > 0;
+
+        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        if (isTopicLink) {
+            // ensuring link to topics/section using lower-case per DocFX requirement
+            node.url = reference.toLowerCase();
+        }
 
         let mappings: MappingLoader = options.mappings;
         if (reference.indexOf("doc://") !== 0) {
