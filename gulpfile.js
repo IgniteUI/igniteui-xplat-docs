@@ -9,6 +9,7 @@ var exec = require('child_process').exec;
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const replace = require('gulp-replace');
 const argv = require('yargs').argv;
 const fs = require('fs');
 const environmentVariablesPreConfig = require('./node_modules/igniteui-docfx-template/post-processors/PostProcessors/EnvironmentVariables/preconfig.json');
@@ -517,6 +518,12 @@ function postProcessorConfigsCore(cb) {
     cb();
 }
 
+function removeHTMLExtensionFromSiteMap() {
+    return gulp.src([DOCFX_SITE + '/sitemap.xml'])
+    .pipe(replace(/\.html/g, ''))
+    .pipe(gulp.dest(DOCFX_SITE));
+}
+
 function buildSite(cb) {
     log("buildSite LANG=" + LANG + " CONF=" + DOCFX_CONF);
 
@@ -557,13 +564,13 @@ function getTemplate() {
 }
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(buildAll, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_Angular  = gulp.series(buildAngular, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_Blazor   = gulp.series(buildBlazor, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_React    = gulp.series(buildReact, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_WC       = gulp.series(buildWC, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
+var buildDocfx_All      = gulp.series(buildAll, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
+var buildDocfx_Angular  = gulp.series(buildAngular, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
+var buildDocfx_Blazor   = gulp.series(buildBlazor, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
+var buildDocfx_React    = gulp.series(buildReact, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
+var buildDocfx_WC       = gulp.series(buildWC, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite, removeHTMLExtensionFromSiteMap);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
