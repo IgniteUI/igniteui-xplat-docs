@@ -101,6 +101,11 @@
     "status": "",
     "items": [
       {
+        "name": "Accessibility Compliance",
+        "href": "data-grid-accessibility.md",
+        "status": "NEW"
+      },
+      {
         "name": "Binding Live Data",
         "href": "data-grid-live-data.md",
         "status": "UPDATED"

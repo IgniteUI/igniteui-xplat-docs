@@ -101,6 +101,11 @@
     "status": "",
     "items": [
       {
+        "name": "",
+        "href": "data-grid-accessibility.md",
+        "status": "NEW"
+      },
+      {
         "name": "ライブ データのバインド",
         "href": "data-grid-live-data.md",
         "status": "UPDATED"

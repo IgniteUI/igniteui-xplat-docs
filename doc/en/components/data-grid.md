@@ -369,6 +369,7 @@ grid1.dataSource = data;
 
 ### Additional Resources
 
+- [Accessibility Compliance](data-grid-accessibility.md)
 - [Cell Activation](data-grid-cell-activation.md)
 - [Cell Editing](data-grid-cell-editing.md)
 - [Cell Selection](data-grid-cell-selection.md)
