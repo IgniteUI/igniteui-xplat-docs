@@ -20,7 +20,7 @@ The $ProductName$ Data Table / Data Grid supports configuring the appearance of 
 
 ## Overview
 
-Highlighting records in the $PlatformShort$ data can be toggled by setting the `IsRowHoverEnabled` boolean property of the $PlatformShort$ grid. 
+Highlighting records in the $PlatformShort$ data can be toggled by setting the `IsRowHoverEnabled` boolean property of the $PlatformShort$ grid. Note, this is enabled by default.
 
 In addition, the color is configurable by setting the `RowHoverBackground` string property to a hex value.
 
