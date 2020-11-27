@@ -2127,10 +2127,10 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-igniteui-docfx-template@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-2.8.1.tgz#f9d4d5f1566fefb85a30acb0abe55fec211e1a5d"
-  integrity sha512-2Lpy/gNXn0VzbtDn5GCwrsiRroz9H7fIfSUltbVvNRTv1sDUFuiZ5fj0OglbFB7rDsbWLr2nsJiOtLXMs/M04Q==
+igniteui-docfx-template@2.8.9:
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-2.8.9.tgz#7afa87fe0a374b1b851c5c0fb30cc9eaf6aa60db"
+  integrity sha512-cNwNK3XKrdg5UQx8lpeciz17mmBBHXjnBOXHw7FkzLYO0srv77Oa72/MKdIjvUl/lh+90mXXaFK2yL3anW210Q==
   dependencies:
     gulp-uglify-es "^2.0.0"
 
