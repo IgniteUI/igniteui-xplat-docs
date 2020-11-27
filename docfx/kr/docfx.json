@@ -43,6 +43,9 @@
             "changefreq": "weekly",
             "priority": 0.7,
             "fileOptions":{
+                "**/data-grid.md": {
+                    "priority": 0.8
+                },
                 "**/grids.md": {
                     "priority": 0.8
                 },
