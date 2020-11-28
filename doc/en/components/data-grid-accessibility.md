@@ -7,7 +7,7 @@ mentionedTypes: ['Grid']
 
 # $PlatformShort$ Grid Accessibility Compliance
 
-The $ProductName$ Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid. <!-- Rect, WebComponents -->This is activated by setting the `useAccessibility` property of the grid to `true`.<!-- end: React, WebComponents --><!-- Blazor -->This is activated by setting the `--use-accessibility` property of the grid to `true` explicitly in CSS, preferably using a div tag around the grid.<!-- end: Blazor -->
+The $ProductName$ Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid. <!-- Rect, WebComponents -->This is activated by setting the `useAccessibility` property of the grid to `true`.<!-- end: React, WebComponents --><!-- Blazor --> This is activated by setting the `--use-accessibility` property of the grid to `true` explicitly in CSS, preferably using a div tag around the grid.<!-- end: Blazor -->
 
 ## $PlatformShort$ Grid Accessible Example
 
@@ -50,7 +50,7 @@ When inspecting the grid's DOM elements the following roles and properties are s
 
 ## Keyboard Navigation
 
-After setting the `useAccessibility` property of the grid to `Cell`, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
+After setting the `useAccessibility` property of the grid to `true`, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
 
 Navigating within the Grid
 
@@ -58,10 +58,8 @@ Navigating within the Grid
 - <b>Ctrl + Alt + Arrow Key Left</b>: Navigate one cell left.
 - <b>Ctrl + Alt + Arrow Key Down</b>: Navigate one cell below.
 - <b>Ctrl + Alt + Arrow Key Up</b>: Navigate one cell above.
-
 - <b>Ctrl + Alt + Home</b>: Navigate to first column header.
 - <b>Ctrl + Alt + End</b>: Navigate to last visible cell.
-
 - <b>Ctrl + Alt + Shift + ↑</b>	Navigate to current column header.
 - <b>Ctrl + Alt + Shift + ↓</b>	Navigate to last cell in current column.
 - <b>Ctrl + Alt + Shift + ←</b>	Navigate to first cell in current row.
