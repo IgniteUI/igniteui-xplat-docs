@@ -122,7 +122,7 @@
         "apiDocRoot": "{environment:dvApiBaseUrl}/products/ignite-ui-web-components/api/docs/typescript/latest/"
     },
     "Blazor": {
-        "isFirstRelease": true,
+        "isFirstRelease": false,
         "showStackblitzButtons": false,
         "addAutoButtons": false,
         "replacements": [
