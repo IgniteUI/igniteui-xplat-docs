@@ -386,4 +386,5 @@ grid1.dataSource = data;
 <!-- end: Angular, React, WebComponents -->
 - [Row Pinning](data-grid-row-pinning.md)
 - [Row Grouping](data-grid-row-grouping.md)
+- [Row Highlighting](data-grid-row-highlighting.md)
 - [Performance](data-grid-performance.md)

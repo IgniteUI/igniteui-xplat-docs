@@ -186,6 +186,11 @@
         "status": ""
       },
       {
+        "name": "Row Highlighting",
+        "href": "data-grid-row-highlighting.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Blazor", "WebComponents"],
         "name": "Row Paging",
         "href": "data-grid-row-paging.md",
