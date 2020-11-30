@@ -40,7 +40,7 @@ When inspecting the grid's DOM elements the following roles and properties are s
 - Row Index - announces the visible index of the row.
 - Row Selected - only present if the row is selectable, it announces the selection state.
 - Group Expanded - only present in row groups, it announces the expand state.
-- Column Header" - element containing a column header.
+- Column Header - element containing a column header.
 - Cell Index - announces the visible index of the column.
 - Colspan - only present if the column spans across multiple columns, it helps guide screen readers.
 - Sort - only present in sortable columns, it announces the sort state.

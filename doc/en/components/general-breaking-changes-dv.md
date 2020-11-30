@@ -7,6 +7,8 @@ _keywords: Breaking Changes,  $ProductName$, Infragistics
 
 This topic provides information about breaking changes in $ProductName$ as well as how to update older code to latest API.
 
+<!-- React, WebComponents -->
+
 ## Changed name of PropertyPath
 
 The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
@@ -69,6 +71,7 @@ The data grid component requires the "inputs" package.
 ```ts
 **npm install --save {PackageInputs}**
 ```
+<!-- end: React, WebComponents -->
 
 ## Changed Import Statements
 

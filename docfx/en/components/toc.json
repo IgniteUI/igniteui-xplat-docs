@@ -12,19 +12,19 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Adding Nuget Feed",
     "href": "nuget-feed.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Blazor"],
     "name": "Licensing",
     "href": "general-licensing.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Blazor"],
@@ -41,19 +41,19 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
-    "status": "NEW",
+    "status": "",
     "items": [
       {
 	    "exclude": ["Blazor"],
         "name": "Using Panes",
         "href": "dock-manager-updating-panes.md",
-        "status": "NEW"
+        "status": ""
       },
       {
 	    "exclude": ["Blazor"],
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
-        "status": "NEW"
+        "status": ""
       }
     ]
   },
@@ -61,19 +61,19 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Dock Manager (Coming Soon)",
     "href": "dock-manager.md",
-    "status": "NEW",
+    "status": "",
     "items": [
       {
 	    "exclude": ["Blazor"],
         "name": "Using Panes",
         "href": "dock-manager-updating-panes.md",
-        "status": "NEW"
+        "status": ""
       },
       {
 	    "exclude": ["Blazor"],
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
-        "status": "NEW"
+        "status": ""
       }
     ]
   },
@@ -86,7 +86,7 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Multi-Column Combo Box",
     "href": "multi-column-combobox.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Angular"],
@@ -108,36 +108,36 @@
       {
         "name": "Binding Live Data",
         "href": "data-grid-live-data.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Binding Local Data",
         "href": "data-grid-local-data.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Comparison Data",
         "href": "data-grid-type-comparison-table.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Heatmap Data",
         "href": "data-grid-type-heatmap-table.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Matrix Data",
         "href": "data-grid-type-matrix-table.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Periodic Data",
         "href": "data-grid-type-periodic-table.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
@@ -153,7 +153,7 @@
       {
         "name": "Cell Editing",
         "href": "data-grid-cell-editing.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Cell Selection",
@@ -178,17 +178,17 @@
       {
         "name": "Column Chooser",
         "href": "data-grid-column-chooser.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Column Options",
         "href": "data-grid-column-options.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Column Pinning",
         "href": "data-grid-column-pinning.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Column Resizing",
@@ -208,12 +208,12 @@
       {
         "name": "Column Summaries",
         "href": "data-grid-column-summaries.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Column Types",
         "href": "data-grid-column-types.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "High Performance",
@@ -1068,19 +1068,19 @@
       {
         "name": "Shape Files Reference",
         "href": "geo-map-shape-files-reference.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Shape Styling",
         "href": "geo-map-shape-styling.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Shape Styling Utility",
         "href": "geo-map-resources-shape-styling-utility.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "World Connections",
