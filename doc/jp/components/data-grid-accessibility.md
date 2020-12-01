@@ -68,7 +68,7 @@ ARIA 属性
 
 スクリーン リーダー コマンド
 
-- <b>Ctrl OR Alt + Num Pad 5</b>: 現在のセルを読み上げます。
+- <b>Ctrl または Alt + Num Pad 5</b>: 現在のセルを読み上げます。
 - <b>Insert + Shift + ↑</b>: 現在の行を読み上げます。
 - <b>Insert + Shift + Home</b>: 行の始まりから読み上げます。
 - <b>Insert + Shift + Page Up</b>: 現在のセルから行の終わりまで読み上げます。
