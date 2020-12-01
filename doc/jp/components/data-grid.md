@@ -388,5 +388,5 @@ grid1.dataSource = data;
 <!-- end: Angular, React, WebComponents -->
 - [行のピン固定](data-grid-row-pinning.md)
 - [行グループ](data-grid-row-grouping.md)
-- [Row Highlighting](data-grid-row-highlighting.md)
+- [行の強調表示](data-grid-row-highlighting.md)
 - [パフォーマンス](data-grid-performance.md)
