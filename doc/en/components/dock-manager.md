@@ -315,7 +315,7 @@ import { addResourceStrings } from 'igniteui-dockmanager';
 
 const dockManagerStringsFr: IgcDockManagerResourceStrings = {
   close: 'Fermer',
-  ...
+  // ...
 };
 
 addResourceStrings('fr', dockManagerStringsFr);
