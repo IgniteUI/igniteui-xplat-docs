@@ -78,12 +78,12 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular"],
     "name": "エディター",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular"],
     "name": "複数列コンボ ボックス",
     "href": "multi-column-combobox.md",
     "status": ""

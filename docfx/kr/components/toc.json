@@ -51,6 +51,17 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "Editors",
+    "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
     "name": "Grids",
     "header": true
   },
@@ -106,9 +117,9 @@
         "status": ""
       },
       {
-        "name": "Cell Editing",
+        "name": "Grid Editing",
         "href": "data-grid-cell-editing.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "Cell Selection",
