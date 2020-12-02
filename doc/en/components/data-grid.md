@@ -371,7 +371,7 @@ grid1.dataSource = data;
 
 - [Accessibility Compliance](data-grid-accessibility.md)
 - [Cell Activation](data-grid-cell-activation.md)
-- [Cell Editing](data-grid-cell-editing.md)
+- [Editing](data-grid-cell-editing.md)
 - [Cell Selection](data-grid-cell-selection.md)
 - [Column Animation](data-grid-column-animation.md)
 - [Column Chooser](data-grid-column-chooser.md)

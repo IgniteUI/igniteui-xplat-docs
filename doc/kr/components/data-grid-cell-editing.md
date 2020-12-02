@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ Data Grid | Cell Editing and Batch Updating | Infragistics
-_description: Use Infragistics' $PlatformShort$ grid component which supports the cell editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how $ProductName$ can help you better display your data!
-_keywords: $PlatformShort$ Table, Data Grid, cell editing, $ProductName$, batch updating, Infragistics
+title: $PlatformShort$ Data Grid | Cell and Row Editing with Batch Updating | Infragistics
+_description: Use Infragistics' $PlatformShort$ grid component which supports the cell and row editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how $ProductName$ can help you better display your data!
+_keywords: $PlatformShort$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 ---
 # $PlatformShort$ Grid Editing
 
-The $ProductName$ Data Table / Data Grid supports cell editing with batch updating. Note, this is currently limited to non-templated columns.
+The $ProductName$ Data Table / Data Grid supports cell and row editing with batch updating. Note, this is currently limited to non-templated columns.
 
-## Demo
+## $PlatformShort$ Grid Editing Example
 
 <div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-editing' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-editing' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Editing Example"></iframe>
 </div>
 <sample-button src="grids/data-grid/cell-editing"></sample-button>
 
@@ -24,10 +24,11 @@ Editing in the $PlatformShort$ data grid is configured by using the `EditMode` o
 - `None`: Editing is not enabled.
 - `Cell`: Allow cells to enter edit mode and commit the value on exiting edit mode.
 - `CellBatch`: Allows cells to enter edit mode but changes will be cached later until they are committed.
+- `Row`: Allow rows to enter edit mode and commit the value on exit.
 
 When set to `CellBatch`, in order to commit the changes you must perform the `commitEdits` method from the grid. The grid will italicize the cells until they are committed providing control over when to push changes back to the datasource.   
 
-In addition, error handling can be performed by hooking the `onCellValueChanging` event and inspecting new values before they are comitted. The grid exposes a `setEditError` method that can output an error message. This keeps the cell in edit mode until a valid value is entered. Otherwise the grid's `rejectEdit` method can be performed to revert the invalid value. 
+In addition, error handling can be performed by hooking the `onCellValueChanging` event and inspecting new values before they are comitted. The grid exposes a `setEditError` method that can output an error message. This keeps the cell in edit mode until a valid value is entered. Otherwise the grid's `rejectEdit` method can be performed to revert the invalid value. If no invalid value is found, you can also commit your changes by calling the grid's `acceptEdit` method.
 
 Commits can be approved or declined at the grid level by hooking `onDataCommitting` via the `acceptCommit` or `rejectCommit` methods passing the `commitID` event argument as the paramter. This event also exposes a `changes` collection whichs stores all the modifications prior to being committed. For example, you can check if a commit was from an add, update, or delete operation via the `TransactionType` property exposed on the `changes` collection and perform an `acceptCommit` or `rejectCommit` when necessary. 
 
@@ -70,6 +71,22 @@ this.onCommitClick = this.onCommitClick.bind(this);
 
 public onCommitClick(){
     this.grid.commitEdits();
+}
+```
+
+```razor
+<DataGrid Height="100%" Width="100%" @ref="DataGridRef"
+    DataSource="DataSource"
+    EditMode="EditModeType.CellBatch" />
+<button @onclick="OnCommitClick">Commit Data</button>
+
+@code {
+    public DataGrid DataGridRef;
+
+    private void OnCommitClick(MouseEventArgs e)
+    {
+        this.DataGridRef.CommitEdits();
+    }
 }
 ```
 
@@ -130,6 +147,28 @@ public onUndoClick(){
 
 public onRedoClick(){
     this.grid.redo();
+}
+```
+
+```razor
+<DataGrid Height="100%" Width="100%" @ref="DataGridRef"
+    DataSource="DataSource"
+    EditMode="EditModeType.CellBatch" />
+<button @onclick="OnUndoClick">Undo</button>
+<button @onclick="OnRedoClick">Redo</button>
+
+@code {
+    public DataGrid DataGridRef;
+
+    private void OnUndoClick(MouseEventArgs e)
+    {
+        this.DataGridRef.Undo();
+    }
+
+    private void OnRedoClick(MouseEventArgs e)
+    {
+        this.DataGridRef.Redo();
+    }
 }
 ```
 
@@ -221,5 +260,30 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
         //commit was prevented
         s.rejectCommit(e.commitID);
     }        
+}
+```
+
+```razor
+@code {
+    public void OnCellValueChanging(GridCellValueChangingEventArgs e)
+    {
+        if(e.NewValue == "")
+        {
+            this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
+            this.DataGridRef.RejectEdit(e.EditID);
+        }
+    }
+
+    public void OnDataCommitting(GridDataCommittingEventArgs e)
+    {
+        if(e.Changes[0].TransactionType == TransactionType.Update)
+        {
+            this.DataGridRef.AcceptCommit(e.CommitID);
+        }
+        else
+        {
+            this.DataGridRef.RejectCommit(e.CommitID);
+        }
+    }
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: $PlatformShort$ データ グリッド | セル編集と一括更新 | インフラジスティックス
 _description: セル編集機能をサポートするインフラジスティックスの $PlatformShort$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $PlatformShort$ Table, Data Grid, cell editing, $ProductName$, batch updating, Infragistics, $PlatformShort$ テーブル, データ グリッド, セル編集, 一括更新, インフラジスティックス
+_keywords: $PlatformShort$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $PlatformShort$ テーブル, データ グリッド, セル編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 ---
 # $PlatformShort$ Grid 編集

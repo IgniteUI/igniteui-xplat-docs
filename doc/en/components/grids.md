@@ -187,7 +187,7 @@ A $PlatformShort$ data grid, also known as a $PlatformShort$ data table, is a da
 
 <!-- Blazor -->
 
-A $PlatformShort$ data table, more commonly known as a $PlatformShort$ data grid, is a component allowing you to visualize your bound data as a series of rows and columns. These data grids have been accessible for quite a long time on desktop-related platforms such as WPF and Windows Forms but have only more recently become available for the development of web applications. Modern web applications use tables and data grids that are feature-rich with the ability to data bind, cell and row selection, cell editing and error validation, column summaries, interactive Outlook-style grouping, Microsoft Excel-style filtering, and virtualized rows and columns so that you can potentially load millions of records.
+A $PlatformShort$ data table, more commonly known as a $PlatformShort$ data grid, is a component allowing you to visualize your bound data as a series of rows and columns. These data grids have been accessible for quite a long time on desktop-related platforms such as WPF and Windows Forms but have only more recently become available for the development of web applications. Modern web applications use tables and data grids that are feature-rich with the ability to data bind, cell and row selection, cell and row editing and error validation, column summaries, interactive Outlook-style grouping, Microsoft Excel-style filtering, and virtualized rows and columns so that you can potentially load millions of records.
 
 <!-- end: Blazor -->
 
@@ -892,7 +892,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Cell Editing](data-grid-cell-editing.md)</li>
+    <li>[Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>
@@ -920,7 +920,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Cell Editing](data-grid-cell-editing.md)</li>
+    <li>[Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>
@@ -947,7 +947,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Cell Editing](data-grid-cell-editing.md)</li>
+    <li>[Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>

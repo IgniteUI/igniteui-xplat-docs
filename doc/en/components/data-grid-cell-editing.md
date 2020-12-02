@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ Data Grid | Cell Editing and Batch Updating | Infragistics
-_description: Use Infragistics' $PlatformShort$ grid component which supports the cell editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how $ProductName$ can help you better display your data!
-_keywords: $PlatformShort$ Table, Data Grid, cell editing, $ProductName$, batch updating, Infragistics
+title: $PlatformShort$ Data Grid | Cell and Row Editing with Batch Updating | Infragistics
+_description: Use Infragistics' $PlatformShort$ grid component which supports the cell and row editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how $ProductName$ can help you better display your data!
+_keywords: $PlatformShort$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 ---
 # $PlatformShort$ Grid Editing
 
-The $ProductName$ Data Table / Data Grid supports cell editing with batch updating. Note, this is currently limited to non-templated columns.
+The $ProductName$ Data Table / Data Grid supports cell and row editing with batch updating. Note, this is currently limited to non-templated columns.
 
 ## $PlatformShort$ Grid Editing Example
 
@@ -24,6 +24,7 @@ Editing in the $PlatformShort$ data grid is configured by using the `EditMode` o
 - `None`: Editing is not enabled.
 - `Cell`: Allow cells to enter edit mode and commit the value on exiting edit mode.
 - `CellBatch`: Allows cells to enter edit mode but changes will be cached later until they are committed.
+- `Row`: Allow rows to enter edit mode and commit the value on exit.
 
 When set to `CellBatch`, in order to commit the changes you must perform the `commitEdits` method from the grid. The grid will italicize the cells until they are committed providing control over when to push changes back to the datasource.   
 
