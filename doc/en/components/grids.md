@@ -892,7 +892,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Editing](data-grid-cell-editing.md)</li>
+    <li>[Grid Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>
@@ -920,7 +920,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Editing](data-grid-cell-editing.md)</li>
+    <li>[Grid Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>
@@ -947,7 +947,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div id="list-features-included">
 <ul>
-    <li>[Editing](data-grid-cell-editing.md)</li>
+    <li>[Grid Editing](data-grid-cell-editing.md)</li>
     <li>[Cell Selection](data-grid-cell-selection.md)</li>
     <li>[Cell Templates](data-grid-column-types.md#template-column)</li>
     <li>[Column Filtering](data-grid-column-filtering.md)</li>
