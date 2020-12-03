@@ -35,7 +35,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ data chart component requires the following modules.
+The $PlatformShort$ data chart component requires the following modules:
 
 ```razor
 DataChartCoreModule

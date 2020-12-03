@@ -30,7 +30,7 @@ npm install --save {PackageExcel}
 
 ## Required Modules
 
-The $PlatformShort$ excel library requires the following modules.
+The $PlatformShort$ excel library requires the following modules:
 
 ```razor
 ExcelModule

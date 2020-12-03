@@ -72,7 +72,7 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `Treemap` requires the following modules.
+The `Treemap` requires the following modules:
 
 ```razor
 TreemapModule

@@ -47,7 +47,7 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## Required Modules
 
-Creation of the `ScatterLineSeries` requires the following modules.
+Creation of the `ScatterLineSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

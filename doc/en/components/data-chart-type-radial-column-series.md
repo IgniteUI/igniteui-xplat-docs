@@ -45,7 +45,7 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## Required Modules
 
-Creation of the `RadialColumnSeries` requires the following modules.
+Creation of the `RadialColumnSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

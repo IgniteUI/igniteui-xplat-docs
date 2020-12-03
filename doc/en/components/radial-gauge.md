@@ -50,7 +50,7 @@ Aftewards you may start implementing the control by adding the following namespa
 
 ## Required Modules
 
-The `XamRadialGauge` requires the following modules.
+The `XamRadialGauge` requires the following modules:
 
 ```razor
 RadialGaugeModule

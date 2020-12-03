@@ -43,7 +43,7 @@ The `Stacked100LineSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `Stacked100LineSeries` requires the following modules.
+Creation of the `Stacked100LineSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule        

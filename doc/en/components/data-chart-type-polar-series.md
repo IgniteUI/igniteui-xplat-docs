@@ -65,7 +65,7 @@ public dataSource: any[] = SamplePolarData.create();
 ```
 ## Required Modules
 
-The polar series requires the following modules.
+The polar series requires the following modules:
 
 ```razor
 DataChartCoreModule

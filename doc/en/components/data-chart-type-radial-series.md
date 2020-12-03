@@ -64,7 +64,7 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## Required Modules
 
-The radial series requires the following modules.
+The radial series requires the following modules:
 
 ```razor
 DataChartCoreModule

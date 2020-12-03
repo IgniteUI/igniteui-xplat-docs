@@ -55,7 +55,7 @@ public dataSource: any[] = SampleRangeData.create();
 
 ## Required Modules
 
-The range series requires the following modules.
+The range series requires the following modules:
 
 ```razor
 DataChartCoreModule

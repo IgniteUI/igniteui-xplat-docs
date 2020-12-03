@@ -43,7 +43,7 @@ The `StackedColumnSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `StackedColumnSeries` requires the following modules.
+Creation of the `StackedColumnSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule        

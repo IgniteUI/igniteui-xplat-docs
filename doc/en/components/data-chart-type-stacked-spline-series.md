@@ -43,7 +43,7 @@ The `StackedSplineSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `StackedSplineSeries` requires the following modules.
+Creation of the `StackedSplineSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule        

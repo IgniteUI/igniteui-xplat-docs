@@ -43,7 +43,7 @@ npm install --save {PackageInputs}
 
 ## Required Modules
 
-The `Grid` requires the following modules.
+The `Grid` requires the following modules:
 
 ```razor 
 DataGridModule
@@ -71,7 +71,7 @@ ModuleManager.register(
 
 ## Optional Modules
 
-The optional `Grid` features, seen above, requires the following modules.
+The optional `Grid` features, seen above, requires the following modules:
 
 ```razor
 GridColumnOptionsModule

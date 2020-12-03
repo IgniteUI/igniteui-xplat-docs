@@ -36,7 +36,7 @@ When installing the gauge package, the core package must also be installed.
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules.
+The `XamLinearGauge` requires the following modules:
 
 ```razor
 LinearGaugeModule

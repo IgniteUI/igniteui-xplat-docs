@@ -35,7 +35,7 @@ In addition to the core and $PlatformShort$ data grid packages you will also hav
 
 ## Required Modules
 
-The `Grid` requires the following modules.
+The `Grid` requires the following modules:
 
 ```razor
 DataGridModule

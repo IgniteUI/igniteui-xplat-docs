@@ -43,7 +43,7 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `ZoomSlider` requires the following modules.
+The `ZoomSlider` requires the following modules:
 
 ```razor
 ZoomSliderModule

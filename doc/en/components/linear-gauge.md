@@ -38,7 +38,7 @@ npm install --save {PackageGauges}
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules.
+The `XamLinearGauge` requires the following modules:
 
 ```razor
 LinearGaugeModule

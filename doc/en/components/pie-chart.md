@@ -37,7 +37,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The `XamPieChart` requires the following modules.
+The `XamPieChart` requires the following modules:
 
 ```razor
 PieChartModule

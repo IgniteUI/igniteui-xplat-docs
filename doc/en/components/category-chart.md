@@ -53,7 +53,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The `CategoryChart` requires the following modules.
+The `CategoryChart` requires the following modules:
 
 ```razor
 CategoryChartModule

@@ -35,7 +35,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ doughnut chart component requires the following modules.
+The $PlatformShort$ doughnut chart component requires the following modules:
 
 ```razor
 DoughnutChartModule

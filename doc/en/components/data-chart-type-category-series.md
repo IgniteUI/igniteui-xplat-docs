@@ -74,7 +74,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-The category series requires the following modules.
+The category series requires the following modules:
 
 ```razor
 DataChartCoreModule

@@ -46,7 +46,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-Creation of the `StepAreaSeries` requires the following modules.
+Creation of the `StepAreaSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

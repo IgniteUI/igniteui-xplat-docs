@@ -46,7 +46,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-Creation of the `AreaSeries` requires the following modules.
+Creation of the `AreaSeries` requires the following modules:
 
 ```razor
   DataChartCoreModule

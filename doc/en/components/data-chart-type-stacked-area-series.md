@@ -43,7 +43,7 @@ The `StackedAreaSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `StackedAreaSeries` requires the following modules.
+Creation of the `StackedAreaSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule        

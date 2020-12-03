@@ -36,7 +36,7 @@ To use the geographic map component, you need to first install these packages:
 
 ## Required Modules
 
-The `XamGeographicMap` requires the following modules.
+The `XamGeographicMap` requires the following modules:
 
 ```razor
 GeographicMapModule

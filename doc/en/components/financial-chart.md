@@ -67,7 +67,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ Financial Chart component requires the following modules.
+The $PlatformShort$ Financial Chart component requires the following modules:
 
 ```razor
 FinancialChartModule

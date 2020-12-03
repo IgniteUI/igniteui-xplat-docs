@@ -41,7 +41,7 @@ The `StackedBarSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `StackedBarSeries` requires the following modules.
+Creation of the `StackedBarSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule        

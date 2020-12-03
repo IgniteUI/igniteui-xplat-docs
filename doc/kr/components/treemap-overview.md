@@ -68,7 +68,7 @@ When installing the chart package, the core package must also be installed.
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `Treemap` requires the following modules.
+The `Treemap` requires the following modules:
 
 ```razor
 TreemapModule

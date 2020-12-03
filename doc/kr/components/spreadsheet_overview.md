@@ -32,11 +32,11 @@ When installing the spreadsheet package, the core and excel package must also be
 
 ## Required Modules
 
-The `Spreadsheet` requires the following modules.
+The `Spreadsheet` requires the following modules:
 
 ```razor
 ExcelModule
-* SpreadsheetModule
+SpreadsheetModule
 ```
 
 ```ts

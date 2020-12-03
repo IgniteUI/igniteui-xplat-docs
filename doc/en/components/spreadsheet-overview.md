@@ -29,11 +29,11 @@ npm install --save {PackageSpreadsheet}
 
 ## Required Modules
 
-The `Spreadsheet` requires the following modules.
+The `Spreadsheet` requires the following modules:
 
 ```razor
 ExcelModule
-* SpreadsheetModule
+SpreadsheetModule
 ```
 
 ```ts

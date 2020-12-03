@@ -44,7 +44,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-Creation of the `BarSeries` requires the following modules.
+Creation of the `BarSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

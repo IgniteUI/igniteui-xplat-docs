@@ -43,7 +43,7 @@ public dataSource: any[] = SampleScatterData.create();
 
 ## Required Modules
 
-The scatter contour series requires the following modules.
+The scatter contour series requires the following modules:
 
 ```razor
 DataChartCoreModule

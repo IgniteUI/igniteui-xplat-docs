@@ -43,7 +43,7 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## Required Modules
 
-The scatter bubble series requires the following modules.
+The scatter bubble series requires the following modules:
 
 ```razor
 DataChartCoreModule

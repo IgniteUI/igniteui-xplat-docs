@@ -43,7 +43,7 @@ public dataSource: any[] = SampleFinancialData.create();
 
 ## Required Modules
 
-The financial series requires the following modules.
+The financial series requires the following modules:
 
 ```razor
 DataChartCoreModule

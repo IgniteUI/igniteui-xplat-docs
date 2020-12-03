@@ -46,7 +46,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-Creation of the `SplineAreaSeries` requires the following modules.
+Creation of the `SplineAreaSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

@@ -46,7 +46,7 @@ public dataSource: any[] = SampleShapeData.create();
 
 ## Required Modules
 
-Creation of the `ScatterPolygonSeries` requires the following modules.
+Creation of the `ScatterPolygonSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

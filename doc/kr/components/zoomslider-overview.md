@@ -39,7 +39,7 @@ When installing the chart package, the core package must also be installed.
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `ZoomSlider` requires the following modules.
+The `ZoomSlider` requires the following modules:
 
 ```razor
 ZoomSliderModule

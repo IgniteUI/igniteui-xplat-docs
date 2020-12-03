@@ -216,10 +216,10 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
-<!-- Blazor -->
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+GeographicMapModule
+DataChartInteractivityModule
+```
 
 ```ts
 import { IgrGeographicMapModule } from 'igniteui-react-maps';

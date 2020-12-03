@@ -71,7 +71,7 @@ Stacked series have the following data requirements:
 
 ## Required Modules
 
-The stacked series requires the following modules.
+The stacked series requires the following modules:
 
 ```razor
 DataChartCoreModule        

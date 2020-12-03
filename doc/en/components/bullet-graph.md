@@ -40,7 +40,7 @@ npm install --save {PackageGauges}
 
 ## Required Modules
 
-The `XamBulletGraph` requires the following modules.
+The `XamBulletGraph` requires the following modules:
 
 ```razor
 BulletGraphModule

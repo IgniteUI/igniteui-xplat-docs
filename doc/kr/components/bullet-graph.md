@@ -40,7 +40,7 @@ When installing the gauge package, the core package must also be installed.
 
 ## Required Modules
 
-The `XamBulletGraph` requires the following modules.
+The `XamBulletGraph` requires the following modules:
 
 ```razor
 BulletGraphModule

@@ -46,7 +46,7 @@ public dataSource: any[] = SampleRangeData.create();
 
 ## Required Modules
 
-Creation of the `RangeAreaSeries` requires the following modules.
+Creation of the `RangeAreaSeries` requires the following modules:
 
 ```razor
 DataChartCoreModule

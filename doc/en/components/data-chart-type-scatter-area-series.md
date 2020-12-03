@@ -40,7 +40,7 @@ public dataSource: any[] = SampleScatterData.create();
 
 ## Required Modules
 
-The scatter area series requires the following modules.
+The scatter area series requires the following modules:
 
 ```razor
 DataChartCoreModule
