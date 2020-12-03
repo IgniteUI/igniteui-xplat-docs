@@ -66,7 +66,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャートコンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` をY 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` をY 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
 
 ## データの要件
 

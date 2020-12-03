@@ -140,7 +140,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`RangeColumnSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`RangeColumnSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

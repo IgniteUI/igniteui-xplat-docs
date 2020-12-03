@@ -8,6 +8,8 @@ _language: ja
 
 このトピックでは、$ProductName$ の重大な変更に関する情報と、古いコードを最新の API に更新する方法について説明します。
 
+<!-- React, WebComponents -->
+
 ## PropertyPath の名称変更
 
 データ グリッド コンポーネントの `propertyPath` プロパティ名が `field` に変更されました。これは、すべての Column タイプ、GroupDescription、SortDescription および SummaryDescription に適用します。
@@ -70,6 +72,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 ```ts
 **npm install --save {PackageInputs}**
 ```
+<!-- end: React, WebComponents -->
 
 ## Import ステートメントの変更
 

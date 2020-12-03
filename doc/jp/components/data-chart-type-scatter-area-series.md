@@ -131,7 +131,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`ScatterAreaSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`ScatterAreaSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

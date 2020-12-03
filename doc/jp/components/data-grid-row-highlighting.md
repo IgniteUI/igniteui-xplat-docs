@@ -20,7 +20,7 @@ $ProductName$ Data Table / Data Grid は、行の強調表示の構成をサポ�
 
 ## 概要
 
-$PlatformShort$ データ内のレコードの強調表示は、$PlatformShort$ グリッド の `IsRowHoverEnabled` ブール値プロパティを設定して切り替えることができます。
+$PlatformShort$ データ内のレコードの強調表示は、$PlatformShort$ グリッド の `IsRowHoverEnabled` ブール値プロパティを設定して切り替えることができます。これはデフォルトで有効になっていることに注意してください。
 
 さらに、`RowHoverBackground` 文字列プロパティを 16 進数値に設定して色を設定できます。
 
