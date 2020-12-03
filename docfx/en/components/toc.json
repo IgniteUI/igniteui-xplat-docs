@@ -302,6 +302,7 @@
     ]
   },
   {
+    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Charts (NEW)",
     "href": "charts/chart-type-overview.md",
     "header": true,
@@ -475,7 +476,7 @@
     "status": ""
   },
   {
-    "name": "Charts (OLD)",
+    "name": "Charts",
     "header": true
   },
   {
