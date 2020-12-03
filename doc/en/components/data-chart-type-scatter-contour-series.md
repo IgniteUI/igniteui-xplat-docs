@@ -46,11 +46,11 @@ public dataSource: any[] = SampleScatterData.create();
 The scatter contour series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule
-DataChartScatterModule
-DataChartInteractivityModule
-* ScatterContourSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModuleRegister(IgniteUIBlazor);
+ScatterContourSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

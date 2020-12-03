@@ -56,7 +56,7 @@ npm install --save {PackageCharts}
 The `CategoryChart` requires the following modules:
 
 ```razor
-CategoryChartModule
+CategoryChartModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

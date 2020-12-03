@@ -39,7 +39,7 @@ When installing the gauge package, the core package must also be installed.
 The `XamLinearGauge` requires the following modules:
 
 ```razor
-LinearGaugeModule
+LinearGaugeModule.Register(IgniteUIBlazor);
 ```
 
 

@@ -38,10 +38,10 @@ npm install --save {PackageCharts}
 The $PlatformShort$ data chart component requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule,
-DataChartScatterModule,
-* NumberAbbreviatorModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

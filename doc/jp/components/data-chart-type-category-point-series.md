@@ -51,10 +51,11 @@ public dataSource: any[] = SampleCategoryData.create();
 
 `PointSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-DataChartCoreModule
-DataChartCategoryModule
-DataChartCategoryCoreModule
-DataChartInteractivityModule
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartCategoryCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -46,11 +46,11 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 The scatter bubble series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule
-DataChartScatterModule
-DataChartInteractivityModule
-* NumberAbbreviatorModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModuleRegister(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -75,7 +75,7 @@ npm install --save {PackageCharts}
 The `Treemap` requires the following modules:
 
 ```razor
-TreemapModule
+TreemapModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

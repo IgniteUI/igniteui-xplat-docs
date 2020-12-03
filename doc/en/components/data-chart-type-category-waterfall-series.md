@@ -49,10 +49,10 @@ public dataSource: any[] = SampleCategoryData.create();
 Creation of the `WaterfallSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartCategoryModule
-DataChartCategoryCoreModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartCategoryCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -45,11 +45,12 @@ public dataSource: any[] = SampleScatterData.create();
 
 散布等高線シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-DataChartCoreModule        
-DataChartScatterCoreModule
-DataChartScatterModule   
-DataChartInteractivityModule
-* ScatterContourSeriesModule
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterContourSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

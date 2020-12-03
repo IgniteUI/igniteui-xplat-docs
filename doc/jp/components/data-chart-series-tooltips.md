@@ -25,7 +25,7 @@ $PlatformShort$ データ チャート コンポーネントは、2 つのツー
 
 $PlatformShort$ データ チャート コンポーネントでツールチップ レイヤーを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
 
-DataChartInteractivityModule
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

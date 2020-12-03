@@ -28,8 +28,8 @@ The $PlatformShort$ data chart component allows you to highlight the plotted ser
 In order to enable highlighting in the $PlatformShort$ data chart component, you need to import and register the interactivity module. This can be done using the following code:
 
 ```razor
-DataChartInteractivityModule
-DataChartAnnotationModule
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartAnnotationModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -53,7 +53,7 @@ Aftewards you may start implementing the control by adding the following namespa
 The `XamRadialGauge` requires the following modules:
 
 ```razor
-RadialGaugeModule
+RadialGaugeModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

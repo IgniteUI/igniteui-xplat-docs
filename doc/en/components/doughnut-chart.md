@@ -38,8 +38,8 @@ npm install --save {PackageCharts}
 The $PlatformShort$ doughnut chart component requires the following modules:
 
 ```razor
-DoughnutChartModule
-* RingSeriesModule
+DoughnutChartModule.Register(IgniteUIBlazor);
+RingSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

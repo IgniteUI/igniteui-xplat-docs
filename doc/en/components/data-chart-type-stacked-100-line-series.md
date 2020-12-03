@@ -46,9 +46,9 @@ The `Stacked100LineSeries` has the following data requirements:
 Creation of the `Stacked100LineSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule        
-DataChartInteractivityModule
-Stacked100LineSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+Stacked100LineSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

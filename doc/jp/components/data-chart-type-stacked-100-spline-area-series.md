@@ -46,9 +46,10 @@ $PlatformShort$ データ チャート コンポーネントはさまざまな�
 
 `Stacked100SplineAreaSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-DataChartCoreModule        
-DataChartInteractivityModule
-Stacked100SplineAreaSeriesModule
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+Stacked100SplineAreaSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

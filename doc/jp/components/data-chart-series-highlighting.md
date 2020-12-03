@@ -28,8 +28,8 @@ $PlatformShort$ データ チャート コンポネントを使用すると、�
 
 $PlatformShort$ データ チャート コンポネントでハイライトを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
 
-DataChartInteractivityModule
-DataChartAnnotationModule
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartAnnotationModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

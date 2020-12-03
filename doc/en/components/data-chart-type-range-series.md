@@ -58,10 +58,10 @@ public dataSource: any[] = SampleRangeData.create();
 The range series requires the following modules:
 
 ```razor
-DataChartCoreModule
-* RadialPieSeriesModule
-* RadialPieSeriesCoreModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialPieSeriesModule.Register(IgniteUIBlazor);
+RadialPieSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

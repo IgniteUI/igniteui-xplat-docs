@@ -49,11 +49,11 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 Creation of the `ScatterPolylineSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule
-DataChartScatterModule
-DataChartInteractivityModule
-* ScatterPolylineSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModuleRegister(IgniteUIBlazor);
+ScatterPolylineSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

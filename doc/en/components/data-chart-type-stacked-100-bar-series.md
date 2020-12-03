@@ -44,9 +44,9 @@ The `Stacked100BarSeries` has the following data requirements:
 Creation of the `Stacked100BarSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule        
-DataChartInteractivityModule
-Stacked100BarSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+Stacked100BarSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

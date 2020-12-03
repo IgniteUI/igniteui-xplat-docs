@@ -54,12 +54,11 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-<!-- Blazor -->
 `CategoryChart` は以下のモジュールを要求します。
 
-* CategoryChartModule
-
-<!-- end: Blazor -->
+```razor
+CategoryChartModule.Register(IgniteUIBlazor);
+```
 
 <!-- Angular, React, WebComponents -->
 ```ts

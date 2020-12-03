@@ -46,7 +46,7 @@ npm install --save {PackageCharts}
 The `ZoomSlider` requires the following modules:
 
 ```razor
-ZoomSliderModule
+ZoomSliderModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

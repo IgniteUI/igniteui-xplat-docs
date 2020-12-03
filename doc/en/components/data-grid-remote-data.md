@@ -38,7 +38,7 @@ In addition to the core and $PlatformShort$ data grid packages you will also hav
 The `Grid` requires the following modules:
 
 ```razor
-DataGridModule
+DataGridModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

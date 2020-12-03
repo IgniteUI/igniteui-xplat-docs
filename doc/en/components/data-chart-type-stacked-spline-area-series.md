@@ -46,12 +46,12 @@ The `StackedSplineAreaSeries` has the following data requirements:
 Creation of the `StackedSplineAreaSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule        
-DataChartInteractivityModule
-DataChartCategoryModule
-DataChartStackedModule,
-StackedFragmentSeriesModule,
-<!-- end: Blazor -->
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartStackedModule.Register(IgniteUIBlazor);
+StackedFragmentSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

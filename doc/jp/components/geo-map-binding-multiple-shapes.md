@@ -73,8 +73,8 @@ import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
 ```razor
-GeographicMapModule 
-DataChartInteractivityModule
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```razor
 
 ## シリーズの作成

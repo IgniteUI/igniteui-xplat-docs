@@ -86,11 +86,11 @@ public dataSource: any[] = SampleFinancialData.create();
 The financial series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartFinancialModule
-DataChartFinancialCoreModule
-DataChartFinancialIndicatorsModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialModule.Register(IgniteUIBlazor);
+DataChartFinancialCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialIndicatorsModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

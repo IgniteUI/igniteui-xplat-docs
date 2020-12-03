@@ -46,9 +46,9 @@ The `Stacked100AreaSeries` has the following data requirements:
 Creation of the `Stacked100AreaSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule        
-DataChartInteractivityModule
-Stacked100AreaSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+Stacked100AreaSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

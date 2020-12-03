@@ -70,7 +70,7 @@ npm install --save {PackageCharts}
 The $PlatformShort$ Financial Chart component requires the following modules:
 
 ```razor
-FinancialChartModule
+FinancialChartModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

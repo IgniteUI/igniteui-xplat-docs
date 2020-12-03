@@ -39,7 +39,7 @@ When installing the gauge package, the core package must also be installed.
 The `XamRadialGauge` requires the following modules:
 
 ```razor
-RadialGaugeModule
+RadialGaugeModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

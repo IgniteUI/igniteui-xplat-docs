@@ -47,7 +47,7 @@ npm install --save {PackageInputs}
 
 `Grid` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-DataGridModule
+DataGridModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -74,9 +74,9 @@ ModuleManager.register(
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
 ```razor
-GridColumnOptionsModule
-DataGridToolbarModule
-SparklineModule
+GridColumnOptionsModule.Register(IgniteUIBlazor);
+DataGridToolbarModule.Register(IgniteUIBlazor);
+SparklineModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -160,7 +160,7 @@ $PlatformShort$ グリッド モジュールがインポートされました。
 ```
 
 ```razor
-code {
+@code {
     public void GenerateData()
     {
         string[] names = new string[] {

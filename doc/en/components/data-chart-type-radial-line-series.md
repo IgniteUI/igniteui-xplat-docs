@@ -48,10 +48,10 @@ public dataSource: any[] = SampleRadialData.create();
 Creation of the `RadialLineSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule
-* RadialLineSeriesModule
-* RadialLineSeriesCoreModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialLineSeriesModule.Register(IgniteUIBlazor);
+RadialLineSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

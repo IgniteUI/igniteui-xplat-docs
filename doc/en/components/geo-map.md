@@ -46,8 +46,9 @@ The `XamGeographicMap` requires the following modules, however the Ig$DataChartI
 <!-- Blazor -->
 The `XamGeographicMap` requires the following modules, however the DataChartInteractivityModule is only required for mouse interactions, such as panning and zooming the map content.
 
-GeographicMapModule
-DataChartInteractivityModule
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

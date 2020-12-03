@@ -67,10 +67,11 @@ this.state = { dataSource: SampleRadialData.create() }
 
 ラジアル シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-DataChartCoreModule        
-DataChartRadialSeriesModule
-DataChartRadialSeriesCoreModule      
-DataChartInteractivityModule
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartRadialSeriesModule.Register(IgniteUIBlazor);
+DataChartRadialSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -33,7 +33,7 @@ npm install --save {PackageExcel}
 The $PlatformShort$ excel library requires the following modules:
 
 ```razor
-ExcelModule
+ExcelModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

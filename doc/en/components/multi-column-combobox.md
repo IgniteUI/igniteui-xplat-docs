@@ -57,7 +57,7 @@ npm install --save {PackageCharts}
 The Multi-Column Combo Box requires the following modules:
 
 ```razor
-MultiColumnComboBoxModule
+MultiColumnComboBoxModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -40,7 +40,7 @@ npm install --save {PackageCharts}
 The `XamPieChart` requires the following modules:
 
 ```razor
-PieChartModule
+PieChartModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

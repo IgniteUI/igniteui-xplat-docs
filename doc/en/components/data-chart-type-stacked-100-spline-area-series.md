@@ -46,9 +46,9 @@ The `Stacked100SplineAreaSeries` has the following data requirements:
 Creation of the `Stacked100SplineAreaSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule        
-DataChartInteractivityModule
-Stacked100SplineAreaSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+Stacked100SplineAreaSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

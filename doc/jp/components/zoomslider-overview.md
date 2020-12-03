@@ -45,7 +45,8 @@ npm install --save {PackageCharts}
 ## モジュールの要件
 `ZoomSlider` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* ZoomSliderModule
+```razor
+ZoomSliderModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

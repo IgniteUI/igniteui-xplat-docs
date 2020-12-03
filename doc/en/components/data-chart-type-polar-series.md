@@ -68,10 +68,10 @@ public dataSource: any[] = SamplePolarData.create();
 The polar series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartPolarModule
-DataChartPolarCoreModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartPolarModule.Register(IgniteUIBlazor);
+DataChartPolarCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

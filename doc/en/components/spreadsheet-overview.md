@@ -32,8 +32,8 @@ npm install --save {PackageSpreadsheet}
 The `Spreadsheet` requires the following modules:
 
 ```razor
-ExcelModule
-SpreadsheetModule
+ExcelModule.Register(IgniteUIBlazor);
+SpreadsheetModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

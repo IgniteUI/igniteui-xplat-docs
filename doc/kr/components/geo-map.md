@@ -39,8 +39,8 @@ To use the geographic map component, you need to first install these packages:
 The `XamGeographicMap` requires the following modules:
 
 ```razor
-GeographicMapModule
-DataChartInteractivityModule
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

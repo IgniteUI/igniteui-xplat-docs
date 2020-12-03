@@ -71,7 +71,7 @@ When installing the chart package, the core package must also be installed.
 The `Treemap` requires the following modules:
 
 ```razor
-TreemapModule
+TreemapModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

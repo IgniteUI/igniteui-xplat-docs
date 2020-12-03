@@ -48,10 +48,10 @@ public dataSource: any[] = SampleRadialData.create();
 Creation of the `RadialPieSeries` requires the following modules:
 
 ```razor
-DataChartCoreModule
-* RadialPieSeriesModule
-* RadialPieSeriesCoreModule
-DataChartInteractivityModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialPieSeriesModule.Register(IgniteUIBlazor);
+RadialPieSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

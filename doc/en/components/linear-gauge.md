@@ -41,7 +41,7 @@ npm install --save {PackageGauges}
 The `XamLinearGauge` requires the following modules:
 
 ```razor
-LinearGaugeModule
+LinearGaugeModule.Register(IgniteUIBlazor);
 ```
 
 

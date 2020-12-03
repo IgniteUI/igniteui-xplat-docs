@@ -43,7 +43,7 @@ When installing the gauge package, the core package must also be installed.
 The `XamBulletGraph` requires the following modules:
 
 ```razor
-BulletGraphModule
+BulletGraphModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

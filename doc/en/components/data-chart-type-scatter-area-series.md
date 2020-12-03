@@ -43,11 +43,11 @@ public dataSource: any[] = SampleScatterData.create();
 The scatter area series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule
-DataChartScatterModule
-DataChartInteractivityModule
-* ScatterAreaSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModuleRegister(IgniteUIBlazor);
+ScatterAreaSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

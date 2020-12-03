@@ -60,11 +60,11 @@ public dataSource: any[] = SampleShapeData.create();
 The scatter polygon series requires the following modules:
 
 ```razor
-DataChartCoreModule
-DataChartScatterCoreModule
-DataChartScatterModule
-DataChartInteractivityModule
-* ScatterPolygonSeriesModule
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModuleRegister(IgniteUIBlazor);
+ScatterPolygonSeriesModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

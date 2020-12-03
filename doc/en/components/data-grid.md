@@ -46,7 +46,7 @@ npm install --save {PackageInputs}
 The `Grid` requires the following modules:
 
 ```razor 
-DataGridModule
+DataGridModule.Register(IgniteUIBlazor);
 ```
 <!-- end: Blazor -->
 
@@ -74,9 +74,9 @@ ModuleManager.register(
 The optional `Grid` features, seen above, requires the following modules:
 
 ```razor
-GridColumnOptionsModule
-DataGridToolbarModule
-SparklineModule
+GridColumnOptionsModule.Register(IgniteUIBlazor);
+DataGridToolbarModule.Register(IgniteUIBlazor);
+SparklineModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -160,7 +160,7 @@ Now that the $PlatformShort$ data grid module is imported, next is the basic con
 ```
 
 ```razor
-code {
+@code {
     public void GenerateData()
     {
         string[] names = new string[] {
