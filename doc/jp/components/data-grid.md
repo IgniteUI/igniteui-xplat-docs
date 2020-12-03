@@ -371,6 +371,7 @@ grid1.dataSource = data;
 
 ### その他のリソース
 
+- [アクセシビリティの遵守](data-grid-accessibility.md)
 - [セルのアクティブ化](data-grid-cell-activation.md)
 - [セル編集](data-grid-cell-editing.md)
 - [セル選択](data-grid-cell-selection.md)
@@ -387,5 +388,5 @@ grid1.dataSource = data;
 <!-- end: Angular, React, WebComponents -->
 - [行のピン固定](data-grid-row-pinning.md)
 - [行グループ](data-grid-row-grouping.md)
-- [Row Highlighting](data-grid-row-highlighting.md)
+- [行の強調表示](data-grid-row-highlighting.md)
 - [パフォーマンス](data-grid-performance.md)

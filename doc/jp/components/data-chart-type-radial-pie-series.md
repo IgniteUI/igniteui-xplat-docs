@@ -24,7 +24,7 @@ $ProductName$ 放射状円チャートはラジアル チャートのグルー�
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

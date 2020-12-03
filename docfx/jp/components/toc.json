@@ -101,7 +101,7 @@
     "status": "",
     "items": [
       {
-        "name": "",
+        "name": "アクセシビリティの遵守",
         "href": "data-grid-accessibility.md",
         "status": "NEW"
       },
@@ -231,7 +231,7 @@
         "status": ""
       },
       {
-        "name": "Row Highlighting",
+        "name": "行の強調表示",
         "href": "data-grid-row-highlighting.md",
         "status": "NEW"
       },
