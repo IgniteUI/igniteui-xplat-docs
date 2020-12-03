@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ 軸の注釈
 
-$ProductName$ データチャート コンポーネントでは、軸に注釈を追加して、その軸上のさまざまな点に特定の値を表示することができます。これによって最終的なシリーズ値、オーバーレイ値、チャート内の十字線に対応する値などを可視化するのに役立ちます。
+$ProductName$ データ チャート コンポーネントでは、軸に注釈を追加して、その軸上のさまざまな点に特定の値を表示することができます。これによって最終的なシリーズ値、オーバーレイ値、チャート内の十字線に対応する値などを可視化するのに役立ちます。
 
 ## $PlatformShort$ 軸の注釈の例
 
@@ -23,7 +23,7 @@ $ProductName$ データチャート コンポーネントでは、軸に注釈�
 
 <div class="divider--half"></div>
 
-以下は、$ProductName$ データチャートで軸の注釈をサポートするシリーズとレイヤーです。
+以下は、$ProductName$ データ チャートで軸の注釈をサポートするシリーズとレイヤーです。
 
 - `CrosshairLayer`
 - `FinalValueLayer`
@@ -40,7 +40,7 @@ $ProductName$ データチャート コンポーネントでは、軸に注釈�
 `CrosshairLayer` には、X 軸と Y 軸の両方に注釈を表示する機能があります。これらは個別にカスタマイズできるため、上記の各プロパティは存在しますが、名前の前に xAxis または yAxis  があります。たとえば、`XAxisAnnotationBackground` または `YAxisAnnotationTextColor` です。さらに、`XAxisAnnotationFormatLabel` および `YAxisAnnotationFormatLabel` イベントを使用して、`CrosshairLayer` 軸の注釈に表示されるコンテンツを完全にカスタマイズできます。
 
 ## コード例
-このコードは、各レイヤーとそれに対して有効になっている軸注釈を使用したオーバーレイを使用して $ProductName$ データチャートを作成する方法を示します。ここでは、`FinalValueLayer` も黄色のテキスト色になるようにカスタマイズされています。
+このコードは、各レイヤーとそれに対して有効になっている軸注釈を使用したオーバーレイを使用して $ProductName$ データ チャートを作成する方法を示します。ここでは、`FinalValueLayer` も黄色のテキスト色になるようにカスタマイズされています。
 
 ```razor
 <DataChart Height="500px" Width="700px">

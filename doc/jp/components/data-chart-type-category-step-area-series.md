@@ -24,7 +24,7 @@ $ProductName$ ステップ エリア チャートはカテゴリ チャートの
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`StepAreaSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`StepAreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -128,7 +128,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`StepAreaSeries` を使用して $ProductName$ データチャートのインスタンスを作成し、それをデータソースにバインドする方法を示します。
+このコードは、`StepAreaSeries` を使用して $ProductName$ データ チャートのインスタンスを作成し、それをデータソースにバインドする方法を示します。
 
 ```razor
 <DataChart Height="500px" Width="700px">

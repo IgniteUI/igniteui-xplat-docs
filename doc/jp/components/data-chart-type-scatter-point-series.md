@@ -27,7 +27,7 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 ## 軸の要件
 
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`

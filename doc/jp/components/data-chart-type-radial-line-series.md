@@ -24,7 +24,7 @@ $ProductName$ ラジアル折れ線チャートは、放射チャートのグル
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialLineSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialLineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`
