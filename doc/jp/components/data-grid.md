@@ -372,7 +372,7 @@ grid1.dataSource = data;
 ### その他のリソース
 
 - [セルのアクティブ化](data-grid-cell-activation.md)
-- [セル編集](data-grid-cell-editing.md)
+- [グリッド編集](data-grid-cell-editing.md)
 - [セル選択](data-grid-cell-selection.md)
 - [列アニメーション](data-grid-column-animation.md)
 - [列の選択](data-grid-column-chooser.md)

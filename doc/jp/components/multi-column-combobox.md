@@ -15,6 +15,20 @@ _language: ja
 
 `ValueField` プロパティは選択された基本データ項目のバインド値を決定します。オブジェクトのリストに複数のプロパティがある場合に必要です。
 
+The `Fields` string array property determines which fields will be included and displayed. All fields not listed in the array will not be displayed in the dropdown.
+
+The `PlaceHolder` property lets the edit portion of the control to display text when nothing is selected. 
+
+The `SortMode` property lets you configure the field's sorting with the following configurations:
+
+- `None`
+- `SortByOneColumnOnly`
+- `SortByOneColumnOnlyTriState`
+- `SortByMultipleColumns`
+- `SortByMultipleColumnsTriState`
+
+The TriState options will allow sorted columns to be unsorted.
+
 
 ## $PlatformShort$ 複数列コンボ ボックスの例
 

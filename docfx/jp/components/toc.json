@@ -86,7 +86,7 @@
     "exclude": ["Angular"],
     "name": "複数列コンボ ボックス",
     "href": "multi-column-combobox.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -151,9 +151,9 @@
         "status": ""
       },
       {
-        "name": "セル編集",
+        "name": "グリッド編集",
         "href": "data-grid-cell-editing.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "セル選択",
