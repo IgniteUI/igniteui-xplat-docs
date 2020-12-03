@@ -39,8 +39,7 @@ $PlatformShort$ ドーナツ チャートを作成するには、以下のモジ
 
 * DoughnutChartModule
 * RingSeriesModule
-<!-- end: Blazor -->
-
+```
 
 ```ts
 // app.module.ts

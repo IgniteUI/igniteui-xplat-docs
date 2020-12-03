@@ -50,12 +50,12 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 `ScatterSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule       
-* DataChartInteractivityModule
+DataChartCoreModule        
+DataChartScatterCoreModule
+DataChartScatterModule       
+DataChartInteractivityModule
 * NumberAbbreviatorModule
-<!-- end: Blazor -->
+```
 
 ```ts
 // axis' modules:

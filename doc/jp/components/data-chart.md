@@ -37,11 +37,11 @@ npm install --save {PackageCharts}
 
 $PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule
-* DataChartScatterCoreModule,
-* DataChartScatterModule,
+DataChartCoreModule
+DataChartScatterCoreModule,
+DataChartScatterModule,
 * NumberAbbreviatorModule
-<!-- end: Blazor -->
+```
 
 ```ts
 import { IgxDataChartCoreModule } from 'igniteui-angular-charts';

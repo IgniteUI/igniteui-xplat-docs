@@ -39,11 +39,12 @@ npm install --save {PackageGauges}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-<!-- Blazor -->
-The `XamBulletGraph` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
 
-* BulletGraphModule
-<!-- end: Blazor -->
+The `XamBulletGraph` requires the following modules.
+
+```razor
+BulletGraphModule
+```
 
 <!-- Angular, React, WebComponents -->
 ```ts

@@ -47,14 +47,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## Required Modules
 
-Creation of the `ScatterLineSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `ScatterLineSeries` requires the following modules.
 
-* DataChartCoreModule
-* DataChartScatterCoreModule
-* DataChartScatterModule
-* DataChartInteractivityModule
+```razor
+DataChartCoreModule
+DataChartScatterCoreModule
+DataChartScatterModule
+DataChartInteractivityModule
 * ScatterLineSeriesModule
-<!-- end: Blazor -->
+```
 
 ```ts
 // axis' modules:

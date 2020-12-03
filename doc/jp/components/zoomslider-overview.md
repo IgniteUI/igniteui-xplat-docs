@@ -46,7 +46,7 @@ npm install --save {PackageCharts}
 `ZoomSlider` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
 * ZoomSliderModule
-<!-- end: Blazor -->
+```
 
 ```ts
 import { IgxZoomSliderModule } from 'igniteui-angular-charts';

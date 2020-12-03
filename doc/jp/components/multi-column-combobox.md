@@ -44,8 +44,9 @@ npm install --save {PackageCharts}
 
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* MultiColumnComboBoxModule
-<!-- end: Blazor -->
+```razor
+MultiColumnComboBoxModule
+```
 
 ## コード スニペット
 

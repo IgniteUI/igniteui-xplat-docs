@@ -43,14 +43,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## Required Modules
 
-The scatter bubble series requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The scatter bubble series requires the following modules.
 
-* DataChartCoreModule
-* DataChartScatterCoreModule
-* DataChartScatterModule
-* DataChartInteractivityModule
+```razor
+DataChartCoreModule
+DataChartScatterCoreModule
+DataChartScatterModule
+DataChartInteractivityModule
 * NumberAbbreviatorModule
-<!-- end: Blazor -->
+```
 
 ```ts
 // axis' modules:
@@ -79,7 +80,6 @@ import { IgxDataChartScatterModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:

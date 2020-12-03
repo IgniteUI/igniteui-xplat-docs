@@ -46,14 +46,15 @@ public dataSource: any[] = SampleShapeData.create();
 
 ## Required Modules
 
-Creation of the `ScatterPolygonSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `ScatterPolygonSeries` requires the following modules.
 
-* DataChartCoreModule
-* DataChartScatterCoreModule
-* DataChartScatterModule
-* DataChartInteractivityModule
+```razor
+DataChartCoreModule
+DataChartScatterCoreModule
+DataChartScatterModule
+DataChartInteractivityModule
 * ScatterPolygonSeriesModule
-<!-- end: Blazor -->
+```
 
 ```ts
 // axis' modules:
@@ -77,7 +78,6 @@ import { IgxDataChartShapeModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:

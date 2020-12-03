@@ -43,12 +43,13 @@ The `Stacked100ColumnSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `Stacked100ColumnSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `Stacked100ColumnSeries` requires the following modules.
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* Stacked100ColumnSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule        
+DataChartInteractivityModule
+Stacked100ColumnSeriesModule
+```
 
 ```ts
 // axis' modules:

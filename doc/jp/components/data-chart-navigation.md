@@ -25,9 +25,8 @@ $PlatformShort$ データ チャート コンポーネントでは、チャー�
 
 チャートでナビゲーションする場合、インポートしてからインタラクティブ モードを登録します。以下のコードを使用できます。
 
-<!-- Blazor -->
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+DataChartInteractivityModule
+```
 
 ```ts
 import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';

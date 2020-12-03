@@ -49,11 +49,11 @@ public dataSource: any[] = SampleRangeData.create();
 
 `RangeAreaSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
+DataChartCoreModule        
 * RadialPieSeriesModule
 * RadialPieSeriesCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+DataChartInteractivityModule
+```
 
 ```ts
 // in app.module.ts file

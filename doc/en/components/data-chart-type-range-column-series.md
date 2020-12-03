@@ -46,13 +46,14 @@ public dataSource: any[] = SampleRangeData.create();
 
 ## Required Modules
 
-Creation of the `RangeColumnSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `RangeColumnSeries` requires the following modules.
 
-* DataChartCoreModule
+```razor
+DataChartCoreModule
 * RadialPieSeriesModule
 * RadialPieSeriesCoreModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+DataChartInteractivityModule
+```
 
 ```ts
 // in app.module.ts file

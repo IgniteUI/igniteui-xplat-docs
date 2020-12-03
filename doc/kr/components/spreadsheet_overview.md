@@ -32,11 +32,12 @@ When installing the spreadsheet package, the core and excel package must also be
 
 ## Required Modules
 
-The `Spreadsheet` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Spreadsheet` requires the following modules.
 
-* ExcelModule
+```razor
+ExcelModule
 * SpreadsheetModule
-<!-- end: Blazor -->
+```
 
 ```ts
 import { IgxExcelModule } from 'igniteui-angular-excel';

@@ -40,14 +40,15 @@ public dataSource: any[] = SampleScatterData.create();
 
 ## Required Modules
 
-The scatter area series requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The scatter area series requires the following modules.
 
-* DataChartCoreModule
-* DataChartScatterCoreModule
-* DataChartScatterModule
-* DataChartInteractivityModule
+```razor
+DataChartCoreModule
+DataChartScatterCoreModule
+DataChartScatterModule
+DataChartInteractivityModule
 * ScatterAreaSeriesModule
-<!-- end: Blazor -->
+```
 
 ```ts
 // axis' modules:

@@ -47,12 +47,12 @@ public dataSource: any[] = SampleFinancialData.create();
 
 ファイナンシャル シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
-* DataChartFinancialModule
-* DataChartFinancialCoreModule
-* DataChartFinancialIndicatorsModule        
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+DataChartCoreModule        
+DataChartFinancialModule
+DataChartFinancialCoreModule
+DataChartFinancialIndicatorsModule        
+DataChartInteractivityModule
+```
 
 ```ts
 // axis' modules:

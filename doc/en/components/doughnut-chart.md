@@ -35,12 +35,12 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ doughnut chart component requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The $PlatformShort$ doughnut chart component requires the following modules.
 
-* DoughnutChartModule
+```razor
+DoughnutChartModule
 * RingSeriesModule
-<!-- end: Blazor -->
-
+```
 
 ```ts
 // app.module.ts
@@ -121,7 +121,7 @@ The following code demonstrates how to bind the doughnut chart to the above data
 ## Multiple Rings
 The doughnut chart component can also display multiple rings at the same time with each of the rings capable of being bound to a different data item, or they can share a common data source. For example, the following 2 data sources
 are used to bind to multiple rings:
-
+```
 
 ```ts
 public Months: any[];

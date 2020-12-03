@@ -49,10 +49,10 @@ public dataSource: any[] = SampleCategoryData.create();
 
 `AreaSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-  * DataChartCoreModule
-  * DataChartCategoryModule
-  * DataChartCategoryCoreModule
-  * DataChartInteractivityModule
+  DataChartCoreModule
+  DataChartCategoryModule
+  DataChartCategoryCoreModule
+  DataChartInteractivityModule
 ```
 <!-- end: Blazor -->
 

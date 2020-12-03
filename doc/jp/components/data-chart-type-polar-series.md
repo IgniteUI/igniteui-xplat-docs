@@ -68,11 +68,11 @@ public dataSource: any[] = SamplePolarData.create();
 
 極座標シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
-* DataChartPolarModule
-* DataChartPolarCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+DataChartCoreModule        
+DataChartPolarModule
+DataChartPolarCoreModule      
+DataChartInteractivityModule
+```
 
 ```ts
 // axis' modules:

@@ -38,10 +38,12 @@ npm install --save {PackageGauges}
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamLinearGauge` requires the following modules.
 
-* LinearGaugeModule 
-<!-- end: Blazor -->
+```razor
+LinearGaugeModule
+```
+
 
 ```ts
 // app.module.ts

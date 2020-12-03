@@ -43,12 +43,13 @@ The `Stacked100LineSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `Stacked100LineSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `Stacked100LineSeries` requires the following modules.
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* Stacked100LineSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule        
+DataChartInteractivityModule
+Stacked100LineSeriesModule
+```
 
 ```ts
 // axis' modules:
@@ -175,7 +176,6 @@ This code demonstrates how to create an instance of the $ProductName$ data chart
   </IgrStacked100LineSeries>
 </IgrDataChart>
 ```
-
 
 ```ts
 const stack = new IgrStacked100LineSeries({ name: "series" });

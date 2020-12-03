@@ -43,14 +43,14 @@ public dataSource: any[] = SampleScatterData.create();
 
 ## Required Modules
 
-The scatter contour series requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The scatter contour series requires the following modules.
 
-* DataChartCoreModule
-* DataChartScatterCoreModule
-* DataChartScatterModule
-* DataChartInteractivityModule
+```razor
+DataChartCoreModule
+DataChartScatterCoreModule
+DataChartScatterModule
+DataChartInteractivityModule
 * ScatterContourSeriesModule
-<!-- end: Blazor -->
 ```
 
 ```ts
@@ -243,7 +243,6 @@ The provided `ValueBrushScale` class should satisfy most coloring needs, but you
 - `Brushes` sets the collection of brushes for filling contours.
 - `MaximumValue` sets the highest value to assign a brush. Any given value greater than this value will be Transparent.
 - `MinimumValue` sets the lowest value to assign a brush. Any given value less than this value will be Transparent.
-
 
 ```ts
 const scale = new IgrValueBrushScale({});

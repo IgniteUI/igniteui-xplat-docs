@@ -32,7 +32,7 @@ Note, if you are binding your data source to an ObservableCollection or another 
 <!-- end: Blazor -->
 
 The following example demonstrates how to notify Financial Chart control about high frequency data updates:
-
+```
 
 ```ts
 private tick(): void {

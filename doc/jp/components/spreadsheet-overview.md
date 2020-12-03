@@ -33,7 +33,7 @@ npm install --save {PackageSpreadsheet}
 
 * ExcelModule
 * SpreadsheetModule
-<!-- end: Blazor -->
+```
 
 ```ts
 import { IgxExcelModule } from 'igniteui-angular-excel';

@@ -43,12 +43,13 @@ The `Stacked100SplineSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `Stacked100SplineSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `Stacked100SplineSeries` requires the following modules.
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* Stacked100SplineSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule        
+DataChartInteractivityModule
+Stacked100SplineSeriesModule
+```
 
 ```ts
 // axis' modules:

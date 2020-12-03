@@ -43,13 +43,14 @@ The `StackedAreaSeries` has the following data requirements:
 
 ## Required Modules
 
-Creation of the `StackedAreaSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `StackedAreaSeries` requires the following modules.
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* DataChartCategoryModule
-* DataChartStackedModule,
-* StackedFragmentSeriesModule,
+```razor
+DataChartCoreModule        
+DataChartInteractivityModule
+DataChartCategoryModule
+DataChartStackedModule,
+StackedFragmentSeriesModule,
 <!-- end: Blazor -->
 
 ```ts

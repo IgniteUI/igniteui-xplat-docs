@@ -24,9 +24,9 @@ In the $PlatformShort$ data chart component, navigation is disabled by default. 
 
 In order to use navigation in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
 
-<!-- Blazor -->
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartInteractivityModule
+```
 
 ```ts
 import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';

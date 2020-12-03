@@ -47,8 +47,8 @@ npm install --save {PackageInputs}
 
 `Grid` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataGridModule
-<!-- end: Blazor -->
+DataGridModule
+```
 
 ```ts
 import { IgrDataGridModule } from 'igniteui-react-grids';
@@ -73,10 +73,11 @@ ModuleManager.register(
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* GridColumnOptionsModule
-* DataGridToolbarModule
-* SparklineModule
-<!-- end: Blazor -->
+```razor
+GridColumnOptionsModule
+DataGridToolbarModule
+SparklineModule
+```
 
 ```ts
 import { IgrGridColumnOptionsModule } from 'igniteui-react-grids';

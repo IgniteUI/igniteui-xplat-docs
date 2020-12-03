@@ -74,13 +74,14 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-The category series requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The category series requires the following modules.
 
-* DataChartCoreModule;
-* DataChartCategoryModule;
-* DataChartCategoryCoreModule;
-* DataChartInteractivityModule;
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule
+DataChartCategoryModule
+DataChartCategoryCoreModule
+DataChartInteractivityModule
+```
 
 ```ts
 // axis' modules:
