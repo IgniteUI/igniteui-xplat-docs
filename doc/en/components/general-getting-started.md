@@ -103,7 +103,7 @@ Lastly,  -->
         <title>Getting Started with Ignite UI for Web Components</title>
     </head>
     <body>
-        
+
     </body>
 </html>
 ```
@@ -325,11 +325,11 @@ The steps below describe how to create a new Blazor project. If you want to add 
 ## Step 2 - Install the Ignite UI for Blazor NuGet package
 
 1 - Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
-   
+
 <img src="../images/nuget-manage-packages.jpg" />
 
 2 - In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
-   
+
 <img src="../images/nuget-package-manager-browse.jpg" />
 
 > [!Note]
@@ -340,61 +340,65 @@ The steps below describe how to create a new Blazor project. If you want to add 
 
 ## Step 3 - Register Ignite UI for Blazor
 
-1 - Link the static files. Add the `_content/IgniteUI.Blazor/app.bundle.js` script to the project just above the default Blazor script.
+1 - Add the IgniteUI for Blazor script just above the default Blazor script.
 
-*Web Assembly - wwwroot/index.html*
+In Blazor Web Assembly - change **wwwroot/index.html** file:
+
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.webassembly.js"></script>
 ```
-*Server - Pages/_Host.cshtml*
+
+In Blazor Server - change **Pages/_Host.cshtml** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-2 - Register services and components modules
+2 - Register service modules for IgniteUI Blazor components using the `AddIgniteUIBlazor` method:
 
-*Web Assembly* - Call the `AddIgniteUIBlazor` method in the `Program.cs` file in the `Main` method 
+In Blazor Web Assembly project - change the **Program.cs** file:
 
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public static async Task Main(string[] args)
 {
     // ...
-
-    builder.Services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    builder.Services.AddIgniteUIBlazor(typeof(GeographicMapModule));
 }
 ```
-*Server* - Call the `AddIgniteUIBlazor` method in the `Startup.cs` file in the `ConfigureServices` method
+
+In Blazor Server project - change the **Startup.cs** file:
+
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-
-    services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    services.AddIgniteUIBlazor(typeof(GeographicMapModule));
 }
 ```
-> [!Note]
-> In this example, we are registering the `DataGridModule` for use in our Blazor application. Ignite UI for Blazor components, and their features, must have their respective modules registered in order to work properly in your Blazor applications. Please see each component's documentation for more information.
 
-3 - Add the `IgniteUI.Blazor.Controls` namespace in `_Imports.razor`
+> [!Note]
+> In this example, we registered the `GeographicMapModule` to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
+
+
+3 - Add the `IgniteUI.Blazor.Controls` namespace in `_Imports.razor` file:
 
 ```razor
 @using IgniteUI.Blazor.Controls;
 ```
 
-4 - Add Ignite UI for Blazor Components
+4 - Add Ignite UI for Blazor component in your razor page:
 
 ```razor
-<DataGrid DataSource="data" />
-</Datagrid>
+<GeographicMap Height="100%" Width="100%" />
+</GeographicMap>
 ```
-> [!Note]
-> Ignite UI for Blazor components, and their features, must have their respective modules registered in the `AddIgniteUIBlazor` method. Please see each component's documentation for more information.
 
 <!-- end: Blazor -->
