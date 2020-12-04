@@ -71,14 +71,15 @@ Stacked series have the following data requirements:
 
 ## Required Modules
 
-The stacked series requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The stacked series requires the following modules:
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* DataChartCategoryModule
-* DataChartStackedModule,
-* StackedFragmentSeriesModule,
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartStackedModule.Register(IgniteUIBlazor);
+StackedFragmentSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

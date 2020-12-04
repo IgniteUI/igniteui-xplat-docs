@@ -43,9 +43,11 @@ npm install --save {PackageInputs}
 
 ## Required Modules
 
-The `Grid` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Grid` requires the following modules:
 
-* DataGridModule
+```razor 
+DataGridModule.Register(IgniteUIBlazor);
+```
 <!-- end: Blazor -->
 
 ```ts
@@ -69,12 +71,13 @@ ModuleManager.register(
 
 ## Optional Modules
 
-The optional `Grid` features, seen above, requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The optional `Grid` features, seen above, requires the following modules:
 
-* GridColumnOptionsModule
-* DataGridToolbarModule
-* SparklineModule
-<!-- end: Blazor -->
+```razor
+GridColumnOptionsModule.Register(IgniteUIBlazor);
+DataGridToolbarModule.Register(IgniteUIBlazor);
+SparklineModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGridColumnOptionsModule } from 'igniteui-react-grids';
@@ -157,7 +160,7 @@ Now that the $PlatformShort$ data grid module is imported, next is the basic con
 ```
 
 ```razor
-code {
+@code {
     public void GenerateData()
     {
         string[] names = new string[] {

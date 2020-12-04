@@ -8,25 +8,24 @@ mentionedTypes: []
 
 The Multi-Column Combo Box automatically generates columns for properties on the data object. This component is unique in that it's a combo box that visualizes large amounts of data similar to a data grid embedded in the dropdown. 
 
-Data binding can be achieved using an array of complex objects via the column's `DataSource` property.
+## Usage
 
-The `TextField` property determines which value is shown when users make a selection. 
+The following properties are the most commonly used to configure the component:
 
-The `ValueField` property determines the bound value of the underlying data item selected. This is necessary if your list of objects have several properties.
+- `DataSource` - allows binding data in form of an array of complex objects that will be displayed in drop down menu.
+- `TextField` - determines which value is shown when users make a selection. 
+- `ValueField` - property determines the bound value of the underlying data item selected. This is necessary if your list of objects have several properties.
+- `Fields` - string array property that determines which fields will be included and displayed. All fields not listed in the array will not be displayed in the dropdown.
+- `PlaceHolder` property lets the edit portion of the control to display text when nothing is selected. 
+- `SortMode` property lets you configure the field's sorting with the following configurations:
 
-The `Fields` string array property determines which fields will be included and displayed. All fields not listed in the array will not be displayed in the dropdown.
+    * `None`
+    * `SortByOneColumnOnly`
+    * `SortByOneColumnOnlyTriState`
+    * `SortByMultipleColumns`
+    * `SortByMultipleColumnsTriState`
 
-The `PlaceHolder` property lets the edit portion of the control to display text when nothing is selected. 
-
-The `SortMode` property lets you configure the field's sorting with the following configurations:
-
-- `None`
-- `SortByOneColumnOnly`
-- `SortByOneColumnOnlyTriState`
-- `SortByMultipleColumns`
-- `SortByMultipleColumnsTriState`
-
-The TriState options will allow sorted columns to be unsorted.
+Note, the TriState sort options will allow sorted columns to be unsorted.
 
 
 ## $PlatformShort$ Multi-Column Combo Box Overview Example
@@ -55,15 +54,48 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The Multi-Column Combo Box requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The Multi-Column Combo Box requires the following modules:
 
-* MultiColumnComboBoxModule
-<!-- end: Blazor -->
+```razor
+MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+```
+
+```ts
+import { IgrMultiColumnComboBoxModule } from 'igniteui-react-grids';
+import { IgrMultiColumnComboBox } from 'igniteui-react-grids';
+
+IgrMultiColumnComboBoxModule.register();
+```
+
+```ts
+import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-grids';
+import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-grids';
+
+ModuleManager.register(
+    IgcMultiColumnComboBoxModule
+);
+```
+
+<div class="divider--half"></div>
 
 ## Code Snippet
 
-```razor
-                
+```tsx
+<IgrMultiColumnComboBox
+    width="400px"
+    dataSource={countryNames}
+    textField="Name">
+</IgrMultiColumnComboBox>
+```
+
+```html
+<igc-multi-column-combo-box width="400px"
+    data-source={countryNames}
+    text-field="Name">       
+</igc-multi-column-combo-box>
+```
+
+```razor                
 <MultiColumnComboBox Height="50px" Width="400px"
     DataSource="CountryNames"
     TextField="Name" />            

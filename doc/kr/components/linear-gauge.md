@@ -36,10 +36,12 @@ When installing the gauge package, the core package must also be installed.
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamLinearGauge` requires the following modules:
 
-* LinearGaugeModule 
-<!-- end: Blazor -->
+```razor
+LinearGaugeModule.Register(IgniteUIBlazor);
+```
+
 
 ```ts
 // app.module.ts

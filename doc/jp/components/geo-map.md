@@ -48,9 +48,9 @@ npm install --save {PackageMaps}
 <!-- Blazor -->
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

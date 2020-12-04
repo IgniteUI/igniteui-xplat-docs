@@ -46,13 +46,14 @@ public dataSource: any[] = SampleRangeData.create();
 
 ## Required Modules
 
-Creation of the `RangeAreaSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `RangeAreaSeries` requires the following modules:
 
-* DataChartCoreModule
-* RadialPieSeriesModule
-* RadialPieSeriesCoreModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialPieSeriesModule.Register(IgniteUIBlazor);
+RadialPieSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // in app.module.ts file

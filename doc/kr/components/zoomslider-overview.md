@@ -39,11 +39,11 @@ When installing the chart package, the core package must also be installed.
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `ZoomSlider` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `ZoomSlider` requires the following modules:
 
-* ZoomSliderModule
-<!-- end: Blazor -->
-
+```razor
+ZoomSliderModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxZoomSliderModule } from 'igniteui-angular-charts';

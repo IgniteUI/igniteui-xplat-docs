@@ -72,10 +72,11 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `Treemap` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Treemap` requires the following modules:
 
-* TreemapModule
-<!-- end: Blazor -->
+```razor
+TreemapModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxTreemapModule } from "igniteui-angular-charts";

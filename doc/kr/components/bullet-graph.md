@@ -40,10 +40,11 @@ When installing the gauge package, the core package must also be installed.
 
 ## Required Modules
 
-The `XamBulletGraph` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamBulletGraph` requires the following modules:
 
-* BulletGraphModule
-<!-- end: Blazor -->
+```razor
+BulletGraphModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

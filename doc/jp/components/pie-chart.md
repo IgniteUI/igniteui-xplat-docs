@@ -41,8 +41,9 @@ npm install --save {PackageCharts}
 
 `XamPieChart` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* PieChartModule
-<!-- end: Blazor -->
+```razor
+PieChartModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

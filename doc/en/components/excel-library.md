@@ -30,10 +30,11 @@ npm install --save {PackageExcel}
 
 ## Required Modules
 
-The $PlatformShort$ excel library requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The $PlatformShort$ excel library requires the following modules:
 
-* ExcelModule
-<!-- end: Blazor -->
+```razor
+ExcelModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

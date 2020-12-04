@@ -69,9 +69,9 @@ npm install --save {PackageCharts}
 
 $PlatformShort$ ファイナンシャル チャートを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* FinancialChartModule
-<!-- end: Blazor -->
-
+```razor
+FinancialChartModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

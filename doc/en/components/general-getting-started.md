@@ -235,8 +235,10 @@ This will automatically install packages for $ProductName$, along with all of th
 
 First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
-* GeographicMapModule
-* DataChartInteractivityModule
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGeographicMapModule } from 'igniteui-react-maps';
@@ -382,6 +384,28 @@ public void ConfigureServices(IServiceCollection services)
     // ...
     services.AddIgniteUIBlazor(typeof(GeographicMapModule));
 }
+```
+
+Optionally, modules can be registered within razor files at the time the page is initialized if registering modules at the application level is not feasible:
+
+```
+@page ...
+
+@using IgniteUI.Blazor.Controls
+@inject IIgniteUIBlazor IgniteUIBlazor;
+
+@code 
+{
+
+   protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GeographicMapModule.Register(IgniteUIBlazor);
+
+        ...
+    } 
+}
+
 ```
 
 > [!Note]

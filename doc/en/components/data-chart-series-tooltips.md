@@ -24,9 +24,9 @@ The $PlatformShort$ data chart component has support for showing tooltips along 
 
 In order to use tooltips or tooltip layers in the $PlatformShort$ data chart component, you need to import and register the interactivity module. This can be done by using the following code:
 
-<!-- Blazor -->
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';

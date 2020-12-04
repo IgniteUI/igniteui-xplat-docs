@@ -72,10 +72,10 @@ import { IgxGeographicSymbolSeriesComponent } from 'igniteui-angular-maps';
 import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
-<!-- Blazor -->
-* GeographicMapModule 
-* IgcDataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```razor
 
 ## シリーズの作成
 

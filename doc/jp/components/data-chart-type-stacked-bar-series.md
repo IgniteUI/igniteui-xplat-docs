@@ -44,12 +44,13 @@ $PlatformShort$ データ チャート コンポーネントはさまざまな�
 
 `StackedBarSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* DataChartCategoryModule
-* DataChartStackedModule,
-* StackedFragmentSeriesModule,
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartStackedModule.Register(IgniteUIBlazor);
+StackedFragmentSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

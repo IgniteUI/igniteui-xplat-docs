@@ -37,10 +37,11 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The `XamPieChart` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamPieChart` requires the following modules:
 
-* PieChartModule
-<!-- end: Blazor -->
+```razor
+PieChartModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

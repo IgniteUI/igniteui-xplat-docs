@@ -35,13 +35,14 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ data chart component requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The $PlatformShort$ data chart component requires the following modules:
 
-* DataChartCoreModule
-* DataChartScatterCoreModule,
-* DataChartScatterModule,
-* NumberAbbreviatorModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxDataChartCoreModule } from 'igniteui-angular-charts';

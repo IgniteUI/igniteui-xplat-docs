@@ -45,12 +45,13 @@ public dataSource: any[] = SampleScatterData.create();
 
 散布等高線シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* ScatterContourSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterContourSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -242,7 +243,7 @@ series1.yAxis = yAxis;
 - `Brushes` は、輪郭を塗りつぶすためのブラシのコレクションを設定します。
 - `MaximumValue` は、ブラシを割り当てるための最大値を設定します。指定した値がこの値より大きい場合は透明になります。
 - `MinimumValue` は、ブラシを割り当てるための最小値を設定します。指定した値がこの値より小さい場合は透明になります。
-
+```
 
 ```ts
 const scale = new IgrValueBrushScale({});

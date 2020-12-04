@@ -53,14 +53,12 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-<!-- Blazor -->
-The `CategoryChart` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in the AddIgniteUIBlazor extension method in your application entry point:
+The `CategoryChart` requires the following modules:
 
-* CategoryChartModule
+```razor
+CategoryChartModule.Register(IgniteUIBlazor);
+```
 
-<!-- end: Blazor -->
-
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
@@ -89,7 +87,6 @@ ModuleManager.register(
     IgcCategoryChartModule
     );
 ```
-<!-- end: Angular, React, WebComponents -->
 
 It's also possible to load a more minimal configuration of category chart whereby it can only load a subset of the possible series, and exclude other optional features by instead loading the `Ig$CategoryChartCoreModule`, and the dynamic module for the series in question, e.g. `Ig$LineSeriesDynamicModule`. If the `ChartType` is `Auto`, it wil make sure to select a series type that has been loaded.
 
