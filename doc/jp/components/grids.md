@@ -188,7 +188,7 @@ $PlatformShort$ データ グリッドは $PlatformShort$ データ テーブル
 
 <!-- Blazor -->
 
-$PlatformShort$ データ テーブルは、より一般的に $PlatformShort$ データ グリッドとして知られており、バインドされたデータを一連の行と列として視覚化できるようにするコンポーネントです。これらのデータ グリッドは、WPF や Windowsフォームなどのデスクトップ関連のプラットフォームでかなり長い間利用されてきましたが、Web アプリケーションの開発に利用できるようになったのはごく最近のことです。最新の Web アプリケーションは、データ バインド、セルと行の選択、セルの編集とエラーの検証、列集計、インタラクティブな Outlook スタイルのグループ化、Microsoft Excel スタイルのフィルタリング、数百万のレコードのロードを可能にする行と列の仮想化などの豊富な機能を備えたテーブルとデータ グリッドを使用します。
+$PlatformShort$ データ テーブルは、より一般的に $PlatformShort$ データ グリッドとして知られており、バインドされたデータを一連の行と列として視覚化できるようにするコンポーネントです。これらのデータ グリッドは、WPF や Windowsフォームなどのデスクトップ関連のプラットフォームでかなり長い間利用されてきましたが、Web アプリケーションの開発に利用できるようになったのはごく最近のことです。最新の Web アプリケーションは、データ バインド、セルと行の選択、セルおよび行の編集とエラーの検証、列集計、インタラクティブな Outlook スタイルのグループ化、Microsoft Excel スタイルのフィルタリング、数百万のレコードのロードを可能にする行と列の仮想化などの豊富な機能を備えたテーブルとデータ グリッドを使用します。
 
 <!-- end: Blazor -->
 
@@ -893,7 +893,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 
 <div id="list-features-included">
 <ul>
-    <li>[セル編集](data-grid-cell-editing.md)</li>
+    <li>[グリッド編集](data-grid-cell-editing.md)</li>
     <li>[セル選択](data-grid-cell-selection.md)</li>
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
@@ -921,7 +921,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 
 <div id="list-features-included">
 <ul>
-    <li>[セルの編集](data-grid-cell-editing.md)</li>
+    <li>[グリッド編集](data-grid-cell-editing.md)</li>
     <li>[セル選択](data-grid-cell-selection.md)</li>
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
@@ -948,7 +948,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 
 <div id="list-features-included">
 <ul>
-    <li>[セル編集](data-grid-cell-editing.md)</li>
+    <li>[グリッド編集](data-grid-cell-editing.md)</li>
     <li>[セル選択](data-grid-cell-selection.md)</li>
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
