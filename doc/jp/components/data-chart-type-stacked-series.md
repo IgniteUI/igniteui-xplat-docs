@@ -72,7 +72,7 @@ $PlatformShort$ データ チャート コンポーネントはさまざまな�
 
 ## モジュールの要件
 
-積層シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+積層シリーズを作成するには、以下のモジュールが必要です。
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);

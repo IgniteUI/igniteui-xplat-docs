@@ -47,7 +47,7 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## モジュールの要件
 
-`SplineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`SplineSeries` を作成するには、以下のモジュールが必要です。
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);

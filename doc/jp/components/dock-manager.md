@@ -250,6 +250,17 @@ const layout: IgcDockManagerLayout = {
 
 [`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
 
+### アクティブ ペイン
+
+ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、[`activePane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。[`activePaneChanged`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#activepanechanged) イベントにサブスクライブして、[`activePane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティの変更をリッスンすることもできます。
+
+```ts
+this.dockManager.addEventListener('activePaneChanged', ev => {
+    console.log(ev.detail.oldPane);
+    console.log(ev.detail.newPane);
+});
+```
+
 ### レイアウトの保存／読み込み
 
 レイアウトを復元または永続化するには、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
@@ -293,3 +304,20 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```html
 <igc-dockmanager class="dark-theme">
 ```
+
+## ローカライズ
+
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen) です。ドック マネージャーは、[英語 (`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen)、[日本語 (`jp`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsjp)、[韓国語 (`ko`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsko)、[スペイン語 (`es`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringses) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[`addResourceStrings`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addresourcestrings) メソッドを使用します。
+
+```ts
+import { addResourceStrings } from 'igniteui-dockmanager';
+
+const dockManagerStringsFr: IgcDockManagerResourceStrings = {
+  close: 'Fermer',
+  // ...
+};
+
+addResourceStrings('fr', dockManagerStringsFr);
+```
+
+ドック マネージャーは、文字列を変更できる [`resourceStrings`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。

@@ -39,7 +39,7 @@ npm install --save {PackageGauges}
 
 ## モジュールの要件
 
-`XamLinearGauge` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`XamLinearGauge` を作成するには、以下のモジュールが必要です。
 
 ```razor
 LinearGaugeModule.Register(IgniteUIBlazor);

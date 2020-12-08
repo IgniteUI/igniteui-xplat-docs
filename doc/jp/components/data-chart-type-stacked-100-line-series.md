@@ -44,7 +44,7 @@ $PlatformShort$ データ チャート コンポーネントはさまざまな�
 
 ## モジュールの要件
 
-`Stacked100LineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`Stacked100LineSeries` を作成するには、以下のモジュールが必要です。
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
@@ -177,7 +177,6 @@ ModuleManager.register(
   </IgrStacked100LineSeries>
 </IgrDataChart>
 ```
-
 
 ```ts
 const stack = new IgrStacked100LineSeries({ name: "series" });

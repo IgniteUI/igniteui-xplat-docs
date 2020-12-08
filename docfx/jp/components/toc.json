@@ -86,7 +86,7 @@
     "exclude": ["Angular"],
     "name": "複数列コンボ ボックス",
     "href": "multi-column-combobox.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -108,12 +108,12 @@
       {
         "name": "ライブ データのバインド",
         "href": "data-grid-live-data.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "ローカル データのバインディング",
         "href": "data-grid-local-data.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
@@ -153,7 +153,7 @@
       {
         "name": "セル編集",
         "href": "data-grid-cell-editing.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "セル選択",
@@ -213,7 +213,7 @@
       {
         "name": "列タイプ",
         "href": "data-grid-column-types.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "高いパフォーマンス",
@@ -300,6 +300,180 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "name": "チャート (NEW)",
+    "href": "charts/chart-type-overview.md",
+    "header": true,
+    "status": "NEW"
+  },
+  {
+    "name": "リアルタイム データのバインド",
+    "href": "category-chart-high-frequency.md",
+    "status": ""
+  },
+  {
+    "name": "大規模データのバインド",
+    "href": "category-chart-high-volume.md",
+    "status": ""
+  },
+  {
+    "name": "複数データ ソースのバインド",
+    "href": "financial-chart-multiple-data.md",
+    "status": ""
+  },
+  {
+    "name": "エリア チャート",
+    "href": "charts/chart-types-area.md",
+    "status": "NEW"
+  },
+  {
+    "name": "棒チャート",
+    "href": "charts/chart-types-bar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "バブル チャート",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "縦棒チャート",
+    "href": "charts/chart-types-column.md",
+    "status": "NEW"
+  },
+  {
+    "name": "ドーナツ チャート",
+    "href": "doughnut-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ファイナンシャル チャート",
+    "href": "charts/chart-types-financial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "折れ線チャート",
+    "href": "charts/chart-types-line.md",
+    "status": "NEW"
+  },
+  {
+    "name": "極座標チャート",
+    "href": "charts/chart-types-polar.md",
+    "status": "NEW"
+  },
+  {
+    "name": "円チャート",
+    "href": "pie-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ラジアル チャート",
+    "href": "charts/chart-types-radial.md",
+    "status": "NEW"
+  },
+  {
+    "name": "散布図",
+    "href": "charts/chart-types-scatter.md",
+    "status": "NEW"
+  },
+  {
+    "name": "図形シリーズ",
+    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
+    "status": "NEW"
+  },
+  {
+    "name": "スプライン チャート",
+    "href": "charts/chart-types-spline.md",
+    "status": "NEW"
+  },
+  {
+    "name": "ステップ チャート",
+    "href": "charts/chart-types-step.md",
+    "status": "NEW"
+  },
+  {
+    "name": "スパークライン",
+    "href": "sparkline.md",
+    "status": ""
+  },
+  {
+    "name": "ツリーマップ",
+    "href": "treemap-overview.md",
+    "status": ""
+  },
+  {
+    "name": "チャート機能",
+    "href": "charts/chart-feature-overview.md",
+    "status": "NEW",
+    "items": [
+        {
+          "name": "軸グリッド線",
+          "href": "charts/chart-features-axis-gridlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "軸レイアウト",
+          "href": "charts/chart-features-axis-layouts.md",
+          "status": "NEW"
+        },
+        {
+          "name": "軸オプション",
+          "href": "charts/chart-features-axis-options.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート注釈",
+          "href": "charts/chart-features-annotations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート アニメーション",
+          "href": "charts/chart-features-animations.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート強調表示",
+          "href": "charts/chart-features-highlighting.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート マーカー",
+          "href": "charts/chart-features-markers.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート ツールチップ",
+          "href": "charts/chart-features-tooltips.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート トレンドライン",
+          "href": "charts/chart-features-trendlines.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート ナビゲーション",
+          "href": "data-chart-navigation.md",
+          "status": ""
+        },
+        {
+          "name": "チャートの同期",
+          "href": "data-chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "ズーム スライダー",
+          "href": "zoomslider-overview.md",
+          "status": ""
+        }
+      ]
+  },
+  {
+    "name": "データ ソース",
+    "href": "data-chart-data-sources.md",
+    "status": ""
   },
   {
     "name": "チャート",
@@ -689,7 +863,7 @@
         "exclude": ["Blazor"],
         "name": "同期",
         "href": "data-chart-synchronization.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "タイトルとサブタイトル",
