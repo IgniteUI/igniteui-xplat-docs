@@ -98,7 +98,7 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 
 ## $PlatformShort$ Range Bar Chart
 
-The Ignite UI for $PlatformShort$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
+The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
 
 ### $PlatformShort$ Range Bar Chart Example 
 
