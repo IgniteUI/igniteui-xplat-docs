@@ -3,6 +3,7 @@ title: $PlatformShort$ 縦棒チャート | データ可視化 | インフラジ
 _description: インフラジスティックスの $PlatformShort$ 縦棒チャート
 _keywords: $PlatformShort$ Charts, Column Chart, Infragistics, $PlatformShort$ チャート, 縦棒チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ 縦棒チャート
 
@@ -12,7 +13,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-column' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Charts Example"></iframe> -->
 
-## $PlatformShort$ Simple Column Chart
+## $PlatformShort$ シンプルな縦棒チャート
 <!-- TODO show code for CategoryChart with
 - the dataSource set to multiple data sources
 - the chartType property set to Column
@@ -21,32 +22,32 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 - the markerTypes property set for "Circle"
 -->
 
-## $PlatformShort$ Advanced Column Chart
+## $PlatformShort$ 高度な縦棒チャート
 
-If you need a column chart with more features such as multiple axes or composite other series, you can use DataChart component.
+複数の軸や他のシリーズの合成など、より多くの機能を備えた縦棒チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
     data-chart-type-category-column-series.md
 -->
 
-## $PlatformShort$ Waterfall Chart
+## $PlatformShort$ ウォーターフォール チャート
 
 <!-- data-chart-type-category-waterfall-series.md -->
 
-## $PlatformShort$ Stacked Column Chart
+## $PlatformShort$ 積層型縦棒チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-stacked-column-series.md
     data-chart-type-stacked-100-column-series.md
 -->
 
-## $PlatformShort$ Range Column Chart
+## $PlatformShort$ 範囲縦棒チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-range-column-series.md
 -->
 
-## $PlatformShort$ Radial Column Chart
+## $PlatformShort$ ラジアル縦棒チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-radial-column-series.md

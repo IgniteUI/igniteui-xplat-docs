@@ -3,6 +3,7 @@ title: $PlatformShort$ ファイナンシャル チャート | データ可視�
 _description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート
 _keywords: $PlatformShort$ Charts, Financial Chart, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, インフラジスティックス
 mentionedTypes: ["XamFinancialChart"]
+_language: ja
 ---
 # $PlatformShort$ ファイナンシャル チャート
 
@@ -12,14 +13,14 @@ mentionedTypes: ["XamFinancialChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ファイナンシャル チャートの例"></iframe> -->
 
-## $PlatformShort$ Simple Stock Chart
+## $PlatformShort$ シンプルな株価チャート
 <!-- TODO show code for FinancialChart with:
 - the dataSource set to multiple data sources
 - the chartType property set to Candlestick
 - the zoomSliderType property set to Candlestick
 -->
 
-## Composite $PlatformShort$ Stock Chart
+## 複合の $PlatformShort$ 株価チャート
 <!-- TODO show code for FinancialChart with:
 - the dataSource set to multiple data sources
 - the volumeType="Column"
@@ -27,16 +28,16 @@ mentionedTypes: ["XamFinancialChart"]
 - the indicatorTypes="AverageTrueRange"
 -->
 
-## Styling $PlatformShort$ Stock Chart
+## $PlatformShort$ 株価チャートのスタイル設定
 
 <!-- TODO show code for FinancialChart with:
 - the brushes and outlines properties set
 - the thickness property set
 -->
 
-## $PlatformShort$ Advanced Stock Chart
+## $PlatformShort$ 高度な株価チャート
 
-If you need a stock chart with more features such as composite other series, you can use DataChart component.
+他のシリーズの複合など、より多くの機能を備えた株価チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-financial-candlestick-series.md

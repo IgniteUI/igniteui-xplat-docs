@@ -3,6 +3,7 @@ title: $PlatformShort$ チャート注釈 | データ可視化 | インフラジ
 _description: インフラジスティックスの $PlatformShort$ チャート注釈
 _keywords: $PlatformShort$ Charts, Annotations, Infragistics, $PlatformShort$ チャート, 注釈, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # $PlatformShort$ チャート注釈

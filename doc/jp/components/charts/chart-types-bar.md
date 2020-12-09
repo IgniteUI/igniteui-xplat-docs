@@ -3,18 +3,19 @@ itle: $PlatformShort$ 棒チャート | データ可視化 | インフラジス�
 _description: インフラジスティックスの $PlatformShort$ 棒チャート
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ 棒チャート
 
 <!-- TODO add introduction about using data-chart -->
 
-## $PlatformShort$ Simple Bar Chart
+## $PlatformShort$ シンプルな棒チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
     data-chart-type-category-bar-series.md
 -->
 
-## $PlatformShort$ Stacked Bar Chart
+## $PlatformShort$ 積層型棒チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-stacked-bar-series.md

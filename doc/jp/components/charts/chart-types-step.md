@@ -3,6 +3,7 @@ title: $PlatformShort$ ステップ チャート | データ可視化 | イン�
 _description: インフラジスティックスの $PlatformShort$ ステップ チャート
 _keywords: $PlatformShort$ Charts, Step Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ ステップ チャート
 
@@ -12,7 +13,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Step' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ステップ チャートの例"></iframe> -->
 
-## $PlatformShort$ Simple Step Chart
+## $PlatformShort$ シンプルなステップ チャート
 <!-- TODO show code for CategoryChart with
 - the dataSource set to multiple data sources
 - the chartType property set to Step
@@ -21,9 +22,9 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 - the markerTypes property set for "Circle"
 -->
 
-## $PlatformShort$ Advanced Step Chart
+## $PlatformShort$ 高度なステップ チャート
 
-If you need a step chart with more features such as composite other series, you can use DataChart component.
+他のシリーズの複合など、より多くの機能を備えたステップ チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-category-step-line-series.md

@@ -3,6 +3,7 @@ title: $PlatformShort$ チャート アニメーション | データ可視化 |
 _description: インフラジスティックスの $PlatformShort$ チャート アニメーション
 _keywords: $PlatformShort$ Charts, Animations, Infragistics, $PlatformShort$ チャート, アニメーション, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # $PlatformShort$ チャート アニメーション

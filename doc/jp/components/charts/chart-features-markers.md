@@ -3,6 +3,7 @@ title: $PlatformShort$ チャート マーカー | データ可視化 | イン�
 _description: インフラジスティックスの $PlatformShort$ チャート マーカー
 _keywords: $PlatformShort$ Charts, Markers, Infragistics, $PlatformShort$ チャート, マーカー, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # $PlatformShort$ チャート マーカー

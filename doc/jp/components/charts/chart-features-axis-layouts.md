@@ -3,6 +3,7 @@ title: $PlatformShort$ 軸レイアウト | データ可視化 | インフラジ
 _description: インフラジスティックスの $PlatformShort$ 軸レイアウト
 _keywords: $PlatformShort$ Axis, Layouts, Infragistics, $PlatformShort$ 軸, レイアウト, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # $PlatformShort$ 軸レイアウト

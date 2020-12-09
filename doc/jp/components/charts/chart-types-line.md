@@ -3,6 +3,7 @@ title: $PlatformShort$ 折れ線チャート | データ可視化 | インフラ
 _description: インフラジスティックスの $PlatformShort$ 折れ線チャート
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ 折れ線チャート
 
@@ -12,7 +13,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe> -->
 
-## $PlatformShort$ Simple Line Chart
+## $PlatformShort$ シンプルな折れ線チャート
 <!-- TODO show code for CategoryChart with
 - the dataSource set to multiple data sources
 - the chartType property set to Line
@@ -21,35 +22,35 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 - the markerTypes property set for "Circle"
 -->
 
-## $PlatformShort$ Advanced Line Chart
+## $PlatformShort$ 高度な折れ線チャート
 
-If you need a line chart with more features such as composite other series, you can use DataChart component.
+他のシリーズの複合など、より多くの機能を備えた折れ線チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-category-line-series.md
 -->
 
-## $PlatformShort$ Stacked Line Chart
+## $PlatformShort$ 積層型折れ線チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-stacked-line-series.md
     data-chart-type-stacked-100-line-series.md
 -->
 
-## $PlatformShort$ Scatter Line Chart
+## $PlatformShort$ 散布折れ線チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-scatter-line-series.md
 -->
 
 
-## $PlatformShort$ Radial Line Chart
+## $PlatformShort$ ラジアル折れ線チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-radial-line-series.md
 -->
 
-## $PlatformShort$ Polar Line Chart
+## $PlatformShort$ 極座標型折れ線チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-polar-line-series.md

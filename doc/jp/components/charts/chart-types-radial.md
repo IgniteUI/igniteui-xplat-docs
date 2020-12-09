@@ -3,6 +3,7 @@ title: $PlatformShort$ ラジアル チャート | データ可視化 | イン�
 _description: インフラジスティックスの $PlatformShort$ ラジアル チャート
 _keywords: $PlatformShort$ Charts, Radial Chart, Infragistics, $PlatformShort$ チャート, ラジアル チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ ラジアル チャート
 
@@ -12,25 +13,25 @@ mentionedTypes: ["XamDataChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ラジアル チャートの例"></iframe> -->
 
-## $PlatformShort$ Simple Radial Pie Chart
+## $PlatformShort$ シンプルなラジアル型円チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
     data-chart-type-radial-pie-series.md
 -->
 
-## Styling $PlatformShort$ Radial Charts
+## $PlatformShort$ ラジアル チャートのスタイル設定
 <!-- radial-pie-series with styling props set: brush, markerOutline, markerType -->
 
 
-## Other Types of Radial Charts
+## 他のタイプのラジアル チャート
 
-Refer to these topics for other types of radial charts:
+その他のタイプの極座標チャートについては以下のトピックを参照してください。
 
-- [Radial Line Chart](chart-types-line.md#$PlatformShort$-Radial-Line-Chart)
-- [Radial Area Chart](chart-types-area.md#$PlatformShort$-Radial-Area-Chart)
-- [Radial Column Chart](chart-types-column.md#$PlatformShort$-Radial-Column-Chart)
-- [Pie Chart](../pie-chart.md)
-- [Donut Chart](../doughnut-chart.md)
+- [ラジアル型折れ線チャート](chart-types-line.md#$PlatformShort$-Radial-Line-Chart)
+- [ラジアル エリア チャート](chart-types-area.md#$PlatformShort$-Radial-Area-Chart)
+- [ラジアル縦棒チャート](chart-types-column.md#$PlatformShort$-Radial-Column-Chart)
+- [円チャート](../pie-chart.md)
+- [ドーナツ チャート](../doughnut-chart.md)
 
 ## API メンバー
 <!-- TODO list API links used in this topic -->

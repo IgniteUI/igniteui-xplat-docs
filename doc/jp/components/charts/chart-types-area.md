@@ -3,6 +3,7 @@ title: $PlatformShort$ エリア チャート | データ可視化 | インフ�
 _description: インフラジスティックスの $PlatformShort$ エリア チャート
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics, $PlatformShort$ チャート, エリア チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+_language: ja
 ---
 # $PlatformShort$ エリア チャート
 
@@ -12,7 +13,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-area' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ エリア チャートの例"></iframe> -->
 
-## $PlatformShort$ Simple Area Chart
+## $PlatformShort$ シンプルなエリア チャート
 <!-- TODO show code for CategoryChart with
 - the dataSource set to multiple data sources
 - the chartType property set to Area
@@ -21,28 +22,28 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 - the markerTypes property set for "Circle"
 -->
 
-## $PlatformShort$ Advanced Area Chart
+## $PlatformShort$ 高度なエリア チャート
 
-If you need an area chart with more features such as composite other series, you can use DataChart component.
+他のシリーズの複合など、より多くの機能を備えたエリア チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-category-area-series.md
 	data-chart-type-category-spline-area-series.md
 -->
 
-## $PlatformShort$ Step Area Chart
+## $PlatformShort$ ステップ エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
     data-chart-type-category-step-area-series.md
 -->
 
-## $PlatformShort$ Range Area Chart
+## $PlatformShort$ 範囲エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-range-area-series.md
 -->
 
-## $PlatformShort$ Stacked Area Chart
+## $PlatformShort$ 積層型エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-stacked-100-area-series.md
@@ -51,19 +52,19 @@ If you need an area chart with more features such as composite other series, you
 	data-chart-type-stacked-spline-area-series.md
 -->
 
-## $PlatformShort$ Scatter Area Chart
+## $PlatformShort$ 散布エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-scatter-area-series.md
 -->
 
-## $PlatformShort$ Radial Area Chart
+## $PlatformShort$ ラジアル エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-radial-area-series.md
 -->
 
-## $PlatformShort$ Polar Area Chart
+## $PlatformShort$ 極座標型エリア チャート
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-polar-area-series.md

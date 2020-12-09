@@ -2,6 +2,7 @@
 title: $PlatformShort$ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート
 _keywords: $PlatformShort$ Charts, Chart, Infragistics, $PlatformShort$ チャート, チャート, インフラジスティックス
+_language: ja
 ---
 # $PlatformShort$ チャート
 
@@ -16,7 +17,7 @@ _keywords: $PlatformShort$ Charts, Chart, Infragistics, $PlatformShort$ チャ�
 - [ドーナツ チャート](../doughnut-chart.md)
 - [ファイナンシャル チャート](chart-types-financial.md)
 - [折れ線チャート](chart-types-line.md)
-- [極座標チャート](chart-types-polar.md)
+- [極座標型チャート](chart-types-polar.md)
 - [円チャート](../pie-chart.md)
 - [ラジアル チャート](chart-types-radial.md)
 - [散布図](chart-types-scatter.md)

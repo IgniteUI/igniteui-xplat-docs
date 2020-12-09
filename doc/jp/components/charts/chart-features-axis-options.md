@@ -3,6 +3,7 @@ title: $PlatformShort$ 軸オプション | データ可視化 | インフラジ
 _description: インフラジスティックスの $PlatformShort$ 軸オプション
 _keywords: $PlatformShort$ Axis, Options, Infragistics, $PlatformShort$ 軸, オプション, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # $PlatformShort$ 軸オプション
