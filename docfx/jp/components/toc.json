@@ -90,6 +90,12 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "date-picker.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "グリッド",
     "header": true,
     "href": "grids.md"
