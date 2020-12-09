@@ -32,9 +32,9 @@ CategoryYAxis       |[カテゴリ シリーズ](data-chart-type-category-series
 CategoryXAxis       |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く)
 TimeXAxis           |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く)
 OrdinalTimeXAxis    |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く)
-PercentChangeYAxis|すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)
-NumericYAxis        |すべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
-NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)、[棒シリーズ](data-chart-type-category-bar-series.md)
+PercentChangeYAxis|すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)
+NumericYAxis        |すべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
+NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[棒シリーズ](data-chart-type-category-bar-series.md)
 NumericAngleAxis   |すべての [極座標シリーズ](data-chart-type-polar-series.md)
 NumericRadiusAxis|すべての [極座標シリーズ](data-chart-type-polar-series.md) と [ラジアル シリーズ](data-chart-type-radial-series.md)
 CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radial-series.md)
@@ -174,7 +174,7 @@ CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radia
 
 ## 数字 X 軸
 
-`NumericXAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは X-Axis に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [図形シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、この軸は [棒シリーズ](data-chart-type-category-bar-series.md) タイプの [カテゴリ シリーズ](data-chart-type-category-series.md) と互換性があります。ここでは、`ValueMemberPath` プロパティを使用してデータ列をマップします。
+`NumericXAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは X-Axis に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [シェイプ シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、この軸は [棒シリーズ](data-chart-type-category-bar-series.md) タイプの [カテゴリ シリーズ](data-chart-type-category-series.md) と互換性があります。ここでは、`ValueMemberPath` プロパティを使用してデータ列をマップします。
 
 以下のコードは、`NumericXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
 
@@ -213,7 +213,7 @@ CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radia
 
 ## 数字 Y 軸
 
-`NumericYAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは Y 軸に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [図形シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、このタイプの軸は、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く) タイプと互換性があります。
+`NumericYAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは Y 軸に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [シェイプ シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、このタイプの軸は、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く) タイプと互換性があります。
 
 以下のコードは、`NumericYAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
 

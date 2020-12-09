@@ -56,16 +56,48 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-複数列コンボ ボックスを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
 ```razor
 MultiColumnComboBoxModule.Register(IgniteUIBlazor);
 ```
 
+```ts
+import { IgrMultiColumnComboBoxModule } from 'igniteui-react-grids';
+import { IgrMultiColumnComboBox } from 'igniteui-react-grids';
+
+IgrMultiColumnComboBoxModule.register();
+```
+
+```ts
+import { IgcMultiColumnComboBoxModule } from 'igniteui-webcomponents-grids';
+import { IgcMultiColumnComboBoxComponent } from 'igniteui-webcomponents-grids';
+
+ModuleManager.register(
+    IgcMultiColumnComboBoxModule
+);
+```
+
+<div class="divider--half"></div>
+
 ## コード スニペット
 
-```razor
-                
+```tsx
+<IgrMultiColumnComboBox
+    width="400px"
+    dataSource={countryNames}
+    textField="Name">
+</IgrMultiColumnComboBox>
+```
+
+```html
+<igc-multi-column-combo-box width="400px"
+    data-source={countryNames}
+    text-field="Name">       
+</igc-multi-column-combo-box>
+```
+
+```razor                
 <MultiColumnComboBox Height="50px" Width="400px"
     DataSource="CountryNames"
     TextField="Name" />            
@@ -80,4 +112,3 @@ MultiColumnComboBoxModule.Register(IgniteUIBlazor);
     }
 }
 ```
-

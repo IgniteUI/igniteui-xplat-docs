@@ -47,14 +47,14 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## モジュールの要件
 
-`AreaSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`AreaSeries` を作成するには、以下のモジュールが必要です。
 
+```razor
   DataChartCoreModule.Register(IgniteUIBlazor);
   DataChartCategoryModule.Register(IgniteUIBlazor);
   DataChartCategoryCoreModule.Register(IgniteUIBlazor);
   DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
-<!-- end: Blazor -->
 
 ```ts
 // axis' modules:

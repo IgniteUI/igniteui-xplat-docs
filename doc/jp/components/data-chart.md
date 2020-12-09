@@ -35,12 +35,12 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+$PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
-DataChartScatterCoreModule,
-DataChartScatterModule,
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
 NumberAbbreviatorModule.Register(IgniteUIBlazor);
 ```
 
@@ -117,7 +117,7 @@ ModuleManager.register(
 
 ## サポートされるシリーズ
 
-$PlatformShort$ チャート作成コンポーネントは、[カテゴリ シリーズ](data-chart-type-category-series.md), [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[極座標シリーズ](data-chart-type-polar-series.md)、[ラジアル シリーズ](data-chart-type-radial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md) を含む 65 種類以上のシリーズをサポートします。サポートされている[シリーズ](data-chart-series-types.md)のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
+$PlatformShort$ チャート作成コンポーネントは、[カテゴリ シリーズ](data-chart-type-category-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[極座標シリーズ](data-chart-type-polar-series.md)、[ラジアル シリーズ](data-chart-type-radial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)を含む 65 種類以上のシリーズをサポートします。サポートされている[シリーズ](data-chart-series-types.md)のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
 
 ## サポートされる軸
 $PlatformShort$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。   これらのタイプの軸の使用方法については、[シリーズ](data-chart-series-types.md)と[軸](data-chart-axis-types.md)のトピックを参照してください。
@@ -128,9 +128,9 @@ CategoryYAxis       |[カテゴリ シリーズ ](data-chart-type-category-serie
 CategoryXAxis       |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
 TimeXAxis           |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
 OrdinalTimeXAxis    |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-PercentChangeYAxis|すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)
-NumericYAxis        |すべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
-NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[図形シリーズ](data-chart-type-shape-series.md)、`Bar`
+PercentChangeYAxis|すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)
+NumericYAxis        |すべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
+NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、`Bar`
 NumericAngleAxis   |すべての [極座標シリーズ](data-chart-type-polar-series.md)
 NumericRadiusAxis|すべての [極座標シリーズ](data-chart-type-polar-series.md) と [ラジアル シリーズ](data-chart-type-radial-series.md)
 CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radial-series.md)

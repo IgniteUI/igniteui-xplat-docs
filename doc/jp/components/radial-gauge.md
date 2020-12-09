@@ -51,7 +51,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 ## モジュールの要件
 
-`XamRadialGauge` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`XamRadialGauge` を作成するには、以下のモジュールが必要です。
 
 ```razor
 RadialGaugeModule.Register(IgniteUIBlazor);

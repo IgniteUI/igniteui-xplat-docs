@@ -46,12 +46,12 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## モジュールの要件
 
-`RadialLineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`RadialLineSeries` を作成するには、以下のモジュールが必要です。
 
 ```razor
-DataChartCoreModule.Register(IgniteUIBlazor);        
+DataChartCoreModule.Register(IgniteUIBlazor);
 RadialLineSeriesModule.Register(IgniteUIBlazor);
-RadialLineSeriesCoreModule.Register(IgniteUIBlazor);    
+RadialLineSeriesCoreModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
@@ -77,7 +77,6 @@ import { IgxDataChartRadialModule } from 'igniteui-angular-charts';
     ]
 })
 ```
-
 
 ```ts
 // axis' modules:

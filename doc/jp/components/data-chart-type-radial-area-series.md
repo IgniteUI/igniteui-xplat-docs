@@ -46,11 +46,12 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## モジュールの要件
 
-`RadialAreaSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`RadialAreaSeries` を作成するには、以下のモジュールが必要です。
 
-DataChartCoreModule        
-RadialAreaSeriesModule
-RadialAreaSeriesCoreModule      
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialAreaSeriesModule.Register(IgniteUIBlazor);
+RadialAreaSeriesCoreModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 

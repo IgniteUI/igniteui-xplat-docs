@@ -31,9 +31,10 @@ npm install --save {PackageExcel}
 
 ## モジュールの要件
 
-$PlatformShort$ Excel ライブラリを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+$PlatformShort$ Excel ライブラリを作成するには、以下のモジュールが必要です。
 
-* ExcelModule.Register(IgniteUIBlazor);
+```razor
+ExcelModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

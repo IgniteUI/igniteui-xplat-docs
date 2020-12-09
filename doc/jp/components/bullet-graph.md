@@ -40,8 +40,8 @@ npm install --save {PackageGauges}
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
-<!-- Blazor -->
-`XamBulletGraph` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+
+`XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
 ```razor
 BulletGraphModule.Register(IgniteUIBlazor);

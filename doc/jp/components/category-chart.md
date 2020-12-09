@@ -60,7 +60,6 @@ npm install --save {PackageCharts}
 CategoryChartModule.Register(IgniteUIBlazor);
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
@@ -89,7 +88,6 @@ ModuleManager.register(
     IgcCategoryChartModule
     );
 ```
-<!-- end: Angular, React, WebComponents -->
 
 カテゴリ チャートのより最小限の設定をロードすることも可能で、それによって可能なシリーズのサブセットだけをロードし、代わりに `Ig$CategoryChartCoreModule` や `Ig$LineSeriesDynamicModule` など問題のシリーズの動的モジュールをロードして除外します。`ChartType` が `Auto` の場合、読み込んだシリーズ型が選択されます。
 
