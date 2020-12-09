@@ -72,7 +72,7 @@ In this example, the bar chart uses annotations to show a callout with the value
 
 A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value. 
 
-The $PlatformShort$ Stacked Bar Chart differs from the $PlatformShort$ Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group data your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
+The $PlatformShort$ Stacked Bar Chart differs from the $PlatformShort$ Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
 
 ### $PlatformShort$ Stacked Bar Chart Example 
 
