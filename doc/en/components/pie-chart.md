@@ -6,11 +6,50 @@ mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 ---
 # $PlatformShort$ Pie Chart Overview
 
-The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections. Each section has arc length proportional to its underlying data value.
+A Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
 
-This control is used for representing categorical data. It is most effective when there are only a few categories, and when each category makes up a relatively large percentage of the data as a whole.
+Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include: 
 
-## $PlatformShort$ Pie Chart Overview Example
+- Pie 
+- Donut (Ring) 
+- Funnel 
+- Stacked Area  
+- Stacked 100% Area (Stacked Percentage Area) 
+- Stacked Bar 
+- Stacked 100% Bar (Stacked Percentage Bar) 
+- Treemap 
+- Waterfall 
+
+The Angular Pie Chart includes interactive features that give the viewer tools to analyze data, like: 
+
+- Legends 
+- Slice Explosion 
+- Slice Selection 
+- Chart Animations 
+
+Best Practices for a Pie Chart: 
+
+- Comparing slices or segments as percentage values in proportion to a total value or whole 
+- Showing how a group of???? categories is broken into smaller segments  
+- Presenting small, non-hierarchical data sets (less than 6 to 8 segments of data) 
+- Ensuring data segments add up to 100% 
+- Arranging the order of data from largest (highest) to smallest (least) 
+- Using standard presentation techniques such as starting in the 12 o'clock position and continuing clockwise 
+- Ensuring the color palette is distinguishable for segments/slices of the parts 
+- Considering data labels in segments vs. legends for ease of reading 
+- Choosing an alternative chart to Pie such as Bar or Ring based on ease of comprehension 
+- Avoiding positioning multiple pie charts next to each other for comparative analysis 
+
+Do Not Use Pie Chart When: 
+
+- Comparing change over time —use a Bar, Line or Area chart 
+- Requiring precise data comparison —use a Bar, Line or Area chart 
+- You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story 
+- It would be easier for the viewer to perceive the value difference in a Bar chart 
+
+## $PlatformShort$ Pie Chart Example
+
+This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a String and a Numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
 
 <div class="sample-container loading" style="height: 350px">
     <iframe id="pie-chart-data-sample-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Overview Example"></iframe>
@@ -24,20 +63,26 @@ This control is used for representing categorical data. It is most effective whe
 
 <div class="divider--half"></div>
 
-<!-- Angular, React, WebComponents -->
-## Dependencies
-When installing the charts component, the core package must also be installed.
+## How to Make $PlatformShort$ Pie Chart
 
+<!-- Angular, React, WebComponents -->
+### 1. Install $PlatformShort$ core package
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
+</pre>
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, WebComponents -->
+### 2. Install $PlatformShort$ charts
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
-
-The `XamPieChart` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+### <!-- Angular, React, WebComponents -->3. <!-- end: Angular, React, WebComponents -->Install Required Modules
+The Pie Chart requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
 
 * PieChartModule
 <!-- end: Blazor -->
@@ -109,7 +154,9 @@ The following code demonstrates how to bind the pie chart to the above data.
 
 <div class="divider--half"></div>
 
-## Legend
+## $PlatformShort$ Pie Chart Legend
+
+Legends are used to show information about each point, to know about its contribution towards the total sum. You can collapse the point using legend click.
 
 In order to display a legend next to the pie chart component an ItemLegend needs to be created and assigned to the `Legend` property. The `LegendLabelMemberPath` can then be used to specify which property on your data model it will use to display inside the legend for each pie slice.
 
@@ -163,6 +210,18 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 </div>
 
 <div class="divider--half"></div>
+
+### How to Show Percentage in Pie Chart Legend
+
+<!-- TODO -->
+
+### $PlatformShort$ Advanced Pie Chart Show Percentage in Legend Example
+
+<!-- TODO -->
+<!-- <div class="sample-container loading" style="height: 500px">
+    <iframe></iframe>
+</div>
+<div class="divider--half"></div> -->
 
 ## Others Category
 Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
