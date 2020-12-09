@@ -25,13 +25,13 @@ _language: ja
 
 <!-- data-chart-type-scatter-hd-series.md -->
 
-## $PlatformShort$ 散散布等高線チャート
+## $PlatformShort$ 散布等高線チャート
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-scatter-contour-series.md
 -->
 
-## ## $PlatformShort$ 散散布等高線チャート
+## $PlatformShort$ 散布等高線チャート
 
 
 <!-- data-chart-type-scatter-polygon-series.md -->
