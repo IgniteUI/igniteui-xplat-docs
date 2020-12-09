@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ Charts & Graphs Library | Data Visualization | Infragistics | Ignite UI for $PlatformShort$
+title: $PlatformShort$ Charts & Graphs Library | Data Visualization | Infragistics | $ProductName$
 _description: Visualize any type of data, business, financial, scientific, and scatter, with the capability of millisecond updates with millions of data points in your $PlatformShort$ apps.
 _keywords: $PlatformShort$ Charts, Chart, Infragistics
 ---
 # $PlatformShort$ Charts & Graphs Overview
 
-Ignite UI for $PlatformShort$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts and dashboards for your web and mobile apps. Built for speed and beauty, designed to work on every modern browser, and with complete touch and interactivity, you can quickly and easily build responsive visuals into your next app on any device. 
+$ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts and dashboards for your web and mobile apps. Built for speed and beauty, designed to work on every modern browser, and with complete touch and interactivity, you can quickly and easily build responsive visuals into your next app on any device. 
 
 The $PlatformShort$ charting component supports over 65 types of series and combinations that let you visualize any type of data, including Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, Shape Series, and Geospatial Series. No matter the type of comparison you are doing, or what type of data story you are trying to tell, you can represent your data in any of these ways: 
 
@@ -188,9 +188,9 @@ Optimize the performance of your financial chart to render millions of data poin
 
 <img class="img" src="../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
-## Getting started with Ignite UI for Angular charts 
+## Getting started with $ProductName$ charts 
 
-### Add Ignite UI to your project  
+### Add $ProductName$ to your project  
 
 ### Required modules 
 
@@ -209,4 +209,4 @@ If you are considering any other $PlatformShort$ Charts on the market, here are 
 - We test against everyone else’s performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
 - We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
 - We have 50+ more UI controls and components in Angular besides the Charts. We offer a complete Angular solution to build modern web, mobile, and PWAs! 
-- We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design system matches to our Ignite UI for Angular components. 
+- We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular components. 
