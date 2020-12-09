@@ -1105,8 +1105,7 @@
     "name": "Frameworks",
     "header": true
   },
-  {
-    "exclude": ["Blazor"],
+  {    
     "name": "Excel Library",
     "href": "excel-library.md",
     "status": "",

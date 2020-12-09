@@ -1105,8 +1105,7 @@
     "name": "フレームワーク",
     "header": true
   },
-  {
-    "exclude": ["Blazor"],
+  {    
     "name": "Excel ライブラリ",
     "href": "excel-library.md",
     "status": "",
