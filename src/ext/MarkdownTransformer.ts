@@ -637,11 +637,11 @@ function manageAutoButtons(options: any) {
     function manageButtons(node: any, index: number, parent: any) {
         let docs = options.docs;
         if (node.value.indexOf("sample-button") >= 0) {
-            if (!docs.addAutoButtons) {
+            if (!docs.codeSandboxButtonInject) {
                 node.value = node.value.replace(/<\s*sample-button\s*[^>]*>\s*<\/\s*sample-button>/, "");
             } else {
-                let startFileSubst = docs.autoButtonStartFileReplace;
-                let indexFileSubst = docs.autoButtonIndexFileReplace;
+                let startFileSubst = docs.codeSandboxButtonStartFileReplace;
+                let indexFileSubst = docs.codeSandboxButtonIndexFileReplace;
                 if (startFileSubst && indexFileSubst) {
                     if (node.value.indexOf("start-file") >= 0) {
                         node.value = node.value.replace(
