@@ -272,9 +272,9 @@ function buildPlatform(cb) {
             sources.push('!doc/**/data-grid*.md');
         } else if (platformName == "Blazor") {
             // excluding topics for controls that are not in Blazor product or API is broken for these components/features
-            //sources.push('!doc/**/dock-manager*.md');
+            // sources.push('!doc/**/dock-manager*.md');
             sources.push('!doc/**/spreadsheet*.md');
-            sources.push('!doc/**/excel*.md');
+            // sources.push('!doc/**/excel*.md');
             // sources.push('!doc/**/treemap*.md');
             sources.push('!doc/**/general-cli*.md');
             sources.push('!doc/**/general-breaking-changes*.md');
