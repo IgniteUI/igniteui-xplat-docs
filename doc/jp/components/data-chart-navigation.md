@@ -25,6 +25,7 @@ $PlatformShort$ データ チャート コンポーネントでは、チャー�
 
 チャートでナビゲーションする場合、インポートしてからインタラクティブ モードを登録します。以下のコードを使用できます。
 
+```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
