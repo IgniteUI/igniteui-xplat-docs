@@ -90,7 +90,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Date Picker",
+    "name": "日付選択",
     "href": "date-picker.md",
     "status": "NEW"
   },
