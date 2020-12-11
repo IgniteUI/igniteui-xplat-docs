@@ -79,7 +79,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 ## カテゴリ Y 軸
 
-`CategoryYAxis` は、データを一連のカテゴリ データ項目として扱います。この軸のラベルがシーケンスの位置に応じて、Y 軸に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。この軸タイプは、[カテゴリ シリーズ](data-chart-type-category-series.md) グループ内の [棒シリーズ](data-chart-type-category-bar-series.md) とのみ互換性があります。
+`CategoryYAxis` は、データを一連のカテゴリ データ項目として扱います。この軸のラベルがシーケンスの位置に応じて、Y 軸に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。この軸タイプは、[カテゴリ シリーズ](data-chart-type-category-series.md) グループ内の[棒シリーズ](data-chart-type-category-bar-series.md)とのみ互換性があります。
 
 以下のコード スニペットは、`CategoryYAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
 
@@ -174,7 +174,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 ## 数字 X 軸
 
-`NumericXAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは X-Axis に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [シェイプ シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、この軸は [棒シリーズ](data-chart-type-category-bar-series.md) タイプの [カテゴリ シリーズ](data-chart-type-category-series.md) と互換性があります。ここでは、`ValueMemberPath` プロパティを使用してデータ列をマップします。
+`NumericXAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは X-Axis に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と[シェイプ シリーズ](data-chart-type-shape-series.md)のタイプと互換性があります。また、この軸は [棒シリーズ](data-chart-type-category-bar-series.md) タイプの[カテゴリ シリーズ](data-chart-type-category-series.md)と互換性があります。ここでは、`ValueMemberPath` プロパティを使用してデータ列をマップします。
 
 以下のコードは、`NumericXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
 
