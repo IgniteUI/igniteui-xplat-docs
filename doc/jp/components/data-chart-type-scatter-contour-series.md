@@ -243,7 +243,7 @@ series1.yAxis = yAxis;
 - `Brushes` は、輪郭を塗りつぶすためのブラシのコレクションを設定します。
 - `MaximumValue` は、ブラシを割り当てるための最大値を設定します。指定した値がこの値より大きい場合は透明になります。
 - `MinimumValue` は、ブラシを割り当てるための最小値を設定します。指定した値がこの値より小さい場合は透明になります。
-```
+
 
 ```ts
 const scale = new IgrValueBrushScale({});
