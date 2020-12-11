@@ -210,7 +210,10 @@ onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => 
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
-    }        
+    }
+    else {
+        s.acceptEdit(e.editID);
+    }
 }
 
 onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
@@ -248,7 +251,10 @@ public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChanging
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
-    } 
+    }
+    else {
+        s.acceptEdit(e.editID);
+    }    
 }
 
 public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventArgs) {    
@@ -271,6 +277,10 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
         {
             this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
             this.DataGridRef.RejectEdit(e.EditID);
+        }
+        else
+        {
+            this.DataGridRef.AcceptEdit(e.EditID);
         }
     }
 
