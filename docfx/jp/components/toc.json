@@ -301,6 +301,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel ユーティリティ",
         "href": "excel-utility.md",
         "status": ""
@@ -1106,8 +1107,7 @@
       }
     ]
   },
-  {
-    "exclude": ["Blazor"],
+  {    
     "name": "フレームワーク",
     "header": true
   },
@@ -1147,6 +1147,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel ユーティリティ",
         "href": "excel-utility.md",
         "status": ""

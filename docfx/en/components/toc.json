@@ -301,6 +301,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel Utility",
         "href": "excel-utility.md",
         "status": ""
@@ -1127,8 +1128,7 @@
       }
     ]
   },
-  {
-    "exclude": ["Blazor"],
+  {    
     "name": "Frameworks",
     "header": true
   },
@@ -1168,6 +1168,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel Utility",
         "href": "excel-utility.md",
         "status": ""

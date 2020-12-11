@@ -34,3 +34,11 @@ var chart = ws.shapes().addChart(ChartType.ColumnClustered,
 
 chart.setSourceData("A2:M6", true);
 ```
+
+```razor
+var chart = sheet.Shapes.AddChart(Documents.Excel.Charts.ChartType.ColumnClustered,
+    sheet.Rows[0].Cells[0], new Core.Point(0, 0),
+    sheet.Rows[0].Cells[props.Length - 1], new Core.Point(100, 100));
+
+chart.SetSourceData("A2:M6", true);
+```
