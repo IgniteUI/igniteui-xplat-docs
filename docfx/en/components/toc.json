@@ -86,7 +86,7 @@
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
     "href": "multi-column-combobox.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Angular"],
@@ -1041,7 +1041,7 @@
       {
         "name": "Displaying Esri Imagery",
         "href": "geo-map-display-esri-imagery.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
@@ -1133,6 +1133,7 @@
     "header": true
   },
   {
+    "exclude": ["Blazor"],
     "name": "Excel Library",
     "href": "excel-library.md",
     "status": "",
@@ -1167,11 +1168,48 @@
         "href": "excel-library-working-with-sparklines.md",
         "status": ""
       },
-      {
-        "exclude": ["Blazor"],
+      {        
         "name": "Excel Utility",
         "href": "excel-utility.md",
         "status": ""
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Excel Library",
+    "href": "excel-library.md",
+    "status": "NEW",
+    "items": [
+      {
+        "name": "Using Cells",
+        "href": "excel-library-using-cells.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Using Tables",
+        "href": "excel-library-using-tables.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Using Workbooks",
+        "href": "excel-library-using-workbooks.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Using Worksheets",
+        "href": "excel-library-using-worksheets.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Working with Charts",
+        "href": "excel-library-working-with-charts.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Working with Sparklines",
+        "href": "excel-library-working-with-sparklines.md",
+        "status": "NEW"
       }
     ]
   },
