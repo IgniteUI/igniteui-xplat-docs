@@ -1034,7 +1034,7 @@ export class MarkdownTransformer {
         // optional end:
 
         let ymlPath = jsonPath.replace('toc.json', 'toc.yml');
-        let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease);
+        let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease, platform);
 
         console.log(">> TOC generate done: " + ymlPath);
 
@@ -1044,7 +1044,7 @@ export class MarkdownTransformer {
     }
 
     // generates nodes recursively for toc.yml file
-    generateNodes(tocNodes: TocNode[], tabIndent: number, isFirstRelease: boolean): string {
+    generateNodes(tocNodes: TocNode[], tabIndent: number, isFirstRelease: boolean, platform: string): string {
         let yml: string = "";
         let tab: string = "";
         if (tabIndent > 0) tab = "  ".repeat(tabIndent);
@@ -1061,23 +1061,36 @@ export class MarkdownTransformer {
             if (node.header) {
                 yml += tab + "  header: true" + "\n";
             } else {
-                if (node.status &&
-                    node.status.toUpperCase() === "NEW") {
-                    yml += tab + "  new: true" + "\n";
-                }
-                else { //if (node.header === undefined) {
+                if (node.status) {
+                    let status = node.status.toString();
+
+                    // checking if a node has status specific to a platform, e.g. "NEW in Blazor"
+                    if (status.indexOf(platform)) {
+                        status = status.replace(" in ", "");
+                        status = status.replace(platform, "");
+                    } else {
+                        status = "";
+                    }
+
+                    if (status.toUpperCase() === "NEW") {
+                        yml += tab + "  new: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "UPDATED") {
+                        yml += tab + "  updated: true" + "\n";
+                    }
+                    else { // status === ""
+                        yml += tab + "  new: false" + "\n";
+                    }
+
+                } else { //if (node.header === undefined) {
                     yml += tab + "  new: false" + "\n";
                 }
 
-                if (node.status &&
-                    node.status.toUpperCase() === "UPDATED") {
-                    yml += tab + "  updated: true" + "\n";
-                }
             }
 
             if (node.items) {
                 yml += tab + "  items:" + "\n";
-                yml += this.generateNodes(node.items, tabIndent + 2, isFirstRelease);
+                yml += this.generateNodes(node.items, tabIndent + 2, isFirstRelease, platform);
             }
         }
         return yml;

@@ -1107,85 +1107,47 @@
       }
     ]
   },
-  {    
+  {
     "name": "フレームワーク",
     "header": true
   },
-  {    
-    "exclude": ["Blazor"],
+  {
     "name": "Excel ライブラリ",
     "href": "excel-library.md",
-    "status": "",
+    "status": "NEW in Blazor",
     "items": [
       {
         "name": "セルの使用",
         "href": "excel-library-using-cells.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "テーブルの使用",
         "href": "excel-library-using-tables.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "ワークブックの使用",
         "href": "excel-library-using-workbooks.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "ワークシートの使用",
         "href": "excel-library-using-worksheets.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "チャートの使用",
         "href": "excel-library-working-with-charts.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "スパークラインを使用した作業",
         "href": "excel-library-working-with-sparklines.md",
-        "status": ""
-      }
-    ]
-  },
-  {    
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Excel ライブラリ",
-    "href": "excel-library.md",
-    "status": "NEW",
-    "items": [
-      {
-        "name": "セルの使用",
-        "href": "excel-library-using-cells.md",
-        "status": "NEW"
+        "status": "NEW in Blazor"
       },
       {
-        "name": "テーブルの使用",
-        "href": "excel-library-using-tables.md",
-        "status": "NEW"
-      },
-      {
-        "name": "ワークブックの使用",
-        "href": "excel-library-using-workbooks.md",
-        "status": "NEW"
-      },
-      {
-        "name": "ワークシートの使用",
-        "href": "excel-library-using-worksheets.md",
-        "status": "NEW"
-      },
-      {
-        "name": "チャートの使用",
-        "href": "excel-library-working-with-charts.md",
-        "status": "NEW"
-      },
-      {
-        "name": "スパークラインを使用した作業",
-        "href": "excel-library-working-with-sparklines.md",
-        "status": "NEW"
-      },
-      {        
+        "exclude": ["Blazor"],
         "name": "Excel ユーティリティ",
         "href": "excel-utility.md",
         "status": ""
