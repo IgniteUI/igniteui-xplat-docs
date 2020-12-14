@@ -9,12 +9,12 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid. 
 
-<!-- Rect, WebComponents -->
+<!-- React, WebComponents -->
 This is activated by setting the `useAccessibility` property of the grid to `true`.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor --> 
-This is activated by setting the `--use-accessibility` property of the grid to `true` explicitly in CSS, preferably using a div tag around the grid.
+This is activated by setting `--use-accessibility` property to `true` explicitly in CSS, preferably using a div tag around the grid.
 <!-- end: Blazor -->
 
 ## $PlatformShort$ Grid Accessible Example
