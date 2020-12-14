@@ -261,6 +261,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel Utility",
         "href": "excel-utility.md",
         "status": ""
@@ -898,46 +899,46 @@
     ]
   },
   {
-    "exclude": ["Blazor"],
     "name": "Frameworks",
     "header": true
   },
-  {    
+  {
     "name": "Excel Library",
     "href": "excel-library.md",
-    "status": "",
+    "status": "NEW in Blazor",
     "items": [
       {
         "name": "Using Cells",
         "href": "excel-library-using-cells.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "Using Tables",
         "href": "excel-library-using-tables.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "Using Workbooks",
         "href": "excel-library-using-workbooks.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "Using Worksheets",
         "href": "excel-library-using-worksheets.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "Working with Charts",
         "href": "excel-library-working-with-charts.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
         "name": "Working with Sparklines",
         "href": "excel-library-working-with-sparklines.md",
-        "status": ""
+        "status": "NEW in Blazor"
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel Utility",
         "href": "excel-utility.md",
         "status": ""

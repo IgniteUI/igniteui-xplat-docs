@@ -18,6 +18,8 @@ The Infragistics $PlatformShort$ Excel Engine's `Worksheet` is where your data i
 
 <div class="divider--half"></div>
 
+
+<!-- Angular, React, WebComponents -->
 The following code shows the imports needed to use the code-snippets below:
 
 ```ts
@@ -34,6 +36,7 @@ import { RelativeIndex } from "{PackageExcel}";
 import { SortDirection } from "{PackageExcel}";
 import { WorkbookColorInfo } from "{PackageExcel}";
 ```
+<!-- end: Angular, React, WebComponents -->
 
 ## Configuring the Gridlines
 The gridlines are used to visually separate the cells in the worksheet. You may show or hide the gridlines and also change their color.
@@ -47,6 +50,13 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.displayOptions.showGridlines = false;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.ShowGridlines = false;
+```
+
 You can configure the gridlines' color using the `GridlineColor` property of the `DisplayOptions` of the worksheet. The following code demonstrates how you can change the gridlines in your worksheet to be red:
 
 ```ts
@@ -54,6 +64,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.displayOptions.gridlineColor = "Red";
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ```
 
 ## Configuring the Headers
@@ -68,6 +85,13 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.displayOptions.showRowAndColumnHeaders = false;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.ShowRowAndColumnHeaders = false;
+```
+
 ## Configuring Editing of the Worksheet
 By default, the `Worksheet` objects that you save will be editable. You can disable editing of a worksheet by protecting it using the `Worksheet` object's `Protect` method. This method has a lot of nullable `bool` arguments that determine which pieces are protected, and one of these options is to allow editing of objects, which if set to `false` will prevent editing of the worksheet.
 
@@ -78,6 +102,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.protect();
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
 ```
 
 You can also use the `Worksheet` object's `Protect` method to protect a worksheet against structural changes.
@@ -92,6 +123,14 @@ var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.protect();
 worksheet.columns(0).cellFormat.locked = false;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
+worksheet.Columns[0].CellFormat.Locked = ExcelDefaultableBoolean.False;
 ```
 
 ## Filtering Worksheet Regions
@@ -124,6 +163,14 @@ worksheet.filterSettings.setRegion("Sheet1!A1:A10");
 worksheet.filterSettings.applyAverageFilter(0, AverageFilterType.AboveAverage);
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.FilterSettings.SetRegion("Sheet1!A1:A10");
+worksheet.FilterSettings.ApplyAverageFilter(0, Documents.Excel.Filtering.AverageFilterType.AboveAverage);
+```
+
 ## Freezing and Splitting Panes
 You can freeze rows at the top of your worksheet or columns at the left using the freezing panes features. Frozen rows and columns remain visible at all times while the user is scrolling. The frozen rows and columns are separated from the rest of the worksheet by a single, solid line, which cannot be removed.
 
@@ -146,6 +193,19 @@ worksheet.displayOptions.frozenPaneSettings.firstColumnInRightPane = 2;
 worksheet.displayOptions.frozenPaneSettings.firstRowInBottomPane = 6;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.PanesAreFrozen = true;
+
+worksheet.DisplayOptions.FrozenPaneSettings.FrozenRows = 3;
+worksheet.DisplayOptions.FrozenPaneSettings.FrozenColumns = 3;
+
+worksheet.DisplayOptions.FrozenPaneSettings.FirstColumnInRightPane = 2;
+worksheet.DisplayOptions.FrozenPaneSettings.FirstRowInBottomPane = 6;
+```
+
 ## Setting the Worksheet Zoom Level
 You can change the zoom level for each worksheet independently using the `MagnificationInNormalView` property on the `Worksheet` object's `DisplayOptions`. This property takes a value between 10 and 400 and represents the percentage of zoom that you wish to apply.
 
@@ -156,6 +216,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.displayOptions.magnificationInNormalView = 300;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.MagnificationInNormalView = 300;
 ```
 
 ## Worksheet Level Sorting
@@ -172,6 +239,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.sortSettings.sortConditions().addItem(new RelativeIndex(0), new OrderedSortCondition(SortDirection.Ascending));
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.SortSettings.SortConditions.Add(new RelativeIndex(0), new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
 ```
 
 ## Worksheet Protection
@@ -199,6 +273,13 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.protect();
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
+```
+
 ## Worksheet Conditional Formatting
 You can configure the conditional formatting of a `Worksheet` object by using the many "Add" methods exposed on the `ConditionalFormats` collection of that worksheet. The first parameter of these "Add" methods is the `string` region of the worksheet that you would like to apply the conditional format to.
 
@@ -219,4 +300,12 @@ color.colorString = "Red";
 
 var format = worksheet.conditionalFormats().addAverageCondition("A1:A10", FormatConditionAboveBelow.AboveAverage);
 format.cellFormat.font.colorInfo = new WorkbookColorInfo(color);
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Documents.Excel.ConditionalFormatting.FormatConditionAboveBelow.AboveAverage);
+format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```

@@ -138,14 +138,15 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 
 ## Step 3 - Install Ignite UI for Web Components
 
-1. Install the Ignite UI for Web Component using **npm** ********** todo update this*******. In this example, we will install the Spreadsheet web component.
+1 - Install the Ignite UI for Web Component using **npm** ********** todo update this*******. In this example, we will install the Spreadsheet web component.
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
 > npm install igniteui-webcomponents-spreadsheet
 </pre>
 
-2. Import the **ModuleManager** and the web component modules into **index.js**
+2 - Import the **ModuleManager** and the web component modules into **index.js**
+
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -155,7 +156,8 @@ import { IgcExcelModule } from 'igniteui-webcomponents-excel';
 import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3. Register the web component modules with the **ModuleManager**
+3 - Register the web component modules with the **ModuleManager**
+
 ```
 // register the modules
 ModuleManager.register(
@@ -164,7 +166,8 @@ ModuleManager.register(
 );
 ```
 
-4. Add the `igc-spreadsheet` web component to the body of **index.html**
+4 - Add the `igc-spreadsheet` web component to the body of **index.html**
+
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -172,9 +175,10 @@ ModuleManager.register(
 </body>
 ```
 
-## Step 3 - Build and Run the Web Component Project
+## Step 4 - Build and Run the Web Component Project
 
-1. Open a terminal in **VS Code** and execute the **build** script
+1 - Open a terminal in **VS Code** and execute the **build** script
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -182,7 +186,7 @@ ModuleManager.register(
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
 
-2. Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
+2 - Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -192,19 +196,20 @@ ModuleManager.register(
 </body>
 ```
 
-3. To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
+3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
 <img src="../images/wc-live-server.jpg" />
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-4. Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components spreadsheet should now be rendered in your browser.
+4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components spreadsheet should now be rendered in your browser.
 
 <img src="../images/wc-project-running.jpg" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+
 ## Updating Existing App
 
 If you want to use $ProductName$ in an existing $PlatformShort$ CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:

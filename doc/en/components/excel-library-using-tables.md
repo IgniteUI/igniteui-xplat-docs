@@ -28,13 +28,20 @@ var worksheet = this.workbook.worksheets().add("Sheet1");
 worksheet.tables().add("A1:G10", true);
 ```
 
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Tables.Add("A1:G10", true);
+```
+
 Once you have added a table, you can modify it by adding or deleting rows and columns by calling the `InsertColumns`, `InsertDataRows`, `DeleteColumns`, or `DeleteDataRows` methods on the `WorksheetTable`. You can also set a new table range by using the `Resize` method of the table.
 
 The following code snippet shows the usage of these methods:
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 //Will add 5 columns at index 1.
@@ -51,6 +58,27 @@ table.deleteDataRows(0, 5);
 
 //Will resize the table to be in the region of A1:G15.
 table.resize("A1:G15");
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+//Will add 5 columns at index 1.
+table.InsertColumns(1, 5);
+
+//Will add 5 rows at index 0.
+table.InsertDataRows(0, 5);
+
+//Will delete 5 columns starting at index 1.
+table.DeleteColumns(1, 5);
+
+//Will delete 5 rows starting at index 0.
+table.DeleteDataRows(0, 5);
+
+//Will resize the table to be in the region of A1:G15.
+table.Resize("A1:G15");
 ```
 
 ## Filtering Tables
@@ -74,10 +102,18 @@ The following code snippet demonstrates how to apply an "above average" filter t
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 table.columns(0).applyAverageFilter(AverageFilterType.AboveAverage);
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].ApplyAverageFilter(Documents.Excel.Filtering.AverageFilterType.AboveAverage);
 ```
 
 ## Sorting Tables
@@ -107,5 +143,16 @@ table.columns(0).sortCondition = new OrderedSortCondition(SortDirection.Ascendin
 
 //Alternative:
 table.sortSettings.sortConditions().addItem(table.columns(0), new OrderedSortCondition(SortDirection.Ascending));
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].SortCondition = new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending);
+
+//Alternative
+table.SortSettings.SortConditions.Add(table.Columns[0], new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
 ```
 

@@ -2,7 +2,7 @@
     "Angular": {
         "isFirstRelease": false,
         "showStackblitzButtons": true,
-        "addAutoButtons": false,
+        "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ProductSpinal}",            "value": "ignite-ui-angular"},
             { "name": "\\$ProductSpinal\\$",        "value": "ignite-ui-angular"},
@@ -39,9 +39,9 @@
     "React": {
         "isFirstRelease": false,
         "showStackblitzButtons": false,
-        "addAutoButtons": true,
-        "autoButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
-        "autoButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
+        "codeSandboxButtonInject": true,
+        "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
+        "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "replacements": [
             { "name": "{ProductSpinal}",            "value": "ignite-ui-react"},
             { "name": "\\$ProductSpinal\\$",        "value": "ignite-ui-react"},
@@ -83,7 +83,9 @@
     "WebComponents": {
         "isFirstRelease": false,
         "showStackblitzButtons": false,
-        "addAutoButtons": false,
+        "codeSandboxButtonInject": true,
+        "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
+        "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "replacements": [
             { "name": "{ProductSpinal}",            "value": "ignite-ui-web-components"},
             { "name": "\\$ProductSpinal\\$",        "value": "ignite-ui-web-components"},
@@ -124,7 +126,7 @@
     "Blazor": {
         "isFirstRelease": false,
         "showStackblitzButtons": false,
-        "addAutoButtons": false,
+        "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ProductSpinal}",            "value": "ignite-ui-blazor"},
             { "name": "\\$ProductSpinal\\$",        "value": "ignite-ui-blazor"},
