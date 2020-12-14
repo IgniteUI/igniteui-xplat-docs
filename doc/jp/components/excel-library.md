@@ -27,15 +27,10 @@ excel パッケージをインストールするときに core パッケージ�
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
 
 $PlatformShort$ Excel ライブラリを作成するには、以下のモジュールが必要です。
-
-```razor
-ExcelModule.Register(IgniteUIBlazor);
-```
 
 ```ts
 // app.module.ts
@@ -77,6 +72,46 @@ Excel ライブラリには、アプリのバンドル サイズを制限する�
 -	**IgxExcelXlsxModule** – xlsx (および関連する) タイプ ファイルのロジックの読み込みと保存を含みます。これは Excel2007 関連および StrictOpenXml ANDWorkbookFormats です。
 -	**IgxExcelModule** – 他の 4 つのモジュールの参照ですべての機能の読み込み/使用を可能にします。
 
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+## Requirements
+
+In order to use the $PlatformShort$ excel library, you need to add the following using statement:
+
+```razor
+@using Infragistics.Documents.Excel
+```
+
+If you are using a Web Assembly (WASM) Blazor project, there are a couple of extra steps:
+
+- Add a reference to the following script in the wwwroot/index.html file:
+
+```razor
+<script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
+```
+
+- Set the static `Workbook.InProcessRuntime` to the current runtime. This can be done by using the following code:
+
+```razor
+@using Microsoft.JSInterop
+
+@code {
+
+    [Inject]
+    public IJSRuntime Runtime { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;        
+    }
+}
+```
+
+<!-- end: Blazor -->
+
 ## サポートされるバージョンの Microsoft Excel
 以下は Excel のサポートされるバージョンのリストです。**
 
@@ -102,10 +137,11 @@ Excel ライブラリには、アプリのバンドル サイズを制限する�
 ## ワークブックの読み込みと保存
 注: Excel ライブラリ モジュールをインポートした後、ワークブックを読み込みます。
 
+<!-- Angular, React, WebComponents -->
 
-> [!NOTE]
->
-> 以下のコード スニペットは、外部の [ExcelUtility](excel-utility.md) クラスを使用し `Workbook` を保存してロードします。
+In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+
+<!-- end: Angular, React, WebComponents -->
 
 `Workbook` オブジェクトを読み込んで保存するために、実際の `Workbook` の保存メソッドや static な `Load` メソッドを使用できます。
 
@@ -117,6 +153,26 @@ import { ExcelUtility } from "ExcelUtility";
 
 var workbook = ExcelUtility.load(file);
 ExcelUtility.save(workbook, "fileName");
+```
+
+```razor
+protected override void OnInitialized()
+{
+    var memoryStream = new System.IO.MemoryStream();
+    workbook.Save(memoryStream);
+
+    memoryStream.Position = 0;
+    var bytes = memoryStream.ToArray();
+    this.SaveFile(bytes, "fileName.xlsx", string.Empty);
+}
+
+private void SaveFile(byte[] bytes, string fileName, string mime)
+{
+    if (this.Runtime is WebAssemblyJSRuntime wasmRuntime)
+      wasmRuntime.InvokeUnmarshalled<string, string, byte[], bool>("BlazorDownloadFileFast", fileName, mime, bytes);
+    else if (this.Runtime is IJSInProcessRuntime inProc)
+      inProc.InvokeVoid("BlazorDownloadFile", fileName, mime, bytes);
+}
 ```
 
 >[!NOTE]

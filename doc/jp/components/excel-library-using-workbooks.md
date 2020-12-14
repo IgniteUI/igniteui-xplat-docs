@@ -31,6 +31,13 @@ font.name = "Times New Roman";
 font.height = 16 * 20;
 ```
 
+```razor
+var workbook = new Workbook();
+var font = workbook.Styles.NormalStyle.StyleFormat.Font;
+font.Name = "Times New Roman";
+font.Height = 16 * 20;
+```
+
 ## ワークブック プロパティの設定
 
 Microsoft Excel® ドキュメント プロパティは、ドキュメントの整理やトラッキングを改善するための情報を提供します。`Workbook` オブジェクトの `DocumentProperties` プロパティを使用してこれらのプロパティを設定するために、Infragistics $PlatformShort$ Excel Engine を使用できます。使用可能なプロパティは以下のとおりです。
@@ -39,19 +46,19 @@ Microsoft Excel® ドキュメント プロパティは、ドキュメントの�
 
 - `Title`
 
-- `subject`
+- `Subject`
 
-- `keywords`
+- `Keywords`
 
-- `category`
+- `Category`
 
-- `status`
+- `Status`
 
-- `comments`
+- `Comments`
 
-- `company`
+- `Company`
 
-- `manager`
+- `Manager`
 
 以下のコードは、ブックを作成し、`title` および `status` ドキュメント プロパティを設定する方法を示します。
 
@@ -59,6 +66,12 @@ Microsoft Excel® ドキュメント プロパティは、ドキュメントの�
 var workbook = new Workbook();
 workbook.documentProperties.title = "Expense Report";
 workbook.documentProperties.status = "Complete";
+```
+
+```razor
+var workbook = new Workbook();
+workbook.DocumentProperties.Title = "Expense Report";
+workbook.DocumentProperties.Status = "Complete";
 ```
 
 ## ブックの保護
@@ -80,7 +93,10 @@ var workbook = new Workbook();
 workbook.protect(false, false);
 ```
 
-- isProtected
+```razor
+var workbook = new Workbook();
+workbook.Protect(false, false);
+```
 
 ブックが保護されているかどうかの確認この読み取り専用プロパティは、ワークブックに Protect メソッドのオーバーロードを使用して設定された保護がある場合、true を返します。
 
@@ -89,11 +105,19 @@ var workbook = new Workbook();
 var protect = workbook.isProtected;
 ```
 
-- protection
+```razor
+var workbook = new Workbook();
+var protect = workbook.IsProtected;
+```
 
 この読み取り専用プロパティは、保護の各設定を個別に取得するためにプロパティを含む WorkbookProtection 型のオブジェクトを返します。
 
 ```ts
 var workbook = new Workbook();
 var protection = workbook.protection;
+```
+
+```razor
+var workbook = new Workbook();
+var protect = workbook.Protection;
 ```

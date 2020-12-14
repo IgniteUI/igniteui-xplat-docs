@@ -11,11 +11,16 @@ _language: ja
 
 ## 使用方法
 
-データ バインディングは、列の `DataSource` プロパティで複合オブジェクトの配列を使用して実現できます。
+The following properties are the most commonly used to configure the component:
 
 - `DataSource` - ドロップダウン メニューに表示される複雑なオブジェクトの配列の形式でデータをバインドできます。
-- `TextField` プロパティはユーザーが選択を行うときに表示する値を決定します。
-- `ValueField` プロパティは選択された基本データ項目のバインド値を決定します。オブジェクトのリストに複数のプロパティがある場合に必要です。
+- `TextField` - set this property to a field in the datasource to reflect what is shown as the display text in the items when users make a selection. 
+- `ValueField` - set this property to a field in the datasource which represents a key or unique identify for the underlying data item to be selected. This is necessary if your list of objects have several properties because if no `ValueField` is specified, then the first field in the data source is used.
+
+<!-- Blazor --> 
+Note, if the value needs to be updated, handle the `ValueChanged` event needs to be handled. The `GetValue` and `GetValueAsync` methods can be used to get the value when not handling the `ValueChanged` event.
+<!-- end: Blazor -->
+
 - `Fields` 文字列配列プロパティは、どのフィールドが含まれ、表示されるかを決定します。配列にリストされていないすべてのフィールドは、ドロップダウンに表示されません。
 - `PlaceHolder` プロパティを使用すると、コントロールの編集部分で、何も選択されていないときにテキストを表示できます。 
 - `SortMode` プロパティを使用すると、次の構成でフィールドのソートを構成できます:
@@ -49,7 +54,7 @@ Chart コンポーネントをインストールするときに core パッケ�
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
-npm install --save {PackageCharts}
+npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
