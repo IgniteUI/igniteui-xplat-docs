@@ -39,7 +39,7 @@ Line Chart Best Practices:
 Do not Use a Line Chart When: 
 
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable. 
-- Tme-series data has similar values (data over the same period), it makes overlapped lines impossible to differentiate. 
+- Time-series data has similar values (data over the same period), it makes overlapped lines impossible to differentiate. 
 
 Data Structure: 
 
@@ -101,4 +101,3 @@ Once our chart is set up, we may want to make some further styling customization
 
 ## API Members
 <!-- TODO list API links used in this topic -->
-
