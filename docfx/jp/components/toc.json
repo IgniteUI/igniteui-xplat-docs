@@ -44,13 +44,13 @@
     "status": "",
     "items": [
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
         "name": "ペインの更新",
         "href": "dock-manager-updating-panes.md",
         "status": ""
       },
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
         "name": "フレームの埋め込み",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
