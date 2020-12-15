@@ -10,12 +10,12 @@ _language: ja
 
 $ProductName$ データ テーブル / データ グリッドは、グリッドのセルと列を介したキーボード ナビゲーションのインタラクションを解釈するアクセシビリティとスクリーン リーダーをサポートしています。 
 
-<!-- Rect, WebComponents -->
+<!-- React, WebComponents -->
 これは、グリッドの `useAccessibility` プロパティを `true` に設定することによってアクティブになります。
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-これは、CSS でグリッドの `--use-accessibility` プロパティを明示的に `true` に設定することによってアクティブになります。できれば、グリッドを div タグで囲みます。
+これは、CSS で `--use-accessibility` プロパティを明示的に `true` に設定することによってアクティブになります。できれば、グリッドを div タグで囲みます。
 <!-- end: Blazor -->
 
 ## $PlatformShort$ Grid アクセシビリティの例
