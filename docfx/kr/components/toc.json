@@ -38,13 +38,33 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
         "name": "Using Panes",
         "href": "dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
+        "name": "Embedding Frames",
+        "href": "dock-manager-embedding-frames.md",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Dock Manager (Coming Soon)",
+    "href": "dock-manager.md",
+    "status": "",
+    "items": [
+      {
+	    "exclude": ["Blazor"],
+        "name": "Using Panes",
+        "href": "dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+	    "exclude": ["Blazor"],
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
