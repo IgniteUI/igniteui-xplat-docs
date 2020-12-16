@@ -16,7 +16,7 @@ _language: ja
 >[!NOTE]
 > 現在、プライベート npm フィードで **igniteui-dockmanager** パッケージのみ使用できますが、今後は他の $ProductName$ パッケージを追加する予定です。
 
-**市販されない製品**をビルドする場合は、[お気軽にお、問い合わせください](https://jp.infragistics.com/about-us/contact-us)。適切なライセンスを提供します。
+**市販されない製品**をビルドする場合は、[お気軽にお問い合わせください](https://jp.infragistics.com/about-us/contact-us)。適切なライセンスを提供します。
 
 ## プライベート npm フィードの使用
 Npm は Node.js ランタイム環境で使用する一般的なデフォルト パッケージ マネージャーです。プロジェクトに依存するパッケージをすばやく簡単に処理できます。npm の使用方法の詳細については、[npm ヘルプ](https://docs.npmjs.com/)を参照してください。

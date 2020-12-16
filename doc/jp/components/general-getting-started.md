@@ -117,7 +117,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1. **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
 この例では、Spreadsheet Web コンポーネントをインストールします。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
@@ -125,7 +125,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 > npm install igniteui-webcomponents-spreadsheet
 </pre>
 
-2. **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -135,7 +135,7 @@ import { IgcExcelModule } from 'igniteui-webcomponents-excel';
 import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3. **ModuleManager** で Web コンポーネント モジュールを登録します。
+3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
 ```
 // register the modules
 ModuleManager.register(
@@ -144,7 +144,7 @@ ModuleManager.register(
 );
 ```
 
-4. `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -154,7 +154,7 @@ ModuleManager.register(
 
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
-1. **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -162,7 +162,7 @@ ModuleManager.register(
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
-2. **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
+2 - **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -172,19 +172,20 @@ ModuleManager.register(
 </body>
 ```
 
-3. プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
+3 - プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
 
 <img src="../images/wc-live-server.jpg" />
 
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
-4. ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
+4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
 
 <img src="../images/wc-project-running.jpg" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+
 ## 既存アプリの更新
 
 既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。

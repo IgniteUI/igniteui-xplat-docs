@@ -18,7 +18,7 @@ $ProductName$ スパークライン コンポーネントは、軽量なチャ�
     <iframe id="sparkline-display-types-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-display-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ スパークラインの例"></iframe>
 </div>
 <div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-display-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz　で表示
+    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-display-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
     </button>
 </div>
 <sample-button src="charts/sparkline/display-types"></sample-button>
@@ -145,7 +145,7 @@ $ProductName$ スパークライン コンポーネントは、以下のスパ�
 
 ## マーカー
 
-$ProductName$ スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが Line、Area、および Column のスパークラインに設定できます。``WinLoss`` 型のスパークラインは、現在マーカーを設定できません。既定では、マーカーは表示されません。
+$ProductName$ スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが `Line`、`Area`、および `Column` のスパークラインに設定できます。``WinLoss`` 型のスパークラインは、現在マーカーを設定できません。既定では、マーカーは表示されません。
 
 スパークライン内のマーカーは、以下の場所を任意に組み合わせて配置できます。
 

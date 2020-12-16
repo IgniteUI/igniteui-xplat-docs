@@ -35,5 +35,13 @@ var sheet2 = workbook.worksheets().add("Data");
 sheet1.sparklineGroups().add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
 sheet1.sparklineGroups().add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 workbook.save(workbook, "Sparklines.xlsx");
+```
 
+```razor
+var workbook = new Workbook();
+var sheet1 = workbook.Sheets.Add("Sparklines", SheetType.Worksheet) as Worksheet;
+var sheet2 = workbook.Sheets.Add("Data", SheetType.Worksheet) as Worksheet;
+
+sheet1.SparklineGroups.Add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
+sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 ```

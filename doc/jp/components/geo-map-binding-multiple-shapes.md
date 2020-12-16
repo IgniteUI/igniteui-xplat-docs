@@ -75,7 +75,7 @@ import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```razor
 GeographicMapModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
-```razor
+```
 
 ## シリーズの作成
 
