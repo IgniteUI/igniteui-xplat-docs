@@ -125,15 +125,15 @@ $PlatformShort$ データ チャート コンポーネントは、特定の種�
 軸タイプ           |サポートされるシリーズ タイプ
 --------------------|-----------------------
 CategoryYAxis       |[カテゴリ シリーズ ](data-chart-type-category-series.md) グループの `Bar` のみ
-CategoryXAxis       |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-TimeXAxis           |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-OrdinalTimeXAxis    |すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-PercentChangeYAxis|すべての [ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)
-NumericYAxis        |すべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
-NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての [散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、`Bar`
-NumericAngleAxis   |すべての [極座標シリーズ](data-chart-type-polar-series.md)
-NumericRadiusAxis|すべての [極座標シリーズ](data-chart-type-polar-series.md) と [ラジアル シリーズ](data-chart-type-radial-series.md)
-CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radial-series.md)
+CategoryXAxis       |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+TimeXAxis           |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+OrdinalTimeXAxis    |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+PercentChangeYAxis|すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)
+NumericYAxis        |すべての[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
+NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、`Bar`
+NumericAngleAxis   |すべての[極座標シリーズ](data-chart-type-polar-series.md)
+NumericRadiusAxis|すべての[極座標シリーズ](data-chart-type-polar-series.md)と[ラジアル シリーズ](data-chart-type-radial-series.md)
+CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial-series.md)
 
 
 ## 使用方法

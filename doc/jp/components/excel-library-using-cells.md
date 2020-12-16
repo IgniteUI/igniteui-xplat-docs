@@ -18,6 +18,7 @@ Excel ワークシートの `WorksheetCell` オブジェクトは、ワークシ
 
 <div class="divider--half"></div>
 
+<!-- Angular, React, WebComponents -->
 ## 参照
 
 以下のコードは、以下のコード スニペットを使用するインポートを示します。
@@ -31,6 +32,7 @@ import { NamedReference } from "{PackageExcel}";
 import { WorksheetCellComment } from "{PackageExcel}";
 import { FormattedString } from "{PackageExcel}";
 ```
+<!-- end: Angular, React, WebComponents -->
 
 ## セルと領域を参照
 
@@ -46,6 +48,16 @@ var worksheet = workbook.worksheets().add("Sheet1");
 var cell = worksheet.getCell("E2");
 //Accessing a range of cells
 var region = worksheet.getRegion("G1:G10");
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Accessing a single cell
+var cell = worksheet.GetCell("E2");
+//Accessing a range of cells
+var region = worksheet.GetRegion("G1:G10");
 ```
 
 ## セルと領域に名前でアクセス
@@ -64,11 +76,24 @@ var cell_reference = workbook.namedReferences().add("myCell", "=Sheet1:A1");
 var region_reference = workbook.namedReferences().add("myRegion", "=Sheet1!A1:B2");
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cell_reference = workbook.NamedReferences.Add("myCell", "=Sheet1:A1");
+var region_reference = workbook.NamedReferences.Add("myRegion", "=Sheet1!A1:B2");
+```
+
 以下のコードは、"myCell" と "myRegion" 名前付き参照によって参照されたセルと領域を取得する例です。
 
 ```ts
 var cell = worksheet.getCell("myCell");
 var region = worksheet.getRegion("myRegion");
+```
+
+```razor
+var cell = worksheet.GetCell("myCell");
+var region = worksheet.GetRegion("myRegion");
 ```
 
 ## セルにコメントを追加
@@ -88,6 +113,17 @@ cellComment.text = commentText;
 worksheet.rows(0).cells(0).comment = cellComment;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellComment = new WorksheetCellComment();
+var commentText = new FormattedString("This cell has a comment!");
+cellComment.Text = commentText;
+
+worksheet.Rows[0].Cells[0].Comment = cellComment;
+```
+
 ## セルに数式を追加
 
 Infragistics Excel ライブラリは、ワークシートでセルまたはセルのグループに Microsoft Excel の数式を追加できます。`WorksheetCell` オブジェクトの `ApplyFormula` メソッドを使用、または `Formula` オブジェクトを初期化してセルに割り当てることができます。セルに数式を適用する方法に関わらず、`WorksheetCell` オブジェクトのプロパティを使用して `Formula` オブジェクトにアクセスできます。値が必要な場合、セルの `Value` プロパティを使用します。
@@ -102,6 +138,16 @@ Infragistics Excel ライブラリは、ワークシートでセルまたはセ�
  //Using a Formula object to apply a formula
  var sumFormula = Formula.parse("=SUM(A1:A5)", CellReferenceMode.A1);
  sumFormula.applyTo(worksheet.rows(5).cells(0));
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+worksheet.Rows[5].Cells[0].ApplyFormula("=SUM(A1:A5)");
+
+//Using a Formula object to apply a formula
+var sumFormula = Formula.Parse("=SUM(A1:A5)", CellReferenceMode.A1);
+sumFormula.ApplyTo(worksheet.Rows[5].Cells[0]);
 ```
 
 ## セル書式のコピー
@@ -121,6 +167,18 @@ worksheet.columns(1).cellFormat.font.bold = true;
 worksheet.columns(3).cellFormat.setFormatting(worksheet.columns(1).cellFormat);
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Format 2nd column
+worksheet.Columns[1].CellFormat.Fill = CellFill.CreateSolidFill(CoreGraphics.Colors.Blue);
+worksheet.Columns[1].CellFormat.Font.Bold = ExcelDefaultableBoolean.True;
+
+//Copy format of 2nd column to 4th column
+worksheet.Columns[3].CellFormat.SetFormatting(worksheet.Columns[1].CellFormat);
+```
+
 ## セルの書式設定
 
 Infragistics $PlatformShort$ Excel Library は、セルの外観と動作をカスタマイズすることができます。`WorksheetCell`、`WorksheetRow`、`WorksheetColumn`、または `WorksheetMergedCellsRegion` オブジェクトの `CellFormat` プロパティで公開したプロパティを設定してセルをカスタマイズできます。
@@ -136,6 +194,13 @@ var workbook = new Workbook(format);
 var workbook = workbook.worksheets().add("Sheet1");
 
 worksheet.columns(2).cellFormat.formatString = "\"$\"#,##0.00";
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Columns[2].CellFormat.FormatString = "\"$\"#,##0.00";
 ```
 
 ## Excel 2007 カラー モデル
@@ -170,6 +235,14 @@ var worksheet = workbook.worksheets().add("Sheet1");
 
 var cellFill = CellFill.createSolidFill("Blue");
 worksheet.rows(0).cells(0).cellFormat.fill = cellFill;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellFill = CellFill.CreateSolidFill(Core.Graphics.Colors.Blue);
+worksheet.Rows[0].Cells[0].CellFormat.Fill = cellFill;
 ```
 
 セルで線状グラデーションと長方形グラデーションを使用して、色 (Excel セルの背景、罫線などの色) を指定できます。これらのグラデーションを付けられたワークブックを .xls ファイル形式で保存して、Excel 2007/2010 で開いたときはグラデーションを表示し、これらのファイルを Microsoft Excel 2003 で開くときは、最初のグラデーション境界からのベタ一色の色でセルが塗りつぶされるようにします。
@@ -276,6 +349,26 @@ mergedRegion1.value = "Day 1";
 worksheet.rows(0).cells(2).cellFormat.alignment = HorizontalCellAlignment.Center;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+// Make some column headers
+worksheet.Rows[1].Cells[1].Value = "Morning";
+worksheet.Rows[1].Cells[2].Value = "Afternoon";
+worksheet.Rows[1].Cells[3].Value = "Evening";
+
+// Create a merged region from column 1 to column 3
+var mergedRegion1 = worksheet.MergedCellsRegions.Add(0, 1, 0, 3);
+
+// Set the value of the merged region
+mergedRegion1.Value = "Day1";
+
+// Set the cell alignment of the middle cell in the merged region.
+// Since a cell and its merged region shared a cell format, this willultimately set the format of the merged region
+worksheet.Rows[0].Cells[2].CellFormat.Alignment = HorizontalCellAlignment.Center;
+```
+
 ## Excel に表示されるセル テキストを取得
 
 セルに表示されるテキストは、書式文字列やセルが含まれる列幅など実際のセル値以外の複数の要因に依存します。
@@ -327,4 +420,11 @@ var workbook = new Workbook();
 var worksheet = this.workbook.worksheets().add("Sheet1");
 
 var cellText = worksheet.rows(0).cells(0).getText();
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellText = worksheet.Rows[0].Cells[0].GetText();
 ```

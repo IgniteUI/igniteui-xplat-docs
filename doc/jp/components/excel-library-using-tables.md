@@ -8,10 +8,11 @@ _language: ja
 # $PlatformShort$ テーブルの使用
 
 Infragistics $PlatformShort$ Excel Engine の `WorksheetTable` 機能は、行列のデータを書式設定できます。ワークシート テーブルのデータは `Worksheet` の他の行や列のデータから個々に管理できます。
-<!--## Demo
+
+<!--## $PlatformShort$ Using Tables Example
 
 <div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
+    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Using Tables Example"></iframe>
 </div>-->
 
 
@@ -29,13 +30,20 @@ var worksheet = this.workbook.worksheets().add("Sheet1");
 worksheet.tables().add("A1:G10", true);
 ```
 
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Tables.Add("A1:G10", true);
+```
+
 テーブルを追加後 `WorksheetTable` で `InsertColumns`、`InsertDataRows`、`DeleteColumns`、または `DeleteDataRows` メソッドを呼び出して行列を追加または削除して変更できます。テーブルの `Resize` メソッドを使用して新しいテーブル範囲を設定できます。
 
 以下のコード スニペットは、3 つのメソッドの使用方法を示します。
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 //Will add 5 columns at index 1.
@@ -52,6 +60,27 @@ table.deleteDataRows(0, 5);
 
 //Will resize the table to be in the region of A1:G15.
 table.resize("A1:G15");
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+//Will add 5 columns at index 1.
+table.InsertColumns(1, 5);
+
+//Will add 5 rows at index 0.
+table.InsertDataRows(0, 5);
+
+//Will delete 5 columns starting at index 1.
+table.DeleteColumns(1, 5);
+
+//Will delete 5 rows starting at index 0.
+table.DeleteDataRows(0, 5);
+
+//Will resize the table to be in the region of A1:G15.
+table.Resize("A1:G15");
 ```
 
 ## テーブルのフィルタリング
@@ -75,10 +104,18 @@ table.resize("A1:G15");
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 table.columns(0).applyAverageFilter(AverageFilterType.AboveAverage);
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].ApplyAverageFilter(Documents.Excel.Filtering.AverageFilterType.AboveAverage);
 ```
 
 ## テーブルのソート
@@ -95,7 +132,7 @@ table.columns(0).applyAverageFilter(AverageFilterType.AboveAverage);
 - `FillSortCondition` - 塗りつぶしが特定のパターン/グラデーションであるかどうかに基づいてセルをソートします。
 - `FontColorSortCondition` - フォントが特定の色であるかどうかによってセルをソートします。
 
-また WorksheetTable の `SortSettings` の `CaseSensitive` プロパティは、文字列が大文字と小文字を区別してソートできるかどうかを開発者が設定できます。
+また `WorksheetTable` の `SortSettings` の `CaseSensitive` プロパティは、文字列が大文字と小文字を区別してソートできるかどうかを開発者が設定できます。
 
 以下のコード スニペットは、`WorksheetTable` に `OrderedSortCondition` を適用する方法です。
 
@@ -109,3 +146,15 @@ table.columns(0).sortCondition = new OrderedSortCondition(SortDirection.Ascendin
 //Alternative:
 table.sortSettings.sortConditions().addItem(table.columns(0), new OrderedSortCondition(SortDirection.Ascending));
 ```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].SortCondition = new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending);
+
+//Alternative
+table.SortSettings.SortConditions.Add(table.Columns[0], new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
+```
+

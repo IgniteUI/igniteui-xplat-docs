@@ -61,7 +61,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## 数式バーの構成
 
-$PlatformShort$ `Spreadsheet` は、コントロールの IsFormulaBarVisible プロパティを設定して数式バーの表示/非表示を設定できます。
+$PlatformShort$ `Spreadsheet` は、コントロールの `IsFormulaBarVisible` プロパティを設定して数式バーの表示/非表示を設定できます。
 
 以下のコード スニペットは上記のデモです。
 
@@ -105,7 +105,7 @@ this.spreadsheet.areGridlinesVisible = true;
 
 ## ヘッダーの構成
 
-`Spreadsheet` は、AreHeadersVisible プロパティを設定してへッダーの可視性を設定できます。
+`Spreadsheet` は、`AreHeadersVisible` プロパティを設定してへッダーの可視性を設定できます。
 
 以下のコード スニペットは上記のデモです。
 
