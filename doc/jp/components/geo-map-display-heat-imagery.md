@@ -15,7 +15,7 @@ $ProductName$ マップ コントロールには、Shape ファイルをタイ�
 
 <!-- Angular, React -->
 ```ts
-//WebComponents sample not working in CodeSandbox. Remove build flag once this is fixed.
+//WebComponents サンプルが CodeSandbox で機能しません。これが修正されたら、ビルドのフラグを削除します。
 ```
 <div class="sample-container loading" style="height: 500px">
     <iframe id="geo-map-display-heat-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ヒート画像の表示の例"></iframe>
