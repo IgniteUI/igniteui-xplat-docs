@@ -113,7 +113,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 <!-- end: Blazor -->
 
 ## サポートされるバージョンの Microsoft Excel
-以下は Excel のサポートされるバージョンのリストです。**
+以下は Excel のサポートされるバージョンのリストです。
 
 -  Microsoft Excel 97
 
