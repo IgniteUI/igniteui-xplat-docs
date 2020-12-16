@@ -169,7 +169,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-`MedianPriceIndicator` でデータ チャートのインスタンスを作成する方法を示します。これらのシリーズは同じ  X 軸と Y 軸を使用しますが複数軸を使用して異なるシリーズに割り当てることができます。詳細については、[軸共有と複数軸](data-chart-axis-sharing.md)トピックを参照してください。
+`MedianPriceIndicator` でデータ チャートのインスタンスを作成する方法を示します。これらのシリーズは同じ X 軸と Y 軸を使用しますが複数軸を使用して異なるシリーズに割り当てることができます。詳細については、[軸共有と複数軸](data-chart-axis-sharing.md)トピックを参照してください。
 
 ```razor
 <DataChart Height="500px" Width="750px">

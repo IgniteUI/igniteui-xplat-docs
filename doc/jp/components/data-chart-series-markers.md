@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ データ チャート | データ可視化ツール | マーカー | インフラジスティックス
-_description: インフラジスティックスの $Platform Short$ チャートのマーカーを使用して、値が主グリッド線と副グリッド線の間にある場合でもデータ 　ポイントを識別します。$ProductName$ グラフのマーク機能をお試しください!
+_description: インフラジスティックスの $Platform Short$ チャートのマーカーを使用して、値が主グリッド線と副グリッド線の間にある場合でもデータ ポイントを識別します。$ProductName$ グラフのマーク機能をお試しください!
 _keywords: $PlatformShort$ charts, data chart, markers, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, マーカー, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'MarkerSeries']
 _language: ja
