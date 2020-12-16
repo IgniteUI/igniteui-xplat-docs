@@ -76,23 +76,23 @@ Excel ライブラリには、アプリのバンドル サイズを制限する�
 
 <!-- Blazor -->
 
-## Requirements
+## 要件
 
-In order to use the $PlatformShort$ excel library, you need to add the following using statement:
+$PlatformShort$ Excel ライブラリを使用するには、次の using ステートメントを追加する必要があります:
 
 ```razor
 @using Infragistics.Documents.Excel
 ```
 
-If you are using a Web Assembly (WASM) Blazor project, there are a couple of extra steps:
+Web Assembly (WASM) Blazor プロジェクトを使用している場合は、いくつかの追加手順があります:
 
-- Add a reference to the following script in the wwwroot/index.html file:
+- Wwwroot/index.html ファイルに次のスクリプトへの参照を追加します:
 
 ```razor
 <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
 ```
 
-- Set the static `Workbook.InProcessRuntime` to the current runtime. This can be done by using the following code:
+- 静的な `Workbook.InProcessRuntime` を現在のランタイムに設定します。以下のコードを使用できます:
 
 ```razor
 @using Microsoft.JSInterop
@@ -139,7 +139,7 @@ If you are using a Web Assembly (WASM) Blazor project, there are a couple of ext
 
 <!-- Angular, React, WebComponents -->
 
-In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+次のコードスニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
 <!-- end: Angular, React, WebComponents -->
 

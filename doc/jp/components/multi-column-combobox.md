@@ -11,14 +11,14 @@ _language: ja
 
 ## 使用方法
 
-The following properties are the most commonly used to configure the component:
+次のプロパティは、コンポーネントを構成するために一般的に最も使用されます:
 
 - `DataSource` - ドロップダウン メニューに表示される複雑なオブジェクトの配列の形式でデータをバインドできます。
-- `TextField` - set this property to a field in the datasource to reflect what is shown as the display text in the items when users make a selection. 
-- `ValueField` - set this property to a field in the datasource which represents a key or unique identify for the underlying data item to be selected. This is necessary if your list of objects have several properties because if no `ValueField` is specified, then the first field in the data source is used.
+-`TextField` - このプロパティをデータソースのフィールドに設定して、ユーザーが選択したときに項目の表示テキストとして表示される内容を反映します。 
+-`ValueField` - このプロパティを、選択する基になるデータ項目のキーまたは一意の ID を表すデータソースのフィールドに設定します。これは、オブジェクトのリストに複数のプロパティがある場合に必要です。これは、 `ValueField` が指定されていない場合、データソースの最初のフィールドが使用されるためです。
 
 <!-- Blazor --> 
-Note, if the value needs to be updated, handle the `ValueChanged` event needs to be handled. The `GetValue` and `GetValueAsync` methods can be used to get the value when not handling the `ValueChanged` event.
+値を更新する必要がある場合は、 `ValueChanged` イベントを処理する必要があることに注意してください。`ValueChanged` イベントを処理しない場合、` GetValue` および  `GetValueAsync` メソッドを使用して値を取得できます。
 <!-- end: Blazor -->
 
 - `Fields` 文字列配列プロパティは、どのフィールドが含まれ、表示されるかを決定します。配列にリストされていないすべてのフィールドは、ドロップダウンに表示されません。
@@ -116,3 +116,4 @@ ModuleManager.register(
     }
 }
 ```
+
