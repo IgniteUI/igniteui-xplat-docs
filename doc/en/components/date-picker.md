@@ -8,6 +8,19 @@ mentionedTypes: ['DatePicker']
 
 The Date Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
 
+## $PlatformShort$ Date Picker Overview Example
+
+<div class="sample-container loading" style="height: 250px">
+    <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/date-picker-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Date Picker Overview Example"></iframe>
+</div>
+
+<div>
+    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="multi-column-combobox-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
+    </button>
+<sample-button src="editors/date-picker/overview"></sample-button>
+
+</div>
+
 ## Usage
 
 The $PlatformShort$ Date Picker editor component consists of three default parts - the text area, a calendar drop-down button, and a clear button. These areas are described below:
@@ -19,19 +32,6 @@ The $PlatformShort$ Date Picker editor component consists of three default parts
 - Clear Button: The clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the Date Picker. The clear button's visibility can be toggled on and off by setting the `ShowClearButton` property of the Date Picker.
 
 Users can also customize the Date Picker's font by using the various text properties of the control. They are: `TextColor`, `TextFontFamily`, `TextFontSize`, `TextFontStyle`, and `TextFontWeight`.
-
-## $PlatformShort$ Date Picker Overview Example
-
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/date-picker-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Date Picker Overview Example"></iframe>
-</div>
-
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="multi-column-combobox-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="editors/date-picker/overview"></sample-button>
-
-</div>
 
 <!-- React, WebComponents -->
 ## Dependencies
