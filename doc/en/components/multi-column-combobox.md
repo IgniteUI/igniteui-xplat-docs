@@ -10,7 +10,7 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 ## $PlatformShort$ Multi-Column Combo Box Overview Example
 
-<div class="sample-container loading" style="height: 500px">
+<div class="sample-container loading" style="height: 400px">
     <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Multi-Column Combo Box Overview Example"></iframe>
 </div>
 
