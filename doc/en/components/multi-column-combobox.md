@@ -21,35 +21,9 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 </div>
 
-## Usage
-
-The following properties are the most commonly used to configure the component:
-
-- `DataSource` - allows binding data in form of an array of complex objects that will be displayed in drop down menu.
-- `TextField` - set this property to a field in the datasource to reflect what is shown as the display text in the items when users make a selection. 
-- `ValueField` - set this property to a field in the datasource which represents a key or unique identify for the underlying data item to be selected. This is necessary if your list of objects have several properties because if no `ValueField` is specified, then the first field in the data source is used. 
-
-<!-- Blazor --> 
-Note, if the value needs to be updated, handle the `ValueChanged` event needs to be handled. The `GetValue` and `GetValueAsync` methods can be used to get the value when not handling the `ValueChanged` event.
-<!-- end: Blazor -->
-
-- `Fields` - string array property that determines which fields will be included and displayed. All fields not listed in the array will not be displayed in the dropdown.
-- `PlaceHolder` property lets the edit portion of the control to display text when nothing is selected. 
-- `SortMode` property lets you configure the field's sorting with the following configurations:
-
-    * `None`
-    * `SortByOneColumnOnly`
-    * `SortByOneColumnOnlyTriState`
-    * `SortByMultipleColumns`
-    * `SortByMultipleColumnsTriState`
-
-Note, the TriState sort options will allow sorted columns to be unsorted.
-
-
 <!-- Angular, React, WebComponents -->
 ## Dependencies
 When installing the charts component, the core package must also be installed.
-
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -83,22 +57,50 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
+## Usage
+
+The following properties are the most commonly used to configure the component:
+
+- `DataSource` - Allows binding data in form of an array of complex objects that will be displayed in the drop down menu.
+- `TextField` - Set this property to a string name of a field of a data item in the bound datasource to reflect what is shown as the display text in the items when users make a selection.
+- `ValueField` - Set this property to a string name of a field of a data item in the bound datasource which represents a key or unique identify for the underlying data item to be selected. This is necessary if your list of objects have several properties because if no `ValueField` is specified, then the first field in the data source is used.
+- `Fields` - String array property that determines which fields will be included and displayed. All fields not listed in the array will not be displayed in the dropdown.
+- `Placeholder` - This property lets the edit portion of the control to display text when nothing is selected.
+- `SortMode` - This property lets you configure the field's sorting with the following configurations:
+    * `None`
+    * `SortByOneColumnOnly`
+    * `SortByOneColumnOnlyTriState`
+    * `SortByMultipleColumns`
+    * `SortByMultipleColumnsTriState`
+
+Note, the TriState sort options will allow sorted columns to be unsorted.
+
+<!-- Blazor --> 
+If the value of the component needs to be updated, the `ValueChanged` event needs to be handled. The `GetValue` and `GetValueAsync` methods can be used to get the value when not within the `ValueChanged` event handler.
+<!-- end: Blazor -->
+
 ## Code Snippet
 
 ```tsx
-<IgrMultiColumnComboBox
-    width="400px"
-    dataSource={countryNames}
+<IgrMultiColumnComboBox height="50px" width="400px"
+    dataSource={this.countryNames}
     textField="Name">
 </IgrMultiColumnComboBox>
 ```
 
+<!-- WebComponents -->
 ```html
-<igc-multi-column-combo-box width="400px"
-    data-source={countryNames}
-    text-field="Name">       
+<igc-multi-column-combo-box height="50px" width="400px" text-field="Name">
 </igc-multi-column-combo-box>
 ```
+
+```ts
+constructor() {
+    let multiColumnComboBox = document.getElementById("comboBox") as IgcMultiColumnComboBoxComponent;
+    multiColumnComboBox.dataSource = countryNames;    
+}
+```
+<!-- end:WebComponents -->
 
 ```razor                
 <MultiColumnComboBox Height="50px" Width="400px"
@@ -115,4 +117,3 @@ ModuleManager.register(
     }
 }
 ```
-
