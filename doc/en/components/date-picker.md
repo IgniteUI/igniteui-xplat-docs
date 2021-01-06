@@ -66,8 +66,6 @@ The $PlatformShort$ Date Picker editor component consists of three default parts
 
 Users can also customize the Date Picker's font by using the various text properties of the control. They are: `TextColor`, `TextFontFamily`, `TextFontSize`, `TextFontStyle`, and `TextFontWeight`.
 
-## Code Examples
-
 ### Setting Initial Value
 
 The following code demonstrates how to add and set the value of the `DatePicker` component:
