@@ -112,7 +112,7 @@ Lastly,  -->
 
 <img src="../images/wc-project.jpg"/>
 
-8 - Update the **package.config** file to include a build script using **webpack**
+8 - Update the **package.json** file to include a build script using **webpack**
 
 ```
   "scripts": {
@@ -131,14 +131,14 @@ Lastly,  -->
 </pre>
 
 2 - Import the web component polyfills into **index.js**
-```tsx
+```
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## Step 3 - Install Ignite UI for Web Components
 
-1 - Install the Ignite UI for Web Component using **npm** ********** todo update this*******. In this example, we will install the Spreadsheet web component.
+1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Spreadsheet web component.
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
