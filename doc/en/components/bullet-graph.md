@@ -50,13 +50,11 @@ BulletGraphModule.Register(IgniteUIBlazor);
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
-import { IgxBulletGraphComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxBulletGraphModule,
-        IgxBulletGraphComponent
+        IgxBulletGraphModule
         // ...
     ]
 })
@@ -65,7 +63,6 @@ export class AppModule {}
 
 ```ts
 import { IgrBulletGraphModule } from 'igniteui-react-gauges';
-import { IgrBulletGraph } from 'igniteui-react-gauges';
 
 IgrBulletGraphModule.register();
 ```
