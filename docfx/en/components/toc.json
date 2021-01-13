@@ -309,6 +309,11 @@
     ]
   },
   {
+    "name": "Reference Topic",
+    "href": "reference-topic.md",
+    "status": "NEW"
+  },
+  {
     "name": "Charts (NEW)",
     "href": "charts/chart-type-overview.md",
     "header": true,
@@ -482,7 +487,7 @@
     "status": ""
   },
   {
-    "name": "Charts",
+    "name": "Charts (OLD)",
     "header": true
   },
   {
