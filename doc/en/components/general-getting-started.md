@@ -121,7 +121,15 @@ Lastly,  -->
 ```
 
 > [!Note]
-> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**.
+> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**. 
+>
+> If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
+
+```
+"scripts": {
+    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+},
+```
 
 ## Step 2 - Install Polyfills
 
