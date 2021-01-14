@@ -38,13 +38,13 @@
     "status": "",
     "items": [
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
         "name": "Using Panes",
         "href": "dock-manager-updating-panes.md",
         "status": ""
       },
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	    "exclude": ["Blazor"],
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
