@@ -41,7 +41,7 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
 	    "exclude": ["Blazor", "WebComponents"],
