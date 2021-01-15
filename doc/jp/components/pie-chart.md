@@ -1,7 +1,7 @@
 ---
 title: $PlatformShort$ 円チャート | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 円チャートを使用して、分類データを表示するカラフルな円チャートを作成します。$ProductName$ 円チャートの設定可能な要素について説明します。
-_keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, $PlatformShort$ チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
+_keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, スライスの選択, スライスの切り出し, animation, $PlatformShort$ チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 _language: ja
 ---

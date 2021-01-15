@@ -9,21 +9,9 @@ _language: ja
 
 日付選択コンポーネントは、ドロップダウン カレンダー UI を使用して日、月、年を直感的に選択できます。これは、アプリケーション ユーザーが特定の日付を選択する必要があり、複数のエディターを組み合わせて日付範囲 UI を作成する場合に便利です。
 
-## 使用方法
-
-$PlatformShort$ 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
-
-- テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
-
-- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。カレンダー ボタンの色を変更するには、コントロールの `IconColor` プロパティを設定します。
-
-- クリア ボタン: クリア ボタンはカレンダー ボタンのすぐ左にあり、X で表示されます。クリックすると、日付選択の `Value` をクリアします。クリア ボタンの表示/非表示は、日付選択の `ShowClearButton` プロパティを設定して切り替えることができます。
-
-ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
-
 ## $PlatformShort$ 日付選択の例
 
-<div class="sample-container loading" style="height: 500px">
+<div class="sample-container loading" style="height: 300px">
     <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/date-picker-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 日付選択の例"></iframe>
 </div>
 
@@ -67,7 +55,19 @@ ModuleManager.register(IgcDatePickerModule);
 
 <div class="divider--half"></div>
 
-## コード スニペット
+## 使用方法
+
+$PlatformShort$ 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
+
+- テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
+
+- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。カレンダー ボタンの色を変更するには、コントロールの `IconColor` プロパティを設定します。
+
+- クリア ボタン: クリア ボタンはカレンダー ボタンのすぐ左にあり、X で表示されます。クリックすると、日付選択の `Value` をクリアします。クリア ボタンの表示/非表示は、日付選択の `ShowClearButton` プロパティを設定して切り替えることができます。
+
+ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
+
+### Setting Initial Value
 
 以下のコードは、`DatePicker` コンポーネントの値を追加および設定する方法を示します。
 
@@ -111,3 +111,36 @@ constructor() {
 }
 ```
 
+### カスタマイズ
+
+以下のコードは、アイコンの色を設定し、クリア ボタンを非表示にして、`DatePicker` コンポーネントをカスタマイズする方法を示します。
+
+```tsx
+public render(): JSX.Element {
+    return (                 
+        <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
+    );
+}
+```
+
+<!-- WebComponents -->
+```html
+  <igc-date-picker id="datePicker" height="50px" width="220px"
+        show-clear-button="false"
+        icon-color="red">
+  </igc-date-picker>
+```
+
+<!-- end:WebComponents -->
+
+```razor                
+<DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
+
+@code {    
+    
+    protected override void OnInitialized()
+    {
+        DatePickerModule.Register(IgniteUIBlazor);        
+    }
+}
+```
