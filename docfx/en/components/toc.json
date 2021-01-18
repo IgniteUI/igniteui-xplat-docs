@@ -315,21 +315,25 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Blazor"],
     "name": "Reference Topic",
-    "href": "charts/reference-topic.md",
+    "href": "charts/topic-reference.md",
     "status": "NEW"
   },
   {
+    "exclude": ["Blazor"],
     "name": "Binding Real Time Data",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
+    "exclude": ["Blazor"],
     "name": "Binding High Volume Data",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
+    "exclude": ["Blazor"],
     "name": "Binding Multiple Data Source",
     "href": "financial-chart-multiple-data.md",
     "status": ""
@@ -370,14 +374,14 @@
     "status": "NEW"
   },
   {
-    "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
-    "status": "NEW"
-  },
-  {
     "name": "Pie Chart",
     "href": "pie-chart.md",
     "status": ""
+  },
+  {
+    "name": "Polar Chart",
+    "href": "charts/chart-types-polar.md",
+    "status": "NEW"
   },
   {
     "name": "Radial Chart",
