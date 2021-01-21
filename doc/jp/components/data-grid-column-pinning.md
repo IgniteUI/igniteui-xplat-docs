@@ -303,8 +303,8 @@ public onGridRef(grid: IgrDataGrid) {
     if (this.toolbar != null) {
         this.toolbar.targetGrid = this.grid;
 
-        let productNameColumn = document.getElementById("productname") as IgrTextColumnComponent;
-        productNameColumn.pinned = true;
+        let productNameColumn = this.grid.actualColumns.item(0);
+        productNameColumn.pinned = PinnedPositions.Left; 
     }
 }
 

@@ -41,7 +41,7 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
 	    "exclude": ["Blazor", "WebComponents"],
@@ -309,128 +309,116 @@
     ]
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Charts (NEW)",
     "href": "charts/chart-type-overview.md",
     "header": true,
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
+    "name": "Reference Topic",
+    "href": "charts/topic-reference.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Blazor"],
     "name": "Binding Real Time Data",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
     "name": "Binding High Volume Data",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
     "name": "Binding Multiple Data Source",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Area Chart",
     "href": "charts/chart-types-area.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Bar Chart",
     "href": "charts/chart-types-bar.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Bubble Chart",
     "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Column Chart",
     "href": "charts/chart-types-column.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Donut Chart",
     "href": "doughnut-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Financial Chart",
     "href": "charts/chart-types-financial.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Line Chart",
     "href": "charts/chart-types-line.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
-    "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Pie Chart",
     "href": "pie-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "name": "Polar Chart",
+    "href": "charts/chart-types-polar.md",
+    "status": "NEW"
+  },
+  {
     "name": "Radial Chart",
     "href": "charts/chart-types-radial.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Scatter Chart",
     "href": "charts/chart-types-scatter.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Shape Chart",
     "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Spline Chart",
     "href": "charts/chart-types-spline.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Step Chart",
     "href": "charts/chart-types-step.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Sparkline",
     "href": "sparkline.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Treemap",
     "href": "treemap-overview.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Chart Features",
     "href": "charts/chart-feature-overview.md",
     "status": "NEW",
@@ -498,13 +486,12 @@
       ]
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Data Sources",
     "href": "data-chart-data-sources.md",
     "status": ""
   },
   {
-    "name": "Charts",
+    "name": "Charts (OLD)",
     "header": true
   },
   {

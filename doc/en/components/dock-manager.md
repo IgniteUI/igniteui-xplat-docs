@@ -126,6 +126,24 @@ const contentPane: IgcContentPane = {
 }
 ```
 
+The [`header`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) property is used to provide a text header for the content pane. This text is rendered at several places: the top content pane header, the tab header if the pane is in a tab group and the unpinned header if the pane is unpinned. You can provide a custom slot content for each of these places respectively using the [`headerId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#headerid), [`tabHeaderId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#tabheaderid) and [`unpinnedHeaderId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedheaderid) properties. If any of these properties is not set, the [`header`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) text is used. Here is how to provide a tab header slot content:
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" style="width: 100%; height: 100%;">Content 1</div>
+    <span slot="tabHeader1">Pane 1 Tab</span>
+</igc-dockmanager>
+```
+
+```ts
+const contentPane: IgcContentPane = {
+    type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    tabHeaderId: 'tabHeader1'
+}
+```
+
 When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its [`isPinned`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) property to `false`.
 
 ```ts
@@ -142,6 +160,17 @@ The [`isPinned`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manag
 By default, the unpin destination for a content pane is calculated automatically based on the location of the pane relative to the document host. When more than one document host is defined, the nearest one in the parent hierarchy of the unpinned content pane will be used. If there is no document host defined, the default location is used - [`left`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcunpinnedlocation.html#left). It is also possible to set the desired destination of the unpinned pane by using the [`unpinnedLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedlocation) property.
 
 You can configure which end-user operations are allowed for a content pane using its [`allowClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose), [`allowPinning`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning), [`allowDocking`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) and [`allowFloating`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) properties.
+
+By default, when you close a pane it gets removed from the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object you can use the [`hidden`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) property of the content pane. Setting the property to `true` will hide it from the UI, but it will remain in the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. In order to override the default close behavior you can subscribe to the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event like this:
+
+```ts
+this.dockManager.addEventListener('paneClose', ev => {
+    for (const pane of ev.detail.panes) {
+        pane.hidden = true;
+    }
+    ev.preventDefault();
+});
+```
 
 ### Split Pane
 
@@ -189,6 +218,8 @@ const tabGroupPane: IgcTabGroupPane = {
     ]
 }
 ```
+
+If there is not enough space to display all tab headers, the tab group shows **More tabs** menu, which contains the non-visible tabs. If you click a tab item in that menu, the tab gets selected and moved to the first position.
 
 ### Document Host
 
