@@ -8,10 +8,11 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 
 A Line Chart, or Line Graph, is a type of category line graph that shows the continuous data values represented by points connected by straight line segments of one or more quantities over a period of time. It’s often used to show trends and perform comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe></iframe>	    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart Example"></iframe>
+</div>	
+
+<div class="divider--half"></div>
 
 - Different than a line chart, the area chart fills the area between the X-Axis (bottom axis) and the line representing the data value with color or texture to visually represent volume.
 - The $PlatformShort$ line chart is identical to the $PlatformShort$ spline chart in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
