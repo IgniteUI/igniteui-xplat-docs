@@ -87,7 +87,7 @@ Since the $PlatformShort$ Line Chart allows you to combine multiple series and c
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Line Chart Legend
+## $PlatformShort$ Line Chart with Legend
 
 With multiple series, our $PlatformShort$ Line Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart`. This gives the benefit for our users to more easily comprehend what data set each line corresponds to.
 
