@@ -142,11 +142,11 @@ Show how your data changes over time with our built-in Time Axis. We’ll dynami
 
 ### $PlatformShort$ Dynamic Charts
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Category Chart, you can display and overlap multiple chart columns to create stacked columns. In addition, you can customize tooltips with images, data binding, and even combine tooltips of multiple series into single tooltip. 
+Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can display and overlap multiple chart columns to create stacked columns.
 
 ### Custom Tooltips
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Category Chart, you can display and overlap multiple chart columns to create stacked columns. In addition, you can customize tooltips with images, data binding, and even combine tooltips of multiple series into single tooltip. 
+Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can customize tooltips with images, data binding, and even combine tooltips of multiple series into single tooltip. 
 
 ### Real-Time, High-Performance Charting
 
