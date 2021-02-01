@@ -91,7 +91,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 <img src="../images/wc-project.jpg"/>
 
-8 - **package.config** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
+8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
 ```
   "scripts": {
@@ -101,7 +101,15 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 > [!Note]
 > このスクリプトは webpack を使用して **index.js** ファイルを **index.bundle.js** と呼ばれる別のファイルにバンドルし、**dist** という名前のフォルダーに配置します。
+>
+> ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
 
+
+```
+"scripts": {
+    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+},
+```
 ## 手順 2 - ポリフィルのインストール
 
 1 - **VS Code** でターミナルを開き (表示 -> ターミナル、または CTRL + `)、npm を使用して web コンポーネント polyfills パッケージをインストールします。
@@ -110,15 +118,14 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 </pre>
 
 2 - Web コンポーネント ポリフィルを **index.js** にインポートします。
-```tsx
+```
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
-この例では、Spreadsheet Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Spreadsheet Web コンポーネントをインストールします。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
