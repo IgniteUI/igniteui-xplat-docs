@@ -104,12 +104,12 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 >
 > ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
 
-
 ```
 "scripts": {
     "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
 ```
+
 ## 手順 2 - ポリフィルのインストール
 
 1 - **VS Code** でターミナルを開き (表示 -> ターミナル、または CTRL + `)、npm を使用して web コンポーネント polyfills パッケージをインストールします。
@@ -133,6 +133,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 </pre>
 
 2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -143,6 +144,7 @@ import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
 3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
+
 ```
 // register the modules
 ModuleManager.register(
@@ -152,6 +154,7 @@ ModuleManager.register(
 ```
 
 4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -162,6 +165,7 @@ ModuleManager.register(
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
 1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -196,7 +200,6 @@ ModuleManager.register(
 ## 既存アプリの更新
 
 既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
-
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}

@@ -10,10 +10,10 @@ _language: ja
 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe></iframe>	    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
 </div>	
 
-<div class="divider--half"></div> -->
+<div class="divider--half"></div>
 
 - 折れ線チャートとは異なり、エリア チャートは X 軸 (下軸) とデータ値を表す線の間の領域を色またはテクスチャで塗りつぶして視覚的にボリュームを表します。
 - $PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン チャートと同じです。
@@ -126,10 +126,13 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、`ChartTitle` のサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートのスタイル設定"></iframe>
+</div>	
+
+<div class="divider--half"></div> 
+
 
 ## その他のリソース
 
