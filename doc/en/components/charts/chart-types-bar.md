@@ -6,13 +6,35 @@ mentionedTypes: ["XamDataChart"]
 ---
 # $PlatformShort$ Bar Chart
 
-<!-- TODO add introduction about using data-chart -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
 
-## $PlatformShort$ Simple Bar Chart
+<div class="divider--half"></div>
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-    data-chart-type-category-bar-series.md
--->
+## $PlatformShort$ Bar Chart with Single Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Bar Chart with Multiple Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Advanced Bar Chart
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked Bar Chart
 

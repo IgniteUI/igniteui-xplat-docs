@@ -14,7 +14,11 @@ mentionedTypes: ["XamDataChart"]
 
 ## $PlatformShort$ Scatter Marker Chart
 
-<!-- data-chart-type-scatter-point-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter Bubble Chart
 
