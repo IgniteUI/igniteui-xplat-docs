@@ -26,14 +26,10 @@ When installing the excel package, the core package must also be installed.
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
 
-The $PlatformShort$ excel library requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
-
-* ExcelModule
-<!-- end: Blazor -->
+The $PlatformShort$ excel library requires the following modules:
 
 ```ts
 // app.module.ts
@@ -75,6 +71,46 @@ The Excel Library contains 5 modules that you can use to limit bundle size of yo
 -	**IgxExcelXlsxModule** – This contains the load and save logic for xlsx (and related) type files – namely the Excel2007 related and StrictOpenXml WorkbookFormats.
 -	**IgxExcelModule** – This references the other 4 modules and so basically ensures that all the functionality is loaded/available.
 
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+## Requirements
+
+In order to use the $PlatformShort$ excel library, you need to add the following using statement:
+
+```razor
+@using Infragistics.Documents.Excel
+```
+
+If you are using a Web Assembly (WASM) Blazor project, there are a couple of extra steps:
+
+- Add a reference to the following script in the wwwroot/index.html file:
+
+```razor
+<script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
+```
+
+- Set the static `Workbook.InProcessRuntime` to the current runtime. This can be done by using the following code:
+
+```razor
+@using Microsoft.JSInterop
+
+@code {
+
+    [Inject]
+    public IJSRuntime Runtime { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;        
+    }
+}
+```
+
+<!-- end: Blazor -->
+
 ## Supported Versions of Microsoft Excel
 The following is a list of the supported versions of Excel.**
 
@@ -100,10 +136,11 @@ The following is a list of the supported versions of Excel.**
 ## Load and Save Workbooks
 Now that the Excel Library module is imported, next step is to load a workbook.
 
+<!-- Angular, React, WebComponents -->
 
-> [!NOTE]
->
-> In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+
+<!-- end: Angular, React, WebComponents -->
 
 In order to load and save `Workbook` objects, you can utilize the save method of the actual `Workbook` object, as well as its static `Load` method.
 
@@ -117,7 +154,25 @@ var workbook = ExcelUtility.load(file);
 ExcelUtility.save(workbook, "fileName");
 ```
 
+```razor
+protected override void OnInitialized()
+{
+    var memoryStream = new System.IO.MemoryStream();
+    workbook.Save(memoryStream);
 
+    memoryStream.Position = 0;
+    var bytes = memoryStream.ToArray();
+    this.SaveFile(bytes, "fileName.xlsx", string.Empty);
+}
+
+private void SaveFile(byte[] bytes, string fileName, string mime)
+{
+    if (this.Runtime is WebAssemblyJSRuntime wasmRuntime)
+      wasmRuntime.InvokeUnmarshalled<string, string, byte[], bool>("BlazorDownloadFileFast", fileName, mime, bytes);
+    else if (this.Runtime is IJSInProcessRuntime inProc)
+      inProc.InvokeVoid("BlazorDownloadFile", fileName, mime, bytes);
+}
+```
 
 >[!NOTE]
 >For Angular

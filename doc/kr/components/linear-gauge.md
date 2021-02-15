@@ -36,20 +36,21 @@ When installing the gauge package, the core package must also be installed.
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamLinearGauge` requires the following modules:
 
-* LinearGaugeModule 
-<!-- end: Blazor -->
+```razor
+LinearGaugeModule.Register(IgniteUIBlazor);
+```
+
 
 ```ts
 // app.module.ts
 import { IgxLinearGaugeModule } from 'igniteui-angular-gauges';
-import { IgxLinearGauge } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxLinearGaugeModule,
+        IgxLinearGaugeModule
         // ...
     ]
 })
@@ -58,14 +59,12 @@ export class AppModule {}
 
 ```ts
 import { IgrLinearGaugeModule } from 'igniteui-react-gauges';
-import { IgxLinearGauge } from "ignite-react-gauges";
 
 IgrLinearGaugeModule.register();
 ```
 
 ```ts
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges';
 
 ModuleManager.register(
     IgcLinearGaugeModule

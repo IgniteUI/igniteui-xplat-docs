@@ -35,10 +35,11 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 
 ## モジュールの要件
 
-`Grid` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`Grid` を作成するには、以下のモジュールが必要です。
 
-* DataGridModule
-<!-- end: Blazor -->
+```razor
+DataGridModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import './odatajs-4.0.0';

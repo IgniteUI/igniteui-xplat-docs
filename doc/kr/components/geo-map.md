@@ -36,12 +36,12 @@ To use the geographic map component, you need to first install these packages:
 
 ## Required Modules
 
-The `XamGeographicMap` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamGeographicMap` requires the following modules:
 
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
-
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

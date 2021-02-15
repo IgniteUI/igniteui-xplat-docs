@@ -60,7 +60,7 @@ $PlatformShort$ データ グリッド は、関連付けられたセルに書�
 ## スパークライン列
 
 Sparkline コンポーネントを `TemplateColumn` に埋め込み、より複雑なデータ構造を表示できます。
-この方法の詳細については、 [Column Sparkline](data-grid-type-sparkline-table.md) トピックを参照してください。
+この方法の詳細については、 [列スパークライン](data-grid-type-sparkline-table.md) トピックを参照してください。
 
 ## コード スニペット
 

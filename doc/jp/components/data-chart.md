@@ -1,7 +1,7 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール & テーブル | インフラジスティックス
-_description: データ チャート コンポーネントは、視覚要素の複数インスタンスを持つ複合チャート ビューを作成します。データ可視化を向上させます。
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, インフラジスティックス
+title: $PlatformShort$ データ チャート | データ可視化 | インフラジスティックス
+_description: 複数の視覚的要素のインスタンスを表示する $PlatformShort$ データ チャートを簡単に作成して、複合チャート ビューを作成します。今日から始められます。
+_keywords: data chart, $PlatformShort$ component, $PlatformShort$ chart, $ProductName$, charting component, データ チャート, $PlatformShort$ コンポーネント, $PlatformShort$ チャート, チャート作成コンポーネント
 mentionedTypes: ['XamDataChart', 'SeriesType']
 _language: ja
 ---
@@ -25,7 +25,7 @@ $PlatformShort$ データ チャートは、軸、マーカー、凡例、およ
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-データ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
+$PlatformShort$ データ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -35,13 +35,14 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+$PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule
-* DataChartScatterCoreModule,
-* DataChartScatterModule,
-* NumberAbbreviatorModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxDataChartCoreModule } from 'igniteui-angular-charts';
@@ -116,33 +117,33 @@ ModuleManager.register(
 
 ## サポートされるシリーズ
 
-$PlatformShort$ データ チャート コンポーネントは、[Category シリーズ](data-chart-type-category-series.md), [Financial シリーズ](data-chart-type-financial-series.md)、[Polar シリーズ](data-chart-type-polar-series.md)、[Radial シリーズ](data-chart-type-radial-series.md)、[Range Series](data-chart-type-range-series.md)、[Scatter シリーズ](data-chart-type-scatter-bubble-series.md)、[Shape シリーズ](data-chart-type-shape-series.md) を含む 65 種類以上のシリーズをサポートします。サポートされている [Series](data-chart-series-types.md) のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
+$PlatformShort$ チャート作成コンポーネントは、[カテゴリ シリーズ](data-chart-type-category-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[極座標シリーズ](data-chart-type-polar-series.md)、[ラジアル シリーズ](data-chart-type-radial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)を含む 65 種類以上のシリーズをサポートします。サポートされている[シリーズ](data-chart-series-types.md)のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
 
 ## サポートされる軸
-$PlatformShort$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。   これらのタイプの軸の使用方法については、[Series](data-chart-series-types.md) と [Axis](data-chart-axis-types.md) のトピックを参照してください。
+$PlatformShort$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。   これらのタイプの軸の使用方法については、[シリーズ](data-chart-series-types.md)と[軸](data-chart-axis-types.md)のトピックを参照してください。
 
 軸タイプ           |サポートされるシリーズ タイプ
 --------------------|-----------------------
-CategoryYAxis       |[Category シリーズ ](data-chart-type-category-series.md) グループの `Bar` のみ
-CategoryXAxis       |すべての [Financial シリーズ](data-chart-type-financial-series.md)、[Range シリーズ](data-chart-type-range-series.md)、[Category シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-TimeXAxis           |すべての [Financial シリーズ](data-chart-type-financial-series.md)、[Range シリーズ](data-chart-type-range-series.md)、[Category シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-OrdinalTimeXAxis    |すべての [Financial シリーズ](data-chart-type-financial-series.md)、[Range シリーズ](data-chart-type-range-series.md)、[Category シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
-PercentChangeYAxis|すべての [Financial シリーズ](data-chart-type-financial-series.md)、[Range シリーズ](data-chart-type-range-series.md)、[Category シリーズ](data-chart-type-category-series.md)、[Scatter シリーズ](data-chart-type-scatter-bubble-series.md)、[Shape シリーズ](data-chart-type-shape-series.md)
-NumericYAxis        |すべての [Scatter シリーズ](data-chart-type-scatter-bubble-series.md)、[Shape シリーズ](data-chart-type-shape-series.md)、[Financial シリーズ](data-chart-type-financial-series.md)、[Range シリーズ](data-chart-type-range-series.md)、[Category シリーズ](data-chart-type-category-series.md)
-NumericXAxis        |[Category シリーズ](data-chart-type-category-series.md) グループのすべての [Scatter シリーズ](data-chart-type-scatter-bubble-series.md)、[Shape シリーズ](data-chart-type-shape-series.md)、`Bar`
-NumericAngleAxis   |すべての [極座標シリーズ](data-chart-type-polar-series.md)
-NumericRadiusAxis|すべての [極座標シリーズ](data-chart-type-polar-series.md) と [ラジアル シリーズ](data-chart-type-radial-series.md)
-CategoryAngleAxis|すべての [ラジアル シリーズ](data-chart-type-radial-series.md)
+CategoryYAxis       |[カテゴリ シリーズ ](data-chart-type-category-series.md) グループの `Bar` のみ
+CategoryXAxis       |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+TimeXAxis           |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+OrdinalTimeXAxis    |すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) (`Bar` を除く)
+PercentChangeYAxis|すべての[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)
+NumericYAxis        |すべての[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md)
+NumericXAxis        |[カテゴリ シリーズ](data-chart-type-category-series.md) グループのすべての[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)、`Bar`
+NumericAngleAxis   |すべての[極座標シリーズ](data-chart-type-polar-series.md)
+NumericRadiusAxis|すべての[極座標シリーズ](data-chart-type-polar-series.md)と[ラジアル シリーズ](data-chart-type-radial-series.md)
+CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial-series.md)
 
 
 ## 使用方法
-データチャートモジュールがインポートされたので、以下のステップはチャートをデータにバインドすることです。すべてのシリーズを正しく表示するには、特定の数と種類のデータ列が必要です。[Data Sources](data-chart-data-sources.md) のトピックで、系列の種類ごとにデータソースを見つけることができます。
+$PlatformShort$ データ チャート モジュールがインポートされたので、以下のステップはチャートをデータにバインドすることです。すべてのシリーズを正しく表示するには、特定の数と種類のデータ列が必要です。[データソース](data-chart-data-sources.md) のトピックで、系列の種類ごとにデータソースを見つけることができます。
 
 以下のコード スニペットは、散布 `Bubble` を作成し、それを [SampleScatterStats](data-chart-data-sources-stats.md) データにバインドする方法を示しています。
 
 > [!NOTE]
 >
-> チャートコンポーネントにデータソースを設定すると、すべてのシリーズに適用されますが、データチャートに追加された各シリーズに異なるデータソースを設定することもできます。
+> チャート コンポーネントにデータソースを設定すると、すべてのシリーズに適用されますが、データ チャートに追加された各シリーズに異なるデータソースを設定することもできます。
 
 ```razor
 <div class="igComponent">

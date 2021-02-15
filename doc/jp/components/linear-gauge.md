@@ -39,22 +39,20 @@ npm install --save {PackageGauges}
 
 ## モジュールの要件
 
-`XamLinearGauge` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`XamLinearGauge` を作成するには、以下のモジュールが必要です。
 
-* LinearGaugeModule 
-<!-- end: Blazor -->
-
+```razor
+LinearGaugeModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts
 import { IgxLinearGaugeModule } from 'igniteui-angular-gauges';
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxLinearGaugeModule,
-        IgxLinearGaugeComponent,
+        IgxLinearGaugeModule
         // ...
     ]
 })
@@ -63,14 +61,12 @@ export class AppModule {}
 
 ```ts
 import { IgrLinearGaugeModule } from 'igniteui-react-gauges';
-import { IgrLinearGauge } from 'igniteui-react-gauges';
 
 IgrLinearGaugeModule.register();
 ```
 
 ```ts
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges';
 
 ModuleManager.register(
     IgcLinearGaugeModule

@@ -33,6 +33,8 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 <div class="divider--half"></div>
 
 
+
+
 <!-- Angular, React, WebComponents -->
 ドック マネージャー パッケージをインストールするには、以下のコマンドを実行します。
 
@@ -109,7 +111,7 @@ this.dockManager.layout = {
 * ペインをフロートさせるためにドラッグします。
 * フローティング ペインを移動します。
 * フローティング ペインをドックします。
-* Maximize a pane
+* ペインを最大化します。
 
 これらはすべてドック マネージャーの [`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティに反映されます。
 
@@ -122,6 +124,24 @@ const contentPane: IgcContentPane = {
     type: IgcDockManagerPaneType.contentPane,
     contentId: 'content1',
     header: 'Pane 1'
+}
+```
+
+[`header`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) プロパティはコンテンツ ペインのテキスト ヘッダーを提供するために使用されます。このテキストは複数の場所で描画されます。トップコンテンツペインヘッダー、ペインがタブグループにある場合はタブヘッダー、ペインが固定解除されている場合は固定解除ヘッダーです。[`headerId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#headerid)、[`tabHeaderId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#tabheaderid) および [`unpinnedHeaderId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedheaderid) プロパティを使用してそれぞれこれらの場所にカスタム スロット コンテンツを提供できます。これらのプロパティのいずれかが設定されていない場合、[`header`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) テキストが使用されます。以下は、タブ ヘッダー スロット コンテンツを提供する方法です。
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" style="width: 100%; height: 100%;">Content 1</div>
+    <span slot="tabHeader1">Pane 1 Tab</span>
+</igc-dockmanager>
+```
+
+```ts
+const contentPane: IgcContentPane = {
+    type: IgcDockManagerPaneType.contentPane,
+    contentId: 'content1',
+    header: 'Pane 1',
+    tabHeaderId: 'tabHeader1'
 }
 ```
 
@@ -140,7 +160,19 @@ const contentPane = {
 
 デフォルトでは、コンテンツ ペインのピン固定解除先は、ドキュメント ホストに対するペインの相対的な位置に基づいて自動的に計算されます。複数のドキュメント ホストが定義されている場合、ピン固定されていないコンテンツ ペインの親階層で最も近いホストが使用されます。ドキュメント ホストが定義されていない場合、デフォルトの場所 [`left`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcunpinnedlocation.html#left) が使用されます。[`unpinnedLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedlocation) プロパティを使用してピン固定が解除されたペインの行き先を設定することも可能です。
 
-[`allowClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose)、[`allowPinning`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning)、[`allowDocking`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) および [`allowFloating`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) プロパティを使用して、コンテンツ ペインで許可されるエンドユーザー操作を設定できます。
+[`allowClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose)、[`allowPinning`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning)、[`allowDocking`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) および [`allowFloating`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) プロパティを使用して、コンテンツ ペインで許可されるエンドユーザー操作を設定できます。
+
+デフォルトでは、ペインを閉じると、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトから削除されます。ただし、場合によってはペインを一時的に非表示にして後で表示することもできます。[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトを変更せずにそれを行うには、コンテンツペインの [`hidden`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) プロパティを使用できます。プロパティを `true` に設定すると UI から非表示になりますが、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトに残ります。デフォルトの閉じる動作をオーバーライドするには、このように [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントにサブスクライブできます。
+
+
+```ts
+this.dockManager.addEventListener('paneClose', ev => {
+    for (const pane of ev.detail.panes) {
+        pane.hidden = true;
+    }
+    ev.preventDefault();
+});
+```
 
 ### 分割ペイン
 
@@ -188,6 +220,8 @@ const tabGroupPane: IgcTabGroupPane = {
     ]
 }
 ```
+
+すべてのタブ ヘッダーを表示する十分なスペースがない場合、タブ グループは非表示タブを含む **[その他のタブ]** メニューを表示します。そのメニューのタブ項目をクリックすると、タブが選択され、最初の位置に移動します。
 
 ### ドキュメント ホスト
 
@@ -250,6 +284,17 @@ const layout: IgcDockManagerLayout = {
 
 [`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
 
+### アクティブ ペイン
+
+ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、[`activePane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。[`activePaneChanged`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#activepanechanged) イベントにサブスクライブして、[`activePane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティの変更をリッスンすることもできます。
+
+```ts
+this.dockManager.addEventListener('activePaneChanged', ev => {
+    console.log(ev.detail.oldPane);
+    console.log(ev.detail.newPane);
+});
+```
+
 ### レイアウトの保存／読み込み
 
 レイアウトを復元または永続化するには、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
@@ -293,3 +338,20 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```html
 <igc-dockmanager class="dark-theme">
 ```
+
+## ローカライズ
+
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (`en`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen) です。ドック マネージャーは、[英語 (`en`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen)、[日本語 (`jp`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsjp)、[韓国語 (`ko`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsko)、[スペイン語 (`es`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringses) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[`addResourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addresourcestrings) メソッドを使用します。
+
+```ts
+import { addResourceStrings } from 'igniteui-dockmanager';
+
+const dockManagerStringsFr: IgcDockManagerResourceStrings = {
+  close: 'Fermer',
+  // ...
+};
+
+addResourceStrings('fr', dockManagerStringsFr);
+```
+
+ドック マネージャーは、文字列を変更できる [`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。

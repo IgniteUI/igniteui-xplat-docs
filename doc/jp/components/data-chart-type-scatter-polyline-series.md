@@ -46,14 +46,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## モジュールの要件
 
-`ScatterPolylineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`ScatterPolylineSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* ScatterPolylineSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterPolylineSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -77,7 +78,6 @@ import { IgxDataChartShapeModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:

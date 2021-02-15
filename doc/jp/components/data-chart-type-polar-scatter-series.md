@@ -45,13 +45,14 @@ public dataSource: any[] = SamplePolarData.create();
 ```
 ## モジュールの要件
 
-`PolarScatterSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`PolarScatterSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartPolarModule
-* DataChartPolarCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartPolarModule.Register(IgniteUIBlazor);
+DataChartPolarCoreModule.Register(IgniteUIBlazor);     
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

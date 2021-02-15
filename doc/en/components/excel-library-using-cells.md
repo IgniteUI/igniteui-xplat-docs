@@ -17,6 +17,7 @@ The `WorksheetCell` objects in an Excel worksheet is the object that holds your 
 
 <div class="divider--half"></div>
 
+<!-- Angular, React, WebComponents -->
 ## References
 
 The following code shows the imports needed to use the code-snippets below:
@@ -30,6 +31,7 @@ import { NamedReference } from "{PackageExcel}";
 import { WorksheetCellComment } from "{PackageExcel}";
 import { FormattedString } from "{PackageExcel}";
 ```
+<!-- end: Angular, React, WebComponents -->
 
 ## Referencing Cells and Regions
 
@@ -45,6 +47,16 @@ var worksheet = workbook.worksheets().add("Sheet1");
 var cell = worksheet.getCell("E2");
 //Accessing a range of cells
 var region = worksheet.getRegion("G1:G10");
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Accessing a single cell
+var cell = worksheet.GetCell("E2");
+//Accessing a range of cells
+var region = worksheet.GetRegion("G1:G10");
 ```
 
 ## Accessing Cells and Regions by Name
@@ -63,11 +75,24 @@ var cell_reference = workbook.namedReferences().add("myCell", "=Sheet1:A1");
 var region_reference = workbook.namedReferences().add("myRegion", "=Sheet1!A1:B2");
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cell_reference = workbook.NamedReferences.Add("myCell", "=Sheet1:A1");
+var region_reference = workbook.NamedReferences.Add("myRegion", "=Sheet1!A1:B2");
+```
+
 The following code can be used to the get the cell and region referenced by the "myCell" and "myRegion" named references above:
 
 ```ts
 var cell = worksheet.getCell("myCell");
 var region = worksheet.getRegion("myRegion");
+```
+
+```razor
+var cell = worksheet.GetCell("myCell");
+var region = worksheet.GetRegion("myRegion");
 ```
 
 ## Adding a Comment to a Cell
@@ -87,6 +112,17 @@ cellComment.text = commentText;
 worksheet.rows(0).cells(0).comment = cellComment;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellComment = new WorksheetCellComment();
+var commentText = new FormattedString("This cell has a comment!");
+cellComment.Text = commentText;
+
+worksheet.Rows[0].Cells[0].Comment = cellComment;
+```
+
 ## Adding a Formula to a Cell
 
 The Infragistics $PlatformShort$ Excel Library allows you to add Microsoft Excel formulas to a cell or group of cells in a worksheet. You can do this using the `WorksheetCell` object’s `ApplyFormula` method or by instantiating a `Formula` object and applying it to a cell. Regardless of the manner in which you apply a formula to a cell, you can access the `Formula` object using the `WorksheetCell` object’s `Formula` property. If you need the value, use the cell’s `Value` property.
@@ -101,6 +137,16 @@ The following code shows you how to add a formula to a cell.
  //Using a Formula object to apply a formula
  var sumFormula = Formula.parse("=SUM(A1:A5)", CellReferenceMode.A1);
  sumFormula.applyTo(worksheet.rows(5).cells(0));
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+worksheet.Rows[5].Cells[0].ApplyFormula("=SUM(A1:A5)");
+
+//Using a Formula object to apply a formula
+var sumFormula = Formula.Parse("=SUM(A1:A5)", CellReferenceMode.A1);
+sumFormula.ApplyTo(worksheet.Rows[5].Cells[0]);
 ```
 
 ## Copying a Cell’s Format
@@ -120,6 +166,18 @@ worksheet.columns(1).cellFormat.font.bold = true;
 worksheet.columns(3).cellFormat.setFormatting(worksheet.columns(1).cellFormat);
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Format 2nd column
+worksheet.Columns[1].CellFormat.Fill = CellFill.CreateSolidFill(CoreGraphics.Colors.Blue);
+worksheet.Columns[1].CellFormat.Font.Bold = ExcelDefaultableBoolean.True;
+
+//Copy format of 2nd column to 4th column
+worksheet.Columns[3].CellFormat.SetFormatting(worksheet.Columns[1].CellFormat);
+```
+
 ## Formatting a Cell
 
 The Infragistics $PlatformShort$ Excel Library allows you to customize the look and behavior of a cell. You can customize a cell by setting properties exposed by the `CellFormat` property of the `WorksheetCell`, `WorksheetRow`, `WorksheetColumn`, or `WorksheetMergedCellsRegion` objects.
@@ -135,6 +193,13 @@ var workbook = new Workbook(format);
 var workbook = workbook.worksheets().add("Sheet1");
 
 worksheet.columns(2).cellFormat.formatString = "\"$\"#,##0.00";
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Columns[2].CellFormat.FormatString = "\"$\"#,##0.00";
 ```
 
 ## Excel 2007 Color Model
@@ -169,6 +234,14 @@ var worksheet = workbook.worksheets().add("Sheet1");
 
 var cellFill = CellFill.createSolidFill("Blue");
 worksheet.rows(0).cells(0).cellFormat.fill = cellFill;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellFill = CellFill.CreateSolidFill(Core.Graphics.Colors.Blue);
+worksheet.Rows[0].Cells[0].CellFormat.Fill = cellFill;
 ```
 
 You can specify a color (the color of Excel cells background, border, etc) using linear and rectangular gradients in cells. When workbooks with these gradients are saved in .xls file format and opened in Microsoft Excel 2007/2010, the gradients will be visible, but when these files are opened in Microsoft Excel 2003, the cell will be filled with the solid color from the first gradient stop.
@@ -275,6 +348,26 @@ mergedRegion1.value = "Day 1";
 worksheet.rows(0).cells(2).cellFormat.alignment = HorizontalCellAlignment.Center;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+// Make some column headers
+worksheet.Rows[1].Cells[1].Value = "Morning";
+worksheet.Rows[1].Cells[2].Value = "Afternoon";
+worksheet.Rows[1].Cells[3].Value = "Evening";
+
+// Create a merged region from column 1 to column 3
+var mergedRegion1 = worksheet.MergedCellsRegions.Add(0, 1, 0, 3);
+
+// Set the value of the merged region
+mergedRegion1.Value = "Day1";
+
+// Set the cell alignment of the middle cell in the merged region.
+// Since a cell and its merged region shared a cell format, this willultimately set the format of the merged region
+worksheet.Rows[0].Cells[2].CellFormat.Alignment = HorizontalCellAlignment.Center;
+```
+
 ## Retrieving the Cell Text as Displayed in Excel
 
 The text displayed in a cell depends on several factors other than the actual cell value, such as the format string and the width of the column that the cell is contained in.
@@ -326,4 +419,11 @@ var workbook = new Workbook();
 var worksheet = this.workbook.worksheets().add("Sheet1");
 
 var cellText = worksheet.rows(0).cells(0).getText();
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellText = worksheet.Rows[0].Cells[0].GetText();
 ```

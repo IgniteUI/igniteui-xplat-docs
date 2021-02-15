@@ -43,14 +43,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## モジュールの要件
 
-散布バブル シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+散布バブル シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* NumberAbbreviatorModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -79,7 +80,6 @@ import { IgxDataChartScatterModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:
@@ -147,7 +147,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`BubbleSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`BubbleSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">
@@ -249,7 +249,7 @@ series1.yAxis = yAxis;
 
 ## バブル形状
 
-BubbleSeries  の外観は、[Markers](data-chart-series-markers.md) プロパティの使用やバブルの形状を定義済みの形状の 1 つに変更してカスタマイズすることができます。次に例を示します。
+`BubbleSeries` の外観は、[Markers](data-chart-series-markers.md) プロパティの使用やバブルの形状を定義済みの形状の 1 つに変更してカスタマイズすることができます。次に例を示します。
 
 ```html
 <igx-bubble-series

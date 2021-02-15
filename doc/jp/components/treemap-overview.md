@@ -72,10 +72,11 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
-`Treemap` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`Treemap` を作成するには、以下のモジュールが必要です。
 
-* TreemapModule
-<!-- end: Blazor -->
+```razor
+TreemapModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxTreemapModule } from "igniteui-angular-charts";

@@ -45,13 +45,14 @@ public dataSource: any[] = SamplePolarData.create();
 
 ## Required Modules
 
-Creation of the `PolarLineSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `PolarLineSeries` requires the following modules:
 
-* DataChartCoreModule
-* DataChartPolarModule
-* DataChartPolarCoreModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartPolarModule.Register(IgniteUIBlazor);
+DataChartPolarCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

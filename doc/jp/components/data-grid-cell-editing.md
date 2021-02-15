@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ データ グリッド | セル編集と一括更新 | インフラジスティックス
-_description: セル編集機能をサポートするインフラジスティックスの $PlatformShort$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $PlatformShort$ Table, Data Grid, cell editing, $ProductName$, batch updating, Infragistics, $PlatformShort$ テーブル, データ グリッド, セル編集, 一括更新, インフラジスティックス
+title: $PlatformShort$ データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
+_description: セルおよび行の編集機能をサポートするインフラジスティックスの $PlatformShort$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
+_keywords: $PlatformShort$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $PlatformShort$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 ---
 # $PlatformShort$ Grid 編集
 
-$ProductName$ Data Table / Data Grid は、一括更新のセル編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
+$ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
 
 ## $PlatformShort$ Grid 編集の例
 
@@ -24,6 +24,7 @@ $PlatformShort$ データ グリッドの編集は、$PlatformShort$ グリッ�
 - `None`: 編集は有効ではありません。
 - `Cell`: セルが編集モードに入り、編集モードの終了時に値をコミットできるようにします。
 - `CellBatch`: セルが編集モードに入りますが、変更はコミットされるまで後でキャッシュされます。
+- `Row`: 行が編集モードに入り、編集モードの終了時に値をコミットできるようにします。
 
 `CellBatch` に設定した場合、変更をコミットするにはグリッドから `commitEdits` メソッドを実行する必要があります。グリッドは、コミットされるまでセルを斜体で表示し、変更をデータソースにプッシュするタイミングを制御します。   
 
@@ -134,7 +135,7 @@ onRedoClick = () => {
 ```
 
 ```ts
-import { IgrDataGridComponent } from 'igniteui-webcomponents-grids';
+import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
 
 public onUndoClick(){
     this.grid.undo();
@@ -209,7 +210,10 @@ onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => 
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
-    }        
+    }
+    else {
+        s.acceptEdit(e.editID);
+    }
 }
 
 onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
@@ -247,7 +251,10 @@ public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChanging
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
-    } 
+    }
+    else {
+        s.acceptEdit(e.editID);
+    }    
 }
 
 public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventArgs) {    
@@ -270,6 +277,10 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
         {
             this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
             this.DataGridRef.RejectEdit(e.EditID);
+        }
+        else
+        {
+            this.DataGridRef.AcceptEdit(e.EditID);
         }
     }
 

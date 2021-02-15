@@ -35,10 +35,11 @@ In addition to the core and $PlatformShort$ data grid packages you will also hav
 
 ## Required Modules
 
-The `Grid` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Grid` requires the following modules:
 
-* DataGridModule
-<!-- end: Blazor -->
+```razor
+DataGridModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import './odatajs-4.0.0';

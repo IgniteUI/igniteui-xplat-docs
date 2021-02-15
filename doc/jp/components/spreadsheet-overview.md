@@ -29,11 +29,12 @@ npm install --save {PackageSpreadsheet}
 
 ## モジュールの要件
 
-`Spreadsheet` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`Spreadsheet` を作成するには、以下のモジュールが必要です。
 
-* ExcelModule
-* SpreadsheetModule
-<!-- end: Blazor -->
+```razor
+ExcelModule.Register(IgniteUIBlazor);
+SpreadsheetModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxExcelModule } from 'igniteui-angular-excel';

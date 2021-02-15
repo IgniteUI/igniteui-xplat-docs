@@ -33,7 +33,7 @@ $PlatformShort$ Financial Chart コンポーネントはリアルタイムでデ
 <!-- end: Blazor -->
 
 以下の例は、高頻度のデータ更新について Financial Chart を通知する方法を紹介します。
-
+```
 
 ```ts
 private tick(): void {

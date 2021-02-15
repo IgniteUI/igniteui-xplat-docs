@@ -82,7 +82,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
         <title>Getting Started with Ignite UI for Web Components</title>
     </head>
     <body>
-        
+
     </body>
 </html>
 ```
@@ -91,7 +91,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 <img src="../images/wc-project.jpg"/>
 
-8 - **package.config** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
+8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
 ```
   "scripts": {
@@ -101,6 +101,14 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 > [!Note]
 > このスクリプトは webpack を使用して **index.js** ファイルを **index.bundle.js** と呼ばれる別のファイルにバンドルし、**dist** という名前のフォルダーに配置します。
+>
+> ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
+
+```
+"scripts": {
+    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+},
+```
 
 ## 手順 2 - ポリフィルのインストール
 
@@ -110,22 +118,22 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 </pre>
 
 2 - Web コンポーネント ポリフィルを **index.js** にインポートします。
-```tsx
+```
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1. **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
-この例では、Spreadsheet Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Spreadsheet Web コンポーネントをインストールします。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
 > npm install igniteui-webcomponents-spreadsheet
 </pre>
 
-2. **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -135,7 +143,8 @@ import { IgcExcelModule } from 'igniteui-webcomponents-excel';
 import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3. **ModuleManager** で Web コンポーネント モジュールを登録します。
+3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
+
 ```
 // register the modules
 ModuleManager.register(
@@ -144,7 +153,8 @@ ModuleManager.register(
 );
 ```
 
-4. `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -154,7 +164,8 @@ ModuleManager.register(
 
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
-1. **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -162,7 +173,7 @@ ModuleManager.register(
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
-2. **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
+2 - **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -172,23 +183,23 @@ ModuleManager.register(
 </body>
 ```
 
-3. プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
+3 - プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
 
 <img src="../images/wc-live-server.jpg" />
 
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
-4. ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
+4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
 
 <img src="../images/wc-project-running.jpg" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+
 ## 既存アプリの更新
 
 既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
-
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -216,10 +227,10 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
-<!-- Blazor -->
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGeographicMapModule } from 'igniteui-react-maps';
@@ -308,11 +319,11 @@ $ProductName$ は、開発者がモダンなデスクトップ ブラウザー�
 ## 手順 2 - Ignite UI for Blazor NuGet パッケージのインストール
 
 1 - ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
-   
+
 <img src="../images/nuget-manage-packages.jpg" />
 
 2 - パッケージ マネージャー ダイアログで **[参照]** タブを開き、**Infragistics** パッケージ ソースを選択して **IgniteUI.Blazor** NuGet パッケージをプロジェクトにインストールします。
-   
+
 <img src="../images/nuget-package-manager-browse.jpg" />
 
 > [!Note]
@@ -323,47 +334,75 @@ $ProductName$ は、開発者がモダンなデスクトップ ブラウザー�
 
 ## 手順 3 - Ignite UI for Blazor の登録
 
-1 - 静的ファイルをリンクします。`_content/IgniteUI.Blazor/app.bundle.js` スクリプトをプロジェクトのデフォルトの Blazor スクリプトの上に追加します。
+1 - Ignite UI for Blazor スクリプトをデフォルトの Blazor スクリプトの上に追加します。
 
-*Web アセンブリ - wwwroot/index.html*
+Blazor Web アセンブリで **wwwroot/index.html** ファイルを変更します。
+
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.webassembly.js"></script>
 ```
-*サーバー - Pages/_Host.cshtml*
+
+Blazor サーバーで **Pages/_Host.cshtml** ファイルを変更します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-2 - サービスおよびコンポーネント モジュールの登録
+2 - `AddIgniteUIBlazor` メソッドを使用して Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
-**Web アセンブリ** - `Main` メソッドの `Program.cs` ファイルで `AddIgniteUIBlazor` メソッドを呼び出します。
+Blazor Web アセンブリのプロジェクトで **Program.cs** ファイルを変更します。
 
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public static async Task Main(string[] args)
 {
     // ...
-
-    builder.Services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    builder.Services.AddIgniteUIBlazor(typeof(GeographicMapModule));
 }
 ```
-**サーバー** - `ConfigureServices` メソッドの `Startup.cs` ファイルで `AddIgniteUIBlazor` メソッドを呼び出します。
+
+Blazor サーバーのプロジェクトで **Startup.cs** ファイルを変更します。
+
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-
-    services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    services.AddIgniteUIBlazor(typeof(GeographicMapModule));
 }
 ```
+
+オプションで、アプリケーション レベルでモジュールを登録できない場合は、ページの初期化時にモジュールを razor りファイルに登録できます。
+
+```
+@page ...
+
+@using IgniteUI.Blazor.Controls
+@inject IIgniteUIBlazor IgniteUIBlazor;
+
+@code 
+{
+
+   protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GeographicMapModule.Register(IgniteUIBlazor);
+
+        ...
+    } 
+}
+
+```
+
 > [!Note]
-> この例では、Blazor アプリケーションで使用する `DataGridModule` を登録します。Ignite UI for Blazor コンポーネントとその機能は、Blazor アプリケーションで正しく動作するためにそれぞれのモジュールを登録する必要があります。詳細については、各コンポーネントのヘルプを参照してください。
+> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `GeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
+
 
 3 - `_Imports.razor` に `IgniteUI.Blazor.Controls` 名前空間を追加します。
 
@@ -371,13 +410,11 @@ public void ConfigureServices(IServiceCollection services)
 @using IgniteUI.Blazor.Controls;
 ```
 
-4 - Ignite UI for Blazor コンポーネントを追加します。
+4 - Ignite UI for Blazor コンポーネントを razor ページに追加します。
 
 ```razor
-<DataGrid DataSource="data" />
-</Datagrid>
+<GeographicMap Height="100%" Width="100%" />
+</GeographicMap>
 ```
-> [!Note]
-> Ignite UI for Blazor コンポーネントとその機能は、それぞれのモジュールを `AddIgniteUIBlazor` メソッドに登録する必要があります。詳細については、各コンポーネントのヘルプを参照してください。
 
 <!-- end: Blazor -->

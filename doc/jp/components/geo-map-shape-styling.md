@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ マップ | データ可視化ツール | シェイプ スタイリング | 条件付き書式 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの図形シリーズにカスタム スタイルを適用する方法について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
+_description: インフラジスティックスの $PlatformShort$ マップのシェイプ シリーズにカスタム スタイルを適用する方法について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
 _keywords: $PlatformShort$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling, $PlatformShort$ マップ, カスタム スタイル設定, インフラジスティックス, 条件付き書式, シェイプ スタイリング
 mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries']
 _language: ja
@@ -47,7 +47,7 @@ import { IgcShapeDataSource } from 'igniteui-webcomponents-core';
 import { IgcShapefileRecord } from 'igniteui-webcomponents-core';
 ```
 
-次のコード例は、シェイプ スタイリングを設定する 4 つの異なる方法を提供する [シェイプ スタイリング ユーティリティ](geo-map-resources-shape-styling-utility.md) ファイルを使用していることに注意してください。
+次のコード例は、シェイプ スタイリングを設定する 4 つの異なる方法を提供する[シェイプ スタイリング ユーティリティ](geo-map-resources-shape-styling-utility.md) ファイルを使用していることに注意してください。
 * [シェイプ比較スタイリング](#シェイプ比較スタイリング)
 * [シェイプ ランダム スタイリング](#シェイプ-ランダム-スタイリング)
 * [シェイプ範囲スタイリング](#シェイプ範囲スタイリング)

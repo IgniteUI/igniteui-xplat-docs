@@ -45,13 +45,14 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## Required Modules
 
-Creation of the `RadialAreaSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `RadialAreaSeries` requires the following modules:
 
-* DataChartCoreModule
-* RadialAreaSeriesModule
-* RadialAreaSeriesCoreModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialAreaSeriesModule.Register(IgniteUIBlazor);
+RadialAreaSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

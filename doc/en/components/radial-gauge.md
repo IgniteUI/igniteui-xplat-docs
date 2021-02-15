@@ -50,21 +50,20 @@ Aftewards you may start implementing the control by adding the following namespa
 
 ## Required Modules
 
-The `XamRadialGauge` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamRadialGauge` requires the following modules:
 
-* RadialGaugeModule
-<!-- end: Blazor -->
+```razor
+RadialGaugeModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts
 import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxRadialGaugeModule,
-        IgxRadialGaugeComponent
+        IgxRadialGaugeModule
         // ...
     ]
 })
@@ -74,20 +73,17 @@ export class AppModule {}
 ```ts
 // Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
-import { IgcRadialGaugeCoreModule  } from 'igniteui-webcomponents-gauges';
+// Radial Gauge Module
 import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 
 // register the modules
 ModuleManager.register(
-    IgcRadialGaugeCoreModule,
     IgcRadialGaugeModule
 );
 ```
 
 ```ts
 import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
-import { IgrRadialGauge } from 'igniteui-react-gauges';
 
 IgrRadialGaugeModule.register();
 ```

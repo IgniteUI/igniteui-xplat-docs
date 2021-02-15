@@ -94,14 +94,15 @@ public dataSource: any[] = SampleFinancialData.create();
 
 ## モジュールの要件
 
-ファイナンシャル シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+ファイナンシャル シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartFinancialModule
-* DataChartFinancialCoreModule
-* DataChartFinancialIndicatorsModule        
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialModule.Register(IgniteUIBlazor);
+DataChartFinancialCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialIndicatorsModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -183,7 +184,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは `FinancialPriceSeries`、` BollingerBandsOverlay`、`MedianPriceIndicator` でデータ チャートのインスタンスを作成する方法を示します。これらのシリーズは同じ  X-Axis と Y-Axis を使用しますが複数軸を使用して異なるシリーズに割り当てることができます。詳細については、[軸共有と複数軸](data-chart-axis-sharing.md) トピックを参照してください。
+このコードは `FinancialPriceSeries`、` BollingerBandsOverlay`、`MedianPriceIndicator` でデータ チャートのインスタンスを作成する方法を示します。これらのシリーズは同じ X-Axis と Y-Axis を使用しますが複数軸を使用して異なるシリーズに割り当てることができます。詳細については、[軸共有と複数軸](data-chart-axis-sharing.md) トピックを参照してください。
 
 ```razor
 <DataChart Height="60%" Width="100%"

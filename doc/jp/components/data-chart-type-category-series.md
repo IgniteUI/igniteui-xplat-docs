@@ -75,13 +75,14 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## モジュールの要件
 
-The category series を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+カテゴリ シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule;
-* DataChartCategoryModule;
-* DataChartCategoryCoreModule;
-* DataChartInteractivityModule;
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartCategoryCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -295,7 +296,7 @@ series1.yAxis = yAxis;
 ```
 
 ## コード例 - 棒シリーズ
-上記のコードを使って `ColumnSeries` をレンダリングしたいシリーズの名前で置き換えて他のタイプのカテゴリ シリーズを作成することもできます。ただし、`BarSeries` は、他のタイプの軸が必要なため、この規則の例外となります。このコードは、`BarSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+上記のコードを使って `ColumnSeries` をレンダリングしたいシリーズの名前で置き換えて他のタイプのカテゴリ シリーズを作成することもできます。ただし、`BarSeries` は、他のタイプの軸が必要なため、この規則の例外となります。このコードは、`BarSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="700px">

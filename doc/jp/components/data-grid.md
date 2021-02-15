@@ -45,10 +45,11 @@ npm install --save {PackageInputs}
 
 ## モジュールの要件
 
-`Grid` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`Grid` を作成するには、以下のモジュールが必要です。
 
-* DataGridModule
-<!-- end: Blazor -->
+```razor 
+DataGridModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrDataGridModule } from 'igniteui-react-grids';
@@ -71,12 +72,13 @@ ModuleManager.register(
 
 ## オプションのモジュール
 
-上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
-* GridColumnOptionsModule
-* DataGridToolbarModule
-* SparklineModule
-<!-- end: Blazor -->
+```razor
+GridColumnOptionsModule.Register(IgniteUIBlazor);
+DataGridToolbarModule.Register(IgniteUIBlazor);
+SparklineModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGridColumnOptionsModule } from 'igniteui-react-grids';
@@ -159,7 +161,7 @@ $PlatformShort$ グリッド モジュールがインポートされました。
 ```
 
 ```razor
-code {
+@code {
     public void GenerateData()
     {
         string[] names = new string[] {
@@ -252,7 +254,7 @@ code {
 ```
 
 ## 列の自動生成
-以下のコードは、$PlatformShort$ データグリッドを上記のローカルデータにバインドする方法を示しています。
+以下のコードは、$PlatformShort$ データ グリッドを上記のローカルデータにバインドする方法を示しています。
 
 ```tsx
 <IgrDataGrid
@@ -371,8 +373,9 @@ grid1.dataSource = data;
 
 ### その他のリソース
 
+- [アクセシビリティの遵守](data-grid-accessibility.md)
 - [セルのアクティブ化](data-grid-cell-activation.md)
-- [セル編集](data-grid-cell-editing.md)
+- [グリッド編集](data-grid-cell-editing.md)
 - [セル選択](data-grid-cell-selection.md)
 - [列アニメーション](data-grid-column-animation.md)
 - [列の選択](data-grid-column-chooser.md)
@@ -387,5 +390,5 @@ grid1.dataSource = data;
 <!-- end: Angular, React, WebComponents -->
 - [行のピン固定](data-grid-row-pinning.md)
 - [行グループ](data-grid-row-grouping.md)
-- [Row Highlighting](data-grid-row-highlighting.md)
+- [行の強調表示](data-grid-row-highlighting.md)
 - [パフォーマンス](data-grid-performance.md)

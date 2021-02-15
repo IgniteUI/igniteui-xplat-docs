@@ -41,14 +41,15 @@ public dataSource: any[] = SampleScatterData.create();
 
 ## モジュールの要件
 
-散布エリア シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+散布エリア シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule       
-* DataChartInteractivityModule
-* ScatterAreaSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterAreaSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -131,7 +132,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`ScatterAreaSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`ScatterAreaSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

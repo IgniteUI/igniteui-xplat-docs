@@ -26,7 +26,7 @@ _language: ja
 
 
 ## コード例
-このコードは、左右に配置される 2 つの `NumericYAxis` と、互いに積み重ねられる 2 つの `CategoryXAxis` を使用してデータチャートを作成する方法を示します。
+このコードは、左右に配置される 2 つの `NumericYAxis` と、互いに積み重ねられる 2 つの `CategoryXAxis` を使用してデータ チャートを作成する方法を示します。
 
 ```razor
 <DataChart Height="500px" Width="700px">

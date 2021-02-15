@@ -48,14 +48,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## モジュールの要件
 
-`ScatterSplineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`ScatterSplineSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* ScatterSplineSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterSplineSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

@@ -51,21 +51,20 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 ## モジュールの要件
 
-`XamRadialGauge` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`XamRadialGauge` を作成するには、以下のモジュールが必要です。
 
-* RadialGaugeModule
-<!-- end: Blazor -->
+```razor
+RadialGaugeModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts
 import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxRadialGaugeModule,
-        IgxRadialGaugeComponent
+        IgxRadialGaugeModule
         // ...
     ]
 })
@@ -75,20 +74,17 @@ export class AppModule {}
 ```ts
 // Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
-import { IgcRadialGaugeCoreModule  } from 'igniteui-webcomponents-gauges';
+// Radial Gauge Module
 import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 
 // register the modules
 ModuleManager.register(
-    IgcRadialGaugeCoreModule,
     IgcRadialGaugeModule
 );
 ```
 
 ```ts
 import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
-import { IgrRadialGauge } from 'igniteui-react-gauges';
 
 IgrRadialGaugeModule.register();
 ```

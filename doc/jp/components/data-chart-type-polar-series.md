@@ -28,7 +28,7 @@ _language: ja
 <!-- end: Angular, React, WebComponents -->
 
 ## 極座標シリーズのタイプ
-データチャートは、以下のタイプの極座標シリーズをサポートしています。
+データ チャートは、以下のタイプの極座標シリーズをサポートしています。
 
 | シリーズ名|説明   |
 |--------------|---------------|
@@ -66,13 +66,14 @@ public dataSource: any[] = SamplePolarData.create();
 ```
 ## モジュールの要件
 
-極座標シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+極座標シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartPolarModule
-* DataChartPolarCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartPolarModule.Register(IgniteUIBlazor);
+DataChartPolarCoreModule.Register(IgniteUIBlazor);   
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -168,7 +169,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`PolarLineSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`PolarLineSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

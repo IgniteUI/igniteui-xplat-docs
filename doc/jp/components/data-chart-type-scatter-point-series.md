@@ -27,7 +27,7 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 ## 軸の要件
 
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`
@@ -48,14 +48,15 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 
 ## モジュールの要件
 
-`ScatterSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`ScatterSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule       
-* DataChartInteractivityModule
-* NumberAbbreviatorModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+NumberAbbreviatorModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

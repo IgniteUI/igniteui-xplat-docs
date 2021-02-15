@@ -26,7 +26,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャートコンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
 
 ## データの要件
 
@@ -44,14 +44,15 @@ public dataSource: any[] = SampleFinancialData.create();
 
 ## モジュールの要件
 
-ファイナンシャル シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+ファイナンシャル シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartFinancialModule
-* DataChartFinancialCoreModule
-* DataChartFinancialIndicatorsModule        
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialModule.Register(IgniteUIBlazor);
+DataChartFinancialCoreModule.Register(IgniteUIBlazor);
+DataChartFinancialIndicatorsModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

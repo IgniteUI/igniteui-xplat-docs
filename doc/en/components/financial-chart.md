@@ -67,11 +67,11 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ Financial Chart component requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The $PlatformShort$ Financial Chart component requires the following modules:
 
-* FinancialChartModule
-<!-- end: Blazor -->
-
+```razor
+FinancialChartModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts

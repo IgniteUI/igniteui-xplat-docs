@@ -43,9 +43,11 @@ npm install --save {PackageInputs}
 
 ## Required Modules
 
-The `Grid` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Grid` requires the following modules:
 
-* DataGridModule
+```razor 
+DataGridModule.Register(IgniteUIBlazor);
+```
 <!-- end: Blazor -->
 
 ```ts
@@ -69,12 +71,13 @@ ModuleManager.register(
 
 ## Optional Modules
 
-The optional `Grid` features, seen above, requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The optional `Grid` features, seen above, requires the following modules:
 
-* GridColumnOptionsModule
-* DataGridToolbarModule
-* SparklineModule
-<!-- end: Blazor -->
+```razor
+GridColumnOptionsModule.Register(IgniteUIBlazor);
+DataGridToolbarModule.Register(IgniteUIBlazor);
+SparklineModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGridColumnOptionsModule } from 'igniteui-react-grids';
@@ -157,7 +160,7 @@ Now that the $PlatformShort$ data grid module is imported, next is the basic con
 ```
 
 ```razor
-code {
+@code {
     public void GenerateData()
     {
         string[] names = new string[] {
@@ -371,7 +374,7 @@ grid1.dataSource = data;
 
 - [Accessibility Compliance](data-grid-accessibility.md)
 - [Cell Activation](data-grid-cell-activation.md)
-- [Cell Editing](data-grid-cell-editing.md)
+- [Grid Editing](data-grid-cell-editing.md)
 - [Cell Selection](data-grid-cell-selection.md)
 - [Column Animation](data-grid-column-animation.md)
 - [Column Chooser](data-grid-column-chooser.md)
@@ -386,4 +389,5 @@ grid1.dataSource = data;
 <!-- end: Angular, React, WebComponents -->
 - [Row Pinning](data-grid-row-pinning.md)
 - [Row Grouping](data-grid-row-grouping.md)
+- [Row Highlighting](data-grid-row-highlighting.md)
 - [Performance](data-grid-performance.md)

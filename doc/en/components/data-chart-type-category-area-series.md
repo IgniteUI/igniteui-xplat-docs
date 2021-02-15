@@ -46,14 +46,14 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## Required Modules
 
-Creation of the `AreaSeries` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+Creation of the `AreaSeries` requires the following modules:
 
-  * DataChartCoreModule
-  * DataChartCategoryModule
-  * DataChartCategoryCoreModule
-  * DataChartInteractivityModule
+```razor
+  DataChartCoreModule.Register(IgniteUIBlazor);
+  DataChartCategoryModule.Register(IgniteUIBlazor);
+  DataChartCategoryCoreModule.Register(IgniteUIBlazor);
+  DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
-<!-- end: Blazor -->
 
 ```ts
 // axis' modules:

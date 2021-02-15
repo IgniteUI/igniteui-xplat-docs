@@ -39,23 +39,22 @@ npm install --save {PackageGauges}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-<!-- Blazor -->
-The `XamBulletGraph` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
 
-* BulletGraphModule
-<!-- end: Blazor -->
+The `XamBulletGraph` requires the following modules:
+
+```razor
+BulletGraphModule.Register(IgniteUIBlazor);
+```
 
 <!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
-import { IgxBulletGraphComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxBulletGraphModule,
-        IgxBulletGraphComponent
+        IgxBulletGraphModule
         // ...
     ]
 })
@@ -64,7 +63,6 @@ export class AppModule {}
 
 ```ts
 import { IgrBulletGraphModule } from 'igniteui-react-gauges';
-import { IgrBulletGraph } from 'igniteui-react-gauges';
 
 IgrBulletGraphModule.register();
 ```

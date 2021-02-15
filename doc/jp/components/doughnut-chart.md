@@ -35,12 +35,12 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ ドーナツ チャートを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+$PlatformShort$ ドーナツ チャートを作成するには、以下のモジュールが必要です。
 
-* DoughnutChartModule
-* RingSeriesModule
-<!-- end: Blazor -->
-
+```razor
+DoughnutChartModule.Register(IgniteUIBlazor);
+RingSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts
@@ -120,7 +120,7 @@ this.data = [
 
 ## 複数のリング
 ドーナツ チャート コンポーネントは、複数のリングを、異なるデータ項目にバインド可能な各リングと同時に表示できます。または共通のデータ ソースを共有できます。たとえば、以下の 2 つのデータ ソースは、複数のリングにバインドするために使用されます。
-
+```
 
 ```ts
 public Months: any[];

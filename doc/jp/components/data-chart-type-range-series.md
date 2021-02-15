@@ -56,13 +56,14 @@ public dataSource: any[] = SampleRangeData.create();
 
 ## モジュールの要件
 
-範囲シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+範囲シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* RadialPieSeriesModule
-* RadialPieSeriesCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialPieSeriesModule.Register(IgniteUIBlazor);
+RadialPieSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // in app.module.ts file
@@ -140,7 +141,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`RangeColumnSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`RangeColumnSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

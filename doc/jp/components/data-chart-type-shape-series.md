@@ -5,16 +5,16 @@ _keywords: $PlatformShort$ charts, data chart, shape charts, $ProductName$, Infr
 mentionedTypes: ['XamDataChart','ShapeColumnSeries','ScatterPolygonSeries','ScatterPolylineSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布図 - 図形シリーズ
+# $PlatformShort$ 散布図 - シェイプ シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントの図形シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴン (`ScatterPolygonSeries`) またはポリライン (`ScatterPolylineSeries`) のコレクションとして描画するチャート シリーズのグループです。
+このトピックは、$PlatformShort$ データ チャート コンポーネントのシェイプ シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴン (`ScatterPolygonSeries`) またはポリライン (`ScatterPolylineSeries`) のコレクションとして描画するチャート シリーズのグループです。
 
 散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
-## $PlatformShort$ 散布図 - 図形シリーズの例
+## $PlatformShort$ 散布図 - シェイプ シリーズの例
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-shape-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布図 - 図形シリーズの例"></iframe>
+    <iframe id="data-chart-type-shape-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布図 - シェイプ シリーズの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-shape-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
@@ -57,14 +57,15 @@ public dataSource: any[] = SampleShapeData.create();
 
 ## モジュールの要件
 
-散布多角形シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+散布多角形シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* ScatterPolygonSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterPolygonSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -89,7 +90,6 @@ import { IgxDataChartShapeModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:
@@ -145,7 +145,7 @@ ModuleManager.register(
 ```
 
 ## コード例
-このコードは、`ShapeColumnSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。
+このコードは、`ShapeColumnSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。
 
 ```razor
 <DataChart Height="500px" Width="750px">

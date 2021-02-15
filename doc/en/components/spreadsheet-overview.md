@@ -29,11 +29,12 @@ npm install --save {PackageSpreadsheet}
 
 ## Required Modules
 
-The `Spreadsheet` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `Spreadsheet` requires the following modules:
 
-* ExcelModule
-* SpreadsheetModule
-<!-- end: Blazor -->
+```razor
+ExcelModule.Register(IgniteUIBlazor);
+SpreadsheetModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxExcelModule } from 'igniteui-angular-excel';

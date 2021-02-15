@@ -47,13 +47,14 @@ public dataSource: any[] = SampleCategoryData.create();
 
 ## モジュールの要件
 
-`LineSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`LineSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule;
-* DataChartCategoryModule;
-* DataChartCategoryCoreModule;
-* DataChartInteractivityModule;
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartCategoryCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:

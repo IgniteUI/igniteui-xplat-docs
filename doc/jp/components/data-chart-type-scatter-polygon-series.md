@@ -46,14 +46,15 @@ public dataSource: any[] = SampleShapeData.create();
 
 ## モジュールの要件
 
-`ScatterPolygonSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`ScatterPolygonSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartScatterCoreModule
-* DataChartScatterModule   
-* DataChartInteractivityModule
-* ScatterPolygonSeriesModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartScatterCoreModule.Register(IgniteUIBlazor);
+DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+ScatterPolygonSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -77,7 +78,6 @@ import { IgxDataChartShapeModule } from 'igniteui-angular-charts';
 })
 export class AppModule { /* ... */ }
 ```
-
 
 ```ts
 // axis' modules:

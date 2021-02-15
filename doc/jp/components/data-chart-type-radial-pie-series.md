@@ -24,7 +24,7 @@ $ProductName$ 放射状円チャートはラジアル チャートのグルー�
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データチャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
+$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`
@@ -46,13 +46,14 @@ public dataSource: any[] = SampleRadialData.create();
 
 ## モジュールの要件
 
-`RadialPieSeries` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`RadialPieSeries` を作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* RadialPieSeriesModule
-* RadialPieSeriesCoreModule      
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+RadialPieSeriesModule.Register(IgniteUIBlazor);
+RadialPieSeriesCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -76,7 +77,6 @@ import { IgxDataChartRadialModule } from 'igniteui-angular-charts';
     ]
 })
 ```
-
 
 ```ts
 // axis' modules:

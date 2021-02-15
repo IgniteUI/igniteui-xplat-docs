@@ -72,14 +72,15 @@ $PlatformShort$ データ チャート コンポーネントはさまざまな�
 
 ## モジュールの要件
 
-積層シリーズを作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+積層シリーズを作成するには、以下のモジュールが必要です。
 
-* DataChartCoreModule        
-* DataChartInteractivityModule
-* DataChartCategoryModule
-* DataChartStackedModule,
-* StackedFragmentSeriesModule,
-<!-- end: Blazor -->
+```razor
+DataChartCoreModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+DataChartCategoryModule.Register(IgniteUIBlazor);
+DataChartStackedModule.Register(IgniteUIBlazor);
+StackedFragmentSeriesModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // axis' modules:
@@ -227,7 +228,7 @@ ModuleManager.register(
 ```
 
 ## コード例 - 積層柱状シリーズ
-このコードは、`StackedColumnSeries` でデータチャートのインスタンスを作成し、データソースにバインドする方法を説明します。上記のコードを使って `StackedColumnSeries` をレンダリングしたいシリーズの名前で置き換えて他のタイプのカテゴリ シリーズを作成することもできます。
+このコードは、`StackedColumnSeries` でデータ チャートのインスタンスを作成し、データソースにバインドする方法を説明します。上記のコードを使って `StackedColumnSeries` をレンダリングしたいシリーズの名前で置き換えて他のタイプのカテゴリ シリーズを作成することもできます。
 
 ```razor
 <DataChart Width="100%" Height="100%>
@@ -346,7 +347,7 @@ series1.yAxis = yAxis;
 ```
 
 ## コード例 - 積層棒シリーズ
- `StackedBarSeries` は、`CategoryYAxis` と `NumericXAxis` を使用するという点で異なるタイプの軸を必要とするため、`StackedColumnSeries` を任意のシリーズ名に置き換えることができるという規則の例外です。このコードは、`StackedBarSeries` を使用してデータチャートのインスタンスを作成し、それをデータソースにバインドする方法を示します。
+ `StackedBarSeries` は、`CategoryYAxis` と `NumericXAxis` を使用するという点で異なるタイプの軸を必要とするため、`StackedColumnSeries` を任意のシリーズ名に置き換えることができるという規則の例外です。このコードは、`StackedBarSeries` を使用してデータ チャートのインスタンスを作成し、それをデータソースにバインドする方法を示します。
 
 ```html
 <igx-data-chart #chart height="100%" width="100%" [dataSource]="data">
