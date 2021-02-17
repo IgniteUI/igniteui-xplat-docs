@@ -5,41 +5,63 @@ _keywords: $PlatformShort$ Charts, Column Chart, Infragistics, $PlatformShort$ �
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 _language: ja
 ---
-# $PlatformShort$ 縦棒チャート
+# $PlatformShort$ Column Charts
 
-<!-- TODO add introduction with info about using category-chart with the chartType property set to Column -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
 
-## $PlatformShort$ 縦棒チャートの例
-<!-- TODO use this iframe which will point to a new sample:
-<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-column' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Charts Example"></iframe> -->
+<div class="divider--half"></div>
 
-## $PlatformShort$ シンプルな縦棒チャート
-<!-- TODO show code for CategoryChart with
-- the dataSource set to multiple data sources
-- the chartType property set to Column
-- the brushes and markerOutlines properties set to same value, e.g. "red, green, blue"
-- the markerBrushes property set for "White"
-- the markerTypes property set for "Circle"
--->
+## $PlatformShort$ Column Chart with Single Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Column Chart with Multiple Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 高度な縦棒チャート
 
 複数の軸や他のシリーズの合成など、より多くの機能を備えた縦棒チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-    data-chart-type-category-column-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ウォーターフォール チャート
 
-<!-- data-chart-type-category-waterfall-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 積層型縦棒チャート
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-stacked-column-series.md
-    data-chart-type-stacked-100-column-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Stacked 100 Column Chart
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 範囲縦棒チャート
 

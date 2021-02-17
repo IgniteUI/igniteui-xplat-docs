@@ -10,23 +10,64 @@ _language: ja
 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
-</div>	
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの凡例"></iframe>
+</div>
 
 <div class="divider--half"></div>
+
+In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
+
+<!-- Blazor -->
+```razor
+CategoryChartModule.Register(IgniteUIBlazor);
+```
+<!-- end: Blazor -->
+
+<!-- Angular -->
+```ts
+// app.module.ts
+import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+
+@NgModule({
+    imports: [
+        // ...
+        IgxCategoryChartModule,
+        // ...
+    ]
+})
+export class AppModule {}
+```
+<!-- end: Angular -->
+
+<!-- React -->
+```ts
+import { IgrCategoryChartModule } from 'igniteui-react-charts';
+
+IgrCategoryChartModule.register();
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+```ts
+import { ModuleManager } from 'igniteui-webcomponents-core';
+import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
+
+ModuleManager.register(
+    IgcCategoryChartModule
+    );
+```
+<!-- end: WebComponents -->
 
 - 折れ線チャートとは異なり、エリア チャートは X 軸 (下軸) とデータ値を表す線の間の領域を色またはテクスチャで塗りつぶして視覚的にボリュームを表します。
 - $PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン チャートと同じです。
 
 折れ線チャートには、データに基づいて複数のバリアントがあります。以下が含まれます。
 
-- 階層型エリア チャート
-- 積層型エリア チャート
-- ステップ エリア チャート
+- 階層型折れ線チャート
+- 積層型折れ線チャート
 - ステップ折れ線チャート
-- 極座標型エリア チャート
 - 極座標型折れ線チャート
-- 積層型 100 エリア チャート
+- 積層型 100 折れ線チャート
 
 折れ線チャートにはいくつかのユースケースがあります。例:
 
@@ -56,17 +97,65 @@ _language: ja
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
 
+The following code snippet demonstrates a sample data source that can be used to create a Line Chart:
+
+```razor
+public class EnergyRenewableData : List<EnergyRenewableInfo>
+{
+    public EnergyRenewableData()
+    {
+        Add(new EnergyRenewableInfo { Year = "2009", Europe = 31, USA = 19, China = 21 });
+        Add(new EnergyRenewableInfo { Year = "2010", Europe = 43, USA = 24, China = 26 });
+        Add(new EnergyRenewableInfo { Year = "2011", Europe = 66, USA = 28, China = 29 });
+        Add(new EnergyRenewableInfo { Year = "2012", Europe = 69, USA = 26, China = 32 });
+        Add(new EnergyRenewableInfo { Year = "2013", Europe = 58, USA = 38, China = 47 });
+        Add(new EnergyRenewableInfo { Year = "2014", Europe = 40, USA = 31, China = 46 });
+        Add(new EnergyRenewableInfo { Year = "2015", Europe = 78, USA = 19, China = 50 });
+        Add(new EnergyRenewableInfo { Year = "2016", Europe = 13, USA = 52, China = 90 });
+        Add(new EnergyRenewableInfo { Year = "2017", Europe = 78, USA = 50, China = 132 });
+        Add(new EnergyRenewableInfo { Year = "2018", Europe = 40, USA = 34, China = 134 });
+        Add(new EnergyRenewableInfo { Year = "2019", Europe = 80, USA = 38, China = 96 });
+    }
+}
+
+public class EnergyRenewableInfo
+{
+    public string Year { get; set; }
+    public int Europe { get; set; }
+    public int China { get; set; }
+    public int USA { get; set; }
+}
+```
+
+```ts
+public initData() {
+    this.data = [
+        { Year: "2009", Europe: 31, China: 21,  USA: 19 },
+        { Year: "2010", Europe: 43, China: 26,  USA: 24 },
+        { Year: "2011", Europe: 66, China: 29,  USA: 28 },
+        { Year: "2012", Europe: 69, China: 32,  USA: 26 },
+        { Year: "2013", Europe: 58, China: 47,  USA: 38 },
+        { Year: "2014", Europe: 40, China: 46,  USA: 31 },
+        { Year: "2015", Europe: 78, China: 50,  USA: 19 },
+        { Year: "2016", Europe: 13, China: 90,  USA: 52 },
+        { Year: "2017", Europe: 78, China: 132, USA: 50 },
+        { Year: "2018", Europe: 40, China: 134, USA: 34 },
+        { Year: "2019", Europe: 80, China: 96,  USA: 38 },
+    ];
+}
+```
+
 ## 単一シリーズの $PlatformShort$ 折れ線チャート
 
 以下の例に示すように、$PlatformShort$ 折れ線チャートは、2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="cc-single-source" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="単一ソースの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
 <div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-single-source-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
     </button>
-<sample-button src="charts/data-chart/type-category-line-series"></sample-button>
+<sample-button src="charts/category-chart/chart-single-source"></sample-button>
 
 </div>
 
@@ -77,12 +166,12 @@ _language: ja
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="cc-multiple-sources" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="複数ソースの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
 <div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-multiple-sources'-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
     </button>
-<sample-button src="charts/data-chart/type-category-line-series"></sample-button>
+<sample-button src="charts/category-chart/line-chart-multiple-sources'"></sample-button>
 
 </div>
 
@@ -93,12 +182,12 @@ $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズ�
 複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="cc-line-chart-with-legend" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートの凡例"></iframe>
 </div>
 <div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-with-legend-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
     </button>
-<sample-button src="charts/data-chart/type-category-line-series"></sample-button>
+<sample-button src="charts/category-chart/line-chart-with-legend"></sample-button>
 
 </div>
 
@@ -111,12 +200,12 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="cc-high-frequency" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
 </div>
 <div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-high-frequency-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
     </button>
-<sample-button src="charts/data-chart/type-category-line-series"></sample-button>
+<sample-button src="charts/category-chart/high-frequency"></sample-button>
 
 </div>
 
@@ -128,22 +217,23 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートのスタイル設定"></iframe>
-</div>	
+    <iframe id="cc-chart-styling" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートのスタイル設定"></iframe>
+</div>
+   <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-styling-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
+    </button>
+<sample-button src="charts/category-chart/line-chart-styling"></sample-button>
 
-<div class="divider--half"></div> 
+<div class="divider--half"></div>
 
 
-## その他のリソース
+<!-- ## Additional Resources
 
-- [エリア チャート](chart-types-area.md)
-- [縦棒チャート](chart-types-column.md)
-- [ファイナンシャル チャート](chart-types-financial.md)
-- [散布図](chart-types-scatter.md)
-- [シェープ チャート](chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart)
-- [スプライン チャート](chart-types-spline.md)
-- [ステップ チャート](chart-types-step.md)
-- [スパークライン](../sparkline.md)
+- [Series Animations](chart-features-animations.md)
+- [Series Annotations](chart-features-annotations.md)
+- [Series Highlighting](chart-features-highlighting.md)
+- [Series Markers](chart-features-markers.md)
+- [Series Tooltips](chart-features-tooltips.md)
+- [Series Trendlines](chart-features-trendlines.md) -->
 
 ## API メンバー
 

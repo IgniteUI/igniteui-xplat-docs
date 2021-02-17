@@ -7,28 +7,37 @@ _language: ja
 ---
 # $PlatformShort$ スプライン チャート
 
-<!-- TODO add introduction with info about using category-chart with the chartType property set to spline -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
 
-## $PlatformShort$ スプライン チャートの例
-<!-- TODO use this iframe which will point to a new sample:
-<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-spline' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ スプライン チャートの例"></iframe> -->
+<div class="divider--half"></div>
 
-## $PlatformShort$ シンプルなスプライン チャート
-<!-- TODO show code for CategoryChart with
-- the dataSource set to multiple data sources
-- the chartType property set to spline
-- the brushes and markerOutlines properties set to same value, e.g. "red, green, blue"
-- the markerBrushes property set for "White"
-- the markerTypes property set for "Circle"
--->
+## $PlatformShort$ Spline Chart with Single Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Spline Chart with Multiple Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 高度なスプライン チャート
 
 他のシリーズの複合など、より多くの機能を備えたスプライン チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-category-spline-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 積層型スプライン チャート
 

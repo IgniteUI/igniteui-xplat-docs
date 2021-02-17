@@ -7,7 +7,13 @@ _language: ja
 ---
 # $PlatformShort$ ファイナンシャル チャート
 
-<!-- TODO add introduction with info about using financial-chart with the chartType property set to Candlestick -->
+## $PlatformShort$ Bar Chart with Multiple Series
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ファイナンシャル チャートの例
 <!-- TODO use this iframe which will point to a new sample:
