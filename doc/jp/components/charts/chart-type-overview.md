@@ -1,213 +1,213 @@
 ---
 title: $PlatformShort$ チャートおよびグラフ ライブラリ | データ可視化 | インフラジスティックス | $ProductName$
-_description: Visualize any type of data, business, financial, scientific, and scatter, with the capability of millisecond updates with millions of data points in your $PlatformShort$ apps.
+_description: $PlatformShort$ アプリの数百万のデータ ポイントでミリ秒の更新機能を使用して、あらゆるタイプのデータ、ビジネス、ファイナンシャル、科学、および散布を視覚化します。
 _keywords: $PlatformShort$ Charts, Chart, Infragistics, $PlatformShort$ チャート, チャート, インフラジスティックス
 _language: ja
 ---
-# $PlatformShort$ Charts & Graphs Overview
+# $PlatformShort$ チャートとグラフの概要
 
-$ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts and dashboards for your web and mobile apps. Built for speed and beauty, designed to work on every modern browser, and with complete touch and interactivity, you can quickly and easily build responsive visuals into your next app on any device. 
+$ProductName$ チャートおよびグラフは、データ視覚化の広範なライブラリであり、Web アプリやモバイル アプリの魅力的でインタラクティブなチャートやダッシュボードを実現します。速度と美しさを重視して構築され、最新のすべてのブラウザで動作するように設計されており、完全なタッチとインタラクティブ機能により、レスポンシブ ビジュアルをあらゆるデバイスの次のアプリにすばやく簡単に組み込むことができます。 
 
-The $PlatformShort$ charting component supports over 65 types of series and combinations that let you visualize any type of data, including Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, Shape Series, and Geospatial Series. No matter the type of comparison you are doing, or what type of data story you are trying to tell, you can represent your data in any of these ways: 
+$PlatformShort$ チャート コンポーネントは、カテゴリ シリーズ、ファイナンシャル シリーズ、極座標シリーズ、ラジアル シリーズ、範囲シリーズ、散布シリーズ、シェイプ シリーズ、地理空間シリーズなど、あらゆるタイプのデータを視覚化できる 65 種類以上のシリーズと組み合わせをサポートします。実行している比較のタイプ、または伝えようとしているデータ ストーリーのタイプに関係なく、次のいずれかの方法でデータを表すことができます:  
 
-- Change Over Time 
-- Comparison 
-- Correlation 
-- Distribution 
-- Geospatial 
-- Overview + Detail 
-- Part to Whole 
-- Ranking 
+- 時間毎の変化 
+- 比較 
+- 相関 
+- 配布 
+- 地理空間 
+- 概要 + 詳細 
+- 部分から全体 
+- ランキング
 
-Power your most demanding visualizations with Infragistics $PlatformShort$ charting! 
+インフラジスティックス の $PlatformShort$ チャートを使用して、最もニーズの高い視覚化を強化してください。 
 
-## $PlatformShort$ Chart Example
+## $PlatformShort$ チャートの例
 
-This $PlatformShort$ column chart, or column graph, example shows Olympics medals by Country. The $PlatformShort$ column chart belongs to a group of category charts that include at one or more numeric or time-series based data point, and one string data point, that compares data values by differing column heights. In this example, the Y-Axis, or left-side labels of the chart, are displaying numeric data showing the number of medals won, and the X-Axis, or bottom labels, are showing a time value, in this case Year. The columns are the category values representing different countries, like USA, Japan and Germany. 
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
-## $PlatformShort$ Chart and Graph Types
-
-The $PlatformShort$ product has over 65 different chart and graph types for any scenario – from a single chart display to an interactive dashboard. You can create $PlatformShort$ charts like Pie, Bar, Area, Line, Point, Stacked, Doughnut, Scatter, Gauge, Polar, Treemap, Stock, Financial, Geospatial Maps and more for your mobile or web apps. The benefit of our $PlatformShort$ chart vs. others is full support for features like: 
-
-- Responsive Web Design built in 
-- Interactive Panning and Zooming with Mouse, Keyboard and Touch 
-- Full Control of Chart Animation 
-- Chart Drill-Down Events 
-- Real-Time Streaming Support 
-- High-Volume (Millions of Data Points) Support 
-- Trends Lines and other Data Analysis features 
-
-Built with a modular design of axis, markers, series, legend, and annotation layers, the $PlatformShort$ chart makes it easy to design a render any type of data story. Build a simple chart with a single data series, or build more complex data stories with multiple series of data, with multiple axis in composite views. 
-
-### $PlatformShort$ Bar Chart
-
-The $PlatformShort$ Bar Chart, or Bar Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
-
-Learn more about our [bar charts](chart-types-bar.md)
+この $PlatformShort$ 縦棒チャート、または縦棒グラフの例は、国別のオリンピック メダルを示しています。$PlatformShort$ 縦棒チャートは、1 つ以上の数値または時系列に基づくデータ ポイントと、データ値を列の高さで比較する 1 つの文字列データ ポイントを含むカテゴリ チャートのグループに属しています。この例では、Y 軸 (チャートの左側のラベル) に獲得したメダルの数を示す数値データが表示され、X 軸 (下部のラベル) に時間値 (この場合は年) が表示されます。列は、米国、日本、ドイツなど、さまざまな国を表すカテゴリ値です。 
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-### $PlatformShort$ Pie Chart
+## $PlatformShort$ チャートとグラフのタイプ
 
-The $PlatformShort$ Pie Chart, or Pie Graph, is a very common part-to-whole chart type. Part-to-whole charts show how categories (parts) of a data set add up to a total (whole) value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed. A pie chart renders data values as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. The total values represented by the pie slices represent a whole value, like 100 or 100%. Pie charts are perfect for small data sets and are easy to read at a quick glance.
+$PlatformShort$ 製品には、単一のチャート表示からインタラクティブなダッシュボードまで、あらゆるシナリオに対応する 65 を超えるさまざまなチャートおよびグラフ タイプがあります。モバイル アプリやウェブ アプリ用に、円、棒、エリア、折れ線、ポイント、積層型、ドーナツ、散布、ゲージ、極座標、ツリーマップ、株価、ファイナンシャル、地理空間マップなどの $PlatformShort$ チャートを作成できます。$PlatformShort$ チャートと他のチャートの利点は、次のような機能が完全にサポートされていることです: 
 
-Learn more about our [pie charts](../pie-chart.md)
+- 組み込まれたレスポンシブ Web デザイン 
+- マウス、キーボード、タッチを使用したインタラクティブなパンとズーム 
+- チャート アニメーションのフル コントロール 
+- チャート ドリルダウン イベント 
+- リアルタイム ストリーミングのサポート 
+- 大量 (数百万のデータ ポイント) のサポート 
+- トレンドラインおよびその他のデータ分析機能 
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
+$PlatformShort$ チャートは、軸、マーカー、シリーズ、凡例、および注釈レイヤーのモジュラー デザインで構築されており、あらゆるタイプのデータ ストーリーの描画を簡単にデザインできます。単一のデータ シリーズを使用して単純なチャートを作成するか、複合ビューに複数の軸があるデータの複数シリーズを使用してより複雑なデータ ストーリーを作成します。
 
-### $PlatformShort$ Line Chart
+### $PlatformShort$ 棒チャート
 
-The $PlatformShort$ Line Chart, or Line Graph is a type of category line graph shows the continuous data values represented by points connected by straight line segments of one or more quantities over a period time for showing trends and performing comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) are showing a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
+$PlatformShort$ 棒チャート (棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、並べ替えられたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。
 
-Learn more about our [line charts](chart-types-line.md)
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
-### $PlatformShort$ Doughnut Chart
-
-The $PlatformShort$ Doughnut Chart, or Doughnut Graph, is a variant of a Pie Chart, proportionally illustrating the occurrences of a variable in a circle to represents parts of a whole. The doughnut chart has a circular opening at the center of the pie chart, where a title or category explanation can be displayed. Doughnut charts can support multiple concentric rings, with built-in support for visualizing hierarchical data.
-
-Learn more about our [doughnut charts](../doughnut-chart.md)
+[棒チャート](chart-types-bar.md)の詳細をご覧ください。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-### $PlatformShort$ Area Chart
+### $PlatformShort$ 円チャート
 
-Learn more about our [area charts](chart-types-area.md)
+$PlatformShort$ 円チャート、または円グラフは、一般的な部分から全体へのチャート タイプです。部分から全体へのチャートは、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示します。カテゴリは、分析されている合計値に対する値のパーセンテージに基づいて、他のカテゴリに比例して表示されます。円チャートは、データ値を円形または円チャートのセクションとして描画します。各セクションまたは円スライスには、基本データ値に比例する円弧の長さがあります。円スライスで表される合計値は、100 または 100％ などの全体の値を表します。円チャートは小さなデータセットに最適で、一目で簡単に読むことができます。
+
+[円チャート](../pie-chart.md)の詳細をご覧ください。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-### Sparkline Chart 
+### $PlatformShort$ 折れ線チャート
 
-A Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](../sparkline.md).
+$PlatformShort$ 折れ線チャート、または折れ線グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
-### Bubble chart 
+[折れ線チャート](chart-types-line.md)の詳細をご覧ください。
 
-A Bubble Chart, or Bubble Graph, is used to show data comprising of three numeric values. Two of the values are plotted as an intersecting point using a Cartesian (X, Y) coordinate system, and the third value is rendered as the diameter size of the point. This gives the Bubble Chart its name - a visualization of varying sized bubbles along the X and Y coordinates of the plot. The $PlatformShort$ Bubble Chart is used to show relationships of data correlations with the data value differences rendered by size. You can also use a fourth data dimension, typically color, to further differentiate the values in your Bubble chart. Learn more about our [bubble charts](chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart).
+<!-- <div class="sample-container loading" style="height: 500px">
+    <iframe></iframe>
+</div>
+<div class="divider--half"></div> -->
 
-### Financial chart / Stock Chart 
+### $PlatformShort$ ドーナツ チャート
 
-The $PlatformShort$ Financial or Stock Chart, is a composite visualization that renders stock data and financial data in a time-series chart that includes interactive visual elements in a toolbar like day / week / month filters, chart type selection, volume type selection, indicators selection and trends lines selection. Designed for customization, the $PlatformShort$ Stock Chart can be customized in any way to give an easier visualization and interpretation of your data. The financial chart renders the date-time data along the X-Axis (bottom labels) and shows fields like Open, High, Low and Close volumes. The type of chart to render the Time-Series data can be Bar, Candle, Column, or Line. Learn more about our [financial charts](chart-types-financial.md).
+$PlatformShort$ ドーナツ チャート、またはドーナツ グラフは、円チャートの変形であり、全体の一部を表す円内の変数の発生を比例的に示します。ドーナツ チャートには、円チャートの中央に円形の開口部があり、タイトルまたはカテゴリの説明を表示できます。ドーナツ チャートは、階層データを視覚化するための組み込みサポートを使用して、複数の同心円をサポートできます。
 
-### Column chart 
+[ドーナツ チャート](../doughnut-chart.md)の詳細をご覧ください。
 
-The $PlatformShort$ Column Chart, or Column Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by vertical bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the top to bottom of the chart towards the values of data points. Learn more about our [column charts](chart-types-column.md).
+<!-- <div class="sample-container loading" style="height: 500px">
+    <iframe></iframe>
+</div>
+<div class="divider--half"></div> -->
 
-### Polar Area chart 
+### $PlatformShort$ エリア チャート
 
-The $PlatformShort$ Polar Area Chart or Polar Graph belongs to a group of polar charts and has a shape of a filled polygon which vertices or corners are located at the polar (angle/radius) coordinates of data points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Chart but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple Polar Area Charts can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets. Learn more about our [polar charts](chart-types-polar.md).
+[エリア チャート](chart-types-area.md)の詳細をご覧ください。
 
-### Scatter chart 
+<!-- <div class="sample-container loading" style="height: 500px">
+    <iframe></iframe>
+</div>
+<div class="divider--half"></div> -->
 
-The $PlatformShort$ Scatter Chart, or Scatter Graph, is used to show the relationship between two values using a Cartesian (X, Y) coordinate system to plot data. Each data point is rendered as the intersecting point of the data value on the X and Y Axis. Scatter charts draw attention to uneven intervals or clusters of data. They can highlight the deviation of collected data from predicted results and they are often used to plot scientific and statistical data. The $PlatformShort$ Scatter chart organizes and plots data chronologically (even if the data is not in chronological order before binding) on X-Axis and Y-Axis. Learn more about our [scatter charts](chart-types-scatter.md).
+### スパークライン チャート 
 
-### Spline Chart 
+スパークライン チャート、またはスパークライン グラフは、グリッド セル内や、データ ストーリーを伝えるために単語サイズの視覚化が必要な場所など、小規模なレイアウト内で描画することを目的としたカテゴリ チャートの一種です。他の $PlatformShort$ チャート タイプと同様に、スパークライン チャートには、チャート タイプ、マーカー、範囲、トレンドライン、不明な値のプロット、ツールチップなど、構成およびカスタマイズできるいくつかの視覚要素と対応する機能があります。スパークライン チャートは、折れ線チャート、エリア チャート、縦棒チャート、または Win/Loss チャートとして描画できます。スパーク チャートに相当するフルサイズのチャートの違いは、Y 軸 (左側のラベル) と X 軸 (下部のラベル) が表示されないことです。[スパークライン チャート](../sparkline.md)の詳細をご覧ください。
 
-The $PlatformShort$ Spline Chart, or Spline Graph is a type of category line graph shows the continuous data values represented by points connected by smooth line segments of one or more quantities over a period time for showing trends and performing comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) are showing a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart. The $PlatformShort$ Spline chart is identical to the $PlatformShort$ Spline chart, the only different being the line chart is points connected by straight lines, and the spline chart points are connected by smooth curves. Learn more about our [spline charts](chart-types-spline.md).
+### バブル チャート 
 
-### Stepline Chart 
+バブル チャート (バブル グラフ) は、3 つの数値で構成されるデータを表示するために使用されます。値の 2 つは、デカルト (X、Y) 座標系を使用して交点としてプロットされ、3 番目の値は点の直径サイズとして描画されます。これにより、バブル チャートにその名前が付けられます。これは、プロットの X 座標と Y 座標に沿ったさまざまなサイズのバブルの視覚化です。$PlatformShort$ バブル チャートは、データ相関とサイズによって描画されたデータ値の違いとの関係を示すために使用されます。4 番目のデータ ディメンション (通常は色) を使用して、バブル チャートの値をさらに区別することもできます。[バブル チャート](chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart)の詳細をご覧ください。
 
-A Step Line Chart, or Step Line Graph, is a category charts that renders a collection of data points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the Y-Axis (left labels) and categories are displayed on the X-Axis (bottom labels). The $PlatformShort$ Step Line chart emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ Step Line chart is identical to the $PlatformShort$ step area chart in all aspects except that the area below the step lines is not filled in. Learn more about our [step line charts](chart-types-step.md)
+### ファイナンシャル チャート/株価チャート 
 
-### Timeline Charts / Time-Series Charts 
+$PlatformShort$ ファイナンシャル/株価チャートは、時系列チャートで株価デーとファイナンシャル データを描画する複合視覚化です。 日/週/月フィルター、チャート タイプの選択、ボリューム タイプの選択、インジケーターの選択、トレンドラインの選択などのインタラクティブな視覚要素がツールバーに含まれています。カスタマイズ用に設計された $PlatformShort$ 株価チャートは、データの視覚化と解釈を容易にするために、任意の方法でカスタマイズできます。ファイナンシャル チャートは、X 軸 (下のラベル) に沿って日時データを描画し、Open、High、Low、Close ボリュームなどのフィールドを表示します。時系列データを描画するチャートのタイプは、棒、ローソク、縦棒、または折れ線です。[ファイナンシャル チャート](chart-types-financial.md)の詳細をご覧ください。
 
-A Time-Series Chart, or Timeline Graph, is a visualization that treats the data as a sequence of category data items that are sorted by then rendered by date. Labels on this axis are placed along the X-Axis (bottom Axis), according to the date-time value. The $PlatformShort$ Time-Series is use to show Financial Series, Range Series, and Category Series (Line, Area, Column, Point, Spline, Scatter, Waterfall and the Stacked equivalents of those chart types). The Time-Series also supports the ability to exclude intervals of data with breaks. As a result, labels will not appear at the excluded interval. For example, working/non-working days, holidays, or weekends.
+### 縦棒チャート 
 
-### Treemap
+$PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの垂直棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、並べ替えられたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの上から下にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[縦棒チャート](chart-types-column.md)の詳細をご覧ください。
 
-Learn more about our [treemaps](../treemap-overview.md).
+### 極座標エリア チャート 
 
-## $PlatformShort$ Charts Key Features
+$PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データポイントを水平線に沿って伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](chart-types-polar.md)の詳細をご覧ください。
 
-Show how your data changes over time with our built-in Time Axis. We’ll dynamically change time scales and label formats, as you interact with your chart. We’ve included a complete Financial Chart with all of the features you’ve come to expect in your financial charts, like Yahoo Finance or Google Finance.
+### 散布図 
 
-### $PlatformShort$ Dynamic Charts
+$PlatformShort$ 散布図は、デカルト (X、Y) 座標系を使用してデータをプロットすることにより、2 つの値間の関係を示すために使用されます。各データ ポイントは、X 軸と Y 軸上のデータ値の交点として描画されます。散布図は、不均一な間隔またはデータのクラスターに注意を向けます。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。$PlatformShort$ 散布図は、データがバインド前に時系列になっていない場合でも、X 軸と Y 軸でデータを時系列に整理してプロットします。[散布図](chart-types-scatter.md)の詳細をご覧ください。
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can display and overlap multiple chart columns to create stacked columns.
+### スプライン チャート 
 
-### Custom Tooltips
+$PlatformShort$ スプライン チャート、またはスプライン グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の滑らかな線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。$PlatformShort$ スプライン チャートは $PlatformShort$ 折れ線チャートと同じですが、唯一の違いは、折れ線チャートが直線で接続された点であるのに対し、スプライン チャートの点は滑らかな曲線で接続されていることです。[スプライン チャート](chart-types-spline.md)の詳細をご覧ください。
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can customize tooltips with images, data binding, and even combine tooltips of multiple series into single tooltip. 
+### ステップ折れ線チャート 
 
-### Real-Time, High-Performance Charting
+ステップ折れ線チャート、またはステップ折れ線グラフは、ステップ状の進捗を形成する連続した垂直線と水平線で接続されたデータ ポイントのコレクションを描画するカテゴリ チャートです。値は Y 軸 (左側のラベル) に表示され、カテゴリは X 軸 (下部のラベル) に表示されます。$PlatformShort$ ステップ折れ線チャートは、一定期間の変化量を強調するか、複数の項目を比較します。$PlatformShort$ ステップ折れ線チャートは、ステップ線の下の領域が塗りつぶされていないことを除いて、すべての点で $PlatformShort$ ステップエリア チャートと同じです。[ステップ折れ線チャート](chart-types-step.md)の詳細をご覧ください。
 
-Display millions of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. 
+### タイムライン チャート/時系列チャート 
 
-#### Modular Design
+時系列チャート (タイムライン グラフ) は、データをカテゴリ データ項目の連続として扱い、日付順に並べ替えてから描画する視覚化です。この軸のラベルは、日時の値に従って、X 軸 (下の軸) に沿って配置されます。$PlatformShort$ 時系列は、ファイナンシャル シリーズ、範囲シリーズ、およびカテゴリ シリーズ (折れ線、エリア、縦棒、ポイント、スプライン、散布図、ウォーターフォール、およびこれらのチャート タイプに相当する積層型チャート) を表示するために使用されます。時系列は、ブレークのあるデータの間隔を除外する機能もサポートしています。その結果として、ラベルは除外された間隔で表示されません。たとえば、勤務日/休業日、休日、週末などです。
 
-The $PlatformShort$ chart is designed for modularity. Only features that are needed are part of your deployment, so you get the smallest possible footprint in your rendered pages.
+### ツリーマップ
+
+[ツリーマップ](../treemap-overview.md)の詳細をご覧ください。
+
+## $PlatformShort$ チャート主な機能
+
+組み込みの時間軸を使用して、データが時間の経過とともにどのように変化するかを示します。チャートを操作すると、時間スケールとラベル書式が動的に変更されます。YahooFinance や GoogleFinance など、ファイナンシャル チャートに期待されるすべての機能を備えた完全なファイナンシャル チャートが含まれています。
+
+### $PlatformShort$ 動的なチャート
+
+新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、複数のチャート列を表示および重ねて、積層型縦棒を作成できます。
+
+### カスタム ツールチップ
+
+新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、画像やデータ バインディングを使用してツールチップをカスタマイズしたり、複数のシリーズのツールチップを 1 つのツールチップに組み合わせたりすることもできます。 
+
+### リアルタイムの高パフォーマンスなチャート
+
+ライブのストリーミング データを使用して、ミリ秒レベルの更新で数百万のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。 
+
+#### モジュラー デザイン
+
+$PlatformShort$チャート は、モジュール性のために設計されています。必要な機能のみが展開一部であるため、描画されたページで可能な限り最小のフットプリントを取得します。
 
 <img class="img" src="../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
 
-#### Smart Data Binding
+#### スマート データ バインディング
 
-Let us choose the chart type. Our smart Data Adapter automatically chooses the best chart type for the data. All you do is set the data source and we do the rest.
+チャート タイプの選択はお任せください。当社のスマート データ アダプタは、データに最適なチャート タイプを自動的に選択します。データ ソースを設定するだけです。
 
 <img class="img" src="../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
 
-#### Trend Lines
+#### トレンドライン
 
-We support every trend line you’ll ever need, including linear (x), quadratic (x2), cubic (x3), quartic (x4), quintic (x5), logarithmic (logn x), exponential (ex), and power law (axk + o(xk)) trend lines.
+線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要なすべてのトレンドラインをサポートします。 
 
 <img class="img" src="../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
-#### Interactive Panning and Zooming
+#### インタラクティブなパニングとズーム
 
-Use single or multi-touch, keyboard, zoom bar, mouse wheel, drag-select for any rectangular region with the mouse to zoom in for close-up look at data points, scroll data history, or pan data regions.
+シングル タッチまたはマルチタッチ、キーボード、ズーム バー、マウス ホイールを使用し、マウスで任意の長方形領域をドラッグ選択してズームインし、データ ポイントのクローズアップ、データ履歴のスクロール、またはデータ領域のパンを行います。
 
 <img class="img" src="../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
 
-#### Markers, Tooltips, and Templates
+#### マーカー、ツールチップ、およびテンプレート
 
-Use one of 10 marker types to highlight data or use simple tooltips or multi-axis and multi-series chart tooltips with custom chart templates to give more context and meaning to your data.
+10 種類のマーカーのいずれかを使用してデータを強調表示するか、シンプルなツールチップまたは多軸および多系列のチャート ツールチップとカスタム チャート テンプレートを使用して、データにコンテキストと意味を追加します。
 
 <img class="img" src="../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
-#### High-Volume Data Handling
+#### 大量のデータ処理
 
-Optimize the performance of your financial chart to render millions of data points by modifying the `changeDetection` setting. This setting lets you control how $PlatformShort$ treats your data array when looking for changes and keeping your high-volume chart smoothly running.
+`changeDetection` 設定を変更して、チャートファイナンシャル チャートのパフォーマンスを最適化し、数百万のデータ ポイントを描画します。この設定を使用すると、変更を探して大量のチャートをスムーズに実行し続けるときに、$PlatformShort$がデータ配列をどのように処理するかを制御できます。
 
 <img class="img" src="../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
-## Getting started with $ProductName$ charts 
+## $ProductName$ チャートを使用した作業の開始 
 
-### Add $ProductName$ to your project  
+### $ProductName$ をプロジェクトに追加  
 
-### Required modules 
+### モジュールの要件 
 
-### Usage 
+### 使用方法 
 
-### How to customize the chart legend 
+### チャートの凡例のカスタマイズ 
 
-## But Wait, There’s More! 
+## その他の詳細 
 
-If you are considering any other $PlatformShort$ Charts on the market, here are a few things to think about: 
+他の $PlatformShort$ チャートを検討している場合は、次のことを考慮しましょう: 
 
-- We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter. 
-- The chart is optimized per platform. We have a native Angular chart, a React chart, a jQuery / JavaScript chart, a WPF chart, a Windows Forms chart, and a Xamarin chart, all supporting the same API and same features on every platform. 
-- Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code. 
-- Ignite UI for Angular is built on Angular for the Angular developer, with zero 3rd party dependencies. We are 100% optimized for Angular. 
-- We test against everyone else’s performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
-- We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
-- We have 50+ more UI controls and components in Angular besides the Charts. We offer a complete Angular solution to build modern web, mobile, and PWAs! 
-- We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular components. 
+- 65 を超える $PlatformShort$ チャート タイプと複合チャートが含まれており、スマート データ アダプタを使用した類を見ない最も簡単な構成が可能です。 
+- チャートはプラットフォームごとに最適化されています。ネイティブの Angular チャート、React チャート、jQuery/JavaScript チャート、WPF チャート、Windows Forms チャート、Xamarin チャートがあり、すべてのプラットフォームで同じ API と同じ機能をサポートしています。 
+- 当社の株価チャートとファイナンシャル チャートは、YahooFinance または GoogleFinance のようなエクスペリエンスに必要なすべてを 1 行のコードで提供します。 
+- Ignite UI for Angular は、Angular 開発者向けの Angular 上に構築されており、サードパーティの依存関係はありません。Angular 用に 100％ 最適化されています。 
+- 他社のパフォーマンスに対してテストします。  当社は高速で大量のデータを処理できることを証明できます。大量のデータとリアルタイムのデータ ストリーミングをどのように処理するかをご自身で確認してください。 
+- 24/5 対応しております。インフラジスティックスは、常にオンラインでグローバル サポートを提供しています。北米、アジア太平洋、中東、およびヨーロッパでは、いつでもご利用いただけます。 
+- チャートの他に、Angular には 50 以上の UI コントロールとコンポーネントがあります。最新の Web、モバイル、PWA を構築するための完全な Angular ソリューションを提供します! 
+- Sketch デザインからピクセル パーフェクトな Angular コンポーネントを生成する、UX デザイナー、ビジュアル デザイナー、開発者向けのコード プラットフォームに、世界初で唯一のエンドツーエンドの包括的なデザインを提供します。Indigo.Design を使用すると、Indigo DesignSystem から Sketch で作成するすべてのものが Ignite UI for Angular コンポーネントと一致します。
