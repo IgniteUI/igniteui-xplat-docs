@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ ファイナンシャル チャート
 
-## $PlatformShort$ Bar Chart with Multiple Series
+## 複数シリーズの $PlatformShort$ ファイナンシャル チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>

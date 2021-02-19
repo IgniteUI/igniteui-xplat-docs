@@ -5,7 +5,7 @@ _keywords: $PlatformShort$ Charts, Area Chart, Infragistics, $PlatformShort$ チ
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 _language: ja
 ---
-# $PlatformShort$ Area Chart
+# $PlatformShort$ エリア チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -13,7 +13,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Area Chart with Single Series 
+## 単一シリーズの $PlatformShort$ エリア チャート 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -21,7 +21,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Area Chart with Multiple Series
+## 複数シリーズの $PlatformShort$ エリア チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
