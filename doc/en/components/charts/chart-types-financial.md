@@ -6,7 +6,7 @@ mentionedTypes: ["XamFinancialChart"]
 ---
 # $PlatformShort$ Financial Chart
 
-## $PlatformShort$ Bar Chart with Multiple Series
+## $PlatformShort$ Stock Chart with Multiple Series
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -14,7 +14,7 @@ mentionedTypes: ["XamFinancialChart"]
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Financial Chart Example
+## $PlatformShort$ Stock Chart Example
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
 
