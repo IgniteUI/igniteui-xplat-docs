@@ -15,7 +15,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
+$PlatformShort$ 折れ線チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
 
 <!-- Blazor -->
 ```razor
@@ -97,7 +97,7 @@ ModuleManager.register(
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
 
-The following code snippet demonstrates a sample data source that can be used to create a Line Chart:
+次のコード スニペットは、折れ線チャートの作成に使用できるサンプルデータ ソースを示しています:
 
 ```razor
 public class EnergyRenewableData : List<EnergyRenewableInfo>

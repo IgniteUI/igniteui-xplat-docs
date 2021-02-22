@@ -9,67 +9,67 @@ _language: ja
 
 $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a Column Chart, or Column Graph, where bars are displayed vertically (up and down), the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation and a horizontal display (left to right).
 
-There are several common use cases for choosing a Bar Chart:
+棒チャートにはいくつかのユースケースがあります:
 
-- You need to show trends over time or a numeric value change in a category of data
-- You need to compare data values of 1 or more data series
-- You want to show a part-to-whole comparison
-- You want to show top or bottom percentage of categories
-- Analyzing multiple data points grouped in sub-categories (Stacked Bar)
+- 時間の経過に伴う傾向またはデータのカテゴリの数値の変化を表示したい場合
+- 1 つ以上のデータ系列のデータ値を比較したい場合
+- 部分と全体の比較を表示したい場合
+- カテゴリの上位または下位のパーセンテージを表示したい場合
+- サブカテゴリにグループ化された複数のデータ ポイントの分析 (積層型棒)
 
-The $PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+$PlatformShort$ 棒チャートには、データまたはデータを使用して正しいストーリーを伝える方法に基づいたいくつかの種類が含まれています:
 
-- Grouped Bar Chart
-- Stacked Bar Chart
-- Polar Bar Chart
-- Stacked 100 Bar Chart
+- グループ化された棒チャート
+- 積層型棒チャート
+- 極座標型棒チャート
+- 積層型 100 棒チャート
 
-Bar Chart Best Practices:
+棒チャートのベスト プラクティス:
 
-- Start you numeric Axis at 0
-- Use a single color for the bars
-- Be sure the space separating each bar is 1/2 the width of the bar itself
-- Be sure ranking or comparing ordered categories (items) are  sorted in increasing or decreasing order
-- Right-align category values on the Y-Axis (left side labels of chart) for readability
+- 数値軸を 0 から開始します。
+- 棒には単色を使用します。
+- 各棒を区切るスペースが棒自体の幅の 1/2 であることを確認します。
+- ランキング、または順序付けられたカテゴリ (項目) の比較は、昇順または降順で並べ替えられていることを確認します。
+- 読みやすくするために、Y 軸 (チャートの左側のラベル) のカテゴリ値を右揃えにします。
 
-Don't Use a Bar Chart When:
+次の場合は棒チャートを使用しないでください:
 
-- You have too much data so the Y-Axis can't fit in the space or is not legible
-- You need a Detailed Time-Series analysis  - consider a Line Chart with a Time-Series for this type of data.
+- データが多すぎるため、Y 軸がスペースに収まらないか、判読できません。
+- 詳細な時系列分析が必要なときは、時系列を含む折れ線チャートを検討してください。
 
-Bar Chart Data Structure:
+棒チャートのデータ構造:
 
-- The data source must be an array or a list of data items
-- The data source must contain at least one data item
-- The list must contain at least one data column (string or date time)
-- The list must contain at least one numeric data column
+- データソースはデータ項目の配列またはリストである必要があります。
+- データ ソースに少なくとも 1 つのデータ項目を含む必要があります。
+- リストには、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
+- リストには、少なくとも 1 つの数値データ列が含まれている必要があります。
 
-Common $PlatformShort$ Bar Chart Scenarios:
+一般的な $PlatformShort$ 棒チャートのシナリオ：
 
-- Sales Management
-- Inventory Management
-- Stock Charts
-- Any String Value Comparing a Numeric Value or Time-Series Value
+- セールス マネージメント
+- インベントリ マネージメント
+- 株価チャート
+- 数値または時系列値を比較する任意の文字列値
 
-## $PlatformShort$ Bar Chart Example
+## $PlatformShort$ 棒チャートの例
 
-In this example, the bar chart is comparing the total number of Olympic Medals (the Category) won between the USA and Russia from 1996 to 2016. The Y-Axis, or labels on the left of the chart, are displaying the time-series values of Year. The X-Axis, or labels on the bottom of the chart, are displaying the number of medals won.
+この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-## $PlatformShort$ Bar Chart Annotations
+## $PlatformShort$ 棒チャートの注釈
 
-In this example, the bar chart uses annotations to show a callout with the value for each bar.
+この例では、棒チャートは注釈を使用して、各棒の値を含むコールアウトを表示します。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
 <div class="divider--half"></div>
 
-## $PlatformShort$ Bar Chart with Single Series
+## 単一シリーズの $PlatformShort$ 棒チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -77,7 +77,7 @@ In this example, the bar chart uses annotations to show a callout with the value
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Bar Chart with Multiple Series
+## 複数シリーズの $PlatformShort$ 棒チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -85,7 +85,7 @@ In this example, the bar chart uses annotations to show a callout with the value
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Bar Chart
+## $PlatformShort$ 高度な棒チャート
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -95,46 +95,46 @@ In this example, the bar chart uses annotations to show a callout with the value
 
 ## $PlatformShort$ 積層型棒チャート
 
-A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value.
+積層型棒チャート、または積層型棒グラフは、チャートの横棒にさまざまなサイズのフラグメントを表示することにより、さまざまなカテゴリのデータの構成を比較するために使用されるカテゴリ チャートの一種です。各棒または積層フラグメントの長さは、その全体的な値に比例します。
 
-The $PlatformShort$ Stacked Bar Chart differs from the $PlatformShort$ Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
+$PlatformShort$ 積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、$PlatformShort$ 棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
 
-### $PlatformShort$ Stacked Bar Chart Example
+### $PlatformShort$ 積層型棒チャートの例
 
-In this example of an $PlatformShort$ Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
-## $PlatformShort$ Stacked 100 Bar Chart
-
-The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ stacked bar chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
-
-### $PlatformShort$ Stacked 100 Bar Chart Example
-
-In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
+$PlatformShort$ 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-## $PlatformShort$ Range Bar Chart
+## $PlatformShort$ 積層型 100 棒チャート
 
-The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
+$PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
-### $PlatformShort$ Range Bar Chart Example
+### $PlatformShort$ 積層型 100 棒チャートの例
 
-In this Range Bar Chart example, weather data variance between high and low temperatures by date is shown.
+積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100％ 値として表示されます。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
-## Styling the $PlatformShort$ Bar Chart
+## $PlatformShort$ 範囲棒チャート
+
+$ProductName$ 範囲棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数のアイテムを比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
+
+### $PlatformShort$ 範囲棒チャートの例
+
+この範囲棒チャートの例では、日付ごとの高温と低温の間の気象データの差異が示されています。
+
+<!-- <div class="sample-container loading" style="height: 500px">
+    <iframe></iframe>
+</div>
+<div class="divider--half"></div> -->
+
+## $PlatformShort$ 棒チャートのスタイル設定
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
@@ -142,7 +142,7 @@ In this Range Bar Chart example, weather data variance between high and low temp
 <div class="divider--half"></div> -->
 
 ## その他のリソース
-- [Column Chart](chart-types-column.md)
+- [縦棒チャート](chart-types-column.md)
 
 ## API メンバー
 <!-- TODO list API links used in this topic -->
