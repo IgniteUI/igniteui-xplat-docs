@@ -6,6 +6,8 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
 # $PlatformShort$ Area Chart
 
+$PlatformShort$ Area Chart, or Area Graph, is a type of category area graph that shows a collection of points connected by line segments with the area below the line filled in. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. Area Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. You can include one or more data sets to compare, which would render as multiple areas in the chart.
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>

@@ -6,6 +6,18 @@ mentionedTypes: ["XamFinancialChart"]
 ---
 # $PlatformShort$ Financial Chart
 
+$PlatformShort$  Financial Chart makes it easy to visualize financial and stock data by using a simple and intuitive API. It's purpose is for building high-performance, high-volume financial services, and capital market data applications.
+
+There are several display modes for price and volume and a host of financial indicators. Financial chart analyzes and selects data columns - Date/Time column to use for x-axis and Open, High, Low, Close, Volume columns or the first 5 numeric columns for y-axis. Beyond this, the user can specify the chart type to either Bar, Candle, Column, and Line. With its five main visual elements, a toolbar, a prices view, a volume view, an indicators view, and a navigation view, data has become more perceptible.
+
+You can explicitly specify the chart type by setting the chartType property to one of the following options:
+
+- Bar 
+- Candle
+- Column 
+- Line
+- Auto - Specifies automatic selection of chart type based on Data Adapter which suggest one of above values based names and number of numeric columns in your data. For example, it will suggest Bar for data items with Open, High, Low, Close columns.
+
 ## $PlatformShort$ Stock Chart with Multiple Series
 
 <div class="sample-container loading" style="height: 400px">
