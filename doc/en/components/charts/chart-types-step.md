@@ -9,7 +9,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 <!-- TODO add introduction with info about using category-chart with the chartType property set to Step -->
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Step Line Chart with Legend"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -17,7 +17,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ## $PlatformShort$ Step Chart with Single Series
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Step Line Chart with Single Source"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -25,7 +25,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ## $PlatformShort$ Step Chart with Multiple Series
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Step Line Chart with Multiple Sources"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -35,7 +35,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 If you need a step chart with more features such as composite other series, you can use DataChart component.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Styling Step Line Chart"></iframe>
 </div>
 
 <div class="divider--half"></div>
