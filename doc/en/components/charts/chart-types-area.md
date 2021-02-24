@@ -46,7 +46,7 @@ If you need an Area Chart with more features such as composite other series, you
 
 ## $PlatformShort$ Step Area Chart
 
-The Step Area Chart is similar to a Column Chart with the series filled in.
+The Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Step Area Chart"></iframe>
@@ -62,7 +62,11 @@ The Step Area Chart is similar to a Column Chart with the series filled in.
 
 ## $PlatformShort$ Stacked Area Chart
 
-The Stacked Area Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area charts follow all the same requirements as area charts, the only difference is that visually the shaded areas are stacked on top of each other. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+
+## $PlatformShort$ Stacked 100 Area Series 
+
+The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Area presents the data in terms of percent of the sum of all values in a data point. Sometimes the series represent part of a whole being changed over time e.g. a country’s energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea. 
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-stacked-100-area-series.md

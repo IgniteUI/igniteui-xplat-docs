@@ -52,7 +52,7 @@ In this example, the Column Chart is comparing box office revenue amongst popula
 
 ## $PlatformShort$ Stacked Column Chart
 
-The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+The Stacked Column chart is identical to the Column Chart in al aspects except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked Column Chart"></iframe>
@@ -62,7 +62,7 @@ The Stacked Column Chart is used to show comparing results between series. Renew
 
 ## $PlatformShort$ Stacked 100 Column Chart
 
-The Stacked Column Chart is used to show percentages between series. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Column presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Column Chart"></iframe>
