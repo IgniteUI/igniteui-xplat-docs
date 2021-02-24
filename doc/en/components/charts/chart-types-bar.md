@@ -55,7 +55,7 @@ Common $PlatformShort$ Bar Chart Scenarios:
 In this example, the Bar Chart is comparing the total number of Olympic Medals (the Category) won between the USA and Russia from 1996 to 2016. The Y-Axis, or labels on the left of the chart, are displaying the time-series values of Year. The X-Axis, or labels on the bottom of the chart, are displaying the number of medals won.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Legend"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -65,7 +65,7 @@ In this example, the Bar Chart is comparing the total number of Olympic Medals (
 In this example, the Bar Chart is comparing percent-based retail shopping data. 
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Single Source"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -75,7 +75,7 @@ In this example, the Bar Chart is comparing percent-based retail shopping data.
 In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Multiple Sources"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -85,7 +85,7 @@ In this example, the Bar Chart is comparing box office revenue amongst popular m
 In this example, the Bar Chart uses annotations to show a callout with the value for each bar.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart Styling"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -100,10 +100,11 @@ The Stacked Bar Chart differs from the Bar Chart in that the data points represe
 
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked Bar Chart"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked 100 Bar Chart
 
@@ -113,10 +114,11 @@ The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ st
 
 In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Bar Chart"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Range Bar Chart
 

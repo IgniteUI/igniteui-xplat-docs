@@ -17,7 +17,7 @@ $PlatformShort$ Scatter Chart is a group of series that show markers to represen
 In this example, the Scatter Point Chart is comparing the total births and deaths between Africa and Europe in 2015.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Marker Chart"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -25,6 +25,12 @@ In this example, the Scatter Point Chart is comparing the total births and death
 ## $PlatformShort$ Scatter Bubble Chart
 
 In this example, the Scatter Point Chart is comparing the total births and deaths between Africa and Europe in 2015.
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Bubble Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter HD Chart
 
