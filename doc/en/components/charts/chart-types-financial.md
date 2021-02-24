@@ -27,6 +27,9 @@ You can explicitly specify the chart type by setting the chartType property to o
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stock Chart Example
+
+In this example, the financial chart is representing the S&P 500 o over the course of a year.
+
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
 
@@ -38,6 +41,9 @@ You can explicitly specify the chart type by setting the chartType property to o
 -->
 
 ## Composite $PlatformShort$ Stock Chart
+
+In this example, the financial chart is plotting revenue for United States.
+
 <!-- TODO show code for FinancialChart with:
 - the dataSource set to multiple data sources
 - the volumeType="Column"
@@ -47,6 +53,8 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 ## Styling $PlatformShort$ Stock Chart
 
+In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
+
 <!-- TODO show code for FinancialChart with:
 - the brushes and outlines properties set
 - the thickness property set
@@ -54,7 +62,7 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 ## $PlatformShort$ Advanced Stock Chart
 
-If you need a stock chart with more features such as composite other series, you can use DataChart component.
+If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. 
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-financial-candlestick-series.md

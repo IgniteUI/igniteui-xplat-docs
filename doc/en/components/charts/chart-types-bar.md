@@ -52,7 +52,7 @@ Common $PlatformShort$ Bar Chart Scenarios:
 
 ## $PlatformShort$ Bar Chart Example
 
-In this example, the bar chart is comparing the total number of Olympic Medals (the Category) won between the USA and Russia from 1996 to 2016. The Y-Axis, or labels on the left of the chart, are displaying the time-series values of Year. The X-Axis, or labels on the bottom of the chart, are displaying the number of medals won.
+In this example, the Bar Chart is comparing the total number of Olympic Medals (the Category) won between the USA and Russia from 1996 to 2016. The Y-Axis, or labels on the left of the chart, are displaying the time-series values of Year. The X-Axis, or labels on the bottom of the chart, are displaying the number of medals won.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -62,6 +62,8 @@ In this example, the bar chart is comparing the total number of Olympic Medals (
 
 ## $PlatformShort$ Bar Chart with Single Series
 
+In this example, the Bar Chart is comparing percent-based retail shopping data. 
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
@@ -69,6 +71,8 @@ In this example, the bar chart is comparing the total number of Olympic Medals (
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Bar Chart with Multiple Series
+
+In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -78,7 +82,7 @@ In this example, the bar chart is comparing the total number of Olympic Medals (
 
 ## $PlatformShort$ Advanced Bar Chart
 
-In this example, the bar chart uses annotations to show a callout with the value for each bar.
+In this example, the Bar Chart uses annotations to show a callout with the value for each bar.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -90,11 +94,11 @@ In this example, the bar chart uses annotations to show a callout with the value
 
 A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value.
 
-The $PlatformShort$ Stacked Bar Chart differs from the $PlatformShort$ Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
+The Stacked Bar Chart differs from the Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
 
 ### $PlatformShort$ Stacked Bar Chart Example
 
-In this example of an $PlatformShort$ Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
+In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
@@ -128,6 +132,8 @@ In this Range Bar Chart example, weather data variance between high and low temp
 <div class="divider--half"></div> -->
 
 ## Styling the $PlatformShort$ Bar Chart
+
+In this example, 
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>

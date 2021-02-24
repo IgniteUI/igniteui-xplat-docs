@@ -11,7 +11,7 @@ $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how
 Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include: 
 
 - Pie 
-- Donut (Ring) 
+- Doughnut (Ring) 
 - Funnel 
 - Stacked Area  
 - Stacked 100% Area (Stacked Percentage Area) 
@@ -212,6 +212,8 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 <div class="divider--half"></div>
 
 ### How to Show Percentage in Pie Chart Legend
+
+In this example, the Pie chart is comparing market share between common household utilities.
 
 <!-- TODO -->
 

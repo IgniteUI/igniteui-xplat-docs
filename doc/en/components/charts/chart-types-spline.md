@@ -16,6 +16,8 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 
 ## $PlatformShort$ Spline Chart with Single Series
 
+The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
@@ -23,6 +25,8 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Spline Chart with Multiple Series
+
+Since the Spline Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the chart will automatically update to fit the additional data.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -32,7 +36,7 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 
 ## $PlatformShort$ Advanced Spline Chart
 
-If you need a spline chart with more features such as composite other series, you can use DataChart component.
+If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -41,6 +45,8 @@ If you need a spline chart with more features such as composite other series, yo
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked Spline Chart
+
+The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-stacked-spline-series.md

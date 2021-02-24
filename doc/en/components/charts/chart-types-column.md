@@ -16,6 +16,8 @@ $PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are amo
 
 ## $PlatformShort$ Column Chart with Single Series
 
+In this example, the Column Chart uses monthly average temperatures.
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
@@ -24,6 +26,8 @@ $PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are amo
 
 ## $PlatformShort$ Column Chart with Multiple Series
 
+In this example, the Column Chart is comparing box office revenue amongst popular movie franchises. 
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
@@ -31,8 +35,6 @@ $PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are amo
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Advanced Column Chart
-
-If you need a column chart with more features such as multiple axes or composite other series, you can use DataChart component.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
@@ -50,6 +52,8 @@ If you need a column chart with more features such as multiple axes or composite
 
 ## $PlatformShort$ Stacked Column Chart
 
+The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
 </div>
@@ -57,6 +61,8 @@ If you need a column chart with more features such as multiple axes or composite
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked 100 Column Chart
+
+The Stacked Column Chart is used to show percentages between series. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
