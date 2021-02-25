@@ -108,7 +108,7 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 ### $PlatformShort$ 積層型 100 棒チャートの例
 
-積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100％ 値として表示されます。
+積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
