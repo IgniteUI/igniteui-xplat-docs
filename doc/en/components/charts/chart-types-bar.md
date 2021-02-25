@@ -62,6 +62,7 @@ In this example, the Bar Chart is comparing the total number of Olympic Medals (
 
 ## $PlatformShort$ Bar Chart with Single Series
 
+Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
 In this example, the Bar Chart is comparing percent-based retail shopping data. 
 
 <div class="sample-container loading" style="height: 400px">
@@ -72,7 +73,7 @@ In this example, the Bar Chart is comparing percent-based retail shopping data.
 
 ## $PlatformShort$ Bar Chart with Multiple Series
 
-In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
+The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Multiple Sources"></iframe>

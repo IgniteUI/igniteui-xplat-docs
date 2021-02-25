@@ -26,7 +26,7 @@ In this example, the Column Chart uses monthly average temperatures.
 
 ## $PlatformShort$ Column Chart with Multiple Series
 
-In this example, the Column Chart is comparing box office revenue amongst popular movie franchises. 
+The Column Chart is able to render multiple columns per category for comparison purposes. In this example, the Column Chart is comparing box office revenue amongst popular movie franchises. 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Chart with Multiple Sources"></iframe>
