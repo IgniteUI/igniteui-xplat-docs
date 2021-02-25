@@ -10,7 +10,7 @@ _language: ja
 <!-- TODO add introduction with info about using category-chart with the chartType property set to Step -->
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ ステップ折れ線チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -18,7 +18,7 @@ _language: ja
 ## 単一シリーズの $PlatformShort$ ステップ チャート
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一シリーズの $PlatformShort$ ステップ折れ線チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -26,7 +26,7 @@ _language: ja
 ## 複数シリーズの $PlatformShort$ ステップ チャート
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数シリーズの $PlatformShort$ ステップ折れ線チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -36,7 +36,7 @@ _language: ja
 他のシリーズの複合など、より多くの機能を備えたステップ チャートが必要な場合は、DataChart コンポーネントを使用できます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ステップ折れ線チャートのスタイル設定"></iframe>
 </div>
 
 <div class="divider--half"></div>

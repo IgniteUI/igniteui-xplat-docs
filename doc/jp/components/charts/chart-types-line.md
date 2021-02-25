@@ -10,7 +10,7 @@ _language: ja
 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 折れ線チャートの凡例"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -166,7 +166,7 @@ public initData() {
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-multiple-sources" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="複数ソースの $PlatformShort$ 折れ線チャート"></iframe>
+    <iframe id="cc-multiple-sources" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="複数シリーズの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-multiple-sources'-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
@@ -182,7 +182,7 @@ $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズ�
 複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-line-chart-with-legend" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートの凡例"></iframe>
+    <iframe id="cc-line-chart-with-legend" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="凡例付きの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-with-legend-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
@@ -200,7 +200,7 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-high-frequency" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートの例"></iframe>
+    <iframe id="cc-high-frequency" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="ライブ データの $PlatformShort$ 折れ線チャートの例"></iframe>
 </div>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-high-frequency-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

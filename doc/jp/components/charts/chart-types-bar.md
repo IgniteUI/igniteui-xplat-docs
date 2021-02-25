@@ -56,7 +56,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -64,7 +64,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 ## 単一シリーズの $PlatformShort$ 棒チャート
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一ソースの $PlatformShort$ 棒チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -72,7 +72,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 ## 複数シリーズの $PlatformShort$ 棒チャート
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数ソースの $PlatformShort$ 棒チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -82,7 +82,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 この例では、棒チャートは注釈を使用して、各棒の値を含むコールアウトを表示します。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 棒チャートのスタイル設定"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -97,10 +97,11 @@ $PlatformShort$ 積層型棒チャートは、データを表すデータ ポイ
 
 $PlatformShort$ 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型棒チャート"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 積層型 100 棒チャート
 
@@ -110,10 +111,11 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型 100 棒チャート"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 範囲棒チャート
 

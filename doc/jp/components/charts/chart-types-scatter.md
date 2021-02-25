@@ -16,14 +16,18 @@ _language: ja
 ## $PlatformShort$ 散布マーカー チャート
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布マーカー チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ 散布バブル チャート
 
-<!-- data-chart-type-scatter-bubble-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ 散布 HD チャート
 
