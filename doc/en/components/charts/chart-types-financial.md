@@ -28,7 +28,7 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 ## $PlatformShort$ Stock Chart Example
 
-In this example, the financial chart is representing the S&P 500 o over the course of a year.
+In this example, the financial chart is representing the S&P 500 over the course of a year.
 
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->

@@ -136,7 +136,7 @@ In this Range Bar Chart example, weather data variance between high and low temp
 
 ## Styling the $PlatformShort$ Bar Chart
 
-In this example, 
+Annotations can be added to the Bar Chart. The following example demonstrates a percent comparison between popular online retail shopping sites.
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>

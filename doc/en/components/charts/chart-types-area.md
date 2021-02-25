@@ -16,7 +16,7 @@ $PlatformShort$ Area Chart, or Area Graph, is a type of category area graph that
 
 ## $PlatformShort$ Area Chart with Single Series 
 
-The $PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
+$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart with Single Series"></iframe>
@@ -26,7 +26,7 @@ The $PlatformShort$ Area Chart is often used to show the change of value over ti
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-Since the $PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the area chart will automatically update to fit the additional data.
+$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the area chart will automatically update to fit the additional data.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart with Multiple Sources"></iframe>
@@ -36,7 +36,7 @@ Since the $PlatformShort$ Area Chart allows you to combine multiple series and c
 
 ## $PlatformShort$ Advanced Area Chart
 
-If you need an Area Chart with more features such as composite other series, you can configure the marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
+Additional styling settings can be configured on Area Chart series such marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart Styling"></iframe>
