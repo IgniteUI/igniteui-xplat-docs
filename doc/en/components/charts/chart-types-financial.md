@@ -21,14 +21,22 @@ You can explicitly specify the chart type by setting the chartType property to o
 ## $PlatformShort$ Stock Chart with Multiple Series
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
 </div>
+
+<div class="divider--half"></div>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stock Chart Example
 
 In this example, the financial chart is representing the S&P 500 over the course of a year.
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
@@ -60,7 +68,7 @@ In this example, the financial chart is comparing revenue between Amazon, Micros
 - the thickness property set
 -->
 
-## $PlatformShort$ Advanced Stock Chart
+## $PlatformShort$ Stock Chart Styling
 
 If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. 
 
@@ -74,5 +82,6 @@ If you need a Financial Chart with more features such as composite other series,
 ## Additional Resources
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

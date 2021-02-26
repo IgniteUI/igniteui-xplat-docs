@@ -234,9 +234,10 @@ Once our chart is set up, we may want to make some further styling customization
 - [Series Tooltips](chart-features-tooltips.md)
 - [Series Trendlines](chart-features-trendlines.md) -->
 
+<!-- TODO list API links used in this topic 
 ## API Members
-
 - `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
+-->

@@ -8,6 +8,12 @@ mentionedTypes: ["XamDataChart"]
 
 $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a Column Chart, or Column Graph, where bars are displayed vertically (up and down), the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation and a horizontal display (left to right).
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Legend"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 There are several common use cases for choosing a Bar Chart:
 
 - You need to show trends over time or a numeric value change in a category of data
@@ -50,14 +56,6 @@ Common $PlatformShort$ Bar Chart Scenarios:
 - Stock Charts
 - Any String Value Comparing a Numeric Value or Time-Series Value
 
-## $PlatformShort$ Bar Chart Example
-
-In this example, the Bar Chart is comparing the total number of Olympic Medals (the Category) won between the USA and Russia from 1996 to 2016. The Y-Axis, or labels on the left of the chart, are displaying the time-series values of Year. The X-Axis, or labels on the bottom of the chart, are displaying the number of medals won. The Bar Chart is paired with a CategoryYAxis and a NumericXAxis.
-
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart with Legend"></iframe>
-</div>
-
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Bar Chart with Single Series
@@ -81,9 +79,9 @@ The Bar Chart is able to render multiple columns per category for comparison pur
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Bar Chart
+## $PlatformShort$ Styling Bar Chart
 
-In this example, the Bar Chart uses annotations to show a callout with the value for each bar.
+In this example, the Bar Chart uses annotations values for each bar demonstrating a percent comparison between popular online retail shopping sites using the CalloutLayer.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Bar Chart Styling"></iframe>
@@ -134,17 +132,9 @@ In this Range Bar Chart example, weather data variance between high and low temp
 </div>
 <div class="divider--half"></div> -->
 
-## Styling the $PlatformShort$ Bar Chart
-
-Annotations can be added to the Bar Chart. The following example demonstrates a percent comparison between popular online retail shopping sites.
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
 ## Additional Resources
 - [Column Chart](chart-types-column.md)
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

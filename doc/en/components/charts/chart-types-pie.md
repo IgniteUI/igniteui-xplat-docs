@@ -217,7 +217,7 @@ In this example, the Pie chart is comparing market share between common househol
 
 <!-- TODO -->
 
-### $PlatformShort$ Advanced Pie Chart Show Percentage in Legend Example
+### $PlatformShort$ Pie Chart Styling
 
 <!-- TODO -->
 <!-- <div class="sample-container loading" style="height: 500px">
@@ -473,3 +473,7 @@ public tick(): void {
 </div>
 
 <div class="divider--half"></div>
+
+<!-- TODO list API links used in this topic 
+## API Members
+-->

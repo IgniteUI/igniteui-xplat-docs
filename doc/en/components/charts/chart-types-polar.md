@@ -32,5 +32,6 @@ Refer to these topics for other types of radial charts:
 - [Polar Area Chart](chart-types-area.md#$PlatformShort$-Polar-Area-Chart)
 - [Polar Spline Chart](chart-types-spline.md#$PlatformShort$-Polar-Spline-Chart)
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

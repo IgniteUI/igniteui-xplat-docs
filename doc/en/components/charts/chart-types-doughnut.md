@@ -10,24 +10,40 @@ $PlatformShort$ Doughnut Chart is similar to the Pie Chart component, proportion
 
 Slice selection and explosion are provided.
 
-## $PlatformShort$ Doughnut Chart Example
-<!-- TODO use this iframe which will point to a new sample:
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Legend"></iframe>
+</div>
 
-<iframe src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Chart Example"></iframe> -->
-
-## $PlatformShort$ Doughnut Chart with Legend
-
-In this example, the Doughnut chart is comparing market share between common household utilities.
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Doughnut Chart - Slice Selection
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Selection"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Doughnut Chart - Slice Explosion
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Explosion"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Doughnut Chart - Multiple Rings
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-rings-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Multiple Rings"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## Additional Resources
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->
 

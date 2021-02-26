@@ -36,5 +36,6 @@ Refer to these topics for other types of radial charts:
 - [Pie Chart](../pie-chart.md)
 - [Doughnut Chart](../doughnut-chart.md)
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

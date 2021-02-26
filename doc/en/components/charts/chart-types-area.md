@@ -26,7 +26,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the area chart will automatically update to fit the additional data.
+$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for Europe, China and the USA, and the area chart will automatically update to fit the additional data.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart with Multiple Sources"></iframe>
@@ -34,7 +34,7 @@ $PlatformShort$ Area Chart allows you to combine multiple series and compare or 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Area Chart
+## $PlatformShort$ Styling Area Chart
 
 Additional styling settings can be configured on Area Chart series such marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
 
@@ -99,5 +99,6 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 ## Additional Resources
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->
