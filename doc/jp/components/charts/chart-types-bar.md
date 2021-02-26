@@ -53,7 +53,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 ## $PlatformShort$ 棒チャートの例
 
-この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。
+この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。The Bar Chart is paired with a CategoryYAxis and a NumericXAxis.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
@@ -63,6 +63,9 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 ## 単一シリーズの $PlatformShort$ 棒チャート
 
+Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
+In this example, the Bar Chart is comparing percent-based retail shopping data. 
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一ソースの $PlatformShort$ 棒チャート"></iframe>
 </div>
@@ -70,6 +73,8 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 <div class="divider--half"></div>
 
 ## 複数シリーズの $PlatformShort$ 棒チャート
+
+The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数ソースの $PlatformShort$ 棒チャート"></iframe>
@@ -91,11 +96,11 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 積層型棒チャート、または積層型棒グラフは、チャートの横棒にさまざまなサイズのフラグメントを表示することにより、さまざまなカテゴリのデータの構成を比較するために使用されるカテゴリ チャートの一種です。各棒または積層フラグメントの長さは、その全体的な値に比例します。
 
-$PlatformShort$ 積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、$PlatformShort$ 棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
+積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
 
 ### $PlatformShort$ 積層型棒チャートの例
 
-$PlatformShort$ 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
+積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型棒チャート"></iframe>
@@ -131,6 +136,8 @@ $ProductName$ 範囲棒チャートは、範囲チャートのグループに属
 <div class="divider--half"></div> -->
 
 ## $PlatformShort$ 棒チャートのスタイル設定
+
+Annotations can be added to the Bar Chart. The following example demonstrates a percent comparison between popular online retail shopping sites.
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
