@@ -95,7 +95,7 @@ A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is u
 
 The Stacked Bar Chart differs from the Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
 
-### $PlatformShort$ Stacked Bar Chart Example
+### $PlatformShort$ Stacked Bar Chart
 
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
@@ -109,8 +109,6 @@ In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels
 
 The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ stacked bar chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
 
-### $PlatformShort$ Stacked 100 Bar Chart Example
-
 In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
 
 <div class="sample-container loading" style="height: 400px">
@@ -123,7 +121,7 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 
 The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
 
-### $PlatformShort$ Range Bar Chart Example
+### $PlatformShort$ Range Bar Chart
 
 In this Range Bar Chart example, weather data variance between high and low temperatures by date is shown.
 

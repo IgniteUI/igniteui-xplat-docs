@@ -28,7 +28,7 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stock Chart Example
+## $PlatformShort$ Stock Chart
 
 In this example the financial chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
@@ -51,23 +51,24 @@ If you need a Financial Chart with more features such as composite other series,
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
 
-## $PlatformShort$ Simple Stock Chart
-<!-- TODO show code for FinancialChart with:
-- the dataSource set to multiple data sources
-- the chartType property set to Candlestick
-- the zoomSliderType property set to Candlestick
--->
+## $PlatformShort$ Chart Annotations
 
-## Composite $PlatformShort$ Stock Chart
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="fc-chart-annotations" src='{environment:dvDemosBaseUrl}/charts/financial-chart-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Annotations"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Chart Panes
 
 In this example, the financial chart is plotting revenue for United States.
 
-<!-- TODO show code for FinancialChart with:
-- the dataSource set to multiple data sources
-- the volumeType="Column"
-- the overlayType="BollingerBands"
-- the indicatorTypes="AverageTrueRange"
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="fc-chart-panes" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Panes"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO list API links used in this topic 
 ## API Members

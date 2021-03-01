@@ -53,7 +53,7 @@ The Stacked Spline Chart is often used to show the change of value over time suc
     data-chart-type-stacked-100-spline-series.md
 -->
 
-## Additional Resources
+<!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
 <!-- TODO list API links used in this topic 

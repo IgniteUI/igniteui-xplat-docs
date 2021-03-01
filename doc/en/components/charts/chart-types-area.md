@@ -80,6 +80,15 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Stacked Spline Area Series 
+
+<div class="divider--half"></div>
+
+
+## $PlatformShort$ Stacked 100 Spline Area Series 
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Radial Area Chart
 
 <div class="sample-container loading" style="height: 400px">

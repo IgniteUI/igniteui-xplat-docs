@@ -45,7 +45,7 @@ If you need a Step Chart with more features such as composite other series, you 
 <div class="divider--half"></div>
 
 
-## Additional Resources
+<!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
 <!-- TODO list API links used in this topic 

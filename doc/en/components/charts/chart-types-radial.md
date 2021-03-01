@@ -16,17 +16,6 @@ Radial Chart is a group of series that takes data and render it as collection of
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Radial Line Chart
-
-<div class="divider--half"></div>
-
-
-## $PlatformShort$ Simple Radial Pie Chart
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-    data-chart-type-radial-pie-series.md
--->
-
 ## Styling $PlatformShort$ Radial Charts
 <!-- radial-pie-series with styling props set: brush, markerOutline, markerType -->
 
