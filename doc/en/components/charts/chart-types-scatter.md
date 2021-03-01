@@ -28,13 +28,9 @@ In this example, the Scatter Point Chart is comparing the total births and death
 	data-chart-type-scatter-contour-series.md
 -->
 
-## Other Types of Scatter Charts
+## $PlatformShort$ Scatter Line
 
-Refer to these topics for other types of scatter charts:
-
-- [Scatter Area Chart](chart-types-area.md#$PlatformShort$-Scatter-Area-Chart)
-- [Scatter Line Chart](chart-types-line.md#$PlatformShort$-Scatter-Line-Chart)
-- [Scatter Spline Chart](chart-types-spline.md#$PlatformShort$-Scatter-Spline-Chart)
+## $PlatformShort$ Scatter Spline
 
 <!-- TODO list API links used in this topic 
 ## API Members

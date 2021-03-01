@@ -85,9 +85,6 @@ The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspect
 	data-chart-type-radial-column-series.md
 -->
 
-## Additional Resources
-<!-- TODO list topic links related to this topic -->
-
 <!-- TODO list API links used in this topic 
 ## API Members
 -->

@@ -30,10 +30,20 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 ## $PlatformShort$ Stock Chart Example
 
-In this example, the financial chart is representing the S&P 500 over the course of a year.
+In this example the financial chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
+    <iframe id="fc-chart-stock-index-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Stock Chart Styling
+
+If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="fc-chart-styling-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -58,29 +68,6 @@ In this example, the financial chart is plotting revenue for United States.
 - the overlayType="BollingerBands"
 - the indicatorTypes="AverageTrueRange"
 -->
-
-## Styling $PlatformShort$ Stock Chart
-
-In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
-
-<!-- TODO show code for FinancialChart with:
-- the brushes and outlines properties set
-- the thickness property set
--->
-
-## $PlatformShort$ Stock Chart Styling
-
-If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. 
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-financial-candlestick-series.md
-	data-chart-type-financial-ohlc-series.md
-	data-chart-type-financial-line-indicators.md
-	data-chart-type-financial-overlays.md
--->
-
-## Additional Resources
-<!-- TODO list topic links related to this topic -->
 
 <!-- TODO list API links used in this topic 
 ## API Members

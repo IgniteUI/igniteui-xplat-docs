@@ -40,9 +40,6 @@ Slice selection and explosion are provided.
 
 <div class="divider--half"></div>
 
-## Additional Resources
-<!-- TODO list topic links related to this topic -->
-
 <!-- TODO list API links used in this topic 
 ## API Members
 -->
