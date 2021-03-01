@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ 縦棒チャート
 
-$PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by vertical Columns or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. The Column Chart is paired with a CategoryXAxis and a NumericYAxis.
+$PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を縦棒または同じ幅で異なる長さのデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。縦棒チャートは、CategoryXAxis および NumericYAxis とペアになっています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付き $PlatformShort$ 縦棒チャート"></iframe>
@@ -17,8 +17,8 @@ $PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are amo
 
 ## 単一シリーズの $PlatformShort$ 縦棒チャート
 
-Column Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points.
-In this example, the Column Chart uses monthly average temperatures.
+縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
+この例では、縦棒チャートは月平均気温を使用しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一シリーズの $PlatformShort$ 縦棒チャート"></iframe>
@@ -28,7 +28,7 @@ In this example, the Column Chart uses monthly average temperatures.
 
 ## 複数シリーズの $PlatformShort$ 縦棒チャート
 
-The Column Chart is able to render multiple columns per category for comparison purposes. In this example, the Column Chart is comparing box office revenue amongst popular movie franchises.
+縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。この例では、縦棒チャートは人気のある映画フランチャイズの興行収入を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数シリーズの $PlatformShort$ 縦棒チャート"></iframe>
@@ -54,7 +54,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 ## $PlatformShort$ 積層型縦棒チャート
 
-The Stacked Column chart is identical to the Column Chart in al aspects except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。以下の例では、米国、ヨーロッパ、中国の間で生成された再生可能電力を示しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型縦棒チャート"></iframe>
@@ -64,7 +64,7 @@ The Stacked Column chart is identical to the Column Chart in al aspects except t
 
 ## $PlatformShort$ 積層型 100 縦棒チャート
 
-The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Column presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+積層型 100 縦棒チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型棒チャートと同じです。データを直接表現するのでなく、積層型 100 縦棒は、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型 100 縦棒チャート"></iframe>

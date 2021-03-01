@@ -53,7 +53,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 ## $PlatformShort$ 棒チャートの例
 
-この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。The Bar Chart is paired with a CategoryYAxis and a NumericXAxis.
+この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。棒チャートは、CategoryYAxis および NumericXAxis とペアになっています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
@@ -63,8 +63,8 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 ## 単一シリーズの $PlatformShort$ 棒チャート
 
-Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
-In this example, the Bar Chart is comparing percent-based retail shopping data. 
+棒チャートは、カテゴリ シリーズのグループに属し、チャートの左から右へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
+この例では、棒チャートはパーセント ベースの小売ショッピング データを比較しています。 
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一ソースの $PlatformShort$ 棒チャート"></iframe>
@@ -74,7 +74,7 @@ In this example, the Bar Chart is comparing percent-based retail shopping data.
 
 ## 複数シリーズの $PlatformShort$ 棒チャート
 
-The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
+棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数ソースの $PlatformShort$ 棒チャート"></iframe>
@@ -137,7 +137,7 @@ $ProductName$ 範囲棒チャートは、範囲チャートのグループに属
 
 ## $PlatformShort$ 棒チャートのスタイル設定
 
-Annotations can be added to the Bar Chart. The following example demonstrates a percent comparison between popular online retail shopping sites.
+棒チャートには、注釈を追加できます。次の例は、人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>

@@ -7,17 +7,17 @@ _language: ja
 ---
 # $PlatformShort$ ファイナンシャル チャート
 
-$PlatformShort$  Financial Chart makes it easy to visualize financial and stock data by using a simple and intuitive API. It's purpose is for building high-performance, high-volume financial services, and capital market data applications.
+$PlatformShort$ ファイナンシャル チャートを使用すると、シンプルで直感的な API を使用して、ファイナンシャル データと株価データを簡単に視覚化できます。その目的は、高パフォーマンスで大量のファイナンシャル サービス、および資本市場データ アプリケーションを構築することです。
 
-There are several display modes for price and volume and a host of financial indicators. Financial chart analyzes and selects data columns - Date/Time column to use for x-axis and Open, High, Low, Close, Volume columns or the first 5 numeric columns for y-axis. Beyond this, the user can specify the chart type to either Bar, Candle, Column, and Line. With its five main visual elements, a toolbar, a prices view, a volume view, an indicators view, and a navigation view, data has become more perceptible.
+価格および出来高のための複数の表示モード、そして多数の財務指標があります。ファイナンシャル チャートはデータ列を解析して選択します。日/時列を X 軸で使用し、Open、High、Low、Close、Volume 列、または最初の 5 つの数値列を Y 軸で使用します。ユーザーがチャート タイプを棒、ローソク足、柱状、または折れ線に設定できます。主要なビジュアル要素にツールバー、価格ペイン、ボリューム ペイン、インジケーター ペイン、およびナビゲーション ペインがあります。
 
-You can explicitly specify the chart type by setting the chartType property to one of the following options:
+chartType プロパティを以下のオプションの 1 つに設定してチャート タイプを明示的に指定することもできます:
 
-- Bar 
-- Candle
-- Column 
-- Line
-- Auto - Specifies automatic selection of chart type based on Data Adapter which suggest one of above values based names and number of numeric columns in your data. For example, it will suggest Bar for data items with Open, High, Low, Close columns.
+- Bar (棒)
+- Candle (ローソク足)
+- Column (縦棒)
+- Line (折れ線)
+- Auto (自動) - データ アダプターに基づいてチャート タイプの自動選択を指定します。これは、データの名前および数値列の数に基づいて上記の値を選択します。たとえば、Open、High、Low、および Close 列があるデータ項目のために棒を使用します。
 
 ## 複数シリーズの $PlatformShort$ 株価チャート
 
@@ -29,7 +29,7 @@ You can explicitly specify the chart type by setting the chartType property to o
 
 ## $PlatformShort$ 株価チャートの例
 
-In this example, the financial chart is representing the S&P 500 over the course of a year.
+この例では、ファイナンシャル チャートは 1 年間の S&P 500を表しています。
 
 <!-- TODO use this iframe which will point to a new sample:
 <iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ファイナンシャル チャートの例"></iframe> -->
@@ -43,7 +43,7 @@ In this example, the financial chart is representing the S&P 500 over the course
 
 ## 複合の $PlatformShort$ 株価チャート
 
-In this example, the financial chart is plotting revenue for United States.
+この例では、ファイナンシャル チャートは米国の収益をプロットしています。
 
 <!-- TODO show code for FinancialChart with:
 - the dataSource set to multiple data sources
@@ -54,7 +54,7 @@ In this example, the financial chart is plotting revenue for United States.
 
 ## $PlatformShort$ 株価チャートのスタイル設定
 
-In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
+この例では、ファイナンシャル チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
 <!-- TODO show code for FinancialChart with:
 - the brushes and outlines properties set
@@ -63,7 +63,7 @@ In this example, the financial chart is comparing revenue between Amazon, Micros
 
 ## $PlatformShort$ 高度な株価チャート
 
-If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below.
+他のシリーズの複合などのより多くの機能を備えたファイナンシャル チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-financial-candlestick-series.md

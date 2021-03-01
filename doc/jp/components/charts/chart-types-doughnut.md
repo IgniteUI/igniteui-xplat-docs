@@ -7,9 +7,9 @@ _language: ja
 ---
 # $PlatformShort$ ドーナツ チャート
 
-$PlatformShort$ Doughnut Chart is similar to the Pie Chart component, proportionally illustrating the occurrences of a variable. The doughnut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
+$PlatformShort$ ドーナツ チャートは円チャートと同様、変数の発生を比例的に表示します。ドーナツ型チャートは、複数の変数をコンセントリック リングで表示でき、階層データの可視化を組み込みでサポートします。リングは、異なるデータ項目にバインドすることも、共通のデータ ソースを共有することもできます。
 
-Slice selection and explosion are provided.
+スライスの選択と展開が提供されます。
 
 ## $PlatformShort$ ドーナツ チャートの例
 <!-- TODO use this iframe which will point to a new sample:
@@ -18,7 +18,7 @@ Slice selection and explosion are provided.
 
 ## 凡例付きの $PlatformShort$ ドーナツ チャート
 
-In this example, the Doughnut chart is comparing market share between common household utilities.
+この例では、ドーナツ チャートは一般的な家庭用ユーティリティ間の市場シェアを比較しています。
 
 ## $PlatformShort$ ドーナツ チャート - スライスの選択
 

@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ 散布図
 
-$PlatformShort$ Scatter Chart is a group of series that show markers to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. The x and y coordinates of the data point are determined by two numeric data columns. The Scatter Series draw attention to uneven intervals or clusters of data. These types of series are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Scatter series can also be used to organize data chronologically (even if the data is not in chronological order).
+$PlatformShort$ 散布図は、複数の異なるデータのシリーズの項目間の関係を示すマーカーを表示、または x および y 座標を使用してデータ項目をプロットするために使用されるシリーズのグループです。データ ポイントの x 座標および y 座標は、2 つの数値データ列で決定されます。散布シリーズは、データの不均等な散らばりやデータの塊に注意が向けられます。これらのタイプのシリーズは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。散布シリーズは、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
 
 ## $PlatformShort$ 散布図の例
 <!-- TODO use this iframe which will point to a new sample:
@@ -15,9 +15,9 @@ $PlatformShort$ Scatter Chart is a group of series that show markers to represen
 
 ## $PlatformShort$ 散布マーカー チャート
 
-Scatter Chart draws attention to uneven intervals or clusters of data and highlight the deviation of collected data from predicted results that are often used to plot scientific and statistical data. In addition to these characteristics of Scatter Chart, the sizes of Point Chart markers (points) in are data-driven. The following sections list important conceptual and task-based information on how to use the Point Chart and its features.
+散布図は、データの不均一な間隔またはクラスターに注意を向け、科学的および統計的データのプロットによく使用される予測結果からの収集データの偏差を強調します。散布図の特性に加えて、ポイント チャート マーカー (ポイント) のサイズはデータ駆動型です。以下のセクションは、ポイント チャートとその機能を使用する方法で重要なコンセプトやタスク ベースの情報を示します。
 
-In this example, the Scatter Point Chart is comparing the total births and deaths between Africa and Europe in 2015.
+この例では、散布図は 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布マーカー チャート"></iframe>
@@ -27,9 +27,9 @@ In this example, the Scatter Point Chart is comparing the total births and death
 
 ## $PlatformShort$ 散布バブル チャート
 
-The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes.
+バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
 
-In this example, the Scatter Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
+この例では、散布バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>

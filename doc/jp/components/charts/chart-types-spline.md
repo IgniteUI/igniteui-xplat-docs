@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ スプライン チャート
 
-$PlatformShort$ Spline Chart belongs to a group of Category Series and it is rendered using a collection of points connected by smooth curves of spline.  Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The Spline Chart is identical to the Line Chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
+$PlatformShort$ スプライン チャートはカテゴリ シリーズのグループに属し、スプラインのスムーズなカーブに接続された点のコレクションを使用して描画されます。値は y 軸に表示され、カテゴリは x 軸に表示されます。スプライン チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。スプライン チャートは、データ ポイントを接続する線がデータの表示を改善するためのスプライン補間とスムージング機能を持つこと以外のすべての面で折れ線チャートと同じです。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ スプライン チャート"></iframe>
@@ -17,7 +17,7 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 
 ## 単一シリーズの $PlatformShort$ スプライン チャート
 
-The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
+以下の例に示すように、スプライン チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一シリーズの $PlatformShort$ スプライン チャート"></iframe>
@@ -27,7 +27,7 @@ The Spline Chart is often used to show the change of value over time such as the
 
 ## 複数シリーズの $PlatformShort$ スプライン チャート
 
-Since the Spline Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the chart will automatically update to fit the additional data.
+スプライン チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、チャートは追加データに合わせて自動的に更新されます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数シリーズの $PlatformShort$ スプライン チャート"></iframe>
@@ -37,7 +37,7 @@ Since the Spline Chart allows you to combine multiple series and compare or see 
 
 ## $PlatformShort$ 高度なスプライン チャート
 
-If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
+他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ スプライン チャートのスタイル設定"></iframe>
@@ -47,7 +47,7 @@ If you need a Spline Chart with more features such as composite other series, yo
 
 ## $PlatformShort$ 積層型スプライン チャート
 
-The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
+以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-stacked-spline-series.md

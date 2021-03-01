@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ エリア チャート
 
-$PlatformShort$ Area Chart, or Area Graph, is a type of category area graph that shows a collection of points connected by line segments with the area below the line filled in. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. Area Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. You can include one or more data sets to compare, which would render as multiple areas in the chart.
+$PlatformShort$ エリア チャート (エリア グラフ) は、線の下のエリアが塗りつぶされた線分で接続されたポイントのコレクションを示すカテゴリ エリア チャートの一種です。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。エリア チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数のエリアとして描画されます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ エリア チャート"></iframe>
@@ -17,7 +17,7 @@ $PlatformShort$ Area Chart, or Area Graph, is a type of category area graph that
 
 ## 単一シリーズの $PlatformShort$ エリア チャート 
 
-$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
+以下の例に示すように、$PlatformShort$ エリア チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一シリーズの $PlatformShort$ エリア チャート"></iframe>
@@ -37,7 +37,7 @@ $PlatformShort$ Area Chart allows you to combine multiple series and compare or 
 
 ## $PlatformShort$ 高度なエリア チャート
 
-Additional styling settings can be configured on Area Chart series such marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
+以下に示すように、マーカー アウトライン、マーカー ブラシ、シリーズ ブラシ、シリーズ アウトラインなど、追加のスタイル設定をエリア チャート シリーズで構成できます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ エリア チャートのスタイル設定"></iframe>
@@ -63,11 +63,11 @@ The Step Area Chart belongs to a group of category charts and it is rendered usi
 
 ## $PlatformShort$ 積層型エリア チャート
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area charts follow all the same requirements as area charts, the only difference is that visually the shaded areas are stacked on top of each other. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。以下の例では、米国、ヨーロッパ、中国の間で生成された再生可能電力を示しています。
 
 ## $PlatformShort$ 積層型 100 エリア シリーズ 
 
-The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Area presents the data in terms of percent of the sum of all values in a data point. Sometimes the series represent part of a whole being changed over time e.g. a country’s energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
+積層型 100 エリア チャートは、Y 軸上の値の取り扱いを除いたすべての面で 積層型エリア シリーズと同じです。データを直接表現するのでなく、積層型 100 エリア シリーズは、データ ポイント内のすべての値の合計の割合でデータを表します。このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合、積層されたすべての要素を均等に表すことをお勧めします。
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-stacked-100-area-series.md

@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ ラジアル チャート
 
-Radial Chart is a group of series that takes data and render it as collection of data points wrapped around a circle (rather than stretching along a horizontal line as Category Series do). Just like Category Series, Radial Chart are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of Category Series.
+ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです (カテゴリ シリーズが行うように水平方向の線に沿って拡大するのではなく)。カテゴリ シリーズと同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ シリーズの同じカテゴリ グループ化メカニズムをサポートします。
 
 ## $PlatformShort$ ラジアル チャートの例
 
