@@ -17,8 +17,7 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 
 ## 単一シリーズの $PlatformShort$ 縦棒チャート
 
-縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
-この例では、縦棒チャートは月平均気温を使用しています。
+縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。この例では、縦棒チャートは月平均気温を使用しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一シリーズの $PlatformShort$ 縦棒チャート"></iframe>
