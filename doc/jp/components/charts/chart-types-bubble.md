@@ -7,50 +7,50 @@ _language: ja
 ---
 # $PlatformShort$ 散布図
 
-$PlatformShort$ Bubble Chart is a group of series that show markers with variable scaling to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. The x and y coordinates of the data point are determined by two numeric data columns. The Bubble Series draw attention to uneven intervals or clusters of data. These types of series are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Bubble series can also be used to organize data chronologically (even if the data is not in chronological order).
+$PlatformShort$ バブル チャートは、複数の異なるデータのシリーズの項目間の関係を示すマーカーを表示、または x および y 座標を使用してデータ項目をプロットするために使用されるシリーズのグループです。データ ポイントの x 座標および y 座標は、2 つの数値データ列で決定されます。バブル シリーズは、データの不均等な散らばりやデータの塊に注意が向けられます。これらのタイプのシリーズは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。バブル シリーズは、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Bubble Chart"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Scatter Bubble Chart with Single Series
+## 単一シリーズの $PlatformShort$ 散布バブル チャート
 
-The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes.
+バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Bubble Chart"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Scatter Bubble Chart with Multiple Series
+## 複数シリーズの $PlatformShort$ 散布バブル チャート
 
-The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes.
+バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
 
-In this example, the Scatter Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
+この例では、散布バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Bubble Chart"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Scatter Bubble Chart Styling
+## $PlatformShort$ 散布バブル チャートのスタイル設定
 
-The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes.
+バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
 
-In this example, the Scatter Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
+この例では、散布バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Bubble Chart"></iframe>
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布バブル チャート"></iframe>
 </div>
 
 <div class="divider--half"></div>
 
 
 <!-- TODO list API links used in this topic 
-## API Members
+## API メンバー
 -->
 
