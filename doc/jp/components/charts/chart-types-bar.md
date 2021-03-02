@@ -5,9 +5,15 @@ _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics, $PlatformShort$ チ�
 mentionedTypes: ["XamDataChart"]
 _language: ja
 ---
-# $PlatformShort$ Bar Chart
+# $PlatformShort$ 棒チャート
 
 $PlatformShort$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、水平棒または等しい幅と異なる長さでエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。棒が垂直 (上下) に表示される縦棒チャートまたは縦棒グラフのように、棒チャートは縦棒チャートと同じように描画されますが、時計回りに 90 度回転し、水平に (左から右) 表示されます。
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 棒チャートにはいくつかのユースケースがあります:
 
@@ -51,14 +57,6 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 - 株価チャート
 - 数値または時系列値を比較する任意の文字列値
 
-## $PlatformShort$ 棒チャートの例
-
-この例では、棒チャートは、1996 年から 2016 年までに米国とロシアの間で獲得したオリンピック メダル (カテゴリ) の総数を比較しています。Y 軸 (チャートの左側のラベル) には、Year (年) の時系列値が表示されています。X 軸 (チャートの下部にあるラベル) には、獲得したメダルの数が表示されます。棒チャートは、CategoryYAxis および NumericXAxis とペアになっています。
-
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
-</div>
-
 <div class="divider--half"></div>
 
 ## 単一シリーズの $PlatformShort$ 棒チャート
@@ -82,9 +80,9 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度な棒チャート
+## $PlatformShort$ 棒チャートのスタイル設定
 
-この例では、棒チャートは注釈を使用して、各棒の値を含むコールアウトを表示します。
+In this example, the Bar Chart uses annotations values for each bar demonstrating a percent comparison between popular online retail shopping sites using the CalloutLayer.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 棒チャートのスタイル設定"></iframe>
@@ -98,7 +96,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
 
-### $PlatformShort$ 積層型棒チャートの例
+### $PlatformShort$ 積層型棒チャート
 
 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
@@ -112,8 +110,6 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
-### $PlatformShort$ 積層型 100 棒チャートの例
-
 積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
 <div class="sample-container loading" style="height: 400px">
@@ -126,18 +122,9 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 $ProductName$ 範囲棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数のアイテムを比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
 
-### $PlatformShort$ 範囲棒チャートの例
+### $PlatformShort$ 範囲棒チャート
 
 この範囲棒チャートの例では、日付ごとの高温と低温の間の気象データの差異が示されています。
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
-## $PlatformShort$ 棒チャートのスタイル設定
-
-棒チャートには、注釈を追加できます。次の例は、人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
 
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
@@ -147,5 +134,6 @@ $ProductName$ 範囲棒チャートは、範囲チャートのグループに属
 ## その他のリソース
 - [縦棒チャート](chart-types-column.md)
 
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->

@@ -27,7 +27,7 @@ $PlatformShort$ エリア チャート (エリア グラフ) は、線の下の�
 
 ## 複数シリーズの $PlatformShort$ エリア チャート
 
-$PlatformShort$ エリア チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、エリア チャートは追加データに合わせて自動的に更新されます。
+$PlatformShort$ エリア チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。ヨーロッパ、中国と米国のデータを含むデータ ソースにバインドするだけで、エリア チャートは追加データに合わせて自動的に更新されます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数ソースの $PlatformShort$ エリア チャート"></iframe>
@@ -35,7 +35,7 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度なエリア チャート
+## $PlatformShort$ エリア チャートのスタイル設定
 
 以下に示すように、マーカー アウトライン、マーカー ブラシ、シリーズ ブラシ、シリーズ アウトラインなど、追加のスタイル設定をエリア チャート シリーズで構成できます。
 
@@ -65,22 +65,30 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。以下の例では、米国、ヨーロッパ、中国の間で生成された再生可能電力を示しています。
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型エリア チャート"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ 積層型 100 エリア シリーズ 
 
 積層型 100 エリア チャートは、Y 軸上の値の取り扱いを除いたすべての面で 積層型エリア シリーズと同じです。データを直接表現するのでなく、積層型 100 エリア シリーズは、データ ポイント内のすべての値の合計の割合でデータを表します。このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合、積層されたすべての要素を均等に表すことをお勧めします。
 
-<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
-	data-chart-type-stacked-100-area-series.md
-	data-chart-type-stacked-100-spline-area-series.md
-	data-chart-type-stacked-area-series.md
-	data-chart-type-stacked-spline-area-series.md
--->
+<!-- <div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Area Chart"></iframe>
+</div> -->
 
-## $PlatformShort$ 散布エリア チャート
+<div class="divider--half"></div>
 
-<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
-	data-chart-type-scatter-area-series.md
--->
+## $PlatformShort$ 積層型 スプライン エリア シリーズ 
+
+<div class="divider--half"></div>
+
+
+## $PlatformShort$ 積層型 100 スプライン エリア シリーズ 
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ラジアル エリア チャート
 
@@ -97,8 +105,13 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 	data-chart-type-polar-spline-area-series.md
 -->
 
-## その他のリソース
-<!-- TODO list topic links related to this topic -->
+## $PlatformShort$ 極座標型スプライン エリア チャート
 
+<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
+	data-chart-type-polar-area-series.md
+	data-chart-type-polar-spline-area-series.md
+-->
+
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->

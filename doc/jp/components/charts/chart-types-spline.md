@@ -35,7 +35,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度なスプライン チャート
+## $PlatformShort$ スプライン チャートのスタイル設定
 
 他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
@@ -54,20 +54,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
     data-chart-type-stacked-100-spline-series.md
 -->
 
-## $PlatformShort$ 散布スプライン チャート
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-scatter-spline-series.md
--->
-
-## $PlatformShort$ 極座標型スプライン チャート
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-polar-spline-series.md
--->
-
-## その他のリソース
+<!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->

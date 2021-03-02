@@ -212,17 +212,19 @@ var data = [
 
 <div class="divider--half"></div>
 
-### 円チャートの凡例でパーセンテージを表示する方法
+## 円チャートの凡例でパーセンテージを表示する方法
 
 <!-- TODO -->
 
-### $PlatformShort$ 高度な円チャートの凡例でパーセンテージを表示する例
+## $PlatformShort$ 円チャートのスタイル設定
 
 <!-- TODO -->
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
+
+## $PlatformShort$ ラジアル円チャート
 
 ## その他の分類項目
 円チャート コンポーネントの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
@@ -435,6 +437,7 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 
 <div class="divider--half"></div>
 
+
 ## アニメーション
 
 チャートの半径をスケールする `radiusFactor` プロパティを設定して円チャートをすばやくアニメーション化できます。`startAngle` プロパティを設定してチャートが回転する間、チャートの角度が増加し続けるようにします。
@@ -472,3 +475,7 @@ public tick(): void {
 </div>
 
 <div class="divider--half"></div>
+
+<!-- TODO list API links used in this topic 
+## API メンバー
+-->

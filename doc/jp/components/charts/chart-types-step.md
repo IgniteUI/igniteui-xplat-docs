@@ -35,7 +35,7 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度なステップ チャート
+## $PlatformShort$ ステップ チャートのスタイル設定
 
 他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
@@ -46,9 +46,10 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 <div class="divider--half"></div>
 
 
-## その他のリソース
+<!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->
 

@@ -35,7 +35,7 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度な縦棒チャート
+## $PlatformShort$ 縦棒チャートのスタイル設定
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 縦棒チャートのスタイル設定"></iframe>
@@ -44,6 +44,8 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 <div class="divider--half"></div>
 
 ## $PlatformShort$ ウォーターフォール チャート
+
+Waterfall Chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ウォーターフォール チャート"></iframe>
@@ -83,8 +85,6 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 	data-chart-type-radial-column-series.md
 -->
 
-## その他のリソース
-<!-- TODO list topic links related to this topic -->
-
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->

@@ -9,6 +9,8 @@ _language: ja
 
 $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
+複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 折れ線チャート"></iframe>
 </div>
@@ -177,22 +179,6 @@ $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズ�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 折れ線チャートの凡例
-
-複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
-
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-line-chart-with-legend" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="凡例付きの $PlatformShort$ 折れ線チャート"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-with-legend-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/line-chart-with-legend"></sample-button>
-
-</div>
-
-<div class="divider--half"></div>
-
 ## ライブ データの $PlatformShort$ 折れ線チャート
 
 $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示すように、数百万に及ぶデータ ポイントを含む大量データを処理し、それらを数ミリ秒ごとに更新できます。
@@ -235,9 +221,10 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 - [Series Tooltips](chart-features-tooltips.md)
 - [Series Trendlines](chart-features-trendlines.md) -->
 
-## API メンバー
-
+<!-- TODO list API links used in this topic 
+## API Members
 - `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
+-->

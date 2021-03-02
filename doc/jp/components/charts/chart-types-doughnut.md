@@ -11,24 +11,37 @@ $PlatformShort$ ドーナツ チャートは円チャートと同様、変数の
 
 スライスの選択と展開が提供されます。
 
-## $PlatformShort$ ドーナツ チャートの例
-<!-- TODO use this iframe which will point to a new sample:
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ のドーナツ チャート"></iframe>
+</div>
 
-<iframe src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドーナツ チャートの例"></iframe> -->
-
-## 凡例付きの $PlatformShort$ ドーナツ チャート
-
-この例では、ドーナツ チャートは一般的な家庭用ユーティリティ間の市場シェアを比較しています。
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ドーナツ チャート - スライスの選択
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドーナツ スライスの選択"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ ドーナツ チャート - スライスの切り出し
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Explosion"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ドーナツ チャート - 複数のリング
 
-## その他のリソース
-<!-- TODO list topic links related to this topic -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="doughnut-chart-rings-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドーナツ複数のリング"></iframe>
+</div>
 
+<div class="divider--half"></div>
+
+<!-- TODO list API links used in this topic 
 ## API メンバー
-<!-- TODO list API links used in this topic -->
+-->
 

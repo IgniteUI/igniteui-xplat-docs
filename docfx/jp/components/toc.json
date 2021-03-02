@@ -350,7 +350,7 @@
   },
   {
     "name": "バブル チャート",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
+    "href": "charts/chart-types-bubble.md",
     "status": "NEW"
   },
   {
@@ -360,7 +360,7 @@
   },
   {
     "name": "ドーナツ チャート",
-    "href": "doughnut-chart.md",
+    "href": "charts/chart-types-doughnut.md",
     "status": ""
   },
   {
@@ -375,7 +375,7 @@
   },
   {
     "name": "円チャート",
-    "href": "pie-chart.md",
+    "href": "charts/chart-types-pie.md",
     "status": ""
   },
   {
@@ -394,8 +394,8 @@
     "status": "NEW"
   },
   {
-    "name": "シェープ シリーズ",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
+    "name": "シェープ チャート",
+    "href": "charts/chart-types-shape.md",
     "status": "NEW"
   },
   {
