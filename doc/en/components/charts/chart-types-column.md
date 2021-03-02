@@ -35,7 +35,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Column Chart
+## $PlatformShort$ Styling Column Chart
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Chart Styling"></iframe>
@@ -44,6 +44,8 @@ The Column Chart is able to render multiple columns per category for comparison 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Waterfall Chart
+
+Waterfall Chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Waterfall Chart"></iframe>
@@ -83,8 +85,6 @@ The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspect
 	data-chart-type-radial-column-series.md
 -->
 
-## Additional Resources
-<!-- TODO list topic links related to this topic -->
-
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->
