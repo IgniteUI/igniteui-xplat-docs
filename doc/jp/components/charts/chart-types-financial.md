@@ -41,7 +41,7 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 ## $PlatformShort$ 株価チャートのスタイル設定
 
-If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
+他のシリーズの複合などのより多くの機能を備えたファイナンシャル チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、ファイナンシャル チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="fc-chart-styling-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 株価指数チャート"></iframe>
@@ -62,7 +62,7 @@ If you need a Financial Chart with more features such as composite other series,
 
 ## $PlatformShort$ チャートのペイン
 
-In this example, the financial chart is plotting revenue for United States.
+この例では、ファイナンシャル チャートは米国の収益をプロットしています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="fc-chart-panes" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Panes"></iframe>

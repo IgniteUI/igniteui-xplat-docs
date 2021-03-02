@@ -8,15 +8,15 @@ _language: ja
 ---
 # $PlatformShort$ シェープ チャート
 
-This topic explains various types of shape series in the Angular data chart component. Scatter shape series is a group of chart series that take array of shapes (array or arrays of X/Y coordinates) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system.
+このトピックは、Angular データ チャート コンポーネントのシェープ シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャート シリーズのグループです。
 
-Scatter shape series are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
+散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
-## $PlatformShort$ Scatter Polygon Chart
+## $PlatformShort$ 散布ポリゴン チャート
 
 <!-- data-chart-type-scatter-polygon-series.md -->
 
-## $PlatformShort$ Scatter Polyline Chart
+## $PlatformShort$ 散布ポリライン チャート
 
 <!-- data-chart-type-scatter-polyline-series.md -->
 
