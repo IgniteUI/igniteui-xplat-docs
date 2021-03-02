@@ -26,7 +26,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the area chart will automatically update to fit the additional data.
+$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for Europe, China and the USA, and the area chart will automatically update to fit the additional data.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart with Multiple Sources"></iframe>
@@ -34,7 +34,7 @@ $PlatformShort$ Area Chart allows you to combine multiple series and compare or 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Area Chart
+## $PlatformShort$ Styling Area Chart
 
 Additional styling settings can be configured on Area Chart series such marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
 
@@ -64,22 +64,30 @@ The Step Area Chart belongs to a group of category charts and it is rendered usi
 
 Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area charts follow all the same requirements as area charts, the only difference is that visually the shaded areas are stacked on top of each other. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked Area Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Stacked 100 Area Series 
 
 The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Area presents the data in terms of percent of the sum of all values in a data point. Sometimes the series represent part of a whole being changed over time e.g. a country’s energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea. 
 
-<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
-	data-chart-type-stacked-100-area-series.md
-	data-chart-type-stacked-100-spline-area-series.md
-	data-chart-type-stacked-area-series.md
-	data-chart-type-stacked-spline-area-series.md
--->
+<!-- <div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Area Chart"></iframe>
+</div> -->
 
-## $PlatformShort$ Scatter Area Chart
+<div class="divider--half"></div>
 
-<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
-	data-chart-type-scatter-area-series.md
--->
+## $PlatformShort$ Stacked Spline Area Series 
+
+<div class="divider--half"></div>
+
+
+## $PlatformShort$ Stacked 100 Spline Area Series 
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Radial Area Chart
 
@@ -96,8 +104,13 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 	data-chart-type-polar-spline-area-series.md
 -->
 
-## Additional Resources
-<!-- TODO list topic links related to this topic -->
+## $PlatformShort$ Polar Spline Area Chart
 
+<!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
+	data-chart-type-polar-area-series.md
+	data-chart-type-polar-spline-area-series.md
+-->
+
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

@@ -34,7 +34,7 @@ Since the Spline Chart allows you to combine multiple series and compare or see 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Spline Chart
+## $PlatformShort$ Spline Chart Styling
 
 If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
@@ -53,20 +53,9 @@ The Stacked Spline Chart is often used to show the change of value over time suc
     data-chart-type-stacked-100-spline-series.md
 -->
 
-## $PlatformShort$ Scatter Spline Chart
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-scatter-spline-series.md
--->
-
-## $PlatformShort$ Polar Spline Chart
-
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-polar-spline-series.md
--->
-
-## Additional Resources
+<!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
+<!-- TODO list API links used in this topic 
 ## API Members
-<!-- TODO list API links used in this topic -->
+-->

@@ -211,19 +211,21 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 
 <div class="divider--half"></div>
 
-### How to Show Percentage in Pie Chart Legend
+## How to Show Percentage in Pie Chart Legend
 
 In this example, the Pie chart is comparing market share between common household utilities.
 
 <!-- TODO -->
 
-### $PlatformShort$ Advanced Pie Chart Show Percentage in Legend Example
+## $PlatformShort$ Pie Chart Styling
 
 <!-- TODO -->
 <!-- <div class="sample-container loading" style="height: 500px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
+
+## $PlatformShort$ Radial Pie Chart
 
 ## Others Category
 Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
@@ -436,6 +438,7 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 
 <div class="divider--half"></div>
 
+
 ## Animation
 
 You can animate the pie chart smoothly by setting the `radiusFactor` property, which will scale the chart's radius. Also set the `startAngle` property to angle the chart such that it keep increasing the chart angle while rotating.
@@ -473,3 +476,7 @@ public tick(): void {
 </div>
 
 <div class="divider--half"></div>
+
+<!-- TODO list API links used in this topic 
+## API Members
+-->
