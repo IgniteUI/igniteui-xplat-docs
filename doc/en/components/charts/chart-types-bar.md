@@ -95,8 +95,6 @@ A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is u
 
 The Stacked Bar Chart differs from the Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
 
-### $PlatformShort$ Stacked Bar Chart
-
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
 <div class="sample-container loading" style="height: 400px">
@@ -116,19 +114,6 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 </div>
 
 <div class="divider--half"></div>
-
-## $PlatformShort$ Range Bar Chart
-
-The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
-
-### $PlatformShort$ Range Bar Chart
-
-In this Range Bar Chart example, weather data variance between high and low temperatures by date is shown.
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
 
 ## Additional Resources
 - [Column Chart](chart-types-column.md)

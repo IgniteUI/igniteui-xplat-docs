@@ -82,10 +82,14 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 
 ## $PlatformShort$ Stacked Spline Area Series 
 
+Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as area charts, with the only difference being that the visually shaded areas are stacked on top of each other.
+
 <div class="divider--half"></div>
 
 
 ## $PlatformShort$ Stacked 100 Spline Area Series 
+
+The Stacked 100 Spline Area Chart is identical to the Stacked Spline Area Chart in all aspects except for the treatment of the values on the y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Area Chart presents the data in terms of a percent of the sum of all values in a particular data point. Sometimes the chart represents part of a whole being changed over time. For example, a country's energy consumption related to the sources from which it is produced. In such cases, representing all stacked elements equally may be a better idea.
 
 <div class="divider--half"></div>
 
@@ -99,12 +103,16 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 
 ## $PlatformShort$ Polar Area Chart
 
+Polar Area Charts belong to a group of polar charts and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a straight line and then filling the area represented by the connected points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line.
+
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-polar-area-series.md
 	data-chart-type-polar-spline-area-series.md
 -->
 
 ## $PlatformShort$ Polar Spline Area Chart
+
+Polar Spline Area Charts belong to a group of polar charts and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a curved spline and then filling the area represented by the connected points. The Polar Spline Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line.
 
 <!-- TODO copy and combine content (code snippets, iframes, description) from these topics:
 	data-chart-type-polar-area-series.md

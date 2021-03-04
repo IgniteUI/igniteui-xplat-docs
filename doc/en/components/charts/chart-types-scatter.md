@@ -18,19 +18,27 @@ In this example, the Scatter Point Chart is comparing the total births and death
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Scatter Line Chart
+
+The Scatter Line Chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected by a straight line, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
+
+## $PlatformShort$ Scatter Spline Chart
+
+The Scatter Spline Chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected by a curved spline, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
+
 ## $PlatformShort$ Scatter HD Chart
+
+Use the $PlatformShort% DataChart's High Density Scatter Chart functionality to bind and show scatter data ranging from thousands to millions of data points with very little loading time. Due to this chart type being designed for such a large amount of points, it is visualized as tiny dots as opposed to full sized markers, and displays areas with the most data using a higher color density representing a cluster of data points.
 
 <!-- data-chart-type-scatter-hd-series.md -->
 
 ## $PlatformShort$ Scatter Contour Chart
 
+The Scatter Contour Chart draws colored contour lines based on a triangulation of X and Y data with a numeric data value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office.
+
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-scatter-contour-series.md
 -->
-
-## $PlatformShort$ Scatter Line
-
-## $PlatformShort$ Scatter Spline
 
 <!-- TODO list API links used in this topic 
 ## API Members

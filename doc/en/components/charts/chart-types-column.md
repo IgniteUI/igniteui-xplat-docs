@@ -75,11 +75,17 @@ The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspect
 
 ## $PlatformShort$ Range Column Chart
 
+The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
+
+In this Range Bar Chart example, weather data variance between high and low temperatures by date is shown.
+
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-range-column-series.md
 -->
 
 ## $PlatformShort$ Radial Column Chart
+
+The Radial Column Chart belongs to a group of radial charts, and is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the Column Chart, but wraps data points around a circle rather than stretching them along a horizontal line.
 
 <!-- TODO copy and combine content (code snippets, description) from these topics:
 	data-chart-type-radial-column-series.md
