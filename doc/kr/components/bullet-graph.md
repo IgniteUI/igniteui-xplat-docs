@@ -15,15 +15,12 @@ The bullet graph component provides you with the ability to create attractive da
 
 The following sample demonstrates how setting multiple properties on the same gauge can transform it to completely different gauge.
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/animation"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation" >
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -219,15 +216,12 @@ Performance value is the primary measure displayed by the component and it is vi
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-measures-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-measures-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/measures"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures" >
+</code-view>
+
 
 ## Comparative Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same time the degree to which it resides within that state.
@@ -304,15 +298,12 @@ The ranges are visual elements that highlight a specified range of values on a s
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges" >
+</code-view>
+
 
 ## Tick Marks
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the bullet graph.
@@ -378,15 +369,12 @@ The tick marks serve as a visual division of the scale into intervals in order t
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks" >
+</code-view>
+
 
 ## Labels
 The labels indicate the measures on the scale.
@@ -432,15 +420,12 @@ The labels indicate the measures on the scale.
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels" >
+</code-view>
+
 
 ## Backing
 The backing element represents background and border of the bullet graph control. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
@@ -483,15 +468,12 @@ The backing element represents background and border of the bullet graph control
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-background-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-background' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-background-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/background"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background" >
+</code-view>
+
 
 ## Scale
 The scale is visual element that highlights the full range of values in the gauge. You can customize appearance and shape of the scale. The scale can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
@@ -537,15 +519,12 @@ The scale is visual element that highlights the full range of values in the gaug
   </igc-bullet-graph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale" >
+</code-view>
+
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the bullet graph with all features and visuals enabled.

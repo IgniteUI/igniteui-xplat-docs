@@ -9,15 +9,12 @@ _language: kr
 마커, 차트 제목 및 부제, 차트 유형 등 $ProductName$ 카테고리 차트 컴포넌트를 사용자 지정이 가능합니다.
 
 ## 데모
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="category-chart-marker-options-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-marker-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="category-chart-marker-options-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">STACKBLITZ 에서 보기
-    </button>
-<sample-button src="charts/category-chart/marker-options"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" >
+</code-view>
+
 
 ## 차트 비주얼 구성
 

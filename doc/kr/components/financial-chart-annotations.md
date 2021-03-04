@@ -9,15 +9,12 @@ _language: kr
 이 항목에서는 `XamFinancialChart`에서 사용할 수 있는 주석에 대한 개념 정보를 제공합니다.
 
 ## 데모
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-annotations-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="financial-chart-annotations-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">STACKBLITZ 에서 보기
-    </button>
-<sample-button src="charts/financial-chart/annotations"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" >
+</code-view>
+
 <div class="divider--half"></div>
 
 ## 십자형 레이어

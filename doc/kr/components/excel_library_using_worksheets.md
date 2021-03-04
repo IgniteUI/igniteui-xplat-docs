@@ -9,9 +9,11 @@ The Infragistics Excel Engine's `Worksheet` is where your data is kept. You can 
 
 ## Demo
 
-<div class="sample-container loading" style="height: 200px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
+
+<code-view style="height: 200px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets" >
+</code-view>
 <sample-button src="excel/excel-library/operations-on-worksheets"></sample-button>
 
 

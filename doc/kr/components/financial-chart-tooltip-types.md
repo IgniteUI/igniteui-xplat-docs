@@ -9,15 +9,12 @@ _language: kr
 이 항목에서는 `XamFinancialChart`에서 사용할 수 있는 도구 설명 유형에 대한 개념 정보를 제공합니다.
 
 ## 데모
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-tooltip-types-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="financial-chart-tooltip-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">STACKBLITZ 에서 보기
-    </button>
-<sample-button src="charts/financial-chart/tooltip-types"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types" >
+</code-view>
+
 <div class="divider--half"></div>
 
 ## 도구 설명 유형

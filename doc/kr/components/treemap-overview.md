@@ -12,15 +12,12 @@ Treemaps are not designed to convey numerical quantities; the intent is to show 
 
 ## Demo
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="tree-map-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/tree-map-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="tree-map-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/tree-map/overview"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview" >
+</code-view>
+
 
 <div class="divider--half"></div>
 

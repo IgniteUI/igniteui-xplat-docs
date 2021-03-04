@@ -12,13 +12,12 @@ The sparkline control has several visual elements and corresponding features tha
 
 ## Demo
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="sparkline-display-types-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-display-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-display-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" >
+</code-view>
+
 <sample-button src="charts/sparkline/display-types"></sample-button>
 
 <div class="divider--half"></div>
@@ -138,13 +137,12 @@ All of the markers mentioned above can be customized using the related marker ty
     negativeMarkerSize={10}/>
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="sparkline-markers-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-markers' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-markers-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers" >
+</code-view>
+
 <sample-button src="charts/sparkline/markers"></sample-button>
 
 <div class="divider--half"></div>
@@ -181,13 +179,12 @@ You can also configure whether or not to show the normal range in front of or be
     displayNormalRangeInFront="true"  />
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="sparkline-normal-range-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-normal-range' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-normal-range-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range" >
+</code-view>
+
 <sample-button src="charts/sparkline/normal-range"></sample-button>
 
 <div class="divider--half"></div>
@@ -235,13 +232,12 @@ The following code example shows how to enable a trendline in the $ProductName$ 
     trendLineBrush="Red"  />
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="sparkline-trendlines-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-trendlines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-trendlines-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines" >
+</code-view>
+
 <sample-button src="charts/sparkline/trendlines"></sample-button>
 
 
@@ -263,13 +259,12 @@ In order to plot the unknown values, you can set the `UnknownValuePlotting` prop
     unknownValuePlotting="LinearInterpolate" />
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="sparkline-unknown-values-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-unknown-values-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values" >
+</code-view>
+
 <sample-button src="charts/sparkline/unknown-values"></sample-button>
 
 <div class="divider--half"></div>
