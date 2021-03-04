@@ -270,12 +270,22 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 ```
 
 ```razor
+<DataGrid Height="100%" Width="100%" 
+    @ref="DataGridRef"
+    CellValueChanging="OnCellValueChanging"
+    DataCommitting="OnDataCommitting">
+ </DataGrid>
+
 @code {
+    public DataGrid DataGridRef;
+
     public void OnCellValueChanging(GridCellValueChangingEventArgs e)
     {
+        //check if value is empty upon exiting edit mode.
         if(e.NewValue == "")
         {
             this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
+            //or revert changes
             this.DataGridRef.RejectEdit(e.EditID);
         }
         else
@@ -288,10 +298,12 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     {
         if(e.Changes[0].TransactionType == TransactionType.Update)
         {
+            //commit was passed      
             this.DataGridRef.AcceptCommit(e.CommitID);
         }
         else
         {
+            //commit was prevented
             this.DataGridRef.RejectCommit(e.CommitID);
         }
     }
