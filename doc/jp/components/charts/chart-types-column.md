@@ -45,7 +45,7 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 
 ## $PlatformShort$ ウォーターフォール チャート
 
-Waterfall Chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. 値の正/負の変化を区別するため、列は色分けされます。
+ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ウォーターフォール チャート"></iframe>

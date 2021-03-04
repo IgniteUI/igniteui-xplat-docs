@@ -82,7 +82,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 ## $PlatformShort$ 棒チャートのスタイル設定
 
-In this example, the Bar Chart uses annotations values for each bar demonstrating a percent comparison between popular online retail shopping sites using the CalloutLayer.
+この例では、棒チャートは各棒の注釈値を使用して、CalloutLayer を使用した人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 棒チャートのスタイル設定"></iframe>

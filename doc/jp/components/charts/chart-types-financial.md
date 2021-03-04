@@ -31,7 +31,7 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 ## $PlatformShort$ 株価チャート
 
-この例では、ファイナンシャル チャートは 1 年間の S&P 500を表しています。useful for investors and conducting technical analysis and forecasting future pricing/reports.
+この例では、ファイナンシャル チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="fc-chart-stock-index-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 株価指数チャート"></iframe>
