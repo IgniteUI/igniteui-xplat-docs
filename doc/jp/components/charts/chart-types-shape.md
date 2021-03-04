@@ -1,8 +1,7 @@
 ---
 title: $PlatformShort$ シェープ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ シェープ チャート
-_keywords: $PlatformShort$ Charts, Shape Chart, Infragistics,
-$PlatformShort$ チャート, シェープ チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Shape Chart, Infragistics, $PlatformShort$ チャート, シェープ チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
 _language: ja
 ---
