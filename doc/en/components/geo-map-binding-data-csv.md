@@ -10,13 +10,12 @@ With the $ProductName$ map component, you can plot geographic data loaded from v
 
 ## $PlatformShort$ Binding CSV Files with Geographic Locations Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-csv-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding CSV Files with Geographic Locations Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-csv-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv" alt="$PlatformShort$ Binding CSV Files with Geographic Locations Example">
+</code-view>
+
 <sample-button src="maps/geo-map/binding-data-csv"></sample-button>
 
 <div class="divider--half"></div>

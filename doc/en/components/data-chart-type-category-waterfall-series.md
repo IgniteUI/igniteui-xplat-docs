@@ -10,15 +10,12 @@ The $ProductName$ waterfall chart belongs to a group of category charts and it i
 
 ## $PlatformShort$ Waterfall Chart Example
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-category-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Waterfall Chart Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-category-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/data-chart/type-category-waterfall-series"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series" alt="$PlatformShort$ Waterfall Chart Example">
+</code-view>
+
 
 <div class="divider--half"></div>
 

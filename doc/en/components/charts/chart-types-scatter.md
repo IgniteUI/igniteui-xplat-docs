@@ -14,10 +14,11 @@ mentionedTypes: ["XamDataChart"]
 
 ## $PlatformShort$ Scatter Marker Chart
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter Bubble Chart

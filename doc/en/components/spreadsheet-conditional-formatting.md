@@ -10,9 +10,11 @@ The $PlatformShort$ Spreadsheet component allows you to conditionally format the
 
 ## $PlatformShort$ Spreadsheet Conditional Formatting Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet Conditional Formatting Example"></iframe>
-</div>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting" alt="$PlatformShort$ Spreadsheet Conditional Formatting Example">
+</code-view>
 <sample-button src="excel/spreadsheet/conditional-formatting"></sample-button>
 
 <div class="divider--half"></div>

@@ -10,15 +10,12 @@ This topic explains various types of range series in the $PlatformShort$ data ch
 
 ## $PlatformShort$ Range Series Example
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-range-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Range Series Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-range-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/data-chart/type-range-series"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series" alt="$PlatformShort$ Range Series Example">
+</code-view>
+
 
 <div class="divider--half"></div>
 

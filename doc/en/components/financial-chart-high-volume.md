@@ -9,15 +9,12 @@ mentionedTypes: ['XamFinancialChart']
 The $PlatformShort$ financial chart component is capable of handling high volumes of data. The following demo binds 20 years of data, with 1 hour intervals and displays the stock prices using line chart type.
 
 ## $PlatformShort$ Binding High Volume Data Example
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-high-volume-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding High Volume Data Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="financial-chart-high-volume-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/financial-chart/high-volume"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume" alt="$PlatformShort$ Binding High Volume Data Example">
+</code-view>
+
 <div class="divider--half"></div>
 
 There are several chart features and $PlatformShort$ specific features that affect performance of the chart and they should be considered when optimizing performance in your application.

@@ -11,9 +11,11 @@ The $ProductName$ Data Table / Data Grid supports a Template Column which provid
 
 ## $PlatformShort$ Column Sparkline Example
 
-<div class="sample-container loading" style="height: 530px">
-    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Sparkline Example"></iframe>
-</div>
+
+<code-view style="height: 530px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid" alt="$PlatformShort$ Column Sparkline Example">
+</code-view>
 <sample-button src="charts/sparkline/grid"></sample-button>
 
 <div class="divider--half"></div>

@@ -11,7 +11,9 @@ The $ProductName$ Data Table / Data Grid supports [template columns](data-grid-c
 
 ## $PlatformShort$ Binding Periodic Table Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-type-periodic-table-iframe" src='{environment:demosBaseUrl}/grids/data-grid-type-periodic-table' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Binding Periodic Table Example"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-periodic-table" alt="$PlatformShort$ Binding Periodic Table Example">
+</code-view>
 <sample-button src="grids/data-grid/type-periodic-table"></sample-button>

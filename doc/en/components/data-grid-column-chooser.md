@@ -11,9 +11,11 @@ The $ProductName$ Data Grid supports the ability show and hide columns with the 
 
 ## $PlatformShort$ Grid Column Chooser Overview Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Chooser Overview Example"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar" alt="$PlatformShort$ Grid Column Chooser Overview Example">
+</code-view>
 <sample-button src="grids/data-grid/column-chooser-toolbar"></sample-button>
 
 
@@ -157,9 +159,11 @@ Let's say we want to manually display the `ColumnChooser` UI without the toolbar
 
 ## Demo
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker" >
+</code-view>
 <sample-button src="grids/data-grid/column-chooser-picker"></sample-button>
 
 <div class="divider--half"></div>

@@ -6,44 +6,49 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
 # $PlatformShort$ Area Chart
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Area Chart with Single Series 
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Advanced Area Chart
 
 If you need an area chart with more features such as composite other series, you can use DataChart component.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Step Area Chart
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Range Area Chart

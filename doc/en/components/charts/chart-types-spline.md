@@ -6,36 +6,40 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
 # $PlatformShort$ Spline Chart
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Spline Chart with Single Series
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Spline Chart with Multiple Series
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Advanced Spline Chart
 
 If you need a spline chart with more features such as composite other series, you can use DataChart component.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked Spline Chart

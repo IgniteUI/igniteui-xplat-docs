@@ -10,15 +10,12 @@ The $PlatformShort$ category chart component provides default tooltips for each 
 
 ## $PlatformShort$ Tooltip Templates Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="category-chart-tooltip-template-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Tooltip Templates Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="category-chart-tooltip-template-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/category-chart/tooltip-template"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template" alt="$PlatformShort$ Tooltip Templates Example">
+</code-view>
+
 
 <div class="divider--half"></div>
 

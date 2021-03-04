@@ -13,9 +13,11 @@ To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` 
 
 ## $PlatformShort$ Grid Column Options Overview Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Options Overview Example"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options" alt="$PlatformShort$ Grid Column Options Overview Example">
+</code-view>
 <sample-button src="grids/data-grid/column-options"></sample-button>
 
 <div class="divider--half"></div>

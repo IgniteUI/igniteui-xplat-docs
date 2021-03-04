@@ -10,9 +10,11 @@ The $PlatformShort$ Spreadsheet component allows the user to configure many diff
 
 ## $PlatformShort$ Configuring Spreadsheet Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Configuring Spreadsheet Example"></iframe>
-</div>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options" alt="$PlatformShort$ Configuring Spreadsheet Example">
+</code-view>
 <sample-button src="excel/spreadsheet/config-options"></sample-button>
 
 <div class="divider--half"></div>

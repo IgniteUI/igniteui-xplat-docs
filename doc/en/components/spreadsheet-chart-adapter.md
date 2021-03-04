@@ -10,9 +10,11 @@ The $PlatformShort$ Spreadsheet component allows displaying charts in your `Spre
 
 ## $PlatformShort$ Spreadsheet Chart Adapter Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-adapter-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet Chart Adapter Example"></iframe>
-</div>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart" alt="$PlatformShort$ Spreadsheet Chart Adapter Example">
+</code-view>
 <sample-button src="excel/spreadsheet/adapter-chart"></sample-button>
 
 <div class="divider--half"></div>

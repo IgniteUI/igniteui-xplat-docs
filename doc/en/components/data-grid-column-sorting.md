@@ -10,9 +10,11 @@ The $ProductName$ Data Table / Data Grid supports ascending and descending colum
 
 ## $PlatformShort$ Grid Sorting Overview Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-sorting-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-sorting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Sorting Overview Example"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting" alt="$PlatformShort$ Grid Sorting Overview Example">
+</code-view>
 <sample-button src="grids/data-grid/column-sorting"></sample-button>
 
 <div class="divider--half"></div>

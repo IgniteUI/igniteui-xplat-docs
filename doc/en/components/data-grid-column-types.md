@@ -13,9 +13,11 @@ Each column binds to data by setting the `Field` property to the name of the cor
 
 ## $PlatformShort$ Column Types Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-types-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Types Example"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types" alt="$PlatformShort$ Column Types Example">
+</code-view>
 <sample-button src="grids/data-grid/column-types"></sample-button>
 
 <div class="divider--half"></div>

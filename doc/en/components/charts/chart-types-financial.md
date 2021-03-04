@@ -8,10 +8,11 @@ mentionedTypes: ["XamFinancialChart"]
 
 ## $PlatformShort$ Bar Chart with Multiple Series
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Line Chart With Legend"></iframe>
-</div>
 
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart" alt="$PlatformShort$ Line Chart With Legend">
+</code-view>
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Financial Chart Example

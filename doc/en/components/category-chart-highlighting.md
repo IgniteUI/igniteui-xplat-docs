@@ -9,15 +9,12 @@ mentionedTypes: ['CategoryChart']
 This topic provides conceptual information about the highlighting features of the $ProductName$ category chart component.
 
 ## $PlatformShort$ Highlighting Example
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="category-chart-highlighting-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Highlighting Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="category-chart-highlighting-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/category-chart/highlighting"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-highlighting" alt="$PlatformShort$ Highlighting Example">
+</code-view>
+
 <div class="divider--half"></div>
 
 

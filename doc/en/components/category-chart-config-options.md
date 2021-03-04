@@ -9,15 +9,12 @@ mentionedTypes: ['CategoryChart','CategoryTransitionInMode']
 There are many areas of the $ProductName$ category chart component that can be customized, such as the markers, chart titles and subtitles, and the chart types.
 
 ## $PlatformShort$ Configuration Options Example
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="category-chart-marker-options-iframe" src='{environment:dvDemosBaseUrl}/charts/category-chart-marker-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Configuration Options Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="category-chart-marker-options-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/category-chart/marker-options"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" alt="$PlatformShort$ Configuration Options Example">
+</code-view>
+
 
 ## Configuring Chart Visuals
 

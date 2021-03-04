@@ -12,15 +12,12 @@ The `ScatterSplineSeries` draws attention to uneven intervals or clusters of dat
 
 ## $PlatformShort$ Scatter Spline Chart Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-type-scatter-spline-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Spline Chart Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-scatter-spline-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/data-chart/type-scatter-spline-series"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series" alt="$PlatformShort$ Scatter Spline Chart Example">
+</code-view>
+
 
 <div class="divider--half"></div>
 
