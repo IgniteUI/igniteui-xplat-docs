@@ -10,15 +10,12 @@ _language: ja
 $ProductName$ カテゴリ チャート コンポネントは、以下のサンプルのように数百万に及ぶデータ ポイントを含む大量のデータを処理し、数ミリ秒ごとに更新できます。
 
 ## $PlatformShort$ リアルタイム データの例
-<div class="sample-container loading" style="height: 500px;">
-    <iframe id="category-chart-high-frequency-iframe" align="center" src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' height="100%" width="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ リアルタイム データの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-high-frequency-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/high-frequency"></sample-button>
 
-</div>
+<code-view style="height: 500px;" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency" alt="$PlatformShort$ リアルタイム データの例">
+</code-view>
+
 
 <div class="divider--half"></div>
 

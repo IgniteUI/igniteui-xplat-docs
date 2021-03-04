@@ -52,15 +52,12 @@ Angular 円チャートは、データを解析するためのビューアー �
 
 この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には String と Numeric データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-data-sample-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Overview Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/overview"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" alt="$PlatformShort$ Pie Chart Overview Example">
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -200,15 +197,12 @@ var data = [
 
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-legend-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-legend-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/legend"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend" >
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -265,15 +259,12 @@ var data = [
 </igc-pie-chart>
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-others-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-others' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-others-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/others"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others" >
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -323,15 +314,12 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 }
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-explosion-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-explosion' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-explosion-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/explosion"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion" >
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -423,15 +411,12 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     this.label.innerText = "Selected Slices: " + selectedSlice;
     }
 ```
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-selection-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-selection' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-selection-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/selection"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection" >
+</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -461,14 +446,11 @@ public tick(): void {
 }
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-animation-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-animation' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-animation-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/pie-chart/animation"></sample-button>
 
-</div>
+<code-view style="height: 350px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation" >
+</code-view>
+
 
 <div class="divider--half"></div>

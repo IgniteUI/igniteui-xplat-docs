@@ -10,15 +10,12 @@ _language: ja
 $PlatformShort$ Financial Chart  コンポーネントは大量のデータを処理できます。以下のデモは 20 年間分のデータをバインドし、折れ線チャートで 1 時間間隔の在庫価格を示します。
 
 ## $PlatformShort$ 大規模データのバインドの例
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-high-volume-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 大規模データのバインドの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="financial-chart-high-volume-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/financial-chart/high-volume"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume" alt="$PlatformShort$ 大規模データのバインドの例">
+</code-view>
+
 <div class="divider--half"></div>
 
 チャートのパフォーマンスに影響を及ぼすチャート機能および $PlatformShort$ 固有の機能があり、アプリケーションのパフォーマンスを最適化する際に検討する必要があります。

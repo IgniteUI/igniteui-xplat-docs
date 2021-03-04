@@ -12,9 +12,11 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 
 ## $PlatformShort$ 行のグループ化の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-grouping-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-grouping' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 行のグループ化の例"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping" alt="$PlatformShort$ 行のグループ化の例">
+</code-view>
 <sample-button src="grids/data-grid/row-grouping"></sample-button>
 
 <div class="divider--half"></div>

@@ -11,15 +11,12 @@ $PlatformShort$ Financial Chart コンポーネントでは、インジケータ
 
 ## $PlatformShort$ カスタム インジケーターの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-custom-indicators-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ カスタム インジケーターの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="financial-chart-custom-indicators-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/financial-chart/custom-indicators"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators" alt="$PlatformShort$ カスタム インジケーターの例">
+</code-view>
+
 
 <div class="divider--half"></div>
 

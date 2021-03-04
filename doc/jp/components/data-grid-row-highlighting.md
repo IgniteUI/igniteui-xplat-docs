@@ -11,9 +11,11 @@ $ProductName$ Data Table / Data Grid は、行の強調表示の構成をサポ�
 
 ## $PlatformShort$ Grid 強調表示の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 強調表示の例"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-highlighting" alt="$PlatformShort$ Grid 強調表示の例">
+</code-view>
 <sample-button src="grids/data-grid/row-highlighting"></sample-button>
 
 <div class="divider--half"></div>

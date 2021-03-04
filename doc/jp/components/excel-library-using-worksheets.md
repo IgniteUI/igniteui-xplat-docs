@@ -11,9 +11,11 @@ $PlatformShort$ Excel Engine の `Worksheet` にデータが保存されます�
 
 ## $PlatformShort$ ワークシートの使用の例
 
-<div class="sample-container loading" style="height: 200px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ワークシートの使用の例"></iframe>
-</div>
+
+<code-view style="height: 200px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets" alt="$PlatformShort$ ワークシートの使用の例">
+</code-view>
 <sample-button src="excel/excel-library/operations-on-worksheets"></sample-button>
 
 

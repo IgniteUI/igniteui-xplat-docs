@@ -10,15 +10,12 @@ _language: ja
 $ProductName$ 極座標エリア チャートは、極座標チャートのグループに属し、頂点または角がデータポイントの極座標 (角度/半径) 座標にある塗りつぶされた多角形の形状を持っています。`PolarAreaSeries` は `ScatterSeries` と同じデータ プロットの概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。他のシリーズ タイプと同じように、複数の `PolarAreaSeries` は同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。
 ## $PlatformShort$ 極座標エリア チャートの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-type-polar-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 極座標エリア チャートの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-polar-area-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/type-polar-area-series"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series" alt="$PlatformShort$ 極座標エリア チャートの例">
+</code-view>
+
 
 <div class="divider--half"></div>
 

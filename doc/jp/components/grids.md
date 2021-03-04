@@ -206,10 +206,11 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 
 <div class="divider--half"></div>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid の例" alt="$PlatformShort$ Grid 例"></iframe>
-</div>
 
+<code-view style="height: 435px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview" alt="$PlatformShort$ Grid 例">
+</code-view>
 このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
 
 ## $PlatformShort$ Data Grid の利点
@@ -250,11 +251,11 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 
 <span class="h3">サンプル</span>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="icon-sample-1-iframe" seamless width="100%" height="100%" frameborder="0" src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table" onload="onSampleIframeContentLoaded(this);">
-    </iframe>
-</div>
 
+<code-view style="height: 435px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table" >
+</code-view>
 <div class="divider--half"></div>
 
 ### データの仮想化とパフォーマンス
@@ -302,7 +303,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="$PlatformShort$ Data Grid のセル選択機能のアニメーション" src="../images/marketing/grid-cell-row-selection.gif" alt="$PlatformShort$ Data Grid のセル選択機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データグリッドには、SingleCell、SingleRow、MultipleCell、MultipleRow、RangeCell などのモードを含む、セルおよび行レベルごとのマウスおよび[タッチ操作選択](data-grid-cell-selection.md)のすべてのオプションが含まれています。</p>
     </div>
 </div>
@@ -314,7 +315,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="$PlatformShort$ Data Grid のセル選択機能のアニメーション" src="../images/marketing/grid-cell-row-selection.gif" alt="$PlatformShort$ Data Grid のセル選択機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドには、セルと行の両方に対して[マウスおよびタッチ操作選択](data-grid-cell-selection.md)を構成する機能があります。単一または複数のセルと行を選択でき、範囲選択を使用する機能も利用できます。</p>
     </div>
 </div>
@@ -326,7 +327,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="$PlatformShort$ Data Grid のセル選択機能のアニメーション" src="../images/marketing/grid-cell-row-selection.gif" alt="$PlatformShort$ Data Grid のセル選択機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid セルおよび行選択<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッド コンポーネントには、ユーザーによるマウスとタッチスクリーン操作の両方を使用して[行とセルを選択する](data-grid-cell-selection.md)オプションが含まれています。セルと行の選択で使用できるモードには、MultipleCell、MultipleRow、SingleCell、SingleRow、および RangeCell があります。</p>
     </div>
 </div>
@@ -343,7 +344,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
         src="../images/marketing/grid-filtering.jpg" alt="$PlatformShort$ Data Grid のフィルタリング機能のアイコン">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドには、フィルタリングされる列のデータ型に基づいた[列フィルタリング](data-grid-column-filtering.md)が含まれています。たとえば、列が DateTime フィールドの場合、Last Month、This Quarter、Next Week などのフィルターを使用できます。</p>
     </div>
 </div>
@@ -358,7 +359,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
         src="../images/marketing/grid-filtering.jpg" alt="$PlatformShort$ Data Grid のフィルタリング機能のアイコン">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>ユーザーは、$PlatformShort$ データ グリッドのデータ型に基づいて[列をフィルタリングする](data-grid-column-filtering.md)ことができます。たとえば、列が数値型プロパティである場合、Greater Than、Less Than、Equal To などのフィルタリング オプションを使用できます。</p>
     </div>
 </div>
@@ -373,7 +374,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
         src="../images/marketing/grid-filtering.jpg" alt="$PlatformShort$ Data Grid のフィルタリング機能のアイコン">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッドを使用すると、ユーザーは、フィルターが適用されるデータ型に基づいて[列をフィルタリング](data-grid-column-filtering.md)できます。たとえば、列がデータ アイテムの文字列型プロパティである場合、Contains、Starts With、EndsWith などのフィルタリング オプションを使用できます。</p>
     </div>
 </div>
@@ -388,7 +389,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
     src="../images/marketing/grid-column-moving.gif" alt="$PlatformShort$ Data Grid の列移動機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>[列の順序](data-grid-column-moving.md)の再配置は、$PlatformShort$ データ グリッドでクリックアンドドラッグするのと同じくらい簡単です。完全なアニメーション エンジンも含まれているため、このインタラクションの UX を制御できます。</p>
     </div>
 </div>
@@ -401,7 +402,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
     src="../images/marketing/grid-column-moving.gif" alt="$PlatformShort$ Data Grid の列移動機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>ユーザーは、列ヘッダーをクリックしてドラッグするだけで、$PlatformShort$ データ グリッドに表示される列の[順序を変更](data-grid-column-moving.md)できます。この列の動作に組み込みのアニメーションを使用するオプションも含まれています。</p>
     </div>
 </div>
@@ -414,7 +415,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列移動機能のアニメーション"
     src="../images/marketing/grid-column-moving.gif" alt="$PlatformShort$ Data Grid の列移動機能のアニメーション"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列移動<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドには、列をクリックおよびドラッグして[列を並べ替えて再配置する](data-grid-column-moving.md)機能が組み込まれています。列のドラッグによる移動をアニメーション化する機能を使用して、アプリケーションのユーザー エクスペリエンスをより細かく制御できます。</p>
     </div>
 </div>
@@ -430,7 +431,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列ピン固定機能のアイコン"
      src="../images/marketing/grid-column-pinning.jpg" alt="$PlatformShort$ Data Grid の列ピン固定機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データグリッドの左右の[列ピン固定](data-grid-column-pinning.md)を使用すると、ユーザーは 1 つの列または複数の任意の順序でロックできるため、水平方向にスクロールしながら列の位置を維持できます。</p>
     </div>
 </div>
@@ -444,7 +445,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列ピン固定機能のアイコン"
      src="../images/marketing/grid-column-pinning.jpg" alt="$PlatformShort$ Data Grid の列ピン固定機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データグリッドの左右の[列ピン固定](data-grid-column-pinning.md)を使用すると、ユーザーは 1 つの列または複数の列を任意の順序でロックできるため、水平方向にスクロールしながら列の位置を維持できます。</p>
     </div>
 </div>
@@ -458,7 +459,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列ピン固定機能のアイコン"
      src="../images/marketing/grid-column-pinning.jpg" alt="$PlatformShort$ Data Grid の列ピン固定機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ピン固定<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッド コンポーネントには左側または右側に[列を固定する](data-grid-column-pinning.md)機能があります。列が固定またはピン固定されると、ユーザーがグリッドを水平方向にスクロールしている間、列はその位置を維持します。</p>
     </div>
 </div>
@@ -473,7 +474,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のサイズ変更機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-resizing.gif" alt="$PlatformShort$ Data Grid コンポーネントの列のサイズ変更機能が有効になっているデータ グリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データグリッドは、[列のサイズ変更](data-grid-column-resizing.md)機能をサポートし、テーブル内の他の列に関して、データ グリッド列の表示方法を柔軟に変更できるようにします。</p>
     </div>
 </div>
@@ -486,7 +487,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のサイズ変更機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-resizing.gif" alt="$PlatformShort$ Data Grid コンポーネントの列のサイズ変更機能が有効になっているデータ グリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッドは、列の境界線をクリックおよびドラッグして[列のサイズを変更する]機能をユーザーに提供します。オプションで、列のサイズ変更をアニメーション化するアニメーション エンジンもあります。</p>
     </div>
 </div>
@@ -499,7 +500,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のサイズ変更機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-resizing.gif" alt="$PlatformShort$ Data Grid コンポーネントの列のサイズ変更機能が有効になっているデータ グリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列サイズ変更<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データグリッドを使用すると、ユーザーはグリッドにある[列のサイズを変更](data-grid-column-resizing.md)できます。データ テーブルは、サイズ変更操作がすぐに実行されるように、またはドラッグが解放されるまで延期されるように、ユーザーがサイズ変更モードを構成できる機能を備えています。</p>
     </div>
 </div>
@@ -514,7 +515,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のソート機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-sorting.gif" alt="$PlatformShort$ Data Grid コンポーネントの列のソート機能が有効になっているデータ グリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、単一、複数、またはトリステート列のソート構成で、昇順および降順の[列ソート](data-grid-column-sorting.md)をサポートします。ソートは、ヘッダーをクリックするか、列オプションのドロップダウンを使用してトリガーされます。</p>
     </div>
 </div>
@@ -527,7 +528,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のソート機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-sorting.gif" alt="$PlatformShort$ Data Grid コンポーネントの列のソート機能が有効になっているデータ グリッド"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>[列データのソート](data-grid-column-sorting.md)を昇順または降順で実行する機能は、$PlatformShort$ データ グリッドで利用できます。ユーザーは、単一、複数、またはトリステートのソート構成でソートすることができ、ヘッダーをクリックするとソートがデフォルトでトリガーされます。</p>
     </div>
 </div>
@@ -540,7 +541,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="列のソート機能が有効になっているデータ グリッド"
     src="../images/marketing/grid-column-sorting.gif" alt="Blazor のソート可能なグリッドの例"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列ソート<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>プロジェクト用の $PlatformShort$ ソート可能グリッドをお探しですか? $ProductName$ データ グリッド コンポーネントには、[列データをソートする](data-grid-column-sorting.md)機能が組み込まれており、単一、複数、またはトリステートのソートの構成を利用できます。デフォルトでは、グリッド内の特定の列をソートするには、列ヘッダーをクリックしますが、列オプション ダイアログを使用してソートすることもできます。</p>
     </div>
 </div>
@@ -555,7 +556,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列集計機能のアイコン"
     src="../images/marketing/grid-column-summaries.jpg" alt="$PlatformShort$ Data Grid の列集計機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、データ グリッドのフッター領域またはグループ ヘッダー[列集計](data-grid-column-summaries.md)をサポートします。これは、Count、Sum、Min、Max、Avg などの値を表示するのに最適です。</p>
     </div>
 </div>
@@ -568,7 +569,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列集計機能のアイコン"
     src="../images/marketing/grid-column-summaries.jpg" alt="$PlatformShort$ Data Grid の列集計機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>[列集計](data-grid-column-summaries.md) は、$PlatformShort$ データ グリッドのフッター領域に表示でき、グループ ヘッダーにも表示するように構成可能なオプションもあります。これは、他の集計オプションの中でも、数値データの Sum、Minimum、および Maximum を表示するのに役立ちます。</p>
     </div>
 </div>
@@ -581,7 +582,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="列集計機能のアイコン"
     src="../images/marketing/grid-column-summaries.jpg" alt="$PlatformShort$ Data Grid の列集計機能のアイコン"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列集計<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>ユーザーは、$PlatformShort$ データ グリッド コンポーネントで[列集計](data-grid-column-summaries.md)を適用することができます。これらの集計には、数値データの Sum、Minimum、Maximum などを表示する機能があり、グリッドのフッターまたはグループ ヘッダーに表示するように構成できます。</p>
     </div>
 </div>
@@ -597,7 +598,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-types.jpg" alt="$PlatformShort$ Data Grid の列タイプ機能のアイコン表現">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、さまざまな列タイプに加えて、テンプレート[列タイプ](data-grid-column-types.md)とスパークライン テンプレート タイプをサポートしており、グリッド内のデータの表示方法を完全に柔軟に設定できます。</p>
     </div>
 </div>
@@ -612,7 +613,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-types.jpg" alt="$PlatformShort$ Data Grid の列タイプ機能のアイコン表現">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドには、データ ソースで使用される多様なデータ型に固有のさまざまな[列タイプ](data-grid-column-types.md)があります。さらに、テンプレート列を使用すると、その列のセル内にほぼすべてのものを配置することが可能で、ユーザーは UI を完全に柔軟に変更できます。</p>
     </div>
 </div>
@@ -627,7 +628,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-types.jpg" alt="$PlatformShort$ Data Grid の列タイプ機能のアイコン表現">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列タイプ<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッドを使用すると、ユーザーはさまざまなデータ型固有の[列タイプ](data-grid-column-types.md)を利用して、データを最も効果的に表示できます。データがもう少し複雑な場合は、追加のテンプレート列があり、グリッドのデータ ソースの特定の部分を表示するための独自のセル コンテンツを定義できます。</p>
     </div>
 </div>
@@ -645,7 +646,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-animations.gif" alt="$PlatformShort$ Data Grid の列アニメーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、列の非表示や列の移動などのイベント時に[列のアニメーション](data-grid-column-animation.md)をサポートします。$PlatformShort$ データ グリッドで列アニメーションが設定されている場合、対応するアニメーションはその列のすべてのセルに対して発生します。</p>
     </div>
 </div>
@@ -660,7 +661,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-animations.gif" alt="$PlatformShort$ Data Grid の列アニメーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッド コンポーネントには、ユーザーが実行できるさまざまなアクションに応じて[列ヘッダーとセルをアニメーション化する](data-grid-column-animation.md)機能が組み込まれています。たとえば、列の追加、非表示、移動アクションなどに使用できるさまざまなアニメーションがあります。</p>
     </div>
 </div>
@@ -675,7 +676,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-animations.gif" alt="$PlatformShort$ Data Grid の列アニメーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列アニメーション<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、列の非表示や列の移動などのイベント時に[列アニメーション](data-grid-column-animation.md)をサポートします。$PlatformShort$ データグリッドで列アニメーションが設定されている場合、対応するアニメーションはその列のすべてのセルに対して発生します。</p>
     </div>
 </div>
@@ -692,7 +693,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-options-dialog.jpg" alt="$PlatformShort$ Data Grid の列オプション ダイアログ機能のアイコン">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、各列ヘッダに表示される UI による列のグループ化、非表示、移動、固定、フィルター、および並べ替えの機能をサポートします。[列オプション](data-grid-column-options.md)は、列ホバーの Kebab メニューを介して、すべての列でデフォルトでオンになっています。</p>
     </div>
 </div>
@@ -707,7 +708,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-options-dialog.jpg" alt="$PlatformShort$ Data Grid の列オプション ダイアログ機能のアイコン">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>Kebab メニューは、$ProductName$ データ グリッドの列ヘッダーで使用できます。クリックすると、その列の[オプション ダイアログ](data-grid-column-options.md)が開きます。このダイアログを使用すると、ユーザーは、そのダイアログの対象列をグループ化、ソート、非表示、移動、固定、およびフィルタリングできます。</p>
     </div>
 </div>
@@ -722,7 +723,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-column-options-dialog.jpg" alt="$PlatformShort$ Data Grid の列オプション ダイアログ機能のアイコン">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列オプション ダイアログ<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドの各列は、同じ場所 ([列オプション ダイアログ](data-grid-column-options.md)) からソート、グループ化、非表示、移動、および固定できます。グリッドの各列ヘッダーには、マウスをホバーすると Kebab メニューが表示され、クリックするとこのダイアログが表示されます。</p>
     </div>
 </div>
@@ -738,7 +739,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Outlook スタイルのグループ化機能のアニメーション" src="../images/marketing/grid-row-column-grouping.gif" alt="$PlatformShort$ Data Grid の Outlook スタイルのグループ化機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドを使用すると、行を「固定ヘッダー」[行グループにまとめる](data-grid-row-grouping.md)ことができます。Microsoft Outlook の Group By 機能と同様に、ユーザーは独自の基準に基づいてデータを視覚的にグループ化する簡単な方法があります。</p>
     </div>
 </div>
@@ -752,7 +753,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Outlook スタイルのグループ化機能のアニメーション" src="../images/marketing/grid-row-column-grouping.gif" alt="$PlatformShort$ Data Grid の Outlook スタイルのグループ化機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ データ グリッドを使用すると、行を「固定ヘッダー」[行グループにまとめる](data-grid-row-grouping.md)ことができます。 ユーザーは、Microsoft Outlook スタイルの方法で、類似したデータ エントリを持つ列でグループ化することにより、類似したデータ項目を視覚化できます。</p>
     </div>
 </div>
@@ -766,7 +767,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Outlook スタイルのグループ化機能のアニメーション" src="../images/marketing/grid-row-column-grouping.gif" alt="$PlatformShort$ Data Grid の Outlook スタイルのグループ化機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッド コンポーネントには、Microsoft Outlook でグループが視覚化される方法に影響を受けた[列をグループ化する](data-grid-row-grouping.md)機能が含まれています。グリッド内の複数の列をグループ化して、複数のグループ ヘッダーで表示するか、すべてを 1 つにまとめることもできます。</p>
     </div>
 </div>
@@ -783,7 +784,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-paging.jpg" alt="$PlatformShort$ Data Grid のデータ グリッド ページング機能のアイコン">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Paging<a class="anchorjs-link" href="data-grid-row-paging.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid Paging<a class="anchorjs-link" href="data-grid-row-paging.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッド [ページング コンポーネント](data-grid-row-paging.md)は、簡単なナビゲーション UI を使用して、データの配列を取り込み、そのデータの一部をページとして出力するように設計されています。</p>
     </div>
 </div>
@@ -801,7 +802,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-row-pinning.gif" alt="$PlatformShort$ Data Grid の行ピン固定機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドを使用すると、データ グリッドの上部に[行をピン固定](data-grid-row-pinning.md)できます。行をピン固定するとその行がグリッドの最上部に複製され、薄い灰色の背景で固定されたままになり、実際の (または元の) 行は低い不透明度で描画され、ユーザーにこれは特別な行であることをわかりやすくします。</p>
     </div>
 </div>
@@ -816,7 +817,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-row-pinning.gif" alt="$PlatformShort$ Data Grid の行ピン固定機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>ユーザーは、$PlatformShort$ Data Grid の上部に[行をピン固定](data-grid-row-pinning.md)できます。行がピン固定されると、グリッドの一番上にコピーされ、ユーザーが垂直にスクロールする間、カスタマイズ可能な背景でその位置にロックされたままになります。コピーされた元の行は元の位置に表示されますが、不透明度は低くなります。</p>
     </div>
 </div>
@@ -831,7 +832,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-row-pinning.gif" alt="$PlatformShort$ Data Grid の行ピン固定機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid 行ピン固定<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$ProductName$ Data Grid コンポーネントには、[行をピン固定](data-grid-row-pinning.md) をグリッドの最上部に組み込み、ヘッダーの下に表示する組み込みの機能があります。これらの行は、ユーザーがグリッドを垂直方向にスクロールするときに、固定解除されるまで垂直にあります。</p>
     </div>
 </div>
@@ -848,7 +849,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-keyboard-navigation.gif" alt="$PlatformShort$ Data Grid のキーボード ナビゲーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ データ グリッドは、Excel のような広範な[キーボード ナビゲーション](data-grid-cell-activation.md)をサポートします。上、下、右、左、タブ、および Enter キーを使用して、$PlatformShort$ データ グリッドで Excel のようなキーボード ナビゲーションを有効にして、アクセシビリティ コンプライアンスを確保し、使いやすさを向上させます。マウスまたはキーボードを使用して単一または複数の行の選択を切り替えて、行全体を選択または選択解除できます。</p>
     </div>
 </div>
@@ -863,7 +864,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-keyboard-navigation.gif" alt="$PlatformShort$ Data Grid のキーボード ナビゲーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>ユーザーは左矢印、右矢印、上矢印、下矢印、Enter、および Tab キーを使用して、$PlatformShort$ データ グリッドで Excel のような[キーボード ナビゲーション](data-grid-cell-activation.md)を実行できます。これにより、グリッドのエンドユーザー操作が向上し、グリッド全体でよりアクセスしやすい編集が可能になります。</p>
     </div>
 </div>
@@ -878,7 +879,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     src="../images/marketing/grid-keyboard-navigation.gif" alt="$PlatformShort$ Data Grid のキーボード ナビゲーション機能のアニメーション">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$PlatformShort$ Grid キーボード ナビゲーション<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>$PlatformShort$ Data Grid コンポーネントを使用すると、Microsoft Excel と同じように動作する[キーボード ナビゲーション](data-grid-cell-activation.md)を有効にできます。ユーザーのキーボードの矢印、Tab および Enter キーを使用すると、ナビゲーションを考慮してアクセシビリティと使いやすさが向上します。</p>
     </div>
 </div>

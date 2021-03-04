@@ -21,9 +21,11 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 
 ## $PlatformShort$ ドック マネージャーの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-overview-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドック マネージャーの例"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview" alt="$PlatformShort$ ドック マネージャーの例">
+</code-view>
 <sample-button src="layouts/dock-manager/overview"></sample-button>
 <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示

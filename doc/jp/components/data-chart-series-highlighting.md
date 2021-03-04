@@ -14,15 +14,12 @@ $PlatformShort$ データ チャート コンポネントを使用すると、�
 
 ## $PlatformShort$ ハイライトの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-series-highlighting-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ハイライトの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-series-highlighting-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/series-highlighting"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting" alt="$PlatformShort$ ハイライトの例">
+</code-view>
+
 
 <div class="divider--half"></div>
 

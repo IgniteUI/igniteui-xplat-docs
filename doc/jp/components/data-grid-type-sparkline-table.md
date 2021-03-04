@@ -12,9 +12,11 @@ $ProductName$ Data Table / Data Grid は、$ProductName$ スパークライン �
 
 ## $PlatformShort$ 列スパークラインの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="charts/sparkline-grid-iframe" src='{environment:demosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 列スパークラインの例"></iframe>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid" alt="$PlatformShort$ 列スパークラインの例">
+</code-view>
 <sample-button src="charts/sparkline/grid"></sample-button>
 
 <div class="divider--half"></div>

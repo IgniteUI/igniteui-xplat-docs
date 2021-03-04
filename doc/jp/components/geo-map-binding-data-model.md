@@ -11,13 +11,12 @@ $ProductName$ マップ コンポーネントは、シェイプ ファイルか�
 
 ## $PlatformShort$ 地理的データ モデルのバインディングの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-model-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 地理的データ モデルのバインディングの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-model-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model" alt="$PlatformShort$ 地理的データ モデルのバインディングの例">
+</code-view>
+
 <sample-button src="maps/geo-map/binding-data-model"></sample-button>
 
 <div class="divider--half"></div>

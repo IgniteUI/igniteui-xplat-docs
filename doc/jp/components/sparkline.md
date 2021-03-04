@@ -14,13 +14,12 @@ $ProductName$ スパークライン コンポーネントは、軽量なチャ�
 
 ## $PlatformShort$ スパークラインの例
 
-<div class="sample-container loading" style="height: 450px">
-    <iframe id="sparkline-display-types-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-display-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ スパークラインの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-display-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 450px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" alt="$PlatformShort$ スパークラインの例">
+</code-view>
+
 <sample-button src="charts/sparkline/display-types"></sample-button>
 
 <div class="divider--half"></div>
@@ -131,13 +130,12 @@ $ProductName$ スパークライン コンポーネントは、以下のスパ�
     this.chart1 = document.getElementById("chart1") as IgcSparklineComponent;
     this.chart1.dataSource = this.data1;
 ```
-<div class="sample-container loading" style="height: 450px">
-    <iframe id="sparkline-display-types-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-display-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-display-types-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 450px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" >
+</code-view>
+
 <sample-button src="charts/sparkline/display-types"></sample-button>
 
 
@@ -229,13 +227,12 @@ $ProductName$ スパークライン コンポーネントを使用すると、�
     NegativeMarkerSize="10" />
 ```
 
-<div class="sample-container loading" style="height: 300px">
-    <iframe id="sparkline-markers-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-markers' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-markers-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 300px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers" >
+</code-view>
+
 <sample-button src="charts/sparkline/markers"></sample-button>
 
 <div class="divider--half"></div>
@@ -292,13 +289,12 @@ DisplayNormalRangeInFront プロパティを設定することで、スパーク
     DisplayNormalRangeInFront="true" />
 ```
 
-<div class="sample-container loading" style="height: 300px">
-    <iframe id="sparkline-normal-range-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-normal-range' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-normal-range-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 300px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range" >
+</code-view>
+
 <sample-button src="charts/sparkline/normal-range"></sample-button>
 
 <div class="divider--half"></div>
@@ -364,13 +360,12 @@ $ProductName$ スパークライン コンポーネントは、実際のスパ�
     TrendLineBrush="Red" />
 ```
 
-<div class="sample-container loading" style="height: 300px">
-    <iframe id="sparkline-trendlines-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-trendlines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-trendlines-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 300px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines" >
+</code-view>
+
 <sample-button src="charts/sparkline/trendlines"></sample-button>
 
 
@@ -405,13 +400,12 @@ $ProductName$ スパークライン コンポーネントは、不明な値を�
     UnknownValuePlotting="UnknownValuePlotting.LinearInterpolate"/>
 ```
 
-<div class="sample-container loading" style="height: 300px">
-    <iframe id="sparkline-unknown-values-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-unknown-values-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 300px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values" >
+</code-view>
+
 <sample-button src="charts/sparkline/unknown-values"></sample-button>
 
 <div class="divider--half"></div>
@@ -573,11 +567,10 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 </DataGrid>
 ```
 
-<div class="sample-container loading" style="height: 530px">
-    <iframe id="sparkline-grid-iframe" src='{environment:dvDemosBaseUrl}/charts/sparkline-grid' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="sparkline-grid-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
+
+<code-view style="height: 530px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid" >
+</code-view>
+
 <sample-button src="charts/sparkline/grid"></sample-button>

@@ -10,15 +10,12 @@ _language: ja
 $PlatformShort$ Financial Chart コンポーネントは、以下のように複数のデータ ソースへバインドできます。
 
 ## $PlatformShort$ 複数データ ソースへバインドの例
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-multiple-data-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 複数データ ソースへバインドの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="financial-chart-multiple-data-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/financial-chart/multiple-data"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" alt="$PlatformShort$ 複数データ ソースへバインドの例">
+</code-view>
+
 <div class="divider--half"></div>
 
 ファイナンシャル チャート コンポーネントは、各データ ソースを配列に追加し、複数のデータ ソースを描画することができます。ファイナンシャル チャート コンポーネントは、データ ソースの項目の数が異なる場合、Time モードで XAxis に複数のデータ ソースをプロットできません。コントロールは複数のデータ ソースの項目も整列しません。結果として、データ ソースに対応する項目がない場合、null 項目を挿入してデータ項目を整列する必要があります。

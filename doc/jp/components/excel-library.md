@@ -11,9 +11,11 @@ Infragistics $PlatformShort$ Excel ライブラリは、Workbook、Worksheet、C
 
 ## $PlatformShort$ Excel ライブラリの例
 
-<div class="sample-container loading" style="height: 100px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Excel ライブラリの例"></iframe>
-</div>
+
+<code-view style="height: 100px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview" alt="$PlatformShort$ Excel ライブラリの例">
+</code-view>
 <sample-button src="excel/excel-library/overview"></sample-button>
 
 
