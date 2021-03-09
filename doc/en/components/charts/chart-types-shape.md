@@ -14,13 +14,21 @@ Scatter shape series are often used highlight regions in scientific data or they
 
 The Scatter Polygon Chart belongs to a group of shape charts that take an array of shapes represented by an array or array of arrays of X/Y coordinates. This series renders that array or array of arrays as a collection of polygons in the Cartesian (x, y) coordinate system. These samples can be used to plot diagrams, blueprints, or even the floor plan of buildings.
 
-<!-- data-chart-type-scatter-polygon-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Polygon Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter Polyline Chart
 
 The Scatter Polyline Chart belongs to a group of shape charts that take an array of shapes represented by an array or array of arrays of X/Y coordinates. This series renders that array or array of arrays as a collection of polylines in the Cartesian (x, y) coordinate system. These samples can be used to plot diagrams, blueprints, or even the floor plan of buildings.
 
-<!-- data-chart-type-scatter-polyline-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Polyline Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO list API links used in this topic 
 ## API Members

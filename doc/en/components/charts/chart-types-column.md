@@ -55,7 +55,7 @@ Waterfall Chart belongs to a group of category charts and it is rendered using a
 
 ## $PlatformShort$ Stacked Column Chart
 
-The Stacked Column chart is identical to the Column Chart in al aspects except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+The Stacked Column chart is identical to the Column Chart in all aspects, except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked Column Chart"></iframe>
@@ -65,7 +65,7 @@ The Stacked Column chart is identical to the Column Chart in al aspects except t
 
 ## $PlatformShort$ Stacked 100 Column Chart
 
-The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Column presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+The Stacked 100 Column Chart is identical to the Stacked Column Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Column presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stacked 100 Column Chart"></iframe>
@@ -77,19 +77,23 @@ The Stacked 100 Column Chart is identical to the Stacked Bar Chart in all aspect
 
 The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
 
-In this Range Bar Chart example, weather data variance between high and low temperatures by date is shown.
+In this Range Column Chart example, weather data variance between high and low temperatures by month is shown.
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-range-column-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Range Column Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Radial Column Chart
 
 The Radial Column Chart belongs to a group of radial charts, and is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the Column Chart, but wraps data points around a circle rather than stretching them along a horizontal line.
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-radial-column-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Column Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO list API links used in this topic 
 ## API Members

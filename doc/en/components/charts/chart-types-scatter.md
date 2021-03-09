@@ -22,9 +22,21 @@ In this example, the Scatter Point Chart is comparing the total births and death
 
 The Scatter Line Chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected by a straight line, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Line Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Scatter Spline Chart
 
 The Scatter Spline Chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected by a curved spline, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Spline Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter HD Chart
 
@@ -32,13 +44,25 @@ Use the $PlatformShort% DataChart's High Density Scatter Chart functionality to 
 
 <!-- data-chart-type-scatter-hd-series.md -->
 
+## $PlatformShort$ Scatter Area Chart
+
+The Scatter Area Chart draws a colored surface based on a triangulation of X and Y data with a numeric data value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office.
+
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Area Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Scatter Contour Chart
 
 The Scatter Contour Chart draws colored contour lines based on a triangulation of X and Y data with a numeric data value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office.
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-scatter-contour-series.md
--->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter Contour Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO list API links used in this topic 
 ## API Members

@@ -229,11 +229,11 @@ In this example, the Pie chart is comparing market share between common househol
 
 The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
-<!-- TODO -->
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Pie Chart"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## Others Category
 Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
