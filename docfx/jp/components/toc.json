@@ -85,13 +85,13 @@
   {
     "exclude": ["Angular"],
     "name": "複数列コンボ ボックス",
-    "href": "multi-column-combobox.md",
+    "href": "editors/multi-column-combobox.md",
     "status": ""
   },
   {
     "exclude": ["Angular"],
     "name": "日付選択",
-    "href": "date-picker.md",
+    "href": "editors/date-picker.md",
     "status": "NEW"
   },
   {

@@ -85,13 +85,13 @@
   {
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
-    "href": "multi-column-combobox.md",
+    "href": "editors/multi-column-combobox.md",
     "status": ""
   },
   {
     "exclude": ["Angular"],
     "name": "Date Picker",
-    "href": "date-picker.md",
+    "href": "editors/date-picker.md",
     "status": "NEW"
   },
   {
