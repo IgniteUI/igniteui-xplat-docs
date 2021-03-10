@@ -270,6 +270,8 @@ function buildPlatform(cb) {
             // excluding topics for controls that are not in Angular product, e.g. Data-grid
             sources.push('!doc/**/dock-manager*.md');
             sources.push('!doc/**/data-grid*.md');
+            sources.push('!doc/**/date-picker.md');
+            sources.push('!doc/**/multi-column-combobox.md');
         } else if (platformName == "Blazor") {
             // excluding topics for controls that are not in Blazor product or API is broken for these components/features
             // sources.push('!doc/**/dock-manager*.md');
