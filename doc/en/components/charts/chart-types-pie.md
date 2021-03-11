@@ -20,7 +20,7 @@ Pie Charts are appropriate for small data sets and are easy to read at a glance.
 - Treemap 
 - Waterfall 
 
-The Angular Pie Chart includes interactive features that give the viewer tools to analyze data, like: 
+The $PlatformShort$ Pie Chart includes interactive features that give the viewer tools to analyze data, like: 
 
 - Legends 
 - Slice Explosion 
@@ -29,36 +29,30 @@ The Angular Pie Chart includes interactive features that give the viewer tools t
 
 Best Practices for a Pie Chart: 
 
-- Comparing slices or segments as percentage values in proportion to a total value or whole 
-- Showing how a group of???? categories is broken into smaller segments  
-- Presenting small, non-hierarchical data sets (less than 6 to 8 segments of data) 
-- Ensuring data segments add up to 100% 
-- Arranging the order of data from largest (highest) to smallest (least) 
-- Using standard presentation techniques such as starting in the 12 o'clock position and continuing clockwise 
-- Ensuring the color palette is distinguishable for segments/slices of the parts 
-- Considering data labels in segments vs. legends for ease of reading 
-- Choosing an alternative chart to Pie such as Bar or Ring based on ease of comprehension 
-- Avoiding positioning multiple pie charts next to each other for comparative analysis 
+- Comparing slices or segments as percentage values in proportion to a total value or whole.
+- Showing how a group of categories is broken into smaller segments.
+- Presenting small, non-hierarchical data sets (less than 6 to 8 segments of data).
+- Ensuring data segments add up to 100%.
+- Arranging the order of data from largest (highest) to smallest (least).
+- Using standard presentation techniques such as starting in the 12 o'clock position and continuing clockwise.
+- Ensuring the color palette is distinguishable for segments/slices of the parts.
+- Considering data labels in segments vs. legends for ease of reading.
+- Choosing an alternative chart to Pie such as Bar or Ring based on ease of comprehension.
+- Avoiding positioning multiple pie charts next to each other for comparative analysis.
 
 Do Not Use Pie Chart When: 
 
-- Comparing change over time —use a Bar, Line or Area chart 
-- Requiring precise data comparison —use a Bar, Line or Area chart 
-- You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story 
-- It would be easier for the viewer to perceive the value difference in a Bar chart 
+- Comparing change over time —use a Bar, Line or Area chart.
+- Requiring precise data comparison —use a Bar, Line or Area chart.
+- You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story.
+- It would be easier for the viewer to perceive the value difference in a Bar chart.
 
 ## $PlatformShort$ Pie Chart Example
 
-This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a String and a Numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
+This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-data-sample-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Overview Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/overview"></sample-button>
-
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Overview"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -199,23 +193,11 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-legend-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-legend' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-legend-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/legend"></sample-button>
-
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Legend"></iframe>
 </div>
 
 <div class="divider--half"></div>
-
-## How to Show Percentage in Pie Chart Legend
-
-In this example, the Pie chart is comparing market share between common household utilities.
-
-<!-- TODO -->
 
 ## $PlatformShort$ Pie Chart Styling
 
@@ -276,14 +258,8 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 </igc-pie-chart>
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-others-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-others' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-others-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/others"></sample-button>
-
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-others-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-others' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Others"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -334,14 +310,8 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 }
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-explosion-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-explosion' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-explosion-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/explosion"></sample-button>
-
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Explosion"></iframe>
 </div>
 
 <div class="divider--half"></div>
@@ -434,18 +404,12 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     this.label.innerText = "Selected Slices: " + selectedSlice;
     }
 ```
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-selection-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-selection' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-selection-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/selection"></sample-button>
 
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Selection"></iframe>
 </div>
 
 <div class="divider--half"></div>
-
 
 ## Animation
 
@@ -473,14 +437,8 @@ public tick(): void {
 }
 ```
 
-<div class="sample-container loading" style="height: 350px">
-    <iframe id="pie-chart-animation-iframe" data-src='{environment:dvDemosBaseUrl}/charts/pie-chart-animation' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" class="stackblitz-btn"   data-iframe-id="pie-chart-animation-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/pie-chart/animation"></sample-button>
-
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-animation-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Animation"></iframe>
 </div>
 
 <div class="divider--half"></div>
