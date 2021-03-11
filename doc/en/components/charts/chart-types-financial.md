@@ -6,17 +6,42 @@ mentionedTypes: ["XamFinancialChart"]
 ---
 # $PlatformShort$ Financial Chart
 
-$PlatformShort$  Financial Chart makes it easy to visualize financial and stock data by using a simple and intuitive API. It's purpose is for building high-performance, high-volume financial services, and capital market data applications.
+$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of financial indicators. 
 
-There are several display modes for price and volume and a host of financial indicators. Financial chart analyzes and selects data columns - Date/Time column to use for x-axis and Open, High, Low, Close, Volume columns or the first 5 numeric columns for y-axis. Beyond this, the user can specify the chart type to either Bar, Candle, Column, and Line. With its five main visual elements, a toolbar, a prices view, a volume view, an indicators view, and a navigation view, data has become more perceptible.
+The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
-You can explicitly specify the chart type by setting the chartType property to one of the following options:
+- The body of the candlestick chart shows the open and close trade values (O/C).
+- The wicks of the candlestick chart show the high and low trade prices (H/L).
+- The distance between the top and bottom of the ticker value is the day range of the ticker price.
+- The candlestick chart ticker value is hollow when the asset closed higher than it opened.
+- The candlestick chart ticker value is filled when the asset closed lower than it opened.
+- A black or red candle represents a price with a lower closing price than the prior candle's close.
+- A white or green candle represents a higher closing price than the prior candle's close.
 
-- Bar 
-- Candle
-- Column 
-- Line
-- Auto - Specifies automatic selection of chart type based on Data Adapter which suggest one of above values based names and number of numeric columns in your data. For example, it will suggest Bar for data items with Open, High, Low, Close columns.
+As a Stock Chart is meant to allow the user to perform data analysis functions, it includes interactive elements such as:
+
+- Time-based Filters
+- Prices View 
+- Volume View
+- Indicators View
+- Trend Lines
+- Navigation / Zoombar View
+
+The type of Angular Stock Chart can be set to display one of the following: 
+
+- Candlestick Chart 
+- Bar Chart 
+- Column Chart 
+- Line Chart 
+
+Data Structure:
+
+- The data source must be an array or a list of data items.
+- The data source must contain at least one data item.
+- All data items must contain at least one date-time (or string) column that represents the date of the ticker data.
+- All data items must contain 1 numeric column for Bar, Line, and Column chart.
+- All data items must contain 4 numeric columns for Open, High, Low, Close (OHLC) for a Candlestick chart.
+- All data items must contain 5 numeric columns for Open, High, Low, Close and Volume for a Candlestick chart.
 
 ## $PlatformShort$ Stock Chart with Multiple Series
 
