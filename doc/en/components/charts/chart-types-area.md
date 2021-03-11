@@ -6,7 +6,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
 # $PlatformShort$ Area Chart
 
-$PlatformShort$ Area Chart, or Area Graph, is a type of category area graph that shows a collection of points connected by line segments with the area below the line filled in. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. Area Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. You can include one or more data sets to compare, which would render as multiple areas in the chart.
+$PlatformShort$ Area Chart, or Area Graph, is a type of category area chart that shows a collection of points connected by straight line segments with the area below the line filled in. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. Area Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. You can include one or more data sets to compare, which would render as multiple areas in the chart.
 
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Area Chart with Legend"></iframe>
@@ -74,7 +74,7 @@ Stacked Area Charts are rendered using a collection of points connected by line 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100 Area Series 
+## $PlatformShort$ Stacked 100 Area Chart 
 
 The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Area presents the data in terms of percent of the sum of all values in a data point. Sometimes the series represent part of a whole being changed over time e.g. a country’s energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea. 
 
@@ -84,7 +84,7 @@ The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked Spline Area Series 
+## $PlatformShort$ Stacked Spline Area Chart 
 
 Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as area charts, with the only difference being that the visually shaded areas are stacked on top of each other.
 
@@ -95,7 +95,7 @@ Stacked Spline Area Charts are rendered using a collection of points connected b
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked 100 Spline Area Series 
+## $PlatformShort$ Stacked 100 Spline Area Chart 
 
 The Stacked 100 Spline Area Chart is identical to the Stacked Spline Area Chart in all aspects except for the treatment of the values on the y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Area Chart presents the data in terms of a percent of the sum of all values in a particular data point. Sometimes the chart represents part of a whole being changed over time. For example, a country's energy consumption related to the sources from which it is produced. In such cases, representing all stacked elements equally may be a better idea.
 

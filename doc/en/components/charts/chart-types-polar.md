@@ -26,7 +26,7 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Polar Spline
+## $PlatformShort$ Polar Spline Chart
 
 The Polar Spline Chart belongs to a group of polar charts and is rendered using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. Polar Spline Charts use the same concepts of data plotting as the Scatter Spline Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
