@@ -37,6 +37,8 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 ## $PlatformShort$ Styling Column Chart
 
+The $PlatformShort$ Column Chart has many options for styling and modification of the visual appearance. For example, the sample below demonstrates using a crossing value for your X-Axis, as well as using marker templates to display the value of an item above (or below) its corresponding column:
+
 <div class="sample-container loading" style="height: 400px">
     <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Column Chart Styling"></iframe>
 </div>

@@ -432,8 +432,10 @@ public tick(): void {
 
 ## $PlatformShort$ Pie Chart Styling
 
+Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
+
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-pie-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Styling"></iframe>
+    <iframe id="pie-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Styling"></iframe>
 </div>
 
 <div class="divider--half"></div>
