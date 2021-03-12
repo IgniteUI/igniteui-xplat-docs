@@ -38,9 +38,13 @@ The Polar Spline Chart belongs to a group of polar charts and is rendered using 
 
 ## Styling $PlatformShort$ Polar Charts
 
-Once our radial chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
+Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 
-<!-- polar-scatter-series with styling props set: brush, markerOutline, markerType -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="polar-area-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Area Chart Styling"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 <!-- TODO list API links used in this topic 
 ## API Members
