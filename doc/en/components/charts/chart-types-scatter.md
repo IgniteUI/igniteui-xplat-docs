@@ -38,11 +38,15 @@ The Scatter Spline Chart belongs to a group of scatter charts that use the Carte
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Scatter HD Chart
+## $PlatformShort$ Scatter High Density Chart
 
 Use the $PlatformShort$ DataChart's High Density Scatter Chart functionality to bind and show scatter data ranging from thousands to millions of data points with very little loading time. Due to this chart type being designed for such a large amount of points, it is visualized as tiny dots as opposed to full sized markers, and displays areas with the most data using a higher color density representing a cluster of data points.
 
-<!-- data-chart-type-scatter-hd-series.md -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="scatter-hd-chart-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-hd-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Scatter HD Chart"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Scatter Area Chart
 

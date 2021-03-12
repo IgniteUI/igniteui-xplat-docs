@@ -18,7 +18,11 @@ Radial Chart is a group of series that takes data and render it as collection of
 
 Once our radial chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 
-<!-- radial-pie-series with styling props set: brush, markerOutline, markerType -->
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="radial-area-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Area Chart Styling"></iframe>
+</div>
+
+<div class="divider--half"></div>
 
 
 ## Other Types of Radial Charts

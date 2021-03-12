@@ -57,29 +57,31 @@ This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 v
 
 <div class="divider--half"></div>
 
-## How to Make $PlatformShort$ Pie Chart
+<!-- Blazor -->
+In order to use the $PlatformShort$ Pie Chart, the following module is first required to be added to your application:
+
+```razor
+PieChartModule.Register(IgniteUIBlazor);
+```
+<!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
+## How to Make $PlatformShort$ Pie Chart
+
 ### 1. Install $PlatformShort$ core package
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
-<!-- Angular, React, WebComponents -->
 ### 2. Install $PlatformShort$ charts
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
-### <!-- Angular, React, WebComponents -->3. <!-- end: Angular, React, WebComponents -->Install Required Modules
-The Pie Chart requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
-
-* PieChartModule
-<!-- end: Blazor -->
+### 3. Install Required Modules
+The $PlatformShort$ Pie Chart requires the following modules
 
 ```ts
 // app.module.ts
@@ -109,9 +111,11 @@ import { ModuleManager } from 'igniteui-webcomponents-core';
 ModuleManager.register(IgcPieChartModule);
 ```
 
-
 <div class="divider--half"></div>
 
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, WebComponents -->
 ## Usage
 
 Now that the pie chart module is imported, next step is to bind it to data.
@@ -145,6 +149,7 @@ The following code demonstrates how to bind the pie chart to the above data.
     width="300px"
     height="300px" />
 ```
+<!-- end: Angular, React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -199,7 +204,7 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 
 <div class="divider--half"></div>
 
-## Others Category
+## $PlatformShort$ Pie Chart Others Category 
 Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
 
 In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCategoryType` is set to Number. Therefore, items with value less than or equal to 2 will be assigned to the “Others” category.
@@ -246,7 +251,7 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 
 <div class="divider--half"></div>
 
-## Explosion
+## $PlatformShort$ Pie Chart Explosion
 The pie chart component supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
 
 ```html
@@ -298,7 +303,7 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 
 <div class="divider--half"></div>
 
-## Selection
+## $PlatformShort$ Pie Chart Selection
 The pie chart supports slice selection by mouse click as the default behavior. You can determine the selected slices by using the `SelectedItems` property. The selected slices are then highlighted.
 
 There is a property called `SelectionMode` which is how you set what mode you want the pie chart to use. The default value is `Single`. In order to disable selection, set the property to `Manual`.
@@ -393,7 +398,7 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 
 <div class="divider--half"></div>
 
-## Animation
+## $PlatformShort$ Pie Chart Animation
 
 You can animate the pie chart smoothly by setting the `radiusFactor` property, which will scale the chart's radius. Also set the `startAngle` property to angle the chart such that it keep increasing the chart angle while rotating.
 
@@ -425,21 +430,20 @@ public tick(): void {
 
 <div class="divider--half"></div>
 
-
 ## $PlatformShort$ Pie Chart Styling
 
-<!-- TODO -->
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
+<div class="sample-container loading" style="height: 400px">
+    <iframe id="pie-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-pie-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Styling"></iframe>
 </div>
-<div class="divider--half"></div> -->
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ Radial Pie Chart
 
 The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 <div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Pie Chart"></iframe>
+    <iframe id="radial-pie-chart-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Pie Chart"></iframe>
 </div>
 
 <div class="divider--half"></div>
