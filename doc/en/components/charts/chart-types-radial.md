@@ -14,7 +14,7 @@ Radial Chart is a group of series that takes data and render it as collection of
 
 <div class="divider--half"></div>
 
-## Styling $PlatformShort$ Radial Charts
+## $PlatformShort$ Radial Chart Styling
 
 Once our radial chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 

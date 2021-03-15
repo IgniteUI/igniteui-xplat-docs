@@ -36,7 +36,7 @@ The Polar Spline Chart belongs to a group of polar charts and is rendered using 
 
 <div class="divider--half"></div>
 
-## Styling $PlatformShort$ Polar Charts
+## $PlatformShort$ Polar Chart Styling 
 
 Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 

@@ -196,7 +196,7 @@ In this example, we are streaming live data into the $PlatformShort$ Line Chart 
 
 <div class="divider--half"></div>
 
-## Styling the $PlatformShort$ Line Chart
+## $PlatformShort$ Line Chart Styling
 
 Once our chart is set up, we may want to make some further styling customizations such as change the line colors, change the legend font family, and/or increase the size of the axis labels to make it easier to read.
 
