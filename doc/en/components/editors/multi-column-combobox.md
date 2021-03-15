@@ -10,16 +10,13 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 ## $PlatformShort$ Multi-Column Combo Box Overview Example
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Multi-Column Combo Box Overview Example"></iframe>
-</div>
 
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="multi-column-combobox-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="editors/multi-column-combobox/overview"></sample-button>
-
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview" 
+           alt="$PlatformShort$ Multi-Column Combo Box Overview Example" 
+           github-src="editors/multi-column-combobox/overview">
+</code-view>
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies

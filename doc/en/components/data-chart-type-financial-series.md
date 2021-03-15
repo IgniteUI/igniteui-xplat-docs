@@ -10,15 +10,13 @@ This topic explains various types of financial series in the $PlatformShort$ dat
 
 ## $PlatformShort$ Financial Series Example
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-financial-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Series Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-financial-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/data-chart/type-financial-series"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series" 
+           alt="$PlatformShort$ Financial Series Example" 
+           github-src="charts/data-chart/type-financial-series">
+</code-view>
 
 <div class="divider--half"></div>
 

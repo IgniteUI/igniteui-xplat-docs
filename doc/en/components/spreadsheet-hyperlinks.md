@@ -10,10 +10,13 @@ The $PlatformShort$ Spreadsheet component allows display of pre-existing hyperli
 
 ## $PlatformShort$ Spreadsheet Hyperlinks Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet Hyperlinks Example"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/hyperlinks"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks" 
+           alt="$PlatformShort$ Spreadsheet Hyperlinks Example" 
+           github-src="excel/spreadsheet/hyperlinks">
+</code-view>
 
 <div class="divider--half"></div>
 

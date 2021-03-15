@@ -9,15 +9,13 @@ mentionedTypes: ['CategoryChart']
 The $ProductName$ category chart component is capable of handling high volumes of data, ranging into the millions of data points, and updating them every few milliseconds as demonstrated in the following demo.
 
 ## $PlatformShort$ Real Time Data Example
-<div class="sample-container loading" style="height: 500px;">
-    <iframe id="category-chart-high-frequency-iframe" align="center" src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' height="100%" width="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Real Time Data Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-high-frequency-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/category-chart/high-frequency"></sample-button>
 
-</div>
+<code-view style="height: 500px;" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency" 
+           alt="$PlatformShort$ Real Time Data Example" 
+           github-src="charts/category-chart/high-frequency">
+</code-view>
 
 <div class="divider--half"></div>
 

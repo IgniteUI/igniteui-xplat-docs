@@ -10,9 +10,12 @@ $PlatformShort$ Doughnut Chart is similar to the Pie Chart component, proportion
 
 Slice selection and explosion are provided.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Legend"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend" 
+           alt="$PlatformShort$ Doughnut Legend" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -20,9 +23,12 @@ Slice selection and explosion are provided.
 
 The $PlatformShort$ Doughnut Chart has the ability to select slices on click, as demonstrated by the below sample:
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Selection"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection" 
+           alt="$PlatformShort$ Doughnut Slice Selection" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -30,9 +36,12 @@ The $PlatformShort$ Doughnut Chart has the ability to select slices on click, as
 
 The $PlatformShort$ Doughnut Chart has the ability to explode its slices outward from the continguous ring of the chart on click, as demonstrated by the below sample:
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Explosion"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion" 
+           alt="$PlatformShort$ Doughnut Slice Explosion" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -40,9 +49,12 @@ The $PlatformShort$ Doughnut Chart has the ability to explode its slices outward
 
 It is possible to have a multiple ring display in the $PlatformShort$ Doughnut Chart, with each of the rings capable of being bound to a different data item, or they can share a common data source. This can be helpful if you need to display your data as tiers that have an underlying common category, such as the season to month data display below:
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-rings-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Multiple Rings"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings" 
+           alt="$PlatformShort$ Doughnut Multiple Rings" >
+</code-view>
 
 <div class="divider--half"></div>
 

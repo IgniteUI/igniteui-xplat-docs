@@ -13,10 +13,13 @@ A column or multiple columns can be pinned to the left-hand or right-hand side o
 
 ## $PlatformShort$ Grid Column Pinning Overview Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Pinning Overview Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-picker"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker" 
+           alt="$PlatformShort$ Grid Column Pinning Overview Example" 
+           github-src="grids/data-grid/column-pinning-picker">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -262,10 +265,12 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 
 ## Demo
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-toolbar"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"  
+           github-src="grids/data-grid/column-pinning-toolbar">
+</code-view>
 
 ## Code Snippet
 

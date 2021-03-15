@@ -10,10 +10,13 @@ The $ProductName$ Data Table / Data Grid supports cell and row editing with batc
 
 ## $PlatformShort$ Grid Editing Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-editing' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Editing Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/cell-editing"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-editing" 
+           alt="$PlatformShort$ Grid Editing Example" 
+           github-src="grids/data-grid/cell-editing">
+</code-view>
 
 <div class="divider--half"></div>
 
