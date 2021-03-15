@@ -51,9 +51,12 @@ Do Not Use Pie Chart When:
 
 This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Overview"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
+           alt="$PlatformShort$ Pie Chart Overview" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -198,9 +201,12 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Legend"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend" 
+           alt="$PlatformShort$ Pie Chart Legend" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -245,9 +251,12 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 </igc-pie-chart>
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-others-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-others' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Others"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others" 
+           alt="$PlatformShort$ Pie Chart Others" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -297,9 +306,12 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 }
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Explosion"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion" 
+           alt="$PlatformShort$ Pie Chart Explosion" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -392,9 +404,12 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     }
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Selection"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection" 
+           alt="$PlatformShort$ Pie Chart Selection" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -424,9 +439,12 @@ public tick(): void {
 }
 ```
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-animation-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Animation"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation" 
+           alt="$PlatformShort$ Pie Chart Animation" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -434,9 +452,12 @@ public tick(): void {
 
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="pie-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/pie-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Pie Chart Styling"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling" 
+           alt="$PlatformShort$ Pie Chart Styling" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -444,9 +465,12 @@ Once our pie chart is created, we may want to make some further styling customiz
 
 The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="radial-pie-chart-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Pie Chart"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart" 
+           alt="$PlatformShort$ Radial Pie Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 

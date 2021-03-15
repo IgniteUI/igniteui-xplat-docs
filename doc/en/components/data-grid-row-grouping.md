@@ -11,10 +11,13 @@ The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky he
 
 ## $PlatformShort$ Row Grouping Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-grouping-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-grouping' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Row Grouping Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/row-grouping"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping" 
+           alt="$PlatformShort$ Row Grouping Example" 
+           github-src="grids/data-grid/row-grouping">
+</code-view>
 
 <div class="divider--half"></div>
 

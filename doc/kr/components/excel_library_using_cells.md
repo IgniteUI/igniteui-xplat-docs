@@ -9,10 +9,12 @@ The `WorksheetCell` objects in an Excel worksheet is the object that holds your 
 
 ## Demo
 
-<div class="sample-container loading" style="height: 150px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/working-with-cells"></sample-button>
+
+<code-view style="height: 150px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"  
+           github-src="excel/excel-library/working-with-cells">
+</code-view>
 
 <div class="divider--half"></div>
 

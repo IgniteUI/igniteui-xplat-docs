@@ -15,15 +15,13 @@ $ProductName$ Linear Gauge コンポーネントは、データをリニア ゲ�
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-<div class="sample-container loading" style="height: 155px">
-    <iframe id="linear-gauge-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ リニア ゲージの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/animation"></sample-button>
 
-</div>
+<code-view style="height: 155px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation" 
+           alt="$PlatformShort$ リニア ゲージの例" 
+           github-src="gauges/linear-gauge/animation">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -256,15 +254,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-needle-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-needle-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/needle"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"  
+           github-src="gauges/linear-gauge/needle">
+</code-view>
 
 ## 範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -350,15 +345,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"  
+           github-src="gauges/linear-gauge/ranges">
+</code-view>
 
 ## 目盛
 目盛は、リニア ゲージを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -444,15 +436,12 @@ ModuleManager.register(
 </LinearGauge>
 ```   
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"  
+           github-src="gauges/linear-gauge/tickmarks">
+</code-view>
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -511,15 +500,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"  
+           github-src="gauges/linear-gauge/labels">
+</code-view>
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -576,15 +562,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-backing-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-backing-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/backing"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"  
+           github-src="gauges/linear-gauge/backing">
+</code-view>
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -651,15 +634,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"  
+           github-src="gauges/linear-gauge/scale">
+</code-view>
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

@@ -10,10 +10,14 @@ Dock Manager コンポーネントは、エンドユーザーの操作に基づ�
 
 ## $PlatformShort$ ドック マネージャー ペインの更新の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-updating-panes-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドック マネージャー ペインの更新の例"></iframe>
-</div>
-<sample-button src="layouts/dock-manager/updating-panes"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes" 
+           alt="$PlatformShort$ ドック マネージャー ペインの更新の例" 
+           github-src="layouts/dock-manager/updating-panes">
+</code-view>
+
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
     </button>

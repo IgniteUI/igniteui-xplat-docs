@@ -13,15 +13,13 @@ $ProductName$ 散布ポリライン チャートは、形状の配列 (X また�
 
 ## $PlatformShort$ 散布ポリライン チャートの例
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-scatter-polyline-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布ポリライン チャートの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-scatter-polyline-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/type-scatter-polyline-series"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series" 
+           alt="$PlatformShort$ 散布ポリライン チャートの例" 
+           github-src="charts/data-chart/type-scatter-polyline-series">
+</code-view>
 
 <div class="divider--half"></div>
 

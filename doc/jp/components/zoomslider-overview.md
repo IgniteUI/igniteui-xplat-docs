@@ -10,14 +10,13 @@ $PlatformShort$ ZoomSlider コントロールは、範囲対応コントロー�
 
 ## $PlatformShort$ ズーム スライダーの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="zoomslider-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/zoomslider-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ズーム スライダーの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="zoomslider-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="charts/zoomslider/overview"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview" 
+           alt="$PlatformShort$ ズーム スライダーの例" 
+           github-src="charts/zoomslider/overview">
+</code-view>
 
 <div class="divider--half"></div>
 

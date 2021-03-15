@@ -10,15 +10,13 @@ Financial indicators are often used by traders to measure changes and to show tr
 
 ## $PlatformShort$ Financial Line Indicators Example
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-financial-area-indicators-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-line-indicators' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Line Indicators Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-financial-area-indicators-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="charts/data-chart/type-financial-line-indicators"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-line-indicators" 
+           alt="$PlatformShort$ Financial Line Indicators Example" 
+           github-src="charts/data-chart/type-financial-line-indicators">
+</code-view>
 
 <div class="divider--half"></div>
 

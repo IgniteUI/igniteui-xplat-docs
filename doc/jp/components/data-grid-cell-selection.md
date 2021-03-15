@@ -12,10 +12,13 @@ $ProductName$ Data Table / Data Grid は、単一行または複数行および�
 
 ## $PlatformShort$ グリッド選択の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド選択の例"></iframe>
-</div>
-<sample-button src="grids/data-grid/cell-selection"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection" 
+           alt="$PlatformShort$ グリッド選択の例" 
+           github-src="grids/data-grid/cell-selection">
+</code-view>
 
 <div class="divider--half"></div>
 

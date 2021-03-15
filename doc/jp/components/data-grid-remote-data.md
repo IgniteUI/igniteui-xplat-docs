@@ -11,14 +11,13 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 
 ## $PlatformShort$ グリッド仮想データのバインドの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-remote-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-remote-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド仮想データのバインドの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="data-grid-binding-remote-data-iframe" data-demos-base-url="{environment:demosBaseUrl}">stackblitz で表示
-    </button>
-</div>
-<sample-button src="grids/data-grid/binding-remote-data"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data" 
+           alt="$PlatformShort$ グリッド仮想データのバインドの例" 
+           github-src="grids/data-grid/binding-remote-data">
+</code-view>
 
 <div class="divider--half"></div>
 

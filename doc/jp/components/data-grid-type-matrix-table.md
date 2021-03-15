@@ -12,8 +12,11 @@ $ProductName$ Data Table / Data Grid は、マトリックス テーブルを作
 
 ## $PlatformShort$ マトリックス データのバインディングの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-type-matrix-table-iframe" src='{environment:demosBaseUrl}/grids/data-grid-type-matrix-table' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ マトリックス データのバインディングの例"></iframe>
-</div>
-<sample-button src="grids/data-grid/type-matrix-table"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-matrix-table" 
+           alt="$PlatformShort$ マトリックス データのバインディングの例" 
+           github-src="grids/data-grid/type-matrix-table">
+</code-view>
 

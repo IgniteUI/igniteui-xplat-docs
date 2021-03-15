@@ -9,15 +9,12 @@ _language: kr
 `XamFinancialChart` 제어에는 금융 데이터를 표시하는 복수의 창이 있습니다.
 
 ## 데모
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="financial-chart-panes-iframe" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="financial-chart-panes-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">STACKBLITZ 에서 보기
-    </button>
-<sample-button src="charts/financial-chart/panes"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"  
+           github-src="charts/financial-chart/panes">
+</code-view>
 
 <div class="divider--half"></div>
 

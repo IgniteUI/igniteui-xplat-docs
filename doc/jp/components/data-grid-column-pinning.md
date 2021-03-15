@@ -14,10 +14,13 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 
 ## $PlatformShort$ Grid 列ピン固定の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid 列ピン固定の例"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-picker"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker" 
+           alt="$PlatformShort$ Grid 列ピン固定の例" 
+           github-src="grids/data-grid/column-pinning-picker">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -263,10 +266,12 @@ onButtonUnPin () {
 
 ## サンプル
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-toolbar"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"  
+           github-src="grids/data-grid/column-pinning-toolbar">
+</code-view>
 
 ## コード スニペット
 

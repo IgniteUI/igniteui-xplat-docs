@@ -11,16 +11,13 @@ _language: ja
 
 ## $PlatformShort$ 日付選択の例
 
-<div class="sample-container loading" style="height: 300px">
-    <iframe id="category-chart-overview-iframe" src='{environment:dvDemosBaseUrl}/editors/date-picker-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 日付選択の例"></iframe>
-</div>
 
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="multi-column-combobox-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="editors/date-picker/overview"></sample-button>
-
-</div>
+<code-view style="height: 300px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview" 
+           alt="$PlatformShort$ 日付選択の例" 
+           github-src="editors/date-picker/overview">
+</code-view>
 
 <!-- React, WebComponents -->
 ## 依存関係

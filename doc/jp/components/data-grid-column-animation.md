@@ -12,10 +12,13 @@ $ProductName$ Data Table / Data Grid は、列の非表示や列の移動など�
 
 ## $PlatformShort$ グリッド列アニメーションの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ グリッド列アニメーションの例"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-animation"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation" 
+           alt="$PlatformShort$ グリッド列アニメーションの例" 
+           github-src="grids/data-grid/column-animation">
+</code-view>
 
 <div class="divider--half"></div>
 

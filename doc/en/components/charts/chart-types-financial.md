@@ -45,9 +45,12 @@ Data Structure:
 
 ## $PlatformShort$ Stock Chart with Multiple Series
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
+           alt="$PlatformShort$ Stock Index Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -57,9 +60,12 @@ Data Structure:
 
 In this example the financial chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-stock-index-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart" 
+           alt="$PlatformShort$ Stock Index Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -67,9 +73,12 @@ In this example the financial chart is representing the S&P 500 over the course 
 
 If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-styling-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Stock Index Chart"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling" 
+           alt="$PlatformShort$ Stock Index Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -79,9 +88,12 @@ If you need a Financial Chart with more features such as composite other series,
 ## $PlatformShort$ Chart Annotations
 
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-annotations" src='{environment:dvDemosBaseUrl}/charts/financial-chart-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Annotations"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
+           alt="$PlatformShort$ Chart Annotations" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -89,9 +101,12 @@ If you need a Financial Chart with more features such as composite other series,
 
 In this example, the financial chart is plotting revenue for United States.
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-panes" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Panes"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
+           alt="$PlatformShort$ Chart Panes" >
+</code-view>
 
 <div class="divider--half"></div>
 

@@ -13,15 +13,13 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 ## $PlatformShort$ 散布ポイント チャートの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-type-scatter-point-series-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-point-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布ポイント チャートの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-scatter-point-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/type-scatter-point-series"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-point-series" 
+           alt="$PlatformShort$ 散布ポイント チャートの例" 
+           github-src="charts/data-chart/type-scatter-point-series">
+</code-view>
 
 <div class="divider--half"></div>
 

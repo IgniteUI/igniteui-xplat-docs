@@ -13,10 +13,13 @@ The $ProductName$ Data Table / Data Grid is optimized for high-performance with 
 
 This sample demonstrates this performance by binding thousands of financial records to the $PlatformShort$ data grid, grouping them by 1 column (eg. Territory), and live-updating multiple columns every couple of milliseconds. You can change various options in real-time and the Data Grid performance with no lag, screen flicker, or visual delay
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-live-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-performance' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ High Performance with Live Data Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/performance"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-performance" 
+           alt="$PlatformShort$ High Performance with Live Data Example" 
+           github-src="grids/data-grid/performance">
+</code-view>
 
 <div class="divider--half"></div>
 

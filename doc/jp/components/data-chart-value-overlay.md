@@ -13,15 +13,13 @@ $ProductName$ データ チャート コンポーネントを使用すると、`
 
 ## $PlatformShort$ 値オーバーレイ例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-series-value-overlay-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 値オーバーレイ例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-series-value-overlay-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/series-value-overlay"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay" 
+           alt="$PlatformShort$ 値オーバーレイ例" 
+           github-src="charts/data-chart/series-value-overlay">
+</code-view>
 
 <div class="divider--half"></div>
 

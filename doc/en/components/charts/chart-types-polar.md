@@ -10,9 +10,12 @@ $PlatformShort$ Polar Chart is a group of series that use the polar (angle, radi
 
 Polar Chart draw attention to uneven intervals or clusters of data. They are often used to plot scientific data (e.g. wind direction and speed, direction, and strength of magnetic field, location of objects in solar system), and can highlight the deviation of collected data from predicted results.
 
-<div class="sample-container loading" style="height: 420px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Line Chart"></iframe>
-</div>
+
+<code-view style="height: 420px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+           alt="$PlatformShort$ Polar Line Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -20,9 +23,12 @@ Polar Chart draw attention to uneven intervals or clusters of data. They are oft
 
 The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the Scatter Line Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
-<div class="sample-container loading" style="height: 420px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Line Chart"></iframe>
-</div>
+
+<code-view style="height: 420px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+           alt="$PlatformShort$ Polar Line Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -30,9 +36,12 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 
 The Polar Spline Chart belongs to a group of polar charts and is rendered using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. Polar Spline Charts use the same concepts of data plotting as the Scatter Spline Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
-<div class="sample-container loading" style="height: 420px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Spline Chart"></iframe>
-</div>
+
+<code-view style="height: 420px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
+           alt="$PlatformShort$ Polar Spline Chart" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -40,9 +49,12 @@ The Polar Spline Chart belongs to a group of polar charts and is rendered using 
 
 Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 
-<div class="sample-container loading" style="height: 420px">
-    <iframe id="polar-area-chart-styling-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Polar Area Chart Styling"></iframe>
-</div>
+
+<code-view style="height: 420px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling" 
+           alt="$PlatformShort$ Polar Area Chart Styling" >
+</code-view>
 
 <div class="divider--half"></div>
 

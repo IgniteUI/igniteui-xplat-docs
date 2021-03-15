@@ -11,10 +11,13 @@ $ProductName$ Data Table / Data Grid は、表形式の $PlatformShort$ コン�
 
 ## $PlatformShort$ Data Grid の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Data Grid の例"></iframe>
-</div>
-<sample-button src="grids/data-grid/overview"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview" 
+           alt="$PlatformShort$ Data Grid の例" 
+           github-src="grids/data-grid/overview">
+</code-view>
 
 <div class="divider--half"></div>
 

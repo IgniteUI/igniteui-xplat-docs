@@ -20,14 +20,13 @@ Please follow the steps outlined in the blog post titled:
 
 ## $PlatformShort$ Dock Manager Overview Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-overview-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Dock Manager Overview Example"></iframe>
-</div>
-<sample-button src="layouts/dock-manager/overview"></sample-button>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview" 
+           alt="$PlatformShort$ Dock Manager Overview Example" 
+           github-src="layouts/dock-manager/overview">
+</code-view>
 
 <div class="divider--half"></div>
 

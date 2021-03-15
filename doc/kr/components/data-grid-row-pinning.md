@@ -1,4 +1,4 @@
-﻿---
+---
 제목: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 행 핀 고정 | Infragistics
 _description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
 _keywords: grid, table, $ProductName$, Infragistics
@@ -11,14 +11,12 @@ _language: kr
 
 ## 데모
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-row-pinning-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-pinning' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="data-grid-row-pinning-iframe" data-demos-base-url="{environment:demosBaseUrl}">STACKBLITZ 에서 보기
-    </button>
-</div>
-<sample-button src="grids/data-grid/row-pinning"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning"  
+           github-src="grids/data-grid/row-pinning">
+</code-view>
 
 <div class="divider--half"></div>
 
