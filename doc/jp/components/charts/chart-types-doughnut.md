@@ -11,33 +11,45 @@ $PlatformShort$ ドーナツ チャートは円チャートと同様、変数の
 
 スライスの選択と展開が提供されます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-legend-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ のドーナツ チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend" 
+           alt="凡例付きの $PlatformShort$ のドーナツ チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ ドーナツ チャート - スライスの選択
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-selection-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドーナツ スライスの選択"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection" 
+           alt="$PlatformShort$ ドーナツ スライスの選択" >
+</code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ ドーナツ チャート - スライスの切り出し
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-explosion-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Doughnut Slice Explosion"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion" 
+           alt="$PlatformShort$ Doughnut Slice Explosion" >
+</code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ ドーナツ チャート - 複数のリング
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="doughnut-chart-rings-iframe" src='{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ドーナツ複数のリング"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings" 
+           alt="$PlatformShort$ ドーナツ複数のリング" >
+</code-view>
 
 <div class="divider--half"></div>
 

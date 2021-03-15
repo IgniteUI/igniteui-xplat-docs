@@ -21,9 +21,12 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 ## 複数シリーズの $PlatformShort$ 株価チャート
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 株価指数チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
+           alt="$PlatformShort$ 株価指数チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -33,9 +36,12 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 この例では、ファイナンシャル チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-stock-index-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 株価指数チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart" 
+           alt="$PlatformShort$ 株価指数チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -43,9 +49,12 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 他のシリーズの複合などのより多くの機能を備えたファイナンシャル チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、ファイナンシャル チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-styling-chart" src='{environment:dvDemosBaseUrl}/charts/financial-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 株価指数チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling" 
+           alt="$PlatformShort$ 株価指数チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -54,9 +63,12 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 ## $PlatformShort$ チャートの注釈
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-annotations" src='{environment:dvDemosBaseUrl}/charts/financial-chart-annotations' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ チャートの注釈"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
+           alt="$PlatformShort$ チャートの注釈" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -64,9 +76,12 @@ chartType プロパティを以下のオプションの 1 つに設定してチ�
 
 この例では、ファイナンシャル チャートは米国の収益をプロットしています。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="fc-chart-panes" src='{environment:dvDemosBaseUrl}/charts/financial-chart-panes' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Chart Panes"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
+           alt="$PlatformShort$ Chart Panes" >
+</code-view>
 
 <div class="divider--half"></div>
 

@@ -9,9 +9,12 @@ _language: ja
 
 $PlatformShort$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、水平棒または等しい幅と異なる長さでエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。棒が垂直 (上下) に表示される縦棒チャートまたは縦棒グラフのように、棒チャートは縦棒チャートと同じように描画されますが、時計回りに 90 度回転し、水平に (左から右) 表示されます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 棒チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend" 
+           alt="凡例付きの $PlatformShort$ 棒チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -64,9 +67,12 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 棒チャートは、カテゴリ シリーズのグループに属し、チャートの左から右へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
 この例では、棒チャートはパーセント ベースの小売ショッピング データを比較しています。 
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="単一ソースの $PlatformShort$ 棒チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source" 
+           alt="単一ソースの $PlatformShort$ 棒チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -74,9 +80,12 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="複数ソースの $PlatformShort$ 棒チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources" 
+           alt="複数ソースの $PlatformShort$ 棒チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -84,9 +93,12 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 この例では、棒チャートは各棒の注釈値を使用して、CalloutLayer を使用した人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 棒チャートのスタイル設定"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling" 
+           alt="$PlatformShort$ 棒チャートのスタイル設定" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -100,9 +112,12 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型棒チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart" 
+           alt="$PlatformShort$ 積層型棒チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -112,9 +127,12 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 積層型 100 棒チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart" 
+           alt="$PlatformShort$ 積層型 100 棒チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 

@@ -12,10 +12,13 @@ $ProductName$ Data Table / Data Grid は、列集計をサポートしていま�
 
 ## $PlatformShort$ 列集計の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-summaries-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-summaries' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 列集計の例"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-summaries"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-summaries" 
+           alt="$PlatformShort$ 列集計の例" 
+           github-src="grids/data-grid/column-summaries">
+</code-view>
 
 <div class="divider--half"></div>
 

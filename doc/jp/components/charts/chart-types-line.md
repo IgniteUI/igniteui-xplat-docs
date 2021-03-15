@@ -11,9 +11,12 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="凡例付きの $PlatformShort$ 折れ線チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend" 
+           alt="凡例付きの $PlatformShort$ 折れ線チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -151,15 +154,13 @@ public initData() {
 
 以下の例に示すように、$PlatformShort$ 折れ線チャートは、2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-single-source" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="単一ソースの $PlatformShort$ 折れ線チャート"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-single-source-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/chart-single-source"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source" 
+           alt="単一ソースの $PlatformShort$ 折れ線チャート" 
+           github-src="charts/category-chart/chart-single-source">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -167,15 +168,13 @@ public initData() {
 
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-multiple-sources" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="複数シリーズの $PlatformShort$ 折れ線チャート"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-multiple-sources'-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/line-chart-multiple-sources'"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources" 
+           alt="複数シリーズの $PlatformShort$ 折れ線チャート" 
+           github-src="charts/category-chart/line-chart-multiple-sources'">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -185,15 +184,13 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-high-frequency" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="ライブ データの $PlatformShort$ 折れ線チャートの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-high-frequency-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/high-frequency"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency" 
+           alt="ライブ データの $PlatformShort$ 折れ線チャートの例" 
+           github-src="charts/category-chart/high-frequency">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -202,12 +199,13 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、`ChartTitle` のサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
 
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-styling" data-src='{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling' width="100%" height="100%" seamless frameBorder="0" class="lazyload" alt="$PlatformShort$ 折れ線チャートのスタイル設定"></iframe>
-</div>
-   <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="category-chart-line-chart-styling-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/category-chart/line-chart-styling"></sample-button>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling" 
+           alt="$PlatformShort$ 折れ線チャートのスタイル設定" 
+           github-src="charts/category-chart/line-chart-styling">
+</code-view>
 
 <div class="divider--half"></div>
 

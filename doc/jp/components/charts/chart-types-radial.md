@@ -11,9 +11,12 @@ _language: ja
 
 ## $PlatformShort$ ラジアル折れ線の例
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="cc-chart-with-legend" src='{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ラジアル折れ線チャート"></iframe>
-</div>
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart" 
+           alt="$PlatformShort$ ラジアル折れ線チャート" >
+</code-view>
 
 <div class="divider--half"></div>
 

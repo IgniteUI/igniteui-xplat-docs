@@ -11,10 +11,13 @@ mentionedTypes: ['Spreadsheet']
 
 ## $PlatformShort$ データ検証の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-data-validation-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ データ検証の例"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/data-validation"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation" 
+           alt="$PlatformShort$ データ検証の例" 
+           github-src="excel/spreadsheet/data-validation">
+</code-view>
 
 <div class="divider--half"></div>
 

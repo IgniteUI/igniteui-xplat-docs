@@ -12,10 +12,13 @@ _language: ja
 
 ## $PlatformShort$ ローカル データのバインディングの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-binding-local-data-iframe" src='{environment:demosBaseUrl}/grids/data-grid-binding-local-data' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ローカル データのバインディングの例"></iframe>
-</div>
-<sample-button src="grids/data-grid/binding-local-data"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-local-data" 
+           alt="$PlatformShort$ ローカル データのバインディングの例" 
+           github-src="grids/data-grid/binding-local-data">
+</code-view>
 
 ## コード スニペット
 
@@ -99,7 +102,7 @@ public initData() {
     <TextColumn Field="ProductName" HeaderText="Product" Width="120" />
     <ImageColumn Field="CountryFlag" HeaderText="Country" Width="130"/>
     <NumericColumn Field="ProductPrice" HeaderText="Price" Width="110" PositivePrefix="$" ShowGroupingSeparator="true" MaxFractionDigits="0" MinFractionDigits="0" />
-    <NumericColumn Field="OrderItems" HeaderText="Orders" Width="140" PositivePrefix="" ShowGroupingSeparator="true" MaxFractionDigits="0" MinFractionDigits="0" />
+    <NumericColumn Field="OrderItems" HeaderText="Orders" Width="140" PositivePrefix ShowGroupingSeparator="true" MaxFractionDigits="0" MinFractionDigits="0" />
     <NumericColumn Field="OrderValue" HeaderText="Order Value" Width="160" PositivePrefix="$" ShowGroupingSeparator="true" MaxFractionDigits="0" MinFractionDigits="0" />
     <DateTimeColumn Field="OrderDate" HeaderText="Order Date" Width="150" DateTimeFormat="DateTimeFormats.DateShort" />
     <NumericColumn Field="Margin" Width="140" PositivePrefix="$"/>
