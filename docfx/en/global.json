@@ -7,5 +7,6 @@
     "_JABaseUrl": "https://jp.infragistics.com/products/{ProductSpinal}/{PlatformShortLower}/",
     "_KRBaseUrl": "https://www.infragistics.co.kr/products/{ProductSpinal}/{PlatformShortLower}/",
     "_themeUsage": false,
-    "_demosBaseUrlVar": "{environment:dvDemosBaseUrl}"
+    "_demosBaseUrlVar": "{environment:dvDemosBaseUrl}",
+    "_platform": "{PlatformShortLower}"
 }
