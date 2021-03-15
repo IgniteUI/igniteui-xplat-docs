@@ -1,4 +1,4 @@
-﻿---
+---
 제목: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 셀 활성화 | Infragistics
 _description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
 _keywords: grid, table, $ProductName$, Infragistics
@@ -11,10 +11,12 @@ $ProductName$ 데이터 표/데이터 그리드는 그리드 셀을 통한 키�
 
 ## 데모
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-activation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="grids/data-grid/cell-activation"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-activation"  
+           github-src="grids/data-grid/cell-activation">
+</code-view>
 
 <div class="divider--half"></div>
 
