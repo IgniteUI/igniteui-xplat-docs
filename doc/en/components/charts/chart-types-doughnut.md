@@ -32,7 +32,7 @@ The $PlatformShort$ Doughnut Chart has the ability to select slices on click, as
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Doughnut Chart - Slice Explosion
+<!-- ## $PlatformShort$ Doughnut Chart - Slice Explosion
 
 The $PlatformShort$ Doughnut Chart has the ability to explode its slices outward from the continguous ring of the chart on click, as demonstrated by the below sample:
 
@@ -43,7 +43,7 @@ The $PlatformShort$ Doughnut Chart has the ability to explode its slices outward
            alt="$PlatformShort$ Doughnut Slice Explosion" >
 </code-view>
 
-<div class="divider--half"></div>
+<div class="divider--half"></div> -->
 
 ## $PlatformShort$ Doughnut Chart - Multiple Rings
 
@@ -57,6 +57,11 @@ It is possible to have a multiple ring display in the $PlatformShort$ Doughnut C
 </code-view>
 
 <div class="divider--half"></div>
+
+## Additional Resources
+- [Animations](chart-features-animations.md)
+- [Tooltips](chart-features-tooltips.md)
+
 
 <!-- TODO list API links used in this topic 
 ## API Members
