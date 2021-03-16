@@ -33,8 +33,8 @@ $PlatformShort$ マップ コンポーネントの `GeographicContourLineSeries`
 | プロパティ名  | プロパティ型   | 概要   |
 |--------------|---------------| ---------------|
 |`ItemsSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
-|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの経度を含むプロパティの名前。|
-|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの Latitude を含むプロパティの名前。|
+|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
+|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
 |`ValueMemberPath`|文字列|各データ項目の緯度および経度座標の値を含むプロパティの名前。`FillScale` プロパティが設定されている場合、この数値は色に変換されます。|
 |`TrianglesSource`|任意|三角測量データのソースを取得または設定します。TriangulationSource オブジェクトの Triangles をこのプロパティに設定すると、ランタイムパフォーマンスと地理的シリーズレンダリングの両方が向上します。|
 |`TriangleVertexMemberPath1`|文字列|各三角形に対して ItemsSource の最初の頂点のインデックスを含む、TrianglesSource 項目のプロパティ名。このプロパティを設定することは義務ではありません。カスタムの三角測量ロジックが提供されない場合はデフォルトで取得されます。|

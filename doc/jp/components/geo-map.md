@@ -18,7 +18,6 @@ $ProductName$ Map コンポーネントを使用すると、ビューモデル�
 
 <div class="divider--half"></div>
 
-
 $PlatformShort$ 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
 
 マップの `Series` プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
@@ -39,11 +38,6 @@ npm install --save {PackageMaps}
 
 ## モジュールの要件
 
-<!-- Angular, React, WebComponents -->
-`XamGeographicMap` には以下のモジュールが必要ですが、Ig$DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
-<!-- end: Angular, React, WebComponents -->
-
-<!-- Blazor -->
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
 ```razor

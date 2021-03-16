@@ -13,7 +13,7 @@ $PlatformShort$ 棒チャート、棒グラフ、または水平棒チャート�
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend" 
-           alt="凡例付きの $PlatformShort$ 棒チャート" >
+           alt="$PlatformShort$ 凡例付きの $PlatformShort$ 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -71,7 +71,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source" 
-           alt="単一ソースの $PlatformShort$ 棒チャート" >
+           alt="$PlatformShort$ 単一シリーズの $PlatformShort$ 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -80,11 +80,10 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。
 
-
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources" 
-           alt="複数ソースの $PlatformShort$ 棒チャート" >
+           alt="$PlatformShort$ 複数シリーズの $PlatformShort$ 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -92,7 +91,6 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 ## $PlatformShort$ 棒チャートのスタイル設定
 
 この例では、棒チャートは各棒の注釈値を使用して、CalloutLayer を使用した人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
-
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -108,10 +106,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
 
-### $PlatformShort$ 積層型棒チャート
-
 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
-
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -127,7 +122,6 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
-
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart" 
@@ -135,19 +129,6 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 </code-view>
 
 <div class="divider--half"></div>
-
-## $PlatformShort$ 範囲棒チャート
-
-$ProductName$ 範囲棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数のアイテムを比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
-
-### $PlatformShort$ 範囲棒チャート
-
-この範囲棒チャートの例では、日付ごとの高温と低温の間の気象データの差異が示されています。
-
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
 
 ## その他のリソース
 - [縦棒チャート](chart-types-column.md)

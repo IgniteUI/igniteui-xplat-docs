@@ -21,7 +21,7 @@ $PlatformShort$ 円チャート (円グラフ) は、データセットのカテ
 - ツリーマップ 
 - ウォーターフォール 
 
-Angular 円チャートは、データを解析するためのビューアー ツールを提供するインタラクティブ機能を含みます。
+$PlatformShort$ 円チャートは、データを解析するためのビューアー ツールを提供するインタラクティブ機能を含みます。
 
 - 凡例 
 - スライスの分割
@@ -30,21 +30,21 @@ Angular 円チャートは、データを解析するためのビューアー �
 
 円チャートのベスト プラクティス:
 
-- スライスまたはセグメントを、合計値または全体に対するパーセンテージ値として比較する
-- カテゴリのグループがどのようにより小さなセグメントに分割されるかを表示する
-- 小さい非階層データ セット (6 ～ 8 セグメント未満のデータ) を表示する
-- データ セグメントの合計が 100% になるようにする
-- データの順序を最大 (最高) から最小 (最低) に並べ替える
-- 12 時の位置から始めて時計回りに進む標準的なプレゼンテーション方法を使用する
-- カラー パレットがセグメント/スライスで識別できるようにする
+- スライスまたはセグメントを、合計値または全体に対するパーセンテージ値として比較する。
+- カテゴリのグループがどのようにより小さなセグメントに分割されるかを表示する。
+- 小さい非階層データ セット (6 ～ 8 セグメント未満のデータ) を表示する。
+- データ セグメントの合計が 100% になるようにする。
+- データの順序を最大 (最高) から最小 (最低) に並べ替える。
+- 12 時の位置から始めて時計回りに進む標準的なプレゼンテーション方法を使用する。
+- カラー パレットがセグメント/スライスで識別できるようにする。
 - データラベルを読みやすくするため、セグメントと凡例のどちらに配置するべきか検討する。
-- より分かりやすい表現のために、円の代わりに棒またはリング チャートを選択する
-- 比較分析のために複数の円チャートを並べて配置しないようにする
+- より分かりやすい表現のために、円の代わりに棒またはリング チャートを選択する。
+- 比較分析のために複数の円チャートを並べて配置しないようにする。
 
 以下の場合に円チャートを使用しないでください。 
 
-- 経時変化を比較する場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください
-- 正確なデータ比較が必要な場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください
+- 経時変化を比較する場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください。
+- 正確なデータ比較が必要な場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください。
 - 6 セグメントまたは 8 セグメント (大量のデータ) がある場合 - データ ストーリーに適した棒チャート、折れ線チャート、またはエリア チャートを検討してください。
 - 棒チャートで値の違いがわかりやすくなります。
 
@@ -53,38 +53,39 @@ Angular 円チャートは、データを解析するためのビューアー �
 この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には String と Numeric データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
 
 
-<code-view style="height: 350px" 
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
-           alt="$PlatformShort$ Pie Chart Overview Example" 
-           github-src="charts/pie-chart/overview">
+           alt="$PlatformShort$ 円チャートの概要" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 円チャートの作成方法
+<!-- Blazor -->
+$PlatformShort$ 円チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
+
+```razor
+PieChartModule.Register(IgniteUIBlazor);
+```
+<!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
+## $PlatformShort$ 円チャートの作成方法
+
 ### 1. $PlatformShort$ コア パッケージをインストールします
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
-<!-- Angular, React, WebComponents -->
 ### 2. $PlatformShort$ チャートをインストールします
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
-### <!-- Angular, React, WebComponents -->3. <!-- end: Angular, React, WebComponents -->必要なモジュールをインストールします
-円チャートを使用するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents -->。<!-- end: Angular, React, WebComponents --><!-- Blazor --> モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
-
-* PieChartModule
-<!-- end: Blazor -->
+### 3. 必要なモジュールをインストールします
+$PlatformShort$ 円チャートには、次のモジュールが必要です:
 
 ```ts
 // app.module.ts
@@ -114,9 +115,11 @@ import { ModuleManager } from 'igniteui-webcomponents-core';
 ModuleManager.register(IgcPieChartModule);
 ```
 
-
 <div class="divider--half"></div>
 
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, WebComponents -->
 ## 使用方法
 
 円チャート モジュールをインポートした後、チャートをデータにバインドします。
@@ -150,6 +153,7 @@ var data = [
     width="300px"
     height="300px" />
 ```
+<!-- end: Angular, React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -198,30 +202,16 @@ var data = [
 
 ```
 
-
-<code-view style="height: 350px" 
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"  
-           github-src="charts/pie-chart/legend">
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend" 
+           alt="凡例付きの $PlatformShort$ 円チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 円チャートの凡例でパーセンテージを表示する方法
 
-<!-- TODO -->
-
-## $PlatformShort$ 円チャートのスタイル設定
-
-<!-- TODO -->
-<!-- <div class="sample-container loading" style="height: 500px">
-    <iframe></iframe>
-</div>
-<div class="divider--half"></div> -->
-
-## $PlatformShort$ ラジアル円チャート
-
-## その他の分類項目
+## $PlatformShort$ 円チャートその他の分類項目
 円チャート コンポーネントの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
 
 以下のサンプルは、`OthersCategoryThreshold` を 2 に設定、`OthersCategoryType` は Number に設定されています。したがって、2 以下の値を含む項目は、Others カテゴリに割り当てられます。
@@ -263,15 +253,15 @@ var data = [
 ```
 
 
-<code-view style="height: 350px" 
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"  
-           github-src="charts/pie-chart/others">
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others" 
+           alt="$PlatformShort$ 円チャートその他の分類項目" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 展開
+## $PlatformShort$ 円チャートの展開
 円チャート コンポーネントは個々の円スライスの選択と展開だけでなく、選択状態を変更しカスタム ロジックを実装することを可能にする `SliceClick` イベントをコンポーネントサポートします。
 
 ```html
@@ -318,15 +308,15 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 350px" 
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"  
-           github-src="charts/pie-chart/explosion">
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion" 
+           alt="$PlatformShort$ 円チャートの展開" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 選択
+## $PlatformShort$ 円チャートの選択
 デフォルトで、円チャートはマウス クリックによるスライス選択をサポートします。選択されたスライスは、`SelectedItems`  プロパティで取得します。選択したスライスがハイライトされます。
 
 円チャートのモードは `SelectionMode` プロパティで設定します。デフォルト値は `Single` です。選択機能を無効化するためにはプロパティを `Manual` に設定します。
@@ -415,16 +405,16 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     }
 ```
 
-<code-view style="height: 350px" 
+
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"  
-           github-src="charts/pie-chart/selection">
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection" 
+           alt="$PlatformShort$ 円チャートの選択" >
 </code-view>
 
 <div class="divider--half"></div>
 
-
-## アニメーション
+## $PlatformShort$ 円チャートのアニメーション
 
 チャートの半径をスケールする `radiusFactor` プロパティを設定して円チャートをすばやくアニメーション化できます。`startAngle` プロパティを設定してチャートが回転する間、チャートの角度が増加し続けるようにします。
 
@@ -451,10 +441,34 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 350px" 
+<code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"  
-           github-src="charts/pie-chart/animation">
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation" 
+           alt="$PlatformShort$ 円チャートのアニメーション" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ 円チャートのスタイル設定
+
+円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling" 
+           alt="$PlatformShort$ 円チャートのスタイル設定" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ ラジアル円チャート
+
+ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart" 
+           alt="$PlatformShort$ ラジアル円チャート" >
 </code-view>
 
 <div class="divider--half"></div>

@@ -15,7 +15,7 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend" 
-           alt="凡例付きの $PlatformShort$ 折れ線チャート" >
+           alt="$PlatformShort$ 凡例付きの $PlatformShort$ 折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -154,11 +154,10 @@ public initData() {
 
 以下の例に示すように、$PlatformShort$ 折れ線チャートは、2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
-
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source" 
-           alt="単一ソースの $PlatformShort$ 折れ線チャート" 
+           alt="単一シリーズの $PlatformShort$ 折れ線チャート" 
            github-src="charts/category-chart/chart-single-source">
 </code-view>
 
@@ -167,7 +166,6 @@ public initData() {
 ## 複数シリーズの $PlatformShort$ 折れ線チャート
 
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
-
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -184,11 +182,10 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
-
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency" 
-           alt="ライブ データの $PlatformShort$ 折れ線チャートの例" 
+           alt="$PlatformShort$ ライブ データの $PlatformShort$ 折れ線チャートの例" 
            github-src="charts/category-chart/high-frequency">
 </code-view>
 
@@ -199,13 +196,13 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、`ChartTitle` のサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
 
 
-
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling" 
-           alt="$PlatformShort$ 折れ線チャートのスタイル設定" 
+           alt="$PlatformShort$ 折れ線チャートのスタイル設定"
            github-src="charts/category-chart/line-chart-styling">
 </code-view>
+
 
 <div class="divider--half"></div>
 

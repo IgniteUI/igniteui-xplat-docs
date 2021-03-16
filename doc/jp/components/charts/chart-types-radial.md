@@ -9,8 +9,6 @@ _language: ja
 
 ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです (カテゴリ シリーズが行うように水平方向の線に沿って拡大するのではなく)。カテゴリ シリーズと同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ シリーズの同じカテゴリ グループ化メカニズムをサポートします。
 
-## $PlatformShort$ ラジアル折れ線の例
-
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -21,7 +19,17 @@ _language: ja
 <div class="divider--half"></div>
 
 ## $PlatformShort$ ラジアル チャートのスタイル設定
-<!-- radial-pie-series with styling props set: brush, markerOutline, markerType -->
+
+ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
+
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling" 
+           alt="$PlatformShort$ ラジアル エリア チャートのスタイル設定" >
+</code-view>
+
+<div class="divider--half"></div>
 
 
 ## 他のタイプのラジアル チャート

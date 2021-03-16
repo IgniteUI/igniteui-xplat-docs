@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ 範囲縦棒チャート
 
-$ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数のアイテムを比較します。範囲値は y 軸に表示され、カテゴリは x 軸に表示されます。`RangeColumnSeries` は、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は `RangeAreaSeries` と同じです。
+$ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は y 軸に表示され、カテゴリは x 軸に表示されます。`RangeColumnSeries` は、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は `RangeAreaSeries` と同じです。
 
 ## $PlatformShort$ 範囲縦棒チャートの例
 
@@ -109,7 +109,7 @@ ModuleManager.register(
 <DataChart Height="500px" Width="750px">
         <CategoryXAxis Name="xAxis" Label="Year" DataSource="@DataSource"/>
         <NumericYAxis  Name="yAxis" />
-        <RangeColumnSeries Name="series1" 
+        <RangeColumnSeries Name="series1"
             XAxisName="xAxis"           YAxisName="yAxis"
             DataSource="@DataSource"
             LowMemberPath="Low"
