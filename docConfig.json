@@ -154,7 +154,7 @@
             { "name": "{PackageVerLatest}",         "value": "1.1.1"}
         ],
         "samplesBrowsers" : {
-            "development": "http://localhost:4200",
+            "development": "https://localhost:44317/blazor-client",
             "staging":     "https://staging.infragistics.com/blazor-client",
             "production":  "https://infragistics.com/blazor-client"
         },
