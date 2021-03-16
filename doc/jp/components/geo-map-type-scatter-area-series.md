@@ -25,7 +25,7 @@ $PlatformShort$ マップ コンポーネントの `GeographicScatterAreaSeries`
 
 ## データ要件
 マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicScatterAreaSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、項目ソースの各項目にはデータ列が 3 つあり、2 つは地理的な経度および緯度座標を保管し、1 つのデータ列は地理的位置に関連した値を保管します。地理的シリーズの `LongitudeMemberPath`、`LatitudeMemberPath` および `ColorMemberPath` プロパティはこれらのデータ列を識別します。
-`GeographicScatterAreaSeries` は、三角測量が `TrianglesSource` プロパティに設定されていない場合、ItemsSource の項目で組み込みのデータ三角測量を自動的に実行します。ただし、三角測量の計算は非常に時間のかかるプロセスであるため、このプロパティのために `TriangulationSource`を指定すると、ランタイム パフォーマンスがよくなります。特にデータ項目が多数ある場合には顕著です。
+`GeographicScatterAreaSeries` は、三角測量が `TrianglesSource` プロパティに設定されていない場合、ItemsSource の項目で組み込みのデータ三角測量を自動的に実行します。ただし、三角測量の計算は非常に時間のかかるプロセスであるため、このプロパティのために TriangulationSource を指定すると、ランタイム パフォーマンスがよくなります。特にデータ項目が多数ある場合には顕著です。
 
 ## データ バインディング
 以下の表に、データ バインドに使用される GeographicScatterAreaSeries のプロパティをまとめています。
