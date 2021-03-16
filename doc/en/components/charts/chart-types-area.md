@@ -45,7 +45,7 @@ $PlatformShort$ Area Chart allows you to combine multiple series and compare or 
 
 ## $PlatformShort$ Styling Area Chart
 
-Additional styling settings can be configured on Area Chart series such marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
+Additional styling settings can be configured on the Area Chart such as marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
 
 
 <code-view style="height: 400px" 
@@ -173,6 +173,12 @@ Polar Spline Area Charts belong to a group of polar charts and have a shape of a
 </code-view>
 
 <div class="divider--half"></div>
+
+## Additional Resources
+- [Axis Annotations](chart-features-axis-options.md)
+- [Axis Options](chart-features-axis-options.md)
+- [Axis Gridlines](chart-features-axis-gridlines.md)
+- [Highlighting](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members

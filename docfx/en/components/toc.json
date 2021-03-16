@@ -479,6 +479,7 @@
           "status": ""
         },
         {
+          "exclude": ["Blazor"],
           "name": "Zoom Slider",
           "href": "zoomslider-overview.md",
           "status": ""

@@ -134,7 +134,10 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Column Chart](chart-types-column.md)
+- [Axis Annotations](chart-features-axis-options.md)
+- [Axis Options](chart-features-axis-options.md)
+- [Axis Gridlines](chart-features-axis-gridlines.md)
+- [Highlighting](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members
