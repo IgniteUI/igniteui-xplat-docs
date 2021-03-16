@@ -82,14 +82,6 @@ The Stacked 100 Spline Chart is identical to the Stacked Spline Chart in all asp
 
 <div class="divider--half"></div>
 
-## Additional Resources
-- [Annotations](chart-features-annotations.md)
-- [Highlighting](chart-features-highlighting.md)
-- [Markers](chart-features-markers.md)
-- [Tooltips](chart-features-tooltips.md)
-- [Trendlines](chart-features-trendlines.md) -->
-
-
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 

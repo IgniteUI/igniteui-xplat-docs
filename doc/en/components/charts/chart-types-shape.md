@@ -36,12 +36,6 @@ The Scatter Polyline Chart belongs to a group of shape charts that take an array
 
 <div class="divider--half"></div>
 
-## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
-
 <!-- TODO list API links used in this topic 
 ## API Members
 -->

@@ -10,9 +10,19 @@ $PlatformShort$ Polar Chart is a group of series that use the polar (angle, radi
 
 Polar Chart draw attention to uneven intervals or clusters of data. They are often used to plot scientific data (e.g. wind direction and speed, direction, and strength of magnetic field, location of objects in solar system), and can highlight the deviation of collected data from predicted results.
 
+
+<code-view style="height: 420px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+           alt="$PlatformShort$ Polar Line Chart" >
+</code-view>
+
+<div class="divider--half"></div>
+
 ## $PlatformShort$ Polar Line Chart
 
 The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the Scatter Line Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
+
 
 <code-view style="height: 420px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -47,12 +57,6 @@ Once our polar chart is created, we may want to make some further styling custom
 </code-view>
 
 <div class="divider--half"></div>
-
-## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members

@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ Stock Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Stock Chart
-_keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
+title: $PlatformShort$ Financial Chart | Data Visualization | Infragistics
+_description: Infragistics' $PlatformShort$ Financial Chart
+_keywords: $PlatformShort$ Charts, Financial Chart, Infragistics
 mentionedTypes: ["XamFinancialChart"]
 ---
-# $PlatformShort$ Stock Chart
+# $PlatformShort$ Financial Chart
 
-$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators. 
+$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of financial indicators. 
 
 The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
@@ -27,7 +27,7 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 - Trend Lines
 - Navigation / Zoombar View
 
-The Stock Chart can be set to display one of the following: 
+The type of Angular Stock Chart can be set to display one of the following: 
 
 - Candlestick Chart 
 - Bar Chart 
@@ -58,7 +58,7 @@ Data Structure:
 
 ## $PlatformShort$ Stock Chart
 
-In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
+In this example the financial chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
 
 <code-view style="height: 400px" 
@@ -71,7 +71,7 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
 
 ## $PlatformShort$ Stock Chart Styling
 
-If you need a Stock Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the stock chart is comparing revenue between Amazon, Microsoft and Tesla.
+If you need a Financial Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the financial chart is comparing revenue between Amazon, Microsoft and Tesla.
 
 
 <code-view style="height: 400px" 
@@ -82,15 +82,12 @@ If you need a Stock Chart with more features such as composite other series, you
 
 <div class="divider--half"></div>
 
+<!-- TODO use this iframe which will point to a new sample:
+<iframe src='{environment:dvDemosBaseUrl}/charts/category-chart-type-Line' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Financial Chart Example"></iframe> -->
+
 ## $PlatformShort$ Chart Annotations
 
-The Crosshair Annotation Layer provides crossing lines that meet at the actual value of every targeted series. Crosshair types include: Horizontal, Vertical, and Both. The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points. Annotations can also be enabled to display the crosshair's value along the axis.
 
-The Final Value Layer provides a quick view along the axis of the ending value displayed in a series.
-
-The Callout Layer displays a callout at X/Y positions. 
-
-Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point to the numeric index of the item, otherwise CalloutsXMemberPath should point to the time value.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -102,180 +99,8 @@ Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point t
 
 ## $PlatformShort$ Chart Panes
 
-The following panes are available:
+In this example, the financial chart is plotting revenue for United States.
 
-- Price Pane - Renders prices using Line, Candlestick, Bar (OHLC), trendlines and financial overlays.
-- Indicator Pane - Renders all the financial indicators in a separate chart while the BollingerBands and PriceChannel overlays are rendered in the Price Pane because they share the same values range on Y-Axis.
-- Volume Pane - Renders stocks volumes using Column, Line, and Area chart types below all above panes.
-- Zoom Pane - Controls the zoom of all the panes and it is always rendered at bottom of the chart.
-
-### Indicator Pane
-Financial Indicators are often used by traders to measure changes and to show trends in stock prices. These indicators are usually displayed below the price pane because they do not share the same Y-Axis scale.
-
-By default the indicator panes are not displayed. The toolbar allows the end user to select which indicator to display at run time.
-In order to display an indicator pane initially, the `IndicatorTypes` property must be set to a least one type of indicator, as demonstrated in the following code:
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    indicatorTypes="AverageTrueRange,ForceIndex">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    indicatorTypes="AverageTrueRange,ForceIndex" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    indicator-types="AverageTrueRange,ForceIndex">
- </igc-financial-chart>
-```
-
-```razor
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.AverageTrueRange);
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
-```
-
-### Volume Pane
-The volume pane represents the number of shares traded during a given period. Low volume would indicate little interest, while high volume would indicate high interest with a lot of trades.  This can be displayed using column, line or area chart types. The toolbar allows the end user to display the volume pane by selecting a chart type to render the data at runtime. In order the display the pane, a volume type must be set, as demonstrated in the following code:
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    volumeType="Column">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    volumeType="Column" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    volume-type="Column">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   VolumeType="FinancialChartVolumeType.Column" />
-```
-
-### Price Pane
-This pane displays stock prices and shows the stock's high, low, open and close prices over time. In addition it can display trend lines and overlays. Your end user can choose different chart types from the toolbar. By default, the chart type is set to `Auto`. You can override the default setting, as demonstrated in the following code:
-
- ```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line" />
-```
-
-Note that is recommended to use line chart type if plotting multiple data sources or if plotting data source with a lot of data points.
-
-### Zoom Pane
-This pane controls the zoom of all the displayed panes. This pane is displayed by default. It can be turned off by setting the `ZoomSliderType` to `none` as demonstrated in the following code:
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    zoomSliderType="none">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    zoomSliderType="none" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    zoom-slider-type="none">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
-
-Note that you should set the `ZoomSliderType` option to the same value as the `ChartType` option is set to. This way, the zoom slider will show correct preview of the price pane. The following code demonstrates how to do this:
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line"
-    zoomSliderType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line"
-    zoomSliderType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line"
-    zoom-slider-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
-
-In this example, the stock chart is plotting revenue for United States.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -284,12 +109,6 @@ In this example, the stock chart is plotting revenue for United States.
 </code-view>
 
 <div class="divider--half"></div>
-
-## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members

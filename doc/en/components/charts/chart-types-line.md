@@ -101,7 +101,7 @@ Data Structure:
 - All data items must contain at least one data column (string or date time)
 - All data items must contain at least one numeric data column
 
-<!-- The following code snippet demonstrates a sample data source that can be used to create a Line Chart:
+The following code snippet demonstrates a sample data source that can be used to create a Line Chart:
 
 ```razor
 public class EnergyRenewableData : List<EnergyRenewableInfo>
@@ -147,7 +147,7 @@ public initData() {
         { Year: "2019", Europe: 80, China: 96,  USA: 38 },
     ];
 }
-``` -->
+```
 
 ## $PlatformShort$ Line Chart with Single Series
 
@@ -209,12 +209,6 @@ Once our chart is set up, we may want to make some further styling customization
 
 <div class="divider--half"></div>
 
-## Additional Resources
-- [Annotations](chart-features-annotations.md)
-- [Highlighting](chart-features-highlighting.md)
-- [Markers](chart-features-markers.md)
-- [Tooltips](chart-features-tooltips.md)
-- [Trendlines](chart-features-trendlines.md) -->
 
 <!-- ## Additional Resources
 

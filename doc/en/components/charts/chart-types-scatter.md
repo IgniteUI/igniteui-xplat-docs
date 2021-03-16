@@ -86,11 +86,6 @@ The Scatter Contour Chart draws colored contour lines based on a triangulation o
 
 <div class="divider--half"></div>
 
-## Additional Resources
-- [Axis Options](chart-features-axis-options.md)
-- [Highlighting](chart-features-highlighting.md)
-- [Markers](chart-features-markers.md)
-
 <!-- TODO list API links used in this topic 
 ## API Members
 -->

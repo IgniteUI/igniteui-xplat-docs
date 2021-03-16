@@ -47,7 +47,7 @@ In this example, the Bubble Chart is comparing the total births and deaths betwe
 
 ## $PlatformShort$ Bubble Chart Styling
 
-The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes and fill scale colors.
+The Bubble Chart contains many of the characteristics of the Scatter Point Chart but with the option to have various radius scale sizes.
 
 In this example, the Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
 
@@ -60,10 +60,6 @@ In this example, the Bubble Chart is comparing the total births and deaths betwe
 
 <div class="divider--half"></div>
 
-## Additional Resources
-- [Axis Options](chart-features-axis-options.md)
-- [Highlighting](chart-features-highlighting.md)
-- [Markers](chart-features-markers.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members
