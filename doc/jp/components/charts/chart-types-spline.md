@@ -61,14 +61,29 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
-<!-- TODO copy and combine content (code snippets, description) from these topics:
-	data-chart-type-stacked-spline-series.md
-    data-chart-type-stacked-100-spline-series.md
--->
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart" 
+           alt="$PlatformShort$ 積層型スプライン チャート" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ 積層型 100 スプライン チャート
+
+積層型 100 スプライン チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型スプライン チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart" 
+           alt="$PlatformShort$ 積層型 100 スプライン チャート" >
+</code-view>
+
+<div class="divider--half"></div>
 
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
 <!-- TODO list API links used in this topic 
-## API メンバー
+## API Members
 -->
