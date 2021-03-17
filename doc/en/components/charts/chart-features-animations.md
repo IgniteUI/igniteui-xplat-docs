@@ -11,9 +11,9 @@ Animations allows you to ease-in the series as it loads a new data source. The a
 
 <code-view style="height: 500px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations" 
            alt="$PlatformShort$ Configuration Options Example" 
-           github-src="charts/category-chart/marker-options">
+           github-src="charts/category-chart/line-chart-with-animations">
 </code-view>
 
 <div class="divider--half"></div>
