@@ -5,9 +5,9 @@ _keywords: $PlatformShort$ Charts, Animations, Infragistics
 mentionedTypes: []
 ---
 
-# $PlatformShort$ Chart Animations
+# $PlatformShort$ Transition Settings
 
-Animations allows you to ease-in the series as it loads a new data source. The available animation differs depending on the type of series involved. For example, the column series animates by rising from the x-axis, a line series animates by drawing from the y-axis.
+Animations allows you to ease-in the series as it loads a new data source. The available animation differs depending on the type of series involved. For example, the column series animates by rising from the x-axis, a line series animates by drawing from the origin of y-axis.
 
 <code-view style="height: 500px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -20,13 +20,13 @@ Animations allows you to ease-in the series as it loads a new data source. The a
 
 ## Transition In Animations
 
-By default, transition in animations are disabled and you can enable transition-in animations by setting the `IsTransitionInEnabled` option to “true”.
+| Members | Description |
+| ------------------|---------------------|
+|`IsTransitionInEnabled`| By default, transition in animations are disabled but you can enable them by setting this property.|
+| `TransitionInDuration` | Specifies how long, in milliseconds, a transition should take.|
+|`TransitionInMode` | Sets the desired transition type. Automatic selection of the transition type based on the series type is possible, too, by setting the property to `Auto` (default). The additional modes consist of multi-directional accordion or sweeping effects.|
 
-Transition in animations can be configured in terms of transition type, speed of the individual data points relative to each other, and the easing transition (managed by an easing function). The chart also resizes the title and subtitle information.
-
-The transition type is configured by setting the transitionInMode option to the desired transition name. Automatic selection of the transition type based on the series type is possible, too, by setting the property to `Auto` (default).
-
-The following code example demonstrates how to enable transition in animations and have the chart accordion in from the right.
+The following code example demonstrates how to enable transition in animations and have the chart accordion in from the right. 
 
 ```razor
 <CategoryChart Height="500px" Width="700px"
