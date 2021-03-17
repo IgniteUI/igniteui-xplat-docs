@@ -22,6 +22,7 @@ $PlatformShort$ 縦棒チャート、縦棒グラフ、または垂直縦棒チ�
 
 縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。この例では、縦棒チャートは月平均気温を使用しています。
 
+
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source" 
@@ -59,6 +60,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 ## $PlatformShort$ ウォーターフォール チャート
 
 ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。
+
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -118,6 +120,12 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 </code-view>
 
 <div class="divider--half"></div>
+
+## その他のリソース
+- [軸の注釈](data-chart-axis-annotations.md)
+- [軸オプション](chart-features-axis-options.md)
+- [軸グリッド線](chart-features-axis-gridlines.md)
+- [チャート強調表示](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members

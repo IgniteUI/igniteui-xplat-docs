@@ -15,6 +15,7 @@ _language: ja
 
 散布ポリゴン チャートは、X/Y 座標の配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリゴンのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
 
+
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series" 
@@ -34,6 +35,12 @@ _language: ja
 </code-view>
 
 <div class="divider--half"></div>
+
+## その他のリソース
+- [軸の注釈](data-chart-axis-annotations.md)
+- [軸オプション](chart-features-axis-options.md)
+- [軸グリッド線](chart-features-axis-gridlines.md)
+- [チャート強調表示](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API Members

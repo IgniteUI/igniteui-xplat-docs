@@ -24,6 +24,7 @@ $PlatformShort$ ドーナツ チャートは円チャートと同様、変数の
 
 これは、以下の季節ごとのデータ表示など、基礎となる共通のカテゴリを持つ層としてデータを表示する必要がある場合に役立ちます:
 
+
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection" 
@@ -32,7 +33,7 @@ $PlatformShort$ ドーナツ チャートは円チャートと同様、変数の
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ ドーナツ チャート - スライスの切り出し
+<!-- ## $PlatformShort$ ドーナツ チャート - スライスの切り出し
 
 $Platform Short$ ドーナツ チャートには、以下のサンプルに示すように、クリックするとチャートの連続輪から外側にスライスを展開する機能があります:
 
@@ -43,7 +44,7 @@ $Platform Short$ ドーナツ チャートには、以下のサンプルに示�
            alt="$PlatformShort$ ドーナツ チャート スライスの切り出し" >
 </code-view>
 
-<div class="divider--half"></div>
+<div class="divider--half"></div> -->
 
 ## $PlatformShort$ ドーナツ チャート - 複数のリング
 
@@ -56,6 +57,10 @@ $PlatformShort$ ドーナツ チャートに複数の輪を表示して、各輪
 </code-view>
 
 <div class="divider--half"></div>
+
+## その他のリソース
+- [チャート アニメーション](chart-features-animations.md)
+- [チャート ツールチップ](chart-features-tooltips.md)
 
 <!-- TODO list API links used in this topic 
 ## API メンバー

@@ -35,6 +35,7 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 以下の例に示すように、ステップ チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
+
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources" 
@@ -55,6 +56,12 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 <div class="divider--half"></div>
 
+## Additional Resources
+- [チャート注釈](chart-features-annotations.md)
+- [チャート強調表示](chart-features-highlighting.md)
+- [チャート マーカー](chart-features-markers.md)
+- [チャート ツールチップ](chart-features-tooltips.md)
+- [チャート トレンドライン](chart-features-trendlines.md)  
 
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->

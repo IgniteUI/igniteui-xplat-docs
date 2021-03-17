@@ -85,6 +85,11 @@ $PlatformShort$ データ チャートの高密度散布図機能を使用して
 
 <div class="divider--half"></div>
 
+## その他のリソース
+- [軸オプション](chart-features-axis-options.md)
+- [チャート強調表示](chart-features-highlighting.md)
+- [チャート マーカー](chart-features-markers.md)
+
 <!-- TODO list API links used in this topic 
 ## API メンバー
 -->

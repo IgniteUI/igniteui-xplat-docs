@@ -102,7 +102,7 @@ ModuleManager.register(
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
 
-次のコード スニペットは、折れ線チャートの作成に使用できるサンプルデータ ソースを示しています:
+<!-- 次のコード スニペットは、折れ線チャートの作成に使用できるサンプルデータ ソースを示しています:
 
 ```razor
 public class EnergyRenewableData : List<EnergyRenewableInfo>
@@ -148,7 +148,7 @@ public initData() {
         { Year: "2019", Europe: 80, China: 96,  USA: 38 },
     ];
 }
-```
+``` -->
 
 ## 単一シリーズの $PlatformShort$ 折れ線チャート
 
@@ -206,6 +206,12 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 <div class="divider--half"></div>
 
+## その他のリソース
+- [チャート注釈](data-chart-axis-annotations.md)
+- [チャート強調表示](chart-features-highlighting.md)
+- [チャート マーカー](chart-features-markers.md)
+- [チャート ツールチップ](chart-features-tooltips.md)
+- [チャート トレンドライン](chart-features-trendlines.md) 
 
 <!-- ## Additional Resources
 

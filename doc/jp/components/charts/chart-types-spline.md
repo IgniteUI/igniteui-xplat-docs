@@ -81,6 +81,13 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <div class="divider--half"></div>
 
+## Additional Resources
+- [チャート注釈](chart-features-annotations.md)
+- [チャート強調表示](chart-features-highlighting.md)
+- [チャート マーカー](chart-features-markers.md)
+- [チャート ツールチップ](chart-features-tooltips.md)
+- [チャート トレンドライン](chart-features-trendlines.md) 
+
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 

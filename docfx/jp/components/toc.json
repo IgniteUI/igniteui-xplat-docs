@@ -41,7 +41,7 @@
     "exclude": ["Angular", "Blazor"],
     "name": "ドック マネージャー",
     "href": "dock-manager.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
       "exclude": ["Blazor", "WebComponents"],
@@ -479,6 +479,7 @@
           "status": ""
         },
         {
+          "exclude": ["Blazor"],
           "name": "ズーム スライダー",
           "href": "zoomslider-overview.md",
           "status": ""

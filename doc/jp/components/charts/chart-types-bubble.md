@@ -47,7 +47,7 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 ## $PlatformShort$ バブル チャートのスタイル設定
 
-バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
+バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズと塗りつぶしスケール色を選択できます。
 
 この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
@@ -59,6 +59,10 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 <div class="divider--half"></div>
 
+## その他のリソース
+- [軸オプション](chart-features-axis-options.md)
+- [チャート強調表示](chart-features-highlighting.md)
+- [チャート マーカー](chart-features-markers.md)
 
 <!-- TODO list API links used in this topic 
 ## API メンバー

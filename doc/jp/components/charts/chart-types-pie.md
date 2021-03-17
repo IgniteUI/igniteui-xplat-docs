@@ -473,6 +473,10 @@ public tick(): void {
 
 <div class="divider--half"></div>
 
+## その他のリソース
+- [チャート アニメーション](chart-features-animations.md)
+- [チャート ツールチップ](chart-features-tooltips.md)
+
 <!-- TODO list API links used in this topic 
 ## API メンバー
 -->

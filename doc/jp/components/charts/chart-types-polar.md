@@ -11,19 +11,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートでは、データの不均等な散らばりやデータの塊に注意が向けられます。これらは、科学データのプロットによく用いられ（たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差を強調表示できます。
 
-
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
-           alt="$PlatformShort$ 極座標型折れ線チャート" >
-</code-view>
-
-<div class="divider--half"></div>
-
 ## $PlatformShort$ 極座標型折れ線チャート
 
 極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、散布折れ線チャートと同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
-
 
 <code-view style="height: 420px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -58,6 +48,12 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 </code-view>
 
 <div class="divider--half"></div>
+
+## その他のリソース
+- [軸の注釈](data-chart-axis-annotations.md)
+- [軸オプション](chart-features-axis-options.md)
+- [軸グリッド線](chart-features-axis-gridlines.md)
+- [チャート強調表示](chart-features-highlighting.md)
 
 <!-- TODO list API links used in this topic 
 ## API メンバー
