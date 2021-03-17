@@ -21,13 +21,13 @@ mentionedTypes: []
 
 The $ProductName$ category chart component can enable three types of highlighting when hovering over items.
 
-1. Series Highlighting will highlight the single data point when the pointer is positioned over it.
+1. Series Highlighting will highlight the single data point represented by a marker or column when the pointer is positioned over it. This is enabled by setting the `IsSeriesHighlightingEnabled` property to true.
 
-2. Item Highlighting highlights items in a series either by drawing a banded shape at their position or by rendering a marker at their position.
+2. Item Highlighting highlights items in a series either by drawing a banded shape at their position or by rendering a marker at their position. This is enabled by setting the `IsItemHighlightingEnabled` property to true.
 
-3. Category Highlighting targets all category axes in the chart. They draw a shape that illuminates the area of the axis closest to the pointer position.
+3. Category Highlighting targets all category axes in the chart. They draw a shape that illuminates the area of the axis closest to the pointer position. This is enabled by setting the `IsCategoryHighlightingEnabled` property to true.
 
-```razor
+<!-- ```razor
 <CategoryChart Height="500px" Width="700px"
     DataSource="@DataSource"
     IsSeriesHighlightingEnabled="true"
@@ -61,4 +61,4 @@ The $ProductName$ category chart component can enable three types of highlightin
     is-category-highlighting-enabled="true"
     is-item-highlighting-enabled="true" >
 </igc-category-chart>
-```
+``` -->
