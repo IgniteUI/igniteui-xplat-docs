@@ -4,9 +4,9 @@ _description: Infragistics' $PlatformShort$ Column Chart
 _keywords: $PlatformShort$ Charts, Column Chart, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
-# $PlatformShort$ Column Charts
+# $PlatformShort$ Column Chart
 
-$PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by vertical Columns or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. The Column Chart is paired with a CategoryXAxis and a NumericYAxis.
+The $ProductName$ Column Chart is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points. A Column Chart emphasizes the amount of change over a period of time or compares multiple items. Values are represented on the Y-Axis (NumericYAxis) and categories are displayed on the X-Axis (CategoryXAxis).
 
 
 <code-view style="height: 400px" 
@@ -16,6 +16,32 @@ $PlatformShort$ Column Charts, Column Graphs, or Vertical Column Charts, are amo
 </code-view>
 
 <div class="divider--half"></div>
+
+Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
+
+A Column Chart uses the same concepts of data plotting as the Bar Chart but data points are stretched along a horizontal line (X-Axis) rather than vertical line (Y-Axis). In other words, the Column Chart is rendered like the Bar Chart but with 90 degrees counter-clockwise rotation.
+
+There are several uses cases for a Column Chart. When you:
+
+- Need to compare data values of related categories.
+- Need to compare data over a time period.
+- Need to display negative values as well as positive values in the same data set.
+- Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
+
+Column Chart Best Practices:
+
+- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
+- Order time-series data from left to right.
+
+Do not Use a Column Chart When:
+
+- You have many (more than 10 or 12) series of data. Your goal is to ensure the chart is readable.
+
+Data Structure: 
+
+- The data model must contain at least one numeric property.
+- The data model may contain an options string or date-time property for labels.
+- The data source should contain at least one data item.
 
 ## $PlatformShort$ Column Chart with Single Series
 
@@ -59,7 +85,7 @@ The $PlatformShort$ Column Chart has many options for styling and modification o
 
 ## $PlatformShort$ Waterfall Chart
 
-Waterfall Chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value.
+The Waterfall Chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value. The Waterfall Chart is similar in appearance to the Range Column Chart, but it requires only one numeric data column rather than two columns for each data point. 
 
 
 <code-view style="height: 400px" 
@@ -72,7 +98,9 @@ Waterfall Chart belongs to a group of category charts and it is rendered using a
 
 ## $PlatformShort$ Stacked Column Chart
 
-The Stacked Column chart is identical to the Column Chart in all aspects, except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+The Stacked Column Chart is identical to the Column Chart in all aspects, except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the Y-Axis, and all negative values are grouped on the negative side of the Y-Axis. The Stacked Column Chart uses the same concepts of data plotting as the Stacked Bar Chart but data points are stacked along vertical line (Y-Axis) rather than along horizontal line (X-Axis).
+
+Renewable electricity produced between USA, Europe and China is demonstrated in the example below. 
 
 
 <code-view style="height: 400px" 
@@ -85,7 +113,9 @@ The Stacked Column chart is identical to the Column Chart in all aspects, except
 
 ## $PlatformShort$ Stacked 100 Column Chart
 
-The Stacked 100 Column Chart is identical to the Stacked Column Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Column presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+The Stacked 100 Column Chart is identical to the Stacked Column Chart in all aspects except in their treatment of the values on Y-Axis. Instead of presenting a direct representation of the data, the Stacked 100 Column Chart presents the data in terms of percent of the sum of all values in a data point.  
+
+The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers. 
 
 
 <code-view style="height: 400px" 
@@ -98,9 +128,11 @@ The Stacked 100 Column Chart is identical to the Stacked Column Chart in all asp
 
 ## $PlatformShort$ Range Column Chart
 
-The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the X-Axis.
+The $ProductName$ Range Column Chart belongs to a group of range charts and is rendered using vertical rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the bottom like the traditional Column Chart. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the Y-Axis and categories are displayed on the X-Axis. 
 
-In this Range Column Chart example, weather data variance between high and low temperatures by month is shown.
+The Range Column chart is identical to the Range Area chart in all aspects except that the ranges are represented as a set of vertical columns rather than filled area.  
+
+In this Range Column Chart example, weather data variance between high and low temperatures by month is shown. 
 
 
 <code-view style="height: 400px" 
@@ -113,8 +145,9 @@ In this Range Column Chart example, weather data variance between high and low t
 
 ## $PlatformShort$ Radial Column Chart
 
-The Radial Column Chart belongs to a group of radial charts, and is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the Column Chart, but wraps data points around a circle rather than stretching them along a horizontal line.
+The Radial Column Chart belongs to a group of radial charts, and is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the Column Chart, but wraps data points around a circle rather than stretching them along a horizontal line. 
 
+In this Radial Column chart sample, player stats are compared against different soccer skills. 
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 

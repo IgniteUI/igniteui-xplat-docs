@@ -6,8 +6,9 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
 # $PlatformShort$ Area Chart
 
-$PlatformShort$ Area Chart, or Area Graph, is a type of category area chart that shows a collection of points connected by straight line segments with the area below the line filled in. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. Area Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. You can include one or more data sets to compare, which would render as multiple areas in the chart.
+The $ProductName$ Area Chart is based on a line or spline series. Therefore, it is often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
+An Area Chart is rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). Area Charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -16,6 +17,40 @@ $PlatformShort$ Area Chart, or Area Graph, is a type of category area chart that
 </code-view>
 
 <div class="divider--half"></div>
+
+Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
+
+An Area Chart is similar to a Line Chart in that data points are plotted and connected by straight line segments, however they differ because with an Area Chart, the area between the X-Axis and the line is filled in.
+
+The AreaSeries is identical to the SplineAreaSeries in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
+
+There are several use cases for an Area Chart. When you:
+
+- Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
+- Need to compare the trends of your data over time.
+- Want to show the difference between 2 or more data series.
+- Want to show cumulative part-to-whole comparisons of distinct categories.
+- Need to show data trends for one or more categories for comparative analysis.
+- Need to visualize details time-series data.
+
+Area Chart best practices:
+
+- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
+- Order time-series data from left to right.
+- Use transparent colors to ensure that data that is plotted behind another series is not blocked.
+
+Do not use an Area Chart when:
+
+- You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
+- Time-series data has similar values (data over the same period). This makes overlapped shaded areas impossible to differentiate.
+
+Data Structure:
+
+- The data source must be an array or a list of data items (for single series).
+- The data source must be an array of arrays or a list of lists (for multiple series).
+- The data source should contain two or more data items in order to render a line between them.
+- All data items must contain at least one data column (string or date time).
+- All data items must contain at least one numeric data column.
 
 ## $PlatformShort$ Area Chart with Single Series 
 
@@ -32,7 +67,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-$PlatformShort$ Area Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for Europe, China and the USA, and the area chart will automatically update to fit the additional data.
+Similarly to how you can show multiple series with Line and Spline Charts, you may also combine multiple series in an Area Chart.
 
 
 <code-view style="height: 400px" 
@@ -45,7 +80,7 @@ $PlatformShort$ Area Chart allows you to combine multiple series and compare or 
 
 ## $PlatformShort$ Styling Area Chart
 
-Additional styling settings can be configured on the Area Chart such as marker outlines, marker brushes, series brushes, and series outlines as demonstrated below.
+Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly.  
 
 
 <code-view style="height: 400px" 
@@ -71,8 +106,7 @@ The Step Area Chart belongs to a group of category charts and it is rendered usi
 
 ## $PlatformShort$ Range Area Chart
 
-The Range Area Chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low and high values for the same data point over a period of time. This is demonstrated in the sample below, showing the high and low temperature for New York City for a particular month in the year 2020.
-
+Sometimes instead of showing the area you may want to show the area for a range between two values over time.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -84,7 +118,7 @@ The Range Area Chart belongs to a group of range charts and is rendered using tw
 
 ## $PlatformShort$ Stacked Area Chart
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area charts follow all the same requirements as area charts, the only difference is that visually the shaded areas are stacked on top of each other. Renewable electricity produced between USA, Europe and China is demonstrated in the example below.
+Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as Area Charts, with the only difference being that visually, the shaded areas are stacked on top of each other.   
 
 
 <code-view style="height: 400px" 
@@ -97,7 +131,7 @@ Stacked Area Charts are rendered using a collection of points connected by line 
 
 ## $PlatformShort$ Stacked 100 Area Chart 
 
-The Stacked 100 Area Chart is identical to the Stacked Area Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Area presents the data in terms of percent of the sum of all values in a data point. Sometimes the series represent part of a whole being changed over time e.g. a country’s energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea. 
+Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
 
 
 <code-view style="height: 400px" 
