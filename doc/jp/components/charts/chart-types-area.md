@@ -7,8 +7,9 @@ _language: ja
 ---
 # $PlatformShort$ エリア チャート
 
-$PlatformShort$ エリア チャート (エリア グラフ) は、線の下のエリアが塗りつぶされた直線セグメントで接続されたポイントのコレクションを示すカテゴリ エリア チャートの一種です。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。エリア チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数のエリアとして描画されます。
+The $ProductName$ Area Chart is based on a line or spline series. Therefore, it is often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
+An Area Chart is rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). Area Charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -17,6 +18,40 @@ $PlatformShort$ エリア チャート (エリア グラフ) は、線の下の�
 </code-view>
 
 <div class="divider--half"></div>
+
+このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+
+An Area Chart is similar to a Line Chart in that data points are plotted and connected by straight line segments, however they differ because with an Area Chart, the area between the X-Axis and the line is filled in.
+
+The AreaSeries is identical to the SplineAreaSeries in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
+
+There are several use cases for an Area Chart. When you:
+
+- Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
+- Need to compare the trends of your data over time.
+- Want to show the difference between 2 or more data series.
+- Want to show cumulative part-to-whole comparisons of distinct categories.
+- Need to show data trends for one or more categories for comparative analysis.
+- Need to visualize details time-series data.
+
+Area Chart best practices:
+
+- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
+- Order time-series data from left to right.
+- Use transparent colors to ensure that data that is plotted behind another series is not blocked.
+
+Do not use an Area Chart when:
+
+- You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
+- Time-series data has similar values (data over the same period). This makes overlapped shaded areas impossible to differentiate.
+
+Data Structure:
+
+- The data source must be an array or a list of data items (for single series).
+- The data source must be an array of arrays or a list of lists (for multiple series).
+- The data source should contain two or more data items in order to render a line between them.
+- All data items must contain at least one data column (string or date time).
+- All data items must contain at least one numeric data column.
 
 ## 単一シリーズの $PlatformShort$ エリア チャート
 
@@ -33,7 +68,7 @@ $PlatformShort$ エリア チャート (エリア グラフ) は、線の下の�
 
 ## 複数シリーズの $PlatformShort$ エリア チャート
 
-$PlatformShort$ エリア チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。ヨーロッパ、中国と米国のデータを含むデータ ソースにバインドするだけで、エリア チャートは追加データに合わせて自動的に更新されます。
+Similarly to how you can show multiple series with Line and Spline Charts, you may also combine multiple series in an Area Chart.
 
 
 <code-view style="height: 400px" 
@@ -46,7 +81,7 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 ## $PlatformShort$ エリア チャートのスタイル設定
 
-以下に示すように、マーカー アウトライン、マーカー ブラシ、シリーズ ブラシ、シリーズ アウトラインなど、追加のスタイル設定をエリア チャート シリーズで構成できます。
+Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly.
 
 
 <code-view style="height: 400px" 
@@ -72,8 +107,7 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 ## $PlatformShort$ 範囲エリア チャート
 
-範囲エリア チャートは、範囲チャートのグループに属し、塗りつぶされる線の間の領域で 2 つの線を描画します。このタイプのシリーズは、一定時間にわたる同一データ ポイントにおける安値と高値間の変更量を強調します。これは以下のサンプルで示され、2020 年の特定の月のニュー ヨーク市の最高気温と最低気温を示しています。
-
+Sometimes instead of showing the area you may want to show the area for a range between two values over time.
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -85,7 +119,7 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 ## $PlatformShort$ 積層型エリア チャート
 
-積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。以下の例では、米国、ヨーロッパ、中国の間で生成された再生可能電力を示しています。
+積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。
 
 
 <code-view style="height: 400px" 
@@ -98,7 +132,7 @@ $PlatformShort$ エリア チャートを使用すると、複数のシリーズ
 
 ## $PlatformShort$ 積層型 100 エリア チャート 
 
-積層型 100 エリア チャートは、Y 軸上の値の取り扱いを除いたすべての面で 積層型エリア シリーズと同じです。データを直接表現するのでなく、積層型 100 エリア シリーズは、データ ポイント内のすべての値の合計の割合でデータを表します。このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合、積層されたすべての要素を均等に表すことをお勧めします。
+このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合、積層されたすべての要素を均等に表すことをお勧めします。
 
 
 <code-view style="height: 400px" 
