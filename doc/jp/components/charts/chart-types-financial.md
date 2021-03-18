@@ -83,7 +83,7 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 
 ## $PlatformShort$ チャートの注釈
 
-Crosshair Annotation Layer は、各ターゲット シリーズの実際の値に一致する十字線を提供します。Crosshair タイプは、Horizontal、Vertical、Both があります。`crosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
+十字線注釈レイヤーは、各ターゲット シリーズの実際の値に一致する十字線を提供します。十字線タイプは、Horizontal、Vertical、Both があります。`crosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
 
 最終値レイヤーは、シリーズに表示された最終値の軸に沿ったクイックビューをサポートします。
 
