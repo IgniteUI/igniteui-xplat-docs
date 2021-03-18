@@ -1,6 +1,6 @@
 ---
-title: $PlatformShort$ Bar Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Bar Chart
+title: $PlatformShort$ Bar Charts and Graphs | $ProductName$
+_description: $PlatformShort$ Bar Charts are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics
 mentionedTypes: ["XamDataChart"]
 ---
@@ -8,6 +8,7 @@ mentionedTypes: ["XamDataChart"]
 
 $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a Column Chart, or Column Graph, where bars are displayed vertically (up and down), the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation and a horizontal display (left to right).
 
+In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars. 
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -17,6 +18,8 @@ $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the 
 
 <div class="divider--half"></div>
 
+## Are $PlatformShort$ Bar Charts right for your project?
+
 There are several common use cases for choosing a Bar Chart:
 
 - You need to show trends over time or a numeric value change in a category of data
@@ -25,14 +28,14 @@ There are several common use cases for choosing a Bar Chart:
 - You want to show top or bottom percentage of categories
 - Analyzing multiple data points grouped in sub-categories (Stacked Bar)
 
-The $PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+### $PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
 
 - Grouped Bar Chart
 - Stacked Bar Chart
 - Polar Bar Chart
 - Stacked 100 Bar Chart
 
-Bar Chart Best Practices:
+### Bar Chart Best Practices:
 
 - Start you numeric Axis at 0
 - Use a single color for the bars
@@ -40,19 +43,19 @@ Bar Chart Best Practices:
 - Be sure ranking or comparing ordered categories (items) are  sorted in increasing or decreasing order
 - Right-align category values on the Y-Axis (left side labels of chart) for readability
 
-Don't Use a Bar Chart When:
+### Don't Use a Bar Chart When:
 
 - You have too much data so the Y-Axis can't fit in the space or is not legible
 - You need a Detailed Time-Series analysis  - consider a Line Chart with a Time-Series for this type of data.
 
-Bar Chart Data Structure:
+### Bar Chart Data Structure:
 
 - The data source must be an array or a list of data items
 - The data source must contain at least one data item
 - The list must contain at least one data column (string or date time)
 - The list must contain at least one numeric data column
 
-Common $PlatformShort$ Bar Chart Scenarios:
+### Common $PlatformShort$ Bar Chart Scenarios:
 
 - Sales Management
 - Inventory Management

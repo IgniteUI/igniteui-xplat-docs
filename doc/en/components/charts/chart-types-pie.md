@@ -1,12 +1,22 @@
 ---
-title: $PlatformShort$ Pie Chart | Data Visualization Tool | Infragistics
-_description: Use Infragistics' $PlatformShort$ pie chart to create a colorful pie chart to display categorical data. Learn about the $ProductName$ pie chart configurable elements!
+title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
+_description: The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 ---
 # $PlatformShort$ Pie Chart Overview
 
 $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
+
+This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
+           alt="$PlatformShort$ Pie Chart Overview" >
+</code-view>
+
+<div class="divider--half"></div>
 
 Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include: 
 
@@ -46,19 +56,6 @@ Do Not Use Pie Chart When:
 - Requiring precise data comparison —use a Bar, Line or Area chart.
 - You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story.
 - It would be easier for the viewer to perceive the value difference in a Bar chart.
-
-## $PlatformShort$ Pie Chart Example
-
-This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
-
-
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
-           alt="$PlatformShort$ Pie Chart Overview" >
-</code-view>
-
-<div class="divider--half"></div>
 
 <!-- Blazor -->
 In order to use the $PlatformShort$ Pie Chart, the following module is first required to be added to your application:
