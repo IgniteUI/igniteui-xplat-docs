@@ -56,9 +56,7 @@ Note that in order to synchronize either vertically and/or horizontally, you wil
 The following code snippet demonstrates how to synchronize a pair of chart controls in the $ProductName$ data chart:
 
 ```razor
-<DataChart Height="600px" 
-    Width="100%"
-    @ref="Chart1"
+<DataChart Width="600px" Height="400px" @ref="Chart1"
     DataSource="DataSource1"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"
@@ -67,9 +65,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     SynchronizedVertically="true">
 </DataChart>
 
-<DataChart Height="600px" 
-    Width="100%"
-    @ref="Chart2"
+<DataChart Width="600px" Height="400px" @ref="Chart2"
     DataSource="DataSource2"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"
@@ -80,9 +76,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```html
-<igx-data-chart width="600px"
-    height="400px"
-    #chart1
+<igx-data-chart width="600px" height="400px" #chart1
     [dataSource]="DataSource1"
     isHorizontalZoomEnabled=true
     isVerticalZoomEnabled=true
@@ -91,9 +85,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     synchronizeVertically=true>
 </igx-data-chart>
 
-<igx-data-chart width="600px"
-    height="400px"
-    #chart2
+<igx-data-chart width="600px" height="400px" #chart2
     [dataSource]="DataSource2"
     isHorizontalZoomEnabled=true
     isVerticalZoomEnabled=true
@@ -104,9 +96,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```tsx
-<IgrDataChart width="600px"
-    height="400px"
-    ref={this.chart1}
+<IgrDataChart width="600px" height="400px" ref={this.chart1} 
     dataSource={this.state.dataSource1}
     isHorizontalZoomEnabled={true}
     isVerticalZoomEnabled={true}
@@ -114,9 +104,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     synchronizeHorizontally={true}
     synchronizeVertically={true} />
 
-<IgrDataChart width="600px"
-    height="400px"
-    ref={this.chart2}
+<IgrDataChart width="600px" height="400px" ref={this.chart2}
     dataSource={this.state.dataSource2}
     isHorizontalZoomEnabled={true}
     isVerticalZoomEnabled={true}
@@ -126,10 +114,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```html
-<igc-data-chart 
-    width="600px"
-    height="400px"
-    id="chart1"
+<igc-data-chart width="600px" height="400px" id="chart1" 
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"
@@ -137,10 +122,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     synchronize-vertically="true">
 </igc-data-chart>
 
-<igc-data-chart 
-    width="600px"
-    height="400px"
-    id="chart2"
+<igc-data-chart width="600px" height="400px" id="chart2" 
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"
