@@ -17,6 +17,34 @@ The $ProductName$ data chart component allows for synchronization with respect t
 
 <div class="divider--half"></div>
 
+## Required Modules
+
+In order to use navigation in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
+
+```razor
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
+
+```ts
+import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
+
+@NgModule({
+    imports: [ IgxDataChartInteractivityModule ]
+})
+```
+
+```ts
+import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
+
+IgrDataChartInteractivityModule.register();
+```
+
+```ts
+import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
+
+IgcDataChartInteractivityModule.register();
+```
+
 There are four options of chart synchronization, in that you can synchronize horizontally only, vertically only, both, or you can choose not to synchronize at all, which is the default.
 
 If you want to synchronize a set of charts, you can assign them the same name to the `SyncChannel` property and then specify whether or not to synchronize the charts horizontally and/or vertically by setting the `SynchronizeHorizontally` and `SynchronizeVertically` properties to the corresponding boolean value.
@@ -30,29 +58,32 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```razor
 <DataChart Height="600px" 
     Width="100%"
+    @ref="Chart1"
+    DataSource="DataSource1"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"
     SyncChannel="ChannelA"
     SynchronizedHorizontally="true"
     SynchronizedVertically="true">
-
 </DataChart>
 
 <DataChart Height="600px" 
     Width="100%"
+    @ref="Chart2"
+    DataSource="DataSource2"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"
     SyncChannel="ChannelA"
     SynchronizedHorizontally="true"
     SynchronizedVertically="true">
-
 </DataChart>
 ```
 
 ```html
 <igx-data-chart width="600px"
     height="400px"
-    [dataSource]="data"
+    #chart1
+    [dataSource]="DataSource1"
     isHorizontalZoomEnabled=true
     isVerticalZoomEnabled=true
     syncChannel="ChannelA"
@@ -62,7 +93,8 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 
 <igx-data-chart width="600px"
     height="400px"
-    [dataSource]="data"
+    #chart2
+    [dataSource]="DataSource2"
     isHorizontalZoomEnabled=true
     isVerticalZoomEnabled=true
     syncChannel="ChannelA"
@@ -74,17 +106,18 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```tsx
 <IgrDataChart width="600px"
     height="400px"
-    dataSource={this.data}
+    ref={this.chart1}
+    dataSource={this.state.dataSource1}
     isHorizontalZoomEnabled={true}
     isVerticalZoomEnabled={true}
     syncChannel="ChannelA"
     synchronizeHorizontally={true}
     synchronizeVertically={true} />
 
-
 <IgrDataChart width="600px"
     height="400px"
-    dataSource={this.data}
+    ref={this.chart2}
+    dataSource={this.state.dataSource2}
     isHorizontalZoomEnabled={true}
     isVerticalZoomEnabled={true}
     syncChannel="ChannelA"
@@ -93,9 +126,10 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```html
-<igc-data-chart id="chart1"
+<igc-data-chart 
     width="600px"
     height="400px"
+    id="chart1"
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"
@@ -103,9 +137,10 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     synchronize-vertically="true">
 </igc-data-chart>
 
-<igc-data-chart id="chart2"
+<igc-data-chart 
     width="600px"
     height="400px"
+    id="chart2"
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"

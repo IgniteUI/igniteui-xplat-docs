@@ -17,6 +17,8 @@ In the $PlatformShort$ data chart component, navigation is disabled by default. 
 
 <div class="divider--half"></div>
 
+## Required Modules
+
 In order to use navigation in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
 
 ```razor
@@ -43,13 +45,15 @@ import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 IgcDataChartInteractivityModule.register();
 ```
 
-## Data Chart UI Navigation Overview
+## Chart Navigation with User Interactions
 
 In order to allow navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart to true, depending on the direction that you wish to allow zooming. This will allow you to zoom the data chart by rolling a mouse wheel over it.
 
 It is also possible to zoom or pan simply by clicking the buttons on the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to `DragZoom` and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either `DragPan` to allow panning or `None` to prevent these operations.
 
 The following code snippet demonstrates how you can enable base UI navigation in the $PlatformShort$ data chart component:
+
+Note, this also applies to `CategoryChart` and `FinancialChart`.
 
 ```razor
 <DataChart Height="400px" Width="100%"
@@ -85,7 +89,7 @@ The following code snippet demonstrates how you can enable base UI navigation in
 </igc-data-chart>
 ```
 
-## Data Chart Navigation with Mouse and Keyboard
+## Chart Navigation with Mouse and Keyboard
 
 Navigation in the $PlatformShort$ data chart component can happen with either the mouse or the keyboard once enabled. The following operations can be invoked using the following mouse or keyboard operations by default:
 
@@ -104,7 +108,9 @@ The zoom and pan operations can also be enabled by using modifier keys by settin
 - Apple Key
 - None
 
-The following code snippet demonstrates how you can enable UI navigation in the data chart. The following will only allow zooming while holding the **Shift** key and panning while holding the **Alt** key:
+The following code snippet demonstrates how you can enable UI navigation in the chart. The following will only allow zooming while holding the **Shift** key and panning while holding the **Alt** key:
+
+Note, this also applies to `CategoryChart` and `FinancialChart`.
 
 ```razor
 <DataChart Height="400px" Width="100%"
@@ -179,13 +185,13 @@ The following code snippet demonstrates how to enable the overview plus detail p
 </IgrDataChart>
 ``` -->
 
-## Data Chart Navigation through Code
+## Chart Navigation through Code
 
 The $PlatformShort$ data chart component provides several navigation properties that are updated each time a zoom or pan operation happens in the data chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
 
 - `WindowPositionHorizontal`: A numeric value describing the X portion of the content view rectangle displayed by the data chart.
 - `WindowPositionVertical`: A numeric value describing the Y portion of the content view rectangle displayed by the data chart.
-- `WindowRect`: An `IgRect` object representing a rectangle that represents the portion of the chart that is currently in view. For example, a `WindowRect` of "0, 0, 1, 1" would be the entirety of the data chart.
+- `WindowRect`: An `Rect` object representing a rectangle that represents the portion of the chart that is currently in view. For example, a `WindowRect` of "0, 0, 1, 1" would be the entirety of the data chart.
 - `WindowScaleHorizontal`: A numeric value describing the width portion of the content view rectangle displayed by the data chart.
 - `WindowScaleVertical`: A numeric value describing the height portion of the content view rectangle displayed by the data chart.
 
