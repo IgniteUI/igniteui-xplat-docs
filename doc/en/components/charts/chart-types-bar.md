@@ -28,7 +28,7 @@ There are several common use cases for choosing a Bar Chart:
 - You want to show top or bottom percentage of categories
 - Analyzing multiple data points grouped in sub-categories (Stacked Bar)
 
-### $PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+$PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
 
 - Grouped Bar Chart
 - Stacked Bar Chart

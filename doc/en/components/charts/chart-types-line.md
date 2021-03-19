@@ -25,7 +25,7 @@ In the following example, the line chart is comparing the generation of renewabl
 - Different than an area chart, the line chart does not fill the area between the X-Axis (bottom axis) and the line.
 - The $PlatformShort$ line chart is identical to the $PlatformShort$ spline chart in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
 
-### A Line Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+A Line Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
 
 - Layered Line Chart
 - Stacked Line Chart
