@@ -479,6 +479,11 @@
           "status": ""
         },
         {
+          "name": "Chart Value Overlays",
+          "href": "charts/chart-features-value-overlays.md",
+          "status": ""
+        },
+        {
           "exclude": ["Blazor"],
           "name": "Zoom Slider",
           "href": "zoomslider-overview.md",
