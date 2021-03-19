@@ -13,7 +13,7 @@ The $PlatformShort$ financial stock chart has support for trendlines, which help
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-trendlines" 
            alt="$PlatformShort$ Trendlines Example" 
-           github-src="charts/data-chart/series-trendlines">
+           github-src="charts/financial-chart/trendlines">
 </code-view>
 
 <div class="divider--half"></div>
@@ -43,7 +43,7 @@ The following code snippet demonstrates how to add a trendline to a series in th
 <FinancialChart 
     Width="100%"
     Height="100%"
-    ChartType=FinancialChartType.Bar
+    ChartType="FinancialChartType.Bar"
     Thickness=2
     DataSource="DataSource"
     TrendLineType="QuinticFit"
@@ -58,7 +58,7 @@ The following code snippet demonstrates how to add a trendline to a series in th
     height="100%"
     chartType="Bar"
     dataSource="[DataSource]"
-    trendLineType="@TrendLineType"
+    trendLineType="QuinticFit"
     trendLineThickness="2"
     trendLinePeriod="10"
     trendLineBrushes="Blue">
