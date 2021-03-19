@@ -41,7 +41,7 @@ The Scatter Spline Chart belongs to a group of scatter charts that use the Carte
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-spline-chart" 
            alt="$PlatformShort$ Scatter Spline Chart" >
 </code-view>
 

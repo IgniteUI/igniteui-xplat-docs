@@ -1,6 +1,6 @@
 ---
-title: $PlatformShort$ Line Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Line Chart
+title: $PlatformShort$ Line Charts and Graphs | $ProductName$
+_description: The $PlatformShort$ Line Chart component is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
@@ -10,6 +10,7 @@ $PlatformShort$ Line Chart, or Line Graph, is a type of category line graph that
 
 With multiple series, our $PlatformShort$ Line Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart`. This gives the benefit for our users to more easily comprehend what data set each line corresponds to.
 
+In the following example, the line chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year. 
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -19,50 +20,9 @@ With multiple series, our $PlatformShort$ Line Chart requires more visual indica
 
 <div class="divider--half"></div>
 
-In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
+## Are $PlatformShort$ Line Charts right for your project?
 
-<!-- Blazor -->
-```razor
-CategoryChartModule.Register(IgniteUIBlazor);
-```
-<!-- end: Blazor -->
-
-<!-- Angular -->
-```ts
-// app.module.ts
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
-
-@NgModule({
-    imports: [
-        // ...
-        IgxCategoryChartModule,
-        // ...
-    ]
-})
-export class AppModule {}
-```
-<!-- end: Angular -->
-
-<!-- React -->
-```ts
-import { IgrCategoryChartModule } from 'igniteui-react-charts';
-
-IgrCategoryChartModule.register();
-```
-<!-- end: React -->
-
-<!-- WebComponents -->
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
-
-ModuleManager.register(
-    IgcCategoryChartModule
-    );
-```
-<!-- end: WebComponents -->
-
-- Different than a line chart, the area chart fills the area between the X-Axis (bottom axis) and the line representing the data value with color or texture to visually represent volume.
+- Different than an area chart, the line chart does not fill the area between the X-Axis (bottom axis) and the line.
 - The $PlatformShort$ line chart is identical to the $PlatformShort$ spline chart in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
 
 A Line Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
@@ -73,7 +33,7 @@ A Line Chart includes several variants based on your data or how you want to tel
 - Polar Line Chart
 - Stacked 100 Line Chart
 
-There are several use cases for a Line Chart. When you:
+### There are several use cases for a Line Chart. When you:
 
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming and Drill-down
 - Need to compare the trends over time
@@ -82,18 +42,18 @@ There are several use cases for a Line Chart. When you:
 - Need to show data trends for one or more categories for comparative analysis
 - Need to visualize detailed time-series data
 
-Line Chart Best Practices:
+### Line Chart Best Practices:
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate
 - Order time-series data  from left to right
 - Use visual attributes like solid lines to show a series of data
 
-Do not Use a Line Chart When:
+### Do not Use a Line Chart When:
 
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
 - Time-series data has similar values (data over the same period), it makes overlapped lines impossible to differentiate.
 
-Data Structure:
+### Data Structure:
 
 - The data source must be an array or a list of data items (for single series)
 - The data source must be an array of arrays or a list of lists (for multiple series)
@@ -148,6 +108,50 @@ public initData() {
     ];
 }
 ``` -->
+
+In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
+
+<!-- Blazor -->
+```razor
+CategoryChartModule.Register(IgniteUIBlazor);
+```
+<!-- end: Blazor -->
+
+<!-- Angular -->
+```ts
+// app.module.ts
+import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+
+@NgModule({
+    imports: [
+        // ...
+        IgxCategoryChartModule,
+        // ...
+    ]
+})
+export class AppModule {}
+```
+<!-- end: Angular -->
+
+<!-- React -->
+```ts
+import { IgrCategoryChartModule } from 'igniteui-react-charts';
+
+IgrCategoryChartModule.register();
+```
+<!-- end: React -->
+
+<!-- WebComponents -->
+```ts
+import { ModuleManager } from 'igniteui-webcomponents-core';
+import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
+
+ModuleManager.register(
+    IgcCategoryChartModule
+    );
+```
+<!-- end: WebComponents -->
+
 
 ## $PlatformShort$ Line Chart with Single Series
 

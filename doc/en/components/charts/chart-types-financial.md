@@ -1,12 +1,20 @@
 ---
-title: $PlatformShort$ Stock Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Stock Chart
+title: $PlatformShort$ Stock/Financial Charts | $ProductName$
+_description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
 mentionedTypes: ["XamFinancialChart"]
 ---
 # $PlatformShort$ Stock Chart
 
-$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators. 
+$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
+
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
+           alt="$PlatformShort$ Stock Index Chart" >
+</code-view>
+
+<div class="divider--half"></div>
 
 The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
@@ -51,8 +59,6 @@ Data Structure:
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
            alt="$PlatformShort$ Stock Index Chart" >
 </code-view>
-
-<div class="divider--half"></div>
 
 <div class="divider--half"></div>
 

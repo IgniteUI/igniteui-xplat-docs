@@ -1,6 +1,6 @@
 ---
-title: $PlatformShort$ Charts & Graphs Library | Data Visualization | Infragistics | $ProductName$
-_description: Visualize any type of data, business, financial, scientific, and scatter, with the capability of millisecond updates with millions of data points in your $PlatformShort$ apps.
+title: $PlatformShort$ Charts & Graphs Library | $ProductName$
+_description: $ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: $PlatformShort$ Charts, Chart, Infragistics
 ---
 # $PlatformShort$ Charts & Graphs Overview
