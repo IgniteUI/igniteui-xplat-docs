@@ -12,7 +12,6 @@ The $ProductName$ data chart component allows for placement of horizontal or ver
 
 ## $PlatformShort$ Value Overlay Example
 
-
 <code-view style="height: 500px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay" 
@@ -75,9 +74,6 @@ The following code snippet demonstrates adding a value overlay with axis annotat
 ```ts
 let chart = (document.getElementById("chart") as IgcDataChartComponent);
 chart.dataSource = data;
-
-let legend = (document.getElementById("legend") as IgcLegendComponent);
-chart.legend = legend;
 
 let xAxis = (document.getElementById("xAxis") as IgcCategoryXAxisComponent);
 let yAxis = (document.getElementById("yAxis") as IgcNumericYAxisComponent);
