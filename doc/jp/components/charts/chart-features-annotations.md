@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート注釈
 
-This topic provides conceptual information about the annotations and overlay interactions available on the $ProductName$ category chart component.
+このトピックでは、$ProductName$ カテゴリ チャート コンポーネントで使用できる注釈とオーバーレイの操作に関する概念情報を提供します。
 
 ## $PlatformShort$ 注釈の例
 
@@ -21,9 +21,9 @@ This topic provides conceptual information about the annotations and overlay int
 
 <div class="divider--half"></div>
 
-## Crosshair Layer
+## 十字線レイヤー
 
-The Crosshair Layer of the category chart provides crossing lines that meet at the actual value of every targeted series.  Crosshair types include: Horizontal, Vertical, and Both.  The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points.  Annotations can also be enabled to display the crosshair's value along the axis.
+カテゴリ チャートの十字線レイヤーは、各ターゲット シリーズの実際の値に一致する十字線機能を提供します。十字線タイプは、Horizontal、Vertical、Both があります。`crosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
@@ -61,8 +61,8 @@ The Crosshair Layer of the category chart provides crossing lines that meet at t
 </igc-category-chart>
 ```
 
-## Final Value Layer
-The Final Value Layer of the category chart component provides a quick view along the axis of the ending value displayed in a series.
+## 最終値レイヤー
+カテゴリ チャート コンポーネントの最終値レイヤーは、シリーズに表示された最終値の軸に沿ったクイック ビューをサポートします。
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
@@ -91,8 +91,8 @@ The Final Value Layer of the category chart component provides a quick view alon
 ```
 
 
-## Callout Layer
-The Callout Layer of the category chart component displays a text callout at X/Y positions given in the data.
+## コールアウト レイヤー
+カテゴリ チャート コンポーネントのコールアウト レイヤーは、データで指定された X/Y 位置にテキスト コールアウトを表示します。
 
 ```razor
 <CategoryChart Height="100%" Width="100%"

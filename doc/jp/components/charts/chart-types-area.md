@@ -7,9 +7,9 @@ _language: ja
 ---
 # $PlatformShort$ エリア チャート
 
-The $ProductName$ Area Chart is based on a line or spline series. Therefore, it is often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
+$ProductName$ エリア チャートは、折れ線またはスプライン シリーズに基づいています。したがって、多くの場合、時系列であり、時間の経過に伴う商品の蓄積などの量の変化を示します。
 
-An Area Chart is rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). Area Charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+エリア チャートは、線の下の領域が塗りつぶされた直線セグメントで接続されたポイントのコレクションを使用して描画されます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。エリア チャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
@@ -21,37 +21,37 @@ An Area Chart is rendered using a collection of points connected by straight lin
 
 このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
 
-An Area Chart is similar to a Line Chart in that data points are plotted and connected by straight line segments, however they differ because with an Area Chart, the area between the X-Axis and the line is filled in.
+エリア チャートは、データ ポイントがプロットされ、直線セグメントで接続されているという点で折れ線チャートに似ていますが、エリア チャートでは X 軸と線の間の領域が塗りつぶされているため異なります。
 
-The AreaSeries is identical to the SplineAreaSeries in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
+AreaSeries は、接続するデータ ポイントがデータの表示を改善するスプライン補間とスムージング機能をもたないこと以外のすべての面で SplineAreaSeries と同一です。
 
-There are several use cases for an Area Chart. When you:
+折れ線チャートにはいくつかのユース ケースがあります。例:
 
-- Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
-- Need to compare the trends of your data over time.
-- Want to show the difference between 2 or more data series.
-- Want to show cumulative part-to-whole comparisons of distinct categories.
-- Need to show data trends for one or more categories for comparative analysis.
-- Need to visualize details time-series data.
+- パン、ズーム、ドリルダウンなどのチャート操作に適した大容量のデータセットを使用する場合。
+- データの経時的なトレンドを比較する必要がある場合。
+- 2 つ以上のデータ シリーズの違いを表示したい場合。
+- 個別のカテゴリの部分対全体の累積比較を表示したい場合。
+- 比較解析のために 1 つ以上のカテゴリのデータ トレンドを表示する必要がある場合。
+- 時系列データの詳細を視覚化する必要がある場合。
 
-Area Chart best practices:
+エリア チャートのベスト プラクティス:
 
-- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
-- Order time-series data from left to right.
-- Use transparent colors to ensure that data that is plotted behind another series is not blocked.
+- データ比較が正確になるように Y 軸 (左軸または右軸) を常に 0 から開始する。
+- 時系列データを左から右へ並べ替える。
+- 透明色を使用して、別の系列の背後にプロットされているデータがブロックされないようにする。
 
-Do not use an Area Chart when:
+以下の場合にエリア チャートを使用しないでください:
 
-- You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
-- Time-series data has similar values (data over the same period). This makes overlapped shaded areas impossible to differentiate.
+- 多くの (7 または 10 以上) シリーズのデータがある場合。チャートが読みやすいことを確認する必要があります。
+- 時系列データの値は類似している場合 (同じ期間のデータ)。これにより、重なり合った網掛け領域を区別できなくなります。
 
-Data Structure:
+データ構造:
 
-- The data source must be an array or a list of data items (for single series).
-- The data source must be an array of arrays or a list of lists (for multiple series).
-- The data source should contain two or more data items in order to render a line between them.
-- All data items must contain at least one data column (string or date time).
-- All data items must contain at least one numeric data column.
+- データ ソースはデータ項目の配列またはリスト (単一シリーズの場合) である必要があります。
+- データ ソースは、配列の配列またはリストのリスト (複数シリーズの場合) である必要があります。
+- データ ソースはデータ項目間に線を描画するために少なくともデータ項目を 2 つ以上含む必要があります。
+- すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
+- すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
 
 ## 単一シリーズの $PlatformShort$ エリア チャート
 
@@ -68,7 +68,7 @@ Data Structure:
 
 ## 複数シリーズの $PlatformShort$ エリア チャート
 
-Similarly to how you can show multiple series with Line and Spline Charts, you may also combine multiple series in an Area Chart.
+折れ線チャートとスプライン チャートを使用して複数のシリーズを表示する方法と同様に、エリア チャートで複数のシリーズを組み合わせることができます。
 
 
 <code-view style="height: 400px" 
@@ -81,7 +81,7 @@ Similarly to how you can show multiple series with Line and Spline Chart
 
 ## $PlatformShort$ エリア チャートのスタイル設定
 
-Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly.
+エリア チャートには、多くの場合、その領域が半透明で塗りつぶされており、通常より太い線とわずかに大きいマーカーがあります。以下は、それに応じて以前のエリア チャートのスタイルを設定する方法を示す例です。
 
 
 <code-view style="height: 400px" 
@@ -107,7 +107,7 @@ Area charts often have semi-transparent fill for their areas, thicker li
 
 ## $PlatformShort$ 範囲エリア チャート
 
-Sometimes instead of showing the area you may want to show the area for a range between two values over time.
+場合によっては、領域を表示する代わりに、時間の経過とともに 2 つの値の間の範囲の領域を表示したい場合があります。
 
 <code-view style="height: 400px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 

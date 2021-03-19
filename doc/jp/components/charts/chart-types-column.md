@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ 縦棒チャート
 
-The $ProductName$ Column Chart is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points. A Column Chart emphasizes the amount of change over a period of time or compares multiple items. Values are represented on the Y-Axis (NumericYAxis) and categories are displayed on the X-Axis (CategoryXAxis).
+$ProductName$ 縦棒チャートは、チャートの下から上に、データ ポイントの値に向かって伸びる長方形のコレクションを使用してチャート描画されます。縦棒チャートは、ある一定の期間に対する量の変化を強調したり、複数のデータを比較したりします。値は Y 軸 (NumericYAxis) に表され、カテゴリは X 軸 (CategoryXAxis) に表示されます。
 
 
 <code-view style="height: 400px" 
@@ -20,29 +20,29 @@ The $ProductName$ Column Chart is rendered using a collection of rectangles 
 
 このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。 <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
 
-A Column Chart uses the same concepts of data plotting as the Bar Chart but data points are stretched along a horizontal line (X-Axis) rather than vertical line (Y-Axis). In other words, the Column Chart is rendered like the Bar Chart but with 90 degrees counter-clockwise rotation.
+縦棒チャートは、棒チャートと同じデータ プロットの概念を採用していますが、データ ポイントは、垂直線 (Y 軸) でなく水平線 (X 軸) に沿って延びます。つまり、縦棒チャートは棒チャートのように描画されますが、反時計回りに 90 度回転されます。
 
-There are several uses cases for a Column Chart. When you:
+縦棒チャートにはいくつかのユース ケースがあります。例:
 
-- Need to compare data values of related categories.
-- Need to compare data over a time period.
-- Need to display negative values as well as positive values in the same data set.
-- Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
+- 関連するカテゴリのデータ値を比較する必要がある場合。
+- 一定期間のデータを比較する必要がある場合。
+- 同じデータ セットに正の値だけでなく負の値も表示する必要がある場合。
+- パン、ズーム、ドリルダウンなどのチャート操作に適した大容量のデータセットを使用する場合。
 
-Column Chart Best Practices:
+縦棒チャートのベスト プラクティス:
 
-- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
-- Order time-series data from left to right.
+- データ比較が正確になるように Y 軸 (左軸または右軸) を常に 0 から開始する。
+- 時系列データを左から右へ並べ替える。
 
-Do not Use a Column Chart When:
+以下の場合に縦棒チャートを使用しないでください:
 
-- You have many (more than 10 or 12) series of data. Your goal is to ensure the chart is readable.
+- 多くの (10 または 12 以上) シリーズのデータがある場合。チャートが読みやすいことを確認する必要があります。
 
-Data Structure: 
+データ構造: 
 
-- The data model must contain at least one numeric property.
-- The data model may contain an options string or date-time property for labels.
-- The data source should contain at least one data item.
+- データ モデルには少なくとも 1 つの数値プロパティを含む必要があります。
+- データ モデルにはラベルのためのオプションの文字列または日時プロパティを含むことができます。
+- データ ソースに少なくとも 1 つのデータ項目を含む必要があります。
 
 ## 単一シリーズの $PlatformShort$ 縦棒チャート
 
@@ -85,7 +85,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ ウォーターフォール チャート
 
-ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。 The Waterfall Chart is similar in appearance to the Range Column Chart, but it requires only one numeric data column rather than two columns for each data point.
+ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。ウォーターフォール チャートは、外観が範囲縦棒チャートに似ていますが、各データ ポイントに必要な数値データ列は 2 つでなく 1 つのみです。
 
 
 <code-view style="height: 400px" 
@@ -98,7 +98,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ 積層型縦棒チャート
 
-積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the Y-Axis, and all negative values are grouped on the negative side of the Y-Axis. The Stacked Column Chart uses the same concepts of data plotting as the Stacked Bar Chart but data points are stacked along vertical line (Y-Axis) rather than along horizontal line (X-Axis).
+積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは積層型棒チャートと同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
 
 以下の例では、米国、ヨーロッパ、中国の間で生成された再生可能電力を示しています。
 
@@ -127,9 +127,9 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ 範囲縦棒チャート
 
-The $ProductName$ Range Column Chart belongs to a group of range charts and is rendered using vertical rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the bottom like the traditional Column Chart.このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
+$ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、従来の縦棒チャートのように下から伸びるのではなく、チャートのプロット領域の中央に表示できる垂直の長方形を使用して描画されます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
 
-The Range Column chart is identical to the Range Area chart in all aspects except that the ranges are represented as a set of vertical columns rather than filled area.
+範囲縦棒チャートは、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は範囲エリア チャートと同じです。
 
 この範囲縦棒チャートの例では、日付ごとの高温と低温の間の気象データの差異が示されています。
 
