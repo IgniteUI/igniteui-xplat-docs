@@ -10,11 +10,11 @@ $PlatformShort$ Line Chart, or Line Graph, is a type of category line graph that
 
 With multiple series, our $PlatformShort$ Line Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart`. This gives the benefit for our users to more easily comprehend what data set each line corresponds to.
 
-In the following example, the line chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year. 
+In the following example, the line chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
            alt="$PlatformShort$ Line Chart With Legend" >
 </code-view>
 
@@ -158,10 +158,10 @@ ModuleManager.register(
 The $PlatformShort$ Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period, as we have shown in the example below.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source" 
-           alt="$PlatformShort$ Line Chart with Single Source" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
+           alt="$PlatformShort$ Line Chart with Single Source"
            github-src="charts/category-chart/chart-single-source">
 </code-view>
 
@@ -172,10 +172,10 @@ The $PlatformShort$ Line Chart is often used to show the change of value over ti
 Since the $PlatformShort$ Line Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the line chart will automatically update to fit the additional data.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources" 
-           alt="$PlatformShort$ Line Chart with Multiple Sources" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           alt="$PlatformShort$ Line Chart with Multiple Sources"
            github-src="charts/category-chart/line-chart-multiple-sources'">
 </code-view>
 
@@ -188,10 +188,10 @@ The $PlatformShort$ Line Chart component is capable of handling high volumes of 
 In this example, we are streaming live data into the $PlatformShort$ Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency" 
-           alt="$PlatformShort$ Line Chart Live Data Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
+           alt="$PlatformShort$ Line Chart Live Data Example"
            github-src="charts/category-chart/high-frequency">
 </code-view>
 
@@ -203,9 +203,9 @@ Once our chart is set up, we may want to make some further styling customization
 
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling"
            alt="$PlatformShort$ Line Chart Styling"
            github-src="charts/category-chart/line-chart-styling">
 </code-view>
@@ -214,22 +214,22 @@ Once our chart is set up, we may want to make some further styling customization
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Annotations](chart-features-annotations.md)
-- [Highlighting](chart-features-highlighting.md)
-- [Markers](chart-features-markers.md)
-- [Tooltips](chart-features-tooltips.md)
-- [Trendlines](chart-features-trendlines.md) -->
+- [Annotations](../chart-features-annotations.md)
+- [Highlighting](../chart-features-highlighting.md)
+- [Markers](../chart-features-markers.md)
+- [Tooltips](../chart-features-tooltips.md)
+- [Trendlines](../chart-features-trendlines.md)
 
 <!-- ## Additional Resources
 
-- [Series Animations](chart-features-animations.md)
-- [Series Annotations](chart-features-annotations.md)
-- [Series Highlighting](chart-features-highlighting.md)
-- [Series Markers](chart-features-markers.md)
-- [Series Tooltips](chart-features-tooltips.md)
-- [Series Trendlines](chart-features-trendlines.md) -->
+- [Series Animations](../chart-features-animations.md)
+- [Series Annotations](../chart-features-annotations.md)
+- [Series Highlighting](../chart-features-highlighting.md)
+- [Series Markers](../chart-features-markers.md)
+- [Series Tooltips](../chart-features-tooltips.md)
+- [Series Trendlines](../chart-features-trendlines.md) -->
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API Members
 - `XamCategoryChart`
 - `ChartType`

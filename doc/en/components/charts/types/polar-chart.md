@@ -14,9 +14,9 @@ Polar Chart draw attention to uneven intervals or clusters of data. They are oft
 
 The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the Scatter Line Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
            alt="$PlatformShort$ Polar Line Chart" >
 </code-view>
 
@@ -27,33 +27,33 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 The Polar Spline Chart belongs to a group of polar charts and is rendered using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. Polar Spline Charts use the same concepts of data plotting as the Scatter Spline Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
            alt="$PlatformShort$ Polar Spline Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Polar Chart Styling 
+## $PlatformShort$ Polar Chart Styling
 
 Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
            alt="$PlatformShort$ Polar Area Chart Styling" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
+- [Axis Annotations](../chart-features-axis-options.md)
+- [Axis Options](../chart-features-axis-options.md)
+- [Axis Gridlines](../chart-features-axis-gridlines.md)
+- [Highlighting](../chart-features-highlighting.md)
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API Members
 -->

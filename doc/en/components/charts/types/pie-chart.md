@@ -474,8 +474,8 @@ The Radial Pie Chart belongs to a group of radial charts and uses pie slices tha
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Animations](chart-features-animations.md)
-- [Tooltips](chart-features-tooltips.md)
+- [Animations](../chart-features-animations.md)
+- [Tooltips](../chart-features-tooltips.md)
 
 
 <!-- TODO list API links used in this topic

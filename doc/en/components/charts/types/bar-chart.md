@@ -8,11 +8,11 @@ mentionedTypes: ["XamDataChart"]
 
 $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a Column Chart, or Column Graph, where bars are displayed vertically (up and down), the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation and a horizontal display (left to right).
 
-In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars. 
+In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
            alt="$PlatformShort$ Bar Chart with Legend" >
 </code-view>
 
@@ -67,12 +67,12 @@ $PlatformShort$ Bar Chart includes several variants based on your data or how yo
 ## $PlatformShort$ Bar Chart with Single Series
 
 Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
-In this example, the Bar Chart is comparing percent-based retail shopping data. 
+In this example, the Bar Chart is comparing percent-based retail shopping data.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
            alt="$PlatformShort$ Bar Chart with Single Source" >
 </code-view>
 
@@ -80,12 +80,12 @@ In this example, the Bar Chart is comparing percent-based retail shopping data.
 
 ## $PlatformShort$ Bar Chart with Multiple Series
 
-The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. 
+The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            alt="$PlatformShort$ Bar Chart with Multiple Sources" >
 </code-view>
 
@@ -96,9 +96,9 @@ The Bar Chart is able to render multiple columns per category for comparison pur
 In this example, the Bar Chart uses annotations values for each bar demonstrating a percent comparison between popular online retail shopping sites using the CalloutLayer.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
            alt="$PlatformShort$ Bar Chart Styling" >
 </code-view>
 
@@ -113,9 +113,9 @@ The Stacked Bar Chart differs from the Bar Chart in that the data points represe
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
            alt="$PlatformShort$ Stacked Bar Chart" >
 </code-view>
 
@@ -128,20 +128,20 @@ The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ st
 In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
            alt="$PlatformShort$ Stacked 100 Bar Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
+- [Axis Annotations](../chart-features-axis-options.md)
+- [Axis Options](../chart-features-axis-options.md)
+- [Axis Gridlines](../chart-features-axis-gridlines.md)
+- [Highlighting](../chart-features-highlighting.md)
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API Members
 -->
