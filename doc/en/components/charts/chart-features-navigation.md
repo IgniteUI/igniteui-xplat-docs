@@ -35,13 +35,11 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
 
 ```ts
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-
 IgrDataChartInteractivityModule.register();
 ```
 
 ```ts
 import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
-
 IgcDataChartInteractivityModule.register();
 ```
 
@@ -53,7 +51,7 @@ It is also possible to zoom or pan simply by clicking the buttons on the mouse o
 
 The following code snippet demonstrates how you can enable base UI navigation in the $PlatformShort$ data chart component:
 
-Note, this also applies to `CategoryChart` and `FinancialChart`.
+Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
 
 ```razor
 <DataChart Height="400px" Width="100%"
@@ -63,27 +61,20 @@ Note, this also applies to `CategoryChart` and `FinancialChart`.
 ```
 
 ```html
-<igx-data-chart #chart
-    [dataSource]="data"
-    width="100%"
-    height="400px"
+<igx-data-chart width="100%" height="400px" 
     isHorizontalZoomEnabled="true"
     isVerticalZoomEnabled="true">
 </igx-data-chart>
 ```
 
 ```tsx
-<IgrDataChart dataSource={this.data}
-    width="100%"
-    height="400px"
+<IgrDataChart width="100%" height="400px"
     isHorizontalZoomEnabled="true"
     isVerticalZoomEnabled={true} />
 ```
 
 ```html
-<igc-data-chart id="chart"
-    width="100%"
-    height="400px"
+<igc-data-chart width="100%" height="400px" 
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true">
 </igc-data-chart>
@@ -110,10 +101,10 @@ The zoom and pan operations can also be enabled by using modifier keys by settin
 
 The following code snippet demonstrates how you can enable UI navigation in the chart. The following will only allow zooming while holding the **Shift** key and panning while holding the **Alt** key:
 
-Note, this also applies to `CategoryChart` and `FinancialChart`.
+Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
 
 ```razor
-<DataChart Height="400px" Width="100%"
+<DataChart Width="100%" Height="400px" 
     DefaultInteraction="InteractionState.None"
     DragModifier="ModifierKeys.Shift"
     PanModifier="ModifierKeys.Alt"
@@ -123,10 +114,7 @@ Note, this also applies to `CategoryChart` and `FinancialChart`.
 ```
 
 ```html
-<igx-data-chart #chart
-    [dataSource]="data"
-    width="100%"
-    height="400px"
+<igx-data-chart width="100%" height="400px"
     defaultInteraction="None"
     dragModifier="Shift"
     panModifier="Alt"
@@ -136,9 +124,7 @@ Note, this also applies to `CategoryChart` and `FinancialChart`.
 ```
 
 ```tsx
-<IgrDataChart dataSource={this.data}
-    width="100%"
-    height="400px"
+<IgrDataChart width="100%" height="400px"
     defaultInteraction="None"
     dragModifier="Shift"
     panModifier="Alt"
@@ -147,9 +133,7 @@ Note, this also applies to `CategoryChart` and `FinancialChart`.
 ```
 
 ```html
-<igc-data-chart id="chart"
-    width="100%"
-    height="400px"
+<igc-data-chart width="100%" height="400px"
     default-interaction="None"
     drag-modifier="Shift"
     pan-modifier="Alt"
@@ -198,10 +182,20 @@ The $PlatformShort$ data chart component provides several navigation properties 
 The following code snippets show how to modify the view of the $PlatformShort$ data chart component programmatically. The following assumes you have a variable named "chart" to represent the $PlatformShort$ data chart component:
 
 ```razor
-<DataChart Height="400px" Width="100%"
-    WindowScaleVertical="0.05"
-    WindowScaleHorizontal="0">
-</DataChart>                
+// Zoom in by a factor of 0.05
+this.chart.windowScaleVertical -= 0.05;
+this.chart.windowScaleHorizontal -= 0.05;
+// Zoom out by a factor of 0.05
+this.chart.windowScaleVertical += 0.05;
+this.chart.windowScaleHorizontal += 0.05;
+// Pan up by a factor of 0.05
+this.chart.actualWindowPositionVertical -= 0.05;
+// Pan down by a factor of 0.05
+this.chart.actualWindowPositionVertical += 0.05;
+// Pan left by a factor of 0.05
+this.chart.actualWindowPositionHorizontal -= 0.05;
+// Pan right by a factor of 0.05
+this.chart.actualWindowPositionHorizontal += 0.05;          
 ```
 
 ```ts
