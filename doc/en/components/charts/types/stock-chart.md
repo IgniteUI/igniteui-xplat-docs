@@ -8,7 +8,7 @@ mentionedTypes: ["XamFinancialChart"]
 
 $PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            alt="$PlatformShort$ Stock Index Chart" >
@@ -54,7 +54,7 @@ Data Structure:
 ## $PlatformShort$ Stock Chart with Multiple Series
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            alt="$PlatformShort$ Stock Index Chart" >
@@ -67,7 +67,7 @@ Data Structure:
 In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
            alt="$PlatformShort$ Stock Index Chart" >
@@ -80,7 +80,7 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
 If you need a Stock Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the stock chart is comparing revenue between Amazon, Microsoft and Tesla.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
            alt="$PlatformShort$ Stock Index Chart" >
@@ -98,7 +98,7 @@ The Callout Layer displays a callout at X/Y positions.
 
 Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point to the numeric index of the item, otherwise CalloutsXMemberPath should point to the time value.
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            alt="$PlatformShort$ Chart Annotations" >
@@ -283,7 +283,7 @@ Note that you should set the `ZoomSliderType` option to the same value as the `C
 
 In this example, the stock chart is plotting revenue for United States.
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            alt="$PlatformShort$ Chart Panes" >

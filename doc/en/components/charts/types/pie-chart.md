@@ -10,7 +10,7 @@ $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how
 
 This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
            alt="$PlatformShort$ Pie Chart Overview" >
@@ -201,7 +201,7 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            alt="$PlatformShort$ Pie Chart Legend" >
@@ -251,7 +251,7 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            alt="$PlatformShort$ Pie Chart Others" >
@@ -306,7 +306,7 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            alt="$PlatformShort$ Pie Chart Explosion" >
@@ -404,7 +404,7 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            alt="$PlatformShort$ Pie Chart Selection" >
@@ -439,7 +439,7 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            alt="$PlatformShort$ Pie Chart Animation" >
@@ -452,7 +452,7 @@ public tick(): void {
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
            alt="$PlatformShort$ Pie Chart Styling" >
@@ -465,7 +465,7 @@ Once our pie chart is created, we may want to make some further styling customiz
 The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
            alt="$PlatformShort$ Radial Pie Chart" >

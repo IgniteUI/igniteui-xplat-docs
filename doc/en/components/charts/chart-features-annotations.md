@@ -11,10 +11,10 @@ This topic provides conceptual information about the annotations and overlay int
 
 ## $PlatformShort$ Annotations Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations" 
-           alt="$PlatformShort$ Annotations Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
+           alt="$PlatformShort$ Annotations Example"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
@@ -67,7 +67,7 @@ The Final Value Layer of the category chart component provides a quick view alon
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>                   
+    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
 ```
 
 ```html

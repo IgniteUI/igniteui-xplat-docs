@@ -10,7 +10,7 @@ $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the 
 
 In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
            alt="$PlatformShort$ Bar Chart with Legend" >
@@ -70,7 +70,7 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
 In this example, the Bar Chart is comparing percent-based retail shopping data.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
            alt="$PlatformShort$ Bar Chart with Single Source" >
@@ -83,7 +83,7 @@ In this example, the Bar Chart is comparing percent-based retail shopping data.
 The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            alt="$PlatformShort$ Bar Chart with Multiple Sources" >
@@ -96,7 +96,7 @@ The Bar Chart is able to render multiple columns per category for comparison pur
 In this example, the Bar Chart uses annotations values for each bar demonstrating a percent comparison between popular online retail shopping sites using the CalloutLayer.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
            alt="$PlatformShort$ Bar Chart Styling" >
@@ -113,7 +113,7 @@ The Stacked Bar Chart differs from the Bar Chart in that the data points represe
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
            alt="$PlatformShort$ Stacked Bar Chart" >
@@ -128,7 +128,7 @@ The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ st
 In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
            alt="$PlatformShort$ Stacked 100 Bar Chart" >

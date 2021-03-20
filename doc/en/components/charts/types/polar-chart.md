@@ -14,7 +14,7 @@ Polar Chart draw attention to uneven intervals or clusters of data. They are oft
 
 The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the Scatter Line Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
-<code-view style="height: 420px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
            alt="$PlatformShort$ Polar Line Chart" >
@@ -27,7 +27,7 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 The Polar Spline Chart belongs to a group of polar charts and is rendered using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. Polar Spline Charts use the same concepts of data plotting as the Scatter Spline Chart with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
 
 
-<code-view style="height: 420px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
            alt="$PlatformShort$ Polar Spline Chart" >
@@ -40,7 +40,7 @@ The Polar Spline Chart belongs to a group of polar charts and is rendered using 
 Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers.
 
 
-<code-view style="height: 420px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
            alt="$PlatformShort$ Polar Area Chart Styling" >

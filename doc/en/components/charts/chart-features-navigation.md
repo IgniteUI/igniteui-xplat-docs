@@ -8,10 +8,10 @@ mentionedTypes: ['XamDataChart', 'ModifierKeys']
 
 In the $PlatformShort$ data chart component, navigation is disabled by default. Once enabled, you are able to zoom and pan the data chart either programmatically or in the UI.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation" 
-           alt="$PlatformShort$ Navigation Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
+           alt="$PlatformShort$ Navigation Example"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
@@ -61,7 +61,7 @@ Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` co
 ```
 
 ```html
-<igx-data-chart width="100%" height="400px" 
+<igx-data-chart width="100%" height="400px"
     isHorizontalZoomEnabled="true"
     isVerticalZoomEnabled="true">
 </igx-data-chart>
@@ -74,7 +74,7 @@ Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` co
 ```
 
 ```html
-<igc-data-chart width="100%" height="400px" 
+<igc-data-chart width="100%" height="400px"
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true">
 </igc-data-chart>
@@ -104,7 +104,7 @@ The following code snippet demonstrates how you can enable UI navigation in the 
 Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
 
 ```razor
-<DataChart Width="100%" Height="400px" 
+<DataChart Width="100%" Height="400px"
     DefaultInteraction="InteractionState.None"
     DragModifier="ModifierKeys.Shift"
     PanModifier="ModifierKeys.Alt"
@@ -195,7 +195,7 @@ this.chart.actualWindowPositionVertical += 0.05;
 // Pan left by a factor of 0.05
 this.chart.actualWindowPositionHorizontal -= 0.05;
 // Pan right by a factor of 0.05
-this.chart.actualWindowPositionHorizontal += 0.05;          
+this.chart.actualWindowPositionHorizontal += 0.05;
 ```
 
 ```ts

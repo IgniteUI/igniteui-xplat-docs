@@ -8,10 +8,10 @@ mentionedTypes: ['XamDataChart']
 
 The $ProductName$ data chart component allows for synchronization with respect to the coordination of zooming, panning, and crosshair events between multiple charts. This can help you to visualize the same areas of multiple charts, assuming your data sources are similar or the same with respect to the axes.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization" 
-           alt="$PlatformShort$ Chart Synchronization Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
+           alt="$PlatformShort$ Chart Synchronization Example"
            github-src="charts/data-chart/chart-synchronization">
 </code-view>
 
@@ -94,7 +94,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```tsx
-<IgrDataChart width="600px" height="400px" ref={this.chart1} 
+<IgrDataChart width="600px" height="400px" ref={this.chart1}
     dataSource={this.state.dataSource1}
     isHorizontalZoomEnabled={true}
     isVerticalZoomEnabled={true}
@@ -112,7 +112,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 ```
 
 ```html
-<igc-data-chart width="600px" height="400px" id="chart1" 
+<igc-data-chart width="600px" height="400px" id="chart1"
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"
@@ -120,7 +120,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
     synchronize-vertically="true">
 </igc-data-chart>
 
-<igc-data-chart width="600px" height="400px" id="chart2" 
+<igc-data-chart width="600px" height="400px" id="chart2"
     is-horizontal-zoom-enabled="true"
     is-vertical-zoom-enabled="true"
     sync-channel="ChannelA"

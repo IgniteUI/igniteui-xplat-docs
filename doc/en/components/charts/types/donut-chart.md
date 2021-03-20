@@ -11,7 +11,7 @@ $PlatformShort$ Donut Chart is similar to the Pie Chart component, proportionall
 Slice selection and explosion are provided.
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
            alt="$PlatformShort$ Doughnut Legend" >
@@ -24,7 +24,7 @@ Slice selection and explosion are provided.
 The $PlatformShort$ Donut Chart has the ability to select slices on click, as demonstrated by the below sample:
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
            alt="$PlatformShort$ Donut Slice Selection" >
@@ -37,7 +37,7 @@ The $PlatformShort$ Donut Chart has the ability to select slices on click, as de
 The $PlatformShort$ Donut Chart has the ability to explode its slices outward from the continuous ring of the chart on click, as demonstrated by the below sample:
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"
            alt="$PlatformShort$ Doughnut Slice Explosion" >
@@ -50,7 +50,7 @@ The $PlatformShort$ Donut Chart has the ability to explode its slices outward fr
 It is possible to have a multiple ring display in the $PlatformShort$ Donut Chart, with each of the rings capable of being bound to a different data item, or they can share a common data source. This can be helpful if you need to display your data as tiers that have an underlying common category, such as the season to month data display below:
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
            alt="$PlatformShort$ Doughnut Multiple Rings" >

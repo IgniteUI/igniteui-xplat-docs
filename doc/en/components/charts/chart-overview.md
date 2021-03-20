@@ -24,7 +24,7 @@ Power your most demanding visualizations with Infragistics $PlatformShort$ chart
 
 This $PlatformShort$ column chart, or column graph, example shows Olympics medals by Country. The $PlatformShort$ column chart belongs to a group of category charts that include at one or more numeric or time-series based data point, and one string data point, that compares data values by differing column heights. In this example, the Y-Axis, or left-side labels of the chart, are displaying numeric data showing the number of medals won, and the X-Axis, or bottom labels, are showing a time value, in this case Year. The columns are the category values representing different countries, like USA, Japan and Germany.
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -49,7 +49,7 @@ The $PlatformShort$ Bar Chart, or Bar Graph is among the most common category ch
 
 Learn more about our [bar charts](types/bar-chart.md)
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -60,7 +60,7 @@ The $PlatformShort$ Pie Chart, or Pie Graph, is a very common part-to-whole char
 
 Learn more about our [pie charts](types/pie-chart.md)
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -71,7 +71,7 @@ The $PlatformShort$ Line Chart, or Line Graph is a type of category line graph s
 
 Learn more about our [line charts](types/line-chart.md)
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -82,7 +82,7 @@ The $PlatformShort$ Donut Chart or Donut Graph, is a variant of a Pie Chart, pro
 
 Learn more about our [Donut charts](types/donut-chart.md)
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -91,7 +91,7 @@ Learn more about our [Donut charts](types/donut-chart.md)
 
 Learn more about our [area charts](types/area-chart.md)
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
