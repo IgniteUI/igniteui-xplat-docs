@@ -11,20 +11,20 @@ The Infragistics $PlatformShort$ Dock Manager is a WebComponent that provides me
 > [!NOTE]
 > <b>Coming Soon</b>
 
-The Blazor Dock Manager is currently under development and will be completed soon.  When the Blazor Dock Manager component has been completed, this topic and sample will be updated. If you need a dock manager component during this time, you can use the Ignite UI for Web Components dock manager in your Blazor applications. 
+The Blazor Dock Manager is currently under development and will be completed soon.  When the Blazor Dock Manager component has been completed, this topic and sample will be updated. If you need a dock manager component during this time, you can use the Ignite UI for Web Components dock manager in your Blazor applications.
 
 Please follow the steps outlined in the blog post titled:
 
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ Dock Manager Overview Example
+## $PlatformShort$ Dock Manager Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview" 
-           alt="$PlatformShort$ Dock Manager Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
+           alt="$PlatformShort$ Dock Manager Example"
            github-src="layouts/dock-manager/overview">
 </code-view>
 

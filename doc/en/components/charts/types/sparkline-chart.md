@@ -17,7 +17,7 @@ The sparkline control has several visual elements and corresponding features tha
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           alt="$PlatformShort$ Sparkline Overview Example"
+           alt="$PlatformShort$ Sparkline Example"
            github-src="charts/sparkline/display-types">
 </code-view>
 

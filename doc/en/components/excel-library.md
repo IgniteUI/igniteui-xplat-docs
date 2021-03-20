@@ -8,13 +8,13 @@ mentionedTypes: ['Workbook']
 
 The Infragistics $PlatformShort$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like Workbooks, Worksheets, Cells, Formulas and many more. The Infragistics $PlatformShort$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
-## $PlatformShort$ Excel Library Overview Example
+## $PlatformShort$ Excel Library Example
 
 
-<code-view style="height: 100px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview" 
-           alt="$PlatformShort$ Excel Library Overview Example" 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
+           alt="$PlatformShort$ Excel Library Example"
            github-src="excel/excel-library/overview">
 </code-view>
 
@@ -106,7 +106,7 @@ If you are using a Web Assembly (WASM) Blazor project, there are a couple of ext
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;        
+        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;
     }
 }
 ```

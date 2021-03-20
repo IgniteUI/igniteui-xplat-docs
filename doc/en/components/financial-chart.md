@@ -8,13 +8,13 @@ mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType']
 
 The $PlatformShort$ financial chart component makes it easy to visualize financial and stock data by using a simple and intuitive API.
 
-## $PlatformShort$ Financial Chart Overview Example
+## $PlatformShort$ Financial Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview" 
-           alt="$PlatformShort$ Financial Chart Overview Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"
+           alt="$PlatformShort$ Financial Chart Example"
            github-src="charts/financial-chart/overview">
 </code-view>
 

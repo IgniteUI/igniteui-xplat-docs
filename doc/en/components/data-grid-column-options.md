@@ -11,13 +11,13 @@ The $ProductName$ Data Grid supports the ability to group, hide, sort, move, pin
 
 To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` property to true.
 
-## $PlatformShort$ Grid Column Options Overview Example
+## $PlatformShort$ Grid Column Options Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options" 
-           alt="$PlatformShort$ Grid Column Options Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options"
+           alt="$PlatformShort$ Grid Column Options Example"
            github-src="grids/data-grid/column-options">
 </code-view>
 
@@ -85,7 +85,7 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"    
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     HeaderClickAction="HeaderClickAction.SortByOneColumnOnly"
     IsColumnOptionsEnabled="true">

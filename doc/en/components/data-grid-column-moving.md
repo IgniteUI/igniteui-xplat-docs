@@ -9,13 +9,13 @@ mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
 
 The $ProductName$ Data Grid supports the ability to move columns, giving you the flexibility over how you wish to display your columns with respect to the order of the columns shown.
 
-## $PlatformShort$ Grid Column Moving Overview Example
+## $PlatformShort$ Grid Column Moving Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving" 
-           alt="$PlatformShort$ Grid Column Moving Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
+           alt="$PlatformShort$ Grid Column Moving Example"
            github-src="grids/data-grid/column-moving">
 </code-view>
 
