@@ -19,7 +19,7 @@ The $ProductName$ data chart component allows for synchronization with respect t
 
 ## Required Modules
 
-In order to use navigation in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
+In order to use synchronization in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -35,13 +35,11 @@ import { IgxDataChartInteractivityModule } from 'igniteui-angular-charts';
 
 ```ts
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
-
 IgrDataChartInteractivityModule.register();
 ```
 
 ```ts
 import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
-
 IgcDataChartInteractivityModule.register();
 ```
 
