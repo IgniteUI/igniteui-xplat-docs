@@ -100,7 +100,7 @@ Learn more about our [area charts](types/area-chart.md)
 
 A Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](types/sparkline-chart.md).
 
-### Bubble Chart
+### $PlatformShort$ Bubble Chart
 
 A Bubble Chart, or Bubble Graph, is used to show data comprising of three numeric values. Two of the values are plotted as an intersecting point using a Cartesian (X, Y) coordinate system, and the third value is rendered as the diameter size of the point. This gives the Bubble Chart its name - a visualization of varying sized bubbles along the X and Y coordinates of the plot. The $PlatformShort$ Bubble Chart is used to show relationships of data correlations with the data value differences rendered by size. You can also use a fourth data dimension, typically color, to further differentiate the values in your Bubble chart. Learn more about our [bubble charts](types/bubble-chart.md).
 

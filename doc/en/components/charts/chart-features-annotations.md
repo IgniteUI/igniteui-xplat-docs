@@ -20,7 +20,7 @@ This topic provides conceptual information about the annotations and overlay int
 
 <div class="divider--half"></div>
 
-## Crosshair Layer
+## $PlatformShort$ Crosshair Layer
 
 The Crosshair Layer of the category chart provides crossing lines that meet at the actual value of every targeted series.  Crosshair types include: Horizontal, Vertical, and Both.  The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points.  Annotations can also be enabled to display the crosshair's value along the axis.
 
@@ -60,7 +60,7 @@ The Crosshair Layer of the category chart provides crossing lines that meet at t
 </igc-category-chart>
 ```
 
-## Final Value Layer
+## $PlatformShort$ Final Value Layer
 The Final Value Layer of the category chart component provides a quick view along the axis of the ending value displayed in a series.
 
 ```razor
@@ -90,7 +90,7 @@ The Final Value Layer of the category chart component provides a quick view alon
 ```
 
 
-## Callout Layer
+## $PlatformShort$ Callout Layer
 The Callout Layer of the category chart component displays a text callout at X/Y positions given in the data.
 
 ```razor

@@ -8,9 +8,9 @@ mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 
 The $PlatformShort$ radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale.
 
-## $PlatformShort$ Radial Gauge Example
-
 The $ProductName$ radial gauge component is a data visualization tool capable of displaying a radial gauge containing a number of visual elements, such as a scale with tick marks and labels, a needle, and a number of ranges. The component also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
+
+## $PlatformShort$ Radial Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same radial gauge can transform it to completely different radial gauge.
 

@@ -7,9 +7,9 @@ mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 # $PlatformShort$ Treemap Overview
 The $ProductName$ Treemap displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node’s rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data.
 
-
 ## $PlatformShort$ Treemap Example
 
+The following sample demonstrates how to create and layout nodes in the treemap component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

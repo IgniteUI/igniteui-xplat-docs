@@ -31,7 +31,7 @@ Once our radial chart is created, we may want to make some further styling custo
 <div class="divider--half"></div>
 
 
-## Other Types of Radial Charts
+## Other Types of $PlatformShort$ Radial Charts
 
 Refer to these topics for other types of radial charts:
 
