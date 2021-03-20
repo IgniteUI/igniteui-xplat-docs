@@ -11,10 +11,10 @@ The $PlatformShort$ Spreadsheet component allows displaying charts in your `Spre
 ## $PlatformShort$ Spreadsheet Chart Adapter Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart" 
-           alt="$PlatformShort$ Spreadsheet Chart Adapter Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
+           alt="$PlatformShort$ Spreadsheet Chart Adapter Example"
            github-src="excel/spreadsheet/adapter-chart">
 </code-view>
 
@@ -48,7 +48,7 @@ There are over 35 chart types supported by the Spreadsheet ChartAdapters includi
   * 100% stacked line
   * 100% stacked line with markers
 * Pie Charts
-* Doughnut Charts
+* Donut Charts
 * Bar Charts
     * Clustered bar
     * Stacked bar

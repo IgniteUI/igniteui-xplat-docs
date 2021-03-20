@@ -310,14 +310,8 @@
   },
   {
     "name": "Charts (NEW)",
-    "href": "charts/chart-type-overview.md",
+    "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Blazor"],
-    "name": "Reference Topic",
-    "href": "charts/topic-reference.md",
     "status": "NEW"
   },
   {
@@ -340,78 +334,88 @@
   },
   {
     "name": "Area Chart",
-    "href": "charts/chart-types-area.md",
+    "href": "charts/types/area-chart.md",
     "status": "NEW"
   },
   {
     "name": "Bar Chart",
-    "href": "charts/chart-types-bar.md",
+    "href": "charts/types/bar-chart.md",
     "status": "NEW"
   },
   {
     "name": "Bubble Chart",
-    "href": "charts/chart-types-bubble.md",
+    "href": "charts/types/bubble-chart.md",
     "status": "NEW"
   },
   {
     "name": "Column Chart",
-    "href": "charts/chart-types-column.md",
+    "href": "charts/types/column-chart.md",
     "status": "NEW"
   },
   {
-    "name": "Doughnut Chart",
-    "href": "charts/chart-types-doughnut.md",
+    "name": "Composite Chart",
+    "href": "charts/types/composite-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Donut Chart",
+    "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
-    "name": "Financial Chart",
-    "href": "charts/chart-types-financial.md",
+    "name": "Financial / Stock Chart",
+    "href": "charts/types/stock-chart.md",
     "status": "NEW"
   },
   {
     "name": "Line Chart",
-    "href": "charts/chart-types-line.md",
+    "href": "charts/types/line-chart.md",
     "status": "NEW"
   },
   {
     "name": "Pie Chart",
-    "href": "charts/chart-types-pie.md",
+    "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
     "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
+    "href": "charts/types/polar-chart.md",
     "status": "NEW"
   },
   {
     "name": "Radial Chart",
-    "href": "charts/chart-types-radial.md",
+    "href": "charts/types/radial-chart.md",
     "status": "NEW"
   },
   {
     "name": "Scatter Chart",
-    "href": "charts/chart-types-scatter.md",
+    "href": "charts/types/scatter-chart.md",
     "status": "NEW"
   },
   {
     "name": "Shape Chart",
-    "href": "charts/chart-types-shape.md",
+    "href": "charts/types/shape-chart.md",
     "status": "NEW"
   },
   {
     "name": "Spline Chart",
-    "href": "charts/chart-types-spline.md",
+    "href": "charts/types/spline-chart.md",
     "status": "NEW"
   },
   {
     "name": "Step Chart",
-    "href": "charts/chart-types-step.md",
+    "href": "charts/types/step-chart.md",
     "status": "NEW"
   },
   {
-    "name": "Sparkline",
-    "href": "sparkline.md",
-    "status": ""
+    "name": "Sparkline Chart",
+    "href": "charts/types/sparkline-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Overlay Chart",
+    "href": "charts/types/value-overlay-chart.md",
+    "status": "NEW"
   },
   {
     "name": "Treemap",
@@ -978,7 +982,7 @@
   },
   {
     "name": "Sparkline",
-    "href": "sparkline.md",
+    "href": "charts/types/sparkline-chart.md",
     "status": ""
   },
   {

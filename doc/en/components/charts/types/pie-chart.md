@@ -4,40 +4,42 @@ _description: The $ProductName$ pie chart component is a specialized component t
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 ---
-# $PlatformShort$ Pie Chart Overview
+# $PlatformShort$ Pie Chart
 
 $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
 
-This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department. 
+This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
            alt="$PlatformShort$ Pie Chart Overview" >
 </code-view>
 
 <div class="divider--half"></div>
 
-Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include: 
+## $PlatformShort$ Pie Chart Recommendations
 
-- Pie 
-- Doughnut (Ring) 
-- Funnel 
-- Stacked Area  
-- Stacked 100% Area (Stacked Percentage Area) 
-- Stacked Bar 
-- Stacked 100% Bar (Stacked Percentage Bar) 
-- Treemap 
-- Waterfall 
+Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include:
 
-The $PlatformShort$ Pie Chart includes interactive features that give the viewer tools to analyze data, like: 
+- Pie
+- Doughnut (Ring)
+- Funnel
+- Stacked Area
+- Stacked 100% Area (Stacked Percentage Area)
+- Stacked Bar
+- Stacked 100% Bar (Stacked Percentage Bar)
+- Treemap
+- Waterfall
 
-- Legends 
-- Slice Explosion 
-- Slice Selection 
-- Chart Animations 
+The $PlatformShort$ Pie Chart includes interactive features that give the viewer tools to analyze data, like:
 
-Best Practices for a Pie Chart: 
+- Legends
+- Slice Explosion
+- Slice Selection
+- Chart Animations
+
+Best Practices for a Pie Chart:
 
 - Comparing slices or segments as percentage values in proportion to a total value or whole.
 - Showing how a group of categories is broken into smaller segments.
@@ -50,7 +52,7 @@ Best Practices for a Pie Chart:
 - Choosing an alternative chart to Pie such as Bar or Ring based on ease of comprehension.
 - Avoiding positioning multiple pie charts next to each other for comparative analysis.
 
-Do Not Use Pie Chart When: 
+Do Not Use Pie Chart When:
 
 - Comparing change over time —use a Bar, Line or Area chart.
 - Requiring precise data comparison —use a Bar, Line or Area chart.
@@ -199,15 +201,15 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            alt="$PlatformShort$ Pie Chart Legend" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Others Category 
+## $PlatformShort$ Pie Chart Others Category
 Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
 
 In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCategoryType` is set to Number. Therefore, items with value less than or equal to 2 will be assigned to the “Others” category.
@@ -249,9 +251,9 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            alt="$PlatformShort$ Pie Chart Others" >
 </code-view>
 
@@ -304,9 +306,9 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            alt="$PlatformShort$ Pie Chart Explosion" >
 </code-view>
 
@@ -402,9 +404,9 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            alt="$PlatformShort$ Pie Chart Selection" >
 </code-view>
 
@@ -437,9 +439,9 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            alt="$PlatformShort$ Pie Chart Animation" >
 </code-view>
 
@@ -450,9 +452,9 @@ public tick(): void {
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
            alt="$PlatformShort$ Pie Chart Styling" >
 </code-view>
 
@@ -463,9 +465,9 @@ Once our pie chart is created, we may want to make some further styling customiz
 The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
            alt="$PlatformShort$ Radial Pie Chart" >
 </code-view>
 
@@ -476,6 +478,6 @@ The Radial Pie Chart belongs to a group of radial charts and uses pie slices tha
 - [Tooltips](chart-features-tooltips.md)
 
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API Members
 -->
