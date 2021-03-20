@@ -98,7 +98,7 @@ Learn more about our [area charts](types/area-chart.md)
 
 ### $PlatformShort$ Sparkline Chart
 
-A Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](types/sparkline-chart).
+A Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](types/sparkline-chart.md).
 
 ### Bubble Chart
 
@@ -156,37 +156,37 @@ Display millions of data points with milliseconds-level updates in real time wit
 
 The $PlatformShort$ chart is designed for modularity. Only features that are needed are part of your deployment, so you get the smallest possible footprint in your rendered pages.
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
 
 #### Smart Data Binding
 
 Let us choose the chart type. Our smart Data Adapter automatically chooses the best chart type for the data. All you do is set the data source and we do the rest.
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
 
 #### Trend Lines
 
 We support every trend line you’ll ever need, including linear (x), quadratic (x2), cubic (x3), quartic (x4), quintic (x5), logarithmic (logn x), exponential (ex), and power law (axk + o(xk)) trend lines.
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
 #### Interactive Panning and Zooming
 
 Use single or multi-touch, keyboard, zoom bar, mouse wheel, drag-select for any rectangular region with the mouse to zoom in for close-up look at data points, scroll data history, or pan data regions.
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
 
 #### Markers, Tooltips, and Templates
 
 Use one of 10 marker types to highlight data or use simple tooltips or multi-axis and multi-series chart tooltips with custom chart templates to give more context and meaning to your data.
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
 #### High-Volume Data Handling
 
 Optimize the performance of your financial chart to render millions of data points by modifying the `changeDetection` setting. This setting lets you control how $PlatformShort$ treats your data array when looking for changes and keeping your high-volume chart smoothly running.
 
-<img class="img" src="../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
 ## Getting started with $ProductName$ charts
 
