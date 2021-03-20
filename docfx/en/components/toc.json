@@ -470,12 +470,12 @@
         },
         {
           "name": "Chart Navigation",
-          "href": "data-chart-navigation.md",
+          "href": "charts/chart-features-navigation.md",
           "status": ""
         },
         {
           "name": "Chart Synchronization",
-          "href": "data-chart-synchronization.md",
+          "href": "charts/chart-features-synchronization.md",
           "status": ""
         },
         {
