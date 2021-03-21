@@ -10,7 +10,7 @@ $PlatformShort$ Network Graph, also called Network Chart or Polyline Chart visua
 
 ## $PlatformShort$ Network Graph Example
 
-The following example demonstrates how to create Network Graph using multiple `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in `XamDataChart` component.
+The following example demonstrates how to create Network Graph using  `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in the `XamDataChart` component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

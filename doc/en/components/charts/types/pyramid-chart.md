@@ -10,7 +10,7 @@ $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid,
 
 ## $PlatformShort$ Pyramid Chart Example
 
-The following example demonstrates how to create Pyramid Chart using `BarSeries` in two `XamDataChart` components aligned side by side.
+The following example demonstrates how to create Pyramid Chart using `BarSeries` in the `XamDataChart` component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
