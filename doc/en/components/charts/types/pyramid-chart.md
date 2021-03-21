@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ Pyramid Chart | Population Pyramid | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Pyramid Chart / Chart
+_description: Infragistics' $PlatformShort$ Pyramid Chart
 _keywords: $PlatformShort$ Charts, Pyramid Chart, Population Pyramid, Infragistics
 mentionedTypes: ["XamDataChart"]
 ---
@@ -23,6 +23,8 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 ## Additional Resources
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
+- [Composite Chart](composite-chart.md)
+- [Gantt Chart](gantt-chart.md)
 
 ## API Members
 - `XamDataChart`
