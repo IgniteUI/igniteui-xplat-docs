@@ -8,6 +8,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 
 $PlatformShort$ Spline Chart belongs to a group of Category Series and it is rendered using a collection of points connected by smooth curves of spline.  Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The Spline Chart is identical to the Line Chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
 
+## $PlatformShort$ Spline Chart Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

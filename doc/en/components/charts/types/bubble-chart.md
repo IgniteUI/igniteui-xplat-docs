@@ -8,6 +8,7 @@ mentionedTypes: ["XamDataChart", "BubbleSeries"]
 
 $PlatformShort$ Bubble Chart is a group of series that show markers with variable scaling to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. The x and y coordinates of the data point are determined by two numeric data columns. The Bubble Series draw attention to uneven intervals or clusters of data. These types of series are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Bubble series can also be used to organize data chronologically (even if the data is not in chronological order).
 
+## $PlatformShort$ Bubble Chart Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

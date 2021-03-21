@@ -8,6 +8,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 
 The $ProductName$ Column Chart is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points. A Column Chart emphasizes the amount of change over a period of time or compares multiple items. Values are represented on the Y-Axis (NumericYAxis) and categories are displayed on the X-Axis (CategoryXAxis).
 
+## $PlatformShort$ Column Chart Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

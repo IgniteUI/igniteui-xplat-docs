@@ -9,6 +9,8 @@ mentionedTypes: ["XamDataChart"]
 Radial Chart is a group of series that takes data and render it as collection of data points wrapped around a circle (rather than stretching along a horizontal line as Category Series do). Just like Category Series, Radial Chart are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of Category Series.
 
 
+## $PlatformShort$ Radial Chart Example
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
