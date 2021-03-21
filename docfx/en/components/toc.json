@@ -373,6 +373,11 @@
     "status": "NEW"
   },
   {
+    "name": "Network Graph / Chart",
+    "href": "charts/types/network-graph.md",
+    "status": "NEW"
+  },
+  {
     "name": "Pie Chart",
     "href": "charts/types/pie-chart.md",
     "status": ""
@@ -380,6 +385,11 @@
   {
     "name": "Polar Chart",
     "href": "charts/types/polar-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Pyramid Chart",
+    "href": "charts/types/pyramid-chart.md",
     "status": "NEW"
   },
   {
