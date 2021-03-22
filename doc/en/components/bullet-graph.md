@@ -8,17 +8,17 @@ mentionedTypes: ['XamBulletGraph']
 
 The $PlatformShort$ bullet graph component allows for a linear and concise view of measures compared against a scale.
 
-## $PlatformShort$ Bullet Graph Overview Example
+## $PlatformShort$ Bullet Graph Example
 
 The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
 The following sample demonstrates how setting multiple properties on the same bullet graph can transform it to completely different bullet graph.
 
 
-<code-view style="height: 155px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation" 
-           alt="$PlatformShort$ Bullet Graph Overview Example" 
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
+           alt="$PlatformShort$ Bullet Graph Example"
            github-src="gauges/bullet-graph/animation">
 </code-view>
 
@@ -153,7 +153,7 @@ The following code walks through creating a bullet graph component, and configur
   </igc-bullet-graph>
 ```
 
-```razor   
+```razor
 <BulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
@@ -258,9 +258,9 @@ Performance value is the primary measure displayed by the component and it is vi
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
            github-src="gauges/bullet-graph/measures">
 </code-view>
 
@@ -345,36 +345,36 @@ The ranges are visual elements that highlight a specified range of values on a s
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange 
-  StartValue="0" 
-  EndValue="40" 
-  InnerStartExtent="0.075" 
+<LinearGraphRange
+  StartValue="0"
+  EndValue="40"
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange 
-  StartValue="40" 
+<LinearGraphRange
+  StartValue="40"
   EndValue="70"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange StartValue="70" 
+<LinearGraphRange StartValue="70"
   EndValue="100"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
 </BulletGraph>
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
            github-src="gauges/bullet-graph/ranges">
 </code-view>
 
@@ -462,9 +462,9 @@ The tick marks serve as a visual division of the scale into intervals in order t
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
            github-src="gauges/bullet-graph/tickmarks">
 </code-view>
 
@@ -526,9 +526,9 @@ The labels indicate the measures on the scale.
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
            github-src="gauges/bullet-graph/labels">
 </code-view>
 
@@ -586,9 +586,9 @@ The backing element represents background and border of the bullet graph compone
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
            github-src="gauges/bullet-graph/background">
 </code-view>
 
@@ -649,9 +649,9 @@ The scale is visual element that highlights the full range of values in the gaug
 </BulletGraph>
 ```
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
            github-src="gauges/bullet-graph/scale">
 </code-view>
 

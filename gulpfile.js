@@ -262,7 +262,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/*graph.md');
         // sources.push('!doc/**/treemap*.md');
         // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/sparkline.md');
+        // sources.push('!doc/**/charts/types/sparkline-chart');
         // sources.push('!doc/**/*chart*.md');
 
         gulp.src(sources)

@@ -8,13 +8,13 @@ mentionedTypes: []
 
 The Multi-Column Combo Box automatically generates columns for properties on the data object. This component is unique in that it's a combo box that visualizes large amounts of data similar to a data grid embedded in the dropdown.
 
-## $PlatformShort$ Multi-Column Combo Box Overview Example
+## $PlatformShort$ Multi-Column Combo Box Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview" 
-           alt="$PlatformShort$ Multi-Column Combo Box Overview Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
+           alt="$PlatformShort$ Multi-Column Combo Box Example"
            github-src="editors/multi-column-combobox/overview">
 </code-view>
 
@@ -77,21 +77,21 @@ In the below code snippet, the "countryNames" collection is an any[] full of cus
 ```ts
 constructor() {
     let multiColumnComboBox = document.getElementById("comboBox") as IgcMultiColumnComboBoxComponent;
-    multiColumnComboBox.dataSource = countryNames;    
+    multiColumnComboBox.dataSource = countryNames;
 }
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -100,14 +100,14 @@ constructor() {
 
 You can configure different properties of the Multi-Column Combo Box's bound `DataSource` to act as the display text for the control as well as the underlying value when a selection is made. This is done by setting the `TextField` and `ValueField` properties of the control, respectively, to the name of the property on the data item that you want to represent these things.
 
-<!-- Blazor --> 
+<!-- Blazor -->
 If the value of the component needs to be updated programmatically, the `ValueChanged` event needs to be handled. The `GetValue` and `GetValueAsync` methods can be used to get the value when not within the `ValueChanged` event handler.
 <!-- end: Blazor -->
 
 The following code snippet shows how to set these properties, given that the underlying data item has a "Country" and "ID" property:
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         textField="Country" valueField={["ID"]}/>
 ```
 
@@ -127,19 +127,19 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      TextField="Country"
                      ValueField="@(new string[]{ "ID" })" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -151,7 +151,7 @@ By default, the Multi-Column Combo Box will show all of the properties on the un
 The following code snippet shows how to set this, and the resulting drop-down would only show the ID and Country columns:
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         fields={["ID", "Country"]} />
 ```
 
@@ -170,18 +170,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Fields="@(new string[] { "ID", "Country" })" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -191,7 +191,7 @@ constructor() {
 It is possible to configure the text that shows as a placeholder for when there is no selection in the Multi-Column Combo Box component. This is done by setting the `Placeholder` property to the string you would like to be displayed. The following code demonstrates how to set this:
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         placeholder="Please choose a country" />
 ```
 
@@ -210,18 +210,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Placeholder="Please choose a country" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -235,7 +235,7 @@ Note, the TriState sort options will allow sorted columns to be unsorted.
 The following code demonstrates how to set the Multi-Column Combo Box to be able to sort by multiple columns tri-state.
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         sortMode={SortMode.SortByMultipleColumnsTriState} />
 ```
 
@@ -254,18 +254,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      SortMode="SortMode.SortByMultipleColumnsTriState" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```

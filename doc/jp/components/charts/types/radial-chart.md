@@ -10,9 +10,9 @@ _language: ja
 ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです (カテゴリ シリーズが行うように水平方向の線に沿って拡大するのではなく)。カテゴリ シリーズと同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ シリーズの同じカテゴリ グループ化メカニズムをサポートします。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
            alt="$PlatformShort$ ラジアル折れ線チャート" >
 </code-view>
 
@@ -23,9 +23,9 @@ _language: ja
 ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
            alt="$PlatformShort$ ラジアル エリア チャートのスタイル設定" >
 </code-view>
 
@@ -36,16 +36,9 @@ _language: ja
 
 その他のタイプの極座標チャートについては以下のトピックを参照してください。
 
-- [ラジアル エリア チャート](chart-types-area.md#$PlatformShort$-Radial-Area-Chart)
-- [円チャート](../pie-chart.md)
-- [ドーナツ チャート](../doughnut-chart.md)
+- [円チャート](pie-chart.md)
+- [ドーナツ チャート](donut-chart.md)
 
-## その他のリソース
-- [軸の注釈](data-chart-axis-annotations.md)
-- [軸オプション](chart-features-axis-options.md)
-- [軸グリッド線](chart-features-axis-gridlines.md)
-- [チャート強調表示](chart-features-highlighting.md)
-
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API メンバー
 -->

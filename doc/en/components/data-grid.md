@@ -8,13 +8,13 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid is a tabular $PlatformShort$ grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the $PlatformShort$ data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The $PlatformShort$ tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
 
-## $PlatformShort$ Data Grid Overview Example
+## $PlatformShort$ Data Grid Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview" 
-           alt="$PlatformShort$ Data Grid Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           alt="$PlatformShort$ Data Grid Example"
            github-src="grids/data-grid/overview">
 </code-view>
 
@@ -48,7 +48,7 @@ npm install --save {PackageInputs}
 
 The `Grid` requires the following modules:
 
-```razor 
+```razor
 DataGridModule.Register(IgniteUIBlazor);
 ```
 <!-- end: Blazor -->

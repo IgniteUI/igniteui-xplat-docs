@@ -1,12 +1,22 @@
 ---
-title: $PlatformShort$ Stock Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Stock Chart
+title: $PlatformShort$ Stock/Financial Charts | $ProductName$
+_description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
 mentionedTypes: ["XamFinancialChart"]
 ---
 # $PlatformShort$ Stock Chart
 
-$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators. 
+$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
+
+## $PlatformShort$ Stock Chart Example
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           alt="$PlatformShort$ Stock Chart Example" >
+</code-view>
+
+<div class="divider--half"></div>
 
 The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
@@ -21,18 +31,18 @@ The typical stock chart is represented with ticker data in a candlestick chart w
 As a Stock Chart is meant to allow the user to perform data analysis functions, it includes interactive elements such as:
 
 - Time-based Filters
-- Prices View 
+- Prices View
 - Volume View
 - Indicators View
 - Trend Lines
 - Navigation / Zoombar View
 
-The Stock Chart can be set to display one of the following: 
+The Stock Chart can be set to display one of the following:
 
-- Candlestick Chart 
-- Bar Chart 
-- Column Chart 
-- Line Chart 
+- Candlestick Chart
+- Bar Chart
+- Column Chart
+- Line Chart
 
 Data Structure:
 
@@ -46,13 +56,11 @@ Data Structure:
 ## $PlatformShort$ Stock Chart with Multiple Series
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            alt="$PlatformShort$ Stock Index Chart" >
 </code-view>
-
-<div class="divider--half"></div>
 
 <div class="divider--half"></div>
 
@@ -61,9 +69,9 @@ Data Structure:
 In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
            alt="$PlatformShort$ Stock Index Chart" >
 </code-view>
 
@@ -74,9 +82,9 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
 If you need a Stock Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the stock chart is comparing revenue between Amazon, Microsoft and Tesla.
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
            alt="$PlatformShort$ Stock Index Chart" >
 </code-view>
 
@@ -88,13 +96,13 @@ The Crosshair Annotation Layer provides crossing lines that meet at the actual v
 
 The Final Value Layer provides a quick view along the axis of the ending value displayed in a series.
 
-The Callout Layer displays a callout at X/Y positions. 
+The Callout Layer displays a callout at X/Y positions.
 
 Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point to the numeric index of the item, otherwise CalloutsXMemberPath should point to the time value.
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            alt="$PlatformShort$ Chart Annotations" >
 </code-view>
 
@@ -277,20 +285,20 @@ Note that you should set the `ZoomSliderType` option to the same value as the `C
 
 In this example, the stock chart is plotting revenue for United States.
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            alt="$PlatformShort$ Chart Panes" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](chart-features-axis-options.md)
-- [Axis Options](chart-features-axis-options.md)
-- [Axis Gridlines](chart-features-axis-gridlines.md)
-- [Highlighting](chart-features-highlighting.md)
+- [Axis Annotations](../chart-features-axis-options.md)
+- [Axis Options](../chart-features-axis-options.md)
+- [Axis Gridlines](../chart-features-axis-gridlines.md)
+- [Highlighting](../chart-features-highlighting.md)
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API Members
 -->

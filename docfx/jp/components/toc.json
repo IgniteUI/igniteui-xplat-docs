@@ -310,14 +310,8 @@
   },
   {
     "name": "チャート (NEW)",
-    "href": "charts/chart-type-overview.md",
+    "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Blazor"],
-    "name": "リファレンス トピック",
-    "href": "charts/topic-references.md",
     "status": "NEW"
   },
   {
@@ -340,78 +334,88 @@
   },
   {
     "name": "エリア チャート",
-    "href": "charts/chart-types-area.md",
+    "href": "charts/types/area-chart.md",
     "status": "NEW"
   },
   {
     "name": "棒チャート",
-    "href": "charts/chart-types-bar.md",
+    "href": "charts/types/bar-chart.md",
     "status": "NEW"
   },
   {
     "name": "バブル チャート",
-    "href": "charts/chart-types-bubble.md",
+    "href": "charts/types/bubble-chart.md",
     "status": "NEW"
   },
   {
     "name": "縦棒チャート",
-    "href": "charts/chart-types-column.md",
+    "href": "charts/types/column-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Composite Chart",
+    "href": "charts/types/composite-chart.md",
     "status": "NEW"
   },
   {
     "name": "ドーナツ チャート",
-    "href": "charts/chart-types-doughnut.md",
+    "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
     "name": "ファイナンシャル チャート",
-    "href": "charts/chart-types-financial.md",
+    "href": "charts/types/stock-chart.md",
     "status": "NEW"
   },
   {
     "name": "折れ線チャート",
-    "href": "charts/chart-types-line.md",
+    "href": "charts/types/line-chart.md",
     "status": "NEW"
   },
   {
     "name": "円チャート",
-    "href": "charts/chart-types-pie.md",
+    "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
     "name": "極座標チャート",
-    "href": "charts/chart-types-polar.md",
+    "href": "charts/types/polar-chart.md",
     "status": "NEW"
   },
   {
     "name": "ラジアル チャート",
-    "href": "charts/chart-types-radial.md",
+    "href": "charts/types/radial-chart.md",
     "status": "NEW"
   },
   {
     "name": "散布図",
-    "href": "charts/chart-types-scatter.md",
+    "href": "charts/types/scatter-chart.md",
     "status": "NEW"
   },
   {
     "name": "シェープ チャート",
-    "href": "charts/chart-types-shape.md",
+    "href": "charts/types/shape-chart.md",
     "status": "NEW"
   },
   {
     "name": "スプライン チャート",
-    "href": "charts/chart-types-spline.md",
+    "href": "charts/types/spline-chart.md",
     "status": "NEW"
   },
   {
     "name": "ステップ チャート",
-    "href": "charts/chart-types-step.md",
+    "href": "charts/types/step-chart.md",
     "status": "NEW"
   },
   {
     "name": "スパークライン",
-    "href": "sparkline.md",
-    "status": ""
+    "href": "charts/types/sparkline-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Overlay Chart",
+    "href": "charts/types/value-overlay-chart.md",
+    "status": "NEW"
   },
   {
     "name": "ツリーマップ",
@@ -973,7 +977,7 @@
   },
   {
     "name": "スパークライン",
-    "href": "sparkline.md",
+    "href": "charts/types/sparkline-chart.md",
     "status": ""
   },
   {

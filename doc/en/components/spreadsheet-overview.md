@@ -8,13 +8,13 @@ mentionedTypes: ['Spreadsheet']
 
 The $PlatformShort$ Spreadsheet component allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
 
-## $PlatformShort$ Spreadsheet Overview Example
+## $PlatformShort$ Spreadsheet Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview" 
-           alt="$PlatformShort$ Spreadsheet Overview Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
+           alt="$PlatformShort$ Spreadsheet Example"
            github-src="excel/spreadsheet/overview">
 </code-view>
 

@@ -9,13 +9,13 @@ mentionedTypes: ['XamDoughnutChart']
 
 The $ProductName$ doughnut chart component is similar to the Pie Chart component, proportionally illustrating the occurrences of a variable. The doughnut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data.
 
-## $PlatformShort$ Doughnut Chart Overview Example
+## $PlatformShort$ Doughnut Chart Example
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview" 
-           alt="$PlatformShort$ Doughnut Chart Overview Example" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"
+           alt="$PlatformShort$ Doughnut Chart Example"
            github-src="charts/doughnut-chart/overview">
 </code-view>
 
@@ -194,9 +194,9 @@ this.Seasons = [
 ## Multiple Rings Demo
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
            github-src="charts/doughnut-chart/rings">
 </code-view>
 
@@ -235,9 +235,9 @@ The doughnut chart component exposes the API for setting the state of one or mor
 ## Slice Selection Demo
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
            github-src="charts/doughnut-chart/selection">
 </code-view>
 
@@ -296,9 +296,9 @@ public onSliceClick = (s: IgcDoughnutChartComponent, e: IgcSliceClickEventArgs) 
 ## Slice Explosion Demo
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"
            github-src="charts/doughnut-chart/explosion">
 </code-view>
 
@@ -356,9 +356,9 @@ public onLegendRef(legend: IgrItemLegend) {
 ## Legend Demo
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
            github-src="charts/doughnut-chart/legend">
 </code-view>
 
@@ -390,9 +390,9 @@ public tick(): void {
 
 ## Animation Demo
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-animation"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-animation"
            github-src="charts/doughnut-chart/animation">
 </code-view>
 

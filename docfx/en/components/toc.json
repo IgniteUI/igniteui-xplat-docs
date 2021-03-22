@@ -310,14 +310,8 @@
   },
   {
     "name": "Charts (NEW)",
-    "href": "charts/chart-type-overview.md",
+    "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Blazor"],
-    "name": "Reference Topic",
-    "href": "charts/topic-reference.md",
     "status": "NEW"
   },
   {
@@ -340,77 +334,102 @@
   },
   {
     "name": "Area Chart",
-    "href": "charts/chart-types-area.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Bar Chart",
-    "href": "charts/chart-types-bar.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Bubble Chart",
-    "href": "charts/chart-types-bubble.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Column Chart",
-    "href": "charts/chart-types-column.md",
-    "status": "NEW"
-  },
-  {
-    "name": "Doughnut Chart",
-    "href": "charts/chart-types-doughnut.md",
+    "href": "charts/types/area-chart.md",
     "status": ""
   },
   {
-    "name": "Financial Chart",
-    "href": "charts/chart-types-financial.md",
+    "name": "Bar Chart",
+    "href": "charts/types/bar-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Bubble Chart",
+    "href": "charts/types/bubble-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Column Chart",
+    "href": "charts/types/column-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Composite Chart",
+    "href": "charts/types/composite-chart.md",
+    "status": "NEW"
+  },
+  {
+    "name": "Donut Chart",
+    "href": "charts/types/donut-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Financial / Stock Chart",
+    "href": "charts/types/stock-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Gantt Chart",
+    "href": "charts/types/gantt-chart.md",
     "status": "NEW"
   },
   {
     "name": "Line Chart",
-    "href": "charts/chart-types-line.md",
+    "href": "charts/types/line-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Network Graph / Chart",
+    "href": "charts/types/network-graph.md",
     "status": "NEW"
   },
   {
     "name": "Pie Chart",
-    "href": "charts/chart-types-pie.md",
+    "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
     "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
+    "href": "charts/types/polar-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Pyramid Chart",
+    "href": "charts/types/pyramid-chart.md",
     "status": "NEW"
   },
   {
     "name": "Radial Chart",
-    "href": "charts/chart-types-radial.md",
-    "status": "NEW"
+    "href": "charts/types/radial-chart.md",
+    "status": ""
   },
   {
     "name": "Scatter Chart",
-    "href": "charts/chart-types-scatter.md",
-    "status": "NEW"
+    "href": "charts/types/scatter-chart.md",
+    "status": ""
   },
   {
     "name": "Shape Chart",
-    "href": "charts/chart-types-shape.md",
-    "status": "NEW"
+    "href": "charts/types/shape-chart.md",
+    "status": ""
   },
   {
     "name": "Spline Chart",
-    "href": "charts/chart-types-spline.md",
-    "status": "NEW"
+    "href": "charts/types/spline-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Sparkline Chart",
+    "href": "charts/types/sparkline-chart.md",
+    "status": ""
   },
   {
     "name": "Step Chart",
-    "href": "charts/chart-types-step.md",
-    "status": "NEW"
+    "href": "charts/types/step-chart.md",
+    "status": ""
   },
   {
-    "name": "Sparkline",
-    "href": "sparkline.md",
+    "name": "Overlay Chart",
+    "href": "charts/types/value-overlay-chart.md",
     "status": ""
   },
   {
@@ -421,7 +440,7 @@
   {
     "name": "Chart Features",
     "href": "charts/chart-feature-overview.md",
-    "status": "NEW",
+    "status": "",
     "items": [
         {
           "name": "Axis Gridlines",
@@ -470,12 +489,12 @@
         },
         {
           "name": "Chart Navigation",
-          "href": "data-chart-navigation.md",
+          "href": "charts/chart-features-navigation.md",
           "status": ""
         },
         {
           "name": "Chart Synchronization",
-          "href": "data-chart-synchronization.md",
+          "href": "charts/chart-features-synchronization.md",
           "status": ""
         },
         {
@@ -973,7 +992,7 @@
   },
   {
     "name": "Sparkline",
-    "href": "sparkline.md",
+    "href": "charts/types/sparkline-chart.md",
     "status": ""
   },
   {

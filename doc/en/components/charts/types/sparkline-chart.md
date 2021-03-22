@@ -5,19 +5,19 @@ _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column
 mentionedTypes: ['XamSparkline', 'SparklineDisplayType', 'TrendLineType']
 ---
 
-# $PlatformShort$ Sparkline Overview
+# $PlatformShort$ Sparkline Chart
 
 The $ProductName$ sparkline component is a lightweight charting control. It is intended for rendering within a small scale layout such as within a grid cell, but can also be rendered alone.
 
 The sparkline control has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips.
 
-## $PlatformShort$ Sparkline Overview Example
+## $PlatformShort$ Sparkline Example
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
-           alt="$PlatformShort$ Sparkline Overview Example" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           alt="$PlatformShort$ Sparkline Example"
            github-src="charts/sparkline/display-types">
 </code-view>
 
@@ -130,8 +130,8 @@ If the `WinLoss` sparkline is bound to the same data as the other types such as 
     this.chart1.dataSource = this.data1;
 ```
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  >
 </code-view>
 
@@ -224,8 +224,8 @@ All of the markers mentioned above can be customized using the related marker ty
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  >
 </code-view>
 
@@ -284,8 +284,8 @@ You can also configure whether or not to show the normal range in front of or be
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  >
 </code-view>
 
@@ -353,8 +353,8 @@ The following code example shows how to enable a trendline in the $ProductName$ 
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  >
 </code-view>
 
@@ -390,8 +390,8 @@ In order to plot the unknown values, you can set the `UnknownValuePlotting` prop
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  >
 </code-view>
 
@@ -535,8 +535,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 <DataGrid Height="100%" Width="100%"
           RowHeight="90"
           AutoGenerateColumns="false"
-          DataSource="DataSource">    
-    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >                     
+          DataSource="DataSource">
+    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
         <Template>
             <RenderFragment>
                  <div style="width: 100%; height: 70px; background: transparent">
@@ -555,8 +555,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 ```
 
 
-<code-view style="height: 530px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  >
 </code-view>
 

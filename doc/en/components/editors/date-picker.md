@@ -8,13 +8,13 @@ mentionedTypes: ['DatePicker']
 
 The Date Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
 
-## $PlatformShort$ Date Picker Overview Example
+## $PlatformShort$ Date Picker Example
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview" 
-           alt="$PlatformShort$ Date Picker Overview Example" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
+           alt="$PlatformShort$ Date Picker Example"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -69,8 +69,8 @@ The following code demonstrates how to add and set the value of the `DatePicker`
 
 ```tsx
 public render(): JSX.Element {
-    return (                 
-        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />            
+    return (
+        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />
     );
 }
 
@@ -88,21 +88,21 @@ public onDatePickerRef(datePicker: IgrDatePicker){
 ```ts
 constructor() {
     let datePicker = document.getElementById("datePicker") as IgcDatePickerComponent;
-    this.datePicker.value = new Date(Date.now());        
+    this.datePicker.value = new Date(Date.now());
 }
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <DatePicker Height="50px" Width="220px" Value="@SelectedDate" />
 
-@code {    
+@code {
     public DateTime SelectedDate { get; set; }
 
     protected override void OnInitialized()
     {
         DatePickerModule.Register(IgniteUIBlazor);
-        this.SelectedDate = DateTime.Today;   
+        this.SelectedDate = DateTime.Today;
     }
 }
 ```
@@ -113,7 +113,7 @@ The following code demonstrates how to customize the `DatePicker` component by s
 
 ```tsx
 public render(): JSX.Element {
-    return (                 
+    return (
         <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
     );
 }
@@ -129,14 +129,14 @@ public render(): JSX.Element {
 
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
 
-@code {    
-    
+@code {
+
     protected override void OnInitialized()
     {
-        DatePickerModule.Register(IgniteUIBlazor);        
+        DatePickerModule.Register(IgniteUIBlazor);
     }
 }
 ```

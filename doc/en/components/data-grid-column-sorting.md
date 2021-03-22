@@ -8,13 +8,13 @@ mentionedTypes: ['Grid', 'HeaderClickAction']
 # $PlatformShort$ Grid Sorting Overview
 The $ProductName$ Data Table / Data Grid supports ascending and descending column sorting with a Single Column, Multi-Column and Tri-State Column Sorting configuration.
 
-## $PlatformShort$ Grid Sorting Overview Example
+## $PlatformShort$ Grid Sorting Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting" 
-           alt="$PlatformShort$ Grid Sorting Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"
+           alt="$PlatformShort$ Grid Sorting Example"
            github-src="grids/data-grid/column-sorting">
 </code-view>
 

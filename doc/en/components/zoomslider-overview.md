@@ -7,13 +7,13 @@ mentionedTypes: ['ZoomSlider, XamDataChart']
 # $PlatformShort$ Zoom Slider Overview
 The $PlatformShort$ ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
 
-## $PlatformShort$ Zoom Slider Overview Example
+## $PlatformShort$ Zoom Slider Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview" 
-           alt="$PlatformShort$ Zoom Slider Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
+           alt="$PlatformShort$ Zoom Slider Example"
            github-src="charts/zoomslider/overview">
 </code-view>
 

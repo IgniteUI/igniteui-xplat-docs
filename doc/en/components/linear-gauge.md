@@ -8,17 +8,17 @@ mentionedTypes: ['XamLinearGauge']
 
 Use the $PlatformShort$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
 
-## $PlatformShort$ Linear Gauge Overview Example
-
 The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. It provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The component has also a built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property. The features of the linear gauge component include configurable orientation and direction, configurable visual elements such as the needle, and more.
+
+## $PlatformShort$ Linear Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same linear gauge can transform it to completely different linear gauge.
 
 
-<code-view style="height: 155px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation" 
-           alt="$PlatformShort$ Linear Gauge Overview Example" 
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
+           alt="$PlatformShort$ Linear Gauge Example"
            github-src="gauges/linear-gauge/animation">
 </code-view>
 
@@ -142,7 +142,7 @@ The following code demonstrates how create a linear gauge containing a needle an
 
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="5"      
+        MinimumValue="5"
         MaximumValue="55"
         Value="43" >
     <LinearGraphRange StartValue="0"
@@ -151,7 +151,7 @@ The following code demonstrates how create a linear gauge containing a needle an
     </LinearGraphRange>
      <LinearGraphRange StartValue="15"
             EndValue="30"
-            Brush="yellow">   
+            Brush="yellow">
     <LinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
@@ -255,9 +255,9 @@ This is the primary measure displayed by the linear gauge component and is visua
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
            github-src="gauges/linear-gauge/needle">
 </code-view>
 
@@ -346,9 +346,9 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
            github-src="gauges/linear-gauge/ranges">
 </code-view>
 
@@ -434,11 +434,11 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
 </LinearGauge>
-```        
+```
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
            github-src="gauges/linear-gauge/tickmarks">
 </code-view>
 
@@ -499,9 +499,9 @@ The labels indicate the measures on the scale.
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
            github-src="gauges/linear-gauge/labels">
 </code-view>
 
@@ -561,9 +561,9 @@ The backing element represents background and border of the linear gauge compone
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
            github-src="gauges/linear-gauge/backing">
 </code-view>
 
@@ -632,9 +632,9 @@ The scale is a visual element that highlights the full range of values in the li
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
            github-src="gauges/linear-gauge/scale">
 </code-view>
 
@@ -860,8 +860,8 @@ For your convenience, all above code snippets are combined into one code block b
 
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="0" 
-        MaximumValue="100" 
+        MinimumValue="0"
+        MaximumValue="100"
 
         LabelInterval="10"
         LabelExtent="0.025"

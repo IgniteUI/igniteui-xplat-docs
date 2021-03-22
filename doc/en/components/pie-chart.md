@@ -10,13 +10,13 @@ The $ProductName$ pie chart component is a specialized component that renders a 
 
 This control is used for representing categorical data. It is most effective when there are only a few categories, and when each category makes up a relatively large percentage of the data as a whole.
 
-## $PlatformShort$ Pie Chart Overview Example
+## $PlatformShort$ Pie Chart Example
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
-           alt="$PlatformShort$ Pie Chart Overview Example" 
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           alt="$PlatformShort$ Pie Chart Example"
            github-src="charts/pie-chart/overview">
 </code-view>
 
@@ -152,9 +152,9 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            github-src="charts/pie-chart/legend">
 </code-view>
 
@@ -202,9 +202,9 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            github-src="charts/pie-chart/others">
 </code-view>
 
@@ -257,9 +257,9 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            github-src="charts/pie-chart/explosion">
 </code-view>
 
@@ -354,9 +354,9 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     }
 ```
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            github-src="charts/pie-chart/selection">
 </code-view>
 
@@ -389,9 +389,9 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            github-src="charts/pie-chart/animation">
 </code-view>
 

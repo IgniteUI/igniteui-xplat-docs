@@ -11,13 +11,13 @@ The $ProductName$ Data Grid supports the ability to pin columns, allowing the en
 
 A column or multiple columns can be pinned to the left-hand or right-hand side of the Data Grid. In addition, you can change the pin state of the columns by utilizing the `PinColumn` function.
 
-## $PlatformShort$ Grid Column Pinning Overview Example
+## $PlatformShort$ Grid Column Pinning Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker" 
-           alt="$PlatformShort$ Grid Column Pinning Overview Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker"
+           alt="$PlatformShort$ Grid Column Pinning Example"
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
 
@@ -235,7 +235,7 @@ onButtonUnPin () {
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-    DefaultColumnMinWidth="120"                      
+    DefaultColumnMinWidth="120"
     DataSource="@DataSource"
     AutoGenerateColumns="false"
     @ref="DataGridRef">
@@ -253,7 +253,7 @@ onButtonUnPin () {
     @*Columns Pinned Right*@
     <TextColumn Field="Street" Pinned="PinnedPositions.Right" />
     <TextColumn Field="City" Pinned="PinnedPositions.Right" />
-    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />                
+    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />
 </DataGrid>
 ```
 
@@ -266,9 +266,9 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 ## Demo
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"
            github-src="grids/data-grid/column-pinning-toolbar">
 </code-view>
 
@@ -308,7 +308,7 @@ public onGridRef(grid: IgrDataGrid) {
         this.toolbar.targetGrid = this.grid;
 
         let productNameColumn = this.grid.actualColumns.item(0);
-        productNameColumn.pinned = PinnedPositions.Left; 
+        productNameColumn.pinned = PinnedPositions.Left;
     }
 }
 
@@ -369,7 +369,7 @@ connectedCallback() {
     ColumnPinningText="Pinning"
     ColumnPinningTitle="Column Pinning" />
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef" 
+    @ref="DataGridRef"
     DataSource="DataSource" />
 
 @code {
