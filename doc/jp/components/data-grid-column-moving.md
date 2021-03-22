@@ -13,9 +13,9 @@ $ProductName$ Data Grid は列を移動する機能をサポートしている�
 ## $PlatformShort$ グリッド列移動の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
            alt="$PlatformShort$ グリッド列移動の例" 
            github-src="grids/data-grid/column-moving">
 </code-view>
@@ -77,3 +77,4 @@ grid1.dataSource = data;
     ColumnMovingAnimationMode="ColumnMovingAnimationMode.SlideOver"
     ColumnMovingSeparatorWidth="5" />
 ```
+

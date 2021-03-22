@@ -12,9 +12,9 @@ _language: ja
 ## $PlatformShort$ 複数列コンボ ボックスの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
            alt="$PlatformShort$ 複数列コンボ ボックスの例" 
            github-src="editors/multi-column-combobox/overview">
 </code-view>
@@ -78,21 +78,21 @@ ModuleManager.register(
 ```ts
 constructor() {
     let multiColumnComboBox = document.getElementById("comboBox") as IgcMultiColumnComboBoxComponent;
-    multiColumnComboBox.dataSource = countryNames;    
+    multiColumnComboBox.dataSource = countryNames;
 }
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -101,14 +101,14 @@ constructor() {
 
 複数列コンボ ボックスのバインドされた `DataSource` のさまざまなプロパティを構成して、コントロールの表示テキストとして機能し、選択が行われたときに既定値としても機能します。コントロールの `TextField` と `ValueField` プロパティをこれらを表現したいデータ項目のプロパティ名に設定します。
 
-<!-- Blazor --> 
+<!-- Blazor -->
 コンポーネントの値をプログラムで更新する必要がある場合、`ValueChanged` イベントを処理する必要があります。`ValueChanged` イベント ハンドラー内にない場合、`GetValue` と `GetValueAsync` メソッドを使用して値を取得できます。
 <!-- end: Blazor -->
 
 以下のコード スニペットは、基本データ項目に "Country" および "ID" プロパティがある場合、これらのプロパティを設定する方法を示しています。
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         textField="Country" valueField={["ID"]}/>
 ```
 
@@ -128,19 +128,19 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      TextField="Country"
                      ValueField="@(new string[]{ "ID" })" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -152,7 +152,7 @@ constructor() {
 以下のコード スニペットはこれを設定する方法を示します。結果のドロップダウンは ID および Country 列のみを表示します。
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         fields={["ID", "Country"]} />
 ```
 
@@ -171,18 +171,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Fields="@(new string[] { "ID", "Country" })" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -192,7 +192,7 @@ constructor() {
 複数列コンボ ボックス コンポーネントに選択がない場合にプレースホルダーとして表示するテキストを設定できます。`Placeholder` プロパティを表示したい文字列に設定します。以下のコードは設定する方法を示します。
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         placeholder="Please choose a country" />
 ```
 
@@ -211,18 +211,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Placeholder="Please choose a country" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
@@ -236,7 +236,7 @@ constructor() {
 以下のコードは、複数列の 3 ステートでソートできるように複数列コンボ ボックスを設定する方法を示します。
 
 ```tsx
-<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData} 
+<IgrMultiColumnComboBox height="50px" width="400px" dataSource={this.countryData}
                         sortMode={SortMode.SortByMultipleColumnsTriState} />
 ```
 
@@ -255,18 +255,18 @@ constructor() {
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <MultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      SortMode="SortMode.SortByMultipleColumnsTriState" />
-                
+
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
         MultiColumnComboBoxModule.Register(IgniteUIBlazor);
-        this.CountryNames = CountryTreeData.Create();            
+        this.CountryNames = CountryTreeData.Create();
     }
 }
 ```

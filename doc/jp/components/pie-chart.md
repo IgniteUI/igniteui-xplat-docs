@@ -14,10 +14,10 @@ $ProductName$ 円チャート コンポネントは、セクションに分割�
 ## $PlatformShort$ 円チャートの例
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
-           alt="$PlatformShort$ 円チャートの例" 
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           alt="$PlatformShort$ 円チャートの例"
            github-src="charts/pie-chart/overview">
 </code-view>
 
@@ -33,7 +33,6 @@ npm install --save {PackageCore}
 npm install --save {PackageCharts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
-
 
 ## モジュールの要件
 
@@ -154,9 +153,9 @@ var data = [
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            github-src="charts/pie-chart/legend">
 </code-view>
 
@@ -204,9 +203,9 @@ Pie Chart  コンポーネントの基本データに、小さい値を含む多
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            github-src="charts/pie-chart/others">
 </code-view>
 
@@ -259,9 +258,9 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            github-src="charts/pie-chart/explosion">
 </code-view>
 
@@ -356,9 +355,9 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
     }
 ```
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            github-src="charts/pie-chart/selection">
 </code-view>
 
@@ -391,9 +390,9 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            github-src="charts/pie-chart/animation">
 </code-view>
 

@@ -10,13 +10,12 @@ _language: ja
 
 $ProductName$ Data Grid は、`DataGridToolbar` コンポーネントまたはページのどこにでも配置できる `ColumnChooser` コンポーネントによって UI から列の表示/非表示を行う機能をサポートしています。列の `IsHidden` プロパティにより、手動生成の列に対してプログラムによって列の表示/非表示を設定することができます。`IsHidden` の値は `ColumnChooser` コンポーネントに反映されます。各方法は列の表示状態を変更するために使用できます。
 
-
 ## $PlatformShort$ Grid 列選択の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar"
            alt="$PlatformShort$ Grid 列選択の例" 
            github-src="grids/data-grid/column-chooser-toolbar">
 </code-view>
@@ -108,11 +107,11 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 
 ```ts
 import { IgcDataGrid } from 'igniteui-webcomponents-grids';
-import { IgcToolbar } from 'igniteui-webcomponents-grids';
+import { IgcDataGridToolbar } from 'igniteui-webcomponents-grids';
 import { ColumnMovingAnimationMode } from 'igniteui-webcomponents-grids';
 
 private grid: IgcDataGridComponent;
-private toolbar: IgcToolbarComponent;
+private toolbar: IgcDataGridToolbarComponent;
 
 connectedCallback() {
     this.toolbar.targetGrid = this.grid;
@@ -131,12 +130,12 @@ connectedCallback() {
     ColumnChooser="true"
     ColumnChooserText="Columns"
     ColumnChooserTitle="Column Chooser"
-    TargetGrid="DataGridRef" />            
+    TargetGrid="DataGridRef" />
 <DataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DefaultColumnMinWidth="120"
-    DataSource="@DataSource"                      
-    ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft">                
+    DataSource="@DataSource"
+    ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft">
 </DataGrid>
 
 @code {
@@ -163,9 +162,9 @@ connectedCallback() {
 ## サンプル
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker"
            github-src="grids/data-grid/column-chooser-picker">
 </code-view>
 
@@ -259,10 +258,10 @@ connectedCallback() {
 
 ```razor
 <ColumnChooser Height="100%" Width="200px"
-    Title="Column Chooser"                           
+    Title="Column Chooser"
     TargetGrid="DataGridRef" />
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef"                      
+    @ref="DataGridRef"
     DataSource="DataSource"
     ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft" />
 
@@ -282,3 +281,4 @@ connectedCallback() {
     }
 }
 ```
+

@@ -4,6 +4,7 @@ _description: Use Infragistics $ProductName$ chart control's value overlay featu
 _keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
 namespace: Infragistics.Controls.Charts
+_language: ja
 ---
 
 # $PlatformShort$ Value Overlay Chart

@@ -12,10 +12,10 @@ $ProductName$ Doughnut Chart コンポーネントは円チャートと同様、
 ## $PlatformShort$ ドーナツ チャートの例
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview" 
-           alt="$PlatformShort$ ドーナツ チャートの例" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"
+           alt="$PlatformShort$ ドーナツ チャートの例"
            github-src="charts/doughnut-chart/overview">
 </code-view>
 
@@ -193,9 +193,9 @@ this.Seasons = [
 ## 複数リング サンプル
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
            github-src="charts/doughnut-chart/rings">
 </code-view>
 
@@ -234,9 +234,9 @@ this.Seasons = [
 ## スライス選択のサンプル
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
            github-src="charts/doughnut-chart/selection">
 </code-view>
 
@@ -295,9 +295,9 @@ public onSliceClick = (s: IgcDoughnutChartComponent, e: IgcSliceClickEventArgs) 
 ## スライスの分割のサンプル
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"
            github-src="charts/doughnut-chart/explosion">
 </code-view>
 
@@ -355,9 +355,9 @@ public onLegendRef(legend: IgrItemLegend) {
 ## 凡例サンプル
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
            github-src="charts/doughnut-chart/legend">
 </code-view>
 
@@ -389,9 +389,9 @@ public tick(): void {
 
 ## サンプル
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-animation"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-animation"
            github-src="charts/doughnut-chart/animation">
 </code-view>
 

@@ -9,17 +9,17 @@ _language: ja
 
 $PlatformShort$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。
 
-## $PlatformShort$ ラジアル ゲージの例
-
 $ProductName$ Radial Gauge コンポーネントは、ゲージを表示するデータ ビジュアライゼーション ツールです。スケール、目盛り、ラベル、針、および範囲などの複数の視覚要素を含むことができます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
+
+## $PlatformShort$ ラジアル ゲージの例
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
-<code-view style="height: 375px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation" 
-           alt="$PlatformShort$ ラジアル ゲージの例" 
+<code-view style="height: 375px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
+           alt="$PlatformShort$ ラジアル ゲージの例"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 
@@ -160,30 +160,30 @@ IgrRadialGaugeModule.register();
   </igc-radial-gauge>
 ```
 
-<div class="divider--half"></div>
-
 ```razor
 
 <RadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="0"
           EndValue="30"
           Brush="red">
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="30"
           EndValue="60"
           Brush="Yellow" >
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="60"
           EndValue="100"
           Brush="Green">
     </RadialGaugeRange>
 </RadialGauge>
 ```
+
+<div class="divider--half"></div>
 
 ## バッキング
 
@@ -223,7 +223,7 @@ IgrRadialGaugeModule.register();
     scaleStartAngle={135} scaleEndAngle={45}
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -265,9 +265,9 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
            github-src="gauges/radial-gauge/backing">
 </code-view>
 
@@ -302,7 +302,7 @@ IgrRadialGaugeModule.register();
     scaleEndExtent={0.575}
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -339,9 +339,9 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
            github-src="gauges/radial-gauge/scale">
 </code-view>
 
@@ -368,7 +368,7 @@ IgrRadialGaugeModule.register();
     fontBrush="DodgerBlue"
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -384,7 +384,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge 
+<RadialGauge
   Height="100%" Width="100%"
   LabelInterval="10"
   LabelInterval="10"
@@ -399,9 +399,9 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
            github-src="gauges/radial-gauge/labels">
 </code-view>
 
@@ -478,9 +478,9 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
            github-src="gauges/radial-gauge/tickmarks">
 </code-view>
 
@@ -567,9 +567,9 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
            github-src="gauges/radial-gauge/ranges">
 </code-view>
 
@@ -619,7 +619,7 @@ IgrRadialGaugeModule.register();
     needlePivotStrokeThickness={1}
     height="300px" width="300px"
     minimumValue={0}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -663,10 +663,9 @@ IgrRadialGaugeModule.register();
 </RadialGauge>
 ```
 
-
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
            github-src="gauges/radial-gauge/needle">
 </code-view>
 
@@ -799,11 +798,11 @@ IgrRadialGaugeModule.register();
     <IgrRadialGaugeRange
         startValue={20} endValue={40}
         innerStartExtent={0.45} innerEndExtent={0.45}
-        outerStartExtent={0.57} outerEndExtent={0.57}/>
+        outerStartExtent={0.57} outerEndExtent={0.57} />
     <IgrRadialGaugeRange
         startValue={40} endValue={60}
         innerStartExtent={0.45} innerEndExtent={0.45}
-        outerStartExtent={0.57} outerEndExtent={0.57}/>
+        outerStartExtent={0.57} outerEndExtent={0.57} />
 </IgrRadialGauge>
 ```
 
@@ -881,7 +880,7 @@ IgrRadialGaugeModule.register();
              MaximumValue="80"
              Value="50"
              Interval="10"
-              
+
              ScaleStartAngle="135"
              ScaleEndAngle="45"
              ScaleBrush="DodgerBlue"
@@ -928,7 +927,7 @@ IgrRadialGaugeModule.register();
              BackingInnerExtent="0.15"
 
              RangeBrushes="#A4BD29, #F86232"
-             RangeOutlines="#A4BD29, #F86232">  
+             RangeOutlines="#A4BD29, #F86232">
     <RadialGaugeRange StartValue="20"
         EndValue="40"
         InnerStartExtent="0.50"
@@ -942,6 +941,6 @@ IgrRadialGaugeModule.register();
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>   
+    </RadialGaugeRange>
 </RadialGauge>
 ```

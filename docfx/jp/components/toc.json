@@ -335,22 +335,22 @@
   {
     "name": "エリア チャート",
     "href": "charts/types/area-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "棒チャート",
     "href": "charts/types/bar-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "バブル チャート",
     "href": "charts/types/bubble-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "縦棒チャート",
     "href": "charts/types/column-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Composite Chart",
@@ -365,11 +365,21 @@
   {
     "name": "ファイナンシャル チャート",
     "href": "charts/types/stock-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ガント チャート",
+    "href": "charts/types/gantt-chart.md",
     "status": "NEW"
   },
   {
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ネットワークグラフ / チャート",
+    "href": "charts/types/network-graph.md",
     "status": "NEW"
   },
   {
@@ -380,42 +390,47 @@
   {
     "name": "極座標チャート",
     "href": "charts/types/polar-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ピラミッド チャート",
+    "href": "charts/types/pyramid-chart.md",
     "status": "NEW"
   },
   {
     "name": "ラジアル チャート",
     "href": "charts/types/radial-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "散布図",
     "href": "charts/types/scatter-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "シェープ チャート",
     "href": "charts/types/shape-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "スプライン チャート",
     "href": "charts/types/spline-chart.md",
-    "status": "NEW"
-  },
-  {
-    "name": "ステップ チャート",
-    "href": "charts/types/step-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
-    "name": "Overlay Chart",
+    "name": "ステップ チャート",
+    "href": "charts/types/step-chart.md",
+    "status": ""
+  },
+  {
+    "name": " オーバーレイ チャート",
     "href": "charts/types/value-overlay-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "ツリーマップ",
@@ -425,7 +440,7 @@
   {
     "name": "チャート機能",
     "href": "charts/chart-feature-overview.md",
-    "status": "NEW",
+    "status": "",
     "items": [
         {
           "name": "軸グリッド線",
@@ -474,12 +489,12 @@
         },
         {
           "name": "チャート ナビゲーション",
-          "href": "data-chart-navigation.md",
+          "href": "charts/chart-features-navigation.md",
           "status": ""
         },
         {
           "name": "チャートの同期",
-          "href": "data-chart-synchronization.md",
+          "href": "charts/chart-features-synchronization.md",
           "status": ""
         },
         {

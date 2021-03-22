@@ -12,18 +12,18 @@ _language: ja
 
 ## $PlatformShort$ 注釈の例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations" 
-           alt="$PlatformShort$ 注釈の例" 
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
+           alt="$PlatformShort$ 注釈の例"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
 <div class="divider--half"></div>
 
-## 十字線レイヤー
+## $PlatformShort$ 十字線レイヤー
 
-カテゴリ チャートの十字線レイヤーは、各ターゲット シリーズの実際の値に一致する十字線機能を提供します。十字線タイプは、Horizontal、Vertical、Both があります。`crosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
+カテゴリ チャートの十字線レイヤーは、各ターゲット シリーズの実際の値に一致する十字線機能を提供します。十字線タイプは、Horizontal、Vertical、Both があります。`CrosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
@@ -61,14 +61,14 @@ _language: ja
 </igc-category-chart>
 ```
 
-## 最終値レイヤー
+## $PlatformShort$ 最終値レイヤー
 カテゴリ チャート コンポーネントの最終値レイヤーは、シリーズに表示された最終値の軸に沿ったクイック ビューをサポートします。
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>                   
+    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
 ```
 
 ```html
@@ -91,7 +91,7 @@ _language: ja
 ```
 
 
-## コールアウト レイヤー
+## $PlatformShort$ コールアウト レイヤー
 カテゴリ チャート コンポーネントのコールアウト レイヤーは、データで指定された X/Y 位置にテキスト コールアウトを表示します。
 
 ```razor

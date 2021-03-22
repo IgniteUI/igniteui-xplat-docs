@@ -12,10 +12,10 @@ $PlatformShort$ Financial Chart コンポーネントは、シンプルな API �
 ## $PlatformShort$ ファイナンシャル チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview" 
-           alt="$PlatformShort$ ファイナンシャル チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"
+           alt="$PlatformShort$ ファイナンシャル チャートの例"
            github-src="charts/financial-chart/overview">
 </code-view>
 
@@ -38,9 +38,9 @@ $PlatformShort$ Financial Chart コンポーネントは、シンプルな API �
 その他のチャート ペインの詳細については、[Financial Chart ペイン](financial-chart-panes.md) トピックを参照してください。
 
 ```html
-<igx-financial-chart
-   chartType="candle">
-</igx-financial-chart>
+ <igx-financial-chart
+    chartType="candle">
+ </igx-financial-chart>
 ```
 
 ```tsx
@@ -53,6 +53,7 @@ $PlatformShort$ Financial Chart コンポーネントは、シンプルな API �
     chart-type="candle">
  </igc-financial-chart>
 ```
+
 <!-- Angular, React, WebComponents -->
 ## 依存関係
 Chart パッケージをインストールするときに core パッケージもインストールする必要があります。
@@ -125,7 +126,7 @@ let data = [
 
 ```html
  <igx-financial-chart
-   [dataSource]="data"
+    [dataSource]="data"
     width="850px"
     height="600px">
  </igx-financial-chart>
@@ -153,7 +154,7 @@ chart.dataSource = stocksData;
 ```razor
 <FinancialChart
    Width="100%"
-   Height="100%"  
+   Height="100%"
    DataSource="DataSource" />
 ```
 

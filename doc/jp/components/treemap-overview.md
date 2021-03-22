@@ -7,14 +7,14 @@ mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 # $PlatformShort$ ツリーマップの概要
 $ProductName$ ツリーマップは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
 
-
 ## $PlatformShort$ ツリーマップの例
 
+次のサンプルは、ツリーマップコンポーネントでノードを作成およびレイアウトする方法を示しています。
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview" 
-           alt="$PlatformShort$ ツリーマップの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
+           alt="$PlatformShort$ ツリーマップの例"
            github-src="charts/tree-map/overview">
 </code-view>
 
@@ -167,6 +167,7 @@ ModuleManager.register(IgcTreemapModule);
     RootTitle="Countries" />
 ```
 
+
 ## 塗りつぶしスケール
 以下のコードは、Treemap の塗りつぶしスケールを設定する方法を示します。
 
@@ -209,12 +210,12 @@ this.treeMap.isFillScaleLogarithmic = false;
     ParentIdMemberPath="Parent"
     IdMemberPath="Name"
     LabelMemberPath="Name"
-    ValueMemberPath="Pop"    
+    ValueMemberPath="Pop"
     FillScaleMode="TreemapFillScaleMode.Value"
     FillScaleMinimumValue="0"
     FillScaleMaximumValue="1500000000"
     FillBrushes="#4e62cf, #8a58d6"
-    IsFillScaleLogarithmic="false"    
+    IsFillScaleLogarithmic="false"
     RootTitle="Countries" />
 ```
 
