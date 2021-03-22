@@ -5,7 +5,7 @@ _keywords: $PlatformShort$ Charts, Animations, Infragistics
 mentionedTypes: []
 ---
 
-# $PlatformShort$ Transition Settings
+# $PlatformShort$ Chart Animations
 
 Animations allows you to ease-in the series as it loads a new data source. The available animation differs depending on the type of series involved. For example, the column series animates by rising from the x-axis, a line series animates by drawing from the origin of y-axis.
 
@@ -18,7 +18,7 @@ Animations allows you to ease-in the series as it loads a new data source. The a
 
 <div class="divider--half"></div>
 
-## Transition In Animations
+## Animation Settings
 
 | Members | Description |
 | ------------------|---------------------|
@@ -32,7 +32,7 @@ The following code example demonstrates how to enable transition in animations a
 <CategoryChart Height="500px" Width="700px"
     DataSource="@DataSource"
     IsTransitionInEnabled="true"
-    TransitionInDuration="5000"
+    TransitionInDuration="1000"
     TransitionInMode="CategoryTransitionInMode.AccordionFromRight"/>
 ```
 
@@ -42,7 +42,7 @@ The following code example demonstrates how to enable transition in animations a
     width="700px"
     height="500px"
     isTransitionInEnabled="true"
-    transitionInDuration="5000"
+    transitionInDuration="1000"
     transitionInMode="AccordionFromRight">
 </igx-category-chart>
 ```
@@ -52,7 +52,7 @@ The following code example demonstrates how to enable transition in animations a
     width="700px"
     height="500px"
     isTransitionInEnabled={true}
-    transitionInDuration={5000}
+    transitionInDuration={1000}
     transitionInMode="AccordionFromRight" />
 ```
 ```html
@@ -61,7 +61,7 @@ The following code example demonstrates how to enable transition in animations a
     width="800px"
     height="500px"
     is-transition-in-enabled="true"
-    transition-in-duration="5000"
+    transition-in-duration="1000"
     transition-in-mode="AccordionFromRight">
 </igc-category-chart>
 ```
