@@ -41,6 +41,8 @@ The Scatter Polyline Chart belongs to a group of shape charts that take an array
 - [Axis Options](../chart-features-axis-options.md)
 - [Axis Gridlines](../chart-features-axis-gridlines.md)
 - [Highlighting](../chart-features-highlighting.md)
+- [Gantt Chart](gantt-chart.md)
+- [Network Chart](network-chart.md)
 
 <!-- TODO list API links used in this topic
 ## API Members
