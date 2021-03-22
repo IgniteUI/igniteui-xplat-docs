@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart"]
 ---
 # $PlatformShort$ Network Graph / Chart
 
-$PlatformShort$ Network Graph, also called Network Chart or Polyline Chart visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them.
+$PlatformShort$ Network Graph, also called Network Chart or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them.
 
 ## $PlatformShort$ Network Graph Example
 
