@@ -13,7 +13,7 @@ The $ProductName$ data chart component allows for placement of horizontal or ver
 
 ## $PlatformShort$ Value Overlay Example
 
-<code-view style="height: 500px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
            alt="$PlatformShort$ Value Overlay Example"
