@@ -27,12 +27,12 @@ The $ProductName$ category chart component can enable three types of highlightin
 
 3. Category Highlighting targets all category axes in the chart. They draw a shape that illuminates the area of the axis closest to the pointer position. This is enabled by setting the `IsCategoryHighlightingEnabled` property to true.
 
-<!-- ```razor
+```razor
 <CategoryChart Height="500px" Width="700px"
     DataSource="@DataSource"
     IsSeriesHighlightingEnabled="true"
-    IsCategoryHighlightingEnabled="true"
-    IsItemHighlightingEnabled="true">
+    IsCategoryHighlightingEnabled="false"
+    IsItemHighlightingEnabled="false">
 </CategoryChart>
 ```
 
@@ -40,16 +40,16 @@ The $ProductName$ category chart component can enable three types of highlightin
 <igx-category-chart
     [dataSource]="data"
     isSeriesHighlightingEnabled="true"
-    isCategoryHighlightingEnabled="true"
-    isItemHighlightingEnabled="true">
+    isCategoryHighlightingEnabled="false"
+    isItemHighlightingEnabled="false">
 </igx-category-chart>
 ```
 
 ```tsx
  <IgrCategoryChart dataSource={this.state.data}
     isSeriesHighlightingEnabled={true}
-    isCategoryHighlightingEnabled={true}
-    isItemHighlightingEnabled={true} />
+    isCategoryHighlightingEnabled={false}
+    isItemHighlightingEnabled={false} />
 ```
 
 ```html
@@ -58,7 +58,7 @@ The $ProductName$ category chart component can enable three types of highlightin
     width="800px"
     height="500px"
     is-series-highlighting-enabled="true"
-    is-category-highlighting-enabled="true"
-    is-item-highlighting-enabled="true" >
+    is-category-highlighting-enabled="false"
+    is-item-highlighting-enabled="false" >
 </igc-category-chart>
-``` -->
+```
