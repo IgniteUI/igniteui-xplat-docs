@@ -37,7 +37,7 @@ The appearance of chart markers is managed through the `MarkerType`, `MarkerBrus
     [dataSource]="data"
     width="700px"
     height="500px"
-    markerType="diamondMarker"
+    markerType="Diamond"
     markerBrushes="red"
     markerOutlines="yellow">
 </igx-category-chart>
@@ -47,7 +47,7 @@ The appearance of chart markers is managed through the `MarkerType`, `MarkerBrus
  <IgrCategoryChart dataSource={this.state.data}
     width="700px"
     height="500px"
-    markerType="diamondMarker"
+    markerType="Diamond"
     markerBrushes="red"
     markerOutlines="yellow" />
 ```
@@ -56,7 +56,7 @@ The appearance of chart markers is managed through the `MarkerType`, `MarkerBrus
     id="chart"
     width="700px"
     height="700px"
-    marker-type="diamondMarker"
+    marker-type="Diamond"
     marker-brushes="red"
     marker-outlines="yellow">
 </igc-category-chart>
