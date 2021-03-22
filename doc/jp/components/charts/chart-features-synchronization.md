@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Synchronization | Infragistics
-_description: Synchronize between multiple Infragistics' $PlatformShort$ charts controls including zooming, panning and crosshair events. Learn about our $ProductName$ graph synchronization capabilies!
-_keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics
+title: $PlatformShort$  $PlatformShort$ データ チャート | データ可視化ツール | 同期化 | インフラジスティックス
+_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$Product Name$のグラフ同期機能について説明します。
+_keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 同期化, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ Chart Synchronization
+# $PlatformShort$ チャートの同期化
 
-The $ProductName$ data chart component allows for synchronization with respect to the coordination of zooming, panning, and crosshair events between multiple charts. This can help you to visualize the same areas of multiple charts, assuming your data sources are similar or the same with respect to the axes.
+$ ProductName$ データ チャート コンポーネントを使用すると、複数のチャート間のズーム、パン、および十字線イベントの調整に関して同期をとることができます。これは、データソースが軸に関して似ているか同じであると仮定して、複数のチャートの同じ領域を視覚化するのに役立ちます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
-           alt="$PlatformShort$ Chart Synchronization Example"
+           alt="$PlatformShort$ チャートの同期化の例"
            github-src="charts/data-chart/chart-synchronization">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Required Modules
+## モジュールの要件
 
-In order to use synchronization in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
+データチャートで同期を使用するする場合、インポートしてからインタラクティブ モードを登録します。以下のコードを使用できます:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -44,15 +44,15 @@ import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 IgcDataChartInteractivityModule.register();
 ```
 
-There are four options of chart synchronization, in that you can synchronize horizontally only, vertically only, both, or you can choose not to synchronize at all, which is the default.
+チャートの同期にはデフォルトで 4 つのオプションがあり、水平方向のみ、垂直方向のみ、その両方を同期、あるいは同期なしを選択することもできます。
 
-If you want to synchronize a set of charts, you can assign them the same name to the `SyncChannel` property and then specify whether or not to synchronize the charts horizontally and/or vertically by setting the `SynchronizeHorizontally` and `SynchronizeVertically` properties to the corresponding boolean value.
+チャートのセットを同期する場合は、それらに `SyncChannel` プロパティに同じ名前を割り当ててから、`SynchronizeHorizontally` と `SynchronizeVertically` プロパティを対応するブール値に設定して、チャートを水平または垂直に同期するかどうかを指定できます。
 
-Note that in order to synchronize either vertically and/or horizontally, you will need to set the `IsHorizontalZoomEnabled` and/or `IsVerticalZoomEnabled` property to `true`, respectively. A synchronized chart that is dependent on another chart will still zoom regardless of this property setting.
+垂直または水平に同期するには、`IsHorizontalZoomEnabled` または `IsVerticalZoomEnabled` プロパティをそれぞれ `true` に設定する必要があります。他のチャートに依存している同期チャートは、このプロパティ設定に関係なく、ズームできます。
 
-## Code Snippet
+## コード スニペット
 
-The following code snippet demonstrates how to synchronize a pair of chart controls in the $ProductName$ data chart:
+次のコードスニペットは、$ProductName$ データチャートのチャート コントロールのペアを同期する方法を示しています:
 
 ```razor
 <DataChart Width="600px" Height="400px" @ref="Chart1"

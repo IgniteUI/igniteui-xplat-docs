@@ -1,40 +1,40 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Value Overlay | Infragistics
-_description: Use Infragistics $ProductName$ chart control's value overlay feature to place horizontal or vertical lines at a single numeric value. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics
+title: $PlatformShort$  データ チャート | データ可視化ツール | 値オーバーレイ | インフラジスティックス
+_description: $ProductName$ チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $PlatformShort$ Value Overlay Chart
+# $PlatformShort$ 値オーバーレイ チャート
 
-The $ProductName$ data chart component allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
+$ProductName$ データ チャート コンポーネントを使用すると、`ValueOverlay` を使用して定義した単一の数値で水平線または垂直線を配置できます。特定のシリーズの平均値や中央値などのデータを視覚化するのに役立ちます。
 
-## $PlatformShort$ Value Overlay Example
+## $PlatformShort$ 値オーバーレイの例
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$PlatformShort$ Value Overlay Example"
+           alt="$PlatformShort$ 値オーバーレイの例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
 <div class="divider--half"></div>
 
-Unlike other series types that use a `DataSource` for data binding, the value overlay uses a `ValueMemberPath` property to bind a single numeric value. In addition, the value overlay requires you to define a single `Axis` to use. If you use an X-axis, the value overlay will be a vertical line, and if you use a Y-axis, it will be a horizontal line.
+データ バインディングに `DataSource` を使用する他のシリーズタイプとは異なり、値オーバーレイは `ValueMemberPath` プロパティを使用して単一の数値をバインドします。値オーバーレイでは、使用する単一の軸を定義する必要があります。X 軸を使用する場合、値のオーバーレイは垂直線になり、Y 軸を使用する場合は、水平線になります
 
-When using a numeric X or Y axis, the `ValueMemberPath` property should reflect the actual numeric value on the axis where you want the value overlay to be drawn. When using a category X or Y axis, the `ValueMemberPath` should reflect the index of the category at which you want the value overlay to appear.
+数値の X 軸またはY軸を使用する場合、`ValueMemberPath` プロパティは、値のオーバーレイを描画する軸上の実際の数値を反映する必要があります。数値の X 軸または Y 軸を使用する場合、`ValueMemberPath` は、値オーバーレイを表示するカテゴリのインデックスを反映する必要があります。
 
-When using the value overlay with a numeric angle axis, it will appear as a line from the center of the chart and when using a numeric radius axis, it will appear as a circle.
+数値オーバーレイを角度角軸で使用すると、チャートの中心からの線として表示され、半径半径軸を使用すると、円として表示されます。
 
-`ValueOverlay` appearance properties are inherited from `Series` and so `Brush` and `Thickness` for example are available and work the same way they do with other types of series.
+`ValueOverlay` 外観プロパティは、`Series` から継承されているため、例えば `Brush` と `Thickness` を使用でき、他のタイプのシリーズと同じように機能します。
 
-It is also possible to show an axis annotation on a `ValueOverlay` to show the value of the overlay on the owning axis. In order to show this, you can set the `IsAxisAnnotationEnabled` property to true.
+`ValueOverlay` に軸注釈を表示して、所有する軸にオーバーレイの値を表示することもできます。これを示すために、`IsAxisAnnotationEnabled` プロパティを true に設定できます。
 
-## Code Example
+## コード例
 
-The following code snippet demonstrates adding a value overlay with axis annotation to the $ProductName$ data chart component:
+以下のコード スニペットは、$ProductName$ データ チャート コンポーネントに値オーバーレイを追加する方法を示しています:
 
 ```html
 <igx-data-chart #chart height="600px" width="800px" [dataSource]="data">

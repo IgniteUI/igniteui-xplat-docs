@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Navigation | Infragistics
-_description: Navigate Infragistics' $PlatformShort$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
-_keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics
+title: $PlatformShort$  データ チャート | データ可視化ツール | ナビゲーション | インフラジスティックス
+_description: インフラジスティックスの $PlatformShort$ チャートをナビゲートするには、マウスまたはタッチを使用して左右にパンし、水平および垂直にズームします。$ProductName$ のグラフ ナビゲーション機能について説明します。
+_keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ナビゲーション, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ModifierKeys']
 _language: ja
 ---
-# $PlatformShort$ Chart Navigation
+# $PlatformShort$ チャート ナビゲーション
 
-In the $PlatformShort$ data chart component, navigation is disabled by default. Once enabled, you are able to zoom and pan the data chart either programmatically or in the UI.
+$PlatformShort$ データ チャート コンポーネントでは、ナビゲーションがデフォルトで無効になっています。有効にするとコードや UI を介してチャートのズームやパンニングができるようになります。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$PlatformShort$ Navigation Example"
+           alt="$PlatformShort$ ナビゲーションの例"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Required Modules
+## モジュールの要件
 
-In order to use navigation in the data chart, you need to import and register the interactivity module. This can be done by using the following code:
+データ チャートでナビゲーションする場合、インポートしてからインタラクティブ モードを登録します。これは、次のコードを使用して実行できます:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -44,13 +44,13 @@ import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 IgcDataChartInteractivityModule.register();
 ```
 
-## Chart Navigation with User Interactions
+## ユーザー インタラクションによるチャート ナビゲーション
 
-In order to allow navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart to true, depending on the direction that you wish to allow zooming. This will allow you to zoom the data chart by rolling a mouse wheel over it.
+UI でのナビゲーションを許可するには、ズームを許可する方向に応じて、チャートの `IsHorizontalZoomEnabled` プロパティおよび `IsVerticalZoomEnabled` プロパティを true に設定する必要があります。マウス ホイールを回転してチャートをズームできます。
 
-It is also possible to zoom or pan simply by clicking the buttons on the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to `DragZoom` and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either `DragPan` to allow panning or `None` to prevent these operations.
+またマウスやタッチでボタンをクリックしてズームまたはパンニングできます。チャートの `DefaultInteraction` プロパティは、マウスクリック イベントやタッチ イベントで何が起こるかを決定します。このプロパティはデフォルトで `DragZoom` に設定されており、ズームを有効に設定すると、クリックしてドラッグした際にプロット領域の上に四角形のプレビューが配置され、グラフのズーム領域になります。この `DefaultInteraction` プロパティは、パンニングを許可する場合は `DragPan`、これらの操作を禁止する場合は `None` に設定することもできます。
 
-The following code snippet demonstrates how you can enable base UI navigation in the $PlatformShort$ data chart component:
+以下のコード スニペットは、$PlatformShort$ データ チャート コンポーネントで基本的な UI ナビゲーションを有効にする方法を示しています:
 
 Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
 
@@ -81,26 +81,26 @@ Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` co
 </igc-data-chart>
 ```
 
-## Chart Navigation with Mouse and Keyboard
+## マウスとキーボードによるチャート ナビゲーション
 
-Navigation in the $PlatformShort$ data chart component can happen with either the mouse or the keyboard once enabled. The following operations can be invoked using the following mouse or keyboard operations by default:
+$PlatformShort$ データ チャート コンポーネントのナビゲーションは、マウスまたはキーボードのいずれかを有効にすると発生します。以下の操作は、デフォルトで以下のマウスまたはキーボード操作を使用して呼び出すことができます。
 
-- **Panning**: Using arrow keys on keyboard or holding the Shift key and clicking and dragging with the mouse.
-- **Zoom In**: Using the PageUp key on keyboard or rolling the mouse wheel up.
-- **Zoom Out**: Using the PageDown key on keyboard or rolling the mouse wheel down.
-- **Fit to Chart Plot Area**: Home key on the keyboard. There is no mouse operation for this.
-- **Area Zoom**: Click and drag mouse within the plot area with the `DefaultInteraction` property set to its default, `DragZoom`.
+- **Panning**: キーボードの矢印キーを使用するか、Shift キーを押しながらマウスでクリックしてドラッグします。
+- **Zoom In**: キーボードの PageUp キーを使用するか、マウスホイールを回転させます。
+- **Zoom Out**: キーボードの PageDown キーを使用するか、マウスホイールを回転させます。
+- **チャート プロット領域に合わせる**: キーボードの Home キー。これに対するマウス操作はありません。
+- **領域ズーム**: `DefaultInteraction` プロパティをデフォルトの `DragZoom` に設定して、プロット領域内でマウスをクリックしてドラッグします。
 
-The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be enabled:
+ズーム操作とパン操作は、それぞれ `DragModifier` プロパティと `PanModifier` プロパティを設定し、修飾キーを使用して有効にすることもできます。これらのプロパティは以下の修飾キーに設定することができ、押すと対応する操作が有効になります。
 
 - Shift
 - Alt
 - Control
-- Windows Key
-- Apple Key
+- Windows キー
+- Apple キー
 - None
 
-The following code snippet demonstrates how you can enable UI navigation in the chart. The following will only allow zooming while holding the **Shift** key and panning while holding the **Alt** key:
+以下のコード スニペットは、チャートで UI ナビゲーションを有効にする方法を示しています。以下の例では、**Shift** キーを押しながらズーム、**Alt** キーを押しながらパンのみ可能です:
 
 Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
 
@@ -170,17 +170,17 @@ The following code snippet demonstrates how to enable the overview plus detail p
 </IgrDataChart>
 ``` -->
 
-## Chart Navigation through Code
+## コードによるチャート ナビゲーション
 
-The $PlatformShort$ data chart component provides several navigation properties that are updated each time a zoom or pan operation happens in the data chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
+$PlatformShort$ データ チャート コンポーネントは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
 
-- `WindowPositionHorizontal`: A numeric value describing the X portion of the content view rectangle displayed by the data chart.
-- `WindowPositionVertical`: A numeric value describing the Y portion of the content view rectangle displayed by the data chart.
-- `WindowRect`: An `Rect` object representing a rectangle that represents the portion of the chart that is currently in view. For example, a `WindowRect` of "0, 0, 1, 1" would be the entirety of the data chart.
-- `WindowScaleHorizontal`: A numeric value describing the width portion of the content view rectangle displayed by the data chart.
-- `WindowScaleVertical`: A numeric value describing the height portion of the content view rectangle displayed by the data chart.
+- `WindowPositionHorizontal`: コンテンツ ビュー長方形の X 部分を表す数値は、チャートで表示されます。
+- `WindowPositionVertical`: 数値は、チャートに表示されるコンテンツビュー四角形のの Y 部分を表します。
+- `WindowRect`: 長方形を表す `IgRect` オブジェクトは、現在ビューにあるチャート部分を表します。例えば、`WindowRect` の "0, 0, 1, 1" はチャート全体になります。
+- `WindowScaleHorizontal`: チャートで表示されるコンテンツ ビュー長方形の幅部分を表す数値。
+- `WindowScaleVertical`: チャートで表示されるコンテンツ ビュー長方形の高さ部分を表す数値。
 
-The following code snippets show how to modify the view of the $PlatformShort$ data chart component programmatically. The following assumes you have a variable named "chart" to represent the $PlatformShort$ data chart component:
+以下のコード スニペットは、$PlatformShort$ データ チャート コンポーネントのビューをプログラムで変更する方法を示しています。以下では、$PlatformShort$ データ チャート コンポーネントを表す変数名 chart があると仮定します。
 
 ```razor
 // Zoom in by a factor of 0.05
