@@ -335,22 +335,22 @@
   {
     "name": "Area Chart",
     "href": "charts/types/area-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Bar Chart",
     "href": "charts/types/bar-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Bubble Chart",
     "href": "charts/types/bubble-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Column Chart",
     "href": "charts/types/column-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Composite Chart",
@@ -360,12 +360,12 @@
   {
     "name": "Donut Chart",
     "href": "charts/types/donut-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Financial / Stock Chart",
     "href": "charts/types/stock-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Gantt Chart",
@@ -375,7 +375,7 @@
   {
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Network Graph / Chart",
@@ -390,7 +390,7 @@
   {
     "name": "Polar Chart",
     "href": "charts/types/polar-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Pyramid Chart",
@@ -400,37 +400,37 @@
   {
     "name": "Radial Chart",
     "href": "charts/types/radial-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Scatter Chart",
     "href": "charts/types/scatter-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Shape Chart",
     "href": "charts/types/shape-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Spline Chart",
     "href": "charts/types/spline-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Sparkline Chart",
     "href": "charts/types/sparkline-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Step Chart",
     "href": "charts/types/step-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Overlay Chart",
     "href": "charts/types/value-overlay-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Treemap",
@@ -440,7 +440,7 @@
   {
     "name": "Chart Features",
     "href": "charts/chart-feature-overview.md",
-    "status": "NEW",
+    "status": "",
     "items": [
         {
           "name": "Axis Gridlines",
