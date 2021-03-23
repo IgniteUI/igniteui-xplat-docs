@@ -7,18 +7,18 @@ _language: ja
 ---
 # $PlatformShort$ シェープ チャート
 
-このトピックは、Angular データ チャート コンポーネントのシェープ シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャート シリーズのグループです。
+このトピックは、$PlatformShort$ データ チャート コンポーネントのシェープ シリーズのさまざまなタイプについて説明します。シェープ チャートは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャートのグループです。
 
-散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
+シェープ チャートは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
 ## $PlatformShort$ 散布ポリゴン チャート
 
-散布ポリゴン チャートは、X/Y 座標の配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリゴンのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
+散布ポリゴン チャートは、X/Y ポイントの配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリゴンのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
            alt="$PlatformShort$ 散布ポリゴン チャート" >
 </code-view>
 
@@ -26,22 +26,24 @@ _language: ja
 
 ## $PlatformShort$ 散布ポリライン チャート
 
-散布ポリライン チャートは、X/Y 座標の配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリラインのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
+散布ポリライン チャートは、X/Y ポイントの配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリラインのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
            alt="$PlatformShort$ 散布ポリライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [軸の注釈](data-chart-axis-annotations.md)
-- [軸オプション](chart-features-axis-options.md)
-- [軸グリッド線](chart-features-axis-gridlines.md)
-- [チャート強調表示](chart-features-highlighting.md)
+- [軸の注釈](../data-chart-axis-annotations.md)
+- [軸オプション](../chart-features-axis-options.md)
+- [軸グリッド線](../chart-features-axis-gridlines.md)
+- [チャート強調表示](../chart-features-highlighting.md)
+- [ガント チャート](gantt-chart.md)
+- [ネットワーク チャート](network-chart.md)
 
-<!-- TODO list API links used in this topic 
-## API Members
+<!-- TODO list API links used in this topic
+## API メンバー
 -->

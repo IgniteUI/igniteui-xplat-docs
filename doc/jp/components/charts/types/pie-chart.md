@@ -1,6 +1,6 @@
 ---
-title: $PlatformShort$ 円チャート | データ可視化ツール | インフラジスティックス
-_description: Infragistics の $PlatformShort$ 円チャートを使用して、分類データを表示するカラフルな円チャートを作成します。
+title: $PlatformShort$ 円チャートとグラフ | $ProductName$
+_description: The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections. Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 _language: ja
@@ -474,8 +474,8 @@ public tick(): void {
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート アニメーション](chart-features-animations.md)
-- [チャート ツールチップ](chart-features-tooltips.md)
+- [チャート アニメーション](../chart-features-animations.md)
+- [チャート ツールチップ](../chart-features-tooltips.md)
 
 <!-- TODO list API links used in this topic 
 ## API メンバー

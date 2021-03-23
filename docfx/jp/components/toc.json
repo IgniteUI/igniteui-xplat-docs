@@ -378,8 +378,8 @@
     "status": ""
   },
   {
-    "name": "ネットワークグラフ / チャート",
-    "href": "charts/types/network-graph.md",
+    "name": "ネットワーク チャート",
+    "href": "charts/types/network-chart.md",
     "status": "NEW"
   },
   {

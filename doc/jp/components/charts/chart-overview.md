@@ -1,6 +1,6 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ ライブラリ | データ可視化 | インフラジスティックス | $ProductName$
-_description: $PlatformShort$ アプリの数百万のデータ ポイントでミリ秒の更新機能を使用して、あらゆるタイプのデータ、ビジネス、ファイナンシャル、科学、および散布を視覚化します。
+title: $PlatformShort$ チャートとグラフ ライブラリー | $ProductName$
+_description: $ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: $PlatformShort$ Charts, Chart, Infragistics, $PlatformShort$ チャート, チャート, インフラジスティックス
 _language: ja
 ---
@@ -25,7 +25,7 @@ $PlatformShort$ チャート コンポーネントは、カテゴリ シリー�
 
 この $PlatformShort$ 縦棒チャート、または縦棒グラフの例は、国別のオリンピック メダルを示しています。$PlatformShort$ 縦棒チャートは、1 つ以上の数値または時系列に基づくデータ ポイントと、データ値を列の高さで比較する 1 つの文字列データ ポイントを含むカテゴリ チャートのグループに属しています。この例では、Y 軸 (チャートの左側のラベル) に獲得したメダルの数を示す数値データが表示され、X 軸 (下部のラベル) に時間値 (この場合は年) が表示されます。列は、米国、日本、ドイツなど、さまざまな国を表すカテゴリ値です。
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -46,44 +46,36 @@ $PlatformShort$ チャートは、軸、マーカー、シリーズ、凡例、�
 
 ### $PlatformShort$ 棒チャート
 
-$PlatformShort$ 棒チャート (棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、並べ替えられたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。
+$PlatformShort$ 棒チャート (棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、並べ替えられたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[棒チャート](types/bar-chart.md)の詳細をご覧ください。
 
-[棒チャート](types/bar-chart.md)の詳細をご覧ください。
-
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
 ### $PlatformShort$ 円チャート
 
-$PlatformShort$ 円チャート、または円グラフは、一般的な部分から全体へのチャート タイプです。部分から全体へのチャートは、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示します。カテゴリは、分析されている合計値に対する値のパーセンテージに基づいて、他のカテゴリに比例して表示されます。円チャートは、データ値を円形または円チャートのセクションとして描画します。各セクションまたは円スライスには、基本データ値に比例する円弧の長さがあります。円スライスで表される合計値は、100 または 100% などの全体の値を表します。円チャートは小さなデータセットに最適で、一目で簡単に読むことができます。
+$PlatformShort$ 円チャート、または円グラフは、一般的な部分から全体へのチャート タイプです。部分から全体へのチャートは、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示します。カテゴリは、分析されている合計値に対する値のパーセンテージに基づいて、他のカテゴリに比例して表示されます。円チャートは、データ値を円形または円チャートのセクションとして描画します。各セクションまたは円スライスには、基本データ値に比例する円弧の長さがあります。円スライスで表される合計値は、100 または 100% などの全体の値を表します。円チャートは小さなデータセットに最適で、一目で簡単に読むことができます。[円チャート](types/pie-chart.md)の詳細をご覧ください。
 
-[円チャート](types/pie-chart.md)の詳細をご覧ください。
-
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
 ### $PlatformShort$ 折れ線チャート
 
-$PlatformShort$ 折れ線チャート、または折れ線グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
+$PlatformShort$ 折れ線チャート、または折れ線グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。[折れ線チャート](types/line-chart.md)の詳細をご覧ください。
 
-[折れ線チャート](types/line-chart.md)の詳細をご覧ください。
-
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
 ### $PlatformShort$ ドーナツ チャート
 
-$PlatformShort$ ドーナツ チャート、またはドーナツ グラフは、円チャートの変形であり、全体の一部を表す円内の変数の発生を比例的に示します。ドーナツ チャートには、円チャートの中央に円形の開口部があり、タイトルまたはカテゴリの説明を表示できます。ドーナツ チャートは、階層データを視覚化するための組み込みサポートを使用して、複数の同心円をサポートできます。
+$PlatformShort$ ドーナツ チャート、またはドーナツ グラフは、円チャートの変形であり、全体の一部を表す円内の変数の発生を比例的に示します。ドーナツ チャートには、円チャートの中央に円形の開口部があり、タイトルまたはカテゴリの説明を表示できます。ドーナツ チャートは、階層データを視覚化するための組み込みサポートを使用して、複数の同心円をサポートできます。[ドーナツ チャート](types/donut-chart.md)の詳細をご覧ください。
 
-[ドーナツ チャート](types/donut-chart.md)の詳細をご覧ください。
-
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
@@ -92,18 +84,18 @@ $PlatformShort$ ドーナツ チャート、またはドーナツ グラフは�
 
 [エリア チャート](types/area-chart.md)の詳細をご覧ください。
 
-<!-- <div class="sample-container loading" style="height: 500px">
+<!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
 </div>
 <div class="divider--half"></div> -->
 
 ### スパークライン チャート
 
-スパークライン チャート、またはスパークライン グラフは、グリッド セル内や、データ ストーリーを伝えるために単語サイズの視覚化が必要な場所など、小規模なレイアウト内で描画することを目的としたカテゴリ チャートの一種です。他の $PlatformShort$ チャート タイプと同様に、スパークライン チャートには、チャート タイプ、マーカー、範囲、トレンドライン、不明な値のプロット、ツールチップなど、構成およびカスタマイズできるいくつかの視覚要素と対応する機能があります。スパークライン チャートは、折れ線チャート、エリア チャート、縦棒チャート、または Win/Loss チャートとして描画できます。スパーク チャートに相当するフルサイズのチャートの違いは、Y 軸 (左側のラベル) と X 軸 (下部のラベル) が表示されないことです。[スパークライン チャート](types/sparkline-chart)の詳細をご覧ください。
+$PlatformShort$ スパークライン チャート、またはスパークライン グラフは、グリッド セル内や、データ ストーリーを伝えるために単語サイズの視覚化が必要な場所など、小規模なレイアウト内で描画することを目的としたカテゴリ チャートの一種です。他の $PlatformShort$ チャート タイプと同様に、スパークライン チャートには、チャート タイプ、マーカー、範囲、トレンドライン、不明な値のプロット、ツールチップなど、構成およびカスタマイズできるいくつかの視覚要素と対応する機能があります。スパークライン チャートは、折れ線チャート、エリア チャート、縦棒チャート、または Win/Loss チャートとして描画できます。スパーク チャートに相当するフルサイズのチャートの違いは、Y 軸 (左側のラベル) と X 軸 (下部のラベル) が表示されないことです。[スパークライン チャート](types/sparkline-chart)の詳細をご覧ください。
 
 ### バブル チャート
 
-バブル チャート (バブル グラフ) は、3 つの数値で構成されるデータを表示するために使用されます。値の 2 つは、デカルト (X、Y) 座標系を使用して交点としてプロットされ、3 番目の値は点の直径サイズとして描画されます。これにより、バブル チャートにその名前が付けられます。これは、プロットの X 座標と Y 座標に沿ったさまざまなサイズのバブルの視覚化です。$PlatformShort$ バブル チャートは、データ相関とサイズによって描画されたデータ値の違いとの関係を示すために使用されます。4 番目のデータ ディメンション (通常は色) を使用して、バブル チャートの値をさらに区別することもできます。[バブル チャート](types/bubble-chart.md)の詳細をご覧ください。
+$PlatformShort$ バブル チャート (バブル グラフ) は、3 つの数値で構成されるデータを表示するために使用されます。値の 2 つは、デカルト (X、Y) 座標系を使用して交点としてプロットされ、3 番目の値は点の直径サイズとして描画されます。これにより、バブル チャートにその名前が付けられます。これは、プロットの X 座標と Y 座標に沿ったさまざまなサイズのバブルの視覚化です。$PlatformShort$ バブル チャートは、データ相関とサイズによって描画されたデータ値の違いとの関係を示すために使用されます。4 番目のデータ ディメンション (通常は色) を使用して、バブル チャートの値をさらに区別することもできます。[バブル チャート](types/bubble-chart.md)の詳細をご覧ください。
 
 ### ファイナンシャル チャート/株価チャート
 
@@ -113,13 +105,33 @@ $PlatformShort$ ファイナンシャル/株価チャートは、時系列チャ
 
 $PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの垂直棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、並べ替えられたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの上から下にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[縦棒チャート](types/column-chart.md)の詳細をご覧ください。
 
+### $PlatformShort$ 複合チャート
+
+The $PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis. Learn more about our [composite charts](types/composite-chart.md).
+
+### $PlatformShort$ ガント チャート
+
+The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md).
+
+### $PlatformShort$ ネットワーク チャート
+
+The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md).
+
 ### 極座標エリア チャート
 
 $PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データポイントを水平線に沿って伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
 
+### $PlatformShort$ ピラミッド チャート
+
+The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md).
+
 ### 散布図
 
 $PlatformShort$ 散布図は、デカルト (X、Y) 座標系を使用してデータをプロットすることにより、2 つの値間の関係を示すために使用されます。各データ ポイントは、X 軸と Y 軸上のデータ値の交点として描画されます。散布図は、不均一な間隔またはデータのクラスターに注意を向けます。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。$PlatformShort$ 散布図は、データがバインド前に時系列になっていない場合でも、X 軸と Y 軸でデータを時系列に整理してプロットします。[散布図](types/scatter-chart.md)の詳細をご覧ください。
+
+### $PlatformShort$ シェープ チャート
+
+The $PlatformShort$ Shape Charts is a group of chart that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings. Learn more about our [shape charts](types/shape-chart.md).
 
 ### スプライン チャート
 

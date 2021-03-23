@@ -1,5 +1,5 @@
 ---
-title: ドーナツ チャート | 階層データの可視化 | インフラジスティックス
+title: $PlatformShort$ ドーナツ チャート | 階層データの可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ドーナツ チャート コントロールを使用して、複数の変数を同心円で表示し、階層データを可視化します。詳細については、$ProductName$ ドーナツ チャートのサンプルを参照してください。
 _keywords: $PlatformShort$ charts, doughnut chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, multiple rings, $PlatformShort$ チャート, ドーナツ チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, 複数リング, インフラジスティックス
 mentionedTypes: ['XamDoughnutChart']
@@ -387,7 +387,7 @@ public tick(): void {
 }
 ```
 
-## サンプル
+## アニメーションのサンプル
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

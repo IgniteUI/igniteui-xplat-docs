@@ -15,9 +15,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、散布折れ線チャートと同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
            alt="$PlatformShort$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -29,9 +29,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 極座標スプライン チャートは、散布スプライン チャートと同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
            alt="$PlatformShort$ 極座標スプライン チャート" >
 </code-view>
 
@@ -41,20 +41,22 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
            alt="$PlatformShort$ 極座標チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [軸の注釈](data-chart-axis-annotations.md)
-- [軸オプション](chart-features-axis-options.md)
-- [軸グリッド線](chart-features-axis-gridlines.md)
-- [チャート強調表示](chart-features-highlighting.md)
+- [軸の注釈](../data-chart-axis-annotations.md)
+- [軸オプション](../chart-features-axis-options.md)
+- [軸グリッド線](../chart-features-axis-gridlines.md)
+- [チャート強調表示](../chart-features-highlighting.md)
+- [ネットワーク チャート](network-chart.md)
+- [ラジアル チャート](radial-chart.md)
 
-<!-- TODO list API links used in this topic 
+<!-- TODO list API links used in this topic
 ## API メンバー
 -->
