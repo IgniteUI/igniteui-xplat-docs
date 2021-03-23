@@ -8,9 +8,11 @@ mentionedTypes: ["XamDataChart"]
 
 $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them.
 
+The following sections provide examples of various types of Network Charts.
+
 ## $PlatformShort$ Network Polar Chart
 
-The following example demonstrates how to create Network Polar Chart using `PolarScatterSeries` (for rendering node markers) and `PolarLineSeries` (for rendering node connections) in the `XamDataChart` component.
+This example demonstrates how to create Network Polar Chart using `PolarScatterSeries` (for rendering node markers) and `PolarLineSeries` (for rendering node connections) in the `XamDataChart` component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,7 +24,7 @@ The following example demonstrates how to create Network Polar Chart using `Pola
 
 ## $PlatformShort$ Network Scatter Chart
 
-The following example demonstrates how to create Network Scatter Chart using `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in the `XamDataChart` component.
+This example shows how to create Network Scatter Chart using `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in the `XamDataChart` component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
