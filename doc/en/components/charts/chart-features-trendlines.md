@@ -2,17 +2,17 @@
 title: $PlatformShort$ Chart Trendlines | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Trendlines
 _keywords: $PlatformShort$ Charts, Trendlines, Infragistics
-mentionedTypes: ["XamFinancialChart"]
+mentionedTypes: [`XamFinancialChart`, 'TrendLineType']
 ---
 
 # $PlatformShort$ Chart Trendlines
 
-In $PlatformShort$ charts, trendlines help identifying a trend or find patterns in data. Trendlines are always rendered in front of data points bound to the chart. Thye are supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` (except for stacked series, shape series, and range series).
+In $PlatformShort$ charts, trendlines help identifying a trend or find patterns in data. Trendlines are always rendered in front of data points bound to the chart. They are supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` (except for stacked series, shape series, and range series).
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines" 
-           alt="$PlatformShort$ Trendlines Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
+           alt="$PlatformShort$ Trendlines Example"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 

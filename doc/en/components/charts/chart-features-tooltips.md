@@ -2,17 +2,17 @@
 title: $PlatformShort$ Chart Tooltips | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Tooltips
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics
-mentionedTypes: []
+mentionedTypes: ['XamCategoryChart', 'ToolTipType']
 ---
 
 # $PlatformShort$ Chart Tooltips
 
-This topic provides conceptual information about the tooltip types available on the $ProductName$ category chart component.
+In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips" 
-           alt="$PlatformShort$ Tooltip Types Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
+           alt="$PlatformShort$ Tooltip Types Example"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
@@ -20,7 +20,7 @@ This topic provides conceptual information about the tooltip types available on 
 
 ## Tooltip Types
 
-The $ProductName$ category chart component can be configured to display Tooltips in the following ways:
+The $ProductName$ category chart can be configured to display tooltips by setting the `ToolTipType` property in the following ways:
 
 1. `Default` tooltips will display a tooltip for a single item when the pointer is positioned over it.
 1. `Item` tooltips will display a tooltip for each data item in the category that the pointer is positioned over.
@@ -41,7 +41,8 @@ The $ProductName$ category chart component can be configured to display Tooltips
 ```
 
 ```tsx
- <IgrCategoryChart dataSource={this.state.data}
+ <IgrCategoryChart
+    dataSource={this.state.data}
     toolTipType="Category" />
 ```
 
@@ -52,16 +53,16 @@ The $ProductName$ category chart component can be configured to display Tooltips
 </igc-category-chart>
 ```
 
-<!-- TODO uncomment below section when bug# 272693 is fixed 
+<!-- TODO uncomment below section when bug# 272693 is fixed
 
 # $PlatformShort$ Tooltip Templates
 
 The $PlatformShort$ category chart component provides default tooltips for each type of series. The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template" 
-           alt="$PlatformShort$ Tooltip Templates Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Templates Example"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 
@@ -118,5 +119,5 @@ let template: TemplateFunction;
 chart.tooltipTemplate = template;
 ```
 
-TODO uncomment above section when bug# 272693 is fixed 
+TODO uncomment above section when bug# 272693 is fixed
 -->
