@@ -11,7 +11,7 @@ The $PlatformShort$ financial stock chart has support for trendlines, which help
 
 <code-view style="height: 500px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-trendlines" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines" 
            alt="$PlatformShort$ Trendlines Example" 
            github-src="charts/financial-chart/trendlines">
 </code-view>
