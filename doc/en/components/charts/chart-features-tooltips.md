@@ -52,7 +52,8 @@ The $ProductName$ category chart component can be configured to display Tooltips
 </igc-category-chart>
 ```
 
-<!--Angular-->
+<!-- TODO uncomment below section when bug# 272693 is fixed 
+
 # $PlatformShort$ Tooltip Templates
 
 The $PlatformShort$ category chart component provides default tooltips for each type of series. The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
@@ -116,4 +117,6 @@ chart.dataSource = categoryData;
 let template: TemplateFunction;
 chart.tooltipTemplate = template;
 ```
-<!--end:Angular-->
+
+TODO uncomment above section when bug# 272693 is fixed 
+-->
