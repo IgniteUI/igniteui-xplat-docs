@@ -45,9 +45,7 @@ Built with a modular design of axis, markers, series, legend, and annotation lay
 
 ### $PlatformShort$ Bar Chart
 
-The $PlatformShort$ Bar Chart, or Bar Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points.
-
-Learn more about our [bar charts](types/bar-chart.md)
+The $PlatformShort$ Bar Chart, or Bar Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Learn more about our [bar charts](types/bar-chart.md)
 
 <!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
@@ -56,9 +54,7 @@ Learn more about our [bar charts](types/bar-chart.md)
 
 ### $PlatformShort$ Pie Chart
 
-The $PlatformShort$ Pie Chart, or Pie Graph, is a very common part-to-whole chart type. Part-to-whole charts show how categories (parts) of a data set add up to a total (whole) value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed. A pie chart renders data values as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. The total values represented by the pie slices represent a whole value, like 100 or 100%. Pie charts are perfect for small data sets and are easy to read at a quick glance.
-
-Learn more about our [pie charts](types/pie-chart.md)
+The $PlatformShort$ Pie Chart, or Pie Graph, is a very common part-to-whole chart type. Part-to-whole charts show how categories (parts) of a data set add up to a total (whole) value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed. A pie chart renders data values as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. The total values represented by the pie slices represent a whole value, like 100 or 100%. Pie charts are perfect for small data sets and are easy to read at a quick glance. Learn more about our [pie charts](types/pie-chart.md)
 
 <!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
@@ -67,9 +63,7 @@ Learn more about our [pie charts](types/pie-chart.md)
 
 ### $PlatformShort$ Line Chart
 
-The $PlatformShort$ Line Chart, or Line Graph is a type of category line graph shows the continuous data values represented by points connected by straight line segments of one or more quantities over a period time for showing trends and performing comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) are showing a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
-
-Learn more about our [line charts](types/line-chart.md)
+The $PlatformShort$ Line Chart, or Line Graph is a type of category line graph shows the continuous data values represented by points connected by straight line segments of one or more quantities over a period time for showing trends and performing comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) are showing a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart. Learn more about our [line charts](types/line-chart.md)
 
 <!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
@@ -78,9 +72,7 @@ Learn more about our [line charts](types/line-chart.md)
 
 ### $PlatformShort$ Donut Chart
 
-The $PlatformShort$ Donut Chart or Donut Graph, is a variant of a Pie Chart, proportionally illustrating the occurrences of a variable in a circle to represents parts of a whole. The donut chart has a circular opening at the center of the pie chart, where a title or category explanation can be displayed. Donut charts can support multiple concentric rings, with built-in support for visualizing hierarchical data.
-
-Learn more about our [Donut charts](types/donut-chart.md)
+The $PlatformShort$ Donut Chart or Donut Graph, is a variant of a Pie Chart, proportionally illustrating the occurrences of a variable in a circle to represents parts of a whole. The donut chart has a circular opening at the center of the pie chart, where a title or category explanation can be displayed. Donut charts can support multiple concentric rings, with built-in support for visualizing hierarchical data. Learn more about our [Donut charts](types/donut-chart.md)
 
 <!-- <div class="sample-container loading" style="height: 600px">
     <iframe></iframe>
@@ -98,11 +90,11 @@ Learn more about our [area charts](types/area-chart.md)
 
 ### $PlatformShort$ Sparkline Chart
 
-A Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](types/sparkline-chart.md).
+The $PlatformShort$ Sparkline Chart, or Sparkline Graph is a type of category graph intended for rendering within a small-scale layout such as within a grid cell, or anywhere a word-sized visualization is needed to tell a data story. Like other $PlatformShort$ chart types, the Sparkline Chart has several visual elements and corresponding features that can be configured and customized such as the chart type, markers, ranges, trendlines, unknown value plotting, and tooltips. Sparkline charts can render as a Line Chart, Area Chart, Column Chart or Win / Loss Chart. The difference between the full-sized chart equivalent to the Spark-chart, is the Y-Axis (left side labels) and X-Axis (bottom labels) are not visible. Learn more about our [sparkline charts](types/sparkline-chart.md).
 
 ### $PlatformShort$ Bubble Chart
 
-A Bubble Chart, or Bubble Graph, is used to show data comprising of three numeric values. Two of the values are plotted as an intersecting point using a Cartesian (X, Y) coordinate system, and the third value is rendered as the diameter size of the point. This gives the Bubble Chart its name - a visualization of varying sized bubbles along the X and Y coordinates of the plot. The $PlatformShort$ Bubble Chart is used to show relationships of data correlations with the data value differences rendered by size. You can also use a fourth data dimension, typically color, to further differentiate the values in your Bubble chart. Learn more about our [bubble charts](types/bubble-chart.md).
+The $PlatformShort$ Bubble Chart, or Bubble Graph, is used to show data comprising of three numeric values. Two of the values are plotted as an intersecting point using a Cartesian (X, Y) coordinate system, and the third value is rendered as the diameter size of the point. This gives the Bubble Chart its name - a visualization of varying sized bubbles along the X and Y coordinates of the plot. The $PlatformShort$ Bubble Chart is used to show relationships of data correlations with the data value differences rendered by size. You can also use a fourth data dimension, typically color, to further differentiate the values in your Bubble chart. Learn more about our [bubble charts](types/bubble-chart.md).
 
 ### $PlatformShort$ Financial / Stock Chart
 
@@ -112,13 +104,33 @@ The $PlatformShort$ Financial or Stock Chart, is a composite visualization that 
 
 The $PlatformShort$ Column Chart, or Column Graph is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by vertical bars of equal width and differing lengths. They are ideal for showing variations in the value of an item over time, data distribution, sorted data ranking (high to low, worst to best). Data is represented using a collection of rectangles that extend from the top to bottom of the chart towards the values of data points. Learn more about our [column charts](types/column-chart.md).
 
+### $PlatformShort$ Composite Chart
+
+The $PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis. Learn more about our [composite charts](types/composite-chart.md).
+
+### $PlatformShort$ Gantt Chart
+
+The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md).
+
+### $PlatformShort$ Network Chart
+
+The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md).
+
 ### $PlatformShort$ Polar Chart
 
 The $PlatformShort$ Polar Area Chart or Polar Graph belongs to a group of polar charts and has a shape of a filled polygon which vertices or corners are located at the polar (angle/radius) coordinates of data points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Chart but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple Polar Area Charts can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets. Learn more about our [polar charts](types/polar-chart.md).
 
+### $PlatformShort$ Pyramid Chart
+
+The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md).
+
 ### $PlatformShort$ Scatter Chart
 
 The $PlatformShort$ Scatter Chart, or Scatter Graph, is used to show the relationship between two values using a Cartesian (X, Y) coordinate system to plot data. Each data point is rendered as the intersecting point of the data value on the X and Y Axis. Scatter charts draw attention to uneven intervals or clusters of data. They can highlight the deviation of collected data from predicted results and they are often used to plot scientific and statistical data. The $PlatformShort$ Scatter chart organizes and plots data chronologically (even if the data is not in chronological order before binding) on X-Axis and Y-Axis. Learn more about our [scatter charts](types/scatter-chart.md).
+
+### $PlatformShort$ Shape Chart
+
+The $PlatformShort$ Shape Charts is a group of chart that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings. Learn more about our [shape charts](types/shape-chart.md).
 
 ### $PlatformShort$ Spline Chart
 
