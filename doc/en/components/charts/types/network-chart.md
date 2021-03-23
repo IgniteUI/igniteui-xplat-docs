@@ -16,7 +16,7 @@ This example demonstrates how to create Network Polar Chart using `PolarScatterS
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-scatter-chart"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-polar-chart"
            alt="$PlatformShort$ Network Polar Chart" >
 </code-view>
 
