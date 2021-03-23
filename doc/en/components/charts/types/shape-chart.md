@@ -6,13 +6,11 @@ mentionedTypes: ["XamDataChart"]
 ---
 # $PlatformShort$ Shape Chart
 
-This topic explains various types of shape series in the $PlatformShort$ data chart component. Shape Charts is a group of chart that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system.
-
-They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
+$PlatformShort$ Shape Chart is a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
 ## $PlatformShort$ Scatter Polygon Chart
 
-The Scatter Polygon Chart belongs to a group of shape charts that take an array of shapes represented by an array or array of arrays of X/Y points. This series renders that array or array of arrays as a collection of polygons in the Cartesian (x, y) coordinate system. These samples can be used to plot diagrams, blueprints, or even the floor plan of buildings.
+The Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` component. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 
 <code-view style="height: 600px"
@@ -25,7 +23,7 @@ The Scatter Polygon Chart belongs to a group of shape charts that take an array 
 
 ## $PlatformShort$ Scatter Polyline Chart
 
-The Scatter Polyline Chart belongs to a group of shape charts that take an array of shapes represented by an array or array of arrays of X/Y points. This series renders that array or array of arrays as a collection of polylines in the Cartesian (x, y) coordinate system. These samples can be used to plot diagrams, blueprints, or even the floor plan of buildings.
+The Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` component. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
 
 <code-view style="height: 600px"
@@ -41,8 +39,8 @@ The Scatter Polyline Chart belongs to a group of shape charts that take an array
 - [Axis Options](../chart-features-axis-options.md)
 - [Axis Gridlines](../chart-features-axis-gridlines.md)
 - [Highlighting](../chart-features-highlighting.md)
-- [Gantt Chart](gantt-chart.md)
-- [Network Chart](network-chart.md)
+<!-- - [Gantt Chart](gantt-chart.md) -->
+<!-- - [Network Chart](network-chart.md) -->
 
 <!-- TODO list API links used in this topic
 ## API Members
