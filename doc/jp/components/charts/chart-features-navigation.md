@@ -52,7 +52,7 @@ UI でのナビゲーションを許可するには、ズームを許可する�
 
 以下のコード スニペットは、$PlatformShort$ データ チャート コンポーネントで基本的な UI ナビゲーションを有効にする方法を示しています:
 
-Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
+同じ API が `XamCategoryChart` および `XamFinancialChart` コンポーネントにも適用されることに注意してください。
 
 ```razor
 <DataChart Height="400px" Width="100%"

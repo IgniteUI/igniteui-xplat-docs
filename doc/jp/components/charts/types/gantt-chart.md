@@ -7,12 +7,12 @@ _language: ja
 ---
 # $PlatformShort$ ガント チャート
 
-$PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity.
+$PlatformShort$ ガント チャートは棒チャートの一種で、さまざまなカテゴリを時系列に視覚化します。ガント チャートは、期間ブロックで開始時間と終了時間を示します。これは、プロジェクト管理で、時間に対して表示されるアクティビティ (タスクまたはイベント) を表示するための最も一般的で便利な方法の 1 つとしてよく使用されます。チャートの左側にはアクティビティのリストがあり、上部には適切な時間スケールがあります。各アクティビティは棒で表されます。 棒の位置と長さは、アクティビティの開始日、期間、および終了日を反映しています。
 
 
 ## $PlatformShort$ ガント チャートの例
 
-The following example demonstrates how to create Gantt Chart using `ScatterPolygonSeries` in the `XamDataChart` component.
+次の例は、`XamDataChart` コンポーネントで `ScatterPolygonSeries` を使用してガント チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

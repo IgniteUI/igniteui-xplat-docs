@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ 複合 / コンボ チャート
 
-$PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis.
+$PlatformShort$ 複合チャートまたはコンボ チャートは、同じプロット領域でさまざまなチャート タイプを組み合わせた視覚化です。スケールが大きく異なり、異なる単位で表される可能性のある 2 つのデータ シリーズを表示する場合に非常に役立ちます。最も一般的な例は、一方の軸にドル、もう一方の軸にパーセンテージです。
 
 ## $PlatformShort$ 複合 / コンボ チャートの例
 
-The following example demonstrates how to create Composite Chart using `ColumnSeries` and `LineSeries` in the `XamDataChart` component.
+次の例は、`XamDataChart` コンポーネントで `ColumnSeries` と  `LineSeries` を使用して複合チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

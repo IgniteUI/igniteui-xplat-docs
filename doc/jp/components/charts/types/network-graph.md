@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ ネットワーク グラフ / チャート
 
-$PlatformShort$ Network Graph, also called Network Chart or Polyline Chart visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them.
+$PlatformShort$ ネットワーク グラフは、ネットワーク チャートまたはポリライン チャートとも呼ばれ、大量の要素間の複雑な関係を視覚化します。この視覚化は、無向および指向グラフ構造を表示します。また、丸いノードとして表示されるエンティティ間の関係を示し、線はそれらの関係を示します。
 
 ## $PlatformShort$ ネットワーク グラフの例
 
-The following example demonstrates how to create Network Graph using `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in the `XamDataChart` component.
+次の例は、`XamDataChart` コンポーネントで `ScatterSeries` (ノード マーカーの描画用) と `ScatterPolylineSeries` (ノード接続の描画用) を使用してネットワーク グラフを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

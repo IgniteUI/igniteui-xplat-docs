@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ ピラミッド チャート
 
-$PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species.
+$PlatformShort$ ピラミッド チャートは、年齢ピラミッドまたは人口ピラミッドとも呼ばれ、人口が増加しているときにピラミッドの形を形成する、人口内のさまざまな年齢層の分布を示すグラフィカルな図です。また、生態学では、繁殖能力と種の存続の可能性の指標として、人口の全体的な年齢分布を決定するために使用されます。
 
 ## $PlatformShort$ ピラミッド チャートの例
 
-The following example demonstrates how to create Pyramid Chart using `BarSeries` in the `XamDataChart` component.
+次の例は、`XamDataChart` コンポーネントで `BarSeries` を使用してピラミッド チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
