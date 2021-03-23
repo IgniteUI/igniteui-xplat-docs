@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Trendlines | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Trendlines
 _keywords: $PlatformShort$ Charts, Trendlines, Infragistics
-mentionedTypes: [`XamFinancialChart`, 'TrendLineType']
+mentionedTypes: ['XamFinancialChart', 'TrendLineType']
 ---
 
 # $PlatformShort$ Chart Trendlines

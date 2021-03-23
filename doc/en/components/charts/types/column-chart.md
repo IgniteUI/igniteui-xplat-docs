@@ -159,10 +159,10 @@ In this Radial Column chart sample, player stats are compared against different 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](../chart-features-axis-options.md)
-- [Axis Options](../chart-features-axis-options.md)
-- [Axis Gridlines](../chart-features-axis-gridlines.md)
-- [Highlighting](../chart-features-highlighting.md)
+- [Axis Annotations](../features/chart-axis-options.md)
+- [Axis Options](../features/chart-axis-options.md)
+- [Axis Gridlines](../features/chart-axis-gridlines.md)
+- [Highlighting](../features/chart-highlighting.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
 

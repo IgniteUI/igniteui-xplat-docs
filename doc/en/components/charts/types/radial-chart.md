@@ -41,10 +41,10 @@ Refer to these topics for other types of radial charts:
 - [Donut Chart](donut-chart.md)
 
 ## Additional Resources
-- [Axis Annotations](../chart-features-axis-options.md)
-- [Axis Options](../chart-features-axis-options.md)
-- [Axis Gridlines](../chart-features-axis-gridlines.md)
-- [Highlighting](../chart-features-highlighting.md)
+- [Axis Annotations](../features/chart-axis-options.md)
+- [Axis Options](../features/chart-axis-options.md)
+- [Axis Gridlines](../features/chart-axis-gridlines.md)
+- [Highlighting](../features/chart-highlighting.md)
 <!-- - [Network Chart](network-chart.md) -->
 <!-- - [Polar Chart](polar-chart.md) -->
 

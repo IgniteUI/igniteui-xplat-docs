@@ -294,10 +294,10 @@ In this example, the stock chart is plotting revenue for United States.
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](../chart-features-axis-options.md)
-- [Axis Options](../chart-features-axis-options.md)
-- [Axis Gridlines](../chart-features-axis-gridlines.md)
-- [Highlighting](../chart-features-highlighting.md)
+- [Axis Annotations](../features/chart-axis-options.md)
+- [Axis Options](../features/chart-axis-options.md)
+- [Axis Gridlines](../features/chart-axis-gridlines.md)
+- [Highlighting](../features/chart-highlighting.md)
 
 <!-- TODO list API links used in this topic
 ## API Members

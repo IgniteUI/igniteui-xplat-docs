@@ -35,10 +35,10 @@ The Scatter Polyline Chart renders an array or array of arrays of polylines in t
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](../chart-features-axis-options.md)
-- [Axis Options](../chart-features-axis-options.md)
-- [Axis Gridlines](../chart-features-axis-gridlines.md)
-- [Highlighting](../chart-features-highlighting.md)
+- [Axis Annotations](../features/chart-axis-options.md)
+- [Axis Options](../features/chart-axis-options.md)
+- [Axis Gridlines](../features/chart-axis-gridlines.md)
+- [Highlighting](../features/chart-highlighting.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Network Chart](network-chart.md) -->
 

@@ -442,62 +442,62 @@
   },
   {
     "name": "Chart Features",
-    "href": "charts/chart-feature-overview.md",
+    "href": "charts/chart-features.md",
     "status": "",
     "items": [
         {
           "name": "Axis Gridlines",
-          "href": "charts/chart-features-axis-gridlines.md",
+          "href": "charts/features/chart-axis-gridlines.md",
           "status": "NEW"
         },
         {
           "name": "Axis Layouts",
-          "href": "charts/chart-features-axis-layouts.md",
+          "href": "charts/features/chart-axis-layouts.md",
           "status": "NEW"
         },
         {
           "name": "Axis Options",
-          "href": "charts/chart-features-axis-options.md",
+          "href": "charts/features/chart-axis-options.md",
           "status": "NEW"
         },
         {
           "name": "Chart Annotations",
-          "href": "charts/chart-features-annotations.md",
+          "href": "charts/features/chart-annotations.md",
           "status": "NEW"
         },
         {
           "name": "Chart Animations",
-          "href": "charts/chart-features-animations.md",
+          "href": "charts/features/chart-animations.md",
           "status": "NEW"
         },
         {
           "name": "Chart Highlighting",
-          "href": "charts/chart-features-highlighting.md",
+          "href": "charts/features/chart-highlighting.md",
           "status": "NEW"
         },
         {
           "name": "Chart Markers",
-          "href": "charts/chart-features-markers.md",
+          "href": "charts/features/chart-markers.md",
           "status": "NEW"
         },
         {
           "name": "Chart Tooltips",
-          "href": "charts/chart-features-tooltips.md",
+          "href": "charts/features/chart-tooltips.md",
           "status": "NEW"
         },
         {
           "name": "Chart Trendlines",
-          "href": "charts/chart-features-trendlines.md",
+          "href": "charts/features/chart-trendlines.md",
           "status": "NEW"
         },
         {
           "name": "Chart Navigation",
-          "href": "charts/chart-features-navigation.md",
+          "href": "charts/features/chart-navigation.md",
           "status": ""
         },
         {
           "name": "Chart Synchronization",
-          "href": "charts/chart-features-synchronization.md",
+          "href": "charts/features/chart-synchronization.md",
           "status": ""
         },
         {
