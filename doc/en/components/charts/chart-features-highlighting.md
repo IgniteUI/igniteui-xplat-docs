@@ -2,17 +2,17 @@
 title: $PlatformShort$ Chart Highlighting | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Highlighting
 _keywords: $PlatformShort$ Charts, Highlighting, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ['XamCategoryChart']
 ---
 
 # $PlatformShort$ Chart Highlighting
 
 All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components and they have the same API for using the highlighting feature.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting" 
-           alt="$PlatformShort$ Highlighting Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
+           alt="$PlatformShort$ Highlighting Example"
            github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
 </code-view>
 

@@ -2,17 +2,17 @@
 title: $PlatformShort$ Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Markers
 _keywords: $PlatformShort$ Charts, Markers, Infragistics
-mentionedTypes: []
+mentionedTypes: ['XamCategoryChart']
 ---
 
 # $PlatformShort$ Chart Markers
 
 There are many areas of the $ProductName$ category chart component that can be customized, such as the markers, chart titles and subtitles, and the chart types.
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" 
-           alt="$PlatformShort$ Configuration Options Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
+           alt="$PlatformShort$ Configuration Options Example"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
