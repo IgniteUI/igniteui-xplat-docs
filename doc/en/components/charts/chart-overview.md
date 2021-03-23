@@ -108,21 +108,21 @@ The $PlatformShort$ Column Chart, or Column Graph is among the most common categ
 
 The $PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis. Learn more about our [composite charts](types/composite-chart.md).
 
-### $PlatformShort$ Gantt Chart
+<!-- ### $PlatformShort$ Gantt Chart
 
-The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md).
+The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md). -->
 
-### $PlatformShort$ Network Chart
+<!-- ### $PlatformShort$ Network Chart
 
-The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md).
+The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md). -->
 
 ### $PlatformShort$ Polar Chart
 
 The $PlatformShort$ Polar Area Chart or Polar Graph belongs to a group of polar charts and has a shape of a filled polygon which vertices or corners are located at the polar (angle/radius) coordinates of data points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Chart but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple Polar Area Charts can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets. Learn more about our [polar charts](types/polar-chart.md).
 
-### $PlatformShort$ Pyramid Chart
+<!-- ### $PlatformShort$ Pyramid Chart
 
-The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md).
+The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md). -->
 
 ### $PlatformShort$ Scatter Chart
 

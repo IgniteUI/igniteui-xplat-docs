@@ -24,7 +24,7 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
-- [Gantt Chart](gantt-chart.md)
+<!-- - [Gantt Chart](gantt-chart.md) -->
 
 ## API Members
 - `XamDataChart`

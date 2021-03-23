@@ -368,6 +368,7 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Gantt Chart",
     "href": "charts/types/gantt-chart.md",
     "status": "NEW"
@@ -378,6 +379,7 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Network Chart",
     "href": "charts/types/network-chart.md",
     "status": "NEW"
@@ -393,6 +395,7 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Pyramid Chart",
     "href": "charts/types/pyramid-chart.md",
     "status": "NEW"
