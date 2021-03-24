@@ -22,15 +22,15 @@ In the following example, the treemap demonstrates the 30 largest countries in t
 
 When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways. A second advantage of treemaps is that, by construction, they make efficient use of space. As a result, they can legibly display thousands of items on the screen simultaneously.
 
-Treemaps can be more effective than pie charts and other forms of area charts that often do a poor job of classifying data points and communicating the relative differences of their values. 
+- Treemaps are more effective than pie charts and other forms of area charts that often do a poor job of classifying data points and communicating the relative differences of their values. 
 
-Treemaps are designed for drill down scenarios. You can continuously drill down into the data set that is represented by smaller rectangles for more efficient data analysis.  
+- Treemaps are designed for drill down scenarios. You can continuously drill down into the data set that is represented by smaller rectangles for more efficient data analysis.  
 
-Treemaps are not designed to convey numerical quantities; the intent is to show relative rankings. 
+- Treemaps are not designed to convey numerical quantities; the intent is to show relative rankings. 
 
 Like any other data visualization, a Treemap chart visualization should be used in specific scenarios. It does not solve the same problem that a visualization like a Bar Chart or a Line Chart would. It is really meant for a more complex, richer data display. 
 
-<b>There are several use cases for a Treemap chart. When you:</b> 
+<b>Use Cases:</b> 
 
 - Have drill-down hierarchical data (data organized as a tree, with branches and sub-branches) 
 
@@ -61,7 +61,20 @@ Like any other data visualization, a Treemap chart visualization should be used 
 - All data items must contain at least one data column (e.g. string) which should be mapped to the `LabelMemberPath` property. 
 
 - All data items must contain at least one numeric data column which should be mapped using the `ValueMemberPath` property. 
-- To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`. 
+- To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`.
+
+## $PlatformShort$ Treemap Configuration
+
+In the following example, the treemap demonstrates the ability of changing it's algorithmic structure by modifying the `LayoutType` and `LayoutOrientation` properties. 
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout-configuration"
+           alt="$PlatformShort$ Treemap Layout Configuration"
+           github-src="charts/tree-map/layout-configuration">
+</code-view>
+
+<div class="divider--half"></div>
 
 <b>Layout Types:</b>
 
@@ -89,37 +102,15 @@ Note that the `LayoutOrientation` property works with the layout types SliceAndD
 
 - `Vertical` – the child nodes are going to be stacked vertically (SliceAndDice). 
 
-## Required Data
+## $PlatformShort$ Treemap Styling
 
-Binding to the `Treemap` contains the following data requirements:
-- The data source must be an array or a list of data items
-- The data source must contain at least one data item otherwise the map will not render any nodes.
-- All data items must contain at least one data column (e.g. string) which should be mapped to the `LabelMemberPath` property.
-- All data items must contain at least one numeric data column which should be mapped using the `ValueMemberPath` property.
-- To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`.
+In the following example, the treemap demonstrates the ability of changing the look and feel of the nodes achieved by styling through the `NodeStylingScript` event.
 
-## Layout Types
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
+           alt="$PlatformShort$ Treemap Styling"
+           github-src="charts/tree-map/styling">
+</code-view>
 
-The $ProductName$ treemap component supports the following types algorithms:
-
-- `SliceAndDice`
-- `Squarified`
-- `Stripped`
-
-The type is defined by setting the `TreemapLayoutType` property. If the `TreemapLayoutType` property is not specified, then by default, the `Stripped` type is displayed. There are different tiling algorithms when it comes to displaying the data. All algorithms have their advantages depending on the user’s needs. Some aim to obtain the best aspect ratio – the nodes are as close to rectangles as possible. Other algorithms aim to preserve the initial order of the elements – object which are close to each other in the data source are arranged near each other on the treemap.
-
-* `Stripped` layout type algorithm obtains the best aspect ratio but the objects are arranged by size.
-
-* `SliceAndDice` layout algorithm aims to preserve the initial order at the expense of the aspect ratio.
-
-* `Squarified` layout tiling algorithm has a better aspect ratio than the SliceAndDice and keeps a better order than Squarified.
-
-## Layout Orientation
-
-`LayoutOrientation` property enables the user to set the direction in which the nodes of the hierarchy will be expanded.
-
-Note that the LayoutOrientation property works with the layout types SliceAndDice and Strip.
-
-* `Horizontal` – the child nodes are going to be stacked horizontally(SliceAndDice).
-
-* `Vertical` – the child nodes are going to be stacked vertically (SliceAndDice).
+<div class="divider--half"></div>
