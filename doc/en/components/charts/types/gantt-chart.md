@@ -25,7 +25,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
-- [Pyramid Chart](pyramid-chart.md)
+<!-- - [Pyramid Chart](pyramid-chart.md) -->
 
 ## API Members
 - `XamDataChart`

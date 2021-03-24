@@ -216,20 +216,20 @@ Once our chart is set up, we may want to make some further styling customization
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Annotations](../chart-features-annotations.md)
-- [Highlighting](../chart-features-highlighting.md)
-- [Markers](../chart-features-markers.md)
-- [Tooltips](../chart-features-tooltips.md)
-- [Trendlines](../chart-features-trendlines.md)
+- [Annotations](../features/chart-annotations.md)
+- [Highlighting](../features/chart-highlighting.md)
+- [Markers](../features/chart-markers.md)
+- [Tooltips](../features/chart-tooltips.md)
+- [Trendlines](../features/chart-trendlines.md)
 
 <!-- ## Additional Resources
 
-- [Series Animations](../chart-features-animations.md)
-- [Series Annotations](../chart-features-annotations.md)
-- [Series Highlighting](../chart-features-highlighting.md)
-- [Series Markers](../chart-features-markers.md)
-- [Series Tooltips](../chart-features-tooltips.md)
-- [Series Trendlines](../chart-features-trendlines.md) -->
+- [Series Animations](../features/chart-animations.md)
+- [Series Annotations](../features/chart-annotations.md)
+- [Series Highlighting](../features/chart-highlighting.md)
+- [Series Markers](../features/chart-markers.md)
+- [Series Tooltips](../features/chart-tooltips.md)
+- [Series Trendlines](../features/chart-trendlines.md) -->
 
 <!-- TODO list API links used in this topic
 ## API Members

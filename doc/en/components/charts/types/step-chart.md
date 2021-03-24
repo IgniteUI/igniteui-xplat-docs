@@ -58,11 +58,11 @@ If you need a Step Chart with more features such as composite other series, you 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Annotations](../chart-features-annotations.md)
-- [Highlighting](../chart-features-highlighting.md)
-- [Markers](../chart-features-markers.md)
-- [Tooltips](../chart-features-tooltips.md)
-- [Trendlines](../chart-features-trendlines.md) -->
+- [Annotations](../features/chart-annotations.md)
+- [Highlighting](../features/chart-highlighting.md)
+- [Markers](../features/chart-markers.md)
+- [Tooltips](../features/chart-tooltips.md)
+- [Trendlines](../features/chart-trendlines.md) -->
 
 
 <!-- ## Additional Resources -->

@@ -23,7 +23,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 ## Additional Resources
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
-- [Gantt Chart](gantt-chart.md)
+<!-- - [Gantt Chart](gantt-chart.md) -->
 - [Composite Chart](Composite-chart.md)
 
 ## API Members

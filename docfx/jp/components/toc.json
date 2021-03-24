@@ -439,52 +439,52 @@
   },
   {
     "name": "チャート機能",
-    "href": "charts/chart-feature-overview.md",
-    "status": "",
+    "href": "charts/chart-features.md",
+    "status": "NEW",
     "items": [
         {
           "name": "軸グリッド線",
-          "href": "charts/chart-features-axis-gridlines.md",
+          "href": "charts/features/chart-axis-gridlines.md",
           "status": "NEW"
         },
         {
           "name": "軸レイアウト",
-          "href": "charts/chart-features-axis-layouts.md",
+          "href": "charts/features/chart-axis-layouts.md",
           "status": "NEW"
         },
         {
           "name": "軸オプション",
-          "href": "charts/chart-features-axis-options.md",
+          "href": "charts/features/chart-axis-options.md",
           "status": "NEW"
         },
         {
           "name": "チャート注釈",
-          "href": "charts/chart-features-annotations.md",
+          "href": "charts/features/chart-annotations.md",
           "status": "NEW"
         },
         {
           "name": "チャート アニメーション",
-          "href": "charts/chart-features-animations.md",
+          "href": "charts/features/chart-animations.md",
           "status": "NEW"
         },
         {
           "name": "チャート強調表示",
-          "href": "charts/chart-features-highlighting.md",
+          "href": "charts/features/chart-highlighting.md",
           "status": "NEW"
         },
         {
           "name": "チャート マーカー",
-          "href": "charts/chart-features-markers.md",
+          "href": "charts/features/chart-markers.md",
           "status": "NEW"
         },
         {
           "name": "チャート ツールチップ",
-          "href": "charts/chart-features-tooltips.md",
+          "href": "charts/features/chart-tooltips.md",
           "status": "NEW"
         },
         {
           "name": "チャート トレンドライン",
-          "href": "charts/chart-features-trendlines.md",
+          "href": "charts/features/chart-trendlines.md",
           "status": "NEW"
         },
         {
