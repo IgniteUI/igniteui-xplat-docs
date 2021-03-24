@@ -496,6 +496,7 @@
           "status": ""
         },
         {
+          "exclude": ["Blazor"],
           "name": "Chart Synchronization",
           "href": "charts/features/chart-synchronization.md",
           "status": ""
