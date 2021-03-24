@@ -62,10 +62,10 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [軸オプション](../chart-features-axis-options.md)
-- [チャート強調表示](../chart-features-highlighting.md)
-- [チャート マーカー](../chart-features-markers.md)
-- [ネットワーク チャート](network-chart.md)
+- [軸オプション](../features/chart-axis-options.md)
+- [チャート強調表示](../features/chart-highlighting.md)
+- [チャート マーカー](../features/chart-markers.md)
+<!-- - [ネットワーク チャート](network-chart.md) -->
 
 <!-- TODO list API links used in this topic
 ## API メンバー

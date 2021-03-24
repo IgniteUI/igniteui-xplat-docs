@@ -363,11 +363,12 @@
     "status": ""
   },
   {
-    "name": "ファイナンシャル チャート",
+    "name": "ファイナンシャル / 株価チャート",
     "href": "charts/types/stock-chart.md",
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ガント チャート",
     "href": "charts/types/gantt-chart.md",
     "status": "NEW"
@@ -378,6 +379,7 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ネットワーク チャート",
     "href": "charts/types/network-chart.md",
     "status": "NEW"
@@ -393,6 +395,7 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ピラミッド チャート",
     "href": "charts/types/pyramid-chart.md",
     "status": "NEW"

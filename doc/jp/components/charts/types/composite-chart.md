@@ -24,7 +24,7 @@ $PlatformShort$ 複合チャートまたはコンボ チャートは、同じプ
 ## その他のリソース
 - [棒チャート](bar-chart.md)
 - [縦棒チャート](column-chart.md)
-- [ガント チャート](gantt-chart.md)
+<!-- - - [ガント チャート](gantt-chart.md) -->
 - [複合チャート](Composite-chart.md)
 
 ## API メンバー

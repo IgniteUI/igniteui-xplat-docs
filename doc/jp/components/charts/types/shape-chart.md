@@ -7,13 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ シェープ チャート
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントのシェープ シリーズのさまざまなタイプについて説明します。シェープ チャートは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャートのグループです。
-
-シェープ チャートは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
+$PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャートのグループです。シェープ チャートは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
 ## $PlatformShort$ 散布ポリゴン チャート
 
-散布ポリゴン チャートは、X/Y ポイントの配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリゴンのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
+散布図は、`XamDataChart` コンポーネントの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 
 <code-view style="height: 600px"
@@ -26,7 +24,7 @@ _language: ja
 
 ## $PlatformShort$ 散布ポリライン チャート
 
-散布ポリライン チャートは、X/Y ポイントの配列または配列の配列で表される形状の配列をとるシェープ チャートのグループに属しています。このシリーズは、その配列または配列の配列をデカルト (x、y) 座標系のポリラインのコレクションとして描画します。これらのサンプルは、ダイアグラム、青写真、さらには建物の間取り図をプロットするために使用できます。
+散布ポリライン チャートは、`XamDataChart` コンポーネントの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -38,11 +36,11 @@ _language: ja
 
 ## その他のリソース
 - [軸の注釈](../data-chart-axis-annotations.md)
-- [軸オプション](../chart-features-axis-options.md)
-- [軸グリッド線](../chart-features-axis-gridlines.md)
-- [チャート強調表示](../chart-features-highlighting.md)
-- [ガント チャート](gantt-chart.md)
-- [ネットワーク チャート](network-chart.md)
+- [軸オプション](../features/chart-axis-options.md)
+- [軸グリッド線](../features/chart-axis-gridlines.md)
+- [チャート強調表示](../features/chart-highlighting.md)
+<!-- - [ガント チャート](gantt-chart.md) -->
+<!-- - [ネットワーク チャート](network-chart.md) -->
 
 <!-- TODO list API links used in this topic
 ## API メンバー

@@ -26,7 +26,7 @@ $PlatformShort$ ガント チャートは棒チャートの一種で、さまざ
 - [棒チャート](bar-chart.md)
 - [縦棒チャート](column-chart.md)
 - [複合チャート](composite-chart.md)
-- [ピラミッド チャート](pyramid-chart.md)
+<!-- - [ピラミッド チャート](pyramid-chart.md) -->
 
 ## API メンバー
 - `XamDataChart`

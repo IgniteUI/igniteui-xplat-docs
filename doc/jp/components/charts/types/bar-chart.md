@@ -137,11 +137,11 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 
 ## その他のリソース
 - [軸の注釈](../data-chart-axis-annotations.md)
-- [軸オプション](../chart-features-axis-options.md)
-- [軸グリッド線](../chart-features-axis-gridlines.md)
-- [チャート強調表示](../chart-features-highlighting.md)
-- [ガント チャート](gantt-chart.md)
-- [ピラミッド チャート](pyramid-chart.md)
+- [軸オプション](../features/chart-axis-options.md)
+- [軸グリッド線](../features/chart-axis-gridlines.md)
+- [チャート強調表示](../features/chart-highlighting.md)
+<!-- - [ガント チャート](gantt-chart.md)
+- [ピラミッド チャート](pyramid-chart.md) -->
 
 <!-- TODO list API links used in this topic
 ## API メンバー

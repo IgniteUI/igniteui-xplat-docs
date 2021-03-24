@@ -109,21 +109,21 @@ $PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテ
 
 The $PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis. Learn more about our [composite charts](types/composite-chart.md).
 
-### $PlatformShort$ ガント チャート
+<!-- ### $PlatformShort$ ガント チャート
 
-The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md).
+The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md). --> 
 
-### $PlatformShort$ ネットワーク チャート
+<!-- ### $PlatformShort$ ネットワーク チャート
 
-The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md).
+The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md). -->
 
 ### 極座標エリア チャート
 
 $PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データポイントを水平線に沿って伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
 
-### $PlatformShort$ ピラミッド チャート
+<!-- ### $PlatformShort$ ピラミッド チャート
 
-The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md).
+The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md). -->
 
 ### 散布図
 

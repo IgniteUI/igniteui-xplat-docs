@@ -2,13 +2,63 @@
 title: $PlatformShort$ チャート マーカー | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート マーカー
 _keywords: $PlatformShort$ Charts, Markers, Infragistics, $PlatformShort$ チャート, マーカー, インフラジスティックス
-mentionedTypes: []
+mentionedTypes: ['XamCategoryChart']
 _language: ja
 ---
 
 # $PlatformShort$ チャート マーカー
 
-<!-- talk about marker types, marker templates, marker appearance
+There are many areas of the $ProductName$ category chart component that can be customized, such as the markers, chart titles and subtitles, and the chart types.
 
-data-chart-series-markers.md
--->
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
+           alt="$PlatformShort$ 構成オプションの例"
+           github-src="charts/category-chart/marker-options">
+</code-view>
+
+<div class="divider--half"></div>
+
+## チャート マーカーの構成
+
+Markers are visual elements that display the values of data points in the category chart component's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
+
+The appearance of chart markers is managed through the `MarkerType`, `MarkerBrushes`, `MarkerOutlines` properties of the category chart, as demonstrated in the following code example.
+
+```razor
+ <CategoryChart Height="500px" Width="700px"
+    DataSource="@DataSource"
+    MarkerType="MarkerType.Diamond"
+    MarkerBrushes="red"
+    MarkerOutlines="yellow"/>
+```
+
+```html
+<igx-category-chart
+    [dataSource]="data"
+    width="700px"
+    height="500px"
+    markerType="Diamond"
+    markerBrushes="red"
+    markerOutlines="yellow">
+</igx-category-chart>
+```
+
+```tsx
+ <IgrCategoryChart dataSource={this.state.data}
+    width="700px"
+    height="500px"
+    markerType="Diamond"
+    markerBrushes="red"
+    markerOutlines="yellow" />
+```
+```html
+<igc-category-chart
+    id="chart"
+    width="700px"
+    height="700px"
+    marker-type="Diamond"
+    marker-brushes="red"
+    marker-outlines="yellow">
+</igc-category-chart>
+```

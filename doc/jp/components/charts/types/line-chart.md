@@ -214,10 +214,10 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 
 ## その他のリソース
 - [チャート注釈](../data-chart-axis-annotations.md)
-- [チャート強調表示](../chart-features-highlighting.md)
-- [チャート マーカー](../chart-features-markers.md)
-- [チャート ツールチップ](../chart-features-tooltips.md)
-- [チャート トレンドライン](../chart-features-trendlines.md) 
+- [チャート強調表示](../features/chart-highlighting.md)
+- [チャート マーカー](../features/chart-markers.md)
+- [チャート ツールチップ](../features/chart-tooltips.md)
+- [チャート トレンドライン](../features/chart-trendlines.md) 
 
 <!-- ## Additional Resources
 
