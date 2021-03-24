@@ -2,21 +2,30 @@
 title: $PlatformShort$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Axis Gridlines
 _keywords: $PlatformShort$ Axis, Gridlines, Infragistics
-mentionedTypes: []
+mentionedTypes: ['XamCategoryChart']
 ---
 
 # $PlatformShort$ Axis Gridlines
 
-The $ProductName$ chart component includes the built-in capability to modify and configure the gridlines and tickmarks of your axes. This is demonstrated in the examples below.
+All $ProductName$ charts include built-in capability to modify appearance and frequency pf gridlines and tickmarks rendered on x-axis and y-axis. These features are demonstrated in the examples given below.
 
 ## Axis Gridlines Example
 
-The major and minor gridlines of the $PlatformShort$ chart can be modified in color, thickness, and frequency by setting the `MajorStroke`, `MinorStroke`, `MajorStrokeThickness`, `MinorStrokeThickness`, `Interval` and `MinorInterval` of the corresponding axis, respectively. In the category chart, the property name will be prefaced by the name of the axis - for example, `YAxisMajorStroke`.
+This table lists gridline properties of axes that you can configure and the following example demonstrates how to set those gridline properties.
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines" 
-           alt="$PlatformShort$ Axis Gridlines Example" 
+Axis Visuals           | Type    | Property Names
+-----------------------|---------|-----------------------
+Major Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
+Minor Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
+Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness`
+Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness`
+Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`
+Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
+           alt="$PlatformShort$ Axis Gridlines Example"
            github-src="charts/category-chart/axis-gridlines">
 </code-view>
 
@@ -24,13 +33,25 @@ The major and minor gridlines of the $PlatformShort$ chart can be modified in co
 
 ## Axis Tickmarks Example
 
-The tickmarks of the X and Y axis in the $PlatformShort$ chart component can be modified in color, thickness, and length by setting the `TickStroke`, `TickStrokeThickness`, and `TickLength` properties of the axis, respectively. In the category chart component, the property name will be prefaced by the name of the axis - for example, `XAxisTickLength`.
+This table lists tickmark properties of axes that you can configure and the following example demonstrates how to set those gridline properties.
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks" 
-           alt="$PlatformShort$ Axis Tickmarks Example" 
+Axis Visuals           | Type    | Property Names
+-----------------------|---------|-----------------------
+Tick Stroke Color      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`
+Tick Stroke Thickness  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness`
+Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
+           alt="$PlatformShort$ Axis Tickmarks Example"
            github-src="charts/category-chart/axis-tickmarks">
 </code-view>
 
 <div class="divider--half"></div>
+
+
+## Additional Resources
+
+- [Axis Layout](axis-layout.md)
+- [Axis Options](axis-options.md)
