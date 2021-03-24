@@ -7,7 +7,7 @@ mentionedTypes: ['XamCategoryChart']
 
 # $PlatformShort$ Chart Annotations
 
-This topic provides conceptual information about the annotations and overlay interactions available on the $ProductName$ category chart component.
+This topic provides conceptual information about the annotations and overlay interactions available on the $ProductName$ category chart.
 
 ## $PlatformShort$ Annotations Example
 
@@ -22,7 +22,7 @@ This topic provides conceptual information about the annotations and overlay int
 
 ## $PlatformShort$ Crosshair Layer
 
-The Crosshair Layer of the category chart provides crossing lines that meet at the actual value of every targeted series.  Crosshair types include: Horizontal, Vertical, and Both.  The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points.  Annotations can also be enabled to display the crosshair's value along the axis.
+The Crosshair Layer of the category chart provides crossing lines that meet at the actual value of every targeted series. Crosshair types include: Horizontal, Vertical, and Both.  The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points. Annotations can also be enabled to display the crosshair's value along the axis.
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
@@ -61,13 +61,14 @@ The Crosshair Layer of the category chart provides crossing lines that meet at t
 ```
 
 ## $PlatformShort$ Final Value Layer
-The Final Value Layer of the category chart component provides a quick view along the axis of the ending value displayed in a series.
+
+The Final Value Layer of the category chart provides a quick view along the axis of the ending value displayed in a series.
 
 ```razor
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
+    YAxisLabelLocation="AxisLabelsLocation.OutsideRight"/>
 ```
 
 ```html
@@ -91,7 +92,7 @@ The Final Value Layer of the category chart component provides a quick view alon
 
 
 ## $PlatformShort$ Callout Layer
-The Callout Layer of the category chart component displays a text callout at X/Y positions given in the data.
+The Callout Layer of the category chart displays a text callout at X/Y positions given in the data.
 
 ```razor
 <CategoryChart Height="100%" Width="100%"

@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
-_description: The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
+_description: The $ProductName$ pie chart is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 ---
@@ -161,7 +161,7 @@ The following code demonstrates how to bind the pie chart to the above data.
 
 Legends are used to show information about each point, to know about its contribution towards the total sum. You can collapse the point using legend click.
 
-In order to display a legend next to the pie chart component an ItemLegend needs to be created and assigned to the `Legend` property. The `LegendLabelMemberPath` can then be used to specify which property on your data model it will use to display inside the legend for each pie slice.
+In order to display a legend next to the pie chart an ItemLegend needs to be created and assigned to the `Legend` property. The `LegendLabelMemberPath` can then be used to specify which property on your data model it will use to display inside the legend for each pie slice.
 
 Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` properties and the various font properties on ItemLegend to further customize the look of the legend items.
 
@@ -212,7 +212,7 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Pie Chart Others Category
-Sometimes, the underlying data for the pie chart component will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
+Sometimes, the underlying data for the pie chart will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
 
 In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCategoryType` is set to Number. Therefore, items with value less than or equal to 2 will be assigned to the “Others” category.
 
@@ -262,7 +262,7 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Pie Chart Explosion
-The pie chart component supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
+The pie chart supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
 
 ```html
 <igx-pie-chart [dataSource]="data"
@@ -321,13 +321,13 @@ The pie chart supports slice selection by mouse click as the default behavior. Y
 
 There is a property called `SelectionMode` which is how you set what mode you want the pie chart to use. The default value is `Single`. In order to disable selection, set the property to `Manual`.
 
-The pie chart component supports three different selection modes.
+The pie chart supports three different selection modes.
 
 * Single - When the mode is set to single, only one slice can be selected at a time. When you select a new slice the previously selected slice will be deselected and the new one will become selected.
 * Multiple - When the mode is set to Multiple, many slices can be selected at once. If you click on a slice, it will become selected and clicking on a different slice will also select that slice leaving the previous slice selected.
 * Manual - When the mode is set to Manual, selection is disabled.
 
-The pie chart component has 4 events associated with selection:
+The pie chart has 4 events associated with selection:
 * SelectedItemChanging
 * SelectedItemChanged
 * SelectedItemsChanging
