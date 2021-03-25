@@ -232,7 +232,7 @@ Once our chart is set up, we may want to make some further styling customization
 - [Series Trendlines](../features/chart-trendlines.md) -->
 
 ## API Members
-- `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
+- `XamCategoryChart` 

@@ -40,13 +40,13 @@ This example shows how to create Network Scatter Chart using `ScatterSeries` (fo
 - [Shape Chart](shape-chart.md)
 
 ## API Members
-- `XamDataChart`
 - `CategoryYAxis`
-- `NumericXAxis`
-- `NumericYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`
-- `ScatterSeries`
-- `ScatterPolylineSeries`
+- `NumericXAxis`
+- `NumericYAxis`
 - `PolarLineSeries`
 - `PolarScatterSeries`
+- `ScatterPolylineSeries`
+- `ScatterSeries`
+- `XamDataChart`

@@ -479,3 +479,12 @@ The Radial Pie Chart belongs to a group of radial charts and uses pie slices tha
 - [Animations](../features/chart-animations.md)
 - [Tooltips](../features/chart-tooltips.md)
 
+
+## API Members  
+- `LegendItemBadgeTemplate`
+- `LegendItemTemplate`
+- `LegendLabelMemberPath` 
+- `OthersCategoryThreshold` 
+- `OthersCategoryType`  
+- `SelectionMode` 
+- `XamPieChart` 
