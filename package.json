@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "toc2yml": "tsc && gulp generateTocYML",
     "toc2json": "tsc && gulp generateTocJson",
+    "updateApi": "tsc && gulp updateApiSection",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=PL",
     "build": "tsc",
     "buildAngular": "tsc && gulp buildOutputAngular",
