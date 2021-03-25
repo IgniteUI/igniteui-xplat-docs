@@ -121,3 +121,7 @@ chart.tooltipTemplate = template;
 
 TODO uncomment above section when bug# 272693 is fixed
 -->
+
+## API Members
+- `ToolTipType`
+- `XamCategoryChart`

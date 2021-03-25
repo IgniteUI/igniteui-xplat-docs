@@ -63,3 +63,10 @@ The appearance of chart markers is managed through the `MarkerType`, `MarkerBrus
     marker-outlines="yellow">
 </igc-category-chart>
 ```
+
+
+## API Members
+- `MarkerBrushes`
+- `MarkerOutlines`
+- `MarkerType`
+- `XamCategoryChart`

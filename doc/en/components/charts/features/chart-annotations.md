@@ -142,3 +142,8 @@ chart.calloutsXMemberPath = "index";
 chart.calloutsYMemberPath = "value";
 chart.calloutsLabelMemberPath = "info";
 ```
+
+## API Members
+- `CrosshairsSnapToData`
+- `XamCategoryChart`
+

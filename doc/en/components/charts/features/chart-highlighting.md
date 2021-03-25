@@ -59,3 +59,10 @@ The $ProductName$ `XamCategoryChart` can enable three types of highlighting when
     is-item-highlighting-enabled="false" >
 </igc-category-chart>
 ```
+
+## API Members
+- `IsCategoryHighlightingEnabled`
+- `IsItemHighlightingEnabled`
+- `IsSeriesHighlightingEnabled`
+- `XamCategoryChart`
+

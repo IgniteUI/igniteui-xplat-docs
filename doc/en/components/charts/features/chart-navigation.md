@@ -214,3 +214,13 @@ this.chart.actualWindowPositionHorizontal -= 0.05;
 // Pan right by a factor of 0.05
 this.chart.actualWindowPositionHorizontal += 0.05;
 ```
+
+## API Members
+- `DefaultInteraction`
+- `DragModifier`
+- `IsHorizontalZoomEnabled`
+- `IsVerticalZoomEnabled`
+- `PanModifier`
+- `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`

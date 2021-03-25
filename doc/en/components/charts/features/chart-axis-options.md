@@ -56,3 +56,10 @@ By default, the $PlatformShort$ charts will calculate the minimum and maximum va
 
 - [Axis Gridlines](axis-gridlines.md)
 - [Axis Layout](axis-layout.md)
+
+## API Members
+- `XAxisMaximumValue`
+- `XAxisMinimumValue`
+- `YAxisMaximumValue`
+- `YAxisMinimumValue`
+- `XamCategoryChart`

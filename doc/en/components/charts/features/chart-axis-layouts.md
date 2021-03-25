@@ -87,3 +87,14 @@ In the the $PlatformShort$ Data Chart, you can also position axes inside of plot
 
 - [Axis Gridlines](axis-gridlines.md)
 - [Axis Options](axis-options.md)
+
+
+## API Members
+- `CrossingAxis`
+- `CrossingValue`
+- `NumericYAxis`
+- `XAxisGap`
+- `XAxisLabelLocation`
+- `XAxisOverlap`
+- `XamDataChart`
+- `YAxisLabelLocation`
