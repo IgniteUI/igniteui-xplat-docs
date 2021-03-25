@@ -298,7 +298,3 @@ In this example, the stock chart is plotting revenue for United States.
 - [Axis Options](../features/chart-axis-options.md)
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
-
-<!-- TODO list API links used in this topic
-## API Members
--->

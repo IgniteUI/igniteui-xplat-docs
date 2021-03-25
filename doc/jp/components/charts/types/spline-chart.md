@@ -10,9 +10,9 @@ _language: ja
 $PlatformShort$ スプライン チャートはカテゴリ シリーズのグループに属し、スプラインのスムーズなカーブに接続された点のコレクションを使用して描画されます。値は y 軸に表示され、カテゴリは x 軸に表示されます。スプライン チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。スプライン チャートは、データ ポイントを接続する線がデータの表示を改善するためのスプライン補間とスムージング機能を持つこと以外のすべての面で折れ線チャートと同じです。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
            alt="凡例付きの $PlatformShort$ スプライン チャート" >
 </code-view>
 
@@ -23,9 +23,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 以下の例に示すように、スプライン チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
            alt="単一シリーズの $PlatformShort$ スプライン チャート" >
 </code-view>
 
@@ -36,9 +36,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 スプライン チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、チャートは追加データに合わせて自動的に更新されます。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
            alt="複数シリーズの $PlatformShort$ スプライン チャート" >
 </code-view>
 
@@ -49,9 +49,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
            alt="$PlatformShort$ スプライン チャートのスタイル設定" >
 </code-view>
 
@@ -61,9 +61,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
            alt="$PlatformShort$ 積層型スプライン チャート" >
 </code-view>
 
@@ -73,9 +73,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 積層型 100 スプライン チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型スプライン チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
            alt="$PlatformShort$ 積層型 100 スプライン チャート" >
 </code-view>
 
@@ -83,7 +83,3 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
-
-<!-- TODO list API links used in this topic 
-## API Members
--->

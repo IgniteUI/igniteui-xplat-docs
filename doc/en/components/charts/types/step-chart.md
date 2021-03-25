@@ -68,7 +68,4 @@ If you need a Step Chart with more features such as composite other series, you 
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->
 
-<!-- TODO list API links used in this topic
-## API Members
--->
 

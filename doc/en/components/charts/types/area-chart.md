@@ -211,7 +211,3 @@ Polar Spline Area Charts belong to a group of polar charts and have a shape of a
 - [Axis Options](../features/chart-axis-options.md)
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
-
-<!-- TODO list API links used in this topic
-## API Members
--->

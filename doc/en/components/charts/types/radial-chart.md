@@ -47,7 +47,3 @@ Refer to these topics for other types of radial charts:
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Network Chart](network-chart.md) -->
 <!-- - [Polar Chart](polar-chart.md) -->
-
-<!-- TODO list API links used in this topic
-## API Members
--->

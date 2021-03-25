@@ -55,7 +55,3 @@ Once our polar chart is created, we may want to make some further styling custom
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Network Chart](network-chart.md) -->
 - [Radial Chart](radial-chart.md)
-
-<!-- TODO list API links used in this topic
-## API Members
--->

@@ -62,8 +62,3 @@ It is possible to have a multiple ring display in the $PlatformShort$ Donut Char
 - [Animations](../features/chart-animations.md)
 - [Tooltips](../features/chart-tooltips.md)
 
-
-<!-- TODO list API links used in this topic
-## API Members
--->
-
