@@ -5,9 +5,23 @@ _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data 
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 _language: ja
 ---
-# $PlatformShort$ 円チャートの概要
+# $PlatformShort$ 円チャート
 
 $PlatformShort$ 円チャート (円グラフ) は、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示す部分対全体チャートです。カテゴリは、円グラフまたは円グラフのセクションとして描画されます。各セクション (円スライス) は基本データ値に比例する円弧の長さを持ちます。カテゴリは、分析中の合計値に対する値の割合に基づいて、100 または 100% の部分として他のカテゴリに比例して表示されます。
+
+## $PlatformShort$ 円チャートの例
+
+この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には文字列値と文字列値データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           alt="$PlatformShort$ 円チャートの概要" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ 円チャートの推奨事項
 
 円チャートは小さいデータ セットに適していて、一目で読みやすくなります。円チャートは、部分対全体の可視化の一種です。その他:
 
@@ -47,19 +61,6 @@ $PlatformShort$ 円チャートは、データを解析するためのビュー�
 - 正確なデータ比較が必要な場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください。
 - 6 セグメントまたは 8 セグメント (大量のデータ) がある場合 - データ ストーリーに適した棒チャート、折れ線チャート、またはエリア チャートを検討してください。
 - 棒チャートで値の違いがわかりやすくなります。
-
-## $PlatformShort$ 円チャートの例
-
-この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には String と Numeric データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
-
-
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           alt="$PlatformShort$ 円チャートの概要" >
-</code-view>
-
-<div class="divider--half"></div>
 
 <!-- Blazor -->
 $PlatformShort$ 円チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
@@ -202,7 +203,8 @@ var data = [
 
 ```
 
-<code-view style="height: 400px"
+
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            alt="凡例付きの $PlatformShort$ 円チャート" >
@@ -253,7 +255,7 @@ var data = [
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            alt="$PlatformShort$ 円チャートその他の分類項目" >
@@ -308,7 +310,7 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            alt="$PlatformShort$ 円チャートの展開" >
@@ -406,7 +408,7 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            alt="$PlatformShort$ 円チャートの選択" >
@@ -441,7 +443,7 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            alt="$PlatformShort$ 円チャートのアニメーション" >
@@ -453,7 +455,7 @@ public tick(): void {
 
 円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
            alt="$PlatformShort$ 円チャートのスタイル設定" >
@@ -465,10 +467,23 @@ public tick(): void {
 
 ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
            alt="$PlatformShort$ ラジアル円チャート" >
 </code-view>
 
 <div class="divider--half"></div>
+
+## その他のリソース
+- [チャート アニメーション](../features/chart-animations.md)
+- [チャート ツールチップ](../features/chart-tooltips.md)
+
+## API メンバー  
+- `LegendItemBadgeTemplate`
+- `LegendItemTemplate`
+- `LegendLabelMemberPath` 
+- `OthersCategoryThreshold` 
+- `OthersCategoryType`  
+- `SelectionMode` 
+- `XamPieChart` 

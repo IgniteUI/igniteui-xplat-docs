@@ -437,7 +437,7 @@
   },
   {
     "name": "ツリーマップ",
-    "href": "treemap-overview.md",
+    "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
@@ -496,6 +496,7 @@
           "status": ""
         },
         {
+          "exclude": ["Blazor"],
           "name": "チャートの同期",
           "href": "charts/chart-features-synchronization.md",
           "status": ""

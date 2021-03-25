@@ -28,7 +28,7 @@ $PlatformShort$ ピラミッド チャートは、年齢ピラミッドまたは
 <!-- - [ガント チャート](gantt-chart.md) -->
 
 ## API メンバー
-- `XamDataChart`
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`
+- `XamDataChart`

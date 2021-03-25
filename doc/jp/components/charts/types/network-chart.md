@@ -41,13 +41,13 @@ The following sections provide examples of various types of Network Charts.
 - [シェープ チャート](shape-chart.md)
 
 ## API メンバー
-- `XamDataChart`
 - `CategoryYAxis`
-- `NumericXAxis`
-- `NumericYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`
-- `ScatterSeries`
-- `ScatterPolylineSeries`
+- `NumericXAxis`
+- `NumericYAxis`
 - `PolarLineSeries`
 - `PolarScatterSeries`
+- `ScatterPolylineSeries`
+- `ScatterSeries`
+- `XamDataChart`

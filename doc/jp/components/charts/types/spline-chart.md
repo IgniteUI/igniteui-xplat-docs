@@ -11,7 +11,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 ## $PlatformShort$ スプライン チャートの例
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
            alt="凡例付きの $PlatformShort$ スプライン チャート" >
@@ -24,7 +24,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 以下の例に示すように、スプライン チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
            alt="単一シリーズの $PlatformShort$ スプライン チャート" >
@@ -37,7 +37,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 スプライン チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、チャートは追加データに合わせて自動的に更新されます。
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
            alt="複数シリーズの $PlatformShort$ スプライン チャート" >
@@ -50,7 +50,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
            alt="$PlatformShort$ スプライン チャートのスタイル設定" >
@@ -62,7 +62,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
            alt="$PlatformShort$ 積層型スプライン チャート" >
@@ -74,7 +74,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 積層型 100 スプライン チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型スプライン チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
            alt="$PlatformShort$ 積層型 100 スプライン チャート" >
@@ -82,7 +82,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <div class="divider--half"></div>
 
-## Additional Resources
+## その他のリソース
 - [チャート注釈](../features/chart-annotations.md)
 - [チャート強調表示](../features/chart-highlighting.md)
 - [チャート マーカー](../features/chart-markers.md)

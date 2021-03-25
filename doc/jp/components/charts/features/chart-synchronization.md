@@ -130,3 +130,11 @@ IgcDataChartInteractivityModule.register();
 </igc-data-chart>
 ```
 
+
+## API メンバー
+- `IsHorizontalZoomEnabled`
+- `IsVerticalZoomEnabled`
+- `SyncChannel`
+- `SynchronizeHorizontally`
+- `SynchronizeVertically`
+- `XamDataChart`

@@ -11,7 +11,7 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 ## $PlatformShort$ バブル チャートの例
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
            alt="$PlatformShort$ バブル チャート" >
@@ -24,7 +24,7 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 バブル チャートには、散布図の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
            alt="$PlatformShort$ バブル チャート" >
@@ -38,7 +38,8 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
-<code-view style="height: 400px"
+
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
            alt="$PlatformShort$ バブル チャート" >
@@ -52,7 +53,7 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
            alt="$PlatformShort$ バブル チャート" >

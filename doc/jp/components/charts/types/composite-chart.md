@@ -11,7 +11,7 @@ $PlatformShort$ 複合チャートまたはコンボ チャートは、同じプ
 
 ## $PlatformShort$ 複合 / コンボ チャートの例
 
-次の例は、`XamDataChart` コンポーネントで `ColumnSeries` と  `LineSeries` を使用して複合チャートを作成する方法を示しています。
+次の例は、`XamDataChart` コンポーネントで `ColumnSeries` と `LineSeries` を使用して複合チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -28,8 +28,8 @@ $PlatformShort$ 複合チャートまたはコンボ チャートは、同じプ
 - [複合チャート](Composite-chart.md)
 
 ## API メンバー
-- `XamDataChart`
-- `LineSeries`
-- `ColumnSeries`
 - `CategoryXAxis`
+- `ColumnSeries`
+- `LineSeries`
 - `NumericYAxis`
+- `XamDataChart`

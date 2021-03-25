@@ -561,3 +561,13 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  >
 </code-view>
 
+
+## API メンバー
+- `DisplayNormalRangeInFront`
+- `DisplayType`
+- `LowMarkerBrush`
+- `LowMarkerSize`
+- `LowMarkerVisibility`
+- `NormalRangeFill`
+- `UnknownValuePlotting`
+- `XamSparkline`

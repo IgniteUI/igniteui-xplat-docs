@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ チャート ナビゲーション
 
-$PlatformShort$ データ チャート コンポーネントでは、ナビゲーションがデフォルトで無効になっています。有効にするとコードや UI を介してチャートのズームやパンニングができるようになります。
+$PlatformShort$ データ チャートでは、ナビゲーションがデフォルトで無効になっています。有効にするとコードや UI を介してチャートのズームやパンニングができるようになります。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -50,7 +50,7 @@ UI でのナビゲーションを許可するには、ズームを許可する�
 
 またマウスやタッチでボタンをクリックしてズームまたはパンニングできます。チャートの `DefaultInteraction` プロパティは、マウスクリック イベントやタッチ イベントで何が起こるかを決定します。このプロパティはデフォルトで `DragZoom` に設定されており、ズームを有効に設定すると、クリックしてドラッグした際にプロット領域の上に四角形のプレビューが配置され、グラフのズーム領域になります。この `DefaultInteraction` プロパティは、パンニングを許可する場合は `DragPan`、これらの操作を禁止する場合は `None` に設定することもできます。
 
-以下のコード スニペットは、$PlatformShort$ データ チャート コンポーネントで基本的な UI ナビゲーションを有効にする方法を示しています:
+以下のコード スニペットは、$PlatformShort$ データ チャートで基本的な UI ナビゲーションを有効にする方法を示しています:
 
 同じ API が `XamCategoryChart` および `XamFinancialChart` コンポーネントにも適用されることに注意してください。
 
@@ -83,7 +83,7 @@ UI でのナビゲーションを許可するには、ズームを許可する�
 
 ## マウスとキーボードによるチャート ナビゲーション
 
-$PlatformShort$ データ チャート コンポーネントのナビゲーションは、マウスまたはキーボードのいずれかを有効にすると発生します。以下の操作は、デフォルトで以下のマウスまたはキーボード操作を使用して呼び出すことができます。
+$PlatformShort$ データ チャートのナビゲーションは、マウスまたはキーボードのいずれかを有効にすると発生します。以下の操作は、デフォルトで以下のマウスまたはキーボード操作を使用して呼び出すことができます。
 
 - **Panning**: キーボードの矢印キーを使用するか、Shift キーを押しながらマウスでクリックしてドラッグします。
 - **Zoom In**: キーボードの PageUp キーを使用するか、マウスホイールを回転させます。
@@ -172,7 +172,7 @@ The following code snippet demonstrates how to enable the overview plus detail p
 
 ## コードによるチャート ナビゲーション
 
-$PlatformShort$ データ チャート コンポーネントは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
+$PlatformShort$ データ チャートは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
 
 - `WindowPositionHorizontal`: コンテンツ ビュー長方形の X 部分を表す数値は、チャートで表示されます。
 - `WindowPositionVertical`: 数値は、チャートに表示されるコンテンツビュー四角形のの Y 部分を表します。
@@ -180,7 +180,7 @@ $PlatformShort$ データ チャート コンポーネントは、チャート�
 - `WindowScaleHorizontal`: チャートで表示されるコンテンツ ビュー長方形の幅部分を表す数値。
 - `WindowScaleVertical`: チャートで表示されるコンテンツ ビュー長方形の高さ部分を表す数値。
 
-以下のコード スニペットは、$PlatformShort$ データ チャート コンポーネントのビューをプログラムで変更する方法を示しています。以下では、$PlatformShort$ データ チャート コンポーネントを表す変数名 chart があると仮定します。
+以下のコード スニペットは、$PlatformShort$ データ チャートのビューをプログラムで変更する方法を示しています。以下では、$PlatformShort$ データ チャートを表す変数名 chart があると仮定します。
 
 ```razor
 // Zoom in by a factor of 0.05
@@ -215,3 +215,13 @@ this.chart.actualWindowPositionHorizontal -= 0.05;
 // Pan right by a factor of 0.05
 this.chart.actualWindowPositionHorizontal += 0.05;
 ```
+
+## API メンバー
+- `DefaultInteraction`
+- `DragModifier`
+- `IsHorizontalZoomEnabled`
+- `IsVerticalZoomEnabled`
+- `PanModifier`
+- `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`

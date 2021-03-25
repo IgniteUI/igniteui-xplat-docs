@@ -29,8 +29,8 @@ $PlatformShort$ ガント チャートは棒チャートの一種で、さまざ
 <!-- - [ピラミッド チャート](pyramid-chart.md) -->
 
 ## API メンバー
-- `XamDataChart`
-- `ScatterPolygonSeries`
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`
+- `ScatterPolygonSeries`
+- `XamDataChart`

@@ -36,7 +36,7 @@ All $PlatformShort$ charts do not trendlines on by default. In order to enable t
 - `SimpleAverage`
 - `WeightedAverage`
 
-The following code snippet demonstrates how to add a trendline to a series in the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a trendline to a series in the $PlatformShort$ data chart:
 
 ```razor
 <FinancialChart Width="100%" Height="100%" DataSource="DataSource"

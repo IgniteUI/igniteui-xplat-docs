@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
-_description: The $PlatformShort$ Line Chart component is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
+_description: The $PlatformShort$ Line Chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 _language: ja
@@ -184,7 +184,7 @@ $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズ�
 
 ## ライブ データの $PlatformShort$ 折れ線チャート
 
-$PlatformShort$ 折れ線チャート コンポネントは、次のデモに示すように、数百万に及ぶデータ ポイントを含む大量データを処理し、それらを数ミリ秒ごとに更新できます。
+$PlatformShort$ 折れ線チャートは、次のデモに示すように、数百万に及ぶデータ ポイントを含む大量データを処理し、それらを数ミリ秒ごとに更新できます。
 
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
@@ -229,7 +229,7 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 - [Series Trendlines](../features/chart-trendlines.md) -->
 
 ## API Members
-- `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
+- `XamCategoryChart`
