@@ -57,7 +57,3 @@ $PlatformShort$ ドーナツ チャートに複数の輪を表示して、各輪
 
 <div class="divider--half"></div>
 
-<!-- TODO list API links used in this topic
-## API メンバー
--->
-

@@ -145,7 +145,3 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
-
-<!-- TODO list API links used in this topic
-## API Members
--->

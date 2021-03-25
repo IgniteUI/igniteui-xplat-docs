@@ -12,9 +12,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 極座標チャートでは、データの不均等な散らばりやデータの塊に注意が向けられます。これらは、科学データのプロットによく用いられ（たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差を強調表示できます。
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
            alt="$PlatformShort$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -25,9 +25,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、散布折れ線チャートと同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
            alt="$PlatformShort$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -39,9 +39,9 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 極座標スプライン チャートは、散布スプライン チャートと同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
            alt="$PlatformShort$ 極座標スプライン チャート" >
 </code-view>
 
@@ -51,14 +51,10 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
-<code-view style="height: 420px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling" 
+<code-view style="height: 420px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
            alt="$PlatformShort$ 極座標チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
-
-<!-- TODO list API links used in this topic 
-## API メンバー
--->

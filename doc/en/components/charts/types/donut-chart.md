@@ -6,7 +6,7 @@ mentionedTypes: ["XamDoughnutChart"]
 ---
 # $PlatformShort$ Donut Chart
 
-$PlatformShort$ Donut Chart is similar to the Pie Chart component, proportionally illustrating the occurrences of a variable. The donut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
+$PlatformShort$ Donut Chart is similar to the Pie chart, proportionally illustrating the occurrences of a variable. The donut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
 
 
 ## $PlatformShort$ Donut Chart Example
@@ -61,9 +61,4 @@ It is possible to have a multiple ring display in the $PlatformShort$ Donut Char
 ## Additional Resources
 - [Animations](../features/chart-animations.md)
 - [Tooltips](../features/chart-tooltips.md)
-
-
-<!-- TODO list API links used in this topic
-## API Members
--->
 

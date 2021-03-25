@@ -98,7 +98,7 @@ The following example demonstrates how to style the final value layer annotation
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
+    YAxisLabelLocation="AxisLabelsLocation.OutsideRight"/>
 ```
 
 ```html
@@ -189,3 +189,8 @@ chart.calloutsXMemberPath = "index";
 chart.calloutsYMemberPath = "value";
 chart.calloutsLabelMemberPath = "info";
 ```
+
+## API Members
+- `CrosshairsSnapToData`
+- `XamCategoryChart`
+

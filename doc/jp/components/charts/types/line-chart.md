@@ -216,10 +216,8 @@ $PlatformShort$ 折れ線チャート コンポネントは、次のデモに示
 - [Series Tooltips](../features/chart-tooltips.md)
 - [Series Trendlines](../features/chart-trendlines.md) -->
 
-<!-- TODO list API links used in this topic
 ## API Members
 - `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
--->

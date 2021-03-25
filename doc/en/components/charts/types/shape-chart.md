@@ -42,6 +42,8 @@ The Scatter Polyline Chart renders an array or array of arrays of polylines in t
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Network Chart](network-chart.md) -->
 
-<!-- TODO list API links used in this topic
-## API Members
--->
+## API Members 
+- `ScatterPolygonSeries`
+- `ScatterPolylineSeries`
+- `XamDataChart`
+- `XamDataChart`

@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ Line Charts and Graphs | $ProductName$
-_description: The $PlatformShort$ Line Chart component is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
+_description: The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 ---
@@ -185,7 +185,7 @@ Since the $PlatformShort$ Line Chart allows you to combine multiple series and c
 
 ## $PlatformShort$ Line Chart with Live Data
 
-The $PlatformShort$ Line Chart component is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds as demonstrated in the following demo.
+The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds as demonstrated in the following demo.
 
 In this example, we are streaming live data into the $PlatformShort$ Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
 
@@ -231,10 +231,8 @@ Once our chart is set up, we may want to make some further styling customization
 - [Series Tooltips](../features/chart-tooltips.md)
 - [Series Trendlines](../features/chart-trendlines.md) -->
 
-<!-- TODO list API links used in this topic
 ## API Members
-- `XamCategoryChart`
 - `ChartType`
 - `ItemsSource`
 - `Legend`
--->
+- `XamCategoryChart` 

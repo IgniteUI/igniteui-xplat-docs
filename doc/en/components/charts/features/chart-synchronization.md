@@ -129,3 +129,11 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 </igc-data-chart>
 ```
 
+
+## API Members
+- `IsHorizontalZoomEnabled`
+- `IsVerticalZoomEnabled`
+- `SyncChannel`
+- `SynchronizeHorizontally`
+- `SynchronizeVertically`
+- `XamDataChart`

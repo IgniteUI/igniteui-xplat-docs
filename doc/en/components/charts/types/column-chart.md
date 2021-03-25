@@ -163,7 +163,3 @@ In this Radial Column chart sample, player stats are compared against different 
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
-
-<!-- TODO list API links used in this topic
-## API Members
--->

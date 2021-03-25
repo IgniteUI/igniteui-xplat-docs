@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ ファイナンシャル チャート
 
-$PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株式ティッカーは、分析している会社のデータ (ティッカー シンボル、通常は 1〜5 文字) を表します。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。株価チャートには、各期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。$PlatformShort$ 株価チャートは、価格とボリュームの表示モードや多数の財務指標など、データを視覚化して解釈するための複数の方法を提供します。 
+$PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株式ティッカーは、分析している会社のデータ (ティッカー シンボル、通常は 1〜5 文字) を表します。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。株価チャートには、各期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。$PlatformShort$ 株価チャートは、価格とボリュームの表示モードや多数の財務指標など、データを視覚化して解釈するための複数の方法を提供します。
 
 典型的な株価チャートは、価格帯のテクニカル分析に使用されるローソク足チャートのティッカー データで表されます。ローソク足チャートは、1 日の高値と安値を、ティッカー シンボルの始値と終値と比較します。
 
@@ -33,7 +33,7 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 - ローソク足チャート
 - 棒チャート
 - 縦棒チャート
-- 折れ線チャート 
+- 折れ線チャート
 
 データ構造:
 
@@ -47,9 +47,9 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 ## 複数シリーズの $PlatformShort$ 株価チャート
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            alt="$PlatformShort$ 株価指数チャート" >
 </code-view>
 
@@ -61,9 +61,9 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 
 この例では、ファイナンシャル チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
            alt="$PlatformShort$ 株価指数チャート" >
 </code-view>
 
@@ -73,9 +73,9 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 
 他のシリーズの複合などのより多くの機能を備えたファイナンシャル チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、ファイナンシャル チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
            alt="$PlatformShort$ 株価指数チャート" >
 </code-view>
 
@@ -86,9 +86,9 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 
 ## $PlatformShort$ チャートの注釈
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            alt="$PlatformShort$ チャートの注釈" >
 </code-view>
 
@@ -98,14 +98,10 @@ Angular 株価チャートのタイプは、次のいずれかを表示するよ
 
 この例では、ファイナンシャル チャートは米国の収益をプロットしています。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            alt="$PlatformShort$ チャートのペイン" >
 </code-view>
 
 <div class="divider--half"></div>
-
-<!-- TODO list API links used in this topic 
-## API メンバー
--->

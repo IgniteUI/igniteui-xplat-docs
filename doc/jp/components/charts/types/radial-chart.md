@@ -38,7 +38,3 @@ _language: ja
 
 - [円チャート](pie-chart.md)
 - [ドーナツ チャート](donut-chart.md)
-
-<!-- TODO list API links used in this topic
-## API メンバー
--->
