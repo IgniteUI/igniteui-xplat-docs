@@ -14,7 +14,7 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 散布図は、`XamDataChart` コンポーネントの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 
-<code-view style="height: 600px"
+<code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
            alt="$PlatformShort$ 散布ポリゴン チャート" >
@@ -26,22 +26,10 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 
 散布ポリライン チャートは、`XamDataChart` コンポーネントの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
-<code-view style="height: 600px"
+<code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
            alt="$PlatformShort$ 散布ポリライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>
-
-## その他のリソース
-- [軸の注釈](../data-chart-axis-annotations.md)
-- [軸オプション](../features/chart-axis-options.md)
-- [軸グリッド線](../features/chart-axis-gridlines.md)
-- [チャート強調表示](../features/chart-highlighting.md)
-<!-- - [ガント チャート](gantt-chart.md) -->
-<!-- - [ネットワーク チャート](network-chart.md) -->
-
-<!-- TODO list API links used in this topic
-## API メンバー
--->

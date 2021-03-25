@@ -18,8 +18,6 @@ An Area Chart is rendered using a collection of points connected by straight lin
 
 <div class="divider--half"></div>
 
-Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
-
 An Area Chart is similar to a Line Chart in that data points are plotted and connected by straight line segments, however they differ because with an Area Chart, the area between the X-Axis and the line is filled in.
 
 The AreaSeries is identical to the SplineAreaSeries in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
@@ -213,7 +211,3 @@ Polar Spline Area Charts belong to a group of polar charts and have a shape of a
 - [Axis Options](../features/chart-axis-options.md)
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
-
-<!-- TODO list API links used in this topic
-## API Members
--->

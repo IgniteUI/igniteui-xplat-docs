@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 
 # $PlatformShort$ Value Overlay Chart
 
-The $ProductName$ data chart component allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
+The $ProductName$ data chart allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
 
 ## $PlatformShort$ Value Overlay Example
 
@@ -33,7 +33,7 @@ It is also possible to show an axis annotation on a `ValueOverlay` to show the v
 
 ## Code Example
 
-The following code snippet demonstrates adding a value overlay with axis annotation to the $ProductName$ data chart component:
+The following code snippet demonstrates adding a value overlay with axis annotation to the $ProductName$ data chart:
 
 ```html
 <igx-data-chart #chart height="600px" width="800px" [dataSource]="data">

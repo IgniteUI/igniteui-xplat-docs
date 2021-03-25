@@ -27,7 +27,7 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 <!-- - [Gantt Chart](gantt-chart.md) -->
 
 ## API Members
-- `XamDataChart`
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`
+- `XamDataChart`

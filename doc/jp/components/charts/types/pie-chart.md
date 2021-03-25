@@ -11,22 +11,22 @@ $PlatformShort$ 円チャート (円グラフ) は、データセットのカテ
 
 円チャートは小さいデータ セットに適していて、一目で読みやすくなります。円チャートは、部分対全体の可視化の一種です。その他:
 
-- 円 
-- ドーナツ (リング) 
-- ファンネル 
+- 円
+- ドーナツ (リング)
+- ファンネル
 - 積層型エリア
 - 積層型 100% エリア (積層型パーセント エリア)
-- 積層型棒 
-- 積層型 100% 棒 (積層型パーセント棒) 
-- ツリーマップ 
-- ウォーターフォール 
+- 積層型棒
+- 積層型 100% 棒 (積層型パーセント棒)
+- ツリーマップ
+- ウォーターフォール
 
 $PlatformShort$ 円チャートは、データを解析するためのビューアー ツールを提供するインタラクティブ機能を含みます。
 
-- 凡例 
+- 凡例
 - スライスの分割
-- スライスの選択 
-- チャート アニメーション 
+- スライスの選択
+- チャート アニメーション
 
 円チャートのベスト プラクティス:
 
@@ -41,7 +41,7 @@ $PlatformShort$ 円チャートは、データを解析するためのビュー�
 - より分かりやすい表現のために、円の代わりに棒またはリング チャートを選択する。
 - 比較分析のために複数の円チャートを並べて配置しないようにする。
 
-以下の場合に円チャートを使用しないでください。 
+以下の場合に円チャートを使用しないでください。
 
 - 経時変化を比較する場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください。
 - 正確なデータ比較が必要な場合 - 棒チャート、折れ線チャート、またはエリア チャートを使用してください。
@@ -53,9 +53,9 @@ $PlatformShort$ 円チャートは、データを解析するためのビュー�
 この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には String と Numeric データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
            alt="$PlatformShort$ 円チャートの概要" >
 </code-view>
 
@@ -202,9 +202,9 @@ var data = [
 
 ```
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            alt="凡例付きの $PlatformShort$ 円チャート" >
 </code-view>
 
@@ -253,9 +253,9 @@ var data = [
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            alt="$PlatformShort$ 円チャートその他の分類項目" >
 </code-view>
 
@@ -308,9 +308,9 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
            alt="$PlatformShort$ 円チャートの展開" >
 </code-view>
 
@@ -406,9 +406,9 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            alt="$PlatformShort$ 円チャートの選択" >
 </code-view>
 
@@ -441,9 +441,9 @@ public tick(): void {
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
            alt="$PlatformShort$ 円チャートのアニメーション" >
 </code-view>
 
@@ -453,9 +453,9 @@ public tick(): void {
 
 円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
            alt="$PlatformShort$ 円チャートのスタイル設定" >
 </code-view>
 
@@ -465,18 +465,10 @@ public tick(): void {
 
 ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
            alt="$PlatformShort$ ラジアル円チャート" >
 </code-view>
 
 <div class="divider--half"></div>
-
-## その他のリソース
-- [チャート アニメーション](../features/chart-animations.md)
-- [チャート ツールチップ](../features/chart-tooltips.md)
-
-<!-- TODO list API links used in this topic 
-## API メンバー
--->

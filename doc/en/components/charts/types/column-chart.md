@@ -18,8 +18,6 @@ The $ProductName$ Column Chart is rendered using a collection of rectangles 
 
 <div class="divider--half"></div>
 
-Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
-
 A Column Chart uses the same concepts of data plotting as the Bar Chart but data points are stretched along a horizontal line (X-Axis) rather than vertical line (Y-Axis). In other words, the Column Chart is rendered like the Bar Chart but with 90 degrees counter-clockwise rotation.
 
 There are several uses cases for a Column Chart. When you:
@@ -165,7 +163,3 @@ In this Radial Column chart sample, player stats are compared against different 
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
-
-<!-- TODO list API links used in this topic
-## API Members
--->

@@ -437,7 +437,7 @@
   },
   {
     "name": "Treemap",
-    "href": "treemap-overview.md",
+    "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
@@ -496,6 +496,7 @@
           "status": ""
         },
         {
+          "exclude": ["Blazor"],
           "name": "Chart Synchronization",
           "href": "charts/features/chart-synchronization.md",
           "status": ""

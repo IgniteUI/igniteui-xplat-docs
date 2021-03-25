@@ -27,8 +27,8 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 - [Composite Chart](Composite-chart.md)
 
 ## API Members
-- `XamDataChart`
-- `LineSeries`
-- `ColumnSeries`
 - `CategoryXAxis`
+- `ColumnSeries`
+- `LineSeries`
 - `NumericYAxis`
+- `XamDataChart`

@@ -143,6 +143,3 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 <!-- - [ガント チャート](gantt-chart.md)
 - [ピラミッド チャート](pyramid-chart.md) -->
 
-<!-- TODO list API links used in this topic
-## API メンバー
--->

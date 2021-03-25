@@ -28,8 +28,8 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
 
 ## API Members
-- `XamDataChart`
-- `ScatterPolygonSeries`
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`
+- `ScatterPolygonSeries`
+- `XamDataChart`

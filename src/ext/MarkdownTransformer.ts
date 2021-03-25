@@ -1,6 +1,7 @@
 import { MappingLoader, APIPlatform, APIMapping } from './MappingLoader';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
+import { inherits } from 'util';
 
 let remark = require(`remark`);
 let parse = require('remark-parse');
@@ -9,6 +10,7 @@ let frontmatter = require('remark-frontmatter');
 let visit = require('unist-util-visit');
 let jsyaml = require('js-yaml');
 let fs = require('fs');
+
 
 function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
@@ -951,6 +953,100 @@ export class MarkdownTransformer {
         });
     }
 
+    updateApiSection(fileContent: string): string {
+        var newApiMembers = [];
+
+        var md = new MarkdownContent(fileContent);
+
+        var apiSection = new MarkdownSection('');
+        for (const section of md.sections) {
+            if (section.index === 0) continue;
+
+            if (section.withApiList()) {
+                apiSection = section;
+                // console.log("==================== API " +  section.index + " ==================================================");
+                // console.log(section.content);
+                for (const line of section.lines) {
+                    if (!line.isListItem()) continue;
+
+              //      console.log(line.index + " " + line.content);
+                }
+
+            } else if (section.withParagraphs()) {
+                // console.log("==================== section " +  section.index + " ==================================================");
+                // console.log(section.lines.length);
+                // console.log(section.content);
+                for (const line of section.lines) {
+                    if (line.isParagraph()) {
+                       // console.log(line.index + "\n" + line.content);
+                        // var members = line.getMembers();
+                        var words = line.content.split(' ');
+                        // apiMembers.push.apply(apiMembers, members);
+                        for (const word of words) {
+                            if (word.indexOf('`') === 0 &&
+                                newApiMembers.indexOf(word) === -1)
+                                newApiMembers.push('- ' + word);
+                        }
+                    }
+                    //
+                }
+            }
+        }
+
+        // console.log("==============================================================");
+
+        for (const api of newApiMembers) {
+            var apiMissing = apiSection.content.indexOf(api) === -1;
+            if (apiMissing) {
+                //apiSection.content += api;;
+                var line = new MarkdownLine(api)
+                line.index = apiSection.lines.length;
+                apiSection.lines.push(line);
+            }
+            // for (const line of apiSection.lines) {
+            //     if (line.)
+            // }
+        }
+        apiSection.lines.sort((a, b) => (a.content > b.content) ? 1 : -1)
+
+        var orgApiContent = apiSection.content;
+        var newApiContent = '';
+        for (const line of apiSection.lines) {
+            if (line.isEmpty()) continue;
+
+            // console.log(line.index + " " + line.content);
+
+            newApiContent += line.content + '\n';
+        }
+
+        if (newApiContent.trim() !== '') {
+            if (orgApiContent === '') {
+                newApiContent = '\n' + '## API Members \n' + newApiContent;
+                fileContent += newApiContent;
+            } else {
+                fileContent = fileContent.replace(orgApiContent, newApiContent);
+            }
+        }
+
+        // console.log(fileContent);
+
+        // console.log("=====================================\n");
+        // console.log(newApiContent);
+        // console.log("========================");
+
+        // console.log(md.metadata.content);
+        // console.log(md.sections.length);
+        // console.log(md.sections[0].content);
+        // console.log("========================");
+        // console.log(md.sections[1].content);
+
+        // console.log(apiSection);
+        //console.log(md.sections[md.sections.length- 1].content);
+         //console.log(newApiMembers.join(', '));
+
+         return fileContent;
+    }
+
     // simplifies converted YML to JSON string into new format of TOC
     // which supports: "exclude": ["Angular", "Blazor"] and "status": "NEW" || "status": "UPDATED"
     simplifyJson(jsonContent: string, platform: string): string {
@@ -1150,4 +1246,138 @@ export class TocNode {
     constructor() {
           this.name = "NOTE without name";
     }
+}
+
+class MarkdownContent {
+    public sections: MarkdownSection[];
+    public metadata: MarkdownMetadata;
+    public content: string = '';
+
+    constructor(content: string) {
+
+        this.sections = [];
+        this.metadata = new MarkdownMetadata('');
+
+        if (content === undefined) return;
+
+        var parts = content.split('---');
+        if (parts === undefined || parts.length < 3) {
+            console.log('Failed on creating MarkdownContent');
+            return;
+        }
+        // console.log("parts:" + parts.length);
+        // console.log("parts0:" + parts[0]);
+        // console.log("parts1:" + parts[1]);
+        // console.log("parts2:" + parts[2]);
+        this.metadata = new MarkdownMetadata(parts[1]);
+
+        var sections = parts[2].split('\n## ');
+        for (const s of sections) {
+            var section = new MarkdownSection('## ' + s);
+            section.index = this.sections.length;
+            this.sections.push(section);
+            // console.log("==================== section " +  this.sections.length + " ==================================================");
+            // console.log(section.content);
+        }
+        // this.sections.push(new MarkdownSection());
+
+    }
+}
+
+class MarkdownSection {
+
+    public content: string = '';
+    public lines: MarkdownLine[] = [];
+    public index: number = 0;
+
+    public withMetadata() { return this.content.indexOf('---') === 0; }
+    public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
+    public withApiList() { return this.content.indexOf('## API Members') === 0; }
+    public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
+
+    public withParagraphs() {
+        return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
+    }
+
+    constructor(content: string) {
+
+        if (content === undefined) return;
+
+        this.content = content;
+        var contentLines = [];
+        if (this.withTopicList() || this.withApiList() || this.withMetadata()) {
+            contentLines = content.split('\r\n');
+        } else { // paragraphs
+            contentLines = content.split('\r\n\r\n');
+        }
+
+        for (const l of contentLines) {
+            var line = new MarkdownLine(l)
+            line.index = this.lines.length;
+            this.lines.push(line);
+            // console.log("== line " +  this.lines.length + " ======================");
+            // console.log(line.content);
+        }
+
+    }
+}
+
+class MarkdownMetadata  {
+
+    public content: string = '';
+    public lines: MarkdownLine[] = [];
+    public mentionedTypes: string = '';
+
+    constructor(content: string) {
+        if (content === undefined) return;
+
+        this.content = content;
+        var lines = content.split('\n');
+        for (const line of lines) {
+            this.lines.push(new MarkdownLine(line));
+            if (line.indexOf('mentionedTypes') === 0 )
+                this.mentionedTypes = line;
+        }
+
+    }
+}
+
+class MarkdownLine {
+
+    public content: string = '';
+    public index: number = 0;
+
+    constructor(content: string) {
+        if (content !== undefined) {
+            this.content = content;
+        }
+    }
+
+    public isCodeViewer() { return this.content.indexOf('<code-view') === 0; }
+    public isDivider() { return this.content.indexOf('<div class="divider--half"') === 0; }
+    public isListItem() { return this.content.indexOf('- ') === 0; }
+    public isTitle() { return this.content.indexOf('#') === 0; }
+    public isEmpty() { return this.content.trim() === ''; }
+    public isCodeSnippet() {
+        return this.content.indexOf('```') === 0 ||
+               this.content.indexOf('   ') === 0 ||
+               this.content.indexOf('<Ig') >= 0;
+    }
+    public isParagraph() { return !this.isTitle() && !this.isDivider() && !this.isEmpty() && !this.isListItem() && !this.isCodeViewer(); }
+
+    // public getWords(): string[] {
+    //     var words = this.content.split(' ');
+    //     return words;
+    // }
+
+    // public getMembers(): string[] {
+    //     var words = this.getWords();
+    //     var apiMembers = [];
+    //     for (const word of words) {
+    //         if (word.indexOf('`') === 0 &&
+    //             apiMembers.indexOf(word) === -1)
+    //             apiMembers.push(word);
+    //     }
+    //     return apiMembers;
+    // }
 }

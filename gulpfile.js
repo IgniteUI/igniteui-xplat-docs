@@ -200,6 +200,41 @@ exports.updateApi = updateApi = gulp.series(
     updateApiWebComponents,
 );
 
+function updateApiSection(cb) {
+    ensureEnvironment();
+
+    gulp.src([
+    // 'doc/en/**/gantt-chart.md',
+    // 'doc/en/**/area-chart.md',
+    // 'doc/en/**/types/*.md',
+    'doc/en/**/features/chart-*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        // let markdownContent = file.contents.toString();
+        // read converted .yml to .json above and simplify TOC structure:
+        // let newJson = transformer.simplifyJson(orgJson, 'Blazor');
+        // fs.writeFileSync(tocOutputPath, newJson);
+        var filePath = file.dirname + "\\" + file.basename
+        console.log('updating API Section: ' + filePath);
+        var fileContent = file.contents.toString();
+        if (transformer) {
+            // file.contents = Buffer.from(transformer.updateApiSection(fileContent));
+            var newContent = transformer.updateApiSection(fileContent);
+            fs.writeFileSync(filePath, newContent);
+        }
+
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        cb();
+    })
+    .on("error", (err) => {
+        console.log("ERROR in updateApiSection()");
+        cb(err);
+    });
+}
+exports.updateApiSection = updateApiSection;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;
