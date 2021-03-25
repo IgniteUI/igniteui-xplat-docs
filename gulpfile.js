@@ -204,9 +204,10 @@ function updateApiSection(cb) {
     ensureEnvironment();
 
     gulp.src([
-    //    'doc/en/**/gantt-chart.md',
-    'doc/en/**/area-chart.md',
-    //'doc/en/**/types/*-chart.md',
+    // 'doc/en/**/gantt-chart.md',
+    // 'doc/en/**/area-chart.md',
+    // 'doc/en/**/types/*.md',
+    'doc/en/**/features/chart-*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         // let markdownContent = file.contents.toString();

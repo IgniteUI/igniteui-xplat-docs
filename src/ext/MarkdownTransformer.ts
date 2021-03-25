@@ -1013,14 +1013,15 @@ export class MarkdownTransformer {
         var newApiContent = '';
         for (const line of apiSection.lines) {
             if (line.isEmpty()) continue;
+
+            // console.log(line.index + " " + line.content);
+
             newApiContent += line.content + '\n';
         }
 
         if (newApiContent.trim() !== '') {
             if (orgApiContent === '') {
                 newApiContent = '\n' + '## API Members \n' + newApiContent;
-                // fileContent += '\n';
-                // fileContent += '## API Members \n';
                 fileContent += newApiContent;
             } else {
                 fileContent = fileContent.replace(orgApiContent, newApiContent);
@@ -1030,12 +1031,11 @@ export class MarkdownTransformer {
         // console.log(fileContent);
 
         // console.log("=====================================\n");
-
         // console.log(newApiContent);
+        // console.log("========================");
 
         // console.log(md.metadata.content);
         // console.log(md.sections.length);
-        // console.log("========================");
         // console.log(md.sections[0].content);
         // console.log("========================");
         // console.log(md.sections[1].content);
