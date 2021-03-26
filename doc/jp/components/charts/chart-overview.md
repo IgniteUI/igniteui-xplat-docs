@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ チャートとグラフ ライブラリー | $ProductName$
-_description: $ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
+_description: $ProductName$ チャートおよびグラフは、データ視覚化の広範なライブラリであり、Web アプリやモバイル アプリの魅力的でインタラクティブなチャートを実現します。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Chart, Infragistics, $PlatformShort$ チャート, チャート, インフラジスティックス
 _language: ja
 ---
@@ -107,15 +107,15 @@ $PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテ
 
 ### $PlatformShort$ 複合チャート
 
-The $PlatformShort$ Composite Chart, also called a Combo Chart, is visualization that combines different types of chart types in the same plot area. It is very useful when presenting two data series that have a very different scale and might be expressed in different units. The most common example is dollars on one axis and percentage on the other axis. Learn more about our [composite charts](types/composite-chart.md).
+$PlatformShort$ 複合チャートまたはコンボ チャートは、同じプロット領域でさまざまなチャート タイプを組み合わせた視覚化です。スケールが大きく異なり、異なる単位で表される可能性のある 2 つのデータ シリーズを表示する場合に非常に役立ちます。最も一般的な例は、一方の軸にドル、もう一方の軸にパーセンテージです。[複合チャート](types/composite-chart.md)の詳細をご覧ください。
 
 <!-- ### $PlatformShort$ ガント チャート
 
-The $PlatformShort$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. Learn more about our [gantt charts](types/gantt-chart.md). --> 
+$PlatformShort$ ガント チャートは棒チャートの一種で、さまざまなカテゴリを時系列に視覚化します。ガント チャートは、期間ブロックで開始時間と終了時間を示します。これは、プロジェクト管理で、時間に対して表示されるアクティビティ (タスクまたはイベント) を表示するための最も一般的で便利な方法の 1 つとしてよく使用されます。チャートの左側にはアクティビティのリストがあり、上部には適切な時間スケールがあります。各アクティビティは棒で表されます。 棒の位置と長さは、アクティビティの開始日、期間、および終了日を反映しています。[ガント チャート](types/gantt-chart.md)の詳細をご覧ください。 --> 
 
 <!-- ### $PlatformShort$ ネットワーク チャート
 
-The $PlatformShort$ Network Chart, also called Network Graph or Polyline Chart, visualizes complex relationships between a large amount of elements. This visualization displays undirected and directed graph structures. It also shows relationships between entities that are displayed as round nodes and lines show the relationships between them. Learn more about our [network charts](types/network-chart.md). -->
+$PlatformShort$ ネットワーク チャートは、ネットワーク グラフまたはポリライン チャートとも呼ばれ、大量の要素間の複雑な関係を視覚化します。この視覚化は、無向および指向グラフ構造を表示します。また、丸いノードとして表示されるエンティティ間の関係を示し、線はそれらの関係を示します。[ネットワーク チャート](types/network-chart.md)の詳細をご覧ください。 -->
 
 ### 極座標エリア チャート
 
@@ -123,7 +123,7 @@ $PlatformShort$ 極座標エリア チャートまたは極座標グラフは、
 
 <!-- ### $PlatformShort$ ピラミッド チャート
 
-The $PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species. Learn more about our [pyramid charts](types/pyramid-chart.md). -->
+$PlatformShort$ ピラミッド チャートは、年齢ピラミッドまたは人口ピラミッドとも呼ばれ、人口が増加しているときにピラミッドの形を形成する、人口内のさまざまな年齢層の分布を示すグラフィカルな図です。また、生態学では、繁殖能力と種の存続の可能性の指標として、人口の全体的な年齢分布を決定するために使用されます。[ピラミッド チャート](types/pyramid-chart.md)の詳細をご覧ください。 -->
 
 ### 散布図
 
@@ -131,7 +131,7 @@ $PlatformShort$ 散布図は、デカルト (X、Y) 座標系を使用してデ�
 
 ### $PlatformShort$ シェープ チャート
 
-The $PlatformShort$ Shape Charts is a group of chart that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings. Learn more about our [shape charts](types/shape-chart.md).
+$PlatformShort$ シェープ チャートは、形状の配列 (X/Y ポイントの配列) を取り、デカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャートのグループです。これらは、科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。[シェープ チャート](types/shape-chart.md)の詳細をご覧ください。
 
 ### スプライン チャート
 

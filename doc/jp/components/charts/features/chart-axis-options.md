@@ -2,51 +2,51 @@
 title: $PlatformShort$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸オプション
 _keywords: $PlatformShort$ Axis, Options, Infragistics, $PlatformShort$ 軸, オプション, インフラジスティックス
-mentionedTypes: []
+mentionedTypes: [ 'XamCategoryChart' ]
 _language: ja
 ---
 
 # $PlatformShort$ 軸オプション
 
-In all $ProductName$ charts, the axes provide properties for visual configurations such as titles, labels, and ranges. These features are demonstrated in the examples provided below.
+すべての $ProductName$ チャートで、軸はタイトル、ラベル、範囲などの視覚的構成のプロパティを提供します。これらの機能は、以下の例で示されています。
 
-## Axis Titles Example
+## 軸タイトルの例
 
-The axis titles feature of the $PlatformShort$ charts, allows you to add contextual information to the your chart. You can customize the look and feel of the axis titles in many different ways such as applying different font styles, colors, margins, and alignments.
+$PlatformShort$ チャートの軸タイトル機能を使用すると、チャートにコンテキスト情報を追加できます。さまざまなフォントスタイル、色、マージン、および配置を適用するなど、さまざまな方法で軸タイトルの外観をカスタマイズできます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-titles"
-           alt="$PlatformShort$ Axis Titles Example"
+           alt="$PlatformShort$ 軸タイトルの例"
            github-src="charts/category-chart/axis-titles">
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## Axis Labels Example
+## 軸ラベルの例
 
-The $ProductName$ charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels.
+$ProductName$ チャートは、チャートで表示されるラベルの構成、書式設定、およびラベル フォントのスタイル設定を制御することが可能です。軸ラベルの回転角度、マージン、水平および垂直方向の配置、色、余白、および表示設定を変更できます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-labels"
-           alt="$PlatformShort$ Axis Labels Example"
+           alt="$PlatformShort$ 軸ラベルの例"
            github-src="charts/category-chart/axis-labels">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Axis Range Example
+## 軸範囲の例
 
-In the $PlatformShort$ charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.
+$PlatformShort$ チャートでは、数値軸または時間軸の範囲の最小値と最大値を定義できます。範囲の最小値は軸の最小値で、範囲の最大値は軸の最大値です。これらは、`YAxisMinimumValue` および `YAxisMaximumValue` オプションを設定することによって設定されます。
 
-By default, the $PlatformShort$ charts will calculate the minimum and maximum values for the numeric and time axis range based on the lowest and highest corresponding value points in your data, but this automatic calculation may not be appropriate for your set of data points in all cases. For example, if your data has a minimum value of 850, you may want to set the `YAxisMinimumValue` to 800 so that there will be a space value of 50 between the axis minimum and the lowest value of data points. The same idea can be applied to the axis minimum value and the highest value of data points using the `YAxisMaximumValue` property.
+既定では、$PlatformShort$ チャートは、データ内の対応する最小値と最大値に基づいて、数値と時間軸の範囲の最小値と最大値を計算しますが、この自動計算は、データセットには適していません。たとえば、データの最小値が 850 の場合、`YAxisMinimumValue` を 800 に設定してください。これにより、軸の最小値とデータ ポイントの最小値の間に 50 のスペース値ができます。`YAxisMaximumValue` プロパティを使用して、同じ方法を軸の最小値と最大値に適用することができます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-range"
-           alt="$PlatformShort$ Axis Range Example"
+           alt="$PlatformShort$ 軸範囲の例"
            github-src="charts/category-chart/axis-range">
 </code-view>
 

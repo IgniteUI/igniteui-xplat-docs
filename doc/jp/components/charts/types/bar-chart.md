@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ 棒チャートとグラフ | $ProductName$
-_description: $PlatformShort$ Bar Charts are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
+_description: $PlatformShort$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
 _language: ja
@@ -11,7 +11,7 @@ $PlatformShort$ 棒チャート、棒グラフ、または水平棒チャート�
 
 ## $PlatformShort$ 棒チャートの例
 
-In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
+この例では、棒チャートは、映画シリーズの世界の興行収入の合計と、そのシリーズで最も収益の高い映画を比較しています。Y 軸 (チャートの左側のラベル) には、シリーズの文字列値が表示されています。X 軸 (チャートの下部にあるラベル) は、数十億米ドルで値を表示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,7 +21,7 @@ In this example, the bar chart is comparing movie series total world box office 
 
 <div class="divider--half"></div>
 
-## Are $PlatformShort$ Bar Charts right for your project?
+## $PlatformShort$ 棒チャートはプロジェクトに適していますか?
 
 棒チャートにはいくつかのユースケースがあります:
 

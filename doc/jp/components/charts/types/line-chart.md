@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
-_description: The $PlatformShort$ Line Chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
+_description: $PlatformShort$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart"]
 _language: ja
@@ -13,7 +13,7 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 ## $PlatformShort$ 折れ線チャートの例
 
-In the following example, the line chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+次の例では、 折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (Twh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,9 +23,9 @@ In the following example, the line chart is comparing the generation of renewabl
 
 <div class="divider--half"></div>
 
-## Are $PlatformShort$ Line Charts right for your project?
+## $PlatformShort$ 折れ線チャートはプロジェクトに適していますか?
 
-- Different than an area chart, the line chart does not fill the area between the X-Axis (bottom axis) and the line.
+- エリア チャートとは異なり、折れ線チャートは X 軸 (下軸) と線の間の領域を塗りつぶしません。
 - $PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン チャートと同じです。
 
 折れ線チャートには、データに基づいて複数のバリアントがあります。以下が含まれます。
@@ -112,7 +112,7 @@ public initData() {
 }
 ``` -->
 
-In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
+$PlatformShort$ 折れ線チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
 
 <!-- Blazor -->
 ```razor
@@ -228,7 +228,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 - [Series Tooltips](../features/chart-tooltips.md)
 - [Series Trendlines](../features/chart-trendlines.md) -->
 
-## API Members
+## API メンバー
 - `ChartType`
 - `ItemsSource`
 - `Legend`

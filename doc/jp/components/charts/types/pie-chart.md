@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ 円チャートとグラフ | $ProductName$
-_description: The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections. Try for FREE.
+_description: $ProductName$ 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊なコンポーネントです。無料でお試しください。
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 _language: ja

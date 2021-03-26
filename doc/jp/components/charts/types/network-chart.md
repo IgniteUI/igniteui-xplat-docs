@@ -9,7 +9,7 @@ _language: ja
 
 $PlatformShort$ ネットワーク チャートは、ネットワーク グラフまたはポリライン チャートとも呼ばれ、大量の要素間の複雑な関係を視覚化します。この視覚化は、無向および指向グラフ構造を表示します。また、丸いノードとして表示されるエンティティ間の関係を示し、線はそれらの関係を示します。
 
-The following sections provide examples of various types of Network Charts.
+次のセクションでは、さまざまなタイプのネットワーク チャートの例を示します。
 
 ## $PlatformShort$ ネットワーク極座標チャート
 

@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート強調表示
 
-All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components and they have the same API for using the highlighting feature.
+すべての $PlatformShort$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントによってサポートされており、強調表示機能を使用するための同じ API を備えています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,13 +22,13 @@ All $PlatformShort$ Charts support highlighting of visuals such as lines, column
 
 ## 強調表示レイヤー
 
-The $ProductName$ `XamCategoryChart` can enable three types of highlighting when hovering over data items.
+$ProductName$ `XamCategoryChart` は、データ項目にカーソルを合わせると 3 種類の強調表示を有効にできます。
 
-1. Series Highlighting will highlight the single data point represented by a marker or column when the pointer is positioned over it. This is enabled by setting the `IsSeriesHighlightingEnabled` property to true.
+1. シリーズ ハイライトは、ポインターがデータ ポイント上ある場合に、マーカーまたは列で表される単一のデータ ポイントをハイライトします。これは、 `IsSeriesHighlightingEnabled` プロパティを true に設定することで有効になります。
 
-2. Item Highlighting highlights items in a series either by drawing a banded shape at their position or by rendering a marker at their position. This is enabled by setting the `IsItemHighlightingEnabled` property to true.
+2. 項目ハイライトは、その位置に縞模様の図形を描画したりマーカーを描画したりすることでシリーズの項目を強調表示します。これは、 `IsItemHighlightingEnabled` プロパティを true に設定することで有効になります。
 
-3. Category Highlighting targets all category axes in the chart. They draw a shape that illuminates the area of the axis closest to the pointer position. This is enabled by setting the `IsCategoryHighlightingEnabled` property to true.
+3. カテゴリ ハイライトはすべてのカテゴリ軸を対象にします。カーソル位置に最も近い軸領域を照らす図形を描画します。これは、`IsCategoryHighlightingEnabled` プロパティを true に設定することで有効になります。
 
 ```razor
 <CategoryChart Height="500px" Width="700px" DataSource="@DataSource"

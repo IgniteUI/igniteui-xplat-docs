@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート トレンドライン
 
-In $PlatformShort$ charts, trendlines help identifying a trend or find patterns in data. Trendlines are always rendered in front of data points bound to the chart. They are supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` (except for stacked series, shape series, and range series).
+$PlatformShort$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `XamCategoryChart`、`XamFinancialChart`、および  `XamDataChart` でサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -19,7 +19,7 @@ In $PlatformShort$ charts, trendlines help identifying a trend or find patterns 
 
 <div class="divider--half"></div>
 
-All $PlatformShort$ charts do not trendlines on by default. In order to enable them, you can set the `TrendLineType` property that you wish the trendline to show up on. Also, you can modify multiple appearance properties of trendlines such as its brush, period, and thickness. Below is a list of trendlines that can be used with the series of the data chart:
+すべての $PlatformShort$ チャートには、デフォルトでトレンドラインがオンになっているわけではありません。それらを有効にするために、トレンドラインを表示する `TrendLineType` プロパティを設定できます。また、ブラシ、期間、太さなど、トレンドラインの複数の外観プロパティを変更できます。以下は、一連のデータ チャートで使用できるトレンドラインのリストです。
 
 - `None`
 - `CubicFit`
@@ -36,7 +36,7 @@ All $PlatformShort$ charts do not trendlines on by default. In order to enable t
 - `SimpleAverage`
 - `WeightedAverage`
 
-The following code snippet demonstrates how to add a trendline to a series in the $PlatformShort$ data chart:
+次のコード スニペットは、$PlatformShort$ データ チャートの系列にトレンドラインを追加する方法を示しています。
 
 ```razor
 <FinancialChart Width="100%" Height="100%" DataSource="DataSource"

@@ -8,20 +8,20 @@ _language: ja
 
 # $PlatformShort$ 軸グリッド線
 
-All $ProductName$ charts include built-in capability to modify appearance and frequency pf gridlines and tickmarks rendered on x-axis and y-axis. These features are demonstrated in the examples given below.
+すべての $ProductName$ チャートには、x 軸と y 軸に描画されたグリッド線と目盛りの外観と頻度を変更する機能が組み込まれています。これらの機能は、以下の例で示されています。
 
 ## 軸グリッド線の例
 
-This table lists gridline properties of axes that you can configure and the following example demonstrates how to set those gridline properties.
+この表に、構成できる軸のグリッド線プロパティを示します。次の例は、それらのグリッド線プロパティを設定する方法を示しています。
 
 軸ビジュアル           | タイプ    | プロパティ名
 -----------------------|---------|-----------------------
-Major Stroke Color     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
-Minor Stroke Color     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
-Major Stroke Thickness | 数  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness`
-Minor Stroke Thickness | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness`
-Major Interval         | 数  | `XAxisInterval` <br> `YAxisInterval`
-Minor Interval         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`
+主ストロークの色     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
+副ストロークの色     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`
+主ストロークの太さ | 数  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness`
+副ストロークの太さ | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness`
+主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`
+副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -34,13 +34,13 @@ Minor Interval         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`
 
 ## 軸目盛の例
 
-This table lists tickmark properties of axes that you can configure and the following example demonstrates how to set those gridline properties.
+この表に、構成できる軸の目盛りプロパティを示します。次の例は、それらの目盛りプロパティを設定する方法を示しています。 
 
 軸ビジュアル           | タイプ    | プロパティ名
 -----------------------|---------|-----------------------
-Tick Stroke Color      | 文字列  | `XAxisTickStroke` <br> `YAxisTickStroke`
-Tick Stroke Thickness  | 数  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness`
-Tick Stroke Length     | 数  | `XAxisTickLength` <br> `YAxisTickLength`
+目盛りのストロークの色      | 文字列  | `XAxisTickStroke` <br> `YAxisTickStroke`
+目盛りのストロークの太さ  | 数  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness`
+目盛りのストロークの長さ     | 数  | `XAxisTickLength` <br> `YAxisTickLength`
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

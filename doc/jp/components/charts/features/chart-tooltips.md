@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート ツールチップ
 
-In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components.
+$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、 `XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,12 +21,12 @@ In $PlatformShort$ charts, tooltips provide details about bound data and they ar
 
 ## ツールチップ タイプ
 
-The $ProductName$ category chart can be configured to display tooltips by setting the `ToolTipType` property in the following ways:
+$ProductName$ カテゴリ チャートは、次の方法で `ToolTipType` プロパティを設定することにより、ツールチップを表示するように構成できます。
 
-1. `Default` tooltips will display a tooltip for a single item when the pointer is positioned over it.
-2. `Item` tooltips will display a tooltip for each data item in the category that the pointer is positioned over.
-3. `Category` tooltips will display a grouped tooltip for all data points in the category that the pointer is positioned over.
-4. `None` will prevent tooltips from displaying.
+1. `Default` ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
+2. `Item` ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
+3. `Category` ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
+4. `None` はツールチップが非表示になります。
 
 ```razor
 <CategoryChart Height="500px" Width="700px"

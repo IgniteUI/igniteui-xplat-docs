@@ -1,122 +1,122 @@
 ---
-title: $PlatformShort$ Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
-_keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
+title: $PlatformShort$ ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $PlatformShort$ ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。$ProductName$ ツリーマップについて説明します。
+_keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $PlatformShort$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
 mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 _language: ja
 ---
-# $PlatformShort$ Treemap
-The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node’s rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data.
+# $PlatformShort$ ツリーマップ
+$ProductName$ ツリーマップ チャートは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
 
-## $PlatformShort$ Treemap Example
+## $PlatformShort$ ツリーマップの例
 
-In the following example, the treemap demonstrates the 30 largest countries in the world by total area.
+次の例では、ツリーマップは世界の最大総面積の上位30 の国を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="$PlatformShort$ Treemap Example"
+           alt="$PlatformShort$ ツリーマップの例"
            github-src="charts/tree-map/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways. A second advantage of treemaps is that, by construction, they make efficient use of space. As a result, they can legibly display thousands of items on the screen simultaneously.
+色とサイズのディメンションが何らかの方法でツリー構造と関連付けられている場合、他の方法では見つけにくいパターンを簡単に識別できます。ツリーマップは、より効率的にスペースを使用します。このため、数千の項目を同時に画面に表示することが可能となります。
 
-- Treemaps are more effective than pie charts and other forms of area charts that often do a poor job of classifying data points and communicating the relative differences of their values.
+- ツリーマップは、データ ポイントの分類とそれらの値の相対的な違いの伝達に苦手なときが多い円チャートや他の形式のエリア チャートよりも効果的です。
 
-- Treemaps are designed for drill down scenarios. You can continuously drill down into the data set that is represented by smaller rectangles for more efficient data analysis.
+- ツリーマップは、ドリルダウン シナリオ用に設計されています。より効率的なデータ分析のために、小さな長方形で表されるデータ セットに継続的にドリルダウンできます。
 
-- Treemaps are not designed to convey numerical quantities; the intent is to show relative rankings.
+- ツリーマップは、数値の表示ではなく相対的順位の表示に向いています
 
-Like any other data visualization, a Treemap chart visualization should be used in specific scenarios. It does not solve the same problem that a visualization like a Bar Chart or a Line Chart would. It is really meant for a more complex, richer data display.
+他のデータの視覚化と同様に、ツリーマップ チャートの視覚化は特定のシナリオで使用する必要があります。棒チャートや折れ線チャートのような視覚化と同じ問題は解決されません。これは、より複雑で豊富なデータ表示を目的としています。
 
-<b>Use Cases:</b>
+<b>ユース ケース:</b>
 
-- Have drill-down hierarchical data (data organized as a tree, with branches and sub-branches)
+- 階層データ (ブランチとサブブランチを持つツリーとして構成されたデータ) をドリルダウンする場合。
 
-- Want to illustrate hierarchies of relative weight and comparative values between categories (branches) and subcategories (sub-branches)
+- カテゴリ (ブランチ) とサブカテゴリ (サブブランチ) 間の相対的な重みと比較値の階層を説明したい場合。
 
-- Want to display large data sets that need a compact, space-efficient visualization
+- コンパクトで効率の良い視覚化が必要な大規模なデータ セットを表示したい場合。
 
-- Want to deliver at-a-glance, quick data analysis without precise values. The relative size of the rectangles help identify patterns and/or outliers very quickly
+- 正確な値を使用せずに、一目で迅速なデータ分析を提供したい場合長方形の相対的なサイズは、パターンや外れ値を非常に迅速に識別するのに役立ちます。
 
-- Want to make efficient use of space. Treemaps can legibly display thousands of items on the screen simultaneously
+- スペースを有効に使用したい場合ツリーマップは、数千の項目を同時に画面に表示することが可能となります。
 
-<b>Do not use a Treemap when:</b>
+<b>以下の場合にツリーマップを使用しないでください:</b>
 
-- You are telling a data story that requires precise values
+- 正確な値を必要とするデータ ストーリーを説明している場合。
 
-- You have negative data values
+- 負のデータ値がある場合。
 
-- You have flat, non-hierarchical data
+- フラットで非階層的なデータがある場合。
 
-- Your data is similar in size
+- データのサイズが類似している場合。
 
-<b>Data Structure:</b>
+<b>データ構造:</b>
 
-- The data source must be an array or a list of data items
+- データ ソースはデータ項目の配列またはリストである必要があります。
 
-- The data source must contain at least one data item otherwise the map will not render any nodes.
+- データ ソースにはデータ項目を少なくとも 1 つ含む必要があり、含まれない場合はマップでノードがレンダリングされません。
 
-- All data items must contain at least one data column (e.g. string) which should be mapped to the `LabelMemberPath` property.
+- すべてのデータ項目には、`LabelMemberPath` プロパティにマッピングする必要があるデータ列 (文字列など) を少なくとも 1 列含める必要があります。
 
-- All data items must contain at least one numeric data column which should be mapped using the `ValueMemberPath` property.
-- To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`.
+- すべてのデータ項目には、`ValueMemberPath` プロパティにマッピングする必要がある数値データ列を少なくとも 1 列含める必要があります。
+- データを整理されたタイルに分類するには、オプションで `ParentIdMemberPath` および `IdMemberpath` を使用できます。
 
-## $PlatformShort$ Treemap Configuration
+## $PlatformShort$ ツリーマップの構成
 
-In the following example, the treemap demonstrates the ability of changing it's algorithmic structure by modifying the `LayoutType` and `LayoutOrientation` properties.
+次の例では、ツリーマップは、`LayoutType` プロパティと `LayoutOrientation` プロパティを変更することにより、アルゴリズム構造を変更する機能を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout-configuration"
-           alt="$PlatformShort$ Treemap Layout Configuration"
+           alt="$PlatformShort$ ツリーマップ レイアウトの構成"
            github-src="charts/tree-map/layout-configuration">
 </code-view>
 
 <div class="divider--half"></div>
 
-<b>Layout Types:</b>
+<b>レイアウトのタイプ:</b>
 
-The Treemap chart displays the relative weight of data. It uses a variety of algorithms to help it determine how the layout of its data items should occur:
+ツリーマップ チャートは、データの相対的な重みを表示します。さまざまなアルゴリズムを使用して、データ項目のレイアウトをどのように行うかを決定します。
 
-- SliceAndDiced - layout algorithm aims to preserve the initial order at the expense of the aspect ratio.
+- SliceAndDice - レイアウトのアルゴリズムは、縦横比を代わりに最初の順番を維持するようにします。
 
-- Squarified - layout tiling algorithm has a better aspect ratio than the SliceAndDice and keeps a better order than Squarified.
+- Squarified - レイアウトのタイリング アルゴリズムでは、SliceAndDice より縦横比がより正確で、Squarified より適切に並べ替えされます。
 
-- Stripped - layout type algorithm obtains the best aspect ratio but the objects are arranged by size.
+- Stripped - タイプのアルゴリズムは、最適な縦横比を描画しますが、オブジェクトがサイズによって並べ替えられます。
 
-The Treemap allows you to choose the algorithm that is best for your requirements, defaulting to use the Squarified method. It also includes the ability to allow you to colorize nodes using two mechanisms:
+ツリーマップを使用すると、要件に最適なアルゴリズムを選択できます。デフォルトでは、Squarified メソッドが使用されます。また、次の 2 つのメカニズムを使用してノードに色を付けることができる機能も含まれています。
 
-- A group-based mechanism that colors items with like values
+- 項目を同じ値で色付けするグループ ベースのメカニズム
 
-- A scale-based mechanism similar to a map choropleth, which gradiates node colors based on their value.
+- 階級区分図に似たスケール ベースのメカニズムで、ノードの色をその値に基づいてグラデーションを適用します。
 
-<b>Layout Orientation:</b>
+<b>レイアウト方向:</b>
 
-`LayoutOrientation` property enables the user to set the direction in which the nodes of the hierarchy will be expanded.
+`LayoutOrientation` プロパティによってユーザーは階層のノードが展開される方向を設定できます。
 
-Note that the `LayoutOrientation` property works with the layout types SliceAndDice and Strip.
+`LayoutOrientation` プロパティがレイアウト タイプ SliceAndDice および Strip と動作することに注意してください。
 
-- `Horizontal` – the child nodes are going to be stacked horizontally(SliceAndDice).
+- `Horizontal` – 子ノードは水平に積み重ねられます (SliceAndDice)。
 
-- `Vertical` – the child nodes are going to be stacked vertically (SliceAndDice).
+- `Vertical` – 子ノードは垂直に積み重ねられます (SliceAndDice)。
 
-## $PlatformShort$ Treemap Styling
+## $PlatformShort$ ツリーマップのスタイル設定
 
-In the following example, the treemap demonstrates the ability of changing the look and feel of the nodes achieved by styling through the `NodeStylingScript` event.
+次の例では、ツリーマップは、`NodeStylingScript` イベントを介してスタイル設定することによって実現されるノードのルック アンド フィールを変更する機能を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
-           alt="$PlatformShort$ Treemap Styling"
+           alt="$PlatformShort$ ツリーマップのスタイル設定"
            github-src="charts/tree-map/styling">
 </code-view>
 
 <div class="divider--half"></div>
 
-## API Members
+## API メンバー
 - `XamTreemap`
 - `LayoutOrientation`
 - `LayoutType`

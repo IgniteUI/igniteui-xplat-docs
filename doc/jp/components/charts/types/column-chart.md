@@ -144,7 +144,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 
 ラジアル縦棒チャートは、ラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる長方形のコレクションを使用して描画されます。これは縦棒チャートと同じデータ プロットの概念を使用していますが、データ ポイントを横の線に並べるのではなく、データ ポイントを円でラップします。
 
-In this Radial Column chart sample, player stats are compared against different soccer skills.
+このラジアル縦棒チャートのサンプルでは、プレーヤー統計データがさまざまなサッカー スキルと比較されています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

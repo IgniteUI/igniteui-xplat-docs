@@ -11,7 +11,7 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 
 ## $PlatformShort$ 散布ポリゴン チャート
 
-散布図は、`XamDataChart` コンポーネントの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
+散布図は、`XamDataChart` コンポーネントの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図の塗りつぶし図形に使用できます。
 
 
 <code-view style="height: 600px"
@@ -24,7 +24,7 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 
 ## $PlatformShort$ 散布ポリライン チャート
 
-散布ポリライン チャートは、`XamDataChart` コンポーネントの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
+散布ポリライン チャートは、`XamDataChart` コンポーネントの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図のアウトラインに使用できます。また、大量の要素間の複雑な関係を視覚化することもできます。
 
 
 <code-view style="height: 600px"

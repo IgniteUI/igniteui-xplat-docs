@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート アニメーション
 
-Animations allows you to ease-in the series as it loads a new data source. The available animation differs depending on the type of series involved. For example, the column series animates by rising from the x-axis, a line series animates by drawing from the origin of y-axis.
+アニメーションを使用すると、新しいデータ ソースを読み込むときにシリーズをイーズインできます。利用可能なアニメーションは、シリーズのタイプに基づきます。たとえば、縦棒シリーズは  x 軸から上昇する描画アニメーションになります。折れ線シリーズは y 軸の原点から描画するアニメーションになります。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,11 +23,11 @@ Animations allows you to ease-in the series as it loads a new data source. The a
 
 | メンバー | 説明 |
 | ------------------|---------------------|
-|`IsTransitionInEnabled`| By default, transition in animations are disabled but you can enable them by setting this property.|
-| `TransitionInDuration` | Specifies how long, in milliseconds, a transition should take.|
-|`TransitionInMode` | Sets the desired transition type. Automatic selection of the transition type based on the series type is possible, too, by setting the property to `Auto` (default). The additional modes consist of multi-directional accordion or sweeping effects.|
+|`IsTransitionInEnabled`| デフォルトでは、アニメーションのトランジションは無効になっていますが、このプロパティを設定することで有効にできます。|
+| `TransitionInDuration` | トランジションにかかる時間をミリ秒単位で指定します。|
+|`TransitionInMode` | 目的のトランジション タイプを設定します。プロパティを `Auto` (デフォルト値) に設定し、シリーズ タイプに基づいてトランジション タイプを自動的に選択することもできます。追加のモードは、複数方向のアコーディオンまたはスイープ効果で構成されます。|
 
-The following code example demonstrates how to enable transition in animations and have the chart accordion in from the right.
+以下のコード例では、トランジションイン アニメーションを有効にし、チャートを右側からアコーディオン表示する方法を示します。
 
 ```razor
 <CategoryChart Height="500px" Width="700px"

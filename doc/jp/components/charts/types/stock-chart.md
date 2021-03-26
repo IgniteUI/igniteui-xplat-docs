@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ 株価/ファイナンシャル チャート | $ProductName$
-_description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
+_description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, インフラジスティックス
 mentionedTypes: ["XamFinancialChart"]
 _language: ja

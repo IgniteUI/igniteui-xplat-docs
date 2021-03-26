@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート マーカー
 
-There are many areas of the $ProductName$ charts that can be customized, such as the markers, chart titles and subtitles, and the chart types.
+$ProductName$ カテゴリのチャートには、マーカー、チャートのタイトルとサブタイトル、チャートの種類など、カスタマイズできる多くの領域があります。
 
 # $PlatformShort$ チャート マーカーの例
 
@@ -23,9 +23,9 @@ There are many areas of the $ProductName$ charts that can be customized, such as
 
 ## チャート マーカーの構成
 
-Markers are visual elements that display the values of data points in the chart's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
+マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
 
-The appearance of chart markers is managed through the `MarkerType`, `MarkerBrushes`, `MarkerOutlines` properties of the chart, as demonstrated in the following code example.
+チャート マーカーの外観は、次のコード例に示すように、カテゴリ チャートの `MarkerType`、`MarkerBrushes`、 `MarkerOutlines` プロパティを介して管理されます。
 
 ```razor
  <CategoryChart Height="500px" Width="700px"
