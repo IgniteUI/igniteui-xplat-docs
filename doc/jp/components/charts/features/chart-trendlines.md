@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート トレンドライン
 
-$PlatformShort$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `XamCategoryChart`、`XamFinancialChart`、および  `XamDataChart` でサポートされています。
+$PlatformShort$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` でサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

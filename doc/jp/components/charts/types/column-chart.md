@@ -116,6 +116,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
@@ -131,6 +132,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 範囲縦棒チャートは、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は範囲エリア チャートと同じです。
 
 この範囲縦棒チャートの例では、日付ごとの高温と低温の間の気象データの差異が示されています。
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

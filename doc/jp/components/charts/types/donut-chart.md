@@ -50,6 +50,7 @@ $PlatformShort$ ドーナツ チャートには、以下のサンプルに示す
 
 $PlatformShort$ ドーナツ チャートに複数の輪を表示して、各輪を異なるデータ 項目にバインドしたり、共通のデータ ソースを共有したりすることができます。これは、以下の季節ごとのデータ表示など、基礎となる共通のカテゴリを持つ層としてデータを表示する必要がある場合に役立ちます:
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"

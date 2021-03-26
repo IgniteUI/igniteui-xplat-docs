@@ -53,6 +53,7 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 
 この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"

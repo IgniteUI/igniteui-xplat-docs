@@ -353,7 +353,7 @@
     "status": ""
   },
   {
-    "name": "Composite Chart",
+    "name": "複合チャート",
     "href": "charts/types/composite-chart.md",
     "status": "NEW"
   },
@@ -443,7 +443,7 @@
   {
     "name": "チャート機能",
     "href": "charts/chart-features.md",
-    "status": "NEW",
+    "status": "",
     "items": [
         {
           "name": "軸グリッド線",
@@ -492,13 +492,13 @@
         },
         {
           "name": "チャート ナビゲーション",
-          "href": "charts/chart-features-navigation.md",
+          "href": "charts/features/chart-navigation.md",
           "status": ""
         },
         {
           "exclude": ["Blazor"],
           "name": "チャートの同期",
-          "href": "charts/chart-features-synchronization.md",
+          "href": "charts/features/chart-synchronization.md",
           "status": ""
         },
         {

@@ -41,6 +41,7 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"

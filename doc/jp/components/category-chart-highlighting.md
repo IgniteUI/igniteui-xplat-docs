@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | 強調表示 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$Product Name$ 強調表示機能について説明します。
+_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$ProductName$ 強調表示機能について説明します。
 _keywords: $PlatformShort$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, 強調表示レイヤー, 強調表示, インフラジスティックス
 mentionedTypes: ['CategoryChart']
 _language: ja

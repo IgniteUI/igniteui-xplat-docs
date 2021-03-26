@@ -102,7 +102,7 @@ $PlatformShort$ データ チャートのナビゲーションは、マウスま
 
 以下のコード スニペットは、チャートで UI ナビゲーションを有効にする方法を示しています。以下の例では、**Shift** キーを押しながらズーム、**Alt** キーを押しながらパンのみ可能です:
 
-Note, the same API also applies to `XamCategoryChart` and `XamFinancialChart` components.
+同じ API が `XamCategoryChart` および `XamFinancialChart` コンポーネントにも適用されることに注意してください。
 
 ```razor
 <DataChart Width="100%" Height="400px"
@@ -176,7 +176,7 @@ $PlatformShort$ データ チャートは、チャートでズームまたはパ
 
 - `WindowPositionHorizontal`: コンテンツ ビュー長方形の X 部分を表す数値は、チャートで表示されます。
 - `WindowPositionVertical`: 数値は、チャートに表示されるコンテンツビュー四角形のの Y 部分を表します。
-- `WindowRect`: 長方形を表す `IgRect` オブジェクトは、現在ビューにあるチャート部分を表します。例えば、`WindowRect` の "0, 0, 1, 1" はチャート全体になります。
+- `WindowRect`: 長方形を表す `Rect` オブジェクトは、現在ビューにあるチャート部分を表します。例えば、`WindowRect` の "0, 0, 1, 1" はチャート全体になります。
 - `WindowScaleHorizontal`: チャートで表示されるコンテンツ ビュー長方形の幅部分を表す数値。
 - `WindowScaleVertical`: チャートで表示されるコンテンツ ビュー長方形の高さ部分を表す数値。
 

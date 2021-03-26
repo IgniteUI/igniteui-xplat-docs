@@ -29,7 +29,7 @@ $PlatformShort$ データ チャート コンポーネントにはさまざま�
 `ScatterAreaSeries` には以下のデータ要件があります。
 - データソースはデータ項目の配列またはリストである必要があります。
 - データソースはデータ項目を少なくとも 1 つ含む必要があります。含まない場合はチャートに散布シェイプ シリーズを描画しません。
-- すべてのデータ項目には、` XMemberPath `、` YMemberPath `、そして `ColorMemberPath` プロパティにマップされる 3 つの数値データ列を含める必要があります。
+- すべてのデータ項目には、`XMemberPath `、` YMemberPath `、そして `ColorMemberPath` プロパティにマップされる 3 つの数値データ列を含める必要があります。
 
 上記データ要件を満たすデータソースとして [SamplePolarData](data-chart-data-sources-scatter.md) を使用できます。
 

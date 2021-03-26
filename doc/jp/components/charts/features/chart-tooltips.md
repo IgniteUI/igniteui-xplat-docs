@@ -8,7 +8,7 @@ _language: ja
 
 # $PlatformShort$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、 `XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

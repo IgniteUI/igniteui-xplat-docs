@@ -85,6 +85,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
@@ -96,6 +97,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 ## $PlatformShort$ 棒チャートのスタイル設定
 
 この例では、棒チャートは各棒の注釈値を使用して、CalloutLayer を使用した人気のあるオンライン小売ショッピング サイト間のパーセント比較を示しています。
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -113,6 +115,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
@@ -126,6 +129,7 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
 積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$  $PlatformShort$ データ チャート | データ可視化ツール | 同期化 | インフラジスティックス
-_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$Product Name$のグラフ同期機能について説明します。
+_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$ProductName$ のグラフ同期機能について説明します。
 _keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 同期化, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
@@ -20,7 +20,7 @@ $ ProductName$ データ チャートを使用すると、複数のチャート�
 
 ## モジュールの要件
 
-データチャートで同期を使用するする場合、インポートしてからインタラクティブ モードを登録します。以下のコードを使用できます:
+データ チャートで同期を使用するする場合、インポートしてからインタラクティブ モードを登録します。以下のコードを使用できます:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -52,7 +52,7 @@ IgcDataChartInteractivityModule.register();
 
 ## コード スニペット
 
-次のコードスニペットは、$ProductName$ データチャートのチャート コントロールのペアを同期する方法を示しています:
+次のコード スニペットは、$ProductName$ データ チャートのチャート コントロールのペアを同期する方法を示しています:
 
 ```razor
 <DataChart Width="600px" Height="400px" @ref="Chart1"

@@ -455,6 +455,7 @@ public tick(): void {
 
 円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
@@ -467,6 +468,7 @@ public tick(): void {
 
 ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
@@ -476,8 +478,9 @@ public tick(): void {
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート アニメーション](../features/chart-animations.md)
-- [チャート ツールチップ](../features/chart-tooltips.md)
+- [アニメーション](../features/chart-animations.md)
+- [ツールチップ](../features/chart-tooltips.md)
+
 
 ## API メンバー  
 - `LegendItemBadgeTemplate`

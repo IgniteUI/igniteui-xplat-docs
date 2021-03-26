@@ -13,7 +13,7 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 ## $PlatformShort$ 折れ線チャートの例
 
-次の例では、 折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (Twh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
+次の例では、折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -160,6 +160,7 @@ ModuleManager.register(
 
 以下の例に示すように、$PlatformShort$ 折れ線チャートは、2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
@@ -172,6 +173,7 @@ ModuleManager.register(
 ## 複数シリーズの $PlatformShort$ 折れ線チャート
 
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -188,6 +190,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
@@ -199,7 +202,8 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## $PlatformShort$ 折れ線チャートのスタイル設定
 
-チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、`ChartTitle` のサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
+チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、軸ラベルのサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
+
 
 
 <code-view style="height: 600px"
@@ -213,11 +217,11 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート注釈](../data-chart-axis-annotations.md)
+- [チャート注釈](../features/chart-annotations.md)
 - [チャート強調表示](../features/chart-highlighting.md)
 - [チャート マーカー](../features/chart-markers.md)
 - [チャート ツールチップ](../features/chart-tooltips.md)
-- [チャート トレンドライン](../features/chart-trendlines.md) 
+- [チャート トレンドライン](../features/chart-trendlines.md)
 
 <!-- ## Additional Resources
 

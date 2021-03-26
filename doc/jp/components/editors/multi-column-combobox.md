@@ -61,7 +61,7 @@ ModuleManager.register(
 
 <!-- React, WebComponents -->
 
-以下のコードスニペットでは、"countryNames" コレクションはカスタム オブジェクトで満たされた any[] です。
+以下のコード スニペットでは、"countryNames" コレクションはカスタム オブジェクトで満たされた any[] です。
 
 <!-- end:React, WebComponents -->
 

@@ -141,7 +141,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 <!-- Angular, React, WebComponents -->
 
-次のコードスニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
+次のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
 <!-- end: Angular, React, WebComponents -->
 
