@@ -12,7 +12,7 @@ Infragistics $PlatformShort$ Dock Manager コンポーネントは、ペイン�
 > [!NOTE]
 > <b>追加予定</b>
 
-Blazor ドック マネージャーは現在開発中で、間もなく完成します。Blazor ドック マネージャー コンポーネントの完成後、このトピックとサンプルが更新される予定です。この間にドック マネージャーコ ンポーネントが必要な場合、Blazor アプリケーションで Ignite UI for Web Components ドック マネージャーを使用できます。 
+Blazor ドック マネージャーは現在開発中で、間もなく完成します。Blazor ドック マネージャー コンポーネントの完成後、このトピックとサンプルが更新される予定です。この間にドック マネージャーコ ンポーネントが必要な場合、Blazor アプリケーションで Ignite UI for Web Components ドック マネージャーを使用できます。
 
 以下のブログ (英語) に記載されている手順に従ってください。
 
@@ -22,17 +22,12 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 ## $PlatformShort$ ドック マネージャーの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
            alt="$PlatformShort$ ドック マネージャーの例" 
            github-src="layouts/dock-manager/overview">
 </code-view>
-
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
 
 <div class="divider--half"></div>
 

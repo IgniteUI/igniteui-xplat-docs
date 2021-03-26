@@ -13,8 +13,8 @@ $PlatformShort$ Data Table / Data Grid には、フィルター処理される�
 ## $PlatformShort$ グリッド フィルターの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering" 
            alt="$PlatformShort$ グリッド フィルターの例" 
            github-src="grids/data-grid/column-filtering">
@@ -165,11 +165,11 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-          @ref="DataGridRef"          
+          @ref="DataGridRef"
           DataSource="DataSource" />
 
 @code {
-    
+
     public DataGrid DataGridRef;
 
     public string FilterText = "";
@@ -183,7 +183,7 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
         base.OnInitialized();
         DataGridModule.Register(IgniteUIBlazor);
         GridColumnOptionsModule.Register(IgniteUIBlazor);
-        GridColumnFilterOptionsModule.Register(IgniteUIBlazor);        
+        GridColumnFilterOptionsModule.Register(IgniteUIBlazor);
     }
 
     public void OnFilterTextChanged(ChangeEventArgs e)

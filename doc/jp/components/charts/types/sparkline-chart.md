@@ -15,10 +15,10 @@ $ProductName$ スパークライン コンポーネントは、軽量なチャ�
 ## $PlatformShort$ スパークラインの例
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
-           alt="$PlatformShort$ スパークラインの例" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           alt="$PlatformShort$ スパークラインの例"
            github-src="charts/sparkline/display-types">
 </code-view>
 
@@ -131,10 +131,9 @@ $ProductName$ スパークライン コンポーネントは、以下のスパ�
     this.chart1.dataSource = this.data1;
 ```
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  
-           github-src="charts/sparkline/display-types">
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -226,10 +225,9 @@ $ProductName$ スパークライン コンポーネントを使用すると、�
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  
-           github-src="charts/sparkline/markers">
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -287,10 +285,9 @@ DisplayNormalRangeInFront プロパティを設定することで、スパーク
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  
-           github-src="charts/sparkline/normal-range">
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -357,10 +354,9 @@ $ProductName$ スパークライン コンポーネントは、実際のスパ�
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  
-           github-src="charts/sparkline/trendlines">
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -395,10 +391,9 @@ $ProductName$ スパークライン コンポーネントは、不明な値を�
 ```
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  
-           github-src="charts/sparkline/unknown-values">
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -541,8 +536,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 <DataGrid Height="100%" Width="100%"
           RowHeight="90"
           AutoGenerateColumns="false"
-          DataSource="DataSource">    
-    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >                     
+          DataSource="DataSource">
+    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
         <Template>
             <RenderFragment>
                  <div style="width: 100%; height: 70px; background: transparent">
@@ -561,9 +556,18 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 ```
 
 
-<code-view style="height: 530px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  
-           github-src="charts/sparkline/grid">
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  >
 </code-view>
 
+
+## API メンバー
+- `DisplayNormalRangeInFront`
+- `DisplayType`
+- `LowMarkerBrush`
+- `LowMarkerSize`
+- `LowMarkerVisibility`
+- `NormalRangeFill`
+- `UnknownValuePlotting`
+- `XamSparkline`

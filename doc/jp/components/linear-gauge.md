@@ -9,17 +9,17 @@ _language: ja
 
 $PlatformShort$ Linear Gauge コンポーネントは、値とスケールまたは複数の範囲に対する比較を表示します。
 
-## $PlatformShort$ リニア ゲージの例
-
 $ProductName$ Linear Gauge コンポーネントは、データをリニア ゲージ形式で可視化するコントロールです。スケールおよび 1 つ以上の範囲と比較した値をシンプルで簡潔に表示することが可能で、スケール、針、目盛 (1 組)、ラベル (1 組) がサポートされます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
+
+## $PlatformShort$ リニア ゲージの例
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
-<code-view style="height: 155px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation" 
-           alt="$PlatformShort$ リニア ゲージの例" 
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
+           alt="$PlatformShort$ リニア ゲージの例"
            github-src="gauges/linear-gauge/animation">
 </code-view>
 
@@ -42,6 +42,7 @@ npm install --save {PackageGauges}
 ```razor
 LinearGaugeModule.Register(IgniteUIBlazor);
 ```
+
 
 ```ts
 // app.module.ts
@@ -140,11 +141,9 @@ ModuleManager.register(
 </igc-linear-gauge>
 ```
 
-<div class="divider--half"></div>
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="5"      
+        MinimumValue="5"
         MaximumValue="55"
         Value="43" >
     <LinearGraphRange StartValue="0"
@@ -153,13 +152,15 @@ ModuleManager.register(
     </LinearGraphRange>
      <LinearGraphRange StartValue="15"
             EndValue="30"
-            Brush="yellow">   
+            Brush="yellow">
     <LinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
     </LinearGraphRange>
 </LinearGauge>
 ```
+
+<div class="divider--half"></div>
 
 ## 針
 これは、コンポーネントで表示されるプライマリ メジャーでバーで可視化されます。あるいは以下で示す図形のほとんどすべてをカスタマイズすることもできます。
@@ -210,7 +211,7 @@ ModuleManager.register(
 ```
 
 ```html
- <igc-linear-gauge
+  <igc-linear-gauge
     height="80px" width="400px"
     minimum-value=0
     maximum-value=100
@@ -255,9 +256,9 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
            github-src="gauges/linear-gauge/needle">
 </code-view>
 
@@ -294,11 +295,11 @@ ModuleManager.register(
     <IgrLinearGraphRange
         startValue={0} endValue={50}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.25} outerEndExtent={0.4}/>
+        outerStartExtent={0.25} outerEndExtent={0.4} />
     <IgrLinearGraphRange
         startValue={50} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.4} outerEndExtent={0.55}/>
+        outerStartExtent={0.4} outerEndExtent={0.55} />
 </IgrLinearGauge>
 ```
 
@@ -346,9 +347,9 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
            github-src="gauges/linear-gauge/ranges">
 </code-view>
 
@@ -395,7 +396,7 @@ ModuleManager.register(
     minorTickBrush="DarkViolet"
     minorTickEndExtent={0.05}
     minorTickStartExtent={0.15}
-    minorTickStrokeThickness={1}/>
+    minorTickStrokeThickness={1} />
 ```
 
 ```html
@@ -434,12 +435,11 @@ ModuleManager.register(
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
 </LinearGauge>
-```   
+```
 
-
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
            github-src="gauges/linear-gauge/tickmarks">
 </code-view>
 
@@ -470,7 +470,7 @@ ModuleManager.register(
     labelsPreTerminal={0}
     labelsPostInitial={0}
     fontBrush="DodgerBlue"
-    font="11px Verdana"/>
+    font="11px Verdana" />
 ```
 
 ```html
@@ -486,7 +486,6 @@ ModuleManager.register(
     font="11px Verdana">
 </igc-linear-gauge>
 ```
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -501,9 +500,9 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
            github-src="gauges/linear-gauge/labels">
 </code-view>
 
@@ -532,7 +531,7 @@ ModuleManager.register(
     backingOutline="DodgerBlue"
     backingStrokeThickness={4}
     backingInnerExtent={0}
-    backingOuterExtent={1}/>
+    backingOuterExtent={1} />
 ```
 
 ```html
@@ -563,9 +562,9 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
            github-src="gauges/linear-gauge/backing">
 </code-view>
 
@@ -600,7 +599,7 @@ ModuleManager.register(
     scaleInnerExtent={0.05}
     scaleOuterExtent={0.65}
     scaleStartExtent={0.05}
-    scaleEndExtent={0.95}/>
+    scaleEndExtent={0.95} />
 ```
 
 ```html
@@ -618,7 +617,6 @@ ModuleManager.register(
     scale-end-extent=0.95>
 </igc-linear-gauge>
 ```
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -635,9 +633,9 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
            github-src="gauges/linear-gauge/scale">
 </code-view>
 
@@ -780,11 +778,11 @@ ModuleManager.register(
     <IgrLinearGraphRange
         startValue={0} endValue={50}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.25} outerEndExtent={0.4}/>
+        outerStartExtent={0.25} outerEndExtent={0.4} />
     <IgrLinearGraphRange
         startValue={50} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.4} outerEndExtent={0.55}/>
+        outerStartExtent={0.4} outerEndExtent={0.55} />
 </IgrLinearGauge>
 ```
 
@@ -863,8 +861,8 @@ ModuleManager.register(
 
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="0" 
-        MaximumValue="100" 
+        MinimumValue="0"
+        MaximumValue="100"
 
         LabelInterval="10"
         LabelExtent="0.025"

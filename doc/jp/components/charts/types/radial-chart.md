@@ -10,7 +10,9 @@ _language: ja
 ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです (カテゴリ シリーズが行うように水平方向の線に沿って拡大するのではなく)。カテゴリ シリーズと同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ シリーズの同じカテゴリ グループ化メカニズムをサポートします。
 
 
-<code-view style="height: 400px"
+## $PlatformShort$ ラジアル チャートの例
+
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
            alt="$PlatformShort$ ラジアル折れ線チャート" >
@@ -23,7 +25,7 @@ _language: ja
 ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
 
-<code-view style="height: 400px"
+<code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
            alt="$PlatformShort$ ラジアル エリア チャートのスタイル設定" >
@@ -38,3 +40,11 @@ _language: ja
 
 - [円チャート](pie-chart.md)
 - [ドーナツ チャート](donut-chart.md)
+
+## その他のリソース
+- [軸の注釈](../data-chart-axis-annotations.md)
+- [軸オプション](../features/chart-axis-options.md)
+- [軸グリッド線](../features/chart-axis-gridlines.md)
+- [チャート強調表示](../features/chart-highlighting.md)
+<!-- - - [ネットワーク チャート](network-chart.md) -->
+<!-- - - [極座標チャート](polar-chart.md) -->

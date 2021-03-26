@@ -27,7 +27,7 @@ $PlatformShort$ Financial Chart コンポーネントでは、チャート ナ�
 - `IsHorizontalZoomEnabled` - チャートがユーザー操作により水平方向にズーム可能かどうかを指定します。デフォルトでこのプロパティは true に設定されます。
 - `IsVerticalZoomEnabled` - チャートがユーザー操作により垂直方向にズーム可能かどうかを指定します。デフォルトでこのプロパティは false に設定されます。
 - `IsWindowSyncedToVisibleRange` - true に設定される場合、Y 軸は表示データ範囲に自動的にサイズ変更します。デフォルトでこのプロパティは false に設定されます。
-- `WindowRect` - `FinancialChart` のスクロール状態およびズーム状態を取得または設定するために使用できます。`WindowRect` は、 0 ~ 1 の間の座標およびサイズの Rectangle として表現されます。
+- `WindowRect` - `FinancialChart` のスクロール状態およびズーム状態を取得または設定するために使用できます。`WindowRect` は、0 ~ 1 の間の座標およびサイズの Rectangle として表現されます。
 
 ```html
  <igx-financial-chart

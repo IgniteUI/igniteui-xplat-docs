@@ -16,10 +16,10 @@ $PlatformShort$ Bullet Graph コンポーネントは、目盛り上でメジャ
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
-<code-view style="height: 155px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation" 
-           alt="$PlatformShort$ ブレット グラフの例" 
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
+           alt="$PlatformShort$ ブレット グラフの例"
            github-src="gauges/bullet-graph/animation">
 </code-view>
 
@@ -71,10 +71,12 @@ IgrBulletGraphModule.register();
 // Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
 // Bullet Graph Module
+import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
 
 // register the modules
 ModuleManager.register(
+    IgcBulletGraphCoreModule,
     IgcBulletGraphModule
 );
 ```
@@ -152,7 +154,7 @@ ModuleManager.register(
   </igc-bullet-graph>
 ```
 
-```razor   
+```razor
 <BulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
@@ -211,7 +213,7 @@ MaximumValue="55" TargetValue="43">
     targetValueOuterExtent={0.85}
     height="80px" width="400px"
     minimumValue={0} value={50}
-    maximumValue={100}/>
+    maximumValue={100} />
 ```
 
 ```html
@@ -257,9 +259,9 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
            github-src="gauges/bullet-graph/measures">
 </code-view>
 
@@ -301,15 +303,15 @@ MaximumValue="55" TargetValue="43">
     <IgrLinearGraphRange
         startValue={0} endValue={40}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
     <IgrLinearGraphRange
         startValue={40} endValue={70}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
     <IgrLinearGraphRange
         startValue={70} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
 </IgrBulletGraph>
 ```
 
@@ -344,36 +346,36 @@ MaximumValue="55" TargetValue="43">
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange 
-  StartValue="0" 
-  EndValue="40" 
-  InnerStartExtent="0.075" 
+<LinearGraphRange
+  StartValue="0"
+  EndValue="40"
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange 
-  StartValue="40" 
+<LinearGraphRange
+  StartValue="40"
   EndValue="70"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange StartValue="70" 
+<LinearGraphRange StartValue="70"
   EndValue="100"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
 </BulletGraph>
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
            github-src="gauges/bullet-graph/ranges">
 </code-view>
 
@@ -418,7 +420,7 @@ MaximumValue="55" TargetValue="43">
     minorTickBrush="DarkViolet"
     minorTickEndExtent={0.1}
     minorTickStartExtent={0.2}
-    minorTickStrokeThickness={1}/>
+    minorTickStrokeThickness={1} />
 ```
 
 ```html
@@ -461,9 +463,9 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
            github-src="gauges/bullet-graph/tickmarks">
 </code-view>
 
@@ -525,9 +527,9 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
            github-src="gauges/bullet-graph/labels">
 </code-view>
 
@@ -556,7 +558,7 @@ MaximumValue="55" TargetValue="43">
     backingOutline="DodgerBlue"
     backingStrokeThickness={4}
     backingInnerExtent={0}
-    backingOuterExtent={1}/>
+    backingOuterExtent={1} />
 ```
 
 ```html
@@ -585,9 +587,9 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
            github-src="gauges/bullet-graph/background">
 </code-view>
 
@@ -618,7 +620,7 @@ MaximumValue="55" TargetValue="43">
     scaleBackgroundOutline="DarkViolet"
     scaleBackgroundThickness={2}
     scaleStartExtent={0.05}
-    scaleEndExtent={0.95}/>
+    scaleEndExtent={0.95} />
 ```
 
 ```html
@@ -648,9 +650,9 @@ MaximumValue="55" TargetValue="43">
 </BulletGraph>
 ```
 
-<code-view style="height: 125px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"  
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
            github-src="gauges/bullet-graph/scale">
 </code-view>
 
@@ -786,15 +788,15 @@ MaximumValue="55" TargetValue="43">
     <IgrLinearGraphRange
         startValue={20} endValue={40}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
     <IgrLinearGraphRange
         startValue={40} endValue={60}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
     <IgrLinearGraphRange
         startValue={60} endValue={90}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
 </IgrBulletGraph>
 ```
 

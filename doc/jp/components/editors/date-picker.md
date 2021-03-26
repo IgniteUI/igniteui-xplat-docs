@@ -12,10 +12,10 @@ _language: ja
 ## $PlatformShort$ 日付選択の例
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview" 
-           alt="$PlatformShort$ 日付選択の例" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
+           alt="$PlatformShort$ 日付選択の例"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -64,14 +64,14 @@ $PlatformShort$ 日付選択エディター コンポーネントは、デフォ
 
 ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
 
-### Setting Initial Value
+### 初期値の設定
 
 以下のコードは、`DatePicker` コンポーネントの値を追加および設定する方法を示します。
 
 ```tsx
 public render(): JSX.Element {
-    return (                 
-        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />            
+    return (
+        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />
     );
 }
 
@@ -89,21 +89,21 @@ public onDatePickerRef(datePicker: IgrDatePicker){
 ```ts
 constructor() {
     let datePicker = document.getElementById("datePicker") as IgcDatePickerComponent;
-    this.datePicker.value = new Date(Date.now());        
+    this.datePicker.value = new Date(Date.now());
 }
 ```
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <DatePicker Height="50px" Width="220px" Value="@SelectedDate" />
 
-@code {    
+@code {
     public DateTime SelectedDate { get; set; }
 
     protected override void OnInitialized()
     {
         DatePickerModule.Register(IgniteUIBlazor);
-        this.SelectedDate = DateTime.Today;   
+        this.SelectedDate = DateTime.Today;
     }
 }
 ```
@@ -114,7 +114,7 @@ constructor() {
 
 ```tsx
 public render(): JSX.Element {
-    return (                 
+    return (
         <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
     );
 }
@@ -130,14 +130,14 @@ public render(): JSX.Element {
 
 <!-- end:WebComponents -->
 
-```razor                
+```razor
 <DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
 
-@code {    
-    
+@code {
+
     protected override void OnInitialized()
     {
-        DatePickerModule.Register(IgniteUIBlazor);        
+        DatePickerModule.Register(IgniteUIBlazor);
     }
 }
 ```

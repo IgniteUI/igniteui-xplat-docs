@@ -11,10 +11,10 @@ $PlatformShort$ ZoomSlider コントロールは、範囲対応コントロー�
 ## $PlatformShort$ ズーム スライダーの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview" 
-           alt="$PlatformShort$ ズーム スライダーの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
+           alt="$PlatformShort$ ズーム スライダーの例"
            github-src="charts/zoomslider/overview">
 </code-view>
 

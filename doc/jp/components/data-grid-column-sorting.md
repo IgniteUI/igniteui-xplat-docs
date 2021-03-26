@@ -12,9 +12,9 @@ $PlatformShort$ Data Table / Data Grid は、単一列、複数列、および�
 ## $PlatformShort$ グリッド ソートの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"
            alt="$PlatformShort$ グリッド ソートの例" 
            github-src="grids/data-grid/column-sorting">
 </code-view>

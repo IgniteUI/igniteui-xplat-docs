@@ -15,9 +15,9 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 ## $PlatformShort$ Grid 列ピン固定の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker"
            alt="$PlatformShort$ Grid 列ピン固定の例" 
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
@@ -236,7 +236,7 @@ onButtonUnPin () {
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-    DefaultColumnMinWidth="120"                      
+    DefaultColumnMinWidth="120"
     DataSource="@DataSource"
     AutoGenerateColumns="false"
     @ref="DataGridRef">
@@ -254,7 +254,7 @@ onButtonUnPin () {
     @*Columns Pinned Right*@
     <TextColumn Field="Street" Pinned="PinnedPositions.Right" />
     <TextColumn Field="City" Pinned="PinnedPositions.Right" />
-    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />                
+    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />
 </DataGrid>
 ```
 
@@ -262,14 +262,14 @@ onButtonUnPin () {
 
 列ピン固定 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。 このため、ツールバーの `columnPinning` プロパティを true に設定します。ツールバーは `Button` を表示し、クリックすると列ピン固定 UI を表示します。このボタンは、左側にピン固定された列の合計も表示します。ツールバーが作成されていない場合、`columnPinning` プロパティを有効にしても効果はなく、ボタンを非表示にします。
 
-`DataGridToolbar` は、`toolbarTitle` プロパティを使用してツールバーにタイトルを追加、 `columnPinningText` プロパティを設定して `Button` にテキストを配置、`columnPinningTitle` を設定して、タイトル ヘッダーを列非表示 UI に追加などの追加プロパティを提供します。
+`DataGridToolbar` は、`toolbarTitle` プロパティを使用してツールバーにタイトルを追加、`columnPinningText` プロパティを設定して `Button` にテキストを配置、`columnPinningTitle` を設定して、タイトル ヘッダーを列非表示 UI に追加などの追加プロパティを提供します。
 
 ## サンプル
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"
            github-src="grids/data-grid/column-pinning-toolbar">
 </code-view>
 
@@ -309,7 +309,7 @@ public onGridRef(grid: IgrDataGrid) {
         this.toolbar.targetGrid = this.grid;
 
         let productNameColumn = this.grid.actualColumns.item(0);
-        productNameColumn.pinned = PinnedPositions.Left; 
+        productNameColumn.pinned = PinnedPositions.Left;
     }
 }
 
@@ -347,7 +347,7 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
 <!--WebComponents-->
 ```ts
 import { IgcDataGrid } from 'igniteui-webcomponents-grids';
-import { IgcToolbar } from 'igniteui-webcomponents-grids';
+import { IgcDataGridToolbar } from 'igniteui-webcomponents-grids';
 
 private grid: IgcDataGridComponent;
 private toolbar: IgcToolbarComponent;
@@ -370,7 +370,7 @@ connectedCallback() {
     ColumnPinningText="Pinning"
     ColumnPinningTitle="Column Pinning" />
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef" 
+    @ref="DataGridRef"
     DataSource="DataSource" />
 
 @code {

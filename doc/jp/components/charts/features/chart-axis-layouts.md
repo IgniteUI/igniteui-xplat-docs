@@ -2,18 +2,100 @@
 title: $PlatformShort$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸レイアウト
 _keywords: $PlatformShort$ Axis, Layouts, Infragistics, $PlatformShort$ 軸, レイアウト, インフラジスティックス
-mentionedTypes: []
+mentionedTypes: [ 'XamCategoryChart', 'XamDataChart' ]
 _language: ja
 ---
 
 # $PlatformShort$ 軸レイアウト
 
-<!-- talk about axis, gap, overlap, multiple axis, vertical/horizontal
-and
+すべての $ProductName$ チャートには、位置、間隔、重複などの多くの軸レイアウト オプションを構成するオプションが含まれているほか、軸を共有して同じチャートに複数の軸を含めることができます。これらの機能は、以下の例で示されています。
 
-TODO combine
+> 注: 次の例は、`XamCategoryChart` および `XamFinancialChart` コントロールに適用されます。
 
-data-chart-axis-locations.md
-data-chart-axis-sharing.md
+## 軸間隔の例
 
--->
+$PlatformShort$ チャートの `XAxisGap` プロパティは、プロットされた系列の縦棒または棒間のスペースの量を決定します。このプロパティは、0.0 から 1.0 までの数値を受け入れます。値は、シリーズ間の利用可能なピクセル数からのギャップの相対幅を表します。
+
+このプロパティを 0 に設定すると、シリーズ間にギャップがレンダリングされず、1 に設定すると最大ギャップがレンダリングされます。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
+           alt="$PlatformShort$ 軸間隔の例"
+           github-src="charts/category-chart/axis-gap">
+</code-view>
+
+<div class="divider--half"></div>
+
+## 軸重複の例
+
+$PlatformShort$ チャートの `XAxisOverlap` プロパティを使用すると、プロットされた系列の描画された縦棒または棒の重複を設定できます。このプロパティは、-1.0 から 1.0 までの数値を受け入れます。値は、各シリーズ専用の使用可能なピクセル数からの相対的な重なりを表します。
+
+このプロパティを負の値 (-1.0 まで) に設定すると、カテゴリが互いから離れてしまい、それらの間にギャップが生じます。逆に、このプロパティを正の値 （最大 1.0） に設定すると、カテゴリが互いに重なります。値が 1 の場合、チャートはカテゴリを互いの上に表示します。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
+           alt="$PlatformShort$ 軸重複の例"
+           github-src="charts/category-chart/axis-overlap">
+</code-view>
+
+<div class="divider--half"></div>
+
+## 軸位置の例
+
+すべての軸に対して、チャートのプロット領域に関連して軸の位置を指定できます。$PlatformShort$ チャートの `XAxisLabelLocation` プロパティを使用すると、x 軸の線とそのラベルをプロット領域の上または下に配置できます。同様に、`YAxisLabelLocation` プロパティを使用して、プロット領域の左側または右側に y 軸を配置できます。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-locations"
+           alt="$PlatformShort$ 軸位置の例"
+           github-src="charts/category-chart/axis-locations">
+</code-view>
+
+## 軸の高度なシナリオ
+
+より高度な軸レイアウト シナリオでは、`XamDataChart` を使用して軸を共有したり、同じタイプの複数の軸を追加したり、特定の値で軸を交差させたりすることができます。次の例は、これらの機能の使用方法を示しています。
+
+## 軸共有の例
+
+$PlatformShort$ データ チャートの同じプロット領域に複数の軸を共有して追加できます。`TimeXAxis` を共有し、複数の `NumericYAxis` を追加して、さまざまな値 (株価や株取引量など) を持つ多くのデータ ソースをプロットするのが一般的なシナリオです。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
+           alt="$PlatformShort$ 軸共有の例"
+           github-src="charts/data-chart/axis-sharing">
+</code-view>
+
+<div class="divider--half"></div>
+
+## 軸交差の例
+
+$PlatformShort$ データ チャートでは、プロット領域内に軸を配置し、特定の値で交差させることもできます。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が 0,0 で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
+           alt="$PlatformShort$ 軸交差の例"
+           github-src="charts/data-chart/axis-crossing">
+</code-view>
+
+<div class="divider--half"></div
+
+
+## その他のリソース
+
+- [軸グリッド線](axis-gridlines.md)
+- [軸オプション](axis-options.md)
+
+
+## API メンバー
+- `CrossingAxis`
+- `CrossingValue`
+- `NumericYAxis`
+- `XAxisGap`
+- `XAxisLabelLocation`
+- `XAxisOverlap`
+- `XamDataChart`
+- `YAxisLabelLocation`

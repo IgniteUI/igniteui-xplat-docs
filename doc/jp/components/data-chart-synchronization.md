@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ データ チャート | データ可視化ツール | 同期化 | インフラジスティックス
-_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$Product Name$のグラフ同期機能について説明します。
+_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$ProductName$のグラフ同期機能について説明します。
 _keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 同期化, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja

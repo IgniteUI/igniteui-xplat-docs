@@ -12,10 +12,10 @@ $PlatformShort$ Spreadsheet コンポーネントを使用して `Spreadsheet` �
 ## $PlatformShort$ Spreadsheet チャート アダプターの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart" 
-           alt="$PlatformShort$ Spreadsheet チャート アダプターの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
+           alt="$PlatformShort$ Spreadsheet チャート アダプターの例"
            github-src="excel/spreadsheet/adapter-chart">
 </code-view>
 
