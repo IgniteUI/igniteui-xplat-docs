@@ -41,15 +41,14 @@ By default, the color of the crosshair lines is a lighter color than the series 
 
 The following example shows how to configure the crosshair layer but targeting a single series, setting the type to vertical and styling the brush color.  
 
-<!-- TODO Crosshair Layer Styling Example -->
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-crosshair-layer-styling"
+           alt="$PlatformShort$ Crosshair Layer Styling"
+           github-src="charts/data-chart/crosshair-layer-styling">
+</code-view>
 
-```razor
-<CategoryChart Height="100%" Width="100%"
-    DataSource="@DataSource"
-    CrosshairsDisplayMode="CrosshairsDisplayMode.Horizontal"
-    CrosshairsAnnotationEnabled="true"
-    CrosshairsSnapToData="true"/>
-```
+<div class="divider--half"></div>
 
 ```html
 <igx-category-chart
@@ -92,14 +91,14 @@ You can also customize this annotation by setting the following properties:
 
 The following example demonstrates how to style the final value layer annotation by setting the properties listed above.
 
-<!-- TODO Final Value Layer Styling Example -->
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-final-value-layer-styling"
+           alt="$PlatformShort$ Final Value Layer Styling"
+           github-src="charts/data-chart/final-value-layer-styling">
+</code-view>
 
-```razor
-<CategoryChart Height="100%" Width="100%"
-    DataSource="@DataSource"
-    FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation="AxisLabelsLocation.OutsideRight"/>
-```
+<div class="divider--half"></div>
 
 ```html
 <igx-category-chart
@@ -139,16 +138,14 @@ You can also customize this annotation by setting the following properties:
 
 The following example demonstrates how to style the callout layer annotations by setting the properties listed above:
 
-<!-- TODO Callout Layer Styling Example -->
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-callout-layer-styling"
+           alt="$PlatformShort$ Callout Layer Styling"
+           github-src="charts/data-chart/callout-layer-styling">
+</code-view>
 
-```razor
-<CategoryChart Height="100%" Width="100%"
-    DataSource="@DataSource"
-    CalloutsVisible="true"
-    CalloutsXMemberPath="index"
-    CalloutsYMemberPath="value"
-    CalloutsLabelMemberPath="info"/>
-```
+<div class="divider--half"></div>
 
 ```html
 <igx-category-chart
