@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Annotations | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Annotations
 _keywords: $PlatformShort$ Charts, Annotations, Infragistics
-mentionedTypes: ['XamCategoryChart']
+mentionedTypes: ['XamCategoryChart', 'CrosshairLayer', 'FinalValueLayer', 'CalloutLayer']
 ---
 
 # $PlatformShort$ Chart Annotations
@@ -26,7 +26,7 @@ Like this sample? Get access to our complete $PlatformShort$ toolkit and start b
 
 ## $PlatformShort$ Crosshair Layer
 
-The Crosshair Layer renders as crossing lines intersecting at the actual value of every series that they are configured to target with each series rendering a separate set of lines. 
+The `CrosshairLayer` renders as crossing lines intersecting at the actual value of every series that they are configured to target with each series rendering a separate set of lines. 
 
 Crosshair types include:
 - Horizontal
@@ -79,7 +79,8 @@ The following example shows how to configure the crosshair layer but targeting a
 ```
 
 ## $PlatformShort$ Final Value Layer
-The Final Value Layer of the category chart component provides a quick view along the axis of the ending value displayed in a series. 
+
+The `FinalValueLayer` of the category chart component provides a quick view along the axis of the ending value displayed in a series. 
 
 You can configure this annotation to target a specific series if you want to have multiple final value layers present with different configurations. This can be done be setting the `TargetSeries` property.  
 
@@ -122,7 +123,7 @@ The following example demonstrates how to style the final value layer annotation
 
 ## $PlatformShort$ Callout Layer
 
-The callout layer displays annotations from existing or new data on the chart control. The annotations appear next to the given data values in the data source.
+The `CalloutLayer` displays annotations from existing or new data on the chart control. The annotations appear next to the given data values in the data source.
 
 Use the callout annotations to display additional information, such as notes or specific details about data points, that you would like to point out to your users. 
 
