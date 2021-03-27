@@ -426,6 +426,11 @@
     "status": ""
   },
   {
+    "name": "Stacked Chart",
+    "href": "charts/types/stacked-chart.md",
+    "status": ""
+  },
+  {
     "name": "Step Chart",
     "href": "charts/types/step-chart.md",
     "status": ""
