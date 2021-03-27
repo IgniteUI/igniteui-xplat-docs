@@ -64,5 +64,5 @@ Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`
 
 ## Additional Resources
 
-- [Axis Layout](axis-layout.md)
-- [Axis Options](axis-options.md)
+- [Axis Layout](chart-axis-layout.md)
+- [Axis Options](chart-axis-options.md)

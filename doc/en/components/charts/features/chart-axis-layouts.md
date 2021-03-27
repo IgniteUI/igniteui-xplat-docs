@@ -81,8 +81,8 @@ In the the $PlatformShort$ Data Chart, you can also position axes inside of plot
 
 ## Additional Resources
 
-- [Axis Gridlines](axis-gridlines.md)
-- [Axis Options](axis-options.md)
+- [Axis Gridlines](chart-axis-gridlines.md)
+- [Axis Options](chart-axis-options.md)
 
 
 ## API Members
