@@ -143,5 +143,7 @@ In this example of a Stacked 100 Bar Chart, the Energy Product values are shown 
 - [Axis Options](../features/chart-axis-options.md)
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
+- [Column Chart](column-chart.md)
+- [Stacked Chart](stacked-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->

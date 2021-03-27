@@ -66,4 +66,5 @@ In this example, the Bubble Chart is comparing the total births and deaths betwe
 - [Highlighting](../features/chart-highlighting.md)
 - [Markers](../features/chart-markers.md)
 <!-- - [Network Chart](network-chart.md) -->
-
+- [Scatter Chart](scatter-chart.md)
+- [Shape Chart](shape-chart.md)

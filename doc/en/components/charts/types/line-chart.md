@@ -221,6 +221,7 @@ Once our chart is set up, we may want to make some further styling customization
 - [Markers](../features/chart-markers.md)
 - [Tooltips](../features/chart-tooltips.md)
 - [Trendlines](../features/chart-trendlines.md)
+- [Spline Chart](spline-chart.md)
 
 <!-- ## Additional Resources
 
@@ -235,4 +236,4 @@ Once our chart is set up, we may want to make some further styling customization
 - `ChartType`
 - `ItemsSource`
 - `Legend`
-- `XamCategoryChart` 
+- `XamCategoryChart`

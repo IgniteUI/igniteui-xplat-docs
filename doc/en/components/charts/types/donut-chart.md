@@ -59,6 +59,5 @@ It is possible to have a multiple ring display in the $PlatformShort$ Donut Char
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Animations](../features/chart-animations.md)
-- [Tooltips](../features/chart-tooltips.md)
+- [Pie Chart](pie-chart.md)
 

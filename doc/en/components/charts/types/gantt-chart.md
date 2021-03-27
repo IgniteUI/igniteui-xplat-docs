@@ -26,6 +26,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 - [Column Chart](column-chart.md)
 - [Composite Chart](composite-chart.md)
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
+- [Shape Chart](shape-chart.md)
 
 ## API Members
 - `CategoryYAxis`

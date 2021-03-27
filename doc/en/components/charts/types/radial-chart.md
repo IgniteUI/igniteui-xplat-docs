@@ -46,4 +46,4 @@ Refer to these topics for other types of radial charts:
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
 <!-- - [Network Chart](network-chart.md) -->
-<!-- - [Polar Chart](polar-chart.md) -->
+- [Polar Chart](polar-chart.md)

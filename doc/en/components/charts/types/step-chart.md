@@ -62,7 +62,8 @@ If you need a Step Chart with more features such as composite other series, you 
 - [Highlighting](../features/chart-highlighting.md)
 - [Markers](../features/chart-markers.md)
 - [Tooltips](../features/chart-tooltips.md)
-- [Trendlines](../features/chart-trendlines.md) -->
+- [Trendlines](../features/chart-trendlines.md)
+- [Line Chart](line-chart.md)
 
 
 <!-- ## Additional Resources -->

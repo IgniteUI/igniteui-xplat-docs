@@ -161,5 +161,8 @@ In this Radial Column chart sample, player stats are compared against different 
 - [Axis Options](../features/chart-axis-options.md)
 - [Axis Gridlines](../features/chart-axis-gridlines.md)
 - [Highlighting](../features/chart-highlighting.md)
+- [Bar Chart](bar-chart.md)
+- [Composite Chart](Composite-chart.md)
+- [Stacked Chart](stacked-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 <!-- - [Pyramid Chart](pyramid-chart.md) -->

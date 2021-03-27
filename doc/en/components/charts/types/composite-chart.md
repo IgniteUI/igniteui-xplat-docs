@@ -25,6 +25,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 - [Column Chart](column-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 - [Composite Chart](Composite-chart.md)
+- [Stacked Chart](stacked-chart.md)
 
 ## API Members
 - `CategoryXAxis`

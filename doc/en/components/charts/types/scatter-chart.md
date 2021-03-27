@@ -91,5 +91,7 @@ The Scatter Contour Chart draws colored contour lines based on a triangulation o
 - [Highlighting](../features/chart-highlighting.md)
 - [Markers](../features/chart-markers.md)
 <!-- - [Network Chart](network-chart.md) -->
+- [Bubble Chart](bubble-chart.md)
+- [Shape Chart](shape-chart.md)
 
 
