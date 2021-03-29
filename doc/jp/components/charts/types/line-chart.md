@@ -222,6 +222,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 - [チャート マーカー](../features/chart-markers.md)
 - [チャート ツールチップ](../features/chart-tooltips.md)
 - [チャート トレンドライン](../features/chart-trendlines.md)
+- [スプライン チャート](spline-chart.md)
 
 <!-- ## Additional Resources
 

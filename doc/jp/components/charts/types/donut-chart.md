@@ -60,6 +60,5 @@ $PlatformShort$ ドーナツ チャートに複数の輪を表示して、各輪
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート アニメーション](../features/chart-animations.md)
-- [チャート ツールチップ](../features/chart-tooltips.md)
+- [円チャート](pie-chart.md)
 

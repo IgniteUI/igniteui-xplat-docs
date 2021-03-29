@@ -55,8 +55,8 @@ $PlatformShort$ チャートでは、数値軸または時間軸の範囲の最�
 
 ## その他のリソース
 
-- [軸グリッド線](axis-gridlines.md)
-- [軸レイアウト](axis-layout.md)
+- [軸グリッド線](chart-axis-gridlines.md)
+- [軸レイアウト](chart-axis-layouts.md)
 
 ## API メンバー
 - `XAxisMaximumValue`

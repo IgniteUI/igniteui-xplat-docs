@@ -161,5 +161,8 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 - [軸オプション](../features/chart-axis-options.md)
 - [軸グリッド線](../features/chart-axis-gridlines.md)
 - [チャート強調表示](../features/chart-highlighting.md)
+- [棒チャート](bar-chart.md)
+- [複合チャート](Composite-chart.md)
+- [積層型チャート](stacked-chart.md)
 <!--- [ガント チャート](gantt-chart.md)
 - [ピラミッド チャート](pyramid-chart.md) -->

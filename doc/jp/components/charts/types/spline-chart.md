@@ -87,7 +87,8 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 - [チャート強調表示](../features/chart-highlighting.md)
 - [チャート マーカー](../features/chart-markers.md)
 - [チャート ツールチップ](../features/chart-tooltips.md)
-- [チャート トレンドライン](../features/chart-trendlines.md) 
+- [チャート トレンドライン](../features/chart-trendlines.md)
+- [折れ線チャート](line-chart.md) 
 
 <!-- ## Additional Resources -->
 <!-- TODO list topic links related to this topic -->

@@ -91,5 +91,7 @@ $PlatformShort$ データ チャートの高密度散布図機能を使用して
 - [チャート強調表示](../features/chart-highlighting.md)
 - [チャート マーカー](../features/chart-markers.md)
 <!-- - - [ネットワーク チャート](network-chart.md) -->
+- [バブル チャート](bubble-chart.md)
+- [シェープ チャート](shape-chart.md)
 
 

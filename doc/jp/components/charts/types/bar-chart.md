@@ -144,5 +144,7 @@ $PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下の�
 - [軸オプション](../features/chart-axis-options.md)
 - [軸グリッド線](../features/chart-axis-gridlines.md)
 - [チャート強調表示](../features/chart-highlighting.md)
+- [縦棒チャート](column-chart.md)
+- [積層型チャート](stacked-chart.md)
 <!-- - [ガント チャート](gantt-chart.md)
 - [ピラミッド チャート](pyramid-chart.md) -->

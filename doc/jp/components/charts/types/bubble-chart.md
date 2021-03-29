@@ -67,4 +67,5 @@ $PlatformShort$ バブル チャートは、複数の異なるデータのシリ
 - [チャート強調表示](../features/chart-highlighting.md)
 - [チャート マーカー](../features/chart-markers.md)
 <!-- - [ネットワーク チャート](network-chart.md) -->
-
+- [散布図](scatter-chart.md)
+- [シェープ チャート](shape-chart.md)

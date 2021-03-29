@@ -42,6 +42,7 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 - [チャート強調表示](../features/chart-highlighting.md)
 <!-- - [ガント チャート](gantt-chart.md) -->
 <!-- - [ネットワーク チャート](network-chart.md) -->
+- [散布図](scatter-chart.md)
 
 ## API メンバー
 - `ScatterPolygonSeries`

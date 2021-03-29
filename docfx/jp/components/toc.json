@@ -426,6 +426,11 @@
     "status": ""
   },
   {
+    "name": "積層型チャート",
+    "href": "charts/types/stacked-chart.md",
+    "status": ""
+  },
+  {
     "name": "ステップ チャート",
     "href": "charts/types/step-chart.md",
     "status": ""

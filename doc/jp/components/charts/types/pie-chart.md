@@ -478,15 +478,14 @@ public tick(): void {
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [アニメーション](../features/chart-animations.md)
-- [ツールチップ](../features/chart-tooltips.md)
+- [ドーナツ チャート](donut-chart.md)
 
 
-## API メンバー  
+## API メンバー
 - `LegendItemBadgeTemplate`
 - `LegendItemTemplate`
-- `LegendLabelMemberPath` 
-- `OthersCategoryThreshold` 
-- `OthersCategoryType`  
-- `SelectionMode` 
-- `XamPieChart` 
+- `LegendLabelMemberPath`
+- `OthersCategoryThreshold`
+- `OthersCategoryType`
+- `SelectionMode`
+- `XamPieChart`

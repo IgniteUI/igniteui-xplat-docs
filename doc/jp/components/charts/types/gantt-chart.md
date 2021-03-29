@@ -27,6 +27,7 @@ $PlatformShort$ ガント チャートは棒チャートの一種で、さまざ
 - [縦棒チャート](column-chart.md)
 - [複合チャート](composite-chart.md)
 <!-- - [ピラミッド チャート](pyramid-chart.md) -->
+- [シェープ チャート](shape-chart.md)
 
 ## API メンバー
 - `CategoryYAxis`
