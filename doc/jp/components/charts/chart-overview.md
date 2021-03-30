@@ -85,7 +85,7 @@ $PlatformShort$ ドーナツ チャート、またはドーナツ グラフは�
 
 ### $PlatformShort$ エリア チャート
 
-The $PlatformShort$ Area Chart is rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). Area Charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values. [エリア チャート](types/area-chart.md)の詳細をご覧ください。
+$PlatformShort$ エリア チャートは、直線セグメントで接続されたポイントのコレクションを使用して描画され、線の下の領域が塗りつぶされます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。エリア チャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。 [エリア チャート](types/area-chart.md)の詳細をご覧ください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -234,7 +234,7 @@ $PlatformShort$ スプライン チャート、またはスプライン グラ�
 
 ### ツリーマップ
 
-The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node's rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data. [ツリーマップ](../treemap-overview.md)の詳細をご覧ください。
+$ProductName$ ツリーマップ チャートは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。[ツリーマップ](../treemap-overview.md)の詳細をご覧ください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -265,37 +265,37 @@ The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as 
 
 $PlatformShort$チャート は、モジュール性のために設計されています。必要な機能のみが展開一部であるため、描画されたページで可能な限り最小のフットプリントを取得します。
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
 
 #### スマート データ バインディング
 
 チャート タイプの選択はお任せください。当社のスマート データ アダプタは、データに最適なチャート タイプを自動的に選択します。データ ソースを設定するだけです。
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
 
 #### トレンドライン
 
 線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要なすべてのトレンドラインをサポートします。
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
 #### インタラクティブなパニングとズーム
 
 シングル タッチまたはマルチタッチ、キーボード、ズーム バー、マウス ホイールを使用し、マウスで任意の長方形領域をドラッグ選択してズームインし、データ ポイントのクローズアップ、データ履歴のスクロール、またはデータ領域のパンを行います。
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
 
 #### マーカー、ツールチップ、およびテンプレート
 
 10 種類のマーカーのいずれかを使用してデータを強調表示するか、シンプルなツールチップまたは多軸および多系列のチャート ツールチップとカスタム チャート テンプレートを使用して、データにコンテキストと意味を追加します。
 
-<img class="img" src="../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
 #### 大量のデータ処理
 
 `changeDetection` 設定を変更して、チャートファイナンシャル チャートのパフォーマンスを最適化し、数百万のデータ ポイントを描画します。この設定を使用すると、変更を探して大量のチャートをスムーズに実行し続けるときに、$PlatformShort$ がデータ配列をどのように処理するかを制御できます。
 
-<img class="img" src="../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
+<img class="img" src="../../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
 ## その他の詳細
 

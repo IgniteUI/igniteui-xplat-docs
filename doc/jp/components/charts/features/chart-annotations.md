@@ -8,11 +8,11 @@ _language: ja
 
 # $PlatformShort$ チャート注釈
 
-The $PlatformShort$ chart's hover interactions and annotations are implemented through hover interaction layers, which are series that are added to the series collection. These layers are dependent on the cursor position. Each of these annotation layers provides a different hover interaction that may be used individually or combined with others to provide powerful hover interactions.
+$PlatformShort$ チャートのホバー操作と注釈は、シリーズ コレクションに追加されるシリーズであるホバー操作レイヤーを介して実装されます。これらのレイヤーはカーソルの位置に依存します。これらの注釈レイヤーはそれぞれ、個別に使用することも、他のレイヤーと組み合わせて強力なホバー操作を提供することもできる、異なるホバー操作を提供します。
 
 ## $PlatformShort$ 注釈の例
 
-The following example demonstrates the annotation layers that are available on the $PlatformShort$ chart. Click on the checkboxes to turn each layer on and off.
+次の例は、$PlatformShort$ チャートで使用できる注釈レイヤーを示しています。チェックボックスをクリックして、各レイヤーのオンとオフを切り替えます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -27,20 +27,20 @@ The following example demonstrates the annotation layers that are available on t
 
 ## $PlatformShort$ 十字線レイヤー
 
-The `CrosshairLayer` renders as crossing lines intersecting at the actual value of every series that they are configured to target with each series rendering a separate set of lines. 
+`CrosshairLayer` は、対象にするために構成される各シリーズの実際値で、異なるセットの線を描画する各シリーズと交差する十字線として描画されます。 
 
-Crosshair types include:
+十字線のタイプは次のとおりです:
 - Horizontal
 - Vertical
 - Both
 
-The chart's crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points. Annotations can also be enabled to display the crosshair's value along the axis. 
+チャートの十字線は、 `CrosshairsSnapToData` プロパティを true に設定することでデータ ポイントにスナップするように構成することもできます。そうしないと、十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。 
 
-You can configure the crosshair layer so that the layer will only display on one specific series, as by default they will target all series on the chart component. To achieve this, set the `TargetSeries` property.  
+デフォルトではチャート コンポーネントのすべてのシリーズをターゲットにするため、特定のシリーズを 1 つだけ表示するように十字線レイヤーを構成できます。これには、`TargetSeries` プロパティを設定します。 
 
-By default, the color of the crosshair lines is a lighter color than the series that it is interacting with. However, this default setting can be overridden so that you can select a color that will be used for the crosshair lines. This is done by setting the `Brush` property of the Crosshair Layer.
+デフォルトでは、十字線の色は交差するシリーズよりも軽い色になります。しかし、このデフォルト値は、十字線に使用される色を選択できるようにオーバーライドできます。これは、十字線レイヤーの `Brush` プロパティを設定することによって行われます。
 
-The following example shows how to configure the crosshair layer but targeting a single series, setting the type to vertical and styling the brush color.  
+次の例は、単一のシリーズをターゲットにして、タイプを垂直に設定し、ブラシの色をスタイリングすることによって、十字線レイヤーを構成する方法を示しています。  
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -83,15 +83,15 @@ The following example shows how to configure the crosshair layer but targeting a
 
 カテゴリ チャート コンポーネントの `FinalValueLayer` は、シリーズに表示された最終値の軸に沿ったクイック ビューをサポートします。
 
-You can configure this annotation to target a specific series if you want to have multiple final value layers present with different configurations. This can be done be setting the `TargetSeries` property.  
+複数の最終値レイヤーを異なる設定で使用したい場合は、この注釈を設定して特定のシリーズをターゲットにすることができます。これには `TargetSeries` プロパティを設定します。  
 
-You can also customize this annotation by setting the following properties:
+次のプロパティを設定して、この注釈をカスタマイズすることもできます:
 
-- `AxisAnnotationBackground`: This property is used to choose the brush for the annotation's background color. The default is to use the series brush.
-- `AxisAnnotationTextColor`: This property is used to choose the brush for the annotation's text color.
-- `AxisAnnotationOutline`: This property is used to choose the brush for the annotation's outline color.
+- `AxisAnnotationBackground`: このプロパティは注釈の背景色を選択するために使用されます。デフォルトはシリーズのブラシを使用します。
+- `AxisAnnotationTextColor`: このプロパティは注釈のテキストの色のブラシを選択するために使用されます。
+- `AxisAnnotationOutline`: このプロパティは注釈のアウトライン色を選択するために使用されます。
 
-The following example demonstrates how to style the final value layer annotation by setting the properties listed above.
+次の例は、上記のプロパティを設定して、最終的な値レイヤーの注釈のスタイルを設定する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -124,21 +124,21 @@ The following example demonstrates how to style the final value layer annotation
 
 ## $PlatformShort$ コールアウト レイヤー
 
-The `CalloutLayer` displays annotations from existing or new data on the chart control. The annotations appear next to the given data values in the data source.
+`CalloutLayer` はチャート コントロール既存または新しいデータの注釈を表示します。注釈は、データ ソース内の指定されたデータ値の横に表示されます。
 
-Use the callout annotations to display additional information, such as notes or specific details about data points, that you would like to point out to your users. 
+コールアウト注釈を使用して、メモやデータ ポイントに関する特定の詳細など、ユーザーに追加情報を表示します。 
 
-You can configure the callouts to target a specific series if you want to have multiple callout layers present with different configurations. This can be done by setting the `TargetSeries` property.
+複数のコールアウト レイヤーを異なる設定で使用する場合は、コールアウトを設定して特定のシリーズをターゲットにできます。これには `TargetSeries` プロパティを設定します。
 
-You can also customize this annotation by setting the following properties:
+次のプロパティを設定して、この注釈をカスタマイズすることもできます:
 
-- `CalloutLeaderBrush`: This property is used to choose the brush for the leader lines for the callouts for the layer.
-- `CalloutOutline`: This property is used to choose the brush for the annotation's outline color.
-- `CalloutBackground`: This property is used to choose the brush for the annotation's background color. The default is to use the series brush.
-- `CalloutTextColor`: This property is used to choose the brush for the annotation's text color.
-- `CalloutStrokeThickness`: This property is used to choose the thickness for the callout backing.
+- `CalloutLeaderBrush`: このプロパティは、レイヤーのコールアウトのリーダー線のブラシを選択するために使用されます。
+- `CalloutOutline`: このプロパティは注釈のアウトライン色を選択するために使用されます。
+- `CalloutBackground`: このプロパティは注釈の背景色を選択するために使用されます。デフォルトはシリーズのブラシを使用します。
+- `CalloutTextColor`: このプロパティは注釈のテキストの色のブラシを選択するために使用されます。
+- `CalloutStrokeThickness`: このプロパティは、コールアウト バッキングの厚さを選択するために使用されます。
 
-The following example demonstrates how to style the callout layer annotations by setting the properties listed above:
+次の例は、上記のプロパティを設定して、コールアウト レイヤーの注釈のスタイルを設定する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

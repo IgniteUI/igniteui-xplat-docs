@@ -8,11 +8,11 @@ _language: ja
 
 # $PlatformShort$ 軸グリッド線
 
-すべての $ProductName$ チャートには、軸線の外観、および x 軸と y 軸に描画される主/副グリッド線と目盛りの頻度を変更する機能が組み込まれています。These features are demonstrated in the examples given below.
+すべての $ProductName$ チャートには、軸線の外観、および x 軸と y 軸に描画される主/副グリッド線と目盛りの頻度を変更する機能が組み込まれています。これらの機能は、以下の例で示されています。
 
 ## 軸グリッド線の例
 
-Axis major gridlines are long lines that extend horizontally (y-axis) or vertically (x-axis) from locations of axis labels and they render through plot area of the chart. Axis minor gridlines are lines that render between axis major gridlines. This example shows how to configure axis gridline.
+軸の主グリッド線は、軸ラベルの位置から水平 (y 軸) または垂直 (x 軸) に伸びる長い線であり、チャートのプロット領域を介して描画されます。軸の副グリッド線は、軸の主グリッド線の間に描画される線です。この例は、軸グリッド線を構成する方法を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,7 +25,7 @@ Axis major gridlines are long lines that extend horizontally (y-axis) or vertica
 
 ## 軸グリッド線のプロパティ
 
-The following table lists all properties of axis gridline that you can configure.
+次の表に、構成できる軸グリッド線のすべてのプロパティを示します。
 
 軸ビジュアル           | タイプ    | プロパティ名
 -----------------------|---------|-----------------------
@@ -36,12 +36,12 @@ The following table lists all properties of axis gridline that you can configure
 主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`
 副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`
 
-> NOTE The `XAxisInterval`and `YAxisInterval` properties control frequency of axis major gridlines as well as frequency of axis tickmarks.
+> 注: `XAxisInterval` プロパティと `YAxisInterval` プロパティは、軸の主グリッド線と軸の目盛りの頻度を制御します。
 
 
 ## 軸目盛りの例
 
-Axis tickmarks are short lines that extend from axis major gridlines towards axis labels. This example shows how to configure axis tickmark.
+軸の目盛りは、軸の主グリッド線から軸ラベルに向かって伸びる短い線です。この例は、軸の目盛りを設定する方法を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
