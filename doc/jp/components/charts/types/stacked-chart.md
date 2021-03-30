@@ -5,156 +5,156 @@ _keywords: $PlatformShort$ Charts, Stacked Chart, Infragistics, $PlatformShort$ 
 mentionedTypes: ["XamDataChart"]
 _language: ja
 ---
-# $PlatformShort$ Stacked Chart
+# $PlatformShort$ 積層型チャート
 
-The $ProductName$ Stacked Chart is special group of charts that render multiple values of data items as stacked area/polygons, bars, columns, lines, or splines. Standard Stacked Charts render actual values of data items while Stacked 100% Charts render values as percentage of total values.
+$ProductName$ 積層型チャートは、データ項目の複数の値を積層エリア/ポリゴン、棒、縦棒、折れ線、またはスプラインとして描画する特別なチャートのグループです。標準の積層型チャートはデータ項目の実際の値を描画しますが、積層型 100% チャートは値を合計値のパーセンテージとして描画します。
 
 
-# $PlatformShort$ Stacked Types
+# $PlatformShort$ 積層型のタイプ
 
-This example show all types of $ProductName$ Stacked Chart that you can render in the `XamDataChart` control.
+この例は、`xamDataChart` コントロールで描画できるすべてのタイプの $ProductName$ 積層型チャートを表示します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-series"
-           alt="$PlatformShort$ Stacked Chart Types" >
+           alt="$PlatformShort$ 積層型チャートのタイプ" >
 </code-view>
 
 <div class="divider--half"></div>
 
-The following sections demonstrate individual types of $ProductName$ Stacked Charts.
+以下のセクションは $ProductName$ 積層型チャートの個々のタイプを示します。
 
 
-## $PlatformShort$ Stacked Bar Chart
+## $PlatformShort$ 積層型棒チャート
 
-A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value.
+積層型棒チャート、または積層型棒グラフは、チャートの横棒にさまざまなサイズのフラグメントを表示することにより、さまざまなカテゴリのデータの構成を比較するために使用されるカテゴリ チャートの一種です。各棒または積層フラグメントの長さは、その全体的な値に比例します。
 
-The Stacked Bar Chart differs from the Bar Chart in that the data points representing your data are stacked next to each other horizontally to visually group your data. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the X-Axis, and all negative values are grouped on the negative side of the X-Axis.
+積層型棒チャートは、データを表すデータ ポイントが水平方向に隣り合って積み重ねられ、データを視覚的にグループ化するという点で、棒チャートとは異なります。各積層は正の値と負の値の両方を含みます。すべての正の値は X 軸の正の側にグループ化され、すべての負の値は X 軸の負の側にグループ化されます。
 
-In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart).
+積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           alt="$PlatformShort$ Stacked Bar Chart" >
+           alt="$PlatformShort$ 積層型 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100 Bar Chart
+## $PlatformShort$ 積層型 100 棒チャート
 
-The $PlatformShort$ Stacked 100 Bar Chart is identical to the $PlatformShort$ stacked bar chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
+$PlatformShort$ 積層型 100 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
-In this example of a Stacked 100 Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars.
+積層型 100 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           alt="$PlatformShort$ Stacked 100 Bar Chart" >
+           alt="$PlatformShort$ 積層型 100 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked Column Chart
+## $PlatformShort$ 積層型縦棒チャート
 
-The Stacked Column Chart is identical to the Column Chart in all aspects, except the series are represented on top of one another rather than to the side. The Stacked Column Chart is used to show comparing results between series. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the Y-Axis, and all negative values are grouped on the negative side of the Y-Axis. The Stacked Column Chart uses the same concepts of data plotting as the Stacked Bar Chart but data points are stacked along vertical line (Y-Axis) rather than along horizontal line (X-Axis).
+積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは積層型棒チャートと同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
-           alt="$PlatformShort$ Stacked Column Chart" >
+           alt="$PlatformShort$ 積層型縦棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100 Column Chart
+## $PlatformShort$ 積層型 100 縦棒チャート
 
-The Stacked 100 Column Chart is identical to the Stacked Column Chart in all aspects except in their treatment of the values on Y-Axis. Instead of presenting a direct representation of the data, the Stacked 100 Column Chart presents the data in terms of percent of the sum of all values in a data point.
+積層型 100 縦棒チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型縦棒チャートと同じです。データを直接表現するのでなく、積層型 100 縦棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
-The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           alt="$PlatformShort$ Stacked 100 Column Chart" >
+           alt="$PlatformShort$ 積層型 100 縦棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked Area Chart
+## $PlatformShort$ 積層型エリア チャート
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as Area Charts, with the only difference being that visually, the shaded areas are stacked on top of each other.
+積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
-           alt="$PlatformShort$ Stacked Area Chart" >
+           alt="$PlatformShort$ 積層型エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked 100 Area Chart
+## $PlatformShort$ 積層型 100 エリア チャート
 
-Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
+このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合積層されたすべての要素を均等に表すことをお勧めします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
-           alt="$PlatformShort$ Stacked 100 Area Chart" >
+           alt="$PlatformShort$ 積層型 100 エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked Spline Area Chart
+## $PlatformShort$ 積層型スプライン エリア チャート
 
-Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as area charts, with the only difference being that the visually shaded areas are stacked on top of each other.
+積層型スプライン エリア チャートは、曲線スプライン セグメントで接続されたポイントのコレクションを使用して描画され、曲線スプラインの下の領域が塗りつぶされ、互いに重ねて表示されます。積層型スプライン エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積み重なっていることです。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
-           alt="$PlatformShort$ Stacked Spline Area Chart" >
+           alt="$PlatformShort$ 積層型 スプライン エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked 100 Spline Area Chart
+## $PlatformShort$ 積層型 100 スプライン エリア チャート
 
-The Stacked 100 Spline Area Chart is identical to the Stacked Spline Area Chart in all aspects except for the treatment of the values on the y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Area Chart presents the data in terms of a percent of the sum of all values in a particular data point. Sometimes the chart represents part of a whole being changed over time. For example, a country's energy consumption related to the sources from which it is produced. In such cases, representing all stacked elements equally may be a better idea.
+積層型 100 スプライン エリア チャートは、y 軸の値の処理を除いて、すべての点で積層型スプラインエリア チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン エリア チャートは、特定のデータ ポイント内のすべての値の合計の割合でデータを表します。チャートは、時間の経過とともに変化する全体の一部を表す場合があります。たとえば、生産元に関連する国のエネルギー消費量。このような場合、積層されたすべての要素を均等に表すことをお勧めします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
-           alt="$PlatformShort$ Stacked 100 Spline Area Chart" >
+           alt="$PlatformShort$ 積層型 100 スプライン エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked Spline Chart
+## $PlatformShort$ 積層型スプライン チャート
 
-The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
+以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           alt="$PlatformShort$ Stacked Spline Chart" >
+           alt="$PlatformShort$ 積層型 スプライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked 100 Spline Chart
+## $PlatformShort$ 積層型 100 スプライン チャート
 
-The Stacked 100 Spline Chart is identical to the Stacked Spline Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+積層型 100 スプライン チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型スプライン チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           alt="$PlatformShort$ Stacked 100 Spline Chart" >
+           alt="$PlatformShort$ 積層型 100 スプライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>
