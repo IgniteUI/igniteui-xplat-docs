@@ -106,7 +106,7 @@ The Bar Chart can be styled, and allows for the ability to use [annotation value
 
 ## $PlatformShort$ Bar Chart Advanced Scenarios
 
-For more advanced types of area charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+For more advanced types of bar charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
 
 ## $PlatformShort$ Stacked Bar Chart
 

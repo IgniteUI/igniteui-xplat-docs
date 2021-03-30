@@ -313,36 +313,14 @@ If you are considering any other $PlatformShort$ Charts on the market, here are 
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, React, WebComponents -->
 
 - We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter. 
-- The chart is optimized per platform. We have a native Angular chart, a React chart, a jQuery / JavaScript chart, a WPF chart, a Windows Forms chart, a Web Components chart, WinUI chart, UNO chart, UWP chart and a Xamarin chart, all supporting the same API and same features on every platform. 
+- Our chart components are optimized on all platforms including Angular, Blazor, jQuery / JavaScript, React, UNO, UWP, WPF, Windows Forms, WebComponents, WinUI, and Xamarin. They support the same API and same features on every platform.
 - Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code. 
 - We test against everyone else's performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
 - We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
 - We have many more UI controls and components in $PlatformShort$ besides the Charts. We offer a complete $PlatformShort$ solution to build your applications! 
 
-<!-- end: Blazor -->
-
-<!-- React -->
-
-- We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter. 
-- The chart is optimized per platform. We have a native Angular chart, a Blazor chart, a jQuery / JavaScript chart, a WPF chart, a Windows Forms chart, a Web Components chart, WinUI chart, UNO chart, UWP chart and a Xamarin chart, all supporting the same API and same features on every platform. 
-- Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code. 
-- We test against everyone else's performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
-- We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
-- We have many more UI controls and components in $PlatformShort$ besides the Charts. We offer a complete React solution to build modern web, mobile, and PWAs! 
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-- We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter. 
-- The chart is optimized per platform. We have a native Angular chart, a Blazor chart, a jQuery / JavaScript chart, a WPF chart, a Windows Forms chart, a React chart, WinUI chart, UNO chart, UWP chart and a Xamarin chart, all supporting the same API and same features on every platform. 
-- Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code. 
-- We test against everyone else's performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
-- We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
-- We have many more UI controls and components in $PlatformShort$ besides the Charts. We offer a complete $PlatformShort$ solution to build modern web, mobile, and PWAs! 
-
-<!-- end: WebComponents -->
+<!-- end: Blazor, React, WebComponents -->
 
