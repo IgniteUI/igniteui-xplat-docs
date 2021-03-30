@@ -68,6 +68,10 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Column Chart Advanced Scenarios
+
+For more advanced types of area charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+
 ## $PlatformShort$ Styling Column Chart
 
 The $PlatformShort$ Column Chart has many options for styling and modification of the visual appearance. For example, the sample below demonstrates using a [crossing value](../features/axis-layouts.md) for your X-Axis, as well as using [marker templates](../features/chart-markers.md) to display the value of an item above (or below) its corresponding column.

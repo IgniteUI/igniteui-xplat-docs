@@ -104,6 +104,10 @@ The Bar Chart can be styled, and allows for the ability to use [annotation value
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Bar Chart Advanced Scenarios
+
+For more advanced types of area charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+
 ## $PlatformShort$ Stacked Bar Chart
 
 A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value.
