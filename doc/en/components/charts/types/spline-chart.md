@@ -2,11 +2,13 @@
 title: $PlatformShort$ Spline Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Spline Chart
 _keywords: $PlatformShort$ Charts, Spline Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "StackedSplineSeries", "Stacked100SplineSeries", "ChartType"]
 ---
 # $PlatformShort$ Spline Chart
 
-$PlatformShort$ Spline Chart belongs to a group of Category Series and it is rendered using a collection of points connected by smooth curves of spline.  Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The Spline Chart is identical to the Line Chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
+$PlatformShort$ Spline Chart belongs to a group of Category Series and it is rendered using a collection of points connected by smooth curves of spline.  Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The Spline Chart is identical to the [Line Chart](line-chart.md) in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
+
+You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `Spline` value, as shown in the example below.
 
 ## $PlatformShort$ Spline Chart Example
 
@@ -21,7 +23,6 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 ## $PlatformShort$ Spline Chart with Single Series
 
 The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -61,6 +62,8 @@ If you need a Spline Chart with more features such as composite other series, yo
 
 The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
+You can create this type of chart in `XamDataChart` control by binding your data to `StackedSplineSeries`, as shown in the example below.
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -74,6 +77,7 @@ The Stacked Spline Chart is often used to show the change of value over time suc
 
 The Stacked 100 Spline Chart is identical to the Stacked Spline Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
+You can create this type of chart in `XamDataChart` control by binding your data to `Stacked100SplineSeries`, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -84,10 +88,15 @@ The Stacked 100 Spline Chart is identical to the Stacked Spline Chart in all asp
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Annotations](../features/chart-annotations.md)
-- [Highlighting](../features/chart-highlighting.md)
-- [Markers](../features/chart-markers.md)
-- [Tooltips](../features/chart-tooltips.md)
-- [Trendlines](../features/chart-trendlines.md)
 - [Line Chart](line-chart.md)
 
+
+## API Members
+
+The following table lists API members mentioned in the above sections:
+
+Chart Type       | Control Name   | API Members
+-----------------|----------------|------------
+Area             | `XamCategoryChart` | `ChartType` = `Spline`
+Stacked Spline   | `XamDataChart`     | `StackedSplineSeries`
+Stacked 100 Spline | `XamDataChart`     | `Stacked100SplineSeries`
