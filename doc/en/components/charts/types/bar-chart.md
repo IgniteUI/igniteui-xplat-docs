@@ -10,6 +10,8 @@ $PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the 
 
 ## $PlatformShort$ Bar Chart Example
 
+In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
+
 You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
@@ -80,7 +82,7 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
 
 ## $PlatformShort$ Bar Chart with Multiple Series
 
-The Bar Chart is able to render multiple columns per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular move franchises. You can create this type of chart in the `XamDataChart` control by binding your data to multiple `BarSeries`, as shown in the example below:
+The Bar Chart is able to render multiple bars per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular movie franchises. You can create this type of chart in the `XamDataChart` control by binding your data to multiple `BarSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -146,11 +148,9 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name | API Members
------------------|--------------|------------
-Bar              |`XamDataChart`|`BarSeries`
-Stacked Bar      |`XamDataChart`|`StackedBarSeries`
-Stacked 100% Bar |`XamDataChart`|`Stacked100BarSeries`
-Callout Layer    |`XamDataChart`|`CalloutLayer`
-
-
+Chart Type       | Control Name   | API Members
+-----------------|----------------|------------
+Bar              | `XamDataChart` | `BarSeries`
+Stacked Bar      | `XamDataChart` | `StackedBarSeries`
+Stacked 100% Bar | `XamDataChart` | `Stacked100BarSeries`
+Callout Layer    | `XamDataChart` | `CalloutLayer`
