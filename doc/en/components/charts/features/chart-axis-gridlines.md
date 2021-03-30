@@ -26,7 +26,7 @@ This example shows how configure the axis gridline to display major and minor gr
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Axis Gridlines
+## $PlatformShort$ Axis Gridlines Properties
 
 Setting the axis major interval property specifies how often major gridlines and axis labels are rendered on an axis. Similarly, the axis minor interval property specifies how frequent minor gridlines are rendered on an axis. These properties must be set to a value greater than 0.
 
@@ -34,22 +34,20 @@ In order to display minor gridlines that correspond to minor interval, you need 
 
 You can customize how the gridlines are displayed in your $PlatformShort$ chart by setting the following properties:
 
-- `MajorStrokeColor`: This property sets the color of axis major gridlines.
-- `MinorStrokeColor`: This property sets the color of axis minor gridlines.
-- `MajorStrokeThickness`: This property sets the thickness in pixels of the axis major gridlines.
-- `MinorStrokeThickness`: This property sets the thickness in pixels of the axis minor gridlines.
-- `MajorInterval`: This value provides adequate spacing for axis labels and major gridlines, if used. Note that the interval for axis labels will also be set by this value, displaying one label at the point on the axis associated with the interval. 
+Axis Visuals           | Type    | Property Names                                               | Description
+-----------------------|---------|--------------------------------------------------------------|----------------
+Major Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | This property sets the color of axis major gridlines.
+Minor Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | This property sets the color of axis minor gridlines.
+Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | This property sets the thickness in pixels of the axis major gridlines.
+Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | This property sets the thickness in pixels of the axis minor gridlines.
+Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`                         | This value provides adequate spacing for axis labels, if used.
+Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | This value provides adequate spacing for minor gridlines, if used.
 
-On category axes, this value is represented as index between first item and last category item. Generally, this value should equal to 10-20% of total numbers of category items so that all axis labels fit on axis so that they are not clipped by other axis labels. 
+Regarding the Major and Minor Interval in the table above, it is important to note that the major interval for axis labels will also be set by this value, displaying one label at the point on the axis associated with the interval. The minor interval gridlines are always rendered between the major gridlines, and as such, the minor interval properties should always be set to something much smaller (usually 2-5 times smaller) than the value of the major Interval properties.
 
-On numeric axes, this value is represented as double between axis minimum value and axis maximum value. By default, numeric axes will automatically calculate and find a nice and round interval based on axis minimum values and maximum value. 
+On category axes, the intervals are represented as an index between first item and last category item. Generally, this value should equal to 10-20% of total numbers of category items for the major Interval so that all axis labels fit on axis so that they are not clipped by other axis labels. For minor intervals, this is represented as a fraction of the major interval properties. This value generally should equal between 0.25 and 0.5.
 
-On date time axes, this value is represented as time span between axis minimum value and axis maximum value. 
-- `MinorInterval`: This value provides adequate spacing for minor gridlines, which are always rendered between major gridlines. As result, a value of MinorInterval property should always be much smaller (usually 2-5 time smaller) than the value of major Interval property of an axis. 
-
-On category axes, this value is represented as fraction of the MajorInterval property. Generally, this value should equal to between 0.25 and 0.5 
-
-On numeric axes, this value is represented as double between axis minimum value and axis maximum value. By default, numeric axes will not automatically calculate minor interval based on axis minimum values and maximum value. 
+On numeric axes, the interval values are represented as a double between axis minimum value and axis maximum value. By default, numeric axes will automatically calculate and find a nice and round interval based on axis minimum values and maximum value. 
 
 On date time axes, this value is represented as time span between axis minimum value and axis maximum value. 
 
@@ -72,9 +70,11 @@ Tick marks are always displayed at the axis stroke line and point to the directi
 
 You can customize how the axis tickmarks are displayed in your Blazor chat by setting the following properties: 
 
-- `TickLength`: This property sets the length of the axis tick marks.
-- `TickStrokeThickness`: This property sets the thickness of the axis tick marks.
-- `TickStroke`: This property sets the color of the tickmarks.
+Axis Visuals           | Type    | Property Names                                             | Description
+-----------------------|---------|------------------------------------------------------------|-------------------------
+Tick Stroke Color      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | These properties set the color of the tickmarks.
+Tick Stroke Thickness  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | These properties set the thickness of the axis tick marks.
+Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`                   | These properties set the length of the axis tick marks.
 
 The following example demonstrates how to customize the tickmarks by setting the properties above:
 
