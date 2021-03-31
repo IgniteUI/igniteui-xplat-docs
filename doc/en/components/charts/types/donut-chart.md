@@ -8,9 +8,9 @@ mentionedTypes: ["XamDoughnutChart", "DoughnutChart"]
 
 $PlatformShort$ Donut Chart is similar to the [Pie Chart](pie-chart.md), proportionally illustrating the occurrences of a variable. The donut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
 
-You can create this type of chart with the `XamDoughnutChart` control by binding your data as shown in the example below.
-
 ## $PlatformShort$ Donut Chart Example
+
+You can create this type of chart with the `XamDoughnutChart` control by binding your data as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
