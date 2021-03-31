@@ -102,5 +102,7 @@ The following example shows a Sin and Cos wave represented by a [Scatter Spline 
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
+- `XamCategoryChart`
+- `XamFinancialChart`
 - `XamDataChart`
 - `YAxisLabelLocation`
