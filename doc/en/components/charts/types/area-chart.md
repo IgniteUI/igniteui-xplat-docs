@@ -2,13 +2,17 @@
 title: $PlatformShort$ Area Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Area Chart
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", 'ChartType']
 ---
 # $PlatformShort$ Area Chart
 
-The $ProductName$ Area Chart is based on a line or spline series. Therefore, it is often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
+The $ProductName$ Area Charts are based on [Line Charts](line-chart.md) or [Spline Charts](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
-An Area Chart is rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). Area Charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+Area Charts are rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+
+## $PlatformShort$ Area Chart Example
+
+You can create an Area Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -18,11 +22,9 @@ An Area Chart is rendered using a collection of points connected by straight lin
 
 <div class="divider--half"></div>
 
-An Area Chart is similar to a Line Chart in that data points are plotted and connected by straight line segments, however they differ because with an Area Chart, the area between the X-Axis and the line is filled in.
+Area Charts are similar to [Line Charts](line-chart.md) in that data points are plotted and connected by straight line segments, however they differ because with Area Charts, the area between the X-Axis and the line is filled in.
 
-The AreaSeries is identical to the SplineAreaSeries in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
-
-There are several use cases for an Area Chart. When you:
+There are several use cases for Area Charts. When you:
 
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
 - Need to compare the trends of your data over time.
@@ -31,13 +33,13 @@ There are several use cases for an Area Chart. When you:
 - Need to show data trends for one or more categories for comparative analysis.
 - Need to visualize details time-series data.
 
-Area Chart best practices:
+Area Charts have the following best practices:
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
 - Order time-series data from left to right.
 - Use transparent colors to ensure that data that is plotted behind another series is not blocked.
 
-Do not use an Area Chart when:
+Do not use Area Charts when:
 
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
 - Time-series data has similar values (data over the same period). This makes overlapped shaded areas impossible to differentiate.
@@ -52,7 +54,7 @@ Data Structure:
 
 ## $PlatformShort$ Area Chart with Single Series
 
-$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
+$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `Area` value, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -65,7 +67,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-Similarly to how you can show multiple series with Line and Spline Charts, you may also combine multiple series in an Area Chart.
+Similarly to how you can show multiple [Line Charts](line-chart.md) and [Spline Charts](spline-chart.md), you may also combine multiple Area Charts in the same component. This is accomplished by binding multiple data source to `ItemsSource` property of the `XamCategoryChart` control.
 
 
 <code-view style="height: 600px"
@@ -76,10 +78,9 @@ Similarly to how you can show multiple series with Line and Spline Chart
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Styling Area Chart
+## $PlatformShort$ Area Chart Styling
 
 Area charts often have semi-transparent fill for their areas, thicker lines and slightly larger markers than usual. Below is an example showing how you can style the Area Chart from earlier accordingly. 
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -91,7 +92,7 @@ Area charts often have semi-transparent fill for their areas, thicker li
 
 ## $PlatformShort$ Step Area Chart
 
-The Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items.
+The $ProductName$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `StepArea` value, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -102,9 +103,13 @@ The Step Area Chart belongs to a group of category charts and it is rendered usi
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Advanced Scenarios
+
+For more advanced types of area charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+
 ## $PlatformShort$ Range Area Chart
 
-Sometimes instead of showing the area you may want to show the area for a range between two values over time.
+The $ProductName$ Range Area Chart allows you show the area as a range between two values over time. You can create this type of chart in `XamDataChart` control by binding your data to `RangeAreaSeries`, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -116,8 +121,7 @@ Sometimes instead of showing the area you may want to show the area for a range 
 
 ## $PlatformShort$ Stacked Area Chart
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as Area Charts, with the only difference being that visually, the shaded areas are stacked on top of each other.
-
+The $ProductName$ Stacked Area Chars is rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as Area Charts, with the only difference being that visually, the shaded areas are stacked on top of each other. You can create this type of chart in `XamDataChart` control by binding your data to `StackedAreaSeries`, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -127,22 +131,22 @@ Stacked Area Charts are rendered using a collection of points connected by line 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100 Area Chart
+## $PlatformShort$ Stacked 100% Area Chart
 
-Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
+The $ProductName$ Stacked 100% Area Chart allows you represent your data as part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea. You can create this type of chart in `XamDataChart` control by binding your data to `Stacked100AreaSeries`, as shown in the example below.
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
-           alt="$PlatformShort$ Stacked 100 Area Chart" >
+           alt="$PlatformShort$ Stacked 100% Area Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Stacked Spline Area Chart
 
-Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as area charts, with the only difference being that the visually shaded areas are stacked on top of each other.
+The $ProductName$ Stacked Spline Area Chart is rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Chart follows all of the same requirements as area charts, with the only difference being that the visually shaded areas are stacked on top of each other. You can create this type of chart in `XamDataChart` control by binding your data to `StackedSplineAreaSeries`, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -154,22 +158,22 @@ Stacked Spline Area Charts are rendered using a collection of points connected b
 <div class="divider--half"></div>
 
 
-## $PlatformShort$ Stacked 100 Spline Area Chart
+## $PlatformShort$ Stacked 100% Spline Area Chart
 
-The Stacked 100 Spline Area Chart is identical to the Stacked Spline Area Chart in all aspects except for the treatment of the values on the y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Area Chart presents the data in terms of a percent of the sum of all values in a particular data point. Sometimes the chart represents part of a whole being changed over time. For example, a country's energy consumption related to the sources from which it is produced. In such cases, representing all stacked elements equally may be a better idea.
+The $ProductName$ Stacked 100% Spline Area Chart is identical to the Stacked Spline Area Chart in all aspects except for the treatment of the values on the y-axis. Instead of presenting a direct representation of the data, the Stacked 100% Spline Area Chart presents the data in terms of a percent of the sum of all values in a particular data point. Sometimes the chart represents part of a whole being changed over time. For example, a country's energy consumption related to the sources from which it is produced. In such cases, representing all stacked elements equally may be a better idea. You can create this type of chart in `XamDataChart` control by binding your data to `Stacked100SplineAreaSeries`, as shown in the example below.
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
-           alt="$PlatformShort$ Stacked 100 Spline Area Chart" >
+           alt="$PlatformShort$ Stacked 100% Spline Area Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Radial Area Chart
 
-The Radial Area Chart belongs to a group of radial charts and has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the Area Chart, but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The $ProductName$ Radial Area Chart belongs to a group of [Radial Charts](radial-chart.md) and has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the Area Chart, but wraps the data points around a circular axis rather than stretching them along a horizontal line. You can create this type of chart in `XamDataChart` control by binding your data to `RadialAreaSeries`, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -182,7 +186,7 @@ The Radial Area Chart belongs to a group of radial charts and has a shape of a f
 
 ## $PlatformShort$ Polar Area Chart
 
-Polar Area Charts belong to a group of polar charts and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a straight line and then filling the area represented by the connected points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line.
+The $ProductName$ Polar Area Chart belongs to a group of [Polar Charts](polar-chart.md) and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a straight line and then filling the area represented by the connected points. The Polar Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line. You can create this type of chart in `XamDataChart` control by binding your data to `PolarAreaSeries`, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -195,8 +199,7 @@ Polar Area Charts belong to a group of polar charts and have a shape of a filled
 
 ## $PlatformShort$ Polar Spline Area Chart
 
-Polar Spline Area Charts belong to a group of polar charts and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a curved spline and then filling the area represented by the connected points. The Polar Spline Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line.
-
+The $ProductName$ Polar Spline Area Chart belongs to a group of [Polar Charts](polar-chart.md) and have a shape of a filled polygon, where vertices or corners are located at the polar (angle/radius) coordinates of data points and are connected by a curved spline and then filling the area represented by the connected points. The Polar Spline Area Chart uses the same concepts of data plotting as the Scatter Marker Chart, but instead wraps the points around a circle and fills in the area that is drawn, rather than stretching the points and area filled along a horizontal line. You can create this type of chart in `XamDataChart` control by binding your data to `PolarSplineAreaSeries`, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -207,7 +210,30 @@ Polar Spline Area Charts belong to a group of polar charts and have a shape of a
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](../features/chart-axis-options.md)
-- [Axis Options](../features/chart-axis-options.md)
-- [Axis Gridlines](../features/chart-axis-gridlines.md)
-- [Highlighting](../features/chart-highlighting.md)
+
+You can find more information about related chart types in these topics:
+
+- [Bar Charts](bar-chart.md)
+- [Column Charts](column-chart.md)
+- [Polar Charts](polar-chart.md)
+- [Radial Charts](radial-chart.md)
+- [Spline Charts](spline-chart.md)
+- [Stacked Charts](stacked-chart.md)
+
+
+## API Members
+
+The following table lists API members mentioned in above sections:
+
+Chart Type               | Control Name       | API Members
+-------------------------|--------------------|-----------------------
+Area                     | `XamCategoryChart` | `ChartType` = `Area`
+Step Area                | `XamCategoryChart` | `ChartType` = `StepArea`
+Range Area               | `XamDataChart`     | `RangeAreaSeries`
+Radial Area              | `XamDataChart`     | `RadialAreaSeries`
+Polar Area               | `XamDataChart`     | `PolarAreaSeries`
+Polar Spline Area        | `XamDataChart`     | `PolarSplineAreaSeries`
+Stacked Area             | `XamDataChart`     | `StackedAreaSeries`
+Stacked Spline Area      | `XamDataChart`     | `StackedSplineAreaSeries`
+Stacked 100% Area        | `XamDataChart`     | `Stacked100AreaSeries`
+Stacked 100% Spline Area | `XamDataChart`     | `Stacked100SplineAreaSeries`

@@ -300,11 +300,14 @@ Optimize the performance of your financial chart to render millions of data poin
 
 If you are considering any other $PlatformShort$ Charts on the market, here are a few things to think about:
 
-- We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter.
-- The chart is optimized per platform. We have a native Angular chart, a React chart, a jQuery / JavaScript chart, a WPF chart, a Windows Forms chart, and a Xamarin chart, all supporting the same API and same features on every platform.
-- Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code.
+- We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter. 
+- Our chart components are optimized on all platforms including Angular, Blazor, jQuery / JavaScript, React, UNO, UWP, WPF, Windows Forms, WebComponents, WinUI, and Xamarin. They support the same API and same features on every platform.
+- Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code. 
+- We test against everyone else's performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming. 
+- We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are! 
+- We have many more UI controls and components in $PlatformShort$ besides the Charts. We offer a complete $PlatformShort$ solution to build your applications! 
+<!-- Angular -->
 - Ignite UI for Angular is built on Angular for the Angular developer, with zero 3rd party dependencies. We are 100% optimized for Angular.
-- We test against everyone elses performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming.
-- We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are!
-- We have 50+ more UI controls and components in Angular besides the Charts. We offer a complete Angular solution to build modern web, mobile, and PWAs!
 - We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular components.
+<!-- end: Angular>
+
