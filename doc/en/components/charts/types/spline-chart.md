@@ -2,13 +2,11 @@
 title: $PlatformShort$ Spline Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Spline Chart
 _keywords: $PlatformShort$ Charts, Spline Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "StackedSplineSeries", "Stacked100SplineSeries", "ChartType"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
 ---
 # $PlatformShort$ Spline Chart
 
 $PlatformShort$ Spline Chart belongs to a group of Category Series and it is rendered using a collection of points connected by smooth curves of spline.  Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The Spline Chart is identical to the [Line Chart](line-chart.md) in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
-
-You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `Spline` value, as shown in the example below.
 
 ## $PlatformShort$ Spline Chart Example
 
@@ -24,6 +22,8 @@ You can create this type of chart in `XamCategoryChart` control by bi
 
 The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
@@ -36,6 +36,7 @@ The Spline Chart is often used to show the change of value over time such as the
 
 Since the Spline Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the chart will automatically update to fit the additional data.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -49,6 +50,7 @@ Since the Spline Chart allows you to combine multiple series and compare or see 
 
 If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -58,12 +60,15 @@ If you need a Spline Chart with more features such as composite other series, yo
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Spline Chart Advanced Scenarios
+
+For more advanced types of spline charts, use `XamDataChart` control to create other types of spline charts as the following sections demonstrate them.
+
 ## $PlatformShort$ Stacked Spline Chart
 
 The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
-You can create this type of chart in `XamDataChart` control by binding your data to `StackedSplineSeries`, as shown in the example below.
-
+You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedSplineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -73,11 +78,11 @@ You can create this type of chart in `XamDataChart` control by bindin
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100 Spline Chart
+## $PlatformShort$ Stacked 100% Spline Chart
 
-The Stacked 100 Spline Chart is identical to the Stacked Spline Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100 Spline Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+The Stacked 100% Spline Chart is identical to the Stacked Spline Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100% Spline Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
-You can create this type of chart in `XamDataChart` control by binding your data to `Stacked100SplineSeries`, as shown in the example below.
+You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100SplineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -88,15 +93,21 @@ You can create this type of chart in `XamDataChart` control by bindin
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Line Chart](line-chart.md)
 
+You can find more information about related chart types in these topics:
+
+- [Area Charts](area-chart.md)
+- [Line Charts](spline-chart.md)
+- [Polar Charts](polar-chart.md)
+- [Radial Charts](radial-chart.md)
+- [Stacked Charts](stacked-chart.md)
 
 ## API Members
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Area             | `XamCategoryChart` | `ChartType` = `Spline`
-Stacked Spline   | `XamDataChart`     | `StackedSplineSeries`
-Stacked 100 Spline | `XamDataChart`     | `Stacked100SplineSeries`
+Chart Type          | Control Name       | API Members
+--------------------|--------------------|--------------------------
+Spline              | `XamCategoryChart` | `ChartType` = `Spline`
+Stacked Spline      | `XamDataChart`     | `StackedSplineSeries`
+Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries`

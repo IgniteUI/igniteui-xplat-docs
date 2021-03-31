@@ -70,7 +70,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 ## $PlatformShort$ Column Chart Advanced Scenarios
 
-For more advanced types of column charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+For more advanced types of column charts, use `XamDataChart` control to create other types of column charts as the following sections demonstrate them.
 
 ## $PlatformShort$ Styling Column Chart
 

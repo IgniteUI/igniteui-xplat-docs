@@ -221,7 +221,7 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 ## $PlatformShort$ Line Chart Advanced Scenarios
 
-For more advanced types of line charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+For more advanced types of line charts, use `XamDataChart` control to create other types of line charts as the following sections demonstrate them.
 
 ## $PlatformShort$ Stacked Line Chart
 
