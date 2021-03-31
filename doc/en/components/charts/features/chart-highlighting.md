@@ -49,4 +49,6 @@ The following table lists API members mentioned in the above sections:
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
 - `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`
 
