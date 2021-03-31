@@ -2,11 +2,26 @@
 title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
-mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
+mentionedTypes: ['XamPieChart', 'XamDataChart', 'SliceSelectionMode','PieSliceOthersContext',
+'Legend',
+'LegendItemTemplate',
+'LegendItemBadgeTemplate',
+'LegendLabelMemberPath',
+'OthersCategoryThreshold',
+'OthersCategoryType',
+'SelectedItems',
+'SelectionMode',
+'RadiusFactor',
+'StartAngle',
+
+
+ ]
 ---
 # $PlatformShort$ Pie Chart
 
 $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
+
+You can create this type of chart with the `XamPieChart` control by binding your data as shown in the example below.
 
 ## $PlatformShort$ Pie Chart Example
 
@@ -464,7 +479,7 @@ Once our pie chart is created, we may want to make some further styling customiz
 
 ## $PlatformShort$ Radial Pie Chart
 
-The Radial Pie Chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
+The [Radial Pie Chart](radial-chart.md) belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 
 <code-view style="height: 600px"
@@ -477,13 +492,12 @@ The Radial Pie Chart belongs to a group of radial charts and uses pie slices tha
 
 ## Additional Resources
 - [Donut Chart](donut-chart.md)
+- [Radial Chart](radial-chart.md)
 
+## Additional Resources
+The following table lists API members mentioned in the above sections:
 
-## API Members
-- `LegendItemBadgeTemplate`
-- `LegendItemTemplate`
-- `LegendLabelMemberPath`
-- `OthersCategoryThreshold`
-- `OthersCategoryType`
-- `SelectionMode`
-- `XamPieChart`
+Chart Type       | Control Name   | API Members
+-----------------|----------------|------------
+Pie Chart      | `XamPieChart`     | `PieChart`
+Radial Pie Chart | `XamDataChart` | `RadialPieSeries`
