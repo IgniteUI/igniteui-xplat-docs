@@ -2,20 +2,7 @@
 title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
-mentionedTypes: ['XamPieChart', 'XamDataChart', 'SliceSelectionMode','PieSliceOthersContext',
-'Legend',
-'LegendItemTemplate',
-'LegendItemBadgeTemplate',
-'LegendLabelMemberPath',
-'OthersCategoryThreshold',
-'OthersCategoryType',
-'SelectedItems',
-'SelectionMode',
-'RadiusFactor',
-'StartAngle',
-
-
- ]
+mentionedTypes: ['XamPieChart', 'XamDataChart', 'SliceSelectionMode', 'OthersCategoryType', 'SelectionMode']
 ---
 # $PlatformShort$ Pie Chart
 
