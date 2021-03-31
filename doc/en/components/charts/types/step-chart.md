@@ -67,7 +67,7 @@ The following table lists API members mentioned in the above sections:
 
 Chart Type                  | Control Name   | API Members
 ----------------------------|----------------|------------------------
-Step Chart                  | `XamCategoryChart` | `ChartType` = `StepLine`
+Step                        | `XamCategoryChart` | `ChartType` = `StepLine`
 
 
 
