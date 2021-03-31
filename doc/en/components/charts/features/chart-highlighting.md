@@ -9,6 +9,10 @@ mentionedTypes: ['XamCategoryChart']
 
 All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components and they have the same API for using the highlighting feature.
 
+## $PlatformShort$ Chart Highlighting Example
+
+The following example demonstrates the different highlighting options that are available on the $PlatformShort$ chart. Click on the checkboxes to enable the different highlight types.
+
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
@@ -29,40 +33,22 @@ The $ProductName$ `XamCategoryChart` can enable three types of highlighting when
 
 3. Category Highlighting targets all category axes in the chart. They draw a shape that illuminates the area of the axis closest to the pointer position. This is enabled by setting the `IsCategoryHighlightingEnabled` property to true.
 
-```razor
-<CategoryChart Height="500px" Width="700px" DataSource="@DataSource"
-    IsSeriesHighlightingEnabled="true"
-    IsCategoryHighlightingEnabled="false"
-    IsItemHighlightingEnabled="false">
-</CategoryChart>
-```
+## Additional Resources
 
-```html
-<igx-category-chart [dataSource]="data" width="800px" height="500px"
-    isSeriesHighlightingEnabled="true"
-    isCategoryHighlightingEnabled="false"
-    isItemHighlightingEnabled="false">
-</igx-category-chart>
-```
+You can find more information about related chart features in these topics:
 
-```tsx
- <IgrCategoryChart dataSource={this.state.data}
-    isSeriesHighlightingEnabled={true}
-    isCategoryHighlightingEnabled={false}
-    isItemHighlightingEnabled={false} />
-```
-
-```html
-<igc-category-chart id="chart" width="800px" height="500px"
-    is-series-highlighting-enabled="true"
-    is-category-highlighting-enabled="false"
-    is-item-highlighting-enabled="false" >
-</igc-category-chart>
-```
+- [Chart Animations](chart-animations.md)
+- [Chart Annotations](chart-annotations.md)
+- [Chart Tooltips](chart-tooltips.md)
 
 ## API Members
+
+The following table lists API members mentioned in the above sections:
+
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
 - `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`
 
