@@ -95,8 +95,10 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 You can find more information about related chart types in these topics:
 
 - [Area Charts](area-chart.md)
+- [Bubble Charts](bubble-chart.md)
 - [Line Charts](line-chart.md)
 - [Spline Charts](spline-chart.md)
+- [Shape Charts](shape-chart.md)
 
 ## API Members
 
