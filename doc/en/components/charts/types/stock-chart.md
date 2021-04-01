@@ -301,3 +301,10 @@ The following table lists API members mentioned in the above sections:
 Chart Type       | Control Name   | API Members
 -----------------|----------------|------------
 Stock Chart      | `XamFinancialChart`     | `FinancialChart`
+
+## API Members
+- `ChartType`
+- `CrosshairsSnapToData`
+- `IndicatorTypes`
+- `ZoomSliderType`
+- `FinancialChart`
