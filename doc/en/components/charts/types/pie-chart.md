@@ -2,7 +2,7 @@
 title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized component that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
-mentionedTypes: ['XamPieChart', 'XamDataChart', 'SliceSelectionMode', 'OthersCategoryType', 'SelectionMode']
+mentionedTypes: ['XamPieChart', 'XamDataChart']
 ---
 # $PlatformShort$ Pie Chart
 
@@ -466,7 +466,7 @@ Once our pie chart is created, we may want to make some further styling customiz
 
 ## $PlatformShort$ Radial Pie Chart
 
-The [Radial Pie Chart](radial-chart.md) belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
+The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 
 <code-view style="height: 600px"
@@ -479,12 +479,21 @@ The [Radial Pie Chart](radial-chart.md) belongs to a group of radial charts and 
 
 ## Additional Resources
 - [Donut Chart](donut-chart.md)
+- [Polar Chart](polar-chart.md)
 - [Radial Chart](radial-chart.md)
 
-## Additional Resources
+## API Members
 The following table lists API members mentioned in the above sections:
+
+- `LegendItemBadgeTemplate`
+- `LegendItemTemplate`
+- `LegendLabelMemberPath`
+- `OthersCategoryThreshold`
+- `OthersCategoryType`
+- `SelectionMode`
 
 Chart Type       | Control Name   | API Members
 -----------------|----------------|------------
 Pie Chart      | `XamPieChart`     | `PieChart`
 Radial Pie Chart | `XamDataChart` | `RadialPieSeries`
+

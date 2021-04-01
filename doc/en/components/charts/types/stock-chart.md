@@ -2,7 +2,7 @@
 title: $PlatformShort$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
-mentionedTypes: ["XamFinancialChart", `ChartType`, `CrosshairsSnapToData`, `IndicatorTypes`, `ZoomSliderType`]
+mentionedTypes: ["XamFinancialChart", `ChartType`, `IndicatorTypes`, `ZoomSliderType`]
 ---
 # $PlatformShort$ Stock Chart
 

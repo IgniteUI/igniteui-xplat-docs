@@ -67,7 +67,7 @@ In this example, the Bubble Chart is comparing the total births and deaths betwe
 - [Shape Chart](shape-chart.md)
 
 
-## Additional Resources
+## API Members
 The following table lists API members mentioned in the above sections:
 
 Chart Type       | Control Name   | API Members
