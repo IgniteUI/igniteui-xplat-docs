@@ -60,6 +60,8 @@ It is possible to have a multiple ring display in the $PlatformShort$ Donut Char
 
 ## Additional Resources
 - [Pie Chart](pie-chart.md)
+- [Polar Chart](polar-chart.md)
+- [Radial Chart](radial-chart.md)
 
 ## API Members
 The following table lists API members mentioned in the above sections:
