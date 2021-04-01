@@ -390,6 +390,11 @@
     "status": ""
   },
   {
+    "name": "Point Chart",
+    "href": "charts/types/point-chart.md",
+    "status": ""
+  },
+  {
     "name": "Polar Chart",
     "href": "charts/types/polar-chart.md",
     "status": ""
