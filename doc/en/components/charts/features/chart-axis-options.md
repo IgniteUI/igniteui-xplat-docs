@@ -2,7 +2,7 @@
 title: $PlatformShort$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Axis Options
 _keywords: $PlatformShort$ Axis, Options, Title, Labels, Range Infragistics
-mentionedTypes: [ 'XamCategoryChart' ]
+mentionedTypes: ["XamCategoryChart"]
 ---
 
 # $PlatformShort$ Axis Options

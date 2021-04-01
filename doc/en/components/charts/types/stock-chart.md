@@ -2,7 +2,7 @@
 title: $PlatformShort$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
-mentionedTypes: ["XamFinancialChart", `ChartType`, `IndicatorTypes`, `ZoomSliderType`]
+mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 ---
 # $PlatformShort$ Stock Chart
 
@@ -10,7 +10,7 @@ $PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestic
 
 ## $PlatformShort$ Stock Chart Example
 
-You can create this type of chart with the `XamFinancialChart` control by binding your data and setting `ChartType` property to `Line` value, as shown in the example below.
+You can create this type of chart with the `XamFinancialChart` control by binding your data and setting `ChartType` property to `Line` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

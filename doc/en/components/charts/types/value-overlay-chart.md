@@ -2,7 +2,7 @@
 title: $PlatformShort$ Data Chart | Data Visualization Tools | Value Overlay | Infragistics
 _description: Use Infragistics $ProductName$ chart control's value overlay feature to place horizontal or vertical lines at a single numeric value. Learn about our $ProductName$ graph types!
 _keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics
-mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
+mentionedTypes: ["XamDataChart", "ColumnSeries", "ValueOverlay"]
 namespace: Infragistics.Controls.Charts
 ---
 

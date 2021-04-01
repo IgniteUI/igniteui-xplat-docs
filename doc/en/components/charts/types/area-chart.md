@@ -2,7 +2,7 @@
 title: $PlatformShort$ Area Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Area Chart
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart", 'ChartType']
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
 # $PlatformShort$ Area Chart
 

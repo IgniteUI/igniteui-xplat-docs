@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Tooltips | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Tooltips
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics
-mentionedTypes: ['XamCategoryChart', 'ToolTipType']
+mentionedTypes: ["XamCategoryChart", "ToolTipType"]
 ---
 
 # $PlatformShort$ Chart Tooltips
