@@ -10,7 +10,7 @@ $PlatformShort$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how
 
 ## $PlatformShort$ Pie Chart Example
 
-You can create this type of chart with the `XamPieChart` control by binding your data as shown in the example below.
+You can create this type of chart with the `XamPieChart` control by binding your data as shown in the example below.
 
 This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
 

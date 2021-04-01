@@ -54,6 +54,8 @@ By default, the $PlatformShort$ charts will calculate the minimum and maximum va
 
 ## Additional Resources
 
+You can find more information about related chart features in these topics:
+
 - [Axis Gridlines](chart-axis-gridlines.md)
 - [Axis Layout](chart-axis-layouts.md)
 

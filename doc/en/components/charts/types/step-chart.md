@@ -10,7 +10,9 @@ $PlatformShort$ Step Chart belongs to a group of Category Series and it is rende
 
 ## $PlatformShort$ Step Chart Example
 
-You can create an Step Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `StepLine` value, as shown in the example below.
+In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+
+You can create a Step Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `StepLine` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -24,6 +26,8 @@ You can create an Step Chart in the `XamCategoryChart` control by binding your d
 
 In this example, the Step Chart is showing the change of value over time for the amount of renewable electricity produced for several years in Europe.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `StepLine`, as shown in the example below:
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source"
@@ -36,6 +40,7 @@ In this example, the Step Chart is showing the change of value over time for the
 
 The Step Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `StepLine`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -49,6 +54,7 @@ The Step Chart is often used to show the change of value over time such as the a
 
 If you need a Step Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `StepLine`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -59,15 +65,16 @@ If you need a Step Chart with more features such as composite other series, you 
 <div class="divider--half"></div>
 
 ## Additional Resources
+
+You can find more information about related chart types in these topics:
+
+- [Area Chart](area-chart.md)
 - [Line Chart](line-chart.md)
 
 ## API Members
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type                  | Control Name   | API Members
-----------------------------|----------------|------------------------
-Step                        | `XamCategoryChart` | `ChartType` = `StepLine`
-
-
-
+Chart Type | Control Name       | API Members
+-----------|--------------------|------------------------
+Step       | `XamCategoryChart` | `ChartType` = `StepLine`
