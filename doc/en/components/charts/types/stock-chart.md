@@ -307,4 +307,4 @@ Stock Chart      | `XamFinancialChart`     | `FinancialChart`
 - `CrosshairsSnapToData`
 - `IndicatorTypes`
 - `ZoomSliderType`
-- `FinancialChart`
+- `XamFinancialChart`
