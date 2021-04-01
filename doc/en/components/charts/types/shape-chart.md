@@ -2,7 +2,7 @@
 title: $PlatformShort$ Shape Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Shape Chart
 _keywords: $PlatformShort$ Charts, Shape Chart, Infragistics
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
 ---
 # $PlatformShort$ Shape Chart
 
@@ -12,6 +12,7 @@ $PlatformShort$ Shape Chart is a group of charts that take array of shapes (arra
 
 The Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` component. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
+You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolygonSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,6 +26,7 @@ The Scatter Polygon Chart renders an array or array of arrays of polygons in the
 
 The Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` component. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
+You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolylineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -35,16 +37,18 @@ The Scatter Polyline Chart renders an array or array of arrays of polylines in t
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Axis Annotations](../features/chart-axis-options.md)
-- [Axis Options](../features/chart-axis-options.md)
-- [Axis Gridlines](../features/chart-axis-gridlines.md)
-- [Highlighting](../features/chart-highlighting.md)
-<!-- - [Gantt Chart](gantt-chart.md) -->
-<!-- - [Network Chart](network-chart.md) -->
-- [Scatter Chart](scatter-chart.md)
+
+You can find more information about related chart types in these topics:
+
+- [Area Charts](area-chart.md)
+- [Line Charts](line-chart.md)
+- [Scatter Charts](scatter-chart.md)
 
 ## API Members
-- `ScatterPolygonSeries`
-- `ScatterPolylineSeries`
-- `XamDataChart`
-- `XamDataChart`
+
+The following table lists API members mentioned in the above sections:
+
+Chart Type       | Control Name   | API Members
+-----------------|----------------|------------------------
+Scatter Polygon  | `XamDataChart` | `ScatterPolygonSeries`
+Scatter Polyline | `XamDataChart` | `ScatterPolylineSeries`
