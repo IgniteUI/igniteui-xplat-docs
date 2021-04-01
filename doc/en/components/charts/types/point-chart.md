@@ -48,7 +48,7 @@ Since the $PlatformShort$ Point Chart allows you to combine multiple series and 
 
 ## $PlatformShort$ Point Chart Styling
 
-Once the $PlatformShort$ Point Chart is set up, we may want to make some further styling customizations such as change the point colors, change the legend font family, and/or increase the size of the axis labels to make it easier to read.
+Once the $PlatformShort$ Point Chart is set up, we may want to make some further styling customizations such as change the markers and its outlines, brushes and thickness.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
