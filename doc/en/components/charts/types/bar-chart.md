@@ -2,7 +2,7 @@
 title: $PlatformShort$ Bar Charts and Graphs | $ProductName$
 _description: $PlatformShort$ Bar Charts are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics
-mentionedTypes: ["XamDataChart", "BarSeries", `StackedBarSeries`, `Stacked100BarSeries`]
+mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
 # $PlatformShort$ Bar Chart
 

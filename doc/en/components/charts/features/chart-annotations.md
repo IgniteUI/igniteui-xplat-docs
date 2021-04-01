@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Annotations | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Annotations
 _keywords: $PlatformShort$ Charts, Annotations, Infragistics
-mentionedTypes: ['XamCategoryChart', 'CrosshairLayer', 'FinalValueLayer', 'CalloutLayer']
+mentionedTypes: ["XamCategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 ---
 
 # $PlatformShort$ Chart Annotations

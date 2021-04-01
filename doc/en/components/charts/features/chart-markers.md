@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Markers
 _keywords: $PlatformShort$ Charts, Markers, Infragistics
-mentionedTypes: ['XamCategoryChart']
+mentionedTypes: ["XamCategoryChart"]
 ---
 
 # $PlatformShort$ Chart Markers

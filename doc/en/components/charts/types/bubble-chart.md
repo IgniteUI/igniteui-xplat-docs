@@ -10,7 +10,7 @@ $PlatformShort$ Bubble Chart is a group of series that show markers with variabl
 
 ## $PlatformShort$ Bubble Chart Example
 
-You can create this type of chart in `XamDataChart` control by binding your data to the `BubbleSeries`, as shown in the example below.
+You can create this type of chart in `XamDataChart` control by binding your data to the `BubbleSeries`, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
