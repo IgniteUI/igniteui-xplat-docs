@@ -22,7 +22,18 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 <div class="divider--half"></div>
 
-## Are $PlatformShort$ Bar Charts right for your project?
+## Bar Chart Recommendations
+
+### Are $PlatformShort$ Bar Charts right for your project?
+
+$PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+
+- Grouped Bar Chart
+- Stacked Bar Chart
+- Polar Bar Chart
+- Stacked 100 Bar Chart
+
+### Bar Chart Use Cases
 
 There are several common use cases for choosing a Bar Chart:
 
@@ -32,14 +43,14 @@ There are several common use cases for choosing a Bar Chart:
 - You want to show top or bottom percentage of categories.
 - Analyzing multiple data points grouped in sub-categories (Stacked Bar).
 
-$PlatformShort$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+These use cases are commonly used for the following scenarios:
 
-- Grouped Bar Chart
-- Stacked Bar Chart
-- Polar Bar Chart
-- Stacked 100 Bar Chart
+- Sales Management.
+- Inventory Management.
+- Stock Charts.
+- Any String Value Comparing a Numeric Value or Time-Series Value.
 
-### Bar Charts Best Practices:
+### Bar Chart Best Practices:
 
 - Start you numeric Axis at 0.
 - Use a single color for the bars.
@@ -47,7 +58,7 @@ $PlatformShort$ Bar Chart includes several variants based on your data or how yo
 - Be sure ranking or comparing ordered categories (items) are sorted in increasing or decreasing order.
 - Right-align category values on the Y-Axis (left side labels of chart) for readability.
 
-### Don't Use Bar Charts When:
+### When Not to Use Bar Chart
 
 - You have too much data so the Y-Axis can't fit in the space or is not legible.
 - You need a detailed Time-Series analysis  - consider a [Line Chart](line-chart.md) with a Time-Series for this type of data.
@@ -58,13 +69,6 @@ $PlatformShort$ Bar Chart includes several variants based on your data or how yo
 - The data source must contain at least one data item.
 - The list must contain at least one data column (string or date time).
 - The list must contain at least one numeric data column.
-
-### Common $PlatformShort$ Bar Chart Scenarios:
-
-- Sales Management.
-- Inventory Management.
-- Stock Charts.
-- Any String Value Comparing a Numeric Value or Time-Series Value.
 
 <div class="divider--half"></div>
 

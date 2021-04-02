@@ -24,7 +24,9 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 <div class="divider--half"></div>
 
-## Are $PlatformShort$ Line Charts right for your project?
+## Line Chart Recommendations
+
+### Are $PlatformShort$ Line Charts right for your project?
 
 - Different than an [area chart](area-chart.md), the line chart does not fill the area between the X-Axis (bottom axis) and the line.
 - The $PlatformShort$ line chart is identical to the $PlatformShort$ [spline chart](spline-chart.md) in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
@@ -37,7 +39,9 @@ A Line Chart includes several variants based on your data or how you want to tel
 - Polar Line Chart
 - Stacked 100 Line Chart
 
-### There are several use cases for Line Charts. When you:
+### Line Chart Use Cases
+
+There are several common use cases for choosing a Line Chart:
 
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming and Drill-down.
 - Need to compare the trends over time.
@@ -52,110 +56,18 @@ A Line Chart includes several variants based on your data or how you want to tel
 - Order time-series data  from left to right.
 - Use visual attributes like solid lines to show a series of data.
 
-### Do not Use Line Charts When:
+### When Not to Use Line Chart
 
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
 - Time-series data has similar values (data over the same period), it makes overlapped lines impossible to differentiate.
 
-### Data Structure:
+### Line Chart Data Structure:
 
 - The data source must be an array or a list of data items (for single series).
 - The data source must be an array of arrays or a list of lists (for multiple series).
 - The data source must contain at least one data item.
 - All data items must contain at least one data column (string or date time).
 - All data items must contain at least one numeric data column.
-
-<!-- The following code snippet demonstrates a sample data source that can be used to create a Line Chart:
-
-```razor
-public class EnergyRenewableData : List<EnergyRenewableInfo>
-{
-    public EnergyRenewableData()
-    {
-        Add(new EnergyRenewableInfo { Year = "2009", Europe = 31, USA = 19, China = 21 });
-        Add(new EnergyRenewableInfo { Year = "2010", Europe = 43, USA = 24, China = 26 });
-        Add(new EnergyRenewableInfo { Year = "2011", Europe = 66, USA = 28, China = 29 });
-        Add(new EnergyRenewableInfo { Year = "2012", Europe = 69, USA = 26, China = 32 });
-        Add(new EnergyRenewableInfo { Year = "2013", Europe = 58, USA = 38, China = 47 });
-        Add(new EnergyRenewableInfo { Year = "2014", Europe = 40, USA = 31, China = 46 });
-        Add(new EnergyRenewableInfo { Year = "2015", Europe = 78, USA = 19, China = 50 });
-        Add(new EnergyRenewableInfo { Year = "2016", Europe = 13, USA = 52, China = 90 });
-        Add(new EnergyRenewableInfo { Year = "2017", Europe = 78, USA = 50, China = 132 });
-        Add(new EnergyRenewableInfo { Year = "2018", Europe = 40, USA = 34, China = 134 });
-        Add(new EnergyRenewableInfo { Year = "2019", Europe = 80, USA = 38, China = 96 });
-    }
-}
-
-public class EnergyRenewableInfo
-{
-    public string Year { get; set; }
-    public int Europe { get; set; }
-    public int China { get; set; }
-    public int USA { get; set; }
-}
-```
-
-```ts
-public initData() {
-    this.data = [
-        { Year: "2009", Europe: 31, China: 21,  USA: 19 },
-        { Year: "2010", Europe: 43, China: 26,  USA: 24 },
-        { Year: "2011", Europe: 66, China: 29,  USA: 28 },
-        { Year: "2012", Europe: 69, China: 32,  USA: 26 },
-        { Year: "2013", Europe: 58, China: 47,  USA: 38 },
-        { Year: "2014", Europe: 40, China: 46,  USA: 31 },
-        { Year: "2015", Europe: 78, China: 50,  USA: 19 },
-        { Year: "2016", Europe: 13, China: 90,  USA: 52 },
-        { Year: "2017", Europe: 78, China: 132, USA: 50 },
-        { Year: "2018", Europe: 40, China: 134, USA: 34 },
-        { Year: "2019", Europe: 80, China: 96,  USA: 38 },
-    ];
-}
-``` -->
-
-In order to use the $PlatformShort$ Line Chart, the following modules are first required to be added to your application:
-
-<!-- Blazor -->
-```razor
-CategoryChartModule.Register(IgniteUIBlazor);
-```
-<!-- end: Blazor -->
-
-<!-- Angular -->
-```ts
-// app.module.ts
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
-
-@NgModule({
-    imports: [
-        // ...
-        IgxCategoryChartModule,
-        // ...
-    ]
-})
-export class AppModule {}
-```
-<!-- end: Angular -->
-
-<!-- React -->
-```ts
-import { IgrCategoryChartModule } from 'igniteui-react-charts';
-
-IgrCategoryChartModule.register();
-```
-<!-- end: React -->
-
-<!-- WebComponents -->
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
-
-ModuleManager.register(
-    IgcCategoryChartModule
-    );
-```
-<!-- end: WebComponents -->
-
 
 ## $PlatformShort$ Line Chart with Single Series
 

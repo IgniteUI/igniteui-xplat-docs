@@ -189,6 +189,9 @@ chart.calloutsLabelMemberPath = "info";
 ```
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `CrosshairsSnapToData`
 - `XamCategoryChart`
 

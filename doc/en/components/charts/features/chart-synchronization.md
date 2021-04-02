@@ -131,6 +131,9 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `IsHorizontalZoomEnabled`
 - `IsVerticalZoomEnabled`
 - `SyncChannel`

@@ -7,9 +7,13 @@ mentionedTypes: ["XamCategoryChart"]
 
 # $PlatformShort$ Chart Markers
 
-There are many areas of the $ProductName$ charts that can be customized, such as the markers, chart titles and subtitles, and the chart types.
+In $ProductName$, markers are visual elements that display the values of data points in the chart's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
 
 # $PlatformShort$ Chart Marker Example
+
+In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to "Circle."
+
+The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,52 +24,17 @@ There are many areas of the $ProductName$ charts that can be customized, such as
 
 <div class="divider--half"></div>
 
-## Configuring Chart Markers
+## Additional Resources
 
-Markers are visual elements that display the values of data points in the chart's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
+You can find more information about related chart features in these topics:
 
-The appearance of chart markers is managed through the `MarkerType`, `MarkerBrushes`, `MarkerOutlines` properties of the chart, as demonstrated in the following code example.
-
-```razor
- <CategoryChart Height="500px" Width="700px"
-    DataSource="@DataSource"
-    MarkerType="MarkerType.Diamond"
-    MarkerBrushes="red"
-    MarkerOutlines="yellow"/>
-```
-
-```html
-<igx-category-chart
-    [dataSource]="data"
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow">
-</igx-category-chart>
-```
-
-```tsx
- <IgrCategoryChart dataSource={this.state.data}
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow" />
-```
-```html
-<igc-category-chart
-    id="chart"
-    width="700px"
-    height="700px"
-    marker-type="Diamond"
-    marker-brushes="red"
-    marker-outlines="yellow">
-</igc-category-chart>
-```
-
+- [Chart Annotations](chart-annotations.md)
+- [Chart Highlighting](chart-highlighting.md)
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`

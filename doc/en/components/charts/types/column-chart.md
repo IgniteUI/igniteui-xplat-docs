@@ -18,7 +18,13 @@ The $ProductName$ Column Chart is rendered using a collection of rectangles 
 
 <div class="divider--half"></div>
 
+## Column Chart Recommendations
+
+### Are $PlatformShort$ Column Charts right for your project?
+
 A Column Chart uses the same concepts of data plotting as the [Bar Chart](bar-chart.md), but data points are stretched along a horizontal line (X-Axis) rather than vertical line (Y-Axis). In other words, the Column Chart is rendered like the [Bar Chart](bar-chart.md) but with 90 degrees counter-clockwise rotation.
+
+### Column Chart Use Cases
 
 There are several uses cases for a Column Chart. When you:
 
@@ -27,16 +33,16 @@ There are several uses cases for a Column Chart. When you:
 - Need to display negative values as well as positive values in the same data set.
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
 
-Column Chart Best Practices:
+### Column Chart Best Practices:
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
 - Order time-series data from left to right.
 
-Do not Use Column Charts When:
+### When Not to Use Column Charts
 
 - You have many (more than 10 or 12) series of data. Your goal is to ensure the chart is readable.
 
-Data Structure:
+### Column Chart Data Structure:
 
 - The data model must contain at least one numeric property.
 - The data model may contain an options string or date-time property for labels.

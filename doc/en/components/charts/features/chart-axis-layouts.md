@@ -86,23 +86,28 @@ The following example shows a Sin and Cos wave represented by a [Scatter Spline 
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
-<div class="divider--half"></div
+<div class="divider--half"></div>
 
 
 ## Additional Resources
+
+You can find more information about related chart features in these topics:
 
 - [Axis Gridlines](chart-axis-gridlines.md)
 - [Axis Options](chart-axis-options.md)
 
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `CrossingAxis`
 - `CrossingValue`
 - `NumericYAxis`
+- `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
-- `XamCategoryChart`
-- `XamFinancialChart`
-- `XamDataChart`
 - `YAxisLabelLocation`
