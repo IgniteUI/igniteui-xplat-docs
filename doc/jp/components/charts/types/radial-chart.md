@@ -48,3 +48,4 @@ _language: ja
 - [チャート強調表示](../features/chart-highlighting.md)
 <!-- - - [ネットワーク チャート](network-chart.md) -->
 <!-- - - [極座標チャート](polar-chart.md) -->
+- [極座標チャート](polar-chart.md)

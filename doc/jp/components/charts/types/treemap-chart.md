@@ -2,7 +2,7 @@
 title: $PlatformShort$ ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。$ProductName$ ツリーマップについて説明します。
 _keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $PlatformShort$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
-mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
+mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
 _language: ja
 ---
 # $PlatformShort$ ツリーマップ

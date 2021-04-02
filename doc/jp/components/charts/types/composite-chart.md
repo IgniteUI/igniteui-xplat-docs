@@ -26,6 +26,7 @@ $PlatformShort$ 複合チャートまたはコンボ チャートは、同じプ
 - [縦棒チャート](column-chart.md)
 <!-- - - [ガント チャート](gantt-chart.md) -->
 - [複合チャート](Composite-chart.md)
+- [積層型チャート](stacked-chart.md)
 
 ## API メンバー
 - `CategoryXAxis`

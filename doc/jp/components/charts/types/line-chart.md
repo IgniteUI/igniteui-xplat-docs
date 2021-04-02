@@ -2,7 +2,7 @@
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 _language: ja
 ---
 # $PlatformShort$ 折れ線チャート
@@ -15,6 +15,8 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 次の例では、折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
+`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
@@ -25,8 +27,8 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 ## $PlatformShort$ 折れ線チャートはプロジェクトに適していますか?
 
-- エリア チャートとは異なり、折れ線チャートは X 軸 (下軸) と線の間の領域を塗りつぶしません。
-- $PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン チャートと同じです。
+- [エリア チャート](area-chart.md)とは異なり、折れ線チャートは X 軸 (下軸) と線の間の領域を塗りつぶしません。
+- $PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ [スプライン チャート](spline-chart.md)と同じです。
 
 折れ線チャートには、データに基づいて複数のバリアントがあります。以下が含まれます。
 
@@ -160,6 +162,7 @@ ModuleManager.register(
 
 以下の例に示すように、$PlatformShort$ 折れ線チャートは、2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
+`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -174,6 +177,7 @@ ModuleManager.register(
 
 $PlatformShort$ 折れ線チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、折れ線チャートは追加データに合わせて自動的に更新されます。
 
+`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -190,6 +194,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 この例では、選択した間隔でライブ データを $PlatformShort$ 折れ線チャートにストリーミングしています。データ ポイントを 5,000 から 100 万に設定し、チャートを更新してチャートを描画するデバイスに基づいてスケールを最適化できます。
 
+`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -204,7 +209,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 チャートを設定したら、線の色の変更、凡例のフォント ファミリの変更、軸ラベルのサイズの増加など読みやすくするためにスタイル設定をカスタマイズできます。
 
-
+`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -213,27 +218,89 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
            github-src="charts/category-chart/line-chart-styling">
 </code-view>
 
+<div class="divider--half"></div>
+
+## $PlatformShort$ 折れ線チャートの高度なシナリオ
+
+高度なタイプの折れ線チャートの場合、以下のセクションで説明するよう回線 `XamDataChart` コントロールを使用して他のタイプの折れ線チャートを作成します。
+
+## $PlatformShort$ 積層型折れ線チャート
+
+積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
+           alt="$PlatformShort$ 積層型折れ線チャート"
+           github-src="charts/data-chart/stacked-line-chart">
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ 積層型 100% 折れ線チャート
+
+積層型 100% 折れ線チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型折れ線チャートと同じです。データを直接表現するのでなく、積層型 100% 折れ線チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
+
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100LineSeries` にバインドします:
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
+           alt="$PlatformShort$ 積層型 100% 折れ線チャート"
+           github-src="charts/data-chart/stacked-100-line-chart">
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ ラジアル折れ線チャート
+
+ラジアル折れ線チャートはラジアル チャートのグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶしなしのポリゴンの形状を持っています。このグラフ チャートは、折れ線チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。
+
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
+           alt="$PlatformShort$ ラジアル折れ線チャート"
+           github-src="charts/data-chart/radial-line-chart">
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ 極座標型折れ線チャート
+
+極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、[散布折れ線チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
+
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
+           alt="$PlatformShort$ 極座標型折れ線チャート"
+           github-src="charts/data-chart/type-polar-line-series">
+</code-view>
 
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート注釈](../features/chart-annotations.md)
-- [チャート強調表示](../features/chart-highlighting.md)
-- [チャート マーカー](../features/chart-markers.md)
-- [チャート ツールチップ](../features/chart-tooltips.md)
-- [チャート トレンドライン](../features/chart-trendlines.md)
 
-<!-- ## Additional Resources
+関連するチャートタイプの詳細については、以下のトピックを参照してください。
 
-- [Series Animations](../features/chart-animations.md)
-- [Series Annotations](../features/chart-annotations.md)
-- [Series Highlighting](../features/chart-highlighting.md)
-- [Series Markers](../features/chart-markers.md)
-- [Series Tooltips](../features/chart-tooltips.md)
-- [Series Trendlines](../features/chart-trendlines.md) -->
+- [エリア チャート](area-chart.md)
+- [縦棒チャート](column-chart.md)
+- [極座標チャート](polar-chart.md)
+- [ラジアル チャート](radial-chart.md)
+- [スプライン チャート](spline-chart.md)
+- [積層型チャート](stacked-chart.md)
 
 ## API メンバー
-- `ChartType`
-- `ItemsSource`
-- `Legend`
-- `XamCategoryChart`
+
+以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+
+チャート タイプ        | コントロール名       | API メンバー
+------------------|--------------------|-----------------------
+折れ線              | `XamCategoryChart` | `ChartType` = `Line`
+極座標折れ線        | `XamDataChart`     | `PolarLineSeries`
+ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries`
+積層型折れ線      | `XamDataChart`     | `StackedLineSeries`
+積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries`                  

@@ -2,7 +2,7 @@
 title: $PlatformShort$ スパークライン | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ スパークライン チャート コントロールを使用して、グリッド セルやスタンドアロンなどのコンパクトなレイアウトで描画します。$ProductName$ スパークライン チャートの設定可能な要素について説明します。
 _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column, スパークライン, インフラジスティックス, エリア, 列
-mentionedTypes: ['XamSparkline', 'SparklineDisplayType', 'TrendLineType']
+mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
 _language: ja
 ---
 

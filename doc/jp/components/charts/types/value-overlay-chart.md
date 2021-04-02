@@ -2,7 +2,7 @@
 title: $PlatformShort$  データ チャート | データ可視化ツール | 値オーバーレイ | インフラジスティックス
 _description: $ProductName$ チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。$ProductName$ グラフ タイプについて説明します。
 _keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
-mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
+mentionedTypes: ["XamDataChart", "ColumnSeries", "ValueOverlay"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
