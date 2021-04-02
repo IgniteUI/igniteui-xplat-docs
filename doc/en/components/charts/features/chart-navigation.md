@@ -2,7 +2,7 @@
 title: $PlatformShort$ Data Chart | Data Visualization Tools | Navigation | Infragistics
 _description: Navigate Infragistics' $PlatformShort$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
 _keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics
-mentionedTypes: ['XamDataChart', 'ModifierKeys']
+mentionedTypes: ["XamDataChart", "ModifierKeys"]
 ---
 # $PlatformShort$ Chart Navigation
 

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Highlighting | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Highlighting
 _keywords: $PlatformShort$ Charts, Highlighting, Infragistics
-mentionedTypes: ['XamCategoryChart']
+mentionedTypes: ["XamCategoryChart"]
 ---
 
 # $PlatformShort$ Chart Highlighting

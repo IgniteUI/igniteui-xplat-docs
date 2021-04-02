@@ -2,13 +2,15 @@
 title: $PlatformShort$ Step Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Step Chart
 _keywords: $PlatformShort$ Charts, Step Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
 # $PlatformShort$ Step Chart
 
 $PlatformShort$ Step Chart belongs to a group of Category Series and it is rendered using a collection of points connected by continuous vertical and horizontal lines. For Step Area Chart, the area below lines are filled in. Values are represented on the y-axis and categories are displayed on the x-axis. This emphasizes the amount of change over a period of time or compares multiple items.
 
 ## $PlatformShort$ Step Chart Example
+
+You can create an Step Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `StepLine` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,7 +23,6 @@ $PlatformShort$ Step Chart belongs to a group of Category Series and it is rende
 ## $PlatformShort$ Step Chart with Single Series
 
 In this example, the Step Chart is showing the change of value over time for the amount of renewable electricity produced for several years in Europe.
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -58,15 +59,15 @@ If you need a Step Chart with more features such as composite other series, you 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Annotations](../features/chart-annotations.md)
-- [Highlighting](../features/chart-highlighting.md)
-- [Markers](../features/chart-markers.md)
-- [Tooltips](../features/chart-tooltips.md)
-- [Trendlines](../features/chart-trendlines.md)
 - [Line Chart](line-chart.md)
 
+## API Members
 
-<!-- ## Additional Resources -->
-<!-- TODO list topic links related to this topic -->
+The following table lists API members mentioned in the above sections:
+
+Chart Type                  | Control Name   | API Members
+----------------------------|----------------|------------------------
+Step                        | `XamCategoryChart` | `ChartType` = `StepLine`
+
 
 

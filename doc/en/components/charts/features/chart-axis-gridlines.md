@@ -2,7 +2,7 @@
 title: $PlatformShort$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Axis Gridlines
 _keywords: $PlatformShort$ Axis, Gridlines, Infragistics
-mentionedTypes: ['XamCategoryChart']
+mentionedTypes: ["XamCategoryChart"]
 ---
 
 # $PlatformShort$ Axis Gridlines

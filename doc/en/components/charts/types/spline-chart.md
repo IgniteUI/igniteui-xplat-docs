@@ -111,4 +111,3 @@ Chart Type          | Control Name       | API Members
 Spline              | `XamCategoryChart` | `ChartType` = `Spline`
 Stacked Spline      | `XamDataChart`     | `StackedSplineSeries`
 Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries`
-
