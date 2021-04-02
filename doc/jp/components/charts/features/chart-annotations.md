@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート注釈 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート注釈
 _keywords: $PlatformShort$ Charts, Annotations, Infragistics, $PlatformShort$ チャート, 注釈, インフラジスティックス
-mentionedTypes: ['XamCategoryChart', 'CrosshairLayer', 'FinalValueLayer', 'CalloutLayer']
+mentionedTypes: ["XamCategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 _language: ja
 ---
 

@@ -2,7 +2,7 @@
 title: $PlatformShort$ ステップ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ステップ チャート
 _keywords: $PlatformShort$ Charts, Step Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart"]
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 _language: ja
 ---
 # $PlatformShort$ ステップ チャート
@@ -10,6 +10,8 @@ _language: ja
 $PlatformShort$ ステップ チャートはカテゴリ シリーズのグループに属し、連続した垂直線と水平線で接続されたポイントのコレクションを使用して描画されます。ステップ エリア チャートの場合、線の下のエリアが塗りつぶされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。これは、一定期間の変化量を強調したり、複数の項目を比較したりします。
 
 ## $PlatformShort$ ステップ チャートの例
+
+`XamCategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,7 +24,6 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 ## 単一シリーズの $PlatformShort$ ステップ チャート
 
 この例では、ステップ チャートは、ヨーロッパで数年間生産された再生可能電力の量の経時的な価値の変化を示しています。
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -58,14 +59,13 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 <div class="divider--half"></div>
 
 ## その他のリソース
-- [チャート注釈](../features/chart-annotations.md)
-- [チャート強調表示](../features/chart-highlighting.md)
-- [チャート マーカー](../features/chart-markers.md)
-- [チャート ツールチップ](../features/chart-tooltips.md)
-- [チャート トレンドライン](../features/chart-trendlines.md)
+
 - [折れ線チャート](line-chart.md)
 
-<!-- ## その他のリソース -->
-<!-- TODO list topic links related to this topic -->
+## API メンバー
 
+以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
+チャート タイプ                  | コントロール名   | API メンバー
+----------------------------|----------------|------------------------
+ステップ                        | `XamCategoryChart` | `ChartType` = `StepLine`

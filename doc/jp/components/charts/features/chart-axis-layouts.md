@@ -2,7 +2,7 @@
 title: $PlatformShort$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸レイアウト
 _keywords: $PlatformShort$ Axis, Layouts, Infragistics, $PlatformShort$ 軸, レイアウト, インフラジスティックス
-mentionedTypes: [ 'XamCategoryChart', 'XamDataChart' ]
+mentionedTypes: [ "XamCategoryChart", "XamDataChart" ]
 _language: ja
 ---
 

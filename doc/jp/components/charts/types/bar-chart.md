@@ -2,7 +2,7 @@
 title: $PlatformShort$ 棒チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "BarSeries", `StackedBarSeries`, `Stacked100BarSeries`]
+mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 _language: ja
 ---
 # $PlatformShort$ 棒チャート

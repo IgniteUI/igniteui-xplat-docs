@@ -2,7 +2,7 @@
 title: $PlatformShort$ エリア チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ エリア チャート
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics, $PlatformShort$ チャート, エリア チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart", 'ChartType']
+mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 _language: ja
 ---
 # $PlatformShort$ エリア チャート

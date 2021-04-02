@@ -390,6 +390,11 @@
     "status": ""
   },
   {
+    "name": "ポイント チャート",
+    "href": "charts/types/point-chart.md",
+    "status": ""
+  },
+  {
     "name": "極座標チャート",
     "href": "charts/types/polar-chart.md",
     "status": ""
@@ -436,7 +441,7 @@
     "status": ""
   },
   {
-    "name": " オーバーレイ チャート",
+    "name": "オーバーレイ チャート",
     "href": "charts/types/value-overlay-chart.md",
     "status": ""
   },

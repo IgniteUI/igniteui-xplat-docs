@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート強調表示 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート強調表示
 _keywords: $PlatformShort$ Charts, Highlighting, Infragistics, $PlatformShort$ チャート, 強調表示, インフラジスティックス
-mentionedTypes: ['XamCategoryChart']
+mentionedTypes: ["XamCategoryChart"]
 _language: ja
 ---
 

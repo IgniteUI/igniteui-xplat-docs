@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート ツールチップ | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート ツールチップ
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics, $PlatformShort$ チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ['XamCategoryChart', 'ToolTipType']
+mentionedTypes: ["XamCategoryChart", "ToolTipType"]
 _language: ja
 ---
 

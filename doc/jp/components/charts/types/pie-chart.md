@@ -2,7 +2,7 @@
 title: $PlatformShort$ 円チャートとグラフ | $ProductName$
 _description: $ProductName$ 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊なコンポーネントです。無料でお試しください。
 _keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
-mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
+mentionedTypes: ["XamPieChart", "XamDataChart"]
 _language: ja
 ---
 # $PlatformShort$ 円チャート
@@ -10,6 +10,8 @@ _language: ja
 $PlatformShort$ 円チャート (円グラフ) は、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示す部分対全体チャートです。カテゴリは、円グラフまたは円グラフのセクションとして描画されます。各セクション (円スライス) は基本データ値に比例する円弧の長さを持ちます。カテゴリは、分析中の合計値に対する値の割合に基づいて、100 または 100% の部分として他のカテゴリに比例して表示されます。
 
 ## $PlatformShort$ 円チャートの例
+
+`XamPieChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドします。
 
 この $PlatformShort$ 円チャートの例には、6 つの値を持つ単純なデータ セットが含まれています。各キー/ペア値には文字列値と文字列値データ値があり、データ値の合計は 100% です。ここでは、部門ごとの予算支出の内訳を示しています。
 
@@ -479,9 +481,14 @@ public tick(): void {
 
 ## その他のリソース
 - [ドーナツ チャート](donut-chart.md)
+- [極座標チャート](polar-chart.md)
+- [ラジアル チャート](radial-chart.md)
 
 
 ## API メンバー
+
+以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+
 - `LegendItemBadgeTemplate`
 - `LegendItemTemplate`
 - `LegendLabelMemberPath`
@@ -489,3 +496,8 @@ public tick(): void {
 - `OthersCategoryType`
 - `SelectionMode`
 - `XamPieChart`
+
+チャート タイプ       | コントロール名   | API メンバー
+-----------------|----------------|------------
+円チャート      | `XamPieChart`     | `PieChart`
+ラジアル円チャート | `XamDataChart` | `RadialPieSeries`

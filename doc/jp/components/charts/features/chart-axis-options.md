@@ -2,7 +2,7 @@
 title: $PlatformShort$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸オプション
 _keywords: $PlatformShort$ Axis, Options, Infragistics, $PlatformShort$ 軸, オプション, インフラジスティックス
-mentionedTypes: [ 'XamCategoryChart' ]
+mentionedTypes: ["XamCategoryChart"]
 _language: ja
 ---
 

@@ -2,7 +2,7 @@
 title: $PlatformShort$  データ チャート | データ可視化ツール | ナビゲーション | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャートをナビゲートするには、マウスまたはタッチを使用して左右にパンし、水平および垂直にズームします。$ProductName$ のグラフ ナビゲーション機能について説明します。
 _keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ナビゲーション, インフラジスティックス
-mentionedTypes: ['XamDataChart', 'ModifierKeys']
+mentionedTypes: ["XamDataChart", "ModifierKeys"]
 _language: ja
 ---
 # $PlatformShort$ チャート ナビゲーション
