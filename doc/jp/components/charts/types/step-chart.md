@@ -65,7 +65,7 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 - [チャート トレンドライン](../features/chart-trendlines.md)
 - [折れ線チャート](line-chart.md)
 
-<!-- ## Additional Resources -->
+<!-- ## その他のリソース -->
 <!-- TODO list topic links related to this topic -->
 
 

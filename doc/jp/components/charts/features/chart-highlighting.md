@@ -10,6 +10,10 @@ _language: ja
 
 すべての $PlatformShort$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントによってサポートされており、強調表示機能を使用するための同じ API を備えています。
 
+## $PlatformShort$ チャート強調表示の例
+
+以下の例は、$PlatformShort$ チャートで使用できるさまざまな強調表示オプションを示しています。チェックボックスをクリックして強調表示タイプを有効にします。
+
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
@@ -30,40 +34,21 @@ $ProductName$ `XamCategoryChart` は、データ項目にカーソルを合わ�
 
 3. カテゴリ ハイライトはすべてのカテゴリ軸を対象にします。カーソル位置に最も近い軸領域を照らす図形を描画します。これは、`IsCategoryHighlightingEnabled` プロパティを true に設定することで有効になります。
 
-```razor
-<CategoryChart Height="500px" Width="700px" DataSource="@DataSource"
-    IsSeriesHighlightingEnabled="true"
-    IsCategoryHighlightingEnabled="false"
-    IsItemHighlightingEnabled="false">
-</CategoryChart>
-```
+## その他のリソース
 
-```html
-<igx-category-chart [dataSource]="data" width="800px" height="500px"
-    isSeriesHighlightingEnabled="true"
-    isCategoryHighlightingEnabled="false"
-    isItemHighlightingEnabled="false">
-</igx-category-chart>
-```
+関連するチャートタイプの詳細については、以下のトピックを参照してください。
 
-```tsx
- <IgrCategoryChart dataSource={this.state.data}
-    isSeriesHighlightingEnabled={true}
-    isCategoryHighlightingEnabled={false}
-    isItemHighlightingEnabled={false} />
-```
-
-```html
-<igc-category-chart id="chart" width="800px" height="500px"
-    is-series-highlighting-enabled="true"
-    is-category-highlighting-enabled="false"
-    is-item-highlighting-enabled="false" >
-</igc-category-chart>
-```
+- [チャート アニメーション](chart-animations.md)
+- [チャート注釈](chart-annotations.md)
+- [チャート ツールチップ](chart-tooltips.md)
 
 ## API メンバー
+
+以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
 - `XamCategoryChart`
-
+- `XamDataChart`
+- `XamFinancialChart`
