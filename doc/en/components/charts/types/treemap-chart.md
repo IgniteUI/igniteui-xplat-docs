@@ -71,9 +71,9 @@ In the following example, the treemap demonstrates the ability of changing it's 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout-configuration"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
            alt="$PlatformShort$ Treemap Layout Configuration"
-           github-src="charts/tree-map/layout-configuration">
+           github-src="charts/tree-map/layout">
 </code-view>
 
 <div class="divider--half"></div>

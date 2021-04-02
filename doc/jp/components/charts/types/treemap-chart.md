@@ -62,7 +62,7 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 - すべてのデータ項目には、`LabelMemberPath` プロパティにマッピングする必要があるデータ列 (文字列など) を少なくとも 1 列含める必要があります。
 
 - すべてのデータ項目には、`ValueMemberPath` プロパティにマッピングする必要がある数値データ列を少なくとも 1 列含める必要があります。
-- データを整理されたタイルに分類するには、オプションで `ParentIdMemberPath` および `IdMemberpath` を使用できます。
+- データを整理されたタイルに分類するには、オプションで `ParentIdMemberPath` および `IdMemberPath` を使用できます。
 
 ## $PlatformShort$ ツリーマップの構成
 
@@ -70,9 +70,9 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout-configuration"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
            alt="$PlatformShort$ ツリーマップ レイアウトの構成"
-           github-src="charts/tree-map/layout-configuration">
+           github-src="charts/tree-map/layout">
 </code-view>
 
 <div class="divider--half"></div>
