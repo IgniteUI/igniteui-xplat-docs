@@ -32,6 +32,9 @@ You can find more information about related chart features in these topics:
 - [Chart Highlighting](chart-highlighting.md)
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`

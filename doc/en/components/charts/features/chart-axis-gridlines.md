@@ -101,6 +101,8 @@ You can find more information about related chart features in these topics:
 
 ## API Members
 
+The following is a list of API members mentioned in the above sections:
+
 - `XamCategoryChart` 
 - `XamFinancialChart`
 - `XAxisInterval` 

@@ -34,5 +34,8 @@ You can find more information about related chart features in these topics:
 - [Chart Markers](chart-markers.md)
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `ToolTipType`
 - `XamCategoryChart`

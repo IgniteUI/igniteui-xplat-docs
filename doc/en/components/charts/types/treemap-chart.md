@@ -20,6 +20,8 @@ In the following example, the treemap demonstrates the 30 largest countries in t
 
 <div class="divider--half"></div>
 
+## Treemap Recommendations
+
 When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways. A second advantage of treemaps is that, by construction, they make efficient use of space. As a result, they can legibly display thousands of items on the screen simultaneously.
 
 - Treemaps are more effective than pie charts and other forms of area charts that often do a poor job of classifying data points and communicating the relative differences of their values.

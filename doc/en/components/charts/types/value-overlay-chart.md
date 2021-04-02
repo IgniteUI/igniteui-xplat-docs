@@ -12,6 +12,8 @@ The $ProductName$ data chart allows for placement of horizontal or vertical line
 
 ## $PlatformShort$ Value Overlay Example
 
+The following example depicts a [Column Chart](column-chart.md) with many horizontal value overlays plotted. 
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
@@ -31,68 +33,22 @@ When using the value overlay with a numeric angle axis, it will appear as a line
 
 It is also possible to show an axis annotation on a `ValueOverlay` to show the value of the overlay on the owning axis. In order to show this, you can set the `IsAxisAnnotationEnabled` property to true.
 
-## Code Example
+## Additional Resources
 
-The following code snippet demonstrates adding a value overlay with axis annotation to the $ProductName$ data chart:
+You can find more information about related chart types in these topics:
 
-```html
-<igx-data-chart #chart height="600px" width="800px" [dataSource]="data">
-  <igx-category-x-axis #xAxis label="Label"></igx-category-x-axis>
-  <igx-numeric-y-axis #yAxis></igx-numeric-y-axis>
+- [Chart Annotations](../features/chart-annotations.md)
+- [Column Chart](area-chart.md)
+- [Line Chart](line-chart.md)
 
-  <igx-column-series [xAxis]="xAxis" [yAxis]="yAxis" valueMemberPath="Value"></igx-column-series>
+## API Members
 
-  <igx-value-overlay [axis]="yAxis" value=5 thickness=5 isAxisAnnotationEnabled=true></igx-value-overlay>
+The following is a list of API members mentioned in the above sections:
 
-</igx-data-chart>
-```
-
-```tsx
-<IgrDataChart height="600px"
-    width="800px"
-    dataSource={this.data} >
-    <IgrCategoryXAxis name="xAxis" label="Label" />
-    <IgrNumericYAxis name="yAxis" />
-
-    <IgrColumnSeries name="series1" xAxisName="xAxis" yAxisName="yAxis" valueMemberPath="Value" />
-    <IgrValueOverlay name="overlay1" axisName="yAxis" value={5} thickness={5} isAxisAnnotationEnabled={true} />
-</IgrDataChart>
-```
-
-```html
-<igc-data-chart id="chart" height="600px" width="800px">
-  <igc-category-x-axis id="xAxis" label="Label"></igc-category-x-axis>
-  <igc-numeric-y-axis id="yAxis"></igc-numeric-y-axis>
-
-  <igc-column-series id="series1" value-member-path="Value"></igc-column-series>
-
-  <igc-value-overlay id="valueOverlay" value="5" thickness="5" is-axis-annotation-enabled=true></igc-value-overlay>
-
-</igc-data-chart>
-```
-
-```ts
-let chart = (document.getElementById("chart") as IgcDataChartComponent);
-chart.dataSource = data;
-
-let xAxis = (document.getElementById("xAxis") as IgcCategoryXAxisComponent);
-let yAxis = (document.getElementById("yAxis") as IgcNumericYAxisComponent);
-
-let series1 = (document.getElementById("series1") as IgcColumnSeriesComponent);
-series1.xAxis = xAxis;
-series1.yAxis = yAxis;
-
-let valueOverlay = (document.getElementById("valueOverlay") as IgcValueOverlayComponent);
-valueOverlay.axis = yAxis;
-```
-
-```razor
-<DataChart Height="100%" Width="100%" >
-    <CategoryXAxis Name="xAxis" DataSource="DataSource" Label="Label" />
-    <NumericYAxis Name="yAxis" MinimumValue="0" MaximumValue="10" />
-
-    <ColumnSeries XAxisName="xAxis" YAxisName="yAxis" DataSource="DataSource" ValueMemberPath="Value" />
-
-    <ValueOverlay AxisName="yAxis" Value="5.0" Thickness="5" IsAxisAnnotationEnabled="true" />
-</DataChart>
-```
+`XamDataChart`
+`ValueOverlay`
+`Axis`
+`Brush`
+`IsAxisAnnotationsEnabled`
+`Series`
+`Thickness`

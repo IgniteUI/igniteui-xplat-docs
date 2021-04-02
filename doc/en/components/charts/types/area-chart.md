@@ -22,9 +22,15 @@ You can create an Area Chart in the `XamCategoryChart` control by binding your d
 
 <div class="divider--half"></div>
 
+## Area Chart Recommendations
+
+### Are $PlatformShort$ Area Charts right for your project?
+
 Area Charts are similar to [Line Charts](line-chart.md) in that data points are plotted and connected by straight line segments, however they differ because with Area Charts, the area between the X-Axis and the line is filled in.
 
-There are several use cases for Area Charts. When you:
+### Area Chart Use Cases
+
+There are several common use cases for choosing an Area Chart:
 
 - Have a large, high-volume data set that fits well with the chart interactions like Panning, Zooming, and Drill-down.
 - Need to compare the trends of your data over time.
@@ -33,18 +39,18 @@ There are several use cases for Area Charts. When you:
 - Need to show data trends for one or more categories for comparative analysis.
 - Need to visualize details time-series data.
 
-Area Charts have the following best practices:
+### Area Chart Best Practices
 
 - Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
 - Order time-series data from left to right.
 - Use transparent colors to ensure that data that is plotted behind another series is not blocked.
 
-Do not use Area Charts when:
+### When Not to Use Area Charts
 
 - You have many (more than 7 or 10) series of data. Your goal is to ensure the chart is readable.
 - Time-series data has similar values (data over the same period). This makes overlapped shaded areas impossible to differentiate.
 
-Data Structure:
+### Area Chart Data Structure
 
 - The data source must be an array or a list of data items (for single series).
 - The data source must be an array of arrays or a list of lists (for multiple series).

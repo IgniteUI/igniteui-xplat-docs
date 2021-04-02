@@ -60,6 +60,9 @@ You can find more information about related chart features in these topics:
 - [Axis Layout](chart-axis-layouts.md)
 
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `XAxisMaximumValue`
 - `XAxisMinimumValue`
 - `YAxisMaximumValue`

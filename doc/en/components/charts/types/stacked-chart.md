@@ -2,15 +2,15 @@
 title: $PlatformShort$ Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Stacked Chart
 _keywords: $PlatformShort$ Charts, Stacked Chart, Infragistics
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
 ---
 # $PlatformShort$ Stacked Chart
 
 The $ProductName$ Stacked Chart is special group of charts that render multiple values of data items as stacked area/polygons, bars, columns, lines, or splines. Standard Stacked Charts render actual values of data items while Stacked 100% Charts render values as percentage of total values.
 
-# $PlatformShort$ Stacked Types
+## $PlatformShort$ Stacked Example
 
-This example show all types of $ProductName$ Stacked Chart that you can render in the `XamDataChart` control.
+The following example initially depicts a stacked column chart that compares the energy generation of international countries for different energy types. The drop-down in this example allows you to switch between all of the different stacked chart types available in the $PlatformShort$ `XamDataChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,7 +21,6 @@ This example show all types of $ProductName$ Stacked Chart that you can render i
 <div class="divider--half"></div>
 
 The following sections demonstrate individual types of $ProductName$ Stacked Charts.
-
 
 ## $PlatformShort$ Stacked Area Chart
 

@@ -43,7 +43,7 @@ You can find more information about related chart features in these topics:
 
 ## API Members
 
-The following table lists API members mentioned in the above sections:
+The following is a list of API members mentioned in the above sections:
 
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
