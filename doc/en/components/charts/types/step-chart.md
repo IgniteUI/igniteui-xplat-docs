@@ -16,8 +16,8 @@ You can create a Step Chart in the `XamCategoryChart` control by binding your da
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend"
-           alt="$PlatformShort$ Step Line Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           alt="$PlatformShort$ Step Line Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>

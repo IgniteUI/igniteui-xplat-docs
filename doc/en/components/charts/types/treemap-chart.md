@@ -22,46 +22,38 @@ In the following example, the treemap demonstrates the 30 largest countries in t
 
 ## Treemap Recommendations
 
+### Are $PlatformShort$ Treemaps right for your project?
+
 When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways. A second advantage of treemaps is that, by construction, they make efficient use of space. As a result, they can legibly display thousands of items on the screen simultaneously.
 
 - Treemaps are more effective than pie charts and other forms of area charts that often do a poor job of classifying data points and communicating the relative differences of their values.
-
 - Treemaps are designed for drill down scenarios. You can continuously drill down into the data set that is represented by smaller rectangles for more efficient data analysis.
-
 - Treemaps are not designed to convey numerical quantities; the intent is to show relative rankings.
 
 Like any other data visualization, a Treemap chart visualization should be used in specific scenarios. It does not solve the same problem that a visualization like a Bar Chart or a Line Chart would. It is really meant for a more complex, richer data display.
 
-<b>Use Cases:</b>
+### Treemap Use Cases
 
-- Have drill-down hierarchical data (data organized as a tree, with branches and sub-branches)
+There are several common use cases for choosing a Treemap. When you:
 
-- Want to illustrate hierarchies of relative weight and comparative values between categories (branches) and subcategories (sub-branches)
+- Have drill-down hierarchical data (data organized as a tree, with branches and sub-branches).
+- Want to illustrate hierarchies of relative weight and comparative values between categories (branches) and subcategories (sub-branches).
+- Want to display large data sets that need a compact, space-efficient visualization.
+- Want to deliver at-a-glance, quick data analysis without precise values. The relative size of the rectangles help identify patterns and/or outliers very quickly.
+- Want to make efficient use of space. Treemaps can legibly display thousands of items on the screen simultaneously.
 
-- Want to display large data sets that need a compact, space-efficient visualization
-
-- Want to deliver at-a-glance, quick data analysis without precise values. The relative size of the rectangles help identify patterns and/or outliers very quickly
-
-- Want to make efficient use of space. Treemaps can legibly display thousands of items on the screen simultaneously
-
-<b>Do not use a Treemap when:</b>
+### When not to Use a Treemap
 
 - You are telling a data story that requires precise values
-
 - You have negative data values
-
 - You have flat, non-hierarchical data
-
 - Your data is similar in size
 
-<b>Data Structure:</b>
+### Treemap Data Structure
 
 - The data source must be an array or a list of data items
-
 - The data source must contain at least one data item otherwise the map will not render any nodes.
-
 - All data items must contain at least one data column (e.g. string) which should be mapped to the `LabelMemberPath` property.
-
 - All data items must contain at least one numeric data column which should be mapped using the `ValueMemberPath` property.
 - To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`.
 
@@ -78,30 +70,26 @@ In the following example, the treemap demonstrates the ability of changing it's 
 
 <div class="divider--half"></div>
 
-<b>Layout Types:</b>
+### Layout Types
 
 The Treemap chart displays the relative weight of data. It uses a variety of algorithms to help it determine how the layout of its data items should occur:
 
-- SliceAndDiced - layout algorithm aims to preserve the initial order at the expense of the aspect ratio.
-
-- Squarified - layout tiling algorithm has a better aspect ratio than the SliceAndDice and keeps a better order than Squarified.
-
-- Stripped - layout type algorithm obtains the best aspect ratio but the objects are arranged by size.
+- `SliceAndDiced` - layout algorithm aims to preserve the initial order at the expense of the aspect ratio.
+- `Squarified` - layout tiling algorithm has a better aspect ratio than the `SliceAndDice` and keeps a better order than Squarified.
+- `Stripped` - layout type algorithm obtains the best aspect ratio but the objects are arranged by size.
 
 The Treemap allows you to choose the algorithm that is best for your requirements, defaulting to use the Squarified method. It also includes the ability to allow you to colorize nodes using two mechanisms:
 
 - A group-based mechanism that colors items with like values
-
 - A scale-based mechanism similar to a map choropleth, which gradiates node colors based on their value.
 
-<b>Layout Orientation:</b>
+### Layout Orientation
 
 `LayoutOrientation` property enables the user to set the direction in which the nodes of the hierarchy will be expanded.
 
 Note that the `LayoutOrientation` property works with the layout types SliceAndDice and Strip.
 
 - `Horizontal` – the child nodes are going to be stacked horizontally(SliceAndDice).
-
 - `Vertical` – the child nodes are going to be stacked vertically (SliceAndDice).
 
 ## $PlatformShort$ Treemap Styling
@@ -117,7 +105,17 @@ In the following example, the treemap demonstrates the ability of changing the l
 
 <div class="divider--half"></div>
 
+## Additional Resources
+
+You can find more information about related chart types in these topics:
+
+- [Area Chart](area-chart.md)
+- [Shape Chart](shape-chart.md)
+
 ## API Members
+
+The following is a list of API members mentioned in the above sections:
+
 - `XamTreemap`
 - `LayoutOrientation`
 - `LayoutType`

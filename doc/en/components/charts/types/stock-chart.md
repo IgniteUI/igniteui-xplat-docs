@@ -20,6 +20,10 @@ You can create this type of chart with the `XamFinancialChart` control by bindin
 
 <div class="divider--half"></div>
 
+## Stock Chart Recommendations
+
+### Are $PlatformShort$ Stock Charts right for your project?
+
 The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
 - The body of the candlestick chart shows the open and close trade values (O/C).
@@ -30,6 +34,13 @@ The typical stock chart is represented with ticker data in a candlestick chart w
 - A black or red candle represents a price with a lower closing price than the prior candle's close.
 - A white or green candle represents a higher closing price than the prior candle's close.
 
+The Stock Chart can be set to display one of the following:
+
+- Candlestick Chart
+- Bar Chart
+- Column Chart
+- Line Chart
+
 As a Stock Chart is meant to allow the user to perform data analysis functions, it includes interactive elements such as:
 
 - Time-based Filters
@@ -39,14 +50,7 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 - Trend Lines
 - Navigation / Zoombar View
 
-The Stock Chart can be set to display one of the following:
-
-- Candlestick Chart
-- Bar Chart
-- Column Chart
-- Line Chart
-
-Data Structure:
+### Stock Chart Data Structure:
 
 - The data source must be an array or a list of data items.
 - The data source must contain at least one data item.
@@ -56,7 +60,6 @@ Data Structure:
 - All data items must contain 5 numeric columns for Open, High, Low, Close and Volume for a Candlestick chart.
 
 ## $PlatformShort$ Stock Chart with Multiple Series
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -69,7 +72,6 @@ Data Structure:
 ## $PlatformShort$ Stock Chart
 
 In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

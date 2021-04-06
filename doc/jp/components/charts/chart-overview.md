@@ -41,7 +41,7 @@ $PlatformShort$ 棒チャート (棒グラフ) は、さまざまなカテゴリ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            alt="凡例付きの $PlatformShort$ 棒チャート" >
 </code-view>
 
@@ -65,7 +65,7 @@ $PlatformShort$ 折れ線チャート、または折れ線グラフは、傾向�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
            alt="凡例付きの $PlatformShort$ 折れ線チャート" >
 </code-view>
 
@@ -89,7 +89,7 @@ $PlatformShort$ エリア チャートは、直線セグメントで接続され
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
            alt="凡例付きの $PlatformShort$ エリア チャート" >
 </code-view>
 
@@ -138,7 +138,7 @@ $PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
            alt="凡例付きの $PlatformShort$ 縦棒チャート" >
 </code-view>
 
@@ -210,7 +210,7 @@ $PlatformShort$ スプライン チャート、またはスプライン グラ�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
            alt="凡例付きの $PlatformShort$ スプライン チャート" >
 </code-view>
 
@@ -222,7 +222,7 @@ $PlatformShort$ スプライン チャート、またはスプライン グラ�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
            alt="凡例付きの $PlatformShort$ ステップ折れ線チャート" >
 </code-view>
 

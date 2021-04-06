@@ -12,8 +12,8 @@ $PlatformShort$ Spline Chart belongs to a group of Category Series and it is ren
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
-           alt="$PlatformShort$ Spline Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           alt="$PlatformShort$ Spline Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>

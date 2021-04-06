@@ -40,8 +40,8 @@ The $PlatformShort$ Bar Chart, or Bar Graph is among the most common category ch
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
-           alt="$PlatformShort$ Bar Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           alt="$PlatformShort$ Bar Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -64,8 +64,8 @@ The $PlatformShort$ Line Chart, or Line Graph is a type of category line graph s
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
-           alt="$PlatformShort$ Line Chart With Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           alt="$PlatformShort$ Line Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -88,8 +88,8 @@ The $PlatformShort$ Area Chart is rendered using a collection of points connecte
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend"
-           alt="$PlatformShort$ Area Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           alt="$PlatformShort$ Area Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -137,8 +137,8 @@ The $PlatformShort$ Column Chart, or Column Graph is among the most common categ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend"
-           alt="$PlatformShort$ Column Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           alt="$PlatformShort$ Column Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -209,8 +209,8 @@ The $PlatformShort$ Spline Chart, or Spline Graph is a type of category line gra
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
-           alt="$PlatformShort$ Spline Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           alt="$PlatformShort$ Spline Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -221,8 +221,8 @@ A Step Line Chart, or Step Line Graph, is a category charts that renders a colle
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend"
-           alt="$PlatformShort$ Step Line Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           alt="$PlatformShort$ Step Line Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -260,37 +260,37 @@ Visualize your data by creating new composite views and overlapping multiple ser
 
 Display millions of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device.
 
-#### Modular Design
+### Modular Design
 
 The $PlatformShort$ chart is designed for modularity. Only features that are needed are part of your deployment, so you get the smallest possible footprint in your rendered pages.
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"/>
 
-#### Smart Data Binding
+### Smart Data Binding
 
 Let us choose the chart type. Our smart Data Adapter automatically chooses the best chart type for the data. All you do is set the data source and we do the rest.
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
 
-#### Trend Lines
+### Trend Lines
 
 We support every trend line you’ll ever need, including linear (x), quadratic (x2), cubic (x3), quartic (x4), quintic (x5), logarithmic (logn x), exponential (ex), and power law (axk + o(xk)) trend lines.
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
-#### Interactive Panning and Zooming
+### Interactive Panning and Zooming
 
 Use single or multi-touch, keyboard, zoom bar, mouse wheel, drag-select for any rectangular region with the mouse to zoom in for close-up look at data points, scroll data history, or pan data regions.
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
 
-#### Markers, Tooltips, and Templates
+### Markers, Tooltips, and Templates
 
 Use one of 10 marker types to highlight data or use simple tooltips or multi-axis and multi-series chart tooltips with custom chart templates to give more context and meaning to your data.
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
-#### High-Volume Data Handling
+### High-Volume Data Handling
 
 Optimize the performance of your financial chart to render millions of data points by modifying the `changeDetection` setting. This setting lets you control how $PlatformShort$ treats your data array when looking for changes and keeping your high-volume chart smoothly running.
 
@@ -309,5 +309,5 @@ If you are considering any other $PlatformShort$ Charts on the market, here are 
 <!-- Angular -->
 - Ignite UI for Angular is built on Angular for the Angular developer, with zero 3rd party dependencies. We are 100% optimized for Angular.
 - We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular components.
-<!-- end: Angular>
+<!-- end: Angular -->
 

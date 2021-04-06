@@ -312,7 +312,7 @@
     "name": "Charts (NEW)",
     "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Blazor"],
@@ -355,7 +355,7 @@
   {
     "name": "Composite Chart",
     "href": "charts/types/composite-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Donut Chart",
@@ -371,7 +371,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Gantt Chart",
     "href": "charts/types/gantt-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Line Chart",
@@ -382,7 +382,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Network Chart",
     "href": "charts/types/network-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Pie Chart",
@@ -403,7 +403,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "Pyramid Chart",
     "href": "charts/types/pyramid-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "Radial Chart",
@@ -458,47 +458,47 @@
         {
           "name": "Axis Gridlines",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Axis Layouts",
           "href": "charts/features/chart-axis-layouts.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Axis Options",
           "href": "charts/features/chart-axis-options.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Annotations",
           "href": "charts/features/chart-annotations.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Animations",
           "href": "charts/features/chart-animations.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Markers",
           "href": "charts/features/chart-markers.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Tooltips",
           "href": "charts/features/chart-tooltips.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "Chart Navigation",
@@ -1012,11 +1012,6 @@
   {
     "name": "Maps",
     "header": true
-  },
-  {
-    "name": "Treemap",
-    "href": "treemap-overview.md",
-    "status": ""
   },
   {
     "name": "Map",

@@ -17,7 +17,7 @@ $PlatformShort$ 棒チャート、棒グラフ、または水平棒チャート�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            alt="$PlatformShort$ 凡例付きの $PlatformShort$ 棒チャート" >
 </code-view>
 

@@ -13,7 +13,7 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
            alt="凡例付きの $PlatformShort$ 縦棒チャート" >
 </code-view>
 
