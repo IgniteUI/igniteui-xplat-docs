@@ -13,7 +13,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
            alt="凡例付きの $PlatformShort$ スプライン チャート" >
 </code-view>
 

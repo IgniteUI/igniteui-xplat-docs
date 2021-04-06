@@ -12,8 +12,8 @@ The $ProductName$ Column Chart is rendered using a collection of rectangles 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-legend"
-           alt="$PlatformShort$ Column Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           alt="$PlatformShort$ Column Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>

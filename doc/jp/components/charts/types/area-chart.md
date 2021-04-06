@@ -17,7 +17,7 @@ $ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
            alt="$PlatformShort$ 凡例付きの $PlatformShort$ エリア チャート" >
 </code-view>
 

@@ -15,7 +15,7 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
            alt="凡例付きの $PlatformShort$ ステップ折れ線チャート" >
 </code-view>
 

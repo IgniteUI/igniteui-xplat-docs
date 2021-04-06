@@ -19,7 +19,7 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
            alt="$PlatformShort$ 凡例付きの $PlatformShort$ 折れ線チャート" >
 </code-view>
 

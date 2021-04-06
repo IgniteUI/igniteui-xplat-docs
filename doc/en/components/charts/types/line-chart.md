@@ -18,8 +18,8 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-legend"
-           alt="$PlatformShort$ Line Chart With Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           alt="$PlatformShort$ Line Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>

@@ -16,8 +16,8 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-with-legend"
-           alt="$PlatformShort$ Bar Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           alt="$PlatformShort$ Bar Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>

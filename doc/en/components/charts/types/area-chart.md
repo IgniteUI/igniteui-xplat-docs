@@ -16,8 +16,8 @@ You can create an Area Chart in the `XamCategoryChart` control by binding your d
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-with-legend"
-           alt="$PlatformShort$ Area Chart with Legend" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           alt="$PlatformShort$ Area Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
