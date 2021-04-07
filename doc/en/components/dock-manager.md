@@ -87,6 +87,12 @@ this.dockManager.layout = {
 };
 ```
 
+With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether to allow floating panels to be resized, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
+
+```ts
+this.dockManager.allowFloatingPanesResize = false;
+```
+
 To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [`slot`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [`contentId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to `100%` for predictable response when the end-user is resizing panes.
 
 ```html
@@ -268,6 +274,7 @@ const layout: IgcDockManagerLayout = {
             floatingLocation: { x: 80, y: 80 },
             floatingWidth: 200,
             floatingHeight: 150,
+            floatingResizable: true,
             panes: [
                 {
                     type: IgcDockManagerPaneType.contentPane,
@@ -280,7 +287,7 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. With the [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property you can determine whether floating pane resizing is allowed, the default value of the property is `false`. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
 
 ### Active Pane
 
@@ -327,44 +334,41 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Keyboard Navigation
 
-Keyboard navigation in the **Dock Manager** provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the **Dock Manager** and allows to navigate through - documents, tabs and panes. With keyboard navigation the user can traverse over in tabs, which are inside in a [Document host]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html), also there is oportunity for spliting the view in multiple directions when there is a [Tab group]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html) with multiple tabs in it. Another key combinations is for docking different type of panes to the [`rootPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#rootpane). 
+Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, spliting the view in multiple directions through docking the active pane, etc.
 
 
-Here is a full set of the key combinations:
+The shortcuts are as follows:
 
-### Docking Combinations
+### Docking
 
 - <kbd>Cmd/Ctrl + Shift + Arrow up</kbd> Docks to global top
 - <kbd>Cmd/Ctrl + Shift + Arrow down</kbd> Docks to global bottom
 - <kbd>Cmd/Ctrl + Shift + Arrow right</kbd> Docks to global right
 - <kbd>Cmd/Ctrl + Shift + Arrow left</kbd> Docks to global left
+- <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
-### Tab Key Combinations
-
- - <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
- - <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
- - <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
- - <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
- - <kbd>Cmd/Ctrl + F6</kbd> Focus next tab in document host
- - <kbd>Cmd/Ctrl + Arrow right</kbd> Focus next tab in document host
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> Focus previous tab in document host
- - <kbd>Cmd/Ctrl + Arrow left</kbd> Focus previous tab in document host
- - <kbd>Alt + F3</kbd> Closes tab/document
+### Navigating
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focus next tab in document host
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focus previous tab in document host
+ - <kbd>Alt + F6</kbd> Focus next content pane
+ - <kbd>Alt + Shift + F6</kbd> Focus previous content pane
 
 ### Pane Navigator
 
-With the key combinations for the Pane Navigator you can iterate forward and backwards through panes and documents.
+Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>Cmd/Ctrl + F7</kbd> Shows the navigator and iterate panes and documents starting from the first document forward
- - <kbd>Cmd/Ctrl + F8</kbd> Shows the navigator and iterate panes and documents starting from the first document forward
- - <kbd>Alt + F7</kbd> Shows the navigator and iterate panes and documents starting from the first pane forward
- - <kbd>Alt + F8</kbd> Shows the navigator and iterate panes and documents starting from the first pane forward
- - <kbd>Cmd/Ctrl + Shift + F7</kbd> Shows the navigator and iterate panes and documents starting from the last document backwards
- - <kbd>Cmd/Ctrl + Shift + F8</kbd> Shows the navigator and iterate panes and documents starting from the last document backwards
- - <kbd>Alt + Shift + F7</kbd> Shows the navigator and iterate panes and documents starting from the last pane backwards
- - <kbd>Alt + Shift + F8</kbd> Shows the navigator and iterate panes and documents starting from the last pane backwards
+ - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  Starts from the first document forward
+ - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> Starts from the first pane forward
+ - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> Starts from the last document backwards
+ - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> Starts from the last pane backwards
 
-Practice all of the above mentioned actions in the demo sample [`demo`](#web-components-dock-manager-overview-example). 
+### Other
+ - <kbd>Alt + F3</kbd> Closes the active pane
+
+Practice all of the above mentioned actions in the sample [`demo`](#web-components-dock-manager-overview-example). 
 
 ## Themes
 
