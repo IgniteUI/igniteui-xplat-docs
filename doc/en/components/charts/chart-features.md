@@ -88,6 +88,19 @@ You can navigate the chart by zooming and panning with the mouse, keyboard, and 
 
 <div class="divider--half"></div>
 
+### Overlays
+
+Overlays allows you to annotate important values and thresholds by plotting horizontal or vertical lines in charts. You can learn more about the [Chart Overlays](features/chart-overlays.md) features here.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
+           alt="$PlatformShort$ Value Overlay Example"
+           github-src="charts/data-chart/series-value-overlay">
+</code-view>
+
+<div class="divider--half"></div>
+
 ### Tooltips
 
 Display all information relevant to the particular series type via Tooltips. There are different tooltips that can be enabled, such as Item-level and Category-level tooltips. You can learn more about the [Chart Tooltips](features/chart-tooltips.md) features here.

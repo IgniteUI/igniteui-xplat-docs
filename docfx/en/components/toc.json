@@ -441,11 +441,6 @@
     "status": ""
   },
   {
-    "name": "Overlay Chart",
-    "href": "charts/types/value-overlay-chart.md",
-    "status": ""
-  },
-  {
     "name": "Treemap",
     "href": "charts/types/treemap-chart.md",
     "status": ""
@@ -493,6 +488,11 @@
         {
           "name": "Chart Navigation",
           "href": "charts/features/chart-navigation.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Overlays",
+          "href": "charts/features/chart-overlays.md",
           "status": ""
         },
         {

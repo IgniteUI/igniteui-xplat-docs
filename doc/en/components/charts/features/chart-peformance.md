@@ -205,7 +205,7 @@ this.LineSeries.Resolution = 10;
 
 ### Chart Overlays
 
-Enabling [Chart Overlays](value-overlay-chart.md) will slightly decrease performance of the $ProductShort$ chart.
+Enabling [Chart Overlays](chart-overlays.md) will slightly decrease performance of the $ProductShort$ chart.
 
 ### Chart Trendlines
 
@@ -445,7 +445,7 @@ You can find more information about related chart types in these topics:
 - [Chart Annotations](chart-annotations.md)
 - [Chart Highlighting](chart-highlighting.md)
 - [Chart Markers](chart-markers.md)
-- [Chart Overlays](value-overlay-chart.md)
+- [Chart Overlays](chart-overlays.md)
 - [Chart Trendlines](chart-trendlines.md)
 
 ## API Members
