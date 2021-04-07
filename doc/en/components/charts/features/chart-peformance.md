@@ -11,13 +11,15 @@ $PlatformShort$ charts are optimized for high performance of rendering millions 
 
 ## $PlatformShort$ Performance Example
 
-The following example demonstrates how you can render up to 1 million of data points while the `XamCategoryChart` keeps providing smooth performance when end-users tries zooming in/out or navigating chart content.
+The following example demonstrates how you can render 1 million of data points while the `XamCategoryChart` keeps providing smooth performance when end-users tries zooming in/out or navigating chart content.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-performance"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
            alt="$PlatformShort$ Chart Performance Example" >
 </code-view>
+
+<div class="divider--half"></div>
 
 ## Chart Performance Guidelines
 
