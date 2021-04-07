@@ -6,71 +6,77 @@ mentionedTypes: ["XamDataChart", "BubbleSeries", "ScatterSeries"]
 ---
 # $PlatformShort$ Bubble Chart
 
-$PlatformShort$ Bubble Chart is a group of series that show markers with variable scaling to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. The x and y coordinates of the data point are determined by two numeric data columns. The Bubble Series draw attention to uneven intervals or clusters of data. These types of series are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Bubble series can also be used to organize data chronologically (even if the data is not in chronological order).
+$PlatformShort$ Bubble Chart is a type of [Scatter Charts](scatter-chart.md) that show markers with variable scaling to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. These coordinates of the data point are determined by two numeric data columns. The Bubble Chart draws attention to uneven intervals or clusters of data. This chart is often used to plot scientific data, and can highlight the deviation of collected data from predicted results. The Bubble Chart has many of the characteristics of the [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart) but with the option to have various radius scale sizes.
 
 ## $PlatformShort$ Bubble Chart Example
 
-You can create this type of chart in `XamDataChart` control by binding your data to the `BubbleSeries`, as shown in the example below.
+You can create the Bubble Chart in `XamDataChart` control using the `BubbleSeries` and two numeric axes, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           alt="$PlatformShort$ Bubble Chart" >
+           alt="$PlatformShort$ Bubble Chart Example" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Bubble Chart with Single Series
 
-The Bubble Chart contains many of the characteristics of the [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart) but with the option to have various radius scale sizes.
+You can bind your data to `ItemsSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
-           alt="$PlatformShort$ Bubble Chart" >
+           alt="$PlatformShort$ Bubble Chart with Single Series" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Bubble Chart with Multiple Series
 
-The Bubble Chart contains many of the characteristics of the [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart) but with the option to have various radius scale sizes.
-
-In this example, the Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
-
+In $PlatformShort$ Bubble Chart, binding multiple data sources works by setting each new data source to `ItemsSource` property of a additional `BubbleSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           alt="$PlatformShort$ Bubble Chart" >
+           alt="$PlatformShort$ Bubble Chart with Multiple Series" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Bubble Chart Styling
 
-The Bubble Chart contains many of the characteristics of the [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart) but with the option to have various radius scale sizes and fill scale colors.
-
-In this example, the Bubble Chart is comparing the total births and deaths between Africa and Europe in 2015.
-
+In $PlatformShort$ Bubble Chart, you can customize shape of bubble markers using `MarkerType` property, their size with `RadiusScale` property, and their appearance using `MarkerBrush`, `MarkerOutline`, `MarkerThickness` properties. In addition, you can also color bubble markers based on a data column using `FillMemberPath` and `FillScale` properties. In this example, usage of above properties is demonstrated.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
-           alt="$PlatformShort$ Bubble Chart" >
+           alt="$PlatformShort$ Bubble Chart Styling" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Additional Resources
-- [Scatter Chart](scatter-chart.md)
-- [Shape Chart](shape-chart.md)
+
+- [Scatter Charts](scatter-chart.md)
+- [Shape Charts](shape-chart.md)
 
 
 ## API Members
+
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Bubble Chart     | `XamDataChart`     | `BubbleSeries`
-Scatter Marker   | `XamDataChart`     | `ScatterSeries`
+- `XamDataChart`
+- `BubbleSeries`
+- `ScatterSeries`
+- `ItemsSource`
+- `FillMemberPath`
+- `FillScale`
+- `MarkerType`
+- `MarkerBrush`
+- `MarkerOutline`
+- `MarkerThickness`
+- `RadiusScale`
+- `RadiusMemberPath`
+- `XMemberPath`
+- `YMemberPath`
