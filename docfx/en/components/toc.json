@@ -491,6 +491,11 @@
           "status": ""
         },
         {
+          "name": "Chart Performance",
+          "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
           "name": "Chart Tooltips",
           "href": "charts/features/chart-tooltips.md",
           "status": ""
