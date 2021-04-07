@@ -1,16 +1,16 @@
 ---
 title: $PlatformShort$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
-_keywords: $PlatformShort$ Charts, Stock Chart, Infragistics
+_keywords: $PlatformShort$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
 mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 ---
 # $PlatformShort$ Stock Chart
 
-$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock charts show stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
+$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Financial Chart or Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock ticker represents the company data (a ticker symbol, usually 1 to 5 characters) that you are analyzing. Stock Chart shows stock prices for a ticker over time in a Time Series X-Axis. Stock charts also show information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for each time-period. The $PlatformShort$ Stock Chart offers multiple ways in which the data can then be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
 
 ## $PlatformShort$ Stock Chart Example
 
-You can create this type of chart with the `XamFinancialChart` control by binding your data and setting `ChartType` property to `Line` value, as shown in the example below.
+You can create Stock Chart using the `XamFinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -298,13 +298,19 @@ In this example, the stock chart is plotting revenue for United States.
 <div class="divider--half"></div>
 
 ## Additional Resources
-The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Stock Chart      | `XamFinancialChart`     | `FinancialChart`
+You can find more information about related chart features in these topics:
+
+- [Chart Animations](../features/chart-Animations.md)
+- [Chart Annotations](../features/chart-annotations.md)
+- [Chart Navigation](../features/chart-navigation.md)
+- [Chart Trendlines](../features/chart-trendlines.md)
+- [Chart Performance](../features/chart-Performance.md)
 
 ## API Members
+
+The following table lists API members mentioned in the above sections:
+
 - `ChartType`
 - `CrosshairsSnapToData`
 - `IndicatorTypes`
