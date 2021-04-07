@@ -282,7 +282,8 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/zoomslider*.md');
         }
         // uncomment to test faster build
-        // sources.push('!doc/**/data-grid*.md');
+        sources.push('!doc/**/*grid*.md');
+        // sources.push('!doc/**/*chart*.md');
         // sources.push('!doc/**/data-chart*.md');
         // sources.push('!doc/**/financial-chart*.md');
         // sources.push('!doc/**/category-chart*.md');
@@ -297,8 +298,12 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/*graph.md');
         // sources.push('!doc/**/treemap*.md');
         // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/charts/types/sparkline-chart');
-        // sources.push('!doc/**/*chart*.md');
+        // sources.push('!doc/**/sparkline*.md');
+        // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/jp/**/*.md');
+        // sources.push('!doc/**/kr/**/*.md');
+        // sources.push('!doc/**/types/**/*.md');
+        // sources.push('!doc/**/types/**/*.md');
 
         gulp.src(sources)
         .pipe(transformFiles())
@@ -374,8 +379,11 @@ exports.generateTocJson = generateTocJson;
 // converts "toc.json" to "toc.yml" file - this is called before building docs
 function generateTocYML(cb) {
 
+    console.log('generateTocYML PLAT=' + PLAT + ' LANG=' + LANG);
     // PLAT defaults to "React" if --plat argument is not specified
-    generateTocFor(PLAT, 'en');
+    // LANG defaults to "en"    if --lang argument is not specified
+    generateTocFor(PLAT, LANG);
+    // generateTocFor(PLAT, 'en');
     // generateTocFor(PLAT, 'jp');
     // generateTocFor(PLAT, 'kr');
     cb();
@@ -515,9 +523,9 @@ exports.watch = watch = gulp.series(buildDocfx_All, watchCore);
 function logArgs(cb) {
     console.log('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
     ensureEnvironment();
-    let platformName = "Angular";
+    let platformName = PLAT; //"Angular";
 
-    log("docs " + JSON.stringify(docs[platformName], null, '  ') + " ... ");
+    // log("docs " + JSON.stringify(docs[platformName], null, '  ') + " ... ");
     let isFirstRelease = docs[platformName].isFirstRelease;
     log("isFirstRelease " + isFirstRelease + " ... ");
 
