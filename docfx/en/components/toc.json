@@ -471,13 +471,13 @@
           "status": ""
         },
         {
-          "name": "Chart Annotations",
-          "href": "charts/features/chart-annotations.md",
+          "name": "Chart Animations",
+          "href": "charts/features/chart-animations.md",
           "status": ""
         },
         {
-          "name": "Chart Animations",
-          "href": "charts/features/chart-animations.md",
+          "name": "Chart Annotations",
+          "href": "charts/features/chart-annotations.md",
           "status": ""
         },
         {
@@ -491,8 +491,19 @@
           "status": ""
         },
         {
+          "name": "Chart Navigation",
+          "href": "charts/features/chart-navigation.md",
+          "status": ""
+        },
+        {
           "name": "Chart Performance",
           "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Blazor"],
+          "name": "Chart Synchronization",
+          "href": "charts/features/chart-synchronization.md",
           "status": ""
         },
         {
@@ -503,17 +514,6 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
-        },
-        {
-          "name": "Chart Navigation",
-          "href": "charts/features/chart-navigation.md",
-          "status": ""
-        },
-        {
-          "exclude": ["Blazor"],
-          "name": "Chart Synchronization",
-          "href": "charts/features/chart-synchronization.md",
           "status": ""
         },
         {
