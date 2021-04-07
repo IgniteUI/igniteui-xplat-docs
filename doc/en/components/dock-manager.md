@@ -87,7 +87,7 @@ this.dockManager.layout = {
 };
 ```
 
-With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether to allow floating panes to be resized, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
+The [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property, which by default is set to true, determines whether a specific floating pane can be resized. This value will overwrite the value of the global allowFloatingPanesResize property.
 
 ```ts
 this.dockManager.allowFloatingPanesResize = false;
@@ -334,7 +334,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Keyboard Navigation
 
-Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, spliting the view in multiple directions through docking the active pane, etc.
+Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
 
 
 The shortcuts are as follows:
@@ -351,10 +351,10 @@ The shortcuts are as follows:
 - <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focus next tab in document host
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focus previous tab in document host
- - <kbd>Alt + F6</kbd> Focus next content pane
- - <kbd>Alt + Shift + F6</kbd> Focus previous content pane
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Alt + F6</kbd> Focuses next content pane
+ - <kbd>Alt + Shift + F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
