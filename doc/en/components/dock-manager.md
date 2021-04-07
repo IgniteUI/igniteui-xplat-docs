@@ -87,7 +87,7 @@ this.dockManager.layout = {
 };
 ```
 
-With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether to allow floating panels to be resized, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
+With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether to allow floating panes to be resized, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
 
 ```ts
 this.dockManager.allowFloatingPanesResize = false;
@@ -287,7 +287,7 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. With the [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property you can determine whether floating pane resizing is allowed, the default value of the property is `false`. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. With the [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property you can set whether floating pane resizing is allowed, the default value of the property is `false`. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
 
 ### Active Pane
 
