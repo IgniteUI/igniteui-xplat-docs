@@ -282,7 +282,7 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/zoomslider*.md');
         }
         // uncomment to test faster build
-        sources.push('!doc/**/*grid*.md');
+        // sources.push('!doc/**/*grid*.md');
         // sources.push('!doc/**/*chart*.md');
         // sources.push('!doc/**/data-chart*.md');
         // sources.push('!doc/**/financial-chart*.md');
