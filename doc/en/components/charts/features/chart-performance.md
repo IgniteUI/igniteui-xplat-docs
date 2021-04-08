@@ -399,7 +399,7 @@ Axis Main Line       | `Stroke`, `StrokeThickness`
 Axis Titles          | `Title`, `TitleAngle`
 Axis Strips          | `Strip`
 
-## Performance In Financial Chart
+## Performance in Financial Chart
 
 In addition to above performance guidelines, the $ProductShort$ `XamFinancialChart` control has the following unique features that affect performance.
 
@@ -424,7 +424,7 @@ Setting the `VolumeType` property can have the following impact on chart perform
 * `Area` - is more expensive to render than the `Line` volume type.
 * `Column` - is more expensive to render than the `Area` volume type and it is recommended when rendering volume data of 1-3 stocks.
 
-## Performance In Data Chart
+## Performance in Data Chart
 
 In addition to the general performance guidelines, the $ProductShort$ `XamDataChart` control has the following unique features that affect performance.
 
