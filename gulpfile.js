@@ -4,14 +4,11 @@ var del = require('del');
 var flatten = require('gulp-flatten');
 var es = require('event-stream');
 var path = require('path');
-var exec = require('child_process').exec;
+const { buildDocfx } = require('igniteui-docfx-template');
 
 const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
 const argv = require('yargs').argv;
 const fs = require('fs');
-const environmentVariablesPreConfig = require('./node_modules/igniteui-docfx-template/post-processors/PostProcessors/EnvironmentVariables/preconfig.json');
 
 var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2020.1/'
 
@@ -36,8 +33,7 @@ let DOCFX_BASE = {
 
 let DOCFX_PATH = `${DOCFX_BASE[LANG]}`;
 let DOCFX_CONF = `${DOCFX_PATH}/docfx.json`;
-let DOCFX_TEMPLATE = path.join(__dirname, `./node_modules/igniteui-docfx-template/template`);
-let DOCFX_TEMPLATE_LOCAL = path.join(__dirname, `./dist/igniteui-docfx-template/template`);
+let DOCFX_TEMPLATE_GLOBAL = path.join(__dirname, `./node_modules/igniteui-docfx-template/template/bundling.global.json`);
 let DOCFX_SITE = `${DOCFX_PATH}/_site`;
 let DOCFX_ARTICLES = `${DOCFX_PATH}/components`;
 
@@ -73,25 +69,9 @@ function ensureEnvironment() {
 
     DOCFX_PATH = `${DOCFX_BASE[LANG]}`;
     DOCFX_CONF = `${DOCFX_PATH}/docfx.json`;
-    DOCFX_TEMPLATE = path.join(__dirname, `./node_modules/igniteui-docfx-template/template`);
-    DOCFX_TEMPLATE_LOCAL = path.join(__dirname, `./dist/igniteui-docfx-template/template`);
     DOCFX_SITE = `${DOCFX_PATH}/_site`;
     DOCFX_ARTICLES = `${DOCFX_PATH}/components`;
 }
-
-// corrects h1-h5 styles by overriding styles-bundle.min in igniteui-docfx-template
-function overrideTemplateStyles(cb) {
-    let templatePath = "./node_modules/igniteui-docfx-template/template/styles/bundles";
-    console.log(">> overriding " + templatePath + "/styles-bundle.min.css");
-
-    gulp.src("./override/styles-bundle.min.css")
-    .pipe(gulp.dest(templatePath));
-
-    if (cb !== undefined){
-        cb();
-    }
-}
-exports.overrideTemplateStyles = overrideTemplateStyles;
 
 function readMappings() {
     return es.map(function(file, cb) {
@@ -142,24 +122,6 @@ function transformStaticFiles(platformName) {
       for (var i = 0; i < replacements.length; i++) {
           fileContent = fileContent.replace(new RegExp(replacements[i].name, "gm"), replacements[i].value);
       }
-      file.contents = Buffer.from(fileContent);
-      cb(null, file);
-    });
-  }
-
-  function transformHeaderTemplate(platformName) {
-    ensureEnvironment();
-    return es.map(function(file, cb) {
-      if (!file.path.indexOf("head.templ.partial")) {
-        cb(null, file);
-        return;
-      }
-
-      var fileContent = file.contents.toString();
-      var typeName = path.basename(path.dirname(file.path))
-
-      fileContent = fileContent.replace(new RegExp("Native Angular", "gm"), "Native " + platformName);
-
       file.contents = Buffer.from(fileContent);
       cb(null, file);
     });
@@ -238,6 +200,41 @@ exports.updateApi = updateApi = gulp.series(
     updateApiWebComponents,
 );
 
+function updateApiSection(cb) {
+    ensureEnvironment();
+
+    gulp.src([
+    // 'doc/en/**/gantt-chart.md',
+    // 'doc/en/**/area-chart.md',
+    // 'doc/en/**/types/*.md',
+    'doc/en/**/features/chart-*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        // let markdownContent = file.contents.toString();
+        // read converted .yml to .json above and simplify TOC structure:
+        // let newJson = transformer.simplifyJson(orgJson, 'Blazor');
+        // fs.writeFileSync(tocOutputPath, newJson);
+        var filePath = file.dirname + "\\" + file.basename
+        console.log('updating API Section: ' + filePath);
+        var fileContent = file.contents.toString();
+        if (transformer) {
+            // file.contents = Buffer.from(transformer.updateApiSection(fileContent));
+            var newContent = transformer.updateApiSection(fileContent);
+            fs.writeFileSync(filePath, newContent);
+        }
+
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        cb();
+    })
+    .on("error", (err) => {
+        console.log("ERROR in updateApiSection()");
+        cb(err);
+    });
+}
+exports.updateApiSection = updateApiSection;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;
@@ -245,7 +242,6 @@ function buildPlatform(cb) {
     log("=========================================================");
     log("building " + PLAT + " docs for " + ENV_TARGET + " environment");
     ensureEnvironment();
-    overrideTemplateStyles();
 
     // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
     let isFirstRelease = docs[platformName].isFirstRelease;
@@ -270,6 +266,8 @@ function buildPlatform(cb) {
             // excluding topics for controls that are not in Angular product, e.g. Data-grid
             sources.push('!doc/**/dock-manager*.md');
             sources.push('!doc/**/data-grid*.md');
+            sources.push('!doc/**/date-picker.md');
+            sources.push('!doc/**/multi-column-combobox.md');
         } else if (platformName == "Blazor") {
             // excluding topics for controls that are not in Blazor product or API is broken for these components/features
             // sources.push('!doc/**/dock-manager*.md');
@@ -284,7 +282,8 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/zoomslider*.md');
         }
         // uncomment to test faster build
-        // sources.push('!doc/**/data-grid*.md');
+        // sources.push('!doc/**/*grid*.md');
+        // sources.push('!doc/**/*chart*.md');
         // sources.push('!doc/**/data-chart*.md');
         // sources.push('!doc/**/financial-chart*.md');
         // sources.push('!doc/**/category-chart*.md');
@@ -299,8 +298,12 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/*graph.md');
         // sources.push('!doc/**/treemap*.md');
         // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/sparkline.md');
-        // sources.push('!doc/**/*chart*.md');
+        // sources.push('!doc/**/sparkline*.md');
+        // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/jp/**/*.md');
+        // sources.push('!doc/**/kr/**/*.md');
+        // sources.push('!doc/**/types/**/*.md');
+        // sources.push('!doc/**/types/**/*.md');
 
         gulp.src(sources)
         .pipe(transformFiles())
@@ -376,8 +379,11 @@ exports.generateTocJson = generateTocJson;
 // converts "toc.json" to "toc.yml" file - this is called before building docs
 function generateTocYML(cb) {
 
+    console.log('generateTocYML PLAT=' + PLAT + ' LANG=' + LANG);
     // PLAT defaults to "React" if --plat argument is not specified
-    generateTocFor(PLAT, 'en');
+    // LANG defaults to "en"    if --lang argument is not specified
+    generateTocFor(PLAT, LANG);
+    // generateTocFor(PLAT, 'en');
     // generateTocFor(PLAT, 'jp');
     // generateTocFor(PLAT, 'kr');
     cb();
@@ -442,41 +448,23 @@ function serveCore(cb) {
     });
 
 
-    var files = [`./doc/${LANG}/**/*.md`, `./docfx/${LANG}/**/*.md`, `./doc/${LANG}/components/**`];
+    var files = [`./doc/${LANG}/**/*.md`, `./docfx/${LANG}/**/*.md`, `./doc/${LANG}/components/**`, `${DOCFX_TEMPLATE_GLOBAL}`];
 
     if (PLAT === 'Angular') {
-        gulp.watch(`${DOCFX_TEMPLATE}/**/*`, watch);
         gulp.watch(files, buildDocfx_Angular);
     } else if (PLAT === 'Blazor') {
-        gulp.watch(`${DOCFX_TEMPLATE}/**/*`, watch);
         gulp.watch(files, buildDocfx_Blazor);
     } else if (PLAT === 'React') {
-        gulp.watch(`${DOCFX_TEMPLATE}/**/*`, watch);
         gulp.watch(files, buildDocfx_React);
     } else if (PLAT === 'WebComponents') {
-        gulp.watch(`${DOCFX_TEMPLATE}/**/*`, watch);
         gulp.watch(files, buildDocfx_WC);
     } else {
-        gulp.watch(`${DOCFX_TEMPLATE}/**/*`, watch);
         gulp.watch(files, buildDocfx_All);
     }
 
     cb();
 }
 
-function styles() {
-    return gulp
-        .src(`${DOCFX_TEMPLATE_LOCAL}/styles/sass/main.scss`)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(
-            autoprefixer({
-                browsers: ['last 2 versions'],
-                cascase: false
-            })
-        )
-        .pipe(gulp.dest(`${DOCFX_TEMPLATE_LOCAL}/styles/css`));
-}
-exports.styles = styles;
 
 function watchCore(cb) {
     browserSync.reload();
@@ -493,77 +481,28 @@ function platformify(json, platformName) {
     );
 }
 
-function postProcessorConfigsCore(cb) {
-    var environmentVariablesConfig = JSON.parse(JSON.stringify(environmentVariablesPreConfig));
-
-    if (process.env.NODE_ENV) {
-        environmentVariablesConfig.environment = process.env.NODE_ENV.trim();
-    }
-
-    environmentVariablesConfig.variables =
-        environmentVariablesConfig.variables[LANG.toLowerCase().trim()][
-            environmentVariablesConfig.environment
-        ];
-
-    if (!fs.existsSync(`${DOCFX_SITE}`)) {
-        fs.mkdirSync(`${DOCFX_SITE}`);
-    }
-
-    fs.writeFileSync(
-        `${DOCFX_SITE}/${environmentVariablesConfig._configFileName}`,
-        platformify(JSON.stringify(environmentVariablesConfig), PLAT)
-    );
-
-    cb();
-}
-
 function buildSite(cb) {
     log("buildSite LANG=" + LANG + " CONF=" + DOCFX_CONF);
 
-    exec(`docfx build ${DOCFX_CONF}`, function (err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
+    return buildDocfx({
+        siteDir: DOCFX_SITE,
+        projectDir: DOCFX_PATH,
+        environment: process.env.NODE_ENV ? process.env.NODE_ENV.trim() : null
       });
 }
+
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
-function cleanupSite() {
-    return del([`${DOCFX_SITE}`]);
-}
-
-exports.cleanupSite = cleanupSite;
-exports['cleanup-site'] = cleanupSite;
-
-exports.postProcessorConfigs = postProcessorConfigs = gulp.series(cleanupSite, postProcessorConfigsCore);
-exports['post-processor-configs'] = this.postProcessorConfigs;
-
-function getTemplate() {
-    del.sync('./dist/igniteui-docfx-template/**/*.*');
-    del.sync('./dist/igniteui-docfx-template');
-
-    return gulp
-    .src([`${DOCFX_TEMPLATE}/../**/*.*`,
-    `!**/head.tmpl.partial`])
-    .pipe(gulp.dest(`./dist/igniteui-docfx-template`))
-    .on("end", function () {
-        return gulp
-        .src([`${DOCFX_TEMPLATE}/../**/head.tmpl.partial`,
-        ])
-        .pipe(transformHeaderTemplate(PLAT))
-        .pipe(gulp.dest(`./dist/igniteui-docfx-template`))
-    });
-}
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(buildAll, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_Angular  = gulp.series(buildAngular, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_Blazor   = gulp.series(buildBlazor, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_React    = gulp.series(buildReact, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
-var buildDocfx_WC       = gulp.series(buildWC, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
+var buildDocfx_All      = gulp.series(buildAll, buildSite);
+var buildDocfx_Angular  = gulp.series(buildAngular, buildSite);
+var buildDocfx_Blazor   = gulp.series(buildBlazor, buildSite);
+var buildDocfx_React    = gulp.series(buildReact, buildSite);
+var buildDocfx_WC       = gulp.series(buildWC, buildSite);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, getTemplate, styles, cleanupSite, postProcessorConfigs, buildSite);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
@@ -584,9 +523,9 @@ exports.watch = watch = gulp.series(buildDocfx_All, watchCore);
 function logArgs(cb) {
     console.log('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
     ensureEnvironment();
-    let platformName = "Angular";
+    let platformName = PLAT; //"Angular";
 
-    log("docs " + JSON.stringify(docs[platformName], null, '  ') + " ... ");
+    // log("docs " + JSON.stringify(docs[platformName], null, '  ') + " ... ");
     let isFirstRelease = docs[platformName].isFirstRelease;
     log("isFirstRelease " + isFirstRelease + " ... ");
 

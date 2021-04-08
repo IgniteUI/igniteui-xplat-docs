@@ -9,13 +9,15 @@ mentionedTypes: ['Grid', 'DataGridToolbar', 'Button', 'ColumnChooser', 'IsHidden
 
 The $ProductName$ Data Grid supports the ability show and hide columns with the UI through the `DataGridToolbar` component or by the `ColumnChooser` component that provides flexibility to place it anywhere on the page. The `IsHidden` property on the columns can also be used to quickly hide or show a single column programmatically for manual column generation, and the value of `IsHidden` will reflect in the `ColumnChooser` component. Each approach can be used interchangeably to change the visible state of the columns.
 
-## $PlatformShort$ Grid Column Chooser Overview Example
+## $PlatformShort$ Grid Column Chooser Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-chooser-toolbar-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Chooser Overview Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-chooser-toolbar"></sample-button>
 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar"
+           alt="$PlatformShort$ Grid Column Chooser Example"
+           github-src="grids/data-grid/column-chooser-toolbar">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -126,12 +128,12 @@ connectedCallback() {
     ColumnChooser="true"
     ColumnChooserText="Columns"
     ColumnChooserTitle="Column Chooser"
-    TargetGrid="DataGridRef" />            
+    TargetGrid="DataGridRef" />
 <DataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DefaultColumnMinWidth="120"
-    DataSource="@DataSource"                      
-    ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft">                
+    DataSource="@DataSource"
+    ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft">
 </DataGrid>
 
 @code {
@@ -157,10 +159,12 @@ Let's say we want to manually display the `ColumnChooser` UI without the toolbar
 
 ## Demo
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-chooser-picker"></sample-button>
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker"
+           github-src="grids/data-grid/column-chooser-picker">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -252,10 +256,10 @@ connectedCallback() {
 
 ```razor
 <ColumnChooser Height="100%" Width="200px"
-    Title="Column Chooser"                           
+    Title="Column Chooser"
     TargetGrid="DataGridRef" />
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef"                      
+    @ref="DataGridRef"
     DataSource="DataSource"
     ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft" />
 

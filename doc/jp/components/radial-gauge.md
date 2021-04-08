@@ -9,21 +9,19 @@ _language: ja
 
 $PlatformShort$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。
 
-## $PlatformShort$ ラジアル ゲージの例
-
 $ProductName$ Radial Gauge コンポーネントは、ゲージを表示するデータ ビジュアライゼーション ツールです。スケール、目盛り、ラベル、針、および範囲などの複数の視覚要素を含むことができます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
+
+## $PlatformShort$ ラジアル ゲージの例
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-<div class="sample-container loading" style="height: 375px">
-    <iframe id="radial-gauge-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ラジアル ゲージの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/animation"></sample-button>
 
-</div>
+<code-view style="height: 375px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
+           alt="$PlatformShort$ ラジアル ゲージの例"
+           github-src="gauges/radial-gauge/animation">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -60,13 +58,11 @@ RadialGaugeModule.Register(IgniteUIBlazor);
 ```ts
 // app.module.ts
 import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxRadialGaugeModule,
-        IgxRadialGaugeComponent
+        IgxRadialGaugeModule
         // ...
     ]
 })
@@ -76,20 +72,17 @@ export class AppModule {}
 ```ts
 // Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
-import { IgcRadialGaugeCoreModule  } from 'igniteui-webcomponents-gauges';
+// Radial Gauge Module
 import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 
 // register the modules
 ModuleManager.register(
-    IgcRadialGaugeCoreModule,
     IgcRadialGaugeModule
 );
 ```
 
 ```ts
 import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
-import { IgrRadialGauge } from 'igniteui-react-gauges';
 
 IgrRadialGaugeModule.register();
 ```
@@ -167,30 +160,30 @@ IgrRadialGaugeModule.register();
   </igc-radial-gauge>
 ```
 
-<div class="divider--half"></div>
-
 ```razor
 
 <RadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="0"
           EndValue="30"
           Brush="red">
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="30"
           EndValue="60"
           Brush="Yellow" >
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="60"
           EndValue="100"
           Brush="Green">
     </RadialGaugeRange>
 </RadialGauge>
 ```
+
+<div class="divider--half"></div>
 
 ## バッキング
 
@@ -230,7 +223,7 @@ IgrRadialGaugeModule.register();
     scaleStartAngle={135} scaleEndAngle={45}
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -271,15 +264,12 @@ IgrRadialGaugeModule.register();
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-backing-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-backing-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/backing"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
+           github-src="gauges/radial-gauge/backing">
+</code-view>
 
 ## スケール
 
@@ -312,7 +302,7 @@ IgrRadialGaugeModule.register();
     scaleEndExtent={0.575}
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -348,15 +338,12 @@ IgrRadialGaugeModule.register();
 </RadialGauge>
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/scale"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
+           github-src="gauges/radial-gauge/scale">
+</code-view>
 
 ## ラベル
 ゲージ ラベルは `MinimumValue` と `MaximumValue` の値の間で指定された間隔で数値を表示する視覚要素です。0 はゲージ中央、1 はゲージ バッキングの外側範囲を表す `LabelExtent` プロパティで小数を使用してラベルの配置を設定できます。`FontBrush` や `Font` など、さまざまなスタイル プロパティを設定してラベルをカスタマイズできます。
@@ -381,7 +368,7 @@ IgrRadialGaugeModule.register();
     fontBrush="DodgerBlue"
     height="300px" width="300px"
     minimumValue={0} value={50}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -397,7 +384,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge 
+<RadialGauge
   Height="100%" Width="100%"
   LabelInterval="10"
   LabelInterval="10"
@@ -411,15 +398,12 @@ IgrRadialGaugeModule.register();
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/labels"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
+           github-src="gauges/radial-gauge/labels">
+</code-view>
 
 ## 目盛
 目盛は、ラジアル ゲージの中央から放射状に表示される細い線です。目盛には、主目盛および副目盛の 2 種類があり、主目盛りは `MinimumValue` と `MaximumValue` の間の `Interval` に表示されます。また `MinorTickCount` プロパティは、隣接する 2 つの主目盛間の副目盛の数を指定します。目盛りの長さは、`TickStartExtent`、`TickEndExtent`、`MinorTickStartExtent`、`MinorTickEndExtent` に少数値 (0 から 1 の間) を設定して制御できます。
@@ -493,15 +477,12 @@ IgrRadialGaugeModule.register();
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
+           github-src="gauges/radial-gauge/tickmarks">
+</code-view>
 
 ## 範囲
 範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界を強調表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
@@ -585,15 +566,12 @@ IgrRadialGaugeModule.register();
 </RadialGauge>
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/ranges"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
+           github-src="gauges/radial-gauge/ranges">
+</code-view>
 
 ## 針
 
@@ -641,7 +619,7 @@ IgrRadialGaugeModule.register();
     needlePivotStrokeThickness={1}
     height="300px" width="300px"
     minimumValue={0}
-    maximumValue={80} interval={10}/>
+    maximumValue={80} interval={10} />
 ```
 
 ```html
@@ -685,15 +663,11 @@ IgrRadialGaugeModule.register();
 </RadialGauge>
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-needle-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-needle-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/radial-gauge/needle"></sample-button>
-
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
+           github-src="gauges/radial-gauge/needle">
+</code-view>
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。
@@ -824,11 +798,11 @@ IgrRadialGaugeModule.register();
     <IgrRadialGaugeRange
         startValue={20} endValue={40}
         innerStartExtent={0.45} innerEndExtent={0.45}
-        outerStartExtent={0.57} outerEndExtent={0.57}/>
+        outerStartExtent={0.57} outerEndExtent={0.57} />
     <IgrRadialGaugeRange
         startValue={40} endValue={60}
         innerStartExtent={0.45} innerEndExtent={0.45}
-        outerStartExtent={0.57} outerEndExtent={0.57}/>
+        outerStartExtent={0.57} outerEndExtent={0.57} />
 </IgrRadialGauge>
 ```
 
@@ -906,7 +880,7 @@ IgrRadialGaugeModule.register();
              MaximumValue="80"
              Value="50"
              Interval="10"
-              
+
              ScaleStartAngle="135"
              ScaleEndAngle="45"
              ScaleBrush="DodgerBlue"
@@ -953,7 +927,7 @@ IgrRadialGaugeModule.register();
              BackingInnerExtent="0.15"
 
              RangeBrushes="#A4BD29, #F86232"
-             RangeOutlines="#A4BD29, #F86232">  
+             RangeOutlines="#A4BD29, #F86232">
     <RadialGaugeRange StartValue="20"
         EndValue="40"
         InnerStartExtent="0.50"
@@ -967,6 +941,6 @@ IgrRadialGaugeModule.register();
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>   
+    </RadialGaugeRange>
 </RadialGauge>
 ```

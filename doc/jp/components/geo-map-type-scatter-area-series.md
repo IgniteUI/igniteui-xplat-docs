@@ -11,14 +11,13 @@ $PlatformShort$ マップ コンポーネントの `GeographicScatterAreaSeries`
 
 ## $PlatformShort$ 散布エリア シリーズの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-area-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 散布エリア シリーズの使用の例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-area-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-area-series"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series" 
+           alt="$PlatformShort$ 散布エリア シリーズの使用の例" 
+           github-src="maps/geo-map/type-scatter-area-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -34,8 +33,8 @@ $PlatformShort$ マップ コンポーネントの `GeographicScatterAreaSeries`
 | プロパティ名  | プロパティ型   | 説明   |
 |--------------|---------------| ---------------|
 |`ItemsSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
-|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの経度を含むプロパティの名前。|
-|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの Latitude を含むプロパティの名前。|
+|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
+|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
 |`ColorMemberPath`|文字列|各データ項目の緯度および経度座標の値を含むプロパティの名前。`ColorScale` プロパティが設定されている場合、この数値は色に変換されます。|
 |`TrianglesSource`|任意|三角測量データのソース。`TriangulationSource` オブジェクトの Triangles をこのプロパティに設定すると、ランタイム パフォーマンスと地理的シリーズの描画の両方が改善します。|
 |`TriangleVertexMemberPath1`|文字列|各三角形に対して ItemsSource の最初の頂点のインデックスを含む、`TrianglesSource` 項目のプロパティ名。このプロパティを設定することは義務ではありません。カスタムの三角測量ロジックが提供されない場合はデフォルトで取得されます。|

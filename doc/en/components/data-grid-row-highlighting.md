@@ -11,10 +11,13 @@ The $ProductName$ Data Table / Data Grid supports configuring the appearance of 
 
 ## $PlatformShort$ Grid Highlighting Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-row-highlighting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Highlighting Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/row-highlighting"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-highlighting" 
+           alt="$PlatformShort$ Grid Highlighting Example" 
+           github-src="grids/data-grid/row-highlighting">
+</code-view>
 
 <div class="divider--half"></div>
 

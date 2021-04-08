@@ -11,12 +11,15 @@ The $ProductName$ Data Grid supports the ability to pin columns, allowing the en
 
 A column or multiple columns can be pinned to the left-hand or right-hand side of the Data Grid. In addition, you can change the pin state of the columns by utilizing the `PinColumn` function.
 
-## $PlatformShort$ Grid Column Pinning Overview Example
+## $PlatformShort$ Grid Column Pinning Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Column Pinning Overview Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-picker"></sample-button>
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker"
+           alt="$PlatformShort$ Grid Column Pinning Example"
+           github-src="grids/data-grid/column-pinning-picker">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -232,7 +235,7 @@ onButtonUnPin () {
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-    DefaultColumnMinWidth="120"                      
+    DefaultColumnMinWidth="120"
     DataSource="@DataSource"
     AutoGenerateColumns="false"
     @ref="DataGridRef">
@@ -250,7 +253,7 @@ onButtonUnPin () {
     @*Columns Pinned Right*@
     <TextColumn Field="Street" Pinned="PinnedPositions.Right" />
     <TextColumn Field="City" Pinned="PinnedPositions.Right" />
-    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />                
+    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />
 </DataGrid>
 ```
 
@@ -262,10 +265,12 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 
 ## Demo
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-pinning-toolbar"></sample-button>
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"
+           github-src="grids/data-grid/column-pinning-toolbar">
+</code-view>
 
 ## Code Snippet
 
@@ -302,8 +307,8 @@ public onGridRef(grid: IgrDataGrid) {
     if (this.toolbar != null) {
         this.toolbar.targetGrid = this.grid;
 
-        let productNameColumn = document.getElementById("productname") as IgrTextColumnComponent;
-        productNameColumn.pinned = true;
+        let productNameColumn = this.grid.actualColumns.item(0);
+        productNameColumn.pinned = PinnedPositions.Left;
     }
 }
 
@@ -364,7 +369,7 @@ connectedCallback() {
     ColumnPinningText="Pinning"
     ColumnPinningTitle="Column Pinning" />
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef" 
+    @ref="DataGridRef"
     DataSource="DataSource" />
 
 @code {

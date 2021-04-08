@@ -10,10 +10,13 @@ The $ProductName$ Data Table / Data Grid supports cell and row editing with batc
 
 ## $PlatformShort$ Grid Editing Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-cell-editing' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid Editing Example"></iframe>
-</div>
-<sample-button src="grids/data-grid/cell-editing"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-editing" 
+           alt="$PlatformShort$ Grid Editing Example" 
+           github-src="grids/data-grid/cell-editing">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -270,12 +273,22 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 ```
 
 ```razor
+<DataGrid Height="100%" Width="100%" 
+    @ref="DataGridRef"
+    CellValueChanging="OnCellValueChanging"
+    DataCommitting="OnDataCommitting">
+ </DataGrid>
+
 @code {
+    public DataGrid DataGridRef;
+
     public void OnCellValueChanging(GridCellValueChangingEventArgs e)
     {
+        //check if value is empty upon exiting edit mode.
         if(e.NewValue == "")
         {
             this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
+            //or revert changes
             this.DataGridRef.RejectEdit(e.EditID);
         }
         else
@@ -288,10 +301,12 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     {
         if(e.Changes[0].TransactionType == TransactionType.Update)
         {
+            //commit was passed      
             this.DataGridRef.AcceptCommit(e.CommitID);
         }
         else
         {
+            //commit was prevented
             this.DataGridRef.RejectCommit(e.CommitID);
         }
     }

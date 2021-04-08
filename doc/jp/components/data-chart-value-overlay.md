@@ -13,27 +13,25 @@ $ProductName$ データ チャート コンポーネントを使用すると、`
 
 ## $PlatformShort$ 値オーバーレイ例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-chart-series-value-overlay-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 値オーバーレイ例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-series-value-overlay-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/series-value-overlay"></sample-button>
 
-</div>
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay" 
+           alt="$PlatformShort$ 値オーバーレイ例" 
+           github-src="charts/data-chart/series-value-overlay">
+</code-view>
 
 <div class="divider--half"></div>
 
-データバインディングに `DataSource` を使用する他のシリーズタイプとは異なり、値オーバーレイは `ValueMemberPath` プロパティを使用して単一の数値をバインドします。値オーバーレイでは、使用する単一の軸を定義する必要があります。X 軸を使用する場合、値のオーバーレイは垂直線になり、Y 軸を使用する場合は、水平線になります。
+データ バインディングに `DataSource` を使用する他のシリーズタイプとは異なり、値オーバーレイは `ValueMemberPath` プロパティを使用して単一の数値をバインドします。値オーバーレイでは、使用する単一の軸を定義する必要があります。X 軸を使用する場合、値のオーバーレイは垂直線になり、Y 軸を使用する場合は、水平線になります。
 
-数値のX軸またはY軸を使用する場合、`ValueMemberPath` プロパティは、値のオーバーレイを描画する軸上の実際の数値を反映する必要があります。数値の X 軸または Y 軸を使用する場合、`ValueMemberPath` は、値のオーバーレイを描画する軸上の実際の数値を反映する必要があります。
+数値の X 軸またはY軸を使用する場合、`ValueMemberPath` プロパティは、値のオーバーレイを描画する軸上の実際の数値を反映する必要があります。数値の X 軸または Y 軸を使用する場合、`ValueMemberPath` は、値のオーバーレイを描画する軸上の実際の数値を反映する必要があります。
 
 数値オーバーレイを角度角軸で使用すると、チャートの中心からの線として表示され、半径半径軸を使用すると、円として表示されます。
 
 `ValueOverlay` 外観プロパティは、`Series` から継承されているため、例えば `Brush` と `Thickness` を使用でき、他のタイプのシリーズと同じように機能します。
 
-`IsAxisAnnotationEnabled` プロパティを true に設定して`ValueOverlay` に軸注釈を表示し、軸にオーバーレイの値を表示することもできます。
+`IsAxisAnnotationEnabled` プロパティを true に設定して `ValueOverlay` に軸注釈を表示し、軸にオーバーレイの値を表示することもできます。
 
 ## コード例
 

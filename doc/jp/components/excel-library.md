@@ -11,11 +11,13 @@ Infragistics $PlatformShort$ Excel ライブラリは、Workbook、Worksheet、C
 
 ## $PlatformShort$ Excel ライブラリの例
 
-<div class="sample-container loading" style="height: 100px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Excel ライブラリの例"></iframe>
-</div>
-<sample-button src="excel/excel-library/overview"></sample-button>
 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
+           alt="$PlatformShort$ Excel ライブラリの例"
+           github-src="excel/excel-library/overview">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -86,7 +88,7 @@ $PlatformShort$ Excel ライブラリを使用するには、次の using ステ
 
 Web Assembly (WASM) Blazor プロジェクトを使用している場合は、いくつかの追加手順があります:
 
-- Wwwroot/index.html ファイルに次のスクリプトへの参照を追加します:
+- wwwroot/index.html ファイルに次のスクリプトへの参照を追加します:
 
 ```razor
 <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
@@ -105,7 +107,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;        
+        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;
     }
 }
 ```
@@ -139,7 +141,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 <!-- Angular, React, WebComponents -->
 
-次のコードスニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
+次のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
 <!-- end: Angular, React, WebComponents -->
 

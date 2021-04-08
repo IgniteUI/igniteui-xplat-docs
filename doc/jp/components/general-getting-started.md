@@ -12,7 +12,7 @@ $ProductName$ は、最新のデスクトップ ブラウザー対応の高パ�
 
 ## コンピューターのセットアップ
 
-$ProductName$ を実行する前に、$ProductName$ を含むすべての $PlatformShort$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$PlatformShort$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $PlatformShort$ アプリケーションを構築するための開発環境は、 Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
+$ProductName$ を実行する前に、$ProductName$ を含むすべての $PlatformShort$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$PlatformShort$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $PlatformShort$ アプリケーションを構築するための開発環境は、Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
@@ -91,7 +91,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 <img src="../images/wc-project.jpg"/>
 
-8 - **package.config** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
+8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
 ```
   "scripts": {
@@ -101,6 +101,14 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 > [!Note]
 > このスクリプトは webpack を使用して **index.js** ファイルを **index.bundle.js** と呼ばれる別のファイルにバンドルし、**dist** という名前のフォルダーに配置します。
+>
+> ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
+
+```
+"scripts": {
+    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+},
+```
 
 ## 手順 2 - ポリフィルのインストール
 
@@ -110,15 +118,14 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 </pre>
 
 2 - Web コンポーネント ポリフィルを **index.js** にインポートします。
-```tsx
+```
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
-この例では、Spreadsheet Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Spreadsheet Web コンポーネントをインストールします。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
@@ -126,6 +133,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 </pre>
 
 2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -136,6 +144,7 @@ import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
 3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
+
 ```
 // register the modules
 ModuleManager.register(
@@ -145,6 +154,7 @@ ModuleManager.register(
 ```
 
 4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -155,6 +165,7 @@ ModuleManager.register(
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
 1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -189,7 +200,6 @@ ModuleManager.register(
 ## 既存アプリの更新
 
 既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
-
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}

@@ -9,21 +9,19 @@ _language: ja
 
 $PlatformShort$ Linear Gauge コンポーネントは、値とスケールまたは複数の範囲に対する比較を表示します。
 
-## $PlatformShort$ リニア ゲージの例
-
 $ProductName$ Linear Gauge コンポーネントは、データをリニア ゲージ形式で可視化するコントロールです。スケールおよび 1 つ以上の範囲と比較した値をシンプルで簡潔に表示することが可能で、スケール、針、目盛 (1 組)、ラベル (1 組) がサポートされます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
+
+## $PlatformShort$ リニア ゲージの例
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-<div class="sample-container loading" style="height: 155px">
-    <iframe id="linear-gauge-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ リニア ゲージの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/animation"></sample-button>
 
-</div>
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
+           alt="$PlatformShort$ リニア ゲージの例"
+           github-src="gauges/linear-gauge/animation">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -45,16 +43,15 @@ npm install --save {PackageGauges}
 LinearGaugeModule.Register(IgniteUIBlazor);
 ```
 
+
 ```ts
 // app.module.ts
 import { IgxLinearGaugeModule } from 'igniteui-angular-gauges';
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxLinearGaugeModule,
-        IgxLinearGaugeComponent,
+        IgxLinearGaugeModule
         // ...
     ]
 })
@@ -63,14 +60,12 @@ export class AppModule {}
 
 ```ts
 import { IgrLinearGaugeModule } from 'igniteui-react-gauges';
-import { IgrLinearGauge } from 'igniteui-react-gauges';
 
 IgrLinearGaugeModule.register();
 ```
 
 ```ts
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges';
 
 ModuleManager.register(
     IgcLinearGaugeModule
@@ -146,11 +141,9 @@ ModuleManager.register(
 </igc-linear-gauge>
 ```
 
-<div class="divider--half"></div>
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="5"      
+        MinimumValue="5"
         MaximumValue="55"
         Value="43" >
     <LinearGraphRange StartValue="0"
@@ -159,13 +152,15 @@ ModuleManager.register(
     </LinearGraphRange>
      <LinearGraphRange StartValue="15"
             EndValue="30"
-            Brush="yellow">   
+            Brush="yellow">
     <LinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
     </LinearGraphRange>
 </LinearGauge>
 ```
+
+<div class="divider--half"></div>
 
 ## 針
 これは、コンポーネントで表示されるプライマリ メジャーでバーで可視化されます。あるいは以下で示す図形のほとんどすべてをカスタマイズすることもできます。
@@ -216,7 +211,7 @@ ModuleManager.register(
 ```
 
 ```html
- <igc-linear-gauge
+  <igc-linear-gauge
     height="80px" width="400px"
     minimum-value=0
     maximum-value=100
@@ -260,15 +255,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-needle-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-needle-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/needle"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
+           github-src="gauges/linear-gauge/needle">
+</code-view>
 
 ## 範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -303,11 +295,11 @@ ModuleManager.register(
     <IgrLinearGraphRange
         startValue={0} endValue={50}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.25} outerEndExtent={0.4}/>
+        outerStartExtent={0.25} outerEndExtent={0.4} />
     <IgrLinearGraphRange
         startValue={50} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.4} outerEndExtent={0.55}/>
+        outerStartExtent={0.4} outerEndExtent={0.55} />
 </IgrLinearGauge>
 ```
 
@@ -354,15 +346,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
+           github-src="gauges/linear-gauge/ranges">
+</code-view>
 
 ## 目盛
 目盛は、リニア ゲージを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -407,7 +396,7 @@ ModuleManager.register(
     minorTickBrush="DarkViolet"
     minorTickEndExtent={0.05}
     minorTickStartExtent={0.15}
-    minorTickStrokeThickness={1}/>
+    minorTickStrokeThickness={1} />
 ```
 
 ```html
@@ -446,17 +435,13 @@ ModuleManager.register(
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
 </LinearGauge>
-```   
+```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/tickmarks"></sample-button>
-
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
+           github-src="gauges/linear-gauge/tickmarks">
+</code-view>
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -485,7 +470,7 @@ ModuleManager.register(
     labelsPreTerminal={0}
     labelsPostInitial={0}
     fontBrush="DodgerBlue"
-    font="11px Verdana"/>
+    font="11px Verdana" />
 ```
 
 ```html
@@ -501,7 +486,6 @@ ModuleManager.register(
     font="11px Verdana">
 </igc-linear-gauge>
 ```
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -515,15 +499,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
+           github-src="gauges/linear-gauge/labels">
+</code-view>
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -550,7 +531,7 @@ ModuleManager.register(
     backingOutline="DodgerBlue"
     backingStrokeThickness={4}
     backingInnerExtent={0}
-    backingOuterExtent={1}/>
+    backingOuterExtent={1} />
 ```
 
 ```html
@@ -580,15 +561,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-backing-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-backing-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/backing"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
+           github-src="gauges/linear-gauge/backing">
+</code-view>
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -621,7 +599,7 @@ ModuleManager.register(
     scaleInnerExtent={0.05}
     scaleOuterExtent={0.65}
     scaleStartExtent={0.05}
-    scaleEndExtent={0.95}/>
+    scaleEndExtent={0.95} />
 ```
 
 ```html
@@ -639,7 +617,6 @@ ModuleManager.register(
     scale-end-extent=0.95>
 </igc-linear-gauge>
 ```
-
 ```razor
 <LinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
@@ -655,15 +632,12 @@ ModuleManager.register(
 </LinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/linear-gauge/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
+           github-src="gauges/linear-gauge/scale">
+</code-view>
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。
@@ -804,11 +778,11 @@ ModuleManager.register(
     <IgrLinearGraphRange
         startValue={0} endValue={50}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.25} outerEndExtent={0.4}/>
+        outerStartExtent={0.25} outerEndExtent={0.4} />
     <IgrLinearGraphRange
         startValue={50} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.4} outerEndExtent={0.55}/>
+        outerStartExtent={0.4} outerEndExtent={0.55} />
 </IgrLinearGauge>
 ```
 
@@ -887,8 +861,8 @@ ModuleManager.register(
 
 ```razor
 <LinearGauge Height="80px" Width="100%"
-        MinimumValue="0" 
-        MaximumValue="100" 
+        MinimumValue="0"
+        MaximumValue="100"
 
         LabelInterval="10"
         LabelExtent="0.025"

@@ -11,10 +11,13 @@ $ProductName$ Data Table / Data Grid は、表形式の $PlatformShort$ コン�
 
 ## $PlatformShort$ Data Grid の例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Data Grid の例"></iframe>
-</div>
-<sample-button src="grids/data-grid/overview"></sample-button>
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           alt="$PlatformShort$ Data Grid の例"
+           github-src="grids/data-grid/overview">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -33,7 +36,6 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-
 $PlatformShort$ Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -47,9 +49,10 @@ npm install --save {PackageInputs}
 
 `Grid` を作成するには、以下のモジュールが必要です。
 
-```razor 
+```razor
 DataGridModule.Register(IgniteUIBlazor);
 ```
+<!-- end: Blazor -->
 
 ```ts
 import { IgrDataGridModule } from 'igniteui-react-grids';
@@ -286,7 +289,7 @@ $PlatformShort$ グリッド モジュールがインポートされました。
       default-column-min-width="100"
       summary-scope="Root"
       is-column-options-enabled="true"
-      is-group-collapsable="true"      
+      is-group-collapsable="true"
       group-summary-display-mode="RowBottom"
       column-moving-mode="Deferred"
       column-moving-animation-mode="SlideOver"
@@ -312,7 +315,7 @@ grid1.dataSource = data;
     DefaultColumnMinWidth="100"
     SummaryScope="DataSourceSummaryScope.Root"
     IsColumnOptionsEnabled="true"
-    IsGroupCollapsable="true"    
+    IsGroupCollapsable="true"
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowBottom"
     ColumnMovingMode="ColumnMovingMode.Deferred"
     ColumnMovingAnimationMode="ColumnMovingAnimationMode.SlideOver"

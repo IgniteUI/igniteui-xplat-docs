@@ -14,10 +14,13 @@ $ProductName$ Data Table / Data Grid は、データを $PlatformShort$ デー�
 
 ## $PlatformShort$ 列タイプの例
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="data-grid-column-types-iframe" src='{environment:demosBaseUrl}/grids/data-grid-column-types' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 列タイプの例"></iframe>
-</div>
-<sample-button src="grids/data-grid/column-types"></sample-button>
+
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types" 
+           alt="$PlatformShort$ 列タイプの例" 
+           github-src="grids/data-grid/column-types">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -60,7 +63,7 @@ $PlatformShort$ データ グリッド は、関連付けられたセルに書�
 ## スパークライン列
 
 Sparkline コンポーネントを `TemplateColumn` に埋め込み、より複雑なデータ構造を表示できます。
-この方法の詳細については、 [列スパークライン](data-grid-type-sparkline-table.md) トピックを参照してください。
+この方法の詳細については、[列スパークライン](data-grid-type-sparkline-table.md) トピックを参照してください。
 
 ## コード スニペット
 

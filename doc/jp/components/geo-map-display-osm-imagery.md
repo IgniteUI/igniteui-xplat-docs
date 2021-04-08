@@ -12,14 +12,13 @@ $PlatformShort$ `OpenStreetMapImagery` は、世界中の OpenStreetMap© のコ
 
 ## $PlatformShort$ オープン ストリート マップ画像の表示の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-display-osm-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ オープン ストリート マップ画像の表示の例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="geo-map-display-osm-imagery-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/display-osm-imagery"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery" 
+           alt="$PlatformShort$ オープン ストリート マップ画像の表示の例" 
+           github-src="maps/geo-map/display-osm-imagery">
+</code-view>
 
 <div class="divider--half"></div>
 

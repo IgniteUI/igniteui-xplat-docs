@@ -11,10 +11,13 @@ $PlatformShort$ Spreadsheet は、スプレッドシート データの視覚化
 
 ## $PlatformShort$ Spreadsheet の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet の例"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/activation"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
+           alt="$PlatformShort$ Spreadsheet の例"
+           github-src="excel/spreadsheet/overview">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -26,6 +29,7 @@ npm install --save {PackageCore}
 npm install --save {PackageExcel}
 npm install --save {PackageSpreadsheet}
 </pre>
+
 
 ## モジュールの要件
 

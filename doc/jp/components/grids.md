@@ -206,9 +206,12 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 
 <div class="divider--half"></div>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:demosBaseUrl}/grids/data-grid-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Grid の例" alt="$PlatformShort$ Grid 例"></iframe>
-</div>
+
+<code-view style="height: 435px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview" 
+           alt="$PlatformShort$ Grid 例" >
+</code-view>
 
 このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
 
@@ -248,12 +251,13 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 
 ### 高速 $PlatformShort$ データ グリッド例
 
-<span class="h3">サンプル</span>
+<span class="h3">Demo</span>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="icon-sample-1-iframe" seamless width="100%" height="100%" frameborder="0" src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table" onload="onSampleIframeContentLoaded(this);">
-    </iframe>
-</div>
+
+<code-view style="height: 435px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table"  >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -374,7 +378,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">$PlatformShort$ Grid フィルタリング<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>$ProductName$ データ グリッドを使用すると、ユーザーは、フィルターが適用されるデータ型に基づいて[列をフィルタリング](data-grid-column-filtering.md)できます。たとえば、列がデータ アイテムの文字列型プロパティである場合、Contains、Starts With、EndsWith などのフィルタリング オプションを使用できます。</p>
+        <p>$ProductName$ データ グリッドを使用すると、ユーザーは、フィルターが適用されるデータ型に基づいて[列をフィルタリング](data-grid-column-filtering.md)できます。たとえば、列がデータ 項目の文字列型プロパティである場合、Contains、Starts With、EndsWith などのフィルタリング オプションを使用できます。</p>
     </div>
 </div>
 

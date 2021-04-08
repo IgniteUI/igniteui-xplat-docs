@@ -10,10 +10,13 @@ The $PlatformShort$ Spreadsheet component allows you to perform commands for act
 
 ## $PlatformShort$ Working with Commands Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-commands-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-commands' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Working with Commands Example"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/commands"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands" 
+           alt="$PlatformShort$ Working with Commands Example" 
+           github-src="excel/spreadsheet/commands">
+</code-view>
 
 <div class="divider--half"></div>
 

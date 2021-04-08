@@ -1,7 +1,7 @@
 ---
 title: $PlatformShort$ データ チャート | データ可視化ツール | シリーズーリズ  | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、縦棒チャート、折れ線チャート、エリア チャート、円チャートなどを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, chart types, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, チャート タイプ, インフラジスティックス
+_keywords: $PlatformShort$ charts, data chart, チャート タイプs, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, チャート タイプ, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---

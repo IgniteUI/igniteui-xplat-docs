@@ -11,15 +11,13 @@ _language: ja
 
 ## $PlatformShort$ 財務指標 (エリア) の例
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="data-chart-type-financial-area-indicators-iframe" src='{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-area-indicators' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ 財務指標 (エリア) の例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="data-chart-type-financial-area-indicators-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="charts/data-chart/type-financial-area-indicators"></sample-button>
 
-</div>
+<code-view style="height: 400px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-area-indicators" 
+           alt="$PlatformShort$ 財務指標 (エリア) の例" 
+           github-src="charts/data-chart/type-financial-area-indicators">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -38,7 +36,7 @@ _language: ja
 - `CommodityChannelIndexIndicator` (CCI) は、証券で周期傾向を識別するために使用される財務指標です。インジケーターは、識別できる周期的な証券価格の変更に対する推測に基づきます。定数と平均絶対偏差の積によって、以前の代表価格 (TP) 期間で指定した期間の代表価格 (SMATP) の単純移動平均 (SMA) の差分商によって計算されます。
 - `DetrendedPriceOscillatorIndicator` (DPO) は、短期間のトレンドを識別するために、長期間の株価トレンドを制御するために設計された財務指標です。変位移動平均に基づきますが、モメンタム オシレーターではありません。
 - `EaseOfMovementIndicator` (EOM) は、証券の価格を変更するために必要な出来高を識別するために使用される財務指標です。通常移動平均で平滑化されます。
-- `FastStochasticOscillatorIndicator`(FSO) は、一定期間の高/低範囲に関連する終値を表示します。確率オシレーターには、ファスト、スロー、フルの 3 つのタイプがあります。このインジケーターはモメンタム インジケーターです。現在の終値を高値/安値の範囲に対して 0 ～ 100 のスケールを使用して関係を示します。これは、株価は高騰市況では 100 に近づき、 下降市場で 0 に近づくという前提に基づきます。このインジケーターは、買う拡散または売る拡散を識別するために使用されます。
+- `FastStochasticOscillatorIndicator`(FSO) は、一定期間の高/低範囲に関連する終値を表示します。確率オシレーターには、ファスト、スロー、フルの 3 つのタイプがあります。このインジケーターはモメンタム インジケーターです。現在の終値を高値/安値の範囲に対して 0 ～ 100 のスケールを使用して関係を示します。これは、株価は高騰市況では 100 に近づき、下降市場で 0 に近づくという前提に基づきます。このインジケーターは、買う拡散または売る拡散を識別するために使用されます。
 - `ForceIndexIndicator` (FII) は、株の動向が上昇または下降のいずれかであるかを判断するために財務アナリストが使用する値と出来高のオシレーターです。勢力指数は、今日の終値から前日の終値を引いて、その差に当日の出来高を掛けて計算されます。今日の終値が前日の終値より高い場合、勢力指数は正の数になります。終値が前日の終値より低い場合、勢力指数は負の数になります。
 - `FullStochasticOscillatorIndicator` (FSO) は、一定期間の高/低範囲に関連する終値を表示します。インジケーターは `SlowStochasticOscillatorIndicator` に似ていますが、期間のカスタマイズができます。
 - `MarketFacilitationIndexIndicator` (MFI) は、効率的に計測するために分析で株価と出来高を組み合わせます。計算は、安値と高値の差を出来高で割ります。

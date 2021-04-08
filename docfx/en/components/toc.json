@@ -85,13 +85,13 @@
   {
     "exclude": ["Angular"],
     "name": "Multi-Column Combo Box",
-    "href": "multi-column-combobox.md",
+    "href": "editors/multi-column-combobox.md",
     "status": ""
   },
   {
     "exclude": ["Angular"],
     "name": "Date Picker",
-    "href": "date-picker.md",
+    "href": "editors/date-picker.md",
     "status": "NEW"
   },
   {
@@ -309,188 +309,215 @@
     ]
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Charts (NEW)",
-    "href": "charts/chart-type-overview.md",
+    "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
     "name": "Binding Real Time Data",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
     "name": "Binding High Volume Data",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor"],
     "name": "Binding Multiple Data Source",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Area Chart",
-    "href": "charts/chart-types-area.md",
-    "status": "NEW"
+    "href": "charts/types/area-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Bar Chart",
-    "href": "charts/chart-types-bar.md",
-    "status": "NEW"
+    "href": "charts/types/bar-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Bubble Chart",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Bubble-Chart",
-    "status": "NEW"
+    "href": "charts/types/bubble-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Column Chart",
-    "href": "charts/chart-types-column.md",
-    "status": "NEW"
+    "href": "charts/types/column-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "name": "Composite Chart",
+    "href": "charts/types/composite-chart.md",
+    "status": ""
+  },
+  {
     "name": "Donut Chart",
-    "href": "doughnut-chart.md",
+    "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
-    "name": "Financial Chart",
-    "href": "charts/chart-types-financial.md",
-    "status": "NEW"
+    "name": "Financial / Stock Chart",
+    "href": "charts/types/stock-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "name": "Gantt Chart",
+    "href": "charts/types/gantt-chart.md",
+    "status": ""
+  },
+  {
     "name": "Line Chart",
-    "href": "charts/chart-types-line.md",
-    "status": "NEW"
+    "href": "charts/types/line-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
-    "name": "Polar Chart",
-    "href": "charts/chart-types-polar.md",
-    "status": "NEW"
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "name": "Network Chart",
+    "href": "charts/types/network-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Pie Chart",
-    "href": "pie-chart.md",
+    "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "name": "Point Chart",
+    "href": "charts/types/point-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Polar Chart",
+    "href": "charts/types/polar-chart.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "name": "Pyramid Chart",
+    "href": "charts/types/pyramid-chart.md",
+    "status": ""
+  },
+  {
     "name": "Radial Chart",
-    "href": "charts/chart-types-radial.md",
-    "status": "NEW"
+    "href": "charts/types/radial-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Scatter Chart",
-    "href": "charts/chart-types-scatter.md",
-    "status": "NEW"
+    "href": "charts/types/scatter-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Shape Chart",
-    "href": "charts/chart-types-scatter.md#$PlatformShort$-Scatter-Polygon-Chart",
-    "status": "NEW"
+    "href": "charts/types/shape-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Spline Chart",
-    "href": "charts/chart-types-spline.md",
-    "status": "NEW"
+    "href": "charts/types/spline-chart.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
+    "name": "Sparkline Chart",
+    "href": "charts/types/sparkline-chart.md",
+    "status": ""
+  },
+  {
+    "name": "Stacked Chart",
+    "href": "charts/types/stacked-chart.md",
+    "status": ""
+  },
+  {
     "name": "Step Chart",
-    "href": "charts/chart-types-step.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
-    "name": "Sparkline",
-    "href": "sparkline.md",
+    "href": "charts/types/step-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Treemap",
-    "href": "treemap-overview.md",
+    "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Chart Features",
-    "href": "charts/chart-feature-overview.md",
-    "status": "NEW",
+    "href": "charts/chart-features.md",
+    "status": "",
     "items": [
         {
           "name": "Axis Gridlines",
-          "href": "charts/chart-features-axis-gridlines.md",
-          "status": "NEW"
+          "href": "charts/features/chart-axis-gridlines.md",
+          "status": ""
         },
         {
           "name": "Axis Layouts",
-          "href": "charts/chart-features-axis-layouts.md",
-          "status": "NEW"
+          "href": "charts/features/chart-axis-layouts.md",
+          "status": ""
         },
         {
           "name": "Axis Options",
-          "href": "charts/chart-features-axis-options.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Annotations",
-          "href": "charts/chart-features-annotations.md",
-          "status": "NEW"
+          "href": "charts/features/chart-axis-options.md",
+          "status": ""
         },
         {
           "name": "Chart Animations",
-          "href": "charts/chart-features-animations.md",
-          "status": "NEW"
+          "href": "charts/features/chart-animations.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Annotations",
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
         },
         {
           "name": "Chart Highlighting",
-          "href": "charts/chart-features-highlighting.md",
-          "status": "NEW"
+          "href": "charts/features/chart-highlighting.md",
+          "status": ""
         },
         {
           "name": "Chart Markers",
-          "href": "charts/chart-features-markers.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Tooltips",
-          "href": "charts/chart-features-tooltips.md",
-          "status": "NEW"
-        },
-        {
-          "name": "Chart Trendlines",
-          "href": "charts/chart-features-trendlines.md",
-          "status": "NEW"
+          "href": "charts/features/chart-markers.md",
+          "status": ""
         },
         {
           "name": "Chart Navigation",
-          "href": "data-chart-navigation.md",
+          "href": "charts/features/chart-navigation.md",
           "status": ""
         },
         {
+          "name": "Chart Overlays",
+          "href": "charts/features/chart-overlays.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Performance",
+          "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Blazor"],
           "name": "Chart Synchronization",
-          "href": "data-chart-synchronization.md",
+          "href": "charts/features/chart-synchronization.md",
           "status": ""
         },
         {
+          "name": "Chart Tooltips",
+          "href": "charts/features/chart-tooltips.md",
+          "status": ""
+        },
+        {
+          "name": "Chart Trendlines",
+          "href": "charts/features/chart-trendlines.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Blazor"],
           "name": "Zoom Slider",
           "href": "zoomslider-overview.md",
           "status": ""
@@ -498,13 +525,12 @@
       ]
   },
   {
-    "exclude": ["Angular", "Blazor", "React", "WebComponents"],
     "name": "Data Sources",
     "href": "data-chart-data-sources.md",
     "status": ""
   },
   {
-    "name": "Charts",
+    "name": "Charts (OLD)",
     "header": true
   },
   {
@@ -985,17 +1011,12 @@
   },
   {
     "name": "Sparkline",
-    "href": "sparkline.md",
+    "href": "charts/types/sparkline-chart.md",
     "status": ""
   },
   {
     "name": "Maps",
     "header": true
-  },
-  {
-    "name": "Treemap",
-    "href": "treemap-overview.md",
-    "status": ""
   },
   {
     "name": "Map",

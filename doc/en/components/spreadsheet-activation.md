@@ -11,10 +11,13 @@ The $PlatformShort$ Spreadsheet component exposes properties that allow you to d
 
 ## $PlatformShort$ Spreadsheet Activation Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-activation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Spreadsheet Activation Example"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/activation"></sample-button>
+
+<code-view style="height: 500px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-activation" 
+           alt="$PlatformShort$ Spreadsheet Activation Example" 
+           github-src="excel/spreadsheet/activation">
+</code-view>
 
 <div class="divider--half"></div>
 

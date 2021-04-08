@@ -11,23 +11,22 @@ The Infragistics $PlatformShort$ Dock Manager is a WebComponent that provides me
 > [!NOTE]
 > <b>Coming Soon</b>
 
-The Blazor Dock Manager is currently under development and will be completed soon.  When the Blazor Dock Manager component has been completed, this topic and sample will be updated. If you need a dock manager component during this time, you can use the Ignite UI for Web Components dock manager in your Blazor applications. 
+The Blazor Dock Manager is currently under development and will be completed soon.  When the Blazor Dock Manager component has been completed, this topic and sample will be updated. If you need a dock manager component during this time, you can use the Ignite UI for Web Components dock manager in your Blazor applications.
 
 Please follow the steps outlined in the blog post titled:
 
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ Dock Manager Overview Example
+## $PlatformShort$ Dock Manager Example
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="dock-manager-overview-iframe" src='{environment:dvDemosBaseUrl}/layouts/dock-manager-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Dock Manager Overview Example"></iframe>
-</div>
-<sample-button src="layouts/dock-manager/overview"></sample-button>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
+           alt="$PlatformShort$ Dock Manager Example"
+           github-src="layouts/dock-manager/overview">
+</code-view>
 
 <div class="divider--half"></div>
 

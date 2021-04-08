@@ -8,21 +8,19 @@ mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 
 The $PlatformShort$ radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale.
 
-## $PlatformShort$ Radial Gauge Overview Example
-
 The $ProductName$ radial gauge component is a data visualization tool capable of displaying a radial gauge containing a number of visual elements, such as a scale with tick marks and labels, a needle, and a number of ranges. The component also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
+
+## $PlatformShort$ Radial Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same radial gauge can transform it to completely different radial gauge.
 
-<div class="sample-container loading" style="height: 375px">
-    <iframe id="radial-gauge-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ Radial Gauge Overview Example"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/animation"></sample-button>
 
-</div>
+<code-view style="height: 375px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
+           alt="$PlatformShort$ Radial Gauge Example"
+           github-src="gauges/radial-gauge/animation">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -59,13 +57,11 @@ RadialGaugeModule.Register(IgniteUIBlazor);
 ```ts
 // app.module.ts
 import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxRadialGaugeModule,
-        IgxRadialGaugeComponent
+        IgxRadialGaugeModule
         // ...
     ]
 })
@@ -75,20 +71,17 @@ export class AppModule {}
 ```ts
 // Module Manager for registering the modules of the chart
 import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
-import { IgcRadialGaugeCoreModule  } from 'igniteui-webcomponents-gauges';
+// Radial Gauge Module
 import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 
 // register the modules
 ModuleManager.register(
-    IgcRadialGaugeCoreModule,
     IgcRadialGaugeModule
 );
 ```
 
 ```ts
 import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
-import { IgrRadialGauge } from 'igniteui-react-gauges';
 
 IgrRadialGaugeModule.register();
 ```
@@ -171,17 +164,17 @@ The following code demonstrates how create a radial gauge containing a needle an
 <RadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="0"
           EndValue="30"
           Brush="red">
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="30"
           EndValue="60"
           Brush="Yellow" >
     </RadialGaugeRange>
-    <RadialGaugeRange 
+    <RadialGaugeRange
           StartValue="60"
           EndValue="100"
           Brush="Green">
@@ -270,15 +263,12 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-backing-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-backing-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/backing"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
+           github-src="gauges/radial-gauge/backing">
+</code-view>
 
 ## Scale
 
@@ -347,15 +337,12 @@ The scale is visual element that highlights full range of values in the gauge wh
 </RadialGauge>
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/scale"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
+           github-src="gauges/radial-gauge/scale">
+</code-view>
 
 ## Labels
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
@@ -396,7 +383,7 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 ```
 
 ```razor
-<RadialGauge 
+<RadialGauge
   Height="100%" Width="100%"
   LabelInterval="10"
   LabelInterval="10"
@@ -410,15 +397,12 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/labels"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
+           github-src="gauges/radial-gauge/labels">
+</code-view>
 
 ## Tick Marks
 Tick marks are thin lines radiating from the center of the radial gauge. There are two types of tick marks: major and minor. Major tick marks are displayed at the `Interval` between the `MinimumValue` and `MaximumValue` properties. Use the `MinorTickCount` property to specify the number of minor tick marks displayed between each major tick mark. You can control the length of tick marks by setting a fraction (between 0 and 1) to `TickStartExtent`, `TickEndExtent`, `MinorTickStartExtent`, and `MinorTickEndExtent` properties.
@@ -492,15 +476,12 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
 
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
+           github-src="gauges/radial-gauge/tickmarks">
+</code-view>
 
 ## Ranges
 A range highlights a set of continuous values bound by a specified `MinimumValue` and `MaximumValue` properties. You can add multiple ranges to the radial gauge by specifying their starting and ending values. Each range has a few customization properties such as `Brush` and `Outline`. Alternatively, you can set `RangeBrushes` and `RangeOutlines` properties to a list of colors for the ranges.
@@ -584,15 +565,12 @@ A range highlights a set of continuous values bound by a specified `MinimumValue
 </RadialGauge>
 ```
 
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/ranges"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
+           github-src="gauges/radial-gauge/ranges">
+</code-view>
 
 ## Needle
 
@@ -683,15 +661,12 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
     Interval="10">
 </RadialGauge>
 ```
-<div class="sample-container loading" style="height: 320px">
-    <iframe id="radial-gauge-needle-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="radial-gauge-needle-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/radial-gauge/needle"></sample-button>
 
-</div>
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
+           github-src="gauges/radial-gauge/needle">
+</code-view>
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.
@@ -904,7 +879,7 @@ For your convenience, all above code snippets are combined into one code block b
              MaximumValue="80"
              Value="50"
              Interval="10"
-              
+
              ScaleStartAngle="135"
              ScaleEndAngle="45"
              ScaleBrush="DodgerBlue"
@@ -951,7 +926,7 @@ For your convenience, all above code snippets are combined into one code block b
              BackingInnerExtent="0.15"
 
              RangeBrushes="#A4BD29, #F86232"
-             RangeOutlines="#A4BD29, #F86232">  
+             RangeOutlines="#A4BD29, #F86232">
     <RadialGaugeRange StartValue="20"
         EndValue="40"
         InnerStartExtent="0.50"
@@ -965,6 +940,6 @@ For your convenience, all above code snippets are combined into one code block b
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>   
+    </RadialGaugeRange>
 </RadialGauge>
 ```

@@ -15,15 +15,14 @@ $PlatformShort$ Bullet Graph コンポーネントは、目盛り上でメジャ
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-<div class="sample-container loading" style="height: 155px">
-    <iframe id="bullet-graph-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);" alt="$PlatformShort$ ブレット グラフの例"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/animation"></sample-button>
 
-</div>
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
+           alt="$PlatformShort$ ブレット グラフの例"
+           github-src="gauges/bullet-graph/animation">
+</code-view>
+
 <div class="divider--half"></div>
 
 このゲージは、スケール、針、目盛 (1 組)、ラベル (1 組) をサポートします。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
@@ -51,13 +50,11 @@ BulletGraphModule.Register(IgniteUIBlazor);
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
-import { IgxBulletGraphComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxBulletGraphModule,
-        IgxBulletGraphComponent
+        IgxBulletGraphModule
         // ...
     ]
 })
@@ -66,7 +63,6 @@ export class AppModule {}
 
 ```ts
 import { IgrBulletGraphModule } from 'igniteui-react-gauges';
-import { IgrBulletGraph } from 'igniteui-react-gauges';
 
 IgrBulletGraphModule.register();
 ```
@@ -158,7 +154,7 @@ ModuleManager.register(
   </igc-bullet-graph>
 ```
 
-```razor   
+```razor
 <BulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
@@ -217,7 +213,7 @@ MaximumValue="55" TargetValue="43">
     targetValueOuterExtent={0.85}
     height="80px" width="400px"
     minimumValue={0} value={50}
-    maximumValue={100}/>
+    maximumValue={100} />
 ```
 
 ```html
@@ -262,15 +258,12 @@ MaximumValue="55" TargetValue="43">
 </BulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-measures-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-measures-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/measures"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
+           github-src="gauges/bullet-graph/measures">
+</code-view>
 
 ## 比較範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -310,15 +303,15 @@ MaximumValue="55" TargetValue="43">
     <IgrLinearGraphRange
         startValue={0} endValue={40}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
     <IgrLinearGraphRange
         startValue={40} endValue={70}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
     <IgrLinearGraphRange
         startValue={70} endValue={100}
         innerStartExtent={0.075} innerEndExtent={0.075}
-        outerStartExtent={0.95} outerEndExtent={0.95}/>
+        outerStartExtent={0.95} outerEndExtent={0.95} />
 </IgrBulletGraph>
 ```
 
@@ -353,41 +346,38 @@ MaximumValue="55" TargetValue="43">
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange 
-  StartValue="0" 
-  EndValue="40" 
-  InnerStartExtent="0.075" 
+<LinearGraphRange
+  StartValue="0"
+  EndValue="40"
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange 
-  StartValue="40" 
+<LinearGraphRange
+  StartValue="40"
   EndValue="70"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
-<LinearGraphRange StartValue="70" 
+<LinearGraphRange StartValue="70"
   EndValue="100"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
 </LinearGraphRange>
 </BulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
+           github-src="gauges/bullet-graph/ranges">
+</code-view>
 
 ## 目盛
 目盛は、ブレット グラフを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -430,7 +420,7 @@ MaximumValue="55" TargetValue="43">
     minorTickBrush="DarkViolet"
     minorTickEndExtent={0.1}
     minorTickStartExtent={0.2}
-    minorTickStrokeThickness={1}/>
+    minorTickStrokeThickness={1} />
 ```
 
 ```html
@@ -472,15 +462,12 @@ MaximumValue="55" TargetValue="43">
 </BulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
+           github-src="gauges/bullet-graph/tickmarks">
+</code-view>
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -539,15 +526,12 @@ MaximumValue="55" TargetValue="43">
 </BulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
+           github-src="gauges/bullet-graph/labels">
+</code-view>
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -574,7 +558,7 @@ MaximumValue="55" TargetValue="43">
     backingOutline="DodgerBlue"
     backingStrokeThickness={4}
     backingInnerExtent={0}
-    backingOuterExtent={1}/>
+    backingOuterExtent={1} />
 ```
 
 ```html
@@ -602,15 +586,12 @@ MaximumValue="55" TargetValue="43">
 </BulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-background-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-background' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-background-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/background"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
+           github-src="gauges/bullet-graph/background">
+</code-view>
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -639,7 +620,7 @@ MaximumValue="55" TargetValue="43">
     scaleBackgroundOutline="DarkViolet"
     scaleBackgroundThickness={2}
     scaleStartExtent={0.05}
-    scaleEndExtent={0.95}/>
+    scaleEndExtent={0.95} />
 ```
 
 ```html
@@ -668,15 +649,12 @@ MaximumValue="55" TargetValue="43">
   ScaleEndExtent="0.95">
 </BulletGraph>
 ```
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-<sample-button src="gauges/bullet-graph/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
+           github-src="gauges/bullet-graph/scale">
+</code-view>
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。
@@ -810,15 +788,15 @@ MaximumValue="55" TargetValue="43">
     <IgrLinearGraphRange
         startValue={20} endValue={40}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
     <IgrLinearGraphRange
         startValue={40} endValue={60}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
     <IgrLinearGraphRange
         startValue={60} endValue={90}
         innerStartExtent={0.25} innerEndExtent={0.25}
-        outerStartExtent={0.9} outerEndExtent={0.9}/>
+        outerStartExtent={0.9} outerEndExtent={0.9} />
 </IgrBulletGraph>
 ```
 
