@@ -88,23 +88,28 @@ $PlatformShort$ データ チャートでは、プロット領域内に軸を配
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
-<div class="divider--half"></div
+<div class="divider--half"></div>
 
 
 ## その他のリソース
+
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
 - [軸グリッド線](chart-axis-gridlines.md)
 - [軸オプション](chart-axis-options.md)
 
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `CrossingAxis`
 - `CrossingValue`
 - `NumericYAxis`
+- `XamCategoryChart`
+- `XamDataChart`
+- `XamFinancialChart`
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
-- `XamCategoryChart`
-- `XamFinancialChart`
-- `XamDataChart`
 - `YAxisLabelLocation`

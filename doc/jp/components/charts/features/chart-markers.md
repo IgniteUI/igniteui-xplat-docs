@@ -8,9 +8,13 @@ _language: ja
 
 # $PlatformShort$ チャート マーカー
 
-$ProductName$ カテゴリのチャートには、マーカー、チャートのタイトルとサブタイトル、チャートの種類など、カスタマイズできる多くの領域があります。
+$ProductName$ マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
 
 # $PlatformShort$ チャート マーカーの例
+
+In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to "Circle."
+
+The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,52 +25,17 @@ $ProductName$ カテゴリのチャートには、マーカー、チャートの
 
 <div class="divider--half"></div>
 
-## チャート マーカーの構成
+## その他のリソース
 
-マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
-チャート マーカーの外観は、次のコード例に示すように、カテゴリ チャートの `MarkerType`、`MarkerBrushes`、`MarkerOutlines` プロパティを介して管理されます。
-
-```razor
- <CategoryChart Height="500px" Width="700px"
-    DataSource="@DataSource"
-    MarkerType="MarkerType.Diamond"
-    MarkerBrushes="red"
-    MarkerOutlines="yellow"/>
-```
-
-```html
-<igx-category-chart
-    [dataSource]="data"
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow">
-</igx-category-chart>
-```
-
-```tsx
- <IgrCategoryChart dataSource={this.state.data}
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow" />
-```
-```html
-<igc-category-chart
-    id="chart"
-    width="700px"
-    height="700px"
-    marker-type="Diamond"
-    marker-brushes="red"
-    marker-outlines="yellow">
-</igc-category-chart>
-```
-
+- [チャート注釈](chart-annotations.md)
+- [チャート強調表示](chart-highlighting.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`

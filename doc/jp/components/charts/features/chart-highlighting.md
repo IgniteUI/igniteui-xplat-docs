@@ -44,7 +44,7 @@ $ProductName$ `XamCategoryChart` は、データ項目にカーソルを合わ�
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`

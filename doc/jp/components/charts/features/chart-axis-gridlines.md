@@ -95,10 +95,14 @@ _language: ja
 
 ## その他のリソース
 
+関連するチャート機能の詳細については、以下のトピックを参照してください。
+
 - [軸レイアウト](chart-axis-layouts.md)
 - [軸オプション](chart-axis-options.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `XamCategoryChart` 
 - `XamFinancialChart`
