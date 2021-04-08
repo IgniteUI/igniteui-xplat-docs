@@ -25,12 +25,21 @@ The following example demonstrates how you can render 1 million of data points w
 
 This section lists guidelines and chart features that add to the overhead and processing updates in the $PlatformShort$ charts.
 
+### Data Size
+
+If you need to plot data sources with large number of data points (e.g. 10,000+), we recommend using $PlatformShort$ `XamDataChart` with one of the following type of series which where designed for specially for that purpose.
+
+- [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart) instead of [Category Point Chart](../types/point-chart.md#$PlatformShort$-Category-Point-chart) or [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart)
+- [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart) instead of [Category Line Chart](../types/line-chart.md#$PlatformShort$-Category-Line-chart) or [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart)
+- [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) instead of [Category Area Chart](../types/area-chart.md#$PlatformShort$-Category-Area-chart) or [Column Chart](../types/column-chart.md#$PlatformShort$-Column-chart)
+
 ### Data Structure
 
-Although $PlatformShort$ charts support rendering of multiple data sources by binding array of arrays of data points to `ItemsSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example,
+Although $PlatformShort$ charts support rendering of multiple data sources by binding array of arrays of data points to `ItemsSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
 
 ```razor
-this.Chart.DataSource = FlattenDataSource.Create();
+this.CategoryChart.DataSource = FlattenDataSource.Create();
+this.FinancialChart.DataSource = FlattenDataSource.Create();
 
 public static class FlattenDataSource
 {
@@ -74,7 +83,8 @@ public static class MultiDataSources
 ```
 
 ```ts
-this.Chart.dataSource = FlattenDataSource.create();
+this.CategoryChart.dataSource = FlattenDataSource.create();
+this.FinancialChart.dataSource = FlattenDataSource.create();
 
 export class FlattenDataSource {
     public static create(): any[] {
@@ -107,21 +117,21 @@ $PlatformShort$ `XamCategoryChart` and the `XamFinancialChart` controls have bui
 
 
 ```razor
-chart.IncludedProperties = new string[] { "Year", "USA", "RUS" };
-chart.ExcludedProperties = new string[] { "CHN",  "FRN", "GER" };
+this.Chart.IncludedProperties = new string[] { "Year", "USA", "RUS" };
+this.Chart.ExcludedProperties = new string[] { "CHN",  "FRN", "GER" };
 ```
 
 <!-- Angular, React, WebComponents -->
 ```ts
-chart.includedProperties = [ "Year", "USA", "RUS" ];
-chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
+this.Chart.includedProperties = [ "Year", "USA", "RUS" ];
+this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 ```
 
 ### Chart Types
 
 Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $PlatformShort$ `XamCategoryChart` or the `XamFinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
 
-The following table lists group of charts and their types of charts in order from the fastest performance to slower performance:
+The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
 
 Chart Group     | Chart Type
 ----------------|---------------------------------
@@ -131,7 +141,7 @@ Area Charts      | - [Category Area Chart](../types/area-chart.md#$PlatformShort
 Column Charts    | - [Column Chart](../types/column-chart.md#$PlatformShort$-Column-chart) <br> - [Bar Chart](../types/column-chart.md#$PlatformShort$-Bar-chart) <br> - [Waterfall Chart](../types/column-chart.md#$PlatformShort$-Waterfall-chart) <br> - [Range Column Chart](../types/column-chart.md#$PlatformShort$-Range-Column-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$PlatformShort$-Radial-Column-chart) <br> - [Stacked Column Charts](stacked-chart.md#$PlatformShort$-Stacked-Column-chart) <br> - [Stacked Bar Charts](stacked-chart.md#$PlatformShort$-Stacked-Bar-chart) <br> - [Stacked 100% Column Charts](stacked-chart.md#$PlatformShort$-Stacked-100%-Column-chart) <br> - [Stacked 100% Bar Charts](stacked-chart.md#$PlatformShort$-Stacked-100%-Bar-chart)
 Spline Charts    | - [Category Spline Chart](../types/spline-chart.md#$PlatformShort$-Category-Spline-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#$PlatformShort$-Polar-Spline-chart) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Spline-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#$PlatformShort$-Stacked-Spline-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Spline-chart) <br>
 Point Charts     | - [Category Point Chart](../types/point-chart.md#$PlatformShort$-Category-Point-chart) <br> - [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart)  <br> - [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Polar Marker Chart](../types/polar-chart.md#$PlatformShort$-Polar-Marker-chart) <br>
-Financial Charts | - [Financial Line Chart](../types/stock-chart.md) <br> - [Financial Area Chart](../types/stock-chart.md) <br> - [Financial OHLC Chart](../types/stock-chart.md) <br> - [Financial Candle Chart](../types/stock-chart.md) <br>
+Financial Charts | - [Stock Chart in Line Mode](../types/stock-chart.md) <br> - [Stock Chart in Column Mode](../types/stock-chart.md) <br> - [Stock Chart in Bar Mode](../types/stock-chart.md) <br> - [Stock Chart in Candle Mode](../types/stock-chart.md) <br> - [Stock Chart with Overlays](../types/stock-chart.md) <br> - [Stock Chart with Zoom Pane](../types/stock-chart.md) <br> - [Stock Chart with Volume Pane](../types/stock-chart.md#Volume-Pane) <br> - [Stock Chart with Indicator Pane](../types/stock-chart.md#Indicator-Pane) <br>
 Scatter Charts   | - [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart) <br> - [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Spline-chart) <br> - [Scatter Area Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Area-chart) <br> - [Scatter Contour Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Contour-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart) (\*) <br> - [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) (\*) <br>
 Radial Charts    | - [Radial Line Chart](../types/radial-chart.md#$PlatformShort$-Radial-Line-chart) <br> - [Radial Area Chart](../types/radial-chart.md#$PlatformShort$-Radial-Area-chart) <br> - [Radial Pie Chart](../types/radial-chart.md#$PlatformShort$-Radial-Pie-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$PlatformShort$-Radial-Column-chart) <br>
 Polar Charts     | - [Polar Marker Chart](../types/polar-chart.md#$PlatformShort$-Polar-Marker-chart) <br> - [Polar Line Chart](../types/polar-chart.md#$PlatformShort$-Polar-Line-chart) <br> - [Polar Area Chart](../types/polar-chart.md#$PlatformShort$-Polar-Area-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#$PlatformShort$-Polar-Spline-chart) <br> - [Polar Spline Area Chart](../types/polar-chart.md#$PlatformShort$-Polar-Spline-Area-chart) <br>
@@ -434,9 +444,9 @@ Adding too many axis to the `Axes` collection of the `XamDataChart` control will
 
 ### Series Collection
 
-Also, adding a series to the `Series` collection of the `XamDataChart` control will add small overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 20 series in $PlatformShort$ Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
+Also, adding a lot of series to the `Series` collection of the $PlatformShort$ `XamDataChart` control will add overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 10 series in the Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
 
-Slower Performance Scenario | Faster Series with Conditional Styling
+Slower Performance Scenario | Faster Scenario with Conditional Styling
 ----------------------------|----------------------------------------
 10+ of `LineSeries`         | Single `ScatterLineSeries`
 20+ of `LineSeries`         | Single `ScatterPolylineSeries`
@@ -446,14 +456,6 @@ Slower Performance Scenario | Faster Series with Conditional Styling
 20+ of `ScatterSeries`      | Single `HighDensityScatterSeries`
 10+ of `AreaSeries`         | Single `ScatterPolygonSeries`
 10+ of `ColumnSeries`       | Single `ScatterPolygonSeries`
-
-### Large Data Sources
-
-If you need to plot data source(s) with large number of data points (e.g. 10,000+), we recommend using the following type of series which where designed for specially for that purpose.
-
-- `HighDensityScatterSeries` instead of `PointSeries` or `ScatterSeries`
-- `ScatterPolylineSeries` instead of `LineSeries` or `ScatterLineSeries`
-- `ScatterPolygonSeries` instead of `AreaSeries` or `ColumnSeries`
 
 
 ## Additional Resources
