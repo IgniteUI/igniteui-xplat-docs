@@ -305,7 +305,7 @@ You can find more information about related chart features in these topics:
 - [Chart Annotations](../features/chart-annotations.md)
 - [Chart Navigation](../features/chart-navigation.md)
 - [Chart Trendlines](../features/chart-trendlines.md)
-- [Chart Performance](../features/chart-Performance.md)
+- [Chart Performance](../features/chart-performance.md)
 
 ## API Members
 
