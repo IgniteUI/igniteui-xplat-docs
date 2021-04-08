@@ -4,9 +4,9 @@ _description: Infragistics' $PlatformShort$ Shape Chart
 _keywords: $PlatformShort$ Charts, Shape Chart, Infragistics
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
 ---
-# $PlatformShort$ Shape Chart
+# $PlatformShort$ Shape Charts
 
-$PlatformShort$ Shape Chart is a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
+$PlatformShort$ Shape Charts are a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
 ## $PlatformShort$ Scatter Polygon Chart
 
@@ -48,7 +48,12 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------------------
-Scatter Polygon  | `XamDataChart` | `ScatterPolygonSeries`
-Scatter Polyline | `XamDataChart` | `ScatterPolylineSeries`
+- `XamDataChart`
+- `ScatterPolygonSeries`
+- `ScatterPolylineSeries`
+- `ItemsSource`
+- `ShapeMemberPath`
+- `NumericXAxis`
+- `NumericYAxis`
+- `YAxisName`
+- `XAxisName`
