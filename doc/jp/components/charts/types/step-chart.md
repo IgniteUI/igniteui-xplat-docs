@@ -9,16 +9,16 @@ _language: ja
 
 In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
-$PlatformShort$ ステップ チャートはカテゴリ シリーズのグループに属し、連続した垂直線と水平線で接続されたポイントのコレクションを使用して描画されます。ステップ エリア チャートの場合、線の下のエリアが塗りつぶされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。これは、一定期間の変化量を強調したり、複数の項目を比較したりします。
-
 ## $PlatformShort$ ステップ チャートの例
+
+In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
 `XamCategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           alt="凡例付きの $PlatformShort$ ステップ折れ線チャート" >
+           alt="$PlatformShort$ 複数ソースのステップ折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>

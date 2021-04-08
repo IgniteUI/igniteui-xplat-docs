@@ -2,16 +2,16 @@
 title: $PlatformShort$ 積層型チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 積層型チャート
 _keywords: $PlatformShort$ Charts, Stacked Chart, Infragistics, $PlatformShort$ チャート, 積層型チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
 _language: ja
 ---
 # $PlatformShort$ 積層型チャート
 
 $ProductName$ 積層型チャートは、データ項目の複数の値を積層エリア/ポリゴン、棒、縦棒、折れ線、またはスプラインとして描画する特別なチャートのグループです。標準の積層型チャートはデータ項目の実際の値を描画しますが、積層型 100% チャートは値を合計値のパーセンテージとして描画します。
 
-# $PlatformShort$ 積層型のタイプ
+## $PlatformShort$ 積層型チャートの例
 
-この例は、`xamDataChart` コントロールで描画できるすべてのタイプの $ProductName$ 積層型チャートを表示します。
+The following example initially depicts a stacked column chart that compares the energy generation of international countries for different energy types. The drop-down in this example allows you to switch between all of the different stacked chart types available in the $PlatformShort$ `XamDataChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -75,7 +75,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 $PlatformShort$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
-積層型 100% 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedBarSeries` にバインドします:
+積層型 100% 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -88,7 +88,9 @@ $PlatformShort$ 積層型 100% 棒チャートは、X 軸 (チャートの下の
 
 ## $PlatformShort$ 積層型縦棒チャート
 
-積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは積層型棒チャートと同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
+積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で[縦棒チャート](column-chart.md)と同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは積層型棒チャートと同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
+
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedColumnSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -176,7 +178,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ 積層型スプライン チャート
 
-以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineSeries` にバインドします:
+積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -30,7 +30,7 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 極座標スプライン チャートは極座標チャートのグループに属し、極座標 (角度、半径) でデータ ポイントを接続する曲線スプラインのコレクションを使用して描画されます。
 極座標スプライン チャートは、[散布スプライン チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarSplineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -44,7 +44,7 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarAreaSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -56,7 +56,7 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 ## その他のリソース
 
-関連するチャート機能の詳細については、以下のトピックを参照してください。
+関連するチャート タイプの詳細については、以下のトピックを参照してください。
 
 - [エリア チャート](area-chart.md)
 - [折れ線チャート](line-chart.md)

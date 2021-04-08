@@ -14,7 +14,7 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           alt="凡例付きの $PlatformShort$ スプライン チャート" >
+           alt="$PlatformShort$ 複数ソースのスプライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>

@@ -20,10 +20,12 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="$PlatformShort$ 凡例付きの $PlatformShort$ 折れ線チャート" >
+           alt="$PlatformShort$ 複数ソースの折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
+
+## 折れ線チャートの推奨事項
 
 ## $PlatformShort$ 折れ線チャートはプロジェクトに適していますか?
 
@@ -38,7 +40,9 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 - 極座標型折れ線チャート
 - 積層型 100 折れ線チャート
 
-### 折れ線チャートにはいくつかのユースケースがあります。例:
+### 折れ線チャートのユースケース
+
+折れ線チャートを選択するための一般的なユースケースはいくつかあります:
 
 - パン、ズーム、ドリルダウンなどのチャート操作に適した大容量のデータセットを使用する場合
 - 経時的なトレンドを比較する必要がある場合
@@ -58,105 +62,13 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 - 多くの (7 または 10 以上) シリーズのデータがある場合チャートを読みやすくすることが目標である場合
 - 時系列データの値は同じ (同じ期間のデータ) である場合; 重複した行を区別できなくなります。
 
-### データ構造:
+### 折れ線チャートのデータ構造:
 
 - データ ソースはデータ項目の配列またはリスト (単一シリーズの場合) である必要があります。
 - データ ソースは、配列の配列またはリストのリスト (複数シリーズの場合) である必要があります。
 - データ ソースに少なくとも 1 つのデータ項目を含む必要があります
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
-
-<!-- 次のコード スニペットは、折れ線チャートの作成に使用できるサンプルデータ ソースを示しています:
-
-```razor
-public class EnergyRenewableData : List<EnergyRenewableInfo>
-{
-    public EnergyRenewableData()
-    {
-        Add(new EnergyRenewableInfo { Year = "2009", Europe = 31, USA = 19, China = 21 });
-        Add(new EnergyRenewableInfo { Year = "2010", Europe = 43, USA = 24, China = 26 });
-        Add(new EnergyRenewableInfo { Year = "2011", Europe = 66, USA = 28, China = 29 });
-        Add(new EnergyRenewableInfo { Year = "2012", Europe = 69, USA = 26, China = 32 });
-        Add(new EnergyRenewableInfo { Year = "2013", Europe = 58, USA = 38, China = 47 });
-        Add(new EnergyRenewableInfo { Year = "2014", Europe = 40, USA = 31, China = 46 });
-        Add(new EnergyRenewableInfo { Year = "2015", Europe = 78, USA = 19, China = 50 });
-        Add(new EnergyRenewableInfo { Year = "2016", Europe = 13, USA = 52, China = 90 });
-        Add(new EnergyRenewableInfo { Year = "2017", Europe = 78, USA = 50, China = 132 });
-        Add(new EnergyRenewableInfo { Year = "2018", Europe = 40, USA = 34, China = 134 });
-        Add(new EnergyRenewableInfo { Year = "2019", Europe = 80, USA = 38, China = 96 });
-    }
-}
-
-public class EnergyRenewableInfo
-{
-    public string Year { get; set; }
-    public int Europe { get; set; }
-    public int China { get; set; }
-    public int USA { get; set; }
-}
-```
-
-```ts
-public initData() {
-    this.data = [
-        { Year: "2009", Europe: 31, China: 21,  USA: 19 },
-        { Year: "2010", Europe: 43, China: 26,  USA: 24 },
-        { Year: "2011", Europe: 66, China: 29,  USA: 28 },
-        { Year: "2012", Europe: 69, China: 32,  USA: 26 },
-        { Year: "2013", Europe: 58, China: 47,  USA: 38 },
-        { Year: "2014", Europe: 40, China: 46,  USA: 31 },
-        { Year: "2015", Europe: 78, China: 50,  USA: 19 },
-        { Year: "2016", Europe: 13, China: 90,  USA: 52 },
-        { Year: "2017", Europe: 78, China: 132, USA: 50 },
-        { Year: "2018", Europe: 40, China: 134, USA: 34 },
-        { Year: "2019", Europe: 80, China: 96,  USA: 38 },
-    ];
-}
-``` -->
-
-$PlatformShort$ 折れ線チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
-
-<!-- Blazor -->
-```razor
-CategoryChartModule.Register(IgniteUIBlazor);
-```
-<!-- end: Blazor -->
-
-<!-- Angular -->
-```ts
-// app.module.ts
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
-
-@NgModule({
-    imports: [
-        // ...
-        IgxCategoryChartModule,
-        // ...
-    ]
-})
-export class AppModule {}
-```
-<!-- end: Angular -->
-
-<!-- React -->
-```ts
-import { IgrCategoryChartModule } from 'igniteui-react-charts';
-
-IgrCategoryChartModule.register();
-```
-<!-- end: React -->
-
-<!-- WebComponents -->
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
-
-ModuleManager.register(
-    IgcCategoryChartModule
-    );
-```
-<!-- end: WebComponents -->
-
 
 ## 単一シリーズの $PlatformShort$ 折れ線チャート
 

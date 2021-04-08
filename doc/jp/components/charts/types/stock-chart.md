@@ -1,17 +1,17 @@
 ---
 title: $PlatformShort$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Stock Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
 mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 _language: ja
 ---
 # $PlatformShort$ 株価チャート
 
-$PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株式ティッカーは、分析している会社のデータ (ティッカー シンボル、通常は 1〜5 文字) を表します。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。株価チャートには、各期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。$PlatformShort$ 株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
+$PlatformShort$ 株価チャート ($PlatformShort$ ファイナンシャル チャートまたはローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株式ティッカーは、分析している会社のデータ (ティッカー シンボル、通常は 1〜5 文字) を表します。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。株価チャートには、各期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。$PlatformShort$ 株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
 
 ## $PlatformShort$ 株価チャートの例
 
-`XamFinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
+`XamFinancialChart` コントロールで株価チャートを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,6 +20,10 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 </code-view>
 
 <div class="divider--half"></div>
+
+## 株価チャートの推奨事項
+
+### $PlatformShort$ 株価チャートはプロジェクトに適していますか?
 
 典型的な株価チャートは、価格帯のテクニカル分析に使用されるローソク足チャートのティッカー データで表されます。ローソク足チャートは、1 日の高値と安値を、ティッカー シンボルの始値と終値と比較します。
 
@@ -31,6 +35,13 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - 黒または赤のローソク足は、前のローソク足の終値よりも低い終値の価格を表します。
 - 白または緑のローソク足は、前のローソク足の終値よりも高い終値を表します。
 
+株価チャートは、次のいずれかを表示するように設定できます:
+
+- ローソク足チャート
+- 棒チャート
+- 縦棒チャート
+- 折れ線チャート
+
 株価チャートは、ユーザーがデータ分析機能を実行できるようにすることを目的としているため、次のようなインタラクティブな要素が含まれています:
 
 - 時間ベースのフィルター
@@ -40,14 +51,7 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - トレンドライン
 - ナビゲーション/ズームバー ペイン
 
-株価チャートは、次のいずれかを表示するように設定できます:
-
-- ローソク足チャート
-- 棒チャート
-- 縦棒チャート
-- 折れ線チャート
-
-データ構造:
+### 株価チャートのデータ構造
 
 - データ ソースはデータ項目の配列またはリストである必要があります。
 - データ ソースに少なくとも 1 つのデータ項目を含む必要があります。
@@ -57,7 +61,6 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - すべてのデータ項目には、ローソク足チャートの始値、高値、安値、終値、ボリュームの 5 つの数値列が含まれている必要があります。
 
 ## 複数シリーズの $PlatformShort$ 株価チャート
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -70,7 +73,6 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 ## $PlatformShort$ 株価チャート
 
 この例では、株価チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -294,13 +296,19 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 <div class="divider--half"></div>
 
 ## その他のリソース
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-株価チャート      | `XamFinancialChart`     | `FinancialChart`
+関連するチャート機能の詳細については、以下のトピックを参照してください。
+
+- [チャート アニメーション](../features/chart-Animations.md)
+- [チャート注釈](../features/chart-annotations.md)
+- [チャート ナビゲーション](../features/chart-navigation.md)
+- [チャート トレンドライン](../features/chart-trendlines.md)
+- [チャートのパフォーマンス](../features/chart-Performance.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `ChartType`
 - `CrosshairsSnapToData`
 - `IndicatorTypes`

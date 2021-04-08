@@ -2,17 +2,28 @@
 title: $PlatformShort$ ラジアル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ラジアル チャート
 _keywords: $PlatformShort$ Charts, Radial Chart, Infragistics, $PlatformShort$ チャート, ラジアル チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", "RadialLineSeries"]
 _language: ja
 ---
 # $PlatformShort$ ラジアル チャート
 
-ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです (カテゴリ シリーズが行うように水平方向の線に沿って拡大するのではなく)。カテゴリ シリーズと同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ シリーズの同じカテゴリ グループ化メカニズムをサポートします。
+$PlatformShort$ ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです ([折れ線チャート](line-chart.md)が行うように水平方向の線に沿って拡大するのではなく)。[折れ線チャート](line-chart.md)と同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、折れ線チャートの同じカテゴリ グループ化メカニズムをサポートします。
 
+## $PlatformShort$ ラジアル チャートの例
+
+This example shows how to create Radial Chart in the `XamDataChart` control using `RadialLineSeries`.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
+           alt="$PlatformShort$ ラジアル折れ線チャート" >
+</code-view>
+
+<div class="divider--half"></div>
 
 ## $PlatformShort$ ラジアル エリア チャート
 
-The $ProductName$ Radial Area Chart belongs to a group of Radial Charts and has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Area Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The $ProductName$ Radial Area Chart has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Area Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
 
 You can create this type of chart in `XamDataChart` control by binding your data to `RadialAreaSeries`, as shown in the example below.
 
@@ -26,7 +37,7 @@ You can create this type of chart in `XamDataChart` control by binding your data
 
 ## $PlatformShort$ ラジアル縦棒チャート
 
-The Radial Column Chart belongs to a group of radial charts, and is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the [Column Chart](column-chart.md), but wraps data points around a circle rather than stretching them along a horizontal line.
+The Radial Column Chart is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the [Column Chart](column-chart.md), but wraps data points around a circle rather than stretching them along a horizontal line.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialColumnSeries`, as shown in the example below:
 
@@ -40,7 +51,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ ラジアル折れ線チャート
 
-The Radial Line Chart belongs to a group of radial charts and has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The Radial Line Chart has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
 
@@ -54,7 +65,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ ラジアル円チャート
 
-The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
+The Radial Pie Chart uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialPieSeries`, as shown in the example below:
 
@@ -70,7 +81,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ラジアル チャートを作成したら、線の色、マーカーの種類、またはそれらのマーカーのアウトライン色の変更など、スタイルをさらにカスタマイズしたい場合があります。
 
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RangeAreaSeries` にバインドします。
+この例は、$PlatformShort$ ラジアル チャートをカスタマイズする方法を示しています。
 
 
 <code-view style="height: 600px"
@@ -84,7 +95,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## その他のリソース
 
-関連するチャートタイプの詳細については、以下のトピックを参照してください。
+関連するチャート タイプの詳細については、以下のトピックを参照してください。
 
 - [エリア チャート](area-chart.md)
 - [縦棒チャート](column-chart.md)
@@ -94,11 +105,17 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明した API メンバーのリストです。
 
-チャート タイプ    | コントロール名   | API メンバー
---------------|----------------|-----------------------
-ラジアル エリア   | `XamDataChart` | `RadialAreaSeries`
-ラジアル縦棒 | `XamDataChart` | `RadialColumnSeries`
-ラジアル折れ線   | `XamDataChart` | `RadialLineSeries`
-ラジアル円    | `XamDataChart` | `RadialPieSeries`
+- `XamDataChart`
+- `RadialAreaSeries`
+- `RadialColumnSeries`
+- `RadialLineSeries`
+- `RadialPieSeries`
+- `ItemsSource`
+- `AngleAxisName`
+- `ValueAxisName`
+- `ValueMemberPath`
+- `CategoryAngleAxis`
+- `NumericRadiusAxis`
+

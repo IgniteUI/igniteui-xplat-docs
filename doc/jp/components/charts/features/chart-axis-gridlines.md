@@ -120,3 +120,4 @@ _language: ja
 - `YAxisTickStroke` 
 - `XAxisMajorStroke` 
 - `YAxisMajorStroke`  
+

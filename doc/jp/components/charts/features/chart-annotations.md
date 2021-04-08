@@ -23,6 +23,8 @@ $PlatformShort$ チャートのホバー操作と注釈は、シリーズ コレ
 
 <div class="divider--half"></div>
 
+このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+
 ## $PlatformShort$ 十字線レイヤー
 
 `CrosshairLayer` は、対象にするために構成される各シリーズの実際値で、異なるセットの線を描画する各シリーズと交差する十字線として描画されます。 
