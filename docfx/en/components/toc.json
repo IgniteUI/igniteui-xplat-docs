@@ -309,7 +309,7 @@
     ]
   },
   {
-    "name": "Charts (NEW)",
+    "name": "Charts",
     "href": "charts/chart-overview.md",
     "header": true,
     "status": ""
@@ -531,12 +531,14 @@
   },
   {
     "name": "Charts (OLD)",
-    "header": true
+    "header": true,
+    "exclude": ["Blazor", "Angular"]
   },
   {
     "name": "Category Chart",
     "href": "category-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Annotations",
@@ -579,6 +581,7 @@
     "name": "Data Chart",
     "href": "data-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Axis",
@@ -966,6 +969,7 @@
     "name": "Financial Chart",
     "href": "financial-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Binding Real-Time Data",
@@ -1012,6 +1016,7 @@
   {
     "name": "Sparkline",
     "href": "charts/types/sparkline-chart.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
