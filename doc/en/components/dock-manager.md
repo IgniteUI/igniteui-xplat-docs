@@ -370,7 +370,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt + F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [`demo`](#web-components-dock-manager-overview-example). 
+Practice all of the above mentioned actions in the sample [`demo`](#web-components-dock-manager-example). 
 
 ## Themes
 
