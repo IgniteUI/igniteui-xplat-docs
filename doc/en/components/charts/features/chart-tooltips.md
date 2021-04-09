@@ -7,21 +7,55 @@ mentionedTypes: ["XamCategoryChart", "ToolTipType"]
 
 # $PlatformShort$ Chart Tooltips
 
-In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components.
+In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` controls.
 
-## $PlatformShort$ Chart Tooltips Example
+## $PlatformShort$ Chart Tooltips Types
 
-The following example shows the [Column Chart](../types/column-chart.md) is comparing movie series total world box office revenue versus the highest grossing movie in that series with tooltips enabled by setting the `ToolTipType` property to "Default" at the start. This property is configurable in the sample and can be set to one of the following options:
+The following example shows the [Column Chart](../types/column-chart.md) with tooltips enabled by setting the `ToolTipType` property to "Default" at the start. This property is configurable in the sample and can be set to one of the following options:
 
-- `Default`- tooltips will display a tooltip for a single item when the pointer is positioned over it.
-- `Item`- tooltips will display a tooltip for each data item in the category that the pointer is positioned over.
-- `Category`- tooltips will display a grouped tooltip for all data points in the category that the pointer is positioned over.
+Property Value     | Description
+-------------------|----------------
+`Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.
+`Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.
+`Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
            alt="$PlatformShort$ Tooltip Types Example"
            github-src="charts/category-chart/column-chart-with-tooltips">
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Chart Tooltip Template
+
+If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demostrate how to do this in different types of $PlatformShort$ charts.
+
+<!-- TODO uncomment when charts/category-chart/tooltip-template is ported to Blazor
+## Custom Tooltips in Category Chart
+
+This example shows how to create custom tooltips for all series in $PlatformShort$ Category Chart control.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Template"
+           github-src="charts/category-chart/tooltip-template">
+</code-view>
+
+<div class="divider--half"></div>
+-->
+
+## Custom Tooltips in Data Chart
+
+This example shows how to create custom tooltips for each series in $PlatformShort$ Data Chart control.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Template"
+           github-src="charts/data-chart/tooltip-template">
 </code-view>
 
 <div class="divider--half"></div>
@@ -39,3 +73,4 @@ The following is a list of API members mentioned in the above sections:
 
 - `ToolTipType`
 - `XamCategoryChart`
+- `XamDataChart`
