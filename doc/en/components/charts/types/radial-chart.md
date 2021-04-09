@@ -6,19 +6,7 @@ mentionedTypes: ["XamDataChart", "RadialLineSeries"]
 ---
 # $PlatformShort$ Radial Charts
 
-$PlatformShort$ Radial Charts are a group of series that takes data and render it as collection of data points wrapped around a circle (rather than stretching along a horizontal line as [Line Charts](line-chart.md) do). Just like Line Charts, Radial Charts are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of Line Charts.
-
-## $PlatformShort$ Radial Chart Example
-
-This example shows how to create Radial Chart in the `XamDataChart` control using `RadialLineSeries`.
-
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           alt="$PlatformShort$ Radial Line Chart" >
-</code-view>
-
-<div class="divider--half"></div>
+$PlatformShort$ Radial Charts are a group of charts that takes data and render it as collection of data points wrapped around a circle (rather than stretching along a horizontal line). Radial Charts are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the category grouping mechanisms.
 
 ## $PlatformShort$ Radial Area Chart
 
@@ -50,9 +38,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Radial Line Chart
 
-The Radial Line Chart has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The $ProductName$ Radial Line Chart has renders as a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
+You can create this type of chart in the `XamDataChart` control by binding your data to `RadialLineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
