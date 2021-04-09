@@ -127,165 +127,18 @@ Financial Indicators are often used by traders to measure changes and to show tr
 By default the indicator panes are not displayed. The toolbar allows the end user to select which indicator to display at run time.
 In order to display an indicator pane initially, the `IndicatorTypes` property must be set to a least one type of indicator, as demonstrated in the following code:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    indicatorTypes="AverageTrueRange,ForceIndex">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    indicatorTypes="AverageTrueRange,ForceIndex" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    indicator-types="AverageTrueRange,ForceIndex">
- </igc-financial-chart>
-```
-
-```razor
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.AverageTrueRange);
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
-```
-
 ### Volume Pane
 The volume pane represents the number of shares traded during a given period. Low volume would indicate little interest, while high volume would indicate high interest with a lot of trades.  This can be displayed using column, line or area chart types. The toolbar allows the end user to display the volume pane by selecting a chart type to render the data at runtime. In order the display the pane, a volume type must be set, as demonstrated in the following code:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    volumeType="Column">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    volumeType="Column" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    volume-type="Column">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   VolumeType="FinancialChartVolumeType.Column" />
-```
-
 ### Price Pane
 This pane displays stock prices and shows the stock's high, low, open and close prices over time. In addition it can display trend lines and overlays. Your end user can choose different chart types from the toolbar. By default, the chart type is set to `Auto`. You can override the default setting, as demonstrated in the following code:
-
- ```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line" />
-```
 
 Note that is recommended to use line chart type if plotting multiple data sources or if plotting data source with a lot of data points.
 
 ### Zoom Pane
 This pane controls the zoom of all the displayed panes. This pane is displayed by default. It can be turned off by setting the `ZoomSliderType` to `none` as demonstrated in the following code:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    zoomSliderType="none">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    zoomSliderType="none" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    zoom-slider-type="none">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
-
 Note that you should set the `ZoomSliderType` option to the same value as the `ChartType` option is set to. This way, the zoom slider will show correct preview of the price pane. The following code demonstrates how to do this:
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line"
-    zoomSliderType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line"
-    zoomSliderType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line"
-    zoom-slider-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
 
 In this example, the stock chart is plotting revenue for United States.
 
