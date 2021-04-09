@@ -63,102 +63,6 @@ Do Not Use Pie Chart When:
 - You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story.
 - It would be easier for the viewer to perceive the value difference in a Bar chart.
 
-<!-- Blazor -->
-In order to use the $PlatformShort$ Pie Chart, the following module is first required to be added to your application:
-
-```razor
-PieChartModule.Register(IgniteUIBlazor);
-```
-<!-- end: Blazor -->
-
-<!-- Angular, React, WebComponents -->
-## How to Make $PlatformShort$ Pie Chart
-
-### 1. Install $PlatformShort$ core package
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install --save {PackageCore}
-</pre>
-
-### 2. Install $PlatformShort$ charts
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install --save {PackageCharts}
-</pre>
-
-### 3. Install Required Modules
-The $PlatformShort$ Pie Chart requires the following modules
-
-```ts
-// app.module.ts
-
-import { IgxPieChartModule } from 'igniteui-angular-charts';
-
-@NgModule({
-    imports: [
-        // ...
-        IgxPieChartModule,
-        // ...
-    ]
-})
-export class AppModule {}
-```
-
-```ts
-import { IgrPieChartModule } from 'igniteui-react-charts';
-
-IgrPieChartModule.register();
-```
-
-```ts
-import { IgcPieChartModule } from 'igniteui-webcomponents-charts';
-import { ModuleManager } from 'igniteui-webcomponents-core';
-
-ModuleManager.register(IgcPieChartModule);
-```
-
-<div class="divider--half"></div>
-
-<!-- end: Angular, React, WebComponents -->
-
-<!-- Angular, React, WebComponents -->
-## Usage
-
-Now that the pie chart module is imported, next step is to bind it to data.
-In order to create a pie chart, you must first have data to bind it to. The following code snippet demonstrates how to create a simple data source.
-
-```ts
-var data = [
-    { MarketShare: 30, Company: "Google",    },
-    { MarketShare: 30, Company: "Apple",     },
-    { MarketShare: 15, Company: "Microsoft", },
-    { MarketShare: 15, Company: "Samsung",   },
-    { MarketShare: 10, Company: "Other",     },
-];
-```
-
-The following code demonstrates how to bind the pie chart to the above data.
-
-```html
-<igx-pie-chart [dataSource]="data"
-               width="100%"
-               height="100%"
-               labelMemberPath="Company"
-               valueMemberPath="MarketShare">
-</igx-pie-chart>
-```
-```tsx
-<IgrPieChart
-    dataSource={this.state.data}
-    labelMemberPath="Company"
-    valueMemberPath="MarketShare"
-    width="300px"
-    height="300px" />
-```
-<!-- end: Angular, React, WebComponents -->
-
-<div class="divider--half"></div>
-
 ## $PlatformShort$ Pie Chart Legend
 
 Legends are used to show information about each point, to know about its contribution towards the total sum. You can collapse the point using legend click.
@@ -166,44 +70,6 @@ Legends are used to show information about each point, to know about its contrib
 In order to display a legend next to the pie chart an ItemLegend needs to be created and assigned to the `Legend` property. The `LegendLabelMemberPath` can then be used to specify which property on your data model it will use to display inside the legend for each pie slice.
 
 Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` properties and the various font properties on ItemLegend to further customize the look of the legend items.
-
-```html
-<igx-pie-chart [dataSource]="data"
-               width="100%"
-               height="100%"
-               valueMemberPath="MarketShare"
-               labelMemberPath="Company"
-               legendLabelMemberPath="Company"
-               [legend]="PieChartLegend">
-</igx-pie-chart>
-```
-
-```tsx
-<IgrPieChart dataSource={this.state.data}
-             labelMemberPath="Company"
-             valueMemberPath="MarketShare"
-             width="500px"
-             height="500px"
-             legendLabelMemberPath="Company" />
-
-<IgrItemLegend ref={this.legend} />
-
-```
-
-```html
-<igc-pie-chart id="chart"
-        width="100%" height="100%"
-        outlines="White"
-        value-member-path="MarketShare"
-        label-member-path="MarketShare"
-        legend-label-member-path="Company"
-        radius-factor="0.7">
-</igc-pie-chart>
-
-<igc-item-legend id="legend"></igc-item-legend>
-
-```
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -214,46 +80,12 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Pie Chart Others Category
+
 Sometimes, the underlying data for the pie chart will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
 
-In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCategoryType` is set to Number. Therefore, items with value less than or equal to 2 will be assigned to the “Others” category.
+In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCategoryType` is set to Number. Therefore, items with value less than or equal to 2 will be assigned to the "Others" category.
 
 If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will be interpreted as a percentage rather than as a value, i.e. items whose values are less than 2% of the sum of all item values would be assigned to the Others category. You can use whichever `OthersCategoryType` is most appropriate for your application.
-
-
-```html
-<igx-pie-chart [dataSource]="data"
-               width="100%"
-               height="100%"
-               labelMemberPath="Company"
-               valueMemberPath="MarketShare"
-               othersCategoryThreshold="2"
-               othersCategoryType="Number"
-               othersCategoryText="Others">
-</igx-pie-chart>
-```
-```tsx
-<IgrPieChart dataSource={this.state.data}
-             labelMemberPath="Company"
-             valueMemberPath="MarketShare"
-             width="500px"
-             height="500px"
-             othersCategoryThreshold="20"
-             othersCategoryType="Number"
-             othersCategoryText="Others"/>
-```
-```html
- <igc-pie-chart id="chart"
-        width="100%" height="100%"
-        label-member-path="Company"
-        value-member-path="MarketShare"
-        others-category-threshold="20"
-        others-category-type="Number"
-        others-category-text="Others"
-        radius-factor="0.7">
-</igc-pie-chart>
-```
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -264,51 +96,8 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 <div class="divider--half"></div>
 
 ## $PlatformShort$ Pie Chart Explosion
+
 The pie chart supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
-
-```html
-<igx-pie-chart [dataSource]="data"
-               width="100%"
-               height="100%"
-               allowSliceExplosion="true"
-               sliceClick="piechart_SliceClick">
-</igx-pie-chart>
-```
-
-```tsx
-<IgrPieChart dataSource={this.state.data}
-             labelMemberPath="Company"
-             valueMemberPath="MarketShare"
-             width="100%"
-             height="100%"
-             explodedRadius={0.2}
-             explodedSlices="1, 2"
-             allowSliceExplosion="true"
-             radiusFactor={0.7}
-             sliceClick={this.onSliceClick}/>
-```
-
-```ts
-import { IgrSliceClickEventArgs } from 'igniteui-react-charts';
-import { IgrPieChartBase } from 'igniteui-react-charts';
-import { IIgrPieChartBaseProps } from 'igniteui-react-charts';
-
-public onSliceClick = (s: IgrPieChartBase<IIgrPieChartBaseProps>, e: IgrSliceClickEventArgs) => {
-    e.isExploded = !e.isExploded;
-	e.isSelected = false;
-}
-```
-
-```ts
-import { IgcSliceClickEventArgs } from 'igniteui-webcomponents-charts';
-import { IgcPieChartComponent } from 'igniteui-webcomponents-charts';
-
-public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
-    e.isExploded = !e.isExploded;
-	e.isSelected = false;
-}
-```
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -339,75 +128,6 @@ The events that end in “Changing” are cancelable events which means you can 
 
 For scenarios where you click on the Others slice, the pie chart will return an object called `PieSliceOthersContext`. This object contains a list of the data items contained within the Others slice.
 
-
-```html
-<igx-pie-chart [dataSource]="data"
-            width="100%"
-            height="100%"
-            selectionMode="multiple"
-            selectedSliceStroke = "white"
-            selectedSliceFill= "rgb(143,143,143)"
-            selectedSliceOpacity =1.0
-            selectedSliceStrokeThickness=2>
-</igx-pie-chart>
-```
-
-```tsx
-<IgrPieChart dataSource={this.state.data}
-            labelMemberPath="Company"
-            valueMemberPath="MarketShare"
-            width="100%"
-            height="100%"
-            ref={this.onPieRef}
-            selectionMode="multiple"
-            sliceClick={this.onSliceClick}
-            selectedSliceStroke="white"
-            selectedSliceFill="rgb(143,143,143)"
-            selectedSliceOpacity = "1.0"
-            selectedSliceStrokeThickness= "2"/>
-```
-
-```ts
-public onPieRef(chart: IgrPieChart) {
-    this.chart  = chart;
-}
-
-public onSliceClick = (s: IgrPieChartBase<IIgrPieChartBaseProps>, e: IgrSliceClickEventArgs) =>
-    let selectedSlices: string = "";
-    const selectedItems = this.chart.selectedItems.toArray();
-
-    for (const item of selectedItems) {
-       selectedSlices += item.Company + " ";
-    }
-    this.setState( {selectedLabel: selectedSlices } );
-}
-```
-
-```html
-<igc-pie-chart id="chart"
-    width="100%"
-    height="100%"
-    label-member-path="Company"
-    value-member-path="MarketShare"
-    selection-mode="Multiple"
-    radius-factor="0.7">
-</igc-pie-chart>
-```
-
-```ts
-Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
-    let selectedSlice: string = "";
-    const selectedItems = this.chart.selectedItems.toArray();
-
-    for (const item of selectedItems) {
-        selectedSlice += item.Company + ", ";
-    }
-
-    this.label.innerText = "Selected Slices: " + selectedSlice;
-    }
-```
-
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
@@ -421,27 +141,6 @@ Public onSliceClick(s: IgcPieChartComponent, e: IgcSliceClickEventArgs) {
 You can animate the pie chart smoothly by setting the `radiusFactor` property, which will scale the chart's radius. Also set the `startAngle` property to angle the chart such that it keep increasing the chart angle while rotating.
 
 In the code below, the radiusFactor is increasing the chart by 0.25% of the size, and startAngle is rotating the chart by 1 degree. When radiusFactor and startAngle reached to its maximum limit the animation is stopped by reset the animation flag and clear the interval.
-
-```ts
-window.setInterval(() => this.tick(), 15);
-
-public tick(): void {
-    if (this.isAnimating) {
-        if (this.chart.radiusFactor < 1.0)
-            this.chart.radiusFactor += 0.0025;
-
-        if (this.chart.startAngle < 360)
-            this.chart.startAngle++;
-
-        if (this.chart.radiusFactor >= 1.0 &&
-            this.chart.startAngle >= 360) {
-            this.isAnimating = false;
-            window.clearInterval(this.interval);
-        }
-    }
-}
-```
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
