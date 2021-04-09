@@ -303,7 +303,7 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 - [チャート注釈](../features/chart-annotations.md)
 - [チャート ナビゲーション](../features/chart-navigation.md)
 - [チャート トレンドライン](../features/chart-trendlines.md)
-- [チャートのパフォーマンス](../features/chart-Performance.md)
+- [チャートのパフォーマンス](../features/chart-performance.md)
 
 ## API メンバー
 

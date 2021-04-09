@@ -47,9 +47,14 @@ $PlatformShort$ シェープ チャートは、一連の形状 (1 つまたは�
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明された API メンバーのリストです。
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------------------
-散布ポリゴン  | `XamDataChart` | `ScatterPolygonSeries`
-散布ポリライン | `XamDataChart` | `ScatterPolylineSeries`
+- `XamDataChart`
+- `ScatterPolygonSeries`
+- `ScatterPolylineSeries`
+- `ItemsSource`
+- `ShapeMemberPath`
+- `NumericXAxis`
+- `NumericYAxis`
+- `YAxisName`
+- `XAxisName`

@@ -7,19 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ ラジアル チャート
 
-$PlatformShort$ ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するシリーズのグループです ([折れ線チャート](line-chart.md)が行うように水平方向の線に沿って拡大するのではなく)。[折れ線チャート](line-chart.md)と同様、ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、折れ線チャートの同じカテゴリ グループ化メカニズムをサポートします。
-
-## $PlatformShort$ ラジアル チャートの例
-
-This example shows how to create Radial Chart in the `XamDataChart` control using `RadialLineSeries`.
-
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           alt="$PlatformShort$ ラジアル折れ線チャート" >
-</code-view>
-
-<div class="divider--half"></div>
+$PlatformShort$ ラジアル チャートは、データを取得し、円の周囲でラップされるデータ ポイントのコレクションとしてデータを描画するチャートのグループです (水平方向の線に沿って拡大するのではなく)。ラジアル チャートはチャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリ グループ化メカニズムをサポートします。
 
 ## $PlatformShort$ ラジアル エリア チャート
 
@@ -51,7 +39,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ ラジアル折れ線チャート
 
-The Radial Line Chart has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The $ProductName$ Radial Line Chart has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
 

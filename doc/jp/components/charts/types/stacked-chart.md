@@ -9,9 +9,9 @@ _language: ja
 
 $ProductName$ 積層型チャートは、データ項目の複数の値を積層エリア/ポリゴン、棒、縦棒、折れ線、またはスプラインとして描画する特別なチャートのグループです。標準の積層型チャートはデータ項目の実際の値を描画しますが、積層型 100% チャートは値を合計値のパーセンテージとして描画します。
 
-## $PlatformShort$ 積層型チャートの例
+## $PlatformShort$ 積層型チャート タイプ
 
-The following example initially depicts a stacked column chart that compares the energy generation of international countries for different energy types. The drop-down in this example allows you to switch between all of the different stacked chart types available in the $PlatformShort$ `XamDataChart` control.
+The following example, you can use the drop-down to switch between all of the different types stacked charts available in the $PlatformShort$ `XamDataChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,7 +22,6 @@ The following example initially depicts a stacked column chart that compares the
 <div class="divider--half"></div>
 
 以下のセクションは $ProductName$ 積層型チャートの個々のタイプを示します。
-
 
 ## $PlatformShort$ 積層型エリア チャート
 

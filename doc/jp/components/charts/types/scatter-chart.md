@@ -7,12 +7,13 @@ _language: ja
 ---
 # $PlatformShort$ 散布図
 
-$PlatformShort$ 散布図は、複数の異なるデータのシリーズの項目間の関係を示すマーカーを表示、または x および y 座標を使用してデータ項目をプロットするために使用されるシリーズのグループです。データ ポイントの x 座標および y 座標は、2 つの数値データ列で決定されます。散布シリーズは、データの不均等な散らばりやデータの塊に注意が向けられます。これらのタイプのシリーズは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。散布シリーズは、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
+$PlatformShort$ Scatter Charts are a group of charts that show the relationship among items in distinct series of data or to plot data items using numeric x and y coordinates.このチャートは、データの不均等な散らばりやデータの塊に注意が向けられます。科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。また、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
 
 ## $PlatformShort$ 散布マーカー チャート
 
-この例では、散布図は 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterSeries` にバインドします:
+$PlatformShort$ Scatter Marker Chart renders as a collection of markers, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
 
+You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -24,7 +25,7 @@ $PlatformShort$ 散布図は、複数の異なるデータのシリーズの項�
 
 ## $PlatformShort$ 散布折れ線チャート
 
-散布図は、デカルト (x、y) 座標系を使用してデータをプロットする散布図のグループに属しています。このシリーズは、直線で接続されたマーカーのコレクションとして描画され、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
+$PlatformShort$ は、直線で接続されたマーカーのコレクションとして描画され、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterLineSeries` にバインドします:
 
@@ -38,7 +39,7 @@ $PlatformShort$ 散布図は、複数の異なるデータのシリーズの項�
 
 ## $PlatformShort$ 散布スプライン チャート
 
-散布スプライン チャートは、デカルト (x, y) 座標系を使用してデータをプロットする散布図のグループに属します。このシリーズは、曲線スプラインで接続されたマーカーのコレクションとして描画され、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
+$PlatformShort$ は、曲線スプラインで接続されたマーカーのコレクションとして描画され、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterSplineSeries` にバインドします:
 
@@ -52,7 +53,7 @@ $PlatformShort$ 散布図は、複数の異なるデータのシリーズの項�
 
 ## $PlatformShort$ 散布高密度チャート
 
-$PlatformShort$ データ チャートの高密度散布図機能を使用して、わずかな読み込み時間で数千から数百万のデータ ポイントに及ぶ散布データをバインドして表示します。このチャート タイプは非常に多くのポイント用に設計されているため、フル サイズのマーカーではなく小さな点として視覚化され、データ ポイントのクラスターを表すより高い色密度を使用してデータが最も多い領域を表示します。
+$PlatformShort$ 散布高密度 (HD) チャートを使用して、わずかな読み込み時間で数千から数百万のデータ ポイントに及ぶ散布データをバインドして表示します。このチャート タイプは非常に多くのポイント用に設計されているため、フル サイズのマーカーではなく小さな点として視覚化され、データ ポイントのクラスターを表すより高い色密度を使用してデータが最も多い領域を表示します。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `HighDensityScatterSeries` にバインドします:
 
@@ -66,7 +67,7 @@ $PlatformShort$ データ チャートの高密度散布図機能を使用して
 
 ## $PlatformShort$ 散布エリア チャート
 
-散布エリア チャートは各ポイントに割り当てられた数値を使って、X および Y データの三角形分割に基づいて、色付きのサーフェスを描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。
+$PlatformShort$ 散布エリア チャートは各ポイントに割り当てられた数値を使って、X および Y データの三角形分割に基づいて、色付きのサーフェスを描画します。このチャートはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterAreaSeries` にバインドします:
 
@@ -80,7 +81,7 @@ $PlatformShort$ データ チャートの高密度散布図機能を使用して
 
 ## $PlatformShort$ 散布等高線チャート
 
-散布等高線チャートは、X データと Y データの三角形分割に基づいて、各ポイントに数値データ値が割り当てられた色付きの等高線を描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。
+$PlatformShort$ 散布等高線チャートは、X データと Y データの三角形分割に基づいて、各ポイントに数値データ値が割り当てられた色付きの等高線を描画します。このチャートはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterContourSeries` にバインドします:
 
@@ -114,6 +115,3 @@ $PlatformShort$ データ チャートの高密度散布図機能を使用して
 高密度散布        | `XamDataChart` | `HighDensityScatterSeries`
 散布エリア                | `XamDataChart` | `ScatterAreaSeries`
 散布等高線             | `XamDataChart` | `ScatterContourSeries`
-
-
-
