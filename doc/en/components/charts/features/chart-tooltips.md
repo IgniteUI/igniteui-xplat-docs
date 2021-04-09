@@ -26,6 +26,19 @@ The following example shows the [Column Chart](../types/column-chart.md) is comp
 
 <div class="divider--half"></div>
 
+## $PlatformShort$ Chart Tooltip Template
+
+The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Template"
+           github-src="charts/data-chart/tooltip-template">
+</code-view>
+
+<div class="divider--half"></div>
+
 ## Additional Resources
 
 You can find more information about related chart features in these topics:
