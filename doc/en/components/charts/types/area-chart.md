@@ -6,7 +6,7 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
 # $PlatformShort$ Area Charts
 
-The $ProductName$ Area Charts render as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+The $PlatformShort$ Area Charts render as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
 Area Charts are based on [Line Charts](line-chart.md) or [Spline Charts](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 

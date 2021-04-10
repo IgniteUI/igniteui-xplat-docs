@@ -24,7 +24,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 - [Bar Chart](bar-chart.md)
 - [Column Chart](column-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
-- [Composite Chart](Composite-chart.md)
+- [Line Chart](line-chart.md)
 - [Stacked Chart](stacked-chart.md)
 
 ## API Members

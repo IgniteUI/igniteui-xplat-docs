@@ -173,6 +173,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 You can find more information about related chart types in these topics:
 
 - [Bar Charts](bar-chart.md)
+- [Composite Chart](Composite-chart.md)
 - [Radial Charts](radial-chart.md)
 - [Stacked Charts](stacked-chart.md)
 
