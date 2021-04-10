@@ -20,6 +20,7 @@ Please follow the steps outlined in the blog post titled:
 
 ## $PlatformShort$ Dock Manager Example
 
+This example shows most functionalities and docking options of the $PlatformShort$ Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -29,8 +30,6 @@ Please follow the steps outlined in the blog post titled:
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 
 <!-- Angular, React, WebComponents -->
@@ -370,7 +369,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt + F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [`demo`](#web-components-dock-manager-example). 
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$PlatformShort$-dock-manager-example).
 
 ## Themes
 
