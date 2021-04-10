@@ -6,13 +6,13 @@ mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
 # $PlatformShort$ Area Charts
 
-The $ProductName$ Area Charts are based on [Line Charts](line-chart.md) or [Spline Charts](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
+The $ProductName$ Area Charts render as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
-Area Charts render as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+Area Charts are based on [Line Charts](line-chart.md) or [Spline Charts](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
 ## $PlatformShort$ Category Area Chart
 
-You can create an Area Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
+You can create Category Area Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,10 +23,6 @@ You can create an Area Chart in the `XamCategoryChart` control by binding your d
 <div class="divider--half"></div>
 
 ## Area Chart Recommendations
-
-### Are $PlatformShort$ Area Charts right for your project?
-
-Area Charts are similar to [Line Charts](line-chart.md) in that data points are plotted and connected by straight line segments, however they differ because with Area Charts, the area between the X-Axis and the line is filled in.
 
 ### Area Chart Use Cases
 
@@ -62,7 +58,6 @@ There are several common use cases for choosing an Area Chart:
 
 $PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `Area` value, as shown in the example below.
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source"
@@ -74,7 +69,6 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 ## $PlatformShort$ Area Chart with Multiple Series
 
 Similarly to how you can show multiple [Line Charts](line-chart.md) and [Spline Charts](spline-chart.md), you may also combine multiple Area Charts in the same component. This is accomplished by binding multiple data source to `ItemsSource` property of the `XamCategoryChart` control.
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -96,6 +90,10 @@ Area charts often have semi-transparent fill for their areas, thicker li
 
 <div class="divider--half"></div>
 
+## Advanced Types of Area Charts
+
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+
 ## $PlatformShort$ Step Area Chart
 
 The $ProductName$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `StepArea` value, as shown in the example below.
@@ -109,9 +107,9 @@ The $ProductName$ Step Area Chart belongs to a group of category charts and it i
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Advanced Scenarios
+## Advanced Types of Area Charts
 
-For more advanced types of area charts, use `XamDataChart` control to create other types of area charts as the following sections demonstrate them.
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ Range Area Chart
 

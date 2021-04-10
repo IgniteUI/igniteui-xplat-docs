@@ -129,9 +129,9 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Line Chart Advanced Scenarios
+## Advanced Types of Line Charts
 
-For more advanced types of line charts, use `XamDataChart` control to create other types of line charts as the following sections demonstrate them.
+The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ Stacked Line Chart
 

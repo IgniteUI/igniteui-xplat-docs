@@ -62,9 +62,9 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Spline Chart Advanced Scenarios
+## Advanced Types of Spline Charts
 
-For more advanced types of spline charts, use `XamDataChart` control to create other types of spline charts as the following sections demonstrate them.
+The following sections explain more advanced types of $PlatformShort$ Spline Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ Stacked Spline Chart
 
