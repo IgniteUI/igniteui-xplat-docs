@@ -4,13 +4,13 @@ _description: Infragistics' $PlatformShort$ Area Chart
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
-# $PlatformShort$ Area Chart
+# $PlatformShort$ Area Charts
 
 The $ProductName$ Area Charts are based on [Line Charts](line-chart.md) or [Spline Charts](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
-Area Charts are rendered using a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
+Area Charts render as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
-## $PlatformShort$ Area Chart Example
+## $PlatformShort$ Category Area Chart
 
 You can create an Area Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
 

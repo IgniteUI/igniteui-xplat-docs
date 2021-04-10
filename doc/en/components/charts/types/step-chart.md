@@ -4,13 +4,23 @@ _description: Infragistics' $PlatformShort$ Step Chart
 _keywords: $PlatformShort$ Charts, Step Chart, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
 ---
-# $PlatformShort$ Step Chart
+# $PlatformShort$ Step Charts
 
-$PlatformShort$ Step Chart belongs to a group of Category Series and it is rendered using a collection of points connected by continuous vertical and horizontal lines. For Step Area Chart, the area below lines are filled in. Values are represented on the y-axis and categories are displayed on the x-axis. This emphasizes the amount of change over a period of time or compares multiple items.
+$PlatformShort$ Step Charts is to a group of category charts that render as a collection of points connected by continuous vertical and horizontal lines. For Step Area Chart, the area below lines are filled in. Values are represented on the y-axis and categories are displayed on the x-axis. This emphasizes the amount of change over a period of time or compares multiple items.
 
-## $PlatformShort$ Step Chart Example
+## $PlatformShort$ Step Area Chart
 
-In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+You can create a Step Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `AreaLine` value, as shown in the example below.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
+           alt="$PlatformShort$ Step Line Chart Multiple Sources" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Step Line Chart
 
 You can create a Step Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `StepLine` value, as shown in the example below.
 
@@ -24,9 +34,7 @@ You can create a Step Chart in the `XamCategoryChart` control by binding your da
 
 ## $PlatformShort$ Step Chart with Single Series
 
-In this example, the Step Chart is showing the change of value over time for the amount of renewable electricity produced for several years in Europe.
-
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `StepLine`, as shown in the example below:
+This Step Chart provides example on how to bind single data source that is showing the change of value over time for the amount of renewable electricity produced for several years in Europe.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -38,9 +46,7 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 ## $PlatformShort$ Step Chart with Multiple Series
 
-The Step Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
-
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `StepLine`, as shown in the example below:
+You can also bind multiple data sources in the Step Chart. It is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -75,6 +81,8 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type | Control Name       | API Members
------------|--------------------|------------------------
-Step       | `XamCategoryChart` | `ChartType` = `StepLine`
+- `XamCategoryChart`
+- `ChartType`
+- `StepArea`
+- `StepLine`
+

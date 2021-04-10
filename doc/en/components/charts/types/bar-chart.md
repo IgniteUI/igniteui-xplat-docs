@@ -4,13 +4,13 @@ _description: $PlatformShort$ Bar Charts are among the most common category char
 _keywords: $PlatformShort$ Charts, Bar Chart, Infragistics
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
-# $PlatformShort$ Bar Chart
+# $PlatformShort$ Bar Charts
 
-$PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a [Column Chart](column-chart.md), or [Column Graph](column-chart.md), where bars are displayed vertically (up and down), the bar chart is rendered like the [column chart](column-chart.md), but with 90 degrees clockwise rotation and a horizontal display (left to right).
+$PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Charts are very similar to [Column Charts](column-chart.md) except that Bar Charts render with 90 degrees clockwise rotation and therefore they have horizontal orientation (left to right) while [Column Charts](column-chart.md) have vertical orientation (up and down)
 
-## $PlatformShort$ Bar Chart Example
+## $PlatformShort$ Category Bar Chart
 
-In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
+The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries`, as shown in the example below:
 
@@ -152,9 +152,10 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Bar              | `XamDataChart` | `BarSeries`
-Stacked Bar      | `XamDataChart` | `StackedBarSeries`
-Stacked 100% Bar | `XamDataChart` | `Stacked100BarSeries`
-Callout Layer    | `XamDataChart` | `CalloutLayer`
+- `XamDataChart`
+- `ItemsSource`
+- `BarSeries`
+- `CalloutLayer`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
+- `StackedBarSeries`

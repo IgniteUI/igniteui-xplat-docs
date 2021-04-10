@@ -10,7 +10,7 @@ $PlatformShort$ Point Chart renders a collection of points. Values are represent
 
 With multiple series, our $PlatformShort$ Point Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart` control. This gives the benefit for our users to more easily comprehend what data set each point corresponds to.
 
-## $PlatformShort$ Point Chart Example
+## $PlatformShort$ Category Point Chart
 
 You can create the $PlatformShort$ Point Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
@@ -70,4 +70,4 @@ Once the $PlatformShort$ Point Chart is set up, we may want to make some further
 - `MarkerOutlines`
 - `MarkerBrushes`
 - `MarkerThickness`
- 
+
