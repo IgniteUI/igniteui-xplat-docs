@@ -527,6 +527,7 @@
   {
     "name": "Data Sources",
     "href": "data-chart-data-sources.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
