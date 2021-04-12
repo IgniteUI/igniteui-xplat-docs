@@ -12,7 +12,7 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 ## $PlatformShort$ チャート ツールチップの例
 
-The following example shows the [Column Chart](../types/column-chart.md) is comparing movie series total world box office revenue versus the highest grossing movie in that series with tooltips enabled by setting the `ToolTipType` property to "Default" at the start. This property is configurable in the sample and can be set to one of the following options:
+次の例は、[縦棒チャート](../types/column-chart.md)が、映画シリーズの世界の興行収入の合計と、そのシリーズで最も収益の高い映画を比較していることを示しています。開始時に `ToolTipType` プロパティを "Default" に設定することで、ツールチップが有効になります。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
 
 - `Default` ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
 - `Item` ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。

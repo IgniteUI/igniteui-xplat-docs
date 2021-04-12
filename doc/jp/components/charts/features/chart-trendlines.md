@@ -10,11 +10,11 @@ _language: ja
 
 $ProductName$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` (積層型シリーズ、シェイプ シリーズ、範囲シリーズを除く) でサポートされています。
 
-Trendlines are off by default, but you can enable them by setting the `TrendLineType` property. Also, you can modify multiple appearance properties of trendlines such as its brush, period, and thickness. 
+トレンドラインはデフォルトでオフになっていますが、 `TrendLineType` プロパティを設定することで有効にできます。また、ブラシ、期間、太さなど、トレンドラインの複数の外観プロパティを変更できます。
 
 # $PlatformShort$ チャート トレンドラインの例
 
-The following sample depicts a `XamFinancialChart` showing the stock trend of Microsoft between 2013 and 2017 with a `QuinticFit` trendline initially applied. There is a drop-down that will allow you to change the type of trendline that is applied, and all possible trendline types are listed within that drop-down.
+次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `XamFinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

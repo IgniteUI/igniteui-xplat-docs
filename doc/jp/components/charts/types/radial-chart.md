@@ -11,9 +11,9 @@ $PlatformShort$ ラジアル チャートは、データを取得し、円の周
 
 ## $PlatformShort$ ラジアル エリア チャート
 
-The $ProductName$ Radial Area Chart has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Area Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+$ProductName$ ラジアル エリア チャートは、データ ポイントを結ぶ直線のコレクションによってバインドされた塗りつぶされた多角形の形をしています。このチャートは、[エリア チャート](area-chart.md)と同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。
 
-You can create this type of chart in `XamDataChart` control by binding your data to `RadialAreaSeries`, as shown in the example below.
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,9 +25,9 @@ You can create this type of chart in `XamDataChart` control by binding your data
 
 ## $PlatformShort$ ラジアル縦棒チャート
 
-The Radial Column Chart is visualized by using a collection of rectangles that extend from the center of the chart toward the locations of data points. This utilizes the same concepts of data plotting as the [Column Chart](column-chart.md), but wraps data points around a circle rather than stretching them along a horizontal line.
+ラジアル縦棒チャートは、チャートの中心からデータ ポイントの位置に向けて広がる矩形のコレクションを使用して表示されます。これは[縦棒チャート](column-chart.md)と同じデータ プロットの概念を使用していますが、データ ポイントを横の線[に並べるのではなく、データ ポイントを円でラップします。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialColumnSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialColumnSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -39,9 +39,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ ラジアル折れ線チャート
 
-The $ProductName$ Radial Line Chart has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+$ProductName$ Radial Line Chart ラジアル折れ線チャートは、データ ポイントを結ぶ直線のコレクションによってバインドされた塗りつぶされていない多角形の形をしています。このチャートは、[折れ線チャート](line-chart.md)と同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -53,9 +53,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ ラジアル円チャート
 
-The Radial Pie Chart uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
+ラジアル円チャートは、チャートの中心からデータ ポイントの位置に向けて広がる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialPieSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialPieSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

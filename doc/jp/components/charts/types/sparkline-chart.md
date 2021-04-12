@@ -14,7 +14,7 @@ $ProductName$ スパークライン コンポーネントは、軽量なチャ�
 
 ## $PlatformShort$ スパークラインの例
 
-The following example shows all the different sparkline types available. The type is defined by setting the `DisplayType` property. If the `DisplayType` property is not specified, then by default, the `Line` type is displayed.
+次の例は、使用可能なすべての異なるスパークライン タイプを示しています。タイプは `DisplayType` プロパティの設定により定義されます。`DisplayType` プロパティが指定されていない場合は、既定では `Line` 型が表示されます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -29,42 +29,42 @@ The following example shows all the different sparkline types available. The typ
 
 ## スパークラインの推奨事項
 
-### Is the Sparkline chart right for your project?
+### スパークライン チャートはプロジェクトに適していますか?
 
-The primary benefit of the Sparkline control compared to other charting controls is that it can render in a limited space such as a grid cell with all its visual elements shown.  
+他のチャート コントロールと比較したスパークラインの利点は、グリッド セルなどの限られたスペースに、そのすべてのビジュアル要素を表示できることです。 
 
-The Sparkline component has the ability to mark the data points with elliptical icons to indicate the highest, lowest, first, last, and negative values. The markers can be customized with a desired shape, color, or image.
+スパークライン コンポーネントには、最高、最低、最初、最後、そして負の値を示す楕円形のアイコンによってデータ ポイントをマークする機能があります。マーカーは、任意のシェイプ、色、または画像でカスタマイズできます。
 
-### Sparkline Use Cases
+### スパークライン ユースケース
 
-- You have a compact space to display a chart in.
-- You want to show trends in a series of values, such as weekly revenue.
+- チャートを表示するためのコンパクトなスペースがある場合。
+- 週ごとの収益など、一連の値の傾向を示したい場合。
 
-### Sparkline Best Practices
+### スパークラインのベスト プラクティス
 
-- Always start the Y-Axis (left or right axis) at 0 so data comparison is accurate.
-- Order time-series data from left to right.
-- Use visual attributes like solid lines to show a series of data.
+- データ比較が正確になるように Y 軸 (左軸または右軸) を常に 0 から開始する。
+- 時系列データを左から右へ並べ替える。
+- 実線などの視覚属性を使用して一連のデータを表示する。
 
-### When Not to Use Sparkline
+### 次の場合にスパークラインを使用しないでください:
 
-- You need to analyze the data in detail.
-- You need to display every label of the data points. It only allows showing high and low values on the Y-Axis, and first and last values on the X-Axis.
+- データを詳細に分析する必要がある場合。
+- データ ポイントのすべてのラベルを表示する必要がある場合。Y 軸上には最大値と最小値のみを表示でき、X 軸には最初の値と最後の値のみを表示できます。
 
-### Sparkline Data Structure
+### スパークラインのデータ構造
 
-- It requires one-dimensional data.
-- The data set must contain at least two numeric fields.
-- The text in the data source fields can be used to display the first and last label on the X-Axis.
+- 一次元データが必要です。
+- データ セットには少なくとも 2 つの数値フィールドを含む必要があります。
+- データ ソース フィールドのテキストを使用して、X 軸の最初と最後のラベルを表示できます。
 
 ## スパークラインのタイプ
 
 $ProductName$ スパークライン コンポーネントは、それに応じて  `DisplayType` プロパティを設定することにより、以下のスパークライン タイプをサポートしています。
 
-- `Line`:  Displays the line chart type of Sparkline with numeric data, connecting the data points with line segments. At least two data points must be supplied to visualize the data in Sparkline.
-- `Area`: Displays the Area chart type of Sparkline with numeric data. This is like line type with additional steps of closing the area after each line is drawn. At least two data points must be supplied to visualize the data in Sparkline.
-- `Column`: Displays the Column chart type of Sparkline with numeric data. Some may refer to it as vertical bars. This type can render a single data point, but it would require specifying the minimum value range property (minimum) in Sparkline so the supplied single data point can be visible, otherwise the value will be treated as the minimum value and will not be visible. 
-- `WinLoss`: This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the sparkline component will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
+- `Line`:  スパークラインの折れ線チャート タイプを数値データで表示し、データ ポイントを線分で接続します。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
+- `Area`: Area: スパークラインのエリア チャート タイプを数値データで表示します。これは折れ線タイプに似ており、各線が描画された後に領域を閉じる追加の手順があります。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
+- `Column`: スパークラインの縦棒チャート タイプを数値データで表示します。縦棒と表現される場合もあります。このタイプは単一データ ポイントを描画できますが、Sparkline に最小の値範囲プロパティ（minimum）を指定する必要があるので、供給される単一データ ポイントは表示可能です。そうでなければ、値は最小値として取り扱われ、表示されません。
+- `WinLoss`: このタイプは、外観は柱状チャートに似ています。各列の値はデータセットの正の最大値 (正の値の場合) または負の最小値 (負の値の場合) に等しくなります。ウィンまたはロス シナリオを示すのが目的です。Win/Loss チャートを正しく表示するには、データセットには正の値と負の値がなければなりません。WinLoss スパークラインが、数値のコレクションにバインドできる Line タイプなどの他のタイプと同じデータにバインドされている場合、スパークライン コンポーネントはそのコレクションから最大値と最小値の 2 つの値を選択し、それらの値に基づいてスパークラインをレンダリングします。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -75,7 +75,7 @@ $ProductName$ スパークライン コンポーネントは、それに応じ�
 
 ## マーカー
 
-$ProductName$ スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが `Line`、`Area`、および `Column` のスパークラインに設定できます。``WinLoss`` 型のスパークラインは、現在マーカーを設定できません。By default, markers are not displayed, but they can be enabled by setting the corresponding marker visibility property.
+$ProductName$ スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが `Line`、`Area`、および `Column` のスパークラインに設定できます。``WinLoss`` 型のスパークラインは、現在マーカーを設定できません。デフォルトでは、マーカーは表示されませんが、対応するマーカーの可視性プロパティを設定することで有効にできます。
 
 スパークライン内のマーカーは、以下の場所を任意に組み合わせて配置できます。
 
@@ -137,7 +137,7 @@ $ProductName$ スパークライン コンポーネントは、実際のスパ�
 
 $ProductName$ スパークライン コンポーネントは、不明な値を検出し、指定された補間アルゴリズムを介して不明な値のためのスペースを描画することができます。データに null 値が含まれていて、この機能を使用しない場合、つまり補間が指定されていない場合、不明な値はプロットされません。
 
-未知の値をプロットするために、スパークライン コンポーネントの `UnknownValuePlotting` プロパティを設定することができます。The sample below shows the differences between the values of the `UnknownValuePlotting` property, allowing you to toggle it on or off using a checkbox:
+未知の値をプロットするために、スパークライン コンポーネントの `UnknownValuePlotting` プロパティを設定することができます。以下のサンプルは、 `UnknownValuePlating` プロパティの値の違いを示しており、チェックボックスを使用してオンとオフを切り替えることができます。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -7,134 +7,134 @@ _language: ja
 ---
 # $PlatformShort$ チャート機能
 
-The $ProductName$ chart component allows you to display many different features to portray the full data story to be told with your chart. Each of these features are fully customizable, and can be styled to suit your design needs - allowing you full control. Interactions such as highlighting and annotations allow you to call out important data details allowing for a deeper data analysis within your chart.
+$ProductName$ チャート コンポーネントを使用すると、さまざまな機能を表示して、チャートで伝えられる完全なデータ ストーリーを表現できます。これらの各機能は完全にカスタマイズ可能であり、デザインのニーズにに合わせてスタイルを設定できるため、完全に制御できます。強調表示や注釈などの操作により、重要なデータの詳細を呼び出すことができ、チャート内のより深いデータ分析が可能になります。
 
-The $PlatformShort$ chart offers the following chart features:
+$PlatformShort$ チャートは、次のチャート機能を提供します。
 
-### Axis
+### 軸
 
-Modify or customize all aspects of both the X-Axis and Y-Axis using the different axis properties. You can display gridlines, customize the style of tickmarks, change axis titles, and even modify axis locations and crossing values. You can learn more about customizations of the $PlatformShort$ chart's [Axis Gridlines](features/axis-gridlines.md), [Axis Layouts](features/axis-layouts), and [Axis Options](features/axis-options.md) topic.
+異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。$PlatformShort$ チャートのカスタマイズについての詳細には、[軸グリッド線](features/axis-gridlines.md)、[軸レイアウト](features/axis-layouts)、および[軸オプション](features/axis-options.md)のトピックをご覧ください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="$PlatformShort$ Axis Crossing Axes Example"
+           alt="$PlatformShort$ 軸交差軸の例"
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Annotations
+### 注釈
 
-These additional layers are on top of the chart which are mouse / touch dependent. Used individually or combined, they provide powerful interactions that help to highlight certain values within the chart. You can learn more about this feature in the [Chart Annotations](features/chart-annotations.md) topic.
+これらの追加のレイヤーは、マウス/タッチに依存するほかのチャートレイヤーの上にあります。個別にまたは組み合わせて使用すると、チャート内の特定の値を強調するのに役立つ強力な操作を提供します。この機能の詳細については、[チャート注釈](features/chart-annotations.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="$PlatformShort$ Annotations Example"
+           alt="$PlatformShort$ 注釈の例"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Animations
+### アニメーション
 
-Animate your chart as it loads a new data source by enabling animations. These are customizable by setting different types of animations and the speed at which those animations take place. You can learn more about this feature in the [Chart Animations](features/chart-animations.md) topic.
+アニメーションを有効にして、新しいデータ ソースを読み込むときにチャートをアニメーション化します。これらは、さまざまなタイプのアニメーションとそれらのアニメーションが実行される速度を設定することでカスタマイズできます。この機能の詳細については、[チャート アニメーション](features/chart-animations.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="$PlatformShort$ Configuration Options Example"
+           alt="$PlatformShort$ 構成オプションの例"
            github-src="charts/category-chart/line-chart-with-animations">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Highlighting
+### 強調表示
 
-Bring focus to visuals such as lines, columns, or markers by highlighting them as the mouse hovers over the data items. This features is enabled on all chart types. You can learn more about this feature in the [Chart Highlighting](features/chart-highlighting.md) topic.
+線、列、マーカーなどのビジュアルに、マウスをデータ項目の上に置いたときに強調表示して、フォーカスを合わせます。この機能は、すべてのチャート タイプで有効になっています。この機能の詳細については、[チャート強調表示](features/chart-highlighting.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="$PlatformShort$ Highlighting Example"
+           alt="$PlatformShort$ 強調表示の例"
            github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Markers
+### マーカー
 
-Identify data points quickly, even if the value falls between major gridlines with the use of markers on the chart series. These are fully customizable in style, color, and shape. You can learn more about this feature in the [Chart Markers](features/chart-markers.md) topic.
+チャート シリーズのマーカーを使用して値が主要なグリッド線の間にある場合でも、データ ポイントをすばやく識別します。これらは、スタイル、カラー、および形状で完全にカスタマイズ可能です。この機能の詳細については、[チャート マーカー](features/chart-markers.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$PlatformShort$ Configuration Options Example"
+           alt="$PlatformShort$ 構成オプションの例"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Navigation
+### ナビゲーション
 
-You can navigate the chart by zooming and panning with the mouse, keyboard, and touch interactions. You can learn more about this feature in the [Chart Navigation](features/chart-navigation.md) topic.
+マウス、キーボード、およびタッチ操作でズームおよびパンすることにより、チャートをナビゲートできます。この機能の詳細については、[チャート ナビゲーション](features/chart-navigation.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$PlatformShort$ Navigation Example"
+           alt="$PlatformShort$ ナビゲーションの例"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Overlays
+### オーバーレイ
 
-Overlays allows you to annotate important values and thresholds by plotting horizontal or vertical lines in charts. You can learn more about this feature in the [Chart Overlays](features/chart-overlays.md) topic.
+オーバーレイを使用すると、チャートに水平線または垂直線をプロットして、重要な値としきい値に注釈を付けることができます。この機能の詳細については、[チャート オーバーレイ](features/chart-overlays.md)トピックを参照してください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$PlatformShort$ Value Overlay Example"
+           alt="$PlatformShort$ 値オーバーレイの例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Performance
+### パフォーマンス
 
-$PlatformShort$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the charts and they should be considered when optimizing performance in your application. You can learn more about this feature in the [Chart Performance](features/chart-performance.md) topic.
+$PlatformShort$ チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。この機能の詳細については、[チャート パフォーマンス](features/chart-performance.md)トピックを参照してください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           alt="$PlatformShort$ Chart Performance Example" >
+           alt="$PlatformShort$ チャート パフォーマンスの例" >
 </code-view>
 
 <div class="divider--half"></div>
 
-### Tooltips
+### ツールチップ
 
-Display all information relevant to the particular series type via Tooltips. There are different tooltips that can be enabled, such as Item-level and Category-level tooltips. You can learn more about this feature in the [Chart Tooltips](features/chart-tooltips.md) topic.
+ツールチップを使用して、特定のシリーズ タイプに関連するすべての情報を表示します。項目レベルやカテゴリ レベルのツールチップなど、有効にできるさまざまなツールチップがあります。この機能の詳細については、[チャート ツールチップ](features/chart-tooltips.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="$PlatformShort$ Tooltip Types Example"
+           alt="$PlatformShort$ ツールチップ タイプの例"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Trendlines
+### トレンドライン
 
-Use trendlines to identify a trend or find patterns in your data. There are many different trendlines supported by the $PlatformShort$ chart, such as CubicFit and LinearFit. You can learn more about this feature in the [Chart Trendlines](features/chart-trendlines.md) topic.
+トレンドラインを使用して、トレンドを特定したり、データ内のパターンを見つけたりします。$PlatformShort$ チャートでは、CubicFit や LinearFit など、さまざまなトレンドラインがサポートされています。この機能の詳細については、[チャート トレンドライン](features/chart-trendlines.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="$PlatformShort$ Trendlines Example"
+           alt="$PlatformShort$ トレンドラインの例"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 

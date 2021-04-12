@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ バブル チャート
 
-$PlatformShort$ Bubble Chart is a type of [Scatter Charts](scatter-chart.md) that show markers with variable scaling to represent the relationship among items in several distinct series of data or to plot data items using x and y coordinates. These coordinates of the data point are determined by two numeric data columns. The Bubble Chart draws attention to uneven intervals or clusters of data. This chart is often used to plot scientific data, and can highlight the deviation of collected data from predicted results. The Bubble Chart has many of the characteristics of the [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart) but with the option to have various radius scale sizes.
+$PlatformShort$ バブル チャートは[散布図]（scatter-chart.md）の一種で、可変スケーリングのマーカーを表示して、いくつかの異なる一連のデータ内の項目間の関係を表したり、x 座標と y 座標を使用してデータ項目をプロットしたりします。データ ポイントのこれらの座標は、2 つの数値データ列によって決定されます。バブル チャートは、データの不均一な間隔またはクラスターに注意を向けます。このチャートは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。バブル チャートには、[散布図チャート](scatter-chart.md#$PlatformShort$-散布マーカー-チャート)の多くの特性がありますが、さまざまな半径スケール サイズを持つオプションがあります。
 
 ## $PlatformShort$ バブル チャートの例
 
-You can create the Bubble Chart in `XamDataChart` control using the `BubbleSeries` and two numeric axes, as shown in the example below.。
+次の例に示すように、`BubbleSeries` と 2 つの数値軸を使用して、`XamDataChart` コントロールでバブル チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,7 +23,7 @@ You can create the Bubble Chart in `XamDataChart` control using the `BubbleSerie
 
 ## 単一シリーズの $PlatformShort$ バブル チャート
 
-You can bind your data to `ItemsSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
+以下の例に示すように、データを `BubbleSeries` の `ItemsSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、 `RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -35,7 +35,7 @@ You can bind your data to `ItemsSource` property of `BubbleSeries` and map data 
 
 ## 複数シリーズの $PlatformShort$ バブル チャート
 
-In $PlatformShort$ Bubble Chart, binding multiple data sources works by setting each new data source to `ItemsSource` property of a additional `BubbleSeries`, as shown in the example below:
+$PlatformShort$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -47,7 +47,7 @@ In $PlatformShort$ Bubble Chart, binding multiple data sources works by setting 
 
 ## $PlatformShort$ バブル チャートのスタイル設定
 
-In $PlatformShort$ Bubble Chart, you can customize shape of bubble markers using `MarkerType` property, their size with `RadiusScale` property, and their appearance using `MarkerBrush`, `MarkerOutline`, `MarkerThickness` properties. In addition, you can also color bubble markers based on a data column using `FillMemberPath` and `FillScale` properties. In this example, usage of above properties is demonstrated.
+$PlatformShort$ バブル チャートでは、`MarkerType` プロパティを使用してバブル マーカーの形状をカスタマイズし、`RadiusScale` プロパティを使用してサイズをカスタマイズし、`MarkerBrush`、`MarkerOutline`、 `MarkerThickness` プロパティを使用して外観をカスタマイズできます。さらに、`FillMemberPath` プロパティと `FillScale` プロパティを使用して、データ列に基づいてバブル マーカーにカラーを付けることもできます。この例では、上記のプロパティの使用法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

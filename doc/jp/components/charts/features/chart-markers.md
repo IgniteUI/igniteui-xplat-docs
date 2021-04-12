@@ -12,9 +12,9 @@ $ProductName$ マーカーは、カテゴリ チャートのプロット領域�
 
 # $PlatformShort$ チャート マーカーの例
 
-In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to "Circle."
+次の例では、[折れチャート](../types/line-chart.md)は、2009 年から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。マーカーが `MarkerType` プロパティを "Circle" に設定して有効になっています。
 
-The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
+マーカーのカラーは、以下のサンプルの `MarkerBrushes`プロパティと `MarkerOutlines` プロパティを設定することによっても管理されます。このサンプルでは、ドロップダウンを使用してマーカーと `ChartType` を構成できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

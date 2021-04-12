@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ ステップ チャート
 
-In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+$PlatformShort$ Step Chart belongs to a group of Category Series and it is rendered using a collection of points connected by continuous vertical and horizontal lines. For Step Area Chart, the area below lines are filled in. Values are represented on the y-axis and categories are displayed on the x-axis. This emphasizes the amount of change over a period of time or compares multiple items.
 
 ## $PlatformShort$ ステップ チャートの例
 
-In the following example, the step chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+次の例では、 ステップ チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (Twh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
 `XamCategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
 

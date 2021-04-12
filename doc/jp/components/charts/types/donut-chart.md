@@ -25,44 +25,44 @@ The $ProductName$ ドーナツ チャートは[円チャート](pie-chart.md)と
 
 ### $PlatformShort$ ドーナツ チャートはプロジェクトに適していますか?
 
-Donut Charts are appropriate for small data sets and are easy to read at a glance. Donut charts are just one type of part-to-whole visualization. Others include: 
+ドーナツ チャートは小さなデータ セットに適しており、一目で読みやすいです。ドーナツ チャートは、部分から全体への視覚化の 1 つのタイプにすぎません。その他は次のとおりです。 
 
-- [Pie](pie-chart.md)
+- [円](pie-chart.md)
 - Funnel 
-- [Stacked Area](area-chart.md)
-- [Stacked 100% Area (Stacked Percentage Area)](area-chart.md)
-- [Stacked Bar](bar-chart.md)
-- [Stacked 100% Bar (Stacked Percentage Bar)](bar-chart.md)
-- [Treemap](treemap-chart.md)
-- [Waterfall](column-chart.md)
+- [積層型エリア](area-chart.md)
+- [積層型 100% エリア (積層型パーセンテージ エリア)](area-chart.md)
+- [積層型棒](bar-chart.md)
+- [積層型 100% 棒 (積層型パーセンテージ棒)](bar-chart.md)
+- [ツリーマップ](treemap-chart.md)
+- [ウォーターフォール](column-chart.md)
 
-The $PlatformShort$ Donut Chart includes interactive features that give the viewer tools to analyze data, like: 
+$PlatformShort$ ドーナツ チャートには、次のようなデータを分析するためのビューア ツールを提供するインタラクティブ機能が含まれています。 
 
-- Legends 
-- Slice Explosion 
-- Slice Selection 
-- Chart Animations 
+- 凡例
+- スライスの分割
+- スライスの選択
+- チャート アニメーション 
 
 ### ドーナツ チャートのベスト プラクティス:
 
-- Using multiple data sets to display your data in a ring display. 
-- Placing the information such as values or labels, within the hole of the donut for quick explanation of data.
-- Comparing slices or segments as percentage values in proportion to a total value or whole.
-- Showing how a group of categories is broken into smaller segments.
-- Ensuring data segments add up to 100%.
-- Ensuring the color palette is distinguishable for segments/slices of the parts.
+- 複数のデータ セットを使用して、データを輪に表示します。
+- データをすばやく説明するために、ドーナツの穴の中に値やラベルなどの情報を配置します。
+- スライスまたはセグメントを、合計値または全体に比例するパーセンテージ値として比較します。
+- カテゴリのグループがどのように小さなセグメントに分割されるかを示します。
+- データ セグメントの合計が 100% になるようにします。
+- パーツのセグメント/スライスでカラー パレットを区別できるようにします。
 
 ### 以下の場合にドーナツ チャートを使用しないでください:
 
-- Comparing change over time —use a [Bar](bar-chart.md), [Line](line-chart.md) or [Area](area-chart.md) chart. 
-- Requiring precise data comparison —use a [Bar](bar-chart.md), [Line](line-chart.md) or [Area](area-chart.md) chart. 
-- You have more than 6 or 8 segments (high data volume) — consider a [Bar](bar-chart.md), [Line](line-chart.md) or [Area](area-chart.md) chart if it works for your data story. 
-- It would be easier for the viewer to perceive the value difference in a [Bar](bar-chart.md) chart. 
-- You have negative data, as this can not be represented in a donut chart. 
+- 時間の経過に伴う変化の比較の場合 - [棒](bar-chart.md)、[折れ線](line-chart.md)、または[エリア](area-chart.md)チャートを使用します。
+- 正確なデータ比較が必要である場合 - [棒](bar-chart.md)、[折れ線](line-chart.md)、または[エリア](area-chart.md)チャートを使用します。
+- 6 つまたは 8 つを超えるセグメント (大量のデータ) がある場合 — データ ストーリーに適している場合は、[棒](bar-chart.md)、[折れ線](line-chart.md)、または[エリア](area-chart.md)チャートを検討してください。
+- [棒](bar-chart.md)チャートで、ビューアが値の違いを認識しやすくなります。
+- 負のデータがある場合、これはドーナツ チャートで表すことができません。 
 
 ##  ドーナツ チャート - スライスの選択
 
-The $PlatformShort$ Donut Chart has the ability to select slices on click. Optionally, you may apply a single custom visual style to the selected slices. The `SliceClick` event is raised when the user clicks on a slice. Enabling slice selection allows you to modify the slice's selection upon click. The following sample demonstrates how to enable slice selection and set the selected slice color to gray. 
+$PlatformShort$ ドーナツ チャートには、クリック時にスライスを選択する機能があります。任意で、単一のカスタム ビジュアル スタイルを選択済みスライスに適用できます。`SliceClick` イベントは、ユーザーがスライスをクリックすると発生します。スライス選択を有効にすると、クリック時にスライスの選択を変更できます。次のサンプルは、スライスの選択を有効にし、選択したスライスの色を灰色に設定する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

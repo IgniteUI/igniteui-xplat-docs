@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ チャート ナビゲーション
 
-The $PlatformName$ chart component allows for interactive panning and zooming via the mouse, keyboard and touch.  
+$PlatformName$ チャート コンポーネントを使用すると、マウス、キーボード、およびタッチを介してインタラクティブなパンやズームが可能になります。  
 
 ## $PlatformShort$ チャート ナビゲーションの例
 
-The following example shows all of the available panning and zooming options that are available. You can interact with the example by using the buttons, or select your desired options using the dropdowns or checkboxes.
+次の例は、使用可能なすべてのパンやズームのオプションを示しています。ボタンを使用して例を操作したり、ドロップダウンまたはチェックボックスを使用して目的のオプションを選択したりできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -34,11 +34,11 @@ Zooming is on by default on the chart. In order to disable navigation in the UI,
 
 $PlatformShort$ データ チャートのナビゲーションは、タッチ、マウスまたはキーボードのいずれかを使用して発生します。以下の操作は、デフォルトで以下のタッチ、マウスまたはキーボード操作を使用して呼び出すことができます。
 
-- **Panning**: Using arrow keys on the keyboard or holding the Shift key, clicking and dragging with the mouse or pressing and moving your finger via touch.
-- **Zoom In**: Using the PageUp key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
-- **Zoom Out**: Using the PageDown key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
-- **チャート プロット領域に合わせる**: Using the Home key on the keyboard. There is no mouse or touch operation for this. 
-- **領域ズーム**: Click and drag the mouse within the plot area with the `DefaultInteraction` property set to its default - `DragZoom`.
+- **パン**: キーボードの矢印キーを使用するか、Shift キーを押したまま、マウスでクリックしてドラッグするか、タッチで指を押して移動します。
+-**ズームイン**: キーボードの PageUp キーを使用するか、マウスホイールを上に回転させるか、ピンチしてタッチでズームインします。
+-**ズームアウト**: キーボードの PageDown キーを使用するか、マウスホイールを下に回転させるか、ピンチしてタッチでズームアウトします。 
+- **チャート プロット領域に合わせる**: キーボードのホームキーを使用します。これに対するマウスまたはタッチ操作はありません。 
+- **領域ズーム**: `DefaultInteraction` プロパティをデフォルトの `DragZoom` に設定して、プロット領域内でマウスをクリックしてドラッグします。
 
 ズーム操作とパン操作は、それぞれ `DragModifier` プロパティと `PanModifier` プロパティを設定し、修飾キーを使用して有効にすることもできます。これらのプロパティは以下の修飾キーに設定することができ、押すと対応する操作が実行されます。
 
@@ -51,7 +51,7 @@ $PlatformShort$ データ チャートのナビゲーションは、タッチ、
 
 ## コードによるチャート ナビゲーション
 
-> NOTE: Code navigation of the chart can only be used for the `XamDataChart` control.
+> 注: チャートのコード ナビゲーションは、`XamDataChart` コントロールにのみ使用できます。
 
 $PlatformShort$ データ チャートは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
 

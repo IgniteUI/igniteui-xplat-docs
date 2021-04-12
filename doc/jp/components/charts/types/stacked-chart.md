@@ -25,9 +25,9 @@ The following example, you can use the drop-down to switch between all of the di
 
 ## $PlatformShort$ 積層型エリア チャート
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as [Area Charts](area-chart.md), with the only difference being that visually, the shaded areas are stacked on top of each other.
+積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、[エリア チャート](area-chart.md)とすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedAreaSeries`, as shown in the example below.
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedAreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -40,9 +40,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ 積層型 100 エリア チャート
 
-Sometimes the series represent part of a whole being changed over time e.g. a country's energy consumption related to the sources from which it is produced. In such cases representing all stacked elements equally may be a better idea.
+このシリーズは、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表す場合があります。このような場合積層されたすべての要素を均等に表すことをお勧めします。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100AreaSeries`, as shown in the example below.
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100AreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -117,7 +117,7 @@ $PlatformShort$ 積層型 100% 棒チャートは、X 軸 (チャートの下の
 
 ## $PlatformShort$ 積層型折れ線チャート
 
-The Stacked Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions. You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedLineSeries`, as shown in the example below:
+積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -131,9 +131,9 @@ The Stacked Line Chart is often used to show the change of value over time such 
 
 ## $PlatformShort$ 積層型 100% 折れ線チャート
 
-The Stacked 100% Line Chart is identical to the Stacked Line Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100% Line Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
+積層型 100% 折れ線チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型折れ線チャートと同じです。データを直接表現するのでなく、積層型 100% 折れ線チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100LineSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100LineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
