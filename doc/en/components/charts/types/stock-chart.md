@@ -6,7 +6,7 @@ mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSlider
 ---
 # $PlatformShort$ Stock Chart
 
-$PlatformShort$ Stock Chart, sometimes referred to as $PlatformShort$ Financial Chart or Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock Chart shows stock prices for a ticker over time in a Time Series X-Axis. Also, this chart shows information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for configurable period of time. The $PlatformShort$ Stock Chart offers multiple ways in which the data can be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
+The $ProductName$ Stock Chart, sometimes referred to as $PlatformShort$ Financial Chart or Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock Chart shows stock prices for a ticker over time in a Time Series X-Axis. Also, this chart shows information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for configurable period of time. The Stock Chart offers multiple ways in which the data can be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
 
 ## $PlatformShort$ Stock Chart Example
 

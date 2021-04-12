@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart"]
 ---
 # $PlatformShort$ Pyramid Chart
 
-$PlatformShort$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species.
+The $ProductName$ Pyramid Chart, also called an age pyramid or population pyramid, is a graphical illustration that shows distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing. It is also used in ecology to determine the overall age distribution of a population; an indication of the reproductive capabilities and likelihood of the continuation of a species.
 
 ## $PlatformShort$ Pyramid Chart Example
 

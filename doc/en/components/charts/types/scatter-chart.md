@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart", "ScatterSeries", "ScatterLineSeries", "ScatterS
 ---
 # $PlatformShort$ Scatter Charts
 
-$PlatformShort$ Scatter Chart belongs to a group of charts that show the relationship among items in distinct series of data or to plot data items using numeric x and y coordinates. These charts draw attention to uneven intervals or clusters of data. They are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Also, you can use them to organize data chronologically (even if the data is not in chronological order).
+The $ProductName$ Scatter Chart belongs to a group of charts that show the relationship among items in distinct series of data or to plot data items using numeric x and y coordinates. These charts draw attention to uneven intervals or clusters of data. They are often used to plot scientific data, and can highlight the deviation of collected data from predicted results. Also, you can use them to organize data chronologically (even if the data is not in chronological order).
 
 ## $PlatformShort$ Scatter Marker Chart
 

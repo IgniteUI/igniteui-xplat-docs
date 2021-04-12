@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
 ---
 # $PlatformShort$ Polar Chart
 
-$PlatformShort$ Polar Chart uses the polar coordinate system (angle, radius) instead of the Cartesian coordinate system (x, y) to plot data in chart. In other words, Polar Chart takes concepts of [Scatter Series](scatter-chart.md) and wrap them around a circle rather than stretching data points horizontally.
+The $ProductName$ Polar Chart uses the polar coordinate system (angle, radius) instead of the Cartesian coordinate system (x, y) to plot data in chart. In other words, Polar Chart takes concepts of [Scatter Series](scatter-chart.md) and wrap them around a circle rather than stretching data points horizontally.
 
 Polar Chart draws attention to uneven intervals or clusters of data. It is often used to plot scientific data (e.g. wind direction and speed, direction, and strength of magnetic field, location of objects in solar system), and can highlight the deviation of collected data from predicted results.
 
