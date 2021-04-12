@@ -32,7 +32,6 @@ Property Value     | Description
 
 If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $PlatformShort$ charts.
 
-<!-- TODO uncomment when charts/category-chart/tooltip-template is ported to Blazor
 ## Custom Tooltips in Category Chart
 
 This example shows how to create custom tooltips for all series in $PlatformShort$ Category Chart control.
@@ -45,7 +44,7 @@ This example shows how to create custom tooltips for all series in $PlatformShor
 </code-view>
 
 <div class="divider--half"></div>
--->
+
 
 ## Custom Tooltips in Data Chart
 
