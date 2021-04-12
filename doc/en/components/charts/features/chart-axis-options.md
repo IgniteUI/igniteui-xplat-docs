@@ -51,6 +51,12 @@ By default, the $PlatformShort$ charts will calculate the minimum and maximum va
 
 <div class="divider--half"></div>
 
+<!--
+## Axis Scale Example
+
+TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
+
+-->
 
 ## Additional Resources
 
