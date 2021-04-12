@@ -446,6 +446,11 @@
     "status": ""
   },
   {
+    "name": "Chart API",
+    "href": "charts/chart-api.md",
+    "status": ""
+  },
+  {
     "name": "Chart Features",
     "href": "charts/chart-features.md",
     "status": "",
