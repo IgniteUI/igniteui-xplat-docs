@@ -7,7 +7,7 @@ mentionedTypes: ["XamCategoryChart", "ToolTipType"]
 
 # $PlatformShort$ Chart Tooltips
 
-In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` controls.
+In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips are supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` controls.
 
 ## $PlatformShort$ Chart Tooltips Types
 
@@ -30,7 +30,7 @@ Property Value     | Description
 
 ## $PlatformShort$ Chart Tooltip Template
 
-If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demostrate how to do this in different types of $PlatformShort$ charts.
+If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $PlatformShort$ charts.
 
 <!-- TODO uncomment when charts/category-chart/tooltip-template is ported to Blazor
 ## Custom Tooltips in Category Chart

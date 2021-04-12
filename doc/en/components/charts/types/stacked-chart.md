@@ -1,12 +1,12 @@
 ---
 title: $PlatformShort$ Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Stacked Chart
-_keywords: $PlatformShort$ Charts, Stacked Chart, Infragistics
+_keywords: $PlatformShort$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
 ---
-# $PlatformShort$ Stacked Charts
+# $PlatformShort$ Stacked Chart
 
-The $ProductName$ Stacked Charts are special group of charts that render multiple values of data items as stacked area/polygons, bars, columns, lines, or splines. Standard Stacked Charts render actual values of data items while Stacked 100% Charts render values as percentage of total values.
+The $ProductName$ Stacked Chart belongs to a special group of charts that render multiple values of data items as stacked area/polygons, bars, columns, lines, or splines. Standard Stacked Charts render actual values of data items while Stacked 100% Charts render values as percentage of total values.
 
 ## $PlatformShort$ Stacked Chart Types
 
@@ -24,7 +24,7 @@ The following sections demonstrate individual types of $ProductName$ Stacked Cha
 
 ## $PlatformShort$ Stacked Area Chart
 
-Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as [Area Charts](area-chart.md), with the only difference being that visually, the shaded areas are stacked on top of each other.
+Stacked Area Charts are rendered using a collection of points connected by line segments, with the area below the line filled in and stacked on top of each other. Stacked Area Charts follow all the same requirements as [Area Chart](area-chart.md), with the only difference being that visually, the shaded areas are stacked on top of each other.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedAreaSeries`, as shown in the example below.
 
@@ -146,7 +146,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Stacked Spline Area Chart
 
-Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as [Area Charts](area-chart.md), with the only difference being that the visually shaded areas are stacked on top of each other.
+Stacked Spline Area Charts are rendered using a collection of points connected by curved spline segments, with the area below the curved spline fill in and stacked on top of each other. Stacked Spline Area Charts follow all of the same requirements as [Area Chart](area-chart.md), with the only difference being that the visually shaded areas are stacked on top of each other.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedSplineAreaSeries`, as shown in the example below.
 

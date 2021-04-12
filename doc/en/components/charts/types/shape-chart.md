@@ -40,9 +40,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can find more information about related chart types in these topics:
 
-- [Area Charts](area-chart.md)
-- [Line Charts](line-chart.md)
-- [Scatter Charts](scatter-chart.md)
+- [Area Chart](area-chart.md)
+- [Line Chart](line-chart.md)
+- [Scatter Chart](scatter-chart.md)
 
 ## API Members
 

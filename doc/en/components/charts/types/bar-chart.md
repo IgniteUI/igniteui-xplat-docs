@@ -1,14 +1,14 @@
 ---
-title: $PlatformShort$ Bar Charts and Graphs | $ProductName$
-_description: $PlatformShort$ Bar Charts are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
-_keywords: $PlatformShort$ Charts, Bar Chart, Infragistics
+title: $PlatformShort$ Bar Chart and Graph | $ProductName$
+_description: $PlatformShort$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
+_keywords: $PlatformShort$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
-# $PlatformShort$ Bar Charts
+# $PlatformShort$ Bar Chart
 
-$PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but different lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Charts are very similar to [Column Charts](column-chart.md) except that Bar Charts render with 90 degrees clockwise rotation and therefore they have horizontal orientation (left to right) while [Column Charts](column-chart.md) have vertical orientation (up and down)
+$PlatformShort$ Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but different lengths. This chart is ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down)
 
-## $PlatformShort$ Category Bar Chart
+## $PlatformShort$ Bar Chart Example
 
 The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
@@ -142,11 +142,11 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can find more information about related chart types in these topics:
 
-- [Area Charts](area-chart.md)
-- [Column Charts](column-chart.md)
-- [Line Charts](line-chart.md)
-- [Spline Charts](spline-chart.md)
-- [Stacked Charts](stacked-chart.md)
+- [Area Chart](area-chart.md)
+- [Column Chart](column-chart.md)
+- [Line Chart](line-chart.md)
+- [Spline Chart](spline-chart.md)
+- [Stacked Chart](stacked-chart.md)
 
 ## API Members
 
