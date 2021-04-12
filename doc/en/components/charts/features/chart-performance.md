@@ -9,7 +9,7 @@ mentionedTypes: ["XamCategoryChart", "XamFinancialChart", "XamDataChart"]
 
 $PlatformShort$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the chart and they should be considered when optimizing performance in your application. This topic will guide you to make $PlatformShort$ charts work as fast as possible in your application.
 
-## $PlatformShort$ Performance Examples
+## $PlatformShort$ Chart Performance Examples
 
 The following examples demonstrates two high performance scenarios of $PlatformShort$ charts.
 

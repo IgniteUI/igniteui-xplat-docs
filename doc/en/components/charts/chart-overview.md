@@ -250,7 +250,7 @@ Show how your data changes over time with our built-in Time Axis. We’ll dynami
 
 ### Dynamic Charts
 
-Visualize your data by creating new [Composite Chart](Composite-chart.md) and overlapping multiple series in single chart. In the Chart, you can display and overlap multiple chart columns to create stacked columns.
+Visualize your data by creating new [Composite Chart](types/Composite-chart.md) and overlapping multiple series in single chart. In the Chart, you can display and overlap multiple chart columns to create stacked columns.
 
 ### Custom Tooltips
 
