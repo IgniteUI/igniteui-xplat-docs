@@ -108,6 +108,16 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomRadialStyleAllowed"}            ],
+           "originalName": "IsCustomRadialStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomRadialMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomRadialMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "CategoryAngleAxis", "mappedName": "AngleAxis"}            ],
            "originalName": "AngleAxis"
        },

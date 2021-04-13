@@ -1,9 +1,4 @@
 {
-"extraFiles": [
-"igr-time-axis-break-module.ts",
-"igr-time-axis-interval-module.ts",
-"igr-time-axis-label-format-module.ts"
-],
 "types": [
 {
     "originalName": "CategoryAngleAxis",
@@ -193,6 +188,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "IgrTimeAxisLabelFormatCollection", "mappedName": "labelFormats"}            ],
            "originalName": "LabelFormats"
        },
@@ -294,9 +294,40 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "TimeAxisLabellingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "TimeAxisLabellingMode.ts",
+ "mappedName": "TimeAxisLabellingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Compressed"}            ],
+           "originalName": "Compressed"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "TimeAxisBreak",
    "names": [
         { "platform": "React",     "fileName": "igr-time-axis-break.ts",
+    "dynamicModuleName": "igr-time-axis-break-dynamic-module.ts",
+    "moduleName": "igr-time-axis-break-module.ts",
  "mappedName": "IgrTimeAxisBreak"}   ],
    "members": [
         {
@@ -320,6 +351,8 @@
     "originalName": "TimeAxisInterval",
    "names": [
         { "platform": "React",     "fileName": "igr-time-axis-interval.ts",
+    "dynamicModuleName": "igr-time-axis-interval-dynamic-module.ts",
+    "moduleName": "igr-time-axis-interval-module.ts",
  "mappedName": "IgrTimeAxisInterval"}   ],
    "members": [
         {
@@ -402,6 +435,8 @@
     "originalName": "TimeAxisLabelFormat",
    "names": [
         { "platform": "React",     "fileName": "igr-time-axis-label-format.ts",
+    "dynamicModuleName": "igr-time-axis-label-format-dynamic-module.ts",
+    "moduleName": "igr-time-axis-label-format-module.ts",
  "mappedName": "IgrTimeAxisLabelFormat"}   ],
    "members": [
         {
@@ -413,6 +448,21 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "format"}            ],
            "originalName": "Format"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "repeatedYearFormat"}            ],
+           "originalName": "RepeatedYearFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "repeatedMonthFormat"}            ],
+           "originalName": "RepeatedMonthFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "repeatedDayFormat"}            ],
+           "originalName": "RepeatedDayFormat"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -433,6 +483,11 @@
            "names": [
                { "platform": "React",  "mappedType": "IgrTimeAxisBreakCollection", "mappedName": "breaks"}            ],
            "originalName": "Breaks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
        },
         {
            "names": [

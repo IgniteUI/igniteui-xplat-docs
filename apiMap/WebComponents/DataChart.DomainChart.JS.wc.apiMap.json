@@ -691,6 +691,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "xAxisLabelFormat"}            ],
+           "originalName": "XAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "xAxisLabelFormatSpecifiers"}            ],
+           "originalName": "XAxisLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "yAxisLabelFormat"}            ],
+           "originalName": "YAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "yAxisLabelFormatSpecifiers"}            ],
+           "originalName": "YAxisLabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
            "originalName": "ProvideContainer"
        },

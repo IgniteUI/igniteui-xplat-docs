@@ -47,6 +47,26 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isWindowSyncedToVisibleRange"}            ],
+           "originalName": "IsWindowSyncedToVisibleRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "highlightingMode"}            ],
+           "originalName": "HighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "highlightingBehavior"}            ],
+           "originalName": "HighlightingBehavior"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendHighlightingMode", "mappedName": "legendHighlightingMode"}            ],
+           "originalName": "LegendHighlightingMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "viewportRect"}            ],
            "originalName": "ViewportRect"
        },
@@ -124,6 +144,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "crosshairVisibility"}            ],
            "originalName": "CrosshairVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ZoomCoercionMode", "mappedName": "zoomCoercionMode"}            ],
+           "originalName": "ZoomCoercionMode"
        },
         {
            "names": [
@@ -342,6 +367,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "cancelManipulation"}            ],
+           "originalName": "CancelManipulation"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getActualWindowScaleHorizontal"}            ],
            "originalName": "GetActualWindowScaleHorizontal"
        },
@@ -384,6 +414,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "destroy"}            ],
            "originalName": "Destroy"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentActualWindowRect"}            ],
+           "originalName": "GetCurrentActualWindowRect"
        },
         {
            "names": [
@@ -430,6 +465,26 @@
  "mappedName": "IgxRefreshCompletedEventArgs"}   ],
    "members": [
    ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "SeriesViewerManipulationEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-series-viewer-manipulation-event-args.ts",
+ "mappedName": "IgxSeriesViewerManipulationEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isZoomPan"}            ],
+           "originalName": "IsZoomPan"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDragZoom"}            ],
+           "originalName": "IsDragZoom"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls"
@@ -800,6 +855,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "any", "mappedName": "label"}            ],
            "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
        },
         {
            "names": [
@@ -1244,6 +1309,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFullRange"}            ],
+           "originalName": "IsFullRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isExclusive"}            ],
+           "originalName": "IsExclusive"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "series"}            ],
            "originalName": "Series"
        }   ],
@@ -1357,6 +1432,288 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "ScatterItemSearchMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "ScatterItemSearchMode.ts",
+ "mappedName": "ScatterItemSearchMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestVisiblePoint"}            ],
+           "originalName": "ClosestVisiblePoint"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestPoint"}            ],
+           "originalName": "ClosestPoint"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestVisiblePointOnClosestLine"}            ],
+           "originalName": "ClosestVisiblePointOnClosestLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestPointOnClosestLine"}            ],
+           "originalName": "ClosestPointOnClosestLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ShapeItemSearchMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "ShapeItemSearchMode.ts",
+ "mappedName": "ShapeItemSearchMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestBoundingBox"}            ],
+           "originalName": "ClosestBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestShape"}            ],
+           "originalName": "ClosestShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestPointOnClosestShape"}            ],
+           "originalName": "ClosestPointOnClosestShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesHighlightingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "SeriesHighlightingMode.ts",
+ "mappedName": "SeriesHighlightingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "BrightenSpecific"}            ],
+           "originalName": "BrightenSpecific"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "Brighten"}            ],
+           "originalName": "Brighten"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "FadeOthersSpecific"}            ],
+           "originalName": "FadeOthersSpecific"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "FadeOthers"}            ],
+           "originalName": "FadeOthers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesHighlightingBehavior",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "SeriesHighlightingBehavior.ts",
+ "mappedName": "SeriesHighlightingBehavior"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "DirectlyOver"}            ],
+           "originalName": "DirectlyOver"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItems"}            ],
+           "originalName": "NearestItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItemsRetainMainShapes"}            ],
+           "originalName": "NearestItemsRetainMainShapes"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItemsAndSeries"}            ],
+           "originalName": "NearestItemsAndSeries"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendHighlightingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "LegendHighlightingMode.ts",
+ "mappedName": "LegendHighlightingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendHighlightingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendHighlightingMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendHighlightingMode", "mappedName": "MatchSeries"}            ],
+           "originalName": "MatchSeries"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesVisibleRangeMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "SeriesVisibleRangeMode.ts",
+ "mappedName": "SeriesVisibleRangeMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "ValuesOnly"}            ],
+           "originalName": "ValuesOnly"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "IncludeReferenceValue"}            ],
+           "originalName": "IncludeReferenceValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ComputedPlotAreaMarginMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "ComputedPlotAreaMarginMode.ts",
+ "mappedName": "ComputedPlotAreaMarginMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ZoomCoercionMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "ZoomCoercionMode.ts",
+ "mappedName": "ZoomCoercionMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ZoomCoercionMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ZoomCoercionMode", "mappedName": "AxisConstrained"}            ],
+           "originalName": "AxisConstrained"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ZoomCoercionMode", "mappedName": "Unconstrained"}            ],
+           "originalName": "Unconstrained"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "AxisTitlePosition",
     "isEnum": true,
    "names": [
@@ -1396,10 +1753,142 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgsBase",
+    "originalName": "AssigningPolarStyleEventArgsBase",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-assigning-category-style-event-args-base.ts",
- "mappedName": "IgxAssigningCategoryStyleEventArgsBase"}   ],
+        { "platform": "Angular",     "fileName": "igx-assigning-polar-style-event-args-base.ts",
+ "mappedName": "IgxAssigningPolarStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-polar-style-event-args.ts",
+ "mappedName": "IgxAssigningPolarStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-polar-marker-style-event-args.ts",
+ "mappedName": "IgxAssigningPolarMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningPolarStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgsBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-radial-style-event-args-base.ts",
+ "mappedName": "IgxAssigningRadialStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-radial-style-event-args.ts",
+ "mappedName": "IgxAssigningRadialStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-radial-marker-style-event-args.ts",
+ "mappedName": "IgxAssigningRadialMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningRadialStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-shape-style-event-args-base.ts",
+ "mappedName": "IgxAssigningShapeStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-shape-style-event-args.ts",
+ "mappedName": "IgxAssigningShapeStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-shape-marker-style-event-args.ts",
+ "mappedName": "IgxAssigningShapeMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgsBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-scatter-style-event-args-base.ts",
+ "mappedName": "IgxAssigningScatterStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-scatter-style-event-args.ts",
+ "mappedName": "IgxAssigningScatterStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-scatter-marker-style-event-args.ts",
+ "mappedName": "IgxAssigningScatterMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningScatterStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesStyleEventArgsBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-series-style-event-args-base.ts",
+ "mappedName": "IgxAssigningSeriesStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1443,6 +1932,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "fadeOpacity"}            ],
+           "originalName": "FadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxHighlightingInfo", "mappedName": "highlightingInfo"}            ],
            "originalName": "HighlightingInfo"
        },
@@ -1455,6 +1949,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "sumAllSeriesHighlightingProgress"}            ],
            "originalName": "SumAllSeriesHighlightingProgress"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "totalAllSeriesHighlightingProgress"}            ],
+           "originalName": "TotalAllSeriesHighlightingProgress"
        },
         {
            "names": [
@@ -1479,10 +1978,21 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgs",
+    "originalName": "AssigningCategoryStyleEventArgsBase",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-assigning-category-style-event-args.ts",
- "mappedName": "IgxAssigningCategoryStyleEventArgs"}   ],
+        { "platform": "Angular",     "fileName": "igx-assigning-category-style-event-args-base.ts",
+ "mappedName": "IgxAssigningCategoryStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-series-shape-style-event-args-base.ts",
+ "mappedName": "IgxAssigningSeriesShapeStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1499,7 +2009,18 @@
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusY"}            ],
            "originalName": "RadiusY"
        }   ],
-    "originalBaseTypeName": "AssigningCategoryStyleEventArgsBase",
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryStyleEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-assigning-category-style-event-args.ts",
+ "mappedName": "IgxAssigningCategoryStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -1572,6 +2093,21 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "autoExpandMarginMaximumValue"}            ],
+           "originalName": "AutoExpandMarginMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "autoExpandMarginExtraPadding"}            ],
+           "originalName": "AutoExpandMarginExtraPadding"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shouldAutoExpandMarginForInitialLabels"}            ],
+           "originalName": "ShouldAutoExpandMarginForInitialLabels"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
            "originalName": "MarkerBrushes"
        },
@@ -1602,6 +2138,31 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPlotAreaMarginLeft"}            ],
+           "originalName": "ActualPlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPlotAreaMarginTop"}            ],
+           "originalName": "ActualPlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPlotAreaMarginRight"}            ],
+           "originalName": "ActualPlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPlotAreaMarginBottom"}            ],
+           "originalName": "ActualPlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "computedPlotAreaMarginMode"}            ],
+           "originalName": "ComputedPlotAreaMarginMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "plotAreaMarginLeft"}            ],
            "originalName": "PlotAreaMarginLeft"
        },
@@ -1619,6 +2180,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "plotAreaMarginBottom"}            ],
            "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "refreshComputedPlotAreaMargin"}            ],
+           "originalName": "RefreshComputedPlotAreaMargin"
        },
         {
            "names": [
@@ -1693,6 +2259,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
            "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        },
         {
            "names": [
@@ -2191,6 +2762,66 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "PlotAreaMouseEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-plot-area-mouse-event-args.ts",
+ "mappedName": "IgxPlotAreaMouseEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "chartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDuringManipulation"}            ],
+           "originalName": "IsDuringManipulation"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxSeriesViewerComponent", "mappedName": "viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PlotAreaMouseButtonEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-plot-area-mouse-button-event-args.ts",
+ "mappedName": "IgxPlotAreaMouseButtonEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "chartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "manipulationOccurred"}            ],
+           "originalName": "ManipulationOccurred"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxSeriesViewerComponent", "mappedName": "viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "ChartCursorEventArgs",
    "names": [
         { "platform": "Angular",     "fileName": "igx-chart-cursor-event-args.ts",
@@ -2478,6 +3109,26 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "SeriesHighlightingMode", "mappedName": "actualHighlightingMode"}            ],
+           "originalName": "ActualHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "highlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isComponentHighlightingModeIgnored"}            ],
+           "originalName": "IsComponentHighlightingModeIgnored"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHighlightingEnabled"}            ],
            "originalName": "IsHighlightingEnabled"
        },
@@ -2533,6 +3184,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "visibleRangeMode"}            ],
+           "originalName": "VisibleRangeMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionInDuration"}            ],
            "originalName": "TransitionInDuration"
        },
@@ -2585,6 +3241,51 @@
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "percentChange"}            ],
            "originalName": "PercentChange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualOpenLabel"}            ],
+           "originalName": "ActualOpenLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualCloseLabel"}            ],
+           "originalName": "ActualCloseLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualHighLabel"}            ],
+           "originalName": "ActualHighLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualLowLabel"}            ],
+           "originalName": "ActualLowLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualVolumeLabel"}            ],
+           "originalName": "ActualVolumeLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualValueLabel"}            ],
+           "originalName": "ActualValueLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualRadiusLabel"}            ],
+           "originalName": "ActualRadiusLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "visibility"}            ],
+           "originalName": "Visibility"
        },
         {
            "names": [
@@ -2715,6 +3416,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "removeAlternateView"}            ],
            "originalName": "RemoveAlternateView"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
        },
         {
            "names": [

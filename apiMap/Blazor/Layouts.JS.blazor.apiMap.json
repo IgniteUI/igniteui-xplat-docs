@@ -52,6 +52,16 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "AnimationDuration"}            ],
+           "originalName": "AnimationDuration"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AnimationEnabled"}            ],
+           "originalName": "AnimationEnabled"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "Elevation"}            ],
            "originalName": "Elevation"
        },
@@ -84,6 +94,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "ShowRelativeToExclusionRect"}            ],
            "originalName": "ShowRelativeToExclusionRect"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
 },

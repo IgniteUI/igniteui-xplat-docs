@@ -35,6 +35,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -75,6 +85,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -948,6 +968,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -1296,6 +1326,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -1440,6 +1480,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -1572,18 +1622,28 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Focus"}            ],
-           "originalName": "Focus"
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Select"}            ],
-           "originalName": "Select"
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetSelectionRange"}            ],
            "originalName": "SetSelectionRange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Blur"}            ],
+           "originalName": "Blur"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Select"}            ],
+           "originalName": "Select"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -1729,6 +1789,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -1738,6 +1808,16 @@
         { "platform": "Blazor",     "fileName": "Button.cs",
  "mappedName": "Button"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinWidth"}            ],
+           "originalName": "MinWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinHeight"}            ],
+           "originalName": "MinHeight"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "ButtonDisplayStyle", "mappedName": "DisplayType"}            ],
@@ -2553,6 +2633,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AriaLabel"}            ],
+           "originalName": "AriaLabel"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Focused"}            ],
            "originalName": "IsFocused"
        },
@@ -2560,11 +2645,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFocusStyleEnabled"}            ],
            "originalName": "IsFocusStyleEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AriaLabel"}            ],
-           "originalName": "AriaLabel"
        },
         {
            "names": [
@@ -2600,6 +2680,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -2674,6 +2764,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -2785,11 +2885,6 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "TabIndex"}            ],
            "originalName": "TabIndex"
        },
@@ -2800,11 +2895,6 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Focused"}            ],
-           "originalName": "IsFocused"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "AriaLabelledBy"}            ],
            "originalName": "AriaLabelledBy"
        },
@@ -2812,6 +2902,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "AriaLabel"}            ],
            "originalName": "AriaLabel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Focused"}            ],
+           "originalName": "IsFocused"
        },
         {
            "names": [
@@ -2852,6 +2952,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },

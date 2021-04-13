@@ -101,6 +101,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
            "originalName": "IsItemwise"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendOrientation", "mappedName": "orientation"}            ],
+           "originalName": "Orientation"
        }   ],
     "originalBaseTypeName": "LegendBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -170,6 +175,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
            "originalName": "IsFinancial"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
        }   ],
     "originalBaseTypeName": "ContentControl",
     "originalBaseTypeNamespace": "System.Windows",

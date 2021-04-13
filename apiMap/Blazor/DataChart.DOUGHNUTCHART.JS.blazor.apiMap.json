@@ -185,6 +185,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+           "originalName": "Legend"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelFormat"}            ],
            "originalName": "LabelFormat"
        },

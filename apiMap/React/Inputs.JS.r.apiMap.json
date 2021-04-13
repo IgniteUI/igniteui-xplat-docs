@@ -12,6 +12,85 @@
 ],
 "types": [
 {
+    "originalName": "Suffix",
+   "names": [
+        { "platform": "React",     "fileName": "igr-suffix.ts",
+ "mappedName": "IgrSuffix"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "id"}            ],
+           "originalName": "Id"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "ariaLabel"}            ],
+           "originalName": "AriaLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHover"}            ],
+           "originalName": "IsHover"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "disabled"}            ],
+           "originalName": "IsDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
+           "originalName": "OnDetachedFromUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
+           "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
+       }   ],
+    "originalBaseTypeName": "InputGroupItem",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "SuffixShiftType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SuffixShiftType.ts",
+ "mappedName": "SuffixShiftType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SuffixShiftType", "mappedName": "Line"}            ],
+           "originalName": "Line"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SuffixShiftType", "mappedName": "Box"}            ],
+           "originalName": "Box"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SuffixShiftType", "mappedName": "Border"}            ],
+           "originalName": "Border"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
     "originalName": "Prefix",
    "names": [
         { "platform": "React",     "fileName": "igr-prefix.ts",
@@ -46,6 +125,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -88,8 +177,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "InputGroupDisplayType", "mappedName": "type"}            ],
-           "originalName": "Type"
+               { "platform": "React",  "mappedType": "InputGroupDisplayType", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
        },
         {
            "names": [
@@ -132,14 +221,52 @@
            "originalName": "ActualFocusBorderWidth"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "actualCornerRadius"}            ],
-           "originalName": "ActualCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "actualCornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "actualContentPadding"}            ],
-           "originalName": "ActualContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "actualCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "actualCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "actualCornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "actualContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "actualContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "actualContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "actualContentPadding.top"
        },
         {
            "names": [
@@ -222,14 +349,52 @@
            "originalName": "BorderColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "cornerRadius"}            ],
-           "originalName": "CornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "cornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "contentPadding"}            ],
-           "originalName": "ContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "cornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "cornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "cornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "contentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "contentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "contentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "contentPadding.top"
        },
         {
            "names": [
@@ -317,14 +482,52 @@
            "originalName": "LineTypeBorderColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "lineTypeCornerRadius"}            ],
-           "originalName": "LineTypeCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "lineTypeCornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "lineTypeContentPadding"}            ],
-           "originalName": "LineTypeContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "lineTypeCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "lineTypeCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "lineTypeCornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "lineTypeContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "lineTypeContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "lineTypeContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "lineTypeContentPadding.top"
        },
         {
            "names": [
@@ -412,14 +615,52 @@
            "originalName": "BoxTypeBorderColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "boxTypeCornerRadius"}            ],
-           "originalName": "BoxTypeCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "boxTypeCornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "boxTypeContentPadding"}            ],
-           "originalName": "BoxTypeContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "boxTypeCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "boxTypeCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "boxTypeCornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "boxTypeContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "boxTypeContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "boxTypeContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "boxTypeContentPadding.top"
        },
         {
            "names": [
@@ -507,14 +748,52 @@
            "originalName": "BorderTypeBorderColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "borderTypeCornerRadius"}            ],
-           "originalName": "BorderTypeCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "borderTypeCornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "borderTypeContentPadding"}            ],
-           "originalName": "BorderTypeContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "borderTypeCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "borderTypeCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "borderTypeCornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "borderTypeContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "borderTypeContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "borderTypeContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "borderTypeContentPadding.top"
        },
         {
            "names": [
@@ -602,14 +881,52 @@
            "originalName": "SearchTypeBorderColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "searchTypeCornerRadius"}            ],
-           "originalName": "SearchTypeCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "searchTypeCornerRadius.bottomRight"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "Thickness", "mappedName": "searchTypeContentPadding"}            ],
-           "originalName": "SearchTypeContentPadding"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "searchTypeCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "searchTypeCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "searchTypeCornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "searchTypeContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "searchTypeContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "searchTypeContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "searchTypeContentPadding.top"
        },
         {
            "names": [
@@ -720,6 +1037,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -765,8 +1092,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "ButtonGroupDisplayStyle", "mappedName": "type"}            ],
-           "originalName": "Type"
+               { "platform": "React",  "mappedType": "ButtonGroupDisplayStyle", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
        },
         {
            "names": [
@@ -1097,6 +1424,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -1178,11 +1515,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "actualTextStyle"}            ],
-           "originalName": "ActualTextStyle"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
            "originalName": "TextColor"
        },
@@ -1195,16 +1527,6 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "hoverHighlightTextColor"}            ],
            "originalName": "HoverHighlightTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "type"}            ],
-           "originalName": "Type"
        },
         {
            "names": [
@@ -1280,6 +1602,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -1345,6 +1677,21 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "mask"}            ],
+           "originalName": "Mask"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "promptChar"}            ],
+           "originalName": "PromptChar"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "includeLiterals"}            ],
+           "originalName": "IncludeLiterals"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "actualTextColor"}            ],
            "originalName": "ActualTextColor"
        },
@@ -1355,23 +1702,13 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "actualTextStyle"}            ],
-           "originalName": "ActualTextStyle"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
            "originalName": "TextColor"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "type"}            ],
-           "originalName": "Type"
+               { "platform": "React",  "mappedType": "string", "mappedName": "inputType"}            ],
+           "originalName": "InputType"
        },
         {
            "names": [
@@ -1425,6 +1762,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "selectionStart"}            ],
+           "originalName": "SelectionStart"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "selectionEnd"}            ],
+           "originalName": "SelectionEnd"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
            "originalName": "OnDetachedFromUI"
        },
@@ -1432,6 +1779,31 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "setSelectionRange"}            ],
+           "originalName": "SetSelectionRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "blur"}            ],
+           "originalName": "Blur"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "select"}            ],
+           "originalName": "Select"
        }   ],
     "originalBaseTypeName": "InputGroupItem",
     "originalBaseTypeNamespace": "Infragistics.Controls.Inputs.Implementation",
@@ -1447,6 +1819,11 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "value"}            ],
            "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCompositionInProgress"}            ],
+           "originalName": "IsCompositionInProgress"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -1564,11 +1941,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "hoverTextColor"}            ],
            "originalName": "HoverTextColor"
        },
@@ -1606,6 +1978,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -1617,8 +1999,18 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "ButtonDisplayStyle", "mappedName": "type"}            ],
-           "originalName": "Type"
+               { "platform": "React",  "mappedType": "number", "mappedName": "minWidth"}            ],
+           "originalName": "MinWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "minHeight"}            ],
+           "originalName": "MinHeight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ButtonDisplayStyle", "mappedName": "displayType"}            ],
+           "originalName": "DisplayType"
        },
         {
            "names": [
@@ -1676,9 +2068,28 @@
            "originalName": "ActualRippleColor"
        },
         {
+           "isVirtual": true,
            "names": [
-               { "platform": "React",  "mappedType": "CornerRadius", "mappedName": "actualCornerRadius"}            ],
-           "originalName": "ActualCornerRadius"
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "actualCornerRadius.bottomRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "actualCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "actualCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "actualCornerRadius.topRight"
        },
         {
            "names": [
@@ -1982,11 +2393,6 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "focusElevation"}            ],
            "originalName": "FocusElevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
        },
         {
            "names": [
@@ -2421,6 +2827,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "ariaLabel"}            ],
+           "originalName": "AriaLabel"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "focused"}            ],
            "originalName": "IsFocused"
        },
@@ -2428,11 +2839,6 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isFocusStyleEnabled"}            ],
            "originalName": "IsFocusStyleEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "ariaLabel"}            ],
-           "originalName": "AriaLabel"
        },
         {
            "names": [
@@ -2468,6 +2874,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -2542,6 +2958,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },
@@ -2653,11 +3079,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "name"}            ],
            "originalName": "Name"
        },
@@ -2673,11 +3094,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "focused"}            ],
-           "originalName": "IsFocused"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "ariaLabelledBy"}            ],
            "originalName": "AriaLabelledBy"
        },
@@ -2685,6 +3101,16 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "ariaLabel"}            ],
            "originalName": "AriaLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "focused"}            ],
+           "originalName": "IsFocused"
        },
         {
            "names": [
@@ -2725,6 +3151,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
            "originalName": "OnAttachedToUI"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
        }   ],
     "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
 },

@@ -33,8 +33,18 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "DefaultPrevented"}            ],
+           "originalName": "DefaultPrevented"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "PreventDefault"}            ],
            "originalName": "PreventDefault"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StopPropagation"}            ],
+           "originalName": "StopPropagation"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",

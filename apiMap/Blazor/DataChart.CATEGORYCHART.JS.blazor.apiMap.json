@@ -115,6 +115,26 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
            "originalName": "ExportSerializedVisualData"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentXAxisActualMinimum"}            ],
+           "originalName": "GetCurrentXAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentYAxisActualMinimum"}            ],
+           "originalName": "GetCurrentYAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentXAxisActualMaximum"}            ],
+           "originalName": "GetCurrentXAxisActualMaximum"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentYAxisActualMaximum"}            ],
+           "originalName": "GetCurrentYAxisActualMaximum"
        }   ],
     "originalBaseTypeName": "XYChart",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",

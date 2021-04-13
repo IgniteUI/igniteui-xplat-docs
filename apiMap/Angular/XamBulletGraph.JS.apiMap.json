@@ -284,6 +284,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
            "originalName": "TransitionDuration"
        },

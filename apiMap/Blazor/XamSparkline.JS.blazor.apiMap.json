@@ -223,6 +223,26 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HorizontalLabelFormat"}            ],
+           "originalName": "HorizontalLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "HorizontalLabelFormatSpecifiers"}            ],
+           "originalName": "HorizontalLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "VerticalLabelFormat"}            ],
+           "originalName": "VerticalLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "VerticalLabelFormatSpecifiers"}            ],
+           "originalName": "VerticalLabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
            "originalName": "PixelScalingRatio"
        },

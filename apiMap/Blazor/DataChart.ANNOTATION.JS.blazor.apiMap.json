@@ -33,6 +33,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TargetSeriesName"}            ],
+           "originalName": "TargetSeriesName"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
@@ -418,6 +423,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TargetSeriesName"}            ],
+           "originalName": "TargetSeriesName"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
@@ -622,6 +632,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TargetSeriesName"}            ],
+           "originalName": "TargetSeriesName"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
@@ -692,6 +707,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TargetSeriesName"}            ],
+           "originalName": "TargetSeriesName"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
            "originalName": "UseInterpolation"
        },
@@ -699,6 +719,21 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "CategoryItemHighlightType", "mappedName": "HighlightType"}            ],
            "originalName": "HighlightType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutline"}            ],
+           "originalName": "MarkerOutline"
        },
         {
            "names": [
@@ -734,6 +769,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "VerticalLineStroke"}            ],
            "originalName": "VerticalLineStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TargetSeriesName"}            ],
+           "originalName": "TargetSeriesName"
        },
         {
            "names": [

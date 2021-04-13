@@ -144,6 +144,26 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
            "originalName": "ExportSerializedVisualData"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMinimum"}            ],
+           "originalName": "GetCurrentXAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMinimum"}            ],
+           "originalName": "GetCurrentYAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMaximum"}            ],
+           "originalName": "GetCurrentXAxisActualMaximum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMaximum"}            ],
+           "originalName": "GetCurrentYAxisActualMaximum"
        }   ],
     "originalBaseTypeName": "XYChart",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",

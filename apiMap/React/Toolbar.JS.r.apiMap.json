@@ -21,11 +21,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "toolbarTitleStyle"}            ],
-           "originalName": "ToolbarTitleStyle"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "toolbarTitleColor"}            ],
            "originalName": "ToolbarTitleColor"
        },

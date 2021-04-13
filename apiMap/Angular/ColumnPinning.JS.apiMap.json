@@ -21,11 +21,6 @@
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
-           "originalName": "TitleStyle"
-       },
-        {
-           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "titleColor"}            ],
            "originalName": "TitleColor"
        },

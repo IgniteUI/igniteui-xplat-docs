@@ -1,9 +1,4 @@
 {
-"extraFiles": [
-"igc-time-axis-break-module.ts",
-"igc-time-axis-interval-module.ts",
-"igc-time-axis-label-format-module.ts"
-],
 "types": [
 {
     "originalName": "CategoryAngleAxis",
@@ -193,6 +188,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcTimeAxisLabelFormatCollection", "mappedName": "labelFormats"}            ],
            "originalName": "LabelFormats"
        },
@@ -294,9 +294,40 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "TimeAxisLabellingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "TimeAxisLabellingMode.ts",
+ "mappedName": "TimeAxisLabellingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Compressed"}            ],
+           "originalName": "Compressed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "TimeAxisBreak",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-time-axis-break-component.ts",
+    "dynamicModuleName": "igc-time-axis-break-dynamic-module.ts",
+    "moduleName": "igc-time-axis-break-module.ts",
  "mappedName": "IgcTimeAxisBreakComponent"}   ],
    "members": [
         {
@@ -320,6 +351,8 @@
     "originalName": "TimeAxisInterval",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-time-axis-interval-component.ts",
+    "dynamicModuleName": "igc-time-axis-interval-dynamic-module.ts",
+    "moduleName": "igc-time-axis-interval-module.ts",
  "mappedName": "IgcTimeAxisIntervalComponent"}   ],
    "members": [
         {
@@ -402,6 +435,8 @@
     "originalName": "TimeAxisLabelFormat",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-time-axis-label-format-component.ts",
+    "dynamicModuleName": "igc-time-axis-label-format-dynamic-module.ts",
+    "moduleName": "igc-time-axis-label-format-module.ts",
  "mappedName": "IgcTimeAxisLabelFormatComponent"}   ],
    "members": [
         {
@@ -413,6 +448,21 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "format"}            ],
            "originalName": "Format"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "repeatedYearFormat"}            ],
+           "originalName": "RepeatedYearFormat"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "repeatedMonthFormat"}            ],
+           "originalName": "RepeatedMonthFormat"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "repeatedDayFormat"}            ],
+           "originalName": "RepeatedDayFormat"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -433,6 +483,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcTimeAxisBreakCollection", "mappedName": "breaks"}            ],
            "originalName": "Breaks"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
        },
         {
            "names": [

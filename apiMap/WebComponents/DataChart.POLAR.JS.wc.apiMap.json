@@ -95,6 +95,31 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}            ],
+           "originalName": "IsCustomPolarStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomPolarMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
            "originalName": "ScrollIntoView"
        },
@@ -107,6 +132,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

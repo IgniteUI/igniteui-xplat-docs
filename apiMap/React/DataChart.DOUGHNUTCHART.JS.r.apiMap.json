@@ -200,6 +200,46 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "othersLabelFormat"}            ],
+           "originalName": "OthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}            ],
+           "originalName": "OthersLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "legendLabelFormat"}            ],
+           "originalName": "LegendLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}            ],
+           "originalName": "LegendLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "legendOthersLabelFormat"}            ],
+           "originalName": "LegendOthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}            ],
+           "originalName": "LegendOthersLabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "labelExtent"}            ],
            "originalName": "LabelExtent"
        },

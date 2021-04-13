@@ -153,6 +153,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "TimeAxisLabellingMode", "mappedName": "LabellingMode"}            ],
+           "originalName": "LabellingMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "TimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}            ],
            "originalName": "LabelFormats"
        },
@@ -302,6 +307,21 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "Format"}            ],
            "originalName": "Format"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RepeatedYearFormat"}            ],
+           "originalName": "RepeatedYearFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RepeatedMonthFormat"}            ],
+           "originalName": "RepeatedMonthFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RepeatedDayFormat"}            ],
+           "originalName": "RepeatedDayFormat"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -315,6 +335,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "TimeAxisBreakCollection", "mappedName": "Breaks"}            ],
            "originalName": "Breaks"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "TimeAxisLabellingMode", "mappedName": "LabellingMode"}            ],
+           "originalName": "LabellingMode"
        },
         {
            "names": [
