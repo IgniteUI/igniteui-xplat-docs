@@ -334,6 +334,13 @@ The Dock Manager component raises events when specific end-user interactions are
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
+           alt="$PlatformShort$ Dock Manager Pane Closing Example"
+           github-src="layouts/dock-manager/hiding-panes">
+</code-view>
+
 ## Keyboard Navigation
 
 Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
