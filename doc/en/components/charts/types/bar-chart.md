@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ Bar Charts and Graphs | $ProductName$
-_description: $PlatformShort$ Bar Charts are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
-_keywords: $PlatformShort$ Charts, Bar Chart, Infragistics
+title: $PlatformShort$ Bar Chart and Graph | $ProductName$
+_description: $PlatformShort$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
+_keywords: $PlatformShort$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
 # $PlatformShort$ Bar Chart
 
-$PlatformShort$ Bar Charts, Bar Graphs, or Horizontal Bar Charts, are among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars or equal width and differing lengths. They are ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Like a [Column Chart](column-chart.md), or [Column Graph](column-chart.md), where bars are displayed vertically (up and down), the bar chart is rendered like the [column chart](column-chart.md), but with 90 degrees clockwise rotation and a horizontal display (left to right).
+The $ProductName$ Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but different lengths. This chart is ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down)
 
 ## $PlatformShort$ Bar Chart Example
 
-In this example, the bar chart is comparing movie series total world box office revenue versus the highest grossing movie in that series. The Y-Axis, or labels on the left of the chart, are displaying the string-values of the series. The X-Axis, or labels on the bottom of the chart, are displaying the value in billions of U.S. dollars.
+The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries`, as shown in the example below:
+You can create this type of chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -126,7 +126,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Stacked 100% Bar Chart
 
-The $ProductName$ Stacked 100% Bar Chart is identical to the $PlatformShort$ stacked bar chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
+The $ProductName$ Stacked 100% Bar Chart is identical to the $PlatformShort$ Stacked Bar Chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below:
 
@@ -142,19 +142,20 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can find more information about related chart types in these topics:
 
-- [Area Charts](area-chart.md)
-- [Column Charts](column-chart.md)
-- [Line Charts](line-chart.md)
-- [Spline Charts](spline-chart.md)
-- [Stacked Charts](stacked-chart.md)
+- [Area Chart](area-chart.md)
+- [Column Chart](column-chart.md)
+- [Line Chart](line-chart.md)
+- [Spline Chart](spline-chart.md)
+- [Stacked Chart](stacked-chart.md)
 
 ## API Members
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Bar              | `XamDataChart` | `BarSeries`
-Stacked Bar      | `XamDataChart` | `StackedBarSeries`
-Stacked 100% Bar | `XamDataChart` | `Stacked100BarSeries`
-Callout Layer    | `XamDataChart` | `CalloutLayer`
+- `XamDataChart`
+- `ItemsSource`
+- `BarSeries`
+- `CalloutLayer`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
+- `StackedBarSeries`

@@ -6,11 +6,11 @@ mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"
 ---
 # $PlatformShort$ Shape Charts
 
-$PlatformShort$ Shape Charts are a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
+The $ProductName$ Shape Charts are a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
 ## $PlatformShort$ Scatter Polygon Chart
 
-The Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` component. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
+The $PlatformShort$ Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` component. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolygonSeries`, as shown in the example below:
 
@@ -24,7 +24,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Scatter Polyline Chart
 
-The Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` component. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
+The $PlatformShort$ Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` component. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolylineSeries`, as shown in the example below:
 
@@ -40,9 +40,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can find more information about related chart types in these topics:
 
-- [Area Charts](area-chart.md)
-- [Line Charts](line-chart.md)
-- [Scatter Charts](scatter-chart.md)
+- [Area Chart](area-chart.md)
+- [Line Chart](line-chart.md)
+- [Scatter Chart](scatter-chart.md)
 
 ## API Members
 

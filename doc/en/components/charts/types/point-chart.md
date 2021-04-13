@@ -6,9 +6,7 @@ mentionedTypes: ["XamCategoryChart", "ChartType", "Legend"]
 ---
 # $PlatformShort$ Point Chart
 
-$PlatformShort$ Point Chart renders a collection of points. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
-
-With multiple series, our $PlatformShort$ Point Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart` control. This gives the benefit for our users to more easily comprehend what data set each point corresponds to.
+The $ProductName$ Point Chart renders a collection of points. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). These charts emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
 
 ## $PlatformShort$ Point Chart Example
 
@@ -58,16 +56,31 @@ Once the $PlatformShort$ Point Chart is set up, we may want to make some further
 
 <div class="divider--half"></div>
 
+## Advanced Types of Point Charts
+
+You can create more advanced types of $PlatformShort$ Point Charts using the `XamDataChart` control instead of `XamCategoryChart` control by following these topics:
+
+- [Scatter Bubble Chart](bubble-chart.md)
+- [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart)
+- [Scatter HD Chart](scatter-chart.md#$PlatformShort$-scatter-high-density-chart)
+- [Polar Marker Chart](polar-chart.md#$PlatformShort$-polar-Marker-chart)
+
 ## Additional Resources
 
-- [Bubble Chart](bubble-chart.md)
-- [Scatter Chart](scatter-chart.md)
+You can find more information about related chart features in these topics:
+
+- [Chart Performance](../features/chart-performance.md)
+- [Chart Markers](../features/chart-markers.md)
 
 ## API Members
+
+The following table lists API members mentioned in the above sections:
+
 - `XamCategoryChart`
+- `XamDataChart`
 - `ChartType`
 - `MarkerTypes`
 - `MarkerOutlines`
 - `MarkerBrushes`
 - `MarkerThickness`
- 
+

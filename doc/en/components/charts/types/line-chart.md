@@ -1,18 +1,16 @@
 ---
-title: $PlatformShort$ Line Charts and Graphs | $ProductName$
+title: $PlatformShort$ Line Chart and Graph | $ProductName$
 _description: The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
-_keywords: $PlatformShort$ Charts, Line Chart, Infragistics
+_keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics
 mentionedTypes: ["XamCategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 ---
 # $PlatformShort$ Line Chart
 
-$PlatformShort$ Line Chart, or Line Graph, is a type of category line graph that shows the continuous data values represented by points connected by straight line segments of one or more quantities over a period of time. It’s often used to show trends and perform comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
-
-With multiple series, our $PlatformShort$ Line Chart requires more visual indicators for end-users to easily perceive what data is displayed. To improve the experience, we need to add a legend for the multiple series. First, we will add a legend object to our application and then we will set it to the `Legend` property of the $PlatformShort$ `XamCategoryChart`. This gives the benefit for our users to more easily comprehend what data set each line corresponds to.
+The $ProductName$ Line Chart or Line Graph is a type of category charts that show the continuous data values represented by points connected by straight line segments of one or more quantities over a period of time. It’s often used to show trends and perform comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
 
 ## $PlatformShort$ Line Chart Example
 
-In the following example, the line chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+In the following example, $PlatformShort$ Line Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
 You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
@@ -131,9 +129,9 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Line Chart Advanced Scenarios
+## Advanced Types of Line Charts
 
-For more advanced types of line charts, use `XamDataChart` control to create other types of line charts as the following sections demonstrate them.
+The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ Stacked Line Chart
 
@@ -165,7 +163,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Radial Line Chart
 
-The Radial Line Chart belongs to a group of radial charts and has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the Line Chart, but wraps the data points around a circular axis rather than stretching them along a horizontal line.
+The Radial Line Chart belongs to a group of radial charts and has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the Line Chart, but wraps the data points around a circular axis rather than stretching them horizontally.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
 
@@ -180,7 +178,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Polar Line Chart
 
-The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md) with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
+The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
@@ -197,12 +195,12 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can find more information about related chart types in these topics:
 
-- [Area Charts](area-chart.md)
-- [Column Charts](column-chart.md)
-- [Polar Charts](polar-chart.md)
-- [Radial Charts](radial-chart.md)
-- [Spline Charts](spline-chart.md)
-- [Stacked Charts](stacked-chart.md)
+- [Area Chart](area-chart.md)
+- [Column Chart](column-chart.md)
+- [Polar Chart](polar-chart.md)
+- [Radial Chart](radial-chart.md)
+- [Spline Chart](spline-chart.md)
+- [Stacked Chart](stacked-chart.md)
 
 ## API Members
 
@@ -214,4 +212,4 @@ Line              | `XamCategoryChart` | `ChartType` = `Line`
 Polar Line        | `XamDataChart`     | `PolarLineSeries`
 Radial Line       | `XamDataChart`     | `RadialLineSeries`
 Stacked Line      | `XamDataChart`     | `StackedLineSeries`
-Stacked 100% Line | `XamDataChart`     | `Stacked100LineSeries`                  
+Stacked 100% Line | `XamDataChart`     | `Stacked100LineSeries`

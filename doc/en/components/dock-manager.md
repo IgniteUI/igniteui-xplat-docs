@@ -20,6 +20,7 @@ Please follow the steps outlined in the blog post titled:
 
 ## $PlatformShort$ Dock Manager Example
 
+This example shows most functionalities and docking options of the $PlatformShort$ Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -29,8 +30,6 @@ Please follow the steps outlined in the blog post titled:
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 
 <!-- Angular, React, WebComponents -->
@@ -84,6 +83,12 @@ this.dockManager.layout = {
         ]
     }
 };
+```
+
+With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether resizing floating panes is allowed, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
+
+```ts
+this.dockManager.allowFloatingPanesResize = false;
 ```
 
 To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [`slot`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [`contentId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to `100%` for predictable response when the end-user is resizing panes.
@@ -220,6 +225,9 @@ const tabGroupPane: IgcTabGroupPane = {
 
 If there is not enough space to display all tab headers, the tab group shows **More tabs** menu, which contains the non-visible tabs. If you click a tab item in that menu, the tab gets selected and moved to the first position.
 
+The tabs also can be reordered without being detached from the tab group in which they are located. You can click on a tab of your choice and drag it left or right to the position you want it to be. If you drag the selected tab outside of the tabs area it will be detached into a floating pane. Please note that you can't drag tab with child content pane that has [`allowFloating`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) property set to `false` outside of the tabs area.
+
+
 ### Document Host
 
 The [document host]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html) is an area of tabs for documents, similar to the one in Visual Studio for code editing and design view. Here is how to define a document host with two document tabs:
@@ -267,6 +275,7 @@ const layout: IgcDockManagerLayout = {
             floatingLocation: { x: 80, y: 80 },
             floatingWidth: 200,
             floatingHeight: 150,
+            floatingResizable: true,
             panes: [
                 {
                     type: IgcDockManagerPaneType.contentPane,
@@ -279,7 +288,7 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. The [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property,  which by default is set to `true`, determines whether a specific floating pane can be resized. This value will overwrite the value of the global `allowFloatingPanesResize` property. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
 
 ### Active Pane
 
@@ -323,6 +332,44 @@ The Dock Manager component raises events when specific end-user interactions are
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+
+## Keyboard Navigation
+
+Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
+
+
+The shortcuts are as follows:
+
+### Docking
+
+- <kbd>Cmd/Ctrl + Shift + Arrow up</kbd> Docks to global top
+- <kbd>Cmd/Ctrl + Shift + Arrow down</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl + Shift + Arrow right</kbd> Docks to global right
+- <kbd>Cmd/Ctrl + Shift + Arrow left</kbd> Docks to global left
+- <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+
+### Navigating
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Alt + F6</kbd> Focuses next content pane
+ - <kbd>Alt + Shift + F6</kbd> Focuses previous content pane
+
+### Pane Navigator
+
+Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
+
+ - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  Starts from the first document forward
+ - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> Starts from the first pane forward
+ - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> Starts from the last document backwards
+ - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> Starts from the last pane backwards
+
+### Other
+ - <kbd>Alt + F3</kbd> Closes the active pane
+
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$PlatformShort$-dock-manager-example).
 
 ## Themes
 
