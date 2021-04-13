@@ -13,7 +13,7 @@ $PlatformShort$ チャートは、次のチャート機能を提供します。
 
 ### 軸
 
-異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。$PlatformShort$ チャートのカスタマイズについての詳細には、[軸グリッド線](features/axis-gridlines.md)、[軸レイアウト](features/axis-layouts)、および[軸オプション](features/axis-options.md)のトピックをご覧ください。
+異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。$PlatformShort$ チャートのカスタマイズについての詳細には、[軸グリッド線](features/chart-axis-gridlines.md)、[軸レイアウト](features/chart-axis-layouts.md)、および[軸オプション](features/chart-axis-options.md)のトピックをご覧ください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

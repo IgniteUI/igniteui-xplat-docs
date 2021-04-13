@@ -13,7 +13,7 @@ $ProductName$ データ チャートを使用すると、`ValueOverlay` を使�
 
 ## $PlatformShort$ 値オーバーレイの例
 
-次の例は、いくつかの水平値オーバーレイがプロットされた[縦棒チャート](column-chart.md)を示しています。
+次の例は、いくつかの水平値オーバーレイがプロットされた[縦棒チャート](../types/column-chart.md)を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

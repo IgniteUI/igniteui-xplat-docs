@@ -8,21 +8,54 @@ _language: ja
 
 # $PlatformShort$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コントロールでサポートされています。
 
-## $PlatformShort$ チャート ツールチップの例
+## $PlatformShort$ チャート ツールチップのタイプ
 
-次の例は、[縦棒チャート](../types/column-chart.md)が、映画シリーズの世界の興行収入の合計と、そのシリーズで最も収益の高い映画を比較していることを示しています。開始時に `ToolTipType` プロパティを "Default" に設定することで、ツールチップが有効になります。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
+次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
 
-- `Default` ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
-- `Item` ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
-- `Category` ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
+プロパティの値     | 説明
+-------------------|----------------
+`Default` | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
+`Item` | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
+`Category` | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
            alt="$PlatformShort$ ツールチップ タイプの例"
            github-src="charts/category-chart/column-chart-with-tooltips">
+</code-view>
+
+<div class="divider--half"></div>
+
+## $PlatformShort$ Chart Tooltip Template
+
+If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $PlatformShort$ charts.
+
+## Custom Tooltips in Category Chart
+
+This example shows how to create custom tooltips for all series in $PlatformShort$ Category Chart control.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Template"
+           github-src="charts/category-chart/tooltip-template">
+</code-view>
+
+<div class="divider--half"></div>
+
+
+## Custom Tooltips in Data Chart
+
+This example shows how to create custom tooltips for each series in $PlatformShort$ Data Chart control.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Template"
+           github-src="charts/data-chart/tooltip-template">
 </code-view>
 
 <div class="divider--half"></div>
@@ -40,3 +73,4 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 - `ToolTipType`
 - `XamCategoryChart`
+- `XamDataChart`

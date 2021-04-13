@@ -1,19 +1,17 @@
 ---
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics, $PlatformShort$ チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 _language: ja
 ---
 # $PlatformShort$ 折れ線チャート
 
-$PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
-
-複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `XamCategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
+$ProductName$ 折れ線チャート (または折れ線グラフ) は、カテゴリ チャートの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 ## $PlatformShort$ 折れ線チャートの例
 
-次の例では、折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
+次の例では、$PlatformShort$ 折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
 `XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
@@ -132,9 +130,9 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 折れ線チャートの高度なシナリオ
+## Advanced Types of Line Charts
 
-高度なタイプの折れ線チャートの場合、以下のセクションで説明するよう回線 `XamDataChart` コントロールを使用して他のタイプの折れ線チャートを作成します。
+The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ 積層型折れ線チャート
 
@@ -166,7 +164,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## $PlatformShort$ ラジアル折れ線チャート
 
-ラジアル折れ線チャートはラジアル チャートのグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶしなしのポリゴンの形状を持っています。このグラフ チャートは、折れ線チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。
+ラジアル折れ線チャートはラジアル チャートのグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶしなしのポリゴンの形状を持っています。このグラフ チャートは、折れ線チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
 
@@ -181,7 +179,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## $PlatformShort$ 極座標型折れ線チャート
 
-極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、[散布折れ線チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
+極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、[散布折れ線チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントがを水平方向に引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
 
@@ -215,4 +213,4 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 極座標折れ線        | `XamDataChart`     | `PolarLineSeries`
 ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries`
 積層型折れ線      | `XamDataChart`     | `StackedLineSeries`
-積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries`                  
+積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries`

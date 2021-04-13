@@ -1,15 +1,19 @@
 ---
 title: $PlatformShort$ 縦棒チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 縦棒チャート
-_keywords: $PlatformShort$ Charts, Column Chart, Infragistics, $PlatformShort$ チャート, 縦棒チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics, $PlatformShort$ チャート, 縦棒チャート, 縦棒グラフ, 垂直棒チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]    
 _language: ja
 ---
 # $PlatformShort$ 縦棒チャート
 
-$ProductName$ 縦棒チャートは、チャートの下から上に、データ ポイントの値に向かって伸びる長方形のコレクションを使用してチャート描画されます。縦棒チャートは、ある一定の期間に対する量の変化を強調したり、複数のデータを比較したりします。値は Y 軸 (NumericYAxis) に表され、カテゴリは X 軸 (CategoryXAxis) に表示されます。
+The $ProductName$ Column Chart, Column Graph, or Vertical Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by columns with equal widths but different heights. These columns extend from the bottom to top of the chart towards the values of data points.このチャートは、ある一定の期間に対する量の変化を強調したり、複数のデータを比較したりします。Column Chart is very similar to [Bar Chart](bar-chart.md) except that Column Chart renders in vertical orientation (up and down) while [Bar Chart](bar-chart.md) has horizontal orientation (left to right) or 90 degrees clockwise rotation.
 
 ## $PlatformShort$ 縦棒チャートの例
+
+The $ProductName$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
+
+You can create this type of chart in the `XamCategoryChart` control by binding your data and setting `ChartType` to Column enum, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,10 +24,6 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 <div class="divider--half"></div>
 
 ## 縦棒チャートの推奨事項
-
-### $PlatformShort$ 縦棒チャートはプロジェクトに適していますか?
-
-縦棒チャートは、[棒チャート](bar-chart.md)と同じデータ プロットの概念を採用していますが、データ ポイントは、垂直線 (Y 軸) でなく水平線 (X 軸) に沿って延びます。つまり、縦棒チャートは[棒チャート](bar-chart.md)のように描画されますが、反時計回りに 90 度回転されます。
 
 ### 縦棒チャートのユース ケース
 
@@ -70,32 +70,35 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="複数シリーズの $PlatformShort$ 縦棒チャート" >
+           alt="複数シリーズの $PlatformShort$ 縦棒チャート"           github-src="charts/category-chart/column-chart-multiple-sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 縦棒チャートの高度なシナリオ
-
-高度なタイプの縦棒チャートの場合、以下のセクションで説明するように `XamDataChart` コントロールを使用して他のタイプの縦棒チャートを作成します。
 
 ## $PlatformShort$ 縦棒チャートのスタイル設定
 
-$PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。たとえば、以下のサンプルは、X 軸に[交差値](../features/axis-layouts.md)を使用する方法と、[マーカー テンプレート](../features/chart-markers.md)を使用して、対応する列の上 (または下) に項目の値を表示する方法を示しています。
+$PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。たとえば、以下のサンプルは、縦棒の外観を変更し、[マーカー テンプレート](../features/chart-markers.md)を使用して、対応する列の上 (または下) に項目の値を表示する方法を示しています。
 
 `XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ColumnSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-column-chart-styling"
-           alt="$PlatformShort$ 縦棒チャートのスタイル設定" >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-styling"
+           alt="$PlatformShort$ 縦棒チャートのスタイル設定"
+           github-src="charts/category-chart/column-chart-styling">
 </code-view>
 
 <div class="divider--half"></div>
 
+## Advanced Types of Column Charts
+
+The following sections explain more advanced types of $PlatformShort$ Column Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+
+
 ## $PlatformShort$ ウォーターフォール チャート
 
-ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。ウォーターフォール チャートは、外観が範囲縦棒チャートに似ていますが、各データ ポイントに必要な数値データ列は 2 つでなく 1 つのみです。
+ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用して描画されます。値の正/負の変化を区別するため、列は色分けされます。ウォーターフォール チャートは、外観が[範囲縦棒チャート](column-chart.md#$PlatformShort$-範囲縦棒チャート)に似ていますが、各データ ポイントに必要な数値データ列は 2 つでなく 1 つのみです。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `WaterfallSeries` にバインドします:
 
@@ -109,7 +112,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ 積層型縦棒チャート
 
-積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で縦棒チャートと同じです。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは[積層型棒チャート](bar-chart.md)と同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
+積層型縦棒チャートは、シリーズが横ではなく上に表示されることを除いて、すべての面で[カテゴリ縦棒チャート](column-chart.md#$PlatformShort$-縦棒チャートの例)に似ています。積層型縦棒チャートは、シリーズ間の結果の比較を示すために使用されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも Y 軸の正の側にグループ化され、負の値は Y 軸の負の側にグループ化されます。積層型縦棒チャートは[積層型棒チャート](stacked-chart.md#$PlatformShort$-積層型棒チャート)と同じデータプロットの概念を使用していますが、データ ポイントは横の線 (X 軸) に沿ってではなく、縦の線 (Y 軸) に沿って積層されます。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedBarSeries` にバインドします:
 
@@ -123,7 +126,7 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ 積層型 100% 縦棒チャート
 
-積層型 100% 縦棒チャートは、Y 軸上の値の取り扱いを除いたすべての面で積層型縦棒チャートと同じです。データを直接表現するのでなく、積層型 100 縦棒は、データ ポイント内のすべての値の合計の割合でデータを表します。
+積層型 100% 縦棒チャートは、Y 軸上の値の取り扱いを除いたすべての面で[積層型縦棒チャート](stacked-chart.md#$PlatformShort$-積層型縦棒チャート)と同じです。データを直接表現するのでなく、積層型 100 縦棒は、データ ポイント内のすべての値の合計の割合でデータを表します。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
@@ -137,9 +140,9 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 ## $PlatformShort$ 範囲縦棒チャート
 
-$ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、従来の縦棒チャートのように下から伸びるのではなく、チャートのプロット領域の中央に表示できる垂直の長方形を使用して描画されます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
+$ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、従来の[カテゴリ縦棒チャート](column-chart.md#$PlatformShort$-縦棒チャートの例)のように下から伸びるのではなく、チャートのプロット領域の中央に表示できる垂直の長方形を使用して描画されます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は Y 軸に表示され、カテゴリは X 軸に表示されます。
 
-範囲縦棒チャートは、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は[範囲エリア チャート](area-chart.md)と同じです。
+範囲縦棒チャートは、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は[範囲エリア チャート](area-chart.md#$PlatformShort$-範囲エリア-チャート)と同じです。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RangeColumnSeries` にバインドします:
 
@@ -153,7 +156,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 
 ## $PlatformShort$ ラジアル縦棒チャート
 
-ラジアル縦棒チャートは、ラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる長方形のコレクションを使用して描画されます。これは縦棒チャートと同じデータ プロットの概念を使用していますが、データ ポイントを横の線に並べるのではなく、データ ポイントを円でラップします。
+ラジアル縦棒チャートは、[ラジアル チャート](radial-chart.md)のグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる長方形のコレクションを使用して描画されます。これは[カテゴリ縦棒チャート](column-chart.md#$PlatformShort$-縦棒チャートの例)と同じデータ プロットの概念を使用していますが、データ ポイントを横の線に並べるのではなく、データ ポイントを円でラップします。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialColumnSeries` にバインドします:
 
@@ -170,6 +173,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 関連するチャートタイプの詳細については、以下のトピックを参照してください。
 
 - [棒チャート](bar-chart.md)
+- [複合チャート](Composite-chart.md)
 - [ラジアル チャート](radial-chart.md)
 - [積層型チャート](stacked-chart.md)
 

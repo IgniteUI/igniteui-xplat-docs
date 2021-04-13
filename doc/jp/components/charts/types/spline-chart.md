@@ -7,9 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ スプライン チャート
 
-$PlatformShort$ スプライン チャートはカテゴリ シリーズのグループに属し、スプラインのスムーズなカーブに接続された点のコレクションを使用して描画されます。値は y 軸に表示され、カテゴリは x 軸に表示されます。スプライン チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。スプライン チャートは、データ ポイントを接続する線がデータの表示を改善するためのスプライン補間とスムージング機能を持つこと以外のすべての面で[折れ線チャート](line-chart.md)と同じです。
+$ProductName$ スプライン チャートは、スプラインのスムーズなカーブに接続された点のコレクションとして描画されるカテゴリ チャートのグループに属しています。値は y 軸に表示され、カテゴリは x 軸に表示されます。スプライン チャートは時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。スプライン チャートは、データ ポイントを接続する線がデータの表示を改善するためのスプライン補間とスムージング機能を持つこと以外のすべての面で[折れ線チャート](line-chart.md)と同じです。
 
 ## $PlatformShort$ スプライン チャートの例
+
+The following example shows how to create $PlatformShort$ Spline Chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to Spline enum.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -61,9 +63,9 @@ $PlatformShort$ スプライン チャートはカテゴリ シリーズのグ�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ スプライン チャートの高度なシナリオ
+## Advanced Types of Spline Charts
 
-高度なタイプのスプライン チャートの場合、以下のセクションで説明するように `XamDataChart` コントロールを使用して他のタイプのスプライン チャートを作成します。
+The following sections explain more advanced types of $PlatformShort$ Spline Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ 積層型スプライン チャート
 

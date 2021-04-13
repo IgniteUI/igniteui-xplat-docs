@@ -1,19 +1,19 @@
 ---
 title: $PlatformShort$ 棒チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Bar Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, 棒グラフ, 水平チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 _language: ja
 ---
 # $PlatformShort$ 棒チャート
 
-$PlatformShort$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、水平棒または等しい幅と異なる長さでエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。棒が垂直 (上下) に表示される縦棒チャートまたは[縦棒グラフ](column-chart.md)のように、棒チャートは[縦棒チャート](column-chart.md)と同じように描画されますが、時計回りに 90 度回転し、水平に (左から右) 表示されます。
+$ProductName$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ高さで長さが異なる水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down).
 
 ## $PlatformShort$ 棒チャートの例
 
-この例では、棒チャートは、映画シリーズの世界の興行収入の合計と、そのシリーズで最も収益の高い映画を比較しています。Y 軸 (チャートの左側のラベル) には、シリーズの文字列値が表示されています。X 軸 (チャートの下部にあるラベル) は、数十億米ドルで値を表示しています。
+The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドします:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データ ソースを複数の `BarSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -151,11 +151,12 @@ $PlatformShort$ 積層型 100% 棒チャートは、X 軸 (チャートの下の
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明されている API メンバーのリストです。
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-棒              | `XamDataChart` | `BarSeries`
-積層型棒      | `XamDataChart` | `StackedBarSeries`
-積層型 100% 棒 | `XamDataChart` | `Stacked100BarSeries`
-コールアウト レイヤー    | `XamDataChart` | `CalloutLayer`
+- `XamDataChart`
+- `ItemsSource`
+- `BarSeries`
+- `CalloutLayer`
+- `StackedBarSeries`
+- `Stacked100BarSeries`
+- `StackedBarSeries`

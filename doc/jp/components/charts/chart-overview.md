@@ -166,7 +166,7 @@ $PlatformShort$ ネットワーク チャートは、ネットワーク グラ�
 
 ### 極座標チャート
 
-$PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データポイントを水平線に沿って伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
+$PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -251,15 +251,19 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 ### $PlatformShort$ 動的なチャート
 
-新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、複数のチャート列を表示および重ねて、積層型縦棒を作成できます。
+新しい[複合チャート](types/Composite-chart.md)を作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、複数のチャート列を表示および重ねて、積層型縦棒を作成できます。
 
 ### カスタム ツールチップ
 
-新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、画像やデータ バインディングを使用してツールチップをカスタマイズしたり、複数のシリーズのツールチップを 1 つのツールチップに組み合わせたりすることもできます。
+新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、画像やデータ バインディングを使用して[カスタム ツールチップ](features/chart-tooltips.md#$PlatformShort$-チャート-ツールチップ-テンプレート)を作成したり、複数のシリーズのツールチップを 1 つのツールチップに組み合わせたりすることもできます。
 
 ### リアルタイムの高パフォーマンスなチャート
 
-ライブのストリーミング データを使用して、ミリ秒レベルの更新で数百万のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。
+ライブのストリーミング データを使用して、ミリ秒レベルの更新で数千のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#$PlatformShort$-Chart-with-High-Frequency) topic.
+
+### 大量のデータ処理
+
+Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#$PlatformShort$-Chart-with-High-Volume) topic.
 
 ### モジュラー デザイン
 
@@ -275,7 +279,7 @@ $PlatformShort$チャート は、モジュール性のために設計されて�
 
 ### トレンドライン
 
-線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要なすべてのトレンドラインをサポートします。
+$PlatformShort$ チャートは、線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要になるすべての[トレンドライン](features/chart-trendlines.md)をサポートします。
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
@@ -287,15 +291,10 @@ $PlatformShort$チャート は、モジュール性のために設計されて�
 
 ### マーカー、ツールチップ、およびテンプレート
 
-10 種類のマーカーのいずれかを使用してデータを強調表示するか、シンプルなツールチップまたは多軸および多系列のチャート ツールチップとカスタム チャート テンプレートを使用して、データにコンテキストと意味を追加します。
+10 個の[マーカー タイプ](features/chart-markers.md)のいずれかを使用するか、独自の[マーカー-テンプレート](features/chart-markers.md#$PlatformShort$-チャート-マーカーのテンプレート)を作成して、データを強調表示するか、シンプルな[ツールチップ](features/chart-tooltips.md)または[カスタム ツールチップ](features/chart-tooltips.md#$PlatformShort$-チャート-ツールチップ-テンプレート)を使用した多軸および複数系列のチャートで、データにコンテキストと意味を追加します。
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
-### 大量のデータ処理
-
-`changeDetection` 設定を変更して、チャートファイナンシャル チャートのパフォーマンスを最適化し、数百万のデータ ポイントを描画します。この設定を使用すると、変更を探して大量のチャートをスムーズに実行し続けるときに、$PlatformShort$ がデータ配列をどのように処理するかを制御できます。
-
-<img class="img" src="../../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
 ## その他の詳細
 

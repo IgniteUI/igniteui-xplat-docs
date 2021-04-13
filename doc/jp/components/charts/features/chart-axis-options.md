@@ -52,6 +52,12 @@ $PlatformShort$ チャートでは、数値軸または時間軸の範囲の最�
 
 <div class="divider--half"></div>
 
+<!--
+## 軸スケールの例
+
+TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
+
+-->
 
 ## その他のリソース
 

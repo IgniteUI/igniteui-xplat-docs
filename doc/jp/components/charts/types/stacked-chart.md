@@ -1,13 +1,13 @@
 ---
 title: $PlatformShort$ 積層型チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 積層型チャート
-_keywords: $PlatformShort$ Charts, Stacked Chart, Infragistics, $PlatformShort$ チャート, 積層型チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics, $PlatformShort$ チャート, 積層型チャート, 積層型 100% チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
 _language: ja
 ---
 # $PlatformShort$ 積層型チャート
 
-$ProductName$ 積層型チャートは、データ項目の複数の値を積層エリア/ポリゴン、棒、縦棒、折れ線、またはスプラインとして描画する特別なチャートのグループです。標準の積層型チャートはデータ項目の実際の値を描画しますが、積層型 100% チャートは値を合計値のパーセンテージとして描画します。
+$ProductName$ 積層型チャートは、データ項目の複数の値を積層エリア/ポリゴン、棒、縦棒、折れ線、またはスプラインとして描画するチャートの特別なグループに属しています。。標準の積層型チャートはデータ項目の実際の値を描画しますが、積層型 100% チャートは値を合計値のパーセンテージとして描画します。
 
 ## $PlatformShort$ 積層型チャート タイプ
 

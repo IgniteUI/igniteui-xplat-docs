@@ -51,34 +51,6 @@ $PlatformShort$ チャートのホバー操作と注釈は、シリーズ コレ
 
 <div class="divider--half"></div>
 
-```html
-<igx-category-chart
-    [dataSource]="data"
-    crosshairsDisplayMode="Horizontal"
-    crosshairsSnapToData="true"
-    crosshairsAnnotationEnabled="true">
-</igx-category-chart>
-```
-
-```tsx
- <IgrCategoryChart
-    dataSource={this.state.data}
-    crosshairsDisplayMode="Horizontal"
-    crosshairsSnapToData={true}
-    crosshairsAnnotationEnabled={true} />
-```
-
-```html
-<igc-category-chart
-    id="chart"
-    width="400px"
-    height="400px"
-    crosshairs-display-mode="Horizontal"
-    crosshairs-snap-to-data="true"
-    crosshairs-annotation-enabled="true">
-</igc-category-chart>
-```
-
 ## $PlatformShort$ 最終値レイヤー
 
 カテゴリ チャート コンポーネントの `FinalValueLayer` は、シリーズに表示された最終値の軸に沿ったクイック ビューをサポートします。

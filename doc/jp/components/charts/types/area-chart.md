@@ -7,13 +7,13 @@ _language: ja
 ---
 # $PlatformShort$ エリア チャート
 
-$ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)または[スプライン チャート](spline-chart.md)に基づいています。そのため、時系列で量の変化を示します。たとえば、商品の経時的な蓄積などです。
+$ProductName$ エリア チャートは、線の下の領域が塗りつぶされた直線セグメントで接続されたポイントのコレクションを使用して描画されます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
 
-エリア チャートは、線の下の領域が塗りつぶされた直線セグメントで接続されたポイントのコレクションを使用して描画されます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
+エリア チャートは、[折れ線チャート](line-chart.md)または[スプライン チャート](spline-chart.md)に基づいています。そのため、時系列で量の変化を示します。たとえば、商品の経時的な蓄積などです。
 
 ## $PlatformShort$ エリア チャートの例
 
-`XamCategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
+`XamCategoryChart` コントロールで $ProductName$ カテゴリ エリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -24,10 +24,6 @@ $ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)
 <div class="divider--half"></div>
 
 ## エリア チャートの推奨事項
-
-### $PlatformShort$ エリア チャートはプロジェクトに適していますか?
-
-エリア チャートは、データ ポイントがプロットされ、直線セグメントで接続されているという点で[折れ線チャート](line-chart.md)に似ていますが、エリア チャートでは X 軸と線の間の領域が塗りつぶされているため異なります。
 
 ### エリア チャートのユースケース
 
@@ -63,7 +59,6 @@ $ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)
 
 $PlatformShort$ エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source"
@@ -75,7 +70,6 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 ## 複数シリーズの $PlatformShort$ エリア チャート
 
 複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコンポーネントに結合することもできます。これは、複数のデータ ソースを `XamCategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -97,6 +91,10 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 
 <div class="divider--half"></div>
 
+## Advanced Types of Area Charts
+
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+
 ## $PlatformShort$ ステップ エリア チャート
 
 $ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
@@ -110,9 +108,9 @@ $ProductName$ ステップ エリア チャートはカテゴリ チャートの
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 高度なシナリオ
+## Advanced Types of Area Charts
 
-高度なタイプのエリア チャートの場合、以下のセクションで説明するように `XamDataChart` コントロールを使用して他のタイプのエリア チャートを作成します。
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
 
 ## $PlatformShort$ 範囲エリア チャート
 
@@ -180,7 +178,7 @@ $ProductName$ 積層型 100% スプライン エリア チャートは、y 軸�
 
 ## $PlatformShort$ ラジアル エリア チャート
 
-$ProductName$ ラジアル エリア チャートは[ラジアル チャート](radial-chart.md)のグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶされたポリゴンの形状を持っています。このグラフ チャートは、エリア チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
+$ProductName$ ラジアル エリア チャートは[ラジアル チャート](radial-chart.md)のグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶされたポリゴンの形状を持っています。このグラフ チャートは、エリア チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"

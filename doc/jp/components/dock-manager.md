@@ -21,6 +21,7 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 
 ## $PlatformShort$ ドック マネージャーの例
 
+This example shows most functionalities and docking options of the $PlatformShort$ Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -30,8 +31,6 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 
 <!-- Angular, React, WebComponents -->
@@ -85,6 +84,12 @@ this.dockManager.layout = {
         ]
     }
 };
+```
+
+With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether resizing floating panes is allowed, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
+
+```ts
+this.dockManager.allowFloatingPanesResize = false;
 ```
 
 ペインのコンテンツをロードするために、ドック マネージャーは[スロット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/slot)を使用します。コンテンツ要素の [`slot`](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Global_attributes/slot) 属性はレイアウト構成のコンテンツ ペインの [`contentId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) と一致する必要があります。エンドユーザーがペインのサイズを変更する場合は、予測可能な応答のために、コンテンツ要素の幅と高さを `100%` に設定することを強くお勧めします。
@@ -222,6 +227,9 @@ const tabGroupPane: IgcTabGroupPane = {
 
 すべてのタブ ヘッダーを表示する十分なスペースがない場合、タブ グループは非表示タブを含む **[その他のタブ]** メニューを表示します。そのメニューのタブ項目をクリックすると、タブが選択され、最初の位置に移動します。
 
+The tabs also can be reordered without being detached from the tab group in which they are located. You can click on a tab of your choice and drag it left or right to the position you want it to be. If you drag the selected tab outside of the tabs area it will be detached into a floating pane. Please note that you can't drag tab with child content pane that has [`allowFloating`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) property set to `false` outside of the tabs area.
+
+
 ### ドキュメント ホスト
 
 [Document host](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html) コード編集やデザイン ビュー用の Visual Studio のタブと同様のドキュメント タブ領域です。以下は、2 つのドキュメント タブを持つドキュメント ホストを定義する方法です。
@@ -269,6 +277,7 @@ const layout: IgcDockManagerLayout = {
             floatingLocation: { x: 80, y: 80 },
             floatingWidth: 200,
             floatingHeight: 150,
+            floatingResizable: true,
             panes: [
                 {
                     type: IgcDockManagerPaneType.contentPane,
@@ -281,7 +290,7 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
+[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。The [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property,  which by default is set to `true`, determines whether a specific floating pane can be resized. This value will overwrite the value of the global `allowFloatingPanesResize` property. 注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
 
 ### アクティブ ペイン
 
@@ -325,6 +334,44 @@ this.dockManager.layout = { ...layout };
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+
+## Keyboard Navigation
+
+Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
+
+
+The shortcuts are as follows:
+
+### Docking
+
+- <kbd>Cmd/Ctrl + Shift + Arrow up</kbd> Docks to global top
+- <kbd>Cmd/Ctrl + Shift + Arrow down</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl + Shift + Arrow right</kbd> Docks to global right
+- <kbd>Cmd/Ctrl + Shift + Arrow left</kbd> Docks to global left
+- <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+
+### Navigating
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Alt + F6</kbd> Focuses next content pane
+ - <kbd>Alt + Shift + F6</kbd> Focuses previous content pane
+
+### Pane Navigator
+
+Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
+
+ - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  Starts from the first document forward
+ - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> Starts from the first pane forward
+ - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> Starts from the last document backwards
+ - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> Starts from the last pane backwards
+
+### Other
+ - <kbd>Alt + F3</kbd> Closes the active pane
+
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$PlatformShort$-dock-manager-example).
 
 ## テーマ
 
