@@ -2,7 +2,7 @@
 title: $PlatformShort$ Financial Chart | Tooltip Templates | Infragistics
 _description: Use Infragistics' $PlatformShort$ financial chart's tooltips to display important data. View our $ProductName$ graph tutorials!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, tooltip templates, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 ---
 # $PlatformShort$ Tooltip Templates
 
@@ -11,10 +11,10 @@ The $PlatformShort$ financial chart component provides default tooltips for each
 ## $PlatformShort$ Tooltip Templates Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-template" 
-           alt="$PlatformShort$ Tooltip Templates Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-template"
+           alt="$PlatformShort$ Tooltip Templates Example"
            github-src="charts/financial-chart/tooltip-template">
 </code-view>
 

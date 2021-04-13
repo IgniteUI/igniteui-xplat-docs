@@ -116,6 +116,6 @@ You can find more information about related chart types in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamTreemap`
+- `Treemap`
 - `LayoutOrientation`
 - `LayoutType`

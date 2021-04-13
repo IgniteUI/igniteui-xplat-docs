@@ -2,7 +2,7 @@
 title: $PlatformShort$ 縦棒チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 縦棒チャート
 _keywords: $PlatformShort$ Charts, Column Chart, Infragistics, $PlatformShort$ チャート, 縦棒チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]    
+mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]
 _language: ja
 ---
 # $PlatformShort$ 縦棒チャート
@@ -37,7 +37,7 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 
 - 多くの (10 または 12 以上) シリーズのデータがある場合。チャートが読みやすいことを確認する必要があります。
 
-データ構造: 
+データ構造:
 
 - データ モデルには少なくとも 1 つの数値プロパティを含む必要があります。
 - データ モデルにはラベルのためのオプションの文字列または日時プロパティを含むことができます。
@@ -47,7 +47,7 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 
 縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -59,7 +59,7 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 
 ## 複数シリーズの $PlatformShort$ 縦棒チャート
 
-縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -77,7 +77,7 @@ $ProductName$ 縦棒チャートは、チャートの下から上に、データ
 
 $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。たとえば、以下のサンプルは、X 軸に[交差値](../features/axis-layouts.md)を使用する方法と、[マーカー テンプレート](../features/chart-markers.md)を使用して、対応する列の上 (または下) に項目の値を表示する方法を示しています。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ColumnSeries` にバインドします:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ColumnSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -173,7 +173,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 
 チャート タイプ          | コントロール名       | API メンバー
 --------------------|--------------------|------------------------
-縦棒              | `XamCategoryChart` | `ChartType` = `Column`
+縦棒              | `CategoryChart` | `ChartType` = `Column`
 ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries`
 範囲縦棒        | `XamDataChart`     | `RangeColumnSeries`
 積層型縦棒      | `XamDataChart`     | `StackedColumnSeries`

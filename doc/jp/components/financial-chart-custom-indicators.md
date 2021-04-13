@@ -2,7 +2,7 @@
 title: $PlatformShort$ ファイナンシャル チャート | データ可視化ツール | カスタム インジケーター | インフラジスティックス
 _description: 簡単な API を使用して財務データを可視化するには、ファイナンシャル チャート コンポーネントを使用します。詳細については、デモ、依存関係、使用方法、およびツールバーを参照してください。
 _keywords: $PlatformShort$ charts, financial chart, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, インフラジスティックス
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 _language: ja
 ---
 # $PlatformShort$ カスタム インジケーター
@@ -12,10 +12,10 @@ $PlatformShort$ Financial Chart コンポーネントでは、インジケータ
 ## $PlatformShort$ カスタム インジケーターの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators" 
-           alt="$PlatformShort$ カスタム インジケーターの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators"
+           alt="$PlatformShort$ カスタム インジケーターの例"
            github-src="charts/financial-chart/custom-indicators">
 </code-view>
 
@@ -154,8 +154,8 @@ function applyCustomIndicators(s: IgcFinancialChartComponent, e: IgcFinancialCha
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%"    
-    DataSource="DataSource"                
+    Height="100%"
+    DataSource="DataSource"
     ApplyCustomIndicatorsScript="onApplyCustomIndicators"/>
 
 // In .JS file:
@@ -171,18 +171,18 @@ function onApplyCustomIndicators(chart, args) {
         let priceStart = ds.openColumn[0];
         let min = int.MaxValue;
         let max = int.MinValue;
-        
+
         for (i = 0; i < ds.indicatorColumn.length; i++)
         {
             let priceChange = prices[i] - priceStart;
             let pricePercentage = (priceChange / priceStart) * 100;
             min = Math.Min(min, pricePercentage);
-            max = Math.Max(max, pricePercentage);            
+            max = Math.Max(max, pricePercentage);
             ds.indicatorColumn[i] = pricePercentage;
         }
-        
+
         ds.minimumValue = min;
-        ds.maximumValue = max;        
+        ds.maximumValue = max;
     }
 }
 

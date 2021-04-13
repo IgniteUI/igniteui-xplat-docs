@@ -2,7 +2,7 @@
 title: $PlatformShort$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Axis Options
 _keywords: $PlatformShort$ Axis, Options, Title, Labels, Range Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 ---
 
 # $PlatformShort$ Axis Options
@@ -73,4 +73,4 @@ The following is a list of API members mentioned in the above sections:
 - `XAxisMinimumValue`
 - `YAxisMaximumValue`
 - `YAxisMinimumValue`
-- `XamCategoryChart`
+- `CategoryChart`

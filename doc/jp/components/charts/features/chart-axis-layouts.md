@@ -2,7 +2,7 @@
 title: $PlatformShort$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸レイアウト
 _keywords: $PlatformShort$ Axis, Layouts, Infragistics, $PlatformShort$ 軸, レイアウト, インフラジスティックス
-mentionedTypes: [ "XamCategoryChart", "XamDataChart" ]
+mentionedTypes: [ "CategoryChart", "XamDataChart" ]
 _language: ja
 ---
 
@@ -10,7 +10,7 @@ _language: ja
 
 すべての $ProductName$ チャートには、位置、間隔、重複などの多くの軸レイアウト オプションを構成するオプションが含まれているほか、軸を共有して同じチャートに複数の軸を含めることができます。これらの機能は、以下の例で示されています。
 
-> 注: 次の例は、`XamCategoryChart` および `XamFinancialChart` コントロールに適用されます。
+> 注: 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
 ## 軸間隔の例
 
@@ -104,7 +104,7 @@ $PlatformShort$ データ チャートでは、プロット領域内に軸を配
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
-- `XamCategoryChart`
-- `XamFinancialChart`
+- `CategoryChart`
+- `FinancialChart`
 - `XamDataChart`
 - `YAxisLabelLocation`

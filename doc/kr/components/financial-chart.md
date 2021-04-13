@@ -11,9 +11,9 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"
            github-src="charts/financial-chart/overview">
 </code-view>
 
@@ -61,7 +61,7 @@ _language: kr
 
 ## 필요한 모듈
 
-`XamFinancialChart`에는 다음 모듈이 필요합니다:
+`FinancialChart`에는 다음 모듈이 필요합니다:
 
 
 ```ts
@@ -95,7 +95,7 @@ IgcFinancialChartModule.register();
 ## 사용 방법
 금융 차트 모듈을 불러오기 한 후 다음 단계는 데이터에 바인딩합니다.
 
-`XamFinancialChart` 제어를 생성하려면 먼저 데이터를 바인딩해야 합니다. 다음의 코드 조작은 간단한 데이터 소스를 작성하는 방법을 보여줍니다.
+`FinancialChart` 제어를 생성하려면 먼저 데이터를 바인딩해야 합니다. 다음의 코드 조작은 간단한 데이터 소스를 작성하는 방법을 보여줍니다.
 
 ```ts
 let data = [

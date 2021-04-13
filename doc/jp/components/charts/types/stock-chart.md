@@ -2,7 +2,7 @@
 title: $PlatformShort$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Stock Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, インフラジスティックス
-mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 _language: ja
 ---
 # $PlatformShort$ 株価チャート
@@ -11,7 +11,7 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 
 ## $PlatformShort$ 株価チャートの例
 
-`XamFinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
+`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -298,11 +298,11 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 
 チャート タイプ       | コントロール名   | API メンバー
 -----------------|----------------|------------
-株価チャート      | `XamFinancialChart`     | `FinancialChart`
+株価チャート      | `FinancialChart`     | `FinancialChart`
 
 ## API メンバー
 - `ChartType`
 - `CrosshairsSnapToData`
 - `IndicatorTypes`
 - `ZoomSliderType`
-- `XamFinancialChart`
+- `FinancialChart`

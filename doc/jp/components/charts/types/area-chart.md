@@ -2,7 +2,7 @@
 title: $PlatformShort$ エリア チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ エリア チャート
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics, $PlatformShort$ チャート, エリア チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "ChartType"]
 _language: ja
 ---
 # $PlatformShort$ エリア チャート
@@ -13,7 +13,7 @@ $ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)
 
 ## $PlatformShort$ エリア チャートの例
 
-`XamCategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
+`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -55,7 +55,7 @@ $ProductName$ エリア チャートは、[折れ線チャート](line-chart.md)
 
 ## 単一シリーズの $PlatformShort$ エリア チャート
 
-$PlatformShort$ エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
+$PlatformShort$ エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 
 <code-view style="height: 600px"
@@ -68,7 +68,7 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 
 ## 複数シリーズの $PlatformShort$ エリア チャート
 
-複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコンポーネントに結合することもできます。これは、複数のデータ ソースを `XamCategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
+複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコンポーネントに結合することもできます。これは、複数のデータ ソースを `CategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
 
 
 <code-view style="height: 600px"
@@ -93,7 +93,7 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 
 ## $PlatformShort$ ステップ エリア チャート
 
-$ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
+$ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
 
 
 <code-view style="height: 600px"
@@ -228,8 +228,8 @@ $PlatformShort$ 極座標スプライン エリア チャートは[極座標チ�
 
 チャート タイプ               | コントロール名       | API メンバー
 -------------------------|--------------------|-----------------------
-エリア                     | `XamCategoryChart` | `ChartType` = `Area`
-ステップ エリア                | `XamCategoryChart` | `ChartType` = `StepArea`
+エリア                     | `CategoryChart` | `ChartType` = `Area`
+ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea`
 範囲エリア               | `XamDataChart`     | `RangeAreaSeries`
 ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries`
 極座標エリア               | `XamDataChart`     | `PolarAreaSeries`

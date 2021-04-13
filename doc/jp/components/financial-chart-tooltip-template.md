@@ -2,7 +2,7 @@
 title: $PlatformShort$ ファイナンシャル チャート | ツールチップ テンプレート | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャートのツールチップを使用して重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, tooltip templates, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, ツールチップ テンプレート, インフラジスティックス
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 _language: ja
 ---
 # $PlatformShort$ ツールチップ テンプレート
@@ -12,10 +12,10 @@ $PlatformShort$ Financial Chart コンポーネントは、シリーズの種類
 ## $PlatformShort$ ツールチップ テンプレートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-template" 
-           alt="$PlatformShort$ ツールチップ テンプレートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-template"
+           alt="$PlatformShort$ ツールチップ テンプレートの例"
            github-src="charts/financial-chart/tooltip-template">
 </code-view>
 

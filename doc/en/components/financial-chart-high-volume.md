@@ -2,7 +2,7 @@
 title: $PlatformShort$ Financial Chart | High Volume Data | Infragistics
 _description: Learn how to optimize the performance of the Infragistics' $PlatformShort$ financial chart control. Improve the $ProductName$graph's performance!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 ---
 # $PlatformShort$ Binding High Volume Data
 
@@ -10,10 +10,10 @@ The $PlatformShort$ financial chart component is capable of handling high volume
 
 ## $PlatformShort$ Binding High Volume Data Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume" 
-           alt="$PlatformShort$ Binding High Volume Data Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume"
+           alt="$PlatformShort$ Binding High Volume Data Example"
            github-src="charts/financial-chart/high-volume">
 </code-view>
 

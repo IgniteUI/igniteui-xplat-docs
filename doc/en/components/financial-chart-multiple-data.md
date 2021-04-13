@@ -2,7 +2,7 @@
 title: $PlatformShort$ Financial Chart | Binding Multiple Data Sources | Infragistics
 _description: Learn how Infragistics' $PlatformShort$ financial chart control can bind easily to multiple data sources. Check out $ProductName$ financial graph's tutorials!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, binding to data, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 ---
 # $PlatformShort$ Binding Multiple Sources
 
@@ -10,10 +10,10 @@ The $PlatformShort$ financial chart component can bind easily to multiple data s
 
 ## $PlatformShort$ Binding Multiple Sources Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
-           alt="$PlatformShort$ Binding Multiple Sources Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           alt="$PlatformShort$ Binding Multiple Sources Example"
            github-src="charts/financial-chart/multiple-data">
 </code-view>
 

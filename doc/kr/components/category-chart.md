@@ -3,7 +3,7 @@
 _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내는 데 가장 적합한 차트 유형을 분석하고 자동으로 선택합니다. 시각화를위한 차트 유형에 대해 알아보십시오.
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
-mentionedTypes: ['XamCategoryChart', 'CategoryChartType']
+mentionedTypes: ['CategoryChart', 'CategoryChartType']
 ---
 # $PlatformShort$ 카테고리 차트
 
@@ -12,9 +12,9 @@ mentionedTypes: ['XamCategoryChart', 'CategoryChartType']
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview"
            github-src="charts/category-chart/overview">
 </code-view>
 
@@ -47,7 +47,7 @@ mentionedTypes: ['XamCategoryChart', 'CategoryChartType']
 
 ## 필요한 모듈
 
-`XamCategoryChart`에는 다음 모듈이 필요합니다:
+`CategoryChart`에는 다음 모듈이 필요합니다:
 
 
 ```ts
