@@ -536,7 +536,8 @@
     "status": ""
   },
   {
-    "name": "Charts (OLD)",
+    "name": "Charts",
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "header": true,
     "exclude": ["Blazor", "Angular"]
   },
