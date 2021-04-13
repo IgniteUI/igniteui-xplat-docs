@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2020.1/'
+var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2020.2/'
 
 var mt = null;
 var ml = null;
