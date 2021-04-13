@@ -11,7 +11,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 
 ## $PlatformShort$ 積層型チャート タイプ
 
-The following example, you can use the drop-down to switch between all of the different types stacked charts available in the $PlatformShort$ `XamDataChart` control.
+次の例では、ドロップダウンを使用して、$PlatformShort$ `XamDataChart` コントロールで使用可能なさまざまなタイプの積層型チャートをすべて切り替えることができます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

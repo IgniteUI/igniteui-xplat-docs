@@ -11,16 +11,16 @@ $PlatformShort$ 極座標チャートは、デカルト (x、y) 座標系の代�
 
 極座標チャートでは、データの不均等な散らばりやデータの塊に注意が向けられます。これらは、科学データのプロットによく用いられ（たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差を強調表示できます。
 
-## $PlatformShort$ Polar Marker Chart
+## $PlatformShort$ 極座標型マーカー チャート
 
-The Polar Marker Chart renders using a collection of markers representing data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Marker Chart](scatter-chart.md#Scatter-Marker-Chart) with the difference that the visualization wraps data points around a circle rather than stretching them along a horizontal line.
+極座標型マーカー チャートは、極座標 (角度、半径) でデータ ポイントを表すマーカーのコレクションを使用して描画します。このチャートは、[散布マーカー チャート](scatter-chart.md#散布マーカー-チャート)と同じデータ プロットの概念を使用していますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りに折り返される点が異なります。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarScatterSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarScatterSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-scatter-series"
-           alt="$PlatformShort$ Polar Marker Chart" >
+           alt="$PlatformShort$ 極座標型マーカー チャート" >
 </code-view>
 
 <div class="divider--half"></div>

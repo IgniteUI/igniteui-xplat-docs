@@ -26,7 +26,7 @@ $PlatformName$ チャート コンポーネントを使用すると、マウス�
 
 ## ユーザー インタラクションによるチャート ナビゲーション
 
-Zooming is on by default on the chart. In order to disable navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart to false, depending on the direction that you wish to disable zooming.
+チャートでは、ズームはデフォルトでオンになっています。UI でナビゲーションを無効にするには、ズームを無効にする方向に応じて、チャートの `IsHorizontalZoomEnabled` プロパティまたは `IsVerticalZoomEnabled` プロパティのいずれかを false に設定する必要があります。
 
 またマウスやタッチでズームまたはパンニングできます。チャートの `DefaultInteraction` プロパティは、マウスクリック イベントやタッチ イベントで何が起こるかを決定します。このプロパティはデフォルトで `DragZoom` に設定されており、ズームを有効に設定すると、クリックしてドラッグした際にプロット領域の上に四角形のプレビューが配置され、グラフのズーム領域になります。この `DefaultInteraction` プロパティは、パンニングを許可する場合は `DragPan`、これらの操作を禁止する場合は `None` に設定することもできます。
 

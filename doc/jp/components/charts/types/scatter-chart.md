@@ -7,13 +7,13 @@ _language: ja
 ---
 # $PlatformShort$ 散布図
 
-$PlatformShort$ Scatter Charts are a group of charts that show the relationship among items in distinct series of data or to plot data items using numeric x and y coordinates.このチャートは、データの不均等な散らばりやデータの塊に注意が向けられます。科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。また、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
+$PlatformShort$ 散布図は、異なる一連のデータ内の項目間の関係を示したり、数値の x 座標と y 座標を使用してデータ項目をプロットしたりするチャートのグループです。このチャートは、データの不均等な散らばりやデータの塊に注意が向けられます。科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。また、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
 
 ## $PlatformShort$ 散布マーカー チャート
 
-$PlatformShort$ Scatter Marker Chart renders as a collection of markers, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
+$PlatformShort$ 散布図は、マーカーのコレクションとして描画されます。各マーカーには、デカルト座標系での位置を決定する 1 対の数値 X/Y 値があります。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

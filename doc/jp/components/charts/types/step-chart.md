@@ -7,7 +7,7 @@ _language: ja
 ---
 # $PlatformShort$ ステップ チャート
 
-$PlatformShort$ Step Chart belongs to a group of Category Series and it is rendered using a collection of points connected by continuous vertical and horizontal lines. For Step Area Chart, the area below lines are filled in. Values are represented on the y-axis and categories are displayed on the x-axis. This emphasizes the amount of change over a period of time or compares multiple items.
+$PlatformShort$ ステップ チャートはカテゴリ シリーズのグループに属し、連続した垂直線と水平線で接続されたポイントのコレクションを使用して描画されます。ステップ エリア チャートの場合、線の下の領域が塗りつぶされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。これは、一定期間の変化量を強調したり、複数の項目を比較したりします。
 
 ## $PlatformShort$ ステップ チャートの例
 

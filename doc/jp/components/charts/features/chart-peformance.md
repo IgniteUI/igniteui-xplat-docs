@@ -26,13 +26,13 @@ $PlatformShort$ チャートは、数百万のデータ ポイントを描画し
 
 このセクションでは、$PlatformShort$ チャートのオーバーヘッドと処理の更新に追加されるガイドラインとチャート機能を一覧表示します。
 
-### Data Size
+### データ サイズ
 
-If you need to plot data sources with large number of data points (e.g. 10,000+), we recommend using $PlatformShort$ `XamDataChart` with one of the following type of series which where designed for specially for that purpose.
+多数のデータ ポイント (10,000 以上など) を含むデータ ソースをプロットする必要がある場合は、その目的のために特別にデザインされた次のタイプのシリーズのいずれかで $PlatformShort$ `XamDataChart` を使用することをお勧めします。
 
-- [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart) instead of [Category Point Chart](../types/point-chart.md#$PlatformShort$-Category-Point-chart) or [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart)
-- [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart) instead of [Category Line Chart](../types/line-chart.md#$PlatformShort$-Category-Line-chart) or [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart)
-- [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) instead of [Category Area Chart](../types/area-chart.md#$PlatformShort$-Category-Area-chart) or [Column Chart](../types/column-chart.md#$PlatformShort$-Column-chart)
+- [カテゴリ ポイント チャート](../types/point-chart.md#$PlatformShort$-Category-Point-chart)や[散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart)の代わりに[散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart) 
+- [カテゴリ折れ線チャート](../types/line-chart.md#$PlatformShort$-Category-Line-chart)や[散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart)の代わりに[散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart)
+- [カテゴリ エリア チャート](../types/area-chart.md#$PlatformShort$-Category-Area-chart)や[縦棒チャート](../types/column-chart.md#$PlatformShort$-Column-chart)の代わりに[散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) 
 
 ### データ構造
 
@@ -114,7 +114,7 @@ export class MultiDataSources {
 
 ### データ フィルタリング
 
-$PlatformShort$ `XamCategoryChart` and the `XamFinancialChart` controls have built-in data adapter that analyzes your data and generates chart series for you. However, it works faster if you use `IncludedProperties` and `ExcludedProperties` to filter only those data columns that you actually want to render. For example,
+$PlatformShort$ `XamCategoryChart` および `XamFinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
 
 
 ```razor
@@ -130,26 +130,26 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### チャート タイプ
 
-[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$PlatformShort$ `XamCategoryChart` の `ChartType` プロパティまたは `XamFinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
+[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$PlatformShort$ `XamCategoryChart` の `ChartType` プロパティまたは `XamFinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、$PlatformShort$ `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
 
-The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
+次の表に、チャートの各グループで、パフォーマンスが速いものから遅いものの順にチャートのタイプを示します。
 
 チャート グループ     | チャート タイプ
 ----------------|---------------------------------
 円チャート       | - [円チャート](../types/pie-chart.md) <br> - [ドーナツ チャート](../types/donut-chart.md) <br> - [ラジアル円チャート](../types/radial-chart.md#$PlatformShort$-Radial-Pie-chart) <br>
 折れ線チャート      | - [カテゴリ折れ線チャート](../types/line-chart.md#$PlatformShort$-Category-Line-chart) <br> - [カテゴリ スプライン チャート](../types/spline-chart.md#$PlatformShort$-Category-Spline-chart) <br> - [ステップ折れ線チャート](../types/shape-chart.md#$PlatformShort$-Step-Line-chart) <br> - [ラジアル折れ線チャート](../types/radial-chart.md#$PlatformShort$-Radial-Line-chart) <br> - [極座標折れ線チャート](../types/polar-chart.md#$PlatformShort$-Polar-Line-chart) <br> - [散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart) <br> - [散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart) (\*)  <br> - [散布等高線チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Contour-chart) <br> - [積層型折れ線チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Line-chart) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Line-chart) <br>
 エリア チャート      | - [カテゴリ エリア チャート](../types/area-chart.md#$PlatformShort$-Category-Area-chart) <br> - [ステップ エリア チャート](../types/shape-chart.md#$PlatformShort$-Step-Area-chart) <br> - [範囲エリア チャート](../types/area-chart.md#$PlatformShort$-Range-Area-chart) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$PlatformShort$-Radial-Area-chart) <br> - [極座標エリア チャート](../types/polar-chart.md#$PlatformShort$-Polar-Area-chart) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) (\*) <br> - [散布エリア チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Area-chart) <br> - [積層型エリア チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Area-chart) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Area-chart) <br>
-縦棒チャート    | - [縦棒チャート](../types/column-chart.md#$PlatformShort$-Column-chart) <br> - [棒チャート](../types/column-chart.md#$PlatformShort$-Bar-chart) <br> - [[ウォーターフォール チャート](../types/column-chart.md#$PlatformShort$-Waterfall-chart) <br> - [範囲縦棒チャート](../types/column-chart.md#$PlatformShort$-Range-Column-chart) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$PlatformShort$-Radial-Column-chart) <br> - [積層型縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Column-chart) <br> - [積層型棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Bar-chart) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Column-chart) <br> - [積層型 100% 棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Bar-chart)
+縦棒チャート    | - [縦棒チャート](../types/column-chart.md#$PlatformShort$-Column-chart) <br> - [棒チャート](../types/column-chart.md#$PlatformShort$-Bar-chart) <br> - [ウォーターフォール チャート](../types/column-chart.md#$PlatformShort$-Waterfall-chart) <br> - [範囲縦棒チャート](../types/column-chart.md#$PlatformShort$-Range-Column-chart) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$PlatformShort$-Radial-Column-chart) <br> - [積層型縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Column-chart) <br> - [積層型棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Bar-chart) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Column-chart) <br> - [積層型 100% 棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Bar-chart)
 スプライン チャート    | - [カテゴリ スプライン チャート](../types/spline-chart.md#$PlatformShort$-Category-Spline-chart) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$PlatformShort$-Polar-Spline-chart) <br> - [散布スプライン チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Spline-chart) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Spline-chart) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Spline-chart) <br>
 ポイント チャート     | - [カテゴリ ポイント チャート](../types/point-chart.md#$PlatformShort$-Category-Point-chart) <br> - [散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart)  <br> - [散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [極座標型マーカー チャート](../types/polar-chart.md#$PlatformShort$-Polar-Marker-chart) <br>
-ファイナンシャル チャート | - [Stock Chart in Line Mode](../types/stock-chart.md) <br> - [Stock Chart in Column Mode](../types/stock-chart.md) <br> - [Stock Chart in Bar Mode](../types/stock-chart.md) <br> - [Stock Chart in Candle Mode](../types/stock-chart.md) <br> - [Stock Chart with Overlays](../types/stock-chart.md) <br> - [Stock Chart with Zoom Pane](../types/stock-chart.md) <br> - [Stock Chart with Volume Pane](../types/stock-chart.md#Volume-Pane) <br> - [Stock Chart with Indicator Pane](../types/stock-chart.md#Indicator-Pane) <br>
+ファイナンシャル チャート | - [折れ線モードの株価チャート](../types/stock-chart.md) <br> - [縦棒モードの株価チャート](../types/stock-chart.md) <br> - [棒モードの株価チャート](../types/stock-chart.md) <br> - [ローソク足モードの株価チャート](../types/stock-chart.md) <br> - [オーバーレイ付き株価チャート](../types/stock-chart.md) <br> - [ズーム ペイン付き株価チャート](../types/stock-chart.md) <br> - [ボリューム ペイン付き株価チャート](../types/stock-chart.md#Volume-Pane) <br> - [インジケーター ペイン付き株価チャート](../types/stock-chart.md#Indicator-Pane) <br>
 散布図   | - [散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-scatter-High-Density-chart) <br> - [散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Line-chart) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [散布スプライン チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Spline-chart) <br> - [散布エリア チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Area-chart) <br> - [散布等高線チャート](../types/scatter-chart.md#$PlatformShort$-scatter-Contour-chart) <br> - [散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polyline-chart) (\*) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-scatter-Polygon-chart) (\*) <br>
 ラジアル チャート    | - [ラジアル折れ線チャート](../types/radial-chart.md#$PlatformShort$-Radial-Line-chart) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$PlatformShort$-Radial-Area-chart) <br> - [ラジアル円チャート](../types/radial-chart.md#$PlatformShort$-Radial-Pie-chart) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$PlatformShort$-Radial-Column-chart) <br>
 極座標チャート     | - [極座標型マーカー チャート](../types/polar-chart.md#$PlatformShort$-Polar-Marker-chart) <br> - [極座標折れ線チャート](../types/polar-chart.md#$PlatformShort$-Polar-Line-chart) <br> - [極座標エリア チャート](../types/polar-chart.md#$PlatformShort$-Polar-Area-chart) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$PlatformShort$-Polar-Spline-chart) <br> - [極座標スプライン エリア チャート](../types/polar-chart.md#$PlatformShort$-Polar-Spline-Area-chart) <br>
 積層型チャート   | - [積層型折れ線チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Line-chart) <br> - [積層型エリア チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Area-chart) <br> - [積層型縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Column-chart) <br> - [積層型棒チャート](stacked-chart.md#$PlatformShort$-Stacked-Bar-chart) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-Spline-chart) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Line-chart) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Area-chart) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Column-chart) <br> - [積層型 100% 棒チャート](stacked-chart.md#$PlatformShort$-Stacked-100%-Bar-chart) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$PlatformShort$-Stacked-100%-Spline-chart) <br>
 
 
-\* Note that the [Scatter Polygon Chart](../types/shape-chart.md) and [Scatter Polyline Chart](../types/shape-chart.md) have better performance than rest of charts if you have a lot of data sources bound to the chart. For more info, see [Series Collection](#Series-Collection) section. Otherwise, other chart types are faster.
+\* チャートに多数のデータ ソースがバインドされている場合、[散布ポリゴン チャート](../types/shape-chart.md)と[散布ポリライン チャート](../types/shape-chart.md)のパフォーマンスは他のチャートよりも優れていることに注意してください。詳細については、[シリーズ コレクション](#シリーズ-コレクション)セクションを参照してください。それ以外の場合は、他のチャートのタイプの方が高速です。
 
 ### チャート アニメーション
 
@@ -165,7 +165,7 @@ The following table lists chart types in order from the fastest performance to s
 
 ### チャート凡例
 
-Adding a legend to the $ProductShort$ charts might decrease performance if titles of series or data items mapped to legend are changing often at runtime.
+凡例を $ProductShort$ チャートに追加すると、凡例にマップされたシリーズまたはデータ項目のタイトルが実行時に頻繁に変更される場合、パフォーマンスが低下する可能性があります。
 
 ### チャート マーカー
 
@@ -412,7 +412,7 @@ this.LineSeries.Resolution = 10;
 
 ## ファイナンシャル チャートのパフォーマンス
 
-In addition to above performance guidelines, the $ProductShort$ `XamFinancialChart` control has the following unique features that affect performance.
+上記のパフォーマンスガイドラインに加えて、$ProductShort$ `XamFinancialChart` コントロールには、パフォーマンスに影響を与える次の独自の機能があります。
 
 ### Y 軸モード
 
@@ -435,28 +435,28 @@ In addition to above performance guidelines, the $ProductShort$ `XamFinancialCha
 * `Area` - `Line` ボリューム タイプより描画に手間がかかります。
 * `Column` - `Area` ボリューム タイプより描画に手間がかかります。1 つ ～ 3 つの株のボリューム データを描画する場合にお勧めします。
 
-## Performance in Data Chart
+## データ チャートのパフォーマンス
 
-In addition to the general performance guidelines, the $ProductShort$ `XamDataChart` control has the following unique features that affect performance.
+一般的なパフォーマンス ガイドラインに加えて、$ProductShort$ `XamDataChart` コントロールには、パフォーマンスに影響を与える次の固有の機能があります。
 
-### Axes Collection
+### 軸コレクション
 
-Adding too many axis to the `Axes` collection of the `XamDataChart` control will decrease chart performance and we recommend [Sharing Axes](chart-axis-layouts.md#axis-sharing-example) between series.
+`XamDataChart` コントロールの `Axes` コレクションに追加する軸が多すぎると、チャートのパフォーマンスが低下するため、シリーズ間で[軸の共有](chart-axis-layouts.md＃axis-sharing-example)をお勧めします。
 
-### Series Collection
+### シリーズ コレクション
 
-Also, adding a lot of series to the `Series` collection of the $PlatformShort$ `XamDataChart` control will add overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 10 series in the Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
+また、$PlatformShort$ `XamDataChart` コントロールの `Series` コレクションに多くのシリーズを追加すると、各シリーズに独自の描画キャンバスがあるため、描画にオーバーヘッドが追加されます。これは、データ チャートに 10 を超えるシリーズがある場合に特に重要です。複数のデータ ソースを組み合わせてフラット化したデータ ソースにし ([データ構造](#データ-構造)セクションを参照)、次のシリーズの条件付き書式設定機能を使用することをお勧めします。
 
-Slower Performance Scenario | Faster Scenario with Conditional Styling
+パフォーマンスが低下するシナリオ | 条件付き書式設定を使用したより高速なシナリオ
 ----------------------------|----------------------------------------
-10+ of `LineSeries`         | Single `ScatterLineSeries`
-20+ of `LineSeries`         | Single `ScatterPolylineSeries`
-10+ of `ScatterLineSeries`  | Single `ScatterPolylineSeries`
-10+ of `PointSeries`        | Single `ScatterSeries`
-20+ of `PointSeries`        | Single `HighDensityScatterSeries`
-20+ of `ScatterSeries`      | Single `HighDensityScatterSeries`
-10+ of `AreaSeries`         | Single `ScatterPolygonSeries`
-10+ of `ColumnSeries`       | Single `ScatterPolygonSeries`
+`LineSeries` の 10 以上        | 単一の `ScatterLineSeries`
+`LineSeries` の 20 以上           | 単一の `ScatterPolylineSeries`
+`ScatterLineSeries` の 10 以上  | 単一の `ScatterPolylineSeries`
+`PointSeries` の 10 以上       | 単一の `ScatterSeries`
+`PointSeries` の 20 以上       | 単一の `HighDensityScatterSeries`
+`ScatterSeries` の 20 以上     | 単一の `HighDensityScatterSeries`
+`AreaSeries` の 10 以上        | 単一の `ScatterPolygonSeries`
+`ColumnSeries` の 10 以上      | 単一の `ScatterPolygonSeries`
 
 
 ## その他のリソース
