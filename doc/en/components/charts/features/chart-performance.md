@@ -143,6 +143,8 @@ this.Chart.includedProperties = [ "Year", "USA", "RUS" ];
 this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 ```
 
+## Chart Performance Guidelines
+
 ### Chart Types
 
 Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $PlatformShort$ `XamCategoryChart` or the `XamFinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
