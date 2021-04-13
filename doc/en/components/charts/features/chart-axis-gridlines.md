@@ -81,9 +81,9 @@ The following example demonstrates how to customize the tickmarks by setting the
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Axis Tickmarks Properites
+## $PlatformShort$ Axis Tickmarks Properties
 
-You can customize how the axis tickmarks are displayed in our $PlatformShor$ chats by setting the following properties:
+You can customize how the axis tickmarks are displayed in our $PlatformShort$ chats by setting the following properties:
 
 Axis Visuals           | Type    | Property Names                                             | Description
 -----------------------|---------|------------------------------------------------------------|-------------------------
