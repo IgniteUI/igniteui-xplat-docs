@@ -2,7 +2,7 @@
 title: $PlatformShort$ Bubble Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Bubble Chart
 _keywords: $PlatformShort$ Charts, Bubble Chart, Infragistics
-mentionedTypes: ["XamDataChart", "BubbleSeries", "ScatterSeries"]
+mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
 ---
 # $PlatformShort$ Bubble Chart
 
