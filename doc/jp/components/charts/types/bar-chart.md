@@ -7,11 +7,11 @@ _language: ja
 ---
 # $PlatformShort$ 棒チャート
 
-$ProductName$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ高さで長さが異なる水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down).
+$ProductName$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ高さで長さが異なる水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。棒チャートは[縦棒チャート](column-chart.md)と非常によく似ていますが、棒チャートは時計回りに 90 度回転して描画されるため、向きが水平方向 (左から右) であり、[縦棒チャート](column-chart.md)は垂直方向 (上下) です。
 
 ## $PlatformShort$ 棒チャートの例
 
-The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
+$ProductName$ カテゴリ棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、水平の棒または長方形として描画します。値は X 軸に表示され、カテゴリは Y 軸に表示されます。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データ ソースを複数の `BarSeries` にバインドします:
 

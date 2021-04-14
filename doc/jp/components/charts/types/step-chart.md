@@ -11,7 +11,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 
 ## $PlatformShort$ ステップ エリア チャート
 
-You can create $PlatformShort$ Step Area Chart in the `XamCategoryChart` control by setting `ChartType` property to `StepArea` value, as shown in the example below.
+次の例に示すように、`ChartType` プロパティを `StepArea` 値に設定することにより、`XamCategoryChart` コントロールで $PlatformShort$ ステップ エリア チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,9 +23,9 @@ You can create $PlatformShort$ Step Area Chart in the `XamCategoryChart` control
 
 ## $PlatformShort$ ステップ折れ線チャート
 
-The $PlatformShort$ Step Line Chart is very similar to Step Area Chart, except that the area below lines are filled in.
+$PlatformShort$ ステップ折れ線チャートは、線の下の領域が塗りつぶされていないことを除いて、ステップ エリア チャートと非常によく似ています。
 
-You can create Step Line Chart in the `XamCategoryChart` control by binding your data and setting `ChartType` property to `StepLine` value, as shown in the example below.
+次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`XamCategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

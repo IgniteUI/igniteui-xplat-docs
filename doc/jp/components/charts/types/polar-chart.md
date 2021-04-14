@@ -11,11 +11,11 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 極座標チャートでは、データの不均等な散らばりやデータの塊に注意が向けられます。これらは、科学データのプロットによく用いられ（たとえば風向きや風速、地場の方向と強さ、ソーラー システムの機材の場所など)、予測結果からの収集データの偏差を強調表示できます。
 
-## $PlatformShort$ Polar Area Chart
+## $PlatformShort$ 極座標エリア チャート
 
-The Polar Area Chart renders using a collection of polygons connecting data points and it uses the same concepts of data plotting as the [Category Area Chart](area-chart.md#$PlatformShort$-area-chart-example) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally.
+極座標型エリア チャートは、データ ポイントを接続するポリゴンのコレクションを使用してレ描画され、[カテゴリ エリア チャート](area-chart.md#$PlatformShort$-エリア-チャートの例)と同じデータ プロットの概念を使用しますが、 視覚化によってデータ ポイントが水平線に沿って配置されるのではなく、円の周りに配置される点が異なります。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarAreaSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,11 +25,11 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Polar Spline Area Chart
+## $PlatformShort$ 極座標スプライン エリア チャート
 
-The Polar Spline Area Chart renders also as a collection of polygons but they have curved splines connecting data points instead of straight lines like [Polar Area Chart](polar-chart.md#$PlatformShort$-polar-area-chart) does.
+極座標スプライン エリア チャートもポリゴンのコレクションとして描画されますが、[極座標エリア チャート](polar-chart.md#$PlatformShort$-極座標エリア-チャート)のように直線ではなく、データ ポイントを接続する曲線スプラインを使用します。
 
-You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarAreaSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

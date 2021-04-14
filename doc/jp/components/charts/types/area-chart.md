@@ -91,9 +91,9 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 
 <div class="divider--half"></div>
 
-## Advanced Types of Area Charts
+## 高度なタイプのエリア チャート
 
-The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
 
 ## $PlatformShort$ ステップ エリア チャート
 
@@ -108,9 +108,9 @@ $ProductName$ ステップ エリア チャートはカテゴリ チャートの
 
 <div class="divider--half"></div>
 
-## Advanced Types of Area Charts
+## 高度なタイプのエリア チャート
 
-The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
 
 ## $PlatformShort$ 範囲エリア チャート
 

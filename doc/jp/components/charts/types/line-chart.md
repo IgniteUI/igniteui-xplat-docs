@@ -130,9 +130,9 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 <div class="divider--half"></div>
 
-## Advanced Types of Line Charts
+## 高度なタイプの折れ線チャート
 
-The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ 折れ線チャートについて説明します。
 
 ## $PlatformShort$ 積層型折れ線チャート
 

@@ -259,11 +259,11 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 ### リアルタイムの高パフォーマンスなチャート
 
-ライブのストリーミング データを使用して、ミリ秒レベルの更新で数千のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#$PlatformShort$-Chart-with-High-Frequency) topic.
+ライブのストリーミング データを使用して、ミリ秒レベルの更新で数千のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。デモについては、[高頻度のチャート](features/chart-performance.md#高頻度-$PlatformShort$-チャート)トピックを参照してください。
 
 ### 大量のデータ処理
 
-Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#$PlatformShort$-Chart-with-High-Volume) topic.
+[チャート パフォーマンス](features/chart-performance.md)を最適化して、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにスムーズなパフォーマンスを提供し続けながら、数百万のデータ ポイントを描画します。デモについては、[大量データのチャート](features/chart-performance.md#大量データの-$PlatformShort$-チャート)トピックを参照してください。
 
 ### モジュラー デザイン
 

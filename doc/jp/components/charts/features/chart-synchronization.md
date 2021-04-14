@@ -11,7 +11,7 @@ $ ProductName$ データ チャートを使用すると、複数のチャート�
 
 ## $PlatformShort$ チャート同期化の例
 
-This sample shows synchronization of two $PlatformShort$ data charts:
+このサンプルは、2 つの $PlatformShort$ データ チャートの同期を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

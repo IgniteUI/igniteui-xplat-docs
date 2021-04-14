@@ -12,28 +12,28 @@ $PlatformShort$ チャートは、数百万のデータ ポイントを描画し
 
 ## $PlatformShort$ チャート パフォーマンスの例
 
-The following examples demonstrates two high performance scenarios of $PlatformShort$ charts.
+次の例は、$PlatformShort$ チャートの 2 つの高性能シナリオを示しています。
 
-## $PlatformShort$ Chart with High-Frequency
+## 高頻度 $PlatformShort$ チャート
 
-In High-Frequency scenario, the $PlatformShort$ Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `XamCategoryChart` in High-Frequency scenario.
+高頻度シナリオでは、$PlatformShort$ チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `XamCategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="$PlatformShort$ Chart with High-Frequency" >
+           alt="高頻度 $PlatformShort$ チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Chart with High-Volume
+## 大量のデータの $PlatformShort$ チャート
 
-In High-Volume scenario, the $PlatformShort$ Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `XamCategoryChart` in High-Volume scenario.
+大量データのシナリオでは、$PlatformShort$ チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `XamCategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           alt="$PlatformShort$ Chart with High-Volume" >
+           alt="大量のデータの $PlatformShort$ チャート" >
 </code-view>
 
 <div class="divider--half"></div>

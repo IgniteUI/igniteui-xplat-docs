@@ -25,9 +25,9 @@ $ProductName$ マーカーは、カテゴリ チャートのプロット領域�
 
 <div class="divider--half"></div>
 
-# $PlatformShort$ チャート マーカーのテンプレート
+# $PlatformShort$ チャート マーカー テンプレート
 
-In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `XamCategoryChart` control as it is demonstrated in example below.
+以下の例に示すように、マーカー プロパティに加えて、`XamCategoryChart` コントロールで描画されたシリーズの `MarkerTemplate` プロパティに関数を設定することで、独自のマーカーを実装できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -7,13 +7,13 @@ _language: ja
 ---
 # $PlatformShort$ 縦棒チャート
 
-The $ProductName$ Column Chart, Column Graph, or Vertical Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by columns with equal widths but different heights. These columns extend from the bottom to top of the chart towards the values of data points.このチャートは、ある一定の期間に対する量の変化を強調したり、複数のデータを比較したりします。Column Chart is very similar to [Bar Chart](bar-chart.md) except that Column Chart renders in vertical orientation (up and down) while [Bar Chart](bar-chart.md) has horizontal orientation (left to right) or 90 degrees clockwise rotation.
+$ProductName$ 縦棒チャート、縦棒グラフ、または垂直棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、幅は同じで高さが異なる縦棒でエンコードされたデータによってすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらの縦棒は、チャートの下から上へデータ ポイント値に向かって伸びています。縦棒チャートは[棒チャート](bar-chart.md)と非常によく似ていますが、縦棒チャートは垂直方向 (上下) で描画され、[棒チャート](bar-chart.md)は水平方向 (左から右) または時計回りに 90 度回転します。
 
 ## $PlatformShort$ 縦棒チャートの例
 
-The $ProductName$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
+$ProductName$ カテゴリ縦棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、それらを縦棒または長方形として描画します。値は Y 軸に表示され、カテゴリは X 軸に表示されます。
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting `ChartType` to Column enum, as shown in the example below:
+次の例に示すように、データをバインドし、`ChartType` をColumn列挙型に設定することで、`XamCategoryChart` コントロールでこのタイプのチャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -91,9 +91,9 @@ $PlatformShort$ 縦棒チャートには、外観のスタイル設定と変更�
 
 <div class="divider--half"></div>
 
-## Advanced Types of Column Charts
+## 高度なタイプの縦棒チャート
 
-The following sections explain more advanced types of $PlatformShort$ Column Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ 縦棒チャートについて説明します。
 
 
 ## $PlatformShort$ ウォーターフォール チャート

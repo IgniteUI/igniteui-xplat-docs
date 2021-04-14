@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ チャート凡例 | データ可視化ツール | インフラジスティックス
-_description: Use Infragistics $ProductName$ chart with legends in horizontal or vertical orientation!
+_description: 水平方向または垂直方向の凡例を含むインフラジスティックスの $ProductName$ チャートをお試しください!
 _keywords: $PlatformShort$ charts, chart legend, legend, legend types, $ProductName$, Infragistics, $PlatformShort$ チャート, チャート凡例, 凡例, 凡例タイプ, インフラジスティックス
 mentionedTypes: ["XamDataChart", "Legend"]
 namespace: Infragistics.Controls.Charts

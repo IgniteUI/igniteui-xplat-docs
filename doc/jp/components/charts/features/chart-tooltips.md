@@ -29,32 +29,32 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Chart Tooltip Template
+## $PlatformShort$ チャート ツールチップ テンプレート
 
-If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $PlatformShort$ charts.
+組み込みタイプのツールチップがいずれも要件に一致しない場合は、独自のツールチップを作成して、シリーズ タイトル、データ値、および軸値を表示およびスタイル設定できます。次のセクションでは、さまざまなタイプの $PlatformShort$ チャートでこれを行う方法を示します。
 
-## Custom Tooltips in Category Chart
+## カテゴリ チャートのカスタム ツールチップ
 
-This example shows how to create custom tooltips for all series in $PlatformShort$ Category Chart control.
+この例は、$PlatformShort$ カテゴリ チャート コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
-           alt="$PlatformShort$ Tooltip Template"
+           alt="$PlatformShort$ ツールチップ テンプレート"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## Custom Tooltips in Data Chart
+## データ チャートのカスタム ツールチップ
 
-This example shows how to create custom tooltips for each series in $PlatformShort$ Data Chart control.
+この例は、$PlatformShort$ データ チャート コントロールで各シリーズのカスタム ツールチップを作成する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
-           alt="$PlatformShort$ Tooltip Template"
+           alt="$PlatformShort$ ツールチップ テンプレート"
            github-src="charts/data-chart/tooltip-template">
 </code-view>
 
