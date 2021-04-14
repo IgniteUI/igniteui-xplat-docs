@@ -157,3 +157,55 @@ public render(): JSX.Element {
     }
 }
 ```
+
+### Editing
+
+The following example demonstrates how to enable editing in the `DatePicker`.
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker Example"
+           github-src="editors/date-picker/editing">
+</code-view>
+
+<div class="divider--half"></div>
+
+### Date Limits
+
+The following example demonstrates how to restrict selected dates in the `DatePicker`.
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker Example"
+           github-src="editors/date-picker/date-limits">
+</code-view>
+
+<div class="divider--half"></div>
+
+### Date Formats
+
+The following example demonstrates how apply a long date in the `DatePicker`.
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker Example"
+           github-src="editors/date-picker/format">
+</code-view>
+
+<div class="divider--half"></div>
+
+### Date Ranges
+
+The following example demonstrates how combine multiple `DatePicker` controls. 
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker Example"
+           github-src="editors/date-picker/range">
+</code-view>
+
+<div class="divider--half"></div>
