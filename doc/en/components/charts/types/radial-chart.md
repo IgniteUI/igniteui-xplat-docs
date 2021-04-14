@@ -98,7 +98,7 @@ The following table lists API members mentioned in the above sections:
 - `RadialColumnSeries`
 - `RadialLineSeries`
 - `RadialPieSeries`
-- `ItemsSource`
+- `DataSource`
 - `AngleAxisName`
 - `ValueAxisName`
 - `ValueMemberPath`

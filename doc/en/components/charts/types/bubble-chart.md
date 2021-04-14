@@ -22,7 +22,7 @@ You can create the Bubble Chart in `XamDataChart` control using the `BubbleSerie
 
 ## $PlatformShort$ Bubble Chart with Single Series
 
-You can bind your data to `ItemsSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
+You can bind your data to `DataSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -34,7 +34,7 @@ You can bind your data to `ItemsSource` property of `BubbleSeries` and map data 
 
 ## $PlatformShort$ Bubble Chart with Multiple Series
 
-In $PlatformShort$ Bubble Chart, binding multiple data sources works by setting each new data source to `ItemsSource` property of a additional `BubbleSeries`, as shown in the example below:
+In $PlatformShort$ Bubble Chart, binding multiple data sources works by setting each new data source to `DataSource` property of a additional `BubbleSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -69,7 +69,7 @@ The following table lists API members mentioned in the above sections:
 - `XamDataChart`
 - `BubbleSeries`
 - `ScatterSeries`
-- `ItemsSource`
+- `DataSource`
 - `FillMemberPath`
 - `FillScale`
 - `MarkerType`
