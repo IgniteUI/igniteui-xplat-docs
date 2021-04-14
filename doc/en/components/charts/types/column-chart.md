@@ -10,7 +10,7 @@ The $ProductName$ Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 ## $PlatformShort$ Column Chart Example
 
-The $ProductName$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
+The $PlatformShort$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to Column enum, as shown in the example below:
 
@@ -140,7 +140,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Range Column Chart
 
-The $ProductName$ Range Column Chart belongs to a group of range charts and is rendered using vertical rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the bottom like the traditional [Category Column Chart](column-chart.md#$PlatformShort$-column-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the Y-Axis and categories are displayed on the X-Axis.
+The $PlatformShort$ Range Column Chart belongs to a group of range charts and is rendered using vertical rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the bottom like the traditional [Category Column Chart](column-chart.md#$PlatformShort$-column-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the Y-Axis and categories are displayed on the X-Axis.
 
 The Range Column Chart is identical to the [Range Area Chart](area-chart.md)(area-chart.md#$PlatformShort$-Range-Area-chart) in all aspects except that the ranges are represented as a set of vertical columns rather than a filled area.
 

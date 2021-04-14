@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 
 # $PlatformShort$ Chart Overlays
 
-The $ProductName$ data chart allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
+The $PlatformShort$ `XamDataChart` allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
 
 ## $PlatformShort$ Value Overlay Example
 
@@ -37,7 +37,7 @@ It is also possible to show an axis annotation on a `ValueOverlay` to show the v
 
 ## $PlatformShort$ Financial Overlays
 
-You can also plot built-in financial overlays and indicators in $ProductName$ [Stock Chart](../types/stock-chart.md).
+You can also plot built-in financial overlays and indicators in $PlatformShort$ [Stock Chart](../types/stock-chart.md).
 
 ## Additional Resources
 

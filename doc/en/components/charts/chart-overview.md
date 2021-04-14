@@ -217,7 +217,7 @@ The $PlatformShort$ Spline Chart, or Spline Graph is a type of category line gra
 
 ### $PlatformShort$ Step Chart
 
-A Step Line Chart, or Step Line Graph, is a category charts that renders a collection of data points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the Y-Axis (left labels) and categories are displayed on the X-Axis (bottom labels). The $PlatformShort$ Step Line chart emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ Step Line chart is identical to the $PlatformShort$ step area chart in all aspects except that the area below the step lines is not filled in. Learn more about our [step chart](types/step-chart.md)
+The $PlatformShort$ Step Chart, or Step Graph, is a category charts that renders a collection of data points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the Y-Axis (left labels) and categories are displayed on the X-Axis (bottom labels). The $PlatformShort$ Step Line chart emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ Step Line chart is identical to the $PlatformShort$ Step Area Chart in all aspects except that the area below the step lines is not filled in. Learn more about our [step chart](types/step-chart.md)
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -233,7 +233,7 @@ A Time-Series Chart, or Timeline Graph, is a visualization that treats the data 
 
 ### $PlatformShort$ Treemap
 
-The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node's rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data. Learn more about our [treemaps](../treemap-overview.md).
+The $PlatformShort$ Treemap displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node's rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data. Learn more about our [treemaps](../treemap-overview.md).
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

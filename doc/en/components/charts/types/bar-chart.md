@@ -10,7 +10,7 @@ The $ProductName$ Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the mo
 
 ## $PlatformShort$ Bar Chart Example
 
-The $ProductName$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
+The $PlatformShort$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
 You can create this type of chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
 
@@ -126,7 +126,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Stacked 100% Bar Chart
 
-The $ProductName$ Stacked 100% Bar Chart is identical to the $PlatformShort$ Stacked Bar Chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
+The $PlatformShort$ Stacked 100% Bar Chart is identical to the $PlatformShort$ Stacked Bar Chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below:
 

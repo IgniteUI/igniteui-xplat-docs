@@ -10,7 +10,7 @@ The $ProductName$ Radial Chart takes data and render it as collection of data po
 
 ## $PlatformShort$ Radial Area Chart
 
-The $ProductName$ Radial Area Chart has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Area Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them horizontally.
+The $PlatformShort$ Radial Area Chart has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Area Chart](area-chart.md), but wraps the data points around a circular axis rather than stretching them horizontally.
 
 You can create this type of chart in `XamDataChart` control by binding your data to `RadialAreaSeries`, as shown in the example below.
 
@@ -38,7 +38,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Radial Line Chart
 
-The $ProductName$ Radial Line Chart has renders as a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them horizontally.
+The $PlatformShort$ Radial Line Chart has renders as a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the [Line Chart](line-chart.md), but wraps the data points around a circular axis rather than stretching them horizontally.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to `RadialLineSeries`, as shown in the example below:
 

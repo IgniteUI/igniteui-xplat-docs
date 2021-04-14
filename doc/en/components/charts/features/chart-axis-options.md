@@ -9,7 +9,7 @@ mentionedTypes: ["CategoryChart"]
 
 In all $ProductName$ charts, the axes provide properties for visual configurations such as titles, labels, and ranges. These features are demonstrated in the examples provided below.
 
-## Axis Titles Example
+## $PlatformShort$ Axis Titles
 
 The axis titles feature of the $PlatformShort$ charts, allows you to add contextual information to the your chart. You can customize the look and feel of the axis titles in many different ways such as applying different font styles, colors, margins, and alignments.
 
@@ -23,9 +23,9 @@ The axis titles feature of the $PlatformShort$ charts, allows you to add context
 <div class="divider--half"></div>
 
 
-## Axis Labels Example
+## $PlatformShort$ Axis Labels
 
-The $ProductName$ charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels.
+The $PlatformShort$ Charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -36,7 +36,7 @@ The $ProductName$ charts allows you full control over configuring, formatting, a
 
 <div class="divider--half"></div>
 
-## Axis Range Example
+## $PlatformShort$ Axis Range
 
 In the $PlatformShort$ charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.
 
@@ -52,7 +52,7 @@ By default, the $PlatformShort$ charts will calculate the minimum and maximum va
 <div class="divider--half"></div>
 
 <!--
-## Axis Scale Example
+## $PlatformShort$ Axis Scale
 
 TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
 
