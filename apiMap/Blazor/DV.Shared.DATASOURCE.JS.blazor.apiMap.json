@@ -595,468 +595,8 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Match"}            ],
-           "originalName": "Match"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Group"}            ],
-           "originalName": "Group"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "And"}            ],
-           "originalName": "And"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Or"}            ],
-           "originalName": "Or"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Not"}            ],
-           "originalName": "Not"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Add"}            ],
-           "originalName": "Add"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Plus"}            ],
-           "originalName": "Plus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Divide"}            ],
-           "originalName": "Divide"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "DivideBy"}            ],
-           "originalName": "DivideBy"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsEqualTo"}            ],
-           "originalName": "IsEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsGreaterThan"}            ],
-           "originalName": "IsGreaterThan"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsGreaterThanOrEqualTo"}            ],
-           "originalName": "IsGreaterThanOrEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsLessThan"}            ],
-           "originalName": "IsLessThan"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsLessThanOrEqualTo"}            ],
-           "originalName": "IsLessThanOrEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Modulo"}            ],
-           "originalName": "Modulo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Multiply"}            ],
-           "originalName": "Multiply"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Times"}            ],
-           "originalName": "Times"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsNotEqualTo"}            ],
-           "originalName": "IsNotEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Subtract"}            ],
-           "originalName": "Subtract"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Minus"}            ],
-           "originalName": "Minus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Ceiling"}            ],
-           "originalName": "Ceiling"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Concat"}            ],
-           "originalName": "Concat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Contains"}            ],
-           "originalName": "Contains"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Day"}            ],
-           "originalName": "Day"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "EndsWith"}            ],
-           "originalName": "EndsWith"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Floor"}            ],
-           "originalName": "Floor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Hour"}            ],
-           "originalName": "Hour"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IndexOf"}            ],
-           "originalName": "IndexOf"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Length"}            ],
-           "originalName": "Length"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Minute"}            ],
-           "originalName": "Minute"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Month"}            ],
-           "originalName": "Month"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Replace"}            ],
-           "originalName": "Replace"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Round"}            ],
-           "originalName": "Round"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Second"}            ],
-           "originalName": "Second"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StartsWith"}            ],
-           "originalName": "StartsWith"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Substring"}            ],
-           "originalName": "Substring"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToLower"}            ],
-           "originalName": "ToLower"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToUpper"}            ],
-           "originalName": "ToUpper"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Trim"}            ],
-           "originalName": "Trim"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Year"}            ],
-           "originalName": "Year"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Date"}            ],
-           "originalName": "Date"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Time"}            ],
-           "originalName": "Time"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Now"}            ],
-           "originalName": "Now"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsOf"}            ],
-           "originalName": "IsOf"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Cast"}            ],
-           "originalName": "Cast"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "MarkAutoGenerated"}            ],
            "originalName": "MarkAutoGenerated"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Match"}            ],
-           "originalName": "Match"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Group"}            ],
-           "originalName": "Group"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "And"}            ],
-           "originalName": "And"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Or"}            ],
-           "originalName": "Or"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Not"}            ],
-           "originalName": "Not"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Add"}            ],
-           "originalName": "Add"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Plus"}            ],
-           "originalName": "Plus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Divide"}            ],
-           "originalName": "Divide"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "DivideBy"}            ],
-           "originalName": "DivideBy"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsEqualTo"}            ],
-           "originalName": "IsEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsGreaterThan"}            ],
-           "originalName": "IsGreaterThan"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsGreaterThanOrEqualTo"}            ],
-           "originalName": "IsGreaterThanOrEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsLessThan"}            ],
-           "originalName": "IsLessThan"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsLessThanOrEqualTo"}            ],
-           "originalName": "IsLessThanOrEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Modulo"}            ],
-           "originalName": "Modulo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Multiply"}            ],
-           "originalName": "Multiply"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Times"}            ],
-           "originalName": "Times"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsNotEqualTo"}            ],
-           "originalName": "IsNotEqualTo"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Subtract"}            ],
-           "originalName": "Subtract"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Minus"}            ],
-           "originalName": "Minus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Ceiling"}            ],
-           "originalName": "Ceiling"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Concat"}            ],
-           "originalName": "Concat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Contains"}            ],
-           "originalName": "Contains"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Day"}            ],
-           "originalName": "Day"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "EndsWith"}            ],
-           "originalName": "EndsWith"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Floor"}            ],
-           "originalName": "Floor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Hour"}            ],
-           "originalName": "Hour"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IndexOf"}            ],
-           "originalName": "IndexOf"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Length"}            ],
-           "originalName": "Length"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Minute"}            ],
-           "originalName": "Minute"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Month"}            ],
-           "originalName": "Month"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Replace"}            ],
-           "originalName": "Replace"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Round"}            ],
-           "originalName": "Round"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Second"}            ],
-           "originalName": "Second"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StartsWith"}            ],
-           "originalName": "StartsWith"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Substring"}            ],
-           "originalName": "Substring"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToLower"}            ],
-           "originalName": "ToLower"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToUpper"}            ],
-           "originalName": "ToUpper"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Trim"}            ],
-           "originalName": "Trim"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Year"}            ],
-           "originalName": "Year"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Date"}            ],
-           "originalName": "Date"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Time"}            ],
-           "originalName": "Time"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Now"}            ],
-           "originalName": "Now"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsOf"}            ],
-           "originalName": "IsOf"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Cast"}            ],
-           "originalName": "Cast"
        }   ],
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
@@ -1090,11 +630,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "FilterExpressionOperatorType", "mappedName": "Operator"}            ],
            "originalName": "Operator"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -1115,11 +650,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FunctionArguments"}            ],
            "originalName": "FunctionArguments"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -1135,11 +665,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyReference"}            ],
            "originalName": "PropertyReference"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -1160,11 +685,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "LeaveUnquoted"}            ],
            "originalName": "LeaveUnquoted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Evaluate"}            ],
-           "originalName": "Evaluate"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -1835,49 +1355,6 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
-    "originalName": "IDataSourcePage",
-   "names": [
-        { "platform": "Blazor",     "fileName": "IDataSourcePage.cs",
- "mappedName": "DataSourcePage"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Count"}            ],
-           "originalName": "Count"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemAtIndex"}            ],
-           "originalName": "GetItemAtIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValueAtIndex"}            ],
-           "originalName": "GetItemValueAtIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "PageIndex"}            ],
-           "originalName": "PageIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Schema"}            ],
-           "originalName": "Schema"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetGroupInformation"}            ],
-           "originalName": "GetGroupInformation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSummaryInformation"}            ],
-           "originalName": "GetSummaryInformation"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.DataSource"
-},
-{
     "originalName": "IDataSourceSchema",
    "names": [
         { "platform": "Blazor",     "fileName": "IDataSourceSchema.cs",
@@ -2011,12 +1488,36 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
-    "originalName": "ISectionInformation",
+    "originalName": "DefaultSectionInformation",
    "names": [
-        { "platform": "Blazor",     "fileName": "ISectionInformation.cs",
+        { "platform": "Blazor",     "fileName": "DefaultSectionInformation.cs",
  "mappedName": "SectionInformation"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "StartIndex"}            ],
+           "originalName": "StartIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "EndIndex"}            ],
+           "originalName": "EndIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object[]", "mappedName": "GroupKeyValues"}            ],
+           "originalName": "GroupKeyValues"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "GroupKeyProperties"}            ],
+           "originalName": "GroupKeyProperties"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SummaryResult[]", "mappedName": "SummaryResults"}            ],
+           "originalName": "SummaryResults"
+       }   ],
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
@@ -2184,24 +1685,26 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
-    "originalName": "ISummaryResult",
+    "originalName": "DefaultSummaryResult",
    "names": [
-        { "platform": "Blazor",     "fileName": "ISummaryResult.cs",
+        { "platform": "Blazor",     "fileName": "DefaultSummaryResult.cs",
  "mappedName": "SummaryResult"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "SummaryIndex"}            ],
-           "originalName": "SummaryIndex"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.DataSource"
-},
-{
-    "originalName": "DefaultSummaryResult",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DefaultSummaryResult.cs",
- "mappedName": "DefaultSummaryResult"}   ],
-   "members": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
+           "originalName": "PropertyName"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SummaryOperand", "mappedName": "Operand"}            ],
+           "originalName": "Operand"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "SummaryIndex"}            ],
@@ -2797,11 +2300,6 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "AddItem"}            ],
-           "originalName": "AddItem"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "AcceptPendingTransaction"}            ],
            "originalName": "AcceptPendingTransaction"
        },
@@ -2899,6 +2397,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemAtIndex"}            ],
            "originalName": "GetItemAtIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemFromKey"}            ],
+           "originalName": "GetItemFromKey"
        },
         {
            "names": [
@@ -3044,6 +2547,59 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "CloneProperties"}            ],
            "originalName": "CloneProperties"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRowCount"}            ],
+           "originalName": "GetRowCount"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource.Implementation"
+},
+{
+    "originalName": "DataSourceSpecialRow",
+   "names": [
+        { "platform": "Blazor",     "fileName": "DataSourceSpecialRow.cs",
+ "mappedName": "DataSourceSpecialRow"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "DataSourceRowType", "mappedName": "RowType"}            ],
+           "originalName": "RowType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "Keys"}            ],
+           "originalName": "Keys"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object[]", "mappedName": "Values"}            ],
+           "originalName": "Values"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "SectionKeys"}            ],
+           "originalName": "SectionKeys"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object[]", "mappedName": "SectionValues"}            ],
+           "originalName": "SectionValues"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "TargetRow"}            ],
+           "originalName": "TargetRow"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Level"}            ],
+           "originalName": "Level"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SummaryResult[]", "mappedName": "SummaryResults"}            ],
+           "originalName": "SummaryResults"
        }   ],
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation"
 },
@@ -3062,6 +2618,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemAtIndex"}            ],
            "originalName": "GetItemAtIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemFromKey"}            ],
+           "originalName": "GetItemFromKey"
        },
         {
            "names": [
@@ -3202,6 +2763,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemAtIndex"}            ],
            "originalName": "GetItemAtIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemFromKey"}            ],
+           "originalName": "GetItemFromKey"
        },
         {
            "names": [

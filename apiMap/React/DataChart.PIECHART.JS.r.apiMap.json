@@ -188,13 +188,18 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "any[]", "mappedName": "oldItems"}            ],
+               { "platform": "React",  "mappedType": "IgrObjectCollection", "mappedName": "oldItems"}            ],
            "originalName": "OldItems"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "any[]", "mappedName": "newItems"}            ],
+               { "platform": "React",  "mappedType": "IgrObjectCollection", "mappedName": "newItems"}            ],
            "originalName": "NewItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrObjectCollection", "mappedName": "currentItems"}            ],
+           "originalName": "CurrentItems"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -235,6 +240,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isOthersSlice"}            ],
            "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
        },
         {
            "names": [
@@ -423,6 +433,46 @@
            "names": [
                { "platform": "React",  "mappedType": "string[]", "mappedName": "outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "othersLabelFormat"}            ],
+           "originalName": "OthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}            ],
+           "originalName": "OthersLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "legendLabelFormat"}            ],
+           "originalName": "LegendLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}            ],
+           "originalName": "LegendLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "legendOthersLabelFormat"}            ],
+           "originalName": "LegendOthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}            ],
+           "originalName": "LegendOthersLabelFormatSpecifiers"
        },
         {
            "names": [

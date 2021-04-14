@@ -194,6 +194,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "UserAgent"}            ],
            "originalName": "UserAgent"
        },
@@ -772,8 +777,23 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MapBackgroundTilingMode", "mappedName": "BackgroundTilingMode"}            ],
+           "originalName": "BackgroundTilingMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseWorldRectForZoomBounds"}            ],
            "originalName": "UseWorldRectForZoomBounds"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SuppressZoomResetOnWorldRectChange"}            ],
+           "originalName": "SuppressZoomResetOnWorldRectChange"
        },
         {
            "names": [
@@ -802,6 +822,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentActualWorldRect"}            ],
+           "originalName": "GetCurrentActualWorldRect"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetZoomRectFromGeoRect"}            ],
            "originalName": "GetZoomRectFromGeoRect"
        },
@@ -809,6 +834,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "UpdateZoomWindow"}            ],
            "originalName": "UpdateZoomWindow"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UpdateWorldRect"}            ],
+           "originalName": "UpdateWorldRect"
        },
         {
            "names": [

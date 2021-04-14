@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート アニメーション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート アニメーション
 _keywords: $PlatformShort$ Charts, Animations, Infragistics, $PlatformShort$ チャート, アニメーション, インフラジスティックス
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
@@ -37,7 +37,7 @@ _language: ja
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
-- `XamCategoryChart`
+- `CategoryChart`
 - `IsTransitionInEnabled`
 - `TransitionInDuration`
 - `TransitionInMode`

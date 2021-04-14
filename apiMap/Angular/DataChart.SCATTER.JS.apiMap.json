@@ -199,6 +199,21 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
+           "originalName": "MarkerOutlineUsesFillScale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
+           "originalName": "MarkerOutlineBrightness"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
+           "originalName": "MarkerBrushBrightness"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
            "originalName": "RadiusScaleUseGlobalValues"
        },
@@ -280,6 +295,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
            "originalName": "LogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentGlobalMinimum"}            ],
+           "originalName": "GetCurrentGlobalMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentGlobalMaximum"}            ],
+           "originalName": "GetCurrentGlobalMaximum"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -395,6 +420,31 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -422,6 +472,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

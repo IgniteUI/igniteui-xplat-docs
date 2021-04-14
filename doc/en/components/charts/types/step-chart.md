@@ -2,7 +2,7 @@
 title: $PlatformShort$ Step Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Step Chart
 _keywords: $PlatformShort$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "ChartType"]
+mentionedTypes: ["CategoryChart", "ChartType"]
 ---
 # $PlatformShort$ Step Chart
 
@@ -10,7 +10,7 @@ The $ProductName$ Step Chart belongs to a group of category charts that render a
 
 ## $PlatformShort$ Step Area Chart
 
-You can create $PlatformShort$ Step Area Chart in the `XamCategoryChart` control by setting `ChartType` property to `StepArea` value, as shown in the example below.
+You can create $PlatformShort$ Step Area Chart in the `CategoryChart` control by setting `ChartType` property to `StepArea` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -24,7 +24,7 @@ You can create $PlatformShort$ Step Area Chart in the `XamCategoryChart` control
 
 The $PlatformShort$ Step Line Chart is very similar to Step Area Chart, except that the area below lines are filled in.
 
-You can create Step Line Chart in the `XamCategoryChart` control by binding your data and setting `ChartType` property to `StepLine` value, as shown in the example below.
+You can create Step Line Chart in the `CategoryChart` control by binding your data and setting `ChartType` property to `StepLine` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -36,7 +36,7 @@ You can create Step Line Chart in the `XamCategoryChart` control by binding your
 
 ## $PlatformShort$ Step Chart Styling
 
-If you need Step Charts with more features such as composite other series, you can configure the `MarkerTypes`, `MarkerBrushes`, `MarkerOutlines`, lines' `Brushes`, and lines' `Outlines` properties on the `XamCategoryChart` control as demonstrated below.
+If you need Step Charts with more features such as composite other series, you can configure the `MarkerTypes`, `MarkerBrushes`, `MarkerOutlines`, lines' `Brushes`, and lines' `Outlines` properties on the `CategoryChart` control as demonstrated below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -58,7 +58,7 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-- `XamCategoryChart`
+- `CategoryChart`
 - `ChartType`
 - `StepArea`
 - `StepLine`

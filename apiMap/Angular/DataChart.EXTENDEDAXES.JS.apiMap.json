@@ -1,9 +1,4 @@
 {
-"extraFiles": [
-"igx-time-axis-break-module.ts",
-"igx-time-axis-interval-module.ts",
-"igx-time-axis-label-format-module.ts"
-],
 "types": [
 {
     "originalName": "CategoryAngleAxis",
@@ -193,6 +188,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxTimeAxisLabelFormatCollection", "mappedName": "labelFormats"}            ],
            "originalName": "LabelFormats"
        },
@@ -294,9 +294,40 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "TimeAxisLabellingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TimeAxisLabellingMode.ts",
+ "mappedName": "TimeAxisLabellingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TimeAxisLabellingMode", "mappedName": "Compressed"}            ],
+           "originalName": "Compressed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "TimeAxisBreak",
    "names": [
         { "platform": "Angular",     "fileName": "igx-time-axis-break-component.ts",
+    "dynamicModuleName": "igx-time-axis-break-dynamic-module.ts",
+    "moduleName": "igx-time-axis-break-module.ts",
  "mappedName": "IgxTimeAxisBreakComponent"}   ],
    "members": [
         {
@@ -320,6 +351,8 @@
     "originalName": "TimeAxisInterval",
    "names": [
         { "platform": "Angular",     "fileName": "igx-time-axis-interval-component.ts",
+    "dynamicModuleName": "igx-time-axis-interval-dynamic-module.ts",
+    "moduleName": "igx-time-axis-interval-module.ts",
  "mappedName": "IgxTimeAxisIntervalComponent"}   ],
    "members": [
         {
@@ -402,6 +435,8 @@
     "originalName": "TimeAxisLabelFormat",
    "names": [
         { "platform": "Angular",     "fileName": "igx-time-axis-label-format-component.ts",
+    "dynamicModuleName": "igx-time-axis-label-format-dynamic-module.ts",
+    "moduleName": "igx-time-axis-label-format-module.ts",
  "mappedName": "IgxTimeAxisLabelFormatComponent"}   ],
    "members": [
         {
@@ -413,6 +448,21 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "format"}            ],
            "originalName": "Format"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "repeatedYearFormat"}            ],
+           "originalName": "RepeatedYearFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "repeatedMonthFormat"}            ],
+           "originalName": "RepeatedMonthFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "repeatedDayFormat"}            ],
+           "originalName": "RepeatedDayFormat"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -433,6 +483,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "IgxTimeAxisBreakCollection", "mappedName": "breaks"}            ],
            "originalName": "Breaks"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TimeAxisLabellingMode", "mappedName": "labellingMode"}            ],
+           "originalName": "LabellingMode"
        },
         {
            "names": [

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Animations | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Animations
 _keywords: $PlatformShort$ Charts, Animations, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 ---
 
 # $PlatformShort$ Chart Animations
@@ -36,7 +36,7 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamCategoryChart`
+- `CategoryChart`
 - `IsTransitionInEnabled`
 - `TransitionInDuration`
 - `TransitionInMode`

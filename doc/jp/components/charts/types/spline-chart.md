@@ -2,7 +2,7 @@
 title: $PlatformShort$ スプライン チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ スプライン チャート
 _keywords: $PlatformShort$ Charts, Spline Chart, Infragistics, $PlatformShort$ チャート, スプライン チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
 _language: ja
 ---
 # $PlatformShort$ スプライン チャート
@@ -25,7 +25,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 以下の例に示すように、スプライン チャートは、ヨーロッパで 2009 年以降の 10 年間の再生可能電力量など、値の経時変化を示すためによく使用されます。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -39,7 +39,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 スプライン チャートを使用すると、複数のシリーズを組み合わせて、時間の経過とともにどのように変化するかを比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、チャートは追加データに合わせて自動的に更新されます。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -53,7 +53,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 他のシリーズの複合などのより多くの機能を備えたスプライン チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
 
-`XamCategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -109,6 +109,6 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 チャート タイプ          | コントロール名       | API メンバー
 --------------------|--------------------|--------------------------
-スプライン              | `XamCategoryChart` | `ChartType` = `Spline`
+スプライン              | `CategoryChart` | `ChartType` = `Spline`
 積層型スプライン      | `XamDataChart`     | `StackedSplineSeries`
 積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries`

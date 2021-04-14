@@ -246,6 +246,36 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomShapeStyleAllowed"}            ],
+           "originalName": "IsCustomShapeStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomShapeMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomShapeMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ShapeItemSearchMode", "mappedName": "ActualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ShapeItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchPointsThreshold"}            ],
+           "originalName": "ItemSearchPointsThreshold"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ShapeMemberPath"}            ],
            "originalName": "ShapeMemberPath"
        },
@@ -268,6 +298,21 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
            "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
+           "originalName": "GetItem"
        },
         {
            "names": [

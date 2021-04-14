@@ -4,6 +4,89 @@
 "igx-simple-default-tooltip-component.ts"
 ],
 "types": [
-
+{
+    "originalName": "KeyEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-key-event-args.ts",
+ "mappedName": "IgxKeyEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "alt"}            ],
+           "originalName": "Alt"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "ctrl"}            ],
+           "originalName": "Ctrl"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "keyCode"}            ],
+           "originalName": "KeyCode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ModifierKeys", "mappedName": "modifiers"}            ],
+           "originalName": "Modifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shift"}            ],
+           "originalName": "Shift"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "defaultPrevented"}            ],
+           "originalName": "DefaultPrevented"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "preventDefault"}            ],
+           "originalName": "PreventDefault"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "stopPropagation"}            ],
+           "originalName": "StopPropagation"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Inputs"
+},
+{
+    "originalName": "MouseButton",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "MouseButton.ts",
+ "mappedName": "MouseButton"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MouseButton", "mappedName": "Left"}            ],
+           "originalName": "Left"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MouseButton", "mappedName": "Middle"}            ],
+           "originalName": "Middle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MouseButton", "mappedName": "Right"}            ],
+           "originalName": "Right"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MouseButton", "mappedName": "Unkown"}            ],
+           "originalName": "Unkown"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs"
+}
 ]
 }

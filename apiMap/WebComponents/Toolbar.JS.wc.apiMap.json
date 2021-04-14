@@ -21,11 +21,6 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "FontInfo", "mappedName": "toolbarTitleStyle"}            ],
-           "originalName": "ToolbarTitleStyle"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "toolbarTitleColor"}            ],
            "originalName": "ToolbarTitleColor"
        },

@@ -2,7 +2,7 @@
 title: $PlatformShort$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
 _keywords: $PlatformShort$ charts, financial chart, stock chart, binding to data, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 _language: ja
 ---
 # $PlatformShort$ 複数データ ソースへバインド
@@ -11,10 +11,10 @@ $PlatformShort$ Financial Chart コンポーネントは、以下のように複
 
 ## $PlatformShort$ 複数データ ソースへバインドの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data" 
-           alt="$PlatformShort$ 複数データ ソースへバインドの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           alt="$PlatformShort$ 複数データ ソースへバインドの例"
            github-src="charts/financial-chart/multiple-data">
 </code-view>
 
@@ -71,7 +71,7 @@ chart.dataSource = data;
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%"    
+    Height="100%"
     DataSource="DataSource" />
 ```
 

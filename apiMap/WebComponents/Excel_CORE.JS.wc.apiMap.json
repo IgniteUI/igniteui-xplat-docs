@@ -293,6 +293,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IgSize", "mappedName": "screenDpi"}            ],
+           "originalName": "ScreenDpi"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IList", "mappedName": "userDefinedFunctions"}            ],
            "originalName": "UserDefinedFunctions"
        }   ],

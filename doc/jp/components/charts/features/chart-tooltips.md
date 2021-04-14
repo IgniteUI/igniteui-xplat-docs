@@ -2,23 +2,13 @@
 title: $PlatformShort$ チャート ツールチップ | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート ツールチップ
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics, $PlatformShort$ チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "ToolTipType"]
+mentionedTypes: ["CategoryChart", "ToolTipType"]
 _language: ja
 ---
 
 # $PlatformShort$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コントロールでサポートされています。
-
-## $PlatformShort$ チャート ツールチップのタイプ
-
-次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
-
-プロパティの値     | 説明
--------------------|----------------
-`Default` | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
-`Item` | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
-`Category` | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
+$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -72,5 +62,4 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `ToolTipType`
-- `XamCategoryChart`
-- `XamDataChart`
+- `CategoryChart`

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Point Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Point Chart
 _keywords: $PlatformShort$ Charts, Point Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "ChartType", "Legend"]
+mentionedTypes: ["CategoryChart", "ChartType", "Legend"]
 ---
 # $PlatformShort$ Point Chart
 
@@ -10,7 +10,7 @@ The $ProductName$ Point Chart renders a collection of points. Values are represe
 
 ## $PlatformShort$ Point Chart Example
 
-You can create the $PlatformShort$ Point Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
+You can create the $PlatformShort$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -58,7 +58,7 @@ Once the $PlatformShort$ Point Chart is set up, we may want to make some further
 
 ## Advanced Types of Point Charts
 
-You can create more advanced types of $PlatformShort$ Point Charts using the `XamDataChart` control instead of `XamCategoryChart` control by following these topics:
+You can create more advanced types of $PlatformShort$ Point Charts using the `XamDataChart` control instead of `CategoryChart` control by following these topics:
 
 - [Scatter Bubble Chart](bubble-chart.md)
 - [Scatter Marker Chart](scatter-chart.md#$PlatformShort$-scatter-marker-chart)
@@ -76,7 +76,7 @@ You can find more information about related chart features in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
 - `ChartType`
 - `MarkerTypes`

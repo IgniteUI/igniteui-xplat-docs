@@ -2,16 +2,19 @@
 title: $PlatformShort$ ポイント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ポイント チャート
 _keywords: $PlatformShort$ Charts, Point Chart, Infragistics, $PlatformShort$ チャート, ポイント チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "ChartType", "Legend"]
+mentionedTypes: ["CategoryChart", "ChartType", "Legend"]
 _language: ja
 ---
 # $PlatformShort$ ポイント チャート
 
 $ProductName$ ポイント チャートは、ポイントのコレクションを描画します。値は Y 軸 (左側のラベル) に表示され、カテゴリは X 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
+$PlatformShort$ ポイント チャートは、ポイントのコレクションを描画します。値は Y 軸 (左側のラベル) に表示され、カテゴリは X 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
+
+複数シリーズの場合、$PlatformShort$ ポイント チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `CategoryChart` コントロールの `Legend` プロパティに設定します。これにより、ユーザーは各ポイントがどのデータセットに対応するかを分かりやすく表示します。
 
 ## $PlatformShort$ ポイント チャートの例
 
-`XamCategoryChart` コントロールで $PlatformShort$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
+`CategoryChart` コントロールで $PlatformShort$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -74,11 +77,7 @@ $PlatformShort$ ポイント チャートを設定したら、マーカーとそ
 - [チャート マーカー](../features/chart-markers.md)
 
 ## API メンバー
-
-以下は、上記のセクションで説明されている API メンバーのリストです。
-
-- `XamCategoryChart`
-- `XamDataChart`
+- `CategoryChart`
 - `ChartType`
 - `MarkerTypes`
 - `MarkerOutlines`

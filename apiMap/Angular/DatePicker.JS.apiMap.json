@@ -1,0 +1,244 @@
+{
+"extraFiles": [
+"igx-date-picker-module.ts"
+],
+"types": [
+{
+    "originalName": "DateTimeValueFormatter",
+   "names": [
+        { "platform": "Angular",     "fileName": "DateTimeValueFormatter.ts",
+ "mappedName": "DateTimeValueFormatter"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "DateFormats", "mappedName": "_format"}            ],
+           "originalName": "_format"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_invalidate"}            ],
+           "originalName": "_invalidate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "invalidateFormat"}            ],
+           "originalName": "InvalidateFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "ensureFormat"}            ],
+           "originalName": "EnsureFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_dateTimeShortFormat"}            ],
+           "originalName": "_dateTimeShortFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_dateTimeLongFormat"}            ],
+           "originalName": "_dateTimeLongFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_dateLongFormat"}            ],
+           "originalName": "_dateLongFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_dateShortFormat"}            ],
+           "originalName": "_dateShortFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_timeLongFormat"}            ],
+           "originalName": "_timeLongFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "_timeShortFormat"}            ],
+           "originalName": "_timeShortFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "formatDate"}            ],
+           "originalName": "FormatDate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs"
+},
+{
+    "originalName": "DatePicker",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-date-picker-component.ts",
+ "mappedName": "IgxDatePickerComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Date", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Date", "mappedName": "today"}            ],
+           "originalName": "Today"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelTextColor"}            ],
+           "originalName": "LabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "placeholder"}            ],
+           "originalName": "Placeholder"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Date", "mappedName": "minDate"}            ],
+           "originalName": "MinDate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Date", "mappedName": "maxDate"}            ],
+           "originalName": "MaxDate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "iconColor"}            ],
+           "originalName": "IconColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "showClearButton"}            ],
+           "originalName": "ShowClearButton"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "showTodayButton"}            ],
+           "originalName": "ShowTodayButton"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "allowTextInput"}            ],
+           "originalName": "AllowTextInput"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "openOnFocus"}            ],
+           "originalName": "OpenOnFocus"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "DayOfWeek", "mappedName": "firstDayOfWeek"}            ],
+           "originalName": "FirstDayOfWeek"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "FirstWeek", "mappedName": "firstWeekOfYear"}            ],
+           "originalName": "FirstWeekOfYear"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "showWeekNumbers"}            ],
+           "originalName": "ShowWeekNumbers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "DateFormats", "mappedName": "dateFormat"}            ],
+           "originalName": "DateFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "formatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "select"}            ],
+           "originalName": "Select"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "GotFocusEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-got-focus-event-args.ts",
+ "mappedName": "IgxGotFocusEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "LostFocusEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-lost-focus-event-args.ts",
+ "mappedName": "IgxLostFocusEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "DateFormats",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "DateFormats.ts",
+ "mappedName": "DateFormats"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "DateFormats", "mappedName": "DateShort"}            ],
+           "originalName": "DateShort"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "DateFormats", "mappedName": "DateLong"}            ],
+           "originalName": "DateLong"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+}
+]
+}

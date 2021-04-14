@@ -2,7 +2,7 @@
 title: $PlatformShort$ 軸グリッド線 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸グリッド線
 _keywords: $PlatformShort$ Axis, Gridlines, Infragistics, $PlatformShort$ 軸, グリッド線, インフラジスティックス
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
@@ -10,7 +10,7 @@ _language: ja
 
 すべての $ProductName$ チャートには、軸線の外観、X 軸と Y 軸に描画される主/副グリッド線および目盛りの頻度を変更するための組み込み機能が含まれています。
 
-> 注: 次の例は、`XamCategoryChart` および `XamFinancialChart` コントロールに適用されます。
+> 注: 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
 軸の主グリッド線は、軸ラベルの位置から水平 (Y 軸) または垂直 (X 軸) に伸びる長い線であり、チャートのプロット領域を介して描画されます。軸の副グリッド線は、軸の主グリッド線の間に描画される線です。
 
@@ -102,22 +102,19 @@ _language: ja
 
 ## API メンバー
 
-以下は、上記のセクションで説明した API メンバーのリストです。
-
-- `XamCategoryChart` 
-- `XamFinancialChart`
-- `XAxisInterval` 
-- `YAxisInterval` 
-- `XAxisMinorInterval` 
-- `YAxisMinorInterval` 
-- `XAxisMajorStrokeThickness` 
-- `YAxisMajorStrokeThickness` 
-- `XAxisMinorStrokeThickness` 
-- `YAxisMinorStrokeThickness` 
-- `XAxisTickLength` 
-- `YAxisTickLength` 
-- `XAxisTickStroke` 
-- `YAxisTickStroke` 
-- `XAxisMajorStroke` 
-- `YAxisMajorStroke`  
-
+- `CategoryChart`
+- `FinancialChart`
+- `XAxisInterval`
+- `YAxisInterval`
+- `XAxisMinorInterval`
+- `YAxisMinorInterval`
+- `XAxisMajorStrokeThickness`
+- `YAxisMajorStrokeThickness`
+- `XAxisMinorStrokeThickness`
+- `YAxisMinorStrokeThickness`
+- `XAxisTickLength`
+- `YAxisTickLength`
+- `XAxisTickStroke`
+- `YAxisTickStroke`
+- `XAxisMajorStroke`
+- `YAxisMajorStroke`

@@ -115,6 +115,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomRadialStyleAllowed"}            ],
+           "originalName": "IsCustomRadialStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomRadialMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomRadialMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxCategoryAngleAxisComponent", "mappedName": "angleAxis"}            ],
            "originalName": "AngleAxis"
        },

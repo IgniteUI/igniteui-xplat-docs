@@ -691,6 +691,26 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisLabelFormat"}            ],
+           "originalName": "XAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "xAxisLabelFormatSpecifiers"}            ],
+           "originalName": "XAxisLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisLabelFormat"}            ],
+           "originalName": "YAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "yAxisLabelFormatSpecifiers"}            ],
+           "originalName": "YAxisLabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
            "originalName": "ProvideContainer"
        },

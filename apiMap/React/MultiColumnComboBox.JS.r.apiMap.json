@@ -1,0 +1,625 @@
+{
+"extraFiles": [
+"igr-multi-column-combo-box-module.ts"
+],
+"types": [
+{
+    "originalName": "CloneDataSourceFilterOperation",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "CloneDataSourceFilterOperation.ts",
+ "mappedName": "CloneDataSourceFilterOperation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "ValueToText"}            ],
+           "originalName": "ValueToText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "TextToValue"}            ],
+           "originalName": "TextToValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GotFocusEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-got-focus-event-args.ts",
+ "mappedName": "IgrGotFocusEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "LostFocusEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-lost-focus-event-args.ts",
+ "mappedName": "IgrLostFocusEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MultiColumnComboBoxTextChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-multi-column-combo-box-text-changed-event-args.ts",
+ "mappedName": "IgrMultiColumnComboBoxTextChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "oldText"}            ],
+           "originalName": "OldText"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "newText"}            ],
+           "originalName": "NewText"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MultiColumnComboBoxValueChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-multi-column-combo-box-value-changed-event-args.ts",
+ "mappedName": "IgrMultiColumnComboBoxValueChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MultiColumnComboBox",
+   "names": [
+        { "platform": "React",     "fileName": "igr-multi-column-combo-box.ts",
+ "mappedName": "IgrMultiColumnComboBox"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showClearButton"}            ],
+           "originalName": "ShowClearButton"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "fields"}            ],
+           "originalName": "Fields"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualBackgroundColor"}            ],
+           "originalName": "ActualBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "actualBaseTheme"}            ],
+           "originalName": "ActualBaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "borderColor"}            ],
+           "originalName": "BorderColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualBorderColor"}            ],
+           "originalName": "ActualBorderColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "borderWidth"}            ],
+           "originalName": "BorderWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualBorderWidth"}            ],
+           "originalName": "ActualBorderWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "columnHeadersVisible"}            ],
+           "originalName": "ColumnHeadersVisible"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "contentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "contentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "contentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "contentPadding.top"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "actualContentPadding.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "actualContentPadding.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "actualContentPadding.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "actualContentPadding.top"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "cornerRadius.bottomRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "cornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "cornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "cornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "actualCornerRadius.bottomRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "actualCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "actualCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "actualCornerRadius.topRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "dataSourceDesiredProperties"}            ],
+           "originalName": "DataSourceDesiredProperties"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "actualDensity"}            ],
+           "originalName": "ActualDensity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "dropDownButtonVisible"}            ],
+           "originalName": "DropDownButtonVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "focusBorderColor"}            ],
+           "originalName": "FocusBorderColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualFocusBorderColor"}            ],
+           "originalName": "ActualFocusBorderColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "focusBorderWidth"}            ],
+           "originalName": "FocusBorderWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualFocusBorderWidth"}            ],
+           "originalName": "ActualFocusBorderWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "focusUnderlineColor"}            ],
+           "originalName": "FocusUnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualFocusUnderlineColor"}            ],
+           "originalName": "ActualFocusUnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "focusUnderlineOpacity"}            ],
+           "originalName": "FocusUnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualFocusUnderlineOpacity"}            ],
+           "originalName": "ActualFocusUnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "focusUnderlineRippleOpacity"}            ],
+           "originalName": "FocusUnderlineRippleOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualFocusUnderlineRippleOpacity"}            ],
+           "originalName": "ActualFocusUnderlineRippleOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hoverUnderlineColor"}            ],
+           "originalName": "HoverUnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualHoverUnderlineColor"}            ],
+           "originalName": "ActualHoverUnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "hoverUnderlineOpacity"}            ],
+           "originalName": "HoverUnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualHoverUnderlineOpacity"}            ],
+           "originalName": "ActualHoverUnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "hoverUnderlineWidth"}            ],
+           "originalName": "HoverUnderlineWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualHoverUnderlineWidth"}            ],
+           "originalName": "ActualHoverUnderlineWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "dataSource"}            ],
+           "originalName": "ItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSource", "mappedName": "actualDataSource"}            ],
+           "originalName": "ActualDataSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelTextColor"}            ],
+           "originalName": "LabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualLabelTextColor"}            ],
+           "originalName": "ActualLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "actualLabelVisible"}            ],
+           "originalName": "ActualLabelVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "noMatchesFoundLabel"}            ],
+           "originalName": "NoMatchesFoundLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabel"}            ],
+           "originalName": "ActualNoMatchesFoundLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "noMatchesFoundLabelBackgroundColor"}            ],
+           "originalName": "NoMatchesFoundLabelBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelBackgroundColor"}            ],
+           "originalName": "ActualNoMatchesFoundLabelBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "noMatchesFoundLabelTextColor"}            ],
+           "originalName": "NoMatchesFoundLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelTextColor"}            ],
+           "originalName": "ActualNoMatchesFoundLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "placeholder"}            ],
+           "originalName": "Placeholder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "rowSeparatorsVisible"}            ],
+           "originalName": "RowSeparatorsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualTextColor"}            ],
+           "originalName": "ActualTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "underlineColor"}            ],
+           "originalName": "UnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualUnderlineColor"}            ],
+           "originalName": "ActualUnderlineColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "underlineOpacity"}            ],
+           "originalName": "UnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualUnderlineOpacity"}            ],
+           "originalName": "ActualUnderlineOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "underlineRippleColor"}            ],
+           "originalName": "UnderlineRippleColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualUnderlineRippleColor"}            ],
+           "originalName": "ActualUnderlineRippleColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "underlineRippleOpacity"}            ],
+           "originalName": "UnderlineRippleOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualUnderlineRippleOpacity"}            ],
+           "originalName": "ActualUnderlineRippleOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "underlineRippleWidth"}            ],
+           "originalName": "UnderlineRippleWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualUnderlineRippleWidth"}            ],
+           "originalName": "ActualUnderlineRippleWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "underlineWidth"}            ],
+           "originalName": "UnderlineWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualUnderlineWidth"}            ],
+           "originalName": "ActualUnderlineWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowFilter"}            ],
+           "originalName": "AllowFilter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "sortMode"}            ],
+           "originalName": "SortMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textField"}            ],
+           "originalName": "TextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "text"}            ],
+           "originalName": "Text"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "valueField"}            ],
+           "originalName": "ValueField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "actualValueField"}            ],
+           "originalName": "ActualValueField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "closeUp"}            ],
+           "originalName": "CloseUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "dropDown"}            ],
+           "originalName": "DropDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "select"}            ],
+           "originalName": "Select"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MultiColumnComboBoxSelectedItemChangeType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "MultiColumnComboBoxSelectedItemChangeType.ts",
+ "mappedName": "MultiColumnComboBoxSelectedItemChangeType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Text"}            ],
+           "originalName": "Text"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "SortMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "SortMode.ts",
+ "mappedName": "SortMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "SortByOneColumnOnly"}            ],
+           "originalName": "SortByOneColumnOnly"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "SortByMultipleColumns"}            ],
+           "originalName": "SortByMultipleColumns"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "SortByOneColumnOnlyTriState"}            ],
+           "originalName": "SortByOneColumnOnlyTriState"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "SortByMultipleColumnsTriState"}            ],
+           "originalName": "SortByMultipleColumnsTriState"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SortMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+}
+]
+}

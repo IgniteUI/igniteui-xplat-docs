@@ -70,6 +70,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
            "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
+           "originalName": "MarkerThickness"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -152,7 +157,11 @@
         { "platform": "Blazor",     "fileName": "FragmentBase.cs",
  "mappedName": "FragmentBase"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -196,7 +205,11 @@
         { "platform": "Blazor",     "fileName": "SplineFragmentBase.cs",
  "mappedName": "SplineFragmentBase"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -349,6 +362,11 @@
         { "platform": "Blazor",     "fileName": "StackedFragmentSeries.cs",
  "mappedName": "StackedFragmentSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
+           "originalName": "ItemsSource"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brush"}            ],
@@ -551,6 +569,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMarkerThickness"}            ],
+           "originalName": "ActualMarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Title"}            ],
            "originalName": "Title"
        },
@@ -573,6 +601,116 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ParentOrLocalBrush"}            ],
            "originalName": "ParentOrLocalBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToWorldPosition"}            ],
+           "originalName": "ToWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "FromWorldPosition"}            ],
+           "originalName": "FromWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetEffectiveViewport"}            ],
+           "originalName": "GetEffectiveViewport"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SimulateHover"}            ],
+           "originalName": "SimulateHover"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "MoveCursorPoint"}            ],
+           "originalName": "MoveCursorPoint"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -675,6 +813,11 @@
         { "platform": "Blazor",     "fileName": "StackedSeriesBase.cs",
  "mappedName": "StackedSeriesBase"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "StackedSeriesCollection", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AutoGenerateSeries"}            ],

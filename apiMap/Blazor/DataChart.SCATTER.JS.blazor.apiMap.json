@@ -260,6 +260,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "LogarithmBase"}            ],
            "originalName": "LogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentGlobalMinimum"}            ],
+           "originalName": "GetCurrentGlobalMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentGlobalMaximum"}            ],
+           "originalName": "GetCurrentGlobalMaximum"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -363,6 +373,31 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ActualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -390,6 +425,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

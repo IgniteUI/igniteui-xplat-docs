@@ -2,7 +2,7 @@
 title: $PlatformShort$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
 _keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 _language: ja
 ---
 # $PlatformShort$ 大規模データのバインド
@@ -11,10 +11,10 @@ $PlatformShort$ Financial Chart  コンポーネントは大量のデータを�
 
 ## $PlatformShort$ 大規模データのバインドの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume" 
-           alt="$PlatformShort$ 大規模データのバインドの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume"
+           alt="$PlatformShort$ 大規模データのバインドの例"
            github-src="charts/financial-chart/high-volume">
 </code-view>
 

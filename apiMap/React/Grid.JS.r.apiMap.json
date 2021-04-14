@@ -2,7 +2,8 @@
 "extraFiles": [
 "igr-data-grid-core-module.ts",
 "igr-data-grid-module.ts",
-"DataGridStylingDefaults.ts"
+"DataGridStylingDefaults.ts",
+"igr-data-grid-all-columns-module.ts"
 ],
 "types": [
 {
@@ -236,6 +237,8 @@
     "originalName": "PrimaryKeyValue",
    "names": [
         { "platform": "React",     "fileName": "igr-primary-key-value.ts",
+    "dynamicModuleName": "igr-primary-key-value-dynamic-module.ts",
+    "moduleName": "igr-primary-key-value-module.ts",
  "mappedName": "IgrPrimaryKeyValue"}   ],
    "members": [
         {
@@ -313,13 +316,28 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "mouseEnterCell"}            ],
+           "originalName": "MouseEnterCell"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "mouseIsOver"}            ],
            "originalName": "MouseIsOver"
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "doubleClicked"}            ],
+           "originalName": "DoubleClicked"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isLeaveActionDesired"}            ],
            "originalName": "IsLeaveActionDesired"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEnterActionDesired"}            ],
+           "originalName": "IsEnterActionDesired"
        },
         {
            "names": [
@@ -383,6 +401,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isGridDragging"}            ],
+           "originalName": "IsGridDragging"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEditRefocusDesired"}            ],
+           "originalName": "IsEditRefocusDesired"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "ColumnFilterCondition", "mappedName": "getColumnFilterCondition"}            ],
            "originalName": "GetColumnFilterCondition"
        },
@@ -400,6 +428,26 @@
            "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "columnFilterChanged"}            ],
            "originalName": "ColumnFilterChanged"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "updateCellEditValue"}            ],
+           "originalName": "UpdateCellEditValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "startEditMode"}            ],
+           "originalName": "StartEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "editorCellLostFocus"}            ],
+           "originalName": "EditorCellLostFocus"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "cancelEditMode"}            ],
+           "originalName": "CancelEditMode"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid"
 },
@@ -1027,6 +1075,35 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "RowHoverAnimationMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "RowHoverAnimationMode.ts",
+ "mappedName": "RowHoverAnimationMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RowHoverAnimationMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RowHoverAnimationMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RowHoverAnimationMode", "mappedName": "ColorBlend"}            ],
+           "originalName": "ColorBlend"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "CellModel",
    "names": [
         { "platform": "React",     "fileName": "igr-cell-info.ts",
@@ -1134,6 +1211,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "editOpacity"}            ],
+           "originalName": "EditOpacity"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "contentOpacity"}            ],
            "originalName": "ContentOpacity"
        },
@@ -1179,6 +1261,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "hoverStatus"}            ],
+           "originalName": "HoverStatus"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "CellContentHorizontalAlignment", "mappedName": "horizontalAlignment"}            ],
            "originalName": "HorizontalAlignment"
        },
@@ -1214,8 +1301,23 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "errorBorder"}            ],
+           "originalName": "ErrorBorder"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "selectedBackground"}            ],
            "originalName": "SelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hoverBackground"}            ],
+           "originalName": "HoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hoverTextColor"}            ],
+           "originalName": "HoverTextColor"
        },
         {
            "names": [
@@ -1256,6 +1358,16 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
            "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualTextColor"}            ],
+           "originalName": "ActualTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "deletedTextColor"}            ],
+           "originalName": "DeletedTextColor"
        },
         {
            "names": [
@@ -1349,6 +1461,26 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderLeftWidth"}            ],
+           "originalName": "ErrorBorderLeftWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderTopWidth"}            ],
+           "originalName": "ErrorBorderTopWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderRightWidth"}            ],
+           "originalName": "ErrorBorderRightWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderBottomWidth"}            ],
+           "originalName": "ErrorBorderBottomWidth"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "actualBorderLeftWidth"}            ],
            "originalName": "ActualBorderLeftWidth"
        },
@@ -1386,6 +1518,31 @@
            "names": [
                { "platform": "React",  "mappedType": "PinnedPositions", "mappedName": "pinned"}            ],
            "originalName": "Pinned"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEdited"}            ],
+           "originalName": "IsEdited"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDeleted"}            ],
+           "originalName": "IsDeleted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editError"}            ],
+           "originalName": "EditError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isInEditMode"}            ],
+           "originalName": "IsInEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "editID"}            ],
+           "originalName": "EditID"
        },
         {
            "names": [
@@ -1437,6 +1594,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatStringOverride"}            ],
+           "originalName": "FormatStringOverride"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "formatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "formatOverride"}            ],
            "originalName": "FormatOverride"
        },
@@ -1449,6 +1616,86 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isOffsetValue"}            ],
            "originalName": "IsOffsetValue"
+       }   ],
+    "originalBaseTypeName": "CellModel",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorCellModel",
+   "names": [
+        { "platform": "React",     "fileName": "igr-editor-cell-info.ts",
+ "mappedName": "IgrEditorCellInfo"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHidden"}            ],
+           "originalName": "IsHidden"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrCellInfo", "mappedName": "editTarget"}            ],
+           "originalName": "EditTarget"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "dataType"}            ],
+           "originalName": "DataType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "errorMessage"}            ],
+           "originalName": "ErrorMessage"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editValue"}            ],
+           "originalName": "EditValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editorDataSource"}            ],
+           "originalName": "EditorItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editorTextField"}            ],
+           "originalName": "EditorTextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "editorValueField"}            ],
+           "originalName": "EditorValueField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "targetRow"}            ],
+           "originalName": "TargetRow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "targetColumn"}            ],
+           "originalName": "TargetColumn"
+       }   ],
+    "originalBaseTypeName": "CellModel",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorRowCellModel",
+   "names": [
+        { "platform": "React",     "fileName": "igr-editor-row-cell-info.ts",
+ "mappedName": "IgrEditorRowCellInfo"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrCellInfo", "mappedName": "editTarget"}            ],
+           "originalName": "EditTarget"
        }   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -1534,6 +1781,16 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "hasDecimalValue"}            ],
            "originalName": "HasDecimalValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatStringOverride"}            ],
+           "originalName": "FormatStringOverride"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "formatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
        },
         {
            "names": [
@@ -2106,6 +2363,50 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRowHoverEnabled"}            ],
+           "originalName": "IsRowHoverEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "rowHoverBackground"}            ],
+           "originalName": "RowHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "rowHoverTextColor"}            ],
+           "originalName": "RowHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editRowBorder"}            ],
+           "originalName": "EditRowBorder"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
+           "originalName": "editRowBorderWidth.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "left"}            ],
+           "originalName": "editRowBorderWidth.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "right"}            ],
+           "originalName": "editRowBorderWidth.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "top"}            ],
+           "originalName": "editRowBorderWidth.top"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "IgrSectionHeader", "mappedName": "sectionHeader"}            ],
            "originalName": "SectionHeader"
        },
@@ -2151,6 +2452,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "autoGenerateDesiredProperties"}            ],
+           "originalName": "AutoGenerateDesiredProperties"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string[]", "mappedName": "dataSourceDesiredProperties"}            ],
            "originalName": "DataSourceDesiredProperties"
        },
@@ -2191,6 +2497,21 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "EditModeType", "mappedName": "editMode"}            ],
+           "originalName": "EditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeClickAction", "mappedName": "editModeClickAction"}            ],
+           "originalName": "EditModeClickAction"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "editOnKeyPress"}            ],
+           "originalName": "EditOnKeyPress"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "autoGenerateColumns"}            ],
            "originalName": "AutoGenerateColumns"
        },
@@ -2223,6 +2544,11 @@
            "names": [
                { "platform": "React",  "mappedType": "RowSelectionAnimationMode", "mappedName": "rowSelectionAnimationMode"}            ],
            "originalName": "RowSelectionAnimationMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "RowHoverAnimationMode", "mappedName": "rowHoverAnimationMode"}            ],
+           "originalName": "RowHoverAnimationMode"
        },
         {
            "names": [
@@ -2343,6 +2669,16 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "pinnedRowOpacity"}            ],
            "originalName": "PinnedRowOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "editOpacity"}            ],
+           "originalName": "EditOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "deletedTextColor"}            ],
+           "originalName": "DeletedTextColor"
        },
         {
            "names": [
@@ -2520,6 +2856,11 @@
            "originalName": "Border"
        },
         {
+           "names": [
+               { "platform": "React",  "mappedType": "Thickness", "mappedName": "actualBorderWidth"}            ],
+           "originalName": "ActualBorderWidth"
+       },
+        {
            "isVirtual": true,
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "bottom"}            ],
@@ -2544,6 +2885,11 @@
            "originalName": "borderWidth.top"
        },
         {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "notifyOnAllSelectionChanges"}            ],
+           "originalName": "NotifyOnAllSelectionChanges"
+       },
+        {
            "isVirtual": true,
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
@@ -2566,6 +2912,35 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
            "originalName": "cornerRadius.topRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomRight"}            ],
+           "originalName": "actualCornerRadius.bottomRight"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
+           "originalName": "actualCornerRadius.bottomLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topLeft"}            ],
+           "originalName": "actualCornerRadius.topLeft"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "topRight"}            ],
+           "originalName": "actualCornerRadius.topRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isActiveCellStyleEnabled"}            ],
+           "originalName": "IsActiveCellStyleEnabled"
        },
         {
            "names": [
@@ -2624,6 +2999,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "autoAcceptEdits"}            ],
+           "originalName": "AutoAcceptEdits"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string[]", "mappedName": "primaryKey"}            ],
            "originalName": "PrimaryKey"
        },
@@ -2654,6 +3034,31 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canUndo"}            ],
+           "originalName": "CanUndo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canRedo"}            ],
+           "originalName": "CanRedo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "canCommit"}            ],
+           "originalName": "CanCommit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "enterBehavior"}            ],
+           "originalName": "EnterBehavior"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "enterBehaviorAfterEdit"}            ],
+           "originalName": "EnterBehaviorAfterEdit"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getHitCell"}            ],
            "originalName": "GetHitCell"
        },
@@ -2666,6 +3071,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
            "originalName": "Flush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyScrollStart"}            ],
+           "originalName": "NotifyScrollStart"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyScrollStop"}            ],
+           "originalName": "NotifyScrollStop"
        },
         {
            "names": [
@@ -2754,7 +3169,7 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setActiveResponsiveState1"}            ],
+               { "platform": "React",  "mappedType": "method", "mappedName": "setActiveResponsiveState"}            ],
            "originalName": "SetActiveResponsiveState"
        },
         {
@@ -2811,6 +3226,86 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getSectionSummaryResults"}            ],
            "originalName": "GetSectionSummaryResults"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "commitEdits"}            ],
+           "originalName": "CommitEdits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "cancelEdits"}            ],
+           "originalName": "CancelEdits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "acceptCommit"}            ],
+           "originalName": "AcceptCommit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "rejectCommit"}            ],
+           "originalName": "RejectCommit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "undo"}            ],
+           "originalName": "Undo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "redo"}            ],
+           "originalName": "Redo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "updatePropertyAtKey"}            ],
+           "originalName": "UpdatePropertyAtKey"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "removeItemByKey"}            ],
+           "originalName": "RemoveItemByKey"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "removeItem"}            ],
+           "originalName": "RemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "acceptEdit"}            ],
+           "originalName": "AcceptEdit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "rejectEdit"}            ],
+           "originalName": "RejectEdit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "setEditError"}            ],
+           "originalName": "SetEditError"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "startEditMode"}            ],
+           "originalName": "StartEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "endEditMode"}            ],
+           "originalName": "EndEditMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "selectAllRows"}            ],
+           "originalName": "SelectAllRows"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "deselectAllRows"}            ],
+           "originalName": "DeselectAllRows"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -2871,6 +3366,8 @@
     "originalName": "GridCellPosition",
    "names": [
         { "platform": "React",     "fileName": "igr-grid-cell-position.ts",
+    "dynamicModuleName": "igr-grid-cell-position-dynamic-module.ts",
+    "moduleName": "igr-grid-cell-position-module.ts",
  "mappedName": "IgrGridCellPosition"}   ],
    "members": [
         {
@@ -2904,7 +3401,26 @@
         { "platform": "React",     "fileName": "igr-grid-columns-auto-generated-event-args.ts",
  "mappedName": "IgrGridColumnsAutoGeneratedEventArgs"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridColumnCollection", "mappedName": "columns"}            ],
+           "originalName": "Columns"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnsChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-columns-changed-event-args.ts",
+ "mappedName": "IgrGridColumnsChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridColumnCollection", "mappedName": "columns"}            ],
+           "originalName": "Columns"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2915,7 +3431,21 @@
         { "platform": "React",     "fileName": "igr-grid-selected-items-changed-event-args.ts",
  "mappedName": "IgrGridSelectedItemsChangedEventArgs"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedItemsCollection", "mappedName": "currentItems"}            ],
+           "originalName": "CurrentItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedItemsCollection", "mappedName": "addedItems"}            ],
+           "originalName": "AddedItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedItemsCollection", "mappedName": "removedItems"}            ],
+           "originalName": "RemovedItems"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2926,6 +3456,11 @@
         { "platform": "React",     "fileName": "igr-grid-selected-keys-changed-event-args.ts",
  "mappedName": "IgrGridSelectedKeysChangedEventArgs"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedKeysCollection", "mappedName": "currentKeys"}            ],
+           "originalName": "CurrentKeys"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "IgrGridSelectedKeysCollection", "mappedName": "addedKeys"}            ],
@@ -2946,6 +3481,11 @@
         { "platform": "React",     "fileName": "igr-grid-selected-cells-changed-event-args.ts",
  "mappedName": "IgrGridSelectedCellsChangedEventArgs"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedCellsCollection", "mappedName": "currentCells"}            ],
+           "originalName": "CurrentCells"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "IgrGridSelectedCellsCollection", "mappedName": "addedCells"}            ],
@@ -2988,6 +3528,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "IgrGridSelectedCellRangesCollection", "mappedName": "currentRanges"}            ],
+           "originalName": "CurrentRanges"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "IgrGridSelectedCellRangesCollection", "mappedName": "addedRanges"}            ],
            "originalName": "AddedRanges"
        },
@@ -3015,6 +3560,16 @@
            "names": [
                { "platform": "React",  "mappedType": "IgrDataGrid", "mappedName": "grid"}            ],
            "originalName": "Grid"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MouseButton", "mappedName": "button"}            ],
+           "originalName": "Button"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDoubleClick"}            ],
+           "originalName": "IsDoubleClick"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -3087,9 +3642,203 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "GridCellValueChangingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-cell-value-changing-event-args.ts",
+ "mappedName": "IgrGridCellValueChangingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "editID"}            ],
+           "originalName": "EditID"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumn", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridDataCommittingEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-data-committing-event-args.ts",
+ "mappedName": "IgrGridDataCommittingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSourceAggregatedResult[]", "mappedName": "changes"}            ],
+           "originalName": "Changes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "commitID"}            ],
+           "originalName": "CommitID"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridDataCommittedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-data-committed-event-args.ts",
+ "mappedName": "IgrGridDataCommittedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "commitID"}            ],
+           "originalName": "CommitID"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DataSourceAggregatedResult[]", "mappedName": "changes"}            ],
+           "originalName": "Changes"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridSizeChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-size-changed-event-args.ts",
+ "mappedName": "IgrGridSizeChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "width"}            ],
+           "originalName": "Width"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "height"}            ],
+           "originalName": "Height"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnWidthChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-column-width-changed-event-args.ts",
+ "mappedName": "IgrGridColumnWidthChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumn", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumnWidth", "mappedName": "oldWidth"}            ],
+           "originalName": "OldWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumnWidth", "mappedName": "newWidth"}            ],
+           "originalName": "NewWidth"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCellEditStartedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-cell-edit-started-event-args.ts",
+ "mappedName": "IgrGridCellEditStartedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumn", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCellEditEndedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-cell-edit-ended-event-args.ts",
+ "mappedName": "IgrGridCellEditEndedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgrColumn", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridRowEditStartedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-row-edit-started-event-args.ts",
+ "mappedName": "IgrGridRowEditStartedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridRowEditEndedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-grid-row-edit-ended-event-args.ts",
+ "mappedName": "IgrGridRowEditEndedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "CellRange",
    "names": [
         { "platform": "React",     "fileName": "igr-cell-range.ts",
+    "dynamicModuleName": "igr-cell-range-dynamic-module.ts",
+    "moduleName": "igr-cell-range-module.ts",
  "mappedName": "IgrCellRange"}   ],
    "members": [
         {
@@ -3118,6 +3867,8 @@
     "originalName": "CellKey",
    "names": [
         { "platform": "React",     "fileName": "igr-cell-key.ts",
+    "dynamicModuleName": "igr-cell-key-dynamic-module.ts",
+    "moduleName": "igr-cell-key-module.ts",
  "mappedName": "IgrCellKey"}   ],
    "members": [
         {
@@ -3141,8 +3892,30 @@
     "originalName": "ColumnGroupDescription",
    "names": [
         { "platform": "React",     "fileName": "igr-column-group-description.ts",
+    "dynamicModuleName": "igr-column-group-description-dynamic-module.ts",
+    "moduleName": "igr-column-group-description-module.ts",
  "mappedName": "IgrColumnGroupDescription"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "valueFormat"}            ],
+           "originalName": "ValueFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "valueFormatSpecifiers"}            ],
+           "originalName": "ValueFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "displayFormat"}            ],
+           "originalName": "DisplayFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "displayFormatSpecifiers"}            ],
+           "originalName": "DisplayFormatSpecifiers"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "formatOverride"}            ],
@@ -3227,12 +4000,14 @@
     "originalName": "ColumnSortDescription",
    "names": [
         { "platform": "React",     "fileName": "igr-column-sort-description.ts",
+    "dynamicModuleName": "igr-column-sort-description-dynamic-module.ts",
+    "moduleName": "igr-column-sort-description-module.ts",
  "mappedName": "IgrColumnSortDescription"}   ],
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "propertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "React",  "mappedType": "string", "mappedName": "field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -3243,11 +4018,6 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "equals"}            ],
            "originalName": "Equals"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getHashCode"}            ],
-           "originalName": "GetHashCode"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -3293,12 +4063,14 @@
     "originalName": "ColumnSummaryDescription",
    "names": [
         { "platform": "React",     "fileName": "igr-column-summary-description.ts",
+    "dynamicModuleName": "igr-column-summary-description-dynamic-module.ts",
+    "moduleName": "igr-column-summary-description-module.ts",
  "mappedName": "IgrColumnSummaryDescription"}   ],
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "propertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "React",  "mappedType": "string", "mappedName": "field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -3317,6 +4089,26 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "valueFormat"}            ],
+           "originalName": "ValueFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "valueFormatSpecifiers"}            ],
+           "originalName": "ValueFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "displayFormat"}            ],
+           "originalName": "DisplayFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "displayFormatSpecifiers"}            ],
+           "originalName": "DisplayFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "formatOverride"}            ],
            "originalName": "FormatOverride"
        },
@@ -3329,11 +4121,6 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "equals"}            ],
            "originalName": "Equals"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getHashCode"}            ],
-           "originalName": "GetHashCode"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -3345,8 +4132,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "propertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "React",  "mappedType": "string", "mappedName": "field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -3426,6 +4213,38 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "ComboBoxColumn",
+   "names": [
+        { "platform": "React",     "fileName": "igr-combo-box-column.ts",
+    "dynamicModuleName": "igr-combo-box-column-dynamic-module.ts",
+    "moduleName": "igr-combo-box-column-module.ts",
+ "mappedName": "IgrComboBoxColumn"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSource", "mappedName": "actualDataSource"}            ],
+           "originalName": "ActualDataSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "dataSource"}            ],
+           "originalName": "ItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textField"}            ],
+           "originalName": "TextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "valueField"}            ],
+           "originalName": "ValueField"
+       }   ],
+    "originalBaseTypeName": "Column",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "DateTimeColumn",
    "names": [
         { "platform": "React",     "fileName": "igr-date-time-column.ts",
@@ -3440,8 +4259,38 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "formatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "formatOverride"}            ],
            "originalName": "FormatOverride"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editorDataSource"}            ],
+           "originalName": "EditorItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editorTextField"}            ],
+           "originalName": "EditorTextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "editorValueField"}            ],
+           "originalName": "EditorValueField"
        }   ],
     "originalBaseTypeName": "Column",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -3467,6 +4316,11 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "activationBorder"}            ],
            "originalName": "ActivationBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "errorBorder"}            ],
+           "originalName": "ErrorBorder"
        },
         {
            "names": [
@@ -3515,6 +4369,26 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderLeftWidth"}            ],
+           "originalName": "ErrorBorderLeftWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderTopWidth"}            ],
+           "originalName": "ErrorBorderTopWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderRightWidth"}            ],
+           "originalName": "ErrorBorderRightWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "errorBorderBottomWidth"}            ],
+           "originalName": "ErrorBorderBottomWidth"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "actualBackground"}            ],
            "originalName": "ActualBackground"
        },
@@ -3522,6 +4396,11 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "actualActivationBorder"}            ],
            "originalName": "ActualActivationBorder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualErrorBorder"}            ],
+           "originalName": "ActualErrorBorder"
        },
         {
            "names": [
@@ -3703,8 +4582,8 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "propertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "React",  "mappedType": "string", "mappedName": "field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -3725,6 +4604,26 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "actualSelectedBackground"}            ],
            "originalName": "ActualSelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "rowHoverBackground"}            ],
+           "originalName": "RowHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualHoverBackground"}            ],
+           "originalName": "ActualHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "rowHoverTextColor"}            ],
+           "originalName": "RowHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualRowHoverTextColor"}            ],
+           "originalName": "ActualRowHoverTextColor"
        },
         {
            "names": [
@@ -3833,6 +4732,31 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEditable"}            ],
+           "originalName": "IsEditable"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "deletedTextColor"}            ],
+           "originalName": "DeletedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualDeletedTextColor"}            ],
+           "originalName": "ActualDeletedTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "editOpacity"}            ],
+           "originalName": "EditOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualEditOpacity"}            ],
+           "originalName": "ActualEditOpacity"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getUniqueKey"}            ],
            "originalName": "GetUniqueKey"
        },
@@ -3869,6 +4793,8 @@
     "originalName": "ColumnWidth",
    "names": [
         { "platform": "React",     "fileName": "igr-column-width.ts",
+    "dynamicModuleName": "igr-column-width-dynamic-module.ts",
+    "moduleName": "igr-column-width-module.ts",
  "mappedName": "IgrColumnWidth"}   ],
    "members": [
         {
@@ -3976,6 +4902,26 @@
            "names": [
                { "platform": "React",  "mappedType": "ImageStretchOptions", "mappedName": "imageStretchOption"}            ],
            "originalName": "ImageStretchOption"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editorDataSource"}            ],
+           "originalName": "EditorItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editorTextField"}            ],
+           "originalName": "EditorTextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "editorValueField"}            ],
+           "originalName": "EditorValueField"
        }   ],
     "originalBaseTypeName": "Column",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -4031,8 +4977,38 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "formatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "formatOverride"}            ],
            "originalName": "FormatOverride"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editorDataSource"}            ],
+           "originalName": "EditorItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editorTextField"}            ],
+           "originalName": "EditorTextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "editorValueField"}            ],
+           "originalName": "EditorValueField"
        }   ],
     "originalBaseTypeName": "Column",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -4298,7 +5274,26 @@
     "moduleName": "igr-text-column-module.ts",
  "mappedName": "IgrTextColumn"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "editorDataSource"}            ],
+           "originalName": "EditorItemsSource"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "editorTextField"}            ],
+           "originalName": "EditorTextField"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "editorValueField"}            ],
+           "originalName": "EditorValueField"
+       }   ],
     "originalBaseTypeName": "Column",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -4314,6 +5309,191 @@
    ],
     "originalBaseTypeName": "Header",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EnterKeyBehaviors",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "EnterKeyBehaviors.ts",
+ "mappedName": "EnterKeyBehaviors"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "Edit"}            ],
+           "originalName": "Edit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "MoveDown"}            ],
+           "originalName": "MoveDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "MoveRight"}            ],
+           "originalName": "MoveRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "MoveUp"}            ],
+           "originalName": "MoveUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviors", "mappedName": "MoveLeft"}            ],
+           "originalName": "MoveLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EnterKeyBehaviorAfterEdit",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "EnterKeyBehaviorAfterEdit.ts",
+ "mappedName": "EnterKeyBehaviorAfterEdit"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "MoveDown"}            ],
+           "originalName": "MoveDown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "MoveRight"}            ],
+           "originalName": "MoveRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "MoveUp"}            ],
+           "originalName": "MoveUp"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "MoveLeft"}            ],
+           "originalName": "MoveLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditModeType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "EditModeType.ts",
+ "mappedName": "EditModeType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeType", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeType", "mappedName": "Cell"}            ],
+           "originalName": "Cell"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeType", "mappedName": "CellBatch"}            ],
+           "originalName": "CellBatch"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeType", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditModeClickAction",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "EditModeClickAction.ts",
+ "mappedName": "EditModeClickAction"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeClickAction", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeClickAction", "mappedName": "SingleClick"}            ],
+           "originalName": "SingleClick"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditModeClickAction", "mappedName": "DoubleClick"}            ],
+           "originalName": "DoubleClick"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "EditorType.ts",
+ "mappedName": "EditorType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "Text"}            ],
+           "originalName": "Text"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "Numeric"}            ],
+           "originalName": "Numeric"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "Date"}            ],
+           "originalName": "Date"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "EditorType", "mappedName": "Combo"}            ],
+           "originalName": "Combo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {

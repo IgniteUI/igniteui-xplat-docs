@@ -70,6 +70,11 @@
            "names": [
                { "platform": "React",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
            "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -109,6 +114,11 @@
            "names": [
                { "platform": "React",  "mappedType": "IgrCategoryYAxis", "mappedName": "barFragmentYAxis"}            ],
            "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
+           "originalName": "IsVertical"
        },
         {
            "names": [
@@ -186,6 +196,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isFragment"}            ],
            "originalName": "IsFragment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -252,6 +267,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isFragment"}            ],
            "originalName": "IsFragment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -265,7 +285,11 @@
     "moduleName": "igr-stacked-100-area-series-module.ts",
  "mappedName": "IgrStacked100AreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedAreaSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -278,7 +302,11 @@
     "moduleName": "igr-stacked-100-bar-series-module.ts",
  "mappedName": "IgrStacked100BarSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedBarSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -291,7 +319,11 @@
     "moduleName": "igr-stacked-100-column-series-module.ts",
  "mappedName": "IgrStacked100ColumnSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedColumnSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -304,7 +336,11 @@
     "moduleName": "igr-stacked-100-line-series-module.ts",
  "mappedName": "IgrStacked100LineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedLineSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -317,7 +353,11 @@
     "moduleName": "igr-stacked-100-spline-area-series-module.ts",
  "mappedName": "IgrStacked100SplineAreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedSplineAreaSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -330,7 +370,11 @@
     "moduleName": "igr-stacked-100-spline-series-module.ts",
  "mappedName": "IgrStacked100SplineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedSplineSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -425,6 +469,11 @@
     "moduleName": "igr-stacked-fragment-series-module.ts",
  "mappedName": "IgrStackedFragmentSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "dataSource"}            ],
+           "originalName": "ItemsSource"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "brush"}            ],
@@ -632,6 +681,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualMarkerThickness"}            ],
+           "originalName": "ActualMarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "title"}            ],
            "originalName": "Title"
        },
@@ -654,6 +713,116 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "parentOrLocalBrush"}            ],
            "originalName": "ParentOrLocalBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "toWorldPosition"}            ],
+           "originalName": "ToWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "fromWorldPosition"}            ],
+           "originalName": "FromWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getEffectiveViewport"}            ],
+           "originalName": "GetEffectiveViewport"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "simulateHover"}            ],
+           "originalName": "SimulateHover"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "moveCursorPoint"}            ],
+           "originalName": "MoveCursorPoint"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -777,6 +946,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isStacked"}            ],
            "originalName": "IsStacked"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
        },
         {
            "names": [

@@ -28,7 +28,7 @@ $PlatformName$ チャート コンポーネントを使用すると、マウス�
 
 チャートでは、ズームはデフォルトでオンになっています。UI でナビゲーションを無効にするには、ズームを無効にする方向に応じて、チャートの `IsHorizontalZoomEnabled` プロパティまたは `IsVerticalZoomEnabled` プロパティのいずれかを false に設定する必要があります。
 
-またマウスやタッチでズームまたはパンニングできます。チャートの `DefaultInteraction` プロパティは、マウスクリック イベントやタッチ イベントで何が起こるかを決定します。このプロパティはデフォルトで `DragZoom` に設定されており、ズームを有効に設定すると、クリックしてドラッグした際にプロット領域の上に四角形のプレビューが配置され、グラフのズーム領域になります。この `DefaultInteraction` プロパティは、パンニングを許可する場合は `DragPan`、これらの操作を禁止する場合は `None` に設定することもできます。
+同じ API が `CategoryChart` および `FinancialChart` コンポーネントにも適用されることに注意してください。
 
 ## タッチ、マウスとキーボードによるチャート ナビゲーション
 
@@ -48,6 +48,76 @@ $PlatformShort$ データ チャートのナビゲーションは、タッチ、
 - Windows キー
 - Apple キー
 - None
+
+以下のコード スニペットは、チャートで UI ナビゲーションを有効にする方法を示しています。以下の例では、**Shift** キーを押しながらズーム、**Alt** キーを押しながらパンのみ可能です:
+
+同じ API が `CategoryChart` および `FinancialChart` コンポーネントにも適用されることに注意してください。
+
+```razor
+<DataChart Width="100%" Height="400px"
+    DefaultInteraction="InteractionState.None"
+    DragModifier="ModifierKeys.Shift"
+    PanModifier="ModifierKeys.Alt"
+    IsHorizontalZoomEnabled="true"
+    IsVerticalZoomEnabled="true">
+</DataChart>
+```
+
+```html
+<igx-data-chart width="100%" height="400px"
+    defaultInteraction="None"
+    dragModifier="Shift"
+    panModifier="Alt"
+    isHorizontalZoomEnabled="true"
+    isVerticalZoomEnabled="true">
+</igx-data-chart>
+```
+
+```tsx
+<IgrDataChart width="100%" height="400px"
+    defaultInteraction="None"
+    dragModifier="Shift"
+    panModifier="Alt"
+    isHorizontalZoomEnabled={true}
+    isVerticalZoomEnabled={true}/>
+```
+
+```html
+<igc-data-chart width="100%" height="400px"
+    default-interaction="None"
+    drag-modifier="Shift"
+    pan-modifier="Alt"
+    is-horizontal-zoom-enabled="true"
+    is-vertical-zoom-enabled="true">
+</igc-data-chart>
+```
+
+<!-- ## Chart Navigation with Overview Plus Detail Pane
+
+In the `XamDataChart` control, there is an overlaid control that allows navigation. This control supports a preview of most supported series types as well as all navigation methods described above. This overlay is the overview plus detail pane, and it can be enabled by setting the `overviewPlusDetailPaneVisibility` property.
+
+The following is a summary of the operations a user can carry out with the overview plus detail pane:
+
+- `Zoom a chart incrementally`: Use the mouse wheel or the zoom in/out buttons of the overview plus detail pane.
+- `Zoom a chart to a specific level`: Use the zoom slider of the overview plus detail pane.
+- `Reset a chart to 100% zoom level`: Use the zoom reset button of the overview plus detail pane.
+- `Pan chart in all directions`: Click and drag the window rectangle inside of the preview plot area on the overview plus detail pane.
+- `Pan to a specific region of the chart`: Clicking outside of the window rectangle inside of the preview area will move the window rectangle to that area.
+- `Change mouse drag interaction in the chart`: Use the cursor button on the overview plus detail pane. This will switch between panning and drag zooming with the mouse.
+
+The following code snippet demonstrates how to enable the overview plus detail pane:
+
+```html
+// TODO
+```
+
+```tsx
+<IgrDataChart dataSource={this.data}
+    width="100%"
+    height="400px"
+    overviewPlusDetailPaneVisibility="Visible">
+</IgrDataChart>
+``` -->
 
 ## コードによるチャート ナビゲーション
 
@@ -77,6 +147,6 @@ $PlatformShort$ データ チャートは、チャートでズームまたはパ
 - `IsHorizontalZoomEnabled`
 - `IsVerticalZoomEnabled`
 - `PanModifier`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`

@@ -21,11 +21,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
-           "originalName": "TitleStyle"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "titleColor"}            ],
            "originalName": "TitleColor"
        },

@@ -114,9 +114,6 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 - [シェイプ チャート](shape-chart.md)
 
 ## API メンバー
-
-以下は、上記のセクションで説明した API メンバーのリストです。
-
-- `XamTreemap`
+- `Treemap`
 - `LayoutOrientation`
 - `LayoutType`

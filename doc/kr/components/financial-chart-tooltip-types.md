@@ -6,13 +6,13 @@ _language: kr
 ---
 # $PlatformShort$ 도구 설명 유형
 
-이 항목에서는 `XamFinancialChart`에서 사용할 수 있는 도구 설명 유형에 대한 개념 정보를 제공합니다.
+이 항목에서는 `FinancialChart`에서 사용할 수 있는 도구 설명 유형에 대한 개념 정보를 제공합니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types"
            github-src="charts/financial-chart/tooltip-types">
 </code-view>
 

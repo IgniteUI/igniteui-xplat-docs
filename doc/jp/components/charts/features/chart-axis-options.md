@@ -2,7 +2,7 @@
 title: $PlatformShort$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ 軸オプション
 _keywords: $PlatformShort$ Axis, Options, Infragistics, $PlatformShort$ 軸, オプション, インフラジスティックス
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
@@ -74,4 +74,4 @@ TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
 - `XAxisMinimumValue`
 - `YAxisMaximumValue`
 - `YAxisMinimumValue`
-- `XamCategoryChart`
+- `CategoryChart`

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $PlatformShort$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
-mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 ---
 # $PlatformShort$ Stock Chart
 
@@ -10,7 +10,7 @@ The $ProductName$ Stock Chart, sometimes referred to as $PlatformShort$ Financia
 
 ## $PlatformShort$ Stock Chart Example
 
-You can create Stock Chart using the `XamFinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
+You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -168,4 +168,4 @@ The following table lists API members mentioned in the above sections:
 - `CrosshairsSnapToData`
 - `IndicatorTypes`
 - `ZoomSliderType`
-- `XamFinancialChart`
+- `FinancialChart`

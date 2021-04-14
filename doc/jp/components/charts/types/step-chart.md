@@ -3,6 +3,8 @@ title: $PlatformShort$ ステップ チャート | データ可視化 | イン�
 _description: インフラジスティックスの $PlatformShort$ ステップ チャート
 _keywords: $PlatformShort$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, ステップ エリア チャート, ステップ折れ線チャート, インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "ChartType"]
+_keywords: $PlatformShort$ Charts, Step Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, インフラジスティックス
+mentionedTypes: ["CategoryChart", "XamDataChart", "ChartType"]
 _language: ja
 ---
 # $PlatformShort$ ステップ チャート
@@ -12,6 +14,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 ## $PlatformShort$ ステップ エリア チャート
 
 次の例に示すように、`ChartType` プロパティを `StepArea` 値に設定することにより、`XamCategoryChart` コントロールで $PlatformShort$ ステップ エリア チャートを作成できます。
+`CategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -69,3 +72,6 @@ $PlatformShort$ ステップ折れ線チャートは、線の下の領域が塗�
 - `MarkerOutlines`
 - `MarkerTypes`
 
+チャート タイプ                  | コントロール名   | API メンバー
+----------------------------|----------------|------------------------
+ステップ                        | `CategoryChart` | `ChartType` = `StepLine`

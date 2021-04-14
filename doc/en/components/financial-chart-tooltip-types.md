@@ -2,7 +2,7 @@
 title: $PlatformShort$ Financial Chart | ToolTip Types | Infragistics
 _description: Use Infragistics' $PlatformShort$ financial chart's tooltips to display important data. View our $ProductName$ graph tutorials!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, tooltips, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 ---
 # $PlatformShort$ Tooltip Types
 
@@ -10,10 +10,10 @@ This topic provides conceptual information about the tooltip types available on 
 
 ## $PlatformShort$ Tooltip Types Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types" 
-           alt="$PlatformShort$ Tooltip Types Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types"
+           alt="$PlatformShort$ Tooltip Types Example"
            github-src="charts/financial-chart/tooltip-types">
 </code-view>
 
@@ -49,7 +49,7 @@ The $PlatformShort$ financial chart component can be configured to display Toolt
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%"                
+    Height="100%"
     DataSource="DataSource"
     ToolTipType="ToolTipType.Category"/>
 ```

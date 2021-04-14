@@ -1,0 +1,223 @@
+{
+"extraFiles": [
+"igr-calendar-module.ts"
+],
+"types": [
+{
+    "originalName": "Calendar",
+   "names": [
+        { "platform": "React",     "fileName": "igr-calendar.ts",
+ "mappedName": "IgrCalendar"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "today"}            ],
+           "originalName": "Today"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "minDate"}            ],
+           "originalName": "MinDate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "maxDate"}            ],
+           "originalName": "MaxDate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectedDateBackgroundColor"}            ],
+           "originalName": "SelectedDateBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectedFocusDateBackgroundColor"}            ],
+           "originalName": "SelectedFocusDateBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "focusDateBackgroundColor"}            ],
+           "originalName": "FocusDateBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hoverBackgroundColor"}            ],
+           "originalName": "HoverBackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "selectedDateTextColor"}            ],
+           "originalName": "SelectedDateTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "focusDateTextColor"}            ],
+           "originalName": "FocusDateTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "currentDateTextColor"}            ],
+           "originalName": "CurrentDateTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "currentDateBorderColor"}            ],
+           "originalName": "CurrentDateBorderColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showTodayButton"}            ],
+           "originalName": "ShowTodayButton"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "firstDayOfWeek"}            ],
+           "originalName": "FirstDayOfWeek"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FirstWeek", "mappedName": "firstWeekOfYear"}            ],
+           "originalName": "FirstWeekOfYear"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showWeekNumbers"}            ],
+           "originalName": "ShowWeekNumbers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
+           "originalName": "ExportVisualModel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
+           "originalName": "ExportSerializedVisualModel"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "ValueChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-value-changed-event-args.ts",
+ "mappedName": "IgrValueChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Date", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "DayOfWeek",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DayOfWeek.ts",
+ "mappedName": "DayOfWeek"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Sunday"}            ],
+           "originalName": "Sunday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Monday"}            ],
+           "originalName": "Monday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Tuesday"}            ],
+           "originalName": "Tuesday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Wednesday"}            ],
+           "originalName": "Wednesday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Thursday"}            ],
+           "originalName": "Thursday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Friday"}            ],
+           "originalName": "Friday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DayOfWeek", "mappedName": "Saturday"}            ],
+           "originalName": "Saturday"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+},
+{
+    "originalName": "FirstWeek",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "FirstWeek.ts",
+ "mappedName": "FirstWeek"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FirstWeek", "mappedName": "FirstDay"}            ],
+           "originalName": "FirstDay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FirstWeek", "mappedName": "FirstFullWeek"}            ],
+           "originalName": "FirstFullWeek"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FirstWeek", "mappedName": "FirstFourDayWeek"}            ],
+           "originalName": "FirstFourDayWeek"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
+}
+]
+}

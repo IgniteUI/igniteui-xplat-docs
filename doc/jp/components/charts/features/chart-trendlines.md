@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート トレンドライン | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート トレンドライン
 _keywords: $PlatformShort$ Charts, Trendlines, Infragistics, $PlatformShort$ チャート, トレンドライン, インフラジスティックス
-mentionedTypes: ["XamFinancialChart", "XamCategoryChart", "XamDataChart", "TrendLineType"]
+mentionedTypes: ["FinancialChart", "TrendLineType"]
 _language: ja
 ---
 
@@ -15,6 +15,7 @@ $ProductName$ チャートでは、トレンドラインはトレンドの識別
 # $PlatformShort$ チャート トレンドラインの例
 
 次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `XamFinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
+$PlatformShort$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `CategoryChart`、`FinancialChart`、および `XamDataChart` でサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

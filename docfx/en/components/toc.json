@@ -104,7 +104,7 @@
     "exclude": ["Angular"],
     "name": "Table / Grid",
     "href": "data-grid.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "name": "Accessibility Compliance",
@@ -536,7 +536,8 @@
     "status": ""
   },
   {
-    "name": "Charts (OLD)",
+    "name": "Charts",
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "header": true,
     "exclude": ["Blazor", "Angular"]
   },

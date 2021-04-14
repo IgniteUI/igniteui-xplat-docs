@@ -2,13 +2,13 @@
 title: $PlatformShort$ チャート強調表示 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート強調表示
 _keywords: $PlatformShort$ Charts, Highlighting, Infragistics, $PlatformShort$ チャート, 強調表示, インフラジスティックス
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
 # $PlatformShort$ チャート強調表示
 
-すべての $PlatformShort$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントによってサポートされており、強調表示機能を使用するための同じ API を備えています。
+すべての $PlatformShort$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントによってサポートされており、強調表示機能を使用するための同じ API を備えています。
 
 ## $PlatformShort$ チャート強調表示の例
 
@@ -26,7 +26,7 @@ _language: ja
 
 ## 強調表示レイヤー
 
-$ProductName$ `XamCategoryChart` は、データ項目にカーソルを合わせると 3 種類の強調表示を有効にできます。
+$ProductName$ `CategoryChart` は、データ項目にカーソルを合わせると 3 種類の強調表示を有効にできます。
 
 1. シリーズ ハイライトは、ポインターがデータ ポイント上ある場合に、マーカーまたは列で表される単一のデータ ポイントをハイライトします。これは、`IsSeriesHighlightingEnabled` プロパティを true に設定することで有効になります。
 
@@ -49,7 +49,6 @@ $ProductName$ `XamCategoryChart` は、データ項目にカーソルを合わ�
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
-
+- `FinancialChart`

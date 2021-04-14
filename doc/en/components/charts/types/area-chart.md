@@ -2,7 +2,7 @@
 title: $PlatformShort$ Area Chart | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Area Chart
 _keywords: $PlatformShort$ Charts, Area Chart, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "ChartType"]
 ---
 # $PlatformShort$ Area Chart
 
@@ -12,7 +12,7 @@ Area Chart is based on [Line Chart](line-chart.md) or [Spline Chart](splin
 
 ## $PlatformShort$ Area Chart Example
 
-You can create $ProductName$ Category Area Chart in the `XamCategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
+You can create $ProductName$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -56,7 +56,7 @@ There are several common use cases for choosing an Area Chart:
 
 ## $PlatformShort$ Area Chart with Single Series
 
-$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `Area` value, as shown in the example below.
+$PlatformShort$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to `Area` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -68,7 +68,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same component. This is accomplished by binding multiple data source to `ItemsSource` property of the `XamCategoryChart` control.
+Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same component. This is accomplished by binding multiple data source to `ItemsSource` property of the `CategoryChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -92,11 +92,11 @@ Area charts often have semi-transparent fill for their areas, thicker li
 
 ## Advanced Types of Area Charts
 
-The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
 ## $PlatformShort$ Step Area Chart
 
-The $ProductName$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `XamCategoryChart` control by binding your data and setting `ChartType` property to `StepArea` value, as shown in the example below.
+The $ProductName$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to `StepArea` value, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -109,7 +109,7 @@ The $ProductName$ Step Area Chart belongs to a group of category charts and it i
 
 ## Advanced Types of Area Charts
 
-The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+The following sections explain more advanced types of $PlatformShort$ Area Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
 ## $PlatformShort$ Range Area Chart
 
@@ -231,8 +231,8 @@ The following table lists API members mentioned in above sections:
 
 Chart Type               | Control Name       | API Members
 -------------------------|--------------------|-----------------------
-Area                     | `XamCategoryChart` | `ChartType` = `Area`
-Step Area                | `XamCategoryChart` | `ChartType` = `StepArea`
+Area                     | `CategoryChart` | `ChartType` = `Area`
+Step Area                | `CategoryChart` | `ChartType` = `StepArea`
 Range Area               | `XamDataChart`     | `RangeAreaSeries`
 Radial Area              | `XamDataChart`     | `RadialAreaSeries`
 Polar Area               | `XamDataChart`     | `PolarAreaSeries`
