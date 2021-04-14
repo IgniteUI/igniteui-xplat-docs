@@ -13,7 +13,6 @@ $ProductName$ エリア チャートは、線の下の領域が塗りつぶさ�
 
 ## $PlatformShort$ エリア チャートの例
 
-`XamCategoryChart` コントロールで $ProductName$ カテゴリ エリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
 `CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 <code-view style="height: 600px"
@@ -111,7 +110,7 @@ $ProductName$ ステップ エリア チャートはカテゴリ チャートの
 
 ## 高度なタイプのエリア チャート
 
-次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
 
 ## $PlatformShort$ 範囲エリア チャート
 

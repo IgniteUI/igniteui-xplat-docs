@@ -111,13 +111,10 @@ $PlatformShort$ データ チャートでは、プロット領域内に軸を配
 - `CrossingAxis`
 - `CrossingValue`
 - `NumericYAxis`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
-- `CategoryChart`
-- `FinancialChart`
-- `XamDataChart`
 - `YAxisLabelLocation`

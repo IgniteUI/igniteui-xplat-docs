@@ -52,3 +52,4 @@ $ProductName$ `CategoryChart` は、データ項目にカーソルを合わせ�
 - `CategoryChart`
 - `XamDataChart`
 - `FinancialChart`
+

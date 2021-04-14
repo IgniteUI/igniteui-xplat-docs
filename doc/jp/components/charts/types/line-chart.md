@@ -1,16 +1,13 @@
 ---
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics, $PlatformShort$ チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
 mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 _language: ja
 ---
 # $PlatformShort$ 折れ線チャート
 
 $ProductName$ 折れ線チャート (または折れ線グラフ) は、カテゴリ チャートの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
-$PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
-
-複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `CategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
 
 ## $PlatformShort$ 折れ線チャートの例
 

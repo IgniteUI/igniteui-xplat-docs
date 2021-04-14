@@ -2,8 +2,6 @@
 title: $PlatformShort$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: $PlatformShort$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
-mentionedTypes: ["XamFinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
-_keywords: $PlatformShort$ Charts, Stock Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, インフラジスティックス
 mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 _language: ja
 ---
@@ -13,7 +11,6 @@ $ProductName$ 株価チャート ($PlatformShort$ ファイナンシャル チ�
 
 ## $PlatformShort$ 株価チャートの例
 
-`XamFinancialChart` コントロールで株価チャートを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 `FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
 <code-view style="height: 600px"
@@ -154,9 +151,13 @@ $ProductName$ 株価チャート ($PlatformShort$ ファイナンシャル チ�
 
 ## その他のリソース
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-株価チャート      | `FinancialChart`     | `FinancialChart`
+関連するチャート機能の詳細については、以下のトピックを参照してください。
+
+- [チャート アニメーション](../features/chart-animations.md)
+- [チャート注釈](../features/chart-annotations.md)
+- [チャート ナビゲーション](../features/chart-navigation.md)
+- [チャート トレンドライン](../features/chart-trendlines.md)
+- [チャートのパフォーマンス](../features/chart-performance.md)
 
 ## API メンバー
 

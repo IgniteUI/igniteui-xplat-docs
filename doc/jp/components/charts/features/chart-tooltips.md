@@ -10,6 +10,10 @@ _language: ja
 
 $PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
+## $PlatformShort$ チャート ツールチップのタイプ
+
+次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
+
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
@@ -19,13 +23,21 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 <div class="divider--half"></div>
 
+`ToolTipType` プロパティは構成可能であり、次のいずれかのオプションに設定できます。
+
+プロパティの値     | 説明
+-------------------|----------------
+`Default` ツールチップ | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
+`Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
+`Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
+
 ## $PlatformShort$ チャート ツールチップ テンプレート
 
 組み込みタイプのツールチップがいずれも要件に一致しない場合は、独自のツールチップを作成して、シリーズ タイトル、データ値、および軸値を表示およびスタイル設定できます。次のセクションでは、さまざまなタイプの $PlatformShort$ チャートでこれを行う方法を示します。
 
-## カテゴリ チャートのカスタム ツールチップ
+### カテゴリ チャートのカスタム ツールチップ
 
-この例は、$PlatformShort$ カテゴリ チャート コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。
+この例は、$PlatformShort$ `CategoryChart` コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。$PlatformShort$ `FinancialChart` コントロールのカスタム ツールチップにも同じロジックを適用できることに注意してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -63,3 +75,4 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 - `ToolTipType`
 - `CategoryChart`
+- `XamDataChart`
