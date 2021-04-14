@@ -132,7 +132,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## 高度なタイプの折れ線チャート
 
-次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ 折れ線チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ 折れ線チャートについて説明します。
 
 ## $PlatformShort$ 積層型折れ線チャート
 

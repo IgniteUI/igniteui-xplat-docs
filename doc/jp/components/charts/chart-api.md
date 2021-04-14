@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート API | データ可視化 ツール | インフラジスティックス
 _description:インフラジスティックスの $ProductName$ チャートは、チャートのビジュアルを構成およびスタイル設定するための便利な API を提供します。
 _keywords: $PlatformShort$ charts, chart API, API, $ProductName$, Infragistics, $PlatformShort$ チャート, チャート API, インフラジスティックス
-mentionedTypes: ["XamDataChart", "XamCategoryChart", "XamFinancialChart"]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -13,7 +13,7 @@ $ProductName$ チャートは、さまざまなタイプのチャートをプロ
 
 ## $PlatformShort$ カテゴリ チャート API
 
-$PlatformShort$ `XamCategoryChart` には次の API メンバーがあります。
+$PlatformShort$ `CategoryChart` には次の API メンバーがあります。
 
 チャート プロパティ | 軸プロパティ | シリーズ プロパティ
 -----------------|-----------------|-------------------
@@ -21,7 +21,7 @@ $PlatformShort$ `XamCategoryChart` には次の API メンバーがあります�
 
 ## $PlatformShort$ ファイナンシャル チャート API
 
-$PlatformShort$ `XamFinancialChart` には次の API メンバーがあります。
+$PlatformShort$ `FinancialChart` には次の API メンバーがあります。
 
 チャート プロパティ | 軸プロパティ | シリーズ プロパティ
 -----------------|-----------------|-------------------

@@ -93,7 +93,7 @@ $PlatformShort$ エリア チャートは、生産される再生可能電力の
 
 ## 高度なタイプのエリア チャート
 
-次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ エリア チャートについて説明します。
 
 ## $PlatformShort$ ステップ エリア チャート
 

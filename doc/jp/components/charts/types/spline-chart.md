@@ -11,7 +11,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 ## $PlatformShort$ スプライン チャートの例
 
-次の例は、データをバインドし、`ChartType` プロパティを Spline 列挙型に設定することにより、`XamCategoryChart` コントロールで $PlatformShort$ スプライン チャートを作成する方法を示しています。
+次の例は、データをバインドし、`ChartType` プロパティを Spline 列挙型に設定することにより、`CategoryChart` コントロールで $PlatformShort$ スプライン チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -65,7 +65,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 ## 高度なタイプのスプライン チャート
 
-次のセクションでは、簡略化された API を使用した `XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ スプライン チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ スプライン チャートについて説明します。
 
 ## $PlatformShort$ 積層型スプライン チャート
 

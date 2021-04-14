@@ -37,7 +37,7 @@ $PlatformShort$ ステップ折れ線チャートは、線の下の領域が塗�
 
 ## $PlatformShort$ ステップ チャートのスタイル設定
 
-他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、`XamCategoryChart` コントロールの `MarkerTypes`、 `MarkerBrushes`、`MarkerOutlines`、折れ線の `Brushes`、および折れ線の `Outlines` プロパティを構成できます。
+他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、`CategoryChart` コントロールの `MarkerTypes`、 `MarkerBrushes`、`MarkerOutlines`、折れ線の `Brushes`、および折れ線の `Outlines` プロパティを構成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

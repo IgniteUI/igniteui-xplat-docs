@@ -59,7 +59,7 @@ $PlatformShort$ ポイント チャートを設定したら、マーカーとそ
 
 ## 高度なタイプのポイント チャート
 
-次のトピックに従って、`XamCategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して、より高度なタイプの $PlatformShort$ ポイント チャートを作成できます。
+次のトピックに従って、`CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して、より高度なタイプの $PlatformShort$ ポイント チャートを作成できます。
 
 - [散布バブル チャート](bubble-chart.md)
 - [散布マーカー チャート](scatter-chart.md#$PlatformShort$-散布マーカー-チャート)

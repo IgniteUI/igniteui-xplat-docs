@@ -104,7 +104,7 @@
     "exclude": ["Angular"],
     "name": "テーブル / グリッド",
     "href": "data-grid.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "name": "アクセシビリティの遵守",
