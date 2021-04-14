@@ -59,6 +59,8 @@ The $PlatformShort$ Date Picker editor component consists of three default parts
 
 - Calendar: Clicking the calendar button will open the calendar drop-down of the Date Picker. The calendar will open to show the month of the currently selected `Value`, if there is one. If a `Value` is not specified, the calendar will show the month corresponding to the current date. The month at the top can be clicked to show a list of months, and the same applies for the year. There are also arrow buttons to the left and right of the month and year visualization that will increment and decrement the shown month chronologically.
 
+- Clear Button: The 'x' icon will clear the current value.
+
 Property | Type | Description
 ---------|------|------------
 `IconColor` | string | Changes the color of the calendar button.
