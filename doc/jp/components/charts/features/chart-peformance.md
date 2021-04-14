@@ -1,8 +1,8 @@
 ---
-title: $PlatformShort$ チャート パフォーマンス | データ可視化 |   インフラジスティックス
+title: $PlatformShort$ チャート パフォーマンス | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート パフォーマンス
 _keywords: $PlatformShort$ Charts, Performance, Infragistics, $PlatformShort$ チャート, パフォーマンス, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamFinancialChart", "XamDataChart"]
+mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 _language: ja
 ---
 
@@ -16,7 +16,7 @@ $PlatformShort$ チャートは、数百万のデータ ポイントを描画し
 
 ## 高頻度 $PlatformShort$ チャート
 
-高頻度シナリオでは、$PlatformShort$ チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `XamCategoryChart` を示しています。
+高頻度シナリオでは、$PlatformShort$ チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `CategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -28,7 +28,7 @@ $PlatformShort$ チャートは、数百万のデータ ポイントを描画し
 
 ## 大量のデータの $PlatformShort$ チャート
 
-大量データのシナリオでは、$PlatformShort$ チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `XamCategoryChart` を示しています。
+大量データのシナリオでは、$PlatformShort$ チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `CategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -130,7 +130,7 @@ export class MultiDataSources {
 
 ### データ フィルタリング
 
-$PlatformShort$ `XamCategoryChart` および `XamFinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
+$PlatformShort$ `CategoryChart` および `FinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
 
 
 ```razor
@@ -143,6 +143,8 @@ this.Chart.ExcludedProperties = new string[] { "CHN",  "FRN", "GER" };
 this.Chart.includedProperties = [ "Year", "USA", "RUS" ];
 this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 ```
+
+## チャート パフォーマンス ガイドライン
 
 ### チャート タイプ
 
@@ -244,9 +246,9 @@ this.LineSeries.Resolution = 10;
 
 データ ポイント間の時間間隔に基づくスペースが重要でない場合は、DateTime をサポートする x 軸の使用はお勧めしません。代わりに、順序/カテゴリ軸を使用する必要があります。これは、データを結合する方法がより効率的であるためです。また、順序/カテゴリ軸は、時間ベースの x 軸のようにデータのソートを実行しません。
 
-> 注: `XamCategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
+> 注: `CategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
 
-このコード スニペットは、`XamFinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
+このコード スニペットは、`FinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
 
 ```razor
 <FinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
@@ -401,7 +403,7 @@ this.LineSeries.Resolution = 10;
 
 追加の軸ビジュアル (軸タイトルなど) を有効にしたり、デフォルト値を変更したりすると、$ProductShort$ チャートのパフォーマンスが低下する可能性があります。
 
-たとえば、`XamCategoryChart` または `XamFinancialChart` コントロールでこれらのプロパティを変更します。
+たとえば、`CategoryChart` または `FinancialChart` コントロールでこれらのプロパティを変更します。
 
 軸ビジュアル          | X 軸プロパティ | Y 軸プロパティ
 ---------------------|-------------------|-------------------
@@ -428,7 +430,7 @@ this.LineSeries.Resolution = 10;
 
 ## ファイナンシャル チャートのパフォーマンス
 
-上記のパフォーマンスガイドラインに加えて、$ProductShort$ `XamFinancialChart` コントロールには、パフォーマンスに影響を与える次の独自の機能があります。
+上記のパフォーマンスガイドラインに加えて、$ProductShort$ `FinancialChart` コントロールには、パフォーマンスに影響を与える次の独自の機能があります。
 
 ### Y 軸モード
 
