@@ -7,201 +7,6 @@
 ],
 "types": [
 {
-    "originalName": "RadialGaugeDuplicateLabelOmissionStrategy",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "RadialGaugeDuplicateLabelOmissionStrategy.ts",
- "mappedName": "RadialGaugeDuplicateLabelOmissionStrategy"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitLast"}            ],
-           "originalName": "OmitLast"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitFirst"}            ],
-           "originalName": "OmitFirst"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitNeither"}            ],
-           "originalName": "OmitNeither"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitBoth"}            ],
-           "originalName": "OmitBoth"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeBackingShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "RadialGaugeBackingShape.ts",
- "mappedName": "RadialGaugeBackingShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Circular"}            ],
-           "originalName": "Circular"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Fitted"}            ],
-           "originalName": "Fitted"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeScaleOversweepShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "RadialGaugeScaleOversweepShape.ts",
- "mappedName": "RadialGaugeScaleOversweepShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Circular"}            ],
-           "originalName": "Circular"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Fitted"}            ],
-           "originalName": "Fitted"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeNeedleShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "RadialGaugeNeedleShape.ts",
- "mappedName": "RadialGaugeNeedleShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Rectangle"}            ],
-           "originalName": "Rectangle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Triangle"}            ],
-           "originalName": "Triangle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Needle"}            ],
-           "originalName": "Needle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Trapezoid"}            ],
-           "originalName": "Trapezoid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "RectangleWithBulb"}            ],
-           "originalName": "RectangleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TriangleWithBulb"}            ],
-           "originalName": "TriangleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "NeedleWithBulb"}            ],
-           "originalName": "NeedleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TrapezoidWithBulb"}            ],
-           "originalName": "TrapezoidWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugePivotShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "RadialGaugePivotShape.ts",
- "mappedName": "RadialGaugePivotShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "Circle"}            ],
-           "originalName": "Circle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleWithHole"}            ],
-           "originalName": "CircleWithHole"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlay"}            ],
-           "originalName": "CircleOverlay"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlayWithHole"}            ],
-           "originalName": "CircleOverlayWithHole"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlay"}            ],
-           "originalName": "CircleUnderlay"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlayWithHole"}            ],
-           "originalName": "CircleUnderlayWithHole"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
     "originalName": "XamRadialGauge",
    "names": [
         { "platform": "Angular",     "fileName": "igx-radial-gauge-component.ts",
@@ -524,6 +329,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "animating"}            ],
            "originalName": "Animating"
        },
@@ -594,6 +409,201 @@
        }   ],
     "originalBaseTypeName": "Control",
     "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "RadialGaugeDuplicateLabelOmissionStrategy",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "RadialGaugeDuplicateLabelOmissionStrategy.ts",
+ "mappedName": "RadialGaugeDuplicateLabelOmissionStrategy"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitLast"}            ],
+           "originalName": "OmitLast"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitFirst"}            ],
+           "originalName": "OmitFirst"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitNeither"}            ],
+           "originalName": "OmitNeither"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitBoth"}            ],
+           "originalName": "OmitBoth"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "RadialGaugeBackingShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "RadialGaugeBackingShape.ts",
+ "mappedName": "RadialGaugeBackingShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Circular"}            ],
+           "originalName": "Circular"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Fitted"}            ],
+           "originalName": "Fitted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "RadialGaugeScaleOversweepShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "RadialGaugeScaleOversweepShape.ts",
+ "mappedName": "RadialGaugeScaleOversweepShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Circular"}            ],
+           "originalName": "Circular"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Fitted"}            ],
+           "originalName": "Fitted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "RadialGaugeNeedleShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "RadialGaugeNeedleShape.ts",
+ "mappedName": "RadialGaugeNeedleShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Rectangle"}            ],
+           "originalName": "Rectangle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Triangle"}            ],
+           "originalName": "Triangle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Needle"}            ],
+           "originalName": "Needle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Trapezoid"}            ],
+           "originalName": "Trapezoid"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "RectangleWithBulb"}            ],
+           "originalName": "RectangleWithBulb"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TriangleWithBulb"}            ],
+           "originalName": "TriangleWithBulb"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "NeedleWithBulb"}            ],
+           "originalName": "NeedleWithBulb"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TrapezoidWithBulb"}            ],
+           "originalName": "TrapezoidWithBulb"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "RadialGaugePivotShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "RadialGaugePivotShape.ts",
+ "mappedName": "RadialGaugePivotShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "Circle"}            ],
+           "originalName": "Circle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleWithHole"}            ],
+           "originalName": "CircleWithHole"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlay"}            ],
+           "originalName": "CircleOverlay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlayWithHole"}            ],
+           "originalName": "CircleOverlayWithHole"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlay"}            ],
+           "originalName": "CircleUnderlay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlayWithHole"}            ],
+           "originalName": "CircleUnderlayWithHole"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
     "originalNamespace": "Infragistics.Controls.Gauges"
 },
 {

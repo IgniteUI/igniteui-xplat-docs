@@ -293,6 +293,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "IgSize", "mappedName": "screenDpi"}            ],
+           "originalName": "ScreenDpi"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IList", "mappedName": "userDefinedFunctions"}            ],
            "originalName": "UserDefinedFunctions"
        }   ],

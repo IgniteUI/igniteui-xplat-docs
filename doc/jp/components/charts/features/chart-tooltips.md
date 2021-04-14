@@ -2,13 +2,13 @@
 title: $PlatformShort$ チャート ツールチップ | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート ツールチップ
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics, $PlatformShort$ チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "ToolTipType"]
+mentionedTypes: ["CategoryChart", "ToolTipType"]
 _language: ja
 ---
 
 # $PlatformShort$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -125,4 +125,4 @@ TODO uncomment above section when bug# 272693 is fixed
 
 ## API メンバー
 - `ToolTipType`
-- `XamCategoryChart`
+- `CategoryChart`

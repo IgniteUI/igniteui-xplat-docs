@@ -284,6 +284,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
            "originalName": "TransitionDuration"
        },

@@ -101,6 +101,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
            "originalName": "IsItemwise"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "orientation"}            ],
+           "originalName": "Orientation"
        }   ],
     "originalBaseTypeName": "LegendBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -170,6 +175,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
            "originalName": "IsFinancial"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
        }   ],
     "originalBaseTypeName": "ContentControl",
     "originalBaseTypeNamespace": "System.Windows",

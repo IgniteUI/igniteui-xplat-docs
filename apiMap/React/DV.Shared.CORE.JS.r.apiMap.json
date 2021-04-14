@@ -175,6 +175,236 @@
     "originalNamespace": "Infragistics.Controls"
 },
 {
+    "originalName": "FormatSpecifier",
+   "names": [
+        { "platform": "React",     "fileName": "igr-format-specifier.ts",
+    "dynamicModuleName": "igr-format-specifier-dynamic-module.ts",
+    "moduleName": "igr-format-specifier-module.ts",
+ "mappedName": "IgrFormatSpecifier"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "NumberFormatSpecifier",
+   "names": [
+        { "platform": "React",     "fileName": "igr-number-format-specifier.ts",
+    "dynamicModuleName": "igr-number-format-specifier-dynamic-module.ts",
+    "moduleName": "igr-number-format-specifier-module.ts",
+ "mappedName": "IgrNumberFormatSpecifier"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "locale"}            ],
+           "originalName": "Locale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "compactDisplay"}            ],
+           "originalName": "CompactDisplay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "currency"}            ],
+           "originalName": "Currency"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "currencyDisplay"}            ],
+           "originalName": "CurrencyDisplay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "currencySign"}            ],
+           "originalName": "CurrencySign"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
+           "originalName": "LocaleMatcher"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "notation"}            ],
+           "originalName": "Notation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
+           "originalName": "NumberingSystem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "signDisplay"}            ],
+           "originalName": "SignDisplay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "style"}            ],
+           "originalName": "Style"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "unit"}            ],
+           "originalName": "Unit"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "unitDisplay"}            ],
+           "originalName": "UnitDisplay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useGrouping"}            ],
+           "originalName": "UseGrouping"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "minimumIntegerDigits"}            ],
+           "originalName": "MinimumIntegerDigits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "minimumFractionDigits"}            ],
+           "originalName": "MinimumFractionDigits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "maximumFractionDigits"}            ],
+           "originalName": "MaximumFractionDigits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "minimumSignificantDigits"}            ],
+           "originalName": "MinimumSignificantDigits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "maximumSignificantDigits"}            ],
+           "originalName": "MaximumSignificantDigits"
+       }   ],
+    "originalBaseTypeName": "FormatSpecifier",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "DateTimeFormatSpecifier",
+   "names": [
+        { "platform": "React",     "fileName": "igr-date-time-format-specifier.ts",
+    "dynamicModuleName": "igr-date-time-format-specifier-dynamic-module.ts",
+    "moduleName": "igr-date-time-format-specifier-module.ts",
+ "mappedName": "IgrDateTimeFormatSpecifier"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "locale"}            ],
+           "originalName": "Locale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "dateStyle"}            ],
+           "originalName": "DateStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "timeStyle"}            ],
+           "originalName": "TimeStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "fractionalSecondDigits"}            ],
+           "originalName": "FractionalSecondDigits"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "calendar"}            ],
+           "originalName": "Calendar"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "dayPeriod"}            ],
+           "originalName": "DayPeriod"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
+           "originalName": "NumberingSystem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
+           "originalName": "LocaleMatcher"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "timeZone"}            ],
+           "originalName": "TimeZone"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hour12"}            ],
+           "originalName": "Hour12"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hourCycle"}            ],
+           "originalName": "HourCycle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "formatMatcher"}            ],
+           "originalName": "FormatMatcher"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "weekDay"}            ],
+           "originalName": "WeekDay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "era"}            ],
+           "originalName": "Era"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "year"}            ],
+           "originalName": "Year"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "month"}            ],
+           "originalName": "Month"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "day"}            ],
+           "originalName": "Day"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "hour"}            ],
+           "originalName": "Hour"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "minute"}            ],
+           "originalName": "Minute"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "second"}            ],
+           "originalName": "Second"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "timeZoneName"}            ],
+           "originalName": "TimeZoneName"
+       }   ],
+    "originalBaseTypeName": "FormatSpecifier",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
     "originalName": "ISyncableObservableCollectionChangedListener",
    "names": [
         { "platform": "React",     "fileName": "SyncableObservableCollectionChangedListener.ts",

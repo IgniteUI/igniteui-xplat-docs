@@ -107,6 +107,21 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasDark"}            ],
+           "originalName": "CanvasDark"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasLight"}            ],
+           "originalName": "CanvasLight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasGray"}            ],
+           "originalName": "CanvasGray"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
@@ -242,8 +257,18 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "userAgent"}            ],
            "originalName": "UserAgent"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
        },
         {
            "names": [
@@ -457,6 +482,26 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}            ],
            "originalName": "FillScaleUseGlobalValues"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
+           "originalName": "MarkerOutlineUsesFillScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
+           "originalName": "MarkerOutlineBrightness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
+           "originalName": "MarkerBrushBrightness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        },
         {
            "names": [
@@ -724,6 +769,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
        }   ],
@@ -778,6 +828,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
            "originalName": "MaximumMarkers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        }   ],
     "originalBaseTypeName": "GeographicMapSeriesHost",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -801,8 +856,23 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MapBackgroundTilingMode", "mappedName": "backgroundTilingMode"}            ],
+           "originalName": "BackgroundTilingMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useWorldRectForZoomBounds"}            ],
            "originalName": "UseWorldRectForZoomBounds"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "suppressZoomResetOnWorldRectChange"}            ],
+           "originalName": "SuppressZoomResetOnWorldRectChange"
        },
         {
            "names": [
@@ -846,6 +916,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentActualWorldRect"}            ],
+           "originalName": "GetCurrentActualWorldRect"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getZoomRectFromGeoRect"}            ],
            "originalName": "GetZoomRectFromGeoRect"
        },
@@ -853,6 +928,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "updateZoomWindow"}            ],
            "originalName": "UpdateZoomWindow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "updateWorldRect"}            ],
+           "originalName": "UpdateWorldRect"
        },
         {
            "names": [
@@ -960,6 +1040,35 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "MapResizeBehavior", "mappedName": "MaintainCenterPosition"}            ],
            "originalName": "MaintainCenterPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
+    "originalName": "MapBackgroundTilingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MapBackgroundTilingMode.ts",
+ "mappedName": "MapBackgroundTilingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MapBackgroundTilingMode", "mappedName": "NonWrapped"}            ],
+           "originalName": "NonWrapped"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Wrapped"}            ],
+           "originalName": "Wrapped"
        },
         {
            "names": [

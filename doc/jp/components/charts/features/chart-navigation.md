@@ -52,7 +52,7 @@ UI でのナビゲーションを許可するには、ズームを許可する�
 
 以下のコード スニペットは、$PlatformShort$ データ チャートで基本的な UI ナビゲーションを有効にする方法を示しています:
 
-同じ API が `XamCategoryChart` および `XamFinancialChart` コンポーネントにも適用されることに注意してください。
+同じ API が `CategoryChart` および `FinancialChart` コンポーネントにも適用されることに注意してください。
 
 ```razor
 <DataChart Height="400px" Width="100%"
@@ -102,7 +102,7 @@ $PlatformShort$ データ チャートのナビゲーションは、マウスま
 
 以下のコード スニペットは、チャートで UI ナビゲーションを有効にする方法を示しています。以下の例では、**Shift** キーを押しながらズーム、**Alt** キーを押しながらパンのみ可能です:
 
-同じ API が `XamCategoryChart` および `XamFinancialChart` コンポーネントにも適用されることに注意してください。
+同じ API が `CategoryChart` および `FinancialChart` コンポーネントにも適用されることに注意してください。
 
 ```razor
 <DataChart Width="100%" Height="400px"
@@ -222,6 +222,6 @@ this.chart.actualWindowPositionHorizontal += 0.05;
 - `IsHorizontalZoomEnabled`
 - `IsVerticalZoomEnabled`
 - `PanModifier`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`

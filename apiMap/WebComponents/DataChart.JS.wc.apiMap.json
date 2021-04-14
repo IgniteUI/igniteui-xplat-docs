@@ -47,6 +47,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWindowSyncedToVisibleRange"}            ],
+           "originalName": "IsWindowSyncedToVisibleRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "highlightingMode"}            ],
+           "originalName": "HighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "highlightingBehavior"}            ],
+           "originalName": "HighlightingBehavior"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "legendHighlightingMode"}            ],
+           "originalName": "LegendHighlightingMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "viewportRect"}            ],
            "originalName": "ViewportRect"
        },
@@ -124,6 +144,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "crosshairVisibility"}            ],
            "originalName": "CrosshairVisibility"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ZoomCoercionMode", "mappedName": "zoomCoercionMode"}            ],
+           "originalName": "ZoomCoercionMode"
        },
         {
            "names": [
@@ -342,6 +367,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "cancelManipulation"}            ],
+           "originalName": "CancelManipulation"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getActualWindowScaleHorizontal"}            ],
            "originalName": "GetActualWindowScaleHorizontal"
        },
@@ -384,6 +414,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "destroy"}            ],
            "originalName": "Destroy"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentActualWindowRect"}            ],
+           "originalName": "GetCurrentActualWindowRect"
        },
         {
            "names": [
@@ -430,6 +465,26 @@
  "mappedName": "IgcRefreshCompletedEventArgs"}   ],
    "members": [
    ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "SeriesViewerManipulationEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-series-viewer-manipulation-event-args.ts",
+ "mappedName": "IgcSeriesViewerManipulationEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isZoomPan"}            ],
+           "originalName": "IsZoomPan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isDragZoom"}            ],
+           "originalName": "IsDragZoom"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls"
@@ -800,6 +855,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "label"}            ],
            "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
        },
         {
            "names": [
@@ -1244,6 +1309,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFullRange"}            ],
+           "originalName": "IsFullRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isExclusive"}            ],
+           "originalName": "IsExclusive"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcSeriesComponent", "mappedName": "series"}            ],
            "originalName": "Series"
        }   ],
@@ -1357,6 +1432,288 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "ScatterItemSearchMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ScatterItemSearchMode.ts",
+ "mappedName": "ScatterItemSearchMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestVisiblePoint"}            ],
+           "originalName": "ClosestVisiblePoint"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestPoint"}            ],
+           "originalName": "ClosestPoint"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestVisiblePointOnClosestLine"}            ],
+           "originalName": "ClosestVisiblePointOnClosestLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "ClosestPointOnClosestLine"}            ],
+           "originalName": "ClosestPointOnClosestLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ShapeItemSearchMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ShapeItemSearchMode.ts",
+ "mappedName": "ShapeItemSearchMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestBoundingBox"}            ],
+           "originalName": "ClosestBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestShape"}            ],
+           "originalName": "ClosestShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "ClosestPointOnClosestShape"}            ],
+           "originalName": "ClosestPointOnClosestShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesHighlightingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SeriesHighlightingMode.ts",
+ "mappedName": "SeriesHighlightingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "BrightenSpecific"}            ],
+           "originalName": "BrightenSpecific"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "Brighten"}            ],
+           "originalName": "Brighten"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "FadeOthersSpecific"}            ],
+           "originalName": "FadeOthersSpecific"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "FadeOthers"}            ],
+           "originalName": "FadeOthers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesHighlightingBehavior",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SeriesHighlightingBehavior.ts",
+ "mappedName": "SeriesHighlightingBehavior"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "DirectlyOver"}            ],
+           "originalName": "DirectlyOver"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItems"}            ],
+           "originalName": "NearestItems"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItemsRetainMainShapes"}            ],
+           "originalName": "NearestItemsRetainMainShapes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "NearestItemsAndSeries"}            ],
+           "originalName": "NearestItemsAndSeries"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendHighlightingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LegendHighlightingMode.ts",
+ "mappedName": "LegendHighlightingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "MatchSeries"}            ],
+           "originalName": "MatchSeries"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesVisibleRangeMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SeriesVisibleRangeMode.ts",
+ "mappedName": "SeriesVisibleRangeMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "ValuesOnly"}            ],
+           "originalName": "ValuesOnly"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "IncludeReferenceValue"}            ],
+           "originalName": "IncludeReferenceValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ComputedPlotAreaMarginMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ComputedPlotAreaMarginMode.ts",
+ "mappedName": "ComputedPlotAreaMarginMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "Series"}            ],
+           "originalName": "Series"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ZoomCoercionMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ZoomCoercionMode.ts",
+ "mappedName": "ZoomCoercionMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ZoomCoercionMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ZoomCoercionMode", "mappedName": "AxisConstrained"}            ],
+           "originalName": "AxisConstrained"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ZoomCoercionMode", "mappedName": "Unconstrained"}            ],
+           "originalName": "Unconstrained"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "AxisTitlePosition",
     "isEnum": true,
    "names": [
@@ -1396,10 +1753,142 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgsBase",
+    "originalName": "AssigningPolarStyleEventArgsBase",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-assigning-category-style-event-args-base.ts",
- "mappedName": "IgcAssigningCategoryStyleEventArgsBase"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-assigning-polar-style-event-args-base.ts",
+ "mappedName": "IgcAssigningPolarStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-polar-style-event-args.ts",
+ "mappedName": "IgcAssigningPolarStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarMarkerStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-polar-marker-style-event-args.ts",
+ "mappedName": "IgcAssigningPolarMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningPolarStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgsBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-radial-style-event-args-base.ts",
+ "mappedName": "IgcAssigningRadialStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-radial-style-event-args.ts",
+ "mappedName": "IgcAssigningRadialStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialMarkerStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-radial-marker-style-event-args.ts",
+ "mappedName": "IgcAssigningRadialMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningRadialStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-shape-style-event-args-base.ts",
+ "mappedName": "IgcAssigningShapeStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-shape-style-event-args.ts",
+ "mappedName": "IgcAssigningShapeStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeMarkerStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-shape-marker-style-event-args.ts",
+ "mappedName": "IgcAssigningShapeMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgsBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-scatter-style-event-args-base.ts",
+ "mappedName": "IgcAssigningScatterStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-scatter-style-event-args.ts",
+ "mappedName": "IgcAssigningScatterStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterMarkerStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-scatter-marker-style-event-args.ts",
+ "mappedName": "IgcAssigningScatterMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningScatterStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesStyleEventArgsBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-series-style-event-args-base.ts",
+ "mappedName": "IgcAssigningSeriesStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1443,6 +1932,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "fadeOpacity"}            ],
+           "originalName": "FadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcHighlightingInfo", "mappedName": "highlightingInfo"}            ],
            "originalName": "HighlightingInfo"
        },
@@ -1455,6 +1949,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "sumAllSeriesHighlightingProgress"}            ],
            "originalName": "SumAllSeriesHighlightingProgress"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "totalAllSeriesHighlightingProgress"}            ],
+           "originalName": "TotalAllSeriesHighlightingProgress"
        },
         {
            "names": [
@@ -1479,10 +1978,21 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgs",
+    "originalName": "AssigningCategoryStyleEventArgsBase",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-assigning-category-style-event-args.ts",
- "mappedName": "IgcAssigningCategoryStyleEventArgs"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-assigning-category-style-event-args-base.ts",
+ "mappedName": "IgcAssigningCategoryStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-series-shape-style-event-args-base.ts",
+ "mappedName": "IgcAssigningSeriesShapeStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1499,7 +2009,18 @@
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusY"}            ],
            "originalName": "RadiusY"
        }   ],
-    "originalBaseTypeName": "AssigningCategoryStyleEventArgsBase",
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryStyleEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-assigning-category-style-event-args.ts",
+ "mappedName": "IgcAssigningCategoryStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -1572,6 +2093,21 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "autoExpandMarginMaximumValue"}            ],
+           "originalName": "AutoExpandMarginMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "autoExpandMarginExtraPadding"}            ],
+           "originalName": "AutoExpandMarginExtraPadding"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldAutoExpandMarginForInitialLabels"}            ],
+           "originalName": "ShouldAutoExpandMarginForInitialLabels"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
            "originalName": "MarkerBrushes"
        },
@@ -1602,6 +2138,31 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPlotAreaMarginLeft"}            ],
+           "originalName": "ActualPlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPlotAreaMarginTop"}            ],
+           "originalName": "ActualPlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPlotAreaMarginRight"}            ],
+           "originalName": "ActualPlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPlotAreaMarginBottom"}            ],
+           "originalName": "ActualPlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "computedPlotAreaMarginMode"}            ],
+           "originalName": "ComputedPlotAreaMarginMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "plotAreaMarginLeft"}            ],
            "originalName": "PlotAreaMarginLeft"
        },
@@ -1619,6 +2180,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "plotAreaMarginBottom"}            ],
            "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "refreshComputedPlotAreaMargin"}            ],
+           "originalName": "RefreshComputedPlotAreaMargin"
        },
         {
            "names": [
@@ -1693,6 +2259,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
            "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        },
         {
            "names": [
@@ -2191,6 +2762,66 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "PlotAreaMouseEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-plot-area-mouse-event-args.ts",
+ "mappedName": "IgcPlotAreaMouseEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "chartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isDuringManipulation"}            ],
+           "originalName": "IsDuringManipulation"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcSeriesViewerComponent", "mappedName": "viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PlotAreaMouseButtonEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-plot-area-mouse-button-event-args.ts",
+ "mappedName": "IgcPlotAreaMouseButtonEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "chartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "plotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "manipulationOccurred"}            ],
+           "originalName": "ManipulationOccurred"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcSeriesViewerComponent", "mappedName": "viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "ChartCursorEventArgs",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-chart-cursor-event-args.ts",
@@ -2478,6 +3109,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "actualHighlightingMode"}            ],
+           "originalName": "ActualHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "highlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isComponentHighlightingModeIgnored"}            ],
+           "originalName": "IsComponentHighlightingModeIgnored"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHighlightingEnabled"}            ],
            "originalName": "IsHighlightingEnabled"
        },
@@ -2533,6 +3184,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "visibleRangeMode"}            ],
+           "originalName": "VisibleRangeMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "transitionInDuration"}            ],
            "originalName": "TransitionInDuration"
        },
@@ -2585,6 +3241,51 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "percentChange"}            ],
            "originalName": "PercentChange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualOpenLabel"}            ],
+           "originalName": "ActualOpenLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualCloseLabel"}            ],
+           "originalName": "ActualCloseLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualHighLabel"}            ],
+           "originalName": "ActualHighLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLowLabel"}            ],
+           "originalName": "ActualLowLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualVolumeLabel"}            ],
+           "originalName": "ActualVolumeLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualValueLabel"}            ],
+           "originalName": "ActualValueLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualRadiusLabel"}            ],
+           "originalName": "ActualRadiusLabel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "visibility"}            ],
+           "originalName": "Visibility"
        },
         {
            "names": [
@@ -2715,6 +3416,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "removeAlternateView"}            ],
            "originalName": "RemoveAlternateView"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
        },
         {
            "names": [

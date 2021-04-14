@@ -2,12 +2,12 @@
 title: $PlatformShort$ Chart Highlighting | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Highlighting
 _keywords: $PlatformShort$ Charts, Highlighting, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 ---
 
 # $PlatformShort$ Chart Highlighting
 
-All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components and they have the same API for using the highlighting feature.
+All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
 
 ## $PlatformShort$ Chart Highlighting Example
 
@@ -25,7 +25,7 @@ The following example demonstrates the different highlighting options that are a
 
 ## Highlight Layers
 
-The $ProductName$ `XamCategoryChart` can enable three types of highlighting when hovering over data items.
+The $ProductName$ `CategoryChart` can enable three types of highlighting when hovering over data items.
 
 1. Series Highlighting will highlight the single data point represented by a marker or column when the pointer is positioned over it. This is enabled by setting the `IsSeriesHighlightingEnabled` property to true.
 
@@ -48,7 +48,7 @@ The following is a list of API members mentioned in the above sections:
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`
 

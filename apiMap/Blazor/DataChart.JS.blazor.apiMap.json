@@ -18,8 +18,33 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+           "originalName": "Legend"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AnimateSeriesWhenAxisRangeChanges"}            ],
            "originalName": "AnimateSeriesWhenAxisRangeChanges"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsWindowSyncedToVisibleRange"}            ],
+           "originalName": "IsWindowSyncedToVisibleRange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHighlightingMode", "mappedName": "HighlightingMode"}            ],
+           "originalName": "HighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "HighlightingBehavior"}            ],
+           "originalName": "HighlightingBehavior"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendHighlightingMode", "mappedName": "LegendHighlightingMode"}            ],
+           "originalName": "LegendHighlightingMode"
        },
         {
            "names": [
@@ -90,6 +115,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "CrosshairVisibility"}            ],
            "originalName": "CrosshairVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ZoomCoercionMode", "mappedName": "ZoomCoercionMode"}            ],
+           "originalName": "ZoomCoercionMode"
        },
         {
            "names": [
@@ -308,6 +338,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CancelManipulation"}            ],
+           "originalName": "CancelManipulation"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetActualWindowScaleHorizontal"}            ],
            "originalName": "GetActualWindowScaleHorizontal"
        },
@@ -347,6 +382,26 @@
  "mappedName": "RefreshCompletedEventArgs"}   ],
    "members": [
    ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "SeriesViewerManipulationEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SeriesViewerManipulationEventArgs.cs",
+ "mappedName": "SeriesViewerManipulationEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsZoomPan"}            ],
+           "originalName": "IsZoomPan"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDragZoom"}            ],
+           "originalName": "IsDragZoom"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls"
@@ -952,6 +1007,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFullRange"}            ],
+           "originalName": "IsFullRange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsExclusive"}            ],
+           "originalName": "IsExclusive"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
            "originalName": "Series"
        }   ],
@@ -997,10 +1062,142 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgsBase",
+    "originalName": "AssigningPolarStyleEventArgsBase",
    "names": [
-        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgsBase.cs",
- "mappedName": "AssigningCategoryStyleEventArgsBase"}   ],
+        { "platform": "Blazor",     "fileName": "AssigningPolarStyleEventArgsBase.cs",
+ "mappedName": "AssigningPolarStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningPolarStyleEventArgs.cs",
+ "mappedName": "AssigningPolarStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningPolarMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningPolarMarkerStyleEventArgs.cs",
+ "mappedName": "AssigningPolarMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningPolarStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningRadialStyleEventArgsBase.cs",
+ "mappedName": "AssigningRadialStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningRadialStyleEventArgs.cs",
+ "mappedName": "AssigningRadialStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningRadialMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningRadialMarkerStyleEventArgs.cs",
+ "mappedName": "AssigningRadialMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningRadialStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningShapeStyleEventArgsBase.cs",
+ "mappedName": "AssigningShapeStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningShapeStyleEventArgs.cs",
+ "mappedName": "AssigningShapeStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningShapeMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningShapeMarkerStyleEventArgs.cs",
+ "mappedName": "AssigningShapeMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningScatterStyleEventArgsBase.cs",
+ "mappedName": "AssigningScatterStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningScatterStyleEventArgs.cs",
+ "mappedName": "AssigningScatterStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningScatterMarkerStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningScatterMarkerStyleEventArgs.cs",
+ "mappedName": "AssigningScatterMarkerStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningScatterStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningSeriesStyleEventArgsBase.cs",
+ "mappedName": "AssigningSeriesStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1039,6 +1236,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "FadeOpacity"}            ],
+           "originalName": "FadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "HighlightingInfo", "mappedName": "HighlightingInfo"}            ],
            "originalName": "HighlightingInfo"
        },
@@ -1051,6 +1253,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "SumAllSeriesHighlightingProgress"}            ],
            "originalName": "SumAllSeriesHighlightingProgress"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TotalAllSeriesHighlightingProgress"}            ],
+           "originalName": "TotalAllSeriesHighlightingProgress"
        },
         {
            "names": [
@@ -1075,10 +1282,21 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
-    "originalName": "AssigningCategoryStyleEventArgs",
+    "originalName": "AssigningCategoryStyleEventArgsBase",
    "names": [
-        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgs.cs",
- "mappedName": "AssigningCategoryStyleEventArgs"}   ],
+        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgsBase.cs",
+ "mappedName": "AssigningCategoryStyleEventArgsBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningSeriesShapeStyleEventArgsBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningSeriesShapeStyleEventArgsBase.cs",
+ "mappedName": "AssigningSeriesShapeStyleEventArgsBase"}   ],
    "members": [
         {
            "names": [
@@ -1095,7 +1313,18 @@
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusY"}            ],
            "originalName": "RadiusY"
        }   ],
-    "originalBaseTypeName": "AssigningCategoryStyleEventArgsBase",
+    "originalBaseTypeName": "AssigningSeriesStyleEventArgsBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "AssigningCategoryStyleEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "AssigningCategoryStyleEventArgs.cs",
+ "mappedName": "AssigningCategoryStyleEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "AssigningSeriesShapeStyleEventArgsBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
 },
@@ -1168,6 +1397,21 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoExpandMarginMaximumValue"}            ],
+           "originalName": "AutoExpandMarginMaximumValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoExpandMarginExtraPadding"}            ],
+           "originalName": "AutoExpandMarginExtraPadding"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldAutoExpandMarginForInitialLabels"}            ],
+           "originalName": "ShouldAutoExpandMarginForInitialLabels"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrushes"}            ],
            "originalName": "MarkerBrushes"
        },
@@ -1203,6 +1447,31 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPlotAreaMarginLeft"}            ],
+           "originalName": "ActualPlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPlotAreaMarginTop"}            ],
+           "originalName": "ActualPlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPlotAreaMarginRight"}            ],
+           "originalName": "ActualPlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPlotAreaMarginBottom"}            ],
+           "originalName": "ActualPlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "ComputedPlotAreaMarginMode"}            ],
+           "originalName": "ComputedPlotAreaMarginMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginLeft"}            ],
            "originalName": "PlotAreaMarginLeft"
        },
@@ -1220,6 +1489,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginBottom"}            ],
            "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RefreshComputedPlotAreaMargin"}            ],
+           "originalName": "RefreshComputedPlotAreaMargin"
        },
         {
            "names": [
@@ -1437,6 +1711,66 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "PlotAreaMouseEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "PlotAreaMouseEventArgs.cs",
+ "mappedName": "PlotAreaMouseEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "ChartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "PlotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDuringManipulation"}            ],
+           "originalName": "IsDuringManipulation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesViewer", "mappedName": "Viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PlotAreaMouseButtonEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "PlotAreaMouseButtonEventArgs.cs",
+ "mappedName": "PlotAreaMouseButtonEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "ChartPosition"}            ],
+           "originalName": "ChartPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "PlotAreaPosition"}            ],
+           "originalName": "PlotAreaPosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ManipulationOccurred"}            ],
+           "originalName": "ManipulationOccurred"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesViewer", "mappedName": "Viewer"}            ],
+           "originalName": "Viewer"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "ChartCursorEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ChartCursorEventArgs.cs",
@@ -1549,6 +1883,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+           "originalName": "Legend"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "LegendItemVisibility"}            ],
            "originalName": "LegendItemVisibility"
        },
@@ -1604,6 +1943,26 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHighlightingMode", "mappedName": "ActualHighlightingMode"}            ],
+           "originalName": "ActualHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HighlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsComponentHighlightingModeIgnored"}            ],
+           "originalName": "IsComponentHighlightingModeIgnored"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHighlightingEnabled"}            ],
            "originalName": "IsHighlightingEnabled"
        },
@@ -1656,6 +2015,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowDefaultTooltip"}            ],
            "originalName": "ShowDefaultTooltip"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "VisibleRangeMode"}            ],
+           "originalName": "VisibleRangeMode"
        },
         {
            "names": [
@@ -1841,6 +2205,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveAlternateView"}            ],
            "originalName": "RemoveAlternateView"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
        },
         {
            "names": [

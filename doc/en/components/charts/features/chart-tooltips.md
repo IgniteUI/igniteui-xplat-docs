@@ -2,12 +2,12 @@
 title: $PlatformShort$ Chart Tooltips | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Tooltips
 _keywords: $PlatformShort$ Charts, Tooltips, Infragistics
-mentionedTypes: ["XamCategoryChart", "ToolTipType"]
+mentionedTypes: ["CategoryChart", "ToolTipType"]
 ---
 
 # $PlatformShort$ Chart Tooltips
 
-In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips are supported by the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` controls.
+In $PlatformShort$ charts, tooltips provide details about bound data and they are rendered in popups when the end-user hovers over data points. Tooltips are supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls.
 
 ## $PlatformShort$ Chart Tooltip Types
 
@@ -75,5 +75,5 @@ You can find more information about related chart features in these topics:
 The following is a list of API members mentioned in the above sections:
 
 - `ToolTipType`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`

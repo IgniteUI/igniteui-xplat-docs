@@ -1,5 +1,353 @@
 {
+"extraFiles": [
+"igx-local-data-source-module.ts"
+],
 "types": [
+{
+    "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+   "names": [
+        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.ts",
+ "mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "pageSizeRequested"}            ],
+           "originalName": "PageSizeRequested"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "timeoutMilliseconds"}            ],
+           "originalName": "TimeoutMilliseconds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
+           "originalName": "PageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(success: boolean, requiresRefresh: boolean, messages: string[]) => void", "mappedName": "batchCompleted"}            ],
+           "originalName": "BatchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
+           "originalName": "ExecutionContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
+   "names": [
+        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.ts",
+ "mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncDataSourcePageTaskHolder",
+   "names": [
+        { "platform": "Angular",     "fileName": "AsyncDataSourcePageTaskHolder.ts",
+ "mappedName": "AsyncDataSourcePageTaskHolder"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Task", "mappedName": "task"}            ],
+           "originalName": "Task"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncDataSourcePageRequest",
+   "names": [
+        { "platform": "Angular",     "fileName": "AsyncDataSourcePageRequest.ts",
+ "mappedName": "AsyncDataSourcePageRequest"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_index"}            ],
+           "originalName": "_index"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_retryDelay"}            ],
+           "originalName": "_retryDelay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "_pageTask"}            ],
+           "originalName": "_pageTask"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_isDone"}            ],
+           "originalName": "_isDone"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "retryDelay"}            ],
+           "originalName": "RetryDelay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "taskHolder"}            ],
+           "originalName": "TaskHolder"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDone"}            ],
+           "originalName": "IsDone"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncVirtualDataSourceProviderWorker",
+   "names": [
+        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceProviderWorker.ts",
+ "mappedName": "AsyncVirtualDataSourceProviderWorker"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinkedList", "mappedName": "_requests"}            ],
+           "originalName": "_requests"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IList", "mappedName": "_tasks"}            ],
+           "originalName": "_tasks"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "syncLock"}            ],
+           "originalName": "SyncLock"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_running"}            ],
+           "originalName": "_running"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_pageSizeRequested"}            ],
+           "originalName": "_pageSizeRequested"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_actualPageSize"}            ],
+           "originalName": "_actualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_timeoutMilliseconds"}            ],
+           "originalName": "_timeoutMilliseconds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IDataSourceSchema", "mappedName": "_actualSchema"}            ],
+           "originalName": "_actualSchema"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "_actualCount"}            ],
+           "originalName": "_actualCount"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "WeakReference", "mappedName": "_pageLoaded"}            ],
+           "originalName": "_pageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "WeakReference", "mappedName": "_batchCompleted"}            ],
+           "originalName": "_batchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "WeakReference", "mappedName": "_executionContext"}            ],
+           "originalName": "_executionContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_populatedActualPageSize"}            ],
+           "originalName": "_populatedActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IList", "mappedName": "tasks"}            ],
+           "originalName": "Tasks"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
+           "originalName": "PageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(success: boolean, requiresRefresh: boolean, messages: string[]) => void", "mappedName": "batchCompleted"}            ],
+           "originalName": "BatchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
+           "originalName": "ExecutionContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPageSize"}            ],
+           "originalName": "ActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualCount"}            ],
+           "originalName": "ActualCount"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IDataSourceSchema", "mappedName": "actualSchema"}            ],
+           "originalName": "ActualSchema"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "populatedActualPageSize"}            ],
+           "originalName": "PopulatedActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isRunning"}            ],
+           "originalName": "IsRunning"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "addPageRequest"}            ],
+           "originalName": "AddPageRequest"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "addPageRequestWithRetry"}            ],
+           "originalName": "AddPageRequestWithRetry"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "removePageRequest"}            ],
+           "originalName": "RemovePageRequest"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isShutdown"}            ],
+           "originalName": "IsShutdown"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "removeAllPageRequests"}            ],
+           "originalName": "RemoveAllPageRequests"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "shutdown"}            ],
+           "originalName": "Shutdown"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "initialize"}            ],
+           "originalName": "Initialize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "AsyncVirtualDataSourceProviderTaskDataHolder", "mappedName": "getTaskDataHolder"}            ],
+           "originalName": "GetTaskDataHolder"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "getTasksData"}            ],
+           "originalName": "GetTasksData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "removeCompletedTaskData"}            ],
+           "originalName": "RemoveCompletedTaskData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "getCompletedTaskData"}            ],
+           "originalName": "GetCompletedTaskData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "runATask"}            ],
+           "originalName": "RunATask"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "checkAndPotentiallyWaitOnTasks"}            ],
+           "originalName": "CheckAndPotentiallyWaitOnTasks"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_initialized"}            ],
+           "originalName": "_initialized"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "doWork"}            ],
+           "originalName": "DoWork"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "makeTaskForRequest"}            ],
+           "originalName": "MakeTaskForRequest"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "processCompletedTask"}            ],
+           "originalName": "ProcessCompletedTask"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "retryIndex"}            ],
+           "originalName": "RetryIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLastPage"}            ],
+           "originalName": "IsLastPage"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "createBatchRequest"}            ],
+           "originalName": "CreateBatchRequest"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
 {
     "originalName": "FilterFactory",
    "names": [
@@ -885,7 +1233,7 @@
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "FilterExpressionFunctionType", "mappedName": "Length1"}            ],
+               { "platform": "Angular",  "mappedType": "FilterExpressionFunctionType", "mappedName": "Length"}            ],
            "originalName": "Length"
        },
         {
@@ -1211,6 +1559,39 @@
            "names": [
                { "platform": "Angular",  "mappedType": "DataSourceSectionHeaderDisplayMode", "mappedName": "Split"}            ],
            "originalName": "Split"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "DataSourceAggregatedResult",
+   "names": [
+        { "platform": "Angular",     "fileName": "DataSourceAggregatedResult.ts",
+ "mappedName": "DataSourceAggregatedResult"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionType", "mappedName": "transactionType"}            ],
+           "originalName": "TransactionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "keys"}            ],
+           "originalName": "Keys"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "values"}            ],
+           "originalName": "Values"
        },
         {
            "names": [
@@ -2325,329 +2706,134 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
-    "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+    "originalName": "TransactionState",
    "names": [
-        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.ts",
- "mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}   ],
+        { "platform": "Angular",     "fileName": "igx-transaction-state.ts",
+ "mappedName": "IgxTransactionState"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "pageSizeRequested"}            ],
-           "originalName": "PageSizeRequested"
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "id"}            ],
+           "originalName": "ID"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "timeoutMilliseconds"}            ],
-           "originalName": "TimeoutMilliseconds"
+               { "platform": "Angular",  "mappedType": "TransactionType", "mappedName": "transactionType"}            ],
+           "originalName": "TransactionType"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
-           "originalName": "PageLoaded"
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
-           "originalName": "ExecutionContext"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "version"}            ],
+           "originalName": "Version"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
+    "originalName": "TransactionType",
+    "isEnum": true,
    "names": [
-        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.ts",
- "mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}   ],
+        { "platform": "Angular",     "fileName": "TransactionType.ts",
+ "mappedName": "TransactionType"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionType", "mappedName": "Add"}            ],
+           "originalName": "Add"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionType", "mappedName": "Update"}            ],
+           "originalName": "Update"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionType", "mappedName": "Delete"}            ],
+           "originalName": "Delete"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncDataSourcePageTaskHolder",
+    "originalName": "TransactionEvent",
+    "isEnum": true,
    "names": [
-        { "platform": "Angular",     "fileName": "AsyncDataSourcePageTaskHolder.ts",
- "mappedName": "AsyncDataSourcePageTaskHolder"}   ],
+        { "platform": "Angular",     "fileName": "TransactionEvent.ts",
+ "mappedName": "TransactionEvent"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "Task", "mappedName": "task"}            ],
-           "originalName": "Task"
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "Undo"}            ],
+           "originalName": "Undo"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "Redo"}            ],
+           "originalName": "Redo"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "Clear"}            ],
+           "originalName": "Clear"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "Add"}            ],
+           "originalName": "Add"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "End"}            ],
+           "originalName": "End"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TransactionEvent", "mappedName": "Commit"}            ],
+           "originalName": "Commit"
        },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncDataSourcePageRequest",
+    "originalName": "TransactionPendingState",
+    "isEnum": true,
    "names": [
-        { "platform": "Angular",     "fileName": "AsyncDataSourcePageRequest.ts",
- "mappedName": "AsyncDataSourcePageRequest"}   ],
+        { "platform": "Angular",     "fileName": "TransactionPendingState.ts",
+ "mappedName": "TransactionPendingState"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_index"}            ],
-           "originalName": "_index"
+               { "platform": "Angular",  "mappedType": "TransactionPendingState", "mappedName": "Pending"}            ],
+           "originalName": "Pending"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_retryDelay"}            ],
-           "originalName": "_retryDelay"
+               { "platform": "Angular",  "mappedType": "TransactionPendingState", "mappedName": "Accept"}            ],
+           "originalName": "Accept"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "_pageTask"}            ],
-           "originalName": "_pageTask"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_isDone"}            ],
-           "originalName": "_isDone"
+               { "platform": "Angular",  "mappedType": "TransactionPendingState", "mappedName": "Reject"}            ],
+           "originalName": "Reject"
        },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "retryDelay"}            ],
-           "originalName": "RetryDelay"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "taskHolder"}            ],
-           "originalName": "TaskHolder"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDone"}            ],
-           "originalName": "IsDone"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
-},
-{
-    "originalName": "AsyncVirtualDataSourceProviderWorker",
-   "names": [
-        { "platform": "Angular",     "fileName": "AsyncVirtualDataSourceProviderWorker.ts",
- "mappedName": "AsyncVirtualDataSourceProviderWorker"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinkedList", "mappedName": "_requests"}            ],
-           "originalName": "_requests"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IList", "mappedName": "_tasks"}            ],
-           "originalName": "_tasks"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "syncLock"}            ],
-           "originalName": "SyncLock"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_running"}            ],
-           "originalName": "_running"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_pageSizeRequested"}            ],
-           "originalName": "_pageSizeRequested"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_actualPageSize"}            ],
-           "originalName": "_actualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_timeoutMilliseconds"}            ],
-           "originalName": "_timeoutMilliseconds"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IDataSourceSchema", "mappedName": "_actualSchema"}            ],
-           "originalName": "_actualSchema"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "_actualCount"}            ],
-           "originalName": "_actualCount"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "WeakReference", "mappedName": "_pageLoaded"}            ],
-           "originalName": "_pageLoaded"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "WeakReference", "mappedName": "_executionContext"}            ],
-           "originalName": "_executionContext"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_populatedActualPageSize"}            ],
-           "originalName": "_populatedActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IList", "mappedName": "tasks"}            ],
-           "originalName": "Tasks"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
-           "originalName": "PageLoaded"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
-           "originalName": "ExecutionContext"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPageSize"}            ],
-           "originalName": "ActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualCount"}            ],
-           "originalName": "ActualCount"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IDataSourceSchema", "mappedName": "actualSchema"}            ],
-           "originalName": "ActualSchema"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "populatedActualPageSize"}            ],
-           "originalName": "PopulatedActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isRunning"}            ],
-           "originalName": "IsRunning"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "addPageRequest"}            ],
-           "originalName": "AddPageRequest"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "addPageRequestWithRetry"}            ],
-           "originalName": "AddPageRequestWithRetry"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "removePageRequest"}            ],
-           "originalName": "RemovePageRequest"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isShutdown"}            ],
-           "originalName": "IsShutdown"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "removeAllPageRequests"}            ],
-           "originalName": "RemoveAllPageRequests"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "shutdown"}            ],
-           "originalName": "Shutdown"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "initialize"}            ],
-           "originalName": "Initialize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "AsyncVirtualDataSourceProviderTaskDataHolder", "mappedName": "getTaskDataHolder"}            ],
-           "originalName": "GetTaskDataHolder"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "getTasksData"}            ],
-           "originalName": "GetTasksData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "removeCompletedTaskData"}            ],
-           "originalName": "RemoveCompletedTaskData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "getCompletedTaskData"}            ],
-           "originalName": "GetCompletedTaskData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "runATask"}            ],
-           "originalName": "RunATask"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "checkAndPotentiallyWaitOnTasks"}            ],
-           "originalName": "CheckAndPotentiallyWaitOnTasks"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "_initialized"}            ],
-           "originalName": "_initialized"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "doWork"}            ],
-           "originalName": "DoWork"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "makeTaskForRequest"}            ],
-           "originalName": "MakeTaskForRequest"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "processCompletedTask"}            ],
-           "originalName": "ProcessCompletedTask"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "retryIndex"}            ],
-           "originalName": "RetryIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLastPage"}            ],
-           "originalName": "IsLastPage"
-       }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 }
 ]
 }

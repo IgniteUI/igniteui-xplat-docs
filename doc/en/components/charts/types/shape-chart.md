@@ -10,7 +10,7 @@ The $ProductName$ Shape Charts are a group of charts that take array of shapes (
 
 ## $PlatformShort$ Scatter Polygon Chart
 
-The $PlatformShort$ Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` component. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
+The $PlatformShort$ Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` control. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolygonSeries`, as shown in the example below:
 
@@ -24,7 +24,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $PlatformShort$ Scatter Polyline Chart
 
-The $PlatformShort$ Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` component. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
+The $PlatformShort$ Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` control. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolylineSeries`, as shown in the example below:
 
@@ -51,7 +51,7 @@ The following table lists API members mentioned in the above sections:
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `ItemsSource`
+- `DataSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

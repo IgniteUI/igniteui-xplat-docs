@@ -70,6 +70,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
            "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -109,6 +114,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcCategoryYAxisComponent", "mappedName": "barFragmentYAxis"}            ],
            "originalName": "YAxis"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
+           "originalName": "IsVertical"
        },
         {
            "names": [
@@ -186,6 +196,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFragment"}            ],
            "originalName": "IsFragment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -252,6 +267,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFragment"}            ],
            "originalName": "IsFragment"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -265,7 +285,11 @@
     "moduleName": "igc-stacked-100-area-series-module.ts",
  "mappedName": "IgcStacked100AreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedAreaSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -278,7 +302,11 @@
     "moduleName": "igc-stacked-100-bar-series-module.ts",
  "mappedName": "IgcStacked100BarSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedBarSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -291,7 +319,11 @@
     "moduleName": "igc-stacked-100-column-series-module.ts",
  "mappedName": "IgcStacked100ColumnSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedColumnSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -304,7 +336,11 @@
     "moduleName": "igc-stacked-100-line-series-module.ts",
  "mappedName": "IgcStacked100LineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedLineSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -317,7 +353,11 @@
     "moduleName": "igc-stacked-100-spline-area-series-module.ts",
  "mappedName": "IgcStacked100SplineAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedSplineAreaSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -330,7 +370,11 @@
     "moduleName": "igc-stacked-100-spline-series-module.ts",
  "mappedName": "IgcStacked100SplineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
+       }   ],
     "originalBaseTypeName": "StackedSplineSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -425,6 +469,11 @@
     "moduleName": "igc-stacked-fragment-series-module.ts",
  "mappedName": "IgcStackedFragmentSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "dataSource"}            ],
+           "originalName": "ItemsSource"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "brush"}            ],
@@ -632,6 +681,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualMarkerThickness"}            ],
+           "originalName": "ActualMarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "title"}            ],
            "originalName": "Title"
        },
@@ -654,6 +713,116 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "parentOrLocalBrush"}            ],
            "originalName": "ParentOrLocalBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
+           "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toWorldPosition"}            ],
+           "originalName": "ToWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "fromWorldPosition"}            ],
+           "originalName": "FromWorldPosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
+           "originalName": "ScrollIntoView"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getEffectiveViewport"}            ],
+           "originalName": "GetEffectiveViewport"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
+           "originalName": "NotifyVisualPropertiesChanged"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "simulateHover"}            ],
+           "originalName": "SimulateHover"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "moveCursorPoint"}            ],
+           "originalName": "MoveCursorPoint"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -777,6 +946,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isStacked"}            ],
            "originalName": "IsStacked"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPercentBased"}            ],
+           "originalName": "IsPercentBased"
        },
         {
            "names": [

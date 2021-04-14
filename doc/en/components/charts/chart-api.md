@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart provides useful API to configure and styles chart visuals
 _keywords: $PlatformShort$ charts, chart API, API, $ProductName$, Infragistics
-mentionedTypes: ["XamDataChart", "XamCategoryChart", "XamFinancialChart"]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -12,19 +12,19 @@ The $ProductName$ charts provide simple and easy to use APIs to plot various typ
 
 ## $PlatformShort$ Category Chart API
 
-The $PlatformShort$ `XamCategoryChart` has the following API members:
+The $PlatformShort$ `CategoryChart` has the following API members:
 
 Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
-- `Legend` <br> - `ItemsSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> - `XAxisGap` <br> - `XAxisOverlap` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
+- `Legend` <br> - `DataSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> - `XAxisGap` <br> - `XAxisOverlap` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
 ## $PlatformShort$ Financial Chart API
 
-The $PlatformShort$ `XamFinancialChart` has the following API members:
+The $PlatformShort$ `FinancialChart` has the following API members:
 
 Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
-- `Legend` <br> - `ItemsSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
+- `Legend` <br> - `DataSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
 ## $PlatformShort$ Data Chart API
 

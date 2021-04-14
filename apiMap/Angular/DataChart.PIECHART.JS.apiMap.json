@@ -188,13 +188,18 @@
    "members": [
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "oldItems"}            ],
+               { "platform": "Angular",  "mappedType": "IgxObjectCollection", "mappedName": "oldItems"}            ],
            "originalName": "OldItems"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "newItems"}            ],
+               { "platform": "Angular",  "mappedType": "IgxObjectCollection", "mappedName": "newItems"}            ],
            "originalName": "NewItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxObjectCollection", "mappedName": "currentItems"}            ],
+           "originalName": "CurrentItems"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -235,6 +240,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isOthersSlice"}            ],
            "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
        },
         {
            "names": [
@@ -423,6 +433,46 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string[]", "mappedName": "outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "othersLabelFormat"}            ],
+           "originalName": "OthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}            ],
+           "originalName": "OthersLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "legendLabelFormat"}            ],
+           "originalName": "LegendLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}            ],
+           "originalName": "LegendLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "legendOthersLabelFormat"}            ],
+           "originalName": "LegendOthersLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}            ],
+           "originalName": "LegendOthersLabelFormatSpecifiers"
        },
         {
            "names": [

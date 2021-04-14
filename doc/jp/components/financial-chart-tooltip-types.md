@@ -2,7 +2,7 @@
 title: $PlatformShort$ ファイナンシャル チャート | ツールチップ タイプ | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャートのツールチップを使用して重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
 _keywords: $PlatformShort$ charts, financial chart, stock chart, tooltips, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 _language: ja
 ---
 # $PlatformShort$ ツールチップ タイプ
@@ -11,10 +11,10 @@ _language: ja
 
 ## $PlatformShort$ ツールチップ タイプの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types" 
-           alt="$PlatformShort$ ツールチップ タイプの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types"
+           alt="$PlatformShort$ ツールチップ タイプの例"
            github-src="charts/financial-chart/tooltip-types">
 </code-view>
 
@@ -50,7 +50,7 @@ $PlatformShort$ Financial Chart コンポーネントは以下の方法でツー
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%"                
+    Height="100%"
     DataSource="DataSource"
     ToolTipType="ToolTipType.Category"/>
 ```

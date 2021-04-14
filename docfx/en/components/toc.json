@@ -536,7 +536,8 @@
     "status": ""
   },
   {
-    "name": "Charts (OLD)",
+    "name": "Charts",
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "header": true,
     "exclude": ["Blazor", "Angular"]
   },
@@ -1167,37 +1168,37 @@
   {
     "name": "Excel Library",
     "href": "excel-library.md",
-    "status": "NEW in Blazor",
+    "status": "",
     "items": [
       {
         "name": "Using Cells",
         "href": "excel-library-using-cells.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Tables",
         "href": "excel-library-using-tables.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Workbooks",
         "href": "excel-library-using-workbooks.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Worksheets",
         "href": "excel-library-using-worksheets.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Working with Charts",
         "href": "excel-library-working-with-charts.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Working with Sparklines",
         "href": "excel-library-working-with-sparklines.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],

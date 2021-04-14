@@ -2,7 +2,7 @@
 title: $PlatformShort$ Line Chart and Graph | $ProductName$
 _description: The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 ---
 # $PlatformShort$ Line Chart
 
@@ -12,7 +12,7 @@ The $ProductName$ Line Chart or Line Graph is a type of category charts that sho
 
 In the following example, $PlatformShort$ Line Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -71,7 +71,7 @@ There are several common use cases for choosing a Line Chart:
 
 The $PlatformShort$ Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period, as we have shown in the example below.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -86,7 +86,7 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 Since the $PlatformShort$ Line Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the line chart will automatically update to fit the additional data.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -103,7 +103,7 @@ The $PlatformShort$ Line chart is capable of handling high volumes of data, rang
 
 In this example, we are streaming live data into the $PlatformShort$ Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -118,7 +118,7 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 Once our chart is set up, we may want to make some further styling customizations such as change the line colors, change the legend font family, and/or increase the size of the axis labels to make it easier to read.
 
-You can create this type of chart in the `XamCategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -131,7 +131,7 @@ You can create this type of chart in the `XamCategoryChart` control by binding y
 
 ## Advanced Types of Line Charts
 
-The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `XamCategoryChart` control with simplified API.
+The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
 ## $PlatformShort$ Stacked Line Chart
 
@@ -208,7 +208,7 @@ The following table lists API members mentioned in the above sections:
 
 Chart Type        | Control Name       | API Members
 ------------------|--------------------|-----------------------
-Line              | `XamCategoryChart` | `ChartType` = `Line`
+Line              | `CategoryChart` | `ChartType` = `Line`
 Polar Line        | `XamDataChart`     | `PolarLineSeries`
 Radial Line       | `XamDataChart`     | `RadialLineSeries`
 Stacked Line      | `XamDataChart`     | `StackedLineSeries`

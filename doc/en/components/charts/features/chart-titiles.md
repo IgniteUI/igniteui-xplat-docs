@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Titles | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart with Titles
 _keywords: $PlatformShort$ charts, chart titles, titles, $ProductName$, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---
 

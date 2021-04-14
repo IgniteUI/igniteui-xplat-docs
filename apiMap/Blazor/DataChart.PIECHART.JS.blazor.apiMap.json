@@ -26,7 +26,16 @@
         { "platform": "Blazor",     "fileName": "SelectedItemChangedEventArgs.cs",
  "mappedName": "SelectedItemChangedEventArgs"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "OldItem"}            ],
+           "originalName": "OldItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "NewItem"}            ],
+           "originalName": "NewItem"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -52,7 +61,21 @@
         { "platform": "Blazor",     "fileName": "SelectedItemsChangedEventArgs.cs",
  "mappedName": "SelectedItemsChangedEventArgs"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "OldItems"}            ],
+           "originalName": "OldItems"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "NewItems"}            ],
+           "originalName": "NewItems"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "CurrentItems"}            ],
+           "originalName": "CurrentItems"
+       }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -215,6 +238,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+           "originalName": "Legend"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelExtent"}            ],
            "originalName": "LabelExtent"
        },
@@ -358,8 +386,13 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "SelectedItem"}            ],
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "SelectedItem"}            ],
            "originalName": "SelectedItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "SelectedItems"}            ],
+           "originalName": "SelectedItems"
        },
         {
            "names": [

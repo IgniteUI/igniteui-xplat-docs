@@ -2,7 +2,7 @@
 title: $PlatformShort$ ステップ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ ステップ チャート
 _keywords: $PlatformShort$ Charts, Step Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataChart", "ChartType"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "ChartType"]
 _language: ja
 ---
 # $PlatformShort$ ステップ チャート
@@ -11,7 +11,7 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 ## $PlatformShort$ ステップ チャートの例
 
-`XamCategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
+`CategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -68,4 +68,4 @@ $PlatformShort$ ステップ チャートはカテゴリ シリーズのグル�
 
 チャート タイプ                  | コントロール名   | API メンバー
 ----------------------------|----------------|------------------------
-ステップ                        | `XamCategoryChart` | `ChartType` = `StepLine`
+ステップ                        | `CategoryChart` | `ChartType` = `StepLine`

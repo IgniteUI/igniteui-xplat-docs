@@ -46,11 +46,6 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "FontInfo", "mappedName": "cellTextStyle"}            ],
-           "originalName": "CellTextStyle"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "CheckboxListIndexType", "mappedName": "indexType"}            ],
            "originalName": "IndexType"
        },

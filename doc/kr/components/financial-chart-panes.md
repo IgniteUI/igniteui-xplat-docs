@@ -6,13 +6,13 @@ _language: kr
 ---
 # $PlatformShort$ 금융 차트 창
 
-`XamFinancialChart` 제어에는 금융 데이터를 표시하는 복수의 창이 있습니다.
+`FinancialChart` 제어에는 금융 데이터를 표시하는 복수의 창이 있습니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            github-src="charts/financial-chart/panes">
 </code-view>
 

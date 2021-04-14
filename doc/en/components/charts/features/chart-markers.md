@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Markers
 _keywords: $PlatformShort$ Charts, Markers, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 ---
 
 # $PlatformShort$ Chart Markers
@@ -26,7 +26,7 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 
 # $PlatformShort$ Chart Marker Templates
 
-In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `XamCategoryChart` control as it is demonstrated in example below.
+In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `CategoryChart` control as it is demonstrated in example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -51,4 +51,4 @@ The following is a list of API members mentioned in the above sections:
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`
-- `XamCategoryChart`
+- `CategoryChart`

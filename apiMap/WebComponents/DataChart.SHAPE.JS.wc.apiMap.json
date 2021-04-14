@@ -254,6 +254,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
            "originalName": "ActualMarkerTemplate"
        },
@@ -294,6 +299,36 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}            ],
+           "originalName": "IsCustomShapeStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomShapeMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchPointsThreshold"}            ],
+           "originalName": "ItemSearchPointsThreshold"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
            "originalName": "ShapeMemberPath"
        },
@@ -321,6 +356,21 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
+           "originalName": "GetItem"
        },
         {
            "names": [

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Chart Performance | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Chart Performance
 _keywords: $PlatformShort$ Charts, Performance, Infragistics
-mentionedTypes: ["XamCategoryChart", "XamFinancialChart", "XamDataChart"]
+mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 ---
 
 # $PlatformShort$ Chart Performance
@@ -15,7 +15,7 @@ The following examples demonstrates two high performance scenarios of $PlatformS
 
 ## $PlatformShort$ Chart with High-Frequency
 
-In High-Frequency scenario, the $PlatformShort$ Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `XamCategoryChart` in High-Frequency scenario.
+In High-Frequency scenario, the $PlatformShort$ Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `CategoryChart` in High-Frequency scenario.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -27,7 +27,7 @@ In High-Frequency scenario, the $PlatformShort$ Charts can render data items tha
 
 ## $PlatformShort$ Chart with High-Volume
 
-In High-Volume scenario, the $PlatformShort$ Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `XamCategoryChart` in High-Volume scenario.
+In High-Volume scenario, the $PlatformShort$ Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `CategoryChart` in High-Volume scenario.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -51,7 +51,7 @@ If you need to plot data sources with large number of data points (e.g. 10,000+)
 
 ### Data Structure
 
-Although $PlatformShort$ charts support rendering of multiple data sources by binding array of arrays of data points to `ItemsSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
+Although $PlatformShort$ charts support rendering of multiple data sources by binding array of arrays of data points to `DataSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();
@@ -129,7 +129,7 @@ export class MultiDataSources {
 
 ### Data Filtering
 
-$PlatformShort$ `XamCategoryChart` and the `XamFinancialChart` controls have built-in data adapter that analyzes your data and generates chart series for you. However, it works faster if you use `IncludedProperties` and `ExcludedProperties` to filter only those data columns that you actually want to render. For example,
+$PlatformShort$ `CategoryChart` and the `FinancialChart` controls have built-in data adapter that analyzes your data and generates chart series for you. However, it works faster if you use `IncludedProperties` and `ExcludedProperties` to filter only those data columns that you actually want to render. For example,
 
 
 ```razor
@@ -147,7 +147,7 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### Chart Types
 
-Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $PlatformShort$ `XamCategoryChart` or the `XamFinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
+Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $PlatformShort$ `CategoryChart` or the `FinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
 
 The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
 
@@ -245,9 +245,9 @@ Enabling [Chart Trendlines](chart-trendlines.md) will slightly decrease performa
 
 Usage of x-axis with DateTime support is not recommended if spaces between data points, based on the amount of time span between them, are not important. Instead, ordinal/category axis should be used because it is more efficient in the way it coalesces data. Also, ordinal/category axis doesn’t perform any sorting on the data like the time-based x-axis does.
 
-> Note The `XamCategoryChart` already uses ordinal/category axis so there is no need to change its properties.
+> Note The `CategoryChart` already uses ordinal/category axis so there is no need to change its properties.
 
-This code snippet shows how to ordinal/category x-axis in the `XamFinancialChart` and `XamDataChart` controls.
+This code snippet shows how to ordinal/category x-axis in the `FinancialChart` and `XamDataChart` controls.
 
 ```razor
 <FinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
@@ -402,7 +402,7 @@ The following code snippet shows how to set a fixed extent for labels on y-axis 
 
 Enabling additional axis visuals (e.g. axis titles) or changing their default values might decrease performance in the $ProductShort$ charts.
 
-For example, changing these properties on the `XamCategoryChart` or `XamFinancialChart` control:
+For example, changing these properties on the `CategoryChart` or `FinancialChart` control:
 
 Axis Visual          | X-Axis Properties | Y-Axis Properties
 ---------------------|-------------------|-------------------
@@ -429,7 +429,7 @@ Axis Strips          | `Strip`
 
 ## Performance in Financial Chart
 
-In addition to above performance guidelines, the $ProductShort$ `XamFinancialChart` control has the following unique features that affect performance.
+In addition to above performance guidelines, the $ProductShort$ `FinancialChart` control has the following unique features that affect performance.
 
 ### Y-Axis Mode
 

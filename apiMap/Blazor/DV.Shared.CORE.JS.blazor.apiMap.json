@@ -117,168 +117,13 @@
     "originalNamespace": "Infragistics"
 },
 {
-    "originalName": "ISyncableObservableCollectionChangedListener",
-   "names": [
-        { "platform": "Blazor",     "fileName": "SyncableObservableCollectionChangedListener.cs",
- "mappedName": "SyncableObservableCollectionChangedListener"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "onChanged"}            ],
-           "originalName": "OnChanged"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DataContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DataContext.cs",
- "mappedName": "DataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualItemBrush"}            ],
-           "originalName": "ActualItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ItemLabel"}            ],
-           "originalName": "ItemLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ItemBrush"}            ],
-           "originalName": "ItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendLabel"}            ],
-           "originalName": "LegendLabel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PropertyUpdatedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "PropertyUpdatedEventArgs.cs",
- "mappedName": "PropertyUpdatedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
-           "originalName": "PropertyName"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "NewValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendContext.cs",
- "mappedName": "LegendContext"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendSeries.cs",
- "mappedName": "LegendSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveLegendIndex"}            ],
-           "originalName": "ResolveLegendIndex"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendOwner",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendOwner.cs",
- "mappedName": "LegendOwner"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "IChartLegend",
-   "names": [
-        { "platform": "Blazor",     "fileName": "IChartLegend.cs",
- "mappedName": "ChartLegend"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "LegendOwner", "mappedName": "SeriesOwner"}            ],
-           "originalName": "SeriesOwner"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "LegendOwner", "mappedName": "ChartOwner"}            ],
-           "originalName": "ChartOwner"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ContainsChild"}            ],
-           "originalName": "ContainsChild"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveChild"}            ],
-           "originalName": "RemoveChild"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "AddChildInOrder"}            ],
-           "originalName": "AddChildInOrder"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ClearLegendItemsForSeries"}            ],
-           "originalName": "ClearLegendItemsForSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
     "originalName": "FormatSpecifier",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatSpecifier.cs",
  "mappedName": "FormatSpecifier"}   ],
    "members": [
    ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalNamespace": "Infragistics.Controls"
 },
 {
     "originalName": "NumberFormatSpecifier",
@@ -377,8 +222,8 @@
            "originalName": "MaximumSignificantDigits"
        }   ],
     "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Implementation",
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
 },
 {
     "originalName": "DateTimeFormatSpecifier",
@@ -492,8 +337,120 @@
            "originalName": "TimeZoneName"
        }   ],
     "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Implementation",
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "ISyncableObservableCollectionChangedListener",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SyncableObservableCollectionChangedListener.cs",
+ "mappedName": "SyncableObservableCollectionChangedListener"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "void", "mappedName": "onChanged"}            ],
+           "originalName": "OnChanged"
+       }   ],
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "DataContext",
+   "names": [
+        { "platform": "Blazor",     "fileName": "DataContext.cs",
+ "mappedName": "DataContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualItemBrush"}            ],
+           "originalName": "ActualItemBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ItemLabel"}            ],
+           "originalName": "ItemLabel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ItemBrush"}            ],
+           "originalName": "ItemBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Thickness"}            ],
+           "originalName": "Thickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendLabel"}            ],
+           "originalName": "LegendLabel"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "PropertyUpdatedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "PropertyUpdatedEventArgs.cs",
+ "mappedName": "PropertyUpdatedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
+           "originalName": "PropertyName"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "NewValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ILegendContext",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ILegendContext.cs",
+ "mappedName": "LegendContext"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ILegendSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ILegendSeries.cs",
+ "mappedName": "LegendSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveLegendIndex"}            ],
+           "originalName": "ResolveLegendIndex"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ILegendOwner",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ILegendOwner.cs",
+ "mappedName": "LegendOwner"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
 }
 ]
 }

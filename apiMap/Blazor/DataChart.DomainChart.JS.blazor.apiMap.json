@@ -123,7 +123,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Legend"}            ],
+               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
            "originalName": "Legend"
        },
         {
@@ -265,6 +265,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CalloutStyleUpdatingEventEnabled"}            ],
            "originalName": "CalloutStyleUpdatingEventEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "CalloutsDataSource"}            ],
+           "originalName": "CalloutsItemsSource"
        },
         {
            "names": [
@@ -678,6 +683,26 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "YAxisLabelLocation"}            ],
            "originalName": "YAxisLabelLocation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisLabelFormat"}            ],
+           "originalName": "XAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "XAxisLabelFormatSpecifiers"}            ],
+           "originalName": "XAxisLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisLabelFormat"}            ],
+           "originalName": "YAxisLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "YAxisLabelFormatSpecifiers"}            ],
+           "originalName": "YAxisLabelFormatSpecifiers"
        },
         {
            "names": [

@@ -117,6 +117,6 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 <div class="divider--half"></div>
 
 ## API メンバー
-- `XamTreemap`
+- `Treemap`
 - `LayoutOrientation`
 - `LayoutType`

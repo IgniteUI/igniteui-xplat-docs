@@ -10,7 +10,7 @@ The $ProductName$ Composite Chart, also called a Combo Chart, is visualization t
 
 ## $PlatformShort$ Composite / Combo Example
 
-The following example demonstrates how to create Composite Chart using `ColumnSeries` and `LineSeries` in the `XamDataChart` component.
+The following example demonstrates how to create Composite Chart using `ColumnSeries` and `LineSeries` in the `XamDataChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

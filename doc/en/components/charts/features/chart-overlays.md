@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 
 # $PlatformShort$ Chart Overlays
 
-The $ProductName$ data chart allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
+The $PlatformShort$ `XamDataChart` allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
 
 ## $PlatformShort$ Value Overlay Example
 
@@ -25,7 +25,7 @@ The following example depicts a [Column Chart](../types/column-chart.md) with a 
 
 ## $PlatformShort$ Value Overlay Properties
 
-Unlike other series types that use a `ItemsSource` for data binding, the value overlay uses a `ValueMemberPath` property to bind a single numeric value. In addition, the value overlay requires you to define a single `Axis` to use. If you use an X-axis, the value overlay will be a vertical line, and if you use a Y-axis, it will be a horizontal line.
+Unlike other series types that use a `DataSource` for data binding, the value overlay uses a `ValueMemberPath` property to bind a single numeric value. In addition, the value overlay requires you to define a single `Axis` to use. If you use an X-axis, the value overlay will be a vertical line, and if you use a Y-axis, it will be a horizontal line.
 
 When using a numeric X or Y axis, the `ValueMemberPath` property should reflect the actual numeric value on the axis where you want the value overlay to be drawn. When using a category X or Y axis, the `ValueMemberPath` should reflect the index of the category at which you want the value overlay to appear.
 
@@ -37,7 +37,7 @@ It is also possible to show an axis annotation on a `ValueOverlay` to show the v
 
 ## $PlatformShort$ Financial Overlays
 
-You can also plot built-in financial overlays and indicators in $ProductName$ [Stock Chart](../types/stock-chart.md).
+You can also plot built-in financial overlays and indicators in $PlatformShort$ [Stock Chart](../types/stock-chart.md).
 
 ## Additional Resources
 
@@ -53,7 +53,7 @@ You can find more information about related chart types in these topics:
 The following is a list of API members mentioned in the above sections:
 
 - `XamDataChart`
-- `ItemsSource`
+- `DataSource`
 - `ValueOverlay`
 - `Axis`
 - `Brush`

@@ -2,7 +2,7 @@
 title: $PlatformShort$ Financial Chart | Data Visualization Tools | Infragistics | Custom Indicators
 _description: Use the financial chart component to visualize financial data using a simple API. View the demo, dependencies, usage and toolbar for more information.
 _keywords: $PlatformShort$ charts, financial chart, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+mentionedTypes: ['FinancialChart']
 ---
 # $PlatformShort$ Custom Indicators
 
@@ -11,10 +11,10 @@ The $PlatformShort$ financial chart component allows you to define custom financ
 ## $PlatformShort$ Custom Indicators Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators" 
-           alt="$PlatformShort$ Custom Indicators Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators"
+           alt="$PlatformShort$ Custom Indicators Example"
            github-src="charts/financial-chart/custom-indicators">
 </code-view>
 
@@ -153,8 +153,8 @@ function applyCustomIndicators(s: IgcFinancialChartComponent, e: IgcFinancialCha
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%"    
-    DataSource="DataSource"                
+    Height="100%"
+    DataSource="DataSource"
     ApplyCustomIndicatorsScript="onApplyCustomIndicators"/>
 
 // In .JS file:
@@ -170,18 +170,18 @@ function onApplyCustomIndicators(chart, args) {
         let priceStart = ds.openColumn[0];
         let min = int.MaxValue;
         let max = int.MinValue;
-        
+
         for (i = 0; i < ds.indicatorColumn.length; i++)
         {
             let priceChange = prices[i] - priceStart;
             let pricePercentage = (priceChange / priceStart) * 100;
             min = Math.Min(min, pricePercentage);
-            max = Math.Max(max, pricePercentage);            
+            max = Math.Max(max, pricePercentage);
             ds.indicatorColumn[i] = pricePercentage;
         }
-        
+
         ds.minimumValue = min;
-        ds.maximumValue = max;        
+        ds.maximumValue = max;
     }
 }
 

@@ -2,11 +2,11 @@
 title: $PlatformShort$ Data Chart | Data Visualization Tools | Navigation | Infragistics
 _description: Navigate Infragistics' $PlatformShort$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
 _keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics
-mentionedTypes: ["XamDataChart", "XamCategoryChart", "XamFinancialChart", "ModifierKeys"]
+mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 ---
 # $PlatformShort$ Chart Navigation
 
-The $PlatformName$ chart component allows for interactive panning and zooming via the mouse, keyboard and touch.  
+The $PlatformName$ charts allows for interactive panning and zooming via the mouse, keyboard and touch.
 
 ## $PlatformShort$ Chart Navigation Example
 
@@ -31,15 +31,15 @@ It is also possible to zoom or pan simply by clicking the mouse or using touch. 
 
 ## Chart Navigation with Touch, Mouse and Keyboard
 
-Navigation in the $PlatformShort$ data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default: 
+Navigation in the $PlatformShort$ data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default:
 
 - **Panning**: Using arrow keys on the keyboard or holding the Shift key, clicking and dragging with the mouse or pressing and moving your finger via touch.
 - **Zoom In**: Using the PageUp key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
 - **Zoom Out**: Using the PageDown key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
-- **Fit to Chart Plot Area**: Using the Home key on the keyboard. There is no mouse or touch operation for this. 
+- **Fit to Chart Plot Area**: Using the Home key on the keyboard. There is no mouse or touch operation for this.
 - **Area Zoom**: Click and drag the mouse within the plot area with the `DefaultInteraction` property set to its default - `DragZoom`.
 
-The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed: 
+The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed:
 
 - Shift
 - Alt
@@ -52,7 +52,7 @@ The zoom and pan operations can also be enabled by using modifier keys by settin
 
 > NOTE: Code navigation of the chart can only be used for the `XamDataChart` control.
 
-The $PlatformShort$ data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties: 
+The $PlatformShort$ data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
 
 - `WindowPositionHorizontal`: A numeric value describing the X portion of the content view rectangle displayed by the data chart.
 - `WindowPositionVertical`: A numeric value describing the Y portion of the content view rectangle displayed by the data chart.
@@ -76,6 +76,6 @@ The following is a list of API members mentioned in the above sections:
 - `IsHorizontalZoomEnabled`
 - `IsVerticalZoomEnabled`
 - `PanModifier`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`

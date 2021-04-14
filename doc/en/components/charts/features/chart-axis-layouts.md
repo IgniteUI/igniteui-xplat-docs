@@ -2,14 +2,14 @@
 title: $PlatformShort$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $PlatformShort$ Axis Layouts
 _keywords: $PlatformShort$ Axis, Layouts, Location, Position, Gap, Overlap, Infragistics
-mentionedTypes: [ "XamCategoryChart", "XamDataChart" ]
+mentionedTypes: [ "CategoryChart", "XamDataChart" ]
 ---
 
 # $PlatformShort$ Axis Layouts
 
 All $ProductName$ charts include options to configure many axis layout options such as location, gap, and overlap as well as having the ability to share axes and have multiple axes in the same chart. These features are demonstrated in the examples given below.
 
-> NOTE: the following examples can be applied to `XamCategoryChart` as well as `XamFinancialChart` controls.
+> NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
 ## Axis Gap Example
 
@@ -110,9 +110,9 @@ The following is a list of API members mentioned in the above sections:
 - `CrossingAxis`
 - `CrossingValue`
 - `NumericYAxis`
-- `XamCategoryChart`
+- `CategoryChart`
 - `XamDataChart`
-- `XamFinancialChart`
+- `FinancialChart`
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`

@@ -46,11 +46,6 @@
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "FontInfo", "mappedName": "cellTextStyle"}            ],
-           "originalName": "CellTextStyle"
-       },
-        {
-           "names": [
                { "platform": "Angular",  "mappedType": "CheckboxListIndexType", "mappedName": "indexType"}            ],
            "originalName": "IndexType"
        },

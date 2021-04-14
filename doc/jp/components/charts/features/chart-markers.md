@@ -2,7 +2,7 @@
 title: $PlatformShort$ チャート マーカー | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $PlatformShort$ チャート マーカー
 _keywords: $PlatformShort$ Charts, Markers, Infragistics, $PlatformShort$ チャート, マーカー, インフラジスティックス
-mentionedTypes: ["XamCategoryChart"]
+mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
@@ -70,4 +70,4 @@ $ProductName$ カテゴリのチャートには、マーカー、チャートの
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`
-- `XamCategoryChart`
+- `CategoryChart`

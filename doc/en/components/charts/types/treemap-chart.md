@@ -5,6 +5,7 @@ _keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$
 mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
 ---
 # $PlatformShort$ Treemap
+
 The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node’s rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data.
 
 ## $PlatformShort$ Treemap Example
@@ -81,7 +82,7 @@ The Treemap chart displays the relative weight of data. It uses a variety of alg
 The Treemap allows you to choose the algorithm that is best for your requirements, defaulting to use the Squarified method. It also includes the ability to allow you to colorize nodes using two mechanisms:
 
 - A group-based mechanism that colors items with like values
-- A scale-based mechanism similar to a map choropleth, which gradiates node colors based on their value.
+- A scale-based mechanism similar to a map choropleth, which maps node colors based on their value.
 
 ### Layout Orientation
 
@@ -116,6 +117,6 @@ You can find more information about related chart types in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamTreemap`
+- `Treemap`
 - `LayoutOrientation`
 - `LayoutType`
