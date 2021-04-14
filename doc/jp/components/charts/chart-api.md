@@ -1,6 +1,6 @@
 ---
 title: $PlatformShort$ チャート API | データ可視化 ツール | インフラジスティックス
-_description:インフラジスティックスの $ProductName$ チャートは、チャートのビジュアルを構成およびスタイル設定するための便利な API を提供します。
+_description: インフラジスティックスの $ProductName$ チャートは、チャートのビジュアルを構成およびスタイル設定するための便利な API を提供します。
 _keywords: $PlatformShort$ charts, chart API, API, $ProductName$, Infragistics, $PlatformShort$ チャート, チャート API, インフラジスティックス
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
