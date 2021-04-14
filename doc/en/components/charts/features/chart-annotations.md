@@ -35,7 +35,7 @@ Crosshair types include:
 
 The chart's crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points. Annotations can also be enabled to display the crosshair's value along the axis.
 
-You can configure the crosshair layer so that the layer will only display on one specific series, as by default they will target all series on the chart component. To achieve this, set the `TargetSeries` property.
+You can configure the crosshair layer so that the layer will only display on one specific series, as by default they will target all series in the chart control. To achieve this, set the `TargetSeries` property.
 
 By default, the color of the crosshair lines is a lighter color than the series that it is interacting with. However, this default setting can be overridden so that you can select a color that will be used for the crosshair lines. This is done by setting the `Brush` property of the Crosshair Layer.
 
@@ -52,7 +52,7 @@ The following example shows how to configure the crosshair layer but targeting a
 
 ## $PlatformShort$ Final Value Layer
 
-The `FinalValueLayer` of the category chart component provides a quick view along the axis of the ending value displayed in a series.
+The `FinalValueLayer` of the `XamDataChart` control provides a quick view along the axis of the ending value displayed in a series.
 
 You can configure this annotation to target a specific series if you want to have multiple final value layers present with different configurations. This can be done be setting the `TargetSeries` property.
 

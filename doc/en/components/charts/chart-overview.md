@@ -7,7 +7,7 @@ _keywords: $PlatformShort$ Charts, Chart, Infragistics
 
 $ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts and dashboards for your web and mobile apps. Built for speed and beauty, designed to work on every modern browser, and with complete touch and interactivity, you can quickly and easily build responsive visuals into your next app on any device.
 
-The $PlatformShort$ charting component supports over 65 types of series and combinations that let you visualize any type of data, including Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, Shape Series, and Geospatial Series. No matter the type of comparison you are doing, or what type of data story you are trying to tell, you can represent your data in any of these ways:
+The $PlatformShort$ Charts support over 65 types of series and combinations that let you visualize any type of data, including Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, Shape Series, and Geospatial Series. No matter the type of comparison you are doing, or what type of data story you are trying to tell, you can represent your data in any of these ways:
 
 - Change Over Time
 - Comparison
@@ -300,13 +300,13 @@ Use one of 10 [Marker Types](features/chart-markers.md) or create your own [Mark
 If you are considering any other $PlatformShort$ Charts on the market, here are a few things to think about:
 
 - We include over 65 $PlatformShort$ chart types and combination charts, with the simplest configuration on the market with our smart data adapter.
-- Our chart components are optimized on all platforms including Angular, Blazor, jQuery / JavaScript, React, UNO, UWP, WPF, Windows Forms, WebComponents, WinUI, and Xamarin. They support the same API and same features on every platform.
+- Our charts are optimized on all platforms including Angular, Blazor, jQuery / JavaScript, React, UNO, UWP, WPF, Windows Forms, WebComponents, WinUI, and Xamarin. They support the same API and same features on every platform.
 - Our stock chart and financial charting gives you everything you need for a Yahoo Finance or Google Finance-like experience – all with a single line of code.
 - We test against everyone elses performance. Everyone says they are fast and can handle lots of data, but we can prove it. See for yourself how we handle high-volume data and real-time data streaming.
 - We are here 24x5. Infragistics has global support that is always online. For North America, Asia Pacific, Middle East, and Europe, we are on the clock when you are!
-- We have many more UI controls and components in $PlatformShort$ besides the Charts. We offer a complete $PlatformShort$ solution to build your applications!
+- We have many more UI controls in $PlatformShort$ besides the Charts. We offer a complete $PlatformShort$ solution to build your applications!
 <!-- Angular -->
 - Ignite UI for Angular is built on Angular for the Angular developer, with zero 3rd party dependencies. We are 100% optimized for Angular.
-- We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular components from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular components.
+- We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular controls from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular controls.
 <!-- end: Angular -->
 

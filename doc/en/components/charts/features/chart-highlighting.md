@@ -7,7 +7,7 @@ mentionedTypes: ["CategoryChart"]
 
 # $PlatformShort$ Chart Highlighting
 
-All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` components and they have the same API for using the highlighting feature.
+All $PlatformShort$ Charts support highlighting of visuals such as lines, columns, and markers when the end-user hovers mouse cursor over data items rendered in plot area. Highlighting is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
 
 ## $PlatformShort$ Chart Highlighting Example
 

@@ -68,7 +68,7 @@ $PlatformShort$ Area Chart is often used to show the change of value over time s
 
 ## $PlatformShort$ Area Chart with Multiple Series
 
-Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same component. This is accomplished by binding multiple data source to `ItemsSource` property of the `CategoryChart` control.
+Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same control. This is accomplished by binding multiple data source to `ItemsSource` property of the `CategoryChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

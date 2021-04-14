@@ -11,7 +11,7 @@ The $ProductName$ Gantt Chart is a type of bar chart, that visualizes various ca
 
 ## $PlatformShort$ Gantt Chart Example
 
-The following example demonstrates how to create Gantt Chart using `ScatterPolygonSeries` in the `XamDataChart` component.
+The following example demonstrates how to create Gantt Chart using `ScatterPolygonSeries` in the `XamDataChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -32,7 +32,7 @@ Like this sample? Get access to our complete $PlatformShort$ toolkit and start b
 
 The primary benefit of the Sparkline control compared to other charting controls is that it can render in a limited space such as a grid cell with all its visual elements shown.
 
-The Sparkline component has the ability to mark the data points with elliptical icons to indicate the highest, lowest, first, last, and negative values. The markers can be customized with a desired shape, color, or image.
+The $PlatformShort$ Sparkline has the ability to mark the data points with elliptical icons to indicate the highest, lowest, first, last, and negative values. The markers can be customized with a desired shape, color, or image.
 
 ### Sparkline Use Cases
 
@@ -63,7 +63,7 @@ The $PlatformShort$ Sparkline supports the following types of sparklines by sett
 - `Line`:  Displays the line chart type of Sparkline with numeric data, connecting the data points with line segments. At least two data points must be supplied to visualize the data in Sparkline.
 - `Area`: Displays the Area chart type of Sparkline with numeric data. This is like line type with additional steps of closing the area after each line is drawn. At least two data points must be supplied to visualize the data in Sparkline.
 - `Column`: Displays the Column chart type of Sparkline with numeric data. Some may refer to it as vertical bars. This type can render a single data point, but it would require specifying the minimum value range property (minimum) in Sparkline so the supplied single data point can be visible, otherwise the value will be treated as the minimum value and will not be visible.
-- `WinLoss`: This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the sparkline component will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
+- `WinLoss`: This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the $PlatformShort$ Sparkline will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -106,7 +106,7 @@ The normal range can be wider than the maximum data point or beyond, and it can 
 
 By default, the normal range is not displayed. When enabled, the normal range shows up with a light gray color appearance, which can also be configured using the `NormalRangeFill` property.
 
-You can also configure whether to show the normal range in front of or behind the plotted series in your sparkline component by setting the `DisplayNormalRangeInFront` property.
+You can also configure whether to show the normal range in front of or behind the plotted series in your $PlatformShort$ Sparkline by setting the `DisplayNormalRangeInFront` property.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -136,7 +136,7 @@ The sample below shows all the available trendlines via the dropdown:
 
 The $PlatformShort$ Sparkline can detect unknown values and render the space for unknown values through a specified interpolation algorithm. If your data contains null values and you do not use this feature, meaning no interpolation is specified, the unknown value will not be plotted.
 
-To plot the unknown values, you can set the `UnknownValuePlotting` property of the sparkline component. The sample below shows the differences between the values of the `UnknownValuePlotting` property, allowing you to toggle it on or off using a checkbox:
+To plot the unknown values, you can set the `UnknownValuePlotting` property of the $PlatformShort$ Sparkline. The sample below shows the differences between the values of the `UnknownValuePlotting` property, allowing you to toggle it on or off using a checkbox:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -148,7 +148,7 @@ To plot the unknown values, you can set the `UnknownValuePlotting` property 
 
 ## Sparkline in Data Grid
 
-You can embed the $PlatformShort$ Sparkline in a template column of data grid or other components that support templates. The following code example shows how to do this:
+You can embed the $PlatformShort$ Sparkline in a template column of data grid or other UI controls that support templates. The following code example shows how to do this:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
