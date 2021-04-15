@@ -77,86 +77,9 @@ Property | Type | Description
 `ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the date picker. The week number's visibility can be toggled on and off. 
 `FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek.
 `OpenOnFocus` | bool | By default, the dropdown portion of the Date Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar.
+`Value` | date | Sets the value of the Date Picker and selects it in the dropdown calendar. 
 
 Users can also customize the Date Picker's font by using the various text properties of the control. They are: `TextColor`, `TextFontFamily`, `TextFontSize`, `TextFontStyle`, and `TextFontWeight`.
-
-### Setting Initial Value
-
-The following code demonstrates how to add and set the value of the `DatePicker` component:
-
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />
-    );
-}
-
-public onDatePickerRef(datePicker: IgrDatePicker){
-    datePicker.value = new Date(Date.now());
-}
-```
-
-<!-- WebComponents -->
-```html
-<igc-date-picker id="datePicker" height="50px" width="220px">
-</igc-date-picker>
-```
-
-```ts
-constructor() {
-    let datePicker = document.getElementById("datePicker") as IgcDatePickerComponent;
-    this.datePicker.value = new Date(Date.now());
-}
-```
-<!-- end:WebComponents -->
-
-```razor
-<DatePicker Height="50px" Width="220px" Value="@SelectedDate" />
-
-@code {
-    public DateTime SelectedDate { get; set; }
-
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-        this.SelectedDate = DateTime.Today;
-    }
-}
-```
-
-### Customization
-
-The following code demonstrates how to customize the `DatePicker` component by setting the color of the icon and hiding the clear button:
-
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
-    );
-}
-```
-
-<!-- WebComponents -->
-```html
-  <igc-date-picker id="datePicker" height="50px" width="220px"
-        show-clear-button="false"
-        icon-color="red">
-  </igc-date-picker>
-```
-
-<!-- end:WebComponents -->
-
-```razor
-<DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
-
-@code {
-
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-    }
-}
-```
 
 ### Editing
 
@@ -209,3 +132,29 @@ The following example demonstrates how combine multiple `DatePicker` controls.
 </code-view>
 
 <div class="divider--half"></div>
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `DatePicker`
+- `IconColor`
+- `AllowTextInput`
+- `DateFormat`
+- `FirstDayOfWeek`
+- `FormatString`
+- `Label`
+- `MinDate`
+- `MaxDate`
+- `Placeholder`
+- `ShowClearButton`
+- `ShowTodayButton`
+- `ShowWeekNumbers`
+- `FirstWeekOfYear`
+- `OpenOnFocus`
+- `Value`
+- `TextColor`
+- `TextFontFamily`
+- `TextFontSize`
+- `TextFontStyle`
+- `TextFontWeight`
