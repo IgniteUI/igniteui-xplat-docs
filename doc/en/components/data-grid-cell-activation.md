@@ -23,7 +23,7 @@ The $ProductName$ Data Table / Data Grid supports a cell activation feature that
 
 ## Excel Style Navigation
 
-`EnterKeyAfterEditButton` property will configure the grid to navigate to the next cell up, down, left or right after the enter key is pressed in edit mode. Otherwise, the `EnterBehavior` property of the grid can be used to navigate to other cells, while not in edit mode, up, down, left or right. 
+`EnterBehaviorAfterEdit` property will configure the grid to navigate to the next cell up, down, left or right after the enter key is pressed in edit mode. Otherwise, the `EnterBehavior` property of the grid can be used to navigate to other cells, while not in edit mode, up, down, left or right. 
 
 ## Keyboard Navigation
 
