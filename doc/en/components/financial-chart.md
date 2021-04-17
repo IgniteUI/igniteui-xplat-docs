@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Financial Chart | React Tables and Controls | Infragistics
-_description: Our $Platform$ financial chart component helps you visualize financial data using a simple API. Create fast, editable financial graphs with $PlatformName$!
+_description: Our $Platform$ financial chart component helps you visualize financial data using a simple API. Create fast, editable financial graphs with $ProductName$!
 _keywords: $Platform$ charts, financial chart, stock chart, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType']
 ---

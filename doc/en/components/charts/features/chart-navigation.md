@@ -6,7 +6,7 @@ mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKey
 ---
 # $Platform$ Chart Navigation
 
-The $PlatformName$ charts allows for interactive panning and zooming via the mouse, keyboard and touch.
+The $ProductName$ charts allows for interactive panning and zooming via the mouse, keyboard and touch.
 
 ## $Platform$ Chart Navigation Example
 

@@ -1,6 +1,6 @@
 ---
 title: $Platform$ ファイナンシャル チャート | React テーブルとコントロール | インフラジスティックス
-_description: 簡単な API を使用して財務データを可視化するには、$Platform$ ファイナンシャル チャート コンポーネントを使用します。$PlatformName$ を使用して高速で編集可能なファイナンシャル チャートを作成できます。
+_description: 簡単な API を使用して財務データを可視化するには、$Platform$ ファイナンシャル チャート コンポーネントを使用します。$ProductName$ を使用して高速で編集可能なファイナンシャル チャートを作成できます。
 _keywords: $Platform$ charts, financial chart, stock chart, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, インフラジスティックス
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType']
 _language: ja
