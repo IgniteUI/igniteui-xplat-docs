@@ -42,7 +42,7 @@ $PlatformShort$ 棒チャート (棒グラフ) は、さまざまなカテゴリ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           alt="凡例付きの $PlatformShort$ 棒チャート" >
+           alt="$PlatformShort$ 複数ソースの棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -66,7 +66,7 @@ $PlatformShort$ 折れ線チャート、または折れ線グラフは、傾向�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="凡例付きの $PlatformShort$ 折れ線チャート" >
+           alt="$PlatformShort$ 複数ソースの折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -90,7 +90,7 @@ $PlatformShort$ エリア チャートは、直線セグメントで接続され
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
-           alt="凡例付きの $PlatformShort$ エリア チャート" >
+           alt="$PlatformShort$ 複数ソースのエリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -139,7 +139,7 @@ $PlatformShort$ 縦棒チャート (縦棒グラフ) は、さまざまなカテ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="凡例付きの $PlatformShort$ 縦棒チャート" >
+           alt="$PlatformShort$ 複数ソースの縦棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -166,7 +166,7 @@ $PlatformShort$ ネットワーク チャートは、ネットワーク グラ�
 
 ### 極座標チャート
 
-$PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データポイントを水平線に沿って伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
+$PlatformShort$ 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -211,19 +211,19 @@ $PlatformShort$ スプライン チャート、またはスプライン グラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           alt="凡例付きの $PlatformShort$ スプライン チャート" >
+           alt="$PlatformShort$ 複数ソースのスプライン チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-### ステップ折れ線チャート
+### ステップ チャート
 
 ステップ折れ線チャート、またはステップ折れ線グラフは、ステップ状の進捗を形成する連続した垂直線と水平線で接続されたデータ ポイントのコレクションを描画するカテゴリ チャートです。値は Y 軸 (左側のラベル) に表示され、カテゴリは X 軸 (下部のラベル) に表示されます。$PlatformShort$ ステップ折れ線チャートは、一定期間の変化量を強調するか、複数の項目を比較します。$PlatformShort$ ステップ折れ線チャートは、ステップ線の下の領域が塗りつぶされていないことを除いて、すべての点で $PlatformShort$ ステップエリア チャートと同じです。[ステップ折れ線チャート](types/step-chart.md)の詳細をご覧ください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           alt="凡例付きの $PlatformShort$ ステップ折れ線チャート" >
+           alt="$PlatformShort$ 複数ソースのステップ折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -251,17 +251,21 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 ### $PlatformShort$ 動的なチャート
 
-新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、複数のチャート列を表示および重ねて、積層型縦棒を作成できます。
+新しい[複合チャート](types/Composite-chart.md)を作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、複数のチャート列を表示および重ねて、積層型縦棒を作成できます。
 
 ### カスタム ツールチップ
 
-新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、画像やデータ バインディングを使用してツールチップをカスタマイズしたり、複数のシリーズのツールチップを 1 つのツールチップに組み合わせたりすることもできます。
+新しい複合ビューを作成し、単一のチャートで複数のシリーズを重ね合わせて、データを視覚化します。チャートでは、画像やデータ バインディングを使用して[カスタム ツールチップ](features/chart-tooltips.md#$PlatformShort$-チャート-ツールチップ-テンプレート)を作成したり、複数のシリーズのツールチップを 1 つのツールチップに組み合わせたりすることもできます。
 
 ### リアルタイムの高パフォーマンスなチャート
 
-ライブのストリーミング データを使用して、ミリ秒レベルの更新で数百万のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。
+ライブのストリーミング データを使用して、ミリ秒レベルの更新で数千のデータ ポイントをリアルタイムで表示します。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。デモについては、[高頻度のチャート](features/chart-performance.md#高頻度-$PlatformShort$-チャート)トピックを参照してください。
 
-#### モジュラー デザイン
+### 大量のデータ処理
+
+[チャート パフォーマンス](features/chart-performance.md)を最適化して、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにスムーズなパフォーマンスを提供し続けながら、数百万のデータ ポイントを描画します。デモについては、[大量データのチャート](features/chart-performance.md#大量データの-$PlatformShort$-チャート)トピックを参照してください。
+
+### モジュラー デザイン
 
 $PlatformShort$チャート は、モジュール性のために設計されています。必要な機能のみが展開一部であるため、描画されたページで可能な限り最小のフットプリントを取得します。
 
@@ -273,29 +277,24 @@ $PlatformShort$チャート は、モジュール性のために設計されて�
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"/>
 
-#### トレンドライン
+### トレンドライン
 
-線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要なすべてのトレンドラインをサポートします。
+$PlatformShort$ チャートは、線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要になるすべての[トレンドライン](features/chart-trendlines.md)をサポートします。
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"/>
 
-#### インタラクティブなパニングとズーム
+### インタラクティブなパニングとズーム
 
 シングル タッチまたはマルチタッチ、キーボード、ズーム バー、マウス ホイールを使用し、マウスで任意の長方形領域をドラッグ選択してズームインし、データ ポイントのクローズアップ、データ履歴のスクロール、またはデータ領域のパンを行います。
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"/>
 
-#### マーカー、ツールチップ、およびテンプレート
+### マーカー、ツールチップ、およびテンプレート
 
-10 種類のマーカーのいずれかを使用してデータを強調表示するか、シンプルなツールチップまたは多軸および多系列のチャート ツールチップとカスタム チャート テンプレートを使用して、データにコンテキストと意味を追加します。
+10 個の[マーカー タイプ](features/chart-markers.md)のいずれかを使用するか、独自の[マーカー-テンプレート](features/chart-markers.md#$PlatformShort$-チャート-マーカーのテンプレート)を作成して、データを強調表示するか、シンプルな[ツールチップ](features/chart-tooltips.md)または[カスタム ツールチップ](features/chart-tooltips.md#$PlatformShort$-チャート-ツールチップ-テンプレート)を使用した多軸および複数系列のチャートで、データにコンテキストと意味を追加します。
 
 <img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"/>
 
-#### 大量のデータ処理
-
-`changeDetection` 設定を変更して、チャートファイナンシャル チャートのパフォーマンスを最適化し、数百万のデータ ポイントを描画します。この設定を使用すると、変更を探して大量のチャートをスムーズに実行し続けるときに、$PlatformShort$ がデータ配列をどのように処理するかを制御できます。
-
-<img class="img" src="../../images/charts/ignite-ui-angular-category-chart-high-volume-data-1100.gif"/>
 
 ## その他の詳細
 
@@ -312,3 +311,4 @@ $PlatformShort$チャート は、モジュール性のために設計されて�
 - Ignite UI for Angular は、Angular 開発者向けの Angular 上に構築されており、サードパーティの依存関係はありません。Angular 用に 100% 最適化されています。
 - Sketch デザインからピクセル パーフェクトな Angular コンポーネントを生成する、UX デザイナー、ビジュアル デザイナー、開発者向けのコード プラットフォームに、世界初で唯一のエンドツーエンドの包括的なデザインを提供します。Indigo.Design を使用すると、Indigo Design System から Sketch で作成するすべてのものが Ignite UI for Angular コンポーネントと一致します。
 <!-- end: Angular -->
+

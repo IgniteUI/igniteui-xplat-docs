@@ -23,6 +23,8 @@ $PlatformShort$ チャートのホバー操作と注釈は、シリーズ コレ
 
 <div class="divider--half"></div>
 
+このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+
 ## $PlatformShort$ 十字線レイヤー
 
 `CrosshairLayer` は、対象にするために構成される各シリーズの実際値で、異なるセットの線を描画する各シリーズと交差する十字線として描画されます。
@@ -48,34 +50,6 @@ $PlatformShort$ チャートのホバー操作と注釈は、シリーズ コレ
 </code-view>
 
 <div class="divider--half"></div>
-
-```html
-<igx-category-chart
-    [dataSource]="data"
-    crosshairsDisplayMode="Horizontal"
-    crosshairsSnapToData="true"
-    crosshairsAnnotationEnabled="true">
-</igx-category-chart>
-```
-
-```tsx
- <IgrCategoryChart
-    dataSource={this.state.data}
-    crosshairsDisplayMode="Horizontal"
-    crosshairsSnapToData={true}
-    crosshairsAnnotationEnabled={true} />
-```
-
-```html
-<igc-category-chart
-    id="chart"
-    width="400px"
-    height="400px"
-    crosshairs-display-mode="Horizontal"
-    crosshairs-snap-to-data="true"
-    crosshairs-annotation-enabled="true">
-</igc-category-chart>
-```
 
 ## $PlatformShort$ 最終値レイヤー
 
@@ -188,6 +162,9 @@ chart.calloutsLabelMemberPath = "info";
 ```
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `CrosshairsSnapToData`
 - `CategoryChart`
 

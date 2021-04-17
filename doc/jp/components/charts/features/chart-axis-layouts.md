@@ -55,11 +55,16 @@ $PlatformShort$ チャートの `XAxisOverlap` プロパティを使用すると
            github-src="charts/category-chart/axis-locations">
 </code-view>
 
+<!-- ## 軸方向の例
+
+TODO add info/example of 4 charts with all possible combinations of XAxisIsInverted and YAxisIsInverted
+e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
+ -->
+
 ## 軸の高度なシナリオ
 
 より高度な軸レイアウト シナリオでは、`XamDataChart` を使用して軸を共有したり、同じタイプの複数の軸を追加したり、特定の値で軸を交差させたりすることができます。次の例は、これらの機能の使用方法を示しています。
 
-より高度な軸レイアウト シナリオでは、`XamDataChart` を使用して軸を共有したり、同じタイプの複数の軸を追加したり、特定の値で軸を交差させたりすることができます。以下の例は、これらの機能の使用方法を示しています。
 ## 軸共有の例
 
 $PlatformShort$ データ チャートの同じプロット領域に複数の軸を共有して追加できます。`TimeXAxis` を共有し、複数の `NumericYAxis` を追加して、さまざまな値 (株価や株取引量など) を持つ多くのデータ ソースをプロットするのが一般的なシナリオです。
@@ -88,23 +93,28 @@ $PlatformShort$ データ チャートでは、プロット領域内に軸を配
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
-<div class="divider--half"></div
+<div class="divider--half"></div>
 
 
 ## その他のリソース
+
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
 - [軸グリッド線](chart-axis-gridlines.md)
 - [軸オプション](chart-axis-options.md)
 
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `CrossingAxis`
 - `CrossingValue`
 - `NumericYAxis`
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
 - `XAxisGap`
 - `XAxisLabelLocation`
 - `XAxisOverlap`
-- `CategoryChart`
-- `FinancialChart`
-- `XamDataChart`
 - `YAxisLabelLocation`

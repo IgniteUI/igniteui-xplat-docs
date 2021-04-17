@@ -21,6 +21,7 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 
 ## $PlatformShort$ ドック マネージャーの例
 
+この例は、$PlatformShort$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -30,8 +31,6 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 
 <!-- Angular, React, WebComponents -->
@@ -85,6 +84,12 @@ this.dockManager.layout = {
         ]
     }
 };
+```
+
+[`allowFloatingPanesResize`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) プロパティを使用して、フローティング ペインのサイズ変更を許可するかどうかを選択できます。デフォルトでは、プロパティ値は `true` です。値が `false` に設定されている場合、フローティング ペインのサイズを変更することはできません。
+
+```ts
+this.dockManager.allowFloatingPanesResize = false;
 ```
 
 ペインのコンテンツをロードするために、ドック マネージャーは[スロット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/slot)を使用します。コンテンツ要素の [`slot`](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Global_attributes/slot) 属性はレイアウト構成のコンテンツ ペインの [`contentId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) と一致する必要があります。エンドユーザーがペインのサイズを変更する場合は、予測可能な応答のために、コンテンツ要素の幅と高さを `100%` に設定することを強くお勧めします。
@@ -222,6 +227,9 @@ const tabGroupPane: IgcTabGroupPane = {
 
 すべてのタブ ヘッダーを表示する十分なスペースがない場合、タブ グループは非表示タブを含む **[その他のタブ]** メニューを表示します。そのメニューのタブ項目をクリックすると、タブが選択され、最初の位置に移動します。
 
+タブは、それらが配置されているタブ グループから切り離さずに並べ替えることもできます。タブをクリックして、希望の位置まで左または右にドラッグできます。選択したタブをタブ領域の外にドラッグすると、フローティング ペインにデタッチされます。[`allowFloating`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) プロパティが `false` に設定されている子コンテンツ ペインのタブをタブ領域の外にドラッグすることはできないことに注意してください。
+
+
 ### ドキュメント ホスト
 
 [Document host](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html) コード編集やデザイン ビュー用の Visual Studio のタブと同様のドキュメント タブ領域です。以下は、2 つのドキュメント タブを持つドキュメント ホストを定義する方法です。
@@ -269,6 +277,7 @@ const layout: IgcDockManagerLayout = {
             floatingLocation: { x: 80, y: 80 },
             floatingWidth: 200,
             floatingHeight: 150,
+            floatingResizable: true,
             panes: [
                 {
                     type: IgcDockManagerPaneType.contentPane,
@@ -281,7 +290,7 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
+[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。[`floatingResizable`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) プロパティ (デフォルトでは `true` に設定されています) は、特定のフローティング ペインのサイズを変更できるかどうかを決定します。この値は、グローバルな `allowFloatingPanesResize` プロパティの値を上書きします。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
 
 ### アクティブ ペイン
 
@@ -325,6 +334,44 @@ this.dockManager.layout = { ...layout };
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+
+## キーボード ナビゲーション
+
+キーボード ナビゲーションは、**ドック マネージャー**のアクセシビリティを強化し、すべてのペインをナビゲートしたり、アクティブなペインをドッキングしてビューを複数の方向に分割したりするなど、エンドユーザーにさまざまな操作を提供します。
+
+
+ショートカットは以下のとおりです。
+
+### ドッキング
+
+- <kbd>Cmd/Ctrl + Shift + 上矢印</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl + Shift + 下矢印</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl + Shift + 右矢印</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl + Shift + 左矢印</kbd> グローバルのの左へのドック。
+- <kbd>Shift + 上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift + 下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift + 右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift + 左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+
+### ナビゲーション
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + 右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + 左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Alt + F6</kbd> 次のコンテンツ ペインにフォーカスします。
+ - <kbd>Alt + Shift + F6</kbd> 前のコンテンツ ペインにフォーカスします。
+
+### ペイン ナビゲーター
+
+次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
+
+ - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  最初のドキュメントから開始します。
+ - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> 最初のペインから開始します。
+ - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> 最後のドキュメントから逆方向に開始します。
+ - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> 最後のペインから逆方向に開始します。
+
+### その他
+ - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
+
+サンプル [`demo`](dock-manager.md#$PlatformShort$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 ## テーマ
 

@@ -52,13 +52,24 @@ $PlatformShort$ チャートでは、数値軸または時間軸の範囲の最�
 
 <div class="divider--half"></div>
 
+<!--
+## 軸スケールの例
+
+TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
+
+-->
 
 ## その他のリソース
+
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
 - [軸グリッド線](chart-axis-gridlines.md)
 - [軸レイアウト](chart-axis-layouts.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `XAxisMaximumValue`
 - `XAxisMinimumValue`
 - `YAxisMaximumValue`

@@ -12,7 +12,7 @@ _language: ja
 
 アニメーションは $ProductName$ チャート コンポーネントで無効ですが、`IsTransitionInEnabled` プロパティを true に設定することで有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 
-## チャート アニメーションの例
+## $PlatformShort$ チャート アニメーションの例
 
 以下の例は、アニメーションをデフォルトの `TransitionInMode` ("Auto") に設定した[折れ線チャート](../types/line-chart.md)を示しています。この例の一番上のドロップダウンとスライダーは、`TransitionInMode` と `TransitionInDuration` をそれぞれ変更できるため、サポートされるさまざまなアニメーションが異なる速度でどのように見えるかを確認できます。
 
@@ -35,7 +35,7 @@ _language: ja
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `CategoryChart`
 - `IsTransitionInEnabled`

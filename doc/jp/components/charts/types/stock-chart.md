@@ -1,13 +1,13 @@
 ---
 title: $PlatformShort$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Stock Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $PlatformShort$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
 mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 _language: ja
 ---
 # $PlatformShort$ 株価チャート
 
-$PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株式ティッカーは、分析している会社のデータ (ティッカー シンボル、通常は 1〜5 文字) を表します。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。株価チャートには、各期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。$PlatformShort$ 株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
+$ProductName$ 株価チャート ($PlatformShort$ ファイナンシャル チャートまたはローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。また、このチャートには、設定可能な期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
 
 ## $PlatformShort$ 株価チャートの例
 
@@ -21,6 +21,10 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 
 <div class="divider--half"></div>
 
+## 株価チャートの推奨事項
+
+### $PlatformShort$ 株価チャートはプロジェクトに適していますか?
+
 典型的な株価チャートは、価格帯のテクニカル分析に使用されるローソク足チャートのティッカー データで表されます。ローソク足チャートは、1 日の高値と安値を、ティッカー シンボルの始値と終値と比較します。
 
 - ローソク足チャートの本文には、始値と終値 (O/C) が表示されます。
@@ -31,6 +35,13 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - 黒または赤のローソク足は、前のローソク足の終値よりも低い終値の価格を表します。
 - 白または緑のローソク足は、前のローソク足の終値よりも高い終値を表します。
 
+株価チャートは、次のいずれかを表示するように設定できます:
+
+- ローソク足チャート
+- 棒チャート
+- 縦棒チャート
+- 折れ線チャート
+
 株価チャートは、ユーザーがデータ分析機能を実行できるようにすることを目的としているため、次のようなインタラクティブな要素が含まれています:
 
 - 時間ベースのフィルター
@@ -40,14 +51,7 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - トレンドライン
 - ナビゲーション/ズームバー ペイン
 
-株価チャートは、次のいずれかを表示するように設定できます:
-
-- ローソク足チャート
-- 棒チャート
-- 縦棒チャート
-- 折れ線チャート
-
-データ構造:
+### 株価チャートのデータ構造
 
 - データ ソースはデータ項目の配列またはリストである必要があります。
 - データ ソースに少なくとも 1 つのデータ項目を含む必要があります。
@@ -57,7 +61,6 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 - すべてのデータ項目には、ローソク足チャートの始値、高値、安値、終値、ボリュームの 5 つの数値列が含まれている必要があります。
 
 ## 複数シリーズの $PlatformShort$ 株価チャート
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -70,7 +73,6 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 ## $PlatformShort$ 株価チャート
 
 この例では、株価チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
-
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -124,164 +126,18 @@ $PlatformShort$ 株価チャート ($PlatformShort$ ローソク足チャート�
 
 デフォルトでインジケーター ペインは表示されません。ユーザーは、ツールバーを使用してランタイムで表示するインジケーターを選択できます。初期でインジケーター ペインを表示するには、以下のコードのように `indicatorTypes` プロパティをインジケーターのタイプを 1 つ以上に設定する必要があります:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    indicatorTypes="AverageTrueRange,ForceIndex">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    indicatorTypes="AverageTrueRange,ForceIndex" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    indicator-types="AverageTrueRange,ForceIndex">
- </igc-financial-chart>
-```
-
-```razor
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.AverageTrueRange);
-this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
-```
-
 ### ボリューム ペイン
 ボリューム ペインは指定した期間に取引された株式数を表します。出来高の低さは関心が低いことを示し、出来高の多さは取引が多く、関心が高いことを示します。縦棒、折れ線、またはエリア チャート タイプを使用して表示できます。ツールバーでチャート タイプを選択すると、ランタイムにデータを表示するボリューム ペインが表示されます。ペインを表示するには、以下のコードのようにボリューム タイプを設定する必要があります:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    volumeType="Column">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    volumeType="Column" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    volume-type="Column">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   VolumeType="FinancialChartVolumeType.Column" />
-```
-
 ### 価格ペイン
 このペインは、在庫価格を表示し、経時的な在庫の高値、安値、始値、終値を示します。さらに、トレンドラインおよびオーバーレイを表示できます。ツールバーからチャート タイプを選択できます。デフォルトで、チャート タイプは `Auto` に設定されています。次のコードに示すように、デフォルト設定をオーバーライドできます:
- ```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line" />
-```
 
 注: 複数のデータ ソースまたはデータ ポイントが大量にあるデータ ソースを描画する場合、折れ線チャート タイプを使用してください。
 
 ### ズーム ペイン
 このペインはすべての表示されるペインのズームを制御します。このペインはデフォルトで表示されます。以下のコードのように `ZoomSliderType` を `none` に設定すると機能を無効にできます:
 
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    zoomSliderType="none">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    zoomSliderType="none" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    zoom-slider-type="none">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
-
 注: `ZoomSliderType` オプションを `ChartType` オプションと同じ値に設定してください。このように、ズーム スライダーは価格ペインの正しいプレビューを表示します。以下のコードはその方法を示しています。
-
-```html
- <igx-financial-chart
-    [dataSource]="data"
-    width="850px"
-    height="600px"
-    chartType="Line"
-    zoomSliderType="Line">
- </igx-financial-chart>
-```
-
-```tsx
- <IgrFinancialChart
-    chartType="Line"
-    zoomSliderType="Line" />
-```
-
-```html
- <igc-financial-chart id="chart"
-    width="850px"
-    height="600px"
-    chart-type="Line"
-    zoom-slider-type="Line">
- </igc-financial-chart>
-```
-
-```razor
-<FinancialChart Width="100%"
-   Height="100%"
-   DataSource="DataSource"
-   ChartType="FinancialChartType.Line"
-   ZoomSliderType="FinancialChartZoomSliderType.Line" />
-```
 
 この例では、株価チャートは米国の収益をプロットしています。
 
@@ -294,13 +150,19 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 <div class="divider--half"></div>
 
 ## その他のリソース
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-株価チャート      | `FinancialChart`     | `FinancialChart`
+関連するチャート機能の詳細については、以下のトピックを参照してください。
+
+- [チャート アニメーション](../features/chart-animations.md)
+- [チャート注釈](../features/chart-annotations.md)
+- [チャート ナビゲーション](../features/chart-navigation.md)
+- [チャート トレンドライン](../features/chart-trendlines.md)
+- [チャートのパフォーマンス](../features/chart-performance.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `ChartType`
 - `CrosshairsSnapToData`
 - `IndicatorTypes`

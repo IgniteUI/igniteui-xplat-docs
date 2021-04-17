@@ -1,29 +1,29 @@
 ---
 title: $PlatformShort$ 折れ線チャートとグラフ | $ProductName$
 _description: $PlatformShort$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Line Chart, Infragistics, $PlatformShort$ チャート, 折れ線チャート, インフラジスティックス
+_keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics, $PlatformShort$ チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
 mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 _language: ja
 ---
 # $PlatformShort$ 折れ線チャート
 
-$PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテゴリ折れ線グラフの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
-
-複数シリーズの場合、$PlatformShort$ 折れ線チャートでは、表示されるデータをエンド ユーザーが簡単に認識できるよう、より視覚的なインジケーターが必要です。エクスペリエンスを向上させるには、複数シリーズの凡例を追加する必要があります。最初に凡例オブジェクトをアプリケーションに追加し、それを $PlatformShort$ `CategoryChart` の `Legend` プロパティに設定します。これにより、ユーザーは各行がどのデータセットに対応するかを分かりやすく表示します。
+$ProductName$ 折れ線チャート (または折れ線グラフ) は、カテゴリ チャートの一種で、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントで表される連続データ値を示します。トレンドの表示や比較分析によく使用されます。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。
 
 ## $PlatformShort$ 折れ線チャートの例
 
-次の例では、折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
+次の例では、$PlatformShort$ 折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="$PlatformShort$ 凡例付きの $PlatformShort$ 折れ線チャート" >
+           alt="$PlatformShort$ 複数ソースの折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
+
+## 折れ線チャートの推奨事項
 
 ## $PlatformShort$ 折れ線チャートはプロジェクトに適していますか?
 
@@ -38,7 +38,9 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 - 極座標型折れ線チャート
 - 積層型 100 折れ線チャート
 
-### 折れ線チャートにはいくつかのユースケースがあります。例:
+### 折れ線チャートのユースケース
+
+折れ線チャートを選択するための一般的なユースケースはいくつかあります:
 
 - パン、ズーム、ドリルダウンなどのチャート操作に適した大容量のデータセットを使用する場合
 - 経時的なトレンドを比較する必要がある場合
@@ -58,105 +60,13 @@ $PlatformShort$ 折れ線チャート (または折れ線グラフ) は、カテ
 - 多くの (7 または 10 以上) シリーズのデータがある場合チャートを読みやすくすることが目標である場合
 - 時系列データの値は同じ (同じ期間のデータ) である場合; 重複した行を区別できなくなります。
 
-### データ構造:
+### 折れ線チャートのデータ構造:
 
 - データ ソースはデータ項目の配列またはリスト (単一シリーズの場合) である必要があります。
 - データ ソースは、配列の配列またはリストのリスト (複数シリーズの場合) である必要があります。
 - データ ソースに少なくとも 1 つのデータ項目を含む必要があります
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
-
-<!-- 次のコード スニペットは、折れ線チャートの作成に使用できるサンプルデータ ソースを示しています:
-
-```razor
-public class EnergyRenewableData : List<EnergyRenewableInfo>
-{
-    public EnergyRenewableData()
-    {
-        Add(new EnergyRenewableInfo { Year = "2009", Europe = 31, USA = 19, China = 21 });
-        Add(new EnergyRenewableInfo { Year = "2010", Europe = 43, USA = 24, China = 26 });
-        Add(new EnergyRenewableInfo { Year = "2011", Europe = 66, USA = 28, China = 29 });
-        Add(new EnergyRenewableInfo { Year = "2012", Europe = 69, USA = 26, China = 32 });
-        Add(new EnergyRenewableInfo { Year = "2013", Europe = 58, USA = 38, China = 47 });
-        Add(new EnergyRenewableInfo { Year = "2014", Europe = 40, USA = 31, China = 46 });
-        Add(new EnergyRenewableInfo { Year = "2015", Europe = 78, USA = 19, China = 50 });
-        Add(new EnergyRenewableInfo { Year = "2016", Europe = 13, USA = 52, China = 90 });
-        Add(new EnergyRenewableInfo { Year = "2017", Europe = 78, USA = 50, China = 132 });
-        Add(new EnergyRenewableInfo { Year = "2018", Europe = 40, USA = 34, China = 134 });
-        Add(new EnergyRenewableInfo { Year = "2019", Europe = 80, USA = 38, China = 96 });
-    }
-}
-
-public class EnergyRenewableInfo
-{
-    public string Year { get; set; }
-    public int Europe { get; set; }
-    public int China { get; set; }
-    public int USA { get; set; }
-}
-```
-
-```ts
-public initData() {
-    this.data = [
-        { Year: "2009", Europe: 31, China: 21,  USA: 19 },
-        { Year: "2010", Europe: 43, China: 26,  USA: 24 },
-        { Year: "2011", Europe: 66, China: 29,  USA: 28 },
-        { Year: "2012", Europe: 69, China: 32,  USA: 26 },
-        { Year: "2013", Europe: 58, China: 47,  USA: 38 },
-        { Year: "2014", Europe: 40, China: 46,  USA: 31 },
-        { Year: "2015", Europe: 78, China: 50,  USA: 19 },
-        { Year: "2016", Europe: 13, China: 90,  USA: 52 },
-        { Year: "2017", Europe: 78, China: 132, USA: 50 },
-        { Year: "2018", Europe: 40, China: 134, USA: 34 },
-        { Year: "2019", Europe: 80, China: 96,  USA: 38 },
-    ];
-}
-``` -->
-
-$PlatformShort$ 折れ線チャートを使用するには、最初に次のモジュールをアプリケーションに追加する必要があります:
-
-<!-- Blazor -->
-```razor
-CategoryChartModule.Register(IgniteUIBlazor);
-```
-<!-- end: Blazor -->
-
-<!-- Angular -->
-```ts
-// app.module.ts
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
-
-@NgModule({
-    imports: [
-        // ...
-        IgxCategoryChartModule,
-        // ...
-    ]
-})
-export class AppModule {}
-```
-<!-- end: Angular -->
-
-<!-- React -->
-```ts
-import { IgrCategoryChartModule } from 'igniteui-react-charts';
-
-IgrCategoryChartModule.register();
-```
-<!-- end: React -->
-
-<!-- WebComponents -->
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcCategoryChartModule } from 'igniteui-webcomponents-charts';
-
-ModuleManager.register(
-    IgcCategoryChartModule
-    );
-```
-<!-- end: WebComponents -->
-
 
 ## 単一シリーズの $PlatformShort$ 折れ線チャート
 
@@ -220,9 +130,9 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 折れ線チャートの高度なシナリオ
+## 高度なタイプの折れ線チャート
 
-高度なタイプの折れ線チャートの場合、以下のセクションで説明するよう回線 `XamDataChart` コントロールを使用して他のタイプの折れ線チャートを作成します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $PlatformShort$ 折れ線チャートについて説明します。
 
 ## $PlatformShort$ 積層型折れ線チャート
 
@@ -254,7 +164,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## $PlatformShort$ ラジアル折れ線チャート
 
-ラジアル折れ線チャートはラジアル チャートのグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶしなしのポリゴンの形状を持っています。このグラフ チャートは、折れ線チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平線に沿って伸ばすのではなく、円形の軸の周りにラップします。
+ラジアル折れ線チャートはラジアル チャートのグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶしなしのポリゴンの形状を持っています。このグラフ チャートは、折れ線チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
 
@@ -269,7 +179,7 @@ $PlatformShort$ 折れ線チャートは、次のデモに示すように、数�
 
 ## $PlatformShort$ 極座標型折れ線チャート
 
-極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、[散布折れ線チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントが水平線に沿って引き伸ばされるのではなく、円の周りにラップされる点が異なります。
+極座標折れ線チャートは極座標チャートのグループに属し、極座標 (角度/半径) のデータ ポイントを結ぶ直線のコレクションを使用して描画されます。極座標チャートは、[散布折れ線チャート](scatter-chart.md)と同じデータ プロットの概念を使用しますが、視覚化によってデータ ポイントがを水平方向に引き伸ばされるのではなく、円の周りにラップされる点が異なります。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
 

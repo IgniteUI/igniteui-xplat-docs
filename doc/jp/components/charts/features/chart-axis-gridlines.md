@@ -88,17 +88,21 @@ _language: ja
 
 軸ビジュアル           | タイプ    | プロパティ名                                             | 説明
 -----------------------|---------|------------------------------------------------------------|-------------------------
-目盛りストロークの色      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | これらのプロパティは、目盛りの色を設定します。
-目盛りストロークの太さ  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | これらのプロパティは、軸の目盛りの太さを設定します。
-目盛りストロークの長さ     | number  | `XAxisTickLength` <br> `YAxisTickLength`                   | これらのプロパティは、軸の目盛りの長さを設定します。
+目盛りストロークの色      | 文字列  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | これらのプロパティは、目盛りの色を設定します。
+目盛りストロークの太さ  | 数  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | これらのプロパティは、軸の目盛りの太さを設定します。
+目盛りストロークの長さ     | 数  | `XAxisTickLength` <br> `YAxisTickLength`                   | これらのプロパティは、軸の目盛りの長さを設定します。
 
 
 ## その他のリソース
+
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
 - [軸レイアウト](chart-axis-layouts.md)
 - [軸オプション](chart-axis-options.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明されている API メンバーのリストです。
 
 - `CategoryChart`
 - `FinancialChart`
@@ -116,3 +120,4 @@ _language: ja
 - `YAxisTickStroke`
 - `XAxisMajorStroke`
 - `YAxisMajorStroke`
+
