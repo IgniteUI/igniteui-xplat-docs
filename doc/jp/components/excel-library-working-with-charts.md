@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | チャートの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリのチャート機能を使用して、ワークシートのセル領域全体のデータ トレンドをチャートで表示します。$ProductName$ Excel データを 70 種類以上のチャート タイプで可視化できます。
+title: $Platform$ Excel ライブラリ | チャートの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリのチャート機能を使用して、ワークシートのセル領域全体のデータ トレンドをチャートで表示します。$ProductName$ Excel データを 70 種類以上のチャート タイプで可視化できます。
 _keywords: Excel library, charts,  $ProductName$, Infragistics, Excel ライブラリ, チャート, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet']
 _language: ja
 ---
-# $PlatformShort$ チャートの使用
+# $Platform$ チャートの使用
 
-Infragistics $PlatformShort$ Excel Engine の `WorksheetChart` 機能は、ワークシートのセル領域全体のデータ トレンドをチャートで表示します。たとえば Excel データを縦棒チャートや折れ線チャートで可視化する場合に便利です。
+Infragistics $Platform$ Excel Engine の `WorksheetChart` 機能は、ワークシートのセル領域全体のデータ トレンドをチャートで表示します。たとえば Excel データを縦棒チャートや折れ線チャートで可視化する場合に便利です。
 
-## $PlatformShort$ チャートの使用の例
+## $Platform$ チャートの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts" 
-           alt="$PlatformShort$ チャートの使用の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
+           alt="$Platform$ チャートの使用の例"
            github-src="excel/excel-library/working-with-charts">
 </code-view>
 

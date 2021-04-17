@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ スプレッドシート | テーブルとスプレッドシート コンポーネント | インフラジスティックス
-_description: $PlatformShort$ スプレッドシート コントロールを使用して、Excel ドキュメントと編集機能をアプリケーションに直接埋め込みます。データ可視化を向上させます。
+title: $Platform$ スプレッドシート | テーブルとスプレッドシート コンポーネント | インフラジスティックス
+_description: $Platform$ スプレッドシート コントロールを使用して、Excel ドキュメントと編集機能をアプリケーションに直接埋め込みます。データ可視化を向上させます。
 _keywords: Excel Spreadsheet, $ProductName$, Infragistics, Excel スプレッドシート, インフラジスティックス
 _language: ja
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Spreadsheet の概要
+# $Platform$ Spreadsheet の概要
 
-$PlatformShort$ Spreadsheet は、スプレッドシート データの視覚化と編集を可能にします。機能には、アクティブ化、セル編集、条件付き書式設定、選択、クリップボードなどがあります。
+$Platform$ Spreadsheet は、スプレッドシート データの視覚化と編集を可能にします。機能には、アクティブ化、セル編集、条件付き書式設定、選択、クリップボードなどがあります。
 
-## $PlatformShort$ Spreadsheet の例
+## $Platform$ Spreadsheet の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="$PlatformShort$ Spreadsheet の例"
+           alt="$Platform$ Spreadsheet の例"
            github-src="excel/spreadsheet/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 依存関係
-$PlatformShort$ スプレッドシート コンポーネントをインストールするときは、core パッケージと excel パッケージもインストールする必要があります。
+$Platform$ スプレッドシート コンポーネントをインストールするときは、core パッケージと excel パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -80,7 +80,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## 使用方法
-$PlatformShort$ スプレッドシート モジュールがインポートされたので、次にスプレッドシートの基本設定です。
+$Platform$ スプレッドシート モジュールがインポートされたので、次にスプレッドシートの基本設定です。
 
 ```html
 <igx-spreadsheet #spreadsheet height="500px" width="100%">
@@ -96,7 +96,7 @@ $PlatformShort$ スプレッドシート モジュールがインポートされ
 >
 > 次のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
-以下は、ワークブックを $PlatformShort$ スプレッドシートにロードする方法を示しています。
+以下は、ワークブックを $Platform$ スプレッドシートにロードする方法を示しています。
 
 ```ts
 import { IgxSpreadsheetComponent } from 'igniteui-angular-spreadsheet';

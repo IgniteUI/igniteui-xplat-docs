@@ -1,16 +1,16 @@
 ---
-title: $PlatformShort$ チャート マーカー | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート マーカー
-_keywords: $PlatformShort$ Charts, Markers, Infragistics, $PlatformShort$ チャート, マーカー, インフラジスティックス
+title: $Platform$ チャート マーカー | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート マーカー
+_keywords: $Platform$ Charts, Markers, Infragistics, $Platform$ チャート, マーカー, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート マーカー
+# $Platform$ チャート マーカー
 
 $ProductName$ マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
 
-# $PlatformShort$ チャート マーカーの例
+# $Platform$ チャート マーカーの例
 
 次の例では、[折れチャート](../types/line-chart.md)は、2009 年から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。マーカーが `MarkerType` プロパティを "Circle" に設定して有効になっています。
 
@@ -19,20 +19,20 @@ $ProductName$ マーカーは、カテゴリ チャートのプロット領域�
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$PlatformShort$ 構成オプションの例"
+           alt="$Platform$ 構成オプションの例"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
 <div class="divider--half"></div>
 
-# $PlatformShort$ チャート マーカー テンプレート
+# $Platform$ チャート マーカー テンプレート
 
 以下の例に示すように、マーカー プロパティに加えて、`XamCategoryChart` コントロールで描画されたシリーズの `MarkerTemplate` プロパティに関数を設定することで、独自のマーカーを実装できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-templates"
-           alt="$PlatformShort$ チャート マーカーのテンプレート"
+           alt="$Platform$ チャート マーカーのテンプレート"
            github-src="charts/category-chart/marker-templates">
 </code-view>
 

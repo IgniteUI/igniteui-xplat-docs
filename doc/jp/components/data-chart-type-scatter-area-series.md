@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布エリア チャート | データ バインディング | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布エリア チャート | データ バインディング | インフラジスティックス
 _description: Infragistics $ProductName$ は散布エリア シリーズを提供します。$ProductName$ 散布エリア シリーズについて説明します。
-_keywords: $PlatformShort$ charts, data chart, scatter area charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 散布図エリア チャート, インフラジスティックス
+_keywords: $Platform$ charts, data chart, scatter area charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 散布図エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','ScatterAreaSeries','ScatterContourSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布図 - エリア シリーズ
+# $Platform$ 散布図 - エリア シリーズ
 
-このトピックは、コード例を示して $PlatformShort$ データ チャート コンポーネントで `ScatterAreaSeries` を使用する方法を説明します。このシリーズは、各ポイントに数値が割り当てられた X および Y データの三角測量に基づいて色付きの表面を描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。`ScatterAreaSeries` は `ScatterContourSeries` と同様ですが、同じ値を持つデータポイントを接続する等線の置換に補完で色つきサーフェス エリアとしてデータを表します。
+このトピックは、コード例を示して $Platform$ データ チャート コンポーネントで `ScatterAreaSeries` を使用する方法を説明します。このシリーズは、各ポイントに数値が割り当てられた X および Y データの三角測量に基づいて色付きの表面を描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。`ScatterAreaSeries` は `ScatterContourSeries` と同様ですが、同じ値を持つデータポイントを接続する等線の置換に補完で色つきサーフェス エリアとしてデータを表します。
 
-## $PlatformShort$ 散布図 - エリア シリーズの例
+## $Platform$ 散布図 - エリア シリーズの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series" 
-           alt="$PlatformShort$ 散布図 - エリア シリーズの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series"
+           alt="$Platform$ 散布図 - エリア シリーズの例"
            github-src="charts/data-chart/type-scatter-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントにはさまざまな種類の軸がありますが、`ScatterAreaSeries` では `NumericYAxis` と `NumericYAxis` のみ使用できます。
+$Platform$ データ チャート コンポーネントにはさまざまな種類の軸がありますが、`ScatterAreaSeries` では `NumericYAxis` と `NumericYAxis` のみ使用できます。
 
 ## データの要件
 

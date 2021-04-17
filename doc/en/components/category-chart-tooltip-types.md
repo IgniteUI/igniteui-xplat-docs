@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Tooltip Types | Infragistics
-_description: Use Infragistics' $PlatformShort$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
-_keywords: $PlatformShort$ charts, category chart, tooltip, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Tooltip Types | Infragistics
+_description: Use Infragistics' $Platform$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
+_keywords: $Platform$ charts, category chart, tooltip, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart', 'ToolTipType']
 ---
-# $PlatformShort$ Tooltip Types
+# $Platform$ Tooltip Types
 
 This topic provides conceptual information about the tooltip types available on the $ProductName$ category chart component.
 
-## $PlatformShort$ Tooltip Types Example
+## $Platform$ Tooltip Types Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types" 
-           alt="$PlatformShort$ Tooltip Types Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types"
+           alt="$Platform$ Tooltip Types Example"
            github-src="charts/category-chart/tooltip-types">
 </code-view>
 

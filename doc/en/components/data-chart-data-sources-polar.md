@@ -1,16 +1,16 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar charts such as polar area, polar line, polar scatter and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar charts such as polar area, polar line, polar scatter and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Polar Series
+# $Platform$ Sample Data Source for Polar Series
 
 This topic provides an example on how to implement data source for [Polar Series](data-chart-type-polar-series.md)
 
 ```razor
 public class SamplePolarData
-    { 
+    {
         public static List<SamplePolarItem> Create()
         {
             var data = new List<SamplePolarItem>() {
@@ -32,7 +32,7 @@ public class SamplePolarData
     {
         public double WindSpeed { get; set; }
         public double BoatSpeed { get; set; }
-        public double Direction { get; set; }         
+        public double Direction { get; set; }
     }
 ```
 

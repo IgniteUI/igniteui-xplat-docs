@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 차트 유형 탐색
+# $Platform$ 차트 유형 탐색
 
 `FinancialChart` 제어에서는 축은 축 기본 선, 눈금 표시, 제목 및 축 라벨 모양을 설정하는 기본 속성을 제공합니다.
 

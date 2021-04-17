@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ Data Grid | Row Paging | Infragistics
-_description: View Infragistics' $PlatformShort$ grid component's custom Pager component which was designed to take in an array of data and output portions of that data as a page. View the $ProductName$ table demos!
-_keywords: $PlatformShort$ Table, Data Grid, row, paging, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Row Paging | Infragistics
+_description: View Infragistics' $Platform$ grid component's custom Pager component which was designed to take in an array of data and output portions of that data as a page. View the $ProductName$ table demos!
+_keywords: $Platform$ Table, Data Grid, row, paging, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Row Paging
+# $Platform$ Row Paging
 
 Row Paging is not currently implemented within the $ProductName$ Data Table / Data Grid itself however by switching the data source dynamically you can achieve similar results.
 
@@ -15,13 +15,13 @@ Row Paging is not currently implemented within the $ProductName$ Data Table / Da
 > The Row Paging feature is in development and is coming soon.
 ```
 
-## $PlatformShort$ Row Paging Example
+## $Platform$ Row Paging Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-paging" 
-           alt="$PlatformShort$ Row Paging Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-paging"
+           alt="$Platform$ Row Paging Example"
            github-src="grids/data-grid/row-paging">
 </code-view>
 
@@ -100,4 +100,4 @@ private onPageChanged = (pageNumber: number, data: any[]) => {
 };
 ```
 
-The <b>pageChanged</b> event on the Pager component will notify us when it changes the page and will provide the data for the new page.  The sample takes this data and passes it to the $PlatformShort$ data grid for display.
+The <b>pageChanged</b> event on the Pager component will notify us when it changes the page and will provide the data for the new page.  The sample takes this data and passes it to the $Platform$ data grid for display.

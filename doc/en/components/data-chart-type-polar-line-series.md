@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Line Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar line charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar line charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Line Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar line charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar line charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarLineSeries']
 ---
-# $PlatformShort$ Polar Line Chart
+# $Platform$ Polar Line Chart
 
 The $ProductName$ polar area chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points. The `PolarLineSeries` uses the same concepts of data plotting as the `ScatterLineSeries` but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple `PolarLineSeries` can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets.
 
-## $PlatformShort$ Polar Line Chart Example
+## $Platform$ Polar Line Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
-           alt="$PlatformShort$ Polar Line Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
+           alt="$Platform$ Polar Line Chart Example"
            github-src="charts/data-chart/type-polar-line-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PolarLineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PolarLineSeries`.
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

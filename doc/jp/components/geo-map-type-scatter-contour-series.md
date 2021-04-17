@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter contour series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布等高線シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics, $Platform$ マップ, 散布等高線シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale']
 _language: ja
 ---
-# $PlatformShort$ 散布等高線シリーズの使用
+# $Platform$ 散布等高線シリーズの使用
 
-$PlatformShort$ マップ コンポーネントの `GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
+$Platform$ マップ コンポーネントの `GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
 
-## $PlatformShort$ 散布等高線シリーズの使用の例
+## $Platform$ 散布等高線シリーズの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series" 
-           alt="$PlatformShort$ 散布等高線シリーズの使用の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
+           alt="$Platform$ 散布等高線シリーズの使用の例"
            github-src="maps/geo-map/type-scatter-contour-series">
 </code-view>
 

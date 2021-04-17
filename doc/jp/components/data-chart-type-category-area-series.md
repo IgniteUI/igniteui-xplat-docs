@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してエリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, area chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してエリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, area chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ エリア チャート
+# $Platform$ エリア チャート
 
-$ProductName$ エリア チャートはカテゴリ チャートのグループに属し、線の下の領域が塗りつぶされた線セグメントで接続されたポイントのコレクションを使用して描画されます。値はy軸に表示され、カテゴリはx軸に表示されます。`AreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$PlatformShort$ エリア チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン エリア チャートと同じです。
+$ProductName$ エリア チャートはカテゴリ チャートのグループに属し、線の下の領域が塗りつぶされた線セグメントで接続されたポイントのコレクションを使用して描画されます。値はy軸に表示され、カテゴリはx軸に表示されます。`AreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$Platform$ エリア チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$Platform$ スプライン エリア チャートと同じです。
 
-## $PlatformShort$ エリア チャートの例
+## $Platform$ エリア チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-area-series" 
-           alt="$PlatformShort$ エリア チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-area-series"
+           alt="$Platform$ エリア チャートの例"
            github-src="charts/data-chart/type-category-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`AreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`AreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

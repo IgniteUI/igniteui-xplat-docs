@@ -1,37 +1,37 @@
 ---
-title: $PlatformShort$ Shape Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Shape Chart
-_keywords: $PlatformShort$ Charts, Shape Chart, Infragistics
+title: $Platform$ Shape Chart | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Shape Chart
+_keywords: $Platform$ Charts, Shape Chart, Infragistics
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
 ---
-# $PlatformShort$ Shape Charts
+# $Platform$ Shape Charts
 
 The $ProductName$ Shape Charts are a group of charts that take array of shapes (array or arrays of X/Y points) and render them as collection of polygons or polylines in Cartesian (x, y) coordinate system. They are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
-## $PlatformShort$ Scatter Polygon Chart
+## $Platform$ Scatter Polygon Chart
 
-The $PlatformShort$ Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` control. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
+The $Platform$ Scatter Polygon Chart renders an array or array of arrays of polygons in the Cartesian (x, y) coordinate system using `ScatterPolygonSeries` in the `XamDataChart` control. This chart can be used to filled shapes of plot diagrams, blueprints, or even the floor plan of buildings.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolygonSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
-           alt="$PlatformShort$ Scatter Polygon Chart" >
+           alt="$Platform$ Scatter Polygon Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Scatter Polyline Chart
+## $Platform$ Scatter Polyline Chart
 
-The $PlatformShort$ Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` control. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
+The $Platform$ Scatter Polyline Chart renders an array or array of arrays of polylines in the Cartesian (x, y) coordinate system using `ScatterPolylineSeries` in the `XamDataChart` control. This chart can be used to outlines of plot diagrams, blueprints, or even the floor plan of buildings. Also, it can visualizes complex relationships between a large amount of elements.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolylineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
-           alt="$PlatformShort$ Scatter Polyline Chart" >
+           alt="$Platform$ Scatter Polyline Chart" >
 </code-view>
 
 <div class="divider--half"></div>

@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Line Chart | Data Binding | Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Line Chart | Data Binding | Infragistics
 _description: Create a data chart that displays multiple instances of visual elements in the same plot area in order to create composite chart views.
 _keywords: data chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'ScatterLineSeries']
 ---
-# $PlatformShort$ Scatter Line Chart
+# $Platform$ Scatter Line Chart
 
 The $ProductName$ scatter line chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected with a straight line, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
 
 The `ScatterLineSeries` draws attention to uneven intervals or clusters of data. They can highlight the deviation of collected data from predicted results and they are often used to plot scientific and statistical data. The `ScatterLineSeries` organizes and plots data chronologically (even if the data is not in chronological order before binding) on X-Axis and Y-Axis.
 
-## $PlatformShort$ Scatter Line Chart Example
+## $Platform$ Scatter Line Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series" 
-           alt="$PlatformShort$ Scatter Line Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series"
+           alt="$Platform$ Scatter Line Chart Example"
            github-src="charts/data-chart/type-scatter-line-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The `ScatterLineSeries` draws attention to uneven intervals or clusters of data.
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterLineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterLineSeries`.
 
 - `NumericXAxis`
 - `NumericYAxis`

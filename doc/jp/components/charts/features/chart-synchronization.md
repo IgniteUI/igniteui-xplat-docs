@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$  $PlatformShort$ データ チャート | データ可視化ツール | 同期化 | インフラジスティックス
-_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $PlatformShort$ チャート コントロール間で同期します。$ProductName$ のグラフ同期機能について説明します。
-_keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 同期化, インフラジスティックス
+title: $Platform$  $Platform$ データ チャート | データ可視化ツール | 同期化 | インフラジスティックス
+_description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $Platform$ チャート コントロール間で同期します。$ProductName$ のグラフ同期機能について説明します。
+_keywords: $Platform$ charts, data chart, synchronization, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 同期化, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
 _language: ja
 ---
-# $PlatformShort$ チャート同期化
+# $Platform$ チャート同期化
 
 $ ProductName$ データ チャートを使用すると、複数のチャート間のズーム、パン、および十字線イベントの調整に関して同期をとることができます。これは、データソースが軸に関して似ているか同じであると仮定して、複数のチャートの同じ領域を視覚化するのに役立ちます。
 
-## $PlatformShort$ チャート同期化の例
+## $Platform$ チャート同期化の例
 
-このサンプルは、2 つの $PlatformShort$ データ チャートの同期を示しています。
+このサンプルは、2 つの $Platform$ データ チャートの同期を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
-           alt="$PlatformShort$ チャート同期化の例"
+           alt="$Platform$ チャート同期化の例"
            github-src="charts/data-chart/chart-synchronization">
 </code-view>
 

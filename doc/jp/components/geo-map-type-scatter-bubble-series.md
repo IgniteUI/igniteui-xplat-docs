@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter proportional series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布図比例シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics, $Platform$ マップ, 散布図比例シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ 散布図比例シリーズの使用
+# $Platform$ 散布図比例シリーズの使用
 
-アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$PlatformShort$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
+アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$Platform$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
 
-## $PlatformShort$ 散布図比例シリーズの使用の例
+## $Platform$ 散布図比例シリーズの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series" 
-           alt="$PlatformShort$ マップ | データ可視化ツール | 散布図比例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           alt="$Platform$ マップ | データ可視化ツール | 散布図比例"
            github-src="maps/geo-map/type-scatter-bubble-series">
 </code-view>
 

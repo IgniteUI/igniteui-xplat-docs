@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, shape files, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, シェープ ファイル, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープ ファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ 複数のシェイプ ファイルのバインドとオーバーレイ
+# $Platform$ 複数のシェイプ ファイルのバインドとオーバーレイ
 
 $ProductName$ マップでは、複数の地理的シリーズオブジェクトを追加して、複数のシェープファイルを地理空間データでオーバーレイすることができます。たとえば、港湾の地理的位置をプロットするための `GeographicSymbolSeries`、港湾間のルートをプロットするための `GeographicPolylineSeries`、国の形状をプロットするための `GeographicShapeSeries` などがあります。
 
-## $PlatformShort$ 複数のシェイプ ファイルのバインドとオーバーレイの例
+## $Platform$ 複数のシェイプ ファイルのバインドとオーバーレイの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes" 
-           alt="$PlatformShort$ 複数のシェイプ ファイルのバインドとオーバーレイの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes"
+           alt="$Platform$ 複数のシェイプ ファイルのバインドとオーバーレイの例"
            github-src="maps/geo-map/binding-multiple-shapes">
 </code-view>
 

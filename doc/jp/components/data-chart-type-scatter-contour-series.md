@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布等高線チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して散布等高線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, scatter contour charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 散布等高線チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布等高線チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して散布等高線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, scatter contour charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 散布等高線チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','ScatterContourSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布図 - 等高線シリーズ
+# $Platform$ 散布図 - 等高線シリーズ
 
-このトピックは、コード例を示して $PlatformShort$ データ チャート コンポーネントで `ScatterContourSeries` を使用する方法を説明します。このシリーズ
+このトピックは、コード例を示して $Platform$ データ チャート コンポーネントで `ScatterContourSeries` を使用する方法を説明します。このシリーズ
 各ポイントに数値が割り当てられた X および Y データの三角測量に基づいて色付きの等高線を描画します。このシリーズのタイプはヒート マップ、磁場の強さ、またはオフィスの Wi-Fi の強さを描画する場合などに便利です。`ScatterContourSeries` は `ScatterAreaSeries` とよく似ていますが、塗りつぶしスケールを使用して色付けされた等高線としてデータを表し、散布エリア シリーズはカラースケールを使用して補間された面としてデータを表します。
 
 
-## $PlatformShort$ 散布図 - 等高線シリーズの例
+## $Platform$ 散布図 - 等高線シリーズの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series" 
-           alt="$PlatformShort$ 散布図 - 等高線シリーズの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series"
+           alt="$Platform$ 散布図 - 等高線シリーズの例"
            github-src="charts/data-chart/type-scatter-contour-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントにはさまざまな種類の軸がありますが、ScatterContourSeries では `NumericYAxis` と `NumericYAxis` のみ使用できます。
+$Platform$ データ チャート コンポーネントにはさまざまな種類の軸がありますが、ScatterContourSeries では `NumericYAxis` と `NumericYAxis` のみ使用できます。
 
 ## データの要件
 

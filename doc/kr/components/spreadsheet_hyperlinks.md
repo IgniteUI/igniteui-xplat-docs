@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Spreadsheet | Grid Controls | Hyperlinks | Infragistics |
+title: $Platform$ Spreadsheet | Grid Controls | Hyperlinks | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Spreadsheet Hyperlinks
+# $Platform$ Spreadsheet Hyperlinks
 
-The $PlatformShort$ Spreadsheet component allows display of pre-existing hyperlinks in your Excel workbook as well as insertion of new ones that can link to websites, file directories, and even other worksheets in the workbook.
+The $Platform$ Spreadsheet component allows display of pre-existing hyperlinks in your Excel workbook as well as insertion of new ones that can link to websites, file directories, and even other worksheets in the workbook.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks"
            github-src="excel/spreadsheet/hyperlinks">
 </code-view>
 

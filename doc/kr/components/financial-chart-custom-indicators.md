@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 사용자 인디케이터
+# $Platform$ 사용자 인디케이터
 
 `FinancialChart` 제어를 사용하면 인디케이터 창에 표시하는 사용자 금융지표를 정의할 수 있습니다.
 

@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Excel Library| Working with Charts | Infragistics
-_description: Use the Infragistics' $PlatformShort$ excel library's chart feature to add visual charting representations of data trends across regions of cells in a worksheet. Visualize $ProductName$ excel data in over 70 chart types!
+title: $Platform$ Excel Library| Working with Charts | Infragistics
+_description: Use the Infragistics' $Platform$ excel library's chart feature to add visual charting representations of data trends across regions of cells in a worksheet. Visualize $ProductName$ excel data in over 70 chart types!
 _keywords: Excel library, charts,  $ProductName$, Infragistics
 mentionedTypes: ['Workbook', 'Worksheet']
 ---
-# $PlatformShort$ Working with Charts
+# $Platform$ Working with Charts
 
-The Infragistics $PlatformShort$ Excel Engine's `WorksheetChart` functionality allows you to add visual charting representations of data trends across regions of cells in a worksheet. For example, if you want to see your Excel data in a region of cells visualized as a column, line, or over 70 other chart types, this feature can help you to achieve that.
+The Infragistics $Platform$ Excel Engine's `WorksheetChart` functionality allows you to add visual charting representations of data trends across regions of cells in a worksheet. For example, if you want to see your Excel data in a region of cells visualized as a column, line, or over 70 other chart types, this feature can help you to achieve that.
 
-## $PlatformShort$ Working with Charts Example
+## $Platform$ Working with Charts Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts" 
-           alt="$PlatformShort$ Working with Charts Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
+           alt="$Platform$ Working with Charts Example"
            github-src="excel/excel-library/working-with-charts">
 </code-view>
 

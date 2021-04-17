@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarAreaSeries']
 ---
-# $PlatformShort$ Polar Area Chart
+# $Platform$ Polar Area Chart
 
 The $ProductName$ polar area chart belongs to a group of polar charts and has a shape of a filled polygon which vertices or corners are located at the polar (angle/radius) coordinates of data points. The `PolarAreaSeries` uses the same concepts of data plotting as the `ScatterSeries` but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple `PolarAreaSeries` can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets.
-## $PlatformShort$ Polar Area Chart Example
+## $Platform$ Polar Area Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series" 
-           alt="$PlatformShort$ Polar Area Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           alt="$Platform$ Polar Area Chart Example"
            github-src="charts/data-chart/type-polar-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PolarAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PolarAreaSeries`.
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Shape Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create shape charts such as ScatterPolygonSeries and ScatterPolylineSeries. View the demo for more information!
-_keywords: $PlatformShort$ charts, data chart, shape charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Shape Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create shape charts such as ScatterPolygonSeries and ScatterPolylineSeries. View the demo for more information!
+_keywords: $Platform$ charts, data chart, shape charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','ShapeColumnSeries','ScatterPolygonSeries','ScatterPolylineSeries']
 
 ---
-# $PlatformShort$ Scatter Shape Series
+# $Platform$ Scatter Shape Series
 
-This topic explains various types of shape series in the $PlatformShort$ data chart component. Scatter shape series is a group of chart series that take array of shapes (array or arrays of X/Y coordinates) and render them as collection of polygons (`ScatterPolygonSeries`)  or polylines (`ScatterPolylineSeries`) in Cartesian (x, y) coordinate system.
+This topic explains various types of shape series in the $Platform$ data chart component. Scatter shape series is a group of chart series that take array of shapes (array or arrays of X/Y coordinates) and render them as collection of polygons (`ScatterPolygonSeries`)  or polylines (`ScatterPolylineSeries`) in Cartesian (x, y) coordinate system.
 
 Scatter shape series are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
-## $PlatformShort$ Scatter Shape Series Example
+## $Platform$ Scatter Shape Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series" 
-           alt="$PlatformShort$ Scatter Shape Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series"
+           alt="$Platform$ Scatter Shape Series Example"
            github-src="charts/data-chart/type-shape-series">
 </code-view>
 
@@ -33,7 +33,7 @@ The following table lists all types of shape series and their descriptions:
 
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with scatter shape series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with scatter shape series.
 
 | Series Type             | YAxis Type     | XAxis Type     |
 |-------------------------|----------------|----------------|

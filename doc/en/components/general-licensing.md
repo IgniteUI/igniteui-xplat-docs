@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$ Licensing | Dock Manager | $ProductName$ | Infragistics
+title: $Platform$ Licensing | Dock Manager | $ProductName$ | Infragistics
 _description: Learn how to use Infragistics' $ProductName$ licensed npm feed.
 _keywords: npm package license,  $PlatformName$ license feed,  licensing
 ---

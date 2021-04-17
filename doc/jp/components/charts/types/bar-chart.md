@@ -1,15 +1,15 @@
 ---
-title: $PlatformShort$ 棒チャートとグラフ | $ProductName$
-_description: $PlatformShort$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
-_keywords: $PlatformShort$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics, $PlatformShort$ チャート, 棒チャート, 棒グラフ, 水平チャート, インフラジスティックス
+title: $Platform$ 棒チャートとグラフ | $ProductName$
+_description: $Platform$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
+_keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics, $Platform$ チャート, 棒チャート, 棒グラフ, 水平チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 _language: ja
 ---
-# $PlatformShort$ 棒チャート
+# $Platform$ 棒チャート
 
 $ProductName$ 棒チャート、棒グラフ、または水平棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ高さで長さが異なる水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過とともに、項目の価値の変化を示すのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。棒チャートは[縦棒チャート](column-chart.md)と非常によく似ていますが、棒チャートは時計回りに 90 度回転して描画されるため、向きが水平方向 (左から右) であり、[縦棒チャート](column-chart.md)は垂直方向 (上下) です。
 
-## $PlatformShort$ 棒チャートの例
+## $Platform$ 棒チャートの例
 
 $ProductName$ カテゴリ棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、水平の棒または長方形として描画します。値は X 軸に表示され、カテゴリは Y 軸に表示されます。
 
@@ -18,16 +18,16 @@ $ProductName$ カテゴリ棒チャートは、複数のデータ ソースの�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           alt="$PlatformShort$ 複数ソースの棒チャート" >
+           alt="$Platform$ 複数ソースの棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 棒チャートの推奨事項
 
-## $PlatformShort$ 棒チャートはプロジェクトに適していますか?
+## $Platform$ 棒チャートはプロジェクトに適していますか?
 
-$PlatformShort$ 棒チャートには、データまたはデータを使用して正しいストーリーを伝える方法に基づいたいくつかの種類が含まれています:
+$Platform$ 棒チャートには、データまたはデータを使用して正しいストーリーを伝える方法に基づいたいくつかの種類が含まれています:
 
 - グループ化された棒チャート
 - 積層型棒チャート
@@ -73,43 +73,43 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 
 <div class="divider--half"></div>
 
-## 単一シリーズの $PlatformShort$ 棒チャート
+## 単一シリーズの $Platform$ 棒チャート
 
 棒チャートは、カテゴリ シリーズのグループに属し、チャートの左から右へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
-           alt="$PlatformShort$ 単一シリーズの $PlatformShort$ 棒チャート" >
+           alt="$Platform$ 単一シリーズの $Platform$ 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 複数シリーズの $PlatformShort$ 棒チャート
+## 複数シリーズの $Platform$ 棒チャート
 
 棒チャートは、比較のためにカテゴリごとに複数の棒を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを複数の `BarSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           alt="$PlatformShort$ 複数シリーズの $PlatformShort$ 棒チャート" >
+           alt="$Platform$ 複数シリーズの $Platform$ 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 棒チャートのスタイル設定
+## $Platform$ 棒チャートのスタイル設定
 
 棒チャートのスタイルを設定でき、パーセント比較を示すために各棒に[注釈値](../features/chart-annotations.md)を使用できます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドし、`CalloutLayer` を追加します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
-           alt="$PlatformShort$ 棒チャートのスタイル設定" >
+           alt="$Platform$ 棒チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 積層型棒チャート
+## $Platform$ 積層型棒チャート
 
 積層型棒チャート、または積層型棒グラフは、チャートの横棒にさまざまなサイズのフラグメントを表示することにより、さまざまなカテゴリのデータの構成を比較するために使用されるカテゴリ チャートの一種です。各棒または積層フラグメントの長さは、その全体的な値に比例します。
 
@@ -120,21 +120,21 @@ $PlatformShort$ 棒チャートには、データまたはデータを使用し�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           alt="$PlatformShort$ 積層型棒チャート" >
+           alt="$Platform$ 積層型棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 積層型 100% 棒チャート
+## $Platform$ 積層型 100% 棒チャート
 
-$PlatformShort$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
+$Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラベル) の値の処理を除いて、すべての点で $Platform$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           alt="$PlatformShort$ 積層型 100 棒チャート" >
+           alt="$Platform$ 積層型 100 棒チャート" >
 </code-view>
 
 <div class="divider--half"></div>

@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: ンフラジスティックスの $PlatformShort$ チャート コントロールを使用して、ラジアル領域、ラジアル折れ線、ラジアル散布などのラジアル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, radial, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, ラジアル, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: ンフラジスティックスの $Platform$ チャート コントロールを使用して、ラジアル領域、ラジアル折れ線、ラジアル散布などのラジアル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, radial, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, ラジアル, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ラジアル シリーズのサンプル データソース
+# $Platform$ ラジアル シリーズのサンプル データソース
 
 このトピックでは、[ラジアル シリーズ](data-chart-type-radial-series.md) のデータソースを実装する方法の例を示します。
 
@@ -30,7 +30,7 @@ public class SampleRadialData
     {
         public double Budget { get; set; }
         public double Spending { get; set; }
-        public string Department { get; set; }         
+        public string Department { get; set; }
     }
 ```
 

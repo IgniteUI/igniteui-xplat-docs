@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Excel Utility | Data Spreadsheet | Infragistics
+title: $Platform$ Excel Utility | Data Spreadsheet | Infragistics
 _description: Use the Excel Utility to load and save Microsoft Excel files using Excel Library.
 _keywords: Excel Utility, Excel library, $ProductName$, Infragistics
 mentionedTypes: ['Workbook', 'WorkbookFormat', 'WorkbookSaveOptions']
 ---
-# $PlatformShort$ Excel Utility
+# $Platform$ Excel Utility
 
 This topic provides utility function for loading and saving Microsoft Excel files using [Excel Library](excel-library.md)
 

@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ チャート オーバーレイ | データ可視化ツール | 値オーバーレイ | インフラジスティックス
+title: $Platform$ チャート オーバーレイ | データ可視化ツール | 値オーバーレイ | インフラジスティックス
 _description: $ProductName$ チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
+_keywords: $Platform$ charts, data chart, value overlay, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
 mentionedTypes: ["XamDataChart", "ValueOverlay"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $PlatformShort$ チャートのオーバーレイ
+# $Platform$ チャートのオーバーレイ
 
 $ProductName$ データ チャートを使用すると、`ValueOverlay` を使用して定義した単一の数値で水平線または垂直線を配置できます。特定のシリーズの平均値や中央値などのデータを視覚化するのに役立ちます。
 
-## $PlatformShort$ 値オーバーレイの例
+## $Platform$ 値オーバーレイの例
 
 次の例は、いくつかの水平値オーバーレイがプロットされた[縦棒チャート](../types/column-chart.md)を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$PlatformShort$ 値オーバーレイの例"
+           alt="$Platform$ 値オーバーレイの例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ 値オーバーレイのプロパティ
+## $Platform$ 値オーバーレイのプロパティ
 
 データバインディングに `ItemsSource` を使用する他のシリーズ タイプとは異なり、値オーバーレイは `ValueMemberPath` プロパティを使用して単一の数値をバインドします。さらに、値オーバーレイでは、使用する単一の `Axis` を定義する必要があります。X 軸を使用する場合、値のオーバーレイは垂直線になり、Y 軸を使用する場合は、水平線になります。
 
@@ -36,7 +36,7 @@ $ProductName$ データ チャートを使用すると、`ValueOverlay` を使�
 
 `ValueOverlay` に軸注釈を表示して、所有する軸にオーバーレイの値を表示することもできます。これを示すために、`IsAxisAnnotationEnabled` プロパティを true に設定できます。
 
-## $PlatformShort$ ファイナンシャル オーバーレイ
+## $Platform$ ファイナンシャル オーバーレイ
 
 $ProductName$ [株価チャート](../types/stock-chart.md)に組み込みのファイナンシャル オーバーレイとインジケーターをプロットすることもできます。
 

@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Radial Charts | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create radial charts such as radial area, radial line, radial pie and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, radial charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Radial Charts | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create radial charts such as radial area, radial line, radial pie and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, radial charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','RadialPieSeries']
 ---
-# $PlatformShort$ Radial Series
+# $Platform$ Radial Series
 
-This topic explains various types of radial series in the $PlatformShort$ data chart component. Radial series a group of series that render data as collection of data points wrapped around a circle, rather than stretching along a horizontal line as [Category Series](data-chart-type-category-series.md) do. Radial series are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of [Category Series](data-chart-type-category-series.md).
+This topic explains various types of radial series in the $Platform$ data chart component. Radial series a group of series that render data as collection of data points wrapped around a circle, rather than stretching along a horizontal line as [Category Series](data-chart-type-category-series.md) do. Radial series are also mapping a list of categories from the minimum to the maximum of the extent of the chart, and support the same category grouping mechanisms of [Category Series](data-chart-type-category-series.md).
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ Radial Series Example
+## $Platform$ Radial Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series" 
-           alt="$PlatformShort$ Radial Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series"
+           alt="$Platform$ Radial Series Example"
            github-src="charts/data-chart/type-radial-series">
 </code-view>
 
@@ -35,7 +35,7 @@ The following table lists all types of radial series and their descriptions:
 
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with radial series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with radial series.
 
 | Series Type             | Radius Axis Type    | Angle Axis Type    |
 |-------------------------|---------------------|--------------------|

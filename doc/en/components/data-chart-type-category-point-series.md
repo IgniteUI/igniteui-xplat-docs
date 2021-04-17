@@ -1,29 +1,29 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Point Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create point charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, point chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Point Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create point charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, point chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Point Chart
+# $Platform$ Point Chart
 
 The $ProductName$ point chart belongs to the group of category charts. It is designed to render the data as points or markers on the chart. The numeric values correspond to y-axis, and the x-axis is used for displaying the labels.
 
-The $PlatformShort$ data chart supports single or multiple point series objects to be rendered, meaning one collection or more than one collection of data.
+The $Platform$ data chart supports single or multiple point series objects to be rendered, meaning one collection or more than one collection of data.
 
-## $PlatformShort$ Point Chart Example
+## $Platform$ Point Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-point-series" 
-           alt="$PlatformShort$ Point Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-point-series"
+           alt="$Platform$ Point Chart Example"
            github-src="charts/data-chart/type-category-point-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PointSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PointSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

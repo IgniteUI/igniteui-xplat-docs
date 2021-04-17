@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ データ グリッド | 行のページング | インフラジスティックス
-_description: データの配列を取り込み、そのデータの一部を１ページとして出力するように設計されたインフラジスティックスの $PlatformShort$ グリッド コンポーネントのカスタム Pager コンポーネントを是非お試しください。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, row, paging, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 行のページング, インフラジスティックス
+title: $Platform$ データ グリッド | 行のページング | インフラジスティックス
+_description: データの配列を取り込み、そのデータの一部を１ページとして出力するように設計されたインフラジスティックスの $Platform$ グリッド コンポーネントのカスタム Pager コンポーネントを是非お試しください。$ProductName$ テーブルのサンプルを是非お試しください!
+_keywords: $Platform$ Table, Data Grid, row, paging, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のページング, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $PlatformShort$ 行のページング
+# $Platform$ 行のページング
 
 行のページングは​​現在 $ProductName$ Data Table / Data Grid 自体には実装されていませんが、データソースを動的に切り替えることで同様の結果を得ることができます。
 
@@ -16,13 +16,13 @@ _language: ja
 > 行ページング機能は開発中であり、近日公開予定です。
 ```
 
-## $PlatformShort$ 行のページングの例
+## $Platform$ 行のページングの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-paging" 
-           alt="$PlatformShort$ 行のページングの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-paging"
+           alt="$Platform$ 行のページングの例"
            github-src="grids/data-grid/row-paging">
 </code-view>
 
@@ -101,4 +101,4 @@ private onPageChanged = (pageNumber: number, data: any[]) => {
 };
 ```
 
-Pager コンポーネントの <b>pageChanged</b> イベントは、ページが変更されたときにそれを通知し、新しいページのデータを提供します。サンプルはこのデータを受け取り、表示用に $PlatformShort$ データ グリッドに渡します。
+Pager コンポーネントの <b>pageChanged</b> イベントは、ページが変更されたときにそれを通知し、新しいページのデータを提供します。サンプルはこのデータを受け取り、表示用に $Platform$ データ グリッドに渡します。

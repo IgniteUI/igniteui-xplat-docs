@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Geographic Imagery | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Geographic Imagery | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 ---
 
-# $PlatformShort$ Geographic Imagery
+# $Platform$ Geographic Imagery
 
 Geographic imagery is a detailed representation of the world from a top view perspective. It can consist of an aerial-satellite map or road maps in a multi-scale imagery tiles structure. The geographic map component can display geographic imagery in order to provide end-users with rich and interactive world maps and geographic context for geo-spatial data.
 

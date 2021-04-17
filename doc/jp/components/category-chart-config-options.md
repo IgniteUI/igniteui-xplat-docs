@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | 構成オプション | インフラジスティックス
-_description: マーカー、タイトル、サブタイトル、アニメーションの設定など、インフラジスティックスの $PlatformShort$ チャート コントロール機能の使用方法を学びます。インフラジスティックスの $ProductName$ グラフ デモを是非お試しください!
-_keywords: $PlatformShort$ charts, category chart, annotations, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, 注釈, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | 構成オプション | インフラジスティックス
+_description: マーカー、タイトル、サブタイトル、アニメーションの設定など、インフラジスティックスの $Platform$ チャート コントロール機能の使用方法を学びます。インフラジスティックスの $ProductName$ グラフ デモを是非お試しください!
+_keywords: $Platform$ charts, category chart, annotations, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, 注釈, インフラジスティックス
 mentionedTypes: ['CategoryChart','CategoryTransitionInMode']
 _language: ja
 ---
-# $PlatformShort$ 構成オプション
+# $Platform$ 構成オプション
 
 マーカー、チャート タイトルとサブタイトル、およびチャート タイプなどの $ProductName$ カテゴリ チャート コンポネント機能をカスタマイズできます。
 
-## $PlatformShort$ 構成オプションの例
+## $Platform$ 構成オプションの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" 
-           alt="$PlatformShort$ 構成オプションの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
+           alt="$Platform$ 構成オプションの例"
            github-src="charts/category-chart/marker-options">
 </code-view>
 

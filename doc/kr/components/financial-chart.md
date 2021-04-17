@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 금융 차트
+# $Platform$ 금융 차트
 
 금융 차트는 간단하고 직관적인 API를 사용하여 금융 데이터를 쉽게 시각화할 수 있는 차트 컴포넌트입니다.
 

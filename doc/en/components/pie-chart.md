@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ Pie Chart | Data Visualization Tool | Infragistics
-_description: Use Infragistics' $PlatformShort$ pie chart to create a colorful pie chart to display categorical data. Learn about the $ProductName$ pie chart configurable elements!
-_keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
+title: $Platform$ Pie Chart | Data Visualization Tool | Infragistics
+_description: Use Infragistics' $Platform$ pie chart to create a colorful pie chart to display categorical data. Learn about the $ProductName$ pie chart configurable elements!
+_keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 ---
-# $PlatformShort$ Pie Chart Overview
+# $Platform$ Pie Chart Overview
 
 The $ProductName$ pie chart component is a specialized component that renders a pie chart, consisting of a circular area divided into sections. Each section has arc length proportional to its underlying data value.
 
 This control is used for representing categorical data. It is most effective when there are only a few categories, and when each category makes up a relatively large percentage of the data as a whole.
 
-## $PlatformShort$ Pie Chart Example
+## $Platform$ Pie Chart Example
 
 
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           alt="$PlatformShort$ Pie Chart Example"
+           alt="$Platform$ Pie Chart Example"
            github-src="charts/pie-chart/overview">
 </code-view>
 

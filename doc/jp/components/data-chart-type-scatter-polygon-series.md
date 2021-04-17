@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布ポリゴン チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して散布ポリゴン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, scatter polygon charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 散布ポリゴン チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布ポリゴン チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して散布ポリゴン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, scatter polygon charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 散布ポリゴン チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','ShapeColumnSeries','ScatterPolygonSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布ポリゴン チャート
+# $Platform$ 散布ポリゴン チャート
 
  $ProductName$ 散布ポリライン チャートは、形状の配列 (X または Y 座標の配列) を取得するシェイプ チャートのグループに属します。このシリーズは、その形状の配列をデカルト (x, y) システムのポリゴンのコレクションとしてレンダリングします。
 
 散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
-## $PlatformShort$ 散布ポリゴン チャートの例
+## $Platform$ 散布ポリゴン チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series" 
-           alt="$PlatformShort$ 散布ポリゴン チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           alt="$Platform$ 散布ポリゴン チャートの例"
            github-src="charts/data-chart/type-scatter-polygon-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterPolygonSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterPolygonSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`
@@ -49,7 +49,7 @@ public dataSource: any[] = SampleShapeData.create();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartScatterCoreModule.Register(IgniteUIBlazor);
-DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartScatterModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ScatterPolygonSeriesModule.Register(IgniteUIBlazor);
 ```

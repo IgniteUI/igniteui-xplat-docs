@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ スプレッドシート | データ検証 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ スプレッドシート コントロールを使用して、組み込みのデータ検証を設定します。$ProductName$ スプレッドシートのサンプルを是非お試しください!
+title: $Platform$ スプレッドシート | データ検証 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ スプレッドシート コントロールを使用して、組み込みのデータ検証を設定します。$ProductName$ スプレッドシートのサンプルを是非お試しください!
 _keywords: Excel Spreadsheet, data validation, $ProductName$, Infragistics, Excel スプレッドシート、データ検証, インフラジスティックス
 _language: ja
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ データ検証
+# $Platform$ データ検証
 
 このトピックでは、一括データ検証規則を構成および設定する方法について説明します。
 
-## $PlatformShort$ データ検証の例
+## $Platform$ データ検証の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation" 
-           alt="$PlatformShort$ データ検証の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
+           alt="$Platform$ データ検証の例"
            github-src="excel/spreadsheet/data-validation">
 </code-view>
 

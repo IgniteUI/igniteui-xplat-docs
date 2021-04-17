@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | リアルタイム データ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールを使用して数百万のデータ ポイントを高速に描画します。$ProductName$ チャートの高いパフォーマンスを是非お試しください。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, data binding, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, データ バインディング, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | リアルタイム データ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールを使用して数百万のデータ ポイントを高速に描画します。$ProductName$ チャートの高いパフォーマンスを是非お試しください。
+_keywords: $Platform$ charts, financial chart, stock chart, data binding, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, データ バインディング, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ リアルタイム データにバインド
+# $Platform$ リアルタイム データにバインド
 
-$PlatformShort$ Financial Chart コンポーネントはリアルタイムでデータの描画をすばやく処理できるコントロールです。以下のサンプルでは、Financial Chart のデータが高頻度で更新されています。
+$Platform$ Financial Chart コンポーネントはリアルタイムでデータの描画をすばやく処理できるコントロールです。以下のサンプルでは、Financial Chart のデータが高頻度で更新されています。
 
-## $PlatformShort$ リアルタイム データ バインドの例
+## $Platform$ リアルタイム データ バインドの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-frequency" 
-           alt="$PlatformShort$ リアルタイム データ バインドの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-frequency"
+           alt="$Platform$ リアルタイム データ バインドの例"
            github-src="charts/financial-chart/high-frequency">
 </code-view>
 
@@ -24,7 +24,7 @@ $PlatformShort$ Financial Chart コンポーネントはリアルタイムでデ
 
 ## コード例
 
-高頻度でデータを更新する $PlatformShort$ Financial Chart コンポーネントを作成するには、データ ソースの最初のデータ項目を削除し、新しいデータ項目をデータの最後に追加します。また、チャートに変更について通知するために `NotifyRemoveItem` および `NotifyInsertItem` 関数を呼び出します。バインドしたデータの変更をチャートに通知する方法の詳細については、ファイナンシャル チャートの `notify*` メソッドを参照してください。
+高頻度でデータを更新する $Platform$ Financial Chart コンポーネントを作成するには、データ ソースの最初のデータ項目を削除し、新しいデータ項目をデータの最後に追加します。また、チャートに変更について通知するために `NotifyRemoveItem` および `NotifyInsertItem` 関数を呼び出します。バインドしたデータの変更をチャートに通知する方法の詳細については、ファイナンシャル チャートの `notify*` メソッドを参照してください。
 
 <!-- Blazor -->
 データソースを ObservableCollection または INotifyCollectionChanged を実装する別のコレクションにバインドする場合、項目を追加または削除するときに `NotifyRemoveItem` または `NotifyInsertItem` を呼び出す必要はありません。

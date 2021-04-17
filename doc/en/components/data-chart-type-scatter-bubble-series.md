@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Bubble Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create scatter bubble charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, scatter bubble charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Bubble Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create scatter bubble charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, scatter bubble charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','BubbleSeries']
 
 ---
-# $PlatformShort$ Scatter Bubble Chart
+# $Platform$ Scatter Bubble Chart
 
-This topic explains, with code examples, how to use scatter `BubbleSeries` in the $PlatformShort$ data chart component. This series
+This topic explains, with code examples, how to use scatter `BubbleSeries` in the $Platform$ data chart component. This series
 is similar to [Scatter Marker Series](data-chart-type-scatter-point-series.md) which use the Cartesian (x, y) coordinate system to plot data. This series displays the data as a collection of scaled bubbles, each having a pair of numeric X/Y values that determines its location and 3rd value that determines its size.
 
 
-## $PlatformShort$ Scatter Bubble Chart Example
+## $Platform$ Scatter Bubble Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-bubble-series" 
-           alt="$PlatformShort$ Scatter Bubble Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-bubble-series"
+           alt="$Platform$ Scatter Bubble Chart Example"
            github-src="charts/data-chart/type-scatter-bubble-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `BubbleSeries`.
+The $Platform$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `BubbleSeries`.
 
 ## Required Data
 

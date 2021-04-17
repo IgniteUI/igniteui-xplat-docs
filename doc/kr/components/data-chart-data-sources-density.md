@@ -1,10 +1,10 @@
 ﻿---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: 컴포지트 차트 뷰를 만들기 위해 동일한 플롯 영역에 여러 개의 시각적 요소 인스턴스를 표시하는 데이터 차트를 만듭니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Data Chart Control, $PlatformShort$ Data Chart Example, $PlatformShort$ Data Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Chart Control, $Platform$ Data Chart Example, $Platform$ Data Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 분산 HD 시리즈의 샘플 데이터 소스
+# $Platform$ 분산 HD 시리즈의 샘플 데이터 소스
 
 이 항목에서는 [분산 HD 시리즈](data-chart-type-polar-series.md)의 데이터 소스를 구현하는 방법에 대한 예제를 제공합니다
 

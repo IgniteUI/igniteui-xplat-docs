@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Hoizontal Scrolling | Infragistics
-_description: Use Infragistics' $PlatformShort$ grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out $ProductName$ table demos!
-_keywords: $PlatformShort$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Hoizontal Scrolling | Infragistics
+_description: Use Infragistics' $Platform$ grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out $ProductName$ table demos!
+_keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Horizontal Scrolling
+# $Platform$ Horizontal Scrolling
 
-The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the $PlatformShort$ data grid.
+The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the $Platform$ data grid.
 
-## $PlatformShort$ Horizontal Scrolling Example
+## $Platform$ Horizontal Scrolling Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling" 
-           alt="$PlatformShort$ Horizontal Scrolling Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
+           alt="$Platform$ Horizontal Scrolling Example"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 
@@ -40,7 +40,7 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"                  
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     DefaultColumnMinWidth="300" />
 ```
@@ -81,7 +81,7 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"                  
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     AutoGenerateColumns="false">
     <TextColumn Field="FirstName" Width="300" />
@@ -89,8 +89,8 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
     <NumericColumn Field="Age" Width="300" />
     <DateTimeColumn Field="Birthday" Width="300" />
     <TextColumn Field="Street" Width="300" />
-    <TextColumn Field="City" Width="300" />            
+    <TextColumn Field="City" Width="300" />
     <NumericColumn Field="Salary" Width="300" />
-    <NumericColumn Field="Sales" Width="300" />            
+    <NumericColumn Field="Sales" Width="300" />
 </DataGrid>
 ```

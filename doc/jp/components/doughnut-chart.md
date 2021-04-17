@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ ドーナツ チャート | 階層データの可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ドーナツ チャート コントロールを使用して、複数の変数を同心円で表示し、階層データを可視化します。詳細については、$ProductName$ ドーナツ チャートのサンプルを参照してください。
-_keywords: $PlatformShort$ charts, doughnut chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, multiple rings, $PlatformShort$ チャート, ドーナツ チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, 複数リング, インフラジスティックス
+title: $Platform$ ドーナツ チャート | 階層データの可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ドーナツ チャート コントロールを使用して、複数の変数を同心円で表示し、階層データを可視化します。詳細については、$ProductName$ ドーナツ チャートのサンプルを参照してください。
+_keywords: $Platform$ charts, doughnut chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, multiple rings, $Platform$ チャート, ドーナツ チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, 複数リング, インフラジスティックス
 mentionedTypes: ['XamDoughnutChart']
 _language: ja
 ---
-# $PlatformShort$ ドーナツ チャートの概要
+# $Platform$ ドーナツ チャートの概要
 
 $ProductName$ Doughnut Chart コンポーネントは円チャートと同様、変数の発生を比例的に表示します。ドーナツ型チャート は、複数の変数をコンセントリック リングで表示でき、階層データの可視化を組み込みでサポートします。
 
-## $PlatformShort$ ドーナツ チャートの例
+## $Platform$ ドーナツ チャートの例
 
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"
-           alt="$PlatformShort$ ドーナツ チャートの例"
+           alt="$Platform$ ドーナツ チャートの例"
            github-src="charts/doughnut-chart/overview">
 </code-view>
 
@@ -33,7 +33,7 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ ドーナツ チャートを作成するには、以下のモジュールが必要です。
+$Platform$ ドーナツ チャートを作成するには、以下のモジュールが必要です。
 
 ```razor
 DoughnutChartModule.Register(IgniteUIBlazor);
@@ -227,7 +227,7 @@ this.Seasons = [
 
 **スライスをクリックして選択状態を変更** - `SliceClick` イベントにイベント ハンドラーをアタッチした場合、選択状態を変更するためのイベント引数のクリックしたスライスへの参照を提供します。ドーナツ型チャートは、選択されたスライスのスタイルを決定する `SelectedStyle` プロパティを公開します。デフォルトでは、適用されるスタイルはありません。スライスを選択しても表示は変わりません。独自のスタイルを選択されたスライスに適用すると、Slice の `TargetType` を持つ Style を定義して、`SelectedStyle` プロパティの値として設定する必要があります。
 
-**IsSelected プロパティを設定** - $PlatformShort$ ドーナツ チャートは、`IsSelected` プロパティを直接変更できるすべてのスライスへの参照を保持しなす。ドーナツ チャートは、スライスの選択済み/選択解除の状態の変更に使用する `SliceClick` イベントを公開します。
+**IsSelected プロパティを設定** - $Platform$ ドーナツ チャートは、`IsSelected` プロパティを直接変更できるすべてのスライスへの参照を保持しなす。ドーナツ チャートは、スライスの選択済み/選択解除の状態の変更に使用する `SliceClick` イベントを公開します。
 
 **SelectedSlices コレクションのコンテンツを変更** - `SelectedSlices` コレクションのコンテンツを変更して選択されたスライスを変更できます。ドーナツ チャートは、Slice オブジェクトへに対し `IsSelected` プロパティを直接修正できるすべてのスライスへの参照を保持します。
 

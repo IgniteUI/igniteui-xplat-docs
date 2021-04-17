@@ -1,58 +1,58 @@
 ---
-title: $PlatformShort$ チャート パフォーマンス | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート パフォーマンス
-_keywords: $PlatformShort$ Charts, Performance, Infragistics, $PlatformShort$ チャート, パフォーマンス, インフラジスティックス
+title: $Platform$ チャート パフォーマンス | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート パフォーマンス
+_keywords: $Platform$ Charts, Performance, Infragistics, $Platform$ チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート パフォーマンス
+# $Platform$ チャート パフォーマンス
 
-$PlatformShort$ チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。このトピックでは、$PlatformShort$ チャートをアプリケーションで可能な限り高速に機能させる方法について説明します。
+$Platform$ チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。このトピックでは、$Platform$ チャートをアプリケーションで可能な限り高速に機能させる方法について説明します。
 
-## $PlatformShort$ チャート パフォーマンスの例
+## $Platform$ チャート パフォーマンスの例
 
-次の例は、$PlatformShort$ チャートの 2 つの高性能シナリオを示しています。
+次の例は、$Platform$ チャートの 2 つの高性能シナリオを示しています。
 
-## 高頻度 $PlatformShort$ チャート
+## 高頻度 $Platform$ チャート
 
-高頻度シナリオでは、$PlatformShort$ チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `CategoryChart` を示しています。
+高頻度シナリオでは、$Platform$ チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `CategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="高頻度 $PlatformShort$ チャート" >
+           alt="高頻度 $Platform$ チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 大量のデータの $PlatformShort$ チャート
+## 大量のデータの $Platform$ チャート
 
-大量データのシナリオでは、$PlatformShort$ チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `CategoryChart` を示しています。
+大量データのシナリオでは、$Platform$ チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `CategoryChart` を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           alt="大量のデータの $PlatformShort$ チャート" >
+           alt="大量のデータの $Platform$ チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 一般的なパフォーマンス ガイドライン
 
-このセクションでは、$PlatformShort$ チャートのオーバーヘッドと処理の更新に追加されるガイドラインとチャート機能を一覧表示します。
+このセクションでは、$Platform$ チャートのオーバーヘッドと処理の更新に追加されるガイドラインとチャート機能を一覧表示します。
 
 ### データ サイズ
 
-多数のデータ ポイント (10,000 以上など) を含むデータ ソースをプロットする必要がある場合は、その目的のために特別にデザインされた次のタイプのシリーズのいずれかで $PlatformShort$ `XamDataChart` を使用することをお勧めします。
+多数のデータ ポイント (10,000 以上など) を含むデータ ソースをプロットする必要がある場合は、その目的のために特別にデザインされた次のタイプのシリーズのいずれかで $Platform$ `XamDataChart` を使用することをお勧めします。
 
-- [カテゴリ ポイント チャート](../types/point-chart.md)や[散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-散布マーカー-チャート)の代わりに[散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-散布高密度チャート) 
-- [カテゴリ折れ線チャート](../types/line-chart.md#$PlatformShort$-折れ線チャートの例)や[散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-散布折れ線チャート)の代わりに[散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリライン-チャート)
-- [カテゴリ エリア チャート](../types/area-chart.md#$PlatformShort$-エリア-チャートの例)や[縦棒チャート](../types/column-chart.md#$PlatformShort$-縦棒チャートの例)の代わりに[散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリゴン-チャート) 
+- [カテゴリ ポイント チャート](../types/point-chart.md)や[散布マーカー チャート](../types/scatter-chart.md#$Platform$-散布マーカー-チャート)の代わりに[散布高密度チャート](../types/scatter-chart.md#$Platform$-散布高密度チャート)
+- [カテゴリ折れ線チャート](../types/line-chart.md#$Platform$-折れ線チャートの例)や[散布折れ線チャート](../types/scatter-chart.md#$Platform$-散布折れ線チャート)の代わりに[散布ポリライン チャート](../types/shape-chart.md#$Platform$-散布ポリライン-チャート)
+- [カテゴリ エリア チャート](../types/area-chart.md#$Platform$-エリア-チャートの例)や[縦棒チャート](../types/column-chart.md#$Platform$-縦棒チャートの例)の代わりに[散布ポリゴン チャート](../types/shape-chart.md#$Platform$-散布ポリゴン-チャート)
 
 ### データ構造
 
-$PlatformShort$ チャートは、データ ポイントの配列の配列を `ItemsSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
+$Platform$ チャートは、データ ポイントの配列の配列を `ItemsSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();
@@ -130,7 +130,7 @@ export class MultiDataSources {
 
 ### データ フィルタリング
 
-$PlatformShort$ `CategoryChart` および `FinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
+$Platform$ `CategoryChart` および `FinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
 
 
 ```razor
@@ -148,23 +148,23 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### チャート タイプ
 
-[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$PlatformShort$ `XamCategoryChart` の `ChartType` プロパティまたは `XamFinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、$PlatformShort$ `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
+[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$Platform$ `XamCategoryChart` の `ChartType` プロパティまたは `XamFinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、$Platform$ `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
 
 次の表に、チャートの各グループで、パフォーマンスが速いものから遅いものの順にチャートのタイプを示します。
 
 チャート グループ     | チャート タイプ
 ----------------|---------------------------------
-円チャート       | - [円チャート](../types/pie-chart.md) <br> - [ドーナツ チャート](../types/donut-chart.md) <br> - [ラジアル円チャート](../types/radial-chart.md#$PlatformShort$-ラジアル円チャート) <br>
-折れ線チャート      | - [カテゴリ折れ線チャート](../types/line-chart.md#$PlatformShort$-カテゴリ折れ線チャート) <br> - [カテゴリ スプライン チャート](../types/spline-chart.md#$PlatformShort$-カテゴリ-スプライン-チャート) <br> - [ステップ折れ線チャート](../types/shape-chart.md#$PlatformShort$-ステップ折れ線チャート) <br> - [ラジアル折れ線チャート](../types/radial-chart.md#$PlatformShort$-ラジアル折れ線チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#$PlatformShort$-極座標折れ線チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-散布折れ線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリライン-チャート) (\*)  <br> - [散布等高線チャート](../types/scatter-chart.md#$PlatformShort$-散布等高線チャート) <br> - [積層型折れ線チャート](../types/stacked-chart.md#$PlatformShort$-積層型折れ線チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-折れ線チャート) <br>
-エリア チャート      | - [カテゴリ エリア チャート](../types/area-chart.md#$PlatformShort$-エリア-チャートの例) <br> - [ステップ エリア チャート](../types/shape-chart.md#$PlatformShort$-ステップ-エリア-チャート) <br> - [範囲エリア チャート](../types/area-chart.md#$PlatformShort$-範囲エリア-チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$PlatformShort$-ラジアル-エリア-チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#$PlatformShort$-極座標エリア-チャート) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリゴン-チャート) (\*) <br> - [散布エリア チャート](../types/scatter-chart.md#$PlatformShort$-散布エリア-チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#$PlatformShort$-積層型エリア-チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-エリア-チャート) <br>
-縦棒チャート    | - [縦棒チャート](../types/column-chart.md#$PlatformShort$-縦棒チャートの例) <br> - [棒チャート](../types/column-chart.md#$PlatformShort$-棒チャートの例) <br> - [ウォーターフォール チャート](../types/column-chart.md#$PlatformShort$-ウォーターフォール-チャート) <br> - [範囲縦棒チャート](../types/column-chart.md#$PlatformShort$-範囲縦棒チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$PlatformShort$-ラジアル縦棒チャート) <br> - [積層型縦棒チャート](stacked-chart.md#$PlatformShort$-積層型縦棒チャート) <br> - [積層型棒チャート](stacked-chart.md#$PlatformShort$-積層型棒チャート) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$PlatformShort$-積層型-100%-縦棒チャート) <br> - [積層型 100% 棒チャート](stacked-chart.md#$PlatformShort$-積層型-100%-棒チャート)
-スプライン チャート    | - [カテゴリ スプライン チャート](../types/spline-chart.md#$PlatformShort$-スプライン-チャートの例) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$PlatformShort$-極座標型スプラインーチャート) <br> - [散布スプライン チャート](../types/scatter-chart.md#$PlatformShort$-散布スプライン-チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$PlatformShort$-積層型スプライン-チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-スプライン-チャート) <br>
-ポイント チャート     | - [カテゴリ ポイント チャート](../types/point-chart.md) <br> - [散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-散布高密度チャート)  <br> - [散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-散布マーカー-チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [極座標型マーカーチャート](../types/polar-chart.md#$PlatformShort$-極座標型マーカー-チャート) <br>
+円チャート       | - [円チャート](../types/pie-chart.md) <br> - [ドーナツ チャート](../types/donut-chart.md) <br> - [ラジアル円チャート](../types/radial-chart.md#$Platform$-ラジアル円チャート) <br>
+折れ線チャート      | - [カテゴリ折れ線チャート](../types/line-chart.md#$Platform$-カテゴリ折れ線チャート) <br> - [カテゴリ スプライン チャート](../types/spline-chart.md#$Platform$-カテゴリ-スプライン-チャート) <br> - [ステップ折れ線チャート](../types/shape-chart.md#$Platform$-ステップ折れ線チャート) <br> - [ラジアル折れ線チャート](../types/radial-chart.md#$Platform$-ラジアル折れ線チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#$Platform$-極座標折れ線チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#$Platform$-散布折れ線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#$Platform$-散布ポリライン-チャート) (\*)  <br> - [散布等高線チャート](../types/scatter-chart.md#$Platform$-散布等高線チャート) <br> - [積層型折れ線チャート](../types/stacked-chart.md#$Platform$-積層型折れ線チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$Platform$-積層型-100%-折れ線チャート) <br>
+エリア チャート      | - [カテゴリ エリア チャート](../types/area-chart.md#$Platform$-エリア-チャートの例) <br> - [ステップ エリア チャート](../types/shape-chart.md#$Platform$-ステップ-エリア-チャート) <br> - [範囲エリア チャート](../types/area-chart.md#$Platform$-範囲エリア-チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$Platform$-ラジアル-エリア-チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#$Platform$-極座標エリア-チャート) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$Platform$-散布ポリゴン-チャート) (\*) <br> - [散布エリア チャート](../types/scatter-chart.md#$Platform$-散布エリア-チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#$Platform$-積層型エリア-チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$Platform$-積層型-100%-エリア-チャート) <br>
+縦棒チャート    | - [縦棒チャート](../types/column-chart.md#$Platform$-縦棒チャートの例) <br> - [棒チャート](../types/column-chart.md#$Platform$-棒チャートの例) <br> - [ウォーターフォール チャート](../types/column-chart.md#$Platform$-ウォーターフォール-チャート) <br> - [範囲縦棒チャート](../types/column-chart.md#$Platform$-範囲縦棒チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$Platform$-ラジアル縦棒チャート) <br> - [積層型縦棒チャート](stacked-chart.md#$Platform$-積層型縦棒チャート) <br> - [積層型棒チャート](stacked-chart.md#$Platform$-積層型棒チャート) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$Platform$-積層型-100%-縦棒チャート) <br> - [積層型 100% 棒チャート](stacked-chart.md#$Platform$-積層型-100%-棒チャート)
+スプライン チャート    | - [カテゴリ スプライン チャート](../types/spline-chart.md#$Platform$-スプライン-チャートの例) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$Platform$-極座標型スプラインーチャート) <br> - [散布スプライン チャート](../types/scatter-chart.md#$Platform$-散布スプライン-チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$Platform$-積層型スプライン-チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$Platform$-積層型-100%-スプライン-チャート) <br>
+ポイント チャート     | - [カテゴリ ポイント チャート](../types/point-chart.md) <br> - [散布高密度チャート](../types/scatter-chart.md#$Platform$-散布高密度チャート)  <br> - [散布マーカー チャート](../types/scatter-chart.md#$Platform$-散布マーカー-チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [極座標型マーカーチャート](../types/polar-chart.md#$Platform$-極座標型マーカー-チャート) <br>
 ファイナンシャル チャート | - [折れ線モードの株価チャート](../types/stock-chart.md) <br> - [縦棒モードの株価チャート](../types/stock-chart.md) <br> - [棒モードの株価チャート](../types/stock-chart.md) <br> - [ローソク足モードの株価チャート](../types/stock-chart.md) <br> - [オーバーレイ付き株価チャート](../types/stock-chart.md) <br> - [ズーム ペイン付き株価チャート](../types/stock-chart.md) <br> - [ボリューム ペイン付き株価チャート](../types/stock-chart.md#Volume-Pane) <br> - [インジケーター ペイン付き株価チャート](../types/stock-chart.md#Indicator-Pane) <br>
-散布図   | - [散布高密度チャート](../types/scatter-chart.md#$PlatformShort$-散布高密度チャート) <br> - [散布マーカー チャート](../types/scatter-chart.md#$PlatformShort$-散布マーカー-チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#$PlatformShort$-散布折れ線チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [散布スプライン チャート](../types/scatter-chart.md#$PlatformShort$-散布スプライン-チャート) <br> - [散布エリア チャート](../types/scatter-chart.md#$PlatformShort$-散布エリア-チャート) <br> - [散布等高線チャート](../types/scatter-chart.md#$PlatformShort$-散布等高線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリライン-チャート) (\*) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$PlatformShort$-散布ポリゴン-チャート) (\*) <br>
-ラジアル チャート    | - [ラジアル折れ線チャート](../types/radial-chart.md#$PlatformShort$-ラジアル折れ線チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$PlatformShort$-ラジアル-エリア-チャート) <br> - [ラジアル円チャート](../types/radial-chart.md#$PlatformShort$-ラジアル円チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$PlatformShort$-ラジアル縦棒チャート) <br>
-極座標チャート     | - [極座標型マーカー チャート](../types/polar-chart.md#$PlatformShort$-極座標型マーカー-チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#$PlatformShort$-極座標折れ線チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#$PlatformShort$-極座標エリア-チャート) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$PlatformShort$-極座標型スプライン-チャート) <br> - [極座標スプライン エリア チャート](../types/polar-chart.md#$PlatformShort$-Polar-Spline-Area-chart) <br>
-積層型チャート   | - [積層型折れ線チャート](../types/stacked-chart.md#$PlatformShort$-積層型折れ線チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#$PlatformShort$-積層型エリア-チャート) <br> - [積層型縦棒チャート](stacked-chart.md#$PlatformShort$-積層型縦棒チャート) <br> - [積層型棒チャート](stacked-chart.md#$PlatformShort$-積層型棒チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$PlatformShort$-積層型スプライン-チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-折れ線チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-エリア-チャート) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$PlatformShort$-積層型-100%-縦棒チャート) <br> - [積層型 100% 棒チャート](stacked-chart.md#$PlatformShort$-積層型-100%-棒チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$PlatformShort$-積層型-100%-スプライン-チャート) <br>
+散布図   | - [散布高密度チャート](../types/scatter-chart.md#$Platform$-散布高密度チャート) <br> - [散布マーカー チャート](../types/scatter-chart.md#$Platform$-散布マーカー-チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#$Platform$-散布折れ線チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [散布スプライン チャート](../types/scatter-chart.md#$Platform$-散布スプライン-チャート) <br> - [散布エリア チャート](../types/scatter-chart.md#$Platform$-散布エリア-チャート) <br> - [散布等高線チャート](../types/scatter-chart.md#$Platform$-散布等高線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#$Platform$-散布ポリライン-チャート) (\*) <br> - [散布ポリゴン チャート](../types/shape-chart.md#$Platform$-散布ポリゴン-チャート) (\*) <br>
+ラジアル チャート    | - [ラジアル折れ線チャート](../types/radial-chart.md#$Platform$-ラジアル折れ線チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#$Platform$-ラジアル-エリア-チャート) <br> - [ラジアル円チャート](../types/radial-chart.md#$Platform$-ラジアル円チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#$Platform$-ラジアル縦棒チャート) <br>
+極座標チャート     | - [極座標型マーカー チャート](../types/polar-chart.md#$Platform$-極座標型マーカー-チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#$Platform$-極座標折れ線チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#$Platform$-極座標エリア-チャート) <br> - [極座標型スプライン チャート](../types/polar-chart.md#$Platform$-極座標型スプライン-チャート) <br> - [極座標スプライン エリア チャート](../types/polar-chart.md#$Platform$-Polar-Spline-Area-chart) <br>
+積層型チャート   | - [積層型折れ線チャート](../types/stacked-chart.md#$Platform$-積層型折れ線チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#$Platform$-積層型エリア-チャート) <br> - [積層型縦棒チャート](stacked-chart.md#$Platform$-積層型縦棒チャート) <br> - [積層型棒チャート](stacked-chart.md#$Platform$-積層型棒チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#$Platform$-積層型スプライン-チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#$Platform$-積層型-100%-折れ線チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#$Platform$-積層型-100%-エリア-チャート) <br> - [積層型 100% 縦棒チャート](stacked-chart.md#$Platform$-積層型-100%-縦棒チャート) <br> - [積層型 100% 棒チャート](stacked-chart.md#$Platform$-積層型-100%-棒チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#$Platform$-積層型-100%-スプライン-チャート) <br>
 
 
 \* チャートに多数のデータ ソースがバインドされている場合、[散布ポリゴン チャート](../types/shape-chart.md)と[散布ポリライン チャート](../types/shape-chart.md)のパフォーマンスは他のチャートよりも優れていることに注意してください。詳細については、[シリーズ コレクション](#シリーズ-コレクション)セクションを参照してください。それ以外の場合は、他のチャートのタイプの方が高速です。
@@ -440,7 +440,7 @@ this.LineSeries.Resolution = 10;
 
 `IndicatorTypes` および `OverlayTypes` オプションを使用して複数のペインを設定した場合、パフォーマンスが低下する可能性があり、少数の財務指標および単一の財務オーバーレイを使用することをお勧めします。
 
-### ズーム スライダー 
+### ズーム スライダー
 
 `ZoomSliderType` オプションを `None` に設定すると、チャート パフォーマンスを向上し、その他のインジケーターおよびボリューム ペインのために垂直スペースを利用可能になります。
 
@@ -463,7 +463,7 @@ this.LineSeries.Resolution = 10;
 
 ### シリーズ コレクション
 
-また、$PlatformShort$ `XamDataChart` コントロールの `Series` コレクションに多くのシリーズを追加すると、各シリーズに独自の描画キャンバスがあるため、描画にオーバーヘッドが追加されます。これは、データ チャートに 10 を超えるシリーズがある場合に特に重要です。複数のデータ ソースを組み合わせてフラット化したデータ ソースにし ([データ構造](#データ-構造)セクションを参照)、次のシリーズの条件付き書式設定機能を使用することをお勧めします。
+また、$Platform$ `XamDataChart` コントロールの `Series` コレクションに多くのシリーズを追加すると、各シリーズに独自の描画キャンバスがあるため、描画にオーバーヘッドが追加されます。これは、データ チャートに 10 を超えるシリーズがある場合に特に重要です。複数のデータ ソースを組み合わせてフラット化したデータ ソースにし ([データ構造](#データ-構造)セクションを参照)、次のシリーズの条件付き書式設定機能を使用することをお勧めします。
 
 パフォーマンスが低下するシナリオ | 条件付き書式設定を使用したより高速なシナリオ
 ----------------------------|----------------------------------------

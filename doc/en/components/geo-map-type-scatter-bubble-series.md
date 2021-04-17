@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter proportional series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Using Scatter Proportional Series
+# $Platform$ Using Scatter Proportional Series
 
-Use the $PlatformShort$ map component's `GeographicProportionalSymbolSeries` to plot markers for the geographic points specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
+Use the $Platform$ map component's `GeographicProportionalSymbolSeries` to plot markers for the geographic points specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
 
-## $PlatformShort$ Using Scatter Proportional Series Example
+## $Platform$ Using Scatter Proportional Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series" 
-           alt="$PlatformShort$ Using Scatter Proportional Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           alt="$Platform$ Using Scatter Proportional Series Example"
            github-src="maps/geo-map/type-scatter-bubble-series">
 </code-view>
 

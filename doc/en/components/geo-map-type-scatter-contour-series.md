@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter contour series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale']
 ---
-# $PlatformShort$ Using Scatter Contour Series
+# $Platform$ Using Scatter Contour Series
 
-Use the $PlatformShort$ map component's `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
+Use the $Platform$ map component's `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
 
-## $PlatformShort$ Using Scatter Contour Series Example
+## $Platform$ Using Scatter Contour Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series" 
-           alt="$PlatformShort$ Using Scatter Contour Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
+           alt="$Platform$ Using Scatter Contour Series Example"
            github-src="maps/geo-map/type-scatter-contour-series">
 </code-view>
 

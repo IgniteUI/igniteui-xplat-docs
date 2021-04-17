@@ -5,22 +5,22 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 행 핀 고정
+# $Platform$ 행 핀 고정
 
  $ProductName$ 데이터 표/데이터 그리드는 키 또는 기본 데이터 소스 항목을 사용하여 행 핀 고정을 가능하게 합니다. 행이 핀 고정되면 그리드 상단에 복제되고 연한 회색 배경으로 고정되며 실제 행은 낮은 불투명도로 렌더링됩니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning"
            github-src="grids/data-grid/row-pinning">
 </code-view>
 
 <div class="divider--half"></div>
 
-대상 행의 기본 데이터 항목을 $PlatformShort$ 그리드의 pinnedItems 컬렉션에 추가하여 $PlatformShort$ 데이터 그리드의 행을 핀 고정할 수 있습니다.
+대상 행의 기본 데이터 항목을 $Platform$ 그리드의 pinnedItems 컬렉션에 추가하여 $Platform$ 데이터 그리드의 행을 핀 고정할 수 있습니다.
 
 ## API를 사용한 행 핀 고정
 

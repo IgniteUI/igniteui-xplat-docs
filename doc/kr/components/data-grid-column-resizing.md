@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
+title: $Platform$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
 _description: The $ProductName$ Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
 _keywords: grid, table, $ProductName$, Infragistics
 ---
 
-# $PlatformShort$ Column Resizing
+# $Platform$ Column Resizing
 
 The $ProductName$ Data Grid supports the ability to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each.
 
 ## Demo
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-resizing"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-resizing"
            github-src="grids/data-grid/column-resizing">
 </code-view>
 

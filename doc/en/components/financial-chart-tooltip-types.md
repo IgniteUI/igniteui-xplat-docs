@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Financial Chart | ToolTip Types | Infragistics
-_description: Use Infragistics' $PlatformShort$ financial chart's tooltips to display important data. View our $ProductName$ graph tutorials!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, tooltips, $ProductName$, Infragistics
+title: $Platform$ Financial Chart | ToolTip Types | Infragistics
+_description: Use Infragistics' $Platform$ financial chart's tooltips to display important data. View our $ProductName$ graph tutorials!
+_keywords: $Platform$ charts, financial chart, stock chart, tooltips, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart']
 ---
-# $PlatformShort$ Tooltip Types
+# $Platform$ Tooltip Types
 
-This topic provides conceptual information about the tooltip types available on the $PlatformShort$ financial chart component.
+This topic provides conceptual information about the tooltip types available on the $Platform$ financial chart component.
 
-## $PlatformShort$ Tooltip Types Example
+## $Platform$ Tooltip Types Example
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-types"
-           alt="$PlatformShort$ Tooltip Types Example"
+           alt="$Platform$ Tooltip Types Example"
            github-src="charts/financial-chart/tooltip-types">
 </code-view>
 
@@ -21,7 +21,7 @@ This topic provides conceptual information about the tooltip types available on 
 
 ## Tooltip Types
 
-The $PlatformShort$ financial chart component can be configured to display Tooltips in the following ways:
+The $Platform$ financial chart component can be configured to display Tooltips in the following ways:
 
 1. `Default` tooltips will display a tooltip for a single item when the pointer is positioned over it.
 1. `Item` tooltips will display a tooltip for each data item in the category that the pointer is positioned over.

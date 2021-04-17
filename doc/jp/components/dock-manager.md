@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ ドック マネージャー | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
+title: $Platform$ ドック マネージャー | レイアウト コントロール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
 ---
-# $PlatformShort$ ドック マネージャーの概要
+# $Platform$ ドック マネージャーの概要
 
-Infragistics $PlatformShort$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
+Infragistics $Platform$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
 <!-- Blazor -->
 > [!NOTE]
@@ -19,14 +19,14 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ ドック マネージャーの例
+## $Platform$ ドック マネージャーの例
 
-この例は、$PlatformShort$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
+この例は、$Platform$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$PlatformShort$ ドック マネージャーの例" 
+           alt="$Platform$ ドック マネージャーの例"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
@@ -371,7 +371,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ### その他
  - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
 
-サンプル [`demo`](dock-manager.md#$PlatformShort$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 ## テーマ
 

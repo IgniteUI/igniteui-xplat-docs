@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | データ可視化ツール | カスタム インジケーター | インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | データ可視化ツール | カスタム インジケーター | インフラジスティックス
 _description: 簡単な API を使用して財務データを可視化するには、ファイナンシャル チャート コンポーネントを使用します。詳細については、デモ、依存関係、使用方法、およびツールバーを参照してください。
-_keywords: $PlatformShort$ charts, financial chart, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, インフラジスティックス
+_keywords: $Platform$ charts, financial chart, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ カスタム インジケーター
+# $Platform$ カスタム インジケーター
 
-$PlatformShort$ Financial Chart コンポーネントでは、インジケーター ペインに表示するカスタム財務指標を定義できます。
+$Platform$ Financial Chart コンポーネントでは、インジケーター ペインに表示するカスタム財務指標を定義できます。
 
-## $PlatformShort$ カスタム インジケーターの例
+## $Platform$ カスタム インジケーターの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators"
-           alt="$PlatformShort$ カスタム インジケーターの例"
+           alt="$Platform$ カスタム インジケーターの例"
            github-src="charts/financial-chart/custom-indicators">
 </code-view>
 
 <div class="divider--half"></div>
 
-$PlatformShort$ Financial Chart コンポーネントでカスタム財務指標を有効にするには、`customIndicatorNames` プロパティに名前を追加し、`applyCustomIndicators` イベントで計算を実行します。
+$Platform$ Financial Chart コンポーネントでカスタム財務指標を有効にするには、`customIndicatorNames` プロパティに名前を追加し、`applyCustomIndicators` イベントで計算を実行します。
 
 以下のコード例は、2 つのカスタム インジケーターを設定して計算する方法を紹介します。単純移動平均 (SMA) およびランダム値を表示するインジケーターを使用します。
 

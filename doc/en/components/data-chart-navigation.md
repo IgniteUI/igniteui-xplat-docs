@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Navigation | Infragistics
-_description: Navigate Infragistics' $PlatformShort$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
-_keywords: $PlatformShort$ charts, data chart, navigation, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Navigation | Infragistics
+_description: Navigate Infragistics' $Platform$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
+_keywords: $Platform$ charts, data chart, navigation, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'ModifierKeys']
 ---
-# $PlatformShort$ Navigation
+# $Platform$ Navigation
 
-In the $PlatformShort$ data chart component, navigation is disabled by default. Once enabled, you are able to zoom and pan the data chart either programmatically or in the UI.
+In the $Platform$ data chart component, navigation is disabled by default. Once enabled, you are able to zoom and pan the data chart either programmatically or in the UI.
 
-## $PlatformShort$ Navigation Example
+## $Platform$ Navigation Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation" 
-           alt="$PlatformShort$ Navigation Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
+           alt="$Platform$ Navigation Example"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
@@ -52,7 +52,7 @@ In order to allow navigation in the UI, you need to set either the `IsHorizontal
 
 It is also possible to zoom or pan simply by clicking the buttons on the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to `DragZoom` and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either `DragPan` to allow panning or `None` to prevent these operations.
 
-The following code snippet demonstrates how you can enable base UI navigation in the $PlatformShort$ data chart component:
+The following code snippet demonstrates how you can enable base UI navigation in the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%"
@@ -90,7 +90,7 @@ The following code snippet demonstrates how you can enable base UI navigation in
 
 ## Data Chart Navigation with Mouse and Keyboard
 
-Navigation in the $PlatformShort$ data chart component can happen with either the mouse or the keyboard once enabled. The following operations can be invoked using the following mouse or keyboard operations by default:
+Navigation in the $Platform$ data chart component can happen with either the mouse or the keyboard once enabled. The following operations can be invoked using the following mouse or keyboard operations by default:
 
 - **Panning**: Using arrow keys on keyboard or holding the Shift key and clicking and dragging with the mouse.
 - **Zoom In**: Using the PageUp key on keyboard or rolling the mouse wheel up.
@@ -184,7 +184,7 @@ The following code snippet demonstrates how to enable the overview plus detail p
 
 ## Data Chart Navigation through Code
 
-The $PlatformShort$ data chart component provides several navigation properties that are updated each time a zoom or pan operation happens in the data chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
+The $Platform$ data chart component provides several navigation properties that are updated each time a zoom or pan operation happens in the data chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
 
 - `WindowPositionHorizontal`: A numeric value describing the X portion of the content view rectangle displayed by the data chart.
 - `WindowPositionVertical`: A numeric value describing the Y portion of the content view rectangle displayed by the data chart.
@@ -192,13 +192,13 @@ The $PlatformShort$ data chart component provides several navigation properties 
 - `WindowScaleHorizontal`: A numeric value describing the width portion of the content view rectangle displayed by the data chart.
 - `WindowScaleVertical`: A numeric value describing the height portion of the content view rectangle displayed by the data chart.
 
-The following code snippets show how to modify the view of the $PlatformShort$ data chart component programmatically. The following assumes you have a variable named "chart" to represent the $PlatformShort$ data chart component:
+The following code snippets show how to modify the view of the $Platform$ data chart component programmatically. The following assumes you have a variable named "chart" to represent the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%"
     WindowScaleVertical="0.05"
     WindowScaleHorizontal="0">
-</DataChart>                
+</DataChart>
 ```
 
 ```ts

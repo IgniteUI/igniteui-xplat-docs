@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 軸タイプ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、数値、カテゴリ、日付時間軸などのさまざまな軸タイプを通じてデータをプロットします。$ProductName$ グラフ軸について説明します。
-_keywords: $PlatformShort$ charts, data chart, axis, types, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 軸, タイプ, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 軸タイプ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、数値、カテゴリ、日付時間軸などのさまざまな軸タイプを通じてデータをプロットします。$ProductName$ グラフ軸について説明します。
+_keywords: $Platform$ charts, data chart, axis, types, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 軸, タイプ, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 _language: ja
 ---
-# $PlatformShort$ 軸
+# $Platform$ 軸
 
-$PlatformShort$ データ チャート コンポーネントの軸は、軸の主線、グリッド線、目盛り、タイトル、およびラベルの外観を指定するための基本プロパティを提供します。データ チャートがサポートするさまざまなシリーズ タイプのデータ チャート コンポーネントで使用できる複数の軸タイプがあります。シリーズのタイプは、併用できる軸タイプを決定します。
+$Platform$ データ チャート コンポーネントの軸は、軸の主線、グリッド線、目盛り、タイトル、およびラベルの外観を指定するための基本プロパティを提供します。データ チャートがサポートするさまざまなシリーズ タイプのデータ チャート コンポーネントで使用できる複数の軸タイプがあります。シリーズのタイプは、併用できる軸タイプを決定します。
 
-## $PlatformShort$ 軸の例
+## $Platform$ 軸の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-types" 
-           alt="$PlatformShort$ 軸の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-types"
+           alt="$Platform$ 軸の例"
            github-src="charts/data-chart/axis-types">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## サポートされる軸
-$PlatformShort$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。
+$Platform$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。
 
 軸タイプ           |サポートされるシリーズ タイプ
 --------------------|-----------------------
@@ -41,10 +41,10 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `CategoryXAxis` は、データを一連のカテゴリ データ項目として扱います。この軸のラベルがシーケンスの位置に応じて、X 軸に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。このタイプの軸は、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く) と互換性があります。
 
-以下のコードは、`CategoryXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`CategoryXAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
-<DataChart Height="400px" 
+<DataChart Height="400px"
     Width="100%">
     <CategoryXAxis Name="xAxis" />
 </DataChart>
@@ -79,10 +79,10 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `CategoryYAxis` は、データを一連のカテゴリ データ項目として扱います。この軸のラベルがシーケンスの位置に応じて、Y 軸に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。この軸タイプは、[カテゴリ シリーズ](data-chart-type-category-series.md) グループ内の[棒シリーズ](data-chart-type-category-bar-series.md)とのみ互換性があります。
 
-以下のコード スニペットは、`CategoryYAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコード スニペットは、`CategoryYAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
-<DataChart Height="400px" 
+<DataChart Height="400px"
     Width="100%">
     <CategoryYAxis Name="yAxis"
         DataSource="@DataSource" />
@@ -126,10 +126,10 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 このタイプの軸は、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く) と互換性があります。
 <!-- end: Blazor -->
 
-以下のコードは、`CategoryDateTimeXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`CategoryDateTimeXAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
-<DataChart Height="400px" 
+<DataChart Height="400px"
     Width="100%">
     <CategoryDateTimeXAxis Name="xAxis"
         DateTimeMemberPath="Date"
@@ -174,10 +174,10 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `NumericXAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは X-Axis に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と[シェイプ シリーズ](data-chart-type-shape-series.md)のタイプと互換性があります。また、この軸は [棒シリーズ](data-chart-type-category-bar-series.md) タイプの[カテゴリ シリーズ](data-chart-type-category-series.md)と互換性があります。ここでは、`ValueMemberPath` プロパティを使用してデータ列をマップします。
 
-以下のコードは、`NumericXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`NumericXAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
-<DataChart Height="400px" 
+<DataChart Height="400px"
     Width="100%">
     <NumericXAxis Name="xAxis"
         DataSource="@data"  />
@@ -213,10 +213,10 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `NumericYAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは Y 軸に沿ってに配置されます。ラベルの位置は、対応する値マッピング プロパティを使用してマップされたデータ列の値に基づいて変わります。このタイプの軸は、[散布シリーズ](data-chart-type-scatter-bubble-series.md)と [シェイプ シリーズ](data-chart-type-shape-series.md) のタイプと互換性があります。また、このタイプの軸は、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[カテゴリ シリーズ](data-chart-type-category-series.md) ([棒シリーズ](data-chart-type-category-bar-series.md) を除く) タイプと互換性があります。
 
-以下のコードは、`NumericYAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`NumericYAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
-<DataChart Height="400px" 
+<DataChart Height="400px"
     Width="100%">
     <NumericYAxis Name="xAxis" />
 </DataChart>
@@ -253,7 +253,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `TimeXAxis` に `Breaks` を使用してデータの間隔を除外するオプションがあります。その結果として、ラベルは除外された間隔で表示されません。たとえば、勤務日/休業日、休日、週末などです。
 
-以下のコードは、`TimeXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`TimeXAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
 <DataChart Height="400px" Width="100%" >
@@ -293,7 +293,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 `OrdinalTimeXAxis` と `TimeXAxis` の主な違いは、序数軸で表示される日付は等距離であると見なされることです。`TimeXAxis` は現在、日付を時系列に従ってソートします。そのため、パフォーマンスを向上させるため、またはデータ項目が同じ時間間隔で時系列順になっている場合は、`OrdinalTimeXAxis` を使用することをお勧めします。
 
-以下のコードは、`OrdinalTimeXAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`OrdinalTimeXAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
 <DataChart Height="400px" Width="100%" >
@@ -333,7 +333,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 この軸タイプは `NumericYAxis` に基づいているため、同じシリーズ タイプをサポートします。[カテゴリ シリーズ](data-chart-type-category-series.md)の場合、参照値はそれらのシリーズの `ValueMemberPath` に対応します。[散布シリーズ](data-chart-type-scatter-bubble-series.md)の場合、参照値はそれらのシリーズの `YMemberPath` に対応します。[ファイナンシャル シリーズ](data-chart-type-financial-series.md)の場合、参照値は `OpenMemberPath` プロパティにマッピングされた最初の値に対応します。
 
-以下のコードは、`PercentChangeYAxis` を $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、`PercentChangeYAxis` を $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
 <DataChart Height="400px" Width="100%">

@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Charts | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar charts such as polar scatter, polar line, polar area and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Charts | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar charts such as polar scatter, polar line, polar area and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarLineSeries']
 ---
-# $PlatformShort$ Polar Series
+# $Platform$ Polar Series
 
-This topic explains various types of polar series in the $PlatformShort$ data chart component. Polar series is a group of series that use the polar (angle, radius) coordinate system instead of the Cartesian (x, y) coordinate system to plot data in chart. In other words, polar series take concepts of [Scatter Series](data-chart-type-scatter-point-series.md) and wrap them around a circle rather than stretching along a horizontal line. This group of series is used to show the relationship among the items in several distinct series of data using the polar coordinates system.
+This topic explains various types of polar series in the $Platform$ data chart component. Polar series is a group of series that use the polar (angle, radius) coordinate system instead of the Cartesian (x, y) coordinate system to plot data in chart. In other words, polar series take concepts of [Scatter Series](data-chart-type-scatter-point-series.md) and wrap them around a circle rather than stretching along a horizontal line. This group of series is used to show the relationship among the items in several distinct series of data using the polar coordinates system.
 
 Polar series draw attention to uneven intervals or clusters of data. They are often used to plot scientific data (e.g. wind's direction and speed, strength and direction of magnetic field, location of objects in solar system), and can highlight the deviation of collected data from predicted results.
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ Polar Series Example
+## $Platform$ Polar Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series" 
-           alt="$PlatformShort$ Polar Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series"
+           alt="$Platform$ Polar Series Example"
            github-src="charts/data-chart/type-polar-series">
 </code-view>
 
@@ -37,7 +37,7 @@ The Data Chart supports the following types of polar series:
 
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with polar series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with polar series.
 
 | Series Type             | Radius Axis Type    | Angle Axis Type    |
 |-------------------------|---------------------|--------------------|

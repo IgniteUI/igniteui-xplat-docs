@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | スパークラインの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリのスパークライン チャートを使用して、ワークシートのセル領域全体のデータ トレンドを視覚化します。$ProductName$ Excel エンジン チュートリアルを是非お試しください!
+title: $Platform$ Excel ライブラリ | スパークラインの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリのスパークライン チャートを使用して、ワークシートのセル領域全体のデータ トレンドを視覚化します。$ProductName$ Excel エンジン チュートリアルを是非お試しください!
 _keywords: Excel library, sparkline chart, $ProductName$, Infragistics, Excel ライブラリ, スパークライン チャート, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $PlatformShort$ スパークラインを使用した作業
+# $Platform$ スパークラインを使用した作業
 
-Infragistics $PlatformShort$ Excel Library は、Excel ワークシートにスパークラインを追加する機能があります。これらを使用して、ワークシートのデータ セルの領域全体のデータの傾向を簡単に視覚的に表現することができます。たとえば、特定のセル領域の Excel データを単純な縦棒チャートまたは折れ線チャートとして視覚化したい場合は、この機能を使用すると役立ちます。
+Infragistics $Platform$ Excel Library は、Excel ワークシートにスパークラインを追加する機能があります。これらを使用して、ワークシートのデータ セルの領域全体のデータの傾向を簡単に視覚的に表現することができます。たとえば、特定のセル領域の Excel データを単純な縦棒チャートまたは折れ線チャートとして視覚化したい場合は、この機能を使用すると役立ちます。
 
-## $PlatformShort$ スパークラインを使用した作業の例
+## $Platform$ スパークラインを使用した作業の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines" 
-           alt="$PlatformShort$ スパークラインを使用した作業の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines"
+           alt="$Platform$ スパークラインを使用した作業の例"
            github-src="excel/excel-library/working-with-sparklines">
 </code-view>
 

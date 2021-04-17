@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 軸共有 | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 軸共有 | インフラジスティックス
 _description: インフラジスティックスの $Platform Short$ チャート コントロールにより、複数の軸を同じプロット エリアに表示できます。複数の軸を持つ $ProductName$ グラフを作成します!
-_keywords: $PlatformShort$ charts, data chart, axis sharing, $ProductName$, Infragistics, multiple axes, $PlatformShort$ チャート, データ チャート, 軸共有, インフラジスティックス, 複数軸
+_keywords: $Platform$ charts, data chart, axis sharing, $ProductName$, Infragistics, multiple axes, $Platform$ チャート, データ チャート, 軸共有, インフラジスティックス, 複数軸
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 _language: ja
 ---
-# $PlatformShort$ 軸共有と複数軸
+# $Platform$ 軸共有と複数軸
 
- $PlatformShort$ データ チャート コンポーネントの同じプロット領域に複数の軸を共有して追加できます。すべての軸に対して、チャートプロット領域に関連して位置を指定できます。広範囲の値 (株価や株取引量など) を持つ多くのデータソースをプロットする場合は、複数の軸を使用するのが一般的なシナリオです。
+ $Platform$ データ チャート コンポーネントの同じプロット領域に複数の軸を共有して追加できます。すべての軸に対して、チャートプロット領域に関連して位置を指定できます。広範囲の値 (株価や株取引量など) を持つ多くのデータソースをプロットする場合は、複数の軸を使用するのが一般的なシナリオです。
 
-## $PlatformShort$ 軸共有と複数軸の例
+## $Platform$ 軸共有と複数軸の例
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing" 
-           alt="$PlatformShort$ 軸共有と複数軸の例" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
+           alt="$Platform$ 軸共有と複数軸の例"
            github-src="charts/data-chart/axis-sharing">
 </code-view>
 

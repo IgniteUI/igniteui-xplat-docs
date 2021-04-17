@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Highlighting | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighing features!
-_keywords: $PlatformShort$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Highlighting | Infragistics
+_description: Infragistics' $Platform$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighing features!
+_keywords: $Platform$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart']
 ---
-# $PlatformShort$ Highlighting
+# $Platform$ Highlighting
 
 This topic provides conceptual information about the highlighting features of the $ProductName$ category chart component.
 
-## $PlatformShort$ Highlighting Example
+## $Platform$ Highlighting Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-highlighting" 
-           alt="$PlatformShort$ Highlighting Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-highlighting"
+           alt="$Platform$ Highlighting Example"
            github-src="charts/category-chart/highlighting">
 </code-view>
 

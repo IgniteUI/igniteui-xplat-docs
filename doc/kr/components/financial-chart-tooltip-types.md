@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 도구 설명 유형
+# $Platform$ 도구 설명 유형
 
 이 항목에서는 `FinancialChart`에서 사용할 수 있는 도구 설명 유형에 대한 개념 정보를 제공합니다.
 

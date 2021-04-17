@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化 | インフラジスティックス
-_description: 複数の視覚的要素のインスタンスを表示する $PlatformShort$ データ チャートを簡単に作成して、複合チャート ビューを作成します。今日から始められます。
-_keywords: data chart, $PlatformShort$ component, $PlatformShort$ chart, $ProductName$, charting component, データ チャート, $PlatformShort$ コンポーネント, $PlatformShort$ チャート, チャート作成コンポーネント
+title: $Platform$ データ チャート | データ可視化 | インフラジスティックス
+_description: 複数の視覚的要素のインスタンスを表示する $Platform$ データ チャートを簡単に作成して、複合チャート ビューを作成します。今日から始められます。
+_keywords: data chart, $Platform$ component, $Platform$ chart, $ProductName$, charting component, データ チャート, $Platform$ コンポーネント, $Platform$ チャート, チャート作成コンポーネント
 mentionedTypes: ['XamDataChart', 'SeriesType']
 _language: ja
 ---
-# $PlatformShort$ データ チャート
+# $Platform$ データ チャート
 
-$PlatformShort$ データ チャートは、軸、マーカー、凡例、および注釈レイヤーのモジュール設計を提供するチャート コンポーネントです。データ チャート機能は、複合チャート ビューを作成するために同じチャート領域でのビジュアル要素の複数のインスタンスを利用できます。
+$Platform$ データ チャートは、軸、マーカー、凡例、および注釈レイヤーのモジュール設計を提供するチャート コンポーネントです。データ チャート機能は、複合チャート ビューを作成するために同じチャート領域でのビジュアル要素の複数のインスタンスを利用できます。
 
-## $PlatformShort$ データ チャートの例
+## $Platform$ データ チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-overview" 
-           alt="$PlatformShort$ データ チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-overview"
+           alt="$Platform$ データ チャートの例"
            github-src="charts/data-chart/chart-overview">
 </code-view>
 
@@ -23,7 +23,7 @@ $PlatformShort$ データ チャートは、軸、マーカー、凡例、およ
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-$PlatformShort$ データ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
+$Platform$ データ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -33,7 +33,7 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。
+$Platform$ データ チャート コンポーネントを作成するには、以下のモジュールが必要です。
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
@@ -115,10 +115,10 @@ ModuleManager.register(
 
 ## サポートされるシリーズ
 
-$PlatformShort$ チャート作成コンポーネントは、[カテゴリ シリーズ](data-chart-type-category-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[極座標シリーズ](data-chart-type-polar-series.md)、[ラジアル シリーズ](data-chart-type-radial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)を含む 65 種類以上のシリーズをサポートします。サポートされている[シリーズ](data-chart-series-types.md)のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
+$Platform$ チャート作成コンポーネントは、[カテゴリ シリーズ](data-chart-type-category-series.md)、[ファイナンシャル シリーズ](data-chart-type-financial-series.md)、[極座標シリーズ](data-chart-type-polar-series.md)、[ラジアル シリーズ](data-chart-type-radial-series.md)、[範囲シリーズ](data-chart-type-range-series.md)、[散布シリーズ](data-chart-type-scatter-bubble-series.md)、[シェイプ シリーズ](data-chart-type-shape-series.md)を含む 65 種類以上のシリーズをサポートします。サポートされている[シリーズ](data-chart-series-types.md)のタイプとそれらの使用方法のリストについては、シリーズのトピックを参照してください。
 
 ## サポートされる軸
-$PlatformShort$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。   これらのタイプの軸の使用方法については、[シリーズ](data-chart-series-types.md)と[軸](data-chart-axis-types.md)のトピックを参照してください。
+$Platform$ データ チャート コンポーネントは、特定の種類のシリーズで使用することを目的としたさまざまな種類の軸をサポートします。以下の表はシリーズ タイプで使用できます。   これらのタイプの軸の使用方法については、[シリーズ](data-chart-series-types.md)と[軸](data-chart-axis-types.md)のトピックを参照してください。
 
 軸タイプ           |サポートされるシリーズ タイプ
 --------------------|-----------------------
@@ -135,7 +135,7 @@ CategoryAngleAxis|すべての[ラジアル シリーズ](data-chart-type-radial
 
 
 ## 使用方法
-$PlatformShort$ データ チャート モジュールがインポートされたので、以下のステップはチャートをデータにバインドすることです。すべてのシリーズを正しく表示するには、特定の数と種類のデータ列が必要です。[データソース](data-chart-data-sources.md) のトピックで、系列の種類ごとにデータソースを見つけることができます。
+$Platform$ データ チャート モジュールがインポートされたので、以下のステップはチャートをデータにバインドすることです。すべてのシリーズを正しく表示するには、特定の数と種類のデータ列が必要です。[データソース](data-chart-data-sources.md) のトピックで、系列の種類ごとにデータソースを見つけることができます。
 
 以下のコード スニペットは、散布 `Bubble` を作成し、それを [SampleScatterStats](data-chart-data-sources-stats.md) データにバインドする方法を示しています。
 
@@ -147,18 +147,18 @@ $PlatformShort$ データ チャート モジュールがインポートされ�
 <div class="igComponent">
 
     @if (DataSource != null)
-    {        
+    {
         <DataChart Height="500px" Width="700px" DataSource="@DataSource">
-            <NumericXAxis Name="xAxis" IsLogarithmic="true"/>            
-            <NumericYAxis Name="yAxis" IsLogarithmic="true"/>            
-            <BubbleSeries Name="series1" 
+            <NumericXAxis Name="xAxis" IsLogarithmic="true"/>
+            <NumericYAxis Name="yAxis" IsLogarithmic="true"/>
+            <BubbleSeries Name="series1"
                 XAxisName="xAxis"
-                YAxisName="yAxis"               
+                YAxisName="yAxis"
                 XMemberPath="Population"
                 YMemberPath="GdpTotal"
                 RadiusMemberPath="GdpPerCapita"
                 DataSource="@DataSource"/>
-        </DataChart>                          
+        </DataChart>
     }
 
 </div>

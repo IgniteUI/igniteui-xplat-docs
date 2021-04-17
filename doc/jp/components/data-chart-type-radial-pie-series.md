@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ラジアル円チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してラジアル円チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, radial pie charts,  $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ラジアル円チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ラジアル円チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してラジアル円チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, radial pie charts,  $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ラジアル円チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','RadialPieSeries']
 _language: ja
 ---
-# $PlatformShort$ ラジアル状円チャート
+# $Platform$ ラジアル状円チャート
 
 $ProductName$ 放射状円チャートはラジアル チャートのグループに属し、チャートの中心からデータポイントの位置に向かって伸びる円スライスを使用します。`RadialPieSeries` は、データ ポイントの複数シリーズを分類する概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。
 
-## $PlatformShort$ ラジアル状円チャートの例
+## $Platform$ ラジアル状円チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-pie-series" 
-           alt="$PlatformShort$ ラジアル状円チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-pie-series"
+           alt="$Platform$ ラジアル状円チャートの例"
            github-src="charts/data-chart/type-radial-pie-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialPieSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

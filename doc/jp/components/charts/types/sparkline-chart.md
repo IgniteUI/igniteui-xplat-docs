@@ -1,37 +1,37 @@
 ---
-title: $PlatformShort$ スパークライン | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ スパークライン チャート コントロールを使用して、グリッド セルやスタンドアロンなどのコンパクトなレイアウトで描画します。$ProductName$ スパークライン チャートの設定可能な要素について説明します。
+title: $Platform$ スパークライン | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ スパークライン チャート コントロールを使用して、グリッド セルやスタンドアロンなどのコンパクトなレイアウトで描画します。$ProductName$ スパークライン チャートの設定可能な要素について説明します。
 _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column, スパークライン, インフラジスティックス, エリア, 列
 mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
 _language: ja
 ---
 
-# $PlatformShort$ スパークライン
+# $Platform$ スパークライン
 
 $ProductName$ スパークライン コンポーネントは、軽量なチャート コントロールです。グリッド セル内などのコンパクトなレイアウト内でのレンダリングを目的としていますが、単独でレンダリングすることもできます。
 
 スパークライン コントロールには、チャートの種類、マーカー、範囲、トレンドライン、不明な値のプロット、ツールチップなど、構成およびカスタマイズが可能ないくつかの視覚的要素とそれに対応する機能があります。
 
-## $PlatformShort$ スパークラインの例
+## $Platform$ スパークラインの例
 
 次の例は、使用可能なすべての異なるスパークライン タイプを示しています。タイプは `DisplayType` プロパティの設定により定義されます。`DisplayType` プロパティが指定されていない場合は、既定では `Line` 型が表示されます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           alt="$PlatformShort$ スパークラインの例"
+           alt="$Platform$ スパークラインの例"
            github-src="charts/sparkline/display-types">
 </code-view>
 
 <div class="divider--half"></div>
 
-このサンプルが気に入りましたか? 完全な $PlatformShort$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+このサンプルが気に入りましたか? 完全な $Platform$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
 
 ## スパークラインの推奨事項
 
 ### スパークライン チャートはプロジェクトに適していますか?
 
-他のチャート コントロールと比較したスパークラインの利点は、グリッド セルなどの限られたスペースに、そのすべてのビジュアル要素を表示できることです。 
+他のチャート コントロールと比較したスパークラインの利点は、グリッド セルなどの限られたスペースに、そのすべてのビジュアル要素を表示できることです。
 
 スパークライン コンポーネントには、最高、最低、最初、最後、そして負の値を示す楕円形のアイコンによってデータ ポイントをマークする機能があります。マーカーは、任意のシェイプ、色、または画像でカスタマイズできます。
 

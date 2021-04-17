@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Map Navigation | Infragistics
-_description: Navigate Infragistics' $PlatformShort$ map by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ map's navigation capabilities!
-_keywords: $PlatformShort$ map, navigations, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Map Navigation | Infragistics
+_description: Navigate Infragistics' $Platform$ map by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ map's navigation capabilities!
+_keywords: $Platform$ map, navigations, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Navigating Map Content
+# $Platform$ Navigating Map Content
 
 Navigation in the `XamGeographicMap` control is enabled by default and it allows zooming and panning of the map content. However, this behavior can be changed using the `Zoomable` property. It is important to know that the map allows only synchronized zooming - scaling the map content with preserved aspect ratio. As result, it is not possible to scale the map content vertically without scaling it also horizontally and vice versa.
 
-## $PlatformShort$ Navigating Map Content Example
+## $Platform$ Navigating Map Content Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation" 
-           alt="$PlatformShort$ Navigating Map Content Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
+           alt="$Platform$ Navigating Map Content Example"
            github-src="maps/geo-map/navigation">
 </code-view>
 

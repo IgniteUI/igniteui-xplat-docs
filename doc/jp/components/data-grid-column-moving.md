@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | 列移動 | インフラジスティックス
+title: $Platform$ データ グリッド | 列移動 | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ データ グリッドは列の移動をサポートし、列の表示方法を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $PlatformShort$ Table, Data Grid, column moving, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列移動, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column moving, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列移動, インフラジスティックス
 mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
 _language: ja
 ---
 
-# $PlatformShort$ グリッド列移動の概要
+# $Platform$ グリッド列移動の概要
 
 $ProductName$ Data Grid は列を移動する機能をサポートしているので、表示されている列の順序に関して列の表示方法を柔軟に選択できます。
 
-## $PlatformShort$ グリッド列移動の例
+## $Platform$ グリッド列移動の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
-           alt="$PlatformShort$ グリッド列移動の例" 
+           alt="$Platform$ グリッド列移動の例"
            github-src="grids/data-grid/column-moving">
 </code-view>
 

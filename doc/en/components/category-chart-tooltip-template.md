@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Tooltip Templates | Infragistics
-_description: Use Infragistics' $PlatformShort$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
-_keywords: $PlatformShort$ charts, category chart, tooltip template, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Tooltip Templates | Infragistics
+_description: Use Infragistics' $Platform$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
+_keywords: $Platform$ charts, category chart, tooltip template, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart']
 ---
-# $PlatformShort$ Tooltip Templates
+# $Platform$ Tooltip Templates
 
-The $PlatformShort$ category chart component provides default tooltips for each type of series. The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
+The $Platform$ category chart component provides default tooltips for each type of series. The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
 
-## $PlatformShort$ Tooltip Templates Example
+## $Platform$ Tooltip Templates Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template" 
-           alt="$PlatformShort$ Tooltip Templates Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
+           alt="$Platform$ Tooltip Templates Example"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 

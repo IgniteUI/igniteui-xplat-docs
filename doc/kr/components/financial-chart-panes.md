@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 금융 차트 창
+# $Platform$ 금융 차트 창
 
 `FinancialChart` 제어에는 금융 데이터를 표시하는 복수의 창이 있습니다.
 

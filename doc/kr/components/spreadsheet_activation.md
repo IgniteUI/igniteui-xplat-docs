@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Spreadsheet | Grid Controls | Activation | Infragistics |
+title: $Platform$ Spreadsheet | Grid Controls | Activation | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Spreadsheet Activation
+# $Platform$ Spreadsheet Activation
 
 The `Spreadsheet` control exposes properties that allow you to determine the currently active cell, pane, and worksheet in the control. This is helpful as it can help you to determine where the user may be navigating or editing in the control.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
            github-src="excel/spreadsheet/overview">
 </code-view>
 

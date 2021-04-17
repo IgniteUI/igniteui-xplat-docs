@@ -1,25 +1,25 @@
 ---
-title: $PlatformShort$ Financial Chart | Panes | Infragistics
-_description: Use Infragistics' $PlatformShort$ financial chart control's panes, such as price pane, indicator pane, volume pane and zoom pane, to display financial data. Check out $ProductName$ financial chart's panes!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, panes, $ProductName$, Infragistics
+title: $Platform$ Financial Chart | Panes | Infragistics
+_description: Use Infragistics' $Platform$ financial chart control's panes, such as price pane, indicator pane, volume pane and zoom pane, to display financial data. Check out $ProductName$ financial chart's panes!
+_keywords: $Platform$ charts, financial chart, stock chart, panes, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart', 'FinancialChartYAxisMode']
 ---
-# $PlatformShort$ Chart Panes
+# $Platform$ Chart Panes
 
-The $PlatformShort$ financial chart component has multiple panes to display financial data.
+The $Platform$ financial chart component has multiple panes to display financial data.
 
-## $PlatformShort$ Chart Panes Example
+## $Platform$ Chart Panes Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
-           alt="$PlatformShort$ Chart Panes Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
+           alt="$Platform$ Chart Panes Example"
            github-src="charts/financial-chart/panes">
 </code-view>
 
 <div class="divider--half"></div>
 
-The following panes are available in the $PlatformShort$ financial chart component:
+The following panes are available in the $Platform$ financial chart component:
 * Price Pane - Renders prices using Line, Candlestick, Bar (OHLC), trendlines and financial overlays.
 * Indicator Pane - Renders all the financial indicators in a separate chart while the `BollingerBands` and `PriceChannel` overlays are rendered in the Price Pane because they share the same values range on Y-Axis.
 * Volume Pane - Renders stocks volumes using Column, Line, and Area chart types below all above panes.

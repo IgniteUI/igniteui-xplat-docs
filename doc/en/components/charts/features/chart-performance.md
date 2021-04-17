@@ -1,57 +1,57 @@
 ---
-title: $PlatformShort$ Chart Performance | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Chart Performance
-_keywords: $PlatformShort$ Charts, Performance, Infragistics
+title: $Platform$ Chart Performance | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Chart Performance
+_keywords: $Platform$ Charts, Performance, Infragistics
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 ---
 
-# $PlatformShort$ Chart Performance
+# $Platform$ Chart Performance
 
-$PlatformShort$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the chart and they should be considered when optimizing performance in your application. This topic will guide you to make $PlatformShort$ charts work as fast as possible in your application.
+$Platform$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the chart and they should be considered when optimizing performance in your application. This topic will guide you to make $Platform$ charts work as fast as possible in your application.
 
-## $PlatformShort$ Chart Performance Examples
+## $Platform$ Chart Performance Examples
 
-The following examples demonstrates two high performance scenarios of $PlatformShort$ charts.
+The following examples demonstrates two high performance scenarios of $Platform$ charts.
 
-## $PlatformShort$ Chart with High-Frequency
+## $Platform$ Chart with High-Frequency
 
-In High-Frequency scenario, the $PlatformShort$ Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `CategoryChart` in High-Frequency scenario.
+In High-Frequency scenario, the $Platform$ Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `CategoryChart` in High-Frequency scenario.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="$PlatformShort$ Chart with High-Frequency" >
+           alt="$Platform$ Chart with High-Frequency" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Chart with High-Volume
+## $Platform$ Chart with High-Volume
 
-In High-Volume scenario, the $PlatformShort$ Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `CategoryChart` in High-Volume scenario.
+In High-Volume scenario, the $Platform$ Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `CategoryChart` in High-Volume scenario.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           alt="$PlatformShort$ Chart with High-Volume" >
+           alt="$Platform$ Chart with High-Volume" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## General Performance Guidelines
 
-This section lists guidelines and chart features that add to the overhead and processing updates in the $PlatformShort$ charts.
+This section lists guidelines and chart features that add to the overhead and processing updates in the $Platform$ charts.
 
 ### Data Size
 
-If you need to plot data sources with large number of data points (e.g. 10,000+), we recommend using $PlatformShort$ `XamDataChart` with one of the following type of series which where designed for specially for that purpose.
+If you need to plot data sources with large number of data points (e.g. 10,000+), we recommend using $Platform$ `XamDataChart` with one of the following type of series which where designed for specially for that purpose.
 
-- [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-high-density-chart) instead of [Category Point Chart](../types/point-chart.md) or [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart)
-- [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-polyline-chart) instead of [Category Line Chart](../types/line-chart.md#$PlatformShort$-line-chart-example) or [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-line-chart)
-- [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-polygon-chart) instead of [Category Area Chart](../types/area-chart.md#$PlatformShort$-area-chart-example) or [Column Chart](../types/column-chart.md#$PlatformShort$-column-chart-example)
+- [Scatter HD Chart](../types/scatter-chart.md#$Platform$-scatter-high-density-chart) instead of [Category Point Chart](../types/point-chart.md) or [Scatter Marker Chart](../types/scatter-chart.md#$Platform$-scatter-marker-chart)
+- [Scatter Polyline Chart](../types/shape-chart.md#$Platform$-scatter-polyline-chart) instead of [Category Line Chart](../types/line-chart.md#$Platform$-line-chart-example) or [Scatter Line Chart](../types/scatter-chart.md#$Platform$-scatter-line-chart)
+- [Scatter Polygon Chart](../types/shape-chart.md#$Platform$-scatter-polygon-chart) instead of [Category Area Chart](../types/area-chart.md#$Platform$-area-chart-example) or [Column Chart](../types/column-chart.md#$Platform$-column-chart-example)
 
 ### Data Structure
 
-Although $PlatformShort$ charts support rendering of multiple data sources by binding array of arrays of data points to `DataSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
+Although $Platform$ charts support rendering of multiple data sources by binding array of arrays of data points to `DataSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();
@@ -129,7 +129,7 @@ export class MultiDataSources {
 
 ### Data Filtering
 
-$PlatformShort$ `CategoryChart` and the `FinancialChart` controls have built-in data adapter that analyzes your data and generates chart series for you. However, it works faster if you use `IncludedProperties` and `ExcludedProperties` to filter only those data columns that you actually want to render. For example,
+$Platform$ `CategoryChart` and the `FinancialChart` controls have built-in data adapter that analyzes your data and generates chart series for you. However, it works faster if you use `IncludedProperties` and `ExcludedProperties` to filter only those data columns that you actually want to render. For example,
 
 
 ```razor
@@ -147,23 +147,23 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### Chart Types
 
-Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $PlatformShort$ `CategoryChart` or the `FinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $PlatformShort$ `XamDataChart` control.
+Simpler chart types such as [Line Chart](../types/line-chart.md) have faster performance than using [Spline Chart](../types/spline-chart.md) because of the complex interpolation of spline lines between data points. Therefore, you should use `ChartType` property of $Platform$ `CategoryChart` or the `FinancialChart` control to select type of chart that renders faster. Alternatively, you can change a type of series to a faster series in $Platform$ `XamDataChart` control.
 
 The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
 
 Chart Group     | Chart Type
 ----------------|---------------------------------
-Pie Charts       | - [Pie Chart](../types/pie-chart.md) <br> - [Donut Chart](../types/donut-chart.md) <br> - [Radial Pie Chart](../types/radial-chart.md#$PlatformShort$-radial-pie-chart) <br>
-Line Charts      | - [Category Line Chart](../types/line-chart.md#$PlatformShort$-line-chart-example) <br> - [Category Spline Chart](../types/spline-chart.md#$PlatformShort$-spline-chart-example) <br> - [Step Line Chart](../types/step-chart.md#$PlatformShort$-step-line-chart) <br> - [Radial Line Chart](../types/radial-chart.md#$PlatformShort$-radial-line-chart) <br> - [Polar Line Chart](../types/polar-chart.md#$PlatformShort$-polar-line-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-line-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-polyline-chart) (\*)  <br> - [Scatter Contour Chart](../types/scatter-chart.md#$PlatformShort$-scatter-contour-chart) <br> - [Stacked Line Chart](../types/stacked-chart.md#$PlatformShort$-stacked-line-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-line-chart) <br>
-Area Charts      | - [Category Area Chart](../types/area-chart.md#$PlatformShort$-area-chart-example) <br> - [Step Area Chart](../types/step-chart.md#$PlatformShort$-step-area-chart) <br> - [Range Area Chart](../types/area-chart.md#$PlatformShort$-range-area-chart) <br> - [Radial Area Chart](../types/radial-chart.md#$PlatformShort$-radial-area-chart) <br> - [Polar Area Chart](../types/polar-chart.md#$PlatformShort$-polar-area-chart) <br> - [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-polygon-chart) (\*) <br> - [Scatter Area Chart](../types/scatter-chart.md#$PlatformShort$-scatter-area-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#$PlatformShort$-stacked-area-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-area-chart) <br>
-Column Charts    | - [Column Chart](../types/column-chart.md#$PlatformShort$-column-chart-example) <br> - [Bar Chart](../types/bar-chart.md#$PlatformShort$-bar-chart-example) <br> - [Waterfall Chart](../types/column-chart.md#$PlatformShort$-waterfall-chart) <br> - [Range Column Chart](../types/column-chart.md#$PlatformShort$-range-column-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$PlatformShort$-radial-column-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#$PlatformShort$-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#$PlatformShort$-stacked-bar-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-bar-chart)
-Spline Charts    | - [Category Spline Chart](../types/spline-chart.md#$PlatformShort$-spline-chart-example) <br> - [Polar Spline Chart](../types/polar-chart.md#$PlatformShort$-polar-spline-chart) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$PlatformShort$-scatter-spline-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#$PlatformShort$-stacked-spline-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-spline-chart) <br>
-Point Charts     | - [Category Point Chart](../types/point-chart.md) <br> - [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-high-density-chart)  <br> - [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Polar Marker Chart](../types/polar-chart.md#$PlatformShort$-polar-Marker-chart) <br>
+Pie Charts       | - [Pie Chart](../types/pie-chart.md) <br> - [Donut Chart](../types/donut-chart.md) <br> - [Radial Pie Chart](../types/radial-chart.md#$Platform$-radial-pie-chart) <br>
+Line Charts      | - [Category Line Chart](../types/line-chart.md#$Platform$-line-chart-example) <br> - [Category Spline Chart](../types/spline-chart.md#$Platform$-spline-chart-example) <br> - [Step Line Chart](../types/step-chart.md#$Platform$-step-line-chart) <br> - [Radial Line Chart](../types/radial-chart.md#$Platform$-radial-line-chart) <br> - [Polar Line Chart](../types/polar-chart.md#$Platform$-polar-line-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#$Platform$-scatter-line-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#$Platform$-scatter-polyline-chart) (\*)  <br> - [Scatter Contour Chart](../types/scatter-chart.md#$Platform$-scatter-contour-chart) <br> - [Stacked Line Chart](../types/stacked-chart.md#$Platform$-stacked-line-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#$Platform$-stacked-100-line-chart) <br>
+Area Charts      | - [Category Area Chart](../types/area-chart.md#$Platform$-area-chart-example) <br> - [Step Area Chart](../types/step-chart.md#$Platform$-step-area-chart) <br> - [Range Area Chart](../types/area-chart.md#$Platform$-range-area-chart) <br> - [Radial Area Chart](../types/radial-chart.md#$Platform$-radial-area-chart) <br> - [Polar Area Chart](../types/polar-chart.md#$Platform$-polar-area-chart) <br> - [Scatter Polygon Chart](../types/shape-chart.md#$Platform$-scatter-polygon-chart) (\*) <br> - [Scatter Area Chart](../types/scatter-chart.md#$Platform$-scatter-area-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#$Platform$-stacked-area-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#$Platform$-stacked-100-area-chart) <br>
+Column Charts    | - [Column Chart](../types/column-chart.md#$Platform$-column-chart-example) <br> - [Bar Chart](../types/bar-chart.md#$Platform$-bar-chart-example) <br> - [Waterfall Chart](../types/column-chart.md#$Platform$-waterfall-chart) <br> - [Range Column Chart](../types/column-chart.md#$Platform$-range-column-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$Platform$-radial-column-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#$Platform$-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#$Platform$-stacked-bar-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#$Platform$-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#$Platform$-stacked-100-bar-chart)
+Spline Charts    | - [Category Spline Chart](../types/spline-chart.md#$Platform$-spline-chart-example) <br> - [Polar Spline Chart](../types/polar-chart.md#$Platform$-polar-spline-chart) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$Platform$-scatter-spline-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#$Platform$-stacked-spline-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#$Platform$-stacked-100-spline-chart) <br>
+Point Charts     | - [Category Point Chart](../types/point-chart.md) <br> - [Scatter HD Chart](../types/scatter-chart.md#$Platform$-scatter-high-density-chart)  <br> - [Scatter Marker Chart](../types/scatter-chart.md#$Platform$-scatter-marker-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Polar Marker Chart](../types/polar-chart.md#$Platform$-polar-Marker-chart) <br>
 Financial Charts | - [Stock Chart in Line Mode](../types/stock-chart.md) <br> - [Stock Chart in Column Mode](../types/stock-chart.md) <br> - [Stock Chart in Bar Mode](../types/stock-chart.md) <br> - [Stock Chart in Candle Mode](../types/stock-chart.md) <br> - [Stock Chart with Overlays](../types/stock-chart.md) <br> - [Stock Chart with Zoom Pane](../types/stock-chart.md) <br> - [Stock Chart with Volume Pane](../types/stock-chart.md#Volume-Pane) <br> - [Stock Chart with Indicator Pane](../types/stock-chart.md#Indicator-Pane) <br>
-Scatter Charts   | - [Scatter HD Chart](../types/scatter-chart.md#$PlatformShort$-scatter-high-density-chart) <br> - [Scatter Marker Chart](../types/scatter-chart.md#$PlatformShort$-scatter-marker-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#$PlatformShort$-scatter-line-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$PlatformShort$-scatter-spline-chart) <br> - [Scatter Area Chart](../types/scatter-chart.md#$PlatformShort$-scatter-area-chart) <br> - [Scatter Contour Chart](../types/scatter-chart.md#$PlatformShort$-scatter-contour-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#$PlatformShort$-scatter-polyline-chart) (\*) <br> - [Scatter Polygon Chart](../types/shape-chart.md#$PlatformShort$-scatter-polygon-chart) (\*) <br>
-Radial Charts    | - [Radial Line Chart](../types/radial-chart.md#$PlatformShort$-radial-line-chart) <br> - [Radial Area Chart](../types/radial-chart.md#$PlatformShort$-radial-area-chart) <br> - [Radial Pie Chart](../types/radial-chart.md#$PlatformShort$-radial-pie-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$PlatformShort$-radial-column-chart) <br>
-Polar Charts     | - [Polar Marker Chart](../types/polar-chart.md#$PlatformShort$-polar-Marker-chart) <br> - [Polar Line Chart](../types/polar-chart.md#$PlatformShort$-polar-line-chart) <br> - [Polar Area Chart](../types/polar-chart.md#$PlatformShort$-polar-area-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#$PlatformShort$-polar-spline-chart) <br> - [Polar Spline Area Chart](../types/polar-chart.md#$PlatformShort$-polar-Spline-area-chart) <br>
-Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#$PlatformShort$-stacked-line-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#$PlatformShort$-stacked-area-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#$PlatformShort$-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#$PlatformShort$-stacked-bar-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#$PlatformShort$-stacked-spline-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-line-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-area-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-bar-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#$PlatformShort$-stacked-100-spline-chart) <br>
+Scatter Charts   | - [Scatter HD Chart](../types/scatter-chart.md#$Platform$-scatter-high-density-chart) <br> - [Scatter Marker Chart](../types/scatter-chart.md#$Platform$-scatter-marker-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#$Platform$-scatter-line-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Scatter Spline Chart](../types/scatter-chart.md#$Platform$-scatter-spline-chart) <br> - [Scatter Area Chart](../types/scatter-chart.md#$Platform$-scatter-area-chart) <br> - [Scatter Contour Chart](../types/scatter-chart.md#$Platform$-scatter-contour-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#$Platform$-scatter-polyline-chart) (\*) <br> - [Scatter Polygon Chart](../types/shape-chart.md#$Platform$-scatter-polygon-chart) (\*) <br>
+Radial Charts    | - [Radial Line Chart](../types/radial-chart.md#$Platform$-radial-line-chart) <br> - [Radial Area Chart](../types/radial-chart.md#$Platform$-radial-area-chart) <br> - [Radial Pie Chart](../types/radial-chart.md#$Platform$-radial-pie-chart) <br> - [Radial Column Chart](../types/radial-chart.md#$Platform$-radial-column-chart) <br>
+Polar Charts     | - [Polar Marker Chart](../types/polar-chart.md#$Platform$-polar-Marker-chart) <br> - [Polar Line Chart](../types/polar-chart.md#$Platform$-polar-line-chart) <br> - [Polar Area Chart](../types/polar-chart.md#$Platform$-polar-area-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#$Platform$-polar-spline-chart) <br> - [Polar Spline Area Chart](../types/polar-chart.md#$Platform$-polar-Spline-area-chart) <br>
+Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#$Platform$-stacked-line-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#$Platform$-stacked-area-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#$Platform$-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#$Platform$-stacked-bar-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#$Platform$-stacked-spline-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#$Platform$-stacked-100-line-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#$Platform$-stacked-100-area-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#$Platform$-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#$Platform$-stacked-100-bar-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#$Platform$-stacked-100-spline-chart) <br>
 
 
 \* Note that the [Scatter Polygon Chart](../types/shape-chart.md) and [Scatter Polyline Chart](../types/shape-chart.md) have better performance than rest of charts if you have a lot of data sources bound to the chart. For more info, see [Series Collection](#series-collection) section. Otherwise, other chart types are faster.
@@ -462,7 +462,7 @@ Adding too many axis to the `Axes` collection of the `XamDataChart` control will
 
 ### Series Collection
 
-Also, adding a lot of series to the `Series` collection of the $PlatformShort$ `XamDataChart` control will add overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 10 series in the Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
+Also, adding a lot of series to the `Series` collection of the $Platform$ `XamDataChart` control will add overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 10 series in the Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
 
 Slower Performance Scenario | Faster Scenario with Conditional Styling
 ----------------------------|----------------------------------------

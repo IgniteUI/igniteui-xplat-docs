@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Axis Options | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to plot data using different axis types such as numeric, category and date time axis. Learn about our $ProductName$ graph axis!
-_keywords: $PlatformShort$ charts, category chart, Axis Labels, Axis Range, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Axis Options | Infragistics
+_description: Use Infragistics' $Platform$ charts control to plot data using different axis types such as numeric, category and date time axis. Learn about our $ProductName$ graph axis!
+_keywords: $Platform$ charts, category chart, Axis Labels, Axis Range, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart']
 ---
-# $PlatformShort$ Axis Options
+# $Platform$ Axis Options
 
 In the $ProductName$ category chart component, an Axis provides base properties for specifying appearance of axis main lines, tickmarks, titles, and axis labels.
 
-## $PlatformShort$ Axis Options Example
+## $Platform$ Axis Options Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options" 
-           alt="$PlatformShort$ Axis Options Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options"
+           alt="$Platform$ Axis Options Example"
            github-src="charts/category-chart/axis-options">
 </code-view>
 

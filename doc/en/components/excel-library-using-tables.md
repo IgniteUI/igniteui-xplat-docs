@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Excel Library| Using Tables | Infragistics
-_description: Use Infragistics' $PlatformShort$ excel library's table functionality to format your data in rows and columns. View $ProductName$ excel tutorials for more information!
+title: $Platform$ Excel Library| Using Tables | Infragistics
+_description: Use Infragistics' $Platform$ excel library's table functionality to format your data in rows and columns. View $ProductName$ excel tutorials for more information!
 _keywords: Excel library, tables, $ProductName$, Infragistics
 mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 ---
-# $PlatformShort$ Using Tables
+# $Platform$ Using Tables
 
-The Infragistics $PlatformShort$ Excel Engine's `WorksheetTable` functionality allows you to format your data in rows and columns The data in a worksheet table can be managed independently from the data in the other rows and columns in a `Worksheet`.
-<!--## $PlatformShort$ Using Tables Example
+The Infragistics $Platform$ Excel Engine's `WorksheetTable` functionality allows you to format your data in rows and columns The data in a worksheet table can be managed independently from the data in the other rows and columns in a `Worksheet`.
+<!--## $Platform$ Using Tables Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables" 
-           alt="$PlatformShort$ Using Tables Example" >
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"
+           alt="$Platform$ Using Tables Example" >
 </code-view>
 
 -->
@@ -22,7 +22,7 @@ The Infragistics $PlatformShort$ Excel Engine's `WorksheetTable` functionality a
 <div class="divider--half"></div>
 
 ## Adding a Table to a Worksheet
-Worksheet tables in the Infragistics $PlatformShort$ Excel Engine are represented by the `WorksheetTable` object and are added in the worksheet's `Tables` collection. In order to add a table, you need to invoke the `Add` method on this collection. In this method, you can specify the region in which you would like to add a table, whether or not the table should contain headers, and optionally, specify the table's style as a `WorksheetTableStyle` object.
+Worksheet tables in the Infragistics $Platform$ Excel Engine are represented by the `WorksheetTable` object and are added in the worksheet's `Tables` collection. In order to add a table, you need to invoke the `Add` method on this collection. In this method, you can specify the region in which you would like to add a table, whether or not the table should contain headers, and optionally, specify the table's style as a `WorksheetTableStyle` object.
 
 The following code demonstrates how you can add a table with headers to a `Worksheet` spanning a region of A1 to G10, where A1 to G1 will be the column headers:
 

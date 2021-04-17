@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Infragistics | Axis Annotations
+title: $Platform$ Data Chart | Data Visualization Tools | Infragistics | Axis Annotations
 _description: Create a data chart that displays multiple instances of visual elements in the same plot area in order to create composite chart views.
 _keywords: data chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Axis Annotations
+# $Platform$ Axis Annotations
 
 In the $ProductName$ data chart component, you are able to add annotations to your axes to show particular values at different points on that axis. This can help you to visualize things such as final series values, overlay values, and values corresponding to crosshairs in the chart.
 
 ## Demo
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations"
            github-src="charts/data-chart/axis-annotations">
 </code-view>
 

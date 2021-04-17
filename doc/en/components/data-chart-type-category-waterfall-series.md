@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Waterfall Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to waterfall charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, waterfall chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Waterfall Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to waterfall charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, waterfall chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Waterfall Chart
+# $Platform$ Waterfall Chart
 
-The $ProductName$ waterfall chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value. Values are represented on the y-axis and categories are displayed on the x-axis. The $PlatformShort$ `WaterfallSeries` is similar in appearance to the $PlatformShort$ `RangeColumnSeries` but it requires only one numeric data column rather than two columns for each data point.
+The $ProductName$ waterfall chart belongs to a group of category charts and it is rendered using a collection of vertical columns that show the difference between consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value. Values are represented on the y-axis and categories are displayed on the x-axis. The $Platform$ `WaterfallSeries` is similar in appearance to the $Platform$ `RangeColumnSeries` but it requires only one numeric data column rather than two columns for each data point.
 
-## $PlatformShort$ Waterfall Chart Example
+## $Platform$ Waterfall Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series" 
-           alt="$PlatformShort$ Waterfall Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series"
+           alt="$Platform$ Waterfall Chart Example"
            github-src="charts/data-chart/type-category-waterfall-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `WaterfallSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `WaterfallSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

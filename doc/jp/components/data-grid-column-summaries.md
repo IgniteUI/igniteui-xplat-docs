@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | 列集計 | インフラジスティックス
+title: $Platform$ データ グリッド | 列集計 | インフラジスティックス
 _description: Infragistics のグリッド コンポーネントの列集計機能を使用して、件数、最大値、最小値などの集計データを表示します。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, column, summaries, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列, 集計, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column, summaries, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, 集計, インフラジスティックス
 mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']
 _language: ja
 ---
 
-# $PlatformShort$ 列集計
+# $Platform$ 列集計
 
 $ProductName$ Data Table / Data Grid は、列集計をサポートしています。エンドユーザーは、グリッドに表示されるデータ量が多い場合などでデータ集計の表示を必要とすることがあります。エンドユーザーは、特定の列のデータから追加情報を取得することもできます。これを実現するには集計が役立ちます。集計を有効にするには、`SummaryScope` プロパティを設定します。
 
-## $PlatformShort$ 列集計の例
+## $Platform$ 列集計の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-summaries" 
-           alt="$PlatformShort$ 列集計の例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-summaries"
+           alt="$Platform$ 列集計の例"
            github-src="grids/data-grid/column-summaries">
 </code-view>
 
@@ -174,12 +174,12 @@ connectedCallback() {
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowTop"
     AutoGenerateColumns="false"
     IsGroupCollapsable="true"
-    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Combined"                      
-    DataSource="DataSource">    
+    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Combined"
+    DataSource="DataSource">
     <TextColumn Field="ProductName" Width="130" HeaderText="Product" />
     <NumericColumn Field="BundlePrice" PositivePrefix="$" Width="120" ShowGroupingSeparator="true" HeaderText="Price" />
     <NumericColumn Field="OrderItems" Width="140" HeaderText="Orders" />
-    <NumericColumn Field="OrderValue" Width="160" ShowGroupingSeparator="true" HeaderText="Order Totals" PositivePrefix="$" />               
+    <NumericColumn Field="OrderValue" Width="160" ShowGroupingSeparator="true" HeaderText="Order Totals" PositivePrefix="$" />
     <TextColumn Field="Country" Width="170" HeaderText="Ship Country" />
 </DataGrid>
 
@@ -231,8 +231,8 @@ connectedCallback() {
         this.DataGridRef.SummaryDescriptions.Add(productCount);
         this.DataGridRef.SummaryDescriptions.Add(priceMin);
         this.DataGridRef.SummaryDescriptions.Add(priceMax);
-        this.DataGridRef.SummaryDescriptions.Add(orderSum);        
-        this.DataGridRef.SummaryDescriptions.Add(orderValueAvg);                
+        this.DataGridRef.SummaryDescriptions.Add(orderSum);
+        this.DataGridRef.SummaryDescriptions.Add(orderValueAvg);
     }
 }
 ```

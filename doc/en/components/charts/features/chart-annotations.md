@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ Chart Annotations | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Chart Annotations
-_keywords: $PlatformShort$ Charts, Annotations, Infragistics
+title: $Platform$ Chart Annotations | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Chart Annotations
+_keywords: $Platform$ Charts, Annotations, Infragistics
 mentionedTypes: ["CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 ---
 
-# $PlatformShort$ Chart Annotations
+# $Platform$ Chart Annotations
 
-The $PlatformShort$ chart's hover interactions and annotations are implemented through hover interaction layers, which are series that are added to the series collection. These layers are dependent on the cursor position. Each of these annotation layers provides a different hover interaction that may be used individually or combined with others to provide powerful hover interactions.
+The $Platform$ chart's hover interactions and annotations are implemented through hover interaction layers, which are series that are added to the series collection. These layers are dependent on the cursor position. Each of these annotation layers provides a different hover interaction that may be used individually or combined with others to provide powerful hover interactions.
 
-## $PlatformShort$ Annotations Example
+## $Platform$ Annotations Example
 
-The following example demonstrates the annotation layers that are available on the $PlatformShort$ chart. Click on the checkboxes to turn each layer on and off.
+The following example demonstrates the annotation layers that are available on the $Platform$ chart. Click on the checkboxes to turn each layer on and off.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="$PlatformShort$ Annotations Example"
+           alt="$Platform$ Annotations Example"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
 <div class="divider--half"></div>
 
-Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
+Like this sample? Get access to our complete $Platform$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
 
-## $PlatformShort$ Crosshair Layer
+## $Platform$ Crosshair Layer
 
 The `CrosshairLayer` renders as crossing lines intersecting at the actual value of every series that they are configured to target with each series rendering a separate set of lines.
 
@@ -44,13 +44,13 @@ The following example shows how to configure the crosshair layer but targeting a
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-crosshair-layer-styling"
-           alt="$PlatformShort$ Crosshair Layer Styling"
+           alt="$Platform$ Crosshair Layer Styling"
            github-src="charts/data-chart/crosshair-layer-styling">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Final Value Layer
+## $Platform$ Final Value Layer
 
 The `FinalValueLayer` of the `XamDataChart` control provides a quick view along the axis of the ending value displayed in a series.
 
@@ -67,7 +67,7 @@ The following example demonstrates how to style the final value layer annotation
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-final-value-layer-styling"
-           alt="$PlatformShort$ Final Value Layer Styling"
+           alt="$Platform$ Final Value Layer Styling"
            github-src="charts/data-chart/final-value-layer-styling">
 </code-view>
 
@@ -93,7 +93,7 @@ The following example demonstrates how to style the final value layer annotation
 ```
 
 
-## $PlatformShort$ Callout Layer
+## $Platform$ Callout Layer
 
 The `CalloutLayer` displays annotations from existing or new data on the chart control. The annotations appear next to the given data values in the data source.
 
@@ -114,7 +114,7 @@ The following example demonstrates how to style the callout layer annotations by
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-callout-layer-styling"
-           alt="$PlatformShort$ Callout Layer Styling"
+           alt="$Platform$ Callout Layer Styling"
            github-src="charts/data-chart/callout-layer-styling">
 </code-view>
 

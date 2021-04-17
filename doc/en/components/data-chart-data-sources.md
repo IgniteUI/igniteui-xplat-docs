@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create many different chart types such as column, area, bar, pie, doughnut and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, data sources
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create many different chart types such as column, area, bar, pie, doughnut and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics, data sources
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Data Sources
+# $Platform$ Data Sources
 
-In the $PlatformShort$ data chart component, all series require specific number and type of data columns to render correctly. This topic provides examples of how to implement data source for each group of series.
+In the $Platform$ data chart component, all series require specific number and type of data columns to render correctly. This topic provides examples of how to implement data source for each group of series.
 
 - [SampleCategoryData](data-chart-data-sources-category.md) for [Category Series](data-chart-type-category-series.md)
 - [SampleFinancialData](data-chart-data-sources-financial.md) for [Financial Series](data-chart-type-financial-series.md)

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Spline Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create spline area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, spine area chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Spline Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create spline area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, spine area chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Spline Area Chart
+# $Platform$ Spline Area Chart
 
-The $ProductName$ spline area chart belongs to a group of category charts and it is rendered using a collection of points connected by smooth curves of spline with the area below the spline filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `SplineAreaSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $PlatformShort$ spline area chart is identical to the $PlatformShort$ area chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
+The $ProductName$ spline area chart belongs to a group of category charts and it is rendered using a collection of points connected by smooth curves of spline with the area below the spline filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `SplineAreaSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $Platform$ spline area chart is identical to the $Platform$ area chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
 
-## $PlatformShort$ Spline Area Chart Example
+## $Platform$ Spline Area Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-area-series" 
-           alt="$PlatformShort$ Spline Area Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-area-series"
+           alt="$Platform$ Spline Area Chart Example"
            github-src="charts/data-chart/type-category-spline-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `SplineAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `SplineAreaSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

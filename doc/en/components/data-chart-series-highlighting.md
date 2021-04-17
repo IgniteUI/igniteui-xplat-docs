@@ -1,29 +1,29 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools |  Highlighting | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighing features!
-_keywords: $PlatformShort$ charts, data chart, highlighting, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools |  Highlighting | Infragistics
+_description: Infragistics' $Platform$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighing features!
+_keywords: $Platform$ charts, data chart, highlighting, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Highlighting
+# $Platform$ Highlighting
 
-The $PlatformShort$ data chart component allows you to highlight the plotted series in the data chart to visualize the item or series that the mouse is hovering over or by using the highlighting layers.
+The $Platform$ data chart component allows you to highlight the plotted series in the data chart to visualize the item or series that the mouse is hovering over or by using the highlighting layers.
 
 > [!NOTE]
 > Please note that highlighting is not currently supported for stacked series.
 
-## $PlatformShort$ Highlighting Example
+## $Platform$ Highlighting Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting" 
-           alt="$PlatformShort$ Highlighting Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting"
+           alt="$Platform$ Highlighting Example"
            github-src="charts/data-chart/series-highlighting">
 </code-view>
 
 <div class="divider--half"></div>
 
-In order to enable highlighting in the $PlatformShort$ data chart component, you need to import and register the interactivity module. This can be done using the following code:
+In order to enable highlighting in the $Platform$ data chart component, you need to import and register the interactivity module. This can be done using the following code:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -60,7 +60,7 @@ IgcDataChartAnnotationModule.register();
 
 ## Highlighting Series Visuals
 
-The series highlighting feature of the $PlatformShort$ data chart component allows you to either highlight single items or entire series. For example, if you are using a line series, the highlighting will highlight the entire shape of the line as it is all one single shape. However, highlights can be applied to each single item in a series such as a column series.
+The series highlighting feature of the $Platform$ data chart component allows you to either highlight single items or entire series. For example, if you are using a line series, the highlighting will highlight the entire shape of the line as it is all one single shape. However, highlights can be applied to each single item in a series such as a column series.
 
 The following code snippet demonstrates how to enable highlighting on series in the data chart:
 
@@ -69,17 +69,17 @@ The following code snippet demonstrates how to enable highlighting on series in 
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" />    
+        IsHighlightingEnabled="true" />
 </DataChart>
 ```
 
@@ -165,7 +165,7 @@ series2.yAxis = yAxis;
 
 ## Highlight Series Categories
 
-The category highlight layer targets a category axis, or all category axes in the $PlatformShort$ data chart component. If the axis contains any series that are aligned between major gridlines of the axis, for example, a column series, this will render a shape that fills the current category.
+The category highlight layer targets a category axis, or all category axes in the $Platform$ data chart component. If the axis contains any series that are aligned between major gridlines of the axis, for example, a column series, this will render a shape that fills the current category.
 
 For other series, such as a line series, it will render a band with an adjustable thickness at the closest gridline to the pointer position. In this situation, if the `UseInterpolation` property is enabled, this will cause the x position to become fixed to the x-position of the pointer.
 
@@ -178,18 +178,18 @@ The following is a code snippet demonstrating how to add a category highlight la
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" /> 
-    <CategoryHighlightLayer />   
+        IsHighlightingEnabled="true" />
+    <CategoryHighlightLayer />
 </DataChart>
 ```
 
@@ -288,25 +288,25 @@ The category item highlight layer highlights items in series using category axis
 
 The default highlight depends on the type of series. For example, the highlight for a column series and a line series is different. For column series it is a banded shape whereas for line series it is a marker. You can override the default highlight by setting the `HighlightType` property.
 
-The following code snippet demonstrates how you can add a category item highlight layer to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how you can add a category item highlight layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" /> 
-    <CategoryItemHighlightLayer />   
+        IsHighlightingEnabled="true" />
+    <CategoryItemHighlightLayer />
 </DataChart>
 ```
 

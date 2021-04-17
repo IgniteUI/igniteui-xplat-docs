@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter high density series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Using Scatter High Density Series
+# $Platform$ Using Scatter High Density Series
 
-Use the $PlatformShort$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
+Use the $Platform$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
-## $PlatformShort$ Using Scatter High Density Series Example
+## $Platform$ Using Scatter High Density Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series" 
-           alt="$PlatformShort$ Using Scatter High Density Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
+           alt="$Platform$ Using Scatter High Density Series Example"
            github-src="maps/geo-map/type-scatter-density-series">
 </code-view>
 

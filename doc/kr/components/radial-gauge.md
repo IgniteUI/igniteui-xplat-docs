@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Radial Gauge Component - Native $PlatformShort$ | $ProductName$
+title: $Platform$ Radial Gauge Component - Native $Platform$ | $ProductName$
 _description: The Radial Gauge component in Ignite UI for Angular provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Data Grid, $PlatformShort$ Chart Control, $PlatformShort$ Grid Component, $PlatformShort$ radial gauge component, $PlatformShort$ radial gauge
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Grid, $Platform$ Chart Control, $Platform$ Grid Component, $Platform$ radial gauge component, $Platform$ radial gauge
 _language: kr
 ---
-# $PlatformShort$ Radial Gauge
+# $Platform$ Radial Gauge
 
 The Radial Gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale.
 
@@ -15,9 +15,9 @@ The radial gauge component is a data visualization tool capable of displaying a 
 The following sample demonstrates how setting multiple properties on the same gauge can transform it to completely different gauge.
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 
@@ -208,9 +208,9 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
            github-src="gauges/radial-gauge/backing">
 </code-view>
 
@@ -265,9 +265,9 @@ The scale is visual element that highlights full range of values in the gauge wh
 ```
 
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
            github-src="gauges/radial-gauge/scale">
 </code-view>
 
@@ -309,9 +309,9 @@ The gauge labels are visual elements displaying numeric values at a specified in
   </igc-radial-gauge>
 ```
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
            github-src="gauges/radial-gauge/labels">
 </code-view>
 
@@ -368,9 +368,9 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
   </igc-radial-gauge>
 ```
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
            github-src="gauges/radial-gauge/tickmarks">
 </code-view>
 
@@ -431,9 +431,9 @@ A range highlights a set of continuous values bound by a specified `minimumValue
   </igc-radial-gauge>
 ```
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
            github-src="gauges/radial-gauge/ranges">
 </code-view>
 
@@ -506,9 +506,9 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
   </igc-radial-gauge>
 ```
 
-<code-view style="height: 320px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"  
+<code-view style="height: 320px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
            github-src="gauges/radial-gauge/needle">
 </code-view>
 

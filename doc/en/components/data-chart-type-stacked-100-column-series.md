@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Stacked 100 Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked 100 column charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked 100 column charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Stacked 100 Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked 100 column charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked 100 column charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','Stacked100ColumnSeries']
 namespace: Infragistics.Controls.Charts
 ---
-# $PlatformShort$ Stacked 100 Column Chart
+# $Platform$ Stacked 100 Column Chart
 
-The $ProductName$ stacked 100 column chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked on top of each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the y-axis, and all negative values are grouped on the negative side of the y-axis. The $PlatformShort$ stacked 100 column chart is identical to the $PlatformShort$ stacked column chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point. In addition, the `Stacked100ColumnSeries` uses the same concepts of data plotting as `Stacked100BarSeries` but data points are stacked along vertical line (y-axis) rather than along horizontal line (x-axis). In other words, the stacked 100 column chart is rendered like the stacked 100 bar chart but with 90 degrees counter-clockwise rotation.
+The $ProductName$ stacked 100 column chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked on top of each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the y-axis, and all negative values are grouped on the negative side of the y-axis. The $Platform$ stacked 100 column chart is identical to the $Platform$ stacked column chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point. In addition, the `Stacked100ColumnSeries` uses the same concepts of data plotting as `Stacked100BarSeries` but data points are stacked along vertical line (y-axis) rather than along horizontal line (x-axis). In other words, the stacked 100 column chart is rendered like the stacked 100 bar chart but with 90 degrees counter-clockwise rotation.
 
-## $PlatformShort$ Stacked 100 Column Chart Example
+## $Platform$ Stacked 100 Column Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series" 
-           alt="$PlatformShort$ Stacked 100 Column Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series"
+           alt="$Platform$ Stacked 100 Column Chart Example"
            github-src="charts/data-chart/type-stacked-100-column-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ stacked 100 column chart belongs to a group of category charts
 The `Stacked100ColumnSeries` has its own `Series` collection in which you can place the `StackedFragmentSeries` elements. These fragments are what make up the actual rendering of the chart and are the elements that accept the `ValueMemberPath`.
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `Stacked100ColumnSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `Stacked100ColumnSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -115,8 +115,8 @@ This code demonstrates how to create an instance of the $ProductName$ data chart
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <Stacked100ColumnSeries 
-      XAxisName="xAxis" 
+    <Stacked100ColumnSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

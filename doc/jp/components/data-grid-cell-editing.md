@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
-_description: セルおよび行の編集機能をサポートするインフラジスティックスの $PlatformShort$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $PlatformShort$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $PlatformShort$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
+title: $Platform$ データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
+_description: セルおよび行の編集機能をサポートするインフラジスティックスの $Platform$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
+_keywords: $Platform$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $Platform$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 ---
-# $PlatformShort$ Grid 編集
+# $Platform$ Grid 編集
 
 $ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
 
-## $PlatformShort$ Grid 編集の例
+## $Platform$ Grid 編集の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-editing" 
-           alt="$PlatformShort$ Grid 編集の例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-editing"
+           alt="$Platform$ Grid 編集の例"
            github-src="grids/data-grid/cell-editing">
 </code-view>
 
@@ -22,18 +22,18 @@ $ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編�
 
 ## 概要
 
-$PlatformShort$ データ グリッドの編集は、$PlatformShort$ グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
+$Platform$ データ グリッドの編集は、$Platform$ グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
 
 - `None`: 編集は有効ではありません。
 - `Cell`: セルが編集モードに入り、編集モードの終了時に値をコミットできるようにします。
 - `CellBatch`: セルが編集モードに入りますが、変更はコミットされるまで後でキャッシュされます。
 - `Row`: 行が編集モードに入り、編集モードの終了時に値をコミットできるようにします。
 
-`CellBatch` に設定した場合、変更をコミットするにはグリッドから `commitEdits` メソッドを実行する必要があります。グリッドは、コミットされるまでセルを斜体で表示し、変更をデータソースにプッシュするタイミングを制御します。   
+`CellBatch` に設定した場合、変更をコミットするにはグリッドから `commitEdits` メソッドを実行する必要があります。グリッドは、コミットされるまでセルを斜体で表示し、変更をデータソースにプッシュするタイミングを制御します。
 
 さらに、`onCellValueChanging` イベントをフックし、コミットされる前に新しい値を調べることでエラー処理を実行できます。グリッドはエラー メッセージを出力できる `setEditError` メソッドを公開します。これにより、有効な値が入力されるまで、セルを編集モードに維持します。それ以外の場合は、グリッドの `rejectEdit` メソッドを実行して無効な値を元に戻すことができます。無効な値が見つからない場合、グリッドの `acceptEdit` メソッドを呼び出して変更をコミットすることもできます。
 
-コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。 
+コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
 
 ## コード スニペット
 
@@ -95,7 +95,7 @@ public onCommitClick(){
 
 ## 一括変更を元に戻す/やり直し
 
-以下は、一括更新が有効な場合に変更を元に戻す方法を示しています。 
+以下は、一括更新が有効な場合に変更を元に戻す方法を示しています。
 
 ```tsx
 <IgrDataGrid
@@ -177,20 +177,20 @@ public onRedoClick(){
 
 ## エラー検証とコミットの整合性
 
-以下は、編集モードを終了するときにセルが空かどうかを確認し、更新されたセルからのコミットのみを受け入れることによって、エラーを組み込む方法を示しています。 
+以下は、編集モードを終了するときにセルが空かどうかを確認し、更新されたセルからのコミットのみを受け入れることによって、エラーを組み込む方法を示しています。
 
 ```tsx
 <IgrDataGrid
     height="100%"
     width="100%"
     dataSource={this.data}
-    activationMode="Cell"    
+    activationMode="Cell"
     cellValueChanging={this.onCellValueChanging}
     dataCommitting={this.onDataCommitting}>
 </IgrDataGrid>
 ```
 
-```html 
+```html
 <igc-data-grid
     id="grid"
     height="calc(100% - 50px)"
@@ -220,15 +220,15 @@ onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => 
 }
 
 onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
-        
-    if(e.changes[0].transactionType === TransactionType.Update) {      
-        //commit was passed      
+
+    if(e.changes[0].transactionType === TransactionType.Update) {
+        //commit was passed
         s.acceptCommit(e.commitID);
     }
     else{
         //commit was prevented
         s.rejectCommit(e.commitID);
-    }        
+    }
 }
 ```
 
@@ -238,10 +238,10 @@ import { TransactionType } from 'igniteui-webcomponents-core'
 
 this.onCellValueChanging = this.onCellValueChanging.bind(this);
 this.grid.cellValueChanging = this.onCellValueChanging;
-        
+
 this.onDataCommitting = this.onDataCommitting.bind(this);
 this.grid.dataCommitting = this.onDataCommitting;
-        
+
 
 public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChangingEventArgs) {
     if(s.editMode === EditModeType.CellBatch && this.undo !== null)
@@ -257,23 +257,23 @@ public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChanging
     }
     else {
         s.acceptEdit(e.editID);
-    }    
+    }
 }
 
-public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventArgs) {    
-    if(e.changes[0].transactionType === TransactionType.Update) {      
-        //commit was passed      
+public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventArgs) {
+    if(e.changes[0].transactionType === TransactionType.Update) {
+        //commit was passed
         s.acceptCommit(e.commitID);
     }
     else{
         //commit was prevented
         s.rejectCommit(e.commitID);
-    }        
+    }
 }
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%" 
+<DataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     CellValueChanging="OnCellValueChanging"
     DataCommitting="OnDataCommitting">
@@ -301,7 +301,7 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     {
         if(e.Changes[0].TransactionType == TransactionType.Update)
         {
-            //commit was passed      
+            //commit was passed
             this.DataGridRef.AcceptCommit(e.CommitID);
         }
         else

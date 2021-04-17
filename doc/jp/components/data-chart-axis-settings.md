@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 軸設定 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールにより、軸ラベル、タイトル、目盛り、範囲、グリッド線、ギャップ、オーバーラップの構成を完全に制御できます。$ProductName$ グラフ軸について説明します。
-_keywords: $PlatformShort$ charts, data chart, axis settings, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 軸設定, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 軸設定 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールにより、軸ラベル、タイトル、目盛り、範囲、グリッド線、ギャップ、オーバーラップの構成を完全に制御できます。$ProductName$ グラフ軸について説明します。
+_keywords: $Platform$ charts, data chart, axis settings, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 軸設定, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 _language: ja
 ---
-# $PlatformShort$ 軸設定
+# $Platform$ 軸設定
 
 $ProductName$ データ チャート コンポーネントでは、軸は軸線、目盛、タイトル、や軸のラベルのこの外観を設定する基本プロパティを提供します。
 
-## $PlatformShort$ 軸設定の例
+## $Platform$ 軸設定の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-settings" 
-           alt="$PlatformShort$ 軸設定の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-settings"
+           alt="$Platform$ 軸設定の例"
            github-src="charts/data-chart/axis-settings">
 </code-view>
 
@@ -105,14 +105,14 @@ $ProductName$ データ チャート コンポーネントは、チャートで�
 
 ## 軸目盛
 
-目盛りは、$PlatformShort$ データ チャート コンポーネントの軸上に点を表示します。スケールに特定の数値ポイント、またはカテゴリ軸にカテゴリ値を表します。データ チャート コンポーネントでは、軸上の目盛りの長さ、太さ、および色を変更できます。
+目盛りは、$Platform$ データ チャート コンポーネントの軸上に点を表示します。スケールに特定の数値ポイント、またはカテゴリ軸にカテゴリ値を表します。データ チャート コンポーネントでは、軸上の目盛りの長さ、太さ、および色を変更できます。
 
 以下のコード例は、データ チャートのカテゴリX軸上の目盛りの色、長さ、および太さを設定およびカスタマイズする方法を示しています。
 
 ```razor
 <CategoryXAxis Name="xAxis"
     TickLength="10"
-    TickStrokeThickness="0.5" 
+    TickStrokeThickness="0.5"
     TickStroke="black"/>
 ```
 
@@ -142,7 +142,7 @@ $ProductName$ データ チャート コンポーネントは、チャートで�
 
 ## 軸の範囲
 
-$PlatformShort$ データ チャート コンポーネントでは、数値軸または時間軸の範囲の最小値と最大値を定義できます。範囲の最小値は軸の最小値で、範囲の最大値は軸の最大値です。これらは対応する軸で `MinimumValue` と `MaximumValue` オプションを設定することによって設定されます。
+$Platform$ データ チャート コンポーネントでは、数値軸または時間軸の範囲の最小値と最大値を定義できます。範囲の最小値は軸の最小値で、範囲の最大値は軸の最大値です。これらは対応する軸で `MinimumValue` と `MaximumValue` オプションを設定することによって設定されます。
 
 デフォルトでは、データ チャート コンポーネントは、データ内の対応する最小値と最大値に基づいて、数値と時間軸の範囲の最小値と最大値を計算しますが、この自動計算は、データセットには適していません。たとえば、データの最小値が 850 の場合、数値軸の `MinimumValue` を 800 に設定して、軸の最小値とデータポイントの最小値の間に 50 のスペース値ができるようにします。`MinimumValue` プロパティを使用して、同じ方法を軸の最小値と最大値に適用することができます。
 
@@ -177,7 +177,7 @@ $PlatformShort$ データ チャート コンポーネントでは、数値軸�
 
 ## 軸グリッド線
 
-$PlatformShort$ データ チャート コンポーネントでは、軸の `Interval` プロパティによって、主グリッド線と軸ラベルをその軸に描画する頻度が決まります。同様に、`MinorInterval` プロパティは、それらの主グリッド線の間に副グリッド線が描画される頻度を指定します。
+$Platform$ データ チャート コンポーネントでは、軸の `Interval` プロパティによって、主グリッド線と軸ラベルをその軸に描画する頻度が決まります。同様に、`MinorInterval` プロパティは、それらの主グリッド線の間に副グリッド線が描画される頻度を指定します。
 
 数値軸の場合、これらの間隔は数値になりますが、カテゴリ軸の場合、これらの値は線を引くのに必要なカテゴリ数の頻度を表します。たとえば、カテゴリ軸で `Interval` を 2 に設定した場合、主グリッド線は 2 カテゴリごとに描画されます。
 

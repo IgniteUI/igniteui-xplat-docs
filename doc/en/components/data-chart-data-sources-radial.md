@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create radial charts such as radial area, radial line, radial scatter and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, radial, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create radial charts such as radial area, radial line, radial scatter and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, radial, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Radial Series
+# $Platform$ Sample Data Source for Radial Series
 
 This topic provides an example on how to implement data source for [Radial Series](data-chart-type-radial-series.md)
 
@@ -29,7 +29,7 @@ public class SampleRadialData
     {
         public double Budget { get; set; }
         public double Spending { get; set; }
-        public string Department { get; set; }         
+        public string Department { get; set; }
     }
 ```
 

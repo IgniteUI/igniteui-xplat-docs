@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | カテゴリ シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、エリア、横棒チャート、縦棒チャート、折れ線チャートなどのカテゴリ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, category series, area, chart, bar chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, カテゴリ シリーズ, エリア, チャート, 棒チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | カテゴリ シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、エリア、横棒チャート、縦棒チャート、折れ線チャートなどのカテゴリ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, category series, area, chart, bar chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, カテゴリ シリーズ, エリア, チャート, 棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ カテゴリ シリーズ
+# $Platform$ カテゴリ シリーズ
 
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントのファイナカテゴリ シリーズのさまざまなタイプについて説明します。カテゴリ シリーズは、データを取り入れてそれを水平線 (`ColumnSeries` など) または垂直線 (`BarSeries` など) に沿って延ばしたデータ ポイントのコレクションとして描画するチャート シリーズの中でも、もっとも簡単で一般的な形のグループです。
+このトピックは、$Platform$ データ チャート コンポーネントのファイナカテゴリ シリーズのさまざまなタイプについて説明します。カテゴリ シリーズは、データを取り入れてそれを水平線 (`ColumnSeries` など) または垂直線 (`BarSeries` など) に沿って延ばしたデータ ポイントのコレクションとして描画するチャート シリーズの中でも、もっとも簡単で一般的な形のグループです。
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ カテゴリ シリーズの例
+## $Platform$ カテゴリ シリーズの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series" 
-           alt="$PlatformShort$ カテゴリ シリーズの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series"
+           alt="$Platform$ カテゴリ シリーズの例"
            github-src="charts/data-chart/type-category-series">
 </code-view>
 
@@ -41,7 +41,7 @@ _language: ja
 | `WaterfallSeries` | ポイントの集合を、連続するデータ ポイントの値同士の差異を示す垂直列として表示します。列は色でコード化され、値が正の変化であるか負の変化であるかを区別します。カテゴリは水平方向、値は垂直方向にプロットされます。データ ポイントの経時的な変化を表示、または複数の項目を比較するために使用します。 |
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントは、さまざまな軸タイプを提供しますが、カテゴリ シリーズの特定のタイプでは以下の軸タイプのみ使用できます。
+$Platform$ データ チャート コンポーネントは、さまざまな軸タイプを提供しますが、カテゴリ シリーズの特定のタイプでは以下の軸タイプのみ使用できます。
 
 | シリーズ タイプ        | YAxis タイプ      | XAxis タイプ                      |
 |--------------------|-----------------|---------------------------------|

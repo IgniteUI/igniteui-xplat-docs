@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | データ スプレッドシート | インフラジスティックス
+title: $Platform$ Excel ライブラリ | データ スプレッドシート | インフラジスティックス
 _description: Excel ライブラリは、Microsoft Excel 機能を使用したスプレッドシート データで作業が可能になります。Excel からアプリケーションへデータを簡単に転送できます。
 _keywords: Excel library, $ProductName$, Infragistics, Excel ライブラリ, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $PlatformShort$ グリッドと Excel ライブラリ
+# $Platform$ グリッドと Excel ライブラリ
 
 TODO
 
-## $PlatformShort$ グリッドと Excel ライブラリの例
+## $Platform$ グリッドと Excel ライブラリの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids" 
-           alt="$PlatformShort$ グリッドと Excel ライブラリの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids"
+           alt="$Platform$ グリッドと Excel ライブラリの例"
            github-src="excel/excel-library/working-with-grids">
 </code-view>
 

@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ CLI | データ可視化ツールおよびテーブル | インフラジスティックス
-_description: $ProductName$ ツールセットには $PlatformShort$ CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ $ProductName$ アプリケーションを作成してください!
-_keywords: $PlatformShort$ cli, command line interface, $ProductName$, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
+title: $Platform$ CLI | データ可視化ツールおよびテーブル | インフラジスティックス
+_description: $ProductName$ ツールセットには $Platform$ CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ $ProductName$ アプリケーションを作成してください!
+_keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
 _language: ja
 ---
 
-# $PlatformShort$ Ignite UI CLI
+# $Platform$ Ignite UI CLI
 
 CLI ツールでは、$ProductName$ の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank">Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
 

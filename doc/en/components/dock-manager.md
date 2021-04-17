@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ Dock Manager | Layout Controls | Infragistics
-_description: Use Infragistics' $PlatformShort$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
+title: $Platform$ Dock Manager | Layout Controls | Infragistics
+_description: Use Infragistics' $Platform$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, $ProductName$, Infragistics
 ---
-# $PlatformShort$ Dock Manager Overview
+# $Platform$ Dock Manager Overview
 
-The Infragistics $PlatformShort$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
+The Infragistics $Platform$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
 
 <!-- Blazor -->
 > [!NOTE]
@@ -18,14 +18,14 @@ Please follow the steps outlined in the blog post titled:
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ Dock Manager Example
+## $Platform$ Dock Manager Example
 
-This example shows most functionalities and docking options of the $PlatformShort$ Dock Manager.
+This example shows most functionalities and docking options of the $Platform$ Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$PlatformShort$ Dock Manager Example"
+           alt="$Platform$ Dock Manager Example"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
@@ -369,7 +369,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt + F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$PlatformShort$-dock-manager-example).
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
 ## Themes
 

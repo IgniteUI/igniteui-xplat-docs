@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ Data Visualization Tools | $PlatformShort$ Data Visualization Tools | Getting Started | Infragistics
-_description: Use Infragistics' $PlatformShort$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $PlatformShort$ data grid and streaming financial and business and financial charts.
+title: $Platform$ Data Visualization Tools | $Platform$ Data Visualization Tools | Getting Started | Infragistics
+_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
 _keywords: $ProductName$, Infragistics, Getting Started
 ---
 # Getting Started With $ProductName$
 
-The $ProductName$ is a complete set of $PlatformShort$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
+The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
 <!-- Angular, React, WebComponents -->
 
 ## Setting Up Computer
 
-Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $PlatformShort$ app, including $ProductName$, and to build $PlatformShort$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $PlatformShort$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $PlatformShort$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
+Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $Platform$ app, including $ProductName$, and to build $Platform$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $Platform$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $Platform$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
@@ -45,7 +45,7 @@ Before you can run $ProductName$, there are 2 steps to get everything on your ma
 <!-- end: Angular, React, WebComponents -->
 
 <!-- commented out because this section is present in the "Updating Existing App"
-You need to open $PlatformShort$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
+You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
 
 - **npm install --save {PackageCharts} {PackageCore}**
 - **npm install --save {PackageExcel} {PackageCore}**
@@ -121,7 +121,7 @@ Lastly,  -->
 ```
 
 > [!Note]
-> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**. 
+> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**.
 >
 > If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
 
@@ -220,7 +220,7 @@ ModuleManager.register(
 
 ## Updating Existing App
 
-If you want to use $ProductName$ in an existing $PlatformShort$ CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
+If you want to use $ProductName$ in an existing $Platform$ CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -320,7 +320,7 @@ The final result should look something like this screenshot:
 
 <!-- Blazor -->
 
-The $ProductName$ is a complete set of $PlatformShort$ components designed to enable developers to build the most modern, high-performance apps for modern desktop browsers.
+The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance apps for modern desktop browsers.
 
 ## Step 1 - Create a New Blazor Project
 The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to [**Step 2**](#step-2---install-the-ignite-ui-for-blazor-nuget-package).
@@ -407,7 +407,7 @@ Optionally, modules can be registered within razor files at the time the page is
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor;
 
-@code 
+@code
 {
 
    protected override void OnInitialized()
@@ -416,7 +416,7 @@ Optionally, modules can be registered within razor files at the time the page is
         GeographicMapModule.Register(IgniteUIBlazor);
 
         ...
-    } 
+    }
 }
 
 ```

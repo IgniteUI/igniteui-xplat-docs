@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Stacked Spline Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked spline area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked spline area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Stacked Spline Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked spline area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked spline area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','StackedSplineAreaSeries']
 namespace: Infragistics.Controls.Charts
 ---
-# $PlatformShort$ Stacked Spline Area Chart
+# $Platform$ Stacked Spline Area Chart
 
 The $ProductName$ stacked spline area chart belongs to a group of category charts and is rendered using a collection of points connected by smooth curves of spline segments (`StackedFragmentSeries`) with the area below the spline filled in and stacked on top of each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the y-axis, and all negative values are grouped on the negative side of the y-axis.
 
-## $PlatformShort$ Stacked Spline Area Chart Example
+## $Platform$ Stacked Spline Area Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-spline-area-series" 
-           alt="$PlatformShort$ Stacked Spline Area Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-spline-area-series"
+           alt="$Platform$ Stacked Spline Area Chart Example"
            github-src="charts/data-chart/type-stacked-spline-area-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ stacked spline area chart belongs to a group of category chart
 The `StackedSplineAreaSeries` has its own `Series` collection in which you can place the `StackedFragmentSeries` elements. These fragments are what make up the actual rendering of the chart and are the elements that accept the `ValueMemberPath`.
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `StackedSplineAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `StackedSplineAreaSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -117,8 +117,8 @@ This code demonstrates how to create an instance of the $ProductName$ data chart
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedSplineAreaSeries 
-      XAxisName="xAxis" 
+    <StackedSplineAreaSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

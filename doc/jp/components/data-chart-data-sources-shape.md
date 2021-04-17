@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、散布多角形や散布ポリラインなどのシェープ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, shape chart, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, シェープ チャート, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、散布多角形や散布ポリラインなどのシェープ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, shape chart, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, シェープ チャート, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 散布図シリーズのサンプル データソース
+# $Platform$ 散布図シリーズのサンプル データソース
 
 このトピックでは、[散布図シリーズ](data-chart-type-shape-series.md) のデータソースを実装する方法の例を示します。
 
@@ -15,7 +15,7 @@ public class SampleShapeData
         public static Random random = new Random();
 
         public static List<SampleShapeItem> Create()
-        { 
+        {
             var shapeGuestBedroom = new List<Point>
             {
                 new Point { X = 2, Y = 10 }, new Point { X = 7, Y = 10 }, new Point { X = 7, Y = 7 }, new Point { X = 2, Y = 7 }, new Point { X = 2, Y = 10 }
@@ -45,7 +45,7 @@ public class SampleShapeData
                 new SampleShapeItem { Label = "Living Room", Points = ToPoints(shapeLivingRoom) },
                 new SampleShapeItem { Label = "Master Bedroom", Points = ToPoints(shapeMasterBedroom) },
             };
-            
+
             return data;
         }
 

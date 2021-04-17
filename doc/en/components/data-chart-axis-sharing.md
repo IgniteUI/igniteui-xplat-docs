@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Sharing | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows for multiple axes to be displayed in the same plot area. Create a $ProductName$ graph with multiple axis!
-_keywords: $PlatformShort$ charts, data chart, axis sharing, $ProductName$, Infragistics, multiple axes
+title: $Platform$ Data Chart | Data Visualization Tools | Axis Sharing | Infragistics
+_description: Infragistics' $Platform$ charts control allows for multiple axes to be displayed in the same plot area. Create a $ProductName$ graph with multiple axis!
+_keywords: $Platform$ charts, data chart, axis sharing, $ProductName$, Infragistics, multiple axes
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 ---
-# $PlatformShort$ Axis Sharing and Multiple Axes
+# $Platform$ Axis Sharing and Multiple Axes
 
- You can share and add multiple axes in the same plot area of the $PlatformShort$ data chart component. For all axes, you can specify locations in relationship to chart plot area. It a common scenario to use multiple axes when you want to plot many data sources that have wide range of values (e.g. stock prices and stock trade volumes).
+ You can share and add multiple axes in the same plot area of the $Platform$ data chart component. For all axes, you can specify locations in relationship to chart plot area. It a common scenario to use multiple axes when you want to plot many data sources that have wide range of values (e.g. stock prices and stock trade volumes).
 
-## $PlatformShort$ Axis Sharing and Multiple Axes Example
+## $Platform$ Axis Sharing and Multiple Axes Example
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing" 
-           alt="$PlatformShort$ Axis Sharing and Multiple Axes Example" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
+           alt="$Platform$ Axis Sharing and Multiple Axes Example"
            github-src="charts/data-chart/axis-sharing">
 </code-view>
 

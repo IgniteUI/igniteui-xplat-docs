@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Trendline | Infragistics
-_description: Use the trendlines of the Infragistics' $PlatformShort$ charts to identify a trend in data bound to a series. Check out the $ProductName$ graph's trendlines feature!
-_keywords: $PlatformShort$ charts, data chart, trendlines, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Trendline | Infragistics
+_description: Use the trendlines of the Infragistics' $Platform$ charts to identify a trend in data bound to a series. Check out the $ProductName$ graph's trendlines feature!
+_keywords: $Platform$ charts, data chart, trendlines, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'AreaSeries', 'BarSeries','ColumnSeries', 'PointSeries','SplineSeries','StepAreaSeries','WaterfallSeries']
 
 ---
-# $PlatformShort$ Trendlines
+# $Platform$ Trendlines
 
-The $PlatformShort$ data chart component has support for trendlines, which help to identify a trend in data bound to a series.
+The $Platform$ data chart component has support for trendlines, which help to identify a trend in data bound to a series.
 
-## $PlatformShort$ Trendlines Example
+## $Platform$ Trendlines Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-trendlines" 
-           alt="$PlatformShort$ Trendlines Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-trendlines"
+           alt="$Platform$ Trendlines Example"
            github-src="charts/data-chart/series-trendlines">
 </code-view>
 
 <div class="divider--half"></div>
 
-Trendlines in the $PlatformShort$ data chart component are not on by default. In order to set them, you can set the `TrendLineType` property on the corresponding series that you wish the trendline to show up on. You can modify multiple appearance properties of the trendline such as its brush, period, thickness, and dash array.
+Trendlines in the $Platform$ data chart component are not on by default. In order to set them, you can set the `TrendLineType` property on the corresponding series that you wish the trendline to show up on. You can modify multiple appearance properties of the trendline such as its brush, period, thickness, and dash array.
 
 Trendlines are supported on all series except for stacked and range series. Below is a list of trendlines that can be used with the series of the data chart:
 
@@ -40,7 +40,7 @@ Trendlines are supported on all series except for stacked and range series. Belo
 - `SimpleAverage`
 - `WeightedAverage`
 
-The following code snippet demonstrates how to add a trendline to a series in the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a trendline to a series in the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">

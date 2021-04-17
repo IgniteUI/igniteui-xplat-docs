@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Range Charts | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create range charts such as range area, range column and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, range charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Range Charts | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create range charts such as range area, range column and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, range charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Range Series
+# $Platform$ Range Series
 
-This topic explains various types of range series in the $PlatformShort$ data chart component. The range series is a group of chart series that takes two numeric data columns and render them as collection of data points stretched in horizontal orientation (e.g. `RangeAreaSeries`)
+This topic explains various types of range series in the $Platform$ data chart component. The range series is a group of chart series that takes two numeric data columns and render them as collection of data points stretched in horizontal orientation (e.g. `RangeAreaSeries`)
 
-## $PlatformShort$ Range Series Example
+## $Platform$ Range Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series" 
-           alt="$PlatformShort$ Range Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series"
+           alt="$Platform$ Range Series Example"
            github-src="charts/data-chart/type-range-series">
 </code-view>
 
@@ -30,7 +30,7 @@ The following table lists all types of range series and their descriptions:
 
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with range series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with range series.
 
 | Series Type         | YAxis Type     | XAxis Type      |
 |---------------------|----------------|-----------------|

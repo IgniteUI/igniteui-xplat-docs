@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Geographic Series | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Geographic Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 ---
 
-# $PlatformShort$ Geographic Series
+# $Platform$ Geographic Series
 
 In the $ProductName$ Map component, geographic series are visual elements of the map that display geo-spatial data as points (e.g. locations of cities), polylines (e.g. road connections), or polygons (shape of countries) in a geographic context.
 The map component's `Series` property is a collection of geographic series objects. This property is used to support rendering an unlimited number of geographic series in the same plot area. When multiple geographic series objects are added to the `Series` property, each successive series will be layered on top of the previous series starting from the first to the last series. Therefore, geographic series can be better understood as map layers that can be stacked on top of each other and/or on top of geographic imagery.

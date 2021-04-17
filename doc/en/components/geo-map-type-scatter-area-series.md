@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter area series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
 ---
-# $PlatformShort$ Using Scatter Area Series
+# $Platform$ Using Scatter Area Series
 
-Use the $PlatformShort$ map component's `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
+Use the $Platform$ map component's `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
 
-## $PlatformShort$ Using Scatter Area Series Example
+## $Platform$ Using Scatter Area Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series" 
-           alt="$PlatformShort$ Using Scatter Area Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series"
+           alt="$Platform$ Using Scatter Area Series Example"
            github-src="maps/geo-map/type-scatter-area-series">
 </code-view>
 
@@ -338,7 +338,7 @@ createAreaSeries(data: any[]) {
         this.ColorScale.MinimumValue = 0;
         this.ColorScale.MaximumValue = 30;
 
-        this.Data = WorldTemperatures.Load();        
+        this.Data = WorldTemperatures.Load();
     }
 }
 ```

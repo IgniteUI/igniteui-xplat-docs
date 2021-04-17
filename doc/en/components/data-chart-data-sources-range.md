@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create range charts such as range area, range column and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, range chart, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create range charts such as range area, range column and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, range chart, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Range Series
+# $Platform$ Sample Data Source for Range Series
 
 This topic provides an example on how to implement data source for [Range Series](data-chart-type-range-series.md)
 
@@ -16,15 +16,15 @@ public class SampleRangeData
         public static List<SampleRangeItem> Create()
         {
             var data = new List<SampleRangeItem>();
-            var temperature = 25.0; 
-            
+            var temperature = 25.0;
+
             for (var i = 1900; i < 2020; i++)
             {
                 temperature += (random.NextDouble() - 0.485) * 0.5;
                 var low  = (temperature + (random.NextDouble() * 1));
                 var high = (temperature - (random.NextDouble() * 1));
-                var item = new SampleRangeItem(); 
-                item.Year = i; 
+                var item = new SampleRangeItem();
+                item.Year = i;
                 item.High = Math.Round(low * 10) / 10;
                 item.Low = Math.Round(high * 10) / 10;
                 data.Add(item);

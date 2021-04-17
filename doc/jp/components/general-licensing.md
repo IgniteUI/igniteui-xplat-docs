@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ ライセンス | ドック マネージャー | $ProductName$ | インフラジスティックス
+title: $Platform$ ライセンス | ドック マネージャー | $ProductName$ | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ ライセンス npm フィードの使用方法について説明します。
 _keywords: npm package license,  $PlatformName$ license feed,  licensing, npm パッケージのライセンス, $PlatformName$ ライセンス フィード, ライセンス
 _language: ja
 ---
 
-# $PlatformShort$ 使用許諾契約
+# $Platform$ 使用許諾契約
 購入して使用する $ProductName$ に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
 >[!NOTE]

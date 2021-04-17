@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Map | World Locations | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map data utility to generate geographic locations of cities and capitals of countries. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, map data, $ProductName$, Infragistics
+title: $Platform$ Map | World Locations | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map data utility to generate geographic locations of cities and capitals of countries. View $ProductName$ map demos!
+_keywords: $Platform$ map, map data, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ World Locations
+# $Platform$ World Locations
 
 The resource topic provides implementation of data utility for generating geographic locations of cities and capitals of countries.
 
@@ -675,8 +675,8 @@ export default class WorldLocations {
 
         public static List<WorldCity> Init()
         {
-            List<WorldCity> cities = new List<WorldCity>() { 
-            // console.log("WorldLocations init");            
+            List<WorldCity> cities = new List<WorldCity>() {
+            // console.log("WorldLocations init");
             new WorldCity() { Cap = false, Pop = 0.468, Lat = 68.9635467529297, Lon = 33.0860404968262, Country = "Russia", Name = "Murmansk" },
             new WorldCity() { Cap = false, Pop = 0.416, Lat = 64.5206680297852, Lon = 40.6461601257324, Country = "Russia", Name = "Arkhangelsk" },
             new WorldCity() { Cap = false, Pop = 5.825, Lat = 59.9518890380859, Lon = 30.4533271789551, Country = "Russia", Name = "Saint Petersburg" },
@@ -1286,6 +1286,6 @@ export default class WorldLocations {
             };
 
             return cities;
-        }           
+        }
     }
 ```

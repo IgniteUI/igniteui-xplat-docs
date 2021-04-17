@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Spline Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar spine area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar spine area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Spline Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar spine area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar spine area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarSplineAreaSeries']
 ---
-# $PlatformShort$ Polar Spline Area Chart
+# $Platform$ Polar Spline Area Chart
 
 The $ProductName$ polar spline area chart belongs to a group of polar charts and has a shape of a filled region enclosed by a collection of spline lines connecting data points which are located at the polar (angle/radius) coordinates. The `PolarSplineAreaSeries` uses the same concepts of data plotting as the `ScatterSplineSeries` but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple `PolarSplineAreaSeries` can be plotted in the same data chart and they can be overlaid on each other to show the differences and similarities between data sets.
 
-## $PlatformShort$ Polar Spline Area Chart Example
+## $Platform$ Polar Spline Area Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series" 
-           alt="$PlatformShort$ Polar Spline Area Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series"
+           alt="$Platform$ Polar Spline Area Chart Example"
            github-src="charts/data-chart/type-polar-spline-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PolarSplineAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PolarSplineAreaSeries`.
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

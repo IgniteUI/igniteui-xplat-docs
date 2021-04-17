@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
 _description: 同じプロット領域に視覚要素の複数インスタンスを表示するデータ チャートを作成し、複合チャートビューを作成します。
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, インフラジスティックス
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 散布バブル シリーズのサンプルデータソース
+# $Platform$ 散布バブル シリーズのサンプルデータソース
 
 このトピックでは、[散布バブル シリーズ](data-chart-type-scatter-bubble-series.md)と [散布マーカー シリーズ](data-chart-type-scatter-point-series.md) のデータソースを実装する方法の例を示します。
 
@@ -389,7 +389,7 @@ public class SampleScatterStats
 
             this.Population = pop;
             this.GdpPerCapita = gdp;
-            this.GdpTotal = gdp * pop; 
+            this.GdpTotal = gdp * pop;
             this.DptPerCapita = dpt;
             this.PhonePer100 = phones;
         }

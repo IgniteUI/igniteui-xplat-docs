@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ チャート ツールチップ | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート ツールチップ
-_keywords: $PlatformShort$ Charts, Tooltips, Infragistics, $PlatformShort$ チャート, ツールチップ, インフラジスティックス
+title: $Platform$ チャート ツールチップ | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート ツールチップ
+_keywords: $Platform$ Charts, Tooltips, Infragistics, $Platform$ チャート, ツールチップ, インフラジスティックス
 mentionedTypes: ["CategoryChart", "ToolTipType"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート ツールチップ
+# $Platform$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+$Platform$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
 
-## $PlatformShort$ チャート ツールチップのタイプ
+## $Platform$ チャート ツールチップのタイプ
 
 次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="$PlatformShort$ ツールチップ タイプの例"
+           alt="$Platform$ ツールチップ タイプの例"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
@@ -31,18 +31,18 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 `Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
 `Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
 
-## $PlatformShort$ チャート ツールチップ テンプレート
+## $Platform$ チャート ツールチップ テンプレート
 
-組み込みタイプのツールチップがいずれも要件に一致しない場合は、独自のツールチップを作成して、シリーズ タイトル、データ値、および軸値を表示およびスタイル設定できます。次のセクションでは、さまざまなタイプの $PlatformShort$ チャートでこれを行う方法を示します。
+組み込みタイプのツールチップがいずれも要件に一致しない場合は、独自のツールチップを作成して、シリーズ タイトル、データ値、および軸値を表示およびスタイル設定できます。次のセクションでは、さまざまなタイプの $Platform$ チャートでこれを行う方法を示します。
 
 ### カテゴリ チャートのカスタム ツールチップ
 
-この例は、$PlatformShort$ `CategoryChart` コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。$PlatformShort$ `FinancialChart` コントロールのカスタム ツールチップにも同じロジックを適用できることに注意してください。
+この例は、$Platform$ `CategoryChart` コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。$Platform$ `FinancialChart` コントロールのカスタム ツールチップにも同じロジックを適用できることに注意してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
-           alt="$PlatformShort$ ツールチップ テンプレート"
+           alt="$Platform$ ツールチップ テンプレート"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 
@@ -51,12 +51,12 @@ $PlatformShort$ チャートでは、ツールチップはバインドされた�
 
 ## データ チャートのカスタム ツールチップ
 
-この例は、$PlatformShort$ データ チャート コントロールで各シリーズのカスタム ツールチップを作成する方法を示しています。
+この例は、$Platform$ データ チャート コントロールで各シリーズのカスタム ツールチップを作成する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
-           alt="$PlatformShort$ ツールチップ テンプレート"
+           alt="$Platform$ ツールチップ テンプレート"
            github-src="charts/data-chart/tooltip-template">
 </code-view>
 

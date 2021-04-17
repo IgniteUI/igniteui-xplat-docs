@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
 _description: Create a data chart that displays multiple instances of visual elements in the same plot area in order to create composite chart views.
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Scatter Bubble Series
+# $Platform$ Sample Data Source for Scatter Bubble Series
 
 This topic provides an example on how to implement data source for [Scatter Bubble Series](data-chart-type-scatter-bubble-series.md) and [Scatter Marker Series](data-chart-type-scatter-point-series.md)
 
@@ -388,7 +388,7 @@ public class SampleScatterStats
 
             this.Population = pop;
             this.GdpPerCapita = gdp;
-            this.GdpTotal = gdp * pop; 
+            this.GdpTotal = gdp * pop;
             this.DptPerCapita = dpt;
             this.PhonePer100 = phones;
         }

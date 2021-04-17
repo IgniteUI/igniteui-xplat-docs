@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | 構成オプション | インフラジスティックス
-_description: ナビゲーション、価格ペイン、オーバーレイ、インジケーター、ボリューム ペイン、トレンドライン、タイトル、サブタイトル、凡例の設定など、インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールの機能の使用方法をについて説明します。$ProductName$ ファイナンシャル グラフのサンプルを是非お試しください!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, trendlines, indicators, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, ドレンドライン, インジケーター, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | 構成オプション | インフラジスティックス
+_description: ナビゲーション、価格ペイン、オーバーレイ、インジケーター、ボリューム ペイン、トレンドライン、タイトル、サブタイトル、凡例の設定など、インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールの機能の使用方法をについて説明します。$ProductName$ ファイナンシャル グラフのサンプルを是非お試しください!
+_keywords: $Platform$ charts, financial chart, stock chart, trendlines, indicators, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, ドレンドライン, インジケーター, インフラジスティックス
 mentionedTypes: ['FinancialChart', 'FinancialOverlayType']
 _language: ja
 ---
-# $PlatformShort$ 近似曲線
+# $Platform$ 近似曲線
 
-$PlatformShort$ Financial Chart コンポーネントで、ナビゲーション動作、トレンドライン レイヤー、オーバーレイ、凡例、チャート タイトル、チャート サブタイトルなどのカスタマイズ可能なビジュアルがあります。
+$Platform$ Financial Chart コンポーネントで、ナビゲーション動作、トレンドライン レイヤー、オーバーレイ、凡例、チャート タイトル、チャート サブタイトルなどのカスタマイズ可能なビジュアルがあります。
 
-## $PlatformShort$ 近似曲線の例
+## $Platform$ 近似曲線の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines" 
-           alt="$PlatformShort$ 近似曲線の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
+           alt="$Platform$ 近似曲線の例"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## ナビゲーションの構成
-$PlatformShort$ Financial Chart コンポーネントでは、チャート ナビゲーションがデフォルトで有効になっています。ただし、以下のプロパティを設定することによって、カスタマイズできます。
+$Platform$ Financial Chart コンポーネントでは、チャート ナビゲーションがデフォルトで有効になっています。ただし、以下のプロパティを設定することによって、カスタマイズできます。
 
 - `IsHorizontalZoomEnabled` - チャートがユーザー操作により水平方向にズーム可能かどうかを指定します。デフォルトでこのプロパティは true に設定されます。
 - `IsVerticalZoomEnabled` - チャートがユーザー操作により垂直方向にズーム可能かどうかを指定します。デフォルトでこのプロパティは false に設定されます。
@@ -115,7 +115,7 @@ $PlatformShort$ Financial Chart コンポーネントでは、チャート ナ�
 ```
 
 ## オーバーレイの構成
-オーバーレイはデフォルトで $PlatformShort$ Financial Chart に表示されません。オーバーレイには、`BollingerBands` および `PriceChannel` の 2 種類があります。オーバーレイのデフォルト設定をカスタマイズできます。以下のコードはオーバーレイの色、アウトライン、および太さを設定します。
+オーバーレイはデフォルトで $Platform$ Financial Chart に表示されません。オーバーレイには、`BollingerBands` および `PriceChannel` の 2 種類があります。オーバーレイのデフォルト設定をカスタマイズできます。以下のコードはオーバーレイの色、アウトライン、および太さを設定します。
 
 ```html
  <igx-financial-chart
@@ -200,9 +200,9 @@ $PlatformShort$ Financial Chart コンポーネントでは、チャート ナ�
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"                            
+   DataSource="DataSource"
    IndicatorBrushes="Green, Blue"
-   IndicatorNegativeBrushes="Red"                            
+   IndicatorNegativeBrushes="Red"
    IndicatorThickness="2" />
 
 @code {
@@ -213,7 +213,7 @@ $PlatformShort$ Financial Chart コンポーネントでは、チャート ナ�
 
       this.Chart.IndicatorDisplayTypes.Add(IndicatorDisplayType.Line);
    }
-}   
+}
 ```
 
 ## ボリューム ペインの構成
@@ -261,7 +261,7 @@ $PlatformShort$ Financial Chart コンポーネントでは、チャート ナ�
 ```
 
 ## トレンドラインの構成
-トレンドラインはデフォルトでは $PlatformShort$ Financial Chart に表示されません。トレンドラインが表示される場合、同じトレンドラインがすべてのチャート ペインに表示されます。トレンドラインのデフォルト設定をカスタマイズできます。
+トレンドラインはデフォルトでは $Platform$ Financial Chart に表示されません。トレンドラインが表示される場合、同じトレンドラインがすべてのチャート ペインに表示されます。トレンドラインのデフォルト設定をカスタマイズできます。
 
 以下のコードはトレンドラインの色および太さを設定します。
 

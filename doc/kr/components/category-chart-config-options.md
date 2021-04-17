@@ -4,15 +4,15 @@ _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 컨피규레이터 옵션
+# $Platform$ 컨피규레이터 옵션
 
 마커, 차트 제목 및 부제, 차트 유형 등 $ProductName$ 카테고리 차트 컴포넌트를 사용자 지정이 가능합니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
            github-src="charts/category-chart/marker-options">
 </code-view>
 

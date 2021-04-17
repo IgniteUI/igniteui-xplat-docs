@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, binding data models, $ProductName$, Infragistics, data binding
+title: $Platform$ Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View $ProductName$ map demos!
+_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', GeographicScatterAreaSeries, GeographicHighDensityScatterSeries, GeographicProportionalSymbolSeries, GeographicScatterAreaSeries, GeographicContourLineSeries, GeographicShapeSeries, GeographicPolylineSeries  ]
 ---
-# $PlatformShort$ Binding Geographic Data Models
+# $Platform$ Binding Geographic Data Models
 
 The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.
 
-## $PlatformShort$ Binding Geographic Data Models Example
+## $Platform$ Binding Geographic Data Models Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model" 
-           alt="$PlatformShort$ Binding Geographic Data Models Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
+           alt="$Platform$ Binding Geographic Data Models Example"
            github-src="maps/geo-map/binding-data-model">
 </code-view>
 
@@ -322,7 +322,7 @@ createPolylineSeries(flight: any)
 
         List<List<Point>> geoPath = WorldUtils.CalcPaths(geoOrigin, geoDest);
         double geoDistance = WorldUtils.CalcDistance(geoOrigin, geoDest);
-        
+
         FlightInfo route = new FlightInfo()
         {
             Points =  geoPath,

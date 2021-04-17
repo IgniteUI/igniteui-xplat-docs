@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Financial Overlay | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to display financial overlays. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial overlays, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Financial Overlay | Infragistics
+_description: Use Infragistics' $Platform$ charts control to display financial overlays. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial overlays, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 ---
-# $PlatformShort$ Financial Overlays
+# $Platform$ Financial Overlays
 
 Financial Overlays are often used by traders to measure changes and to show trends in stock prices. These overlays are usually displayed in front of the `FinancialPriceSeries` because they share the same Y-Axis scale. In contrast, financial indicators do not share the same Y-Axis scale with the `FinancialPriceSeries` and as result financial indicators are usually plotted below or above the `FinancialPriceSeries` or overlays. However, the chart control supports plotting both overlays as well as indicators in the same plot area, if desired, using multiple axes or by sharing axes.
 
-## $PlatformShort$ Financial Overlays Example
+## $Platform$ Financial Overlays Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays" 
-           alt="$PlatformShort$ Financial Overlays Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays"
+           alt="$Platform$ Financial Overlays Example"
            github-src="charts/data-chart/type-financial-overlays">
 </code-view>
 
@@ -28,7 +28,7 @@ The following lists the available financial overlays:
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
+The $Platform$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
 
 ## Required Data
 

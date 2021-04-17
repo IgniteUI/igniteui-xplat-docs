@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Polygon Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create scatter polygon charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, scatter polygon charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Polygon Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create scatter polygon charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, scatter polygon charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','ShapeColumnSeries','ScatterPolygonSeries']
 
 ---
-# $PlatformShort$ Scatter Polygon Chart
+# $Platform$ Scatter Polygon Chart
 
 The $ProductName$ scatter polyline chart belongs to a group of shape charts that take an array of shapes (array or arrays of X/Y coordinates). This series renders that array of shapes as a collection of polygons in the Cartesian (x, y) system.
 
 Scatter shape series are often used highlight regions in scientific data or they can be used to plot diagrams, blueprints, or even floor plan of buildings.
 
-## $PlatformShort$ Scatter Polygon Chart Example
+## $Platform$ Scatter Polygon Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series" 
-           alt="$PlatformShort$ Scatter Polygon Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           alt="$Platform$ Scatter Polygon Chart Example"
            github-src="charts/data-chart/type-scatter-polygon-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterPolygonSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterPolygonSeries`.
 
 - `NumericXAxis`
 - `NumericYAxis`

@@ -1,41 +1,41 @@
 ---
-title: $PlatformShort$ チャート API | データ可視化 ツール | インフラジスティックス
+title: $Platform$ チャート API | データ可視化 ツール | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ チャートは、チャートのビジュアルを構成およびスタイル設定するための便利な API を提供します。
-_keywords: $PlatformShort$ charts, chart API, API, $ProductName$, Infragistics, $PlatformShort$ チャート, チャート API, インフラジスティックス
+_keywords: $Platform$ charts, chart API, API, $ProductName$, Infragistics, $Platform$ チャート, チャート API, インフラジスティックス
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $PlatformShort$ チャート API
+# $Platform$ チャート API
 
 $ProductName$ チャートは、さまざまなタイプのチャートをプロットするためのシンプルで使いやすい API を提供します。
 
-## $PlatformShort$ カテゴリ チャート API
+## $Platform$ カテゴリ チャート API
 
-$PlatformShort$ `CategoryChart` には次の API メンバーがあります。
+$Platform$ `CategoryChart` には次の API メンバーがあります。
 
 チャート プロパティ | 軸プロパティ | シリーズ プロパティ
 -----------------|-----------------|-------------------
 - `Legend` <br> - `ItemsSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> - `XAxisGap` <br> - `XAxisOverlap` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
-## $PlatformShort$ ファイナンシャル チャート API
+## $Platform$ ファイナンシャル チャート API
 
-$PlatformShort$ `FinancialChart` には次の API メンバーがあります。
+$Platform$ `FinancialChart` には次の API メンバーがあります。
 
 チャート プロパティ | 軸プロパティ | シリーズ プロパティ
 -----------------|-----------------|-------------------
 - `Legend` <br> - `ItemsSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
-## $PlatformShort$ データ チャート API
+## $Platform$ データ チャート API
 
-$PlatformShort$ `XamDataChart` には次の API メンバーがあります。
+$Platform$ `XamDataChart` には次の API メンバーがあります。
 
 チャート プロパティ | 軸 クラス
 -----------------|-------------
  - `Legend` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> |  - `Axis` <br> - `CategoryXAxis` <br> - `CategoryYAxis` <br> - `CategoryAngleAxis` <br> - `NumericXAxis` <br> - `NumericYAxis` <br> - `NumericAngleAxis` <br> - `NumericRadiusAxis` <br>
 
-$PlatformShort$ `XamDataChart` は、次のタイプの `Series` を使用できます。
+$Platform$ `XamDataChart` は、次のタイプの `Series` を使用できます。
 
 カテゴリ シリーズ  | 積層シリーズ | ファイナンシャル シリーズ
 -----------------|----------------|-------------------

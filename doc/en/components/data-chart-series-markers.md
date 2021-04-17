@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Markers | Infragistics
-_description: Use the markers of the Infragistics' $PlatformShort$ charts to identify a data point even if it values fall between major or minor gridlines. Check out the $ProductName$ graph's markers feature!
-_keywords: $PlatformShort$ charts, data chart, markers, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Markers | Infragistics
+_description: Use the markers of the Infragistics' $Platform$ charts to identify a data point even if it values fall between major or minor gridlines. Check out the $ProductName$ graph's markers feature!
+_keywords: $Platform$ charts, data chart, markers, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'MarkerSeries']
 ---
-# $PlatformShort$ Markers
+# $Platform$ Markers
 
-In the $PlatformShort$ data chart component's plot area, markers are visual elements displayed at location of data points. Markers help your end users immediately identify a data point’s even if its values fall between major or minor grid lines.
+In the $Platform$ data chart component's plot area, markers are visual elements displayed at location of data points. Markers help your end users immediately identify a data point’s even if its values fall between major or minor grid lines.
 
-## $PlatformShort$ Markers Example
+## $Platform$ Markers Example
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-markers" 
-           alt="$PlatformShort$ Markers Example" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-markers"
+           alt="$Platform$ Markers Example"
            github-src="charts/data-chart/series-markers">
 </code-view>
 

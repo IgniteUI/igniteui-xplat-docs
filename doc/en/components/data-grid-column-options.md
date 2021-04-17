@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Data Grid | Column Options | Infragistics
+title: $Platform$ Data Grid | Column Options | Infragistics
 _description: See how Infragistics' $ProductName$ Data Grid supports the ability to pin, move, filter, and sort columns individually through a drop down UI from each column header. Check out $ProductName$ table's column option!
-_keywords: $PlatformShort$ Table, Data Grid, column options, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, column options, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'HeaderClickAction', 'IsColumnOptionsEnabled', 'IsFilteringEnabled', 'Column']
 ---
 
-# $PlatformShort$ Grid Column Options Overview
+# $Platform$ Grid Column Options Overview
 
 The $ProductName$ Data Grid supports the ability to group, hide, sort, move, pin, filter, and sort columns directly from a UI exposed on each column header.
 
 To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` property to true.
 
-## $PlatformShort$ Grid Column Options Example
+## $Platform$ Grid Column Options Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options"
-           alt="$PlatformShort$ Grid Column Options Example"
+           alt="$Platform$ Grid Column Options Example"
            github-src="grids/data-grid/column-options">
 </code-view>
 

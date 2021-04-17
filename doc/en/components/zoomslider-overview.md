@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with $ProductName$ zoom slider!
+title: $Platform$ ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with $ProductName$ zoom slider!
 _keywords: zoom slider, $ProductName$, Infragistics, data chart
 mentionedTypes: ['ZoomSlider, XamDataChart']
 ---
-# $PlatformShort$ Zoom Slider Overview
-The $PlatformShort$ ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
+# $Platform$ Zoom Slider Overview
+The $Platform$ ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
 
-## $PlatformShort$ Zoom Slider Example
+## $Platform$ Zoom Slider Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="$PlatformShort$ Zoom Slider Example"
+           alt="$Platform$ Zoom Slider Example"
            github-src="charts/zoomslider/overview">
 </code-view>
 
@@ -33,7 +33,7 @@ Configurable zoom-range window       | The initial zoom-range window width and p
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $PlatformShort$ chart component, the core package must also be installed.
+When installing the $Platform$ chart component, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}

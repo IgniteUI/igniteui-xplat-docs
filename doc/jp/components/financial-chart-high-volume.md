@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
+_keywords: $Platform$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ 大規模データのバインド
+# $Platform$ 大規模データのバインド
 
-$PlatformShort$ Financial Chart  コンポーネントは大量のデータを処理できます。以下のデモは 20 年間分のデータをバインドし、折れ線チャートで 1 時間間隔の在庫価格を示します。
+$Platform$ Financial Chart  コンポーネントは大量のデータを処理できます。以下のデモは 20 年間分のデータをバインドし、折れ線チャートで 1 時間間隔の在庫価格を示します。
 
-## $PlatformShort$ 大規模データのバインドの例
+## $Platform$ 大規模データのバインドの例
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume"
-           alt="$PlatformShort$ 大規模データのバインドの例"
+           alt="$Platform$ 大規模データのバインドの例"
            github-src="charts/financial-chart/high-volume">
 </code-view>
 
 <div class="divider--half"></div>
 
-チャートのパフォーマンスに影響を及ぼすチャート機能および $PlatformShort$ 固有の機能があり、アプリケーションのパフォーマンスを最適化する際に検討する必要があります。
+チャートのパフォーマンスに影響を及ぼすチャート機能および $Platform$ 固有の機能があり、アプリケーションのパフォーマンスを最適化する際に検討する必要があります。
 
 > [!NOTE]
 > For Angular:
-> コンポーネントにバインドするプロパティで大量のデータを保存する場合、`@Component` デコレーターで `changeDetection: ChangeDetectionStrategy.OnPush`  を設定します。$PlatformShort$ の各変更検出のサイクルでデータ配列内の変更を確認しないようにする設定です。
+> コンポーネントにバインドするプロパティで大量のデータを保存する場合、`@Component` デコレーターで `changeDetection: ChangeDetectionStrategy.OnPush`  を設定します。$Platform$ の各変更検出のサイクルでデータ配列内の変更を確認しないようにする設定です。
 
 以下のコードはファイナンシャル チャートを大量データにバインドします。
 
