@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Excel Library| Using Worksheets | Infragistics
-_description: Use Infragistics' $Platform$ excel library to input data by working with the worksheet's row and cells and setting thier corresponding values. Easily transfer data from $ProductName$ excel to your application!
+_description: Use Infragistics' $Platform$ excel library to input data by working with the worksheet's row and cells and setting their corresponding values. Easily transfer data from $ProductName$ excel to your application!
 _keywords: Excel library, worksheet, $ProductName$, Infragistics
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 ---

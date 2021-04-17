@@ -1,5 +1,5 @@
 ---
-title: $Platform$ Data Grid | Coumn Summaries | Infragistics
+title: $Platform$ Data Grid | Column Summaries | Infragistics
 _description: Use Infragistics' $Platform$ grid component's column summaries feature to display summarized data such as count, max, min and many more. Check out $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, column, summaries, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']

@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Map | World Connections | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate locations of airports, fligh paths and geographic gridlines. View $ProductName$ map demos!
+_description: Use Infragistics' $Platform$ JavaScript map data utility to generate locations of airports, flight paths and geographic gridlines. View $ProductName$ map demos!
 _keywords: $Platform$ map, map data, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---

@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Charts and Graphs | Data Visualization Tools | Highlighting | Infragistics
-_description: Infragistics' $Platform$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighing features!
+_description: Infragistics' $Platform$ charts control allows you to highlight areas of the graph. Learn about $ProductName$ highlighting features!
 _keywords: $Platform$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart']
 ---

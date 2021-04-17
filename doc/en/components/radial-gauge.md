@@ -39,7 +39,7 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Getting Started](general-getting-started.md)
 - [Adding Nuget Package](nuget-feed.md)
 
-Aftewards you may start implementing the control by adding the following namespaces:
+Afterwards you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor

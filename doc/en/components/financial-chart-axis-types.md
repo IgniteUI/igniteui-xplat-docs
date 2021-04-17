@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Financial Chart | Axis Types | Infragistics
-_description: Learn how to configure Infragistics' $Platform$ charts control axis such as axis interval, axis lables, axis modes, axis range, axis scale, axis tickmarkts and axis titles. View our $ProductName$ financial graph demos!
+_description: Learn how to configure Infragistics' $Platform$ charts control axis such as axis interval, axis labels, axis modes, axis range, axis scale, axis tickmarks and axis titles. View our $ProductName$ financial graph demos!
 _keywords: $Platform$ charts, financial chart, stock chart, financial axis, $ProductName$, Axis type , Infragistics
 mentionedTypes: ['FinancialChart']
 ---

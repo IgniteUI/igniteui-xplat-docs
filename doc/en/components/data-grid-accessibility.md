@@ -74,7 +74,7 @@ Navigating within the Grid
 - <b>Ctrl + Alt + Shift + ↑</b>	Navigate to current column header.
 - <b>Ctrl + Alt + Shift + ↓</b>	Navigate to last cell in current column.
 - <b>Ctrl + Alt + Shift + ←</b>	Navigate to first cell in current row.
-- <b>Ctrl + Alt + Shift + →</b>	Navigae to last cell in current row.
+- <b>Ctrl + Alt + Shift + →</b>	Navigate to last cell in current row.
 
 Screen Reader Commands
 
