@@ -107,6 +107,21 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasDark"}            ],
+           "originalName": "CanvasDark"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasLight"}            ],
+           "originalName": "CanvasLight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasGray"}            ],
+           "originalName": "CanvasGray"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
@@ -242,8 +257,18 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "userAgent"}            ],
            "originalName": "UserAgent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
        },
         {
            "names": [
@@ -457,6 +482,26 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}            ],
            "originalName": "FillScaleUseGlobalValues"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
+           "originalName": "MarkerOutlineUsesFillScale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
+           "originalName": "MarkerOutlineBrightness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
+           "originalName": "MarkerBrushBrightness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        },
         {
            "names": [
@@ -724,6 +769,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
        }   ],
@@ -778,6 +828,11 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
            "originalName": "MaximumMarkers"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
        }   ],
     "originalBaseTypeName": "GeographicMapSeriesHost",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -801,8 +856,23 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
+           "originalName": "IsHorizontalWrappingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MapBackgroundTilingMode", "mappedName": "backgroundTilingMode"}            ],
+           "originalName": "BackgroundTilingMode"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "useWorldRectForZoomBounds"}            ],
            "originalName": "UseWorldRectForZoomBounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "suppressZoomResetOnWorldRectChange"}            ],
+           "originalName": "SuppressZoomResetOnWorldRectChange"
        },
         {
            "names": [
@@ -846,6 +916,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getCurrentActualWorldRect"}            ],
+           "originalName": "GetCurrentActualWorldRect"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getZoomRectFromGeoRect"}            ],
            "originalName": "GetZoomRectFromGeoRect"
        },
@@ -853,6 +928,11 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "updateZoomWindow"}            ],
            "originalName": "UpdateZoomWindow"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "updateWorldRect"}            ],
+           "originalName": "UpdateWorldRect"
        },
         {
            "names": [
@@ -960,6 +1040,35 @@
            "names": [
                { "platform": "React",  "mappedType": "MapResizeBehavior", "mappedName": "MaintainCenterPosition"}            ],
            "originalName": "MaintainCenterPosition"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
+    "originalName": "MapBackgroundTilingMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "MapBackgroundTilingMode.ts",
+ "mappedName": "MapBackgroundTilingMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MapBackgroundTilingMode", "mappedName": "NonWrapped"}            ],
+           "originalName": "NonWrapped"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Wrapped"}            ],
+           "originalName": "Wrapped"
        },
         {
            "names": [

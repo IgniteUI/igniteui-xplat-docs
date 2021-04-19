@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ チャート | データ可視化ツール | 横棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, column chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 縦棒チャート, インフラジスティックス
+title: $Platform$ チャート | データ可視化ツール | 横棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, column chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 縦棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 縦棒チャート
+# $Platform$ 縦棒チャート
 
 $ProductName$ 縦棒チャートはカテゴリ チャートのグループに属し、チャートの下から上へデータポイントの値に向かって伸びる長方形のコレクションを使用して描画されます。`ColumnSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`ColumnSeries` は `BarSeries` と同じデータプロットの概念を使用しますが、データポイントは垂直線（y軸）ではなく水平線（x軸）に沿って引き伸ばされます。つまり、縦棒シリーズは棒シリーズのように描画されますが、反時計回りに 90 度回転されます。
 
-## $PlatformShort$ 縦棒チャートの例
+## $Platform$ 縦棒チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-column-series" 
-           alt="$PlatformShort$ 縦棒チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-column-series"
+           alt="$Platform$ 縦棒チャートの例"
            github-src="charts/data-chart/type-category-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ColumnSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ColumnSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Combo | Data Visualization Tools | Infragistics
-_description: Infragistics' $PlatformShort$ combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  $PlatformShort$!
-_keywords: $PlatformShort$ combo, drop down, $ProductName$, Infragistics
+title: $Platform$ Combo | Data Visualization Tools | Infragistics
+_description: Infragistics' $Platform$ combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  $Platform$!
+_keywords: $Platform$ combo, drop down, $ProductName$, Infragistics
 mentionedTypes: []
 ---
-# $PlatformShort$ Multi-Column Combo Box Overview
+# $Platform$ Multi-Column Combo Box Overview
 
 The Multi-Column Combo Box automatically generates columns for properties on the data object. This component is unique in that it's a combo box that visualizes large amounts of data similar to a data grid embedded in the dropdown.
 
-## $PlatformShort$ Multi-Column Combo Box Example
+## $Platform$ Multi-Column Combo Box Example
 
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="$PlatformShort$ Multi-Column Combo Box Example"
+           alt="$Platform$ Multi-Column Combo Box Example"
            github-src="editors/multi-column-combobox/overview">
 </code-view>
 

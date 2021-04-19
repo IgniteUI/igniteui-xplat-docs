@@ -95,6 +95,31 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}            ],
+           "originalName": "IsCustomPolarStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomPolarMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
            "originalName": "ScrollIntoView"
        },
@@ -107,6 +132,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

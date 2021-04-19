@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 円チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して円チャート、ドーナツ型チャート、ラジアル円チャートなどの円チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, pie charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 円チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 円チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して円チャート、ドーナツ型チャート、ラジアル円チャートなどの円チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, pie charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 円チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 円・ドーナツ型チャート
+# $Platform$ 円・ドーナツ型チャート
 
 $ProductName$ は以下のタイプの円チャートを提供します。
 

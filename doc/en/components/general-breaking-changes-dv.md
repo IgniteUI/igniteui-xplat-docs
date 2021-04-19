@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$ Breaking Changes | $ProductName$ | Infragistics
+title: $Platform$ Breaking Changes | $ProductName$ | Infragistics
 _description: Learn about breaking changes in the $ProductName$ and how to update your code to latest API.
 _keywords: Breaking Changes,  $ProductName$, Infragistics
 ---

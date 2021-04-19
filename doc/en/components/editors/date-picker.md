@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Date Picker | Data Visualization Tools | Infragistics
-_description: Infragistics' $PlatformShort$ date picker component helps your users select dates. Improve your graphs and visualization with Ignite UI for  $PlatformShort$!
-_keywords: $PlatformShort$ date picker, drop down, $ProductName$, Infragistics
+title: $Platform$ Date Picker | Data Visualization Tools | Infragistics
+_description: Infragistics' $Platform$ date picker component helps your users select dates. Improve your graphs and visualization with Ignite UI for  $Platform$!
+_keywords: $Platform$ date picker, drop down, $ProductName$, Infragistics
 mentionedTypes: ['DatePicker']
 ---
-# $PlatformShort$ Date Picker Overview
+# $Platform$ Date Picker Overview
 
 The Date Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
 
-## $PlatformShort$ Date Picker Example
+## $Platform$ Date Picker Example
 
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="$PlatformShort$ Date Picker Example"
+           alt="$Platform$ Date Picker Example"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -53,7 +53,7 @@ ModuleManager.register(IgcDatePickerModule);
 
 ## Usage
 
-The $PlatformShort$ Date Picker editor component consists of three default parts - the text area, a calendar drop-down button, and a clear button. These areas are described below:
+The $Platform$ Date Picker editor component consists of three default parts - the text area, a calendar drop-down button, and a clear button. These areas are described below:
 
 - Text Area: This displays the selected date, stored in the `Value` property of the editor.
 

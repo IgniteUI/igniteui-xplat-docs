@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 열 필터 API
+# $Platform$ 열 필터 API
 
 $ProductName$ 데이터 표/데이터 그리드에는 필터링되는 열의 데이터 유형을 기반으로 정렬 조건을 실행할 수 있는 열 필터 API가 포함되어 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 

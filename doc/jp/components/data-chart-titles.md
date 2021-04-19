@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | タイトルとサブタイトル | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャートのタイトルとサブタイトルを使用して、上部セクションに情報を追加します。$ProductName$ グラフのタイトルとサブタイトル機能をお試しください!
-_keywords: $PlatformShort$ charts, data chart, chart title, chart subtitle, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, チャート サブタイトル, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | タイトルとサブタイトル | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャートのタイトルとサブタイトルを使用して、上部セクションに情報を追加します。$ProductName$ グラフのタイトルとサブタイトル機能をお試しください!
+_keywords: $Platform$ charts, data chart, chart title, chart subtitle, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, チャート サブタイトル, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ タイトルとサブタイトル
+# $Platform$ タイトルとサブタイトル
 
-$PlatformShort$ データ チャート コンポーネントの `Title` と `Subtitle` の機能は、チャート コントロールの一番上のセクションに情報を追加できます。チャートにタイトルまたはサブタイトルを追加すると、チャートの内容は自動的にサイズ変更され、指定したタイトルとサブタイトルの情報が表示されます。
+$Platform$ データ チャート コンポーネントの `Title` と `Subtitle` の機能は、チャート コントロールの一番上のセクションに情報を追加できます。チャートにタイトルまたはサブタイトルを追加すると、チャートの内容は自動的にサイズ変更され、指定したタイトルとサブタイトルの情報が表示されます。
 
-## $PlatformShort$ タイトルとサブタイトルの例
+## $Platform$ タイトルとサブタイトルの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles" 
-           alt="$PlatformShort$ タイトルとサブタイトルの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles"
+           alt="$Platform$ タイトルとサブタイトルの例"
            github-src="charts/data-chart/chart-titles">
 </code-view>
 
@@ -24,7 +24,7 @@ $PlatformShort$ データ チャート コンポーネントの `Title` と `Sub
 チャートのタイトルと字幕のテキストの色、スタイル、および余白をスタイルするためのプロパティが用意されています。以下のコード スニペットは、チャートのタイトルを設定およびカスタマイズする方法を示しています。
 
 ```razor
-<DataChart Height="600px" 
+<DataChart Height="600px"
     Width="100%"ChartTitle="Energy Use Per Country"
     Subtitle="Results over a two year period"
     TitleTextColor="Red"

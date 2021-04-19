@@ -1,13 +1,13 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、柱状、エリア、棒、円、ドーナツなど、さまざまな種類のチャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, data sources, $PlatformShort$ チャート, データ チャート, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、柱状、エリア、棒、円、ドーナツなど、さまざまな種類のチャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics, data sources, $Platform$ チャート, データ チャート, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ データ ソース
+# $Platform$ データ ソース
 
-$PlatformShort$ データ チャート コンポーネントでは、すべてのシリーズを正しく表示するために特定の数値とデータ列の型を必要とします。このトピックでは、シリーズの各グループにデータソースを実装する方法の例を示します。
+$Platform$ データ チャート コンポーネントでは、すべてのシリーズを正しく表示するために特定の数値とデータ列の型を必要とします。このトピックでは、シリーズの各グループにデータソースを実装する方法の例を示します。
 
 - [カテゴリ シリーズ](data-chart-type-category-series.md) の [SampleCategoryData](data-chart-data-sources-category.md)
 - [ファイナンシャル シリーズ](data-chart-type-financial-series.md) の [SampleFinancialData](data-chart-data-sources-financial.md)

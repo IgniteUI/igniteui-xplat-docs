@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Range Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create range column charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, range column charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Range Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create range column charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, range column charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Range Column Chart
+# $Platform$ Range Column Chart
 
 The $ProductName$ range column chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the x-axis. The `RangeColumnSeries` is identical to the `RangeAreaSeries` in all aspects except that the ranges are represented as filled area rather than a set of vertical columns.
 
-## $PlatformShort$ Range Column Chart Example
+## $Platform$ Range Column Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-column-series" 
-           alt="$PlatformShort$ Range Column Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-column-series"
+           alt="$Platform$ Range Column Chart Example"
            github-src="charts/data-chart/type-range-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `RangeColumnSeries`:
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `RangeColumnSeries`:
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

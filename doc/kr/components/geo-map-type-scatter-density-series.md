@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 ---
-# $PlatformShort$ Using Scatter High Density Series
+# $Platform$ Using Scatter High Density Series
 
 Use the map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"  >
 </code-view>
 

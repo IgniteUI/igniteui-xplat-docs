@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create high density scatter series. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, high density scatter, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create high density scatter series. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, high density scatter, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart', 'PolarBase']
 ---
-# $PlatformShort$ Sample Data Source for Scatter HD Series
+# $Platform$ Sample Data Source for Scatter HD Series
 
 This topic provides an example on how to implement data source for [Scatter HD Series](data-chart-type-polar-series.md)
 
@@ -21,7 +21,7 @@ public class SampleDensityData
             generate(data, amount / 4, 0, 0, 100000, 25000);
             generate(data, amount / 8, 0, 0, 150000, 30000);
             generate(data, amount / 8, 0, 0, 200000, 75000);
-           
+
             return data;
         }
 

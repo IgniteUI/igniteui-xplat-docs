@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | マーカー | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | マーカー | インフラジスティックス
 _description: インフラジスティックスの $Platform Short$ チャートのマーカーを使用して、値が主グリッド線と副グリッド線の間にある場合でもデータ ポイントを識別します。$ProductName$ グラフのマーク機能をお試しください!
-_keywords: $PlatformShort$ charts, data chart, markers, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, マーカー, インフラジスティックス
+_keywords: $Platform$ charts, data chart, markers, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, マーカー, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'MarkerSeries']
 _language: ja
 ---
-# $PlatformShort$ マーカー
+# $Platform$ マーカー
 
-$PlatformShort$ データ チャート コンポーネントのプロット領域では、マーカーはデータポイントの位置に表示される視覚的要素です。マーカーは、値が主グリッド線と副グリッド線の間にある場合でも、データポイントを容易に識別できるできるようユーザーをサポートします。
+$Platform$ データ チャート コンポーネントのプロット領域では、マーカーはデータポイントの位置に表示される視覚的要素です。マーカーは、値が主グリッド線と副グリッド線の間にある場合でも、データポイントを容易に識別できるできるようユーザーをサポートします。
 
-## $PlatformShort$ マーカーの例
+## $Platform$ マーカーの例
 
 
-<code-view style="height: 300px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-markers" 
-           alt="$PlatformShort$ マーカーの例" 
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-markers"
+           alt="$Platform$ マーカーの例"
            github-src="charts/data-chart/series-markers">
 </code-view>
 

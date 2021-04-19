@@ -1,29 +1,29 @@
 ---
-title: $PlatformShort$ Financial Chart | High Volume Data | Infragistics
-_description: Learn how to optimize the performance of the Infragistics' $PlatformShort$ financial chart control. Improve the $ProductName$graph's performance!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics
-mentionedTypes: ['XamFinancialChart']
+title: $Platform$ Financial Chart | High Volume Data | Infragistics
+_description: Learn how to optimize the performance of the Infragistics' $Platform$ financial chart control. Improve the $ProductName$graph's performance!
+_keywords: $Platform$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics
+mentionedTypes: ['FinancialChart']
 ---
-# $PlatformShort$ Binding High Volume Data
+# $Platform$ Binding High Volume Data
 
-The $PlatformShort$ financial chart component is capable of handling high volumes of data. The following demo binds 20 years of data, with 1 hour intervals and displays the stock prices using line chart type.
+The $Platform$ financial chart component is capable of handling high volumes of data. The following demo binds 20 years of data, with 1 hour intervals and displays the stock prices using line chart type.
 
-## $PlatformShort$ Binding High Volume Data Example
+## $Platform$ Binding High Volume Data Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume" 
-           alt="$PlatformShort$ Binding High Volume Data Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-high-volume"
+           alt="$Platform$ Binding High Volume Data Example"
            github-src="charts/financial-chart/high-volume">
 </code-view>
 
 <div class="divider--half"></div>
 
-There are several chart features and $PlatformShort$ specific features that affect performance of the chart and they should be considered when optimizing performance in your application.
+There are several chart features and $Platform$ specific features that affect performance of the chart and they should be considered when optimizing performance in your application.
 
 > [!NOTE]
 > For Angular:
-> When storing lots of data in properties in your components to bind against, you should make sure to set `changeDetection: ChangeDetectionStrategy.OnPush` in your `@Component` decorator. Setting this will tell $PlatformShort$ not to dig deeply into changes within your data array, something you don't want $PlatformShort$ doing every change detection cycle.
+> When storing lots of data in properties in your components to bind against, you should make sure to set `changeDetection: ChangeDetectionStrategy.OnPush` in your `@Component` decorator. Setting this will tell $Platform$ not to dig deeply into changes within your data array, something you don't want $Platform$ doing every change detection cycle.
 
 The following code demonstrates how to bind the financial chart to high volumes of data.
 

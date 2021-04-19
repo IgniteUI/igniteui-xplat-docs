@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create financial charts such as Candlestick and OHLC and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create financial charts such as Candlestick and OHLC and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries', 'FinancialSeries']
 ---
-# $PlatformShort$ Sample Data Source for Financial Series
+# $Platform$ Sample Data Source for Financial Series
 
 This topic provides an example on how to implement data source for [Financial Series](data-chart-type-financial-series.md)
 
@@ -15,7 +15,7 @@ public class SampleFinancialData
         public static List<SampleFinancialItem> Create(int itemsCount = 365)
         {
             var data = new List<SampleFinancialItem>();
-           
+
             // initial values
             var v = 10000.0;
             var o = 500.0;

@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ウォーターフォール  チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してウォーターフォール  チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, waterfall chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ウォーター フォール チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ウォーターフォール  チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してウォーターフォール  チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, waterfall chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ウォーター フォール チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ウォーターフォール チャート
+# $Platform$ ウォーターフォール チャート
 
-$ProductName$ ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用してレンダリングされます。値の正/負の変化を区別するため、列は色分けされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。$PlatformShort$ `WaterfallSeries` は、外観は $PlatformShort$ `RangeColumnSeries` に似ていますが、各データポイントに2列ではなく、1 つの数値データ列のみが必要です。
+$ProductName$ ウォーターフォール チャートはカテゴリ チャートのグループに属し、連続するデータポイント間の差を示す垂直列のコレクションを使用してレンダリングされます。値の正/負の変化を区別するため、列は色分けされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。$Platform$ `WaterfallSeries` は、外観は $Platform$ `RangeColumnSeries` に似ていますが、各データポイントに2列ではなく、1 つの数値データ列のみが必要です。
 
-## $PlatformShort$ ウォーターフォール チャートの例
+## $Platform$ ウォーターフォール チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series" 
-           alt="$PlatformShort$ ウォーターフォール チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-waterfall-series"
+           alt="$Platform$ ウォーターフォール チャートの例"
            github-src="charts/data-chart/type-category-waterfall-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`WaterfallSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`WaterfallSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

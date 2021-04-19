@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 範囲チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、範囲エリア、範囲柱状などの範囲チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, range charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 範囲チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 範囲チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、範囲エリア、範囲柱状などの範囲チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, range charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 範囲チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ エリア シリーズ
+# $Platform$ エリア シリーズ
 
-このトピックでは、$PlatformShort$ データ チャート コンポーネントコントロールのさまざまな種類のエリア シリーズについて説明します。エリア シリーズは、2 つの数値データ列を使用し、それらを水平方向に引き伸ばされたデータポイントのコレクションとしてレンダリングする一連のチャート シリーズです (`RangeAreaSeries` など)。
+このトピックでは、$Platform$ データ チャート コンポーネントコントロールのさまざまな種類のエリア シリーズについて説明します。エリア シリーズは、2 つの数値データ列を使用し、それらを水平方向に引き伸ばされたデータポイントのコレクションとしてレンダリングする一連のチャート シリーズです (`RangeAreaSeries` など)。
 
-## $PlatformShort$ エリア シリーズの例
+## $Platform$ エリア シリーズの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series" 
-           alt="$PlatformShort$ エリア シリーズの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-series"
+           alt="$Platform$ エリア シリーズの例"
            github-src="charts/data-chart/type-range-series">
 </code-view>
 
@@ -31,7 +31,7 @@ _language: ja
 
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、エリア シリーズで使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、エリア シリーズで使用できるのは以下のタイプの軸のみです。
 
 | Series タイプ         | YAxis タイプ     | XAxis タイプ      |
 |---------------------|----------------|-----------------|
@@ -145,7 +145,7 @@ ModuleManager.register(
 <DataChart Height="500px" Width="750px">
         <CategoryXAxis Name="xAxis" Label="Year" DataSource="@DataSource"/>
         <NumericYAxis  Name="yAxis" />
-        <RangeColumnSeries Name="series1" 
+        <RangeColumnSeries Name="series1"
             XAxisName="xAxis"           YAxisName="yAxis"
             DataSource="@DataSource"
             LowMemberPath="Low"

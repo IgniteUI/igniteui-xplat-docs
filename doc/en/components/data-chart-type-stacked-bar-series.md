@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Stacked Bar Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked bar charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked bar charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Stacked Bar Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked bar charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked bar charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','StackedBarSeries']
 namespace: Infragistics.Controls.Charts
 ---
-# $PlatformShort$ Stacked Bar Chart
+# $Platform$ Stacked Bar Chart
 
 The $ProductName$ stacked bar chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked next to each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the x-axis, and all negative values are grouped on the negative side of the x-axis. `StackedBarSeries` uses the same concepts of data plotting as `StackedColumnSeries` but data points are stacked along horizontal line (x-axis) rather than along vertical line (y-axis). In other words, the stacked bar chart is rendered like the stacked column chart but with 90 degrees clockwise rotation.
 
-## $PlatformShort$ Stacked Bar Chart Example
+## $Platform$ Stacked Bar Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-bar-series" 
-           alt="$PlatformShort$ Stacked Bar Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-bar-series"
+           alt="$Platform$ Stacked Bar Chart Example"
            github-src="charts/data-chart/type-stacked-bar-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ stacked bar chart belongs to a group of category charts and is
 The `StackedBarSeries` has its own `Series` collection in which you can place the `StackedFragmentSeries` elements. These fragments are what make up the actual rendering of the chart and are the elements that accept the `ValueMemberPath`.
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `StackedBarSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `StackedBarSeries`.
 
 - `NumericXAxis`
 - `CategoryYAxis`
@@ -115,8 +115,8 @@ This code demonstrates how to create an instance of the $ProductName$ data chart
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedBarSeries 
-      XAxisName="xAxis" 
+    <StackedBarSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

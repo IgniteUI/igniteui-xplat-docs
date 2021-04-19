@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 範囲縦棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して範囲縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, range column charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 範囲縦棒チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 範囲縦棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して範囲縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, range column charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 範囲縦棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 範囲縦棒チャート
+# $Platform$ 範囲縦棒チャート
 
 $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は y 軸に表示され、カテゴリは x 軸に表示されます。`RangeColumnSeries` は、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は `RangeAreaSeries` と同じです。
 
-## $PlatformShort$ 範囲縦棒チャートの例
+## $Platform$ 範囲縦棒チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-column-series" 
-           alt="$PlatformShort$ 範囲縦棒チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-column-series"
+           alt="$Platform$ 範囲縦棒チャートの例"
            github-src="charts/data-chart/type-range-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RangeColumnSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RangeColumnSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

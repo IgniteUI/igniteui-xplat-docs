@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Point Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create point charts such as scatter marker chart, scatter bubble chart and polar scatter chart. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, point charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Point Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create point charts such as scatter marker chart, scatter bubble chart and polar scatter chart. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, point charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Point Charts
+# $Platform$ Point Charts
 
 The $ProductName$ provides the following types of point charts:
 

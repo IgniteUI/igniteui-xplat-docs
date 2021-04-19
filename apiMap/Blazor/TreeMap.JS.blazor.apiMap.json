@@ -386,7 +386,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "Value"}            ],
            "originalName": "Value"
        },
         {

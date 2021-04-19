@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | 列サイズ変更 | インフラジスティックス
+title: $Platform$ データ グリッド | 列サイズ変更 | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ グリッド コンポーネントは列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $PlatformShort$ Table, Data Grid, column resizing, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列サイズ変更, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column resizing, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列サイズ変更, インフラジスティックス
 mentionedTypes: ['Grid', 'ColumnResizingMode', 'ColumnResizingAnimationMode']
 _language: ja
 ---
 
-# $PlatformShort$ グリッドの列サイズ変更
+# $Platform$ グリッドの列サイズ変更
 
 $ProductName$ Data Grid は列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。
 
-## $PlatformShort$ グリッドの列サイズ変更の例
+## $Platform$ グリッドの列サイズ変更の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-resizing" 
-           alt="$PlatformShort$ グリッドの列サイズ変更の例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-resizing"
+           alt="$Platform$ グリッドの列サイズ変更の例"
            github-src="grids/data-grid/column-resizing">
 </code-view>
 
@@ -38,7 +38,7 @@ $ProductName$ データグリッド内の列サイズ変更はデフォルトで
 
 ## コード スニペット
 
-以下のコード スニペットは、$PlatformShort$ データ グリッドで列のサイズ変更を実装する方法を示します。この場合、<b>Street</b> 列はサイズ変更できません。</b>この場合、列のサイズ変更セパレーターの幅は 5 ピクセルになり、サイズ変更可能な列もサイズ変更時にアニメーション化されます。
+以下のコード スニペットは、$Platform$ データ グリッドで列のサイズ変更を実装する方法を示します。この場合、<b>Street</b> 列はサイズ変更できません。</b>この場合、列のサイズ変更セパレーターの幅は 5 ピクセルになり、サイズ変更可能な列もサイズ変更時にアニメーション化されます。
 
 <!--React-->
 ```ts

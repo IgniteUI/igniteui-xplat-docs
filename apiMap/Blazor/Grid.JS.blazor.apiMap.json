@@ -129,11 +129,6 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLeaveActionDesired"}            ],
-           "originalName": "IsLeaveActionDesired"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsControlPressed"}            ],
            "originalName": "IsControlPressed"
        },
@@ -194,6 +189,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "MouseEnterCell"}            ],
+           "originalName": "MouseEnterCell"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "MouseIsOver"}            ],
            "originalName": "MouseIsOver"
        },
@@ -234,8 +234,18 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StartEditMode"}            ],
+           "originalName": "StartEditMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "EditorCellLostFocus"}            ],
            "originalName": "EditorCellLostFocus"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CancelEditMode"}            ],
+           "originalName": "CancelEditMode"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid"
 },
@@ -526,6 +536,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HoverStatus"}            ],
+           "originalName": "HoverStatus"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "CellContentHorizontalAlignment", "mappedName": "HorizontalAlignment"}            ],
            "originalName": "HorizontalAlignment"
        },
@@ -568,6 +583,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectedBackground"}            ],
            "originalName": "SelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HoverBackground"}            ],
+           "originalName": "HoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HoverTextColor"}            ],
+           "originalName": "HoverTextColor"
        },
         {
            "names": [
@@ -786,6 +811,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsInEditMode"}            ],
+           "originalName": "IsInEditMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "EditID"}            ],
            "originalName": "EditID"
        },
@@ -836,6 +866,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "DateTimeValue"}            ],
            "originalName": "DateTimeValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatStringOverride"}            ],
+           "originalName": "FormatStringOverride"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
        },
         {
            "names": [
@@ -906,6 +946,31 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "EditorValueField"}            ],
            "originalName": "EditorValueField"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TargetRow"}            ],
+           "originalName": "TargetRow"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TargetColumn"}            ],
+           "originalName": "TargetColumn"
+       }   ],
+    "originalBaseTypeName": "CellModel",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorRowCellModel",
+   "names": [
+        { "platform": "Blazor",     "fileName": "EditorRowCellInfo.cs",
+ "mappedName": "EditorRowCellInfo"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "EditTarget"}            ],
+           "originalName": "EditTarget"
        }   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -991,6 +1056,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasDecimalValue"}            ],
            "originalName": "HasDecimalValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatStringOverride"}            ],
+           "originalName": "FormatStringOverride"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
        },
         {
            "names": [
@@ -1548,6 +1623,50 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsRowHoverEnabled"}            ],
+           "originalName": "IsRowHoverEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RowHoverBackground"}            ],
+           "originalName": "RowHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RowHoverTextColor"}            ],
+           "originalName": "RowHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "EditRowBorder"}            ],
+           "originalName": "EditRowBorder"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditRowBorderWidthBottom"}            ],
+           "originalName": "editRowBorderWidth.bottom"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditRowBorderWidthLeft"}            ],
+           "originalName": "editRowBorderWidth.left"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditRowBorderWidthRight"}            ],
+           "originalName": "editRowBorderWidth.right"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditRowBorderWidthTop"}            ],
+           "originalName": "editRowBorderWidth.top"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "SectionHeader", "mappedName": "SectionHeader"}            ],
            "originalName": "SectionHeader"
        },
@@ -1653,6 +1772,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "EditOnKeyPress"}            ],
+           "originalName": "EditOnKeyPress"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AutoGenerateColumns"}            ],
            "originalName": "AutoGenerateColumns"
        },
@@ -1685,6 +1809,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "RowSelectionAnimationMode", "mappedName": "RowSelectionAnimationMode"}            ],
            "originalName": "RowSelectionAnimationMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "RowHoverAnimationMode", "mappedName": "RowHoverAnimationMode"}            ],
+           "originalName": "RowHoverAnimationMode"
        },
         {
            "names": [
@@ -2141,6 +2270,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "EnterKeyBehaviors", "mappedName": "EnterBehavior"}            ],
+           "originalName": "EnterBehavior"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "EnterBehaviorAfterEdit"}            ],
+           "originalName": "EnterBehaviorAfterEdit"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetHitCell"}            ],
            "originalName": "GetHitCell"
        },
@@ -2156,8 +2295,13 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExchangeColumn"}            ],
-           "originalName": "ExchangeColumn"
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyScrollStart"}            ],
+           "originalName": "NotifyScrollStart"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyScrollStop"}            ],
+           "originalName": "NotifyScrollStop"
        },
         {
            "names": [
@@ -2216,6 +2360,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollToPrimaryKey"}            ],
+           "originalName": "ScrollToPrimaryKey"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollToColumnByIndex"}            ],
            "originalName": "ScrollToColumnByIndex"
        },
@@ -2236,18 +2385,13 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetActiveResponsiveState1"}            ],
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetActiveResponsiveState"}            ],
            "originalName": "SetActiveResponsiveState"
        },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "DataIndexOfItem"}            ],
            "originalName": "DataIndexOfItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveCellValue"}            ],
-           "originalName": "ResolveCellValue"
        },
         {
            "names": [
@@ -2283,11 +2427,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "AcceptCommit"}            ],
            "originalName": "AcceptCommit"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RejectCommit"}            ],
-           "originalName": "RejectCommit"
        },
         {
            "names": [
@@ -2328,6 +2467,26 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetEditError"}            ],
            "originalName": "SetEditError"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StartEditMode"}            ],
+           "originalName": "StartEditMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "EndEditMode"}            ],
+           "originalName": "EndEditMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SelectAllRows"}            ],
+           "originalName": "SelectAllRows"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "DeselectAllRows"}            ],
+           "originalName": "DeselectAllRows"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -2525,8 +2684,23 @@
    "members": [
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "CellInfo"}            ],
+           "originalName": "CellInfo"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "Grid"}            ],
            "originalName": "Grid"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MouseButton", "mappedName": "Button"}            ],
+           "originalName": "Button"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDoubleClick"}            ],
+           "originalName": "IsDoubleClick"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -2611,8 +2785,18 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "CellInfo"}            ],
+           "originalName": "CellInfo"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
            "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
        },
         {
            "names": [
@@ -2681,6 +2865,111 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "GridColumnWidthChangedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnWidthChangedEventArgs.cs",
+ "mappedName": "GridColumnWidthChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnWidth", "mappedName": "OldWidth"}            ],
+           "originalName": "OldWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnWidth", "mappedName": "NewWidth"}            ],
+           "originalName": "NewWidth"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCellEditStartedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridCellEditStartedEventArgs.cs",
+ "mappedName": "GridCellEditStartedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCellEditEndedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridCellEditEndedEventArgs.cs",
+ "mappedName": "GridCellEditEndedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridRowEditStartedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridRowEditStartedEventArgs.cs",
+ "mappedName": "GridRowEditStartedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridRowEditEndedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridRowEditEndedEventArgs.cs",
+ "mappedName": "GridRowEditEndedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Row"}            ],
+           "originalName": "Row"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "CellRange",
    "names": [
         { "platform": "Blazor",     "fileName": "CellRange.cs",
@@ -2716,18 +3005,18 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "RowItem"}            ],
+               { "platform": "Blazor",  "mappedType": "PrimaryKeyValue", "mappedName": "PrimaryKey"}            ],
+           "originalName": "PrimaryKey"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "object", "mappedName": "RowItem"}            ],
            "originalName": "RowItem"
        },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ColumnUniqueKey"}            ],
            "originalName": "ColumnUniqueKey"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "ResolvedColumn"}            ],
-           "originalName": "ResolvedColumn"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -2739,8 +3028,23 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "FormatOverride"}            ],
-           "originalName": "FormatOverride"
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ValueFormat"}            ],
+           "originalName": "ValueFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
+           "originalName": "ValueFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DisplayFormat"}            ],
+           "originalName": "DisplayFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
+           "originalName": "DisplayFormatSpecifiers"
        },
         {
            "names": [
@@ -2787,8 +3091,8 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -2805,8 +3109,8 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -2825,8 +3129,23 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "FormatOverride"}            ],
-           "originalName": "FormatOverride"
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ValueFormat"}            ],
+           "originalName": "ValueFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
+           "originalName": "ValueFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DisplayFormat"}            ],
+           "originalName": "DisplayFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
+           "originalName": "DisplayFormatSpecifiers"
        },
         {
            "names": [
@@ -2843,8 +3162,8 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyPath"}            ],
-           "originalName": "PropertyPath"
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Field"}            ],
+           "originalName": "Field"
        },
         {
            "names": [
@@ -2891,11 +3210,6 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSource", "mappedName": "ActualDataSource"}            ],
-           "originalName": "ActualDataSource"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
            "originalName": "ItemsSource"
        },
@@ -2923,6 +3237,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "DateTimeFormats", "mappedName": "DateTimeFormat"}            ],
            "originalName": "DateTimeFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
        },
         {
            "names": [
@@ -3256,6 +3580,26 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualSelectedBackground"}            ],
            "originalName": "ActualSelectedBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RowHoverBackground"}            ],
+           "originalName": "RowHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualHoverBackground"}            ],
+           "originalName": "ActualHoverBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RowHoverTextColor"}            ],
+           "originalName": "RowHoverTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualRowHoverTextColor"}            ],
+           "originalName": "ActualRowHoverTextColor"
        },
         {
            "names": [
@@ -3596,6 +3940,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowGroupingSeparator"}            ],
            "originalName": "ShowGroupingSeparator"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatString"}            ],
+           "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+           "originalName": "FormatSpecifiers"
        },
         {
            "names": [

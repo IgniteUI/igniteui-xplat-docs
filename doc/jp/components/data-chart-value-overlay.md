@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 値オーバーレイ | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 値オーバーレイ | インフラジスティックス
 _description: $ProductName$ チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
+_keywords: $Platform$ charts, data chart, value overlay, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $PlatformShort$ 値オーバーレイ
+# $Platform$ 値オーバーレイ
 
 $ProductName$ データ チャート コンポーネントを使用すると、`ValueOverlay` を使用して定義した単一の数値で水平線または垂直線を配置できます。特定のシリーズの平均値や中央値などのデータを視覚化するのに役立ちます。
 
-## $PlatformShort$ 値オーバーレイ例
+## $Platform$ 値オーバーレイ例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay" 
-           alt="$PlatformShort$ 値オーバーレイ例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
+           alt="$Platform$ 値オーバーレイ例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
@@ -97,7 +97,7 @@ valueOverlay.axis = yAxis;
     <NumericYAxis Name="yAxis" MinimumValue="0" MaximumValue="10" />
 
     <ColumnSeries XAxisName="xAxis" YAxisName="yAxis" DataSource="DataSource" ValueMemberPath="Value" />
-    
+
     <ValueOverlay AxisName="yAxis" Value="5.0" Thickness="5" IsAxisAnnotationEnabled="true" />
 </DataChart>
 ```

@@ -1,5 +1,353 @@
 {
+"extraFiles": [
+"igr-local-data-source-module.ts"
+],
 "types": [
+{
+    "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+   "names": [
+        { "platform": "React",     "fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.ts",
+ "mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "pageSizeRequested"}            ],
+           "originalName": "PageSizeRequested"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "timeoutMilliseconds"}            ],
+           "originalName": "TimeoutMilliseconds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
+           "originalName": "PageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(success: boolean, requiresRefresh: boolean, messages: string[]) => void", "mappedName": "batchCompleted"}            ],
+           "originalName": "BatchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
+           "originalName": "ExecutionContext"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
+   "names": [
+        { "platform": "React",     "fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.ts",
+ "mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncDataSourcePageTaskHolder",
+   "names": [
+        { "platform": "React",     "fileName": "AsyncDataSourcePageTaskHolder.ts",
+ "mappedName": "AsyncDataSourcePageTaskHolder"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Task", "mappedName": "task"}            ],
+           "originalName": "Task"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncDataSourcePageRequest",
+   "names": [
+        { "platform": "React",     "fileName": "AsyncDataSourcePageRequest.ts",
+ "mappedName": "AsyncDataSourcePageRequest"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_index"}            ],
+           "originalName": "_index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_retryDelay"}            ],
+           "originalName": "_retryDelay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "_pageTask"}            ],
+           "originalName": "_pageTask"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_isDone"}            ],
+           "originalName": "_isDone"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "retryDelay"}            ],
+           "originalName": "RetryDelay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "taskHolder"}            ],
+           "originalName": "TaskHolder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDone"}            ],
+           "originalName": "IsDone"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "AsyncVirtualDataSourceProviderWorker",
+   "names": [
+        { "platform": "React",     "fileName": "AsyncVirtualDataSourceProviderWorker.ts",
+ "mappedName": "AsyncVirtualDataSourceProviderWorker"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LinkedList", "mappedName": "_requests"}            ],
+           "originalName": "_requests"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IList", "mappedName": "_tasks"}            ],
+           "originalName": "_tasks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "syncLock"}            ],
+           "originalName": "SyncLock"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_running"}            ],
+           "originalName": "_running"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_pageSizeRequested"}            ],
+           "originalName": "_pageSizeRequested"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_actualPageSize"}            ],
+           "originalName": "_actualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_timeoutMilliseconds"}            ],
+           "originalName": "_timeoutMilliseconds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceSchema", "mappedName": "_actualSchema"}            ],
+           "originalName": "_actualSchema"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "_actualCount"}            ],
+           "originalName": "_actualCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WeakReference", "mappedName": "_pageLoaded"}            ],
+           "originalName": "_pageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WeakReference", "mappedName": "_batchCompleted"}            ],
+           "originalName": "_batchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "WeakReference", "mappedName": "_executionContext"}            ],
+           "originalName": "_executionContext"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_populatedActualPageSize"}            ],
+           "originalName": "_populatedActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IList", "mappedName": "tasks"}            ],
+           "originalName": "Tasks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
+           "originalName": "PageLoaded"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(success: boolean, requiresRefresh: boolean, messages: string[]) => void", "mappedName": "batchCompleted"}            ],
+           "originalName": "BatchCompleted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
+           "originalName": "ExecutionContext"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualPageSize"}            ],
+           "originalName": "ActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualCount"}            ],
+           "originalName": "ActualCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IDataSourceSchema", "mappedName": "actualSchema"}            ],
+           "originalName": "ActualSchema"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "populatedActualPageSize"}            ],
+           "originalName": "PopulatedActualPageSize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRunning"}            ],
+           "originalName": "IsRunning"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "addPageRequest"}            ],
+           "originalName": "AddPageRequest"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "addPageRequestWithRetry"}            ],
+           "originalName": "AddPageRequestWithRetry"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "removePageRequest"}            ],
+           "originalName": "RemovePageRequest"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isShutdown"}            ],
+           "originalName": "IsShutdown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "removeAllPageRequests"}            ],
+           "originalName": "RemoveAllPageRequests"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "shutdown"}            ],
+           "originalName": "Shutdown"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "initialize"}            ],
+           "originalName": "Initialize"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "AsyncVirtualDataSourceProviderTaskDataHolder", "mappedName": "getTaskDataHolder"}            ],
+           "originalName": "GetTaskDataHolder"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "getTasksData"}            ],
+           "originalName": "GetTasksData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "removeCompletedTaskData"}            ],
+           "originalName": "RemoveCompletedTaskData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "getCompletedTaskData"}            ],
+           "originalName": "GetCompletedTaskData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "runATask"}            ],
+           "originalName": "RunATask"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "checkAndPotentiallyWaitOnTasks"}            ],
+           "originalName": "CheckAndPotentiallyWaitOnTasks"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "_initialized"}            ],
+           "originalName": "_initialized"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "doWork"}            ],
+           "originalName": "DoWork"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "makeTaskForRequest"}            ],
+           "originalName": "MakeTaskForRequest"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "processCompletedTask"}            ],
+           "originalName": "ProcessCompletedTask"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "retryIndex"}            ],
+           "originalName": "RetryIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLastPage"}            ],
+           "originalName": "IsLastPage"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "createBatchRequest"}            ],
+           "originalName": "CreateBatchRequest"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
 {
     "originalName": "FilterFactory",
    "names": [
@@ -885,7 +1233,7 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "FilterExpressionFunctionType", "mappedName": "Length1"}            ],
+               { "platform": "React",  "mappedType": "FilterExpressionFunctionType", "mappedName": "Length"}            ],
            "originalName": "Length"
        },
         {
@@ -1211,6 +1559,39 @@
            "names": [
                { "platform": "React",  "mappedType": "DataSourceSectionHeaderDisplayMode", "mappedName": "Split"}            ],
            "originalName": "Split"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "DataSourceAggregatedResult",
+   "names": [
+        { "platform": "React",     "fileName": "DataSourceAggregatedResult.ts",
+ "mappedName": "DataSourceAggregatedResult"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionType", "mappedName": "transactionType"}            ],
+           "originalName": "TransactionType"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "keys"}            ],
+           "originalName": "Keys"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any[]", "mappedName": "values"}            ],
+           "originalName": "Values"
        },
         {
            "names": [
@@ -2325,329 +2706,134 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
-    "originalName": "AsyncVirtualDataSourceDataProviderWorkerSettings",
+    "originalName": "TransactionState",
    "names": [
-        { "platform": "React",     "fileName": "AsyncVirtualDataSourceDataProviderWorkerSettings.ts",
- "mappedName": "AsyncVirtualDataSourceDataProviderWorkerSettings"}   ],
+        { "platform": "React",     "fileName": "igr-transaction-state.ts",
+ "mappedName": "IgrTransactionState"}   ],
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "pageSizeRequested"}            ],
-           "originalName": "PageSizeRequested"
+               { "platform": "React",  "mappedType": "any", "mappedName": "id"}            ],
+           "originalName": "ID"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "timeoutMilliseconds"}            ],
-           "originalName": "TimeoutMilliseconds"
+               { "platform": "React",  "mappedType": "TransactionType", "mappedName": "transactionType"}            ],
+           "originalName": "TransactionType"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
-           "originalName": "PageLoaded"
+               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
-           "originalName": "ExecutionContext"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
+               { "platform": "React",  "mappedType": "any", "mappedName": "version"}            ],
+           "originalName": "Version"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncVirtualDataSourceProviderTaskDataHolder",
+    "originalName": "TransactionType",
+    "isEnum": true,
    "names": [
-        { "platform": "React",     "fileName": "AsyncVirtualDataSourceProviderTaskDataHolder.ts",
- "mappedName": "AsyncVirtualDataSourceProviderTaskDataHolder"}   ],
+        { "platform": "React",     "fileName": "TransactionType.ts",
+ "mappedName": "TransactionType"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionType", "mappedName": "Add"}            ],
+           "originalName": "Add"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionType", "mappedName": "Update"}            ],
+           "originalName": "Update"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionType", "mappedName": "Delete"}            ],
+           "originalName": "Delete"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncDataSourcePageTaskHolder",
+    "originalName": "TransactionEvent",
+    "isEnum": true,
    "names": [
-        { "platform": "React",     "fileName": "AsyncDataSourcePageTaskHolder.ts",
- "mappedName": "AsyncDataSourcePageTaskHolder"}   ],
+        { "platform": "React",     "fileName": "TransactionEvent.ts",
+ "mappedName": "TransactionEvent"}   ],
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "Task", "mappedName": "task"}            ],
-           "originalName": "Task"
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "Undo"}            ],
+           "originalName": "Undo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "Redo"}            ],
+           "originalName": "Redo"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "Clear"}            ],
+           "originalName": "Clear"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "Add"}            ],
+           "originalName": "Add"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "End"}            ],
+           "originalName": "End"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "TransactionEvent", "mappedName": "Commit"}            ],
+           "originalName": "Commit"
        },
         {
            "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 },
 {
-    "originalName": "AsyncDataSourcePageRequest",
+    "originalName": "TransactionPendingState",
+    "isEnum": true,
    "names": [
-        { "platform": "React",     "fileName": "AsyncDataSourcePageRequest.ts",
- "mappedName": "AsyncDataSourcePageRequest"}   ],
+        { "platform": "React",     "fileName": "TransactionPendingState.ts",
+ "mappedName": "TransactionPendingState"}   ],
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_index"}            ],
-           "originalName": "_index"
+               { "platform": "React",  "mappedType": "TransactionPendingState", "mappedName": "Pending"}            ],
+           "originalName": "Pending"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_retryDelay"}            ],
-           "originalName": "_retryDelay"
+               { "platform": "React",  "mappedType": "TransactionPendingState", "mappedName": "Accept"}            ],
+           "originalName": "Accept"
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "_pageTask"}            ],
-           "originalName": "_pageTask"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "_isDone"}            ],
-           "originalName": "_isDone"
+               { "platform": "React",  "mappedType": "TransactionPendingState", "mappedName": "Reject"}            ],
+           "originalName": "Reject"
        },
         {
            "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "retryDelay"}            ],
-           "originalName": "RetryDelay"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "AsyncDataSourcePageTaskHolder", "mappedName": "taskHolder"}            ],
-           "originalName": "TaskHolder"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDone"}            ],
-           "originalName": "IsDone"
        }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
-},
-{
-    "originalName": "AsyncVirtualDataSourceProviderWorker",
-   "names": [
-        { "platform": "React",     "fileName": "AsyncVirtualDataSourceProviderWorker.ts",
- "mappedName": "AsyncVirtualDataSourceProviderWorker"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "LinkedList", "mappedName": "_requests"}            ],
-           "originalName": "_requests"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IList", "mappedName": "_tasks"}            ],
-           "originalName": "_tasks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "syncLock"}            ],
-           "originalName": "SyncLock"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "_running"}            ],
-           "originalName": "_running"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_pageSizeRequested"}            ],
-           "originalName": "_pageSizeRequested"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_actualPageSize"}            ],
-           "originalName": "_actualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_timeoutMilliseconds"}            ],
-           "originalName": "_timeoutMilliseconds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IDataSourceSchema", "mappedName": "_actualSchema"}            ],
-           "originalName": "_actualSchema"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "_actualCount"}            ],
-           "originalName": "_actualCount"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "WeakReference", "mappedName": "_pageLoaded"}            ],
-           "originalName": "_pageLoaded"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "WeakReference", "mappedName": "_executionContext"}            ],
-           "originalName": "_executionContext"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "_populatedActualPageSize"}            ],
-           "originalName": "_populatedActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IList", "mappedName": "tasks"}            ],
-           "originalName": "Tasks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "(page: IDataSourcePage, currentFullCount: number, actualPageSize: number) => void", "mappedName": "pageLoaded"}            ],
-           "originalName": "PageLoaded"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IDataSourceExecutionContext", "mappedName": "executionContext"}            ],
-           "originalName": "ExecutionContext"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualPageSize"}            ],
-           "originalName": "ActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualCount"}            ],
-           "originalName": "ActualCount"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IDataSourceSchema", "mappedName": "actualSchema"}            ],
-           "originalName": "ActualSchema"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "populatedActualPageSize"}            ],
-           "originalName": "PopulatedActualPageSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRunning"}            ],
-           "originalName": "IsRunning"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "addPageRequest"}            ],
-           "originalName": "AddPageRequest"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "addPageRequestWithRetry"}            ],
-           "originalName": "AddPageRequestWithRetry"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "removePageRequest"}            ],
-           "originalName": "RemovePageRequest"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isShutdown"}            ],
-           "originalName": "IsShutdown"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "removeAllPageRequests"}            ],
-           "originalName": "RemoveAllPageRequests"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "shutdown"}            ],
-           "originalName": "Shutdown"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "initialize"}            ],
-           "originalName": "Initialize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "AsyncVirtualDataSourceProviderTaskDataHolder", "mappedName": "getTaskDataHolder"}            ],
-           "originalName": "GetTaskDataHolder"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "getTasksData"}            ],
-           "originalName": "GetTasksData"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "removeCompletedTaskData"}            ],
-           "originalName": "RemoveCompletedTaskData"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "getCompletedTaskData"}            ],
-           "originalName": "GetCompletedTaskData"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "runATask"}            ],
-           "originalName": "RunATask"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "checkAndPotentiallyWaitOnTasks"}            ],
-           "originalName": "CheckAndPotentiallyWaitOnTasks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "_initialized"}            ],
-           "originalName": "_initialized"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "doWork"}            ],
-           "originalName": "DoWork"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "makeTaskForRequest"}            ],
-           "originalName": "MakeTaskForRequest"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "processCompletedTask"}            ],
-           "originalName": "ProcessCompletedTask"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "retryIndex"}            ],
-           "originalName": "RetryIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLastPage"}            ],
-           "originalName": "IsLastPage"
-       }   ],
-    "originalNamespace": "Infragistics.Core.Controls.DataSource"
+    "originalNamespace": "Infragistics.Controls.DataSource.Transactions"
 }
 ]
 }

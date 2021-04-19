@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 積層型チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、積層型エリア チャート、積層型棒チャートなどの積層型チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 積層型チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 積層型チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、積層型エリア チャート、積層型棒チャートなどの積層型チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 積層型チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','StackedColumnSeries']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $PlatformShort$ 積層シリーズ
+# $Platform$ 積層シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントの積層シリーズのさまざまなタイプについて説明します。積層シリーズは、データを受け取り、それを水平線 (`ColumnSeries` など) または垂直線 (`BarSeries` など) に沿って伸びるデータポイントの集まりとしてレンダリングするチャートシリーズの最も単純で最も一般的な形式のグループです。
+このトピックは、$Platform$ データ チャート コンポーネントの積層シリーズのさまざまなタイプについて説明します。積層シリーズは、データを受け取り、それを水平線 (`ColumnSeries` など) または垂直線 (`BarSeries` など) に沿って伸びるデータポイントの集まりとしてレンダリングするチャートシリーズの最も単純で最も一般的な形式のグループです。
 
-## $PlatformShort$ 積層シリーズの例
+## $Platform$ 積層シリーズの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-series" 
-           alt="$PlatformShort$ 積層シリーズの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-series"
+           alt="$Platform$ 積層シリーズの例"
            github-src="charts/data-chart/type-stacked-series">
 </code-view>
 
@@ -43,7 +43,7 @@ _language: ja
 | `Stacked100SplineSeries`|このシリーズは、y軸上の値の取り扱いを除いて、あらゆる点で `StackedSplineSeries` と同じです。`Stacked100SplineSeries` は、データを直接表現するのではなく、データ ポイント内のすべての値の合計に対するパーセントでデータを表現します。   |
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまな種類の軸を提供しますが、積み上げシリーズで使用できるのは以下の種類の軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまな種類の軸を提供しますが、積み上げシリーズで使用できるのは以下の種類の軸のみです。
 
 | シリーズ タイプ        |YAxis タイプ      |XAxis タイプ                      |
 |--------------------|-----------------|---------------------------------|
@@ -232,8 +232,8 @@ ModuleManager.register(
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedColumnSeries 
-      XAxisName="xAxis" 
+    <StackedColumnSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

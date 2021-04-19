@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 고성능 테이블
+# $Platform$ 고성능 테이블
 
-$ProductName$ 데이터 표/데이터 그리드는 고성능 데이터 시나리오에 최적화되어 있습니다.  빠른 로딩 시간, 제로 지연 시간 또는 화면 깜박임이 없는 부드러운 스크롤, $PlatformShort$ 그리드의 열과 행 가상화를 사용하여 $PlatformShort$ 데이터 그리드 애플리케이션의 행과 열을 무제한으로 스크롤할 수 있습니다.
+$ProductName$ 데이터 표/데이터 그리드는 고성능 데이터 시나리오에 최적화되어 있습니다.  빠른 로딩 시간, 제로 지연 시간 또는 화면 깜박임이 없는 부드러운 스크롤, $Platform$ 그리드의 열과 행 가상화를 사용하여 $Platform$ 데이터 그리드 애플리케이션의 행과 열을 무제한으로 스크롤할 수 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-performance"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-performance"
            github-src="grids/data-grid/performance">
 </code-view>
 
@@ -22,4 +22,4 @@ $ProductName$ 데이터 표/데이터 그리드는 고성능 데이터 시나리
 
 사용자는 지연, 화면 깜박임 또는 시각적 지연 등이 없이 Excel과 같은 스크롤 성능을 경험할 수 있습니다.
 
-위의 샘플은 수천 개의 금융 레코드를 $PlatformShort$ 데이터 그리드에 바인딩하고 지역별로 그룹화하며 다중 열을 수 밀리초마다 실시간 업데이트함으로써 이 성능을 보여줍니다.
+위의 샘플은 수천 개의 금융 레코드를 $Platform$ 데이터 그리드에 바인딩하고 지역별로 그룹화하며 다중 열을 수 밀리초마다 실시간 업데이트함으로써 이 성능을 보여줍니다.

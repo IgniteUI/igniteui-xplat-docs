@@ -21,11 +21,6 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
-           "originalName": "TitleStyle"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "titleColor"}            ],
            "originalName": "TitleColor"
        },

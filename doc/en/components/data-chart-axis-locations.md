@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Location | Infragistics
-_description: With the Infragistics' $PlatformShort$ charts control you can specify axis location in relation to the chart plot area. Create a $ProductName$ graph with two axis!
-_keywords: $PlatformShort$ charts, data chart, axis locations, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Axis Location | Infragistics
+_description: With the Infragistics' $Platform$ charts control you can specify axis location in relation to the chart plot area. Create a $ProductName$ graph with two axis!
+_keywords: $Platform$ charts, data chart, axis locations, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Axis Locations
+# $Platform$ Axis Locations
 
  For all axes have, you can specify axis location in relationship to chart plot area. This especially important when using more than two axes in the same data chart or when [Sharing Axis](data-chart-axis-sharing.md) between multiple series.
 
 
-## $PlatformShort$ Axis Locations Example
+## $Platform$ Axis Locations Example
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-locations" 
-           alt="$PlatformShort$ Axis Locations Example" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-locations"
+           alt="$Platform$ Axis Locations Example"
            github-src="charts/data-chart/axis-locations">
 </code-view>
 

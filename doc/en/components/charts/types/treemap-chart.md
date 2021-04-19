@@ -1,20 +1,21 @@
 ---
-title: $PlatformShort$ Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
-_keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
+title: $Platform$ Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
+_keywords: $Platform$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
 mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
 ---
-# $PlatformShort$ Treemap
+# $Platform$ Treemap
+
 The $ProductName$ Treemap chart displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node’s rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data.
 
-## $PlatformShort$ Treemap Example
+## $Platform$ Treemap Example
 
 In the following example, the treemap demonstrates the 30 largest countries in the world by total area.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="$PlatformShort$ Treemap Example"
+           alt="$Platform$ Treemap Example"
            github-src="charts/tree-map/overview">
 </code-view>
 
@@ -22,7 +23,7 @@ In the following example, the treemap demonstrates the 30 largest countries in t
 
 ## Treemap Recommendations
 
-### Are $PlatformShort$ Treemaps right for your project?
+### Are $Platform$ Treemaps right for your project?
 
 When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways. A second advantage of treemaps is that, by construction, they make efficient use of space. As a result, they can legibly display thousands of items on the screen simultaneously.
 
@@ -57,14 +58,14 @@ There are several common use cases for choosing a Treemap. When you:
 - All data items must contain at least one numeric data column which should be mapped using the `ValueMemberPath` property.
 - To categorize data into organized tiles you can optionally use `ParentIdMemberPath` and `IdMemberPath`.
 
-## $PlatformShort$ Treemap Configuration
+## $Platform$ Treemap Configuration
 
 In the following example, the treemap demonstrates the ability of changing it's algorithmic structure by modifying the `LayoutType` and `LayoutOrientation` properties.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
-           alt="$PlatformShort$ Treemap Layout Configuration"
+           alt="$Platform$ Treemap Layout Configuration"
            github-src="charts/tree-map/layout">
 </code-view>
 
@@ -81,7 +82,7 @@ The Treemap chart displays the relative weight of data. It uses a variety of alg
 The Treemap allows you to choose the algorithm that is best for your requirements, defaulting to use the Squarified method. It also includes the ability to allow you to colorize nodes using two mechanisms:
 
 - A group-based mechanism that colors items with like values
-- A scale-based mechanism similar to a map choropleth, which gradiates node colors based on their value.
+- A scale-based mechanism similar to a map choropleth, which maps node colors based on their value.
 
 ### Layout Orientation
 
@@ -92,14 +93,14 @@ Note that the `LayoutOrientation` property works with the layout types SliceAndD
 - `Horizontal` – the child nodes are going to be stacked horizontally(SliceAndDice).
 - `Vertical` – the child nodes are going to be stacked vertically (SliceAndDice).
 
-## $PlatformShort$ Treemap Styling
+## $Platform$ Treemap Styling
 
 In the following example, the treemap demonstrates the ability of changing the look and feel of the nodes achieved by styling through the `NodeStylingScript` event.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
-           alt="$PlatformShort$ Treemap Styling"
+           alt="$Platform$ Treemap Styling"
            github-src="charts/tree-map/styling">
 </code-view>
 
@@ -116,6 +117,6 @@ You can find more information about related chart types in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamTreemap`
+- `Treemap`
 - `LayoutOrientation`
 - `LayoutType`

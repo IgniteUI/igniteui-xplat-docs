@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | 行のグループ化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, row grouping, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 行のグループ化, インフラジスティックス
+title: $Platform$ データ グリッド | 行のグループ化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
+_keywords: $Platform$ Table, Data Grid, row grouping, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $PlatformShort$ 行のグループ化
+# $Platform$ 行のグループ化
 
 $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グループにまとめることができます。これ機能は Microsoft Outlook の Group By 機能に似ています。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。
 
-## $PlatformShort$ 行のグループ化の例
+## $Platform$ 行のグループ化の例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping" 
-           alt="$PlatformShort$ 行のグループ化の例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping"
+           alt="$Platform$ 行のグループ化の例"
            github-src="grids/data-grid/row-grouping">
 </code-view>
 
@@ -116,7 +116,7 @@ public connectedCallback() {
 ```razor
 <DataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
-    DataSource="DataSource"                      
+    DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split" />
 ```
 
@@ -142,7 +142,7 @@ public connectedCallback() {
 
 ```razor
 <DataGrid @ref="DataGridRef" Height="100%" Width="100%"
-    DataSource="DataSource"                      
+    DataSource="DataSource"
     IsGroupCollapsable="true" />
 ```
 
@@ -211,7 +211,7 @@ public connectedCallback() {
 ```razor
 <DataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
-    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"                      
+    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"
     IsGroupCollapsable="true" />
 
 @code {

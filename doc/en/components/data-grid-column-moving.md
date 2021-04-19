@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Column Moving | Infragistics
+title: $Platform$ Data Grid | Column Moving | Infragistics
 _description: See how Infragistics' $ProductName$ Data Grid supports the ability to move columns and gives you the flexibility over how you wish to display your columns. View $ProductName$ table demos for more information!
-_keywords: $PlatformShort$ Table, Data Grid, column moving, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, column moving, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
 ---
 
-# $PlatformShort$ Grid Column Moving Overview
+# $Platform$ Grid Column Moving Overview
 
 The $ProductName$ Data Grid supports the ability to move columns, giving you the flexibility over how you wish to display your columns with respect to the order of the columns shown.
 
-## $PlatformShort$ Grid Column Moving Example
+## $Platform$ Grid Column Moving Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
-           alt="$PlatformShort$ Grid Column Moving Example"
+           alt="$Platform$ Grid Column Moving Example"
            github-src="grids/data-grid/column-moving">
 </code-view>
 

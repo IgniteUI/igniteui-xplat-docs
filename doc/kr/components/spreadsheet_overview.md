@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Spreadsheet | Grid Controls | Overview | Infragistics |
+title: $Platform$ Spreadsheet | Grid Controls | Overview | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ $PlatformShort$ Spreadsheet
+# $Platform$ $Platform$ Spreadsheet
 
-The $PlatformShort$ Spreadsheet is a $PlatformShort$ component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
+The $Platform$ Spreadsheet is a $Platform$ component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
            github-src="excel/spreadsheet/overview">
 </code-view>
 

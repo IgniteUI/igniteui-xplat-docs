@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ 日付選択 | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$日付選択コンポーネントは、ユーザーの日付選択を支援します。Ignite UI for $PlatformShort$ でグラフと視覚化を改善します!
-_keywords: $PlatformShort$ date picker, drop down, $ProductName$, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
+title: $Platform$ 日付選択 | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$日付選択コンポーネントは、ユーザーの日付選択を支援します。Ignite UI for $Platform$ でグラフと視覚化を改善します!
+_keywords: $Platform$ date picker, drop down, $ProductName$, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
 mentionedTypes: ['DatePicker']
 _language: ja
 ---
-# $PlatformShort$ 日付選択の概要
+# $Platform$ 日付選択の概要
 
 日付選択コンポーネントは、ドロップダウン カレンダー UI を使用して日、月、年を直感的に選択できます。これは、アプリケーション ユーザーが特定の日付を選択する必要があり、複数のエディターを組み合わせて日付範囲 UI を作成する場合に便利です。
 
-## $PlatformShort$ 日付選択の例
+## $Platform$ 日付選択の例
 
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="$PlatformShort$ 日付選択の例"
+           alt="$Platform$ 日付選択の例"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -54,7 +54,7 @@ ModuleManager.register(IgcDatePickerModule);
 
 ## 使用方法
 
-$PlatformShort$ 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
+$Platform$ 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
 
 - テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
 

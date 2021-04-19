@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | ペイン | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールのペイン (価格ペイン、インジケーター ペイン、ボリューム ペイン、ズーム ペインなど) を使用して、財務データを表示します。$ProductName$ ファイナンシャル チャートのペインを是非お試しください。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, panes, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, ペイン, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | ペイン | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールのペイン (価格ペイン、インジケーター ペイン、ボリューム ペイン、ズーム ペインなど) を使用して、財務データを表示します。$ProductName$ ファイナンシャル チャートのペインを是非お試しください。
+_keywords: $Platform$ charts, financial chart, stock chart, panes, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, ペイン, インフラジスティックス
 mentionedTypes: ['FinancialChart', 'FinancialChartYAxisMode']
 _language: ja
 ---
-# $PlatformShort$ チャート ペイン
+# $Platform$ チャート ペイン
 
-$PlatformShort$ Financial Chart コンポネントには財務データを表示する複数のペインがあります。
+$Platform$ Financial Chart コンポネントには財務データを表示する複数のペインがあります。
 
-## $PlatformShort$ チャート ペインの例
+## $Platform$ チャート ペインの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes" 
-           alt="$PlatformShort$ チャート ペインの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
+           alt="$Platform$ チャート ペインの例"
            github-src="charts/financial-chart/panes">
 </code-view>
 
 <div class="divider--half"></div>
 
-以下のペインが $PlatformShort$ Financial Chart コンポネントで利用できます。
+以下のペインが $Platform$ Financial Chart コンポネントで利用できます。
 * 価格ペイン - 折れ線、ローソク足、棒 (OHLC)、トレンドライン、および財務オーバーレイを使用して価格を描画します。
 * インジケーター ペイン - すべての財務指標を別のチャートに描画し、`BollingerBands` および `PriceChannel` オーバーレイが Y 軸と同じ値範囲を使用するために価格ペインに描画されます。
 * ボリューム ペイン - 縦棒、折れ線、およびエリアのチャート タイプを使用して出来高を上記のペインの下に描画します。
@@ -87,7 +87,7 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"                                
+   DataSource="DataSource"
    VolumeType="FinancialChartVolumeType.Column" />
 ```
 
@@ -119,7 +119,7 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"                                
+   DataSource="DataSource"
    ChartType="FinancialChartType.Line" />
 ```
 
@@ -153,7 +153,7 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"                                
+   DataSource="DataSource"
    ZoomSliderType="FinancialChartZoomSliderType.Line" />
 ```
 
@@ -187,8 +187,8 @@ this.Chart.IndicatorTypes.Add(FinancialIndicatorType.ForceIndex);
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"   
-   ChartType="FinancialChartType.Line"                             
+   DataSource="DataSource"
+   ChartType="FinancialChartType.Line"
    ZoomSliderType="FinancialChartZoomSliderType.Line" />
 ```
 

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Financial Chart | Configuration Options | Infragistics
-_description: Learn how to use Infragistics' $PlatformShort$ financial chart control's features such as configuring navigation, price pane, overlays, indicators, volume panes, trendlines, titles, subtitles and legends.  View our $ProductName$ financial graph demos!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, trendlines, indicators, $ProductName$, Infragistics
+title: $Platform$ Financial Chart | Configuration Options | Infragistics
+_description: Learn how to use Infragistics' $Platform$ financial chart control's features such as configuring navigation, price pane, overlays, indicators, volume panes, trendlines, titles, subtitles and legends.  View our $ProductName$ financial graph demos!
+_keywords: $Platform$ charts, financial chart, stock chart, trendlines, indicators, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart', 'FinancialOverlayType']
 ---
-# $PlatformShort$ Chart Trendlines
+# $Platform$ Chart Trendlines
 
-The $PlatformShort$ financial chart component provides many visuals that can be customized, such as the navigation behavior, trendline layers, overlays, legend, chart titles and subtitles.
+The $Platform$ financial chart component provides many visuals that can be customized, such as the navigation behavior, trendline layers, overlays, legend, chart titles and subtitles.
 
-## $PlatformShort$ Chart Trendlines Example
+## $Platform$ Chart Trendlines Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines" 
-           alt="$PlatformShort$ Chart Trendlines Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
+           alt="$Platform$ Chart Trendlines Example"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Configuring Navigation
-In the $PlatformShort$ financial chart component, chart navigation is enabled by default. However, you can customize it by setting the following properties:
+In the $Platform$ financial chart component, chart navigation is enabled by default. However, you can customize it by setting the following properties:
 
 - `IsHorizontalZoomEnabled` - This specifies if the chart can be horizontally zoomed through user interactions. By default, this property is set to true.
 - `IsVerticalZoomEnabled` - This specifies if the chart can be vertically zoomed through user interactions. By default, this property is set to false.
@@ -114,7 +114,7 @@ The price pane is always displayed in the Financial Chart and you can configure 
 ```
 
 ## Configuring Overlays
-By default overlays are not displayed on the $PlatformShort$ financial chart component. There are two types of overlays - `BollingerBands` and `PriceChannel`. You can also customize the default settings of the overlays. The following code demonstrates how to set the color, overlay outlines and thickness.
+By default overlays are not displayed on the $Platform$ financial chart component. There are two types of overlays - `BollingerBands` and `PriceChannel`. You can also customize the default settings of the overlays. The following code demonstrates how to set the color, overlay outlines and thickness.
 
 ```html
  <igx-financial-chart
@@ -160,7 +160,7 @@ By default overlays are not displayed on the $PlatformShort$ financial chart com
    {
       this.Chart.OverlayTypes.Add(FinancialOverlayType.BollingerBands);
    }
-}   
+}
 ```
 
 ## Configuring Indicators
@@ -203,9 +203,9 @@ By default the indicator panes are not displayed in the financial chart. The too
 ```razor
 <FinancialChart Width="100%"
    Height="100%"
-   DataSource="DataSource"                            
+   DataSource="DataSource"
    IndicatorBrushes="Green, Blue"
-   IndicatorNegativeBrushes="Red"                            
+   IndicatorNegativeBrushes="Red"
    IndicatorThickness="2" />
 
 @code {
@@ -216,7 +216,7 @@ By default the indicator panes are not displayed in the financial chart. The too
 
       this.Chart.IndicatorDisplayTypes.Add(IndicatorDisplayType.Line);
    }
-}   
+}
 ```
 
 ## Configuring Volume Pane
@@ -264,7 +264,7 @@ By default volume pane is not displayed in the financial chart component. Howeve
 ```
 
 ## Configuring Trendlines
-By default trendlines are not displayed on the $PlatformShort$ financial chart component. When a trendline is displayed, it is the same trendline displayed on all chart panes. You can also customize the default settings of the trendline.
+By default trendlines are not displayed on the $Platform$ financial chart component. When a trendline is displayed, it is the same trendline displayed on all chart panes. You can also customize the default settings of the trendline.
 
 The following code demonstrates how to set the color and thickness of the trendline.
 

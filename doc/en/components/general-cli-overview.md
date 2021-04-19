@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ CLI | Data Visualization Tools and Tables | Infragistics
-_description: The $ProductName$ toolset has a $PlatformShort$ CLI to help you boost productivity and get your project started quickly. Create a $ProductName$ application now!
-_keywords: $PlatformShort$ cli, command line interface, $ProductName$, Infragistics
+title: $Platform$ CLI | Data Visualization Tools and Tables | Infragistics
+_description: The $ProductName$ toolset has a $Platform$ CLI to help you boost productivity and get your project started quickly. Create a $ProductName$ application now!
+_keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics
 ---
 
-# Ignite UI CLI for $PlatformShort$
+# Ignite UI CLI for $Platform$
 
 Our CLI tools provide project templates pre-configured for the $ProductName$ toolset that help you get your next application off the ground in record time. The <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank">Ignite UI CLI</a> is a stand-alone command-line tool for creating and scaffolding your applications for a variety of different frameworks and provides a substantial productivity boost for developers.
 

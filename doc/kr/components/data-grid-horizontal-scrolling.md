@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 수평 스크롤
+# $Platform$ 수평 스크롤
 
-$ProductName$ 데이터 표/데이터 그리드는 $PlatformShort$ 데이터 그리드의 너비보다 큰 열의 총 너비를 설정하여 수평 스크롤을 활성화할 수 있습니다.
+$ProductName$ 데이터 표/데이터 그리드는 $Platform$ 데이터 그리드의 너비보다 큰 열의 총 너비를 설정하여 수평 스크롤을 활성화할 수 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 

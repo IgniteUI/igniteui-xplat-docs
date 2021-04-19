@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ラジアル縦棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してラジアル縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, radial column charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ラジアル縦棒チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ラジアル縦棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してラジアル縦棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, radial column charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ラジアル縦棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','RadialColumnSeries']
 _language: ja
 ---
-# $PlatformShort$ ラジアル縦棒チャート
+# $Platform$ ラジアル縦棒チャート
 
 $ProductName$ ラジアル縦棒チャートは、放射状チャートのグループに属し、チャートの中心からデータポイントの位置に向かって伸びる長方形のコレクションを使用して描画されます。`RadialColumnSeries` は `ColumnSeries` と同じデータ プロットの概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。
 
-## $PlatformShort$ ラジアル縦棒チャートの例
+## $Platform$ ラジアル縦棒チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-column-series" 
-           alt="$PlatformShort$ ラジアル縦棒チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-column-series"
+           alt="$Platform$ ラジアル縦棒チャートの例"
            github-src="charts/data-chart/type-radial-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialColumnSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RadialColumnSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

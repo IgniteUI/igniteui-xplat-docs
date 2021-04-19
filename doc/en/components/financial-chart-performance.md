@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Financial Chart | Performance | Infragistics
-_description: Render millions of financial data points using Infragistics' $PlatformShort$ financial chart control at super fast speed. Check out the $ProductName$ graph's high performance!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, data binding
+title: $Platform$ Financial Chart | Performance | Infragistics
+_description: Render millions of financial data points using Infragistics' $Platform$ financial chart control at super fast speed. Check out the $ProductName$ graph's high performance!
+_keywords: $Platform$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, data binding
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType', 'FinancialChartVolumeType', 'MarkerType', 'FinancialChartXAxisMode', 'FinancialChartZoomSliderType', 'FinancialChartYAxisMode', 'DomainChart' ]
 ---
-# $PlatformShort$ Chart Performance
+# $Platform$ Chart Performance
 
-The $PlatformShort$ financial chart component has very good performance of rendering a lot of data points. The following demo binds 20 years of data, with 1 day intervals and displays the stock prices using candle sticks.
+The $Platform$ financial chart component has very good performance of rendering a lot of data points. The following demo binds 20 years of data, with 1 day intervals and displays the stock prices using candle sticks.
 
-## $PlatformShort$ Chart Performance Example
+## $Platform$ Chart Performance Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-performance" 
-           alt="$PlatformShort$ Chart Performance Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-performance"
+           alt="$Platform$ Chart Performance Example"
            github-src="charts/financial-chart/performance">
 </code-view>
 
 <div class="divider--half"></div>
 
 
-The following code demonstrates how to bind the $PlatformShort$ financial chart to high volumes of data.
+The following code demonstrates how to bind the $Platform$ financial chart to high volumes of data.
 
 ```ts
 import { GenerateOhlcPricesService } from "../services/generate-ohlc-prices.service";
@@ -70,20 +70,20 @@ chart.dataSource = data;
     DataSource="DataSource" />
 ```
 
-There are several $PlatformShort$ specific features that affect performance of the chart and they should be considered when optimizing performance in your application.
+There are several $Platform$ specific features that affect performance of the chart and they should be considered when optimizing performance in your application.
 
 > [!NOTE]
 > For Angular:
 >
-> * When storing lots of data in properties in your components to bind against, you should make sure to set `changeDetection: ChangeDetectionStrategy.OnPush` in your `@Component` decorator. Setting this will tell $PlatformShort$ not to dig deeply into changes within your data array, something you don't want $PlatformShort$ doing every change detection cycle.
-> * Instead of $PlatformShort$ automatically telling the charts how they should react to data changes, its your responsibility to notify the components how the data they have been bound to has been modified. Reacting to these delta notifications can be done much more efficiently than to have to compare a 1M record array for any changes, every time $PlatformShort$ runs a change detection. Look for the `notify*` methods on each chart for more information about how to notify the chart of changes to the data it is bound against.
-> * When $PlatformShort$ is in Debug mode, there is a lot of overhead in some browsers that will drag down performance. When evaluating real world performance always make sure to serve or build with `--prod` version.
+> * When storing lots of data in properties in your components to bind against, you should make sure to set `changeDetection: ChangeDetectionStrategy.OnPush` in your `@Component` decorator. Setting this will tell $Platform$ not to dig deeply into changes within your data array, something you don't want $Platform$ doing every change detection cycle.
+> * Instead of $Platform$ automatically telling the charts how they should react to data changes, its your responsibility to notify the components how the data they have been bound to has been modified. Reacting to these delta notifications can be done much more efficiently than to have to compare a 1M record array for any changes, every time $Platform$ runs a change detection. Look for the `notify*` methods on each chart for more information about how to notify the chart of changes to the data it is bound against.
+> * When $Platform$ is in Debug mode, there is a lot of overhead in some browsers that will drag down performance. When evaluating real world performance always make sure to serve or build with `--prod` version.
 
 <!-- -->
 > [!NOTE]
 > For React:
 >
-> * When $PlatformShort$ is in development mode, there is a lot of overhead in some browsers that will drag down performance. When evaluating real world performance always make sure to use production builds.
+> * When $Platform$ is in development mode, there is a lot of overhead in some browsers that will drag down performance. When evaluating real world performance always make sure to use production builds.
 
 Also, you should consider the following features of the financial chart when optimizing performance in your application.
 

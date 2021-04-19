@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View $ProductName$ map tutorials!
-_keywords: $PlatformShort$ map, geographic series, $ProductName$, Infragistics, data binding
+title: $Platform$ Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View $ProductName$ map tutorials!
+_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Binding Multiple Data Sources
+# $Platform$ Binding Multiple Data Sources
 
 In the $ProductName$ map, you can add multiple geographic series objects to overlay custom data sources with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of airports, the `GeographicPolylineSeries` for plotting flights between airports, and 2nd `GeographicPolylineSeries` for plotting gridlines of major geographic coordinates.
 
 
-## $PlatformShort$ Binding Multiple Data Sources Example
+## $Platform$ Binding Multiple Data Sources Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources" 
-           alt="$PlatformShort$ Binding Multiple Data Sources Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
+           alt="$Platform$ Binding Multiple Data Sources Example"
            github-src="maps/geo-map/binding-multiple-sources">
 </code-view>
 
@@ -168,9 +168,9 @@ this.geoMap.series.add(gridSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">    
+<GeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
-        ShapeStroke="Gray" ShapeStrokeThickness="1" />    
+        ShapeStroke="Gray" ShapeStrokeThickness="1" />
 </GeographicMap>
 ```
 

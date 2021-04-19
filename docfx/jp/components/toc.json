@@ -104,7 +104,7 @@
     "exclude": ["Angular"],
     "name": "テーブル / グリッド",
     "href": "data-grid.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "name": "アクセシビリティの遵守",
@@ -309,10 +309,10 @@
     ]
   },
   {
-    "name": "チャート (NEW)",
+    "name": "チャート",
     "href": "charts/chart-overview.md",
-    "header": true,
-    "status": "NEW"
+    "header": "true",
+    "status": ""
   },
   {
     "exclude": ["Blazor"],
@@ -355,7 +355,7 @@
   {
     "name": "複合チャート",
     "href": "charts/types/composite-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "ドーナツ チャート",
@@ -371,7 +371,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ガント チャート",
     "href": "charts/types/gantt-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "折れ線チャート",
@@ -382,7 +382,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ネットワーク チャート",
     "href": "charts/types/network-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "円チャート",
@@ -403,7 +403,7 @@
     "exclude": ["Blazor", "Angular", "React", "WebComponent"],
     "name": "ピラミッド チャート",
     "href": "charts/types/pyramid-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "name": "ラジアル チャート",
@@ -441,13 +441,13 @@
     "status": ""
   },
   {
-    "name": "オーバーレイ チャート",
-    "href": "charts/types/value-overlay-chart.md",
+    "name": "ツリーマップ",
+    "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
-    "name": "ツリーマップ",
-    "href": "charts/types/treemap-chart.md",
+    "name": "チャート API",
+    "href": "charts/chart-api.md",
     "status": ""
   },
   {
@@ -458,47 +458,37 @@
         {
           "name": "軸グリッド線",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "軸レイアウト",
           "href": "charts/features/chart-axis-layouts.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "軸オプション",
           "href": "charts/features/chart-axis-options.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート注釈",
-          "href": "charts/features/chart-annotations.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート アニメーション",
           "href": "charts/features/chart-animations.md",
-          "status": "NEW"
+          "status": ""
+        },
+        {
+          "name": "チャート注釈",
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
         },
         {
           "name": "チャート強調表示",
           "href": "charts/features/chart-highlighting.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート マーカー",
           "href": "charts/features/chart-markers.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート ツールチップ",
-          "href": "charts/features/chart-tooltips.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート トレンドライン",
-          "href": "charts/features/chart-trendlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート ナビゲーション",
@@ -506,9 +496,29 @@
           "status": ""
         },
         {
+          "name": "チャート オーバーレイ",
+          "href": "charts/features/chart-overlays.md",
+          "status": ""
+        },
+        {
+          "name": "チャートのパフォーマンス",
+          "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
           "exclude": ["Blazor"],
           "name": "チャートの同期",
           "href": "charts/features/chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "チャート ツールチップ",
+          "href": "charts/features/chart-tooltips.md",
+          "status": ""
+        },
+        {
+          "name": "チャート トレンドライン",
+          "href": "charts/features/chart-trendlines.md",
           "status": ""
         },
         {
@@ -522,16 +532,19 @@
   {
     "name": "データ ソース",
     "href": "data-chart-data-sources.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
     "name": "チャート (OLD)",
-    "header": true
+    "header": true,
+    "exclude": ["Blazor", "Angular"]
   },
   {
     "name": "カテゴリ チャート",
     "href": "category-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "注釈",
@@ -574,6 +587,7 @@
     "name": "データ チャート",
     "href": "data-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "軸",
@@ -961,6 +975,7 @@
     "name": "ファイナンシャル チャート",
     "href": "financial-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "リアルタイムにデータをバインド",
@@ -1007,16 +1022,12 @@
   {
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
     "name": "マップ",
     "header": true
-  },
-  {
-    "name": "ツリーマップ",
-    "href": "treemap-overview.md",
-    "status": ""
   },
   {
     "name": "マップ",

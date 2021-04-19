@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Spreadsheet | Grid Controls | Data Validation | Infragistics |
+title: $Platform$ Spreadsheet | Grid Controls | Data Validation | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Data Validation
+# $Platform$ Data Validation
 
 This topic explains to to configure and set the built-in data validation rules.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
            github-src="excel/spreadsheet/data-validation">
 </code-view>
 

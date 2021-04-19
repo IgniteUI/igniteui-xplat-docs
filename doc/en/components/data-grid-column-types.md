@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Data Grid | Column Types | Infragistics
+title: $Platform$ Data Grid | Column Types | Infragistics
 _description: Learn how Infragistics' $ProductName$ data table & grid supports four column types to display your content such as Image, Text, Numeric, DataTime or a Template Column. View $ProductName$ tutorials!
-_keywords: $PlatformShort$ Table, Data Grid, column types, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, column types, $ProductName$, Infragistics
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $PlatformShort$ Column Types
+# $Platform$ Column Types
 
-The $ProductName$ Data Table / Data Grid supports 5 column types, plus a Template Column type, giving you complete flexibility over the way your data is displayed in the $PlatformShort$ data grid.  Column types supported are Text column, Numeric column, DateTime column, Image column, ComboBox and Template.
+The $ProductName$ Data Table / Data Grid supports 5 column types, plus a Template Column type, giving you complete flexibility over the way your data is displayed in the $Platform$ data grid.  Column types supported are Text column, Numeric column, DateTime column, Image column, ComboBox and Template.
 
-Each column binds to data by setting the `Field` property to the name of the corresponding property on the items of your underlying data source bound to the $PlatformShort$ data grid.
+Each column binds to data by setting the `Field` property to the name of the corresponding property on the items of your underlying data source bound to the $Platform$ data grid.
 
-## $PlatformShort$ Column Types Example
+## $Platform$ Column Types Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types" 
-           alt="$PlatformShort$ Column Types Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types"
+           alt="$Platform$ Column Types Example"
            github-src="grids/data-grid/column-types">
 </code-view>
 
@@ -25,7 +25,7 @@ Each column binds to data by setting the `Field` property to the name of the cor
 
 ## Text Column
 
-The $PlatformShort$ data grid is used for displaying formatted text in its associated cells. This is the default column type used to display data of the string type.
+The $Platform$ data grid is used for displaying formatted text in its associated cells. This is the default column type used to display data of the string type.
 
 ## Numeric Column
 
@@ -43,11 +43,11 @@ You can also choose what type of resource your image is by setting the `ImageRes
 
 ## ComboBox Column
 
-The `ComboBoxColumn` is used for displaying a drop-down list from which your end users can select a single item. 
+The `ComboBoxColumn` is used for displaying a drop-down list from which your end users can select a single item.
 
 Data binding can be achieved using an array of complex objects via the column's `DataSource` property.
 
-The `TextField` property determines which value is shown when users make a selection. 
+The `TextField` property determines which value is shown when users make a selection.
 
 The `ValueField` property determines the bound value of the underlying data item selected. This is necessary if your list of objects have several properties.
 

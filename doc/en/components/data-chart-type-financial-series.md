@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Financial Candlestick | Financial OHLC | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create financial charts such as candlestick and OHLC. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Financial Candlestick | Financial OHLC | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create financial charts such as candlestick and OHLC. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 ---
-# $PlatformShort$ Financial Series
+# $Platform$ Financial Series
 
-This topic explains various types of financial series in the $PlatformShort$ data chart component. Financial series is a group of the simplest and most common form of data chart series that take financial data such as stock prices and render it as collection of OHLC bars or candlesticks along a horizontal line (e.g. `FinancialPriceSeries`).
+This topic explains various types of financial series in the $Platform$ data chart component. Financial series is a group of the simplest and most common form of data chart series that take financial data such as stock prices and render it as collection of OHLC bars or candlesticks along a horizontal line (e.g. `FinancialPriceSeries`).
 
-## $PlatformShort$ Financial Series Example
+## $Platform$ Financial Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series" 
-           alt="$PlatformShort$ Financial Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series"
+           alt="$Platform$ Financial Series Example"
            github-src="charts/data-chart/type-financial-series">
 </code-view>
 
@@ -74,7 +74,7 @@ Financial indicators are often used by traders to measure changes and to show tr
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
+The $Platform$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
 
 ## Required Data
 

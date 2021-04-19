@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ ドック マネージャー | フレームの埋め込み | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ドック マネージャーを使用してペインによってインタラクティブなコンテンツを埋め込みます。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
+title: $Platform$ ドック マネージャー | フレームの埋め込み | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ドック マネージャーを使用してペインによってインタラクティブなコンテンツを埋め込みます。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, embed frames, $ProductName$, Infragistics, ドック マネージャー, フレームの埋め込み, インフラジスティックス
 _language: ja
 ---
-# $PlatformShort$ ドック マネージャーでのフレームの埋め込み
+# $Platform$ ドック マネージャーでのフレームの埋め込み
 
 Dock Manager コンポーネントは、ペインを使用してアプリケーションにインタラクティブなコンテンツを埋め込むためのレイアウトを提供します。
 
-## $PlatformShort$ ドック マネージャーでのフレームの埋め込み例
+## $Platform$ ドック マネージャーでのフレームの埋め込み例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames" 
-           alt="$PlatformShort$ ドック マネージャーでのフレームの埋め込み例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames"
+           alt="$Platform$ ドック マネージャーでのフレームの埋め込み例"
            github-src="layouts/dock-manager/embedding-frames">
 </code-view>
 

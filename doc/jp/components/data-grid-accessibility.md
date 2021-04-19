@@ -1,14 +1,14 @@
 ---
-title: $PlatformShort$ データ グリッド | リアルタイム データ グリッドとテーブル | アクセシビリティの遵守 | インフラジスティックス
+title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | アクセシビリティの遵守 | インフラジスティックス
 _description: インフラジスティックスの $ProductName $データ テーブルとグリッドを使用して、スクリーン リーダーがグリッドのセルと列を介して「話す」キーボード ナビゲーションのインタラクションを読み取ることができるアクセシビリティ機能をサポートします。$ProductName$ テーブルのチュートリアルをご覧ください!
-_keywords: $PlatformShort$ Table, Data Grid, cell accessibility, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, セルのアクセシビリティ, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, cell accessibility, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セルのアクセシビリティ, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $PlatformShort$ Grid アクセシビリティの遵守
+# $Platform$ Grid アクセシビリティの遵守
 
-$ProductName$ データ テーブル / データ グリッドは、グリッドのセルと列を介したキーボード ナビゲーションのインタラクションを解釈するアクセシビリティとスクリーン リーダーをサポートしています。 
+$ProductName$ データ テーブル / データ グリッドは、グリッドのセルと列を介したキーボード ナビゲーションのインタラクションを解釈するアクセシビリティとスクリーン リーダーをサポートしています。
 
 <!-- React, WebComponents -->
 これは、グリッドの `useAccessibility` プロパティを `true` に設定することによってアクティブになります。
@@ -18,13 +18,13 @@ $ProductName$ データ テーブル / データ グリッドは、グリッド�
 これは、CSS で `--use-accessibility` プロパティを明示的に `true` に設定することによってアクティブになります。できれば、グリッドを div タグで囲みます。
 <!-- end: Blazor -->
 
-## $PlatformShort$ Grid アクセシビリティの例
+## $Platform$ Grid アクセシビリティの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-accessibility" 
-           alt="$PlatformShort$ Grid セルのアクセシビリティの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-accessibility"
+           alt="$Platform$ Grid セルのアクセシビリティの例"
            github-src="grids/data-grid/accessibility">
 </code-view>
 
@@ -89,7 +89,7 @@ ARIA 属性
 
 ## コード スニペット
 
-以下は、$PlatformShort$ データ グリッドにセルのアクセシビリティを実装する方法を示しています。
+以下は、$Platform$ データ グリッドにセルのアクセシビリティを実装する方法を示しています。
 
 ```tsx
 <IgrDataGrid

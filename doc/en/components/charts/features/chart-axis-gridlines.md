@@ -1,40 +1,40 @@
 ---
-title: $PlatformShort$ Axis Gridlines | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Axis Gridlines
-_keywords: $PlatformShort$ Axis, Gridlines, Infragistics
-mentionedTypes: ["XamCategoryChart"]
+title: $Platform$ Axis Gridlines | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Axis Gridlines
+_keywords: $Platform$ Axis, Gridlines, Infragistics
+mentionedTypes: ["CategoryChart"]
 ---
 
-# $PlatformShort$ Axis Gridlines
+# $Platform$ Axis Gridlines
 
 All $ProductName$ charts include built-in capability to modify appearance of axis lines as well as frequency of major/minor gridlines and tickmarks that are rendered on the X-Axis and Y-Axis.
 
-> NOTE: the following examples can be applied to `XamCategoryChart` as well as `XamFinancialChart` controls.
+> NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
-Axis major gridlines are long lines that extend horizontally along the Y-Axis or vertically along the X-Axis from locations of axis labels, and they render through the plot area of the chart. Axis minor gridlines are lines that render between axis major gridlines. 
+Axis major gridlines are long lines that extend horizontally along the Y-Axis or vertically along the X-Axis from locations of axis labels, and they render through the plot area of the chart. Axis minor gridlines are lines that render between axis major gridlines.
 
-Axis tickmarks are displayed along all horizontal and vertical axes at each label at all major line positions of the $PlatformShort$ chart.
+Axis tickmarks are displayed along all horizontal and vertical axes at each label at all major line positions of the $Platform$ chart.
 
-## $PlatformShort$ Axis Gridlines Example
+## $Platform$ Axis Gridlines Example
 
 This example shows how configure the axis gridline to display major and minor gridlines at specified intervals:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="$PlatformShort$ Axis Gridlines Example"
+           alt="$Platform$ Axis Gridlines Example"
            github-src="charts/category-chart/axis-gridlines">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Axis Gridlines Properties
+## $Platform$ Axis Gridlines Properties
 
 Setting the axis interval property specifies how often major gridlines and axis labels are rendered on an axis. Similarly, the axis minor interval property specifies how frequent minor gridlines are rendered on an axis.
 
 In order to display minor gridlines that correspond to minor interval, you need to set `XAxisMinorStroke` and `XAxisMinorStrokeThickness` properties on the axis. This is because minor gridlines do not have a default color or thickness and they will not be displayed without first assigning them.
 
-You can customize how the gridlines are displayed in your $PlatformShort$ chart by setting the following properties:
+You can customize how the gridlines are displayed in your $Platform$ chart by setting the following properties:
 
 Axis Visuals           | Type    | Property Names                                               | Description
 -----------------------|---------|--------------------------------------------------------------|----------------
@@ -49,22 +49,22 @@ Regarding the Major and Minor Interval in the table above, it is important to no
 
 On category axes, the intervals are represented as an index between first item and last category item. Generally, this value should equal to 10-20% of total numbers of category items for the major Interval so that all axis labels fit on axis so that they are not clipped by other axis labels. For minor intervals, this is represented as a fraction of the major interval properties. This value generally should equal between 0.25 and 0.5.
 
-On numeric axes, the interval values are represented as a double between axis minimum value and axis maximum value. By default, numeric axes will automatically calculate and find a nice and round interval based on axis minimum values and maximum value. 
+On numeric axes, the interval values are represented as a double between axis minimum value and axis maximum value. By default, numeric axes will automatically calculate and find a nice and round interval based on axis minimum values and maximum value.
 
-On date time axes, this value is represented as time span between axis minimum value and axis maximum value. 
+On date time axes, this value is represented as time span between axis minimum value and axis maximum value.
 
 The following example demonstrates how to customize the gridlines by setting the properties above:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="$PlatformShort$ Axis Gridlines Example"
+           alt="$Platform$ Axis Gridlines Example"
            github-src="charts/category-chart/axis-gridlines">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Axis Tickmarks Example
+## $Platform$ Axis Tickmarks Example
 
 Axis tick marks are enabled by setting the `XAxisTickLength` and `YAxisTickLength` properties to a value greater than 0. These properties specifies the length of the line segments forming the tick marks.
 
@@ -75,15 +75,15 @@ The following example demonstrates how to customize the tickmarks by setting the
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
-           alt="$PlatformShort$ Axis Tickmarks Example"
+           alt="$Platform$ Axis Tickmarks Example"
            github-src="charts/category-chart/axis-tickmarks">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Axis Tickmarks Properites
+## $Platform$ Axis Tickmarks Properties
 
-You can customize how the axis tickmarks are displayed in our $PlatformShor$ chats by setting the following properties: 
+You can customize how the axis tickmarks are displayed in our $Platform$ chats by setting the following properties:
 
 Axis Visuals           | Type    | Property Names                                             | Description
 -----------------------|---------|------------------------------------------------------------|-------------------------
@@ -103,20 +103,20 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `XamCategoryChart` 
-- `XamFinancialChart`
-- `XAxisInterval` 
-- `YAxisInterval` 
-- `XAxisMinorInterval` 
-- `YAxisMinorInterval` 
-- `XAxisMajorStrokeThickness` 
-- `YAxisMajorStrokeThickness` 
-- `XAxisMinorStrokeThickness` 
-- `YAxisMinorStrokeThickness` 
-- `XAxisTickLength` 
-- `YAxisTickLength` 
-- `XAxisTickStroke` 
-- `YAxisTickStroke` 
-- `XAxisMajorStroke` 
-- `YAxisMajorStroke`  
- 
+- `CategoryChart`
+- `FinancialChart`
+- `XAxisInterval`
+- `YAxisInterval`
+- `XAxisMinorInterval`
+- `YAxisMinorInterval`
+- `XAxisMajorStrokeThickness`
+- `YAxisMajorStrokeThickness`
+- `XAxisMinorStrokeThickness`
+- `YAxisMinorStrokeThickness`
+- `XAxisTickLength`
+- `YAxisTickLength`
+- `XAxisTickStroke`
+- `YAxisTickStroke`
+- `XAxisMajorStroke`
+- `YAxisMajorStroke`
+

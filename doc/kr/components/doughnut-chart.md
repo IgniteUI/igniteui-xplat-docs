@@ -4,16 +4,16 @@ _description: 도넛 형 차트 구성 요소를 사용하여 계층 적 데이�
 _keywords: doughnut chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 도넛형 차트
+# $Platform$ 도넛형 차트
 
 $ProductName$ 도넛형 차트 컴포넌트는 파이형 차트 컴포넌트와 유사하며 변수의 발생을 비례 적으로 보여줍니다. 도넛형 차트는 동심원상 링으로 여러 변수를 표시할 수 있으며, 계층 데이터를 시각화하기 위한 내장 기능도 제공합니다.
 
 ## 데모
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"
            github-src="charts/doughnut-chart/overview">
 </code-view>
 
@@ -132,9 +132,9 @@ this.state = {
 ## 조각 선택 데모
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
            github-src="charts/doughnut-chart/selection">
 </code-view>
 
@@ -194,9 +194,9 @@ public onSliceClick = (s: IgcDoughnutChartComponent, e: IgcSliceClickEventArgs) 
 ## 조각 전개 데모
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-explosion"
            github-src="charts/doughnut-chart/explosion">
 </code-view>
 
@@ -251,9 +251,9 @@ public onLegendRef(legend: IgrItemLegend) {
 ## 범례 데모
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"  
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
            github-src="charts/doughnut-chart/legend">
 </code-view>
 

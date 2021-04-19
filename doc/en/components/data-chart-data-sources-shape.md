@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create shape charts such as scatter polygon and scatter polyline. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, shape chart, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create shape charts such as scatter polygon and scatter polyline. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, shape chart, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Scatter Shape Series
+# $Platform$ Sample Data Source for Scatter Shape Series
 
 This topic provides an example on how to implement data source for [Scatter Shape Series](data-chart-type-shape-series.md)
 
@@ -14,7 +14,7 @@ public class SampleShapeData
         public static Random random = new Random();
 
         public static List<SampleShapeItem> Create()
-        { 
+        {
             var shapeGuestBedroom = new List<Point>
             {
                 new Point { X = 2, Y = 10 }, new Point { X = 7, Y = 10 }, new Point { X = 7, Y = 7 }, new Point { X = 2, Y = 7 }, new Point { X = 2, Y = 10 }
@@ -44,7 +44,7 @@ public class SampleShapeData
                 new SampleShapeItem { Label = "Living Room", Points = ToPoints(shapeLivingRoom) },
                 new SampleShapeItem { Label = "Master Bedroom", Points = ToPoints(shapeMasterBedroom) },
             };
-            
+
             return data;
         }
 

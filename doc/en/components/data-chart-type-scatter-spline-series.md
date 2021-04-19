@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Spline Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create scatter spline charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, scatter spline charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Spline Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create scatter spline charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, scatter spline charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'ScatterSplineSeries']
 ---
-# $PlatformShort$ Scatter Spline Chart
+# $Platform$ Scatter Spline Chart
 
 The $ProductName$ scatter point chart belongs to a group of scatter charts that use the Cartesian (x, y) coordinate system to plot data. This series is rendered as a collection of markers connected with a spline, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
 
 The `ScatterSplineSeries` draws attention to uneven intervals or clusters of data. They can highlight the deviation of collected data from predicted results and they are often used to plot scientific and statistical data. The `ScatterSplineSeries` organizes and plots data chronologically (even if the data is not in chronological order before binding) on X-Axis and Y-Axis.
 
-## $PlatformShort$ Scatter Spline Chart Example
+## $Platform$ Scatter Spline Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series" 
-           alt="$PlatformShort$ Scatter Spline Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series"
+           alt="$Platform$ Scatter Spline Chart Example"
            github-src="charts/data-chart/type-scatter-spline-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The `ScatterSplineSeries` draws attention to uneven intervals or clusters of dat
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterSplineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `ScatterSplineSeries`.
 
 - `NumericXAxis`
 - `NumericYAxis`

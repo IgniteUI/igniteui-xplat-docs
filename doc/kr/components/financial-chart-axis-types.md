@@ -4,16 +4,16 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 차트 유형 탐색
+# $Platform$ 차트 유형 탐색
 
-`XamFinancialChart` 제어에서는 축은 축 기본 선, 눈금 표시, 제목 및 축 라벨 모양을 설정하는 기본 속성을 제공합니다.
+`FinancialChart` 제어에서는 축은 축 기본 선, 눈금 표시, 제목 및 축 라벨 모양을 설정하는 기본 속성을 제공합니다.
 
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"
            github-src="charts/financial-chart/axis-types">
 </code-view>
 
@@ -111,7 +111,7 @@ _language: kr
 <div class="divider--half"></div>
 
 ## 축 모드
-`XamFinancialChart` 제어를 사용하면 X축 및 Y축에 다른 모드를 설정할 수 있습니다.
+`FinancialChart` 제어를 사용하면 X축 및 Y축에 다른 모드를 설정할 수 있습니다.
 X축의 경우 다음 모드 중에서 선택할 수 있습니다:
 - Time - 이 모드는 데이터의 갭을 X축에 스페이스를 사용해 렌더링하는데 예를 들면, 주간이나 공휴일에 주식 거래가 없음을 나타냅니다.
 - Ordinal - 이 모드는 데이터가 없는 날짜 영역을 축소합니다. 이것이 기본값입니다.

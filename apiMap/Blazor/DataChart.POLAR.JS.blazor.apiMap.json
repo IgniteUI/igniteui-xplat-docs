@@ -88,6 +88,31 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ActualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomPolarStyleAllowed"}            ],
+           "originalName": "IsCustomPolarStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomPolarMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomPolarMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
            "originalName": "ScrollIntoView"
        },
@@ -100,6 +125,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 折れ線チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, line chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 折れ線チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 折れ線チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, line chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 折れ線チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 折れ線チャート
+# $Platform$ 折れ線チャート
 
-$ProductName$ 折れ線チャートはカテゴリ チャートのグループに属し、直線セグメントで接続されたポイントのコレクションを使用してレンダリングされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`LineSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$PlatformShort$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$PlatformShort$ スプライン チャートと同じです。
+$ProductName$ 折れ線チャートはカテゴリ チャートのグループに属し、直線セグメントで接続されたポイントのコレクションを使用してレンダリングされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`LineSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$Platform$ 折れ線チャートは、データ ポイントをつなぐ線にスプライン補間とデータの表示を改善するスムージングがないこと以外は、$Platform$ スプライン チャートと同じです。
 
-## $PlatformShort$ 折れ線チャートの例
+## $Platform$ 折れ線チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-line-series" 
-           alt="$PlatformShort$ 折れ線チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-line-series"
+           alt="$Platform$ 折れ線チャートの例"
            github-src="charts/data-chart/type-category-line-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`LineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`LineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

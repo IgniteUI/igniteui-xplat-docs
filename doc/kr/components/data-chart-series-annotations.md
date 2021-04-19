@@ -1,19 +1,19 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: The $ProductName$ Data Chart is a charting component that provides modular design of axis, markers, series, legend, and annotation layers. With this chart, you can create multiple instances of these visual elements in the same chart plot area in order to create composite chart views.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 시리즈 주석
+# $Platform$ 시리즈 주석
 
 `XamDataChart`는 차트에 플롯된 점에 대한 맥락 정보를 주석으로 표시할 수 있는 레이어를 지원합니다. 이것은 단순히 시리즈를 보는 것만으로는 파악하기 힘든 더 많은 정보를 최종 사용자에게 표시하여 도움을 줄 수 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations"
            github-src="charts/data-chart/series-annotations">
 </code-view>
 

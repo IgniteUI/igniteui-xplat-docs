@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ グリッド | リモート データ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ グリッド コンポーネントの仮想データソースを使用してリモート データをバインドします。$ProductName$ テーブル チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, virtual data, $ProductName$, Infragistics, data binding, $PlatformShort$ テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
+title: $Platform$ データ グリッド | リモート データ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ グリッド コンポーネントの仮想データソースを使用してリモート データをバインドします。$ProductName$ テーブル チュートリアルを是非お試しください!
+_keywords: $Platform$ Table, Data Grid, virtual data, $ProductName$, Infragistics, data binding, $Platform$ テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
-# $PlatformShort$ グリッド仮想データのバインド
+# $Platform$ グリッド仮想データのバインド
 
-$ProductName$ Data Table / Data Grid は、1 行のコードでリモート データソースへのデータ バインドをサポートします。$PlatformShort$ データ テーブルの仮想データソースを使用すると、リモート URI と返される Odata エンティティで $PlatformShort$ グリッドを設定するだけで、残りの作業は $PlatformShort$ グリッドが行います。
+$ProductName$ Data Table / Data Grid は、1 行のコードでリモート データソースへのデータ バインドをサポートします。$Platform$ データ テーブルの仮想データソースを使用すると、リモート URI と返される Odata エンティティで $Platform$ グリッドを設定するだけで、残りの作業は $Platform$ グリッドが行います。
 
-## $PlatformShort$ グリッド仮想データのバインドの例
+## $Platform$ グリッド仮想データのバインドの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data" 
-           alt="$PlatformShort$ グリッド仮想データのバインドの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data"
+           alt="$Platform$ グリッド仮想データのバインドの例"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>
 

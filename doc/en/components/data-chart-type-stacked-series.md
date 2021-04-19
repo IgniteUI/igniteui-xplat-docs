@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Stacked Charts | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked charts such as stacked area chart, stacked bar chart and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Stacked Charts | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked charts such as stacked area chart, stacked bar chart and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','StackedColumnSeries','CategoryXAxis']
 namespace: Infragistics.Controls.Charts
 ---
-# $PlatformShort$ Stacked Series
+# $Platform$ Stacked Series
 
-This topic explains the various types of stacked series in the $PlatformShort$ data chart component. Stacked series are a group of the simplest and most common form of chart series that take data and render it as collection of data points stretched along a horizontal line (e.g. `ColumnSeries`) or vertical line (e.g. `BarSeries`).
+This topic explains the various types of stacked series in the $Platform$ data chart component. Stacked series are a group of the simplest and most common form of chart series that take data and render it as collection of data points stretched along a horizontal line (e.g. `ColumnSeries`) or vertical line (e.g. `BarSeries`).
 
-## $PlatformShort$ Stacked Series Example
+## $Platform$ Stacked Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-series" 
-           alt="$PlatformShort$ Stacked Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-series"
+           alt="$Platform$ Stacked Series Example"
            github-src="charts/data-chart/type-stacked-series">
 </code-view>
 
@@ -42,7 +42,7 @@ The following table lists all types of category series and their descriptions:
 | `Stacked100SplineSeries` | This series is identical to the `StackedSplineSeries` in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the `Stacked100SplineSeries` presents the data in terms of percent of the sum of all values in a data point.   |
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with stacked series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with stacked series.
 
 | Series Type        | YAxis Type      | XAxis Type                      |
 |--------------------|-----------------|---------------------------------|
@@ -231,8 +231,8 @@ This code demonstrates how to create an instance of data chart with `StackedColu
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedColumnSeries 
-      XAxisName="xAxis" 
+    <StackedColumnSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

@@ -4,15 +4,15 @@ _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 도구 설명 유형
+# $Platform$ 도구 설명 유형
 
 이 항목에서는 $ProductName$ 카테고리 차트 컴포넌트에서 사용할 수 있는 도구 설명 유형에 대한 개념 정보를 제공합니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types"
            github-src="charts/category-chart/tooltip-types">
 </code-view>
 

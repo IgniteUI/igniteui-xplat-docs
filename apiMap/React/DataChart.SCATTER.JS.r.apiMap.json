@@ -199,6 +199,21 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
+           "originalName": "MarkerOutlineUsesFillScale"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
+           "originalName": "MarkerOutlineBrightness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
+           "originalName": "MarkerBrushBrightness"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
            "originalName": "RadiusScaleUseGlobalValues"
        },
@@ -280,6 +295,16 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
            "originalName": "LogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getCurrentGlobalMinimum"}            ],
+           "originalName": "GetCurrentGlobalMinimum"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getCurrentGlobalMaximum"}            ],
+           "originalName": "GetCurrentGlobalMaximum"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -395,6 +420,31 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -422,6 +472,16 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

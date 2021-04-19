@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ツールチップ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャートのツールチップを使用して、重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ charts, data chart, tooltips, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ツールチップ, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ツールチップ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャートのツールチップを使用して、重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
+_keywords: $Platform$ charts, data chart, tooltips, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ツールチップ, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ツールチップ
+# $Platform$ ツールチップ
 
-$PlatformShort$ データ チャート コンポーネントは、2 つのツールチップ 「レイヤー」 と共にツールチップを表示できます。これらのツールチップを使用すると、データ チャート内の各シリーズに関するコンテキスト情報を確認するのに役立ちます。
+$Platform$ データ チャート コンポーネントは、2 つのツールチップ 「レイヤー」 と共にツールチップを表示できます。これらのツールチップを使用すると、データ チャート内の各シリーズに関するコンテキスト情報を確認するのに役立ちます。
 
-## $PlatformShort$ ツールチップの例
+## $Platform$ ツールチップの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-tooltips" 
-           alt="$PlatformShort$ ツールチップの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-tooltips"
+           alt="$Platform$ ツールチップの例"
            github-src="charts/data-chart/series-tooltips">
 </code-view>
 
 <div class="divider--half"></div>
 
-$PlatformShort$ データ チャート コンポーネントでツールチップ レイヤーを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
+$Platform$ データ チャート コンポーネントでツールチップ レイヤーを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -59,21 +59,21 @@ ModuleManager.register(
 
 ## デフォルト ツールチップ
 
-$PlatformShort$ データ チャート コンポーネントは、各シリーズ タイプにデフォルト ツールチップを提供します。デフォルトのツールチップには、シリーズのタイトル、データ値、軸の値など、ホバーされている特定のシリーズ項目に関連するすべての情報が表示されます。これらもシリーズの外観に合わせてスタイル設定されています。
+$Platform$ データ チャート コンポーネントは、各シリーズ タイプにデフォルト ツールチップを提供します。デフォルトのツールチップには、シリーズのタイトル、データ値、軸の値など、ホバーされている特定のシリーズ項目に関連するすべての情報が表示されます。これらもシリーズの外観に合わせてスタイル設定されています。
 
-次のコード スニペットは、$PlatformShort$ データ チャート コンポーネントで既定のツールチップを有効にする方法を示しています。
+次のコード スニペットは、$Platform$ データ チャート コンポーネントで既定のツールチップを有効にする方法を示しています。
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
-        DataSource="@data" />  
+        DataSource="@data" />
 </DataChart>
 ```
 
@@ -130,22 +130,22 @@ $PlatformShort$ データ チャート コンポーネントは、各シリー�
 
 ## カテゴリ ツールチップ レイヤー
 
-CategoryToolTipLayer は、カテゴリ軸を使用する $PlatformShort$ データ チャート コンポーネントのシリーズ用にグループ化されたヒントを表示します。グループ化されたツールチップは現在、$PlatformShort$ データ チャート コンポーネントの上部に表示されています。
+CategoryToolTipLayer は、カテゴリ軸を使用する $Platform$ データ チャート コンポーネントのシリーズ用にグループ化されたヒントを表示します。グループ化されたツールチップは現在、$Platform$ データ チャート コンポーネントの上部に表示されています。
 
-以下のコードは、カテゴリ ツールチップ レイヤーを $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、カテゴリ ツールチップ レイヤーを $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
         DataSource="@data" />
-    <CategoryToolTipLayer></CategoryToolTipLayer>  
+    <CategoryToolTipLayer></CategoryToolTipLayer>
 </DataChart>
 ```
 
@@ -208,22 +208,22 @@ CategoryToolTipLayer は、カテゴリ軸を使用する $PlatformShort$ デー
 
 ## 項目ツールチップ レイヤー
 
-項目ツールチップ レイヤーは、特定のシリーズにマウスがホバーする場合に $PlatformShort$ データ チャート コンポーネント上のすべてのシリーズに関するヒントを個別に表示します。ツールチップスタイルは、ツールチップを表示しているシリーズから継承されます。
+項目ツールチップ レイヤーは、特定のシリーズにマウスがホバーする場合に $Platform$ データ チャート コンポーネント上のすべてのシリーズに関するヒントを個別に表示します。ツールチップスタイルは、ツールチップを表示しているシリーズから継承されます。
 
-以下のコードは、項目ツールチップ レイヤーを $PlatformShort$ データ チャート コンポーネントに追加する方法を示します。
+以下のコードは、項目ツールチップ レイヤーを $Platform$ データ チャート コンポーネントに追加する方法を示します。
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
         DataSource="@data" />
-    <ItemToolTipLayer></ItemToolTipLayer>  
+    <ItemToolTipLayer></ItemToolTipLayer>
 </DataChart>
 ```
 

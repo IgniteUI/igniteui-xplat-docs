@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 複数のデータソースのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, geographic series, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 複数のデータソースのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ 複数データ ソースのバインド
+# $Platform$ 複数データ ソースのバインド
 
 $ProductName$ マップでは、カスタム データソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
 
 
-## $PlatformShort$ 複数データ ソースのバインドの例
+## $Platform$ 複数データ ソースのバインドの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources" 
-           alt="$PlatformShort$ 複数データ ソースのバインドの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
+           alt="$Platform$ 複数データ ソースのバインドの例"
            github-src="maps/geo-map/binding-multiple-sources">
 </code-view>
 
@@ -169,9 +169,9 @@ this.geoMap.series.add(gridSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">    
+<GeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
-        ShapeStroke="Gray" ShapeStrokeThickness="1" />    
+        ShapeStroke="Gray" ShapeStrokeThickness="1" />
 </GeographicMap>
 ```
 

@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
-_description: Use Infragistics $PlatformShort$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, shape polygon series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
+_description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $PlatformShort$ Using Shape Polygon Series
+# $Platform$ Using Shape Polygon Series
 
-Use the $PlatformShort$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
+Use the $Platform$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## $PlatformShort$ Using Shape Polygon Series Example
+## $Platform$ Using Shape Polygon Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series" 
-           alt="$PlatformShort$ Using Shape Polygon Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
+           alt="$Platform$ Using Shape Polygon Series Example"
            github-src="maps/geo-map/type-shape-polygon-series">
 </code-view>
 
@@ -296,7 +296,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 <GeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
-</GeographicMap>    
+</GeographicMap>
 
 @code {
 

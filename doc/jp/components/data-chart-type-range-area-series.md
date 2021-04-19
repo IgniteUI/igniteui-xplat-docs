@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 範囲エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して範囲エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, range area charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 範囲エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 範囲エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して範囲エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, range area charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 範囲エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 範囲エリア チャート
+# $Platform$ 範囲エリア チャート
 
 $ProductName$ 範囲エリア チャートは、範囲チャートのグループに属し、線の間の領域が塗りつぶされた 2 本の線を使用してレンダリングされます。このタイプのシリーズは、同じデータ ポイントの低い値と高い値の間の変化量を強調します一定期間、または複数の項目を比較します。範囲値は y 軸に表示され、カテゴリは x 軸に表示されます。`RangeAreaSeries` は、範囲が塗りつぶされた領域ではなく垂直柱の集まりで表されること以外は `RangeColumnSeries` と同じです。
 
-## $PlatformShort$ 範囲エリア チャートの例
+## $Platform$ 範囲エリア チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-area-series" 
-           alt="$PlatformShort$ 範囲エリア チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-area-series"
+           alt="$Platform$ 範囲エリア チャートの例"
            github-src="charts/data-chart/type-range-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RangeAreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`RangeAreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -110,7 +110,7 @@ ModuleManager.register(
 <DataChart Height="500px" Width="750px">
         <CategoryXAxis Name="xAxis" Label="Year" DataSource="@DataSource"/>
         <NumericYAxis  Name="yAxis" />
-        <RangeAreaSeries Name="series1" 
+        <RangeAreaSeries Name="series1"
             XAxisName="xAxis"           YAxisName="yAxis"
             DataSource="@DataSource"
             LowMemberPath="Low"

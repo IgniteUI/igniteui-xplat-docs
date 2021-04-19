@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked charts such as stacked bar, stacked area and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked chart, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked charts such as stacked bar, stacked area and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked chart, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Stacked Series
+# $Platform$ Sample Data Source for Stacked Series
 
 This topic provides an example on how to implement data source for Stacked Series
 
@@ -26,7 +26,7 @@ public class SampleCategoryData
     }
 
     public class SampleCategoryItem
-    {    
+    {
         public int USA { get; set; }
         public int CHN { get; set; }
         public int RUS { get; set; }

@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Financial Line Indicators | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to display financial line indicators. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial line indicators, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Financial Line Indicators | Infragistics
+_description: Use Infragistics' $Platform$ charts control to display financial line indicators. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial line indicators, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 ---
-# $PlatformShort$ Financial Line Indicators
+# $Platform$ Financial Line Indicators
 
 Financial indicators are often used by traders to measure changes and to show trends in stock prices. These indicators are usually displayed in a separate chart above or below of a chart with the `FinancialPriceSeries` because they do not share the same Y-Axis scale. However, the chart control supports plotting price series and indicators in the same plot area, if desired, using multiple axes and by sharing axes. For more information on this, please refer to the [Axis Sharing and Multiple Axes](data-chart-axis-sharing.md) topic.
 
-## $PlatformShort$ Financial Line Indicators Example
+## $Platform$ Financial Line Indicators Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-line-indicators" 
-           alt="$PlatformShort$ Financial Line Indicators Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-line-indicators"
+           alt="$Platform$ Financial Line Indicators Example"
            github-src="charts/data-chart/type-financial-line-indicators">
 </code-view>
 
@@ -63,7 +63,7 @@ The following lists all of the possible types of financial indicators:
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
+The $Platform$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
 
 ## Required Data
 

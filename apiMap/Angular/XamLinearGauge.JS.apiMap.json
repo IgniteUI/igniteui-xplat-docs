@@ -7,175 +7,6 @@
 ],
 "types": [
 {
-    "originalName": "LinearGraphNeedleShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "LinearGraphNeedleShape.ts",
- "mappedName": "LinearGraphNeedleShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Custom"}            ],
-           "originalName": "Custom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Rectangle"}            ],
-           "originalName": "Rectangle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Triangle"}            ],
-           "originalName": "Triangle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Needle"}            ],
-           "originalName": "Needle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Trapezoid"}            ],
-           "originalName": "Trapezoid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "LinearScaleOrientation",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "LinearScaleOrientation.ts",
- "mappedName": "LinearScaleOrientation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearScaleOrientation", "mappedName": "Horizontal"}            ],
-           "originalName": "Horizontal"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LinearScaleOrientation", "mappedName": "Vertical"}            ],
-           "originalName": "Vertical"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "TitlesPosition",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "TitlesPosition.ts",
- "mappedName": "TitlesPosition"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TitlesPosition", "mappedName": "ScaleStart"}            ],
-           "originalName": "ScaleStart"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TitlesPosition", "mappedName": "ScaleEnd"}            ],
-           "originalName": "ScaleEnd"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "XamLinearGraphRange",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-linear-graph-range-component.ts",
- "mappedName": "IgxLinearGraphRangeComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "brush"}            ],
-           "originalName": "Brush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "startValue"}            ],
-           "originalName": "StartValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "endValue"}            ],
-           "originalName": "EndValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerStartExtent"}            ],
-           "originalName": "InnerStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerEndExtent"}            ],
-           "originalName": "InnerEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "outerStartExtent"}            ],
-           "originalName": "OuterStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "outerEndExtent"}            ],
-           "originalName": "OuterEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "FormatLinearGraphLabelEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-format-linear-graph-label-event-args.ts",
- "mappedName": "IgxFormatLinearGraphLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "AlignLinearGraphLabelEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-align-linear-graph-label-event-args.ts",
- "mappedName": "IgxAlignLinearGraphLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "FormatLinearGraphLabelEventArgs",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Gauges",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
     "originalName": "XamLinearGauge",
    "names": [
         { "platform": "Angular",     "fileName": "igx-linear-gauge-component.ts",
@@ -468,6 +299,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
            "originalName": "TransitionDuration"
        },
@@ -533,6 +374,175 @@
        }   ],
     "originalBaseTypeName": "Control",
     "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "LinearGraphNeedleShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "LinearGraphNeedleShape.ts",
+ "mappedName": "LinearGraphNeedleShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Custom"}            ],
+           "originalName": "Custom"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Rectangle"}            ],
+           "originalName": "Rectangle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Triangle"}            ],
+           "originalName": "Triangle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Needle"}            ],
+           "originalName": "Needle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearGraphNeedleShape", "mappedName": "Trapezoid"}            ],
+           "originalName": "Trapezoid"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "LinearScaleOrientation",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "LinearScaleOrientation.ts",
+ "mappedName": "LinearScaleOrientation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearScaleOrientation", "mappedName": "Horizontal"}            ],
+           "originalName": "Horizontal"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LinearScaleOrientation", "mappedName": "Vertical"}            ],
+           "originalName": "Vertical"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "TitlesPosition",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "TitlesPosition.ts",
+ "mappedName": "TitlesPosition"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TitlesPosition", "mappedName": "ScaleStart"}            ],
+           "originalName": "ScaleStart"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TitlesPosition", "mappedName": "ScaleEnd"}            ],
+           "originalName": "ScaleEnd"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "XamLinearGraphRange",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-linear-graph-range-component.ts",
+ "mappedName": "IgxLinearGraphRangeComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
+           "originalName": "Name"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "brush"}            ],
+           "originalName": "Brush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "startValue"}            ],
+           "originalName": "StartValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "endValue"}            ],
+           "originalName": "EndValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerStartExtent"}            ],
+           "originalName": "InnerStartExtent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerEndExtent"}            ],
+           "originalName": "InnerEndExtent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "outerStartExtent"}            ],
+           "originalName": "OuterStartExtent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "outerEndExtent"}            ],
+           "originalName": "OuterEndExtent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "StrokeThickness"
+       }   ],
+    "originalBaseTypeName": "DependencyObject",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "FormatLinearGraphLabelEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-format-linear-graph-label-event-args.ts",
+ "mappedName": "IgxFormatLinearGraphLabelEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Gauges"
+},
+{
+    "originalName": "AlignLinearGraphLabelEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-align-linear-graph-label-event-args.ts",
+ "mappedName": "IgxAlignLinearGraphLabelEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "FormatLinearGraphLabelEventArgs",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Gauges",
     "originalNamespace": "Infragistics.Controls.Gauges"
 }
 ]

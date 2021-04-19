@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ Excel Library Component - Native Angular | Ignite UI for Angular
+title: $Platform$ Excel Library Component - Native Angular | Ignite UI for Angular
 _description: The Ignite UI for Excel Library component ... TODO.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine
 ---
-# $PlatformShort$ Excel Library
+# $Platform$ Excel Library
 
 The Infragistics Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like Workbooks, Worksheets, Cells, Formulas and many more. The Infragistics Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
 ## Demo
 
 
-<code-view style="height: 100px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"  
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
            github-src="excel/excel-library/overview">
 </code-view>
 

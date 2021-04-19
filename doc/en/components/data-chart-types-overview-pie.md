@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Pie Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create pie charts such as pie chart, doughnut chart and radial pie chart. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, pie charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Pie Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create pie charts such as pie chart, doughnut chart and radial pie chart. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, pie charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Pie and Doughnut Charts
+# $Platform$ Pie and Doughnut Charts
 
 The $ProductName$ provides the following types of pie charts:
 

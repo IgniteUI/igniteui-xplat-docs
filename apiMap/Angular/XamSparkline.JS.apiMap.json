@@ -262,6 +262,26 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "horizontalLabelFormat"}            ],
+           "originalName": "HorizontalLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "horizontalLabelFormatSpecifiers"}            ],
+           "originalName": "HorizontalLabelFormatSpecifiers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "verticalLabelFormat"}            ],
+           "originalName": "VerticalLabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "verticalLabelFormatSpecifiers"}            ],
+           "originalName": "VerticalLabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
            "originalName": "PixelScalingRatio"
        },

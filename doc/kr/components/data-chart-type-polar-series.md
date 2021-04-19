@@ -1,10 +1,10 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: $ProductName$ 데이터 차트는 축, 마커, 시리즈, 범례 및 주석 레이어의 모듈 식 디자인을 제공하는 차트 구성 요소입니다. 이 차트를 사용하면 동일한 차트 영역에 이러한 시각적 요소의 인스턴스를 여러 개 만들어 복합 차트 뷰를 만들 수 있습니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 폴라 시리즈
+# $Platform$ 폴라 시리즈
 
 이 항목에서는 `XamDataChart` 제어에서 다양한 유형의 폴라 시리즈에 대해 설명합니다. 폴라 시리즈는 데카르트(x, y) 좌표계 대신 폴라(각도, 반경) 좌표계를 사용하여 차트에 데이터를 플롯하는 일련의 시리즈입니다. 즉, 폴라 시리즈는 [분산 시리즈](data-chart-type-scatter-point-series.md)의 개념을 사용하여 수평선을 따라 늘어서는 것이 아니라 원을 중심으로 감쌉니다. 이 시리즈 그룹은 폴라 좌표계를 사용하여 여러 개의 서로 다른 데이터 시리즈 내의 항목 간의 관계를 표시하는 데 사용됩니다.
 
@@ -13,9 +13,9 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series"
            github-src="charts/data-chart/type-polar-series">
 </code-view>
 

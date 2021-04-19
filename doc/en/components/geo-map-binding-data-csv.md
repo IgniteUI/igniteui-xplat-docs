@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding CSV Data | Infragistics
-_description: Learn how to use Infragistics' $PlatformShort$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, plot data, $ProductName$, Infragistics, data binding
+title: $Platform$ Map | Data Visualization Tools | Binding CSV Data | Infragistics
+_description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
+_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Binding CSV Files with Geographic Locations
+# $Platform$ Binding CSV Files with Geographic Locations
 
 With the $ProductName$ map component, you can plot geographic data loaded from various file types. For example, you can load geographic locations from a comma separated values (CSV) file.
 
-## $PlatformShort$ Binding CSV Files with Geographic Locations Example
+## $Platform$ Binding CSV Files with Geographic Locations Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv" 
-           alt="$PlatformShort$ Binding CSV Files with Geographic Locations Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
+           alt="$Platform$ Binding CSV Files with Geographic Locations Example"
            github-src="maps/geo-map/binding-data-csv">
 </code-view>
 

@@ -4,7 +4,7 @@ _description: 다채로운 원형 차트를 만들어 데이터 시각화를 위
 _keywords: pie chart, ignite ui for react, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 파이형 차트
+# $Platform$ 파이형 차트
 
 $ProductName$ 파이형 차트 컴포넌트는 원형 영역을 섹션으로 나누어 구성된 파이형 차트를 렌더링하는 특별한 컴포넌트입니다. 각 섹션에는 기본 데이터 값에 비례하는 호 길이가 있습니다.
 
@@ -13,9 +13,9 @@ $ProductName$ 파이형 차트 컴포넌트는 원형 영역을 섹션으로 나
 ## 데모
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
            github-src="charts/pie-chart/overview">
 </code-view>
 
@@ -120,9 +120,9 @@ var data = [
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
            github-src="charts/pie-chart/legend">
 </code-view>
 
@@ -159,9 +159,9 @@ var data = [
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
            github-src="charts/pie-chart/others">
 </code-view>
 
@@ -197,8 +197,8 @@ public onSliceClick = (s: IgrPieChartBase<IIgrPieChartBaseProps>, e: IgrSliceCli
 
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"  >
 </code-view>
 
@@ -260,9 +260,9 @@ public onSliceClick = (s: IgrPieChartBase<IIgrPieChartBaseProps>, e: IgrSliceCli
 ```
 
 
-<code-view style="height: 350px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"  
+<code-view style="height: 350px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
            github-src="charts/pie-chart/explosion">
 </code-view>
 

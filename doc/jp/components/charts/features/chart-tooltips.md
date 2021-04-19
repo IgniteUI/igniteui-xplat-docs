@@ -1,128 +1,78 @@
 ---
-title: $PlatformShort$ チャート ツールチップ | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート ツールチップ
-_keywords: $PlatformShort$ Charts, Tooltips, Infragistics, $PlatformShort$ チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "ToolTipType"]
+title: $Platform$ チャート ツールチップ | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート ツールチップ
+_keywords: $Platform$ Charts, Tooltips, Infragistics, $Platform$ チャート, ツールチップ, インフラジスティックス
+mentionedTypes: ["CategoryChart", "ToolTipType"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート ツールチップ
+# $Platform$ チャート ツールチップ
 
-$PlatformShort$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+$Platform$ チャートでは、ツールチップはバインドされたデータに関する詳細を提供し、エンドユーザーがデータ ポイントにカーソルを合わせるとポップアップで表示されます。ツールチップは、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントでサポートされています。
+
+## $Platform$ チャート ツールチップのタイプ
+
+次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="$PlatformShort$ ツールチップ タイプの例"
+           alt="$Platform$ ツールチップ タイプの例"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
 <div class="divider--half"></div>
 
-## ツールチップ タイプ
+`ToolTipType` プロパティは構成可能であり、次のいずれかのオプションに設定できます。
 
-$ProductName$ カテゴリ チャートは、次の方法で `ToolTipType` プロパティを設定することにより、ツールチップを表示するように構成できます。
+プロパティの値     | 説明
+-------------------|----------------
+`Default` ツールチップ | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
+`Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
+`Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
 
-1. `Default` ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
-2. `Item` ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
-3. `Category` ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
-4. `None` はツールチップが非表示になります。
+## $Platform$ チャート ツールチップ テンプレート
 
-```razor
-<CategoryChart Height="500px" Width="700px"
-    DataSource="@DataSource"
-    ToolTipType="ToolTipType.Category"/>
-```
+組み込みタイプのツールチップがいずれも要件に一致しない場合は、独自のツールチップを作成して、シリーズ タイトル、データ値、および軸値を表示およびスタイル設定できます。次のセクションでは、さまざまなタイプの $Platform$ チャートでこれを行う方法を示します。
 
-```html
-<igx-category-chart
-    [dataSource]="data"
-    toolTipType="Category">
-</igx-category-chart>
-```
+### カテゴリ チャートのカスタム ツールチップ
 
-```tsx
- <IgrCategoryChart
-    dataSource={this.state.data}
-    toolTipType="Category" />
-```
-
-```html
-<igc-category-chart
-    id="chart"
-    tool-tip-type="Category">
-</igc-category-chart>
-```
-
-<!-- TODO uncomment below section when bug# 272693 is fixed
-
-# $PlatformShort$ Tooltip Templates
-
-The $PlatformShort$ category chart provides default tooltips for each type of series. The default tooltips displays all the information relevant to the particular series item for example series title, data values, axis values. They are styled to match the series' style. If default tooltips are not sufficient, tooltip templates can be configured to customize the tooltip content and look and feel.
+この例は、$Platform$ `CategoryChart` コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。$Platform$ `FinancialChart` コントロールのカスタム ツールチップにも同じロジックを適用できることに注意してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
-           alt="$PlatformShort$ Tooltip Templates Example"
+           alt="$Platform$ ツールチップ テンプレート"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 
 <div class="divider--half"></div>
 
-The tooltip content is customized by creating a template for the tooltip as demonstrated in the following code.
 
-```html
-<ng-template let-series="series" let-item="item" #valueTooltip>
-   <div>
-      <span> {{item.Country}} energy use: <br/></span>
-      <span> Coal :{{item.Coal | number}}<br/></span>
-      <span> Oil :{{item.Oil | number}}<br/></span>
-      <span> Gas :{{item.Gas | number}}<br/></span>
-      <span> Nuclear :{{item.Nuclear | number}}<br/></span>
-      <span> Hydro :{{item.Hydro | number}}<br/></span>
-    </div>
-</ng-template>
+## データ チャートのカスタム ツールチップ
 
-<div class="chart">
-    <igx-category-chart height="100%" width="100%"
-        [dataSource]="data" chartTitle="Energy Production"
-        subtitle="by Country"
-        [tooltipTemplate]="valueTooltip"
-        [chartType]="chartType">
-    </igx-category-chart>
-</div>
-```
+この例は、$Platform$ データ チャート コントロールで各シリーズのカスタム ツールチップを作成する方法を示しています。
 
-```tsx
- <IgrCategoryChart height="100%" width="100%"
-        dataSource={this.state.data}
-        chartTitle="Energy Production"
-        subtitle="by Country"
-        tooltipTemplate={this.valueTooltip}
-        chartType={this.state.chartType} />
-```
-```html
-<igc-category-chart
-    id="chart"
-    width="800px"
-    height="700px"
-    chart-title="Energy Production"
-    subtitle="by Country"
-    chart-type="Column">
-  </igc-category-chart>
-```
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
+           alt="$Platform$ ツールチップ テンプレート"
+           github-src="charts/data-chart/tooltip-template">
+</code-view>
 
-```ts
-let chart = (document.getElementById("chart") as IgcCategoryChartComponent);
-chart.dataSource = categoryData;
+<div class="divider--half"></div>
 
-let template: TemplateFunction;
-chart.tooltipTemplate = template;
-```
+## その他のリソース
 
-TODO uncomment above section when bug# 272693 is fixed
--->
+関連するチャート機能の詳細については、以下のトピックを参照してください。
+
+- [チャート注釈](chart-annotations.md)
+- [チャート マーカー](chart-markers.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `ToolTipType`
-- `XamCategoryChart`
+- `CategoryChart`
+- `XamDataChart`

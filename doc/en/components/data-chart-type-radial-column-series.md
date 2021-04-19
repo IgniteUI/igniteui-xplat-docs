@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Radial Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create radial column charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, radial column charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Radial Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create radial column charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, radial column charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','RadialColumnSeries']
 ---
-# $PlatformShort$ Radial Column Chart
+# $Platform$ Radial Column Chart
 
 The $ProductName$ radial column chart belongs to a group of radial charts and is rendered using a collection of rectangles that extend from the center of the chart towards the locations of data points. The `RadialColumnSeries` uses the same concepts of data plotting as the `ColumnSeries` but wraps data points around a circle rather than stretching them along a horizontal line.
 
-## $PlatformShort$ Radial Column Chart Example
+## $Platform$ Radial Column Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-column-series" 
-           alt="$PlatformShort$ Radial Column Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-column-series"
+           alt="$Platform$ Radial Column Chart Example"
            github-src="charts/data-chart/type-radial-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `RadialColumnSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `RadialColumnSeries`.
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

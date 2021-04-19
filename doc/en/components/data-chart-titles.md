@@ -1,29 +1,29 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Title and SubTitle | Infragistics
-_description: Use the titles and subtitles of the Infragistics' $PlatformShort$ charts to add information to to top section. Check out the $ProductName$ graph's title and subtitles feature!
-_keywords: $PlatformShort$ charts, data chart, chart title, chart subtitle, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Title and SubTitle | Infragistics
+_description: Use the titles and subtitles of the Infragistics' $Platform$ charts to add information to to top section. Check out the $ProductName$ graph's title and subtitles feature!
+_keywords: $Platform$ charts, data chart, chart title, chart subtitle, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Title and Subtitle
+# $Platform$ Title and Subtitle
 
-The `Title` and `Subtitle` feature of the $PlatformShort$ data chart component allows you to add information to the top section of the data chart. When adding a title or subtitle to the data chart, the content of the data chart automatically resizes allowing for the title and subtitle information that you provide.
+The `Title` and `Subtitle` feature of the $Platform$ data chart component allows you to add information to the top section of the data chart. When adding a title or subtitle to the data chart, the content of the data chart automatically resizes allowing for the title and subtitle information that you provide.
 
-## $PlatformShort$ Title and Subtitle Example
+## $Platform$ Title and Subtitle Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles" 
-           alt="$PlatformShort$ Title and Subtitle Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles"
+           alt="$Platform$ Title and Subtitle Example"
            github-src="charts/data-chart/chart-titles">
 </code-view>
 
 <div class="divider--half"></div>
 
-There are properties provided that allow you to style the text color, style, and margins of the titles and subtitles of the data chart. The following code-snippet demonstrates how you can set and customize the titles in the $PlatformShort$ data chart component:
+There are properties provided that allow you to style the text color, style, and margins of the titles and subtitles of the data chart. The following code-snippet demonstrates how you can set and customize the titles in the $Platform$ data chart component:
 
 ```razor
-<DataChart Height="600px" 
+<DataChart Height="600px"
     Width="100%"ChartTitle="Energy Use Per Country"
     Subtitle="Results over a two year period"
     TitleTextColor="Red"

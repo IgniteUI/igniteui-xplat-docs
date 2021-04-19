@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Column Animations | Infragistics
+title: $Platform$ Data Grid | Column Animations | Infragistics
 _description: Learn how to display column animations through events when moving or hiding columns with Infragistics' $ProductName$ data table & grid. Check out $ProductName$ table tutorials!
-_keywords: $PlatformShort$ Table, Data Grid, column animations, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, column animations, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Grid Column Animations
+# $Platform$ Grid Column Animations
 
-The $ProductName$ Data Table / Data Grid supports Column Animation during events like Column Hiding or Column Moving.  When Column Animation on the $PlatformShort$ data grid is set, the corresponding animation will fire for all of the cells in that column.
+The $ProductName$ Data Table / Data Grid supports Column Animation during events like Column Hiding or Column Moving.  When Column Animation on the $Platform$ data grid is set, the corresponding animation will fire for all of the cells in that column.
 
-## $PlatformShort$ Grid Column Animations Example
+## $Platform$ Grid Column Animations Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation" 
-           alt="$PlatformShort$ Grid Column Animations Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation"
+           alt="$Platform$ Grid Column Animations Example"
            github-src="grids/data-grid/column-animation">
 </code-view>
 

@@ -104,7 +104,7 @@
     "exclude": ["Angular"],
     "name": "Table / Grid",
     "href": "data-grid.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "name": "Accessibility Compliance",
@@ -309,7 +309,7 @@
     ]
   },
   {
-    "name": "Charts (NEW)",
+    "name": "Charts",
     "href": "charts/chart-overview.md",
     "header": true,
     "status": ""
@@ -446,6 +446,11 @@
     "status": ""
   },
   {
+    "name": "Chart API",
+    "href": "charts/chart-api.md",
+    "status": ""
+  },
+  {
     "name": "Chart Features",
     "href": "charts/chart-features.md",
     "status": "",
@@ -527,16 +532,20 @@
   {
     "name": "Data Sources",
     "href": "data-chart-data-sources.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
-    "name": "Charts (OLD)",
-    "header": true
+    "name": "Charts",
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "header": true,
+    "exclude": ["Blazor", "Angular"]
   },
   {
     "name": "Category Chart",
     "href": "category-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Annotations",
@@ -579,6 +588,7 @@
     "name": "Data Chart",
     "href": "data-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Axis",
@@ -966,6 +976,7 @@
     "name": "Financial Chart",
     "href": "financial-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "Binding Real-Time Data",
@@ -1012,6 +1023,7 @@
   {
     "name": "Sparkline",
     "href": "charts/types/sparkline-chart.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
@@ -1156,37 +1168,37 @@
   {
     "name": "Excel Library",
     "href": "excel-library.md",
-    "status": "NEW in Blazor",
+    "status": "",
     "items": [
       {
         "name": "Using Cells",
         "href": "excel-library-using-cells.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Tables",
         "href": "excel-library-using-tables.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Workbooks",
         "href": "excel-library-using-workbooks.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Using Worksheets",
         "href": "excel-library-using-worksheets.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Working with Charts",
         "href": "excel-library-working-with-charts.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "Working with Sparklines",
         "href": "excel-library-working-with-sparklines.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],

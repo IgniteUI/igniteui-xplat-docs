@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | スプライン エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してスプライン エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, spine area chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, スプライン エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | スプライン エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してスプライン エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, spine area chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, スプライン エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ スプライン エリア チャート
+# $Platform$ スプライン エリア チャート
 
-$ProductName$ スプライン エリア チャートは、カテゴリ チャートのグループに属し、スプラインの下の領域が塗りつぶされたスプラインの滑らかな曲線で接続されたポイントのコレクションを使用して描画されます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`SplineAreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$PlatformShort$ スプライン エリア チャートは、データ ポイントを接続するラインにスプライン補間とデータの表示を改善するスムージングがあること以外は $PlatformShort$ エリア チャートと同じです。
+$ProductName$ スプライン エリア チャートは、カテゴリ チャートのグループに属し、スプラインの下の領域が塗りつぶされたスプラインの滑らかな曲線で接続されたポイントのコレクションを使用して描画されます。値は y 軸に表示され、カテゴリは x 軸に表示されます。`SplineAreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられ、プロットされた値の合計を表示することで全体に対するデータ間の関係も表します。$Platform$ スプライン エリア チャートは、データ ポイントを接続するラインにスプライン補間とデータの表示を改善するスムージングがあること以外は $Platform$ エリア チャートと同じです。
 
-## $PlatformShort$ スプライン エリア チャートの例
+## $Platform$ スプライン エリア チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-area-series" 
-           alt="$PlatformShort$ スプライン エリア チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-area-series"
+           alt="$Platform$ スプライン エリア チャートの例"
            github-src="charts/data-chart/type-category-spline-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`SplineAreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`SplineAreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

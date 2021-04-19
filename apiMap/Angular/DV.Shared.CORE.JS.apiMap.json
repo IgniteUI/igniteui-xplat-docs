@@ -175,6 +175,236 @@
     "originalNamespace": "Infragistics.Controls"
 },
 {
+    "originalName": "FormatSpecifier",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-format-specifier.ts",
+    "dynamicModuleName": "igx-format-specifier-dynamic-module.ts",
+    "moduleName": "igx-format-specifier-module.ts",
+ "mappedName": "IgxFormatSpecifier"}   ],
+   "members": [
+   ],
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "NumberFormatSpecifier",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-number-format-specifier.ts",
+    "dynamicModuleName": "igx-number-format-specifier-dynamic-module.ts",
+    "moduleName": "igx-number-format-specifier-module.ts",
+ "mappedName": "IgxNumberFormatSpecifier"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "locale"}            ],
+           "originalName": "Locale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "compactDisplay"}            ],
+           "originalName": "CompactDisplay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "currency"}            ],
+           "originalName": "Currency"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "currencyDisplay"}            ],
+           "originalName": "CurrencyDisplay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "currencySign"}            ],
+           "originalName": "CurrencySign"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
+           "originalName": "LocaleMatcher"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "notation"}            ],
+           "originalName": "Notation"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
+           "originalName": "NumberingSystem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "signDisplay"}            ],
+           "originalName": "SignDisplay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "style"}            ],
+           "originalName": "Style"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "unit"}            ],
+           "originalName": "Unit"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "unitDisplay"}            ],
+           "originalName": "UnitDisplay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useGrouping"}            ],
+           "originalName": "UseGrouping"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumIntegerDigits"}            ],
+           "originalName": "MinimumIntegerDigits"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumFractionDigits"}            ],
+           "originalName": "MinimumFractionDigits"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumFractionDigits"}            ],
+           "originalName": "MaximumFractionDigits"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumSignificantDigits"}            ],
+           "originalName": "MinimumSignificantDigits"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumSignificantDigits"}            ],
+           "originalName": "MaximumSignificantDigits"
+       }   ],
+    "originalBaseTypeName": "FormatSpecifier",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "DateTimeFormatSpecifier",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-date-time-format-specifier.ts",
+    "dynamicModuleName": "igx-date-time-format-specifier-dynamic-module.ts",
+    "moduleName": "igx-date-time-format-specifier-module.ts",
+ "mappedName": "IgxDateTimeFormatSpecifier"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "locale"}            ],
+           "originalName": "Locale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "dateStyle"}            ],
+           "originalName": "DateStyle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "timeStyle"}            ],
+           "originalName": "TimeStyle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "fractionalSecondDigits"}            ],
+           "originalName": "FractionalSecondDigits"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "calendar"}            ],
+           "originalName": "Calendar"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "dayPeriod"}            ],
+           "originalName": "DayPeriod"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
+           "originalName": "NumberingSystem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
+           "originalName": "LocaleMatcher"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "timeZone"}            ],
+           "originalName": "TimeZone"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "hour12"}            ],
+           "originalName": "Hour12"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "hourCycle"}            ],
+           "originalName": "HourCycle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "formatMatcher"}            ],
+           "originalName": "FormatMatcher"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "weekDay"}            ],
+           "originalName": "WeekDay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "era"}            ],
+           "originalName": "Era"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "year"}            ],
+           "originalName": "Year"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "month"}            ],
+           "originalName": "Month"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "day"}            ],
+           "originalName": "Day"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "hour"}            ],
+           "originalName": "Hour"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "minute"}            ],
+           "originalName": "Minute"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "second"}            ],
+           "originalName": "Second"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "timeZoneName"}            ],
+           "originalName": "TimeZoneName"
+       }   ],
+    "originalBaseTypeName": "FormatSpecifier",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
     "originalName": "ISyncableObservableCollectionChangedListener",
    "names": [
         { "platform": "Angular",     "fileName": "SyncableObservableCollectionChangedListener.ts",

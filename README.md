@@ -172,7 +172,7 @@ This is some content that will only show for Angular or WPF.
 
 #### Using Variables
 
-In **docConfig.json** you can add entries in "[PlatformName]" => "replacements" where name is a regular expression that matches the text you wish to replace in the markdown, and value is the value you wish to have inserted.
+In **docConfig.json** you can add entries in "[ProductName]" => "replacements" where name is a regular expression that matches the text you wish to replace in the markdown, and value is the value you wish to have inserted.
 
 For example with this entry:
 
@@ -289,25 +289,26 @@ Follow this section only if you have access to XPlatform source code.
 
 #### Updating API Mapping Files
 
-- build translator solution:
-**$/NetAdvantage/DEV/XPlatform/2019.2/Source/Translator/Translator_NoRoslyn.sln**
+- open, get latest, and build Translator solution: <br>
+**$/NetAdvantage/DEV/XPlatform/2020.2/Source/Translator/Translator_NoRoslyn.sln**
 
-- build product solution:
-**$/NetAdvantage/DEV/XPlatform/2019.2/Source/jQuery/Infragistics.jQuery.sln**
+- open, get latest, and build DV.Controls solution: <br>
+**$/NetAdvantage/DEV/XPlatform/2020.2/Source/DV.Controls.sln**
 
-**$/NetAdvantage/DEV/XPlatform/2019.2/Source/DV.Controls.sln**
+- open, get latest, and build jQuery solution: <br>
+**$/NetAdvantage/DEV/XPlatform/2020.2/Source/jQuery/Infragistics.jQuery.sln**
 
 - follow instructions to [create a new branch](#Creating-Branches)
 
 - open this repository in VS Code
 
-- copy API Mapping files to the **apiMap** folder, by running these commands in VS terminal:
+- in VS terminal, run this command to copy API Mapping files to the **apiMap** folder
 
 ```
 gulp updateApi
 ```
 
-- commit changes in the **apiMap** folder
+- commit changes made in the **apiMap** folder
 
 - follow instructions to [a new pull request](#Creating-Pull-Requests)
 

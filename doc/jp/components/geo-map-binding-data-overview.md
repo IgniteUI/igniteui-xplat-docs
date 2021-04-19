@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, geo-spatial data, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, 地理空間のデータ, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, geo-spatial data, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理空間のデータ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ データ バインド
+# $Platform$ データ バインド
 
 $ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。
 

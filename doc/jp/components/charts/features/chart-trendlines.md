@@ -1,73 +1,42 @@
 ---
-title: $PlatformShort$ チャート トレンドライン | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート トレンドライン
-_keywords: $PlatformShort$ Charts, Trendlines, Infragistics, $PlatformShort$ チャート, トレンドライン, インフラジスティックス
-mentionedTypes: ["XamFinancialChart", "TrendLineType"]
+title: $Platform$ チャート トレンドライン | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート トレンドライン
+_keywords: $Platform$ Charts, Trendlines, Infragistics, $Platform$ チャート, トレンドライン, インフラジスティックス
+mentionedTypes: ["FinancialChart", "CategoryChart", "XamDataChart", "TrendLineType"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート トレンドライン
+# $Platform$ チャート トレンドライン
 
-$PlatformShort$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `XamCategoryChart`、`XamFinancialChart`、および `XamDataChart` でサポートされています。
+$ProductName$ チャートでは、トレンドラインはトレンドの識別やデータ内のパターンの検索に役立ちます。トレンドラインは、常にチャートにバインドされたデータ ポイントの前に描画されます。積層シリーズ、シェイプ シリーズ、および範囲シリーズを除き、これらは `CategoryChart`、`FinancialChart`、および `XamDataChart` (積層型シリーズ、シェイプ シリーズ、範囲シリーズを除く) でサポートされています。
+
+トレンドラインはデフォルトでオフになっていますが、 `TrendLineType` プロパティを設定することで有効にできます。また、ブラシ、期間、太さなど、トレンドラインの複数の外観プロパティを変更できます。
+
+# $Platform$ チャート トレンドラインの例
+
+次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="$PlatformShort$ トレンドラインの例"
+           alt="$Platform$ トレンドラインの例"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 
 <div class="divider--half"></div>
 
-すべての $PlatformShort$ チャートには、デフォルトでトレンドラインがオンになっているわけではありません。それらを有効にするために、トレンドラインを表示する `TrendLineType` プロパティを設定できます。また、ブラシ、期間、太さなど、トレンドラインの複数の外観プロパティを変更できます。以下は、一連のデータ チャートで使用できるトレンドラインのリストです。
+## その他のリソース
 
-- `None`
-- `CubicFit`
-- `CumulativeAverage`
-- `ExponentialAverage`
-- `ExponentialFit`
-- `LinearFit`
-- `LogarithmicFit`
-- `ModifiedAverage`
-- `PowerLawFit`
-- `QuadraticFit`
-- `QuarticFit`
-- `QuinticFit`
-- `SimpleAverage`
-- `WeightedAverage`
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
-次のコード スニペットは、$PlatformShort$ データ チャートの系列にトレンドラインを追加する方法を示しています。
+- [チャート注釈](chart-annotations.md)
+- [チャート強調表示](chart-highlighting.md)
 
-```razor
-<FinancialChart Width="100%" Height="100%" DataSource="DataSource"
-    TrendLineType="QuinticFit"
-    TrendLineThickness=2
-    TrendLinePeriod=10
-    TrendLineBrushes="rgba(0, 101, 209, 1)"/>
-```
+## API メンバー
 
-```html
-<igx-financial-chart width="100%" height="100%" dataSource="[DataSource]"
-    trendLineType="QuinticFit"
-    trendLineThickness="2"
-    trendLinePeriod="10"
-    trendLineBrushes="Blue">
-</igx-financial-chart>
-```
+以下は、上記のセクションで説明した API メンバーのリストです。
 
-```tsx
-<IgrFinancialChart Width="100%" Height="100%" DataSource="{this.DataSource}"
-    TrendLineType="QuinticFit"
-    TrendLineThickness={2}
-    TrendLinePeriod={10}
-    TrendLineBrushes="rgba(0, 101, 209, 1)"/>
-```
-
-```html
-<igc-financial-chart  width="100%" height="100%" datasource="{this.DataSource}"
-    trend-line-type="QuinticFit"
-    trend-line-thickness="2"
-    trend-line-period="10"
-    trend-line-brushes="rgba(0, 101, 209, 1)">
-</igc-financial-chart>
-```
+- `CategoryChart`
+- `XamDataChart`
+- `FinancialChart`
+- `TrendlineType`

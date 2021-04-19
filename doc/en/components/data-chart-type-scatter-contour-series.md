@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Contour Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create scatter contour charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, scatter contour charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Contour Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create scatter contour charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, scatter contour charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','ScatterContourSeries']
 
 ---
-# $PlatformShort$ Scatter Contour Chart
+# $Platform$ Scatter Contour Chart
 
-This topic explains, with code examples, how to use  `ScatterContourSeries` in the $PlatformShort$ data chart component. This series
+This topic explains, with code examples, how to use  `ScatterContourSeries` in the $Platform$ data chart component. This series
 draws colored contour lines based on a triangulation of X and Y data with a numeric value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. The `ScatterContourSeries` works a lot like the `ScatterAreaSeries` except that it represents data as contour lines colored using a fill scale and the scatter area series represents data as a surface interpolated using a color scale.
 
 
-## $PlatformShort$ Scatter Contour Chart Example
+## $Platform$ Scatter Contour Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series" 
-           alt="$PlatformShort$ Scatter Contour Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series"
+           alt="$Platform$ Scatter Contour Chart Example"
            github-src="charts/data-chart/type-scatter-contour-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `ScatterContourSeries`.
+The $Platform$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `ScatterContourSeries`.
 
 ## Required Data
 

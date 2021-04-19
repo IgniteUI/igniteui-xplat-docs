@@ -1,10 +1,10 @@
 ﻿---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: 컴포지트 차트 뷰를 만들기 위해 동일한 플롯 영역에 여러 개의 시각적 요소 인스턴스를 표시하는 데이터 차트를 만듭니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 데이터 소스
+# $Platform$ 데이터 소스
 
 `XamDataChart` 제어에서 모든 시리즈를 올바르게 렌더링하려면 특정 수치와 데이터 열 유형이 필요합니다. 이 항목에서는 각 시리즈 그룹에 데이터 소스를 구현하는 방법에 대한 예제를 표시합니다.
 

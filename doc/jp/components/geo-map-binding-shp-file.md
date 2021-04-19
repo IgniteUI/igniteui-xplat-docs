@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, shapefiles, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, シェープファイル, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 _language: ja
 ---
-# $PlatformShort$ シェープ ファイルを地理的データにバインディング
+# $Platform$ シェープ ファイルを地理的データにバインディング
 
 $ProductName$ Map コンポーネントの `ShapeDataSource` クラスは、形状ファイルから地理空間データ (ポイント/位置、ポリライン、ポリゴン) を読み込み、それを `ShapefileRecord` オブジェクトのコレクションに変換します。
 
 
-## $PlatformShort$ シェープ ファイルを地理的データにバインディングの例
+## $Platform$ シェープ ファイルを地理的データにバインディングの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines" 
-           alt="$PlatformShort$ シェープ ファイルを地理的データにバインディングの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
+           alt="$Platform$ シェープ ファイルを地理的データにバインディングの例"
            github-src="maps/geo-map/binding-shp-polylines">
 </code-view>
 

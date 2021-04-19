@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ Financial Chart | React Tables and Controls | Infragistics
-_description: Our $PlatformShort$ financial chart component helps you visualize financial data using a simple API. Create fast, editable financial graphs with $PlatformName$!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, $ProductName$, Infragistics
+title: $Platform$ Financial Chart | React Tables and Controls | Infragistics
+_description: Our $Platform$ financial chart component helps you visualize financial data using a simple API. Create fast, editable financial graphs with $ProductName$!
+_keywords: $Platform$ charts, financial chart, stock chart, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType']
 ---
-# $PlatformShort$ Financial Chart Overview
+# $Platform$ Financial Chart Overview
 
-The $PlatformShort$ financial chart component makes it easy to visualize financial and stock data by using a simple and intuitive API.
+The $Platform$ financial chart component makes it easy to visualize financial and stock data by using a simple and intuitive API.
 
-## $PlatformShort$ Financial Chart Example
+## $Platform$ Financial Chart Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"
-           alt="$PlatformShort$ Financial Chart Example"
+           alt="$Platform$ Financial Chart Example"
            github-src="charts/financial-chart/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-Once the user binds the data, the $PlatformShort$ chart offers multiple ways in which the data can then be visualized and interpreted. There are several display modes for price and volume and a host of financial indicators. The chart also makes use of label formatting to give context to the data.
+Once the user binds the data, the $Platform$ chart offers multiple ways in which the data can then be visualized and interpreted. There are several display modes for price and volume and a host of financial indicators. The chart also makes use of label formatting to give context to the data.
 
-The $PlatformShort$ financial chart component analyzes and selects data columns - Date/Time column to use for x-axis and Open, High, Low, Close, Volume columns or the first 5 numeric columns for y-axis. Beyond this, the user can specify the chart type to either Bar, Candle, Column, and Line. With its five main visual elements, a toolbar, a prices view, a volume view, an indicators view, and a navigation view, data has become more perceptible.
+The $Platform$ financial chart component analyzes and selects data columns - Date/Time column to use for x-axis and Open, High, Low, Close, Volume columns or the first 5 numeric columns for y-axis. Beyond this, the user can specify the chart type to either Bar, Candle, Column, and Line. With its five main visual elements, a toolbar, a prices view, a volume view, an indicators view, and a navigation view, data has become more perceptible.
 
 You can explicitly specify the chart type by setting the `ChartType` property to one of the following options:
 
@@ -65,7 +65,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ Financial Chart component requires the following modules:
+The $Platform$ Financial Chart component requires the following modules:
 
 ```razor
 FinancialChartModule.Register(IgniteUIBlazor);
@@ -157,7 +157,7 @@ chart.dataSource = stocksData;
 ```
 
 ## Toolbar
-A toolbar is displayed at the top of the $PlatformShort$ financial chart. This allows your end users to change various details about the data being displayed, and also displays different panes. The toolbar consists of the following selectors:
+A toolbar is displayed at the top of the $Platform$ financial chart. This allows your end users to change various details about the data being displayed, and also displays different panes. The toolbar consists of the following selectors:
 - Indicator Type Selector - Allows users to select multiple types of financial indicators. These indicators are displayed below the price pane in their own panes because they do not share the same Y-Axis scale with the prices or other indicators.
 - Overlay Type Selector - Allows users to select different types of financial overlays. These overlays are displayed together with the financial prices series because they share the same y-axis scale. There are two types of overlays the `BollingerBands` and `PriceChannel`.
 - Trendline Type Selector - Allows users to select different types of trendlines. The trendline is displayed in a trendline layer over the price pane and the volume pane.

@@ -293,6 +293,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "IgSize", "mappedName": "screenDpi"}            ],
+           "originalName": "ScreenDpi"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "IList", "mappedName": "userDefinedFunctions"}            ],
            "originalName": "UserDefinedFunctions"
        }   ],

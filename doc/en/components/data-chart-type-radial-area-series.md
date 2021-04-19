@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Radial Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create radial area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, radial area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Radial Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create radial area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, radial area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','RadialAreaSeries']
 ---
-# $PlatformShort$ Radial Area Chart
+# $Platform$ Radial Area Chart
 
 The $ProductName$ radial area chart belongs to a group of radial charts and has a shape of a filled polygon that is bound by a collection of straight lines connecting data points. The `RadialAreaSeries` uses the same concepts of data plotting as the `AreaSeries` but wraps data points around a circle rather than stretching them along a horizontal line.
 
-## $PlatformShort$ Radial Area Chart Example
+## $Platform$ Radial Area Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-area-series" 
-           alt="$PlatformShort$ Radial Area Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-area-series"
+           alt="$Platform$ Radial Area Chart Example"
            github-src="charts/data-chart/type-radial-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `RadialAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `RadialAreaSeries`.
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

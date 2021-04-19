@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 積層型 100 スプライン チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して積層型 100 スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked 100 spline charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 積層型 100 スプライン チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 積層型 100 スプライン チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して積層型 100 スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked 100 spline charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 積層型 100 スプライン チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','Stacked100SplineSeries']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $PlatformShort$ 積層型 100 スプライン チャート
+# $Platform$ 積層型 100 スプライン チャート
 
-$ProductName$ 積層型 100 スプライン チャートは、カテゴリ チャートのグループに属し、スプライン セグメントの滑らかな曲線  (`StackedFragmentSeries`) が互いに積み重ねられた点のコレクションを使用してレンダリングされます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$PlatformShort$ 積層型 100 スプライン チャートは、y 軸の値の処理以外は、$PlatformShort$ 積層型スプライン チャートと同じです。データの直接的表現をする代わりに、`Stacked100SplineSeries` はデータポイント内のすべての値の合計のパーセントに関するデータを表します。
+$ProductName$ 積層型 100 スプライン チャートは、カテゴリ チャートのグループに属し、スプライン セグメントの滑らかな曲線  (`StackedFragmentSeries`) が互いに積み重ねられた点のコレクションを使用してレンダリングされます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$Platform$ 積層型 100 スプライン チャートは、y 軸の値の処理以外は、$Platform$ 積層型スプライン チャートと同じです。データの直接的表現をする代わりに、`Stacked100SplineSeries` はデータポイント内のすべての値の合計のパーセントに関するデータを表します。
 
-## $PlatformShort$ 積層型 100 スプライン チャートの例
+## $Platform$ 積層型 100 スプライン チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-spline-series" 
-           alt="$PlatformShort$ 積層型 100 スプライン チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-spline-series"
+           alt="$Platform$ 積層型 100 スプライン チャートの例"
            github-src="charts/data-chart/type-stacked-100-spline-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 積層型 100 スプライン チャートは、カテゴリ チ�
 `Stacked100SplineSeries` には、`StackedFragmentSeries` 要素を配置できる独自の `Series` コレクションがあります。これらのフラグメントは、チャートの実際のレンダリングを構成するものであり、`ValueMemberPath` を受け取る要素です。
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100SplineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100SplineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -118,8 +118,8 @@ ModuleManager.register(
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <Stacked100SplineSeries 
-      XAxisName="xAxis" 
+    <Stacked100SplineSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

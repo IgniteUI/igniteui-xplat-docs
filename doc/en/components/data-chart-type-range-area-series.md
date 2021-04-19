@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Range Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create range area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, range area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Range Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create range area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, range area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Range Area Chart
+# $Platform$ Range Area Chart
 
 The $ProductName$ range area chart belongs to a group of range charts and is rendered using two lines with the area between the lines filled in. This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the y-axis and categories are displayed on the x-axis. The `RangeAreaSeries` is identical to the `RangeColumnSeries` in all aspects except that the ranges are represented as filled area rather than a set of vertical columns.
 
-## $PlatformShort$ Range Area Chart Example
+## $Platform$ Range Area Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-area-series" 
-           alt="$PlatformShort$ Range Area Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-range-area-series"
+           alt="$Platform$ Range Area Chart Example"
            github-src="charts/data-chart/type-range-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `RangeAreaSeries`:
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `RangeAreaSeries`:
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

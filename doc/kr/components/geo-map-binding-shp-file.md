@@ -1,9 +1,9 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Geographic Shape Files | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Geographic Shape Files | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files. View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 ---
-# $PlatformShort$ Binding Shape Files with Geo-spatial Data
+# $Platform$ Binding Shape Files with Geo-spatial Data
 
 The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
@@ -11,8 +11,8 @@ The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial d
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"  >
 </code-view>
 

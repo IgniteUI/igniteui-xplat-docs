@@ -144,6 +144,26 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
            "originalName": "ExportSerializedVisualData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMinimum"}            ],
+           "originalName": "GetCurrentXAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMinimum"}            ],
+           "originalName": "GetCurrentYAxisActualMinimum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMaximum"}            ],
+           "originalName": "GetCurrentXAxisActualMaximum"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMaximum"}            ],
+           "originalName": "GetCurrentYAxisActualMaximum"
        }   ],
     "originalBaseTypeName": "XYChart",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",

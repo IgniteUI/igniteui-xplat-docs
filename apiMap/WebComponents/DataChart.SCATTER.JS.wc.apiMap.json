@@ -199,6 +199,21 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
+           "originalName": "MarkerOutlineUsesFillScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
+           "originalName": "MarkerOutlineBrightness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
+           "originalName": "MarkerBrushBrightness"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
            "originalName": "RadiusScaleUseGlobalValues"
        },
@@ -280,6 +295,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
            "originalName": "LogarithmBase"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentGlobalMinimum"}            ],
+           "originalName": "GetCurrentGlobalMinimum"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentGlobalMaximum"}            ],
+           "originalName": "GetCurrentGlobalMaximum"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -395,6 +420,31 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
+           "originalName": "ActualItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -422,6 +472,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
            "originalName": "GetItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
+           "originalName": "GetExactItemIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
        },
         {
            "names": [

@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | ESRI Map Resources | Infragistics
-_description: Use Infragistics' $PlatformShort$ to display imagery from ESRI maps. View $ProductName$ map tutorials!
-_keywords: $PlatformShort$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background
+title: $Platform$ Map | Data Visualization Tools | ESRI Map Resources | Infragistics
+_description: Use Infragistics' $Platform$ to display imagery from ESRI maps. View $ProductName$ map tutorials!
+_keywords: $Platform$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Esri Utility
+# $Platform$ Esri Utility
 
 The resource topic provides implementation of an utility that helps with using `ArcGISOnlineMapImagery` provided by Esri Maps in `XamGeographicMap`.
 
@@ -92,7 +92,7 @@ public class EsriStyle
     public static string WorldLightGrayMap = "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer";
     public static string WorldShadedReliefMap = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer";
     public static string WorldPhysicalMap = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer";
-    
+
     // these Esri maps show geographic tiles for the whole of world without contours of continents
     // therefore the Map should also load a shapefile of continents when using them
     public static string WorldAdminOverlay = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
@@ -123,5 +123,5 @@ public class EsriStyle
     public static string UsaAverageHouseholdSize = "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Average_Household_Size/MapServer";
     public static string UsaDiversityIndex = "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Diversity_Index/MapServer";
     public static string UsaRailNetwork = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
-}   
+}
 ```

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 極座標エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して極座標エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, polar area charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 極座標エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 極座標エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して極座標エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, polar area charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 極座標エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'PolarAreaSeries']
 _language: ja
 ---
-# $PlatformShort$ 極座標エリア チャート
+# $Platform$ 極座標エリア チャート
 
 $ProductName$ 極座標エリア チャートは、極座標チャートのグループに属し、頂点または角がデータポイントの極座標 (角度/半径) 座標にある塗りつぶされた多角形の形状を持っています。`PolarAreaSeries` は `ScatterSeries` と同じデータ プロットの概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。他のシリーズ タイプと同じように、複数の `PolarAreaSeries` は同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。
-## $PlatformShort$ 極座標エリア チャートの例
+## $Platform$ 極座標エリア チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series" 
-           alt="$PlatformShort$ 極座標エリア チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           alt="$Platform$ 極座標エリア チャートの例"
            github-src="charts/data-chart/type-polar-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarAreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarAreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

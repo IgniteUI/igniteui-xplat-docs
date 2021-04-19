@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Polyline Series | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Polyline Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 ---
-# $PlatformShort$ Using Shape Polyline Series
+# $Platform$ Using Shape Polyline Series
 
 Use the map component's `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
 
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"  >
 </code-view>
 

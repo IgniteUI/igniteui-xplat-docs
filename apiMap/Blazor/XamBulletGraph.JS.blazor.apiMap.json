@@ -278,6 +278,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelFormat"}            ],
+           "originalName": "LabelFormat"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+           "originalName": "LabelFormatSpecifiers"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionDuration"}            ],
            "originalName": "TransitionDuration"
        },

@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Value Overlay | Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Value Overlay | Infragistics
 _description: Use Infragistics $ProductName$ chart control's value overlay feature to place horizontal or vertical lines at a single numeric value. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, value overlay, $ProductName$, Infragistics
+_keywords: $Platform$ charts, data chart, value overlay, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'ColumnSeries', 'ValueOverlay']
 namespace: Infragistics.Controls.Charts
 ---
 
-# $PlatformShort$ Value Overlay
+# $Platform$ Value Overlay
 
 The $ProductName$ data chart component allows for placement of horizontal or vertical lines at a single numeric value that you define through usage of the `ValueOverlay`. This can help you to visualize data such as the mean or median of a particular series.
 
-## $PlatformShort$ Value Overlay Example
+## $Platform$ Value Overlay Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay" 
-           alt="$PlatformShort$ Value Overlay Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
+           alt="$Platform$ Value Overlay Example"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
@@ -96,7 +96,7 @@ valueOverlay.axis = yAxis;
     <NumericYAxis Name="yAxis" MinimumValue="0" MaximumValue="10" />
 
     <ColumnSeries XAxisName="xAxis" YAxisName="yAxis" DataSource="DataSource" ValueMemberPath="Value" />
-    
+
     <ValueOverlay AxisName="yAxis" Value="5.0" Thickness="5" IsAxisAnnotationEnabled="true" />
 </DataChart>
 ```

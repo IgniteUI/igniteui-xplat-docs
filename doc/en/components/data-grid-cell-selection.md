@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Cell Selection | Selection | Infragistics
-_description: Use cell and row selection of the Infragistics' $PlatformShort$ data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the $ProductName$ table.
-_keywords: $PlatformShort$ Table, Data Grid, cell selection, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Cell Selection | Selection | Infragistics
+_description: Use cell and row selection of the Infragistics' $Platform$ data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the $ProductName$ table.
+_keywords: $Platform$ Table, Data Grid, cell selection, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'GridSelectionMode']
 ---
 
-# $PlatformShort$ Grid Selection
+# $Platform$ Grid Selection
 
 The $ProductName$ Data Table / Data Grid supports single or multiple row and cell selection.
 
-## $PlatformShort$ Grid Selection Example
+## $Platform$ Grid Selection Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection" 
-           alt="$PlatformShort$ Grid Selection Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection"
+           alt="$Platform$ Grid Selection Example"
            github-src="grids/data-grid/cell-selection">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ Data Table / Data Grid supports single or multiple row and cel
 
 ## Overview
 
-Selection in the $PlatformShort$ data grid is enabled on a row and cell level and can be configured by using the `SelectionMode` option of the $PlatformShort$ grid. This property takes five different options, listed below:
+Selection in the $Platform$ data grid is enabled on a row and cell level and can be configured by using the `SelectionMode` option of the $Platform$ grid. This property takes five different options, listed below:
 
 - `None`: Selection is not enabled.
 - `SingleCell`: Selection of a single cell is enabled.
@@ -36,7 +36,7 @@ When set to `MultipleRow` or `MultipleCell`, it is not necessary to hold the CTR
 
 ## Code Snippet
 
-The following demonstrates how to configure selection on the $PlatformShort$ data grid to set multiple row selection:
+The following demonstrates how to configure selection on the $Platform$ data grid to set multiple row selection:
 
 ```tsx
 <IgrDataGrid
@@ -55,7 +55,7 @@ The following demonstrates how to configure selection on the $PlatformShort$ dat
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"                      
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     SelectionMode="GridSelectionMode.MultipleRow" />
 ```

@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | 注釈 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールを使用して、十字線レイヤー、最終値レイヤー、コールアウト レイヤーなどの注釈をチャート軸に追加できます。$ProductName$ でチャートと可視化を向上させます。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, callout layer, final value, crosshair, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, コールアウト レイヤー, 最終値, 十字線, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | 注釈 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールを使用して、十字線レイヤー、最終値レイヤー、コールアウト レイヤーなどの注釈をチャート軸に追加できます。$ProductName$ でチャートと可視化を向上させます。
+_keywords: $Platform$ charts, financial chart, stock chart, callout layer, final value, crosshair, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, コールアウト レイヤー, 最終値, 十字線, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ 注釈
+# $Platform$ 注釈
 
-このトピックでは、$PlatformShort$ Financial Chart コンポーネントの注釈について説明します。
+このトピックでは、$Platform$ Financial Chart コンポーネントの注釈について説明します。
 
-## $PlatformShort$ 注釈の例
+## $Platform$ 注釈の例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
-           alt="$PlatformShort$ 注釈の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
+           alt="$Platform$ 注釈の例"
            github-src="charts/financial-chart/annotations">
 </code-view>
 

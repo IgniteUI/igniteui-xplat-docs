@@ -1,19 +1,19 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: $ProductName$ 데이터 차트는 축, 마커, 시리즈, 범례 및 주석 레이어의 모듈 식 디자인을 제공하는 차트 구성 요소입니다. 이 차트를 사용하면 동일한 차트 영역에 이러한 시각적 요소의 인스턴스를 여러 개 만들어 복합 차트 뷰를 만들 수 있습니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 범례
+# $Platform$ 범례
 
 범례는 최종 사용자가 `XamDataChart` 제어에 플롯된 데이터와 관련된 맥락 정보로 차트 시리즈의 비주얼을 식별할 수 있도록 도와줍니다. 플롯 영역에 표시된 데이터를 보다 쉽게 이해할 수 있도록 대부분의 차트에는 적어도 하나의 범례가 있어야 하지만 필수 사항은 아니며 기본적으로는 차트는 범례 없이 렌더링할 수 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends"
            github-src="charts/data-chart/legends">
 </code-view>
 

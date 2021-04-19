@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 極座標折れ線チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して極座標折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, polar line charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 極座標折れ線チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 極座標折れ線チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して極座標折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, polar line charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 極座標折れ線チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'PolarLineSeries']
 _language: ja
 ---
-# $PlatformShort$ 極座標折れ線チャート
+# $Platform$ 極座標折れ線チャート
 
 $ProductName$ 極座標エリア チャートは、極座標チャートのグループに属し、データ ポイントを接続する直線のコレクションを使用して描画されます。`PolarLineSeries` は `ScatterLineSeries` と同じデータ プロットの概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。他のシリーズ タイプと同じように、複数の `PolarLineSeries` は同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。
 
-## $PlatformShort$ 極座標折れ線チャートの例
+## $Platform$ 極座標折れ線チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series" 
-           alt="$PlatformShort$ 極座標折れ線チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
+           alt="$Platform$ 極座標折れ線チャートの例"
            github-src="charts/data-chart/type-polar-line-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarLineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarLineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`
@@ -49,7 +49,7 @@ public dataSource: any[] = SamplePolarData.create();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartPolarModule.Register(IgniteUIBlazor);
-DataChartPolarCoreModule.Register(IgniteUIBlazor);    
+DataChartPolarCoreModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 

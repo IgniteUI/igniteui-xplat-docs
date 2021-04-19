@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Line Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create line charts such as line chart, spline chart, stacked line chart and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, line charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Line Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create line charts such as line chart, spline chart, stacked line chart and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, line charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Line Charts
+# $Platform$ Line Charts
 
 The $ProductName$ provides the following types of line charts:
 

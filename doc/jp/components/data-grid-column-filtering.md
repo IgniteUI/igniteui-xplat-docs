@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | フィルタリング | インフラジスティックス
+title: $Platform$ データ グリッド | フィルタリング | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ グリッド コンポーネントを使用して表現的なソート条件を実行し、データを簡単に返します。詳細については、$ProductName$ テーブルのサンプルを参照してください。
-_keywords: $PlatformShort$ Table, Data Grid, column, filtering, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列, フィルタリング, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column, filtering, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, フィルタリング, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $PlatformShort$ グリッド フィルターの概要
+# $Platform$ グリッド フィルターの概要
 
-$PlatformShort$ Data Table / Data Grid には、フィルター処理される列のデータ型に基づいてソート条件を実行する機能を提供する列フィルター API が含まれています。
+$Platform$ Data Table / Data Grid には、フィルター処理される列のデータ型に基づいてソート条件を実行する機能を提供する列フィルター API が含まれています。
 
-## $PlatformShort$ グリッド フィルターの例
+## $Platform$ グリッド フィルターの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering" 
-           alt="$PlatformShort$ グリッド フィルターの例" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"
+           alt="$Platform$ グリッド フィルターの例"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 

@@ -1,16 +1,16 @@
 ---
-title: $PlatformShort$ Linear Gauge | Data Visualization Tools | Infragistics
-_description: Use Infragistics' $PlatformShort$ linear gauge control to visualize data with a simple and concise view. Learn about the $ProductName$ linear gauge configurable elements!
+title: $Platform$ Linear Gauge | Data Visualization Tools | Infragistics
+_description: Use Infragistics' $Platform$ linear gauge control to visualize data with a simple and concise view. Learn about the $ProductName$ linear gauge configurable elements!
 _keywords: linear gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamLinearGauge']
 ---
-# $PlatformShort$ Linear Gauge Overview
+# $Platform$ Linear Gauge Overview
 
-Use the $PlatformShort$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
+Use the $Platform$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
 
 The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. It provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The component has also a built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property. The features of the linear gauge component include configurable orientation and direction, configurable visual elements such as the needle, and more.
 
-## $PlatformShort$ Linear Gauge Example
+## $Platform$ Linear Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same linear gauge can transform it to completely different linear gauge.
 
@@ -18,7 +18,7 @@ The following sample demonstrates how setting multiple properties on the same li
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
-           alt="$PlatformShort$ Linear Gauge Example"
+           alt="$Platform$ Linear Gauge Example"
            github-src="gauges/linear-gauge/animation">
 </code-view>
 
@@ -26,7 +26,7 @@ The following sample demonstrates how setting multiple properties on the same li
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $PlatformShort$ gauge component, the core package must also be installed.
+When installing the $Platform$ gauge component, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}

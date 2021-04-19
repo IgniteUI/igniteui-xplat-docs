@@ -4,15 +4,15 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 주석
+# $Platform$ 주석
 
-이 항목에서는 `XamFinancialChart`에서 사용할 수 있는 주석에 대한 개념 정보를 제공합니다.
+이 항목에서는 `FinancialChart`에서 사용할 수 있는 주석에 대한 개념 정보를 제공합니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            github-src="charts/financial-chart/annotations">
 </code-view>
 
