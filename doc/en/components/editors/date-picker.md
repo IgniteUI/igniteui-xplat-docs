@@ -88,7 +88,7 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker Example"
+           alt="$PlatformShort$ Date Picker Editing Example"
            github-src="editors/date-picker/editing">
 </code-view>
 
@@ -100,8 +100,8 @@ The following example demonstrates how to restrict selected dates in the `DatePi
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker Example"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
+           alt="$PlatformShort$ Date Picker Date Limits Example"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
@@ -113,8 +113,8 @@ The following example demonstrates how apply a long date in the `DatePicker`.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker Example"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
+           alt="$PlatformShort$ Date Picker Format Example"
            github-src="editors/date-picker/format">
 </code-view>
 
@@ -126,8 +126,8 @@ The following example demonstrates how combine multiple `DatePicker` controls.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker Example"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
+           alt="$PlatformShort$ Date Picker Date Range Example"
            github-src="editors/date-picker/range">
 </code-view>
 
