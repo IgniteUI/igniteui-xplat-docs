@@ -13,7 +13,7 @@ $ProductName$ エリア チャートは、線の下の領域が塗りつぶさ�
 
 ## $Platform$ エリア チャートの例
 
-`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
+`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `DataSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -69,7 +69,7 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
 
 ## 複数シリーズの $Platform$ エリア チャート
 
-複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコンポーネントに結合することもできます。これは、複数のデータ ソースを `CategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
+複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコントロールに結合することもできます。これは、複数のデータ ソースを `CategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -100,7 +100,7 @@ $ProductName$ ラジアル折れ線チャートは、データ ポイントを�
 - `RadialColumnSeries`
 - `RadialLineSeries`
 - `RadialPieSeries`
-- `ItemsSource`
+- `DataSource`
 - `AngleAxisName`
 - `ValueAxisName`
 - `ValueMemberPath`
