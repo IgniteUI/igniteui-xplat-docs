@@ -53,7 +53,7 @@ sds.dataBind();
 ```
 
 ## Binding Shapefiles
-In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `ItemsSource` property which can be bound to an array of objects. The `ShapeDataSource` is an example such array because it contains a list of `ShapefileRecord` objects.
+In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `DataSource` property which can be bound to an array of objects. The `ShapeDataSource` is an example such array because it contains a list of `ShapefileRecord` objects.
 
 The `ShapefileRecord` class provides properties for storing geo-spatial data, listed in the following table.
 

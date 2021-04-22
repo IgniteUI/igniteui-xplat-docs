@@ -23,13 +23,13 @@ Use the $Platform$ map component's `GeographicProportionalSymbolSeries` to plot 
 The demo above shows the `GeographicProportionalSymbolSeries` series and how to specify data binding options of the series. Automatic marker selection is configured along with marker collision avoidance logic, and marker outline and fill colors are specified too.
 
 ## Configuration Summary
-Similar to other types of scatter series in the map control, the `GeographicProportionalSymbolSeries` series has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns. The `RadiusScale` and `RadiusMemberPath` will settings configures the radius for the bubbles.
+Similar to other types of scatter series in the map control, the `GeographicProportionalSymbolSeries` series has the `DataSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns. The `RadiusScale` and `RadiusMemberPath` will settings configures the radius for the bubbles.
 
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
 Property|Type|Description
 ---|---|---
-`ItemsSource`|any|Gets or sets the items source
+`DataSource`|any|Gets or sets the items source
 `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
 `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
 `RadiusMemberPath`|string|Sets the path to use to get the radius values for the series.

@@ -24,13 +24,13 @@ _language: ja
 上記のデモは、`GeographicProportionalSymbolSeries` シリーズと、シリーズのデータ​​バインディングオプションを指定する方法を示しています。予定表連動マーカー選択は、マーカー競合回避ロジックと合わせて構成され、マーカー アウトラインと塗りつぶしの色も指定されます。
 
 ## 構成の概要
- マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
+ マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
 
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
 プロパティ|タイプ|概要
 ---|---|---
-`ItemsSource`|any|項目のソースを取得または設定します
+`DataSource`|any|項目のソースを取得または設定します
 `LongitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の経度の値の場所を特定します。
 `LatitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の緯度値の場所を決定します。
 `RadiusMemberPath`|string|シリーズの半径値を取得するために使用するパスを設定します。
