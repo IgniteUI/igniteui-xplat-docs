@@ -68,7 +68,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 let warningsCount = 0;
 function transformWarning(msg: string) {
     warningsCount += 1;
-    console.log("- warning " + pad(warningsCount, 4) + ": " + msg);
+    console.log(pad(warningsCount, 4) + " WARNING: " + msg);
 }
 
 function pad(num: number, width: number) {
