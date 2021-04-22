@@ -11,7 +11,7 @@ $ProductName$ シェープ チャートは、一連の形状 (1 つまたは複�
 
 ## $Platform$ 散布ポリゴン チャート
 
-$Platform$ 散布ポリゴン チャートは、`XamDataChart` コンポーネントの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図の塗りつぶし図形に使用できます。
+$Platform$ 散布ポリゴン チャートは、`XamDataChart` コントロールの `ScatterPolygonSeries` を使用して、デカルト (x、y) 座標系でポリゴンの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図の塗りつぶし図形に使用できます。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterPolygonSeries` にバインドします:
 
@@ -25,7 +25,7 @@ $Platform$ 散布ポリゴン チャートは、`XamDataChart` コンポーネ�
 
 ## $Platform$ 散布ポリライン チャート
 
-$Platform$ 散布ポリライン チャートは、`XamDataChart` コンポーネントの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図のアウトラインに使用できます。また、大量の要素間の複雑な関係を視覚化することもできます。
+$Platform$ 散布ポリライン チャートは、`XamDataChart` コントロールの `ScatterPolylineSeries` を使用して、デカルト (x、y) 座標系でポリラインの配列または配列の配列を描画します。このチャートは、プロット図、青写真、さらには建物の間取り図のアウトラインに使用できます。また、大量の要素間の複雑な関係を視覚化することもできます。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterPolylineSeries` にバインドします:
 
@@ -52,7 +52,7 @@ $Platform$ 散布ポリライン チャートは、`XamDataChart` コンポー�
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `ItemsSource`
+- `DataSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

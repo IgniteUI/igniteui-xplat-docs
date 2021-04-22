@@ -11,7 +11,7 @@ $ProductName$ ピラミッド チャートは、年齢ピラミッドまたは�
 
 ## $Platform$ ピラミッド チャートの例
 
-次の例は、`XamDataChart` コンポーネントで `BarSeries` を使用してピラミッド チャートを作成する方法を示しています。
+次の例は、`XamDataChart` コントロールで `BarSeries` を使用してピラミッド チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

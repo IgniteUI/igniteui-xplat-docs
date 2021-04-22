@@ -13,7 +13,7 @@ $ProductName$ ネットワーク チャートは、ネットワーク グラフ�
 
 ## $Platform$ ネットワーク極座標チャート
 
-次の例は、`XamDataChart` コンポーネントで `PolarScatterSeries` (ノード マーカーの描画用) と `PolarLineSeries` (ノード接続の描画用) を使用してネットワーク極座標チャートを作成する方法を示しています。
+次の例は、`XamDataChart` コントロールで `PolarScatterSeries` (ノード マーカーの描画用) と `PolarLineSeries` (ノード接続の描画用) を使用してネットワーク極座標チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,7 +25,7 @@ $ProductName$ ネットワーク チャートは、ネットワーク グラフ�
 
 ## $Platform$ ネットワーク散布図
 
-次の例は、`XamDataChart` コンポーネントで `ScatterSeries` (ノード マーカーの描画用) と `ScatterPolylineSeries` (ノード接続の描画用) を使用してネットワーク散布図を作成する方法を示しています。
+次の例は、`XamDataChart` コントロールで `ScatterSeries` (ノード マーカーの描画用) と `ScatterPolylineSeries` (ノード接続の描画用) を使用してネットワーク散布図を作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

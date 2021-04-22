@@ -12,7 +12,7 @@ $ProductName$ ガント チャートは棒チャートの一種で、さまざ�
 
 ## $Platform$ ガント チャートの例
 
-次の例は、`XamDataChart` コンポーネントで `ScatterPolygonSeries` を使用してガント チャートを作成する方法を示しています。
+次の例は、`XamDataChart` コントロールで `ScatterPolygonSeries` を使用してガント チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
