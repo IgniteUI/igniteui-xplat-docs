@@ -309,7 +309,7 @@
     ]
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "Charts",
     "href": "charts/chart-overview.md",
@@ -317,133 +317,133 @@
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding Real Time Data",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding High Volume Data",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding Multiple Data Source",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Area Chart",
     "href": "charts/types/area-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Bar Chart",
     "href": "charts/types/bar-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Bubble Chart",
     "href": "charts/types/bubble-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Column Chart",
     "href": "charts/types/column-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Composite Chart",
     "href": "charts/types/composite-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Donut Chart",
     "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Financial / Stock Chart",
     "href": "charts/types/stock-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Gantt Chart",
     "href": "charts/types/gantt-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Network Chart",
     "href": "charts/types/network-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Pie Chart",
     "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Point Chart",
     "href": "charts/types/point-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Polar Chart",
     "href": "charts/types/polar-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Pyramid Chart",
     "href": "charts/types/pyramid-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Radial Chart",
     "href": "charts/types/radial-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Scatter Chart",
     "href": "charts/types/scatter-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Shape Chart",
     "href": "charts/types/shape-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Spline Chart",
     "href": "charts/types/spline-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Sparkline Chart",
     "href": "charts/types/sparkline-chart.md",
     "status": ""
@@ -451,29 +451,29 @@
   {
     "name": "Stacked Chart",
     "href": "charts/types/stacked-chart.md",
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Step Chart",
     "href": "charts/types/step-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Treemap",
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
     "status": ""
   },
   {
-    "exclude": ["React", "WebComponent"],
+    "exclude": ["React", "WebComponents"],
     "name": "Chart Features",
     "href": "charts/chart-features.md",
     "status": "",
