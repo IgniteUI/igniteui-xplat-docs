@@ -309,60 +309,69 @@
     ]
   },
   {
+    "exclude": ["React", "WebComponent"],
+    "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "チャート",
     "href": "charts/chart-overview.md",
     "header": true,
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
     "name": "リアルタイム データのバインド",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
     "name": "大規模データのバインド",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponent", "Blazor", "Angular"],
     "name": "複数データ ソースのバインド",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "エリア チャート",
     "href": "charts/types/area-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "棒チャート",
     "href": "charts/types/bar-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "バブル チャート",
     "href": "charts/types/bubble-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "縦棒チャート",
     "href": "charts/types/column-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "複合チャート",
     "href": "charts/types/composite-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ドーナツ チャート",
     "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ファイナンシャル / 株価チャート",
     "href": "charts/types/stock-chart.md",
     "status": ""
@@ -374,6 +383,7 @@
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
     "status": ""
@@ -385,16 +395,19 @@
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "円チャート",
     "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ポイント チャート",
     "href": "charts/types/point-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "極座標チャート",
     "href": "charts/types/polar-chart.md",
     "status": ""
@@ -406,26 +419,31 @@
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ラジアル チャート",
     "href": "charts/types/radial-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "散布図",
     "href": "charts/types/scatter-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "シェープ チャート",
     "href": "charts/types/shape-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "スプライン チャート",
     "href": "charts/types/spline-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
     "status": ""
@@ -433,24 +451,29 @@
   {
     "name": "積層型チャート",
     "href": "charts/types/stacked-chart.md",
+    "exclude": ["React", "WebComponent"],
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ステップ チャート",
     "href": "charts/types/step-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "ツリーマップ",
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponent"],
     "name": "チャート機能",
     "href": "charts/chart-features.md",
     "status": "",
@@ -536,11 +559,13 @@
     "status": ""
   },
   {
-    "name": "チャート (OLD)",
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "チャート",
     "header": true,
     "exclude": ["Blazor", "Angular"]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "カテゴリ チャート",
     "href": "category-chart.md",
     "status": "",
@@ -584,6 +609,7 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "データ チャート",
     "href": "data-chart.md",
     "status": "",
@@ -972,6 +998,7 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "ファイナンシャル チャート",
     "href": "financial-chart.md",
     "status": "",
@@ -1020,6 +1047,14 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "ツリーマップ",
+    "href": "charts/types/treemap-chart.md",
+    "exclude": ["Blazor", "Angular"],
+    "status": ""
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
     "exclude": ["Blazor", "Angular"],
