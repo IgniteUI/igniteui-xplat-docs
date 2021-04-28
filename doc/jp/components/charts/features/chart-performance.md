@@ -130,7 +130,7 @@ export class MultiDataSources {
 
 ### データ フィルタリング
 
-$Platform$ `CategoryChart` および `FinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、 `IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
+$Platform$ `CategoryChart` および `FinancialChart` コントロールには、データを分析して一連のチャートを生成するデータ アダプターが組み込まれています。ただし、`IncludedProperties` と `ExcludedProperties` を使用して、実際に描画するデータ列のみをフィルタリングすると、より高速に動作します。例:
 
 
 ```razor

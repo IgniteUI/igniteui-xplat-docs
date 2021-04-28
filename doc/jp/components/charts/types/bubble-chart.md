@@ -23,7 +23,7 @@ $ProductName$ バブル チャートは[散布図]（scatter-chart.md）の一�
 
 ## 単一シリーズの $Platform$ バブル チャート
 
-以下の例に示すように、データを `BubbleSeries` の `DataSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、 `RadiusMemberPath` プロパティを使用してデータ列をマップできます。
+以下の例に示すように、データを `BubbleSeries` の `DataSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -47,7 +47,7 @@ $Platform$ バブル チャートでは、次の例に示すように、複数�
 
 ## $Platform$ バブル チャートのスタイル設定
 
-$Platform$ バブル チャートでは、`MarkerType` プロパティを使用してバブル マーカーの形状をカスタマイズし、`RadiusScale` プロパティを使用してサイズをカスタマイズし、`MarkerBrush`、`MarkerOutline`、 `MarkerThickness` プロパティを使用して外観をカスタマイズできます。さらに、`FillMemberPath` プロパティと `FillScale` プロパティを使用して、データ列に基づいてバブル マーカーにカラーを付けることもできます。この例では、上記のプロパティの使用法を示しています。
+$Platform$ バブル チャートでは、`MarkerType` プロパティを使用してバブル マーカーの形状をカスタマイズし、`RadiusScale` プロパティを使用してサイズをカスタマイズし、`MarkerBrush`、`MarkerOutline`、`MarkerThickness` プロパティを使用して外観をカスタマイズできます。さらに、`FillMemberPath` プロパティと `FillScale` プロパティを使用して、データ列に基づいてバブル マーカーにカラーを付けることもできます。この例では、上記のプロパティの使用法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
