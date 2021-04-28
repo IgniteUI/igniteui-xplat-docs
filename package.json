@@ -9,6 +9,7 @@
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApi": "tsc && gulp updateApiSection",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
+    "generateRedirects": "tsc && gulp generateRedirects",
     "build": "tsc",
     "buildAngular": "tsc && gulp buildOutputAngular",
     "buildBlazor": "tsc && gulp buildOutputBlazor",
