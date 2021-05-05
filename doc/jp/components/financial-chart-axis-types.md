@@ -229,7 +229,7 @@ $Platform$ Financial Chart コンポーネントで、数値軸の範囲は軸�
 $Platform$ Financial Chart コンポーネントで、チャートのデータが Y 軸に対数的にマップされるかどうかを制御できます。これは以下の設定で実行されます。
 - `YAxisIsLogarithmic` - Y 軸がリニア スケールの代わりに対数目盛を使用するかどうかを指定します。デフォルトでこのプロパティは False に設定されます。
 - `YAxisLogarithmBase` - Y 軸にデータ項目の位置をマップするときに log 関数で使用する基本値。
-これは yAxisIsLogarithmic が True の場合のみ効果があります。
+これは yAxisIsLogarithmic が true の場合のみ効果があります。
 
 以下のコード スニペットは、x 軸の目盛りの色、長さ、太さを設定します。
 

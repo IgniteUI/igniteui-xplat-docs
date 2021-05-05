@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ Spreadsheet の構成
 
-$Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズームレベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
+$Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズーム レベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
 
 ## $Platform$ Spreadsheet の構成の例
 
@@ -23,7 +23,7 @@ $Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線
 
 ## セル編集の構成
 
-ユーザーがセルの値を編集して新しい入力を確認すると、スプレッドシートの構成に応じて、`Spreadsheet` コントロールに Enter キーを押すと現在アクティブなセルに隣接するセルに移動できます。
+ユーザーがセルの値を編集して新しい入力を確認すると、スプレッドシートの構成に応じて、`Spreadsheet` コントロールに `Enter` キーを押すと現在アクティブなセルに隣接するセルに移動できます。
 
 この `Enter` キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを `true` に設定できます。false に設定すると、`Enter` キーを押してもアクティブ セルは変わりません。
 
@@ -203,7 +203,7 @@ import { SpreadsheetCellSelectionMode } from 'igniteui-webcomponents-spreadsheet
 this.spreadsheet.selectionMode = SpreadsheetCellSelectionMode.ExtendSelection;
 ```
 
-`Spreadsheet` コントロールの選択は、プログラムで設定または取得することもできます。単一選択の場合は、`ActiveCell` プロパティを設定できます。複数選択は、`Spreadsheet` コントロールの ActiveSelection プロパティによって返される `SpreadsheetSelection` オブジェクトを介して行われます。
+`Spreadsheet` コントロールの選択は、プログラムで設定または取得することもできます。単一選択の場合は、`ActiveCell` プロパティを設定できます。複数選択は、`Spreadsheet` コントロールの `ActiveSelection` プロパティによって返される `SpreadsheetSelection` オブジェクトを介して行われます。
 
 `SpreadsheetSelection` オブジェクトには、新しい `SpreadsheetCellRange` オブジェクトの形式でスプレッドシートの選択範囲にプログラムでセルの範囲を追加できる `AddCellRange()` メソッドがあります。
 
@@ -215,7 +215,7 @@ this.spreadsheet.activeSelection.addCellRange(new SpreadsheetCellRange(2, 2, 5, 
 
 ## タブバー領域の構成
 
-`Spreadsheet` コントロールは、`TabBarWidth` プロパティと `TabBarVisibility` プロパティを介して、現在アクティブな Workbook の `WindowOptions` からタブバー領域の表示設定と幅の設定を使用します。
+`Spreadsheet` コントロールは、`TabBarWidth` プロパティと `TabBarVisibility` プロパティを介して、現在アクティブな `Workbook` の `WindowOptions` からタブバー領域の表示設定と幅の設定を使用します。
 
 タブバー領域は、ワークシート名をコントロール内のタブとして可視化する領域です。
 
@@ -229,7 +229,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## ズーム レベルの設定
 
-$Platform$ Spreadsheet コンポーネントは、ZoomLevel プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
+$Platform$ Spreadsheet コンポーネントは、`ZoomLevel` プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
 
 このプロパティを数値に設定すると、整数としてのパーセンテージが表されるため、`ZoomLevel` を 100 に設定することは、100% に設定することと同じです。
 

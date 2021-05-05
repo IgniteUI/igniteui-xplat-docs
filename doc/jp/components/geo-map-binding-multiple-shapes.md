@@ -286,7 +286,7 @@ protected override void OnInitialized()
 
 ## ポリゴンの処理
 
-世界の国々の`ShapeDataSource` に読み込まれた形状データを処理し、`GeographicShapeSeries` オブジェクトに割り当てます。
+世界の国々の `ShapeDataSource` に読み込まれた形状データを処理し、`GeographicShapeSeries` オブジェクトに割り当てます。
 
 ```ts
 import { IgrGeographicShapeSeries } from 'igniteui-react-maps';
@@ -1031,7 +1031,6 @@ export class MapBindingMultipleShapes extends SampleBase {
     }
 }
 ```
-
 
 ```razor
 @using IgniteUI.Blazor.Controls

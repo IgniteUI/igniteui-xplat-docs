@@ -24,7 +24,7 @@ $Platform$ Financial Chart コンポーネントはリアルタイムでデー�
 
 ## コード例
 
-高頻度でデータを更新する $Platform$ Financial Chart コンポーネントを作成するには、データ ソースの最初のデータ項目を削除し、新しいデータ項目をデータの最後に追加します。また、チャートに変更について通知するために `NotifyRemoveItem` および `NotifyInsertItem` 関数を呼び出します。バインドしたデータの変更をチャートに通知する方法の詳細については、ファイナンシャル チャートの `notify*` メソッドを参照してください。
+高頻度でデータを更新する $Platform$ Financial Chart コンポーネントを作成するには、データ ソースの最初のデータ項目を削除し、新しいデータ項目をデータの最後に追加します。また、チャートに変更について通知するために `NotifyRemoveItem` および `NotifyInsertItem` 関数を呼び出します。バインドしたデータの変更をチャートに通知する方法の詳細については、ファイナンシャル チャートの notify メソッドを参照してください。
 
 <!-- Blazor -->
 データソースを ObservableCollection または INotifyCollectionChanged を実装する別のコレクションにバインドする場合、項目を追加または削除するときに `NotifyRemoveItem` または `NotifyInsertItem` を呼び出す必要はありません。

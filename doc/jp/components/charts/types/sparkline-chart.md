@@ -107,7 +107,7 @@ $Platform$ スパークラインの通常の範囲機能は、データが視覚
 
 既定では、標準範囲は表示されません。有効にすると、標準範囲は薄い灰色の外観で表示されますが、`NormalRangeFill` プロパティを使用して構成することもできます。
 
-DisplayNormalRangeInFront プロパティを設定することで、$Platform$ スパークラインのプロットされたシリーズの前または後ろに標準範囲を表示するかどうかを設定することもできます。
+`DisplayNormalRangeInFront` プロパティを設定することで、$Platform$ スパークラインのプロットされたシリーズの前または後ろに標準範囲を表示するかどうかを設定することもできます。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -137,7 +137,7 @@ $Platform$ スパークラインは、実際のスパークライン レイヤ�
 
 $Platform$ スパークラインは、不明な値を検出し、指定された補間アルゴリズムを介して不明な値のためのスペースを描画することができます。データに null 値が含まれていて、この機能を使用しない場合、つまり補間が指定されていない場合、不明な値はプロットされません。
 
-未知の値をプロットするために、$Platform$ スパークラインの `UnknownValuePlotting` プロパティを設定することができます。以下のサンプルは、`UnknownValuePlating` プロパティの値の違いを示しており、チェックボックスを使用してオンとオフを切り替えることができます。
+未知の値をプロットするために、$Platform$ スパークラインの `UnknownValuePlotting` プロパティを設定することができます。以下のサンプルは、`UnknownValuePlotting` プロパティの値の違いを示しており、チェックボックスを使用してオンとオフを切り替えることができます。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

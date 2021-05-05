@@ -152,12 +152,16 @@ $Platform$ Financial Chart コンポーネントでは、チャート ナビゲ�
 <FinancialChart Width="100%"
    Height="100%"
    DataSource="DataSource"
-   ChartType="FinancialChartType.Candle"
-   Brushes="Green, Blue"
-   Outlines="Green, Blue"
-   NegativeBrushes="Red"
-   NegativeOutlines="Red"
-   Thickness="2" />
+   OverlayBrushes="Red"
+   OverlayOutlines="Green"
+   OverlayThickness="2" />
+
+@code {
+   protected override void OnInitialized()
+   {
+      this.Chart.OverlayTypes.Add(FinancialOverlayType.BollingerBands);
+   }
+}
 ```
 
 ## インジケーターの構成
@@ -271,7 +275,7 @@ $Platform$ Financial Chart コンポーネントでは、チャート ナビゲ�
     width="850px"
     height="600px"
     trendLineType="QuinticFit"
-	trendLineThickness="2"
+    trendLineThickness="2"
     trendLineBrushes="Green, Blue">
  </igx-financial-chart>
 ```
