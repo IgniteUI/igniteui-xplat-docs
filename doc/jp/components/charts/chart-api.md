@@ -31,7 +31,7 @@ $Platform$ `FinancialChart` には次の API メンバーがあります。
 
 $Platform$ `XamDataChart` には次の API メンバーがあります。
 
-チャート プロパティ | 軸 クラス
+チャート プロパティ | 軸クラス
 -----------------|-------------
  - `Legend` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> |  - `Axis` <br> - `CategoryXAxis` <br> - `CategoryYAxis` <br> - `CategoryAngleAxis` <br> - `NumericXAxis` <br> - `NumericYAxis` <br> - `NumericAngleAxis` <br> - `NumericRadiusAxis` <br>
 
