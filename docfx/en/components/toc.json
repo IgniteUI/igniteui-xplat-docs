@@ -44,19 +44,19 @@
     "status": "UPDATED",
     "items": [
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	      "exclude": ["Blazor", "WebComponents"],
         "name": "Using Panes",
         "href": "dock-manager-updating-panes.md",
         "status": ""
       },
       {
-	    "exclude": ["Blazor", "WebComponents"],
+	      "exclude": ["Blazor", "WebComponents"],
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
       },
       {
-	    "exclude": ["Angular", "Blazor", "React"],
+	      "exclude": ["Angular", "Blazor", "React"],
         "name": "Desktop Integration",
         "href": "dock-manager-electron.md",
         "status": "NEW"
