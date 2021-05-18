@@ -54,6 +54,12 @@
         "name": "Embedding Frames",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
+      },
+      {
+	    "exclude": ["Angular", "Blazor", "React"],
+        "name": "Desktop Integration",
+        "href": "dock-manager-electron.md",
+        "status": "NEW"
       }
     ]
   },
