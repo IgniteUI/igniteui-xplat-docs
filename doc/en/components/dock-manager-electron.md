@@ -11,15 +11,23 @@ The Infragistics $Platform$ Dock Manager component can be used in a multi-window
 
 ## Implementation
 
-Let's go through the most important parts of the implementation of this application. We have used the [Electron Forge](https://www.electronforge.io/) CLI tool and its [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) template to create an Electron application. Electron has two types of processes: Main and Renderer.
+Let's go through the most important parts of the implementation of this application.
+
+### Project Structure
+
+We have used the [Electron Forge](https://www.electronforge.io/) CLI tool and its [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) template to create an Electron application. Electron has two types of processes: Main and Renderer.
 - The Main process creates web pages by creating `BrowserWindow` instances. Each `BrowserWindow` instance runs the web page in its Renderer process.
 - The Renderer process manages only the corresponding web page.
 
 The `index.ts` script specifies the entry point of the Electron application that will run the Main process. Most of the code of our application is inside the `renderer.ts` file which runs in the Renderer process. The `index.html` represents the content of the web page. The styles of the web page are hosted in the `index.css` file.
 
+### Dock Manager Setup
+
 After installing the Dock Manager package, we have registered the Dock Manager component using the `defineCustomElements()` in the `renderer.ts` file. This allows to add the `<igc-dockmanager>` in the `index.html` file.
 
-For the Dock Manager pane contents we have used `iframe` elements which host different urls. In our case these urls point to [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) samples. Since the `iframe` elements are self-contained this allows us to easily move them from one window to another.
+For the Dock Manager pane contents we have used `iframe` elements which host different urls. In our case these urls point to [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) samples. Since the `iframe` elements are self-contained, moving them from one window to another is easily accomplished.
+
+### Drag and drop
 
 In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the [`paneHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) and [`tabHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in [`dragService`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) and attach `dragstart`/`dragend` event listeners.
 
@@ -118,6 +126,8 @@ const newDockManager = newDocument.getElementById('dockManager') as IgcDockManag
 const adoptedNode = newDocument.adoptNode(contentElement);
 newDockManager.appendChild(adoptedNode);
 ```
+
+### Window Management
 
 We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to `true` when creating the `BrowserWindow` in the `index.ts`. This gives us direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
 
