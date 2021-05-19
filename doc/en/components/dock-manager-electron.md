@@ -82,7 +82,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-When the pane header is dropped inside a document we call the [`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns `true`. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function.
+When the pane header is dropped inside a document we call the [`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns `true`. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -101,7 +101,7 @@ const handleDocumentDrop = async (event: DragEvent) => {
 }
 ```
 
-When a pane is dropped out of window or in another window we remove the `draggedPane` from its current Dock Manager component.
+When a pane is dropped out of its current window, we need to remove the `draggedPane` from its Dock Manager component and update the layout.
 
 ```ts
 const draggedPane = dockManager.draggedPane as IgcContentPane;
@@ -109,7 +109,7 @@ await dockManager.removePane(draggedPane);
 dockManager.layout = { ...dockManager.layout };
 ```
 
-This updates only the `layout` of the Dock Manager. We should also move the pane content element to its new window. For this purpose, we use the [`document.adoptNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptNode) method.
+Next, we need to move the pane content element to its new window. For this purpose, we use the [`document.adoptNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptNode) method, which allows us to transfer the content element node to the new document and finally, append it as a child of the new Dock Manager component.
 
 ```ts
 const contentElement = dockManager.querySelector('[slot=' + draggedPane.contentId + ']');
@@ -119,7 +119,7 @@ const adoptedNode = newDocument.adoptNode(contentElement);
 newDockManager.appendChild(adoptedNode);
 ```
 
-We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to `true` when creating the `BrowserWindow` in the `index.ts`. This gives us a direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
+We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to `true` when creating the `BrowserWindow` in the `index.ts`. This gives us direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
 
 ```ts
 mainWindow = new BrowserWindow({
@@ -131,6 +131,6 @@ mainWindow = new BrowserWindow({
 });
 ```
 
-In this application we have implemented a `IDockManagerWindow` type which could be either a main window (`IMainDockManagerWindow`) or a child window (`IChildDockManagerWindow`). The main window is the one created when the application starts. It contains references to all its child windows. A child window is created when a pane is dropped out of a window and has a reference to the main window of the application.
+In this application we have implemented an `IDockManagerWindow` type which could be either a main window (`IMainDockManagerWindow`) or a child window (`IChildDockManagerWindow`). The main window is the one created when the application starts. It contains references to all its child windows. A child window is created when a pane is dropped out of a window and has a reference to the main window of the application.
 
 For the full source code please clone the [repository](https://github.com/IgniteUI/dock-manager-electron-app).
