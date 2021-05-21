@@ -7,6 +7,17 @@ _keywords: Breaking Changes,  $ProductName$, Infragistics
 
 This topic provides information about breaking changes in $ProductName$ as well as how to update older code to latest API.
 
+## Redesigned Chart Defaults
+
+> [!NOTE]
+> These breaking changes were introduce in version **{PackageVerChangedCharts}** of these packages and components:
+
+* All color resources	
+* All color resource values were changed, and new resource values are added	
+* Brushes - Most of the brush values were updated
+* Changed marker's fill to match the marker's outline for PointSeries, BubbleSeries, ScatterSeries, PolarScatterSeries
+    - Note, you can use set MarkerFillMode property to Normal to undo this change
+<div class="divider--half"></div>
 <!-- React, WebComponents -->
 
 ## Changed name of PropertyPath
@@ -72,6 +83,10 @@ The data grid component requires the "inputs" package.
 **npm install --save {PackageInputs}**
 ```
 <!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Angular, React, WebComponents -->
 
 ## Changed Import Statements
 
@@ -249,5 +264,4 @@ import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-m
 import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
 import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
 ```
-
-
+<!-- end: Angular, React, WebComponents -->

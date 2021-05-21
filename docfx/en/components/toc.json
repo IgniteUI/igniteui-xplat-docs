@@ -27,7 +27,11 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "name": "What's New",
+    "href": "whats-new-dv.md",
+    "status": "NEW"
+  },
+  {
     "name": "Breaking Changes",
     "href": "general-breaking-changes-dv.md",
     "status": "UPDATED"
