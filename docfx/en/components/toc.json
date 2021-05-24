@@ -45,7 +45,7 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
 	    "exclude": ["Blazor", "WebComponents"],
@@ -96,7 +96,7 @@
     "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "editors/date-picker.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -113,7 +113,7 @@
       {
         "name": "Accessibility Compliance",
         "href": "data-grid-accessibility.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Binding Live Data",
@@ -158,12 +158,12 @@
       {
         "name": "Cell Activation",
         "href": "data-grid-cell-activation.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "Grid Editing",
         "href": "data-grid-cell-editing.md",
-        "status": "NEW"
+        "status": "UPDATED"
       },
       {
         "name": "Cell Selection",
@@ -243,7 +243,7 @@
       {
         "name": "Row Highlighting",
         "href": "data-grid-row-highlighting.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
@@ -510,7 +510,7 @@
         {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Markers",
@@ -956,7 +956,7 @@
         "exclude": ["Blazor"],
         "name": "Synchronization",
         "href": "data-chart-synchronization.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Title and Subtitle",

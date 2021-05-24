@@ -25,7 +25,8 @@
             { "name": "{PackageDockManager}",       "value": "igniteui-dockmanager"},
             { "name": "{PackageWebsite}",           "value": "https://www.npmjs.com/package/"},
             { "name": "{PackageVerChangedImports}", "value": "8.2.12"},
-            { "name": "{PackageVerLatest}",         "value": "9.1.1"}
+            { "name": "{PackageVerLatest}",         "value": "9.1.1"},
+            { "name": "{PackageVerChangedCharts}",  "value": "11.2.0"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -68,7 +69,8 @@
             { "name": "{PackageVerChangedImports}", "value": "16.11.7"},
             { "name": "{PackageVerRenamedGrid}",    "value": "16.12.2"},
             { "name": "{PackageVerChangedFields}",  "value": "16.12.3"},
-            { "name": "{PackageVerLatest}",         "value": "16.12.3"}
+            { "name": "{PackageVerLatest}",         "value": "16.12.3"},
+            { "name": "{PackageVerChangedCharts}",  "value": "16.14.0"}
 
         ],
         "samplesBrowsers" : {
@@ -112,7 +114,9 @@
             { "name": "{PackageVerChangedImports}", "value": "1.0.6"},
             { "name": "{PackageVerRenamedGrid}",    "value": "1.1.2"},
             { "name": "{PackageVerChangedFields}",  "value": "1.1.3"},
-            { "name": "{PackageVerLatest}",         "value": "1.1.3"}
+            { "name": "{PackageVerLatest}",         "value": "1.1.3"},
+            { "name": "{PackageVerChangedCharts}",  "value": "1.3.0"}
+
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -151,7 +155,8 @@
             { "name": "{PackageDockManager}",       "value": "IgniteUI.Blazor"},
             { "name": "{PackageWebsite}",           "value": "https://www.npmjs.com/package/"},
             { "name": "{PackageVerChangedImports}", "value": "1.0.6"},
-            { "name": "{PackageVerLatest}",         "value": "1.1.1"}
+            { "name": "{PackageVerLatest}",         "value": "1.1.1"},
+            { "name": "{PackageVerChangedCharts}",  "value": "21.1.37"}
         ],
         "samplesBrowsers" : {
             "development": "https://localhost:44317/blazor-client",

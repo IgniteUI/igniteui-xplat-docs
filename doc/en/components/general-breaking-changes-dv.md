@@ -17,6 +17,7 @@ This topic provides information about breaking changes in $ProductName$ as well 
 * Brushes - Most of the brush values were updated
 * Changed marker's fill to match the marker's outline for PointSeries, BubbleSeries, ScatterSeries, PolarScatterSeries
     - Note, you can use set MarkerFillMode property to Normal to undo this change
+
 <div class="divider--half"></div>
 <!-- React, WebComponents -->
 
