@@ -27,7 +27,11 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "name": "What's New",
+    "href": "general-whats-new-dv.md",
+    "status": "NEW"
+  },
+  {
     "name": "重大な変更",
     "href": "general-breaking-changes-dv.md",
     "status": "UPDATED"

@@ -277,7 +277,7 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/excel*.md');
             // sources.push('!doc/**/treemap*.md');
             sources.push('!doc/**/general-cli*.md');
-            sources.push('!doc/**/general-breaking-changes*.md');
+            //sources.push('!doc/**/general-breaking-changes*.md');
             // sources.push('!doc/**/data-chart-type-stacked*.md');
             // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
             // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
