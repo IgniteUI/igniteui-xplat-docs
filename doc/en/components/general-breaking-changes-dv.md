@@ -19,6 +19,7 @@ This topic provides information about breaking changes in $ProductName$ as well 
     - Note, you can use set MarkerFillMode property to Normal to undo this change
 
 <div class="divider--half"></div>
+
 <!-- React, WebComponents -->
 
 ## Changed name of PropertyPath
