@@ -368,7 +368,7 @@ var mergedRegion1 = worksheet.MergedCellsRegions.Add(0, 1, 0, 3);
 mergedRegion1.Value = "Day1";
 
 // Set the cell alignment of the middle cell in the merged region.
-// Since a cell and its merged region shared a cell format, this willultimately set the format of the merged region
+// Since a cell and its merged region shared a cell format, this will ultimately set the format of the merged region
 worksheet.Rows[0].Cells[2].CellFormat.Alignment = HorizontalCellAlignment.Center;
 ```
 

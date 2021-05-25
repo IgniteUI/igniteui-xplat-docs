@@ -101,7 +101,6 @@ IgcFinancialChartModule.register();
 <div class="divider--half"></div>
 
 ## 使用方法
-
 ファイナンシャル チャート モジュールをインポートした後、チャートをデータにバインドします。
 
 `FinancialChart` コントロールを作成するには、はじめにバインドするデータが必要です。以下のコード スニペットは、シンプルなデータソースを作成する方法を示します。

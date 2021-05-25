@@ -5,7 +5,7 @@ _keywords: npm package license,  $ProductName$ license feed,  licensing, npm パ
 _language: ja
 ---
 
-# $Platform$ 使用許諾契約
+# $ProductName$ 使用許諾契約
 購入して使用する $ProductName$ に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
 >[!NOTE]
