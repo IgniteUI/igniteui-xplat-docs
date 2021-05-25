@@ -15,7 +15,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-chart-types"
            alt="$Platform$ 積層型チャートのタイプ" >
 </code-view>
 

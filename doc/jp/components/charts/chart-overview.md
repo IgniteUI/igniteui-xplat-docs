@@ -170,7 +170,7 @@ $Platform$ 極座標エリア チャートまたは極座標グラフは、極�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
            alt="$Platform$ 極座標型折れ線チャート" >
 </code-view>
 

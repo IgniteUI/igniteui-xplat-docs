@@ -195,7 +195,7 @@ The $Platform$ Polar Area Chart belongs to a group of [Polar Chart](polar-chart.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
            alt="$Platform$ Polar Area Chart" >
 </code-view>
 
@@ -207,7 +207,7 @@ The $Platform$ Polar Spline Area Chart belongs to a group of [Polar Chart](polar
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
            alt="$Platform$ Polar Spline Area Chart" >
 </code-view>
 

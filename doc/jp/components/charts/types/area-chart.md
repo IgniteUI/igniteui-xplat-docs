@@ -196,7 +196,7 @@ $ProductName$ 極座標エリア チャートは[極座標チャート](polar-ch
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
            alt="$Platform$ 極座標型エリア チャート" >
 </code-view>
 
@@ -208,7 +208,7 @@ $Platform$ 極座標スプライン エリア チャートは[極座標チャー
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
            alt="$Platform$ 極座標型スプライン エリア チャート" >
 </code-view>
 

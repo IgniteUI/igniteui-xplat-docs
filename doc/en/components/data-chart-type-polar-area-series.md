@@ -12,9 +12,9 @@ The $ProductName$ polar area chart belongs to a group of polar charts and has a 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
            alt="$Platform$ Polar Area Chart Example"
-           github-src="charts/data-chart/type-polar-area-series">
+           github-src="charts/data-chart/polar-area-chart">
 </code-view>
 
 <div class="divider--half"></div>

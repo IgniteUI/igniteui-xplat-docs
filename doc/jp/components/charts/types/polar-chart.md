@@ -19,7 +19,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
            alt="$Platform$ 極座標型エリア チャート" >
 </code-view>
 
@@ -33,7 +33,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
            alt="$Platform$ 極座標型エリア チャート" >
 </code-view>
 
@@ -47,7 +47,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-scatter-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-scatter-chart"
            alt="$Platform$ 極座標型マーカー チャート" >
 </code-view>
 
@@ -61,7 +61,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
            alt="$Platform$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -75,7 +75,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-chart"
            alt="$Platform$ 極座標スプライン チャート" >
 </code-view>
 

@@ -14,9 +14,9 @@ $ProductName$ 極座標スプライン エリア チャートは、極座標チ�
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-area-series"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
            alt="$Platform$ 極座標スプライン エリア チャートの例"
-           github-src="charts/data-chart/type-polar-spline-area-series">
+           github-src="charts/data-chart/polar-spline-area-chart">
 </code-view>
 
 <div class="divider--half"></div>
