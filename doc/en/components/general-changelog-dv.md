@@ -7,13 +7,13 @@ _keywords: Changelog, What's New,  $ProductName$, Infragistics
 
 All notable changes for each version of this project will be documented in this file.
 
-**{PackageVerChangedCharts}**
+## **{PackageVerChangedCharts}**
 
-## Charts
+### Charts
 
 This release introduces several new and improved visual design and configuration options for all of the chart components. e.g. Data Chart, Category Chart, and Financial Chart.
 
-### Redesigned Chart Defaults:
+Redesigned Chart Defaults:
 
 * New color palette for series/markers in all charts. - All types of charts/series have new colors for brush/fill and outlines 
 
@@ -93,7 +93,7 @@ eg.
 * Added support to automatically sync the vertical zoom to the series content
 * Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed 
 
-### Chart Legend:
+### Chart Legend
 
 * Added Horizontal Orientation for ItemLegend
     - The following chart types can use ItemLegend in horizontal orientation:
@@ -102,14 +102,17 @@ eg.
         - Pie 
 * `LegendHighlightingMode` - Enables series highlighting when hovering over legend items
 
-### Geographic Map (CTP):
+### Geographic Map
+
+> [!NOTE]
+> These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)  
 * Added support for shifting display of some map series while wrapping around the coordinate origin  
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
-### Data Grid:
+### Data Grid
 
 * Added `EditModeClickAction` property - aka Excel-style Editing, instantly begin editing when typing. Normally double-clicking is required to enter edit mode. 
 
@@ -119,16 +122,16 @@ eg.
 
 * Added `SelectAllRows` - method.
 
-* Added Row Range Selection - With `SelectionMode` property set to MultipleRow the following new functionality is now included:
+* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
     - Shift and click to select multiple rows.
     - Shift and press the up/down arrow keys to select multiple rows.
 
-* Pressing space bar toggles selection of active row via `SelectionMode` property set to MultipleRow or SingleRow
+* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 
 * Added Column Summaries to Column Options Dialog. 
 
-### Date Picker: 
+### Date Picker 
 
 * `ShowTodayButton` - Toggles Today button visibility
 * `Label` - Adds a label above the date value
@@ -144,13 +147,14 @@ eg.
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-
-**{PackageVerChangedFields}** 
+## **{PackageVerChangedFields}** 
 
 > [!NOTE]
 > These breaking changes were introduce in the grid package.
 
-## Changed name of PropertyPath
+### Data Grid
+
+- Changed name of PropertyPath
 
 The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
 
@@ -182,9 +186,11 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
-**{PackageVerRenamedGrid}**
+## **{PackageVerRenamedGrid}**
 
-## Changed Name of Live Grid
+### Data Grid
+
+- Changed Name of Live Grid
 
 The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
 
@@ -203,7 +209,7 @@ import { IgcDataGrid } from "igniteui-webcomponents-grids";
 import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
 ```
 
-## Required Peer Dependency for Data Grid
+- Required Peer Dependency for Data Grid
 
 The data grid component requires the "inputs" package.
 
@@ -215,10 +221,9 @@ The data grid component requires the "inputs" package.
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
+## **{PackageVerChangedImports}**
 
-**{PackageVerChangedImports}**
-
-## Changed Import Statements
+- Changed Import Statements
 
 Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
@@ -236,7 +241,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
 
 
-## Code After Changes
+- Code After Changes
 
 Now, you need to use just package names instead of full paths to API classes and enums.
 
@@ -316,7 +321,7 @@ import { IgrLiveGrid } from "igniteui-react-grids";
 import { IgrLiveGridModule } from 'igniteui-react-grids';
 ```
 
-## Code Before Changes
+- Code Before Changes
 
 Before, you had to import using full paths to API classes and enums:
 
