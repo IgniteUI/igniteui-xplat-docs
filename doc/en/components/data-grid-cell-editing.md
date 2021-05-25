@@ -35,6 +35,10 @@ In addition, error handling can be performed by hooking the `onCellValueChanging
 
 Commits can be approved or declined at the grid level by hooking `onDataCommitting` via the `acceptCommit` or `rejectCommit` methods passing the `commitID` event argument as the parameter. This event also exposes a `changes` collection which stores all the modifications prior to being committed. For example, you can check if a commit was from an add, update, or delete operation via the `TransactionType` property exposed on the `changes` collection and perform an `acceptCommit` or `rejectCommit` when necessary.
 
+## Excel Style Editing
+
+Set the `EditModeClickAction` property to SingleClick to allow users to quickly edit cells.
+
 ## Code Snippet
 
 The following demonstrates how to configure editing on the data grid and committing the data.

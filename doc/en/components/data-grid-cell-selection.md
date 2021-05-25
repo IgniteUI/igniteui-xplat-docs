@@ -34,28 +34,22 @@ Selection in the $Platform$ data grid is enabled on a row and cell level and can
 
 When set to `MultipleRow` or `MultipleCell`, it is not necessary to hold the CTRL key to select multiple rows or cells. Each row or cell will be selected or deselected on click of that particular row or cell.
 
-## Code Snippet
+`MultipleRow` includes the following functionality:
+- Click and drag to select rows
+- Shift and click to select multiple rows.
+- Shift and press the up/down arrow keys to select multiple rows.
 
-The following demonstrates how to configure selection on the $Platform$ data grid to set multiple row selection:
+Pressing the space bar toggles selection of active row via `MultipleRow` or `SingleRow`.
 
-```tsx
-<IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    selectionMode="MultipleRow" />
-```
+## Row Range Selection
 
-```html
-<igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      selection-mode="MultipleRow">
-</igc-data-grid>
-```
+The following example demonstrates how to selected or deselected all rows in the grid. Note, `SelectionMode` must be set to MultipleRow.
 
-```razor
-<DataGrid Height="100%" Width="100%"
-    DataSource="DataSource"
-    SelectionMode="GridSelectionMode.MultipleRow" />
-```
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
+           alt="$PlatformShort$ Grid Selection Example" 
+           github-src="grids/data-grid/row-selection">
+</code-view>
+
+<div class="divider--half"></div>

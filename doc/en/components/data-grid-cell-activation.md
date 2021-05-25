@@ -21,6 +21,10 @@ The $ProductName$ Data Table / Data Grid supports a cell activation feature that
 
 <div class="divider--half"></div>
 
+## Excel Style Navigation
+
+`EnterBehaviorAfterEdit` property will configure the grid to navigate to the next cell up, down, left or right after the enter key is pressed in edit mode. Otherwise, the `EnterBehavior` property of the grid can be used to navigate to other cells, while not in edit mode, up, down, left or right. 
+
 ## Keyboard Navigation
 
 After setting the `ActivationMode` property of the grid to `Cell`, this will enable a range of keyboard navigation options in the data grid. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
@@ -39,29 +43,3 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 - <b>Ctrl + Arrow Key Right</b>: Move to the right-most cell in the row.
 - <b>Ctrl + Home</b>: Move to the top-left cell in the grid.
 - <b>Ctrl + End</b>: Move to the bottom-right cell in the grid.
-
-## Code Snippet
-
-The following demonstrates how to implement cell activation in the  $Platform$ data grid:
-
-```tsx
-<IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    activationMode="Cell" />
-```
-
-```html
-<igc-data-grid id="grid"
-     height="100%"
-     width="100%"
-     activation-mode="Cell">
-</igc-data-grid>
-```
-
-```razor
-<DataGrid Height="100%" Width="100%"
-    DataSource="DataSource"
-    ActivationMode="GridActivationMode.Cell" />
-```
