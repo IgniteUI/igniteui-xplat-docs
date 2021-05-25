@@ -1,33 +1,33 @@
 ---
-title: $PlatformShort$ Line Chart and Graph | $ProductName$
-_description: The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
-_keywords: $PlatformShort$ Charts, Line Chart, Line Graph, Infragistics
+title: $Platform$ Line Chart and Graph | $ProductName$
+_description: The $Platform$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
+_keywords: $Platform$ Charts, Line Chart, Line Graph, Infragistics
 mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
 ---
-# $PlatformShort$ Line Chart
+# $Platform$ Line Chart
 
 The $ProductName$ Line Chart or Line Graph is a type of category charts that show the continuous data values represented by points connected by straight line segments of one or more quantities over a period of time. It’s often used to show trends and perform comparative analysis. The Y-Axis (labels on left side) show a numeric value, while the X-Axis (bottom labels) show a time-series or comparison category. You can include one or more data sets to compare, which would render as multiple lines in the chart.
 
-## $PlatformShort$ Line Chart Example
+## $Platform$ Line Chart Example
 
-In the following example, $PlatformShort$ Line Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+In the following example, $Platform$ Line Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="$PlatformShort$ Line Chart Multiple Sources" >
+           alt="$Platform$ Line Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Line Chart Recommendations
 
-### Are $PlatformShort$ Line Charts right for your project?
+### Are $Platform$ Line Charts right for your project?
 
 - Different than an [area chart](area-chart.md), the line chart does not fill the area between the X-Axis (bottom axis) and the line.
-- The $PlatformShort$ line chart is identical to the $PlatformShort$ [spline chart](spline-chart.md) in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
+- The $Platform$ line chart is identical to the $Platform$ [spline chart](spline-chart.md) in all aspects except that the line connecting data points does not have spline interpolation and smoothing for improved presentation of data.
 
 A Line Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
 
@@ -67,54 +67,54 @@ There are several common use cases for choosing a Line Chart:
 - All data items must contain at least one data column (string or date time).
 - All data items must contain at least one numeric data column.
 
-## $PlatformShort$ Line Chart with Single Series
+## $Platform$ Line Chart with Single Series
 
-The $PlatformShort$ Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period, as we have shown in the example below.
+The $Platform$ Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period, as we have shown in the example below.
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
-           alt="$PlatformShort$ Line Chart with Single Source"
+           alt="$Platform$ Line Chart with Single Source"
            github-src="charts/category-chart/chart-single-source">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Line Chart with Multiple Series
+## $Platform$ Line Chart with Multiple Series
 
-Since the $PlatformShort$ Line Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the line chart will automatically update to fit the additional data.
+Since the $Platform$ Line Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the line chart will automatically update to fit the additional data.
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="$PlatformShort$ Line Chart with Multiple Sources"
+           alt="$Platform$ Line Chart with Multiple Sources"
            github-src="charts/category-chart/line-chart-multiple-sources'">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Line Chart with Live Data
+## $Platform$ Line Chart with Live Data
 
-The $PlatformShort$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds as demonstrated in the following demo.
+The $Platform$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds as demonstrated in the following demo.
 
-In this example, we are streaming live data into the $PlatformShort$ Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
+In this example, we are streaming live data into the $Platform$ Line Chart at an interval of your choosing. You can set the data points from 5,000 to 1 million and update the chart to optimize the scale based on the device you are rendering the chart on.
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="$PlatformShort$ Line Chart Live Data Example"
+           alt="$Platform$ Line Chart Live Data Example"
            github-src="charts/category-chart/high-frequency">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Styling Line Chart
+## $Platform$ Styling Line Chart
 
 Once our chart is set up, we may want to make some further styling customizations such as change the line colors, change the legend font family, and/or increase the size of the axis labels to make it easier to read.
 
@@ -123,7 +123,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling"
-           alt="$PlatformShort$ Line Chart Styling"
+           alt="$Platform$ Line Chart Styling"
            github-src="charts/category-chart/line-chart-styling">
 </code-view>
 
@@ -131,22 +131,22 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 ## Advanced Types of Line Charts
 
-The following sections explain more advanced types of $PlatformShort$ Line Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
+The following sections explain more advanced types of $Platform$ Line Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
-## $PlatformShort$ Stacked Line Chart
+## $Platform$ Stacked Line Chart
 
 The Stacked Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions. You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedLineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
-           alt="$PlatformShort$ Stacked Line Chart"
+           alt="$Platform$ Stacked Line Chart"
            github-src="charts/data-chart/stacked-line-chart">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100% Line Chart
+## $Platform$ Stacked 100% Line Chart
 
 The Stacked 100% Line Chart is identical to the Stacked Line Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100% Line Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
@@ -155,13 +155,13 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
-           alt="$PlatformShort$ Stacked 100 Line Chart"
+           alt="$Platform$ Stacked 100 Line Chart"
            github-src="charts/data-chart/stacked-100-line-chart">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Radial Line Chart
+## $Platform$ Radial Line Chart
 
 The Radial Line Chart belongs to a group of radial charts and has a shape of an unfilled polygon that is bound by a collection of straight lines connecting data points. This chart type uses the same concept of data plotting as the Line Chart, but wraps the data points around a circular axis rather than stretching them horizontally.
 
@@ -170,13 +170,13 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           alt="$PlatformShort$ Radial Line Chart"
+           alt="$Platform$ Radial Line Chart"
            github-src="charts/data-chart/radial-line-chart">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Polar Line Chart
+## $Platform$ Polar Line Chart
 
 The Polar Line Chart belongs to a group of polar charts and is rendered using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. Polar Line Charts use the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally.
 
@@ -185,7 +185,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-line-series"
-           alt="$PlatformShort$ Polar Line Chart"
+           alt="$Platform$ Polar Line Chart"
            github-src="charts/data-chart/type-polar-line-series">
 </code-view>
 

@@ -5,22 +5,22 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 정렬
+# $Platform$ 정렬
 $ProductName$ 데이터 표/데이터 그리드는 단일 열, 다중 열 및 3상태 열의 정렬 구성으로 오름차순 및 내림차순 열 정렬을 지원합니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"
            github-src="grids/data-grid/column-sorting">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 정렬 형식 설정
-$PlatformShort$ 데이터 그리드에서 단일 또는 다중 열을 오름차순 또는 내림차순으로 정렬할 수 있습니다. TriState가 활성화된 경우, 열에 적용된 정렬을 삭제할 수 있습니다.
+$Platform$ 데이터 그리드에서 단일 또는 다중 열을 오름차순 또는 내림차순으로 정렬할 수 있습니다. TriState가 활성화된 경우, 열에 적용된 정렬을 삭제할 수 있습니다.
 
 - `SortByMultipleColumns`
 - `SortByMultipleColumnsTriState`

@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ グリッド | リアルタイム データ グリッドとテーブル | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。 $ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $PlatformShort$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $PlatformShort$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
+title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | インフラジスティックス
+_description: インフラジスティックスの $Platform$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。 $ProductName$ を使用したデータの表示方法について説明します。
+_keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
-# $PlatformShort$ Data Grid 概要
+# $Platform$ Data Grid 概要
 
-$ProductName$ Data Table / Data Grid は、表形式の $PlatformShort$ コンポーネントでコーディングや設定をほとんど行わずにデータをすばやくバインドして表示できます。$PlatformShort$ の機能には、フィルタリング、ソート、テンプレート、行選択、行のグループ化、行の固定、および列移動があります。$PlatformShort$ データ テーブルは、ライブ ストリーミング データ用に最適化されており、無制限のデータセットサイズを行数または列数で処理することができます。
+$ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポーネントでコーディングや設定をほとんど行わずにデータをすばやくバインドして表示できます。$Platform$ の機能には、フィルタリング、ソート、テンプレート、行選択、行のグループ化、行の固定、および列移動があります。$Platform$ データ テーブルは、ライブ ストリーミング データ用に最適化されており、無制限のデータセットサイズを行数または列数で処理することができます。
 
-## $PlatformShort$ Data Grid の例
+## $Platform$ Data Grid の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
-           alt="$PlatformShort$ Data Grid の例"
+           alt="$Platform$ Data Grid の例"
            github-src="grids/data-grid/overview">
 </code-view>
 
@@ -36,7 +36,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-$PlatformShort$ Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
+$Platform$ Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -112,7 +112,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## サンプル データ ソース
-$PlatformShort$ グリッド モジュールがインポートされました。以下のステップはローカル データにバインドするグリッドの基本的な設定です。
+$Platform$ グリッド モジュールがインポートされました。以下のステップはローカル データにバインドするグリッドの基本的な設定です。
 
 ```ts
     this.data = [{
@@ -257,7 +257,7 @@ $PlatformShort$ グリッド モジュールがインポートされました。
 ```
 
 ## 列の自動生成
-以下のコードは、$PlatformShort$ データ グリッドを上記のローカルデータにバインドする方法を示しています。
+以下のコードは、$Platform$ データ グリッドを上記のローカルデータにバインドする方法を示しています。
 
 ```tsx
 <IgrDataGrid

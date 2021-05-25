@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ データ可視化ツール | 作業の開始 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $PlatformShort$ データ グリッドと財務ストリーミングおよびビジネスと財務チャートでデータの可視化を改善します。
+title: $Platform$ データ可視化ツール | 作業の開始 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドと財務ストリーミングおよびビジネスと財務チャートでデータの可視化を改善します。
 _keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
 # $ProductName$ を使用した作業の開始
 
-$ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $PlatformShort$ コンポーネントのコンプリート セットです。
+$ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $Platform$ コンポーネントのコンプリート セットです。
 
 <!-- Angular, React, WebComponents -->
 
 ## コンピューターのセットアップ
 
-$ProductName$ を実行する前に、$ProductName$ を含むすべての $PlatformShort$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$PlatformShort$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $PlatformShort$ アプリケーションを構築するための開発環境は、Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
+$ProductName$ を実行する前に、$ProductName$ を含むすべての $Platform$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$Platform$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $Platform$ アプリケーションを構築するための開発環境は、Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
@@ -199,7 +199,7 @@ ModuleManager.register(
 
 ## 既存アプリの更新
 
-既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
+既存の $Platform$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -299,7 +299,7 @@ npm run-script start
 
 <!-- Blazor -->
 
-$ProductName$ は、開発者がモダンなデスクトップ ブラウザー用の最新の高性能アプリケーションを構築できるように設計された $PlatformShort$ コンポーネントの完全なセットです。
+$ProductName$ は、開発者がモダンなデスクトップ ブラウザー用の最新の高性能アプリケーションを構築できるように設計された $Platform$ コンポーネントの完全なセットです。
 
 ## 手順 1 - 新しい Blazor プロジェクトの作成
 以下の手順では、新しい Blazor プロジェクトを作成する方法を説明します。Ignite UI for Blazor コンポーネントを既存のアプリケーションに追加する場合は、[**手順 2**](#手順-2---ignite-ui-for-blazor-nuget-パッケージのインストール) に進みます。
@@ -386,7 +386,7 @@ public void ConfigureServices(IServiceCollection services)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor;
 
-@code 
+@code
 {
 
    protected override void OnInitialized()
@@ -395,7 +395,7 @@ public void ConfigureServices(IServiceCollection services)
         GeographicMapModule.Register(IgniteUIBlazor);
 
         ...
-    } 
+    }
 }
 
 ```

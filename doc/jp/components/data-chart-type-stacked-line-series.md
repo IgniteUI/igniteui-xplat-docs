@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 積層型折れ線チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して積層型折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked line charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 積層型折れ線チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 積層型折れ線チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して積層型折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked line charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 積層型折れ線チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','StackedLineSeries']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $PlatformShort$ 積層型折れ線チャート
+# $Platform$ 積層型折れ線チャート
 
 $ProductName$ 積層型折れ線チャートはカテゴリ チャートのグループに属し、互いの上に積み重ねられた線セグメント (`StackedFragmentSeries`) で接続されたポイントのコレクションを使用してレンダリングされます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。
 
-## $PlatformShort$ 積層型折れ線チャートの例
+## $Platform$ 積層型折れ線チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-line-series" 
-           alt="$PlatformShort$ 積層型折れ線チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-line-series"
+           alt="$Platform$ 積層型折れ線チャートの例"
            github-src="charts/data-chart/type-stacked-line-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 積層型折れ線チャートはカテゴリ チャートのグ�
 `StackedLineSeries` には、`StackedFragmentSeries` 要素を配置できる独自の `Series` コレクションがあります。これらのフラグメントは、チャートの実際のレンダリングを構成するものであり、`ValueMemberPath` を受け取る要素です。
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`StackedLineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`StackedLineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -118,8 +118,8 @@ ModuleManager.register(
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedLineSeries 
-      XAxisName="xAxis" 
+    <StackedLineSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

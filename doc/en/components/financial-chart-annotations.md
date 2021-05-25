@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Financial Chart | Annotations | Infragistics
-_description: Infragistics' $PlatformShort$ financial  chart control allows you to add annotations to your chart axes, such as Crosshair layer, final value layer and callout layer. Improve your graphs and visualizations with $ProductName$
-_keywords: $PlatformShort$ charts, financial chart, stock chart, callout layer, final value, crosshair, $ProductName$, Infragistics
+title: $Platform$ Financial Chart | Annotations | Infragistics
+_description: Infragistics' $Platform$ financial  chart control allows you to add annotations to your chart axes, such as Crosshair layer, final value layer and callout layer. Improve your graphs and visualizations with $ProductName$
+_keywords: $Platform$ charts, financial chart, stock chart, callout layer, final value, crosshair, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart']
 ---
-# $PlatformShort$ Chart Annotations
+# $Platform$ Chart Annotations
 
-This topic provides conceptual information about the annotations available on the $PlatformShort$ financial chart component.
+This topic provides conceptual information about the annotations available on the $Platform$ financial chart component.
 
-## $PlatformShort$ Chart Annotations Example
+## $Platform$ Chart Annotations Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations" 
-           alt="$PlatformShort$ Chart Annotations Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
+           alt="$Platform$ Chart Annotations Example"
            github-src="charts/financial-chart/annotations">
 </code-view>
 

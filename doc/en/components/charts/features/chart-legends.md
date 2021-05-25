@@ -1,14 +1,14 @@
 ---
-title: $PlatformShort$ Chart Legends | Data Visualization Tools | Infragistics
+title: $Platform$ Chart Legends | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart with legends in horizontal or vertical orientation!
-_keywords: $PlatformShort$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
+_keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
 mentionedTypes: ["XamDataChart", "Legend"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $PlatformShort$ Chart Legends
+# $Platform$ Chart Legends
 
-## $PlatformShort$ Legend Types
+## $Platform$ Legend Types
 
 <!-- TODO info/example of regular Legend with options to change orientation -->
 
@@ -16,12 +16,12 @@ namespace: Infragistics.Controls.Charts
 
 <!-- TODO info/example of ScaleLegend with BubbleSeries -->
 
-## $PlatformShort$ Legend Layouts
+## $Platform$ Legend Layouts
 
 <!-- TODO info/example of multiple Legends -->
 
 <!-- TODO info/example of Legend layouts: outside of plot area, inside of plot area-->
 
-## $PlatformShort$ Legend Customization
+## $Platform$ Legend Customization
 
 <!-- TODO info/example of customizing Legend items -->

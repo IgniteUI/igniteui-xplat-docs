@@ -68,7 +68,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 let warningsCount = 0;
 function transformWarning(msg: string) {
     warningsCount += 1;
-    console.log("- warning " + pad(warningsCount, 4) + ": " + msg);
+    console.log(pad(warningsCount, 4) + " WARNING: " + msg);
 }
 
 function pad(num: number, width: number) {
@@ -254,10 +254,10 @@ function transformDocLinks(options: any) {
     function transformLink(node: any) {
         let reference = node.url;
 
-        // allows usage of $PlatformShort$ in links to topics/sections
-        if (reference.indexOf("$PlatformShort$") > 0) {
+        // allows usage of $Platform$ in links to topics/sections
+        if (reference.indexOf("$Platform$") > 0) {
             let platform = getPlatformName(options.platform);
-            let platformURL = reference.replace("$PlatformShort$", platform).toLowerCase();
+            let platformURL = reference.replace("$Platform$", platform).toLowerCase();
             // console.log("transformDocLinks \n" + reference + "\n" + platformURL);
             reference = platformURL;
         }
@@ -1210,9 +1210,9 @@ export class MarkdownTransformer {
                 node.exclude.length === 0 ||
                 node.exclude.indexOf(platform) === -1) {
 
-                node.name = node.name.replace("$PlatformShort$", platform);
+                node.name = node.name.replace("$Platform$", platform);
                 if (node.href) {
-                    node.href = node.href.replace("$PlatformShort$", platform);
+                    node.href = node.href.replace("$Platform$", platform);
                     node.href = node.href.toLowerCase();
                     // node.href = node.href.replace(".md", ".html");
                 }

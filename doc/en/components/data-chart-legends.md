@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Legends | Infragistics
-_description: Infragistics' $PlatformShort$ charts control's legend displays contextual information related to data plotted. Check out our $ProductName$ graph legends!
-_keywords: $PlatformShort$ charts, data chart, legend, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Legends | Infragistics
+_description: Infragistics' $Platform$ charts control's legend displays contextual information related to data plotted. Check out our $ProductName$ graph legends!
+_keywords: $Platform$ charts, data chart, legend, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'Infragistics.Controls.Charts.Legend']
 ---
-# $PlatformShort$ Legends
+# $Platform$ Legends
 
-Legends help end-users identify visuals of data chart series with contextual information related to data plotted in the $PlatformShort$ data chart component. Most data charts should have at least one legend in order to make it easier to understand data displayed in the plot area, however, it is not a requirement and the data chart can render without any legends, as it does by default.
+Legends help end-users identify visuals of data chart series with contextual information related to data plotted in the $Platform$ data chart component. Most data charts should have at least one legend in order to make it easier to understand data displayed in the plot area, however, it is not a requirement and the data chart can render without any legends, as it does by default.
 
-## $PlatformShort$ Legends Example
+## $Platform$ Legends Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends" 
-           alt="$PlatformShort$ Legends Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends"
+           alt="$Platform$ Legends Example"
            github-src="charts/data-chart/legends">
 </code-view>
 
@@ -22,11 +22,11 @@ Legends help end-users identify visuals of data chart series with contextual inf
 
 ## Legend Overview
 
-By default, the $PlatformShort$ data chart component does not display legends for any series in the data chart. If you want to show a common legend for multiple series, you need to add a legend object to your application and then set it to the Legend property of the data chart.
+By default, the $Platform$ data chart component does not display legends for any series in the data chart. If you want to show a common legend for multiple series, you need to add a legend object to your application and then set it to the Legend property of the data chart.
 
 In addition, you must set the `Title` property for each series object or the legend will use a default series title.
 
-The following code snippet shows how to use a legend in the $PlatformShort$ data chart component:
+The following code snippet shows how to use a legend in the $Platform$ data chart component:
 
 ```razor
 <div class="igContainer">

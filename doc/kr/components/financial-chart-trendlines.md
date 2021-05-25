@@ -4,7 +4,7 @@ _description: 재무 차트 구성 요소를 사용하여 간단한 API를 사�
 _keywords: financial chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 컨피규레이터 옵션
+# $Platform$ 컨피규레이터 옵션
 
 `FinancialChart` 제어는 탐색 동작, 추세선 레이어, 오버레이, 범례, 차트 제목, 부제 등의 사용자 지정이 가능한 많은 비주얼을 제공합니다.
 

@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、ローソク足や OHLC などのファイナンシャル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, financial, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, ファイナンシャル, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、ローソク足や OHLC などのファイナンシャル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, financial, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, ファイナンシャル, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries', 'FinancialSeries']
 _language: ja
 ---
-# $PlatformShort$ ファイナンシャル シリーズのサンプル データソース
+# $Platform$ ファイナンシャル シリーズのサンプル データソース
 
 このトピックでは、[ファイナンシャル シリーズ](data-chart-type-financial-series.md) のデータソースを実装する方法の例を示します。
 
@@ -16,7 +16,7 @@ public class SampleFinancialData
         public static List<SampleFinancialItem> Create(int itemsCount = 365)
         {
             var data = new List<SampleFinancialItem>();
-           
+
             // initial values
             var v = 10000.0;
             var o = 500.0;

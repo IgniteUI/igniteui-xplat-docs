@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | シリーズーリズ  | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、縦棒チャート、折れ線チャート、エリア チャート、円チャートなどを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, チャート タイプs, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, チャート タイプ, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | シリーズーリズ  | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、縦棒チャート、折れ線チャート、エリア チャート、円チャートなどを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, チャート タイプs, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, チャート タイプ, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ シリーズ
+# $Platform$ シリーズ
 
-$PlatformShort$ データ チャート コンポーネントでシリーズは類似するシリーズの以下のグループに分類されます。カテゴリ シリーズ、ファイナンシャル シリーズ、極座標シリーズ、ラジアル シリーズ、エリア シリーズ、散布図シリーズ、積層シリーズ。
+$Platform$ データ チャート コンポーネントでシリーズは類似するシリーズの以下のグループに分類されます。カテゴリ シリーズ、ファイナンシャル シリーズ、極座標シリーズ、ラジアル シリーズ、エリア シリーズ、散布図シリーズ、積層シリーズ。
 
-これらのシリーズに加えて、$PlatformShort$ データ チャート コンポーネントに[シリーズ注釈](data-chart-series-annotations.md)と[シリーズ ハイライト](data-chart-series-highlighting.md)を追加できます。
+これらのシリーズに加えて、$Platform$ データ チャート コンポーネントに[シリーズ注釈](data-chart-series-annotations.md)と[シリーズ ハイライト](data-chart-series-highlighting.md)を追加できます。
 
-以下のリストは、各グループのすべてのシリーズ タイプを示します。$PlatformShort$ データ チャート コンポーネントで各シリーズを使用する方法についてのヘルプは、シリーズの名前をクリックしてください。
+以下のリストは、各グループのすべてのシリーズ タイプを示します。$Platform$ データ チャート コンポーネントで各シリーズを使用する方法についてのヘルプは、シリーズの名前をクリックしてください。
 
 ### カテゴリ チャート
 - [エリア チャート](data-chart-type-category-area-series.md)

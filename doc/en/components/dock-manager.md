@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ Dock Manager | Layout Controls | Infragistics
-_description: Use Infragistics' $PlatformShort$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
+title: $Platform$ Dock Manager | Layout Controls | Infragistics
+_description: Use Infragistics' $Platform$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, $ProductName$, Infragistics
 ---
-# $PlatformShort$ Dock Manager Overview
+# $Platform$ Dock Manager Overview
 
-The Infragistics $PlatformShort$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
+The Infragistics $Platform$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
 
 <!-- Blazor -->
 > [!NOTE]
@@ -18,14 +18,14 @@ Please follow the steps outlined in the blog post titled:
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ Dock Manager Example
+## $Platform$ Dock Manager Example
 
-This example shows most functionalities and docking options of the $PlatformShort$ Dock Manager.
+This example shows most functionalities and docking options of the $Platform$ Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$PlatformShort$ Dock Manager Example"
+           alt="$Platform$ Dock Manager Example"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
@@ -83,12 +83,6 @@ this.dockManager.layout = {
         ]
     }
 };
-```
-
-With the [`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) property you can choose whether resizing floating panes is allowed, by default the property value is `true`. If the value is set to `false`, none of the floating panes can be resized.
-
-```ts
-this.dockManager.allowFloatingPanesResize = false;
 ```
 
 To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [`slot`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [`contentId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to `100%` for predictable response when the end-user is resizing panes.
@@ -225,8 +219,7 @@ const tabGroupPane: IgcTabGroupPane = {
 
 If there is not enough space to display all tab headers, the tab group shows **More tabs** menu, which contains the non-visible tabs. If you click a tab item in that menu, the tab gets selected and moved to the first position.
 
-The tabs also can be reordered without being detached from the tab group in which they are located. You can click on a tab of your choice and drag it left or right to the position you want it to be. If you drag the selected tab outside of the tabs area it will be detached into a floating pane. Please note that you can't drag tab with child content pane that has [`allowFloating`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) property set to `false` outside of the tabs area.
-
+The tabs also can be reordered without being detached from the tab group in which they are located. You can click on a tab of your choice and drag it left or right to the position you want it to be. If you drag the selected tab outside of the tabs area it will be detached into a floating pane.
 
 ### Document Host
 
@@ -288,7 +281,10 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. The [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) property,  which by default is set to `true`, determines whether a specific floating pane can be resized. This value will overwrite the value of the global `allowFloatingPanesResize` property. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+
+With the [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) and
+[`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) you can set whether resizing floating panes is allowed. The `allowFloatingPanesResize` is a `IgcDockManagerComponent` property, so if the value is set to `false` none of the floating panes can be resized. The `floatingResizable` property can be applied separately on each split pane in the `floatingPanes` array and if the property value is not set, it defaults to the value of the `allowFloatingPanesResize` property. If the `floatingResizable` property is set for a specific pane, its value takes precedence over the `allowFloatingPanesResize` property value.
 
 ### Active Pane
 
@@ -369,7 +365,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt + F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$PlatformShort$-dock-manager-example).
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
 ## Themes
 

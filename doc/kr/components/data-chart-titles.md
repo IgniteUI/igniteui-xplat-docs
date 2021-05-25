@@ -1,19 +1,19 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: 컴포지트 차트 뷰를 만들기 위해 동일한 플롯 영역에 여러 개의 시각적 요소 인스턴스를 표시하는 데이터 차트를 만듭니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 제목 및 부제
+# $Platform$ 제목 및 부제
 
 `XamDataChart` 제어의 `Title` 및 `Subtitle` 기능을 사용하면 차트의 상단 섹션에 정보를 추가할 수 있습니다. 차트에 제목 또는 부제를 추가하면 차트 콘텐츠가 자동으로 크기 조정되어 사용자가 지정한 제목 및 부제 정보가 표시되도록 합니다.
 
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-titles"
            github-src="charts/data-chart/chart-titles">
 </code-view>
 

@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。$ProductName$ ラジアル ゲージの設定可能な要素について説明します。
+title: $Platform$ ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。$ProductName$ ラジアル ゲージの設定可能な要素について説明します。
 _keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 _language: ja
 ---
-# $PlatformShort$ ラジアル ゲージの概要
+# $Platform$ ラジアル ゲージの概要
 
-$PlatformShort$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。
+$Platform$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。
 
 $ProductName$ Radial Gauge コンポーネントは、ゲージを表示するデータ ビジュアライゼーション ツールです。スケール、目盛り、ラベル、針、および範囲などの複数の視覚要素を含むことができます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
 
-## $PlatformShort$ ラジアル ゲージの例
+## $Platform$ ラジアル ゲージの例
 
 以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
@@ -19,7 +19,7 @@ $ProductName$ Radial Gauge コンポーネントは、ゲージを表示する�
 <code-view style="height: 375px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$PlatformShort$ ラジアル ゲージの例"
+           alt="$Platform$ ラジアル ゲージの例"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 
@@ -27,7 +27,7 @@ $ProductName$ Radial Gauge コンポーネントは、ゲージを表示する�
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-gauges コンポーネントをインストールするときに core パッケージもインストールする必要があります。
+gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}

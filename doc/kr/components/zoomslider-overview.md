@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$ ZoomSlider | Data Visualization Tools | Data Binding | Infragistics
+title: $Platform$ ZoomSlider | Data Visualization Tools | Data Binding | Infragistics
 _description: Use the ZoomSlider within the data chart to easily display a subset of data. It is displayed with two handles representing minimum and maximum values.
 mentionedTypes: ['ZoomSlider, XamDataChart']
 ---
@@ -9,8 +9,8 @@ The ZoomSlider control provides zooming functionality to range-enabled controls.
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"  >
 </code-view>
 

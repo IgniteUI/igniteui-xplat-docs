@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | React テーブルとコントロール | インフラジスティックス
-_description: 簡単な API を使用して財務データを可視化するには、$PlatformShort$ ファイナンシャル チャート コンポーネントを使用します。$PlatformName$ を使用して高速で編集可能なファイナンシャル チャートを作成できます。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | React テーブルとコントロール | インフラジスティックス
+_description: 簡単な API を使用して財務データを可視化するには、$Platform$ ファイナンシャル チャート コンポーネントを使用します。$ProductName$ を使用して高速で編集可能なファイナンシャル チャートを作成できます。
+_keywords: $Platform$ charts, financial chart, stock chart, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, インフラジスティックス
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType']
 _language: ja
 ---
-# $PlatformShort$ ファイナンシャル チャートの概要
+# $Platform$ ファイナンシャル チャートの概要
 
-$PlatformShort$ Financial Chart コンポーネントは、シンプルな API を使用して複雑なファイナンシャル データを可視化するチャート コンポーネントです。
+$Platform$ Financial Chart コンポーネントは、シンプルな API を使用して複雑なファイナンシャル データを可視化するチャート コンポーネントです。
 
-## $PlatformShort$ ファイナンシャル チャートの例
+## $Platform$ ファイナンシャル チャートの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-overview"
-           alt="$PlatformShort$ ファイナンシャル チャートの例"
+           alt="$Platform$ ファイナンシャル チャートの例"
            github-src="charts/financial-chart/overview">
 </code-view>
 
@@ -66,7 +66,7 @@ npm install --save {PackageCharts}
 
 ## モジュールの要件
 
-$PlatformShort$ ファイナンシャル チャートを作成するには、以下のモジュールが必要です。
+$Platform$ ファイナンシャル チャートを作成するには、以下のモジュールが必要です。
 
 ```razor
 FinancialChartModule.Register(IgniteUIBlazor);
@@ -101,7 +101,6 @@ IgcFinancialChartModule.register();
 <div class="divider--half"></div>
 
 ## 使用方法
-
 ファイナンシャル チャート モジュールをインポートした後、チャートをデータにバインドします。
 
 `FinancialChart` コントロールを作成するには、はじめにバインドするデータが必要です。以下のコード スニペットは、シンプルなデータソースを作成する方法を示します。

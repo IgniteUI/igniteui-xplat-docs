@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 極座標スプライン チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して極座標スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, polar spline charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 極座標スプライン チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 極座標スプライン チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して極座標スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, polar spline charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 極座標スプライン チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'PolarSplineSeries']
 _language: ja
 ---
-# $PlatformShort$ 極座標スプライン チャート
+# $Platform$ 極座標スプライン チャート
 
 $ProductName$ 極座標スプライン チャートは、極座標チャートのグループに属し、極座標 (角度/半径) 座標系のデータ ポイントを接続するスプライン ラインのコレクションを使用してレンダリングされます。`PolarSplineSeries` は `ScatterSplineSeries` と同じデータ プロットの概念を使用していますが、横の線に沿って伸びるのではなく、円の周りでデータ ポイントをラップします。他のシリーズ タイプと同じように、複数の `PolarSplineSeries` は同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。
 
-## $PlatformShort$ 極座標スプライン チャートの例
+## $Platform$ 極座標スプライン チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
-           alt="$PlatformShort$ 極座標スプライン チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
+           alt="$Platform$ 極座標スプライン チャートの例"
            github-src="charts/data-chart/type-polar-spline-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarSplineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PolarSplineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

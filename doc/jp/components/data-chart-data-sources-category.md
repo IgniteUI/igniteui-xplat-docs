@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、縦棒、折れ線、エリア、棒などのカテゴリ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, category chart, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, カテゴリ チャート, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、縦棒、折れ線、エリア、棒などのカテゴリ チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, category chart, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, カテゴリ チャート, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ カテゴリ シリーズのサンプル データソース
+# $Platform$ カテゴリ シリーズのサンプル データソース
 
 このトピックでは、[カテゴリ シリーズ](data-chart-type-category-series.md) のデータソースを実装する方法の例を示します。
 
@@ -27,7 +27,7 @@ public class SampleCategoryData
     }
 
     public class SampleCategoryItem
-    {    
+    {
         public int USA { get; set; }
         public int CHN { get; set; }
         public int RUS { get; set; }

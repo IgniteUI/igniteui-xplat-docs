@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して横棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, bar chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 横棒チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して横棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, bar chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 横棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 棒チャート
+# $Platform$ 棒チャート
 
 $ProductName$ 棒チャートはカテゴリ チャートのグループに属し、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して描画されます。`BarSeries` は、`ColumnSeries` と同じデータ プロットの概念を使用していますが、データ ポイントは、水平 (x 軸) でなく垂直軸 (y 軸) に沿って拡大します。つまり、棒チャートは縦棒チャートのように描画されますが、時計回りに 90 度回転します。
 
-## $PlatformShort$ 棒チャートの例
+## $Platform$ 棒チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series" 
-           alt="$PlatformShort$ 棒チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series"
+           alt="$Platform$ 棒チャートの例"
            github-src="charts/data-chart/type-category-bar-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`BarSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`BarSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `CategoryYAxis`

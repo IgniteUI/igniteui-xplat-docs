@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ポイント チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャートコ ントロールを使用して、散布マーカー チャート、散布バブル チャート、極座標散布チャートなどのポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, point charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ポイント チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ポイント チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャートコ ントロールを使用して、散布マーカー チャート、散布バブル チャート、極座標散布チャートなどのポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, point charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ポイント チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ポイント チャート
+# $Platform$ ポイント チャート
 
 $ProductName$ は以下のタイプのポイント チャートを提供します。
 

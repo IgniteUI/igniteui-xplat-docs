@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | ツールチップ テンプレート | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャートのツールチップを使用して、重要なデータを表示します。インフラジスティックスの $ProductName$ グラフ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ charts, category chart, tooltip template, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, ツールチップ テンプレート, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | ツールチップ テンプレート | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャートのツールチップを使用して、重要なデータを表示します。インフラジスティックスの $ProductName$ グラフ チュートリアルを是非お試しください!
+_keywords: $Platform$ charts, category chart, tooltip template, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, ツールチップ テンプレート, インフラジスティックス
 mentionedTypes: ['CategoryChart']
 _language: ja
 ---
-# $PlatformShort$ ツールチップ テンプレート
+# $Platform$ ツールチップ テンプレート
 
-$PlatformShort$ カテゴリ チャート コンポネントは、各シリーズ タイプにデフォルト ツールチップを提供します。デフォルト ツールチップは特定のシリーズ項目に関連するすべての情報を表示します。これはシリーズ タイトル、データ値、および軸値を含みます。シリーズのスタイルと一致します。デフォルトのツールチップが適切でない場合、ツールチップのコンテンツおよびルック アンド フィールをカスタマイズできます。
+$Platform$ カテゴリ チャート コンポネントは、各シリーズ タイプにデフォルト ツールチップを提供します。デフォルト ツールチップは特定のシリーズ項目に関連するすべての情報を表示します。これはシリーズ タイトル、データ値、および軸値を含みます。シリーズのスタイルと一致します。デフォルトのツールチップが適切でない場合、ツールチップのコンテンツおよびルック アンド フィールをカスタマイズできます。
 
-## $PlatformShort$ ツールチップ テンプレートの例
+## $Platform$ ツールチップ テンプレートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template" 
-           alt="$PlatformShort$ ツールチップ テンプレートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
+           alt="$Platform$ ツールチップ テンプレートの例"
            github-src="charts/category-chart/tooltip-template">
 </code-view>
 

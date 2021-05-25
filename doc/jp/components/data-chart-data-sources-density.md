@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、高密度散布シリーズを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, high density scatter, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, 高密度散布, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、高密度散布シリーズを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, high density scatter, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, 高密度散布, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart', 'PolarBase']
 _language: ja
 ---
-# $PlatformShort$ 散布図 - HD シリーズのサンプル データソース
+# $Platform$ 散布図 - HD シリーズのサンプル データソース
 
 このトピックでは、[散布 HD シリーズ](data-chart-type-polar-series.md) のデータソースを実装する方法の例を示します。
 
@@ -22,7 +22,7 @@ public class SampleDensityData
             generate(data, amount / 4, 0, 0, 100000, 25000);
             generate(data, amount / 8, 0, 0, 150000, 30000);
             generate(data, amount / 8, 0, 0, 200000, 75000);
-           
+
             return data;
         }
 

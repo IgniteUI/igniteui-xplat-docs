@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ラジアル チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、ラジアル エリア、ラジアル折れ線、ラジアル円などのラジアル  チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, radial charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ラジアル チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ラジアル チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、ラジアル エリア、ラジアル折れ線、ラジアル円などのラジアル  チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, radial charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ラジアル チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','RadialPieSeries']
 _language: ja
 ---
-# $PlatformShort$ ラジアル シリーズ
+# $Platform$ ラジアル シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントのラジアル シリーズのさまざまなタイプについて説明します。ラジアル シリーズは、[カテゴリ シリーズ](data-chart-type-category-series.md)のように水平線に沿って伸びるのではなく、円の周りを囲んだデータポイントのコレクションとしてデータをレンダリングするシリーズのグループです。ラジアル シリーズは、チャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリシリーズと同じカテゴリグループ化メカニズムをサポートします。
+このトピックは、$Platform$ データ チャート コンポーネントのラジアル シリーズのさまざまなタイプについて説明します。ラジアル シリーズは、[カテゴリ シリーズ](data-chart-type-category-series.md)のように水平線に沿って伸びるのではなく、円の周りを囲んだデータポイントのコレクションとしてデータをレンダリングするシリーズのグループです。ラジアル シリーズは、チャートの範囲の最小から最大までのカテゴリのリストもマッピングし、カテゴリシリーズと同じカテゴリグループ化メカニズムをサポートします。
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ ラジアル シリーズの例
+## $Platform$ ラジアル シリーズの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series" 
-           alt="$PlatformShort$ ラジアル シリーズの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-series"
+           alt="$Platform$ ラジアル シリーズの例"
            github-src="charts/data-chart/type-radial-series">
 </code-view>
 
@@ -36,7 +36,7 @@ _language: ja
 
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、ラジアル シリーズで使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、ラジアル シリーズで使用できるのは以下のタイプの軸のみです。
 
 | シリーズ タイプ             |半径軸タイプ    |角度軸タイプ    |
 |-------------------------|---------------------|--------------------|

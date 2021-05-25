@@ -1,7 +1,7 @@
 ---
-title: $PlatformShort$ Grid Layout | Real-Time $PlatformShort$ Tables | The Lightweight $PlatformShort$ Web Components table | Infragistics
-_description: Our $PlatformShort$ grid layout will help you build dynamic, touch-responsive data grids with little coding and configuration. Get 30-day FREE trial of $ProductName$.
-_keywords: $PlatformShort$ data grid, infragistics, grids, $ProductName$, table
+title: $Platform$ Grid Layout | Real-Time $Platform$ Tables | The Lightweight $Platform$ Web Components table | Infragistics
+_description: Our $Platform$ grid layout will help you build dynamic, touch-responsive data grids with little coding and configuration. Get 30-day FREE trial of $ProductName$.
+_keywords: $Platform$ data grid, infragistics, grids, $ProductName$, table
 ---
 
 <style>
@@ -11,7 +11,7 @@ _keywords: $PlatformShort$ data grid, infragistics, grids, $ProductName$, table
 }
 
 h1 {
-   margin-top: 1.5rem; 
+   margin-top: 1.5rem;
 }
 
 .h3{
@@ -151,7 +151,7 @@ div#faqs-accordion-wrapper {
         width: 70%;
         margin-right: auto;
     }
-    
+
     div.support-section:last-child:last-child{
         border-left: none;
     }
@@ -171,23 +171,23 @@ div#faqs-accordion-wrapper {
     <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI logo" src="../images/marketing/ignite-ui-logo.svg" alt="Ignite UI Logo for developer web applications">
 </div>
 
-# The Fastest $PlatformShort$ Data Grid
+# The Fastest $Platform$ Data Grid
 
 <!-- React -->
 
-A $PlatformShort$ data grid or data table is a component used to display tabular data in a series of rows and columns. Data grids, also known as tables, are well known in the desktop world with popular software such as Microsoft Excel. While grids have been available on desktop platforms for a long time, they have only recently become part of web app UIs, such as $PlatformShort$ UI. Modern grids and tables can be complex and may include a range of features and functionality, including data binding, editing, Excel-like filtering, custom sorting, grouping, row reordering, row and column freezing, row aggregation, exporting to Excel, CSV, and pdf formats.
+A $Platform$ data grid or data table is a component used to display tabular data in a series of rows and columns. Data grids, also known as tables, are well known in the desktop world with popular software such as Microsoft Excel. While grids have been available on desktop platforms for a long time, they have only recently become part of web app UIs, such as $Platform$ UI. Modern grids and tables can be complex and may include a range of features and functionality, including data binding, editing, Excel-like filtering, custom sorting, grouping, row reordering, row and column freezing, row aggregation, exporting to Excel, CSV, and pdf formats.
 
 <!--end: React -->
 
 <!-- WebComponents -->
 
-A $PlatformShort$ data grid, also known as a $PlatformShort$ data table, is a data visualization component that allows you to bind and display your data as a series of rows and columns. They are somewhat new to the world of web application user interfaces, although they have been available on desktop platforms for quite a long time in many different forms - for example, Microsoft Excel. These grids and tables generally possess the ability to be very complex, including functionality like cell and row selection, filtering, editing, row and column hiding, column summaries, searching, and the ability to display your data in type-specific columns.
+A $Platform$ data grid, also known as a $Platform$ data table, is a data visualization component that allows you to bind and display your data as a series of rows and columns. They are somewhat new to the world of web application user interfaces, although they have been available on desktop platforms for quite a long time in many different forms - for example, Microsoft Excel. These grids and tables generally possess the ability to be very complex, including functionality like cell and row selection, filtering, editing, row and column hiding, column summaries, searching, and the ability to display your data in type-specific columns.
 
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
 
-A $PlatformShort$ data table, more commonly known as a $PlatformShort$ data grid, is a component allowing you to visualize your bound data as a series of rows and columns. These data grids have been accessible for quite a long time on desktop-related platforms such as WPF and Windows Forms but have only more recently become available for the development of web applications. Modern web applications use tables and data grids that are feature-rich with the ability to data bind, cell and row selection, cell and row editing and error validation, column summaries, interactive Outlook-style grouping, Microsoft Excel-style filtering, and virtualized rows and columns so that you can potentially load millions of records.
+A $Platform$ data table, more commonly known as a $Platform$ data grid, is a component allowing you to visualize your bound data as a series of rows and columns. These data grids have been accessible for quite a long time on desktop-related platforms such as WPF and Windows Forms but have only more recently become available for the development of web applications. Modern web applications use tables and data grids that are feature-rich with the ability to data bind, cell and row selection, cell and row editing and error validation, column summaries, interactive Outlook-style grouping, Microsoft Excel-style filtering, and virtualized rows and columns so that you can potentially load millions of records.
 
 <!-- end: Blazor -->
 
@@ -199,29 +199,29 @@ Web Components are a library of web-based APIs that follow existing web standard
 
 <!-- end: WebComponents -->
 
-## $PlatformShort$ Grid Example
+## $Platform$ Grid Example
 
-In this $PlatformShort$ grid example, you can see how users can customize their view of the data by using features and functionality of the grid, such as search and filtering, columns sorting, resizing, pinning and hiding, row grouping, grid summaries, horizontal and vertical, and cell styling which includes embedded in the cell linear progress bar indicator component and sparkline component.
+In this $Platform$ grid example, you can see how users can customize their view of the data by using features and functionality of the grid, such as search and filtering, columns sorting, resizing, pinning and hiding, row grouping, grid summaries, horizontal and vertical, and cell styling which includes embedded in the cell linear progress bar indicator component and sparkline component.
 
 <div class="divider--half"></div>
 
 
-<code-view style="height: 435px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview" 
-           alt="$PlatformShort$ Grid Example" >
+<code-view style="height: 435px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           alt="$Platform$ Grid Example" >
 </code-view>
 
-Like this sample? Get access to our complete $PlatformShort$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
+Like this sample? Get access to our complete $Platform$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
 
-## Why Use a $PlatformShort$ Data Grid?
+## Why Use a $Platform$ Data Grid?
 
-$PlatformShort$ data grids are essential in use cases where high volumes of data must be stored and sorted through quickly. This can include industries such as financial services, banking and insurance, which often use high-volume, high-velocity data. The success of these companies is dependent upon the features, functionality and performance of these data grids. When stock decisions need to be made in microseconds, for example, it’s imperative that the data grid performs with no lag time or flicker.
+$Platform$ data grids are essential in use cases where high volumes of data must be stored and sorted through quickly. This can include industries such as financial services, banking and insurance, which often use high-volume, high-velocity data. The success of these companies is dependent upon the features, functionality and performance of these data grids. When stock decisions need to be made in microseconds, for example, it’s imperative that the data grid performs with no lag time or flicker.
 
-## $PlatformShort$ Data Grid Features
+## $Platform$ Data Grid Features
 <div class="divider--half"></div>
 
-The $ProductName$ Data Grid is not just for high-volume and real-time data. It is a feature-rich $PlatformShort$ grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
+The $ProductName$ Data Grid is not just for high-volume and real-time data. It is a feature-rich $Platform$ grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
 This example demonstrates a few of the data grid’s key features:
 
 <div class="divider--half"></div>
@@ -248,13 +248,13 @@ This example demonstrates a few of the data grid’s key features:
 
 <div class="divider"></div>
 
-### The Fastest $PlatformShort$ Data Grid Example
+### The Fastest $Platform$ Data Grid Example
 
 <span class="h3">Demo</span>
 
 
-<code-view style="height: 435px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 435px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table"  >
 </code-view>
 
@@ -266,13 +266,13 @@ This example demonstrates a few of the data grid’s key features:
 
 <!-- React -->
 
-Seamlessly scroll through unlimited rows and columns in your $PlatformShort$ grid, with the data grid’s column and row level virtualization. With support for local or remote data sources, you get the best performance no matter where your data lives. Your users will experience Excel-like scrolling, with enterprise speed — no lag, screen flicker, or visual delay — giving you the best user experience (UX) without compromising performance.
+Seamlessly scroll through unlimited rows and columns in your $Platform$ grid, with the data grid’s column and row level virtualization. With support for local or remote data sources, you get the best performance no matter where your data lives. Your users will experience Excel-like scrolling, with enterprise speed — no lag, screen flicker, or visual delay — giving you the best user experience (UX) without compromising performance.
 
 <!--end: React -->
 
 <!-- WebComponents -->
 
-The $PlatformShort$ Data Grid boasts the ability to plot an infinite number of records while keeping performance fast and fluid. This is done through built-in, aggressive row and column virtualization techniques that leave only the cells and rows that are in view in the memory footprint. End users will have the best possible user-experience with Microsoft Excel-like scrolling, without lag, visual delay, or any traces of screen flicker. 
+The $Platform$ Data Grid boasts the ability to plot an infinite number of records while keeping performance fast and fluid. This is done through built-in, aggressive row and column virtualization techniques that leave only the cells and rows that are in view in the memory footprint. End users will have the best possible user-experience with Microsoft Excel-like scrolling, without lag, visual delay, or any traces of screen flicker.
 
 <!-- end: WebComponents -->
 
@@ -285,7 +285,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="divider--half"></div>
 <hr style="border: .5px solid #ccc;">
 <div  class="cta-area">
-    <h4 class="h2" style="text-align: center; font-weight: 700; margin-top: 0;" >Quick and Easy to Customize, Build and Implement $PlatformShort$ Tables</h4>
+    <h4 class="h2" style="text-align: center; font-weight: 700; margin-top: 0;" >Quick and Easy to Customize, Build and Implement $Platform$ Tables</h4>
     <div style="text-align:center">
     <p>The $ProductName$ Data Grid can handle unlimited rows and columns of data, while providing access to custom templates and real-time data updates. Featuring an intuitive API for easy theming and branding, you can quickly bind to data with minimal code.</p>
     <div class="divider--half"></div>
@@ -298,15 +298,15 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <hr style="border: .5px solid #ccc;">
 <div class="divider"></div>
 
-### $PlatformShort$ Grid Cell and Row Selection
+### $Platform$ Grid Cell and Row Selection
 
 <!-- React -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $PlatformShort$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $PlatformShort$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid includes every option for mouse and [touch-driven selection](data-grid-cell-selection.md) by cell and row level, including modes like SingleCell, SingleRow, MultipleCell, MultipleRow, RangeCell and more.</p>
+        <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid includes every option for mouse and [touch-driven selection](data-grid-cell-selection.md) by cell and row level, including modes like SingleCell, SingleRow, MultipleCell, MultipleRow, RangeCell and more.</p>
     </div>
 </div>
 
@@ -315,10 +315,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- WebComponents -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $PlatformShort$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $PlatformShort$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid has the ability to configure [mouse and touch-driven selection](data-grid-cell-selection.md) for both cells and rows. You can select either single or multiple cells and rows, and the ability to use range selection is also available.</p>
+        <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid has the ability to configure [mouse and touch-driven selection](data-grid-cell-selection.md) for both cells and rows. You can select either single or multiple cells and rows, and the ability to use range selection is also available.</p>
     </div>
 </div>
 
@@ -327,27 +327,27 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- Blazor -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $PlatformShort$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $PlatformShort$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid component includes the options to [select rows and cells](data-grid-cell-selection.md) using both the user’s mouse and touchscreen. The available modes for cell and row selection include MultipleCell, MultipleRow, SingleCell, SingleRow, and RangeCell.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Filtering
+### $Platform$ Grid Filtering
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right">
-        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $PlatformShort$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $PlatformShort$ Data Grid">
+        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
+        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid includes [column filtering](data-grid-column-filtering.md) based on the data type of the column being filtered. For example, if your column is a DateTime field you can use filters like Last Month, This Quarter, Next Week, etc.</p>
+        <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid includes [column filtering](data-grid-column-filtering.md) based on the data type of the column being filtered. For example, if your column is a DateTime field you can use filters like Last Month, This Quarter, Next Week, etc.</p>
     </div>
 </div>
 
@@ -357,12 +357,12 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right">
-        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $PlatformShort$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $PlatformShort$ Data Grid">
+        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
+        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The user has the in-built ability to [filter columns](data-grid-column-filtering.md) based on data type in the $PlatformShort$ Data Grid. For example, if your column represents a numeric property, you can use filtering options like Greater Than, Less Than, Equal To, etc.</p>
+        <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The user has the in-built ability to [filter columns](data-grid-column-filtering.md) based on data type in the $Platform$ Data Grid. For example, if your column represents a numeric property, you can use filtering options like Greater Than, Less Than, Equal To, etc.</p>
     </div>
 </div>
 
@@ -372,27 +372,27 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right">
-        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $PlatformShort$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $PlatformShort$ Data Grid">
+        <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
+        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid allows users to [filter its columns](data-grid-column-filtering.md) with the data type as criteria for the filters applied. For example, if your column represents a string property of your data item, you can use filtering options such as Contains, Starts With, Ends With, etc.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Moving
+### $Platform$ Grid Column Moving
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>Rearranging [column order](data-grid-column-moving.md) is as easy as Click and Drag in the $PlatformShort$ Data Grid. We’ve also included a complete animation engine, giving you control over the UX of this interaction.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>Rearranging [column order](data-grid-column-moving.md) is as easy as Click and Drag in the $Platform$ Data Grid. We’ve also included a complete animation engine, giving you control over the UX of this interaction.</p>
     </div>
 </div>
 
@@ -402,10 +402,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>Users can [modify the order](data-grid-column-moving.md) that columns appear in the $PlatformShort$ Data Grid simply by clicking and dragging the column headers. We have also included the option to use a built-in animation for this column movement.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>Users can [modify the order](data-grid-column-moving.md) that columns appear in the $Platform$ Data Grid simply by clicking and dragging the column headers. We have also included the option to use a built-in animation for this column movement.</p>
     </div>
 </div>
 
@@ -415,26 +415,26 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid has the in-built ability to click and drag your columns in order to [reorder and rearrange them](data-grid-column-moving.md). While dragging the columns, the ability to animate the column moving is available for more control of the user experience of your application.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid has the in-built ability to click and drag your columns in order to [reorder and rearrange them](data-grid-column-moving.md). While dragging the columns, the ability to animate the column moving is available for more control of the user experience of your application.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Pinning
+### $Platform$ Grid Column Pinning
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $PlatformShort$ Data Grid"></div>
+     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>With Right and Left [column pinning](data-grid-column-pinning.md) in the $PlatformShort$ Data Grid, users can lock a single column or multiple columns in any order, so that the column maintains position, while scrolling horizontally.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>With Right and Left [column pinning](data-grid-column-pinning.md) in the $Platform$ Data Grid, users can lock a single column or multiple columns in any order, so that the column maintains position, while scrolling horizontally.</p>
     </div>
 </div>
 
@@ -445,10 +445,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $PlatformShort$ Data Grid"></div>
+     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports the ability to [pin columns](data-grid-column-pinning.md) to the left or right side of the table. Doing this will lock as many columns as are pinned in their position while the user scrolls horizontally.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports the ability to [pin columns](data-grid-column-pinning.md) to the left or right side of the table. Doing this will lock as many columns as are pinned in their position while the user scrolls horizontally.</p>
     </div>
 </div>
 
@@ -459,25 +459,25 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $PlatformShort$ Data Grid"></div>
+     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The ability to [fix columns](data-grid-column-pinning.md) to the left or right side is present in the $PlatformShort$ Data Grid component. When a column is fixed or pinned, it will maintain its position while the user scrolls the grid horizontally.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The ability to [fix columns](data-grid-column-pinning.md) to the left or right side is present in the $Platform$ Data Grid component. When a column is fixed or pinned, it will maintain its position while the user scrolls the grid horizontally.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Resizing
+### $Platform$ Grid Column Resizing
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $PlatformShort$ Data Grid component"></div>
+    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports the ability to [resize columns](data-grid-column-resizing.md), giving your customers flexibility over how they display the Data Grid columns, with respect to the other columns in the table.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports the ability to [resize columns](data-grid-column-resizing.md), giving your customers flexibility over how they display the Data Grid columns, with respect to the other columns in the table.</p>
     </div>
 </div>
 
@@ -487,9 +487,9 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $PlatformShort$ Data Grid component"></div>
+    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid has the in-built ability to give users the ability to click and drag column borders in order to [resize them](data-grid-column-resizing.md). An animation engine also exists so that you can optionally animate the resizing of the columns.</p>
     </div>
 </div>
@@ -500,25 +500,25 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $PlatformShort$ Data Grid component"></div>
+    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid allows your users to [resize the columns](data-grid-column-resizing.md) that exist in the grid. The data table is feature rich in this area in that the user can configure the resizing mode such that the resizing operation either happens immediately or is deferred until the drag is released.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid allows your users to [resize the columns](data-grid-column-resizing.md) that exist in the grid. The data table is feature rich in this area in that the user can configure the resizing mode such that the resizing operation either happens immediately or is deferred until the drag is released.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Sorting
+### $Platform$ Grid Column Sorting
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
-    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $PlatformShort$ Data Grid component"></div>
+    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports ascending and descending [column sorting](data-grid-column-sorting.md) with a Single, Multi or Tri-State Column Sorting configuration. Sorting is triggered on header click or using the Column Options dropdown.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports ascending and descending [column sorting](data-grid-column-sorting.md) with a Single, Multi or Tri-State Column Sorting configuration. Sorting is triggered on header click or using the Column Options dropdown.</p>
     </div>
 </div>
 
@@ -528,10 +528,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
-    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $PlatformShort$ Data Grid component"></div>
+    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The ability to [sort column data](data-grid-column-sorting.md) in ascending or descending order is available in the $PlatformShort$ Data Grid. The user has the ability to sort with a Single, Multi, or Tri-State column sorting configuration and sorting is triggered by default by clicking the header.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The ability to [sort column data](data-grid-column-sorting.md) in ascending or descending order is available in the $Platform$ Data Grid. The user has the ability to sort with a Single, Multi, or Tri-State column sorting configuration and sorting is triggered by default by clicking the header.</p>
     </div>
 </div>
 
@@ -543,23 +543,23 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
     src="../images/marketing/grid-column-sorting.gif" alt="Blazor sortable grid example"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>Looking for a $PlatformShort$ sortable grid for your project? The $ProductName$ Data Grid component has the in-built ability to [sort column data](data-grid-column-sorting.md) with the configuration of the sorting between Single, Multi, and Tri-State also being available. Sorting a particular column in the grid by default is done by clicking the column header, but you can also do this by using the column options dialog.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>Looking for a $Platform$ sortable grid for your project? The $ProductName$ Data Grid component has the in-built ability to [sort column data](data-grid-column-sorting.md) with the configuration of the sorting between Single, Multi, and Tri-State also being available. Sorting a particular column in the grid by default is done by clicking the column header, but you can also do this by using the column options dialog.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Summaries
+### $Platform$ Grid Column Summaries
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports [column summaries](data-grid-column-summaries.md) in the footer area of the Data Grid, or in the Group Headers. This is great for showing values like Count, Sum, Min, Max, Avg, etc.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports [column summaries](data-grid-column-summaries.md) in the footer area of the Data Grid, or in the Group Headers. This is great for showing values like Count, Sum, Min, Max, Avg, etc.</p>
     </div>
 </div>
 
@@ -569,10 +569,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>[Column summaries](data-grid-column-summaries.md) are available for display in the footer area of the $PlatformShort$ Data Grid, with configurable options to show them in group headers as well. This is useful for showing the Sum, Minimum, and Maximum of numeric data, among other summary options.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>[Column summaries](data-grid-column-summaries.md) are available for display in the footer area of the $Platform$ Data Grid, with configurable options to show them in group headers as well. This is useful for showing the Sum, Minimum, and Maximum of numeric data, among other summary options.</p>
     </div>
 </div>
 
@@ -582,26 +582,26 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $PlatformShort$ Data Grid"></div>
+    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The user has the in-built ability to apply [column summaries](data-grid-column-summaries.md) in the $PlatformShort$ Data Grid component. These summaries have the ability to display the Sum, Minimum, Maximum, among others, of numeric data and can be configured to display in the footer or group headers of the grid.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The user has the in-built ability to apply [column summaries](data-grid-column-summaries.md) in the $Platform$ Data Grid component. These summaries have the ability to display the Sum, Minimum, Maximum, among others, of numeric data and can be configured to display in the footer or group headers of the grid.</p>
     </div>
 </div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Types
+### $Platform$ Grid Column Types
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports a variety of [column types](data-grid-column-types.md), plus a Template Column type and a Sparkline Template type, giving you complete flexibility over the way your data is displayed in the Grid.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports a variety of [column types](data-grid-column-types.md), plus a Template Column type and a Sparkline Template type, giving you complete flexibility over the way your data is displayed in the Grid.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -612,11 +612,11 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>There are a number of different [column types](data-grid-column-types.md) available in the $PlatformShort$ Data Grid that are specific to different data types that you may be using in your underlying data source. Additionally, there is a Template Column that allows the user complete flexibility over their UI by allowing just about anything to be placed within the cells of that column.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>There are a number of different [column types](data-grid-column-types.md) available in the $Platform$ Data Grid that are specific to different data types that you may be using in your underlying data source. Additionally, there is a Template Column that allows the user complete flexibility over their UI by allowing just about anything to be placed within the cells of that column.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -627,10 +627,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid allows the user to utilize a variety of data-type specific [column types](data-grid-column-types.md) to most effectively display their data. If the data is a bit more complex, there is an additional Template Column, allowing the ability to define your own cell content for the display of a particular part of the grid’s data source.</p>
     </div>
 </div>
@@ -639,17 +639,17 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- end: Blazor -->
 
 
-### $PlatformShort$ Grid Column Animations
+### $Platform$ Grid Column Animations
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports [column animation](data-grid-column-animation.md) during events like Column Hiding or Column Moving. When Column Animation on the $PlatformShort$ Data Grid is set, the corresponding animation will fire for all of the cells in that column.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports [column animation](data-grid-column-animation.md) during events like Column Hiding or Column Moving. When Column Animation on the $Platform$ Data Grid is set, the corresponding animation will fire for all of the cells in that column.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -660,10 +660,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid component possesses the in-built ability to [animate column headers and cells](data-grid-column-animation.md) upon different actions that a user can take. For example, there are a variety of different animations available for column adding, hiding, and moving actions, among others.</p>
     </div>
 </div>
@@ -675,28 +675,28 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>[Column animations](data-grid-column-animation.md) are available in the $PlatformShort$ Data Grid component for different user actions such as column showing or hiding. Each of the user actions that can be animated has a dedicated animation property that can be set that will fire for the column header as well as all of the cells belonging to the column animated.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>[Column animations](data-grid-column-animation.md) are available in the $Platform$ Data Grid component for different user actions such as column showing or hiding. Each of the user actions that can be animated has a dedicated animation property that can be set that will fire for the column header as well as all of the cells belonging to the column animated.</p>
     </div>
 </div>
 <div class="divider--half"></div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column Options Dialog
+### $Platform$ Grid Column Options Dialog
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports the ability to group, hide, move, pin, filter, and sort columns directly from a UI exposed on each column header. The [column options](data-grid-column-options.md) are on by default for every column, via the Kebab menu on column hover.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports the ability to group, hide, move, pin, filter, and sort columns directly from a UI exposed on each column header. The [column options](data-grid-column-options.md) are on by default for every column, via the Kebab menu on column hover.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -707,10 +707,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>A Kebab menu is available in the column headers of the $ProductName$ Data Grid that, when clicked, will open the [options dialog](data-grid-column-options.md) for that column. This dialog gives users the ability to group, sort, hide, move, pin, and filter the owning column for that dialog.</p>
     </div>
 </div>
@@ -722,27 +722,27 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>Each column in the $PlatformShort$ Data Grid can be sorted, grouped, hidden, moved, and pinned from the same place – the [column options dialog](data-grid-column-options.md). Each of the column headers of the grid show a Kebab menu on mouse-hover that when clicked, will show this dialog.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>Each column in the $Platform$ Data Grid can be sorted, grouped, hidden, moved, and pinned from the same place – the [column options dialog](data-grid-column-options.md). Each of the column headers of the grid show a Kebab menu on mouse-hover that when clicked, will show this dialog.</p>
     </div>
 </div>
 <div class="divider--half"></div>
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Column and Row Outlook Style Grouping
+### $Platform$ Grid Column and Row Outlook Style Grouping
 
 <!-- React -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $PlatformShort$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid lets you [group rows](data-grid-row-grouping.md) into a ‘sticky header’ Row Group. Like the Group By feature in Microsoft Outlook, your users have an easy way to visually group data based on their own criteria.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid lets you [group rows](data-grid-row-grouping.md) into a ‘sticky header’ Row Group. Like the Group By feature in Microsoft Outlook, your users have an easy way to visually group data based on their own criteria.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -752,10 +752,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- WebComponents -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $PlatformShort$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid gives users the ability to [group rows](data-grid-row-grouping.md) into a “sticky header” Row Group. Users can visualize data items that are alike by grouping them by the columns with the similar data entries in a Microsoft Outlook-style way.</p>
     </div>
 </div>
@@ -766,11 +766,11 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- Blazor -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $PlatformShort$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid component includes the ability to [group columns](data-grid-row-grouping.md), directly inspired by the way groupings are visualized in Microsoft Outlook. It is also possible to group multiple columns in the grid and display them with multiple group headers or combine them all into one.</p>
+        <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid component includes the ability to [group columns](data-grid-row-grouping.md), directly inspired by the way groupings are visualized in Microsoft Outlook. It is also possible to group multiple columns in the grid and display them with multiple group headers or combine them all into one.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -779,15 +779,15 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <!-- React -->
 
-### $PlatformShort$ Grid Paging
+### $Platform$ Grid Paging
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of data grid paging features"
-    src="../images/marketing/grid-paging.jpg" alt="Icon of data grid paging features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-paging.jpg" alt="Icon of data grid paging features on the $Platform$ Data Grid">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Paging<a class="anchorjs-link" href="data-grid-row-paging.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid [Paging component](data-grid-row-paging.md) is designed to take in an array of data and output portions of that data as a page, with a simple navigation UI.</p>
+        <span class="h3 features__heading">$Platform$ Grid Paging<a class="anchorjs-link" href="data-grid-row-paging.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid [Paging component](data-grid-row-paging.md) is designed to take in an array of data and output portions of that data as a page, with a simple navigation UI.</p>
     </div>
 </div>
 
@@ -795,17 +795,17 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <!-- end: React -->
 
-### $PlatformShort$ Grid Row Pinning
+### $Platform$ Grid Row Pinning
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid allows you to [pin rows](data-grid-row-pinning.md) to the top of the Data Grid. When a row is pinned, it will be duplicated at the top of the Data Grid and remain fixed there with a light gray background and its actual (or original) row in the Data Grid will be rendered with low opacity, making it clear to the user this is a special row.</p>
+        <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid allows you to [pin rows](data-grid-row-pinning.md) to the top of the Data Grid. When a row is pinned, it will be duplicated at the top of the Data Grid and remain fixed there with a light gray background and its actual (or original) row in the Data Grid will be rendered with low opacity, making it clear to the user this is a special row.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -816,11 +816,11 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>Users can decide to [pin rows](data-grid-row-pinning.md) to the top of the $PlatformShort$ Data Grid. When a row has been pinned, it will be copied to the top of the grid and remain locked to that location with a customizable background while the user scrolls vertically. The original, copied row will still be displayed in its original location, but with a lowered opacity.</p>
+        <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>Users can decide to [pin rows](data-grid-row-pinning.md) to the top of the $Platform$ Data Grid. When a row has been pinned, it will be copied to the top of the grid and remain locked to that location with a customizable background while the user scrolls vertically. The original, copied row will still be displayed in its original location, but with a lowered opacity.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -831,10 +831,10 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid component has the in-built ability to [pin rows](data-grid-row-pinning.md) to the top of the grid, rendering them just under the headers. These rows will vertically remain there until unpinned while the user vertically scrolls the grid.</p>
     </div>
 </div>
@@ -842,17 +842,17 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <!-- end: Blazor -->
 
-### $PlatformShort$ Grid Keyboard Navigation
+### $Platform$ Grid Keyboard Navigation
 
 <!-- React -->
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid supports extensive Excel-like [keyboard navigation](data-grid-cell-activation.md). Ensure accessibility compliance and improve usability, enabling Excel-like keyboard navigation in the $PlatformShort$ Data Grid, using the up, down, right, left, tab, and Enter keys. You can toggle single or multiple row selection using the mouse or keyboard to select or de-select full rows.</p>
+        <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid supports extensive Excel-like [keyboard navigation](data-grid-cell-activation.md). Ensure accessibility compliance and improve usability, enabling Excel-like keyboard navigation in the $Platform$ Data Grid, using the up, down, right, left, tab, and Enter keys. You can toggle single or multiple row selection using the mouse or keyboard to select or de-select full rows.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -863,11 +863,11 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The user can use the left, right, up, down, Enter, and tab keys to perform Excel-inspired [keyboard navigation](data-grid-cell-activation.md) in the $PlatformShort$ Data Grid. This will improve usability for the end-user of the grid, allowing more accessible navigation and editing throughout the grid.</p>
+        <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The user can use the left, right, up, down, Enter, and tab keys to perform Excel-inspired [keyboard navigation](data-grid-cell-activation.md) in the $Platform$ Data Grid. This will improve usability for the end-user of the grid, allowing more accessible navigation and editing throughout the grid.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -878,18 +878,18 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $PlatformShort$ Data Grid">
+    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
-        <span class="h3 features__heading">$PlatformShort$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>The $PlatformShort$ Data Grid component allows users to enable [keyboard navigation](data-grid-cell-activation.md) that behaves just like in Microsoft Excel. Accessibility and usability can be improved with navigation in mind by using the arrow keys as well as the tab and Enter keys on the user’s keyboard.</p>
+        <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
+        <p>The $Platform$ Data Grid component allows users to enable [keyboard navigation](data-grid-cell-activation.md) that behaves just like in Microsoft Excel. Accessibility and usability can be improved with navigation in mind by using the arrow keys as well as the tab and Enter keys on the user’s keyboard.</p>
     </div>
 </div>
 <div class="divider--half"></div>
 
 <!-- end: Blazor -->
 
-## $PlatformShort$ Grid Features
+## $Platform$ Grid Features
 <div class="divider"></div>
 
 <!-- React -->
@@ -978,9 +978,9 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <hr>
 
 <div class="cta-area">
-    <h4 class="h2" style="font-weight: 700; margin-top: 0;">Download the Fastest $PlatformShort$ Grid Today!</h4>
+    <h4 class="h2" style="font-weight: 700; margin-top: 0;">Download the Fastest $Platform$ Grid Today!</h4>
     <div class="divider--half"></div>
-    <a class="cta-btn no-external-icon ui-btn--sm" href="{environment:infragisticsBaseUrl}/products/ignite-ui-$PlatformShort$/download">download now</a>
+    <a class="cta-btn no-external-icon ui-btn--sm" href="{environment:infragisticsBaseUrl}/products/ignite-ui-$Platform$/download">download now</a>
     <br>
     30 days free trial. No credit card required.
     <div class="divider"></div>
@@ -995,7 +995,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
         <h2>$ProductName$ Supported Browsers</h2>
     </div>
 <div class="divider--half"></div>
-   The $PlatformShort$ Data Grid is supported on all modern web browsers, including:
+   The $Platform$ Data Grid is supported on all modern web browsers, including:
 <div class="divider--half"></div>
         <ul>
             <li>Chrome</li>
@@ -1010,14 +1010,14 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
             <h2>$ProductName$ Support Options</h2>
     </div>
 <div class="divider--half"></div>
-There are multiple options to get access to our award-winning support at Infragistics for the $PlatformShort$ product.
+There are multiple options to get access to our award-winning support at Infragistics for the $Platform$ product.
 <div class="divider--half"></div>
         <ul>
-            <li>Start at the $PlatformShort$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/$ProductSpinal$-help">Support</a> home page</li>
-            <li>Read the $PlatformShort$ [Documentation](general-getting-started.md) and experiment with $PlatformShort$ Samples</li>
-            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite UI for $PlatformShort$"> $PlatformShort$ Blogs</a> to stay up to date</li>
+            <li>Start at the $Platform$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/$ProductSpinal$-help">Support</a> home page</li>
+            <li>Read the $Platform$ [Documentation](general-getting-started.md) and experiment with $Platform$ Samples</li>
+            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite UI for $Platform$"> $Platform$ Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity"> Support Case</a> after signing into your account</li>
-            <li>Learn from the $PlatformShort$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
+            <li>Learn from the $Platform$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
         </ul>
     </div>
 </div>
@@ -1055,7 +1055,7 @@ There are multiple options to get access to our award-winning support at Infragi
     <div class="faqs-accordion h4">What is the Pricing for the Infragistics $ProductName$ Data Grid?</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $PlatformShort$ Grid, plus $PlatformShort$ Charts and dozens on other $PlatformShort$ UI Controls.
+$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
 <div class="divider--half"></div>
 We also offer discounts for multi-year licenses. Please <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">refer to our Pricing page</a> for more information on pricing.
 <div class="divider--half"></div>
@@ -1066,14 +1066,14 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        No, you cannot purchase the $PlatformShort$ Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$">Ignite UI for $PlatformShort$ product</a>, which includes dozens of UI controls and components, plus over 60 charts, including $PlatformShort$ Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
+        No, you cannot purchase the $Platform$ Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$">Ignite UI for $Platform$ product</a>, which includes dozens of UI controls and components, plus over 60 charts, including $Platform$ Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
         </div>
     </div>
     <div class="faqs-accordion-content">
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        To get started with the $PlatformShort$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $PlatformShort$ development.
+        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
         </div>
     </div>
 </div>
@@ -1102,7 +1102,7 @@ If you are developing applications on multiple platforms, consider our complete 
     <div class="faqs-accordion h4">What is the Pricing for the Infragistics $ProductName$ Data Grid?</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $PlatformShort$ Grid, plus $PlatformShort$ Charts and dozens on other $PlatformShort$ UI Controls.
+$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
 <div class="divider--half"></div>
 We also offer discounts for multi-year licenses. Please <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">refer to our Pricing page</a> for more information on pricing.
 <div class="divider--half"></div>
@@ -1113,14 +1113,14 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        No, you cannot purchase the $PlatformShort$ Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$">Ignite UI for $PlatformShort$ product</a>, which includes dozens of UI controls and components, plus over 60 charts, including $PlatformShort$ Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
+        No, you cannot purchase the $Platform$ Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$">Ignite UI for $Platform$ product</a>, which includes dozens of UI controls and components, plus over 60 charts, including $Platform$ Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
         </div>
     </div>
     <div class="faqs-accordion-content">
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        To get started with the $PlatformShort$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $PlatformShort$ development.
+        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
         </div>
     </div>
 </div>

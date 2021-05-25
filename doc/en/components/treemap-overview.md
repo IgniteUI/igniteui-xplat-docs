@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
-_keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
+title: $Platform$ Treemap | Data Visualization Tools | Orientation | Layout | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
+_keywords: $Platform$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
 mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 ---
-# $PlatformShort$ Treemap Overview
+# $Platform$ Treemap Overview
 The $ProductName$ Treemap displays hierarchical (tree-structured) data as a set of nested nodes. Each branch of the tree is given a treemap node, which is then tiled with smaller nodes representing sub-branches. Each node’s rectangle has an area proportional to a specified dimension on the data. Often the nodes are colored to show a separate dimension of the data.
 
-## $PlatformShort$ Treemap Example
+## $Platform$ Treemap Example
 
 The following sample demonstrates how to create and layout nodes in the treemap component.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="$PlatformShort$ Treemap Example"
+           alt="$Platform$ Treemap Example"
            github-src="charts/tree-map/overview">
 </code-view>
 

@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Annotations | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to add annotations to your chart. Improve your graphs and visualizations with $ProductName$.
-_keywords: $PlatformShort$ charts, category chart, annotations, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Annotations | Infragistics
+_description: Infragistics' $Platform$ charts control allows you to add annotations to your chart. Improve your graphs and visualizations with $ProductName$.
+_keywords: $Platform$ charts, category chart, annotations, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart']
 ---
-# $PlatformShort$ Annotations
+# $Platform$ Annotations
 
 This topic provides conceptual information about the annotations and overlay interactions available on the $ProductName$ category chart component.
 
-## $PlatformShort$ Annotations Example
+## $Platform$ Annotations Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations" 
-           alt="$PlatformShort$ Annotations Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations"
+           alt="$Platform$ Annotations Example"
            github-src="charts/category-chart/annotations">
 </code-view>
 
@@ -66,7 +66,7 @@ The Final Value Layer of the category chart component provides a quick view alon
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>                   
+    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
 ```
 
 ```html

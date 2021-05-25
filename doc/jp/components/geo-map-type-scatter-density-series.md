@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter high density series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布高密度シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics, $Platform$ マップ, 散布高密度シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ 散布高密度シリーズの使用
+# $Platform$ 散布高密度シリーズの使用
 
-$PlatformShort$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
+$Platform$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
 
-## $PlatformShort$ 散布高密度シリーズの使用の例
+## $Platform$ 散布高密度シリーズの使用の例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series" 
-           alt="$PlatformShort$ 散布高密度シリーズの使用の例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
+           alt="$Platform$ 散布高密度シリーズの使用の例"
            github-src="maps/geo-map/type-scatter-density-series">
 </code-view>
 
@@ -26,14 +26,14 @@ $PlatformShort$ マップ コンポーネントの `GeographicHighDensityScatter
 相当数のデータ ポイントがあるため、シリーズではフルサイズのマーカーに対して散布データを小さな点として表示し、領域にはデータ ポイントの集合を表す高い色密度を使用した大半のデータを表示します。
 
 ## データ要件
-マップ コントロールの他のタイプの散布図シリーズと同様に、`GeographicHighDensityScatterSeries` シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。
+マップ コントロールの他のタイプの散布図シリーズと同様に、`GeographicHighDensityScatterSeries` シリーズには、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。
 
 ### データ バインディング
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
 プロパティ|タイプ|概要
 ---|---|---
-`ItemsSource`|any|項目ソースを取得または設定します。
+`DataSource`|any|項目ソースを取得または設定します。
 `LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
 `LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
 

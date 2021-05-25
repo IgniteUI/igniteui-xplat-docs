@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Spreadsheet | Tables and Spreadsheet Component | Infragistics
-_description: Our $PlatformShort$ spreadsheet controls help you embed Excel document and editing experiences right into your application. Improve your data visualization today!
+title: $Platform$ Spreadsheet | Tables and Spreadsheet Component | Infragistics
+_description: Our $Platform$ spreadsheet controls help you embed Excel document and editing experiences right into your application. Improve your data visualization today!
 _keywords: Excel Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Spreadsheet Overview
+# $Platform$ Spreadsheet Overview
 
-The $PlatformShort$ Spreadsheet component allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
+The $Platform$ Spreadsheet component allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
 
-## $PlatformShort$ Spreadsheet Example
+## $Platform$ Spreadsheet Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="$PlatformShort$ Spreadsheet Example"
+           alt="$Platform$ Spreadsheet Example"
            github-src="excel/spreadsheet/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Dependencies
-When installing the $PlatformShort$ spreadsheet component, the core and excel package must also be installed.
+When installing the $Platform$ spreadsheet component, the core and excel package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -79,7 +79,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## Usage
-Now that the $PlatformShort$ spreadsheet module is imported, next is the basic configuration of the spreadsheet.
+Now that the $Platform$ spreadsheet module is imported, next is the basic configuration of the spreadsheet.
 
 ```html
 <igx-spreadsheet #spreadsheet height="500px" width="100%">
@@ -95,7 +95,7 @@ Now that the $PlatformShort$ spreadsheet module is imported, next is the basic c
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
-The following demonstrates how to load a workbook into the $PlatformShort$ spreadsheet
+The following demonstrates how to load a workbook into the $Platform$ spreadsheet
 
 ```ts
 import { IgxSpreadsheetComponent } from 'igniteui-angular-spreadsheet';

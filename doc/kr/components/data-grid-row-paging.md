@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics, paging
 _language: kr
 ---
 
-# $PlatformShort$ 페이징
+# $Platform$ 페이징
 
 페이징은 현재 $ProductName$ 데이터 표/데이터 그리드 내에서 구현되지 않지만 데이터 소스를 동적으로 전환하면 유사한 결과를 얻을 수 있습니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-paging"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-paging"
            github-src="grids/data-grid/row-paging">
 </code-view>
 

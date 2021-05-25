@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してエリア チャート、スプライン エリア チャート、積層型エリア チャートなどのエリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, area charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してエリア チャート、スプライン エリア チャート、積層型エリア チャートなどのエリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, area charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ エリア チャート
+# $Platform$ エリア チャート
 
 $ProductName$ は以下のタイプのエリア チャートを提供します。
 

@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布ポイント チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して散布ポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, scatter point charts, $ProductName$, Infragistics, $PlatformShort$ チャート, 散布ポイント チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布ポイント チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して散布ポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, scatter point charts, $ProductName$, Infragistics, $Platform$ チャート, 散布ポイント チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ScatterSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布ポイント チャート
+# $Platform$ 散布ポイント チャート
 
 $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系を使用してデータをプロットする散布図のグループに属します。このシリーズは、マーカー コレクションとして描画し、それぞれにデカルト座標システムの位置を決定する 1 組の数値 X/Y 値を持ちます。
 
 `ScatterSeries` は、不均等な間隔またはデータのクラスターに注意を促します。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。`ScatterSeries` はデータを X-Axis および Y-Axis で時系列に管理およびプロットします (バインドする前はデータが時系列でない場合も)。
 
-## $PlatformShort$ 散布ポイント チャートの例
+## $Platform$ 散布ポイント チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-point-series" 
-           alt="$PlatformShort$ 散布ポイント チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-point-series"
+           alt="$Platform$ 散布ポイント チャートの例"
            github-src="charts/data-chart/type-scatter-point-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`

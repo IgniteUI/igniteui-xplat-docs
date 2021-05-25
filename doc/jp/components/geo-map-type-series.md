@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 地理的シリーズ タイプ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップ シリーズを使用して、地理的なデータをポイント (都市の位置など)、ポリライン (道路の接続など)、またはポリゴン (国の形状) として地理的コンテキストで表示します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, geographic series, $ProductName$, Infragistics, $PlatformShort$ マップ, 地理的シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 地理的シリーズ タイプ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップ シリーズを使用して、地理的なデータをポイント (都市の位置など)、ポリライン (道路の接続など)、またはポリゴン (国の形状) として地理的コンテキストで表示します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, $Platform$ マップ, 地理的シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
 
-# $PlatformShort$ 地理的シリーズ
+# $Platform$ 地理的シリーズ
 
 $ProductName$ マップ コンポーネントでは、地理的シリーズは、地理的なデータをポイント (都市の位置など)、ポリライン (道路の接続など)、またはポリゴン (国の形状) として地理的コンテキストで表示する地図の視覚的要素です。
 マップ コンポーネントの `Series` プロパティは、地理的なシリーズオブジェクトのコレクションです。このプロパティは、同じプロット領域に無制限の地理的系列を描画するのをサポートするために使用されます。複数の地理的シリーズ オブジェクトが `Series` プロパティに追加される場合、それぞれの連続するシリーズは、先頭から最後のシリーズに向かって開始する前のシリーズの上にレイヤーされます。したがって、地理的シリーズは、互いの上および地理的画像 (またはそのいずれか) の上に積み重ねることができる地図として理解できます。
@@ -16,7 +16,7 @@ $ProductName$ マップ コンポーネントでは、地理的シリーズは�
 
 ## 地理的シリーズのタイプ
 
-$PlatformShort$ 地理マップ コンポーネントは、以下の種類の地理的シリーズをサポートします。
+$Platform$ 地理マップ コンポーネントは、以下の種類の地理的シリーズをサポートします。
 
 - [散布図記号シリーズの使用](geo-map-type-scatter-symbol-series.md)
 - [散布図比例シリーズの使用](geo-map-type-scatter-bubble-series.md)

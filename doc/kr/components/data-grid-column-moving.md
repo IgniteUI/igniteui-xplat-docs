@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
+title: $Platform$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
 _description: The $ProductName$ Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
 _keywords: grid, table, $ProductName$, Infragistics
 ---
 
-# $PlatformShort$ Column Moving
+# $Platform$ Column Moving
 
 The $ProductName$ Data Grid supports the ability to move columns, giving you the flexibility over how you wish to display your columns with respect to the order of the columns shown.
 
 ## Demo
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
            github-src="grids/data-grid/column-moving">
 </code-view>
 

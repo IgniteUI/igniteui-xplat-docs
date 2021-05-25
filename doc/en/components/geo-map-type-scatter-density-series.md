@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter high density series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Using Scatter High Density Series
+# $Platform$ Using Scatter High Density Series
 
-Use the $PlatformShort$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
+Use the $Platform$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
-## $PlatformShort$ Using Scatter High Density Series Example
+## $Platform$ Using Scatter High Density Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series" 
-           alt="$PlatformShort$ Using Scatter High Density Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
+           alt="$Platform$ Using Scatter High Density Series Example"
            github-src="maps/geo-map/type-scatter-density-series">
 </code-view>
 
@@ -25,14 +25,14 @@ The demo above shows the `GeographicHighDensityScatterSeries` series in the map 
 Because there are so many data points, the series displays the scatter data as tiny dots as opposed to full size markers, and displays areas with the most data using a higher color density representing a cluster of data points.
 
 ## Data Requirements
-Similar to other types of scatter series in the map control, the `GeographicHighDensityScatterSeries` series has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns.
+Similar to other types of scatter series in the map control, the `GeographicHighDensityScatterSeries` series has the `DataSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns.
 
 ### Data Binding
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
 Property|Type|Description
 ---|---|---
-`ItemsSource`|any|Gets or sets the items source
+`DataSource`|any|Gets or sets the items source
 `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
 `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
 

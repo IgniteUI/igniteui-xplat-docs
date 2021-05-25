@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Column Chooser | Infragistics
-_description: Learn how Infragistics' $ProductName$ grid component supports the ability to show and hide columns directly through the UI or by using the $PlatformShort$ control. View $ProductName$ table demos for more information!
-_keywords: $PlatformShort$ Table, Data Grid, column chooser, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Column Chooser | Infragistics
+_description: Learn how Infragistics' $ProductName$ grid component supports the ability to show and hide columns directly through the UI or by using the $Platform$ control. View $ProductName$ table demos for more information!
+_keywords: $Platform$ Table, Data Grid, column chooser, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'DataGridToolbar', 'Button', 'ColumnChooser', 'IsHidden', 'ColumnHidingAnimationMode', 'ColumnShowingAnimationMode', 'ColumnChooserTitle', 'Column']
 ---
 
-# $PlatformShort$ Grid Column Chooser Overview
+# $Platform$ Grid Column Chooser Overview
 
 The $ProductName$ Data Grid supports the ability show and hide columns with the UI through the `DataGridToolbar` component or by the `ColumnChooser` component that provides flexibility to place it anywhere on the page. The `IsHidden` property on the columns can also be used to quickly hide or show a single column programmatically for manual column generation, and the value of `IsHidden` will reflect in the `ColumnChooser` component. Each approach can be used interchangeably to change the visible state of the columns.
 
-## $PlatformShort$ Grid Column Chooser Example
+## $Platform$ Grid Column Chooser Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar"
-           alt="$PlatformShort$ Grid Column Chooser Example"
+           alt="$Platform$ Grid Column Chooser Example"
            github-src="grids/data-grid/column-chooser-toolbar">
 </code-view>
 
@@ -32,7 +32,7 @@ The Column Chooser can be configured with animations by setting the grid's `Colu
 
 ## Code Snippet
 
-The following demonstrates how to implement the Column Chooser Toolbar UI for the $PlatformShort$ Data Grid:
+The following demonstrates how to implement the Column Chooser Toolbar UI for the $Platform$ Data Grid:
 
 ```tsx
 <IgrDataGridToolbar ref={this.onToolbarRef}

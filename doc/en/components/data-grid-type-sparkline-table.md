@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Column Sparkline | Infragistics
+title: $Platform$ Data Grid | Column Sparkline | Infragistics
 _description: See how $ProductName$ Data Table & Grid supports a template column which provides you a way to embed other components such as the column sparkline.
-_keywords: $PlatformShort$ Table, Data Grid, column sparkline, $ProductName$, data binding, Infragistics
+_keywords: $Platform$ Table, Data Grid, column sparkline, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid', 'CellInfo', 'TemplateCellInfo', 'Sparkline']
 ---
 
-# $PlatformShort$ Column Sparkline
+# $Platform$ Column Sparkline
 
 The $ProductName$ Data Table / Data Grid supports a Template Column which provides you to a way to embed other components such as $ProductName$ sparkline component. Refer to the [Column Types](data-grid-column-types.md) topic for other types of columns supported in the `Grid` component.
 
-## $PlatformShort$ Column Sparkline Example
+## $Platform$ Column Sparkline Example
 
 
-<code-view style="height: 530px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid" 
-           alt="$PlatformShort$ Column Sparkline Example" 
+<code-view style="height: 530px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid"
+           alt="$Platform$ Column Sparkline Example"
            github-src="charts/sparkline/grid">
 </code-view>
 
@@ -137,8 +137,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 <DataGrid Height="100%" Width="100%"
           RowHeight="90"
           AutoGenerateColumns="false"
-          DataSource="DataSource">    
-    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >                     
+          DataSource="DataSource">
+    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
         <Template>
             <RenderFragment>
                  <div style="width: 100%; height: 70px; background: transparent">

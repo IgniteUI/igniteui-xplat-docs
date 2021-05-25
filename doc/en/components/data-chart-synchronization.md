@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Synchronization | Infragistics
-_description: Synchronize between multiple Infragistics' $PlatformShort$ charts controls including zooming, panning and crosshair events. Learn about our $ProductName$ graph synchronization capabilies!
-_keywords: $PlatformShort$ charts, data chart, synchronization, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Synchronization | Infragistics
+_description: Synchronize between multiple Infragistics' $Platform$ charts controls including zooming, panning and crosshair events. Learn about our $ProductName$ graph synchronization capabilities!
+_keywords: $Platform$ charts, data chart, synchronization, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Chart Synchronization
+# $Platform$ Chart Synchronization
 
 The $ProductName$ data chart component allows for synchronization with respect to the coordination of zooming, panning, and crosshair events between multiple charts. This can help you to visualize the same areas of multiple charts, assuming your data sources are similar or the same with respect to the axes.
 
-## $PlatformShort$ Chart Synchronization Example
+## $Platform$ Chart Synchronization Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization" 
-           alt="$PlatformShort$ Chart Synchronization Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
+           alt="$Platform$ Chart Synchronization Example"
            github-src="charts/data-chart/chart-synchronization">
 </code-view>
 
@@ -31,7 +31,7 @@ Note that in order to synchronize either vertically and/or horizontally, you wil
 The following code snippet demonstrates how to synchronize a pair of chart controls in the $ProductName$ data chart:
 
 ```razor
-<DataChart Height="600px" 
+<DataChart Height="600px"
     Width="100%"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"
@@ -41,7 +41,7 @@ The following code snippet demonstrates how to synchronize a pair of chart contr
 
 </DataChart>
 
-<DataChart Height="600px" 
+<DataChart Height="600px"
     Width="100%"
     IsHorizontalZoomEnabled="true"
     IsVerticalZoomEnabled="true"

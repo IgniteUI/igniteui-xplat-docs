@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter symbol series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Using Scatter Symbol Series
+# $Platform$ Using Scatter Symbol Series
 
-Use the $PlatformShort$ map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
+Use the $Platform$ map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
 
-## $PlatformShort$ Using Scatter Symbol Series Example
+## $Platform$ Using Scatter Symbol Series Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series" 
-           alt="$PlatformShort$ Using Scatter Symbol Series Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
+           alt="$Platform$ Using Scatter Symbol Series Example"
            github-src="maps/geo-map/type-scatter-symbol-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Data Requirements
-Similarly to other types of geographic series in the map component, the `GeographicSymbolSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have two numeric data columns that store a geographic location (longitude and latitude). These data columns are then mapped to the `LatitudeMemberPath` and `LongitudeMemberPath` properties. The `GeographicSymbolSeries` uses values of these mapped data columns to plot symbol elements in the geographic map component.
+Similarly to other types of geographic series in the map component, the `GeographicSymbolSeries` has the `DataSource` property which can be bound to an array of objects. In addition, each data item in this object must have two numeric data columns that store a geographic location (longitude and latitude). These data columns are then mapped to the `LatitudeMemberPath` and `LongitudeMemberPath` properties. The `GeographicSymbolSeries` uses values of these mapped data columns to plot symbol elements in the geographic map component.
 
 ## Code Snippet
 The following code shows how to bind the `GeographicSymbolSeries` to locations of cities loaded from a shape file using the `ShapeDataSource`.
@@ -194,7 +194,7 @@ addSeriesWith(locations: any[], brush: string)
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="rgb(32, 146, 252)" />
-</GeographicMap>    
+</GeographicMap>
 
 @code {
 

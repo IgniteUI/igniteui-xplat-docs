@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, binding data models, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding, $Platform$ マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', GeographicScatterAreaSeries, GeographicHighDensityScatterSeries, GeographicProportionalSymbolSeries, GeographicScatterAreaSeries, GeographicContourLineSeries, GeographicShapeSeries, GeographicPolylineSeries  ]
 _language: ja
 ---
-# $PlatformShort$ 地理的データ モデルのバインディング
+# $Platform$ 地理的データ モデルのバインディング
 
-$ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
+$ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `DataSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
 
-## $PlatformShort$ 地理的データ モデルのバインディングの例
+## $Platform$ 地理的データ モデルのバインディングの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model" 
-           alt="$PlatformShort$ 地理的データ モデルのバインディングの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
+           alt="$Platform$ 地理的データ モデルのバインディングの例"
            github-src="maps/geo-map/binding-data-model">
 </code-view>
 
@@ -30,8 +30,8 @@ $ProductName$ マップ コンポーネントは、シェイプ ファイルか�
 | `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `RadiusMemberPath`   | 2 つの経度座標と緯度座標の名前と、シンボルのサイズ/半径の数字列を 1 列指定します。 |
 | `GeographicScatterAreaSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ColorMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
 | `GeographicContourLineSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ValueMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
-|`GeographicShapeSeries`|`ShapeMemberPath`|図形の地理的ポイントを含む ItemsSource 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
-|`GeographicPolylineSeries`|`ShapeMemberPath`|線の地理的座標を含む ItemsSource 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
+|`GeographicShapeSeries`|`ShapeMemberPath`|図形の地理的ポイントを含む `DataSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
+|`GeographicPolylineSeries`|`ShapeMemberPath`|線の地理的座標を含む `DataSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
 
 ## コード スニペット
 以下のコードは、`GeographicSymbolSeries` を、経度と緯度の座標を使用して格納された世界の一部の都市の地理的位置を含むカスタム データ モデルにバインドする方法を示します。また、[WorldUtility](geo-map-resources-world-util.md) を使用してこれらの場所間の最短の地理的経路をプロットするために `GeographicPolylineSeries` を使用します。
@@ -323,7 +323,7 @@ createPolylineSeries(flight: any)
 
         List<List<Point>> geoPath = WorldUtils.CalcPaths(geoOrigin, geoDest);
         double geoDistance = WorldUtils.CalcDistance(geoOrigin, geoDest);
-        
+
         FlightInfo route = new FlightInfo()
         {
             Points =  geoPath,

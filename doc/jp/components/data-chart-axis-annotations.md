@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 軸注釈 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、十字線レイヤー、最終値レイヤー、値オーバーレイなどの $PlatformShort$ チャート軸に注釈を追加できます。$ProductName$ で $PlatformShort$ チャートと視覚化を改善します!
-_keywords: $PlatformShort$ charts, data chart, axis annotations, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 軸注釈, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 軸注釈 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、十字線レイヤー、最終値レイヤー、値オーバーレイなどの $Platform$ チャート軸に注釈を追加できます。$ProductName$ で $Platform$ チャートと視覚化を改善します!
+_keywords: $Platform$ charts, data chart, axis annotations, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 軸注釈, インフラジスティックス
 mentionedTypes: ['XamDataChart','LineSeries','ValueOverlay','CrosshairLayer']
 _language: ja
 ---
-# $PlatformShort$ 軸の注釈
+# $Platform$ 軸の注釈
 
 $ProductName$ データ チャート コンポーネントでは、軸に注釈を追加して、その軸上のさまざまな点に特定の値を表示することができます。これによって最終的なシリーズ値、オーバーレイ値、チャート内の十字線に対応する値などを可視化するのに役立ちます。
 
-## $PlatformShort$ 軸の注釈の例
+## $Platform$ 軸の注釈の例
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations" 
-           alt="$PlatformShort$ 軸の注釈の例" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations"
+           alt="$Platform$ 軸の注釈の例"
            github-src="charts/data-chart/axis-annotations">
 </code-view>
 
@@ -54,7 +54,7 @@ $ProductName$ データ チャート コンポーネントでは、軸に注釈�
         Value="85" />
     <CrosshairLayer IsAxisAnnotationEnabled="true" />
     <FinalValueLayer AxisAnnotationTextColor="yellow" />
-</DataChart> 
+</DataChart>
 ```
 
 ```html

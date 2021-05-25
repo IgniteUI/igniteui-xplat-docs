@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 積層 100 棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して積層 100 棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked 100 bar charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 積層 100 棒チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 積層 100 棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して積層 100 棒チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked 100 bar charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 積層 100 棒チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','Stacked100BarSeries']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $PlatformShort$ 積層型 100 棒チャート
+# $Platform$ 積層型 100 棒チャート
 
-$ProductName$ 積層型 100 棒チャートは、カテゴリ チャートのグループに属し、互いに積み重ねられた長方形のコレクション (`StackedFragmentSeries`) を使用して描画されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも x 軸の正の側にグループ化され、負の値は x 軸の負の側にグループ化されます。$PlatformShort$ 積層型 100 棒チャートは、y 軸の値の処理以外は、$PlatformShort$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。`Stacked100BarSeries` は `Stacked100ColumnSeries` と同じデータ プロットの概念を使用しますが、データポイントは垂直線 (y軸) ではなく水平線 (x軸) に沿って積み重ねられます。つまり、積層型 100 棒チャートは積層型 100 縦棒チャートのように描画されますが、時計回りに 90 度回転します。
+$ProductName$ 積層型 100 棒チャートは、カテゴリ チャートのグループに属し、互いに積み重ねられた長方形のコレクション (`StackedFragmentSeries`) を使用して描画されます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも x 軸の正の側にグループ化され、負の値は x 軸の負の側にグループ化されます。$Platform$ 積層型 100 棒チャートは、y 軸の値の処理以外は、$Platform$ 積層型棒チャートと同じです。データを直接表現するのでなく、積層型棒チャートは、データ ポイント内のすべての値の合計の割合でデータを表します。`Stacked100BarSeries` は `Stacked100ColumnSeries` と同じデータ プロットの概念を使用しますが、データポイントは垂直線 (y軸) ではなく水平線 (x軸) に沿って積み重ねられます。つまり、積層型 100 棒チャートは積層型 100 縦棒チャートのように描画されますが、時計回りに 90 度回転します。
 
-## $PlatformShort$ 積層型 100 棒チャートの例
+## $Platform$ 積層型 100 棒チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-bar-series" 
-           alt="$PlatformShort$ 積層型 100 棒チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-bar-series"
+           alt="$Platform$ 積層型 100 棒チャートの例"
            github-src="charts/data-chart/type-stacked-100-bar-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 積層型 100 棒チャートは、カテゴリ チャートのグ
 `Stacked100BarSeries` には、`StackedFragmentSeries` 要素を配置できる独自の `Series` コレクションがあります。これらのフラグメントは、チャートの実際のレンダリングを構成するものであり、`ValueMemberPath` を受け取る要素です。
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100BarSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100BarSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `CategoryYAxis`
@@ -114,8 +114,8 @@ ModuleManager.register(
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <Stacked100BarSeries 
-      XAxisName="xAxis" 
+    <Stacked100BarSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

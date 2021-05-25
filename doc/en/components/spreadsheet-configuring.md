@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
-_description: Learn how configuring your $PlatformShort$ spreadsheets with $ProductName$ helps you better chart data. Improve your data visualization with Infragistics!
+title: $Platform$ Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
+_description: Learn how configuring your $Platform$ spreadsheets with $ProductName$ helps you better chart data. Improve your data visualization with Infragistics!
 _keywords: Excel Spreadsheet,  $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Configuring Spreadsheet
+# $Platform$ Configuring Spreadsheet
 
-The $PlatformShort$ Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
+The $Platform$ Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
 
-## $PlatformShort$ Configuring Spreadsheet Example
+## $Platform$ Configuring Spreadsheet Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options" 
-           alt="$PlatformShort$ Configuring Spreadsheet Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
+           alt="$Platform$ Configuring Spreadsheet Example"
            github-src="excel/spreadsheet/config-options">
 </code-view>
 
@@ -63,7 +63,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## Configuring Formula Bar
 
-The $PlatformShort$ `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
+The $Platform$ `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
 
 The following code snippets demonstrate the above:
 
@@ -228,7 +228,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## Configuring Zoom Level
 
-The $PlatformShort$ Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
+The $Platform$ Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
 
 Setting this property to a number represents the percentage as a whole number, so setting the `ZoomLevel` to 100 is equivalent to setting it to 100%.
 

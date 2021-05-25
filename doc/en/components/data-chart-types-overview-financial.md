@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Financial Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create financial charts such as OHLC and candlestick. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Financial Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create financial charts such as OHLC and candlestick. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Financial Charts
+# $Platform$ Financial Charts
 
 The $ProductName$ provides the following types of financial charts:
 

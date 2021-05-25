@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$ Treemap | Data Visualization Tools | Data Binding | Infragistics
+title: $Platform$ Treemap | Data Visualization Tools | Data Binding | Infragistics
 _description: Use the Treemap to show users relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms.
 mentionedTypes: ['Treemap']
 ---
@@ -13,9 +13,9 @@ Treemaps are not designed to convey numerical quantities; the intent is to show 
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
            github-src="charts/tree-map/overview">
 </code-view>
 

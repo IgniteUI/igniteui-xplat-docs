@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Doughnut Chart | Hierarchical Data Visualization  | Infragistics
-_description: Use the Infragistics' $PlatformShort$ doughnut chart control to display multiple variables in concentric rings for hierarchical data visualization. View $ProductName$ doughnut chart demos for more information!
-_keywords: $PlatformShort$ charts, doughnut chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, multiple rings
+title: $Platform$ Doughnut Chart | Hierarchical Data Visualization  | Infragistics
+_description: Use the Infragistics' $Platform$ doughnut chart control to display multiple variables in concentric rings for hierarchical data visualization. View $ProductName$ doughnut chart demos for more information!
+_keywords: $Platform$ charts, doughnut chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, multiple rings
 mentionedTypes: ['XamDoughnutChart']
 
 ---
-# $PlatformShort$ Doughnut Chart Overview
+# $Platform$ Doughnut Chart Overview
 
 The $ProductName$ doughnut chart component is similar to the Pie Chart component, proportionally illustrating the occurrences of a variable. The doughnut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data.
 
-## $PlatformShort$ Doughnut Chart Example
+## $Platform$ Doughnut Chart Example
 
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-overview"
-           alt="$PlatformShort$ Doughnut Chart Example"
+           alt="$Platform$ Doughnut Chart Example"
            github-src="charts/doughnut-chart/overview">
 </code-view>
 
@@ -33,7 +33,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ doughnut chart component requires the following modules:
+The $Platform$ doughnut chart component requires the following modules:
 
 ```razor
 DoughnutChartModule.Register(IgniteUIBlazor);
@@ -228,7 +228,7 @@ The doughnut chart component exposes the API for setting the state of one or mor
 
 **Changing the selection state upon slice click** - If you attach an event handler for the `SliceClick` event, it supplies a reference to the clicked slice in the event arguments allowing you to modify its selection state. The doughnut chart exposes a `SelectedStyle` property that determines the look of the selected slices. By default, no style is applied, and selecting a slice will not alter its appearance in any way. In order to apply your own style to the selected slices you need to define a Style with `TargetType` of Slice and set it as the value of the `SelectedStyle` property.
 
-**Setting the IsSelected property** - The $PlatformShort$ doughnut chart component holds references to all the slices allowing you to modify their `IsSelected` property directly. The doughnut chart exposes a `SliceClick` event used to change the selected/unselected state of a slice.
+**Setting the IsSelected property** - The $Platform$ doughnut chart component holds references to all the slices allowing you to modify their `IsSelected` property directly. The doughnut chart exposes a `SliceClick` event used to change the selected/unselected state of a slice.
 
 **Modifying the contents of the SelectedSlices collection** - You can change the selected slice by changing the contents of the `SelectedSlices` collection. The doughnut chart holds references to all the slices allowing you to modify their `IsSelected` property directly to the Slice objects.
 

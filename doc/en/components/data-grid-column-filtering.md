@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Filtering | Infragistics
+title: $Platform$ Data Grid | Filtering | Infragistics
 _description: Use Infragistics' $ProductName$ grid component to perform expressive sort conditions and return data easily. View $ProductName$ table's demo for more information!
-_keywords: $PlatformShort$ Table, Data Grid, column, filtering, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, column, filtering, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Grid Filtering Overview
+# $Platform$ Grid Filtering Overview
 
 The $ProductName$ Data Table / Data Grid includes a column filtering that gives you the ability to perform expressive sort conditions based on the data type of the column being filtered.
 
-## $PlatformShort$ Grid Filtering Example
+## $Platform$ Grid Filtering Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"
-           alt="$PlatformShort$ Grid Filtering Example"
+           alt="$Platform$ Grid Filtering Example"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 

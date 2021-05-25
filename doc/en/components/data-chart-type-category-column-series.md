@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create column charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, column chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create column charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, column chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Column Chart
+# $Platform$ Column Chart
 
 The $ProductName$ column chart belongs to a group of category charts and it is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points. `ColumnSeries` emphasizes the amount of change over a period of time or compares multiple items. Values are represented on the y-axis and categories are displayed on the x-axis. `ColumnSeries` uses the same concepts of data plotting as `BarSeries` but data points are stretched along a horizontal line (x-axis) rather than vertical line (y-axis). In other words, the column chart is rendered like the bar chart but with 90 degrees counter-clockwise rotation.
 
-## $PlatformShort$ Column Chart Example
+## $Platform$ Column Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-column-series" 
-           alt="$PlatformShort$ Column Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-column-series"
+           alt="$Platform$ Column Chart Example"
            github-src="charts/data-chart/type-category-column-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `ColumnSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `ColumnSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

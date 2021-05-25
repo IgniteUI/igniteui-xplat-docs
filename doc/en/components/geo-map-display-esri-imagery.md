@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Displaying ESRI Imagery |  Infragistics
-_description: Use Infragistics' $PlatformShort$ to display imagery from ESRI maps. View $ProductName$ map tutorials!
-_keywords: $PlatformShort$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background
+title: $Platform$ Map | Data Visualization Tools | Displaying ESRI Imagery |  Infragistics
+_description: Use Infragistics' $Platform$ to display imagery from ESRI maps. View $ProductName$ map tutorials!
+_keywords: $Platform$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Displaying Imagery from Esri Maps
+# $Platform$ Displaying Imagery from Esri Maps
 
 The `ArcGISOnlineMapImagery` is a free geographic imagery mapping service created by <a href="https://www.esri.com/" target="_blank">Esri</a> company. It provides over 40 styles of geographic imagery tiles of the world and some thematic tiles for the USA. This geographic imagery service can be accessed directly on <a href="https://services.arcgisonline.com/ArcGIS/rest/services" target="_blank">www.arcgisonline.com</a> web site.
 
-## $PlatformShort$ Displaying Imagery from Esri Maps Example
+## $Platform$ Displaying Imagery from Esri Maps Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery" 
-           alt="$PlatformShort$ Displaying Imagery from Esri Maps Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery"
+           alt="$Platform$ Displaying Imagery from Esri Maps Example"
            github-src="maps/geo-map/display-esri-imagery">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Code Snippet
-The following code snippet shows how to display $PlatformShort$ geographic imagery tiles from Esri imagery servers in `XamGeographicMap` using `ArcGISOnlineMapImagery` class.
+The following code snippet shows how to display $Platform$ geographic imagery tiles from Esri imagery servers in `XamGeographicMap` using `ArcGISOnlineMapImagery` class.
 
 ```html
 <igx-geographic-map #map
@@ -80,8 +80,8 @@ protected override void OnInitialized()
     {
         MapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer"
     };
-    
-    this.EsriImagery = imagery;    
+
+    this.EsriImagery = imagery;
 }
 ```
 
@@ -140,8 +140,8 @@ protected override void OnInitialized()
     {
         MapServerUri = EsriStyle.WorldOceansMap
     };
-    
-    this.EsriImagery = imagery;    
+
+    this.EsriImagery = imagery;
 }
 ```
 

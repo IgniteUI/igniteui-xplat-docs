@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | Bing 画像の表示 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ を使用して Microsoft Bing Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background, $PlatformShort$ マップ, bing マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+title: $Platform$ マップ | データ可視化ツール | Bing 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ を使用して Microsoft Bing Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, bing マップ, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap', 'BingMapsMapImagery']
 _language: ja
 ---
-# $PlatformShort$ Bing Maps 画像の表示
+# $Platform$ Bing Maps 画像の表示
 
 `BingMapsMapImagery` は、Microsoft® 社が提供する地理的画像マッピング サービスです。 世界の地理的画像タイルを 3 以上提供します。この地理的画像サービスは、<a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> に直接アクセスして利用できます。$ProductName$ map コンポーネントは、`BingMapsMapImagery` クラスを使用して、地図の背景コンテンツに Bing Maps の地理的画像を表示します。
 
-## $PlatformShort$ Bing Maps 画像の表示の例
+## $Platform$ Bing Maps 画像の表示の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery" 
-           alt="$PlatformShort$ Bing Maps 画像の表示の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
+           alt="$Platform$ Bing Maps 画像の表示の例"
            github-src="maps/geo-map/display-bing-imagery">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## コード スニペット
-以下のコード スニペットは、`BingMapsMapImagery` を使用して $PlatformShort$ `XamGeographicMap` で Bing Maps からの地理的画像を表示する方法を示します。
+以下のコード スニペットは、`BingMapsMapImagery` を使用して $Platform$ `XamGeographicMap` で Bing Maps からの地理的画像を表示する方法を示します。
 
 ```html
 <igx-geographic-map #map
@@ -85,11 +85,11 @@ geoMap.backgroundContent = tileSource;
 
 | プロパティ名  | プロパティ型   | 概要   |
 |----------------|-----------------|---------------|
-|`ApiKey`|string|Bing Maps 画像サービスで必要となる API キーを設定するためのプロパティを表します。このキーは <a href="http://www.bingmapsportal.coms" target="_blank">www.bingmapsportal.com</a> ウェブサイトから取得してください。|
+|`ApiKey`|文字列|Bing Maps 画像サービスで必要となる API キーを設定するためのプロパティを表します。このキーは <a href="http://www.bingmapsportal.coms" target="_blank">www.bingmapsportal.com</a> ウェブサイトから取得してください。|
 |`ImageryStyle`|`BingMapsImageryStyle`|Bing Maps 画像タイルのマップ スタイルを設定するプロパティを表します。このプロパティは、以下の `BingMapsImageryStyle` 列挙値に設定できます。Aerial - 道路またはラベルオーバーレイなしの Aerial マップ スタイルを指定します。<ul><li> Aerial - 道路およびラベル付きの衛星地図スタイルを指定します。</li> <li> AerialWithLabels - 道路およびラベル付きの衛星地図スタイルを指定します。</li><li> Road - 衛星オーバーレイなしの道路地図スタイルを指定します。</li></ul>|
-|`BingImageryRestUri`|string|TilePath と SubDomain の位置を指定する Bing Imagery REST URI を設定するためのプロパティを表します。これはオプションのプロパティです。指定されていない場合、デフォルトの REST URI を使用します。|
-|`CultureName`|string|タイル ソースのカルチャ名を設定するためのプロパティを表します。|
-|`IsDeferredLoad`|boolean|Bing Maps サービスが有効なプロパティ値の割り当てで自動初期化するかどうかを指定するプロパティを表します。|
-|`IsInitialized`|boolean|True に設定されているプロパティは、Bing Maps サービスからの地理的画像タイルが初期化され、マップ コンポーネントでのレンダリングの準備ができたときに発生することを表します。|
+|`BingImageryRestUri`|文字列|TilePath と SubDomain の位置を指定する Bing Imagery REST URI を設定するためのプロパティを表します。これはオプションのプロパティです。指定されていない場合、デフォルトの REST URI を使用します。|
+|`CultureName`|文字列|タイル ソースのカルチャ名を設定するためのプロパティを表します。|
+|`IsDeferredLoad`|ブール値|Bing Maps サービスが有効なプロパティ値の割り当てで自動初期化するかどうかを指定するプロパティを表します。|
+|`IsInitialized`|ブール値|True に設定されているプロパティは、Bing Maps サービスからの地理的画像タイルが初期化され、マップ コンポーネントでのレンダリングの準備ができたときに発生することを表します。|
 |`SubDomains`|`SubDomainsCollection`|URI サブ ドメインの画像コレクションを表します。|
-|`TilePath`|string|マップ タイル画像 URI を設定するプロパティを表します。これは Bing Maps の実際の位置です。|
+|`TilePath`|文字列|マップ タイル画像 URI を設定するプロパティを表します。これは Bing Maps の実際の位置です。|

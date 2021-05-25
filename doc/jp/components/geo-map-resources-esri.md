@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | ESRI マップのリソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ を使用して ESRI Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background, $PlatformShort$ マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
+title: $Platform$ マップ | データ可視化ツール | ESRI マップのリソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ を使用して ESRI Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ Esri ユーティリティ
+# $Platform$ Esri ユーティリティ
 
 リソース トピックは、Esri Maps が `XamGeographicMap` で提供する `ArcGISOnlineMapImagery` の使用に役立つユーティリティの実装を提供します。
 
@@ -93,7 +93,7 @@ public class EsriStyle
     public static string WorldLightGrayMap = "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer";
     public static string WorldShadedReliefMap = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer";
     public static string WorldPhysicalMap = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer";
-    
+
     // these Esri maps show geographic tiles for the whole of world without contours of continents
     // therefore the Map should also load a shapefile of continents when using them
     public static string WorldAdminOverlay = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
@@ -124,5 +124,5 @@ public class EsriStyle
     public static string UsaAverageHouseholdSize = "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Average_Household_Size/MapServer";
     public static string UsaDiversityIndex = "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Diversity_Index/MapServer";
     public static string UsaRailNetwork = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
-}   
+}
 ```

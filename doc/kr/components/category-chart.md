@@ -5,7 +5,7 @@ _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 mentionedTypes: ['CategoryChart', 'CategoryChartType']
 ---
-# $PlatformShort$ 카테고리 차트
+# $Platform$ 카테고리 차트
 
 카테고리 차트 컴포넌트는 카테고리 데이터를 간단히 시각화할 수 있게 해주는 $ProductName$ 차트 컴포넌트입니다. 이 컨트롤은 복잡한 데이터 비주얼라이제이션 도메인을 API로 단순화하여 관리할 수 있습니다.
 

@@ -27,7 +27,11 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "name": "What's New",
+    "href": "general-whats-new-dv.md",
+    "status": "NEW"
+  },
+  {
     "name": "重大な変更",
     "href": "general-breaking-changes-dv.md",
     "status": "UPDATED"
@@ -104,7 +108,7 @@
     "exclude": ["Angular"],
     "name": "テーブル / グリッド",
     "href": "data-grid.md",
-    "status": "",
+    "status": "UPDATED",
     "items": [
       {
         "name": "アクセシビリティの遵守",
@@ -309,123 +313,141 @@
     ]
   },
   {
-    "name": "チャート (NEW)",
+    "exclude": ["React", "WebComponents"],
+    "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
+    "name": "チャート",
     "href": "charts/chart-overview.md",
     "header": true,
-    "status": "NEW"
+    "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "リアルタイム データのバインド",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "大規模データのバインド",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "複数データ ソースのバインド",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "エリア チャート",
     "href": "charts/types/area-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "棒チャート",
     "href": "charts/types/bar-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "バブル チャート",
     "href": "charts/types/bubble-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "縦棒チャート",
     "href": "charts/types/column-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "複合チャート",
     "href": "charts/types/composite-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "ドーナツ チャート",
     "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "ファイナンシャル / 株価チャート",
     "href": "charts/types/stock-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "ガント チャート",
     "href": "charts/types/gantt-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "折れ線チャート",
     "href": "charts/types/line-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "ネットワーク チャート",
     "href": "charts/types/network-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "円チャート",
     "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "ポイント チャート",
     "href": "charts/types/point-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "極座標チャート",
     "href": "charts/types/polar-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "ピラミッド チャート",
     "href": "charts/types/pyramid-chart.md",
-    "status": "NEW"
+    "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "ラジアル チャート",
     "href": "charts/types/radial-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "散布図",
     "href": "charts/types/scatter-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "シェープ チャート",
     "href": "charts/types/shape-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "スプライン チャート",
     "href": "charts/types/spline-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
     "status": ""
@@ -433,24 +455,29 @@
   {
     "name": "積層型チャート",
     "href": "charts/types/stacked-chart.md",
+    "exclude": ["React", "WebComponents"],
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "ステップ チャート",
     "href": "charts/types/step-chart.md",
     "status": ""
   },
   {
-    "name": "オーバーレイ チャート",
-    "href": "charts/types/value-overlay-chart.md",
-    "status": ""
-  },
-  {
+    "exclude": ["React", "WebComponents"],
     "name": "ツリーマップ",
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
+    "name": "チャート API",
+    "href": "charts/chart-api.md",
+    "status": ""
+  },
+  {
+    "exclude": ["React", "WebComponents"],
     "name": "チャート機能",
     "href": "charts/chart-features.md",
     "status": "",
@@ -458,47 +485,37 @@
         {
           "name": "軸グリッド線",
           "href": "charts/features/chart-axis-gridlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "軸レイアウト",
           "href": "charts/features/chart-axis-layouts.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "軸オプション",
           "href": "charts/features/chart-axis-options.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート注釈",
-          "href": "charts/features/chart-annotations.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート アニメーション",
           "href": "charts/features/chart-animations.md",
-          "status": "NEW"
+          "status": ""
+        },
+        {
+          "name": "チャート注釈",
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
         },
         {
           "name": "チャート強調表示",
           "href": "charts/features/chart-highlighting.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート マーカー",
           "href": "charts/features/chart-markers.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート ツールチップ",
-          "href": "charts/features/chart-tooltips.md",
-          "status": "NEW"
-        },
-        {
-          "name": "チャート トレンドライン",
-          "href": "charts/features/chart-trendlines.md",
-          "status": "NEW"
+          "status": ""
         },
         {
           "name": "チャート ナビゲーション",
@@ -506,9 +523,29 @@
           "status": ""
         },
         {
+          "name": "チャート オーバーレイ",
+          "href": "charts/features/chart-overlays.md",
+          "status": ""
+        },
+        {
+          "name": "チャート パフォーマンス",
+          "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
           "exclude": ["Blazor"],
           "name": "チャートの同期",
           "href": "charts/features/chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "チャート ツールチップ",
+          "href": "charts/features/chart-tooltips.md",
+          "status": ""
+        },
+        {
+          "name": "チャート トレンドライン",
+          "href": "charts/features/chart-trendlines.md",
           "status": ""
         },
         {
@@ -522,16 +559,21 @@
   {
     "name": "データ ソース",
     "href": "data-chart-data-sources.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
-    "name": "チャート (OLD)",
-    "header": true
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "チャート",
+    "header": true,
+    "exclude": ["Blazor", "Angular"]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "カテゴリ チャート",
     "href": "category-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "注釈",
@@ -571,9 +613,11 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "データ チャート",
     "href": "data-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "軸",
@@ -958,9 +1002,11 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "ファイナンシャル チャート",
     "href": "financial-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular"],
     "items": [
       {
         "name": "リアルタイムにデータをバインド",
@@ -1005,18 +1051,22 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "ツリーマップ",
+    "href": "charts/types/treemap-chart.md",
+    "exclude": ["Blazor", "Angular"],
+    "status": ""
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "スパークライン",
     "href": "charts/types/sparkline-chart.md",
+    "exclude": ["Blazor", "Angular"],
     "status": ""
   },
   {
     "name": "マップ",
     "header": true
-  },
-  {
-    "name": "ツリーマップ",
-    "href": "treemap-overview.md",
-    "status": ""
   },
   {
     "name": "マップ",
@@ -1156,37 +1206,37 @@
   {
     "name": "Excel ライブラリ",
     "href": "excel-library.md",
-    "status": "NEW in Blazor",
+    "status": "",
     "items": [
       {
         "name": "セルの使用",
         "href": "excel-library-using-cells.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "テーブルの使用",
         "href": "excel-library-using-tables.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "ワークブックの使用",
         "href": "excel-library-using-workbooks.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "ワークシートの使用",
         "href": "excel-library-using-worksheets.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "チャートの使用",
         "href": "excel-library-working-with-charts.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "name": "スパークラインを使用した作業",
         "href": "excel-library-working-with-sparklines.md",
-        "status": "NEW in Blazor"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],

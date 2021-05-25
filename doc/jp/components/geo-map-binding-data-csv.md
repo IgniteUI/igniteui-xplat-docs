@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, plot data, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, プロット データ, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding, $Platform$ マップ, プロット データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ CSV ファイルを地理的な場所にバインド
+# $Platform$ CSV ファイルを地理的な場所にバインド
 
 $ProductName$ Map コンポーネントを使用すると、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、カンマ区切り値 (CSV) ファイルから地理的な場所を読み込むことができます。
 
-## $PlatformShort$ CSV ファイルを地理的な場所にバインドの例
+## $Platform$ CSV ファイルを地理的な場所にバインドの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv" 
-           alt="$PlatformShort$ CSV ファイルを地理的な場所にバインドの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
+           alt="$Platform$ CSV ファイルを地理的な場所にバインドの例"
            github-src="maps/geo-map/binding-data-csv">
 </code-view>
 

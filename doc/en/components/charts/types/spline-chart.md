@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Spline Chart | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Spline Chart
-_keywords: $PlatformShort$ Charts, Spline Chart, Infragistics
+title: $Platform$ Spline Chart | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Spline Chart
+_keywords: $Platform$ Charts, Spline Chart, Infragistics
 mentionedTypes: ["CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
 ---
-# $PlatformShort$ Spline Chart
+# $Platform$ Spline Chart
 
 The $ProductName$ Spline Chart belongs to a group of Category Charts that render as a collection of points connected by smooth curves of spline. Values are represented on the y-axis and categories are displayed on the x-axis. Spline Chart emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. Spline Chart is identical to [Line Chart](line-chart.md) in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
 
-## $PlatformShort$ Spline Chart Example
+## $Platform$ Spline Chart Example
 
-The following example shows how to create $PlatformShort$ Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to Spline enum.
+The following example shows how to create $Platform$ Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to Spline enum.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           alt="$PlatformShort$ Spline Chart Multiple Sources" >
+           alt="$Platform$ Spline Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Spline Chart with Single Series
+## $Platform$ Spline Chart with Single Series
 
 The Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced since 2009 over a ten-year period for Europe, as shown in the example below.
 
@@ -29,12 +29,12 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
-           alt="$PlatformShort$ Spline Chart with Single Source" >
+           alt="$Platform$ Spline Chart with Single Source" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Spline Chart with Multiple Series
+## $Platform$ Spline Chart with Multiple Series
 
 Since the Spline Chart allows you to combine multiple series and compare or see how they change over time. All we need to do is bind to a data source containing the data for China and the USA, and the chart will automatically update to fit the additional data.
 
@@ -43,12 +43,12 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           alt="$PlatformShort$ Spline Chart with Multiple Sources" >
+           alt="$Platform$ Spline Chart with Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Spline Chart Styling
+## $Platform$ Spline Chart Styling
 
 If you need a Spline Chart with more features such as composite other series, you can configure the markers, marker brushes, marker outlines, series brushes and series outlines as demonstrated below.
 
@@ -57,16 +57,16 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
-           alt="$PlatformShort$ Spline Chart Styling" >
+           alt="$Platform$ Spline Chart Styling" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Advanced Types of Spline Charts
 
-The following sections explain more advanced types of $PlatformShort$ Spline Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
+The following sections explain more advanced types of $Platform$ Spline Charts that can be created using the `XamDataChart` control instead of `CategoryChart` control with simplified API.
 
-## $PlatformShort$ Stacked Spline Chart
+## $Platform$ Stacked Spline Chart
 
 The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions, as we have shown in the example below.
 
@@ -75,12 +75,12 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           alt="$PlatformShort$ Stacked Spline Chart" >
+           alt="$Platform$ Stacked Spline Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Stacked 100% Spline Chart
+## $Platform$ Stacked 100% Spline Chart
 
 The Stacked 100% Spline Chart is identical to the Stacked Spline Chart in all aspects except in their treatment of the values on y-axis. Instead of presenting a direct representation of the data, the Stacked 100% Spline Chart presents the data in terms of percent of the sum of all values in a data point. The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers.
 
@@ -89,7 +89,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           alt="$PlatformShort$ Stacked 100 Spline Chart" >
+           alt="$Platform$ Stacked 100 Spline Chart" >
 </code-view>
 
 <div class="divider--half"></div>

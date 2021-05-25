@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布シェイプ チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、散布ポリゴンシリーズや散布ポリラインシリーズなどのシェープ チャートを作成します。詳細については、以下のサンプルを参照してください。
-_keywords: $PlatformShort$ charts, data chart, shape charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, シェイプ チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布シェイプ チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、散布ポリゴンシリーズや散布ポリラインシリーズなどのシェープ チャートを作成します。詳細については、以下のサンプルを参照してください。
+_keywords: $Platform$ charts, data chart, shape charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, シェイプ チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','ShapeColumnSeries','ScatterPolygonSeries','ScatterPolylineSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布図 - シェイプ シリーズ
+# $Platform$ 散布図 - シェイプ シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントのシェイプ シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴン (`ScatterPolygonSeries`) またはポリライン (`ScatterPolylineSeries`) のコレクションとして描画するチャート シリーズのグループです。
+このトピックは、$Platform$ データ チャート コンポーネントのシェイプ シリーズのさまざまなタイプについて説明します。散布図シリーズは、一連の形状 (1 つまたは複数の X/Y 座標の配列) をとり、それらをデカルト (x、y) 座標系のポリゴン (`ScatterPolygonSeries`) またはポリライン (`ScatterPolylineSeries`) のコレクションとして描画するチャート シリーズのグループです。
 
 散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
-## $PlatformShort$ 散布図 - シェイプ シリーズの例
+## $Platform$ 散布図 - シェイプ シリーズの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series" 
-           alt="$PlatformShort$ 散布図 - シェイプ シリーズの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-shape-series"
+           alt="$Platform$ 散布図 - シェイプ シリーズの例"
            github-src="charts/data-chart/type-shape-series">
 </code-view>
 
@@ -33,7 +33,7 @@ _language: ja
 
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、ラジアル シリーズで使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまな軸タイプを提供しますが、ラジアル シリーズで使用できるのは以下のタイプの軸のみです。
 
 | シリーズ タイプ             |YAxis タイプ     |XAxis タイプ     |
 |-------------------------|----------------|----------------|

@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ Pie Charts and Graphs | $ProductName$
+title: $Platform$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized UI control that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
-_keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
+_keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ["XamPieChart", "XamDataChart"]
 ---
-# $PlatformShort$ Pie Chart
+# $Platform$ Pie Chart
 
 The $ProductName$ Pie Chart, or Pie Graph, is a part-to-whole chart that shows how categories (parts) of a data set add up to a total (whole) value. Categories are rendered as sections in a circular, or pie-shaped graph. Each section, or pie slice, has an arc length proportional to its underlying data value. Categories are shown in proportion to other categories based on their value percentage to the total value being analyzed, as parts of 100 or 100%.
 
-## $PlatformShort$ Pie Chart Example
+## $Platform$ Pie Chart Example
 
 You can create this type of chart with the `XamPieChart` control by binding your data as shown in the example below.
 
-This example of an $PlatformShort$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
+This example of an $Platform$ Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           alt="$PlatformShort$ Pie Chart Overview" >
+           alt="$Platform$ Pie Chart Overview" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Recommendations
+## $Platform$ Pie Chart Recommendations
 
 Pie Charts are appropriate for small data sets and are easy to read at a glance. Pie charts are just one type of part-to-whole visualization. Others include:
 
@@ -36,7 +36,7 @@ Pie Charts are appropriate for small data sets and are easy to read at a glance.
 - Treemap
 - Waterfall
 
-The $PlatformShort$ Pie Chart includes interactive features that give the viewer tools to analyze data, like:
+The $Platform$ Pie Chart includes interactive features that give the viewer tools to analyze data, like:
 
 - Legends
 - Slice Explosion
@@ -63,7 +63,7 @@ Do Not Use Pie Chart When:
 - You have more than 6 or 8 segments (high data volume) — consider a Bar, Line or Area chart if it works for your data story.
 - It would be easier for the viewer to perceive the value difference in a Bar chart.
 
-## $PlatformShort$ Pie Chart Legend
+## $Platform$ Pie Chart Legend
 
 Legends are used to show information about each point, to know about its contribution towards the total sum. You can collapse the point using legend click.
 
@@ -74,12 +74,12 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
-           alt="$PlatformShort$ Pie Chart Legend" >
+           alt="$Platform$ Pie Chart Legend" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Others Category
+## $Platform$ Pie Chart Others Category
 
 Sometimes, the underlying data for the pie chart will contain many items with small values. In this case, the Others category will permit automatic aggregation of several data values into a single slice
 
@@ -90,24 +90,24 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
-           alt="$PlatformShort$ Pie Chart Others" >
+           alt="$Platform$ Pie Chart Others" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Explosion
+## $Platform$ Pie Chart Explosion
 
 The pie chart supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
-           alt="$PlatformShort$ Pie Chart Explosion" >
+           alt="$Platform$ Pie Chart Explosion" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Selection
+## $Platform$ Pie Chart Selection
 The pie chart supports slice selection by mouse click as the default behavior. You can determine the selected slices by using the `SelectedItems` property. The selected slices are then highlighted.
 
 There is a property called `SelectionMode` which is how you set what mode you want the pie chart to use. The default value is `Single`. In order to disable selection, set the property to `Manual`.
@@ -131,12 +131,12 @@ For scenarios where you click on the Others slice, the pie chart will return an 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
-           alt="$PlatformShort$ Pie Chart Selection" >
+           alt="$Platform$ Pie Chart Selection" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Animation
+## $Platform$ Pie Chart Animation
 
 You can animate the pie chart smoothly by setting the `radiusFactor` property, which will scale the chart's radius. Also set the `startAngle` property to angle the chart such that it keep increasing the chart angle while rotating.
 
@@ -145,12 +145,12 @@ In the code below, the radiusFactor is increasing the chart by 0.25% of the size
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
-           alt="$PlatformShort$ Pie Chart Animation" >
+           alt="$Platform$ Pie Chart Animation" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Pie Chart Styling
+## $Platform$ Pie Chart Styling
 
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
@@ -158,12 +158,12 @@ Once our pie chart is created, we may want to make some further styling customiz
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
-           alt="$PlatformShort$ Pie Chart Styling" >
+           alt="$Platform$ Pie Chart Styling" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Radial Pie Chart
+## $Platform$ Radial Pie Chart
 
 The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
@@ -171,7 +171,7 @@ The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a g
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           alt="$PlatformShort$ Radial Pie Chart" >
+           alt="$Platform$ Radial Pie Chart" >
 </code-view>
 
 <div class="divider--half"></div>

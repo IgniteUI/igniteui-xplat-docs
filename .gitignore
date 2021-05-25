@@ -12,3 +12,6 @@ src/**/*.js.map
 # excluding auto-generated files:
 docfx/**/components/toc_*.json
 docfx/**/components/toc.yml
+
+# excluding to avoid errors with yarn install
+package-lock.json

@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 強調表示 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$ProductName$ 強調表示機能について説明します。
-_keywords: $PlatformShort$ charts, data chart, highlighting, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 強調表示, インフラジスティックス 
+title: $Platform$ データ チャート | データ可視化ツール | 強調表示 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$ProductName$ 強調表示機能について説明します。
+_keywords: $Platform$ charts, data chart, highlighting, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 強調表示, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ハイライト
+# $Platform$ ハイライト
 
-$PlatformShort$ データ チャート コンポネントを使用すると、データ チャートにプロットされたシリーズを強調表示し、マウスが移動している項目またはシリーズを視覚化、または強調表示レイヤーを使用して視覚化できます。
+$Platform$ データ チャート コンポネントを使用すると、データ チャートにプロットされたシリーズを強調表示し、マウスが移動している項目またはシリーズを視覚化、または強調表示レイヤーを使用して視覚化できます。
 
 > [!NOTE]
 > 注: ハイライトは、積層型シリーズで現在サポートされていません。
 
-## $PlatformShort$ ハイライトの例
+## $Platform$ ハイライトの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting" 
-           alt="$PlatformShort$ ハイライトの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-highlighting"
+           alt="$Platform$ ハイライトの例"
            github-src="charts/data-chart/series-highlighting">
 </code-view>
 
 <div class="divider--half"></div>
 
-$PlatformShort$ データ チャート コンポネントでハイライトを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
+$Platform$ データ チャート コンポネントでハイライトを有効にするには、対話モジュールをインポートして登録する必要があります。以下のコードを使用できます。
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -61,7 +61,7 @@ IgcDataChartAnnotationModule.register();
 
 ## シリーズ ビジュアルをハイライト
 
-$PlatformShort$ データ チャート コンポネントのシリーズ ハイライト機能を使用すると、単一の項目またはシリーズ全体を強調表示できます。たとえば、折れ線シリーズを使用している場合、ハイライトは線の形状全体を 1 つの単一形状として強調表示します。ただし、列シリーズなどのシリーズの各項目にハイライトを適用することはできます。
+$Platform$ データ チャート コンポネントのシリーズ ハイライト機能を使用すると、単一の項目またはシリーズ全体を強調表示できます。たとえば、折れ線シリーズを使用している場合、ハイライトは線の形状全体を 1 つの単一形状として強調表示します。ただし、列シリーズなどのシリーズの各項目にハイライトを適用することはできます。
 
 次のコード スニペットは、データ チャートのシリーズで強調表示を有効にする方法を示しています。
 
@@ -70,17 +70,17 @@ $PlatformShort$ データ チャート コンポネントのシリーズ ハイ�
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" />    
+        IsHighlightingEnabled="true" />
 </DataChart>
 ```
 
@@ -166,7 +166,7 @@ series2.yAxis = yAxis;
 
 ## シリーズ カテゴリをハイライト
 
-カテゴリ軸または $PlatformShort$ データ チャート コンポネント内のすべてのカテゴリ軸に対する注釈レイヤーを表します。軸に、軸の主グリッド線の間に配置されるシリーズ、たとえば列シリーズなどが含まれる場合、現在のカテゴリを塗りつぶすシェイプが描画されます。
+カテゴリ軸または $Platform$ データ チャート コンポネント内のすべてのカテゴリ軸に対する注釈レイヤーを表します。軸に、軸の主グリッド線の間に配置されるシリーズ、たとえば列シリーズなどが含まれる場合、現在のカテゴリを塗りつぶすシェイプが描画されます。
 
 ライン シリーズなどその他のシリーズの場合、マウス位置に最も近いグリッドラインで調節可能な幅を持つバンドを描画します。この場合、`UseInterpolation` プロパティが有効になると、x 位置がカーソルの x 位置に付け加えられます。
 
@@ -179,18 +179,18 @@ series2.yAxis = yAxis;
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" /> 
-    <CategoryHighlightLayer />   
+        IsHighlightingEnabled="true" />
+    <CategoryHighlightLayer />
 </DataChart>
 ```
 
@@ -289,25 +289,25 @@ series2.yAxis = yAxis;
 
 デフォルトの強調表示はシリーズの型に依存します。たとえば、列シリーズと行シリーズのハイライトは異なります。列シリーズの場合は縞模様で、ライン シリーズの場合はマーカーです。`HighlightType` プロパティを設定してデフォルトの強調表示をオーバーライドできます。
 
-次のコード スニペットは、$PlatformShort$ データ チャート コンポネントにカテゴリ項目ハイライト レイヤーを追加する方法を示しています。
+次のコード スニペットは、$Platform$ データ チャート コンポネントにカテゴリ項目ハイライト レイヤーを追加する方法を示しています。
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         IsHighlightingEnabled="true"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        IsHighlightingEnabled="true" /> 
-    <CategoryItemHighlightLayer />   
+        IsHighlightingEnabled="true" />
+    <CategoryItemHighlightLayer />
 </DataChart>
 ```
 

@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ Excel Library Component - Native Angular | Ignite UI for Angular
+title: $Platform$ Excel Library Component - Native Angular | Ignite UI for Angular
 _description: The Ignite UI for Excel Library component.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Library
 ---
-# $PlatformShort$ Using Cells
+# $Platform$ Using Cells
 
 The `WorksheetCell` objects in an Excel worksheet is the object that holds your actual data values for the worksheet. This topic goes over the many operations that you can perform on these cells, such as accessing them and their regions by name, adding formulas and comments to the cells, and merging and formatting them.
 
 ## Demo
 
 
-<code-view style="height: 150px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"  
+<code-view style="height: 150px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
            github-src="excel/excel-library/working-with-cells">
 </code-view>
 

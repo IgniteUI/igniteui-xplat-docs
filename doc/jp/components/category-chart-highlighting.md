@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | 強調表示 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$ProductName$ 強調表示機能について説明します。
-_keywords: $PlatformShort$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, 強調表示レイヤー, 強調表示, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | 強調表示 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、グラフの領域を強調表示できます。$ProductName$ 強調表示機能について説明します。
+_keywords: $Platform$ charts, category chart, Highlight Layers, Highlighting, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, 強調表示レイヤー, 強調表示, インフラジスティックス
 mentionedTypes: ['CategoryChart']
 _language: ja
 ---
-# $PlatformShort$ ハイライト
+# $Platform$ ハイライト
 
 $ProductName$ カテゴリ チャート コンポネントには、ハイライト機能があります。
 
-## $PlatformShort$ ハイライトの例
+## $Platform$ ハイライトの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-highlighting" 
-           alt="$PlatformShort$ ハイライトの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-highlighting"
+           alt="$Platform$ ハイライトの例"
            github-src="charts/category-chart/highlighting">
 </code-view>
 

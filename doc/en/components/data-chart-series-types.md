@@ -1,16 +1,16 @@
 ﻿---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Series | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create column charts, line charts, area charts, pie charts and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, chart types, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Series | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create column charts, line charts, area charts, pie charts and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, chart types, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Series
+# $Platform$ Series
 
-In the $PlatformShort$ data chart component, series are classified into groups of similar series: Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, and Stacked Series.
+In the $Platform$ data chart component, series are classified into groups of similar series: Category Series, Financial Series, Polar Series, Radial Series, Range Series, Scatter Series, and Stacked Series.
 
-In addition to these series, you can add [Series Annotations](data-chart-series-annotations.md) and [Series Highlighting](data-chart-series-highlighting.md) in the $PlatformShort$ data chart component.
+In addition to these series, you can add [Series Annotations](data-chart-series-annotations.md) and [Series Highlighting](data-chart-series-highlighting.md) in the $Platform$ data chart component.
 
-The following list shows all types of the series in each of their groups. Click on a name of a series to navigate to a help topic that provides details on how to use a given series in the $PlatformShort$ data chart component.
+The following list shows all types of the series in each of their groups. Click on a name of a series to navigate to a help topic that provides details on how to use a given series in the $Platform$ data chart component.
 
 ### Category Charts
 - [Area Chart](data-chart-type-category-area-series.md)

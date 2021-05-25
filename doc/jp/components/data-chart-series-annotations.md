@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 注釈 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、コールアウト レイヤー、十字線レイヤー、最終値レイヤーなどのチャート シリーズに注釈を追加できます。$ProductName$ を使用してグラフと視覚化を改善します。
-_keywords: $PlatformShort$ charts, data chart, annotations, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 注釈, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 注釈 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、コールアウト レイヤー、十字線レイヤー、最終値レイヤーなどのチャート シリーズに注釈を追加できます。$ProductName$ を使用してグラフと視覚化を改善します。
+_keywords: $Platform$ charts, data chart, annotations, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 注釈, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ シリーズの注釈
+# $Platform$ シリーズの注釈
 
-$PlatformShort$ データ チャート コンポーネントは、チャートにプロットされたポイントに関するコンテキスト情報を注釈として表示するレイヤーをサポートします。シリーズのみでは把握できないような、より多くの情報をエンドユーザーに表示する場合に役立つコンポーネントです。
+$Platform$ データ チャート コンポーネントは、チャートにプロットされたポイントに関するコンテキスト情報を注釈として表示するレイヤーをサポートします。シリーズのみでは把握できないような、より多くの情報をエンドユーザーに表示する場合に役立つコンポーネントです。
 
-## $PlatformShort$ シリーズ注釈の例
+## $Platform$ シリーズ注釈の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations" 
-           alt="$PlatformShort$ シリーズ注釈の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations"
+           alt="$Platform$ シリーズ注釈の例"
            github-src="charts/data-chart/series-annotations">
 </code-view>
 
@@ -23,7 +23,7 @@ $PlatformShort$ データ チャート コンポーネントは、チャート�
 
  ## コールアウト レイヤー
 
-$PlatformShort$ データ チャート コンポーネントはチャート既存または新しいデータの注釈を表示します。注釈は、データソース内の指定されたデータ値の横に表示されます。
+$Platform$ データ チャート コンポーネントはチャート既存または新しいデータの注釈を表示します。注釈は、データソース内の指定されたデータ値の横に表示されます。
 
 コールアウト注釈を使用して、メモやデータポイントに関する特定の詳細など、ユーザーに追加情報を表示します
 
@@ -36,17 +36,17 @@ $PlatformShort$ データ チャート コンポーネントはチャート既�
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1" />
 
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2" />
-    
-    <CalloutLayer Name="callout" 
+
+    <CalloutLayer Name="callout"
         XMemberPath="Index"
         YMemberPath="Value"
         LabelMemberPath="Label" />
@@ -130,7 +130,7 @@ $PlatformShort$ データ チャート コンポーネントはチャート既�
 
 十字線レイヤーは、各シリーズが個別の線をセットでレンダリングするように設定されているすべてのシリーズの実際の値で交差する交差ラインとしてレンダリングされます。
 
-デフォルトでは $PlatformShort$ データ チャート コンポーネントのすべてのシリーズをターゲットとするように、特定のシリーズを 1 つだけ表示するように十字線レイヤーを構成できます。これを実行するには、`TargetSeries` プロパティを設定します。
+デフォルトでは $Platform$ データ チャート コンポーネントのすべてのシリーズをターゲットとするように、特定のシリーズを 1 つだけ表示するように十字線レイヤーを構成できます。これを実行するには、`TargetSeries` プロパティを設定します。
 
 デフォルトでは、十字線の色は、相互作用しているシリーズの色です。ただし、このデフォルト値は、十字線に使用される色を選択できるようにオーバーライドできます。これは、`Brush` プロパティを設定することによって行います。
 
@@ -141,16 +141,16 @@ $PlatformShort$ データ チャート コンポーネントはチャート既�
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        DataSource="@data" />    
+        DataSource="@data" />
     <CrosshairLayer Name="crosshair" />
 </DataChart>
 ```
@@ -217,7 +217,7 @@ $PlatformShort$ データ チャート コンポーネントはチャート既�
 
  ## 最終値レイヤー
 
-最終値レイヤーには、$PlatformShort$ データ チャート コンポーネントのシリーズの最終値を表す注釈がチャートの軸に沿って表示されます。
+最終値レイヤーには、$Platform$ データ チャート コンポーネントのシリーズの最終値を表す注釈がチャートの軸に沿って表示されます。
 
 複数の最終値レイヤーを異なる設定で使用したい場合は、注釈を設定して特定のシリーズをターゲットにすることができます。これには `TargetSeries` プロパティを設定します。
 
@@ -228,15 +228,15 @@ $PlatformShort$ データ チャート コンポーネントはチャート既�
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
-        ValueMemberPath="Value2" />    
+        YAxisName="yAxis"
+        ValueMemberPath="Value2" />
     <FinalValueLayer Name="finalValue" />
 </DataChart>
 ```

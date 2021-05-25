@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization | Infragistics
-_description: Effortlessly create an $PlatformShort$ data chart that displays multiple instances of visual elements to create composite chart views. Get started today!
-_keywords: data chart, $PlatformShort$ component, $PlatformShort$ chart, $ProductName$, charting component
+title: $Platform$ Data Chart | Data Visualization | Infragistics
+_description: Effortlessly create an $Platform$ data chart that displays multiple instances of visual elements to create composite chart views. Get started today!
+_keywords: data chart, $Platform$ component, $Platform$ chart, $ProductName$, charting component
 mentionedTypes: ['XamDataChart', 'SeriesType']
 ---
-# $PlatformShort$ Data Chart
+# $Platform$ Data Chart
 
-The $PlatformShort$ data chart is a charting component that provides modular design of axis, markers, series, legend, and annotation layers. With this data chart, you can create multiple instances of these visual elements in the same chart plot area in order to create composite chart views.
+The $Platform$ data chart is a charting component that provides modular design of axis, markers, series, legend, and annotation layers. With this data chart, you can create multiple instances of these visual elements in the same chart plot area in order to create composite chart views.
 
-## $PlatformShort$ Data Chart Example
+## $Platform$ Data Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-overview" 
-           alt="$PlatformShort$ Data Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-overview"
+           alt="$Platform$ Data Chart Example"
            github-src="charts/data-chart/chart-overview">
 </code-view>
 
@@ -23,7 +23,7 @@ The $PlatformShort$ data chart is a charting component that provides modular des
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $PlatformShort$ data chart package, the core package must also be installed.
+When installing the $Platform$ data chart package, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -33,7 +33,7 @@ npm install --save {PackageCharts}
 
 ## Required Modules
 
-The $PlatformShort$ data chart component requires the following modules:
+The $Platform$ data chart component requires the following modules:
 
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
@@ -115,10 +115,10 @@ ModuleManager.register(
 
 ## Supported Series
 
-The $PlatformShort$ charting component supports over 65 types of series including [Category Series](data-chart-type-category-series.md), [Financial Series](data-chart-type-financial-series.md), [Polar Series](data-chart-type-polar-series.md), [Radial Series](data-chart-type-radial-series.md), [Range Series](data-chart-type-range-series.md), [Scatter Series](data-chart-type-scatter-bubble-series.md), and [Shape Series](data-chart-type-shape-series.md). Refer to the [Series](data-chart-series-types.md) topic, for a full list of supported types of series and how to use them.
+The $Platform$ charting component supports over 65 types of series including [Category Series](data-chart-type-category-series.md), [Financial Series](data-chart-type-financial-series.md), [Polar Series](data-chart-type-polar-series.md), [Radial Series](data-chart-type-radial-series.md), [Range Series](data-chart-type-range-series.md), [Scatter Series](data-chart-type-scatter-bubble-series.md), and [Shape Series](data-chart-type-shape-series.md). Refer to the [Series](data-chart-series-types.md) topic, for a full list of supported types of series and how to use them.
 
 ## Supported Axes
-The $PlatformShort$ data chart component supports various types of axis that are intended to use with specific type of series. The following table lists which axes can be used with type of series.   Refer to the [Series](data-chart-series-types.md) and [Axis](data-chart-axis-types.md) topics, for more information on how to use these types of axis.
+The $Platform$ data chart component supports various types of axis that are intended to use with specific type of series. The following table lists which axes can be used with type of series.   Refer to the [Series](data-chart-series-types.md) and [Axis](data-chart-axis-types.md) topics, for more information on how to use these types of axis.
 
 Axis Type           | Supported Series Types
 --------------------|-----------------------
@@ -135,7 +135,7 @@ CategoryAngleAxis  | all  [Radial Series](data-chart-type-radial-series.md)
 
 
 ## Usage
-Now that the $PlatformShort$ data chart modules are imported, next step is to bind chart to data. All series require specific number and type of data columns to render correctly and you can find a data source for each type of series in the [Data Sources](data-chart-data-sources.md) topic.
+Now that the $Platform$ data chart modules are imported, next step is to bind chart to data. All series require specific number and type of data columns to render correctly and you can find a data source for each type of series in the [Data Sources](data-chart-data-sources.md) topic.
 
 The following code snippet demonstrates how to create scatter `Bubble` and bind it to [SampleScatterStats](data-chart-data-sources-stats.md) data.
 

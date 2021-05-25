@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Esri Maps | Infragistics
+title: $Platform$ Map | Data Visualization Tools | Esri Maps | Infragistics
 _description: The Map allows you to display imagery from Esri Street Maps. View the demo and usage for more
 _keywords: map, $ProductName$, Infragistics, imagery tiles, Esri, Arc GIS
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Displaying Imagery from Esri Maps
+# $Platform$ Displaying Imagery from Esri Maps
 
 The `ArcGISOnlineMapImagery` is a free geographic imagery mapping service created by Esri. It provides over 40 styles of geographic imagery tiles of the world. This geographic imagery service can be accessed directly on <a href="https://services.arcgisonline.com/ArcGIS/rest/services" target="_blank">www.arcgisonline.com</a> web site.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery"  >
 </code-view>
 

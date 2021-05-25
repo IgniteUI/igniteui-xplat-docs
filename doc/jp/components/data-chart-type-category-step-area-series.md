@@ -1,28 +1,28 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ステップ エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してステップ エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, step area chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ステップ エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ステップ エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してステップ エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, step area chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ステップ エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ステップ エリア チャート
+# $Platform$ ステップ エリア チャート
 
-$ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。`StepAreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられます。$PlatformShort$ ステップ エリア チャートは、ステップ線の下の領域が塗りつぶされていないこと以外は、$PlatformShort$ ステップ エリア チャートと同じです。
+$ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。`StepAreaSeries` は時間毎のデータの変化や複数の項目を比較する場合に用いられます。$Platform$ ステップ エリア チャートは、ステップ線の下の領域が塗りつぶされていないこと以外は、$Platform$ ステップ エリア チャートと同じです。
 
-## $PlatformShort$ ステップ エリア チャートの例
+## $Platform$ ステップ エリア チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-area-series" 
-           alt="$PlatformShort$ ステップ エリア チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-area-series"
+           alt="$Platform$ ステップ エリア チャートの例"
            github-src="charts/data-chart/type-category-step-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`StepAreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`StepAreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

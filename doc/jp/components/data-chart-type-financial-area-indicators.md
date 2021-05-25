@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 財務指標 (エリア) | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用し財務指標 (エリア) を表示します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, financial area indicators, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, エリア型の財務指標, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 財務指標 (エリア) | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用し財務指標 (エリア) を表示します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, financial area indicators, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, エリア型の財務指標, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 _language: ja
 ---
-# $PlatformShort$ 財務指標 (エリア)
+# $Platform$ 財務指標 (エリア)
 
 財務指標は、株価の動きの計測やトレンドを確認するためにトレーダーによって使用されます。これらのインジケーターは、同じ Y 軸を共有しないため `FinancialPriceSeries` を使用するチャートの上または下に表示されます。ただし、チャート コントロールは同じプロット領域で価格シリーズとインジケーターの描画をサポートします。複数軸の使用や軸を共有することもできます。詳細については、[軸共有と複数軸](data-chart-axis-sharing.md)のトピックを参照してください。
 
-## $PlatformShort$ 財務指標 (エリア) の例
+## $Platform$ 財務指標 (エリア) の例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-area-indicators" 
-           alt="$PlatformShort$ 財務指標 (エリア) の例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-area-indicators"
+           alt="$Platform$ 財務指標 (エリア) の例"
            github-src="charts/data-chart/type-financial-area-indicators">
 </code-view>
 
@@ -64,7 +64,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` をY 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` をY 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
 
 ## データの要件
 
@@ -175,7 +175,7 @@ ModuleManager.register(
 ```razor
 <DataChart Height="500px" Width="700px">
     <CategoryXAxis Name="xAxis" Label="Label" DataSource="@DataSource" />
-    <NumericYAxis  Name="yAxis" 
+    <NumericYAxis  Name="yAxis"
         LabelRightMargin="10" LabelExtent="50"
         LabelHorizontalAlignment="@HorizontalAlignment.Left"
         LabelLocation="@AxisLabelsLocation.OutsideRight" />

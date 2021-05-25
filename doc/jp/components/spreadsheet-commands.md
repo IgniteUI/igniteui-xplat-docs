@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ スプレッドシート | コマンド | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ スプレッドシート コントロールのさまざまな機能をアクティブにするためのコマンドを実行できます。$ProductName$ スプレッドシートで ZoomIn や ZoomOut などのコマンドを使用できます。
+title: $Platform$ スプレッドシート | コマンド | インフラジスティックス
+_description: インフラジスティックスの $Platform$ スプレッドシート コントロールのさまざまな機能をアクティブにするためのコマンドを実行できます。$ProductName$ スプレッドシートで ZoomIn や ZoomOut などのコマンドを使用できます。
 _keywords: Spreadsheet, commands, $ProductName$, Infragistics, スプレッドシート, コマンド, インフラジスティックス
 mentionedTypes: ['Spreadsheet', 'SpreadsheetAction']
 _language: ja
 ---
-# $PlatformShort$ コマンドの使用
+# $Platform$ コマンドの使用
 
-$PlatformShort$ Spreadsheet コンポーネントは、スプレッドシートのさまざまな機能をアクティブにするためのコマンドを実行できます。このトピックでは、コマンドによりコントロールを使用してさまざまな操作を実行する方法を説明します。多くのコマンドは、アクティブセル、行、またはワークシートに基づいてアクションを実行します。例えば、ZoomIn と ZoomOut の 2 つのコマンドです。完全なリストは SpreadsheetAction 列挙体を見てください。
+$Platform$ Spreadsheet コンポーネントは、スプレッドシートのさまざまな機能をアクティブにするためのコマンドを実行できます。このトピックでは、コマンドによりコントロールを使用してさまざまな操作を実行する方法を説明します。多くのコマンドは、アクティブセル、行、またはワークシートに基づいてアクションを実行します。例えば、ZoomIn と ZoomOut の 2 つのコマンドです。完全なリストは SpreadsheetAction 列挙体を見てください。
 
-## $PlatformShort$ コマンドの使用の例
+## $Platform$ コマンドの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands" 
-           alt="$PlatformShort$ Spreadsheet コンポーネントは、スプレッドシートのさまざまな機能をアクティブにするためのコマンドを実行できます。このトピックでは、コマンドによりコントロールを使用してさまざまな操作を実行する方法を説明します。多くのコマンドは、アクティブセル、行、またはワークシートに基づいてアクションを実行します。例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands"
+           alt="コマンドの使用の例"
            github-src="excel/spreadsheet/commands">
 </code-view>
 

@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ 円チャート | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ 円チャートを使用して、分類データを表示するカラフルな円チャートを作成します。$ProductName$ 円チャートの設定可能な要素について説明します。
-_keywords: $PlatformShort$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, $PlatformShort$ チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
+title: $Platform$ 円チャート | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ 円チャートを使用して、分類データを表示するカラフルな円チャートを作成します。$ProductName$ 円チャートの設定可能な要素について説明します。
+_keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, $Platform$ チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ['XamPieChart','SliceSelectionMode','PieSliceOthersContext']
 _language: ja
 ---
-# $PlatformShort$ 円チャートの概要
+# $Platform$ 円チャートの概要
 
 $ProductName$ 円チャート コンポネントは、セクションに分割された円形の領域で構成される、円チャートを表示するためのコンポーネントです。各セクションには、基本データ値に比例する円弧の長さがあります。
 
 コンポーネントは分類したデータを表すために使用されます。カテゴリが少ない場合や各カテゴリが全体としてデータの相対的に大きなパーセンテージを構成する場合、これは最も効率的です。
 
-## $PlatformShort$ 円チャートの例
+## $Platform$ 円チャートの例
 
 
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           alt="$PlatformShort$ 円チャートの例"
+           alt="$Platform$ 円チャートの例"
            github-src="charts/pie-chart/overview">
 </code-view>
 
@@ -162,7 +162,7 @@ var data = [
 <div class="divider--half"></div>
 
 ## その他の分類項目
-Pie Chart  コンポーネントの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
+Pie Chart コンポーネントの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
 
 以下のサンプルは、`OthersCategoryThreshold` を 2 に設定、`OthersCategoryType` は Number に設定されています。したがって、2 以下の値を含む項目は、Others カテゴリに割り当てられます。
 
@@ -283,7 +283,7 @@ public onSliceClick = (s: IgcPieChartComponent, e: IgcSliceClickEventArgs) => {
 * SelectedItemsChanging
 * SelectedItemsChanged
 
-「Changing」で終わるイベントはキャンセル可能なイベントです。すなわち、イベント引数プロパティ  `Cancel` を true に設定することで、スライスの選択を停止します。True に設定すると、関連付けられたプロパティは更新されず、その結果スライスは選択されません。この設定はたとえば、スライスのデータによって一定のスライスの選択を無効化する場合に使用します。
+「Changing」で終わるイベントはキャンセル可能なイベントです。すなわち、イベント引数プロパティ `Cancel` を true に設定することで、スライスの選択を停止します。True に設定すると、関連付けられたプロパティは更新されず、その結果スライスは選択されません。この設定はたとえば、スライスのデータによって一定のスライスの選択を無効化する場合に使用します。
 
 「その他」スライスをクリックすると、`PieSliceOthersContext` オブジェクトが返されます。オブジェクトは、「その他」スライスに含まれるデータ項目のリストがあります。
 

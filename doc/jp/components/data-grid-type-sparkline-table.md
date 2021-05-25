@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ グリッド | 列スパークライン | インフラジスティックス
+title: $Platform$ データ グリッド | 列スパークライン | インフラジスティックス
 _description: $ProductName$ Data Table / Data Grid は、列スパークラインなどの他のコンポーネントを埋め込む方法を提供するテンプレート列をサポートします。
-_keywords: $PlatformShort$ Table, Data Grid, column sparkline, $ProductName$, data binding, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列スパークライン, データ バインディング, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column sparkline, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 列スパークライン, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid', 'CellInfo', 'TemplateCellInfo', 'Sparkline']
 _language: ja
 ---
 
-# $PlatformShort$ 列スパークライン
+# $Platform$ 列スパークライン
 
 $ProductName$ Data Table / Data Grid は、$ProductName$ スパークライン コンポーネントなど、他のコンポーネントを埋め込むことができるテンプレート列をサポートします。`Grid` コンポーネントにサポートされる他の列タイプについては、[列タイプ](data-grid-column-types.md) トピックを参照してください。
 
-## $PlatformShort$ 列スパークラインの例
+## $Platform$ 列スパークラインの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid" 
-           alt="$PlatformShort$ 列スパークラインの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid"
+           alt="$Platform$ 列スパークラインの例"
            github-src="charts/sparkline/grid">
 </code-view>
 
@@ -138,8 +138,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 <DataGrid Height="100%" Width="100%"
           RowHeight="90"
           AutoGenerateColumns="false"
-          DataSource="DataSource">    
-    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >                     
+          DataSource="DataSource">
+    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
         <Template>
             <RenderFragment>
                  <div style="width: 100%; height: 70px; background: transparent">

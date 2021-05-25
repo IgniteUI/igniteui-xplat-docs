@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | ツールチップ テンプレート | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャートのツールチップを使用して重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, tooltip templates, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, ツールチップ テンプレート, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | ツールチップ テンプレート | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャートのツールチップを使用して重要なデータを表示します。$ProductName$ グラフ チュートリアルを是非お試しください!
+_keywords: $Platform$ charts, financial chart, stock chart, tooltip templates, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, ツールチップ テンプレート, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ ツールチップ テンプレート
+# $Platform$ ツールチップ テンプレート
 
-$PlatformShort$ Financial Chart コンポーネントは、シリーズの種類ごとに既定のツールチップを提供します。デフォルト ツールチップは特定のシリーズ項目に関連するすべての情報を表示します。これはシリーズ タイトル、データ値、および軸値を含みます。シリーズのスタイルと一致します。デフォルトのツールチップが適切でない場合、ツールチップのコンテンツおよびルック アンド フィールをカスタマイズできます。
+$Platform$ Financial Chart コンポーネントは、シリーズの種類ごとに既定のツールチップを提供します。デフォルト ツールチップは特定のシリーズ項目に関連するすべての情報を表示します。これはシリーズ タイトル、データ値、および軸値を含みます。シリーズのスタイルと一致します。デフォルトのツールチップが適切でない場合、ツールチップのコンテンツおよびルック アンド フィールをカスタマイズできます。
 
-## $PlatformShort$ ツールチップ テンプレートの例
+## $Platform$ ツールチップ テンプレートの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-tooltip-template"
-           alt="$PlatformShort$ ツールチップ テンプレートの例"
+           alt="$Platform$ ツールチップ テンプレートの例"
            github-src="charts/financial-chart/tooltip-template">
 </code-view>
 

@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ グリッド | 水平方向スクロール | インフラジスティックス
+title: $Platform$ データ グリッド | 水平方向スクロール | インフラジスティックス
 _description: Infragistics のグリッド コンポーネントの水平方向スクロール機能を使用して、列をシームレスにスクロールします。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ 水平方向のスクロール
+# $Platform$ 水平方向のスクロール
 
-$ProductName$ Data Table / Data Grid は、$PlatformShort$ データ グリッドの幅より大きい列の合計幅を設定することにより Horizontal Scrolling を有効にできます。
+$ProductName$ Data Table / Data Grid は、$Platform$ データ グリッドの幅より大きい列の合計幅を設定することにより Horizontal Scrolling を有効にできます。
 
-## $PlatformShort$ 水平方向のスクロールの例
+## $Platform$ 水平方向のスクロールの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling" 
-           alt="$PlatformShort$ 水平方向のスクロールの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
+           alt="$Platform$ 水平方向のスクロールの例"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 
@@ -40,7 +40,7 @@ $ProductName$ Data Table / Data Grid は、$PlatformShort$ データ グリッ�
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"                  
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     DefaultColumnMinWidth="300" />
 ```
@@ -81,7 +81,7 @@ $ProductName$ Data Table / Data Grid は、$PlatformShort$ データ グリッ�
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"                  
+<DataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     AutoGenerateColumns="false">
     <TextColumn Field="FirstName" Width="300" />
@@ -89,8 +89,8 @@ $ProductName$ Data Table / Data Grid は、$PlatformShort$ データ グリッ�
     <NumericColumn Field="Age" Width="300" />
     <DateTimeColumn Field="Birthday" Width="300" />
     <TextColumn Field="Street" Width="300" />
-    <TextColumn Field="City" Width="300" />            
+    <TextColumn Field="City" Width="300" />
     <NumericColumn Field="Salary" Width="300" />
-    <NumericColumn Field="Sales" Width="300" />            
+    <NumericColumn Field="Sales" Width="300" />
 </DataGrid>
 ```

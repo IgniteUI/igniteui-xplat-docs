@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Scatter Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar scatter charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar scatter charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Scatter Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar scatter charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar scatter charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarScatterSeries']
 ---
-# $PlatformShort$ Polar Scatter Chart
+# $Platform$ Polar Scatter Chart
 
 The $ProductName$ polar scatter chart belongs to a group of polar charts and is rendered using markers at the locations of data points without connecting lines. The `PolarScatterSeries` uses the same concepts of data plotting as the `ScatterSeries` but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple `PolarScatterSeries` can be plotted in the same data chart and they can overlay each other to show differences and similarities between data sets.
 
-## $PlatformShort$ Polar Scatter Chart Example
+## $Platform$ Polar Scatter Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-scatter-series" 
-           alt="$PlatformShort$ Polar Scatter Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-scatter-series"
+           alt="$Platform$ Polar Scatter Chart Example"
            github-src="charts/data-chart/type-polar-scatter-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PolarScatterSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PolarScatterSeries`.
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

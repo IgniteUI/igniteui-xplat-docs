@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Binding Local Data | Infragistics
-_description: Use Infragistics' $PlatformShort$ grid control to bind to an array of data. Learn how $ProductName$ table can help you better display your data!
-_keywords: $PlatformShort$ Table, Data Grid, binding to data, $ProductName$, Infragistics, data binding
+title: $Platform$ Data Grid | Binding Local Data | Infragistics
+_description: Use Infragistics' $Platform$ grid control to bind to an array of data. Learn how $ProductName$ table can help you better display your data!
+_keywords: $Platform$ Table, Data Grid, binding to data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Binding Local Data
+# $Platform$ Binding Local Data
 
 The following sample demonstrates the $ProductName$ Data Table / Data Grid data binding to an array of data.
 
-## $PlatformShort$ Binding Local Data Example
+## $Platform$ Binding Local Data Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-local-data" 
-           alt="$PlatformShort$ Binding Local Data Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-local-data"
+           alt="$Platform$ Binding Local Data Example"
            github-src="grids/data-grid/binding-local-data">
 </code-view>
 

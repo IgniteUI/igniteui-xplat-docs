@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create category charts such as column, line, area, bar and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, category chart, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create category charts such as column, line, area, bar and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, category chart, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Category Series
+# $Platform$ Sample Data Source for Category Series
 
 This topic provides an example on how to implement data source for [Category Series](data-chart-type-category-series.md)
 
@@ -26,7 +26,7 @@ public class SampleCategoryData
     }
 
     public class SampleCategoryItem
-    {    
+    {
         public int USA { get; set; }
         public int CHN { get; set; }
         public int RUS { get; set; }

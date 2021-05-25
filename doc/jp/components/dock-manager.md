@@ -1,12 +1,12 @@
 ---
-title: $PlatformShort$ ドック マネージャー | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
+title: $Platform$ ドック マネージャー | レイアウト コントロール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
 ---
-# $PlatformShort$ ドック マネージャーの概要
+# $Platform$ ドック マネージャーの概要
 
-Infragistics $PlatformShort$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
+Infragistics $Platform$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
 <!-- Blazor -->
 > [!NOTE]
@@ -19,19 +19,18 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
  <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
 <!-- end: Blazor -->
 
-## $PlatformShort$ ドック マネージャーの例
+## $Platform$ ドック マネージャーの例
 
+この例は、$Platform$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$PlatformShort$ ドック マネージャーの例" 
+           alt="$Platform$ ドック マネージャーの例"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 
 <!-- Angular, React, WebComponents -->
@@ -222,6 +221,8 @@ const tabGroupPane: IgcTabGroupPane = {
 
 すべてのタブ ヘッダーを表示する十分なスペースがない場合、タブ グループは非表示タブを含む **[その他のタブ]** メニューを表示します。そのメニューのタブ項目をクリックすると、タブが選択され、最初の位置に移動します。
 
+タブは、それらが配置されているタブ グループから切り離さずに並べ替えることもできます。タブをクリックして、希望の位置まで左または右にドラッグできます。選択したタブをタブ領域の外にドラッグすると、フローティング ペインにデタッチされます。
+
 ### ドキュメント ホスト
 
 [Document host](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html) コード編集やデザイン ビュー用の Visual Studio のタブと同様のドキュメント タブ領域です。以下は、2 つのドキュメント タブを持つドキュメント ホストを定義する方法です。
@@ -269,6 +270,7 @@ const layout: IgcDockManagerLayout = {
             floatingLocation: { x: 80, y: 80 },
             floatingWidth: 200,
             floatingHeight: 150,
+            floatingResizable: true,
             panes: [
                 {
                     type: IgcDockManagerPaneType.contentPane,
@@ -281,7 +283,9 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。注: これらのプロパティは [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されます。
+[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。これらのプロパティは、[`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されることに注意してください。
+
+[`floatingResizable`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) と [`allowFloatingPanesResize`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) を使用して、フローティング ペインのサイズ変更を許可するかどうかを設定できます。`allowFloatingPanesResize` は `IgcDockManagerComponent` プロパティであるため、値が `false` に設定されている場合、フローティング ペインのサイズを変更することはできません。`floatingResizable` プロパティは、`floatPanes` 配列の各分割ペインに個別に適用できます。プロパティ値が設定されていない場合、デフォルトで `allowFloatingPanesResize` プロパティの値になります。`floatingResizable` プロパティが特定のペインに設定されている場合、その値は `allowFloatingPanesResize` プロパティ値に優先されます。
 
 ### アクティブ ペイン
 
@@ -325,6 +329,44 @@ this.dockManager.layout = { ...layout };
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+
+## キーボード ナビゲーション
+
+キーボード ナビゲーションは、**ドック マネージャー**のアクセシビリティを強化し、すべてのペインをナビゲートしたり、アクティブなペインをドッキングしてビューを複数の方向に分割したりするなど、エンドユーザーにさまざまな操作を提供します。
+
+
+ショートカットは以下のとおりです。
+
+### ドッキング
+
+- <kbd>Cmd/Ctrl + Shift + 上矢印</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl + Shift + 下矢印</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl + Shift + 右矢印</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl + Shift + 左矢印</kbd> グローバルのの左へのドック。
+- <kbd>Shift + 上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift + 下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift + 右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift + 左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+
+### ナビゲーション
+ - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + 右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + 左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Alt + F6</kbd> 次のコンテンツ ペインにフォーカスします。
+ - <kbd>Alt + Shift + F6</kbd> 前のコンテンツ ペインにフォーカスします。
+
+### ペイン ナビゲーター
+
+次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
+
+ - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  最初のドキュメントから開始します。
+ - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> 最初のペインから開始します。
+ - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> 最後のドキュメントから逆方向に開始します。
+ - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> 最後のペインから逆方向に開始します。
+
+### その他
+ - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
+
+サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 ## テーマ
 

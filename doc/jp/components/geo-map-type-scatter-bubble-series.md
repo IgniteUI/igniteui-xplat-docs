@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter proportional series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布図比例シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics, $Platform$ マップ, 散布図比例シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ 散布図比例シリーズの使用
+# $Platform$ 散布図比例シリーズの使用
 
-アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$PlatformShort$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
+アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$Platform$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
 
-## $PlatformShort$ 散布図比例シリーズの使用の例
+## $Platform$ 散布図比例シリーズの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series" 
-           alt="$PlatformShort$ マップ | データ可視化ツール | 散布図比例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           alt="$Platform$ マップ | データ可視化ツール | 散布図比例"
            github-src="maps/geo-map/type-scatter-bubble-series">
 </code-view>
 
@@ -24,13 +24,13 @@ _language: ja
 上記のデモは、`GeographicProportionalSymbolSeries` シリーズと、シリーズのデータ​​バインディングオプションを指定する方法を示しています。予定表連動マーカー選択は、マーカー競合回避ロジックと合わせて構成され、マーカー アウトラインと塗りつぶしの色も指定されます。
 
 ## 構成の概要
- マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
+ マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
 
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
 プロパティ|タイプ|概要
 ---|---|---
-`ItemsSource`|any|項目のソースを取得または設定します
+`DataSource`|any|項目のソースを取得または設定します
 `LongitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の経度の値の場所を特定します。
 `LatitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の緯度値の場所を決定します。
 `RadiusMemberPath`|string|シリーズの半径値を取得するために使用するパスを設定します。

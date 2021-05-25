@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | ツールチップ タイプ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャートのツールチップを使用して、重要なデータを表示します。インフラジスティックスの $ProductName$ グラフ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ charts, category chart, tooltip, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, ツールチップ, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | ツールチップ タイプ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャートのツールチップを使用して、重要なデータを表示します。インフラジスティックスの $ProductName$ グラフ チュートリアルを是非お試しください!
+_keywords: $Platform$ charts, category chart, tooltip, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, ツールチップ, インフラジスティックス
 mentionedTypes: ['CategoryChart', 'ToolTipType']
 _language: ja
 ---
-# $PlatformShort$ ツールチップ タイプ
+# $Platform$ ツールチップ タイプ
 
 $ProductName$ カテゴリ チャート コンポネントには、さまざまなツールチップ タイプがあります。
 
-## $PlatformShort$ ツールチップ タイプの例
+## $Platform$ ツールチップ タイプの例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types" 
-           alt="$PlatformShort$ ツールチップ タイプの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-types"
+           alt="$Platform$ ツールチップ タイプの例"
            github-src="charts/category-chart/tooltip-types">
 </code-view>
 

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Types | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to plot data using different axis types such as numeric, category and date time axis. Learn about our $ProductName$ graph axis!
-_keywords: $PlatformShort$ charts, data chart, axis, types, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Axis Types | Infragistics
+_description: Use Infragistics' $Platform$ charts control to plot data using different axis types such as numeric, category and date time axis. Learn about our $ProductName$ graph axis!
+_keywords: $Platform$ charts, data chart, axis, types, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 ---
-# $PlatformShort$ Axis
+# $Platform$ Axis
 
-In the $PlatformShort$ data chart component, an axis provides base properties for specifying appearance of axis main lines, gridlines, tickmarks, titles, and labels. There are several different types of axis that can be used by the data chart component for the different types of series that the data chart supports. The type of series determines what type of axes can be used with them.
+In the $Platform$ data chart component, an axis provides base properties for specifying appearance of axis main lines, gridlines, tickmarks, titles, and labels. There are several different types of axis that can be used by the data chart component for the different types of series that the data chart supports. The type of series determines what type of axes can be used with them.
 
-## $PlatformShort$ Axis Example
+## $Platform$ Axis Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-types" 
-           alt="$PlatformShort$ Axis Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-types"
+           alt="$Platform$ Axis Example"
            github-src="charts/data-chart/axis-types">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Supported Axes
-The $PlatformShort$ data chart component supports various types of axis that are intended to use with specific type of series. The following table lists which axes can be used with type of series.
+The $Platform$ data chart component supports various types of axis that are intended to use with specific type of series. The following table lists which axes can be used with type of series.
 
 Axis Type           | Supported Series Types
 --------------------|-----------------------
@@ -40,7 +40,7 @@ CategoryAngleAxis  | all  [Radial Series](data-chart-type-radial-series.md)
 
 The `CategoryXAxis` treats the data as a sequence of category data items. Labels on this axis are placed along the X-Axis, according to their position in the sequence. This type of axis can display almost any type of data including strings and numbers. This type of axis is compatible with the [Financial Series](data-chart-type-financial-series.md), [Range Series](data-chart-type-range-series.md),  and [Category Series](data-chart-type-category-series.md) (except [Bar Series](data-chart-type-category-bar-series.md))
 
-The following code snippet demonstrates how to add a `CategoryXAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `CategoryXAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px"
@@ -125,7 +125,7 @@ The `CategoryDateTimeXAxis` Axis treats the data as a sequence of category data 
 This type of axis is compatible with the [Financial Series](data-chart-type-financial-series.md), [Range Series](data-chart-type-range-series.md), and [Category Series](data-chart-type-category-series.md) (except [Bar Series](data-chart-type-category-bar-series.md))
 <!-- end: Blazor -->
 
-The following code snippet demonstrates how to add a `CategoryDateTimeXAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `CategoryDateTimeXAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px"
@@ -173,7 +173,7 @@ The following code snippet demonstrates how to add a `CategoryDateTimeXAxis` to 
 
 The `NumericXAxis` treats the data as continuously varying numerical data items. Labels on this axis are placed along the X-Axis. Location of labels varies according to the value in a data column that is mapped using their corresponding value-mapping properties. This type of axis is compatible with the [Scatter Series](data-chart-type-scatter-bubble-series.md) and [Shape Series](data-chart-type-shape-series.md) types. Also, this axis is compatible with the [Bar Series](data-chart-type-category-bar-series.md) type of [Category Series](data-chart-type-category-series.md), in which the `ValueMemberPath` property will be used to map the data column.
 
-The following code snippet demonstrates how to add a `NumericXAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `NumericXAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px"
@@ -212,7 +212,7 @@ The following code snippet demonstrates how to add a `NumericXAxis` to the $Plat
 
 The `NumericYAxis` treats the data as continuously varying numerical data items. Labels on this axis are placed along the Y-axis. Location of labels varies according to the value in a data column that is mapped using their corresponding value-mapping properties. This type of axis is compatible with the [Scatter Series](data-chart-type-scatter-bubble-series.md) and [Shape Series](data-chart-type-shape-series.md) types. Also, this axis is compatible with [Financial Series](data-chart-type-financial-series.md), [Range Series](data-chart-type-range-series.md), and [Category Series](data-chart-type-category-series.md) types (except [Bar Series](data-chart-type-category-bar-series.md)).
 
-The following code snippet demonstrates how to add a `NumericYAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `NumericYAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px"
@@ -252,7 +252,7 @@ The `TimeXAxis` treats the data as a sequence of category data items that are so
 
 The `TimeXAxis` also supports the ability to exclude intervals of data with `Breaks`. As a result, labels will not appear at the excluded interval. For example, working/non-working days, holidays, or weekends.
 
-The following code snippet demonstrates how to add a `TimeXAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `TimeXAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%" >
@@ -292,7 +292,7 @@ The following code snippet demonstrates how to add a `TimeXAxis` to the $Platfor
 
 The main difference between the `OrdinalTimeXAxis` and the `TimeXAxis` is that in the ordinal axis, the dates displayed are assumed to be equidistant. The `TimeXAxis` currently sorts and aligns the dates according to a chronological timescale. Therefore, we recommend using `OrdinalTimeXAxis` for better performance or when your data items are already in chronological order with the same time interval.
 
-The following code snippet demonstrates how to add a `OrdinalTimeXAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `OrdinalTimeXAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%" >
@@ -332,7 +332,7 @@ The `PercentChangeYAxis` works such that it takes the first point in your series
 
 This axis type is based on `NumericYAxis`, and so will support the same series types. For [Category Series](data-chart-type-category-series.md), the reference value will correspond to the `ValueMemberPath` for those series. For[Scatter Series](data-chart-type-scatter-bubble-series.md), the reference value will correspond to the `YMemberPath` of those series. For [Financial Series](data-chart-type-financial-series.md), the reference value will correspond to the first value mapped to `OpenMemberPath` property.
 
-The following code snippet demonstrates how to add a `PercentChangeYAxis` to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a `PercentChangeYAxis` to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">

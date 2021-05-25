@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Category Chart | Charting Component for Data | Infragistics
-_description: Use the $PlatformShort$ category chart component to analyze and automatically choose the best chart type to represent data. Get started today!
-_keywords: category chart, $PlatformShort$ component, $ProductName$, $PlatformShort$ charts, charting component
+title: $Platform$ Category Chart | Charting Component for Data | Infragistics
+_description: Use the $Platform$ category chart component to analyze and automatically choose the best chart type to represent data. Get started today!
+_keywords: category chart, $Platform$ component, $ProductName$, $Platform$ charts, charting component
 mentionedTypes: ['CategoryChart', 'CategoryChartType']
 ---
-# $PlatformShort$ Chart
+# $Platform$ Chart
 
-The $PlatformShort$ category chart component make it easy to organize and visualize category data . The $PlatformShort$ control simplifies the complexities of the data visualization domain into manageable API.
+The $Platform$ category chart component make it easy to organize and visualize category data . The $Platform$ control simplifies the complexities of the data visualization domain into manageable API.
 
-## $PlatformShort$ Chart Example
+## $Platform$ Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview" 
-           alt="$PlatformShort$ Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview"
+           alt="$Platform$ Chart Example"
            github-src="charts/category-chart/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
- A user can bind a collection of data, a group of collections, and a data property and let the charting control do the rest. The $PlatformShort$ component will analyze the data and automatically choose the best chart type to represent the data.
+ A user can bind a collection of data, a group of collections, and a data property and let the charting control do the rest. The $Platform$ component will analyze the data and automatically choose the best chart type to represent the data.
 
 By using a smart Data Adapter, the data is analyzed and the appropriate visualization is rendered. For example, if the `ChartType` property is set to `Auto`, the control will use a column chart for a small data sets or a line chart for larger data sets.
 
@@ -36,11 +36,11 @@ However, you can also explicitly specify the chart type by setting the `ChartTyp
 - `StepLine`
 - `Waterfall`
 
-Another example of the intuitive behavior of the $PlatformShort$ category chart component is that you do not need to explicitly set the labels. The category chart will use the first appropriate string property that it finds within the data you provided and will use that for the labels.
+Another example of the intuitive behavior of the $Platform$ category chart component is that you do not need to explicitly set the labels. The category chart will use the first appropriate string property that it finds within the data you provided and will use that for the labels.
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $PlatformShort$ chart package, the core package must also be installed.
+When installing the $Platform$ chart package, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -92,7 +92,7 @@ It's also possible to load a more minimal configuration of category chart whereb
 ## Usage
 Now that the category chart module is imported, next step is to bind it to data.
 
-In order to create $PlatformShort$ category chart component, you must first have data to bind it to. The following code snippet demonstrates how to create a simple data source.
+In order to create $Platform$ category chart component, you must first have data to bind it to. The following code snippet demonstrates how to create a simple data source.
 
 ```ts
 var data = [
@@ -220,7 +220,7 @@ chart.dataSource = data;
 
 ## Chart Types
 You can override the default behavior of the category chart and set which type of chart should be displayed. This is done by setting the `ChartType` property.
-Below are listed all of the types that the $PlatformShort$ category chart supports.
+Below are listed all of the types that the $Platform$ category chart supports.
 
 > [!NOTE]
 > Special case is the `Auto` setting of that property. If `Auto` is used the chart will analyze assigned data and will assign the most suitable chart type.

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Scatter Area Chart | Data Binding | Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Scatter Area Chart | Data Binding | Infragistics
 _description: Infragistics $ProductName$ provide scatter area series . Learn about our $ProductName$  scatter area series!
-_keywords: $PlatformShort$ charts, data chart, scatter area charts, $ProductName$, Infragistics
+_keywords: $Platform$ charts, data chart, scatter area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','ScatterAreaSeries','ScatterContourSeries']
 ---
-# $PlatformShort$ Scatter Area Chart
+# $Platform$ Scatter Area Chart
 
-This topic explains, with code examples, how to use  `ScatterAreaSeries` in the $PlatformShort$ data chart component. This series draws a colored surface based on a triangulation of X and Y data with a numeric value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. The `ScatterAreaSeries` works a lot like the `ScatterContourSeries` except that it represents data as interpolated and colored surface instead of contour lines connecting data points with the same values.
+This topic explains, with code examples, how to use  `ScatterAreaSeries` in the $Platform$ data chart component. This series draws a colored surface based on a triangulation of X and Y data with a numeric value assigned to each point. This type of series is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. The `ScatterAreaSeries` works a lot like the `ScatterContourSeries` except that it represents data as interpolated and colored surface instead of contour lines connecting data points with the same values.
 
-## $PlatformShort$ Scatter Area Chart Example
+## $Platform$ Scatter Area Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series" 
-           alt="$PlatformShort$ Scatter Area Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series"
+           alt="$Platform$ Scatter Area Chart Example"
            github-src="charts/data-chart/type-scatter-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `ScatterAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only `NumericYAxis` and `NumericYAxis` can be used with `ScatterAreaSeries`.
 
 ## Required Data
 

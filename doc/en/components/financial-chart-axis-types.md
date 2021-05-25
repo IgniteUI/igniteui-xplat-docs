@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Financial Chart | Axis Types | Infragistics
-_description: Learn how to configure Infragistics' $PlatformShort$ charts control axis such as axis interval, axis lables, axis modes, axis range, axis scale, axis tickmarkts and axis titles. View our $ProductName$ financial graph demos!
-_keywords: $PlatformShort$ charts, financial chart, stock chart, financial axis, $ProductName$, Axis type , Infragistics
+title: $Platform$ Financial Chart | Axis Types | Infragistics
+_description: Learn how to configure Infragistics' $Platform$ charts control axis such as axis interval, axis labels, axis modes, axis range, axis scale, axis tickmarks and axis titles. View our $ProductName$ financial graph demos!
+_keywords: $Platform$ charts, financial chart, stock chart, financial axis, $ProductName$, Axis type , Infragistics
 mentionedTypes: ['FinancialChart']
 ---
-# $PlatformShort$ Chart Axis Types
+# $Platform$ Chart Axis Types
 
-In the $PlatformShort$ financial chart component, an axis provides base properties for specifying appearance of axis main lines, tickmarks, titles, and axis labels.
+In the $Platform$ financial chart component, an axis provides base properties for specifying appearance of axis main lines, tickmarks, titles, and axis labels.
 
-## $PlatformShort$ Chart Axis Types Example
+## $Platform$ Chart Axis Types Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types" 
-           alt="$PlatformShort$ Chart Axis Types Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"
+           alt="$Platform$ Chart Axis Types Example"
            github-src="charts/financial-chart/axis-types">
 </code-view>
 
@@ -61,20 +61,20 @@ The following code snippet demonstrates how to configure intervals on the y-axis
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     YAxisInterval="200"
     YAxisMinorInterval="50"
     YAxisMajorStroke="Black"
     YAxisMinorStroke="Gray"
     YAxisMinorStrokeThickness="0.5"
-    YAxisMajorStrokeThickness="0.5" /> 
+    YAxisMajorStrokeThickness="0.5" />
 ```
 
 <div class="divider--half"></div>
 
 ## Axis Labels
-The $PlatformShort$ financial chart component allows you full control over configuring and formatting the labels displayed on your chart. You can change the rotation angle, margin, horizontal/vertical alignment, opacity, padding and visibility.
+The $Platform$ financial chart component allows you full control over configuring and formatting the labels displayed on your chart. You can change the rotation angle, margin, horizontal/vertical alignment, opacity, padding and visibility.
 
 The following code example shows how to style labels on the x-axis using style properties:
 
@@ -123,7 +123,7 @@ The following code example shows how to style labels on the x-axis using style p
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     XAxisLabelTextStyle="8pt Verdana"
     XAxisLabelTextColor="Gray"
@@ -132,13 +132,13 @@ The following code example shows how to style labels on the x-axis using style p
     YAxisLabelTextStyle="8pt Verdana"
     YAxisLabelTextColor="Gray"
     YAxisLabelLeftMargin="5"
-    YAxisLabelAngle="0" />      
+    YAxisLabelAngle="0" />
 ```
 
 <div class="divider--half"></div>
 
 ## Axis Modes
-The $PlatformShort$ financial chart component allows you to set different modes on the x-axis and the y-axis.
+The $Platform$ financial chart component allows you to set different modes on the x-axis and the y-axis.
 For the x-axis you can choose between the following modes:
 - Time - This mode will render space along the x-axis for gaps in data, for example no stock trading on weekends or holidays.
 - Ordinal - This mode will collapse date areas where data does not exist. This the default value.
@@ -185,7 +185,7 @@ The following code example shows how to set the modes for the axes:
 <div class="divider--half"></div>
 
 ## Axis Range
-In the $PlatformShort$ financial chart component, the range on numeric axes is the difference in numeric values from the beginning of the axis to the end or from the smallest to largest values in the data. The range minimum is the lowest value of the axis. The range maximum is the highest value of the axis. By default, the financial chart component will calculate the minimum and maximum values for the y-axis range based on the lowest and highest data points in order to maximize the chart plot area. The automatic calculation of an axis' minimum and maximum values may not be appropriate for your set of data points. For example, if your data has a minimum value of 850, you may want to set the minimum value of the axis using y-axis’s `YAxisMinimumValue` property to 800 so that there will be a space value of 50 between the axis minimum and the lowest value of data points. The same can be applied to the axis maximum value and the highest value of data points using y-axis’s `YAxisMaximumValue` property.
+In the $Platform$ financial chart component, the range on numeric axes is the difference in numeric values from the beginning of the axis to the end or from the smallest to largest values in the data. The range minimum is the lowest value of the axis. The range maximum is the highest value of the axis. By default, the financial chart component will calculate the minimum and maximum values for the y-axis range based on the lowest and highest data points in order to maximize the chart plot area. The automatic calculation of an axis' minimum and maximum values may not be appropriate for your set of data points. For example, if your data has a minimum value of 850, you may want to set the minimum value of the axis using y-axis’s `YAxisMinimumValue` property to 800 so that there will be a space value of 50 between the axis minimum and the lowest value of data points. The same can be applied to the axis maximum value and the highest value of data points using y-axis’s `YAxisMaximumValue` property.
 
 The following sample code demonstrates how to change the axis range on the y-axis.
 
@@ -216,16 +216,16 @@ The following sample code demonstrates how to change the axis range on the y-axi
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     YAxisMinimumValue="-200"
-    YAxisMaximumValue="1000" />  
+    YAxisMaximumValue="1000" />
 ```
 
 <div class="divider--half"></div>
 
 ## Axis Scale
-In the $PlatformShort$ financial chart component, you can control if the data in the chart is mapped logarithmically along the y-axis, this is done by setting the following properties:
+In the $Platform$ financial chart component, you can control if the data in the chart is mapped logarithmically along the y-axis, this is done by setting the following properties:
 - `YAxisIsLogarithmic` - This specifies if the y-axis should use a logarithmic scale instead of a linear one. By default this property is set to false.
 - `YAxisLogarithmBase` - The base value to use in the log function when mapping the position of data items along the y-axis.
 This is effective only when yAxisIsLogarithmic is true.
@@ -259,7 +259,7 @@ The following code snippet demonstrates how to set the color, length and thickne
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     YAxisIsLogarithmic="true"
     YAxisLogarithmBase="10" />
@@ -302,11 +302,11 @@ The following code snippet demonstrates how to set the color, length and thickne
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     XAxisTickLength="10"
     XAxisTickStrokeThickness="1"
-    XAxisTickStroke="Gray" />          
+    XAxisTickStroke="Gray" />
 ```
 
 <div class="divider--half"></div>
@@ -358,7 +358,7 @@ The following code example shows how to set and customize the titles on the x-ax
 
 ```razor
 <FinancialChart Width="100%"
-    Height="100%" 
+    Height="100%"
     DataSource="DataSource"
     XAxisTitle="Data Range"
     XAxisTitleTextColor="Black"
@@ -366,7 +366,7 @@ The following code example shows how to set and customize the titles on the x-ax
     XAxisTitleAngle="0"
     YAxisTitle="Stock Prices ($)"
     YAxisTitleTextColor="Black"
-    YAxisTitleAngle="90" />                     
+    YAxisTitleAngle="90" />
 ```
 
 <div class="divider--half"></div>

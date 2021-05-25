@@ -1,10 +1,10 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: $ProductName$ 데이터 차트는 축, 마커, 시리즈, 범례 및 주석 레이어의 모듈 식 디자인을 제공하는 차트 구성 요소입니다. 이 차트를 사용하면 동일한 차트 영역에 이러한 시각적 요소의 인스턴스를 여러 개 만들어 복합 차트 뷰를 만들 수 있습니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 분산 등고선 시리즈
+# $Platform$ 분산 등고선 시리즈
 
 이 항목에서는 코드 예제를 사용하여 `XamDataChart` 제어에서 `ScatterContourSeries`를 사용하는 방법을 설명합니다. 이 시리즈는
 각 점에 할당된 숫치 값으로X 및 Y 데이터의 삼각 측량을 기반으로 색상이 입혀진 등고선을 그립니다. 이 유형의 시리즈는 히트 맵, 자기장 강도 또는 사무실에서 Wi-Fi 강도를 렌더링하는 경우 등에 유용합니다. `ScatterContourSeries`는 데이터를 채우기 비율로 채색된 등고선으로 나타내며, 분산 영역 시리즈는 데이터를 컬러 스케일을 사용하여 보간된 면으로 나타내는 점을 제외하고는 `ScatterAreaSeries`와 매우 유사하게 작동합니다.
@@ -13,9 +13,9 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-contour-series"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-contour-series"
            github-src="charts/data-chart/type-contour-series">
 </code-view>
 
