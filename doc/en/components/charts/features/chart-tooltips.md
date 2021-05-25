@@ -30,11 +30,13 @@ Property Value     | Description
 `Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.
 `Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.
 
-## $Platform$ Chart Tooltip Template
+<div class="divider--half"></div>
+
+## $PlatformShort$ Chart Tooltip Template
 
 If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $Platform$ charts.
 
-### Custom Tooltips in Category Chart
+## Custom Tooltips in Category Chart
 
 This example shows how to create custom tooltips for all series in $Platform$ `CategoryChart` control. Note that you can also apply the same logic to custom tooltips in $Platform$ `FinancialChart` control.
 
@@ -48,7 +50,7 @@ This example shows how to create custom tooltips for all series in $Platform$ `C
 <div class="divider--half"></div>
 
 
-### Custom Tooltips in Data Chart
+## Custom Tooltips in Data Chart
 
 This example shows how to create custom tooltips for each series in $Platform$ Data Chart control.
 
