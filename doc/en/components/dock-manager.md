@@ -328,6 +328,12 @@ The Dock Manager component raises events when specific end-user interactions are
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
+           alt="$PlatformShort$ Dock Manager Pane Closing Example"
+           github-src="layouts/dock-manager/hiding-panes">
+</code-view>
 
 ## Keyboard Navigation
 
