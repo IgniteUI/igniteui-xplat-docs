@@ -4,15 +4,15 @@ _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 주석
+# $Platform$ 주석
 
 이 항목에서는 $ProductName$ 카테고리 차트 컴포넌트에서 사용할 수 있는 주석 및 오버레이 상호 작용에 대한 개념 정보를 제공합니다.
 
 ## 데모
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations"
            github-src="charts/category-chart/annotations">
 </code-view>
 

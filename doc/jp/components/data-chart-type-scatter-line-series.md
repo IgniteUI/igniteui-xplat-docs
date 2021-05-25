@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布 折れ線チャート | データ バインディング | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布 折れ線チャート | データ バインディング | インフラジスティックス
 _description: 同じプロット領域に視覚要素の複数インスタンスを表示するデータ チャートを作成し、複合チャートビューを作成します。
 _keywords: data chart, $ProductName$, Infragistics, データ チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ScatterLineSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布折れ線チャート
+# $Platform$ 散布折れ線チャート
 
 $ProductName$ 散布折れ線チャートは、デカルト (x, y) 座標系を使用してデータをプロットする散布図のグループに属します。このシリーズは、直線で接続されたマーカーのコレクションとしてレンダリングされ、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
 
 `ScatterLineSeries` は、不均等な間隔またはデータのクラスターに注意を促します。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。`ScatterLineSeries` は、データを時系列に整理して X 軸と Y 軸にプロットします (バインド前にデータが時系列に並んでいなくても)。
 
-## $PlatformShort$ 散布折れ線チャートの例
+## $Platform$ 散布折れ線チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series" 
-           alt="$PlatformShort$ 散布折れ線チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-line-series"
+           alt="$Platform$ 散布折れ線チャートの例"
            github-src="charts/data-chart/type-scatter-line-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 散布折れ線チャートは、デカルト (x, y) 座標系を�
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterLineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterLineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`
@@ -51,7 +51,7 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartScatterCoreModule.Register(IgniteUIBlazor);
-DataChartScatterModule.Register(IgniteUIBlazor);      
+DataChartScatterModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ScatterLineSeriesModule.Register(IgniteUIBlazor);
 ```

@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Bar Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create bar charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, bar chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Bar Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create bar charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, bar chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Bar Chart
+# $Platform$ Bar Chart
 
 The $ProductName$ bar chart belongs to a group of category charts and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points. `BarSeries` uses the same concepts of data plotting as `ColumnSeries` but data points are stretched along a vertical line (y-axis) rather than horizontal line (x-axis). In other words, the bar chart is rendered like the column chart, but with 90 degrees clockwise rotation.
 
-## $PlatformShort$ Bar Chart Example
+## $Platform$ Bar Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series" 
-           alt="$PlatformShort$ Bar Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-bar-series"
+           alt="$Platform$ Bar Chart Example"
            github-src="charts/data-chart/type-category-bar-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `BarSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `BarSeries`.
 
 - `NumericXAxis`
 - `CategoryYAxis`

@@ -1,15 +1,15 @@
 ---
-title: $PlatformShort$ Chart Markers | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Chart Markers
-_keywords: $PlatformShort$ Charts, Markers, Infragistics
+title: $Platform$ Chart Markers | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Chart Markers
+_keywords: $Platform$ Charts, Markers, Infragistics
 mentionedTypes: ["CategoryChart"]
 ---
 
-# $PlatformShort$ Chart Markers
+# $Platform$ Chart Markers
 
 In $ProductName$, markers are visual elements that display the values of data points in the chart's plot area. Markers help your end-users immediately identify a data point's value even if the value falls between major or minor grid lines.
 
-# $PlatformShort$ Chart Marker Example
+# $Platform$ Chart Marker Example
 
 In the following example, the [Line Chart](../types/line-chart.md) is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019 with markers enabled by setting the `MarkerType` property to "Circle."
 
@@ -18,20 +18,20 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$PlatformShort$ Configuration Options Example"
+           alt="$Platform$ Configuration Options Example"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
 <div class="divider--half"></div>
 
-# $PlatformShort$ Chart Marker Templates
+# $Platform$ Chart Marker Templates
 
 In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `CategoryChart` control as it is demonstrated in example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-templates"
-           alt="$PlatformShort$ Chart Marker Templates"
+           alt="$Platform$ Chart Marker Templates"
            github-src="charts/category-chart/marker-templates">
 </code-view>
 

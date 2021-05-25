@@ -1,24 +1,24 @@
 ---
-title: $PlatformShort$ データ グリッド | 列ピン固定 | インフラジスティックス
+title: $Platform$ データ グリッド | 列ピン固定 | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ グリッド コンポーネントは列のピン固定をサポートし、列の位置を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $PlatformShort$ Table, Data Grid, column pinning, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列ピン固定, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column pinning, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列ピン固定, インフラジスティックス
 mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
 _language: ja
 ---
 
-# $PlatformShort$ Grid 列ピン固定の概要
+# $Platform$ Grid 列ピン固定の概要
 
 $ProductName$ Data Grid は列をピン固定する機能をサポートし、エンド ユーザーが特定の列順序で列をロックできます。
 
 単一または複数の列をデータ グリッドの左側または右側にピン固定できます。その他、`PinColumn` 関数を介して列のピン固定状態を変更できます。
 
-## $PlatformShort$ Grid 列ピン固定の例
+## $Platform$ Grid 列ピン固定の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="$PlatformShort$ Grid 列ピン固定の例" 
+           alt="$Platform$ Grid 列ピン固定の例"
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
 

@@ -1,77 +1,83 @@
 ---
-title: $PlatformShort$ バブル チャート | データ可視化 | インフラジスティックス
-_description: インフラジスティックス の $PlatformShort$ バブル チャート
-_keywords: $PlatformShort$ Charts, Bubble Chart, Infragistics, $PlatformShort$ チャート, バブル チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "BubbleSeries", "ScatterSeries"]
+title: $Platform$ バブル チャート | データ可視化 | インフラジスティックス
+_description: インフラジスティックス の $Platform$ バブル チャート
+_keywords: $Platform$ Charts, Bubble Chart, Infragistics, $Platform$ チャート, バブル チャート, インフラジスティックス
+mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
 _language: ja
 ---
-# $PlatformShort$ バブル チャート
+# $Platform$ バブル チャート
 
-$PlatformShort$ バブル チャートは、複数の異なるデータのシリーズの項目間の関係を示すマーカーを表示、または x および y 座標を使用してデータ項目をプロットするために使用されるシリーズのグループです。データ ポイントの x 座標および y 座標は、2 つの数値データ列で決定されます。バブル シリーズは、データの不均等な散らばりやデータの塊に注意が向けられます。これらのタイプのシリーズは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。バブル シリーズは、データを時シリーズに (データが時系列でない場合であっても) 構成するためにも使用できます。
+$ProductName$ バブル チャートは[散布図]（scatter-chart.md）の一種で、可変スケーリングのマーカーを表示して、いくつかの異なる一連のデータ内の項目間の関係を表したり、x 座標と y 座標を使用してデータ項目をプロットしたりします。データ ポイントのこれらの座標は、2 つの数値データ列によって決定されます。バブル チャートは、データの不均一な間隔またはクラスターに注意を向けます。このチャートは、科学データのプロットによく用いられ、予測結果からの収集データの偏差を強調表示できます。バブル チャートには、[散布図チャート](scatter-chart.md#$Platform$-散布マーカー-チャート)の多くの特性がありますが、さまざまな半径スケール サイズを持つオプションがあります。
 
-## $PlatformShort$ バブル チャートの例
+## $Platform$ バブル チャートの例
 
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BubbleSeries` にバインドします。
+次の例に示すように、`BubbleSeries` と 2 つの数値軸を使用して、`XamDataChart` コントロールでバブル チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           alt="$PlatformShort$ バブル チャート" >
+           alt="$Platform$ バブル チャートの例" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 単一シリーズの $PlatformShort$ バブル チャート
+## 単一シリーズの $Platform$ バブル チャート
 
-バブル チャートには、[散布マーカー チャート](scatter-chart.md#$PlatformShort$-散布マーカー-チャート)の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
-
+以下の例に示すように、データを `BubbleSeries` の `DataSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
-           alt="$PlatformShort$ バブル チャート" >
+           alt="単一シリーズの  $Platform$ バブル チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 複数シリーズの $PlatformShort$ バブル チャート
+## 複数シリーズの $Platform$ バブル チャート
 
-バブル チャートには、[散布マーカー チャート](scatter-chart.md#$PlatformShort$-散布マーカー-チャート)の多くの特性が含まれていますが、さまざまな半径スケール サイズを選択できます。
-
-この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
-
+$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `DataSource` プロパティに設定することで機能します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           alt="$PlatformShort$ バブル チャート" >
+           alt="複数シリーズの $Platform$ バブル チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ バブル チャートのスタイル設定
+## $Platform$ バブル チャートのスタイル設定
 
-バブル チャートには、[散布マーカー チャート](scatter-chart.md#$PlatformShort$-散布マーカー-チャート)の多くの特性が含まれていますが、さまざまな半径スケール サイズと塗りつぶしスケール色を選択できます。
-
-この例では、バブル チャートは 2015 年のアフリカとヨーロッパの総出生数と死亡数を比較しています。
-
+$Platform$ バブル チャートでは、`MarkerType` プロパティを使用してバブル マーカーの形状をカスタマイズし、`RadiusScale` プロパティを使用してサイズをカスタマイズし、`MarkerBrush`、`MarkerOutline`、`MarkerThickness` プロパティを使用して外観をカスタマイズできます。さらに、`FillMemberPath` プロパティと `FillScale` プロパティを使用して、データ列に基づいてバブル マーカーにカラーを付けることもできます。この例では、上記のプロパティの使用法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
-           alt="$PlatformShort$ バブル チャート" >
+           alt="$Platform$ バブル チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## その他のリソース
+
 - [散布図](scatter-chart.md)
 - [シェープ チャート](shape-chart.md)
 
-## API メンバー
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-バブル チャート     | `XamDataChart`     | `BubbleSeries`
-散布マーカー   | `XamDataChart`     | `ScatterSeries`
+## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
+- `XamDataChart`
+- `BubbleSeries`
+- `ScatterSeries`
+- `DataSource`
+- `FillMemberPath`
+- `FillScale`
+- `MarkerType`
+- `MarkerBrush`
+- `MarkerOutline`
+- `MarkerThickness`
+- `RadiusScale`
+- `RadiusMemberPath`
+- `XMemberPath`
+- `YMemberPath`

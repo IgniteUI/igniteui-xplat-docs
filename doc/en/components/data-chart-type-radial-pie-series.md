@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Radial Pie Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create radial pie charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, radial pie charts,  $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Radial Pie Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create radial pie charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, radial pie charts,  $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','RadialPieSeries']
 ---
-# $PlatformShort$ Radial Pie Chart
+# $Platform$ Radial Pie Chart
 
 The $ProductName$ radial pie chart belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. The `RadialPieSeries` take concepts of categorizing multiple series of data points and wrapping them around on a circle rather than stretching data points along a horizontal line.
 
-## $PlatformShort$ Radial Pie Chart Example
+## $Platform$ Radial Pie Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-pie-series" 
-           alt="$PlatformShort$ Radial Pie Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-radial-pie-series"
+           alt="$Platform$ Radial Pie Chart Example"
            github-src="charts/data-chart/type-radial-pie-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `RadialPieSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `RadialPieSeries`.
 
 - `NumericRadiusAxis`
 - `CategoryAngleAxis`

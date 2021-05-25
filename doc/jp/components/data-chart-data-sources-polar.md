@@ -1,17 +1,17 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、極座標エリア、極座標折れ線、極座標散布などの極座標チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, polar, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, 極座標, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、極座標エリア、極座標折れ線、極座標散布などの極座標チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, polar, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, 極座標, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 極座標シリーズのサンプル データソース
+# $Platform$ 極座標シリーズのサンプル データソース
 
 このトピックでは、[極座標シリーズ](data-chart-type-polar-series.md) のデータソースを実装する方法の例を示します。
 
 ```razor
 public class SamplePolarData
-    { 
+    {
         public static List<SamplePolarItem> Create()
         {
             var data = new List<SamplePolarItem>() {
@@ -33,7 +33,7 @@ public class SamplePolarData
     {
         public double WindSpeed { get; set; }
         public double BoatSpeed { get; set; }
-        public double Direction { get; set; }         
+        public double Direction { get; set; }
     }
 ```
 

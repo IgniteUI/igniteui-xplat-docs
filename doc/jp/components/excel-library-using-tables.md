@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | テーブルの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリのテーブル機能を使用して、行と列のデータを書式設定します。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
+title: $Platform$ Excel ライブラリ | テーブルの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリのテーブル機能を使用して、行と列のデータを書式設定します。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
 _keywords: Excel library, tables, $ProductName$, Infragistics, Excel ライブラリ, テーブル, インフラジスティックス
 mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 _language: ja
 ---
-# $PlatformShort$ テーブルの使用
+# $Platform$ テーブルの使用
 
-Infragistics $PlatformShort$ Excel Engine の `WorksheetTable` 機能は、行列のデータを書式設定できます。ワークシート テーブルのデータは `Worksheet` の他の行や列のデータから個々に管理できます。
+Infragistics $Platform$ Excel Engine の `WorksheetTable` 機能は、行列のデータを書式設定できます。ワークシート テーブルのデータは `Worksheet` の他の行や列のデータから個々に管理できます。
 
-<!--## $PlatformShort$ Using Tables Example
+<!--## $Platform$ Using Tables Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables" 
-           alt="$PlatformShort$ Using Tables Example" >
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"
+           alt="$Platform$ Using Tables Example" >
 </code-view>
 
 -->
@@ -24,7 +24,7 @@ Infragistics $PlatformShort$ Excel Engine の `WorksheetTable` 機能は、行�
 <div class="divider--half"></div>
 
 ## テーブルをワークシートに追加
-Infragistics $PlatformShort$ Excel Engine のワークシート テーブルは `WorksheetTable` オブジェクトによって表され、ワー​​クシートの `Tables` コレクションに追加されます。テーブルを追加するには、このコレクションの `Add` メソッドを呼び出す必要があります。このメソッドでは、テーブルを追加する領域、テーブルにヘッダーを含めるかどうか、およびオプションで `WorksheetTableStyle` オブジェクトとしてテーブルのスタイルを指定できます。
+Infragistics $Platform$ Excel Engine のワークシート テーブルは `WorksheetTable` オブジェクトによって表され、ワー​​クシートの `Tables` コレクションに追加されます。テーブルを追加するには、このコレクションの `Add` メソッドを呼び出す必要があります。このメソッドでは、テーブルを追加する領域、テーブルにヘッダーを含めるかどうか、およびオプションで `WorksheetTableStyle` オブジェクトとしてテーブルのスタイルを指定できます。
 
 以下のコード サンプルは、ヘッダーを含むテーブルを `Worksheet` の A1 to G10 (A1 to G1 が列ヘッダー) 領域に追加する方法を示します。
 

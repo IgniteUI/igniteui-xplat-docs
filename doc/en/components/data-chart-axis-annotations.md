@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Annotations | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to add annotations to your $PlatformShort$ chart axes, such as Crosshair layer, final value layer and value overlay. Improve your $PlatformShort$ charts and visualizations with $ProductName$
-_keywords: $PlatformShort$ charts, data chart, axis annotations, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Axis Annotations | Infragistics
+_description: Infragistics' $Platform$ charts control allows you to add annotations to your $Platform$ chart axes, such as Crosshair layer, final value layer and value overlay. Improve your $Platform$ charts and visualizations with $ProductName$
+_keywords: $Platform$ charts, data chart, axis annotations, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','LineSeries','ValueOverlay','CrosshairLayer']
 ---
-# $PlatformShort$ Axis Annotations
+# $Platform$ Axis Annotations
 
 In the $ProductName$ data chart component, you are able to add annotations to your axes to show particular values at different points on that axis. This can help you to visualize things such as final series values, overlay values, and values corresponding to crosshairs in the chart.
 
-## $PlatformShort$ Axis Annotations Example
+## $Platform$ Axis Annotations Example
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations" 
-           alt="$PlatformShort$ Axis Annotations Example" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-annotations"
+           alt="$Platform$ Axis Annotations Example"
            github-src="charts/data-chart/axis-annotations">
 </code-view>
 

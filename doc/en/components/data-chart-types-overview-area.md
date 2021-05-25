@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create area charts such as area chart, spline area chart, stacked area chart and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, area charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create area charts such as area chart, spline area chart, stacked area chart and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, area charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Area Charts
+# $Platform$ Area Charts
 
 The $ProductName$ provides the following types of area charts:
 

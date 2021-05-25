@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 財務オーバーレイ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して財務オーバーレイを表示します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, financial overlays, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 財務オーバーレイ, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 財務オーバーレイ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して財務オーバーレイを表示します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, financial overlays, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 財務オーバーレイ, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 _language: ja
 ---
-# $PlatformShort$ ファイナンシャル オーバーレイ
+# $Platform$ ファイナンシャル オーバーレイ
 
 ファイナンシャル オーバーレイは、株価の動きの計測やトレンドを確認するためにトレーダーによって使用されます。これらのオーバーレイは、同じY軸スケールを共有するため、通常 `FinancialPriceSeries` の前に表示されます。対照的に、財務指標は `FinancialPriceSeries` と同じ Y 軸スケールを共有しないため、通常、財務指標は `FinancialPriceSeries` またはオーバーレイの上または下にプロットされます。ただし、チャート コントロールは同じプロット領域でオーバーレイとインジケーターをサポートします。複数軸の使用や軸を共有することもできます。
 
-## $PlatformShort$ ファイナンシャル オーバーレイの例
+## $Platform$ ファイナンシャル オーバーレイの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays" 
-           alt="$PlatformShort$ ファイナンシャル オーバーレイの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-overlays"
+           alt="$Platform$ ファイナンシャル オーバーレイの例"
            github-src="charts/data-chart/type-financial-overlays">
 </code-view>
 
@@ -29,7 +29,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
 
 ## データの要件
 

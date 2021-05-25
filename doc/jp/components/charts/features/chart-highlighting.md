@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ チャート強調表示 | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート強調表示
-_keywords: $PlatformShort$ Charts, Highlighting, Infragistics, $PlatformShort$ チャート, 強調表示, インフラジスティックス
+title: $Platform$ チャート強調表示 | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート強調表示
+_keywords: $Platform$ Charts, Highlighting, Infragistics, $Platform$ チャート, 強調表示, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート強調表示
+# $Platform$ チャート強調表示
 
-すべての $PlatformShort$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コンポーネントによってサポートされており、強調表示機能を使用するための同じ API を備えています。
+すべての $Platform$ チャートは、エンド ユーザーがプロット領域に描画されたデータ項目の上にマウス カーソルを置いたときに、線、列、マーカーなどのビジュアルの強調表示をサポートします。強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールによってサポートされており、強調表示機能を使用するための同じ API を備えています。
 
-## $PlatformShort$ チャート強調表示の例
+## $Platform$ チャート強調表示の例
 
-以下の例は、$PlatformShort$ チャートで使用できるさまざまな強調表示オプションを示しています。チェックボックスをクリックして強調表示タイプを有効にします。
+以下の例は、$Platform$ チャートで使用できるさまざまな強調表示オプションを示しています。チェックボックスをクリックして強調表示タイプを有効にします。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="$PlatformShort$ チャート強調表示の例"
+           alt="$Platform$ チャート強調表示の例"
            github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
 </code-view>
 
@@ -44,7 +44,7 @@ $ProductName$ `CategoryChart` は、データ項目にカーソルを合わせ�
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
@@ -52,3 +52,4 @@ $ProductName$ `CategoryChart` は、データ項目にカーソルを合わせ�
 - `CategoryChart`
 - `XamDataChart`
 - `FinancialChart`
+

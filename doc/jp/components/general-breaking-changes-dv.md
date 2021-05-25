@@ -1,5 +1,5 @@
 ---
-title: $PlatformShort$ 重大な変更 | $ProductName$ | インフラジスティックス
+title: $Platform$ 重大な変更 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の重大な変更とコードを最新の API に更新する方法について説明します。
 _keywords: Breaking Changes, $ProductName$, Infragistics, 重大な変更, インフラジスティックス
 _language: ja

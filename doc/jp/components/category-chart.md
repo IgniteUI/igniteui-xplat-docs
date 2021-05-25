@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ カテゴリ チャート | データのチャート作成コンポーネント | インフラジスティックス
-_description: $PlatformShort$ カテゴリ チャート コンポーネントを使用して、データを解析し、データを表すための最適なチャート タイプを自動的に選択します。今日から始められます。
-_keywords: category chart, $PlatformShort$ component, $ProductName$, $PlatformShort$ charts, charting component, カテゴリ チャート, $PlatformShort$ コンポーネント, $PlatformShort$ チャート, チャート作成コンポーネント
+title: $Platform$ カテゴリ チャート | データのチャート作成コンポーネント | インフラジスティックス
+_description: $Platform$ カテゴリ チャート コンポーネントを使用して、データを解析し、データを表すための最適なチャート タイプを自動的に選択します。今日から始められます。
+_keywords: category chart, $Platform$ component, $ProductName$, $Platform$ charts, charting component, カテゴリ チャート, $Platform$ コンポーネント, $Platform$ チャート, チャート作成コンポーネント
 mentionedTypes: ['CategoryChart', 'CategoryChartType']
 _language: ja
 ---
-# $PlatformShort$ チャート
+# $Platform$ チャート
 
-$PlatformShort$ カテゴリ チャート コンポーネント は、カテゴリ データの可視化を容易にする $ProductName$ チャート コンポーネントです。データ可視化ドメインの複雑さを管理しやすい API に簡素化できます。
+$Platform$ カテゴリ チャート コンポーネント は、カテゴリ データの可視化を容易にする $ProductName$ チャート コンポーネントです。データ可視化ドメインの複雑さを管理しやすい API に簡素化できます。
 
-## $PlatformShort$ チャートの例
+## $Platform$ チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview" 
-           alt="$PlatformShort$ チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-overview"
+           alt="$Platform$ チャートの例"
            github-src="charts/category-chart/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
- ユーザーがデータのコレクョンまたはコレクション グループにバインドしてデータを指定するプロパティを設定後、あとの作業はチャート コントロールによって処理されます。$PlatformShort$ コンポーネントはデータを解析し、データを表すための最適なチャート タイプを自動的に選択します。
+ ユーザーがデータのコレクョンまたはコレクション グループにバインドしてデータを指定するプロパティを設定後、あとの作業はチャート コントロールによって処理されます。$Platform$ コンポーネントはデータを解析し、データを表すための最適なチャート タイプを自動的に選択します。
 
 スマート データ アダプターは、データを分析して適切なビジュアライゼーションを描画します。たとえば、`ChartType` プロパティが `Auto` に設定される場合、コントロールは小さいデータ セットのために縦棒チャートを使用し、より大きいデータ セットのために折れ線チャートを使用します。
 
@@ -37,11 +37,11 @@ $PlatformShort$ カテゴリ チャート コンポーネント は、カテゴ�
 - `StepLine`
 - `Waterfall`
 
-その他の $PlatformShort$ カテゴリ チャート コンポーネントの直感的な動作の例として、明示的にラベルを設定する必要がないことがあります。カテゴリ チャートは、提供したデータ内で最初の適切な文字列プロパティを使用し、ラベルに使用します。
+その他の $Platform$ カテゴリ チャート コンポーネントの直感的な動作の例として、明示的にラベルを設定する必要がないことがあります。カテゴリ チャートは、提供したデータ内で最初の適切な文字列プロパティを使用し、ラベルに使用します。
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-$PlatformShort$ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
+$Platform$ チャート パッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -93,7 +93,7 @@ ModuleManager.register(
 ## 使用方法
 カテゴリ チャート モジュールをインポートした後、チャートをデータにバインドします。
 
-$PlatformShort$ カテゴリ チャート コンポーネントを作成するには、はじめにデータをバインドする必要があります。以下のコード スニペットは、シンプルなデータソースを作成する方法を示します。
+$Platform$ カテゴリ チャート コンポーネントを作成するには、はじめにデータをバインドする必要があります。以下のコード スニペットは、シンプルなデータソースを作成する方法を示します。
 
 ```ts
 var data = [
@@ -221,7 +221,7 @@ chart.dataSource = data;
 
 ## チャート タイプ
 表示するチャート型を設定するために、カテゴリ チャートのデフォルト動作をオーバーライドできます。これを実行するには、`ChartType` プロパティを設定します。
-以下は、$PlatformShort$ カテゴリ チャートでサポートされるすべてのタイプです。
+以下は、$Platform$ カテゴリ チャートでサポートされるすべてのタイプです。
 
 > [!NOTE]
 > 特別なケースにプロパティの `Auto` 設定があります。`Auto` を使用した場合、チャートがデータを分析し、最適なチャート タイプを割り当てます。

@@ -1,14 +1,14 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Map Overview | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the $ProductName$ map demos!
-_keywords: $PlatformShort$ map, geographic map, imagery tiles, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Map Overview | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the $ProductName$ map demos!
+_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Map Overview
+# $Platform$ Map Overview
 
 The $ProductName$ map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# $PlatformShort$ Map Example
+# $Platform$ Map Example
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -27,7 +27,7 @@ The map provides customizable navigation behaviors for navigating map content us
 <!-- Angular, React, WebComponents -->
 ## Dependencies
 
-The $PlatformShort$ geographic map component, you need to first install these packages:
+The $Platform$ geographic map component, you need to first install these packages:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}

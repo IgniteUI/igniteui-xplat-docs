@@ -1,71 +1,71 @@
 ---
-title: $PlatformShort$ ステップ チャート | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ステップ チャート
-_keywords: $PlatformShort$ Charts, Step Chart, Infragistics, $PlatformShort$ チャート, ステップ チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "ChartType"]
+title: $Platform$ ステップ チャート | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ステップ チャート
+_keywords: $Platform$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics, $Platform$ チャート, ステップ チャート, ステップ エリア チャート, ステップ折れ線チャート, インフラジスティックス
+mentionedTypes: ["CategoryChart", "ChartType"]
 _language: ja
 ---
-# $PlatformShort$ ステップ チャート
+# $Platform$ ステップ チャート
 
-$PlatformShort$ ステップ チャートはカテゴリ シリーズのグループに属し、連続した垂直線と水平線で接続されたポイントのコレクションを使用して描画されます。ステップ エリア チャートの場合、線の下のエリアが塗りつぶされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。これは、一定期間の変化量を強調したり、複数の項目を比較したりします。
+$ProductName$ ステップ チャートは連続する垂直線と水平線で接続されたポイントのコレクションとして描画されるカテゴリ チャートのグループに属しています。ステップ エリア チャートの場合、線の下の領域が塗りつぶされます。値は y 軸に表示され、カテゴリは x 軸に表示されます。ステップ チャートは、一定期間の変化量を強調したり、複数の項目を比較したりします。
 
-## $PlatformShort$ ステップ チャートの例
+## $Platform$ ステップ エリア チャート
 
-`CategoryChart` コントロールでステップ チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `StepLine` 値に設定します。
+`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを `StepArea` 値に設定します。
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
+           alt="複数ソースの $Platform$ ステップ エリア チャート" >
+</code-view>
+
+<div class="divider--half"></div>
+
+## $Platform$ ステップ折れ線チャート
+
+$Platform$ ステップ折れ線チャートは、線の下の領域が塗りつぶされていないことを除いて、ステップ エリア チャートと非常によく似ています。
+
+次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           alt="凡例付きの $PlatformShort$ ステップ折れ線チャート" >
+           alt="複数ソースの $Platform$ ステップ折れ線チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 単一シリーズの $PlatformShort$ ステップ チャート
+## $Platform$ ステップ チャートのスタイル設定
 
-この例では、ステップ チャートは、ヨーロッパで数年間生産された再生可能電力の量の経時的な価値の変化を示しています。
-
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-single-source"
-           alt="単一シリーズの $PlatformShort$ ステップ折れ線チャート" >
-</code-view>
-
-<div class="divider--half"></div>
-
-## 複数シリーズの $PlatformShort$ ステップ チャート
-
-以下の例に示すように、ステップ チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
-
-
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           alt="複数シリーズの $PlatformShort$ ステップ折れ線チャート" >
-</code-view>
-
-<div class="divider--half"></div>
-
-## $PlatformShort$ ステップ チャートのスタイル設定
-
-他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、マーカー、マーカー ブラシ、マーカー アウトライン、シリーズ ブラシ、シリーズ アウトラインを構成できます。
+他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、`CategoryChart` コントロールの `MarkerTypes`、`MarkerBrushes`、`MarkerOutlines`、折れ線の `Brushes`、および折れ線の `Outlines` プロパティを構成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling"
-           alt="$PlatformShort$ ステップ折れ線チャートのスタイル設定" >
+           alt="$Platform$ ステップ折れ線チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## その他のリソース
 
+関連するチャート タイプの詳細については、以下のトピックを参照してください。
+
+- [エリア チャート](area-chart.md)
 - [折れ線チャート](line-chart.md)
+- [チャート マーカー](../features/chart-markers.md)
 
 ## API メンバー
 
-以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
+以下は、上記のセクションで説明されている API メンバーのリストです。
 
-チャート タイプ                  | コントロール名   | API メンバー
-----------------------------|----------------|------------------------
-ステップ                        | `CategoryChart` | `ChartType` = `StepLine`
+- `CategoryChart`
+- `ChartType`
+- `StepArea`
+- `StepLine`
+- `Brushes`
+- `Outlines`
+- `MarkerBrushes`
+- `MarkerOutlines`
+- `MarkerTypes`
+

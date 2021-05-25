@@ -1,40 +1,40 @@
 ---
-title: $PlatformShort$ Chart API | Data Visualization Tools | Infragistics
+title: $Platform$ Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart provides useful API to configure and styles chart visuals
-_keywords: $PlatformShort$ charts, chart API, API, $ProductName$, Infragistics
+_keywords: $Platform$ charts, chart API, API, $ProductName$, Infragistics
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $PlatformShort$ Chart API
+# $Platform$ Chart API
 
 The $ProductName$ charts provide simple and easy to use APIs to plot various types of charts.
 
-## $PlatformShort$ Category Chart API
+## $Platform$ Category Chart API
 
-The $PlatformShort$ `CategoryChart` has the following API members:
+The $Platform$ `CategoryChart` has the following API members:
 
 Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
 - `Legend` <br> - `DataSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> - `XAxisGap` <br> - `XAxisOverlap` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
-## $PlatformShort$ Financial Chart API
+## $Platform$ Financial Chart API
 
-The $PlatformShort$ `FinancialChart` has the following API members:
+The $Platform$ `FinancialChart` has the following API members:
 
 Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
 - `Legend` <br> - `DataSource` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
-## $PlatformShort$ Data Chart API
+## $Platform$ Data Chart API
 
-The $PlatformShort$ `XamDataChart` has the following API members:
+The $Platform$ `XamDataChart` has the following API members:
 
 Chart Properties | Axis Classes
 -----------------|-------------
  - `Legend` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> |  - `Axis` <br> - `CategoryXAxis` <br> - `CategoryYAxis` <br> - `CategoryAngleAxis` <br> - `NumericXAxis` <br> - `NumericYAxis` <br> - `NumericAngleAxis` <br> - `NumericRadiusAxis` <br>
 
-The $PlatformShort$ `XamDataChart` can use the following type of `Series`:
+The $Platform$ `XamDataChart` can use the following type of `Series`:
 
 Category Series  | Stacked Series | Financial Series
 -----------------|----------------|-------------------

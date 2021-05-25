@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | パフォーマンス | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールを使用して数百万の財務データ ポイントを高速に描画します。$ProductName$ チャートの高いパフォーマンスを是非お試しください。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, data binding, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス、データ バインディング
+title: $Platform$ ファイナンシャル チャート | パフォーマンス | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールを使用して数百万の財務データ ポイントを高速に描画します。$ProductName$ チャートの高いパフォーマンスを是非お試しください。
+_keywords: $Platform$ charts, financial chart, stock chart, performance, $ProductName$, Infragistics, data binding, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス、データ バインディング
 mentionedTypes: ['FinancialChart', 'FinancialChartType', 'FinancialOverlayType', 'FinancialChartVolumeType', 'MarkerType', 'FinancialChartXAxisMode', 'FinancialChartZoomSliderType', 'FinancialChartYAxisMode', 'DomainChart' ]
 _language: ja
 ---
-# $PlatformShort$ チャートのパフォーマンス
+# $Platform$ チャートのパフォーマンス
 
-$PlatformShort$ Financial Chart  コンポーネントは大量のデータ ポイントの描画で高いパフォーマンスを実現します。以下のデモは 20 年間のデータをバインドし、ローソク足チャートで 1 日間隔の在庫価格を示します。
+$Platform$ Financial Chart  コンポーネントは大量のデータ ポイントの描画で高いパフォーマンスを実現します。以下のデモは 20 年間のデータをバインドし、ローソク足チャートで 1 日間隔の在庫価格を示します。
 
-## $PlatformShort$ チャートのパフォーマンスの例
+## $Platform$ チャートのパフォーマンスの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-performance" 
-           alt="$PlatformShort$ チャートのパフォーマンスの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-performance"
+           alt="$Platform$ チャートのパフォーマンスの例"
            github-src="charts/financial-chart/performance">
 </code-view>
 
@@ -71,20 +71,20 @@ chart.dataSource = data;
     DataSource="DataSource" />
 ```
 
-チャートのパフォーマンスに影響を及ぼす $PlatformShort$ 固有の機能があり、アプリケーションのパフォーマンスを最適化する際に検討する必要があります。
+チャートのパフォーマンスに影響を及ぼす $Platform$ 固有の機能があり、アプリケーションのパフォーマンスを最適化する際に検討する必要があります。
 
 > [!NOTE]
 > For Angular:
 >
-> * コンポーネントにバインドするプロパティで大量のデータを保存する場合、`@Component` デコレーターで `changeDetection: ChangeDetectionStrategy.OnPush` を設定します。$PlatformShort$ の各変更検出のサイクルでデータ配列内の変更を確認しないようにする設定です。
-> * チャートに $PlatformShort$ が自動でデータ変更を通知する代わりに、バインドされたデータが変更された方法をコンポーネントに通知できます。デルタ通知の処理は、$PlatformShort$ が変更検出を実行する際に 100 万のレコードを含む配列のすべての変更を比較するより効果的に実行できます。バインドしたデータの変更をチャートに通知する方法の詳細については、チャートの `notify*` メソッドを参照してください。
-> * $PlatformShort$ がデバッグ モードで実行されている場合、特定のブラウザーでパフォーマンスを低下させるオーバーヘッドがあります。実環境パフォーマンスを評価する場合、`--prod` 版を使用して serve または build してください。
+> * コンポーネントにバインドするプロパティで大量のデータを保存する場合、`@Component` デコレーターで `changeDetection: ChangeDetectionStrategy.OnPush` を設定します。$Platform$ の各変更検出のサイクルでデータ配列内の変更を確認しないようにする設定です。
+> * チャートに $Platform$ が自動でデータ変更を通知する代わりに、バインドされたデータが変更された方法をコンポーネントに通知できます。デルタ通知の処理は、$Platform$ が変更検出を実行する際に 100 万のレコードを含む配列のすべての変更を比較するより効果的に実行できます。バインドしたデータの変更をチャートに通知する方法の詳細については、チャートの `notify*` メソッドを参照してください。
+> * $Platform$ がデバッグ モードで実行されている場合、特定のブラウザーでパフォーマンスを低下させるオーバーヘッドがあります。実環境パフォーマンスを評価する場合、`--prod` 版を使用して serve または build してください。
 
 <!-- -->
 > [!NOTE]
 > For React:
 >
-> * $PlatformShort$ が開発モードで実行されている場合、特定のブラウザーでパフォーマンスを低下させるオーバーヘッドがあります。実環境パフォーマンスを評価する場合は必ず製品ビルドを使用してください。
+> * $Platform$ が開発モードで実行されている場合、特定のブラウザーでパフォーマンスを低下させるオーバーヘッドがあります。実環境パフォーマンスを評価する場合は必ず製品ビルドを使用してください。
 
 また、アプリケーションのパフォーマンスを最適化する場合、ファイナンシャル チャートの以下の機能に注意してください。
 

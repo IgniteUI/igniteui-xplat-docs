@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Financial OHLC Series | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create financial OHLC charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, financial OHLC chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Financial OHLC Series | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create financial OHLC charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, financial OHLC chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries','PriceDisplayType','CategoryXAxis']
 ---
-# $PlatformShort$ Financial OHLC Chart
+# $Platform$ Financial OHLC Chart
 
 The $ProductName$ financial price chart in `OHLC` display mode is used to plot stock prices, and show the stock’s High, Low, Open, and Close prices for each day. Each data point is plotted as a vertical line with horizontal perpendicular lines on both the left and right side. The vertical line indicates the span between high and low values of an investment. The top of the vertical line indicates the highest price during a session and the bottom of the vertical line indicates the lowest price during a session. The horizontal lines indicate the span between the opening and closing values of an investment. The horizontal line on the left-hand side of the vertical line indicates the opening value of a session. The horizontal line on the right-hand side of the vertical line indicates the closing value of a session.
 
-## $PlatformShort$ Financial OHLC Chart Example
+## $Platform$ Financial OHLC Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-ohlc-series" 
-           alt="$PlatformShort$ Financial OHLC Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-ohlc-series"
+           alt="$Platform$ Financial OHLC Chart Example"
            github-src="charts/data-chart/type-financial-ohlc-series">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ financial price chart in `OHLC` display mode is used to plot s
 
 ## Required Axes
 
-The $PlatformShort$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
+The $Platform$ data chart component provides various types of axes but all financial series can only use the `NumericYAxis` as Y-Axis and `CategoryXAxis`, `OrdinalTimeXAxis`, or `TimeXAxis` as X-Axis.
 
 ## Required Data
 

@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Category Series | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create category charts such as area, bar, column, line and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, category series, area, chart, bar chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Category Series | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create category charts such as area, bar, column, line and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, category series, area, chart, bar chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Category Series
+# $Platform$ Category Series
 
 
-This topic explains various types of category series in the $PlatformShort$ data chart component. Category series is a group of the simplest and most common form of chart series that take data and render it as collection of data points stretched along a horizontal line (e.g. `ColumnSeries`) or vertical line (e.g. `BarSeries`).
+This topic explains various types of category series in the $Platform$ data chart component. Category series is a group of the simplest and most common form of chart series that take data and render it as collection of data points stretched along a horizontal line (e.g. `ColumnSeries`) or vertical line (e.g. `BarSeries`).
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ Category Series Example
+## $Platform$ Category Series Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series" 
-           alt="$PlatformShort$ Category Series Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-series"
+           alt="$Platform$ Category Series Example"
            github-src="charts/data-chart/type-category-series">
 </code-view>
 
@@ -40,7 +40,7 @@ The following table lists all types of category series and their descriptions:
 | `WaterfallSeries` | Displays a set of points as vertical columns that show the difference between values of consecutive data points. The columns are color coded for distinguishing between positive and negative changes in value. Categories are arranged horizontally and values are plotted vertically. Used for showing the changes in a consecutive data points over time or for comparing multiple items.    |
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with category series.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with category series.
 
 | Series Type        | YAxis Type      | XAxis Type                      |
 |--------------------|-----------------|---------------------------------|

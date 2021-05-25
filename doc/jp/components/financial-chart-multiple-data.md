@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
-_keywords: $PlatformShort$ charts, financial chart, stock chart, binding to data, $ProductName$, Infragistics, $PlatformShort$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
+title: $Platform$ ファイナンシャル チャート | 大規模データ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ファイナンシャル チャート コントロールのパフォーマンスを最適化する方法について説明します。$ProductName$ チャートのパフォーマンスを向上させます。
+_keywords: $Platform$ charts, financial chart, stock chart, binding to data, $ProductName$, Infragistics, $Platform$ チャート, ファイナンシャル チャート, 株価チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ['FinancialChart']
 _language: ja
 ---
-# $PlatformShort$ 複数データ ソースへバインド
+# $Platform$ 複数データ ソースへバインド
 
-$PlatformShort$ Financial Chart コンポーネントは、以下のように複数のデータ ソースへバインドできます。
+$Platform$ Financial Chart コンポーネントは、以下のように複数のデータ ソースへバインドできます。
 
-## $PlatformShort$ 複数データ ソースへバインドの例
+## $Platform$ 複数データ ソースへバインドの例
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           alt="$PlatformShort$ 複数データ ソースへバインドの例"
+           alt="$Platform$ 複数データ ソースへバインドの例"
            github-src="charts/financial-chart/multiple-data">
 </code-view>
 

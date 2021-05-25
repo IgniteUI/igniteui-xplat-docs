@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Grid | Row Pinning |  Infragistics
-_description: Use Infragistics' $PlatformShort$ grid component's row pinning feature in order to lock row change row order with a rich and easy to use API. Check out $ProductName$ table demos!
-_keywords: $PlatformShort$ Table, Data Grid, row pinning, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Row Pinning |  Infragistics
+_description: Use Infragistics' $Platform$ grid component's row pinning feature in order to lock row change row order with a rich and easy to use API. Check out $ProductName$ table demos!
+_keywords: $Platform$ Table, Data Grid, row pinning, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Row Pinning
+# $Platform$ Row Pinning
 
- The $ProductName$ Data Table / Data Grid allows Row Pinning by either using keys or the underlying data source items. When a row is pinned, it will be duplicated at the top of the $PlatformShortLower$ data grid and remain fixed there with light gray background and its actual row will be rendered with low opacity.
+ The $ProductName$ Data Table / Data Grid allows Row Pinning by either using keys or the underlying data source items. When a row is pinned, it will be duplicated at the top of the $PlatformLower$ data grid and remain fixed there with light gray background and its actual row will be rendered with low opacity.
 
-## $PlatformShort$ Row Pinning Example
+## $Platform$ Row Pinning Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning" 
-           alt="$PlatformShort$ Row Pinning Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning"
+           alt="$Platform$ Row Pinning Example"
            github-src="grids/data-grid/row-pinning">
 </code-view>
 
 <div class="divider--half"></div>
 
-You can pin rows in the $PlatformShort$ data grid by adding the target row’s underlying data item to the pinnedItems collection of the $PlatformShort$ grid.
+You can pin rows in the $Platform$ data grid by adding the target row’s underlying data item to the pinnedItems collection of the $Platform$ grid.
 
 ## Code Snippet
 
@@ -49,11 +49,11 @@ grid1.pinnedItems.add(data[4]);
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-    @ref="DataGridRef" 
-    DataSource="DataSource" />  
+    @ref="DataGridRef"
+    DataSource="DataSource" />
 
 @code {
-    
+
     private DataGrid grid;
     public DataGrid DataGridRef
     {

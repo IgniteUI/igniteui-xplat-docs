@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Spline Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create spline charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, spline chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Spline Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create spline charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, spline chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Spline Chart
+# $Platform$ Spline Chart
 
-The $ProductName$ spline chart belongs to a group of category charts and is rendered using a collection of points connected by smooth curves of spline. Values are represented on the y-axis and categories are displayed on the x-axis. `SplineSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $PlatformShort$ spline chart is identical to the $PlatformShort$ line chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
+The $ProductName$ spline chart belongs to a group of category charts and is rendered using a collection of points connected by smooth curves of spline. Values are represented on the y-axis and categories are displayed on the x-axis. `SplineSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $Platform$ spline chart is identical to the $Platform$ line chart in all aspects except that line connecting data points has spline interpolation and smoothing for improved presentation of data.
 
-## $PlatformShort$ Spline Chart Example
+## $Platform$ Spline Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-series" 
-           alt="$PlatformShort$ Spline Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-spline-series"
+           alt="$Platform$ Spline Chart Example"
            github-src="charts/data-chart/type-category-spline-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `SplineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `SplineSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

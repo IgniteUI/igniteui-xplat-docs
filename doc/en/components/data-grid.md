@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Grid | Real-Time Data Grid and Tables | Infragistics
-_description: Infragistics' $PlatformShort$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
-_keywords: $PlatformShort$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
+title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Infragistics
+_description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
+_keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
 ---
-# $PlatformShort$ Data Grid Overview
+# $Platform$ Data Grid Overview
 
-The $ProductName$ Data Table / Data Grid is a tabular $PlatformShort$ grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the $PlatformShort$ data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The $PlatformShort$ tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
+The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the $Platform$ data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The $Platform$ tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
 
-## $PlatformShort$ Data Grid Example
+## $Platform$ Data Grid Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
-           alt="$PlatformShort$ Data Grid Example"
+           alt="$Platform$ Data Grid Example"
            github-src="grids/data-grid/overview">
 </code-view>
 
@@ -35,7 +35,7 @@ Afterwards, you may start implementing the control by adding the following names
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-When installing the $PlatformShort$ grid package, the core package must also be installed.
+When installing the $Platform$ grid package, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -111,7 +111,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## Sample Data Source
-Now that the $PlatformShort$ data grid module is imported, next is the basic configuration of the $PlatformShort$ grid that binds to local data.
+Now that the $Platform$ data grid module is imported, next is the basic configuration of the $Platform$ grid that binds to local data.
 
 ```ts
     this.data = [{
@@ -256,7 +256,7 @@ Now that the $PlatformShort$ data grid module is imported, next is the basic con
 ```
 
 ## Auto-Generate Columns
-The following code demonstrates how to bind the $PlatformShort$ data grid to the above local data.
+The following code demonstrates how to bind the $Platform$ data grid to the above local data.
 
 ```tsx
 <IgrDataGrid

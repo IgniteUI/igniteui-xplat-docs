@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 凡例 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールの凡例は、プロットされたデータに関連するコンテキスト情報を表示します。$ProductName$ グラフ凡例をお試しください!
-_keywords: $PlatformShort$ charts, data chart, legend, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 凡例, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 凡例 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールの凡例は、プロットされたデータに関連するコンテキスト情報を表示します。$ProductName$ グラフ凡例をお試しください!
+_keywords: $Platform$ charts, data chart, legend, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 凡例, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'Infragistics.Controls.Charts.Legend']
 _language: ja
 ---
-# $PlatformShort$ 凡例
+# $Platform$ 凡例
 
-凡例は、エンドユーザーが $PlatformShort$ データ チャート コンポネントにプロットされたデータに関連するコンテキスト情報を使用してデータ チャートシリーズの表示を識別するのに役立ちます。プロットエリアに表示されるデータを理解しやすくするために、ほとんどのデータ チャートには凡例が少なくとも 1 つ必要ですが、必須ではなく、データ チャートはデフォルトで凡例なしで表示できます。
+凡例は、エンドユーザーが $Platform$ データ チャート コンポネントにプロットされたデータに関連するコンテキスト情報を使用してデータ チャートシリーズの表示を識別するのに役立ちます。プロットエリアに表示されるデータを理解しやすくするために、ほとんどのデータ チャートには凡例が少なくとも 1 つ必要ですが、必須ではなく、データ チャートはデフォルトで凡例なしで表示できます。
 
-## $PlatformShort$ 凡例の例
+## $Platform$ 凡例の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends" 
-           alt="$PlatformShort$ 凡例の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-legends"
+           alt="$Platform$ 凡例の例"
            github-src="charts/data-chart/legends">
 </code-view>
 
@@ -23,11 +23,11 @@ _language: ja
 
 ## 凡例概要
 
-デフォルトでは、$PlatformShort$ データ チャート コンポネントはデータ チャート内のどのシリーズの凡例も表示しません。複数のシリーズに共通の凡例を表示したい場合は、凡例 オブジェクトをアプリケーションに追加してから、それをデータ チャートの Legend プロパティに設定する必要があります。
+デフォルトでは、$Platform$ データ チャート コンポネントはデータ チャート内のどのシリーズの凡例も表示しません。複数のシリーズに共通の凡例を表示したい場合は、凡例 オブジェクトをアプリケーションに追加してから、それをデータ チャートの Legend プロパティに設定する必要があります。
 
 さらに、各シリーズオブジェクトの `Title` プロパティを設定しない場合、凡例にデフォルトのシリーズ タイトルが使用されます。
 
-次のコード スニペットは、$PlatformShort$ データ チャート コンポネントで凡例を使用する方法を示しています。
+次のコード スニペットは、$Platform$ データ チャート コンポネントで凡例を使用する方法を示しています。
 
 ```razor
 <div class="igContainer">

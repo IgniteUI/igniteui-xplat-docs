@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | 軸オプション | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、数値、カテゴリ、日付時間軸などのさまざまな軸タイプを通じてデータをプロットします。$ProductName$ グラフ軸について説明します。
-_keywords: $PlatformShort$ charts, category chart, Axis Labels, Axis Range, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, 軸ラベル, 軸範囲, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | 軸オプション | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、数値、カテゴリ、日付時間軸などのさまざまな軸タイプを通じてデータをプロットします。$ProductName$ グラフ軸について説明します。
+_keywords: $Platform$ charts, category chart, Axis Labels, Axis Range, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, 軸ラベル, 軸範囲, インフラジスティックス
 mentionedTypes: ['CategoryChart']
 _language: ja
 ---
-# $PlatformShort$ 軸オプション
+# $Platform$ 軸オプション
 
 $ProductName$ カテゴリ チャート コンポーネントは、軸は軸線、目盛、タイトル、や軸のラベルの外観を設定するための基本的なプロパティを提供します。
 
-## $PlatformShort$ 軸オプションの例
+## $Platform$ 軸オプションの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options" 
-           alt="$PlatformShort$ 軸オプションの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options"
+           alt="$Platform$ 軸オプションの例"
            github-src="charts/category-chart/axis-options">
 </code-view>
 

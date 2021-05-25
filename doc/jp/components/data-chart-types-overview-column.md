@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 横棒および縦棒チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して横棒チャート、積層型縦棒チャート、ウォーターフォール チャートなどの横棒および縦棒のチャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 横棒および縦棒チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して横棒チャート、積層型縦棒チャート、ウォーターフォール チャートなどの横棒および縦棒のチャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 棒・縦棒チャート
+# $Platform$ 棒・縦棒チャート
 
 $ProductName$ は以下のタイプの縦棒チャートを提供します。
 

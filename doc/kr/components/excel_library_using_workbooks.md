@@ -1,18 +1,18 @@
 ---
-title: $PlatformShort$ Excel Library Component - Native Angular | Ignite UI for Angular
+title: $Platform$ Excel Library Component - Native Angular | Ignite UI for Angular
 _description: The Ignite UI for Excel Library component with Workbook Operations.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine, Workbook, Font, Document Properties
 ---
-# $PlatformShort$ Using Workbooks
+# $Platform$ Using Workbooks
 
 The Infragistics Excel Engine enables you to save data to and load data from Microsoft® Excel®. You can create workbooks and worksheets, input data, and export the data to Excel using the library’s various classes. The Infragistics Excel Engine makes it easy to export the data in your application as an Excel spreadsheet as well as import data from Excel into your application.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
            github-src="excel/excel-library/operations-on-workbooks">
 </code-view>
 

@@ -27,7 +27,11 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "name": "What's New",
+    "href": "general-whats-new-dv.md",
+    "status": "NEW"
+  },
+  {
     "name": "Breaking Changes",
     "href": "general-breaking-changes-dv.md",
     "status": "UPDATED"
@@ -41,7 +45,7 @@
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
 	    "exclude": ["Blazor", "WebComponents"],
@@ -92,7 +96,7 @@
     "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "editors/date-picker.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -109,7 +113,7 @@
       {
         "name": "Accessibility Compliance",
         "href": "data-grid-accessibility.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "Binding Live Data",
@@ -154,12 +158,12 @@
       {
         "name": "Cell Activation",
         "href": "data-grid-cell-activation.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "Grid Editing",
         "href": "data-grid-cell-editing.md",
-        "status": "NEW"
+        "status": "UPDATED"
       },
       {
         "name": "Cell Selection",
@@ -239,7 +243,7 @@
       {
         "name": "Row Highlighting",
         "href": "data-grid-row-highlighting.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
@@ -309,123 +313,141 @@
     ]
   },
   {
+    "exclude": ["React", "WebComponents"],
+    "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "Charts",
     "href": "charts/chart-overview.md",
     "header": true,
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding Real Time Data",
     "href": "category-chart-high-frequency.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding High Volume Data",
     "href": "category-chart-high-volume.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "name": "Binding Multiple Data Source",
     "href": "financial-chart-multiple-data.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Area Chart",
     "href": "charts/types/area-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Bar Chart",
     "href": "charts/types/bar-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Bubble Chart",
     "href": "charts/types/bubble-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Column Chart",
     "href": "charts/types/column-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Composite Chart",
     "href": "charts/types/composite-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Donut Chart",
     "href": "charts/types/donut-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Financial / Stock Chart",
     "href": "charts/types/stock-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Gantt Chart",
     "href": "charts/types/gantt-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Line Chart",
     "href": "charts/types/line-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Network Chart",
     "href": "charts/types/network-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Pie Chart",
     "href": "charts/types/pie-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Point Chart",
     "href": "charts/types/point-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Polar Chart",
     "href": "charts/types/polar-chart.md",
     "status": ""
   },
   {
-    "exclude": ["Blazor", "Angular", "React", "WebComponent"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "name": "Pyramid Chart",
     "href": "charts/types/pyramid-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Radial Chart",
     "href": "charts/types/radial-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Scatter Chart",
     "href": "charts/types/scatter-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Shape Chart",
     "href": "charts/types/shape-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Spline Chart",
     "href": "charts/types/spline-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Sparkline Chart",
     "href": "charts/types/sparkline-chart.md",
     "status": ""
@@ -433,24 +455,29 @@
   {
     "name": "Stacked Chart",
     "href": "charts/types/stacked-chart.md",
+    "exclude": ["React", "WebComponents"],
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Step Chart",
     "href": "charts/types/step-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Treemap",
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
     "status": ""
   },
   {
+    "exclude": ["React", "WebComponents"],
     "name": "Chart Features",
     "href": "charts/chart-features.md",
     "status": "",
@@ -483,7 +510,7 @@
         {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Markers",
@@ -536,12 +563,13 @@
     "status": ""
   },
   {
-    "name": "Charts",
     "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "Charts",
     "header": true,
     "exclude": ["Blazor", "Angular"]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "Category Chart",
     "href": "category-chart.md",
     "status": "",
@@ -585,6 +613,7 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "Data Chart",
     "href": "data-chart.md",
     "status": "",
@@ -927,7 +956,7 @@
         "exclude": ["Blazor"],
         "name": "Synchronization",
         "href": "data-chart-synchronization.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Title and Subtitle",
@@ -973,6 +1002,7 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "Financial Chart",
     "href": "financial-chart.md",
     "status": "",
@@ -1021,6 +1051,14 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "Treemap",
+    "href": "charts/types/treemap-chart.md",
+    "exclude": ["Blazor", "Angular"],
+    "status": ""
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "Sparkline",
     "href": "charts/types/sparkline-chart.md",
     "exclude": ["Blazor", "Angular"],

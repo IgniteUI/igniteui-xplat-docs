@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 軸位置 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、チャート プロット エリアに関連して軸の位置を指定できます。2 つの軸を持つ $ProductName$ グラフを作成します!
-_keywords: $PlatformShort$ charts, data chart, axis locations, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 軸位置, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 軸位置 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、チャート プロット エリアに関連して軸の位置を指定できます。2 つの軸を持つ $ProductName$ グラフを作成します!
+_keywords: $Platform$ charts, data chart, axis locations, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 軸位置, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 軸の位置
+# $Platform$ 軸の位置
 
  すべての軸に対して、チャートのプロット領域に関連して軸の位置を指定できます。これは、同じデータ チャートで 2 つ以上の軸を使用する場合、または複数のシリーズ間で[軸を共有する](data-chart-axis-sharing.md)場合に特に重要です。
 
 
-## $PlatformShort$ 軸の位置の例
+## $Platform$ 軸の位置の例
 
 
-<code-view style="height: 450px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-locations" 
-           alt="$PlatformShort$ 軸の位置の例" 
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-locations"
+           alt="$Platform$ 軸の位置の例"
            github-src="charts/data-chart/axis-locations">
 </code-view>
 
@@ -28,9 +28,9 @@ _language: ja
 
 ```razor
 <DataChart Height="500px" Width="700px">
-    <CategoryXAxis Name="xAxisYears" 
-        Interval="12" 
-        Label="Year" 
+    <CategoryXAxis Name="xAxisYears"
+        Interval="12"
+        Label="Year"
         LabelLocation="AxisLabelsLocation.OutsideBottom"
         Overlap="1"
         Gap="0.4"
@@ -65,7 +65,7 @@ _language: ja
         ValueMemberPath="Profit"
         XAxisName="xAxisYears"
         YAxisName="yAxisRight" />
-</DataChart> 
+</DataChart>
 ```
 
 ```html

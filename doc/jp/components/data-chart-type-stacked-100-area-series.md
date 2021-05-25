@@ -1,22 +1,22 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 積層型 100 エリア チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して積層型 100 エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked 100 area charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 積層型 100 エリア チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 積層型 100 エリア チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して積層型 100 エリア チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked 100 area charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 積層型 100 エリア チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','Stacked100AreaSeries']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $PlatformShort$ 積層型 100 エリア チャート
+# $Platform$ 積層型 100 エリア チャート
 
-$ProductName$ 積層型 100 エリア チャートはカテゴリ チャートのグループに属し、線分 (`StackedFragmentSeries`) で接続された点のコレクションを使用して描画され、線の下の領域が塗りつぶされて積み上げられます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$PlatformShort$ 積層型 100 エリア チャートは、y 軸の値の処理以外は、$PlatformShort$ 積層型エリア チャートと同じです。データを直接的に表す代わりに、`Stacked100AreaSeries` は、データ ポイント内のすべての値の合計の割合でデータを表示します。
+$ProductName$ 積層型 100 エリア チャートはカテゴリ チャートのグループに属し、線分 (`StackedFragmentSeries`) で接続された点のコレクションを使用して描画され、線の下の領域が塗りつぶされて積み上げられます。コレクションのそれぞれの積層フラグメントは各積層の視覚的な要素を表します。各積層は正の値と負の値の両方を含みます。正の値はいずれも y 軸の正の側にグループ化され、負の値は y 軸の負の側にグループ化されます。$Platform$ 積層型 100 エリア チャートは、y 軸の値の処理以外は、$Platform$ 積層型エリア チャートと同じです。データを直接的に表す代わりに、`Stacked100AreaSeries` は、データ ポイント内のすべての値の合計の割合でデータを表示します。
 
-## $PlatformShort$ 積層型 100 エリア チャートの例
+## $Platform$ 積層型 100 エリア チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series" 
-           alt="$PlatformShort$ 積層型 100 エリア チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-100-column-series"
+           alt="$Platform$ 積層型 100 エリア チャートの例"
            github-src="charts/data-chart/type-stacked-100-column-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 積層型 100 エリア チャートはカテゴリ チャート�
 `Stacked100AreaSeries` には、`StackedFragmentSeries` 要素を配置できる独自の `Series` コレクションがあります。これらのフラグメントは、チャートの実際のレンダリングを構成するものであり、`ValueMemberPath` を受け取る要素です。
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100AreaSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`Stacked100AreaSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -116,8 +116,8 @@ ModuleManager.register(
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <Stacked100AreaSeries 
-      XAxisName="xAxis" 
+    <Stacked100AreaSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

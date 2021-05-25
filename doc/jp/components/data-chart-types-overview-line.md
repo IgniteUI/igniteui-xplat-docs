@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 折れ線チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して折れ線チャート、スプライン チャート、積層型折れ線チャートなどの折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, line charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 折れ線チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 折れ線チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して折れ線チャート、スプライン チャート、積層型折れ線チャートなどの折れ線チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, line charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 折れ線チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 折れ線チャート
+# $Platform$ 折れ線チャート
 
 $ProductName$ は以下のタイプの折れ線チャートを提供します。
 

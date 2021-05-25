@@ -1,10 +1,10 @@
 ﻿---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: $ProductName$ 데이터 차트는 축, 마커, 시리즈, 범례 및 주석 레이어의 모듈 식 디자인을 제공하는 차트 구성 요소입니다. 이 차트를 사용하면 동일한 차트 영역에 이러한 시각적 요소의 인스턴스를 여러 개 만들어 복합 차트 뷰를 만들 수 있습니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Data Chart, $PlatformShort$ Data Chart Control, $PlatformShort$ Data Chart Example, $PlatformShort$ Data Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Data Chart, $Platform$ Data Chart Control, $Platform$ Data Chart Example, $Platform$ Data Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 시리즈
+# $Platform$ 시리즈
 
 `XamDataChart` 제어에서 시리즈는 카테고리 시리즈, 금융 시리즈, 폴라 시리즈, 레이디얼 시리즈, 범위 시리즈, 분산 시리즈, 스택 시리즈, 모양 시리즈의 유사한 시리즈 그룹으로 분류됩니다.
 

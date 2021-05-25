@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 셀 활성화
+# $Platform$ 셀 활성화
 
 $ProductName$ 데이터 표/데이터 그리드는 그리드 셀을 통한 키보드 탐색을 가능하게 하는 셀 활성화 기능을 지원합니다. 그리드의 `ActivationMode` 속성을 `Cell`에 설정함으로써 활성화됩니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-activation"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-activation"
            github-src="grids/data-grid/cell-activation">
 </code-view>
 

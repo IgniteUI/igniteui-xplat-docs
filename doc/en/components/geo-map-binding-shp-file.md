@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, shapefiles, $ProductName$, Infragistics, data binding
+title: $Platform$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
+_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
-# $PlatformShort$ Binding Shape Files with Geo-spatial Data
+# $Platform$ Binding Shape Files with Geo-spatial Data
 
 The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-## $PlatformShort$ Binding Shape Files with Geo-spatial Data Example
+## $Platform$ Binding Shape Files with Geo-spatial Data Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines" 
-           alt="$PlatformShort$ Binding Shape Files with Geo-spatial Data Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
+           alt="$Platform$ Binding Shape Files with Geo-spatial Data Example"
            github-src="maps/geo-map/binding-shp-polylines">
 </code-view>
 
@@ -53,7 +53,7 @@ sds.dataBind();
 ```
 
 ## Binding Shapefiles
-In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `ItemsSource` property which can be bound to an array of objects. The `ShapeDataSource` is an example such array because it contains a list of `ShapefileRecord` objects.
+In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `DataSource` property which can be bound to an array of objects. The `ShapeDataSource` is an example such array because it contains a list of `ShapefileRecord` objects.
 
 The `ShapefileRecord` class provides properties for storing geo-spatial data, listed in the following table.
 

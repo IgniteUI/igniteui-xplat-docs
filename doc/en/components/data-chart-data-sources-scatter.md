@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Data Source | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create scatter charts such as scatter area, scatter bubble, scatter contour and more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, scatter chart, $ProductName$, Infragistics, data source
+title: $Platform$ Data Chart | Data Visualization Tools | Data Source | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create scatter charts such as scatter area, scatter bubble, scatter contour and more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, scatter chart, $ProductName$, Infragistics, data source
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Sample Data Source for Scatter XY Series
+# $Platform$ Sample Data Source for Scatter XY Series
 
 This topic provides an example on how to implement data source for  [Scatter XY Series](data-chart-type-range-series.md)
 

@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Row Grouping | Infragistics
-_description: Use Infragistics' $PlatformShort$ grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out $ProductName$ table demos!
-_keywords: $PlatformShort$ Table, Data Grid, row grouping, $ProductName$, Infragistics
+title: $Platform$ Data Grid | Row Grouping | Infragistics
+_description: Use Infragistics' $Platform$ grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out $ProductName$ table demos!
+_keywords: $Platform$ Table, Data Grid, row grouping, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
-# $PlatformShort$ Row Grouping
+# $Platform$ Row Grouping
 
 The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
 
-## $PlatformShort$ Row Grouping Example
+## $Platform$ Row Grouping Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping" 
-           alt="$PlatformShort$ Row Grouping Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping"
+           alt="$Platform$ Row Grouping Example"
            github-src="grids/data-grid/row-grouping">
 </code-view>
 
@@ -115,7 +115,7 @@ public connectedCallback() {
 ```razor
 <DataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
-    DataSource="DataSource"                      
+    DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split" />
 ```
 
@@ -141,7 +141,7 @@ public connectedCallback() {
 
 ```razor
 <DataGrid @ref="DataGridRef" Height="100%" Width="100%"
-    DataSource="DataSource"                      
+    DataSource="DataSource"
     IsGroupCollapsable="true" />
 ```
 
@@ -210,7 +210,7 @@ public connectedCallback() {
 ```razor
 <DataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
-    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"                      
+    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"
     IsGroupCollapsable="true" />
 
 @code {

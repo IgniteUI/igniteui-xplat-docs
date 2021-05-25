@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ポイントチャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, point chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ポイント チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ポイントチャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してポイント チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, point chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ポイント チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ ポイント チャート
+# $Platform$ ポイント チャート
 
 $ProductName$ ポイント チャートはカテゴリ チャートのグループに属します。チャートのポイントまたはマーカーとしてデータを描画するように設計されています。数値は y 軸に対応し、x 軸はラベルを表示するために使用されます。
 
-$PlatformShort$ データ チャートは、単一または複数のポイント シリーズ オブジェクトのレンダリングに対応します。これは 2 つ以上のコレクションのデータに対応できるということになります。
+$Platform$ データ チャートは、単一または複数のポイント シリーズ オブジェクトのレンダリングに対応します。これは 2 つ以上のコレクションのデータに対応できるということになります。
 
-## $PlatformShort$ ポイント チャートの例
+## $Platform$ ポイント チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-point-series" 
-           alt="$PlatformShort$ ポイント チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-point-series"
+           alt="$Platform$ ポイント チャートの例"
            github-src="charts/data-chart/type-category-point-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PointSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`PointSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

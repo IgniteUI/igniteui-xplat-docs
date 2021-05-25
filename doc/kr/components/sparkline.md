@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Sparkline | Data Visualization Tools | $ProductName$ | Infragistics
+title: $Platform$ Sparkline | Data Visualization Tools | $ProductName$ | Infragistics
 _description: Use the sparkline chart to render in a small scale layout such as a grid cell or stand alone.
 _keywords: Sparkline, $ProductName$, Infragistics
 ---
 
-# $PlatformShort$ Sparkline
+# $Platform$ Sparkline
 
 The $ProductName$ `XamSparkline` component is a lightweight charting control. It is intended for rendering within a small scale layout such as within a grid cell, but can also be rendered alone.
 
@@ -13,9 +13,9 @@ The sparkline control has several visual elements and corresponding features tha
 ## Demo
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
            github-src="charts/sparkline/display-types">
 </code-view>
 
@@ -137,9 +137,9 @@ All of the markers mentioned above can be customized using the related marker ty
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"
            github-src="charts/sparkline/markers">
 </code-view>
 
@@ -178,9 +178,9 @@ You can also configure whether or not to show the normal range in front of or be
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"
            github-src="charts/sparkline/normal-range">
 </code-view>
 
@@ -230,9 +230,9 @@ The following code example shows how to enable a trendline in the $ProductName$ 
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"
            github-src="charts/sparkline/trendlines">
 </code-view>
 
@@ -255,9 +255,9 @@ In order to plot the unknown values, you can set the `UnknownValuePlotting` prop
 ```
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"
            github-src="charts/sparkline/unknown-values">
 </code-view>
 

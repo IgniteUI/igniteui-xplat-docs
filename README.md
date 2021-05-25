@@ -172,7 +172,7 @@ This is some content that will only show for Angular or WPF.
 
 #### Using Variables
 
-In **docConfig.json** you can add entries in "[PlatformName]" => "replacements" where name is a regular expression that matches the text you wish to replace in the markdown, and value is the value you wish to have inserted.
+In **docConfig.json** you can add entries in "[ProductName]" => "replacements" where name is a regular expression that matches the text you wish to replace in the markdown, and value is the value you wish to have inserted.
 
 For example with this entry:
 

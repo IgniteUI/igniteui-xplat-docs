@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | シェープ ファイル リファレンス | シェープ ファイルの編集 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップで使用するシェープ ファイル形式について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, shape files, $ProductName$, Infragistics, shape editing, $PlatformShort$ マップ, シェープ ファイル, シェイプの編集, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | シェープ ファイル リファレンス | シェープ ファイルの編集 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップで使用するシェープ ファイル形式について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, shape editing, $Platform$ マップ, シェープ ファイル, シェイプの編集, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $PlatformShort$ シェープ ファイルの参照
+# $Platform$ シェープ ファイルの参照
 
 ## 目的
 
@@ -33,7 +33,7 @@ mentionedTypes: ['XamGeographicMap']
 
 ## シェイプ ファイルのフォーマット
 
-$PlatformShort$ `XamGeographicMap`コントロールは、地理空間データのソースとして人気の高い[シェープ ファイル (英語)](http://en.wikipedia.org/wiki/Shapefile#Overview) フォーマットを使用します。シェープ ファイルは他のファイル タイプと一緒に配布されます。一般的なファイルには、*.shp*、*.shx*、および *.dbf* の拡張子が付いています。
+$Platform$ `XamGeographicMap`コントロールは、地理空間データのソースとして人気の高い[シェープ ファイル (英語)](http://en.wikipedia.org/wiki/Shapefile#Overview) フォーマットを使用します。シェープ ファイルは他のファイル タイプと一緒に配布されます。一般的なファイルには、*.shp*、*.shx*、および *.dbf* の拡張子が付いています。
 
 以下の表は、シェープ ファイルの各タイプの基本情報および目的を提供しています。
 

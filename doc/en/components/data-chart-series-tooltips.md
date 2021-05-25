@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | ToolTips | Infragistics
-_description: Use Infragistics' $PlatformShort$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
-_keywords: $PlatformShort$ charts, data chart, tooltips, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | ToolTips | Infragistics
+_description: Use Infragistics' $Platform$ chart's tooltips to display important data. View our $ProductName$ graph tutorials!
+_keywords: $Platform$ charts, data chart, tooltips, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Tooltips
+# $Platform$ Tooltips
 
-The $PlatformShort$ data chart component has support for showing tooltips along with a couple of tooltip layers. These tooltips help you to see contextual information about each of the series in your data chart.
+The $Platform$ data chart component has support for showing tooltips along with a couple of tooltip layers. These tooltips help you to see contextual information about each of the series in your data chart.
 
-## $PlatformShort$ Tooltips Example
+## $Platform$ Tooltips Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-tooltips" 
-           alt="$PlatformShort$ Tooltips Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-tooltips"
+           alt="$Platform$ Tooltips Example"
            github-src="charts/data-chart/series-tooltips">
 </code-view>
 
 <div class="divider--half"></div>
 
-In order to use tooltips or tooltip layers in the $PlatformShort$ data chart component, you need to import and register the interactivity module. This can be done by using the following code:
+In order to use tooltips or tooltip layers in the $Platform$ data chart component, you need to import and register the interactivity module. This can be done by using the following code:
 
 ```razor
 DataChartInteractivityModule.Register(IgniteUIBlazor);
@@ -58,21 +58,21 @@ ModuleManager.register(
 
 ## Default Tooltips
 
-The $PlatformShort$ data chart component provides default tooltips for each type of series. The default tooltips display all of the information relevant to the particular series item that is being hovered, including the series title, data values, axis values, etc. They are also styled to match the series' appearance.
+The $Platform$ data chart component provides default tooltips for each type of series. The default tooltips display all of the information relevant to the particular series item that is being hovered, including the series title, data values, axis values, etc. They are also styled to match the series' appearance.
 
-The following code snippet demonstrates how to enable the default tooltips in the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to enable the default tooltips in the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
-        DataSource="@data" />  
+        DataSource="@data" />
 </DataChart>
 ```
 
@@ -129,22 +129,22 @@ The following code snippet demonstrates how to enable the default tooltips in th
 
 ## Category Tooltip Layer
 
-The CategoryToolTipLayer displays grouped tooltips for the series on the $PlatformShort$ data chart component using a category axis. The grouped tooltips currently appear at the top of the $PlatformShort$ data chart component.
+The CategoryToolTipLayer displays grouped tooltips for the series on the $Platform$ data chart component using a category axis. The grouped tooltips currently appear at the top of the $Platform$ data chart component.
 
-The following code snippet demonstrates how to add a category tooltip layer to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a category tooltip layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
         DataSource="@data" />
-    <CategoryToolTipLayer></CategoryToolTipLayer>  
+    <CategoryToolTipLayer></CategoryToolTipLayer>
 </DataChart>
 ```
 
@@ -207,22 +207,22 @@ The following code snippet demonstrates how to add a category tooltip layer to t
 
 ## Item Tooltip Layer
 
-The item tooltip layer displays tooltips for all the series on the $PlatformShort$ data chart component individually when a pointer hovers over that particular series. The tooltip style is inherited from the series that is displaying the tooltip.
+The item tooltip layer displays tooltips for all the series on the $Platform$ data chart component individually when a pointer hovers over that particular series. The tooltip style is inherited from the series that is displaying the tooltip.
 
-The following code snippet demonstrates how to add an item tooltip layer to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add an item tooltip layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value"
         ShowDefaultTooltips="true"
         DataSource="@data" />
-    <ItemToolTipLayer></ItemToolTipLayer>  
+    <ItemToolTipLayer></ItemToolTipLayer>
 </DataChart>
 ```
 

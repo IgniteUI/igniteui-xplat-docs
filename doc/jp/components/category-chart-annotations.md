@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ チャートおよびグラフ | データ可視化ツール | 注釈 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用すると、チャートに注釈を追加できます。$ProductName$ を使用してグラフと視覚化を改善します。
-_keywords: $PlatformShort$ charts, category chart, annotations, $ProductName$, Infragistics, $PlatformShort$ チャート, カテゴリ チャート, 注釈, インフラジスティックス
+title: $Platform$ チャートおよびグラフ | データ可視化ツール | 注釈 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用すると、チャートに注釈を追加できます。$ProductName$ を使用してグラフと視覚化を改善します。
+_keywords: $Platform$ charts, category chart, annotations, $ProductName$, Infragistics, $Platform$ チャート, カテゴリ チャート, 注釈, インフラジスティックス
 mentionedTypes: ['CategoryChart']
 _language: ja
 ---
-# $PlatformShort$ 注釈
+# $Platform$ 注釈
 
-このトピックでは、$PlatformShort$ カテゴリ チャート コンポーネントの注釈やインタラクションについて説明します。
+このトピックでは、$Platform$ カテゴリ チャート コンポーネントの注釈やインタラクションについて説明します。
 
-## $PlatformShort$ 注釈の例
+## $Platform$ 注釈の例
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations" 
-           alt="$PlatformShort$ 注釈例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-annotations"
+           alt="$Platform$ 注釈例"
            github-src="charts/category-chart/annotations">
 </code-view>
 
@@ -67,7 +67,7 @@ _language: ja
 <CategoryChart Height="100%" Width="100%"
     DataSource="@DataSource"
     FinalValueAnnotationsVisible="true"
-    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>                   
+    YAxisLabelLocation=AxisLabelsLocation.OutsideRight/>
 ```
 
 ```html

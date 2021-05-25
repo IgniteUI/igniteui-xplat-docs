@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Spreadsheet | Grid Controls | Clipboard | Infragistics |
+title: $Platform$ Spreadsheet | Grid Controls | Clipboard | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Working with Clipboard
+# $Platform$ Working with Clipboard
 
 This topic explains how to perform clipboard operations.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"
            github-src="excel/spreadsheet/clipboard">
 </code-view>
 

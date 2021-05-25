@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Stacked Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create stacked column charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, stacked column charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Stacked Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create stacked column charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, stacked column charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart','StackedColumnSeries']
 namespace: Infragistics.Controls.Charts
 ---
-# $PlatformShort$ Stacked Column Chart
+# $Platform$ Stacked Column Chart
 
 The $ProductName$ stacked column chart belongs to a group of category charts and is rendered using a collection of rectangles (`StackedFragmentSeries`) that are stacked on top of each other. Each stacked fragment in the collection represents one visual element in each stack. Each stack can contain both positive and negative values. All positive values are grouped on the positive side of the y-axis, and all negative values are grouped on the negative side of the y-axis. `StackedColumnSeries` uses the same concepts of data plotting as `StackedBarSeries` but data points are stacked along vertical line (y-axis) rather than along horizontal line (x-axis). In other words, the stacked column chart is rendered like the stacked bar chart but with 90 degrees counter-clockwise rotation.
 
-## $PlatformShort$ Stacked Column Chart Example
+## $Platform$ Stacked Column Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-column-series" 
-           alt="$PlatformShort$ Stacked Column Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-stacked-column-series"
+           alt="$Platform$ Stacked Column Chart Example"
            github-src="charts/data-chart/type-stacked-column-series">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ stacked column chart belongs to a group of category charts and
 The `StackedColumnSeries` has its own `Series` collection in which you can place the `StackedFragmentSeries` elements. These fragments are what make up the actual rendering of the chart and are the elements that accept the `ValueMemberPath`.
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `StackedColumnSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `StackedColumnSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
@@ -117,8 +117,8 @@ This code demonstrates how to create an instance of the $ProductName$ data chart
 <DataChart Width="100%" Height="100%>
     <CategoryXAxis Name="xAxis" Label="Country" DataSource="@data" />
     <NumericYAxis Name=yAxis />
-    <StackedColumnSeries 
-      XAxisName="xAxis" 
+    <StackedColumnSeries
+      XAxisName="xAxis"
       YAxisName="yAxis"
       DataSource="@data">
         <StackedFragmentSeries ValueMemberPath="Coal" />

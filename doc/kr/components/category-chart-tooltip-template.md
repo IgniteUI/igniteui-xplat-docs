@@ -4,7 +4,7 @@ _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 도구 설명 템플릿
+# $Platform$ 도구 설명 템플릿
 
 `CategoryChart` 제어는 각 시리즈 유형에 기본 도구 설명을 제공합니다. 기본 도구 설명에는 시리즈 제목, 데이터 값, 축 값 등의 특정 시리즈 항목과 관련된 모든 정보가 표시됩니다. 이들은 시리즈의 스타일에 맞게 디자인되어 있습니다. 기본 도구 설명이 충분하지 않은 경우 도구 설명 콘텐츠와 룩 앤드 필을 사용자 정의하여 도구 설명 템플릿을 구성할 수 있습니다.
 

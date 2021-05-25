@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Step Line Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create step line charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, step line chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Step Line Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create step line charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, step line chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Step Line Chart
+# $Platform$ Step Line Chart
 
-The $ProductName$ step line chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the y-axis and categories are displayed on the x-axis. `StepLineSeries` emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ step line chart is identical to the $PlatformShort$ step area chart in all aspects except that the area below the step lines is not filled in.
+The $ProductName$ step line chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines forming a step-like progression. Values are represented on the y-axis and categories are displayed on the x-axis. `StepLineSeries` emphasizes the amount of change over a period of time or compares multiple items. The $Platform$ step line chart is identical to the $Platform$ step area chart in all aspects except that the area below the step lines is not filled in.
 
-## $PlatformShort$ Step Line Chart Example
+## $Platform$ Step Line Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-line-series" 
-           alt="$PlatformShort$ Step Line Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-line-series"
+           alt="$Platform$ Step Line Chart Example"
            github-src="charts/data-chart/type-category-step-line-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `StepLineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `StepLineSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

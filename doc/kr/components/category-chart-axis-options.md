@@ -4,16 +4,16 @@ _description: 범주 차트 구성 요소를 사용하여 데이터를 나타내
 _keywords: category chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ 축 옵션
+# $Platform$ 축 옵션
 
 $ProductName$ 카테고리 차트 컴포넌트에서는 축은 축 기본 선, 눈금 표시, 제목 및 축 레이블의 모양을 설정하는 기본 속성을 제공합니다.
 
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-options"
            github-src="charts/category-chart/axis-options">
 </code-view>
 

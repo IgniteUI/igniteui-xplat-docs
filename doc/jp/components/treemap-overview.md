@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。$ProductName$ ツリーマップについて説明します。
-_keywords: $PlatformShort$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $PlatformShort$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
+title: $Platform$ ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。$ProductName$ ツリーマップについて説明します。
+_keywords: $Platform$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $Platform$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
 mentionedTypes: ['Treemap','TreemapOrientation','TreemapLayoutType']
 ---
-# $PlatformShort$ ツリーマップの概要
+# $Platform$ ツリーマップの概要
 $ProductName$ ツリーマップは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
 
-## $PlatformShort$ ツリーマップの例
+## $Platform$ ツリーマップの例
 
 次のサンプルは、ツリーマップコンポーネントでノードを作成およびレイアウトする方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="$PlatformShort$ ツリーマップの例"
+           alt="$Platform$ ツリーマップの例"
            github-src="charts/tree-map/overview">
 </code-view>
 

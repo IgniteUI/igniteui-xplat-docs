@@ -1,72 +1,54 @@
 ---
-title: $PlatformShort$ チャート マーカー | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート マーカー
-_keywords: $PlatformShort$ Charts, Markers, Infragistics, $PlatformShort$ チャート, マーカー, インフラジスティックス
+title: $Platform$ チャート マーカー | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート マーカー
+_keywords: $Platform$ Charts, Markers, Infragistics, $Platform$ チャート, マーカー, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
 _language: ja
 ---
 
-# $PlatformShort$ チャート マーカー
+# $Platform$ チャート マーカー
 
-$ProductName$ カテゴリのチャートには、マーカー、チャートのタイトルとサブタイトル、チャートの種類など、カスタマイズできる多くの領域があります。
+$ProductName$ マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
 
-# $PlatformShort$ チャート マーカーの例
+# $Platform$ チャート マーカーの例
+
+次の例では、[折れチャート](../types/line-chart.md)は、2009 年から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。マーカーが `MarkerType` プロパティを "Circle" に設定して有効になっています。
+
+マーカーのカラーは、以下のサンプルの `MarkerBrushes`プロパティと `MarkerOutlines` プロパティを設定することによっても管理されます。このサンプルでは、ドロップダウンを使用してマーカーと `ChartType` を構成できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$PlatformShort$ 構成オプションの例"
+           alt="$Platform$ 構成オプションの例"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
 <div class="divider--half"></div>
 
-## チャート マーカーの構成
+# $Platform$ チャート マーカー テンプレート
 
-マーカーは、カテゴリ チャートのプロット領域にデータ ポイントの値を表示する視覚要素です。値が主グリッド線と副グリッド線の間にある場合も指定したデータ ポイントの値をただちに識別できるようユーザーをサポートします。
+以下の例に示すように、マーカー プロパティに加えて、`XamCategoryChart` コントロールで描画されたシリーズの `MarkerTemplate` プロパティに関数を設定することで、独自のマーカーを実装できます。
 
-チャート マーカーの外観は、次のコード例に示すように、カテゴリ チャートの `MarkerType`、`MarkerBrushes`、`MarkerOutlines` プロパティを介して管理されます。
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-templates"
+           alt="$Platform$ チャート マーカーのテンプレート"
+           github-src="charts/category-chart/marker-templates">
+</code-view>
 
-```razor
- <CategoryChart Height="500px" Width="700px"
-    DataSource="@DataSource"
-    MarkerType="MarkerType.Diamond"
-    MarkerBrushes="red"
-    MarkerOutlines="yellow"/>
-```
+<div class="divider--half"></div>
 
-```html
-<igx-category-chart
-    [dataSource]="data"
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow">
-</igx-category-chart>
-```
+## その他のリソース
 
-```tsx
- <IgrCategoryChart dataSource={this.state.data}
-    width="700px"
-    height="500px"
-    markerType="Diamond"
-    markerBrushes="red"
-    markerOutlines="yellow" />
-```
-```html
-<igc-category-chart
-    id="chart"
-    width="700px"
-    height="700px"
-    marker-type="Diamond"
-    marker-brushes="red"
-    marker-outlines="yellow">
-</igc-category-chart>
-```
+関連するチャート機能の詳細については、以下のトピックを参照してください。
 
+- [チャート注釈](chart-annotations.md)
+- [チャート強調表示](chart-highlighting.md)
 
 ## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです。
+
 - `MarkerBrushes`
 - `MarkerOutlines`
 - `MarkerType`

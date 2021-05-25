@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Axis Settings | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows full control over configuring axis labels, titles, tickmarks, range, gridline, gap and overlap. Learn about our $ProductName$ graph axis!
-_keywords: $PlatformShort$ charts, data chart, axis settings, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Axis Settings | Infragistics
+_description: Infragistics' $Platform$ charts control allows full control over configuring axis labels, titles, tickmarks, range, gridline, gap and overlap. Learn about our $ProductName$ graph axis!
+_keywords: $Platform$ charts, data chart, axis settings, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'CategoryXAxis', 'NumericYAxis', 'CategoryDateTimeXAxis']
 ---
-# $PlatformShort$ Axis Settings
+# $Platform$ Axis Settings
 
 In the $ProductName$ data chart component, an axis provides base properties for specifying the appearance of axis main lines, tickmarks, titles, and axis labels.
 
-## $PlatformShort$ Axis Settings Example
+## $Platform$ Axis Settings Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-settings" 
-           alt="$PlatformShort$ Axis Settings Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-settings"
+           alt="$Platform$ Axis Settings Example"
            github-src="charts/data-chart/axis-settings">
 </code-view>
 
@@ -103,14 +103,14 @@ The following code example shows how to set and customize the titles on a $Produ
 
 ## Axis Tickmarks
 
-Tick marks display points on the axes in the $PlatformShort$ data chart component. They represent a certain numeric point on a scale or the value of the category in a category axis. You can change the length, thickness, and color of the tick marks on an axis in the data chart component.
+Tick marks display points on the axes in the $Platform$ data chart component. They represent a certain numeric point on a scale or the value of the category in a category axis. You can change the length, thickness, and color of the tick marks on an axis in the data chart component.
 
 The following code example shows how to set and customize the color, length, and thickness of the tick marks on a category x-axis in the data chart:
 
 ```razor
 <CategoryXAxis Name="xAxis"
     TickLength="10"
-    TickStrokeThickness="0.5" 
+    TickStrokeThickness="0.5"
     TickStroke="black"/>
 ```
 
@@ -140,7 +140,7 @@ The following code example shows how to set and customize the color, length, and
 
 ## Axis Range
 
-In the $PlatformShort$ data chart component, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `MinimumValue` and `MaximumValue` options on the corresponding axes.
+In the $Platform$ data chart component, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `MinimumValue` and `MaximumValue` options on the corresponding axes.
 
 By default, the data chart component will calculate the minimum and maximum values for the numeric and time axis range based on the lowest and highest corresponding value points in your data, but this automatic calculation may not be appropriate for your set of data points in all cases. For example, if your data has a minimum value of 850, you may want to set the `MinimumValue` of the numeric axis to 800 so that there will be a space value of 50 between the axis minimum and the lowest value of data points. The same idea can be applied to the axis minimum value and the highest value of data points using the `MaximumValue` property.
 
@@ -175,7 +175,7 @@ The following code snippet demonstrates changing an axis range in the data chart
 
 ## Axis Gridlines
 
-In the $PlatformShort$ data chart component, the `Interval` property of an axis determines how frequently the major gridlines and axis labels are rendered on that axis. Similarly, the `MinorInterval` property specifies how frequently minor gridlines are rendered between those major gridlines.
+In the $Platform$ data chart component, the `Interval` property of an axis determines how frequently the major gridlines and axis labels are rendered on that axis. Similarly, the `MinorInterval` property specifies how frequently minor gridlines are rendered between those major gridlines.
 
 For numeric axes, these intervals will be numeric, but for category axes, these values will represent the frequency of the number of categories that you wish for the lines to be drawn. For example, if you set the `Interval` to 2 on a category axis, the major gridlines would be drawn every 2 categories.
 
@@ -228,7 +228,7 @@ The following code snippet demonstrates how to configure the intervals on the ax
 
 ## Axis Gap
 
-The `Gap` property on the category axes of the $PlatformShort$ data chart component determines the amount of space between series of the data chart.
+The `Gap` property on the category axes of the $Platform$ data chart component determines the amount of space between series of the data chart.
 
 This property accepts a numeric value between 0 and 1. The value represents a relative width of the gap out of the available number of pixels between the series. Setting this property to 0 would mean there is no gap rendered between the series, and setting it 1 would render the maximum available gap.
 
@@ -261,7 +261,7 @@ The following sample code demonstrates setting an x-axis gap:
 
 ## Axis Overlap
 
-The axis `Overlap` feature of the category axes of the $PlatformShort$ data chart component allows setting the overlap of the rendered categories.
+The axis `Overlap` feature of the category axes of the $Platform$ data chart component allows setting the overlap of the rendered categories.
 
 This property accepts a numeric value between -1 and 1. The value represents a relative overlap out of the available number of pixels dedicated to each series.
 

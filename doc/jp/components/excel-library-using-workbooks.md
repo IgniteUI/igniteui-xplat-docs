@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | ワークブックの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリを使用してワークブックおよびワークシートを作成し、データを入力して日付を Microsoft®Excel にエクスポートします。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
+title: $Platform$ Excel ライブラリ | ワークブックの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークブックおよびワークシートを作成し、データを入力して日付を Microsoft®Excel にエクスポートします。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
 _keywords: Excel library, workbooks, $ProductName$, Infragistics, Excel ライブラリ, ワークブック, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $PlatformShort$ ワークブックの使用
+# $Platform$ ワークブックの使用
 
-Infragistics $PlatformShort$ Excel Engine は、データを Microsoft® Excel® に保存、また Microsoft® Excel® からの読み込みを可能にします。ライブラリのさまざまなクラスを使用してワークブックやワークシートを作成、データを入力、データを Excel にエクスポートできます。Infragistics $PlatformShort$ Excel Engine は、Excel スプレッドシートでアプリケーションのデータの表示や Excel からアプリケーションへのデータのインポートが簡単にできます。
+Infragistics $Platform$ Excel Engine は、データを Microsoft® Excel® に保存、また Microsoft® Excel® からの読み込みを可能にします。ライブラリのさまざまなクラスを使用してワークブックやワークシートを作成、データを入力、データを Excel にエクスポートできます。Infragistics $Platform$ Excel Engine は、Excel スプレッドシートでアプリケーションのデータの表示や Excel からアプリケーションへのデータのインポートが簡単にできます。
 
-## $PlatformShort$ ワークブックの使用の例
+## $Platform$ ワークブックの使用の例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks" 
-           alt="$PlatformShort$ ワークブックの使用の例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
+           alt="$Platform$ ワークブックの使用の例"
            github-src="excel/excel-library/operations-on-workbooks">
 </code-view>
 
@@ -42,7 +42,7 @@ font.Height = 16 * 20;
 
 ## ワークブック プロパティの設定
 
-Microsoft Excel® ドキュメント プロパティは、ドキュメントの整理やトラッキングを改善するための情報を提供します。`Workbook` オブジェクトの `DocumentProperties` プロパティを使用してこれらのプロパティを設定するために、Infragistics $PlatformShort$ Excel Engine を使用できます。使用可能なプロパティは以下のとおりです。
+Microsoft Excel® ドキュメント プロパティは、ドキュメントの整理やトラッキングを改善するための情報を提供します。`Workbook` オブジェクトの `DocumentProperties` プロパティを使用してこれらのプロパティを設定するために、Infragistics $Platform$ Excel Engine を使用できます。使用可能なプロパティは以下のとおりです。
 
 - `Author`
 

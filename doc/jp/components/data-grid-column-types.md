@@ -1,24 +1,24 @@
 ---
-title: $PlatformShort$ データ グリッド | 列タイプ | インフラジスティックス
+title: $Platform$ データ グリッド | 列タイプ | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ データ テーブルとグリッドは、画像、テキスト、数値、日付列、テンプレート列などのコンテンツを表示する 4 つの列タイプをサポートします。$ProductName$ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ Table, Data Grid, column types, $ProductName$, Infragistics, $PlatformShort$ テーブル, データ グリッド, 列タイプ, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column types, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列タイプ, インフラジスティックス
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 _language: ja
 ---
 
-# $PlatformShort$ 列タイプ
+# $Platform$ 列タイプ
 
-$ProductName$ Data Table / Data Grid は、データを $PlatformShort$ データ グリッドに表示する方法を 5 つの列タイプとテンプレート列タイプから選択できます。サポートされている列タイプは、Text 列、Numeric 列、DateTime 列、Image 列、ComboBox および Template です。
+$ProductName$ Data Table / Data Grid は、データを $Platform$ データ グリッドに表示する方法を 5 つの列タイプとテンプレート列タイプから選択できます。サポートされている列タイプは、Text 列、Numeric 列、DateTime 列、Image 列、ComboBox および Template です。
 
-各列は、`Field` プロパティを、グリッドにバインドされた基になる データソースの項目の対応するプロパティの名前に設定することによって $PlatformShort$ データ グリッドにバインドします。
+各列は、`Field` プロパティを、グリッドにバインドされた基になる データソースの項目の対応するプロパティの名前に設定することによって $Platform$ データ グリッドにバインドします。
 
-## $PlatformShort$ 列タイプの例
+## $Platform$ 列タイプの例
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types" 
-           alt="$PlatformShort$ 列タイプの例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types"
+           alt="$Platform$ 列タイプの例"
            github-src="grids/data-grid/column-types">
 </code-view>
 
@@ -26,7 +26,7 @@ $ProductName$ Data Table / Data Grid は、データを $PlatformShort$ デー�
 
 ## テキスト列
 
-$PlatformShort$ データ グリッド は、関連付けられたセルに書式設定されたテキストを表示するために使用されます。これは、string 型のデータを表示するために使用されるデフォルトの列型です。
+$Platform$ データ グリッド は、関連付けられたセルに書式設定されたテキストを表示するために使用されます。これは、string 型のデータを表示するために使用されるデフォルトの列型です。
 
 ## 数値列
 

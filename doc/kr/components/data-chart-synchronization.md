@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Infragistics | Synchronization
+title: $Platform$ Data Chart | Data Visualization Tools | Infragistics | Synchronization
 _description: Create a data chart that displays multiple instances of visual elements in the same plot area in order to create composite chart views.
 _keywords: data chart, $ProductName$, Infragistics
 _language: kr
 ---
-# $PlatformShort$ Chart Synchronization
+# $Platform$ Chart Synchronization
 
 The $ProductName$ data chart component allows for synchronization with respect to the coordination of zooming, panning, and crosshair events between multiple charts. This can help you to visualize the same areas of multiple charts, assuming your data sources are similar or the same with respect to the axes.
 
 ## Demo
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
            github-src="charts/data-chart/chart-synchronization">
 </code-view>
 

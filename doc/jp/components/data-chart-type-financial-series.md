@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ファイナンシャル ローソク足 | ファイナンシャル OHLC | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、ローソク足や OHLC などのファイナンシャル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, financial charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ファイナンシャル チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ファイナンシャル ローソク足 | ファイナンシャル OHLC | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、ローソク足や OHLC などのファイナンシャル チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, financial charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ファイナンシャル チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries']
 _language: ja
 ---
-# $PlatformShort$ ファイナンシャル シリーズ
+# $Platform$ ファイナンシャル シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントのファイナンシャル シリーズのさまざまなタイプを説明します。ファイナンシャル シリーズはシンプルで最も一般的なチャート シリーズ フォームのグループで、株価などの財務データを取得し、OHLC バーやろうそく足のコレクションとして水平線と一緒に描画します (`FinancialPriceSeries` など)。
+このトピックは、$Platform$ データ チャート コンポーネントのファイナンシャル シリーズのさまざまなタイプを説明します。ファイナンシャル シリーズはシンプルで最も一般的なチャート シリーズ フォームのグループで、株価などの財務データを取得し、OHLC バーやろうそく足のコレクションとして水平線と一緒に描画します (`FinancialPriceSeries` など)。
 
-## $PlatformShort$ ファイナンシャル シリーズの例
+## $Platform$ ファイナンシャル シリーズの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series" 
-           alt="$PlatformShort$ ファイナンシャル シリーズの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-series"
+           alt="$Platform$ ファイナンシャル シリーズの例"
            github-src="charts/data-chart/type-financial-series">
 </code-view>
 
@@ -74,7 +74,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントは、さまざまなタイプの軸を提供しますが、すべてのファイナンシャル シリーズは `Y-Axis` として `NumericYAxis`、`X-Axis` として `CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` のみ使用できます。
+$Platform$ データ チャート コンポーネントは、さまざまなタイプの軸を提供しますが、すべてのファイナンシャル シリーズは `Y-Axis` として `NumericYAxis`、`X-Axis` として `CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` のみ使用できます。
 
 ## データの要件
 

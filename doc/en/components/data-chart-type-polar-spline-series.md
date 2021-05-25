@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Polar Spline Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create polar spline charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, polar spline charts, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Polar Spline Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create polar spline charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, polar spline charts, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart', 'PolarSplineSeries']
 ---
-# $PlatformShort$ Polar Spline Chart
+# $Platform$ Polar Spline Chart
 
 The $ProductName$ polar spline chart belongs to a group of polar charts and is rendered using a collection of spline lines connecting data points in polar (angle/radius) coordinate system. The `PolarSplineSeries` uses the same concepts of data plotting as the `ScatterSplineSeries` but wraps data points around a circle rather than stretching them along a horizontal line. Like with other series types, multiple `PolarSplineSeries` can be plotted in the same data chart and they can be overlaid on each other to show differences and similarities between data sets.
 
-## $PlatformShort$ Polar Spline Chart Example
+## $Platform$ Polar Spline Chart Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series" 
-           alt="$PlatformShort$ Polar Spline Chart Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-spline-series"
+           alt="$Platform$ Polar Spline Chart Example"
            github-src="charts/data-chart/type-polar-spline-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `PolarSplineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `PolarSplineSeries`.
 
 - `NumericRadiusAxis`
 - `NumericAngleAxis`

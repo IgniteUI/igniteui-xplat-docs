@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布ポリライン チャート | データ バインディング | インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布ポリライン チャート | データ バインディング | インフラジスティックス
 _description: 同じプロット領域に視覚要素の複数インスタンスを表示するデータ チャートを作成し、複合チャートビューを作成します。
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, インフラジスティックス
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart','ShapeColumnSeries', 'ScatterPolylineSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布ポリライン チャート
+# $Platform$ 散布ポリライン チャート
 
 $ProductName$ 散布ポリライン チャートは、形状の配列 (X または Y 座標の配列) を取得するシェイプ チャートのグループに属します。このシリーズは、その形状の配列をデカルト (x, y) システムのポリラインのコレクションとしてレンダリングします。
 
 散布図シリーズは科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。
 
-## $PlatformShort$ 散布ポリライン チャートの例
+## $Platform$ 散布ポリライン チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series" 
-           alt="$PlatformShort$ 散布ポリライン チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
+           alt="$Platform$ 散布ポリライン チャートの例"
            github-src="charts/data-chart/type-scatter-polyline-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 軸の要件
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterPolylineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterPolylineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`
@@ -49,7 +49,7 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartScatterCoreModule.Register(IgniteUIBlazor);
-DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartScatterModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ScatterPolylineSeriesModule.Register(IgniteUIBlazor);
 ```

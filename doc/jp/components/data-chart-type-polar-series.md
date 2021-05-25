@@ -1,24 +1,24 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 極座標散布チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、極座標散布図、極座標折れ線、極座標エリアなどの極座標チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, polar charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 極座標チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 極座標散布チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、極座標散布図、極座標折れ線、極座標エリアなどの極座標チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, polar charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 極座標チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'PolarLineSeries']
 _language: ja
 ---
-# $PlatformShort$ 極座標シリーズ
+# $Platform$ 極座標シリーズ
 
-このトピックは、$PlatformShort$ データ チャート コンポーネントの極座標 シリーズのさまざまなタイプについて説明します。極座標シリーズは、デカルト（x、y）座標系の代わりに極座標（角度、半径）座標シリーズを使用してチャートにデータをプロットする一連のシリーズです。つまり、極座標シリーズは[散布シリーズ](data-chart-type-scatter-point-series.md) の概念を使用して、水平線に沿って伸びるのではなく円の周りを囲みます。このシリーズのグループは、極座標系を使用して複数の異なるデータのシリーズ内の項目間の関係を示すために使用されます。
+このトピックは、$Platform$ データ チャート コンポーネントの極座標 シリーズのさまざまなタイプについて説明します。極座標シリーズは、デカルト（x、y）座標系の代わりに極座標（角度、半径）座標シリーズを使用してチャートにデータをプロットする一連のシリーズです。つまり、極座標シリーズは[散布シリーズ](data-chart-type-scatter-point-series.md) の概念を使用して、水平線に沿って伸びるのではなく円の周りを囲みます。このシリーズのグループは、極座標系を使用して複数の異なるデータのシリーズ内の項目間の関係を示すために使用されます。
 
 極座標シリーズでは、データの不均等な散らばりやデータの塊に注意が向けられます。これらは科学的なデータ (風の方向と速度、磁場の強さと方向、太陽系内の物体の位置など) をプロットするためによく使用され、予測結果と収集データの偏差を強調することができます。
 
 <!-- Angular, React, WebComponents -->
-## $PlatformShort$ 極座標シリーズの例
+## $Platform$ 極座標シリーズの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series" 
-           alt="$PlatformShort$ 極座標シリーズの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-polar-series"
+           alt="$Platform$ 極座標シリーズの例"
            github-src="charts/data-chart/type-polar-series">
 </code-view>
 
@@ -69,7 +69,7 @@ public dataSource: any[] = SamplePolarData.create();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartPolarModule.Register(IgniteUIBlazor);
-DataChartPolarCoreModule.Register(IgniteUIBlazor);   
+DataChartPolarCoreModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 

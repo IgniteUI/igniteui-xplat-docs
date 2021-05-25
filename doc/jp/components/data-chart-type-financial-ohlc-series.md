@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | ファイナンシャル OHLC シリーズ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用してファイナンシャル OHLC チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, financial OHLC chart, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, ファイナンシャル OHLC チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | ファイナンシャル OHLC シリーズ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用してファイナンシャル OHLC チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, financial OHLC chart, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ファイナンシャル OHLC チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'FinancialPriceSeries','PriceDisplayType','CategoryXAxis']
 _language: ja
 ---
-# $PlatformShort$ ファイナンシャル OHLC チャート
+# $Platform$ ファイナンシャル OHLC チャート
 
 `OHLC` 表示モードの $ProductName$ 金融価格チャートは、株価をプロットし、各日の株価の高値、安値、始値、終値を表示するために使用されます。各データ ポイントは、左と右の両側に水平の垂直線を伴った縦の線としてプロットされます。垂直の線は投資の高値と安値の間の範囲を示します。垂直の線の上部は取引期間中の最大の高値を示し、垂直の線の下部は取引期間中の最安値を示します。水平の線は投資の始値と終値の間の範囲を示します。垂直線の左側の水平の線はセッションの開始値を示します。垂直の線の右側の水平の線はセッションの終値を示します。
 
-## $PlatformShort$ ファイナンシャル OHLC チャートの例
+## $Platform$ ファイナンシャル OHLC チャートの例
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-ohlc-series" 
-           alt="$PlatformShort$ ファイナンシャル OHLC チャートの例" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-financial-ohlc-series"
+           alt="$Platform$ ファイナンシャル OHLC チャートの例"
            github-src="charts/data-chart/type-financial-ohlc-series">
 </code-view>
 
@@ -24,7 +24,7 @@ _language: ja
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、すべての財務シリーズでは、`NumericYAxis` を Y 軸として、`CategoryXAxis`、`OrdinalTimeXAxis`、または `TimeXAxis` を X 軸としてのみ使用できます。
 
 ## データの要件
 

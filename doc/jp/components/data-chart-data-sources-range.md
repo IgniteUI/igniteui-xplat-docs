@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、範囲エリア、範囲柱状などの範囲チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, range chart, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, 範囲チャート, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、範囲エリア、範囲柱状などの範囲チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, range chart, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, 範囲チャート, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ エリア シリーズのサンプル データソース
+# $Platform$ エリア シリーズのサンプル データソース
 
 このトピックでは、[エリア シリーズ](data-chart-type-range-series.md) のデータソースを実装する方法の例を示します。
 
@@ -17,15 +17,15 @@ public class SampleRangeData
         public static List<SampleRangeItem> Create()
         {
             var data = new List<SampleRangeItem>();
-            var temperature = 25.0; 
-            
+            var temperature = 25.0;
+
             for (var i = 1900; i < 2020; i++)
             {
                 temperature += (random.NextDouble() - 0.485) * 0.5;
                 var low  = (temperature + (random.NextDouble() * 1));
                 var high = (temperature - (random.NextDouble() * 1));
-                var item = new SampleRangeItem(); 
-                item.Year = i; 
+                var item = new SampleRangeItem();
+                item.Year = i;
                 item.High = Math.Round(low * 10) / 10;
                 item.Low = Math.Round(high * 10) / 10;
                 data.Add(item);

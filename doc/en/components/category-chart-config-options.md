@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Charts and Graphs | Data Visualization Tools | Configuration Options | Infragistics
-_description: Learn how to use Infragistics' $PlatformShort$ charts control features such as setting markers, titles, subtitles and animations.  View our $ProductName$ graph demos!
-_keywords: $PlatformShort$ charts, category chart, annotations, $ProductName$, Infragistics
+title: $Platform$ Charts and Graphs | Data Visualization Tools | Configuration Options | Infragistics
+_description: Learn how to use Infragistics' $Platform$ charts control features such as setting markers, titles, subtitles and animations.  View our $ProductName$ graph demos!
+_keywords: $Platform$ charts, category chart, annotations, $ProductName$, Infragistics
 mentionedTypes: ['CategoryChart','CategoryTransitionInMode']
 ---
-# $PlatformShort$ Configuration Options
+# $Platform$ Configuration Options
 
 There are many areas of the $ProductName$ category chart component that can be customized, such as the markers, chart titles and subtitles, and the chart types.
 
-## $PlatformShort$ Configuration Options Example
+## $Platform$ Configuration Options Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options" 
-           alt="$PlatformShort$ Configuration Options Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
+           alt="$Platform$ Configuration Options Example"
            github-src="charts/category-chart/marker-options">
 </code-view>
 

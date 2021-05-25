@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | 散布スプラインライン チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して散布スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, scatter spline charts, $ProductName$, Infragistics, $PlatformShort$ チャート, データ チャート, 散布スプライン チャート, インフラジスティックス
+title: $Platform$ データ チャート | データ可視化ツール | 散布スプラインライン チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して散布スプライン チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, scatter spline charts, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 散布スプライン チャート, インフラジスティックス
 mentionedTypes: ['XamDataChart', 'ScatterSplineSeries']
 _language: ja
 ---
-# $PlatformShort$ 散布スプライン チャート
+# $Platform$ 散布スプライン チャート
 
 $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系を使用してデータをプロットする散布図のグループに属します。このシリーズは、スプラインで接続されたマーカーのコレクションとしてレンダリングされ、各マーカーにはデカルト座標系での位置を決定する X/Y の数値のペアがあります。
 
 `ScatterSplineSeries` は、不均等な間隔またはデータのクラスターに注意を促します。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。`ScatterSplineSeries` はデータを X 軸および Y 軸で時系列に管理およびプロットします (バインドする前はデータが時系列でない場合も)。
 
-## $PlatformShort$ 散布スプライン チャートの例
+## $Platform$ 散布スプライン チャートの例
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series" 
-           alt="$PlatformShort$ 散布スプライン チャートの例" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-spline-series"
+           alt="$Platform$ 散布スプライン チャートの例"
            github-src="charts/data-chart/type-scatter-spline-series">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ 散布ポイント チャートは、デカルト (x, y) 座標系
 
 ## 軸の要件
 
-$PlatformShort$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSplineSeries` で使用できるのは以下のタイプの軸のみです。
+$Platform$ データ チャート コンポーネントはさまざまなタイプの軸を提供しますが、`ScatterSplineSeries` で使用できるのは以下のタイプの軸のみです。
 
 - `NumericXAxis`
 - `NumericYAxis`
@@ -51,7 +51,7 @@ public dataSource: any[] = SampleScatterStats.getCountries();
 ```razor
 DataChartCoreModule.Register(IgniteUIBlazor);
 DataChartScatterCoreModule.Register(IgniteUIBlazor);
-DataChartScatterModule.Register(IgniteUIBlazor); 
+DataChartScatterModule.Register(IgniteUIBlazor);
 DataChartInteractivityModule.Register(IgniteUIBlazor);
 ScatterSplineSeriesModule.Register(IgniteUIBlazor);
 ```

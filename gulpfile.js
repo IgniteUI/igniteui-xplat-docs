@@ -12,8 +12,9 @@ const fs = require('fs');
 
 var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2020.2/'
 
-var mt = null;
-var ml = null;
+var mt = null; // MarkdownTransformer
+var ml = null; // MappingLoader
+var rm = null; // RedirectManager
 var transformer = null;
 var loader = null;
 var docs = null;
@@ -43,6 +44,7 @@ function ensureEnvironment() {
     if (mt == null) {
         mt = require('./src/ext/MarkdownTransformer');
         ml = require("./src/ext/MappingLoader");
+        rm = require("./src/ext/RedirectManager");
 
         transformer = new mt.MarkdownTransformer();
         loader = new ml.MappingLoader();
@@ -275,7 +277,7 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/excel*.md');
             // sources.push('!doc/**/treemap*.md');
             sources.push('!doc/**/general-cli*.md');
-            sources.push('!doc/**/general-breaking-changes*.md');
+            //sources.push('!doc/**/general-breaking-changes*.md');
             // sources.push('!doc/**/data-chart-type-stacked*.md');
             // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
             // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
@@ -532,3 +534,20 @@ function logArgs(cb) {
     cb();
 }
 exports.logArgs = logArgs
+
+function generateRedirects(cb) {
+    ensureEnvironment();
+
+    let rules = rm.generateRedirectRules();
+
+    console.log(">> loading web.config template... ");
+    let webConfigTemplate = fs.readFileSync('./templates/web.config');
+    let webConfigContent = webConfigTemplate.toString();
+
+    console.log(">> saving  web.config file... ");
+    let newConfigContent = webConfigContent.replace('<!-- {AutoInsertRules} -->', rules);
+    fs.writeFileSync('./web.config', newConfigContent);
+
+    cb();
+}
+exports.generateRedirects = generateRedirects

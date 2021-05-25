@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、散布エリア、散布バブル、散布等高線などの散布図を作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, scatter chart, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, 散布図, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、散布エリア、散布バブル、散布等高線などの散布図を作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, scatter chart, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, 散布図, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 散布 XY シリーズのサンプル データソース
+# $Platform$ 散布 XY シリーズのサンプル データソース
 
 このトピックでは、[散布 XY シリーズ](data-chart-type-range-series.md)のデータソースを実装する方法の例を示します。
 

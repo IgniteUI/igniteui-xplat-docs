@@ -5,16 +5,16 @@ _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
 ---
 
-# $PlatformShort$ 열 애니메이션
+# $Platform$ 열 애니메이션
 
-$ProductName$ 데이터 표/데이터 그리드는 열 숨기기 또는 열 이동 등의 이벤트 시에 열 애니메이션을 지원합니다.  $PlatformShort$ 데이터 그리드에서 열 애니메이션을 설정하면 해당 애니메이션이 해당 열의 모든 셀에 대해 실행됩니다.
+$ProductName$ 데이터 표/데이터 그리드는 열 숨기기 또는 열 이동 등의 이벤트 시에 열 애니메이션을 지원합니다.  $Platform$ 데이터 그리드에서 열 애니메이션을 설정하면 해당 애니메이션이 해당 열의 모든 셀에 대해 실행됩니다.
 
 ## 데모
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation"  
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation"
            github-src="grids/data-grid/column-animation">
 </code-view>
 

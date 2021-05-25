@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Step Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create step area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, step area chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Step Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create step area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, step area chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Step Area Chart
+# $Platform$ Step Area Chart
 
-The $ProductName$ step area chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `StepAreaSeries` emphasizes the amount of change over a period of time or compares multiple items. The $PlatformShort$ step area chart is identical to the $PlatformShort$ step line chart in all aspects except that the area below the step lines is filled in.
+The $ProductName$ step area chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `StepAreaSeries` emphasizes the amount of change over a period of time or compares multiple items. The $Platform$ step area chart is identical to the $Platform$ step line chart in all aspects except that the area below the step lines is filled in.
 
-## $PlatformShort$ Step Area Chart Example
+## $Platform$ Step Area Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-area-series" 
-           alt="$PlatformShort$ Step Area Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-step-area-series"
+           alt="$Platform$ Step Area Chart Example"
            github-src="charts/data-chart/type-category-step-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `StepAreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `StepAreaSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

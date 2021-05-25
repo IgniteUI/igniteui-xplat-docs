@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ チャート コントロールを使用して、積層型棒、積層型エリアなどの積層型チャートを作成します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $PlatformShort$ charts, data chart, stacked chart, $ProductName$, Infragistics, data source, $PlatformShort$ チャート, データ チャート, 積層型チャート, インフラジスティックス, データソース
+title: $Platform$ データ チャート | データ可視化ツール | データソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ チャート コントロールを使用して、積層型棒、積層型エリアなどの積層型チャートを作成します。$ProductName$ グラフ タイプについて説明します。
+_keywords: $Platform$ charts, data chart, stacked chart, $ProductName$, Infragistics, data source, $Platform$ チャート, データ チャート, 積層型チャート, インフラジスティックス, データソース
 mentionedTypes: ['XamDataChart']
 _language: ja
 ---
-# $PlatformShort$ 積層シリーズのサンプル データソース
+# $Platform$ 積層シリーズのサンプル データソース
 
 このトピックでは、積層シリーズのデータソースを実装する方法の例を示します。
 
@@ -27,7 +27,7 @@ public class SampleCategoryData
     }
 
     public class SampleCategoryItem
-    {    
+    {
         public int USA { get; set; }
         public int CHN { get; set; }
         public int RUS { get; set; }

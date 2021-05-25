@@ -1,20 +1,20 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Annotations | Infragistics
-_description: Infragistics' $PlatformShort$ charts control allows you to add annotations to your chart series, such as Callout layer, crosshair layer and final value layer. Improve your graphs and visualizations with $ProductName$
-_keywords: $PlatformShort$ charts, data chart, annotations, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Annotations | Infragistics
+_description: Infragistics' $Platform$ charts control allows you to add annotations to your chart series, such as Callout layer, crosshair layer and final value layer. Improve your graphs and visualizations with $ProductName$
+_keywords: $Platform$ charts, data chart, annotations, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Series Annotations
+# $Platform$ Series Annotations
 
-The $PlatformShort$ data chart component supports layers that allow you to display contextual information about the points plotted in your data chart as annotations. This can help to show more information to your end-users that cannot be seen by simply looking at the series.
+The $Platform$ data chart component supports layers that allow you to display contextual information about the points plotted in your data chart as annotations. This can help to show more information to your end-users that cannot be seen by simply looking at the series.
 
-## $PlatformShort$ Series Annotations Example
+## $Platform$ Series Annotations Example
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations" 
-           alt="$PlatformShort$ Series Annotations Example" 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-annotations"
+           alt="$Platform$ Series Annotations Example"
            github-src="charts/data-chart/series-annotations">
 </code-view>
 
@@ -22,30 +22,30 @@ The $PlatformShort$ data chart component supports layers that allow you to displ
 
  ## Callout Layer
 
-The callout layer displays annotations from existing or new data on the $PlatformShort$ data chart component. The annotations appear next to the given data values in the data source.
+The callout layer displays annotations from existing or new data on the $Platform$ data chart component. The annotations appear next to the given data values in the data source.
 
 Use the callout annotations to display additional information, such as notes or specific details about data points, that you would like to point out to your users.
 
 You can configure the callouts to target a specific series if you want to have multiple callouts layers present with different configurations. This can be done be setting the `TargetSeries` property.
 
-The following code snippet demonstrates how to add a callout layer to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a callout layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1" />
 
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2" />
-    
-    <CalloutLayer Name="callout" 
+
+    <CalloutLayer Name="callout"
         XMemberPath="Index"
         YMemberPath="Value"
         LabelMemberPath="Label" />
@@ -129,27 +129,27 @@ The following code snippet demonstrates how to add a callout layer to the $Platf
 
 The crosshair layer renders as crossing lines intersecting at the actual value of every series that they are configured to target with each series rendering a separate set of lines.
 
-You can configure the crosshair layer so that the layer will only display one specific series as by default they target all series on the $PlatformShort$ data chart component. To achieve this, set the `TargetSeries` property.
+You can configure the crosshair layer so that the layer will only display one specific series as by default they target all series on the $Platform$ data chart component. To achieve this, set the `TargetSeries` property.
 
 By default, the color of the crosshair lines is the color of the series that it is interacting with. However, this default setting can be overridden so that you can select a color that will be used for the crosshair lines. This is done by setting the `Brush` property.
 
-The following code snippet shows how to add a crosshair layer to the $PlatformShort$ data chart component:
+The following code snippet shows how to add a crosshair layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name=xAxis />
     <NumericYAxis Name=yAxis />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value2"
-        DataSource="@data" />    
+        DataSource="@data" />
     <CrosshairLayer Name="crosshair" />
 </DataChart>
 ```
@@ -216,26 +216,26 @@ The following code snippet shows how to add a crosshair layer to the $PlatformSh
 
  ## Final Value Layer
 
-The final value layer displays annotations along the data chart’s axes that represent the final value of a series on the $PlatformShort$ data chart component.
+The final value layer displays annotations along the data chart’s axes that represent the final value of a series on the $Platform$ data chart component.
 
 You can configure the annotations to target a specific series if you want to have multiple final value layers present with different configurations. This can be done be setting the `TargetSeries` property.
 
-The following code snippet demonstrates how to add a final value layer to the $PlatformShort$ data chart component:
+The following code snippet demonstrates how to add a final value layer to the $Platform$ data chart component:
 
 ```razor
 <DataChart Height="400px" Width="100%">
     <CategoryXAxis Name="xAxis" />
     <NumericYAxis Name="yAxis" />
 
-    <ColumnSeries name="series1" 
+    <ColumnSeries name="series1"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
+        YAxisName="yAxis"
         ValueMemberPath="Value1"
         DataSource="@data" />
     <ColumnSeries name="series2"
         XAxisName="xAxis"
-        YAxisName="yAxis" 
-        ValueMemberPath="Value2" />    
+        YAxisName="yAxis"
+        ValueMemberPath="Value2" />
     <FinalValueLayer Name="finalValue" />
 </DataChart>
 ```

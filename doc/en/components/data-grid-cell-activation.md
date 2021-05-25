@@ -1,21 +1,21 @@
 ---
-title: $PlatformShort$ Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
+title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
 _description: Use Infragistics' $ProductName$ Data Table & Grid to support the cell activation feature that will enable keyboard navigation through the cells of the grid. View $ProductName$ table tutorials!
-_keywords: $PlatformShort$ Table, Data Grid, cell activation, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, cell activation, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'GridActivationMode']
 ---
 
-# $PlatformShort$ Grid Cell Activation
+# $Platform$ Grid Cell Activation
 
 The $ProductName$ Data Table / Data Grid supports a cell activation feature that will enable keyboard navigation through the cells of the grid. This is activated by setting the `ActivationMode` property of the grid to `Cell`.
 
-## $PlatformShort$ Grid Cell Activation Example
+## $Platform$ Grid Cell Activation Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-activation" 
-           alt="$PlatformShort$ Grid Cell Activation Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-activation"
+           alt="$Platform$ Grid Cell Activation Example"
            github-src="grids/data-grid/cell-activation">
 </code-view>
 
@@ -42,7 +42,7 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 
 ## Code Snippet
 
-The following demonstrates how to implement cell activation in the  $PlatformShort$ data grid:
+The following demonstrates how to implement cell activation in the  $Platform$ data grid:
 
 ```tsx
 <IgrDataGrid
@@ -62,6 +62,6 @@ The following demonstrates how to implement cell activation in the  $PlatformSho
 
 ```razor
 <DataGrid Height="100%" Width="100%"
-    DataSource="DataSource"          
+    DataSource="DataSource"
     ActivationMode="GridActivationMode.Cell" />
 ```

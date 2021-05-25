@@ -1,10 +1,10 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Bar and Column Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create bar and column charts such as bar chart, stacked column chart, waterfall chart and many more. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Bar and Column Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create bar and column charts such as bar chart, stacked column chart, waterfall chart and many more. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Bar and Column Charts
+# $Platform$ Bar and Column Charts
 
 The $ProductName$ provides the following types of column charts:
 

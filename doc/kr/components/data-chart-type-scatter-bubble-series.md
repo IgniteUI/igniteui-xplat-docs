@@ -1,10 +1,10 @@
 ---
-제목: 데이터 차트 구성 요소 - 네이티브 $PlatformShort$ | $ProductName$
+제목: 데이터 차트 구성 요소 - 네이티브 $Platform$ | $ProductName$
 _description: $ProductName$ 데이터 차트는 축, 마커, 시리즈, 범례 및 주석 레이어의 모듈 식 디자인을 제공하는 차트 구성 요소입니다. 이 차트를 사용하면 동일한 차트 영역에 이러한 시각적 요소의 인스턴스를 여러 개 만들어 복합 차트 뷰를 만들 수 있습니다.
-_keywords: $ProductName$, $PlatformShort$, Native $PlatformShort$ Components Suite, Native $PlatformShort$ Controls, Native $PlatformShort$ Components, Native $PlatformShort$ Components Library, $PlatformShort$ Chart, $PlatformShort$ Chart Control, $PlatformShort$ Chart Example, $PlatformShort$ Chart Component, $PlatformShort$ Data Chart
+_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Chart Control, $Platform$ Chart Example, $Platform$ Chart Component, $Platform$ Data Chart
 _language: kr
 ---
-# $PlatformShort$ 분산 버블 시리즈
+# $Platform$ 분산 버블 시리즈
 
 이 항목에서는 코드 예제를 사용하여 `XamDataChart` 제어에서 분산 `BubbleSeries`를 사용하는 방법을 설명합니다. 이 시리즈는
 데카르트(x, y) 좌표계를 사용하여 데이터를 플롯하는 [분산 마커 시리즈](data-chart-type-scatter-point-series.md)와 유사합니다. 이 시리즈는 데이터를 크기가 변경된 버블 집합으로 표시하는데 각 버블에는 위치를 결정하는 숫자 X /Y 값과 크기를 결정하는 세 번째 값이 있습니다.
@@ -13,9 +13,9 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-series"  
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-series"
            github-src="charts/data-chart/type-scatter-series">
 </code-view>
 

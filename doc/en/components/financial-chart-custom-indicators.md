@@ -1,26 +1,26 @@
 ---
-title: $PlatformShort$ Financial Chart | Data Visualization Tools | Infragistics | Custom Indicators
+title: $Platform$ Financial Chart | Data Visualization Tools | Infragistics | Custom Indicators
 _description: Use the financial chart component to visualize financial data using a simple API. View the demo, dependencies, usage and toolbar for more information.
-_keywords: $PlatformShort$ charts, financial chart, $ProductName$, Infragistics
+_keywords: $Platform$ charts, financial chart, $ProductName$, Infragistics
 mentionedTypes: ['FinancialChart']
 ---
-# $PlatformShort$ Custom Indicators
+# $Platform$ Custom Indicators
 
-The $PlatformShort$ financial chart component allows you to define custom financial indicators to display in the Indicator Pane.
+The $Platform$ financial chart component allows you to define custom financial indicators to display in the Indicator Pane.
 
-## $PlatformShort$ Custom Indicators Example
+## $Platform$ Custom Indicators Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-custom-indicators"
-           alt="$PlatformShort$ Custom Indicators Example"
+           alt="$Platform$ Custom Indicators Example"
            github-src="charts/financial-chart/custom-indicators">
 </code-view>
 
 <div class="divider--half"></div>
 
-In the $PlatformShort$ financial chart component, you can enable custom financial indicators by adding names for them to the `customIndicatorNames` property and performing calculations for them in the `applyCustomIndicators` event.
+In the $Platform$ financial chart component, you can enable custom financial indicators by adding names for them to the `customIndicatorNames` property and performing calculations for them in the `applyCustomIndicators` event.
 
 The following code example shows how to set up and calculate two custom indicators, one featuring the Simple Moving Average (SMA) and one displaying random values.
 

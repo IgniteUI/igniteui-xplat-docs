@@ -1,19 +1,19 @@
 ---
-title: $PlatformShort$ Dock Manager | Updating Panes | Infragistics
-_description: Use Infragistics' $PlatformShort$ dock manager control to create interactive content using panes that can update based on actions. Check out $ProductName$ dock manager tutorials! 
+title: $Platform$ Dock Manager | Updating Panes | Infragistics
+_description: Use Infragistics' $Platform$ dock manager control to create interactive content using panes that can update based on actions. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, updating panes, $ProductName$
 ---
-# $PlatformShort$ Updating Panes in Dock Manager
+# $Platform$ Updating Panes in Dock Manager
 
-The Infragistics $PlatformShort$ Dock Manager component provides you with the layout for creating interactive content in your application using panes that can update based on actions of end-users.
+The Infragistics $Platform$ Dock Manager component provides you with the layout for creating interactive content in your application using panes that can update based on actions of end-users.
 
-## $PlatformShort$ Updating Panes in Dock Manager Example
+## $Platform$ Updating Panes in Dock Manager Example
 
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes" 
-           alt="$PlatformShort$ Updating Panes in Dock Manager Example" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes"
+           alt="$Platform$ Updating Panes in Dock Manager Example"
            github-src="layouts/dock-manager/updating-panes">
 </code-view>
 

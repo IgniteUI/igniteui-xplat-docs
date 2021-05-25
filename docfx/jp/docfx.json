@@ -45,7 +45,7 @@
         "cleanupCacheHistory": true,
         "disableGitFeatures": true,
         "sitemap": {
-            "baseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformShortLower}/",
+            "baseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
             "changefreq": "weekly",
             "priority": 0.7,
             "fileOptions":{

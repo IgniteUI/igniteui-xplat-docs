@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Line Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create line charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, line chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Line Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create line charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, line chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Line Chart
+# $Platform$ Line Chart
 
-The $ProductName$ line chart belongs to a group of category charts and it is rendered using a collection of points connected by straight line segments. Values are represented on the y-axis and categories are displayed on the x-axis. `LineSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $PlatformShort$ line chart is identical to the $PlatformShort$ spline chart in all aspects except that line connecting data points do not have spline interpolation and smoothing for improved presentation of data.
+The $ProductName$ line chart belongs to a group of category charts and it is rendered using a collection of points connected by straight line segments. Values are represented on the y-axis and categories are displayed on the x-axis. `LineSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $Platform$ line chart is identical to the $Platform$ spline chart in all aspects except that line connecting data points do not have spline interpolation and smoothing for improved presentation of data.
 
-## $PlatformShort$ Line Chart Example
+## $Platform$ Line Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-line-series" 
-           alt="$PlatformShort$ Line Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-line-series"
+           alt="$Platform$ Line Chart Example"
            github-src="charts/data-chart/type-category-line-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `LineSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `LineSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`

@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Chart Features | Data Visualization | Infragistics
-_description: Infragistics' $PlatformShort$ Chart Features
-_keywords: $PlatformShort$ Charts, Features, Infragistics
+title: $Platform$ Chart Features | Data Visualization | Infragistics
+_description: Infragistics' $Platform$ Chart Features
+_keywords: $Platform$ Charts, Features, Infragistics
 mentionedTypes: []
 ---
-# $PlatformShort$ Chart Features
+# $Platform$ Chart Features
 
 The $ProductName$ Charts allow you to display many different features to portray the full data story to be told with your chart. Each of these features are fully customizable, and can be styled to suit your design needs - allowing you full control. Interactions such as highlighting and annotations allow you to call out important data details allowing for a deeper data analysis within your chart.
 
-The $PlatformShort$ Charts offer the following chart features:
+The $Platform$ Charts offer the following chart features:
 
 ### Axis
 
-Modify or customize all aspects of both the X-Axis and Y-Axis using the different axis properties. You can display gridlines, customize the style of tickmarks, change axis titles, and even modify axis locations and crossing values. You can learn more about customizations of the $PlatformShort$ chart's [Axis Gridlines](features/chart-axis-gridlines.md), [Axis Layouts](features/chart-axis-layouts.md), and [Axis Options](features/chart-axis-options.md) topic.
+Modify or customize all aspects of both the X-Axis and Y-Axis using the different axis properties. You can display gridlines, customize the style of tickmarks, change axis titles, and even modify axis locations and crossing values. You can learn more about customizations of the $Platform$ chart's [Axis Gridlines](features/chart-axis-gridlines.md), [Axis Layouts](features/chart-axis-layouts.md), and [Axis Options](features/chart-axis-options.md) topic.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="$PlatformShort$ Axis Crossing Axes Example"
+           alt="$Platform$ Axis Crossing Axes Example"
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
@@ -30,7 +30,7 @@ These additional layers are on top of the chart which are mouse / touch dependen
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="$PlatformShort$ Annotations Example"
+           alt="$Platform$ Annotations Example"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
@@ -43,7 +43,7 @@ Animate your chart as it loads a new data source by enabling animations. These a
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="$PlatformShort$ Configuration Options Example"
+           alt="$Platform$ Configuration Options Example"
            github-src="charts/category-chart/line-chart-with-animations">
 </code-view>
 
@@ -56,7 +56,7 @@ Bring focus to visuals such as lines, columns, or markers by highlighting them a
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="$PlatformShort$ Highlighting Example"
+           alt="$Platform$ Highlighting Example"
            github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
 </code-view>
 
@@ -69,7 +69,7 @@ Identify data points quickly, even if the value falls between major gridlines wi
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$PlatformShort$ Configuration Options Example"
+           alt="$Platform$ Configuration Options Example"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
@@ -82,7 +82,7 @@ You can navigate the chart by zooming and panning with the mouse, keyboard, and 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$PlatformShort$ Navigation Example"
+           alt="$Platform$ Navigation Example"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
@@ -95,7 +95,7 @@ Overlays allows you to annotate important values and thresholds by plotting hori
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$PlatformShort$ Value Overlay Example"
+           alt="$Platform$ Value Overlay Example"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
@@ -103,12 +103,12 @@ Overlays allows you to annotate important values and thresholds by plotting hori
 
 ### Performance
 
-$PlatformShort$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the charts and they should be considered when optimizing performance in your application. You can learn more about this feature in the [Chart Performance](features/chart-performance.md) topic.
+$Platform$ charts are optimized for high performance of rendering millions of data points and updating them every few milliseconds. However, there are several chart features that affect performance of the charts and they should be considered when optimizing performance in your application. You can learn more about this feature in the [Chart Performance](features/chart-performance.md) topic.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           alt="$PlatformShort$ Chart Performance Example" >
+           alt="$Platform$ Chart Performance Example" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -120,7 +120,7 @@ Display all information relevant to the particular series type via Tooltips. The
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="$PlatformShort$ Tooltip Types Example"
+           alt="$Platform$ Tooltip Types Example"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
@@ -128,12 +128,12 @@ Display all information relevant to the particular series type via Tooltips. The
 
 ### Trendlines
 
-Use trendlines to identify a trend or find patterns in your data. There are many different trendlines supported by the $PlatformShort$ chart, such as CubicFit and LinearFit. You can learn more about this feature in the [Chart Trendlines](features/chart-trendlines.md) topic.
+Use trendlines to identify a trend or find patterns in your data. There are many different trendlines supported by the $Platform$ chart, such as CubicFit and LinearFit. You can learn more about this feature in the [Chart Trendlines](features/chart-trendlines.md) topic.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="$PlatformShort$ Trendlines Example"
+           alt="$Platform$ Trendlines Example"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 

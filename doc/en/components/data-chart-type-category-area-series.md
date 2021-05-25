@@ -1,27 +1,27 @@
 ---
-title: $PlatformShort$ Data Chart | Data Visualization Tools | Area Chart | Data Binding | Infragistics
-_description: Use Infragistics' $PlatformShort$ charts control to create area charts. Learn about our $ProductName$ graph types!
-_keywords: $PlatformShort$ charts, data chart, area chart, $ProductName$, Infragistics
+title: $Platform$ Data Chart | Data Visualization Tools | Area Chart | Data Binding | Infragistics
+_description: Use Infragistics' $Platform$ charts control to create area charts. Learn about our $ProductName$ graph types!
+_keywords: $Platform$ charts, data chart, area chart, $ProductName$, Infragistics
 mentionedTypes: ['XamDataChart']
 ---
-# $PlatformShort$ Area Chart
+# $Platform$ Area Chart
 
-The $ProductName$ area chart belongs to a group of category charts and is rendered using a collection of points connected by line segments with the area below the line filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `AreaSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $PlatformShort$ area chart is identical to the $PlatformShort$ spline area chart in all aspects except that line connecting data points do not have spline interpolation and smoothing for improved presentation of data.
+The $ProductName$ area chart belongs to a group of category charts and is rendered using a collection of points connected by line segments with the area below the line filled in. Values are represented on the y-axis and categories are displayed on the x-axis. `AreaSeries` emphasizes the amount of change over a period of time or compares multiple items as well as the relationship of parts to a whole by displaying the total of the plotted values. The $Platform$ area chart is identical to the $Platform$ spline area chart in all aspects except that line connecting data points do not have spline interpolation and smoothing for improved presentation of data.
 
-## $PlatformShort$ Area Chart Example
+## $Platform$ Area Chart Example
 
 
-<code-view style="height: 400px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-area-series" 
-           alt="$PlatformShort$ Area Chart Example" 
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-category-area-series"
+           alt="$Platform$ Area Chart Example"
            github-src="charts/data-chart/type-category-area-series">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Required Axes
-The $PlatformShort$ data chart component provides various types of axes but only the following types of axes can be used with `AreaSeries`.
+The $Platform$ data chart component provides various types of axes but only the following types of axes can be used with `AreaSeries`.
 
 - `CategoryXAxis`
 - `OrdinalTimeXAxis`
