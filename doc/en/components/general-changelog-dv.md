@@ -112,6 +112,10 @@ eg.
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
 ### Data Grid
 
 * Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
@@ -145,6 +149,8 @@ eg.
 * `ShowWeekNumbers` - Toggles Week number visibility
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
 * Added Accessibility
+
+<!-- end: Blazor, React, WebComponents -->
 
 <div class="divider--half"></div>
 
