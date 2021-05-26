@@ -3,7 +3,15 @@ title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
 ---
-# $ProductName$ Change Log
+<!-- Angular -->
+
+# $ProductName$ Changelog (Data Visualization)
+
+<!-- end: Angular -->
+
+<div class="divider--half"></div>
+
+# $ProductName$ Changelog
 
 All notable changes for each version of this project will be documented in this file.
 
