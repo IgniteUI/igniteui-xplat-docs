@@ -114,7 +114,9 @@ eg.
 
 ### Data Grid
 
-* Added `EditModeClickAction` property - aka Excel-style Editing, instantly begin editing when typing. Normally double-clicking is required to enter edit mode. 
+* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+
+* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
 
 * Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right) 
 
