@@ -1,6 +1,6 @@
 ---
 title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
-_description: Learn about new features in the $ProductName$.
+_description: $ProductName$ の新機能について学んでください。
 _keywords: What's New,  $ProductName$, Infragistics, 新機能, インフラジスティックス
 ---
 # $ProductName$ の新機能

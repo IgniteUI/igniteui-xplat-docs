@@ -8,14 +8,14 @@ _language: ja
 
 このトピックでは、$ProductName$ の重大な変更に関する情報と、古いコードを最新の API に更新する方法について説明します。
 
-## Redesigned Chart Defaults
+## チャート デフォルト値のデザイン更新
 
 > [!NOTE]
-> These breaking changes were introduce in version **{PackageVerChangedCharts}** of these packages and components:
+> これらの重大な変更は、パッケージおよびコンポーネントの **{PackageVerChangedCharts}** バージョンで導入されました:
 	
-- All types of charts/series have new colors for brush/fill and outlines 
+- すべてのタイプのチャート/シリーズには、ブラシ/塗りつぶしとアウトラインの新しい色があります。 
 
-Old series brushes outlines  | New series outline brushes 
+古いシリーズのブラシのアウトライン  | 新シリーズのブラシのアウトライン 
 ------------- | -------------
 `Color_001=#7446B9`  | `Color_001=#8bdc5c`
 `Color_002=#9FB328`  | `Color_002=#8b5bb1` 
@@ -28,29 +28,29 @@ Old series brushes outlines  | New series outline brushes
 `Color_009=#795548`  | `Color_009=#e051a9` 
 `Color_010=#9A9A9A`  | `Color_010=#a8a8b7` 
 
-- All types of charts/series have marker outlines with 2px thickness  
+- すべてのタイプのチャート/シリーズには、2 px の厚さのマーカー アウトラインがあります。 
 
-- Bar/Column/Waterfall series have outlines with 1px thickness (other series have 2px thickness) 
+- 棒/縦棒/ウォーターフォール シリーズには 1 px の厚さのアウトラインがあります (他のシリーズには 2 pxの厚さになります)。
 
-- Bar/Column/Waterfall series have square corners instead of rounded corners anymore 
+- 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。 
 
-- Point/Bubble/ScatterSeries/PolarScatter series have markers with 70% transparent fill 
+- ポイント/バブル/ScatterSeries/PolarScatter シリーズには、70% 透明の塗りつぶしのマーカーがあります。 
 
-- Point/Bubble/ScatterSeries/PolarScatter series have markers with fill that matches marker outline. To revert to the previous styling behavior for these series a new property has been added to the series, `MarkerFillMode`, which can be set to normal to mimic the prior behavior. 
+- ポイント/バブル/ScatterSeries/PolarScatter シリーズには、マーカーのアウトラインに一致する塗りつぶしのマーカーがあります。これらのシリーズの以前のスタイル設定の動作に戻すために、新しいプロパティ `MarkerFillMode` がシリーズに追加されました。これは、以前の動作を模倣するために標準に設定できます。 
 
-- Scatter High Density series has new colors for min/max heat properties 
+- 散布高密度シリーズには、最小/最大ヒート プロパティの新しい色があります。 
 
-    Old heat min color  | New heat min color
+    古いヒート最小色  | 新しいヒート最小色
     ------------- | -------------
     `#FF7446B9` | `#ff8b5bb1`
 
-    Old heat max color  | New heat max color  
+    古いヒート最大色  | 新しいヒート最大色  
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
-- Financial/Waterfall series have new colors for negative fill of their visuals 
+- ファイナンシャル/ウォーターフォール シリーズには、新しいビジュアルのマイナス値の塗りつぶしの色があります。 
 
-    Old negative brush | new negative brush  
+    古いマイナス値のブラシ | 新しいマイナス値のブラシ  
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
