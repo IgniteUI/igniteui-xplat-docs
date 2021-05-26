@@ -1,19 +1,21 @@
 ---
-title: $Platform$ 重大な変更 | $ProductName$ | インフラジスティックス
-_description: $ProductName$ の重大な変更とコードを最新の API に更新する方法について説明します。
-_keywords: Breaking Changes, $ProductName$, Infragistics, 重大な変更, インフラジスティックス
-_language: ja
+title: $Platform$ What's New | $ProductName$ | Infragistics
+_description: Learn about new features in the $ProductName$.
+_keywords: Changelog, What's New,  $ProductName$, Infragistics
 ---
-# $ProductName$ の重大な変更
+# $ProductName$ Change Log
 
-このトピックでは、$ProductName$ の重大な変更に関する情報と、古いコードを最新の API に更新する方法について説明します。
+All notable changes for each version of this project will be documented in this file.
 
-## Redesigned Chart Defaults
+## **{PackageVerChangedCharts}**
 
-> [!NOTE]
-> These breaking changes were introduce in version **{PackageVerChangedCharts}** of these packages and components:
-	
-- All types of charts/series have new colors for brush/fill and outlines 
+### Charts
+
+This release introduces several new and improved visual design and configuration options for all of the chart components. e.g. Data Chart, Category Chart, and Financial Chart.
+
+Redesigned Chart Defaults:
+
+* New color palette for series/markers in all charts. - All types of charts/series have new colors for brush/fill and outlines 
 
 Old series brushes outlines  | New series outline brushes 
 ------------- | -------------
@@ -28,17 +30,16 @@ Old series brushes outlines  | New series outline brushes
 `Color_009=#795548`  | `Color_009=#e051a9` 
 `Color_010=#9A9A9A`  | `Color_010=#a8a8b7` 
 
-- All types of charts/series have marker outlines with 2px thickness  
+eg.
 
-- Bar/Column/Waterfall series have outlines with 1px thickness (other series have 2px thickness) 
+<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
+------------- | -------------
+<img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
 
-- Bar/Column/Waterfall series have square corners instead of rounded corners anymore 
+<div class="divider--half"></div>
 
-- Point/Bubble/ScatterSeries/PolarScatter series have markers with 70% transparent fill 
-
-- Point/Bubble/ScatterSeries/PolarScatter series have markers with fill that matches marker outline. To revert to the previous styling behavior for these series a new property has been added to the series, `MarkerFillMode`, which can be set to normal to mimic the prior behavior. 
-
-- Scatter High Density series has new colors for min/max heat properties 
+* Changed Bar/Column/Waterfall series to have square corners instead of rounded corners 
+* Changed Scatter High Density series’ colors for min/max heat properties
 
     Old heat min color  | New heat min color
     ------------- | -------------
@@ -48,22 +49,114 @@ Old series brushes outlines  | New series outline brushes
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
-- Financial/Waterfall series have new colors for negative fill of their visuals 
+* Changed Financial/Waterfall series’ colors for negative fill of their visuals 
 
     Old negative brush | new negative brush  
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
+* Changed marker's thickness to 2px from 1px
+* Changed marker's fill to match the marker's outline for PointSeries, BubbleSeries, ScatterSeries, PolarScatterSeries 
+    - Note, you can use set `MarkerFillMode` property to Normal to undo this change
+* Compressed labelling for the TimeXAxis and OrdinalTimeXAxis
+* New Marker Properties:
+    - `MarkerFillMode` - Can be set to 'MatchMarkerOutline' so the marker depends on the outline
+    - `MarkerFillOpacity` - Can be set to a value 0 to 1
+    - `MarkerOutlineMode` - Can be set to 'MatchMarkerBrush' so the marker's outline depends on the fill brush color
+* New Series `OutlineMode` Property:
+    - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
+* New Plot Area Margin Properties:
+    - `PlotAreaMarginLeft` 
+    - `PlotAreaMarginTop`
+    - `PlotAreaMarginRight`
+    - `PlotAreaMarginBottom`
+    - `ComputedPlotAreaMarginMode`
+    - The plot area margin properties define the bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart.   
+* New Highlighting Properties
+    - `HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+    - `HighlightingBehavior` - Sets whether the series highlights depending on mouse position eg. directly over or nearest item
+    - Note, in previous releases the highlighting was limited to fade on hover. 
+* Added Highlighting for the following series:
+    - Stacked
+    - Scatter
+    - Polar
+    - Radial 
+    - Shape
+* Added Annotation layers to the following series:
+    - Stacked
+    - Scatter
+    - Polar
+    - Radial
+    - Shape
+* Added support for overriding the data source of individual stack fragments within a stacked series 
+* Added custom style events to Stacked, Scatter, Range, Polar, Radial, and Shape series
+* Added support to automatically sync the vertical zoom to the series content
+* Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed 
+
+### Chart Legend
+
+* Added Horizontal Orientation for ItemLegend
+    - The following chart types can use ItemLegend in horizontal orientation:
+        - Bubble
+        - Donut
+        - Pie 
+* `LegendHighlightingMode` - Enables series highlighting when hovering over legend items
+
+### Geographic Map
+
+> [!NOTE]
+> These features are CTP
+
+* Added support for wrap around display of the map (scroll infinitely horizontally)  
+* Added support for shifting display of some map series while wrapping around the coordinate origin  
+* Added support for highlighting of the shape series
+* Added support for some annotation layers for the shape series
+
+### Data Grid
+
+* Added `EditModeClickAction` property - aka Excel-style Editing, instantly begin editing when typing. Normally double-clicking is required to enter edit mode. 
+
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right) 
+
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. eg. Options are (moves to the cell below, above, right, left)
+
+* Added `SelectAllRows` - method.
+
+* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+    - Click and drag to select rows
+    - Shift and click to select multiple rows.
+    - Shift and press the up/down arrow keys to select multiple rows.
+
+* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+
+* Added Column Summaries to Column Options Dialog. 
+
+### Date Picker 
+
+* `ShowTodayButton` - Toggles Today button visibility
+* `Label` - Adds a label above the date value
+* `Placeholder` property - adds custom text when no value is selected 
+* `FormatString` - Customize input date string eg. (`yyyy-MM-dd`)
+* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
+* `FirstDayOfWeek` - Specifies first day of week 
+* `FirstWeekOfYear` - Specifies when to display first week of the year. eg. (First Full Week, First Four day Week)
+* `ShowWeekNumbers` - Toggles Week number visibility
+* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+* Added Accessibility
+
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-
-## PropertyPath の名称変更
-
-データ グリッド コンポーネントの `propertyPath` プロパティ名が `field` に変更されました。これは、すべての Column タイプ、GroupDescription、SortDescription および SummaryDescription に適用します。
+## **{PackageVerChangedFields}** 
 
 > [!NOTE]
-> これらの重大な変更は、グリッド パッケージの **{PackageVerChangedFields}** バージョンで導入されました。
+> These breaking changes were introduce in the grid package.
+
+### Data Grid
+
+- Changed name of PropertyPath
+
+The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
 
 ```tsx
  <IgrTextColumn field="Name"/>
@@ -93,15 +186,18 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
+## **{PackageVerRenamedGrid}**
 
-## Live Grid の名称変更
+### Data Grid
 
-Data Grid コンポーネントおよび対応するモジュールの名前が 「LiveGrid」 から 「DataGrid」 に変更されました。
+- Changed Name of Live Grid
+
+The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
 
 > [!NOTE]
-> これらの重大な変更は、パッケージおよびコンポーネントの **{PackageVerRenamedGrid}** バージョンで導入されました。
+> These breaking changes were introduce in these packages and components only:
 
-グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
+The new code for importing the grid and it's corresponding module is:
 
 ```ts
 import { IgrDataGrid } from "igniteui-react-grids";
@@ -113,9 +209,9 @@ import { IgcDataGrid } from "igniteui-webcomponents-grids";
 import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
 ```
 
-## Data Grid の必須ピア依存関係
+- Required Peer Dependency for Data Grid
 
-Data Grid コンポーネントには 「inputs」 パッケージが必要です。
+The data grid component requires the "inputs" package.
 
 ```ts
 **npm install --save {PackageInputs}**
@@ -125,30 +221,31 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
+## **{PackageVerChangedImports}**
 
-## Import ステートメントの変更
+- Changed Import Statements
 
-Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
+Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
 > [!NOTE]
-> これらの重大な変更は、パッケージおよびコンポーネントの **{PackageVerChangedImports}** バージョン で導入されました。
+> These breaking changes were introduce in these packages and components only:
 
-| 影響されるパッケージ | 影響されるコンポーネント |
+| Affected Packages | Affected Components |
 | ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel ライブラリ](excel-library.md)  |
-| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [スプレッドシート](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [地理マップ](geo-map.md)、[ツリーマップ](treemap-overview.md)  |
-| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [ブレット グラフ](bullet-graph.md)、[リニア ゲージ](linear-gauge.md)、[ラジアル ゲージ](radial-gauge.md)   |
-| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| カテゴリ チャート、データ チャート、ドーナツ チャート、ファイナンシャル チャート、円チャート、[ズーム スライダー](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a>             | [データ グリッド](data-grid.md)       |
-| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
+| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
+| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](treemap-overview.md)  |
+| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
+| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a>             | [Data Grid](data-grid.md)       |
+| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
 
 
-## 変更後のコード
+- Code After Changes
 
-API クラスと列挙型へのフル パスの代わりにパッケージ名のみを使用できます。
+Now, you need to use just package names instead of full paths to API classes and enums.
 
-注: Data Grid コンポーネントとそれに対応するモジュールの名前も変更されました。
+Please also note that the name of the Data Grid component and its corresponding modules have also changed.
 
 ```ts
 // gauges:
@@ -224,10 +321,9 @@ import { IgrLiveGrid } from "igniteui-react-grids";
 import { IgrLiveGridModule } from 'igniteui-react-grids';
 ```
 
+- Code Before Changes
 
-## 変更前のコード
-
-以前は、API クラスと列挙型への完全なパスを使用してインポートする必要がありました。
+Before, you had to import using full paths to API classes and enums:
 
 ```ts
 // gauges:
@@ -273,8 +369,8 @@ import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-g
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
 
 // grids:
-import { IgcDataGridModule } from 'igniteui-webcomponents-grids/ES5/igc-data-grid-module';
-import { IgcDataGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-data-grid-component';
+import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
+import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
 ```
 
 ```ts
@@ -299,7 +395,7 @@ import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
 
 // grids:
-import { IgrDataGrid } from "igniteui-react-grids/ES5/igr-data-grid";
-import { IgrDataGridModule } from 'igniteui-react-grids/ES5/igr-data-grid-module';
+import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
 ```
 <!-- end: Angular, React, WebComponents -->

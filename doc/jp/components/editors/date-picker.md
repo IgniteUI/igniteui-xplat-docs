@@ -58,86 +58,104 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 
 - テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
 
-- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。カレンダー ボタンの色を変更するには、コントロールの `IconColor` プロパティを設定します。
+- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。
 
-- クリア ボタン: クリア ボタンはカレンダー ボタンのすぐ左にあり、X で表示されます。クリックすると、日付選択の `Value` をクリアします。クリア ボタンの表示/非表示は、日付選択の `ShowClearButton` プロパティを設定して切り替えることができます。
+- Clear Button: The 'x' icon will clear the current value.
+
+プロパティ | タイプ | 説明
+---------|------|------------
+`IconColor` | string | Changes the color of the calendar button.
+`AllowTextInput`  |  bool   |  The date picker's value can be typed-in and modified by toggling this property to true.
+`DateFormat` | enum | Defaults to DateShort eg. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as eg. Wednesday, April 14, 2021. 
+`FirstDayOfWeek` | enum | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar. eg. Monday through Sunday.
+`FormatString` | string  | When DateShort is used, the date's format can be configured eg. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored.
+`Label`  |  string | Displays custom text above the date in the top-left corner of the Date Picker.
+`MinDate` | DateTime | Restricts earlier dates from being selected or viewed.
+`MaxDate` | DateTime | Restricts later dates from being selected or viewed.
+`Placeholder` | string  |  A custom string to be displayed when the value within the edit portion of the calendar is cleared.
+`ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the Date Picker. The clear button's visibility can be toggled on and off. 
+`ShowTodayButton`| bool  |  The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off.
+`ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the date picker. The week number's visibility can be toggled on and off. 
+`FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek.
+`OpenOnFocus` | bool | By default, the dropdown portion of the Date Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar.
+`Value` | date | Sets the value of the Date Picker and selects it in the dropdown calendar. 
 
 ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
 
-### 初期値の設定
+### 編集
 
-以下のコードは、`DatePicker` コンポーネントの値を追加および設定する方法を示します。
+The following example demonstrates how to enable editing in the `DatePicker`.
 
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />
-    );
-}
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker 編集の例"
+           github-src="editors/date-picker/editing">
+</code-view>
 
-public onDatePickerRef(datePicker: IgrDatePicker){
-    datePicker.value = new Date(Date.now());
-}
-```
+<div class="divider--half"></div>
 
-<!-- WebComponents -->
-```html
-<igc-date-picker id="datePicker" height="50px" width="220px">
-</igc-date-picker>
-```
+### Date Limits
 
-```ts
-constructor() {
-    let datePicker = document.getElementById("datePicker") as IgcDatePickerComponent;
-    this.datePicker.value = new Date(Date.now());
-}
-```
-<!-- end:WebComponents -->
+The following example demonstrates how to restrict selected dates in the `DatePicker`.
 
-```razor
-<DatePicker Height="50px" Width="220px" Value="@SelectedDate" />
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
+           alt="$PlatformShort$ Date Picker Date Limits Example"
+           github-src="editors/date-picker/date-limits">
+</code-view>
 
-@code {
-    public DateTime SelectedDate { get; set; }
+<div class="divider--half"></div>
 
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-        this.SelectedDate = DateTime.Today;
-    }
-}
-```
+### Date Formats
 
-### カスタマイズ
+The following example demonstrates how apply a long date in the `DatePicker`.
 
-以下のコードは、アイコンの色を設定し、クリア ボタンを非表示にして、`DatePicker` コンポーネントをカスタマイズする方法を示します。
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
+           alt="$PlatformShort$ Date Picker Format Example"
+           github-src="editors/date-picker/format">
+</code-view>
 
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
-    );
-}
-```
+<div class="divider--half"></div>
 
-<!-- WebComponents -->
-```html
-  <igc-date-picker id="datePicker" height="50px" width="220px"
-        show-clear-button="false"
-        icon-color="red">
-  </igc-date-picker>
-```
+### Date Ranges
 
-<!-- end:WebComponents -->
+The following example demonstrates how combine multiple `DatePicker` controls. 
 
-```razor
-<DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
+           alt="$PlatformShort$ Date Picker Date Range Example"
+           github-src="editors/date-picker/range">
+</code-view>
 
-@code {
+<div class="divider--half"></div>
 
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-    }
-}
-```
+## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです:
+
+- `DatePicker`
+- `IconColor`
+- `AllowTextInput`
+- `DateFormat`
+- `FirstDayOfWeek`
+- `FormatString`
+- `Label`
+- `MinDate`
+- `MaxDate`
+- `Placeholder`
+- `ShowClearButton`
+- `ShowTodayButton`
+- `ShowWeekNumbers`
+- `FirstWeekOfYear`
+- `OpenOnFocus`
+- `Value`
+- `TextColor`
+- `TextFontFamily`
+- `TextFontSize`
+- `TextFontStyle`
+- `TextFontWeight`

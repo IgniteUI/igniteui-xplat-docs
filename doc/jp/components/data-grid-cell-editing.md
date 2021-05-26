@@ -35,6 +35,10 @@ $Platform$ データ グリッドの編集は、$Platform$ グリッドの `Edit
 
 コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
 
+## Excel Style Editing
+
+Set the `EditModeClickAction` property to SingleClick to allow users to quickly edit cells.
+
 ## コード スニペット
 
 以下は、データ グリッドで編集を設定し、データをコミットする方法を示します。

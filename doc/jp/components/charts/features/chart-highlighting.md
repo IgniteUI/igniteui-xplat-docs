@@ -23,6 +23,31 @@ _language: ja
 
 <div class="divider--half"></div>
 
+# $Platform$ Chart Highlighting Modes & Behaviors
+
+All $Platform$ Charts support a variety of highlighting options. `HighlightingMode` can be set to brighten or fade when the mouse is hovering over a series/data item rendered in the plot area. `HighlightingBehavior` can be set to directly over or the nearest data item to trigger the highlighting effect. Highlighting modes and behaviors is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting-modes"
+           alt="$Platform$ Highlighting Modes Example"
+           github-src="charts/category-chart/category-chart-column-chart-with-highlighting-modes">
+</code-view>
+
+<div class="divider--half"></div>
+
+# $Platform$ Chart Legend Highlighting
+
+All $Platform$ Charts support legend highlighting. `LegendHighlightingMode` can enabled so that when mouse is hovering over a legend marker item then the rendered series will highlight in the plot area. Legend highlighting is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting-legend"
+           alt="$Platform$ Legend Highlighting Example"
+           github-src="charts/category-chart/category-chart-column-chart-with-highlighting-legend">
+</code-view>
+
+<div class="divider--half"></div>
 
 ## 強調表示レイヤー
 
@@ -46,6 +71,9 @@ $ProductName$ `CategoryChart` は、データ項目にカーソルを合わせ�
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
+- `HighlightingMode`
+- `HighlightingBehavior`
+- `LegendHighlightingBehavior`
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`
