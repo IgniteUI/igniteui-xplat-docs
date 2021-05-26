@@ -32,7 +32,7 @@ Selection in the $Platform$ data grid is enabled on a row and cell level and can
 - `MultipleRow`: Selection of multiple rows is enabled.
 - `RangeCell`: Selection of a range of multiple cells by clicking and dragging is enabled.
 
-When set to `MultipleRow` or `MultipleCell`, it is not necessary to hold the CTRL key to select multiple rows or cells. Each row or cell will be selected or deselected on click of that particular row or cell.
+`SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only. 
 
 `MultipleRow` includes the following functionality:
 - Click and drag to select rows
