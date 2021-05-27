@@ -37,7 +37,7 @@ Commits can be approved or declined at the grid level by hooking `onDataCommitti
 
 ## Excel Style Editing
 
-Set the `EditModeClickAction` property to SingleClick to allow users to quickly edit cells.
+`EditOnKeyPress ` enables you to instantly begin editing when typing similar to how Excel behaves. In addition you may set the `EditModeClickAction` property to `SingleClick` to allow users to quickly edit cells while navigating to other cells. By default double-clicking is required to enter edit mode. 
 
 ## Code Snippet
 

@@ -112,9 +112,15 @@ eg.
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
 ### Data Grid
 
-* Added `EditModeClickAction` property - aka Excel-style Editing, instantly begin editing when typing. Normally double-clicking is required to enter edit mode. 
+* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+
+* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
 
 * Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right) 
 
@@ -143,6 +149,8 @@ eg.
 * `ShowWeekNumbers` - Toggles Week number visibility
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
 * Added Accessibility
+
+<!-- end: Blazor, React, WebComponents -->
 
 <div class="divider--half"></div>
 
