@@ -113,9 +113,15 @@ _language: ja
 * シェイプ シリーズの強調表示のサポートが追加されました。
 * シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
 
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
 ### データ グリッド
 
-* `EditModeClickAction` プロパティを追加しました - 別名 Excel スタイルの編集。入力するとすぐに編集を開始します。通常、編集モードに入るにはダブ ルクリックが必要です。 
+* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+
+* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell. 
 
 * `EnterKeyBehaviors` プロパティ (別名 Excel スタイルのナビゲーション (Enter 動作)) を追加して、Enter キーの動作を制御します。例えば、オプションは (なし、編集、上、下、左、右に移動) です。 
 
@@ -144,6 +150,8 @@ _language: ja
 * `ShowWeekNumbers` - 週番号の表示を切り替えます。
 * `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
 * アクセシビリティの追加
+
+<!-- end: Blazor, React, WebComponents -->
 
 <div class="divider--half"></div>
 
