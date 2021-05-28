@@ -451,7 +451,8 @@
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
-  {
+  {    
+    "exclude": ["Blazor"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
     "status": ""
@@ -552,7 +553,7 @@
     "name": "Category Chart",
     "href": "category-chart.md",
     "status": "",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "items": [
       {
         "name": "Annotations",
@@ -596,7 +597,7 @@
     "name": "Data Chart",
     "href": "data-chart.md",
     "status": "",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "items": [
       {
         "name": "Axis",
@@ -973,7 +974,7 @@
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Blazor", "Angular", "React", "WebComponents"],
         "name": "Data Sources",
         "href": "data-chart-data-sources.md",
         "status": ""
