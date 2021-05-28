@@ -23,13 +23,13 @@ _language: ja
 
 <div class="divider--half"></div>
 
-# $Platform$ Chart Highlighting Modes & Behaviors
+# $Platform$ チャートの強調表示モードと動作
 
-All $Platform$ Charts support a variety of highlighting options. `HighlightingMode` can be set to brighten or fade when the mouse is hovering over a series/data item rendered in the plot area. `HighlightingBehavior` can be set to directly over or the nearest data item to trigger the highlighting effect. Highlighting modes and behaviors is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
+すべての $Platform$ チャートは、さまざまな強調表示オプションをサポートしています。`HighlightingMode` は、プロット領域に描画されたシリーズ/データ項目にマウスを合わせたときに明るくまたはフェードするように設定できます。`HighlightingBehavior` は、強調表示の効果をトリガーするために、直接または最も近いデータ項目に設定できます。強調表示のモードと動作は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
 
-# $Platform$ Chart Legend Highlighting
+# $Platform$ チャート凡例の強調表示
 
-All $Platform$ Charts support legend highlighting. `LegendHighlightingMode` can enabled so that when mouse is hovering over a legend marker item then the rendered series will highlight in the plot area. Legend highlighting is supported by the `CategoryChart`, `FinancialChart`, and `XamDataChart` controls and they have the same API for using the highlighting feature.
+すべての $Platform$ チャートは、凡例の強調表示をサポートしています。`LegendHighlightingMode` を有効にすると、マウスが凡例マーカー項目にカーソルを合わせると、描画されたシリーズがプロット領域で強調表示されます。凡例の強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
 
 ## 強調表示レイヤー
 

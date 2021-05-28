@@ -22,9 +22,9 @@ $ProductName$ Data Table / Data Grid は、グリッドのセルを介したキ�
 
 <div class="divider--half"></div>
 
-## Excel Style Navigation
+## Excel スタイルのナビゲーション
 
-`EnterBehaviorAfterEdit` property will configure the grid to navigate to the next cell up, down, left or right after the enter key is pressed in edit mode. Otherwise, the `EnterBehavior` property of the grid can be used to navigate to other cells, while not in edit mode, up, down, left or right.
+`EnterBehaviorAfterEdit` プロパティは、編集モードで Enter キーが押された後、上、下、左、または右の次のセルに移動するようにグリッドを構成します。それ以外の場合は、グリッドの `EnterBehavior` プロパティを使用して、編集モードではなく、上、下、左、または右に他のセルに移動できます。
 
 ## キーボード ナビゲーション
 

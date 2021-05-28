@@ -35,21 +35,21 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 
 `SelectionBehavior` のデフォルトは `ModifierBased` で、一度に 1 つの行またはセルのみが選択され、項目を複数選択するには修飾キー (CTRL) が必要です。`SelectionBehavior` を `Toggle` に設定すると、シングル クリックでのみ複数の行またはセルを選択できます。 
 
-`MultipleRow` includes the following functionality:
-- Click and drag to select rows
-- Shift and click to select multiple rows.
-- Shift and press the up/down arrow keys to select multiple rows.
+`MultipleRow` には次の機能が含まれています。
+- クリックしてドラッグし、行を選択します。
+- Shift キーを押しながらクリックして、複数の行を選択します。
+- Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
 
-Pressing the space bar toggles selection of active row via `MultipleRow` or `SingleRow`.
+スペース バーを押すと、`MultipleRow` または `SingleRow` を介してアクティブな行の選択が切り替わります。
 
-## Row Range Selection
+## 範囲の行選択
 
-The following example demonstrates how to selected or deselected all rows in the grid. Note, `SelectionMode` must be set to MultipleRow.
+次の例は、グリッド内のすべての行を選択または選択解除する方法を示しています。`SelectionMode` は MultipleRow に設定する必要があることに注意してください。
 
 <code-view style="height: 600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
-           alt="$PlatformShort$ Grid Selection Example" 
+           alt="$PlatformShort$ グリッド選択の例" 
            github-src="grids/data-grid/row-selection">
 </code-view>
 

@@ -60,31 +60,31 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 
 - カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。
 
-- Clear Button: The 'x' icon will clear the current value.
+- クリア ボタン: x アイコンは現在の値をクリアします。
 
 プロパティ | タイプ | 説明
 ---------|------|------------
-`IconColor` | string | Changes the color of the calendar button.
-`AllowTextInput`  |  bool   |  The date picker's value can be typed-in and modified by toggling this property to true.
-`DateFormat` | enum | Defaults to DateShort eg. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as eg. Wednesday, April 14, 2021. 
-`FirstDayOfWeek` | enum | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar. eg. Monday through Sunday.
-`FormatString` | string  | When DateShort is used, the date's format can be configured eg. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored.
-`Label`  |  string | Displays custom text above the date in the top-left corner of the Date Picker.
-`MinDate` | DateTime | Restricts earlier dates from being selected or viewed.
-`MaxDate` | DateTime | Restricts later dates from being selected or viewed.
-`Placeholder` | string  |  A custom string to be displayed when the value within the edit portion of the calendar is cleared.
-`ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the Date Picker. The clear button's visibility can be toggled on and off. 
-`ShowTodayButton`| bool  |  The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off.
-`ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the date picker. The week number's visibility can be toggled on and off. 
-`FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek.
-`OpenOnFocus` | bool | By default, the dropdown portion of the Date Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar.
-`Value` | date | Sets the value of the Date Picker and selects it in the dropdown calendar. 
+`IconColor` | string | カレンダー ボタンの色を変更します。
+`AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
+`DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。 
+`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。 例えば、月曜日から日曜日。
+`FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
+`Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
+`MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。
+`MaxDate` | DateTime | 後の日付が選択または表示されないように制限します。
+`Placeholder` | string  |  カレンダーの編集部分の値がクリアされたときに表示されるカスタム文字列。
+`ShowClearButton` | bool  |  デフォルトは true で、クリア ボタンはカレンダー ボタンのすぐ左にあり、X で視覚化されます。クリックすると、日付ピッカーの `Value` がクリアされます。クリア ボタンの表示は、オンとオフを切り替えることができます。
+`ShowTodayButton`| bool  |  本日は、カレンダーが開かれた日付のすぐ下に表示されます。クリックすると、現在の日付が選択されます。本日のボタンの表示は、オンとオフを切り替えることができます。
+`ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。 
+`FirstWeekOfYear` | enum | 年間の週の開始番号を構成します。FirstDay、FirstFourDayWeek、FirstFullWeek に設定できます。
+`OpenOnFocus` | bool | デフォルトでは、日付ピッカーのドロップダウン部分はシングル クリックで開かれ、ユーザーはカレンダー ボタンをクリックしてカレンダーをドロップダウンする必要があります。
+`Value` | date | 日付ピッカーの値を設定し、ドロップダウン カレンダーで選択します。
 
 ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
 
 ### 編集
 
-The following example demonstrates how to enable editing in the `DatePicker`.
+次の例は、`DatePicker` で編集を有効にする方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -95,40 +95,40 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 
 <div class="divider--half"></div>
 
-### Date Limits
+### 日付制限
 
-The following example demonstrates how to restrict selected dates in the `DatePicker`.
+次の例は、`DatePicker` で選択した日付を制限する方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="$PlatformShort$ Date Picker Date Limits Example"
+           alt="$PlatformShort$ Date Picker 日付制限の例"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Date Formats
+### 日付の書式
 
-The following example demonstrates how apply a long date in the `DatePicker`.
+次の例は、`DatePicker` で長い日付を適用する方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="$PlatformShort$ Date Picker Format Example"
+           alt="$PlatformShort$ Date Picker 書式の例"
            github-src="editors/date-picker/format">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Date Ranges
+### 日付範囲
 
-The following example demonstrates how combine multiple `DatePicker` controls. 
+次の例は、複数の `DatePicker` コントロールを組み合わせる方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="$PlatformShort$ Date Picker Date Range Example"
+           alt="$PlatformShort$ Date Picker 日付範囲の例"
            github-src="editors/date-picker/range">
 </code-view>
 
