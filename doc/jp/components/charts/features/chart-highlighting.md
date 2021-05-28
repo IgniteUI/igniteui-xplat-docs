@@ -23,6 +23,13 @@ _language: ja
 
 <div class="divider--half"></div>
 
+# $Platform$ チャートの強調表示モードと動作
+
+すべての $Platform$ チャートは、さまざまな強調表示オプションをサポートしています。`HighlightingMode` は、プロット領域に描画されたシリーズ/データ項目にマウスを合わせたときに明るくまたはフェードするように設定できます。`HighlightingBehavior` は、強調表示の効果をトリガーするために、直接または最も近いデータ項目に設定できます。強調表示のモードと動作は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
+
+# $Platform$ チャート凡例の強調表示
+
+すべての $Platform$ チャートは、凡例の強調表示をサポートしています。`LegendHighlightingMode` を有効にすると、マウスが凡例マーカー項目にカーソルを合わせると、描画されたシリーズがプロット領域で強調表示されます。凡例の強調表示は、`CategoryChart`、`FinancialChart`、および `XamDataChart` コントロールでサポートされており、強調表示機能を使用するための同じ API を備えています。
 
 ## 強調表示レイヤー
 
@@ -46,6 +53,9 @@ $ProductName$ `CategoryChart` は、データ項目にカーソルを合わせ�
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
+- `HighlightingMode`
+- `HighlightingBehavior`
+- `LegendHighlightingBehavior`
 - `IsCategoryHighlightingEnabled`
 - `IsItemHighlightingEnabled`
 - `IsSeriesHighlightingEnabled`

@@ -40,19 +40,25 @@
     "exclude": ["Angular", "Blazor"],
     "name": "ドック マネージャー",
     "href": "dock-manager.md",
-    "status": "UPDATED",
+    "status": "",
     "items": [
       {
-      "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Blazor", "WebComponents"],
         "name": "ペインの更新",
         "href": "dock-manager-updating-panes.md",
         "status": ""
       },
       {
-      "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Blazor", "WebComponents"],
         "name": "フレームの埋め込み",
         "href": "dock-manager-embedding-frames.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "デスクトップ統合",
+        "href": "dock-manager-electron.md",
+        "status": "NEW"
       }
     ]
   },
@@ -91,7 +97,7 @@
     "exclude": ["Angular"],
     "name": "日付選択",
     "href": "editors/date-picker.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular"],
@@ -108,7 +114,7 @@
       {
         "name": "アクセシビリティの遵守",
         "href": "data-grid-accessibility.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "name": "ライブ データのバインド",
@@ -153,17 +159,17 @@
       {
         "name": "セルのアクティブ化",
         "href": "data-grid-cell-activation.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "グリッド編集",
         "href": "data-grid-cell-editing.md",
-        "status": "NEW"
+        "status": "UPDATED"
       },
       {
         "name": "セル選択",
         "href": "data-grid-cell-selection.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "列アニメーション",
@@ -238,7 +244,7 @@
       {
         "name": "行の強調表示",
         "href": "data-grid-row-highlighting.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
@@ -505,7 +511,7 @@
         {
           "name": "チャート強調表示",
           "href": "charts/features/chart-highlighting.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート マーカー",
@@ -951,7 +957,7 @@
         "exclude": ["Blazor"],
         "name": "同期",
         "href": "data-chart-synchronization.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "タイトルとサブタイトル",

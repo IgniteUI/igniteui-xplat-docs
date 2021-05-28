@@ -22,6 +22,10 @@ $ProductName$ Data Table / Data Grid は、グリッドのセルを介したキ�
 
 <div class="divider--half"></div>
 
+## Excel スタイルのナビゲーション
+
+`EnterBehaviorAfterEdit` プロパティは、編集モードで Enter キーが押された後、上、下、左、または右の次のセルに移動するようにグリッドを構成します。それ以外の場合は、グリッドの `EnterBehavior` プロパティを使用して、編集モードではなく、上、下、左、または右に他のセルに移動できます。
+
 ## キーボード ナビゲーション
 
 グリッドの `ActivationMode` プロパティを `Cell` に設定すると、データ グリッド内のさまざまなキーボードナビゲーションオプションが有効になります。以下は、現在押下されているセルに対する各キーの押下/組み合わせとそれらが持つ効果についての説明です。
@@ -40,29 +44,3 @@ $ProductName$ Data Table / Data Grid は、グリッドのセルを介したキ�
 - <b>Ctrl + 右矢印キー</b>: 列の一番右のセルに移動します。
 - <b>Ctrl + Home</b>: グリッド内の左上のセルに移動します。
 - <b>Ctrl + End</b>: グリッド内の右下のセルに移動します。
-
-## コード スニペット
-
-以下は、$Platform$ データ グリッドでセルのアクティブ化を実装する方法を示しています。
-
-```tsx
-<IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    activationMode="Cell" />
-```
-
-```html
-<igc-data-grid id="grid"
-     height="100%"
-     width="100%"
-     activation-mode="Cell">
-</igc-data-grid>
-```
-
-```razor
-<DataGrid Height="100%" Width="100%"
-    DataSource="DataSource"
-    ActivationMode="GridActivationMode.Cell" />
-```

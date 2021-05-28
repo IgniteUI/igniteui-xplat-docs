@@ -33,30 +33,24 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 - `MultipleRow`: 複数行の選択が可能になります。
 - `RangeCell`: クリックしてドラッグの複数セル範囲の選択が可能になります。
 
-`MultipleRow` または `MultipleCell` に設定すると、複数行またはセルを選択するために CTRL キーを押す必要はありません。各行/セルは、その特定の行/セルをクリックしたときに選択または選択解除されます。
+`SelectionBehavior` のデフォルトは `ModifierBased` で、一度に 1 つの行またはセルのみが選択され、項目を複数選択するには修飾キー (CTRL) が必要です。`SelectionBehavior` を `Toggle` に設定すると、シングル クリックでのみ複数の行またはセルを選択できます。 
 
-## コード スニペット
+`MultipleRow` には次の機能が含まれています。
+- クリックしてドラッグし、行を選択します。
+- Shift キーを押しながらクリックして、複数の行を選択します。
+- Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
 
-以下は、$Platform$ データ グリッド上の選択を構成して、複数行の選択を設定する方法を紹介します。
+スペース バーを押すと、`MultipleRow` または `SingleRow` を介してアクティブな行の選択が切り替わります。
 
-```tsx
-<IgrDataGrid
-    height="100%"
-    width="100%"
-    dataSource={this.data}
-    selectionMode="MultipleRow" />
-```
+## 範囲の行選択
 
-```html
-<igc-data-grid id="grid"
-      height="100%"
-      width="100%"
-      selection-mode="MultipleRow">
-</igc-data-grid>
-```
+次の例は、グリッド内のすべての行を選択または選択解除する方法を示しています。`SelectionMode` は MultipleRow に設定する必要があることに注意してください。
 
-```razor
-<DataGrid Height="100%" Width="100%"
-    DataSource="DataSource"
-    SelectionMode="GridSelectionMode.MultipleRow" />
-```
+<code-view style="height: 600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
+           alt="$PlatformShort$ グリッド選択の例" 
+           github-src="grids/data-grid/row-selection">
+</code-view>
+
+<div class="divider--half"></div>

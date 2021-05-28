@@ -58,86 +58,104 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 
 - テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
 
-- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。カレンダー ボタンの色を変更するには、コントロールの `IconColor` プロパティを設定します。
+- カレンダー: カレンダー ボタンをクリックすると、日付選択のカレンダー ドロップダウンが開きます。カレンダーが開き、現在選択されている `Value` の月が表示されます。`Value` が指定されていない場合、カレンダーは現在の日付に対応する月を表示します。上部の月をクリックすると、月のリストが表示され、年も同様です。月と年の可視化の左右にある矢印ボタンは、表示されている月を時系列で増減します。
 
-- クリア ボタン: クリア ボタンはカレンダー ボタンのすぐ左にあり、X で表示されます。クリックすると、日付選択の `Value` をクリアします。クリア ボタンの表示/非表示は、日付選択の `ShowClearButton` プロパティを設定して切り替えることができます。
+- クリア ボタン: x アイコンは現在の値をクリアします。
+
+プロパティ | タイプ | 説明
+---------|------|------------
+`IconColor` | string | カレンダー ボタンの色を変更します。
+`AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
+`DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。 
+`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。 例えば、月曜日から日曜日。
+`FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
+`Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
+`MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。
+`MaxDate` | DateTime | 後の日付が選択または表示されないように制限します。
+`Placeholder` | string  |  カレンダーの編集部分の値がクリアされたときに表示されるカスタム文字列。
+`ShowClearButton` | bool  |  デフォルトは true で、クリア ボタンはカレンダー ボタンのすぐ左にあり、X で視覚化されます。クリックすると、日付ピッカーの `Value` がクリアされます。クリア ボタンの表示は、オンとオフを切り替えることができます。
+`ShowTodayButton`| bool  |  本日は、カレンダーが開かれた日付のすぐ下に表示されます。クリックすると、現在の日付が選択されます。本日のボタンの表示は、オンとオフを切り替えることができます。
+`ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。 
+`FirstWeekOfYear` | enum | 年間の週の開始番号を構成します。FirstDay、FirstFourDayWeek、FirstFullWeek に設定できます。
+`OpenOnFocus` | bool | デフォルトでは、日付ピッカーのドロップダウン部分はシングル クリックで開かれ、ユーザーはカレンダー ボタンをクリックしてカレンダーをドロップダウンする必要があります。
+`Value` | date | 日付ピッカーの値を設定し、ドロップダウン カレンダーで選択します。
 
 ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
 
-### 初期値の設定
+### 編集
 
-以下のコードは、`DatePicker` コンポーネントの値を追加および設定する方法を示します。
+次の例は、`DatePicker` で編集を有効にする方法を示しています。
 
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker ref={this.onDatePickerRef} height="50px" width="220px" />
-    );
-}
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
+           alt="$PlatformShort$ Date Picker 編集の例"
+           github-src="editors/date-picker/editing">
+</code-view>
 
-public onDatePickerRef(datePicker: IgrDatePicker){
-    datePicker.value = new Date(Date.now());
-}
-```
+<div class="divider--half"></div>
 
-<!-- WebComponents -->
-```html
-<igc-date-picker id="datePicker" height="50px" width="220px">
-</igc-date-picker>
-```
+### 日付制限
 
-```ts
-constructor() {
-    let datePicker = document.getElementById("datePicker") as IgcDatePickerComponent;
-    this.datePicker.value = new Date(Date.now());
-}
-```
-<!-- end:WebComponents -->
+次の例は、`DatePicker` で選択した日付を制限する方法を示しています。
 
-```razor
-<DatePicker Height="50px" Width="220px" Value="@SelectedDate" />
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
+           alt="$PlatformShort$ Date Picker 日付制限の例"
+           github-src="editors/date-picker/date-limits">
+</code-view>
 
-@code {
-    public DateTime SelectedDate { get; set; }
+<div class="divider--half"></div>
 
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-        this.SelectedDate = DateTime.Today;
-    }
-}
-```
+### 日付の書式
 
-### カスタマイズ
+次の例は、`DatePicker` で長い日付を適用する方法を示しています。
 
-以下のコードは、アイコンの色を設定し、クリア ボタンを非表示にして、`DatePicker` コンポーネントをカスタマイズする方法を示します。
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
+           alt="$PlatformShort$ Date Picker 書式の例"
+           github-src="editors/date-picker/format">
+</code-view>
 
-```tsx
-public render(): JSX.Element {
-    return (
-        <IgrDatePicker height="50px" width="220px" showClearButton={false} iconColor="red" />
-    );
-}
-```
+<div class="divider--half"></div>
 
-<!-- WebComponents -->
-```html
-  <igc-date-picker id="datePicker" height="50px" width="220px"
-        show-clear-button="false"
-        icon-color="red">
-  </igc-date-picker>
-```
+### 日付範囲
 
-<!-- end:WebComponents -->
+次の例は、複数の `DatePicker` コントロールを組み合わせる方法を示しています。
 
-```razor
-<DatePicker Height="50px" Width="220px" IconColor="Red" ShowClearButton="false" />
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
+           alt="$PlatformShort$ Date Picker 日付範囲の例"
+           github-src="editors/date-picker/range">
+</code-view>
 
-@code {
+<div class="divider--half"></div>
 
-    protected override void OnInitialized()
-    {
-        DatePickerModule.Register(IgniteUIBlazor);
-    }
-}
-```
+## API メンバー
+
+以下は、上記のセクションで説明した API メンバーのリストです:
+
+- `DatePicker`
+- `IconColor`
+- `AllowTextInput`
+- `DateFormat`
+- `FirstDayOfWeek`
+- `FormatString`
+- `Label`
+- `MinDate`
+- `MaxDate`
+- `Placeholder`
+- `ShowClearButton`
+- `ShowTodayButton`
+- `ShowWeekNumbers`
+- `FirstWeekOfYear`
+- `OpenOnFocus`
+- `Value`
+- `TextColor`
+- `TextFontFamily`
+- `TextFontSize`
+- `TextFontStyle`
+- `TextFontWeight`
