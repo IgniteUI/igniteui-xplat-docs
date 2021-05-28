@@ -4,7 +4,18 @@ _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
 ---
-# $ProductName$ 変更ログ
+# $ProductName$ 変更ログ (データ可視化)
+
+<div class="divider--half"></div>
+
+<!-- Angular -->
+> [!NOTE]
+> このファイルは、igniteui-angular-\* パッケージ (例: igniteui-angular-charts) のみに固有です。
+
+> 追加の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+<!-- end: Angular -->
+
+<div class="divider--half"></div>
 
 このプロジェクトの各バージョンのすべての注目すべき変更は、このファイルに文書化されます。
 

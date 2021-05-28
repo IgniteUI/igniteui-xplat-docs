@@ -12,7 +12,7 @@ Excel ワークシートの `WorksheetCell` オブジェクトは、ワークシ
 ## $Platform$ セルの使用の例
 
 
-<code-view style="height: 150px"
+<code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
            alt="$Platform$ セルの使用の例"
