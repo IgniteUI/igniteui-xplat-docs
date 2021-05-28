@@ -33,7 +33,7 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 - `MultipleRow`: 複数行の選択が可能になります。
 - `RangeCell`: クリックしてドラッグの複数セル範囲の選択が可能になります。
 
-`SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only. 
+`SelectionBehavior` のデフォルトは `ModifierBased` で、一度に 1 つの行またはセルのみが選択され、項目を複数選択するには修飾キー (CTRL) が必要です。`SelectionBehavior` を `Toggle` に設定すると、シングル クリックでのみ複数の行またはセルを選択できます。 
 
 `MultipleRow` includes the following functionality:
 - Click and drag to select rows

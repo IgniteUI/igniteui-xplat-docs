@@ -35,9 +35,9 @@ $Platform$ データ グリッドの編集は、$Platform$ グリッドの `Edit
 
 コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
 
-## Excel Style Editing
+## Excel スタイル編集
 
-`EditOnKeyPress ` enables you to instantly begin editing when typing similar to how Excel behaves. In addition you may set the `EditModeClickAction` property to `SingleClick` to allow users to quickly edit cells while navigating to other cells. By default double-clicking is required to enter edit mode.
+`EditOnKeyPress` を使用すると、Excel の動作と同じように、入力時にすぐに編集を開始できます。さらに、`EditModeClickAction` プロパティを `SingleClick` に設定して、ユーザーが他のセルに移動しながらセルをすばやく編集できるようにすることができます。デフォルトでは、編集モードに入るにはダブル クリックが必要です。
 
 ## コード スニペット
 

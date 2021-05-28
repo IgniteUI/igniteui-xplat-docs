@@ -1,35 +1,36 @@
 ---
-title: $Platform$ Dock Manager | Desktop Integration | Infragistics
-_description: Use Infragistics' $Platform$ dock manager component to manage the layout of multi-window Electron desktop application. Check out $ProductName$ dock manager tutorials!
-_keywords: dock manager, layout, $ProductName$, Infragistics
+title: $Platform$ ドック マネージャー | デスクトップ統合 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、複数ウィンドウの Electron デスクトップ アプリケーションのレイアウトを管理します。$ProductName$ ドック マネージャーのチュートリアルを是非お試しください!
+_keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
+_language: ja
 ---
-# $Platform$ Dock Manager Desktop Integration
+# $Platform$ ドック マネージャー デスクトップ統合
 
-The Infragistics $Platform$ Dock Manager component can be used in a multi-window [Electron](https://www.electronjs.org/) desktop application to manage the layout of each window, drag panes outside of a window in order to create a new window and drag/drop panes from one window to another. You could find a sample implementation of such application in the following repository https://github.com/IgniteUI/dock-manager-electron-app.
+インフラジスティックスの $Platform$ ドック マネージャー コンポーネントは、複数ウィンドウの [Electron](https://www.electronjs.org/) デスクトップ アプリケーションで、各ウィンドウのレイアウトを管理したり、新しいウィンドウを作成するためにウィンドウの外側にペインをドラッグしたり、あるウィンドウから別のウィンドウにペインをドラッグアンドドロップしたりできます。このようなアプリケーションのサンプル実装は、次のリポジトリ https://github.com/IgniteUI/dock-manager-electron-app にあります。
 
 <!-- TODO: Add a gif of the application and a link to download the exe -->
 
-## Implementation
+## 実装
 
-Let's go through the most important parts of the implementation of this application.
+このアプリケーションの実装の最も重要な部分を見ていきましょう。
 
-### Project Structure
+### プロジェクト構造
 
-We have used the [Electron Forge](https://www.electronforge.io/) CLI tool and its [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) template to create an Electron application. Electron has two types of processes: Main and Renderer.
-- The Main process creates web pages by creating `BrowserWindow` instances. Each `BrowserWindow` instance runs the web page in its Renderer process.
-- The Renderer process manages only the corresponding web page.
+[Electron Forge](https://www.electronforge.io/) CLI ツールとその [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) テンプレートを使用して、Electron アプリケーションを作成しました。Electron には、メインとレンダラーの 2 種類のプロセスがあります。
+- メイン プロセスは、`BrowserWindow` インスタンスを作成することによって Web ページを作成します。各 `Browser Window` インスタンスは、レンダラー プロセスで Web ページを実行します。
+- レンダラー プロセスは、対応する Web ページのみを管理します。
 
-The `index.ts` script specifies the entry point of the Electron application that will run the Main process. Most of the code of our application is inside the `renderer.ts` file which runs in the Renderer process. The `index.html` represents the content of the web page. The styles of the web page are hosted in the `index.css` file.
+`index.ts` スクリプトは、メイン プロセスを実行する Electron アプリケーションのエントリ ポイントを指定します。アプリケーションのコードのほとんどは、レンダラー プロセスで実行される `renderer.ts` ファイル内にあります。`index.html` は、Web ページのコンテンツを表します。Web ページのスタイルは、`index.css` ファイルでホストされます。
 
-### Dock Manager Setup
+### ドック マネージャーのセットアップ
 
-After installing the Dock Manager package, we have registered the Dock Manager component using the `defineCustomElements()` in the `renderer.ts` file. This allows to add the `<igc-dockmanager>` in the `index.html` file.
+ドック マネージャー パッケージをインストールした後、`renderer.ts` ファイルの `defineCustomElements()` を使用してドック マネージャー コンポーネントを登録しました。これにより、`index.html` ファイルに `<igc-dockmanager>` を追加できます。
 
-For the Dock Manager pane contents we have used `iframe` elements which host different urls. In our case these urls point to [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) samples. Since the `iframe` elements are self-contained, moving them from one window to another is easily accomplished.
+ドック マネージャー ペインのコンテンツには、さまざまな URL をホストする `iframe` 要素を使用しました。この場合、これらの URL は [Ignite UI for Angular](https://jp.infragistics.com/products/ignite-ui-angular) のサンプルを指しています。`iframe` 要素は自己完結型であるため、あるウィンドウから別のウィンドウに簡単に移動できます。
 
-### Drag and drop
+### ドラッグ アンド ドロップ
 
-In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the [`paneHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) and [`tabHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in [`dragService`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) and attach `dragstart`/`dragend` event listeners.
+ブラウザー/アプリケーション ウィンドウの外側でのペインのドラッグをサポートするために、ブラウザー内のフローティング ペインを作成する組み込みのドラッグアンドドロップを、[HTML ドラッグアンドドロップ API](https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API) に基づくカスタム実装に置き換えました。ヘッダー要素が DOM に接続されたときに発生する [`paneHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) イベントと [`tabHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) イベントにサブスクライブしました。ヘッダー要素が接続されると、組み込みの [`dragService`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) をリセットし、`dragstart`/`dragend` イベント リスナーをアタッチします。
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
@@ -49,7 +50,7 @@ dockManager.addEventListener('paneHeaderConnected', paneHeaderConnected);
 ```
 
 
-In the `paneHeaderDragStart` function we set the [`draggedPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#draggedpane) property of the Dock Manager component which will notify it that a drag operation has been started.
+`panelHeaderDragStart` 関数で、ドック マネージャー コンポーネントの [`draggedPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#draggedpane) プロパティを設定し、ドラッグ操作が開始されたことを通知します。
 
 ```ts
 const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
@@ -59,7 +60,7 @@ const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
 }
 ```
 
-We have subscribed to the `dragover` and `drop` events of the `document` element. In the `dragover` listener we notify the Dock Manager that the mouse is dragged over it by setting its [`dropPosition`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#dropposition) property. This forces the Dock Manager to display its docking indicators.
+`document` 要素の `dragover` と `drop` イベントにサブスクライブしました。`dragover` リスナーでは、[`dropPosition`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#dropposition) プロパティを設定することにより、マウスがその上にドラッグされたことをドック マネージャーに通知します。これにより、ドック マネージャーはドッキング インジケーターを表示します。
 
 ```ts
 const handleDocumentDragOver = (event: DragEvent) => {
@@ -75,7 +76,7 @@ document.addEventListener('dragover', handleDocumentDragOver);
 document.addEventListener('drop', handleDocumentDrop);
 ```
 
-In the `paneHeaderDragEnd` function we detect if the pane was dropped outside the browser/application window and we call the `droppedOutOfWindow` function.
+`panelHeaderDragEnd` 関数では、ペインがブラウザー/アプリケーション ウィンドウの外にドロップされたかどうかを検出し、`droppedOutOfWindow` 関数を呼び出します。
 
 ```ts
 const paneHeaderDragEnd = async (event: DragEvent) => {
@@ -90,7 +91,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-When the pane header is dropped inside a document we call the [`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns `true`. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
+ペイン ヘッダーがドキュメント内にドロップされると、[`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) メソッドが呼び出され、ドラッグされたペインがドロップされたことをドック マネージャーに通知します。ペインがドッキング インジケーターにドロップされた場合、メソッドは `true` を返します。ペインがドラッグ元と同じウィンドウにドロップされた場合、ペインは自動的に新しい位置にドッキングされます。ただし、別のウィンドウにドロップされた場合は、`droppedInAnotherWindow` 関数を呼び出します。この関数は、最初にソースのドック マネージャーからペインを削除してから、新しいペインに追加します。
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -109,7 +110,7 @@ const handleDocumentDrop = async (event: DragEvent) => {
 }
 ```
 
-When a pane is dropped out of its current window, we need to remove the `draggedPane` from its Dock Manager component and update the layout.
+ペインが現在のウィンドウから削除されたら、`draggedPane` をドック マネージャー コンポーネントから削除し、レイアウトを更新する必要があります。
 
 ```ts
 const draggedPane = dockManager.draggedPane as IgcContentPane;
@@ -117,7 +118,7 @@ await dockManager.removePane(draggedPane);
 dockManager.layout = { ...dockManager.layout };
 ```
 
-Next, we need to move the pane content element to its new window. For this purpose, we use the [`document.adoptNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptNode) method, which allows us to transfer the content element node to the new document and finally, append it as a child of the new Dock Manager component.
+次に、ペインのコンテンツ要素を新しいウィンドウに移動する必要があります。この目的のために、[`document.adoptNode()`](https://developer.mozilla.org/ja/docs/Web/API/Document/adoptNode) メソッドを使用します。これにより、コンテンツ要素ノードを新しいドキュメントに転送し、最後に、新しいドック マネージャー コンポーネントの子として追加できます。
 
 ```ts
 const contentElement = dockManager.querySelector('[slot=' + draggedPane.contentId + ']');
@@ -127,9 +128,9 @@ const adoptedNode = newDocument.adoptNode(contentElement);
 newDockManager.appendChild(adoptedNode);
 ```
 
-### Window Management
+### ウィンドウ管理
 
-We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to `true` when creating the `BrowserWindow` in the `index.ts`. This gives us direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
+ネイティブの [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) メソッドを使用して、レンダラー プロセスで新しいウィンドウを開きます。`index.ts` に `BrowserWindow` を作成するときに、`nativeWindowOpen` オプションを `true` に設定します。これにより、子 `Window` オブジェクトとその `document` に直接アクセスできます。この Electron [トピック](https://www.electronjs.org/docs/api/window-open)で、レンダラー プロセスからウィンドウを開く方法について詳しく読むことができます。`nativeWindowOpen` オプションはまだ実験段階であることに注意してください。
 
 ```ts
 mainWindow = new BrowserWindow({
@@ -141,6 +142,6 @@ mainWindow = new BrowserWindow({
 });
 ```
 
-In this application we have implemented an `IDockManagerWindow` type which could be either a main window (`IMainDockManagerWindow`) or a child window (`IChildDockManagerWindow`). The main window is the one created when the application starts. It contains references to all its child windows. A child window is created when a pane is dropped out of a window and has a reference to the main window of the application.
+このアプリケーションでは、メイン ウィンドウ (`IMainDockManagerWindow`) または子ウィンドウ (`IChildDockManagerWindow`) のいずれかである `IDockManagerWindow` タイプを実装しました。メイン ウィンドウは、アプリケーションの起動時に作成されるウィンドウです。すべての子ウィンドウへの参照が含まれています。子ウィンドウは、ペインがウィンドウからドロップされ、アプリケーションのメイン ウィンドウへの参照がある場合に作成されます。
 
-For the full source code please clone the [repository](https://github.com/IgniteUI/dock-manager-electron-app).
+完全なソース コードについては、[リポジトリ](https://github.com/IgniteUI/dock-manager-electron-app)のクローンを作成してください。
