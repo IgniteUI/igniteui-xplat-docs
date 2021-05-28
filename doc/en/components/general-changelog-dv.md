@@ -3,7 +3,18 @@ title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
 ---
-# $ProductName$ Change Log
+# $ProductName$ Changelog (Data Visualization)
+
+<div class="divider--half"></div>
+
+<!-- Angular -->
+> [!NOTE]
+> This file is specific to igniteui-angular-\* packages only. (eg. igniteui-angular-charts) 
+
+> For additional changes, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) 
+<!-- end: Angular -->
+
+<div class="divider--half"></div>
 
 All notable changes for each version of this project will be documented in this file.
 
