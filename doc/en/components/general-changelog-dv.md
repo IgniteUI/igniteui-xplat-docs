@@ -8,10 +8,12 @@ _keywords: Changelog, What's New,  $ProductName$, Infragistics
 <div class="divider--half"></div>
 
 <!-- Angular -->
+
 > [!NOTE]
 > This file is specific to igniteui-angular-\* packages only. (eg. igniteui-angular-charts) 
 
 > For additional changes, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) 
+
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
