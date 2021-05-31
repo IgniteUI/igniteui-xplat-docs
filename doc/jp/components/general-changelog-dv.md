@@ -9,10 +9,12 @@ _language: ja
 <div class="divider--half"></div>
 
 <!-- Angular -->
+
 > [!NOTE]
 > このファイルは、igniteui-angular-\* パッケージ (例: igniteui-angular-charts) のみに固有です。
 
 > 追加の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
@@ -108,7 +110,7 @@ _language: ja
 ### チャート凡例
 
 * ItemLegend に水平方向を追加しました。
-    - 次のチャート タイプでは、ItemLegend を水平方向で使用できます:
+   - 次のチャート タイプでは、ItemLegend を水平方向で使用できます:
         - バブル
         - ドーナツ
         - 円 
