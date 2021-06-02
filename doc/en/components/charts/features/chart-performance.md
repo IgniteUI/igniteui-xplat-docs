@@ -170,25 +170,25 @@ Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#$Platform$-s
 
 ### Chart Animations
 
-Enabling [Chart Animations](chart-animations.md) will slightly delay final rendering series in the $ProductShort$ charts while they play transition-in animations.
+Enabling [Chart Animations](chart-animations.md) will slightly delay final rendering series in the $PlatformShort$ charts while they play transition-in animations.
 
 ### Chart Annotations
 
-Enabling [Chart Annotations](chart-annotations.md) such as the Callout Annotations, Crosshairs Annotations, or Final Value Annotations, will slightly decrease performance of the $ProductShort$ chart.
+Enabling [Chart Annotations](chart-annotations.md) such as the Callout Annotations, Crosshairs Annotations, or Final Value Annotations, will slightly decrease performance of the $PlatformShort$ chart.
 
 ### Chart Highlighting
 
-Enabling the [Chart Highlighting](chart-highlighting.md) will slightly decrease performance of the $ProductShort$ chart.
+Enabling the [Chart Highlighting](chart-highlighting.md) will slightly decrease performance of the $PlatformShort$ chart.
 
 ### Chart Legend
 
-Adding a legend to the $ProductShort$ charts might decrease performance if titles of series or data items mapped to legend are changing often at runtime.
+Adding a legend to the $PlatformShort$ charts might decrease performance if titles of series or data items mapped to legend are changing often at runtime.
 
 ### Chart Markers
 
-In $ProductShort$ charts, [Markers](chart-markers.md) are especially expensive when it comes to chart performance because they add to the layout complexity of the chart, and perform data binding to obtain certain information. Also, markers decrease performance when there are a lot of data points or if there are many data sources bound. Therefore, if markers are not needed, they should be removed from the chart.
+In $PlatformShort$ charts, [Markers](chart-markers.md) are especially expensive when it comes to chart performance because they add to the layout complexity of the chart, and perform data binding to obtain certain information. Also, markers decrease performance when there are a lot of data points or if there are many data sources bound. Therefore, if markers are not needed, they should be removed from the chart.
 
-This code snippet shows how to remove markers from the $ProductShort$ charts.
+This code snippet shows how to remove markers from the $PlatformShort$ charts.
 
 ```razor
 // on CategoryChart or FinancialChart
@@ -213,7 +213,7 @@ this.LineSeries.markerType = MarkerType.None;
 
 Setting the `Resolution` property to a higher value will improve performance, but it will lower the graphical fidelity of lines of plotted series. As such, it can be increased up until the fidelity is unacceptable.
 
-This code snippet shows how to decrease resolution in the $ProductShort$ charts.
+This code snippet shows how to decrease resolution in the $PlatformShort$ charts.
 
 ```razor
 // on CategoryChart or FinancialChart:
@@ -235,11 +235,11 @@ this.LineSeries.Resolution = 10;
 
 ### Chart Overlays
 
-Enabling [Chart Overlays](chart-overlays.md) will slightly decrease performance of the $ProductShort$ chart.
+Enabling [Chart Overlays](chart-overlays.md) will slightly decrease performance of the $PlatformShort$ chart.
 
 ### Chart Trendlines
 
-Enabling [Chart Trendlines](chart-trendlines.md) will slightly decrease performance of the $ProductShort$ chart.
+Enabling [Chart Trendlines](chart-trendlines.md) will slightly decrease performance of the $PlatformShort$ chart.
 
 ### Axis Types
 
@@ -257,22 +257,37 @@ This code snippet shows how to ordinal/category x-axis in the `FinancialChart` a
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$FinancialChart xAxisMode="Ordinal"/>
+```html
+<igx-financial-chart xAxisMode="Ordinal"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis label="Time" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis label="Time"></igx-category-x-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrFinancialChart xAxisMode="Ordinal" />
+
+<IgrDataChart>
+    <IgrCategoryXAxis label="Time" />
+</IgrDataChart>
+```
+
+```html
+<igc-financial-chart x-axis-mode="Ordinal"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis label="Time"></igc-category-x-axis>
+</igc-data-chart>
 ```
 
 ### Axis Intervals
 
-By default, $ProductShort$ charts will automatically calculate `YAxisInterval` based on range of your data. Therefore, you should avoid setting axis interval especially to a small value to prevent rendering of too many of axis gridlines and axis labels. Also, you might want to consider increasing `YAxisInterval` property to a larger value than the automatically calculated axis interval if you do not need many axis gridlines or axis labels.
+By default, $PlatformShort$ charts will automatically calculate `YAxisInterval` based on range of your data. Therefore, you should avoid setting axis interval especially to a small value to prevent rendering of too many of axis gridlines and axis labels. Also, you might want to consider increasing `YAxisInterval` property to a larger value than the automatically calculated axis interval if you do not need many axis gridlines or axis labels.
 
 > Note, we do not recommend setting axis minor interval as it will decrease chart performance.
 
-This code snippet shows how to set axis major interval in the $ProductShort$ charts.
+This code snippet shows how to set axis major interval in the $PlatformShort$ charts.
 
 ```razor
 <CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
@@ -285,16 +300,37 @@ This code snippet shows how to set axis major interval in the $ProductShort$ cha
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  xAxisInterval="5" yAxisInterval="50"/>
+```html
+<igx-category-chart xAxisInterval="5" yAxisInterval="50"></igx-category-chart>
 
-<Ig$FinancialChart xAxisInterval="5" yAxisInterval="50"/>
+<igx-financial-chart xAxisInterval="5" yAxisInterval="50"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" interval="5" />
-    <Ig$NumericYAxis  name="yAxis" interval="50"/>
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" interval="5"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" interval="50"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  xAxisInterval={5} yAxisInterval={50}/>
+
+<IgrFinancialChart xAxisInterval={5} yAxisInterval={50}/>
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" interval={5} />
+    <IgrNumericYAxis  name="yAxis" interval={50}/>
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-interval="5" y-axis-interval="50"></igc-category-chart>
+
+<igc-financial-chart x-axis-interval="5" y-axis-interval="50"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" interval="5"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" interval="50"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### Axis Scale
@@ -305,7 +341,7 @@ Setting the `YAxisIsLogarithmic` property to false is recommended for higher per
 
 In the same way as Markers, axis labels are also expensive because they use templates and bindings, and may have their data context changed often. If labels are not used, they should be hidden or their interval should be increased to decrease number of axis labels.
 
-This code snippet shows how to hide axis labels in the $ProductShort$ charts.
+This code snippet shows how to hide axis labels in the $PlatformShort$ charts.
 
 ```razor
 <CategoryChart
@@ -324,29 +360,48 @@ This code snippet shows how to hide axis labels in the $ProductShort$ charts.
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart
-    xAxisLabelVisibility="Collapsed"
-    yAxisLabelVisibility="Collapsed" >
-</Ig$CategoryChart>
+```html
+<igx-category-chart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed">
+</igx-category-chart>
 
-<Ig$FinancialChart
-    xAxisLabelVisibility="Collapsed"
-    yAxisLabelVisibility="Collapsed" >
-</Ig$FinancialChart>
+<igx-financial-chart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed">
+</igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" LabelVisibility="Collapsed" />
-    <Ig$NumericYAxis  name="yAxis" LabelVisibility="Collapsed" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" labelVisibility="Collapsed"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" labelVisibility="Collapsed"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed" />
+
+<IgrFinancialChart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed" />
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" labelVisibility="Collapsed" />
+    <IgrNumericYAxis  name="yAxis" labelVisibility="Collapsed" />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-label-visibility="Collapsed" y-axis-label-visibility="Collapsed">
+</igc-category-chart>
+
+<igc-financial-chart x-axis-label-visibility="Collapsed" y-axis-label-visibility="Collapsed">
+</igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" label-visibility="Collapsed"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" label-visibility="Collapsed"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### Axis Labels Abbreviation
 
-Although, the $ProductShort$ charts support abbreviation of large numbers (e.g. 10,000+) displayed in axis labels when `YAxisAbbreviateLargeNumbers` is set to true. We recommend, instead pre-processing large values in your data items by dividing them a common factor and then setting `YAxisTitle` to a string that represents factor used used to abbreviate your data values.
+Although, the $PlatformShort$ charts support abbreviation of large numbers (e.g. 10,000+) displayed in axis labels when `YAxisAbbreviateLargeNumbers` is set to true. We recommend, instead pre-processing large values in your data items by dividing them a common factor and then setting `YAxisTitle` to a string that represents factor used used to abbreviate your data values.
 
-This code snippet shows how to set axis title in the $ProductShort$ charts.
+This code snippet shows how to set axis title in the $PlatformShort$ charts.
 
 ```razor
 <CategoryChart  YAxisTitle="In millions of Dollars"/>
@@ -358,22 +413,41 @@ This code snippet shows how to set axis title in the $ProductShort$ charts.
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  yAxisTitle="In millions of Dollars" />
+```html
+<igx-category-chart yAxisTitle="In millions of Dollars"></igx-category-chart>
 
-<Ig$FinancialChart yAxisTitle="In millions of Dollars" />
+<igx-financial-chart yAxisTitle="In millions of Dollars"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$NumericYAxis title="In millions of Dollars" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-numeric-y-axis title="In millions of Dollars"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  yAxisTitle="In millions of Dollars" />
+
+<IgrFinancialChart yAxisTitle="In millions of Dollars" />
+
+<IgrDataChart>
+    <IgrNumericYAxis title="In millions of Dollars" />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart y-axis-title="In millions of Dollars"></igc-category-chart>
+
+<igc-financial-chart y-axis-title="In millions of Dollars"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-numeric-y-axis title="In millions of Dollars"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### Axis Labels Extent
 
-At runtime, the $ProductShort$ charts adjust extent of labels on y-axis based on a label with longest value. This might decrease chart performance if range of data changes and labels need to be updated often. Therefore, it is recommended to set label extent at design time in order to improve chart performance.
+At runtime, the $PlatformShort$ charts adjust extent of labels on y-axis based on a label with longest value. This might decrease chart performance if range of data changes and labels need to be updated often. Therefore, it is recommended to set label extent at design time in order to improve chart performance.
 
-The following code snippet shows how to set a fixed extent for labels on y-axis in the $ProductShort$ charts.
+The following code snippet shows how to set a fixed extent for labels on y-axis in the $PlatformShort$ charts.
 
 ```razor
 <CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
@@ -386,21 +460,42 @@ The following code snippet shows how to set a fixed extent for labels on y-axis 
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  xAxisLabelExtent="50" yAxisLabelExtent="50"/>
+```html
+<igx-category-chart xAxisLabelExtent="50" yAxisLabelExtent="50"></igx-category-chart>
 
-<Ig$FinancialChart xAxisLabelExtent="50" yAxisLabelExtent="50"/>
+<igx-financial-chart xAxisLabelExtent="50" yAxisLabelExtent="50"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" labelExtent="50" />
-    <Ig$NumericYAxis  name="yAxis" labelExtent="50"/>
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" labelExtent="50"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" labelExtent="50"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  xAxisLabelExtent={50} yAxisLabelExtent={50}/>
+
+<IgrFinancialChart xAxisLabelExtent={50} yAxisLabelExtent={50}/>
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" labelExtent={50} />
+    <IgrNumericYAxis  name="yAxis" labelExtent={50} />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-label-extent="50" y-axis-label-extent="50"></igc-category-chart>
+
+<igc-financial-chart x-axis-label-extent="50" y-axis-label-extent="50"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" label-extent="50"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" label-extent="50"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### Axis Other Visuals
 
-Enabling additional axis visuals (e.g. axis titles) or changing their default values might decrease performance in the $ProductShort$ charts.
+Enabling additional axis visuals (e.g. axis titles) or changing their default values might decrease performance in the $PlatformShort$ charts.
 
 For example, changing these properties on the `CategoryChart` or `FinancialChart` control:
 
@@ -429,7 +524,7 @@ Axis Strips          | `Strip`
 
 ## Performance in Financial Chart
 
-In addition to above performance guidelines, the $ProductShort$ `FinancialChart` control has the following unique features that affect performance.
+In addition to above performance guidelines, the $PlatformShort$ `FinancialChart` control has the following unique features that affect performance.
 
 ### Y-Axis Mode
 
@@ -454,7 +549,7 @@ Setting the `VolumeType` property can have the following impact on chart perform
 
 ## Performance in Data Chart
 
-In addition to the general performance guidelines, the $ProductShort$ `XamDataChart` control has the following unique features that affect performance.
+In addition to the general performance guidelines, the $PlatformShort$ `XamDataChart` control has the following unique features that affect performance.
 
 ### Axes Collection
 
