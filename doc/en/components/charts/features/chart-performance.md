@@ -170,25 +170,25 @@ Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#$Platform$-s
 
 ### Chart Animations
 
-Enabling [Chart Animations](chart-animations.md) will slightly delay final rendering series in the $PlatformShort$ charts while they play transition-in animations.
+Enabling [Chart Animations](chart-animations.md) will slightly delay final rendering series in the $Platform$ charts while they play transition-in animations.
 
 ### Chart Annotations
 
-Enabling [Chart Annotations](chart-annotations.md) such as the Callout Annotations, Crosshairs Annotations, or Final Value Annotations, will slightly decrease performance of the $PlatformShort$ chart.
+Enabling [Chart Annotations](chart-annotations.md) such as the Callout Annotations, Crosshairs Annotations, or Final Value Annotations, will slightly decrease performance of the $Platform$ chart.
 
 ### Chart Highlighting
 
-Enabling the [Chart Highlighting](chart-highlighting.md) will slightly decrease performance of the $PlatformShort$ chart.
+Enabling the [Chart Highlighting](chart-highlighting.md) will slightly decrease performance of the $Platform$ chart.
 
 ### Chart Legend
 
-Adding a legend to the $PlatformShort$ charts might decrease performance if titles of series or data items mapped to legend are changing often at runtime.
+Adding a legend to the $Platform$ charts might decrease performance if titles of series or data items mapped to legend are changing often at runtime.
 
 ### Chart Markers
 
-In $PlatformShort$ charts, [Markers](chart-markers.md) are especially expensive when it comes to chart performance because they add to the layout complexity of the chart, and perform data binding to obtain certain information. Also, markers decrease performance when there are a lot of data points or if there are many data sources bound. Therefore, if markers are not needed, they should be removed from the chart.
+In $Platform$ charts, [Markers](chart-markers.md) are especially expensive when it comes to chart performance because they add to the layout complexity of the chart, and perform data binding to obtain certain information. Also, markers decrease performance when there are a lot of data points or if there are many data sources bound. Therefore, if markers are not needed, they should be removed from the chart.
 
-This code snippet shows how to remove markers from the $PlatformShort$ charts.
+This code snippet shows how to remove markers from the $Platform$ charts.
 
 ```razor
 // on CategoryChart or FinancialChart
@@ -213,7 +213,7 @@ this.LineSeries.markerType = MarkerType.None;
 
 Setting the `Resolution` property to a higher value will improve performance, but it will lower the graphical fidelity of lines of plotted series. As such, it can be increased up until the fidelity is unacceptable.
 
-This code snippet shows how to decrease resolution in the $PlatformShort$ charts.
+This code snippet shows how to decrease resolution in the $Platform$ charts.
 
 ```razor
 // on CategoryChart or FinancialChart:
@@ -235,11 +235,11 @@ this.LineSeries.Resolution = 10;
 
 ### Chart Overlays
 
-Enabling [Chart Overlays](chart-overlays.md) will slightly decrease performance of the $PlatformShort$ chart.
+Enabling [Chart Overlays](chart-overlays.md) will slightly decrease performance of the $Platform$ chart.
 
 ### Chart Trendlines
 
-Enabling [Chart Trendlines](chart-trendlines.md) will slightly decrease performance of the $PlatformShort$ chart.
+Enabling [Chart Trendlines](chart-trendlines.md) will slightly decrease performance of the $Platform$ chart.
 
 ### Axis Types
 
@@ -283,11 +283,11 @@ This code snippet shows how to ordinal/category x-axis in the `FinancialChart` a
 
 ### Axis Intervals
 
-By default, $PlatformShort$ charts will automatically calculate `YAxisInterval` based on range of your data. Therefore, you should avoid setting axis interval especially to a small value to prevent rendering of too many of axis gridlines and axis labels. Also, you might want to consider increasing `YAxisInterval` property to a larger value than the automatically calculated axis interval if you do not need many axis gridlines or axis labels.
+By default, $Platform$ charts will automatically calculate `YAxisInterval` based on range of your data. Therefore, you should avoid setting axis interval especially to a small value to prevent rendering of too many of axis gridlines and axis labels. Also, you might want to consider increasing `YAxisInterval` property to a larger value than the automatically calculated axis interval if you do not need many axis gridlines or axis labels.
 
 > Note, we do not recommend setting axis minor interval as it will decrease chart performance.
 
-This code snippet shows how to set axis major interval in the $PlatformShort$ charts.
+This code snippet shows how to set axis major interval in the $Platform$ charts.
 
 ```razor
 <CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
@@ -341,7 +341,7 @@ Setting the `YAxisIsLogarithmic` property to false is recommended for higher per
 
 In the same way as Markers, axis labels are also expensive because they use templates and bindings, and may have their data context changed often. If labels are not used, they should be hidden or their interval should be increased to decrease number of axis labels.
 
-This code snippet shows how to hide axis labels in the $PlatformShort$ charts.
+This code snippet shows how to hide axis labels in the $Platform$ charts.
 
 ```razor
 <CategoryChart
@@ -399,9 +399,9 @@ This code snippet shows how to hide axis labels in the $PlatformShort$ charts.
 
 ### Axis Labels Abbreviation
 
-Although, the $PlatformShort$ charts support abbreviation of large numbers (e.g. 10,000+) displayed in axis labels when `YAxisAbbreviateLargeNumbers` is set to true. We recommend, instead pre-processing large values in your data items by dividing them a common factor and then setting `YAxisTitle` to a string that represents factor used used to abbreviate your data values.
+Although, the $Platform$ charts support abbreviation of large numbers (e.g. 10,000+) displayed in axis labels when `YAxisAbbreviateLargeNumbers` is set to true. We recommend, instead pre-processing large values in your data items by dividing them a common factor and then setting `YAxisTitle` to a string that represents factor used used to abbreviate your data values.
 
-This code snippet shows how to set axis title in the $PlatformShort$ charts.
+This code snippet shows how to set axis title in the $Platform$ charts.
 
 ```razor
 <CategoryChart  YAxisTitle="In millions of Dollars"/>
@@ -445,9 +445,9 @@ This code snippet shows how to set axis title in the $PlatformShort$ charts.
 
 ### Axis Labels Extent
 
-At runtime, the $PlatformShort$ charts adjust extent of labels on y-axis based on a label with longest value. This might decrease chart performance if range of data changes and labels need to be updated often. Therefore, it is recommended to set label extent at design time in order to improve chart performance.
+At runtime, the $Platform$ charts adjust extent of labels on y-axis based on a label with longest value. This might decrease chart performance if range of data changes and labels need to be updated often. Therefore, it is recommended to set label extent at design time in order to improve chart performance.
 
-The following code snippet shows how to set a fixed extent for labels on y-axis in the $PlatformShort$ charts.
+The following code snippet shows how to set a fixed extent for labels on y-axis in the $Platform$ charts.
 
 ```razor
 <CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
@@ -495,7 +495,7 @@ The following code snippet shows how to set a fixed extent for labels on y-axis 
 
 ### Axis Other Visuals
 
-Enabling additional axis visuals (e.g. axis titles) or changing their default values might decrease performance in the $PlatformShort$ charts.
+Enabling additional axis visuals (e.g. axis titles) or changing their default values might decrease performance in the $Platform$ charts.
 
 For example, changing these properties on the `CategoryChart` or `FinancialChart` control:
 
@@ -524,7 +524,7 @@ Axis Strips          | `Strip`
 
 ## Performance in Financial Chart
 
-In addition to above performance guidelines, the $PlatformShort$ `FinancialChart` control has the following unique features that affect performance.
+In addition to above performance guidelines, the $Platform$ `FinancialChart` control has the following unique features that affect performance.
 
 ### Y-Axis Mode
 
@@ -549,7 +549,7 @@ Setting the `VolumeType` property can have the following impact on chart perform
 
 ## Performance in Data Chart
 
-In addition to the general performance guidelines, the $PlatformShort$ `XamDataChart` control has the following unique features that affect performance.
+In addition to the general performance guidelines, the $Platform$ `XamDataChart` control has the following unique features that affect performance.
 
 ### Axes Collection
 
