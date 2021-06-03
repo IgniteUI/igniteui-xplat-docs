@@ -32,7 +32,7 @@ Property Value     | Description
 
 <div class="divider--half"></div>
 
-## $PlatformShort$ Chart Tooltip Template
+## $Platform$ Chart Tooltip Template
 
 If none of built-in types of tooltips are matching your requirements, you can create your own tooltips to display and style series title, data values, and axis values. The following sections demonstrate how to do this in different types of $Platform$ charts.
 

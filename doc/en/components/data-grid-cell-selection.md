@@ -48,7 +48,7 @@ The following example demonstrates how to selected or deselected all rows in the
 <code-view style="height: 600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
-           alt="$PlatformShort$ Grid Selection Example" 
+           alt="$Platform$ Grid Selection Example" 
            github-src="grids/data-grid/row-selection">
 </code-view>
 
