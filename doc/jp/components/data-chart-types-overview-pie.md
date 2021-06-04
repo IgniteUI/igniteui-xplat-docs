@@ -41,19 +41,19 @@ $ProductName$ は以下のタイプの円チャートを提供します。
         <div class="link" href="doughnut-chart.md">
             <div class="linkContent">
                 <div>ドーナッツ チャート</div>
-                <img class="img" src="../images/charts/doughnut-chart-selection.png">
+                <img class="responsive-img" src="../images/charts/doughnut-chart-selection.png">
             </div>
         </div>
         <div class="link" href="pie-chart.md">
             <div class="linkContent">
                 <div>円チャート</div>
-                <img class="img" src="../images/charts/pie-chart-selection.png">
+                <img class="responsive-img" src="../images/charts/pie-chart-selection.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-radial-pie-series.md">
             <div class="linkContent">
                 <div>ラジアル状円チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-radial-pie-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-radial-pie-series.png">
             </div>
         </div>
     </body>

@@ -269,35 +269,35 @@ $ProductName$ ツリーマップは、ネストされた一連のノードとし
 
 $Platform$チャート は、モジュール性のために設計されています。必要な機能のみが展開一部であるため、描画されたページで可能な限り最小のフットプリントを取得します。
 
-<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"
+<img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-modular-design-1100.jpg"
 alt="$PlatformShort$ チャート モジュラー デザイン"  />
 
 #### スマート データ バインディング
 
 チャート タイプの選択はお任せください。当社のスマート データ アダプタは、データに最適なチャート タイプを自動的に選択します。データ ソースを設定するだけです。
 
-<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"
+<img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-smart-data-binding-1100.jpg"
 alt="$PlatformShort$ チャート スマート データ バインディング"/>
 
 ### トレンドライン
 
 $Platform$ チャートは、線形 (x)、二次 (x2)、三次 (x3)、四次 (x4)、五次 (x5)、対数 (logn x)、指数 (ex)、べき乗 (axk + o(xk)) など、必要になるすべての[トレンドライン](features/chart-trendlines.md)をサポートします。
 
-<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"
+<img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-trendlines-1100.jpg"
 alt="$PlatformShort$ チャート トレンドライン"/>
 
 ### インタラクティブなパニングとズーム
 
 シングル タッチまたはマルチタッチ、キーボード、ズーム バー、マウス ホイールを使用し、マウスで任意の長方形領域をドラッグ選択してズームインし、データ ポイントのクローズアップ、データ履歴のスクロール、またはデータ領域のパンを行います。
 
-<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"
+<img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-zooming-1100.gif"
 alt="$PlatformShort$ チャート インタラクティブなパニングとズーム"/>
 
 ### マーカー、ツールチップ、およびテンプレート
 
 10 個の[マーカー タイプ](features/chart-markers.md)のいずれかを使用するか、独自の[マーカー-テンプレート](features/chart-markers.md#$Platform$-チャート-マーカーのテンプレート)を作成して、データを強調表示するか、シンプルな[ツールチップ](features/chart-tooltips.md)または[カスタム ツールチップ](features/chart-tooltips.md#$Platform$-チャート-ツールチップ-テンプレート)を使用した多軸および複数系列のチャートで、データにコンテキストと意味を追加します。
 
-<img class="img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"
+<img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"
 alt="$PlatformShort$ チャート マーカー、ツールチップ、およびテンプレート"/>
 
 

@@ -41,88 +41,88 @@ $ProductName$ は以下のタイプの折れ線チャートを提供します。
         <div class="link" href="data-chart-type-category-line-series.md">
             <div class="linkContent">
                 <div>折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-line-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-category-spline-series.md">
             <div class="linkContent">
                 <div>スプライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-spline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-spline-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-category-step-line-series.md">
             <div class="linkContent">
                 <div>ステップ折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-step-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-step-line-series.png">
             </div>
         </div>
         <br>
         <div class="link" href="data-chart-type-stacked-line-series.md">
             <div class="linkContent">
                 <div>積層型折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-line-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-spline-series.md">
             <div class="linkContent">
                 <div>積層型スプライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-spline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-spline-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-100-line-series.md">
             <div class="linkContent">
                 <div>積層型 100 折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-100-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-100-line-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-100-spline-series.md">
             <div class="linkContent">
                 <div>積層型 100 スプライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-100-spline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-100-spline-series.png">
             </div>
         </div>
         <br>
         <div class="link" href="data-chart-type-scatter-line-series.md">
             <div class="linkContent">
                 <div>散布折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-line-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-scatter-spline-series.md">
             <div class="linkContent">
                 <div>散布スプライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-spline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-spline-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-scatter-polyline-series.md">
             <div class="linkContent">
                 <div>散布ポリライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-polyline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-polyline-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-scatter-contour-series.md">
             <div class="linkContent">
                 <div>散布等高線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-contour-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-contour-series.png">
             </div>
         </div>
         <br>
         <div class="link" href="data-chart-type-polar-line-series.md">
             <div class="linkContent">
                 <div>ポーラ折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-polar-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-polar-line-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-polar-spline-series.md">
             <div class="linkContent">
                 <div>極座標スプライン チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-polar-spline-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-polar-spline-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-radial-line-series.md">
             <div class="linkContent">
                 <div>ラジアル折れ線チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-radial-line-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-radial-line-series.png">
             </div>
         </div>
     </body>

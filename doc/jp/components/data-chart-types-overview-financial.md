@@ -41,37 +41,37 @@ $ProductName$ は以下のタイプのファイナンシャル チャートを�
         <div class="link" href="data-chart-type-financial-candlestick-series.md">
             <div class="linkContent">
                 <div>ファイナンシャル ローソク足チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-candlestick-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-candlestick-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-financial-ohlc-series.md">
             <div class="linkContent">
                 <div>ファイナンシャル OHLC チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-ohlc-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-ohlc-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-financial-overlays.md">
             <div class="linkContent">
                 <div>ファイナンシャル オーバーレイ</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-overlays.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-overlays.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-financial-area-indicators.md">
             <div class="linkContent">
                 <div>財務エリア指標</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-area-indicators.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-area-indicators.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-financial-column-indicators.md">
             <div class="linkContent">
                 <div>財務指標 (縦棒)</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-column-indicators.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-column-indicators.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-financial-line-indicators.md">
             <div class="linkContent">
                 <div>財務指標 (折れ線)</div>
-                <img class="img" src="../images/charts/data-chart-type-financial-line-indicators.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-financial-line-indicators.png">
             </div>
         </div>
     </body>

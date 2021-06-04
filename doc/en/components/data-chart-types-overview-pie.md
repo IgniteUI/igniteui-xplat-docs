@@ -40,19 +40,19 @@ The $ProductName$ provides the following types of pie charts:
         <div class="link" href="doughnut-chart.md">
             <div class="linkContent">
                 <div>Doughnut Chart</div>
-                <img class="img" src="../images/charts/doughnut-chart-selection.png">
+                <img class="responsive-img" src="../images/charts/doughnut-chart-selection.png">
             </div>
         </div>
         <div class="link" href="pie-chart.md">
             <div class="linkContent">
                 <div>Pie Chart</div>
-                <img class="img" src="../images/charts/pie-chart-selection.png">
+                <img class="responsive-img" src="../images/charts/pie-chart-selection.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-radial-pie-series.md">
             <div class="linkContent">
                 <div>Radial Pie Chart</div>
-                <img class="img" src="../images/charts/data-chart-type-radial-pie-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-radial-pie-series.png">
             </div>
         </div>
     </body>

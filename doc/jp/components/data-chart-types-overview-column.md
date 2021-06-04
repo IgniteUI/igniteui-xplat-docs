@@ -41,57 +41,57 @@ $ProductName$ は以下のタイプの縦棒チャートを提供します。
         <div class="link" href="data-chart-type-category-bar-series.md">
             <div class="linkContent">
                 <div>棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-bar-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-bar-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-category-column-series.md">
             <div class="linkContent">
                 <div>縦棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-column-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-column-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-range-column-series.md">
             <div class="linkContent">
                 <div>範囲縦棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-range-column-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-range-column-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-category-waterfall-series.md">
             <div class="linkContent">
                 <div>ウォーターフォール チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-waterfall-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-waterfall-series.png">
             </div>
         </div>
         <br>
         <div class="link" href="data-chart-type-stacked-bar-series.md">
             <div class="linkContent">
                 <div>積層型棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-bar-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-bar-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-column-series.md">
             <div class="linkContent">
                 <div>積層型縦棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-column-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-column-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-100-bar-series.md">
             <div class="linkContent">
                 <div>積層型 100 棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-100-bar-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-100-bar-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-stacked-100-column-series.md">
             <div class="linkContent">
                 <div>積層型 100 縦棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-stacked-100-column-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-stacked-100-column-series.png">
             </div>
         </div>
         <br>
         <div class="link" href="data-chart-type-radial-column-series.md">
             <div class="linkContent">
                 <div>ラジアル状縦棒チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-radial-column-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-radial-column-series.png">
             </div>
         </div>
     </body>

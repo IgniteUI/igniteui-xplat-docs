@@ -41,31 +41,31 @@ $ProductName$ は以下のタイプのポイント チャートを提供しま�
         <div class="link" href="data-chart-type-category-point-series.md">
             <div class="linkContent" >
                 <div>ポイント チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-category-point-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-category-point-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-scatter-point-series.md">
             <div class="linkContent">
                 <div>散布マーカー チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-point-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-point-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-scatter-bubble-series.md">
             <div class="linkContent">
                 <div>散布バブル チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-bubble-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-bubble-series.png">
             </div>
         </div>
         <div class="link" href="data-chart-type-polar-scatter-series.md">
             <div class="linkContent">
                 <div>極座標散布チャート</div>
-                <img class="img" src="../images/charts/data-chart-type-polar-scatter-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-polar-scatter-series.png">
             </div>
         </div>
         <!-- <div class="link" href="data-chart-type-scatter-hd-series.md">
             <div class="linkContent">
                 <div>Scatter High Density Chart</div>
-                <img class="img" src="../images/charts/data-chart-type-scatter-hd-series.png">
+                <img class="responsive-img" src="../images/charts/data-chart-type-scatter-hd-series.png">
             </div>
         </div> -->
     </body>
