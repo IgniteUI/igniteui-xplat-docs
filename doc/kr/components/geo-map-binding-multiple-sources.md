@@ -52,7 +52,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## Overlaying Flights
 
-Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to `Series` collection of the `XamGeographicMap`.
+Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to Series collection of the `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -69,7 +69,7 @@ this.geoMap.series.add(lineSeries);
 
 ## Overlaying Gridlines
 
-Create second `GeographicPolylineSeries` object with geographic gridlines and add it to `Series` collection of the `XamGeographicMap`.
+Create second `GeographicPolylineSeries` object with geographic gridlines and add it to Series collection of the `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -84,7 +84,7 @@ gridSeries.shapeStrokeThickness = 1;
 this.geoMap.series.add(gridSeries);
 ```
 
-Create `GeographicSymbolSeries` object with geographic gridlines and add it to `Series` collection of the geographic `XamGeographicMap`.
+Create `GeographicSymbolSeries` object with geographic gridlines and add it to Series collection of the geographic `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET

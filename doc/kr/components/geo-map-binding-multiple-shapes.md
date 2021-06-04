@@ -57,7 +57,7 @@ sdsLocations.dataBind();
 
 ## Overlaying Shape Polygons
 
-Create `GeographicShapeSeries` object with shapes of countries of the world and add it to `Series` collection of the `XamGeographicMap`.
+Create `GeographicShapeSeries` object with shapes of countries of the world and add it to Series collection of the `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -81,7 +81,7 @@ public onShapePolygonsLoaded(sds: IgrShapeDataSource, e: any) {
 
 ## Overlaying Shape Polyline
 
-Create `GeographicPolylineSeries` object with routes between major ports and add it to `Series` collection of the `XamGeographicMap`.
+Create `GeographicPolylineSeries` object with routes between major ports and add it to Series collection of the `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -101,7 +101,7 @@ public onShapePolylinesLoaded(sds: IgrShapeDataSource, e: any) {
 
 ## Overlaying Shape Points
 
-Create `GeographicSymbolSeries` object with locations of major cities and add it to `Series` collection of the `XamGeographicMap`.
+Create `GeographicSymbolSeries` object with locations of major cities and add it to Series collection of the `XamGeographicMap`.
 
 ```html
  TODO - ADD CODE SNIPPET

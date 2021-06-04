@@ -116,7 +116,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## フライトのオーバーレイ
 
-主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、$ProductName$ マップの `Series` コレクションに追加します。
+主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、$ProductName$ マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-polyline-series  #polylineSeries
@@ -146,7 +146,7 @@ this.geoMap.series.add(lineSeries);
 
 ## グリッド線のオーバーレイ
 
-地理グリッド線を使用して2番目の `GeographicPolylineSeries` オブジェクトを作成し、それを XamGeographicMap の `Series` コレクションに追加します。
+地理グリッド線を使用して2番目の `GeographicPolylineSeries` オブジェクトを作成し、それを XamGeographicMap の Series コレクションに追加します。
 
 ```html
   <igx-geographic-polyline-series  #polylineSeries
@@ -177,7 +177,7 @@ this.geoMap.series.add(gridSeries);
 
 ## 空港のオーバーレイ
 
-空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを $ProductName$ 地理マップの `Series` コレクションに追加します。
+空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを $ProductName$ 地理マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-symbol-series  #symbolSeries

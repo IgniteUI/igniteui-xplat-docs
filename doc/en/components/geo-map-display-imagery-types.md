@@ -37,7 +37,7 @@ By default, the `BackgroundContent` property is set to `OpenStreetMapImagery` ob
 
 In addition, the `BackgroundContent` property can be set to any object that inherits the class. However, only objects that inherit the `GeographicMapImagery` class will allow panning and zooming of the map background content.
 
-In the map component, map background content is always rendered behind all geographic series. In other words, geographic imagery tiles are always rendered first and any geographic series in the map component's `Series` property is rendered on top of the geographic imagery tiles. This is especially important when displaying multiple geographic series in the same plot area of the map component because geographic imagery tiles can quickly get buried in the map view.
+In the map component, map background content is always rendered behind all geographic series. In other words, geographic imagery tiles are always rendered first and any geographic series in the map component's Series property is rendered on top of the geographic imagery tiles. This is especially important when displaying multiple geographic series in the same plot area of the map component because geographic imagery tiles can quickly get buried in the map view.
 
 ## Code Snippet
 

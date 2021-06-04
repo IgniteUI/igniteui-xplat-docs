@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
 _description: Use Infragistics' $Platform$ JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View $ProductName$ map tutorials!
 _keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'SeriesViewer']
 ---
 # $Platform$ Binding Multiple Data Sources
 
@@ -115,7 +115,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## Overlaying Flights
 
-Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to `Series` collection of the $ProductName$ map.
+Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to the Series collection of the $ProductName$ map.
 
 ```html
 <igx-geographic-polyline-series  #polylineSeries
@@ -145,7 +145,7 @@ this.geoMap.series.add(lineSeries);
 
 ## Overlaying Gridlines
 
-Create second `GeographicPolylineSeries` object with geographic gridlines and add it to `Series` collection of the $ProductName$ map.
+Create second `GeographicPolylineSeries` object with geographic gridlines and add it to the Series collection of the $ProductName$ map.
 
 ```html
   <igx-geographic-polyline-series  #polylineSeries
@@ -176,7 +176,7 @@ this.geoMap.series.add(gridSeries);
 
 ## Overlaying Airports
 
-Create `GeographicSymbolSeries` object with airport points and add it to `Series` collection of the geographic $ProductName$ map.
+Create `GeographicSymbolSeries` object with airport points and add it to the Series collection of the geographic $ProductName$ map.
 
 ```html
 <igx-geographic-symbol-series  #symbolSeries
