@@ -451,7 +451,7 @@
     "href": "charts/types/treemap-chart.md",
     "status": ""
   },
-  {    
+  {
     "exclude": ["Blazor"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
@@ -539,7 +539,7 @@
   {
     "name": "データ ソース",
     "href": "data-chart-data-sources.md",
-    "exclude": ["Blazor", "Angular"],
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
     "status": ""
   },
   {
