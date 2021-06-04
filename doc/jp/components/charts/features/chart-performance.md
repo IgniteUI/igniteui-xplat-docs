@@ -171,25 +171,25 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### チャート アニメーション
 
-[チャート アニメーション](chart-animations.md)を有効にすると、トランジションイン アニメーションを再生している間、$ProductShort$ チャートの最終描画シリーズがわずかに遅れます
+[チャート アニメーション](chart-animations.md)を有効にすると、トランジションイン アニメーションを再生している間、$Platform$ チャートの最終描画シリーズがわずかに遅れます
 
 ### チャート注釈
 
-コールアウト注釈、十字線注釈、最終値注釈などの[チャート注釈](chart-annotations.md)を有効にすると、$ProductShort$ チャートのパフォーマンスがわずかに低下します。
+コールアウト注釈、十字線注釈、最終値注釈などの[チャート注釈](chart-annotations.md)を有効にすると、$Platform$ チャートのパフォーマンスがわずかに低下します。
 
 ### チャートの強調表示
 
-[チャートの強調表示](chart-highlighting.md)を有効にすると、$ProductShort$ チャートのパフォーマンスがわずかに低下します。
+[チャートの強調表示](chart-highlighting.md)を有効にすると、$Platform$ チャートのパフォーマンスがわずかに低下します。
 
 ### チャート凡例
 
-凡例を $ProductShort$ チャートに追加すると、凡例にマップされたシリーズまたはデータ項目のタイトルが実行時に頻繁に変更される場合、パフォーマンスが低下する可能性があります。
+凡例を $Platform$ チャートに追加すると、凡例にマップされたシリーズまたはデータ項目のタイトルが実行時に頻繁に変更される場合、パフォーマンスが低下する可能性があります。
 
 ### チャート マーカー
 
-$ProductShort$ チャートでは、[チャート マーカー](chart-markers.md)はチャートのレイアウトの複雑さを増し、特定の情報を取得するためにデータ バインディングを実行するため、チャートのパフォーマンスに関しては特に手間がかかります。また、データ ポイントが多い場合、またはバインドされているデータ ソースが多い場合、マーカーはパフォーマンスを低下させます。したがって、マーカーが不要な場合は、チャートから削除する必要があります。
+$Platform$ チャートでは、[チャート マーカー](chart-markers.md)はチャートのレイアウトの複雑さを増し、特定の情報を取得するためにデータ バインディングを実行するため、チャートのパフォーマンスに関しては特に手間がかかります。また、データ ポイントが多い場合、またはバインドされているデータ ソースが多い場合、マーカーはパフォーマンスを低下させます。したがって、マーカーが不要な場合は、チャートから削除する必要があります。
 
-以下のコード例は、$ProductShort$ チャートからマーカーを削除する方法を示します。
+以下のコード例は、$Platform$ チャートからマーカーを削除する方法を示します。
 
 ```razor
 // on CategoryChart or FinancialChart
@@ -214,7 +214,7 @@ this.LineSeries.markerType = MarkerType.None;
 
 `Resolution` プロパティをより大きな値に設定するとパフォーマンスは向上しますが、プロットされた系列の線のグラフィカルな忠実度は低下します。このようなわけで、忠実度が受け入れられなくなるまで値を大きくする可能性があります。
 
-このコード スニペットは、$ProductShort$ チャートの解像度を下げる方法を示しています。
+このコード スニペットは、$Platform$ チャートの解像度を下げる方法を示しています。
 
 ```razor
 // on CategoryChart or FinancialChart:
@@ -236,11 +236,11 @@ this.LineSeries.Resolution = 10;
 
 ### チャート オーバーレイ
 
-[チャート オーバーレイ](chart-overlays.md)を有効にすると、$ProductShort$ チャートのパフォーマンスがわずかに低下します。
+[チャート オーバーレイ](chart-overlays.md)を有効にすると、$Platform$ チャートのパフォーマンスがわずかに低下します。
 
 ### チャート トレンドライン
 
-[チャート トレンドライン](chart-trendlines.md)を有効にすると、$ProductShort$ チャートのパフォーマンスがわずかに低下します。
+[チャート トレンドライン](chart-trendlines.md)を有効にすると、$Platform$ チャートのパフォーマンスがわずかに低下します。
 
 ### 軸のタイプ
 
@@ -258,22 +258,37 @@ this.LineSeries.Resolution = 10;
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$FinancialChart xAxisMode="Ordinal"/>
+```html
+<igx-financial-chart xAxisMode="Ordinal"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis label="Time" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis label="Time"></igx-category-x-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrFinancialChart xAxisMode="Ordinal" />
+
+<IgrDataChart>
+    <IgrCategoryXAxis label="Time" />
+</IgrDataChart>
+```
+
+```html
+<igc-financial-chart x-axis-mode="Ordinal"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis label="Time"></igc-category-x-axis>
+</igc-data-chart>
 ```
 
 ### 軸の間隔
 
-デフォルトでは、$ProductShort$ チャートは、データの範囲に基づいて `YAxisInterval` を自動的に計算します。したがって、軸のグリッド線と軸のラベルが多すぎないように、軸の間隔を特に小さい値に設定することは避けてください。  また、多くの軸グリッド線または軸ラベルが必要ない場合は、`YAxisInterval` プロパティを自動的に計算された軸間隔よりも大きい値に増やすことを検討することをお勧めします。
+デフォルトでは、$Platform$ チャートは、データの範囲に基づいて `YAxisInterval` を自動的に計算します。したがって、軸のグリッド線と軸のラベルが多すぎないように、軸の間隔を特に小さい値に設定することは避けてください。  また、多くの軸グリッド線または軸ラベルが必要ない場合は、`YAxisInterval` プロパティを自動的に計算された軸間隔よりも大きい値に増やすことを検討することをお勧めします。
 
 > チャートのパフォーマンスが低下するため、軸の副間隔を設定することはお勧めしません。
 
-このコード スニペットは、$ProductShort$ チャートで軸の主間隔を設定する方法を示しています。
+このコード スニペットは、$Platform$ チャートで軸の主間隔を設定する方法を示しています。
 
 ```razor
 <CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
@@ -286,16 +301,37 @@ this.LineSeries.Resolution = 10;
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  xAxisInterval="5" yAxisInterval="50"/>
+```html
+<igx-category-chart xAxisInterval="5" yAxisInterval="50"></igx-category-chart>
 
-<Ig$FinancialChart xAxisInterval="5" yAxisInterval="50"/>
+<igx-financial-chart xAxisInterval="5" yAxisInterval="50"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" interval="5" />
-    <Ig$NumericYAxis  name="yAxis" interval="50"/>
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" interval="5"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" interval="50"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  xAxisInterval={5} yAxisInterval={50}/>
+
+<IgrFinancialChart xAxisInterval={5} yAxisInterval={50}/>
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" interval={5} />
+    <IgrNumericYAxis  name="yAxis" interval={50}/>
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-interval="5" y-axis-interval="50"></igc-category-chart>
+
+<igc-financial-chart x-axis-interval="5" y-axis-interval="50"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" interval="5"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" interval="50"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### 軸スケール
@@ -306,7 +342,7 @@ this.LineSeries.Resolution = 10;
 
 マーカーと同じように、軸ラベルはテンプレートとバインドを使用し、データ コンテキストが頻繁に変更されるために、軸ラベルも負荷がかかります。ラベルを使用しない場合は、非表示にするか、間隔を長くして軸ラベルの数を減らす必要があります。
 
-このコード スニペットは、$ProductShort$ チャートで軸ラベルを非表示にする方法を示しています。
+このコード スニペットは、$Platform$ チャートで軸ラベルを非表示にする方法を示しています。
 
 ```razor
 <CategoryChart
@@ -325,29 +361,48 @@ this.LineSeries.Resolution = 10;
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart
-    xAxisLabelVisibility="Collapsed"
-    yAxisLabelVisibility="Collapsed" >
-</Ig$CategoryChart>
+```html
+<igx-category-chart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed">
+</igx-category-chart>
 
-<Ig$FinancialChart
-    xAxisLabelVisibility="Collapsed"
-    yAxisLabelVisibility="Collapsed" >
-</Ig$FinancialChart>
+<igx-financial-chart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed">
+</igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" LabelVisibility="Collapsed" />
-    <Ig$NumericYAxis  name="yAxis" LabelVisibility="Collapsed" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" labelVisibility="Collapsed"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" labelVisibility="Collapsed"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed" />
+
+<IgrFinancialChart xAxisLabelVisibility="Collapsed" yAxisLabelVisibility="Collapsed" />
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" labelVisibility="Collapsed" />
+    <IgrNumericYAxis  name="yAxis" labelVisibility="Collapsed" />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-label-visibility="Collapsed" y-axis-label-visibility="Collapsed">
+</igc-category-chart>
+
+<igc-financial-chart x-axis-label-visibility="Collapsed" y-axis-label-visibility="Collapsed">
+</igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" label-visibility="Collapsed"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" label-visibility="Collapsed"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### 軸ラベルの省略形
 
-ただし、$ProductShort$ チャートは、`YAxisAbbreviateLargeNumbers` が true に設定されている場合に、軸ラベルに表示される大きな数値 (10,000 以上など) の省略形をサポートします。代わりに、データ 項目の大きな値を公約数で除算して前処理し、`YAxisTitle` をデータ値の省略形に使用される約数を表す文字列に設定することをお勧めします。
+ただし、$Platform$ チャートは、`YAxisAbbreviateLargeNumbers` が true に設定されている場合に、軸ラベルに表示される大きな数値 (10,000 以上など) の省略形をサポートします。代わりに、データ 項目の大きな値を公約数で除算して前処理し、`YAxisTitle` をデータ値の省略形に使用される約数を表す文字列に設定することをお勧めします。
 
-このコード スニペットは、$ProductShort$ チャートで軸のタイトルを設定する方法を示しています。
+このコード スニペットは、$Platform$ チャートで軸のタイトルを設定する方法を示しています。
 
 ```razor
 <CategoryChart  YAxisTitle="In millions of Dollars"/>
@@ -359,22 +414,41 @@ this.LineSeries.Resolution = 10;
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  yAxisTitle="In millions of Dollars" />
+```html
+<igx-category-chart yAxisTitle="In millions of Dollars"></igx-category-chart>
 
-<Ig$FinancialChart yAxisTitle="In millions of Dollars" />
+<igx-financial-chart yAxisTitle="In millions of Dollars"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$NumericYAxis title="In millions of Dollars" />
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-numeric-y-axis title="In millions of Dollars"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  yAxisTitle="In millions of Dollars" />
+
+<IgrFinancialChart yAxisTitle="In millions of Dollars" />
+
+<IgrDataChart>
+    <IgrNumericYAxis title="In millions of Dollars" />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart y-axis-title="In millions of Dollars"></igc-category-chart>
+
+<igc-financial-chart y-axis-title="In millions of Dollars"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-numeric-y-axis title="In millions of Dollars"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### 軸ラベルの範囲
 
-実行時に、$ProductShort$ チャートは、最も長い値を持つラベルに基づいて、y 軸上のラベルの範囲を調整します。これにより、データの範囲やラベルを頻繁に更新する必要がある場合に、チャートのパフォーマンスが低下する可能性があります。そのため、チャート パフォーマンスを向上させるためにデザイン時にラベル範囲を設定することをお勧めします。
+実行時に、$Platform$ チャートは、最も長い値を持つラベルに基づいて、y 軸上のラベルの範囲を調整します。これにより、データの範囲やラベルを頻繁に更新する必要がある場合に、チャートのパフォーマンスが低下する可能性があります。そのため、チャート パフォーマンスを向上させるためにデザイン時にラベル範囲を設定することをお勧めします。
 
-次のコード スニペットは、$ProductShort$ チャートの y 軸のラベルに固定されたラベル範囲を設定する方法を示します。
+次のコード スニペットは、$Platform$ チャートの y 軸のラベルに固定されたラベル範囲を設定する方法を示します。
 
 ```razor
 <CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
@@ -387,21 +461,42 @@ this.LineSeries.Resolution = 10;
 </DataChart>
 ```
 
-<!-- Angular, React, WebComponents -->
-```ts
-<Ig$CategoryChart  xAxisLabelExtent="50" yAxisLabelExtent="50"/>
+```html
+<igx-category-chart xAxisLabelExtent="50" yAxisLabelExtent="50"></igx-category-chart>
 
-<Ig$FinancialChart xAxisLabelExtent="50" yAxisLabelExtent="50"/>
+<igx-financial-chart xAxisLabelExtent="50" yAxisLabelExtent="50"></igx-financial-chart>
 
-<Ig$DataChart>
-    <Ig$CategoryXAxis name="xAxis" labelExtent="50" />
-    <Ig$NumericYAxis  name="yAxis" labelExtent="50"/>
-</Ig$DataChart>
+<igx-data-chart>
+    <igx-category-x-axis name="xAxis" labelExtent="50"></igx-category-x-axis>
+    <igx-numeric-y-axis name="yAxis" labelExtent="50"></igx-numeric-y-axis>
+</igx-data-chart>
+```
+
+```tsx
+<IgrCategoryChart  xAxisLabelExtent={50} yAxisLabelExtent={50}/>
+
+<IgrFinancialChart xAxisLabelExtent={50} yAxisLabelExtent={50}/>
+
+<IgrDataChart>
+    <IgrCategoryXAxis name="xAxis" labelExtent={50} />
+    <IgrNumericYAxis  name="yAxis" labelExtent={50} />
+</IgrDataChart>
+```
+
+```html
+<igc-category-chart x-axis-label-extent="50" y-axis-label-extent="50"></igc-category-chart>
+
+<igc-financial-chart x-axis-label-extent="50" y-axis-label-extent="50"></igc-financial-chart>
+
+<igc-data-chart>
+    <igc-category-x-axis name="xAxis" label-extent="50"></igc-category-x-axis>
+    <igc-numeric-y-axis name="yAxis" label-extent="50"></igc-numeric-y-axis>
+</igc-data-chart>
 ```
 
 ### 軸その他のビジュアル
 
-追加の軸ビジュアル (軸タイトルなど) を有効にしたり、デフォルト値を変更したりすると、$ProductShort$ チャートのパフォーマンスが低下する可能性があります。
+追加の軸ビジュアル (軸タイトルなど) を有効にしたり、デフォルト値を変更したりすると、$Platform$ チャートのパフォーマンスが低下する可能性があります。
 
 たとえば、`CategoryChart` または `FinancialChart` コントロールでこれらのプロパティを変更します。
 
@@ -430,7 +525,7 @@ this.LineSeries.Resolution = 10;
 
 ## ファイナンシャル チャートのパフォーマンス
 
-上記のパフォーマンスガイドラインに加えて、$ProductShort$ `FinancialChart` コントロールには、パフォーマンスに影響を与える次の独自の機能があります。
+上記のパフォーマンスガイドラインに加えて、$Platform$ `FinancialChart` コントロールには、パフォーマンスに影響を与える次の独自の機能があります。
 
 ### Y 軸モード
 
@@ -455,7 +550,7 @@ this.LineSeries.Resolution = 10;
 
 ## データ チャートのパフォーマンス
 
-一般的なパフォーマンス ガイドラインに加えて、$ProductShort$ `XamDataChart` コントロールには、パフォーマンスに影響を与える次の固有の機能があります。
+一般的なパフォーマンス ガイドラインに加えて、$Platform$ `XamDataChart` コントロールには、パフォーマンスに影響を与える次の固有の機能があります。
 
 ### 軸コレクション
 
