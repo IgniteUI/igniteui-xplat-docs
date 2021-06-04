@@ -10,9 +10,9 @@ _keywords: Changelog, What's New,  $ProductName$, Infragistics
 <!-- Angular -->
 
 > [!NOTE]
-> This file is specific to igniteui-angular-\* packages only. (eg. igniteui-angular-charts) 
+> This file is specific to igniteui-angular-\* packages only. (eg. igniteui-angular-charts)
 
-> For additional changes, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) 
+> For additional changes, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
 
@@ -28,20 +28,20 @@ This release introduces several new and improved visual design and configuration
 
 Redesigned Chart Defaults:
 
-* New color palette for series/markers in all charts. - All types of charts/series have new colors for brush/fill and outlines 
+* New color palette for series/markers in all charts. - All types of charts/series have new colors for brush/fill and outlines
 
-Old series brushes outlines  | New series outline brushes 
+Old series brushes outlines  | New series outline brushes
 ------------- | -------------
 `Color_001=#7446B9`  | `Color_001=#8bdc5c`
-`Color_002=#9FB328`  | `Color_002=#8b5bb1` 
-`Color_003=#F96232`  | `Color_003=#6db1ff` 
-`Color_004=#2E9CA6`  | `Color_004=#f8a15f` 
-`Color_005=#DC3F76`  | `Color_005=#ee5879` 
-`Color_006=#FF9800`  | `Color_006=#735656` 
-`Color_007=#3F51B5`  | `Color_007=#f7d262` 
-`Color_008=#439C47`  | `Color_008=#8ce7d9` 
-`Color_009=#795548`  | `Color_009=#e051a9` 
-`Color_010=#9A9A9A`  | `Color_010=#a8a8b7` 
+`Color_002=#9FB328`  | `Color_002=#8b5bb1`
+`Color_003=#F96232`  | `Color_003=#6db1ff`
+`Color_004=#2E9CA6`  | `Color_004=#f8a15f`
+`Color_005=#DC3F76`  | `Color_005=#ee5879`
+`Color_006=#FF9800`  | `Color_006=#735656`
+`Color_007=#3F51B5`  | `Color_007=#f7d262`
+`Color_008=#439C47`  | `Color_008=#8ce7d9`
+`Color_009=#795548`  | `Color_009=#e051a9`
+`Color_010=#9A9A9A`  | `Color_010=#a8a8b7`
 
 eg.
 
@@ -51,25 +51,25 @@ eg.
 
 <div class="divider--half"></div>
 
-* Changed Bar/Column/Waterfall series to have square corners instead of rounded corners 
+* Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
 * Changed Scatter High Density series’ colors for min/max heat properties
 
     Old heat min color  | New heat min color
     ------------- | -------------
     `#FF7446B9` | `#ff8b5bb1`
 
-    Old heat max color  | New heat max color  
+    Old heat max color  | New heat max color
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
-* Changed Financial/Waterfall series’ colors for negative fill of their visuals 
+* Changed Financial/Waterfall series’ colors for negative fill of their visuals
 
-    Old negative brush | new negative brush  
+    Old negative brush | new negative brush
     ------------- | -------------
     `#FFC62828`  | `#ffee5879`
 
 * Changed marker's thickness to 2px from 1px
-* Changed marker's fill to match the marker's outline for PointSeries, BubbleSeries, ScatterSeries, PolarScatterSeries 
+* Changed marker's fill to match the marker's outline for PointSeries, BubbleSeries, ScatterSeries, PolarScatterSeries
     - Note, you can use set `MarkerFillMode` property to Normal to undo this change
 * Compressed labelling for the TimeXAxis and OrdinalTimeXAxis
 * New Marker Properties:
@@ -79,21 +79,21 @@ eg.
 * New Series `OutlineMode` Property:
     - Can be set to toggle the series outline visibility. Note, for Data Chart, the property is on the series
 * New Plot Area Margin Properties:
-    - `PlotAreaMarginLeft` 
+    - `PlotAreaMarginLeft`
     - `PlotAreaMarginTop`
     - `PlotAreaMarginRight`
     - `PlotAreaMarginBottom`
     - `ComputedPlotAreaMarginMode`
-    - The plot area margin properties define the bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart.   
+    - The plot area margin properties define the bleed over area introduced into the viewport when the chart is at the default zoom level. A common use case is to provide space between the axes and first/last data points. Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart.
 * New Highlighting Properties
     - `HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
     - `HighlightingBehavior` - Sets whether the series highlights depending on mouse position eg. directly over or nearest item
-    - Note, in previous releases the highlighting was limited to fade on hover. 
+    - Note, in previous releases the highlighting was limited to fade on hover.
 * Added Highlighting for the following series:
     - Stacked
     - Scatter
     - Polar
-    - Radial 
+    - Radial
     - Shape
 * Added Annotation layers to the following series:
     - Stacked
@@ -101,10 +101,10 @@ eg.
     - Polar
     - Radial
     - Shape
-* Added support for overriding the data source of individual stack fragments within a stacked series 
+* Added support for overriding the data source of individual stack fragments within a stacked series
 * Added custom style events to Stacked, Scatter, Range, Polar, Radial, and Shape series
 * Added support to automatically sync the vertical zoom to the series content
-* Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed 
+* Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
 
 ### Chart Legend
 
@@ -112,7 +112,7 @@ eg.
     - The following chart types can use ItemLegend in horizontal orientation:
         - Bubble
         - Donut
-        - Pie 
+        - Pie
 * `LegendHighlightingMode` - Enables series highlighting when hovering over legend items
 
 ### Geographic Map
@@ -120,8 +120,8 @@ eg.
 > [!NOTE]
 > These features are CTP
 
-* Added support for wrap around display of the map (scroll infinitely horizontally)  
-* Added support for shifting display of some map series while wrapping around the coordinate origin  
+* Added support for wrap around display of the map (scroll infinitely horizontally)
+* Added support for shifting display of some map series while wrapping around the coordinate origin
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
@@ -135,7 +135,7 @@ eg.
 
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
 
-* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right) 
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right)
 
 * Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. eg. Options are (moves to the cell below, above, right, left)
 
@@ -148,16 +148,16 @@ eg.
 
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 
-* Added Column Summaries to Column Options Dialog. 
+* Added Column Summaries to Column Options Dialog.
 
-### Date Picker 
+### Date Picker
 
 * `ShowTodayButton` - Toggles Today button visibility
 * `Label` - Adds a label above the date value
-* `Placeholder` property - adds custom text when no value is selected 
+* `Placeholder` property - adds custom text when no value is selected
 * `FormatString` - Customize input date string eg. (`yyyy-MM-dd`)
 * `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
-* `FirstDayOfWeek` - Specifies first day of week 
+* `FirstDayOfWeek` - Specifies first day of week
 * `FirstWeekOfYear` - Specifies when to display first week of the year. eg. (First Full Week, First Four day Week)
 * `ShowWeekNumbers` - Toggles Week number visibility
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
@@ -168,7 +168,7 @@ eg.
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-## **{PackageVerChangedFields}** 
+## **{PackageVerChangedFields}**
 
 > [!NOTE]
 > These breaking changes were introduce in the grid package.
@@ -255,7 +255,7 @@ Import statements have been simplified to use just package names instead of full
 | ------------------|---------------------|
 | <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
 | <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](treemap-overview.md)  |
+| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)  |
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a>             | [Data Grid](data-grid.md)       |
