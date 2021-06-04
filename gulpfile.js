@@ -262,7 +262,10 @@ function buildPlatform(cb) {
     .on("end", () => {
         transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
 
-        let sources = ['doc/**/*.md'];
+        let sources = [
+            'doc/**/*.md', // including all markdown files
+            '!doc/**/obsolete/*.md' // excluding old chart topics
+        ];
 
         if (platformName == "Angular") {
             // excluding topics for controls that are not in Angular product, e.g. Data-grid

@@ -9,6 +9,8 @@ test
 src/**/*.js
 src/**/*.js.map
 
+doc/**/obsolete
+
 # excluding auto-generated files:
 docfx/**/components/toc_*.json
 docfx/**/components/toc.yml
