@@ -33,7 +33,7 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 - `MultipleRow`: 複数行の選択が可能になります。
 - `RangeCell`: クリックしてドラッグの複数セル範囲の選択が可能になります。
 
-`SelectionBehavior` のデフォルトは `ModifierBased` で、一度に 1 つの行またはセルのみが選択され、項目を複数選択するには修飾キー (CTRL) が必要です。`SelectionBehavior` を `Toggle` に設定すると、シングル クリックでのみ複数の行またはセルを選択できます。 
+`SelectionBehavior` のデフォルトは `ModifierBased` で、一度に 1 つの行またはセルのみが選択され、項目を複数選択するには修飾キー (CTRL) が必要です。`SelectionBehavior` を `Toggle` に設定すると、シングル クリックでのみ複数の行またはセルを選択できます。
 
 `MultipleRow` には次の機能が含まれています。
 - クリックしてドラッグし、行を選択します。
@@ -46,10 +46,10 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 
 次の例は、グリッド内のすべての行を選択または選択解除する方法を示しています。`SelectionMode` は MultipleRow に設定する必要があることに注意してください。
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
-           alt="$PlatformShort$ グリッド選択の例" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection"
+           alt="$Platform$ グリッド選択の例"
            github-src="grids/data-grid/row-selection">
 </code-view>
 

@@ -332,7 +332,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="$PlatformShort$ ドック マネージャー ペインを閉じる例"
+           alt="$Platform$ ドック マネージャー ペインを閉じる例"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
 

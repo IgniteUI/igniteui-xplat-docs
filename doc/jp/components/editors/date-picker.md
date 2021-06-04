@@ -66,7 +66,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 ---------|------|------------
 `IconColor` | string | カレンダー ボタンの色を変更します。
 `AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
-`DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。 
+`DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。
 `FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。 例えば、月曜日から日曜日。
 `FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
 `Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
@@ -75,7 +75,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 `Placeholder` | string  |  カレンダーの編集部分の値がクリアされたときに表示されるカスタム文字列。
 `ShowClearButton` | bool  |  デフォルトは true で、クリア ボタンはカレンダー ボタンのすぐ左にあり、X で視覚化されます。クリックすると、日付ピッカーの `Value` がクリアされます。クリア ボタンの表示は、オンとオフを切り替えることができます。
 `ShowTodayButton`| bool  |  本日は、カレンダーが開かれた日付のすぐ下に表示されます。クリックすると、現在の日付が選択されます。本日のボタンの表示は、オンとオフを切り替えることができます。
-`ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。 
+`ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。
 `FirstWeekOfYear` | enum | 年間の週の開始番号を構成します。FirstDay、FirstFourDayWeek、FirstFullWeek に設定できます。
 `OpenOnFocus` | bool | デフォルトでは、日付ピッカーのドロップダウン部分はシングル クリックで開かれ、ユーザーはカレンダー ボタンをクリックしてカレンダーをドロップダウンする必要があります。
 `Value` | date | 日付ピッカーの値を設定し、ドロップダウン カレンダーで選択します。
@@ -89,7 +89,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker 編集の例"
+           alt="$Platform$ Date Picker 編集の例"
            github-src="editors/date-picker/editing">
 </code-view>
 
@@ -102,7 +102,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="$PlatformShort$ Date Picker 日付制限の例"
+           alt="$Platform$ Date Picker 日付制限の例"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
@@ -115,7 +115,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="$PlatformShort$ Date Picker 書式の例"
+           alt="$Platform$ Date Picker 書式の例"
            github-src="editors/date-picker/format">
 </code-view>
 
@@ -128,7 +128,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="$PlatformShort$ Date Picker 日付範囲の例"
+           alt="$Platform$ Date Picker 日付範囲の例"
            github-src="editors/date-picker/range">
 </code-view>
 

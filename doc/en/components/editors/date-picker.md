@@ -65,19 +65,19 @@ Property | Type | Description
 ---------|------|------------
 `IconColor` | string | Changes the color of the calendar button.
 `AllowTextInput`  |  bool   |  The date picker's value can be typed-in and modified by toggling this property to true.
-`DateFormat` | enum | Defaults to DateShort eg. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as eg. Wednesday, April 14, 2021. 
+`DateFormat` | enum | Defaults to DateShort eg. 'mm/dd/yyyy'. When set to DateLong, the date displayed in the editor will appear as eg. Wednesday, April 14, 2021.
 `FirstDayOfWeek` | enum | Defaults to Sunday. A given day of the week will be used as the first day in each weekly row of the calendar. eg. Monday through Sunday.
 `FormatString` | string  | When DateShort is used, the date's format can be configured eg. 'dd/mm/yyyy'. Note, if the `DateFormat`'s DateLong and `FormatString` are set then the `DateFormat` is ignored.
 `Label`  |  string | Displays custom text above the date in the top-left corner of the Date Picker.
 `MinDate` | DateTime | Restricts earlier dates from being selected or viewed.
 `MaxDate` | DateTime | Restricts later dates from being selected or viewed.
 `Placeholder` | string  |  A custom string to be displayed when the value within the edit portion of the calendar is cleared.
-`ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the Date Picker. The clear button's visibility can be toggled on and off. 
+`ShowClearButton` | bool  |  Defaults to true, the clear button is directly to the left of the calendar button, visualized by an X. When clicked, it will clear the `Value` of the Date Picker. The clear button's visibility can be toggled on and off.
 `ShowTodayButton`| bool  |  The today is directly below the dates when the calendar is opened. When clicked, it will select the current date. The today button's visibility can be toggled on and off.
-`ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the date picker. The week number's visibility can be toggled on and off. 
+`ShowWeekNumbers` | bool | Week numbers can be displayed as a number, at the left of every row of dates, in the drop down portion of the date picker. The week number's visibility can be toggled on and off.
 `FirstWeekOfYear` | enum | Configures the start of the week numbers for the entire year. Can be set to FirstDay, FirstFourDayWeek, FirstFullWeek.
 `OpenOnFocus` | bool | By default, the dropdown portion of the Date Picker is opened on single click, forcing the user to click the calendar button to drop down the calendar.
-`Value` | date | Sets the value of the Date Picker and selects it in the dropdown calendar. 
+`Value` | date | Sets the value of the Date Picker and selects it in the dropdown calendar.
 
 Users can also customize the Date Picker's font by using the various text properties of the control. They are: `TextColor`, `TextFontFamily`, `TextFontSize`, `TextFontStyle`, and `TextFontWeight`.
 
@@ -88,7 +88,7 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$PlatformShort$ Date Picker Editing Example"
+           alt="$Platform$ Date Picker Editing Example"
            github-src="editors/date-picker/editing">
 </code-view>
 
@@ -101,7 +101,7 @@ The following example demonstrates how to restrict selected dates in the `DatePi
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="$PlatformShort$ Date Picker Date Limits Example"
+           alt="$Platform$ Date Picker Date Limits Example"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
@@ -114,7 +114,7 @@ The following example demonstrates how apply a long date in the `DatePicker`.
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="$PlatformShort$ Date Picker Format Example"
+           alt="$Platform$ Date Picker Format Example"
            github-src="editors/date-picker/format">
 </code-view>
 
@@ -122,12 +122,12 @@ The following example demonstrates how apply a long date in the `DatePicker`.
 
 ### Date Ranges
 
-The following example demonstrates how combine multiple `DatePicker` controls. 
+The following example demonstrates how combine multiple `DatePicker` controls.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="$PlatformShort$ Date Picker Date Range Example"
+           alt="$Platform$ Date Picker Date Range Example"
            github-src="editors/date-picker/range">
 </code-view>
 
