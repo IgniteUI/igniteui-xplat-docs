@@ -404,6 +404,37 @@ function generateTocFor(platformName, language, isFirstRelease) {
     transformer.generateTOC(jsonPath, platformName, isFirstRelease);
 }
 
+function copyWebConfig(cb) {
+    log("copying ./web.config to ./docfx/en/web.config ...");
+    log("copying ./web.config to ./docfx/jp/web.config ...");
+    log("copying ./web.config to ./docfx/kr/web.config ...");
+    gulp.src(['./web.config'])
+    .pipe(gulp.dest("docfx/en"))
+    .pipe(gulp.dest("docfx/jp"))
+    .pipe(gulp.dest("docfx/kr"))
+    .on("end", () => {
+        // log("copying ./web.config to ./docfx/en/web.config ... done");
+        // log("copying ./web.config to ./docfx/jp/web.config ... done");
+        // log("copying ./web.config to ./docfx/kr/web.config ... done");
+        if (cb) { cb() };
+    })
+}
+exports.copyWebConfig = copyWebConfig
+
+function updateSiteMap(cb) {
+    if (cb) {
+        ensureEnvironment();
+    };
+    var sitemapPath = DOCFX_SITE + "/sitemap.xml";
+    log("updating " + sitemapPath);
+    let oldContent = fs.readFileSync(sitemapPath).toString();
+    let newContent = oldContent.split('.html').join('');
+    fs.writeFileSync(sitemapPath, newContent);
+
+    if (cb) { cb() };
+}
+exports.updateSiteMap = updateSiteMap
+
 function buildCore(cb) {
     // clean output files
     log("cleaning ...");
@@ -411,6 +442,7 @@ function buildCore(cb) {
     del.sync("dist/" + PLAT + "/**");
     ensureEnvironment();
 
+    copyWebConfig();
     buildPlatform(cb);
 }
 // functions for building each platform:
@@ -499,15 +531,14 @@ function buildSite(cb) {
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
-
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(buildAll, buildSite);
-var buildDocfx_Angular  = gulp.series(buildAngular, buildSite);
-var buildDocfx_Blazor   = gulp.series(buildBlazor, buildSite);
-var buildDocfx_React    = gulp.series(buildReact, buildSite);
-var buildDocfx_WC       = gulp.series(buildWC, buildSite);
+var buildDocfx_All      = gulp.series(buildAll, buildSite, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(buildAngular, buildSite, updateSiteMap);
+var buildDocfx_Blazor   = gulp.series(buildBlazor, buildSite, updateSiteMap);
+var buildDocfx_React    = gulp.series(buildReact, buildSite, updateSiteMap);
+var buildDocfx_WC       = gulp.series(buildWC, buildSite, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
-var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite);
+var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
 // exporting functions for building Docfx for each platform:
 exports['buildDocfx_All']      = buildDocfx_All;
 exports['buildDocfx_Angular']  = buildDocfx_Angular;
