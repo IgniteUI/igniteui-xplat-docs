@@ -401,6 +401,7 @@ export function generateRedirectRules(): string {
     // ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
     // ret += '  <!-- ========================================================================================== --> \n';
 
+    var matchURLs: string[] = [];
     // looping over all platforms in the order they are defined in the start of file
     // this way, all rules for a given platform are listed next to each other
     for (const platform of platforms) {
@@ -416,6 +417,13 @@ export function generateRedirectRules(): string {
                 for (const redirect of config.redirects) {
                   let name = 'Redirect for Ignite UI ' + platform.name.toUpperCase() + ' topic: ' + redirect.from + '';
                   let matchURL = platform.match + redirect.from;
+
+                  if (!matchURLs.includes(matchURL)) {
+                       matchURLs.push(matchURL);
+                  } else {
+                    console.log(">>ERROR: duplicated match URL: " + matchURL);
+                    return ret;
+                  }
 
                   let actionURL = redirect.to;
                   if (!actionURL.startsWith('/'))
