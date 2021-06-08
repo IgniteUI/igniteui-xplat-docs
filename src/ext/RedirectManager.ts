@@ -44,7 +44,7 @@ var configurations: any[] = [
         { from: "map_overview.html$", to: "geo-map" },
         { from: "map_binding_geographic_csv_files.html$", to: "geo-map-binding-data-csv" },
         { from: "map_binding_geographic_json_files.html$", to: "geo-map-binding-data-json-points" },
-        { from: "map_binding_geographic_data_models.html$", to: "eo-map-binding-data-model" },
+        { from: "map_binding_geographic_data_models.html$", to: "geo-map-binding-data-model" },
         { from: "map_binding_geographic_shape_files.html$", to: "geo-map-binding-shp-file" },
         { from: "map_binding_multiple_shapes_files.html$", to: "geo-map-binding-multiple-shapes" },
         { from: "map_binding_multiple_data_sources.html$", to: "geo-map-binding-multiple-sources" },
