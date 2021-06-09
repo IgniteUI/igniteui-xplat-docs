@@ -5,19 +5,26 @@
 // see TODO comments to complete SEO redirects for React/WC topics in the 21.2 release
 
 // definition of platforms and regular expression that matches their URLs
-var platforms: any[] = [
+
+// these definitions are used to generate rules for global web.config located at:
+// https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config
+var platformsWithProduct: any[] = [
     // note that double backslashes (\\) are required in these regular expressions
-    // { name: "Angular",  match: "^(products\\/ignite-ui-angular\\/angular\\/components)/" },
-    // { name: "Blazor",   match: "^(products\\/ignite-ui-blazor\\/blazor\\/components)/" },
-    // { name: "React",    match: "^(products\\/ignite-ui-react\\/react\\/components)/" },
-    // { name: "WC",       match: "^(products\\/ignite-ui-web-components\\/web-components\\/components)/" },
-    // { name: "XPLAT",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "Angular",  match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "Blazor",   match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "React",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "WC",       match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "XPLAT",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "Angular",  match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "Blazor",   match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "React",    match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "WC",       match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "XPLAT",    match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
 ];
+
+// these definitions are used to generate rules for local web.config file
+var platformsWithoutProduct: any[] = [
+    { name: "Angular",  match: "^(.*components)\\/" },
+    { name: "Blazor",   match: "^(.*components)\\/" },
+    { name: "React",    match: "^(.*components)\\/" },
+    { name: "WC",       match: "^(.*components)\\/" },
+    { name: "XPLAT",    match: "^(.*components)\\/" },
+]
 
 // this array contains config for redirects
 var configurations: any[] = [
@@ -382,7 +389,7 @@ var configurations: any[] = [
 ];
 
 // generates redirect rules for all platforms using above configuration arrays
-export function generateRedirectRules(): string {
+export function generateRules(withProduct: boolean): string {
 
     // an example of redirect rule from UrlRewriting.config file:
     // ------------------------------------------
@@ -391,12 +398,14 @@ export function generateRedirectRules(): string {
     //     <action url="{R:1}/category-chart-annotations" type="Redirect" redirectType="Permanent" />
     // </rule>
 
-    console.log(">> generating redirect rules... ");
+    if (withProduct)
+      console.log(">> generating redirect rules... ");
+
     var ret = '';
     ret += '  <!-- ========================================================================================== --> \n';
     ret += '  <!-- WARNING: do not manually change the following rules because they are generated from        --> \n';
     ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/src/ext/RedirectManager.ts file --> \n';
-    ret += '  <!-- by running "npm run generateRedirects" command which update "the web.config" file in:      --> \n';
+    ret += '  <!-- by running "npm run generateRedirects" command which updates "the web.config" file in:     --> \n';
     ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
     ret += '  <!-- ========================================================================================== --> \n';
     ret += '\n';
@@ -404,6 +413,8 @@ export function generateRedirectRules(): string {
     ret += '  <!-- ========================================================================================== --> \n';
 
     var matchURLs: string[] = [];
+    var platforms = withProduct ? platformsWithProduct : platformsWithoutProduct;
+
     // looping over all platforms in the order they are defined in the start of file
     // this way, all rules for a given platform are listed next to each other
     for (const platform of platforms) {
@@ -413,7 +424,9 @@ export function generateRedirectRules(): string {
         for (const config of configurations) {
 
             if (config.platforms.includes(platform.name)) {
-                console.log(">> generating " + config.redirects.length + " redirect rules from '" + config.platforms.toString() + "' config");
+
+                if (withProduct)
+                    console.log(">> generating " + config.redirects.length + " redirect rules from '" + config.platforms.toString() + "' config");
 
                 // looping over all redirects in a given config
                 for (const redirect of config.redirects) {
@@ -456,12 +469,14 @@ export function generateRedirectRules(): string {
         ret += rules;
         ret += '  <!-- ========================================================================================== --> \n';
 
-        console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
+        if (withProduct)
+            console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
     }
     ret += '  <!-- end of auto-generated rules --> \n';
 
     // console.log("generateRedirectRules \n" + ret);
-    console.log(">> generating redirect rules... done ");
+    if (withProduct)
+        console.log(">> generating redirect rules... done ");
 
     return ret;
 }
