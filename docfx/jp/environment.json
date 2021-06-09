@@ -2,7 +2,6 @@
     "development": {
         "infragisticsBaseUrl": "https://jp.staging.infragistics.com",
         "dvApiBaseUrl": "https://staging.infragistics.com",
-        "dvDemosBaseUrl": "",
         "GTMContainerId": "GTM-NNHVMC7",
         "themeApiUrl": "http://localhost:59296/api/taas",
         "themingWidgetVersion": "latest"
@@ -10,7 +9,6 @@
     "staging": {
         "infragisticsBaseUrl": "https://jp.staging.infragistics.com",
         "dvApiBaseUrl": "https://staging.infragistics.com",
-        "dvDemosBaseUrl": "",
         "GTMContainerId": "GTM-WLWSDK",
         "themeApiUrl": "https://igniteuithemingwidget-staging.infragistics.com/api/taas",
         "themingWidgetVersion": "latest"
@@ -18,7 +16,6 @@
     "production": {
         "infragisticsBaseUrl": "https://jp.infragistics.com",
         "dvApiBaseUrl": "https://www.infragistics.com",
-        "dvDemosBaseUrl": "",
         "GTMContainerId": "GTM-KVNSWJ",
         "themeApiUrl": "https://igniteuithemingwidget-prod.infragistics.com/api/taas",
         "themingWidgetVersion": "latest-stable"
