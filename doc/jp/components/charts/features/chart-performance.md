@@ -148,7 +148,7 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 ### チャート タイプ
 
-[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$Platform$ `XamCategoryChart` の `ChartType` プロパティまたは `XamFinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、$Platform$ `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
+[折れ線チャート](../types/line-chart.md)などの単純なチャート タイプは、データ ポイント間のスプライン線の補間が複雑であるため、[スプライン チャート](../types/spline-chart.md)を使用するよりもパフォーマンスが速くなります。したがって、$Platform$ `CategoryChart` の `ChartType` プロパティまたは `FinancialChart` コントロールを使用して、描画が高速なチャートのタイプを選択する必要があります。または、$Platform$ `XamDataChart` コントロールで、シリーズのタイプをより高速なシリーズに変更することもできます。
 
 次の表に、チャートの各グループで、パフォーマンスが速いものから遅いものの順にチャートのタイプを示します。
 
@@ -515,12 +515,12 @@ this.LineSeries.Resolution = 10;
 
 軸ビジュアル          | 軸プロパティ
 ---------------------|-------------------
-すべての軸ビジュアル     | `Interval`, `MinorInterval`
-軸目盛       | `TickStroke` , `TickStrokeThickness`, `TickLength`
-軸主グリッド線 | `MajorStroke`, `MajorStrokeThickness`
-軸の副グリッド線 | `MinorStroke`, `MinorStrokeThickness`
-軸主線       | `Stroke`, `StrokeThickness`
-軸タイトル          | `Title`, `TitleAngle`
+すべての軸ビジュアル     | `Interval`、`MinorInterval`
+軸目盛       | `TickStroke` 、`TickStrokeThickness`、`TickLength`
+軸主グリッド線 | `MajorStroke`、`MajorStrokeThickness`
+軸の副グリッド線 | `MinorStroke`、`MinorStrokeThickness`
+軸主線       | `Stroke`、`StrokeThickness`
+軸タイトル          | `Title`、`TitleAngle`
 軸ストリップ         | `Strip`
 
 ## ファイナンシャル チャートのパフォーマンス
