@@ -12,11 +12,11 @@ var platforms: any[] = [
     // { name: "React",    match: "^(products\\/ignite-ui-react\\/react\\/components)/" },
     // { name: "WC",       match: "^(products\\/ignite-ui-web-components\\/web-components\\/components)/" },
     // { name: "XPLAT",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "Angular",  match: "^(.*components)\\/" },
-    { name: "Blazor",   match: "^(.*components)\\/" },
-    { name: "React",    match: "^(.*components)\\/" },
-    { name: "WC",       match: "^(.*components)\\/" },
-    { name: "XPLAT",    match: "^(.*components)\\/" },
+    { name: "Angular",  match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "Blazor",   match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "React",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "WC",       match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
+    { name: "XPLAT",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
 ];
 
 // this array contains config for redirects
@@ -393,13 +393,15 @@ export function generateRedirectRules(): string {
 
     console.log(">> generating redirect rules... ");
     var ret = '';
+    ret += '  <!-- ========================================================================================== --> \n';
+    ret += '  <!-- WARNING: do not manually change the following rules because they are generated from        --> \n';
+    ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/src/ext/RedirectManager.ts file --> \n';
+    ret += '  <!-- by running "npm run generateRedirects" command which update "the web.config" file in:      --> \n';
+    ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
+    ret += '  <!-- ========================================================================================== --> \n';
+    ret += '\n';
     ret += '  <!-- start of auto-generated rules -->\n';
     ret += '  <!-- ========================================================================================== --> \n';
-    // ret += '  <!-- warning: do not manually change the following rules because they are generated from        --> \n';
-    // ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/src/ext/RedirectManager.ts file --> \n';
-    // ret += '  <!-- by running "npm run generateRedirects" command which update "the web.config" file in:      --> \n';
-    // ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
-    // ret += '  <!-- ========================================================================================== --> \n';
 
     var matchURLs: string[] = [];
     // looping over all platforms in the order they are defined in the start of file
