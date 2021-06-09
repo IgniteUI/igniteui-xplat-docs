@@ -8,5 +8,8 @@
     "_KRBaseUrl": "https://www.infragistics.co.kr/products/{ProductSpinal}/{PlatformLower}/",
     "_themeUsage": false,
     "_demosBaseUrlVar": "{environment:dvDemosBaseUrl}",
-    "_platform": "{PlatformLower}"
-}
+    "_platform": "{PlatformLower}",
+    "_toc-dir": "components",
+    "_initialPage": "components/general-getting-started",
+    "_enableSearch": true
+}   
