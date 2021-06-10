@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 複数のデータソースのバインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
 _keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'SeriesViewer']
 _language: ja
 ---
 # $Platform$ 複数データ ソースのバインド
@@ -288,7 +288,6 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 }
 
 ```
-
 
 ```razor
 @using IgniteUI.Blazor.Controls

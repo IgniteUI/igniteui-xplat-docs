@@ -8,6 +8,8 @@ _keywords: dock manager, layout, $ProductName$, Infragistics
 The Infragistics $Platform$ Dock Manager component can be used in a multi-window [Electron](https://www.electronjs.org/) desktop application to manage the layout of each window, drag panes outside of a window in order to create a new window and drag/drop panes from one window to another. You could find a sample implementation of such application in the following repository https://github.com/IgniteUI/dock-manager-electron-app.
 
 <!-- TODO: Add a gif of the application and a link to download the exe -->
+<img class="responsive-img" src="../images/dockmanager-electron-app.gif"
+alt="$Platform$ Dock Manager desktop integration"/>
 
 ## Implementation
 

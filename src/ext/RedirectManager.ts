@@ -5,19 +5,27 @@
 // see TODO comments to complete SEO redirects for React/WC topics in the 21.2 release
 
 // definition of platforms and regular expression that matches their URLs
-var platforms: any[] = [
+
+// these definitions are used to generate rules for global web.config located at:
+// https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config
+var platformsWithProduct: any[] = [
     // note that double backslashes (\\) are required in these regular expressions
-    // { name: "Angular",  match: "^(products\\/ignite-ui-angular\\/angular\\/components)/" },
-    // { name: "Blazor",   match: "^(products\\/ignite-ui-blazor\\/blazor\\/components)/" },
-    // { name: "React",    match: "^(products\\/ignite-ui-react\\/react\\/components)/" },
-    // { name: "WC",       match: "^(products\\/ignite-ui-web-components\\/web-components\\/components)/" },
-    // { name: "XPLAT",    match: "^(products\\/ignite-ui-.*\\/.*\\/components)\\/" },
-    { name: "Angular",  match: "^(.*components)\\/" },
-    { name: "Blazor",   match: "^(.*components)\\/" },
-    { name: "React",    match: "^(.*components)\\/" },
-    { name: "WC",       match: "^(.*components)\\/" },
-    { name: "XPLAT",    match: "^(.*components)\\/" },
+    { name: "Angular",  match: "^(.*products\\/ignite-ui-angular\\/angular\\/components)\\/" },
+    { name: "Blazor",   match: "^(.*products\\/ignite-ui-blazor\\/blazor\\/components)\\/" },
+    { name: "React",    match: "^(.*products\\/ignite-ui-react\\/react\\/components)\\/" },
+    { name: "WC",       match: "^(.*products\\/ignite-ui-web-components\\/web-components\\/components)\\/" },
+    { name: "XPLAT",    match: "^(.*products\\/ignite-ui-.*\\/.*\\/components)\\/" },
 ];
+
+// these definitions are used to generate rules for local web.config file
+var platformsWithoutProduct: any[] = [
+  // note that double backslashes (\\) are required in these regular expressions
+    { name: "Angular",  match: "^(.*angular\\/components)\\/" },
+    { name: "Blazor",   match: "^(.*blazor\\/components)\\/" },
+    { name: "React",    match: "^(.*react\\/components)\\/" },
+    { name: "WC",       match: "^(.*web-components\\/components)\\/" },
+    { name: "XPLAT",    match: "^(.*components)\\/" },
+]
 
 // this array contains config for redirects
 var configurations: any[] = [
@@ -90,101 +98,6 @@ var configurations: any[] = [
         { from: "grid_table_row_paging.html$", to: "data-grid-row-paging" },
         { from: "grid_table_row_pinning.html$", to: "data-grid-row-pinning" },
     ]},
-    // redirects for renamed topics only for React/WC
-    // { platforms: ["React", "WC"],
-    //   // TODO remove the following redirects when React/WC topics have SEO improvement samples
-    //   redirects: [
-    //     { from: "categorychart.md$",                                 to: "category-chart" },
-    //     { from: "categorychart.html$",                               to: "category-chart" },
-    //     { from: "categorychart_annotation_layers.md$",               to: "category-chart-annotations" },
-    //     { from: "categorychart_annotation_layers.html$",             to: "category-chart-annotations" },
-    //     { from: "categorychart_axis_options.md$",                    to: "category-chart-axis-options" },
-    //     { from: "categorychart_axis_options.html$",                  to: "category-chart-axis-options" },
-    //     { from: "categorychart_real_time_data.md$",                  to: "category-chart-high-frequency" },
-    //     { from: "categorychart_real_time_data.html$",                to: "category-chart-high-frequency" },
-    //     { from: "categorychart_high_volume_data.md$",                to: "category-chart-high-volume" },
-    //     { from: "categorychart_high_volume_data.html$",              to: "category-chart-high-volume" },
-    //     { from: "categorychart_configuration_options.md$",           to: "category-chart-config-options" },
-    //     { from: "categorychart_configuration_options.html$",         to: "category-chart-config-options" },
-    //     { from: "categorychart_highlighting.md$",                    to: "category-chart-highlighting" },
-    //     { from: "categorychart_highlighting.html$",                  to: "category-chart-highlighting" },
-    //     { from: "categorychart_tooltip_types.md$",                   to: "category-chart-tooltip-types" },
-    //     { from: "categorychart_tooltip_types.html$",                 to: "category-chart-tooltip-types" },
-    //     { from: "categorychart_tooltip_templates.md$",               to: "category-chart-tooltip-types" },
-    //     { from: "categorychart_tooltip_templates.html$",             to: "category-chart-tooltip-types" },
-    //     { from: "datachart.md$",                                     to: "data-chart" },
-    //     { from: "datachart.html$",                                   to: "data-chart" },
-    //     { from: "datachart_axis_types.md$",                          to: "data-chart-axis-types" },
-    //     { from: "datachart_axis_types.html$",                        to: "data-chart-axis-types" },
-    //     { from: "datachart_axis_annotations.md$",                    to: "data-chart-axis-annotations" },
-    //     { from: "datachart_axis_annotations.html$",                  to: "data-chart-axis-annotations" },
-    //     { from: "datachart_axis_settings.html$",                     to: "data-chart-axis-settings" },
-    //     { from: "datachart_axis_settings.md$",                       to: "data-chart-axis-settings" },
-    //     { from: "datachart_axis_sharing.html$",                      to: "data-chart-axis-sharing" },
-    //     { from: "datachart_axis_sharing.md$",                        to: "data-chart-axis-sharing" },
-    //     { from: "datachart_chart_legends.md$",                       to: "data-chart-legends" },
-    //     { from: "datachart_chart_legends.html$",                     to: "data-chart-legends" },
-    //     { from: "datachart_chart_navigation.md$",                    to: "data-chart-navigation" },
-    //     { from: "datachart_chart_navigation.html$",                  to: "data-chart-navigation" },
-    //     { from: "datachart_chart_synchronization.md$",               to: "data-chart-synchronization" },
-    //     { from: "datachart_chart_synchronization.html$",             to: "data-chart-synchronization" },
-    //     { from: "datachart_chart_titles.html$",                      to: "data-chart-titles" },
-    //     { from: "datachart_chart_titles.md$",                        to: "data-chart-titles" },
-    //     { from: "datachart_data_sources.md$",                        to: "data-chart-data-sources" },
-    //     { from: "datachart_data_sources.html$",                      to: "data-chart-data-sources" },
-    //     { from: "datachart_series_annotations.md$",                  to: "data-chart-series-annotations" },
-    //     { from: "datachart_series_annotations.html$",                to: "data-chart-series-annotations" },
-    //     { from: "datachart_series_highlighting.md$",                 to: "data-chart-series-highlighting" },
-    //     { from: "datachart_series_highlighting.html$",               to: "data-chart-series-highlighting" },
-    //     { from: "datachart_series_markers.md$",                      to: "data-chart-series-markers" },
-    //     { from: "datachart_series_markers.html$",                    to: "data-chart-series-markers" },
-    //     { from: "datachart_series_tooltips.md$",                     to: "data-chart-series-tooltips" },
-    //     { from: "datachart_series_tooltips.html$",                   to: "data-chart-series-tooltips" },
-    //     { from: "datachart_series_trendlines.md$",                   to: "data-chart-series-trendlines" },
-    //     { from: "datachart_series_trendlines.html$",                 to: "data-chart-series-trendlines" },
-    //     { from: "datachart_series_value_overlay.md$",                to: "data-chart-value-overlay" },
-    //     { from: "datachart_series_value_overlay.html$",              to: "data-chart-value-overlay" },
-    //     { from: "datachart_series_types.html$",                      to: "data-chart-series-types" },
-    //     { from: "datachart_series_types.md$",                        to: "data-chart-series-types" },
-    //     { from: "datachart_series_types_category.md$",               to: "data-chart-series-types" },
-    //     { from: "datachart_series_types_category.html$",             to: "data-chart-series-types" },
-    //     { from: "datachart_series_types_financial.md$",              to: "data-chart-types-overview-financial" },
-    //     { from: "datachart_series_types_financial.html$",            to: "data-chart-types-overview-financial" },
-    //     { from: "datachart_series_types_polar.md$",                  to: "data-chart-type-polar-line-series" },
-    //     { from: "datachart_series_types_polar.html$",                to: "data-chart-type-polar-line-series" },
-    //     { from: "datachart_series_types_radial.md$",                 to: "data-chart-type-radial-line-series" },
-    //     { from: "datachart_series_types_radial.html$",               to: "data-chart-type-radial-line-series" },
-    //     { from: "datachart_series_types_range.md$",                  to: "data-chart-type-range-column-series" },
-    //     { from: "datachart_series_types_range.html$",                to: "data-chart-type-range-column-series" },
-    //     { from: "datachart_series_types_scatter_bubble.md$",         to: "data-chart-type-scatter-bubble-series" },
-    //     { from: "datachart_series_types_scatter_bubble.html$",       to: "data-chart-type-scatter-bubble-series" },
-    //     { from: "datachart_series_types_scatter_area.md$",           to: "data-chart-type-scatter-area-series" },
-    //     { from: "datachart_series_types_scatter_area.html$",         to: "data-chart-type-scatter-area-series" },
-    //     { from: "datachart_series_types_scatter_contour.md$",        to: "data-chart-type-scatter-contour-series" },
-    //     { from: "datachart_series_types_scatter_contour.html$",      to: "data-chart-type-scatter-contour-series" },
-    //     { from: "datachart_series_types_scatter_marker.md$",         to: "data-chart-type-scatter-point-series" },
-    //     { from: "datachart_series_types_scatter_marker.html$",       to: "data-chart-type-scatter-point-series" },
-    //     { from: "datachart_series_types_shape.md$",                  to: "data-chart-type-scatter-polygon-series" },
-    //     { from: "datachart_series_types_shape.html$",                to: "data-chart-type-scatter-polygon-series" },
-    //     { from: "datachart_series_types_stacked.md$",                to: "data-chart-type-stacked-column-series" },
-    //     { from: "datachart_series_types_stacked.html$",              to: "data-chart-type-stacked-column-series" },
-    //     { from: "financialchart.html$",                              to: "financial-chart" },
-    //     { from: "financialchart_binding_live_data.html$",            to: "financial-chart-high-frequency" },
-    //     { from: "financialchart_binding_large_data.html$",           to: "financial-chart-high-volume" },
-    //     { from: "financialchart_binding_multiple_sources.html$",     to: "financial-chart-multiple-data" },
-    //     { from: "financialchart_chart_annotations.html$",            to: "financial-chart-chart-annotations" },
-    //     { from: "financialchart_chart_configuration.html$",          to: "financial-chart" },
-    //     { from: "financialchart_chart_display_types.html$",          to: "financial-chart" },
-    //     { from: "financialchart_chart_panes.html$",                  to: "financial-chart-chart-panes" },
-    //     { from: "financialchart_chart_performance.html$",            to: "financial-chart-chart-performance" },
-    //     { from: "financialchart_custom_indicators.html$",            to: "financial-chart" },
-    //     { from: "financialchart_tooltip_types.html$",                to: "financial-chart" },
-    //     { from: "financialchart_tooltip_templates.html$",            to: "financial-chart" },
-    //     { from: "doughnutchart.md$",                                 to: "doughnut-chart" },
-    //     { from: "doughnutchart.html$",                               to: "doughnut-chart" },
-    //     { from: "piechart.md$",                                      to: "pie-chart" },
-    //     { from: "piechart.html$",                                    to: "pie-chart" },
-    // ]},
     // redirects for renamed topics only for Angular/Blazor
     { platforms: ["XPLAT"], // platforms: ["Angular", "Blazor"],
       // TODO move all these redirects to XPLAT redirects when React/WC topics have SEO improvement samples
@@ -382,7 +295,7 @@ var configurations: any[] = [
 ];
 
 // generates redirect rules for all platforms using above configuration arrays
-export function generateRedirectRules(): string {
+export function generateRules(withProduct: boolean): string {
 
     // an example of redirect rule from UrlRewriting.config file:
     // ------------------------------------------
@@ -391,17 +304,23 @@ export function generateRedirectRules(): string {
     //     <action url="{R:1}/category-chart-annotations" type="Redirect" redirectType="Permanent" />
     // </rule>
 
-    console.log(">> generating redirect rules... ");
+    if (withProduct)
+      console.log(">> generating redirect rules... ");
+
     var ret = '';
+    ret += '  <!-- ========================================================================================== --> \n';
+    ret += '  <!-- WARNING: do not manually change the following rules because they are generated from        --> \n';
+    ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/src/ext/RedirectManager.ts file --> \n';
+    ret += '  <!-- by running "npm run generateRedirects" command which updates "the web.config" file in:     --> \n';
+    ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
+    ret += '  <!-- ========================================================================================== --> \n';
+    ret += '\n';
     ret += '  <!-- start of auto-generated rules -->\n';
     ret += '  <!-- ========================================================================================== --> \n';
-    // ret += '  <!-- warning: do not manually change the following rules because they are generated from        --> \n';
-    // ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/src/ext/RedirectManager.ts file --> \n';
-    // ret += '  <!-- by running "npm run generateRedirects" command which update "the web.config" file in:      --> \n';
-    // ret += '  <!-- https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/web.config                      --> \n';
-    // ret += '  <!-- ========================================================================================== --> \n';
 
     var matchURLs: string[] = [];
+    var platforms = withProduct ? platformsWithProduct : platformsWithoutProduct;
+
     // looping over all platforms in the order they are defined in the start of file
     // this way, all rules for a given platform are listed next to each other
     for (const platform of platforms) {
@@ -411,7 +330,9 @@ export function generateRedirectRules(): string {
         for (const config of configurations) {
 
             if (config.platforms.includes(platform.name)) {
-                console.log(">> generating " + config.redirects.length + " redirect rules from '" + config.platforms.toString() + "' config");
+
+                if (withProduct)
+                    console.log(">> generating " + config.redirects.length + " redirect rules from '" + config.platforms.toString() + "' config");
 
                 // looping over all redirects in a given config
                 for (const redirect of config.redirects) {
@@ -454,12 +375,14 @@ export function generateRedirectRules(): string {
         ret += rules;
         ret += '  <!-- ========================================================================================== --> \n';
 
-        console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
+        if (withProduct)
+            console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
     }
     ret += '  <!-- end of auto-generated rules --> \n';
 
     // console.log("generateRedirectRules \n" + ret);
-    console.log(">> generating redirect rules... done ");
+    if (withProduct)
+        console.log(">> generating redirect rules... done ");
 
     return ret;
 }
