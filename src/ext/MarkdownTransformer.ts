@@ -257,9 +257,11 @@ function transformDocLinks(options: any) {
         // allows usage of $Platform$ in links to topics/sections
         if (reference.indexOf("$Platform$") > 0) {
             let platform = getPlatformName(options.platform);
-            let platformURL = reference.replace("$Platform$", platform).toLowerCase();
-            // console.log("transformDocLinks \n" + reference + "\n" + platformURL);
-            reference = platformURL;
+            reference = reference.replace("$Platform$", platform).toLowerCase();
+            reference = reference.replace("webcomponents", "web-components");
+            reference = reference.replace(" ", "-");
+        } else if (reference.indexOf("$") > 0) {
+            throw new Error("cannot transform a link with this variable:\n" + reference);
         }
 
         var isApiDocLink = reference.indexOf("{environment:dvApiBaseUrl") > 0;
