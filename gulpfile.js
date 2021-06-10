@@ -263,7 +263,12 @@ function buildPlatform(cb) {
         transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
 
         let sources = [
-            'doc/**/*.md', // including all markdown files
+            // 'doc/**/*.md', // including all markdown files
+            // 'doc/en/**/general*.md', // including en markdown files
+            // 'doc/en/**/linear-gauge.md', // including en markdown files
+            'doc/en/**/*.md', // including en markdown files
+            'doc/jp/**/*.md', // including jp markdown files
+            'doc/kr/**/*.md', // including kr markdown files
             '!doc/**/obsolete/*.md' // excluding old chart topics
         ];
 
