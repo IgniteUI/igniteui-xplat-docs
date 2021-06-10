@@ -20,11 +20,11 @@ var platformsWithProduct: any[] = [
 // these definitions are used to generate rules for local web.config file
 var platformsWithoutProduct: any[] = [
   // note that double backslashes (\\) are required in these regular expressions
-    { name: "Angular",  match: "^(.*\\/angular\\/components)\\/" },
-    { name: "Blazor",   match: "^(.*\\/blazor\\/components)\\/" },
-    { name: "React",    match: "^(.*\\/react\\/components)\\/" },
-    { name: "WC",       match: "^(.*\\/web-components\\/components)\\/" },
-    { name: "XPLAT",    match: "^(.*\\/components)\\/" },
+    { name: "Angular",  match: "^(.*angular\\/components)\\/" },
+    { name: "Blazor",   match: "^(.*blazor\\/components)\\/" },
+    { name: "React",    match: "^(.*react\\/components)\\/" },
+    { name: "WC",       match: "^(.*web-components\\/components)\\/" },
+    { name: "XPLAT",    match: "^(.*components)\\/" },
 ]
 
 // this array contains config for redirects
