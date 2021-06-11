@@ -575,16 +575,20 @@ function generateRedirects(cb) {
     let rulesWithProduct = rm.generateRules(true);
     let rulesWithoutProduct = rm.generateRules(false);
 
+    console.log(">>");
     console.log(">> loading ./templates/web.config file... ");
-    let webConfigTemplate = fs.readFileSync('./templates/web.config');
-    let webConfigContent = webConfigTemplate.toString();
+    let localWebTemplate = fs.readFileSync('./templates/web.config').toString();
 
     console.log(">> saving  ./web.config file... ");
-    let localWebConfig = webConfigContent.replace('<!-- {AutoInsertRules} -->', rulesWithoutProduct);
+    let localWebConfig = localWebTemplate.replace('<!-- {AutoInsertRules} -->', rulesWithoutProduct);
     fs.writeFileSync('./web.config', localWebConfig);
 
+    console.log(">>");
+    console.log(">> loading ./templates/web.UrlRewriting.config file... ");
+    let globalWebTemplate = fs.readFileSync('./templates/web.UrlRewriting.config').toString();
+
     console.log(">> saving  ./web.UrlRewriting.config file... ");
-    let globalWebConfig = webConfigContent.replace('<!-- {AutoInsertRules} -->', rulesWithProduct);
+    let globalWebConfig = globalWebTemplate.replace('<!-- {AutoInsertRules} -->', rulesWithProduct);
     fs.writeFileSync('./web.UrlRewriting.config', globalWebConfig);
 
     console.log(">>");
