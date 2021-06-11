@@ -594,3 +594,23 @@ function generateRedirects(cb) {
     cb();
 }
 exports.generateRedirects = generateRedirects
+
+
+// copy output of igniteui-docfx-template to igniteui-xplat-docs
+function copyTemplateLocal(cb) {
+    gulp.src(['../igniteui-docfx-template/dist/**']).pipe(
+    gulp.dest("./node_modules/igniteui-docfx-template"))
+    .on("end", () => {
+        if (cb) { cb(); }
+    });
+}
+exports.copyTemplateLocal = copyTemplateLocal;
+
+function copyTemplateBackup(cb) {
+    gulp.src(['../_BK/igniteui-docfx-template/**']).pipe(
+    gulp.dest("./node_modules/igniteui-docfx-template"))
+    .on("end", () => {
+        if (cb) { cb(); }
+    });
+}
+exports.copyTemplateBackup = copyTemplateBackup;
