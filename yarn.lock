@@ -1804,9 +1804,10 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-igniteui-docfx-template@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.0.4.tgz#0e7d643c38a56c9a8f7ae9ad1324c9973855027c"
+igniteui-docfx-template@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.0.5.tgz#773361c6e9a6194ce6fee2471a87dbb59fa5e03a"
+  integrity sha512-o6QXD6MSeqOkLOKvNzmnC2u8/u8dR8Tw8y9QAqK+u3gq8qdnFIfEvwkCexVy7VP5cFVwSpRqIUapQhVln0TVUA==
   dependencies:
     anchor-js "^4.3.0"
     babel-polyfill "^6.26.0"
