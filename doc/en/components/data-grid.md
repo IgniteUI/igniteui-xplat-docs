@@ -384,6 +384,33 @@ grid1.dataSource = data;
 </DataGrid>
 ```
 
+### Styling Columns
+The following code demonstrates how to style specific columns using the provided column's properties.
+
+```tsx
+<IgrTextColumn
+    background="SkyBlue"
+    textStyle="Italic Bold 16pt Times New Roman"
+/>
+```
+
+```html
+<igc-text-column 
+    background="SkyBlue"
+    text-style="Italic Bold 16pt Times New Roman"
+></igc-text-column>
+```
+
+```razor
+<TextColumn    
+    Background="SkyBlue"
+    FontStyle="italic" 
+    FontWeight="bold" 
+    FontFamily="Times New Roman" 
+    FontSize="16"  
+/>
+```
+
 ### Additional Resources
 
 - [Accessibility Compliance](data-grid-accessibility.md)
