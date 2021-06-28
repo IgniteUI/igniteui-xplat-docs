@@ -4,7 +4,7 @@ _description: Infragistics' $Platform$ grid component helps you create a fast, r
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
 ---
-# $Platform$ Data Grid Overview
+# $Platform$ Data Grid component| Real-Time $Platform$ tables| Infragistics 
 
 The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the $Platform$ data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The $Platform$ tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
 
@@ -20,7 +20,18 @@ The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component 
 
 <div class="divider--half"></div>
 
-## Dependencies
+This demo implements some of the features that are available in the Grid:
+
+- Filtering
+- Grouping
+- Pin/Unpin columns
+- Reposition columns
+- Sorting
+- Summaries
+
+## Getting Started
+
+### Dependencies
 
 <!-- Blazor -->
 Please refer to these topics on adding the IgniteUI.Blazor package.
@@ -44,7 +55,7 @@ npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+### Required Modules
 
 The `Grid` requires the following modules:
 
@@ -72,7 +83,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## Optional Modules
+### Optional Modules
 
 The optional `Grid` features, seen above, requires the following modules:
 
@@ -110,7 +121,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## Sample Data Source
+### Sample Data Source
 Now that the $Platform$ data grid module is imported, next is the basic configuration of the $Platform$ grid that binds to local data.
 
 ```ts
@@ -255,7 +266,7 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 }
 ```
 
-## Auto-Generate Columns
+### Auto-Generate Columns
 The following code demonstrates how to bind the $Platform$ data grid to the above local data.
 
 ```tsx
@@ -326,7 +337,7 @@ grid1.dataSource = data;
     CornerRadiusTopRight="0" />
 ```
 
-## Manually Define Columns
+### Manually Define Columns
 
 ```tsx
 <IgrDataGrid
