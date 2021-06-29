@@ -130,9 +130,9 @@ private onPageChanged = (pageNumber: number, data: any[]) => {
 };
 ```
 
-## React Pagination and Grid Interactions 
+## $Platform$ Pagination and Grid Interactions 
 
-When users interact with the Grid like sorting and grouping, and you have enabled the React Pager component on the grid, you need to use the following functions to ensure that the React Pagination data is synchronized with the React table display. 
+When users interact with the Grid like sorting and grouping, and you have enabled the $Platform$ Pager component on the grid, you need to use the following functions to ensure that the $Platform$ Pagination data is synchronized with the $Platform$ table display. 
 
 - applySorts 
 - applyGroups 
