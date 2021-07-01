@@ -1,5 +1,5 @@
 ---
-title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Infragistics
+title: $Platform$ Data Grid Component | Real-Time $Platform Tables | Infragistics 
 _description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
@@ -20,7 +20,18 @@ The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component 
 
 <div class="divider--half"></div>
 
-## Dependencies
+This demo implements some of the features that are available in the Grid:
+
+- Filtering
+- Grouping
+- Pin/Unpin columns
+- Reposition columns
+- Sorting
+- Summaries
+
+## Getting Started
+
+### Dependencies
 
 <!-- Blazor -->
 Please refer to these topics on adding the IgniteUI.Blazor package.
@@ -44,7 +55,7 @@ npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+### Required Modules
 
 The `Grid` requires the following modules:
 
@@ -72,7 +83,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## Optional Modules
+### Optional Modules
 
 The optional `Grid` features, seen above, requires the following modules:
 
@@ -110,7 +121,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## Sample Data Source
+### Sample Data Source
 Now that the $Platform$ data grid module is imported, next is the basic configuration of the $Platform$ grid that binds to local data.
 
 ```ts
@@ -255,7 +266,7 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 }
 ```
 
-## Auto-Generate Columns
+### Auto-Generate Columns
 The following code demonstrates how to bind the $Platform$ data grid to the above local data.
 
 ```tsx
@@ -326,7 +337,7 @@ grid1.dataSource = data;
     CornerRadiusTopRight="0" />
 ```
 
-## Manually Define Columns
+### Manually Define Columns
 
 ```tsx
 <IgrDataGrid
@@ -371,6 +382,33 @@ grid1.dataSource = data;
     <NumericColumn Field="UnitsInStock" HeaderText="Units In Stock" />
     <DateTimeColumn Field="OrderDate" HeaderText="Order Date" />
 </DataGrid>
+```
+
+### Styling Columns
+The following code demonstrates how to style specific columns using the provided column's properties.
+
+```tsx
+<IgrTextColumn
+    background="SkyBlue"
+    textStyle="Italic Bold 16pt Times New Roman"
+/>
+```
+
+```html
+<igc-text-column 
+    background="SkyBlue"
+    text-style="Italic Bold 16pt Times New Roman"
+></igc-text-column>
+```
+
+```razor
+<TextColumn    
+    Background="SkyBlue"
+    FontStyle="italic" 
+    FontWeight="bold" 
+    FontFamily="Times New Roman" 
+    FontSize="16"  
+/>
 ```
 
 ### Additional Resources
