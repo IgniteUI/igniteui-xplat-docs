@@ -1,5 +1,5 @@
 ---
-title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | インフラジスティックス
+title: $Platform$ データ グリッド コンポーネント | リアルタイム $Platform テーブル | インフラジスティックス
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。 $ProductName$ を使用したデータの表示方法について説明します。
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
@@ -21,7 +21,18 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 
 <div class="divider--half"></div>
 
-## 依存関係
+This demo implements some of the features that are available in the Grid:
+
+- フィルタリング
+- グループ化
+- 列のピン固定/ピン固定解除
+- 列の再配置
+- ソート
+- 集計
+
+## 作業の開始
+
+### 依存関係
 
 <!-- Blazor -->
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
@@ -45,7 +56,7 @@ npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## モジュールの要件
+### モジュールの要件
 
 `Grid` を作成するには、以下のモジュールが必要です。
 
@@ -73,7 +84,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## オプションのモジュール
+### オプションのモジュール
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
@@ -111,7 +122,7 @@ ModuleManager.register(
 
 <div class="divider--half"></div>
 
-## サンプル データ ソース
+### サンプル データ ソース
 $Platform$ グリッド モジュールがインポートされました。以下のステップはローカル データにバインドするグリッドの基本的な設定です。
 
 ```ts
@@ -256,7 +267,7 @@ $Platform$ グリッド モジュールがインポートされました。以�
 }
 ```
 
-## 列の自動生成
+### 列の自動生成
 以下のコードは、$Platform$ データ グリッドを上記のローカルデータにバインドする方法を示しています。
 
 ```tsx
@@ -327,7 +338,7 @@ grid1.dataSource = data;
     CornerRadiusTopRight="0" />
 ```
 
-## 列の手動定義
+### 列の手動定義
 
 ```tsx
 <IgrDataGrid
@@ -372,6 +383,33 @@ grid1.dataSource = data;
     <NumericColumn Field="UnitsInStock" HeaderText="Units In Stock" />
     <DateTimeColumn Field="OrderDate" HeaderText="Order Date" />
 </DataGrid>
+```
+
+### Styling Columns
+The following code demonstrates how to style specific columns using the provided column's properties.
+
+```tsx
+<IgrTextColumn
+    background="SkyBlue"
+    textStyle="Italic Bold 16pt Times New Roman"
+/>
+```
+
+```html
+<igc-text-column 
+    background="SkyBlue"
+    text-style="Italic Bold 16pt Times New Roman"
+></igc-text-column>
+```
+
+```razor
+<TextColumn    
+    Background="SkyBlue"
+    FontStyle="italic" 
+    FontWeight="bold" 
+    FontFamily="Times New Roman" 
+    FontSize="16"  
+/>
 ```
 
 ### その他のリソース
