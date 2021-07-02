@@ -11,7 +11,6 @@ The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component 
 ## $Platform$ Data Grid Example
 
 This demo implements some of the features that are available in the Grid:
-
 Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
 
 <code-view style="height: 600px"
