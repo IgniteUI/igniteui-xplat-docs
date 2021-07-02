@@ -1,5 +1,5 @@
 ---
-title: $Platform$ Data Grid Component | Real-Time $Platform Tables | Infragistics 
+title: $Platform$ Data Grid Component | Real-Time $Platform$ Tables | Infragistics 
 _description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
@@ -10,6 +10,8 @@ The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component 
 
 ## $Platform$ Data Grid Example
 
+This demo implements some of the features that are available in the Grid:
+Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -19,15 +21,6 @@ The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component 
 </code-view>
 
 <div class="divider--half"></div>
-
-This demo implements some of the features that are available in the Grid:
-
-- Filtering
-- Grouping
-- Pin/Unpin columns
-- Reposition columns
-- Sorting
-- Summaries
 
 ## Getting Started
 
