@@ -1,5 +1,5 @@
 ---
-title: $Platform$ データ グリッド | 行のページング | インフラジスティックス
+title: $Platform$ グリッド/テーブルのページネーション – $ProductName$
 _description: データの配列を取り込み、そのデータの一部を１ページとして出力するように設計されたインフラジスティックスの $Platform$ グリッド コンポーネントのカスタム Pager コンポーネントを是非お試しください。
 _keywords: $Platform$ Table, Data Grid, row, paging, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のページング, インフラジスティックス
 mentionedTypes: ['Grid']

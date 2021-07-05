@@ -1,5 +1,5 @@
 ---
-title: $Platform$ データ グリッド コンポーネント | リアルタイム $Platform テーブル | インフラジスティックス
+title: $Platform$ データ グリッド コンポーネント | リアルタイム $Platform$ テーブル | インフラジスティックス
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。 $ProductName$ を使用したデータの表示方法について説明します。
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
@@ -11,6 +11,8 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 
 ## $Platform$ Data Grid の例
 
+このデモは、グリッドで利用可能な機能のいくつかを実装しています:
+フィルタリング、グループ化、列のピン固定/ピン固定解除、列の再配置、ソート、および集計。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -20,15 +22,6 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 </code-view>
 
 <div class="divider--half"></div>
-
-このデモは、グリッドで利用可能な機能のいくつかを実装しています。
-
-- フィルタリング
-- グループ化
-- 列のピン固定/ピン固定解除
-- 列の再配置
-- ソート
-- 集計
 
 ## 作業の開始
 
