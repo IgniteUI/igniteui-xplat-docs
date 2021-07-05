@@ -1,5 +1,5 @@
 ---
-title: $Platform$ Data Grid | Row Paging | Infragistics
+title: $Platform$ grid/table pagination – $ProductName$ 
 _description: View Infragistics' $Platform$ grid component's custom Pager component which was designed to take in an array of data and output portions of that data as a page.
 _keywords: $Platform$ Table, Data Grid, row, paging, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
