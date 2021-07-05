@@ -21,7 +21,7 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 
 <div class="divider--half"></div>
 
-This demo implements some of the features that are available in the Grid:
+このデモは、グリッドで利用可能な機能のいくつかを実装しています。
 
 - フィルタリング
 - グループ化
@@ -385,8 +385,8 @@ grid1.dataSource = data;
 </DataGrid>
 ```
 
-### Styling Columns
-The following code demonstrates how to style specific columns using the provided column's properties.
+### 列のスタイル設定
+次のコードは、提供された列のプロパティを使用して特定の列のスタイルを設定する方法を示しています。
 
 ```tsx
 <IgrTextColumn

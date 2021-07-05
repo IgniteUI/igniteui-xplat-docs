@@ -6,9 +6,9 @@ mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $Platform$ Grid/Table Pagination 
+# $Platform$ グリッド/テーブルのページネーション
 
-Tabular table UIs are used commonly in many web products. Building a tabular table UI from scratch isn't easy, however, Ignite UI for $Platform$ grid, creating a Table UI is simple, and binding large amounts of local or remote data to the $Platform$ grid is easy.  Since the grid is virtualized by default, you are not required to include table pagination to show large data sets.  It is mainly used due to its most efficient ways of organizing complex data in the UI. With table pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without actually needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows / buttons that let users flip through pages, as demonstrated here:
+表形式のテーブル UI は、多くの Web 製品で一般的に使用されています。表形式のテーブル UI を最初から作成するのは簡単ではありませんが、Ignite UI for $Platform$ グリッドを使用すると、テーブル UI の作成が簡単になり、大量のローカル データまたはリモート データを $Platform$ グリッドにバインドするのも簡単です。グリッドはデフォルトで仮想化されているため、大きなデータ セットを表示するためにテーブルのページネーションを含める必要はありません。これは主に、UI で複雑なデータを整理する最も効率的な方法のために使用されます。テーブルのページネーションを使用すると、データを設定された行数で表示できるため、ユーザーは実際にスクロールバーを必要とせずに、データをスクロールできます。テーブルのページネーション UI には通常、現在のページ、合計ページ、クリック可能な [前へ] と [次へ] の矢印/ボタンなどが含まれ、ユーザーは次のようにページをめくることができます:
 
 行のページングは​​現在 $ProductName$ Data Table / Data Grid 自体には実装されていませんが、データソースを動的に切り替えることで同様の結果を得ることができます。
 
@@ -34,33 +34,33 @@ Tabular table UIs are used commonly in many web products. Building a tabular tab
 
 上記のサンプルでは、ページングは​​ $ProductName$ Data Grid に組み込まれていないため、データの配列を取り込み、そのデータの一部をページとして出力するように設計されたカスタム Pager コンポーネントを作成しました。このページデータは $ProductName$ Data Grid に提供され、自動的にその新しいデータが表示されます。
 
-From a UX perspective, table pagination has pros and cons.  According to a [recent article](https://www.uxmatters.com/mt/archives/2018/11/paging-scrolling-and-infinite-scroll.php) on UX Matters, here is a breakdown of the good and the bad when it comes to table pagination. 
+UX の観点から、テーブルのページネーションには長所と短所があります。UX Matters の[最近の記事](https://www.uxmatters.com/mt/archives/2018/11/paging-scrolling-and-infinite-scroll.php)による、テーブルのページネーションの良い面と悪い面の分類です: 
 
-Table Pagination Benefits: 
+テーブルのページネーションの利点: 
 
-- Limits user choice 
-- Clicks are measurable 
+- ユーザーの選択を制限します。
+- クリック数は測定可能です。 
 
-Table Pagination Negatives: 
+テーブルのページネーションの欠点:
 
-- Users still have to scrolls 
-- Pagers work and behave differently from site to site 
-- Too many UI controls can be confusing 
-- Users perceive paging and slow and cumbersome 
-- Users may not notice pagination controls 
-- Page loading may be slow 
-- Users are confused whether actions apply to Page or entire set of data 
+- ユーザーはまだスクロールする必要があります。
+- ページャーの作業と動作はサイトごとに異なります。
+- UI コントロールが多すぎると、混乱する可能性があります。
+- ユーザーは、ページネーションが遅くて面倒だと考えています。 
+- ユーザーはページネーション コントロールに気付かない場合があります。 
+- ページの読み込みが遅い場合があります。
+- アクションがページに適用されるのか、データ セット全体に適用されるのか、ユーザーは混乱します。
 
-With the Ignite UI $Platform$ grid, we allow the developer to add paging, however, as the grid has infinite scrolling built in by default, we recommend infinite (or virtual) scrolling vs. adding a pager to the grid.  With virtualized, infinite scrolling as the default user experience, you get: 
+Ignite UI $Platform$ グリッドを使用すると、開発者はページングを追加できますが、グリッドにはデフォルトで無限スクロールが組み込まれているため、グリッドにページャーを追加するのではなく、無限 (または仮想) スクロールをお勧めします。デフォルトのユーザー エクスペリエンスとして仮想化された無限スクロールを使用すると、次のことが可能になります: 
 
-- Best performance while still having control or how much data is ‘paged’ via the scrolling interaction 
-- Natural approach to scrolling all content 
-- All interactions are clear to the end user 
-- Maps to the natural interactions on a mobile UX 
+- スクロール操作によってページングされるデータの量を制御しながら、最高のパフォーマンスを実現。
+- すべてのコンテンツをスクロールするための自然なアプローチ。
+- すべてのインタラクションはエンド ユーザーに明確です。
+- モバイル UX での自然なインタラクションにマップします。
 
-## Paging in $Platform$ Grid/Table Component 
+## $Platform$ グリッド/テーブル コンポーネントでのページング
 
-Paging offers an option to display Grid data in the form of page segments. In order to enable a traditional paging UI in your $Platform$ table, you need to use the Pager component, and attach the Pager component to a $Platform$ grid on your page.  Data is bound to the $Platform$ pager component, and then data is passed to the Grid based on the page segment being displayed.  
+ページングには、グリッド データをページ セグメントの形式で表示するオプションがあります。$Platform$ テーブルで従来のページング UI を有効にするには、Pager コンポーネントを使用し、Pager コンポーネントをページの $Platform$ グリッドにアタッチする必要があります。データは $Platform$ ページャー コンポーネントにバインドされ、表示されているページ セグメントに基づいてデータがグリッドに渡されます。 
 
 Pager コンポーネントの列のソート、行のグループ化、列のフィルターなどをサポートするために、独自のバージョンのデータ ソースを保持しています。ソート、グループ、またはフィルターが $ProductName$ データ グリッドに追加されると、Pager 内のデータ ソースの内部バージョンが、一致するソート、グループ、またはフィルターで更新されます。このデータソースは、これらに基づいてデータのビューを変更し、変更を反映するデータを提供します。
 
@@ -131,9 +131,9 @@ private onPageChanged = (pageNumber: number, data: any[]) => {
 };
 ```
 
-## $Platform$ Grid/Page Synchronization 
+## $Platform$ グリッド/ページの同期
 
-When users interact with the Grid like sorting and grouping, and you have enabled the $Platform$ Pager component on the grid, you need to use the following functions to ensure that the $Platform$ Pagination data is synchronized with the $Platform$ table display. 
+ユーザーがソートやグループ化などのグリッドを操作し、グリッドで $Platform$ Pager コンポーネントを有効にした場合、次の関数を使用して、$Platform$ ページネーション データが $Platform$ テーブル表示と同期されるようにする必要があります。 
 
 - applySorts 
 - applyGroups 
