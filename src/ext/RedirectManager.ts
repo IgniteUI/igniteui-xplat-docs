@@ -2,8 +2,6 @@
 // that are inserted in the "web.config" file in this repo
 // when you execute the "npm run generateRedirects" command in VS terminal
 
-// see TODO comments to complete SEO redirects for React/WC topics in the 21.2 release
-
 // definition of platforms and regular expression that matches their URLs
 
 // these definitions are used to generate rules for global web.config located at:
@@ -29,7 +27,7 @@ var platformsWithoutProduct: any[] = [
 
 // this array contains config for redirects
 var configurations: any[] = [
-    // redirects for previously renamed topics across all platforms
+    // redirects for previously renamed spreadsheet/excel/map topics with underscore
     { platforms: ["XPLAT"],
       redirects: [
         { from: "spreadsheet_overview.html$", to: "spreadsheet-overview" },
@@ -41,13 +39,13 @@ var configurations: any[] = [
         { from: "spreadsheet_chart_adapter.html$", to: "spreadsheet-chart-adapter" },
         { from: "spreadsheet_conditional_formatting.html$", to: "spreadsheet-conditional-formatting" },
         { from: "spreadsheet_data_validation.html$", to: "spreadsheet-data-validation" },
-        { from: "excel_library.html$", to: "excel-library" },
         { from: "excel_library_using_cells.html$", to: "excel-library-using-cells" },
         { from: "excel_library_using_tables.html$", to: "excel-library-using-tables" },
         { from: "excel_library_using_workbooks.html$", to: "excel-library-using-workbooks" },
         { from: "excel_library_using_worksheets.html$", to: "excel-library-using-worksheets" },
         { from: "excel_library_working_with_charts.html$", to: "excel-library-working-with-charts" },
         { from: "excel_library_working_with_sparklines.html$", to: "excel-library-working-with-sparklines" },
+        { from: "excel_library.html$", to: "excel-library" },
         { from: "excel_utility.html$", to: "excel-utility" },
         { from: "map_overview.html$", to: "geo-map" },
         { from: "map_binding_geographic_csv_files.html$", to: "geo-map-binding-data-csv" },
@@ -77,11 +75,10 @@ var configurations: any[] = [
         { from: "zoomslider_overview.html$", to: "zoomslider-overview" },
       ]
     },
-    // redirects for renamed React data-grid topics
+    // redirects for renamed React data-grid topics with underscore
     { platforms: ["React"],
       redirects: [
         // NOTE keep the following redirects here
-        { from: "grid_table.html$", to: "data-grid" },
         { from: "grid_table_remote_databinding.html$", to: "data-grid-remote-data" },
         { from: "grid_table_cell_activation.html$", to: "data-grid-cell-activation" },
         { from: "grid_table_cell_selection.html$", to: "data-grid-cell-selection" },
@@ -97,86 +94,85 @@ var configurations: any[] = [
         { from: "grid_table_row_grouping.html$", to: "data-grid-row-grouping" },
         { from: "grid_table_row_paging.html$", to: "data-grid-row-paging" },
         { from: "grid_table_row_pinning.html$", to: "data-grid-row-pinning" },
+        { from: "grid_table.html$", to: "data-grid" },
     ]},
-    // redirects for renamed topics only for Angular/Blazor
+    // redirects for renamed chart topics with underscore
     { platforms: ["XPLAT"], // platforms: ["Angular", "Blazor"],
-      // TODO move all these redirects to XPLAT redirects when React/WC topics have SEO improvement samples
       redirects: [
-        { from: "categorychart.md$", to: "charts/chart-overview" },
-        { from: "categorychart.html$", to: "charts/chart-overview" },
-        { from: "categorychart_annotation_layers.md$", to: "charts/features/chart-annotations" },
+        // { from: "categorychart_annotation_layers.md$", to: "charts/features/chart-annotations" },
         { from: "categorychart_annotation_layers.html$", to: "charts/features/chart-annotations" },
-        { from: "categorychart_axis_options.md$", to: "charts/features/chart-axis-options" },
+        // { from: "categorychart_axis_options.md$", to: "charts/features/chart-axis-options" },
         { from: "categorychart_axis_options.html$", to: "charts/features/chart-axis-options" },
-        { from: "categorychart_real_time_data.md$", to: "charts/features/chart-performance" },
+        // { from: "categorychart_real_time_data.md$", to: "charts/features/chart-performance" },
         { from: "categorychart_real_time_data.html$", to: "charts/features/chart-performance" },
-        { from: "categorychart_high_volume_data.md$", to: "charts/features/chart-performance" },
+        // { from: "categorychart_high_volume_data.md$", to: "charts/features/chart-performance" },
         { from: "categorychart_high_volume_data.html$", to: "charts/features/chart-performance" },
-        { from: "categorychart_configuration_options.md$", to: "charts/chart-overview" },
+        // { from: "categorychart_configuration_options.md$", to: "charts/chart-overview" },
         { from: "categorychart_configuration_options.html$", to: "charts/chart-overview" },
-        { from: "categorychart_highlighting.md$", to: "charts/features/chart-highlighting" },
+        // { from: "categorychart_highlighting.md$", to: "charts/features/chart-highlighting" },
         { from: "categorychart_highlighting.html$", to: "charts/features/chart-highlighting" },
-        { from: "categorychart_tooltip_types.md$", to: "charts/features/chart-tooltips" },
+        // { from: "categorychart_tooltip_types.md$", to: "charts/features/chart-tooltips" },
         { from: "categorychart_tooltip_types.html$", to: "charts/features/chart-tooltips" },
-        { from: "categorychart_tooltip_templates.md$", to: "charts/features/chart-tooltips" },
+        // { from: "categorychart_tooltip_templates.md$", to: "charts/features/chart-tooltips" },
         { from: "categorychart_tooltip_templates.html$", to: "charts/features/chart-tooltips" },
-        { from: "datachart.md$", to: "charts/chart-overview" },
-        { from: "datachart.html$", to: "charts/chart-overview" },
-        { from: "datachart_axis_types.md$", to: "charts/chart-features" },
+        // { from: "categorychart.md$", to: "charts/chart-overview" },
+        { from: "categorychart.html$", to: "charts/chart-overview" },
+        // { from: "datachart_axis_types.md$", to: "charts/chart-features" },
         { from: "datachart_axis_types.html$", to: "charts/chart-features" },
-        { from: "datachart_axis_annotations.md$", to: "charts/features/chart-annotations" },
+        // { from: "datachart_axis_annotations.md$", to: "charts/features/chart-annotations" },
         { from: "datachart_axis_annotations.html$", to: "charts/features/chart-annotations" },
         { from: "datachart_axis_settings.html$", to: "charts/features/chart-axis-options" },
-        { from: "datachart_axis_settings.md$", to: "charts/features/chart-axis-options" },
+        // { from: "datachart_axis_settings.md$", to: "charts/features/chart-axis-options" },
         { from: "datachart_axis_sharing.html$", to: "charts/features/chart-axis-layouts" },
-        { from: "datachart_axis_sharing.md$", to: "charts/features/chart-axis-layouts" },
-        { from: "datachart_chart_legends.md$", to: "charts/chart-overview" },
+        // { from: "datachart_axis_sharing.md$", to: "charts/features/chart-axis-layouts" },
+        // { from: "datachart_chart_legends.md$", to: "charts/chart-overview" },
         { from: "datachart_chart_legends.html$", to: "charts/chart-overview" },
-        { from: "datachart_chart_navigation.md$", to: "charts/features/chart-navigation" },
+        // { from: "datachart_chart_navigation.md$", to: "charts/features/chart-navigation" },
         { from: "datachart_chart_navigation.html$", to: "charts/features/chart-navigation" },
-        { from: "datachart_chart_synchronization.md$", to: "charts/chart-features" },
+        // { from: "datachart_chart_synchronization.md$", to: "charts/chart-features" },
         { from: "datachart_chart_synchronization.html$", to: "charts/chart-features" },
         { from: "datachart_chart_titles.html$", to: "charts/chart-overview" },
-        { from: "datachart_chart_titles.md$", to: "charts/chart-overview" },
-        { from: "datachart_data_sources.md$", to: "charts/chart-overview" },
+        // { from: "datachart_chart_titles.md$", to: "charts/chart-overview" },
+        // { from: "datachart_data_sources.md$", to: "charts/chart-overview" },
         { from: "datachart_data_sources.html$", to: "charts/chart-overview" },
-        { from: "datachart_series_annotations.md$", to: "charts/features/chart-annotations" },
+        // { from: "datachart_series_annotations.md$", to: "charts/features/chart-annotations" },
         { from: "datachart_series_annotations.html$", to: "charts/features/chart-annotations" },
-        { from: "datachart_series_highlighting.md$", to: "charts/features/chart-highlighting" },
+        // { from: "datachart_series_highlighting.md$", to: "charts/features/chart-highlighting" },
         { from: "datachart_series_highlighting.html$", to: "charts/features/chart-highlighting" },
-        { from: "datachart_series_markers.md$", to: "charts/features/chart-markers" },
+        // { from: "datachart_series_markers.md$", to: "charts/features/chart-markers" },
         { from: "datachart_series_markers.html$", to: "charts/features/chart-markers" },
-        { from: "datachart_series_tooltips.md$", to: "charts/features/chart-tooltips" },
+        // { from: "datachart_series_tooltips.md$", to: "charts/features/chart-tooltips" },
         { from: "datachart_series_tooltips.html$", to: "charts/features/chart-tooltips" },
-        { from: "datachart_series_trendlines.md$", to: "charts/features/chart-trendlines" },
+        // { from: "datachart_series_trendlines.md$", to: "charts/features/chart-trendlines" },
         { from: "datachart_series_trendlines.html$", to: "charts/features/chart-trendlines" },
-        { from: "datachart_series_value_overlay.md$", to: "charts/features/chart-overlays" },
+        // { from: "datachart_series_value_overlay.md$", to: "charts/features/chart-overlays" },
         { from: "datachart_series_value_overlay.html$", to: "charts/features/chart-overlays" },
-        { from: "datachart_series_types.html$", to: "charts/chart-overview" },
-        { from: "datachart_series_types.md$", to: "charts/chart-overview" },
-        { from: "datachart_series_types_category.md$", to: "charts/types/column-chart" },
+        // { from: "datachart_series_types_category.md$", to: "charts/types/column-chart" },
         { from: "datachart_series_types_category.html$", to: "charts/types/column-chart" },
-        { from: "datachart_series_types_financial.md$", to: "charts/types/stock-chart" },
+        // { from: "datachart_series_types_financial.md$", to: "charts/types/stock-chart" },
         { from: "datachart_series_types_financial.html$", to: "charts/types/stock-chart" },
-        { from: "datachart_series_types_polar.md$", to: "charts/types/polar-chart" },
+        // { from: "datachart_series_types_polar.md$", to: "charts/types/polar-chart" },
         { from: "datachart_series_types_polar.html$", to: "charts/types/polar-chart" },
-        { from: "datachart_series_types_radial.md$", to: "charts/types/radial-chart" },
+        // { from: "datachart_series_types_radial.md$", to: "charts/types/radial-chart" },
         { from: "datachart_series_types_radial.html$", to: "charts/types/radial-chart" },
-        { from: "datachart_series_types_range.md$", to: "charts/types/column-chart" },
+        // { from: "datachart_series_types_range.md$", to: "charts/types/column-chart" },
         { from: "datachart_series_types_range.html$", to: "charts/types/column-chart" },
-        { from: "datachart_series_types_scatter_bubble.md$", to: "charts/types/bubble-chart" },
+        // { from: "datachart_series_types_scatter_bubble.md$", to: "charts/types/bubble-chart" },
         { from: "datachart_series_types_scatter_bubble.html$", to: "charts/types/bubble-chart" },
-        { from: "datachart_series_types_scatter_area.md$", to: "charts/types/scatter-chart" },
+        // { from: "datachart_series_types_scatter_area.md$", to: "charts/types/scatter-chart" },
         { from: "datachart_series_types_scatter_area.html$", to: "charts/types/scatter-chart" },
-        { from: "datachart_series_types_scatter_contour.md$", to: "charts/types/scatter-chart" },
+        // { from: "datachart_series_types_scatter_contour.md$", to: "charts/types/scatter-chart" },
         { from: "datachart_series_types_scatter_contour.html$", to: "charts/types/scatter-chart" },
-        { from: "datachart_series_types_scatter_marker.md$", to: "charts/types/scatter-chart" },
+        // { from: "datachart_series_types_scatter_marker.md$", to: "charts/types/scatter-chart" },
         { from: "datachart_series_types_scatter_marker.html$", to: "charts/types/scatter-chart" },
-        { from: "datachart_series_types_shape.md$", to: "charts/types/shape-chart" },
+        // { from: "datachart_series_types_shape.md$", to: "charts/types/shape-chart" },
         { from: "datachart_series_types_shape.html$", to: "charts/types/shape-chart" },
-        { from: "datachart_series_types_stacked.md$", to: "charts/types/stacked-chart" },
+        // { from: "datachart_series_types_stacked.md$", to: "charts/types/stacked-chart" },
         { from: "datachart_series_types_stacked.html$", to: "charts/types/stacked-chart" },
-        { from: "financialchart.html$", to: "charts/types/stock-chart" },
+        { from: "datachart_series_types.html$", to: "charts/chart-overview" },
+        // { from: "datachart_series_types.md$", to: "charts/chart-overview" },
+        // { from: "datachart.md$", to: "charts/chart-overview" },
+        { from: "datachart.html$", to: "charts/chart-overview" },
         { from: "financialchart_binding_live_data.html$", to: "charts/features/chart-performance" },
         { from: "financialchart_binding_large_data.html$", to: "charts/features/chart-performance" },
         { from: "financialchart_binding_multiple_sources.html$", to: "charts/types/stock-chart" },
@@ -188,16 +184,15 @@ var configurations: any[] = [
         { from: "financialchart_custom_indicators.html$", to: "charts/types/stock-chart" },
         { from: "financialchart_tooltip_types.html$", to: "charts/features/chart-tooltips" },
         { from: "financialchart_tooltip_templates.html$", to: "charts/features/chart-tooltips" },
-        { from: "doughnutchart.md$", to: "charts/types/donut-chart" },
+        { from: "financialchart.html$", to: "charts/types/stock-chart" },
+        // { from: "doughnutchart.md$", to: "charts/types/donut-chart" },
         { from: "doughnutchart.html$", to: "charts/types/donut-chart" },
-        { from: "piechart.md$", to: "charts/types/pie-chart" },
+        // { from: "piechart.md$", to: "charts/types/pie-chart" },
         { from: "piechart.html$", to: "charts/types/pie-chart" },
     ]},
     // redirects for new SEO topics
     { platforms: ["XPLAT"], // platforms: ["Angular", "Blazor"],
-      // TODO move these redirects to XPLAT redirects when React/WC topics have SEO improvement samples
       redirects: [
-        { from: "category-chart.html$", to: "charts/chart-overview" },
         { from: "category-chart-annotations.html$", to: "charts/features/chart-annotations" },
         { from: "category-chart-axis-options.html$", to: "charts/features/chart-axis-options" },
         { from: "category-chart-config-options.html$", to: "charts/features/chart-markers" },
@@ -206,7 +201,7 @@ var configurations: any[] = [
         { from: "category-chart-high-frequency.html$", to: "charts/features/chart-performance" },
         { from: "category-chart-tooltip-types.html$", to: "charts/features/chart-tooltips" },
         { from: "category-chart-tooltip-template.html$", to: "charts/features/chart-tooltips" },
-        { from: "data-chart.html$", to: "charts/chart-overview" },
+        { from: "category-chart.html$", to: "charts/chart-overview" },
         { from: "data-chart-axis-types.html$", to: "charts/chart-features" },
         { from: "data-chart-axis-annotations.html$", to: "charts/features/chart-annotations" },
         { from: "data-chart-axis-locations.html$", to: "charts/features/chart-axis-layouts" },
@@ -278,7 +273,7 @@ var configurations: any[] = [
         { from: "data-chart-type-stacked-100-line-series.html$", to: "charts/types/stacked-chart" },
         { from: "data-chart-type-stacked-100-spline-series.html$", to: "charts/types/stacked-chart" },
         { from: "data-chart-type-stacked-100-spline-area-series.html$", to: "charts/types/stacked-chart" },
-        { from: "financial-chart.html$", to: "charts/types/stock-chart" },
+        { from: "data-chart.html$", to: "charts/chart-overview" },
         { from: "financial-chart-high-volume.html$", to: "charts/types/stock-chart" },
         { from: "financial-chart-multiple-data.html$", to: "charts/types/stock-chart" },
         { from: "financial-chart-high-frequency.html$", to: "charts/types/stock-chart" },
@@ -287,6 +282,7 @@ var configurations: any[] = [
         { from: "financial-chart-panes.html$", to: "charts/types/stock-chart" },
         { from: "financial-chart-performance.html$", to: "charts/features/chart-performance" },
         { from: "financial-chart-trendlines.html$", to: "charts/types/stock-chart" },
+        { from: "financial-chart.html$", to: "charts/types/stock-chart" },
         { from: "doughnut-chart.html$", to: "charts/types/donut-chart" },
         { from: "pie-chart.html$", to: "charts/types/pie-chart" },
         { from: "sparkline.html$", to: "charts/types/sparkline-chart" },
@@ -336,8 +332,10 @@ export function generateRules(withProduct: boolean): string {
 
                 // looping over all redirects in a given config
                 for (const redirect of config.redirects) {
-                  let name = 'Redirect for Ignite UI ' + platform.name.toUpperCase() + ' topic: ' + redirect.from + '';
-                  let matchURL = platform.match + redirect.from;
+                  // ignoring extension so we have fewer rules that can match urls with: .md, .html, no .html
+                  let from = redirect.from.replace('.html', '.*');
+                  let name = 'Redirect for Ignite UI ' + platform.name.toUpperCase() + ' topic: ' + from;
+                  let matchURL = platform.match + from;
 
                   if (!matchURLs.includes(matchURL)) {
                        matchURLs.push(matchURL);

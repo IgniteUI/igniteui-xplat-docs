@@ -31,7 +31,7 @@
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
             "staging":     "https://staging.infragistics.com/angular-demos-dv",
-            "production":  "https://infragistics.com/angular-demos-dv"
+            "production":  "https://www.infragistics.com/angular-demos-dv"
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-angular/angular/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-angular/angular/components/{CONTROL_NAME}.html",
@@ -76,7 +76,7 @@
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
             "staging":     "https://staging.infragistics.com/react-demos",
-            "production":  "https://infragistics.com/react-demos"
+            "production":  "https://www.infragistics.com/react-demos"
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-react/react/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-react/react/components/{CONTROL_NAME}.html",
@@ -121,7 +121,7 @@
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
             "staging":     "https://staging.infragistics.com/webcomponents-demos",
-            "production":  "https://infragistics.com/webcomponents-demos"
+            "production":  "https://www.infragistics.com/webcomponents-demos"
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-web-components/webcomponents/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-web-components/webcomponents/components/{CONTROL_NAME}.html",
@@ -161,7 +161,7 @@
         "samplesBrowsers" : {
             "development": "https://localhost:44317/blazor-client",
             "staging":     "https://staging.infragistics.com/blazor-client",
-            "production":  "https://infragistics.com/blazor-client"
+            "production":  "https://www.infragistics.com/blazor-client"
         },
         "Main":     "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html"
