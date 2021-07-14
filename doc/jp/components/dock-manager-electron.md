@@ -9,6 +9,8 @@ _language: ja
 インフラジスティックスの $Platform$ ドック マネージャー コンポーネントは、複数ウィンドウの [Electron](https://www.electronjs.org/) デスクトップ アプリケーションで、各ウィンドウのレイアウトを管理したり、新しいウィンドウを作成するためにウィンドウの外側にペインをドラッグしたり、あるウィンドウから別のウィンドウにペインをドラッグアンドドロップしたりできます。このようなアプリケーションのサンプル実装は、次のリポジトリ https://github.com/IgniteUI/dock-manager-electron-app にあります。
 
 <!-- TODO: Add a gif of the application and a link to download the exe -->
+<img class="responsive-img" src="../images/dockmanager-electron-app.gif"
+alt="$Platform$ ドック マネージャー デスクトップ統合"/>
 
 ## 実装
 
