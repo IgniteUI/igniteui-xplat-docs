@@ -6,7 +6,7 @@ mentionedTypes: ['Spreadsheet']
 ---
 # $Platform$ Spreadsheet Overview
 
-The $Platform$ Spreadsheet component allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
+The $Platform$ Spreadsheet  (Excel viewer) is a feature-rich component for organizing and analyzing data in tabular format with some cool features similar to Microsoft Excel’s. It provides all the common Excel features, including data binding, selection, editing, formatting, resizing, sorting, and importing and exporting Excel documents.
 
 ## $Platform$ Spreadsheet Example
 
@@ -19,6 +19,14 @@ The $Platform$ Spreadsheet component allows visualizing and editing of spreadshe
 </code-view>
 
 <div class="divider--half"></div>
+
+Deliver true Excel-like spreadsheet experiences, fast - with zero dependencies on Excel. Create financial reports and dashboards, budgeting and forecasting models, scientific, engineering, healthcare, education, science lab notebooks, and more. 
+
+Create custom spreadsheets, advanced grids, dashboards, reports, and data input forms with the comprehensive API 
+
+Leverage the powerful, high-speed calculation engine for your most complex calculations 
+
+Import and export your most demanding Excel `.xls`, `.xlsx` spreadsheets
 
 ## Dependencies
 When installing the $Platform$ spreadsheet component, the core and excel package must also be installed.
