@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Spreadsheet | Tables and Spreadsheet Component | Infragistics
-_description: Our $Platform$ spreadsheet controls help you embed Excel document and editing experiences right into your application. Improve your data visualization today!
+title: $Platform$ Spreadsheet Component – Ignite UI for $Platform$
+_description: Get flexible layouts, easy customization options & convenient Excel-like interface with Ignite UI for $Platform$ Spreadsheet. Manage tabular data the way you want!
 _keywords: Excel Spreadsheet, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
