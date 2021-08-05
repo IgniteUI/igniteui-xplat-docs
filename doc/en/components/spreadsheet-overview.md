@@ -6,13 +6,9 @@ mentionedTypes: ['Spreadsheet']
 ---
 # $Platform$ Spreadsheet Overview
 
-The $Platform$ Spreadsheet  (Excel viewer) component is lightweight, feature-rich and supplied with all the necessary options for operating, visualizing, and editing all types of spreadsheet data – scientific, business, financial, and more. All the information can be presented in a tabular format that feels intuitive and easy to navigate across cells, panes, and worksheets. The spreadsheet is complemented by flexible Excel-like interface, detailed charts, and features such as activation, cell editing, conditional formatting, styling, selection, clipboard. The data sheet is optimized for fast performance. It works on all browsers for complex and voluminous spreadsheet models, while ensuring flawless functionality and simplicity.
+The $Platform$ Spreadsheet  (Excel viewer) component is lightweight, feature-rich and supplied with all the necessary options for operating, visualizing, and editing all types of spreadsheet data – scientific, business, financial, and more. All the information can be presented in a tabular format that feels intuitive and easy to navigate across cells, panes, and worksheets. The spreadsheet is complemented by flexible Excel-like interface, detailed charts, and features such as activation, cell editing, conditional formatting, styling, selection, clipboard.
 
 ## $Platform$ Spreadsheet Example
-
-Let’s look at this rather simple spreadsheet example below and see what commands can be applied to each row and cell and explore the ways in which the spreadsheet data can be managed. 
-
-Just like in Excel spreadsheet, you can apply filtering functionality, sorting, move cells, customization in terms of cells color, keyboard shortcuts, and add the ability to even calculate formulas.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,7 +19,17 @@ Just like in Excel spreadsheet, you can apply filtering functionality, sorting, 
 
 <div class="divider--half"></div>
 
+## Functionality 
+
+* Features 
+
+Just like in Excel spreadsheet, you can apply filtering functionality, sorting, move cells, customization in terms of cells color, keyboard shortcuts, and add the ability to even calculate formulas.
+
 Why using Ignite UI for React spreadsheet? 
+
+* Performance 
+
+The spreadsheet is compatible on all modern browsers and optimized for complex and voluminous spreadsheet models, while ensuring flawless functionality and simplicity.
 
 * Flexible layout and easy customization 
 
