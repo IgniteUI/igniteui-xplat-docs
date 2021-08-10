@@ -1,13 +1,13 @@
 ---
 title: $Platform$ Spreadsheet コンポーネント – Ignite UI for $Platform$
-_description: Get flexible layouts, easy customization options & convenient Excel-like interface with Ignite UI for $Platform$ Spreadsheet. Manage tabular data the way you want!
+_description: Ignite UI for $Platform$ Spreadsheet を使用して、柔軟なレイアウト、簡単なカスタマイズ オプション、Excel のような便利なインターフェイスを利用できます。表データを好きなように管理できます。
 _keywords: Excel Spreadsheet, $ProductName$, Infragistics, Excel スプレッドシート, インフラジスティックス
 _language: ja
 mentionedTypes: ['Spreadsheet']
 ---
 # $Platform$ Spreadsheet の概要
 
-The $Platform$ Spreadsheet  (Excel viewer) component is lightweight, feature-rich and supplied with all the necessary options for operating, visualizing, and editing all types of spreadsheet data – scientific, business, financial, and more. All the information can be presented in a tabular format that feels intuitive and easy to navigate across cells, panes, and worksheets. The spreadsheet is complemented by flexible Excel-like interface, detailed charts, and features such as activation, cell editing, conditional formatting, styling, selection, clipboard.
+$Platform$ Spreadsheet (Excel ビューア) コンポーネントは軽量で機能が豊富で、科学、ビジネス、財務など、あらゆる種類のスプレッドシート データを操作、視覚化、編集するために必要なすべてのオプションが用意されています。すべての情報は、セル、ペイン、およびワークシート間を直感的かつ簡単にナビゲートできる表形式で表示できます。スプレッドシートは、Excel のような柔軟なインターフェイス、詳細なチャート、およびアクティブ化、セル編集、条件付き書式設定、スタイル設定、選択、クリップボードなどの機能によって補完されます。
 
 ## $Platform$ Spreadsheet の例
 
@@ -20,37 +20,37 @@ The $Platform$ Spreadsheet  (Excel viewer) component is lightweight, feature-ric
 
 <div class="divider--half"></div>
 
-## Functionality 
+## 機能 
 
-* Features 
+* 機能 
 
-Just like in Excel spreadsheet, you can apply filtering functionality, sorting, move cells, customization in terms of cells color, keyboard shortcuts, and add the ability to even calculate formulas.
+Excel スプレッドシートと同様に、フィルタリング機能、ソート、セルの移動、セルの色に関するカスタマイズ、キーボード ショートカットを適用したり、数式を計算する機能を追加したりできます。
 
-Why using Ignite UI for React spreadsheet? 
+Ignite UI for React スプレッドシートを使用する理由 
 
-* Performance 
+* パフォーマンス 
 
-The spreadsheet is compatible on all modern browsers and optimized for complex and voluminous spreadsheet models, while ensuring flawless functionality and simplicity.
+スプレッドシートはすべての最新のブラウザーと互換性があり、完璧な機能と簡便性を保証しながら、複雑で膨大なスプレッドシート モデル用に最適化されています。
 
-* Flexible layout and easy customization 
+* 柔軟なレイアウトと簡単なカスタマイズ
 
-You can easily select, add, remove, switch the features you want on/off, and configure React sheets in an instant so that it all answers the needs of end-users. There are also configurable libraries, styling and formatting alternatives, visibility options, plenty of themes to choose from. 
+必要な機能のオン/オフを簡単に選択、追加、削除、切り替え、React シートを瞬時に構成できるため、すべてがエンドユーザーのニーズに応えます。構成可能なライブラリ、スタイルとフォーマットの選択肢、表示オプション、選択できるテーマもたくさんあります。 
 
-* Convenient Excel-like interface 
+* 便利な Excel のようなインターフェース
 
-Just like operating data in Excel, our spreadsheet component delivers all well-known Excel clip board operations – copy, paste, cut. You won’t need extra training or new skills in order to start using it right away. It also comes with options for sorting, full keyboard navigation, values and formulas, cell dragging, column and rows editing, filtering, number formatting, resizing. The smart and fast calculation engine powers even the most complex estimations. With no dependencies on Excel. 
+Excel でデータを操作するのと同じように、スプレッドシート コンポーネントは、コピー、貼り付け、切り取りなど、よく知られているすべての Excel クリップボード操作を提供します。すぐに使い始めるために、追加のトレーニングや新しいスキルは必要ありません。また、ソート、完全なキーボード ナビゲーション、値と数式、セルのドラッグ、列と行の編集、フィルタリング、数値の書式設定、サイズ変更のオプションも付属しています。スマートで高速な計算エンジンは、最も複雑な推定にも対応します。Excel に依存しません。 
 
-* Data operations 
+* データ操作 
 
-Collect and manage scientific, business, engineering, financial and educational data. Prepare and create analysis, advanced grids, reports, data input forms, budgeting, forecasting scenarios, custom spreadsheets. All of this thanks to the comprehensive API. 
+科学、ビジネス、エンジニアリング、財務、教育のデータを収集して管理します。分析、高度なグリッド、レポート、データ入力フォーム、予算編成、予測シナリオ、カスタム スプレッドシートを準備および作成します。これらすべてが包括的な API のおかげです。 
 
-* Fast and secure data processing  
+* 高速で安全なデータ処理  
 
-With our spreadsheet, processing data is 100% safe and secure…  
+データ処理は 100% 安全です。 
 
-* Excel and CSV import & export 
+* Excel と CSV のインポートとエクスポート 
 
-With the built-in Excel import/export functionality, you can instantly load and open Excel documents and view them on-demand, add changes and save them. Also, effortlessly export your completed Excel .xlsx spreadsheets.
+組み込みの Excel インポート/エクスポート機能を使用すると、Excel ドキュメントを即座にロードして開き、オンデマンドで表示したり、変更を追加したり、保存したりできます。また、完成した Excel.xlsx スプレッドシートを簡単にエクスポートできます。
 
 ## 依存関係
 $Platform$ スプレッドシート コンポーネントをインストールするときは、core パッケージと excel パッケージもインストールする必要があります。
