@@ -375,7 +375,7 @@ Practice all of the above mentioned actions in the sample [`demo`](dock-manager.
 
 ## Styling
 
-The Dock Manager uses a sahadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
 
 ```css
 igc-dockmanager::part(content-pane) {
