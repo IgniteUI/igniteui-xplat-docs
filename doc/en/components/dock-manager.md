@@ -375,7 +375,7 @@ Practice all of the above mentioned actions in the sample [`demo`](dock-manager.
 
 ## Styling
 
-The Dock Manager use a sahadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target their internals with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+The Dock Manager uses a sahadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
 
 ```css
 igc-dockmanager::part(content-pane) {
@@ -383,7 +383,7 @@ igc-dockmanager::part(content-pane) {
 }
 ```
 
-In the following example, we will demonstrate the ability of customizing the Dock Manager through some of the exposed parts that we've provided. 
+In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -427,7 +427,7 @@ Part name | Description
 `pane-navigator-item` | An item in the pane navigator.
 
 
-## Themes
+### Themes
 
 The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the `igc.themes.css` file in your css and add the `dark-theme` class to the Dock Manager or any of its parents:
 
