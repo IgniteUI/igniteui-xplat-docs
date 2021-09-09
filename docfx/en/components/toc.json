@@ -237,6 +237,11 @@
         "status": ""
       },
       {
+        "name": "Load & Save Grid Layout",
+        "href": "data-grid-load-save-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Row Grouping",
         "href": "data-grid-row-grouping.md",
         "status": ""
