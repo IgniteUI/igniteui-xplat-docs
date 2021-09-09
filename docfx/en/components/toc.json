@@ -167,6 +167,11 @@
         "status": "UPDATED"
       },
       {
+        "name": "Column Merging",
+        "href": "data-grid-cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Cell Selection",
         "href": "data-grid-cell-selection.md",
         "status": "UPDATED"
