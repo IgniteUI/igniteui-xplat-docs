@@ -167,7 +167,7 @@
         "status": "UPDATED"
       },
       {
-        "name": "Column Merging",
+        "name": "列の結合",
         "href": "data-grid-cell-merging.md",
         "status": "NEW"
       },
@@ -242,7 +242,7 @@
         "status": ""
       },
       {
-        "name": "Load & Save Grid Layout",
+        "name": "グリッド レイアウトの読み込みと保存",
         "href": "data-grid-load-save-layout.md",
         "status": "NEW"
       },

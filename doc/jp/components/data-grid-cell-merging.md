@@ -1,38 +1,38 @@
 ---
 title: $Platform$ データ グリッド | セル結合 | 結合 | インフラジスティックス
-_description: Use the cell merging feature of the Infragistics' $Platform$ data grid to join cells with duplicate values. 
+_description: Infragistics の $Platform$ データ グリッドのセル結合機能を使用して、重複する値を持つセルを結合します。 
 _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セル結合, インフラジスティックス
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 _language: ja
 ---
 
-# $Platform$ Grid Merging
+# $Platform$ グリッドの結合
 
-The $ProductName$ Data Table / Data Grid supports cell merging.
+$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。
 
-## $Platform$ Grid Cell Merging Example
+## $Platform$ グリッド セルの結合例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-merging"
-           alt="$Platform$ Grid Cell Merging Example"
+           alt="$Platform$ グリッド セルの結合例"
            github-src="grids/data-grid/cell-merging">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Overview
+## 概要
 
-Cell Merging in the $Platform$ data grid can be configured by using the `MergedCellMode` option of the $Platform$ grid. This property takes three different options, listed below:
+$Platform$ データ グリッドでのセルの結合は、$Platform$ グリッドの  `MergedCellMode` オプションを使用して構成できます。このプロパティには、以下に示す 3 つのオプションがあります:
 
-- `Never`: The grid will never merge cells. This is the default behavior.
-- `Always`: The grid will always attempt to merge cells.
-- `OnlyWhenSorted`: The grid will only attempt to merge cells when a column is sorted.
+- `Never`: グリッドがセルを結合することはありません。これがデフォルトの動作です。
+- `Always`: グリッドは常にセルの結合を試みます。
+- `OnlyWhenSorted`: グリッドは、列がソートされたときにのみセルの結合を試みます。
 
-In addition, there is a `MergedCellEvaluationCriteria` property which can be used depending on if formatting is applied. This property takes two options, listed below:
+さらに、フォーマットが適用されているかどうかに応じて使用できる  `MergedCellEvaluationCriteria` プロパティがあります。このプロパティには、以下に示す 2 つのオプションがあります:
 
-- `RawValue`: Merge cells from adjacent rows when the raw values from the cells are the same. This is the default value.
-- `FormattedText`: Merge cells from adjacent rows when the formatted value from the cells is the same.
+- `RawValue`: セルの生の値が同じ場合、隣接する行のセルを結合します。これがデフォルト値です。
+- `FormattedText`: セルからのフォーマットされた値が同じである場合、隣接する行からのセルを結合します。
 
 <div class="divider--half"></div>

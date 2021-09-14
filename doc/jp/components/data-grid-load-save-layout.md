@@ -1,35 +1,35 @@
 ---
 title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | 読み込みと保存 | インフラジスティックス
-_description: Use Infragistics' $ProductName$ Data Table & Grid which supports loading and saving the layout the user makes.
+_description: ユーザーが作成したレイアウトの読み込みと保存をサポートするインフラジスティックスの $ProductName$ データ テーブルとグリッドをお試しください。
 _keywords: $Platform$ Table, Data Grid, cell activation, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# $Platform$ Grid Load & Save Layout
+# $Platform$ グリッド レイアウトの読み込みと保存
 
-The $ProductName$ Data Table / Data Grid supports loading and saving the grid layout. This is performed by calling the `LoadLayout` and `SaveLayout` methods of the grid.
+$ProductName$ データ テーブル / データ グリッドは、グリッド レイアウトの読み込みと保存をサポートしています。これは、グリッドの `LoadLayout` メソッドと `SaveLayout` メソッドを呼び出すことによって実行されます。
 
-## $Platform$ Grid Load & Save Layout Example
+## $Platform$ グリッド レイアウトの読み込みと保存の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grids/data-grid-load-save-layout"
-           alt="$Platform$ Grid Load & Save Layout Example"
+           alt="$Platform$ グリッド レイアウトの読み込みと保存の例"
            github-src="grids/data-grid/load-save-layout">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Supported Features
+## サポートされる機能
 
-The grid supports loading/saving the following features:
+グリッドは、次の機能の読み込み/保存をサポートしています:
 
-- Column Visibility
-- Column Pinning
-- Column Positioning
-- Column Resizing
-- Group-By Settings
-- Sort Direction
-- Row Filter
+- 列の表示状態
+- 列のピン固定
+- 列の配置
+- 列のサイズ変更
+- グループ化設定
+- 並べ替え方向
+- 行フィルタリング
