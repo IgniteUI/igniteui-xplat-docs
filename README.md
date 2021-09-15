@@ -74,23 +74,20 @@ yarn install
 - push your branch to origin
 - create pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
 
-#### Following Rules
+## Following Rules
 
 The files in this repo are arranged under the `./doc` folder. They are organized in the same structure as the target platform specific DocFX project. Just edit `.md` file named for the member you want to add documentation for. Author it for all platforms at once, preferably, as described below:
 
-#### Always: Use C# member names and class names in code terms
 
-Whenever mentioning a member name or class name, surround it in backticks in the markdown. This will cause it to be transformed to the appropriate platform member name for each platform during transformation:
+#### Always: Pretend you are documenting all platforms at once.
 
-```md
-To invert the axis scale use `IsInverted`
-```
+Try to imagine you are trying to document all platforms at once, that may even be a target we use one day.
 
-will, for example be translated into this markdown for Angular:
+In the meantime, the transformation process will try to drop content that applies to just one platform or another.
 
-```md
-To invert the axis scale use `IsInverted`
-```
+#### Always: Provide code snippets, one after another, for as many platforms as possible.
+
+The transformation process will drop code snippets that don't apply to the current platform.
 
 #### Always: Call out the language being used in a fenced code block.
 
@@ -105,17 +102,6 @@ chart.IsInverted = true;
 ````
 
 If we were, say, transforming to Angular, this code block would get dropped.
-
-
-#### Always: Pretend you are documenting all platforms at once.
-
-Try to imagine you are trying to document all platforms at once, that may even be a target we use one day.
-
-In the meantime, the transformation process will try to drop content that applies to just one platform or another.
-
-#### Do: Provide code snippets, one after another, for as many platforms as possible.
-
-The transformation process will drop code snippets that don't apply to the current platform.
 
 #### Avoid: Placing platform specific front matter in front of a code block.
 
@@ -170,6 +156,19 @@ This is some content that will only show for Angular or WPF.
 
 > NOTE: Don't overuse this, as it hampers the readability of the markdown files. Readability of the markdown files should be paramount. Don't make them difficult to digest for someone trying to read and edit the markdown.
 
+#### Always: Use C# member names and class names in code terms
+
+Whenever mentioning a member name or class name, surround it in backticks in the markdown. This will cause it to be transformed to the appropriate platform member name for each platform during transformation:
+
+```md
+To invert the axis scale use `IsInverted`
+```
+
+will, for example be translated into this markdown for Angular:
+
+```md
+To invert the axis scale use `isInverted`
+```
 #### Using Variables
 
 In **docConfig.json** you can add entries in "[ProductName]" => "replacements" where name is a regular expression that matches the text you wish to replace in the markdown, and value is the value you wish to have inserted.
