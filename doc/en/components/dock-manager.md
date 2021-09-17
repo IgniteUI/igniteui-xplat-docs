@@ -323,17 +323,15 @@ this.dockManager.layout = { ...layout };
 
 ### Events
 
-The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html). Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
+The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
 
-<!-- Blazor -->
-```razor
-this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
-```
-<!-- end: Blazor -->
+ <!-- WebComponents, React, Angular --> 
+ Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+<!-- end: WebComponents, React, Angular -->
 
 <!-- WebComponents -->
 <code-view style="height: 600px"
