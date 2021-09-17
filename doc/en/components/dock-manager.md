@@ -325,15 +325,24 @@ this.dockManager.layout = { ...layout };
 
 The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html). Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
 
+<!-- Blazor -->
+```razor
+this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
+```
+<!-- end: Blazor -->
+
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+
+<!-- WebComponents -->
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ Dock Manager Pane Closing Example"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
+<!-- end: WebComponents -->
 
 ## Keyboard Navigation
 
@@ -383,6 +392,7 @@ igc-dockmanager::part(content-pane) {
 }
 ```
 
+<!-- WebComponents -->
 In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
 <code-view style="height: 600px"
@@ -391,6 +401,7 @@ In the following example, we demonstrate the ability of customizing the Dock Man
            alt="$Platform$ Dock Manager Styling Example"
            github-src="layouts/dock-manager/styling">
 </code-view>
+<!-- end: WebComponents -->
 
 ### CSS Parts
 
