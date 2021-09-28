@@ -167,6 +167,11 @@
         "status": "UPDATED"
       },
       {
+        "name": "Cell Merging",
+        "href": "data-grid-cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Cell Selection",
         "href": "data-grid-cell-selection.md",
         "status": "UPDATED"
@@ -235,6 +240,11 @@
         "name": "Horizontal Scrolling",
         "href": "data-grid-horizontal-scrolling.md",
         "status": ""
+      },
+      {
+        "name": "Load & Save Grid Layout",
+        "href": "data-grid-load-save-layout.md",
+        "status": "NEW"
       },
       {
         "name": "Row Grouping",

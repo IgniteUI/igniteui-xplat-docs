@@ -167,6 +167,11 @@
         "status": "UPDATED"
       },
       {
+        "name": "列の結合",
+        "href": "data-grid-cell-merging.md",
+        "status": "NEW"
+      },
+      {
         "name": "セル選択",
         "href": "data-grid-cell-selection.md",
         "status": "UPDATED"
@@ -235,6 +240,11 @@
         "name": "水平方向のスクロール",
         "href": "data-grid-horizontal-scrolling.md",
         "status": ""
+      },
+      {
+        "name": "グリッド レイアウトの読み込みと保存",
+        "href": "data-grid-load-save-layout.md",
+        "status": "NEW"
       },
       {
         "name": "行グループ",

@@ -323,17 +323,24 @@ this.dockManager.layout = { ...layout };
 
 ### Events
 
-The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html). Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
+The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
+
+ <!-- WebComponents, React, Angular --> 
+ Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+<!-- end: WebComponents, React, Angular -->
+
+<!-- WebComponents -->
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ Dock Manager Pane Closing Example"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
+<!-- end: WebComponents -->
 
 ## Keyboard Navigation
 
@@ -373,7 +380,63 @@ The shortcuts are as follows:
 
 Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
-## Themes
+## Styling
+
+The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+
+```css
+igc-dockmanager::part(content-pane) {
+  border-radius: 10px;
+}
+```
+
+<!-- WebComponents -->
+In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
+           alt="$Platform$ Dock Manager Styling Example"
+           github-src="layouts/dock-manager/styling">
+</code-view>
+<!-- end: WebComponents -->
+
+### CSS Parts
+
+Part name | Description
+---------|------------
+`content-pane` | The content pane component.
+`pane-header`  | The content pane header component.
+`pane-header-content` | The content area of the content pane header.
+`pane-header-actions` | The actions area of the content pane header.
+`active` | Indicates an active state. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`, `tab-header`.
+`floating`  | Indicates a floating pane placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
+`window` | Indicates a floating window placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
+`split-pane` | The split pane component.
+`splitter` | The resizing splitter component.
+`splitter-base` | The base element of the splitter component.
+`splitter-ghost`| The ghost element of the splitter component.
+`unpinned-pane-header` | The unpinned pane header component.
+`tab-header` | The tab header component.
+`selected` | Indicates a selected state. Applies to `tab-header`.
+`tab-strip-area` | The tab strip area containing the tab headers.
+`tab-strip-actions` | The tab strip area containing the tab actions.
+`top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
+`bottom` | Indicates a bottom tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
+`context-menu` | The context menu component.
+`context-menu-item` | An item in the context menu component.
+`docking-preview` | The docking preview area.
+`docking-indicator` | The non-root docking indicator.
+`root-docking-indicator` | The root docking indicator.
+`pane-navigator` | The pane navigator component.
+`pane-navigator-header` | The header area of the pane navigator.
+`pane-navigator-body` | The body area of the pane navigator.
+`pane-navigator-items-group` | An items group in the pane navigator component.
+`pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
+`pane-navigator-item` | An item in the pane navigator.
+
+
+### Themes
 
 The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the `igc.themes.css` file in your css and add the `dark-theme` class to the Dock Manager or any of its parents:
 
