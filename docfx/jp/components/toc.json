@@ -167,7 +167,7 @@
         "status": "UPDATED"
       },
       {
-        "name": "列の結合",
+        "name": "セルの結合",
         "href": "data-grid-cell-merging.md",
         "status": "NEW"
       },

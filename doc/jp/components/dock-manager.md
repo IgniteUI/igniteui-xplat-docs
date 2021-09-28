@@ -324,17 +324,24 @@ this.dockManager.layout = { ...layout };
 
 ### イベント
 
-ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。[`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
+ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
+
+ <!-- WebComponents, React, Angular --> 
+ [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+<!-- end: WebComponents, React, Angular -->
+
+<!-- WebComponents -->
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ ドック マネージャー ペインを閉じる例"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
+<!-- end: WebComponents -->
 
 ## キーボード ナビゲーション
 
@@ -373,6 +380,61 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
  - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+
+## Styling
+
+The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+
+```css
+igc-dockmanager::part(content-pane) {
+  border-radius: 10px;
+}
+```
+
+<!-- WebComponents -->
+In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
+           alt="$Platform$ Dock Manager Styling Example"
+           github-src="layouts/dock-manager/styling">
+</code-view>
+<!-- end: WebComponents -->
+
+### CSS Parts
+
+部分名 | 説明
+---------|------------
+`content-pane` | The content pane component.
+`pane-header`  | The content pane header component.
+`pane-header-content` | The content area of the content pane header.
+`pane-header-actions` | The actions area of the content pane header.
+`active` | Indicates an active state. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`, `tab-header`.
+`floating`  | Indicates a floating pane placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
+`window` | Indicates a floating window placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
+`split-pane` | The split pane component.
+`splitter` | The resizing splitter component.
+`splitter-base` | The base element of the splitter component.
+`splitter-ghost`| The ghost element of the splitter component.
+`unpinned-pane-header` | The unpinned pane header component.
+`tab-header` | The tab header component.
+`selected` | Indicates a selected state. Applies to `tab-header`.
+`tab-strip-area` | The tab strip area containing the tab headers.
+`tab-strip-actions` | The tab strip area containing the tab actions.
+`top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
+`bottom` | Indicates a bottom tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
+`context-menu` | The context menu component.
+`context-menu-item` | An item in the context menu component.
+`docking-preview` | The docking preview area.
+`docking-indicator` | The non-root docking indicator.
+`root-docking-indicator` | The root docking indicator.
+`pane-navigator` | The pane navigator component.
+`pane-navigator-header` | The header area of the pane navigator.
+`pane-navigator-body` | The body area of the pane navigator.
+`pane-navigator-items-group` | An items group in the pane navigator component.
+`pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
+`pane-navigator-item` | An item in the pane navigator.
 
 ## テーマ
 
