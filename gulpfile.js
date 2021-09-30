@@ -435,6 +435,8 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
+var verifyFiles = gulp.series(verifyCodeViewer);
+
 function buildCore(cb) {
     // clean output files
     log("cleaning ...");
@@ -453,11 +455,11 @@ function buildWC(cb)        { PLAT = "WebComponents"; buildCore(cb); }
 // function for building output of a platform specified in arguments, e.g. --plat=React
 function buildWithArgs(cb)  { buildCore(cb); }
 // exporting build functions for each platform:
-exports['buildOutputAngular'] = buildAngular
-exports['buildOutputBlazor'] = buildBlazor
-exports['buildOutputReact'] = buildReact
-exports['buildOutputWC'] = buildWC
-exports['buildWithArgs'] = buildWithArgs
+exports['buildOutputAngular'] = gulp.series(verifyFiles, buildAngular)
+exports['buildOutputBlazor'] = gulp.series(verifyFiles, buildBlazor)
+exports['buildOutputReact'] = gulp.series(verifyFiles, buildReact)
+exports['buildOutputWC'] = gulp.series(verifyFiles, buildWC)
+exports['buildWithArgs'] = gulp.series(verifyFiles, buildWithArgs)
 // function for building all platforms:
 exports.buildAll = buildAll = gulp.series(buildAngular, buildReact, buildWC, buildBlazor);
 
@@ -502,7 +504,6 @@ function serveCore(cb) {
     cb();
 }
 
-
 function watchCore(cb) {
     browserSync.reload();
     done();
@@ -531,12 +532,13 @@ function buildSite(cb) {
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
+
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(buildAll, buildSite, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(buildAngular, buildSite, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(buildBlazor, buildSite, updateSiteMap);
-var buildDocfx_React    = gulp.series(buildReact, buildSite, updateSiteMap);
-var buildDocfx_WC       = gulp.series(buildWC, buildSite, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, updateSiteMap);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, updateSiteMap);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
 var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
 // exporting functions for building Docfx for each platform:
@@ -554,7 +556,6 @@ exports['startBlazor']  = startBlazor  = gulp.series(buildDocfx_Blazor, serveCor
 exports['startReact']   = startReact   = gulp.series(buildDocfx_React, serveCore);
 exports['startWC']      = startWC      = gulp.series(buildDocfx_WC, serveCore);
 exports.watch = watch = gulp.series(buildDocfx_All, watchCore);
-
 
 function logArgs(cb) {
     console.log('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
@@ -618,3 +619,47 @@ function copyTemplateBackup(cb) {
     });
 }
 exports.copyTemplateBackup = copyTemplateBackup;
+
+
+function verifyCodeViewer(cb) {
+    ensureEnvironment();
+    if (transformer === null || transformer === undefined) {
+        if (cb) cb("transformer failed to load"); return;
+    }
+    console.log('verifying code viewer in .md files');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/types/*.md',
+    // 'doc/en/**/features/chart-*.md',
+    'doc/en/**/*.md',
+    // 'doc/**/obsolete/**/_test.md',
+   '!doc/**/obsolete/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        // var filePath = file.dirname + "\\" + file.basename
+        // console.log('verifying code viewer in: ' + filePath);
+        //var fileContent = file.contents.toString();
+        errorsCount += transformer.verifyCodeViewer(file);
+        filesCount++;
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (errorsCount > 0) {
+            var msg = "Found " + errorsCount + " issues in above " + filesCount + " markdown files";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+         //   cb();
+        } else {
+            var msg = 'verified  code viewer in ' + filesCount + ' .md files';
+            console.log(msg);
+            if (cb) cb();
+        }
+    })
+    .on("error", (err) => {
+        console.log("Error in verifyCodeViewer()");
+        if (cb) cb(err);
+    });
+}
+
+exports.verifyCodeViewer = verifyCodeViewer;

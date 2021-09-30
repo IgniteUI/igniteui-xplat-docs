@@ -955,6 +955,73 @@ export class MarkdownTransformer {
         });
     }
 
+    getGithubURL(codeViewerLine: string): string {
+        var url = "url/to/sample/folder";
+        var lines = codeViewerLine.split('\r\n');
+        var iframe = "";
+        for (const line of lines) {
+            if (line.indexOf("iframe-src=") >= 0) {
+                iframe = line; break;
+            }
+        }
+        if (iframe !== "") {
+            // console.log(">> iframe \n" +  iframe );
+
+            url = iframe.replace('iframe-src="{environment:dvDemosBaseUrl}/', '');
+            url = url.replace('"', '');
+            url = url.replace('-chart-', '-chart/');
+            url = url.replace('-gauge-', '-gauge/');
+            url = url.replace('-graph-', '-graph/');
+            url = url.replace('data-grid-', 'data-grid/');
+            url = url.replace('geo-map-', 'geo-map/');
+            url = url.replace('data-picker-', 'data-picker/');
+            url = url.replace('dock-manager-', 'dock-manager/');
+            url = url.replace('multi-column-combobox-', 'multi-column-combobox/');
+            url = url.replace('spreadsheet-', 'spreadsheet/');
+            url = url.replace('excel-library-', 'excel-library/');
+            url = url.replace('zoomslider-', 'zoomslider/');
+            url = url.replace('sparkline-', 'sparkline/');
+            url = url.trim();
+            // console.log(">> iframe \n" +  iframe + "\n>> url  " + url);
+        }
+        return url;
+    }
+    verifyCodeViewer(file: any): number {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+
+        var md = new MarkdownContent(fileContent);
+
+        // console.log("sections " + md.sections.length);
+        var errorsCount = 0;
+        for (const section of md.sections) {
+
+            for (const line of section.lines) {
+                if (line.isCodeViewer()) {
+
+                    // console.log(line.index + " s=" + line.isCodeViewerWithStyle());
+                    // console.log(line.index + " u=" + line.isCodeViewerWithURL());
+                    // console.log(line.index + " f=" + line.isCodeViewerWithIFrame());
+                    // console.log(line.index + " a=" + line.isCodeViewerWithAltName());
+                    // console.log(line.index + " g=" + line.isCodeViewerWithGithub());
+                    // console.log("");
+                    // console.log(line);
+                    if (!line.isCodeViewerWithGithub()) {
+                        var url = '"' + this.getGithubURL(line.content) + '"';
+                        console.log("");
+                        console.log('>> Missing github-src=' + url + ' on code-view in: ' +  filePath);
+                        console.log("" + line.content + "");
+                        errorsCount++;
+                    }
+                }
+            }
+        }
+        // errorsCount = 0;
+        return errorsCount;
+
+    }
+
     updateApiSection(fileContent: string): string {
         var newApiMembers = [];
 
@@ -1264,7 +1331,8 @@ class MarkdownContent {
 
         var parts = content.split('---');
         if (parts === undefined || parts.length < 3) {
-            console.log('Failed on creating MarkdownContent');
+            console.log('Failed on creating MarkdownContent from file without metadata');
+            // console.log(content);
             return;
         }
         // console.log("parts:" + parts.length);
@@ -1354,6 +1422,11 @@ class MarkdownLine {
             this.content = content;
         }
     }
+    public isCodeViewerWithGithub() { return this.content.indexOf('github-src') > 0; }
+    public isCodeViewerWithAltName() { return this.content.indexOf('alt=') > 0; }
+    public isCodeViewerWithIFrame() { return this.content.indexOf('iframe-src=') > 0; }
+    public isCodeViewerWithURL() { return this.content.indexOf('data-demos-base-url=') > 0; }
+    public isCodeViewerWithStyle() { return this.content.indexOf('style=') > 0; }
 
     public isCodeViewer() { return this.content.indexOf('<code-view') === 0; }
     public isDivider() { return this.content.indexOf('<div class="divider--half"') === 0; }
