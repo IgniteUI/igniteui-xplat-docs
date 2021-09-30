@@ -5,7 +5,7 @@ _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistic
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 ---
 
-# $Platform$ Grid Merging
+# $Platform$ Grid Cell Merging
 
 The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not in edit mode, the value displays across the cells.
 
