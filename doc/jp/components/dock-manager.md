@@ -324,17 +324,24 @@ this.dockManager.layout = { ...layout };
 
 ### イベント
 
-ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。[`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
+ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
+
+ <!-- WebComponents, React, Angular --> 
+ [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
+<!-- end: WebComponents, React, Angular -->
+
+<!-- WebComponents -->
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ ドック マネージャー ペインを閉じる例"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
+<!-- end: WebComponents -->
 
 ## キーボード ナビゲーション
 
@@ -373,6 +380,61 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
  - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+
+## スタイル設定
+
+ドック マネージャーは、シャドウ DOM を使用してスタイルと動作をカプセル化します。その結果、通常の CSS セレクターでその内部要素を単純にターゲットにすることはできません。そのため、`:: part` CSS セレクターでターゲットにできるコンポーネント `parts` を公開しています。
+
+```css
+igc-dockmanager::part(content-pane) {
+  border-radius: 10px;
+}
+```
+
+<!-- WebComponents -->
+次の例では、公開した CSS パーツのいくつかを使用してドック マネージャーをカスタマイズする機能を紹介します。
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
+           alt="$Platform$ ドック マネージャー スタイル設定の例"
+           github-src="layouts/dock-manager/styling">
+</code-view>
+<!-- end: WebComponents -->
+
+### CSS パーツ
+
+パーツ名 | 説明
+---------|------------
+`content-pane` | コンテンツ ペイン コンポーネント。
+`pane-header`  | コンテンツ ペインのヘッダー コンポーネント。
+`pane-header-content` | コンテンツ ペイン ヘッダーのコンテンツ領域。
+`pane-header-actions` | コンテンツ ペイン ヘッダーのアクション領域。
+`active` | アクティブ状態を示します。`pane-header`、`pane-header-content`、`pane-header-actions`、`tab-header` に適用されます。
+`floating`  | フローティング ペインの配置を示します。`pane-header`、`pane-header-content`、`pane-header-actions` に適用されます。
+`window` | フローティング ウィンドウの配置を示します。`pane-header`、`pane-header-content`、`pane-header-actions` に適用されます。
+`split-pane` | スプリット ペイン コンポーネント。
+`splitter` | サイズ変更スプリッター コンポーネント。
+`splitter-base` | スプリッター コンポーネントの基本要素。
+`splitter-ghost`| スプリッター コンポーネントのゴースト要素。
+`unpinned-pane-header` | 固定されていないペイン ヘッダー コンポーネント。
+`tab-header` | タブ ヘッダー コンポーネント。
+`selected` | 選択状態を示します。`tab-header` に適用されます。
+`tab-strip-area` | タブ ヘッダーを含むタブ ストリップ領域。
+`tab-strip-actions` | タブ アクションを含むタブ ストリップ領域。
+`top` | タブの上位置を示します。`tab-header`、`tab-strip-area`、`tab-strip-actions` に適用されます。
+`bottom` | タブの下位置を示します。`tab-header`、`tab-strip-area`、`tab-strip-actions` に適用されます。
+`context-menu` | コンテキスト メニュー コンポーネント。
+`context-menu-item` | コンテキスト メニュー コンポーネントの項目。
+`docking-preview` | ドッキング プレビュー地域。
+`docking-indicator` | 非ルート ドッキング インジケーター。
+`root-docking-indicator` | ルート ドッキング インジケーター。
+`pane-navigator` | ペイン ナビゲーター コンポーネント。
+`pane-navigator-header` | ペイン ナビゲーターのヘッダー領域。
+`pane-navigator-body` | ペイン ナビゲーターの本体領域。
+`pane-navigator-items-group` | ペイン ナビゲーター コンポーネントの項目グループ。
+`pane-navigator-items-group-title` | ペイン ナビゲーターの項目グループのタイトル要素。
+`pane-navigator-item` | ペイン ナビゲーターの項目。
 
 ## テーマ
 
