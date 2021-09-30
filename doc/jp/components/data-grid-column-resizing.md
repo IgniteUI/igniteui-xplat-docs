@@ -14,8 +14,8 @@ $ProductName$ Data Grid は列サイズを変更する機能をサポートし�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-resizing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
            alt="$Platform$ グリッドの列サイズ変更の例"
            github-src="grids/data-grid/column-resizing">
 </code-view>

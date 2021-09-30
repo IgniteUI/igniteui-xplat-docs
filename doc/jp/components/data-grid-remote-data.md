@@ -13,8 +13,8 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
            alt="$Platform$ グリッド仮想データのバインドの例"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>

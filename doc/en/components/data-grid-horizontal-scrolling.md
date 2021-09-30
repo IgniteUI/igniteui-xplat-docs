@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
            alt="$Platform$ Horizontal Scrolling Example"
            github-src="grids/data-grid/column-scrolling">
 </code-view>

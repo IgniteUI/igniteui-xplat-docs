@@ -12,8 +12,8 @@ The $ProductName$ Data Table / Data Grid supports data binding to remote datasou
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
            alt="$Platform$ Grid Binding Virtual Data Example"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>

@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports column summaries. In some case
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-summaries"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-summaries"
            alt="$Platform$ Column Summaries Example"
            github-src="grids/data-grid/column-summaries">
 </code-view>

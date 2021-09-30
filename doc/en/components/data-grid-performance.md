@@ -15,8 +15,8 @@ This sample demonstrates this performance by binding thousands of financial reco
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-performance"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-performance"
            alt="$Platform$ High Performance with Live Data Example"
            github-src="grids/data-grid/performance">
 </code-view>

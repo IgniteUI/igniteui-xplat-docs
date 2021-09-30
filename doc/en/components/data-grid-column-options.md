@@ -15,8 +15,8 @@ To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-options"
            alt="$Platform$ Grid Column Options Example"
            github-src="grids/data-grid/column-options">
 </code-view>

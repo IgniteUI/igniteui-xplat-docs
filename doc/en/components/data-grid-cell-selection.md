@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports single or multiple row and cel
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
            alt="$Platform$ Grid Selection Example"
            github-src="grids/data-grid/cell-selection">
 </code-view>
@@ -32,7 +32,7 @@ Selection in the $Platform$ data grid is enabled on a row and cell level and can
 - `MultipleRow`: Selection of multiple rows is enabled.
 - `RangeCell`: Selection of a range of multiple cells by clicking and dragging is enabled.
 
-`SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only. 
+`SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only.
 
 `MultipleRow` includes the following functionality:
 - Click and drag to select rows
@@ -45,9 +45,9 @@ Pressing the space bar toggles selection of active row via `MultipleRow` or `Sin
 
 The following example demonstrates how to selected or deselected all rows in the grid. Note, `SelectionMode` must be set to MultipleRow.
 
-<code-view style="height: 600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection" 
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
            alt="$Platform$ Grid Selection Example" >
 </code-view>
 

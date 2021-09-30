@@ -14,8 +14,8 @@ $ProductName$ Data Table / Data Grid は、単一行または複数行および�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
            alt="$Platform$ グリッド選択の例"
            github-src="grids/data-grid/cell-selection">
 </code-view>
@@ -47,8 +47,8 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 次の例は、グリッド内のすべての行を選択または選択解除する方法を示しています。`SelectionMode` は MultipleRow に設定する必要があることに注意してください。
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
            alt="$Platform$ グリッド選択の例"
            github-src="grids/data-grid/row-selection">
 </code-view>

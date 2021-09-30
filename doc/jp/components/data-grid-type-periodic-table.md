@@ -14,8 +14,8 @@ $ProductName$ Data Table / Data Grid は、周期表を作成する[テンプレ
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-periodic-table"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-periodic-table"
            alt="$Platform$ 周期表のバインディングの例"
            github-src="grids/data-grid/type-periodic-table">
 </code-view>

@@ -16,8 +16,8 @@ $ProductName$ データ グリッドは、各列ヘッダに表示される UI �
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-options"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-options"
            alt="$Platform$ Grid 列オプションの例"
            github-src="grids/data-grid/column-options">
 </code-view>

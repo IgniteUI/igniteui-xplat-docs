@@ -13,8 +13,8 @@ $ProductName$ 데이터 표/데이터 그리드는 열 숨기기 또는 열 이�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
            github-src="grids/data-grid/column-animation">
 </code-view>
 

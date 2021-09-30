@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Data Grid | Cell Merging | Merging | Infragistics
-_description: Use the cell merging feature of the Infragistics' $Platform$ data grid to join cells with duplicate values. 
+_description: Use the cell merging feature of the Infragistics' $Platform$ data grid to join cells with duplicate values.
 _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 ---
@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports cell merging.
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-merging"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
            alt="$Platform$ Grid Cell Merging Example"
            github-src="grids/data-grid/cell-merging">
 </code-view>

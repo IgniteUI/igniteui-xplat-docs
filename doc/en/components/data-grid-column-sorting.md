@@ -12,8 +12,8 @@ The $ProductName$ Data Table / Data Grid supports ascending and descending colum
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
            alt="$Platform$ Grid Sorting Example"
            github-src="grids/data-grid/column-sorting">
 </code-view>

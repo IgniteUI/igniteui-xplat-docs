@@ -1,6 +1,6 @@
 ---
 title: $Platform$ データ グリッド | セル結合 | 結合 | インフラジスティックス
-_description: Infragistics の $Platform$ データ グリッドのセル結合機能を使用して、重複する値を持つセルを結合します。 
+_description: Infragistics の $Platform$ データ グリッドのセル結合機能を使用して、重複する値を持つセルを結合します。
 _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セル結合, インフラジスティックス
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 _language: ja
@@ -14,8 +14,8 @@ $ProductName$ データ テーブル / データ グリッドはセルの結合�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-merging"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
            alt="$Platform$ グリッド セルの結合例"
            github-src="grids/data-grid/cell-merging">
 </code-view>

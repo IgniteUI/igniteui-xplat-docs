@@ -15,8 +15,8 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 フィルタリング、グループ化、列のピン固定/ピン固定解除、列の再配置、ソート、および集計。
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
            alt="$Platform$ Data Grid の例"
            github-src="grids/data-grid/overview">
 </code-view>
@@ -389,19 +389,19 @@ grid1.dataSource = data;
 ```
 
 ```html
-<igc-text-column 
+<igc-text-column
     background="SkyBlue"
     text-style="Italic Bold 16pt Times New Roman"
 ></igc-text-column>
 ```
 
 ```razor
-<TextColumn    
+<TextColumn
     Background="SkyBlue"
-    FontStyle="italic" 
-    FontWeight="bold" 
-    FontFamily="Times New Roman" 
-    FontSize="16"  
+    FontStyle="italic"
+    FontWeight="bold"
+    FontFamily="Times New Roman"
+    FontSize="16"
 />
 ```
 

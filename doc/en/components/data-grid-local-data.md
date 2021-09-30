@@ -13,8 +13,8 @@ The following sample demonstrates the $ProductName$ Data Table / Data Grid data 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-local-data"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-local-data"
            alt="$Platform$ Binding Local Data Example"
            github-src="grids/data-grid/binding-local-data">
 </code-view>

@@ -14,8 +14,8 @@ $ProductName$ Data Table / Data Grid は、マトリックス テーブルを作
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-matrix-table"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-matrix-table"
            alt="$Platform$ マトリックス データのバインディングの例"
            github-src="grids/data-grid/type-matrix-table">
 </code-view>

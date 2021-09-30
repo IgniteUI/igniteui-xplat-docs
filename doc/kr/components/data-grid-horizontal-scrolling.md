@@ -13,8 +13,8 @@ $ProductName$ 데이터 표/데이터 그리드는 $Platform$ 데이터 그리�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 

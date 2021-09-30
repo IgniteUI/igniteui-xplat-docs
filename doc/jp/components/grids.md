@@ -208,8 +208,8 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 
 
 <code-view style="height: 435px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
            alt="$Platform$ Grid 例" >
 </code-view>
 
@@ -255,8 +255,8 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 
 
 <code-view style="height: 435px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-type-marketing-table"  >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-marketing-table"  >
 </code-view>
 
 <div class="divider--half"></div>

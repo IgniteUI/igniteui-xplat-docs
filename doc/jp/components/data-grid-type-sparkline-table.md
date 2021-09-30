@@ -14,8 +14,8 @@ $ProductName$ Data Table / Data Grid は、$ProductName$ スパークライン �
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
            alt="$Platform$ 列スパークラインの例"
            github-src="charts/sparkline/grid">
 </code-view>

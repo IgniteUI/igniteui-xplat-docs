@@ -14,8 +14,8 @@ $ProductName$ Data Table / Data Grid は、列の非表示や列の移動など�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-animation"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
            alt="$Platform$ グリッド列アニメーションの例"
            github-src="grids/data-grid/column-animation">
 </code-view>

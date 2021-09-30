@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports loading and saving the grid la
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-load-save-layout"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-load-save-layout"
            alt="$Platform$ Grid Load & Save Layout Example"
            github-src="grids/data-grid/load-save-layout">
 </code-view>

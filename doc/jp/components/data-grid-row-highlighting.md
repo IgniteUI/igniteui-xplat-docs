@@ -13,8 +13,8 @@ $ProductName$ Data Table / Data Grid は、行の強調表示の構成をサポ�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-highlighting"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
            alt="$Platform$ Grid 強調表示の例"
            github-src="grids/data-grid/row-highlighting">
 </code-view>

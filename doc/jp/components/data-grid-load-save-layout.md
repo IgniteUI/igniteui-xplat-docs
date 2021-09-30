@@ -14,8 +14,8 @@ $ProductName$ データ テーブル / データ グリッドは、グリッド 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-load-save-layout"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-load-save-layout"
            alt="$Platform$ グリッド レイアウトの読み込みと保存の例"
            github-src="grids/data-grid/load-save-layout">
 </code-view>

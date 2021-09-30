@@ -13,8 +13,8 @@ $ProductName$ 데이터 표/데이터 그리드를 사용하면 열 값을 '고�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-grouping"
            github-src="grids/data-grid/row-grouping">
 </code-view>
 
