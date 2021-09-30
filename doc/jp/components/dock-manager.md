@@ -381,9 +381,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
-## Styling
+## スタイル設定
 
-The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+ドック マネージャーは、シャドウ DOM を使用してスタイルと動作をカプセル化します。その結果、通常の CSS セレクターでその内部要素を単純にターゲットにすることはできません。そのため、`:: part` CSS セレクターでターゲットにできるコンポーネント `parts` を公開しています。
 
 ```css
 igc-dockmanager::part(content-pane) {
@@ -392,49 +392,49 @@ igc-dockmanager::part(content-pane) {
 ```
 
 <!-- WebComponents -->
-In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
+次の例では、公開した CSS パーツのいくつかを使用してドック マネージャーをカスタマイズする機能を紹介します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="$Platform$ Dock Manager Styling Example"
+           alt="$Platform$ ドック マネージャー スタイル設定の例"
            github-src="layouts/dock-manager/styling">
 </code-view>
 <!-- end: WebComponents -->
 
-### CSS Parts
+### CSS パーツ
 
-部分名 | 説明
+パーツ名 | 説明
 ---------|------------
-`content-pane` | The content pane component.
-`pane-header`  | The content pane header component.
-`pane-header-content` | The content area of the content pane header.
-`pane-header-actions` | The actions area of the content pane header.
-`active` | Indicates an active state. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`, `tab-header`.
-`floating`  | Indicates a floating pane placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
-`window` | Indicates a floating window placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
-`split-pane` | The split pane component.
-`splitter` | The resizing splitter component.
-`splitter-base` | The base element of the splitter component.
-`splitter-ghost`| The ghost element of the splitter component.
-`unpinned-pane-header` | The unpinned pane header component.
-`tab-header` | The tab header component.
-`selected` | Indicates a selected state. Applies to `tab-header`.
-`tab-strip-area` | The tab strip area containing the tab headers.
-`tab-strip-actions` | The tab strip area containing the tab actions.
-`top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
-`bottom` | Indicates a bottom tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
-`context-menu` | The context menu component.
-`context-menu-item` | An item in the context menu component.
-`docking-preview` | The docking preview area.
-`docking-indicator` | The non-root docking indicator.
-`root-docking-indicator` | The root docking indicator.
-`pane-navigator` | The pane navigator component.
-`pane-navigator-header` | The header area of the pane navigator.
-`pane-navigator-body` | The body area of the pane navigator.
-`pane-navigator-items-group` | An items group in the pane navigator component.
-`pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
-`pane-navigator-item` | An item in the pane navigator.
+`content-pane` | コンテンツ ペイン コンポーネント。
+`pane-header`  | コンテンツ ペインのヘッダー コンポーネント。
+`pane-header-content` | コンテンツ ペイン ヘッダーのコンテンツ領域。
+`pane-header-actions` | コンテンツ ペイン ヘッダーのアクション領域。
+`active` | アクティブ状態を示します。`pane-header`、`pane-header-content`、 `pane-header-actions`、`tab-header` に適用されます。
+`floating`  | フローティング ペインの配置を示します。`pane-header`、`pane-header-content`、 `pane-header-actions` に適用されます。
+`window` | フローティング ウィンドウの配置を示します。`pane-header`、`pane-header-content`、 `pane-header-actions` に適用されます。
+`split-pane` | スプリット ペイン コンポーネント。
+`splitter` | サイズ変更スプリッター コンポーネント。
+`splitter-base` | スプリッター コンポーネントの基本要素。
+`splitter-ghost`| スプリッター コンポーネントのゴースト要素。
+`unpinned-pane-header` | 固定されていないペイン ヘッダー コンポーネント。
+`tab-header` | タブ ヘッダー コンポーネント。
+`selected` | 選択状態を示します。`tab-header` に適用されます。
+`tab-strip-area` | タブ ヘッダーを含むタブ ストリップ領域。
+`tab-strip-actions` | タブ アクションを含むタブ ストリップ領域。
+`top` | タブの上位置を示します。`tab-header`、`tab-strip-area`、`tab-strip-actions` に適用されます。
+`bottom` | タブの下位置を示します。`tab-header`、`tab-strip-area`、`tab-strip-actions` に適用されます。
+`context-menu` | コンテキスト メニュー コンポーネント。
+`context-menu-item` | コンテキスト メニュー コンポーネントの項目。
+`docking-preview` | ドッキング プレビュー地域。
+`docking-indicator` | 非ルート ドッキング インジケーター。
+`root-docking-indicator` | ルート ドッキング インジケーター。
+`pane-navigator` | ペイン ナビゲーター コンポーネント。
+`pane-navigator-header` | ペイン ナビゲーターのヘッダー領域。
+`pane-navigator-body` | ペイン ナビゲーターの本体領域。
+`pane-navigator-items-group` | ペイン ナビゲーター コンポーネントの項目グループ。
+`pane-navigator-items-group-title` | ペイン ナビゲーターの項目グループのタイトル要素。
+`pane-navigator-item` | ペイン ナビゲーターの項目。
 
 ## テーマ
 
