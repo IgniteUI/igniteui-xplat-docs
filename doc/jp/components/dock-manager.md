@@ -410,9 +410,9 @@ igc-dockmanager::part(content-pane) {
 `pane-header`  | コンテンツ ペインのヘッダー コンポーネント。
 `pane-header-content` | コンテンツ ペイン ヘッダーのコンテンツ領域。
 `pane-header-actions` | コンテンツ ペイン ヘッダーのアクション領域。
-`active` | アクティブ状態を示します。`pane-header`、`pane-header-content`、 `pane-header-actions`、`tab-header` に適用されます。
-`floating`  | フローティング ペインの配置を示します。`pane-header`、`pane-header-content`、 `pane-header-actions` に適用されます。
-`window` | フローティング ウィンドウの配置を示します。`pane-header`、`pane-header-content`、 `pane-header-actions` に適用されます。
+`active` | アクティブ状態を示します。`pane-header`、`pane-header-content`、`pane-header-actions`、`tab-header` に適用されます。
+`floating`  | フローティング ペインの配置を示します。`pane-header`、`pane-header-content`、`pane-header-actions` に適用されます。
+`window` | フローティング ウィンドウの配置を示します。`pane-header`、`pane-header-content`、`pane-header-actions` に適用されます。
 `split-pane` | スプリット ペイン コンポーネント。
 `splitter` | サイズ変更スプリッター コンポーネント。
 `splitter-base` | スプリッター コンポーネントの基本要素。
