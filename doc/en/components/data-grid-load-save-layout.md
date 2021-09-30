@@ -7,7 +7,7 @@ mentionedTypes: ['Grid']
 
 # $Platform$ Grid Load & Save Layout
 
-The $ProductName$ Data Table / Data Grid supports loading and saving the grid layout. This is performed by calling the `LoadLayout` and `SaveLayout` methods of the grid.
+The $ProductName$ Data Table / Data Grid supports loading and saving the grid layout. This is performed by calling the `LoadLayout` and `SaveLayout` methods of the grid. These features are useful when an end user can move, sort, and group columns, and wants to preserve the state of the grid and be able to recover the layout and resume work at a later time.
 
 ## $Platform$ Grid Load & Save Layout Example
 
@@ -23,12 +23,12 @@ The $ProductName$ Data Table / Data Grid supports loading and saving the grid la
 
 ## Supported Features
 
-The grid supports loading/saving the following features:
+The grid supports saving the following features:
 
-- Column Visibility
-- Column Pinning
-- Column Positioning
-- Column Resizing
-- Group-By Settings
-- Sort Direction
-- Row Filter
+- [Column Visibility](data-grid-column-chooser.md)
+- [Column Pinning](data-grid-column-pinning.md)
+- [Column Moving](data-grid-column-moving.md)
+- [Column Resizing](data-grid-column-resizing.md)
+- [Column Group-by](data-grid-column-group-by.md)
+- [Column Sorting](data-grid-column-sorting.md)
+- [Row Filtering](data-grid-row-filter.md)

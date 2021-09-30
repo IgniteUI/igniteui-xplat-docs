@@ -5,9 +5,9 @@ _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistic
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 ---
 
-# $Platform$ Grid Merging
+# $Platform$ Grid Cell Merging
 
-The $ProductName$ Data Table / Data Grid supports cell merging.
+The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not in edit mode, the value displays across the cells.
 
 ## $Platform$ Grid Cell Merging Example
 
@@ -28,6 +28,8 @@ Cell Merging in the $Platform$ data grid can be configured by using the `MergedC
 - `Never`: The grid will never merge cells. This is the default behavior.
 - `Always`: The grid will always attempt to merge cells.
 - `OnlyWhenSorted`: The grid will only attempt to merge cells when a column is sorted.
+
+Note, regardless of the value of this property, cells can only be merged across sibling records.
 
 In addition, there is a `MergedCellEvaluationCriteria` property which can be used depending on if formatting is applied. This property takes two options, listed below:
 
