@@ -17,6 +17,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
+           github-src="charts/data-chart/scatter-point-chart"
            alt="$Platform$ Scatter Marker Chart" >
 </code-view>
 
@@ -31,6 +32,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart"
+           github-src="charts/data-chart/scatter-line-chart"
            alt="$Platform$ Scatter Line Chart" >
 </code-view>
 
@@ -45,6 +47,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-spline-chart"
+           github-src="charts/data-chart/scatter-spline-chart"
            alt="$Platform$ Scatter Spline Chart" >
 </code-view>
 
@@ -59,6 +62,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-hd-series"
+           github-src="charts/data-chart/type-scatter-hd-series"
            alt="$Platform$ Scatter HD Chart" >
 </code-view>
 
@@ -73,6 +77,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series"
+           github-src="charts/data-chart/type-scatter-area-series"
            alt="$Platform$ Scatter Area Chart" >
 </code-view>
 
@@ -87,6 +92,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series"
+           github-src="charts/data-chart/type-scatter-contour-series"
            alt="$Platform$ Scatter Contour Chart" >
 </code-view>
 

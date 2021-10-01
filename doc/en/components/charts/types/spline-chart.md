@@ -15,6 +15,7 @@ The following example shows how to create $Platform$ Spline Chart in the `Catego
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="$Platform$ Spline Chart Multiple Sources" >
 </code-view>
 
@@ -29,6 +30,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
+           github-src="charts/category-chart/spline-single-source"
            alt="$Platform$ Spline Chart with Single Source" >
 </code-view>
 
@@ -43,6 +45,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="$Platform$ Spline Chart with Multiple Sources" >
 </code-view>
 
@@ -57,6 +60,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
+           github-src="charts/category-chart/spline-styling"
            alt="$Platform$ Spline Chart Styling" >
 </code-view>
 
@@ -75,6 +79,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
+           github-src="charts/data-chart/stacked-spline-chart"
            alt="$Platform$ Stacked Spline Chart" >
 </code-view>
 
@@ -89,6 +94,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
+           github-src="charts/data-chart/stacked-100-spline-chart"
            alt="$Platform$ Stacked 100 Spline Chart" >
 </code-view>
 

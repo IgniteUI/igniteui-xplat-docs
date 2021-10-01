@@ -17,6 +17,7 @@ You can create $Platform$ Category Area Chart in the `CategoryChart` control by 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="$Platform$ Area Chart Multiple Sources" >
 </code-view>
 
@@ -61,6 +62,7 @@ $Platform$ Area Chart is often used to show the change of value over time such a
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source"
+           github-src="charts/category-chart/area-chart-single-source"
            alt="$Platform$ Area Chart with Single Series" >
 </code-view>
 
@@ -73,6 +75,7 @@ Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline C
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="$Platform$ Area Chart with Multiple Sources" >
 </code-view>
 
@@ -85,6 +88,7 @@ Area charts often have semi-transparent fill for their areas, thicker li
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling"
+           github-src="charts/category-chart/area-chart-styling"
            alt="$Platform$ Area Chart Styling" >
 </code-view>
 
@@ -118,6 +122,7 @@ The $Platform$ Range Area Chart allows you show the area as a range between two�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-area-chart"
+           github-src="charts/data-chart/range-area-chart"
            alt="$Platform$ Range Area Chart" >
 </code-view>
 
@@ -130,6 +135,7 @@ The $Platform$ Stacked Area Chars is rendered using a collection of points conne
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
+           github-src="charts/data-chart/stacked-area-chart"
            alt="$Platform$ Stacked Area Chart" >
 </code-view>
 
@@ -208,6 +214,7 @@ The $Platform$ Polar Spline Area Chart belongs to a group of [Polar Chart](polar
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
+           github-src="charts/data-chart/polar-spline-area-chart"
            alt="$Platform$ Polar Spline Area Chart" >
 </code-view>
 

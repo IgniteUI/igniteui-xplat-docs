@@ -15,6 +15,7 @@ You can create $Platform$ Step Area Chart in the `CategoryChart` control by sett
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
+           github-src="charts/category-chart/step-area-multiple-sources"
            alt="$Platform$ Step Area Chart Multiple Sources" >
 </code-view>
 
@@ -29,6 +30,7 @@ You can create Step Line Chart in the `CategoryChart` control by binding your da
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           github-src="charts/category-chart/step-line-multiple-sources"
            alt="$Platform$ Step Line Chart Multiple Sources" >
 </code-view>
 
@@ -41,6 +43,7 @@ If you need Step Charts with more features such as composite other series, you c
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling"
+           github-src="charts/category-chart/step-line-styling"
            alt="$Platform$ Styling Step Line Chart" >
 </code-view>
 
