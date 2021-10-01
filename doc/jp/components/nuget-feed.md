@@ -1,11 +1,13 @@
 ---
-title: Infragistics NuGet Feed
-_description: Infragistics NuGet Feed for $Platform$ components.
-_keywords: $Platform$, NuGet, Feed, Infragistics
+title: Infragistics NuGet フィード
+_description: インフラジスティックスの $Platform$ コンポーネントの NuGet フィード。
+_keywords: $Platform$, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
 mentionedTypes: []
+_language: ja
 ---
 
 # Infragistics NuGet フィード
+
 Infragistics は製品版を使用するユーザーにプライベート NuGet フィードを提供し、製品版の Ignite UI for Blazor NuGet パッケージを NuGet パッケージ マネージャーを介して追加します。
 
 このトピックは、以下のセクションで構成されます。

@@ -6,9 +6,9 @@ mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 _language: ja
 ---
 
-# $Platform$ グリッドの結合
+# $Platform$ グリッド セルの結合
 
-$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。
+$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not in edit mode, the value displays across the cells.
 
 ## $Platform$ グリッド セルの結合例
 
@@ -29,6 +29,8 @@ $Platform$ データ グリッドでのセルの結合は、$Platform$ グリッ
 - `Never`: グリッドがセルを結合することはありません。これがデフォルトの動作です。
 - `Always`: グリッドは常にセルの結合を試みます。
 - `OnlyWhenSorted`: グリッドは、列がソートされたときにのみセルの結合を試みます。
+
+Note, regardless of the value of this property, cells can only be merged across sibling records.
 
 さらに、フォーマットが適用されているかどうかに応じて使用できる  `MergedCellEvaluationCriteria` プロパティがあります。このプロパティには、以下に示す 2 つのオプションがあります:
 
