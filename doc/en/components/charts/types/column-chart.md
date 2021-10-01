@@ -17,6 +17,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           github-src="charts/category-chart/column-chart-multiple-sources"
            alt="$Platform$ Column Chart Multiple Sources" >
 </code-view>
 
@@ -57,6 +58,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source"
+           github-src="charts/category-chart/column-chart-single-source"
            alt="$Platform$ Column Chart with Single Source" >
 </code-view>
 
@@ -105,6 +107,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart"
+           github-src="charts/data-chart/waterfall-chart"
            alt="$Platform$ Waterfall Chart" >
 </code-view>
 
@@ -119,6 +122,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
+           github-src="charts/data-chart/stacked-column-chart"
            alt="$Platform$ Stacked Column Chart" >
 </code-view>
 
@@ -133,6 +137,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
+           github-src="charts/data-chart/stacked-100-column-chart"
            alt="$Platform$ Stacked 100 Column Chart" >
 </code-view>
 
@@ -149,6 +154,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart"
+           github-src="charts/data-chart/range-column-chart"
            alt="$Platform$ Range Column Chart" >
 </code-view>
 
@@ -163,6 +169,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
+           github-src="charts/data-chart/radial-column-chart"
            alt="$Platform$ Radial Column Chart" >
 </code-view>
 
