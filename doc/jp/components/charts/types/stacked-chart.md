@@ -16,6 +16,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-chart-types"
+           github-src="charts/data-chart/stacked-chart-types"
            alt="$Platform$ 積層型チャートのタイプ" >
 </code-view>
 
@@ -32,6 +33,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
+           github-src="charts/data-chart/stacked-area-chart"
            alt="$Platform$ 積層型エリア チャート" >
 </code-view>
 
@@ -47,6 +49,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
+           github-src="charts/data-chart/stacked-100-area-chart"
            alt="$Platform$ 積層型 100 エリア チャート" >
 </code-view>
 
@@ -64,6 +67,7 @@ $ProductName$ 積層型チャートは、データ項目の複数の値を積層
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
+           github-src="charts/data-chart/stacked-bar-chart"
            alt="$Platform$ 積層型 棒チャート" >
 </code-view>
 
@@ -79,6 +83,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
+           github-src="charts/data-chart/stacked-100-bar-chart"
            alt="$Platform$ 積層型 100 棒チャート" >
 </code-view>
 
@@ -94,6 +99,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
+           github-src="charts/data-chart/stacked-column-chart"
            alt="$Platform$ 積層型縦棒チャート" >
 </code-view>
 
@@ -109,6 +115,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
+           github-src="charts/data-chart/stacked-100-column-chart" 
            alt="$Platform$ 積層型 100 縦棒チャート" >
 </code-view>
 
@@ -154,6 +161,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
+           github-src="charts/data-chart/stacked-spline-area-chart"
            alt="$Platform$ 積層型 スプライン エリア チャート" >
 </code-view>
 
@@ -169,6 +177,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
+           github-src="charts/data-chart/stacked-100-spline-area-chart"
            alt="$Platform$ 積層型 100 スプライン エリア チャート" >
 </code-view>
 
@@ -182,6 +191,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
+           github-src="charts/data-chart/stacked-spline-chart" 
            alt="$Platform$ 積層型 スプライン チャート" >
 </code-view>
 
@@ -197,6 +207,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
+           github-src="charts/data-chart/stacked-100-spline-chart"
            alt="$Platform$ 積層型 100 スプライン チャート" >
 </code-view>
 

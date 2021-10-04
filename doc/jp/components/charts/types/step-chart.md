@@ -16,6 +16,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
+           github-src="charts/category-chart/step-area-multiple-sources"
            alt="複数ソースの $Platform$ ステップ エリア チャート" >
 </code-view>
 
@@ -30,6 +31,7 @@ $Platform$ ステップ折れ線チャートは、線の下の領域が塗りつ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           github-src="charts/category-chart/step-line-multiple-sources"
            alt="複数ソースの $Platform$ ステップ折れ線チャート" >
 </code-view>
 
@@ -42,6 +44,7 @@ $Platform$ ステップ折れ線チャートは、線の下の領域が塗りつ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling"
+           github-src="charts/category-chart/step-line-styling"
            alt="$Platform$ ステップ折れ線チャートのスタイル設定" >
 </code-view>
 

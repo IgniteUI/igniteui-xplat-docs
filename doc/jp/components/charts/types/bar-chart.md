@@ -18,6 +18,7 @@ $ProductName$ カテゴリ棒チャートは、複数のデータ ソースの�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ 複数ソースの棒チャート" >
 </code-view>
 
@@ -80,6 +81,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
+           github-src="charts/data-chart/bar-chart-single-source"
            alt="$Platform$ 単一シリーズの $Platform$ 棒チャート" >
 </code-view>
 
@@ -92,6 +94,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ 複数シリーズの $Platform$ 棒チャート" >
 </code-view>
 
@@ -104,6 +107,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
+           github-src="charts/data-chart/bar-chart-styling"
            alt="$Platform$ 棒チャートのスタイル設定" >
 </code-view>
 
@@ -120,6 +124,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
+           github-src="charts/data-chart/stacked-bar-chart"
            alt="$Platform$ 積層型棒チャート" >
 </code-view>
 
@@ -134,6 +139,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
+           github-src="charts/data-chart/stacked-100-bar-chart"
            alt="$Platform$ 積層型 100 棒チャート" >
 </code-view>
 

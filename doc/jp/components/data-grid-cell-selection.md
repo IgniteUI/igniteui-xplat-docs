@@ -50,7 +50,7 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
            alt="$Platform$ グリッド選択の例"
-           github-src="grids/data-grid/row-selection">
+           github-src="grids/data-grid/row-selection" >
 </code-view>
 
 <div class="divider--half"></div>

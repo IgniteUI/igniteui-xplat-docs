@@ -18,6 +18,7 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           github-src="charts/category-chart/column-chart-multiple-sources"
            alt="$Platform$ 複数ソースの縦棒チャート" >
 </code-view>
 
@@ -58,6 +59,7 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source"
+           github-src="charts/category-chart/column-chart-single-source"
            alt="単一シリーズの $Platform$ 縦棒チャート" >
 </code-view>
 
@@ -70,7 +72,8 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="複数シリーズの $Platform$ 縦棒チャート"           github-src="charts/category-chart/column-chart-multiple-sources" >
+           alt="$Platform$ 複数シリーズの $Platform$ 縦棒チャート"
+           github-src="charts/category-chart/column-chart-multiple-sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -105,6 +108,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart"
+           github-src="charts/data-chart/waterfall-chart"
            alt="$Platform$ ウォーターフォール チャート" >
 </code-view>
 
@@ -119,6 +123,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
+           github-src="charts/data-chart/stacked-column-chart"
            alt="$Platform$ 積層型縦棒チャート" >
 </code-view>
 
@@ -133,6 +138,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
+           github-src="charts/data-chart/stacked-100-column-chart"
            alt="$Platform$ 積層型 100% 縦棒チャート" >
 </code-view>
 
@@ -149,6 +155,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart"
+           github-src="charts/data-chart/range-column-chart"
            alt="$Platform$ 範囲縦棒チャート" >
 </code-view>
 
@@ -163,6 +170,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
+           github-src="charts/data-chart/radial-column-chart"
            alt="$Platform$ ラジアル縦棒チャート" >
 </code-view>
 

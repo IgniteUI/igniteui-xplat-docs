@@ -18,6 +18,7 @@ $ProductName$ 折れ線チャート (または折れ線グラフ) は、カテ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           github-src="charts/category-chart/line-chart-multiple-sources"
            alt="$Platform$ 複数ソースの折れ線チャート" >
 </code-view>
 
