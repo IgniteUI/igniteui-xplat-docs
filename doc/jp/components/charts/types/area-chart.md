@@ -18,6 +18,7 @@ $ProductName$ エリア チャートは、線の下の領域が塗りつぶさ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="$Platform$ 複数ソースのエリア チャート" >
 </code-view>
 
@@ -62,6 +63,7 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source"
+           github-src="charts/category-chart/area-chart-single-source"
            alt="単一シリーズの $Platform$ エリア チャート" >
 </code-view>
 
@@ -74,6 +76,7 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="複数シリーズの $Platform$ エリア チャート" >
 </code-view>
 
@@ -86,6 +89,7 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling"
+           github-src="charts/category-chart/area-chart-styling"
            alt="$Platform$ エリア チャートのスタイル設定" >
 </code-view>
 
@@ -119,6 +123,7 @@ $ProductName$ 範囲エリア チャートは、時間の経過とともに 2 �
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-area-chart"
+           github-src="charts/data-chart/range-area-chart"
            alt="$Platform$ 範囲エリア チャート" >
 </code-view>
 
@@ -131,6 +136,7 @@ $ProductName$ 積層型エリア チャートは、線分で接続されたポ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
+           github-src="charts/data-chart/stacked-area-chart"
            alt="$Platform$ 積層型エリア チャート" >
 </code-view>
 
@@ -209,6 +215,7 @@ $Platform$ 極座標スプライン エリア チャートは[極座標チャー
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
+           github-src="charts/data-chart/polar-spline-area-chart"
            alt="$Platform$ 極座標型スプライン エリア チャート" >
 </code-view>
 

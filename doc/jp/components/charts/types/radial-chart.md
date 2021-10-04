@@ -18,6 +18,7 @@ $ProductName$ ラジアル エリア チャートは、データ ポイントを
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart"
+           github-src="charts/data-chart/radial-area-chart"
            alt="$Platform$ ラジアル エリア チャート" >
 </code-view>
 
@@ -32,6 +33,7 @@ $ProductName$ ラジアル エリア チャートは、データ ポイントを
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
+           github-src="charts/data-chart/radial-column-chart"
            alt="$Platform$ ラジアル縦棒チャート" >
 </code-view>
 
@@ -46,6 +48,7 @@ $ProductName$ ラジアル折れ線チャートは、データ ポイントを�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
+           github-src="charts/data-chart/radial-line-chart"
            alt="$Platform$ ラジアル折れ線チャート" >
 </code-view>
 
@@ -60,6 +63,7 @@ $ProductName$ ラジアル折れ線チャートは、データ ポイントを�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
+           github-src="charts/data-chart/radial-pie-chart"
            alt="$Platform$ ラジアル円チャート" >
 </code-view>
 
@@ -71,10 +75,10 @@ $ProductName$ ラジアル折れ線チャートは、データ ポイントを�
 
 この例は、$Platform$ ラジアル チャートをカスタマイズする方法を示しています。
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
+           github-src="charts/data-chart/radial-area-chart-styling"
            alt="$Platform$ ラジアル エリア チャートのスタイル設定" >
 </code-view>
 

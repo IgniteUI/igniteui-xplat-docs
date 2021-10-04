@@ -42,6 +42,7 @@ $Platform$ 棒チャート (棒グラフ) は、さまざまなカテゴリの�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ 複数ソースの棒チャート" >
 </code-view>
 
@@ -54,6 +55,7 @@ $Platform$ 円チャート、または円グラフは、一般的な部分から
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           github-src="charts/pie-chart/overview"
            alt="凡例付きの $Platform$ 円チャート" >
 </code-view>
 
@@ -66,6 +68,7 @@ $Platform$ 折れ線チャート、または折れ線グラフは、傾向を示
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           github-src="charts/category-chart/line-chart-multiple-sources"
            alt="$Platform$ 複数ソースの折れ線チャート" >
 </code-view>
 
@@ -78,6 +81,7 @@ $Platform$ ドーナツ チャート、またはドーナツ グラフは、円�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
+           github-src="charts/doughnut-chart/doughnut-chart-legend"
            alt="凡例付きの $Platform$ ドーナツ チャート" >
 </code-view>
 
@@ -90,6 +94,7 @@ $Platform$ エリア チャートは、直線セグメントで接続された�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="$Platform$ 複数ソースのエリア チャート" >
 </code-view>
 
@@ -115,6 +120,7 @@ $Platform$ バブル チャート (バブル グラフ) は、3 つの数値で�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="$Platform$ バブル チャート" >
 </code-view>
 
@@ -127,6 +133,7 @@ $Platform$ ファイナンシャル/株価チャートは、時系列チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ 株価チャートの例" >
 </code-view>
 
@@ -139,6 +146,7 @@ $Platform$ 縦棒チャート (縦棒グラフ) は、さまざまなカテゴ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           github-src="charts/category-chart/column-chart-multiple-sources"
            alt="$Platform$ 複数ソースの縦棒チャート" >
 </code-view>
 
@@ -151,6 +159,7 @@ $Platform$ 複合チャートまたはコンボ チャートは、同じプロ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
+           github-src="charts/data-chart/composite-chart"
            alt="$Platform$ 複合チャートの例" >
 </code-view>
 
@@ -171,6 +180,7 @@ $Platform$ 極座標エリア チャートまたは極座標グラフは、極�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
+           github-src="charts/data-chart/polar-line-chart"
            alt="$Platform$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -187,6 +197,7 @@ $Platform$ 散布図は、デカルト (X、Y) 座標系を使用してデータ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
+           github-src="charts/data-chart/scatter-point-chart"
            alt="$Platform$ 散布マーカー チャート" >
 </code-view>
 
@@ -199,6 +210,7 @@ $Platform$ シェープ チャートは、形状の配列 (X/Y ポイントの�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           github-src="charts/data-chart/type-scatter-polygon-series"
            alt="$Platform$ 散布ポリゴン チャート" >
 </code-view>
 
@@ -211,6 +223,7 @@ $Platform$ スプライン チャート、またはスプライン グラフは�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="$Platform$ 複数ソースのスプライン チャート" >
 </code-view>
 
@@ -223,6 +236,7 @@ $Platform$ ステップ折れ線チャート、またはステップ折れ線グ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           github-src="charts/category-chart/step-line-multiple-sources"
            alt="$Platform$ 複数ソースのステップ折れ線チャート" >
 </code-view>
 

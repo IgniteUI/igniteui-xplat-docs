@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ グリッド レイアウトの読み込みと保存
 
-$ProductName$ データ テーブル / データ グリッドは、グリッド レイアウトの読み込みと保存をサポートしています。これは、グリッドの `LoadLayout` メソッドと `SaveLayout` メソッドを呼び出すことによって実行されます。
+$ProductName$ データ テーブル / データ グリッドは、グリッド レイアウトの読み込みと保存をサポートしています。これは、グリッドの `LoadLayout` メソッドと `SaveLayout` メソッドを呼び出すことによって実行されます。これらの機能は、エンドユーザーが列を移動、ソート、グループ化でき、グリッドの状態を保持し、レイアウトを復元して後で作業を再開できるようにする場合に役立ちます。
 
 ## $Platform$ グリッド レイアウトの読み込みと保存の例
 
@@ -24,12 +24,12 @@ $ProductName$ データ テーブル / データ グリッドは、グリッド 
 
 ## サポートされる機能
 
-グリッドは、次の機能の読み込み/保存をサポートしています:
+グリッドは、次の機能の保存をサポートしています:
 
-- 列の表示状態
-- 列のピン固定
-- 列の配置
-- 列のサイズ変更
-- グループ化設定
-- 並べ替え方向
-- 行フィルタリング
+- [列の表示状態](data-grid-column-chooser.md)
+- [列のピン固定](data-grid-column-pinning.md)
+- [列移動](data-grid-column-moving.md)
+- [列のサイズ変更](data-grid-column-resizing.md)
+- [列のグループ化](data-grid-column-group-by.md)
+- [列のソート](data-grid-column-sorting.md)
+- [行フィルタリング](data-grid-row-filter.md)

@@ -16,6 +16,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="$Platform$ ポイント チャートの例" >
 </code-view>
 
@@ -28,6 +29,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-single-source"
+           github-src="charts/category-chart/point-chart-single-source"
            alt="単一シリーズの $Platform$ ポイント チャート" >
 </code-view>
 
@@ -40,6 +42,7 @@ $Platform$ ポイント チャートを使用すると、複数のシリーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="複数シリーズの $Platform$ ポイント チャート" >
 </code-view>
 
@@ -52,6 +55,7 @@ $Platform$ ポイント チャートを設定したら、マーカーとその�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-styling"
+           github-src="charts/category-chart/point-chart-styling"
            alt="ポイント チャートのスタイル設定" >
 </code-view>
 
