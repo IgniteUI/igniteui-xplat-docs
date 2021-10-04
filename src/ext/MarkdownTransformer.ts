@@ -968,7 +968,6 @@ export class MarkdownTransformer {
             // console.log(">> iframe \n" +  iframe );
 
             url = iframe.replace('iframe-src=', '');
-            url = url.split('"').join('');
             url = url.replace('{environment:dvDemosBaseUrl}/', '');
             url = url.replace('{environment:demosBaseUrl}/', '');
             url = url.replace('-chart-', '-chart/');
@@ -983,6 +982,8 @@ export class MarkdownTransformer {
             url = url.replace('excel-library-', 'excel-library/');
             url = url.replace('zoomslider-', 'zoomslider/');
             url = url.replace('sparkline-', 'sparkline/');
+            url = url.replace('>', '');
+            url = url.split('"').join('');
             url = url.trim();
             // console.log(">> iframe \n" +  iframe + "\n>> url  " + url);
         }
@@ -1021,7 +1022,6 @@ export class MarkdownTransformer {
         }
         // errorsCount = 0;
         return errorsCount;
-
     }
 
     updateApiSection(fileContent: string): string {

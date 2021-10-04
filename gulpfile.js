@@ -626,7 +626,7 @@ function verifyCodeViewer(cb) {
     if (transformer === null || transformer === undefined) {
         if (cb) cb("transformer failed to load"); return;
     }
-    console.log('verifying code viewer in .md files');
+    console.log('verifying code viewer in .md files ...');
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -634,24 +634,23 @@ function verifyCodeViewer(cb) {
     // 'doc/en/**/types/*.md',
     // 'doc/en/**/features/chart-*.md',
     'doc/en/**/*.md',
+    'doc/jp/**/*.md',
     // 'doc/**/obsolete/**/_test.md',
    '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         // var filePath = file.dirname + "\\" + file.basename
         // console.log('verifying code viewer in: ' + filePath);
-        //var fileContent = file.contents.toString();
         errorsCount += transformer.verifyCodeViewer(file);
         filesCount++;
         fileCallback(null, file);
     }))
     .on("end", () => {
         if (errorsCount > 0) {
-            var msg = "Found " + errorsCount + " issues in above " + filesCount + " markdown files";
+            var msg = "Found " + errorsCount + " issues in " + filesCount + " markdown files";
             if (cb) cb(new Error(msg)); else console.log(msg);
-         //   cb();
         } else {
-            var msg = 'verified  code viewer in ' + filesCount + ' .md files';
+            var msg = 'verifying code viewer in .md files ... done: ' + filesCount;
             console.log(msg);
             if (cb) cb();
         }
