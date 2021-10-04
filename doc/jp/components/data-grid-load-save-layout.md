@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ グリッド レイアウトの読み込みと保存
 
-$ProductName$ データ テーブル / データ グリッドは、グリッド レイアウトの読み込みと保存をサポートしています。これは、グリッドの `LoadLayout` メソッドと `SaveLayout` メソッドを呼び出すことによって実行されます。These features are useful when an end user can move, sort, and group columns, and wants to preserve the state of the grid and be able to recover the layout and resume work at a later time.
+$ProductName$ データ テーブル / データ グリッドは、グリッド レイアウトの読み込みと保存をサポートしています。これは、グリッドの `LoadLayout` メソッドと `SaveLayout` メソッドを呼び出すことによって実行されます。これらの機能は、エンドユーザーが列を移動、ソート、グループ化でき、グリッドの状態を保持し、レイアウトを復元して後で作業を再開できるようにする場合に役立ちます。
 
 ## $Platform$ グリッド レイアウトの読み込みと保存の例
 

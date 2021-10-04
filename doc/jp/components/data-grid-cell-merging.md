@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ グリッド セルの結合
 
-$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not in edit mode, the value displays across the cells.
+$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。オプトインして、特定の列の隣接する兄弟レコードに同じ値が含まれている場合に検出できます。セルが編集モードではない間、値はセル全体に表示されます。
 
 ## $Platform$ グリッド セルの結合例
 
