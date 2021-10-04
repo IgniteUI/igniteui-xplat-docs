@@ -15,6 +15,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
+           github-src="charts/data-chart/composite-chart"
            alt="$Platform$ Composite Chart Example" >
 </code-view>
 

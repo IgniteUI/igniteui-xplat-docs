@@ -967,8 +967,10 @@ export class MarkdownTransformer {
         if (iframe !== "") {
             // console.log(">> iframe \n" +  iframe );
 
-            url = iframe.replace('iframe-src="{environment:dvDemosBaseUrl}/', '');
-            url = url.replace('"', '');
+            url = iframe.replace('iframe-src=', '');
+            url = url.split('"').join('');
+            url = url.replace('{environment:dvDemosBaseUrl}/', '');
+            url = url.replace('{environment:demosBaseUrl}/', '');
             url = url.replace('-chart-', '-chart/');
             url = url.replace('-gauge-', '-gauge/');
             url = url.replace('-graph-', '-graph/');

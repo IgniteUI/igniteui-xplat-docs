@@ -17,6 +17,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           github-src="charts/data-chart/type-scatter-polygon-series"
            alt="$Platform$ Scatter Polygon Chart" >
 </code-view>
 
@@ -31,6 +32,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
+           github-src="charts/data-chart/type-scatter-polyline-series"
            alt="$Platform$ Scatter Polyline Chart" >
 </code-view>
 

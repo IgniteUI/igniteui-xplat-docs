@@ -15,6 +15,7 @@ You can create this type of chart with the `XamDoughnutChart` control by binding
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
+           github-src="charts/doughnut-chart/legend"
            alt="$Platform$ Doughnut Legend" >
 </code-view>
 
@@ -66,6 +67,7 @@ The $Platform$ Donut Chart has the ability to select slices on click. Optionally
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
+           github-src="charts/doughnut-chart/selection"
            alt="$Platform$ Donut Slice Selection" >
 </code-view>
 
@@ -78,6 +80,7 @@ It is possible to have a multiple ring display in the $Platform$ Donut Chart, wi
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
+           github-src="charts/doughnut-chart/rings"
            alt="$Platform$ Doughnut Multiple Rings" >
 </code-view>
 

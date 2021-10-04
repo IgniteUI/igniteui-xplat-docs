@@ -17,6 +17,7 @@ This example demonstrates how to create Network Polar Chart using `PolarScatterS
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-polar-chart"
+           github-src="charts/data-chart/network-polar-chart"
            alt="$Platform$ Network Polar Chart" >
 </code-view>
 
@@ -29,6 +30,7 @@ This example shows how to create Network Scatter Chart using `ScatterSeries` (fo
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-scatter-chart"
+           github-src="charts/data-chart/network-scatter-chart"
            alt="$Platform$ Network Scatter Chart" >
 </code-view>
 

@@ -41,6 +41,7 @@ The $Platform$ Bar Chart, or Bar Graph is among the most common category chart t
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ Bar Chart Multiple Sources" >
 </code-view>
 
@@ -53,6 +54,7 @@ The $Platform$ Pie Chart, or Pie Graph, is a very common part-to-whole chart typ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           github-src="charts/pie-chart/overview"
            alt="$Platform$ Pie Chart Overview" >
 </code-view>
 
@@ -65,6 +67,7 @@ The $Platform$ Line Chart, or Line Graph is a type of category line graph shows 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           github-src="charts/category-chart/line-chart-multiple-sources"
            alt="$Platform$ Line Chart Multiple Sources" >
 </code-view>
 
@@ -77,6 +80,7 @@ The $Platform$ Donut Chart or Donut Graph, is a variant of a Pie Chart, proporti
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
+           github-src="charts/doughnut-chart/doughnut-chart-legend"
            alt="$Platform$ Doughnut Legend" >
 </code-view>
 
@@ -89,6 +93,7 @@ The $Platform$ Area Chart is rendered using a collection of points connected by 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
+           github-src="charts/category-chart/area-chart-multiple-sources"
            alt="$Platform$ Area Chart Multiple Sources" >
 </code-view>
 
@@ -114,6 +119,7 @@ The $Platform$ Bubble Chart, or Bubble Graph, is used to show data comprising of
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="$Platform$ Bubble Chart" >
 </code-view>
 
@@ -126,6 +132,7 @@ The $Platform$ Financial or Stock Chart, is a composite visualization that rende
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ Stock Chart Example" >
 </code-view>
 
@@ -138,6 +145,7 @@ The $Platform$ Column Chart, or Column Graph is among the most common category c
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           github-src="charts/category-chart/column-chart-multiple-sources"
            alt="$Platform$ Column Chart Multiple Sources" >
 </code-view>
 
@@ -150,6 +158,7 @@ The $Platform$ Composite Chart, also called a Combo Chart, is visualization that
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
+           github-src="charts/data-chart/composite-chart"
            alt="$Platform$ Composite Chart Example" >
 </code-view>
 
@@ -170,6 +179,7 @@ The $Platform$ Polar Area Chart or Polar Graph belongs to a group of polar chart
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
+           github-src="charts/data-chart/polar-line-chart"
            alt="$Platform$ Polar Line Chart" >
 </code-view>
 
@@ -186,6 +196,7 @@ The $Platform$ Scatter Chart, or Scatter Graph, is used to show the relationship
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
+           github-src="charts/data-chart/scatter-point-chart"
            alt="$Platform$ Scatter Marker Chart" >
 </code-view>
 
@@ -198,6 +209,7 @@ The $Platform$ Shape Charts is a group of chart that take array of shapes (array
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           github-src="charts/data-chart/type-scatter-polygon-series"
            alt="$Platform$ Scatter Polygon Chart" >
 </code-view>
 
@@ -210,6 +222,7 @@ The $Platform$ Spline Chart, or Spline Graph is a type of category line graph sh
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="$Platform$ Spline Chart Multiple Sources" >
 </code-view>
 
@@ -222,6 +235,7 @@ The $Platform$ Step Chart, or Step Graph, is a category charts that renders a co
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
+           github-src="charts/category-chart/step-line-multiple-sources"
            alt="$Platform$ Step Line Chart Multiple Sources" >
 </code-view>
 
