@@ -17,10 +17,9 @@ The following example shows all the different sparkline types available. The typ
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
            github-src="charts/sparkline/display-types"
-           alt="$Platform$ Sparkline Example"
-           >
+           alt="$Platform$ Sparkline Example" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -68,8 +67,9 @@ The $Platform$ Sparkline supports the following types of sparklines by setting t
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" github-src="charts/sparkline/display-types"
-           alt="$Platform$ Sparkline Example"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
+           github-src="charts/sparkline/display-types"
+           alt="$Platform$ Sparkline Example" >
 </code-view>
 
 <div class="divider--half"></div>
