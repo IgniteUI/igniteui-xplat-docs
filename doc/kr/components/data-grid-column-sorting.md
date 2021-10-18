@@ -12,8 +12,8 @@ $ProductName$ 데이터 표/데이터 그리드는 단일 열, 다중 열 및 3�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-sorting"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
            github-src="grids/data-grid/column-sorting">
 </code-view>
 

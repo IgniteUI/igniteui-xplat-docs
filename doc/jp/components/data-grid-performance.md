@@ -16,8 +16,8 @@ $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-performance"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-performance"
            alt="$Platform$ ライブ データの高パフォーマンスの例"
            github-src="grids/data-grid/performance">
 </code-view>

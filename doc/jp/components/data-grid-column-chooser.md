@@ -14,8 +14,8 @@ $ProductName$ Data Grid は、`DataGridToolbar` コンポーネントまたは�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-toolbar"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-toolbar"
            alt="$Platform$ Grid 列選択の例"
            github-src="grids/data-grid/column-chooser-toolbar">
 </code-view>
@@ -163,8 +163,8 @@ connectedCallback() {
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-chooser-picker"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-picker"
            github-src="grids/data-grid/column-chooser-picker">
 </code-view>
 

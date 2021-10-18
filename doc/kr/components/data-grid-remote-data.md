@@ -12,8 +12,8 @@ $ProductName$ 데이터 표/데이터 그리드는 하나의 코드 행으로 �
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-remote-data"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>
 

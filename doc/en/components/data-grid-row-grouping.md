@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky he
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-grouping"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-grouping"
            alt="$Platform$ Row Grouping Example"
            github-src="grids/data-grid/row-grouping">
 </code-view>

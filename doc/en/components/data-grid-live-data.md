@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid is able to handle thousands of updates 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-binding-live-data"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-live-data"
            alt="$Platform$ Binding Live Data Example"
            github-src="grids/data-grid/binding-live-data">
 </code-view>

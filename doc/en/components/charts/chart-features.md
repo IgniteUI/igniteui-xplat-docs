@@ -108,6 +108,7 @@ $Platform$ charts are optimized for high performance of rendering millions of da
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
+           github-src="charts/category-chart/high-volume"
            alt="$Platform$ Chart Performance Example" >
 </code-view>
 

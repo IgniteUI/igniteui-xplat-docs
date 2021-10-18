@@ -1,4 +1,12 @@
+---
+title: Infragistics NuGet Feed
+_description: Infragistics NuGet Feed for $Platform$ components.
+_keywords: $Platform$, NuGet, Feed, Infragistics
+mentionedTypes: []
+---
+
 # Infragistics NuGet Feed
+
 Infragistics provides a private NuGet feed for licensed users to consume and add licensed Ignite UI for Blazor NuGet packages to their applications via the NuGet Package Manager.
 
 This topic contains the following sections:
@@ -13,10 +21,10 @@ This topic contains the following sections:
 
 <img src="../images/nuget-package-manager-setting-menu-item.jpg" />
 
-2 - In the **Package Sources** section, add a new package source by clicking the **plus icon** in the top right corner of the dialog. 
+2 - In the **Package Sources** section, add a new package source by clicking the **plus icon** in the top right corner of the dialog.
    - Set the Name to **Infragistics**
    - Set the Source to **https://packages.infragistics.com/nuget/licensed**
-  
+
     Click the **Update** button, and then click **OK** to close the dialog.
 
 <img src="../images/nuget-package-manager-package-sources-ig-server.jpg" />
@@ -31,7 +39,7 @@ This topic contains the following sections:
 3 - Execute the following command
 
 ```
-nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password" 
+nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 
 > [!Note]

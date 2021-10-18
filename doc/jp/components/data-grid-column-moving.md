@@ -14,8 +14,8 @@ $ProductName$ Data Grid は列を移動する機能をサポートしている�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
            alt="$Platform$ グリッド列移動の例"
            github-src="grids/data-grid/column-moving">
 </code-view>

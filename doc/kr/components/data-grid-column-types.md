@@ -13,8 +13,8 @@ $ProductName$ 데이터 테이블/데이터 그리드는 데이터를 $Platform$
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-types"
            github-src="grids/data-grid/column-types">
 </code-view>
 

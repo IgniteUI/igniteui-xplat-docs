@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports a Template Column which provid
 
 
 <code-view style="height: 530px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/charts/sparkline-grid"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
            alt="$Platform$ Column Sparkline Example"
            github-src="charts/sparkline/grid">
 </code-view>

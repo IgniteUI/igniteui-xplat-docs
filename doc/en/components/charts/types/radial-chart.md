@@ -17,6 +17,7 @@ You can create this type of chart in `XamDataChart` control by binding your data
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart"
+           github-src="charts/data-chart/radial-area-chart"
            alt="$Platform$ Radial Area Chart" >
 </code-view>
 
@@ -31,6 +32,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
+           github-src="charts/data-chart/radial-column-chart"
            alt="$Platform$ Radial Column Chart" >
 </code-view>
 
@@ -45,6 +47,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
+           github-src="charts/data-chart/radial-line-chart"
            alt="$Platform$ Radial Line Chart" >
 </code-view>
 
@@ -59,6 +62,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
+           github-src="charts/data-chart/radial-pie-chart"
            alt="$Platform$ Radial Pie Chart" >
 </code-view>
 
@@ -73,6 +77,7 @@ This example demonstrates how to customize $Platform$ Radial Chart.
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
+           github-src="charts/data-chart/radial-area-chart-styling"
            alt="$Platform$ Radial Area Chart Styling" >
 </code-view>
 

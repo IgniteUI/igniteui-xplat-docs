@@ -1,21 +1,21 @@
 ---
 title: $Platform$ データ グリッド | セル結合 | 結合 | インフラジスティックス
-_description: Infragistics の $Platform$ データ グリッドのセル結合機能を使用して、重複する値を持つセルを結合します。 
+_description: Infragistics の $Platform$ データ グリッドのセル結合機能を使用して、重複する値を持つセルを結合します。
 _keywords: $Platform$ Table, Data Grid, cell merging, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セル結合, インフラジスティックス
 mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 _language: ja
 ---
 
-# $Platform$ グリッドの結合
+# $Platform$ グリッド セルの結合
 
-$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。
+$ProductName$ データ テーブル / データ グリッドはセルの結合をサポートします。オプトインして、特定の列の隣接する兄弟レコードに同じ値が含まれている場合に検出できます。セルが編集モードではない間、値はセル全体に表示されます。
 
 ## $Platform$ グリッド セルの結合例
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-merging"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
            alt="$Platform$ グリッド セルの結合例"
            github-src="grids/data-grid/cell-merging">
 </code-view>
@@ -29,6 +29,8 @@ $Platform$ データ グリッドでのセルの結合は、$Platform$ グリッ
 - `Never`: グリッドがセルを結合することはありません。これがデフォルトの動作です。
 - `Always`: グリッドは常にセルの結合を試みます。
 - `OnlyWhenSorted`: グリッドは、列がソートされたときにのみセルの結合を試みます。
+
+Note, regardless of the value of this property, cells can only be merged across sibling records.
 
 さらに、フォーマットが適用されているかどうかに応じて使用できる  `MergedCellEvaluationCriteria` プロパティがあります。このプロパティには、以下に示す 2 つのオプションがあります:
 

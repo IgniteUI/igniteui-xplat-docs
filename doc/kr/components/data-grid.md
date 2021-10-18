@@ -12,8 +12,8 @@ $ProductName$ 데이터 표/데이터 그리드는 표 형식의 $Platform$ 컴�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
            github-src="grids/data-grid/overview">
 </code-view>
 

@@ -16,6 +16,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="$Platform$ バブル チャートの例" >
 </code-view>
 
@@ -28,6 +29,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
+           github-src="charts/data-chart/scatter-bubble-chart-single-source"
            alt="単一シリーズの  $Platform$ バブル チャート" >
 </code-view>
 
@@ -40,6 +42,7 @@ $Platform$ バブル チャートでは、次の例に示すように、複数�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="複数シリーズの $Platform$ バブル チャート" >
 </code-view>
 
@@ -52,6 +55,7 @@ $Platform$ バブル チャートでは、`MarkerType` プロパティを使用�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
+           github-src="charts/data-chart/scatter-bubble-chart-styling"
            alt="$Platform$ バブル チャートのスタイル設定" >
 </code-view>
 

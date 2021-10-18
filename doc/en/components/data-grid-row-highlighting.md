@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid supports configuring the appearance of 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-highlighting"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
            alt="$Platform$ Grid Highlighting Example"
            github-src="grids/data-grid/row-highlighting">
 </code-view>

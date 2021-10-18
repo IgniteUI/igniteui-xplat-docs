@@ -19,8 +19,9 @@ $ProductName$ スパークラインは、軽量なチャート コントロー�
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           github-src="charts/sparkline/display-types"
            alt="$Platform$ スパークラインの例"
-           github-src="charts/sparkline/display-types">
+           >
 </code-view>
 
 <div class="divider--half"></div>
@@ -68,7 +69,9 @@ $Platform$ スパークライン コンポーネントは、それに応じて  
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           github-src="charts/sparkline/display-types"
+           alt="$Platform$ スパークラインの例"    >
 </code-view>
 
 <div class="divider--half"></div>
@@ -90,7 +93,8 @@ $Platform$ スパークライン コンポーネントを使用すると、マ�
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"
+           github-src="charts/sparkline/markers" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -111,7 +115,8 @@ $Platform$ スパークラインの通常の範囲機能は、データが視覚
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"
+           github-src="charts/sparkline/normal-range" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -128,7 +133,8 @@ $Platform$ スパークラインは、実際のスパークライン レイヤ�
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"
+           github-src="charts/sparkline/trendlines" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -141,7 +147,8 @@ $Platform$ スパークラインは、不明な値を検出し、指定された
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"
+           github-src="charts/sparkline/unknown-values"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -153,7 +160,8 @@ $Platform$ スパークラインは、データ グリッドのテンプレー�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
+           github-src="charts/sparkline/grid" >
 </code-view>
 
 ## その他のリソース

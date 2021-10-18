@@ -13,8 +13,8 @@ $ProductName$ 데이터 표/데이터 그리드는 단일 또는 다중 행 및 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
            github-src="grids/data-grid/cell-selection">
 </code-view>
 

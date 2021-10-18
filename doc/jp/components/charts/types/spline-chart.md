@@ -16,6 +16,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="$Platform$ 複数ソースのスプライン チャート" >
 </code-view>
 
@@ -30,6 +31,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
+           github-src="charts/category-chart/spline-single-source"
            alt="単一シリーズの $Platform$ スプライン チャート" >
 </code-view>
 
@@ -44,6 +46,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
+           github-src="charts/category-chart/spline-multiple-sources"
            alt="複数シリーズの $Platform$ スプライン チャート" >
 </code-view>
 
@@ -58,6 +61,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
+           github-src="charts/category-chart/spline-styling"
            alt="$Platform$ スプライン チャートのスタイル設定" >
 </code-view>
 
@@ -71,9 +75,12 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 以下の例に示すように、積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。
 
+`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineSeries` にバインドします:
+
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
+           github-src="charts/data-chart/stacked-spline-chart"
            alt="$Platform$ 積層型スプライン チャート" >
 </code-view>
 
@@ -88,6 +95,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
+           github-src="charts/data-chart/stacked-100-spline-chart"
            alt="$Platform$ 積層型 100 スプライン チャート" >
 </code-view>
 

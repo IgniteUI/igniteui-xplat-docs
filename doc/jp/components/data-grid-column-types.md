@@ -16,8 +16,8 @@ $ProductName$ Data Table / Data Grid は、データを $Platform$ データ グ
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-types"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-types"
            alt="$Platform$ 列タイプの例"
            github-src="grids/data-grid/column-types">
 </code-view>

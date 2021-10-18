@@ -8,6 +8,7 @@
     "toc2yml": "tsc && gulp generateTocYML --plat=Blazor --lang=en",
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApi": "tsc && gulp updateApiSection",
+    "verifyCodeViewer": "tsc && gulp verifyCodeViewer",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
     "generateRedirects": "tsc && gulp generateRedirects",
     "build": "tsc",

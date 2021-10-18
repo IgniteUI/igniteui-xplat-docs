@@ -1,4 +1,13 @@
+---
+title: Infragistics NuGet フィード
+_description: インフラジスティックスの $Platform$ コンポーネントの NuGet フィード。
+_keywords: $Platform$, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
+mentionedTypes: []
+_language: ja
+---
+
 # Infragistics NuGet フィード
+
 Infragistics は製品版を使用するユーザーにプライベート NuGet フィードを提供し、製品版の Ignite UI for Blazor NuGet パッケージを NuGet パッケージ マネージャーを介して追加します。
 
 このトピックは、以下のセクションで構成されます。
@@ -13,10 +22,10 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
 <img src="../images/nuget-package-manager-setting-menu-item.jpg" />
 
-2 - [**パッケージ ソース**] セクションで、ダイアログの右上にある **[+]** アイコンをクリックして新しいパッケージ ソースを追加します。 
+2 - [**パッケージ ソース**] セクションで、ダイアログの右上にある **[+]** アイコンをクリックして新しいパッケージ ソースを追加します。
    - 名前を **Infragistics** に設定します。
    - ソースを **https://packages.infragistics.com/nuget/licensed** に設定します。
-  
+
     [**更新**] ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
 
 <img src="../images/nuget-package-manager-package-sources-ig-server.jpg" />
@@ -31,7 +40,7 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 3 - 以下のコマンドを実行します。
 
 ```
-nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password" 
+nuget sources add -name "Infragistics" -source "https://packages.infragistics.com/nuget/licensed" -username "your login email" -password "your password"
 ```
 
 > [!Note]

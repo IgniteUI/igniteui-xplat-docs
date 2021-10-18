@@ -12,8 +12,8 @@ The $ProductName$ Data Grid supports the ability to move columns, giving you the
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-moving"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
            github-src="grids/data-grid/column-moving">
 </code-view>
 

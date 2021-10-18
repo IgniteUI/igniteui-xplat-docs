@@ -13,8 +13,8 @@ mentionedTypes: ['Grid']
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-row-pinning"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
            alt="$Platform$ Row Pinning Example"
            github-src="grids/data-grid/row-pinning">
 </code-view>

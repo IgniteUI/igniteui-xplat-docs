@@ -18,6 +18,7 @@ $ProductName$ ネットワーク チャートは、ネットワーク グラフ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-polar-chart"
+           github-src="charts/data-chart/network-polar-chart"
            alt="$Platform$ ネットワーク極座標チャート" >
 </code-view>
 
@@ -30,6 +31,7 @@ $ProductName$ ネットワーク チャートは、ネットワーク グラフ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-scatter-chart"
+           github-src="charts/data-chart/network-scatter-chart"
            alt="$Platform$ ネットワーク散布図" >
 </code-view>
 

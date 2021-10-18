@@ -1,5 +1,5 @@
 ---
-title: $Platform$ Data Grid Component | Real-Time $Platform$ Tables | Infragistics 
+title: $Platform$ Data Grid Component | Real-Time $Platform$ Tables | Infragistics
 _description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
@@ -14,8 +14,8 @@ This demo implements some of the features that are available in the Grid:
 Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-overview"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
            alt="$Platform$ Data Grid Example"
            github-src="grids/data-grid/overview">
 </code-view>
@@ -388,19 +388,19 @@ The following code demonstrates how to style specific columns using the provided
 ```
 
 ```html
-<igc-text-column 
+<igc-text-column
     background="SkyBlue"
     text-style="Italic Bold 16pt Times New Roman"
 ></igc-text-column>
 ```
 
 ```razor
-<TextColumn    
+<TextColumn
     Background="SkyBlue"
-    FontStyle="italic" 
-    FontWeight="bold" 
-    FontFamily="Times New Roman" 
-    FontSize="16"  
+    FontStyle="italic"
+    FontWeight="bold"
+    FontFamily="Times New Roman"
+    FontSize="16"
 />
 ```
 

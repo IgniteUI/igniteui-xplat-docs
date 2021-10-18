@@ -13,8 +13,8 @@ The $ProductName$ Data Table / Data Grid includes a column filtering that gives 
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
            alt="$Platform$ Grid Filtering Example"
            github-src="grids/data-grid/column-filtering">
 </code-view>

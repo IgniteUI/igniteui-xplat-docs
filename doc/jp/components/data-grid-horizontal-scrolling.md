@@ -13,8 +13,8 @@ $ProductName$ Data Table / Data Grid は、$Platform$ データ グリッドの�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-scrolling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
            alt="$Platform$ 水平方向のスクロールの例"
            github-src="grids/data-grid/column-scrolling">
 </code-view>

@@ -17,6 +17,7 @@ $ProductName$ ガント チャートは棒チャートの一種で、さまざ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-gantt-chart"
+           github-src="charts/data-chart/gantt-chart"
            alt="$Platform$ ガント チャートの例" >
 </code-view>
 

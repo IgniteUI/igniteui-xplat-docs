@@ -12,8 +12,8 @@ The $ProductName$ Data Table / Data Grid supports cell and row editing with batc
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-cell-editing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
            alt="$Platform$ Grid Editing Example"
            github-src="grids/data-grid/cell-editing">
 </code-view>

@@ -13,8 +13,8 @@ $ProductName$ 데이터 표/데이터 그리드에는 필터링되는 열의 데
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 

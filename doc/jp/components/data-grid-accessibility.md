@@ -22,8 +22,8 @@ $ProductName$ データ テーブル / データ グリッドは、グリッド�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-accessibility"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-accessibility"
            alt="$Platform$ Grid セルのアクセシビリティの例"
            github-src="grids/data-grid/accessibility">
 </code-view>

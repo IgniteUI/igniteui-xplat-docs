@@ -16,8 +16,8 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-picker"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
            alt="$Platform$ Grid 列ピン固定の例"
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
@@ -268,8 +268,8 @@ onButtonUnPin () {
 
 
 <code-view style="height: 600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grids/data-grid-column-pinning-toolbar"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
            github-src="grids/data-grid/column-pinning-toolbar">
 </code-view>
 
