@@ -101,9 +101,15 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Grids",
+    "name": "Grids & Lists",
     "header": true,
     "href": "grids.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "List",
+    "href": "list.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
