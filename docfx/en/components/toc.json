@@ -106,7 +106,7 @@
     "href": "grids.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "List",
     "href": "list.md",
     "status": "NEW"

@@ -30,38 +30,9 @@ The next step is to import the IgcListComponent in your typescript file where yo
 import { IgcListComponent } from 'igniteui-webcomponents/src/components/list/list';
 ```
 
-Now we are ready to create  our contacts component, currently (or at some point in the future) we have no items in it. List component has only a default slot and in addtion to the list items and headers, we can also add our custom content. In our case we'll add a template for empty list of contacts.
-
-```html
-<igc-list id="list">
-    <div class="empty">
-        No contacts! :(
-    </div>
-</igc-list>
-```
-
-And our style for the empty template:
-
-```css
-.empty {
-    margin: 20px auto;
-    color: rgba(0, 153, 255, 1);
-    font-size: 25px;
-    font-weight: 600;
-    text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
-}
-```
-
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-empty-content"
-           alt="$Platform$ List Example"
-           github-src="layouts/grids/list-empty-content">
-</code-view>
-
 ### Add List Items
 
-It's nice having a template for when the list is empty, but now let's add some items! We can add the following code to get a simple list of items:
+After the list component is imported we are ready to start using it and now let's add some items! We can add the following code to get a simple list of items:
 
 ```html
     <igc-list>
@@ -111,7 +82,7 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 
 Both slots [`title`]({}) and [`subtitle`]({}) gives our list items some default look.
 
-After all that our Angular list should now look like that:
+After all that our list component should now look like that:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -129,7 +100,7 @@ import { IgcAvatarComponent } from 'igniteui-webcomponents/src/components/avatar
 import { IgcButtonComponent } from 'igniteui-webcomponents/src/components/button/button';
 ```
 
-Cool, now let's update the component for our contacts list to show the avatar and the buttons. Again we can do that by using some of the list slots.
+Cool, now let's update the component for our contacts list to show the avatar and the buttons. Again we can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -178,12 +149,12 @@ Cool, now let's update the component for our contacts list to show the avatar an
     </igc-list>
 ```
 
-`start` -  is meant to be used if we need to add some kind of media before all othet content of our list items. The target element in our case igc-avatar will be also provided with a default position and spacing.
+The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element in our case igc-avatar will be also provided with a default position and spacing.
 
-`end` -  is meant to be used for list items that have some kind of action or metadata, for example, switch, radio-button, checkbox, etc. In our case the action is will be represented by an igc-button. Again, the target element will be with default position and spacing.
+The `end` slot is meant to be used for list items that have some kind of action or metadata, for example, switch, radio-button, checkbox, etc. In our case the action is will be represented by an igc-button. Again, the target element will be with default position and spacing.
 
 
-Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will update our own size property that is bound to the size property of the list.
+Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
 
 ```ts
 import IgcRadioGroupComponent from 'igniteui-webcomponents/src/components/radio-group/radio-group';
@@ -216,9 +187,29 @@ And here's the result of all that work:
            github-src="layouts/grids/list-overview">
 </code-view>
 
+## Styling the list component
+
+Let's see how we can change the background color and header size of our list.
+
+```css
+:root {
+    --igc-surface-500: 204, 100%, 50%;
+    --igc-secondary-500: 230,48%,47%;
+    --igc-overline-font-size: 1rem;
+    --igc-overline-font-weight: 700;
+}
+```
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
+           alt="$Platform$ List Example"
+           github-src="layouts/grids/list-styling">
+</code-view>
+
 ## API References
 
-In this article we covered a lot of ground with the list web component. We created a list of contact items. Used some additional Ignite UI for Web Components inside our list items, like avatars and buttons.
+In this article we covered a lot of ground with the list web component. We created a list of contact items and used some additional Ignite UI for Web Components inside our list items, like avatars and buttons.
 
 * [IgcListComponent]()
 * [IgcListHeaderComponent]()
