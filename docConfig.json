@@ -115,7 +115,8 @@
             { "name": "{PackageVerRenamedGrid}",    "value": "1.1.2"},
             { "name": "{PackageVerChangedFields}",  "value": "1.1.3"},
             { "name": "{PackageVerLatest}",         "value": "1.1.3"},
-            { "name": "{PackageVerChangedCharts}",  "value": "1.3.0"}
+            { "name": "{PackageVerChangedCharts}",  "value": "1.3.0"},
+            { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"}
 
         ],
         "samplesBrowsers" : {

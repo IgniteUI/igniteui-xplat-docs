@@ -1265,5 +1265,15 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "name": "Data Entry & Display",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Form",
+    "href": "form.md",
+    "status": "NEW"
   }
 ]
