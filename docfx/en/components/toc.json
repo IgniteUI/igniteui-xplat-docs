@@ -38,6 +38,12 @@
   },
   {
     "exclude": ["Angular", "Blazor"],
+    "name": "Checkbox",
+    "href": "checkbox.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
     "status": "",
