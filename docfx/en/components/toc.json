@@ -37,6 +37,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Radio & Radio Group",
+    "href": "radio.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "dock-manager.md",
