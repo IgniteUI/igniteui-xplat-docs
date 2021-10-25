@@ -1265,5 +1265,16 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Data Entry & Display",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Button",
+    "href": "button.md",
+    "status": "NEW"
   }
 ]
