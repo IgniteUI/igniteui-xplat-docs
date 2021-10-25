@@ -30,6 +30,6 @@ $ProductName$ データ テーブル / データ グリッドは、グリッド 
 - [列のピン固定](data-grid-column-pinning.md)
 - [列移動](data-grid-column-moving.md)
 - [列のサイズ変更](data-grid-column-resizing.md)
-- [列のグループ化](data-grid-column-group-by.md)
+- [行グループ](data-grid-row-grouping.md)
 - [列のソート](data-grid-column-sorting.md)
-- [行フィルタリング](data-grid-row-filter.md)
+- [列フィルタリング](data-grid-column-filtering.md)
