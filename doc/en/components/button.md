@@ -6,9 +6,9 @@ The Ignite UI for Web Components Button provides different variants and styles, 
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/button-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/data/button-overview"
            alt="$Platform$ Button Example"
-           github-src="editors/button-overview">
+           github-src="data/button-overview">
 </code-view>
 
 ## Usage
@@ -49,7 +49,7 @@ Use `flat` variant to add a simple flat button in your component template. Note 
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/editors/button-flat">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-flat">
 </iframe></div>
 
 ### Outlined Button
@@ -61,7 +61,7 @@ All you have to do to create a `outlined` button is to change button variant pro
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/editors/button-outlined">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-outlined">
 </iframe></div>
 
 ### Contained Button
@@ -73,7 +73,7 @@ Analogically, we can switch to `contained` variant:
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/editors/button-contained">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-contained">
 </iframe></div>
 
 ### Floating Action Button
@@ -85,7 +85,7 @@ We can create a floating action button just like what we do for the previous but
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/editors/button-fab">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-fab">
 </iframe></div>
 
 ## Button Sizing
@@ -124,9 +124,9 @@ And here's the result of all that work:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/button-size"
+           iframe-src="{environment:dvDemosBaseUrl}/data/button-size"
            alt="$Platform$ List Example"
-           github-src="/editors/button-size">
+           github-src="/data/button-size">
 </code-view>
 
 ## Styling the button component
@@ -143,9 +143,9 @@ Here is how we can change the background color to enable and disable buttons.
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/button-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/data/button-styling"
            alt="$Platform$ List Example"
-           github-src="/editors/button-styling">
+           github-src="/data/button-styling">
 </code-view>
 
 ## API Reference
