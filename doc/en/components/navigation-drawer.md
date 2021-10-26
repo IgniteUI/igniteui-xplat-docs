@@ -215,7 +215,8 @@ Additional Web Components that were used:
 
 * [IgcIconComponent]()
 * [IgcButtonComponent]()
-
+* [IgcRadioComponent]()
+* [IgcRadioGroupComponent]()
 
 ## Additional Resources
 
