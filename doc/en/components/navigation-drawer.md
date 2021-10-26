@@ -50,12 +50,11 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Example"
+           alt="$Platform$ Navigation Drawer Items Example"
            github-src="menus/nav-drawer-add-drawer-items">
 </code-view>
 
 While any content can be provided in the drawer, the `igc-nav-drawer-item` is available to apply out-of-the-box styling to the items.
-
 
 To enhance our component a bit, we can use it in conjunction with the `IgcNavbarComponent`. This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
 
@@ -130,14 +129,10 @@ If all goes well, your component should now look like this:
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-navbar-navigation-drawer-positions"
-           alt="$Platform$ Navigation Drawer Example"
-           github-src="menus/nav-drawer-navbar-navigation-drawer-positions">
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
+           alt="$Platform$ Navigation Drawer Navbar Example"
+           github-src="menus/nav-drawer-add-positions-navbar">
 </code-view>
-
-
-
-
 
 ## Mini Variant
 
@@ -176,10 +171,9 @@ And here's the result:
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Example"
+           alt="$Platform$ Navigation Drawer Mini Example"
            github-src="menus/nav-drawer-add-mini">
 </code-view>
-
 
 ## Styling the Navigation Drawer
 
