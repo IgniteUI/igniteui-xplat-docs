@@ -12,7 +12,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Angular -->
 
 > [!NOTE]
-> Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) を参照してください。
+> Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
 
@@ -56,7 +56,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### チャートとマップ
 
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
 * シリーズとマーカーの再設計されたカラー パレット:
 
