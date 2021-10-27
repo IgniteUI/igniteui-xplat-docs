@@ -23,34 +23,27 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
-* Changed `XAxisLabelLocation` property's type `YAxisLabelLocation` to `AxisLabelLocation` in `CategoryChart` and `FinancialChart`
-* Changed `XAxisLabelLocation` property's type `YAxisLabelLocation` to `AxisLabelLocation`
+* Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
+* Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
-
-* Added support for representing geographic series of `GeographicMap` in legend
-
-* Added crosshair lines and crosshair annotations in all charts by default
-
-* Added final value annotation in financial chart by default
-
+* Added support for representing geographic series of `GeographicMap` in `Legend`
+* Added crosshair lines by default in `FinancialChart` and `CategoryChart`
+* Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
+* Added final value annotation by default in `FinancialChart`
 * Added new properties:
-   - CrosshairsLine* - allows customizing crosshairs lines
-   - CrosshairsAnnotation* - allows customizing crosshairs annotations
-   - FinalValueAnnotations* - allows customizing final value annotations
-   - `AreaFillOpacity` - allows changing opacity of fill shapes (e.g. Area chart)
-   - `MarkerThickness` - allows changing thickness of markers
-   - `MarkerAutomaticBehavior` - allows which marker type is assigned to multiple series in the same chart
-   - chart's `LegendItemBadgeShape` - allows to set shape for all series represented in a legend
-   - chart's `LegendItemBadgeMode` - allows to use simplified or complex for all legend item shapes
-   - series' `LegendItemBadgeShape` - allows to set shape for a series represented in a legend
-   - series' `LegendItemBadgeMode` - allows to use simplified or complex of a legend item shape
-
+   - CrosshairsLine* that allow customizing crosshairs lines
+   - CrosshairsAnnotation* that allow customizing crosshairs annotations
+   - FinalValueAnnotations* that allow customizing final value annotations
+   - `AreaFillOpacity` that allow changing opacity of fill shapes (e.g. Area chart)
+   - `MarkerThickness` that allows changing thickness of markers
+   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
+   - chart's `LegendItemBadgeShape` for setting shape of all series represented in a legend
+   - chart's `LegendItemBadgeMode` for setting simplified or complex shapes of all legend item badges
+   - series' `LegendItemBadgeShape` for setting shape for a series represented in a legend
+   - series' `LegendItemBadgeMode` for setting simplified or complex shape of one legend item badge
 * Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
-
 * Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
-
 * Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
-
 * Changed color palette of series and markers displayed in all charts
 
 Old brushes/outlines | New outline/brushes
@@ -72,8 +65,9 @@ Old brushes/outlines | New outline/brushes
 
 for example:
 
-<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
+|
 ------------- | -------------
+<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
 <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
 
 <div class="divider--half"></div>
@@ -101,18 +95,8 @@ for example:
     - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
     - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position eg. directly over or nearest item
     - Note, in previous releases the highlighting was limited to fade on hover.
-* Added Highlighting for the following series:
-    - Stacked
-    - Scatter
-    - Polar
-    - Radial
-    - Shape
-* Added Annotation layers to the following series:
-    - Stacked
-    - Scatter
-    - Polar
-    - Radial
-    - Shape
+* Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
+* Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
 * Added support for overriding the data source of individual stack fragments within a stacked series
 * Added custom style events to Stacked, Scatter, Range, Polar, Radial, and Shape series
 * Added support to automatically sync the vertical zoom to the series content
@@ -120,12 +104,8 @@ for example:
 
 ### Chart Legend
 
-* Added Horizontal Orientation for ItemLegend
-    - The following chart types can use ItemLegend in horizontal orientation:
-        - Bubble
-        - Donut
-        - Pie
-* `LegendHighlightingMode` - Enables series highlighting when hovering over legend items
+* Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
+* Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
 ### Geographic Map
 
@@ -144,22 +124,15 @@ for example:
 ### Data Grid
 
 * Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
-
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-
 * Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right)
-
 * Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. eg. Options are (moves to the cell below, above, right, left)
-
 * Added `SelectAllRows` - method.
-
 * Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
     - Shift and click to select multiple rows.
     - Shift and press the up/down arrow keys to select multiple rows.
-
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
-
 * Added Column Summaries to Column Options Dialog.
 
 ### Date Picker
