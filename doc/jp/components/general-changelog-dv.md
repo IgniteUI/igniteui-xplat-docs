@@ -24,34 +24,27 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* `CategoryChart` と `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `YAxisLabelLocation` を `AxisLabelLocation` に変更しました。
-* `XAxisLabelLocation` プロパティのタイプ `YAxisLabelLocation` を `AxisLabelLocation` に変更しました。
+* `CategoryChart` と `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
-
-* 凡例で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
-
-* デフォルトですべてのチャートに十字線と十字線注釈を追加しました。
-
-* デフォルトでファイナンシャル チャートに最終値の注釈を追加しました。
-
+* `Legend` で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
+* `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
+* `FinancialChart`と `CategoryChart` にデフォルトで十字線を追加しました。
+* デフォルトで `FinancialChart` に最終値の注釈を追加しました。
 * 新しいプロパティを追加しました:
-   - CrosshairsLine* - 十字線をカスタマイズできます。
-   - CrosshairsAnnotation* - 十字線の注釈をカスタマイズできます。
-   - FinalValueAnnotations* - 最終値の注釈をカスタマイズできます。
-   - `AreaFillOpacity` - 塗りつぶしの図形の不透明度を変更できます (エリア チャートなど)。
-   - `MarkerThickness` - マーカーの厚さを変更できます。
-   - `MarkerAutomaticBehavior` - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができます。
-   - チャートの `LegendItemBadgeShape` - 凡例で表されるすべてのシリーズの図形を設定できます。
-   - チャートの `LegendItemBadgeMode` - すべての凡例項目の図形に簡素または複雑なものを使用できます。
-   - シリーズの系列の `LegendItemBadgeShape` - 凡例で表されるすべてのシリーズの図形を設定できます。
-   - シリーズの系列の `LegendItemBadgeMode` - すべての凡例項目の図形に簡素または複雑なものを使用できます。
-
+   - 十字線のカスタマイズを可能にする CrosshairsLine*
+   - 十字線の注釈のカスタマイズを可能にする CrosshairsAnnotation*
+   - 最終値の注釈のカスタマイズを可能にする FinalValueAnnotations*
+   - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
+   - マーカーの厚さの変更をかのうにする `MarkerThickness`
+   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
+   - 凡例で表されるすべてのシリーズの図形を設定するためのチャートの `LegendItemBadgeShape`
+   - すべての凡例項目バッジの簡略化または複雑な図形を設定するためのチャートの `LegendItemBadgeMode`
+   - 凡例で表されるシリーズの図形を設定するためのシリーズ `LegendItemBadgeShape`
+   - 1 つの凡例項目バッジの簡略化または複雑な図形を設定するためのシリーズの `LegendItemBadgeMode`
 * カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
-
 * 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
-
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
-
 * すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました。
 
 古いのブラシ/アウトライン | 新のアウトライン/ブラシ
@@ -73,8 +66,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 例:
 
-<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
+|
 ------------- | -------------
+<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
 <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
 
 <div class="divider--half"></div>
@@ -102,18 +96,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
     - チャート。`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
     - チャート。`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
     - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
-* 次のシリーズの強調表示を追加しました:
-    - 積層型
-    - 散布図
-    - 極座標
-    - ラジアル
-    - 図形
-* 次のシリーズに注釈レイヤーを追加しました:
-    - 積層型
-    - 散布図
-    - 極座標
-    - ラジアル
-    - 図形
+* 積層型、散布図、極座標、ラジアル、図形シリーズに強調表示を追加しました。
+* 積層型、散布図、極座標、ラジアル、図形注釈レイヤーを追加しました。
 * 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
 * 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
 * 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
@@ -121,12 +105,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### チャート凡例
 
-* ItemLegend に水平方向を追加しました。
-   - 次のチャート タイプでは、ItemLegend を水平方向で使用できます:
-        - バブル
-        - ドーナツ
-        - 円
-* `LegendHighlightingMode` - 凡例項目にカーソルを合わせると、シリーズの強調表示が有効になります。
+*バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
+* `LegendHighlightingMode` プロパティを追加 - 凡例項目にカーソルを合わせたときにシリーズの強調表示を有効にします。
 
 ### 地理マップ
 
@@ -145,22 +125,15 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ### データ グリッド
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
-
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
-
 * `EnterKeyBehaviors` プロパティ (別名 Excel スタイルのナビゲーション (Enter 動作)) を追加して、Enter キーの動作を制御します。例えば、オプションは (なし、編集、上、下、左、右に移動) です。
-
 * `EnterKeyBehaviorAfterEdit` プロパティを追加しました - 編集モードでは、このプロパティは Enter キーが押されたときを制御します。例えば、オプションは (下、上、右、左のセルに移動) です。
-
 * `SelectAllRows` メソッドを追加しました。
-
 * 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
     - Shift キーを押しながらクリックして、複数の行を選択します。
     - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
-
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
-
 * 列オプション ダイアログに列集計を追加しました。
 
 ### 日付ピッカー
