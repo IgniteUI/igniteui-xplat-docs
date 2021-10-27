@@ -24,19 +24,19 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* `CategoryChart` と `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `FinancialChart` と `CategoryChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
 * `Legend` で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
 * `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
-* `FinancialChart`と `CategoryChart` にデフォルトで十字線を追加しました。
+* `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 * デフォルトで `FinancialChart` に最終値の注釈を追加しました。
 * 新しいプロパティを追加しました:
    - 十字線のカスタマイズを可能にする CrosshairsLine*
    - 十字線の注釈のカスタマイズを可能にする CrosshairsAnnotation*
    - 最終値の注釈のカスタマイズを可能にする FinalValueAnnotations*
    - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
-   - マーカーの厚さの変更をかのうにする `MarkerThickness`
+   - マーカーの厚さの変更を可能にする `MarkerThickness`
    - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
    - 凡例で表されるすべてのシリーズの図形を設定するためのチャートの `LegendItemBadgeShape`
    - すべての凡例項目バッジの簡略化または複雑な図形を設定するためのチャートの `LegendItemBadgeMode`
