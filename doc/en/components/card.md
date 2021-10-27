@@ -9,9 +9,11 @@ _keywords: Ignite UI for Web Components, UI controls, Web widgets, web widgets, 
 
 ## Card Example
 
-<code-view style="height: 500px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/layouts/card-sample-0" alt="Card Example">
+<code-view style="height: 550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
+           alt="$Platform$ Card Example"
+           github-src="layouts/card/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -22,27 +24,21 @@ Cards allow you to easily display content composed of different types of objects
 
 ### Getting Started
 
-Import the `IgcCardComponent` inside our **app.module.ts** file:
+Import `igniteui-webcomponents` inside our **index.ts** file:
 
 ```typescript
-// app.module.ts
+// index.ts
 ...
-import { IgcCardComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents';
 
-@NgModule({
-    ...
-    imports: [..., IgxCardModule],
-    ...
-})
-export class AppModule {}
 ```
 
-Then to represent the demo card template we can add the following code.
+Then to represent the demo card template we can add the following code to our **index.html** file.
 
 ```html
 <igc-card>
-    <igc-card-media height="196px">
-        <img [src]="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50">
+    <igc-card-media>
+        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50">
     </igc-card-media>
 
     <igc-card-header>
@@ -55,32 +51,34 @@ Then to represent the demo card template we can add the following code.
     </igc-card-content>
 
     <igc-card-actions>
-        <igc-button>
+        <igc-button slot="start">
             <igc-ripple></igc-ripple>
-            Read More
+            Read more
         </igc-button>
-        <igc-icon-button name="favorite" igxRippleCentered="true">
-            <igc-ripple></igc-ripple>
-        </igc-icon-button>
-        <igc-icon-button name="share" igxRippleCentered="true">
-            <igc-ripple></igc-ripple>
-        </igc-icon-button>
+        <div slot="end">
+            <igc-icon-button name="twitter">
+                <igc-ripple></igc-ripple>
+            </igc-icon-button>
+            <igc-icon-button name="facebook">
+                <igc-ripple></igc-ripple>
+            </igc-icon-button>
+        </div>
     </igc-card-actions>
 </igc-card>
 ```
 
 You will notice a few things above. First when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the `igc-card-header` tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
-Any image or video we want to show in the card, we wrap inside the `igc-card-media` tags. The `igc-card-media` allows us to size the content placed inside via the `width` and `height` attributes. In the example above we provided just `height`, which would leave the width to `auto`, thus allowing the image to stretch across the entire card surface, while maintaining the set height.
+Any image or video we want to show in the card, we wrap inside the `igc-card-media` tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
 You can place anything inside the `igc-card-content` tags. Usually text goes there.
 
-Finally, the `igc-card-actions` is where you'd place any actionable items, like buttons. If you use the `IgcButtonComponent`, it will automatically be placed correctly according to the material design spec inside the area.
+Finally, the `igc-card-actions` is where you'd place any actionable items, like buttons.
 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
 
-Taking the card above as an example, we can edit the contents of the `igc-card-header` and add `slot="thumbnail"` to the icon:
+Taking the card above as an example, we can edit the contents of the `igc-card-header` and add an icon with `slot="thumbnail"`:
 
 ```html
 <igc-card-header>
@@ -93,139 +91,118 @@ Taking the card above as an example, we can edit the contents of the `igc-card-h
 
 The above example will show the icon alongside the title and subtitle in the card header.
 
-We also automatically detect the presence of `igc-avatar` or `igc-card-media` placed in the card header. They will appear as if they were card thumbnails. So you can do:
-
-```html
-<igc-card-header>
-    <igc-avatar>
-        <igc-icon name="place"></igc-icon>
-    </igc-avatar>
-
-    <h3 slot="title">Title</h3>
-    <h5 slot="subtitle">Subtitle</h5>
-</igc-card-header>
-```
-
-or, even this:
-
-```html
-<igc-card-header>
-    <igc-card-media width="40px" height="40px">
-        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=80&q=50">
-    </igc-card-media>
-
-    <h3 slot="title">Title</h3>
-    <h5 slot="subtitle">Subtitle</h5>
-</igc-card-header>
-```
-
 ### Outlined cards
-The card has an `outlined` attribute which if set removes any shadows from the card, replacing them with a thin border to separate the card from the background.
+The card has an `outlined` attribute which, if set, removes any shadows from the card, replacing them with a thin border to separate the card from the background.
 
 ### Horizontal Layout
 
-By default all sections of the card (header, content, media, actions) are layed out vertically. This is nice when we have a lot of vertical space. Say we wanted to lay out all the sections in the card horizontally. We can use the `horizontal` attribute of the card to set its layout.
+By default all sections of the card (header, content, media, actions) are layed out vertically. This is nice when we have a lot of vertical space. Say we wanted to lay out the sections in the card horizontally. We can achieve such a layout with some simple CSS.
 
-Here's an example of an outlined horizonal card:
+Here's an example of an outlined horizontal card:
 
 ```html
-<igc-card outlined [horizontal]="horizontal">
-    <div class="h-sample-column">
-        <igc-card-header>
-            <h5 slot="title">{{card.title}}</h5>
-            <h5 slot="subtitle">{{card.subtitle}}</h5>
-            <igc-card-media width="64px" height="64px">
-                <img [src]="card.imageUrl">
-            </igc-card-media>
-        </igc-card-header>
-
-        <igc-card-content>
-            <p>{{card.content}}</p>
-        </igc-card-content>
+<igc-card outlined>
+    <div class=".card-horizontal">
+        <div>
+            <igc-card-header>
+                <img src="ROZES-Under-the-Grave.jpg" slot="thumbnail">
+                <h5 slot="title">Rozes</h5>
+                <h5 slot="subtitle">Under the Grave (2016)</h5>
+            </igc-card-header>
+            <igc-card-content>
+                <p>As I have always said: I write what’s real and what’s true,
+                    even if it means throwing myself under the bus.</p>
+            </igc-card-content>
+        </div>
+        <div class="divider"></div>
+        <igc-card-actions>
+            <igc-icon-button name="previous"></igc-icon-button>
+            <igc-icon-button name="play"></igc-icon-button>
+            <igc-icon-button name="next"></igc-icon-button>
+        </igc-card-actions>
     </div>
-
-    <igc-card-actions layout="justify">
-        <igc-icon-button .name="${item.icon}">
-            <igc-ripple></igc-ripple>
-        </igc-icon-button>
-    </igc-card-actions>
 </igc-card>
 ```
 
-We are using the `.h-sample-column` class to bundle the `igc-card-header` and `igc-card-content` together, keeping them aligned vertically, while other sections in the card align horizontally. 
+We are using an additional `div` element to bundle the `igc-card-header` and `igc-card-content` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally. 
 
-The styles that `.h-sample-column` class applies are:
+The styles that `.card-horizontal` class applies are:
 
-```scss
-.h-sample-column {
+```css
+.card-horizontal {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
     flex: 1 1 0%;
+}
 
-    igc-card-header {
-        padding-bottom: 0;
-    }
+.card-horizontal img {
+    width: 64px;
+    height: 64px;
+}
+
+.card-horizontal igc-card-actions {
+    justify-content: center;
 }
 ```
 
-Notice how the buttons in the `igc-card-actions` have now switched to a `vertical` layout. The `igc-card-actions` has an `inverse` layout relationship with its parent. So whenever the card's `horizontal` attribute is set to `true` the actions `vertical` property will be set to `true` and vice versa.
-
-You can set the `vertical` attribute of he actions area explicitly, thus overriding this default behavior. 
-
-```html
-<igc-card-actions layout="justify" [vertical]="false">
-    <button *ngFor="let icon of card.icons;" igxButton="icon" igxRipple igxRippleCentered="true">
-        <igc-icon>{{icon}}</igc-icon>
-    </button>
-</igc-card-actions>
-```
 If everything went well, our card should look like this:
 
-
-<code-view style="height: 220px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/layouts/card-sample-2" >
+<code-view style="height: 220px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
+           alt="$Platform$ Card Example"
+           github-src="layouts/card/horizontal">
 </code-view>
-
 
 ### Alternative layouts
 
 You can get even more creative with the layout of the `igc-card`.
 
-Below is an example showing how you can create a semi-horizontal card, where we have every section of the card layed out vertically, while the `igc-card-media` appears alongside the vertical sections of the card.
+Below is an example showing how you can create a semi-horizontal card, where we have every section of the card layed out vertically, while the `igc-card-media` appears alongside the vertical sections.
 
 ```html
-<igc-card [horizontal]="horizontal">
-    <div igxLayout igxLayoutDir="column" igxFlex igxFlexGrow="1">
-        <igc-card-header>
-            <igx-avatar [src]="card.avatarUrl"></igx-avatar>
-            <h5 slot="title">{{card.title}}</h5>
-            <h5 slot="subtitle">{{card.subtitle}}</h5>
-        </igc-card-header>
-
-        <igc-card-content>
-            <p>{{card.content}}</p>
-        </igc-card-content>
-
-        <igc-card-actions [vertical]="false">
-            <igc-button *ngFor="let button of card.buttons;" igxButton="flat" igxRipple>
-                <igc-ripple></igc-ripple>
-                {{button}}
-            </igc-button>
-        </igc-card-actions>
+<igc-card>
+    <div class="semi-horizontal">
+        <div>
+            <igc-card-header>
+                <igc-avatar src="mellow_d.jpg" slot="thumbnail">MD</igc-avatar>
+                <h5 slot="title">HERE</h5>
+                <h5 slot="subtitle">by Mellow D</h5>
+            </igc-card-header>
+            <igc-card-content>
+                <p>Far far away, behind the word mountains,
+                    far from the countries Vokalia and Consonantia,
+                    there live the blind texts.</p>
+            </igc-card-content>
+            <igc-card-actions>
+                <igc-button>play album</igc-button>
+            </igc-card-actions>
+        </div>
+        <igc-card-media class="card-media">
+            <img src="here_media.jpg">
+        </igc-card-media>
     </div>
-
-    <igc-card-media width="96px">
-        <img [src]="card.imageUrl">
-    </igc-card-media>
 </igc-card>
 ```
 
+```css
+.semi-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
 
-<code-view style="height: 270px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/layouts/card-sample-3" >
+.card-media {
+    width: 96px;
+    min-width: 96px;
+}
+```
+
+<code-view style="height: 270px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
+           alt="$Platform$ Semi Horizontal Card Example"
+           github-src="layouts/card/semi-horizontal">
 </code-view>
 
 
@@ -233,101 +210,63 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 
 The card actions area allows additional configuration to what we have already mentioned.
 
-You can reverse order of the flat buttons and the button icons using the `reverse` attribute.
+You can reverse the order of the flat button and the icon buttons by switching their slot names.
 
 ```html
-<igc-card-actions [reverse]="true">
-    <button igxButton>Button</button>
-
-    <button igxButton="icon">
-        <igc-icon>star</igc-icon>
-    </button>
+<igc-card-actions>
+    <igc-button slot="end">
+        <igc-ripple></igc-ripple>
+        Read more
+    </igc-button>
+    <div slot="start">
+        <igc-icon-button name="twitter">
+            <igc-ripple></igc-ripple>
+        </igc-icon-button>
+        <igc-icon-button name="facebook">
+            <igc-ripple></igc-ripple>
+        </igc-icon-button>
+    </div>
 </igc-card-actions>
 ```
 
-Now the icon buttons will appear before the flat-style text buttons.
+Now the icon buttons will appear before the flat-style text button.
 
-You can also justify the buttons so that they are layed out across the entire axis, not at the opposite ends. To do that, use the `layout` attribute an set its value to `justify`, like below:
-
-```html
-<igc-card-actions layout="justify">
-    <button igxButton>Button</button>
-
-    <button igxButton="icon">
-        <igc-icon>star</igc-icon>
-    </button>
-</igc-card-actions>
-```
+You can also add more content in-between by simply omitting the slot property and let the elements go to the default slot. 
 
 ## Styling
-To get started with styling the card, we need to import the `index` file, where all the theme functions and component mixins live:
 
-```scss
-@import '~igniteui-webcomponents/lib/core/styles/themes/index';
-``` 
-Following the simplest approach, we create a new theme that extends the [`igc-card-theme`]({environment:sassApiUrl}/index.html#function-igc-card-theme) and accepts some parameters that style the card's items:
+Since the card is a container that wraps different elements, styling it is done by styling its building blocks - the header, content, media and actions sub-components. In addition, the `header` component (`igc-card-header`) exposes three CSS parts - `header`, `title` and `subtitle` that allow you to style the wrapping element as well as the two title elements.
 
-```scss
-$colorful-card: igc-card-theme(
-    $background: #011627,
-    $header-text-color: #FEFEFE,
-    $subtitle-text-color: #ECAA53,
-    $content-text-color: #FEFEFE
-);
-```
-As seen, the `igc-card-theme` exposes some useful parameters for basic styling of its items. 
+```css
+igc-card {
+    background-color: #011627;
+}
 
-### Including themes
+igc-card-header,
+igc-card-content {
+    color: #FEFEFE;
+}
 
-<div class="divider"></div>
+igc-card-header::part(subtitle) {
+    color: #ECAA53;
+    opacity: 0.9;
+}
 
-The last step is to **include** the component theme in our application.
-
-If `$legacy-support` is set to `true`, include the **component theme** like that:
-
-```scss
- @include igc-card($colorful-card);
-```
->[!NOTE]
->If the component is using an [`Emulated`](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`
-
-```scss
-:host {
-     ::ng-deep {
-        @include igc-card($colorful-card);
-    }
+igc-icon-button::part(icon) {
+    fill: #352511;
 }
 ```
 
-<div class="divider"></div>
-
-If `$legacy-support` is set to `false`(default), include the component **css variables** like that:
-
-```scss
-@include igx-css-vars($colorful-card);
-```
-
->[!NOTE]
->If the component is using an [`Emulated`](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, you still have to use `:host` because you need a global selector in order to override the variables.
-
-```scss
-:host {
-    @include igx-css-vars($colorful-card);
-}
-```
-
-### Demo
-
-
-<code-view style="height: 486px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/layouts/card-styling-sample" >
+<code-view style="height: 486px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
+           alt="$Platform$ Card Styling Example"
+           github-src="layouts/card/styling">
 </code-view>
 
 
 ### Summary
-In this article we covered a lot of ground with the card component. First, we created a very simple card with text content only. Then added some images to make the card a bit more appealing. We used some additional Ignite UI Web components inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's theme by setting some exposed theme colors. 
-The card component is capable of displaying more different layouts worth exploring in the Card Demo in the beginning of this article.
+In this article we covered a lot of ground with the card component. We created a simple card and added some images to make the card a bit more appealing. We used some additional Ignite UI Web components inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing some colors of the building blocks.
 
 ## API and Style References
 
