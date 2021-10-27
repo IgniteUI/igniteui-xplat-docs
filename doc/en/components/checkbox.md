@@ -59,7 +59,7 @@ You can specify if the label should be positioned before or after the checkbox t
 <igc-checkbox label-position="before">Label</igc-checkbox>
 ```
 
-The checkbox can also be labelled by elements external to the checkbox. In this case the the user is given the full control to position and style the label in accordance with their needs.
+The checkbox can also be labelled by elements external to the checkbox. In this case, the user is given full control to position and style the label in accordance with their needs.
 
 ```html
 <span id="checkbox-label">Label</span>
