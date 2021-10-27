@@ -60,7 +60,7 @@ You can specify if the label should be positioned before or after the switch tog
 <igc-switch label-position="before">Label</igc-switch>
 ```
 
-The switch can also be labelled by elements external to the switch. In this case the the user is given the full control to position and style the label in accordance with their needs.
+The switch can also be labelled by elements external to the switch. In this case, the user is given full control to position and style the label in accordance with their needs.
 
 ```html
 <span id="switch-label">Label</span>
