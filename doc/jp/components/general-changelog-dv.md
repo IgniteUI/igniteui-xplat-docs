@@ -7,12 +7,12 @@ _language: ja
 # $ProductName$ 変更ログ (データ可視化)
 
 
-All notable changes for each version of $ProductName$ are documented on this page.
+$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Angular -->
 
 > [!NOTE]
-> For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+> Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) を参照してください。
 
 <!-- end: Angular -->
 
@@ -20,58 +20,58 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 ## **$Platform$ {PackageVerChanges-21-2}**
 
-### Charts & Maps
+### チャートとマップ
 
-This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
+このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* Changed `XAxisLabelLocation` property's type `YAxisLabelLocation` to `AxisLabelLocation` in `CategoryChart` and `FinancialChart`
-* Changed `XAxisLabelLocation` property's type `YAxisLabelLocation` to `AxisLabelLocation`
-* Added `XAxisLabelLocation` property to `CategoryChart`
+* `CategoryChart` と `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `YAxisLabelLocation` を `AxisLabelLocation` に変更しました。
+* `XAxisLabelLocation` プロパティのタイプ `YAxisLabelLocation` を `AxisLabelLocation` に変更しました。
+* `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
 
-* Added support for representing geographic series of `GeographicMap` in legend
+* 凡例で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
 
-* Added crosshair lines and crosshair annotations in all charts by default
+* デフォルトですべてのチャートに十字線と十字線注釈を追加しました。
 
-* Added final value annotation in financial chart by default
+* デフォルトでファイナンシャル チャートに最終値の注釈を追加しました。
 
-* Added new properties:
-   - CrosshairsLine* - allows customizing crosshairs lines
-   - CrosshairsAnnotation* - allows customizing crosshairs annotations
-   - FinalValueAnnotations* - allows customizing final value annotations
-   - `AreaFillOpacity` - allows changing opacity of fill shapes (e.g. Area chart)
-   - `MarkerThickness` - allows changing thickness of markers
-   - `MarkerAutomaticBehavior` - allows which marker type is assigned to multiple series in the same chart
-   - chart's `LegendItemBadgeShape` - allows to set shape for all series represented in a legend
-   - chart's `LegendItemBadgeMode` - allows to use simplified or complex for all legend item shapes
-   - series' `LegendItemBadgeShape` - allows to set shape for a series represented in a legend
-   - series' `LegendItemBadgeMode` - allows to use simplified or complex of a legend item shape
+* 新しいプロパティを追加しました:
+   - CrosshairsLine* - 十字線をカスタマイズできます。
+   - CrosshairsAnnotation* - 十字線の注釈をカスタマイズできます。
+   - FinalValueAnnotations* - 最終値の注釈をカスタマイズできます。
+   - `AreaFillOpacity` - 塗りつぶしの図形の不透明度を変更できます (エリア チャートなど)。
+   - `MarkerThickness` - マーカーの厚さを変更できます。
+   - `MarkerAutomaticBehavior` - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができます。
+   - チャートの `LegendItemBadgeShape` - 凡例で表されるすべてのシリーズの図形を設定できます。
+   - チャートの `LegendItemBadgeMode` - すべての凡例項目の図形に簡素または複雑なものを使用できます。
+   - シリーズの系列の `LegendItemBadgeShape` - 凡例で表されるすべてのシリーズの図形を設定できます。
+   - シリーズの系列の `LegendItemBadgeMode` - すべての凡例項目の図形に簡素または複雑なものを使用できます。
 
-* Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
+* カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 
-* Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
+* 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 
-* Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
+* チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
 
-* Changed color palette of series and markers displayed in all charts
+* すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました。
 
-Old brushes/outlines | New outline/brushes
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
 
 
 ## **$Platform$ {PackageVerChanges-21-1}**
 
-### Charts & Maps
+### チャートとマップ
 
-This release introduces several new and improved visual design and configuration options for all of the chart components. e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
-* Redesigned color palette of series and markers:
+* シリーズとマーカーの再設計されたカラー パレット:
 
-Old brushes/outlines | New outline/brushes
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
 -------------------- | -------------------
 <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
 
-for example:
+例:
 
 <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
 ------------- | -------------
@@ -79,10 +79,10 @@ for example:
 
 <div class="divider--half"></div>
 
-* Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
-* Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
-* Changed Scatter High Density series’ colors for heat max property from <span style="color:#ee5879">#ee5879</span> to <span style="color:#ee5879">#ee5879</span>
-* Changed Financial/Waterfall series’ `NegativeBrush` and `NegativeOutline` properties from <span style="color:#C62828">#C62828</span> to <span style="color:#ee5879">#ee5879</span>
+* 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
+* heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
+* heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
+* ファイナンシャル/ウォーターフォール シリーズの `NegativeBrush` および `NegativeOutline` プロパティを <span style="color:#C62828">#C62828</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
 * マーカーの厚さを 1px から 2px に変更しました。
 * `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
 * `TimeXAxis` および `OrdinalTimeXAxis` のラベリングを圧縮しました。
@@ -92,7 +92,7 @@ for example:
     - シリーズ。`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、`MatchMarkerBrush` に設定できます。
 * 新シリーズプロパティ:
     - シリーズ。`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
-    - New chart properties that define bleed over area introduced into the viewport when the chart is at the default zoom level. 一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します:
+    - チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します:
     - チャート。`PlotAreaMarginLeft`
     - チャート。`PlotAreaMarginTop`
     - チャート。`PlotAreaMarginRight`
