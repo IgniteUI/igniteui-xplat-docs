@@ -8,7 +8,7 @@ The Ignite UI for Web Components Button provides different variants and styles, 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/button-overview"
            alt="$Platform$ Button Example"
-           github-src="data/button-overview">
+           github-src="data/button/overview">
 </code-view>
 
 ## Usage
@@ -16,15 +16,15 @@ The Ignite UI for Web Components Button provides different variants and styles, 
 To get started with the Button Web Component we need to import the `IgcButtonComponent` in our typescript file:
 
 ```ts
-import { IgcButtonComponent } from 'igniteui-webcomponents/src/components/button/button'; 
+import { IgcButtonComponent } from 'igniteui-webcomponents'; 
 ```
 
 After we import the button component we are ready to start using it, so let's add our first button.
 
 ```html
-<igc-button type="submit" variant="contained">
+<igc-button type="button" variant="contained">
     <span slot="prefix">+</span>
-    Submit
+    Click me
     <span slot="suffix">-</span>
 </igc-button>
 ```
@@ -93,8 +93,7 @@ We can create a floating action button just like what we do for the previous but
 We can allow the user to choose the size of the `igc-button` by using its `size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
-import IgcRadioGroupComponent from 'igniteui-webcomponents/src/components/radio-group/radio-group';
-import IgcRadioComponent from 'igniteui-webcomponents/src/components/radio/radio';
+import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
 ```
 
 ```html
@@ -126,18 +125,18 @@ And here's the result of all that work:
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/button-size"
            alt="$Platform$ List Example"
-           github-src="/data/button-size">
+           github-src="/data/button/size">
 </code-view>
 
-## Styling the button component
+## Styling
 
-Here is how we can change the background color to enable and disable buttons.
+The button component exposes `base` CSS part that allow us to style the wrapping element (`<button>`).
 
 ```css
-:root {
-    --igc-secondary-500: 230, 48%, 47%;
-    --igc-gray-300: 212, 5%, 83%;
-    --igc-gray-500: 235, 42%, 83%;
+igc-button::part(base) {
+    background-color: #0099ff;
+    color: #3f51b5;
+    padding: 12px;
 }
 ```
 
@@ -145,7 +144,7 @@ Here is how we can change the background color to enable and disable buttons.
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/button-styling"
            alt="$Platform$ List Example"
-           github-src="/data/button-styling">
+           github-src="/data/button/styling">
 </code-view>
 
 ## API Reference
