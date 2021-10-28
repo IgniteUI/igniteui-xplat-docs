@@ -24,15 +24,17 @@ To get started with the list Web component, first you need to install Ignite UI 
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the IgcListComponent in your typescript file where you want to use it:
+The next step is to import `igniteui-webcomponents` inside our **index.ts** file:
 
-```ts
-import { IgcListComponent } from 'igniteui-webcomponents';
+```typescript
+// index.ts
+...
+import 'igniteui-webcomponents';
 ```
 
 ### Add List Items
 
-After the list component is imported we are ready to start using it so let's add some items! We can add the following code to get a simple list of items:
+After the import of the `igniteui-webcomponents`, we can add the following code to get a simple list of items:
 
 ```html
     <igc-list>
@@ -58,7 +60,7 @@ If all went well, you should see the following in your browser:
            github-src="grids/list/add-list-items">
 </code-view>
 
-Let's up our game a bit and enhance our list items. Say we want to create a list of contacts with a name and a phone number displayed under the name. To achive that we can use some of the slots that come with the list items. Let's look at how we can use some of them in the next example:
+Let's up our game a bit and enhance our list items. Say we want to create a list of contacts with a name and a phone number displayed under the name. To achieve that we can use some of the slots that come with the list items as demonstrated in the next example:
 
 ```html
 <igc-list>
@@ -93,13 +95,7 @@ After all that our list component should now look like that:
 
 ### Adding Avatar and Buttons
 
-We can use some of our other components in conjunction with the [IgcList]({}) component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts. To do that let's grab the [`IgcAvatar`]({}) and [`IgcButton`]({}) components and import them in our file.
-
-```ts
-import { IgcAvatarComponent, IgcButtonComponent } from 'igniteui-webcomponents';
-```
-
-Cool, now let's update the component for our contacts list to show the avatar and the buttons. Again we can do that by using some of the list item's slots.
+We can use some of our other components in conjunction with the [IgcList]({}) component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -152,12 +148,7 @@ The `start` slot is meant to be used for adding some kind of media before all ot
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
 
-
 Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
-
-```ts
-import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
-```
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
@@ -219,7 +210,7 @@ igc-list-item::part(end) {
 
 ## API References
 
-In this article we covered a lot of ground with the list web component. We created a list of contact items and used some additional Ignite UI for Web Components inside our list items, like avatars and buttons.
+In this article we covered a lot of ground with the list web component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional Ignite UI Web Components, like avatars and buttons. Finally, we changed the component's appearance through the exposed CSS parts.
 
 * [IgcListComponent]()
 * [IgcListHeaderComponent]()
