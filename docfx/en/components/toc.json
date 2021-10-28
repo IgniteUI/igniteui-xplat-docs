@@ -83,7 +83,7 @@
     ]
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Menus",
     "header": true
   },

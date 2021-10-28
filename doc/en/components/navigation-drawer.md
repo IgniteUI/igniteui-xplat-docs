@@ -16,10 +16,8 @@ npm install igniteui-webcomponents
 The next step is to import the IgcNavDrawerComponent in your typescript file where you want to use it:
 
 ```ts
-import { IgcNavDrawerComponent } from 'igniteui-webcomponents/src/components/nav-drawer/nav-drawer';
+import { IgcNavDrawerComponent } from 'igniteui-webcomponents';
 ```
-
-The Navigation Drawer can be defined in the app component template in the following way:
 
 ### Adding Navigation Drawer Items
 
@@ -49,9 +47,9 @@ If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-drawer-items"
            alt="$Platform$ Navigation Drawer Items Example"
-           github-src="menus/nav-drawer-add-drawer-items">
+           github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
 While any content can be provided in the drawer, the `igc-nav-drawer-item` is available to apply out-of-the-box styling to the items.
@@ -87,8 +85,7 @@ Let's also add some radio buttons to display all `position` values. This way whe
 
 ```ts
 // ...
-import IgcRadioComponent from 'igniteui-webcomponents/src/components/radio/radio';
-import IgcRadioGroupComponent from 'igniteui-webcomponents/src/components/radio-group/radio-group';
+import { IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents'
 
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
@@ -106,7 +103,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </igc-radio-group>
 ```
 
-And finally, we need a way to open and close our navigation drawer. There are couple of ways to achieve this, but for the sake of this example we will do the following:
+And finally, we need a way to open and close our navigation drawer. There are a couple of ways to achieve this, but for the sake of this example we will do the following:
 
 ```ts
 // ...
@@ -129,9 +126,9 @@ If all goes well, your component should now look like this:
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar Example"
-           github-src="menus/nav-drawer-add-positions-navbar">
+           github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
 
 ## Mini Variant
@@ -170,9 +167,9 @@ And here's the result:
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-mini"
            alt="$Platform$ Navigation Drawer Mini Example"
-           github-src="menus/nav-drawer-add-mini">
+           github-src="menus/nav-drawer/add-mini">
 </code-view>
 
 ## Styling the Navigation Drawer
@@ -200,9 +197,9 @@ igc-nav-drawer-header-item {
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/styling"
            alt="$Platform$ Navigation Drawer Styling Example"
-           github-src="menus/nav-drawer-styling">
+           github-src="menus/nav-drawer/styling">
 </code-view>
 
 ## API References
