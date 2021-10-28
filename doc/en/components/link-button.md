@@ -8,7 +8,7 @@ The Ignite UI for Web Components Link Button provides different variants and sty
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/link-button-overview"
            alt="$Platform$ Button Example"
-           github-src="data/link-button-overview">
+           github-src="data/link-button/overview">
 </code-view>
 
 ## Usage
@@ -16,7 +16,7 @@ The Ignite UI for Web Components Link Button provides different variants and sty
 To get started with the Link Button Web Component we need to import the `IgcLinkButtonComponent` in our typescript file:
 
 ```ts
-import { IgcLinkButtonComponent } from 'igniteui-webcomponents/src/components/link-button/link-button'; 
+import { IgcLinkButtonComponent } from 'igniteui-webcomponents'; 
 ```
 
 After we import the link button component, we are ready to start using it, so let's add our first link button.
@@ -140,8 +140,7 @@ By setting a URL to `download` property, we can make the link button to download
 We can allow the user to choose the size of the `igc-link-button` by using its [`size`]() property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
-import IgcRadioGroupComponent from 'igniteui-webcomponents/src/components/radio-group/radio-group';
-import IgcRadioComponent from 'igniteui-webcomponents/src/components/radio/radio';
+import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
 ```
 
 ```html
@@ -173,18 +172,18 @@ And here's the result of all that work:
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/link-button-size"
            alt="$Platform$ List Example"
-           github-src="/data/link-button-size">
+           github-src="/data/link-button/size">
 </code-view>
 
-## Styling the link button component
+## Styling
 
-Here is how we can change the background color to enable and disable buttons.
+The link button component exposes `base` CSS part that allow us to style the wrapping element (`<a>`)
 
 ```css
-:root {
-    --igc-secondary-500: 230, 48%, 47%;
-    --igc-gray-300: 212, 5%, 83%;
-    --igc-gray-500: 235, 42%, 83%;
+igc-link-button::part(base) {
+    background-color: #0099ff;
+    color: #3f51b5;
+    padding: 12px;
 }
 ```
 
@@ -192,7 +191,7 @@ Here is how we can change the background color to enable and disable buttons.
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/data/link-button-styling"
            alt="$Platform$ List Example"
-           github-src="/data/link-button-styling">
+           github-src="/data/link-button/styling">
 </code-view>
 
 ## API Reference
