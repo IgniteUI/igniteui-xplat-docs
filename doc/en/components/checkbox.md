@@ -91,7 +91,7 @@ Use the `checked` attribute to toggle on the checkbox.
 Use the `indeterminate` attribute to set the value of the checkbox to neither `true` nor `false`.
 
 ```html
-<igc-checkbox checked></igc-checkbox>
+<igc-checkbox indeterminate></igc-checkbox>
 ```
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
