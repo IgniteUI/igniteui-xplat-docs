@@ -23,7 +23,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
-* Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
+* Changed `YAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
 * Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
 * Added support for representing geographic series of `GeographicMap` in `Legend`
