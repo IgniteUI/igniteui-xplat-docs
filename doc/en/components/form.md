@@ -21,7 +21,7 @@ The following example represents a form that has some inputs, buttons and a chec
 
 ## Dependencies
 
-In order to use the Form component, the web components packages must be installed.
+In order to use the Form component, the web components package must be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install {PackageWebComponents}
@@ -44,11 +44,7 @@ Once the Form component is imported, you can add it on the page and add your con
 ```
 
 ```ts
-import IgcFormComponent from 'igniteui-webcomponents';
-
-...
-
-customElements.get('igc-form') || customElements.define('igc-form', IgcFormComponent);
+import 'igniteui-webcomponents';
 ```
 
 Form data is collected for the following components:
@@ -61,7 +57,7 @@ Form data is collected for the following components:
 - igc-switch
 - textarea
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add `novalidate` to the `<igc-form>` element.
+When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the `novalidate` attribute to the `<igc-form>` element.
 
 ### Events
 
@@ -85,6 +81,6 @@ The Form component exposes the following methods:
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
 |`submit`|Submits the form data.|
-|`reset`|Resets  the form data.|
+|`reset`|Resets the form data.|
 |`getFormData`|Collects the form data and returns a single FormData object.|
-|`reportValidity`|Returns wether the element's child controls satisfy their validation constraints.|
+|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
