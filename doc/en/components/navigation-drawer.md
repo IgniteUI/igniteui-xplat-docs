@@ -13,7 +13,7 @@ To get started with the Navigation Drawer Web component, first you need to insta
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the IgcNavDrawerComponent in your typescript file where you want to use it:
+The next step is to import IgniteUI WebComponents package in your typescript file where you want to use it:
 
 ```ts
 import { IgcNavDrawerComponent } from 'igniteui-webcomponents';
@@ -47,7 +47,7 @@ If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-drawer-items"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
            alt="$Platform$ Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
@@ -85,7 +85,9 @@ Let's also add some radio buttons to display all `position` values. This way whe
 
 ```ts
 // ...
-import { IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents'
+import 'igniteui-webcomponents';
+import { IgcNavDrawerComponent } from 'igniteui-webcomponents/src/components/nav-drawer/nav-drawer';
+import { IgcRadioGroupComponent } from 'igniteui-webcomponents/src/components/radio-group/radio-group';
 
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
@@ -126,7 +128,7 @@ If all goes well, your component should now look like this:
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-positions-navbar"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar Example"
            github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
@@ -167,7 +169,7 @@ And here's the result:
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/add-mini"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
            alt="$Platform$ Navigation Drawer Mini Example"
            github-src="menus/nav-drawer/add-mini">
 </code-view>
@@ -197,7 +199,7 @@ igc-nav-drawer-header-item {
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer/styling"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
            alt="$Platform$ Navigation Drawer Styling Example"
            github-src="menus/nav-drawer/styling">
 </code-view>
