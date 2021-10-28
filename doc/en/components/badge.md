@@ -47,7 +47,7 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 
 ### Shape
 
-The badge components supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
+The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
 
 ```html
 <igc-badge shape="square"></igc-badge>
