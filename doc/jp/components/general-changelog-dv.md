@@ -21,7 +21,7 @@ _language: ja
 
 このプロジェクトの各バージョンのすべての注目すべき変更は、このファイルに文書化されます。
 
-## **{PackageVerChangedCharts}**
+## **$Platform$ {PackageVerChanges-21-1}**
 
 ### チャート
 
@@ -169,7 +169,7 @@ _language: ja
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-## **{PackageVerChangedFields}**
+## **$Platform$ {PackageVerChangedFields}**
 
 > [!NOTE]
 > これらの重大な変更は、グリッド パッケージで導入されました。
@@ -208,7 +208,7 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
-## **{PackageVerRenamedGrid}**
+## **$Platform$ {PackageVerRenamedGrid}**
 
 ### データ グリッド
 
@@ -243,7 +243,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
-## **{PackageVerChangedImports}**
+## **$Platform$ {PackageVerChangedImports}**
 
 - import ステートメントの変更
 
