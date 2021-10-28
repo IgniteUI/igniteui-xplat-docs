@@ -27,7 +27,8 @@
             { "name": "{PackageVerChangedImports}", "value": "8.2.12"},
             { "name": "{PackageVerLatest}",         "value": "9.1.1"},
             { "name": "{PackageVerChanges-21-1}",   "value": "11.2.0"},
-            { "name": "{PackageVerChanges-21-2}",   "value": "11.3.0"}
+            { "name": "{PackageVerChanges-21-2}",   "value": "11.3.0"},
+            { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",

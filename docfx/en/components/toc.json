@@ -1265,5 +1265,15 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navbar",
+    "href": "navbar.md",
+    "status": "NEW"
   }
 ]
