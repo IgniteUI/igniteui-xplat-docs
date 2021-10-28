@@ -32,7 +32,7 @@ The simplest way to start using the badge is as follows:
 
 ### Variants
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assinging one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
 
 ```html
 <igc-badge variant="success"></igc-badge>
