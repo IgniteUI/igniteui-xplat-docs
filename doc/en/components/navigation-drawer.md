@@ -16,7 +16,7 @@ npm install igniteui-webcomponents
 The next step is to import IgniteUI WebComponents package in your typescript file where you want to use it:
 
 ```ts
-import { IgcNavDrawerComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents';
 ```
 
 ### Adding Navigation Drawer Items
