@@ -1,6 +1,6 @@
 # $Platform$ Button Overview
 
-The Ignite UI for Web Components Button provides different variants and styles, which are easily configurable to match the appearance and functionality, that we want to achieve.
+The Ignite UI for Web Components Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
 
 ## $Platform$ Button Example
 
@@ -42,7 +42,7 @@ We can also specify button [`type`]() by setting some of the following values:
 
 ### Flat Button
 
-Use `flat` variant to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
+Use `variant` attribute to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
 
 ```html
 <igc-button variant="flat">Flat</igc-button>
@@ -54,7 +54,7 @@ Use `flat` variant to add a simple flat button in your component template. Note 
 
 ### Outlined Button
 
-All you have to do to create a `outlined` button is to change button variant property:
+All you have to do to create an `outlined` button is to change the value of the `variant` property:
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
@@ -78,7 +78,7 @@ Analogically, we can switch to `contained` variant:
 
 ### Floating Action Button
 
-We can create a floating action button just like what we do for the previous buttons, we will switch the variant to `fab` :
+We can create a floating action button by setting the `variant` property to `fab`:
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
