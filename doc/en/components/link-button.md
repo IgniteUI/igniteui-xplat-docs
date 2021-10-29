@@ -1,6 +1,6 @@
 # $Platform$ Link Button Overview
 
-The Ignite UI for Web Components Link Button provides different variants and styles, which are easily configurable to match the appearance and functionality, that we want to achieve.
+The $Platform$ Link Button provides different variants and styles, which are easily configurable to match the appearance and functionality, that we want to achieve.
 
 ## $Platform$ Link Button Example
 
@@ -27,13 +27,13 @@ After we import the link button component, we are ready to start using it, so le
     href="https://www.infragistics.com/products/ignite-ui-web-components"
     rel="external"
     target="_blank">
-    <span slot="prefix">></span>
+    <span slot="prefix">+</span>
      Click Me
-    <span slot="suffix"><</span>
+    <span slot="suffix">-</span>
 </igc-link-button>
 ```
 
-With `prefix` and `suffix` slots we can add a different content before and after the main content of the button.
+With `prefix` and `suffix` slots we can add different content before and after the main content of the button.
 
 The internal structure of the `igc-link-button` is an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element, which is why we can
 set the `href`, `rel`, `target` and `download` attributes of the link button.
@@ -90,7 +90,7 @@ Analogically, we can switch to `contained` variant:
 
 ### Floating Action Button
 
-We can create a floating action button just like what we do for the previous buttons, we will switch the variant to `fab`:
+And for a floating action button, we can switch to `fab` variant: 
 
 ```html
 <igc-link-button
@@ -103,8 +103,6 @@ We can create a floating action button just like what we do for the previous but
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-fab">
 </iframe></div>
-
-## Examples
 
 ### Disable Link Button
 
@@ -137,7 +135,7 @@ By setting a URL to `download` property, we can make the link button to download
 
 ## Link Button Sizing
 
-We can allow the user to choose the size of the `igc-link-button` by using its [`size`]() property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+We can allow the user to choose the size of the `igc-link-button` by using its [`size`]() property. То demonstrate this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
@@ -153,10 +151,10 @@ import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponent
 
 ```ts
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
-this.outlinedButton = document.getElementById('outlined-btn') as IgcButtonComponent;
-this.flatButton = document.getElementById('flat-btn') as IgcButtonComponent;
-this.containedButton = document.getElementById('contained-btn') as IgcButtonComponent;
-this.fabButton = document.getElementById('fab-btn') as IgcButtonComponent;
+this.outlinedButton = document.getElementById('outlined-btn') as IgcLinkButtonComponent;
+this.flatButton = document.getElementById('flat-btn') as IgcLinkButtonComponent;
+this.containedButton = document.getElementById('contained-btn') as IgcLinkButtonComponent;
+this.fabButton = document.getElementById('fab-btn') as IgcLinkButtonComponent;
 
 this.radioGroup.addEventListener('click', (radio: any) => {
     this.outlinedButton.size = radio.target.value;
@@ -177,7 +175,7 @@ And here's the result of all that work:
 
 ## Styling
 
-The link button component exposes `base` CSS part that allow us to style the wrapping element (`<a>`)
+The link button component exposes `base` CSS part that allows us to style the wrapping `<a>` element.
 
 ```css
 igc-link-button::part(base) {
