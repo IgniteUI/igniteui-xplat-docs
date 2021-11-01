@@ -10,7 +10,7 @@ The $ProductName$ Calendar component provides an easy and intuitive ways to disp
 ## $Platform$ Calendar Example
 <div class="divider--half"></div>
 
-<code-view style="height: 420px"
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
            alt="$Platform$ Calendar Example"
@@ -49,7 +49,7 @@ We can easily change the default mode using the `selection` property:
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 
-<code-view style="height: 420px" 
+<code-view style="height: 370px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
            alt="$Platform$ Calendar Multiple Selection Example"
@@ -65,7 +65,7 @@ Following the same approach, we can switch to `range` selection mode:
 <igc-calendar selection="range"></igc-calendar>
 ```
 
-<code-view style="height: 420px" 
+<code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
            alt="$Platform$ Calendar Range Selection Example"
@@ -96,7 +96,7 @@ The $ProductName$ Calendar component exposes a `title` slot which allows you to 
 
 The following sample demonstrates the above configuration:
 
-<code-view style="height: 420px" 
+<code-view style="height: 370px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
            alt="$Platform$ Calendar Header Example"
@@ -109,28 +109,42 @@ Due to their very nature, localization and formatting are essential to any calen
 
 Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
 
-// TODO
 ```html
+<igc-radio-group alignment="horizontal">
+    <igc-radio name="locale" value="en" checked>EN</igc-radio>
+    <igc-radio name="locale" value="de">DE</igc-radio>
+    <igc-radio name="locale" value="fr">FR</igc-radio>
+    <igc-radio name="locale" value="ar">AR</igc-radio>
+    <igc-radio name="locale" value="ja">JA</igc-radio>
+</igc-radio-group>
 
-<igc-calendar id="calendar1"
-    weekStart="monday"
-    [locale]="locale"
-    [formatOptions]="formatOptions"
-    [formatViews]="formatViews">
+<igc-calendar 
+    id="calendar1"
+    week-start="monday"
+>
 </igc-calendar>
 ```
 
-// TODO
 ```ts
-public locales = ["EN", "DE", "FR", "AR", "ZH"];
-public locale = "EN";
+this.calendar = document.getElementById('calendar1') as IgcCalendarComponent;
+this.calendar.formatOptions = {
+    month: 'short',
+    weekday: 'short'
+};
 
-this.formatOptions = { month: "short", weekday: "short" };
+this.radios = document.querySelectorAll('igc-radio') as NodeListOf<IgcRadioComponent>;
+this.radios.forEach(radio => {
+    radio.addEventListener('igcChange', () => {
+        if (radio.checked) {
+            this.calendar.locale = radio.value;
+        }
+    });
+})
 ```
 
 If everything went well, we should now have a Calendar with customized display, that also changes the locale representation, based on the user selection. Let's have a look at it:
 
-<code-view style="height: 620px" 
+<code-view style="height: 520px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
            alt="$Platform$ Calendar Formatting Example"
@@ -174,33 +188,21 @@ These configurations should have the following result:
 
 The `specialDates` property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
 
-Let's add some special dates to our Calendar. In order to do this, we have to create a `DateRangeDescriptor` and pass an array of dates as a `dateRange`:
+Let's add some special dates to our Calendar. In order to do this, we will create a `DateRangeDescriptor` and pass the dates between the 3rd and the 8th of the current month:
 
 ```ts
-public range = [];
+const today = new Date();
+const range = [
+    new Date(today.getFullYear(), today.getMonth(), 3),
+    new Date(today.getFullYear(), today.getMonth(), 8)
+];
 
-public selectPTOdays(dates: Date[]) {
-    this.range = dates;
-}
-
-public submitPTOdays(eventArgs) {
-    this.calendar.specialDates =
-        [{ type: DateRangeType.Specific, dateRange: this.range }];
-}
-```
-
-```html
-<igc-calendar #calendar weekStart="1"
-    selection="multiple"
-    (selected)="selectPTOdays($event)">
-</igc-calendar>
-
-<button (click)="submitPTOdays($event)">Submit Request</button>
+this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
 The following demo illustrates a Calendar with a vacation request option:
 
-<code-view style="height: 450px" 
+<code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
            alt="$Platform$ Calendar Special Dates Example"
@@ -216,7 +218,7 @@ You can use the `showWeekNumbers` property to show the week numbers of the Calen
 ```
 The following demo illustrates a Calendar with enabled week numbers:
 
-<code-view style="height: 420px" 
+<code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
            alt="$Platform$ Calendar Week Numbers Example"
@@ -235,7 +237,7 @@ The Calendar displays leading and trailing dates from the previous and the next 
 
 The following sample demonstrates the multiple months configuration:
 
-<code-view style="height: 420px" 
+<code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
            alt="$Platform$ Calendar Multiple Months Example"
@@ -363,7 +365,7 @@ igc-calendar::part(year-inner current selected) {
 
 The following sample demonstrates the above CSS configuration:
 
-<code-view style="height: 420px" 
+<code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
            alt="$Platform$ Calendar Styling Example"
