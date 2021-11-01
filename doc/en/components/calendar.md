@@ -5,7 +5,8 @@ _keywords: $Platform$ Calendar, $ProductName$, Infragistics
 ---
 
 # $Platform$ Calendar Overview
-The $ProductName$ Calendar component provides an easy and intuitive ways to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
+The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
+
 
 ## $Platform$ Calendar Example
 <div class="divider--half"></div>
@@ -33,7 +34,8 @@ import { IgcCalendarComponent } from 'igniteui-webcomponents/src/components/cale
 
 ### Single Selection Calendar
 
-Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. This will display the current month in the single selection mode.
+Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. This will display the current month in single selection mode.
+
 
 ```html
 <!-- Single selection mode -->
@@ -342,7 +344,8 @@ The Calendar component exposes CSS parts for almost all of its inner elements. T
 | selected | Indicates selected state. Applies to date, month and year elements. |
 | current | Indicates current state. Applies to date, month and year elements. |
 
-Using these CSS parts we can customize tha appearance of the Calendar component like this:
+Using these CSS parts we can customize thе appearance of the Calendar component like this:
+
 
 ```css
 igc-calendar::part(header) {
