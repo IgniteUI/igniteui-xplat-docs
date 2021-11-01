@@ -87,7 +87,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/avatar-shape"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/avatar-shape">
+           github-src="layouts/avatar/shape">
 </code-view>
 
 ### Size
