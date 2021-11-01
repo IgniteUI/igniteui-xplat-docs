@@ -109,7 +109,7 @@ And for a floating action button, we can switch to `fab` variant:
 The `disabled` property can be used to make a button unclickable:
 
 ```html
-<igc-link-button variant="contained" disabled="true">Disabled</igc-link-button>
+<igc-link-button variant="contained" disabled>Disabled</igc-link-button>
 ```
 
 <div class="sample-container loading" style="height: 70px">
@@ -118,7 +118,7 @@ The `disabled` property can be used to make a button unclickable:
 
 ### Download
 
-By setting a URL to `download` property, we can make the link button to download file when is clicked.
+By setting a URL to `download` property, we can make the link button download a file when it is clicked.
 
 ```html
 <igc-link-button
@@ -133,7 +133,7 @@ By setting a URL to `download` property, we can make the link button to download
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-download">
 </iframe></div>
 
-## Link Button Sizing
+## Size
 
 We can allow the user to choose the size of the `igc-link-button` by using its [`size`]() property. То demonstrate this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
