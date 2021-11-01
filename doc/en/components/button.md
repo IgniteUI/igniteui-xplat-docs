@@ -6,9 +6,9 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/button-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
            alt="$Platform$ Button Example"
-           github-src="data/button/overview">
+           github-src="inputs/button/overview">
 </code-view>
 
 ## Usage
@@ -49,7 +49,7 @@ Use `variant` attribute to add a simple flat button in your component template. 
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-flat">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
 </iframe></div>
 
 ### Outlined Button
@@ -61,7 +61,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-outlined">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
 </iframe></div>
 
 ### Contained Button
@@ -73,7 +73,7 @@ Analogically, we can switch to `contained` variant:
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-contained">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
 </iframe></div>
 
 ### Floating Action Button
@@ -85,7 +85,7 @@ We can create a floating action button by setting the `variant` property to `fab
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/button-fab">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
 </iframe></div>
 
 ## Button Sizing
@@ -123,9 +123,9 @@ And here's the result of all that work:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/button-size"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
            alt="$Platform$ List Example"
-           github-src="/data/button/size">
+           github-src="/inputs/button/size">
 </code-view>
 
 ## Styling
@@ -142,9 +142,9 @@ igc-button::part(base) {
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/button-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
            alt="$Platform$ List Example"
-           github-src="/data/button/styling">
+           github-src="/inputs/button/styling">
 </code-view>
 
 ## API Reference
