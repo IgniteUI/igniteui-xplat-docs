@@ -6,9 +6,9 @@ The $Platform$ Link Button provides different variants and styles, which are eas
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/link-button-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-overview"
            alt="$Platform$ Button Example"
-           github-src="data/link-button/overview">
+           github-src="inputs/link-button/overview">
 </code-view>
 
 ## Usage
@@ -53,7 +53,7 @@ Use `flat` variant to add a simple flat button in your component template. Note 
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-flat">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-flat">
 </iframe></div>
 
 ### Outlined Button
@@ -69,7 +69,7 @@ All you have to do to create an `outlined` button is to change button variant pr
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-outlined">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-outlined">
 </iframe></div>
 
 ### Contained Button
@@ -85,7 +85,7 @@ Analogically, we can switch to `contained` variant:
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-contained">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-contained">
 </iframe></div>
 
 ### Floating Action Button
@@ -101,7 +101,7 @@ And for a floating action button, we can switch to `fab` variant:
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-fab">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-fab">
 </iframe></div>
 
 ### Disable Link Button
@@ -113,7 +113,7 @@ The `disabled` property can be used to make a button unclickable:
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-disabled">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-disabled">
 </iframe></div>
 
 ### Download
@@ -130,7 +130,7 @@ By setting a URL to `download` property, we can make the link button to download
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/data/link-button-download">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-download">
 </iframe></div>
 
 ## Link Button Sizing
@@ -168,9 +168,9 @@ And here's the result of all that work:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/link-button-size"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-size"
            alt="$Platform$ List Example"
-           github-src="/data/link-button/size">
+           github-src="/inputs/link-button/size">
 </code-view>
 
 ## Styling
@@ -187,9 +187,9 @@ igc-link-button::part(base) {
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/link-button-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-styling"
            alt="$Platform$ List Example"
-           github-src="/data/link-button/styling">
+           github-src="/inputs/link-button/styling">
 </code-view>
 
 ## API Reference
