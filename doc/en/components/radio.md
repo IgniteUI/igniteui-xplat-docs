@@ -10,9 +10,9 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 ## $ProductName$ Radio Example
 
-<code-view style="height: 90px" 
+<code-view style="height: 205px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/radio-sample-1" alt="$Platform$ Radio & Radio Group Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -38,6 +38,7 @@ The simplest way to start using the radio is as follows:
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
   <igc-radio>Banana</igc-radio>
+  <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
 ```
@@ -52,14 +53,14 @@ The simplest way to start using the radio is as follows:
 To provide a meaningful label for the radio, simply place some text between the opening and closing tags:
 
 ```html
-<igc-radio>Label</igc-radio>
+<igc-radio>Apple</igc-radio>
 ```
 
 You can specify if the label should be positioned before or after the switch toggle by setting the `label-position` attribute of the switch. Allowed values are `before` and `after`(default):
 
 
 ```html
-<igc-radio label-position="before">Label</igc-radio>
+<igc-radio label-position="before">Apple</igc-radio>
 ```
 
 The radio can also be labelled by elements external to it. In this case the the user is given the full control to position and style the label in accordance with their needs.
@@ -69,11 +70,11 @@ The radio can also be labelled by elements external to it. In this case the the 
 <igc-radio aria-labelledby="switch-label"></igc-radio>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/radio-label"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
            alt="$Platform$ Radio Example"
-           github-src="layouts/radio-label">
+           github-src="inputs/radio/label">
 </code-view>
 
 ### Checked
@@ -84,15 +85,16 @@ Use the `checked` attribute to toggle on the radio.
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
   <igc-radio checked>Banana</igc-radio>
+  <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 205px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/radio-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
            alt="$Platform$ Radio Example"
-           github-src="layouts/radio-checked">
+           github-src="inputs/radio/group">
 </code-view>
 
 ### Ivalid
@@ -103,6 +105,13 @@ Use the `invalid` attribute to mark the radio as invalid.
 <igc-radio invalid></igc-radio>
 ```
 
+<code-view style="height: 205px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
+           alt="$Platform$ Radio Example"
+           github-src="inputs/radio/invalid">
+</code-view>
+
 ### Disabled
 
 Use the `disabled` attribute to disable the radio.
@@ -111,15 +120,16 @@ Use the `disabled` attribute to disable the radio.
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
   <igc-radio disabled>Banana</igc-radio>
+  <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 205px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/radio-disabled"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
            alt="$Platform$ Radio Example"
-           github-src="layouts/radio-disabled">
+           github-src="inputs/radio/disabled">
 </code-view>
 
 ### Group Alignment
@@ -130,15 +140,16 @@ The radio group allows you to easily change the placement directionality of the 
 <igc-radio-group alignment="horizontal">
   <igc-radio>Apple</igc-radio>
   <igc-radio>Banana</igc-radio>
+  <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/radio-alignment"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
            alt="$Platform$ Radio Example"
-           github-src="layouts/radio-alignment">
+           github-src="inputs/radio/alignment">
 </code-view>
 
 ### Forms
@@ -149,6 +160,7 @@ Use the `name` and `value` attributes when using the radio with `<igc-form>`.
 <igc-radio-group>
   <igc-radio name="option1" value="apple">Apple</igc-radio>
   <igc-radio name="option2" value="banana">Banana</igc-radio>
+  <igc-radio name="option4" value="mango">Mango</igc-radio>
   <igc-radio name="option3" value="banana">Orange</igc-radio>
 </igc-radio-group>
 ```
@@ -157,7 +169,7 @@ Use the `name` and `value` attributes when using the radio with `<igc-form>`.
 
 The radio component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling.
 
-```css
+```scss
 igc-radio::part(control checked) {
   &::before {
     background: olive;
@@ -168,6 +180,13 @@ igc-radio::part(control checked) {
   }
 }
 ```
+
+<code-view style="height: 205px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
+           alt="$Platform$ Radio Styling"
+           github-src="inputs/radio/styling">
+</code-view>
 
 ## Additional Resources
 
