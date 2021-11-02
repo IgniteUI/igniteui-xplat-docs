@@ -1276,5 +1276,16 @@
     "name": "Navbar",
     "href": "menus/navbar.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Scheduling",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Calendar",
+    "href": "calendar.md",
+    "status": "NEW"
   }
 ]

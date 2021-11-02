@@ -6,102 +6,98 @@ _language: ja
 ---
 # $ProductName$ 変更ログ (データ可視化)
 
-<div class="divider--half"></div>
+
+$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Angular -->
 
 > [!NOTE]
-> このファイルは、igniteui-angular-\* パッケージ (例: igniteui-angular-charts) のみに固有です。
-
-> 追加の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+> Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
 
-このプロジェクトの各バージョンのすべての注目すべき変更は、このファイルに文書化されます。
+## **$Platform$ {PackageVerChanges-21-2}**
+
+### チャートとマップ
+
+このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
+
+* `FinancialChart` と `CategoryChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
+* `Legend` で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
+* `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
+* `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
+* デフォルトで `FinancialChart` に最終値の注釈を追加しました。
+* 新しいプロパティを追加しました:
+   - 十字線のカスタマイズを可能にする CrosshairsLine*
+   - 十字線の注釈のカスタマイズを可能にする CrosshairsAnnotation*
+   - 最終値の注釈のカスタマイズを可能にする FinalValueAnnotations*
+   - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
+   - マーカーの厚さの変更を可能にする `MarkerThickness`
+   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
+   - 凡例で表されるすべてのシリーズの図形を設定するためのチャートの `LegendItemBadgeShape`
+   - すべての凡例項目バッジの簡略化または複雑な図形を設定するためのチャートの `LegendItemBadgeMode`
+   - 凡例で表されるシリーズの図形を設定するためのシリーズ `LegendItemBadgeShape`
+   - 1 つの凡例項目バッジの簡略化または複雑な図形を設定するためのシリーズの `LegendItemBadgeMode`
+* カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
+* 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
+* チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
+* すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました。
+
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+
 
 ## **$Platform$ {PackageVerChanges-21-1}**
 
-### チャート
+### チャートとマップ
 
-このリリースでは、すべてのチャート コンポーネント、例えば、データ チャート、カテゴリ チャート、およびファイナンシャル チャートに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
-チャート デフォルト値のデザイン更新:
+* シリーズとマーカーの再設計されたカラー パレット:
 
-* すべてのチャートのシリーズ/マーカーの新しい色パレット。すべてのタイプのチャート/シリーズには、ブラシ/塗りつぶしとアウトラインの新しい色があります。
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
 
-古いシリーズのブラシのアウトライン  | 新シリーズのブラシのアウトライン
+例:
+
+|
 ------------- | -------------
-`Color_001=#7446B9`  | `Color_001=#8bdc5c`
-`Color_002=#9FB328`  | `Color_002=#8b5bb1`
-`Color_003=#F96232`  | `Color_003=#6db1ff`
-`Color_004=#2E9CA6`  | `Color_004=#f8a15f`
-`Color_005=#DC3F76`  | `Color_005=#ee5879`
-`Color_006=#FF9800`  | `Color_006=#735656`
-`Color_007=#3F51B5`  | `Color_007=#f7d262`
-`Color_008=#439C47`  | `Color_008=#8ce7d9`
-`Color_009=#795548`  | `Color_009=#e051a9`
-`Color_010=#9A9A9A`  | `Color_010=#a8a8b7`
-
-例
-
 <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
-------------- | -------------
 <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
 
 <div class="divider--half"></div>
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
-* 散布高密度シリーズの最小/最大ヒート プロパティの色を変更しました。
-
-    古いヒート最小色  | 新しいヒート最小色
-    ------------- | -------------
-    `#FF7446B9` | `#ff8b5bb1`
-
-    古いヒート最大色  | 新しいヒート最大色
-    ------------- | -------------
-    `#FFC62828`  | `#ffee5879`
-
-* ファイナンシャル/ウォーターフォール シリーズのビジュアルの負の塗りつぶしの色を変更しました。
-
-    古いマイナス値のブラシ | 新しいマイナス値のブラシ
-    ------------- | -------------
-    `#FFC62828`  | `#ffee5879`
-
+* heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
+* heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
+* ファイナンシャル/ウォーターフォール シリーズの `NegativeBrush` および `NegativeOutline` プロパティを <span style="color:#C62828">#C62828</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
 * マーカーの厚さを 1px から 2px に変更しました。
-* PointSeries、BubbleSeries、ScatterSeries、PolarScatterSeries のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。
-    - `MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
-* TimeXAxis および OrdinalTimeXAxis のラベリングを圧縮しました。
+* `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
+* `TimeXAxis` および `OrdinalTimeXAxis` のラベリングを圧縮しました。
 * 新しいマーカー プロパティ:
-    - `MarkerFillMode` - マーカーがアウトラインに依存するように、'MatchMarkerOutline' に設定できます。
-    - `MarkerFillOpacity` - 0〜1 の値に設定できます。
-    - `MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、'MatchMarkerBrush' に設定できます。
-* 新シリーズ `OutlineMode` プロパティ:
-    - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
-* 新しいプロット エリア マージン プロパティ:
-    - `PlotAreaMarginLeft`
-    - `PlotAreaMarginTop`
-    - `PlotAreaMarginRight`
-    - `PlotAreaMarginBottom`
-    - `ComputedPlotAreaMarginMode`
-    - プロット領域のマージン プロパティは、チャートがデフォルト ズーム レベルにある場合、ビューポートのブリード オーバー領域を定義します。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
+    - シリーズ。`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
+    - シリーズ。`MarkerFillOpacity` - 0〜1 の値に設定できます。
+    - シリーズ。`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、`MatchMarkerBrush` に設定できます。
+* 新シリーズプロパティ:
+    - シリーズ。`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
+    - チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します:
+    - チャート。`PlotAreaMarginLeft`
+    - チャート。`PlotAreaMarginTop`
+    - チャート。`PlotAreaMarginRight`
+    - チャート。`PlotAreaMarginBottom`
+    - チャート。`ComputedPlotAreaMarginMode`
 * 新しい強調表示プロパティ:
-    - `HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
-    - `HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
+    - チャート。`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
+    - チャート。`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
     - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
-* 次のシリーズの強調表示を追加しました:
-    - 積層型
-    - 散布図
-    - 極座標
-    - ラジアル
-    - 図形
-* 次のシリーズに注釈レイヤーを追加しました:
-    - 積層型
-    - 散布図
-    - 極座標
-    - ラジアル
-    - 図形
+* 積層型、散布図、極座標、ラジアル、図形シリーズに強調表示を追加しました。
+* 積層型、散布図、極座標、ラジアル、図形注釈レイヤーを追加しました。
 * 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
 * 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
 * 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
@@ -109,12 +105,8 @@ _language: ja
 
 ### チャート凡例
 
-* ItemLegend に水平方向を追加しました。
-   - 次のチャート タイプでは、ItemLegend を水平方向で使用できます:
-        - バブル
-        - ドーナツ
-        - 円
-* `LegendHighlightingMode` - 凡例項目にカーソルを合わせると、シリーズの強調表示が有効になります。
+*バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
+* `LegendHighlightingMode` プロパティを追加 - 凡例項目にカーソルを合わせたときにシリーズの強調表示を有効にします。
 
 ### 地理マップ
 
@@ -133,22 +125,15 @@ _language: ja
 ### データ グリッド
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
-
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
-
 * `EnterKeyBehaviors` プロパティ (別名 Excel スタイルのナビゲーション (Enter 動作)) を追加して、Enter キーの動作を制御します。例えば、オプションは (なし、編集、上、下、左、右に移動) です。
-
 * `EnterKeyBehaviorAfterEdit` プロパティを追加しました - 編集モードでは、このプロパティは Enter キーが押されたときを制御します。例えば、オプションは (下、上、右、左のセルに移動) です。
-
 * `SelectAllRows` メソッドを追加しました。
-
 * 行範囲の選択を追加しました - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
     - Shift キーを押しながらクリックして、複数の行を選択します。
     - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
-
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
-
 * 列オプション ダイアログに列集計を追加しました。
 
 ### 日付ピッカー
@@ -209,7 +194,6 @@ income.field = "Income";
 
 ```
 ## **$Platform$ {PackageVerRenamedGrid}**
-
 ### データ グリッド
 
 - Live Grid の名称変更
