@@ -1267,13 +1267,14 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Menus",
     "header": true
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Navbar",
-    "href": "navbar.md",
+    "href": "menus/navbar.md",
     "status": "NEW"
   }
 ]
