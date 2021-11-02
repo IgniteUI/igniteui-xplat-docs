@@ -1,9 +1,18 @@
-## $Platform$ Navigation Drawer Overview
+# $Platform$ Navigation Drawer Overview
 
 The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 > [!NOTE]
 > Since the Navigation Drawer component uses ShadowDOM and slots, it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
+
+## $Platform$ Navigation Drawer Example
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
+           alt="$Platform$ Navigation Drawer Items Example"
+           github-src="menus/nav-drawer/add-drawer-items">
+</code-view>
 
 ## Usage
 
@@ -19,7 +28,7 @@ The next step is to import IgniteUI WebComponents package in your typescript fil
 import 'igniteui-webcomponents';
 ```
 
-### Adding Navigation Drawer Items
+## Adding Navigation Drawer Items
 
 After the Navigation Drawer component is imported, we are ready to start using it! We can add the following code that displays a simple Navigation Drawer with some items:
 
@@ -98,10 +107,10 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
-    <igc-radio name="position" value="start" label-position="after">Start</igc-radio>
+    <igc-radio name="position" value="start" label-position="after" checked>Start</igc-radio>
     <igc-radio name="position" value="end" label-position="after">End</igc-radio>
-    <igc-radio name="position" value="top" label-position="after" checked="true">Top</igc-radio>
-    <igc-radio name="position" value="bottom" label-position="after" checked="true">Bottom</igc-radio>
+    <igc-radio name="position" value="top" label-position="after">Top</igc-radio>
+    <igc-radio name="position" value="bottom" label-position="after">Bottom</igc-radio>
 </igc-radio-group>
 ```
 
@@ -176,7 +185,7 @@ And here's the result:
 
 ## Styling the Navigation Drawer
 
-The navigation drawer component exposes several CSS parts (`base`, `main`, and `mini`) to give you full control over its styling.
+The navigation drawer component exposes several CSS parts - `base`, `main`, and `mini`. The navigation drawer item component exposes three CSS parts as well - `base`, `icon` and `content`, giving you full control over their styling.
 
 ```scss
 igc-nav-drawer::part(base) {
