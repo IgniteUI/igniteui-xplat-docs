@@ -1,11 +1,11 @@
 ---
 title: Card Component
 _description: Present users with dashboards and engaging text, images, icons or buttons as an entry point for detailed information with Ignite UI for Web Card component.
-_keywords: Ignite UI for Web Components, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
+_keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
 ---
 
 # Card
-<p class="highlight">The Ignite UI for Web Components [`IgcCardComponent`]({environment:angularApiUrl}/classes/IgcCardComponent.html) displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
+<p class="highlight">The $ProductName$ [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
 
 ## Card Example
 
@@ -24,7 +24,7 @@ Cards allow you to easily display content composed of different types of objects
 
 ### Getting Started
 
-Import `igniteui-webcomponents` inside our **index.ts** file:
+Import `igniteui-webcomponents` inside our typescript file:
 
 ```typescript
 // index.ts
@@ -33,7 +33,7 @@ import 'igniteui-webcomponents';
 
 ```
 
-Then to represent the demo card template we can add the following code to our **index.html** file.
+Then, to represent the demo card template, we can add the following code to our html file.
 
 ```html
 <igc-card>
@@ -67,7 +67,7 @@ Then to represent the demo card template we can add the following code to our **
 </igc-card>
 ```
 
-You will notice a few things above. First when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the `igc-card-header` tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
+You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the `igc-card-header` tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
 Any image or video we want to show in the card, we wrap inside the `igc-card-media` tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
@@ -78,18 +78,18 @@ Finally, the `igc-card-actions` is where you'd place any actionable items, like 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
 
-Taking the card above as an example, we can edit the contents of the `igc-card-header` and add an icon with `slot="thumbnail"`:
+Taking the card above as an example, we can edit the contents of the `igc-card-header` and add an avatar with `slot="thumbnail"`:
 
 ```html
 <igc-card-header>
-    <igc-icon slot="thumbnail">place</igc-icon>
+    <igc-avatar slot="thumbnail" src="path/to/image" initials="TS"></igc-avatar>
     
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
 ```
 
-The above example will show the icon alongside the title and subtitle in the card header.
+The above example will show the avatar alongside the title and subtitle in the card header.
 
 ### Outlined cards
 The card has an `outlined` attribute which, if set, removes any shadows from the card, replacing them with a thin border to separate the card from the background.
@@ -266,24 +266,24 @@ igc-icon-button::part(icon) {
 
 
 ### Summary
-In this article we covered a lot of ground with the card component. We created a simple card and added some images to make the card a bit more appealing. We used some additional Ignite UI Web components inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing some colors of the building blocks.
+In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
 ## API and Style References
 
 For more detailed information regarding the card's API, refer to the following links:
-* [`IgcCardComponent API`]({environment:angularApiUrl}/classes/IgcCardComponent.html)
+* [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
 
 The following built-in CSS styles helped us achieve this card layout:
 
-* [`IgcCardComponent Styles`]({environment:sassApiUrl}/index.html#function-igc-card-theme)
+* [`IgcCardComponent Styles`]({environment:wcApiUrl}/index.html#function-igc-card-theme)
 
 Additional components and/or directives that were used:
 
-* [`IgcAvatarComponent`]({environment:angularApiUrl}/classes/igcavatarcomponent.html)
-* [`IgcIconComponent`]({environment:angularApiUrl}/classes/igciconcomponent.html)
-* [`IgcButtonComponent`]({environment:angularApiUrl}/classes/igcbuttoncomponent.html)
-* [`IgcIconButtonComponent`]({environment:angularApiUrl}/classes/igciconbuttoncomponent.html)
-* [`IgcRippleComponent`]({environment:angularApiUrl}/classes/igcripplecomponent.html)
+* [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/igcavatarcomponent.html)
+* [`IgcIconComponent`]({environment:wcApiUrl}/classes/igciconcomponent.html)
+* [`IgcButtonComponent`]({environment:wcApiUrl}/classes/igcbuttoncomponent.html)
+* [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/igciconbuttoncomponent.html)
+* [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html)
 
 Styles:
 
@@ -303,5 +303,5 @@ Styles:
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
+* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
