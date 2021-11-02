@@ -1275,5 +1275,16 @@
     "name": "Form",
     "href": "data/form.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Scheduling",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Calendar",
+    "href": "calendar.md",
+    "status": "NEW"
   }
 ]
