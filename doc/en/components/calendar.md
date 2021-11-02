@@ -78,7 +78,7 @@ Following the same approach, we can switch to `range` selection mode:
 
 The Calendar component allows you to switch between three different views: days, months and years. The `activeView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `activeDate` property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
 
-### Header
+### Header Options
 
 By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `hasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `headerOrientation` property.
 
