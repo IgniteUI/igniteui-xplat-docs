@@ -14,9 +14,9 @@ The following example represents a form that has some inputs, buttons and a chec
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/data/form-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
            alt="$Platform$ Form Example"
-           github-src="data/form/overview">
+           github-src="inputs/form/overview">
 </code-view>
 
 ## Dependencies
