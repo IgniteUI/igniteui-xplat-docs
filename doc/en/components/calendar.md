@@ -244,6 +244,17 @@ The following sample demonstrates the multiple months configuration:
            github-src="scheduling/calendar/multiple-months">
 </code-view>
 
+### Size
+
+You could control the size and spacing of the Calendar inner elements by changing its `size` property. The default `size` value is `large`.
+
+<code-view style="height: 520px" 
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
+           alt="$Platform$ Calendar Size Example"
+           github-src="scheduling/calendar/size">
+</code-view>
+
 ### Events
 
 The Calendar component emits the `igcChange` event when the selected dates are changed by the end user. You can subscribe to the event like this:
