@@ -26,7 +26,7 @@ This release introduces a few improvements and simplifications to visual design 
 * Changed `YAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
 * Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
-* Added support for representing geographic series of `GeographicMap` in `Legend`
+* Added support for representing geographic series of `GeographicMap` in a legend
 * Added crosshair lines by default in `FinancialChart` and `CategoryChart`
 * Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
 * Added final value annotation by default in `FinancialChart`
