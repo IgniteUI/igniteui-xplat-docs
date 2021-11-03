@@ -105,7 +105,7 @@ For more detailed information regarding the navbar's API, refer to the following
 * [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
 
 <div class="divider"></div>
 
