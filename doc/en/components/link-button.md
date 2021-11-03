@@ -13,7 +13,7 @@ The $Platform$ Link Button provides different variants and styles, which are eas
 
 ## Usage
 
-To get started with the Link Button Web Component we need to import the `IgcLinkButtonComponent` in our typescript file:
+To get started with the Link Button Web Component we need to import the [`IgcLinkButtonComponent`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html) in our typescript file:
 
 ```ts
 import { IgcLinkButtonComponent } from 'igniteui-webcomponents'; 
@@ -42,7 +42,7 @@ set the `href`, `rel`, `target` and `download` attributes of the link button.
 
 ### Flat Button
 
-Use `flat` variant to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
+Use `flat` [`variant`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#variant) to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
 
 ```html
 <igc-link-button
@@ -106,7 +106,7 @@ And for a floating action button, we can switch to `fab` variant:
 
 ### Disable Link Button
 
-The `disabled` property can be used to make a button unclickable:
+The [`disabled`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#disabled) property can be used to make a button unclickable:
 
 ```html
 <igc-link-button variant="contained" disabled>Disabled</igc-link-button>
@@ -118,7 +118,7 @@ The `disabled` property can be used to make a button unclickable:
 
 ### Download
 
-By setting a URL to `download` property, we can make the link button download a file when it is clicked.
+By setting a URL to [`download`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#download) property, we can make the link button download a file when it is clicked.
 
 ```html
 <igc-link-button
@@ -135,7 +135,7 @@ By setting a URL to `download` property, we can make the link button download a 
 
 ## Size
 
-We can allow the user to choose the size of the `igc-link-button` by using its [`size`]() property. То demonstrate this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+We can allow the user to choose the size of the `igc-link-button` by using its [`size`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) property. То demonstrate this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
@@ -194,15 +194,16 @@ igc-link-button::part(base) {
 
 ## API Reference
 
-* [IgcLinkButtonComponent]()
+* [IgcLinkButtonComponent]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html)
 
 Additional Web Components that were used:
 
-* [IgcRadioGroupComponent]()
-* [IgcRadioComponent]()
+* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
+* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
 
 ## Additional Resources
 
 <div class="divider--half"></div>
 
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
