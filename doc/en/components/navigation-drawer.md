@@ -219,19 +219,26 @@ igc-nav-drawer-header-item {
 
 ## API References
 
-* [IgcNavDrawerComponent]()
-* [IgcNavDrawerItemComponent]()
-* [IgcNavDrawerHeaderItemComponent]()
+* [IgcNavDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html)
+* [IgcNavDrawerItemComponent]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html)
+* [IgcNavDrawerHeaderItemComponent]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html)
 
 Additional Web Components that were used:
 
-* [IgcIconComponent]()
-* [IgcButtonComponent]()
-* [IgcRadioComponent]()
-* [IgcRadioGroupComponent]()
+* [IgcIconComponent]({environment:wcApiUrl}/classes/igciconcomponent.html)
+* [IgcButtonComponent]({environment:wcApiUrl}/classes/igcbuttoncomponent.html)
+* [IgcRadioComponent]({environment:wcApiUrl}/classes/igcradiocomponent.html)
+* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
 
 ## Additional Resources
 
 <div class="divider--half"></div>
 
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<div class="divider--half"></div>
+
+Our community is active and always welcoming to new ideas.
+
+* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
+* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
