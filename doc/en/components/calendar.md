@@ -76,11 +76,11 @@ Following the same approach, we can switch to `range` selection mode:
 
 ### Active View and Date
 
-The Calendar component allows you to switch between three different views: days, months and years. The [`activeView`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activeview) property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the [`activeDate`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activedate) property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
+The Calendar component allows you to switch between three different views: days, months and years. The [`activeView`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activeView) property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the [`activeDate`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activeDate) property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
 
 ### Header Options
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the [`hasHeader`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hasheader) property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the [`headerOrientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#headerorientation) property.
+By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the [`hasHeader`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hasHeader) property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the [`headerOrientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#headerOrientation) property.
 
 > [!NOTE]
 > Please note that the Calendar header is not rendered when the selection is `multiple`.
@@ -107,7 +107,7 @@ The following sample demonstrates the above configuration:
 
 ### Localization and Formatting
 
-Due to their very nature, localization and formatting are essential to any calendar. In the `IgcCalendarComponent` those are controlled and customized through the following properties - [`locale`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#locale), [`formatOptions`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#formatoptions), [`weekStart`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#weekstart).
+Due to their very nature, localization and formatting are essential to any calendar. In the `IgcCalendarComponent` those are controlled and customized through the following properties - [`locale`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#locale), [`formatOptions`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#formatOptions), [`weekStart`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#weekStart).
 
 Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
 
@@ -155,7 +155,7 @@ If everything went well, we should now have a Calendar with customized display, 
 
 ### Disabled dates
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the [`disabledDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#disableddates) property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
+In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the [`disabledDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#disabledDates) property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
 
 These are the available options for the `type` property:
 *  `After` - disables the dates after the first date in the `dateRange`
@@ -188,7 +188,7 @@ These configurations should have the following result:
 
 ### Special dates
 
-The [`specialDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#specialdates) property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
+The [`specialDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#specialDates) property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
 
 Let's add some special dates to our Calendar. In order to do this, we will create a `DateRangeDescriptor` and pass the dates between the 3rd and the 8th of the current month:
 
@@ -213,7 +213,7 @@ The following demo illustrates a Calendar with a vacation request option:
 
 ### Week numbers
 
-You can use the [`showWeekNumbers`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#showweeknumbers) property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
+You can use the [`showWeekNumbers`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#showWeekNumbers) property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
 
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
@@ -229,9 +229,9 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 ### Multiple Months
 
-Using the [`visibleMonths`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#visiblemonths) property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the [`orientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#orientation) property. By default the `orientation` property is set to `horizontal`.
+Using the [`visibleMonths`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#visibleMonths) property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the [`orientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#orientation) property. By default the `orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the [`hideOutsideDays`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hideoutsidedays) property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the [`hideOutsideDays`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hideOutsideDays) property to `true` or using its corresponding boolean attribute `hide-outside-days`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
