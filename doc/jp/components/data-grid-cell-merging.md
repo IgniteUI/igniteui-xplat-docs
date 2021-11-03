@@ -30,7 +30,7 @@ $Platform$ データ グリッドでのセルの結合は、$Platform$ グリッ
 - `Always`: グリッドは常にセルの結合を試みます。
 - `OnlyWhenSorted`: グリッドは、列がソートされたときにのみセルの結合を試みます。
 
-Note, regardless of the value of this property, cells can only be merged across sibling records.
+このプロパティの値に関係なく、セルは兄弟レコード間でのみ結合できることに注意してください。
 
 さらに、フォーマットが適用されているかどうかに応じて使用できる  `MergedCellEvaluationCriteria` プロパティがあります。このプロパティには、以下に示す 2 つのオプションがあります:
 

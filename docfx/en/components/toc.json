@@ -1271,5 +1271,16 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Scheduling",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Calendar",
+    "href": "calendar.md",
+    "status": "NEW"
   }
 ]
