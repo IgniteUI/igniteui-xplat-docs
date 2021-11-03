@@ -268,7 +268,7 @@ igc-icon-button::part(icon) {
 ### Summary
 In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
-## API and Style References
+## API References
 
 For more detailed information regarding the card's API, refer to the following links:
 * [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
