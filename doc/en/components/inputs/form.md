@@ -48,9 +48,11 @@ import 'igniteui-webcomponents';
 ```
 
 Form data is collected for the following components:
+- [`igc-checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
 - [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
 - [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
 - [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+- checkbox
 - input
 - radio
 - select
@@ -85,6 +87,19 @@ The Form component exposes the following methods:
 |[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
 |[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
 
+## API References
+
+For more detailed information regarding the form's API, refer to the following links:
+* [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
+
+Additional components and/or directives that were used:
+- [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+- [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+
+<div class="divider"></div>
 ## Additional Resources
 
 <div class="divider--half"></div>
