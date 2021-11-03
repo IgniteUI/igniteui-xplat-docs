@@ -1265,5 +1265,16 @@
     "name": "ズーム スライダー",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スケジュール",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "カレンダー",
+    "href": "calendar.md",
+    "status": "NEW"
   }
 ]
