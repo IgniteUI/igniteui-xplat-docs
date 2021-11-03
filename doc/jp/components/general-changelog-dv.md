@@ -3,6 +3,7 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart"]
 ---
 # $ProductName$ 変更ログ (データ可視化)
 

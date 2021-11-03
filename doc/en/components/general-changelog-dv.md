@@ -2,6 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart"]
 ---
 # $ProductName$ Changelog (Data Visualization)
 
@@ -26,7 +27,7 @@ This release introduces a few improvements and simplifications to visual design 
 * Changed `YAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
 * Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
-* Added support for representing geographic series of `GeographicMap` in a legend
+* Added support for representing geographic series of `GeographicMap` in a `Legend`
 * Added crosshair lines by default in `FinancialChart` and `CategoryChart`
 * Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
 * Added final value annotation by default in `FinancialChart`
