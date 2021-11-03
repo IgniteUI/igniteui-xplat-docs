@@ -6,7 +6,7 @@ mentionedTypes: ['Form']
 ---
 # $Platform$ Form Overview
 
-The form component collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+The [`IgcFormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
 ## $Platform$ Form Example
 
@@ -48,16 +48,16 @@ import 'igniteui-webcomponents';
 ```
 
 Form data is collected for the following components:
+- [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+- [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+- [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 - input
-- igc-input
 - radio
-- igc-radio
 - select
 - switch
-- igc-switch
 - textarea
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the `novalidate` attribute to the `<igc-form>` element.
+When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element.
 
 ### Events
 
@@ -65,7 +65,7 @@ The Form component raises the following events:
 - igcSubmit - Raised when the form is submitted
 - igcReset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the [`igcSubmit`](link) event:
+Here is an example showing how to add an event listener for the [`igcSubmit`] event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -80,7 +80,15 @@ The Form component exposes the following methods:
 
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
-|`submit`|Submits the form data.|
-|`reset`|Resets the form data.|
-|`getFormData`|Collects the form data and returns a single FormData object.|
-|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
+|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|Submits the form data.|
+|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|Resets the form data.|
+|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
+|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
+
+## Additional Resources
+
+<div class="divider--half"></div>
+Our community is active and always welcoming to new ideas.
+
+* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
