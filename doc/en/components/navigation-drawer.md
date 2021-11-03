@@ -1,6 +1,6 @@
 # $Platform$ Navigation Drawer Overview
 
-The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The Infragistics $Platform$ [IgcNavDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html) is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 ## $Platform$ Navigation Drawer Example
 
@@ -19,7 +19,7 @@ To get started with the Navigation Drawer Web component, first you need to insta
 npm install igniteui-webcomponents
 ```
 
-The next step is to import IgniteUI WebComponents package in your typescript file where you want to use it:
+Next, you need to import the package in your typescript file where you want to use it:
 
 ```ts
 import 'igniteui-webcomponents';
@@ -58,9 +58,9 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
-While any content can be provided in the drawer, the `igc-nav-drawer-item` is available to apply out-of-the-box styling to the items.
+While any content can be provided in the drawer, the [`igc-nav-drawer-item`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) is available to apply out-of-the-box styling to the items.
 
-To enhance our component a bit, we can use it in conjunction with the `IgcNavbarComponent`. This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
+To enhance our component a bit, we can use it in conjunction with the [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/igcnavbarcomponent.html). This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
 
 ```html
     <igc-navbar>
@@ -87,7 +87,7 @@ To enhance our component a bit, we can use it in conjunction with the `IgcNavbar
     </div>
 ```
 
-Let's also add some radio buttons to display all `position` values. This way whenever one gets selected, we will change the position of the drawer.
+Let's also add some radio buttons to display all [`position`]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html#position) values. This way whenever one gets selected, we will change the position of the drawer.
 
 ```ts
 // ...
@@ -228,10 +228,6 @@ Additional Web Components that were used:
 * [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
 
 ## Additional Resources
-
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <div class="divider--half"></div>
 
