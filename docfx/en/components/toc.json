@@ -1267,13 +1267,13 @@
     "status": ""
   },
   {
-    "name": "Data Entry & Display",
+    "name": "Inputs",
     "header": true
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Form",
-    "href": "data/form.md",
+    "href": "inputs/form.md",
     "status": "NEW"
   },
   {
