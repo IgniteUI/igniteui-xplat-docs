@@ -1287,5 +1287,11 @@
     "name": "Button",
     "href": "button.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Link Button",
+    "href": "link-button.md",
+    "status": "NEW"
   }
 ]
