@@ -2,9 +2,6 @@
 
 The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
-> [!NOTE]
-> Since the Navigation Drawer component uses ShadowDOM and slots, it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
-
 ## $Platform$ Navigation Drawer Example
 
 <code-view style="height: 300px"
