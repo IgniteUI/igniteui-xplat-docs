@@ -13,7 +13,7 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
-To get started with the Button Web Component we need to import the `IgcButtonComponent` in our typescript file:
+To get started with the Button Web Component we need to import the [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) in our typescript file:
 
 ```ts
 import { IgcButtonComponent } from 'igniteui-webcomponents'; 
@@ -31,7 +31,7 @@ After we import the button component we are ready to start using it, so let's ad
 
 With `prefix` and `suffix` slots we can add a different content before and after the main content of the button.
 
-We can also specify button [`type`]() by setting some of the following values:
+We can also specify button [`type`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#type) by setting some of the following values:
 
 - `submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
@@ -42,7 +42,7 @@ We can also specify button [`type`]() by setting some of the following values:
 
 ### Flat Button
 
-Use `variant` attribute to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
+Use [`variant`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#variant) attribute to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
 
 ```html
 <igc-button variant="flat">Flat</igc-button>
@@ -90,7 +90,7 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ## Button Sizing
 
-We can allow the user to choose the size of the `igc-button` by using its `size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+We can allow the user to choose the size of the `igc-button` by using its [`size`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
@@ -149,15 +149,16 @@ igc-button::part(base) {
 
 ## API Reference
 
-* [IgcButtonComponent]()
+* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
 
 Additional Web Components that were used:
 
-* [IgcRadioGroupComponent]()
-* [IgcRadioComponent]()
+* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
+* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
 
 ## Additional Resources
 
 <div class="divider--half"></div>
 
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
