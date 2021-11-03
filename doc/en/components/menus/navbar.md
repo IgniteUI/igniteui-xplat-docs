@@ -6,7 +6,7 @@ mentionedTypes: ['Navbar']
 ---
 # $Platform$ Navbar Overview
 
- $Platform$ Navigation Bar component informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+ $Platform$ [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 ## $Platform$ Navbar Example
 
@@ -43,7 +43,7 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Customize Content
 
-In order to customize the content of our `Navbar` we can add some icons using the `start` and `end` slots:
+In order to customize the content of our `Navbar` we can add some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
 
 ```html
 <igc-navbar style="height:40px">
@@ -66,7 +66,7 @@ If all went well, you should see the following in your browser:
 
 ## Styling
 
-The radio component exposes several CSS parts (`base`, `start`, `middle` and `end`) to give you full control over its styling.
+The Navigation Bar component exposes several CSS parts (`base`, `start`, `middle` and `end`) to give you full control over its styling.
 
 ```css
 igc-icon {
@@ -98,6 +98,16 @@ If all went well, you should see the following in your browser:
            alt="$Platform$ Navbar Styling Example"
            github-src="menus/navbar/styling">
 </code-view>
+
+## API References
+
+For more detailed information regarding the navbar's API, refer to the following links:
+* [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
+
+Additional components and/or directives that were used:
+* [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+
+<div class="divider"></div>
 
 ## Additional Resources
 
