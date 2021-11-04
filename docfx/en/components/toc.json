@@ -1289,6 +1289,18 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
+    "name": "Button",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Link Button",
+    "href": "inputs/link-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Menus",
     "header": true
   },
@@ -1307,23 +1319,6 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Calendar",
     "href": "calendar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Data Entry & Display",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Button",
-    "href": "button.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Link Button",
-    "href": "link-button.md",
     "status": "NEW"
   }
 ]
