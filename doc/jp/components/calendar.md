@@ -1,41 +1,41 @@
 ---
-title: $Platform$ Calendar | Calendar | Infragistics
-_description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
-_keywords: $Platform$ Calendar, $ProductName$, Infragistics
+title: $Platform$ Calendar | Calendar | インフラジスティックス
+_description: アプリケーションが日付情報を表示し、ユーザーが $ProductName$ Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
+_keywords: $Platform$ Calendar, $Platform$ カレンダー, $ProductName$, インフラジスティックス
 _language: ja
 ---
 
-# $Platform$ Calendar Overview
-The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
+# $Platform$ Calendar (カレンダー) の概要
+$ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。
 
 
-## $Platform$ Calendar Example
+## $Platform$ Calendar の例
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="$Platform$ Calendar Example"
+           alt="$Platform$ Calendar の例"
            github-src="scheduling/calendar/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
-To get started with the Calendar component, first you need to install $ProductName$ package by typing the following command:
+Calendar コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ パッケージをインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the `IgcCalendarComponent`:
+次の手順は、`IgcCalendarComponent` をインポートすることです:
 
 ```ts
 import { IgcCalendarComponent } from 'igniteui-webcomponents/src/components/calendar/calendar';
 ```
 
-### Single Selection Calendar
+### 単一選択の Calendar
 
-Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. This will display the current month in single selection mode.
+`IgcCalendarComponent` のインスタンス化は、html に配置するのと同じくらい簡単です。これにより、現在の月が単一選択モードで表示されます。
 
 
 ```html
@@ -43,9 +43,9 @@ Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. T
 <igc-calendar></igc-calendar>
 ```
 
-### Multiple Selection
+### 複数選択
 
-We can easily change the default mode using the `selection` property:
+`selection` プロパティを使用して、デフォルト モードを簡単に変更できます:
 
 ```html
 <!-- Multiple selection mode -->
@@ -55,13 +55,13 @@ We can easily change the default mode using the `selection` property:
 <code-view style="height: 370px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="$Platform$ Calendar Multiple Selection Example"
+           alt="$Platform$ Calendar 複数選択の例"
            github-src="scheduling/calendar/multiple-selection ">
 </code-view>
 
-### Range Selection
+### 範囲選択
 
-Following the same approach, we can switch to `range` selection mode:
+同じ方法に従って、`range` 選択モードに切り替えることができます:
 
 ```html
 <!-- Range selection mode -->
@@ -71,25 +71,25 @@ Following the same approach, we can switch to `range` selection mode:
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="$Platform$ Calendar Range Selection Example"
+           alt="$Platform$ Calendar 範囲選択の例"
            github-src="scheduling/calendar/range-selection">
 </code-view>
 
-### Active View and Date
+### Active View と Date
 
-The Calendar component allows you to switch between three different views: days, months and years. The `activeView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `activeDate` property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
+Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `activeView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`activeDate` プロパティを設定することで変更できます。`activeDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
 
-### Header Options
+### ヘッダー オプション
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `hasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `headerOrientation` property.
-
-> [!NOTE]
-> Please note that the Calendar header is not rendered when the selection is `multiple`.
+デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`hasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`headerOrientation` プロパティを使用して、ヘッダーの`垂直方向`または`水平方向`を構成することもできます。
 
 > [!NOTE]
-> Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `headerOrientation` property corresponds to the `header-orientation` attribute.
+> 選択が複数の場合、Calendar ヘッダーが描画されないことに注意してください。
 
-The $ProductName$ Calendar component exposes a `title` slot which allows you to customize the title of the header.
+> [!NOTE]
+> Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`headerOrientation` プロパティは `header-orientation` 属性に対応します。
+
+$ProductName$ Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
 
 ```html
 <igc-calendar selection="range" header-orientation="vertical">
@@ -97,20 +97,20 @@ The $ProductName$ Calendar component exposes a `title` slot which allows you to 
 </igc-calendar>
 ```
 
-The following sample demonstrates the above configuration:
+次のサンプルは、上記の構成を示しています:
 
 <code-view style="height: 370px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="$Platform$ Calendar Header Example"
+           alt="$Platform$ Calendar ヘッダーの例"
            github-src="scheduling/calendar/header">
 </code-view>
 
-### Localization and Formatting
+### ローカライズおよび書式設定
 
-Due to their very nature, localization and formatting are essential to any calendar. In the `IgcCalendarComponent` those are controlled and customized through the following properties - `locale`, `formatOptions`, `weekStart`.
+カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`IgcCalendarComponent` では、これらは `locale`、`formatOptions`、`weekStart` のプロパティを介して制御およびカスタマイズされます。
 
-Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
+先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `weekStart` です。デフォルトは `sunday` なので、`monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `formatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`locale` プロパティを値に設定します:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -145,28 +145,28 @@ this.radios.forEach(radio => {
 })
 ```
 
-If everything went well, we should now have a Calendar with customized display, that also changes the locale representation, based on the user selection. Let's have a look at it:
+すべて適切に設定できると、カスタマイズされた表示の Calendar ができあがります。これにより、ユーザーの選択に基づいてロケールの表現も変更されます。以下は結果です:
 
 <code-view style="height: 520px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="$Platform$ Calendar Formatting Example"
+           alt="$Platform$ Calendar 書式設定の例"
            github-src="scheduling/calendar/formatting">
 </code-view>
 
-### Disabled dates
+### 日付の無効化
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `disabledDates` property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
+場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`disabledDates` プロパティを使用して実現されます。`disabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `type` があり、オプションで `Date` オブジェクトの配列である `dateRange` があります。
 
-These are the available options for the `type` property:
-*  `After` - disables the dates after the first date in the `dateRange`
-*  `Before` - disables the dates before the first date in the `dateRange`
-*  `Between` - disables the dates between the first and the second date in the `dateRange`
-*  `Specific` - disables the dates specified in the `dateRange` array
-*  `Weekdays` - disables all weekdays
-*  `Weekends` - disables all weekends
+`type` プロパティで使用できるオプションは次のとおりです:
+*  `After` - `dateRange` の最初の日付以降の日付を無効にします。
+*  `Before` - `dateRange` の最初の日付より前の日付を無効にします。
+*  `Between` - `dateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
+*  `Specific` - dateRange 配列で指定された日付を無効にします。
+*  `Weekdays` - すべての平日を無効にします。
+*  `Weekends` - すべての週末を無効にします。
 
-Let's create a sample that is disabling the dates between the 3rd and the 8th of the current month:
+現在の月の 3 日から 8 日の日付を無効にするサンプルを作成します。
 
 ```ts
 const today = new Date(Date.now());
@@ -178,20 +178,20 @@ const range = [
 this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
-These configurations should have the following result:
+これらの構成では、次の結果が得られます:
 
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="$Platform$ Calendar Disabled Dates Example"
+           alt="$Platform$ Calendar 無効な日付の例"
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
-### Special dates
+### 特定の日付
 
-The `specialDates` property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
+`specialDates` プロパティは、`disabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
 
-Let's add some special dates to our Calendar. In order to do this, we will create a `DateRangeDescriptor` and pass the dates between the 3rd and the 8th of the current month:
+Calendar に特別な日付を追加しましょう。これを行うために、`DateRangeDescriptor` を作成し、現在の月の 3 日から 8 日までの日付を渡します。
 
 ```ts
 const today = new Date();
@@ -203,149 +203,149 @@ const range = [
 this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }];
 ```
 
-The following demo illustrates a Calendar with a vacation request option:
+次のデモは、休暇申請オプション付きの Calendar を示しています。
 
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="$Platform$ Calendar Special Dates Example"
+           alt="$Platform$ Calendar 特定の日付の例"
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
-### Week numbers
+### 週番号
 
-You can use the `showWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
+`showWeekNumbers` プロパティを使用して、Calendar コンポーネントの週番号を表示できます。これを行うには、対応するブール属性 `show-week-numbers` を次のように使用します:
 
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
 ```
-The following demo illustrates a Calendar with enabled week numbers:
+次のデモは、週番号が有効になっている Calendar を示しています:
 
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="$Platform$ Calendar Week Numbers Example"
+           alt="$Platform$ Calendar 週番号の例"
            github-src="scheduling/calendar/week-numbers">
 </code-view>
 
-### Multiple Months
+### 複数の月
 
-Using the `visibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `orientation` property. By default the `orientation` property is set to `horizontal`.
+`visibleMonths` プロパティを使用すると、Calendar が日ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`orientation` プロパティは `horizontal` に設定されています。
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `hideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`hideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `hide-outside-days` を使用します。
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
 ```
 
-The following sample demonstrates the multiple months configuration:
+次のサンプルは、複数月の構成を示しています:
 
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="$Platform$ Calendar Multiple Months Example"
+           alt="$Platform$ 複数の月の例"
            github-src="scheduling/calendar/multiple-months">
 </code-view>
 
-### Size
+### サイズ
 
-You could control the size and spacing of the Calendar inner elements by changing its `size` property. The default `size` value is `large`.
+`size` プロパティを変更することで、Calendar の内部要素のサイズと間隔を制御できます。デフォルトの `size` 値は `large` です。
 
 <code-view style="height: 520px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="$Platform$ Calendar Size Example"
+           alt="$Platform$ Calendar サイズの例"
            github-src="scheduling/calendar/size">
 </code-view>
 
-### Events
+### イベント
 
-The Calendar component emits the `igcChange` event when the selected dates are changed by the end user. You can subscribe to the event like this:
+選択した日付がエンド ユーザーによって変更されると、Calendar コンポーネントは `igcChange` イベントを発行します。このようにイベントをサブスクライブできます:
 
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
 
-## Keyboard navigation
+## キーボード ナビゲーション
 
-If you traverse the page using the <kbd>Tab</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `IgcCalendarComponent` introduces the following tab stops:
-- Month selection button
-- Year selection button
-- Previous button
-- Next button
-- Active date element
+<kbd>Tab</kbd> キーを使用してページを移動する場合、`IgcCalendarComponent` が [W3 アクセシビリティ推奨事項](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
+- [月の選択] ボタン
+- [年の選択] ボタン
+- [前へ] ボタン
+- [次へ] ボタン
+- アクティブな日付要素
 
-When a **day/month/year** in the `IgcCalendarComponent` component is focused, use:
-- <kbd>PageUp</kbd> key to move to the previous month/year/years page.
-- <kbd>PageDown</kbd> key to move to the next month/year/years page.
-- <kbd>Home</kbd> key to focus the first day of the current month/first month in view/first year in view.
-- <kbd>End</kbd> key to focus the last day of the current month/last month in view/last year in view.
-- <kbd>Arrow</kbd> keys to navigate through the days/months/years. Navigating before the first item and after the last item will switch the view to the next/previous month/year/years page.
+`IgcCalendarComponent` コンポーネントの**日/月/年**がフォーカスされている場合は、次を使用します:
+- <kbd>PageUp</kbd> キーを押すと、前の月/年のページに移動します。
+- <kbd>PageDown</kbd> キーを押すと、次の月/年のページに移動します。
+- <kbd>Home</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
+- <kbd>End</kbd> キーを押すと、当月/先月/昨年の最終日にフォーカスされます。
+- <kbd>矢印</kbd> キーを使用して、日/月/年をナビゲートします。最初の項目の前と最後の項目の後に移動すると、ビューが次/前の月/年のページに切り替わります。
 
-When a **day** inside the `days` view is focused, use:
-- <kbd>Shift</kbd> + <kbd>PageUp</kbd> keys to move to the previous year.
-- <kbd>Shift</kbd> + <kbd>PageDown</kbd> keys to move to the next year.
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to select the currently focused day.
+`days` ビュー内の**日**がフォーカスされている場合は、次を使用します:
+- <kbd>Shift</kbd> + <kbd>PageUp</kbd> キーで前年に移動します。
+- <kbd>Shift</kbd> + <kbd>PageDown</kbd> キーを押して翌年に移動します。
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、現在フォーカスされている日を選択します。
 
-When a **month** inside the `months` view is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `activeDate` to the currently focused month and switch to `days` view.
+`months` ビュー内の**月**がフォーカスされている場合は、次を使用します:
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、`activeDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
 
-When an **year** inside the `years` view is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `activeDate` to the currently focused year and switch to `months` view.
+`years` ビュー内の**年**がフォーカスされている場合は、次を使用します:
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを使用して、`activeDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
 
-When the **previous** or the **next** buttons (in the subheader) are focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to switch to the previous/next month/year/years page.
+サブヘッダー内の**前**または**次**のボタンにフォーカスがある場合は、次を使用します:
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、前/翌月/年のページに切り替わります。
 
-When the **month** button (in the subheader) is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to switch to `months` view.
+サブヘッダー内の**月**ボタンにフォーカスがある場合は、次を使用します:
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`months` ビューに切り替えます。
 
-When the **year** button (in the subheader) is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to switch to `years` view.
+サブヘッダー内の**年**ボタンにフォーカスがある場合は、次を使用します:
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、`years` ビューに切り替えます。
 
-## Styling
+## スタイル設定
 
-The Calendar component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Calendar:
+Calendar コンポーネントは、その内部要素のほぼすべての CSS パーツを公開します。次の表に、Calendar によって公開されるすべての CSS パーツを示します:
 
-|Name|Description|
+|名前|説明|
 |--|--|
-| header | The header element. |
-| header-title | The header title element. |
-| header-date | The header date element. |
-| content | The content element which contains the views and navigation elements. |
-| navigation | The navigation container element. |
-| months-navigation | The months navigation button element. |
-| years-navigation | The years navigation button element. |
-| years-range | The years range element. |
-| navigation-buttons | The navigation buttons container. |
-| navigation-button | Previous/next navigation button. |
-| days-view-container | The days view container element. |
-| days-view | Days view element. |
-| months-view | The months view element. |
-| years-view | The years view element. |
-| days-row | Days row element. |
-| label | Week header label element. |
-| week-number | Week number element. |
-| week-number-inner | Week number inner element. |
-| date | Date element. |
-| date-inner | Date inner element. |
-| first | The first selected date element. |
-| last | The last selected date element. |
-| inactive | Inactive date element. |
-| hidden | Hidden date element. |
-| weekend | Weekend date element. |
-| range | Range selected element. |
-| special | Special date element. |
-| disabled | Disabled date element. |
-| single | Single selected date element. |
-| preview | Range selection preview date element. |
-| month | Month element. |
-| month-inner | Month inner element. |
-| year | Year element. |
-| year-inner | Year inner element. |
-| selected | Indicates selected state. Applies to date, month and year elements. |
-| current | Indicates current state. Applies to date, month and year elements. |
+| header | ヘッダー要素。 |
+| header-title | ヘッダーのタイトル要素。 |
+| header-date | ヘッダーの日付要素。 |
+| content | ビューとナビゲーション要素を含むコンテンツ要素。 |
+| navigation | ナビゲーション コンテナー要素。 |
+| months-navigation | 月のナビゲーション ボタン要素。 |
+| years-navigation | 年のナビゲーション ボタン要素。 |
+| years-range | 年の範囲の要素。|
+| navigation-buttons | ナビゲーション ボタン コンテナー。 |
+| navigation-button | 前/次のナビゲーション ボタン。 |
+| days-view-container | 日ビュー コンテナー要素。 |
+| days-view | 日ビュー要素。 |
+| months-view | 月ビュー要素。 |
+| years-view | 年ビュー要素。 |
+| days-row | 日行要素。 |
+| label | 週ヘッダー ラベル要素。 |
+| week-number | 週番号要素。 |
+| week-number-inner | 週番号の内部要素。 |
+| date | 日付要素。 |
+| date-inner | 日付の内部要素。|
+| first | 最初に選択された日付要素。|
+| last | 最後に選択された日付要素。 |
+| inactive | 非アクティブな日付要素。 |
+| hidden | 非表示の日付要素。|
+| weekend | 週末の日付要素。 |
+| range | 範囲選択の要素。 |
+| special | 特別な日付要素。|
+| disabled | 無効な日付要素。|
+| single | 単一選択の日付要素。 |
+| preview | 範囲選択プレビュー日付要素。|
+| month | 月の要素。 |
+| month-inner | 月の内部要素。 |
+| year | 年の要素。 |
+| year-inner | 年の内部要素。 |
+| selected | 選択された状態を示します。日付、月、年の要素に適用されます。 |
+| current | 現在の状態を示します。日付、月、年の要素に適用されます。 |
 
-Using these CSS parts we can customize thе appearance of the Calendar component like this:
+これらの CSS パーツを使用して、次のように Calendar コンポーネントの外観をカスタマイズできます:
 
 
 ```css
@@ -378,11 +378,11 @@ igc-calendar::part(year-inner current selected) {
 }
 ```
 
-The following sample demonstrates the above CSS configuration:
+次のサンプルは、上記の CSS 構成を示しています:
 
 <code-view style="height: 480px" 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="$Platform$ Calendar Styling Example"
+           alt="$Platform$ スタイル設定の例"
            github-src="scheduling/calendar/styling">
 </code-view>
