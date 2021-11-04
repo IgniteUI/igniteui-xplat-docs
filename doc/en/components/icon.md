@@ -10,9 +10,9 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 ## $Platform$ Icon Example
 
-<code-view style="height: 75px" 
+<code-view style="height: 50px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/icon-sample-1" alt="$Platform$ Icon Example">
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -51,7 +51,7 @@ The `registerIcon` function allows you to register an SVG image as an icon from 
 ```ts
 registerIcon(
   "search",
-  "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_search_24px.svg",
+  "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg",
   "material"
 );
 ```
@@ -83,9 +83,9 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 <igc-icon size="large"></igc-icon>
 ```
 
-<code-view style="height: 75px" 
+<code-view style="height: 50px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/icon-size" alt="$Platform$ Icon Example">
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Sizing">
 </code-view>
 
 ### Mirrored
@@ -106,6 +106,11 @@ igc-icon {
   color: olive;
 }
 ```
+
+<code-view style="height: 50px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing">
+</code-view>
 
 ## Additional Resources
 
