@@ -83,6 +83,17 @@
     ]
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Editors",
     "header": true
