@@ -83,6 +83,17 @@
     ]
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Editors",
     "header": true
@@ -1265,6 +1276,27 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "name": "Inputs",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Form",
+    "href": "inputs/form.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navbar",
+    "href": "menus/navbar.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
