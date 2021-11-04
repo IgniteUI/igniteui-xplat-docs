@@ -6,7 +6,7 @@ mentionedTypes: ['Form']
 ---
 # $Platform$ Form Overview
 
-The [`IgcFormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+The [`Form Component`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
 ## $Platform$ Form Example
 
