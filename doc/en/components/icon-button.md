@@ -1,8 +1,8 @@
----
-title: $Platform$ Icon Button Component
-_description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with $ProductName$ Icon Button component.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls
----
+<!-- --- -->
+<!-- title: $Platform$ Icon Button Component -->
+<!-- _description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with $ProductName$ Icon Button component. -->
+<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls -->
+<!-- --- -->
 
 # $Platform$ Icon Button Overview
 
@@ -19,7 +19,7 @@ import { IgcIconButtonComponent } from "igniteui-webcomponents/src/components/bu
 After we import the icon button component we are ready to start using it, so let's add our first button.
 
 ```html
-<igc-icon-button name="search" collection="material"></igc-icon-button>
+<igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
 ```
 
 ## Examples
@@ -30,7 +30,7 @@ Similar to the regular button components, the icon button supports several varia
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/icon-button-variant" alt="$Platform$ Icon Button Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example">
 </code-view>
 
 ```html
@@ -43,11 +43,11 @@ The size of the button can be changed by setting the `size` attribute to any of 
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/icon-button-size" alt="$Platform$ Icon Button Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example">
 </code-view>
 
 ```html
-<igc-icon-button name="search" size="medium"></igc-icon-button>
+<igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
 ```
 
 ### Type
@@ -56,7 +56,7 @@ The icon button component will change it's internal structure from `<button>` to
 
 ```html
 <igc-icon-button
-  name="search"
+  name="thumb-up"
   collection="material"
   href="https://duckduckgo.com"
   target="_blank"
@@ -68,13 +68,8 @@ The icon button component will change it's internal structure from `<button>` to
 
 Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attirbute that, when set, flips the icon button horizontally.
 
-<code-view style="height: 75px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/icon-button-mirrored" alt="$Platform$ Icon Button Example">
-</code-view>
-
 ```html
-<igc-icon-button name="search" mirrored></igc-icon-button>
+<igc-icon-button name="thumb-up" mirrored></igc-icon-button>
 ```
 
 ## Styling
@@ -91,3 +86,8 @@ igc-icon-button::part(icon) {
   --size: 32px;
 }
 ```
+
+<code-view style="height: 75px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example">
+</code-view>
