@@ -103,174 +103,174 @@
     "exclude": ["Angular"],
     "name": "Grids & Lists",
     "header": true,
-    "href": "grids/data-grid/grids.md"
+    "href": "grids/grids.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "List",
-    "href": "grids/list/list.md",
+    "href": "grids/list.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular"],
     "name": "Table / Grid",
-    "href": "grids/data-grid/data-grid.md",
+    "href": "grids/data-grid.md",
     "status": "UPDATED",
     "items": [
       {
         "name": "Accessibility Compliance",
-        "href": "grids/data-grid/data-grid-accessibility.md",
+        "href": "grids/data-grid-accessibility.md",
         "status": ""
       },
       {
         "name": "Binding Live Data",
-        "href": "grids/data-grid/data-grid-live-data.md",
+        "href": "grids/data-grid-live-data.md",
         "status": ""
       },
       {
         "name": "Binding Local Data",
-        "href": "grids/data-grid/data-grid-local-data.md",
+        "href": "grids/data-grid-local-data.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Comparison Data",
-        "href": "grids/data-grid/data-grid-type-comparison-table.md",
+        "href": "grids/data-grid-type-comparison-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Heatmap Data",
-        "href": "grids/data-grid/data-grid-type-heatmap-table.md",
+        "href": "grids/data-grid-type-heatmap-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Matrix Data",
-        "href": "grids/data-grid/data-grid-type-matrix-table.md",
+        "href": "grids/data-grid-type-matrix-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Periodic Data",
-        "href": "grids/data-grid/data-grid-type-periodic-table.md",
+        "href": "grids/data-grid-type-periodic-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Virtual Data",
-        "href": "grids/data-grid/data-grid-remote-data.md",
+        "href": "grids/data-grid-remote-data.md",
         "status": ""
       },
       {
         "name": "Cell Activation",
-        "href": "grids/data-grid/data-grid-cell-activation.md",
+        "href": "grids/data-grid-cell-activation.md",
         "status": "UPDATED"
       },
       {
         "name": "Grid Editing",
-        "href": "grids/data-grid/data-grid-cell-editing.md",
+        "href": "grids/data-grid-cell-editing.md",
         "status": "UPDATED"
       },
       {
         "name": "Cell Merging",
-        "href": "grids/data-grid/data-grid-cell-merging.md",
+        "href": "grids/data-grid-cell-merging.md",
         "status": "NEW"
       },
       {
         "name": "Cell Selection",
-        "href": "grids/data-grid/data-grid-cell-selection.md",
+        "href": "grids/data-grid-cell-selection.md",
         "status": "UPDATED"
       },
       {
         "name": "Column Animations",
-        "href": "grids/data-grid/data-grid-column-animation.md",
+        "href": "grids/data-grid-column-animation.md",
         "status": ""
       },
       {
         "name": "Column Filtering",
-        "href": "grids/data-grid/data-grid-column-filtering.md",
+        "href": "grids/data-grid-column-filtering.md",
         "status": ""
       },
       {
         "name": "Column Moving",
-        "href": "grids/data-grid/data-grid-column-moving.md",
+        "href": "grids/data-grid-column-moving.md",
         "status": ""
       },
       {
         "name": "Column Chooser",
-        "href": "grids/data-grid/data-grid-column-chooser.md",
+        "href": "grids/data-grid-column-chooser.md",
         "status": ""
       },
       {
         "name": "Column Options",
-        "href": "grids/data-grid/data-grid-column-options.md",
+        "href": "grids/data-grid-column-options.md",
         "status": ""
       },
       {
         "name": "Column Pinning",
-        "href": "grids/data-grid/data-grid-column-pinning.md",
+        "href": "grids/data-grid-column-pinning.md",
         "status": ""
       },
       {
         "name": "Column Resizing",
-        "href": "grids/data-grid/data-grid-column-resizing.md",
+        "href": "grids/data-grid-column-resizing.md",
         "status": ""
       },
       {
         "name": "Column Sorting",
-        "href": "grids/data-grid/data-grid-column-sorting.md",
+        "href": "grids/data-grid-column-sorting.md",
         "status": ""
       },
       {
         "name": "Column Sparkline",
-        "href": "grids/data-grid/data-grid-type-sparkline-table.md",
+        "href": "grids/data-grid-type-sparkline-table.md",
         "status": ""
       },
       {
         "name": "Column Summaries",
-        "href": "grids/data-grid/data-grid-column-summaries.md",
+        "href": "grids/data-grid-column-summaries.md",
         "status": ""
       },
       {
         "name": "Column Types",
-        "href": "grids/data-grid/data-grid-column-types.md",
+        "href": "grids/data-grid-column-types.md",
         "status": ""
       },
       {
         "name": "High Performance",
-        "href": "grids/data-grid/data-grid-performance.md",
+        "href": "grids/data-grid-performance.md",
         "status": ""
       },
       {
         "name": "Horizontal Scrolling",
-        "href": "grids/data-grid/data-grid-horizontal-scrolling.md",
+        "href": "grids/data-grid-horizontal-scrolling.md",
         "status": ""
       },
       {
         "name": "Load & Save Grid Layout",
-        "href": "grids/data-grid/data-grid-load-save-layout.md",
+        "href": "grids/data-grid-load-save-layout.md",
         "status": "NEW"
       },
       {
         "name": "Row Grouping",
-        "href": "grids/data-grid/data-grid-row-grouping.md",
+        "href": "grids/data-grid-row-grouping.md",
         "status": ""
       },
       {
         "name": "Row Highlighting",
-        "href": "grids/data-grid/data-grid-row-highlighting.md",
+        "href": "grids/data-grid-row-highlighting.md",
         "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
         "name": "Row Paging",
-        "href": "grids/data-grid/data-grid-row-paging.md",
+        "href": "grids/data-grid-row-paging.md",
         "status": ""
       },
       {
         "name": "Row Pinning",
-        "href": "grids/data-grid/data-grid-row-pinning.md",
+        "href": "grids/data-grid-row-pinning.md",
         "status": ""
       }
     ]
