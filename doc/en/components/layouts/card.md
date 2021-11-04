@@ -5,7 +5,7 @@ _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Nat
 ---
 
 # Card
-<p class="highlight">The $ProductName$ [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
+<p class="highlight">The $ProductName$ [`Card Component`]({environment:wcApiUrl}/classes/IgcCardComponent.html) displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
 
 ## Card Example
 
