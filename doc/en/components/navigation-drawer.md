@@ -13,7 +13,7 @@ The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides si
 
 ## Usage
 
-To get started with the [IgcNavigationDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html), first you need to install $ProductName$ by executing the following commandдддд:
+To get started with the [`IgcNavDrawerComponent`]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html), first you need to install $ProductName$ by executing the following command:
 
 ```cmd
 npm install {PackageComponents}
