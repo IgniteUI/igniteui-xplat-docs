@@ -1,6 +1,6 @@
 # $Platform$ Navigation Drawer Overview
 
-The Infragistics $Platform$ [IgcNavDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html) is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 ## $Platform$ Navigation Drawer Example
 
@@ -13,10 +13,10 @@ The Infragistics $Platform$ [IgcNavDrawerComponent]({environment:wcApiUrl}/class
 
 ## Usage
 
-To get started with the Navigation Drawer Web component, first you need to install Ignite UI for Web Components by executing the following command:
+To get started with the [IgcNavigationDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html), first you need to install $ProductName$ by executing the following commandдддд:
 
 ```cmd
-npm install igniteui-webcomponents
+npm install {PackageComponents}
 ```
 
 Next, you need to import the package in your typescript file where you want to use it:
