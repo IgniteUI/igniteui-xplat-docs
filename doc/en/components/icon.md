@@ -77,7 +77,7 @@ Then you'd use it in the same way as described in the component sample above.
 
 ### Size
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the `size` attribute to any of the aforementioned sizes.
+The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the [`size`]({environment:wcApiUrl}/classes/IgcIconComponent.html#size) attribute to any of the aforementioned sizes.
 
 ```html
 <igc-icon size="large"></igc-icon>
