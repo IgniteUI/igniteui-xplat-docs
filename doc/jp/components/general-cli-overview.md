@@ -7,7 +7,7 @@ _language: ja
 
 # $Platform$ Ignite UI CLI
 
-CLI ツールでは、$ProductName$ の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank">Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
+CLI ツールでは、$ProductName$ の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
 
 ## 作業の開始
 
@@ -27,11 +27,21 @@ Ignite UI CLI を使用して、$ProductName$ コントロールを使用する�
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
 </pre>
 
+<!-- React -->
 上記のテンプレートを使用して、ES6 をターゲットとする「My Project」という名前の `React` アプリケーションを作成する場合は、次のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig new "My Project" --framework=react --type=igr-es6
 </pre>
+<!-- end: React -->
+
+<!-- WebComponents -->
+上記のテンプレートを使用して、「My Project」という名前の `Web Components` アプリケーションを作成する場合は、次のコマンドを実行します。
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+ig new "My Project" --framework=webcomponents
+</pre>
+<!-- end: WebComponents -->
 
 ## コンポーネントの追加
 
