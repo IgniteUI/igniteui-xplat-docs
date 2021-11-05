@@ -31,7 +31,7 @@ After we import the button component we are ready to start using it, so let's ad
 </igc-button>
 ```
 
-With `prefix` and `suffix` slots we can add a different content before and after the main content of the button.
+With `prefix` and `suffix` slots we can add different content before and after the main content of the button.
 
 ## Type
 
