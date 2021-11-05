@@ -1267,23 +1267,23 @@
     "status": ""
   },
   {
-    "name": "Inputs",
+    "name": "入力",
     "header": true
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Form",
+    "name": "フォーム",
     "href": "inputs/form.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Menus",
+    "name": "メニュー",
     "header": true
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Navbar",
+    "name": "ナビゲーション バー",
     "href": "menus/navbar.md",
     "status": "NEW"
   },
@@ -1300,12 +1300,12 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Data Entry & Display",
+    "name": "データ入力と表示",
     "header": true
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Link Button",
+    "name": "リンク ボタン",
     "href": "link-button.md",
     "status": "NEW"
   }

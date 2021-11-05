@@ -162,7 +162,7 @@ this.radios.forEach(radio => {
 *  `After` - `dateRange` の最初の日付以降の日付を無効にします。
 *  `Before` - `dateRange` の最初の日付より前の日付を無効にします。
 *  `Between` - `dateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
-*  `Specific` - dateRange 配列で指定された日付を無効にします。
+*  `Specific` - `dateRange` 配列で指定された日付を無効にします。
 *  `Weekdays` - すべての平日を無効にします。
 *  `Weekends` - すべての週末を無効にします。
 
@@ -268,7 +268,7 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 
 ## キーボード ナビゲーション
 
-<kbd>Tab</kbd> キーを使用してページを移動する場合、`IgcCalendarComponent` が [W3 アクセシビリティ推奨事項](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
+<kbd>Tab</kbd> キーを使用してページを移動する場合、`IgcCalendarComponent` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
 - [月の選択] ボタン
 - [年の選択] ボタン
 - [前へ] ボタン
