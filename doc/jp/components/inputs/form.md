@@ -1,36 +1,36 @@
 ---
-title: $Platform$ Form | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ form is a component used to collect user input from interactive controls. Improve your application with Ignite UI for  $Platform$!
-_keywords: $Platform$ form, $ProductName$, Infragistics
+title: $Platform$ Form | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ フォームは、インタラクティブ コントロールからユーザー入力を収集するために使用されるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
+_keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
 mentionedTypes: ['Form']
 _language: ja
 ---
-# $Platform$ Form Overview
+# $Platform$ (フォーム) の概要
 
-The [`IgcFormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+[`IgcFormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
 
-## $Platform$ Form Example
+## $Platform$ の例
 
-The following example represents a form that has some inputs, buttons and a checkbox inside.
+次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがあるフォームを表しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
+           alt="$Platform$ Form の例"
            github-src="inputs/form/overview">
 </code-view>
 
-## Dependencies
+## 依存関係
 
-In order to use the Form component, the web components package must be installed.
+Form コンポーネントを使用するには、Web コンポーネント パッケージをインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
+## 使用方法
 
-Once the Form component is imported, you can add it on the page and add your content.
+Form コンポーネントがインポートされたら、それをページに追加してコンテンツを追加できます。
 
 ```html
   <igc-form novalidate>
@@ -48,7 +48,7 @@ Once the Form component is imported, you can add it on the page and add your con
 import 'igniteui-webcomponents';
 ```
 
-Form data is collected for the following components:
+フォーム データは、次のコンポーネントについて収集されます:
 - [`igc-checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
 - [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
 - [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
@@ -60,15 +60,15 @@ Form data is collected for the following components:
 - switch
 - textarea
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element.
+フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、[`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) 属性を `<igc-form>` 要素に追加できます。
 
-### Events
+### イベント
 
-The Form component raises the following events:
-- igcSubmit - Raised when the form is submitted
-- igcReset - Raised when the form is reset
+Form コンポーネントは、次のイベントを発生させます:
+- igcSubmit - フォームが送信されたときに発生します。
+- igcSubmit - フォームがリセットされたときに発生します。
 
-Here is an example showing how to add an event listener for the [`igcSubmit`] event:
+[`igcSubmit`] イベントのイベント リスナーを追加する方法を示す例を次に示します:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -77,23 +77,23 @@ document.addEventListener('igcSubmit', function (event) {
 });
 ```
 
-### Methods
+### メソッド
 
-The Form component exposes the following methods:
+Form コンポーネントは、次のメソッドを公開します:
 
-| Method			| Description     			|
+| メソッド			| 説明     			|
 | ------------- 	|:-------------:			|
-|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|Submits the form data.|
-|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|Resets the form data.|
-|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
-|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
+|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|フォーム データを送信します。|
+|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|フォーム データをリセットします。|
+|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|フォーム データを収集し、単一の FormData オブジェクトを返します。|
+|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|要素の子コントロールが検証制約を満たしているかどうかを返します。|
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the form's API, refer to the following links:
+フォームの API の詳細については、次のリンクを参照してください。
 * [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 - [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
 - [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
 * [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
@@ -101,10 +101,10 @@ Additional components and/or directives that were used:
 * [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 
 <div class="divider"></div>
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [$Platform$ **Forums** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

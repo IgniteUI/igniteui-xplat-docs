@@ -1,25 +1,25 @@
-# $Platform$ Link Button Overview
+# $Platform$ Link Button (リンク ボタン) の概要
 
-The $Platform$ Link Button provides different variants and styles, which are easily configurable to match the appearance and functionality, that we want to achieve.
+$Platform$ Link Button は、さまざまなバリエーションとスタイルを提供します。これらは、実現したい外観と機能に合わせて簡単に構成できます。
 
-## $Platform$ Link Button Example
+## $Platform$ Link Button の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-overview"
-           alt="$Platform$ Button Example"
+           alt="$Platform$ Button の例"
            github-src="inputs/link-button/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
-To get started with the Link Button Web Component we need to import the [`IgcLinkButtonComponent`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html) in our typescript file:
+Link Button Web コンポーネントの使用を開始するには、typescript ファイルに [`IgcLinkButtonComponent`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html) をインポートする必要があります。
 
 ```ts
 import { IgcLinkButtonComponent } from 'igniteui-webcomponents'; 
 ```
 
-After we import the link button component, we are ready to start using it, so let's add our first link button.
+リンク ボタン コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のリンク ボタンを追加しましょう。
 
 ```html
 <igc-link-button
@@ -33,16 +33,15 @@ After we import the link button component, we are ready to start using it, so le
 </igc-link-button>
 ```
 
-With `prefix` and `suffix` slots we can add different content before and after the main content of the button.
+`prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
 
-The internal structure of the `igc-link-button` is an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element, which is why we can
-set the `href`, `rel`, `target` and `download` attributes of the link button.
+`igc-link-button` の内部構造は [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) タイプ要素です。そのため、リンク ボタンの `href`、`rel`、`target`、および `download` 属性を設定できます。
 
-## Link Button Variants
+## Link Button のバリアント
 
-### Flat Button
+### Flat ボタン
 
-Use `flat` [`variant`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#variant) to add a simple flat button in your component template. Note that if you do not set variant, by default it will be set to flat.
+`flat` [`バリアント`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-link-button
@@ -56,9 +55,9 @@ Use `flat` [`variant`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.htm
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-flat">
 </iframe></div>
 
-### Outlined Button
+### Outlined ボタン
 
-All you have to do to create an `outlined` button is to change button variant property:
+`outlined` ボタンを作成するために必要なのは、ボタン バリアント プロパティを変更することだけです。
 
 ```html
 <igc-link-button
@@ -72,9 +71,9 @@ All you have to do to create an `outlined` button is to change button variant pr
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-outlined">
 </iframe></div>
 
-### Contained Button
+### Contained ボタン
 
-Analogically, we can switch to `contained` variant:
+同様に、`contained` バリアントに切り替えることができます。
 
 ```html
 <igc-link-button
@@ -88,9 +87,9 @@ Analogically, we can switch to `contained` variant:
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-contained">
 </iframe></div>
 
-### Floating Action Button
+### Floating Action ボタン
 
-And for a floating action button, we can switch to `fab` variant: 
+また、フローティング アクション ボタンの場合は、`fab` バリアントに切り替えることができます。 
 
 ```html
 <igc-link-button
@@ -104,9 +103,9 @@ And for a floating action button, we can switch to `fab` variant:
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-fab">
 </iframe></div>
 
-### Disable Link Button
+### Disable Link の無効化
 
-The [`disabled`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#disabled) property can be used to make a button unclickable:
+ボタンを無効にするには、[`disabled`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#disabled) プロパティを使用します。
 
 ```html
 <igc-link-button variant="contained" disabled>Disabled</igc-link-button>
@@ -116,9 +115,9 @@ The [`disabled`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#disa
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-disabled">
 </iframe></div>
 
-### Download
+### ダウンロード
 
-By setting a URL to [`download`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#download) property, we can make the link button download a file when it is clicked.
+[`download`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#download) プロパティに URL を設定することで、リンク ボタンをクリックしたときにファイルをダウンロードさせることができます。
 
 ```html
 <igc-link-button
@@ -133,9 +132,9 @@ By setting a URL to [`download`]({environment:wcApiUrl}/classes/IgcLinkButtonCom
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/link-button-download">
 </iframe></div>
 
-## Size
+## サイズ
 
-We can allow the user to choose the size of the `igc-link-button` by using its [`size`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) property. То demonstrate this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+[`size`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) プロパティを使用して、ユーザーが [`igc-link-button`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) のサイズを選択できるようにすることができます。これを示すために、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
@@ -164,18 +163,18 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });        
 ```
 
-And here's the result of all that work:
+結果は以下のようになります。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-size"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="/inputs/link-button/size">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The link button component exposes `base` CSS part that allows us to style the wrapping `<a>` element.
+リンク ボタン コンポーネントは、ラッピング `<a>` 要素のスタイルを設定できる `base` CSS パーツを公開します。
 
 ```css
 igc-link-button::part(base) {
@@ -188,22 +187,22 @@ igc-link-button::part(base) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/link-button-styling"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="/inputs/link-button/styling">
 </code-view>
 
-## API Reference
+## API リファレンス
 
 * [IgcLinkButtonComponent]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html)
 
-Additional Web Components that were used:
+使用したその他の WEB コンポーネント:
 
 * [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
 * [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

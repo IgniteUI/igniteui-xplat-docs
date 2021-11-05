@@ -1,50 +1,50 @@
 ---
-title: $Platform$ Navbar | Infragistics
-_description: Infragistics' $Platform$ navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  $Platform$!
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: $Platform$ Navbar | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
+_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['Navbar']
 _language: ja
 ---
-# $Platform$ Navbar Overview
+# $Platform$ Navbar の概要
 
- $Platform$ [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+$Platform$ [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
 
-## $Platform$ Navbar Example
+## $Platform$ Navbar の例
 
-The following example represents a `Navbar` with title:
+次の例は、タイトルのある `Navbar` を表しています:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-overview"
-           alt="$Platform$ Navbar Overview Example"
+           alt="$Platform$ Navbar 概要の例"
            github-src="menus/navbar/overview">
 </code-view>
 
-## Dependencies
+## 依存関係
 
-In order to use the Navigation Bar component, the web components package must be installed.
+Navigation Bar コンポーネントを使用するには、以下のパッケージをインストールする必要があります:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
+## 使用方法
 
-To get started with the `Navbar` component, first you need to import the `igniteui-webcomponents` in TypeScript file:
+`Navbar` コンポーネントの使用を開始するには、最初に `igniteui-webcomponents` を TypeScript ファイルにインポートする必要があります。
 
 ```typescript
 import 'igniteui-webcomponents';
 ```
 
-Then in the template of our component we can add the following code to show a basic `Navbar` with a title only:
+次に、コンポーネントのテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
 
 ```html
 <igc-navbar>Ignite UI for Web Components</igc-navbar>
 ```
 
-## Customize Content
+## コンテンツをカスタマイズ
 
-In order to customize the content of our `Navbar` we can add some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
+`Navbar` のコンテンツをカスタマイズするために、`start` スロットと `end` スロットを使用していくつかの [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) アイコンを追加できます。
 
 ```html
 <igc-navbar style="height:40px">
@@ -56,18 +56,18 @@ In order to customize the content of our `Navbar` we can add some [`IgcIconCompo
 </igc-navbar>
 ```
 
-If all went well, you should see the following in your browser:
+以下は結果です:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-content"
-           alt="$Platform$ Navbar Content Example"
+           alt="$Platform$ Navbar コンテンツの例"
            github-src="menus/navbar/content">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The Navigation Bar component exposes several CSS parts (`base`, `start`, `middle` and `end`) to give you full control over its styling.
+Navigation Bar コンポーネントは、いくつかの CSS パーツ (`base`、`start`、`middle` および `end`) を公開して、スタイルを完全に制御できるようにします。
 
 ```css
 igc-icon {
@@ -91,27 +91,27 @@ igc-navbar::part(end) {
 }
 ```
 
-If all went well, you should see the following in your browser:
+以下は結果です:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-styling"
-           alt="$Platform$ Navbar Styling Example"
+           alt="$Platform$ Navbar スタイル設定の例"
            github-src="menus/navbar/styling">
 </code-view>
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the navbar's API, refer to the following links:
+Navbar の API の詳細については、次のリンクを参照してください:
 * [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 * [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
 
 <div class="divider"></div>
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
