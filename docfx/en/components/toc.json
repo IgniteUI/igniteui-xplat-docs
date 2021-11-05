@@ -37,27 +37,33 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Card",
+    "href": "layouts/card.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
-    "href": "dock-manager.md",
+    "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
         "exclude": ["Blazor", "WebComponents"],
         "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
+        "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
         "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
+        "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
       },
       {
         "exclude": ["Angular", "Blazor", "React"],
         "name": "Desktop Integration",
-        "href": "dock-manager-electron.md",
+        "href": "layouts/dock-manager-electron.md",
         "status": "NEW"
       }
     ]
@@ -81,6 +87,17 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1278,6 +1295,18 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
+    "name": "Button",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Link Button",
+    "href": "inputs/link-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Menus",
     "header": true
   },
@@ -1296,17 +1325,6 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Calendar",
     "href": "calendar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Data Entry & Display",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Link Button",
-    "href": "link-button.md",
     "status": "NEW"
   }
 ]
