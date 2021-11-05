@@ -64,7 +64,7 @@ Then to use the newly registered icon all you have to do is to pass the name and
 <igc-icon name="search" collection="material"></igc-icon>
 ```
 
-The second method for registering icons is by passing an SVG string to the `registerIconFromText` function:
+The second method for registering icons is by passing an SVG string to the [`registerIconFromText`]({environment:wcApiUrl}/index.html#registerIconFromText) function:
 
 ```ts
 const searchIcon =
