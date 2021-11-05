@@ -10,7 +10,7 @@
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the `IgcIconButtonComponent` in our typescript file:
+To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file:
 
 ```ts
 import { IgcIconButtonComponent } from "igniteui-webcomponents/src/components/button/icon-button";
