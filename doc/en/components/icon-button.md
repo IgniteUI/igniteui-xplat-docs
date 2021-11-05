@@ -39,7 +39,7 @@ Similar to the regular button components, the icon button supports several varia
 
 ### Size
 
-The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+The size of the button can be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
