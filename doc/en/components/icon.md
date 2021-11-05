@@ -25,7 +25,7 @@ To get started with the icon web component, first you need to install the $Produ
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the IgcIconComponent in the typescript file where you want to use it:
+The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it:
 
 ```ts
 import { IgcIconComponent } from "igniteui-webcomponents/src/components/icon";
