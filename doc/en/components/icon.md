@@ -46,7 +46,7 @@ import {
 } from "../src/components/icon/icon.registry";
 ```
 
-The `registerIcon` function allows you to register an SVG image as an icon from an external file:
+The [`registerIcon`]({environment:wcApiUrl}/index.html#registerIcon) function allows you to register an SVG image as an icon from an external file:
 
 ```ts
 registerIcon(
