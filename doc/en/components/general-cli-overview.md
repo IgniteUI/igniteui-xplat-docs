@@ -6,7 +6,7 @@ _keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics
 
 # Ignite UI CLI for $Platform$
 
-Our CLI tools provide project templates pre-configured for the $ProductName$ toolset that help you get your next application off the ground in record time. The <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank">Ignite UI CLI</a> is a stand-alone command-line tool for creating and scaffolding your applications for a variety of different frameworks and provides a substantial productivity boost for developers.
+Our CLI tools provide project templates pre-configured for the $ProductName$ toolset that help you get your next application off the ground in record time. The <!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> is a stand-alone command-line tool for creating and scaffolding your applications for a variety of different frameworks and provides a substantial productivity boost for developers.
 
 ## Getting Started
 
@@ -26,11 +26,22 @@ To create an application that is configured to use the $ProductName$ controls us
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
 </pre>
 
+<!-- React -->
 Using the above template, if you wanted to create a `React` application named "My Project" targeting ES6, you could write the following command:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig new "My Project" --framework=react --type=igr-es6
 </pre>
+<!-- end: React -->
+
+<!-- WebComponents -->
+Using the above template, if you wanted to create a `Web Components` application named "My Project" you could write the following command:
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+ig new "My Project" --framework=webcomponents
+</pre>
+<!-- end: WebComponents -->
+
 
 ## Adding Components
 
