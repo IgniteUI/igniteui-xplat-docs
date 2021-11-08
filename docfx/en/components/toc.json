@@ -1313,8 +1313,13 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Link Button",
-    "href": "inputs/link-button.md",
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navbar",
+    "href": "menus/navbar.md",
     "status": "NEW"
   },
   {
