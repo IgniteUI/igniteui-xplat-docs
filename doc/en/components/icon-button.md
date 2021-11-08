@@ -10,10 +10,12 @@
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file:
+To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { IgcIconButtonComponent } from "igniteui-webcomponents/src/components/button/icon-button";
+import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
+
+defineComponents(IgcIconButtonComponent);
 ```
 
 After we import the icon button component we are ready to start using it, so let's add our first button.
