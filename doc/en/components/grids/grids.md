@@ -168,7 +168,7 @@ div#faqs-accordion-wrapper {
 </style>
 
 <div >
-    <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI logo" src="../images/marketing/ignite-ui-logo.svg" alt="Ignite UI Logo for developer web applications">
+    <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI logo" src="../../images/marketing/ignite-ui-logo.svg" alt="Ignite UI Logo for developer web applications">
 </div>
 
 # The Fastest $Platform$ Data Grid
@@ -238,7 +238,7 @@ This example demonstrates a few of the data grid’s key features:
 <li>[Column Summaries](data-grid-column-summaries.md) based on any data in a grid cell or column</li>
 
 <!-- React, WebComponents -->
-<li>Export to Excel, including [Data Visualization](excel-library-working-with-charts.md)</li>
+<li>Export to Excel, including [Data Visualization](..\excel-library-working-with-charts.md)</li>
 <!-- end: React, WebComponents -->
 
 <li>[Cell and Row Selection](data-grid-cell-selection.md) for Single and Multi-Select</li>
@@ -1014,7 +1014,7 @@ There are multiple options to get access to our award-winning support at Infragi
 <div class="divider--half"></div>
         <ul>
             <li>Start at the $Platform$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/$ProductSpinal$-help">Support</a> home page</li>
-            <li>Read the $Platform$ [Documentation](general-getting-started.md) and experiment with $Platform$ Samples</li>
+            <li>Read the $Platform$ [Documentation](..\general-getting-started.md) and experiment with $Platform$ Samples</li>
             <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite UI for $Platform$"> $Platform$ Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity"> Support Case</a> after signing into your account</li>
             <li>Learn from the $Platform$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
@@ -1045,7 +1045,7 @@ There are multiple options to get access to our award-winning support at Infragi
                 <li>[Excel-style Filtering](data-grid-column-filtering.md) and full [Excel Keyboard Navigation](data-grid-cell-activation.md) capability</li>
                 <li>Interactive [Outlook-style Grouping](data-grid-row-grouping.md)</li>
                 <li>[Column Summaries](data-grid-column-summaries.md) based on any data in a grid cell or column</li>
-                <li>Export to Excel, including [Data Visualization](excel-library-working-with-charts.md)</li>
+                <li>Export to Excel, including [Data Visualization](..\excel-library-working-with-charts.md)</li>
                 <li>[Cell and Row Selection](data-grid-cell-selection.md) for Single and Multi-Select</li>
                 <li>Full touch support for mobile app development</li>
             </ul>
@@ -1073,7 +1073,7 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
+        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](..\general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
         </div>
     </div>
 </div>
@@ -1120,7 +1120,7 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics $ProductName$ Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
+        To get started with the $Platform$ Data Grid, follow the steps in the [getting started guide](..\general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for $Platform$ development.
         </div>
     </div>
 </div>
