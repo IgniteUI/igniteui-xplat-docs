@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ (フォーム) の概要
 
-[`IgcFormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+[`IgcFormComponent`](https://www.infragistics.com/products/ignite-ui/typescript/latest/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
 
 ## $Platform$ の例
 
