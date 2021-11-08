@@ -13,7 +13,7 @@ $Platform$ Link Button は、さまざまなバリエーションとスタイル
 
 ## 使用方法
 
-Link Button Web コンポーネントの使用を開始するには、typescript ファイルに [`IgcLinkButtonComponent`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html) をインポートする必要があります。
+Link Button Web コンポーネントの使用を開始するには、typescript ファイルに [`IgcLinkButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html) をインポートする必要があります。
 
 ```ts
 import { IgcLinkButtonComponent } from 'igniteui-webcomponents'; 
@@ -35,13 +35,13 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
 
-`igc-link-button` の内部構造は [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) タイプ要素です。そのため、リンク ボタンの `href`、`rel`、`target`、および `download` 属性を設定できます。
+`igc-link-button` の内部構造は [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプ要素です。そのため、リンク ボタンの `href`、`rel`、`target`、および `download` 属性を設定できます。
 
 ## Link Button のバリアント
 
 ### Flat ボタン
 
-`flat` [`バリアント`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`flat` [`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-link-button
@@ -105,7 +105,7 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 ### Disable Link の無効化
 
-ボタンを無効にするには、[`disabled`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#disabled) プロパティを使用します。
+ボタンを無効にするには、[`disabled`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#disabled) プロパティを使用します。
 
 ```html
 <igc-link-button variant="contained" disabled>Disabled</igc-link-button>
@@ -117,7 +117,7 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 ### ダウンロード
 
-[`download`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#download) プロパティに URL を設定することで、リンク ボタンをクリックしたときにファイルをダウンロードさせることができます。
+[`download`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#download) プロパティに URL を設定することで、リンク ボタンをクリックしたときにファイルをダウンロードさせることができます。
 
 ```html
 <igc-link-button
@@ -134,7 +134,7 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 ## サイズ
 
-[`size`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) プロパティを使用して、ユーザーが [`igc-link-button`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) のサイズを選択できるようにすることができます。これを示すために、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#size) プロパティを使用して、ユーザーが [`igc-link-button`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) のサイズを選択できるようにすることができます。これを示すために、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
@@ -193,12 +193,12 @@ igc-link-button::part(base) {
 
 ## API リファレンス
 
-* [IgcLinkButtonComponent]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html)
+* [IgcLinkButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html)
 
 使用したその他の WEB コンポーネント:
 
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html)
+* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
 
 ## その他のリソース
 

@@ -50,9 +50,9 @@ import 'igniteui-webcomponents';
 
 フォーム データは、次のコンポーネントについて収集されます:
 - [`igc-checkbox`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
-- [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-- [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-- [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+- [`igc-input`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcInputComponent.html)
+- [`igc-radio`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
+- [`igc-switch`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html)
 - checkbox
 - input
 - radio
@@ -60,7 +60,7 @@ import 'igniteui-webcomponents';
 - switch
 - textarea
 
-フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、[`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) 属性を `<igc-form>` 要素に追加できます。
+フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、[`novalidate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#novalidate) 属性を `<igc-form>` 要素に追加できます。
 
 ### イベント
 
@@ -83,22 +83,22 @@ Form コンポーネントは、次のメソッドを公開します:
 
 | メソッド			| 説明     			|
 | ------------- 	|:-------------:			|
-|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|フォーム データを送信します。|
-|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|フォーム データをリセットします。|
-|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|フォーム データを収集し、単一の FormData オブジェクトを返します。|
-|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|要素の子コントロールが検証制約を満たしているかどうかを返します。|
+|[`submit`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#submit)|フォーム データを送信します。|
+|[`reset`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#reset)|フォーム データをリセットします。|
+|[`getFormData`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#getFormData)|フォーム データを収集し、単一の FormData オブジェクトを返します。|
+|[`reportValidity`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#reportValidity)|要素の子コントロールが検証制約を満たしているかどうかを返します。|
 
 ## API リファレンス
 
 フォームの API の詳細については、次のリンクを参照してください。
-* [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
+* [`IgcFormComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcFormComponent.html)
 
 使用したその他のコンポーネントとディレクティブ:
-- [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-- [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
-* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-* [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+- [`IgcButtonComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
+- [`IgcCheckboxComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
+* [`IgcInputComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcInputComponent.html)
+* [`IgcRadioComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
+* [`IgcSwitchComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html)
 
 <div class="divider"></div>
 ## その他のリソース
