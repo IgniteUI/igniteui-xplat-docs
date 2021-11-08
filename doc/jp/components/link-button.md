@@ -41,7 +41,7 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 ### Flat ボタン
 
-`flat` [`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`flat` [`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#variant)を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-link-button
@@ -134,7 +134,7 @@ import { IgcLinkButtonComponent } from 'igniteui-webcomponents';
 
 ## サイズ
 
-[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#size) プロパティを使用して、ユーザーが [`igc-link-button`]({environment:wcApiUrl}/classes/IgcLinkButtonComponent.html#size) のサイズを選択できるようにすることができます。これを示すために、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcLinkButtonComponent.html#size) プロパティを使用して、ユーザーが `igc-link-button` のサイズを選択できるようにすることができます。これを示すために、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
