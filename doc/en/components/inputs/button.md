@@ -13,10 +13,10 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
-To get started we need to import the [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) in our typescript file and register the component by calling the defineComponent() function as follows:
+To get started we need to import the [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { IgcButtonComponent, defineComponents } from 'igniteui-webcomponents'; 
+import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents'; 
 
 defineComponents(IgcButtonComponent);
 ```
@@ -97,7 +97,8 @@ We can create a floating action button by setting the `variant` property to `fab
 We can allow the user to choose the size of the `igc-button` by using its [`size`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
-import { IgcRadioGroupComponent, IgcRadioComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+defineComponents(IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
 ```html
@@ -152,7 +153,7 @@ Setting the [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#
 
 ## Styling
 
-The button component exposes `base` CSS part that allows us to style the wrapping element (`<button>` or `<a>`).
+The button component exposes `base` CSS part that allows us to style the wrapped element (`<button>` or `<a>`).
 
 ```css
 igc-button::part(base) {
