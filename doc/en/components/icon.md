@@ -25,10 +25,12 @@ To get started with the icon web component, first you need to install the $Produ
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it:
+The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { IgcIconComponent } from "igniteui-webcomponents/src/components/icon";
+import { defineComponents, IgcIconComponent } from "igniteui-webcomponents/src/components/icon";
+
+defineComponents(IgcIconComponent);
 ```
 
 ## Usage
@@ -43,7 +45,7 @@ To register an image as an icon all you have to do is import one of the 2 utilit
 import {
   registerIcon,
   registerIconFromText,
-} from "../src/components/icon/icon.registry";
+} from "igniteui-webcomponents";
 ```
 
 The [`registerIcon`]({environment:wcApiUrl}/index.html#registerIcon) function allows you to register an SVG image as an icon from an external file:
