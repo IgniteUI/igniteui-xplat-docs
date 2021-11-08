@@ -28,10 +28,12 @@ To get started with the switch web component, first you need to install the $Pro
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the IgcSwitchComponent in the typescript file where you want to use it:
+The next step is to import the IgcSwitchComponent in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { IgcSwitchComponent } from "igniteui-webcomponents/src/components/checkbox/switch";
+import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
+
+defineComponents(IgcSwitchComponent);
 ```
 
 The simplest way to start using the switch is as follows:
