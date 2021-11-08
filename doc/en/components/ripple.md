@@ -10,10 +10,12 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 ## Usage
 
-To get started with the Ripple Web Component we need to import the `IgcRippleComponent` in our typescript file:
+To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { IgcRippleComponent } from "igniteui-webcomponents/src/components/ripple/ripple";
+import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
+
+defineComponents(IgcRippleComponent);
 ```
 
 After we import the ripple component we are ready to start using it, so let's add the ripple to an existing component from our library.
