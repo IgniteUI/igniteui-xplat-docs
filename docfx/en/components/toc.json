@@ -15,7 +15,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
     "status": ""
