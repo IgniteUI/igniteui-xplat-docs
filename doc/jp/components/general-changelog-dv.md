@@ -25,7 +25,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* `FinancialChart` と `CategoryChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
 * Legend で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。

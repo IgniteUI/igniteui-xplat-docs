@@ -1265,5 +1265,48 @@
     "name": "ズーム スライダー",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "name": "入力",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "フォーム",
+    "href": "inputs/form.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "メニュー",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ナビゲーション バー",
+    "href": "menus/navbar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スケジュール",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "カレンダー",
+    "href": "calendar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "データ入力と表示",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "リンク ボタン",
+    "href": "link-button.md",
+    "status": "NEW"
   }
 ]
