@@ -23,9 +23,17 @@ npm install -g igniteui-cli
 
 Ignite UI CLI を使用して、$ProductName$ コントロールを使用するように構成されたアプリケーションを作成するには、コマンドラインで次のテンプレートを使用できます。
 
+<!-- React -->
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
 </pre>
+<!-- end: React -->
+
+<!-- WebComponents -->
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+ig new "[name_of_project]" --framework=[target_framework]
+</pre>
+<!-- end: WebComponents -->
 
 <!-- React -->
 上記のテンプレートを使用して、ES6 をターゲットとする「My Project」という名前の `React` アプリケーションを作成する場合は、次のコマンドを実行します。
