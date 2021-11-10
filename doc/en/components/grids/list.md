@@ -24,17 +24,19 @@ To get started with the list Web component, first you need to install Ignite UI 
 npm install igniteui-webcomponents
 ```
 
-The next step is to import `igniteui-webcomponents` inside our **index.ts** file:
+The next step is to import the `IgcListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
 ...
-import 'igniteui-webcomponents';
+import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+
+defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
 
 ### Add List Items
 
-After the import of the `igniteui-webcomponents`, we can add the following code to get a simple list of items:
+Now, we can add the following code to get a simple list of items:
 
 ```html
     <igc-list>
