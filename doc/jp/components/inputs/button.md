@@ -16,7 +16,7 @@ Ignite UI for Web Components ボタンは、実現したい外観と機能に一
 開始するには、typescript ファイルに [`IgcButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
-import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents'; 
+import { IgcButtonComponent, defineComponents } from 'igniteui-webcomponents'; 
 
 defineComponents(IgcButtonComponent);
 ```
