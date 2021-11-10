@@ -15,7 +15,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
     "status": ""
@@ -1303,12 +1303,6 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Button",
     "href": "inputs/button.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Link Button",
-    "href": "inputs/link-button.md",
     "status": "NEW"
   },
   {
