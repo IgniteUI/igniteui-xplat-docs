@@ -11,7 +11,17 @@ _keywords: dock manager, layout, $ProductName$, Infragistics
 
 ## Usage
 
-The avatar component is capable of displaying and image, initials, or any other content, including icons.
+To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+```ts
+import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents'; 
+
+defineComponents(IgcAvatarComponent);
+```
+
+After we import the avatar component we are ready to start using it, so let's add our first avatar.
+
+The avatar component is capable of displaying images, initials, or any other content, including icons.
 Declaring an avatar is as simple as:
 
 ```html
@@ -26,7 +36,7 @@ The avatar has several attributes that allow rendering different content based o
 </igc-avatar>
 ```
 
-If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initials) attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 
 ```html
@@ -37,7 +47,7 @@ If the `initials` attribute is set all children elements of the avatar will be i
 </igc-avatar>
 ```
 
-The avatar can also display an image when the `src` attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
+The avatar can also display an image when the [`src`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#src) attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
 
 ```html
 <igc-avatar 
@@ -48,53 +58,53 @@ The avatar can also display an image when the `src` attribute is assigned a vali
 </igc-avatar>
 ```
 
-The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the `shape` attribute. 
+The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. 
 
-Apart from the shape, the size of the avatar can also be changed by setting the `size` attribute. The supported sizes are `small`, `medium`, and `large`.
+Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. The supported sizes are `small`, `medium`, and `large`.
 
 ## $Platform$ Avatar Examples
 
 ### Icon
 
-<code-view style="height: 150px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/avatar-icon"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/icon">
 </code-view>
 
 ### Initials
 
-<code-view style="height: 300px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/avatar-initials"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/initials">
 </code-view>
 
 ### Image
 
-<code-view style="height: 300px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/avatar-image"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/image">
 </code-view>
 
 ### Shape
 
-<code-view style="height: 300px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/avatar-shape"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/shape">
 </code-view>
 
 ### Size
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/avatar-size"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/size">
 </code-view>
@@ -111,8 +121,15 @@ igc-avatar::part(base) {
   border-radius: 20px;
 }
 ```
+
+## API Reference
+
+* [IgcAvatarComponent]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
+
+
 ## Additional Resources
 
 <div class="divider--half"></div>
 
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

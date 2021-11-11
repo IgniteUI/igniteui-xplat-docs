@@ -1,0 +1,157 @@
+---
+title: $Platform$ Switch Component – $ProductName$
+_description: $ProductName$ Switch component enables developers to use binary on/off or true/false data input functions within their applications.
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls
+---
+
+# $Platform$ Switch
+
+<p class="highlight">$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.</p>
+<div class="divider"></div>
+
+## Switch Example
+
+<code-view style="height:200px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example"
+           github-src="inputs/switch/sample-1">
+</code-view>
+
+<div class="divider--half"></div>
+
+## Usage
+
+At its core the switch component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
+
+To get started with the switch web component, first you need to install the $ProductName$ by typing the following command:
+
+```cmd
+npm install igniteui-webcomponents
+```
+
+The next step is to import the [IgcSwitchComponent]({environment:wcApiUrl}/classes/IgcSwitchComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+```ts
+import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
+
+defineComponents(IgcSwitchComponent);
+```
+
+The simplest way to start using the switch is as follows:
+
+```html
+<igc-switch></igc-switch>
+```
+
+>[!WARN]
+> The switch component doesn't work with the standart `<form>` element. Use `<igc-form>` instead.
+
+## Examples
+
+### Label
+
+To provide a meaningful label for the switch, simply place some text between the opening and closing tags:
+
+```html
+<igc-switch>Label</igc-switch>
+```
+
+You can specify if the label should be positioned before or after the switch toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#label-position) attribute of the switch. Allowed values are `before` and `after`(default):
+
+
+```html
+<igc-switch label-position="before">Label</igc-switch>
+```
+
+The switch can also be labelled by elements external to the switch. In this case, the user is given full control to position and style the label in accordance with their needs.
+
+```html
+<span id="switch-label">Label</span>
+<igc-switch aria-labelledby="switch-label"></igc-switch>
+```
+<code-view style="height: 150px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
+           alt="$Platform$ Avatar Example"
+           github-src="inputs/switch/label">
+</code-view>
+
+### Checked
+
+Use the [`checked`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#checked) attribute to toggle on the switch.
+
+```html
+<igc-switch checked></igc-switch>
+```
+<code-view style="height: 150px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
+           alt="$Platform$ Avatar Example"
+           github-src="inputs/switch/checked">
+</code-view>
+
+### Required
+
+Use the [`required`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#required) attribute to mark the switch as required.
+
+```html
+<igc-switch required></igc-switch>
+```
+
+### Ivalid
+
+Use the [`invalid`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#invalid) attribute to mark the switch as invalid.
+
+```html
+<igc-switch invalid></igc-switch>
+```
+
+### Disabled
+
+Use the [`disabled`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#disabled) attribute to disable the switch.
+
+```html
+<igc-switch disabled></igc-switch>
+```
+<code-view style="height: 150px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
+           alt="$Platform$ Avatar Example"
+           github-src="inputs/switch/disabled">
+</code-view>
+
+### Forms
+
+Use the [`name`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#name) and [`value`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#value) attributes when using the switch with `<igc-form>`.
+
+```html
+<igc-switch name="wifi" value="enabled"></igc-switch>
+```
+
+## Styling
+
+The switch component exposes several CSS parts (`base`, `control`, `thumb`, and `label`) to give you full control over its styling.
+
+```css
+igc-switch::part(control) {
+  background: beige;
+  border-radius: 0;
+}
+
+igc-switch::part(thumb) {
+  background: olive;
+  border-radius: 2px;
+  box-shadow: none;
+}
+```
+
+## API Reference
+
+* [IgcSwitchComponent]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+
+## Additional Resources
+
+<div class="divider--half"></div>
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
