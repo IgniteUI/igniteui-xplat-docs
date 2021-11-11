@@ -32,7 +32,8 @@ Similar to the regular button components, the icon button supports several varia
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
+           github-src="inputs/icon-button/variant">
 </code-view>
 
 ```html
@@ -45,7 +46,8 @@ The size of the button can be changed by setting the [`size`]({environment:wcApi
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
+           github-src="inputs/icon-button/size">
 </code-view>
 
 ```html
@@ -91,7 +93,8 @@ igc-icon-button::part(icon) {
 
 <code-view style="height: 75px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
+           github-src="inputs/icon-button/styling">
 </code-view>
 
 ## API Reference
