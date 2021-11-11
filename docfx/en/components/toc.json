@@ -1324,6 +1324,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Switch",
+    "href": "switch.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Ripple",
     "href": "ripple.md",
