@@ -12,7 +12,8 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 <code-view style="height: 205px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example"
+           github-src="inputs/radio/group">
 </code-view>
 
 <div class="divider--half"></div>
