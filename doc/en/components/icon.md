@@ -109,7 +109,7 @@ igc-icon {
 }
 ```
 
-<code-view style="height: 50px" 
+<code-view style="height: 70px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing">
 </code-view>
