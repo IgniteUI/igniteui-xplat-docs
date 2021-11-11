@@ -1330,6 +1330,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Ripple",
+    "href": "ripple.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Scheduling",
     "header": true
