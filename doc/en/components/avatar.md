@@ -60,7 +60,7 @@ The avatar can also display an image when the [`src`]({environment:wcApiUrl}/cla
 
 The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. 
 
-Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. The supported sizes are `small`, `medium`, and `large`.
+Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#size) attribute. The supported sizes are `small`, `medium`, and `large`.
 
 ## $Platform$ Avatar Examples
 
