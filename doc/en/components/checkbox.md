@@ -13,7 +13,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 <code-view style="height: 100px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/checkbox-sample-1" alt="$Platform$ Checkbox Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -27,7 +27,7 @@ To get started with the checkbox web component, first you need to install the $P
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the IgcSwitchComponent in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -54,7 +54,7 @@ To provide a meaningful label for the checkbox, simply place some text between t
 <igc-checkbox>Label</igc-checkbox>
 ```
 
-You can specify if the label should be positioned before or after the checkbox toggle by setting the `label-position` attribute of the checkbox. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the checkbox toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#label-position) attribute of the checkbox. Allowed values are `before` and `after`(default):
 
 
 ```html
@@ -69,42 +69,42 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 ```
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/checkbox-label"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/checkbox-label">
+           github-src="inputs/checkbox/label">
 </code-view>
 
 ### Checked
 
-Use the `checked` attribute to toggle on the checkbox.
+Use the [`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#checked) attribute to toggle on the checkbox.
 
 ```html
 <igc-checkbox checked></igc-checkbox>
 ```
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/checkbox-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/checkbox-checked">
+           github-src="inputs/checkbox/checked">
 </code-view>
 
 ### Indeterminate
 
-Use the `indeterminate` attribute to set the value of the checkbox to neither `true` nor `false`.
+Use the [`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#indeterminate) attribute to set the value of the checkbox to neither `true` nor `false`.
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
 ```
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/checkbox-indeterminate"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/checkbox-indeterminate">
+           github-src="inputs/checkbox/indeterminate">
 </code-view>
 
 ### Required
 
-Use the `required` attribute to mark the checkbox as required.
+Use the [`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#required) attribute to mark the checkbox as required.
 
 ```html
 <igc-checkbox required></igc-checkbox>
@@ -112,7 +112,7 @@ Use the `required` attribute to mark the checkbox as required.
 
 ### Ivalid
 
-Use the `invalid` attribute to mark the checkbox as invalid.
+Use the [`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) attribute to mark the checkbox as invalid.
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
@@ -120,21 +120,21 @@ Use the `invalid` attribute to mark the checkbox as invalid.
 
 ### Disabled
 
-Use the `disabled` attribute to disable the checkbox.
+Use the [`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#disabled) attribute to disable the checkbox.
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
 ```
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/checkbox-disabled"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/checkbox-disabled">
+           github-src="inputs/checkbox/disabled">
 </code-view>
 
 ### Forms
 
-Use the `name` and `value` attributes when using the checkbox with `<igc-form>`.
+Use the [`name`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#name) and [`value`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#value) attributes when using the checkbox with `<igc-form>`.
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -163,8 +163,13 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
+## API Reference
+
+* [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+
 ## Additional Resources
 
 <div class="divider--half"></div>
 
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
