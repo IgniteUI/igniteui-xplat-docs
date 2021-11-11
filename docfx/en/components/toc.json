@@ -1324,6 +1324,12 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
+    "name": "Radio & Radio Group",
+    "href": "radio.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Checkbox",
     "href": "checkbox.md",
     "status": "NEW"
