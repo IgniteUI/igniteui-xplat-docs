@@ -51,8 +51,17 @@ igc-ripple {
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example">
 </code-view>
 
+## API Reference
+
+* [IgcRippleComponent]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+
+Additional Web Components that were used:
+
+* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+
 ## Additional Resources
 
 <div class="divider--half"></div>
 
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
