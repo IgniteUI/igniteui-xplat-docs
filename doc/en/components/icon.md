@@ -114,8 +114,13 @@ igc-icon {
            iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing">
 </code-view>
 
+## API Reference
+
+* [IgcIconComponent]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+
 ## Additional Resources
 
 <div class="divider--half"></div>
 
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
