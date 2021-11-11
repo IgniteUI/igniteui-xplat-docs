@@ -1313,17 +1313,6 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Scheduling",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Calendar",
-    "href": "calendar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
     "name": "Radio & Radio Group",
     "href": "radio.md",
     "status": "NEW"
@@ -1338,6 +1327,17 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Switch",
     "href": "switch.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Scheduling",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Calendar",
+    "href": "calendar.md",
     "status": "NEW"
   }
 ]

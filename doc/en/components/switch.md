@@ -13,7 +13,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 <code-view style="height:200px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/switch-sample-1" alt="$Platform$ Switch Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -70,9 +70,9 @@ The switch can also be labelled by elements external to the switch. In this case
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/switch-label"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/switch-label">
+           github-src="inputs/switch/label">
 </code-view>
 
 ### Checked
@@ -84,9 +84,9 @@ Use the [`checked`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#check
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/switch-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/switch-checked">
+           github-src="inputs/switch-checked">
 </code-view>
 
 ### Required
@@ -114,9 +114,9 @@ Use the [`disabled`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#disa
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/switch-disabled"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
            alt="$Platform$ Avatar Example"
-           github-src="layouts/switch-disabled">
+           github-src="inputs/switch/disabled">
 </code-view>
 
 ### Forms
