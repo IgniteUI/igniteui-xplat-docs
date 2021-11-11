@@ -57,7 +57,7 @@ To provide a meaningful label for the radio, simply place some text between the 
 <igc-radio>Apple</igc-radio>
 ```
 
-You can specify if the label should be positioned before or after the switch toggle by setting the `label-position` attribute of the switch. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the radio button by setting the `label-position` attribute. Allowed values are `before` and `after`(default):
 
 
 ```html
