@@ -64,7 +64,7 @@ You can specify if the label should be positioned before or after the radio butt
 <igc-radio label-position="before">Apple</igc-radio>
 ```
 
-The radio can also be labelled by elements external to it. In this case the the user is given the full control to position and style the label in accordance with their needs.
+The radio can also be labelled by elements external to it. In this case the user is given full control to position and style the label in accordance to their needs.
 
 ```html
 <span id="radio-label">Label</span>
