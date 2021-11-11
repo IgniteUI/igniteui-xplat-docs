@@ -44,12 +44,6 @@
   },
   {
     "exclude": ["Angular", "Blazor"],
-    "name": "Checkbox",
-    "href": "checkbox.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
@@ -1326,6 +1320,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Calendar",
     "href": "calendar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Checkbox",
+    "href": "checkbox.md",
     "status": "NEW"
   }
 ]
