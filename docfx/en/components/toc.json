@@ -44,6 +44,12 @@
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
+    "name": "Badge",
+    "href": "badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "Card",
     "href": "layouts/card.md",
     "status": "NEW"
