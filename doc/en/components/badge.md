@@ -40,11 +40,11 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <igc-badge variant="success"></igc-badge>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/badge-variants"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
            alt="$Platform$ Badge Example"
-           github-src="layouts/badge-variants">
+           github-src="inputs/badge/variants">
 </code-view>
 
 ### Shape
@@ -55,11 +55,11 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <igc-badge shape="square"></igc-badge>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/badge-shape"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
            alt="$Platform$ Badge Example"
-           github-src="layouts/badge-shape">
+           github-src="inputs/badge/shape">
 </code-view>
 
 ### Outline
@@ -70,11 +70,11 @@ To display a subtle border around the badge set the [`outlined`]({environment:wc
 <igc-badge outlined></igc-badge>
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/badge-outlined"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
            alt="$Platform$ Badge Example"
-           github-src="layouts/badge-outlined">
+           github-src="inputs/badge/outlined">
 </code-view>
 
 
@@ -83,7 +83,7 @@ To display a subtle border around the badge set the [`outlined`]({environment:wc
 The badge component exposes a `base` part that can be used to change all of its style properties.
 
 ```css
-igc-avatar::part(base) {
+igc-badge::part(base) {
   color: olive;
   background: beige;
   border-radius: 2px;
