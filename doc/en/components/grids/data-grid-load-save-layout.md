@@ -29,6 +29,6 @@ The grid supports saving the following features:
 - [Column Pinning](data-grid-column-pinning.md)
 - [Column Moving](data-grid-column-moving.md)
 - [Column Resizing](data-grid-column-resizing.md)
-- [Column Group-by](data-grid-column-group-by.md)
 - [Column Sorting](data-grid-column-sorting.md)
-- [Row Filtering](data-grid-row-filter.md)
+- [Column Filtering](data-grid-column-filtering.md)
+- [Row Grouping](data-grid-row-grouping.md)
