@@ -13,7 +13,8 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 <code-view style="height:200px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example"
+           github-src="inputs/switch/sample-1">
 </code-view>
 
 <div class="divider--half"></div>
@@ -86,7 +87,7 @@ Use the [`checked`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#check
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
            alt="$Platform$ Avatar Example"
-           github-src="inputs/switch-checked">
+           github-src="inputs/switch/checked">
 </code-view>
 
 ### Required
