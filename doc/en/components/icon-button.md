@@ -6,7 +6,7 @@
 
 # $Platform$ Icon Button Overview
 
-<p class="highlight">The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../components/icon.md) component but adds features from the [button](../components/button.md) component as well.</p>
+<p class="highlight">The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../components/icon.md) component but adds features from the [button](../components/inputs/button.md) component as well.</p>
 
 ## Usage
 
