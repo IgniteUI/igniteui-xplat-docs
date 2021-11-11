@@ -13,7 +13,8 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 <code-view style="height: 100px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example"
+           github-src="inputs/checkbox/sample-1">
 </code-view>
 
 <div class="divider--half"></div>
