@@ -6,7 +6,7 @@
 
 # $Platform$ Icon Button Overview
 
-<p class="highlight">The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../components/icon.md) component but adds features from the [button](../components/button.md) component as well.</p>
+<p class="highlight">The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../components/icon.md) component but adds features from the [button](../components/inputs/button.md) component as well.</p>
 
 ## Usage
 
@@ -56,7 +56,7 @@ The size of the button can be changed by setting the [`size`]({environment:wcApi
 
 ### Type
 
-The icon button component will change it's internal structure from `<button>` to an `<a>` type element when the `href` attribute is set. In that case the icon button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target`, and `download` attributes of the icon button.
+The icon button component will change its internal structure from `<button>` to an `<a>` type element when the `href` attribute is set. In that case the icon button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target`, and `download` attributes of the icon button.
 
 ```html
 <igc-icon-button
