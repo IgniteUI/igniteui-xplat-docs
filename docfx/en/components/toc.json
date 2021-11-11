@@ -44,6 +44,12 @@
   },
   {
     "exclude": ["Angular", "Blazor"],
+    "name": "Switch",
+    "href": "switch.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
