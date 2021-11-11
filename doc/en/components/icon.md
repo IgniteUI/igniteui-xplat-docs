@@ -28,7 +28,7 @@ npm install igniteui-webcomponents
 The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { defineComponents, IgcIconComponent } from "igniteui-webcomponents/src/components/icon";
+import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcIconComponent);
 ```
