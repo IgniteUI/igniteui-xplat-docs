@@ -93,3 +93,14 @@ igc-icon-button::part(icon) {
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example">
 </code-view>
+
+## API Reference
+
+* [IgcIconButtonComponent]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
+
+## Additional Resources
+
+<div class="divider--half"></div>
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

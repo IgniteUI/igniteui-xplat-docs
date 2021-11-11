@@ -49,12 +49,6 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
-    "name": "Icon Button",
-    "href": "icon-button.md",
-    "status": "NEW"
-  },
-  {
     "exclude": ["Angular", "Blazor"],
     "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
@@ -1321,6 +1315,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Button",
     "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Icon Button",
+    "href": "icon-button.md",
     "status": "NEW"
   },
   {
