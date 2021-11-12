@@ -29,7 +29,8 @@ After we import the ripple component we are ready to start using it, so let's ad
 
 <code-view style="height: 60px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
+           github-src="inputs/ripple/button">
 </code-view>
 
 You can add a ripple to any web element as long as its CSS `position` property is set to any other value than `static`;
@@ -48,7 +49,8 @@ igc-ripple {
 
 <code-view style="height: 60px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example">
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example"
+           github-src="inputs/ripple/color">
 </code-view>
 
 ## API Reference
