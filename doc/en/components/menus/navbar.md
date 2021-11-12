@@ -14,9 +14,9 @@ The following example represents a `Navbar` with title:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar Overview Example"
-           github-src="menus/navbar/overview">
+           github-src="menus/nav-bar/overview">
 </code-view>
 
 ## Dependencies
@@ -29,10 +29,11 @@ npm install {PackageWebComponents}
 
 ## Usage
 
-To get started with the `Navbar` component, first you need to import the `igniteui-webcomponents` in TypeScript file:
+To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
-import 'igniteui-webcomponents';
+import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+defineComponents(IgcNavbarComponent);
 ```
 
 Then in the template of our component we can add the following code to show a basic `Navbar` with a title only:
@@ -59,9 +60,9 @@ If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-content"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
            alt="$Platform$ Navbar Content Example"
-           github-src="menus/navbar/content">
+           github-src="menus/nav-bar/content">
 </code-view>
 
 ## Styling
@@ -94,9 +95,9 @@ If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
            alt="$Platform$ Navbar Styling Example"
-           github-src="menus/navbar/styling">
+           github-src="menus/nav-bar/styling">
 </code-view>
 
 ## API References
@@ -110,7 +111,8 @@ Additional components and/or directives that were used:
 <div class="divider"></div>
 
 ## Additional Resources
-
 <div class="divider--half"></div>
+Our community is active and always welcoming to new ideas.
 
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

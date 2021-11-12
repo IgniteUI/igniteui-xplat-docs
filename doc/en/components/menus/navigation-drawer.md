@@ -19,10 +19,12 @@ To get started with the [`IgcNavDrawerComponent`]({environment:wcApiUrl}/classes
 npm install {PackageComponents}
 ```
 
-Next, you need to import the package in your typescript file where you want to use it:
+Next, you need to import the `IgcNavDrawerComponent`, along with the [`IgcNavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) and [`IgcNavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
 ```
 
 ## Adding Navigation Drawer Items
@@ -91,10 +93,12 @@ Let's also add some radio buttons to display all [`position`]({environment:wcApi
 
 ```ts
 // ...
-import 'igniteui-webcomponents';
-import { IgcNavDrawerComponent } from 'igniteui-webcomponents/src/components/nav-drawer/nav-drawer';
-import { IgcRadioGroupComponent } from 'igniteui-webcomponents/src/components/radio-group/radio-group';
+import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
+  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
+
+defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
+    IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {

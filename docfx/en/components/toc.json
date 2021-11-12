@@ -38,6 +38,18 @@
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
+    "name": "Avatar",
+    "href": "avatar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Badge",
+    "href": "badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "Card",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -92,6 +104,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Menus",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Navbar",
+    "href": "menus/navbar.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1307,13 +1325,26 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Menus",
-    "header": true
+    "name": "Radio & Radio Group",
+    "href": "radio.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Navbar",
-    "href": "menus/navbar.md",
+    "name": "Checkbox",
+    "href": "checkbox.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Switch",
+    "href": "switch.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Ripple",
+    "href": "ripple.md",
     "status": "NEW"
   },
   {

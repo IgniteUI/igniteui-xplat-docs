@@ -44,7 +44,9 @@ Once the Form component is imported, you can add it on the page and add your con
 ```
 
 ```ts
-import 'igniteui-webcomponents';
+import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
+        
+defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
 
 Form data is collected for the following components:

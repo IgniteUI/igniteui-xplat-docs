@@ -5,7 +5,7 @@ _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Nat
 ---
 
 # Card
-<p class="highlight">The $ProductName$ [`Card Component`]({environment:wcApiUrl}/classes/IgcCardComponent.html) displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
+<p class="highlight">The $ProductName$ `Card Component` displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.</p>
 
 ## Card Example
 
@@ -24,13 +24,13 @@ Cards allow you to easily display content composed of different types of objects
 
 ### Getting Started
 
-Import `igniteui-webcomponents` inside our typescript file:
+To get started we need to import the [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
 ...
-import 'igniteui-webcomponents';
-
+import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
 
 Then, to represent the demo card template, we can add the following code to our html file.
@@ -242,8 +242,8 @@ igc-card {
     background-color: #011627;
 }
 
-igc-card-header,
-igc-card-content {
+igc-card-content,
+igc-card-header::part(title) { 
     color: #FEFEFE;
 }
 
@@ -272,10 +272,10 @@ In this article we covered a lot of ground with the card component. We created a
 
 For more detailed information regarding the card's API, refer to the following links:
 * [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
-* [`IgcCardHeader API`]({environment:wcApiUrl}/classes/IgcCardHeader.html)
-* [`IgcCardContent API`]({environment:wcApiUrl}/classes/IgcCardContent.html)
-* [`IgcCardMedia API`]({environment:wcApiUrl}/classes/IgcCardMedia.html)
-* [`IgcCardActions API`]({environment:wcApiUrl}/classes/IgcCardActions.html)
+* [`IgcCardHeaderComponent API`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html)
+* [`IgcCardContentComponent API`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html)
+* [`IgcCardMediaComponent API`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html)
+* [`IgcCardActionsComponent API`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html)
 
 
 Additional components and/or directives that were used:
