@@ -169,7 +169,7 @@ div#faqs-accordion-wrapper {
 </style>
 
 <div >
-    <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI ロゴ" src="../images/marketing/ignite-ui-logo.svg" alt="開発者の Web アプリケーション用の Ignite UI ロゴ">
+    <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI logo" src="../../images/marketing/ignite-ui-logo.svg" alt="開発者の Web アプリケーション用の Ignite UI ロゴ">
 </div>
 
 # 高速 $Platform$ データ グリッド
@@ -239,7 +239,7 @@ $ProductName$ のデータ グリッドは、大量のリアルタイム デー�
 <li>グリッド セルまたは列のデータに基づいた[列集計](data-grid-column-summaries.md)</li>
 
 <!-- React, WebComponents -->
-<li>Excel へのエクスポート ([データ可視化](excel-library-working-with-charts.md)を含む)</li>
+<li>Excel へのエクスポート ([データ可視化](..\excel-library-working-with-charts.md)を含む)</li>
 <!-- end: React, WebComponents -->
 
 <li>単一および複数選択の[セルと行の選択](data-grid-cell-selection.md)</li>
@@ -1015,7 +1015,7 @@ Infragistics の $Platform$ 製品の受賞歴のあるサポートにアクセ�
 <div class="divider--half"></div>
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/$ProductSpinal$-help">$Platform$ サポート ホーム ページ</a>をご覧ください。</li>
-            <li>$Platform$ [ドキュメント](general-getting-started.md)を読み、$Platform$ サンプルを試してください。</li>
+            <li>$Platform$ [ドキュメント](..\general-getting-started.md)を読み、$Platform$ サンプルを試してください。</li>
             <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite UI for $Platform$">$Platform$ ブログをご覧ください。</a> </li>
             <li>アカウントにサインインした後、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity">サポート ケースを送信します。</a> </li>
             <li>$Platform$ <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションをお試しください。</a></li>
@@ -1046,7 +1046,7 @@ Infragistics の $Platform$ 製品の受賞歴のあるサポートにアクセ�
                 <li>[Excel スタイル フィルタリング](data-grid-column-filtering.md)と [Excel キーボード ナビゲーション](data-grid-cell-activation.md)機能</li>
                 <li>インタラクティブな [Outlook スタイルのようなグループ化](data-grid-row-grouping.md)</li>
                 <li>グリッド セルまたは列のデータに基づいた[列集計](data-grid-column-summaries.md)</li>
-                <li>Excel へのエクスポート ([データ可視化](excel-library-working-with-charts.md)を含む)</li>
+                <li>Excel へのエクスポート ([データ可視化](..\excel-library-working-with-charts.md)を含む)</li>
                 <li>単一選択および複数選択の[セルと行の選択](data-grid-cell-selection.md)</li>
                 <li>モバイル アプリケーション開発の完全なタッチ サポート</li>
             </ul>
@@ -1074,7 +1074,7 @@ $ProductName$ は、サブスクリプション モデルで利用可能な商�
         <div class="faqs-accordion h4">Infragistics $ProductName$ Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        $Platform$ Data Grid の使用を開始するには、[作業の開始ガイド](general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、$Platform$ 開発のベスト プラクティス ガイドです。
+        $Platform$ Data Grid の使用を開始するには、[作業の開始ガイド](..\general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、$Platform$ 開発のベスト プラクティス ガイドです。
         </div>
     </div>
 </div>
@@ -1121,7 +1121,7 @@ $ProductName$ は、サブスクリプション モデルで利用可能な商�
         <div class="faqs-accordion h4">Infragistics $ProductName$ Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        $Platform$ Data Grid の使用を開始するには、[作業の開始ガイド](general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、$Platform$ 開発のベスト プラクティス ガイドです。
+        $Platform$ Data Grid の使用を開始するには、[作業の開始ガイド](..\general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、$Platform$ 開発のベスト プラクティス ガイドです。
         </div>
     </div>
 </div>

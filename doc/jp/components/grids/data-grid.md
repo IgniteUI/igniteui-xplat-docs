@@ -29,8 +29,8 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 
 <!-- Blazor -->
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
-- [作業の開始](general-getting-started.md)
-- [NuGet パッケージの追加](nuget-feed.md)
+- [作業の開始](..\general-getting-started.md)
+- [NuGet パッケージの追加](..\nuget-feed.md)
 
 以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
