@@ -7,7 +7,7 @@ mentionedTypes: ['Grid']
 
 # $Platform$ Grid Filtering Overview
 
-The $ProductName$ Data Table / Data Grid includes a column filtering that gives you the ability to perform expressive sort conditions based on the data type of the column being filtered.
+The $ProductName$ Data Table / Data Grid includes column filtering with both a filter row and API that gives you the ability to perform expressive sort conditions based on the data type of the column being filtered.
 
 ## $Platform$ Grid Filtering Example
 
@@ -20,6 +20,8 @@ The $ProductName$ Data Table / Data Grid includes a column filtering that gives 
 </code-view>
 
 <div class="divider--half"></div>
+
+As seen above, setting the `FilterUIType` property to FilterRow will provide a filter-row UI beneath the column headers and that will enable end-users to filter the grid's records. Filtering is also exposed in the column options UI by hovering the 
 
 ## Code Snippets
 

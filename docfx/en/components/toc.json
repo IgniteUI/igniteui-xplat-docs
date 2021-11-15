@@ -200,12 +200,12 @@
       {
         "name": "Cell Activation",
         "href": "grids/data-grid-cell-activation.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Grid Editing",
         "href": "grids/data-grid-cell-editing.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Cell Merging",
@@ -215,7 +215,7 @@
       {
         "name": "Cell Selection",
         "href": "grids/data-grid-cell-selection.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "Column Animations",
@@ -225,7 +225,7 @@
       {
         "name": "Column Filtering",
         "href": "grids/data-grid-column-filtering.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "Column Moving",
@@ -290,7 +290,7 @@
       {
         "name": "Row Grouping",
         "href": "grids/data-grid-row-grouping.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "Row Highlighting",

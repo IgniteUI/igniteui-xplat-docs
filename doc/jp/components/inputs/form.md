@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ (フォーム) の概要
 
-[`IgcFormComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+[`Form Component`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
 
 ## $Platform$ の例
 
@@ -106,5 +106,5 @@ Form コンポーネントは、次のメソッドを公開します:
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [$Platform$ **Forums** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

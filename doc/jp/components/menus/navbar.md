@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ Navbar の概要
 
-$Platform$ [`IgcNavbarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcNavbarComponent.html) は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
+$Platform$ [`Navbar Component`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcNavbarComponent.html) は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
 
 ## $Platform$ Navbar の例
 
@@ -106,7 +106,7 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 * [`IgcNavbarComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcNavbarComponent.html)
 
 使用したその他のコンポーネントとディレクティブ:
-* [`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html)
+* [`IgcIconComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html)
 
 <div class="divider"></div>
 
