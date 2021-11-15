@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ グリッド フィルターの概要
 
-$Platform$ Data Table / Data Grid には、フィルター処理される列のデータ型に基づいてソート条件を実行する機能を提供する列フィルター API が含まれています。
+$ProductName$ Data Table / Data Grid には、フィルター行と API の両方を使用した列フィルタリングが含まれており、フィルター処理される列のデータ型に基づいてソート条件を実行できます。
 
 ## $Platform$ グリッド フィルターの例
 
@@ -21,6 +21,8 @@ $Platform$ Data Table / Data Grid には、フィルター処理される列の�
 </code-view>
 
 <div class="divider--half"></div>
+
+As seen above, setting the `FilterUIType` property to FilterRow will provide a filter-row UI beneath the column headers and that will enable end-users to filter the grid's records. Filtering is also exposed in the column options UI.
 
 ## コード スニペット
 

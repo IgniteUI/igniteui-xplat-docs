@@ -6,7 +6,7 @@ _language: ja
 ---
 
 # Card (カード)
-<p class="highlight">$ProductName$ [`Card Component`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html) は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。</p>
+<p class="highlight">$ProductName$ `Card Component` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。</p>
 
 ## Card の例
 
@@ -25,13 +25,13 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 ### 作業の開始
 
-typescript ファイル内に `igniteui-webcomponents` をインポートします。
+開始するには、[`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) をその構成要素とともに typescript ファイルにインポートし、[`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
 // index.ts
 ...
-import 'igniteui-webcomponents';
-
+import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
 
 次に、デモ カード テンプレートを表すために、次のコードを html ファイルに追加できます。
@@ -243,8 +243,8 @@ igc-card {
     background-color: #011627;
 }
 
-igc-card-header,
-igc-card-content {
+igc-card-content,
+igc-card-header::part(title) { 
     color: #FEFEFE;
 }
 
@@ -273,10 +273,10 @@ igc-icon-button::part(icon) {
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 * [`IgcCardComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html)
-* [`IgcCardHeader API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html)
-* [`IgcCardContent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html)
-* [`IgcCardMedia API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html)
-* [`IgcCardActions API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActions.html)
+* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html)
+* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html)
+* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html)
+* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActions.html)
 
 
 使用したその他のコンポーネントとディレクティブ:

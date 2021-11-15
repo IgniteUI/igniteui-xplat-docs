@@ -33,10 +33,10 @@ defineComponents(IgcButtonComponent);
 
 `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
 
-## Type
+## タイプ
 
-The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the [`href`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#href) attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the [`rel`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#rel), [`target`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#target) and [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) attributes.
-In the case when the button component uses an actual `button` element internally, we can specify its [`type`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#type) by setting the property to any of the following values:
+[`href`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#href) 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、[`rel`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#rel)、[`target`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#target) および [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) 属性も設定できます。
+ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その [`type`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#type) を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -133,9 +133,9 @@ this.radioGroup.addEventListener('click', (radio: any) => {
            github-src="/inputs/button/size">
 </code-view>
 
-### Download
+### ダウンロード
 
-Setting the [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) property will prompt the user to save the linked URL instead of navigating to it.
+[`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
 
 ```html
 <igc-button

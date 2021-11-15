@@ -27,10 +27,12 @@ Calendar コンポーネントの使用を開始するには、最初に次の�
 npm install {PackageComponents}
 </pre>
 
-次の手順は、`IgcCalendarComponent` をインポートすることです:
+次の手順は、[`IgcCalendarComponent`]({environment:wcApiUrl}/classes/igccalendarcomponent.html) をインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
-import { IgcCalendarComponent } from 'igniteui-webcomponents/src/components/calendar/calendar';
+import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcCalendarComponent);
 ```
 
 ### 単一選択の Calendar
@@ -386,3 +388,17 @@ igc-calendar::part(year-inner current selected) {
            alt="$Platform$ スタイル設定の例"
            github-src="scheduling/calendar/styling">
 </code-view>
+
+## API リファレンス
+
+* [IgcCalendarComponent]({environment:wcApiUrl}/classes/igccalendarcomponent.html)
+* [IgcRadioComponent]({environment:wcApiUrl}/classes/igcradiocomponent.html)
+* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
+
+## その他のリソース
+
+<div class="divider--half"></div>
+コミュニティに参加して新しいアイデアをご提案ください。
+
+* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

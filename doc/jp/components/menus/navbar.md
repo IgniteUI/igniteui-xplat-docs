@@ -15,9 +15,9 @@ $Platform$ [`Navbar Component`](https://www.infragistics.com/products/ignite-ui-
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-overview"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar 概要の例"
-           github-src="menus/navbar/overview">
+           github-src="menus/nav-bar/overview">
 </code-view>
 
 ## 依存関係
@@ -30,10 +30,11 @@ npm install {PackageWebComponents}
 
 ## 使用方法
 
-`Navbar` コンポーネントの使用を開始するには、最初に `igniteui-webcomponents` を TypeScript ファイルにインポートする必要があります。
+`Navbar` コンポーネントの使用を開始するには、最初に typescript ファイルにコンポーネントをインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
-import 'igniteui-webcomponents';
+import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+defineComponents(IgcNavbarComponent);
 ```
 
 次に、コンポーネントのテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
@@ -60,9 +61,9 @@ import 'igniteui-webcomponents';
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-content"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
            alt="$Platform$ Navbar コンテンツの例"
-           github-src="menus/navbar/content">
+           github-src="menus/nav-bar/content">
 </code-view>
 
 ## スタイル設定
@@ -95,9 +96,9 @@ igc-navbar::part(end) {
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/navbar-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
            alt="$Platform$ Navbar スタイル設定の例"
-           github-src="menus/navbar/styling">
+           github-src="menus/nav-bar/styling">
 </code-view>
 
 ## API リファレンス
@@ -111,7 +112,8 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 <div class="divider"></div>
 
 ## その他のリソース
-
 <div class="divider--half"></div>
+コミュニティに参加して新しいアイデアをご提案ください。
 
-- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

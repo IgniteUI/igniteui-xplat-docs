@@ -19,13 +19,15 @@ Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーション�
 npm install {PackageComponents}
 ```
 
-次に、パッケージを使用する typescript ファイルにインポートする必要があります。
+次に、`IgcNavDrawerComponent` と [`IgcNavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) および[`IgcNavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
-import 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
 ```
 
-## Adding Navigation Drawer 項目の追加
+## Navigation Drawer 項目の追加
 
 Navigation Drawer コンポーネントがインポートされたら、使用を開始する準備が整いました。いくつかの項目を含む単純な Navigation Drawer を表示する次のコードを追加できます。
 
@@ -91,10 +93,12 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
 
 ```ts
 // ...
-import 'igniteui-webcomponents';
-import { IgcNavDrawerComponent } from 'igniteui-webcomponents/src/components/nav-drawer/nav-drawer';
-import { IgcRadioGroupComponent } from 'igniteui-webcomponents/src/components/radio-group/radio-group';
+import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
+  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
+
+defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
+    IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {
