@@ -19,7 +19,7 @@ Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーション�
 npm install {PackageComponents}
 ```
 
-次に、`IgcNavDrawerComponent` と [`IgcNavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) および[`IgcNavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+次に、`IgcNavDrawerComponent` と [`IgcNavDrawerHeaderItemComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawerheaderitemcomponent.html) および[`IgcNavDrawerItemComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdraweritemcomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';

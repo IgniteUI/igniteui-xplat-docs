@@ -35,8 +35,8 @@ defineComponents(IgcButtonComponent);
 
 ## タイプ
 
-[`href`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#href) 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、[`rel`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#rel)、[`target`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#target) および [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) 属性も設定できます。
-ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その [`type`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#type) を指定できます。
+[`href`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#href) 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、[`rel`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#rel)、[`target`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#target) および [`download`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#download) 属性も設定できます。
+ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その [`type`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#type) を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -135,7 +135,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 ### ダウンロード
 
-[`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
+[`download`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#download) プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
 
 ```html
 <igc-button

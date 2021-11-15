@@ -25,7 +25,7 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 ### 作業の開始
 
-開始するには、[`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) をその構成要素とともに typescript ファイルにインポートし、[`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+開始するには、[`IgcCardComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html) をその構成要素とともに typescript ファイルにインポートし、[`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
 // index.ts

@@ -2,6 +2,7 @@
 title: Radio と Radio Group
 _description: $ProductName$ Radio Button と Radio Group コントロールを使用すると、開発者はユーザーが選択できるオプションのリストをシームレスに表示して、テンプレート駆動型のリアクティブ フォームでより優れた UI を実現できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Radio Button components, $Platform$ Radio Button controls, $Platform$ Radio Group component, $Platform$ Radio Group control, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Radio Button コンポーネント, $Platform$ Radio Button コントロール
+_language: ja
 ---
 
 # $Platform$ Radio & Radio Group (ラジオとラジオ グループ)
@@ -26,7 +27,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html) と [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、[IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html) と [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -136,7 +137,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### グループの配置
 
-ラジオ グループを使用すると、[`alignment`]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html#alignment) 属性を使用して、含まれているラジオ ボタンの配置方向を簡単に変更できます。許可される値は、`vertical` (デフォルト) と `horizontal` です。
+ラジオ グループを使用すると、[`alignment`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html#alignment) 属性を使用して、含まれているラジオ ボタンの配置方向を簡単に変更できます。許可される値は、`vertical` (デフォルト) と `horizontal` です。
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -198,8 +199,8 @@ igc-radio::part(control checked) {
 
 ## API リファレンス
 
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
+* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
+* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html)
 
 ## その他のリソース
 

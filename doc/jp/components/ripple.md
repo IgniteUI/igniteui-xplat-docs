@@ -2,6 +2,7 @@
 title: $Platform$ Ripple
 _description: $ProductName$ Ripple を使用すると、開発者は、視覚的に魅力的な UI 拡張のためにリップル アニメーション効果を受け取った領域を定義できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Ripple コンポーネント, $Platform$ Ripple コントロール
+_language: ja
 ---
 
 # $Platform$ Ripple (リップル) の概要
@@ -10,7 +11,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 ## 使用方法
 
-Ripple Web コンポーネントの使用を開始するには、[`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+Ripple Web コンポーネントの使用を開始するには、[`IgcRippleComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcripplecomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -55,11 +56,11 @@ igc-ripple {
 
 ## API リファレンス
 
-* [IgcRippleComponent]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* [IgcRippleComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRippleComponent.html)
 
 使用したその他の WEB コンポーネント:
 
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
 
 ## その他のリソース
 

@@ -24,7 +24,7 @@ List Web コンポーネントの使用を開始するには、最初に次の�
 npm install igniteui-webcomponents
 ```
 
-次の手順は、typescript ファイル内の項目とともに `IgcListComponent` をインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
+次の手順は、typescript ファイル内の項目とともに `IgcListComponent` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
 
 ```typescript
 // index.ts

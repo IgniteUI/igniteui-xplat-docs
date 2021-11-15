@@ -27,7 +27,7 @@ Calendar コンポーネントの使用を開始するには、最初に次の�
 npm install {PackageComponents}
 </pre>
 
-次の手順は、[`IgcCalendarComponent`]({environment:wcApiUrl}/classes/igccalendarcomponent.html) をインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、[`IgcCalendarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igccalendarcomponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -391,9 +391,9 @@ igc-calendar::part(year-inner current selected) {
 
 ## API リファレンス
 
-* [IgcCalendarComponent]({environment:wcApiUrl}/classes/igccalendarcomponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/igcradiocomponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
+* [IgcCalendarComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igccalendarcomponent.html)
+* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiocomponent.html)
+* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiogroupcomponent.html)
 
 ## その他のリソース
 

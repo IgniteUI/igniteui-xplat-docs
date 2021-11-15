@@ -30,7 +30,7 @@ npm install {PackageWebComponents}
 
 ## 使用方法
 
-`Navbar` コンポーネントの使用を開始するには、最初に typescript ファイルにコンポーネントをインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+`Navbar` コンポーネントの使用を開始するには、最初に typescript ファイルにコンポーネントをインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
