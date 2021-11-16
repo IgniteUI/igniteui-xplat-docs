@@ -47,7 +47,7 @@ Then in the template of our component we can add the following code to show a ba
 In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
 
 ```html
-<igc-navbar style="height:40px">
+<igc-navbar style="height:65px">
     <igc-icon name="home" slot="start" size="large"></igc-icon>
     <h2>Sample App</h2>
     <igc-icon name="search" slot="end" size="large"></igc-icon>
