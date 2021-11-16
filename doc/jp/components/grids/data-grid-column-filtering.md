@@ -22,7 +22,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <div class="divider--half"></div>
 
-As seen above, setting the `FilterUIType` property to FilterRow will provide a filter-row UI beneath the column headers and that will enable end-users to filter the grid's records. Filtering is also exposed in the column options UI.
+上記のように、`FilterUIType` プロパティを FilterRow に設定すると、列ヘッダーの下にフィルター行 UI が提供され、エンドユーザーがグリッドのレコードをフィルター処理できるようになります。フィルタリングは、列オプション UI でも公開されます。
 
 ## コード スニペット
 

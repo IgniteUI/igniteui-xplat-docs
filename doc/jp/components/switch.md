@@ -7,7 +7,7 @@ _language: ja
 
 # $Platform$ Switch (スイッチ)
 
-<p class="highlight">$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.</p>
+<p class="highlight">$ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。</p>
 <div class="divider"></div>
 
 ## Switch の例

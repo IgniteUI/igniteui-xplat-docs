@@ -1,23 +1,23 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+title: $Platform$ Badge | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
+_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, $Platform$ バッジ コンポーネント, インフラジスティックス
 _language: ja
 ---
 
-# $Platform$ Badge
+# $Platform$ Badge (バッジ)
 
-The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+$ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
-## Usage
+## 使用方法
 
-To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
+バッジ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcBadgeComponent]({environment:wcApiUrl}/classes/IgcBadgeComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+次の手順は、[IgcBadgeComponent]({environment:wcApiUrl}/classes/IgcBadgeComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -25,17 +25,17 @@ import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcBadgeComponent);
 ```
 
-The simplest way to start using the badge is as follows:
+バッジの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-badge></igc-badge>
 ```
 
-## Examples
+## 例
 
-### Variants
+### バリアント
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the [`variant`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#variant) attribute.
+$ProductName$ バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを [`variant`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#variant) 属性に割り当てることにより、バリアントを変更できます。
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -44,13 +44,13 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge Example"
+           alt="$Platform$ Badge の例"
            github-src="inputs/badge/variants">
 </code-view>
 
-### Shape
+### 形状
 
-The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the [`shape`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#shape) attribute.
+バッジ コンポーネントは、`rounded` (default) 形状と `square` をサポートします。これらの値は、[`shape`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#shape) 属性に割り当てることができます。
 
 ```html
 <igc-badge shape="square"></igc-badge>
@@ -59,13 +59,13 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge Example"
+           alt="$Platform$ Badge の例"
            github-src="inputs/badge/shape">
 </code-view>
 
-### Outline
+### アウトライン
 
-To display a subtle border around the badge set the [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) attribute of the badge.
+バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
 
 ```html
 <igc-badge outlined></igc-badge>
@@ -74,14 +74,14 @@ To display a subtle border around the badge set the [`outlined`]({environment:wc
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge Example"
+           alt="$Platform$ Badge の例"
            github-src="inputs/badge/outlined">
 </code-view>
 
 
-## Styling
+## スタイル設定
 
-The badge component exposes a `base` part that can be used to change all of its style properties.
+バッジ コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base` パーツを公開します。
 
 ```css
 igc-badge::part(base) {
@@ -91,13 +91,13 @@ igc-badge::part(base) {
 }
 ```
 
-## API Reference
+## API リファレンス
 
 * [IgcBadgeComponent]({environment:wcApiUrl}/classes/IgcBadgeComponent.html)
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

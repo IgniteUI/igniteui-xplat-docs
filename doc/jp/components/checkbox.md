@@ -1,35 +1,35 @@
 ---
-title: $Platform$ Checkbox Component
-_description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+title: $Platform$ Checkbox コンポーネント
+_description: $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Checkbox コンポーネント, $Platform$ Checkbox コントロール
 _language: ja
 ---
 
 
-# $Platform$ Checkbox Overview
-<p class="highlight">The $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.</p>
+# $Platform$ Checkbox (チェックボックス) の概要
+<p class="highlight">$ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。ネイティブ ブラウザーのチェックボックスと同様に動作します。</p>
 <div class="divider"></div>
 
-## Checkbox Example
+## Checkbox の例
 
 <code-view style="height: 100px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/sample-1">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
-At its core, the checkbox component allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
+## 使用方法
+チェックボックス コンポーネントは、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
-To get started with the checkbox web component, first you need to install the $ProductName$ by typing the following command:
+チェックボックス ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+次の手順は、[IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -37,33 +37,33 @@ import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
 defineComponents(IgcCheckboxComponent);
 ```
 
-The simplest way to start using the checkbox is as follows:
+チェックボックスの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-checkbox></igc-checkbox>
 ```
 
->[!WARN]
-> The checkbox component doesn't work with the standart `<form>` element. Use `<igc-form>` instead.
+>[!WARNING]
+>チェックボックス コンポーネントは標準の `<form>` 要素では機能しません。代わりに `<igc-form>` を使用してください。
 
-## Examples
+## 例
 
-### Label
+### ラベル
 
-To provide a meaningful label for the checkbox, simply place some text between the opening and closing tags:
+チェックボックスに意味のあるラベルを付けるには、開始タグと終了タグの間にテキストを配置するだけです。
 
 ```html
 <igc-checkbox>Label</igc-checkbox>
 ```
 
-You can specify if the label should be positioned before or after the checkbox toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#label-position) attribute of the checkbox. Allowed values are `before` and `after`(default):
+チェックボックスの [`label-position`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#label-position) 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
 <igc-checkbox label-position="before">Label</igc-checkbox>
 ```
 
-The checkbox can also be labelled by elements external to the checkbox. In this case, the user is given full control to position and style the label in accordance with their needs.
+チェックボックスは、チェックボックスの外部の要素でラベル付けすることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
 
 ```html
 <span id="checkbox-label">Label</span>
@@ -72,13 +72,13 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Avatar Example"
+           alt="$Platform$ Avatar の例"
            github-src="inputs/checkbox/label">
 </code-view>
 
-### Checked
+### チェック済み
 
-Use the [`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#checked) attribute to toggle on the checkbox.
+チェックボックスをオンに切り替えるには、[`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#checked) 属性を使用します。
 
 ```html
 <igc-checkbox checked></igc-checkbox>
@@ -86,13 +86,13 @@ Use the [`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#che
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
-           alt="$Platform$ Avatar Example"
+           alt="$Platform$ Avatar の例"
            github-src="inputs/checkbox/checked">
 </code-view>
 
-### Indeterminate
+### 不確定
 
-Use the [`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#indeterminate) attribute to set the value of the checkbox to neither `true` nor `false`.
+[`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#indeterminate) 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
@@ -100,29 +100,29 @@ Use the [`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.ht
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Avatar Example"
+           alt="$Platform$ Avatar の例"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
-### Required
+### 必須
 
-Use the [`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#required) attribute to mark the checkbox as required.
+[`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#required) 属性を使用して、チェックボックスを必須としてマークします。
 
 ```html
 <igc-checkbox required></igc-checkbox>
 ```
 
-### Ivalid
+### 無効
 
-Use the [`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) attribute to mark the checkbox as invalid.
+[`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) 属性を使用して、チェックボックスを無効としてマークします。
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
 ```
 
-### Disabled
+### オフ
 
-Use the [`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#disabled) attribute to disable the checkbox.
+チェックボックスをオフにするには、[`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#disabled) 属性を使用します。
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
@@ -130,21 +130,21 @@ Use the [`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#di
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Avatar Example"
+           alt="$Platform$ Avatar の例"
            github-src="inputs/checkbox/disabled">
 </code-view>
 
-### Forms
+### フォーム
 
-Use the [`name`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#name) and [`value`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#value) attributes when using the checkbox with `<igc-form>`.
+`<igc-form>` でチェックボックスを使用する場合は、[`name`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#name) と [`value`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#value) の属性を使用します。
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
 ```
 
-## Styling
+## スタイル設定
 
-The checkbox component exposes several CSS parts (`base`, `control`, `indicator`, and `label`) to give you full control over its styling.
+チェックボックス コンポーネントは、いくつかの CSS パーツ (`base`、`control`、`indicator`、および `label`) を公開して、スタイルを完全に制御できるようにします。
 
 ```css
 igc-checkbox::part(indicator) {
@@ -165,13 +165,13 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
-## API Reference
+## API リファレンス
 
 * [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
