@@ -10,7 +10,7 @@ mentionedTypes: ['Navbar']
 
 ## $Platform$ Navbar Example
 
-The following example represents a `Navbar` with title:
+The following example represents a `Navbar` with icons and text header:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -42,12 +42,12 @@ Then in the template of our component we can add the following code to show a ba
 <igc-navbar>Ignite UI for Web Components</igc-navbar>
 ```
 
-## Customize Content
+## Content
 
-In order to customize the content of our `Navbar` we can add some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
+In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
 
 ```html
-<igc-navbar style="height:40px">
+<igc-navbar style="height:65px">
     <igc-icon name="home" slot="start" size="large"></igc-icon>
     <h2>Sample App</h2>
     <igc-icon name="search" slot="end" size="large"></igc-icon>
@@ -55,15 +55,6 @@ In order to customize the content of our `Navbar` we can add some [`IgcIconCompo
     <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
 </igc-navbar>
 ```
-
-If all went well, you should see the following in your browser:
-
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
-           alt="$Platform$ Navbar Content Example"
-           github-src="menus/nav-bar/content">
-</code-view>
 
 ## Styling
 
@@ -75,19 +66,20 @@ igc-icon {
 }
 
 igc-navbar {
-    background-color: gainsboro;
+    background-color: #232121
 }
 
 igc-navbar::part(start) {
-    color: darkolivegreen;
+    color: #f23269;
 }
 
 igc-navbar::part(middle) {
     font-family: Titillium Web,sans-serif;
+    color: #e9e8ea
 }
 
 igc-navbar::part(end) {
-    color: darkgray;
+    color: #e9e8ea
 }
 ```
 
