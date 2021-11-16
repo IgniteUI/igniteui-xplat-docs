@@ -29,7 +29,7 @@ _language: ja
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、[IgcCheckboxComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -56,7 +56,7 @@ defineComponents(IgcCheckboxComponent);
 <igc-checkbox>Label</igc-checkbox>
 ```
 
-チェックボックスの [`label-position`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#label-position) 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
+チェックボックスの [`label-position`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#label-position) 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
@@ -78,7 +78,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### チェック済み
 
-チェックボックスをオンに切り替えるには、[`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#checked) 属性を使用します。
+チェックボックスをオンに切り替えるには、[`checked`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#checked) 属性を使用します。
 
 ```html
 <igc-checkbox checked></igc-checkbox>
@@ -92,7 +92,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 不確定
 
-[`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#indeterminate) 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
+[`indeterminate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#indeterminate) 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
@@ -106,7 +106,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 必須
 
-[`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#required) 属性を使用して、チェックボックスを必須としてマークします。
+[`required`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#required) 属性を使用して、チェックボックスを必須としてマークします。
 
 ```html
 <igc-checkbox required></igc-checkbox>
@@ -114,7 +114,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 無効
 
-[`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) 属性を使用して、チェックボックスを無効としてマークします。
+[`invalid`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#invalid) 属性を使用して、チェックボックスを無効としてマークします。
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
@@ -122,7 +122,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### オフ
 
-チェックボックスをオフにするには、[`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#disabled) 属性を使用します。
+チェックボックスをオフにするには、[`disabled`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#disabled) 属性を使用します。
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
@@ -136,7 +136,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### フォーム
 
-`<igc-form>` でチェックボックスを使用する場合は、[`name`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#name) と [`value`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#value) の属性を使用します。
+`<igc-form>` でチェックボックスを使用する場合は、[`name`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#name) と [`value`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#value) の属性を使用します。
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -167,7 +167,7 @@ igc-checkbox::part(indicator checked) {
 
 ## API リファレンス
 
-* [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+* [IgcCheckboxComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
 
 ## その他のリソース
 
