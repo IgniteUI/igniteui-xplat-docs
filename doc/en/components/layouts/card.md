@@ -67,13 +67,13 @@ Then, to represent the demo card template, we can add the following code to our 
 </igc-card>
 ```
 
-You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({environment:wcApiUrl}/classes/IgcCardHeader.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
+You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
-Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({environment:wcApiUrl}/classes/IgcCardMedia.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
-You can place anything inside the [`igc-card-content`]({environment:wcApiUrl}/classes/IgcCardContent.html) tags. Usually text goes there.
+You can place anything inside the [`igc-card-content`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html) tags. Usually text goes there.
 
-Finally, the [`igc-card-actions`]({environment:wcApiUrl}/classes/IgcCardActions.html) is where you'd place any actionable items, like buttons.
+Finally, the [`igc-card-actions`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
