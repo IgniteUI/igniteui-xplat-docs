@@ -6,7 +6,17 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Ripple Overview
 
-<p class="highlight">The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.</p>
+<p class="highlight">The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
+</p>
+<div class="divider"></div>
+
+## $Platform$ Ripple Example
+
+<code-view style="height: 60px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
+           github-src="inputs/ripple/button">
+</code-view>
 
 ## Usage
 
@@ -26,12 +36,6 @@ After we import the ripple component we are ready to start using it, so let's ad
   Ripple Button
 </igc-button>
 ```
-
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
-           github-src="inputs/ripple/button">
-</code-view>
 
 You can add a ripple to any web element as long as its CSS `position` property is set to any other value than `static`;
 

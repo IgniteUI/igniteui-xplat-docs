@@ -9,6 +9,17 @@ _keywords: avatar, layout, $ProductName$, Infragistics
 <p class="highlight">The $ProductName$ Avatar helps to display initials, images, or icons in your application.</p>
 <div class="divider"></div>
 
+## $Platform$ Icon Avatar Example
+
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
+           alt="$Platform$ Avatar Example"
+           github-src="layouts/avatar/icon">
+</code-view>
+
+<div class="divider--half"></div>
+
 ## Usage
 
 To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
@@ -62,16 +73,7 @@ The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape 
 
 Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#size) attribute. The supported sizes are `small`, `medium`, and `large`.
 
-## $Platform$ Avatar Examples
-
-### Icon
-
-<code-view style="height: 50px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
-           alt="$Platform$ Avatar Example"
-           github-src="layouts/avatar/icon">
-</code-view>
+## Examples
 
 ### Initials
 
