@@ -7,6 +7,18 @@ _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Pl
 # $Platform$ Badge
 
 The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+<div class="divider"></div>
+
+## $Platform$ Badge Example
+
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
+           alt="$Platform$ Badge Example"
+           github-src="inputs/badge/outlined">
+</code-view>
+
+<div class="divider"></div>
 
 ## Usage
 
@@ -28,6 +40,12 @@ The simplest way to start using the badge is as follows:
 
 ```html
 <igc-badge></igc-badge>
+```
+
+To display a subtle border around the badge set the [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) attribute of the badge.
+
+```html
+<igc-badge outlined></igc-badge>
 ```
 
 ## Examples
@@ -61,22 +79,6 @@ The badge component supports `rounded`(default) and `square` shapes. These value
            alt="$Platform$ Badge Example"
            github-src="inputs/badge/shape">
 </code-view>
-
-### Outline
-
-To display a subtle border around the badge set the [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) attribute of the badge.
-
-```html
-<igc-badge outlined></igc-badge>
-```
-
-<code-view style="height: 50px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge Example"
-           github-src="inputs/badge/outlined">
-</code-view>
-
 
 ## Styling
 
