@@ -20,6 +20,21 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 ## **$Platform$ {PackageVerChanges-21-2}**
 
+<!-- Blazor -->
+
+> [!NOTE]
+> 'Igb' is now required for all components and nested elements within each component. This change is mandatory change after upgrading
+>
+> eg. 
+> ```razor
+> <IgbDataGrid>
+> <IgbTextColumn Field="ProductID" />
+> </IgbDataGrid>
+> ```
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
 <!-- Blazor, WebComponents -->
 ### New Components
 
@@ -90,11 +105,12 @@ Old brushes/outlines | New outline/brushes
     - Cell Merging
 
 * New API
-    - Added SelectionChanged event. Used to detect changes on selection interactions , eg. Multiple row selection.
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+     eg. Multiple row selection.
 
 * Breaking Changes:
-    - Renamed GridSummaryScope enum type from DataSourceSummaryScope to SummaryScope
-    - Renamed GroupHeaderDisplayMode enum type from DataSourceSectionHeaderDisplayMode to GroupHeaderDisplayMode
+    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
+    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
 
 <!-- end: Blazor, React, WebComponents -->
 
