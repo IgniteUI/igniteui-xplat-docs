@@ -100,10 +100,10 @@ Old brushes/outlines | New outline/brushes
 ### DataGrid
 
 * New Features Added:
-    - Filter Row
-    - Load/Save Layout Customizations
-    - GroupBy Area for column grouping
-    - Cell Merging
+    - [Filter Row](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [Cell Merging](grids/data-grid-cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
