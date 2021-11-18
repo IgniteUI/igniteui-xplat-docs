@@ -23,14 +23,16 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls. 
 >
-> eg. 
-> ```razor
-> <IgbDataGrid>
->   <IgbTextColumn Field="ProductID" />
-> </IgbDataGrid>
-> ```
+>eg. 
+>
+>`<IgbDataGrid>`
+>
+>   `<IgbTextColumn Field="ProductID" />`
+>
+>`</IgbDataGrid>`
+
 <!-- end: Blazor -->
 
 <div class="divider--half"></div>
