@@ -104,11 +104,9 @@ Old brushes/outlines | New outline/brushes
     - Load/Save Layout Customizations
     - GroupBy Area for column grouping
     - Cell Merging
-
-* New API
+* New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
-
 * Breaking Changes:
     - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
     - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
