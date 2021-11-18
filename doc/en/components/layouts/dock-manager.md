@@ -393,7 +393,7 @@ igc-dockmanager::part(content-pane) {
 <!-- WebComponents -->
 In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
-<code-view style="height: 600px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
            alt="$Platform$ Dock Manager Styling Example"
