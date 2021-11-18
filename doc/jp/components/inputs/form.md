@@ -45,7 +45,9 @@ Form コンポーネントがインポートされたら、それをページに
 ```
 
 ```ts
-import 'igniteui-webcomponents';
+import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
+        
+defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
 
 フォーム データは、次のコンポーネントについて収集されます:

@@ -24,17 +24,19 @@ List Web コンポーネントの使用を開始するには、最初に次の�
 npm install igniteui-webcomponents
 ```
 
-次に、**index.ts** ファイル内に `igniteui-webcomponents` をインポートすることです。
+次の手順は、typescript ファイル内の項目とともに `IgcListComponent` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
 
 ```typescript
 // index.ts
 ...
-import 'igniteui-webcomponents';
+import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+
+defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
 
 ### リスト項目の追加
 
-`igniteui-webcomponents` をインポートした後、次のコードを追加して、項目の簡単なリストを取得できます。
+これで、次のコードを追加して、項目の簡単なリストを取得できます。
 
 ```html
     <igc-list>

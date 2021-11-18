@@ -38,6 +38,18 @@
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
+    "name": "アバター",
+    "href": "avatar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "バッジ",
+    "href": "badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "カード",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -92,6 +104,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "メニュー",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ナビゲーション バー",
+    "href": "menus/navbar.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -182,12 +200,12 @@
       {
         "name": "セルのアクティブ化",
         "href": "grids/data-grid-cell-activation.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "グリッド編集",
         "href": "grids/data-grid-cell-editing.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "セルの結合",
@@ -197,7 +215,7 @@
       {
         "name": "セル選択",
         "href": "grids/data-grid-cell-selection.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "列アニメーション",
@@ -207,7 +225,7 @@
       {
         "name": "列フィルタリング",
         "href": "grids/data-grid-column-filtering.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "列移動",
@@ -272,7 +290,7 @@
       {
         "name": "行グループ",
         "href": "grids/data-grid-row-grouping.md",
-        "status": ""
+        "status": "UPDATED"
       },
       {
         "name": "行の強調表示",
@@ -1301,19 +1319,32 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Button",
+    "name": "ボタン",
     "href": "inputs/button.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "メニュー",
-    "header": true
+    "name": "ラジオ & ラジオ グループ",
+    "href": "radio.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "ナビゲーション バー",
-    "href": "menus/navbar.md",
+    "name": "チェックボックス",
+    "href": "checkbox.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スイッチ",
+    "href": "switch.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "リップル",
+    "href": "ripple.md",
     "status": "NEW"
   },
   {
