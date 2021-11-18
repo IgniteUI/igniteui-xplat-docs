@@ -23,12 +23,12 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This change is mandatory change after upgrading
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > eg. 
 > ```razor
 > <IgbDataGrid>
-> <IgbTextColumn Field="ProductID" />
+>   <IgbTextColumn Field="ProductID" />
 > </IgbDataGrid>
 > ```
 <!-- end: Blazor -->
@@ -38,20 +38,19 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor, WebComponents -->
 ### New Components
 
-* Avatar
-* Badge
-* Card
-* Navbar
-* Navigation Drawer
-* List
-* Form
-* Button & Icon Button
-* Icon
-* Radio & Radio Group
-* Checkbox 
-* Switch
-* Ripple
-* Calendar 
+* [Avatar & Icon](avatar.md)
+* [Badge](badge.md)
+* [Card](layouts/card.md)
+* [Navbar](navbar.md)
+* [Navigation Drawer](navigation-drawer.md)
+* [List](grids/list.md)
+* [Form](inputs/form.md)
+* [Button, Icon Button](inputs/button.md)
+* [Radio & Radio Group](radio.md)
+* [Checkbox](checkbox.md)
+* [Switch](switch.md)
+* [Ripple](ripple.md)
+* [Calendar](calendar.md)
 
 <!-- end: Blazor, WebComponents -->
 
