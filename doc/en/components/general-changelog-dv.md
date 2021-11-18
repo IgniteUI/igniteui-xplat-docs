@@ -23,14 +23,16 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls. 
 >
-> eg. 
-> ```razor
-> <IgbDataGrid>
->   <IgbTextColumn Field="ProductID" />
-> </IgbDataGrid>
-> ```
+>eg. 
+>
+>`<IgbDataGrid>`
+>
+>   `<IgbTextColumn Field="ProductID" />`
+>
+>`</IgbDataGrid>`
+
 <!-- end: Blazor -->
 
 <div class="divider--half"></div>
@@ -98,15 +100,13 @@ Old brushes/outlines | New outline/brushes
 ### DataGrid
 
 * New Features Added:
-    - Filter Row
-    - Load/Save Layout Customizations
-    - GroupBy Area for column grouping
-    - Cell Merging
-
-* New API
+    - [Filter Row](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [Cell Merging](grids/data-grid-cell-merging.md)
+* New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
-
 * Breaking Changes:
     - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
     - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
