@@ -21,7 +21,7 @@ The $ProductName$ Data Table / Data Grid includes column filtering with both a f
 
 <div class="divider--half"></div>
 
-As seen above, setting the `FilterUIType` property to FilterRow will provide a filter-row UI beneath the column headers and that will enable end-users to filter the grid's records. Filtering is also exposed in the column options UI by hovering the 
+As seen above, setting the `FilterUIType` property to FilterRow will enables the record filtering record to the user interface where the user can specify filter criteria to filter records. Records that do not match the specified filter criteria will be hidden. Filtering is also exposed in the column options UI by hovering a field and clicking the vertical ellipsis. 
 
 ## Code Snippets
 

@@ -1,7 +1,7 @@
 ---
 title: $Platform$ Data Grid | Row Grouping | Infragistics
 _description: Use Infragistics' $Platform$ grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out $ProductName$ table demos!
-_keywords: $Platform$ Table, Data Grid, row grouping, $ProductName$, Infragistics
+_keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics
 mentionedTypes: ['Grid']
 ---
 
@@ -20,6 +20,10 @@ The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky he
 </code-view>
 
 <div class="divider--half"></div>
+
+## Group-By Area
+
+Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the example above, to the user interface. The group-by area allows users more options to group and sort columns without interact when interacting the DataGrid indirectly. Groups can be positioned and reordered based on the users needs. This area also populates when columns are programmatically added as `GroupDescriptions` on the DataGrid as well.
 
 ## Multiple Groups
 
