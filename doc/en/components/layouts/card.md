@@ -9,7 +9,7 @@ _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Nat
 
 ## Card Example
 
-<code-view style="height: 550px"
+<code-view style="height: 580px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card Example"
@@ -198,7 +198,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 }
 ```
 
-<code-view style="height: 270px"
+<code-view style="height: 295px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -257,7 +257,7 @@ igc-icon-button::part(icon) {
 }
 ```
 
-<code-view style="height: 486px"
+<code-view style="height: 580px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card Styling Example"
