@@ -594,7 +594,7 @@ function generateRedirects(cb) {
 
     console.log(">>");
     console.log(">> Now, do the following steps:");
-    console.log(">> - copy all rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
+    console.log(">> - copy Angular and XPLAT rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
     console.log(">> - copy all rules from ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
     cb();
 }

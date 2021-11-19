@@ -353,6 +353,8 @@ export function generateRules(withProduct: boolean): string {
     var matchURLs: string[] = [];
     var platforms = withProduct ? platformsWithProduct : platformsWithoutProduct;
 
+    var lineEnding = withProduct ? " \n" : "\n";
+
     // looping over all platforms in the order they are defined in the start of file
     // this way, all rules for a given platform are listed next to each other
     for (const platform of platforms) {
@@ -384,8 +386,13 @@ export function generateRules(withProduct: boolean): string {
                   if (!actionURL.startsWith('/'))
                        actionURL = '/' + actionURL;
 
-                  if (actionURL.endsWith('.html'))
-                      actionURL = actionURL.replace('.html','');
+                  if (actionURL.endsWith('$') >= 0)
+                       actionURL = actionURL.replace('$', '');
+
+                  if (actionURL.indexOf('.html') >= 0)
+                      actionURL = actionURL.replace('.html', '');
+
+                  // console.log(actionURL);
 
                   // ensure that redirects for the following platforms have .html in their URLs
                   // if (platform.name === "Blazor" || platform.name === "React" ||
@@ -396,11 +403,12 @@ export function generateRules(withProduct: boolean): string {
 
                   // TODO add logic for checking if the actionURL exists for .md file in ./doc/en/component folder
 
+
                   // generating redirect rule
-                  rules += '  <rule name="' + name + '" enabled="true" stopProcessing="true"> \n';
-                  rules += '     <match  url="' + matchURL + '" /> <conditions logicalGrouping="MatchAll" trackAllCaptures="false" /> \n';
-                  rules += '     <action url="{R:1}' + actionURL + '" type="Redirect" redirectType="Permanent" /> \n';
-                  rules += '  </rule> \n';
+                  rules += '  <rule name="' + name + '" enabled="true" stopProcessing="true">' + lineEnding;
+                  rules += '     <match  url="' + matchURL + '" /> <conditions logicalGrouping="MatchAll" trackAllCaptures="false" />' + lineEnding;
+                  rules += '     <action url="{R:1}' + actionURL + '" type="Redirect" redirectType="Permanent" />' + lineEnding;
+                  rules += '  </rule>' + lineEnding;
                   rulesCount++;
                 }
             }
@@ -409,8 +417,8 @@ export function generateRules(withProduct: boolean): string {
         ret += rules;
         ret += '  <!-- ========================================================================================== --> \n';
 
-        if (withProduct)
-            console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
+        // if (withProduct)
+        //     console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
     }
     ret += '  <!-- end of auto-generated rules --> \n';
 
