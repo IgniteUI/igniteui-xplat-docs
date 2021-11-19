@@ -10,7 +10,7 @@ The following example represents a list populated with contacts with a name and 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -175,7 +175,7 @@ And here's the result of all that work:
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 ## Styling
@@ -207,7 +207,7 @@ igc-list-item::part(end) {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/styling">
+           github-src="grids/list/styling">
 </code-view>
 
 ## API References
