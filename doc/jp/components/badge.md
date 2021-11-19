@@ -8,6 +8,18 @@ _language: ja
 # $Platform$ Badge (バッジ)
 
 $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
+<div class="divider"></div>
+
+## $Platform$ Badge の例
+
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
+           alt="$Platform$ Badge の例"
+           github-src="inputs/badge/outlined">
+</code-view>
+
+<div class="divider"></div>
 
 ## 使用方法
 
@@ -29,6 +41,12 @@ defineComponents(IgcBadgeComponent);
 
 ```html
 <igc-badge></igc-badge>
+```
+
+バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
+
+```html
+<igc-badge outlined></igc-badge>
 ```
 
 ## 例
@@ -62,22 +80,6 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
            alt="$Platform$ Badge の例"
            github-src="inputs/badge/shape">
 </code-view>
-
-### アウトライン
-
-バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
-
-```html
-<igc-badge outlined></igc-badge>
-```
-
-<code-view style="height: 50px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge の例"
-           github-src="inputs/badge/outlined">
-</code-view>
-
 
 ## スタイル設定
 

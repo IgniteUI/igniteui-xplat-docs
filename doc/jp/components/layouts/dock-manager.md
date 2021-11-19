@@ -394,7 +394,7 @@ igc-dockmanager::part(content-pane) {
 <!-- WebComponents -->
 次の例では、公開した CSS パーツのいくつかを使用してドック マネージャーをカスタマイズする機能を紹介します。
 
-<code-view style="height: 600px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
            alt="$Platform$ ドック マネージャー スタイル設定の例"

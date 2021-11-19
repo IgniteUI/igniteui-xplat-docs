@@ -11,7 +11,7 @@ $Platform$ [`Navbar Component`](https://www.infragistics.com/products/ignite-ui-
 
 ## $Platform$ Navbar の例
 
-次の例は、タイトルのある `Navbar` を表しています:
+次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -43,12 +43,12 @@ defineComponents(IgcNavbarComponent);
 <igc-navbar>Ignite UI for Web Components</igc-navbar>
 ```
 
-## コンテンツをカスタマイズ
+## コンテンツ
 
-`Navbar` のコンテンツをカスタマイズするために、`start` スロットと `end` スロットを使用していくつかの [`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) アイコンを追加できます。
+`Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの[`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) アイコンを追加しました。
 
 ```html
-<igc-navbar style="height:40px">
+<igc-navbar style="height:65px">
     <igc-icon name="home" slot="start" size="large"></igc-icon>
     <h2>Sample App</h2>
     <igc-icon name="search" slot="end" size="large"></igc-icon>
@@ -56,15 +56,6 @@ defineComponents(IgcNavbarComponent);
     <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
 </igc-navbar>
 ```
-
-以下は結果です:
-
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
-           alt="$Platform$ Navbar コンテンツの例"
-           github-src="menus/nav-bar/content">
-</code-view>
 
 ## スタイル設定
 
@@ -76,19 +67,20 @@ igc-icon {
 }
 
 igc-navbar {
-    background-color: gainsboro;
+    background-color: #232121
 }
 
 igc-navbar::part(start) {
-    color: darkolivegreen;
+    color: #f23269;
 }
 
 igc-navbar::part(middle) {
     font-family: Titillium Web,sans-serif;
+    color: #e9e8ea
 }
 
 igc-navbar::part(end) {
-    color: darkgray;
+    color: #e9e8ea
 }
 ```
 

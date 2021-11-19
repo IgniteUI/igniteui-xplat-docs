@@ -1,7 +1,7 @@
 ---
 title: $Platform$ データ グリッド | 行のグループ化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, row grouping, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
@@ -21,6 +21,10 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 </code-view>
 
 <div class="divider--half"></div>
+
+## Group-By 領域
+
+Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the example above, to the user interface. The group-by area allows users more options to group and sort columns without interact when interacting the DataGrid indirectly. Groups can be positioned and reordered based on the users needs. This area also populates when columns are programmatically added as `GroupDescriptions` on the DataGrid as well.
 
 ## 複数のグループ
 

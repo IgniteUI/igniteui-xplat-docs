@@ -10,6 +10,17 @@ _language: ja
 <p class="highlight">$ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。</p>
 <div class="divider"></div>
 
+## $Platform$ Icon Avatar の例
+
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
+           alt="$Platform$ Avatar の例"
+           github-src="layouts/avatar/icon">
+</code-view>
+
+<div class="divider--half"></div>
+
 ## 使用方法
 
 開始するには、typescript ファイルに [`IgcAvatarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
@@ -63,16 +74,7 @@ defineComponents(IgcAvatarComponent);
 
 形状とは別に、[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#size) 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
-## $Platform$ Avatar の例
-
-### アイコン
-
-<code-view style="height: 50px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/icon">
-</code-view>
+## 例
 
 ### イニシャル
 

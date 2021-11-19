@@ -68,13 +68,13 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </igc-card>
 ```
 
-上記を確認することができます。まず、`h3` 見出しのように、要素をヘッダー タイトルとしてタグ付けする場合は、要素を [`igc-card-header`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html) タグの間に配置し、そのスロット名を `title` に設定します。逆に、別の見出し要素を `subtitle` にしたい場合は、そのスロットに `subtitle` という名前を付けます。
+上記を確認することができます。まず、`h3` 見出しのように、要素をヘッダー タイトルとしてタグ付けする場合は、要素を [`igc-card-header`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeaderComponent.html) タグの間に配置し、そのスロット名を `title` に設定します。逆に、別の見出し要素を `subtitle` にしたい場合は、そのスロットに `subtitle` という名前を付けます。
 
-カードに表示する画像や動画は、[`igc-card-media`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html) タグで囲みます。`igc-card-media` を使用すると、内部に配置されたコンテンツのサイズを変更して、要素のコンテンツ ボックス全体を埋めながらアスペクト比を維持できます。オブジェクトのアスペクト比がボックスのアスペクト比と一致しない場合、オブジェクトは収まるようにクリップされます。
+カードに表示する画像や動画は、[`igc-card-media`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMediaComponent.html) タグで囲みます。`igc-card-media` を使用すると、内部に配置されたコンテンツのサイズを変更して、要素のコンテンツ ボックス全体を埋めながらアスペクト比を維持できます。オブジェクトのアスペクト比がボックスのアスペクト比と一致しない場合、オブジェクトは収まるようにクリップされます。
 
-[`igc-card-content`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html) タグ内には何でも配置できます。通常テキストが配置されます。
+[`igc-card-content`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContentComponent.html) タグ内には何でも配置できます。通常テキストが配置されます。
 
-最後に、[`igc-card-actions`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardActions.html) は、ボタンなどのアクション可能な項目を配置する場所です。
+最後に、[`igc-card-actions`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardActionsComponent.html) は、ボタンなどのアクション可能な項目を配置する場所です。
 
 ### メディア、サムネイル、アバター
 タイトルとサブタイトルの横のカード ヘッダーに画像またはアイコンを表示する場合は、要素のスロット プロパティを `thumbnail` に割り当てることで実行できます。

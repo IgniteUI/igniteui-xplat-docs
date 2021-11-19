@@ -21,6 +21,44 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ## **$Platform$ {PackageVerChanges-21-2}**
 
+<!-- Blazor -->
+
+> [!NOTE]
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls. 
+>
+>eg. 
+>
+>`<IgbDataGrid>`
+>
+>   `<IgbTextColumn Field="ProductID" />`
+>
+>`</IgbDataGrid>`
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, WebComponents -->
+### 新しいコンポーネント
+
+* [Avatar & Icon](avatar.md)
+* [Badge](badge.md)
+* [Card](layouts/card.md)
+* [Navbar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [List](grids/list.md)
+* [Form](inputs/form.md)
+* [Button, Icon Button](inputs/button.md)
+* [Radio & Radio Group](radio.md)
+* [Checkbox](checkbox.md)
+* [Switch](switch.md)
+* [Ripple](ripple.md)
+* [Calendar](calendar.md)
+
+<!-- end: Blazor, WebComponents -->
+
+<div class="divider--half"></div>
+
 ### チャートとマップ
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
@@ -52,6 +90,25 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
 
+<!-- Blazor, React, WebComponents -->
+
+### DataGrid
+
+* New Features Added:
+    - [Filter Row](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [Cell Merging](grids/data-grid-cell-merging.md)
+* New API:
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+     eg. Multiple row selection.
+* Breaking Changes:
+    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
+    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
+
+<!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
 
 ## **$Platform$ {PackageVerChanges-21-1}**
 
