@@ -36,7 +36,7 @@ Once the Form component is imported, you can add it on the page and add your con
   <div>Subscribe</div>
   <igc-input required name="name" type="text" label="Your Name"></igc-input>
   <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
-  <igc-checkbox name="agreement" labelPosition="after">I accept the license agreement</igc-checkbox>
+  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
   <br />
   <igc-button type="reset">Reset</igc-button>
   <igc-button type="submit">Submit</igc-button>
