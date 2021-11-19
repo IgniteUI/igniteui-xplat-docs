@@ -46,7 +46,7 @@ The simplest way to start using the radio is as follows:
 ```
 
 > [!WARNING]
-> The radio component doesn't work with the standart `<form>` element. Use `<igc-form>` instead.
+> The radio component doesn't work with the standard `<form>` element. Use `<igc-form>` instead.
 
 ## Examples
 
@@ -99,7 +99,7 @@ Use the `checked` attribute to toggle on the radio.
            github-src="inputs/radio/group">
 </code-view>
 
-### Ivalid
+### Invalid
 
 Use the `invalid` attribute to mark the radio as invalid.
 

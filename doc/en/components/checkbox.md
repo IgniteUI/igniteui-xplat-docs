@@ -42,8 +42,8 @@ The simplest way to start using the checkbox is as follows:
 <igc-checkbox></igc-checkbox>
 ```
 
->[!WARN]
-> The checkbox component doesn't work with the standart `<form>` element. Use `<igc-form>` instead.
+>[!WARNING]
+> The checkbox component doesn't work with the standard `<form>` element. Use `<igc-form>` instead.
 
 ## Examples
 
@@ -111,7 +111,7 @@ Use the [`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#re
 <igc-checkbox required></igc-checkbox>
 ```
 
-### Ivalid
+### Invalid
 
 Use the [`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) attribute to mark the checkbox as invalid.
 
