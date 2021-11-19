@@ -95,10 +95,10 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ### DataGrid
 
 * New Features Added:
-    - [Filter Row](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
-    - [Cell Merging](grids/data-grid-cell-merging.md)
+    - [列フィルタリング](grids/data-grid-column-filtering.md)
+    - [レイアウトのカスタマイズの読み込みと保存](grids/data-grid-load-save-layout.md)
+    - [列をグループ化するための GroupBy 地域](grids/data-grid-row-grouping.md)
+    - [セルの結合](grids/data-grid-cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
