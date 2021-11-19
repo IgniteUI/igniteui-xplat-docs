@@ -32,15 +32,15 @@ npm install {PackageWebComponents}
 Once the Form component is imported, you can add it on the page and add your content.
 
 ```html
-  <igc-form>
-    <div>Subscribe</div>
-    <igc-input name="name" type="text" label="Your Name" size="large" dir="ltr"></igc-input>
-    <igc-input name="email" type="email" label="Your E-mail" size="large" dir="ltr"></igc-input>
-    <igc-checkbox name="agreement" labelPosition="after" dir="ltr">I accept the license agreement</igc-checkbox>
-    <br />
-    <igc-button type="reset">Reset</igc-button>
-    <igc-button type="submit">Submit</igc-button>
-  </igc-form>
+<igc-form>
+  <div>Subscribe</div>
+  <igc-input required name="name" type="text" label="Your Name"></igc-input>
+  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
+  <igc-checkbox name="agreement" labelPosition="after">I accept the license agreement</igc-checkbox>
+  <br />
+  <igc-button type="reset">Reset</igc-button>
+  <igc-button type="submit">Submit</igc-button>
+</igc-form>
 ```
 
 ```ts
