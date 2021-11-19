@@ -70,17 +70,17 @@ this.geoMap.backgroundContent = mapImagery;
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true"
     BackgroundContent="OSMImagery" />
 
 @code {
 
-    public OpenStreetMapImagery OSMImagery;
+    public IgbOpenStreetMapImagery OSMImagery;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
-        this.OSMImagery = new OpenStreetMapImagery();
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
+        this.OSMImagery = new IgbOpenStreetMapImagery();
     }
 }
 ```

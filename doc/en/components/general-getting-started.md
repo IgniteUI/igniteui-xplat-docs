@@ -249,8 +249,8 @@ This will automatically install packages for $ProductName$, along with all of th
 First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -382,7 +382,7 @@ using IgniteUI.Blazor.Controls;
 public static async Task Main(string[] args)
 {
     // ...
-    builder.Services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    builder.Services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
 }
 ```
 
@@ -395,7 +395,7 @@ using IgniteUI.Blazor.Controls;
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-    services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
 }
 ```
 
@@ -434,8 +434,8 @@ Optionally, modules can be registered within razor files at the time the page is
 4 - Add Ignite UI for Blazor component in your razor page:
 
 ```razor
-<GeographicMap Height="100%" Width="100%" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" />
+</IgbGeographicMap>
 ```
 
 <!-- end: Blazor -->

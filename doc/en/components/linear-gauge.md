@@ -39,7 +39,7 @@ npm install --save {PackageGauges}
 The `XamLinearGauge` requires the following modules:
 
 ```razor
-LinearGaugeModule.Register(IgniteUIBlazor);
+IgbLinearGaugeModule.Register(IgniteUIBlazor);
 ```
 
 
@@ -141,22 +141,22 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="5"
         MaximumValue="55"
         Value="43" >
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="15"
             Brush="red" >
-    </LinearGraphRange>
-     <LinearGraphRange StartValue="15"
+    </IgbLinearGraphRange>
+     <IgbLinearGraphRange StartValue="15"
             EndValue="30"
             Brush="yellow">
-    <LinearGraphRange StartValue="30"
+    <IgbLinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
 <div class="divider--half"></div>
@@ -234,7 +234,7 @@ This is the primary measure displayed by the linear gauge component and is visua
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsNeedleDraggingEnabled="true"
@@ -251,7 +251,7 @@ This is the primary measure displayed by the linear gauge component and is visua
     NeedleOuterPointWidth="0.3"
     NeedleInnerBaseWidth="0"
     NeedleOuterBaseWidth="0.07">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -323,26 +323,26 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="0" Value="50"
         MaximumValue="100" Interval="10"
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="50"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.25"
             OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
             EndValue="100"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.4"
             OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
 
@@ -419,7 +419,7 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
 ```
 
 ```razor
- <LinearGauge Height="80px" Width="100%"
+ <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     TickBrush="DodgerBlue"
@@ -433,7 +433,7 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
     MinorTickEndExtent="0.05"
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 <code-view style="height: 125px"
@@ -486,7 +486,7 @@ The labels indicate the measures on the scale.
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     LabelInterval="10"
@@ -495,7 +495,7 @@ The labels indicate the measures on the scale.
     LabelsPostInitial="0"
     FontBrush="DodgerBlue"
     Font="11px Verdana">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -547,7 +547,7 @@ The backing element represents background and border of the linear gauge compone
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
     Value="50"
@@ -557,7 +557,7 @@ The backing element represents background and border of the linear gauge compone
     BackingStrokeThickness="4"
     BackingInnerExtent="0"
     BackingOuterExtent="1">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -617,7 +617,7 @@ The scale is a visual element that highlights the full range of values in the li
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsScaleInverted="false"
@@ -628,7 +628,7 @@ The scale is a visual element that highlights the full range of values in the li
     ScaleOuterExtent="0.65"
     ScaleStartExtent="0.05"
     ScaleEndExtent="0.95">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -859,7 +859,7 @@ For your convenience, all above code snippets are combined into one code block b
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="0"
         MaximumValue="100"
 
@@ -917,19 +917,19 @@ For your convenience, all above code snippets are combined into one code block b
 
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
                 EndValue="50"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.25"
                 OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
                 EndValue="100"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.4"
                 OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```

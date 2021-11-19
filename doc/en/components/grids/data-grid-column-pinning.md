@@ -234,26 +234,26 @@ onButtonUnPin () {
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DefaultColumnMinWidth="120"
     DataSource="@DataSource"
     AutoGenerateColumns="false"
     @ref="DataGridRef">
 
     @*Columns Pinned Left*@
-    <TextColumn Field="ID" Pinned="PinnedPositions.Left" />
-    <TextColumn Field="FirstName" Pinned="PinnedPositions.Left" />
-    <TextColumn Field="LastName" Pinned="PinnedPositions.Left" />
+    <IgbTextColumn Field="ID" Pinned="PinnedPositions.Left" />
+    <IgbTextColumn Field="FirstName" Pinned="PinnedPositions.Left" />
+    <IgbTextColumn Field="LastName" Pinned="PinnedPositions.Left" />
 
     @*Columns Unpinned*@
-    <DateTimeColumn Field="Birthday" Pinned="PinnedPositions.None" />
-    <NumericColumn Field="Age" Pinned="PinnedPositions.None" />
-    <ImageColumn Field="CountryFlag" Pinned="PinnedPositions.None" />
+    <IgbDateTimeColumn Field="Birthday" Pinned="PinnedPositions.None" />
+    <IgbNumericColumn Field="Age" Pinned="PinnedPositions.None" />
+    <IgbImageColumn Field="CountryFlag" Pinned="PinnedPositions.None" />
 
     @*Columns Pinned Right*@
-    <TextColumn Field="Street" Pinned="PinnedPositions.Right" />
-    <TextColumn Field="City" Pinned="PinnedPositions.Right" />
-    <TextColumn Field="Country" Pinned="PinnedPositions.Right" />
+    <IgbTextColumn Field="Street" Pinned="PinnedPositions.Right" />
+    <IgbTextColumn Field="City" Pinned="PinnedPositions.Right" />
+    <IgbTextColumn Field="Country" Pinned="PinnedPositions.Right" />
 </DataGrid>
 ```
 
@@ -363,18 +363,18 @@ connectedCallback() {
 ```
 
 ```razor
-<DataGridToolbar TargetGrid="DataGridRef"
+<IgbDataGridToolbar TargetGrid="DataGridRef"
     ToolbarTitle="Grid Toolbar Title"
     ColumnPinning="true"
     ColumnPinningText="Pinning"
     ColumnPinningTitle="Column Pinning" />
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource" />
 
 @code {
-    private DataGrid grid;
-    public DataGrid DataGridRef
+    private IgbDataGrid grid;
+    public IgbDataGrid DataGridRef
     {
         get
         {

@@ -157,7 +157,7 @@ Use the [`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.ht
 ```
 
 ```razor
-IgbCheckbox Indeterminate="true" />
+<IgbCheckbox Indeterminate="true" />
 ```
 
 <code-view style="height: 100px"
