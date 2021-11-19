@@ -56,7 +56,7 @@ Then, to represent the demo card template, we can add the following code to our 
             Read more
         </igc-button>
         <div slot="end">
-            <igc-icon-button name="twitter">
+            <igc-icon-button name="twitter" style="margin-right: 10px;">
                 <igc-ripple></igc-ripple>
             </igc-icon-button>
             <igc-icon-button name="facebook">
@@ -210,7 +210,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 
 The card actions area allows additional configuration to what we have already mentioned.
 
-You can reverse the order of the flat button and the icon buttons by switching their slot names.
+You can reverse the order of the text button and the icon buttons by switching their slot names.
 
 ```html
 <igc-card-actions>
@@ -229,7 +229,7 @@ You can reverse the order of the flat button and the icon buttons by switching t
 </igc-card-actions>
 ```
 
-Now the icon buttons will appear before the flat-style text button.
+Now the icon buttons will appear before the text button.
 
 You can also add more content in-between by simply omitting the slot property and let the elements go to the default slot. 
 
@@ -252,8 +252,8 @@ igc-card-header::part(subtitle) {
     opacity: 0.9;
 }
 
-igc-icon-button::part(icon) {
-    fill: #352511;
+igc-icon-button+igc-icon-button {
+    margin-left: 10px;
 }
 ```
 
