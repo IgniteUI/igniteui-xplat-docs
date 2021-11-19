@@ -104,8 +104,8 @@ defineComponents(IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent);
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
     <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
-    <igc-radio name="size" value="medium" label-position="after">Medium</igc-radio>
-    <igc-radio name="size" value="large" label-position="after" checked>Large</igc-radio>
+    <igc-radio name="size" value="medium" label-position="after" checked>Medium</igc-radio>
+    <igc-radio name="size" value="large" label-position="after">Large</igc-radio>
 </igc-radio-group>
 ```
 
