@@ -2,7 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 ---
 # $ProductName$ Changelog (Data Visualization)
 
@@ -50,19 +50,19 @@ All notable changes for each version of $ProductName$ are documented on this pag
 ### New Components
 
 * [Avatar](layouts/avatar.md)
-* [Icon](layouts/icon.md)
 * [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Calendar](scheduling/calendar.md)
 * [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
 * [Navbar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
-* [List](grids/list.md)
-* [Form](inputs/form.md)
-* [Button, Icon Button](inputs/button.md)
 * [Radio & Radio Group](inputs/radio.md)
-* [Checkbox](inputs/checkbox.md)
-* [Switch](inputs/switch.md)
 * [Ripple](inputs/ripple.md)
-* [Calendar](scheduling/calendar.md)
+* [Switch](inputs/switch.md)
 
 <!-- end: Blazor, WebComponents -->
 
@@ -75,7 +75,7 @@ This release introduces a few improvements and simplifications to visual design 
 * Changed `YAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
 * Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
-* Added support for representing geographic series of `GeographicMap` in a Legend
+* Added support for representing geographic series of `XamGeographicMap` in a Legend
 * Added crosshair lines by default in `FinancialChart` and `CategoryChart`
 * Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
 * Added final value annotation by default in `FinancialChart`
