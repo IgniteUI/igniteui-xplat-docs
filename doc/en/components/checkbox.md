@@ -62,8 +62,9 @@ The simplest way to start using the checkbox is as follows:
 <IgbCheckbox />
 ```
 
->[!WARN]
+>[!WARNING]
 > The checkbox component doesn't work with the standard `<form>` element. Use `<igc-form>` instead.
+
 
 ## Examples
 
