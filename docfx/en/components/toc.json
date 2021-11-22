@@ -39,19 +39,19 @@
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Avatar",
-    "href": "avatar.md",
+    "href": "layouts/avatar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Badge",
-    "href": "badge.md",
+    "href": "inputs/badge.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Icon",
-    "href": "icon.md",
+    "href": "layouts/icon.md",
     "status": "NEW"
   },
   {
@@ -1338,25 +1338,25 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Radio & Radio Group",
-    "href": "radio.md",
+    "href": "inputs/radio.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Checkbox",
-    "href": "checkbox.md",
+    "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Switch",
-    "href": "switch.md",
+    "href": "inputs/switch.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Ripple",
-    "href": "ripple.md",
+    "href": "inputs/ripple.md",
     "status": "NEW"
   },
   {
@@ -1367,7 +1367,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Calendar",
-    "href": "calendar.md",
+    "href": "scheduling/calendar.md",
     "status": "NEW"
   }
 ]

@@ -23,9 +23,9 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls. 
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
->eg. 
+>eg.
 >
 >`<IgbDataGrid>`
 >
@@ -49,19 +49,20 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Blazor, WebComponents -->
 ### New Components
 
-* [Avatar & Icon](avatar.md)
-* [Badge](badge.md)
+* [Avatar](layouts/avatar.md)
+* [Icon](layouts/icon.md)
+* [Badge](inputs/badge.md)
 * [Card](layouts/card.md)
 * [Navbar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
 * [List](grids/list.md)
 * [Form](inputs/form.md)
 * [Button, Icon Button](inputs/button.md)
-* [Radio & Radio Group](radio.md)
-* [Checkbox](checkbox.md)
-* [Switch](switch.md)
-* [Ripple](ripple.md)
-* [Calendar](calendar.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Checkbox](inputs/checkbox.md)
+* [Switch](inputs/switch.md)
+* [Ripple](inputs/ripple.md)
+* [Calendar](scheduling/calendar.md)
 
 <!-- end: Blazor, WebComponents -->
 
@@ -117,8 +118,8 @@ Old brushes/outlines | New outline/brushes
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
 * Breaking Changes:
-    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
+    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
+    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
 
 <!-- end: Blazor, React, WebComponents -->
 

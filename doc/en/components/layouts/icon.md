@@ -10,8 +10,8 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 ## $Platform$ Icon Example
 
-<code-view style="height: 50px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Example"
            github-src="layouts/icon/sizing">
 </code-view>
@@ -86,8 +86,8 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 <igc-icon size="large"></igc-icon>
 ```
 
-<code-view style="height: 50px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Sizing"
            github-src="layouts/icon/sizing">
 </code-view>
@@ -111,8 +111,8 @@ igc-icon {
 }
 ```
 
-<code-view style="height: 70px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing"
            github-src="layouts/icon/styling">
 </code-view>

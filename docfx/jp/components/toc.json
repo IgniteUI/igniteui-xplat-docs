@@ -39,13 +39,13 @@
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "アバター",
-    "href": "avatar.md",
+    "href": "layouts/avatar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "バッジ",
-    "href": "badge.md",
+    "href": "inputs/badge.md",
     "status": "NEW"
   },
   {
@@ -1326,25 +1326,25 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "ラジオ & ラジオ グループ",
-    "href": "radio.md",
+    "href": "inputs/radio.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "チェックボックス",
-    "href": "checkbox.md",
+    "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "スイッチ",
-    "href": "switch.md",
+    "href": "inputs/switch.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "リップル",
-    "href": "ripple.md",
+    "href": "inputs/ripple.md",
     "status": "NEW"
   },
   {
@@ -1355,7 +1355,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "カレンダー",
-    "href": "calendar.md",
+    "href": "scheduling/calendar.md",
     "status": "NEW"
   }
 ]
