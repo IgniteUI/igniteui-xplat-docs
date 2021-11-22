@@ -1330,6 +1330,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Icon Button",
+    "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Radio & Radio Group",
     "href": "radio.md",
