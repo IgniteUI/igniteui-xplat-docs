@@ -6,7 +6,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Icon Overview
 
-<p class="highlight">$ProductName$ Icon component allows developers to use any registered SVG as icon in their application.</p>
+$ProductName$ Icon component allows developers to use any registered SVG as icon in their application.
 
 ## $Platform$ Icon Example
 

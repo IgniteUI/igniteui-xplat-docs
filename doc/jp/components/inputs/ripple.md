@@ -7,7 +7,7 @@ _language: ja
 
 # $Platform$ Ripple (リップル) の概要
 
-<p class="highlight">$ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。</p>
+$ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。
 
 ## 使用方法
 
@@ -28,8 +28,8 @@ defineComponents(IgcRippleComponent);
 </igc-button>
 ```
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/button">
 </code-view>
@@ -48,8 +48,8 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/color">
 </code-view>

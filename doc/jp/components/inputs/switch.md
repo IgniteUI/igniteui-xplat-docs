@@ -7,13 +7,14 @@ _language: ja
 
 # $Platform$ Switch (スイッチ)
 
-<p class="highlight">$ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。</p>
+$ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
+
 <div class="divider"></div>
 
 ## Switch の例
 
-<code-view style="height:200px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:200px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch の例"
            github-src="inputs/switch/sample-1">
 </code-view>

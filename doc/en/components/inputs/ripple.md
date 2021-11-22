@@ -6,14 +6,14 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Ripple Overview
 
-<p class="highlight">The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
-</p>
+The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
+
 <div class="divider"></div>
 
 ## $Platform$ Ripple Example
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
            github-src="inputs/ripple/button">
 </code-view>
@@ -51,8 +51,8 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example"
            github-src="inputs/ripple/color">
 </code-view>

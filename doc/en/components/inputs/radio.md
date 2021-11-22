@@ -6,12 +6,12 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Radio & Radio Group
 
-<p class="highlight">The $ProductName$ Radio Button component allows the user to select a single option from an available set of options that are listed side by side.</p>
+The $ProductName$ Radio Button component allows the user to select a single option from an available set of options that are listed side by side.
 
 ## $ProductName$ Radio Example
 
-<code-view style="height: 205px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 205px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example"
            github-src="inputs/radio/group">
 </code-view>

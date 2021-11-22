@@ -6,13 +6,14 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Switch
 
-<p class="highlight">$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.</p>
+$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+
 <div class="divider"></div>
 
 ## Switch Example
 
-<code-view style="height:200px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:200px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example"
            github-src="inputs/switch/sample-1">
 </code-view>

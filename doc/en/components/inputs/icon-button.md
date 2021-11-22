@@ -6,7 +6,7 @@
 
 # $Platform$ Icon Button Overview
 
-<p class="highlight">The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../icon.md) component but adds features from the [button](button.md) component as well.</p>
+The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../icon.md) component but adds features from the [button](button.md) component as well.
 
 ## Usage
 
@@ -30,8 +30,8 @@ After we import the icon button component we are ready to start using it, so let
 
 Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the [`variant`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#variant) attribute of the icon button.
 
-<code-view style="height: 75px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/variant">
 </code-view>
@@ -44,8 +44,8 @@ Similar to the regular button components, the icon button supports several varia
 
 The size of the button can be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
-<code-view style="height: 75px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/size">
 </code-view>
@@ -91,8 +91,8 @@ igc-icon-button::part(icon) {
 }
 ```
 
-<code-view style="height: 75px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/styling">
 </code-view>
