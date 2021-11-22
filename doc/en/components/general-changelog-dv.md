@@ -75,27 +75,23 @@ This release introduces a few improvements and simplifications to visual design 
 * Changed `YAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart` and `CategoryChart`
 * Changed `XAxisLabelLocation` property's type to `YAxisLabelLocation` from `AxisLabelLocation` in `FinancialChart`
 * Added `XAxisLabelLocation` property to `CategoryChart`
-* Added support for representing geographic series of `XamGeographicMap` in a Legend
+* Added support for representing geographic series of `XamGeographicMap` in a legend
 * Added crosshair lines by default in `FinancialChart` and `CategoryChart`
 * Added crosshair annotations by default in `FinancialChart` and `CategoryChart`
 * Added final value annotation by default in `FinancialChart`
 * Added new properties in Category Chart and Financial Chart:
-   - Crosshairs Line styling that allow customizing crosshairs lines
-   - Crosshairs Annotation styling that allow customizing crosshairs annotations
-   - Final Value Annotation styling that allow customizing final value annotations
+   - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
+   - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
+   - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
    - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
    - `MarkerThickness` that allows changing thickness of markers
+* Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
    - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
-   - chart's `LegendItemBadgeShape` for setting shape of all series represented in a legend
-   - chart's `LegendItemBadgeMode` for setting simplified or complex shapes of all legend item badges
-   - series' `LegendItemBadgeShape` for setting shape for a series represented in a legend
-   - series' `LegendItemBadgeMode` for setting simplified or complex shape of one legend item badge
-* Added new properties in Category Chart and Financial Chart:
-   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
-   - chart's `LegendItemBadgeShape` for setting shape of all series represented in a legend
-   - chart's `LegendItemBadgeMode` for setting simplified or complex shapes of all legend item badges
-   - series' `LegendItemBadgeShape` for setting shape for a series represented in a legend
-   - series' `LegendItemBadgeMode` for setting simplified or complex shape of one legend item badge
+   - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
+   - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
+* Added new properties in Series in Data Chart and Geographic Map:
+   - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
+   - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
 * Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
 * Changed shape of markers to circle for all series plotted in the same chart. This can be reverted by setting chart's `MarkerAutomaticBehavior` property to `SmartIndexed` enum value
 * Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
