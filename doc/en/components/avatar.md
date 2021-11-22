@@ -11,7 +11,7 @@ _keywords: avatar, layout, $ProductName$, Infragistics
 
 ## $Platform$ Icon Avatar Example
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
            alt="$Platform$ Avatar Example"
@@ -77,7 +77,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Initials
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
            alt="$Platform$ Avatar Example"
@@ -86,7 +86,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Image
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar Example"
@@ -95,7 +95,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Shape
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
            alt="$Platform$ Avatar Example"
@@ -104,7 +104,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Size
 
-<code-view style="height: 100px"
+<code-view style="height: 110px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
            alt="$Platform$ Avatar Example"
