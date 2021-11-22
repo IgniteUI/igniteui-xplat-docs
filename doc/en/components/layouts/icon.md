@@ -26,7 +26,7 @@ To get started with the icon web component, first you need to install the $Produ
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the [`IgcIconComponent`]({ApiClass}/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -49,7 +49,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-The [`registerIcon`]({environment:wcApiUrl}/index.html#registerIcon) function allows you to register an SVG image as an icon from an external file:
+The [`registerIcon`]({ApiIndex}#registerIcon) function allows you to register an SVG image as an icon from an external file:
 
 ```ts
 registerIcon(
@@ -67,7 +67,7 @@ Then to use the newly registered icon all you have to do is to pass the name and
 <igc-icon name="search" collection="material"></igc-icon>
 ```
 
-The second method for registering icons is by passing an SVG string to the [`registerIconFromText`]({environment:wcApiUrl}/index.html#registerIconFromText) function:
+The second method for registering icons is by passing an SVG string to the [`registerIconFromText`]({ApiIndex}#registerIconFromText) function:
 
 ```ts
 const searchIcon =
@@ -80,7 +80,7 @@ Then you'd use it in the same way as described in the component sample above.
 
 ### Size
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the [`size`]({environment:wcApiUrl}/classes/IgcIconComponent.html#size) attribute to any of the aforementioned sizes.
+The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the [`size`]({ApiClass}/IgcIconComponent.html#size) attribute to any of the aforementioned sizes.
 
 ```html
 <igc-icon size="large"></igc-icon>
@@ -119,7 +119,7 @@ igc-icon {
 
 ## API Reference
 
-* [IgcIconComponent]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* [IgcIconComponent]({ApiClass}/IgcIconComponent.html)
 
 ## Additional Resources
 

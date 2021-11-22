@@ -37,7 +37,7 @@ IgbCardModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the [`IgcCardComponent`]({ApiClass}/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -91,7 +91,7 @@ Then, to represent the demo card template, we can add the following code to our 
         <h3 slot="title">New York City</h3>
         <h5 slot="subtitle">City in New York</h5>
     </IgbCardHeader>
-    
+
     <IgbCardContent>
        <p>New York City comprises 5 boroughs sitting where the
            Hudson River meets the Atlantic Ocean. At its core is Manhattan,
@@ -115,13 +115,13 @@ Then, to represent the demo card template, we can add the following code to our 
 </IgbCard>
 ```
 
-You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
+You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({ApiClass}/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
-Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({ApiClass}/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
-You can place anything inside the [`igc-card-content`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html) tags. Usually text goes there.
+You can place anything inside the [`igc-card-content`]({ApiClass}/IgcCardContentComponent.html) tags. Usually text goes there.
 
-Finally, the [`igc-card-actions`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
+Finally, the [`igc-card-actions`]({ApiClass}/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
@@ -131,7 +131,7 @@ Taking the card above as an example, we can edit the contents of the `igc-card-h
 ```html
 <igc-card-header>
     <igc-avatar slot="thumbnail" src="path/to/image" initials="TS"></igc-avatar>
-    
+
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
@@ -201,13 +201,13 @@ Here's an example of an outlined horizontal card:
         <IgbCardActions>
             <IgbIconButton Name="previous" />
             <IgbIconButton Name="play" />
-            <IgbIconButton Name="next" />            
+            <IgbIconButton Name="next" />
         </IgbCardActions>
     </div>
 </IgbCard>
 ```
 
-We are using an additional `div` element to bundle the `igc-card-header` and `igc-card-content` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally. 
+We are using an additional `div` element to bundle the `igc-card-header` and `igc-card-content` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally.
 
 The styles that `.card-horizontal` class applies are:
 
@@ -356,7 +356,7 @@ You can reverse the order of the text button and the icon buttons by switching t
 
 Now the icon buttons will appear before the text button.
 
-You can also add more content in-between by simply omitting the slot property and let the elements go to the default slot. 
+You can also add more content in-between by simply omitting the slot property and let the elements go to the default slot.
 
 ## Styling
 
@@ -368,7 +368,7 @@ igc-card {
 }
 
 igc-card-content,
-igc-card-header::part(title) { 
+igc-card-header::part(title) {
     color: #FEFEFE;
 }
 
@@ -396,20 +396,20 @@ In this article we covered a lot of ground with the card component. We created a
 ## API References
 
 For more detailed information regarding the card's API, refer to the following links:
-* [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html)
-* [`IgcCardContentComponent API`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html)
-* [`IgcCardMediaComponent API`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html)
-* [`IgcCardActionsComponent API`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html)
+* [`IgcCardComponent API`]({ApiClass}/IgcCardComponent.html)
+* [`IgcCardHeaderComponent API`]({ApiClass}/IgcCardHeaderComponent.html)
+* [`IgcCardContentComponent API`]({ApiClass}/IgcCardContentComponent.html)
+* [`IgcCardMediaComponent API`]({ApiClass}/IgcCardMediaComponent.html)
+* [`IgcCardActionsComponent API`]({ApiClass}/IgcCardActionsComponent.html)
 
 
 Additional components and/or directives that were used:
 
-* [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
-* [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
-* [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-* [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
-* [`IgcRippleComponent`]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* [`IgcAvatarComponent`]({ApiClass}/IgcAvatarComponent.html)
+* [`IgcIconComponent`]({ApiClass}/IgcIconComponent.html)
+* [`IgcButtonComponent`]({ApiClass}/IgcButtonComponent.html)
+* [`IgcIconButtonComponent`]({ApiClass}/IgcIconButtonComponent.html)
+* [`IgcRippleComponent`]({ApiClass}/IgcRippleComponent.html)
 
 <div class="divider"></div>
 

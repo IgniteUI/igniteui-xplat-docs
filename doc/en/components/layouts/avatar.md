@@ -35,10 +35,10 @@ IgbAvatarModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the [`IgcAvatarComponent`]({ApiClass}/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```ts
-import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents'; 
+import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcAvatarComponent);
 ```
@@ -72,7 +72,7 @@ The avatar has several attributes that allow rendering different content based o
 </IgbAvatar>
 ```
 
-If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initials) attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+If the [`initials`]({ApiClass}/IgcAvatarComponent.html#initials) attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 
 ```html
@@ -91,10 +91,10 @@ If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initi
 </IgbAvatar>
 ```
 
-The avatar can also display an image when the [`src`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#src) attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
+The avatar can also display an image when the [`src`]({ApiClass}/IgcAvatarComponent.html#src) attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
 
 ```html
-<igc-avatar 
+<igc-avatar
   initials="AZ"
   src="https://www.infragistics.com/angular-demos/assets/images/men/1.jpg"
   alt="A photo of a man.">
@@ -103,16 +103,16 @@ The avatar can also display an image when the [`src`]({environment:wcApiUrl}/cla
 ```
 
 ```razor
-<IgbAvatar Initials="AZ" 
+<IgbAvatar Initials="AZ"
            Src="https://static.infragistics.com/xplatform/images/people/GUY01.png"
-           Alt="A photo of a man.">           
+           Alt="A photo of a man.">
   <IgbIcon Name="home" />
 </IgbAvatar>
 ```
 
-The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. 
+The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({ApiClass}/IgcAvatarComponent.html#shape) attribute.
 
-Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#size) attribute. The supported sizes are `small`, `medium`, and `large`.
+Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({ApiClass}/IgcAvatarComponent.html#size) attribute. The supported sizes are `small`, `medium`, and `large`.
 
 ## Examples
 
@@ -167,7 +167,7 @@ igc-avatar::part(base) {
 
 ## API Reference
 
-* [IgcAvatarComponent]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
+* [IgcAvatarComponent]({ApiClass}/IgcAvatarComponent.html)
 
 
 ## Additional Resources
