@@ -40,7 +40,7 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     DefaultColumnMinWidth="300" />
 ```
@@ -81,16 +81,16 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     AutoGenerateColumns="false">
-    <TextColumn Field="FirstName" Width="300" />
-    <TextColumn Field="LastName" Width="300" />
-    <NumericColumn Field="Age" Width="300" />
-    <DateTimeColumn Field="Birthday" Width="300" />
-    <TextColumn Field="Street" Width="300" />
-    <TextColumn Field="City" Width="300" />
-    <NumericColumn Field="Salary" Width="300" />
-    <NumericColumn Field="Sales" Width="300" />
+    <IgbTextColumn Field="FirstName" Width="300" />
+    <IgbTextColumn Field="LastName" Width="300" />
+    <IgbNumericColumn Field="Age" Width="300" />
+    <IgbDateTimeColumn Field="Birthday" Width="300" />
+    <IgbTextColumn Field="Street" Width="300" />
+    <IgbTextColumn Field="City" Width="300" />
+    <IgbNumericColumn Field="Salary" Width="300" />
+    <IgbNumericColumn Field="Sales" Width="300" />
 </DataGrid>
 ```

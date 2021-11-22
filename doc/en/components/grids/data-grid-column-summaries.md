@@ -167,7 +167,7 @@ connectedCallback() {
 
 ```razor
 
-<DataGrid Height="500px" Width="100%"
+<IgbDataGrid Height="500px" Width="100%"
     @ref="DataGridRef"
     SummaryScope="DataSourceSummaryScope.Root"
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowTop"
@@ -175,16 +175,16 @@ connectedCallback() {
     IsGroupCollapsable="true"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Combined"
     DataSource="DataSource">
-    <TextColumn Field="ProductName" Width="130" HeaderText="Product" />
-    <NumericColumn Field="BundlePrice" PositivePrefix="$" Width="120" ShowGroupingSeparator="true" HeaderText="Price" />
-    <NumericColumn Field="OrderItems" Width="140" HeaderText="Orders" />
-    <NumericColumn Field="OrderValue" Width="160" ShowGroupingSeparator="true" HeaderText="Order Totals" PositivePrefix="$" />
-    <TextColumn Field="Country" Width="170" HeaderText="Ship Country" />
-</DataGrid>
+    <IgbTextColumn Field="ProductName" Width="130" HeaderText="Product" />
+    <IgbNumericColumn Field="BundlePrice" PositivePrefix="$" Width="120" ShowGroupingSeparator="true" HeaderText="Price" />
+    <IgbNumericColumn Field="OrderItems" Width="140" HeaderText="Orders" />
+    <IgbNumericColumn Field="OrderValue" Width="160" ShowGroupingSeparator="true" HeaderText="Order Totals" PositivePrefix="$" />
+    <IgbTextColumn Field="Country" Width="170" HeaderText="Ship Country" />
+</IgbDataGrid>
 
 @code {
-    private DataGrid grid;
-    private DataGrid DataGridRef
+    private IgbDataGrid grid;
+    private IgbDataGrid DataGridRef
     {
         get { return grid; }
         set

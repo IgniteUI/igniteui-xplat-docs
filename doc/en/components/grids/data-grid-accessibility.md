@@ -111,7 +111,7 @@ The following demonstrates how to implement cell accessibility in the  $Platform
 
         @if (DataSource != null)
         {
-            <DataGrid Height="100%" Width="100%" />
+            <IgbDataGrid Height="100%" Width="100%" />
         }
 </div>
 ```

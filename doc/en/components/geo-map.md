@@ -41,8 +41,8 @@ npm install --save {PackageMaps}
 The `XamGeographicMap` requires the following modules, however the DataChartInteractivityModule is only required for mouse interactions, such as panning and zooming the map content.
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -143,5 +143,5 @@ Now that the map module is imported, next step is to create geographic map. The 
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true" />
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
 ```

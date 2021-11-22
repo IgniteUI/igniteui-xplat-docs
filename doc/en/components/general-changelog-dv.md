@@ -37,6 +37,15 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
+<!-- WebComponents -->
+
+> [!Note]
+> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
 <!-- Blazor, WebComponents -->
 ### New Components
 

@@ -304,15 +304,15 @@ createContourSeries(data: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicContourLineSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ValueMemberPath="Value"
         FillScale="@BrushScale"
         DataSource="@Data"
         Thickness="2">
-    </GeographicContourLineSeries>
-</GeographicMap>
+    </IgbGeographicContourLineSeries>
+</IgbGeographicMap>
 
 @code {
     private List<Location> Data;
@@ -320,7 +320,7 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
