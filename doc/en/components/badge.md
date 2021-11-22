@@ -7,6 +7,7 @@ _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Pl
 # $Platform$ Badge
 
 The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+
 <div class="divider"></div>
 
 ## $Platform$ Badge Example
@@ -22,6 +23,18 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
+
+```razor
+IgbBadgeModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
 
 ```cmd
@@ -36,16 +49,26 @@ import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcBadgeComponent);
 ```
 
+<!-- end: WebComponents -->
+
 The simplest way to start using the badge is as follows:
 
 ```html
 <igc-badge></igc-badge>
 ```
 
+```razor
+<IgbBadge />
+```
+
 To display a subtle border around the badge set the [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) attribute of the badge.
 
 ```html
 <igc-badge outlined></igc-badge>
+```
+
+```razor
+<IgbBadge Outlined="true" />
 ```
 
 ## Examples
@@ -56,6 +79,10 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 
 ```html
 <igc-badge variant="success"></igc-badge>
+```
+
+```razor
+<IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
 <code-view style="height: 50px"
@@ -71,6 +98,10 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 
 ```html
 <igc-badge shape="square"></igc-badge>
+```
+
+```razor
+<IgbBadge Shape="@BadgeShape.Square" />
 ```
 
 <code-view style="height: 50px"

@@ -6,7 +6,8 @@ _keywords: avatar, layout, $ProductName$, Infragistics
 
 # $Platform$ Avatar
 
-<p class="highlight">The $ProductName$ Avatar helps to display initials, images, or icons in your application.</p>
+The $ProductName$ Avatar helps to display initials, images, or icons in your application.
+
 <div class="divider"></div>
 
 ## $Platform$ Icon Avatar Example
@@ -22,6 +23,18 @@ _keywords: avatar, layout, $ProductName$, Infragistics
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started, we need to register the `IgbAvatarModule`.
+
+```razor
+IgbAvatarModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
@@ -29,6 +42,8 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcAvatarComponent);
 ```
+
+<!-- end: WebComponents -->
 
 After we import the avatar component we are ready to start using it, so let's add our first avatar.
 
@@ -39,12 +54,22 @@ Declaring an avatar is as simple as:
 <igc-avatar></igc-avatar>
 ```
 
+```razor
+<IgbAvatar />
+```
+
 The avatar has several attributes that allow rendering different content based on the context; The most basic way to display content in the boundaries of the avatar is to provide content between the opening and closing tags.
 
 ```html
 <igc-avatar>
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```razor
+<IgbAvatar>
+  <IgbIcon Name="home" />
+</IgbAvatar>
 ```
 
 If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initials) attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
@@ -58,6 +83,14 @@ If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initi
 </igc-avatar>
 ```
 
+```razor
+<!-- Initials("AZ") will be displayed instead of the icon. -->
+
+<IgbAvatar Initials="AZ">
+  <IgbIcon Name="home" />
+</IgbAvatar>
+```
+
 The avatar can also display an image when the [`src`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#src) attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
 
 ```html
@@ -67,6 +100,14 @@ The avatar can also display an image when the [`src`]({environment:wcApiUrl}/cla
   alt="A photo of a man.">
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```razor
+<IgbAvatar Initials="AZ" 
+           Src="https://static.infragistics.com/xplatform/images/people/GUY01.png"
+           Alt="A photo of a man.">           
+  <IgbIcon Name="home" />
+</IgbAvatar>
 ```
 
 The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute. 

@@ -19,6 +19,18 @@ The following example represents a list populated with contacts with a name and 
 
 At its core the list web component allows you to easily display a vertical list of items.
 
+<!-- Blazor -->
+
+To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+
+```razor
+IgbListModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the list Web component, first you need to install Ignite UI for Web Components by typing the following command:
 ```cmd
 npm install igniteui-webcomponents
@@ -33,6 +45,8 @@ import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemC
 
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
+
+<!-- end: WebComponents -->
 
 ### Add List Items
 
@@ -51,6 +65,21 @@ Now, we can add the following code to get a simple list of items:
             <h2 slot="title">Item 3</h2>
         </igc-list-item>
     </igc-list>
+```
+
+```razor
+<IgbList>
+    <IgbListHeader>Header</IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgbListItem>
+</IgbList>
 ```
 
 If all went well, you should see the following in your browser:
@@ -82,6 +111,26 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
         <span slot="subtitle">859-496-2817</span>
     </igc-list-item>
 </igc-list>
+```
+
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgbListItem>
+</IgbList>
 ```
 
 Both slots `title` and `subtitle` give our [`list items`]({environment:wcApiUrl}/classes/IgcListItemComponent.html) some default look.
@@ -146,6 +195,35 @@ We can use some of our other components in conjunction with the [IgcList]({envir
     </igc-list>
 ```
 
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem> 
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem> 
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem> 
+</IgbList>
+```
+
 The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case igc-avatar, will also be provided with a default position and spacing.
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
@@ -167,6 +245,43 @@ this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupCompone
 this.radioGroup.addEventListener('click', (radio: any) => {
     this.list.size = radio.target.value;
 });
+```
+
+```razor
+<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+    <IgbRadio Value="Small" label-position="after" Change="OnRadioOptionClick">Small</IgbRadio>
+    <IgbRadio Value="Medium" label-position="after" Change="OnRadioOptionClick">Medium</IgbRadio>
+    <IgbRadio Value="Large" label-position="after" Checked="true" Change="OnRadioOptionClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+<IgbList style="margin-top: 10px;" Size="@ListSize" />
+
+@code {
+    public SizableComponentSize ListSize { get; set; }
+    
+    public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs e)
+    {
+        IgbRadio radio = e.Parent as IgbRadio;
+        switch (radio.Value)
+        {
+            case "Small":
+                {
+                    this.ListSize = SizableComponentSize.Small;
+                    break;
+                }
+            case "Medium":
+                {
+                    this.ListSize = SizableComponentSize.Medium;
+                    break;
+                }
+            case "Large":
+                {
+                    this.ListSize = SizableComponentSize.Large;
+                    break;
+                }
+        }
+    }
+}
 ```
 
 And here's the result of all that work:
