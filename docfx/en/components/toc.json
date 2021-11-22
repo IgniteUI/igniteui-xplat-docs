@@ -50,6 +50,12 @@
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
+    "name": "Icon",
+    "href": "icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "Card",
     "href": "layouts/card.md",
     "status": "NEW"
