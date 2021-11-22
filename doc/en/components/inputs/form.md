@@ -32,15 +32,15 @@ npm install {PackageWebComponents}
 Once the Form component is imported, you can add it on the page and add your content.
 
 ```html
-  <igc-form novalidate>
-    <div>Subscribe</div>
-    <igc-input name="name" type="text" label="Your Name" size="large" dir="ltr"></igc-input>
-    <igc-input name="email" type="email" label="Your E-mail" size="large" dir="ltr"></igc-input>
-    <igc-checkbox name="agreement" labelPosition="after" dir="ltr">I accept the license agreement</igc-checkbox>
-    <br />
-    <igc-button type="reset">Reset</igc-button>
-    <igc-button type="submit">Submit</igc-button>
-  </igc-form>
+<igc-form>
+  <div>Subscribe</div>
+  <igc-input required name="name" type="text" label="Your Name"></igc-input>
+  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
+  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
+  <br />
+  <igc-button type="reset">Reset</igc-button>
+  <igc-button type="submit">Submit</igc-button>
+</igc-form>
 ```
 
 ```ts
@@ -61,7 +61,14 @@ Form data is collected for the following components:
 - switch
 - textarea
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element.
+When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element:
+
+
+```html
+  <igc-form novalidate>
+    <!-- Form content -->
+  </igc-form>
+```
 
 ### Events
 
