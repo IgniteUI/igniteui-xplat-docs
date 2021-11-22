@@ -1320,7 +1320,7 @@
   {
     "exclude": ["Angular", "Blazor", "React"],
     "name": "Icon Button",
-    "href": "icon-button.md",
+    "href": "inputs/icon-button.md",
     "status": "NEW"
   },
   {
