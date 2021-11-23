@@ -94,6 +94,8 @@ Currently the CLI can be used with the following Web Components:
 | List | list |
 | Navbar | navbar |
 | Ripple | ripple |
+| Pie Chart | pie-chart |
+| Dock Manager | dock-manager |
 <!-- end: WebComponents -->
 
 ## Build and Run the Application
