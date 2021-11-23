@@ -135,7 +135,7 @@ public addSeries(shapeData: any[], shapeBrush: string)
 ```ts
 import { AfterViewInit, Component, EmbeddedViewRef, TemplateRef, ViewChild} from "@angular/core";
 import { IgxShapeDataSource } from 'igniteui-angular-core';
-import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
+import { IgxIgxGeographicMapComponent } from 'igniteui-angular-maps';
 import { IgxGeographicPolylineSeriesComponent } from 'igniteui-angular-maps';
 
 @Component({
@@ -284,19 +284,19 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.dbf"
@@ -304,3 +304,4 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
     }
 }
 ```
+

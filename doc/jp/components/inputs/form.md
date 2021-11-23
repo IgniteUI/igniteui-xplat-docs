@@ -33,20 +33,20 @@ npm install {PackageWebComponents}
 Form コンポーネントがインポートされたら、それをページに追加してコンテンツを追加できます。
 
 ```html
-  <igc-form novalidate>
-    <div>Subscribe</div>
-    <igc-input name="name" type="text" label="Your Name" size="large" dir="ltr"></igc-input>
-    <igc-input name="email" type="email" label="Your E-mail" size="large" dir="ltr"></igc-input>
-    <igc-checkbox name="agreement" labelPosition="after" dir="ltr">I accept the license agreement</igc-checkbox>
-    <br />
-    <igc-button type="reset">Reset</igc-button>
-    <igc-button type="submit">Submit</igc-button>
-  </igc-form>
+<igc-form>
+  <div>Subscribe</div>
+  <igc-input required name="name" type="text" label="Your Name"></igc-input>
+  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
+  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
+  <br />
+  <igc-button type="reset">Reset</igc-button>
+  <igc-button type="submit">Submit</igc-button>
+</igc-form>
 ```
 
 ```ts
 import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
-        
+
 defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
 
@@ -63,6 +63,13 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 - textarea
 
 フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、[`novalidate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#novalidate) 属性を `<igc-form>` 要素に追加できます。
+
+
+```html
+  <igc-form novalidate>
+    <!-- Form content -->
+  </igc-form>
+```
 
 ### イベント
 

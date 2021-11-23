@@ -207,14 +207,14 @@ onDataLoaded(jsonData: any[]) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="DataSource"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="LightGray"
         MarkerOutline="Black" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -242,3 +242,4 @@ onDataLoaded(jsonData: any[]) {
     }
 }
 ```
+

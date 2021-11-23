@@ -8,6 +8,7 @@ _language: ja
 # $Platform$ Badge (バッジ)
 
 $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
+
 <div class="divider"></div>
 
 ## $Platform$ Badge の例
@@ -23,6 +24,18 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 
 ## 使用方法
 
+<!-- Blazor -->
+
+To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
+
+```razor
+IgbBadgeModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 バッジ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
@@ -37,16 +50,26 @@ import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcBadgeComponent);
 ```
 
+<!-- end: WebComponents -->
+
 バッジの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-badge></igc-badge>
 ```
 
+```razor
+<IgbBadge />
+```
+
 バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
 
 ```html
 <igc-badge outlined></igc-badge>
+```
+
+```razor
+<IgbBadge Outlined="true" />
 ```
 
 ## 例
@@ -57,6 +80,10 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 
 ```html
 <igc-badge variant="success"></igc-badge>
+```
+
+```razor
+<IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
 <code-view style="height: 50px"
@@ -72,6 +99,10 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 
 ```html
 <igc-badge shape="square"></igc-badge>
+```
+
+```razor
+<IgbBadge Shape="@BadgeShape.Square" />
 ```
 
 <code-view style="height: 50px"

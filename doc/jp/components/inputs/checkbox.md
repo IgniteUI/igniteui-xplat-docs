@@ -5,7 +5,6 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 _language: ja
 ---
 
-
 # $Platform$ Checkbox (チェックボックス) の概要
 $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。ネイティブ ブラウザーのチェックボックスと同様に動作します。
 
@@ -22,7 +21,20 @@ $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件
 <div class="divider--half"></div>
 
 ## 使用方法
+
 チェックボックス コンポーネントは、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
+
+<!-- Blazor -->
+
+To get started with the checkbox component, you will need to include its module, like so:
+
+```razor
+IgbCheckboxModule.Register(IgniteUIBlazor);
+```
+
+<!-- end:Blazor>
+
+<!-- WebComponents -->
 
 チェックボックス ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
@@ -38,14 +50,21 @@ import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
 defineComponents(IgcCheckboxComponent);
 ```
 
+<!-- end: WebComponents -->
+
 チェックボックスの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-checkbox></igc-checkbox>
 ```
 
+```razor
+<IgbCheckbox />
+```
+
 >[!WARNING]
 >チェックボックス コンポーネントは標準の `<form>` 要素では機能しません。代わりに `<igc-form>` を使用してください。
+
 
 ## 例
 
@@ -57,11 +76,19 @@ defineComponents(IgcCheckboxComponent);
 <igc-checkbox>Label</igc-checkbox>
 ```
 
+```razor
+<IgbCheckbox>Label</IgbCheckbox>
+```
+
 チェックボックスの [`label-position`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#label-position) 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
 <igc-checkbox label-position="before">Label</igc-checkbox>
+```
+
+```razor
+<IgbCheckbox LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbCheckbox>
 ```
 
 チェックボックスは、チェックボックスの外部の要素でラベル付けすることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
@@ -70,68 +97,147 @@ defineComponents(IgcCheckboxComponent);
 <span id="checkbox-label">Label</span>
 <igc-checkbox aria-labelledby="checkbox-label"></igc-checkbox>
 ```
+
+```razor
+<span id="checkbox-label">Label</span>
+<IgbCheckbox AriaLabelledby="checkbox-label" />
+```
+
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Avatar の例"
+           alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/label">
 </code-view>
 
 ### チェック済み
 
+<!-- Blazor -->
+
+Use the `Checked` property of the component in order to determine whether the checkbox should be toggled on or off by default.
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 チェックボックスをオンに切り替えるには、[`checked`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#checked) 属性を使用します。
+
+<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox checked></igc-checkbox>
 ```
+
+```razor
+<IgbCheckbox Checked="true" />
+```
+
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
-           alt="$Platform$ Avatar の例"
+           alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/checked">
 </code-view>
 
 ### 不確定
 
+<!-- Blazor -->
+
+Use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 [`indeterminate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#indeterminate) 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
+
+<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
 ```
+
+```razor
+<IgbCheckbox Indeterminate="true" />
+```
+
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Avatar の例"
+           alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
 ### 必須
 
+<!-- Blazor -->
+
+Use the `Required` property to mark the checkbox as required.
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 [`required`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#required) 属性を使用して、チェックボックスを必須としてマークします。
+
+<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox required></igc-checkbox>
 ```
 
+```razor
+<IgbCheckbox Required="true" />
+```
+
 ### 無効
 
+<!-- Blazor -->
+
+Use the `Invalid` property to mark the checkbox as invalid.
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 [`invalid`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#invalid) 属性を使用して、チェックボックスを無効としてマークします。
+
+<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
 ```
 
+```razor
+<IgbCheckbox Invalid="true" />
+```
+
 ### オフ
 
+<!-- Blazor -->
+
+Use the `Disabled` property to disable the checkbox.
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 チェックボックスをオフにするには、[`disabled`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#disabled) 属性を使用します。
+
+<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
 ```
+
+```razor
+<IgbCheckbox Disabled="true" />
+```
+
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Avatar の例"
+           alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/disabled">
 </code-view>
 
@@ -141,6 +247,10 @@ defineComponents(IgcCheckboxComponent);
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
+```
+
+```razor
+<IgbCheckbox Name="wifi" Value="enabled" />
 ```
 
 ## スタイル設定

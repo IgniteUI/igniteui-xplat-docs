@@ -126,17 +126,17 @@ connectedCallback() {
 ```
 
 ```razor
-<DataGridToolbar ToolbarTitle="Grid Title"
+<IgbDataGridToolbar ToolbarTitle="Grid Title"
     ColumnChooser="true"
     ColumnChooserText="Columns"
     ColumnChooserTitle="Column Chooser"
     TargetGrid="DataGridRef" />
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DefaultColumnMinWidth="120"
     DataSource="@DataSource"
     ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft">
-</DataGrid>
+</IgbDataGrid>
 
 @code {
     private DataGrid grid;
@@ -257,17 +257,17 @@ connectedCallback() {
 ```
 
 ```razor
-<ColumnChooser Height="100%" Width="200px"
+<IgbColumnChooser Height="100%" Width="200px"
     Title="Column Chooser"
     TargetGrid="DataGridRef" />
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource"
     ColumnHidingAnimationMode="ColumnHidingAnimationMode.SlideToLeft" />
 
 @code {
-    private DataGrid grid;
-    public DataGrid DataGridRef
+    private IgbDataGrid grid;
+    public IgbDataGrid DataGridRef
     {
         get
         {

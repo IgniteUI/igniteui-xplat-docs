@@ -166,13 +166,13 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
           @ref="DataGridRef"
           DataSource="DataSource" />
 
 @code {
 
-    public DataGrid DataGridRef;
+    public IgbDataGrid DataGridRef;
 
     public string FilterText = "";
     public string FilterMode = "Contains";
@@ -183,9 +183,9 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        DataGridModule.Register(IgniteUIBlazor);
-        GridColumnOptionsModule.Register(IgniteUIBlazor);
-        GridColumnFilterOptionsModule.Register(IgniteUIBlazor);
+        IgbDataGridModule.Register(IgniteUIBlazor);
+        IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
+        IgbGridColumnFilterOptionsModule.Register(IgniteUIBlazor);
     }
 
     public void OnFilterTextChanged(ChangeEventArgs e)

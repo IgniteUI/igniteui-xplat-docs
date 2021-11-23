@@ -50,6 +50,12 @@
   },
   {
     "exclude": ["Angular", "Blazor", "React"],
+    "name": "アイコン",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
     "name": "カード",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -1321,6 +1327,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "ボタン",
     "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "アイコン ボタン",
+    "href": "inputs/icon-button.md",
     "status": "NEW"
   },
   {

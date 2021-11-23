@@ -24,9 +24,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls. 
+> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
->eg. 
+>eg.
 >
 >`<IgbDataGrid>`
 >
@@ -38,22 +38,32 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
+<!-- WebComponents -->
+
+> [!Note]
+> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
 <!-- Blazor, WebComponents -->
 ### 新しいコンポーネント
 
-* [Avatar & Icon](avatar.md)
-* [Badge](badge.md)
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Calendar](scheduling/calendar.md)
 * [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
 * [Navbar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
-* [List](grids/list.md)
-* [Form](inputs/form.md)
-* [Button, Icon Button](inputs/button.md)
-* [Radio & Radio Group](radio.md)
-* [Checkbox](checkbox.md)
-* [Switch](switch.md)
-* [Ripple](ripple.md)
-* [Calendar](calendar.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
 
 <!-- end: Blazor, WebComponents -->
 
@@ -70,17 +80,19 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
 * `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 * デフォルトで `FinancialChart` に最終値の注釈を追加しました。
-* 新しいプロパティを追加しました:
-   - 十字線のカスタマイズを可能にする CrosshairsLine*
-   - 十字線の注釈のカスタマイズを可能にする CrosshairsAnnotation*
-   - 最終値の注釈のカスタマイズを可能にする FinalValueAnnotations*
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
+   - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
+   - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
+   - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
    - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
    - マーカーの厚さの変更を可能にする `MarkerThickness`
+* Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
    - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
-   - 凡例で表されるすべてのシリーズの図形を設定するためのチャートの `LegendItemBadgeShape`
-   - すべての凡例項目バッジの簡略化または複雑な図形を設定するためのチャートの `LegendItemBadgeMode`
-   - 凡例で表されるシリーズの図形を設定するためのシリーズ `LegendItemBadgeShape`
-   - 1 つの凡例項目バッジの簡略化または複雑な図形を設定するためのシリーズの `LegendItemBadgeMode`
+   - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
+   - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
+* Added new properties in Series in Data Chart and Geographic Map:
+   - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
+   - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
 * カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 * 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
@@ -103,8 +115,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      eg. Multiple row selection.
 * Breaking Changes:
-    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope` 
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode 
+    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
+    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
 
 <!-- end: Blazor, React, WebComponents -->
 

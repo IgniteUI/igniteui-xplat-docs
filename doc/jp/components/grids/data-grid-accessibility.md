@@ -112,7 +112,7 @@ ARIA 属性
 
         @if (DataSource != null)
         {
-            <DataGrid Height="100%" Width="100%" />
+            <IgbDataGrid Height="100%" Width="100%" />
         }
 </div>
 ```

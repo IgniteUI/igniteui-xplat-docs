@@ -6,11 +6,12 @@ _language: ja
 ---
 
 # Card (カード)
+
 $ProductName$ `Card Component` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 ## Card の例
 
-<code-view style="height: 550px"
+<code-view style="height: 580px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card の例"
@@ -25,6 +26,18 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 ### 作業の開始
 
+<!-- Blazor -->
+
+To get started, we will need to register the `IgbCardModule` like so:
+
+```razor
+IgbCardModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 開始するには、[`IgcCardComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html) をその構成要素とともに typescript ファイルにインポートし、[`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
@@ -33,6 +46,8 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
+
+<!-- end: WebComponents -->
 
 次に、デモ カード テンプレートを表すために、次のコードを html ファイルに追加できます。
 
@@ -57,7 +72,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
             Read more
         </igc-button>
         <div slot="end">
-            <igc-icon-button name="twitter">
+            <igc-icon-button name="twitter" style="margin-right: 10px;">
                 <igc-ripple></igc-ripple>
             </igc-icon-button>
             <igc-icon-button name="facebook">
@@ -66,6 +81,39 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </div>
     </igc-card-actions>
 </igc-card>
+```
+
+```razor
+<IgbCard>
+    <IgbCardMedia>
+        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50">
+    </IgbCardMedia>
+    <IgbCardHeader>
+        <h3 slot="title">New York City</h3>
+        <h5 slot="subtitle">City in New York</h5>
+    </IgbCardHeader>
+
+    <IgbCardContent>
+       <p>New York City comprises 5 boroughs sitting where the
+           Hudson River meets the Atlantic Ocean. At its core is Manhattan,
+           a densely populated borough that's among the world's major commercial,
+           financial and cultural centers.</p>
+    </IgbCardContent>
+    <IgbCardActions>
+        <IgbButton slot="start">
+            <IgbRipple />
+            Read more
+        </IgbButton>
+        <div slot="end">
+            <IgbIconButton name="twitter" >
+                <IgbRipple />
+            </IgbIconButton>
+            <IgbIconButton name="facebook" >
+                <IgbRipple />
+            </IgbIconButton>
+        </div>
+    </IgbCardActions>
+</IgbCard>
 ```
 
 上記を確認することができます。まず、`h3` 見出しのように、要素をヘッダー タイトルとしてタグ付けする場合は、要素を [`igc-card-header`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeaderComponent.html) タグの間に配置し、そのスロット名を `title` に設定します。逆に、別の見出し要素を `subtitle` にしたい場合は、そのスロットに `subtitle` という名前を付けます。
@@ -90,6 +138,15 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </igc-card-header>
 ```
 
+```razor
+<IgbCardHeader>
+    <IgbAvatar slot="thumbnail" Src="path/to/image" Initials="TS" />
+
+    <h3 slot="title">Title</h5>
+    <h5 slot="subtitle">Subtitle</h5>
+</IgbCardHeader>
+```
+
 上記の例では、カード ヘッダーのタイトルとサブタイトルの横にアバターが表示されます。
 
 ### Outlined カード
@@ -103,7 +160,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 ```html
 <igc-card outlined>
-    <div class=".card-horizontal">
+    <div class="card-horizontal">
         <div>
             <igc-card-header>
                 <img src="ROZES-Under-the-Grave.jpg" slot="thumbnail">
@@ -123,6 +180,32 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </igc-card-actions>
     </div>
 </igc-card>
+```
+
+```razor
+<IgbCard>
+    <div class="card-horizontal">
+        <div>
+            <IgbCardHeader>
+                <img slot="thumbnail" src="ROZES-Under-the-Grave.jpg" />
+                <h5 slot="title">Rozes</h5>
+                <h5 slot="subtitle">Under the Grave (2016)</h5>
+            </IgbCardHeader>
+            <IgbCardContent>
+                <p>
+                    As I have always said: I write what's real and what's true,
+                    even if it means throwing myself under the bus.
+                </p>
+            </IgbCardContent>
+        </div>
+        <div class="divider"></div>
+        <IgbCardActions>
+            <IgbIconButton Name="previous" />
+            <IgbIconButton Name="play" />
+            <IgbIconButton Name="next" />
+        </IgbCardActions>
+    </div>
+</IgbCard>
 ```
 
 追加の `div` 要素を使用して `igc-card-header` と `igc-card-content` をバンドルし、それらを垂直方向に整列させ、`.card-horizontal` クラスをラッピング `div` 要素に適用して、カードの 2 つのセクションを水平方向に整列させます。
@@ -186,6 +269,31 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </igc-card>
 ```
 
+```razor
+<IgbCard>
+    <div class="semi-horizontal">
+        <div>
+            <IgbCardHeader>
+                <IgbAvatar slot="thumbnail" src/>
+                <h5 slot="title">HERE</h5>
+                <h5 slot="subtitle">by Mellow D</h5>
+            </IgbCardHeader>
+            <IgbCardContent>
+              <p>Far far away, behind the word mountains,
+              far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            </IgbCardContent>
+            <IgbCardActions>
+                <IgbButton>Play Album</IgbButton>
+            </IgbCardActions>
+        </div>
+        <IgbCardMedia class="card-media">
+            <img src="here_media.jpg" />
+        </IgbCardMedia>
+    </div>
+</IgbCard>
+```
+
 ```css
 .semi-horizontal {
     display: flex;
@@ -199,7 +307,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 }
 ```
 
-<code-view style="height: 270px"
+<code-view style="height: 295px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -211,7 +319,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 カードのアクション領域では、すでに説明したコンテンツに追加の設定を加えることができます。
 
-フラット ボタンとアイコン ボタンのスロット名を切り替えることで、それらの順序を逆にすることができます。
+テキスト ボタンとアイコン ボタンのスロット名を切り替えることで、それらの順序を逆にすることができます。
 
 ```html
 <igc-card-actions>
@@ -228,6 +336,23 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </igc-icon-button>
     </div>
 </igc-card-actions>
+```
+
+```razor
+<IgbCardActions>
+    <IgbButton slot="start">
+        <IgbRipple />
+        Read more
+    </IgbButton>
+    <div slot="end">
+        <IgbIconButton name="twitter">
+            <IgbRipple />
+        </IgbIconButton>
+        <IgbIconButton name="facebook" >
+            <IgbRipple />
+        </IgbIconButton>
+    </div>
+</IgbCardActions>
 ```
 
 これで、アイコン ボタンがフラット スタイル テキスト ボタンの前に表示されます。
@@ -253,12 +378,12 @@ igc-card-header::part(subtitle) {
     opacity: 0.9;
 }
 
-igc-icon-button::part(icon) {
-    fill: #352511;
+igc-icon-button+igc-icon-button {
+    margin-left: 10px;
 }
 ```
 
-<code-view style="height: 486px"
+<code-view style="height: 580px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card スタイル設定の例"

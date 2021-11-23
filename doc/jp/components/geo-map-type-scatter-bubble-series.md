@@ -146,37 +146,37 @@ export class MapTypeScatterBubbleSeriesComponent implements AfterViewInit {
     }
 
     public ngAfterViewInit(): void {
-		const sds = new IgxShapeDataSource();
-		sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
-		sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
-		sds.dataBind();
-		sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
-	}
+    const sds = new IgxShapeDataSource();
+    sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
+    sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
+    sds.dataBind();
+    sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
+}
 
     public onDataLoaded(sds: IgxShapeDataSource, e: any) {
-		const shapeRecords = sds.getPointData();
-		console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
+    const shapeRecords = sds.getPointData();
+    console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
 
-		const contourPoints: any[] = [];
-		for (const record of shapeRecords) {
-			const temp = record.fieldValues.Contour;
-			// using only major contours (every 10th degrees Celsius)
-			if (temp % 10 === 0 && temp >= 0) {
-				for (const shapes of record.points) {
-					 for (let i = 0; i < shapes.length; i++) {
-						if (i % 5 === 0) {
-							const p = shapes[i];
-							const item = { lon: p.x, lat: p.y, value: temp};
-							contourPoints.push(item);
-						}
-					 }
-				}
-			}
-		}
+    const contourPoints: any[] = [];
+    for (const record of shapeRecords) {
+        const temp = record.fieldValues.Contour;
+        // using only major contours (every 10th degrees Celsius)
+        if (temp % 10 === 0 && temp >= 0) {
+            for (const shapes of record.points) {
+                 for (let i = 0; i < shapes.length; i++) {
+                    if (i % 5 === 0) {
+                        const p = shapes[i];
+                        const item = { lon: p.x, lat: p.y, value: temp};
+                        contourPoints.push(item);
+                    }
+                 }
+            }
+        }
+    }
 
-		console.log("loaded contour points: " + contourPoints.length);
-		this.addSeriesWith(WorldLocations.getAll());
-	}
+    console.log("loaded contour points: " + contourPoints.length);
+    this.addSeriesWith(WorldLocations.getAll());
+}
 
     public addSeriesWith(locations: any[]) {
         const sizeScale = new IgxSizeScaleComponent();
@@ -265,8 +265,8 @@ addSeriesWith(locations: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicProportionalSymbolSeries DataSource="WorldCities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
         MarkerType="MarkerType.Circle"
         RadiusScale="SeriesSizeScale"
         FillScale="ColorScale"
@@ -275,7 +275,7 @@ addSeriesWith(locations: any[])
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerOutline="rgba(0,0,0,0.3)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -285,7 +285,7 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.WorldCities = WorldLocations.GetAll();
 

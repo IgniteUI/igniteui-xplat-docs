@@ -10,7 +10,7 @@ List 要素は、項目のグループを番号の付いた形式または黒丸
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List の例"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -18,6 +18,18 @@ List 要素は、項目のグループを番号の付いた形式または黒丸
 ## 使用方法
 
 List Web コンポーネントは、項目の垂直リストを簡単に表示できます。
+
+<!-- Blazor -->
+
+To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+
+```razor
+IgbListModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 List Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して Ignite UI for Web Components をインストールする必要があります。
 ```cmd
@@ -33,6 +45,8 @@ import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemC
 
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
+
+<!-- end: WebComponents -->
 
 ### リスト項目の追加
 
@@ -51,6 +65,21 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
             <h2 slot="title">Item 3</h2>
         </igc-list-item>
     </igc-list>
+```
+
+```razor
+<IgbList>
+    <IgbListHeader>Header</IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgbListItem>
+</IgbList>
 ```
 
 以下は結果です:
@@ -82,6 +111,26 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
         <span slot="subtitle">859-496-2817</span>
     </igc-list-item>
 </igc-list>
+```
+
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgbListItem>
+</IgbList>
 ```
 
 スロットの `title` と `subtitle` の両方が、[`list item`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListItemComponent.html) にデフォルトの外観を与えます。
@@ -146,6 +195,35 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
     </igc-list>
 ```
 
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+</IgbList>
+```
+
 `start` スロットは、リスト項目の他のすべてのコンテンツの前に、ある種のメディアを追加するために使用することを目的としています。ターゲット要素 (この場合は igc-avatar) にも、デフォルトの位置と間隔が提供されます。
 
 `end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。igc-buttons を使用します。
@@ -169,13 +247,50 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```razor
+<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+    <IgbRadio Value="Small" label-position="after" Change="OnRadioOptionClick">Small</IgbRadio>
+    <IgbRadio Value="Medium" label-position="after" Change="OnRadioOptionClick">Medium</IgbRadio>
+    <IgbRadio Value="Large" label-position="after" Checked="true" Change="OnRadioOptionClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+<IgbList style="margin-top: 10px;" Size="@ListSize" />
+
+@code {
+    public SizableComponentSize ListSize { get; set; }
+
+    public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs e)
+    {
+        IgbRadio radio = e.Parent as IgbRadio;
+        switch (radio.Value)
+        {
+            case "Small":
+                {
+                    this.ListSize = SizableComponentSize.Small;
+                    break;
+                }
+            case "Medium":
+                {
+                    this.ListSize = SizableComponentSize.Medium;
+                    break;
+                }
+            case "Large":
+                {
+                    this.ListSize = SizableComponentSize.Large;
+                    break;
+                }
+        }
+    }
+}
+```
+
 結果は以下のようになります。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 ## スタイル設定
@@ -207,7 +322,7 @@ igc-list-item::part(end) {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/styling">
+           github-src="grids/list/styling">
 </code-view>
 
 ## API リファレンス

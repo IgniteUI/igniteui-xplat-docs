@@ -312,7 +312,7 @@ createPolylineSeries(flight: any)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     @for (int i = 0; i < this.DataSource.Count; i++)
     {
         FlightInfo info = this.DataSource[i];
@@ -335,17 +335,17 @@ createPolylineSeries(flight: any)
 
         List<FlightInfo> geoRoute = new List<FlightInfo>() { route };
 
-        <GeographicSymbolSeries DataSource="@symbolData" MarkerType="MarkerType.Circle"
+        <IgbGeographicSymbolSeries DataSource="@symbolData" MarkerType="MarkerType.Circle"
                                 LatitudeMemberPath="Lat" LongitudeMemberPath="Lon"
                                 MarkerBrush="White" MarkerOutline="@info.Color"
                                 Thickness="1">
-        </GeographicSymbolSeries>
-        <GeographicPolylineSeries DataSource="@geoRoute" ShapeMemberPath="Points"
+        </IgbGeographicSymbolSeries>
+        <IgbGeographicPolylineSeries DataSource="@geoRoute" ShapeMemberPath="Points"
                                   ShapeStrokeThickness="9" ShapeOpacity="0.5"
                                   ShapeStroke="@info.Color">
-        </GeographicPolylineSeries>
+        </IgbGeographicPolylineSeries>
     }
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -353,7 +353,7 @@ createPolylineSeries(flight: any)
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         WorldCity cityDAL = new WorldCity() { Lat = 32.763, Lon = -96.663, Country = "US", Name = "Dallas" };
         WorldCity citySYD = new WorldCity() { Lat = -33.889, Lon = 151.028, Country = "Australia", Name = "Sydney" };

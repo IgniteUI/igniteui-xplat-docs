@@ -89,15 +89,15 @@ grid1.dataSource = data;
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     AutoGenerateColumns="false"
     DataSource="DataSource"
     ColumnResizingMode="ColumnResizingMode.Deferred"
     ColumnResizingAnimationMode="ColumnResizingAnimationMode.Interpolate"
     ColumnResizingSeparatorWidth="5">
-    <TextColumn Field="FirstName" />
-    <TextColumn Field="LastName" />
-    <TextColumn Field="Street" IsResizingEnabled="false" />
-    <TextColumn Field="City" />
-</DataGrid>
+    <IgbTextColumn Field="FirstName" />
+    <IgbTextColumn Field="LastName" />
+    <IgbTextColumn Field="Street" IsResizingEnabled="false" />
+    <IgbTextColumn Field="City" />
+</IgbDataGrid>
 ```

@@ -67,8 +67,8 @@ npm install --save {PackageSpreadsheet}
 `Spreadsheet` を作成するには、以下のモジュールが必要です。
 
 ```razor
-ExcelModule.Register(IgniteUIBlazor);
-SpreadsheetModule.Register(IgniteUIBlazor);
+IgbExcelModule.Register(IgniteUIBlazor);
+IgbSpreadsheetModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
