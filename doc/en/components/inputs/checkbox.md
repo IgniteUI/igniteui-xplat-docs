@@ -42,7 +42,7 @@ To get started with the checkbox web component, first you need to install the $P
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcCheckboxComponent]({ApiClass}/IgcCheckboxComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+The next step is to import the [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -80,7 +80,7 @@ To provide a meaningful label for the checkbox, simply place some text between t
 <IgbCheckbox>Label</IgbCheckbox>
 ```
 
-You can specify if the label should be positioned before or after the checkbox toggle by setting the [`label-position`]({ApiClass}/IgcCheckboxComponent.html#label-position) attribute of the checkbox. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the checkbox toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#label-position) attribute of the checkbox. Allowed values are `before` and `after`(default):
 
 
 ```html
@@ -120,7 +120,7 @@ Use the `Checked` property of the component in order to determine whether the ch
 
 <!-- WebComponents -->
 
-Use the [`checked`]({ApiClass}/IgcCheckboxComponent.html#checked) attribute to toggle on the checkbox.
+Use the [`checked`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#checked) attribute to toggle on the checkbox.
 
 <!-- end: WebComponents -->
 
@@ -149,7 +149,7 @@ Use the `Indeterminate` property of the component to set the checkbox's value to
 
 <!-- WebComponents -->
 
-Use the [`indeterminate`]({ApiClass}/IgcCheckboxComponent.html#indeterminate) attribute to set the value of the checkbox to neither `true` nor `false`.
+Use the [`indeterminate`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#indeterminate) attribute to set the value of the checkbox to neither `true` nor `false`.
 
 <!-- end: WebComponents -->
 
@@ -178,7 +178,7 @@ Use the `Required` property to mark the checkbox as required.
 
 <!-- WebComponents -->
 
-Use the [`required`]({ApiClass}/IgcCheckboxComponent.html#required) attribute to mark the checkbox as required.
+Use the [`required`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#required) attribute to mark the checkbox as required.
 
 <!-- end: WebComponents -->
 
@@ -200,7 +200,7 @@ Use the `Invalid` property to mark the checkbox as invalid.
 
 <!-- WebComponents -->
 
-Use the [`invalid`]({ApiClass}/IgcCheckboxComponent.html#invalid) attribute to mark the checkbox as invalid.
+Use the [`invalid`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#invalid) attribute to mark the checkbox as invalid.
 
 <!-- end: WebComponents -->
 
@@ -222,7 +222,7 @@ Use the `Disabled` property to disable the checkbox.
 
 <!-- WebComponents -->
 
-Use the [`disabled`]({ApiClass}/IgcCheckboxComponent.html#disabled) attribute to disable the checkbox.
+Use the [`disabled`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#disabled) attribute to disable the checkbox.
 
 <!-- end: WebComponents -->
 
@@ -243,7 +243,7 @@ Use the [`disabled`]({ApiClass}/IgcCheckboxComponent.html#disabled) attribute to
 
 ### Forms
 
-Use the [`name`]({ApiClass}/IgcCheckboxComponent.html#name) and [`value`]({ApiClass}/IgcCheckboxComponent.html#value) attributes when using the checkbox with `<igc-form>`.
+Use the [`name`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#name) and [`value`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html#value) attributes when using the checkbox with `<igc-form>`.
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -278,7 +278,7 @@ igc-checkbox::part(indicator checked) {
 
 ## API Reference
 
-* [IgcCheckboxComponent]({ApiClass}/IgcCheckboxComponent.html)
+* [IgcCheckboxComponent]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
 
 ## Additional Resources
 

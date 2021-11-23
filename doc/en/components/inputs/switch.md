@@ -30,7 +30,7 @@ To get started with the switch web component, first you need to install the $Pro
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcSwitchComponent]({ApiClass}/IgcSwitchComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+The next step is to import the [IgcSwitchComponent]({environment:wcApiUrl}/classes/IgcSwitchComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -57,7 +57,7 @@ To provide a meaningful label for the switch, simply place some text between the
 <igc-switch>Label</igc-switch>
 ```
 
-You can specify if the label should be positioned before or after the switch toggle by setting the [`label-position`]({ApiClass}/IgcSwitchComponent.html#label-position) attribute of the switch. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the switch toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#label-position) attribute of the switch. Allowed values are `before` and `after`(default):
 
 
 ```html
@@ -79,7 +79,7 @@ The switch can also be labelled by elements external to the switch. In this case
 
 ### Checked
 
-Use the [`checked`]({ApiClass}/IgcSwitchComponent.html#checked) attribute to toggle on the switch.
+Use the [`checked`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#checked) attribute to toggle on the switch.
 
 ```html
 <igc-switch checked></igc-switch>
@@ -93,7 +93,7 @@ Use the [`checked`]({ApiClass}/IgcSwitchComponent.html#checked) attribute to tog
 
 ### Required
 
-Use the [`required`]({ApiClass}/IgcSwitchComponent.html#required) attribute to mark the switch as required.
+Use the [`required`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#required) attribute to mark the switch as required.
 
 ```html
 <igc-switch required></igc-switch>
@@ -101,7 +101,7 @@ Use the [`required`]({ApiClass}/IgcSwitchComponent.html#required) attribute to m
 
 ### Invalid
 
-Use the [`invalid`]({ApiClass}/IgcSwitchComponent.html#invalid) attribute to mark the switch as invalid.
+Use the [`invalid`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#invalid) attribute to mark the switch as invalid.
 
 ```html
 <igc-switch invalid></igc-switch>
@@ -109,7 +109,7 @@ Use the [`invalid`]({ApiClass}/IgcSwitchComponent.html#invalid) attribute to mar
 
 ### Disabled
 
-Use the [`disabled`]({ApiClass}/IgcSwitchComponent.html#disabled) attribute to disable the switch.
+Use the [`disabled`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#disabled) attribute to disable the switch.
 
 ```html
 <igc-switch disabled></igc-switch>
@@ -123,7 +123,7 @@ Use the [`disabled`]({ApiClass}/IgcSwitchComponent.html#disabled) attribute to d
 
 ### Forms
 
-Use the [`name`]({ApiClass}/IgcSwitchComponent.html#name) and [`value`]({ApiClass}/IgcSwitchComponent.html#value) attributes when using the switch with `<igc-form>`.
+Use the [`name`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#name) and [`value`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#value) attributes when using the switch with `<igc-form>`.
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
@@ -148,7 +148,7 @@ igc-switch::part(thumb) {
 
 ## API Reference
 
-* [IgcSwitchComponent]({ApiClass}/IgcSwitchComponent.html)
+* [IgcSwitchComponent]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 
 ## Additional Resources
 

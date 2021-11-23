@@ -6,7 +6,7 @@ mentionedTypes: ['Form']
 ---
 # $Platform$ Form Overview
 
-The [`Form Component`]({ApiClass}/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+The [`Form Component`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
 ## $Platform$ Form Example
 
@@ -50,10 +50,10 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 ```
 
 Form data is collected for the following components:
-- [`igc-checkbox`]({ApiClass}/IgcCheckboxComponent.html)
-- [`igc-input`]({ApiClass}/IgcInputComponent.html)
-- [`igc-radio`]({ApiClass}/IgcRadioComponent.html)
-- [`igc-switch`]({ApiClass}/IgcSwitchComponent.html)
+- [`igc-checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+- [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+- [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+- [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 - checkbox
 - input
 - radio
@@ -61,7 +61,7 @@ Form data is collected for the following components:
 - switch
 - textarea
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({ApiClass}/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element:
+When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element:
 
 
 ```html
@@ -91,22 +91,22 @@ The Form component exposes the following methods:
 
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
-|[`submit`]({ApiClass}/IgcFormComponent.html#submit)|Submits the form data.|
-|[`reset`]({ApiClass}/IgcFormComponent.html#reset)|Resets the form data.|
-|[`getFormData`]({ApiClass}/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
-|[`reportValidity`]({ApiClass}/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
+|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|Submits the form data.|
+|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|Resets the form data.|
+|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
+|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
 
 ## API References
 
 For more detailed information regarding the form's API, refer to the following links:
-* [`IgcFormComponent API`]({ApiClass}/IgcFormComponent.html)
+* [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
 
 Additional components and/or directives that were used:
-- [`IgcButtonComponent API`]({ApiClass}/IgcButtonComponent.html)
-- [`IgcCheckboxComponent API`]({ApiClass}/IgcCheckboxComponent.html)
-* [`IgcInputComponent API`]({ApiClass}/IgcInputComponent.html)
-* [`IgcRadioComponent API`]({ApiClass}/IgcRadioComponent.html)
-* [`IgcSwitchComponent API`]({ApiClass}/IgcSwitchComponent.html)
+- [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+- [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 
 <div class="divider"></div>
 ## Additional Resources

@@ -26,7 +26,7 @@ To get started with the radio web component, first you need to install the $Prod
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcRadioComponent]({ApiClass}/IgcRadioComponent.html) and [IgcRadioGroupComponent]({ApiClass}/IgcRadioGroupComponent.html) in the typescript file and register them by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+The next step is to import the [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html) and [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html) in the typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -136,7 +136,7 @@ Use the `disabled` attribute to disable the radio.
 
 ### Group Alignment
 
-The radio group allows you to easily change the placement directionality of the radio buttons it contains using the [`alignment`]({ApiClass}/IgcRadioGroupComponent.html#alignment) attribute. Allowed values are `vertical`(default) and `horizontal`.
+The radio group allows you to easily change the placement directionality of the radio buttons it contains using the [`alignment`]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html#alignment) attribute. Allowed values are `vertical`(default) and `horizontal`.
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -198,8 +198,8 @@ igc-radio::part(control checked) {
 
 ## API Reference
 
-* [IgcRadioComponent]({ApiClass}/IgcRadioComponent.html)
-* [IgcRadioGroupComponent]({ApiClass}/IgcRadioGroupComponent.html)
+* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
 
 ## Additional Resources
 

@@ -10,7 +10,7 @@ The $ProductName$ Icon Button component allows developers to use registered icon
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({ApiClass}/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -28,7 +28,7 @@ After we import the icon button component we are ready to start using it, so let
 
 ### Variant
 
-Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the [`variant`]({ApiClass}/IgcIconButtonComponent.html#variant) attribute of the icon button.
+Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the [`variant`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#variant) attribute of the icon button.
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -42,7 +42,7 @@ Similar to the regular button components, the icon button supports several varia
 
 ### Size
 
-The size of the button can be changed by setting the [`size`]({ApiClass}/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+The size of the button can be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -99,7 +99,7 @@ igc-icon-button::part(icon) {
 
 ## API Reference
 
-* [IgcIconButtonComponent]({ApiClass}/IgcIconButtonComponent.html)
+* [IgcIconButtonComponent]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
 
 ## Additional Resources
 
