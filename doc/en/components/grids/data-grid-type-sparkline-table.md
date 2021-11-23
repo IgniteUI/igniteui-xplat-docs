@@ -134,11 +134,11 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
           RowHeight="90"
           AutoGenerateColumns="false"
           DataSource="DataSource">
-    <TemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
+    <IgbTemplateColumn Field="OrderHistory" Width="@("*>180")" HeaderText="Order History" >
         <Template>
             <RenderFragment>
                  <div style="width: 100%; height: 70px; background: transparent">
@@ -152,6 +152,6 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
                  </div>
             </RenderFragment>
         </Template>
-    </TemplateColumn>
-</DataGrid>
+    </IgbTemplateColumn>
+</IgbDataGrid>
 ```

@@ -117,7 +117,7 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split" />
@@ -144,7 +144,7 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid @ref="DataGridRef" Height="100%" Width="100%"
+<IgbDataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
     IsGroupCollapsable="true" />
 ```
@@ -212,14 +212,14 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid @ref="DataGridRef" Height="100%" Width="100%"
+<IgbDataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"
     IsGroupCollapsable="true" />
 
 @code {
-    private DataGrid grid;
-    public DataGrid DataGridRef
+    private IgbDataGrid grid;
+    public IgbDataGrid DataGridRef
     {
         get
         {

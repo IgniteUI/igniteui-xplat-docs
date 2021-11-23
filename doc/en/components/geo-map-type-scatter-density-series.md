@@ -231,8 +231,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         HeatMaximumColor="Red"
@@ -241,7 +241,7 @@ onDataLoaded(csvData: string) {
         HeatMinimum="0"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -250,7 +250,7 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 

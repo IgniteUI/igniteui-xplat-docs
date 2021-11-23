@@ -6,12 +6,12 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Radio & Radio Group
 
-<p class="highlight">The $ProductName$ Radio Button component allows the user to select a single option from an available set of options that are listed side by side.</p>
+The $ProductName$ Radio Button component allows the user to select a single option from an available set of options that are listed side by side.
 
 ## $ProductName$ Radio Example
 
-<code-view style="height: 205px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 205px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example"
            github-src="inputs/radio/group">
 </code-view>
@@ -26,7 +26,7 @@ To get started with the radio web component, first you need to install the $Prod
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html) and [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html) in the typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the [IgcRadioComponent]({ApiClass}/IgcRadioComponent.html) and [IgcRadioGroupComponent]({ApiClass}/IgcRadioGroupComponent.html) in the typescript file and register them by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -46,7 +46,7 @@ The simplest way to start using the radio is as follows:
 ```
 
 > [!WARNING]
-> The radio component doesn't work with the standart `<form>` element. Use `<igc-form>` instead.
+> The radio component doesn't work with the standard `<form>` element. Use `<igc-form>` instead.
 
 ## Examples
 
@@ -99,7 +99,7 @@ Use the `checked` attribute to toggle on the radio.
            github-src="inputs/radio/group">
 </code-view>
 
-### Ivalid
+### Invalid
 
 Use the `invalid` attribute to mark the radio as invalid.
 
@@ -136,7 +136,7 @@ Use the `disabled` attribute to disable the radio.
 
 ### Group Alignment
 
-The radio group allows you to easily change the placement directionality of the radio buttons it contains using the [`alignment`]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html#alignment) attribute. Allowed values are `vertical`(default) and `horizontal`.
+The radio group allows you to easily change the placement directionality of the radio buttons it contains using the [`alignment`]({ApiClass}/IgcRadioGroupComponent.html#alignment) attribute. Allowed values are `vertical`(default) and `horizontal`.
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -198,8 +198,8 @@ igc-radio::part(control checked) {
 
 ## API Reference
 
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
+* [IgcRadioComponent]({ApiClass}/IgcRadioComponent.html)
+* [IgcRadioGroupComponent]({ApiClass}/IgcRadioGroupComponent.html)
 
 ## Additional Resources
 

@@ -7,7 +7,8 @@ _language: ja
 
 # $Platform$ Avatar (アバター)
 
-<p class="highlight">$ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。</p>
+$ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
+
 <div class="divider"></div>
 
 ## $Platform$ Icon Avatar の例
@@ -26,7 +27,7 @@ _language: ja
 開始するには、typescript ファイルに [`IgcAvatarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
-import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents'; 
+import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcAvatarComponent);
 ```
@@ -62,7 +63,7 @@ defineComponents(IgcAvatarComponent);
 [`src`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#src) 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`initials` 値は無視され、子要素は描画されません。
 
 ```html
-<igc-avatar 
+<igc-avatar
   initials="AZ"
   src="https://www.infragistics.com/angular-demos/assets/images/men/1.jpg"
   alt="A photo of a man.">

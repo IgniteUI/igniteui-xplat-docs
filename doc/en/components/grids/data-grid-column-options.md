@@ -85,10 +85,10 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     HeaderClickAction="HeaderClickAction.SortByOneColumnOnly"
     IsColumnOptionsEnabled="true">
-    <TextColumn Field="ID" IsFilteringEnabled="false" />
+    <IgbTextColumn Field="ID" IsFilteringEnabled="false" />
 </DataGrid>
 ```

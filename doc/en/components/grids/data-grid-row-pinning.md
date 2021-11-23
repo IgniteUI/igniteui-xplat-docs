@@ -48,14 +48,14 @@ grid1.pinnedItems.add(data[4]);
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource" />
 
 @code {
 
-    private DataGrid grid;
-    public DataGrid DataGridRef
+    private IgbDataGrid grid;
+    public IgbDataGrid DataGridRef
     {
         get
         {

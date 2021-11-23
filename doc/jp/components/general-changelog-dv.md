@@ -3,7 +3,7 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 ---
 # $ProductName$ 変更ログ (データ可視化)
 
@@ -66,7 +66,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
-* Legend で `GeographicMap` の地理的シリーズを表すためのサポートを追加しました。
+* Legend で `XamGeographicMap` の地理的シリーズを表すためのサポートを追加しました。
 * `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
 * `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 * デフォルトで `FinancialChart` に最終値の注釈を追加しました。

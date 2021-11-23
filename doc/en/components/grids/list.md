@@ -4,13 +4,13 @@ The List element is extremely useful when presenting a group of items. You can c
 
 ## $Platform$ List Example
 
-The following example represents a list populated with contacts with a name and a phone number properties. The [`IgcList`]({environment:wcApiUrl}/classes/IgcListComponent.html) component uses [`IgcAvatar`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) and [`IgcButton`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
+The following example represents a list populated with contacts with a name and a phone number properties. The [`IgcList`]({ApiClass}/IgcListComponent.html) component uses [`IgcAvatar`]({ApiClass}/IgcAvatarComponent.html) and [`IgcButton`]({ApiClass}/IgcButtonComponent.html) to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -19,12 +19,24 @@ The following example represents a list populated with contacts with a name and 
 
 At its core the list web component allows you to easily display a vertical list of items.
 
+<!-- Blazor -->
+
+To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+
+```razor
+IgbListModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the list Web component, first you need to install Ignite UI for Web Components by typing the following command:
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `IgcListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `IgcListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -33,6 +45,8 @@ import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemC
 
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
+
+<!-- end: WebComponents -->
 
 ### Add List Items
 
@@ -51,6 +65,21 @@ Now, we can add the following code to get a simple list of items:
             <h2 slot="title">Item 3</h2>
         </igc-list-item>
     </igc-list>
+```
+
+```razor
+<IgbList>
+    <IgbListHeader>Header</IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgbListItem>
+</IgbList>
 ```
 
 If all went well, you should see the following in your browser:
@@ -84,7 +113,27 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 </igc-list>
 ```
 
-Both slots `title` and `subtitle` give our [`list items`]({environment:wcApiUrl}/classes/IgcListItemComponent.html) some default look.
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgbListItem>
+    <IgbListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgbListItem>
+</IgbList>
+```
+
+Both slots `title` and `subtitle` give our [`list items`]({ApiClass}/IgcListItemComponent.html) some default look.
 
 After all that our list component should now look like that:
 
@@ -97,7 +146,7 @@ After all that our list component should now look like that:
 
 ### Adding Avatar and Buttons
 
-We can use some of our other components in conjunction with the [IgcList]({environment:wcApiUrl}/classes/IgcListComponent.html) component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
+We can use some of our other components in conjunction with the [IgcList]({ApiClass}/IgcListComponent.html) component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -146,11 +195,40 @@ We can use some of our other components in conjunction with the [IgcList]({envir
     </igc-list>
 ```
 
+```razor
+<IgbList>
+    <IgbListHeader>
+        <h1>Contacts</h1>
+    </IgbListHeader>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+    <IgbListItem>
+        <IgbAvatar slot="start" src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" Shape="@AvatarShape.Circle"/>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Text</IgbButton>
+        <IgbButton slot="end" Variant="@ButtonVariant.Outlined">Call</IgbButton>
+    </IgbListItem>
+</IgbList>
+```
+
 The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case igc-avatar, will also be provided with a default position and spacing.
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
 
-Let's also allow the user to choose the size of the list by using its [`size`]({environment:wcApiUrl}/classes/IgcListComponent.html#size) property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
+Let's also allow the user to choose the size of the list by using its [`size`]({ApiClass}/IgcListComponent.html#size) property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
@@ -169,13 +247,50 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```razor
+<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+    <IgbRadio Value="Small" label-position="after" Change="OnRadioOptionClick">Small</IgbRadio>
+    <IgbRadio Value="Medium" label-position="after" Change="OnRadioOptionClick">Medium</IgbRadio>
+    <IgbRadio Value="Large" label-position="after" Checked="true" Change="OnRadioOptionClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+<IgbList style="margin-top: 10px;" Size="@ListSize" />
+
+@code {
+    public SizableComponentSize ListSize { get; set; }
+
+    public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs e)
+    {
+        IgbRadio radio = e.Parent as IgbRadio;
+        switch (radio.Value)
+        {
+            case "Small":
+                {
+                    this.ListSize = SizableComponentSize.Small;
+                    break;
+                }
+            case "Medium":
+                {
+                    this.ListSize = SizableComponentSize.Medium;
+                    break;
+                }
+            case "Large":
+                {
+                    this.ListSize = SizableComponentSize.Large;
+                    break;
+                }
+        }
+    }
+}
+```
+
 And here's the result of all that work:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/overview">
+           github-src="grids/list/overview">
 </code-view>
 
 ## Styling
@@ -207,23 +322,23 @@ igc-list-item::part(end) {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
            alt="$Platform$ List Example"
-           github-src="layouts/grids/list/styling">
+           github-src="grids/list/styling">
 </code-view>
 
 ## API References
 
 In this article we covered a lot of ground with the list web component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional Ignite UI Web Components, like avatars and buttons. Finally, we changed the component's appearance through the exposed CSS parts.
 
-* [IgcListComponent]({environment:wcApiUrl}/classes/IgcListComponent.html)
-* [IgcListHeaderComponent]({environment:wcApiUrl}/classes/IgcListHeaderComponent.html)
-* [IgcListItemComponent]({environment:wcApiUrl}/classes/IgcListItemComponent.html)
+* [IgcListComponent]({ApiClass}/IgcListComponent.html)
+* [IgcListHeaderComponent]({ApiClass}/IgcListHeaderComponent.html)
+* [IgcListItemComponent]({ApiClass}/IgcListItemComponent.html)
 
 Additional Web Components that were used:
 
-* [IgcAvatarComponent]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [IgcAvatarComponent]({ApiClass}/IgcAvatarComponent.html)
+* [IgcButtonComponent]({ApiClass}/IgcButtonComponent.html)
+* [IgcRadioGroupComponent]({ApiClass}/IgcRadioGroupComponent.html)
+* [IgcRadioComponent]({ApiClass}/IgcRadioComponent.html)
 
 ## Additional Resources
 

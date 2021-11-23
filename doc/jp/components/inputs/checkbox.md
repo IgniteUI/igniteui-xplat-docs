@@ -7,13 +7,14 @@ _language: ja
 
 
 # $Platform$ Checkbox (チェックボックス) の概要
-<p class="highlight">$ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。ネイティブ ブラウザーのチェックボックスと同様に動作します。</p>
+$ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。ネイティブ ブラウザーのチェックボックスと同様に動作します。
+
 <div class="divider"></div>
 
 ## Checkbox の例
 
-<code-view style="height: 100px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox の例"
            github-src="inputs/checkbox/sample-1">
 </code-view>

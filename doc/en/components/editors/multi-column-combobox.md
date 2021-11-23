@@ -33,7 +33,7 @@ npm install --save {PackageInputs}
 The Multi-Column Combo Box requires the following modules:
 
 ```razor
-MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -83,7 +83,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
+<IgbMultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
 
 @code {
     protected List<CountryInfo> CountryNames;
@@ -128,7 +128,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      TextField="Country"
                      ValueField="@(new string[]{ "ID" })" />
@@ -138,7 +138,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -171,7 +171,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Fields="@(new string[] { "ID", "Country" })" />
 
@@ -180,7 +180,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -211,7 +211,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Placeholder="Please choose a country" />
 
@@ -220,7 +220,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -255,7 +255,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      SortMode="SortMode.SortByMultipleColumnsTriState" />
 
@@ -264,7 +264,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }

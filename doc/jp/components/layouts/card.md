@@ -6,7 +6,7 @@ _language: ja
 ---
 
 # Card (カード)
-<p class="highlight">$ProductName$ `Card Component` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。</p>
+$ProductName$ `Card Component` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 ## Card の例
 
@@ -84,7 +84,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 ```html
 <igc-card-header>
     <igc-avatar slot="thumbnail" src="path/to/image" initials="TS"></igc-avatar>
-    
+
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
@@ -232,7 +232,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 これで、アイコン ボタンがフラット スタイル テキスト ボタンの前に表示されます。
 
-また、slot プロパティを省略して要素をデフォルトのスロットに移動するだけで、間にコンテンツを追加することもできます。 
+また、slot プロパティを省略して要素をデフォルトのスロットに移動するだけで、間にコンテンツを追加することもできます。
 
 ## スタイル設定
 
@@ -244,7 +244,7 @@ igc-card {
 }
 
 igc-card-content,
-igc-card-header::part(title) { 
+igc-card-header::part(title) {
     color: #FEFEFE;
 }
 

@@ -264,8 +264,8 @@ addSeriesWith(locations: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicProportionalSymbolSeries DataSource="WorldCities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
         MarkerType="MarkerType.Circle"
         RadiusScale="SeriesSizeScale"
         FillScale="ColorScale"
@@ -274,7 +274,7 @@ addSeriesWith(locations: any[])
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerOutline="rgba(0,0,0,0.3)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -284,7 +284,7 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.WorldCities = WorldLocations.GetAll();
 

@@ -294,19 +294,19 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.dbf"

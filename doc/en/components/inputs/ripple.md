@@ -6,21 +6,21 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 
 # $Platform$ Ripple Overview
 
-<p class="highlight">The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
-</p>
+The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
+
 <div class="divider"></div>
 
 ## $Platform$ Ripple Example
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
            github-src="inputs/ripple/button">
 </code-view>
 
 ## Usage
 
-To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({ApiClass}/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -51,19 +51,19 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example"
            github-src="inputs/ripple/color">
 </code-view>
 
 ## API Reference
 
-* [IgcRippleComponent]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* [IgcRippleComponent]({ApiClass}/IgcRippleComponent.html)
 
 Additional Web Components that were used:
 
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* [IgcButtonComponent]({ApiClass}/IgcButtonComponent.html)
 
 ## Additional Resources
 

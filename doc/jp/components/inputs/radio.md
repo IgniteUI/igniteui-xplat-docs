@@ -7,12 +7,12 @@ _language: ja
 
 # $Platform$ Radio & Radio Group (ラジオとラジオ グループ)
 
-<p class="highlight">$ProductName$ Radio Button コンポーネントを使用すると、ユーザーは、並べて表示される利用可能なオプションのセットから 1 つのオプションを選択できます。</p>
+$ProductName$ Radio Button コンポーネントを使用すると、ユーザーは、並べて表示される利用可能なオプションのセットから 1 つのオプションを選択できます。
 
 ## $ProductName$ Radio の例
 
-<code-view style="height: 205px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 205px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group の例"
            github-src="inputs/radio/group">
 </code-view>

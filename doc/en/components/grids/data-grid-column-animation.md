@@ -63,7 +63,7 @@ The following demonstrates the implementation of each of the column animations d
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     ColumnAddingAnimationMode="ColumnShowingAnimationMode.SlideFromLeft"
     ColumnExchangingAnimationMode="ColumnExchangingAnimationMode.SlideToRight"

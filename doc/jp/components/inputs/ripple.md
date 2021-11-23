@@ -7,16 +7,7 @@ _language: ja
 
 # $Platform$ Ripple (リップル) の概要
 
-<p class="highlight">$ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。</p>
-<div class="divider"></div>
-
-## $Platform$ Ripple の例
-
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
-           github-src="inputs/ripple/button">
-</code-view>
+$ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。
 
 ## 使用方法
 
@@ -37,6 +28,12 @@ defineComponents(IgcRippleComponent);
 </igc-button>
 ```
 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
+           github-src="inputs/ripple/button">
+</code-view>
+
 CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素にリップルを追加できます。
 
 ## 例
@@ -51,8 +48,8 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/color">
 </code-view>

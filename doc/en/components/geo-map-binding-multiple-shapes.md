@@ -71,8 +71,8 @@ import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ## Creating Series
@@ -194,10 +194,10 @@ public render() {
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicShapeSeries ShapefileDataSource="@AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
-    <GeographicShapeSeries ShapefileDataSource="@EuropeShape" Outline="Black" Thickness="1" Brush="Purple" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicShapeSeries ShapefileDataSource="@AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
+    <IgbGeographicShapeSeries ShapefileDataSource="@EuropeShape" Outline="Black" Thickness="1" Brush="Purple" />
+</IgbGeographicMap>
 ```
 
 ## Loading Shapefiles
@@ -259,20 +259,20 @@ sdsLocations.dataBind();
 ```
 
 ```razor
-public ShapeDataSource AsiaShape;
-public ShapeDataSource EuropeShape;
+public IgbShapeDataSource AsiaShape;
+public IgbShapeDataSource EuropeShape;
 
 protected override void OnInitialized()
 {
-    GeographicMapModule.Register(IgniteUIBlazor);
+    IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-    this.AsiaShape = new ShapeDataSource()
+    this.AsiaShape = new IgbShapeDataSource()
     {
         ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
         DatabaseSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.dbf"
     };
 
-    this.EuropeShape = new ShapeDataSource()
+    this.EuropeShape = new IgbShapeDataSource()
     {
         ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_europe.shp",
         DatabaseSource = "https://static.infragistics.com/xplatform/shapes/world_region_europe.dbf"
@@ -563,7 +563,7 @@ this.geoMap.backgroundContent = null;
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" BackgroundContent="@null"/>
+<IgbGeographicMap Height="100%" Width="100%" BackgroundContent="@null"/>
 ```
 
 ## Summary
@@ -1035,27 +1035,27 @@ export class MapBindingMultipleShapes extends SampleBase {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicShapeSeries ShapefileDataSource="AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
-    <GeographicShapeSeries ShapefileDataSource="EuropeShape" Outline="Black" Thickness="1" Brush="Purple" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicShapeSeries ShapefileDataSource="AsiaShape" Outline="Black" Thickness="1" Brush="Red" />
+    <IgbGeographicShapeSeries ShapefileDataSource="EuropeShape" Outline="Black" Thickness="1" Brush="Purple" />
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource AsiaShape;
-    public ShapeDataSource EuropeShape;
+    public IgbShapeDataSource AsiaShape;
+    public IgbShapeDataSource EuropeShape;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.AsiaShape = new ShapeDataSource()
+        this.AsiaShape = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/world_region_asia.dbf"
         };
 
-        this.EuropeShape = new ShapeDataSource()
+        this.EuropeShape = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/world_region_europe.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/world_region_europe.dbf"
