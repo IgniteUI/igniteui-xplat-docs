@@ -64,7 +64,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <igc-button variant="outlined">Outlined</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
+<div class="sample-container loading" style="height: 80px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
 </iframe></div>
 
