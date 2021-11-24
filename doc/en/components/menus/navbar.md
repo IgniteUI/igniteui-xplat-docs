@@ -6,7 +6,7 @@ mentionedTypes: ['Navbar']
 ---
 # $Platform$ Navbar Overview
 
- $Platform$ [`Navbar Component`]({ApiClass}/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+ $Platform$ [`Navbar Component`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 ## $Platform$ Navbar Example
 
@@ -29,7 +29,7 @@ npm install {PackageWebComponents}
 
 ## Usage
 
-To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
@@ -44,7 +44,7 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Content
 
-In the sample of our `Navbar` we have added some [`IgcIconComponent`]({ApiClass}/IgcIconComponent.html) icons using the `start` and `end` slots:
+In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
 
 ```html
 <igc-navbar style="height:65px">
@@ -95,10 +95,10 @@ If all went well, you should see the following in your browser:
 ## API References
 
 For more detailed information regarding the navbar's API, refer to the following links:
-* [`IgcNavbarComponent API`]({ApiClass}/IgcNavbarComponent.html)
+* [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent API`]({ApiClass}/IgcIconComponent.html)
+* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
 
 <div class="divider"></div>
 

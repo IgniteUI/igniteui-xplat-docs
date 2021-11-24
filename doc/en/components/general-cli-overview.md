@@ -74,6 +74,30 @@ For example, if you wanted to add a data grid templated component named "MyGridC
 ig add grid MyGridComponent
 </pre>
 
+<!-- WebComponents -->
+Currently the CLI can be used with the following Web Components:
+
+| Name | Component Template |
+| ------------------|---------------------|
+| Avatar | avatar  |
+| Card | card |
+| Badge | badge |
+| Button | button |
+| Checkbox | checkbox |
+| Form | form |
+| Icon | icon |
+| Icon Button | icon-button |
+| Input | input |
+| Radio Group | radio-group |
+| Switch | switch |
+| Calendar | calendar |
+| List | list |
+| Navbar | navbar |
+| Ripple | ripple |
+| Pie Chart | pie-chart |
+| Dock Manager | dock-manager |
+<!-- end: WebComponents -->
+
 ## Build and Run the Application
 
 In order to build and run the $ProductName$ application, you can call the **ig build** and **ig run** commands:

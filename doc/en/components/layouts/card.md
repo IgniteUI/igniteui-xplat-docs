@@ -37,7 +37,7 @@ IgbCardModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the [`IgcCardComponent`]({ApiClass}/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+To get started we need to import the [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -115,13 +115,13 @@ Then, to represent the demo card template, we can add the following code to our 
 </IgbCard>
 ```
 
-You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({ApiClass}/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
+You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
-Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({ApiClass}/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
-You can place anything inside the [`igc-card-content`]({ApiClass}/IgcCardContentComponent.html) tags. Usually text goes there.
+You can place anything inside the [`igc-card-content`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html) tags. Usually text goes there.
 
-Finally, the [`igc-card-actions`]({ApiClass}/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
+Finally, the [`igc-card-actions`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
@@ -396,20 +396,20 @@ In this article we covered a lot of ground with the card component. We created a
 ## API References
 
 For more detailed information regarding the card's API, refer to the following links:
-* [`IgcCardComponent API`]({ApiClass}/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`]({ApiClass}/IgcCardHeaderComponent.html)
-* [`IgcCardContentComponent API`]({ApiClass}/IgcCardContentComponent.html)
-* [`IgcCardMediaComponent API`]({ApiClass}/IgcCardMediaComponent.html)
-* [`IgcCardActionsComponent API`]({ApiClass}/IgcCardActionsComponent.html)
+* [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
+* [`IgcCardHeaderComponent API`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html)
+* [`IgcCardContentComponent API`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html)
+* [`IgcCardMediaComponent API`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html)
+* [`IgcCardActionsComponent API`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html)
 
 
 Additional components and/or directives that were used:
 
-* [`IgcAvatarComponent`]({ApiClass}/IgcAvatarComponent.html)
-* [`IgcIconComponent`]({ApiClass}/IgcIconComponent.html)
-* [`IgcButtonComponent`]({ApiClass}/IgcButtonComponent.html)
-* [`IgcIconButtonComponent`]({ApiClass}/IgcIconButtonComponent.html)
-* [`IgcRippleComponent`]({ApiClass}/IgcRippleComponent.html)
+* [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
+* [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
+* [`IgcRippleComponent`]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
 
 <div class="divider"></div>
 
