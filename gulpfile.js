@@ -280,15 +280,21 @@ function buildPlatform(cb) {
             // sources.push('!doc/**/excel*.md');
             // sources.push('!doc/**/treemap*.md');
             sources.push('!doc/**/general-cli*.md');
-            //sources.push('!doc/**/general-breaking-changes*.md');
+            // sources.push('!doc/**/general-breaking-changes*.md');
             // sources.push('!doc/**/data-chart-type-stacked*.md');
             // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
             // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
             // sources.push('!doc/**/zoomslider*.md');
         }
+
         // uncomment to test faster build
-        // sources.push('!doc/**/*grid*.md');
-        // sources.push('!doc/**/*chart*.md');
+        // sources.push('!doc/**/obsolete/**/*.md');
+        // sources.push('!doc/**/grid/**/*.md');
+        // sources.push('!doc/**/charts/**/*.md');
+        // sources.push('!doc/**/editors/**/*.md');
+        // sources.push('!doc/**/inputs/**/*.md');
+        // sources.push('!doc/**/layouts/**/*.md');
+        // sources.push('!doc/**/menus/**/*.md');
         // sources.push('!doc/**/data-chart*.md');
         // sources.push('!doc/**/financial-chart*.md');
         // sources.push('!doc/**/category-chart*.md');
@@ -307,7 +313,6 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/editors/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
-        // sources.push('!doc/**/types/**/*.md');
         // sources.push('!doc/**/types/**/*.md');
 
         gulp.src(sources)
