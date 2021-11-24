@@ -26,7 +26,7 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 
 <!-- Blazor -->
 
-To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
+`IgbBadge` コンポーネントの使用を開始するには、最初に `IgbBadgeModule` を登録する必要があります。
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);

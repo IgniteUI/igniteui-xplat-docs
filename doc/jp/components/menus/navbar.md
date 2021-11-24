@@ -45,7 +45,7 @@ defineComponents(IgcNavbarComponent);
 
 ## コンテンツ
 
-`Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの[`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) アイコンを追加しました。
+`Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの [`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) アイコンを追加しました。
 
 ```html
 <igc-navbar style="height:65px">

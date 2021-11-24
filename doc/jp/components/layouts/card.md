@@ -28,7 +28,7 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 <!-- Blazor -->
 
-To get started, we will need to register the `IgbCardModule` like so:
+開始するには、次のように `IgbCardModule` を登録する必要があります。
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
