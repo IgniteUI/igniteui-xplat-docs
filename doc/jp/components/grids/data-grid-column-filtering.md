@@ -22,7 +22,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <div class="divider--half"></div>
 
-As seen above, setting the `FilterUIType` property to FilterRow will enables the record filtering record to the user interface where the user can specify filter criteria to filter records. Records that do not match the specified filter criteria will be hidden. Filtering is also exposed in the column options UI by hovering a field and clicking the vertical ellipsis. 
+上記のように、`FilterUIType` プロパティを FilterRow に設定すると、ユーザー インターフェイスでレコードをフィルタリングできるようになり、ユーザーはレコードをフィルタリングするためのフィルター基準を指定できます。指定されたフィルター基準に一致しないレコードは非表示になります。フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。
 
 ## コード スニペット
 

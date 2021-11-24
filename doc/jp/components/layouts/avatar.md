@@ -26,7 +26,7 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 
 <!-- Blazor -->
 
-To get started, we need to register the `IgbAvatarModule`.
+開始するには、次のように `IgbAvatarModule` を登録する必要があります。
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);

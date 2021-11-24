@@ -24,9 +24,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' is now required for all components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+> 'Igb' は、すべてのコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
->eg.
+>例:
 >
 >`<IgbDataGrid>`
 >
@@ -41,7 +41,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- WebComponents -->
 
 > [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+> パッケージ「lit-html」を確認してください。最適な互換性のために、「^2.0.0」以降がプロジェクトに追加されます。
 
 <!-- end: WebComponents -->
 
@@ -81,18 +81,18 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 * デフォルトで `FinancialChart` に最終値の注釈を追加しました。
 * カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
-   - `CrosshairsLineThickness` and other properties for customizing crosshairs lines
-   - `CrosshairsAnnotationXAxisBackground` and other properties for customizing crosshairs annotations
-   - `FinalValueAnnotationsBackground` and other properties for customizing final value annotations
+   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
+   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
+   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
    - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
    - マーカーの厚さの変更を可能にする `MarkerThickness`
-* Added new properties in Category Chart, Financial Chart, Data Chart, and Geographic Map:
+* カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
    - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
-   - `LegendItemBadgeShape` for setting badge shape of all series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on all series in a legend
-* Added new properties in Series in Data Chart and Geographic Map:
-   - `LegendItemBadgeShape` for setting badge shape on specific series represented in a legend
-   - `LegendItemBadgeMode` for setting badge complexity on specific series in a legend
+   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+* データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
+   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 * カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 * 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
@@ -106,17 +106,16 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### DataGrid
 
-* New Features Added:
+* 新規機能:
     - [列フィルタリング](grids/data-grid-column-filtering.md)
     - [レイアウトのカスタマイズの読み込みと保存](grids/data-grid-load-save-layout.md)
     - [列をグループ化するための GroupBy 地域](grids/data-grid-row-grouping.md)
     - [セルの結合](grids/data-grid-cell-merging.md)
-* New API:
-    - Added `SelectionChanged` event. Used to detect changes on selection interactions
-     eg. Multiple row selection.
-* Breaking Changes:
-    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
+* 新規 API:
+    - `SelectionChanged` イベントを追加しました。複数行の選択など、選択の相互作用の変化を検出するために使用されます。
+* 重大な変更:
+    - `GridSummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
+    - `GroupHeaderDisplayMode` プロパティのタイプを DataSourceSectionHeaderDisplayMode から `GroupHeaderDisplayMode` に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->
 

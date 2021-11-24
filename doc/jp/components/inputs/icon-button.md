@@ -1,18 +1,18 @@
 <!-- --- -->
-<!-- title: $Platform$ Icon Button Component -->
-<!-- _description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with $ProductName$ Icon Button component. -->
-<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls 
+<!-- title: $Platform$ Icon Button コンポーネント -->
+<!-- _description: 開発者は、$ProductName$ Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。 -->
+<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール 
 _language: ja
 -->
 <!-- --- -->
 
-# $Platform$ Icon Button Overview
+# $Platform$ Icon Button (アイコン ボタン) の概要
 
-The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../icon.md) component but adds features from the [button](button.md) component as well.
+$ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
-## Usage
+## 使用方法
 
-To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({ApiClass}/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+Icon Button Web コンポーネントの使用を開始するには、[`IgcIconButtonComponent`]({ApiClass}/IgcIconButtonComponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`]({ApiIndex}#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -20,21 +20,21 @@ import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents
 defineComponents(IgcIconButtonComponent);
 ```
 
-After we import the icon button component we are ready to start using it, so let's add our first button.
+アイコン ボタン コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のボタンを追加しましょう。
 
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
 ```
 
-## Examples
+## 例
 
-### Variant
+### バリアント
 
-Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the [`variant`]({ApiClass}/IgcIconButtonComponent.html#variant) attribute of the icon button.
+通常のボタン コンポーネントと同様に、アイコン ボタンはいくつかのバリアントをサポートします - `flat` (デフォルト)、`contained`、および `outlined`。アイコン ボタンのタイプを変更するには、アイコン ボタンの [`variant`]({ApiClass}/IgcIconButtonComponent.html#variant) 属性を設定します。
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button の例"
            github-src="inputs/icon-button/variant">
 </code-view>
 
@@ -42,13 +42,13 @@ Similar to the regular button components, the icon button supports several varia
 <igc-icon-button name="search" variant="contained"></igc-icon-button>
 ```
 
-### Size
+### サイズ
 
-The size of the button can be changed by setting the [`size`]({ApiClass}/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+ボタンのサイズは、[`size`]({ApiClass}/IgcIconButtonComponent.html#size) 属性をサポートされている 3 つのサイズ (`small`、`medium`、`large` (デフォルト)) のいずれかに設定することで変更できます。
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button の例"
            github-src="inputs/icon-button/size">
 </code-view>
 
@@ -56,9 +56,9 @@ The size of the button can be changed by setting the [`size`]({ApiClass}/IgcIcon
 <igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
 ```
 
-### Type
+### タイプ
 
-The icon button component will change its internal structure from `<button>` to an `<a>` type element when the `href` attribute is set. In that case the icon button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target`, and `download` attributes of the icon button.
+`href` 属性が設定されると、アイコン ボタン コンポーネントはその内部構造を `<button>` から `<a>` タイプ要素に変更します。その場合、アイコン ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、アイコン ボタンの `rel`、`target`、および `download` 属性も設定できます。
 
 ```html
 <igc-icon-button
@@ -70,17 +70,17 @@ The icon button component will change its internal structure from `<button>` to 
 </igc-icon-button>
 ```
 
-### Mirrored
+### Mirrored (ミラー化済み)
 
-Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attirbute that, when set, flips the icon button horizontally.
+一部のアイコンは、右から左 (RTL) モードで使用する場合、少し異なって見える必要があります。そのため、設定するとアイコン ボタンを水平方向に反転させる `mirrored` 属性を提供します。
 
 ```html
 <igc-icon-button name="thumb-up" mirrored></igc-icon-button>
 ```
 
-## Styling
+## スタイル設定
 
-The icon button component exposes two CSS parts - `base` and `icon` that allow you to style the wrapping element (`<button>` or `<a>`) and the wrapped `<igc-icon>` element;
+アイコン ボタン コンポーネントは、2 つの CSS パーツを公開します。ラッピング要素 (`<button>` または `<a>`) とラップされた `<igc-icon>` 要素のスタイルを設定できる `base` と `icon` です。
 
 ```css
 igc-icon-button::part(base) {
@@ -99,13 +99,13 @@ igc-icon-button::part(icon) {
            github-src="inputs/icon-button/styling">
 </code-view>
 
-## API Reference
+## API リファレンス
 
 * [IgcIconButtonComponent]({ApiClass}/IgcIconButtonComponent.html)
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

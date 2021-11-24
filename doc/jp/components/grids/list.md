@@ -21,7 +21,7 @@ List Web コンポーネントは、項目の垂直リストを簡単に表示�
 
 <!-- Blazor -->
 
-To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+`IgbList` コンポーネントの使用を開始するには、最初に `IgbListModule` を登録する必要があります。
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);

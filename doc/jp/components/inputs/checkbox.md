@@ -26,7 +26,7 @@ $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件
 
 <!-- Blazor -->
 
-To get started with the checkbox component, you will need to include its module, like so:
+チェックボックス コンポーネントの使用を開始するには、次のようにそのモジュールを含める必要があります:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
@@ -114,7 +114,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- Blazor -->
 
-Use the `Checked` property of the component in order to determine whether the checkbox should be toggled on or off by default.
+チェックボックスをデフォルトでオンにするかオフにするかを決定するには、コンポーネントの `Checked` プロパティを使用します。
 
 <!-- end: Blazor -->
 
@@ -143,7 +143,7 @@ Use the `Checked` property of the component in order to determine whether the ch
 
 <!-- Blazor -->
 
-Use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
+コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を `true` にも `false` にも設定しません。
 
 <!-- end: Blazor -->
 
@@ -172,7 +172,7 @@ Use the `Indeterminate` property of the component to set the checkbox's value to
 
 <!-- Blazor -->
 
-Use the `Required` property to mark the checkbox as required.
+`Required` プロパティを使用して、チェックボックスを必要に応じてマークします。
 
 <!-- end: Blazor -->
 
@@ -194,7 +194,7 @@ Use the `Required` property to mark the checkbox as required.
 
 <!-- Blazor -->
 
-Use the `Invalid` property to mark the checkbox as invalid.
+チェックボックスを無効としてマークするには、`Invalid` プロパティを使用します。
 
 <!-- end: Blazor -->
 
@@ -216,7 +216,7 @@ Use the `Invalid` property to mark the checkbox as invalid.
 
 <!-- Blazor -->
 
-Use the `Disabled` property to disable the checkbox.
+チェックボックスを無効にするには、`Disabled` プロパティを使用します。
 
 <!-- end: Blazor -->
 

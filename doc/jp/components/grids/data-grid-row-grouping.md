@@ -24,7 +24,7 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 
 ## Group-By 領域
 
-Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the example above, to the user interface. The group-by area allows users more options to group and sort columns without interact when interacting the DataGrid indirectly. Groups can be positioned and reordered based on the users needs. This area also populates when columns are programmatically added as `GroupDescriptions` on the DataGrid as well.
+上記の例に示すように、DataGrid の `IsGroupByAreaVisible` プロパティをユーザー インターフェイスで True に設定します。group-by 領域を使用すると、ユーザーは、DataGrid を間接的に操作するときに、操作せずに列をグループ化およびソート オプションを増やすことができます。グループは、ユーザーのニーズに基づいて配置および並べ替えることができます。この領域は、DataGrid で列がプログラムで `GroupDescriptions` として追加されたときにも入力されます。
 
 ## 複数のグループ
 

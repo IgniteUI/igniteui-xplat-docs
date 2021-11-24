@@ -1,33 +1,33 @@
 ---
-title: $Platform$ Icon Component
-_description: Developers can utilize and use various icons interchangeably with custom colors and more with $ProductName$ Icon component.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls
+title: $Platform$ Icon コンポーネント
+_description: 開発者は、$ProductName$ Icon コンポーネントを使用して、さまざまなアイコンをカスタム色などと交換可能に使用できます。
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
 _language: ja
 ---
 
-# $Platform$ Icon Overview
+# $Platform$ Icon (アイコン) の概要
 
-$ProductName$ Icon component allows developers to use any registered SVG as icon in their application.
+$ProductName$ アイコン コンポーネントを使用すると、開発者は登録済みの SVG をアプリケーションのアイコンとして使用できます。
 
-## $Platform$ Icon Example
+## $Platform$ Icon の例
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Example"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon の例"
            github-src="layouts/icon/sizing">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
-To get started with the icon web component, first you need to install the $ProductName$ by typing the following command:
+Icon Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [`IgcIconComponent`]({ApiClass}/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({ApiIndex}#defineComponents) function as follows:
+次の手順は、[`IgcIconComponent`]({ApiClass}/IgcIconComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`]({ApiIndex}#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -35,13 +35,13 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
-## Usage
+## 使用方法
 
-The $ProductName$ icon component doesn't contain any icons on its own. It's a conduit for displaying any _registered_ SVG images.
+$ProductName$ アイコン コンポーネントには、それ自体にアイコンは含まれていません。これは、登録された SVG 画像を表示するためのコンジットです。
 
-### Adding Icons
+### アイコンの追加
 
-To register an image as an icon all you have to do is import one of the 2 utility functions from the icons registry service that allows you to add icons to an icon collection.
+画像をアイコンとして登録するには、アイコンをアイコン コレクションに追加できるアイコン レジストリ サービスから 2 つのユーティリティ関数のいずれかをインポートするだけです。
 
 ```ts
 import {
@@ -50,7 +50,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-The [`registerIcon`]({ApiIndex}#registerIcon) function allows you to register an SVG image as an icon from an external file:
+[`registerIcon`]({ApiIndex}#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
 ```ts
 registerIcon(
@@ -60,15 +60,15 @@ registerIcon(
 );
 ```
 
-The method above will add an icon named `search` to the collection named `material`.
+上記の方法では、`search` という名前のアイコンが `material` という名前のコレクションに追加されます。
 
-Then to use the newly registered icon all you have to do is to pass the name and collection to the `igc-icon` element:
+次に、新しく登録されたアイコンを使用するには、名前とコレクションを `igc-icon` 要素に渡すだけです。
 
 ```html
 <igc-icon name="search" collection="material"></igc-icon>
 ```
 
-The second method for registering icons is by passing an SVG string to the [`registerIconFromText`]({ApiIndex}#registerIconFromText) function:
+アイコンを登録する 2 番目の方法は、SVG 文字列を [`registerIconFromText`]({ApiIndex}#registerIconFromText) 関数に渡すことです。
 
 ```ts
 const searchIcon =
@@ -77,11 +77,11 @@ const searchIcon =
 registerIconFromText("search", searchIcon, "material");
 ```
 
-Then you'd use it in the same way as described in the component sample above.
+次に、上記のコンポーネント サンプルで説明したのと同じ方法で使用します。
 
-### Size
+### サイズ
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the [`size`]({ApiClass}/IgcIconComponent.html#size) attribute to any of the aforementioned sizes.
+アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、[`size`]({ApiClass}/IgcIconComponent.html#size) 属性を前述のサイズのいずれかに設定します。
 
 ```html
 <igc-icon size="large"></igc-icon>
@@ -89,21 +89,21 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Sizing"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon のサイズ変更"
            github-src="layouts/icon/sizing">
 </code-view>
 
-### Mirrored
+### Mirrored (ミラー化済み)
 
-Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attirbute that, when set, flips the icon horizontally.
+一部のアイコンは、右から左 (RTL) モードで使用する場合、少し異なって見える必要があります。そのため、設定するとアイコンを水平方向に反転させる `mirrored` 属性を提供します。
 
 ```html
 <igc-icon name="search" mirrored></igc-icon>
 ```
 
-## Styling
+## スタイル設定
 
-The icon component can be styled by applying styles directly to the `igc-icon` element;
+アイコン コンポーネントは、`igc-icon` 要素に直接スタイルを適用することでスタイルを設定できます。
 
 ```css
 igc-icon {
@@ -114,17 +114,17 @@ igc-icon {
 
 <code-view style="height: 70px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon のサイズ変更"
            github-src="layouts/icon/styling">
 </code-view>
 
-## API Reference
+## API リファレンス
 
 * [IgcIconComponent]({ApiClass}/IgcIconComponent.html)
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
