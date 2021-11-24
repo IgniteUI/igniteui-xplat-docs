@@ -25,7 +25,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 > [!NOTE]
 > The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
->For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
+> For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
 >
 
 
