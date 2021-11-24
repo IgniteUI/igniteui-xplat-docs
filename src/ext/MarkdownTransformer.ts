@@ -106,7 +106,8 @@ function transformCodeRefs(options: any) {
         }
 
         if (memberName.indexOf("Ig$") >= 0) {
-            memberName = memberName.replace("Ig$", options.platformPascalPrefix);
+            memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
+            memberName = memberName.replace("Component", options.platformPascalSuffix);
             apiTypeName = memberName;
             if (createLink) {
                 let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
@@ -118,9 +119,10 @@ function transformCodeRefs(options: any) {
             node.value = memberName;
             return;
         }
-        if (memberName.indexOf("ig$-") >= 0) {
-            memberName = memberName.replace("ig$-", options.platformSpinalPrefix);
 
+        if (memberName.indexOf("ig$-") >= 0) {
+            memberName = memberName.replace("ig$-",       options.platformSpinalPrefix);
+            memberName = memberName.replace("-component", options.platformSpinalSuffix);
             node.value = memberName;
             return;
         }
@@ -892,6 +894,8 @@ export class MarkdownTransformer {
             toDelete: deleteMap,
             platformDetector: this._platformDetector,
             docs: this._docs,
+            platformSpinalSuffix: null as string | null,
+            platformPascalSuffix: null as string | null,
             platformPascalPrefix: null as string | null,
             platformSpinalPrefix: null as string | null
         };
@@ -909,20 +913,28 @@ export class MarkdownTransformer {
 
         switch (this._platform) {
             case APIPlatform.Angular:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igx";
                 options.platformSpinalPrefix = "igx-";
                 break;
             case APIPlatform.React:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igr";
                 options.platformSpinalPrefix = "igr-";
                 break;
             case APIPlatform.WebComponents:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "-component";
                 options.platformPascalPrefix = "Igc";
                 options.platformSpinalPrefix = "igc-";
                 break;
             case APIPlatform.Blazor:
-                options.platformPascalPrefix = "";
-                options.platformSpinalPrefix = "";
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igb";
+                options.platformSpinalPrefix = "Igb";
         }
 
         remark().data('settings', {
