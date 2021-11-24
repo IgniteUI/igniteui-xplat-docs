@@ -303,7 +303,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- React -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid includes every option for mouse and [touch-driven selection](data-grid-cell-selection.md) by cell and row level, including modes like SingleCell, SingleRow, MultipleCell, MultipleRow, RangeCell and more.</p>
@@ -315,7 +315,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- WebComponents -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid has the ability to configure [mouse and touch-driven selection](data-grid-cell-selection.md) for both cells and rows. You can select either single or multiple cells and rows, and the ability to use range selection is also available.</p>
@@ -327,7 +327,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- Blazor -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
+    <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of cell selection capabilities within $Platform$ Data Grid" src="../../images/marketing/grid-cell-row-selection.gif" alt="Animation of cell selection capabilities within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Cell and Row Selection<a class="anchorjs-link" href="data-grid-column-filtering.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid component includes the options to [select rows and cells](data-grid-cell-selection.md) using both the user’s mouse and touchscreen. The available modes for cell and row selection include MultipleCell, MultipleRow, SingleCell, SingleRow, and RangeCell.</p>
@@ -343,7 +343,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
         <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
+        src="../../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -358,7 +358,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
         <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
+        src="../../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -373,7 +373,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
         <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of filtering capabilities within $Platform$ Data Grid"
-        src="../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
+        src="../../images/marketing/grid-filtering.jpg" alt="Icon of filtering capabilities within $Platform$ Data Grid">
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Filtering<a class="anchorjs-link" href="data-grid-cell-editing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -389,7 +389,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>Rearranging [column order](data-grid-column-moving.md) is as easy as Click and Drag in the $Platform$ Data Grid. We’ve also included a complete animation engine, giving you control over the UX of this interaction.</p>
@@ -402,7 +402,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>Users can [modify the order](data-grid-column-moving.md) that columns appear in the $Platform$ Data Grid simply by clicking and dragging the column headers. We have also included the option to use a built-in animation for this column movement.</p>
@@ -415,7 +415,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of column moving functionality"
-    src="../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-moving.gif" alt="Animation of column moving functionality within $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Moving<a class="anchorjs-link" href="data-grid-column-moving.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid has the in-built ability to click and drag your columns in order to [reorder and rearrange them](data-grid-column-moving.md). While dragging the columns, the ability to animate the column moving is available for more control of the user experience of your application.</p>
@@ -431,7 +431,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
+     src="../../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>With Right and Left [column pinning](data-grid-column-pinning.md) in the $Platform$ Data Grid, users can lock a single column or multiple columns in any order, so that the column maintains position, while scrolling horizontally.</p>
@@ -445,7 +445,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
+     src="../../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid supports the ability to [pin columns](data-grid-column-pinning.md) to the left or right side of the table. Doing this will lock as many columns as are pinned in their position while the user scrolls horizontally.</p>
@@ -459,7 +459,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <div class="feature">
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column pinning functionality"
-     src="../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
+     src="../../images/marketing/grid-column-pinning.jpg" alt="Icon of column pinning functionality within the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Pinning<a class="anchorjs-link" href="data-grid-column-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The ability to [fix columns](data-grid-column-pinning.md) to the left or right side is present in the $Platform$ Data Grid component. When a column is fixed or pinned, it will maintain its position while the user scrolls the grid horizontally.</p>
@@ -474,7 +474,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
+    src="../../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid supports the ability to [resize columns](data-grid-column-resizing.md), giving your customers flexibility over how they display the Data Grid columns, with respect to the other columns in the table.</p>
@@ -487,7 +487,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
+    src="../../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $ProductName$ Data Grid has the in-built ability to give users the ability to click and drag column borders in order to [resize them](data-grid-column-resizing.md). An animation engine also exists so that you can optionally animate the resizing of the columns.</p>
@@ -500,7 +500,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column resizing features enabled"
-    src="../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
+    src="../../images/marketing/grid-column-resizing.gif" alt="Grid of data with column resizing features enabled for $Platform$ Data Grid component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Resizing<a class="anchorjs-link" href="data-grid-column-resizing.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid allows your users to [resize the columns](data-grid-column-resizing.md) that exist in the grid. The data table is feature rich in this area in that the user can configure the resizing mode such that the resizing operation either happens immediately or is deferred until the drag is released.</p>
@@ -515,7 +515,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
-    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
+    src="../../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid supports ascending and descending [column sorting](data-grid-column-sorting.md) with a Single, Multi or Tri-State Column Sorting configuration. Sorting is triggered on header click or using the Column Options dropdown.</p>
@@ -528,7 +528,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
-    src="../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
+    src="../../images/marketing/grid-column-sorting.gif" alt="Grid of data with column sorting features enabled on the $Platform$ Data Grid component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The ability to [sort column data](data-grid-column-sorting.md) in ascending or descending order is available in the $Platform$ Data Grid. The user has the ability to sort with a Single, Multi, or Tri-State column sorting configuration and sorting is triggered by default by clicking the header.</p>
@@ -541,7 +541,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column sorting features enabled"
-    src="../images/marketing/grid-column-sorting.gif" alt="Blazor sortable grid example"></div>
+    src="../../images/marketing/grid-column-sorting.gif" alt="Blazor sortable grid example"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Sorting<a class="anchorjs-link" href="data-grid-column-sorting.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>Looking for a $Platform$ sortable grid for your project? The $ProductName$ Data Grid component has the in-built ability to [sort column data](data-grid-column-sorting.md) with the configuration of the sorting between Single, Multi, and Tri-State also being available. Sorting a particular column in the grid by default is done by clicking the column header, but you can also do this by using the column options dialog.</p>
@@ -556,7 +556,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The $Platform$ Data Grid supports [column summaries](data-grid-column-summaries.md) in the footer area of the Data Grid, or in the Group Headers. This is great for showing values like Count, Sum, Min, Max, Avg, etc.</p>
@@ -569,7 +569,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>[Column summaries](data-grid-column-summaries.md) are available for display in the footer area of the $Platform$ Data Grid, with configurable options to show them in group headers as well. This is useful for showing the Sum, Minimum, and Maximum of numeric data, among other summary options.</p>
@@ -582,7 +582,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon of column summary functionality"
-    src="../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
+    src="../../images/marketing/grid-column-summaries.jpg" alt="Icon of column summary functionality of the $Platform$ Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Summaries<a class="anchorjs-link" href="data-grid-column-summaries.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
         <p>The user has the in-built ability to apply [column summaries](data-grid-column-summaries.md) in the $Platform$ Data Grid component. These summaries have the ability to display the Sum, Minimum, Maximum, among others, of numeric data and can be configured to display in the footer or group headers of the grid.</p>
@@ -597,7 +597,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -612,7 +612,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -627,7 +627,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of column type features"
-    src="../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-types.jpg" alt="Icon representation of column type features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Types<a class="anchorjs-link" href="data-grid-column-types.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -645,7 +645,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -660,7 +660,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -675,7 +675,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of column animation functionality"
-    src="../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-animations.gif" alt="Animation of column animation functionality features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Animations<a class="anchorjs-link" href="data-grid-column-animation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -692,7 +692,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -707,7 +707,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -722,7 +722,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of column options dialog features"
-    src="../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-column-options-dialog.jpg" alt="Icon of column options dialog features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column Options Dialog<a class="anchorjs-link" href="data-grid-column-options.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -738,7 +738,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- React -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -752,7 +752,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- WebComponents -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -766,7 +766,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 <!-- Blazor -->
 
 <div class="feature">
-    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
+    <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of outlook style grouping features" src="../../images/marketing/grid-row-column-grouping.gif" alt="Animation of outlook style grouping features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Column and Row Outlook Style Grouping<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -783,7 +783,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon of data grid paging features"
-    src="../images/marketing/grid-paging.jpg" alt="Icon of data grid paging features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-paging.jpg" alt="Icon of data grid paging features on the $Platform$ Data Grid">
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Paging<a class="anchorjs-link" href="data-grid-row-paging.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -801,7 +801,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -816,7 +816,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -831,7 +831,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid row pinning features"
-    src="../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-row-pinning.gif" alt="Animation of data grid row pinning features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Row Pinning<a class="anchorjs-link" href="data-grid-row-pinning.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -848,7 +848,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -863,7 +863,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
@@ -878,7 +878,7 @@ The $ProductName$ Data Grid component has built-in virtualization for the rows a
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Animation of data grid keyboard navigation features"
-    src="../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
+    src="../../images/marketing/grid-keyboard-navigation.gif" alt="Animation of data grid keyboard navigation features on the $Platform$ Data Grid">
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid Keyboard Navigation<a class="anchorjs-link" href="data-grid-cell-activation.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
