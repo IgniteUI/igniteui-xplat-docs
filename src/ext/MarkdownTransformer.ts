@@ -926,7 +926,7 @@ export class MarkdownTransformer {
                 break;
             case APIPlatform.WebComponents:
                 options.platformPascalSuffix = "Component";
-                options.platformSpinalSuffix = "-component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igc";
                 options.platformSpinalPrefix = "igc-";
                 break;
