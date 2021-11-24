@@ -89,7 +89,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Dock Manager (Coming Soon)",
-    "href": "dock-manager.md",
+    "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
