@@ -46,7 +46,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
-<!-- Blazor, WebComponents -->
+<!-- WebComponents -->
 ### New Components
 
 * [Avatar](layouts/avatar.md)
@@ -64,7 +64,28 @@ All notable changes for each version of $ProductName$ are documented on this pag
 * [Ripple](inputs/ripple.md)
 * [Switch](inputs/switch.md)
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+### New Components
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navbar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 

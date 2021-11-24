@@ -1365,7 +1365,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Calendar",
     "href": "scheduling/calendar.md",
     "status": "NEW"
