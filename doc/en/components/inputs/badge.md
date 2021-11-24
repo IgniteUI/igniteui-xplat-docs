@@ -12,7 +12,7 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 ## $Platform$ Badge Example
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
            alt="$Platform$ Badge Example"
@@ -85,7 +85,7 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
            alt="$Platform$ Badge Example"
@@ -104,7 +104,7 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
            alt="$Platform$ Badge Example"

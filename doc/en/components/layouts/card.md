@@ -10,7 +10,7 @@ The $ProductName$ `Card Component` displays text, images, icons, and buttons in 
 
 ## Card Example
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card Example"
@@ -230,7 +230,7 @@ The styles that `.card-horizontal` class applies are:
 
 If everything went well, our card should look like this:
 
-<code-view style="height: 220px"
+<code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
            alt="$Platform$ Card Example"
@@ -306,7 +306,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 }
 ```
 
-<code-view style="height: 295px"
+<code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -382,7 +382,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card Styling Example"

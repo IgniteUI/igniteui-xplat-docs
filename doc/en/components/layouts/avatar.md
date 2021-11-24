@@ -12,7 +12,7 @@ The $ProductName$ Avatar helps to display initials, images, or icons in your app
 
 ## $Platform$ Icon Avatar Example
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
            alt="$Platform$ Avatar Example"
@@ -118,7 +118,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Initials
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
            alt="$Platform$ Avatar Example"
@@ -127,7 +127,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Image
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar Example"
@@ -136,7 +136,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Shape
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
            alt="$Platform$ Avatar Example"
@@ -145,7 +145,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Size
 
-<code-view style="height: 110px"
+<code-view style="height: 130px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
            alt="$Platform$ Avatar Example"
