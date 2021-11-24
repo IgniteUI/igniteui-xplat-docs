@@ -94,7 +94,7 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ## Button Sizing
 
-We can allow the user to choose the size of the `ig$-button` by using its [`size`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+We can allow the user to choose the size of the `Ig$ButtonComponent` by using its [`size`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
