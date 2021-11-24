@@ -6,11 +6,11 @@ mentionedTypes: ['Navbar']
 ---
 # $Platform$ Navbar Overview
 
- $Platform$ [`Navbar Component`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+ $Platform$ [`Ig$NavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 ## $Platform$ Navbar Example
 
-The following example represents a `Navbar` with icons and text header:
+The following example represents a `Ig$NavbarComponent` with icons and text header:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -44,7 +44,7 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Content
 
-In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
+In the sample of our `Navbar` we have added some [`Ig$IconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
 
 ```html
 <igc-navbar style="height:65px">
@@ -94,11 +94,11 @@ If all went well, you should see the following in your browser:
 
 ## API References
 
-For more detailed information regarding the navbar's API, refer to the following links:
-* [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
+For more detailed information regarding API of the navbar, refer to the following links:
+* [`Ig$NavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* [`Ig$IconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
 
 <div class="divider"></div>
 

@@ -26,7 +26,7 @@ To get started with the Calendar component, first you need to install $ProductNa
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the [`IgcCalendarComponent`]({environment:wcApiUrl}/classes/igccalendarcomponent.html) and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
+The next step is to import the [`Ig$CalendarComponent`]({environment:wcApiUrl}/classes/igccalendarcomponent.html) and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -36,7 +36,7 @@ defineComponents(IgcCalendarComponent);
 
 ### Single Selection Calendar
 
-Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. This will display the current month in single selection mode.
+Instantiating the `Ig$CalendarComponent` is as easy as placing it in the html. This will display the current month in single selection mode.
 
 
 ```html
@@ -109,7 +109,7 @@ The following sample demonstrates the above configuration:
 
 ### Localization and Formatting
 
-Due to their very nature, localization and formatting are essential to any calendar. In the `IgcCalendarComponent` those are controlled and customized through the following properties - [`locale`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#locale), [`formatOptions`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#formatOptions), [`weekStart`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#weekStart).
+Due to their very nature, localization and formatting are essential to any calendar. In the `Ig$CalendarComponent` those are controlled and customized through the following properties - [`locale`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#locale), [`formatOptions`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#formatOptions), [`weekStart`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#weekStart).
 
 Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
 
@@ -261,7 +261,7 @@ You could control the size and spacing of the Calendar inner elements by changin
 
 ### Events
 
-The Calendar component emits the `igcChange` event when the selected dates are changed by the end user. You can subscribe to the event like this:
+The Calendar component emits the `Ig$Change` event when the selected dates are changed by the end user. You can subscribe to the event like this:
 
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
@@ -269,14 +269,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 
 ## Keyboard navigation
 
-If you traverse the page using the <kbd>Tab</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `IgcCalendarComponent` introduces the following tab stops:
+If you traverse the page using the <kbd>Tab</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `Ig$CalendarComponent` introduces the following tab stops:
 - Month selection button
 - Year selection button
 - Previous button
 - Next button
 - Active date element
 
-When a **day/month/year** in the `IgcCalendarComponent` component is focused, use:
+When a **day/month/year** in the `Ig$CalendarComponent` component is focused, use:
 - <kbd>PageUp</kbd> key to move to the previous month/year/years page.
 - <kbd>PageDown</kbd> key to move to the next month/year/years page.
 - <kbd>Home</kbd> key to focus the first day of the current month/first month in view/first year in view.

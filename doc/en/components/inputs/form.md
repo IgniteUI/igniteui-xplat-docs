@@ -6,7 +6,7 @@ mentionedTypes: ['Form']
 ---
 # $Platform$ Form Overview
 
-The [`Form Component`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+$Platform$ [`Ig$FormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
 ## $Platform$ Form Example
 
@@ -50,15 +50,11 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 ```
 
 Form data is collected for the following components:
-- [`igc-checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
-- [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-- [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-- [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
-- checkbox
-- input
-- radio
+- [`Ig$Checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+- [`Ig$Input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+- [`Ig$Radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+- [`Ig$Switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 - select
-- switch
 - textarea
 
 When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element:
@@ -76,7 +72,7 @@ The Form component raises the following events:
 - igcSubmit - Raised when the form is submitted
 - igcReset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the [`igcSubmit`] event:
+Here is an example showing how to add an event listener for the [`Ig$Submit`] event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -99,14 +95,14 @@ The Form component exposes the following methods:
 ## API References
 
 For more detailed information regarding the form's API, refer to the following links:
-* [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
+* [`Ig$FormComponent`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
 
 Additional components and/or directives that were used:
-- [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-- [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
-* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-* [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+- [`Ig$ButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+- [`Ig$CheckboxComponent`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
+* [`Ig$InputComponent`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+* [`Ig$RadioComponent`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* [`Ig$SwitchComponent`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
 
 <div class="divider"></div>
 ## Additional Resources
