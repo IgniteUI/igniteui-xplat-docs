@@ -75,6 +75,30 @@ ig add [component_template] [component_name]
 ig add grid MyGridComponent
 </pre>
 
+<!-- WebComponents -->
+現在、CLI は次の Web コンポーネントで使用できます。
+
+| 名 | コンポーネント テンプレート |
+| ------------------|---------------------|
+| アバター | avatar  |
+| カード | card |
+| バッジ | badge |
+| ボタン | button |
+| チェックボックス | checkbox |
+| フォーム | form |
+| アイコン | icon |
+| アイコン ボタン | icon-button |
+| 入力 | input |
+| ラジオ グループ | radio-group |
+| スイッチ | switch |
+| カレンダー | calendar |
+| リスト | list |
+| ナビゲーション バー | navbar |
+| リップル | ripple |
+| 円チャート | pie-chart |
+| ドック マネージャ | dock-manager |
+<!-- end: WebComponents -->
+
 ## アプリをビルドして実行する
 
 $ProductName$ アプリをビルドして実行するには、**ig build** コマンドと **ig run** コマンドを呼び出します。

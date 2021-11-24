@@ -27,7 +27,7 @@ Icon Web コンポーネントの使用を開始するには、最初に次の�
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[`IgcIconComponent`]({ApiClass}/IgcIconComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`]({ApiIndex}#defineComponents) 関数を呼び出して登録することです。
+次の手順は、[`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -50,7 +50,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-[`registerIcon`]({ApiIndex}#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
+[`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
 ```ts
 registerIcon(
@@ -68,7 +68,7 @@ registerIcon(
 <igc-icon name="search" collection="material"></igc-icon>
 ```
 
-アイコンを登録する 2 番目の方法は、SVG 文字列を [`registerIconFromText`]({ApiIndex}#registerIconFromText) 関数に渡すことです。
+アイコンを登録する 2 番目の方法は、SVG 文字列を [`registerIconFromText`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIconFromText) 関数に渡すことです。
 
 ```ts
 const searchIcon =
@@ -81,7 +81,7 @@ registerIconFromText("search", searchIcon, "material");
 
 ### サイズ
 
-アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、[`size`]({ApiClass}/IgcIconComponent.html#size) 属性を前述のサイズのいずれかに設定します。
+アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html#size) 属性を前述のサイズのいずれかに設定します。
 
 ```html
 <igc-icon size="large"></igc-icon>
@@ -120,7 +120,7 @@ igc-icon {
 
 ## API リファレンス
 
-* [IgcIconComponent]({ApiClass}/IgcIconComponent.html)
+* [IgcIconComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html)
 
 ## その他のリソース
 
