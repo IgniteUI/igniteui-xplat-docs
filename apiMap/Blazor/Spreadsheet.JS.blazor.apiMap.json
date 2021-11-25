@@ -1,176 +1,105 @@
-{"types": [{"originalName": "Spreadsheet", 
-  "names": [
-    {"platform": "Blazor", "fileName": "Spreadsheet.cs", "mappedName": "IgbSpreadsheet"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsScrollLocked"}], "originalName": "IsScrollLocked"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ActiveCell"}], "originalName": "ActiveCell"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ActivePane"}], "originalName": "ActivePane"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ActiveSelection"}], "originalName": "ActiveSelection"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ActiveTable"}], "originalName": "ActiveTable"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ActiveWorksheet"}], "originalName": "ActiveWorksheet"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AllowAddWorksheet"}], "originalName": "AllowAddWorksheet"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AllowDeleteWorksheet"}], "originalName": "AllowDeleteWorksheet"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AreGridlinesVisible"}], "originalName": "AreGridlinesVisible"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AreHeadersVisible"}], "originalName": "AreHeadersVisible"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetCellEditMode", "mappedName": "CellEditMode"}], "originalName": "CellEditMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ChartAdapter"}], "originalName": "ChartAdapter"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetEnterKeyNavigationDirection", "mappedName": "EnterKeyNavigationDirection"}], "originalName": "EnterKeyNavigationDirection"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "FixedDecimalPlaceCount"}], "originalName": "FixedDecimalPlaceCount"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsEnterKeyNavigationEnabled"}], "originalName": "IsEnterKeyNavigationEnabled"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsFixedDecimalEnabled"}], "originalName": "IsFixedDecimalEnabled"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsFormulaBarVisible"}], "originalName": "IsFormulaBarVisible"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsInEditMode"}], "originalName": "IsInEditMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsInEndMode"}], "originalName": "IsInEndMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsRenamingWorksheet"}], "originalName": "IsRenamingWorksheet"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsUndoEnabled"}], "originalName": "IsUndoEnabled"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "NameBoxWidth"}], "originalName": "NameBoxWidth"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetCellSelectionMode", "mappedName": "SelectionMode"}], "originalName": "SelectionMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "SelectedWorksheets"}], "originalName": "SelectedWorksheets"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "UndoManager"}], "originalName": "UndoManager"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "Point", "mappedName": "ValidationInputMessagePosition"}], "originalName": "ValidationInputMessagePosition"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Workbook"}], "originalName": "Workbook"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "ZoomLevel"}], "originalName": "ZoomLevel"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ContainerResized"}], "originalName": "ContainerResized"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExecuteAction"}], "originalName": "ExecuteCommand"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "Flush"}], "originalName": "Flush"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "StyleUpdated"}], "originalName": "StyleUpdated"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExportVisualData"}], "originalName": "ExportVisualData"}
-  ], 
-  "originalBaseTypeName": "PropertyChangeNotifierExtended", "originalBaseTypeNamespace": "Infragistics", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetContextMenuOpeningEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetContextMenuOpeningEventArgs.cs", "mappedName": "IgbSpreadsheetContextMenuOpeningEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetContextMenuArea", "mappedName": "MenuArea"}], "originalName": "MenuArea"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetActiveCellChangedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActiveCellChangedEventArgs.cs", "mappedName": "IgbSpreadsheetActiveCellChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "NewValue"}], "originalName": "NewValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "OldValue"}], "originalName": "OldValue"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetActivePaneChangedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActivePaneChangedEventArgs.cs", "mappedName": "IgbSpreadsheetActivePaneChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "NewValue"}], "originalName": "NewValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "OldValue"}], "originalName": "OldValue"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetActiveTableChangedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActiveTableChangedEventArgs.cs", "mappedName": "IgbSpreadsheetActiveTableChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "NewValue"}], "originalName": "NewValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "OldValue"}], "originalName": "OldValue"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetActiveWorksheetChangedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActiveWorksheetChangedEventArgs.cs", "mappedName": "IgbSpreadsheetActiveWorksheetChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "NewValue"}], "originalName": "NewValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "OldValue"}], "originalName": "OldValue"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetCommandExecutedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActionExecutedEventArgs.cs", "mappedName": "IgbSpreadsheetActionExecutedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetAction", "mappedName": "Command"}], "originalName": "Command"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "CommandParameter"}], "originalName": "CommandParameter"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetCommandExecutingEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetActionExecutingEventArgs.cs", "mappedName": "IgbSpreadsheetActionExecutingEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetAction", "mappedName": "Command"}], "originalName": "Command"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "CommandParameter"}], "originalName": "CommandParameter"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditModeExitingEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditModeExitingEventArgs.cs", "mappedName": "IgbSpreadsheetEditModeExitingEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AcceptChanges"}], "originalName": "AcceptChanges"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "CanCancel"}], "originalName": "CanCancel"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Cell"}], "originalName": "Cell"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "EditText"}], "originalName": "EditText"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditModeExitedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditModeExitedEventArgs.cs", "mappedName": "IgbSpreadsheetEditModeExitedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Cell"}], "originalName": "Cell"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditModeEnteringEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditModeEnteringEventArgs.cs", "mappedName": "IgbSpreadsheetEditModeEnteringEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Cell"}], "originalName": "Cell"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditModeEnteredEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditModeEnteredEventArgs.cs", "mappedName": "IgbSpreadsheetEditModeEnteredEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Cell"}], "originalName": "Cell"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditModeValidationErrorEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditModeValidationErrorEventArgs.cs", "mappedName": "IgbSpreadsheetEditModeValidationErrorEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetEditModeValidationErrorAction", "mappedName": "Action"}], "originalName": "Action"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "CanStayInEditMode"}], "originalName": "CanStayInEditMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Cell"}], "originalName": "Cell"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "ValidationRule"}], "originalName": "ValidationRule"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetEditRangePasswordNeededEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetEditRangePasswordNeededEventArgs.cs", "mappedName": "IgbSpreadsheetEditRangePasswordNeededEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Ranges"}], "originalName": "Ranges"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "Unprotect"}], "originalName": "Unprotect"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetHyperlinkExecutingEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetHyperlinkExecutingEventArgs.cs", "mappedName": "IgbSpreadsheetHyperlinkExecutingEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Hyperlink"}], "originalName": "Hyperlink"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "WorkingDirectory"}], "originalName": "WorkingDirectory"}
-  ], 
-  "originalBaseTypeName": "CancelEventArgs", "originalBaseTypeNamespace": "System.ComponentModel", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetSelectionChangedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetSelectionChangedEventArgs.cs", "mappedName": "IgbSpreadsheetSelectionChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "", "mappedName": "Pane"}], "originalName": "Pane"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetUserPromptDisplayingEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetUserPromptDisplayingEventArgs.cs", "mappedName": "IgbSpreadsheetUserPromptDisplayingEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "CanCancel"}], "originalName": "CanCancel"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "Cancel"}], "originalName": "Cancel"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Caption"}], "originalName": "Caption"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "DisplayMessage"}], "originalName": "DisplayMessage"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "Exception"}], "originalName": "Exception"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Message"}], "originalName": "Message"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "SpreadsheetUserPromptTrigger", "mappedName": "Trigger"}], "originalName": "Trigger"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}, {"originalName": "SpreadsheetWorkbookDirtiedEventArgs", 
-  "names": [
-    {"platform": "Blazor", "fileName": "SpreadsheetWorkbookDirtiedEventArgs.cs", "mappedName": "IgbSpreadsheetWorkbookDirtiedEventArgs"}
-  ], 
-  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grids.Core"}]}
+{"types":[
+  { "originalName":"Spreadsheet","names":[{"platform":"Blazor","fileName":"Spreadsheet.cs","mappedName":"IgbSpreadsheet"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsScrollLocked"}],"originalName":"IsScrollLocked"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ActiveCell"}],"originalName":"ActiveCell"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ActivePane"}],"originalName":"ActivePane"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ActiveSelection"}],"originalName":"ActiveSelection"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ActiveTable"}],"originalName":"ActiveTable"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ActiveWorksheet"}],"originalName":"ActiveWorksheet"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowAddWorksheet"}],"originalName":"AllowAddWorksheet"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowDeleteWorksheet"}],"originalName":"AllowDeleteWorksheet"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AreGridlinesVisible"}],"originalName":"AreGridlinesVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AreHeadersVisible"}],"originalName":"AreHeadersVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetCellEditMode","mappedName":"CellEditMode"}],"originalName":"CellEditMode"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ChartAdapter"}],"originalName":"ChartAdapter"},
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"EnterKeyNavigationDirection"}],"originalName":"EnterKeyNavigationDirection"},
+    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"FixedDecimalPlaceCount"}],"originalName":"FixedDecimalPlaceCount"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsEnterKeyNavigationEnabled"}],"originalName":"IsEnterKeyNavigationEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsFixedDecimalEnabled"}],"originalName":"IsFixedDecimalEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsFormulaBarVisible"}],"originalName":"IsFormulaBarVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsInEditMode"}],"originalName":"IsInEditMode"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsInEndMode"}],"originalName":"IsInEndMode"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsRenamingWorksheet"}],"originalName":"IsRenamingWorksheet"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsUndoEnabled"}],"originalName":"IsUndoEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NameBoxWidth"}],"originalName":"NameBoxWidth"},
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetCellSelectionMode","mappedName":"SelectionMode"}],"originalName":"SelectionMode"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"SelectedWorksheets"}],"originalName":"SelectedWorksheets"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"UndoManager"}],"originalName":"UndoManager"},
+    { "names":[{"platform":"Blazor","mappedType":"Point","mappedName":"ValidationInputMessagePosition"}],"originalName":"ValidationInputMessagePosition"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Workbook"}],"originalName":"Workbook"},
+    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"ZoomLevel"}],"originalName":"ZoomLevel"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ContainerResized"}],"originalName":"ContainerResized"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExecuteAction"}],"originalName":"ExecuteCommand"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualData"}],"originalName":"ExportVisualData"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetContextMenuOpeningEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetContextMenuOpeningEventArgs.cs","mappedName":"IgbSpreadsheetContextMenuOpeningEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetContextMenuArea","mappedName":"MenuArea"}],"originalName":"MenuArea"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetActiveCellChangedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActiveCellChangedEventArgs.cs","mappedName":"IgbSpreadsheetActiveCellChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"NewValue"}],"originalName":"NewValue"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"OldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetActivePaneChangedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActivePaneChangedEventArgs.cs","mappedName":"IgbSpreadsheetActivePaneChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"NewValue"}],"originalName":"NewValue"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"OldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetActiveTableChangedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActiveTableChangedEventArgs.cs","mappedName":"IgbSpreadsheetActiveTableChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"NewValue"}],"originalName":"NewValue"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"OldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetActiveWorksheetChangedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActiveWorksheetChangedEventArgs.cs","mappedName":"IgbSpreadsheetActiveWorksheetChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"NewValue"}],"originalName":"NewValue"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"OldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetCommandExecutedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActionExecutedEventArgs.cs","mappedName":"IgbSpreadsheetActionExecutedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetAction","mappedName":"Command"}],"originalName":"Command"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"CommandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetCommandExecutingEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetActionExecutingEventArgs.cs","mappedName":"IgbSpreadsheetActionExecutingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetAction","mappedName":"Command"}],"originalName":"Command"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"CommandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditModeExitingEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditModeExitingEventArgs.cs","mappedName":"IgbSpreadsheetEditModeExitingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AcceptChanges"}],"originalName":"AcceptChanges"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CanCancel"}],"originalName":"CanCancel"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Cell"}],"originalName":"Cell"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"EditText"}],"originalName":"EditText"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditModeExitedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditModeExitedEventArgs.cs","mappedName":"IgbSpreadsheetEditModeExitedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditModeEnteringEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditModeEnteringEventArgs.cs","mappedName":"IgbSpreadsheetEditModeEnteringEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Cell"}],"originalName":"Cell"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditModeEnteredEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditModeEnteredEventArgs.cs","mappedName":"IgbSpreadsheetEditModeEnteredEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditModeValidationErrorEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditModeValidationErrorEventArgs.cs","mappedName":"IgbSpreadsheetEditModeValidationErrorEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"Action"}],"originalName":"Action"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CanStayInEditMode"}],"originalName":"CanStayInEditMode"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Cell"}],"originalName":"Cell"},
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"ValidationRule"}],"originalName":"ValidationRule"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetEditRangePasswordNeededEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetEditRangePasswordNeededEventArgs.cs","mappedName":"IgbSpreadsheetEditRangePasswordNeededEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Ranges"}],"originalName":"Ranges"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Unprotect"}],"originalName":"Unprotect"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetHyperlinkExecutingEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetHyperlinkExecutingEventArgs.cs","mappedName":"IgbSpreadsheetHyperlinkExecutingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Hyperlink"}],"originalName":"Hyperlink"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"WorkingDirectory"}],"originalName":"WorkingDirectory"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetSelectionChangedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetSelectionChangedEventArgs.cs","mappedName":"IgbSpreadsheetSelectionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"","mappedName":"Pane"}],"originalName":"Pane"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetUserPromptDisplayingEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetUserPromptDisplayingEventArgs.cs","mappedName":"IgbSpreadsheetUserPromptDisplayingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CanCancel"}],"originalName":"CanCancel"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Cancel"}],"originalName":"Cancel"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Caption"}],"originalName":"Caption"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DisplayMessage"}],"originalName":"DisplayMessage"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Exception"}],"originalName":"Exception"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Message"}],"originalName":"Message"},
+    { "names":[{"platform":"Blazor","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"Trigger"}],"originalName":"Trigger"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+  { "originalName":"SpreadsheetWorkbookDirtiedEventArgs","names":[{"platform":"Blazor","fileName":"SpreadsheetWorkbookDirtiedEventArgs.cs","mappedName":"IgbSpreadsheetWorkbookDirtiedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"}]}

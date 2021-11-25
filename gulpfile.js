@@ -198,12 +198,28 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
-        fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
-        fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
-        fileContent = fileContent.split('{"names":').join('\n    {"names":');
-        fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
-        fileContent = fileContent.split(',').join(', ');
-        fileContent = fileContent.split(':').join(': ');
+        fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
+        fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
+        // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
+        // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
+        fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
+        fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
+        // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
+        // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
+        // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
+
+        var lines = fileContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].indexOf('"isVirtual":true,') >= 0) {
+                lines[i] = lines[i].replace('"isVirtual":true,', '');
+                lines[i] = lines[i].replace('"},', '", "isVirtual":true },');
+            }
+        }
+        fileContent = lines.join('\n');
+        fileContent = fileContent.split('"mappedType":"bool"').join('"mappedType":"bool"  ');
+        fileContent = fileContent.split('"mappedType":"int"' ).join('"mappedType":"int"   ');
+        // fileContent = fileContent.split(',').join(', ');
+        // fileContent = fileContent.split(':').join(': ');
 
         file.contents = Buffer.from(fileContent);
         fileCallback(null, file);

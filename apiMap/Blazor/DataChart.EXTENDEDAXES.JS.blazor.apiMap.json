@@ -1,111 +1,74 @@
-{"types": [{"originalName": "CategoryAngleAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "CategoryAngleAxis.cs", "mappedName": "IgbCategoryAngleAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "StartAngleOffset"}], "originalName": "StartAngleOffset"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Interval"}], "originalName": "Interval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "ActualInterval"}], "originalName": "ActualInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MinorInterval"}], "originalName": "MinorInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "ActualMinorInterval"}], "originalName": "ActualMinorInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"}
-  ], 
-  "originalBaseTypeName": "CategoryAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CategoryDateTimeXAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "CategoryDateTimeXAxis.cs", "mappedName": "IgbCategoryDateTimeXAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "TimeAxisDisplayType", "mappedName": "DisplayType"}], "originalName": "DisplayType"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "long", "mappedName": "Interval"}], "originalName": "Interval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "long", "mappedName": "ActualInterval"}], "originalName": "ActualInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "long", "mappedName": "MinorInterval"}], "originalName": "MinorInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "long", "mappedName": "ActualMinorInterval"}], "originalName": "ActualMinorInterval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"}
-  ], 
-  "originalBaseTypeName": "TimeAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "NumericAngleAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "NumericAngleAxis.cs", "mappedName": "IgbNumericAngleAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "StartAngleOffset"}], "originalName": "StartAngleOffset"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetScaledAngle"}], "originalName": "GetScaledAngle"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetUnscaledAngle"}], "originalName": "GetUnscaledAngle"}
-  ], 
-  "originalBaseTypeName": "NumericAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "NumericRadiusAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "NumericRadiusAxis.cs", "mappedName": "IgbNumericRadiusAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "RadiusExtentScale"}], "originalName": "RadiusExtentScale"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "InnerRadiusExtentScale"}], "originalName": "InnerRadiusExtentScale"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetScaledValue3"}], "originalName": "GetScaledValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetUnscaledValue3"}], "originalName": "GetUnscaledValue"}
-  ], 
-  "originalBaseTypeName": "NumericAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "OrdinalTimeXAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "OrdinalTimeXAxis.cs", "mappedName": "IgbOrdinalTimeXAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DateTimeMemberPath"}], "originalName": "DateTimeMemberPath"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "TimeAxisLabellingMode", "mappedName": "LabellingMode"}], "originalName": "LabellingMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "IgbTimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}], "originalName": "LabelFormats"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MinimumValue"}], "originalName": "MinimumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MaximumValue"}], "originalName": "MaximumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetValueLabel"}], "originalName": "GetValueLabel"}
-  ], 
-  "originalBaseTypeName": "CategoryXAxis", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PercentChangeYAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "PercentChangeYAxis.cs", "mappedName": "IgbPercentChangeYAxis"}
-  ], 
-  "members": [], "originalBaseTypeName": "NumericYAxis", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "TimeAxisBase", 
-  "names": [
-    {"platform": "Blazor", "fileName": "TimeAxisBase.cs", "mappedName": "IgbTimeAxisBase"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DateTimeMemberPath"}], "originalName": "DateTimeMemberPath"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsDataPreSorted"}], "originalName": "IsDataPreSorted"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "ActualMinimumValue"}], "originalName": "ActualMinimumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "ActualMaximumValue"}], "originalName": "ActualMaximumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MinimumValue"}], "originalName": "MinimumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MaximumValue"}], "originalName": "MaximumValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetItemValue"}], "originalName": "GetItemValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyDataChanged"}], "originalName": "NotifyDataChanged"}
-  ], 
-  "originalBaseTypeName": "CategoryAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "TimeAxisBreak", 
-  "names": [
-    {"platform": "Blazor", "fileName": "TimeAxisBreak.cs", "mappedName": "IgbTimeAxisBreak"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "Start"}], "originalName": "Start"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "End"}], "originalName": "End"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "TimeSpan", "mappedName": "Interval"}], "originalName": "Interval"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "TimeAxisInterval", 
-  "names": [
-    {"platform": "Blazor", "fileName": "TimeAxisInterval.cs", "mappedName": "IgbTimeAxisInterval"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "TimeSpan", "mappedName": "Range"}], "originalName": "Range"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Interval"}], "originalName": "Interval"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "TimeAxisIntervalType", "mappedName": "IntervalType"}], "originalName": "IntervalType"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "TimeAxisLabelFormat", 
-  "names": [
-    {"platform": "Blazor", "fileName": "TimeAxisLabelFormat.cs", "mappedName": "IgbTimeAxisLabelFormat"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "TimeSpan", "mappedName": "Range"}], "originalName": "Range"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Format"}], "originalName": "Format"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "RepeatedYearFormat"}], "originalName": "RepeatedYearFormat"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "RepeatedMonthFormat"}], "originalName": "RepeatedMonthFormat"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "RepeatedDayFormat"}], "originalName": "RepeatedDayFormat"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "TimeXAxis", 
-  "names": [
-    {"platform": "Blazor", "fileName": "TimeXAxis.cs", "mappedName": "IgbTimeXAxis"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Blazor", "mappedType": "IgbTimeAxisBreakCollection", "mappedName": "Breaks"}], "originalName": "Breaks"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "TimeAxisLabellingMode", "mappedName": "LabellingMode"}], "originalName": "LabellingMode"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "IgbTimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}], "originalName": "LabelFormats"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "IgbTimeAxisIntervalCollection", "mappedName": "Intervals"}], "originalName": "Intervals"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetValueLabel"}], "originalName": "GetValueLabel"}, 
-    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetIndexClosestToUnscaledValue"}], "originalName": "GetIndexClosestToUnscaledValue"}
-  ], 
-  "originalBaseTypeName": "TimeAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}
+{"types":[
+  { "originalName":"CategoryAngleAxis","names":[{"platform":"Blazor","fileName":"CategoryAngleAxis.cs","mappedName":"IgbCategoryAngleAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartAngleOffset"}],"originalName":"StartAngleOffset"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualInterval"}],"originalName":"ActualInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorInterval"}],"originalName":"MinorInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledAngle"}],"originalName":"GetScaledAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategoryDateTimeXAxis","names":[{"platform":"Blazor","fileName":"CategoryDateTimeXAxis.cs","mappedName":"IgbCategoryDateTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"TimeAxisDisplayType","mappedName":"DisplayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"Blazor","mappedType":"long","mappedName":"Interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"Blazor","mappedType":"long","mappedName":"ActualInterval"}],"originalName":"ActualInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"long","mappedName":"MinorInterval"}],"originalName":"MinorInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"long","mappedName":"ActualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"NumericAngleAxis","names":[{"platform":"Blazor","fileName":"NumericAngleAxis.cs","mappedName":"IgbNumericAngleAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartAngleOffset"}],"originalName":"StartAngleOffset"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledAngle"}],"originalName":"GetScaledAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"NumericRadiusAxis","names":[{"platform":"Blazor","fileName":"NumericRadiusAxis.cs","mappedName":"IgbNumericRadiusAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusExtentScale"}],"originalName":"RadiusExtentScale"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerRadiusExtentScale"}],"originalName":"InnerRadiusExtentScale"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledValue3"}],"originalName":"GetScaledValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"OrdinalTimeXAxis","names":[{"platform":"Blazor","fileName":"OrdinalTimeXAxis.cs","mappedName":"IgbOrdinalTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"TimeAxisLabellingMode","mappedName":"LabellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbTimeAxisLabelFormatCollection","mappedName":"LabelFormats"}],"originalName":"LabelFormats"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetValueLabel"}],"originalName":"GetValueLabel"}],"originalBaseTypeName":"CategoryXAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PercentChangeYAxis","names":[{"platform":"Blazor","fileName":"PercentChangeYAxis.cs","mappedName":"IgbPercentChangeYAxis"}],"members":[],"originalBaseTypeName":"NumericYAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisBase","names":[{"platform":"Blazor","fileName":"TimeAxisBase.cs","mappedName":"IgbTimeAxisBase"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsDataPreSorted"}],"originalName":"IsDataPreSorted"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"ActualMinimumValue"}],"originalName":"ActualMinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"ActualMaximumValue"}],"originalName":"ActualMaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyDataChanged"}],"originalName":"NotifyDataChanged"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisBreak","names":[{"platform":"Blazor","fileName":"TimeAxisBreak.cs","mappedName":"IgbTimeAxisBreak"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"Start"}],"originalName":"Start"},
+    { "names":[{"platform":"Blazor","mappedType":"DateTime","mappedName":"End"}],"originalName":"End"},
+    { "names":[{"platform":"Blazor","mappedType":"TimeSpan","mappedName":"Interval"}],"originalName":"Interval"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisInterval","names":[{"platform":"Blazor","fileName":"TimeAxisInterval.cs","mappedName":"IgbTimeAxisInterval"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"TimeSpan","mappedName":"Range"}],"originalName":"Range"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"Blazor","mappedType":"TimeAxisIntervalType","mappedName":"IntervalType"}],"originalName":"IntervalType"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisLabelFormat","names":[{"platform":"Blazor","fileName":"TimeAxisLabelFormat.cs","mappedName":"IgbTimeAxisLabelFormat"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"TimeSpan","mappedName":"Range"}],"originalName":"Range"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Format"}],"originalName":"Format"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RepeatedYearFormat"}],"originalName":"RepeatedYearFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RepeatedMonthFormat"}],"originalName":"RepeatedMonthFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RepeatedDayFormat"}],"originalName":"RepeatedDayFormat"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeXAxis","names":[{"platform":"Blazor","fileName":"TimeXAxis.cs","mappedName":"IgbTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbTimeAxisBreakCollection","mappedName":"Breaks"}],"originalName":"Breaks"},
+    { "names":[{"platform":"Blazor","mappedType":"TimeAxisLabellingMode","mappedName":"LabellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbTimeAxisLabelFormatCollection","mappedName":"LabelFormats"}],"originalName":"LabelFormats"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbTimeAxisIntervalCollection","mappedName":"Intervals"}],"originalName":"Intervals"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetValueLabel"}],"originalName":"GetValueLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
