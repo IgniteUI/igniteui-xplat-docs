@@ -4,7 +4,7 @@ The List element is extremely useful when presenting a group of items. You can c
 
 ## $Platform$ List Example
 
-The following example represents a list populated with contacts with a name and a phone number properties. The [`Ig$List`]({environment:wcApiUrl}/classes/IgcListComponent.html) component uses [`Ig$Avatar`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) and [`Ig$Button`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
+The following example represents a list populated with contacts with a name and a phone number properties. The [`IgcList`]({environment:wcApiUrl}/classes/IgcListComponent.html) component uses [`IgcAvatar`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) and [`IgcButton`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -36,7 +36,7 @@ To get started with the list Web component, first you need to install Ignite UI 
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Ig$ListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `IgcListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -133,7 +133,7 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 </IgbList>
 ```
 
-Both slots `title` and `subtitle` give our items in [`Ig$ListItemComponent`]({environment:wcApiUrl}/classes/IgcListItemComponent.html) some default look.
+Both slots `title` and `subtitle` give our [`list items`]({environment:wcApiUrl}/classes/IgcListItemComponent.html) some default look.
 
 After all that our list component should now look like that:
 

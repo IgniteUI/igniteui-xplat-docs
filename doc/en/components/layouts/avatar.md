@@ -35,7 +35,7 @@ IgbAvatarModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the [`Ig$AvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
