@@ -191,6 +191,23 @@ function updateApiFor(platformName) {
     return gulp.src([
         fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json"
     ])
+    .pipe(es.map(function(file, fileCallback) {
+        var jsonContent = file.contents.toString();
+        let jsonNodes = JSON.parse(jsonContent);
+        // let fileContent = JSON.stringify(jsonNodes,  null, '  ');
+        // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
+        let fileContent = JSON.stringify(jsonNodes);
+        // changing JSON format to pretty-compact
+        fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
+        fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
+        fileContent = fileContent.split('{"names":').join('\n    {"names":');
+        fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
+        fileContent = fileContent.split(',').join(', ');
+        fileContent = fileContent.split(':').join(': ');
+
+        file.contents = Buffer.from(fileContent);
+        fileCallback(null, file);
+    }))
     .pipe(flatten())
     .pipe(gulp.dest("apiMap/" + platformName));
 }
