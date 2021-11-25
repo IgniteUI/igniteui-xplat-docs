@@ -287,18 +287,18 @@ public getRandomItem(array: any[]): any {
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DefaultColumnMinWidth="120"
     AutoGenerateColumns="false"
     DataSource="DataSource">
-    <TextColumn Field="FirstName" HeaderText="First Name" />
-    <TextColumn Field="LastName" HeaderText="Last Name" />
-    <ComboBoxColumn Field="City" />
-    <TemplateColumn Field="Address" HeaderText="Address" CellUpdatingScript="onUpdatingAddressColumn" />
-    <ImageColumn Field="Photo" HeaderText="Photo" />
-    <NumericColumn Field="Age" HeaderText="Age" />
-    <DateTimeColumn Field="Birthday" HeaderText="Date of Birth" />
-</DataGrid>
+    <IgbTextColumn Field="FirstName" HeaderText="First Name" />
+    <IgbTextColumn Field="LastName" HeaderText="Last Name" />
+    <IgbComboBoxColumn Field="City" />
+    <IgbTemplateColumn Field="Address" HeaderText="Address" CellUpdatingScript="onUpdatingAddressColumn" />
+    <IgbImageColumn Field="Photo" HeaderText="Photo" />
+    <IgbNumericColumn Field="Age" HeaderText="Age" />
+    <IgbDateTimeColumn Field="Birthday" HeaderText="Date of Birth" />
+</IgbDataGrid>
 
 // In JS file:
 function onUpdatingAddressColumn(grid, args) {

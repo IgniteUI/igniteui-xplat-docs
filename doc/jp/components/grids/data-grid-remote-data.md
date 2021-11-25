@@ -22,6 +22,7 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 <div class="divider--half"></div>
 
 
+
 <!-- Angular, React, WebComponents -->
 コア パッケージとグリッド パッケージに加えて、データソース パッケージもインストールする必要があります。
 
@@ -37,7 +38,7 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 `Grid` を作成するには、以下のモジュールが必要です。
 
 ```razor
-DataGridModule.Register(IgniteUIBlazor);
+IgbDataGridModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

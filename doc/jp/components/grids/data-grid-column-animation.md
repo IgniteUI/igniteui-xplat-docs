@@ -64,7 +64,7 @@ $ProductName$ Data Table / Data Grid は、列の非表示や列の移動など�
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     ColumnAddingAnimationMode="ColumnShowingAnimationMode.SlideFromLeft"
     ColumnExchangingAnimationMode="ColumnExchangingAnimationMode.SlideToRight"

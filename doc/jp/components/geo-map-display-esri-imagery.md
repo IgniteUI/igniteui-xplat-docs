@@ -70,14 +70,14 @@ geoMap.backgroundContent = tileSource;
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%"
+<IgbGeographicMap Height="100%" Width="100%"
     Zoomable="true"
     BackgroundContent="EsriImagery" />
 
 protected override void OnInitialized()
 {
-    GeographicMapModule.Register(IgniteUIBlazor);
-    ArcGISOnlineMapImagery imagery = new ArcGISOnlineMapImagery()
+    IgbGeographicMapModule.Register(IgniteUIBlazor);
+    IgbArcGISOnlineMapImagery imagery = new IgbArcGISOnlineMapImagery()
     {
         MapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer"
     };
@@ -130,14 +130,14 @@ geoMap.backgroundContent = tileSource;
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%"
+<IgbGeographicMap Height="100%" Width="100%"
     Zoomable="true"
     BackgroundContent="EsriImagery" />
 
 protected override void OnInitialized()
 {
-    GeographicMapModule.Register(IgniteUIBlazor);
-    ArcGISOnlineMapImagery imagery = new ArcGISOnlineMapImagery()
+    IgbGeographicMapModule.Register(IgniteUIBlazor);
+    IgbArcGISOnlineMapImagery imagery = new IgbArcGISOnlineMapImagery()
     {
         MapServerUri = EsriStyle.WorldOceansMap
     };
@@ -145,3 +145,4 @@ protected override void OnInitialized()
     this.EsriImagery = imagery;
 }
 ```
+

@@ -105,7 +105,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();
@@ -138,10 +138,10 @@ this.geoMap.series.add(lineSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
         ShapeStroke="rgba(196, 14, 14, 0.05)" ShapeStrokeThickness="4" />
-</GeographicMap>
+</IgbGeographicMap>
 ```
 
 ## グリッド線のオーバーレイ
@@ -169,10 +169,10 @@ this.geoMap.series.add(gridSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
         ShapeStroke="Gray" ShapeStrokeThickness="1" />
-</GeographicMap>
+</IgbGeographicMap>
 ```
 
 ## 空港のオーバーレイ
@@ -202,11 +202,11 @@ this.geoMap.series.add(symbolSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon" MarkerType="MarkerType.Circle"
         MarkerBrush="#AAD3DF" MarkerOutline="Black" Thickness="1" />
-</GeographicMap>
+</IgbGeographicMap>
 ```
 
 ## まとめ
@@ -293,16 +293,16 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
         ShapeStroke="rgba(196, 14, 14, 0.05)" ShapeStrokeThickness="4" />
-    <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
+    <IgbGeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
         ShapeStroke="Gray" ShapeStrokeThickness="1">
-    </GeographicPolylineSeries>
-    <GeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
+    </IgbGeographicPolylineSeries>
+    <IgbGeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon" MarkerType="MarkerType.Circle"
         MarkerBrush="#AAD3DF" MarkerOutline="Black" Thickness="1" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -312,7 +312,7 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();

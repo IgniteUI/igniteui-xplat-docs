@@ -37,19 +37,25 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "アバター",
     "href": "layouts/avatar.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "バッジ",
     "href": "inputs/badge.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
+    "name": "アイコン",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "カード",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -101,18 +107,18 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "メニュー",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "ナビゲーション バー",
     "href": "menus/navbar.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "ナビゲーション ドロワー",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
@@ -141,7 +147,7 @@
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "リスト",
     "href": "grids/list.md",
     "status": "NEW"
@@ -253,7 +259,7 @@
         "status": ""
       },
       {
-        "name": "列の並べ替え",
+        "name": "列のソート",
         "href": "grids/data-grid-column-sorting.md",
         "status": ""
       },
@@ -1312,48 +1318,54 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "フォーム",
     "href": "inputs/form.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "ボタン",
     "href": "inputs/button.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "アイコン ボタン",
+    "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "ラジオ & ラジオ グループ",
     "href": "inputs/radio.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "チェックボックス",
     "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "スイッチ",
     "href": "inputs/switch.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "リップル",
     "href": "inputs/ripple.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "スケジュール",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "カレンダー",
     "href": "scheduling/calendar.md",
     "status": "NEW"

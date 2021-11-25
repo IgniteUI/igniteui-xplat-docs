@@ -82,13 +82,13 @@ public onCommitClick(){
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%" @ref="DataGridRef"
+<IgbDataGrid Height="100%" Width="100%" @ref="DataGridRef"
     DataSource="DataSource"
     EditMode="EditModeType.CellBatch" />
 <button @onclick="OnCommitClick">Commit Data</button>
 
 @code {
-    public DataGrid DataGridRef;
+    public IgbDataGrid DataGridRef;
 
     private void OnCommitClick(MouseEventArgs e)
     {
@@ -158,14 +158,14 @@ public onRedoClick(){
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%" @ref="DataGridRef"
+<IgbDataGrid Height="100%" Width="100%" @ref="DataGridRef"
     DataSource="DataSource"
     EditMode="EditModeType.CellBatch" />
 <button @onclick="OnUndoClick">Undo</button>
 <button @onclick="OnRedoClick">Redo</button>
 
 @code {
-    public DataGrid DataGridRef;
+    public IgbDataGrid DataGridRef;
 
     private void OnUndoClick(MouseEventArgs e)
     {
@@ -277,16 +277,16 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     CellValueChanging="OnCellValueChanging"
     DataCommitting="OnDataCommitting">
- </DataGrid>
+ </IgbDataGrid>
 
 @code {
-    public DataGrid DataGridRef;
+    public IgbDataGrid DataGridRef;
 
-    public void OnCellValueChanging(GridCellValueChangingEventArgs e)
+    public void OnCellValueChanging(IgbGridCellValueChangingEventArgs e)
     {
         //check if value is empty upon exiting edit mode.
         if(e.NewValue == "")
@@ -301,7 +301,7 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
         }
     }
 
-    public void OnDataCommitting(GridDataCommittingEventArgs e)
+    public void OnDataCommitting(IgbGridDataCommittingEventArgs e)
     {
         if(e.Changes[0].TransactionType == TransactionType.Update)
         {

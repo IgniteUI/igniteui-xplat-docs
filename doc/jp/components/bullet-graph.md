@@ -43,7 +43,7 @@ npm install --save {PackageGauges}
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
 ```razor
-BulletGraphModule.Register(IgniteUIBlazor);
+IgbBulletGraphModule.Register(IgniteUIBlazor);
 ```
 
 <!-- Angular, React, WebComponents -->
@@ -155,19 +155,19 @@ ModuleManager.register(
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
-<LinearGraphRange StartValue="0"
+<IgbLinearGraphRange StartValue="0"
   EndValue="15"
   Brush="#828181" />
-<LinearGraphRange StartValue="15"
+<IgbLinearGraphRange StartValue="15"
   EndValue="30"
   Brush="#AAAAAA" />
-<LinearGraphRange StartValue="30"
+<IgbLinearGraphRange StartValue="30"
   EndValue="55"
   Brush="#D0D0D0" />
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 <div class="divider--half"></div>
@@ -238,7 +238,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
 
@@ -255,7 +255,7 @@ MaximumValue="55" TargetValue="43">
     TargetValueStrokeThickness="1"
     TargetValueInnerExtent="0.3"
     TargetValueOuterExtent="0.85">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -341,35 +341,35 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="80" Interval="10"
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange
+<IgbLinearGraphRange
   StartValue="0"
   EndValue="40"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange
+</IgbLinearGraphRange>
+<IgbLinearGraphRange
   StartValue="40"
   EndValue="70"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange StartValue="70"
+</IgbLinearGraphRange>
+<IgbLinearGraphRange StartValue="70"
   EndValue="100"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-</BulletGraph>
+</IgbLinearGraphRange>
+</IgbBulletGraph>
 ```
 
 
@@ -443,7 +443,7 @@ MaximumValue="55" TargetValue="43">
   </igc-bullet-graph>
 ```
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"
     MaximumValue="100" TargetValue="90"
 
@@ -459,7 +459,7 @@ MaximumValue="55" TargetValue="43">
     MinorTickEndExtent="0.1"
     MinorTickStartExtent="0.2"
     MinorTickStrokeThickness="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -514,7 +514,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   LabelInterval="10"
@@ -523,7 +523,7 @@ MaximumValue="55" TargetValue="43">
   LabelsPostInitial="0"
   FontBrush="DodgerBlue"
   Font="11px Verdana">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -575,7 +575,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   BackingBrush="#BDDCFC"
@@ -583,7 +583,7 @@ MaximumValue="55" TargetValue="43">
   BackingStrokeThickness="4"
   BackingInnerExtent="0"
   BackingOuterExtent="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -638,7 +638,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   IsScaleInverted="false"
@@ -647,7 +647,7 @@ MaximumValue="55" TargetValue="43">
   ScaleBackgroundThickness="2"
   ScaleStartExtent="0.05"
   ScaleEndExtent="0.95">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 <code-view style="height: 125px"
@@ -873,7 +873,7 @@ MaximumValue="55" TargetValue="43">
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="50" Interval="10"
     MaximumValue="100" TargetValue="90"
     IsScaleInverted="false"
@@ -919,20 +919,20 @@ MaximumValue="55" TargetValue="43">
     MinorTickEndExtent="0.1"
     MinorTickStartExtent="0.2"
     MinorTickStrokeThickness="1"
-
+    
     RangeBrushes="#C62828,#F96232,#FF9800"
     RangeOutlines="#C62828,#F96232,#FF9800">
-    <LinearGraphRange StartValue="20" EndValue="40"
+    <IgbLinearGraphRange StartValue="20" EndValue="40"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="40" EndValue="60"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="40" EndValue="60"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="60" EndValue="90"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="60" EndValue="90"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9 OuterEndExtent="0.9">
-    </LinearGraphRange>
-</BulletGraph>
+    </IgbLinearGraphRange>
+</IgbBulletGraph>
 ```

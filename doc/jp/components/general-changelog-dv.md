@@ -21,28 +21,78 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ## **$Platform$ {PackageVerChanges-21-2}**
 
+<!-- Blazor -->
+
+> [!NOTE]
+> 'Igb' は、すべてのコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+>
+>例:
+>
+>`<IgbDataGrid>`
+>
+>   `<IgbTextColumn Field="ProductID" />`
+>
+>`</IgbDataGrid>`
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
+> [!Note]
+> パッケージ「lit-html」を確認してください。最適な互換性のために、「^2.0.0」以降がプロジェクトに追加されます。
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, WebComponents -->
+### 新しいコンポーネント
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Calendar](scheduling/calendar.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navbar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+<!-- end: Blazor, WebComponents -->
+
+<div class="divider--half"></div>
+
 ### チャートとマップ
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
-* `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ `AxisLabelLocation` を `YAxisLabelLocation` に変更しました。
+* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプ **AxisLabelLocation** を **YAxisLabelLocation** に変更しました。
+* `FinancialChart` の `XAxisLabelLocation` プロパティのタイプ **AxisLabelLocation** を **XAxisLabelLocation** に変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
 * Legend で `XamGeographicMap` の地理的シリーズを表すためのサポートを追加しました。
 * `FinancialChart` と `CategoryChart` にデフォルトで十字線を追加しました。
 * `FinancialChart`と `CategoryChart` にデフォルトで十字線注釈を追加しました。
 * デフォルトで `FinancialChart` に最終値の注釈を追加しました。
-* 新しいプロパティを追加しました:
-   - 十字線のカスタマイズを可能にする CrosshairsLine*
-   - 十字線の注釈のカスタマイズを可能にする CrosshairsAnnotation*
-   - 最終値の注釈のカスタマイズを可能にする FinalValueAnnotations*
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
+   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
+   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
+   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
    - 塗りつぶしの図形の不透明度の変更を可能にする (エリア チャートなど) `AreaFillOpacity`
    - マーカーの厚さの変更を可能にする `MarkerThickness`
+* カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
    - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てるを可能にする `MarkerAutomaticBehavior`
-   - 凡例で表されるすべてのシリーズの図形を設定するためのチャートの `LegendItemBadgeShape`
-   - すべての凡例項目バッジの簡略化または複雑な図形を設定するためのチャートの `LegendItemBadgeMode`
-   - 凡例で表されるシリーズの図形を設定するためのシリーズ `LegendItemBadgeShape`
-   - 1 つの凡例項目バッジの簡略化または複雑な図形を設定するためのシリーズの `LegendItemBadgeMode`
+   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+* データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
+   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 * カテゴリ チャートとシリーズのデフォルトの垂直十字線ストロークを <span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 * 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
@@ -52,6 +102,24 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
 
+<!-- Blazor, React, WebComponents -->
+
+### DataGrid
+
+* 新規機能:
+    - [列フィルタリング](grids/data-grid-column-filtering.md)
+    - [レイアウトのカスタマイズの読み込みと保存](grids/data-grid-load-save-layout.md)
+    - [列をグループ化するための GroupBy 地域](grids/data-grid-row-grouping.md)
+    - [セルの結合](grids/data-grid-cell-merging.md)
+* 新規 API:
+    - `SelectionChanged` イベントを追加しました。複数行の選択など、選択の相互作用の変化を検出するために使用されます。
+* 重大な変更:
+    - `GridSummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
+    - `GroupHeaderDisplayMode` プロパティのタイプを DataSourceSectionHeaderDisplayMode から `GroupHeaderDisplayMode` に変更しました。
+
+<!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
 
 ## **$Platform$ {PackageVerChanges-21-1}**
 

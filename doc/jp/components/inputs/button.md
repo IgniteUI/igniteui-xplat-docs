@@ -16,7 +16,7 @@ Ignite UI for Web Components ボタンは、実現したい外観と機能に一
 開始するには、typescript ファイルに [`IgcButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
-import { IgcButtonComponent, defineComponents } from 'igniteui-webcomponents'; 
+import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcButtonComponent);
 ```
@@ -44,16 +44,16 @@ defineComponents(IgcButtonComponent);
 
 ## Button のバリアント
 
-### Flat ボタン
+### Contained ボタン
 
 [`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
-<igc-button variant="flat">Flat</igc-button>
+<igc-button variant="contained">Contained</igc-button>
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
 </iframe></div>
 
 ### Outlined ボタン
@@ -68,16 +68,16 @@ defineComponents(IgcButtonComponent);
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
 </iframe></div>
 
-### Contained ボタン
+### Flat ボタン
 
-同様に、`contained` バリアントに切り替えることができます。
+同様に、`flat` バリアントに切り替えることができます。
 
 ```html
-<igc-button variant="contained">Contained</igc-button>
+<igc-button variant="flat">Flat</igc-button>
 ```
 
 <div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
 </iframe></div>
 
 ### Floating Action ボタン
@@ -104,8 +104,8 @@ defineComponents(IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent);
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
     <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
-    <igc-radio name="size" value="medium" label-position="after">Medium</igc-radio>
-    <igc-radio name="size" value="large" label-position="after" checked>Large</igc-radio>
+    <igc-radio name="size" value="medium" label-position="after" checked>Medium</igc-radio>
+    <igc-radio name="size" value="large" label-position="after">Large</igc-radio>
 </igc-radio-group>
 ```
 
@@ -121,7 +121,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.flatButton.size = radio.target.value;
     this.containedButton.size = radio.target.value;
     this.fabButton.size = radio.target.value;
-});        
+});
 ```
 
 結果は以下のようになります。
@@ -130,7 +130,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
            alt="$Platform$ Button のサイズ設定"
-           github-src="/inputs/button/size">
+           github-src="inputs/button/size">
 </code-view>
 
 ### ダウンロード
@@ -157,9 +157,9 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 ```css
 igc-button::part(base) {
-    background-color: #0099ff;
-    color: #3f51b5;
-    padding: 12px;
+    background-color: #e99221;
+    color: #011627;
+    padding: 18px;
 }
 ```
 
@@ -167,7 +167,7 @@ igc-button::part(base) {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
            alt="$Platform$ Button スタイル設定の例"
-           github-src="/inputs/button/styling">
+           github-src="inputs/button/styling">
 </code-view>
 
 ## API リファレンス

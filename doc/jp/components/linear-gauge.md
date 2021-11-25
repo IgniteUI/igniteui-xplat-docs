@@ -40,7 +40,7 @@ npm install --save {PackageGauges}
 `XamLinearGauge` を作成するには、以下のモジュールが必要です。
 
 ```razor
-LinearGaugeModule.Register(IgniteUIBlazor);
+IgbLinearGaugeModule.Register(IgniteUIBlazor);
 ```
 
 
@@ -142,22 +142,22 @@ ModuleManager.register(
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="5"
         MaximumValue="55"
         Value="43" >
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="15"
             Brush="red" >
-    </LinearGraphRange>
-     <LinearGraphRange StartValue="15"
+    </IgbLinearGraphRange>
+     <IgbLinearGraphRange StartValue="15"
             EndValue="30"
             Brush="yellow">
-    <LinearGraphRange StartValue="30"
+    <IgbLinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
 <div class="divider--half"></div>
@@ -235,7 +235,7 @@ ModuleManager.register(
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsNeedleDraggingEnabled="true"
@@ -252,7 +252,7 @@ ModuleManager.register(
     NeedleOuterPointWidth="0.3"
     NeedleInnerBaseWidth="0"
     NeedleOuterBaseWidth="0.07">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -324,26 +324,26 @@ ModuleManager.register(
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="0" Value="50"
         MaximumValue="100" Interval="10"
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="50"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.25"
             OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
             EndValue="100"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.4"
             OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
 
@@ -420,7 +420,7 @@ ModuleManager.register(
 ```
 
 ```razor
- <LinearGauge Height="80px" Width="100%"
+ <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     TickBrush="DodgerBlue"
@@ -434,7 +434,7 @@ ModuleManager.register(
     MinorTickEndExtent="0.05"
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 <code-view style="height: 125px"
@@ -487,7 +487,7 @@ ModuleManager.register(
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     LabelInterval="10"
@@ -496,7 +496,7 @@ ModuleManager.register(
     LabelsPostInitial="0"
     FontBrush="DodgerBlue"
     Font="11px Verdana">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -548,7 +548,7 @@ ModuleManager.register(
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
     Value="50"
@@ -558,7 +558,7 @@ ModuleManager.register(
     BackingStrokeThickness="4"
     BackingInnerExtent="0"
     BackingOuterExtent="1">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -618,7 +618,7 @@ ModuleManager.register(
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsScaleInverted="false"
@@ -629,7 +629,7 @@ ModuleManager.register(
     ScaleOuterExtent="0.65"
     ScaleStartExtent="0.05"
     ScaleEndExtent="0.95">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
 
@@ -860,7 +860,7 @@ ModuleManager.register(
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="0"
         MaximumValue="100"
 
@@ -918,19 +918,19 @@ ModuleManager.register(
 
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
                 EndValue="50"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.25"
                 OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
                 EndValue="100"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.4"
                 OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```

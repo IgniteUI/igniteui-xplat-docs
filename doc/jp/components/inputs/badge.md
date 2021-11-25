@@ -9,7 +9,32 @@ _language: ja
 
 $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
+<div class="divider"></div>
+
+## $Platform$ Badge の例
+
+<code-view style="height: 50px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
+           alt="$Platform$ Badge の例"
+           github-src="inputs/badge/outlined">
+</code-view>
+
+<div class="divider"></div>
+
 ## 使用方法
+
+<!-- Blazor -->
+
+`IgbBadge` コンポーネントの使用を開始するには、最初に `IgbBadgeModule` を登録する必要があります。
+
+```razor
+IgbBadgeModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 バッジ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
@@ -25,10 +50,26 @@ import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
 defineComponents(IgcBadgeComponent);
 ```
 
+<!-- end: WebComponents -->
+
 バッジの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-badge></igc-badge>
+```
+
+```razor
+<IgbBadge />
+```
+
+バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
+
+```html
+<igc-badge outlined></igc-badge>
+```
+
+```razor
+<IgbBadge Outlined="true" />
 ```
 
 ## 例
@@ -39,6 +80,10 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 
 ```html
 <igc-badge variant="success"></igc-badge>
+```
+
+```razor
+<IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
 <code-view style="height: 50px"
@@ -56,28 +101,16 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <igc-badge shape="square"></igc-badge>
 ```
 
+```razor
+<IgbBadge Shape="@BadgeShape.Square" />
+```
+
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
            alt="$Platform$ Badge の例"
            github-src="inputs/badge/shape">
 </code-view>
-
-### アウトライン
-
-バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
-
-```html
-<igc-badge outlined></igc-badge>
-```
-
-<code-view style="height: 50px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge の例"
-           github-src="inputs/badge/outlined">
-</code-view>
-
 
 ## スタイル設定
 

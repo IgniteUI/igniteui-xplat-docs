@@ -253,11 +253,11 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、`FinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
 
 ```razor
-<FinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
+<IgbFinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
 
-<DataChart >
-    <CategoryXAxis Label="Time" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Label="Time" />
+</IgbDataChart>
 ```
 
 ```html
@@ -293,14 +293,14 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸の主間隔を設定する方法を示しています。
 
 ```razor
-<CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
+<IgbCategoryChart  XAxisInterval="5" YAxisInterval="50"/>
 
-<FinancialChart XAxisInterval="5" YAxisInterval="50"/>
+<IgbFinancialChart XAxisInterval="5" YAxisInterval="50"/>
 
-<DataChart >
-    <CategoryXAxis Name="xAxis" Interval="5" />
-    <NumericYAxis  Name="yAxis" Interval="50" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Name="xAxis" Interval="5" />
+    <IgbNumericYAxis  Name="yAxis" Interval="50" />
+</IgbDataChart>
 ```
 
 ```html
@@ -347,20 +347,20 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸ラベルを非表示にする方法を示しています。
 
 ```razor
-<CategoryChart
+<IgbCategoryChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</CategoryChart>
+</IgbCategoryChart>
 
-<FinancialChart
+<IgbFinancialChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</FinancialChart>
+</IgbFinancialChart>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
-    <NumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
+    <IgbNumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
+</IgbDataChart>
 ```
 
 ```html
@@ -407,13 +407,13 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸のタイトルを設定する方法を示しています。
 
 ```razor
-<CategoryChart  YAxisTitle="In millions of Dollars"/>
+<IgbCategoryChart  YAxisTitle="In millions of Dollars"/>
 
-<FinancialChart YAxisTitle="In millions of Dollars"/>
+<IgbFinancialChart YAxisTitle="In millions of Dollars"/>
 
-<DataChart >
-    <NumericYAxis Title="In millions of Dollars" />
-</DataChart>
+<IgbDataChart >
+    <IgbNumericYAxis Title="In millions of Dollars" />
+</IgbDataChart>
 ```
 
 ```html
@@ -453,14 +453,14 @@ this.LineSeries.Resolution = 10;
 次のコード スニペットは、$Platform$ チャートの y 軸のラベルに固定されたラベル範囲を設定する方法を示します。
 
 ```razor
-<CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbCategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<FinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbFinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelExtent="50" />
-    <NumericYAxis  Name="yAxis" LabelExtent="50" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelExtent="50" />
+    <IgbNumericYAxis  Name="yAxis" LabelExtent="50" />
+</IgbDataChart>
 ```
 
 ```html

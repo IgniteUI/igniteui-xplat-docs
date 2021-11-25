@@ -9,6 +9,16 @@ _language: ja
 
 $ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。
 
+<div class="divider"></div>
+
+## $Platform$ Ripple の例
+
+<code-view style="height: 60px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
+           github-src="inputs/ripple/button">
+</code-view>
+
 ## 使用方法
 
 Ripple Web コンポーネントの使用を開始するには、[`IgcRippleComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcripplecomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
@@ -27,12 +37,6 @@ defineComponents(IgcRippleComponent);
   Ripple Button
 </igc-button>
 ```
-
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
-           github-src="inputs/ripple/button">
-</code-view>
 
 CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素にリップルを追加できます。
 

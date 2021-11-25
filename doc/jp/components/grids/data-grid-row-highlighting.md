@@ -50,7 +50,7 @@ $Platform$ データ内のレコードの強調表示は、$Platform$ グリッ�
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     DataSource="DataSource"
     IsRowHoverEnabled="true"
     RowHoverBackground="#bfbfff" />

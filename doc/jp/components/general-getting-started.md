@@ -1,6 +1,6 @@
 ---
 title: $Platform$ データ可視化ツール | 作業の開始 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドと財務ストリーミングおよびビジネスと財務チャートでデータの可視化を改善します。
+_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
 _keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
@@ -19,7 +19,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
       <img src="../images/general/nodejs.svg"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://nodejs.org/en/download/"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
         DOWNLOAD NODE JS
       </a>
     </div>
@@ -27,12 +27,13 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
       <img src="../images/general/vs-code.svg"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://code.visualstudio.com/download"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
         DOWNLOAD VS CODE
       </a>
     </div>
 </div>
 
+<!-- using a note because there is no other way to build flag content for specific platform. -->
 > [!NOTE]
 > For React:
 > 以上ですべて準備が整いました。新しい React アプリケーションを作成しましょう。  <br>
@@ -43,6 +44,27 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 > <br> 以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
 
 <!-- end: Angular, React, WebComponents -->
+
+<!-- commented out because this section is present in the "Updating Existing App"
+You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
+
+- **npm install --save {PackageCharts} {PackageCore}**
+- **npm install --save {PackageExcel} {PackageCore}**
+- **npm install --save {PackageGauges} {PackageCore}**
+- **npm install --save {PackageGrids} {PackageCore}**
+- **npm install --save {PackageMaps} {PackageCore}**
+- **npm install --save {PackageSpreadsheet} {PackageCore}**
+
+Or
+
+- **yarn add {PackageCharts} {PackageCore}**
+- **yarn add {PackageExcel} {PackageCore}**
+- **yarn add {PackageGauges} {PackageCore}**
+- **yarn add {PackageGrids} {PackageCore}**
+- **yarn add {PackageMaps} {PackageCore}**
+- **yarn add {PackageSpreadsheet} {PackageCore}**
+
+Lastly,  -->
 
 <!-- WebComponents -->
 ## 手順 1 - Web コンポーネント プロジェクトの作成
@@ -228,8 +250,8 @@ yarn add {PackageSpreadsheet} {PackageCore}
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -361,11 +383,11 @@ using IgniteUI.Blazor.Controls;
 public static async Task Main(string[] args)
 {
     // ...
-    builder.Services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    builder.Services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
 }
 ```
 
-Blazor サーバーのプロジェクトで **Startup.cs** ファイルを変更します。
+In Blazor Server project - change the **Startup.cs** file:
 
 ```razor
 using IgniteUI.Blazor.Controls;
@@ -374,7 +396,7 @@ using IgniteUI.Blazor.Controls;
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-    services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
 }
 ```
 
@@ -413,8 +435,8 @@ public void ConfigureServices(IServiceCollection services)
 4 - Ignite UI for Blazor コンポーネントを razor ページに追加します。
 
 ```razor
-<GeographicMap Height="100%" Width="100%" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" />
+</IgbGeographicMap>
 ```
 
 <!-- end: Blazor -->

@@ -310,14 +310,14 @@ createAreaSeries(data: any[]) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicScatterAreaSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ColorMemberPath="Value"
         ColorScale="ColorScale"
         DataSource="Data">
-    </GeographicScatterAreaSeries>
-</GeographicMap>
+    </IgbGeographicScatterAreaSeries>
+</IgbGeographicMap>
 
 @code {
 
@@ -326,7 +326,7 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue

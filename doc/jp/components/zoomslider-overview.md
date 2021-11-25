@@ -45,7 +45,7 @@ npm install --save {PackageCharts}
 `ZoomSlider` を作成するには、以下のモジュールが必要です。
 
 ```razor
-ZoomSliderModule.Register(IgniteUIBlazor);
+IgbZoomSliderModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

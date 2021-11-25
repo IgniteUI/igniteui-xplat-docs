@@ -54,7 +54,7 @@ npm install --save {PackageInputs}
 `Grid` を作成するには、以下のモジュールが必要です。
 
 ```razor
-DataGridModule.Register(IgniteUIBlazor);
+IgbDataGridModule.Register(IgniteUIBlazor);
 ```
 <!-- end: Blazor -->
 
@@ -82,9 +82,9 @@ ModuleManager.register(
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
 ```razor
-GridColumnOptionsModule.Register(IgniteUIBlazor);
-DataGridToolbarModule.Register(IgniteUIBlazor);
-SparklineModule.Register(IgniteUIBlazor);
+IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
+IgbDataGridToolbarModule.Register(IgniteUIBlazor);
+IgbSparklineModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -312,7 +312,7 @@ grid1.dataSource = data;
 ```
 
 ```razor
- <DataGrid Height="100%"
+ <IgbDataGrid Height="100%"
     Width="100%"
     DataSource="DataSource"
     AutoGenerateColumns="true"
@@ -366,16 +366,16 @@ grid1.dataSource = data;
 ```
 
 ```razor
-<DataGrid Height="100%"
+<IgbDataGrid Height="100%"
     Width="100%"
     DataSource="DataSource"
     AutoGenerateColumns="false">
-    <NumericColumn Field="ProductID" HeaderText="Product ID" />
-    <TextColumn Field="ProductName" HeaderText="Product Name" />
-    <TextColumn Field="QuantityPerUnit" HeaderText="Quantity Per Unit" />
-    <NumericColumn Field="UnitsInStock" HeaderText="Units In Stock" />
-    <DateTimeColumn Field="OrderDate" HeaderText="Order Date" />
-</DataGrid>
+    <IgbNumericColumn Field="ProductID" HeaderText="Product ID" />
+    <IgbTextColumn Field="ProductName" HeaderText="Product Name" />
+    <IgbTextColumn Field="QuantityPerUnit" HeaderText="Quantity Per Unit" />
+    <IgbNumericColumn Field="UnitsInStock" HeaderText="Units In Stock" />
+    <IgbDateTimeColumn Field="OrderDate" HeaderText="Order Date" />
+</IgbDataGrid>
 ```
 
 ### 列のスタイル設定
@@ -396,7 +396,7 @@ grid1.dataSource = data;
 ```
 
 ```razor
-<TextColumn
+<IgbTextColumn
     Background="SkyBlue"
     FontStyle="italic"
     FontWeight="bold"

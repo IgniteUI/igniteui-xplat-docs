@@ -1,7 +1,7 @@
 ---
 title: $Platform$ データ グリッド | 行のグループ化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, row grouping, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
@@ -21,6 +21,10 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 </code-view>
 
 <div class="divider--half"></div>
+
+## Group-By 領域
+
+上記の例に示すように、DataGrid の `IsGroupByAreaVisible` プロパティをユーザー インターフェイスで True に設定します。group-by 領域を使用すると、ユーザーは、DataGrid を間接的に操作するときに、操作せずに列をグループ化およびソート オプションを増やすことができます。グループは、ユーザーのニーズに基づいて配置および並べ替えることができます。この領域は、DataGrid で列がプログラムで `GroupDescriptions` として追加されたときにも入力されます。
 
 ## 複数のグループ
 
@@ -114,7 +118,7 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split" />
@@ -141,7 +145,7 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid @ref="DataGridRef" Height="100%" Width="100%"
+<IgbDataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
     IsGroupCollapsable="true" />
 ```
@@ -182,7 +186,7 @@ public onLoad() {
 ```
 
 ```ts
-import { IgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
+import { IgcIgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
 import { DataSourceSectionHeaderDisplayMode } from 'igniteui-webcomponents-core';
 
@@ -209,14 +213,14 @@ public connectedCallback() {
 ```
 
 ```razor
-<DataGrid @ref="DataGridRef" Height="100%" Width="100%"
+<IgbDataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
     GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"
     IsGroupCollapsable="true" />
 
 @code {
-    private DataGrid grid;
-    public DataGrid DataGridRef
+    private IgbDataGrid grid;
+    public IgbDataGrid DataGridRef
     {
         get
         {
@@ -242,3 +246,4 @@ public connectedCallback() {
     }
 }
 ```
+

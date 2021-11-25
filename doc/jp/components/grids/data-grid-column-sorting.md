@@ -59,7 +59,7 @@ import { HeaderClickAction } from 'igniteui-webcomponents-grids';
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%" @ref="DataGridRef"
+<IgbDataGrid Height="100%" Width="100%" @ref="DataGridRef"
     HeaderClickAction="HeaderClickAction.SortByMultipleColumns"
     DataSource="DataSource" />
 ```
@@ -97,8 +97,8 @@ grid1.sortDescriptions.add(colSortDesc);
 ```razor
 @code {
     // Using the ref property above:
-    private DataGrid grid;
-    private DataGrid DataGridRef
+    private IgbDataGrid grid;
+    private IgbDataGrid DataGridRef
     {
         get { return grid; }
         set

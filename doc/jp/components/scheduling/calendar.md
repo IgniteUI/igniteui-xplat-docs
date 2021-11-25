@@ -54,7 +54,7 @@ defineComponents(IgcCalendarComponent);
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 
-<code-view style="height: 370px" 
+<code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
            alt="$Platform$ Calendar 複数選択の例"
@@ -70,7 +70,7 @@ defineComponents(IgcCalendarComponent);
 <igc-calendar selection="range"></igc-calendar>
 ```
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
            alt="$Platform$ Calendar 範囲選択の例"
@@ -101,7 +101,7 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
 
 次のサンプルは、上記の構成を示しています:
 
-<code-view style="height: 370px" 
+<code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
            alt="$Platform$ Calendar ヘッダーの例"
@@ -123,7 +123,7 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
     <igc-radio name="locale" value="ja">JA</igc-radio>
 </igc-radio-group>
 
-<igc-calendar 
+<igc-calendar
     id="calendar1"
     week-start="monday"
 >
@@ -149,7 +149,7 @@ this.radios.forEach(radio => {
 
 すべて適切に設定できると、カスタマイズされた表示の Calendar ができあがります。これにより、ユーザーの選択に基づいてロケールの表現も変更されます。以下は結果です:
 
-<code-view style="height: 520px" 
+<code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
            alt="$Platform$ Calendar 書式設定の例"
@@ -182,7 +182,7 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 これらの構成では、次の結果が得られます:
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
            alt="$Platform$ Calendar 無効な日付の例"
@@ -207,7 +207,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 次のデモは、休暇申請オプション付きの Calendar を示しています。
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
            alt="$Platform$ Calendar 特定の日付の例"
@@ -223,7 +223,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 ```
 次のデモは、週番号が有効になっている Calendar を示しています:
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
            alt="$Platform$ Calendar 週番号の例"
@@ -242,7 +242,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 次のサンプルは、複数月の構成を示しています:
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
            alt="$Platform$ 複数の月の例"
@@ -253,7 +253,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 `size` プロパティを変更することで、Calendar の内部要素のサイズと間隔を制御できます。デフォルトの `size` 値は `large` です。
 
-<code-view style="height: 520px" 
+<code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
            alt="$Platform$ Calendar サイズの例"
@@ -382,7 +382,7 @@ igc-calendar::part(year-inner current selected) {
 
 次のサンプルは、上記の CSS 構成を示しています:
 
-<code-view style="height: 480px" 
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
            alt="$Platform$ スタイル設定の例"

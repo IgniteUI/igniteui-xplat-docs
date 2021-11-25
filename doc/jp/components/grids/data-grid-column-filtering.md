@@ -22,7 +22,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <div class="divider--half"></div>
 
-上記のように、`FilterUIType` プロパティを FilterRow に設定すると、列ヘッダーの下にフィルター行 UI が提供され、エンドユーザーがグリッドのレコードをフィルター処理できるようになります。フィルタリングは、列オプション UI でも公開されます。
+上記のように、`FilterUIType` プロパティを FilterRow に設定すると、ユーザー インターフェイスでレコードをフィルタリングできるようになり、ユーザーはレコードをフィルタリングするためのフィルター基準を指定できます。指定されたフィルター基準に一致しないレコードは非表示になります。フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。
 
 ## コード スニペット
 
@@ -166,13 +166,13 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
 ```
 
 ```razor
-<DataGrid Height="100%" Width="100%"
+<IgbDataGrid Height="100%" Width="100%"
           @ref="DataGridRef"
           DataSource="DataSource" />
 
 @code {
 
-    public DataGrid DataGridRef;
+    public IgbDataGrid DataGridRef;
 
     public string FilterText = "";
     public string FilterMode = "Contains";
@@ -183,9 +183,9 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        DataGridModule.Register(IgniteUIBlazor);
-        GridColumnOptionsModule.Register(IgniteUIBlazor);
-        GridColumnFilterOptionsModule.Register(IgniteUIBlazor);
+        IgbDataGridModule.Register(IgniteUIBlazor);
+        IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
+        IgbGridColumnFilterOptionsModule.Register(IgniteUIBlazor);
     }
 
     public void OnFilterTextChanged(ChangeEventArgs e)
