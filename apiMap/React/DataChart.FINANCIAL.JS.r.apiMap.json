@@ -1,456 +1,113 @@
-{
-"extraFiles": [
-"igr-financial-price-series-proxy-module.ts"
-],
-"types": [
-{
-    "originalName": "FinancialEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-event-args.ts",
- "mappedName": "IgrFinancialEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "position"}            ],
-           "originalName": "Position"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "count"}            ],
-           "originalName": "Count"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrFinancialCalculationDataSource", "mappedName": "dataSource"}            ],
-           "originalName": "DataSource"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrFinancialCalculationSupportingCalculations", "mappedName": "supportingCalculations"}            ],
-           "originalName": "SupportingCalculations"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialPriceSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-price-series.ts",
-    "dynamicModuleName": "igr-financial-price-series-dynamic-module.ts",
-    "moduleName": "igr-financial-price-series-module.ts",
- "mappedName": "IgrFinancialPriceSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFinancialSeries"}            ],
-           "originalName": "IsFinancialSeries"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PriceDisplayType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "negativeOutline"}            ],
-           "originalName": "NegativeOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
-           "originalName": "GetSeriesValueBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
-           "originalName": "GetItemSpan"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
-           "originalName": "SetNegativeColors"
-       }   ],
-    "originalBaseTypeName": "FinancialSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-series.ts",
- "mappedName": "IgrFinancialSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
-           "originalName": "IsFinancial"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "negativeBrush"}            ],
-           "originalName": "NegativeBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrCategoryAxisBase", "mappedName": "xAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrNumericYAxis", "mappedName": "yAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "openMemberPath"}            ],
-           "originalName": "OpenMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "highMemberPath"}            ],
-           "originalName": "HighMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowMemberPath"}            ],
-           "originalName": "LowMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "closeMemberPath"}            ],
-           "originalName": "CloseMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "volumeMemberPath"}            ],
-           "originalName": "VolumeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}            ],
-           "originalName": "IsCustomCategoryStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
-           "originalName": "TransitionInMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
-           "originalName": "IsTransitionInEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],
-           "originalName": "IsNegativeColorSupported"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
-           "originalName": "GetOffsetValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
-           "originalName": "GetCategoryWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
-           "originalName": "GetSeriesHighValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
-           "originalName": "GetSeriesLowValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesCloseValue"}            ],
-           "originalName": "GetSeriesCloseValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesOpenValue"}            ],
-           "originalName": "GetSeriesOpenValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesVolumeValue"}            ],
-           "originalName": "GetSeriesVolumeValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
-           "originalName": "GetSeriesHighValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
-           "originalName": "GetSeriesLowValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesOpenValuePosition"}            ],
-           "originalName": "GetSeriesOpenValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesCloseValuePosition"}            ],
-           "originalName": "GetSeriesCloseValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesVolumeValuePosition"}            ],
-           "originalName": "GetSeriesVolumeValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setNegativeColors"}            ],
-           "originalName": "SetNegativeColors"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialCalculationSupportingCalculations",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-calculation-supporting-calculations.ts",
- "mappedName": "IgrFinancialCalculationSupportingCalculations"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrColumnSupportingCalculation", "mappedName": "eMA"}            ],
-           "originalName": "EMA"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrColumnSupportingCalculation", "mappedName": "sMA"}            ],
-           "originalName": "SMA"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrColumnSupportingCalculation", "mappedName": "sTDEV"}            ],
-           "originalName": "STDEV"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrColumnSupportingCalculation", "mappedName": "movingSum"}            ],
-           "originalName": "MovingSum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "shortVolumeOscillatorAverage"}            ],
-           "originalName": "ShortVolumeOscillatorAverage"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "longVolumeOscillatorAverage"}            ],
-           "originalName": "LongVolumeOscillatorAverage"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "shortPriceOscillatorAverage"}            ],
-           "originalName": "ShortPriceOscillatorAverage"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "longPriceOscillatorAverage"}            ],
-           "originalName": "LongPriceOscillatorAverage"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "(arg1: number) => number", "mappedName": "makeSafe"}            ],
-           "originalName": "MakeSafe"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ColumnSupportingCalculation",
-   "names": [
-        { "platform": "React",     "fileName": "igr-column-supporting-calculation.ts",
- "mappedName": "IgrColumnSupportingCalculation"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "SupportingCalculation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "DataSourceSupportingCalculation",
-   "names": [
-        { "platform": "React",     "fileName": "igr-data-source-supporting-calculation.ts",
- "mappedName": "IgrDataSourceSupportingCalculation"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "SupportingCalculation",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalculatedColumn",
-   "names": [
-        { "platform": "React",     "fileName": "igr-calculated-column.ts",
- "mappedName": "IgrCalculatedColumn"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialCalculationDataSource",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-calculation-data-source.ts",
- "mappedName": "IgrFinancialCalculationDataSource"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrCalculatedColumn", "mappedName": "typicalColumn"}            ],
-           "originalName": "TypicalColumn"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrCalculatedColumn", "mappedName": "trueRange"}            ],
-           "originalName": "TrueRange"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrCalculatedColumn", "mappedName": "trueLow"}            ],
-           "originalName": "TrueLow"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "count"}            ],
-           "originalName": "Count"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "calculateFrom"}            ],
-           "originalName": "CalculateFrom"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "calculateCount"}            ],
-           "originalName": "CalculateCount"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "multiplier"}            ],
-           "originalName": "Multiplier"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "specifiesRange"}            ],
-           "originalName": "SpecifiesRange"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igr-financial-price-series-proxy-module.ts"], "types": [{"originalName": "FinancialEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-financial-event-args.ts", "mappedName": "IgrFinancialEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "position"}], "originalName": "Position"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "count"}], "originalName": "Count"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrFinancialCalculationDataSource", "mappedName": "dataSource"}], "originalName": "DataSource"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrFinancialCalculationSupportingCalculations", "mappedName": "supportingCalculations"}], "originalName": "SupportingCalculations"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialPriceSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-financial-price-series.ts", "dynamicModuleName": "igr-financial-price-series-dynamic-module.ts", "moduleName": "igr-financial-price-series-module.ts", "mappedName": "IgrFinancialPriceSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isFinancialSeries"}], "originalName": "IsFinancialSeries"}, 
+    {"names": [{"platform": "React", "mappedType": "TrendLineType", "mappedName": "trendLineType"}], "originalName": "TrendLineType"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "trendLineThickness"}], "originalName": "TrendLineThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "trendLinePeriod"}], "originalName": "TrendLinePeriod"}, 
+    {"names": [{"platform": "React", "mappedType": "PriceDisplayType", "mappedName": "displayType"}], "originalName": "DisplayType"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "negativeOutline"}], "originalName": "NegativeOutline"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setNegativeColors"}], "originalName": "SetNegativeColors"}
+  ], 
+  "originalBaseTypeName": "FinancialSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-financial-series.ts", "mappedName": "IgrFinancialSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isFinancial"}], "originalName": "IsFinancial"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "negativeBrush"}], "originalName": "NegativeBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrCategoryAxisBase", "mappedName": "xAxis"}], "originalName": "XAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrNumericYAxis", "mappedName": "yAxis"}], "originalName": "YAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "openMemberPath"}], "originalName": "OpenMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "lowMemberPath"}], "originalName": "LowMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "closeMemberPath"}], "originalName": "CloseMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "volumeMemberPath"}], "originalName": "VolumeMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}], "originalName": "IsCustomCategoryStyleAllowed"}, 
+    {"names": [{"platform": "React", "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}], "originalName": "TransitionInMode"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}], "originalName": "IsTransitionInEnabled"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}], "originalName": "IsNegativeColorSupported"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemValue"}], "originalName": "GetItemValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesLowValue"}], "originalName": "GetSeriesLowValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesCloseValue"}], "originalName": "GetSeriesCloseValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesOpenValue"}], "originalName": "GetSeriesOpenValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesVolumeValue"}], "originalName": "GetSeriesVolumeValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}], "originalName": "GetSeriesHighValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}], "originalName": "GetSeriesLowValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesOpenValuePosition"}], "originalName": "GetSeriesOpenValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesCloseValuePosition"}], "originalName": "GetSeriesCloseValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesVolumeValuePosition"}], "originalName": "GetSeriesVolumeValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsYAxis"}], "originalName": "CanUseAsYAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsXAxis"}], "originalName": "CanUseAsXAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setNegativeColors"}], "originalName": "SetNegativeColors"}
+  ], 
+  "originalBaseTypeName": "Series", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialCalculationSupportingCalculations", 
+  "names": [
+    {"platform": "React", "fileName": "igr-financial-calculation-supporting-calculations.ts", "mappedName": "IgrFinancialCalculationSupportingCalculations"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "IgrColumnSupportingCalculation", "mappedName": "eMA"}], "originalName": "EMA"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrColumnSupportingCalculation", "mappedName": "sMA"}], "originalName": "SMA"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrColumnSupportingCalculation", "mappedName": "sTDEV"}], "originalName": "STDEV"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrColumnSupportingCalculation", "mappedName": "movingSum"}], "originalName": "MovingSum"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "shortVolumeOscillatorAverage"}], "originalName": "ShortVolumeOscillatorAverage"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "longVolumeOscillatorAverage"}], "originalName": "LongVolumeOscillatorAverage"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "shortPriceOscillatorAverage"}], "originalName": "ShortPriceOscillatorAverage"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrDataSourceSupportingCalculation", "mappedName": "longPriceOscillatorAverage"}], "originalName": "LongPriceOscillatorAverage"}, 
+    {"names": [{"platform": "React", "mappedType": "(arg1:  number) => number", "mappedName": "makeSafe"}], "originalName": "MakeSafe"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ColumnSupportingCalculation", 
+  "names": [
+    {"platform": "React", "fileName": "igr-column-supporting-calculation.ts", "mappedName": "IgrColumnSupportingCalculation"}
+  ], 
+  "members": [], "originalBaseTypeName": "SupportingCalculation", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "DataSourceSupportingCalculation", 
+  "names": [
+    {"platform": "React", "fileName": "igr-data-source-supporting-calculation.ts", "mappedName": "IgrDataSourceSupportingCalculation"}
+  ], 
+  "members": [], "originalBaseTypeName": "SupportingCalculation", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalculatedColumn", 
+  "names": [
+    {"platform": "React", "fileName": "igr-calculated-column.ts", "mappedName": "IgrCalculatedColumn"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialCalculationDataSource", 
+  "names": [
+    {"platform": "React", "fileName": "igr-financial-calculation-data-source.ts", "mappedName": "IgrFinancialCalculationDataSource"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "IgrCalculatedColumn", "mappedName": "typicalColumn"}], "originalName": "TypicalColumn"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrCalculatedColumn", "mappedName": "trueRange"}], "originalName": "TrueRange"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrCalculatedColumn", "mappedName": "trueLow"}], "originalName": "TrueLow"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "period"}], "originalName": "Period"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "shortPeriod"}], "originalName": "ShortPeriod"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "longPeriod"}], "originalName": "LongPeriod"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "count"}], "originalName": "Count"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "calculateFrom"}], "originalName": "CalculateFrom"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "calculateCount"}], "originalName": "CalculateCount"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "multiplier"}], "originalName": "Multiplier"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minimumValue"}], "originalName": "MinimumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maximumValue"}], "originalName": "MaximumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "specifiesRange"}], "originalName": "SpecifiesRange"}], "originalNamespace": "Infragistics.Controls.Charts"}]}

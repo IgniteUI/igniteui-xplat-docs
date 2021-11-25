@@ -1,24 +1,9 @@
-{
-"types": [
-{
-    "originalName": "ValueChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ValueChangedEventArgs.cs",
- "mappedName": "IgbValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "OldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "NewValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-}
-]
-}
+{"types": [{"originalName": "ValueChangedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ValueChangedEventArgs.cs", "mappedName": "IgbValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "OldValue"}], "originalName": "OldValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "NewValue"}], "originalName": "NewValue"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}]}

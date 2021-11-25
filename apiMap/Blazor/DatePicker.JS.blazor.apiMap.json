@@ -1,227 +1,54 @@
-{
-"types": [
-{
-    "originalName": "DateTimeValueFormatter",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DateTimeValueFormatter.cs",
- "mappedName": "DateTimeValueFormatter"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateFormats", "mappedName": "_format"}            ],
-           "originalName": "_format"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "boolean", "mappedName": "_invalidate"}            ],
-           "originalName": "_invalidate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "invalidateFormat"}            ],
-           "originalName": "InvalidateFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "ensureFormat"}            ],
-           "originalName": "EnsureFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_dateTimeShortFormat"}            ],
-           "originalName": "_dateTimeShortFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_dateTimeLongFormat"}            ],
-           "originalName": "_dateTimeLongFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_dateLongFormat"}            ],
-           "originalName": "_dateLongFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_dateShortFormat"}            ],
-           "originalName": "_dateShortFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_timeLongFormat"}            ],
-           "originalName": "_timeLongFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "any", "mappedName": "_timeShortFormat"}            ],
-           "originalName": "_timeShortFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "formatDate"}            ],
-           "originalName": "FormatDate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "getPattern"}            ],
-           "originalName": "GetPattern"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs"
-},
-{
-    "originalName": "DatePicker",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DatePicker.cs",
- "mappedName": "IgbDatePicker"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "Today"}            ],
-           "originalName": "Today"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Label"}            ],
-           "originalName": "Label"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelTextColor"}            ],
-           "originalName": "LabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Placeholder"}            ],
-           "originalName": "Placeholder"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "MinDate"}            ],
-           "originalName": "MinDate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "MaxDate"}            ],
-           "originalName": "MaxDate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "Density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "IconColor"}            ],
-           "originalName": "IconColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowClearButton"}            ],
-           "originalName": "ShowClearButton"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowTodayButton"}            ],
-           "originalName": "ShowTodayButton"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AllowTextInput"}            ],
-           "originalName": "AllowTextInput"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "OpenOnFocus"}            ],
-           "originalName": "OpenOnFocus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DayOfWeek", "mappedName": "FirstDayOfWeek"}            ],
-           "originalName": "FirstDayOfWeek"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "FirstWeek", "mappedName": "FirstWeekOfYear"}            ],
-           "originalName": "FirstWeekOfYear"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowWeekNumbers"}            ],
-           "originalName": "ShowWeekNumbers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DateFormats", "mappedName": "DateFormat"}            ],
-           "originalName": "DateFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatString"}            ],
-           "originalName": "FormatString"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDisabled"}            ],
-           "originalName": "IsDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Select"}            ],
-           "originalName": "Select"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportVisualModel"}            ],
-           "originalName": "ExportVisualModel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}            ],
-           "originalName": "ExportSerializedVisualModel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "GotFocusEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "GotFocusEventArgs.cs",
- "mappedName": "IgbGotFocusEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "LostFocusEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "LostFocusEventArgs.cs",
- "mappedName": "IgbLostFocusEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-}
-]
-}
+{"types": [{"originalName": "DateTimeValueFormatter", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DateTimeValueFormatter.cs", "mappedName": "DateTimeValueFormatter"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "DateFormats", "mappedName": "_format"}], "originalName": "_format"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "boolean", "mappedName": "_invalidate"}], "originalName": "_invalidate"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "invalidateFormat"}], "originalName": "InvalidateFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "ensureFormat"}], "originalName": "EnsureFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_dateTimeShortFormat"}], "originalName": "_dateTimeShortFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_dateTimeLongFormat"}], "originalName": "_dateTimeLongFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_dateLongFormat"}], "originalName": "_dateLongFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_dateShortFormat"}], "originalName": "_dateShortFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_timeLongFormat"}], "originalName": "_timeLongFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "any", "mappedName": "_timeShortFormat"}], "originalName": "_timeShortFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "formatDate"}], "originalName": "FormatDate"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "getPattern"}], "originalName": "GetPattern"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Inputs"}, {"originalName": "DatePicker", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DatePicker.cs", "mappedName": "IgbDatePicker"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "Value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "Today"}], "originalName": "Today"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Label"}], "originalName": "Label"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LabelTextColor"}], "originalName": "LabelTextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Placeholder"}], "originalName": "Placeholder"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MinDate"}], "originalName": "MinDate"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DateTime", "mappedName": "MaxDate"}], "originalName": "MaxDate"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ControlDisplayDensity", "mappedName": "Density"}], "originalName": "Density"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}], "originalName": "BaseTheme"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TextColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "IconColor"}], "originalName": "IconColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShowClearButton"}], "originalName": "ShowClearButton"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShowTodayButton"}], "originalName": "ShowTodayButton"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AllowTextInput"}], "originalName": "AllowTextInput"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "OpenOnFocus"}], "originalName": "OpenOnFocus"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DayOfWeek", "mappedName": "FirstDayOfWeek"}], "originalName": "FirstDayOfWeek"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "FirstWeek", "mappedName": "FirstWeekOfYear"}], "originalName": "FirstWeekOfYear"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShowWeekNumbers"}], "originalName": "ShowWeekNumbers"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "DateFormats", "mappedName": "DateFormat"}], "originalName": "DateFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "FormatString"}], "originalName": "FormatString"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsDisabled"}], "originalName": "IsDisabled"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "Select"}], "originalName": "Select"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExportVisualModel"}], "originalName": "ExportVisualModel"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "GotFocusEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "GotFocusEventArgs.cs", "mappedName": "IgbGotFocusEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "LostFocusEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "LostFocusEventArgs.cs", "mappedName": "IgbLostFocusEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}]}

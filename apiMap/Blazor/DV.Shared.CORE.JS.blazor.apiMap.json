@@ -1,456 +1,132 @@
-{
-"types": [
-{
-    "originalName": "EasingFunctions",
-   "names": [
-        { "platform": "Blazor",     "fileName": "EasingFunctions.cs",
- "mappedName": "EasingFunctions"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "DoubleValueChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DoubleValueChangedEventArgs.cs",
- "mappedName": "IgbDoubleValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NewValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorReference",
-    "isEnum": true,
-   "names": [
-        { "platform": "Blazor",     "fileName": "ErrorBarCalculatorReference.cs",
- "mappedName": "ErrorBarCalculatorReference"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "X"}            ],
-           "originalName": "X"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "Y"}            ],
-           "originalName": "Y"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorType",
-    "isEnum": true,
-   "names": [
-        { "platform": "Blazor",     "fileName": "ErrorBarCalculatorType.cs",
- "mappedName": "ErrorBarCalculatorType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Fixed"}            ],
-           "originalName": "Fixed"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Percentage"}            ],
-           "originalName": "Percentage"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Data"}            ],
-           "originalName": "Data"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardDeviation"}            ],
-           "originalName": "StandardDeviation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardError"}            ],
-           "originalName": "StandardError"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "RectChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "RectChangedEventArgs.cs",
- "mappedName": "IgbRectChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "OldRect"}            ],
-           "originalName": "OldRect"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "NewRect"}            ],
-           "originalName": "NewRect"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "FormatSpecifier",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FormatSpecifier.cs",
- "mappedName": "IgbFormatSpecifier"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "NumberFormatSpecifier",
-   "names": [
-        { "platform": "Blazor",     "fileName": "NumberFormatSpecifier.cs",
- "mappedName": "IgbNumberFormatSpecifier"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Locale"}            ],
-           "originalName": "Locale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CompactDisplay"}            ],
-           "originalName": "CompactDisplay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Currency"}            ],
-           "originalName": "Currency"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CurrencyDisplay"}            ],
-           "originalName": "CurrencyDisplay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CurrencySign"}            ],
-           "originalName": "CurrencySign"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LocaleMatcher"}            ],
-           "originalName": "LocaleMatcher"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Notation"}            ],
-           "originalName": "Notation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NumberingSystem"}            ],
-           "originalName": "NumberingSystem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SignDisplay"}            ],
-           "originalName": "SignDisplay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Style"}            ],
-           "originalName": "Style"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Unit"}            ],
-           "originalName": "Unit"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "UnitDisplay"}            ],
-           "originalName": "UnitDisplay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseGrouping"}            ],
-           "originalName": "UseGrouping"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MinimumIntegerDigits"}            ],
-           "originalName": "MinimumIntegerDigits"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MinimumFractionDigits"}            ],
-           "originalName": "MinimumFractionDigits"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumFractionDigits"}            ],
-           "originalName": "MaximumFractionDigits"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MinimumSignificantDigits"}            ],
-           "originalName": "MinimumSignificantDigits"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumSignificantDigits"}            ],
-           "originalName": "MaximumSignificantDigits"
-       }   ],
-    "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DateTimeFormatSpecifier",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DateTimeFormatSpecifier.cs",
- "mappedName": "IgbDateTimeFormatSpecifier"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Locale"}            ],
-           "originalName": "Locale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DateStyle"}            ],
-           "originalName": "DateStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TimeStyle"}            ],
-           "originalName": "TimeStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "FractionalSecondDigits"}            ],
-           "originalName": "FractionalSecondDigits"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Calendar"}            ],
-           "originalName": "Calendar"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DayPeriod"}            ],
-           "originalName": "DayPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NumberingSystem"}            ],
-           "originalName": "NumberingSystem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LocaleMatcher"}            ],
-           "originalName": "LocaleMatcher"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TimeZone"}            ],
-           "originalName": "TimeZone"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Hour12"}            ],
-           "originalName": "Hour12"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HourCycle"}            ],
-           "originalName": "HourCycle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FormatMatcher"}            ],
-           "originalName": "FormatMatcher"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "WeekDay"}            ],
-           "originalName": "WeekDay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Era"}            ],
-           "originalName": "Era"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Year"}            ],
-           "originalName": "Year"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Month"}            ],
-           "originalName": "Month"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Day"}            ],
-           "originalName": "Day"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Hour"}            ],
-           "originalName": "Hour"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Minute"}            ],
-           "originalName": "Minute"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Second"}            ],
-           "originalName": "Second"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TimeZoneName"}            ],
-           "originalName": "TimeZoneName"
-       }   ],
-    "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ISyncableObservableCollectionChangedListener",
-   "names": [
-        { "platform": "Blazor",     "fileName": "SyncableObservableCollectionChangedListener.cs",
- "mappedName": "SyncableObservableCollectionChangedListener"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "void", "mappedName": "onChanged"}            ],
-           "originalName": "OnChanged"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DataContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DataContext.cs",
- "mappedName": "IgbDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualItemBrush"}            ],
-           "originalName": "ActualItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ItemLabel"}            ],
-           "originalName": "ItemLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ItemBrush"}            ],
-           "originalName": "ItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendLabel"}            ],
-           "originalName": "LegendLabel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PropertyUpdatedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "PropertyUpdatedEventArgs.cs",
- "mappedName": "IgbPropertyUpdatedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
-           "originalName": "PropertyName"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "NewValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendContext.cs",
- "mappedName": "LegendContext"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendSeries.cs",
- "mappedName": "LegendSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveLegendIndex"}            ],
-           "originalName": "ResolveLegendIndex"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ILegendOwner",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ILegendOwner.cs",
- "mappedName": "LegendOwner"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "EasingFunctions", 
+  "names": [
+    {"platform": "Blazor", "fileName": "EasingFunctions.cs", "mappedName": "EasingFunctions"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics"}, {"originalName": "DoubleValueChangedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DoubleValueChangedEventArgs.cs", "mappedName": "IgbDoubleValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "OldValue"}], "originalName": "OldValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "NewValue"}], "originalName": "NewValue"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics"}, {"originalName": "ErrorBarCalculatorReference", "isEnum": true, 
+  "names": [
+    {"platform": "Blazor", "fileName": "ErrorBarCalculatorReference.cs", "mappedName": "ErrorBarCalculatorReference"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorReference", "mappedName": "X"}], "originalName": "X"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorReference", "mappedName": "Y"}], "originalName": "Y"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics"}, {"originalName": "ErrorBarCalculatorType", "isEnum": true, 
+  "names": [
+    {"platform": "Blazor", "fileName": "ErrorBarCalculatorType.cs", "mappedName": "ErrorBarCalculatorType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType", "mappedName": "Fixed"}], "originalName": "Fixed"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType", "mappedName": "Percentage"}], "originalName": "Percentage"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType", "mappedName": "Data"}], "originalName": "Data"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardDeviation"}], "originalName": "StandardDeviation"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardError"}], "originalName": "StandardError"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics"}, {"originalName": "RectChangedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "RectChangedEventArgs.cs", "mappedName": "IgbRectChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "OldRect"}], "originalName": "OldRect"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "NewRect"}], "originalName": "NewRect"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics"}, {"originalName": "FormatSpecifier", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FormatSpecifier.cs", "mappedName": "IgbFormatSpecifier"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls"}, {"originalName": "NumberFormatSpecifier", 
+  "names": [
+    {"platform": "Blazor", "fileName": "NumberFormatSpecifier.cs", "mappedName": "IgbNumberFormatSpecifier"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Locale"}], "originalName": "Locale"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "CompactDisplay"}], "originalName": "CompactDisplay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Currency"}], "originalName": "Currency"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "CurrencyDisplay"}], "originalName": "CurrencyDisplay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "CurrencySign"}], "originalName": "CurrencySign"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LocaleMatcher"}], "originalName": "LocaleMatcher"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Notation"}], "originalName": "Notation"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "NumberingSystem"}], "originalName": "NumberingSystem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "SignDisplay"}], "originalName": "SignDisplay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Style"}], "originalName": "Style"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Unit"}], "originalName": "Unit"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "UnitDisplay"}], "originalName": "UnitDisplay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseGrouping"}], "originalName": "UseGrouping"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "MinimumIntegerDigits"}], "originalName": "MinimumIntegerDigits"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "MinimumFractionDigits"}], "originalName": "MinimumFractionDigits"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "MaximumFractionDigits"}], "originalName": "MaximumFractionDigits"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "MinimumSignificantDigits"}], "originalName": "MinimumSignificantDigits"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "MaximumSignificantDigits"}], "originalName": "MaximumSignificantDigits"}
+  ], 
+  "originalBaseTypeName": "FormatSpecifier", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "DateTimeFormatSpecifier", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DateTimeFormatSpecifier.cs", "mappedName": "IgbDateTimeFormatSpecifier"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Locale"}], "originalName": "Locale"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DateStyle"}], "originalName": "DateStyle"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TimeStyle"}], "originalName": "TimeStyle"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "FractionalSecondDigits"}], "originalName": "FractionalSecondDigits"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Calendar"}], "originalName": "Calendar"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DayPeriod"}], "originalName": "DayPeriod"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "NumberingSystem"}], "originalName": "NumberingSystem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LocaleMatcher"}], "originalName": "LocaleMatcher"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TimeZone"}], "originalName": "TimeZone"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Hour12"}], "originalName": "Hour12"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "HourCycle"}], "originalName": "HourCycle"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "FormatMatcher"}], "originalName": "FormatMatcher"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "WeekDay"}], "originalName": "WeekDay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Era"}], "originalName": "Era"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Year"}], "originalName": "Year"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Month"}], "originalName": "Month"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Day"}], "originalName": "Day"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Hour"}], "originalName": "Hour"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Minute"}], "originalName": "Minute"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Second"}], "originalName": "Second"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TimeZoneName"}], "originalName": "TimeZoneName"}
+  ], 
+  "originalBaseTypeName": "FormatSpecifier", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ISyncableObservableCollectionChangedListener", 
+  "names": [
+    {"platform": "Blazor", "fileName": "SyncableObservableCollectionChangedListener.cs", "mappedName": "SyncableObservableCollectionChangedListener"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "void", "mappedName": "onChanged"}], "originalName": "OnChanged"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "DataContext", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DataContext.cs", "mappedName": "IgbDataContext"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "Item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ActualItemBrush"}], "originalName": "ActualItemBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Outline"}], "originalName": "Outline"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "ItemLabel"}], "originalName": "ItemLabel"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ItemBrush"}], "originalName": "ItemBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Thickness"}], "originalName": "Thickness"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "LegendLabel"}], "originalName": "LegendLabel"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PropertyUpdatedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "PropertyUpdatedEventArgs.cs", "mappedName": "IgbPropertyUpdatedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "PropertyName"}], "originalName": "PropertyName"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "OldValue"}], "originalName": "OldValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "NewValue"}], "originalName": "NewValue"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ILegendContext", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ILegendContext.cs", "mappedName": "LegendContext"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ILegendSeries", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ILegendSeries.cs", "mappedName": "LegendSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ResolveLegendIndex"}], "originalName": "ResolveLegendIndex"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ILegendOwner", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ILegendOwner.cs", "mappedName": "LegendOwner"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls.Charts"}]}

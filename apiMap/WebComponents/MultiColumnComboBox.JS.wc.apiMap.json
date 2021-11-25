@@ -1,625 +1,158 @@
-{
-"extraFiles": [
-"igc-multi-column-combo-box-module.ts"
-],
-"types": [
-{
-    "originalName": "CloneDataSourceFilterOperation",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "CloneDataSourceFilterOperation.ts",
- "mappedName": "CloneDataSourceFilterOperation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "ValueToText"}            ],
-           "originalName": "ValueToText"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CloneDataSourceFilterOperation", "mappedName": "TextToValue"}            ],
-           "originalName": "TextToValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "GotFocusEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-got-focus-event-args.ts",
- "mappedName": "IgcGotFocusEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "LostFocusEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-lost-focus-event-args.ts",
- "mappedName": "IgcLostFocusEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "MultiColumnComboBoxTextChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-multi-column-combo-box-text-changed-event-args.ts",
- "mappedName": "IgcMultiColumnComboBoxTextChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "oldText"}            ],
-           "originalName": "OldText"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "newText"}            ],
-           "originalName": "NewText"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "MultiColumnComboBoxValueChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-multi-column-combo-box-value-changed-event-args.ts",
- "mappedName": "IgcMultiColumnComboBoxValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "MultiColumnComboBox",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-multi-column-combo-box-component.ts",
- "mappedName": "IgcMultiColumnComboBoxComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "showClearButton"}            ],
-           "originalName": "ShowClearButton"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "fields"}            ],
-           "originalName": "Fields"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualBackgroundColor"}            ],
-           "originalName": "ActualBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "actualBaseTheme"}            ],
-           "originalName": "ActualBaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "borderColor"}            ],
-           "originalName": "BorderColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualBorderColor"}            ],
-           "originalName": "ActualBorderColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "borderWidth"}            ],
-           "originalName": "BorderWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualBorderWidth"}            ],
-           "originalName": "ActualBorderWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "columnHeadersVisible"}            ],
-           "originalName": "ColumnHeadersVisible"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottom"}            ],
-           "originalName": "contentPadding.bottom"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "left"}            ],
-           "originalName": "contentPadding.left"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "right"}            ],
-           "originalName": "contentPadding.right"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "top"}            ],
-           "originalName": "contentPadding.top"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottom"}            ],
-           "originalName": "actualContentPadding.bottom"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "left"}            ],
-           "originalName": "actualContentPadding.left"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "right"}            ],
-           "originalName": "actualContentPadding.right"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "top"}            ],
-           "originalName": "actualContentPadding.top"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomRight"}            ],
-           "originalName": "cornerRadius.bottomRight"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
-           "originalName": "cornerRadius.bottomLeft"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "topLeft"}            ],
-           "originalName": "cornerRadius.topLeft"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "topRight"}            ],
-           "originalName": "cornerRadius.topRight"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomRight"}            ],
-           "originalName": "actualCornerRadius.bottomRight"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomLeft"}            ],
-           "originalName": "actualCornerRadius.bottomLeft"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "topLeft"}            ],
-           "originalName": "actualCornerRadius.topLeft"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "topRight"}            ],
-           "originalName": "actualCornerRadius.topRight"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "dataSourceDesiredProperties"}            ],
-           "originalName": "DataSourceDesiredProperties"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "actualDensity"}            ],
-           "originalName": "ActualDensity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "dropDownButtonVisible"}            ],
-           "originalName": "DropDownButtonVisible"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "focusBorderColor"}            ],
-           "originalName": "FocusBorderColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualFocusBorderColor"}            ],
-           "originalName": "ActualFocusBorderColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "focusBorderWidth"}            ],
-           "originalName": "FocusBorderWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualFocusBorderWidth"}            ],
-           "originalName": "ActualFocusBorderWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "focusUnderlineColor"}            ],
-           "originalName": "FocusUnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualFocusUnderlineColor"}            ],
-           "originalName": "ActualFocusUnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "focusUnderlineOpacity"}            ],
-           "originalName": "FocusUnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualFocusUnderlineOpacity"}            ],
-           "originalName": "ActualFocusUnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "focusUnderlineRippleOpacity"}            ],
-           "originalName": "FocusUnderlineRippleOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualFocusUnderlineRippleOpacity"}            ],
-           "originalName": "ActualFocusUnderlineRippleOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hoverUnderlineColor"}            ],
-           "originalName": "HoverUnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualHoverUnderlineColor"}            ],
-           "originalName": "ActualHoverUnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "hoverUnderlineOpacity"}            ],
-           "originalName": "HoverUnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualHoverUnderlineOpacity"}            ],
-           "originalName": "ActualHoverUnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "hoverUnderlineWidth"}            ],
-           "originalName": "HoverUnderlineWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualHoverUnderlineWidth"}            ],
-           "originalName": "ActualHoverUnderlineWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "dataSource"}            ],
-           "originalName": "ItemsSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IDataSource", "mappedName": "actualDataSource"}            ],
-           "originalName": "ActualDataSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "label"}            ],
-           "originalName": "Label"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelTextColor"}            ],
-           "originalName": "LabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLabelTextColor"}            ],
-           "originalName": "ActualLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "actualLabelVisible"}            ],
-           "originalName": "ActualLabelVisible"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "noMatchesFoundLabel"}            ],
-           "originalName": "NoMatchesFoundLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabel"}            ],
-           "originalName": "ActualNoMatchesFoundLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "noMatchesFoundLabelBackgroundColor"}            ],
-           "originalName": "NoMatchesFoundLabelBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelBackgroundColor"}            ],
-           "originalName": "ActualNoMatchesFoundLabelBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "noMatchesFoundLabelTextColor"}            ],
-           "originalName": "NoMatchesFoundLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelTextColor"}            ],
-           "originalName": "ActualNoMatchesFoundLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "placeholder"}            ],
-           "originalName": "Placeholder"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "rowSeparatorsVisible"}            ],
-           "originalName": "RowSeparatorsVisible"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualTextColor"}            ],
-           "originalName": "ActualTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "underlineColor"}            ],
-           "originalName": "UnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualUnderlineColor"}            ],
-           "originalName": "ActualUnderlineColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "underlineOpacity"}            ],
-           "originalName": "UnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualUnderlineOpacity"}            ],
-           "originalName": "ActualUnderlineOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "underlineRippleColor"}            ],
-           "originalName": "UnderlineRippleColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualUnderlineRippleColor"}            ],
-           "originalName": "ActualUnderlineRippleColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "underlineRippleOpacity"}            ],
-           "originalName": "UnderlineRippleOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualUnderlineRippleOpacity"}            ],
-           "originalName": "ActualUnderlineRippleOpacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "underlineRippleWidth"}            ],
-           "originalName": "UnderlineRippleWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualUnderlineRippleWidth"}            ],
-           "originalName": "ActualUnderlineRippleWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "underlineWidth"}            ],
-           "originalName": "UnderlineWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualUnderlineWidth"}            ],
-           "originalName": "ActualUnderlineWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "allowFilter"}            ],
-           "originalName": "AllowFilter"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "sortMode"}            ],
-           "originalName": "SortMode"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textField"}            ],
-           "originalName": "TextField"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "valueField"}            ],
-           "originalName": "ValueField"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "actualValueField"}            ],
-           "originalName": "ActualValueField"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "closeUp"}            ],
-           "originalName": "CloseUp"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "dropDown"}            ],
-           "originalName": "DropDown"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "select"}            ],
-           "originalName": "Select"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
-           "originalName": "ExportVisualModel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
-           "originalName": "ExportSerializedVisualModel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "MultiColumnComboBoxSelectedItemChangeType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "MultiColumnComboBoxSelectedItemChangeType.ts",
- "mappedName": "MultiColumnComboBoxSelectedItemChangeType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Row"}            ],
-           "originalName": "Row"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-},
-{
-    "originalName": "SortMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "SortMode.ts",
- "mappedName": "SortMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "SortByOneColumnOnly"}            ],
-           "originalName": "SortByOneColumnOnly"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "SortByMultipleColumns"}            ],
-           "originalName": "SortByMultipleColumns"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "SortByOneColumnOnlyTriState"}            ],
-           "originalName": "SortByOneColumnOnlyTriState"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "SortByMultipleColumnsTriState"}            ],
-           "originalName": "SortByMultipleColumnsTriState"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "SortMode", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
-}
-]
-}
+{"extraFiles": ["igc-multi-column-combo-box-module.ts"], "types": [{"originalName": "CloneDataSourceFilterOperation", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "CloneDataSourceFilterOperation.ts", "mappedName": "CloneDataSourceFilterOperation"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "CloneDataSourceFilterOperation", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "CloneDataSourceFilterOperation", "mappedName": "ValueToText"}], "originalName": "ValueToText"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "CloneDataSourceFilterOperation", "mappedName": "TextToValue"}], "originalName": "TextToValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "GotFocusEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-got-focus-event-args.ts", "mappedName": "IgcGotFocusEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "LostFocusEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-lost-focus-event-args.ts", "mappedName": "IgcLostFocusEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "MultiColumnComboBoxTextChangedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-multi-column-combo-box-text-changed-event-args.ts", "mappedName": "IgcMultiColumnComboBoxTextChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "oldText"}], "originalName": "OldText"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "newText"}], "originalName": "NewText"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "MultiColumnComboBoxValueChangedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-multi-column-combo-box-value-changed-event-args.ts", "mappedName": "IgcMultiColumnComboBoxValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "oldValue"}], "originalName": "OldValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "newValue"}], "originalName": "NewValue"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "MultiColumnComboBox", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-multi-column-combo-box-component.ts", "mappedName": "IgcMultiColumnComboBoxComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showClearButton"}], "originalName": "ShowClearButton"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "fields"}], "originalName": "Fields"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualBackgroundColor"}], "originalName": "ActualBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}], "originalName": "BaseTheme"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "BaseControlTheme", "mappedName": "actualBaseTheme"}], "originalName": "ActualBaseTheme"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "borderColor"}], "originalName": "BorderColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualBorderColor"}], "originalName": "ActualBorderColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "borderWidth"}], "originalName": "BorderWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualBorderWidth"}], "originalName": "ActualBorderWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "columnHeadersVisible"}], "originalName": "ColumnHeadersVisible"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottom"}], "originalName": "contentPadding.bottom"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "left"}], "originalName": "contentPadding.left"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "right"}], "originalName": "contentPadding.right"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "top"}], "originalName": "contentPadding.top"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottom"}], "originalName": "actualContentPadding.bottom"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "left"}], "originalName": "actualContentPadding.left"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "right"}], "originalName": "actualContentPadding.right"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "top"}], "originalName": "actualContentPadding.top"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottomRight"}], "originalName": "cornerRadius.bottomRight"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottomLeft"}], "originalName": "cornerRadius.bottomLeft"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "topLeft"}], "originalName": "cornerRadius.topLeft"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "topRight"}], "originalName": "cornerRadius.topRight"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottomRight"}], "originalName": "actualCornerRadius.bottomRight"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "bottomLeft"}], "originalName": "actualCornerRadius.bottomLeft"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "topLeft"}], "originalName": "actualCornerRadius.topLeft"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "topRight"}], "originalName": "actualCornerRadius.topRight"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "dataSourceDesiredProperties"}], "originalName": "DataSourceDesiredProperties"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "ControlDisplayDensity", "mappedName": "density"}], "originalName": "Density"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "ControlDisplayDensity", "mappedName": "actualDensity"}], "originalName": "ActualDensity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "dropDownButtonVisible"}], "originalName": "DropDownButtonVisible"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "focusBorderColor"}], "originalName": "FocusBorderColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualFocusBorderColor"}], "originalName": "ActualFocusBorderColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "focusBorderWidth"}], "originalName": "FocusBorderWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualFocusBorderWidth"}], "originalName": "ActualFocusBorderWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "focusUnderlineColor"}], "originalName": "FocusUnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualFocusUnderlineColor"}], "originalName": "ActualFocusUnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "focusUnderlineOpacity"}], "originalName": "FocusUnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualFocusUnderlineOpacity"}], "originalName": "ActualFocusUnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "focusUnderlineRippleOpacity"}], "originalName": "FocusUnderlineRippleOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualFocusUnderlineRippleOpacity"}], "originalName": "ActualFocusUnderlineRippleOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "hoverUnderlineColor"}], "originalName": "HoverUnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualHoverUnderlineColor"}], "originalName": "ActualHoverUnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "hoverUnderlineOpacity"}], "originalName": "HoverUnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualHoverUnderlineOpacity"}], "originalName": "ActualHoverUnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "hoverUnderlineWidth"}], "originalName": "HoverUnderlineWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualHoverUnderlineWidth"}], "originalName": "ActualHoverUnderlineWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "dataSource"}], "originalName": "ItemsSource"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IDataSource", "mappedName": "actualDataSource"}], "originalName": "ActualDataSource"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "label"}], "originalName": "Label"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "labelTextColor"}], "originalName": "LabelTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualLabelTextColor"}], "originalName": "ActualLabelTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualLabelVisible"}], "originalName": "ActualLabelVisible"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "noMatchesFoundLabel"}], "originalName": "NoMatchesFoundLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualNoMatchesFoundLabel"}], "originalName": "ActualNoMatchesFoundLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "noMatchesFoundLabelBackgroundColor"}], "originalName": "NoMatchesFoundLabelBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelBackgroundColor"}], "originalName": "ActualNoMatchesFoundLabelBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "noMatchesFoundLabelTextColor"}], "originalName": "NoMatchesFoundLabelTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualNoMatchesFoundLabelTextColor"}], "originalName": "ActualNoMatchesFoundLabelTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "placeholder"}], "originalName": "Placeholder"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "rowSeparatorsVisible"}], "originalName": "RowSeparatorsVisible"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualTextColor"}], "originalName": "ActualTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "underlineColor"}], "originalName": "UnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualUnderlineColor"}], "originalName": "ActualUnderlineColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "underlineOpacity"}], "originalName": "UnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualUnderlineOpacity"}], "originalName": "ActualUnderlineOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "underlineRippleColor"}], "originalName": "UnderlineRippleColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualUnderlineRippleColor"}], "originalName": "ActualUnderlineRippleColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "underlineRippleOpacity"}], "originalName": "UnderlineRippleOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualUnderlineRippleOpacity"}], "originalName": "ActualUnderlineRippleOpacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "underlineRippleWidth"}], "originalName": "UnderlineRippleWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualUnderlineRippleWidth"}], "originalName": "ActualUnderlineRippleWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "underlineWidth"}], "originalName": "UnderlineWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualUnderlineWidth"}], "originalName": "ActualUnderlineWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowFilter"}], "originalName": "AllowFilter"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "sortMode"}], "originalName": "SortMode"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "textField"}], "originalName": "TextField"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "text"}], "originalName": "Text"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "valueField"}], "originalName": "ValueField"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "actualValueField"}], "originalName": "ActualValueField"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "closeUp"}], "originalName": "CloseUp"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "dropDown"}], "originalName": "DropDown"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "select"}], "originalName": "Select"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "MultiColumnComboBoxSelectedItemChangeType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "MultiColumnComboBoxSelectedItemChangeType.ts", "mappedName": "MultiColumnComboBoxSelectedItemChangeType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Text"}], "originalName": "Text"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "MultiColumnComboBoxSelectedItemChangeType", "mappedName": "Row"}], "originalName": "Row"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Grid.Implementation"}, {"originalName": "SortMode", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "SortMode.ts", "mappedName": "SortMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "SortByOneColumnOnly"}], "originalName": "SortByOneColumnOnly"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "SortByMultipleColumns"}], "originalName": "SortByMultipleColumns"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "SortByOneColumnOnlyTriState"}], "originalName": "SortByOneColumnOnlyTriState"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "SortByMultipleColumnsTriState"}], "originalName": "SortByMultipleColumnsTriState"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "SortMode", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Grid.Implementation"}]}

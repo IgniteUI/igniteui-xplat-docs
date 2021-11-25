@@ -1,270 +1,78 @@
-{
-"types": [
-{
-    "originalName": "PolarAreaSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-area-series.ts",
-    "dynamicModuleName": "igr-polar-area-series-dynamic-module.ts",
-    "moduleName": "igr-polar-area-series-module.ts",
- "mappedName": "IgrPolarAreaSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
-           "originalName": "IsArea"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarBase",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-base.ts",
- "mappedName": "IgrPolarBase"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPolar"}            ],
-           "originalName": "IsPolar"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "angleMemberPath"}            ],
-           "originalName": "AngleMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "radiusMemberPath"}            ],
-           "originalName": "RadiusMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrNumericAngleAxis", "mappedName": "angleAxis"}            ],
-           "originalName": "AngleAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrNumericRadiusAxis", "mappedName": "radiusAxis"}            ],
-           "originalName": "RadiusAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useCartesianInterpolation"}            ],
-           "originalName": "UseCartesianInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineZIndex"}            ],
-           "originalName": "TrendLineZIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "clipSeriesToBounds"}            ],
-           "originalName": "ClipSeriesToBounds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
-           "originalName": "ActualItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}            ],
-           "originalName": "IsCustomPolarStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomPolarMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsRadiusAxis"}            ],
-           "originalName": "CanUseAsRadiusAxis"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "canUseAsAngleAxis"}            ],
-           "originalName": "CanUseAsAngleAxis"
-       }   ],
-    "originalBaseTypeName": "MarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarLineSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-line-series.ts",
-    "dynamicModuleName": "igr-polar-line-series-dynamic-module.ts",
-    "moduleName": "igr-polar-line-series-module.ts",
- "mappedName": "IgrPolarLineSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
-           "originalName": "IsLineOnly"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarLineSeriesBase",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-line-series-base.ts",
- "mappedName": "IgrPolarLineSeriesBase"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "PolarBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarScatterSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-scatter-series.ts",
-    "dynamicModuleName": "igr-polar-scatter-series-dynamic-module.ts",
-    "moduleName": "igr-polar-scatter-series-module.ts",
- "mappedName": "IgrPolarScatterSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
-           "originalName": "HasOnlyMarkers"
-       }   ],
-    "originalBaseTypeName": "PolarBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarSplineAreaSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-spline-area-series.ts",
-    "dynamicModuleName": "igr-polar-spline-area-series-dynamic-module.ts",
-    "moduleName": "igr-polar-spline-area-series-module.ts",
- "mappedName": "IgrPolarSplineAreaSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
-           "originalName": "IsArea"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
-           "originalName": "IsSpline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarSplineSeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-polar-spline-series.ts",
-    "dynamicModuleName": "igr-polar-spline-series-dynamic-module.ts",
-    "moduleName": "igr-polar-spline-series-module.ts",
- "mappedName": "IgrPolarSplineSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
-           "originalName": "IsSpline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "PolarAreaSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-area-series.ts", "dynamicModuleName": "igr-polar-area-series-dynamic-module.ts", "moduleName": "igr-polar-area-series-module.ts", "mappedName": "IgrPolarAreaSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}, 
+    {"names": [{"platform": "React", "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}], "originalName": "UnknownValuePlotting"}
+  ], 
+  "originalBaseTypeName": "PolarLineSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarBase", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-base.ts", "mappedName": "IgrPolarBase"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isPolar"}], "originalName": "IsPolar"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "angleMemberPath"}], "originalName": "AngleMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "radiusMemberPath"}], "originalName": "RadiusMemberPath"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrNumericAngleAxis", "mappedName": "angleAxis"}], "originalName": "AngleAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "IgrNumericRadiusAxis", "mappedName": "radiusAxis"}], "originalName": "RadiusAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useCartesianInterpolation"}], "originalName": "UseCartesianInterpolation"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maximumMarkers"}], "originalName": "MaximumMarkers"}, 
+    {"names": [{"platform": "React", "mappedType": "TrendLineType", "mappedName": "trendLineType"}], "originalName": "TrendLineType"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "trendLineBrush"}], "originalName": "TrendLineBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualTrendLineBrush"}], "originalName": "ActualTrendLineBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "trendLineThickness"}], "originalName": "TrendLineThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "trendLinePeriod"}], "originalName": "TrendLinePeriod"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "trendLineZIndex"}], "originalName": "TrendLineZIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "clipSeriesToBounds"}], "originalName": "ClipSeriesToBounds"}, 
+    {"names": [{"platform": "React", "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}], "originalName": "ActualItemSearchMode"}, 
+    {"names": [{"platform": "React", "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "itemSearchThreshold"}], "originalName": "ItemSearchThreshold"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomPolarStyleAllowed"}], "originalName": "IsCustomPolarStyleAllowed"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isCustomPolarMarkerStyleAllowed"}], "originalName": "IsCustomPolarMarkerStyleAllowed"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemValue"}], "originalName": "GetItemValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsRadiusAxis"}], "originalName": "CanUseAsRadiusAxis"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsAngleAxis"}], "originalName": "CanUseAsAngleAxis"}
+  ], 
+  "originalBaseTypeName": "MarkerSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarLineSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-line-series.ts", "dynamicModuleName": "igr-polar-line-series-dynamic-module.ts", "moduleName": "igr-polar-line-series-module.ts", "mappedName": "IgrPolarLineSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isLineOnly"}], "originalName": "IsLineOnly"}, 
+    {"names": [{"platform": "React", "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}], "originalName": "UnknownValuePlotting"}
+  ], 
+  "originalBaseTypeName": "PolarLineSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarLineSeriesBase", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-line-series-base.ts", "mappedName": "IgrPolarLineSeriesBase"}
+  ], 
+  "members": [], "originalBaseTypeName": "PolarBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarScatterSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-scatter-series.ts", "dynamicModuleName": "igr-polar-scatter-series-dynamic-module.ts", "moduleName": "igr-polar-scatter-series-module.ts", "mappedName": "IgrPolarScatterSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}], "originalName": "HasOnlyMarkers"}
+  ], 
+  "originalBaseTypeName": "PolarBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarSplineAreaSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-spline-area-series.ts", "dynamicModuleName": "igr-polar-spline-area-series-dynamic-module.ts", "moduleName": "igr-polar-spline-area-series-module.ts", "mappedName": "IgrPolarSplineAreaSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "stiffness"}], "originalName": "Stiffness"}
+  ], 
+  "originalBaseTypeName": "PolarLineSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "PolarSplineSeries", 
+  "names": [
+    {"platform": "React", "fileName": "igr-polar-spline-series.ts", "dynamicModuleName": "igr-polar-spline-series-dynamic-module.ts", "moduleName": "igr-polar-spline-series-module.ts", "mappedName": "IgrPolarSplineSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "stiffness"}], "originalName": "Stiffness"}
+  ], 
+  "originalBaseTypeName": "PolarLineSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}

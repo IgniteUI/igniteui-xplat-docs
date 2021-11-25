@@ -1,390 +1,108 @@
-{
-"extraFiles": [
-"igc-shape-data-source-module.ts",
-"igc-heat-tile-generator-module.ts"
-],
-"types": [
-{
-    "originalName": "HeatTileGenerator",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-heat-tile-generator.ts",
- "mappedName": "IgcHeatTileGenerator"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "yValues"}            ],
-           "originalName": "YValues"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "xValues"}            ],
-           "originalName": "XValues"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "values"}            ],
-           "originalName": "Values"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "minimumColor"}            ],
-           "originalName": "MinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "maximumColor"}            ],
-           "originalName": "MaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number[]", "mappedName": "scaleColorOffsets"}            ],
-           "originalName": "ScaleColorOffsets"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "blurRadius"}            ],
-           "originalName": "BlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maxBlurRadius"}            ],
-           "originalName": "MaxBlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useBlurRadiusAdjustedForZoom"}            ],
-           "originalName": "UseBlurRadiusAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useGlobalMinMax"}            ],
-           "originalName": "UseGlobalMinMax"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useGlobalMinMaxAdjustedForZoom"}            ],
-           "originalName": "UseGlobalMinMaxAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useLogarithmicScale"}            ],
-           "originalName": "UseLogarithmicScale"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useWebWorkers"}            ],
-           "originalName": "UseWebWorkers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "webWorkerScriptPath"}            ],
-           "originalName": "WebWorkerScriptPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "webWorkerInstance"}            ],
-           "originalName": "WebWorkerInstance"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "destroy"}            ],
-           "originalName": "Destroy"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getTile"}            ],
-           "originalName": "GetTile"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "cancelTile"}            ],
-           "originalName": "CancelTile"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ShapefileConverter",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-shape-data-source.ts",
- "mappedName": "IgcShapeDataSource"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "worldRect"}            ],
-           "originalName": "WorldRect"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "computedWorldRect"}            ],
-           "originalName": "ComputedWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ShapeType", "mappedName": "shapeType"}            ],
-           "originalName": "ShapeType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Header", "mappedName": "shapeHeader"}            ],
-           "originalName": "ShapeHeader"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "deferImportCompleted"}            ],
-           "originalName": "DeferImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "shapefileSource"}            ],
-           "originalName": "ShapefileSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "databaseSource"}            ],
-           "originalName": "DatabaseSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "count"}            ],
-           "originalName": "Count"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getWorldBounds"}            ],
-           "originalName": "GetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setWorldBounds"}            ],
-           "originalName": "SetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "sendImportCompleted"}            ],
-           "originalName": "SendImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecordsCount"}            ],
-           "originalName": "GetRecordsCount"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecord"}            ],
-           "originalName": "GetRecord"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecordBounds"}            ],
-           "originalName": "GetRecordBounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecordFieldNames"}            ],
-           "originalName": "GetRecordFieldNames"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecordValue"}            ],
-           "originalName": "GetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "removeRecord"}            ],
-           "originalName": "RemoveRecord"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "shiftAllShapes"}            ],
-           "originalName": "ShiftAllShapes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "shiftShapes"}            ],
-           "originalName": "ShiftShapes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getMaxLongitude"}            ],
-           "originalName": "GetMaxLongitude"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setRecordValue"}            ],
-           "originalName": "SetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getRecordValues"}            ],
-           "originalName": "GetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setRecordValues"}            ],
-           "originalName": "SetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getLargestShapeBoundsForRecord"}            ],
-           "originalName": "GetLargestShapeBoundsForRecord"
-       }   ],
-    "originalBaseTypeName": "DependencyObjectNotifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapeFilterRecordEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-shape-filter-record-event-args.ts",
- "mappedName": "IgcShapeFilterRecordEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcShapefileRecord", "mappedName": "record"}            ],
-           "originalName": "Record"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldInclude"}            ],
-           "originalName": "ShouldInclude"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapefileRecord",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-shapefile-record.ts",
- "mappedName": "IgcShapefileRecord"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "fieldValues"}            ],
-           "originalName": "FieldValues"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getFieldValue"}            ],
-           "originalName": "GetFieldValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "setFieldValue"}            ],
-           "originalName": "SetFieldValue"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GetTileImageUriArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-get-tile-image-uri-args.ts",
- "mappedName": "IgcGetTileImageUriArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "tileLevel"}            ],
-           "originalName": "TileLevel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "tilePositionX"}            ],
-           "originalName": "TilePositionX"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "tilePositionY"}            ],
-           "originalName": "TilePositionY"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "tileImageUri"}            ],
-           "originalName": "TileImageUri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ItfConverter",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-triangulation-data-source.ts",
- "mappedName": "IgcTriangulationDataSource"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "DownloadingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-downloading-multi-scale-image-event-args.ts",
- "mappedName": "IgcDownloadingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "CancellingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-cancelling-multi-scale-image-event-args.ts",
- "mappedName": "IgcCancellingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "TriangulationStatusEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-triangulation-status-event-args.ts",
- "mappedName": "IgcTriangulationStatusEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "currentStatus"}            ],
-           "originalName": "CurrentStatus"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igc-shape-data-source-module.ts", "igc-heat-tile-generator-module.ts"], "types": [{"originalName": "HeatTileGenerator", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-heat-tile-generator.ts", "mappedName": "IgcHeatTileGenerator"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number[]", "mappedName": "yValues"}], "originalName": "YValues"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number[]", "mappedName": "xValues"}], "originalName": "XValues"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number[]", "mappedName": "values"}], "originalName": "Values"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "minimumColor"}], "originalName": "MinimumColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "maximumColor"}], "originalName": "MaximumColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number[]", "mappedName": "scaleColorOffsets"}], "originalName": "ScaleColorOffsets"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "blurRadius"}], "originalName": "BlurRadius"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "maxBlurRadius"}], "originalName": "MaxBlurRadius"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useBlurRadiusAdjustedForZoom"}], "originalName": "UseBlurRadiusAdjustedForZoom"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useGlobalMinMax"}], "originalName": "UseGlobalMinMax"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useGlobalMinMaxAdjustedForZoom"}], "originalName": "UseGlobalMinMaxAdjustedForZoom"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "minimumValue"}], "originalName": "MinimumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "maximumValue"}], "originalName": "MaximumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "logarithmBase"}], "originalName": "LogarithmBase"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useLogarithmicScale"}], "originalName": "UseLogarithmicScale"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useWebWorkers"}], "originalName": "UseWebWorkers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "webWorkerScriptPath"}], "originalName": "WebWorkerScriptPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "webWorkerInstance"}], "originalName": "WebWorkerInstance"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "destroy"}], "originalName": "Destroy"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getTile"}], "originalName": "GetTile"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "cancelTile"}], "originalName": "CancelTile"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "ShapefileConverter", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-shape-data-source.ts", "mappedName": "IgcShapeDataSource"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgRect", "mappedName": "worldRect"}], "originalName": "WorldRect"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgRect", "mappedName": "computedWorldRect"}], "originalName": "ComputedWorldRect"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "ShapeType", "mappedName": "shapeType"}], "originalName": "ShapeType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Header", "mappedName": "shapeHeader"}], "originalName": "ShapeHeader"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "deferImportCompleted"}], "originalName": "DeferImportCompleted"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "shapefileSource"}], "originalName": "ShapefileSource"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "databaseSource"}], "originalName": "DatabaseSource"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "count"}], "originalName": "Count"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getWorldBounds"}], "originalName": "GetWorldBounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "setWorldBounds"}], "originalName": "SetWorldBounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "sendImportCompleted"}], "originalName": "SendImportCompleted"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecordsCount"}], "originalName": "GetRecordsCount"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecord"}], "originalName": "GetRecord"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecordBounds"}], "originalName": "GetRecordBounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecordFieldNames"}], "originalName": "GetRecordFieldNames"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecordValue"}], "originalName": "GetRecordValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "removeRecord"}], "originalName": "RemoveRecord"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "shiftAllShapes"}], "originalName": "ShiftAllShapes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "shiftShapes"}], "originalName": "ShiftShapes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getMaxLongitude"}], "originalName": "GetMaxLongitude"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "setRecordValue"}], "originalName": "SetRecordValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getRecordValues"}], "originalName": "GetRecordValues"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "setRecordValues"}], "originalName": "SetRecordValues"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getLargestShapeBoundsForRecord"}], "originalName": "GetLargestShapeBoundsForRecord"}
+  ], 
+  "originalBaseTypeName": "DependencyObjectNotifier", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapeFilterRecordEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-shape-filter-record-event-args.ts", "mappedName": "IgcShapeFilterRecordEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcShapefileRecord", "mappedName": "record"}], "originalName": "Record"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "shouldInclude"}], "originalName": "ShouldInclude"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapefileRecord", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-shapefile-record.ts", "mappedName": "IgcShapefileRecord"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "fieldValues"}], "originalName": "FieldValues"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgRect", "mappedName": "bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getFieldValue"}], "originalName": "GetFieldValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "setFieldValue"}], "originalName": "SetFieldValue"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GetTileImageUriArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-get-tile-image-uri-args.ts", "mappedName": "IgcGetTileImageUriArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "tileLevel"}], "originalName": "TileLevel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "tilePositionX"}], "originalName": "TilePositionX"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "tilePositionY"}], "originalName": "TilePositionY"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "tileImageUri"}], "originalName": "TileImageUri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ItfConverter", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-triangulation-data-source.ts", "mappedName": "IgcTriangulationDataSource"}
+  ], 
+  "members": [], "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "DownloadingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-downloading-multi-scale-image-event-args.ts", "mappedName": "IgcDownloadingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "CancellingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-cancelling-multi-scale-image-event-args.ts", "mappedName": "IgcCancellingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "TriangulationStatusEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-triangulation-status-event-args.ts", "mappedName": "IgcTriangulationStatusEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "currentStatus"}], "originalName": "CurrentStatus"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}]}

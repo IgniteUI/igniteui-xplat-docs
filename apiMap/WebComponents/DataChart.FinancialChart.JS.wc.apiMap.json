@@ -1,746 +1,174 @@
-{
-"extraFiles": [
-"igc-financial-chart-module.ts",
-"igc-financial-chart-core-module.ts",
-"igc-financial-chart-default-templates-component.ts"
-],
-"types": [
-{
-    "originalName": "FinancialChart",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-financial-chart-component.ts",
- "mappedName": "IgcFinancialChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "leftMargin"}            ],
-           "originalName": "LeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
-           "originalName": "IsHorizontalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "toolbarHeight"}            ],
-           "originalName": "ToolbarHeight"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DomainType", "mappedName": "domainType"}            ],
-           "originalName": "DomainType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}            ],
-           "originalName": "YAxisIsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLogarithmBase"}            ],
-           "originalName": "YAxisLogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisInterval"}            ],
-           "originalName": "YAxisInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMinimumValue"}            ],
-           "originalName": "YAxisMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMaximumValue"}            ],
-           "originalName": "YAxisMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMinorInterval"}            ],
-           "originalName": "YAxisMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisActualMinimum"}            ],
-           "originalName": "YAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisActualMaximum"}            ],
-           "originalName": "YAxisActualMaximum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartVolumeType", "mappedName": "volumeType"}            ],
-           "originalName": "VolumeType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartXAxisMode", "mappedName": "xAxisMode"}            ],
-           "originalName": "XAxisMode"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartYAxisMode", "mappedName": "yAxisMode"}            ],
-           "originalName": "YAxisMode"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isToolbarVisible"}            ],
-           "originalName": "IsToolbarVisible"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "chartType"}            ],
-           "originalName": "ChartType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}            ],
-           "originalName": "YAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWindowSyncedToVisibleRange"}            ],
-           "originalName": "IsWindowSyncedToVisibleRange"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcFinancialIndicatorTypeCollection", "mappedName": "indicatorTypes"}            ],
-           "originalName": "IndicatorTypes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcFinancialOverlayTypeCollection", "mappedName": "overlayTypes"}            ],
-           "originalName": "OverlayTypes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "yAxisAbbreviateLargeNumbers"}            ],
-           "originalName": "YAxisAbbreviateLargeNumbers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "resolution"}            ],
-           "originalName": "Resolution"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "zoomSliderType"}            ],
-           "originalName": "ZoomSliderType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "negativeBrushes"}            ],
-           "originalName": "NegativeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "negativeOutlines"}            ],
-           "originalName": "NegativeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "overlayBrushes"}            ],
-           "originalName": "OverlayBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "overlayOutlines"}            ],
-           "originalName": "OverlayOutlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "volumeOutlines"}            ],
-           "originalName": "VolumeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "volumeBrushes"}            ],
-           "originalName": "VolumeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "indicatorNegativeBrushes"}            ],
-           "originalName": "IndicatorNegativeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "indicatorBrushes"}            ],
-           "originalName": "IndicatorBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "volumeThickness"}            ],
-           "originalName": "VolumeThickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "overlayThickness"}            ],
-           "originalName": "OverlayThickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "overlayMultiplier"}            ],
-           "originalName": "OverlayMultiplier"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorThickness"}            ],
-           "originalName": "IndicatorThickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcIndicatorDisplayTypeCollection", "mappedName": "indicatorDisplayTypes"}            ],
-           "originalName": "IndicatorDisplayTypes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorPeriod"}            ],
-           "originalName": "IndicatorPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorMultiplier"}            ],
-           "originalName": "IndicatorMultiplier"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorSmoothingPeriod"}            ],
-           "originalName": "IndicatorSmoothingPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorShortPeriod"}            ],
-           "originalName": "IndicatorShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorLongPeriod"}            ],
-           "originalName": "IndicatorLongPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "indicatorSignalPeriod"}            ],
-           "originalName": "IndicatorSignalPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcFinancialChartRangeSelectorOptionCollection", "mappedName": "rangeSelectorOptions"}            ],
-           "originalName": "RangeSelectorOptions"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcCustomIndicatorNameCollection", "mappedName": "customIndicatorNames"}            ],
-           "originalName": "CustomIndicatorNames"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
-           "originalName": "IsVerticalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "zoomSliderXAxisMajorStroke"}            ],
-           "originalName": "ZoomSliderXAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "zoomSliderXAxisMajorStrokeThickness"}            ],
-           "originalName": "ZoomSliderXAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLegendVisible"}            ],
-           "originalName": "IsLegendVisible"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "xAxisMinimumValue"}            ],
-           "originalName": "XAxisMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "xAxisMaximumValue"}            ],
-           "originalName": "XAxisMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "XYChart",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartRangeSelectorOption",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartRangeSelectorOption.ts",
- "mappedName": "FinancialChartRangeSelectorOption"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneMonth"}            ],
-           "originalName": "OneMonth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "ThreeMonths"}            ],
-           "originalName": "ThreeMonths"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "SixMonths"}            ],
-           "originalName": "SixMonths"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "YearToDate"}            ],
-           "originalName": "YearToDate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneYear"}            ],
-           "originalName": "OneYear"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "All"}            ],
-           "originalName": "All"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartCustomIndicatorArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-financial-chart-custom-indicator-args.ts",
- "mappedName": "IgcFinancialChartCustomIndicatorArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcSeriesComponent", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartVolumeType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartVolumeType.ts",
- "mappedName": "FinancialChartVolumeType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartVolumeType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartVolumeType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartVolumeType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartVolumeType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartType.ts",
- "mappedName": "FinancialChartType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "Bar"}            ],
-           "originalName": "Bar"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "Candle"}            ],
-           "originalName": "Candle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartXAxisMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartXAxisMode.ts",
- "mappedName": "FinancialChartXAxisMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartXAxisMode", "mappedName": "Ordinal"}            ],
-           "originalName": "Ordinal"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartXAxisMode", "mappedName": "Time"}            ],
-           "originalName": "Time"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartYAxisMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartYAxisMode.ts",
- "mappedName": "FinancialChartYAxisMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartYAxisMode", "mappedName": "Numeric"}            ],
-           "originalName": "Numeric"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartYAxisMode", "mappedName": "PercentChange"}            ],
-           "originalName": "PercentChange"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartZoomSliderType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialChartZoomSliderType.ts",
- "mappedName": "FinancialChartZoomSliderType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Bar"}            ],
-           "originalName": "Bar"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Candle"}            ],
-           "originalName": "Candle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialOverlayType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialOverlayType.ts",
- "mappedName": "FinancialOverlayType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialOverlayType", "mappedName": "BollingerBands"}            ],
-           "originalName": "BollingerBands"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialOverlayType", "mappedName": "PriceChannel"}            ],
-           "originalName": "PriceChannel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialIndicatorType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FinancialIndicatorType.ts",
- "mappedName": "FinancialIndicatorType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "AbsoluteVolumeOscillator"}            ],
-           "originalName": "AbsoluteVolumeOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "AccumulationDistribution"}            ],
-           "originalName": "AccumulationDistribution"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "AverageDirectionalIndex"}            ],
-           "originalName": "AverageDirectionalIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "AverageTrueRange"}            ],
-           "originalName": "AverageTrueRange"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "BollingerBandWidth"}            ],
-           "originalName": "BollingerBandWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinOscillator"}            ],
-           "originalName": "ChaikinOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinVolatility"}            ],
-           "originalName": "ChaikinVolatility"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "CommodityChannelIndex"}            ],
-           "originalName": "CommodityChannelIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "DetrendedPriceOscillator"}            ],
-           "originalName": "DetrendedPriceOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "EaseOfMovement"}            ],
-           "originalName": "EaseOfMovement"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "FastStochasticOscillator"}            ],
-           "originalName": "FastStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "ForceIndex"}            ],
-           "originalName": "ForceIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "FullStochasticOscillator"}            ],
-           "originalName": "FullStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "MarketFacilitationIndex"}            ],
-           "originalName": "MarketFacilitationIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "MassIndex"}            ],
-           "originalName": "MassIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "MedianPrice"}            ],
-           "originalName": "MedianPrice"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "MoneyFlowIndex"}            ],
-           "originalName": "MoneyFlowIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "MovingAverageConvergenceDivergence"}            ],
-           "originalName": "MovingAverageConvergenceDivergence"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "NegativeVolumeIndex"}            ],
-           "originalName": "NegativeVolumeIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "OnBalanceVolume"}            ],
-           "originalName": "OnBalanceVolume"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "PercentagePriceOscillator"}            ],
-           "originalName": "PercentagePriceOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "PercentageVolumeOscillator"}            ],
-           "originalName": "PercentageVolumeOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "PositiveVolumeIndex"}            ],
-           "originalName": "PositiveVolumeIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "PriceVolumeTrend"}            ],
-           "originalName": "PriceVolumeTrend"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "RateOfChangeAndMomentum"}            ],
-           "originalName": "RateOfChangeAndMomentum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "RelativeStrengthIndex"}            ],
-           "originalName": "RelativeStrengthIndex"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "SlowStochasticOscillator"}            ],
-           "originalName": "SlowStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "StandardDeviation"}            ],
-           "originalName": "StandardDeviation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "StochRSI"}            ],
-           "originalName": "StochRSI"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "TRIX"}            ],
-           "originalName": "TRIX"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "TypicalPrice"}            ],
-           "originalName": "TypicalPrice"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "UltimateOscillator"}            ],
-           "originalName": "UltimateOscillator"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "WeightedClose"}            ],
-           "originalName": "WeightedClose"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FinancialIndicatorType", "mappedName": "WilliamsPercentR"}            ],
-           "originalName": "WilliamsPercentR"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igc-financial-chart-module.ts", "igc-financial-chart-core-module.ts", "igc-financial-chart-default-templates-component.ts"], "types": [{"originalName": "FinancialChart", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-financial-chart-component.ts", "mappedName": "IgcFinancialChartComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "leftMargin"}], "originalName": "LeftMargin"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}], "originalName": "IsHorizontalZoomEnabled"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "toolbarHeight"}], "originalName": "ToolbarHeight"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DomainType", "mappedName": "domainType"}], "originalName": "DomainType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}], "originalName": "YAxisIsLogarithmic"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisLogarithmBase"}], "originalName": "YAxisLogarithmBase"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisInterval"}], "originalName": "YAxisInterval"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisMinimumValue"}], "originalName": "YAxisMinimumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisMaximumValue"}], "originalName": "YAxisMaximumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisMinorInterval"}], "originalName": "YAxisMinorInterval"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisActualMinimum"}], "originalName": "YAxisActualMinimum"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "yAxisActualMaximum"}], "originalName": "YAxisActualMaximum"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartVolumeType", "mappedName": "volumeType"}], "originalName": "VolumeType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartXAxisMode", "mappedName": "xAxisMode"}], "originalName": "XAxisMode"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartYAxisMode", "mappedName": "yAxisMode"}], "originalName": "YAxisMode"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isToolbarVisible"}], "originalName": "IsToolbarVisible"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "chartType"}], "originalName": "ChartType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}], "originalName": "YAxisLabelHorizontalAlignment"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isWindowSyncedToVisibleRange"}], "originalName": "IsWindowSyncedToVisibleRange"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcFinancialIndicatorTypeCollection", "mappedName": "indicatorTypes"}], "originalName": "IndicatorTypes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcFinancialOverlayTypeCollection", "mappedName": "overlayTypes"}], "originalName": "OverlayTypes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "yAxisAbbreviateLargeNumbers"}], "originalName": "YAxisAbbreviateLargeNumbers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "resolution"}], "originalName": "Resolution"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "zoomSliderType"}], "originalName": "ZoomSliderType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "negativeBrushes"}], "originalName": "NegativeBrushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "negativeOutlines"}], "originalName": "NegativeOutlines"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "overlayBrushes"}], "originalName": "OverlayBrushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "overlayOutlines"}], "originalName": "OverlayOutlines"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "volumeOutlines"}], "originalName": "VolumeOutlines"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "volumeBrushes"}], "originalName": "VolumeBrushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "indicatorNegativeBrushes"}], "originalName": "IndicatorNegativeBrushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "indicatorBrushes"}], "originalName": "IndicatorBrushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "volumeThickness"}], "originalName": "VolumeThickness"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "overlayThickness"}], "originalName": "OverlayThickness"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "overlayMultiplier"}], "originalName": "OverlayMultiplier"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorThickness"}], "originalName": "IndicatorThickness"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcIndicatorDisplayTypeCollection", "mappedName": "indicatorDisplayTypes"}], "originalName": "IndicatorDisplayTypes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorPeriod"}], "originalName": "IndicatorPeriod"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorMultiplier"}], "originalName": "IndicatorMultiplier"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorSmoothingPeriod"}], "originalName": "IndicatorSmoothingPeriod"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorShortPeriod"}], "originalName": "IndicatorShortPeriod"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorLongPeriod"}], "originalName": "IndicatorLongPeriod"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "indicatorSignalPeriod"}], "originalName": "IndicatorSignalPeriod"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcFinancialChartRangeSelectorOptionCollection", "mappedName": "rangeSelectorOptions"}], "originalName": "RangeSelectorOptions"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcCustomIndicatorNameCollection", "mappedName": "customIndicatorNames"}], "originalName": "CustomIndicatorNames"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}], "originalName": "IsVerticalZoomEnabled"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "zoomSliderXAxisMajorStroke"}], "originalName": "ZoomSliderXAxisMajorStroke"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "zoomSliderXAxisMajorStrokeThickness"}], "originalName": "ZoomSliderXAxisMajorStrokeThickness"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLegendVisible"}], "originalName": "IsLegendVisible"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "xAxisMinimumValue"}], "originalName": "XAxisMinimumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "xAxisMaximumValue"}], "originalName": "XAxisMaximumValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
+  ], 
+  "originalBaseTypeName": "XYChart", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartRangeSelectorOption", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartRangeSelectorOption.ts", "mappedName": "FinancialChartRangeSelectorOption"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneMonth"}], "originalName": "OneMonth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "ThreeMonths"}], "originalName": "ThreeMonths"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "SixMonths"}], "originalName": "SixMonths"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "YearToDate"}], "originalName": "YearToDate"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneYear"}], "originalName": "OneYear"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "All"}], "originalName": "All"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartCustomIndicatorArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-financial-chart-custom-indicator-args.ts", "mappedName": "IgcFinancialChartCustomIndicatorArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcSeriesComponent", "mappedName": "series"}], "originalName": "Series"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartVolumeType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartVolumeType.ts", "mappedName": "FinancialChartVolumeType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartVolumeType", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartVolumeType", "mappedName": "Column"}], "originalName": "Column"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartVolumeType", "mappedName": "Line"}], "originalName": "Line"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartVolumeType", "mappedName": "Area"}], "originalName": "Area"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartType.ts", "mappedName": "FinancialChartType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "Bar"}], "originalName": "Bar"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "Candle"}], "originalName": "Candle"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "Column"}], "originalName": "Column"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartType", "mappedName": "Line"}], "originalName": "Line"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartXAxisMode", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartXAxisMode.ts", "mappedName": "FinancialChartXAxisMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartXAxisMode", "mappedName": "Ordinal"}], "originalName": "Ordinal"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartXAxisMode", "mappedName": "Time"}], "originalName": "Time"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartYAxisMode", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartYAxisMode.ts", "mappedName": "FinancialChartYAxisMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartYAxisMode", "mappedName": "Numeric"}], "originalName": "Numeric"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartYAxisMode", "mappedName": "PercentChange"}], "originalName": "PercentChange"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialChartZoomSliderType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialChartZoomSliderType.ts", "mappedName": "FinancialChartZoomSliderType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Bar"}], "originalName": "Bar"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Candle"}], "originalName": "Candle"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Column"}], "originalName": "Column"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Line"}], "originalName": "Line"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialChartZoomSliderType", "mappedName": "Area"}], "originalName": "Area"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialOverlayType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialOverlayType.ts", "mappedName": "FinancialOverlayType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialOverlayType", "mappedName": "BollingerBands"}], "originalName": "BollingerBands"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialOverlayType", "mappedName": "PriceChannel"}], "originalName": "PriceChannel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialIndicatorType", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FinancialIndicatorType.ts", "mappedName": "FinancialIndicatorType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "AbsoluteVolumeOscillator"}], "originalName": "AbsoluteVolumeOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "AccumulationDistribution"}], "originalName": "AccumulationDistribution"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "AverageDirectionalIndex"}], "originalName": "AverageDirectionalIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "AverageTrueRange"}], "originalName": "AverageTrueRange"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "BollingerBandWidth"}], "originalName": "BollingerBandWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinOscillator"}], "originalName": "ChaikinOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinVolatility"}], "originalName": "ChaikinVolatility"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "CommodityChannelIndex"}], "originalName": "CommodityChannelIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "DetrendedPriceOscillator"}], "originalName": "DetrendedPriceOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "EaseOfMovement"}], "originalName": "EaseOfMovement"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "FastStochasticOscillator"}], "originalName": "FastStochasticOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "ForceIndex"}], "originalName": "ForceIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "FullStochasticOscillator"}], "originalName": "FullStochasticOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "MarketFacilitationIndex"}], "originalName": "MarketFacilitationIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "MassIndex"}], "originalName": "MassIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "MedianPrice"}], "originalName": "MedianPrice"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "MoneyFlowIndex"}], "originalName": "MoneyFlowIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "MovingAverageConvergenceDivergence"}], "originalName": "MovingAverageConvergenceDivergence"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "NegativeVolumeIndex"}], "originalName": "NegativeVolumeIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "OnBalanceVolume"}], "originalName": "OnBalanceVolume"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "PercentagePriceOscillator"}], "originalName": "PercentagePriceOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "PercentageVolumeOscillator"}], "originalName": "PercentageVolumeOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "PositiveVolumeIndex"}], "originalName": "PositiveVolumeIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "PriceVolumeTrend"}], "originalName": "PriceVolumeTrend"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "RateOfChangeAndMomentum"}], "originalName": "RateOfChangeAndMomentum"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "RelativeStrengthIndex"}], "originalName": "RelativeStrengthIndex"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "SlowStochasticOscillator"}], "originalName": "SlowStochasticOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "StandardDeviation"}], "originalName": "StandardDeviation"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "StochRSI"}], "originalName": "StochRSI"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "TRIX"}], "originalName": "TRIX"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "TypicalPrice"}], "originalName": "TypicalPrice"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "UltimateOscillator"}], "originalName": "UltimateOscillator"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "WeightedClose"}], "originalName": "WeightedClose"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FinancialIndicatorType", "mappedName": "WilliamsPercentR"}], "originalName": "WilliamsPercentR"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}]}

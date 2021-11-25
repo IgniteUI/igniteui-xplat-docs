@@ -1,223 +1,55 @@
-{
-"extraFiles": [
-"igc-x-calendar-module.ts"
-],
-"types": [
-{
-    "originalName": "Calendar",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-x-calendar-component.ts",
- "mappedName": "IgcXCalendarComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "today"}            ],
-           "originalName": "Today"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "minDate"}            ],
-           "originalName": "MinDate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "maxDate"}            ],
-           "originalName": "MaxDate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "selectedDateBackgroundColor"}            ],
-           "originalName": "SelectedDateBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "selectedFocusDateBackgroundColor"}            ],
-           "originalName": "SelectedFocusDateBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "focusDateBackgroundColor"}            ],
-           "originalName": "FocusDateBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hoverBackgroundColor"}            ],
-           "originalName": "HoverBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "selectedDateTextColor"}            ],
-           "originalName": "SelectedDateTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "focusDateTextColor"}            ],
-           "originalName": "FocusDateTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "currentDateTextColor"}            ],
-           "originalName": "CurrentDateTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "currentDateBorderColor"}            ],
-           "originalName": "CurrentDateBorderColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "showTodayButton"}            ],
-           "originalName": "ShowTodayButton"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "firstDayOfWeek"}            ],
-           "originalName": "FirstDayOfWeek"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FirstWeek", "mappedName": "firstWeekOfYear"}            ],
-           "originalName": "FirstWeekOfYear"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "showWeekNumbers"}            ],
-           "originalName": "ShowWeekNumbers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
-           "originalName": "ExportVisualModel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
-           "originalName": "ExportSerializedVisualModel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "ValueChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-value-changed-event-args.ts",
- "mappedName": "IgcValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "DayOfWeek",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "DayOfWeek.ts",
- "mappedName": "DayOfWeek"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Sunday"}            ],
-           "originalName": "Sunday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Monday"}            ],
-           "originalName": "Monday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Tuesday"}            ],
-           "originalName": "Tuesday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Wednesday"}            ],
-           "originalName": "Wednesday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Thursday"}            ],
-           "originalName": "Thursday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Friday"}            ],
-           "originalName": "Friday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "DayOfWeek", "mappedName": "Saturday"}            ],
-           "originalName": "Saturday"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "FirstWeek",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FirstWeek.ts",
- "mappedName": "FirstWeek"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FirstWeek", "mappedName": "FirstDay"}            ],
-           "originalName": "FirstDay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FirstWeek", "mappedName": "FirstFullWeek"}            ],
-           "originalName": "FirstFullWeek"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FirstWeek", "mappedName": "FirstFourDayWeek"}            ],
-           "originalName": "FirstFourDayWeek"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-}
-]
-}
+{"extraFiles": ["igc-x-calendar-module.ts"], "types": [{"originalName": "Calendar", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-x-calendar-component.ts", "mappedName": "IgcXCalendarComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "today"}], "originalName": "Today"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "minDate"}], "originalName": "MinDate"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "maxDate"}], "originalName": "MaxDate"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "ControlDisplayDensity", "mappedName": "density"}], "originalName": "Density"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}], "originalName": "BaseTheme"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "selectedDateBackgroundColor"}], "originalName": "SelectedDateBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "selectedFocusDateBackgroundColor"}], "originalName": "SelectedFocusDateBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "focusDateBackgroundColor"}], "originalName": "FocusDateBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "hoverBackgroundColor"}], "originalName": "HoverBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "selectedDateTextColor"}], "originalName": "SelectedDateTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "focusDateTextColor"}], "originalName": "FocusDateTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "currentDateTextColor"}], "originalName": "CurrentDateTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "currentDateBorderColor"}], "originalName": "CurrentDateBorderColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showTodayButton"}], "originalName": "ShowTodayButton"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "firstDayOfWeek"}], "originalName": "FirstDayOfWeek"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FirstWeek", "mappedName": "firstWeekOfYear"}], "originalName": "FirstWeekOfYear"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "ValueChangedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-value-changed-event-args.ts", "mappedName": "IgcValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "oldValue"}], "originalName": "OldValue"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Date", "mappedName": "newValue"}], "originalName": "NewValue"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "DayOfWeek", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "DayOfWeek.ts", "mappedName": "DayOfWeek"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Sunday"}], "originalName": "Sunday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Monday"}], "originalName": "Monday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Tuesday"}], "originalName": "Tuesday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Wednesday"}], "originalName": "Wednesday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Thursday"}], "originalName": "Thursday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Friday"}], "originalName": "Friday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "DayOfWeek", "mappedName": "Saturday"}], "originalName": "Saturday"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "FirstWeek", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FirstWeek.ts", "mappedName": "FirstWeek"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FirstWeek", "mappedName": "FirstDay"}], "originalName": "FirstDay"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FirstWeek", "mappedName": "FirstFullWeek"}], "originalName": "FirstFullWeek"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FirstWeek", "mappedName": "FirstFourDayWeek"}], "originalName": "FirstFourDayWeek"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}]}

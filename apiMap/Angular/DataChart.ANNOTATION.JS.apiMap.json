@@ -1,1153 +1,287 @@
-{
-"extraFiles": [
-"igx-annotation-layer-proxy-module.ts"
-],
-"types": [
-{
-    "originalName": "CategoryToolTipLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-category-tool-tip-layer-component.ts",
-    "dynamicModuleName": "igx-category-tool-tip-layer-dynamic-module.ts",
-    "moduleName": "igx-category-tool-tip-layer-module.ts",
- "mappedName": "IgxCategoryToolTipLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
-           "originalName": "IsAnnotationHoverLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}            ],
-           "originalName": "IsDefaultTooltipBehaviorDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxAxisComponent", "mappedName": "targetAxis"}            ],
-           "originalName": "TargetAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "hideToolTips"}            ],
-           "originalName": "HideToolTips"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryTooltipLayerPosition",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "CategoryTooltipLayerPosition.ts",
- "mappedName": "CategoryTooltipLayerPosition"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideStart"}            ],
-           "originalName": "OutsideStart"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideStart"}            ],
-           "originalName": "InsideStart"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideEnd"}            ],
-           "originalName": "InsideEnd"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideEnd"}            ],
-           "originalName": "OutsideEnd"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ItemToolTipLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-item-tool-tip-layer-component.ts",
-    "dynamicModuleName": "igx-item-tool-tip-layer-dynamic-module.ts",
-    "moduleName": "igx-item-tool-tip-layer-module.ts",
- "mappedName": "IgxItemToolTipLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
-           "originalName": "IsAnnotationHoverLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}            ],
-           "originalName": "IsDefaultTooltipBehaviorDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "targetSeriesName"}            ],
-           "originalName": "TargetSeriesName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "hideToolTips"}            ],
-           "originalName": "HideToolTips"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ValueOverlay",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-value-overlay-component.ts",
-    "dynamicModuleName": "igx-value-overlay-dynamic-module.ts",
-    "moduleName": "igx-value-overlay-module.ts",
- "mappedName": "IgxValueOverlayComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxAxisComponent", "mappedName": "axis"}            ],
-           "originalName": "Axis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}            ],
-           "originalName": "IsAxisAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(item: any) => string", "mappedName": "axisAnnotationFormatLabel"}            ],
-           "originalName": "AxisAnnotationFormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationTextColor"}            ],
-           "originalName": "AxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationBackground"}            ],
-           "originalName": "AxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "AxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationOutline"}            ],
-           "originalName": "AxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}            ],
-           "originalName": "AxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}            ],
-           "originalName": "AxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}            ],
-           "originalName": "AxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}            ],
-           "originalName": "AxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}            ],
-           "originalName": "AxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isValueOverlay"}            ],
-           "originalName": "IsValueOverlay"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelResolved"}            ],
-           "originalName": "LabelResolved"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getLabel"}            ],
-           "originalName": "GetLabel"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AnnotationLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-annotation-layer-component.ts",
- "mappedName": "IgxAnnotationLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useIndex"}            ],
-           "originalName": "UseIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useLegend"}            ],
-           "originalName": "UseLegend"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "cursorPosition"}            ],
-           "originalName": "CursorPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDefaultCrosshairDisabled"}            ],
-           "originalName": "IsDefaultCrosshairDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDefaultCrosshairBehaviorDisabled"}            ],
-           "originalName": "IsDefaultCrosshairBehaviorDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isIndexed"}            ],
-           "originalName": "IsIndexed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isUsableInLegend"}            ],
-           "originalName": "IsUsableInLegend"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationLayer"}            ],
-           "originalName": "IsAnnotationLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shouldRenderAsOverlay"}            ],
-           "originalName": "ShouldRenderAsOverlay"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AxisAnnotation",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-axis-annotation.ts",
- "mappedName": "IgxAxisAnnotation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(item: any) => string", "mappedName": "formatLabel"}            ],
-           "originalName": "FormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingLeft"}            ],
-           "originalName": "BackgroundPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingTop"}            ],
-           "originalName": "BackgroundPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingRight"}            ],
-           "originalName": "BackgroundPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingBottom"}            ],
-           "originalName": "BackgroundPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "resetCachedExtent"}            ],
-           "originalName": "ResetCachedExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "resolveLabelValue"}            ],
-           "originalName": "ResolveLabelValue"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutAnnotation",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-callout-annotation.ts",
- "mappedName": "IgxCalloutAnnotation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "xValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "yValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "key"}            ],
-           "originalName": "Key"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "content"}            ],
-           "originalName": "Content"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(item: any) => string", "mappedName": "formatLabel"}            ],
-           "originalName": "FormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "leaderBrush"}            ],
-           "originalName": "LeaderBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingLeft"}            ],
-           "originalName": "BackgroundPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingTop"}            ],
-           "originalName": "BackgroundPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingRight"}            ],
-           "originalName": "BackgroundPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "backgroundPaddingBottom"}            ],
-           "originalName": "BackgroundPaddingBottom"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryHighlightLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-category-highlight-layer-component.ts",
-    "dynamicModuleName": "igx-category-highlight-layer-dynamic-module.ts",
-    "moduleName": "igx-category-highlight-layer-module.ts",
- "mappedName": "IgxCategoryHighlightLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
-           "originalName": "IsAnnotationHoverLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxCategoryAxisBaseComponent", "mappedName": "targetAxis"}            ],
-           "originalName": "TargetAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "bandHighlightWidth"}            ],
-           "originalName": "BandHighlightWidth"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-callout-layer-component.ts",
-    "dynamicModuleName": "igx-callout-layer-dynamic-module.ts",
-    "moduleName": "igx-callout-layer-module.ts",
- "mappedName": "IgxCalloutLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationCalloutLayer"}            ],
-           "originalName": "IsAnnotationCalloutLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "keyMemberPath"}            ],
-           "originalName": "KeyMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCalloutOffsettingEnabled"}            ],
-           "originalName": "IsCalloutOffsettingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "contentMemberPath"}            ],
-           "originalName": "ContentMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "targetSeriesName"}            ],
-           "originalName": "TargetSeriesName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "collisionChannel"}            ],
-           "originalName": "CollisionChannel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAutoCalloutBehaviorEnabled"}            ],
-           "originalName": "IsAutoCalloutBehaviorEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useValueForAutoCalloutLabels"}            ],
-           "originalName": "UseValueForAutoCalloutLabels"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomCalloutStyleEnabled"}            ],
-           "originalName": "IsCustomCalloutStyleEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "autoCalloutLabelPrecision"}            ],
-           "originalName": "AutoCalloutLabelPrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutTextColor"}            ],
-           "originalName": "CalloutTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutBackground"}            ],
-           "originalName": "CalloutBackground"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutInterpolatedValuePrecision"}            ],
-           "originalName": "CalloutInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutOutline"}            ],
-           "originalName": "CalloutOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutLeaderBrush"}            ],
-           "originalName": "CalloutLeaderBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutPaddingLeft"}            ],
-           "originalName": "CalloutPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutPaddingTop"}            ],
-           "originalName": "CalloutPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutPaddingRight"}            ],
-           "originalName": "CalloutPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutPaddingBottom"}            ],
-           "originalName": "CalloutPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CalloutCollisionMode", "mappedName": "calloutCollisionMode"}            ],
-           "originalName": "CalloutCollisionMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutPositionPadding"}            ],
-           "originalName": "CalloutPositionPadding"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "calloutStrokeThickness"}            ],
-           "originalName": "CalloutStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "invalidateCalloutContent"}            ],
-           "originalName": "InvalidateCalloutContent"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutContentUpdatingEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-callout-content-updating-event-args.ts",
- "mappedName": "IgxCalloutContentUpdatingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "xValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "yValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "content"}            ],
-           "originalName": "Content"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutLabelUpdatingEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-callout-label-updating-event-args.ts",
- "mappedName": "IgxCalloutLabelUpdatingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "xValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "yValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "label"}            ],
-           "originalName": "Label"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutSeriesSelectingEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-callout-series-selecting-event-args.ts",
- "mappedName": "IgxCalloutSeriesSelectingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "xValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "yValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "seriesName"}            ],
-           "originalName": "SeriesName"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutCollisionMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "CalloutCollisionMode.ts",
- "mappedName": "CalloutCollisionMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CalloutCollisionMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CalloutCollisionMode", "mappedName": "SimulatedAnnealing"}            ],
-           "originalName": "SimulatedAnnealing"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CalloutCollisionMode", "mappedName": "Greedy"}            ],
-           "originalName": "Greedy"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CalloutCollisionMode", "mappedName": "GreedyCenterOfMass"}            ],
-           "originalName": "GreedyCenterOfMass"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinalValueLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-final-value-layer-component.ts",
-    "dynamicModuleName": "igx-final-value-layer-dynamic-module.ts",
-    "moduleName": "igx-final-value-layer-module.ts",
- "mappedName": "IgxFinalValueLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationFinalValue"}            ],
-           "originalName": "IsAnnotationFinalValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "targetSeriesName"}            ],
-           "originalName": "TargetSeriesName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "FinalValueSelectionMode", "mappedName": "finalValueSelectionMode"}            ],
-           "originalName": "FinalValueSelectionMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationTextColor"}            ],
-           "originalName": "AxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationBackground"}            ],
-           "originalName": "AxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "AxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "axisAnnotationOutline"}            ],
-           "originalName": "AxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}            ],
-           "originalName": "AxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}            ],
-           "originalName": "AxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}            ],
-           "originalName": "AxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}            ],
-           "originalName": "AxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}            ],
-           "originalName": "AxisAnnotationStrokeThickness"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinalValueSelectionMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "FinalValueSelectionMode.ts",
- "mappedName": "FinalValueSelectionMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "FinalValueSelectionMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisible"}            ],
-           "originalName": "FinalVisible"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisibleInterpolated"}            ],
-           "originalName": "FinalVisibleInterpolated"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "FinalValueSelectionMode", "mappedName": "Final"}            ],
-           "originalName": "Final"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryItemHighlightType",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "CategoryItemHighlightType.ts",
- "mappedName": "CategoryItemHighlightType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryItemHighlightType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryItemHighlightType", "mappedName": "Marker"}            ],
-           "originalName": "Marker"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryItemHighlightType", "mappedName": "Shape"}            ],
-           "originalName": "Shape"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryItemHighlightLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-category-item-highlight-layer-component.ts",
-    "dynamicModuleName": "igx-category-item-highlight-layer-dynamic-module.ts",
-    "moduleName": "igx-category-item-highlight-layer-module.ts",
- "mappedName": "IgxCategoryItemHighlightLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
-           "originalName": "IsAnnotationHoverLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "targetSeriesName"}            ],
-           "originalName": "TargetSeriesName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CategoryItemHighlightType", "mappedName": "highlightType"}            ],
-           "originalName": "HighlightType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "bandHighlightWidth"}            ],
-           "originalName": "BandHighlightWidth"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CrosshairLayer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-crosshair-layer-component.ts",
-    "dynamicModuleName": "igx-crosshair-layer-dynamic-module.ts",
-    "moduleName": "igx-crosshair-layer-module.ts",
- "mappedName": "IgxCrosshairLayerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
-           "originalName": "IsAnnotationHoverLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAnnotationCrosshairLayer"}            ],
-           "originalName": "IsAnnotationCrosshairLayer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "horizontalLineStroke"}            ],
-           "originalName": "HorizontalLineStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "verticalLineStroke"}            ],
-           "originalName": "VerticalLineStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "targetSeriesName"}            ],
-           "originalName": "TargetSeriesName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}            ],
-           "originalName": "IsAxisAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisAnnotationTextColor"}            ],
-           "originalName": "XAxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisAnnotationBackground"}            ],
-           "originalName": "XAxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "XAxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisAnnotationOutline"}            ],
-           "originalName": "XAxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingLeft"}            ],
-           "originalName": "XAxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingTop"}            ],
-           "originalName": "XAxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingRight"}            ],
-           "originalName": "XAxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationPaddingBottom"}            ],
-           "originalName": "XAxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingLeft"}            ],
-           "originalName": "YAxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingTop"}            ],
-           "originalName": "YAxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingRight"}            ],
-           "originalName": "YAxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationPaddingBottom"}            ],
-           "originalName": "YAxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisAnnotationStrokeThickness"}            ],
-           "originalName": "XAxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisAnnotationTextColor"}            ],
-           "originalName": "YAxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisAnnotationBackground"}            ],
-           "originalName": "YAxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "YAxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisAnnotationOutline"}            ],
-           "originalName": "YAxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisAnnotationStrokeThickness"}            ],
-           "originalName": "YAxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "verticalLineVisibility"}            ],
-           "originalName": "VerticalLineVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "horizontalLineVisibility"}            ],
-           "originalName": "HorizontalLineVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "skipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igx-annotation-layer-proxy-module.ts"], "types": [{"originalName": "CategoryToolTipLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-category-tool-tip-layer-component.ts", "dynamicModuleName": "igx-category-tool-tip-layer-dynamic-module.ts", "moduleName": "igx-category-tool-tip-layer-module.ts", "mappedName": "IgxCategoryToolTipLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}], "originalName": "IsAnnotationHoverLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}], "originalName": "IsDefaultTooltipBehaviorDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxAxisComponent", "mappedName": "targetAxis"}], "originalName": "TargetAxis"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useInterpolation"}], "originalName": "UseInterpolation"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "hideToolTips"}], "originalName": "HideToolTips"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CategoryTooltipLayerPosition", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "CategoryTooltipLayerPosition.ts", "mappedName": "CategoryTooltipLayerPosition"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "CategoryTooltipLayerPosition", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideStart"}], "originalName": "OutsideStart"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideStart"}], "originalName": "InsideStart"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryTooltipLayerPosition", "mappedName": "InsideEnd"}], "originalName": "InsideEnd"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryTooltipLayerPosition", "mappedName": "OutsideEnd"}], "originalName": "OutsideEnd"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ItemToolTipLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-item-tool-tip-layer-component.ts", "dynamicModuleName": "igx-item-tool-tip-layer-dynamic-module.ts", "moduleName": "igx-item-tool-tip-layer-module.ts", "mappedName": "IgxItemToolTipLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}], "originalName": "IsAnnotationHoverLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDefaultTooltipBehaviorDisabled"}], "originalName": "IsDefaultTooltipBehaviorDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "targetSeriesName"}], "originalName": "TargetSeriesName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}], "originalName": "TargetSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useInterpolation"}], "originalName": "UseInterpolation"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "skipUnknownValues"}], "originalName": "SkipUnknownValues"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "hideToolTips"}], "originalName": "HideToolTips"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ValueOverlay", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-value-overlay-component.ts", "dynamicModuleName": "igx-value-overlay-dynamic-module.ts", "moduleName": "igx-value-overlay-module.ts", "mappedName": "IgxValueOverlayComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "IgxAxisComponent", "mappedName": "axis"}], "originalName": "Axis"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}], "originalName": "IsAxisAnnotationEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "(item:  any) => string", "mappedName": "axisAnnotationFormatLabel"}], "originalName": "AxisAnnotationFormatLabel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationTextColor"}], "originalName": "AxisAnnotationTextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationBackground"}], "originalName": "AxisAnnotationBackground"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}], "originalName": "AxisAnnotationInterpolatedValuePrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationOutline"}], "originalName": "AxisAnnotationOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}], "originalName": "AxisAnnotationPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}], "originalName": "AxisAnnotationPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}], "originalName": "AxisAnnotationPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}], "originalName": "AxisAnnotationPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}], "originalName": "AxisAnnotationStrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isValueOverlay"}], "originalName": "IsValueOverlay"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelResolved"}], "originalName": "LabelResolved"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getLabel"}], "originalName": "GetLabel"}
+  ], 
+  "originalBaseTypeName": "Series", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "AnnotationLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-annotation-layer-component.ts", "mappedName": "IgxAnnotationLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useIndex"}], "originalName": "UseIndex"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useLegend"}], "originalName": "UseLegend"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "cursorPosition"}], "originalName": "CursorPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDefaultCrosshairDisabled"}], "originalName": "IsDefaultCrosshairDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDefaultCrosshairBehaviorDisabled"}], "originalName": "IsDefaultCrosshairBehaviorDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isIndexed"}], "originalName": "IsIndexed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isUsableInLegend"}], "originalName": "IsUsableInLegend"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationLayer"}], "originalName": "IsAnnotationLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "shouldRenderAsOverlay"}], "originalName": "ShouldRenderAsOverlay"}
+  ], 
+  "originalBaseTypeName": "Series", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "AxisAnnotation", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-axis-annotation.ts", "mappedName": "IgxAxisAnnotation"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "text"}], "originalName": "Text"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelFormat"}], "originalName": "LabelFormat"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}], "originalName": "LabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "(item:  any) => string", "mappedName": "formatLabel"}], "originalName": "FormatLabel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "background"}], "originalName": "Background"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "outline"}], "originalName": "Outline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "StrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingLeft"}], "originalName": "BackgroundPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingTop"}], "originalName": "BackgroundPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingRight"}], "originalName": "BackgroundPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingBottom"}], "originalName": "BackgroundPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "resetCachedExtent"}], "originalName": "ResetCachedExtent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "resolveLabelValue"}], "originalName": "ResolveLabelValue"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutAnnotation", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-callout-annotation.ts", "mappedName": "IgxCalloutAnnotation"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "xValue"}], "originalName": "XValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "yValue"}], "originalName": "YValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "text"}], "originalName": "Text"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "key"}], "originalName": "Key"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "content"}], "originalName": "Content"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "series"}], "originalName": "Series"}, 
+    {"names": [{"platform": "Angular", "mappedType": "(item:  any) => string", "mappedName": "formatLabel"}], "originalName": "FormatLabel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "background"}], "originalName": "Background"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "outline"}], "originalName": "Outline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "leaderBrush"}], "originalName": "LeaderBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "StrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingLeft"}], "originalName": "BackgroundPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingTop"}], "originalName": "BackgroundPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingRight"}], "originalName": "BackgroundPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "backgroundPaddingBottom"}], "originalName": "BackgroundPaddingBottom"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CategoryHighlightLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-category-highlight-layer-component.ts", "dynamicModuleName": "igx-category-highlight-layer-dynamic-module.ts", "moduleName": "igx-category-highlight-layer-module.ts", "mappedName": "IgxCategoryHighlightLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}], "originalName": "IsAnnotationHoverLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxCategoryAxisBaseComponent", "mappedName": "targetAxis"}], "originalName": "TargetAxis"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useInterpolation"}], "originalName": "UseInterpolation"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "bandHighlightWidth"}], "originalName": "BandHighlightWidth"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-callout-layer-component.ts", "dynamicModuleName": "igx-callout-layer-dynamic-module.ts", "moduleName": "igx-callout-layer-module.ts", "mappedName": "IgxCalloutLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationCalloutLayer"}], "originalName": "IsAnnotationCalloutLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "xMemberPath"}], "originalName": "XMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "yMemberPath"}], "originalName": "YMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "keyMemberPath"}], "originalName": "KeyMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCalloutOffsettingEnabled"}], "originalName": "IsCalloutOffsettingEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "contentMemberPath"}], "originalName": "ContentMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "targetSeriesName"}], "originalName": "TargetSeriesName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}], "originalName": "TargetSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "collisionChannel"}], "originalName": "CollisionChannel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAutoCalloutBehaviorEnabled"}], "originalName": "IsAutoCalloutBehaviorEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useValueForAutoCalloutLabels"}], "originalName": "UseValueForAutoCalloutLabels"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomCalloutStyleEnabled"}], "originalName": "IsCustomCalloutStyleEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "autoCalloutLabelPrecision"}], "originalName": "AutoCalloutLabelPrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "calloutTextColor"}], "originalName": "CalloutTextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "calloutBackground"}], "originalName": "CalloutBackground"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutInterpolatedValuePrecision"}], "originalName": "CalloutInterpolatedValuePrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "calloutOutline"}], "originalName": "CalloutOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "calloutLeaderBrush"}], "originalName": "CalloutLeaderBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutPaddingLeft"}], "originalName": "CalloutPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutPaddingTop"}], "originalName": "CalloutPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutPaddingRight"}], "originalName": "CalloutPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutPaddingBottom"}], "originalName": "CalloutPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CalloutCollisionMode", "mappedName": "calloutCollisionMode"}], "originalName": "CalloutCollisionMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutPositionPadding"}], "originalName": "CalloutPositionPadding"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "calloutStrokeThickness"}], "originalName": "CalloutStrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textStyle"}], "originalName": "TextStyle"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItemValue"}], "originalName": "GetItemValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "invalidateCalloutContent"}], "originalName": "InvalidateCalloutContent"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutContentUpdatingEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-callout-content-updating-event-args.ts", "mappedName": "IgxCalloutContentUpdatingEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "xValue"}], "originalName": "XValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "yValue"}], "originalName": "YValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "content"}], "originalName": "Content"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutLabelUpdatingEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-callout-label-updating-event-args.ts", "mappedName": "IgxCalloutLabelUpdatingEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "xValue"}], "originalName": "XValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "yValue"}], "originalName": "YValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "label"}], "originalName": "Label"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutSeriesSelectingEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-callout-series-selecting-event-args.ts", "mappedName": "IgxCalloutSeriesSelectingEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "xValue"}], "originalName": "XValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "yValue"}], "originalName": "YValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "series"}], "originalName": "Series"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "seriesName"}], "originalName": "SeriesName"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CalloutCollisionMode", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "CalloutCollisionMode.ts", "mappedName": "CalloutCollisionMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "CalloutCollisionMode", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CalloutCollisionMode", "mappedName": "SimulatedAnnealing"}], "originalName": "SimulatedAnnealing"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CalloutCollisionMode", "mappedName": "Greedy"}], "originalName": "Greedy"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CalloutCollisionMode", "mappedName": "GreedyCenterOfMass"}], "originalName": "GreedyCenterOfMass"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinalValueLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-final-value-layer-component.ts", "dynamicModuleName": "igx-final-value-layer-dynamic-module.ts", "moduleName": "igx-final-value-layer-module.ts", "mappedName": "IgxFinalValueLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationFinalValue"}], "originalName": "IsAnnotationFinalValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "targetSeriesName"}], "originalName": "TargetSeriesName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}], "originalName": "TargetSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "FinalValueSelectionMode", "mappedName": "finalValueSelectionMode"}], "originalName": "FinalValueSelectionMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationTextColor"}], "originalName": "AxisAnnotationTextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationBackground"}], "originalName": "AxisAnnotationBackground"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationInterpolatedValuePrecision"}], "originalName": "AxisAnnotationInterpolatedValuePrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "axisAnnotationOutline"}], "originalName": "AxisAnnotationOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingLeft"}], "originalName": "AxisAnnotationPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingTop"}], "originalName": "AxisAnnotationPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingRight"}], "originalName": "AxisAnnotationPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationPaddingBottom"}], "originalName": "AxisAnnotationPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "axisAnnotationStrokeThickness"}], "originalName": "AxisAnnotationStrokeThickness"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinalValueSelectionMode", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "FinalValueSelectionMode.ts", "mappedName": "FinalValueSelectionMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "FinalValueSelectionMode", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisible"}], "originalName": "FinalVisible"}, 
+    {"names": [{"platform": "Angular", "mappedType": "FinalValueSelectionMode", "mappedName": "FinalVisibleInterpolated"}], "originalName": "FinalVisibleInterpolated"}, 
+    {"names": [{"platform": "Angular", "mappedType": "FinalValueSelectionMode", "mappedName": "Final"}], "originalName": "Final"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CategoryItemHighlightType", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "CategoryItemHighlightType.ts", "mappedName": "CategoryItemHighlightType"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "CategoryItemHighlightType", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryItemHighlightType", "mappedName": "Marker"}], "originalName": "Marker"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryItemHighlightType", "mappedName": "Shape"}], "originalName": "Shape"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CategoryItemHighlightLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-category-item-highlight-layer-component.ts", "dynamicModuleName": "igx-category-item-highlight-layer-dynamic-module.ts", "moduleName": "igx-category-item-highlight-layer-module.ts", "mappedName": "IgxCategoryItemHighlightLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}], "originalName": "IsAnnotationHoverLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}], "originalName": "TargetSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "targetSeriesName"}], "originalName": "TargetSeriesName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useInterpolation"}], "originalName": "UseInterpolation"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CategoryItemHighlightType", "mappedName": "highlightType"}], "originalName": "HighlightType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerType", "mappedName": "markerType"}], "originalName": "MarkerType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerBrush"}], "originalName": "MarkerBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerOutline"}], "originalName": "MarkerOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "bandHighlightWidth"}], "originalName": "BandHighlightWidth"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "skipUnknownValues"}], "originalName": "SkipUnknownValues"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "CrosshairLayer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-crosshair-layer-component.ts", "dynamicModuleName": "igx-crosshair-layer-dynamic-module.ts", "moduleName": "igx-crosshair-layer-module.ts", "mappedName": "IgxCrosshairLayerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}], "originalName": "IsAnnotationHoverLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAnnotationCrosshairLayer"}], "originalName": "IsAnnotationCrosshairLayer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "horizontalLineStroke"}], "originalName": "HorizontalLineStroke"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "verticalLineStroke"}], "originalName": "VerticalLineStroke"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "targetSeriesName"}], "originalName": "TargetSeriesName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSeriesComponent", "mappedName": "targetSeries"}], "originalName": "TargetSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useInterpolation"}], "originalName": "UseInterpolation"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isAxisAnnotationEnabled"}], "originalName": "IsAxisAnnotationEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "xAxisAnnotationTextColor"}], "originalName": "XAxisAnnotationTextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "xAxisAnnotationBackground"}], "originalName": "XAxisAnnotationBackground"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationInterpolatedValuePrecision"}], "originalName": "XAxisAnnotationInterpolatedValuePrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "xAxisAnnotationOutline"}], "originalName": "XAxisAnnotationOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationPaddingLeft"}], "originalName": "XAxisAnnotationPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationPaddingTop"}], "originalName": "XAxisAnnotationPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationPaddingRight"}], "originalName": "XAxisAnnotationPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationPaddingBottom"}], "originalName": "XAxisAnnotationPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationPaddingLeft"}], "originalName": "YAxisAnnotationPaddingLeft"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationPaddingTop"}], "originalName": "YAxisAnnotationPaddingTop"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationPaddingRight"}], "originalName": "YAxisAnnotationPaddingRight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationPaddingBottom"}], "originalName": "YAxisAnnotationPaddingBottom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "xAxisAnnotationStrokeThickness"}], "originalName": "XAxisAnnotationStrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "yAxisAnnotationTextColor"}], "originalName": "YAxisAnnotationTextColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "yAxisAnnotationBackground"}], "originalName": "YAxisAnnotationBackground"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationInterpolatedValuePrecision"}], "originalName": "YAxisAnnotationInterpolatedValuePrecision"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "yAxisAnnotationOutline"}], "originalName": "YAxisAnnotationOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "yAxisAnnotationStrokeThickness"}], "originalName": "YAxisAnnotationStrokeThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "Visibility", "mappedName": "verticalLineVisibility"}], "originalName": "VerticalLineVisibility"}, 
+    {"names": [{"platform": "Angular", "mappedType": "Visibility", "mappedName": "horizontalLineVisibility"}], "originalName": "HorizontalLineVisibility"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "skipUnknownValues"}], "originalName": "SkipUnknownValues"}
+  ], 
+  "originalBaseTypeName": "AnnotationLayer", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}

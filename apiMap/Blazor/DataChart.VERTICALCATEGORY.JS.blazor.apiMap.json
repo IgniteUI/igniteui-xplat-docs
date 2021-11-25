@@ -1,164 +1,45 @@
-{
-"types": [
-{
-    "originalName": "CategoryYAxis",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CategoryYAxis.cs",
- "mappedName": "IgbCategoryYAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualInterval"}            ],
-           "originalName": "ActualInterval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorInterval"}            ],
-           "originalName": "MinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMinorInterval"}            ],
-           "originalName": "ActualMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCategoryBoundingBox"}            ],
-           "originalName": "GetCategoryBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollRangeIntoView"}            ],
-           "originalName": "ScrollRangeIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "CategoryAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BarSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "BarSeries.cs",
- "mappedName": "IgbBarSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusX"}            ],
-           "originalName": "RadiusX"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusY"}            ],
-           "originalName": "RadiusY"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
-           "originalName": "GetSeriesValueBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
-           "originalName": "GetItemSpan"
-       }   ],
-    "originalBaseTypeName": "VerticalAnchoredCategorySeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "VerticalAnchoredCategorySeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "VerticalAnchoredCategorySeries.cs",
- "mappedName": "IgbVerticalAnchoredCategorySeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbCategoryYAxis", "mappedName": "YAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetOffsetValue"}            ],
-           "originalName": "GetOffsetValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCategoryWidth"}            ],
-           "originalName": "GetCategoryWidth"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
-           "originalName": "GetSeriesValueMarkerBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       }   ],
-    "originalBaseTypeName": "AnchoredCategorySeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "CategoryYAxis", 
+  "names": [
+    {"platform": "Blazor", "fileName": "CategoryYAxis.cs", "mappedName": "IgbCategoryYAxis"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Interval"}], "originalName": "Interval"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "ActualInterval"}], "originalName": "ActualInterval"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MinorInterval"}], "originalName": "MinorInterval"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "ActualMinorInterval"}], "originalName": "ActualMinorInterval"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetCategoryBoundingBox"}], "originalName": "GetCategoryBoundingBox"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ScrollRangeIntoView"}], "originalName": "ScrollRangeIntoView"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"}
+  ], 
+  "originalBaseTypeName": "CategoryAxisBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "BarSeries", 
+  "names": [
+    {"platform": "Blazor", "fileName": "BarSeries.cs", "mappedName": "IgbBarSeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "RadiusX"}], "originalName": "RadiusX"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "RadiusY"}], "originalName": "RadiusY"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ScrollIntoView"}], "originalName": "ScrollIntoView"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetItemSpan"}], "originalName": "GetItemSpan"}
+  ], 
+  "originalBaseTypeName": "VerticalAnchoredCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "VerticalAnchoredCategorySeries", 
+  "names": [
+    {"platform": "Blazor", "fileName": "VerticalAnchoredCategorySeries.cs", "mappedName": "IgbVerticalAnchoredCategorySeries"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}], "originalName": "XAxis"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "IgbCategoryYAxis", "mappedName": "YAxis"}], "originalName": "YAxis"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetOffsetValue"}], "originalName": "GetOffsetValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetCategoryWidth"}], "originalName": "GetCategoryWidth"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetSeriesValue"}], "originalName": "GetSeriesValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetExactItemIndex"}], "originalName": "GetExactItemIndex"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetItemIndex"}], "originalName": "GetItemIndex"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetItem"}], "originalName": "GetItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "CanUseAsYAxis"}], "originalName": "CanUseAsYAxis"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "CanUseAsXAxis"}], "originalName": "CanUseAsXAxis"}
+  ], 
+  "originalBaseTypeName": "AnchoredCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}

@@ -1,931 +1,283 @@
-{
-"extraFiles": [
-"igx-avatar-module.ts",
-"igx-badge-module.ts",
-"igx-button-base-module.ts",
-"igx-button-module.ts",
-"igx-icon-module.ts",
-"igx-radio-group-module.ts",
-"igx-radio-module.ts",
-"igx-card-module.ts",
-"igx-checkbox-base-module.ts",
-"igx-checkbox-module.ts",
-"igx-input-module.ts",
-"igx-list-header-module.ts",
-"igx-list-item-module.ts",
-"igx-list-module.ts",
-"igx-navbar-module.ts",
-"igx-ripple-module.ts",
-"igx-switch-module.ts",
-"igx-form-module.ts",
-"igx-icon-button-module.ts",
-"igx-nav-drawer-header-item-module.ts",
-"igx-nav-drawer-item-module.ts",
-"igx-nav-drawer-module.ts",
-"igx-card-actions-module.ts",
-"igx-card-content-module.ts",
-"igx-card-header-module.ts",
-"igx-card-media-module.ts"
-],
-"types": [
-{
-    "originalName": "CardActions",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-card-actions-component.ts",
- "mappedName": "IgxCardActionsComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "CardContent",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-card-content-component.ts",
- "mappedName": "IgxCardContentComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "CardHeader",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-card-header-component.ts",
- "mappedName": "IgxCardHeaderComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "CardMedia",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-card-media-component.ts",
- "mappedName": "IgxCardMediaComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "SizableComponentSize",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "SizableComponentSize.ts",
- "mappedName": "SizableComponentSize"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "Large"}            ],
-           "originalName": "Large"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "Small"}            ],
-           "originalName": "Small"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "Medium"}            ],
-           "originalName": "Medium"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "FocusOptions",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-focus-options.ts",
- "mappedName": "IgxFocusOptions"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "preventScroll"}            ],
-           "originalName": "PreventScroll"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Card",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-card-component.ts",
- "mappedName": "IgxCardComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "outlined"}            ],
-           "originalName": "Outlined"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Checkbox",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-checkbox-component.ts",
- "mappedName": "IgxCheckboxComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "indeterminate"}            ],
-           "originalName": "Indeterminate"
-       }   ],
-    "originalBaseTypeName": "CheckboxBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "CheckboxBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-checkbox-base-component.ts",
- "mappedName": "IgxCheckboxBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
-           "originalName": "Disabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "checked"}            ],
-           "originalName": "Checked"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "required"}            ],
-           "originalName": "Required"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "invalid"}            ],
-           "originalName": "Invalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CheckboxBaseLabelPosition", "mappedName": "labelPosition"}            ],
-           "originalName": "LabelPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "ariaLabelledby"}            ],
-           "originalName": "AriaLabelledby"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "click"}            ],
-           "originalName": "Click"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "focusComponent"}            ],
-           "originalName": "FocusComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "blurComponent"}            ],
-           "originalName": "BlurComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "reportValidity"}            ],
-           "originalName": "ReportValidity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "setCustomValidity"}            ],
-           "originalName": "SetCustomValidity"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ComponentBoolValueChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-component-bool-value-changed-event-args.ts",
- "mappedName": "IgxComponentBoolValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "detail"}            ],
-           "originalName": "Detail"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Form",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-form-component.ts",
- "mappedName": "IgxFormComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "novalidate"}            ],
-           "originalName": "Novalidate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "performSubmit"}            ],
-           "originalName": "PerformSubmit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "performReset"}            ],
-           "originalName": "PerformReset"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getFormData"}            ],
-           "originalName": "GetFormData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "reportValidity"}            ],
-           "originalName": "ReportValidity"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "FormData",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-form-data.ts",
- "mappedName": "IgxFormData"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "FormDataEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-form-data-event-args.ts",
- "mappedName": "IgxFormDataEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxFormData", "mappedName": "detail"}            ],
-           "originalName": "Detail"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "IconButton",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-icon-button-component.ts",
- "mappedName": "IgxIconButtonComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "collection"}            ],
-           "originalName": "Collection"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "mirrored"}            ],
-           "originalName": "Mirrored"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IconButtonVariant", "mappedName": "variant"}            ],
-           "originalName": "Variant"
-       }   ],
-    "originalBaseTypeName": "ButtonBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Input",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-input-component.ts",
- "mappedName": "IgxInputComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InputDir", "mappedName": "dir"}            ],
-           "originalName": "Dir"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InputType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InputInputmode", "mappedName": "inputmode"}            ],
-           "originalName": "Inputmode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "pattern"}            ],
-           "originalName": "Pattern"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
-           "originalName": "Label"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "placeholder"}            ],
-           "originalName": "Placeholder"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "invalid"}            ],
-           "originalName": "Invalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "outlined"}            ],
-           "originalName": "Outlined"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "required"}            ],
-           "originalName": "Required"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
-           "originalName": "Disabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "readonly"}            ],
-           "originalName": "Readonly"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "minlength"}            ],
-           "originalName": "Minlength"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maxlength"}            ],
-           "originalName": "Maxlength"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "min"}            ],
-           "originalName": "Min"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "max"}            ],
-           "originalName": "Max"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "step"}            ],
-           "originalName": "Step"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "autofocus"}            ],
-           "originalName": "Autofocus"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "autocomplete"}            ],
-           "originalName": "Autocomplete"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "size"}            ],
-           "originalName": "Size"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "reportValidity"}            ],
-           "originalName": "ReportValidity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "setCustomValidity"}            ],
-           "originalName": "SetCustomValidity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "select"}            ],
-           "originalName": "Select"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "setSelectionRange"}            ],
-           "originalName": "SetSelectionRange"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "setRangeText"}            ],
-           "originalName": "SetRangeText"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "stepUp"}            ],
-           "originalName": "StepUp"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "stepDown"}            ],
-           "originalName": "StepDown"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "focusComponent"}            ],
-           "originalName": "FocusComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "blurComponent"}            ],
-           "originalName": "BlurComponent"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "List",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-list-component.ts",
- "mappedName": "IgxListComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "size"}            ],
-           "originalName": "Size"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ListHeader",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-list-header-component.ts",
- "mappedName": "IgxListHeaderComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ListItem",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-list-item-component.ts",
- "mappedName": "IgxListItemComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Navbar",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-navbar-component.ts",
- "mappedName": "IgxNavbarComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "NavDrawer",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-nav-drawer-component.ts",
- "mappedName": "IgxNavDrawerComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "NavDrawerPosition", "mappedName": "position"}            ],
-           "originalName": "Position"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "open"}            ],
-           "originalName": "Open"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "show"}            ],
-           "originalName": "Show"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "hide"}            ],
-           "originalName": "Hide"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "toggle"}            ],
-           "originalName": "Toggle"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "NavDrawerHeaderItem",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-nav-drawer-header-item-component.ts",
- "mappedName": "IgxNavDrawerHeaderItemComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "NavDrawerItem",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-nav-drawer-item-component.ts",
- "mappedName": "IgxNavDrawerItemComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
-           "originalName": "Disabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "active"}            ],
-           "originalName": "Active"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Ripple",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ripple-component.ts",
- "mappedName": "IgxRippleComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Switch",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-switch-component.ts",
- "mappedName": "IgxSwitchComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "CheckboxBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ComponentValueChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-component-value-changed-event-args.ts",
- "mappedName": "IgxComponentValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "detail"}            ],
-           "originalName": "Detail"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "VoidEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-void-event-args.ts",
- "mappedName": "IgxVoidEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Avatar",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-avatar-component.ts",
- "mappedName": "IgxAvatarComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "src"}            ],
-           "originalName": "Src"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "alt"}            ],
-           "originalName": "Alt"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "initials"}            ],
-           "originalName": "Initials"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "AvatarShape", "mappedName": "shape"}            ],
-           "originalName": "Shape"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "size"}            ],
-           "originalName": "Size"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Badge",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-badge-component.ts",
- "mappedName": "IgxBadgeComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BadgeVariant", "mappedName": "variant"}            ],
-           "originalName": "Variant"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "outlined"}            ],
-           "originalName": "Outlined"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BadgeShape", "mappedName": "shape"}            ],
-           "originalName": "Shape"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Button",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-button-component.ts",
- "mappedName": "IgxButtonComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ButtonVariant", "mappedName": "variant"}            ],
-           "originalName": "Variant"
-       }   ],
-    "originalBaseTypeName": "ButtonBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ButtonBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-button-base-component.ts",
- "mappedName": "IgxButtonBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ButtonBaseType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "href"}            ],
-           "originalName": "Href"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "download"}            ],
-           "originalName": "Download"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ButtonBaseTarget", "mappedName": "target"}            ],
-           "originalName": "Target"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "rel"}            ],
-           "originalName": "Rel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
-           "originalName": "Disabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "size"}            ],
-           "originalName": "Size"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "focusComponent"}            ],
-           "originalName": "FocusComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "blurComponent"}            ],
-           "originalName": "BlurComponent"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Icon",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-icon-component.ts",
- "mappedName": "IgxIconComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "iconName"}            ],
-           "originalName": "IconName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "collection"}            ],
-           "originalName": "Collection"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "mirrored"}            ],
-           "originalName": "Mirrored"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "SizableComponentSize", "mappedName": "size"}            ],
-           "originalName": "Size"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "connectedCallback"}            ],
-           "originalName": "ConnectedCallback"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "disconnectedCallback"}            ],
-           "originalName": "DisconnectedCallback"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "registerIcon"}            ],
-           "originalName": "RegisterIcon"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "registerIconFromText"}            ],
-           "originalName": "RegisterIconFromText"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "Radio",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-radio-component.ts",
- "mappedName": "IgxRadioComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "checked"}            ],
-           "originalName": "Checked"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
-           "originalName": "Disabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "invalid"}            ],
-           "originalName": "Invalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadioLabelPosition", "mappedName": "labelPosition"}            ],
-           "originalName": "LabelPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "ariaLabelledby"}            ],
-           "originalName": "AriaLabelledby"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "click"}            ],
-           "originalName": "Click"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "focusComponent"}            ],
-           "originalName": "FocusComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "blurComponent"}            ],
-           "originalName": "BlurComponent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "reportValidity"}            ],
-           "originalName": "ReportValidity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "setCustomValidity"}            ],
-           "originalName": "SetCustomValidity"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "RadioGroup",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-radio-group-component.ts",
- "mappedName": "IgxRadioGroupComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "RadioGroupAlignment", "mappedName": "alignment"}            ],
-           "originalName": "Alignment"
-       }   ],
-    "originalBaseTypeName": "BaseElement",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-}
-]
-}
+{"extraFiles": ["igx-avatar-module.ts", "igx-badge-module.ts", "igx-button-base-module.ts", "igx-button-module.ts", "igx-icon-module.ts", "igx-radio-group-module.ts", "igx-radio-module.ts", "igx-card-module.ts", "igx-checkbox-base-module.ts", "igx-checkbox-module.ts", "igx-input-module.ts", "igx-list-header-module.ts", "igx-list-item-module.ts", "igx-list-module.ts", "igx-navbar-module.ts", "igx-ripple-module.ts", "igx-switch-module.ts", "igx-form-module.ts", "igx-icon-button-module.ts", "igx-nav-drawer-header-item-module.ts", "igx-nav-drawer-item-module.ts", "igx-nav-drawer-module.ts", "igx-card-actions-module.ts", "igx-card-content-module.ts", "igx-card-header-module.ts", "igx-card-media-module.ts"], "types": [{"originalName": "CardActions", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-card-actions-component.ts", "mappedName": "IgxCardActionsComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardContent", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-card-content-component.ts", "mappedName": "IgxCardContentComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardHeader", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-card-header-component.ts", "mappedName": "IgxCardHeaderComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardMedia", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-card-media-component.ts", "mappedName": "IgxCardMediaComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "SizableComponentSize", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "SizableComponentSize.ts", "mappedName": "SizableComponentSize"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "Large"}], "originalName": "Large"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "Small"}], "originalName": "Small"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "Medium"}], "originalName": "Medium"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "FocusOptions", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-focus-options.ts", "mappedName": "IgxFocusOptions"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "preventScroll"}], "originalName": "PreventScroll"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "Card", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-card-component.ts", "mappedName": "IgxCardComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Checkbox", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-checkbox-component.ts", "mappedName": "IgxCheckboxComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "indeterminate"}], "originalName": "Indeterminate"}
+  ], 
+  "originalBaseTypeName": "CheckboxBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CheckboxBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-checkbox-base-component.ts", "mappedName": "IgxCheckboxBaseComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CheckboxBaseLabelPosition", "mappedName": "labelPosition"}], "originalName": "LabelPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "ariaLabelledby"}], "originalName": "AriaLabelledby"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "click"}], "originalName": "Click"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ComponentBoolValueChangedEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-component-bool-value-changed-event-args.ts", "mappedName": "IgxComponentBoolValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "Form", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-form-component.ts", "mappedName": "IgxFormComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "novalidate"}], "originalName": "Novalidate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "performSubmit"}], "originalName": "PerformSubmit"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "performReset"}], "originalName": "PerformReset"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getFormData"}], "originalName": "GetFormData"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "FormData", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-form-data.ts", "mappedName": "IgxFormData"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls"}, {"originalName": "FormDataEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-form-data-event-args.ts", "mappedName": "IgxFormDataEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "IgxFormData", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "IconButton", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-icon-button-component.ts", "mappedName": "IgxIconButtonComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "collection"}], "originalName": "Collection"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "mirrored"}], "originalName": "Mirrored"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IconButtonVariant", "mappedName": "variant"}], "originalName": "Variant"}
+  ], 
+  "originalBaseTypeName": "ButtonBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Input", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-input-component.ts", "mappedName": "IgxInputComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "InputDir", "mappedName": "dir"}], "originalName": "Dir"}, 
+    {"names": [{"platform": "Angular", "mappedType": "InputType", "mappedName": "displayType"}], "originalName": "DisplayType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "InputInputmode", "mappedName": "inputmode"}], "originalName": "Inputmode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "pattern"}], "originalName": "Pattern"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "label"}], "originalName": "Label"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "placeholder"}], "originalName": "Placeholder"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "minlength"}], "originalName": "Minlength"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "maxlength"}], "originalName": "Maxlength"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "min"}], "originalName": "Min"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "max"}], "originalName": "Max"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "step"}], "originalName": "Step"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "autofocus"}], "originalName": "Autofocus"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "autocomplete"}], "originalName": "Autocomplete"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "select"}], "originalName": "Select"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "setRangeText"}], "originalName": "SetRangeText"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "stepUp"}], "originalName": "StepUp"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "stepDown"}], "originalName": "StepDown"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "List", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-list-component.ts", "mappedName": "IgxListComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ListHeader", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-list-header-component.ts", "mappedName": "IgxListHeaderComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ListItem", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-list-item-component.ts", "mappedName": "IgxListItemComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Navbar", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-navbar-component.ts", "mappedName": "IgxNavbarComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawer", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-nav-drawer-component.ts", "mappedName": "IgxNavDrawerComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "NavDrawerPosition", "mappedName": "position"}], "originalName": "Position"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "show"}], "originalName": "Show"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "hide"}], "originalName": "Hide"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "toggle"}], "originalName": "Toggle"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawerHeaderItem", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-nav-drawer-header-item-component.ts", "mappedName": "IgxNavDrawerHeaderItemComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawerItem", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-nav-drawer-item-component.ts", "mappedName": "IgxNavDrawerItemComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Ripple", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-ripple-component.ts", "mappedName": "IgxRippleComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Switch", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-switch-component.ts", "mappedName": "IgxSwitchComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "CheckboxBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ComponentValueChangedEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-component-value-changed-event-args.ts", "mappedName": "IgxComponentValueChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "VoidEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-void-event-args.ts", "mappedName": "IgxVoidEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Avatar", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-avatar-component.ts", "mappedName": "IgxAvatarComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "src"}], "originalName": "Src"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "alt"}], "originalName": "Alt"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "initials"}], "originalName": "Initials"}, 
+    {"names": [{"platform": "Angular", "mappedType": "AvatarShape", "mappedName": "shape"}], "originalName": "Shape"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Badge", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-badge-component.ts", "mappedName": "IgxBadgeComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "BadgeVariant", "mappedName": "variant"}], "originalName": "Variant"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BadgeShape", "mappedName": "shape"}], "originalName": "Shape"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Button", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-button-component.ts", "mappedName": "IgxButtonComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "ButtonVariant", "mappedName": "variant"}], "originalName": "Variant"}
+  ], 
+  "originalBaseTypeName": "ButtonBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ButtonBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-button-base-component.ts", "mappedName": "IgxButtonBaseComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "ButtonBaseType", "mappedName": "displayType"}], "originalName": "DisplayType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "href"}], "originalName": "Href"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "download"}], "originalName": "Download"}, 
+    {"names": [{"platform": "Angular", "mappedType": "ButtonBaseTarget", "mappedName": "target"}], "originalName": "Target"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "rel"}], "originalName": "Rel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Icon", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-icon-component.ts", "mappedName": "IgxIconComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "iconName"}], "originalName": "IconName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "collection"}], "originalName": "Collection"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "mirrored"}], "originalName": "Mirrored"}, 
+    {"names": [{"platform": "Angular", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "registerIcon"}], "originalName": "RegisterIcon"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "registerIconFromText"}], "originalName": "RegisterIconFromText"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Radio", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-radio-component.ts", "mappedName": "IgxRadioComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "RadioLabelPosition", "mappedName": "labelPosition"}], "originalName": "LabelPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "ariaLabelledby"}], "originalName": "AriaLabelledby"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "click"}], "originalName": "Click"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "RadioGroup", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-radio-group-component.ts", "mappedName": "IgxRadioGroupComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "RadioGroupAlignment", "mappedName": "alignment"}], "originalName": "Alignment"}
+  ], 
+  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}]}

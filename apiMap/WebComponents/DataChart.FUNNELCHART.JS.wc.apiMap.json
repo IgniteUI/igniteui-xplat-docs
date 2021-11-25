@@ -1,362 +1,101 @@
-{
-"extraFiles": [
-"igc-funnel-chart-core-module.ts",
-"igc-funnel-chart-module.ts"
-],
-"types": [
-{
-    "originalName": "FunnelSliceDataContext",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-funnel-slice-data-context.ts",
- "mappedName": "IgcFunnelSliceDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "itemOutline"}            ],
-           "originalName": "ItemOutline"
-       }   ],
-    "originalBaseTypeName": "DataContext",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelDataContext",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-funnel-data-context.ts",
- "mappedName": "IgcFunnelDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelSliceDisplay",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "FunnelSliceDisplay.ts",
- "mappedName": "FunnelSliceDisplay"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FunnelSliceDisplay", "mappedName": "Uniform"}            ],
-           "originalName": "Uniform"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FunnelSliceDisplay", "mappedName": "Weighted"}            ],
-           "originalName": "Weighted"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "OuterLabelAlignment",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "OuterLabelAlignment.ts",
- "mappedName": "OuterLabelAlignment"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "OuterLabelAlignment", "mappedName": "Left"}            ],
-           "originalName": "Left"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "OuterLabelAlignment", "mappedName": "Right"}            ],
-           "originalName": "Right"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelSliceClickedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-funnel-slice-clicked-event-args.ts",
- "mappedName": "IgcFunnelSliceClickedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelSliceEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-funnel-slice-event-args.ts",
- "mappedName": "IgcFunnelSliceEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XamFunnelChart",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-funnel-chart-component.ts",
- "mappedName": "IgcFunnelChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "bottomEdgeWidth"}            ],
-           "originalName": "BottomEdgeWidth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "innerLabelMemberPath"}            ],
-           "originalName": "InnerLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outerLabelMemberPath"}            ],
-           "originalName": "OuterLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "innerLabelVisibility"}            ],
-           "originalName": "InnerLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "outerLabelVisibility"}            ],
-           "originalName": "OuterLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "OuterLabelAlignment", "mappedName": "outerLabelAlignment"}            ],
-           "originalName": "OuterLabelAlignment"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FunnelSliceDisplay", "mappedName": "funnelSliceDisplay"}            ],
-           "originalName": "FunnelSliceDisplay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatInnerLabel"}            ],
-           "originalName": "FormatInnerLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatOuterLabel"}            ],
-           "originalName": "FormatOuterLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isInverted"}            ],
-           "originalName": "IsInverted"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useBezierCurve"}            ],
-           "originalName": "UseBezierCurve"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
-           "originalName": "AllowSliceSelection"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useUnselectedStyle"}            ],
-           "originalName": "UseUnselectedStyle"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "selectedSliceStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "selectedSliceStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "selectedSliceStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "selectedSliceStyle.opacity"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "unselectedSliceStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "unselectedSliceStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "unselectedSliceStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "unselectedSliceStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}            ],
-           "originalName": "LegendItemBadgeTemplate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}            ],
-           "originalName": "UseOuterLabelsForLegend"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outerLabelTextStyle"}            ],
-           "originalName": "OuterLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "outlineThickness"}            ],
-           "originalName": "OutlineThickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outerLabelTextColor"}            ],
-           "originalName": "OuterLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toggleSelection"}            ],
-           "originalName": "ToggleSelection"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igc-funnel-chart-core-module.ts", "igc-funnel-chart-module.ts"], "types": [{"originalName": "FunnelSliceDataContext", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-funnel-slice-data-context.ts", "mappedName": "IgcFunnelSliceDataContext"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "itemOutline"}], "originalName": "ItemOutline"}
+  ], 
+  "originalBaseTypeName": "DataContext", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelDataContext", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-funnel-data-context.ts", "mappedName": "IgcFunnelDataContext"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelSliceDisplay", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "FunnelSliceDisplay.ts", "mappedName": "FunnelSliceDisplay"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "FunnelSliceDisplay", "mappedName": "Uniform"}], "originalName": "Uniform"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FunnelSliceDisplay", "mappedName": "Weighted"}], "originalName": "Weighted"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "OuterLabelAlignment", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "OuterLabelAlignment.ts", "mappedName": "OuterLabelAlignment"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "OuterLabelAlignment", "mappedName": "Left"}], "originalName": "Left"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "OuterLabelAlignment", "mappedName": "Right"}], "originalName": "Right"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelSliceClickedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-funnel-slice-clicked-event-args.ts", "mappedName": "IgcFunnelSliceClickedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgRect", "mappedName": "bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelSliceEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-funnel-slice-event-args.ts", "mappedName": "IgcFunnelSliceEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgRect", "mappedName": "bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "XamFunnelChart", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-funnel-chart-component.ts", "mappedName": "IgcFunnelChartComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "brushes"}], "originalName": "Brushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "outlines"}], "originalName": "Outlines"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "bottomEdgeWidth"}], "originalName": "BottomEdgeWidth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "innerLabelMemberPath"}], "originalName": "InnerLabelMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "outerLabelMemberPath"}], "originalName": "OuterLabelMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "innerLabelVisibility"}], "originalName": "InnerLabelVisibility"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "outerLabelVisibility"}], "originalName": "OuterLabelVisibility"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "OuterLabelAlignment", "mappedName": "outerLabelAlignment"}], "originalName": "OuterLabelAlignment"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "FunnelSliceDisplay", "mappedName": "funnelSliceDisplay"}], "originalName": "FunnelSliceDisplay"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "(arg1:  any,  arg2:  number,  arg3:  any) => string", "mappedName": "formatInnerLabel"}], "originalName": "FormatInnerLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "(arg1:  any,  arg2:  number,  arg3:  any) => string", "mappedName": "formatOuterLabel"}], "originalName": "FormatOuterLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "transitionDuration"}], "originalName": "TransitionDuration"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isInverted"}], "originalName": "IsInverted"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useBezierCurve"}], "originalName": "UseBezierCurve"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowSliceSelection"}], "originalName": "AllowSliceSelection"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useUnselectedStyle"}], "originalName": "UseUnselectedStyle"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "selectedSliceStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "selectedSliceStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "selectedSliceStyle.opacity"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "unselectedSliceStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "unselectedSliceStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "unselectedSliceStyle.opacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}], "originalName": "LegendItemBadgeTemplate"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}], "originalName": "UseOuterLabelsForLegend"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "textStyle"}], "originalName": "TextStyle"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "outerLabelTextStyle"}], "originalName": "OuterLabelTextStyle"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "outlineThickness"}], "originalName": "OutlineThickness"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "outerLabelTextColor"}], "originalName": "OuterLabelTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyResized"}], "originalName": "NotifyResized"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "toggleSelection"}], "originalName": "ToggleSelection"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}]}

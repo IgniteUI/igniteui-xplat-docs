@@ -1,188 +1,45 @@
-{
-"types": [
-{
-    "originalName": "CheckboxList",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CheckboxList.cs",
- "mappedName": "IgbCheckboxList"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "Keys"}            ],
-           "originalName": "Keys"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "PrimaryKey"}            ],
-           "originalName": "PrimaryKey"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
-           "originalName": "ItemsSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DataMemberPath"}            ],
-           "originalName": "DataMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectedMemberPath"}            ],
-           "originalName": "SelectedMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FilterPlaceholderText"}            ],
-           "originalName": "FilterPlaceholderText"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "InputGroupDisplayType", "mappedName": "SearchInputType"}            ],
-           "originalName": "SearchInputType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "RowHeight"}            ],
-           "originalName": "RowHeight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CheckboxListIndexType", "mappedName": "IndexType"}            ],
-           "originalName": "IndexType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "Density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectAllCaption"}            ],
-           "originalName": "SelectAllCaption"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectAllCaptionTextColor"}            ],
-           "originalName": "SelectAllCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualSelectAllCaptionTextColor"}            ],
-           "originalName": "ActualSelectAllCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowSelectAll"}            ],
-           "originalName": "ShowSelectAll"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "BackgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowFilter"}            ],
-           "originalName": "ShowFilter"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsRowHoverEnabled"}            ],
-           "originalName": "IsRowHoverEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SelectAll"}            ],
-           "originalName": "SelectAll"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "DeselectAll"}            ],
-           "originalName": "DeselectAll"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "AddKeyValue"}            ],
-           "originalName": "AddKeyValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveKeyValue"}            ],
-           "originalName": "RemoveKeyValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsNothingSelected"}            ],
-           "originalName": "IsNothingSelected"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "IsEverythingSelected"}            ],
-           "originalName": "IsEverythingSelected"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "CheckedChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CheckedChangedEventArgs.cs",
- "mappedName": "IgbCheckedChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsChecked"}            ],
-           "originalName": "IsChecked"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-},
-{
-    "originalName": "SelectAllCheckboxChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "SelectAllCheckboxChangedEventArgs.cs",
- "mappedName": "IgbSelectAllCheckboxChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsChecked"}            ],
-           "originalName": "IsChecked"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs.Implementation"
-}
-]
-}
+{"types": [{"originalName": "CheckboxList", 
+  "names": [
+    {"platform": "Blazor", "fileName": "CheckboxList.cs", "mappedName": "IgbCheckboxList"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "Keys"}], "originalName": "Keys"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string[]", "mappedName": "PrimaryKey"}], "originalName": "PrimaryKey"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "DataSource"}], "originalName": "ItemsSource"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DataMemberPath"}], "originalName": "DataMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "SelectedMemberPath"}], "originalName": "SelectedMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "FilterPlaceholderText"}], "originalName": "FilterPlaceholderText"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "InputGroupDisplayType", "mappedName": "SearchInputType"}], "originalName": "SearchInputType"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "RowHeight"}], "originalName": "RowHeight"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "CheckboxListIndexType", "mappedName": "IndexType"}], "originalName": "IndexType"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}], "originalName": "BaseTheme"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "ControlDisplayDensity", "mappedName": "Density"}], "originalName": "Density"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "SelectAllCaption"}], "originalName": "SelectAllCaption"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "SelectAllCaptionTextColor"}], "originalName": "SelectAllCaptionTextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ActualSelectAllCaptionTextColor"}], "originalName": "ActualSelectAllCaptionTextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShowSelectAll"}], "originalName": "ShowSelectAll"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "BackgroundColor"}], "originalName": "BackgroundColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TextColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShowFilter"}], "originalName": "ShowFilter"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsRowHoverEnabled"}], "originalName": "IsRowHoverEnabled"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SelectAll"}], "originalName": "SelectAll"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "DeselectAll"}], "originalName": "DeselectAll"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyRemoveItem"}], "originalName": "NotifyRemoveItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "AddKeyValue"}], "originalName": "AddKeyValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "RemoveKeyValue"}], "originalName": "RemoveKeyValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "IsNothingSelected"}], "originalName": "IsNothingSelected"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "IsEverythingSelected"}], "originalName": "IsEverythingSelected"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "CheckedChangedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "CheckedChangedEventArgs.cs", "mappedName": "IgbCheckedChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "Index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsChecked"}], "originalName": "IsChecked"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "SelectAllCheckboxChangedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "SelectAllCheckboxChangedEventArgs.cs", "mappedName": "IgbSelectAllCheckboxChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsChecked"}], "originalName": "IsChecked"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}]}

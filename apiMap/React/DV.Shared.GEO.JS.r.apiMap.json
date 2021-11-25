@@ -1,390 +1,108 @@
-{
-"extraFiles": [
-"igr-shape-data-source-module.ts",
-"igr-heat-tile-generator-module.ts"
-],
-"types": [
-{
-    "originalName": "HeatTileGenerator",
-   "names": [
-        { "platform": "React",     "fileName": "igr-heat-tile-generator.ts",
- "mappedName": "IgrHeatTileGenerator"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number[]", "mappedName": "yValues"}            ],
-           "originalName": "YValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number[]", "mappedName": "xValues"}            ],
-           "originalName": "XValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number[]", "mappedName": "values"}            ],
-           "originalName": "Values"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "minimumColor"}            ],
-           "originalName": "MinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "maximumColor"}            ],
-           "originalName": "MaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number[]", "mappedName": "scaleColorOffsets"}            ],
-           "originalName": "ScaleColorOffsets"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "blurRadius"}            ],
-           "originalName": "BlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maxBlurRadius"}            ],
-           "originalName": "MaxBlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useBlurRadiusAdjustedForZoom"}            ],
-           "originalName": "UseBlurRadiusAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useGlobalMinMax"}            ],
-           "originalName": "UseGlobalMinMax"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useGlobalMinMaxAdjustedForZoom"}            ],
-           "originalName": "UseGlobalMinMaxAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useLogarithmicScale"}            ],
-           "originalName": "UseLogarithmicScale"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useWebWorkers"}            ],
-           "originalName": "UseWebWorkers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "webWorkerScriptPath"}            ],
-           "originalName": "WebWorkerScriptPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "webWorkerInstance"}            ],
-           "originalName": "WebWorkerInstance"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "destroy"}            ],
-           "originalName": "Destroy"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getTile"}            ],
-           "originalName": "GetTile"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "cancelTile"}            ],
-           "originalName": "CancelTile"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ShapefileConverter",
-   "names": [
-        { "platform": "React",     "fileName": "igr-shape-data-source.ts",
- "mappedName": "IgrShapeDataSource"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgRect", "mappedName": "worldRect"}            ],
-           "originalName": "WorldRect"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgRect", "mappedName": "computedWorldRect"}            ],
-           "originalName": "ComputedWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "ShapeType", "mappedName": "shapeType"}            ],
-           "originalName": "ShapeType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Header", "mappedName": "shapeHeader"}            ],
-           "originalName": "ShapeHeader"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "deferImportCompleted"}            ],
-           "originalName": "DeferImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "shapefileSource"}            ],
-           "originalName": "ShapefileSource"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "databaseSource"}            ],
-           "originalName": "DatabaseSource"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "count"}            ],
-           "originalName": "Count"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getWorldBounds"}            ],
-           "originalName": "GetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setWorldBounds"}            ],
-           "originalName": "SetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "sendImportCompleted"}            ],
-           "originalName": "SendImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecordsCount"}            ],
-           "originalName": "GetRecordsCount"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecord"}            ],
-           "originalName": "GetRecord"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecordBounds"}            ],
-           "originalName": "GetRecordBounds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecordFieldNames"}            ],
-           "originalName": "GetRecordFieldNames"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecordValue"}            ],
-           "originalName": "GetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "removeRecord"}            ],
-           "originalName": "RemoveRecord"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "shiftAllShapes"}            ],
-           "originalName": "ShiftAllShapes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "shiftShapes"}            ],
-           "originalName": "ShiftShapes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getMaxLongitude"}            ],
-           "originalName": "GetMaxLongitude"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setRecordValue"}            ],
-           "originalName": "SetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getRecordValues"}            ],
-           "originalName": "GetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setRecordValues"}            ],
-           "originalName": "SetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getLargestShapeBoundsForRecord"}            ],
-           "originalName": "GetLargestShapeBoundsForRecord"
-       }   ],
-    "originalBaseTypeName": "DependencyObjectNotifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapeFilterRecordEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-shape-filter-record-event-args.ts",
- "mappedName": "IgrShapeFilterRecordEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrShapefileRecord", "mappedName": "record"}            ],
-           "originalName": "Record"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldInclude"}            ],
-           "originalName": "ShouldInclude"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapefileRecord",
-   "names": [
-        { "platform": "React",     "fileName": "igr-shapefile-record.ts",
- "mappedName": "IgrShapefileRecord"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "fieldValues"}            ],
-           "originalName": "FieldValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getFieldValue"}            ],
-           "originalName": "GetFieldValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "setFieldValue"}            ],
-           "originalName": "SetFieldValue"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GetTileImageUriArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-get-tile-image-uri-args.ts",
- "mappedName": "IgrGetTileImageUriArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tileLevel"}            ],
-           "originalName": "TileLevel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tilePositionX"}            ],
-           "originalName": "TilePositionX"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tilePositionY"}            ],
-           "originalName": "TilePositionY"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "tileImageUri"}            ],
-           "originalName": "TileImageUri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ItfConverter",
-   "names": [
-        { "platform": "React",     "fileName": "igr-triangulation-data-source.ts",
- "mappedName": "IgrTriangulationDataSource"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "DownloadingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-downloading-multi-scale-image-event-args.ts",
- "mappedName": "IgrDownloadingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "CancellingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-cancelling-multi-scale-image-event-args.ts",
- "mappedName": "IgrCancellingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "TriangulationStatusEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-triangulation-status-event-args.ts",
- "mappedName": "IgrTriangulationStatusEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "currentStatus"}            ],
-           "originalName": "CurrentStatus"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igr-shape-data-source-module.ts", "igr-heat-tile-generator-module.ts"], "types": [{"originalName": "HeatTileGenerator", 
+  "names": [
+    {"platform": "React", "fileName": "igr-heat-tile-generator.ts", "mappedName": "IgrHeatTileGenerator"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "number[]", "mappedName": "yValues"}], "originalName": "YValues"}, 
+    {"names": [{"platform": "React", "mappedType": "number[]", "mappedName": "xValues"}], "originalName": "XValues"}, 
+    {"names": [{"platform": "React", "mappedType": "number[]", "mappedName": "values"}], "originalName": "Values"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "minimumColor"}], "originalName": "MinimumColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "maximumColor"}], "originalName": "MaximumColor"}, 
+    {"names": [{"platform": "React", "mappedType": "number[]", "mappedName": "scaleColorOffsets"}], "originalName": "ScaleColorOffsets"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "blurRadius"}], "originalName": "BlurRadius"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maxBlurRadius"}], "originalName": "MaxBlurRadius"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useBlurRadiusAdjustedForZoom"}], "originalName": "UseBlurRadiusAdjustedForZoom"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useGlobalMinMax"}], "originalName": "UseGlobalMinMax"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useGlobalMinMaxAdjustedForZoom"}], "originalName": "UseGlobalMinMaxAdjustedForZoom"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minimumValue"}], "originalName": "MinimumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maximumValue"}], "originalName": "MaximumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "logarithmBase"}], "originalName": "LogarithmBase"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useLogarithmicScale"}], "originalName": "UseLogarithmicScale"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "useWebWorkers"}], "originalName": "UseWebWorkers"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "webWorkerScriptPath"}], "originalName": "WebWorkerScriptPath"}, 
+    {"names": [{"platform": "React", "mappedType": "any", "mappedName": "webWorkerInstance"}], "originalName": "WebWorkerInstance"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "destroy"}], "originalName": "Destroy"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getTile"}], "originalName": "GetTile"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "cancelTile"}], "originalName": "CancelTile"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "ShapefileConverter", 
+  "names": [
+    {"platform": "React", "fileName": "igr-shape-data-source.ts", "mappedName": "IgrShapeDataSource"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "React", "mappedType": "IgRect", "mappedName": "worldRect"}], "originalName": "WorldRect"}, 
+    {"names": [{"platform": "React", "mappedType": "IgRect", "mappedName": "computedWorldRect"}], "originalName": "ComputedWorldRect"}, 
+    {"names": [{"platform": "React", "mappedType": "ShapeType", "mappedName": "shapeType"}], "originalName": "ShapeType"}, 
+    {"names": [{"platform": "React", "mappedType": "Header", "mappedName": "shapeHeader"}], "originalName": "ShapeHeader"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "deferImportCompleted"}], "originalName": "DeferImportCompleted"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "shapefileSource"}], "originalName": "ShapefileSource"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "databaseSource"}], "originalName": "DatabaseSource"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "count"}], "originalName": "Count"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getWorldBounds"}], "originalName": "GetWorldBounds"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setWorldBounds"}], "originalName": "SetWorldBounds"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "sendImportCompleted"}], "originalName": "SendImportCompleted"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecordsCount"}], "originalName": "GetRecordsCount"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecord"}], "originalName": "GetRecord"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecordBounds"}], "originalName": "GetRecordBounds"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecordFieldNames"}], "originalName": "GetRecordFieldNames"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecordValue"}], "originalName": "GetRecordValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "removeRecord"}], "originalName": "RemoveRecord"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "shiftAllShapes"}], "originalName": "ShiftAllShapes"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "shiftShapes"}], "originalName": "ShiftShapes"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getMaxLongitude"}], "originalName": "GetMaxLongitude"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setRecordValue"}], "originalName": "SetRecordValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getRecordValues"}], "originalName": "GetRecordValues"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setRecordValues"}], "originalName": "SetRecordValues"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getLargestShapeBoundsForRecord"}], "originalName": "GetLargestShapeBoundsForRecord"}
+  ], 
+  "originalBaseTypeName": "DependencyObjectNotifier", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapeFilterRecordEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-shape-filter-record-event-args.ts", "mappedName": "IgrShapeFilterRecordEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "IgrShapefileRecord", "mappedName": "record"}], "originalName": "Record"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "shouldInclude"}], "originalName": "ShouldInclude"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapefileRecord", 
+  "names": [
+    {"platform": "React", "fileName": "igr-shapefile-record.ts", "mappedName": "IgrShapefileRecord"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "any", "mappedName": "fieldValues"}], "originalName": "FieldValues"}, 
+    {"names": [{"platform": "React", "mappedType": "IgRect", "mappedName": "bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getFieldValue"}], "originalName": "GetFieldValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setFieldValue"}], "originalName": "SetFieldValue"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GetTileImageUriArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-get-tile-image-uri-args.ts", "mappedName": "IgrGetTileImageUriArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tileLevel"}], "originalName": "TileLevel"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tilePositionX"}], "originalName": "TilePositionX"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tilePositionY"}], "originalName": "TilePositionY"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "tileImageUri"}], "originalName": "TileImageUri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ItfConverter", 
+  "names": [
+    {"platform": "React", "fileName": "igr-triangulation-data-source.ts", "mappedName": "IgrTriangulationDataSource"}
+  ], 
+  "members": [], "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "DownloadingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-downloading-multi-scale-image-event-args.ts", "mappedName": "IgrDownloadingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "CancellingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-cancelling-multi-scale-image-event-args.ts", "mappedName": "IgrCancellingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "TriangulationStatusEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-triangulation-status-event-args.ts", "mappedName": "IgrTriangulationStatusEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "currentStatus"}], "originalName": "CurrentStatus"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}]}

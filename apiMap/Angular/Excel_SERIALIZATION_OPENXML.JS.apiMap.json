@@ -1,158 +1,34 @@
-{
-"types": [
-{
-    "originalName": "OpenPackagingNonConformanceReason",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "OpenPackagingNonConformanceReason.ts",
- "mappedName": "OpenPackagingNonConformanceReason"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "couldNotGetPackagePart"}            ],
-           "originalName": "CouldNotGetPackagePart"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "conformant"}            ],
-           "originalName": "Conformant"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameMissing"}            ],
-           "originalName": "NameMissing"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeMissing"}            ],
-           "originalName": "ContentTypeMissing"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEmpty"}            ],
-           "originalName": "SegmentEmpty"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDoesNotStartWithForwardSlash"}            ],
-           "originalName": "NameDoesNotStartWithForwardSlash"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameEndsWithForwardSlash"}            ],
-           "originalName": "NameEndsWithForwardSlash"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasNonPCharCharacters"}            ],
-           "originalName": "SegmentHasNonPCharCharacters"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedSlashCharacters"}            ],
-           "originalName": "SegmentHasPercentEncodedSlashCharacters"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedUnreservedCharacters"}            ],
-           "originalName": "SegmentHasPercentEncodedUnreservedCharacters"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEndsWithDotCharacter"}            ],
-           "originalName": "SegmentEndsWithDotCharacter"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentMissingNonDotCharacter"}            ],
-           "originalName": "SegmentMissingNonDotCharacter"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDerivesFromExistingPartName"}            ],
-           "originalName": "NameDerivesFromExistingPartName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "duplicateName"}            ],
-           "originalName": "DuplicateName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidSyntax"}            ],
-           "originalName": "ContentTypeHasInvalidSyntax"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidWhitespace"}            ],
-           "originalName": "ContentTypeHasInvalidWhitespace"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasComments"}            ],
-           "originalName": "ContentTypeHasComments"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasParameters"}            ],
-           "originalName": "ContentTypeHasParameters"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "growthHintChanged"}            ],
-           "originalName": "GrowthHintChanged"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlEncodingUnsupported"}            ],
-           "originalName": "XmlEncodingUnsupported"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentInvalidForSchema"}            ],
-           "originalName": "XmlContentInvalidForSchema"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentDrawsOnUndefinedNamespace"}            ],
-           "originalName": "XmlContentDrawsOnUndefinedNamespace"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetsOtherRelationship"}            ],
-           "originalName": "RelationshipTargetsOtherRelationship"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipIdInvalid"}            ],
-           "originalName": "RelationshipIdInvalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTypeInvalid"}            ],
-           "originalName": "RelationshipTypeInvalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetInvalid"}            ],
-           "originalName": "RelationshipTargetInvalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetNotRelativeReference"}            ],
-           "originalName": "RelationshipTargetNotRelativeReference"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipNameInvalid"}            ],
-           "originalName": "RelationshipNameInvalid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": ".ctor"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Documents.Excel.Serialization.Excel2007"
-}
-]
-}
+{"types": [{"originalName": "OpenPackagingNonConformanceReason", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "OpenPackagingNonConformanceReason.ts", "mappedName": "OpenPackagingNonConformanceReason"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "couldNotGetPackagePart"}], "originalName": "CouldNotGetPackagePart"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "conformant"}], "originalName": "Conformant"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameMissing"}], "originalName": "NameMissing"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeMissing"}], "originalName": "ContentTypeMissing"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEmpty"}], "originalName": "SegmentEmpty"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDoesNotStartWithForwardSlash"}], "originalName": "NameDoesNotStartWithForwardSlash"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameEndsWithForwardSlash"}], "originalName": "NameEndsWithForwardSlash"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasNonPCharCharacters"}], "originalName": "SegmentHasNonPCharCharacters"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedSlashCharacters"}], "originalName": "SegmentHasPercentEncodedSlashCharacters"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentHasPercentEncodedUnreservedCharacters"}], "originalName": "SegmentHasPercentEncodedUnreservedCharacters"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentEndsWithDotCharacter"}], "originalName": "SegmentEndsWithDotCharacter"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "segmentMissingNonDotCharacter"}], "originalName": "SegmentMissingNonDotCharacter"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "nameDerivesFromExistingPartName"}], "originalName": "NameDerivesFromExistingPartName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "duplicateName"}], "originalName": "DuplicateName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidSyntax"}], "originalName": "ContentTypeHasInvalidSyntax"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasInvalidWhitespace"}], "originalName": "ContentTypeHasInvalidWhitespace"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasComments"}], "originalName": "ContentTypeHasComments"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "contentTypeHasParameters"}], "originalName": "ContentTypeHasParameters"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "growthHintChanged"}], "originalName": "GrowthHintChanged"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlEncodingUnsupported"}], "originalName": "XmlEncodingUnsupported"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentInvalidForSchema"}], "originalName": "XmlContentInvalidForSchema"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "xmlContentDrawsOnUndefinedNamespace"}], "originalName": "XmlContentDrawsOnUndefinedNamespace"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetsOtherRelationship"}], "originalName": "RelationshipTargetsOtherRelationship"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipIdInvalid"}], "originalName": "RelationshipIdInvalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTypeInvalid"}], "originalName": "RelationshipTypeInvalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetInvalid"}], "originalName": "RelationshipTargetInvalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipTargetNotRelativeReference"}], "originalName": "RelationshipTargetNotRelativeReference"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OpenPackagingNonConformanceReason", "mappedName": "relationshipNameInvalid"}], "originalName": "RelationshipNameInvalid"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": ".ctor"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Documents.Excel.Serialization.Excel2007"}]}

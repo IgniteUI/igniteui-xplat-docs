@@ -1,306 +1,77 @@
-{
-"extraFiles": [
-"igc-expansion-panel-module.ts",
-"igc-popup-module.ts"
-],
-"types": [
-{
-    "originalName": "PopupAlignment",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "PopupAlignment.ts",
- "mappedName": "PopupAlignment"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupAlignment", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupAlignment", "mappedName": "Near"}            ],
-           "originalName": "Near"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupAlignment", "mappedName": "Far"}            ],
-           "originalName": "Far"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "PopupDirection",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "PopupDirection.ts",
- "mappedName": "PopupDirection"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupDirection", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupDirection", "mappedName": "Down"}            ],
-           "originalName": "Down"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "PopupDirection", "mappedName": "Up"}            ],
-           "originalName": "Up"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnExpandedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-on-expanded-event-args.ts",
- "mappedName": "IgcOnExpandedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnCollapsedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-on-collapsed-event-args.ts",
- "mappedName": "IgcOnCollapsedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnPopupEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-on-popup-event-args.ts",
- "mappedName": "IgcOnPopupEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnClosedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-on-closed-event-args.ts",
- "mappedName": "IgcOnClosedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "Popup",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-popup-component.ts",
- "mappedName": "IgcPopupComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "animationDuration"}            ],
-           "originalName": "AnimationDuration"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "animationEnabled"}            ],
-           "originalName": "AnimationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShown"}            ],
-           "originalName": "IsShown"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "close"}            ],
-           "originalName": "Close"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "showRelativeToExclusionRect"}            ],
-           "originalName": "ShowRelativeToExclusionRect"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
-           "originalName": "ExportVisualModel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
-           "originalName": "ExportSerializedVisualModel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "ExpansionPanel",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-expansion-panel-component.ts",
- "mappedName": "IgcExpansionPanelComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "caption"}            ],
-           "originalName": "Caption"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
-           "originalName": "CaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
-           "originalName": "ActualCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
-           "originalName": "CaptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
-           "originalName": "CaptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "description"}            ],
-           "originalName": "Description"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
-           "originalName": "DescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
-           "originalName": "ActualDescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
-           "originalName": "DescriptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
-           "originalName": "DescriptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "expanded"}            ],
-           "originalName": "Expanded"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
-           "originalName": "HeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
-           "originalName": "ActualHeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
-           "originalName": "HeaderCollapsedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
-           "originalName": "HeaderExpandedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "collapse"}            ],
-           "originalName": "Collapse"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "expand"}            ],
-           "originalName": "Expand"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toggle"}            ],
-           "originalName": "Toggle"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-}
-]
-}
+{"extraFiles": ["igc-expansion-panel-module.ts", "igc-popup-module.ts"], "types": [{"originalName": "PopupAlignment", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "PopupAlignment.ts", "mappedName": "PopupAlignment"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupAlignment", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupAlignment", "mappedName": "Near"}], "originalName": "Near"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupAlignment", "mappedName": "Far"}], "originalName": "Far"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "PopupDirection", "isEnum": true, 
+  "names": [
+    {"platform": "WebComponents", "fileName": "PopupDirection.ts", "mappedName": "PopupDirection"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupDirection", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupDirection", "mappedName": "Down"}], "originalName": "Down"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "PopupDirection", "mappedName": "Up"}], "originalName": "Up"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnExpandedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-on-expanded-event-args.ts", "mappedName": "IgcOnExpandedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnCollapsedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-on-collapsed-event-args.ts", "mappedName": "IgcOnCollapsedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnPopupEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-on-popup-event-args.ts", "mappedName": "IgcOnPopupEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnClosedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-on-closed-event-args.ts", "mappedName": "IgcOnClosedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "Popup", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-popup-component.ts", "mappedName": "IgcPopupComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "animationDuration"}], "originalName": "AnimationDuration"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "animationEnabled"}], "originalName": "AnimationEnabled"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "elevation"}], "originalName": "Elevation"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualElevation"}], "originalName": "ActualElevation"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isShown"}], "originalName": "IsShown"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualUmbraShadowColor"}], "originalName": "ActualUmbraShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}], "originalName": "ActualPenumbraShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "background"}], "originalName": "Background"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "close"}], "originalName": "Close"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "ExpansionPanel", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-expansion-panel-component.ts", "mappedName": "IgcExpansionPanelComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "caption"}], "originalName": "Caption"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "captionTextColor"}], "originalName": "CaptionTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualCaptionTextColor"}], "originalName": "ActualCaptionTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "captionCollapsedTextColor"}], "originalName": "CaptionCollapsedTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "captionExpandedTextColor"}], "originalName": "CaptionExpandedTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "description"}], "originalName": "Description"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "descriptionTextColor"}], "originalName": "DescriptionTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualDescriptionTextColor"}], "originalName": "ActualDescriptionTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}], "originalName": "DescriptionCollapsedTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}], "originalName": "DescriptionExpandedTextColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "elevation"}], "originalName": "Elevation"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualElevation"}], "originalName": "ActualElevation"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "headerBackgroundColor"}], "originalName": "HeaderBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}], "originalName": "ActualHeaderBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}], "originalName": "HeaderCollapsedBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}], "originalName": "HeaderExpandedBackgroundColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualUmbraShadowColor"}], "originalName": "ActualUmbraShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}], "originalName": "ActualPenumbraShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "collapse"}], "originalName": "Collapse"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "expand"}], "originalName": "Expand"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "toggle"}], "originalName": "Toggle"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}]}

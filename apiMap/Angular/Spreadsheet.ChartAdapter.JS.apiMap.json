@@ -1,22 +1,8 @@
-{
-"extraFiles": [
-"igx-spreadsheet-chart-adapter-module.ts"
-],
-"types": [
-{
-    "originalName": "SpreadsheetChartAdapter",
-   "names": [
-        { "platform": "Angular",     "fileName": "SpreadsheetChartAdapter.ts",
- "mappedName": "SpreadsheetChartAdapter"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": ".ctor"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalBaseTypeName": "SpreadsheetChartAdapterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Grids",
-    "originalNamespace": "Infragistics.Controls.Grids"
-}
-]
-}
+{"extraFiles": ["igx-spreadsheet-chart-adapter-module.ts"], "types": [{"originalName": "SpreadsheetChartAdapter", 
+  "names": [
+    {"platform": "Angular", "fileName": "SpreadsheetChartAdapter.ts", "mappedName": "SpreadsheetChartAdapter"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": ".ctor"}], "originalName": ".ctor"}
+  ], 
+  "originalBaseTypeName": "SpreadsheetChartAdapterBase", "originalBaseTypeNamespace": "Infragistics.Controls.Grids", "originalNamespace": "Infragistics.Controls.Grids"}]}

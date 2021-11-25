@@ -1,294 +1,63 @@
-{
-"types": [
-{
-    "originalName": "XamSparkline",
-   "names": [
-        { "platform": "Blazor",     "fileName": "Sparkline.cs",
- "mappedName": "IgbSparkline"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brush"}            ],
-           "originalName": "Brush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeBrush"}            ],
-           "originalName": "NegativeBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NegativeMarkerBrush"}            ],
-           "originalName": "NegativeMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FirstMarkerBrush"}            ],
-           "originalName": "FirstMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LastMarkerBrush"}            ],
-           "originalName": "LastMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HighMarkerBrush"}            ],
-           "originalName": "HighMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LowMarkerBrush"}            ],
-           "originalName": "LowMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TrendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HorizontalAxisBrush"}            ],
-           "originalName": "HorizontalAxisBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "VerticalAxisBrush"}            ],
-           "originalName": "VerticalAxisBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NormalRangeFill"}            ],
-           "originalName": "NormalRangeFill"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "HorizontalAxisVisibility"}            ],
-           "originalName": "HorizontalAxisVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "VerticalAxisVisibility"}            ],
-           "originalName": "VerticalAxisVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "MarkerVisibility"}            ],
-           "originalName": "MarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "NegativeMarkerVisibility"}            ],
-           "originalName": "NegativeMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "FirstMarkerVisibility"}            ],
-           "originalName": "FirstMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "LastMarkerVisibility"}            ],
-           "originalName": "LastMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "LowMarkerVisibility"}            ],
-           "originalName": "LowMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "HighMarkerVisibility"}            ],
-           "originalName": "HighMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "NormalRangeVisibility"}            ],
-           "originalName": "NormalRangeVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "DisplayNormalRangeInFront"}            ],
-           "originalName": "DisplayNormalRangeInFront"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerSize"}            ],
-           "originalName": "MarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "FirstMarkerSize"}            ],
-           "originalName": "FirstMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LastMarkerSize"}            ],
-           "originalName": "LastMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HighMarkerSize"}            ],
-           "originalName": "HighMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LowMarkerSize"}            ],
-           "originalName": "LowMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NegativeMarkerSize"}            ],
-           "originalName": "NegativeMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LineThickness"}            ],
-           "originalName": "LineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Minimum"}            ],
-           "originalName": "Minimum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Maximum"}            ],
-           "originalName": "Maximum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
-           "originalName": "ItemsSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ValueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "TrendLineType", "mappedName": "TrendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TrendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NormalRangeMinimum"}            ],
-           "originalName": "NormalRangeMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NormalRangeMaximum"}            ],
-           "originalName": "NormalRangeMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "SparklineDisplayType", "mappedName": "DisplayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "VerticalAxisLabel"}            ],
-           "originalName": "VerticalAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "HorizontalAxisLabel"}            ],
-           "originalName": "HorizontalAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HorizontalLabelFormat"}            ],
-           "originalName": "HorizontalLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "HorizontalLabelFormatSpecifiers"}            ],
-           "originalName": "HorizontalLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "VerticalLabelFormat"}            ],
-           "originalName": "VerticalLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "VerticalLabelFormatSpecifiers"}            ],
-           "originalName": "VerticalLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "XamSparkline", 
+  "names": [
+    {"platform": "Blazor", "fileName": "Sparkline.cs", "mappedName": "IgbSparkline"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Brush"}], "originalName": "Brush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "NegativeBrush"}], "originalName": "NegativeBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "MarkerBrush"}], "originalName": "MarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "NegativeMarkerBrush"}], "originalName": "NegativeMarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "FirstMarkerBrush"}], "originalName": "FirstMarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LastMarkerBrush"}], "originalName": "LastMarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "HighMarkerBrush"}], "originalName": "HighMarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LowMarkerBrush"}], "originalName": "LowMarkerBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TrendLineBrush"}], "originalName": "TrendLineBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "HorizontalAxisBrush"}], "originalName": "HorizontalAxisBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "VerticalAxisBrush"}], "originalName": "VerticalAxisBrush"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "NormalRangeFill"}], "originalName": "NormalRangeFill"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "HorizontalAxisVisibility"}], "originalName": "HorizontalAxisVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "VerticalAxisVisibility"}], "originalName": "VerticalAxisVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "MarkerVisibility"}], "originalName": "MarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "NegativeMarkerVisibility"}], "originalName": "NegativeMarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "FirstMarkerVisibility"}], "originalName": "FirstMarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "LastMarkerVisibility"}], "originalName": "LastMarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "LowMarkerVisibility"}], "originalName": "LowMarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "HighMarkerVisibility"}], "originalName": "HighMarkerVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "NormalRangeVisibility"}], "originalName": "NormalRangeVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "DisplayNormalRangeInFront"}], "originalName": "DisplayNormalRangeInFront"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MarkerSize"}], "originalName": "MarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "FirstMarkerSize"}], "originalName": "FirstMarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "LastMarkerSize"}], "originalName": "LastMarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "HighMarkerSize"}], "originalName": "HighMarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "LowMarkerSize"}], "originalName": "LowMarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "NegativeMarkerSize"}], "originalName": "NegativeMarkerSize"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "LineThickness"}], "originalName": "LineThickness"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Minimum"}], "originalName": "Minimum"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "Maximum"}], "originalName": "Maximum"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "DataSource"}], "originalName": "ItemsSource"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "LabelMemberPath"}], "originalName": "LabelMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "TrendLineType", "mappedName": "TrendLineType"}], "originalName": "TrendLineType"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "TrendLinePeriod"}], "originalName": "TrendLinePeriod"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "TrendLineThickness"}], "originalName": "TrendLineThickness"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "NormalRangeMinimum"}], "originalName": "NormalRangeMinimum"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "NormalRangeMaximum"}], "originalName": "NormalRangeMaximum"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "SparklineDisplayType", "mappedName": "DisplayType"}], "originalName": "DisplayType"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}], "originalName": "UnknownValuePlotting"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "VerticalAxisLabel"}], "originalName": "VerticalAxisLabel"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "HorizontalAxisLabel"}], "originalName": "HorizontalAxisLabel"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "HorizontalLabelFormat"}], "originalName": "HorizontalLabelFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection", "mappedName": "HorizontalLabelFormatSpecifiers"}], "originalName": "HorizontalLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "VerticalLabelFormat"}], "originalName": "VerticalLabelFormat"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "IgbFormatSpecifierCollection", "mappedName": "VerticalLabelFormatSpecifiers"}], "originalName": "VerticalLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "PixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "ActualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyResized"}], "originalName": "NotifyResized"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyRemoveItem"}], "originalName": "NotifyRemoveItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}]}

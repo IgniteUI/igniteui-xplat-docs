@@ -1,306 +1,77 @@
-{
-"extraFiles": [
-"igr-expansion-panel-module.ts",
-"igr-popup-module.ts"
-],
-"types": [
-{
-    "originalName": "PopupAlignment",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "PopupAlignment.ts",
- "mappedName": "PopupAlignment"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupAlignment", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupAlignment", "mappedName": "Near"}            ],
-           "originalName": "Near"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupAlignment", "mappedName": "Far"}            ],
-           "originalName": "Far"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "PopupDirection",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "PopupDirection.ts",
- "mappedName": "PopupDirection"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupDirection", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupDirection", "mappedName": "Down"}            ],
-           "originalName": "Down"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "PopupDirection", "mappedName": "Up"}            ],
-           "originalName": "Up"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnExpandedEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-expanded-event-args.ts",
- "mappedName": "IgrOnExpandedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnCollapsedEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-collapsed-event-args.ts",
- "mappedName": "IgrOnCollapsedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnPopupEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-popup-event-args.ts",
- "mappedName": "IgrOnPopupEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnClosedEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-closed-event-args.ts",
- "mappedName": "IgrOnClosedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "Popup",
-   "names": [
-        { "platform": "React",     "fileName": "igr-popup.ts",
- "mappedName": "IgrPopup"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "animationDuration"}            ],
-           "originalName": "AnimationDuration"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "animationEnabled"}            ],
-           "originalName": "AnimationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isShown"}            ],
-           "originalName": "IsShown"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "close"}            ],
-           "originalName": "Close"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "showRelativeToExclusionRect"}            ],
-           "originalName": "ShowRelativeToExclusionRect"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualModel"}            ],
-           "originalName": "ExportVisualModel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualModel"}            ],
-           "originalName": "ExportSerializedVisualModel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "ExpansionPanel",
-   "names": [
-        { "platform": "React",     "fileName": "igr-expansion-panel.ts",
- "mappedName": "IgrExpansionPanel"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "caption"}            ],
-           "originalName": "Caption"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
-           "originalName": "CaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
-           "originalName": "ActualCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
-           "originalName": "CaptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
-           "originalName": "CaptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "description"}            ],
-           "originalName": "Description"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
-           "originalName": "DescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
-           "originalName": "ActualDescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
-           "originalName": "DescriptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
-           "originalName": "DescriptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "expanded"}            ],
-           "originalName": "Expanded"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
-           "originalName": "HeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
-           "originalName": "ActualHeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
-           "originalName": "HeaderCollapsedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
-           "originalName": "HeaderExpandedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "collapse"}            ],
-           "originalName": "Collapse"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "expand"}            ],
-           "originalName": "Expand"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "toggle"}            ],
-           "originalName": "Toggle"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-}
-]
-}
+{"extraFiles": ["igr-expansion-panel-module.ts", "igr-popup-module.ts"], "types": [{"originalName": "PopupAlignment", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "PopupAlignment.ts", "mappedName": "PopupAlignment"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "PopupAlignment", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "React", "mappedType": "PopupAlignment", "mappedName": "Near"}], "originalName": "Near"}, 
+    {"names": [{"platform": "React", "mappedType": "PopupAlignment", "mappedName": "Far"}], "originalName": "Far"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "PopupDirection", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "PopupDirection.ts", "mappedName": "PopupDirection"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "PopupDirection", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "React", "mappedType": "PopupDirection", "mappedName": "Down"}], "originalName": "Down"}, 
+    {"names": [{"platform": "React", "mappedType": "PopupDirection", "mappedName": "Up"}], "originalName": "Up"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnExpandedEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-on-expanded-event-args.ts", "mappedName": "IgrOnExpandedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnCollapsedEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-on-collapsed-event-args.ts", "mappedName": "IgrOnCollapsedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnPopupEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-on-popup-event-args.ts", "mappedName": "IgrOnPopupEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "OnClosedEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-on-closed-event-args.ts", "mappedName": "IgrOnClosedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "Popup", 
+  "names": [
+    {"platform": "React", "fileName": "igr-popup.ts", "mappedName": "IgrPopup"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "animationDuration"}], "originalName": "AnimationDuration"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "animationEnabled"}], "originalName": "AnimationEnabled"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "elevation"}], "originalName": "Elevation"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "actualElevation"}], "originalName": "ActualElevation"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isShown"}], "originalName": "IsShown"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualUmbraShadowColor"}], "originalName": "ActualUmbraShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}], "originalName": "ActualPenumbraShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "background"}], "originalName": "Background"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "close"}], "originalName": "Close"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "showRelativeToExclusionRect"}], "originalName": "ShowRelativeToExclusionRect"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}, {"originalName": "ExpansionPanel", 
+  "names": [
+    {"platform": "React", "fileName": "igr-expansion-panel.ts", "mappedName": "IgrExpansionPanel"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "caption"}], "originalName": "Caption"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "captionTextColor"}], "originalName": "CaptionTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualCaptionTextColor"}], "originalName": "ActualCaptionTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "captionCollapsedTextColor"}], "originalName": "CaptionCollapsedTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "captionExpandedTextColor"}], "originalName": "CaptionExpandedTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "description"}], "originalName": "Description"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "descriptionTextColor"}], "originalName": "DescriptionTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualDescriptionTextColor"}], "originalName": "ActualDescriptionTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}], "originalName": "DescriptionCollapsedTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}], "originalName": "DescriptionExpandedTextColor"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "elevation"}], "originalName": "Elevation"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "actualElevation"}], "originalName": "ActualElevation"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "expanded"}], "originalName": "Expanded"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "headerBackgroundColor"}], "originalName": "HeaderBackgroundColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}], "originalName": "ActualHeaderBackgroundColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}], "originalName": "HeaderCollapsedBackgroundColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}], "originalName": "HeaderExpandedBackgroundColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualUmbraShadowColor"}], "originalName": "ActualUmbraShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}], "originalName": "ActualPenumbraShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "actualAmbientShadowColor"}], "originalName": "ActualAmbientShadowColor"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "collapse"}], "originalName": "Collapse"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "expand"}], "originalName": "Expand"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "toggle"}], "originalName": "Toggle"}], "originalNamespace": "Infragistics.Controls.Layouts.Implementation"}]}

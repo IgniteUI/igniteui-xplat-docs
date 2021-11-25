@@ -1,300 +1,85 @@
-{
-"types": [
-{
-    "originalName": "FunnelSliceDataContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FunnelSliceDataContext.cs",
- "mappedName": "IgbFunnelSliceDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ItemOutline"}            ],
-           "originalName": "ItemOutline"
-       }   ],
-    "originalBaseTypeName": "DataContext",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelDataContext",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FunnelDataContext.cs",
- "mappedName": "IgbFunnelDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
-           "originalName": "Index"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelSliceClickedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FunnelSliceClickedEventArgs.cs",
- "mappedName": "IgbFunnelSliceClickedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "Bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FunnelSliceEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FunnelSliceEventArgs.cs",
- "mappedName": "IgbFunnelSliceEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "Bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XamFunnelChart",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FunnelChart.cs",
- "mappedName": "IgbFunnelChart"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ValueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BottomEdgeWidth"}            ],
-           "originalName": "BottomEdgeWidth"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "InnerLabelMemberPath"}            ],
-           "originalName": "InnerLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "OuterLabelMemberPath"}            ],
-           "originalName": "OuterLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "InnerLabelVisibility"}            ],
-           "originalName": "InnerLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "OuterLabelVisibility"}            ],
-           "originalName": "OuterLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "OuterLabelAlignment", "mappedName": "OuterLabelAlignment"}            ],
-           "originalName": "OuterLabelAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "FunnelSliceDisplay", "mappedName": "FunnelSliceDisplay"}            ],
-           "originalName": "FunnelSliceDisplay"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsInverted"}            ],
-           "originalName": "IsInverted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseBezierCurve"}            ],
-           "originalName": "UseBezierCurve"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AllowSliceSelection"}            ],
-           "originalName": "AllowSliceSelection"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseUnselectedStyle"}            ],
-           "originalName": "UseUnselectedStyle"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectedSliceFill"}            ],
-           "originalName": "selectedSliceStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SelectedSliceStroke"}            ],
-           "originalName": "selectedSliceStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SelectedSliceStrokeThickness"}            ],
-           "originalName": "selectedSliceStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SelectedSliceOpacity"}            ],
-           "originalName": "selectedSliceStyle.opacity"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "UnselectedSliceFill"}            ],
-           "originalName": "unselectedSliceStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "UnselectedSliceStroke"}            ],
-           "originalName": "unselectedSliceStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "UnselectedSliceStrokeThickness"}            ],
-           "originalName": "unselectedSliceStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "UnselectedSliceOpacity"}            ],
-           "originalName": "unselectedSliceStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendItemBadgeTemplate"}            ],
-           "originalName": "LegendItemBadgeTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseOuterLabelsForLegend"}            ],
-           "originalName": "UseOuterLabelsForLegend"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "OuterLabelTextStyle"}            ],
-           "originalName": "OuterLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OutlineThickness"}            ],
-           "originalName": "OutlineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "OuterLabelTextColor"}            ],
-           "originalName": "OuterLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ToggleSelection"}            ],
-           "originalName": "ToggleSelection"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "FunnelSliceDataContext", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FunnelSliceDataContext.cs", "mappedName": "IgbFunnelSliceDataContext"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ItemOutline"}], "originalName": "ItemOutline"}
+  ], 
+  "originalBaseTypeName": "DataContext", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelDataContext", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FunnelDataContext.cs", "mappedName": "IgbFunnelDataContext"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "Item"}], "originalName": "Item"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "Index"}], "originalName": "Index"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelSliceClickedEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FunnelSliceClickedEventArgs.cs", "mappedName": "IgbFunnelSliceClickedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "Index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "Bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "Item"}], "originalName": "Item"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FunnelSliceEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FunnelSliceEventArgs.cs", "mappedName": "IgbFunnelSliceEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "Index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "Bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "Item"}], "originalName": "Item"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "XamFunnelChart", 
+  "names": [
+    {"platform": "Blazor", "fileName": "FunnelChart.cs", "mappedName": "IgbFunnelChart"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ValueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Brushes"}], "originalName": "Brushes"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Outlines"}], "originalName": "Outlines"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "BottomEdgeWidth"}], "originalName": "BottomEdgeWidth"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "InnerLabelMemberPath"}], "originalName": "InnerLabelMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "OuterLabelMemberPath"}], "originalName": "OuterLabelMemberPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "InnerLabelVisibility"}], "originalName": "InnerLabelVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Visibility", "mappedName": "OuterLabelVisibility"}], "originalName": "OuterLabelVisibility"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "OuterLabelAlignment", "mappedName": "OuterLabelAlignment"}], "originalName": "OuterLabelAlignment"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "FunnelSliceDisplay", "mappedName": "FunnelSliceDisplay"}], "originalName": "FunnelSliceDisplay"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "TransitionDuration"}], "originalName": "TransitionDuration"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "IsInverted"}], "originalName": "IsInverted"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseBezierCurve"}], "originalName": "UseBezierCurve"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "AllowSliceSelection"}], "originalName": "AllowSliceSelection"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseUnselectedStyle"}], "originalName": "UseUnselectedStyle"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "string", "mappedName": "SelectedSliceFill"}], "originalName": "selectedSliceStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "string", "mappedName": "SelectedSliceStroke"}], "originalName": "selectedSliceStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "double", "mappedName": "SelectedSliceStrokeThickness"}], "originalName": "selectedSliceStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "double", "mappedName": "SelectedSliceOpacity"}], "originalName": "selectedSliceStyle.opacity"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "string", "mappedName": "UnselectedSliceFill"}], "originalName": "unselectedSliceStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "string", "mappedName": "UnselectedSliceStroke"}], "originalName": "unselectedSliceStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "double", "mappedName": "UnselectedSliceStrokeThickness"}], "originalName": "unselectedSliceStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Blazor", "mappedType": "double", "mappedName": "UnselectedSliceOpacity"}], "originalName": "unselectedSliceStyle.opacity"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "LegendItemBadgeTemplate"}], "originalName": "LegendItemBadgeTemplate"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseOuterLabelsForLegend"}], "originalName": "UseOuterLabelsForLegend"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TextStyle"}], "originalName": "TextStyle"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "OuterLabelTextStyle"}], "originalName": "OuterLabelTextStyle"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "OutlineThickness"}], "originalName": "OutlineThickness"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "PixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "OuterLabelTextColor"}], "originalName": "OuterLabelTextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TextColor"}], "originalName": "TextColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ProvideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyResized"}], "originalName": "NotifyResized"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "NotifyRemoveItem"}], "originalName": "NotifyRemoveItem"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ToggleSelection"}], "originalName": "ToggleSelection"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ExportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}]}

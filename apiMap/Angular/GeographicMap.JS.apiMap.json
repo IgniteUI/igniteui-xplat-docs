@@ -1,1344 +1,366 @@
-{
-"extraFiles": [
-"igx-geographic-map-core-module.ts",
-"igx-geographic-map-module.ts"
-],
-"types": [
-{
-    "originalName": "ArcGISOnlineMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-arc-gis-online-map-imagery.ts",
-    "dynamicModuleName": "igx-arc-gis-online-map-imagery-dynamic-module.ts",
-    "moduleName": "igx-arc-gis-online-map-imagery-module.ts",
- "mappedName": "IgxArcGISOnlineMapImagery"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "mapServerUri"}            ],
-           "originalName": "MapServerUri"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "userName"}            ],
-           "originalName": "UserName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "password"}            ],
-           "originalName": "Password"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "userToken"}            ],
-           "originalName": "UserToken"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMapPublic"}            ],
-           "originalName": "IsMapPublic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "defaultTokenTimeout"}            ],
-           "originalName": "DefaultTokenTimeout"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "tokenGenerationEndPoint"}            ],
-           "originalName": "TokenGenerationEndPoint"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "refererUri"}            ],
-           "originalName": "RefererUri"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "acquireNewToken"}            ],
-           "originalName": "AcquireNewToken"
-       }   ],
-    "originalBaseTypeName": "GeographicMapImagery",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicTileSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-tile-series-component.ts",
-    "dynamicModuleName": "igx-geographic-tile-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-tile-series-module.ts",
- "mappedName": "IgxGeographicTileSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isTile"}            ],
-           "originalName": "IsTile"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}            ],
-           "originalName": "TileImagery"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "clearTileCache"}            ],
-           "originalName": "ClearTileCache"
-       }   ],
-    "originalBaseTypeName": "GeographicShapeSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "BingMapsImageryStyle",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "BingMapsImageryStyle.ts",
- "mappedName": "BingMapsImageryStyle"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "Aerial"}            ],
-           "originalName": "Aerial"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "AerialWithLabels"}            ],
-           "originalName": "AerialWithLabels"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "Road"}            ],
-           "originalName": "Road"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasDark"}            ],
-           "originalName": "CanvasDark"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasLight"}            ],
-           "originalName": "CanvasLight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasGray"}            ],
-           "originalName": "CanvasGray"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "BingMapsMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-bing-maps-map-imagery.ts",
-    "dynamicModuleName": "igx-bing-maps-map-imagery-dynamic-module.ts",
-    "moduleName": "igx-bing-maps-map-imagery-module.ts",
- "mappedName": "IgxBingMapsMapImagery"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isInitialized"}            ],
-           "originalName": "IsInitialized"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isDeferredLoad"}            ],
-           "originalName": "IsDeferredLoad"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "tilePath"}            ],
-           "originalName": "TilePath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualTilePath"}            ],
-           "originalName": "ActualTilePath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSubDomainsCollection", "mappedName": "subDomains"}            ],
-           "originalName": "SubDomains"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSubDomainsCollection", "mappedName": "actualSubDomains"}            ],
-           "originalName": "ActualSubDomains"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "bingImageryRestUri"}            ],
-           "originalName": "BingImageryRestUri"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualBingImageryRestUri"}            ],
-           "originalName": "ActualBingImageryRestUri"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "cultureName"}            ],
-           "originalName": "CultureName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "apiKey"}            ],
-           "originalName": "ApiKey"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BingMapsImageryStyle", "mappedName": "imageryStyle"}            ],
-           "originalName": "ImageryStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "requestMapSettings"}            ],
-           "originalName": "RequestMapSettings"
-       }   ],
-    "originalBaseTypeName": "GeographicMapImagery",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "TileGeneratorMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-tile-generator-map-imagery.ts",
-    "dynamicModuleName": "igx-tile-generator-map-imagery-dynamic-module.ts",
-    "moduleName": "igx-tile-generator-map-imagery-module.ts",
- "mappedName": "IgxTileGeneratorMapImagery"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ITileGenerator", "mappedName": "tileGenerator"}            ],
-           "originalName": "TileGenerator"
-       }   ],
-    "originalBaseTypeName": "GeographicMapImagery",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "CustomMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-custom-map-imagery.ts",
-    "dynamicModuleName": "igx-custom-map-imagery-dynamic-module.ts",
-    "moduleName": "igx-custom-map-imagery-module.ts",
- "mappedName": "IgxCustomMapImagery"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMapImagery",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-map-imagery.ts",
- "mappedName": "IgxGeographicMapImagery"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IMapRenderDeferralHandler", "mappedName": "deferralHandler"}            ],
-           "originalName": "DeferralHandler"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "windowRect"}            ],
-           "originalName": "WindowRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxGeographicMapComponent", "mappedName": "geographicMap"}            ],
-           "originalName": "GeographicMap"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "referer"}            ],
-           "originalName": "Referer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
-           "originalName": "IsHorizontalWrappingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "userAgent"}            ],
-           "originalName": "UserAgent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "Opacity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "clearTileCache"}            ],
-           "originalName": "ClearTileCache"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ImagesChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-images-changed-event-args.ts",
- "mappedName": "IgxImagesChangedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "OpenStreetMapImagery",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-open-street-map-imagery.ts",
-    "dynamicModuleName": "igx-open-street-map-imagery-dynamic-module.ts",
-    "moduleName": "igx-open-street-map-imagery-module.ts",
- "mappedName": "IgxOpenStreetMapImagery"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "tilePath"}            ],
-           "originalName": "TilePath"
-       }   ],
-    "originalBaseTypeName": "GeographicMapImagery",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicHighDensityScatterSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-high-density-scatter-series-component.ts",
-    "dynamicModuleName": "igx-geographic-high-density-scatter-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-high-density-scatter-series-module.ts",
- "mappedName": "IgxGeographicHighDensityScatterSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPixel"}            ],
-           "originalName": "IsPixel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
-           "originalName": "LatitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
-           "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useBruteForce"}            ],
-           "originalName": "UseBruteForce"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "progressiveLoad"}            ],
-           "originalName": "ProgressiveLoad"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "mouseOverEnabled"}            ],
-           "originalName": "MouseOverEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "heatMinimum"}            ],
-           "originalName": "HeatMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "heatMaximum"}            ],
-           "originalName": "HeatMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "heatMinimumColor"}            ],
-           "originalName": "HeatMinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "heatMaximumColor"}            ],
-           "originalName": "HeatMaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "pointExtent"}            ],
-           "originalName": "PointExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "progressiveStatus"}            ],
-           "originalName": "ProgressiveStatus"
-       }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicMarkerSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-marker-series-component.ts",
- "mappedName": "IgxGeographicMarkerSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
-           "originalName": "MarkerOutlineMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
-           "originalName": "MarkerFillMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
-           "originalName": "ActualMarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
-           "originalName": "ActualMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
-           "originalName": "ActualMarkerOutline"
-       }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicPolylineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-polyline-series-component.ts",
-    "dynamicModuleName": "igx-geographic-polyline-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-polyline-series-module.ts",
- "mappedName": "IgxGeographicPolylineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
-           "originalName": "IsPolyline"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "shapeStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "shapeStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "shapeStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "shapeStyle.opacity"
-       }   ],
-    "originalBaseTypeName": "GeographicShapeSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicProportionalSymbolSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-proportional-symbol-series-component.ts",
-    "dynamicModuleName": "igx-geographic-proportional-symbol-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-proportional-symbol-series-module.ts",
- "mappedName": "IgxGeographicProportionalSymbolSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
-           "originalName": "HasOnlyMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
-           "originalName": "LatitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
-           "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "radiusMemberPath"}            ],
-           "originalName": "RadiusMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSizeScaleComponent", "mappedName": "radiusScale"}            ],
-           "originalName": "RadiusScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fillMemberPath"}            ],
-           "originalName": "FillMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxBrushScaleComponent", "mappedName": "fillScale"}            ],
-           "originalName": "FillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}            ],
-           "originalName": "FillScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
-           "originalName": "MarkerOutlineUsesFillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
-           "originalName": "MarkerOutlineBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
-           "originalName": "MarkerBrushBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
-           "originalName": "IsCustomScatterStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomScatterMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       }   ],
-    "originalBaseTypeName": "GeographicMarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicProportionalSymbolSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-proportional-symbol-series-base-component.ts",
- "mappedName": "IgxGeographicProportionalSymbolSeriesBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMarkerSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicScatterAreaSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-scatter-area-series-component.ts",
-    "dynamicModuleName": "igx-geographic-scatter-area-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-scatter-area-series-module.ts",
- "mappedName": "IgxGeographicScatterAreaSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
-           "originalName": "IsArea"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "colorMemberPath"}            ],
-           "originalName": "ColorMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "colorScale"}            ],
-           "originalName": "ColorScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "actualColorScale"}            ],
-           "originalName": "ActualColorScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "updateActualColorScale"}            ],
-           "originalName": "UpdateActualColorScale"
-       }   ],
-    "originalBaseTypeName": "GeographicXYTriangulatingSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicShapeSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-shape-series-base-component.ts",
- "mappedName": "IgxGeographicShapeSeriesBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
-           "originalName": "ShapeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}            ],
-           "originalName": "IsCustomShapeStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomShapeMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "itemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchPointsThreshold"}            ],
-           "originalName": "ItemSearchPointsThreshold"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxShapeDataSource", "mappedName": "shapefileDataSource"}            ],
-           "originalName": "ShapefileDataSource"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shapeFilterResolution"}            ],
-           "originalName": "ShapeFilterResolution"
-       }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicShapeSeriesBaseBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-shape-series-base-base-component.ts",
- "mappedName": "IgxGeographicShapeSeriesBaseBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicSymbolSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-symbol-series-base-component.ts",
- "mappedName": "IgxGeographicSymbolSeriesBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMarkerSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicMarkerSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-marker-series-base-component.ts",
- "mappedName": "IgxGeographicMarkerSeriesBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicXYTriangulatingSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-xy-triangulating-series-component.ts",
- "mappedName": "IgxGeographicXYTriangulatingSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
-           "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
-           "originalName": "LatitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "trianglesSource"}            ],
-           "originalName": "TrianglesSource"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "triangleVertexMemberPath1"}            ],
-           "originalName": "TriangleVertexMemberPath1"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "triangleVertexMemberPath2"}            ],
-           "originalName": "TriangleVertexMemberPath2"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "triangleVertexMemberPath3"}            ],
-           "originalName": "TriangleVertexMemberPath3"
-       }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicXYTriangulatingSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-xy-triangulating-series-base-component.ts",
- "mappedName": "IgxGeographicXYTriangulatingSeriesBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicContourLineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-contour-line-series-component.ts",
-    "dynamicModuleName": "igx-geographic-contour-line-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-contour-line-series-module.ts",
- "mappedName": "IgxGeographicContourLineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
-           "originalName": "IsLineContour"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "fillScale"}            ],
-           "originalName": "FillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "actualFillScale"}            ],
-           "originalName": "ActualFillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxContourValueResolverComponent", "mappedName": "valueResolver"}            ],
-           "originalName": "ValueResolver"
-       }   ],
-    "originalBaseTypeName": "GeographicXYTriangulatingSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicMapSeriesHost",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-map-series-host-component.ts",
- "mappedName": "IgxGeographicMapSeriesHostComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isGeographic"}            ],
-           "originalName": "IsGeographic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
-           "originalName": "HasMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "visibleFromScale"}            ],
-           "originalName": "VisibleFromScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "coercionMethods"}            ],
-           "originalName": "CoercionMethods"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
-           "originalName": "NotifyIndexedPropertiesChanged"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
-           "originalName": "GetSeriesValueBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
-           "originalName": "GetSeriesValueMarkerBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
-           "originalName": "GetSeriesHighValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
-           "originalName": "GetSeriesHighValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
-           "originalName": "GetSeriesLowValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
-           "originalName": "GetSeriesLowValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}            ],
-           "originalName": "GetSeriesValuePositionFromSeriesPixel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}            ],
-           "originalName": "GetSeriesValueFromSeriesPixel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
-           "originalName": "GetItemSpan"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "renderSeries"}            ],
-           "originalName": "RenderSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "styleUpdated"}            ],
-           "originalName": "StyleUpdated"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicShapeSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-shape-series-component.ts",
-    "dynamicModuleName": "igx-geographic-shape-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-shape-series-module.ts",
- "mappedName": "IgxGeographicShapeSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
-           "originalName": "IsPolygon"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "shapeStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "shapeStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "shapeStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "shapeStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
-           "originalName": "MarkerOutlineMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
-           "originalName": "MarkerFillMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
-           "originalName": "MarkerCollisionAvoidance"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
-           "originalName": "ActualMarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
-           "originalName": "ActualMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
-           "originalName": "ActualMarkerOutline"
-       }   ],
-    "originalBaseTypeName": "GeographicShapeSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GeographicSymbolSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-symbol-series-component.ts",
-    "dynamicModuleName": "igx-geographic-symbol-series-dynamic-module.ts",
-    "moduleName": "igx-geographic-symbol-series-module.ts",
- "mappedName": "IgxGeographicSymbolSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
-           "originalName": "HasOnlyMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
-           "originalName": "LatitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
-           "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
-           "originalName": "MarkerCollisionAvoidance"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
-           "originalName": "IsCustomScatterStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomScatterMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       }   ],
-    "originalBaseTypeName": "GeographicMarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "XamGeographicMap",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-geographic-map-component.ts",
- "mappedName": "IgxGeographicMapComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "zoomable"}            ],
-           "originalName": "Zoomable"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapResizeBehavior", "mappedName": "resizeBehavior"}            ],
-           "originalName": "ResizeBehavior"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}            ],
-           "originalName": "IsHorizontalWrappingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapBackgroundTilingMode", "mappedName": "backgroundTilingMode"}            ],
-           "originalName": "BackgroundTilingMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useWorldRectForZoomBounds"}            ],
-           "originalName": "UseWorldRectForZoomBounds"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "suppressZoomResetOnWorldRectChange"}            ],
-           "originalName": "SuppressZoomResetOnWorldRectChange"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "worldRect"}            ],
-           "originalName": "WorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "actualWorldRect"}            ],
-           "originalName": "ActualWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericXAxisComponent", "mappedName": "xAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericYAxisComponent", "mappedName": "yAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMap"}            ],
-           "originalName": "IsMap"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "windowScale"}            ],
-           "originalName": "WindowScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualWindowScale"}            ],
-           "originalName": "ActualWindowScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "zoomIsReady"}            ],
-           "originalName": "ZoomIsReady"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentActualWorldRect"}            ],
-           "originalName": "GetCurrentActualWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getZoomRectFromGeoRect"}            ],
-           "originalName": "GetZoomRectFromGeoRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "updateZoomWindow"}            ],
-           "originalName": "UpdateZoomWindow"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "updateWorldRect"}            ],
-           "originalName": "UpdateWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getZoomFromGeographicRect"}            ],
-           "originalName": "GetZoomFromGeographic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "convertGeographicToZoom"}            ],
-           "originalName": "ConvertGeographicToZoom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getZoomFromGeographicPoints"}            ],
-           "originalName": "GetZoomFromGeographic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getGeographicFromZoom"}            ],
-           "originalName": "GetGeographicFromZoom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getGeographicPoint"}            ],
-           "originalName": "GetGeographicPoint"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPixelPoint"}            ],
-           "originalName": "GetPixelPoint"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getWindowPoint"}            ],
-           "originalName": "GetWindowPoint"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "clearTileCache"}            ],
-           "originalName": "ClearTileCache"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "styleUpdated"}            ],
-           "originalName": "StyleUpdated"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getActualWindowScaleHorizontal"}            ],
-           "originalName": "GetActualWindowScaleHorizontal"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getActualWindowScaleVertical"}            ],
-           "originalName": "GetActualWindowScaleVertical"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "deferredRefresh"}            ],
-           "originalName": "DeferredRefresh"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportVisualData"}            ],
-           "originalName": "ExportVisualData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "zoomToGeographic"}            ],
-           "originalName": "ZoomToGeographic"
-       }   ],
-    "originalBaseTypeName": "SeriesViewer",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ImageTilesReadyEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-image-tiles-ready-event-args.ts",
- "mappedName": "IgxImageTilesReadyEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "MapResizeBehavior",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "MapResizeBehavior.ts",
- "mappedName": "MapResizeBehavior"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapResizeBehavior", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapResizeBehavior", "mappedName": "MaintainTopLeftPosition"}            ],
-           "originalName": "MaintainTopLeftPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapResizeBehavior", "mappedName": "MaintainCenterPosition"}            ],
-           "originalName": "MaintainCenterPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "MapBackgroundTilingMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "MapBackgroundTilingMode.ts",
- "mappedName": "MapBackgroundTilingMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapBackgroundTilingMode", "mappedName": "NonWrapped"}            ],
-           "originalName": "NonWrapped"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MapBackgroundTilingMode", "mappedName": "Wrapped"}            ],
-           "originalName": "Wrapped"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "TileSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-tile-series-component.ts",
-    "dynamicModuleName": "igx-tile-series-dynamic-module.ts",
-    "moduleName": "igx-tile-series-module.ts",
- "mappedName": "IgxTileSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isTile"}            ],
-           "originalName": "IsTile"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}            ],
-           "originalName": "TileImagery"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "deferredRefresh"}            ],
-           "originalName": "DeferredRefresh"
-       }   ],
-    "originalBaseTypeName": "ShapeSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igx-geographic-map-core-module.ts", "igx-geographic-map-module.ts"], "types": [{"originalName": "ArcGISOnlineMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-arc-gis-online-map-imagery.ts", "dynamicModuleName": "igx-arc-gis-online-map-imagery-dynamic-module.ts", "moduleName": "igx-arc-gis-online-map-imagery-module.ts", "mappedName": "IgxArcGISOnlineMapImagery"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "mapServerUri"}], "originalName": "MapServerUri"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "userName"}], "originalName": "UserName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "password"}], "originalName": "Password"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "userToken"}], "originalName": "UserToken"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isMapPublic"}], "originalName": "IsMapPublic"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "defaultTokenTimeout"}], "originalName": "DefaultTokenTimeout"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "tokenGenerationEndPoint"}], "originalName": "TokenGenerationEndPoint"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "refererUri"}], "originalName": "RefererUri"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "acquireNewToken"}], "originalName": "AcquireNewToken"}
+  ], 
+  "originalBaseTypeName": "GeographicMapImagery", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicTileSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-tile-series-component.ts", "dynamicModuleName": "igx-geographic-tile-series-dynamic-module.ts", "moduleName": "igx-geographic-tile-series-module.ts", "mappedName": "IgxGeographicTileSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isTile"}], "originalName": "IsTile"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}], "originalName": "TileImagery"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "clearTileCache"}], "originalName": "ClearTileCache"}
+  ], 
+  "originalBaseTypeName": "GeographicShapeSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "BingMapsImageryStyle", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "BingMapsImageryStyle.ts", "mappedName": "BingMapsImageryStyle"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "Aerial"}], "originalName": "Aerial"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "AerialWithLabels"}], "originalName": "AerialWithLabels"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "Road"}], "originalName": "Road"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasDark"}], "originalName": "CanvasDark"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasLight"}], "originalName": "CanvasLight"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "CanvasGray"}], "originalName": "CanvasGray"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "BingMapsMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-bing-maps-map-imagery.ts", "dynamicModuleName": "igx-bing-maps-map-imagery-dynamic-module.ts", "moduleName": "igx-bing-maps-map-imagery-module.ts", "mappedName": "IgxBingMapsMapImagery"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isInitialized"}], "originalName": "IsInitialized"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isDeferredLoad"}], "originalName": "IsDeferredLoad"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "tilePath"}], "originalName": "TilePath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualTilePath"}], "originalName": "ActualTilePath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSubDomainsCollection", "mappedName": "subDomains"}], "originalName": "SubDomains"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSubDomainsCollection", "mappedName": "actualSubDomains"}], "originalName": "ActualSubDomains"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "bingImageryRestUri"}], "originalName": "BingImageryRestUri"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualBingImageryRestUri"}], "originalName": "ActualBingImageryRestUri"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "cultureName"}], "originalName": "CultureName"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "apiKey"}], "originalName": "ApiKey"}, 
+    {"names": [{"platform": "Angular", "mappedType": "BingMapsImageryStyle", "mappedName": "imageryStyle"}], "originalName": "ImageryStyle"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "requestMapSettings"}], "originalName": "RequestMapSettings"}
+  ], 
+  "originalBaseTypeName": "GeographicMapImagery", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "TileGeneratorMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-tile-generator-map-imagery.ts", "dynamicModuleName": "igx-tile-generator-map-imagery-dynamic-module.ts", "moduleName": "igx-tile-generator-map-imagery-module.ts", "mappedName": "IgxTileGeneratorMapImagery"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "ITileGenerator", "mappedName": "tileGenerator"}], "originalName": "TileGenerator"}
+  ], 
+  "originalBaseTypeName": "GeographicMapImagery", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "CustomMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-custom-map-imagery.ts", "dynamicModuleName": "igx-custom-map-imagery-dynamic-module.ts", "moduleName": "igx-custom-map-imagery-module.ts", "mappedName": "IgxCustomMapImagery"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMapImagery", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-map-imagery.ts", "mappedName": "IgxGeographicMapImagery"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "IMapRenderDeferralHandler", "mappedName": "deferralHandler"}], "originalName": "DeferralHandler"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgRect", "mappedName": "windowRect"}], "originalName": "WindowRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxGeographicMapComponent", "mappedName": "geographicMap"}], "originalName": "GeographicMap"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "referer"}], "originalName": "Referer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}], "originalName": "IsHorizontalWrappingEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "userAgent"}], "originalName": "UserAgent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "Opacity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "clearTileCache"}], "originalName": "ClearTileCache"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ImagesChangedEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-images-changed-event-args.ts", "mappedName": "IgxImagesChangedEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "OpenStreetMapImagery", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-open-street-map-imagery.ts", "dynamicModuleName": "igx-open-street-map-imagery-dynamic-module.ts", "moduleName": "igx-open-street-map-imagery-module.ts", "mappedName": "IgxOpenStreetMapImagery"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "tilePath"}], "originalName": "TilePath"}
+  ], 
+  "originalBaseTypeName": "GeographicMapImagery", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicHighDensityScatterSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-high-density-scatter-series-component.ts", "dynamicModuleName": "igx-geographic-high-density-scatter-series-dynamic-module.ts", "moduleName": "igx-geographic-high-density-scatter-series-module.ts", "mappedName": "IgxGeographicHighDensityScatterSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPixel"}], "originalName": "IsPixel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "latitudeMemberPath"}], "originalName": "LatitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "longitudeMemberPath"}], "originalName": "LongitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useBruteForce"}], "originalName": "UseBruteForce"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "progressiveLoad"}], "originalName": "ProgressiveLoad"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "mouseOverEnabled"}], "originalName": "MouseOverEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "heatMinimum"}], "originalName": "HeatMinimum"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "heatMaximum"}], "originalName": "HeatMaximum"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "heatMinimumColor"}], "originalName": "HeatMinimumColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "heatMaximumColor"}], "originalName": "HeatMaximumColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "pointExtent"}], "originalName": "PointExtent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "progressiveStatus"}], "originalName": "ProgressiveStatus"}
+  ], 
+  "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicMarkerSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-marker-series-component.ts", "mappedName": "IgxGeographicMarkerSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "MarkerType", "mappedName": "markerType"}], "originalName": "MarkerType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "markerThickness"}], "originalName": "MarkerThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}], "originalName": "MarkerOutlineMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}], "originalName": "MarkerFillMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerBrush"}], "originalName": "MarkerBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerOutline"}], "originalName": "MarkerOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "maximumMarkers"}], "originalName": "MaximumMarkers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualMarkerBrush"}], "originalName": "ActualMarkerBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualMarkerOutline"}], "originalName": "ActualMarkerOutline"}
+  ], 
+  "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicPolylineSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-polyline-series-component.ts", "dynamicModuleName": "igx-geographic-polyline-series-dynamic-module.ts", "moduleName": "igx-geographic-polyline-series-module.ts", "mappedName": "IgxGeographicPolylineSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPolyline"}], "originalName": "IsPolyline"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "shapeStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"}
+  ], 
+  "originalBaseTypeName": "GeographicShapeSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicProportionalSymbolSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-proportional-symbol-series-component.ts", "dynamicModuleName": "igx-geographic-proportional-symbol-series-dynamic-module.ts", "moduleName": "igx-geographic-proportional-symbol-series-module.ts", "mappedName": "IgxGeographicProportionalSymbolSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}], "originalName": "HasOnlyMarkers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "latitudeMemberPath"}], "originalName": "LatitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "longitudeMemberPath"}], "originalName": "LongitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "radiusMemberPath"}], "originalName": "RadiusMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxSizeScaleComponent", "mappedName": "radiusScale"}], "originalName": "RadiusScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "fillMemberPath"}], "originalName": "FillMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxBrushScaleComponent", "mappedName": "fillScale"}], "originalName": "FillScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}], "originalName": "FillScaleUseGlobalValues"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}], "originalName": "MarkerOutlineUsesFillScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "markerOutlineBrightness"}], "originalName": "MarkerOutlineBrightness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "markerBrushBrightness"}], "originalName": "MarkerBrushBrightness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}], "originalName": "RadiusScaleUseGlobalValues"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "itemSearchThreshold"}], "originalName": "ItemSearchThreshold"}
+  ], 
+  "originalBaseTypeName": "GeographicMarkerSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicProportionalSymbolSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-proportional-symbol-series-base-component.ts", "mappedName": "IgxGeographicProportionalSymbolSeriesBaseComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMarkerSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicScatterAreaSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-scatter-area-series-component.ts", "dynamicModuleName": "igx-geographic-scatter-area-series-dynamic-module.ts", "moduleName": "igx-geographic-scatter-area-series-module.ts", "mappedName": "IgxGeographicScatterAreaSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "colorMemberPath"}], "originalName": "ColorMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxColorScaleComponent", "mappedName": "colorScale"}], "originalName": "ColorScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxColorScaleComponent", "mappedName": "actualColorScale"}], "originalName": "ActualColorScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "updateActualColorScale"}], "originalName": "UpdateActualColorScale"}
+  ], 
+  "originalBaseTypeName": "GeographicXYTriangulatingSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicShapeSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-shape-series-base-component.ts", "mappedName": "IgxGeographicShapeSeriesBaseComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "shapeMemberPath"}], "originalName": "ShapeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}], "originalName": "IsCustomShapeStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}], "originalName": "IsCustomShapeMarkerStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "ShapeItemSearchMode", "mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "itemSearchThreshold"}], "originalName": "ItemSearchThreshold"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "itemSearchPointsThreshold"}], "originalName": "ItemSearchPointsThreshold"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxShapeDataSource", "mappedName": "shapefileDataSource"}], "originalName": "ShapefileDataSource"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "shapeFilterResolution"}], "originalName": "ShapeFilterResolution"}
+  ], 
+  "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicShapeSeriesBaseBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-shape-series-base-base-component.ts", "mappedName": "IgxGeographicShapeSeriesBaseBaseComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicSymbolSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-symbol-series-base-component.ts", "mappedName": "IgxGeographicSymbolSeriesBaseComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMarkerSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicMarkerSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-marker-series-base-component.ts", "mappedName": "IgxGeographicMarkerSeriesBaseComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMarkerSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicXYTriangulatingSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-xy-triangulating-series-component.ts", "mappedName": "IgxGeographicXYTriangulatingSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "longitudeMemberPath"}], "originalName": "LongitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "latitudeMemberPath"}], "originalName": "LatitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "trianglesSource"}], "originalName": "TrianglesSource"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "triangleVertexMemberPath1"}], "originalName": "TriangleVertexMemberPath1"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "triangleVertexMemberPath2"}], "originalName": "TriangleVertexMemberPath2"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "triangleVertexMemberPath3"}], "originalName": "TriangleVertexMemberPath3"}
+  ], 
+  "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicXYTriangulatingSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-xy-triangulating-series-base-component.ts", "mappedName": "IgxGeographicXYTriangulatingSeriesBaseComponent"}
+  ], 
+  "members": [], "originalBaseTypeName": "GeographicMapSeriesHost", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicContourLineSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-contour-line-series-component.ts", "dynamicModuleName": "igx-geographic-contour-line-series-dynamic-module.ts", "moduleName": "igx-geographic-contour-line-series-module.ts", "mappedName": "IgxGeographicContourLineSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isLineContour"}], "originalName": "IsLineContour"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxValueBrushScaleComponent", "mappedName": "fillScale"}], "originalName": "FillScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxValueBrushScaleComponent", "mappedName": "actualFillScale"}], "originalName": "ActualFillScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxContourValueResolverComponent", "mappedName": "valueResolver"}], "originalName": "ValueResolver"}
+  ], 
+  "originalBaseTypeName": "GeographicXYTriangulatingSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicMapSeriesHost", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-map-series-host-component.ts", "mappedName": "IgxGeographicMapSeriesHostComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isGeographic"}], "originalName": "IsGeographic"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasMarkers"}], "originalName": "HasMarkers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "visibleFromScale"}], "originalName": "VisibleFromScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "coercionMethods"}], "originalName": "CoercionMethods"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}], "originalName": "NotifyIndexedPropertiesChanged"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItemValue"}], "originalName": "GetItemValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}], "originalName": "GetSeriesHighValuePosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesLowValue"}], "originalName": "GetSeriesLowValue"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}], "originalName": "GetSeriesLowValuePosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}], "originalName": "GetSeriesValuePositionFromSeriesPixel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}], "originalName": "GetSeriesValueFromSeriesPixel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "renderSeries"}], "originalName": "RenderSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "styleUpdated"}], "originalName": "StyleUpdated"}
+  ], 
+  "originalBaseTypeName": "Series", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicShapeSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-shape-series-component.ts", "dynamicModuleName": "igx-geographic-shape-series-dynamic-module.ts", "moduleName": "igx-geographic-shape-series-module.ts", "mappedName": "IgxGeographicShapeSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isPolygon"}], "originalName": "IsPolygon"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "shapeStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "shapeStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "shapeStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "shapeStyle.opacity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerType", "mappedName": "markerType"}], "originalName": "MarkerType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}], "originalName": "MarkerOutlineMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}], "originalName": "MarkerFillMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerBrush"}], "originalName": "MarkerBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "markerOutline"}], "originalName": "MarkerOutline"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "markerThickness"}], "originalName": "MarkerThickness"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualMarkerBrush"}], "originalName": "ActualMarkerBrush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "actualMarkerOutline"}], "originalName": "ActualMarkerOutline"}
+  ], 
+  "originalBaseTypeName": "GeographicShapeSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GeographicSymbolSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-symbol-series-component.ts", "dynamicModuleName": "igx-geographic-symbol-series-dynamic-module.ts", "moduleName": "igx-geographic-symbol-series-module.ts", "mappedName": "IgxGeographicSymbolSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}], "originalName": "HasOnlyMarkers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "latitudeMemberPath"}], "originalName": "LatitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "longitudeMemberPath"}], "originalName": "LongitudeMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}], "originalName": "MarkerCollisionAvoidance"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}], "originalName": "IsCustomScatterStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}], "originalName": "IsCustomScatterMarkerStyleAllowed"}, 
+    {"names": [{"platform": "Angular", "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}], "originalName": "ItemSearchMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "itemSearchThreshold"}], "originalName": "ItemSearchThreshold"}
+  ], 
+  "originalBaseTypeName": "GeographicMarkerSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Maps", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "XamGeographicMap", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-geographic-map-component.ts", "mappedName": "IgxGeographicMapComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "zoomable"}], "originalName": "Zoomable"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapResizeBehavior", "mappedName": "resizeBehavior"}], "originalName": "ResizeBehavior"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isHorizontalWrappingEnabled"}], "originalName": "IsHorizontalWrappingEnabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapBackgroundTilingMode", "mappedName": "backgroundTilingMode"}], "originalName": "BackgroundTilingMode"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "useWorldRectForZoomBounds"}], "originalName": "UseWorldRectForZoomBounds"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "suppressZoomResetOnWorldRectChange"}], "originalName": "SuppressZoomResetOnWorldRectChange"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgRect", "mappedName": "worldRect"}], "originalName": "WorldRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgRect", "mappedName": "actualWorldRect"}], "originalName": "ActualWorldRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxNumericXAxisComponent", "mappedName": "xAxis"}], "originalName": "XAxis"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxNumericYAxisComponent", "mappedName": "yAxis"}], "originalName": "YAxis"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isMap"}], "originalName": "IsMap"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "windowScale"}], "originalName": "WindowScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "actualWindowScale"}], "originalName": "ActualWindowScale"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "zoomIsReady"}], "originalName": "ZoomIsReady"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getCurrentActualWorldRect"}], "originalName": "GetCurrentActualWorldRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getZoomRectFromGeoRect"}], "originalName": "GetZoomRectFromGeoRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "updateZoomWindow"}], "originalName": "UpdateZoomWindow"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "updateWorldRect"}], "originalName": "UpdateWorldRect"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getZoomFromGeographicRect"}], "originalName": "GetZoomFromGeographic"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "convertGeographicToZoom"}], "originalName": "ConvertGeographicToZoom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getZoomFromGeographicPoints"}], "originalName": "GetZoomFromGeographic"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getGeographicFromZoom"}], "originalName": "GetGeographicFromZoom"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getGeographicPoint"}], "originalName": "GetGeographicPoint"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getPixelPoint"}], "originalName": "GetPixelPoint"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getWindowPoint"}], "originalName": "GetWindowPoint"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "clearTileCache"}], "originalName": "ClearTileCache"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "styleUpdated"}], "originalName": "StyleUpdated"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getActualWindowScaleHorizontal"}], "originalName": "GetActualWindowScaleHorizontal"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getActualWindowScaleVertical"}], "originalName": "GetActualWindowScaleVertical"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "deferredRefresh"}], "originalName": "DeferredRefresh"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "exportVisualData"}], "originalName": "ExportVisualData"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "zoomToGeographic"}], "originalName": "ZoomToGeographic"}
+  ], 
+  "originalBaseTypeName": "SeriesViewer", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ImageTilesReadyEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-image-tiles-ready-event-args.ts", "mappedName": "IgxImageTilesReadyEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "MapResizeBehavior", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "MapResizeBehavior.ts", "mappedName": "MapResizeBehavior"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "MapResizeBehavior", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapResizeBehavior", "mappedName": "MaintainTopLeftPosition"}], "originalName": "MaintainTopLeftPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapResizeBehavior", "mappedName": "MaintainCenterPosition"}], "originalName": "MaintainCenterPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "MapBackgroundTilingMode", "isEnum": true, 
+  "names": [
+    {"platform": "Angular", "fileName": "MapBackgroundTilingMode.ts", "mappedName": "MapBackgroundTilingMode"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "MapBackgroundTilingMode", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapBackgroundTilingMode", "mappedName": "NonWrapped"}], "originalName": "NonWrapped"}, 
+    {"names": [{"platform": "Angular", "mappedType": "MapBackgroundTilingMode", "mappedName": "Wrapped"}], "originalName": "Wrapped"}, 
+    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "TileSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-tile-series-component.ts", "dynamicModuleName": "igx-tile-series-dynamic-module.ts", "moduleName": "igx-tile-series-module.ts", "mappedName": "IgxTileSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isTile"}], "originalName": "IsTile"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}], "originalName": "TileImagery"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "deferredRefresh"}], "originalName": "DeferredRefresh"}
+  ], 
+  "originalBaseTypeName": "ShapeSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}

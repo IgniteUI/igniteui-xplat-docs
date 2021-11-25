@@ -1,692 +1,160 @@
-{
-"extraFiles": [
-"RadialGaugeStylingDefaults.ts",
-"igr-radial-gauge-core-module.ts",
-"igr-radial-gauge-module.ts",
-"igr-radial-gauge-range-module.ts"
-],
-"types": [
-{
-    "originalName": "XamRadialGauge",
-   "names": [
-        { "platform": "React",     "fileName": "igr-radial-gauge.ts",
- "mappedName": "IgrRadialGauge"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "rangeBrushes"}            ],
-           "originalName": "RangeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "rangeOutlines"}            ],
-           "originalName": "RangeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualMinimumValue"}            ],
-           "originalName": "ActualMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualMaximumValue"}            ],
-           "originalName": "ActualMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "centerX"}            ],
-           "originalName": "CenterX"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "centerY"}            ],
-           "originalName": "CenterY"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "scaleStartAngle"}            ],
-           "originalName": "ScaleStartAngle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "scaleEndAngle"}            ],
-           "originalName": "ScaleEndAngle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SweepDirection", "mappedName": "scaleSweepDirection"}            ],
-           "originalName": "ScaleSweepDirection"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "(time: number) => number", "mappedName": "transitionEasingFunction"}            ],
-           "originalName": "TransitionEasingFunction"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "needleBrush"}            ],
-           "originalName": "NeedleBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "needleOutline"}            ],
-           "originalName": "NeedleOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleStartExtent"}            ],
-           "originalName": "NeedleStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleEndExtent"}            ],
-           "originalName": "NeedleEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "needleShape"}            ],
-           "originalName": "NeedleShape"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleStartWidthRatio"}            ],
-           "originalName": "NeedleStartWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleEndWidthRatio"}            ],
-           "originalName": "NeedleEndWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleBaseFeatureWidthRatio"}            ],
-           "originalName": "NeedleBaseFeatureWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleBaseFeatureExtent"}            ],
-           "originalName": "NeedleBaseFeatureExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needlePointFeatureWidthRatio"}            ],
-           "originalName": "NeedlePointFeatureWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needlePointFeatureExtent"}            ],
-           "originalName": "NeedlePointFeatureExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needlePivotWidthRatio"}            ],
-           "originalName": "NeedlePivotWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needlePivotInnerWidthRatio"}            ],
-           "originalName": "NeedlePivotInnerWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "needlePivotShape"}            ],
-           "originalName": "NeedlePivotShape"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "scaleStartExtent"}            ],
-           "originalName": "ScaleStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "needlePivotBrush"}            ],
-           "originalName": "NeedlePivotBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "needlePivotOutline"}            ],
-           "originalName": "NeedlePivotOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needleStrokeThickness"}            ],
-           "originalName": "NeedleStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "needlePivotStrokeThickness"}            ],
-           "originalName": "NeedlePivotStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "scaleEndExtent"}            ],
-           "originalName": "ScaleEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "labelExtent"}            ],
-           "originalName": "LabelExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "labelInterval"}            ],
-           "originalName": "LabelInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tickStartExtent"}            ],
-           "originalName": "TickStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tickEndExtent"}            ],
-           "originalName": "TickEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "tickStrokeThickness"}            ],
-           "originalName": "TickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "tickBrush"}            ],
-           "originalName": "TickBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "fontBrush"}            ],
-           "originalName": "FontBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorTickStartExtent"}            ],
-           "originalName": "MinorTickStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorTickEndExtent"}            ],
-           "originalName": "MinorTickEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorTickStrokeThickness"}            ],
-           "originalName": "MinorTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "minorTickBrush"}            ],
-           "originalName": "MinorTickBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorTickCount"}            ],
-           "originalName": "MinorTickCount"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "scaleBrush"}            ],
-           "originalName": "ScaleBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "backingBrush"}            ],
-           "originalName": "BackingBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "backingOutline"}            ],
-           "originalName": "BackingOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "backingStrokeThickness"}            ],
-           "originalName": "BackingStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "backingOuterExtent"}            ],
-           "originalName": "BackingOuterExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "backingOversweep"}            ],
-           "originalName": "BackingOversweep"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "scaleOversweep"}            ],
-           "originalName": "ScaleOversweep"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "scaleOversweepShape"}            ],
-           "originalName": "ScaleOversweepShape"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "backingCornerRadius"}            ],
-           "originalName": "BackingCornerRadius"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "backingInnerExtent"}            ],
-           "originalName": "BackingInnerExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeBackingShape", "mappedName": "backingShape"}            ],
-           "originalName": "BackingShape"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "radiusMultiplier"}            ],
-           "originalName": "RadiusMultiplier"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "duplicateLabelOmissionStrategy"}            ],
-           "originalName": "DuplicateLabelOmissionStrategy"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isNeedleDraggingEnabled"}            ],
-           "originalName": "IsNeedleDraggingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isNeedleDraggingConstrained"}            ],
-           "originalName": "IsNeedleDraggingConstrained"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "font"}            ],
-           "originalName": "Font"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "labelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "animating"}            ],
-           "originalName": "Animating"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "transitionProgress"}            ],
-           "originalName": "TransitionProgress"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "scaleValue"}            ],
-           "originalName": "ScaleValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "unscaleValue"}            ],
-           "originalName": "UnscaleValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getValueForPoint"}            ],
-           "originalName": "GetValueForPoint"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getPointForValue"}            ],
-           "originalName": "GetPointForValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "styleUpdated"}            ],
-           "originalName": "StyleUpdated"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "needleContainsPoint"}            ],
-           "originalName": "NeedleContainsPoint"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "containerResized"}            ],
-           "originalName": "ContainerResized"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeDuplicateLabelOmissionStrategy",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "RadialGaugeDuplicateLabelOmissionStrategy.ts",
- "mappedName": "RadialGaugeDuplicateLabelOmissionStrategy"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitLast"}            ],
-           "originalName": "OmitLast"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitFirst"}            ],
-           "originalName": "OmitFirst"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitNeither"}            ],
-           "originalName": "OmitNeither"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitBoth"}            ],
-           "originalName": "OmitBoth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeBackingShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "RadialGaugeBackingShape.ts",
- "mappedName": "RadialGaugeBackingShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Circular"}            ],
-           "originalName": "Circular"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeBackingShape", "mappedName": "Fitted"}            ],
-           "originalName": "Fitted"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeScaleOversweepShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "RadialGaugeScaleOversweepShape.ts",
- "mappedName": "RadialGaugeScaleOversweepShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Circular"}            ],
-           "originalName": "Circular"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Fitted"}            ],
-           "originalName": "Fitted"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugeNeedleShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "RadialGaugeNeedleShape.ts",
- "mappedName": "RadialGaugeNeedleShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Rectangle"}            ],
-           "originalName": "Rectangle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Triangle"}            ],
-           "originalName": "Triangle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Needle"}            ],
-           "originalName": "Needle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "Trapezoid"}            ],
-           "originalName": "Trapezoid"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "RectangleWithBulb"}            ],
-           "originalName": "RectangleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TriangleWithBulb"}            ],
-           "originalName": "TriangleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "NeedleWithBulb"}            ],
-           "originalName": "NeedleWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "TrapezoidWithBulb"}            ],
-           "originalName": "TrapezoidWithBulb"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "RadialGaugePivotShape",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "RadialGaugePivotShape.ts",
- "mappedName": "RadialGaugePivotShape"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "Circle"}            ],
-           "originalName": "Circle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleWithHole"}            ],
-           "originalName": "CircleWithHole"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlay"}            ],
-           "originalName": "CircleOverlay"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlayWithHole"}            ],
-           "originalName": "CircleOverlayWithHole"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlay"}            ],
-           "originalName": "CircleUnderlay"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlayWithHole"}            ],
-           "originalName": "CircleUnderlayWithHole"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "FormatRadialGaugeLabelEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-format-radial-gauge-label-event-args.ts",
- "mappedName": "IgrFormatRadialGaugeLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "AlignRadialGaugeLabelEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-align-radial-gauge-label-event-args.ts",
- "mappedName": "IgrAlignRadialGaugeLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "FormatRadialGaugeLabelEventArgs",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Gauges",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "XamRadialGaugeRange",
-   "names": [
-        { "platform": "React",     "fileName": "igr-radial-gauge-range.ts",
- "mappedName": "IgrRadialGaugeRange"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "name"}            ],
-           "originalName": "Name"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "brush"}            ],
-           "originalName": "Brush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "startValue"}            ],
-           "originalName": "StartValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "endValue"}            ],
-           "originalName": "EndValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "innerStartExtent"}            ],
-           "originalName": "InnerStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "innerEndExtent"}            ],
-           "originalName": "InnerEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "outerStartExtent"}            ],
-           "originalName": "OuterStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "outerEndExtent"}            ],
-           "originalName": "OuterEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-}
-]
-}
+{"extraFiles": ["RadialGaugeStylingDefaults.ts", "igr-radial-gauge-core-module.ts", "igr-radial-gauge-module.ts", "igr-radial-gauge-range-module.ts"], "types": [{"originalName": "XamRadialGauge", 
+  "names": [
+    {"platform": "React", "fileName": "igr-radial-gauge.ts", "mappedName": "IgrRadialGauge"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string[]", "mappedName": "rangeBrushes"}], "originalName": "RangeBrushes"}, 
+    {"names": [{"platform": "React", "mappedType": "string[]", "mappedName": "rangeOutlines"}], "originalName": "RangeOutlines"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minimumValue"}], "originalName": "MinimumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "actualMinimumValue"}], "originalName": "ActualMinimumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maximumValue"}], "originalName": "MaximumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "actualMaximumValue"}], "originalName": "ActualMaximumValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "interval"}], "originalName": "Interval"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "centerX"}], "originalName": "CenterX"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "centerY"}], "originalName": "CenterY"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "value"}], "originalName": "Value"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "scaleStartAngle"}], "originalName": "ScaleStartAngle"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "scaleEndAngle"}], "originalName": "ScaleEndAngle"}, 
+    {"names": [{"platform": "React", "mappedType": "SweepDirection", "mappedName": "scaleSweepDirection"}], "originalName": "ScaleSweepDirection"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "transitionDuration"}], "originalName": "TransitionDuration"}, 
+    {"names": [{"platform": "React", "mappedType": "(time:  number) => number", "mappedName": "transitionEasingFunction"}], "originalName": "TransitionEasingFunction"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "needleBrush"}], "originalName": "NeedleBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "needleOutline"}], "originalName": "NeedleOutline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleStartExtent"}], "originalName": "NeedleStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleEndExtent"}], "originalName": "NeedleEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "needleShape"}], "originalName": "NeedleShape"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleStartWidthRatio"}], "originalName": "NeedleStartWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleEndWidthRatio"}], "originalName": "NeedleEndWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleBaseFeatureWidthRatio"}], "originalName": "NeedleBaseFeatureWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleBaseFeatureExtent"}], "originalName": "NeedleBaseFeatureExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needlePointFeatureWidthRatio"}], "originalName": "NeedlePointFeatureWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needlePointFeatureExtent"}], "originalName": "NeedlePointFeatureExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needlePivotWidthRatio"}], "originalName": "NeedlePivotWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needlePivotInnerWidthRatio"}], "originalName": "NeedlePivotInnerWidthRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "needlePivotShape"}], "originalName": "NeedlePivotShape"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "scaleStartExtent"}], "originalName": "ScaleStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "needlePivotBrush"}], "originalName": "NeedlePivotBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "needlePivotOutline"}], "originalName": "NeedlePivotOutline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needleStrokeThickness"}], "originalName": "NeedleStrokeThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "needlePivotStrokeThickness"}], "originalName": "NeedlePivotStrokeThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "scaleEndExtent"}], "originalName": "ScaleEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "labelExtent"}], "originalName": "LabelExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "labelInterval"}], "originalName": "LabelInterval"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tickStartExtent"}], "originalName": "TickStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tickEndExtent"}], "originalName": "TickEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "tickStrokeThickness"}], "originalName": "TickStrokeThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "tickBrush"}], "originalName": "TickBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "fontBrush"}], "originalName": "FontBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minorTickStartExtent"}], "originalName": "MinorTickStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minorTickEndExtent"}], "originalName": "MinorTickEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minorTickStrokeThickness"}], "originalName": "MinorTickStrokeThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "minorTickBrush"}], "originalName": "MinorTickBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minorTickCount"}], "originalName": "MinorTickCount"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "scaleBrush"}], "originalName": "ScaleBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "backingBrush"}], "originalName": "BackingBrush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "backingOutline"}], "originalName": "BackingOutline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "backingStrokeThickness"}], "originalName": "BackingStrokeThickness"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "backingOuterExtent"}], "originalName": "BackingOuterExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "backingOversweep"}], "originalName": "BackingOversweep"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "scaleOversweep"}], "originalName": "ScaleOversweep"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "scaleOversweepShape"}], "originalName": "ScaleOversweepShape"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "backingCornerRadius"}], "originalName": "BackingCornerRadius"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "backingInnerExtent"}], "originalName": "BackingInnerExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeBackingShape", "mappedName": "backingShape"}], "originalName": "BackingShape"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "radiusMultiplier"}], "originalName": "RadiusMultiplier"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "duplicateLabelOmissionStrategy"}], "originalName": "DuplicateLabelOmissionStrategy"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isNeedleDraggingEnabled"}], "originalName": "IsNeedleDraggingEnabled"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isNeedleDraggingConstrained"}], "originalName": "IsNeedleDraggingConstrained"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "font"}], "originalName": "Font"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "labelFormat"}], "originalName": "LabelFormat"}, 
+    {"names": [{"platform": "React", "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}], "originalName": "LabelFormatSpecifiers"}, 
+    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "animating"}], "originalName": "Animating"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "transitionProgress"}], "originalName": "TransitionProgress"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "scaleValue"}], "originalName": "ScaleValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "unscaleValue"}], "originalName": "UnscaleValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getValueForPoint"}], "originalName": "GetValueForPoint"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getPointForValue"}], "originalName": "GetPointForValue"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "styleUpdated"}], "originalName": "StyleUpdated"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "needleContainsPoint"}], "originalName": "NeedleContainsPoint"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "containerResized"}], "originalName": "ContainerResized"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "flush"}], "originalName": "Flush"}, 
+    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "RadialGaugeDuplicateLabelOmissionStrategy", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "RadialGaugeDuplicateLabelOmissionStrategy.ts", "mappedName": "RadialGaugeDuplicateLabelOmissionStrategy"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitLast"}], "originalName": "OmitLast"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitFirst"}], "originalName": "OmitFirst"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitNeither"}], "originalName": "OmitNeither"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "OmitBoth"}], "originalName": "OmitBoth"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "RadialGaugeBackingShape", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "RadialGaugeBackingShape.ts", "mappedName": "RadialGaugeBackingShape"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeBackingShape", "mappedName": "Circular"}], "originalName": "Circular"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeBackingShape", "mappedName": "Fitted"}], "originalName": "Fitted"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "RadialGaugeScaleOversweepShape", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "RadialGaugeScaleOversweepShape.ts", "mappedName": "RadialGaugeScaleOversweepShape"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Auto"}], "originalName": "Auto"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Circular"}], "originalName": "Circular"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "Fitted"}], "originalName": "Fitted"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "RadialGaugeNeedleShape", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "RadialGaugeNeedleShape.ts", "mappedName": "RadialGaugeNeedleShape"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "Rectangle"}], "originalName": "Rectangle"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "Triangle"}], "originalName": "Triangle"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "Needle"}], "originalName": "Needle"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "Trapezoid"}], "originalName": "Trapezoid"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "RectangleWithBulb"}], "originalName": "RectangleWithBulb"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "TriangleWithBulb"}], "originalName": "TriangleWithBulb"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "NeedleWithBulb"}], "originalName": "NeedleWithBulb"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugeNeedleShape", "mappedName": "TrapezoidWithBulb"}], "originalName": "TrapezoidWithBulb"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "RadialGaugePivotShape", "isEnum": true, 
+  "names": [
+    {"platform": "React", "fileName": "RadialGaugePivotShape.ts", "mappedName": "RadialGaugePivotShape"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "None"}], "originalName": "None"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "Circle"}], "originalName": "Circle"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "CircleWithHole"}], "originalName": "CircleWithHole"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlay"}], "originalName": "CircleOverlay"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "CircleOverlayWithHole"}], "originalName": "CircleOverlayWithHole"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlay"}], "originalName": "CircleUnderlay"}, 
+    {"names": [{"platform": "React", "mappedType": "RadialGaugePivotShape", "mappedName": "CircleUnderlayWithHole"}], "originalName": "CircleUnderlayWithHole"}, 
+    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "FormatRadialGaugeLabelEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-format-radial-gauge-label-event-args.ts", "mappedName": "IgrFormatRadialGaugeLabelEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "AlignRadialGaugeLabelEventArgs", 
+  "names": [
+    {"platform": "React", "fileName": "igr-align-radial-gauge-label-event-args.ts", "mappedName": "IgrAlignRadialGaugeLabelEventArgs"}
+  ], 
+  "members": [], "originalBaseTypeName": "FormatRadialGaugeLabelEventArgs", "originalBaseTypeNamespace": "Infragistics.Controls.Gauges", "originalNamespace": "Infragistics.Controls.Gauges"}, {"originalName": "XamRadialGaugeRange", 
+  "names": [
+    {"platform": "React", "fileName": "igr-radial-gauge-range.ts", "mappedName": "IgrRadialGaugeRange"}
+  ], 
+  "members": [
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "brush"}], "originalName": "Brush"}, 
+    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "outline"}], "originalName": "Outline"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "startValue"}], "originalName": "StartValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "endValue"}], "originalName": "EndValue"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "innerStartExtent"}], "originalName": "InnerStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "innerEndExtent"}], "originalName": "InnerEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "outerStartExtent"}], "originalName": "OuterStartExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "outerEndExtent"}], "originalName": "OuterEndExtent"}, 
+    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "StrokeThickness"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Gauges"}]}

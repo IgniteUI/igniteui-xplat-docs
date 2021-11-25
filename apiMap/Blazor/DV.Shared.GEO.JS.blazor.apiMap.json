@@ -1,370 +1,107 @@
-{
-"types": [
-{
-    "originalName": "ITileGenerator",
-   "names": [
-        { "platform": "Blazor",     "fileName": "TileGenerator.cs",
- "mappedName": "IgbTileGenerator"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "HeatTileGenerator",
-   "names": [
-        { "platform": "Blazor",     "fileName": "HeatTileGenerator.cs",
- "mappedName": "IgbHeatTileGenerator"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double[]", "mappedName": "YValues"}            ],
-           "originalName": "YValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double[]", "mappedName": "XValues"}            ],
-           "originalName": "XValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double[]", "mappedName": "Values"}            ],
-           "originalName": "Values"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MinimumColor"}            ],
-           "originalName": "MinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MaximumColor"}            ],
-           "originalName": "MaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Color[]", "mappedName": "ScaleColors"}            ],
-           "originalName": "ScaleColors"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double[]", "mappedName": "ScaleColorOffsets"}            ],
-           "originalName": "ScaleColorOffsets"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BlurRadius"}            ],
-           "originalName": "BlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaxBlurRadius"}            ],
-           "originalName": "MaxBlurRadius"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseBlurRadiusAdjustedForZoom"}            ],
-           "originalName": "UseBlurRadiusAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseGlobalMinMax"}            ],
-           "originalName": "UseGlobalMinMax"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseGlobalMinMaxAdjustedForZoom"}            ],
-           "originalName": "UseGlobalMinMaxAdjustedForZoom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LogarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseLogarithmicScale"}            ],
-           "originalName": "UseLogarithmicScale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseWebWorkers"}            ],
-           "originalName": "UseWebWorkers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "WebWorkerScriptPath"}            ],
-           "originalName": "WebWorkerScriptPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "WebWorkerInstance"}            ],
-           "originalName": "WebWorkerInstance"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Destroy"}            ],
-           "originalName": "Destroy"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ShapefileConverter",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ShapeDataSource.cs",
- "mappedName": "IgbShapeDataSource"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "WorldRect"}            ],
-           "originalName": "WorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "ComputedWorldRect"}            ],
-           "originalName": "ComputedWorldRect"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "DeferImportCompleted"}            ],
-           "originalName": "DeferImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ShapefileSource"}            ],
-           "originalName": "ShapefileSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DatabaseSource"}            ],
-           "originalName": "DatabaseSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetWorldBounds"}            ],
-           "originalName": "GetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetWorldBounds"}            ],
-           "originalName": "SetWorldBounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SendImportCompleted"}            ],
-           "originalName": "SendImportCompleted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecordsCount"}            ],
-           "originalName": "GetRecordsCount"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecord"}            ],
-           "originalName": "GetRecord"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecordBounds"}            ],
-           "originalName": "GetRecordBounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecordFieldNames"}            ],
-           "originalName": "GetRecordFieldNames"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecordValue"}            ],
-           "originalName": "GetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RemoveRecord"}            ],
-           "originalName": "RemoveRecord"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ShiftAllShapes"}            ],
-           "originalName": "ShiftAllShapes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ShiftShapes"}            ],
-           "originalName": "ShiftShapes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetMaxLongitude"}            ],
-           "originalName": "GetMaxLongitude"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetRecordValue"}            ],
-           "originalName": "SetRecordValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetRecordValues"}            ],
-           "originalName": "GetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetRecordValues"}            ],
-           "originalName": "SetRecordValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetLargestShapeBoundsForRecord"}            ],
-           "originalName": "GetLargestShapeBoundsForRecord"
-       }   ],
-    "originalBaseTypeName": "DependencyObjectNotifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapeFilterRecordEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ShapeFilterRecordEventArgs.cs",
- "mappedName": "IgbShapeFilterRecordEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "IgbShapefileRecord", "mappedName": "Record"}            ],
-           "originalName": "Record"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldInclude"}            ],
-           "originalName": "ShouldInclude"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ShapefileRecord",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ShapefileRecord.cs",
- "mappedName": "IgbShapefileRecord"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "FieldValues"}            ],
-           "originalName": "FieldValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "Bounds"}            ],
-           "originalName": "Bounds"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetFieldValue"}            ],
-           "originalName": "GetFieldValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SetFieldValue"}            ],
-           "originalName": "SetFieldValue"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "GetTileImageUriArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "GetTileImageUriArgs.cs",
- "mappedName": "IgbGetTileImageUriArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TileLevel"}            ],
-           "originalName": "TileLevel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TilePositionX"}            ],
-           "originalName": "TilePositionX"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TilePositionY"}            ],
-           "originalName": "TilePositionY"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TileImageUri"}            ],
-           "originalName": "TileImageUri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "ItfConverter",
-   "names": [
-        { "platform": "Blazor",     "fileName": "TriangulationDataSource.cs",
- "mappedName": "IgbTriangulationDataSource"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "DownloadingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DownloadingMultiScaleImageEventArgs.cs",
- "mappedName": "IgbDownloadingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "CancellingMultiScaleImageEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CancellingMultiScaleImageEventArgs.cs",
- "mappedName": "IgbCancellingMultiScaleImageEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Uri"}            ],
-           "originalName": "Uri"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Maps"
-},
-{
-    "originalName": "TriangulationStatusEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "TriangulationStatusEventArgs.cs",
- "mappedName": "IgbTriangulationStatusEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CurrentStatus"}            ],
-           "originalName": "CurrentStatus"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types": [{"originalName": "ITileGenerator", 
+  "names": [
+    {"platform": "Blazor", "fileName": "TileGenerator.cs", "mappedName": "IgbTileGenerator"}
+  ], 
+  "members": [], "originalNamespace": "Infragistics.Controls"}, {"originalName": "HeatTileGenerator", 
+  "names": [
+    {"platform": "Blazor", "fileName": "HeatTileGenerator.cs", "mappedName": "IgbHeatTileGenerator"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "double[]", "mappedName": "YValues"}], "originalName": "YValues"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double[]", "mappedName": "XValues"}], "originalName": "XValues"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double[]", "mappedName": "Values"}], "originalName": "Values"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "MinimumColor"}], "originalName": "MinimumColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "MaximumColor"}], "originalName": "MaximumColor"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Color[]", "mappedName": "ScaleColors"}], "originalName": "ScaleColors"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double[]", "mappedName": "ScaleColorOffsets"}], "originalName": "ScaleColorOffsets"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "BlurRadius"}], "originalName": "BlurRadius"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MaxBlurRadius"}], "originalName": "MaxBlurRadius"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseBlurRadiusAdjustedForZoom"}], "originalName": "UseBlurRadiusAdjustedForZoom"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseGlobalMinMax"}], "originalName": "UseGlobalMinMax"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseGlobalMinMaxAdjustedForZoom"}], "originalName": "UseGlobalMinMaxAdjustedForZoom"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MinimumValue"}], "originalName": "MinimumValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "MaximumValue"}], "originalName": "MaximumValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "double", "mappedName": "LogarithmBase"}], "originalName": "LogarithmBase"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseLogarithmicScale"}], "originalName": "UseLogarithmicScale"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "UseWebWorkers"}], "originalName": "UseWebWorkers"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "WebWorkerScriptPath"}], "originalName": "WebWorkerScriptPath"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "WebWorkerInstance"}], "originalName": "WebWorkerInstance"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "Destroy"}], "originalName": "Destroy"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "ShapefileConverter", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ShapeDataSource.cs", "mappedName": "IgbShapeDataSource"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "WorldRect"}], "originalName": "WorldRect"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "ComputedWorldRect"}], "originalName": "ComputedWorldRect"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "DeferImportCompleted"}], "originalName": "DeferImportCompleted"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "ShapefileSource"}], "originalName": "ShapefileSource"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "DatabaseSource"}], "originalName": "DatabaseSource"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetWorldBounds"}], "originalName": "GetWorldBounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SetWorldBounds"}], "originalName": "SetWorldBounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SendImportCompleted"}], "originalName": "SendImportCompleted"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecordsCount"}], "originalName": "GetRecordsCount"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecord"}], "originalName": "GetRecord"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecordBounds"}], "originalName": "GetRecordBounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecordFieldNames"}], "originalName": "GetRecordFieldNames"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecordValue"}], "originalName": "GetRecordValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "RemoveRecord"}], "originalName": "RemoveRecord"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ShiftAllShapes"}], "originalName": "ShiftAllShapes"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "ShiftShapes"}], "originalName": "ShiftShapes"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetMaxLongitude"}], "originalName": "GetMaxLongitude"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SetRecordValue"}], "originalName": "SetRecordValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetRecordValues"}], "originalName": "GetRecordValues"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SetRecordValues"}], "originalName": "SetRecordValues"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetLargestShapeBoundsForRecord"}], "originalName": "GetLargestShapeBoundsForRecord"}
+  ], 
+  "originalBaseTypeName": "DependencyObjectNotifier", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapeFilterRecordEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ShapeFilterRecordEventArgs.cs", "mappedName": "IgbShapeFilterRecordEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "IgbShapefileRecord", "mappedName": "Record"}], "originalName": "Record"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "bool", "mappedName": "ShouldInclude"}], "originalName": "ShouldInclude"}], "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ShapefileRecord", 
+  "names": [
+    {"platform": "Blazor", "fileName": "ShapefileRecord.cs", "mappedName": "IgbShapefileRecord"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "Object", "mappedName": "FieldValues"}], "originalName": "FieldValues"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "Rect", "mappedName": "Bounds"}], "originalName": "Bounds"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "GetFieldValue"}], "originalName": "GetFieldValue"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "method", "mappedName": "SetFieldValue"}], "originalName": "SetFieldValue"}
+  ], 
+  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "GetTileImageUriArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "GetTileImageUriArgs.cs", "mappedName": "IgbGetTileImageUriArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "TileLevel"}], "originalName": "TileLevel"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "TilePositionX"}], "originalName": "TilePositionX"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "TilePositionY"}], "originalName": "TilePositionY"}, 
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "TileImageUri"}], "originalName": "TileImageUri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "ItfConverter", 
+  "names": [
+    {"platform": "Blazor", "fileName": "TriangulationDataSource.cs", "mappedName": "IgbTriangulationDataSource"}
+  ], 
+  "members": [], "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "DownloadingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "DownloadingMultiScaleImageEventArgs.cs", "mappedName": "IgbDownloadingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "CancellingMultiScaleImageEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "CancellingMultiScaleImageEventArgs.cs", "mappedName": "IgbCancellingMultiScaleImageEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "string", "mappedName": "Uri"}], "originalName": "Uri"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Maps"}, {"originalName": "TriangulationStatusEventArgs", 
+  "names": [
+    {"platform": "Blazor", "fileName": "TriangulationStatusEventArgs.cs", "mappedName": "IgbTriangulationStatusEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Blazor", "mappedType": "int", "mappedName": "CurrentStatus"}], "originalName": "CurrentStatus"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}]}

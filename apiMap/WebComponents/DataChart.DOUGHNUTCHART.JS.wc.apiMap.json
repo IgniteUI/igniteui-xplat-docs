@@ -1,458 +1,125 @@
-{
-"extraFiles": [
-"igc-doughnut-chart-module.ts",
-"igc-doughnut-chart-core-module.ts",
-"igc-doughnut-chart-interactivity-module.ts",
-"igc-doughnut-chart-default-tooltips-component.ts"
-],
-"types": [
-{
-    "originalName": "HierarchicalRingSeries",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-hierarchical-ring-series-component.ts",
-    "dynamicModuleName": "igc-hierarchical-ring-series-dynamic-module.ts",
-    "moduleName": "igc-hierarchical-ring-series-module.ts",
- "mappedName": "IgcHierarchicalRingSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "childrenMemberPath"}            ],
-           "originalName": "ChildrenMemberPath"
-       }   ],
-    "originalBaseTypeName": "RingSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "HoleDimensionsChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-hole-dimensions-changed-event-args.ts",
- "mappedName": "IgcHoleDimensionsChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "center"}            ],
-           "originalName": "Center"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radius"}            ],
-           "originalName": "Radius"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "Ring",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-ring.ts",
- "mappedName": "IgcRing"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "innerExtend"}            ],
-           "originalName": "InnerExtend"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgSize", "mappedName": "controlSize"}            ],
-           "originalName": "ControlSize"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "center"}            ],
-           "originalName": "Center"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcRingSeriesBaseComponent", "mappedName": "ringSeries"}            ],
-           "originalName": "RingSeries"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "ringBreadth"}            ],
-           "originalName": "RingBreadth"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "renderArcs"}            ],
-           "originalName": "RenderArcs"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "prepareArcs"}            ],
-           "originalName": "PrepareArcs"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RingSeries",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-ring-series-component.ts",
-    "dynamicModuleName": "igc-ring-series-dynamic-module.ts",
-    "moduleName": "igc-ring-series-module.ts",
- "mappedName": "IgcRingSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcRing", "mappedName": "ring"}            ],
-           "originalName": "Ring"
-       }   ],
-    "originalBaseTypeName": "RingSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RingSeriesBase",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-ring-series-base-component.ts",
- "mappedName": "IgcRingSeriesBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "legendLabelMemberPath"}            ],
-           "originalName": "LegendLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "LabelsPosition", "mappedName": "labelsPosition"}            ],
-           "originalName": "LabelsPosition"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "Visibility", "mappedName": "leaderLineVisibility"}            ],
-           "originalName": "LeaderLineVisibility"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "leaderLineStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "leaderLineStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "leaderLineStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "leaderLineStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "LeaderLineType", "mappedName": "leaderLineType"}            ],
-           "originalName": "LeaderLineType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "leaderLineMargin"}            ],
-           "originalName": "LeaderLineMargin"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "othersCategoryThreshold"}            ],
-           "originalName": "OthersCategoryThreshold"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "OthersCategoryType", "mappedName": "othersCategoryType"}            ],
-           "originalName": "OthersCategoryType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "othersCategoryText"}            ],
-           "originalName": "OthersCategoryText"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "(obj: any) => string", "mappedName": "formatLabel"}            ],
-           "originalName": "FormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "(obj: any) => string", "mappedName": "formatLegendLabel"}            ],
-           "originalName": "FormatLegendLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "othersLabelFormat"}            ],
-           "originalName": "OthersLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}            ],
-           "originalName": "OthersLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "legendLabelFormat"}            ],
-           "originalName": "LegendLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}            ],
-           "originalName": "LegendLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "legendOthersLabelFormat"}            ],
-           "originalName": "LegendOthersLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}            ],
-           "originalName": "LegendOthersLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "labelExtent"}            ],
-           "originalName": "LabelExtent"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "startAngle"}            ],
-           "originalName": "StartAngle"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "othersCategoryStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "othersCategoryStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "othersCategoryStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "othersCategoryStyle.opacity"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "selectedStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "selectedStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "selectedStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "selectedStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelOuterColor"}            ],
-           "originalName": "LabelOuterColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
-           "originalName": "LabelInnerColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
-           "originalName": "IsSurfaceInteractionDisabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusFactor"}            ],
-           "originalName": "RadiusFactor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XamDoughnutChart",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-doughnut-chart-component.ts",
- "mappedName": "IgcDoughnutChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
-           "originalName": "AllowSliceSelection"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
-           "originalName": "IsSurfaceInteractionDisabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "allowSliceExplosion"}            ],
-           "originalName": "AllowSliceExplosion"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "innerExtent"}            ],
-           "originalName": "InnerExtent"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "selectedStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "selectedStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "selectedStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "selectedStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getContainerID"}            ],
-           "originalName": "GetContainerID"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCenterCoordinates"}            ],
-           "originalName": "GetCenterCoordinates"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getHoleRadius"}            ],
-           "originalName": "GetHoleRadius"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igc-doughnut-chart-module.ts", "igc-doughnut-chart-core-module.ts", "igc-doughnut-chart-interactivity-module.ts", "igc-doughnut-chart-default-tooltips-component.ts"], "types": [{"originalName": "HierarchicalRingSeries", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-hierarchical-ring-series-component.ts", "dynamicModuleName": "igc-hierarchical-ring-series-dynamic-module.ts", "moduleName": "igc-hierarchical-ring-series-module.ts", "mappedName": "IgcHierarchicalRingSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "childrenMemberPath"}], "originalName": "ChildrenMemberPath"}
+  ], 
+  "originalBaseTypeName": "RingSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "HoleDimensionsChangedEventArgs", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-hole-dimensions-changed-event-args.ts", "mappedName": "IgcHoleDimensionsChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "center"}], "originalName": "Center"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radius"}], "originalName": "Radius"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Ring", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-ring.ts", "mappedName": "IgcRing"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "innerExtend"}], "originalName": "InnerExtend"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgSize", "mappedName": "controlSize"}], "originalName": "ControlSize"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgPoint", "mappedName": "center"}], "originalName": "Center"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcRingSeriesBaseComponent", "mappedName": "ringSeries"}], "originalName": "RingSeries"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "ringBreadth"}], "originalName": "RingBreadth"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "renderArcs"}], "originalName": "RenderArcs"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "prepareArcs"}], "originalName": "PrepareArcs"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RingSeries", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-ring-series-component.ts", "dynamicModuleName": "igc-ring-series-dynamic-module.ts", "moduleName": "igc-ring-series-module.ts", "mappedName": "IgcRingSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "IgcRing", "mappedName": "ring"}], "originalName": "Ring"}
+  ], 
+  "originalBaseTypeName": "RingSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RingSeriesBase", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-ring-series-base-component.ts", "mappedName": "IgcRingSeriesBaseComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "LabelsPosition", "mappedName": "labelsPosition"}], "originalName": "LabelsPosition"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "leaderLineVisibility"}], "originalName": "LeaderLineVisibility"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "LeaderLineType", "mappedName": "leaderLineType"}], "originalName": "LeaderLineType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "leaderLineMargin"}], "originalName": "LeaderLineMargin"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "othersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "OthersCategoryType", "mappedName": "othersCategoryType"}], "originalName": "OthersCategoryType"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "othersCategoryText"}], "originalName": "OthersCategoryText"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "(obj:  any) => string", "mappedName": "formatLabel"}], "originalName": "FormatLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "(obj:  any) => string", "mappedName": "formatLegendLabel"}], "originalName": "FormatLegendLabel"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "labelFormat"}], "originalName": "LabelFormat"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}], "originalName": "LabelFormatSpecifiers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "othersLabelFormat"}], "originalName": "OthersLabelFormat"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}], "originalName": "OthersLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "legendLabelFormat"}], "originalName": "LegendLabelFormat"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}], "originalName": "LegendLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "legendOthersLabelFormat"}], "originalName": "LegendOthersLabelFormat"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}], "originalName": "LegendOthersLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "labelExtent"}], "originalName": "LabelExtent"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "startAngle"}], "originalName": "StartAngle"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "selectedStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "brushes"}], "originalName": "Brushes"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string[]", "mappedName": "outlines"}], "originalName": "Outlines"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "labelOuterColor"}], "originalName": "LabelOuterColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "labelInnerColor"}], "originalName": "LabelInnerColor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}], "originalName": "IsSurfaceInteractionDisabled"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "XamDoughnutChart", 
+  "names": [
+    {"platform": "WebComponents", "fileName": "igc-doughnut-chart-component.ts", "mappedName": "IgcDoughnutChartComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowSliceSelection"}], "originalName": "AllowSliceSelection"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}], "originalName": "IsSurfaceInteractionDisabled"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "allowSliceExplosion"}], "originalName": "AllowSliceExplosion"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "innerExtent"}], "originalName": "InnerExtent"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "fill"}], "originalName": "selectedStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "string", "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyResized"}], "originalName": "NotifyResized"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getContainerID"}], "originalName": "GetContainerID"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getCenterCoordinates"}], "originalName": "GetCenterCoordinates"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getHoleRadius"}], "originalName": "GetHoleRadius"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "flush"}], "originalName": "Flush"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}]}

@@ -1,458 +1,125 @@
-{
-"extraFiles": [
-"igx-doughnut-chart-module.ts",
-"igx-doughnut-chart-core-module.ts",
-"igx-doughnut-chart-default-tooltips-component.ts",
-"igx-doughnut-chart-interactivity-module.ts"
-],
-"types": [
-{
-    "originalName": "HierarchicalRingSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-hierarchical-ring-series-component.ts",
-    "dynamicModuleName": "igx-hierarchical-ring-series-dynamic-module.ts",
-    "moduleName": "igx-hierarchical-ring-series-module.ts",
- "mappedName": "IgxHierarchicalRingSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "childrenMemberPath"}            ],
-           "originalName": "ChildrenMemberPath"
-       }   ],
-    "originalBaseTypeName": "RingSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "HoleDimensionsChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-hole-dimensions-changed-event-args.ts",
- "mappedName": "IgxHoleDimensionsChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "center"}            ],
-           "originalName": "Center"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "radius"}            ],
-           "originalName": "Radius"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "Ring",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ring.ts",
- "mappedName": "IgxRing"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerExtend"}            ],
-           "originalName": "InnerExtend"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgSize", "mappedName": "controlSize"}            ],
-           "originalName": "ControlSize"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "center"}            ],
-           "originalName": "Center"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxRingSeriesBaseComponent", "mappedName": "ringSeries"}            ],
-           "originalName": "RingSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "ringBreadth"}            ],
-           "originalName": "RingBreadth"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "renderArcs"}            ],
-           "originalName": "RenderArcs"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "prepareArcs"}            ],
-           "originalName": "PrepareArcs"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RingSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ring-series-component.ts",
-    "dynamicModuleName": "igx-ring-series-dynamic-module.ts",
-    "moduleName": "igx-ring-series-module.ts",
- "mappedName": "IgxRingSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxRing", "mappedName": "ring"}            ],
-           "originalName": "Ring"
-       }   ],
-    "originalBaseTypeName": "RingSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RingSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ring-series-base-component.ts",
- "mappedName": "IgxRingSeriesBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "legendLabelMemberPath"}            ],
-           "originalName": "LegendLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LabelsPosition", "mappedName": "labelsPosition"}            ],
-           "originalName": "LabelsPosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "leaderLineVisibility"}            ],
-           "originalName": "LeaderLineVisibility"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "leaderLineStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "leaderLineStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "leaderLineStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "leaderLineStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "LeaderLineType", "mappedName": "leaderLineType"}            ],
-           "originalName": "LeaderLineType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "leaderLineMargin"}            ],
-           "originalName": "LeaderLineMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "othersCategoryThreshold"}            ],
-           "originalName": "OthersCategoryThreshold"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "OthersCategoryType", "mappedName": "othersCategoryType"}            ],
-           "originalName": "OthersCategoryType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "othersCategoryText"}            ],
-           "originalName": "OthersCategoryText"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(obj: any) => string", "mappedName": "formatLabel"}            ],
-           "originalName": "FormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(obj: any) => string", "mappedName": "formatLegendLabel"}            ],
-           "originalName": "FormatLegendLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "othersLabelFormat"}            ],
-           "originalName": "OthersLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}            ],
-           "originalName": "OthersLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "legendLabelFormat"}            ],
-           "originalName": "LegendLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}            ],
-           "originalName": "LegendLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "legendOthersLabelFormat"}            ],
-           "originalName": "LegendOthersLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}            ],
-           "originalName": "LegendOthersLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "labelExtent"}            ],
-           "originalName": "LabelExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "startAngle"}            ],
-           "originalName": "StartAngle"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "othersCategoryStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "othersCategoryStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "othersCategoryStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "othersCategoryStyle.opacity"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "selectedStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "selectedStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "selectedStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "selectedStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelOuterColor"}            ],
-           "originalName": "LabelOuterColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
-           "originalName": "LabelInnerColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
-           "originalName": "IsSurfaceInteractionDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusFactor"}            ],
-           "originalName": "RadiusFactor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XamDoughnutChart",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-doughnut-chart-component.ts",
- "mappedName": "IgxDoughnutChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
-           "originalName": "AllowSliceSelection"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
-           "originalName": "IsSurfaceInteractionDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "allowSliceExplosion"}            ],
-           "originalName": "AllowSliceExplosion"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "innerExtent"}            ],
-           "originalName": "InnerExtent"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
-           "originalName": "selectedStyle.fill"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
-           "originalName": "selectedStyle.stroke"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
-           "originalName": "selectedStyle.strokeThickness"
-       },
-        {
-           "isVirtual": true,
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
-           "originalName": "selectedStyle.opacity"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getContainerID"}            ],
-           "originalName": "GetContainerID"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCenterCoordinates"}            ],
-           "originalName": "GetCenterCoordinates"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getHoleRadius"}            ],
-           "originalName": "GetHoleRadius"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles": ["igx-doughnut-chart-module.ts", "igx-doughnut-chart-core-module.ts", "igx-doughnut-chart-default-tooltips-component.ts", "igx-doughnut-chart-interactivity-module.ts"], "types": [{"originalName": "HierarchicalRingSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-hierarchical-ring-series-component.ts", "dynamicModuleName": "igx-hierarchical-ring-series-dynamic-module.ts", "moduleName": "igx-hierarchical-ring-series-module.ts", "mappedName": "IgxHierarchicalRingSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "childrenMemberPath"}], "originalName": "ChildrenMemberPath"}
+  ], 
+  "originalBaseTypeName": "RingSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "HoleDimensionsChangedEventArgs", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-hole-dimensions-changed-event-args.ts", "mappedName": "IgxHoleDimensionsChangedEventArgs"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "center"}], "originalName": "Center"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "radius"}], "originalName": "Radius"}
+  ], 
+  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Ring", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-ring.ts", "mappedName": "IgxRing"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "innerExtend"}], "originalName": "InnerExtend"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgSize", "mappedName": "controlSize"}], "originalName": "ControlSize"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgPoint", "mappedName": "center"}], "originalName": "Center"}, 
+    {"names": [{"platform": "Angular", "mappedType": "IgxRingSeriesBaseComponent", "mappedName": "ringSeries"}], "originalName": "RingSeries"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "ringBreadth"}], "originalName": "RingBreadth"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "renderArcs"}], "originalName": "RenderArcs"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "prepareArcs"}], "originalName": "PrepareArcs"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RingSeries", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-ring-series-component.ts", "dynamicModuleName": "igx-ring-series-dynamic-module.ts", "moduleName": "igx-ring-series-module.ts", "mappedName": "IgxRingSeriesComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "IgxRing", "mappedName": "ring"}], "originalName": "Ring"}
+  ], 
+  "originalBaseTypeName": "RingSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RingSeriesBase", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-ring-series-base-component.ts", "mappedName": "IgxRingSeriesBaseComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelMemberPath"}], "originalName": "LabelMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "legendLabelMemberPath"}], "originalName": "LegendLabelMemberPath"}, 
+    {"names": [{"platform": "Angular", "mappedType": "LabelsPosition", "mappedName": "labelsPosition"}], "originalName": "LabelsPosition"}, 
+    {"names": [{"platform": "Angular", "mappedType": "Visibility", "mappedName": "leaderLineVisibility"}], "originalName": "LeaderLineVisibility"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "leaderLineStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "leaderLineStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "leaderLineStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "leaderLineStyle.opacity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "LeaderLineType", "mappedName": "leaderLineType"}], "originalName": "LeaderLineType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "leaderLineMargin"}], "originalName": "LeaderLineMargin"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "othersCategoryThreshold"}], "originalName": "OthersCategoryThreshold"}, 
+    {"names": [{"platform": "Angular", "mappedType": "OthersCategoryType", "mappedName": "othersCategoryType"}], "originalName": "OthersCategoryType"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "othersCategoryText"}], "originalName": "OthersCategoryText"}, 
+    {"names": [{"platform": "Angular", "mappedType": "(obj:  any) => string", "mappedName": "formatLabel"}], "originalName": "FormatLabel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "(obj:  any) => string", "mappedName": "formatLegendLabel"}], "originalName": "FormatLegendLabel"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelFormat"}], "originalName": "LabelFormat"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "labelFormatSpecifiers"}], "originalName": "LabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "othersLabelFormat"}], "originalName": "OthersLabelFormat"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "othersLabelFormatSpecifiers"}], "originalName": "OthersLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "legendLabelFormat"}], "originalName": "LegendLabelFormat"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "legendLabelFormatSpecifiers"}], "originalName": "LegendLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "legendOthersLabelFormat"}], "originalName": "LegendOthersLabelFormat"}, 
+    {"names": [{"platform": "Angular", "mappedType": "any[]", "mappedName": "legendOthersLabelFormatSpecifiers"}], "originalName": "LegendOthersLabelFormatSpecifiers"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "labelExtent"}], "originalName": "LabelExtent"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "startAngle"}], "originalName": "StartAngle"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "othersCategoryStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "othersCategoryStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "othersCategoryStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "othersCategoryStyle.opacity"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "selectedStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string[]", "mappedName": "brushes"}], "originalName": "Brushes"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string[]", "mappedName": "outlines"}], "originalName": "Outlines"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelOuterColor"}], "originalName": "LabelOuterColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "labelInnerColor"}], "originalName": "LabelInnerColor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}], "originalName": "IsSurfaceInteractionDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "radiusFactor"}], "originalName": "RadiusFactor"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "XamDoughnutChart", 
+  "names": [
+    {"platform": "Angular", "fileName": "igx-doughnut-chart-component.ts", "mappedName": "IgxDoughnutChartComponent"}
+  ], 
+  "members": [
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowSliceSelection"}], "originalName": "AllowSliceSelection"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}], "originalName": "IsSurfaceInteractionDisabled"}, 
+    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "allowSliceExplosion"}], "originalName": "AllowSliceExplosion"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "innerExtent"}], "originalName": "InnerExtent"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "fill"}], "originalName": "selectedStyle.fill"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "string", "mappedName": "stroke"}], "originalName": "selectedStyle.stroke"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "strokeThickness"}], "originalName": "selectedStyle.strokeThickness"}, {"isVirtual": true, 
+  "names": [
+    {"platform": "Angular", "mappedType": "number", "mappedName": "opacity"}], "originalName": "selectedStyle.opacity"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "pixelScalingRatio"}], "originalName": "PixelScalingRatio"}, 
+    {"names": [{"platform": "Angular", "mappedType": "number", "mappedName": "actualPixelScalingRatio"}], "originalName": "ActualPixelScalingRatio"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "provideContainer"}], "originalName": "ProvideContainer"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifyResized"}], "originalName": "NotifyResized"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getContainerID"}], "originalName": "GetContainerID"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getCenterCoordinates"}], "originalName": "GetCenterCoordinates"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "getHoleRadius"}], "originalName": "GetHoleRadius"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "flush"}], "originalName": "Flush"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifyInsertItem"}], "originalName": "NotifyInsertItem"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifySetItem"}], "originalName": "NotifySetItem"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifyClearItems"}], "originalName": "NotifyClearItems"}, 
+    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "notifyRemoveItem"}], "originalName": "NotifyRemoveItem"}
+  ], 
+  "originalBaseTypeName": "Control", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}]}
