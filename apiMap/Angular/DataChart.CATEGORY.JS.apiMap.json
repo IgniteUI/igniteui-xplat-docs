@@ -165,8 +165,8 @@
    "members": [
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -252,6 +252,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -267,6 +272,16 @@
     "moduleName": "igx-column-series-module.ts",
  "mappedName": "IgxColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -306,6 +321,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        },
@@ -326,7 +346,16 @@
     "moduleName": "igx-spline-area-series-module.ts",
  "mappedName": "IgxSplineAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -339,7 +368,11 @@
     "moduleName": "igx-spline-series-module.ts",
  "mappedName": "IgxSplineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -350,6 +383,11 @@
         { "platform": "Angular",     "fileName": "igx-spline-series-base-component.ts",
  "mappedName": "IgxSplineSeriesBaseComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -376,6 +414,21 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -389,6 +442,21 @@
     "moduleName": "igx-step-line-series-module.ts",
  "mappedName": "IgxStepLineSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -406,6 +474,21 @@
     "moduleName": "igx-waterfall-series-module.ts",
  "mappedName": "IgxWaterfallSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isWaterfall"}            ],
+           "originalName": "IsWaterfall"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancialWaterfall"}            ],
+           "originalName": "IsFinancialWaterfall"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],

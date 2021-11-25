@@ -4,7 +4,7 @@
     "originalName": "AnchoredRadialSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "AnchoredRadialSeries.cs",
- "mappedName": "AnchoredRadialSeries"}   ],
+ "mappedName": "IgbAnchoredRadialSeries"}   ],
    "members": [
         {
            "names": [
@@ -89,7 +89,7 @@
     "originalName": "RadialAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialAreaSeries.cs",
- "mappedName": "RadialAreaSeries"}   ],
+ "mappedName": "IgbRadialAreaSeries"}   ],
    "members": [
         {
            "names": [
@@ -104,7 +104,7 @@
     "originalName": "RadialBase",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialBase.cs",
- "mappedName": "RadialBase"}   ],
+ "mappedName": "IgbRadialBase"}   ],
    "members": [
         {
            "names": [
@@ -118,12 +118,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAngleAxis", "mappedName": "AngleAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAngleAxis", "mappedName": "AngleAxis"}            ],
            "originalName": "AngleAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericRadiusAxis", "mappedName": "ValueAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericRadiusAxis", "mappedName": "ValueAxis"}            ],
            "originalName": "ValueAxis"
        },
         {
@@ -184,7 +184,7 @@
     "originalName": "RadialColumnSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialColumnSeries.cs",
- "mappedName": "RadialColumnSeries"}   ],
+ "mappedName": "IgbRadialColumnSeries"}   ],
    "members": [
         {
            "names": [
@@ -209,7 +209,7 @@
     "originalName": "RadialLineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialLineSeries.cs",
- "mappedName": "RadialLineSeries"}   ],
+ "mappedName": "IgbRadialLineSeries"}   ],
    "members": [
         {
            "names": [
@@ -224,7 +224,7 @@
     "originalName": "RadialPieSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialPieSeries.cs",
- "mappedName": "RadialPieSeries"}   ],
+ "mappedName": "IgbRadialPieSeries"}   ],
    "members": [
         {
            "names": [

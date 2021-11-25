@@ -353,217 +353,227 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "property"}            ],
+               { "platform": "Blazor",  "mappedType": "Date", "mappedName": "_todayOverride"}            ],
+           "originalName": "_todayOverride"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Date", "mappedName": "todayOverride"}            ],
+           "originalName": "TodayOverride"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "property"}            ],
            "originalName": "Property"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "literal"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "literal"}            ],
            "originalName": "Literal"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "group"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "group"}            ],
            "originalName": "Group"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "and"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "and"}            ],
            "originalName": "And"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "or"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "or"}            ],
            "originalName": "Or"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "not"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "not"}            ],
            "originalName": "Not"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "add"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "add"}            ],
            "originalName": "Add"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "divide"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "divide"}            ],
            "originalName": "Divide"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "equal"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "equal"}            ],
            "originalName": "Equal"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "greaterThan"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "greaterThan"}            ],
            "originalName": "GreaterThan"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "greaterThanOrEqual"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "greaterThanOrEqual"}            ],
            "originalName": "GreaterThanOrEqual"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "lessThan"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "lessThan"}            ],
            "originalName": "LessThan"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "lessThanOrEqual"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "lessThanOrEqual"}            ],
            "originalName": "LessThanOrEqual"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "modulus"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "modulus"}            ],
            "originalName": "Modulus"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "multiply"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "multiply"}            ],
            "originalName": "Multiply"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "notEqual"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "notEqual"}            ],
            "originalName": "NotEqual"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "subtract"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "subtract"}            ],
            "originalName": "Subtract"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "ceiling"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "ceiling"}            ],
            "originalName": "Ceiling"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "concat"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "concat"}            ],
            "originalName": "Concat"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "concat1"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "concat1"}            ],
            "originalName": "Concat"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "contains"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "contains"}            ],
            "originalName": "Contains"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "day"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "day"}            ],
            "originalName": "Day"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "endsWith"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "endsWith"}            ],
            "originalName": "EndsWith"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "floor"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "floor"}            ],
            "originalName": "Floor"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "hour"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "hour"}            ],
            "originalName": "Hour"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "indexOf"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "indexOf"}            ],
            "originalName": "IndexOf"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "length"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "length"}            ],
            "originalName": "Length"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "minute"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "minute"}            ],
            "originalName": "Minute"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "month"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "month"}            ],
            "originalName": "Month"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "replace"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "replace"}            ],
            "originalName": "Replace"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "round"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "round"}            ],
            "originalName": "Round"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "second"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "second"}            ],
            "originalName": "Second"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "startsWith"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "startsWith"}            ],
            "originalName": "StartsWith"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "substring"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "substring"}            ],
            "originalName": "Substring"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "toLower"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "toLower"}            ],
            "originalName": "ToLower"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "toUpper"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "toUpper"}            ],
            "originalName": "ToUpper"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "trim"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "trim"}            ],
            "originalName": "Trim"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "year"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "year"}            ],
            "originalName": "Year"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "date"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "date"}            ],
            "originalName": "Date"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "time"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "time"}            ],
            "originalName": "Time"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "now"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "now"}            ],
            "originalName": "Now"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "isOf"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "isOf"}            ],
            "originalName": "IsOf"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "cast"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "cast"}            ],
            "originalName": "Cast"
        },
         {
@@ -577,7 +587,7 @@
     "originalName": "IFilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "FilterExpression.cs",
- "mappedName": "FilterExpression"}   ],
+ "mappedName": "IgbFilterExpression"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.DataSource"
@@ -586,12 +596,92 @@
     "originalName": "FilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "FilterExpression.cs",
- "mappedName": "FilterExpression"}   ],
+ "mappedName": "IgbFilterExpression"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAutoGenerated"}            ],
+           "originalName": "IsAutoGenerated"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsPropertyReference"}            ],
+           "originalName": "IsPropertyReference"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsOperation"}            ],
+           "originalName": "IsOperation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFunction"}            ],
+           "originalName": "IsFunction"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLiteral"}            ],
+           "originalName": "IsLiteral"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNull"}            ],
+           "originalName": "IsNull"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsWrapper"}            ],
+           "originalName": "IsWrapper"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "MarkAutoGenerated"}            ],
            "originalName": "MarkAutoGenerated"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAutoGenerated"}            ],
+           "originalName": "IsAutoGenerated"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsPropertyReference"}            ],
+           "originalName": "IsPropertyReference"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsOperation"}            ],
+           "originalName": "IsOperation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFunction"}            ],
+           "originalName": "IsFunction"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLiteral"}            ],
+           "originalName": "IsLiteral"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNull"}            ],
+           "originalName": "IsNull"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsWrapper"}            ],
+           "originalName": "IsWrapper"
        },
         {
            "names": [
@@ -604,12 +694,27 @@
     "originalName": "OperationFilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "OperationFilterExpression.cs",
- "mappedName": "OperationFilterExpression"}   ],
+ "mappedName": "IgbOperationFilterExpression"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsOperation"}            ],
+           "originalName": "IsOperation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsComparisonOperation"}            ],
+           "originalName": "IsComparisonOperation"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
            "originalName": "PropertyName"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasPropertyName"}            ],
+           "originalName": "HasPropertyName"
        },
         {
            "names": [
@@ -618,18 +723,43 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "Left"}            ],
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasValue"}            ],
+           "originalName": "HasValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "Left"}            ],
            "originalName": "Left"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpression", "mappedName": "Right"}            ],
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasLeft"}            ],
+           "originalName": "HasLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "Right"}            ],
            "originalName": "Right"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasRight"}            ],
+           "originalName": "HasRight"
        },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "FilterExpressionOperatorType", "mappedName": "Operator"}            ],
            "originalName": "Operator"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasOperator"}            ],
+           "originalName": "HasOperator"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -639,8 +769,13 @@
     "originalName": "FunctionFilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "FunctionFilterExpression.cs",
- "mappedName": "FunctionFilterExpression"}   ],
+ "mappedName": "IgbFunctionFilterExpression"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFunction"}            ],
+           "originalName": "IsFunction"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "FilterExpressionFunctionType", "mappedName": "FunctionType"}            ],
@@ -648,8 +783,18 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FunctionArguments"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpressionCollection", "mappedName": "FunctionArguments"}            ],
            "originalName": "FunctionArguments"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "HasFunctionArguments"}            ],
+           "originalName": "HasFunctionArguments"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
        }   ],
     "originalBaseTypeName": "FilterExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
@@ -659,8 +804,18 @@
     "originalName": "PropertyReferenceFilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "PropertyReferenceFilterExpression.cs",
- "mappedName": "PropertyReferenceFilterExpression"}   ],
+ "mappedName": "IgbPropertyReferenceFilterExpression"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsPropertyReference"}            ],
+           "originalName": "IsPropertyReference"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyReference"}            ],
@@ -674,8 +829,23 @@
     "originalName": "LiteralFilterExpression",
    "names": [
         { "platform": "Blazor",     "fileName": "LiteralFilterExpression.cs",
- "mappedName": "LiteralFilterExpression"}   ],
+ "mappedName": "IgbLiteralFilterExpression"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLiteral"}            ],
+           "originalName": "IsLiteral"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNull"}            ],
+           "originalName": "IsNull"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "object", "mappedName": "LiteralValue"}            ],
@@ -687,6 +857,272 @@
            "originalName": "LeaveUnquoted"
        }   ],
     "originalBaseTypeName": "FilterExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "WrapperExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "WrapperExpression.cs",
+ "mappedName": "IgbWrapperExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "InnerExpression"}            ],
+           "originalName": "InnerExpression"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "Expression"}            ],
+           "originalName": "Expression"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "PropertyName"}            ],
+           "originalName": "PropertyName"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsWrapper"}            ],
+           "originalName": "IsWrapper"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Precedence"}            ],
+           "originalName": "Precedence"
+       }   ],
+    "originalBaseTypeName": "FilterExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "TodayExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "TodayExpression.cs",
+ "mappedName": "IgbTodayExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "TomorrowExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "TomorrowExpression.cs",
+ "mappedName": "IgbTomorrowExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "YesterdayExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "YesterdayExpression.cs",
+ "mappedName": "IgbYesterdayExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "OffsettableWeekExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "OffsettableWeekExpression.cs",
+ "mappedName": "IgbOffsettableWeekExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisWeekExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ThisWeekExpression.cs",
+ "mappedName": "IgbThisWeekExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextWeekExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NextWeekExpression.cs",
+ "mappedName": "IgbNextWeekExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastWeekExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "LastWeekExpression.cs",
+ "mappedName": "IgbLastWeekExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisMonthExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ThisMonthExpression.cs",
+ "mappedName": "IgbThisMonthExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextMonthExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NextMonthExpression.cs",
+ "mappedName": "IgbNextMonthExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastMonthExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "LastMonthExpression.cs",
+ "mappedName": "IgbLastMonthExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisYearExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ThisYearExpression.cs",
+ "mappedName": "IgbThisYearExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextYearExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NextYearExpression.cs",
+ "mappedName": "IgbNextYearExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastYearExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "LastYearExpression.cs",
+ "mappedName": "IgbLastYearExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "YearToDateExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "YearToDateExpression.cs",
+ "mappedName": "IgbYearToDateExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisQuarterExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ThisQuarterExpression.cs",
+ "mappedName": "IgbThisQuarterExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextQuarterExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "NextQuarterExpression.cs",
+ "mappedName": "IgbNextQuarterExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastQuarterExpression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "LastQuarterExpression.cs",
+ "mappedName": "IgbLastQuarterExpression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q1Expression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Q1Expression.cs",
+ "mappedName": "IgbQ1Expression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q2Expression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Q2Expression.cs",
+ "mappedName": "IgbQ2Expression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q3Expression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Q3Expression.cs",
+ "mappedName": "IgbQ3Expression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q4Expression",
+   "names": [
+        { "platform": "Blazor",     "fileName": "Q4Expression.cs",
+ "mappedName": "IgbQ4Expression"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "WrapperExpression",
     "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
@@ -860,7 +1296,7 @@
     "originalName": "DataSourceAggregatedResult",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceAggregatedResult.cs",
- "mappedName": "DataSourceAggregatedResult"}   ],
+ "mappedName": "IgbDataSourceAggregatedResult"}   ],
    "members": [
         {
            "names": [
@@ -912,7 +1348,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
            "originalName": "FilterExpressions"
        },
         {
@@ -1174,7 +1610,7 @@
     "originalName": "DataSourceSchemaChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceSchemaChangedEventArgs.cs",
- "mappedName": "DataSourceSchemaChangedEventArgs"}   ],
+ "mappedName": "IgbDataSourceSchemaChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -1194,7 +1630,7 @@
     "originalName": "DataSourceRowExpansionChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceRowExpansionChangedEventArgs.cs",
- "mappedName": "DataSourceRowExpansionChangedEventArgs"}   ],
+ "mappedName": "IgbDataSourceRowExpansionChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -1243,7 +1679,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
            "originalName": "FilterExpressions"
        },
         {
@@ -1316,7 +1752,7 @@
     "originalName": "DataSourceDataProviderSchemaChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceDataProviderSchemaChangedEventArgs.cs",
- "mappedName": "DataSourceDataProviderSchemaChangedEventArgs"}   ],
+ "mappedName": "IgbDataSourceDataProviderSchemaChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -1490,8 +1926,8 @@
 {
     "originalName": "DefaultSectionInformation",
    "names": [
-        { "platform": "Blazor",     "fileName": "DefaultSectionInformation.cs",
- "mappedName": "SectionInformation"}   ],
+        { "platform": "Blazor",     "fileName": "SectionInformation.cs",
+ "mappedName": "IgbSectionInformation"}   ],
    "members": [
         {
            "names": [
@@ -1515,7 +1951,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult[]", "mappedName": "SummaryResults"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult[]", "mappedName": "SummaryResults"}            ],
            "originalName": "SummaryResults"
        }   ],
     "originalNamespace": "Infragistics.Controls.DataSource"
@@ -1687,8 +2123,8 @@
 {
     "originalName": "DefaultSummaryResult",
    "names": [
-        { "platform": "Blazor",     "fileName": "DefaultSummaryResult.cs",
- "mappedName": "SummaryResult"}   ],
+        { "platform": "Blazor",     "fileName": "SummaryResult.cs",
+ "mappedName": "IgbSummaryResult"}   ],
    "members": [
         {
            "names": [
@@ -1740,7 +2176,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -1750,12 +2186,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -1795,7 +2231,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -1805,12 +2241,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -1855,7 +2291,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -1865,12 +2301,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -1910,7 +2346,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -1920,12 +2356,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -1970,7 +2406,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -1980,12 +2416,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -2050,7 +2486,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "endCalculation"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "endCalculation"}            ],
            "originalName": "EndCalculation"
        },
         {
@@ -2060,12 +2496,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemAdded"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemAdded"}            ],
            "originalName": "ItemAdded"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult", "mappedName": "itemRemoved"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult", "mappedName": "itemRemoved"}            ],
            "originalName": "ItemRemoved"
        },
         {
@@ -2163,7 +2599,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "(sender: any, args: ProvideCalculatorEventArgs) => void", "mappedName": "provideCalculator"}            ],
+               { "platform": "Blazor",  "mappedType": "(sender: any, args: IgbProvideCalculatorEventArgs) => void", "mappedName": "provideCalculator"}            ],
            "originalName": "ProvideCalculator"
        },
         {
@@ -2182,7 +2618,7 @@
     "originalName": "ProvideCalculatorEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ProvideCalculatorEventArgs.cs",
- "mappedName": "ProvideCalculatorEventArgs"}   ],
+ "mappedName": "IgbProvideCalculatorEventArgs"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.DataSource"
@@ -2191,7 +2627,7 @@
     "originalName": "BaseDataSource",
    "names": [
         { "platform": "Blazor",     "fileName": "BaseDataSource.cs",
- "mappedName": "BaseDataSource"}   ],
+ "mappedName": "IgbBaseDataSource"}   ],
    "members": [
         {
            "names": [
@@ -2559,7 +2995,7 @@
     "originalName": "DataSourceSpecialRow",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceSpecialRow.cs",
- "mappedName": "DataSourceSpecialRow"}   ],
+ "mappedName": "IgbDataSourceSpecialRow"}   ],
    "members": [
         {
            "names": [
@@ -2598,7 +3034,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryResult[]", "mappedName": "SummaryResults"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryResult[]", "mappedName": "SummaryResults"}            ],
            "originalName": "SummaryResults"
        }   ],
     "originalNamespace": "Infragistics.Controls.DataSource.Implementation"
@@ -2607,7 +3043,7 @@
     "originalName": "LocalDataSource",
    "names": [
         { "platform": "Blazor",     "fileName": "LocalDataSource.cs",
- "mappedName": "LocalDataSource"}   ],
+ "mappedName": "IgbLocalDataSource"}   ],
    "members": [
         {
            "names": [
@@ -2717,7 +3153,7 @@
     "originalName": "VirtualDataSource",
    "names": [
         { "platform": "Blazor",     "fileName": "VirtualDataSource.cs",
- "mappedName": "VirtualDataSource"}   ],
+ "mappedName": "IgbVirtualDataSource"}   ],
    "members": [
         {
            "names": [
@@ -2882,7 +3318,7 @@
     "originalName": "TransactionState",
    "names": [
         { "platform": "Blazor",     "fileName": "TransactionState.cs",
- "mappedName": "TransactionState"}   ],
+ "mappedName": "IgbTransactionState"}   ],
    "members": [
         {
            "names": [

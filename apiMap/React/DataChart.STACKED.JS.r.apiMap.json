@@ -92,6 +92,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "FragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -105,6 +110,21 @@
     "moduleName": "igr-bar-fragment-module.ts",
  "mappedName": "IgrBarFragment"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "IgrNumericXAxis", "mappedName": "barFragmentXAxis"}            ],
@@ -147,6 +167,16 @@
     "moduleName": "igr-column-fragment-module.ts",
  "mappedName": "IgrColumnFragment"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -216,6 +246,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        }   ],
@@ -235,6 +270,16 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
        }   ],
     "originalBaseTypeName": "SplineFragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -248,6 +293,11 @@
     "moduleName": "igr-spline-fragment-module.ts",
  "mappedName": "IgrSplineFragment"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -387,7 +437,11 @@
     "moduleName": "igr-stacked-area-series-module.ts",
  "mappedName": "IgrStackedAreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -400,6 +454,16 @@
     "moduleName": "igr-stacked-bar-series-module.ts",
  "mappedName": "IgrStackedBarSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -442,6 +506,16 @@
     "moduleName": "igr-stacked-column-series-module.ts",
  "mappedName": "IgrStackedColumnSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -576,6 +650,26 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeShape", "mappedName": "actualLegendItemBadgeShape"}            ],
+           "originalName": "ActualLegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeMode", "mappedName": "actualLegendItemBadgeMode"}            ],
+           "originalName": "ActualLegendItemBadgeMode"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "markerBrush"}            ],
            "originalName": "MarkerBrush"
        },
@@ -651,6 +745,36 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualMarkerFillOpacity"}            ],
+           "originalName": "ActualMarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SeriesOutlineMode", "mappedName": "actualOutlineMode"}            ],
+           "originalName": "ActualOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "highlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -658,6 +782,16 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "actualRadiusX"}            ],
            "originalName": "ActualRadiusX"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "actualIsSplineShapePartOfRange"}            ],
+           "originalName": "ActualIsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
        },
         {
            "names": [
@@ -836,7 +970,11 @@
     "moduleName": "igr-stacked-line-series-module.ts",
  "mappedName": "IgrStackedLineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -954,6 +1092,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "simulateHover"}            ],
            "originalName": "SimulateHover"
        },
@@ -974,7 +1117,21 @@
     "moduleName": "igr-stacked-spline-area-series-module.ts",
  "mappedName": "IgrStackedSplineAreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -987,7 +1144,16 @@
     "moduleName": "igr-stacked-spline-series-module.ts",
  "mappedName": "IgrStackedSplineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"

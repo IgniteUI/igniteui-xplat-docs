@@ -4,11 +4,11 @@
     "originalName": "CheckboxList",
    "names": [
         { "platform": "Blazor",     "fileName": "CheckboxList.cs",
- "mappedName": "CheckboxList"}   ],
+ "mappedName": "IgbCheckboxList"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "Keys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "Keys"}            ],
            "originalName": "Keys"
        },
         {
@@ -93,6 +93,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShowFilter"}            ],
+           "originalName": "ShowFilter"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsRowHoverEnabled"}            ],
+           "originalName": "IsRowHoverEnabled"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "SelectAll"}            ],
            "originalName": "SelectAll"
        },
@@ -147,7 +157,7 @@
     "originalName": "CheckedChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CheckedChangedEventArgs.cs",
- "mappedName": "CheckedChangedEventArgs"}   ],
+ "mappedName": "IgbCheckedChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -165,7 +175,7 @@
     "originalName": "SelectAllCheckboxChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SelectAllCheckboxChangedEventArgs.cs",
- "mappedName": "SelectAllCheckboxChangedEventArgs"}   ],
+ "mappedName": "IgbSelectAllCheckboxChangedEventArgs"}   ],
    "members": [
         {
            "names": [

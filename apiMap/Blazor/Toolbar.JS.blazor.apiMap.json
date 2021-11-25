@@ -4,11 +4,11 @@
     "originalName": "DataGridToolbar",
    "names": [
         { "platform": "Blazor",     "fileName": "DataGridToolbar.cs",
- "mappedName": "DataGridToolbar"}   ],
+ "mappedName": "IgbDataGridToolbar"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "TargetGrid"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataGrid", "mappedName": "TargetGrid"}            ],
            "originalName": "TargetGrid"
        },
         {

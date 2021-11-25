@@ -1101,6 +1101,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "DataSeriesMarker", "mappedName": "Smart"}            ],
+           "originalName": "Smart"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],

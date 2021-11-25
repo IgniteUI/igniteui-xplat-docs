@@ -4,7 +4,7 @@
     "originalName": "OnExpandedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "OnExpandedEventArgs.cs",
- "mappedName": "OnExpandedEventArgs"}   ],
+ "mappedName": "IgbOnExpandedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -15,7 +15,7 @@
     "originalName": "OnCollapsedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "OnCollapsedEventArgs.cs",
- "mappedName": "OnCollapsedEventArgs"}   ],
+ "mappedName": "IgbOnCollapsedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -26,7 +26,7 @@
     "originalName": "OnPopupEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "OnPopupEventArgs.cs",
- "mappedName": "OnPopupEventArgs"}   ],
+ "mappedName": "IgbOnPopupEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -37,7 +37,7 @@
     "originalName": "OnClosedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "OnClosedEventArgs.cs",
- "mappedName": "OnClosedEventArgs"}   ],
+ "mappedName": "IgbOnClosedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -48,7 +48,7 @@
     "originalName": "Popup",
    "names": [
         { "platform": "Blazor",     "fileName": "Popup.cs",
- "mappedName": "Popup"}   ],
+ "mappedName": "IgbPopup"}   ],
    "members": [
         {
            "names": [
@@ -87,6 +87,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "Close"}            ],
            "originalName": "Close"
        },
@@ -111,7 +116,7 @@
     "originalName": "ExpansionPanel",
    "names": [
         { "platform": "Blazor",     "fileName": "ExpansionPanel.cs",
- "mappedName": "ExpansionPanel"}   ],
+ "mappedName": "IgbExpansionPanel"}   ],
    "members": [
         {
            "names": [

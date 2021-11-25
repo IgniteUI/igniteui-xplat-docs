@@ -258,8 +258,18 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancialIndicator"}            ],
+           "originalName": "IsFinancialIndicator"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "displayType"}            ],
            "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
        },
         {
            "names": [
@@ -328,6 +338,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancialOverlay"}            ],
+           "originalName": "IsFinancialOverlay"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
            "originalName": "IgnoreFirst"
        },
@@ -348,6 +363,11 @@
     "moduleName": "igx-force-index-indicator-module.ts",
  "mappedName": "IgxForceIndexIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
@@ -403,7 +423,11 @@
     "moduleName": "igx-market-facilitation-index-indicator-module.ts",
  "mappedName": "IgxMarketFacilitationIndexIndicatorComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       }   ],
     "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -444,6 +468,16 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancialIndicator"}            ],
+           "originalName": "IsFinancialIndicator"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
            "originalName": "Period"
        }   ],
@@ -459,6 +493,11 @@
     "moduleName": "igx-moving-average-convergence-divergence-indicator-module.ts",
  "mappedName": "IgxMovingAverageConvergenceDivergenceIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
@@ -631,6 +670,11 @@
     "moduleName": "igx-relative-strength-index-indicator-module.ts",
  "mappedName": "IgxRelativeStrengthIndexIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],

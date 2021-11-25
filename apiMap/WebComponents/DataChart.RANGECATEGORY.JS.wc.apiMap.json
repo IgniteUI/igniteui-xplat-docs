@@ -15,6 +15,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "HorizontalRangeCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -143,6 +148,16 @@
     "moduleName": "igc-range-column-series-module.ts",
  "mappedName": "IgcRangeColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],

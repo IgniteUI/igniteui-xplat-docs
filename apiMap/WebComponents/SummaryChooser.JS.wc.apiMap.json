@@ -1,0 +1,25 @@
+{
+"extraFiles": [
+"igc-summary-chooser-module.ts"
+],
+"types": [
+{
+    "originalName": "SummaryChangedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-summary-changed-event-args.ts",
+ "mappedName": "IgcSummaryChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "iD"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isEnabled"}            ],
+           "originalName": "IsEnabled"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+}
+]
+}

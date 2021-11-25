@@ -1,21 +1,21 @@
 {
 "extraFiles": [
-"igx-checkbox-module.ts",
-"igx-ripple-module.ts",
-"igx-button-module.ts",
-"igx-icon-module.ts",
-"igx-button-group-module.ts",
-"igx-input-module.ts",
-"igx-label-module.ts",
-"igx-input-group-module.ts",
-"igx-prefix-module.ts"
+"igx-x-checkbox-module.ts",
+"igx-x-ripple-module.ts",
+"igx-x-button-module.ts",
+"igx-x-icon-module.ts",
+"igx-x-button-group-module.ts",
+"igx-x-input-module.ts",
+"igx-x-label-module.ts",
+"igx-x-input-group-module.ts",
+"igx-x-prefix-module.ts"
 ],
 "types": [
 {
     "originalName": "Suffix",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-suffix-component.ts",
- "mappedName": "IgxSuffixComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-suffix-component.ts",
+ "mappedName": "IgxXSuffixComponent"}   ],
    "members": [
         {
            "names": [
@@ -93,8 +93,8 @@
 {
     "originalName": "Prefix",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-prefix-component.ts",
- "mappedName": "IgxPrefixComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-prefix-component.ts",
+ "mappedName": "IgxXPrefixComponent"}   ],
    "members": [
         {
            "names": [
@@ -172,8 +172,8 @@
 {
     "originalName": "InputGroup",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-input-group-component.ts",
- "mappedName": "IgxInputGroupComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-input-group-component.ts",
+ "mappedName": "IgxXInputGroupComponent"}   ],
    "members": [
         {
            "names": [
@@ -1087,8 +1087,8 @@
 {
     "originalName": "ButtonGroup",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-button-group-component.ts",
- "mappedName": "IgxButtonGroupComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-button-group-component.ts",
+ "mappedName": "IgxXButtonGroupComponent"}   ],
    "members": [
         {
            "names": [
@@ -1475,8 +1475,8 @@
 {
     "originalName": "Label",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-label-component.ts",
- "mappedName": "IgxLabelComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-label-component.ts",
+ "mappedName": "IgxXLabelComponent"}   ],
    "members": [
         {
            "names": [
@@ -1557,6 +1557,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "alignItems"}            ],
            "originalName": "AlignItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "alignSelf"}            ],
+           "originalName": "AlignSelf"
        },
         {
            "names": [
@@ -1649,8 +1654,8 @@
 {
     "originalName": "InputGroupItem",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-input-group-item-component.ts",
- "mappedName": "IgxInputGroupItemComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-input-group-item-component.ts",
+ "mappedName": "IgxXInputGroupItemComponent"}   ],
    "members": [
         {
            "names": [
@@ -1662,8 +1667,8 @@
 {
     "originalName": "Input",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-input-component.ts",
- "mappedName": "IgxInputComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-input-component.ts",
+ "mappedName": "IgxXInputComponent"}   ],
    "members": [
         {
            "names": [
@@ -1759,6 +1764,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "disabled"}            ],
            "originalName": "IsDisabled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "readonly"}            ],
+           "originalName": "IsReadOnly"
        },
         {
            "names": [
@@ -1861,8 +1871,8 @@
 {
     "originalName": "Icon",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-icon-component.ts",
- "mappedName": "IgxIconComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-icon-component.ts",
+ "mappedName": "IgxXIconComponent"}   ],
    "members": [
         {
            "names": [
@@ -1971,6 +1981,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
            "originalName": "OnDetachedFromUI"
        },
@@ -1994,8 +2009,8 @@
 {
     "originalName": "Button",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-button-component.ts",
- "mappedName": "IgxButtonComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-button-component.ts",
+ "mappedName": "IgxXButtonComponent"}   ],
    "members": [
         {
            "names": [
@@ -2901,8 +2916,8 @@
 {
     "originalName": "Ripple",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-ripple-component.ts",
- "mappedName": "IgxRippleComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-ripple-component.ts",
+ "mappedName": "IgxXRippleComponent"}   ],
    "members": [
         {
            "names": [
@@ -2974,8 +2989,8 @@
 {
     "originalName": "Checkbox",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-checkbox-component.ts",
- "mappedName": "IgxCheckboxComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-checkbox-component.ts",
+ "mappedName": "IgxXCheckboxComponent"}   ],
    "members": [
         {
            "names": [

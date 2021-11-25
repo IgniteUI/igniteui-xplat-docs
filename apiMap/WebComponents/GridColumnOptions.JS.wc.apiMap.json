@@ -6,14 +6,16 @@
 "igc-grid-column-pin-options-module.ts",
 "igc-grid-column-hide-options-module.ts",
 "igc-grid-column-filter-options-module.ts",
-"igc-grid-column-group-options-module.ts"
+"igc-grid-column-group-options-module.ts",
+"igc-grid-column-summary-options-module.ts",
+"igc-grid-column-button-options-module.ts"
 ],
 "types": [
 {
-    "originalName": "FilterApplyButtonClickEventArgs",
+    "originalName": "ApplyButtonClickEventArgs",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-filter-apply-button-click-event-args.ts",
- "mappedName": "IgcFilterApplyButtonClickEventArgs"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-apply-button-click-event-args.ts",
+ "mappedName": "IgcApplyButtonClickEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -21,10 +23,10 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "FilterCancelButtonClickEventArgs",
+    "originalName": "CancelButtonClickEventArgs",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-filter-cancel-button-click-event-args.ts",
- "mappedName": "IgcFilterCancelButtonClickEventArgs"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-cancel-button-click-event-args.ts",
+ "mappedName": "IgcCancelButtonClickEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -71,6 +73,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "filterOptionsVisibleResolved"}            ],
            "originalName": "FilterOptionsVisibleResolved"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "summaryOptionsVisibleResolved"}            ],
+           "originalName": "SummaryOptionsVisibleResolved"
        },
         {
            "names": [
@@ -126,6 +133,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "filterOptionsVisible"}            ],
            "originalName": "FilterOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "summaryOptionsVisible"}            ],
+           "originalName": "SummaryOptionsVisible"
        },
         {
            "names": [
@@ -189,6 +201,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "summaryListDensity"}            ],
+           "originalName": "SummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "actualSummaryListDensity"}            ],
+           "originalName": "ActualSummaryListDensity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "filterListDensity"}            ],
            "originalName": "FilterListDensity"
        },
@@ -232,7 +254,16 @@
         { "platform": "WebComponents",     "fileName": "igc-grid-column-options-section-base-component.ts",
  "mappedName": "IgcGridColumnOptionsSectionBaseComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onApply"}            ],
+           "originalName": "OnApply"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onCancel"}            ],
+           "originalName": "OnCancel"
+       }   ],
     "originalBaseTypeName": "GridColumnOptionsBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -296,10 +327,10 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "GridColumnFilterOptions",
+    "originalName": "GridColumnButtonOptions",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-grid-column-filter-options-component.ts",
- "mappedName": "IgcGridColumnFilterOptionsComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-grid-column-button-options-component.ts",
+ "mappedName": "IgcGridColumnButtonOptionsComponent"}   ],
    "members": [
         {
            "names": [
@@ -310,7 +341,17 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "cancelButtonCaption"}            ],
            "originalName": "CancelButtonCaption"
-       },
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnFilterOptions",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-grid-column-filter-options-component.ts",
+ "mappedName": "IgcGridColumnFilterOptionsComponent"}   ],
+   "members": [
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "clearColumnFiltersCaption"}            ],
@@ -335,6 +376,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textFilterCaption"}            ],
            "originalName": "TextFilterCaption"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onApply"}            ],
+           "originalName": "OnApply"
        }   ],
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -424,6 +470,51 @@
            "originalName": "SortDirection"
        }   ],
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnSummaryOptions",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-grid-column-summary-options-component.ts",
+ "mappedName": "IgcGridColumnSummaryOptionsComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "summaryCaption"}            ],
+           "originalName": "SummaryCaption"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "summaryListDensity"}            ],
+           "originalName": "SummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "actualSummaryListDensity"}            ],
+           "originalName": "ActualSummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "activeCount"}            ],
+           "originalName": "ActiveCount"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onApply"}            ],
+           "originalName": "OnApply"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onCancel"}            ],
+           "originalName": "OnCancel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "closeMenu"}            ],
+           "originalName": "CloseMenu"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 }

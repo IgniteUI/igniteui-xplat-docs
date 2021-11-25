@@ -4,7 +4,7 @@
     "originalName": "Spreadsheet",
    "names": [
         { "platform": "Blazor",     "fileName": "Spreadsheet.cs",
- "mappedName": "Spreadsheet"}   ],
+ "mappedName": "IgbSpreadsheet"}   ],
    "members": [
         {
            "names": [
@@ -179,7 +179,7 @@
     "originalName": "SpreadsheetContextMenuOpeningEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetContextMenuOpeningEventArgs.cs",
- "mappedName": "SpreadsheetContextMenuOpeningEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetContextMenuOpeningEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -194,7 +194,7 @@
     "originalName": "SpreadsheetActiveCellChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActiveCellChangedEventArgs.cs",
- "mappedName": "SpreadsheetActiveCellChangedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActiveCellChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -214,7 +214,7 @@
     "originalName": "SpreadsheetActivePaneChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActivePaneChangedEventArgs.cs",
- "mappedName": "SpreadsheetActivePaneChangedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActivePaneChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -234,7 +234,7 @@
     "originalName": "SpreadsheetActiveTableChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActiveTableChangedEventArgs.cs",
- "mappedName": "SpreadsheetActiveTableChangedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActiveTableChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -254,7 +254,7 @@
     "originalName": "SpreadsheetActiveWorksheetChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActiveWorksheetChangedEventArgs.cs",
- "mappedName": "SpreadsheetActiveWorksheetChangedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActiveWorksheetChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -274,7 +274,7 @@
     "originalName": "SpreadsheetCommandExecutedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActionExecutedEventArgs.cs",
- "mappedName": "SpreadsheetActionExecutedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActionExecutedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -294,7 +294,7 @@
     "originalName": "SpreadsheetCommandExecutingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetActionExecutingEventArgs.cs",
- "mappedName": "SpreadsheetActionExecutingEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetActionExecutingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -314,7 +314,7 @@
     "originalName": "SpreadsheetEditModeExitingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditModeExitingEventArgs.cs",
- "mappedName": "SpreadsheetEditModeExitingEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditModeExitingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -344,7 +344,7 @@
     "originalName": "SpreadsheetEditModeExitedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditModeExitedEventArgs.cs",
- "mappedName": "SpreadsheetEditModeExitedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditModeExitedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -359,7 +359,7 @@
     "originalName": "SpreadsheetEditModeEnteringEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditModeEnteringEventArgs.cs",
- "mappedName": "SpreadsheetEditModeEnteringEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditModeEnteringEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -374,7 +374,7 @@
     "originalName": "SpreadsheetEditModeEnteredEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditModeEnteredEventArgs.cs",
- "mappedName": "SpreadsheetEditModeEnteredEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditModeEnteredEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -389,7 +389,7 @@
     "originalName": "SpreadsheetEditModeValidationErrorEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditModeValidationErrorEventArgs.cs",
- "mappedName": "SpreadsheetEditModeValidationErrorEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditModeValidationErrorEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -419,7 +419,7 @@
     "originalName": "SpreadsheetEditRangePasswordNeededEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetEditRangePasswordNeededEventArgs.cs",
- "mappedName": "SpreadsheetEditRangePasswordNeededEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetEditRangePasswordNeededEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -439,7 +439,7 @@
     "originalName": "SpreadsheetHyperlinkExecutingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetHyperlinkExecutingEventArgs.cs",
- "mappedName": "SpreadsheetHyperlinkExecutingEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetHyperlinkExecutingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -459,7 +459,7 @@
     "originalName": "SpreadsheetSelectionChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetSelectionChangedEventArgs.cs",
- "mappedName": "SpreadsheetSelectionChangedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetSelectionChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -474,7 +474,7 @@
     "originalName": "SpreadsheetUserPromptDisplayingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetUserPromptDisplayingEventArgs.cs",
- "mappedName": "SpreadsheetUserPromptDisplayingEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetUserPromptDisplayingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -519,7 +519,7 @@
     "originalName": "SpreadsheetWorkbookDirtiedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SpreadsheetWorkbookDirtiedEventArgs.cs",
- "mappedName": "SpreadsheetWorkbookDirtiedEventArgs"}   ],
+ "mappedName": "IgbSpreadsheetWorkbookDirtiedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",

@@ -103,6 +103,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "domainType"}            ],
+           "originalName": "DomainType"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
            "originalName": "IncludedProperties"
        },
@@ -123,6 +128,16 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "actualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "actualOutlines"}            ],
+           "originalName": "ActualOutlines"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
            "originalName": "IsHorizontalZoomEnabled"
        },
@@ -130,6 +145,16 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
            "originalName": "IsVerticalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [
@@ -183,8 +208,38 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "IgrMarkerTypeCollection", "mappedName": "markerTypes"}            ],
            "originalName": "MarkerTypes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "markerAutomaticBehavior"}            ],
+           "originalName": "MarkerAutomaticBehavior"
        },
         {
            "names": [
@@ -200,6 +255,11 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "markerMaxCount"}            ],
            "originalName": "MarkerMaxCount"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "areaFillOpacity"}            ],
+           "originalName": "AreaFillOpacity"
        },
         {
            "names": [
@@ -228,6 +288,71 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "plotAreaMarginLeft"}            ],
+           "originalName": "PlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "plotAreaMarginTop"}            ],
+           "originalName": "PlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "plotAreaMarginRight"}            ],
+           "originalName": "PlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "plotAreaMarginBottom"}            ],
+           "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "computedPlotAreaMarginMode"}            ],
+           "originalName": "ComputedPlotAreaMarginMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SeriesHighlightingMode", "mappedName": "highlightingMode"}            ],
+           "originalName": "HighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "highlightingBehavior"}            ],
+           "originalName": "HighlightingBehavior"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendHighlightingMode", "mappedName": "legendHighlightingMode"}            ],
+           "originalName": "LegendHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldAutoExpandMarginForInitialLabels"}            ],
+           "originalName": "ShouldAutoExpandMarginForInitialLabels"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "autoExpandMarginExtraPadding"}            ],
+           "originalName": "AutoExpandMarginExtraPadding"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "autoExpandMarginMaximumValue"}            ],
+           "originalName": "AutoExpandMarginMaximumValue"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
            "originalName": "TrendLinePeriod"
        },
@@ -248,13 +373,78 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsLineVerticalStroke"}            ],
+           "originalName": "CrosshairsLineVerticalStroke"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "crosshairsLineThickness"}            ],
+           "originalName": "CrosshairsLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsLineHorizontalStroke"}            ],
+           "originalName": "CrosshairsLineHorizontalStroke"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}            ],
            "originalName": "CrosshairsAnnotationEnabled"
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsAnnotationXAxisBackground"}            ],
+           "originalName": "CrosshairsAnnotationXAxisBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsAnnotationYAxisBackground"}            ],
+           "originalName": "CrosshairsAnnotationYAxisBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsAnnotationXAxisTextColor"}            ],
+           "originalName": "CrosshairsAnnotationXAxisTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "crosshairsAnnotationYAxisTextColor"}            ],
+           "originalName": "CrosshairsAnnotationYAxisTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "crosshairsAnnotationXAxisPrecision"}            ],
+           "originalName": "CrosshairsAnnotationXAxisPrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "crosshairsAnnotationYAxisPrecision"}            ],
+           "originalName": "CrosshairsAnnotationYAxisPrecision"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldAvoidAxisAnnotationCollisions"}            ],
+           "originalName": "ShouldAvoidAxisAnnotationCollisions"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}            ],
            "originalName": "FinalValueAnnotationsVisible"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "finalValueAnnotationsBackground"}            ],
+           "originalName": "FinalValueAnnotationsBackground"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "finalValueAnnotationsTextColor"}            ],
+           "originalName": "FinalValueAnnotationsTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "finalValueAnnotationsPrecision"}            ],
+           "originalName": "FinalValueAnnotationsPrecision"
        },
         {
            "names": [
@@ -315,6 +505,11 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "hideToolTip"}            ],
            "originalName": "HideToolTip"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "replayTransitionIn"}            ],
+           "originalName": "ReplayTransitionIn"
        },
         {
            "names": [
@@ -403,6 +598,16 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "yAxisLabelTextColor"}            ],
            "originalName": "YAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualXAxisLabelTextColor"}            ],
+           "originalName": "ActualXAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualYAxisLabelTextColor"}            ],
+           "originalName": "ActualYAxisLabelTextColor"
        },
         {
            "names": [
@@ -686,8 +891,13 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "yAxisLabelLocation"}            ],
            "originalName": "YAxisLabelLocation"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "xAxisLabelLocation"}            ],
+           "originalName": "XAxisLabelLocation"
        },
         {
            "names": [
@@ -781,8 +991,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Default"}            ],
-           "originalName": "Default"
+               { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
        },
         {
            "names": [
@@ -803,6 +1013,118 @@
            "names": [
                { "platform": "React",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Both"}            ],
            "originalName": "Both"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "DomainType",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "DomainType.ts",
+ "mappedName": "DomainType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "Category"}            ],
+           "originalName": "Category"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "Financial"}            ],
+           "originalName": "Financial"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "Scatter"}            ],
+           "originalName": "Scatter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "Shape"}            ],
+           "originalName": "Shape"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "YAxisLabelLocation",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "YAxisLabelLocation.ts",
+ "mappedName": "YAxisLabelLocation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "OutsideLeft"}            ],
+           "originalName": "OutsideLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "OutsideRight"}            ],
+           "originalName": "OutsideRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "InsideLeft"}            ],
+           "originalName": "InsideLeft"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "InsideRight"}            ],
+           "originalName": "InsideRight"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "YAxisLabelLocation", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XAxisLabelLocation",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "XAxisLabelLocation.ts",
+ "mappedName": "XAxisLabelLocation"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "OutsideTop"}            ],
+           "originalName": "OutsideTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "OutsideBottom"}            ],
+           "originalName": "OutsideBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "InsideTop"}            ],
+           "originalName": "InsideTop"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "InsideBottom"}            ],
+           "originalName": "InsideBottom"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "XAxisLabelLocation", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
        },
         {
            "names": [

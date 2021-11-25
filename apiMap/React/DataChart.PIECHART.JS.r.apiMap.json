@@ -255,6 +255,116 @@
            "names": [
                { "platform": "React",  "mappedType": "any", "mappedName": "originalEvent"}            ],
            "originalName": "OriginalEvent"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SliceEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-slice-event-args.ts",
+ "mappedName": "IgrSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSelected"}            ],
+           "originalName": "IsSelected"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isExploded"}            ],
+           "originalName": "IsExploded"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isOthersSlice"}            ],
+           "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "dataContext"}            ],
+           "originalName": "DataContext"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "originalEvent"}            ],
+           "originalName": "OriginalEvent"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -300,6 +410,16 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
            "originalName": "LabelInnerColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualLabelOuterColor"}            ],
+           "originalName": "ActualLabelOuterColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "actualLabelInnerColor"}            ],
+           "originalName": "ActualLabelInnerColor"
        },
         {
            "names": [
@@ -431,8 +551,18 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "actualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "string[]", "mappedName": "outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "actualOutlines"}            ],
+           "originalName": "ActualOutlines"
        },
         {
            "names": [
@@ -488,6 +618,16 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
            "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [

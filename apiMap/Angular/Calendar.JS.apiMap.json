@@ -1,13 +1,13 @@
 {
 "extraFiles": [
-"igx-calendar-module.ts"
+"igx-x-calendar-module.ts"
 ],
 "types": [
 {
     "originalName": "Calendar",
    "names": [
-        { "platform": "Angular",     "fileName": "igx-calendar-component.ts",
- "mappedName": "IgxCalendarComponent"}   ],
+        { "platform": "Angular",     "fileName": "igx-x-calendar-component.ts",
+ "mappedName": "IgxXCalendarComponent"}   ],
    "members": [
         {
            "names": [

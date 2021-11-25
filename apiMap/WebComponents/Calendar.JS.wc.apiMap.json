@@ -1,13 +1,13 @@
 {
 "extraFiles": [
-"igc-calendar-module.ts"
+"igc-x-calendar-module.ts"
 ],
 "types": [
 {
     "originalName": "Calendar",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-calendar-component.ts",
- "mappedName": "IgcCalendarComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-calendar-component.ts",
+ "mappedName": "IgcXCalendarComponent"}   ],
    "members": [
         {
            "names": [

@@ -1101,6 +1101,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "DataSeriesMarker", "mappedName": "Smart"}            ],
+           "originalName": "Smart"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],

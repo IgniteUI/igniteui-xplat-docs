@@ -356,6 +356,16 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "_todayOverride"}            ],
+           "originalName": "_todayOverride"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "todayOverride"}            ],
+           "originalName": "TodayOverride"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "property"}            ],
            "originalName": "Property"
        },
@@ -664,6 +674,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWrapper"}            ],
+           "originalName": "IsWrapper"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "group"}            ],
            "originalName": "Group"
        },
@@ -811,6 +826,106 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "month"}            ],
            "originalName": "Month"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isToday"}            ],
+           "originalName": "IsToday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isTomorrow"}            ],
+           "originalName": "IsTomorrow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isYesterday"}            ],
+           "originalName": "IsYesterday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isThisWeek"}            ],
+           "originalName": "IsThisWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isNextWeek"}            ],
+           "originalName": "IsNextWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isLastWeek"}            ],
+           "originalName": "IsLastWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isThisMonth"}            ],
+           "originalName": "IsThisMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isNextMonth"}            ],
+           "originalName": "IsNextMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isLastMonth"}            ],
+           "originalName": "IsLastMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isThisYear"}            ],
+           "originalName": "IsThisYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isNextYear"}            ],
+           "originalName": "IsNextYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isLastYear"}            ],
+           "originalName": "IsLastYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isYearToDate"}            ],
+           "originalName": "IsYearToDate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isThisQuarter"}            ],
+           "originalName": "IsThisQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isNextQuarter"}            ],
+           "originalName": "IsNextQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isLastQuarter"}            ],
+           "originalName": "IsLastQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isQ1"}            ],
+           "originalName": "IsQ1"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isQ2"}            ],
+           "originalName": "IsQ2"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isQ3"}            ],
+           "originalName": "IsQ3"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "isQ4"}            ],
+           "originalName": "IsQ4"
        },
         {
            "names": [
@@ -1210,6 +1325,701 @@
     "originalNamespace": "Infragistics.Controls.DataSource"
 },
 {
+    "originalName": "WrapperExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "WrapperExpression.ts",
+ "mappedName": "WrapperExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "_expression"}            ],
+           "originalName": "_expression"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "_expressionDirty"}            ],
+           "originalName": "_expressionDirty"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "innerExpression"}            ],
+           "originalName": "InnerExpression"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpression", "mappedName": "expression"}            ],
+           "originalName": "Expression"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "propertyName"}            ],
+           "originalName": "PropertyName"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWrapper"}            ],
+           "originalName": "IsWrapper"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "precedence"}            ],
+           "originalName": "Precedence"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterFactory", "mappedName": "factory"}            ],
+           "originalName": "Factory"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "resolveHasBooleanReturn"}            ],
+           "originalName": "ResolveHasBooleanReturn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "evaluate"}            ],
+           "originalName": "Evaluate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "FilterExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "TodayExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "TodayExpression.ts",
+ "mappedName": "TodayExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "TomorrowExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "TomorrowExpression.ts",
+ "mappedName": "TomorrowExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "YesterdayExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "YesterdayExpression.ts",
+ "mappedName": "YesterdayExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "OffsettableWeekExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "OffsettableWeekExpression.ts",
+ "mappedName": "OffsettableWeekExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "offset"}            ],
+           "originalName": "Offset"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisWeekExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ThisWeekExpression.ts",
+ "mappedName": "ThisWeekExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       }   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextWeekExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "NextWeekExpression.ts",
+ "mappedName": "NextWeekExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       }   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastWeekExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LastWeekExpression.ts",
+ "mappedName": "LastWeekExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       }   ],
+    "originalBaseTypeName": "OffsettableWeekExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisMonthExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ThisMonthExpression.ts",
+ "mappedName": "ThisMonthExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextMonthExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "NextMonthExpression.ts",
+ "mappedName": "NextMonthExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastMonthExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LastMonthExpression.ts",
+ "mappedName": "LastMonthExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisYearExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ThisYearExpression.ts",
+ "mappedName": "ThisYearExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextYearExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "NextYearExpression.ts",
+ "mappedName": "NextYearExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastYearExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LastYearExpression.ts",
+ "mappedName": "LastYearExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "YearToDateExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "YearToDateExpression.ts",
+ "mappedName": "YearToDateExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "ThisQuarterExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ThisQuarterExpression.ts",
+ "mappedName": "ThisQuarterExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "NextQuarterExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "NextQuarterExpression.ts",
+ "mappedName": "NextQuarterExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "LastQuarterExpression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LastQuarterExpression.ts",
+ "mappedName": "LastQuarterExpression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q1Expression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "Q1Expression.ts",
+ "mappedName": "Q1Expression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q2Expression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "Q2Expression.ts",
+ "mappedName": "Q2Expression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q3Expression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "Q3Expression.ts",
+ "mappedName": "Q3Expression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "Q4Expression",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "Q4Expression.ts",
+ "mappedName": "Q4Expression"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init1"}            ],
+           "originalName": ".ctor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "getWrapperType"}            ],
+           "originalName": "GetWrapperType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "build"}            ],
+           "originalName": "Build"
+       }   ],
+    "originalBaseTypeName": "WrapperExpression",
+    "originalBaseTypeNamespace": "Infragistics.Controls.DataSource",
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
     "originalName": "FilterExpressionFunctionType",
     "isEnum": true,
    "names": [
@@ -1434,6 +2244,120 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "FilterExpressionOperatorType", "mappedName": "Grouping"}            ],
            "originalName": "Grouping"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.DataSource"
+},
+{
+    "originalName": "FilterExpressionWrapperType",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "FilterExpressionWrapperType.ts",
+ "mappedName": "FilterExpressionWrapperType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Today"}            ],
+           "originalName": "Today"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Tomorrow"}            ],
+           "originalName": "Tomorrow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Yesterday"}            ],
+           "originalName": "Yesterday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "ThisWeek"}            ],
+           "originalName": "ThisWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "NextWeek"}            ],
+           "originalName": "NextWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "LastWeek"}            ],
+           "originalName": "LastWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "ThisMonth"}            ],
+           "originalName": "ThisMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "NextMonth"}            ],
+           "originalName": "NextMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "LastMonth"}            ],
+           "originalName": "LastMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "ThisYear"}            ],
+           "originalName": "ThisYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "NextYear"}            ],
+           "originalName": "NextYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "LastYear"}            ],
+           "originalName": "LastYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "ThisQuarter"}            ],
+           "originalName": "ThisQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "NextQuarter"}            ],
+           "originalName": "NextQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "LastQuarter"}            ],
+           "originalName": "LastQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "YearToDate"}            ],
+           "originalName": "YearToDate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Q1"}            ],
+           "originalName": "Q1"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Q2"}            ],
+           "originalName": "Q2"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Q3"}            ],
+           "originalName": "Q3"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterExpressionWrapperType", "mappedName": "Q4"}            ],
+           "originalName": "Q4"
        },
         {
            "names": [

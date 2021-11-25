@@ -255,6 +255,116 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalEvent"}            ],
            "originalName": "OriginalEvent"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SliceEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-slice-event-args.ts",
+ "mappedName": "IgcSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSelected"}            ],
+           "originalName": "IsSelected"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isExploded"}            ],
+           "originalName": "IsExploded"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isOthersSlice"}            ],
+           "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "dataContext"}            ],
+           "originalName": "DataContext"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalEvent"}            ],
+           "originalName": "OriginalEvent"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -300,6 +410,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
            "originalName": "LabelInnerColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLabelOuterColor"}            ],
+           "originalName": "ActualLabelOuterColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLabelInnerColor"}            ],
+           "originalName": "ActualLabelInnerColor"
        },
         {
            "names": [
@@ -431,8 +551,18 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "actualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "actualOutlines"}            ],
+           "originalName": "ActualOutlines"
        },
         {
            "names": [
@@ -488,6 +618,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
            "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [

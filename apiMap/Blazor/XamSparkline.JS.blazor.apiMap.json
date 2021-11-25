@@ -4,7 +4,7 @@
     "originalName": "XamSparkline",
    "names": [
         { "platform": "Blazor",     "fileName": "Sparkline.cs",
- "mappedName": "Sparkline"}   ],
+ "mappedName": "IgbSparkline"}   ],
    "members": [
         {
            "names": [
@@ -228,7 +228,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "HorizontalLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "HorizontalLabelFormatSpecifiers"}            ],
            "originalName": "HorizontalLabelFormatSpecifiers"
        },
         {
@@ -238,7 +238,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "VerticalLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "VerticalLabelFormatSpecifiers"}            ],
            "originalName": "VerticalLabelFormatSpecifiers"
        },
         {

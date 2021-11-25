@@ -71,6 +71,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isTile"}            ],
+           "originalName": "IsTile"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}            ],
            "originalName": "TileImagery"
        },
@@ -317,6 +322,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPixel"}            ],
+           "originalName": "IsPixel"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -375,6 +385,71 @@
     "originalNamespace": "Infragistics.Controls.Maps"
 },
 {
+    "originalName": "GeographicMarkerSeries",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-geographic-marker-series-component.ts",
+ "mappedName": "IgxGeographicMarkerSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
+           "originalName": "MaximumMarkers"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       }   ],
+    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
     "originalName": "GeographicPolylineSeries",
    "names": [
         { "platform": "Angular",     "fileName": "igx-geographic-polyline-series-component.ts",
@@ -382,6 +457,11 @@
     "moduleName": "igx-geographic-polyline-series-module.ts",
  "mappedName": "IgxGeographicPolylineSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
+           "originalName": "IsPolyline"
+       },
         {
            "isVirtual": true,
            "names": [
@@ -420,6 +500,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -427,31 +512,6 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
            "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
        },
         {
            "names": [
@@ -500,15 +560,30 @@
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
+           "originalName": "RadiusScaleUseGlobalValues"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -519,7 +594,7 @@
  "mappedName": "IgxGeographicProportionalSymbolSeriesBaseComponent"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -533,6 +608,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "colorMemberPath"}            ],
            "originalName": "ColorMemberPath"
        },
@@ -540,6 +620,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "colorScale"}            ],
            "originalName": "ColorScale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "actualColorScale"}            ],
+           "originalName": "ActualColorScale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "updateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        }   ],
     "originalBaseTypeName": "GeographicXYTriangulatingSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -555,6 +645,31 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
            "originalName": "ShapeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}            ],
+           "originalName": "IsCustomShapeStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomShapeMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ShapeItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchPointsThreshold"}            ],
+           "originalName": "ItemSearchPointsThreshold"
        },
         {
            "names": [
@@ -588,7 +703,18 @@
  "mappedName": "IgxGeographicSymbolSeriesBaseComponent"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
+    "originalName": "GeographicMarkerSeriesBase",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-geographic-marker-series-base-component.ts",
+ "mappedName": "IgxGeographicMarkerSeriesBaseComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -653,6 +779,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
+           "originalName": "IsLineContour"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
            "originalName": "ValueMemberPath"
        },
@@ -660,6 +791,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "fillScale"}            ],
            "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "actualFillScale"}            ],
+           "originalName": "ActualFillScale"
        },
         {
            "names": [
@@ -683,6 +819,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
+           "originalName": "HasMarkers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "visibleFromScale"}            ],
            "originalName": "VisibleFromScale"
        },
@@ -693,6 +834,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -700,6 +846,71 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
        },
         {
            "names": [
@@ -723,6 +934,11 @@
     "moduleName": "igx-geographic-shape-series-module.ts",
  "mappedName": "IgxGeographicShapeSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
+           "originalName": "IsPolygon"
+       },
         {
            "isVirtual": true,
            "names": [
@@ -754,6 +970,16 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
            "originalName": "MarkerTemplate"
        },
@@ -776,6 +1002,21 @@
            "names": [
                { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
        }   ],
     "originalBaseTypeName": "GeographicShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -791,6 +1032,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -801,40 +1047,30 @@
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
                { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
+               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
        },
         {
            "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -1085,6 +1321,11 @@
     "moduleName": "igx-tile-series-module.ts",
  "mappedName": "IgxTileSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isTile"}            ],
+           "originalName": "IsTile"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "IgxGeographicMapImagery", "mappedName": "tileImagery"}            ],

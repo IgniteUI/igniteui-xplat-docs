@@ -258,8 +258,18 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialIndicator"}            ],
+           "originalName": "IsFinancialIndicator"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "displayType"}            ],
            "originalName": "DisplayType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
        },
         {
            "names": [
@@ -328,6 +338,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialOverlay"}            ],
+           "originalName": "IsFinancialOverlay"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
            "originalName": "IgnoreFirst"
        },
@@ -348,6 +363,11 @@
     "moduleName": "igc-force-index-indicator-module.ts",
  "mappedName": "IgcForceIndexIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "period"}            ],
@@ -403,7 +423,11 @@
     "moduleName": "igc-market-facilitation-index-indicator-module.ts",
  "mappedName": "IgcMarketFacilitationIndexIndicatorComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       }   ],
     "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -444,6 +468,16 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialIndicator"}            ],
+           "originalName": "IsFinancialIndicator"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "period"}            ],
            "originalName": "Period"
        }   ],
@@ -459,6 +493,11 @@
     "moduleName": "igc-moving-average-convergence-divergence-indicator-module.ts",
  "mappedName": "IgcMovingAverageConvergenceDivergenceIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
@@ -631,6 +670,11 @@
     "moduleName": "igc-relative-strength-index-indicator-module.ts",
  "mappedName": "IgcRelativeStrengthIndexIndicatorComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IndicatorDisplayType", "mappedName": "defaultDisplayType"}            ],
+           "originalName": "DefaultDisplayType"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "period"}            ],

@@ -165,8 +165,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -252,6 +252,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -267,6 +272,16 @@
     "moduleName": "igr-column-series-module.ts",
  "mappedName": "IgrColumnSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -306,6 +321,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        },
@@ -326,7 +346,16 @@
     "moduleName": "igr-spline-area-series-module.ts",
  "mappedName": "IgrSplineAreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -339,7 +368,11 @@
     "moduleName": "igr-spline-series-module.ts",
  "mappedName": "IgrSplineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -350,6 +383,11 @@
         { "platform": "React",     "fileName": "igr-spline-series-base.ts",
  "mappedName": "IgrSplineSeriesBase"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -376,6 +414,21 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -389,6 +442,21 @@
     "moduleName": "igr-step-line-series-module.ts",
  "mappedName": "IgrStepLineSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -406,6 +474,21 @@
     "moduleName": "igr-waterfall-series-module.ts",
  "mappedName": "IgrWaterfallSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isWaterfall"}            ],
+           "originalName": "IsWaterfall"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFinancialWaterfall"}            ],
+           "originalName": "IsFinancialWaterfall"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],

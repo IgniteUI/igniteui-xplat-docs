@@ -3,8 +3,8 @@
 {
     "originalName": "ITileGenerator",
    "names": [
-        { "platform": "Blazor",     "fileName": "ITileGenerator.cs",
- "mappedName": "TileGenerator"}   ],
+        { "platform": "Blazor",     "fileName": "TileGenerator.cs",
+ "mappedName": "IgbTileGenerator"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls"
@@ -13,7 +13,7 @@
     "originalName": "HeatTileGenerator",
    "names": [
         { "platform": "Blazor",     "fileName": "HeatTileGenerator.cs",
- "mappedName": "HeatTileGenerator"}   ],
+ "mappedName": "IgbHeatTileGenerator"}   ],
    "members": [
         {
            "names": [
@@ -121,7 +121,7 @@
     "originalName": "ShapefileConverter",
    "names": [
         { "platform": "Blazor",     "fileName": "ShapeDataSource.cs",
- "mappedName": "ShapeDataSource"}   ],
+ "mappedName": "IgbShapeDataSource"}   ],
    "members": [
         {
            "names": [
@@ -236,11 +236,11 @@
     "originalName": "ShapeFilterRecordEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ShapeFilterRecordEventArgs.cs",
- "mappedName": "ShapeFilterRecordEventArgs"}   ],
+ "mappedName": "IgbShapeFilterRecordEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ShapefileRecord", "mappedName": "Record"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbShapefileRecord", "mappedName": "Record"}            ],
            "originalName": "Record"
        },
         {
@@ -254,7 +254,7 @@
     "originalName": "ShapefileRecord",
    "names": [
         { "platform": "Blazor",     "fileName": "ShapefileRecord.cs",
- "mappedName": "ShapefileRecord"}   ],
+ "mappedName": "IgbShapefileRecord"}   ],
    "members": [
         {
            "names": [
@@ -284,7 +284,7 @@
     "originalName": "GetTileImageUriArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GetTileImageUriArgs.cs",
- "mappedName": "GetTileImageUriArgs"}   ],
+ "mappedName": "IgbGetTileImageUriArgs"}   ],
    "members": [
         {
            "names": [
@@ -314,7 +314,7 @@
     "originalName": "ItfConverter",
    "names": [
         { "platform": "Blazor",     "fileName": "TriangulationDataSource.cs",
- "mappedName": "TriangulationDataSource"}   ],
+ "mappedName": "IgbTriangulationDataSource"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DependencyObject",
@@ -325,7 +325,7 @@
     "originalName": "DownloadingMultiScaleImageEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DownloadingMultiScaleImageEventArgs.cs",
- "mappedName": "DownloadingMultiScaleImageEventArgs"}   ],
+ "mappedName": "IgbDownloadingMultiScaleImageEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -340,7 +340,7 @@
     "originalName": "CancellingMultiScaleImageEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CancellingMultiScaleImageEventArgs.cs",
- "mappedName": "CancellingMultiScaleImageEventArgs"}   ],
+ "mappedName": "IgbCancellingMultiScaleImageEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -355,7 +355,7 @@
     "originalName": "TriangulationStatusEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TriangulationStatusEventArgs.cs",
- "mappedName": "TriangulationStatusEventArgs"}   ],
+ "mappedName": "IgbTriangulationStatusEventArgs"}   ],
    "members": [
         {
            "names": [

@@ -154,6 +154,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "close"}            ],
            "originalName": "Close"
        },

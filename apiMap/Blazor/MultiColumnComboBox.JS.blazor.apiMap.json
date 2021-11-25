@@ -4,7 +4,7 @@
     "originalName": "GotFocusEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GotFocusEventArgs.cs",
- "mappedName": "GotFocusEventArgs"}   ],
+ "mappedName": "IgbGotFocusEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -15,7 +15,7 @@
     "originalName": "LostFocusEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "LostFocusEventArgs.cs",
- "mappedName": "LostFocusEventArgs"}   ],
+ "mappedName": "IgbLostFocusEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -26,7 +26,7 @@
     "originalName": "MultiColumnComboBoxTextChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "MultiColumnComboBoxTextChangedEventArgs.cs",
- "mappedName": "MultiColumnComboBoxTextChangedEventArgs"}   ],
+ "mappedName": "IgbMultiColumnComboBoxTextChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -46,7 +46,7 @@
     "originalName": "MultiColumnComboBoxValueChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "MultiColumnComboBoxValueChangedEventArgs.cs",
- "mappedName": "MultiColumnComboBoxValueChangedEventArgs"}   ],
+ "mappedName": "IgbMultiColumnComboBoxValueChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -66,7 +66,7 @@
     "originalName": "MultiColumnComboBox",
    "names": [
         { "platform": "Blazor",     "fileName": "MultiColumnComboBox.cs",
- "mappedName": "MultiColumnComboBox"}   ],
+ "mappedName": "IgbMultiColumnComboBox"}   ],
    "members": [
         {
            "names": [

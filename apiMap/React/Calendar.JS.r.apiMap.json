@@ -1,13 +1,13 @@
 {
 "extraFiles": [
-"igr-calendar-module.ts"
+"igr-x-calendar-module.ts"
 ],
 "types": [
 {
     "originalName": "Calendar",
    "names": [
-        { "platform": "React",     "fileName": "igr-calendar.ts",
- "mappedName": "IgrCalendar"}   ],
+        { "platform": "React",     "fileName": "igr-x-calendar.ts",
+ "mappedName": "IgrXCalendar"}   ],
    "members": [
         {
            "names": [

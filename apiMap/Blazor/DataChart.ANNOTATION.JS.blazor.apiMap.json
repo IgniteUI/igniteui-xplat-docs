@@ -4,11 +4,11 @@
     "originalName": "CategoryToolTipLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryToolTipLayer.cs",
- "mappedName": "CategoryToolTipLayer"}   ],
+ "mappedName": "IgbCategoryToolTipLayer"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Axis", "mappedName": "TargetAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbAxis", "mappedName": "TargetAxis"}            ],
            "originalName": "TargetAxis"
        },
         {
@@ -29,7 +29,7 @@
     "originalName": "ItemToolTipLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "ItemToolTipLayer.cs",
- "mappedName": "ItemToolTipLayer"}   ],
+ "mappedName": "IgbItemToolTipLayer"}   ],
    "members": [
         {
            "names": [
@@ -38,7 +38,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
         {
@@ -64,11 +64,11 @@
     "originalName": "ValueOverlay",
    "names": [
         { "platform": "Blazor",     "fileName": "ValueOverlay.cs",
- "mappedName": "ValueOverlay"}   ],
+ "mappedName": "IgbValueOverlay"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Axis", "mappedName": "Axis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbAxis", "mappedName": "Axis"}            ],
            "originalName": "Axis"
        },
         {
@@ -164,7 +164,7 @@
     "originalName": "AnnotationLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "AnnotationLayer.cs",
- "mappedName": "AnnotationLayer"}   ],
+ "mappedName": "IgbAnnotationLayer"}   ],
    "members": [
         {
            "names": [
@@ -199,7 +199,7 @@
     "originalName": "AxisAnnotation",
    "names": [
         { "platform": "Blazor",     "fileName": "AxisAnnotation.cs",
- "mappedName": "AxisAnnotation"}   ],
+ "mappedName": "IgbAxisAnnotation"}   ],
    "members": [
         {
            "names": [
@@ -218,7 +218,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
            "originalName": "LabelFormatSpecifiers"
        },
         {
@@ -279,7 +279,7 @@
     "originalName": "CalloutAnnotation",
    "names": [
         { "platform": "Blazor",     "fileName": "CalloutAnnotation.cs",
- "mappedName": "CalloutAnnotation"}   ],
+ "mappedName": "IgbCalloutAnnotation"}   ],
    "members": [
         {
            "names": [
@@ -308,7 +308,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {
@@ -364,11 +364,11 @@
     "originalName": "CategoryHighlightLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryHighlightLayer.cs",
- "mappedName": "CategoryHighlightLayer"}   ],
+ "mappedName": "IgbCategoryHighlightLayer"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "TargetAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAxisBase", "mappedName": "TargetAxis"}            ],
            "originalName": "TargetAxis"
        },
         {
@@ -389,7 +389,7 @@
     "originalName": "CalloutLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "CalloutLayer.cs",
- "mappedName": "CalloutLayer"}   ],
+ "mappedName": "IgbCalloutLayer"}   ],
    "members": [
         {
            "names": [
@@ -428,7 +428,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
         {
@@ -539,7 +539,7 @@
     "originalName": "CalloutContentUpdatingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CalloutContentUpdatingEventArgs.cs",
- "mappedName": "CalloutContentUpdatingEventArgs"}   ],
+ "mappedName": "IgbCalloutContentUpdatingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -567,7 +567,7 @@
     "originalName": "CalloutLabelUpdatingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CalloutLabelUpdatingEventArgs.cs",
- "mappedName": "CalloutLabelUpdatingEventArgs"}   ],
+ "mappedName": "IgbCalloutLabelUpdatingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -595,7 +595,7 @@
     "originalName": "CalloutSeriesSelectingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CalloutSeriesSelectingEventArgs.cs",
- "mappedName": "CalloutSeriesSelectingEventArgs"}   ],
+ "mappedName": "IgbCalloutSeriesSelectingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -614,7 +614,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {
@@ -628,7 +628,7 @@
     "originalName": "FinalValueLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "FinalValueLayer.cs",
- "mappedName": "FinalValueLayer"}   ],
+ "mappedName": "IgbFinalValueLayer"}   ],
    "members": [
         {
            "names": [
@@ -637,7 +637,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
         {
@@ -698,11 +698,11 @@
     "originalName": "CategoryItemHighlightLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryItemHighlightLayer.cs",
- "mappedName": "CategoryItemHighlightLayer"}   ],
+ "mappedName": "IgbCategoryItemHighlightLayer"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
         {
@@ -758,7 +758,7 @@
     "originalName": "CrosshairLayer",
    "names": [
         { "platform": "Blazor",     "fileName": "CrosshairLayer.cs",
- "mappedName": "CrosshairLayer"}   ],
+ "mappedName": "IgbCrosshairLayer"}   ],
    "members": [
         {
            "names": [
@@ -777,7 +777,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "TargetSeries"}            ],
            "originalName": "TargetSeries"
        },
         {

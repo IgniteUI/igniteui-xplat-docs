@@ -4,11 +4,11 @@
     "originalName": "ColumnChooser",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnChooser.cs",
- "mappedName": "ColumnChooser"}   ],
+ "mappedName": "IgbColumnChooser"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "TargetGrid"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataGrid", "mappedName": "TargetGrid"}            ],
            "originalName": "TargetGrid"
        },
         {

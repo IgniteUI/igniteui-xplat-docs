@@ -10,6 +10,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPixel"}            ],
+           "originalName": "IsPixel"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isScatter"}            ],
            "originalName": "IsScatter"
        },
@@ -154,6 +159,11 @@
            "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "getBrush"}            ],
            "originalName": "GetBrush"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifySeries"}            ],
+           "originalName": "NotifySeries"
        }   ],
     "originalBaseTypeName": "DependencyObject",
     "originalBaseTypeNamespace": "System.Windows",
@@ -167,6 +177,11 @@
     "moduleName": "igr-bubble-series-module.ts",
  "mappedName": "IgrBubbleSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "radiusMemberPath"}            ],
@@ -216,11 +231,6 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
            "originalName": "RadiusScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
        },
         {
            "names": [
@@ -502,6 +512,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -519,8 +534,8 @@
    "members": [
         {
            "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
        }   ],
     "originalBaseTypeName": "ScatterBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -534,6 +549,11 @@
     "moduleName": "igr-scatter-spline-series-module.ts",
  "mappedName": "IgrScatterSplineSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "stiffness"}            ],

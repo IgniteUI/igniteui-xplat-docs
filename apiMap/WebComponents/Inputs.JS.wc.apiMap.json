@@ -1,21 +1,21 @@
 {
 "extraFiles": [
-"igc-checkbox-module.ts",
-"igc-ripple-module.ts",
-"igc-button-module.ts",
-"igc-icon-module.ts",
-"igc-button-group-module.ts",
-"igc-input-module.ts",
-"igc-label-module.ts",
-"igc-input-group-module.ts",
-"igc-prefix-module.ts"
+"igc-x-checkbox-module.ts",
+"igc-x-ripple-module.ts",
+"igc-x-button-module.ts",
+"igc-x-icon-module.ts",
+"igc-x-button-group-module.ts",
+"igc-x-input-module.ts",
+"igc-x-label-module.ts",
+"igc-x-input-group-module.ts",
+"igc-x-prefix-module.ts"
 ],
 "types": [
 {
     "originalName": "Suffix",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-suffix-component.ts",
- "mappedName": "IgcSuffixComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-suffix-component.ts",
+ "mappedName": "IgcXSuffixComponent"}   ],
    "members": [
         {
            "names": [
@@ -93,8 +93,8 @@
 {
     "originalName": "Prefix",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-prefix-component.ts",
- "mappedName": "IgcPrefixComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-prefix-component.ts",
+ "mappedName": "IgcXPrefixComponent"}   ],
    "members": [
         {
            "names": [
@@ -172,8 +172,8 @@
 {
     "originalName": "InputGroup",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-input-group-component.ts",
- "mappedName": "IgcInputGroupComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-input-group-component.ts",
+ "mappedName": "IgcXInputGroupComponent"}   ],
    "members": [
         {
            "names": [
@@ -1087,8 +1087,8 @@
 {
     "originalName": "ButtonGroup",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-button-group-component.ts",
- "mappedName": "IgcButtonGroupComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-button-group-component.ts",
+ "mappedName": "IgcXButtonGroupComponent"}   ],
    "members": [
         {
            "names": [
@@ -1475,8 +1475,8 @@
 {
     "originalName": "Label",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-label-component.ts",
- "mappedName": "IgcLabelComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-label-component.ts",
+ "mappedName": "IgcXLabelComponent"}   ],
    "members": [
         {
            "names": [
@@ -1557,6 +1557,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "alignItems"}            ],
            "originalName": "AlignItems"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "alignSelf"}            ],
+           "originalName": "AlignSelf"
        },
         {
            "names": [
@@ -1649,8 +1654,8 @@
 {
     "originalName": "InputGroupItem",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-input-group-item-component.ts",
- "mappedName": "IgcInputGroupItemComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-input-group-item-component.ts",
+ "mappedName": "IgcXInputGroupItemComponent"}   ],
    "members": [
         {
            "names": [
@@ -1662,8 +1667,8 @@
 {
     "originalName": "Input",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-input-component.ts",
- "mappedName": "IgcInputComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-input-component.ts",
+ "mappedName": "IgcXInputComponent"}   ],
    "members": [
         {
            "names": [
@@ -1759,6 +1764,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "disabled"}            ],
            "originalName": "IsDisabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "readonly"}            ],
+           "originalName": "IsReadOnly"
        },
         {
            "names": [
@@ -1861,8 +1871,8 @@
 {
     "originalName": "Icon",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-icon-component.ts",
- "mappedName": "IgcIconComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-icon-component.ts",
+ "mappedName": "IgcXIconComponent"}   ],
    "members": [
         {
            "names": [
@@ -1971,6 +1981,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
            "originalName": "OnDetachedFromUI"
        },
@@ -1994,8 +2009,8 @@
 {
     "originalName": "Button",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-button-component.ts",
- "mappedName": "IgcButtonComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-button-component.ts",
+ "mappedName": "IgcXButtonComponent"}   ],
    "members": [
         {
            "names": [
@@ -2901,8 +2916,8 @@
 {
     "originalName": "Ripple",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-ripple-component.ts",
- "mappedName": "IgcRippleComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-ripple-component.ts",
+ "mappedName": "IgcXRippleComponent"}   ],
    "members": [
         {
            "names": [
@@ -2974,8 +2989,8 @@
 {
     "originalName": "Checkbox",
    "names": [
-        { "platform": "WebComponents",     "fileName": "igc-checkbox-component.ts",
- "mappedName": "IgcCheckboxComponent"}   ],
+        { "platform": "WebComponents",     "fileName": "igc-x-checkbox-component.ts",
+ "mappedName": "IgcXCheckboxComponent"}   ],
    "members": [
         {
            "names": [

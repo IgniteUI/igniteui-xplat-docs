@@ -46,6 +46,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualRowHeight"}            ],
+           "originalName": "ActualRowHeight"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "CheckboxListIndexType", "mappedName": "indexType"}            ],
            "originalName": "IndexType"
        },
@@ -88,6 +93,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
            "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "showFilter"}            ],
+           "originalName": "ShowFilter"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isRowHoverEnabled"}            ],
+           "originalName": "IsRowHoverEnabled"
        },
         {
            "names": [

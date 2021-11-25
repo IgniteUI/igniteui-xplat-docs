@@ -8,7 +8,7 @@
     "originalName": "HeatTileGenerator",
    "names": [
         { "platform": "Angular",     "fileName": "igx-heat-tile-generator.ts",
- "mappedName": "HeatTileGenerator"}   ],
+ "mappedName": "IgxHeatTileGenerator"}   ],
    "members": [
         {
            "names": [

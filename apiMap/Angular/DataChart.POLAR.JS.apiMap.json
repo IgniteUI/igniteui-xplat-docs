@@ -10,6 +10,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -172,6 +177,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -198,7 +208,11 @@
     "moduleName": "igx-polar-scatter-series-module.ts",
  "mappedName": "IgxPolarScatterSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       }   ],
     "originalBaseTypeName": "PolarBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -211,6 +225,16 @@
     "moduleName": "igx-polar-spline-area-series-module.ts",
  "mappedName": "IgxPolarSplineAreaSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "stiffness"}            ],
@@ -228,6 +252,11 @@
     "moduleName": "igx-polar-spline-series-module.ts",
  "mappedName": "IgxPolarSplineSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "stiffness"}            ],

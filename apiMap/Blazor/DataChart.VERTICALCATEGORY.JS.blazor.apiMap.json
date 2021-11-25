@@ -4,7 +4,7 @@
     "originalName": "CategoryYAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryYAxis.cs",
- "mappedName": "CategoryYAxis"}   ],
+ "mappedName": "IgbCategoryYAxis"}   ],
    "members": [
         {
            "names": [
@@ -49,7 +49,7 @@
     "originalName": "BarSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "BarSeries.cs",
- "mappedName": "BarSeries"}   ],
+ "mappedName": "IgbBarSeries"}   ],
    "members": [
         {
            "names": [
@@ -84,16 +84,16 @@
     "originalName": "VerticalAnchoredCategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "VerticalAnchoredCategorySeries.cs",
- "mappedName": "VerticalAnchoredCategorySeries"}   ],
+ "mappedName": "IgbVerticalAnchoredCategorySeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {

@@ -4,7 +4,7 @@
     "originalName": "DomainChart",
    "names": [
         { "platform": "Blazor",     "fileName": "DomainChart.cs",
- "mappedName": "DomainChart"}   ],
+ "mappedName": "IgbDomainChart"}   ],
    "members": [
         {
            "names": [
@@ -123,7 +123,17 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualOutlines"}            ],
+           "originalName": "ActualOutlines"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbLegendBase", "mappedName": "Legend"}            ],
            "originalName": "Legend"
        },
         {
@@ -135,6 +145,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsVerticalZoomEnabled"}            ],
            "originalName": "IsVerticalZoomEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [
@@ -183,8 +203,38 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "MarkerTypeCollection", "mappedName": "MarkerTypes"}            ],
+               { "platform": "Blazor",  "mappedType": "SeriesOutlineMode", "mappedName": "OutlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerOutlineMode", "mappedName": "MarkerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerFillMode", "mappedName": "MarkerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbMarkerTypeCollection", "mappedName": "MarkerTypes"}            ],
            "originalName": "MarkerTypes"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "MarkerAutomaticBehavior"}            ],
+           "originalName": "MarkerAutomaticBehavior"
        },
         {
            "names": [
@@ -200,6 +250,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "MarkerMaxCount"}            ],
            "originalName": "MarkerMaxCount"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AreaFillOpacity"}            ],
+           "originalName": "AreaFillOpacity"
        },
         {
            "names": [
@@ -228,6 +283,71 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginLeft"}            ],
+           "originalName": "PlotAreaMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginTop"}            ],
+           "originalName": "PlotAreaMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginRight"}            ],
+           "originalName": "PlotAreaMarginRight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PlotAreaMarginBottom"}            ],
+           "originalName": "PlotAreaMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ComputedPlotAreaMarginMode", "mappedName": "ComputedPlotAreaMarginMode"}            ],
+           "originalName": "ComputedPlotAreaMarginMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHighlightingMode", "mappedName": "HighlightingMode"}            ],
+           "originalName": "HighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesHighlightingBehavior", "mappedName": "HighlightingBehavior"}            ],
+           "originalName": "HighlightingBehavior"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendHighlightingMode", "mappedName": "LegendHighlightingMode"}            ],
+           "originalName": "LegendHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeShape", "mappedName": "LegendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeMode", "mappedName": "LegendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldAutoExpandMarginForInitialLabels"}            ],
+           "originalName": "ShouldAutoExpandMarginForInitialLabels"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoExpandMarginExtraPadding"}            ],
+           "originalName": "AutoExpandMarginExtraPadding"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AutoExpandMarginMaximumValue"}            ],
+           "originalName": "AutoExpandMarginMaximumValue"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLinePeriod"}            ],
            "originalName": "TrendLinePeriod"
        },
@@ -248,13 +368,78 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsLineVerticalStroke"}            ],
+           "originalName": "CrosshairsLineVerticalStroke"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CrosshairsLineThickness"}            ],
+           "originalName": "CrosshairsLineThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsLineHorizontalStroke"}            ],
+           "originalName": "CrosshairsLineHorizontalStroke"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CrosshairsAnnotationEnabled"}            ],
            "originalName": "CrosshairsAnnotationEnabled"
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsAnnotationXAxisBackground"}            ],
+           "originalName": "CrosshairsAnnotationXAxisBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsAnnotationYAxisBackground"}            ],
+           "originalName": "CrosshairsAnnotationYAxisBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsAnnotationXAxisTextColor"}            ],
+           "originalName": "CrosshairsAnnotationXAxisTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CrosshairsAnnotationYAxisTextColor"}            ],
+           "originalName": "CrosshairsAnnotationYAxisTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CrosshairsAnnotationXAxisPrecision"}            ],
+           "originalName": "CrosshairsAnnotationXAxisPrecision"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CrosshairsAnnotationYAxisPrecision"}            ],
+           "originalName": "CrosshairsAnnotationYAxisPrecision"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldAvoidAxisAnnotationCollisions"}            ],
+           "originalName": "ShouldAvoidAxisAnnotationCollisions"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "FinalValueAnnotationsVisible"}            ],
            "originalName": "FinalValueAnnotationsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FinalValueAnnotationsBackground"}            ],
+           "originalName": "FinalValueAnnotationsBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FinalValueAnnotationsTextColor"}            ],
+           "originalName": "FinalValueAnnotationsTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "FinalValueAnnotationsPrecision"}            ],
+           "originalName": "FinalValueAnnotationsPrecision"
        },
         {
            "names": [
@@ -323,6 +508,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ReplayTransitionIn"}            ],
+           "originalName": "ReplayTransitionIn"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
            "originalName": "NotifySetItem"
        },
@@ -347,7 +537,7 @@
     "originalName": "XYChart",
    "names": [
         { "platform": "Blazor",     "fileName": "XYChart.cs",
- "mappedName": "XYChart"}   ],
+ "mappedName": "IgbXYChart"}   ],
    "members": [
         {
            "names": [
@@ -398,6 +588,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisLabelTextColor"}            ],
            "originalName": "YAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualXAxisLabelTextColor"}            ],
+           "originalName": "ActualXAxisLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualYAxisLabelTextColor"}            ],
+           "originalName": "ActualYAxisLabelTextColor"
        },
         {
            "names": [
@@ -681,8 +881,13 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "YAxisLabelLocation"}            ],
+               { "platform": "Blazor",  "mappedType": "YAxisLabelLocation", "mappedName": "YAxisLabelLocation"}            ],
            "originalName": "YAxisLabelLocation"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "XAxisLabelLocation", "mappedName": "XAxisLabelLocation"}            ],
+           "originalName": "XAxisLabelLocation"
        },
         {
            "names": [
@@ -691,7 +896,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "XAxisLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "XAxisLabelFormatSpecifiers"}            ],
            "originalName": "XAxisLabelFormatSpecifiers"
        },
         {
@@ -701,7 +906,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "YAxisLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "YAxisLabelFormatSpecifiers"}            ],
            "originalName": "YAxisLabelFormatSpecifiers"
        },
         {
@@ -737,11 +942,11 @@
     "originalName": "ChartSeriesEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ChartSeriesEventArgs.cs",
- "mappedName": "ChartSeriesEventArgs"}   ],
+ "mappedName": "IgbChartSeriesEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "Series"}            ],
            "originalName": "Series"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -750,11 +955,11 @@
     "originalName": "DomainChartSeriesPointerEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DomainChartSeriesPointerEventArgs.cs",
- "mappedName": "DomainChartSeriesPointerEventArgs"}   ],
+ "mappedName": "IgbDomainChartSeriesPointerEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {

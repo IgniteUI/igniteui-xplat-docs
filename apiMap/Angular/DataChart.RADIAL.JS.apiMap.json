@@ -95,6 +95,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -197,6 +202,16 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -229,6 +244,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        },
@@ -249,6 +269,16 @@
     "moduleName": "igx-radial-pie-series-module.ts",
  "mappedName": "IgxRadialPieSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPie"}            ],
+           "originalName": "IsPie"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],

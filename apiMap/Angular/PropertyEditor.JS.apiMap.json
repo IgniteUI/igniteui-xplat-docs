@@ -1,0 +1,268 @@
+{
+"extraFiles": [
+"igx-property-editor-module.ts"
+],
+"types": [
+{
+    "originalName": "PropertyEditorPropertyDescription",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-property-description-component.ts",
+    "dynamicModuleName": "igx-property-editor-property-description-dynamic-module.ts",
+    "moduleName": "igx-property-editor-property-description-module.ts",
+ "mappedName": "IgxPropertyEditorPropertyDescriptionComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "propertyPath"}            ],
+           "originalName": "PropertyPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "PropertyEditorValueType", "mappedName": "valueType"}            ],
+           "originalName": "ValueType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "propertyDescriptionType"}            ],
+           "originalName": "PropertyDescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shouldOverrideDefaultEditor"}            ],
+           "originalName": "ShouldOverrideDefaultEditor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "elementDescriptionType"}            ],
+           "originalName": "ElementDescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "dropDownNames"}            ],
+           "originalName": "DropDownNames"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "dropDownValues"}            ],
+           "originalName": "DropDownValues"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "primitiveValue"}            ],
+           "originalName": "PrimitiveValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxPropertyEditorDescriptionObject", "mappedName": "complexValue"}            ],
+           "originalName": "ComplexValue"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxPropertyEditorDescriptionObjectCollection", "mappedName": "complexValues"}            ],
+           "originalName": "ComplexValues"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionButtonClickEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-property-description-button-click-event-args.ts",
+ "mappedName": "IgxPropertyEditorPropertyDescriptionButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionChangedEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-property-description-changed-event-args.ts",
+ "mappedName": "IgxPropertyEditorPropertyDescriptionChangedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-property-description-target-property-updating-event-args.ts",
+ "mappedName": "IgxPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "target"}            ],
+           "originalName": "Target"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "propertyPath"}            ],
+           "originalName": "PropertyPath"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorDescriptionObject",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-description-object.ts",
+ "mappedName": "IgxPropertyEditorDescriptionObject"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxPropertyEditorPropertyDescriptionCollection", "mappedName": "properties"}            ],
+           "originalName": "Properties"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorDataSource",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-data-source.ts",
+ "mappedName": "IgxPropertyEditorDataSource"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TypeDescriptionContext", "mappedName": "context"}            ],
+           "originalName": "Context"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditor",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-property-editor-component.ts",
+ "mappedName": "IgxPropertyEditorComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxPropertyEditorPropertyDescriptionCollection", "mappedName": "actualDataSource"}            ],
+           "originalName": "ActualProperties"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
+           "originalName": "FilterPlaceholderText"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "InputGroupDisplayType", "mappedName": "searchInputType"}            ],
+           "originalName": "SearchInputType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "rowHeight"}            ],
+           "originalName": "RowHeight"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TypeDescriptionContext", "mappedName": "actualDescriptionContext"}            ],
+           "originalName": "ActualDescriptionContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "TypeDescriptionContext", "mappedName": "descriptionContext"}            ],
+           "originalName": "DescriptionContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "ComponentRenderer", "mappedName": "componentRenderer"}            ],
+           "originalName": "ComponentRenderer"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "target"}            ],
+           "originalName": "Target"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHorizontal"}            ],
+           "originalName": "IsHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isWrappingEnabled"}            ],
+           "originalName": "IsWrappingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isIndirectModeEnabled"}            ],
+           "originalName": "IsIndirectModeEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "getDesiredSize"}            ],
+           "originalName": "GetDesiredSize"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+}
+]
+}

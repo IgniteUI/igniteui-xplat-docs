@@ -4,7 +4,7 @@
     "originalName": "CategoryAngleAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryAngleAxis.cs",
- "mappedName": "CategoryAngleAxis"}   ],
+ "mappedName": "IgbCategoryAngleAxis"}   ],
    "members": [
         {
            "names": [
@@ -49,7 +49,7 @@
     "originalName": "CategoryDateTimeXAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryDateTimeXAxis.cs",
- "mappedName": "CategoryDateTimeXAxis"}   ],
+ "mappedName": "IgbCategoryDateTimeXAxis"}   ],
    "members": [
         {
            "names": [
@@ -89,7 +89,7 @@
     "originalName": "NumericAngleAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "NumericAngleAxis.cs",
- "mappedName": "NumericAngleAxis"}   ],
+ "mappedName": "IgbNumericAngleAxis"}   ],
    "members": [
         {
            "names": [
@@ -114,7 +114,7 @@
     "originalName": "NumericRadiusAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "NumericRadiusAxis.cs",
- "mappedName": "NumericRadiusAxis"}   ],
+ "mappedName": "IgbNumericRadiusAxis"}   ],
    "members": [
         {
            "names": [
@@ -144,7 +144,7 @@
     "originalName": "OrdinalTimeXAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "OrdinalTimeXAxis.cs",
- "mappedName": "OrdinalTimeXAxis"}   ],
+ "mappedName": "IgbOrdinalTimeXAxis"}   ],
    "members": [
         {
            "names": [
@@ -158,7 +158,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}            ],
            "originalName": "LabelFormats"
        },
         {
@@ -184,7 +184,7 @@
     "originalName": "PercentChangeYAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "PercentChangeYAxis.cs",
- "mappedName": "PercentChangeYAxis"}   ],
+ "mappedName": "IgbPercentChangeYAxis"}   ],
    "members": [
    ],
     "originalBaseTypeName": "NumericYAxis",
@@ -195,7 +195,7 @@
     "originalName": "TimeAxisBase",
    "names": [
         { "platform": "Blazor",     "fileName": "TimeAxisBase.cs",
- "mappedName": "TimeAxisBase"}   ],
+ "mappedName": "IgbTimeAxisBase"}   ],
    "members": [
         {
            "names": [
@@ -250,7 +250,7 @@
     "originalName": "TimeAxisBreak",
    "names": [
         { "platform": "Blazor",     "fileName": "TimeAxisBreak.cs",
- "mappedName": "TimeAxisBreak"}   ],
+ "mappedName": "IgbTimeAxisBreak"}   ],
    "members": [
         {
            "names": [
@@ -273,7 +273,7 @@
     "originalName": "TimeAxisInterval",
    "names": [
         { "platform": "Blazor",     "fileName": "TimeAxisInterval.cs",
- "mappedName": "TimeAxisInterval"}   ],
+ "mappedName": "IgbTimeAxisInterval"}   ],
    "members": [
         {
            "names": [
@@ -296,7 +296,7 @@
     "originalName": "TimeAxisLabelFormat",
    "names": [
         { "platform": "Blazor",     "fileName": "TimeAxisLabelFormat.cs",
- "mappedName": "TimeAxisLabelFormat"}   ],
+ "mappedName": "IgbTimeAxisLabelFormat"}   ],
    "members": [
         {
            "names": [
@@ -329,11 +329,11 @@
     "originalName": "TimeXAxis",
    "names": [
         { "platform": "Blazor",     "fileName": "TimeXAxis.cs",
- "mappedName": "TimeXAxis"}   ],
+ "mappedName": "IgbTimeXAxis"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TimeAxisBreakCollection", "mappedName": "Breaks"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTimeAxisBreakCollection", "mappedName": "Breaks"}            ],
            "originalName": "Breaks"
        },
         {
@@ -343,12 +343,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTimeAxisLabelFormatCollection", "mappedName": "LabelFormats"}            ],
            "originalName": "LabelFormats"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TimeAxisIntervalCollection", "mappedName": "Intervals"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTimeAxisIntervalCollection", "mappedName": "Intervals"}            ],
            "originalName": "Intervals"
        },
         {

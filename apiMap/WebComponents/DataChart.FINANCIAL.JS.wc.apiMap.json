@@ -43,6 +43,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialSeries"}            ],
+           "originalName": "IsFinancialSeries"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
            "originalName": "TrendLineType"
        },

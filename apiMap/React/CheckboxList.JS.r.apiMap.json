@@ -46,6 +46,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "actualRowHeight"}            ],
+           "originalName": "ActualRowHeight"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "CheckboxListIndexType", "mappedName": "indexType"}            ],
            "originalName": "IndexType"
        },
@@ -88,6 +93,16 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
            "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "showFilter"}            ],
+           "originalName": "ShowFilter"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRowHoverEnabled"}            ],
+           "originalName": "IsRowHoverEnabled"
        },
         {
            "names": [

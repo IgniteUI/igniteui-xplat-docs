@@ -28,6 +28,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "DomainType", "mappedName": "domainType"}            ],
+           "originalName": "DomainType"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}            ],
            "originalName": "YAxisIsLogarithmic"
        },
@@ -123,11 +128,6 @@
        },
         {
            "names": [
-               { "platform": "React",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
-           "originalName": "YAxisLabelLocation"
-       },
-        {
-           "names": [
                { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "zoomSliderType"}            ],
            "originalName": "ZoomSliderType"
        },
@@ -180,6 +180,11 @@
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "overlayThickness"}            ],
            "originalName": "OverlayThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "overlayMultiplier"}            ],
+           "originalName": "OverlayMultiplier"
        },
         {
            "names": [

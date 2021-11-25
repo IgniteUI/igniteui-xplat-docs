@@ -4,7 +4,7 @@
     "originalName": "ColumnFilterCondition",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnFilterCondition.cs",
- "mappedName": "ColumnFilterCondition"}   ],
+ "mappedName": "IgbColumnFilterCondition"}   ],
    "members": [
         {
            "names": [
@@ -22,7 +22,7 @@
     "originalName": "ColumnComparisonFilterCondition",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnComparisonFilterCondition.cs",
- "mappedName": "ColumnComparisonFilterCondition"}   ],
+ "mappedName": "IgbColumnComparisonFilterCondition"}   ],
    "members": [
         {
            "names": [
@@ -49,10 +49,40 @@
     "originalNamespace": "Infragistics.Controls"
 },
 {
+    "originalName": "ColumnCustomFilterCondition",
+   "names": [
+        { "platform": "Blazor",     "fileName": "ColumnCustomFilterCondition.cs",
+ "mappedName": "IgbColumnCustomFilterCondition"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Id"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveFilter"}            ],
+           "originalName": "ResolveFilter"
+       }   ],
+    "originalBaseTypeName": "ColumnFilterCondition",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
     "originalName": "ColumnFilterConditionGroup",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnFilterConditionGroup.cs",
- "mappedName": "ColumnFilterConditionGroup"}   ],
+ "mappedName": "IgbColumnFilterConditionGroup"}   ],
    "members": [
         {
            "names": [
@@ -61,7 +91,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnFilterCondition", "mappedName": "Item"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnFilterCondition", "mappedName": "Item"}            ],
            "originalName": "this[]"
        },
         {
@@ -107,7 +137,7 @@
     "originalName": "PrimaryKeyValue",
    "names": [
         { "platform": "Blazor",     "fileName": "PrimaryKeyValue.cs",
- "mappedName": "PrimaryKeyValue"}   ],
+ "mappedName": "IgbPrimaryKeyValue"}   ],
    "members": [
         {
            "names": [
@@ -171,6 +201,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "PointerUpCell"}            ],
            "originalName": "PointerUpCell"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "PreviewMouseDownCell"}            ],
+           "originalName": "PreviewMouseDownCell"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "PreviewMouseUpCell"}            ],
+           "originalName": "PreviewMouseUpCell"
        },
         {
            "names": [
@@ -246,6 +286,36 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "CancelEditMode"}            ],
            "originalName": "CancelEditMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "DisableKeyInput"}            ],
+           "originalName": "DisableKeyInput"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "EnableKeyInput"}            ],
+           "originalName": "EnableKeyInput"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "PassCellClone"}            ],
+           "originalName": "PassCellClone"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ApplyFilter"}            ],
+           "originalName": "ApplyFilter"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ApplyCustomFilter"}            ],
+           "originalName": "ApplyCustomFilter"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ClearFilter"}            ],
+           "originalName": "ClearFilter"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid"
 },
@@ -321,7 +391,7 @@
     "originalName": "GridAnimationPhaseSettings",
    "names": [
         { "platform": "Blazor",     "fileName": "GridAnimationPhaseSettings.cs",
- "mappedName": "GridAnimationPhaseSettings"}   ],
+ "mappedName": "IgbGridAnimationPhaseSettings"}   ],
    "members": [
         {
            "names": [
@@ -364,7 +434,7 @@
     "originalName": "GridAnimationSettings",
    "names": [
         { "platform": "Blazor",     "fileName": "GridAnimationSettings.cs",
- "mappedName": "GridAnimationSettings"}   ],
+ "mappedName": "IgbGridAnimationSettings"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -373,7 +443,7 @@
     "originalName": "GridColumnAnimationSettings",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnAnimationSettings.cs",
- "mappedName": "GridColumnAnimationSettings"}   ],
+ "mappedName": "IgbGridColumnAnimationSettings"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -382,7 +452,7 @@
     "originalName": "CellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "CellInfo.cs",
- "mappedName": "CellInfo"}   ],
+ "mappedName": "IgbCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -441,6 +511,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHitTestVisible"}            ],
+           "originalName": "IsHitTestVisible"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsRowPinned"}            ],
            "originalName": "IsRowPinned"
        },
@@ -453,6 +528,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLastStickyRow"}            ],
            "originalName": "IsLastStickyRow"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsFilterRow"}            ],
+           "originalName": "IsFilterRow"
        },
         {
            "names": [
@@ -541,6 +621,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHoverable"}            ],
+           "originalName": "IsHoverable"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "CellContentHorizontalAlignment", "mappedName": "HorizontalAlignment"}            ],
            "originalName": "HorizontalAlignment"
        },
@@ -613,6 +698,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "LastStickyRowBackground"}            ],
            "originalName": "LastStickyRowBackground"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FilterRowBackground"}            ],
+           "originalName": "FilterRowBackground"
        },
         {
            "names": [
@@ -860,7 +950,7 @@
     "originalName": "DateTimeCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "DateTimeCellInfo.cs",
- "mappedName": "DateTimeCellInfo"}   ],
+ "mappedName": "IgbDateTimeCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -874,7 +964,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
            "originalName": "FormatSpecifiers"
        },
         {
@@ -900,7 +990,7 @@
     "originalName": "EditorCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "EditorCellInfo.cs",
- "mappedName": "EditorCellInfo"}   ],
+ "mappedName": "IgbEditorCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -909,7 +999,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "EditTarget"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCellInfo", "mappedName": "EditTarget"}            ],
            "originalName": "EditTarget"
        },
         {
@@ -949,6 +1039,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DateFormatString"}            ],
+           "originalName": "DateFormatString"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "TargetRow"}            ],
            "originalName": "TargetRow"
        },
@@ -962,16 +1057,82 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "EditorRowCellModel",
+    "originalName": "FilterCellModel",
    "names": [
-        { "platform": "Blazor",     "fileName": "EditorRowCellInfo.cs",
- "mappedName": "EditorRowCellInfo"}   ],
+        { "platform": "Blazor",     "fileName": "FilterCellInfo.cs",
+ "mappedName": "IgbFilterCellInfo"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "EditTarget"}            ],
-           "originalName": "EditTarget"
+               { "platform": "Blazor",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "DataType"}            ],
+           "originalName": "DataType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColumnFilterCondition", "mappedName": "Filter"}            ],
+           "originalName": "Filter"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "FilterExpression"}            ],
+           "originalName": "FilterExpression"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbGridFilterOperandsCollection", "mappedName": "FilterOperands"}            ],
+           "originalName": "FilterOperands"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "OperatorType"}            ],
+           "originalName": "OperatorType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "FilterValue"}            ],
+           "originalName": "FilterValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SelectorTop"}            ],
+           "originalName": "SelectorTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SelectorLeft"}            ],
+           "originalName": "SelectorLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditorTop"}            ],
+           "originalName": "EditorTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EditorLeft"}            ],
+           "originalName": "EditorLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ClearIconTop"}            ],
+           "originalName": "ClearIconTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ClearIconLeft"}            ],
+           "originalName": "ClearIconLeft"
        }   ],
+    "originalBaseTypeName": "CellModel",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorRowCellModel",
+   "names": [
+        { "platform": "Blazor",     "fileName": "EditorRowCellInfo.cs",
+ "mappedName": "IgbEditorRowCellInfo"}   ],
+   "members": [
+   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -980,7 +1141,7 @@
     "originalName": "SummaryCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "SummaryCellInfo.cs",
- "mappedName": "SummaryCellInfo"}   ],
+ "mappedName": "IgbSummaryCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1005,13 +1166,9 @@
     "originalName": "VerticalSeparatorCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "VerticalSeparatorCellInfo.cs",
- "mappedName": "VerticalSeparatorCellInfo"}   ],
+ "mappedName": "IgbVerticalSeparatorCellInfo"}   ],
    "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHitTestVisible"}            ],
-           "originalName": "IsHitTestVisible"
-       }   ],
+   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -1020,7 +1177,7 @@
     "originalName": "ImageCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "ImageCellInfo.cs",
- "mappedName": "ImageCellInfo"}   ],
+ "mappedName": "IgbImageCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1045,7 +1202,7 @@
     "originalName": "NumericCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "NumericCellInfo.cs",
- "mappedName": "NumericCellInfo"}   ],
+ "mappedName": "IgbNumericCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1064,7 +1221,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
            "originalName": "FormatSpecifiers"
        },
         {
@@ -1120,7 +1277,7 @@
     "originalName": "RowSeparatorModel",
    "names": [
         { "platform": "Blazor",     "fileName": "RowSeparatorInfo.cs",
- "mappedName": "RowSeparatorInfo"}   ],
+ "mappedName": "IgbRowSeparatorInfo"}   ],
    "members": [
    ],
     "originalBaseTypeName": "CellModel",
@@ -1131,7 +1288,7 @@
     "originalName": "SectionHeaderCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "SectionHeaderCellInfo.cs",
- "mappedName": "SectionHeaderCellInfo"}   ],
+ "mappedName": "IgbSectionHeaderCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1156,7 +1313,7 @@
     "originalName": "GroupData",
    "names": [
         { "platform": "Blazor",     "fileName": "GroupData.cs",
- "mappedName": "GroupData"}   ],
+ "mappedName": "IgbGroupData"}   ],
    "members": [
         {
            "names": [
@@ -1179,7 +1336,7 @@
     "originalName": "SummaryData",
    "names": [
         { "platform": "Blazor",     "fileName": "SummaryData.cs",
- "mappedName": "SummaryData"}   ],
+ "mappedName": "IgbSummaryData"}   ],
    "members": [
         {
            "names": [
@@ -1212,7 +1369,7 @@
     "originalName": "TemplateHeaderCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateHeaderCellInfo.cs",
- "mappedName": "TemplateHeaderCellInfo"}   ],
+ "mappedName": "IgbTemplateHeaderCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1227,7 +1384,7 @@
     "originalName": "TemplateCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateCellInfo.cs",
- "mappedName": "TemplateCellInfo"}   ],
+ "mappedName": "IgbTemplateCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1242,7 +1399,7 @@
     "originalName": "TemplateSectionHeaderCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateSectionHeaderCellInfo.cs",
- "mappedName": "TemplateSectionHeaderCellInfo"}   ],
+ "mappedName": "IgbTemplateSectionHeaderCellInfo"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SectionHeaderCellModel",
@@ -1253,7 +1410,7 @@
     "originalName": "TextCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "TextCellInfo.cs",
- "mappedName": "TextCellInfo"}   ],
+ "mappedName": "IgbTextCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1268,7 +1425,7 @@
     "originalName": "TextHeaderCellModel",
    "names": [
         { "platform": "Blazor",     "fileName": "TextHeaderCellInfo.cs",
- "mappedName": "TextHeaderCellInfo"}   ],
+ "mappedName": "IgbTextHeaderCellInfo"}   ],
    "members": [
         {
            "names": [
@@ -1300,10 +1457,125 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "ComparisonOperatorSelector",
+   "names": [
+        { "platform": "Blazor",     "fileName": "DataGridComparisonOperatorSelector.cs",
+ "mappedName": "IgbDataGridComparisonOperatorSelector"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CustomFilterID"}            ],
+           "originalName": "CustomFilterID"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CustomFilterIndex"}            ],
+           "originalName": "CustomFilterIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "DataType"}            ],
+           "originalName": "DataType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaxHeight"}            ],
+           "originalName": "MaxHeight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Dispose"}            ],
+           "originalName": "Dispose"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetDropdownHeight"}            ],
+           "originalName": "GetDropdownHeight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Toggle"}            ],
+           "originalName": "Toggle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Close"}            ],
+           "originalName": "Close"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "AddCustomOperator"}            ],
+           "originalName": "AddCustomOperator"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ClearCustomOperators"}            ],
+           "originalName": "ClearCustomOperators"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SelectCustomFilter"}            ],
+           "originalName": "SelectCustomFilter"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorValueChangedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "OperatorSelectorValueChangedEventArgs.cs",
+ "mappedName": "IgbOperatorSelectorValueChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "OldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NewValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorOpeningEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "OperatorSelectorOpeningEventArgs.cs",
+ "mappedName": "IgbOperatorSelectorOpeningEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorClosingEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "OperatorSelectorClosingEventArgs.cs",
+ "mappedName": "IgbOperatorSelectorClosingEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "GridFilterDialog",
    "names": [
         { "platform": "Blazor",     "fileName": "DataGridFilterDialog.cs",
- "mappedName": "DataGridFilterDialog"}   ],
+ "mappedName": "IgbDataGridFilterDialog"}   ],
    "members": [
         {
            "names": [
@@ -1356,7 +1628,7 @@
     "originalName": "FilterDialogRenderCompletedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FilterDialogRenderCompletedEventArgs.cs",
- "mappedName": "FilterDialogRenderCompletedEventArgs"}   ],
+ "mappedName": "IgbFilterDialogRenderCompletedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -1367,7 +1639,7 @@
     "originalName": "GridFilterDialogViewModel",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterDialogViewModel.cs",
- "mappedName": "GridFilterDialogViewModel"}   ],
+ "mappedName": "IgbGridFilterDialogViewModel"}   ],
    "members": [
         {
            "names": [
@@ -1386,7 +1658,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridFilterDialogViewModelRowCollection", "mappedName": "Rows"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridFilterDialogViewModelRowCollection", "mappedName": "Rows"}            ],
            "originalName": "Rows"
        },
         {
@@ -1425,7 +1697,7 @@
     "originalName": "GridFilterDialogViewModelGrouping",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterDialogViewModelGrouping.cs",
- "mappedName": "GridFilterDialogViewModelGrouping"}   ],
+ "mappedName": "IgbGridFilterDialogViewModelGrouping"}   ],
    "members": [
         {
            "names": [
@@ -1448,7 +1720,7 @@
     "originalName": "GridFilterDialogViewModelRow",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterDialogViewModelRow.cs",
- "mappedName": "GridFilterDialogViewModelRow"}   ],
+ "mappedName": "IgbGridFilterDialogViewModelRow"}   ],
    "members": [
         {
            "names": [
@@ -1481,11 +1753,11 @@
     "originalName": "GridFilterDialogOpeningEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterDialogOpeningEventArgs.cs",
- "mappedName": "GridFilterDialogOpeningEventArgs"}   ],
+ "mappedName": "IgbGridFilterDialogOpeningEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -1494,11 +1766,11 @@
     "originalName": "GridFilterDialogFilterChangeEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterDialogFilterChangeEventArgs.cs",
- "mappedName": "GridFilterDialogFilterChangeEventArgs"}   ],
+ "mappedName": "IgbGridFilterDialogFilterChangeEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnFilterCondition", "mappedName": "Filter"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnFilterCondition", "mappedName": "Filter"}            ],
            "originalName": "Filter"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -1507,7 +1779,7 @@
     "originalName": "GridExpansionIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "DataGridExpansionIndicator.cs",
- "mappedName": "DataGridExpansionIndicator"}   ],
+ "mappedName": "IgbDataGridExpansionIndicator"}   ],
    "members": [
         {
            "names": [
@@ -1545,7 +1817,7 @@
     "originalName": "GridSortIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "DataGridSortIndicator.cs",
- "mappedName": "DataGridSortIndicator"}   ],
+ "mappedName": "IgbDataGridSortIndicator"}   ],
    "members": [
         {
            "names": [
@@ -1598,7 +1870,7 @@
     "originalName": "SortIndicatorRenderCompletedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SortIndicatorRenderCompletedEventArgs.cs",
- "mappedName": "SortIndicatorRenderCompletedEventArgs"}   ],
+ "mappedName": "IgbSortIndicatorRenderCompletedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -1609,7 +1881,7 @@
     "originalName": "Grid",
    "names": [
         { "platform": "Blazor",     "fileName": "DataGrid.cs",
- "mappedName": "DataGrid"}   ],
+ "mappedName": "IgbDataGrid"}   ],
    "members": [
         {
            "names": [
@@ -1667,47 +1939,47 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SectionHeader", "mappedName": "SectionHeader"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSectionHeader", "mappedName": "SectionHeader"}            ],
            "originalName": "SectionHeader"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryRowRoot", "mappedName": "SummaryRowRoot"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryRowRoot", "mappedName": "SummaryRowRoot"}            ],
            "originalName": "SummaryRowRoot"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SummaryRowSection", "mappedName": "SummaryRowSection"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSummaryRowSection", "mappedName": "SummaryRowSection"}            ],
            "originalName": "SummaryRowSection"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "RowSeparator", "mappedName": "RowSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbRowSeparator", "mappedName": "RowSeparator"}            ],
            "originalName": "RowSeparator"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "HeaderRowSeparator", "mappedName": "HeaderRowSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbHeaderRowSeparator", "mappedName": "HeaderRowSeparator"}            ],
            "originalName": "HeaderRowSeparator"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "HeaderSeparator", "mappedName": "HeaderSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbHeaderSeparator", "mappedName": "HeaderSeparator"}            ],
            "originalName": "HeaderSeparator"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnResizingSeparator", "mappedName": "ColumnResizingSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnResizingSeparator", "mappedName": "ColumnResizingSeparator"}            ],
            "originalName": "ColumnResizingSeparator"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnMovingSeparator", "mappedName": "ColumnMovingSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnMovingSeparator", "mappedName": "ColumnMovingSeparator"}            ],
            "originalName": "ColumnMovingSeparator"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "PinnedAreaSeparator", "mappedName": "PinnedAreaSeparator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbPinnedAreaSeparator", "mappedName": "PinnedAreaSeparator"}            ],
            "originalName": "PinnedAreaSeparator"
        },
         {
@@ -1822,7 +2094,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridAnimationSettings", "mappedName": "AnimationSettings"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridAnimationSettings", "mappedName": "AnimationSettings"}            ],
            "originalName": "AnimationSettings"
        },
         {
@@ -1867,32 +2139,32 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedItemsCollection", "mappedName": "SelectedItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedItemsCollection", "mappedName": "SelectedItems"}            ],
            "originalName": "SelectedItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "SelectedKeys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "SelectedKeys"}            ],
            "originalName": "SelectedKeys"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellsCollection", "mappedName": "SelectedCells"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellsCollection", "mappedName": "SelectedCells"}            ],
            "originalName": "SelectedCells"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellRangesCollection", "mappedName": "SelectedCellRanges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellRangesCollection", "mappedName": "SelectedCellRanges"}            ],
            "originalName": "SelectedCellRanges"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedItemsCollection", "mappedName": "PinnedItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedItemsCollection", "mappedName": "PinnedItems"}            ],
            "originalName": "PinnedItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "PinnedKeys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "PinnedKeys"}            ],
            "originalName": "PinnedKeys"
        },
         {
@@ -1962,7 +2234,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridCellPosition", "mappedName": "ActiveCell"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridCellPosition", "mappedName": "ActiveCell"}            ],
            "originalName": "ActiveCell"
        },
         {
@@ -2082,8 +2354,18 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ColumnResizingSeparatorOpacity"}            ],
+           "originalName": "ColumnResizingSeparatorOpacity"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "ColumnMovingSeparatorWidth"}            ],
            "originalName": "ColumnMovingSeparatorWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ColumnMovingSeparatorOpacity"}            ],
+           "originalName": "ColumnMovingSeparatorOpacity"
        },
         {
            "names": [
@@ -2180,32 +2462,32 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ResponsiveStatesCollection", "mappedName": "ResponsiveStates"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbResponsiveStatesCollection", "mappedName": "ResponsiveStates"}            ],
            "originalName": "ResponsiveStates"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSortDescriptionCollection", "mappedName": "SortDescriptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSortDescriptionCollection", "mappedName": "SortDescriptions"}            ],
            "originalName": "SortDescriptions"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnGroupDescriptionCollection", "mappedName": "GroupDescriptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnGroupDescriptionCollection", "mappedName": "GroupDescriptions"}            ],
            "originalName": "GroupDescriptions"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
            "originalName": "FilterExpressions"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSummaryDescriptionCollection", "mappedName": "SummaryDescriptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSummaryDescriptionCollection", "mappedName": "SummaryDescriptions"}            ],
            "originalName": "SummaryDescriptions"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSummaryScope", "mappedName": "SummaryScope"}            ],
+               { "platform": "Blazor",  "mappedType": "SummaryScope", "mappedName": "SummaryScope"}            ],
            "originalName": "SummaryScope"
        },
         {
@@ -2215,7 +2497,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSectionHeaderDisplayMode", "mappedName": "GroupHeaderDisplayMode"}            ],
+               { "platform": "Blazor",  "mappedType": "GroupHeaderDisplayMode", "mappedName": "GroupHeaderDisplayMode"}            ],
            "originalName": "GroupHeaderDisplayMode"
        },
         {
@@ -2245,12 +2527,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridColumnCollection", "mappedName": "ActualColumns"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridColumnCollection", "mappedName": "ActualColumns"}            ],
            "originalName": "ActualColumns"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridColumnCollection", "mappedName": "Columns"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridColumnCollection", "mappedName": "Columns"}            ],
            "originalName": "Columns"
        },
         {
@@ -2277,6 +2559,46 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "EnterBehaviorAfterEdit"}            ],
            "originalName": "EnterBehaviorAfterEdit"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsColumnOptionsSummariesEnabled"}            ],
+           "originalName": "IsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MergedCellMode", "mappedName": "MergedCellMode"}            ],
+           "originalName": "MergedCellMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "MergedCellEvaluationCriteria"}            ],
+           "originalName": "MergedCellEvaluationCriteria"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FilterUIType", "mappedName": "FilterUIType"}            ],
+           "originalName": "FilterUIType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FilterLogicalOperator", "mappedName": "FilterLogicalOperator"}            ],
+           "originalName": "FilterLogicalOperator"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FilterComparisonType", "mappedName": "FilterComparisonType"}            ],
+           "originalName": "FilterComparisonType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "DateTime", "mappedName": "TodayOverride"}            ],
+           "originalName": "TodayOverride"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ClearSelectionOnEscape"}            ],
+           "originalName": "ClearSelectionOnEscape"
        },
         {
            "names": [
@@ -2487,6 +2809,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "DeselectAllRows"}            ],
            "originalName": "DeselectAllRows"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SaveLayout"}            ],
+           "originalName": "SaveLayout"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "LoadLayout"}            ],
+           "originalName": "LoadLayout"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -2494,7 +2826,7 @@
     "originalName": "GridCellPosition",
    "names": [
         { "platform": "Blazor",     "fileName": "GridCellPosition.cs",
- "mappedName": "GridCellPosition"}   ],
+ "mappedName": "IgbGridCellPosition"}   ],
    "members": [
         {
            "names": [
@@ -2512,11 +2844,11 @@
     "originalName": "GridFilterExpressionsEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridFilterExpressionsEventArgs.cs",
- "mappedName": "GridFilterExpressionsEventArgs"}   ],
+ "mappedName": "IgbGridFilterExpressionsEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpressionCollection", "mappedName": "FilterExpressions"}            ],
            "originalName": "FilterExpressions"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2525,11 +2857,11 @@
     "originalName": "GridColumnsAutoGeneratedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnsAutoGeneratedEventArgs.cs",
- "mappedName": "GridColumnsAutoGeneratedEventArgs"}   ],
+ "mappedName": "IgbGridColumnsAutoGeneratedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridColumnCollection", "mappedName": "Columns"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridColumnCollection", "mappedName": "Columns"}            ],
            "originalName": "Columns"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2540,11 +2872,11 @@
     "originalName": "GridColumnsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnsChangedEventArgs.cs",
- "mappedName": "GridColumnsChangedEventArgs"}   ],
+ "mappedName": "IgbGridColumnsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridColumnCollection", "mappedName": "Columns"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridColumnCollection", "mappedName": "Columns"}            ],
            "originalName": "Columns"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2555,21 +2887,21 @@
     "originalName": "GridSelectedItemsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSelectedItemsChangedEventArgs.cs",
- "mappedName": "GridSelectedItemsChangedEventArgs"}   ],
+ "mappedName": "IgbGridSelectedItemsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedItemsCollection", "mappedName": "CurrentItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedItemsCollection", "mappedName": "CurrentItems"}            ],
            "originalName": "CurrentItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedItemsCollection", "mappedName": "AddedItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedItemsCollection", "mappedName": "AddedItems"}            ],
            "originalName": "AddedItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedItemsCollection", "mappedName": "RemovedItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedItemsCollection", "mappedName": "RemovedItems"}            ],
            "originalName": "RemovedItems"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2580,21 +2912,21 @@
     "originalName": "GridSelectedKeysChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSelectedKeysChangedEventArgs.cs",
- "mappedName": "GridSelectedKeysChangedEventArgs"}   ],
+ "mappedName": "IgbGridSelectedKeysChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "CurrentKeys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "CurrentKeys"}            ],
            "originalName": "CurrentKeys"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "AddedKeys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "AddedKeys"}            ],
            "originalName": "AddedKeys"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedKeysCollection", "mappedName": "RemovedKeys"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedKeysCollection", "mappedName": "RemovedKeys"}            ],
            "originalName": "RemovedKeys"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2605,21 +2937,21 @@
     "originalName": "GridSelectedCellsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSelectedCellsChangedEventArgs.cs",
- "mappedName": "GridSelectedCellsChangedEventArgs"}   ],
+ "mappedName": "IgbGridSelectedCellsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellsCollection", "mappedName": "CurrentCells"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellsCollection", "mappedName": "CurrentCells"}            ],
            "originalName": "CurrentCells"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellsCollection", "mappedName": "AddedCells"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellsCollection", "mappedName": "AddedCells"}            ],
            "originalName": "AddedCells"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellsCollection", "mappedName": "RemovedCells"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellsCollection", "mappedName": "RemovedCells"}            ],
            "originalName": "RemovedCells"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2630,16 +2962,16 @@
     "originalName": "GridActiveCellChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridActiveCellChangedEventArgs.cs",
- "mappedName": "GridActiveCellChangedEventArgs"}   ],
+ "mappedName": "IgbGridActiveCellChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridCellPosition", "mappedName": "NewActiveCell"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridCellPosition", "mappedName": "NewActiveCell"}            ],
            "originalName": "NewActiveCell"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridCellPosition", "mappedName": "OldActiveCell"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridCellPosition", "mappedName": "OldActiveCell"}            ],
            "originalName": "OldActiveCell"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2650,26 +2982,26 @@
     "originalName": "GridSelectedCellRangesChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSelectedCellRangesChangedEventArgs.cs",
- "mappedName": "GridSelectedCellRangesChangedEventArgs"}   ],
+ "mappedName": "IgbGridSelectedCellRangesChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellRangesCollection", "mappedName": "CurrentRanges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellRangesCollection", "mappedName": "CurrentRanges"}            ],
            "originalName": "CurrentRanges"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellRangesCollection", "mappedName": "AddedRanges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellRangesCollection", "mappedName": "AddedRanges"}            ],
            "originalName": "AddedRanges"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellRangesCollection", "mappedName": "RemovedRanges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellRangesCollection", "mappedName": "RemovedRanges"}            ],
            "originalName": "RemovedRanges"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridSelectedCellRangesCollection", "mappedName": "UpdatedRanges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridSelectedCellRangesCollection", "mappedName": "UpdatedRanges"}            ],
            "originalName": "UpdatedRanges"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2680,16 +3012,16 @@
     "originalName": "GridCellEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridCellEventArgs.cs",
- "mappedName": "GridCellEventArgs"}   ],
+ "mappedName": "IgbGridCellEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "CellInfo"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCellInfo", "mappedName": "CellInfo"}            ],
            "originalName": "CellInfo"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "Grid"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataGrid", "mappedName": "Grid"}            ],
            "originalName": "Grid"
        },
         {
@@ -2710,11 +3042,11 @@
     "originalName": "GridSortDescriptionsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSortDescriptionsChangedEventArgs.cs",
- "mappedName": "GridSortDescriptionsChangedEventArgs"}   ],
+ "mappedName": "IgbGridSortDescriptionsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSortDescriptionCollection", "mappedName": "SortDescriptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSortDescriptionCollection", "mappedName": "SortDescriptions"}            ],
            "originalName": "SortDescriptions"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -2725,12 +3057,27 @@
     "originalName": "GridGroupDescriptionsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridGroupDescriptionsChangedEventArgs.cs",
- "mappedName": "GridGroupDescriptionsChangedEventArgs"}   ],
+ "mappedName": "IgbGridGroupDescriptionsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnGroupDescriptionCollection", "mappedName": "GroupDescriptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnGroupDescriptionCollection", "mappedName": "GroupDescriptions"}            ],
            "originalName": "GroupDescriptions"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridSummaryDescriptionsChangedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridSummaryDescriptionsChangedEventArgs.cs",
+ "mappedName": "IgbGridSummaryDescriptionsChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColumnSummaryDescriptionCollection", "mappedName": "SummaryDescriptions"}            ],
+           "originalName": "SummaryDescriptions"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -2740,11 +3087,11 @@
     "originalName": "ColumnHiddenChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnHiddenChangedEventArgs.cs",
- "mappedName": "ColumnHiddenChangedEventArgs"}   ],
+ "mappedName": "IgbColumnHiddenChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -2758,11 +3105,11 @@
     "originalName": "ColumnPinnedChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnPinnedChangedEventArgs.cs",
- "mappedName": "ColumnPinnedChangedEventArgs"}   ],
+ "mappedName": "IgbColumnPinnedChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -2776,7 +3123,7 @@
     "originalName": "GridCellValueChangingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridCellValueChangingEventArgs.cs",
- "mappedName": "GridCellValueChangingEventArgs"}   ],
+ "mappedName": "IgbGridCellValueChangingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -2785,12 +3132,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CellInfo", "mappedName": "CellInfo"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCellInfo", "mappedName": "CellInfo"}            ],
            "originalName": "CellInfo"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -2814,11 +3161,11 @@
     "originalName": "GridDataCommittingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridDataCommittingEventArgs.cs",
- "mappedName": "GridDataCommittingEventArgs"}   ],
+ "mappedName": "IgbGridDataCommittingEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceAggregatedResult[]", "mappedName": "Changes"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceAggregatedResult[]", "mappedName": "Changes"}            ],
            "originalName": "Changes"
        },
         {
@@ -2832,7 +3179,7 @@
     "originalName": "GridDataCommittedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridDataCommittedEventArgs.cs",
- "mappedName": "GridDataCommittedEventArgs"}   ],
+ "mappedName": "IgbGridDataCommittedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -2841,7 +3188,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceAggregatedResult[]", "mappedName": "Changes"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceAggregatedResult[]", "mappedName": "Changes"}            ],
            "originalName": "Changes"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2850,7 +3197,7 @@
     "originalName": "GridSizeChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridSizeChangedEventArgs.cs",
- "mappedName": "GridSizeChangedEventArgs"}   ],
+ "mappedName": "IgbGridSizeChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -2865,24 +3212,63 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "GridColumnWidthChangedEventArgs",
+    "originalName": "GridSelectionChangedEventArgs",
    "names": [
-        { "platform": "Blazor",     "fileName": "GridColumnWidthChangedEventArgs.cs",
- "mappedName": "GridColumnWidthChangedEventArgs"}   ],
+        { "platform": "Blazor",     "fileName": "GridSelectionChangedEventArgs.cs",
+ "mappedName": "IgbGridSelectionChangedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCustomFilterRequestedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridCustomFilterRequestedEventArgs.cs",
+ "mappedName": "IgbGridCustomFilterRequestedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnWidth", "mappedName": "OldWidth"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterOperand", "mappedName": "Filter"}            ],
+           "originalName": "Filter"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "Expression"}            ],
+           "originalName": "Expression"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnWidthChangedEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnWidthChangedEventArgs.cs",
+ "mappedName": "IgbGridColumnWidthChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColumnWidth", "mappedName": "OldWidth"}            ],
            "originalName": "OldWidth"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnWidth", "mappedName": "NewWidth"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnWidth", "mappedName": "NewWidth"}            ],
            "originalName": "NewWidth"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2891,11 +3277,11 @@
     "originalName": "GridCellEditStartedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridCellEditStartedEventArgs.cs",
- "mappedName": "GridCellEditStartedEventArgs"}   ],
+ "mappedName": "IgbGridCellEditStartedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -2914,11 +3300,11 @@
     "originalName": "GridCellEditEndedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridCellEditEndedEventArgs.cs",
- "mappedName": "GridCellEditEndedEventArgs"}   ],
+ "mappedName": "IgbGridCellEditEndedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -2937,7 +3323,7 @@
     "originalName": "GridRowEditStartedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridRowEditStartedEventArgs.cs",
- "mappedName": "GridRowEditStartedEventArgs"}   ],
+ "mappedName": "IgbGridRowEditStartedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -2955,7 +3341,7 @@
     "originalName": "GridRowEditEndedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GridRowEditEndedEventArgs.cs",
- "mappedName": "GridRowEditEndedEventArgs"}   ],
+ "mappedName": "IgbGridRowEditEndedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -2970,10 +3356,43 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "FilterOperand",
+   "names": [
+        { "platform": "Blazor",     "fileName": "FilterOperand.cs",
+ "mappedName": "IgbFilterOperand"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ID"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "DisplayName"}            ],
+           "originalName": "DisplayName"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Icon"}            ],
+           "originalName": "Icon"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsInputRequired"}            ],
+           "originalName": "IsInputRequired"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "EditorType", "mappedName": "EditorType"}            ],
+           "originalName": "EditorType"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "CellRange",
    "names": [
         { "platform": "Blazor",     "fileName": "CellRange.cs",
- "mappedName": "CellRange"}   ],
+ "mappedName": "IgbCellRange"}   ],
    "members": [
         {
            "names": [
@@ -3001,11 +3420,11 @@
     "originalName": "CellKey",
    "names": [
         { "platform": "Blazor",     "fileName": "CellKey.cs",
- "mappedName": "CellKey"}   ],
+ "mappedName": "IgbCellKey"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "PrimaryKeyValue", "mappedName": "PrimaryKey"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbPrimaryKeyValue", "mappedName": "PrimaryKey"}            ],
            "originalName": "PrimaryKey"
        },
         {
@@ -3024,7 +3443,7 @@
     "originalName": "ColumnGroupDescription",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnGroupDescription.cs",
- "mappedName": "ColumnGroupDescription"}   ],
+ "mappedName": "IgbColumnGroupDescription"}   ],
    "members": [
         {
            "names": [
@@ -3033,7 +3452,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
            "originalName": "ValueFormatSpecifiers"
        },
         {
@@ -3043,7 +3462,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
            "originalName": "DisplayFormatSpecifiers"
        },
         {
@@ -3059,7 +3478,7 @@
     "originalName": "FormatGroupTextEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatGroupTextEventArgs.cs",
- "mappedName": "FormatGroupTextEventArgs"}   ],
+ "mappedName": "IgbFormatGroupTextEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -3087,7 +3506,7 @@
     "originalName": "ColumnSortDescription",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnSortDescription.cs",
- "mappedName": "ColumnSortDescription"}   ],
+ "mappedName": "IgbColumnSortDescription"}   ],
    "members": [
         {
            "names": [
@@ -3105,7 +3524,7 @@
     "originalName": "ColumnSummaryDescription",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnSummaryDescription.cs",
- "mappedName": "ColumnSummaryDescription"}   ],
+ "mappedName": "IgbColumnSummaryDescription"}   ],
    "members": [
         {
            "names": [
@@ -3134,7 +3553,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "ValueFormatSpecifiers"}            ],
            "originalName": "ValueFormatSpecifiers"
        },
         {
@@ -3144,7 +3563,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "DisplayFormatSpecifiers"}            ],
            "originalName": "DisplayFormatSpecifiers"
        },
         {
@@ -3158,7 +3577,7 @@
     "originalName": "FormatSummaryTextEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatSummaryTextEventArgs.cs",
- "mappedName": "FormatSummaryTextEventArgs"}   ],
+ "mappedName": "IgbFormatSummaryTextEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -3191,12 +3610,22 @@
     "originalName": "ColumnMovingSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnMovingSeparator.cs",
- "mappedName": "ColumnMovingSeparator"}   ],
+ "mappedName": "IgbColumnMovingSeparator"}   ],
    "members": [
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "int", "mappedName": "SeparatorWidth"}            ],
            "originalName": "SeparatorWidth"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualOpacity"}            ],
+           "originalName": "ActualOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Opacity"}            ],
+           "originalName": "Opacity"
        }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -3206,7 +3635,7 @@
     "originalName": "ComboBoxColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "ComboBoxColumn.cs",
- "mappedName": "ComboBoxColumn"}   ],
+ "mappedName": "IgbComboBoxColumn"}   ],
    "members": [
         {
            "names": [
@@ -3231,7 +3660,7 @@
     "originalName": "DateTimeColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "DateTimeColumn.cs",
- "mappedName": "DateTimeColumn"}   ],
+ "mappedName": "IgbDateTimeColumn"}   ],
    "members": [
         {
            "names": [
@@ -3245,7 +3674,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "EditorFormatString"}            ],
+           "originalName": "EditorFormatString"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
            "originalName": "FormatSpecifiers"
        },
         {
@@ -3281,7 +3715,7 @@
     "originalName": "DefinitionBase",
    "names": [
         { "platform": "Blazor",     "fileName": "DefinitionBase.cs",
- "mappedName": "DefinitionBase"}   ],
+ "mappedName": "IgbDefinitionBase"}   ],
    "members": [
         {
            "names": [
@@ -3489,7 +3923,7 @@
     "originalName": "DataBindingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DataBindingEventArgs.cs",
- "mappedName": "DataBindingEventArgs"}   ],
+ "mappedName": "IgbDataBindingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -3509,7 +3943,7 @@
     "originalName": "CellStyleRequestedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CellStyleRequestedEventArgs.cs",
- "mappedName": "CellStyleRequestedEventArgs"}   ],
+ "mappedName": "IgbCellStyleRequestedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -3534,7 +3968,7 @@
     "originalName": "Column",
    "names": [
         { "platform": "Blazor",     "fileName": "Column.cs",
- "mappedName": "Column"}   ],
+ "mappedName": "IgbColumn"}   ],
    "members": [
         {
            "names": [
@@ -3603,12 +4037,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GridColumnAnimationSettings", "mappedName": "AnimationSettings"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGridColumnAnimationSettings", "mappedName": "AnimationSettings"}            ],
            "originalName": "AnimationSettings"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnWidth", "mappedName": "Width"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnWidth", "mappedName": "Width"}            ],
            "originalName": "Width"
        },
         {
@@ -3628,12 +4062,17 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnFilterCondition", "mappedName": "Filter"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnFilterCondition", "mappedName": "Filter"}            ],
            "originalName": "Filter"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Header", "mappedName": "Header"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFilterExpression", "mappedName": "FilterExpression"}            ],
+           "originalName": "FilterExpression"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbHeader", "mappedName": "Header"}            ],
            "originalName": "Header"
        },
         {
@@ -3708,6 +4147,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ActualIsColumnOptionsSummariesEnabled"}            ],
+           "originalName": "ActualIsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsColumnOptionsSummariesEnabled"}            ],
+           "originalName": "IsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsEditable"}            ],
            "originalName": "IsEditable"
        },
@@ -3730,6 +4179,26 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualEditOpacity"}            ],
            "originalName": "ActualEditOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MergedCellMode", "mappedName": "MergedCellMode"}            ],
+           "originalName": "MergedCellMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "MergedCellEvaluationCriteria"}            ],
+           "originalName": "MergedCellEvaluationCriteria"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "FilterComparisonType", "mappedName": "FilterComparisonType"}            ],
+           "originalName": "FilterComparisonType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbGridFilterOperandsCollection", "mappedName": "FilterOperands"}            ],
+           "originalName": "FilterOperands"
        },
         {
            "names": [
@@ -3760,6 +4229,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNamedHeaderValue"}            ],
            "originalName": "GetNamedHeaderValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ApplyCustomFilter"}            ],
+           "originalName": "ApplyCustomFilter"
        }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -3769,7 +4243,7 @@
     "originalName": "ColumnWidth",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnWidth.cs",
- "mappedName": "ColumnWidth"}   ],
+ "mappedName": "IgbColumnWidth"}   ],
    "members": [
         {
            "names": [
@@ -3789,10 +4263,62 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "EditorDefinition",
+   "names": [
+        { "platform": "Blazor",     "fileName": "EditorDefinition.cs",
+ "mappedName": "IgbEditorDefinition"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditRowDefinition",
+   "names": [
+        { "platform": "Blazor",     "fileName": "EditRowDefinition.cs",
+ "mappedName": "IgbEditRowDefinition"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterRowDefinition",
+   "names": [
+        { "platform": "Blazor",     "fileName": "FilterRowDefinition.cs",
+ "mappedName": "IgbFilterRowDefinition"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingLeft"}            ],
+           "originalName": "PaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingTop"}            ],
+           "originalName": "PaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingRight"}            ],
+           "originalName": "PaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PaddingBottom"}            ],
+           "originalName": "PaddingBottom"
+       }   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "Header",
    "names": [
         { "platform": "Blazor",     "fileName": "Header.cs",
- "mappedName": "Header"}   ],
+ "mappedName": "IgbHeader"}   ],
    "members": [
         {
            "names": [
@@ -3842,9 +4368,18 @@
     "originalName": "ColumnResizingSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnResizingSeparator.cs",
- "mappedName": "ColumnResizingSeparator"}   ],
+ "mappedName": "IgbColumnResizingSeparator"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualOpacity"}            ],
+           "originalName": "ActualOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Opacity"}            ],
+           "originalName": "Opacity"
+       }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -3853,7 +4388,7 @@
     "originalName": "HeaderSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "HeaderSeparator.cs",
- "mappedName": "HeaderSeparator"}   ],
+ "mappedName": "IgbHeaderSeparator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DefinitionBase",
@@ -3864,7 +4399,7 @@
     "originalName": "ImageColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "ImageColumn.cs",
- "mappedName": "ImageColumn"}   ],
+ "mappedName": "IgbImageColumn"}   ],
    "members": [
         {
            "names": [
@@ -3899,7 +4434,7 @@
     "originalName": "NumericColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "NumericColumn.cs",
- "mappedName": "NumericColumn"}   ],
+ "mappedName": "IgbNumericColumn"}   ],
    "members": [
         {
            "names": [
@@ -3948,7 +4483,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "FormatSpecifiers"}            ],
            "originalName": "FormatSpecifiers"
        },
         {
@@ -3984,7 +4519,7 @@
     "originalName": "PinnedAreaSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "PinnedAreaSeparator.cs",
- "mappedName": "PinnedAreaSeparator"}   ],
+ "mappedName": "IgbPinnedAreaSeparator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DefinitionBase",
@@ -3995,7 +4530,7 @@
     "originalName": "SectionFooter",
    "names": [
         { "platform": "Blazor",     "fileName": "SectionFooter.cs",
- "mappedName": "SectionFooter"}   ],
+ "mappedName": "IgbSectionFooter"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DefinitionBase",
@@ -4006,7 +4541,7 @@
     "originalName": "SectionHeader",
    "names": [
         { "platform": "Blazor",     "fileName": "SectionHeader.cs",
- "mappedName": "SectionHeader"}   ],
+ "mappedName": "IgbSectionHeader"}   ],
    "members": [
         {
            "names": [
@@ -4056,7 +4591,7 @@
     "originalName": "RowSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "RowSeparator.cs",
- "mappedName": "RowSeparator"}   ],
+ "mappedName": "IgbRowSeparator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DefinitionBase",
@@ -4067,7 +4602,7 @@
     "originalName": "HeaderRowSeparator",
    "names": [
         { "platform": "Blazor",     "fileName": "HeaderRowSeparator.cs",
- "mappedName": "HeaderRowSeparator"}   ],
+ "mappedName": "IgbHeaderRowSeparator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DefinitionBase",
@@ -4078,7 +4613,7 @@
     "originalName": "SummaryRow",
    "names": [
         { "platform": "Blazor",     "fileName": "SummaryRow.cs",
- "mappedName": "SummaryRow"}   ],
+ "mappedName": "IgbSummaryRow"}   ],
    "members": [
         {
            "names": [
@@ -4128,7 +4663,7 @@
     "originalName": "SummaryRowRoot",
    "names": [
         { "platform": "Blazor",     "fileName": "SummaryRowRoot.cs",
- "mappedName": "SummaryRowRoot"}   ],
+ "mappedName": "IgbSummaryRowRoot"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SummaryRow",
@@ -4139,7 +4674,7 @@
     "originalName": "SummaryRowSection",
    "names": [
         { "platform": "Blazor",     "fileName": "SummaryRowSection.cs",
- "mappedName": "SummaryRowSection"}   ],
+ "mappedName": "IgbSummaryRowSection"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SummaryRow",
@@ -4150,7 +4685,7 @@
     "originalName": "TemplateHeader",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateHeader.cs",
- "mappedName": "TemplateHeader"}   ],
+ "mappedName": "IgbTemplateHeader"}   ],
    "members": [
    ],
     "originalBaseTypeName": "Header",
@@ -4161,7 +4696,7 @@
     "originalName": "TemplateColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateColumn.cs",
- "mappedName": "TemplateColumn"}   ],
+ "mappedName": "IgbTemplateColumn"}   ],
    "members": [
    ],
     "originalBaseTypeName": "Column",
@@ -4172,7 +4707,7 @@
     "originalName": "TemplateCellUpdatingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateCellUpdatingEventArgs.cs",
- "mappedName": "TemplateCellUpdatingEventArgs"}   ],
+ "mappedName": "IgbTemplateCellUpdatingEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -4183,7 +4718,7 @@
     "originalName": "TemplateHeaderCellUpdatingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateHeaderCellUpdatingEventArgs.cs",
- "mappedName": "TemplateHeaderCellUpdatingEventArgs"}   ],
+ "mappedName": "IgbTemplateHeaderCellUpdatingEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -4194,7 +4729,7 @@
     "originalName": "TemplateSectionHeader",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateSectionHeader.cs",
- "mappedName": "TemplateSectionHeader"}   ],
+ "mappedName": "IgbTemplateSectionHeader"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SectionHeader",
@@ -4205,7 +4740,7 @@
     "originalName": "TemplateSectionHeaderCellUpdatingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TemplateSectionHeaderCellUpdatingEventArgs.cs",
- "mappedName": "TemplateSectionHeaderCellUpdatingEventArgs"}   ],
+ "mappedName": "IgbTemplateSectionHeaderCellUpdatingEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -4216,7 +4751,7 @@
     "originalName": "TextColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "TextColumn.cs",
- "mappedName": "TextColumn"}   ],
+ "mappedName": "IgbTextColumn"}   ],
    "members": [
         {
            "names": [
@@ -4246,7 +4781,7 @@
     "originalName": "TextHeader",
    "names": [
         { "platform": "Blazor",     "fileName": "TextHeader.cs",
- "mappedName": "TextHeader"}   ],
+ "mappedName": "IgbTextHeader"}   ],
    "members": [
    ],
     "originalBaseTypeName": "Header",
@@ -4257,7 +4792,7 @@
     "originalName": "ColumnExchanger",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnExchanger.cs",
- "mappedName": "ColumnExchanger"}   ],
+ "mappedName": "IgbColumnExchanger"}   ],
    "members": [
         {
            "names": [
@@ -4270,7 +4805,7 @@
     "originalName": "ColumnPropertySetter",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnPropertySetter.cs",
- "mappedName": "ColumnPropertySetter"}   ],
+ "mappedName": "IgbColumnPropertySetter"}   ],
    "members": [
         {
            "names": [
@@ -4293,7 +4828,7 @@
     "originalName": "ResponsivePhase",
    "names": [
         { "platform": "Blazor",     "fileName": "ResponsivePhase.cs",
- "mappedName": "ResponsivePhase"}   ],
+ "mappedName": "IgbResponsivePhase"}   ],
    "members": [
         {
            "names": [
@@ -4326,7 +4861,7 @@
     "originalName": "ResponsiveState",
    "names": [
         { "platform": "Blazor",     "fileName": "ResponsiveState.cs",
- "mappedName": "ResponsiveState"}   ],
+ "mappedName": "IgbResponsiveState"}   ],
    "members": [
         {
            "names": [
@@ -4359,7 +4894,7 @@
     "originalName": "ResponsiveStateEnteringEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ResponsiveStateEnteringEventArgs.cs",
- "mappedName": "ResponsiveStateEnteringEventArgs"}   ],
+ "mappedName": "IgbResponsiveStateEnteringEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -4370,7 +4905,7 @@
     "originalName": "ResponsiveStateEnteredEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ResponsiveStateEnteredEventArgs.cs",
- "mappedName": "ResponsiveStateEnteredEventArgs"}   ],
+ "mappedName": "IgbResponsiveStateEnteredEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -4381,7 +4916,7 @@
     "originalName": "ResponsiveStateExitedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ResponsiveStateExitedEventArgs.cs",
- "mappedName": "ResponsiveStateExitedEventArgs"}   ],
+ "mappedName": "IgbResponsiveStateExitedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",

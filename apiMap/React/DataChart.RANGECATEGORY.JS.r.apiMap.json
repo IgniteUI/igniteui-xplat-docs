@@ -15,6 +15,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "HorizontalRangeCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -143,6 +148,16 @@
     "moduleName": "igr-range-column-series-module.ts",
  "mappedName": "IgrRangeColumnSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],

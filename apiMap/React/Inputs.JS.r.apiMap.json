@@ -1,21 +1,21 @@
 {
 "extraFiles": [
-"igr-checkbox-module.ts",
-"igr-ripple-module.ts",
-"igr-button-module.ts",
-"igr-icon-module.ts",
-"igr-button-group-module.ts",
-"igr-input-module.ts",
-"igr-label-module.ts",
-"igr-input-group-module.ts",
-"igr-prefix-module.ts"
+"igr-x-checkbox-module.ts",
+"igr-x-ripple-module.ts",
+"igr-x-button-module.ts",
+"igr-x-icon-module.ts",
+"igr-x-button-group-module.ts",
+"igr-x-input-module.ts",
+"igr-x-label-module.ts",
+"igr-x-input-group-module.ts",
+"igr-x-prefix-module.ts"
 ],
 "types": [
 {
     "originalName": "Suffix",
    "names": [
-        { "platform": "React",     "fileName": "igr-suffix.ts",
- "mappedName": "IgrSuffix"}   ],
+        { "platform": "React",     "fileName": "igr-x-suffix.ts",
+ "mappedName": "IgrXSuffix"}   ],
    "members": [
         {
            "names": [
@@ -93,8 +93,8 @@
 {
     "originalName": "Prefix",
    "names": [
-        { "platform": "React",     "fileName": "igr-prefix.ts",
- "mappedName": "IgrPrefix"}   ],
+        { "platform": "React",     "fileName": "igr-x-prefix.ts",
+ "mappedName": "IgrXPrefix"}   ],
    "members": [
         {
            "names": [
@@ -172,8 +172,8 @@
 {
     "originalName": "InputGroup",
    "names": [
-        { "platform": "React",     "fileName": "igr-input-group.ts",
- "mappedName": "IgrInputGroup"}   ],
+        { "platform": "React",     "fileName": "igr-x-input-group.ts",
+ "mappedName": "IgrXInputGroup"}   ],
    "members": [
         {
            "names": [
@@ -1087,8 +1087,8 @@
 {
     "originalName": "ButtonGroup",
    "names": [
-        { "platform": "React",     "fileName": "igr-button-group.ts",
- "mappedName": "IgrButtonGroup"}   ],
+        { "platform": "React",     "fileName": "igr-x-button-group.ts",
+ "mappedName": "IgrXButtonGroup"}   ],
    "members": [
         {
            "names": [
@@ -1475,8 +1475,8 @@
 {
     "originalName": "Label",
    "names": [
-        { "platform": "React",     "fileName": "igr-label.ts",
- "mappedName": "IgrLabel"}   ],
+        { "platform": "React",     "fileName": "igr-x-label.ts",
+ "mappedName": "IgrXLabel"}   ],
    "members": [
         {
            "names": [
@@ -1557,6 +1557,11 @@
            "names": [
                { "platform": "React",  "mappedType": "string", "mappedName": "alignItems"}            ],
            "originalName": "AlignItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "alignSelf"}            ],
+           "originalName": "AlignSelf"
        },
         {
            "names": [
@@ -1649,8 +1654,8 @@
 {
     "originalName": "InputGroupItem",
    "names": [
-        { "platform": "React",     "fileName": "igr-input-group-item.ts",
- "mappedName": "IgrInputGroupItem"}   ],
+        { "platform": "React",     "fileName": "igr-x-input-group-item.ts",
+ "mappedName": "IgrXInputGroupItem"}   ],
    "members": [
         {
            "names": [
@@ -1662,8 +1667,8 @@
 {
     "originalName": "Input",
    "names": [
-        { "platform": "React",     "fileName": "igr-input.ts",
- "mappedName": "IgrInput"}   ],
+        { "platform": "React",     "fileName": "igr-x-input.ts",
+ "mappedName": "IgrXInput"}   ],
    "members": [
         {
            "names": [
@@ -1759,6 +1764,11 @@
            "names": [
                { "platform": "React",  "mappedType": "boolean", "mappedName": "disabled"}            ],
            "originalName": "IsDisabled"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "readonly"}            ],
+           "originalName": "IsReadOnly"
        },
         {
            "names": [
@@ -1861,8 +1871,8 @@
 {
     "originalName": "Icon",
    "names": [
-        { "platform": "React",     "fileName": "igr-icon.ts",
- "mappedName": "IgrIcon"}   ],
+        { "platform": "React",     "fileName": "igr-x-icon.ts",
+ "mappedName": "IgrXIcon"}   ],
    "members": [
         {
            "names": [
@@ -1971,6 +1981,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
            "originalName": "OnDetachedFromUI"
        },
@@ -1994,8 +2009,8 @@
 {
     "originalName": "Button",
    "names": [
-        { "platform": "React",     "fileName": "igr-button.ts",
- "mappedName": "IgrButton"}   ],
+        { "platform": "React",     "fileName": "igr-x-button.ts",
+ "mappedName": "IgrXButton"}   ],
    "members": [
         {
            "names": [
@@ -2901,8 +2916,8 @@
 {
     "originalName": "Ripple",
    "names": [
-        { "platform": "React",     "fileName": "igr-ripple.ts",
- "mappedName": "IgrRipple"}   ],
+        { "platform": "React",     "fileName": "igr-x-ripple.ts",
+ "mappedName": "IgrXRipple"}   ],
    "members": [
         {
            "names": [
@@ -2974,8 +2989,8 @@
 {
     "originalName": "Checkbox",
    "names": [
-        { "platform": "React",     "fileName": "igr-checkbox.ts",
- "mappedName": "IgrCheckbox"}   ],
+        { "platform": "React",     "fileName": "igr-x-checkbox.ts",
+ "mappedName": "IgrXCheckbox"}   ],
    "members": [
         {
            "names": [

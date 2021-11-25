@@ -165,8 +165,8 @@
    "members": [
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -252,6 +252,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -267,6 +272,16 @@
     "moduleName": "igc-column-series-module.ts",
  "mappedName": "IgcColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -306,6 +321,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        },
@@ -326,7 +346,16 @@
     "moduleName": "igc-spline-area-series-module.ts",
  "mappedName": "IgcSplineAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -339,7 +368,11 @@
     "moduleName": "igc-spline-series-module.ts",
  "mappedName": "IgcSplineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "SplineSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -350,6 +383,11 @@
         { "platform": "WebComponents",     "fileName": "igc-spline-series-base-component.ts",
  "mappedName": "IgcSplineSeriesBaseComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -376,6 +414,21 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        }   ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -389,6 +442,21 @@
     "moduleName": "igc-step-line-series-module.ts",
  "mappedName": "IgcStepLineSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -406,6 +474,21 @@
     "moduleName": "igc-waterfall-series-module.ts",
  "mappedName": "IgcWaterfallSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWaterfall"}            ],
+           "originalName": "IsWaterfall"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialWaterfall"}            ],
+           "originalName": "IsFinancialWaterfall"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isNegativeColorSupported"}            ],

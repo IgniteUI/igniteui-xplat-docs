@@ -4,7 +4,7 @@
     "originalName": "XamRadialGauge",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialGauge.cs",
- "mappedName": "RadialGauge"}   ],
+ "mappedName": "IgbRadialGauge"}   ],
    "members": [
         {
            "names": [
@@ -293,7 +293,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeRangeCollection", "mappedName": "Ranges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbRadialGaugeRangeCollection", "mappedName": "Ranges"}            ],
            "originalName": "Ranges"
        },
         {
@@ -328,7 +328,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
            "originalName": "LabelFormatSpecifiers"
        },
         {
@@ -404,7 +404,7 @@
     "originalName": "FormatRadialGaugeLabelEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatRadialGaugeLabelEventArgs.cs",
- "mappedName": "FormatRadialGaugeLabelEventArgs"}   ],
+ "mappedName": "IgbFormatRadialGaugeLabelEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -415,7 +415,7 @@
     "originalName": "AlignRadialGaugeLabelEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "AlignRadialGaugeLabelEventArgs.cs",
- "mappedName": "AlignRadialGaugeLabelEventArgs"}   ],
+ "mappedName": "IgbAlignRadialGaugeLabelEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "FormatRadialGaugeLabelEventArgs",
@@ -426,7 +426,7 @@
     "originalName": "XamRadialGaugeRange",
    "names": [
         { "platform": "Blazor",     "fileName": "RadialGaugeRange.cs",
- "mappedName": "RadialGaugeRange"}   ],
+ "mappedName": "IgbRadialGaugeRange"}   ],
    "members": [
         {
            "names": [

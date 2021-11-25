@@ -120,6 +120,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
+           "originalName": "IsLineContour"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
            "originalName": "ValueMemberPath"
        },
@@ -127,6 +132,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "fillScale"}            ],
            "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgxValueBrushScaleComponent", "mappedName": "actualFillScale"}            ],
+           "originalName": "ActualFillScale"
        },
         {
            "names": [
@@ -180,6 +190,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
+           "originalName": "IsPolyline"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxStyle", "mappedName": "shapeStyle"}            ],
            "originalName": "ShapeStyle"
        }   ],
@@ -197,6 +212,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "colorScale"}            ],
            "originalName": "ColorScale"
        },
@@ -207,6 +227,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "IgxColorScaleComponent", "mappedName": "actualColorScale"}            ],
+           "originalName": "ActualColorScale"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -214,6 +239,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "updateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        },
         {
            "names": [
@@ -232,6 +262,16 @@
     "moduleName": "igx-scatter-polygon-series-module.ts",
  "mappedName": "IgxScatterPolygonSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
+           "originalName": "IsPolygon"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
@@ -286,6 +326,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
        }   ],
     "originalBaseTypeName": "ShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -351,6 +401,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isShape"}            ],
            "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        },
         {
            "names": [
@@ -436,6 +491,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isShape"}            ],
            "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        },
         {
            "names": [

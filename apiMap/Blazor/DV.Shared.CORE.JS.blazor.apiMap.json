@@ -17,7 +17,7 @@
     "originalName": "DoubleValueChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "DoubleValueChangedEventArgs.cs",
- "mappedName": "DoubleValueChangedEventArgs"}   ],
+ "mappedName": "IgbDoubleValueChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -100,7 +100,7 @@
     "originalName": "RectChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "RectChangedEventArgs.cs",
- "mappedName": "RectChangedEventArgs"}   ],
+ "mappedName": "IgbRectChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -120,7 +120,7 @@
     "originalName": "FormatSpecifier",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatSpecifier.cs",
- "mappedName": "FormatSpecifier"}   ],
+ "mappedName": "IgbFormatSpecifier"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls"
@@ -129,7 +129,7 @@
     "originalName": "NumberFormatSpecifier",
    "names": [
         { "platform": "Blazor",     "fileName": "NumberFormatSpecifier.cs",
- "mappedName": "NumberFormatSpecifier"}   ],
+ "mappedName": "IgbNumberFormatSpecifier"}   ],
    "members": [
         {
            "names": [
@@ -229,7 +229,7 @@
     "originalName": "DateTimeFormatSpecifier",
    "names": [
         { "platform": "Blazor",     "fileName": "DateTimeFormatSpecifier.cs",
- "mappedName": "DateTimeFormatSpecifier"}   ],
+ "mappedName": "IgbDateTimeFormatSpecifier"}   ],
    "members": [
         {
            "names": [
@@ -357,7 +357,7 @@
     "originalName": "DataContext",
    "names": [
         { "platform": "Blazor",     "fileName": "DataContext.cs",
- "mappedName": "DataContext"}   ],
+ "mappedName": "IgbDataContext"}   ],
    "members": [
         {
            "names": [
@@ -400,7 +400,7 @@
     "originalName": "PropertyUpdatedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "PropertyUpdatedEventArgs.cs",
- "mappedName": "PropertyUpdatedEventArgs"}   ],
+ "mappedName": "IgbPropertyUpdatedEventArgs"}   ],
    "members": [
         {
            "names": [

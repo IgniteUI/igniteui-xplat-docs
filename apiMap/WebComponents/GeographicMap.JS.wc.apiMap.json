@@ -71,6 +71,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isTile"}            ],
+           "originalName": "IsTile"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcGeographicMapImagery", "mappedName": "tileImagery"}            ],
            "originalName": "TileImagery"
        },
@@ -317,6 +322,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPixel"}            ],
+           "originalName": "IsPixel"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -375,6 +385,71 @@
     "originalNamespace": "Infragistics.Controls.Maps"
 },
 {
+    "originalName": "GeographicMarkerSeries",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-geographic-marker-series-component.ts",
+ "mappedName": "IgcGeographicMarkerSeriesComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
+           "originalName": "MaximumMarkers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       }   ],
+    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
     "originalName": "GeographicPolylineSeries",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-geographic-polyline-series-component.ts",
@@ -382,6 +457,11 @@
     "moduleName": "igc-geographic-polyline-series-module.ts",
  "mappedName": "IgcGeographicPolylineSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
+           "originalName": "IsPolyline"
+       },
         {
            "isVirtual": true,
            "names": [
@@ -420,6 +500,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -427,31 +512,6 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "longitudeMemberPath"}            ],
            "originalName": "LongitudeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
        },
         {
            "names": [
@@ -500,15 +560,30 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
+           "originalName": "RadiusScaleUseGlobalValues"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -519,7 +594,7 @@
  "mappedName": "IgcGeographicProportionalSymbolSeriesBaseComponent"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -533,6 +608,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "colorMemberPath"}            ],
            "originalName": "ColorMemberPath"
        },
@@ -540,6 +620,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcColorScaleComponent", "mappedName": "colorScale"}            ],
            "originalName": "ColorScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColorScaleComponent", "mappedName": "actualColorScale"}            ],
+           "originalName": "ActualColorScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "updateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        }   ],
     "originalBaseTypeName": "GeographicXYTriangulatingSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -555,6 +645,31 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "shapeMemberPath"}            ],
            "originalName": "ShapeMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomShapeStyleAllowed"}            ],
+           "originalName": "IsCustomShapeStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomShapeMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomShapeMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ShapeItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchPointsThreshold"}            ],
+           "originalName": "ItemSearchPointsThreshold"
        },
         {
            "names": [
@@ -588,7 +703,18 @@
  "mappedName": "IgcGeographicSymbolSeriesBaseComponent"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
+    "originalName": "GeographicMarkerSeriesBase",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-geographic-marker-series-base-component.ts",
+ "mappedName": "IgcGeographicMarkerSeriesBaseComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -653,6 +779,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
+           "originalName": "IsLineContour"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
            "originalName": "ValueMemberPath"
        },
@@ -660,6 +791,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcValueBrushScaleComponent", "mappedName": "fillScale"}            ],
            "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcValueBrushScaleComponent", "mappedName": "actualFillScale"}            ],
+           "originalName": "ActualFillScale"
        },
         {
            "names": [
@@ -683,6 +819,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
+           "originalName": "HasMarkers"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "visibleFromScale"}            ],
            "originalName": "VisibleFromScale"
        },
@@ -693,6 +834,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -700,6 +846,71 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
+           "originalName": "GetItemSpan"
        },
         {
            "names": [
@@ -723,6 +934,11 @@
     "moduleName": "igc-geographic-shape-series-module.ts",
  "mappedName": "IgcGeographicShapeSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
+           "originalName": "IsPolygon"
+       },
         {
            "isVirtual": true,
            "names": [
@@ -754,6 +970,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
            "originalName": "MarkerTemplate"
        },
@@ -776,6 +1002,21 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
        }   ],
     "originalBaseTypeName": "GeographicShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -791,6 +1032,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "latitudeMemberPath"}            ],
            "originalName": "LatitudeMemberPath"
        },
@@ -801,40 +1047,30 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}            ],
-           "originalName": "MarkerTemplate"
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerOutline"}            ],
-           "originalName": "MarkerOutline"
+               { "platform": "WebComponents",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -1085,6 +1321,11 @@
     "moduleName": "igc-tile-series-module.ts",
  "mappedName": "IgcTileSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isTile"}            ],
+           "originalName": "IsTile"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcGeographicMapImagery", "mappedName": "tileImagery"}            ],

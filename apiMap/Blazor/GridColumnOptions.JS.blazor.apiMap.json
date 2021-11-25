@@ -1,10 +1,10 @@
 {
 "types": [
 {
-    "originalName": "FilterApplyButtonClickEventArgs",
+    "originalName": "ApplyButtonClickEventArgs",
    "names": [
-        { "platform": "Blazor",     "fileName": "FilterApplyButtonClickEventArgs.cs",
- "mappedName": "FilterApplyButtonClickEventArgs"}   ],
+        { "platform": "Blazor",     "fileName": "ApplyButtonClickEventArgs.cs",
+ "mappedName": "IgbApplyButtonClickEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -12,10 +12,10 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "FilterCancelButtonClickEventArgs",
+    "originalName": "CancelButtonClickEventArgs",
    "names": [
-        { "platform": "Blazor",     "fileName": "FilterCancelButtonClickEventArgs.cs",
- "mappedName": "FilterCancelButtonClickEventArgs"}   ],
+        { "platform": "Blazor",     "fileName": "CancelButtonClickEventArgs.cs",
+ "mappedName": "IgbCancelButtonClickEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -26,7 +26,7 @@
     "originalName": "GridColumnOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnOptions.cs",
- "mappedName": "GridColumnOptions"}   ],
+ "mappedName": "IgbGridColumnOptions"}   ],
    "members": [
         {
            "names": [
@@ -82,6 +82,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "FilterOptionsVisible"}            ],
            "originalName": "FilterOptionsVisible"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SummaryOptionsVisible"}            ],
+           "originalName": "SummaryOptionsVisible"
        },
         {
            "names": [
@@ -145,6 +150,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "SummaryListDensity"}            ],
+           "originalName": "SummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualSummaryListDensity"}            ],
+           "originalName": "ActualSummaryListDensity"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "FilterListDensity"}            ],
            "originalName": "FilterListDensity"
        },
@@ -166,7 +181,7 @@
     "originalName": "GridColumnOptionsSimpleSectionBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnOptionsSimpleSectionBase.cs",
- "mappedName": "GridColumnOptionsSimpleSectionBase"}   ],
+ "mappedName": "IgbGridColumnOptionsSimpleSectionBase"}   ],
    "members": [
         {
            "names": [
@@ -186,9 +201,18 @@
     "originalName": "GridColumnOptionsSectionBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnOptionsSectionBase.cs",
- "mappedName": "GridColumnOptionsSectionBase"}   ],
+ "mappedName": "IgbGridColumnOptionsSectionBase"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnApply"}            ],
+           "originalName": "OnApply"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnCancel"}            ],
+           "originalName": "OnCancel"
+       }   ],
     "originalBaseTypeName": "GridColumnOptionsBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -197,7 +221,7 @@
     "originalName": "GridColumnOptionsBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnOptionsBase.cs",
- "mappedName": "GridColumnOptionsBase"}   ],
+ "mappedName": "IgbGridColumnOptionsBase"}   ],
    "members": [
         {
            "names": [
@@ -231,7 +255,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Column", "mappedName": "Column"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumn", "mappedName": "Column"}            ],
            "originalName": "Column"
        },
         {
@@ -252,10 +276,10 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
-    "originalName": "GridColumnFilterOptions",
+    "originalName": "GridColumnButtonOptions",
    "names": [
-        { "platform": "Blazor",     "fileName": "GridColumnFilterOptions.cs",
- "mappedName": "GridColumnFilterOptions"}   ],
+        { "platform": "Blazor",     "fileName": "GridColumnButtonOptions.cs",
+ "mappedName": "IgbGridColumnButtonOptions"}   ],
    "members": [
         {
            "names": [
@@ -266,7 +290,17 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "CancelButtonCaption"}            ],
            "originalName": "CancelButtonCaption"
-       },
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnFilterOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnFilterOptions.cs",
+ "mappedName": "IgbGridColumnFilterOptions"}   ],
+   "members": [
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ClearColumnFiltersCaption"}            ],
@@ -291,6 +325,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextFilterCaption"}            ],
            "originalName": "TextFilterCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnApply"}            ],
+           "originalName": "OnApply"
        }   ],
     "originalBaseTypeName": "GridColumnOptionsSectionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -300,7 +339,7 @@
     "originalName": "GridColumnGroupOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnGroupOptions.cs",
- "mappedName": "GridColumnGroupOptions"}   ],
+ "mappedName": "IgbGridColumnGroupOptions"}   ],
    "members": [
    ],
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
@@ -311,7 +350,7 @@
     "originalName": "GridColumnHideOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnHideOptions.cs",
- "mappedName": "GridColumnHideOptions"}   ],
+ "mappedName": "IgbGridColumnHideOptions"}   ],
    "members": [
    ],
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
@@ -322,7 +361,7 @@
     "originalName": "GridColumnMoveOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnMoveOptions.cs",
- "mappedName": "GridColumnMoveOptions"}   ],
+ "mappedName": "IgbGridColumnMoveOptions"}   ],
    "members": [
         {
            "names": [
@@ -342,7 +381,7 @@
     "originalName": "GridColumnPinOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnPinOptions.cs",
- "mappedName": "GridColumnPinOptions"}   ],
+ "mappedName": "IgbGridColumnPinOptions"}   ],
    "members": [
         {
            "names": [
@@ -362,7 +401,7 @@
     "originalName": "GridColumnSortOptions",
    "names": [
         { "platform": "Blazor",     "fileName": "GridColumnSortOptions.cs",
- "mappedName": "GridColumnSortOptions"}   ],
+ "mappedName": "IgbGridColumnSortOptions"}   ],
    "members": [
         {
            "names": [
@@ -380,6 +419,51 @@
            "originalName": "SortDirection"
        }   ],
     "originalBaseTypeName": "GridColumnOptionsSimpleSectionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridColumnSummaryOptions",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GridColumnSummaryOptions.cs",
+ "mappedName": "IgbGridColumnSummaryOptions"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SummaryCaption"}            ],
+           "originalName": "SummaryCaption"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "SummaryListDensity"}            ],
+           "originalName": "SummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "ActualSummaryListDensity"}            ],
+           "originalName": "ActualSummaryListDensity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ActiveCount"}            ],
+           "originalName": "ActiveCount"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnApply"}            ],
+           "originalName": "OnApply"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "OnCancel"}            ],
+           "originalName": "OnCancel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CloseMenu"}            ],
+           "originalName": "CloseMenu"
+       }   ],
+    "originalBaseTypeName": "GridColumnOptionsSectionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 }

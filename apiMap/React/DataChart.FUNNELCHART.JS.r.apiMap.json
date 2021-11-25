@@ -1,0 +1,362 @@
+{
+"extraFiles": [
+"igr-funnel-chart-core-module.ts",
+"igr-funnel-chart-module.ts"
+],
+"types": [
+{
+    "originalName": "FunnelSliceDataContext",
+   "names": [
+        { "platform": "React",     "fileName": "igr-funnel-slice-data-context.ts",
+ "mappedName": "IgrFunnelSliceDataContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "itemOutline"}            ],
+           "originalName": "ItemOutline"
+       }   ],
+    "originalBaseTypeName": "DataContext",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelDataContext",
+   "names": [
+        { "platform": "React",     "fileName": "igr-funnel-data-context.ts",
+ "mappedName": "IgrFunnelDataContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceDisplay",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "FunnelSliceDisplay.ts",
+ "mappedName": "FunnelSliceDisplay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FunnelSliceDisplay", "mappedName": "Uniform"}            ],
+           "originalName": "Uniform"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FunnelSliceDisplay", "mappedName": "Weighted"}            ],
+           "originalName": "Weighted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "OuterLabelAlignment",
+    "isEnum": true,
+   "names": [
+        { "platform": "React",     "fileName": "OuterLabelAlignment.ts",
+ "mappedName": "OuterLabelAlignment"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OuterLabelAlignment", "mappedName": "Left"}            ],
+           "originalName": "Left"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OuterLabelAlignment", "mappedName": "Right"}            ],
+           "originalName": "Right"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceClickedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-funnel-slice-clicked-event-args.ts",
+ "mappedName": "IgrFunnelSliceClickedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-funnel-slice-event-args.ts",
+ "mappedName": "IgrFunnelSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XamFunnelChart",
+   "names": [
+        { "platform": "React",     "fileName": "igr-funnel-chart.ts",
+ "mappedName": "IgrFunnelChart"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "bottomEdgeWidth"}            ],
+           "originalName": "BottomEdgeWidth"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "innerLabelMemberPath"}            ],
+           "originalName": "InnerLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outerLabelMemberPath"}            ],
+           "originalName": "OuterLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "innerLabelVisibility"}            ],
+           "originalName": "InnerLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "Visibility", "mappedName": "outerLabelVisibility"}            ],
+           "originalName": "OuterLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "OuterLabelAlignment", "mappedName": "outerLabelAlignment"}            ],
+           "originalName": "OuterLabelAlignment"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "FunnelSliceDisplay", "mappedName": "funnelSliceDisplay"}            ],
+           "originalName": "FunnelSliceDisplay"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatInnerLabel"}            ],
+           "originalName": "FormatInnerLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatOuterLabel"}            ],
+           "originalName": "FormatOuterLabel"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isInverted"}            ],
+           "originalName": "IsInverted"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useBezierCurve"}            ],
+           "originalName": "UseBezierCurve"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
+           "originalName": "AllowSliceSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useUnselectedStyle"}            ],
+           "originalName": "UseUnselectedStyle"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "selectedSliceStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "selectedSliceStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "selectedSliceStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "selectedSliceStyle.opacity"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "unselectedSliceStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "unselectedSliceStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "unselectedSliceStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "unselectedSliceStyle.opacity"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}            ],
+           "originalName": "LegendItemBadgeTemplate"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}            ],
+           "originalName": "UseOuterLabelsForLegend"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textStyle"}            ],
+           "originalName": "TextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outerLabelTextStyle"}            ],
+           "originalName": "OuterLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "outlineThickness"}            ],
+           "originalName": "OutlineThickness"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "outerLabelTextColor"}            ],
+           "originalName": "OuterLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "toggleSelection"}            ],
+           "originalName": "ToggleSelection"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

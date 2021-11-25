@@ -95,6 +95,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        }   ],
@@ -197,6 +202,16 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -229,6 +244,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
            "originalName": "UnknownValuePlotting"
        },
@@ -249,6 +269,16 @@
     "moduleName": "igr-radial-pie-series-module.ts",
  "mappedName": "IgrRadialPieSeries"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPie"}            ],
+           "originalName": "IsPie"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "React",  "mappedType": "number", "mappedName": "radiusX"}            ],

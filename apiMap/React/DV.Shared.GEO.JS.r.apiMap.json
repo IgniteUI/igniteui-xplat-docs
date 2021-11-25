@@ -8,7 +8,7 @@
     "originalName": "HeatTileGenerator",
    "names": [
         { "platform": "React",     "fileName": "igr-heat-tile-generator.ts",
- "mappedName": "HeatTileGenerator"}   ],
+ "mappedName": "IgrHeatTileGenerator"}   ],
    "members": [
         {
            "names": [

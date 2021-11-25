@@ -620,7 +620,7 @@
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalNamespace": "Infragistics.Controls.Theming.Implementation"
 },
 {
     "originalName": "ElevationMode",
@@ -649,7 +649,7 @@
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalNamespace": "Infragistics.Controls.Theming.Implementation"
 },
 {
     "originalName": "ControlDisplayDensity",
@@ -683,7 +683,7 @@
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
+    "originalNamespace": "Infragistics.Controls.Theming.Implementation"
 }
 ]
 }

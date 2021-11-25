@@ -4,7 +4,7 @@
     "originalName": "RangeAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RangeAreaSeries.cs",
- "mappedName": "RangeAreaSeries"}   ],
+ "mappedName": "IgbRangeAreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalRangeCategorySeries",
@@ -15,16 +15,16 @@
     "originalName": "HorizontalRangeCategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "HorizontalRangeCategorySeries.cs",
- "mappedName": "HorizontalRangeCategorySeries"}   ],
+ "mappedName": "IgbHorizontalRangeCategorySeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAxisBase", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -95,7 +95,7 @@
     "originalName": "RangeCategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RangeCategorySeries.cs",
- "mappedName": "RangeCategorySeries"}   ],
+ "mappedName": "IgbRangeCategorySeries"}   ],
    "members": [
         {
            "names": [
@@ -125,7 +125,7 @@
     "originalName": "RangeColumnSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RangeColumnSeries.cs",
- "mappedName": "RangeColumnSeries"}   ],
+ "mappedName": "IgbRangeColumnSeries"}   ],
    "members": [
         {
            "names": [

@@ -1,0 +1,268 @@
+{
+"extraFiles": [
+"igc-property-editor-module.ts"
+],
+"types": [
+{
+    "originalName": "PropertyEditorPropertyDescription",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-property-description-component.ts",
+    "dynamicModuleName": "igc-property-editor-property-description-dynamic-module.ts",
+    "moduleName": "igc-property-editor-property-description-module.ts",
+ "mappedName": "IgcPropertyEditorPropertyDescriptionComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "propertyPath"}            ],
+           "originalName": "PropertyPath"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "label"}            ],
+           "originalName": "Label"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "PropertyEditorValueType", "mappedName": "valueType"}            ],
+           "originalName": "ValueType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "propertyDescriptionType"}            ],
+           "originalName": "PropertyDescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldOverrideDefaultEditor"}            ],
+           "originalName": "ShouldOverrideDefaultEditor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "elementDescriptionType"}            ],
+           "originalName": "ElementDescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "dropDownNames"}            ],
+           "originalName": "DropDownNames"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "dropDownValues"}            ],
+           "originalName": "DropDownValues"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "primitiveValue"}            ],
+           "originalName": "PrimitiveValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcPropertyEditorDescriptionObject", "mappedName": "complexValue"}            ],
+           "originalName": "ComplexValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcPropertyEditorDescriptionObjectCollection", "mappedName": "complexValues"}            ],
+           "originalName": "ComplexValues"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionButtonClickEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-property-description-button-click-event-args.ts",
+ "mappedName": "IgcPropertyEditorPropertyDescriptionButtonClickEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionChangedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-property-description-changed-event-args.ts",
+ "mappedName": "IgcPropertyEditorPropertyDescriptionChangedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-property-description-target-property-updating-event-args.ts",
+ "mappedName": "IgcPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "target"}            ],
+           "originalName": "Target"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "propertyPath"}            ],
+           "originalName": "PropertyPath"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorDescriptionObject",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-description-object.ts",
+ "mappedName": "IgcPropertyEditorDescriptionObject"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcPropertyEditorPropertyDescriptionCollection", "mappedName": "properties"}            ],
+           "originalName": "Properties"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditorDataSource",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-data-source.ts",
+ "mappedName": "IgcPropertyEditorDataSource"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TypeDescriptionContext", "mappedName": "context"}            ],
+           "originalName": "Context"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+},
+{
+    "originalName": "PropertyEditor",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-property-editor-component.ts",
+ "mappedName": "IgcPropertyEditorComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcPropertyEditorPropertyDescriptionCollection", "mappedName": "actualDataSource"}            ],
+           "originalName": "ActualProperties"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
+           "originalName": "FilterPlaceholderText"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "InputGroupDisplayType", "mappedName": "searchInputType"}            ],
+           "originalName": "SearchInputType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "rowHeight"}            ],
+           "originalName": "RowHeight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
+           "originalName": "BaseTheme"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
+           "originalName": "Density"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TypeDescriptionContext", "mappedName": "actualDescriptionContext"}            ],
+           "originalName": "ActualDescriptionContext"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "TypeDescriptionContext", "mappedName": "descriptionContext"}            ],
+           "originalName": "DescriptionContext"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ComponentRenderer", "mappedName": "componentRenderer"}            ],
+           "originalName": "ComponentRenderer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "target"}            ],
+           "originalName": "Target"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "descriptionType"}            ],
+           "originalName": "DescriptionType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHorizontal"}            ],
+           "originalName": "IsHorizontal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWrappingEnabled"}            ],
+           "originalName": "IsWrappingEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isIndirectModeEnabled"}            ],
+           "originalName": "IsIndirectModeEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
+           "originalName": "BackgroundColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getDesiredSize"}            ],
+           "originalName": "GetDesiredSize"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
+}
+]
+}

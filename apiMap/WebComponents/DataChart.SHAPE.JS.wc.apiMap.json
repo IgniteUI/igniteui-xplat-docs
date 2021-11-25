@@ -120,6 +120,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
+           "originalName": "IsLineContour"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
            "originalName": "ValueMemberPath"
        },
@@ -127,6 +132,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcValueBrushScaleComponent", "mappedName": "fillScale"}            ],
            "originalName": "FillScale"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcValueBrushScaleComponent", "mappedName": "actualFillScale"}            ],
+           "originalName": "ActualFillScale"
        },
         {
            "names": [
@@ -180,6 +190,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
+           "originalName": "IsPolyline"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcStyle", "mappedName": "shapeStyle"}            ],
            "originalName": "ShapeStyle"
        }   ],
@@ -197,6 +212,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcColorScaleComponent", "mappedName": "colorScale"}            ],
            "originalName": "ColorScale"
        },
@@ -207,6 +227,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColorScaleComponent", "mappedName": "actualColorScale"}            ],
+           "originalName": "ActualColorScale"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -214,6 +239,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "updateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        },
         {
            "names": [
@@ -232,6 +262,16 @@
     "moduleName": "igc-scatter-polygon-series-module.ts",
  "mappedName": "IgcScatterPolygonSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
+           "originalName": "IsPolygon"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasMarkers"}            ],
@@ -286,6 +326,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
        }   ],
     "originalBaseTypeName": "ShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -351,6 +401,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShape"}            ],
            "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        },
         {
            "names": [
@@ -436,6 +491,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShape"}            ],
            "originalName": "IsShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
        },
         {
            "names": [

@@ -4,7 +4,7 @@
     "originalName": "ZoomSlider",
    "names": [
         { "platform": "Blazor",     "fileName": "ZoomSlider.cs",
- "mappedName": "ZoomSlider"}   ],
+ "mappedName": "IgbZoomSlider"}   ],
    "members": [
         {
            "names": [
@@ -282,7 +282,7 @@
     "originalName": "ZoomSliderResolvingAxisValueEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ZoomSliderResolvingAxisValueEventArgs.cs",
- "mappedName": "ZoomSliderResolvingAxisValueEventArgs"}   ],
+ "mappedName": "IgbZoomSliderResolvingAxisValueEventArgs"}   ],
    "members": [
         {
            "names": [

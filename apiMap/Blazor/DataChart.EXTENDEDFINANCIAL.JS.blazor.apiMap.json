@@ -4,7 +4,7 @@
     "originalName": "AbsoluteVolumeOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "AbsoluteVolumeOscillatorIndicator.cs",
- "mappedName": "AbsoluteVolumeOscillatorIndicator"}   ],
+ "mappedName": "IgbAbsoluteVolumeOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -24,7 +24,7 @@
     "originalName": "AccumulationDistributionIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "AccumulationDistributionIndicator.cs",
- "mappedName": "AccumulationDistributionIndicator"}   ],
+ "mappedName": "IgbAccumulationDistributionIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -35,7 +35,7 @@
     "originalName": "AverageDirectionalIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "AverageDirectionalIndexIndicator.cs",
- "mappedName": "AverageDirectionalIndexIndicator"}   ],
+ "mappedName": "IgbAverageDirectionalIndexIndicator"}   ],
    "members": [
         {
            "names": [
@@ -50,7 +50,7 @@
     "originalName": "AverageTrueRangeIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "AverageTrueRangeIndicator.cs",
- "mappedName": "AverageTrueRangeIndicator"}   ],
+ "mappedName": "IgbAverageTrueRangeIndicator"}   ],
    "members": [
         {
            "names": [
@@ -65,7 +65,7 @@
     "originalName": "BollingerBandsOverlay",
    "names": [
         { "platform": "Blazor",     "fileName": "BollingerBandsOverlay.cs",
- "mappedName": "BollingerBandsOverlay"}   ],
+ "mappedName": "IgbBollingerBandsOverlay"}   ],
    "members": [
         {
            "names": [
@@ -100,7 +100,7 @@
     "originalName": "BollingerBandWidthIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "BollingerBandWidthIndicator.cs",
- "mappedName": "BollingerBandWidthIndicator"}   ],
+ "mappedName": "IgbBollingerBandWidthIndicator"}   ],
    "members": [
         {
            "names": [
@@ -120,7 +120,7 @@
     "originalName": "ChaikinOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "ChaikinOscillatorIndicator.cs",
- "mappedName": "ChaikinOscillatorIndicator"}   ],
+ "mappedName": "IgbChaikinOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -140,7 +140,7 @@
     "originalName": "ChaikinVolatilityIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "ChaikinVolatilityIndicator.cs",
- "mappedName": "ChaikinVolatilityIndicator"}   ],
+ "mappedName": "IgbChaikinVolatilityIndicator"}   ],
    "members": [
         {
            "names": [
@@ -155,7 +155,7 @@
     "originalName": "CommodityChannelIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "CommodityChannelIndexIndicator.cs",
- "mappedName": "CommodityChannelIndexIndicator"}   ],
+ "mappedName": "IgbCommodityChannelIndexIndicator"}   ],
    "members": [
         {
            "names": [
@@ -170,7 +170,7 @@
     "originalName": "CustomIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "CustomIndicator.cs",
- "mappedName": "CustomIndicator"}   ],
+ "mappedName": "IgbCustomIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -181,7 +181,7 @@
     "originalName": "DetrendedPriceOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "DetrendedPriceOscillatorIndicator.cs",
- "mappedName": "DetrendedPriceOscillatorIndicator"}   ],
+ "mappedName": "IgbDetrendedPriceOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -196,7 +196,7 @@
     "originalName": "EaseOfMovementIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "EaseOfMovementIndicator.cs",
- "mappedName": "EaseOfMovementIndicator"}   ],
+ "mappedName": "IgbEaseOfMovementIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -207,7 +207,7 @@
     "originalName": "FastStochasticOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "FastStochasticOscillatorIndicator.cs",
- "mappedName": "FastStochasticOscillatorIndicator"}   ],
+ "mappedName": "IgbFastStochasticOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -222,7 +222,7 @@
     "originalName": "FinancialIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialIndicator.cs",
- "mappedName": "FinancialIndicator"}   ],
+ "mappedName": "IgbFinancialIndicator"}   ],
    "members": [
         {
            "names": [
@@ -292,7 +292,7 @@
     "originalName": "FinancialOverlay",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialOverlay.cs",
- "mappedName": "FinancialOverlay"}   ],
+ "mappedName": "IgbFinancialOverlay"}   ],
    "members": [
         {
            "names": [
@@ -312,7 +312,7 @@
     "originalName": "ForceIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "ForceIndexIndicator.cs",
- "mappedName": "ForceIndexIndicator"}   ],
+ "mappedName": "IgbForceIndexIndicator"}   ],
    "members": [
         {
            "names": [
@@ -327,7 +327,7 @@
     "originalName": "FullStochasticOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "FullStochasticOscillatorIndicator.cs",
- "mappedName": "FullStochasticOscillatorIndicator"}   ],
+ "mappedName": "IgbFullStochasticOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -352,7 +352,7 @@
     "originalName": "ItemwiseStrategyBasedIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "ItemwiseStrategyBasedIndicator.cs",
- "mappedName": "ItemwiseStrategyBasedIndicator"}   ],
+ "mappedName": "IgbItemwiseStrategyBasedIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -363,7 +363,7 @@
     "originalName": "MarketFacilitationIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "MarketFacilitationIndexIndicator.cs",
- "mappedName": "MarketFacilitationIndexIndicator"}   ],
+ "mappedName": "IgbMarketFacilitationIndexIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
@@ -374,7 +374,7 @@
     "originalName": "MassIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "MassIndexIndicator.cs",
- "mappedName": "MassIndexIndicator"}   ],
+ "mappedName": "IgbMassIndexIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -385,7 +385,7 @@
     "originalName": "MedianPriceIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "MedianPriceIndicator.cs",
- "mappedName": "MedianPriceIndicator"}   ],
+ "mappedName": "IgbMedianPriceIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
@@ -396,7 +396,7 @@
     "originalName": "MoneyFlowIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "MoneyFlowIndexIndicator.cs",
- "mappedName": "MoneyFlowIndexIndicator"}   ],
+ "mappedName": "IgbMoneyFlowIndexIndicator"}   ],
    "members": [
         {
            "names": [
@@ -411,7 +411,7 @@
     "originalName": "MovingAverageConvergenceDivergenceIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "MovingAverageConvergenceDivergenceIndicator.cs",
- "mappedName": "MovingAverageConvergenceDivergenceIndicator"}   ],
+ "mappedName": "IgbMovingAverageConvergenceDivergenceIndicator"}   ],
    "members": [
         {
            "names": [
@@ -436,7 +436,7 @@
     "originalName": "NegativeVolumeIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "NegativeVolumeIndexIndicator.cs",
- "mappedName": "NegativeVolumeIndexIndicator"}   ],
+ "mappedName": "IgbNegativeVolumeIndexIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -447,7 +447,7 @@
     "originalName": "OnBalanceVolumeIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "OnBalanceVolumeIndicator.cs",
- "mappedName": "OnBalanceVolumeIndicator"}   ],
+ "mappedName": "IgbOnBalanceVolumeIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -458,7 +458,7 @@
     "originalName": "PercentagePriceOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "PercentagePriceOscillatorIndicator.cs",
- "mappedName": "PercentagePriceOscillatorIndicator"}   ],
+ "mappedName": "IgbPercentagePriceOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -478,7 +478,7 @@
     "originalName": "PercentageVolumeOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "PercentageVolumeOscillatorIndicator.cs",
- "mappedName": "PercentageVolumeOscillatorIndicator"}   ],
+ "mappedName": "IgbPercentageVolumeOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -498,7 +498,7 @@
     "originalName": "PositiveVolumeIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "PositiveVolumeIndexIndicator.cs",
- "mappedName": "PositiveVolumeIndexIndicator"}   ],
+ "mappedName": "IgbPositiveVolumeIndexIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -509,7 +509,7 @@
     "originalName": "PriceChannelOverlay",
    "names": [
         { "platform": "Blazor",     "fileName": "PriceChannelOverlay.cs",
- "mappedName": "PriceChannelOverlay"}   ],
+ "mappedName": "IgbPriceChannelOverlay"}   ],
    "members": [
         {
            "names": [
@@ -539,7 +539,7 @@
     "originalName": "PriceVolumeTrendIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "PriceVolumeTrendIndicator.cs",
- "mappedName": "PriceVolumeTrendIndicator"}   ],
+ "mappedName": "IgbPriceVolumeTrendIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -550,7 +550,7 @@
     "originalName": "RateOfChangeAndMomentumIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "RateOfChangeAndMomentumIndicator.cs",
- "mappedName": "RateOfChangeAndMomentumIndicator"}   ],
+ "mappedName": "IgbRateOfChangeAndMomentumIndicator"}   ],
    "members": [
         {
            "names": [
@@ -565,7 +565,7 @@
     "originalName": "RelativeStrengthIndexIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "RelativeStrengthIndexIndicator.cs",
- "mappedName": "RelativeStrengthIndexIndicator"}   ],
+ "mappedName": "IgbRelativeStrengthIndexIndicator"}   ],
    "members": [
         {
            "names": [
@@ -580,7 +580,7 @@
     "originalName": "SlowStochasticOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "SlowStochasticOscillatorIndicator.cs",
- "mappedName": "SlowStochasticOscillatorIndicator"}   ],
+ "mappedName": "IgbSlowStochasticOscillatorIndicator"}   ],
    "members": [
         {
            "names": [
@@ -595,7 +595,7 @@
     "originalName": "StandardDeviationIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "StandardDeviationIndicator.cs",
- "mappedName": "StandardDeviationIndicator"}   ],
+ "mappedName": "IgbStandardDeviationIndicator"}   ],
    "members": [
         {
            "names": [
@@ -610,7 +610,7 @@
     "originalName": "StochRSIIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "StochRSIIndicator.cs",
- "mappedName": "StochRSIIndicator"}   ],
+ "mappedName": "IgbStochRSIIndicator"}   ],
    "members": [
         {
            "names": [
@@ -625,7 +625,7 @@
     "originalName": "StrategyBasedIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "StrategyBasedIndicator.cs",
- "mappedName": "StrategyBasedIndicator"}   ],
+ "mappedName": "IgbStrategyBasedIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "FinancialIndicator",
@@ -636,7 +636,7 @@
     "originalName": "TRIXIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "TRIXIndicator.cs",
- "mappedName": "TRIXIndicator"}   ],
+ "mappedName": "IgbTRIXIndicator"}   ],
    "members": [
         {
            "names": [
@@ -651,7 +651,7 @@
     "originalName": "TypicalPriceIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "TypicalPriceIndicator.cs",
- "mappedName": "TypicalPriceIndicator"}   ],
+ "mappedName": "IgbTypicalPriceIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -662,7 +662,7 @@
     "originalName": "UltimateOscillatorIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "UltimateOscillatorIndicator.cs",
- "mappedName": "UltimateOscillatorIndicator"}   ],
+ "mappedName": "IgbUltimateOscillatorIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StrategyBasedIndicator",
@@ -673,7 +673,7 @@
     "originalName": "WeightedCloseIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "WeightedCloseIndicator.cs",
- "mappedName": "WeightedCloseIndicator"}   ],
+ "mappedName": "IgbWeightedCloseIndicator"}   ],
    "members": [
    ],
     "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
@@ -684,7 +684,7 @@
     "originalName": "WilliamsPercentRIndicator",
    "names": [
         { "platform": "Blazor",     "fileName": "WilliamsPercentRIndicator.cs",
- "mappedName": "WilliamsPercentRIndicator"}   ],
+ "mappedName": "IgbWilliamsPercentRIndicator"}   ],
    "members": [
         {
            "names": [

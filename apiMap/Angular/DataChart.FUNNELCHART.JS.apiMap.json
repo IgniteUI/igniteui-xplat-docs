@@ -1,0 +1,362 @@
+{
+"extraFiles": [
+"igx-funnel-chart-core-module.ts",
+"igx-funnel-chart-module.ts"
+],
+"types": [
+{
+    "originalName": "FunnelSliceDataContext",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-funnel-slice-data-context.ts",
+ "mappedName": "IgxFunnelSliceDataContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "itemOutline"}            ],
+           "originalName": "ItemOutline"
+       }   ],
+    "originalBaseTypeName": "DataContext",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelDataContext",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-funnel-data-context.ts",
+ "mappedName": "IgxFunnelDataContext"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceDisplay",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "FunnelSliceDisplay.ts",
+ "mappedName": "FunnelSliceDisplay"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "FunnelSliceDisplay", "mappedName": "Uniform"}            ],
+           "originalName": "Uniform"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "FunnelSliceDisplay", "mappedName": "Weighted"}            ],
+           "originalName": "Weighted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "OuterLabelAlignment",
+    "isEnum": true,
+   "names": [
+        { "platform": "Angular",     "fileName": "OuterLabelAlignment.ts",
+ "mappedName": "OuterLabelAlignment"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "OuterLabelAlignment", "mappedName": "Left"}            ],
+           "originalName": "Left"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "OuterLabelAlignment", "mappedName": "Right"}            ],
+           "originalName": "Right"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceClickedEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-funnel-slice-clicked-event-args.ts",
+ "mappedName": "IgxFunnelSliceClickedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "FunnelSliceEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-funnel-slice-event-args.ts",
+ "mappedName": "IgxFunnelSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
+           "originalName": "Item"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "XamFunnelChart",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-funnel-chart-component.ts",
+ "mappedName": "IgxFunnelChartComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
+           "originalName": "ValueMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "bottomEdgeWidth"}            ],
+           "originalName": "BottomEdgeWidth"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "innerLabelMemberPath"}            ],
+           "originalName": "InnerLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outerLabelMemberPath"}            ],
+           "originalName": "OuterLabelMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "innerLabelVisibility"}            ],
+           "originalName": "InnerLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "outerLabelVisibility"}            ],
+           "originalName": "OuterLabelVisibility"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "OuterLabelAlignment", "mappedName": "outerLabelAlignment"}            ],
+           "originalName": "OuterLabelAlignment"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "FunnelSliceDisplay", "mappedName": "funnelSliceDisplay"}            ],
+           "originalName": "FunnelSliceDisplay"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatInnerLabel"}            ],
+           "originalName": "FormatInnerLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "(arg1: any, arg2: number, arg3: any) => string", "mappedName": "formatOuterLabel"}            ],
+           "originalName": "FormatOuterLabel"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
+           "originalName": "TransitionDuration"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isInverted"}            ],
+           "originalName": "IsInverted"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useBezierCurve"}            ],
+           "originalName": "UseBezierCurve"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "allowSliceSelection"}            ],
+           "originalName": "AllowSliceSelection"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useUnselectedStyle"}            ],
+           "originalName": "UseUnselectedStyle"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "selectedSliceStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "selectedSliceStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "selectedSliceStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "selectedSliceStyle.opacity"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "unselectedSliceStyle.fill"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "stroke"}            ],
+           "originalName": "unselectedSliceStyle.stroke"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "strokeThickness"}            ],
+           "originalName": "unselectedSliceStyle.strokeThickness"
+       },
+        {
+           "isVirtual": true,
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "unselectedSliceStyle.opacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}            ],
+           "originalName": "LegendItemBadgeTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useOuterLabelsForLegend"}            ],
+           "originalName": "UseOuterLabelsForLegend"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textStyle"}            ],
+           "originalName": "TextStyle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outerLabelTextStyle"}            ],
+           "originalName": "OuterLabelTextStyle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "outlineThickness"}            ],
+           "originalName": "OutlineThickness"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
+           "originalName": "PixelScalingRatio"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outerLabelTextColor"}            ],
+           "originalName": "OuterLabelTextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "textColor"}            ],
+           "originalName": "TextColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyResized"}            ],
+           "originalName": "NotifyResized"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
+           "originalName": "NotifySetItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
+           "originalName": "NotifyClearItems"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
+           "originalName": "NotifyInsertItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
+           "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "toggleSelection"}            ],
+           "originalName": "ToggleSelection"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
+           "originalName": "ExportSerializedVisualData"
+       }   ],
+    "originalBaseTypeName": "Control",
+    "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+}
+]
+}

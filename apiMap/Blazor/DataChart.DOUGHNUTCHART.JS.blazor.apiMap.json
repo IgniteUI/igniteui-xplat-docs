@@ -4,7 +4,7 @@
     "originalName": "HierarchicalRingSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "HierarchicalRingSeries.cs",
- "mappedName": "HierarchicalRingSeries"}   ],
+ "mappedName": "IgbHierarchicalRingSeries"}   ],
    "members": [
         {
            "names": [
@@ -19,7 +19,7 @@
     "originalName": "HoleDimensionsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "HoleDimensionsChangedEventArgs.cs",
- "mappedName": "HoleDimensionsChangedEventArgs"}   ],
+ "mappedName": "IgbHoleDimensionsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -39,7 +39,7 @@
     "originalName": "Ring",
    "names": [
         { "platform": "Blazor",     "fileName": "Ring.cs",
- "mappedName": "Ring"}   ],
+ "mappedName": "IgbRing"}   ],
    "members": [
         {
            "names": [
@@ -63,7 +63,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "RingSeriesBase", "mappedName": "RingSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbRingSeriesBase", "mappedName": "RingSeries"}            ],
            "originalName": "RingSeries"
        },
         {
@@ -87,11 +87,11 @@
     "originalName": "RingSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "RingSeries.cs",
- "mappedName": "RingSeries"}   ],
+ "mappedName": "IgbRingSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Ring", "mappedName": "Ring"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbRing", "mappedName": "Ring"}            ],
            "originalName": "Ring"
        }   ],
     "originalBaseTypeName": "RingSeriesBase",
@@ -102,7 +102,7 @@
     "originalName": "RingSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "RingSeriesBase.cs",
- "mappedName": "RingSeriesBase"}   ],
+ "mappedName": "IgbRingSeriesBase"}   ],
    "members": [
         {
            "names": [
@@ -185,7 +185,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbLegendBase", "mappedName": "Legend"}            ],
            "originalName": "Legend"
        },
         {
@@ -195,7 +195,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
            "originalName": "LabelFormatSpecifiers"
        },
         {
@@ -205,7 +205,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "OthersLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "OthersLabelFormatSpecifiers"}            ],
            "originalName": "OthersLabelFormatSpecifiers"
        },
         {
@@ -215,7 +215,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LegendLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LegendLabelFormatSpecifiers"}            ],
            "originalName": "LegendLabelFormatSpecifiers"
        },
         {
@@ -225,7 +225,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LegendOthersLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LegendOthersLabelFormatSpecifiers"}            ],
            "originalName": "LegendOthersLabelFormatSpecifiers"
        },
         {
@@ -329,7 +329,7 @@
     "originalName": "XamDoughnutChart",
    "names": [
         { "platform": "Blazor",     "fileName": "DoughnutChart.cs",
- "mappedName": "DoughnutChart"}   ],
+ "mappedName": "IgbDoughnutChart"}   ],
    "members": [
         {
            "names": [
@@ -348,7 +348,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "RingSeriesCollection", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbRingSeriesCollection", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {

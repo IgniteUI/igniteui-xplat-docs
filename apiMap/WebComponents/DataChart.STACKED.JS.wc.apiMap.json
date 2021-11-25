@@ -92,6 +92,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "FragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -105,6 +110,21 @@
     "moduleName": "igc-bar-fragment-module.ts",
  "mappedName": "IgcBarFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "IgcNumericXAxisComponent", "mappedName": "barFragmentXAxis"}            ],
@@ -147,6 +167,16 @@
     "moduleName": "igc-column-fragment-module.ts",
  "mappedName": "IgcColumnFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -216,6 +246,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        }   ],
@@ -235,6 +270,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
        }   ],
     "originalBaseTypeName": "SplineFragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -248,6 +293,11 @@
     "moduleName": "igc-spline-fragment-module.ts",
  "mappedName": "IgcSplineFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -387,7 +437,11 @@
     "moduleName": "igc-stacked-area-series-module.ts",
  "mappedName": "IgcStackedAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -400,6 +454,16 @@
     "moduleName": "igc-stacked-bar-series-module.ts",
  "mappedName": "IgcStackedBarSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -442,6 +506,16 @@
     "moduleName": "igc-stacked-column-series-module.ts",
  "mappedName": "IgcStackedColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -576,6 +650,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "actualLegendItemBadgeShape"}            ],
+           "originalName": "ActualLegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "actualLegendItemBadgeMode"}            ],
+           "originalName": "ActualLegendItemBadgeMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "markerBrush"}            ],
            "originalName": "MarkerBrush"
        },
@@ -651,6 +745,36 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualMarkerFillOpacity"}            ],
+           "originalName": "ActualMarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "actualOutlineMode"}            ],
+           "originalName": "ActualOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "highlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "radiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -658,6 +782,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualRadiusX"}            ],
            "originalName": "ActualRadiusX"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "actualIsSplineShapePartOfRange"}            ],
+           "originalName": "ActualIsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
        },
         {
            "names": [
@@ -836,7 +970,11 @@
     "moduleName": "igc-stacked-line-series-module.ts",
  "mappedName": "IgcStackedLineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -954,6 +1092,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "simulateHover"}            ],
            "originalName": "SimulateHover"
        },
@@ -974,7 +1117,21 @@
     "moduleName": "igc-stacked-spline-area-series-module.ts",
  "mappedName": "IgcStackedSplineAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -987,7 +1144,16 @@
     "moduleName": "igc-stacked-spline-series-module.ts",
  "mappedName": "IgcStackedSplineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"

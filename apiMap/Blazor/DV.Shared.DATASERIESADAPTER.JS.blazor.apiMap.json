@@ -26,7 +26,7 @@
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSeriesAdapterImplementation", "mappedName": "owner"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSeriesAdapterImplementation", "mappedName": "owner"}            ],
            "originalName": "Owner"
        },
         {
@@ -41,7 +41,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSeriesCollection", "mappedName": "_dataSeries"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSeriesCollection", "mappedName": "_dataSeries"}            ],
            "originalName": "_dataSeries"
        },
         {

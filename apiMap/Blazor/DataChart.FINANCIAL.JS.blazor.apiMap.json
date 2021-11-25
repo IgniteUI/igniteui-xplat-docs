@@ -4,7 +4,7 @@
     "originalName": "FinancialEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialEventArgs.cs",
- "mappedName": "FinancialEventArgs"}   ],
+ "mappedName": "IgbFinancialEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -18,12 +18,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FinancialCalculationDataSource", "mappedName": "DataSource"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFinancialCalculationDataSource", "mappedName": "DataSource"}            ],
            "originalName": "DataSource"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FinancialCalculationSupportingCalculations", "mappedName": "SupportingCalculations"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFinancialCalculationSupportingCalculations", "mappedName": "SupportingCalculations"}            ],
            "originalName": "SupportingCalculations"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -34,7 +34,7 @@
     "originalName": "FinancialPriceSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialPriceSeries.cs",
- "mappedName": "FinancialPriceSeries"}   ],
+ "mappedName": "IgbFinancialPriceSeries"}   ],
    "members": [
         {
            "names": [
@@ -99,7 +99,7 @@
     "originalName": "FinancialSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialSeries.cs",
- "mappedName": "FinancialSeries"}   ],
+ "mappedName": "IgbFinancialSeries"}   ],
    "members": [
         {
            "names": [
@@ -108,12 +108,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAxisBase", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -279,46 +279,46 @@
     "originalName": "FinancialCalculationSupportingCalculations",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialCalculationSupportingCalculations.cs",
- "mappedName": "FinancialCalculationSupportingCalculations"}   ],
+ "mappedName": "IgbFinancialCalculationSupportingCalculations"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSupportingCalculation", "mappedName": "EMA"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSupportingCalculation", "mappedName": "EMA"}            ],
            "originalName": "EMA"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSupportingCalculation", "mappedName": "SMA"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSupportingCalculation", "mappedName": "SMA"}            ],
            "originalName": "SMA"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSupportingCalculation", "mappedName": "STDEV"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSupportingCalculation", "mappedName": "STDEV"}            ],
            "originalName": "STDEV"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColumnSupportingCalculation", "mappedName": "MovingSum"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColumnSupportingCalculation", "mappedName": "MovingSum"}            ],
            "originalName": "MovingSum"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSupportingCalculation", "mappedName": "ShortVolumeOscillatorAverage"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceSupportingCalculation", "mappedName": "ShortVolumeOscillatorAverage"}            ],
            "originalName": "ShortVolumeOscillatorAverage"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSupportingCalculation", "mappedName": "LongVolumeOscillatorAverage"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceSupportingCalculation", "mappedName": "LongVolumeOscillatorAverage"}            ],
            "originalName": "LongVolumeOscillatorAverage"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSupportingCalculation", "mappedName": "ShortPriceOscillatorAverage"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceSupportingCalculation", "mappedName": "ShortPriceOscillatorAverage"}            ],
            "originalName": "ShortPriceOscillatorAverage"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataSourceSupportingCalculation", "mappedName": "LongPriceOscillatorAverage"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataSourceSupportingCalculation", "mappedName": "LongPriceOscillatorAverage"}            ],
            "originalName": "LongPriceOscillatorAverage"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -327,7 +327,7 @@
     "originalName": "ColumnSupportingCalculation",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnSupportingCalculation.cs",
- "mappedName": "ColumnSupportingCalculation"}   ],
+ "mappedName": "IgbColumnSupportingCalculation"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SupportingCalculation",
@@ -338,7 +338,7 @@
     "originalName": "DataSourceSupportingCalculation",
    "names": [
         { "platform": "Blazor",     "fileName": "DataSourceSupportingCalculation.cs",
- "mappedName": "DataSourceSupportingCalculation"}   ],
+ "mappedName": "IgbDataSourceSupportingCalculation"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SupportingCalculation",
@@ -349,7 +349,7 @@
     "originalName": "CalculatedColumn",
    "names": [
         { "platform": "Blazor",     "fileName": "CalculatedColumn.cs",
- "mappedName": "CalculatedColumn"}   ],
+ "mappedName": "IgbCalculatedColumn"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -358,21 +358,21 @@
     "originalName": "FinancialCalculationDataSource",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialCalculationDataSource.cs",
- "mappedName": "FinancialCalculationDataSource"}   ],
+ "mappedName": "IgbFinancialCalculationDataSource"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CalculatedColumn", "mappedName": "TypicalColumn"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCalculatedColumn", "mappedName": "TypicalColumn"}            ],
            "originalName": "TypicalColumn"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CalculatedColumn", "mappedName": "TrueRange"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCalculatedColumn", "mappedName": "TrueRange"}            ],
            "originalName": "TrueRange"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CalculatedColumn", "mappedName": "TrueLow"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCalculatedColumn", "mappedName": "TrueLow"}            ],
            "originalName": "TrueLow"
        },
         {

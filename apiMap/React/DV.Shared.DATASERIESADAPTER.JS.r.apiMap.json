@@ -1101,6 +1101,11 @@
        },
         {
            "names": [
+               { "platform": "React",  "mappedType": "DataSeriesMarker", "mappedName": "Smart"}            ],
+           "originalName": "Smart"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],

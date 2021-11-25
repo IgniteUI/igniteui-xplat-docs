@@ -63,6 +63,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "getPattern"}            ],
+           "originalName": "GetPattern"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "void", "mappedName": "init"}            ],
            "originalName": ".ctor"
        }   ],
@@ -72,7 +77,7 @@
     "originalName": "DatePicker",
    "names": [
         { "platform": "Blazor",     "fileName": "DatePicker.cs",
- "mappedName": "DatePicker"}   ],
+ "mappedName": "IgbDatePicker"}   ],
    "members": [
         {
            "names": [
@@ -176,6 +181,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDisabled"}            ],
+           "originalName": "IsDisabled"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "Select"}            ],
            "originalName": "Select"
        },
@@ -195,7 +205,7 @@
     "originalName": "GotFocusEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "GotFocusEventArgs.cs",
- "mappedName": "GotFocusEventArgs"}   ],
+ "mappedName": "IgbGotFocusEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -206,7 +216,7 @@
     "originalName": "LostFocusEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "LostFocusEventArgs.cs",
- "mappedName": "LostFocusEventArgs"}   ],
+ "mappedName": "IgbLostFocusEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",

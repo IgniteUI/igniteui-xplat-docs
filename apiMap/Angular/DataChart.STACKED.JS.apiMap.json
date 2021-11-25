@@ -92,6 +92,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "FragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -105,6 +110,21 @@
     "moduleName": "igx-bar-fragment-module.ts",
  "mappedName": "IgxBarFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "IgxNumericXAxisComponent", "mappedName": "barFragmentXAxis"}            ],
@@ -147,6 +167,16 @@
     "moduleName": "igx-column-fragment-module.ts",
  "mappedName": "IgxColumnFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -216,6 +246,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
        }   ],
@@ -235,6 +270,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
        }   ],
     "originalBaseTypeName": "SplineFragmentBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -248,6 +293,11 @@
     "moduleName": "igx-spline-fragment-module.ts",
  "mappedName": "IgxSplineFragmentComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
@@ -387,7 +437,11 @@
     "moduleName": "igx-stacked-area-series-module.ts",
  "mappedName": "IgxStackedAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -400,6 +454,16 @@
     "moduleName": "igx-stacked-bar-series-module.ts",
  "mappedName": "IgxStackedBarSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -442,6 +506,16 @@
     "moduleName": "igx-stacked-column-series-module.ts",
  "mappedName": "IgxStackedColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
@@ -576,6 +650,26 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendItemBadgeShape", "mappedName": "actualLegendItemBadgeShape"}            ],
+           "originalName": "ActualLegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "LegendItemBadgeMode", "mappedName": "actualLegendItemBadgeMode"}            ],
+           "originalName": "ActualLegendItemBadgeMode"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "markerBrush"}            ],
            "originalName": "MarkerBrush"
        },
@@ -651,6 +745,36 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualMarkerFillOpacity"}            ],
+           "originalName": "ActualMarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "SeriesOutlineMode", "mappedName": "actualOutlineMode"}            ],
+           "originalName": "ActualOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "highlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -658,6 +782,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "actualRadiusX"}            ],
            "originalName": "ActualRadiusX"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "actualIsSplineShapePartOfRange"}            ],
+           "originalName": "ActualIsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
        },
         {
            "names": [
@@ -836,7 +970,11 @@
     "moduleName": "igx-stacked-line-series-module.ts",
  "mappedName": "IgxStackedLineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -954,6 +1092,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "simulateHover"}            ],
            "originalName": "SimulateHover"
        },
@@ -974,7 +1117,21 @@
     "moduleName": "igx-stacked-spline-area-series-module.ts",
  "mappedName": "IgxStackedSplineAreaSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -987,7 +1144,16 @@
     "moduleName": "igx-stacked-spline-series-module.ts",
  "mappedName": "IgxStackedSplineSeriesComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"

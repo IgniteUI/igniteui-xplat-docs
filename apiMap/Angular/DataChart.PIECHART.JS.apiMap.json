@@ -255,6 +255,116 @@
            "names": [
                { "platform": "Angular",  "mappedType": "any", "mappedName": "originalEvent"}            ],
            "originalName": "OriginalEvent"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SliceEventArgs",
+   "names": [
+        { "platform": "Angular",     "fileName": "igx-slice-event-args.ts",
+ "mappedName": "IgxSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSelected"}            ],
+           "originalName": "IsSelected"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isExploded"}            ],
+           "originalName": "IsExploded"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isOthersSlice"}            ],
+           "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgPoint", "mappedName": "origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "startAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "number", "mappedName": "endAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "dataContext"}            ],
+           "originalName": "DataContext"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "any", "mappedName": "originalEvent"}            ],
+           "originalName": "OriginalEvent"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -300,6 +410,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "string", "mappedName": "labelInnerColor"}            ],
            "originalName": "LabelInnerColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualLabelOuterColor"}            ],
+           "originalName": "ActualLabelOuterColor"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualLabelInnerColor"}            ],
+           "originalName": "ActualLabelInnerColor"
        },
         {
            "names": [
@@ -431,8 +551,18 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "actualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "string[]", "mappedName": "outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "actualOutlines"}            ],
+           "originalName": "ActualOutlines"
        },
         {
            "names": [
@@ -488,6 +618,16 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSurfaceInteractionDisabled"}            ],
            "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "shouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [

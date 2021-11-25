@@ -4,11 +4,11 @@
     "originalName": "ColumnPinning",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnPinning.cs",
- "mappedName": "ColumnPinning"}   ],
+ "mappedName": "IgbColumnPinning"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "TargetGrid"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbDataGrid", "mappedName": "TargetGrid"}            ],
            "originalName": "TargetGrid"
        },
         {

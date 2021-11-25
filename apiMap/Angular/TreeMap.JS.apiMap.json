@@ -321,6 +321,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySizeChanged"}            ],
+           "originalName": "NotifySizeChanged"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
            "originalName": "ExportSerializedVisualData"
        },
@@ -363,6 +368,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
            "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "method", "mappedName": "simulateHover"}            ],
+           "originalName": "SimulateHover"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts.Implementation"
 },

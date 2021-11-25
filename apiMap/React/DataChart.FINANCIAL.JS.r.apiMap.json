@@ -43,6 +43,11 @@
    "members": [
         {
            "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isFinancialSeries"}            ],
+           "originalName": "IsFinancialSeries"
+       },
+        {
+           "names": [
                { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
            "originalName": "TrendLineType"
        },

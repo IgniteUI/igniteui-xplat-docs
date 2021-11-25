@@ -44,6 +44,11 @@
    "members": [
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isFinancialSeries"}            ],
+           "originalName": "IsFinancialSeries"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
            "originalName": "TrendLineType"
        },

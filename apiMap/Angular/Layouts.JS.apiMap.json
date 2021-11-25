@@ -154,6 +154,11 @@
        },
         {
            "names": [
+               { "platform": "Angular",  "mappedType": "string", "mappedName": "background"}            ],
+           "originalName": "Background"
+       },
+        {
+           "names": [
                { "platform": "Angular",  "mappedType": "method", "mappedName": "close"}            ],
            "originalName": "Close"
        },

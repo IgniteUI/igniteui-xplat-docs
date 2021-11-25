@@ -4,7 +4,7 @@
     "originalName": "KeyEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "KeyEventArgs.cs",
- "mappedName": "KeyEventArgs"}   ],
+ "mappedName": "IgbKeyEventArgs"}   ],
    "members": [
         {
            "names": [

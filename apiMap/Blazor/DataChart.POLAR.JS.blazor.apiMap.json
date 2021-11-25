@@ -4,7 +4,7 @@
     "originalName": "PolarAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarAreaSeries.cs",
- "mappedName": "PolarAreaSeries"}   ],
+ "mappedName": "IgbPolarAreaSeries"}   ],
    "members": [
         {
            "names": [
@@ -19,7 +19,7 @@
     "originalName": "PolarBase",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarBase.cs",
- "mappedName": "PolarBase"}   ],
+ "mappedName": "IgbPolarBase"}   ],
    "members": [
         {
            "names": [
@@ -33,12 +33,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericAngleAxis", "mappedName": "AngleAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericAngleAxis", "mappedName": "AngleAxis"}            ],
            "originalName": "AngleAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericRadiusAxis", "mappedName": "RadiusAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericRadiusAxis", "mappedName": "RadiusAxis"}            ],
            "originalName": "RadiusAxis"
        },
         {
@@ -159,7 +159,7 @@
     "originalName": "PolarLineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarLineSeries.cs",
- "mappedName": "PolarLineSeries"}   ],
+ "mappedName": "IgbPolarLineSeries"}   ],
    "members": [
         {
            "names": [
@@ -174,7 +174,7 @@
     "originalName": "PolarLineSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarLineSeriesBase.cs",
- "mappedName": "PolarLineSeriesBase"}   ],
+ "mappedName": "IgbPolarLineSeriesBase"}   ],
    "members": [
    ],
     "originalBaseTypeName": "PolarBase",
@@ -185,7 +185,7 @@
     "originalName": "PolarScatterSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarScatterSeries.cs",
- "mappedName": "PolarScatterSeries"}   ],
+ "mappedName": "IgbPolarScatterSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "PolarBase",
@@ -196,7 +196,7 @@
     "originalName": "PolarSplineAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarSplineAreaSeries.cs",
- "mappedName": "PolarSplineAreaSeries"}   ],
+ "mappedName": "IgbPolarSplineAreaSeries"}   ],
    "members": [
         {
            "names": [
@@ -211,7 +211,7 @@
     "originalName": "PolarSplineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PolarSplineSeries.cs",
- "mappedName": "PolarSplineSeries"}   ],
+ "mappedName": "IgbPolarSplineSeries"}   ],
    "members": [
         {
            "names": [

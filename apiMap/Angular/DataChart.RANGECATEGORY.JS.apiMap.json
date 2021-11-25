@@ -15,6 +15,11 @@
            "names": [
                { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
        }   ],
     "originalBaseTypeName": "HorizontalRangeCategorySeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -143,6 +148,16 @@
     "moduleName": "igx-range-column-series-module.ts",
  "mappedName": "IgxRangeColumnSeriesComponent"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
+           "originalName": "IsMarkerlessDisplayPreferred"
+       },
         {
            "names": [
                { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],

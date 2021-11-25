@@ -4,7 +4,7 @@
     "originalName": "StackedSeriesCreatedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedSeriesCreatedEventArgs.cs",
- "mappedName": "StackedSeriesCreatedEventArgs"}   ],
+ "mappedName": "IgbStackedSeriesCreatedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -58,7 +58,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Style", "mappedName": "MarkerStyle"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbStyle", "mappedName": "MarkerStyle"}            ],
            "originalName": "MarkerStyle"
        },
         {
@@ -84,7 +84,7 @@
     "originalName": "AreaFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "AreaFragment.cs",
- "mappedName": "AreaFragment"}   ],
+ "mappedName": "IgbAreaFragment"}   ],
    "members": [
    ],
     "originalBaseTypeName": "FragmentBase",
@@ -95,7 +95,7 @@
     "originalName": "BarFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "BarFragment.cs",
- "mappedName": "BarFragment"}   ],
+ "mappedName": "IgbBarFragment"}   ],
    "members": [
         {
            "names": [
@@ -120,7 +120,7 @@
     "originalName": "ColumnFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnFragment.cs",
- "mappedName": "ColumnFragment"}   ],
+ "mappedName": "IgbColumnFragment"}   ],
    "members": [
         {
            "names": [
@@ -155,7 +155,7 @@
     "originalName": "FragmentBase",
    "names": [
         { "platform": "Blazor",     "fileName": "FragmentBase.cs",
- "mappedName": "FragmentBase"}   ],
+ "mappedName": "IgbFragmentBase"}   ],
    "members": [
         {
            "names": [
@@ -170,7 +170,7 @@
     "originalName": "LineFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "LineFragment.cs",
- "mappedName": "LineFragment"}   ],
+ "mappedName": "IgbLineFragment"}   ],
    "members": [
    ],
     "originalBaseTypeName": "FragmentBase",
@@ -181,7 +181,7 @@
     "originalName": "SplineAreaFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineAreaFragment.cs",
- "mappedName": "SplineAreaFragment"}   ],
+ "mappedName": "IgbSplineAreaFragment"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SplineFragmentBase",
@@ -192,7 +192,7 @@
     "originalName": "SplineFragment",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineFragment.cs",
- "mappedName": "SplineFragment"}   ],
+ "mappedName": "IgbSplineFragment"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SplineFragmentBase",
@@ -203,7 +203,7 @@
     "originalName": "SplineFragmentBase",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineFragmentBase.cs",
- "mappedName": "SplineFragmentBase"}   ],
+ "mappedName": "IgbSplineFragmentBase"}   ],
    "members": [
         {
            "names": [
@@ -218,7 +218,7 @@
     "originalName": "Stacked100AreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100AreaSeries.cs",
- "mappedName": "Stacked100AreaSeries"}   ],
+ "mappedName": "IgbStacked100AreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedAreaSeries",
@@ -229,7 +229,7 @@
     "originalName": "Stacked100BarSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100BarSeries.cs",
- "mappedName": "Stacked100BarSeries"}   ],
+ "mappedName": "IgbStacked100BarSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedBarSeries",
@@ -240,7 +240,7 @@
     "originalName": "Stacked100ColumnSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100ColumnSeries.cs",
- "mappedName": "Stacked100ColumnSeries"}   ],
+ "mappedName": "IgbStacked100ColumnSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedColumnSeries",
@@ -251,7 +251,7 @@
     "originalName": "Stacked100LineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100LineSeries.cs",
- "mappedName": "Stacked100LineSeries"}   ],
+ "mappedName": "IgbStacked100LineSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedLineSeries",
@@ -262,7 +262,7 @@
     "originalName": "Stacked100SplineAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100SplineAreaSeries.cs",
- "mappedName": "Stacked100SplineAreaSeries"}   ],
+ "mappedName": "IgbStacked100SplineAreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedSplineAreaSeries",
@@ -273,7 +273,7 @@
     "originalName": "Stacked100SplineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "Stacked100SplineSeries.cs",
- "mappedName": "Stacked100SplineSeries"}   ],
+ "mappedName": "IgbStacked100SplineSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "StackedSplineSeries",
@@ -284,7 +284,7 @@
     "originalName": "StackedAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedAreaSeries.cs",
- "mappedName": "StackedAreaSeries"}   ],
+ "mappedName": "IgbStackedAreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
@@ -295,7 +295,7 @@
     "originalName": "StackedBarSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedBarSeries.cs",
- "mappedName": "StackedBarSeries"}   ],
+ "mappedName": "IgbStackedBarSeries"}   ],
    "members": [
         {
            "names": [
@@ -335,7 +335,7 @@
     "originalName": "StackedColumnSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedColumnSeries.cs",
- "mappedName": "StackedColumnSeries"}   ],
+ "mappedName": "IgbStackedColumnSeries"}   ],
    "members": [
         {
            "names": [
@@ -360,7 +360,7 @@
     "originalName": "StackedFragmentSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedFragmentSeries.cs",
- "mappedName": "StackedFragmentSeries"}   ],
+ "mappedName": "IgbStackedFragmentSeries"}   ],
    "members": [
         {
            "names": [
@@ -469,6 +469,26 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeShape", "mappedName": "LegendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeMode", "mappedName": "LegendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeShape", "mappedName": "ActualLegendItemBadgeShape"}            ],
+           "originalName": "ActualLegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "LegendItemBadgeMode", "mappedName": "ActualLegendItemBadgeMode"}            ],
+           "originalName": "ActualLegendItemBadgeMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
            "originalName": "MarkerBrush"
        },
@@ -539,6 +559,36 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMarkerFillOpacity"}            ],
+           "originalName": "ActualMarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesOutlineMode", "mappedName": "OutlineMode"}            ],
+           "originalName": "OutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "SeriesOutlineMode", "mappedName": "ActualOutlineMode"}            ],
+           "originalName": "ActualOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HighlightingFadeOpacity"}            ],
+           "originalName": "HighlightingFadeOpacity"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualHighlightingFadeOpacity"}            ],
+           "originalName": "ActualHighlightingFadeOpacity"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusX"}            ],
            "originalName": "RadiusX"
        },
@@ -546,6 +596,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualRadiusX"}            ],
            "originalName": "ActualRadiusX"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ActualIsSplineShapePartOfRange"}            ],
+           "originalName": "ActualIsSplineShapePartOfRange"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
        },
         {
            "names": [
@@ -720,7 +780,7 @@
     "originalName": "StackedLineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedLineSeries.cs",
- "mappedName": "StackedLineSeries"}   ],
+ "mappedName": "IgbStackedLineSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
@@ -731,16 +791,16 @@
     "originalName": "HorizontalStackedSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "HorizontalStackedSeriesBase.cs",
- "mappedName": "HorizontalStackedSeriesBase"}   ],
+ "mappedName": "IgbHorizontalStackedSeriesBase"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAxisBase", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -771,16 +831,16 @@
     "originalName": "VerticalStackedSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "VerticalStackedSeriesBase.cs",
- "mappedName": "VerticalStackedSeriesBase"}   ],
+ "mappedName": "IgbVerticalStackedSeriesBase"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -811,11 +871,11 @@
     "originalName": "StackedSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedSeriesBase.cs",
- "mappedName": "StackedSeriesBase"}   ],
+ "mappedName": "IgbStackedSeriesBase"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "StackedSeriesCollection", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbStackedSeriesCollection", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {
@@ -827,6 +887,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ReverseLegendOrder"}            ],
            "originalName": "ReverseLegendOrder"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
        },
         {
            "names": [
@@ -846,9 +911,13 @@
     "originalName": "StackedSplineAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedSplineAreaSeries.cs",
- "mappedName": "StackedSplineAreaSeries"}   ],
+ "mappedName": "IgbStackedSplineAreaSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -857,9 +926,13 @@
     "originalName": "StackedSplineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StackedSplineSeries.cs",
- "mappedName": "StackedSplineSeries"}   ],
+ "mappedName": "IgbStackedSplineSeries"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       }   ],
     "originalBaseTypeName": "HorizontalStackedSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
     "originalNamespace": "Infragistics.Controls.Charts"

@@ -4,7 +4,7 @@
     "originalName": "Treemap",
    "names": [
         { "platform": "Blazor",     "fileName": "Treemap.cs",
- "mappedName": "Treemap"}   ],
+ "mappedName": "IgbTreemap"}   ],
    "members": [
         {
            "names": [
@@ -53,7 +53,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TreemapNodeStyleMappingCollection", "mappedName": "StyleMappings"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTreemapNodeStyleMappingCollection", "mappedName": "StyleMappings"}            ],
            "originalName": "StyleMappings"
        },
         {
@@ -318,6 +318,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySizeChanged"}            ],
+           "originalName": "NotifySizeChanged"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
            "originalName": "ExportSerializedVisualData"
        },
@@ -360,6 +365,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
            "originalName": "NotifyRemoveItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "SimulateHover"}            ],
+           "originalName": "SimulateHover"
        }   ],
     "originalNamespace": "Infragistics.Controls.Charts.Implementation"
 },
@@ -367,7 +377,7 @@
     "originalName": "TreemapNodeStyleMapping",
    "names": [
         { "platform": "Blazor",     "fileName": "TreemapNodeStyleMapping.cs",
- "mappedName": "TreemapNodeStyleMapping"}   ],
+ "mappedName": "IgbTreemapNodeStyleMapping"}   ],
    "members": [
         {
            "names": [
@@ -402,7 +412,7 @@
     "originalName": "TreemapNodeStyle",
    "names": [
         { "platform": "Blazor",     "fileName": "TreemapNodeStyle.cs",
- "mappedName": "TreemapNodeStyle"}   ],
+ "mappedName": "IgbTreemapNodeStyle"}   ],
    "members": [
         {
            "names": [
@@ -510,7 +520,7 @@
     "originalName": "TreemapNodeStylingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TreemapNodeStylingEventArgs.cs",
- "mappedName": "TreemapNodeStylingEventArgs"}   ],
+ "mappedName": "IgbTreemapNodeStylingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -564,7 +574,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TreemapNodeStyle", "mappedName": "Style"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTreemapNodeStyle", "mappedName": "Style"}            ],
            "originalName": "Style"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -575,7 +585,7 @@
     "originalName": "TreemapNodePointerEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "TreemapNodePointerEventArgs.cs",
- "mappedName": "TreemapNodePointerEventArgs"}   ],
+ "mappedName": "IgbTreemapNodePointerEventArgs"}   ],
    "members": [
         {
            "names": [

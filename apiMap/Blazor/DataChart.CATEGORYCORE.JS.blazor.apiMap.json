@@ -4,7 +4,7 @@
     "originalName": "CategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "CategorySeries.cs",
- "mappedName": "CategorySeries"}   ],
+ "mappedName": "IgbCategorySeries"}   ],
    "members": [
         {
            "names": [

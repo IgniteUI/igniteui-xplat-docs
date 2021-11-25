@@ -4,7 +4,7 @@
     "originalName": "StockChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "StockChangedEventArgs.cs",
- "mappedName": "StockChangedEventArgs"}   ],
+ "mappedName": "IgbStockChangedEventArgs"}   ],
    "members": [
         {
            "names": [

@@ -4,7 +4,7 @@
     "originalName": "FinancialChart",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialChart.cs",
- "mappedName": "FinancialChart"}   ],
+ "mappedName": "IgbFinancialChart"}   ],
    "members": [
         {
            "names": [
@@ -88,12 +88,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FinancialIndicatorTypeCollection", "mappedName": "IndicatorTypes"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFinancialIndicatorTypeCollection", "mappedName": "IndicatorTypes"}            ],
            "originalName": "IndicatorTypes"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FinancialOverlayTypeCollection", "mappedName": "OverlayTypes"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFinancialOverlayTypeCollection", "mappedName": "OverlayTypes"}            ],
            "originalName": "OverlayTypes"
        },
         {
@@ -105,11 +105,6 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "Resolution"}            ],
            "originalName": "Resolution"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "YAxisLabelLocation"}            ],
-           "originalName": "YAxisLabelLocation"
        },
         {
            "names": [
@@ -168,12 +163,17 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OverlayMultiplier"}            ],
+           "originalName": "OverlayMultiplier"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "double", "mappedName": "IndicatorThickness"}            ],
            "originalName": "IndicatorThickness"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "IndicatorDisplayTypeCollection", "mappedName": "IndicatorDisplayTypes"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbIndicatorDisplayTypeCollection", "mappedName": "IndicatorDisplayTypes"}            ],
            "originalName": "IndicatorDisplayTypes"
        },
         {
@@ -208,7 +208,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FinancialChartRangeSelectorOptionCollection", "mappedName": "RangeSelectorOptions"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFinancialChartRangeSelectorOptionCollection", "mappedName": "RangeSelectorOptions"}            ],
            "originalName": "RangeSelectorOptions"
        },
         {
@@ -248,7 +248,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TimeAxisBreakCollection", "mappedName": "XAxisBreaks"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTimeAxisBreakCollection", "mappedName": "XAxisBreaks"}            ],
            "originalName": "XAxisBreaks"
        },
         {
@@ -289,11 +289,11 @@
     "originalName": "FinancialChartCustomIndicatorArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialChartCustomIndicatorArgs.cs",
- "mappedName": "FinancialChartCustomIndicatorArgs"}   ],
+ "mappedName": "IgbFinancialChartCustomIndicatorArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSeries", "mappedName": "Series"}            ],
            "originalName": "Series"
        },
         {

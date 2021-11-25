@@ -1,0 +1,25 @@
+{
+"extraFiles": [
+"igr-summary-chooser-module.ts"
+],
+"types": [
+{
+    "originalName": "SummaryChangedEventArgs",
+   "names": [
+        { "platform": "React",     "fileName": "igr-summary-changed-event-args.ts",
+ "mappedName": "IgrSummaryChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "string", "mappedName": "iD"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "React",  "mappedType": "boolean", "mappedName": "isEnabled"}            ],
+           "originalName": "IsEnabled"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+}
+]
+}

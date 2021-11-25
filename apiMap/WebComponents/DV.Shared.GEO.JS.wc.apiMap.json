@@ -8,7 +8,7 @@
     "originalName": "HeatTileGenerator",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-heat-tile-generator.ts",
- "mappedName": "HeatTileGenerator"}   ],
+ "mappedName": "IgcHeatTileGenerator"}   ],
    "members": [
         {
            "names": [

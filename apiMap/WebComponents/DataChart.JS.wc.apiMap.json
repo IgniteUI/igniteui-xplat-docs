@@ -37,6 +37,31 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "brushes"}            ],
+           "originalName": "Brushes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
+           "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
+           "originalName": "MarkerBrushes"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerOutlines"}            ],
+           "originalName": "MarkerOutlines"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "markerAutomaticBehavior"}            ],
+           "originalName": "MarkerAutomaticBehavior"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgPoint", "mappedName": "crosshairPoint"}            ],
            "originalName": "CrosshairPoint"
        },
@@ -52,6 +77,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldSimulateHoverMoveCrosshairPoint"}            ],
+           "originalName": "ShouldSimulateHoverMoveCrosshairPoint"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "SeriesHighlightingMode", "mappedName": "highlightingMode"}            ],
            "originalName": "HighlightingMode"
        },
@@ -64,6 +94,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "legendHighlightingMode"}            ],
            "originalName": "LegendHighlightingMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
        },
         {
            "names": [
@@ -344,6 +384,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "hideToolTip"}            ],
            "originalName": "HideToolTip"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "simulateHover"}            ],
+           "originalName": "SimulateHover"
        },
         {
            "names": [
@@ -656,6 +701,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldAvoidAnnotationCollisions"}            ],
+           "originalName": "ShouldAvoidAnnotationCollisions"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldKeepAnnotationsInView"}            ],
+           "originalName": "ShouldKeepAnnotationsInView"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useEnhancedIntervalManagement"}            ],
            "originalName": "UseEnhancedIntervalManagement"
        },
@@ -663,6 +718,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "enhancedIntervalMinimumCharacters"}            ],
            "originalName": "EnhancedIntervalMinimumCharacters"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "enhancedIntervalPreferMoreCategoryLabels"}            ],
+           "originalName": "EnhancedIntervalPreferMoreCategoryLabels"
        },
         {
            "isVirtual": true,
@@ -1432,6 +1492,197 @@
     "originalNamespace": "Infragistics.Controls.Charts"
 },
 {
+    "originalName": "LegendItemBadgeMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LegendItemBadgeMode.ts",
+ "mappedName": "LegendItemBadgeMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "Simplified"}            ],
+           "originalName": "Simplified"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "MatchSeries"}            ],
+           "originalName": "MatchSeries"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "LegendItemBadgeShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LegendItemBadgeShape.ts",
+ "mappedName": "LegendItemBadgeShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Automatic"}            ],
+           "originalName": "Automatic"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Circle"}            ],
+           "originalName": "Circle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Line"}            ],
+           "originalName": "Line"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Square"}            ],
+           "originalName": "Square"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Marker"}            ],
+           "originalName": "Marker"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Bar"}            ],
+           "originalName": "Bar"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "Hidden"}            ],
+           "originalName": "Hidden"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MarkerAutomaticBehavior",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MarkerAutomaticBehavior.ts",
+ "mappedName": "MarkerAutomaticBehavior"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "CircleSmart"}            ],
+           "originalName": "CircleSmart"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "SmartIndexed"}            ],
+           "originalName": "SmartIndexed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Indexed"}            ],
+           "originalName": "Indexed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Circle"}            ],
+           "originalName": "Circle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Triangle"}            ],
+           "originalName": "Triangle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Pyramid"}            ],
+           "originalName": "Pyramid"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Square"}            ],
+           "originalName": "Square"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Diamond"}            ],
+           "originalName": "Diamond"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Pentagon"}            ],
+           "originalName": "Pentagon"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Hexagon"}            ],
+           "originalName": "Hexagon"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Tetragram"}            ],
+           "originalName": "Tetragram"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Pentagram"}            ],
+           "originalName": "Pentagram"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerAutomaticBehavior", "mappedName": "Hexagram"}            ],
+           "originalName": "Hexagram"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MarkerFillMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MarkerFillMode.ts",
+ "mappedName": "MarkerFillMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "Normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "MatchMarkerOutline"}            ],
+           "originalName": "MatchMarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
     "originalName": "ScatterItemSearchMode",
     "isEnum": true,
    "names": [
@@ -1618,6 +1869,64 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "LegendHighlightingMode", "mappedName": "MatchSeries"}            ],
            "originalName": "MatchSeries"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "MarkerOutlineMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MarkerOutlineMode.ts",
+ "mappedName": "MarkerOutlineMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "Normal"}            ],
+           "originalName": "Normal"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "MatchMarkerBrush"}            ],
+           "originalName": "MatchMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SeriesOutlineMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SeriesOutlineMode.ts",
+ "mappedName": "SeriesOutlineMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "Auto"}            ],
+           "originalName": "Auto"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "Visible"}            ],
+           "originalName": "Visible"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "Collapsed"}            ],
+           "originalName": "Collapsed"
        },
         {
            "names": [
@@ -2088,11 +2397,6 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "autoExpandMarginMaximumValue"}            ],
            "originalName": "AutoExpandMarginMaximumValue"
        },
@@ -2105,21 +2409,6 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shouldAutoExpandMarginForInitialLabels"}            ],
            "originalName": "ShouldAutoExpandMarginForInitialLabels"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
-           "originalName": "MarkerBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "markerOutlines"}            ],
-           "originalName": "MarkerOutlines"
        },
         {
            "names": [
@@ -2185,6 +2474,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "refreshComputedPlotAreaMargin"}            ],
            "originalName": "RefreshComputedPlotAreaMargin"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "recalculateMarginAutoExpansion"}            ],
+           "originalName": "RecalculateMarginAutoExpansion"
        },
         {
            "names": [
@@ -2254,6 +2548,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "MarkerType", "mappedName": "markerType"}            ],
            "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerOutlineMode", "mappedName": "markerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MarkerFillMode", "mappedName": "markerFillMode"}            ],
+           "originalName": "MarkerFillMode"
        },
         {
            "names": [
@@ -2949,6 +3253,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAnnotationCrosshairLayer"}            ],
+           "originalName": "IsAnnotationCrosshairLayer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAnnotationCalloutLayer"}            ],
+           "originalName": "IsAnnotationCalloutLayer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAnnotationHoverLayer"}            ],
+           "originalName": "IsAnnotationHoverLayer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAnnotationFinalValue"}            ],
+           "originalName": "IsAnnotationFinalValue"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
            "originalName": "IsVertical"
        },
@@ -2961,6 +3285,76 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isAreaOrLine"}            ],
            "originalName": "IsAreaOrLine"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isArea"}            ],
+           "originalName": "IsArea"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineOnly"}            ],
+           "originalName": "IsLineOnly"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLineContour"}            ],
+           "originalName": "IsLineContour"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isSpline"}            ],
+           "originalName": "IsSpline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumn"}            ],
+           "originalName": "IsColumn"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isBar"}            ],
+           "originalName": "IsBar"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isWaterfall"}            ],
+           "originalName": "IsWaterfall"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolyline"}            ],
+           "originalName": "IsPolyline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPolygon"}            ],
+           "originalName": "IsPolygon"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPixel"}            ],
+           "originalName": "IsPixel"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isPie"}            ],
+           "originalName": "IsPie"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isTile"}            ],
+           "originalName": "IsTile"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isStep"}            ],
+           "originalName": "IsStep"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isShapeControl"}            ],
+           "originalName": "IsShapeControl"
        },
         {
            "names": [
@@ -3014,6 +3408,31 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "hasOnlyMarkers"}            ],
+           "originalName": "HasOnlyMarkers"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialSeries"}            ],
+           "originalName": "IsFinancialSeries"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialOverlay"}            ],
+           "originalName": "IsFinancialOverlay"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialIndicator"}            ],
+           "originalName": "IsFinancialIndicator"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancialWaterfall"}            ],
+           "originalName": "IsFinancialWaterfall"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isDefaultCrosshairBehaviorDisabled"}            ],
            "originalName": "IsDefaultCrosshairBehaviorDisabled"
        },
@@ -3049,6 +3468,31 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "actualLegendItemBadgeTemplate"}            ],
+           "originalName": "ActualLegendItemBadgeTemplate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLegendItemBadgeOutline"}            ],
+           "originalName": "ActualLegendItemBadgeOutline"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualLegendItemBadgeBrush"}            ],
+           "originalName": "ActualLegendItemBadgeBrush"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}            ],
+           "originalName": "LegendItemBadgeShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}            ],
+           "originalName": "LegendItemBadgeMode"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgDataTemplate", "mappedName": "legendItemTemplate"}            ],
            "originalName": "LegendItemTemplate"
        },
@@ -3079,6 +3523,26 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "visibleRangeMarginTop"}            ],
+           "originalName": "VisibleRangeMarginTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "visibleRangeMarginBottom"}            ],
+           "originalName": "VisibleRangeMarginBottom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "visibleRangeMarginLeft"}            ],
+           "originalName": "VisibleRangeMarginLeft"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "visibleRangeMarginRight"}            ],
+           "originalName": "VisibleRangeMarginRight"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "title"}            ],
            "originalName": "Title"
        },
@@ -3106,6 +3570,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "thickness"}            ],
            "originalName": "Thickness"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualThickness"}            ],
+           "originalName": "ActualThickness"
        },
         {
            "names": [
@@ -3174,6 +3643,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "markerFillOpacity"}            ],
+           "originalName": "MarkerFillOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualMarkerFillOpacity"}            ],
+           "originalName": "ActualMarkerFillOpacity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isDefaultToolTipSelected"}            ],
            "originalName": "IsDefaultToolTipSelected"
        },
@@ -3186,6 +3665,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "SeriesVisibleRangeMode", "mappedName": "visibleRangeMode"}            ],
            "originalName": "VisibleRangeMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}            ],
+           "originalName": "OutlineMode"
        },
         {
            "names": [
@@ -3419,6 +3903,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
            "originalName": "NotifyVisualPropertiesChanged"
        },
@@ -3454,6 +3943,70 @@
        }   ],
     "originalBaseTypeName": "Control",
     "originalBaseTypeNamespace": "System.Windows",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "ActualLegendItemBadgeShape",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ActualLegendItemBadgeShape.ts",
+ "mappedName": "ActualLegendItemBadgeShape"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "CircleShape"}            ],
+           "originalName": "CircleShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "LineWithMarker"}            ],
+           "originalName": "LineWithMarker"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "LineMarkerless"}            ],
+           "originalName": "LineMarkerless"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "BarShape"}            ],
+           "originalName": "BarShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "ColumnShape"}            ],
+           "originalName": "ColumnShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "SquareShape"}            ],
+           "originalName": "SquareShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "SquareFinancial"}            ],
+           "originalName": "SquareFinancial"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "SquareIndicator"}            ],
+           "originalName": "SquareIndicator"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "MarkerShape"}            ],
+           "originalName": "MarkerShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ActualLegendItemBadgeShape", "mappedName": "HiddenShape"}            ],
+           "originalName": "HiddenShape"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
     "originalNamespace": "Infragistics.Controls.Charts"
 }
 ]

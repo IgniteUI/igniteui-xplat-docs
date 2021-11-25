@@ -4,7 +4,7 @@
     "originalName": "ArcGISOnlineMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "ArcGISOnlineMapImagery.cs",
- "mappedName": "ArcGISOnlineMapImagery"}   ],
+ "mappedName": "IgbArcGISOnlineMapImagery"}   ],
    "members": [
         {
            "names": [
@@ -59,11 +59,11 @@
     "originalName": "GeographicTileSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicTileSeries.cs",
- "mappedName": "GeographicTileSeries"}   ],
+ "mappedName": "IgbGeographicTileSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GeographicMapImagery", "mappedName": "TileImagery"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGeographicMapImagery", "mappedName": "TileImagery"}            ],
            "originalName": "TileImagery"
        },
         {
@@ -79,7 +79,7 @@
     "originalName": "BingMapsMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "BingMapsMapImagery.cs",
- "mappedName": "BingMapsMapImagery"}   ],
+ "mappedName": "IgbBingMapsMapImagery"}   ],
    "members": [
         {
            "names": [
@@ -149,11 +149,11 @@
     "originalName": "TileGeneratorMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "TileGeneratorMapImagery.cs",
- "mappedName": "TileGeneratorMapImagery"}   ],
+ "mappedName": "IgbTileGeneratorMapImagery"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "TileGenerator", "mappedName": "TileGenerator"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbTileGenerator", "mappedName": "TileGenerator"}            ],
            "originalName": "TileGenerator"
        }   ],
     "originalBaseTypeName": "GeographicMapImagery",
@@ -164,7 +164,7 @@
     "originalName": "CustomMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "CustomMapImagery.cs",
- "mappedName": "CustomMapImagery"}   ],
+ "mappedName": "IgbCustomMapImagery"}   ],
    "members": [
    ],
     "originalBaseTypeName": "GeographicMapImagery",
@@ -175,7 +175,7 @@
     "originalName": "GeographicMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicMapImagery.cs",
- "mappedName": "GeographicMapImagery"}   ],
+ "mappedName": "IgbGeographicMapImagery"}   ],
    "members": [
         {
            "names": [
@@ -184,7 +184,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GeographicMap", "mappedName": "GeographicMap"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGeographicMap", "mappedName": "GeographicMap"}            ],
            "originalName": "GeographicMap"
        },
         {
@@ -220,7 +220,7 @@
     "originalName": "ImagesChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ImagesChangedEventArgs.cs",
- "mappedName": "ImagesChangedEventArgs"}   ],
+ "mappedName": "IgbImagesChangedEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -231,7 +231,7 @@
     "originalName": "OpenStreetMapImagery",
    "names": [
         { "platform": "Blazor",     "fileName": "OpenStreetMapImagery.cs",
- "mappedName": "OpenStreetMapImagery"}   ],
+ "mappedName": "IgbOpenStreetMapImagery"}   ],
    "members": [
         {
            "names": [
@@ -246,7 +246,7 @@
     "originalName": "GeographicHighDensityScatterSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicHighDensityScatterSeries.cs",
- "mappedName": "GeographicHighDensityScatterSeries"}   ],
+ "mappedName": "IgbGeographicHighDensityScatterSeries"}   ],
    "members": [
         {
            "names": [
@@ -303,10 +303,75 @@
     "originalNamespace": "Infragistics.Controls.Maps"
 },
 {
+    "originalName": "GeographicMarkerSeries",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GeographicMarkerSeries.cs",
+ "mappedName": "IgbGeographicMarkerSeries"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
+           "originalName": "MarkerType"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
+           "originalName": "MarkerThickness"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerOutlineMode", "mappedName": "MarkerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerFillMode", "mappedName": "MarkerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
+           "originalName": "MarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
+           "originalName": "MarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutline"}            ],
+           "originalName": "MarkerOutline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumMarkers"}            ],
+           "originalName": "MaximumMarkers"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ActualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
+       }   ],
+    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
     "originalName": "GeographicPolylineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicPolylineSeries.cs",
- "mappedName": "GeographicPolylineSeries"}   ],
+ "mappedName": "IgbGeographicPolylineSeries"}   ],
    "members": [
         {
            "names": [
@@ -345,7 +410,7 @@
     "originalName": "GeographicProportionalSymbolSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicProportionalSymbolSeries.cs",
- "mappedName": "GeographicProportionalSymbolSeries"}   ],
+ "mappedName": "IgbGeographicProportionalSymbolSeries"}   ],
    "members": [
         {
            "names": [
@@ -359,37 +424,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutline"}            ],
-           "originalName": "MarkerOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "RadiusMemberPath"}            ],
            "originalName": "RadiusMemberPath"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "SizeScale", "mappedName": "RadiusScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbSizeScale", "mappedName": "RadiusScale"}            ],
            "originalName": "RadiusScale"
        },
         {
@@ -404,7 +444,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "BrushScale", "mappedName": "FillScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbBrushScale", "mappedName": "FillScale"}            ],
            "originalName": "FillScale"
        },
         {
@@ -429,15 +469,30 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "RadiusScaleUseGlobalValues"}            ],
+           "originalName": "RadiusScaleUseGlobalValues"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "RadiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -445,10 +500,10 @@
     "originalName": "GeographicProportionalSymbolSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicProportionalSymbolSeriesBase.cs",
- "mappedName": "GeographicProportionalSymbolSeriesBase"}   ],
+ "mappedName": "IgbGeographicProportionalSymbolSeriesBase"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -456,7 +511,7 @@
     "originalName": "GeographicScatterAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicScatterAreaSeries.cs",
- "mappedName": "GeographicScatterAreaSeries"}   ],
+ "mappedName": "IgbGeographicScatterAreaSeries"}   ],
    "members": [
         {
            "names": [
@@ -465,8 +520,18 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColorScale", "mappedName": "ColorScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColorScale", "mappedName": "ColorScale"}            ],
            "originalName": "ColorScale"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColorScale", "mappedName": "ActualColorScale"}            ],
+           "originalName": "ActualColorScale"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UpdateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        }   ],
     "originalBaseTypeName": "GeographicXYTriangulatingSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -476,7 +541,7 @@
     "originalName": "GeographicShapeSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicShapeSeriesBase.cs",
- "mappedName": "GeographicShapeSeriesBase"}   ],
+ "mappedName": "IgbGeographicShapeSeriesBase"}   ],
    "members": [
         {
            "names": [
@@ -485,7 +550,32 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ShapeDataSource", "mappedName": "ShapefileDataSource"}            ],
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomShapeStyleAllowed"}            ],
+           "originalName": "IsCustomShapeStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomShapeMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomShapeMarkerStyleAllowed"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "ShapeItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchPointsThreshold"}            ],
+           "originalName": "ItemSearchPointsThreshold"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbShapeDataSource", "mappedName": "ShapefileDataSource"}            ],
            "originalName": "ShapefileDataSource"
        },
         {
@@ -501,7 +591,7 @@
     "originalName": "GeographicShapeSeriesBaseBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicShapeSeriesBaseBase.cs",
- "mappedName": "GeographicShapeSeriesBaseBase"}   ],
+ "mappedName": "IgbGeographicShapeSeriesBaseBase"}   ],
    "members": [
    ],
     "originalBaseTypeName": "GeographicMapSeriesHost",
@@ -512,10 +602,21 @@
     "originalName": "GeographicSymbolSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicSymbolSeriesBase.cs",
- "mappedName": "GeographicSymbolSeriesBase"}   ],
+ "mappedName": "IgbGeographicSymbolSeriesBase"}   ],
    "members": [
    ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeriesBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
+    "originalNamespace": "Infragistics.Controls.Maps"
+},
+{
+    "originalName": "GeographicMarkerSeriesBase",
+   "names": [
+        { "platform": "Blazor",     "fileName": "GeographicMarkerSeriesBase.cs",
+ "mappedName": "IgbGeographicMarkerSeriesBase"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -523,7 +624,7 @@
     "originalName": "GeographicXYTriangulatingSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicXYTriangulatingSeries.cs",
- "mappedName": "GeographicXYTriangulatingSeries"}   ],
+ "mappedName": "IgbGeographicXYTriangulatingSeries"}   ],
    "members": [
         {
            "names": [
@@ -563,7 +664,7 @@
     "originalName": "GeographicXYTriangulatingSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicXYTriangulatingSeriesBase.cs",
- "mappedName": "GeographicXYTriangulatingSeriesBase"}   ],
+ "mappedName": "IgbGeographicXYTriangulatingSeriesBase"}   ],
    "members": [
    ],
     "originalBaseTypeName": "GeographicMapSeriesHost",
@@ -574,7 +675,7 @@
     "originalName": "GeographicContourLineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicContourLineSeries.cs",
- "mappedName": "GeographicContourLineSeries"}   ],
+ "mappedName": "IgbGeographicContourLineSeries"}   ],
    "members": [
         {
            "names": [
@@ -583,12 +684,17 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ValueBrushScale", "mappedName": "FillScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbValueBrushScale", "mappedName": "FillScale"}            ],
            "originalName": "FillScale"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ContourValueResolver", "mappedName": "ValueResolver"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbValueBrushScale", "mappedName": "ActualFillScale"}            ],
+           "originalName": "ActualFillScale"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbContourValueResolver", "mappedName": "ValueResolver"}            ],
            "originalName": "ValueResolver"
        }   ],
     "originalBaseTypeName": "GeographicXYTriangulatingSeries",
@@ -599,7 +705,7 @@
     "originalName": "GeographicMapSeriesHost",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicMapSeriesHost.cs",
- "mappedName": "GeographicMapSeriesHost"}   ],
+ "mappedName": "IgbGeographicMapSeriesHost"}   ],
    "members": [
         {
            "names": [
@@ -613,6 +719,11 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyIndexedPropertiesChanged"}            ],
+           "originalName": "NotifyIndexedPropertiesChanged"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
            "originalName": "GetItemValue"
        },
@@ -620,6 +731,71 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPreviousOrExactIndex"}            ],
+           "originalName": "GetPreviousOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetNextOrExactIndex"}            ],
+           "originalName": "GetNextOrExactIndex"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
+           "originalName": "GetSeriesValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
+           "originalName": "GetSeriesValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueBoundingBox"}            ],
+           "originalName": "GetSeriesValueBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
+           "originalName": "GetSeriesValueMarkerBoundingBox"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValue"}            ],
+           "originalName": "GetSeriesHighValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesHighValuePosition"}            ],
+           "originalName": "GetSeriesHighValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValue"}            ],
+           "originalName": "GetSeriesLowValue"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesLowValuePosition"}            ],
+           "originalName": "GetSeriesLowValuePosition"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePositionFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValuePositionFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueFromSeriesPixel"}            ],
+           "originalName": "GetSeriesValueFromSeriesPixel"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemSpan"}            ],
+           "originalName": "GetItemSpan"
        },
         {
            "names": [
@@ -639,7 +815,7 @@
     "originalName": "GeographicShapeSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicShapeSeries.cs",
- "mappedName": "GeographicShapeSeries"}   ],
+ "mappedName": "IgbGeographicShapeSeries"}   ],
    "members": [
         {
            "names": [
@@ -677,6 +853,16 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerOutlineMode", "mappedName": "MarkerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerFillMode", "mappedName": "MarkerFillMode"}            ],
+           "originalName": "MarkerFillMode"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
            "originalName": "MarkerTemplate"
        },
@@ -699,6 +885,21 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "CollisionAvoidanceType", "mappedName": "MarkerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "ActualMarkerTemplate"}            ],
+           "originalName": "ActualMarkerTemplate"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerBrush"}            ],
+           "originalName": "ActualMarkerBrush"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualMarkerOutline"}            ],
+           "originalName": "ActualMarkerOutline"
        }   ],
     "originalBaseTypeName": "GeographicShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
@@ -708,7 +909,7 @@
     "originalName": "GeographicSymbolSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicSymbolSeries.cs",
- "mappedName": "GeographicSymbolSeries"}   ],
+ "mappedName": "IgbGeographicSymbolSeries"}   ],
    "members": [
         {
            "names": [
@@ -722,40 +923,30 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "MarkerType", "mappedName": "MarkerType"}            ],
-           "originalName": "MarkerType"
-       },
-        {
-           "names": [
                { "platform": "Blazor",  "mappedType": "CollisionAvoidanceType", "mappedName": "MarkerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
-           "originalName": "MarkerTemplate"
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterStyleAllowed"}            ],
+           "originalName": "IsCustomScatterStyleAllowed"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrush"}            ],
-           "originalName": "MarkerBrush"
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterMarkerStyleAllowed"}            ],
+           "originalName": "IsCustomScatterMarkerStyleAllowed"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutline"}            ],
-           "originalName": "MarkerOutline"
+               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ItemSearchMode"}            ],
+           "originalName": "ItemSearchMode"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerThickness"}            ],
-           "originalName": "MarkerThickness"
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
+           "originalName": "ItemSearchThreshold"
        }   ],
-    "originalBaseTypeName": "GeographicMapSeriesHost",
+    "originalBaseTypeName": "GeographicMarkerSeries",
     "originalBaseTypeNamespace": "Infragistics.Controls.Maps",
     "originalNamespace": "Infragistics.Controls.Maps"
 },
@@ -763,7 +954,7 @@
     "originalName": "XamGeographicMap",
    "names": [
         { "platform": "Blazor",     "fileName": "GeographicMap.cs",
- "mappedName": "GeographicMap"}   ],
+ "mappedName": "IgbGeographicMap"}   ],
    "members": [
         {
            "names": [
@@ -807,7 +998,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GeographicMapImagery", "mappedName": "BackgroundContent"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGeographicMapImagery", "mappedName": "BackgroundContent"}            ],
            "originalName": "BackgroundContent"
        },
         {
@@ -918,7 +1109,7 @@
     "originalName": "ImageTilesReadyEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "ImageTilesReadyEventArgs.cs",
- "mappedName": "ImageTilesReadyEventArgs"}   ],
+ "mappedName": "IgbImageTilesReadyEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -929,11 +1120,11 @@
     "originalName": "TileSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "TileSeries.cs",
- "mappedName": "TileSeries"}   ],
+ "mappedName": "IgbTileSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "GeographicMapImagery", "mappedName": "TileImagery"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbGeographicMapImagery", "mappedName": "TileImagery"}            ],
            "originalName": "TileImagery"
        },
         {

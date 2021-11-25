@@ -4,7 +4,7 @@
     "originalName": "LabelClickEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "LabelClickEventArgs.cs",
- "mappedName": "LabelClickEventArgs"}   ],
+ "mappedName": "IgbLabelClickEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -24,7 +24,7 @@
     "originalName": "SelectedItemChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SelectedItemChangedEventArgs.cs",
- "mappedName": "SelectedItemChangedEventArgs"}   ],
+ "mappedName": "IgbSelectedItemChangedEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -44,7 +44,7 @@
     "originalName": "SelectedItemChangingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SelectedItemChangingEventArgs.cs",
- "mappedName": "SelectedItemChangingEventArgs"}   ],
+ "mappedName": "IgbSelectedItemChangingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -59,21 +59,21 @@
     "originalName": "SelectedItemsChangedEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SelectedItemsChangedEventArgs.cs",
- "mappedName": "SelectedItemsChangedEventArgs"}   ],
+ "mappedName": "IgbSelectedItemsChangedEventArgs"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "OldItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbObjectCollection", "mappedName": "OldItems"}            ],
            "originalName": "OldItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "NewItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbObjectCollection", "mappedName": "NewItems"}            ],
            "originalName": "NewItems"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "CurrentItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbObjectCollection", "mappedName": "CurrentItems"}            ],
            "originalName": "CurrentItems"
        }   ],
     "originalBaseTypeName": "EventArgs",
@@ -84,7 +84,7 @@
     "originalName": "SelectedItemsChangingEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SelectedItemsChangingEventArgs.cs",
- "mappedName": "SelectedItemsChangingEventArgs"}   ],
+ "mappedName": "IgbSelectedItemsChangingEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -99,7 +99,7 @@
     "originalName": "SliceClickEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "SliceClickEventArgs.cs",
- "mappedName": "SliceClickEventArgs"}   ],
+ "mappedName": "IgbSliceClickEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -130,6 +130,116 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalEvent"}            ],
            "originalName": "OriginalEvent"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "Origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "Bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StartAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EndAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
+           "originalName": "Outline"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Charts"
+},
+{
+    "originalName": "SliceEventArgs",
+   "names": [
+        { "platform": "Blazor",     "fileName": "SliceEventArgs.cs",
+ "mappedName": "IgbSliceEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSelected"}            ],
+           "originalName": "IsSelected"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsExploded"}            ],
+           "originalName": "IsExploded"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsOthersSlice"}            ],
+           "originalName": "IsOthersSlice"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "int", "mappedName": "Index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "Origin"}            ],
+           "originalName": "Origin"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Radius"}            ],
+           "originalName": "Radius"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "Bounds"}            ],
+           "originalName": "Bounds"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StartAngle"}            ],
+           "originalName": "StartAngle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EndAngle"}            ],
+           "originalName": "EndAngle"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Fill"}            ],
+           "originalName": "Fill"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
+           "originalName": "Outline"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataContext"}            ],
+           "originalName": "DataContext"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalEvent"}            ],
+           "originalName": "OriginalEvent"
        }   ],
     "originalBaseTypeName": "EventArgs",
     "originalBaseTypeNamespace": "System",
@@ -139,7 +249,7 @@
     "originalName": "PieChartBase",
    "names": [
         { "platform": "Blazor",     "fileName": "PieChartBase.cs",
- "mappedName": "PieChartBase"}   ],
+ "mappedName": "IgbPieChartBase"}   ],
    "members": [
         {
            "names": [
@@ -180,6 +290,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelInnerColor"}            ],
            "originalName": "LabelInnerColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualLabelOuterColor"}            ],
+           "originalName": "ActualLabelOuterColor"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualLabelInnerColor"}            ],
+           "originalName": "ActualLabelInnerColor"
        },
         {
            "names": [
@@ -238,7 +358,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "LegendBase", "mappedName": "Legend"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbLegendBase", "mappedName": "Legend"}            ],
            "originalName": "Legend"
        },
         {
@@ -311,8 +431,18 @@
        },
         {
            "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualBrushes"}            ],
+           "originalName": "ActualBrushes"
+       },
+        {
+           "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outlines"}            ],
            "originalName": "Outlines"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualOutlines"}            ],
+           "originalName": "ActualOutlines"
        },
         {
            "names": [
@@ -321,7 +451,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
            "originalName": "LabelFormatSpecifiers"
        },
         {
@@ -331,7 +461,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "OthersLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "OthersLabelFormatSpecifiers"}            ],
            "originalName": "OthersLabelFormatSpecifiers"
        },
         {
@@ -341,7 +471,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LegendLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LegendLabelFormatSpecifiers"}            ],
            "originalName": "LegendLabelFormatSpecifiers"
        },
         {
@@ -351,7 +481,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LegendOthersLabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LegendOthersLabelFormatSpecifiers"}            ],
            "originalName": "LegendOthersLabelFormatSpecifiers"
        },
         {
@@ -368,6 +498,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSurfaceInteractionDisabled"}            ],
            "originalName": "IsSurfaceInteractionDisabled"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldDisplayMockData"}            ],
+           "originalName": "ShouldDisplayMockData"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldUseSkeletonStyleForMockData"}            ],
+           "originalName": "ShouldUseSkeletonStyleForMockData"
        },
         {
            "names": [
@@ -391,7 +531,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ObjectCollection", "mappedName": "SelectedItems"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbObjectCollection", "mappedName": "SelectedItems"}            ],
            "originalName": "SelectedItems"
        },
         {
@@ -472,7 +612,7 @@
     "originalName": "PieSliceOthersContext",
    "names": [
         { "platform": "Blazor",     "fileName": "PieSliceOthersContext.cs",
- "mappedName": "PieSliceOthersContext"}   ],
+ "mappedName": "IgbPieSliceOthersContext"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -481,7 +621,7 @@
     "originalName": "XamPieChart",
    "names": [
         { "platform": "Blazor",     "fileName": "PieChart.cs",
- "mappedName": "PieChart"}   ],
+ "mappedName": "IgbPieChart"}   ],
    "members": [
    ],
     "originalBaseTypeName": "PieChartBase",
@@ -492,7 +632,7 @@
     "originalName": "PieSliceDataContext",
    "names": [
         { "platform": "Blazor",     "fileName": "PieSliceDataContext.cs",
- "mappedName": "PieSliceDataContext"}   ],
+ "mappedName": "IgbPieSliceDataContext"}   ],
    "members": [
         {
            "names": [

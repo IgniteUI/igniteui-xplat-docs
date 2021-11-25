@@ -4,16 +4,16 @@
     "originalName": "HorizontalAnchoredCategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "HorizontalAnchoredCategorySeries.cs",
- "mappedName": "HorizontalAnchoredCategorySeries"}   ],
+ "mappedName": "IgbHorizontalAnchoredCategorySeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbCategoryAxisBase", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -69,7 +69,7 @@
     "originalName": "PointSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "PointSeries.cs",
- "mappedName": "PointSeries"}   ],
+ "mappedName": "IgbPointSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
@@ -80,7 +80,7 @@
     "originalName": "AnchoredCategorySeries",
    "names": [
         { "platform": "Blazor",     "fileName": "AnchoredCategorySeries.cs",
- "mappedName": "AnchoredCategorySeries"}   ],
+ "mappedName": "IgbAnchoredCategorySeries"}   ],
    "members": [
         {
            "names": [
@@ -145,7 +145,7 @@
     "originalName": "AreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "AreaSeries.cs",
- "mappedName": "AreaSeries"}   ],
+ "mappedName": "IgbAreaSeries"}   ],
    "members": [
         {
            "names": [
@@ -160,7 +160,7 @@
     "originalName": "ColumnSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ColumnSeries.cs",
- "mappedName": "ColumnSeries"}   ],
+ "mappedName": "IgbColumnSeries"}   ],
    "members": [
         {
            "names": [
@@ -195,7 +195,7 @@
     "originalName": "LineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "LineSeries.cs",
- "mappedName": "LineSeries"}   ],
+ "mappedName": "IgbLineSeries"}   ],
    "members": [
         {
            "names": [
@@ -210,7 +210,7 @@
     "originalName": "SplineAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineAreaSeries.cs",
- "mappedName": "SplineAreaSeries"}   ],
+ "mappedName": "IgbSplineAreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SplineSeriesBase",
@@ -221,7 +221,7 @@
     "originalName": "SplineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineSeries.cs",
- "mappedName": "SplineSeries"}   ],
+ "mappedName": "IgbSplineSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "SplineSeriesBase",
@@ -232,8 +232,13 @@
     "originalName": "SplineSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "SplineSeriesBase.cs",
- "mappedName": "SplineSeriesBase"}   ],
+ "mappedName": "IgbSplineSeriesBase"}   ],
    "members": [
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSplineShapePartOfRange"}            ],
+           "originalName": "IsSplineShapePartOfRange"
+       },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "SplineType", "mappedName": "SplineType"}            ],
@@ -247,7 +252,7 @@
     "originalName": "StepAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StepAreaSeries.cs",
- "mappedName": "StepAreaSeries"}   ],
+ "mappedName": "IgbStepAreaSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
@@ -258,7 +263,7 @@
     "originalName": "StepLineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "StepLineSeries.cs",
- "mappedName": "StepLineSeries"}   ],
+ "mappedName": "IgbStepLineSeries"}   ],
    "members": [
    ],
     "originalBaseTypeName": "HorizontalAnchoredCategorySeries",
@@ -269,7 +274,7 @@
     "originalName": "WaterfallSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "WaterfallSeries.cs",
- "mappedName": "WaterfallSeries"}   ],
+ "mappedName": "IgbWaterfallSeries"}   ],
    "members": [
         {
            "names": [

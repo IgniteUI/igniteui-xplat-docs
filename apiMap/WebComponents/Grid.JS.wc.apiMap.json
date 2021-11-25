@@ -14,6 +14,11 @@
    "members": [
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnComponent", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isGroup"}            ],
            "originalName": "IsGroup"
        },
@@ -67,8 +72,48 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "resolveFilterInternal"}            ],
+           "originalName": "ResolveFilterInternal"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "coerceComparisonValue"}            ],
            "originalName": "CoerceComparisonValue"
+       }   ],
+    "originalBaseTypeName": "ColumnFilterCondition",
+    "originalBaseTypeNamespace": "Infragistics.Controls",
+    "originalNamespace": "Infragistics.Controls"
+},
+{
+    "originalName": "ColumnCustomFilterCondition",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "ColumnCustomFilterCondition.ts",
+ "mappedName": "ColumnCustomFilterCondition"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "id"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "index"}            ],
+           "originalName": "Index"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "resolveFilter"}            ],
+           "originalName": "ResolveFilter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
        }   ],
     "originalBaseTypeName": "ColumnFilterCondition",
     "originalBaseTypeNamespace": "Infragistics.Controls",
@@ -158,43 +203,13 @@
    "members": [
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Contains"}            ],
-           "originalName": "Contains"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotContain"}            ],
-           "originalName": "DoesNotContain"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotEndWith"}            ],
-           "originalName": "DoesNotEndWith"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotStartWith"}            ],
-           "originalName": "DoesNotStartWith"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "EndsWith"}            ],
-           "originalName": "EndsWith"
-       },
-        {
-           "names": [
                { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Equals"}            ],
            "originalName": "Equals"
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "GreaterThan"}            ],
-           "originalName": "GreaterThan"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "GreaterThanOrEqualTo"}            ],
-           "originalName": "GreaterThanOrEqualTo"
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NotEquals"}            ],
+           "originalName": "NotEquals"
        },
         {
            "names": [
@@ -208,8 +223,53 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NotEquals"}            ],
-           "originalName": "NotEquals"
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "GreaterThan"}            ],
+           "originalName": "GreaterThan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "GreaterThanOrEqualTo"}            ],
+           "originalName": "GreaterThanOrEqualTo"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Top"}            ],
+           "originalName": "Top"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Bottom"}            ],
+           "originalName": "Bottom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "TopPercentile"}            ],
+           "originalName": "TopPercentile"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "BottomPercentile"}            ],
+           "originalName": "BottomPercentile"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "True"}            ],
+           "originalName": "True"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "False"}            ],
+           "originalName": "False"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Contains"}            ],
+           "originalName": "Contains"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotContain"}            ],
+           "originalName": "DoesNotContain"
        },
         {
            "names": [
@@ -218,13 +278,153 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "IsNotNull"}            ],
-           "originalName": "IsNotNull"
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotStartWith"}            ],
+           "originalName": "DoesNotStartWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "EndsWith"}            ],
+           "originalName": "EndsWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "DoesNotEndWith"}            ],
+           "originalName": "DoesNotEndWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Today"}            ],
+           "originalName": "Today"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Tomorrow"}            ],
+           "originalName": "Tomorrow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Yesterday"}            ],
+           "originalName": "Yesterday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NextWeek"}            ],
+           "originalName": "NextWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "ThisWeek"}            ],
+           "originalName": "ThisWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "LastWeek"}            ],
+           "originalName": "LastWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NextMonth"}            ],
+           "originalName": "NextMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "ThisMonth"}            ],
+           "originalName": "ThisMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "LastMonth"}            ],
+           "originalName": "LastMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NextQuarter"}            ],
+           "originalName": "NextQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "ThisQuarter"}            ],
+           "originalName": "ThisQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "LastQuarter"}            ],
+           "originalName": "LastQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NextYear"}            ],
+           "originalName": "NextYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "ThisYear"}            ],
+           "originalName": "ThisYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "LastYear"}            ],
+           "originalName": "LastYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "YearToDate"}            ],
+           "originalName": "YearToDate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Q1"}            ],
+           "originalName": "Q1"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Q2"}            ],
+           "originalName": "Q2"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Q3"}            ],
+           "originalName": "Q3"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Q4"}            ],
+           "originalName": "Q4"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Month"}            ],
+           "originalName": "Month"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Year"}            ],
+           "originalName": "Year"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Empty"}            ],
+           "originalName": "Empty"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "NotEmpty"}            ],
+           "originalName": "NotEmpty"
        },
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "IsNull"}            ],
            "originalName": "IsNull"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "IsNotNull"}            ],
+           "originalName": "IsNotNull"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "Custom"}            ],
+           "originalName": "Custom"
        },
         {
            "names": [
@@ -298,6 +498,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "void", "mappedName": "pointerUpCell"}            ],
            "originalName": "PointerUpCell"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "previewMouseDownCell"}            ],
+           "originalName": "PreviewMouseDownCell"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "previewMouseUpCell"}            ],
+           "originalName": "PreviewMouseUpCell"
        },
         {
            "names": [
@@ -448,6 +658,36 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "void", "mappedName": "cancelEditMode"}            ],
            "originalName": "CancelEditMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "disableKeyInput"}            ],
+           "originalName": "DisableKeyInput"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "enableKeyInput"}            ],
+           "originalName": "EnableKeyInput"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "passCellClone"}            ],
+           "originalName": "PassCellClone"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "applyFilter"}            ],
+           "originalName": "ApplyFilter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "applyCustomFilter"}            ],
+           "originalName": "ApplyCustomFilter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "clearFilter"}            ],
+           "originalName": "ClearFilter"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid"
 },
@@ -1166,6 +1406,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHitTestVisible"}            ],
+           "originalName": "IsHitTestVisible"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isRowPinned"}            ],
            "originalName": "IsRowPinned"
        },
@@ -1178,6 +1423,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isLastStickyRow"}            ],
            "originalName": "IsLastStickyRow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFilterRow"}            ],
+           "originalName": "IsFilterRow"
        },
         {
            "names": [
@@ -1266,6 +1516,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHoverable"}            ],
+           "originalName": "IsHoverable"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "CellContentHorizontalAlignment", "mappedName": "horizontalAlignment"}            ],
            "originalName": "HorizontalAlignment"
        },
@@ -1338,6 +1593,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "lastStickyRowBackground"}            ],
            "originalName": "LastStickyRowBackground"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "filterRowBackground"}            ],
+           "originalName": "FilterRowBackground"
        },
         {
            "names": [
@@ -1674,6 +1934,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "dateFormatString"}            ],
+           "originalName": "DateFormatString"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "targetRow"}            ],
            "originalName": "TargetRow"
        },
@@ -1687,16 +1952,82 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "FilterCellModel",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-filter-cell-info.ts",
+ "mappedName": "IgcFilterCellInfo"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "dataType"}            ],
+           "originalName": "DataType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnFilterCondition", "mappedName": "filter"}            ],
+           "originalName": "Filter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "filterExpression"}            ],
+           "originalName": "FilterExpression"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcGridFilterOperandsCollection", "mappedName": "filterOperands"}            ],
+           "originalName": "FilterOperands"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "operatorType"}            ],
+           "originalName": "OperatorType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "filterValue"}            ],
+           "originalName": "FilterValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "selectorTop"}            ],
+           "originalName": "SelectorTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "selectorLeft"}            ],
+           "originalName": "SelectorLeft"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "editorTop"}            ],
+           "originalName": "EditorTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "editorLeft"}            ],
+           "originalName": "EditorLeft"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "clearIconTop"}            ],
+           "originalName": "ClearIconTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "clearIconLeft"}            ],
+           "originalName": "ClearIconLeft"
+       }   ],
+    "originalBaseTypeName": "CellModel",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "EditorRowCellModel",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-editor-row-cell-info.ts",
  "mappedName": "IgcEditorRowCellInfo"}   ],
    "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcCellInfo", "mappedName": "editTarget"}            ],
-           "originalName": "EditTarget"
-       }   ],
+   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -1732,11 +2063,7 @@
         { "platform": "WebComponents",     "fileName": "igc-vertical-separator-cell-info.ts",
  "mappedName": "IgcVerticalSeparatorCellInfo"}   ],
    "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isHitTestVisible"}            ],
-           "originalName": "IsHitTestVisible"
-       }   ],
+   ],
     "originalBaseTypeName": "CellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -2022,6 +2349,331 @@
        }   ],
     "originalBaseTypeName": "TextCellModel",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "ComparisonOperatorSelector",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-data-grid-comparison-operator-selector-component.ts",
+ "mappedName": "IgcDataGridComparisonOperatorSelectorComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "customFilterID"}            ],
+           "originalName": "CustomFilterID"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "customFilterIndex"}            ],
+           "originalName": "CustomFilterIndex"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "DataSourceSchemaPropertyType", "mappedName": "dataType"}            ],
+           "originalName": "DataType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maxHeight"}            ],
+           "originalName": "MaxHeight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionTrue"}            ],
+           "originalName": "OperatorCaptionTrue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionFalse"}            ],
+           "originalName": "OperatorCaptionFalse"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionEquals"}            ],
+           "originalName": "OperatorCaptionEquals"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNotEquals"}            ],
+           "originalName": "OperatorCaptionNotEquals"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLessThan"}            ],
+           "originalName": "OperatorCaptionLessThan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLessThanOrEqual"}            ],
+           "originalName": "OperatorCaptionLessThanOrEqual"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionGreaterThan"}            ],
+           "originalName": "OperatorCaptionGreaterThan"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionGreaterThanOrEqual"}            ],
+           "originalName": "OperatorCaptionGreaterThanOrEqual"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionTop"}            ],
+           "originalName": "OperatorCaptionTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionBottom"}            ],
+           "originalName": "OperatorCaptionBottom"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionTopPercentile"}            ],
+           "originalName": "OperatorCaptionTopPercentile"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionBottomPercentile"}            ],
+           "originalName": "OperatorCaptionBottomPercentile"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionToday"}            ],
+           "originalName": "OperatorCaptionToday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionTomorrow"}            ],
+           "originalName": "OperatorCaptionTomorrow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionYesterday"}            ],
+           "originalName": "OperatorCaptionYesterday"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionThisWeek"}            ],
+           "originalName": "OperatorCaptionThisWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNextWeek"}            ],
+           "originalName": "OperatorCaptionNextWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLastWeek"}            ],
+           "originalName": "OperatorCaptionLastWeek"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionThisMonth"}            ],
+           "originalName": "OperatorCaptionThisMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNextMonth"}            ],
+           "originalName": "OperatorCaptionNextMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLastMonth"}            ],
+           "originalName": "OperatorCaptionLastMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionThisQuarter"}            ],
+           "originalName": "OperatorCaptionThisQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNextQuarter"}            ],
+           "originalName": "OperatorCaptionNextQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLastQuarter"}            ],
+           "originalName": "OperatorCaptionLastQuarter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionThisYear"}            ],
+           "originalName": "OperatorCaptionThisYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNextYear"}            ],
+           "originalName": "OperatorCaptionNextYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionLastYear"}            ],
+           "originalName": "OperatorCaptionLastYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionYearToDate"}            ],
+           "originalName": "OperatorCaptionYearToDate"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionQ1"}            ],
+           "originalName": "OperatorCaptionQ1"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionQ2"}            ],
+           "originalName": "OperatorCaptionQ2"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionQ3"}            ],
+           "originalName": "OperatorCaptionQ3"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionQ4"}            ],
+           "originalName": "OperatorCaptionQ4"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionMonth"}            ],
+           "originalName": "OperatorCaptionMonth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionYear"}            ],
+           "originalName": "OperatorCaptionYear"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionStartsWith"}            ],
+           "originalName": "OperatorCaptionStartsWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionDoesNotStartWith"}            ],
+           "originalName": "OperatorCaptionDoesNotStartWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionEndsWith"}            ],
+           "originalName": "OperatorCaptionEndsWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionDoesNotEndWith"}            ],
+           "originalName": "OperatorCaptionDoesNotEndWith"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionContains"}            ],
+           "originalName": "OperatorCaptionContains"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionDoesNotContain"}            ],
+           "originalName": "OperatorCaptionDoesNotContain"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionEmpty"}            ],
+           "originalName": "OperatorCaptionEmpty"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "operatorCaptionNotEmpty"}            ],
+           "originalName": "OperatorCaptionNotEmpty"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "provideContainer"}            ],
+           "originalName": "ProvideContainer"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "dispose"}            ],
+           "originalName": "Dispose"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getDropdownHeight"}            ],
+           "originalName": "GetDropdownHeight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toggle"}            ],
+           "originalName": "Toggle"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "close"}            ],
+           "originalName": "Close"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "addCustomOperator"}            ],
+           "originalName": "AddCustomOperator"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "clearCustomOperators"}            ],
+           "originalName": "ClearCustomOperators"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "selectCustomFilter"}            ],
+           "originalName": "SelectCustomFilter"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorValueChangedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-operator-selector-value-changed-event-args.ts",
+ "mappedName": "IgcOperatorSelectorValueChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "oldValue"}            ],
+           "originalName": "OldValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "ColumnComparisonConditionOperatorType", "mappedName": "newValue"}            ],
+           "originalName": "NewValue"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorOpeningEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-operator-selector-opening-event-args.ts",
+ "mappedName": "IgcOperatorSelectorOpeningEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "OperatorSelectorClosingEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-operator-selector-closing-event-args.ts",
+ "mappedName": "IgcOperatorSelectorClosingEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
@@ -2817,8 +3469,18 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "columnResizingSeparatorOpacity"}            ],
+           "originalName": "ColumnResizingSeparatorOpacity"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "columnMovingSeparatorWidth"}            ],
            "originalName": "ColumnMovingSeparatorWidth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "columnMovingSeparatorOpacity"}            ],
+           "originalName": "ColumnMovingSeparatorOpacity"
        },
         {
            "names": [
@@ -2974,7 +3636,7 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "DataSourceSummaryScope", "mappedName": "summaryScope"}            ],
+               { "platform": "WebComponents",  "mappedType": "SummaryScope", "mappedName": "summaryScope"}            ],
            "originalName": "SummaryScope"
        },
         {
@@ -2984,7 +3646,7 @@
        },
         {
            "names": [
-               { "platform": "WebComponents",  "mappedType": "DataSourceSectionHeaderDisplayMode", "mappedName": "groupHeaderDisplayMode"}            ],
+               { "platform": "WebComponents",  "mappedType": "GroupHeaderDisplayMode", "mappedName": "groupHeaderDisplayMode"}            ],
            "originalName": "GroupHeaderDisplayMode"
        },
         {
@@ -3056,6 +3718,46 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "EnterKeyBehaviorAfterEdit", "mappedName": "enterBehaviorAfterEdit"}            ],
            "originalName": "EnterBehaviorAfterEdit"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumnOptionsSummariesEnabled"}            ],
+           "originalName": "IsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "mergedCellMode"}            ],
+           "originalName": "MergedCellMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "mergedCellEvaluationCriteria"}            ],
+           "originalName": "MergedCellEvaluationCriteria"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterUIType", "mappedName": "filterUIType"}            ],
+           "originalName": "FilterUIType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterLogicalOperator", "mappedName": "filterLogicalOperator"}            ],
+           "originalName": "FilterLogicalOperator"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterComparisonType", "mappedName": "filterComparisonType"}            ],
+           "originalName": "FilterComparisonType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "Date", "mappedName": "todayOverride"}            ],
+           "originalName": "TodayOverride"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "clearSelectionOnEscape"}            ],
+           "originalName": "ClearSelectionOnEscape"
        },
         {
            "names": [
@@ -3306,6 +4008,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "deselectAllRows"}            ],
            "originalName": "DeselectAllRows"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "saveLayout"}            ],
+           "originalName": "SaveLayout"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "loadLayout"}            ],
+           "originalName": "LoadLayout"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -3606,6 +4318,21 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "GridSummaryDescriptionsChangedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-grid-summary-descriptions-changed-event-args.ts",
+ "mappedName": "IgcGridSummaryDescriptionsChangedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnSummaryDescriptionCollection", "mappedName": "summaryDescriptions"}            ],
+           "originalName": "SummaryDescriptions"
+       }   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "ColumnHiddenChangedEventArgs",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-column-hidden-changed-event-args.ts",
@@ -3729,6 +4456,50 @@
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
+    "originalName": "GridSelectionChangedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-grid-selection-changed-event-args.ts",
+ "mappedName": "IgcGridSelectionChangedEventArgs"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "EventArgs",
+    "originalBaseTypeNamespace": "System",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GridCustomFilterRequestedEventArgs",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-grid-custom-filter-requested-event-args.ts",
+ "mappedName": "IgcGridCustomFilterRequestedEventArgs"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcColumnComponent", "mappedName": "column"}            ],
+           "originalName": "Column"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcFilterOperand", "mappedName": "filter"}            ],
+           "originalName": "Filter"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "value"}            ],
+           "originalName": "Value"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "expression"}            ],
+           "originalName": "Expression"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterFactory", "mappedName": "filterFactory"}            ],
+           "originalName": "FilterFactory"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
     "originalName": "GridColumnWidthChangedEventArgs",
    "names": [
         { "platform": "WebComponents",     "fileName": "igc-grid-column-width-changed-event-args.ts",
@@ -3830,6 +4601,46 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
            "originalName": "Item"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterOperand",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-filter-operand.ts",
+    "dynamicModuleName": "igc-filter-operand-dynamic-module.ts",
+    "moduleName": "igc-filter-operand-module.ts",
+ "mappedName": "IgcFilterOperand"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterFactory", "mappedName": "filterFactory"}            ],
+           "originalName": "FilterFactory"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "iD"}            ],
+           "originalName": "ID"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "displayName"}            ],
+           "originalName": "DisplayName"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "icon"}            ],
+           "originalName": "Icon"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isInputRequired"}            ],
+           "originalName": "IsInputRequired"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "EditorType", "mappedName": "editorType"}            ],
+           "originalName": "EditorType"
        }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
@@ -4207,6 +5018,16 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "separatorWidth"}            ],
            "originalName": "SeparatorWidth"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualOpacity"}            ],
+           "originalName": "ActualOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
        }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -4261,6 +5082,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "string", "mappedName": "formatString"}            ],
            "originalName": "FormatString"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "editorFormatString"}            ],
+           "originalName": "EditorFormatString"
        },
         {
            "names": [
@@ -4657,6 +5483,11 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "IFilterExpression", "mappedName": "filterExpression"}            ],
+           "originalName": "FilterExpression"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "IgcHeaderComponent", "mappedName": "header"}            ],
            "originalName": "Header"
        },
@@ -4732,6 +5563,16 @@
        },
         {
            "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "actualIsColumnOptionsSummariesEnabled"}            ],
+           "originalName": "ActualIsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isColumnOptionsSummariesEnabled"}            ],
+           "originalName": "IsColumnOptionsSummariesEnabled"
+       },
+        {
+           "names": [
                { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isEditable"}            ],
            "originalName": "IsEditable"
        },
@@ -4754,6 +5595,26 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualEditOpacity"}            ],
            "originalName": "ActualEditOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "mergedCellMode"}            ],
+           "originalName": "MergedCellMode"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "mergedCellEvaluationCriteria"}            ],
+           "originalName": "MergedCellEvaluationCriteria"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterComparisonType", "mappedName": "filterComparisonType"}            ],
+           "originalName": "FilterComparisonType"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "IgcGridFilterOperandsCollection", "mappedName": "filterOperands"}            ],
+           "originalName": "FilterOperands"
        },
         {
            "names": [
@@ -4784,6 +5645,11 @@
            "names": [
                { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getNamedHeaderValue"}            ],
            "originalName": "GetNamedHeaderValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "applyCustomFilter"}            ],
+           "originalName": "ApplyCustomFilter"
        }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
@@ -4812,6 +5678,64 @@
                { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumWidth"}            ],
            "originalName": "MinimumWidth"
        }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditorDefinition",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-editor-definition-component.ts",
+    "dynamicModuleName": "igc-editor-definition-dynamic-module.ts",
+    "moduleName": "igc-editor-definition-module.ts",
+ "mappedName": "IgcEditorDefinitionComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "EditRowDefinition",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-edit-row-definition-component.ts",
+    "dynamicModuleName": "igc-edit-row-definition-dynamic-module.ts",
+    "moduleName": "igc-edit-row-definition-module.ts",
+ "mappedName": "IgcEditRowDefinitionComponent"}   ],
+   "members": [
+   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterRowDefinition",
+   "names": [
+        { "platform": "WebComponents",     "fileName": "igc-filter-row-definition-component.ts",
+    "dynamicModuleName": "igc-filter-row-definition-dynamic-module.ts",
+    "moduleName": "igc-filter-row-definition-module.ts",
+ "mappedName": "IgcFilterRowDefinitionComponent"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "paddingLeft"}            ],
+           "originalName": "PaddingLeft"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "paddingTop"}            ],
+           "originalName": "PaddingTop"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "paddingRight"}            ],
+           "originalName": "PaddingRight"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "paddingBottom"}            ],
+           "originalName": "PaddingBottom"
+       }   ],
+    "originalBaseTypeName": "DefinitionBase",
+    "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
@@ -4872,7 +5796,16 @@
     "moduleName": "igc-column-resizing-separator-module.ts",
  "mappedName": "IgcColumnResizingSeparatorComponent"}   ],
    "members": [
-   ],
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "actualOpacity"}            ],
+           "originalName": "ActualOpacity"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "opacity"}            ],
+           "originalName": "Opacity"
+       }   ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
@@ -5025,6 +5958,60 @@
    ],
     "originalBaseTypeName": "DefinitionBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "LayoutAction",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "LayoutAction.ts",
+ "mappedName": "LayoutAction"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Sorted"}            ],
+           "originalName": "Sorted"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Resized"}            ],
+           "originalName": "Resized"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Hidden"}            ],
+           "originalName": "Hidden"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Pinned"}            ],
+           "originalName": "Pinned"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Moved"}            ],
+           "originalName": "Moved"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Filtered"}            ],
+           "originalName": "Filtered"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Grouped"}            ],
+           "originalName": "Grouped"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "LayoutAction", "mappedName": "Summed"}            ],
+           "originalName": "Summed"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
@@ -5309,6 +6296,151 @@
    ],
     "originalBaseTypeName": "Header",
     "originalBaseTypeNamespace": "Infragistics.Controls.Grid.Implementation",
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterUIType",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "FilterUIType.ts",
+ "mappedName": "FilterUIType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterUIType", "mappedName": "ColumnOptions"}            ],
+           "originalName": "ColumnOptions"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterUIType", "mappedName": "FilterRow"}            ],
+           "originalName": "FilterRow"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterUIType", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterLogicalOperator",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "FilterLogicalOperator.ts",
+ "mappedName": "FilterLogicalOperator"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterLogicalOperator", "mappedName": "And"}            ],
+           "originalName": "And"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterLogicalOperator", "mappedName": "Or"}            ],
+           "originalName": "Or"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "FilterComparisonType",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "FilterComparisonType.ts",
+ "mappedName": "FilterComparisonType"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterComparisonType", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterComparisonType", "mappedName": "CaseInsensitive"}            ],
+           "originalName": "CaseInsensitive"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "FilterComparisonType", "mappedName": "CaseSensitive"}            ],
+           "originalName": "CaseSensitive"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MergedCellMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MergedCellMode.ts",
+ "mappedName": "MergedCellMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "Never"}            ],
+           "originalName": "Never"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "Always"}            ],
+           "originalName": "Always"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellMode", "mappedName": "OnlyWhenSorted"}            ],
+           "originalName": "OnlyWhenSorted"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "MergedCellEvaluationCriteria",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "MergedCellEvaluationCriteria.ts",
+ "mappedName": "MergedCellEvaluationCriteria"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "Default"}            ],
+           "originalName": "Default"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "RawValue"}            ],
+           "originalName": "RawValue"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "MergedCellEvaluationCriteria", "mappedName": "FormattedText"}            ],
+           "originalName": "FormattedText"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
     "originalNamespace": "Infragistics.Controls.Grid.Implementation"
 },
 {
@@ -5939,6 +7071,64 @@
         {
            "names": [
                { "platform": "WebComponents",  "mappedType": "GroupSummaryDisplayMode", "mappedName": "None"}            ],
+           "originalName": "None"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "GroupHeaderDisplayMode",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "GroupHeaderDisplayMode.ts",
+ "mappedName": "GroupHeaderDisplayMode"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "GroupHeaderDisplayMode", "mappedName": "Combined"}            ],
+           "originalName": "Combined"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "GroupHeaderDisplayMode", "mappedName": "Split"}            ],
+           "originalName": "Split"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
+           "originalName": ".ctor"
+       }   ],
+    "originalNamespace": "Infragistics.Controls.Grid.Implementation"
+},
+{
+    "originalName": "SummaryScope",
+    "isEnum": true,
+   "names": [
+        { "platform": "WebComponents",     "fileName": "SummaryScope.ts",
+ "mappedName": "SummaryScope"}   ],
+   "members": [
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SummaryScope", "mappedName": "Both"}            ],
+           "originalName": "Both"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SummaryScope", "mappedName": "Root"}            ],
+           "originalName": "Root"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SummaryScope", "mappedName": "Groups"}            ],
+           "originalName": "Groups"
+       },
+        {
+           "names": [
+               { "platform": "WebComponents",  "mappedType": "SummaryScope", "mappedName": "None"}            ],
            "originalName": "None"
        },
         {

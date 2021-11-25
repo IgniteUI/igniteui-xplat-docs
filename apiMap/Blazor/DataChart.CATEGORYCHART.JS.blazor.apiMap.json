@@ -4,7 +4,7 @@
     "originalName": "CategoryChart",
    "names": [
         { "platform": "Blazor",     "fileName": "CategoryChart.cs",
- "mappedName": "CategoryChart"}   ],
+ "mappedName": "IgbCategoryChart"}   ],
    "members": [
         {
            "names": [

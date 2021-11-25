@@ -4,7 +4,7 @@
     "originalName": "XamBulletGraph",
    "names": [
         { "platform": "Blazor",     "fileName": "BulletGraph.cs",
- "mappedName": "BulletGraph"}   ],
+ "mappedName": "IgbBulletGraph"}   ],
    "members": [
         {
            "names": [
@@ -33,7 +33,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "LinearGraphRangeCollection", "mappedName": "Ranges"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbLinearGraphRangeCollection", "mappedName": "Ranges"}            ],
            "originalName": "Ranges"
        },
         {
@@ -283,7 +283,7 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbFormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
            "originalName": "LabelFormatSpecifiers"
        },
         {
@@ -354,7 +354,7 @@
     "originalName": "XamLinearGraphRange",
    "names": [
         { "platform": "Blazor",     "fileName": "LinearGraphRange.cs",
- "mappedName": "LinearGraphRange"}   ],
+ "mappedName": "IgbLinearGraphRange"}   ],
    "members": [
         {
            "names": [
@@ -409,7 +409,7 @@
     "originalName": "FormatLinearGraphLabelEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "FormatLinearGraphLabelEventArgs.cs",
- "mappedName": "FormatLinearGraphLabelEventArgs"}   ],
+ "mappedName": "IgbFormatLinearGraphLabelEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "EventArgs",
@@ -420,7 +420,7 @@
     "originalName": "AlignLinearGraphLabelEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "AlignLinearGraphLabelEventArgs.cs",
- "mappedName": "AlignLinearGraphLabelEventArgs"}   ],
+ "mappedName": "IgbAlignLinearGraphLabelEventArgs"}   ],
    "members": [
    ],
     "originalBaseTypeName": "FormatLinearGraphLabelEventArgs",

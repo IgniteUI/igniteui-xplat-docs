@@ -4,7 +4,7 @@
     "originalName": "ColorScale",
    "names": [
         { "platform": "Blazor",     "fileName": "ColorScale.cs",
- "mappedName": "ColorScale"}   ],
+ "mappedName": "IgbColorScale"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DependencyObject",
@@ -15,7 +15,7 @@
     "originalName": "CustomPaletteColorScale",
    "names": [
         { "platform": "Blazor",     "fileName": "CustomPaletteColorScale.cs",
- "mappedName": "CustomPaletteColorScale"}   ],
+ "mappedName": "IgbCustomPaletteColorScale"}   ],
    "members": [
         {
            "names": [
@@ -45,7 +45,7 @@
     "originalName": "CustomContourValueResolver",
    "names": [
         { "platform": "Blazor",     "fileName": "CustomContourValueResolver.cs",
- "mappedName": "CustomContourValueResolver"}   ],
+ "mappedName": "IgbCustomContourValueResolver"}   ],
    "members": [
    ],
     "originalBaseTypeName": "ContourValueResolver",
@@ -56,7 +56,7 @@
     "originalName": "CustomContourValueResolverEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "CustomContourValueResolverEventArgs.cs",
- "mappedName": "CustomContourValueResolverEventArgs"}   ],
+ "mappedName": "IgbCustomContourValueResolverEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -76,7 +76,7 @@
     "originalName": "ScatterContourSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ScatterContourSeries.cs",
- "mappedName": "ScatterContourSeries"}   ],
+ "mappedName": "IgbScatterContourSeries"}   ],
    "members": [
         {
            "names": [
@@ -85,12 +85,17 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ValueBrushScale", "mappedName": "FillScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbValueBrushScale", "mappedName": "FillScale"}            ],
            "originalName": "FillScale"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ContourValueResolver", "mappedName": "ValueResolver"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbValueBrushScale", "mappedName": "ActualFillScale"}            ],
+           "originalName": "ActualFillScale"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbContourValueResolver", "mappedName": "ValueResolver"}            ],
            "originalName": "ValueResolver"
        },
         {
@@ -106,7 +111,7 @@
     "originalName": "ContourValueResolver",
    "names": [
         { "platform": "Blazor",     "fileName": "ContourValueResolver.cs",
- "mappedName": "ContourValueResolver"}   ],
+ "mappedName": "IgbContourValueResolver"}   ],
    "members": [
    ],
     "originalBaseTypeName": "DependencyObject",
@@ -117,7 +122,7 @@
     "originalName": "LinearContourValueResolver",
    "names": [
         { "platform": "Blazor",     "fileName": "LinearContourValueResolver.cs",
- "mappedName": "LinearContourValueResolver"}   ],
+ "mappedName": "IgbLinearContourValueResolver"}   ],
    "members": [
         {
            "names": [
@@ -132,11 +137,11 @@
     "originalName": "ScatterPolylineSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ScatterPolylineSeries.cs",
- "mappedName": "ScatterPolylineSeries"}   ],
+ "mappedName": "IgbScatterPolylineSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Style", "mappedName": "ShapeStyle"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbStyle", "mappedName": "ShapeStyle"}            ],
            "originalName": "ShapeStyle"
        }   ],
     "originalBaseTypeName": "ShapeSeriesBase",
@@ -147,17 +152,22 @@
     "originalName": "ScatterAreaSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ScatterAreaSeries.cs",
- "mappedName": "ScatterAreaSeries"}   ],
+ "mappedName": "IgbScatterAreaSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "ColorScale", "mappedName": "ColorScale"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbColorScale", "mappedName": "ColorScale"}            ],
            "originalName": "ColorScale"
        },
         {
            "names": [
                { "platform": "Blazor",  "mappedType": "string", "mappedName": "ColorMemberPath"}            ],
            "originalName": "ColorMemberPath"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "IgbColorScale", "mappedName": "ActualColorScale"}            ],
+           "originalName": "ActualColorScale"
        },
         {
            "names": [
@@ -168,6 +178,11 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
            "originalName": "GetItem"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UpdateActualColorScale"}            ],
+           "originalName": "UpdateActualColorScale"
        },
         {
            "names": [
@@ -182,11 +197,11 @@
     "originalName": "ScatterPolygonSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ScatterPolygonSeries.cs",
- "mappedName": "ScatterPolygonSeries"}   ],
+ "mappedName": "IgbScatterPolygonSeries"}   ],
    "members": [
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "Style", "mappedName": "ShapeStyle"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbStyle", "mappedName": "ShapeStyle"}            ],
            "originalName": "ShapeStyle"
        },
         {
@@ -233,6 +248,16 @@
            "names": [
                { "platform": "Blazor",  "mappedType": "CollisionAvoidanceType", "mappedName": "MarkerCollisionAvoidance"}            ],
            "originalName": "MarkerCollisionAvoidance"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerOutlineMode", "mappedName": "MarkerOutlineMode"}            ],
+           "originalName": "MarkerOutlineMode"
+       },
+        {
+           "names": [
+               { "platform": "Blazor",  "mappedType": "MarkerFillMode", "mappedName": "MarkerFillMode"}            ],
+           "originalName": "MarkerFillMode"
        }   ],
     "originalBaseTypeName": "ShapeSeriesBase",
     "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
@@ -242,7 +267,7 @@
     "originalName": "ShapeSeriesBase",
    "names": [
         { "platform": "Blazor",     "fileName": "ShapeSeriesBase.cs",
- "mappedName": "ShapeSeriesBase"}   ],
+ "mappedName": "IgbShapeSeriesBase"}   ],
    "members": [
         {
            "names": [
@@ -281,12 +306,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -332,7 +357,7 @@
     "originalName": "ScatterTriangulationSeries",
    "names": [
         { "platform": "Blazor",     "fileName": "ScatterTriangulationSeries.cs",
- "mappedName": "ScatterTriangulationSeries"}   ],
+ "mappedName": "IgbScatterTriangulationSeries"}   ],
    "members": [
         {
            "names": [
@@ -346,12 +371,12 @@
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericXAxis", "mappedName": "XAxis"}            ],
            "originalName": "XAxis"
        },
         {
            "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
+               { "platform": "Blazor",  "mappedType": "IgbNumericYAxis", "mappedName": "YAxis"}            ],
            "originalName": "YAxis"
        },
         {
@@ -397,7 +422,7 @@
     "originalName": "StyleSelector",
    "names": [
         { "platform": "Blazor",     "fileName": "StyleSelector.cs",
- "mappedName": "StyleSelector"}   ],
+ "mappedName": "IgbStyleSelector"}   ],
    "members": [
    ],
     "originalNamespace": "Infragistics.Controls.Charts"
@@ -406,7 +431,7 @@
     "originalName": "StyleShapeEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "StyleShapeEventArgs.cs",
- "mappedName": "StyleShapeEventArgs"}   ],
+ "mappedName": "IgbStyleShapeEventArgs"}   ],
    "members": [
         {
            "names": [

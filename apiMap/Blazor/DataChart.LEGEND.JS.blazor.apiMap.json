@@ -4,7 +4,7 @@
     "originalName": "LegendMouseEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "LegendMouseEventArgs.cs",
- "mappedName": "LegendMouseEventArgs"}   ],
+ "mappedName": "IgbLegendMouseEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -29,7 +29,7 @@
     "originalName": "LegendMouseButtonEventArgs",
    "names": [
         { "platform": "Blazor",     "fileName": "LegendMouseButtonEventArgs.cs",
- "mappedName": "LegendMouseButtonEventArgs"}   ],
+ "mappedName": "IgbLegendMouseButtonEventArgs"}   ],
    "members": [
         {
            "names": [
@@ -59,7 +59,7 @@
     "originalName": "ItemLegend",
    "names": [
         { "platform": "Blazor",     "fileName": "ItemLegend.cs",
- "mappedName": "ItemLegend"}   ],
+ "mappedName": "IgbItemLegend"}   ],
    "members": [
         {
            "names": [
@@ -74,7 +74,7 @@
     "originalName": "Legend",
    "names": [
         { "platform": "Blazor",     "fileName": "Legend.cs",
- "mappedName": "Legend"}   ],
+ "mappedName": "IgbLegend"}   ],
    "members": [
         {
            "names": [
@@ -99,7 +99,7 @@
     "originalName": "LegendBase",
    "names": [
         { "platform": "Blazor",     "fileName": "LegendBase.cs",
- "mappedName": "LegendBase"}   ],
+ "mappedName": "IgbLegendBase"}   ],
    "members": [
         {
            "names": [
@@ -114,7 +114,7 @@
     "originalName": "FinancialLegend",
    "names": [
         { "platform": "Blazor",     "fileName": "FinancialLegend.cs",
- "mappedName": "FinancialLegend"}   ],
+ "mappedName": "IgbFinancialLegend"}   ],
    "members": [
    ],
     "originalBaseTypeName": "LegendBase",
@@ -125,7 +125,7 @@
     "originalName": "ScaleLegend",
    "names": [
         { "platform": "Blazor",     "fileName": "ScaleLegend.cs",
- "mappedName": "ScaleLegend"}   ],
+ "mappedName": "IgbScaleLegend"}   ],
    "members": [
    ],
     "originalBaseTypeName": "LegendBase",
