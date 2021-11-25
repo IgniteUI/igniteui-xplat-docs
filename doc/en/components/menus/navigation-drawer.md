@@ -13,13 +13,13 @@ The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides si
 
 ## Usage
 
-To get started with the [`Ig$NavDrawerComponent`]({environment:wcApiUrl}/classes/IgcNavDrawerComponent.html), first you need to install $ProductName$ by executing the following command:
+To get started with the [`IgcNavDrawerComponent`]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html), first you need to install $ProductName$ by executing the following command:
 
 ```cmd
 npm install {PackageComponents}
 ```
 
-Next, you need to import the `Ig$NavDrawerComponent`, along with the [`Ig$NavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) and [`Ig$NavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+Next, you need to import the `IgcNavDrawerComponent`, along with the [`IgcNavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) and [`IgcNavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -60,9 +60,9 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
-While any content can be provided in the drawer, the [`Ig$NavDrawerItem`]({environment:wcApiUrl}/classes/igcNavDrawerItemComponent.html) is available to apply out-of-the-box styling to the items.
+While any content can be provided in the drawer, the [`igc-nav-drawer-item`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) is available to apply out-of-the-box styling to the items.
 
-To enhance our component a bit, we can use it in conjunction with the [`Ig$NavbarComponent`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html). This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
+To enhance our component a bit, we can use it in conjunction with the [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/igcnavbarcomponent.html). This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
 
 ```html
     <igc-navbar>

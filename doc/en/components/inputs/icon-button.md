@@ -10,7 +10,7 @@ The $ProductName$ Icon Button component allows developers to use registered icon
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the [`Ig$IconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
