@@ -89,7 +89,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "ドック マネージャー (追加予定)",
-    "href": "dock-manager.md",
+    "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
@@ -1365,7 +1365,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "カレンダー",
     "href": "scheduling/calendar.md",
     "status": "NEW"

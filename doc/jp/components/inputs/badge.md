@@ -13,7 +13,7 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 
 ## $Platform$ Badge の例
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
            alt="$Platform$ Badge の例"
@@ -86,7 +86,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
            alt="$Platform$ Badge の例"
@@ -105,7 +105,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
            alt="$Platform$ Badge の例"

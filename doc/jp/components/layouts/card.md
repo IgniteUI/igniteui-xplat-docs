@@ -11,7 +11,7 @@ $ProductName$ `Card Component` は、テキスト、画像、アイコン、お�
 
 ## Card の例
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card の例"
@@ -231,7 +231,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 すべて適切に設定できると、結果は以下のようになります。
 
-<code-view style="height: 220px"
+<code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
            alt="$Platform$ Card の例"
@@ -307,7 +307,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 }
 ```
 
-<code-view style="height: 295px"
+<code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -383,7 +383,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card スタイル設定の例"

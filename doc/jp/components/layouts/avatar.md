@@ -13,7 +13,7 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 
 ## $Platform$ Icon Avatar の例
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
            alt="$Platform$ Avatar の例"
@@ -119,7 +119,7 @@ defineComponents(IgcAvatarComponent);
 
 ### イニシャル
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
            alt="$Platform$ Avatar の例"
@@ -128,7 +128,7 @@ defineComponents(IgcAvatarComponent);
 
 ### 画像
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar の例"
@@ -137,7 +137,7 @@ defineComponents(IgcAvatarComponent);
 
 ### 形状
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
            alt="$Platform$ Avatar の例"
@@ -146,7 +146,7 @@ defineComponents(IgcAvatarComponent);
 
 ### サイズ
 
-<code-view style="height: 110px"
+<code-view style="height: 130px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
            alt="$Platform$ Avatar の例"
