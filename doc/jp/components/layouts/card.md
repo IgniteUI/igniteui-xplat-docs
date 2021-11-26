@@ -398,10 +398,10 @@ igc-icon-button+igc-icon-button {
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 * [`IgcCardComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html)
-* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html)
-* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html)
-* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActions.html)
+* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeaderComponent.html)
+* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContentComponent.html)
+* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMediaComponent.html)
+* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActionsComponent.html)
 
 
 使用したその他のコンポーネントとディレクティブ:

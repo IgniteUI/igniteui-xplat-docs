@@ -46,7 +46,7 @@ defineComponents(IgcButtonComponent);
 
 ### Contained ボタン
 
-[`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+[`variant`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-button variant="contained">Contained</igc-button>
