@@ -13,7 +13,7 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## $Platform$ Ripple の例
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/button">
@@ -52,7 +52,7 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/color">

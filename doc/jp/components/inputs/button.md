@@ -46,7 +46,7 @@ defineComponents(IgcButtonComponent);
 
 ### Contained ボタン
 
-[`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+[`variant`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-button variant="contained">Contained</igc-button>
@@ -64,7 +64,7 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="outlined">Outlined</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
+<div class="sample-container loading" style="height: 80px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
 </iframe></div>
 
@@ -94,7 +94,7 @@ defineComponents(IgcButtonComponent);
 
 ## ボタンのサイズ設定
 
-[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#size) プロパティを使用して、ユーザーが `igc-button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#size) プロパティを使用して、ユーザーが `button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';

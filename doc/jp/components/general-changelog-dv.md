@@ -24,15 +24,11 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' は、すべてのコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは、$ProductName$ のコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
->例:
+> 例えば, ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 >
->`<IgbDataGrid>`
->
->   `<IgbTextColumn Field="ProductID" />`
->
->`</IgbDataGrid>`
+
 
 <!-- end: Blazor -->
 
@@ -47,7 +43,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
-<!-- Blazor, WebComponents -->
+<!-- WebComponents -->
 ### 新しいコンポーネント
 
 * [Avatar](layouts/avatar.md)
@@ -65,7 +61,28 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * [Ripple](inputs/ripple.md)
 * [Switch](inputs/switch.md)
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+### 新しいコンポーネント
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navbar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
@@ -127,21 +144,6 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
-* シリーズとマーカーの再設計されたカラー パレット:
-
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
-
-例:
-
-|
-------------- | -------------
-<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
-<img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
-
-<div class="divider--half"></div>
-
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
 * heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
@@ -171,6 +173,18 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
 * 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
 * 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
+* シリーズとマーカーの再設計されたカラー パレット:
+
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+
+例:
+
+|   |   |
+|---|---|
+| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
 
 ### チャート凡例
 

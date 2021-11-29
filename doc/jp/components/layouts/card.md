@@ -11,7 +11,7 @@ $ProductName$ `Card Component` は、テキスト、画像、アイコン、お�
 
 ## Card の例
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card の例"
@@ -231,7 +231,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 すべて適切に設定できると、結果は以下のようになります。
 
-<code-view style="height: 220px"
+<code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
            alt="$Platform$ Card の例"
@@ -307,7 +307,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 }
 ```
 
-<code-view style="height: 295px"
+<code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -383,7 +383,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card スタイル設定の例"
@@ -398,10 +398,10 @@ igc-icon-button+igc-icon-button {
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 * [`IgcCardComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html)
-* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html)
-* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html)
-* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActions.html)
+* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeaderComponent.html)
+* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContentComponent.html)
+* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMediaComponent.html)
+* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActionsComponent.html)
 
 
 使用したその他のコンポーネントとディレクティブ:
