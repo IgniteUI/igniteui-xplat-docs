@@ -40,7 +40,7 @@ ig new "My Project" --framework=react --type=igr-es6
 ig new "[name_of_project]" --framework=[target_framework]
 </pre>
 
-上記のテンプレートを使用して、「My Project」という名前の `Web Components` アプリケーションを作成する場合は、次のコマンドを実行します。
+上記のテンプレートを使用して、「My Project」という名前の **Web Components** アプリケーションを作成する場合は、次のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig new "My Project" --framework=webcomponents
