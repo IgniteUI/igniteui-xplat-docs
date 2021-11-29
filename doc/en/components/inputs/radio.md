@@ -169,17 +169,17 @@ Use the `name` and `value` attributes when using the radio with `<igc-form>`.
 
 ## Styling
 
-The radio component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling.
+The radio component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling. You can also modify the global palette colors to change the colors of the radio component:
 
 ```scss
-igc-radio::part(control checked) {
-  &::before {
-    background: olive;
-  }
+:root {
+    --igc-primary-h: 60deg;
+    --igc-primary-s: 100%;
+    --igc-primary-l: 25%;
+}
 
-  &::after {
-    border-color: olive;
-  }
+igc-radio::part(control) {
+    --size: 18px;
 }
 ```
 
