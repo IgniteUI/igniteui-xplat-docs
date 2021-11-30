@@ -779,6 +779,8 @@ export class MarkdownTransformer {
     private _envTarget: string = "development";
     private _envBrowser: string = "";
 
+    public docsLanguage: string = '';
+
     shouldOmitFencedCode(language: string, platform: APIPlatform[]) {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
@@ -1196,7 +1198,7 @@ export class MarkdownTransformer {
     }
 
     // generates toc.yml file from toc.json file by filtering out its nodes for specified platform
-    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string {
+    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string[] {
 
         // console.log('generateTOC for "' + platform + '"  platform from');
         console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
@@ -1219,7 +1221,23 @@ export class MarkdownTransformer {
 
         fs.writeFileSync(ymlPath, ymlContent);
 
-        return ymlContent;
+        let topicPaths: string[] = [];
+        this.generateTopics(topicPaths, tocNodes);
+
+        return topicPaths;
+    }
+
+    // generates list of topic paths from TOC nodes that were filter for specific platform
+    generateTopics(paths: string[], tocNodes: TocNode[]) {
+        for (const node of tocNodes) {
+            if (node.href !== undefined && node.href.indexOf(".md") > 0) {
+                paths.push(node.href);
+                // console.log('>> TOC match ' + node.href);
+                if (node.items !== undefined) {
+                    this.generateTopics(paths, node.items);
+                }
+            }
+        }
     }
 
     // generates nodes recursively for toc.yml file
@@ -1307,12 +1325,21 @@ export class MarkdownTransformer {
                     node.items = this.filterNodes(node.items, platform);
                 }
                 matchingNodes.push(node);
+                console.log('>> TOC filter in  ' + this.getNodeInfo(node));
             }
             else {
-                console.log('>> TOC filtering out "' + node.name + '" node with exclude="' + node.exclude.join(',') + '"');
+                console.log('>> TOC filter out ' + this.getNodeInfo(node) + ' with exclude="' + node.exclude.join(',') + '"');
             }
         }
         return matchingNodes;
+    }
+
+    getNodeInfo(node: TocNode) {
+        if (node.href !== undefined) {
+            return '"' + './doc/' + this.docsLanguage + '/components/' + node.href + '" node';
+        } else {
+            return '"' + node.name + '" node header';
+        }
     }
 }
 
