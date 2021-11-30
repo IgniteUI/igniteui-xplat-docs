@@ -123,7 +123,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 - `PolarSplineSeries`
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
-- `DataSource`
+- `ItemsSource`
 - `AngleAxisName`
 - `AngleMemberPath`
 - `RadiusAxisName`

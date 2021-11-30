@@ -10,7 +10,7 @@ The $ProductName$ Point Chart renders a collection of points. Values are represe
 
 ## $Platform$ Point Chart Example
 
-You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `DataSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
+You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -159,7 +159,7 @@ You can find more information about related chart types in these topics:
 The following table lists API members mentioned in the above sections:
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

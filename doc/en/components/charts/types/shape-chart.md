@@ -53,7 +53,7 @@ The following table lists API members mentioned in the above sections:
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

@@ -122,7 +122,7 @@ The following table lists API members mentioned in the above sections:
 - `PolarSplineSeries`
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
-- `DataSource`
+- `ItemsSource`
 - `AngleAxisName`
 - `AngleMemberPath`
 - `RadiusAxisName`

@@ -26,14 +26,14 @@ $Platform$ マップ コンポーネントの `GeographicHighDensityScatterSerie
 相当数のデータ ポイントがあるため、シリーズではフルサイズのマーカーに対して散布データを小さな点として表示し、領域にはデータ ポイントの集合を表す高い色密度を使用した大半のデータを表示します。
 
 ## データ要件
-マップ コントロールの他のタイプの散布図シリーズと同様に、`GeographicHighDensityScatterSeries` シリーズには、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。
+マップ コントロールの他のタイプの散布図シリーズと同様に、`GeographicHighDensityScatterSeries` シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。
 
 ### データ バインディング
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
 プロパティ|タイプ|概要
 ---|---|---
-`DataSource`|any|項目ソースを取得または設定します。
+`ItemsSource`|any|項目ソースを取得または設定します。
 `LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
 `LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
 
