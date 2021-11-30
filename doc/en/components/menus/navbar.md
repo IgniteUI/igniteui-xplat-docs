@@ -12,7 +12,7 @@ mentionedTypes: ['Navbar']
 
 The following example represents a `Navbar` with icons and text header:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar Overview Example"
@@ -85,7 +85,7 @@ igc-navbar::part(end) {
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
            alt="$Platform$ Navbar Styling Example"

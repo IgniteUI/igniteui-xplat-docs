@@ -136,7 +136,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 If all goes well, your component should now look like this:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar Example"
@@ -177,7 +177,7 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 
 And here's the result:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
            alt="$Platform$ Navigation Drawer Mini Example"
@@ -211,7 +211,7 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
            alt="$Platform$ Navigation Drawer Styling Example"
