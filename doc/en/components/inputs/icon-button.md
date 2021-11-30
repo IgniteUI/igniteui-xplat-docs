@@ -10,6 +10,18 @@ The $ProductName$ Icon Button component allows developers to use registered icon
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the Icon Button, we first need to import its module, like so:
+
+```razor
+IgbIconButtonModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
@@ -18,10 +30,16 @@ import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents
 defineComponents(IgcIconButtonComponent);
 ```
 
+<!-- end: WebComponents -->
+
 After we import the icon button component we are ready to start using it, so let's add our first button.
 
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```razor
+<IgbIconButton Collection="material" />
 ```
 
 ## Examples
@@ -40,6 +58,10 @@ Similar to the regular button components, the icon button supports several varia
 <igc-icon-button name="search" variant="contained"></igc-icon-button>
 ```
 
+```razor
+<IgbIconButton Variant="@IconButtonVariant.Contained" />
+```
+
 ### Size
 
 The size of the button can be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
@@ -54,6 +76,10 @@ The size of the button can be changed by setting the [`size`]({environment:wcApi
 <igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
 ```
 
+```razor
+<IgbIconButton Size="@SizableComponentSize.Medium" />
+```
+
 ### Type
 
 The icon button component will change its internal structure from `<button>` to an `<a>` type element when the `href` attribute is set. In that case the icon button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target`, and `download` attributes of the icon button.
@@ -63,9 +89,12 @@ The icon button component will change its internal structure from `<button>` to 
   name="thumb-up"
   collection="material"
   href="https://duckduckgo.com"
-  target="_blank"
->
+  target="_blank">
 </igc-icon-button>
+```
+
+```razor
+<IgbIconButton Collection="material" Href="https://duckduckgo.com" Target="_blank" />
 ```
 
 ### Mirrored
@@ -74,6 +103,10 @@ Some icons need to look a little different when used in Right-to-Left(RTL) mode.
 
 ```html
 <igc-icon-button name="thumb-up" mirrored></igc-icon-button>
+```
+
+```razor
+<IgbIconButton Mirrored="true" />
 ```
 
 ## Styling

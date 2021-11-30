@@ -20,6 +20,18 @@ The $ProductName$ Ripple component creates an animation in response to a touch o
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the Ripple component, we first need to import its module, like so:
+
+```razor
+IgbRippleModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents --> 
+
 To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
@@ -28,6 +40,8 @@ import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
 defineComponents(IgcRippleComponent);
 ```
 
+<!-- end: WebComponents -->
+
 After we import the ripple component we are ready to start using it, so let's add the ripple to an existing component from our library.
 
 ```html
@@ -35,6 +49,13 @@ After we import the ripple component we are ready to start using it, so let's ad
   <igc-ripple></igc-ripple>
   Ripple Button
 </igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    Ripple Button
+    <IgbRipple></IgbRipple>
+</IgbButton>
 ```
 
 You can add a ripple to any web element as long as its CSS `position` property is set to any other value than `static`;

@@ -24,6 +24,18 @@ $ProductName$ Switch component is a binary choice selection component that behav
 
 At its core the switch component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
+<!-- Blazor -->
+
+To get started with the switch component, we first need to import its module, like so:
+
+```razor
+IgbSwitchModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the switch web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
@@ -38,10 +50,16 @@ import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
 defineComponents(IgcSwitchComponent);
 ```
 
+<!-- end: WebComponents -->
+
 The simplest way to start using the switch is as follows:
 
 ```html
 <igc-switch></igc-switch>
+```
+
+```razor
+<IgbSwitch />
 ```
 
 >[!WARNING]
@@ -57,11 +75,19 @@ To provide a meaningful label for the switch, simply place some text between the
 <igc-switch>Label</igc-switch>
 ```
 
+```razor
+<IgbSwitch>Label</IgbSwitch>
+```
+
 You can specify if the label should be positioned before or after the switch toggle by setting the [`label-position`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#label-position) attribute of the switch. Allowed values are `before` and `after`(default):
 
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
+```
+
+```razor
+<IgbSwitch LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbSwitch>
 ```
 
 The switch can also be labelled by elements external to the switch. In this case, the user is given full control to position and style the label in accordance with their needs.
@@ -70,6 +96,12 @@ The switch can also be labelled by elements external to the switch. In this case
 <span id="switch-label">Label</span>
 <igc-switch aria-labelledby="switch-label"></igc-switch>
 ```
+
+```razor
+<span id="switch-label>Label</span>
+<IgbSwitch AriaLabelledBy="switch-label" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
@@ -84,6 +116,11 @@ Use the [`checked`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#check
 ```html
 <igc-switch checked></igc-switch>
 ```
+
+```razor
+<IgbSwitch Checked="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
@@ -99,12 +136,20 @@ Use the [`required`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#requ
 <igc-switch required></igc-switch>
 ```
 
+```razor
+<IgbSwitch Required="true" />
+```
+
 ### Invalid
 
 Use the [`invalid`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#invalid) attribute to mark the switch as invalid.
 
 ```html
 <igc-switch invalid></igc-switch>
+```
+
+```razor
+<IgbSwitch Invalid="true" />
 ```
 
 ### Disabled
@@ -114,6 +159,11 @@ Use the [`disabled`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#disa
 ```html
 <igc-switch disabled></igc-switch>
 ```
+
+```razor
+<IgbSwitch Disabled="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
@@ -127,6 +177,10 @@ Use the [`name`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html#name) an
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
+```
+
+```razor
+<IgbSwitch Value="enabled" />
 ```
 
 ## Styling
