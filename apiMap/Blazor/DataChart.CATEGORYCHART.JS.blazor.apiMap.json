@@ -1,7 +1,8 @@
 {"types":[
-  { "originalName":"CategoryChart","names":[{"platform":"Blazor","fileName":"CategoryChart.cs","mappedName":"IgbCategoryChart"}],
+  { "originalName":"CategoryChart",
+    "names":[{"platform":"Blazor","fileName":"CategoryChart.cs","mappedName":"IgbCategoryChart"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"TransitionInDuration"}],"originalName":"TransitionInDuration"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionInDuration"}],"originalName":"TransitionInDuration"},
     { "names":[{"platform":"Blazor","mappedType":"CategoryChartType","mappedName":"ChartType"}],"originalName":"ChartType"},
     { "names":[{"platform":"Blazor","mappedType":"CategorySeriesMarkerCollisionAvoidance","mappedName":"MarkerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsTransitionInEnabled"}],"originalName":"IsTransitionInEnabled"},
@@ -13,7 +14,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisOverlap"}],"originalName":"XAxisOverlap"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisInterval"}],"originalName":"YAxisInterval"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"YAxisIsLogarithmic"}],"originalName":"YAxisIsLogarithmic"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"YAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"YAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMinimumValue"}],"originalName":"YAxisMinimumValue"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMaximumValue"}],"originalName":"YAxisMaximumValue"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMinorInterval"}],"originalName":"YAxisMinorInterval"},

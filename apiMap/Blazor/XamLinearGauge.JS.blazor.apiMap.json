@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"XamLinearGauge","names":[{"platform":"Blazor","fileName":"LinearGauge.cs","mappedName":"IgbLinearGauge"}],
+  { "originalName":"XamLinearGauge",
+    "names":[{"platform":"Blazor","fileName":"LinearGauge.cs","mappedName":"IgbLinearGauge"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TransitionProgress"}],"originalName":"TransitionProgress"},
     { "names":[{"platform":"Blazor","mappedType":"LinearScaleOrientation","mappedName":"Orientation"}],"originalName":"Orientation"},
@@ -60,8 +61,8 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsNeedleDraggingEnabled"}],"originalName":"IsNeedleDraggingEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelFormat"}],"originalName":"LabelFormat"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"LabelFormatSpecifiers"}],"originalName":"LabelFormatSpecifiers"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"ShowToolTipTimeout"}],"originalName":"ShowToolTipTimeout"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ShowToolTipTimeout"}],"originalName":"ShowToolTipTimeout"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShowToolTip"}],"originalName":"ShowToolTip"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Font"}],"originalName":"Font"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
@@ -73,7 +74,8 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ContainerResized"}],"originalName":"ContainerResized"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
-  { "originalName":"XamLinearGraphRange","names":[{"platform":"Blazor","fileName":"LinearGraphRange.cs","mappedName":"IgbLinearGraphRange"}],
+  { "originalName":"XamLinearGraphRange",
+    "names":[{"platform":"Blazor","fileName":"LinearGraphRange.cs","mappedName":"IgbLinearGraphRange"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brush"}],"originalName":"Brush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
@@ -84,5 +86,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterStartExtent"}],"originalName":"OuterStartExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterEndExtent"}],"originalName":"OuterEndExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
-  { "originalName":"FormatLinearGraphLabelEventArgs","names":[{"platform":"Blazor","fileName":"FormatLinearGraphLabelEventArgs.cs","mappedName":"IgbFormatLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Gauges"},
-  { "originalName":"AlignLinearGraphLabelEventArgs","names":[{"platform":"Blazor","fileName":"AlignLinearGraphLabelEventArgs.cs","mappedName":"IgbAlignLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatLinearGraphLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","originalNamespace":"Infragistics.Controls.Gauges"}]}
+  { "originalName":"FormatLinearGraphLabelEventArgs",
+    "names":[{"platform":"Blazor","fileName":"FormatLinearGraphLabelEventArgs.cs","mappedName":"IgbFormatLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Gauges"},
+  { "originalName":"AlignLinearGraphLabelEventArgs",
+    "names":[{"platform":"Blazor","fileName":"AlignLinearGraphLabelEventArgs.cs","mappedName":"IgbAlignLinearGraphLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatLinearGraphLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","originalNamespace":"Infragistics.Controls.Gauges"}]}

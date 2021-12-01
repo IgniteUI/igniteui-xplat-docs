@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"XamSparkline","names":[{"platform":"Blazor","fileName":"Sparkline.cs","mappedName":"IgbSparkline"}],
+  { "originalName":"XamSparkline",
+    "names":[{"platform":"Blazor","fileName":"Sparkline.cs","mappedName":"IgbSparkline"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brush"}],"originalName":"Brush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NegativeBrush"}],"originalName":"NegativeBrush"},
@@ -36,7 +37,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueMemberPath"}],"originalName":"ValueMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelMemberPath"}],"originalName":"LabelMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"TrendLineType","mappedName":"TrendLineType"}],"originalName":"TrendLineType"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NormalRangeMinimum"}],"originalName":"NormalRangeMinimum"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NormalRangeMaximum"}],"originalName":"NormalRangeMaximum"},
