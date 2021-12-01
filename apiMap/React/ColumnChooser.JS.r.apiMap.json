@@ -1,12 +1,12 @@
-{"extraFiles": ["igr-column-chooser-module.ts"], "types": [{"originalName": "ColumnChooser", 
-  "names": [
-    {"platform": "React", "fileName": "igr-column-chooser.ts", "mappedName": "IgrColumnChooser"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "IgrDataGrid", "mappedName": "targetGrid"}], "originalName": "TargetGrid"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "title"}], "originalName": "Title"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "titleColor"}], "originalName": "TitleColor"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "filterPlaceholderText"}], "originalName": "FilterPlaceholderText"}, 
-    {"names": [{"platform": "React", "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}], "originalName": "BaseTheme"}, 
-    {"names": [{"platform": "React", "mappedType": "ControlDisplayDensity", "mappedName": "density"}], "originalName": "Density"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"}], "originalNamespace": "Infragistics.Controls.Grids.Implementation"}]}
+{"extraFiles":["igr-column-chooser-module.ts"],
+  "types":[
+  { "originalName":"ColumnChooser",
+    "names":[{"platform":"React","fileName":"igr-column-chooser.ts","mappedName":"IgrColumnChooser"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrDataGrid","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"filterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

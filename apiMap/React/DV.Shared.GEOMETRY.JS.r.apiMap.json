@@ -1,7 +1,6 @@
-{"types": [{"originalName": "FlattenerSettings", 
-  "names": [
-    {"platform": "React", "fileName": "FlattenerSettings.ts", "mappedName": "FlattenerSettings"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "chunkingAmount"}], "originalName": "ChunkingAmount"}], "originalNamespace": "Infragistics"}]}
+{"types":[
+  { "originalName":"FlattenerSettings",
+    "names":[{"platform":"React","fileName":"FlattenerSettings.ts","mappedName":"FlattenerSettings"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"chunkingAmount"}],"originalName":"ChunkingAmount"}],"originalNamespace":"Infragistics"}]}
