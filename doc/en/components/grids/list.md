@@ -353,3 +353,10 @@ Additional Web Components that were used:
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+List test section
+
+* List - `List`
+* Ig$List - `Ig$List`
+* IgcList - `IgcList`
+* WC Link - [`IgcList`]({environment:wcApiUrl}/classes/IgcListComponent.html)
