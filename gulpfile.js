@@ -198,12 +198,15 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
+
+        fileContent = fileContent.split('],"types":').join('],\n  "types":');
         fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
         fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
         // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
         // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
         fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
         fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
+        fileContent = fileContent.split(',"names":').join        (',\n    "names":');
         // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
         // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
         // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
