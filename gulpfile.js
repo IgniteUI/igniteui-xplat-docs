@@ -188,8 +188,14 @@ exports.updateApiBlazor = updateApiBlazor;
 
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
+    // cleanup previous API mapping files
+    del.sync("apiMap/" + platformName + "/*apiMap.json");
+
     return gulp.src([
-        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json"
+        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
+        // excluding API mapping files for conflicting components with WebInputs
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Inputs*apiMap.json",
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Calendar*apiMap.json"
     ])
     .pipe(es.map(function(file, fileCallback) {
         var jsonContent = file.contents.toString();

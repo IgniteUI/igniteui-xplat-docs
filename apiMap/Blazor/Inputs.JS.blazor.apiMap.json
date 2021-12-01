@@ -1,6 +1,0 @@
-{"types":[
-  { "originalName":"InputChangeEventArgs",
-    "names":[{"platform":"Blazor","fileName":"InputChangeEventArgs.cs","mappedName":"IgbInputChangeEventArgs"}],
-    "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Value"}],"originalName":"Value"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCompositionInProgress"}],"originalName":"IsCompositionInProgress"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
