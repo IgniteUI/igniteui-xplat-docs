@@ -10,7 +10,7 @@
     "toc2React": "tsc && gulp generateTocYML --plat=React --lang=en",
     "toc2WC": "tsc && gulp generateTocYML --plat=WebComponents --lang=en",
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
-    "updateApi": "tsc && gulp updateApiSection",
+    "updateApiSection": "tsc && gulp updateApiSection",
     "verifyCodeViewer": "tsc && gulp verifyCodeViewer",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
     "generateRedirects": "tsc && gulp generateRedirects",
