@@ -20,6 +20,18 @@ The $ProductName$ Radio Button component allows the user to select a single opti
 
 ### Usage
 
+<!-- Blazor -->
+
+To get started with the radio component, we first need to import its module, like so:
+
+```razor
+IgbRadioModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 To get started with the radio web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
@@ -34,6 +46,8 @@ import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'ign
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
+<!-- end: WebComponents -->
+
 The simplest way to start using the radio is as follows:
 
 ```html
@@ -43,6 +57,15 @@ The simplest way to start using the radio is as follows:
   <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
+```
+
+```razor
+<IgbRadioGroup>
+    <IgbRadio>Apple</IgbRadio>
+    <IgbRadio>Banana</IgbRadio>
+    <IgbRadio>Mango</IgbRadio>
+    <IgbRadio>Orange</IgbRadio>
+</IgbRadioGroup>
 ```
 
 > [!WARNING]
@@ -58,6 +81,10 @@ To provide a meaningful label for the radio, simply place some text between the 
 <igc-radio>Apple</igc-radio>
 ```
 
+```razor
+<IgbRadio>Apple</IgbRadio>
+```
+
 You can specify if the label should be positioned before or after the radio button by setting the `label-position` attribute. Allowed values are `before` and `after`(default):
 
 
@@ -65,11 +92,20 @@ You can specify if the label should be positioned before or after the radio butt
 <igc-radio label-position="before">Apple</igc-radio>
 ```
 
+```razor
+<IgbRadio LabelPosition="@RadioLabelPosition.Before">Apple</IgbRadio>
+```
+
 The radio can also be labelled by elements external to it. In this case the user is given full control to position and style the label in accordance to their needs.
 
 ```html
 <span id="radio-label">Label</span>
-<igc-radio aria-labelledby="switch-label"></igc-radio>
+<igc-radio aria-labelledby="radio-label"></igc-radio>
+```
+
+```razor
+<span id="radio-label">Label</span>
+<IgbRadio AriaLabelledBy="radio-label" />
 ```
 
 <code-view style="height: 100px"
@@ -92,6 +128,15 @@ Use the `checked` attribute to toggle on the radio.
 </igc-radio-group>
 ```
 
+```razor
+<IgbRadioGroup>
+    <IgbRadio>Apple</IgbRadio>
+    <IgbRadio Checked="true">Banana</IgbRadio>
+    <IgbRadio>Mango</IgbRadio>
+    <IgbRadio>Orange</IgbRadio>
+</IgbRadioGroup>
+```
+
 <code-view style="height: 205px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
@@ -105,6 +150,10 @@ Use the `invalid` attribute to mark the radio as invalid.
 
 ```html
 <igc-radio invalid></igc-radio>
+```
+
+```razor
+<IgbRadio Invalid="true" />
 ```
 
 <code-view style="height: 205px"
@@ -127,6 +176,15 @@ Use the `disabled` attribute to disable the radio.
 </igc-radio-group>
 ```
 
+```razor
+<IgbRadioGroup>
+    <IgbRadio>Apple</IgbRadio>
+    <IgbRadio Disabled="true">Banana</IgbRadio>
+    <IgbRadio>Mango</IgbRadio>
+    <IgbRadio>Orange</IgbRadio>
+</IgbRadioGroup>
+```
+
 <code-view style="height: 205px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
@@ -145,6 +203,15 @@ The radio group allows you to easily change the placement directionality of the 
   <igc-radio>Mango</igc-radio>
   <igc-radio>Orange</igc-radio>
 </igc-radio-group>
+```
+
+```razor
+<IgbRadioGroup Alignment="@RadioGroupAlignment.Horizontal">
+    <IgbRadio>Apple</IgbRadio>
+    <IgbRadio>Banana</IgbRadio>
+    <IgbRadio>Mango</IgbRadio>
+    <IgbRadio>Orange</IgbRadio>
+</IgbRadioGroup>
 ```
 
 <code-view style="height: 60px"
@@ -171,7 +238,7 @@ Use the `name` and `value` attributes when using the radio with `<igc-form>`.
 
 The radio component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling.
 
-```scss
+```css
 igc-radio::part(control checked) {
   &::before {
     background: olive;
