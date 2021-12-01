@@ -1,70 +1,50 @@
-{"extraFiles": ["igx-legend-module.ts", "igx-item-legend-module.ts", "igx-scale-legend-module.ts", "igx-financial-legend-module.ts"], "types": [{"originalName": "LegendMouseEventArgs", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-legend-mouse-event-args.ts", "mappedName": "IgxLegendMouseEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "originalSource"}], "originalName": "OriginalSource"}, 
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
-    {"names": [{"platform": "Angular", "mappedType": "ILegendSeries", "mappedName": "series"}], "originalName": "Series"}, 
-    {"names": [{"platform": "Angular", "mappedType": "ILegendOwner", "mappedName": "chart"}], "originalName": "Chart"}, 
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "legendItem"}], "originalName": "LegendItem"}, 
-    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "toString"}], "originalName": "ToString"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "LegendMouseButtonEventArgs", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-legend-mouse-button-event-args.ts", "mappedName": "IgxLegendMouseButtonEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "handled"}], "originalName": "Handled"}, 
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "originalSource"}], "originalName": "OriginalSource"}, 
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "item"}], "originalName": "Item"}, 
-    {"names": [{"platform": "Angular", "mappedType": "ILegendSeries", "mappedName": "series"}], "originalName": "Series"}, 
-    {"names": [{"platform": "Angular", "mappedType": "ILegendOwner", "mappedName": "chart"}], "originalName": "Chart"}, 
-    {"names": [{"platform": "Angular", "mappedType": "any", "mappedName": "legendItem"}], "originalName": "LegendItem"}, 
-    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "toString"}], "originalName": "ToString"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ItemLegend", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-item-legend-component.ts", "mappedName": "IgxItemLegendComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"}, 
-    {"names": [{"platform": "Angular", "mappedType": "LegendOrientation", "mappedName": "orientation"}], "originalName": "Orientation"}
-  ], 
-  "originalBaseTypeName": "LegendBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Legend", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-legend-component.ts", "mappedName": "IgxLegendComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "LegendOrientation", "mappedName": "orientation"}], "originalName": "Orientation"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textStyle"}], "originalName": "TextStyle"}
-  ], 
-  "originalBaseTypeName": "LegendBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "LegendOrientation", "isEnum": true, 
-  "names": [
-    {"platform": "Angular", "fileName": "LegendOrientation.ts", "mappedName": "LegendOrientation"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "LegendOrientation", "mappedName": "Horizontal"}], "originalName": "Horizontal"}, 
-    {"names": [{"platform": "Angular", "mappedType": "LegendOrientation", "mappedName": "Vertical"}], "originalName": "Vertical"}, 
-    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "LegendBase", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-legend-base-component.ts", "mappedName": "IgxLegendBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isItemwise"}], "originalName": "IsItemwise"}, 
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFinancial"}], "originalName": "IsFinancial"}, 
-    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "exportSerializedVisualData"}], "originalName": "ExportSerializedVisualData"}
-  ], 
-  "originalBaseTypeName": "ContentControl", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FinancialLegend", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-financial-legend-component.ts", "mappedName": "IgxFinancialLegendComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "isFinancial"}], "originalName": "IsFinancial"}
-  ], 
-  "originalBaseTypeName": "LegendBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ScaleLegend", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-scale-legend-component.ts", "mappedName": "IgxScaleLegendComponent"}
-  ], 
-  "members": [], "originalBaseTypeName": "LegendBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}
+{"extraFiles":["igx-legend-module.ts","igx-item-legend-module.ts","igx-scale-legend-module.ts","igx-financial-legend-module.ts"],
+  "types":[
+  { "originalName":"LegendMouseEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-legend-mouse-event-args.ts","mappedName":"IgxLegendMouseEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"originalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"Angular","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"Angular","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendMouseButtonEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-legend-mouse-button-event-args.ts","mappedName":"IgxLegendMouseButtonEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"handled"}],"originalName":"Handled"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"originalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"Angular","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"Angular","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ItemLegend",
+    "names":[{"platform":"Angular","fileName":"igx-item-legend-component.ts","mappedName":"IgxItemLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
+    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Legend",
+    "names":[{"platform":"Angular","fileName":"igx-legend-component.ts","mappedName":"IgxLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendOrientation","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"LegendOrientation.ts","mappedName":"LegendOrientation"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"Horizontal"}],"originalName":"Horizontal"},
+    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"Vertical"}],"originalName":"Vertical"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendBase",
+    "names":[{"platform":"Angular","fileName":"igx-legend-base-component.ts","mappedName":"IgxLegendBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialLegend",
+    "names":[{"platform":"Angular","fileName":"igx-financial-legend-component.ts","mappedName":"IgxFinancialLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScaleLegend",
+    "names":[{"platform":"Angular","fileName":"igx-scale-legend-component.ts","mappedName":"IgxScaleLegendComponent"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -1,55 +1,50 @@
-{"extraFiles": ["igx-x-calendar-module.ts"], "types": [{"originalName": "Calendar", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-x-calendar-component.ts", "mappedName": "IgxXCalendarComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "value"}], "originalName": "Value"}, 
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "today"}], "originalName": "Today"}, 
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "minDate"}], "originalName": "MinDate"}, 
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "maxDate"}], "originalName": "MaxDate"}, 
-    {"names": [{"platform": "Angular", "mappedType": "ControlDisplayDensity", "mappedName": "density"}], "originalName": "Density"}, 
-    {"names": [{"platform": "Angular", "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}], "originalName": "BaseTheme"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "selectedDateBackgroundColor"}], "originalName": "SelectedDateBackgroundColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "selectedFocusDateBackgroundColor"}], "originalName": "SelectedFocusDateBackgroundColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "focusDateBackgroundColor"}], "originalName": "FocusDateBackgroundColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "hoverBackgroundColor"}], "originalName": "HoverBackgroundColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "selectedDateTextColor"}], "originalName": "SelectedDateTextColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "focusDateTextColor"}], "originalName": "FocusDateTextColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "currentDateTextColor"}], "originalName": "CurrentDateTextColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "string", "mappedName": "currentDateBorderColor"}], "originalName": "CurrentDateBorderColor"}, 
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "showTodayButton"}], "originalName": "ShowTodayButton"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "firstDayOfWeek"}], "originalName": "FirstDayOfWeek"}, 
-    {"names": [{"platform": "Angular", "mappedType": "FirstWeek", "mappedName": "firstWeekOfYear"}], "originalName": "FirstWeekOfYear"}, 
-    {"names": [{"platform": "Angular", "mappedType": "boolean", "mappedName": "showWeekNumbers"}], "originalName": "ShowWeekNumbers"}, 
-    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
-    {"names": [{"platform": "Angular", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "ValueChangedEventArgs", 
-  "names": [
-    {"platform": "Angular", "fileName": "igx-value-changed-event-args.ts", "mappedName": "IgxValueChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "oldValue"}], "originalName": "OldValue"}, 
-    {"names": [{"platform": "Angular", "mappedType": "Date", "mappedName": "newValue"}], "originalName": "NewValue"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "DayOfWeek", "isEnum": true, 
-  "names": [
-    {"platform": "Angular", "fileName": "DayOfWeek.ts", "mappedName": "DayOfWeek"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Sunday"}], "originalName": "Sunday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Monday"}], "originalName": "Monday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Tuesday"}], "originalName": "Tuesday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Wednesday"}], "originalName": "Wednesday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Thursday"}], "originalName": "Thursday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Friday"}], "originalName": "Friday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "DayOfWeek", "mappedName": "Saturday"}], "originalName": "Saturday"}, 
-    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}, {"originalName": "FirstWeek", "isEnum": true, 
-  "names": [
-    {"platform": "Angular", "fileName": "FirstWeek.ts", "mappedName": "FirstWeek"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "FirstWeek", "mappedName": "FirstDay"}], "originalName": "FirstDay"}, 
-    {"names": [{"platform": "Angular", "mappedType": "FirstWeek", "mappedName": "FirstFullWeek"}], "originalName": "FirstFullWeek"}, 
-    {"names": [{"platform": "Angular", "mappedType": "FirstWeek", "mappedName": "FirstFourDayWeek"}], "originalName": "FirstFourDayWeek"}, 
-    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls.Inputs.Implementation"}]}
+{"extraFiles":["igx-x-calendar-module.ts"],
+  "types":[
+  { "originalName":"Calendar",
+    "names":[{"platform":"Angular","fileName":"igx-x-calendar-component.ts","mappedName":"IgxXCalendarComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"today"}],"originalName":"Today"},
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"minDate"}],"originalName":"MinDate"},
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"maxDate"}],"originalName":"MaxDate"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"selectedDateBackgroundColor"}],"originalName":"SelectedDateBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"selectedFocusDateBackgroundColor"}],"originalName":"SelectedFocusDateBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"focusDateBackgroundColor"}],"originalName":"FocusDateBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"hoverBackgroundColor"}],"originalName":"HoverBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"selectedDateTextColor"}],"originalName":"SelectedDateTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"focusDateTextColor"}],"originalName":"FocusDateTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"currentDateTextColor"}],"originalName":"CurrentDateTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"currentDateBorderColor"}],"originalName":"CurrentDateBorderColor"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showTodayButton"}],"originalName":"ShowTodayButton"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"firstDayOfWeek"}],"originalName":"FirstDayOfWeek"},
+    { "names":[{"platform":"Angular","mappedType":"FirstWeek","mappedName":"firstWeekOfYear"}],"originalName":"FirstWeekOfYear"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showWeekNumbers"}],"originalName":"ShowWeekNumbers"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+  { "originalName":"ValueChangedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-value-changed-event-args.ts","mappedName":"IgxValueChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"oldValue"}],"originalName":"OldValue"},
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+  { "originalName":"DayOfWeek","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"DayOfWeek.ts","mappedName":"DayOfWeek"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Sunday"}],"originalName":"Sunday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Monday"}],"originalName":"Monday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Tuesday"}],"originalName":"Tuesday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Wednesday"}],"originalName":"Wednesday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Thursday"}],"originalName":"Thursday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Friday"}],"originalName":"Friday"},
+    { "names":[{"platform":"Angular","mappedType":"DayOfWeek","mappedName":"Saturday"}],"originalName":"Saturday"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+  { "originalName":"FirstWeek","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"FirstWeek.ts","mappedName":"FirstWeek"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"FirstWeek","mappedName":"FirstDay"}],"originalName":"FirstDay"},
+    { "names":[{"platform":"Angular","mappedType":"FirstWeek","mappedName":"FirstFullWeek"}],"originalName":"FirstFullWeek"},
+    { "names":[{"platform":"Angular","mappedType":"FirstWeek","mappedName":"FirstFourDayWeek"}],"originalName":"FirstFourDayWeek"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
