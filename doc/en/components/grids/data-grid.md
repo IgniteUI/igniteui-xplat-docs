@@ -418,10 +418,10 @@ The following code demonstrates how to style specific columns using the provided
 - [Column Resizing](data-grid-column-resizing.md)
 - [Column Sorting](data-grid-column-sorting.md)
 - [Column Types](data-grid-column-types.md)
-<!-- Angular, React, WebComponents -->
-- [Row Paging](data-grid-row-paging.md)
-<!-- end: Angular, React, WebComponents -->
+- [Performance](data-grid-performance.md)
 - [Row Pinning](data-grid-row-pinning.md)
 - [Row Grouping](data-grid-row-grouping.md)
 - [Row Highlighting](data-grid-row-highlighting.md)
-- [Performance](data-grid-performance.md)
+<!-- React -->
+- [Row Paging](data-grid-row-paging.md)
+<!-- end: React -->

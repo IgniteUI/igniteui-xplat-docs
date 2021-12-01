@@ -419,10 +419,10 @@ grid1.dataSource = data;
 - [列サイズの変更](data-grid-column-resizing.md)
 - [列の並ソート](data-grid-column-sorting.md)
 - [列タイプ](data-grid-column-types.md)
-<!-- Angular, React, WebComponents -->
-- [行のページング](data-grid-row-paging.md)
-<!-- end: Angular, React, WebComponents -->
+- [パフォーマンス](data-grid-performance.md)
 - [行のピン固定](data-grid-row-pinning.md)
 - [行グループ](data-grid-row-grouping.md)
 - [行の強調表示](data-grid-row-highlighting.md)
-- [パフォーマンス](data-grid-performance.md)
+<!-- React -->
+- [行のページング](data-grid-row-paging.md)
+<!-- end: React -->
