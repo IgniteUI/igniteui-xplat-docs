@@ -1,3 +1,10 @@
+---
+title: $Platform$ List Component | Infragistics
+_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
+_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+mentionedTypes: ['List']
+---
+
 # $Platform$ List Overview
 
 The List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The List component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
