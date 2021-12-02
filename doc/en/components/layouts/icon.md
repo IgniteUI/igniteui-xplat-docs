@@ -23,7 +23,7 @@ $ProductName$ Icon component allows developers to use any registered SVG as icon
 
 <!-- Blazor -->
 
-To get started with the `IgbIcon` component, you first need to register the `IgbIconModule`.
+To get started with the `Icon` component, you first need to register the `IgbIconModule`.
 
 ```razor
 IgbIconModule.Register(IgniteUIBlazor);

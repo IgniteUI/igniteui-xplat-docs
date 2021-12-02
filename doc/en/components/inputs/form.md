@@ -24,7 +24,7 @@ The following example represents a form that has some inputs, buttons and a chec
 
 <!-- Blazor -->
 
-To get started with the `IgbForm` component, you first need to register the `IgbFormModule`.
+To get started with the `Form` component, you first need to register the `IgbFormModule`.
 
 ```razor
 IgbFormModule.Register(IgniteUIBlazor);

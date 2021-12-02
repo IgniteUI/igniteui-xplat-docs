@@ -22,7 +22,7 @@ The Infragistics $Platform$ Navigation Drawer provides side navigation that can 
 
 <!-- Blazor -->
 
-To get started with the `IgbNavbar` component, you first need to register the `IgbNavbarModule` and optional `IgbNavDrawerHeaderItemModule`.
+To get started with the `Navbar` component, you first need to register the `IgbNavbarModule` and optional `IgbNavDrawerHeaderItemModule`.
 
 ```razor
 IgbNavDrawerModule.Register(IgniteUIBlazor);

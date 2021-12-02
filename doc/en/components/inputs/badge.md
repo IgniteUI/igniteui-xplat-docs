@@ -26,7 +26,7 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 <!-- Blazor -->
 
-To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
+To get started with the `Badge` component, you first need to register the `IgbBadgeModule`.
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);

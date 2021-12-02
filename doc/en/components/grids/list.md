@@ -28,7 +28,7 @@ At its core the list web component allows you to easily display a vertical list 
 
 <!-- Blazor -->
 
-To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+To get started with the `List` component, you first need to register the `IgbListModule`.
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);

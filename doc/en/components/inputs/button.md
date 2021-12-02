@@ -22,7 +22,7 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 <!-- Blazor -->
 
-To get started with the `IgbButton` component, you first need to register the `IgbButtonModule`.
+To get started with the `Button` component, you first need to register the `IgbButtonModule`.
 
 ```razor
 IgbButtonModule.Register(IgniteUIBlazor);

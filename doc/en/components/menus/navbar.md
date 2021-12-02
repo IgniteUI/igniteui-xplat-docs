@@ -24,7 +24,7 @@ The following example represents a `Navbar` with icons and text header:
 
 <!-- Blazor -->
 
-To get started with the `IgbNavbar` component, you first need to register the `IgbNavbarModule`.
+To get started with the `Navbar` component, you first need to register the `IgbNavbarModule`.
 
 ```razor
 IgbNavbarModule.Register(IgniteUIBlazor);
