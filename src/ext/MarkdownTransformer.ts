@@ -82,6 +82,8 @@ function transformCodeRefs(options: any) {
         let memberName = node.value;
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
+        let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
+        let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
         let createLink: boolean = <boolean><any>apiDocRoot;
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
@@ -179,6 +181,15 @@ function transformCodeRefs(options: any) {
         if (createLink) {
             if (isTypeName) {
                 let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
+
+                for (const component of apiDocOverrideComponents) {
+                    var name = (options.platformPascalPrefix + component).toLowerCase();
+                    // var name = component.toLowerCase();
+                    if (link.url.indexOf(name) > 0) {
+                        link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                    }
+                }
+                // console.log("getApiLink " + link.url);
                 if (link) {
                     parent.children.splice(index, 1, link);
                     return;

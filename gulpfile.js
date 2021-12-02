@@ -370,7 +370,7 @@ function buildPlatform(cb) {
 
         // uncomment to test faster build
         // sources.push('!doc/**/obsolete/**/*.md');
-        // sources.push('!doc/**/grid/**/*.md');
+        // sources.push('!doc/**/grids/**/*.md');
         // sources.push('!doc/**/charts/**/*.md');
         // sources.push('!doc/**/editors/**/*.md');
         // sources.push('!doc/**/inputs/**/*.md');
@@ -382,6 +382,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
         // sources.push('!doc/**/general*.md');
+        // sources.push('!doc/**/general-changelog-dv.md');
         // sources.push('!doc/**/*map*.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
@@ -392,6 +393,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/zoomslider*.md');
         // sources.push('!doc/**/sparkline*.md');
         // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/scheduling/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
         // sources.push('!doc/**/types/**/*.md');
