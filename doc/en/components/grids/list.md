@@ -11,7 +11,7 @@ The List element is extremely useful when presenting a group of items. You can c
 
 ## $Platform$ List Example
 
-The following example represents a list populated with contacts with a name and a phone number properties. The [`IgcList`]({environment:wcApiUrl}/classes/IgcListComponent.html) component uses [`IgcAvatar`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) and [`IgcButton`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
+The following example represents a list populated with contacts with a name and a phone number properties. The `List` component uses `Avatar` and `Button` to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -43,7 +43,7 @@ To get started with the list Web component, first you need to install Ignite UI 
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `IgcListComponent` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `List` along with its items inside our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -140,7 +140,7 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 </IgbList>
 ```
 
-Both slots `title` and `subtitle` give our [`list items`]({environment:wcApiUrl}/classes/IgcListItemComponent.html) some default look.
+Both slots `title` and `subtitle` give our `ListItems` some default look.
 
 After all that our list component should now look like that:
 
@@ -153,7 +153,7 @@ After all that our list component should now look like that:
 
 ### Adding Avatar and Buttons
 
-We can use some of our other components in conjunction with the [IgcList]({environment:wcApiUrl}/classes/IgcListComponent.html) component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
+We can use some of our other components in conjunction with the `List` component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -235,7 +235,7 @@ The `start` slot is meant to be used for adding some kind of media before all ot
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
 
-Let's also allow the user to choose the size of the list by using its [`size`]({environment:wcApiUrl}/classes/IgcListComponent.html#size) property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
+Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
@@ -336,16 +336,16 @@ igc-list-item::part(end) {
 
 In this article we covered a lot of ground with the list web component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional Ignite UI Web Components, like avatars and buttons. Finally, we changed the component's appearance through the exposed CSS parts.
 
-* [IgcListComponent]({environment:wcApiUrl}/classes/IgcListComponent.html)
-* [IgcListHeaderComponent]({environment:wcApiUrl}/classes/IgcListHeaderComponent.html)
-* [IgcListItemComponent]({environment:wcApiUrl}/classes/IgcListItemComponent.html)
+* `List`
+* `ListHeader`
+* `ListItem`
 
 Additional Web Components that were used:
 
-* [IgcAvatarComponent]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* `Avatar`
+* `Button`
+* `RadioGroup`
+* `Radio`
 
 ## Additional Resources
 
@@ -354,9 +354,3 @@ Additional Web Components that were used:
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
-List test section
-
-* List - `List`
-* Ig$List - `Ig$List`
-* IgcList - `IgcList`
-* WC Link - [`IgcList`]({environment:wcApiUrl}/classes/IgcListComponent.html)

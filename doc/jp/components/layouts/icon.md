@@ -27,7 +27,7 @@ Icon Web コンポーネントの使用を開始するには、最初に次の�
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Icon` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -50,7 +50,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-[`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
+`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
 ```ts
 registerIcon(
@@ -62,7 +62,7 @@ registerIcon(
 
 上記の方法では、`search` という名前のアイコンが `material` という名前のコレクションに追加されます。
 
-次に、新しく登録されたアイコンを使用するには、名前とコレクションを `igc-icon` 要素に渡すだけです。
+次に、新しく登録されたアイコンを使用するには、名前とコレクションを `Icon` 要素に渡すだけです。
 
 ```html
 <igc-icon name="search" collection="material"></igc-icon>
@@ -81,7 +81,7 @@ registerIconFromText("search", searchIcon, "material");
 
 ### サイズ
 
-アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html#size) 属性を前述のサイズのいずれかに設定します。
+アイコン コンポーネントは、`small`、`medium` (デフォルト)、`large` の 3 つのアイコン サイズをサポートしています。アイコンのサイズを変更するには、`size` 属性を前述のサイズのいずれかに設定します。
 
 ```html
 <igc-icon size="large"></igc-icon>
@@ -103,7 +103,7 @@ registerIconFromText("search", searchIcon, "material");
 
 ## スタイル設定
 
-アイコン コンポーネントは、`igc-icon` 要素に直接スタイルを適用することでスタイルを設定できます。
+アイコン コンポーネントは、`Icon` 要素に直接スタイルを適用することでスタイルを設定できます。
 
 ```css
 igc-icon {
@@ -120,7 +120,7 @@ igc-icon {
 
 ## API リファレンス
 
-* [IgcIconComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html)
+* `Icon`
 
 ## その他のリソース
 

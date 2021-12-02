@@ -13,7 +13,7 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
-To get started we need to import the [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Button` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
@@ -35,8 +35,8 @@ With `prefix` and `suffix` slots we can add different content before and after t
 
 ## Type
 
-The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the [`href`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#href) attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the [`rel`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#rel), [`target`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#target) and [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) attributes.
-In the case when the button component uses an actual `button` element internally, we can specify its [`type`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#type) by setting the property to any of the following values:
+The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
+In the case when the button component uses an actual `button` element internally, we can specify its `type` by setting the property to any of the following values:
 
 - `submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
@@ -46,7 +46,7 @@ In the case when the button component uses an actual `button` element internally
 
 ### Contained Button
 
-Use [`variant`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#variant) attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
+Use `variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
 
 ```html
 <igc-button variant="contained">Contained</igc-button>
@@ -94,7 +94,7 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ## Button Sizing
 
-We can allow the user to choose the size of the `button` by using its [`size`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
+We can allow the user to choose the size of the `button` by using its `size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the button.
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -135,7 +135,7 @@ And here's the result of all that work:
 
 ### Download
 
-Setting the [`download`]({environment:wcApiUrl}/classes/IgcButtonComponent.html#download) property will prompt the user to save the linked URL instead of navigating to it.
+Setting the `download` property will prompt the user to save the linked URL instead of navigating to it.
 
 ```html
 <igc-button
@@ -172,12 +172,12 @@ igc-button::part(base) {
 
 ## API Reference
 
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* `Button`
 
 Additional Web Components that were used:
 
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* `RadioGroup`
+* `Radio`
 
 ## Additional Resources
 

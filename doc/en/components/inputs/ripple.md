@@ -2,6 +2,7 @@
 title: $Platform$ Ripple
 _description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
+mentionedTypes: ['Ripple']
 ---
 
 # $Platform$ Ripple Overview
@@ -30,9 +31,9 @@ IgbRippleModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-<!-- WebComponents --> 
+<!-- WebComponents -->
 
-To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -80,11 +81,11 @@ igc-ripple {
 
 ## API Reference
 
-* [IgcRippleComponent]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* `Ripple`
 
 Additional Web Components that were used:
 
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* `Button`
 
 ## Additional Resources
 

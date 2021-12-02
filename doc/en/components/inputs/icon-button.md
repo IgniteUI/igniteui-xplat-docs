@@ -1,12 +1,13 @@
-<!-- --- -->
-<!-- title: $Platform$ Icon Button Component -->
-<!-- _description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with $ProductName$ Icon Button component. -->
-<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls -->
-<!-- --- -->
+---
+title: $Platform$ Icon Button Component
+_description: Developers can utilize and use various icons interchangeably as buttons with custom colors and more with $ProductName$ Icon Button component.
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls
+mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
+---
 
 # $Platform$ Icon Button Overview
 
-The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
+The $ProductName$ `IconButton` component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
 ## Usage
 
@@ -22,7 +23,7 @@ IgbIconButtonModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the Icon Button Web Component we need to import the [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -46,7 +47,7 @@ After we import the icon button component we are ready to start using it, so let
 
 ### Variant
 
-Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the [`variant`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#variant) attribute of the icon button.
+Similar to the regular button components, the icon button supports several variants - `flat` (default), `contained`, and `outlined`; To change the icon button type set the `variant` attribute of the icon button.
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -64,7 +65,7 @@ Similar to the regular button components, the icon button supports several varia
 
 ### Size
 
-The size of the button can be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html#size) attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
+The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -99,7 +100,7 @@ The icon button component will change its internal structure from `<button>` to 
 
 ### Mirrored
 
-Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attirbute that, when set, flips the icon button horizontally.
+Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attribute that, when set, flips the icon button horizontally.
 
 ```html
 <igc-icon-button name="thumb-up" mirrored></igc-icon-button>
@@ -132,7 +133,7 @@ igc-icon-button::part(icon) {
 
 ## API Reference
 
-* [IgcIconButtonComponent]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
+* `IconButton`
 
 ## Additional Resources
 

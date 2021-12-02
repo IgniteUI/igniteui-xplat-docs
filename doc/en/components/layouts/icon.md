@@ -2,6 +2,7 @@
 title: $Platform$ Icon Component
 _description: Developers can utilize and use various icons interchangeably with custom colors and more with $ProductName$ Icon component.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls
+mentionedTypes: ['Icon']
 ---
 
 # $Platform$ Icon Overview
@@ -26,7 +27,7 @@ To get started with the icon web component, first you need to install the $Produ
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Icon` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -61,7 +62,7 @@ registerIcon(
 
 The method above will add an icon named `search` to the collection named `material`.
 
-Then to use the newly registered icon all you have to do is to pass the name and collection to the `igc-icon` element:
+Then to use the newly registered icon all you have to do is to pass the name and collection to the `Icon` element:
 
 ```html
 <igc-icon name="search" collection="material"></igc-icon>
@@ -80,7 +81,7 @@ Then you'd use it in the same way as described in the component sample above.
 
 ### Size
 
-The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the [`size`]({environment:wcApiUrl}/classes/IgcIconComponent.html#size) attribute to any of the aforementioned sizes.
+The icon component supports three icon sizes - `small`, `medium`(default), and `large`; To change the size of the icon set the `size` attribute to any of the aforementioned sizes.
 
 ```html
 <igc-icon size="large"></igc-icon>
@@ -94,7 +95,7 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 
 ### Mirrored
 
-Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attirbute that, when set, flips the icon horizontally.
+Some icons need to look a little different when used in Right-to-Left(RTL) mode. For that reason we provide a `mirrored` attribute that, when set, flips the icon horizontally.
 
 ```html
 <igc-icon name="search" mirrored></igc-icon>
@@ -102,7 +103,7 @@ Some icons need to look a little different when used in Right-to-Left(RTL) mode.
 
 ## Styling
 
-The icon component can be styled by applying styles directly to the `igc-icon` element;
+The icon component can be styled by applying styles directly to the `Icon` element;
 
 ```css
 igc-icon {
@@ -119,7 +120,7 @@ igc-icon {
 
 ## API Reference
 
-* [IgcIconComponent]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* `Icon`
 
 ## Additional Resources
 

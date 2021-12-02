@@ -4,9 +4,10 @@ _description: Infragistics' $Platform$ navbar provides optimal UI experience wit
 _keywords: $Platform$ navbar, $ProductName$, Infragistics
 mentionedTypes: ['Navbar']
 ---
+
 # $Platform$ Navbar Overview
 
- $Platform$ [`Navbar Component`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+ $Platform$ `Navbar` informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 ## $Platform$ Navbar Example
 
@@ -44,7 +45,7 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Content
 
-In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
+In the sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
 
 ```html
 <igc-navbar style="height:65px">
@@ -95,10 +96,10 @@ If all went well, you should see the following in your browser:
 ## API References
 
 For more detailed information regarding the navbar's API, refer to the following links:
-* [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
+* `Navbar`
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* `Icon`
 
 <div class="divider"></div>
 

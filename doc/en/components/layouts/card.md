@@ -2,11 +2,12 @@
 title: Card Component
 _description: Present users with dashboards and engaging text, images, icons or buttons as an entry point for detailed information with Ignite UI for Web Card component.
 _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
+mentionedTypes: ['Card']
 ---
 
 # Card
 
-The $ProductName$ `Card Component` displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
+The $ProductName$ `Card` displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
 ## Card Example
 
@@ -37,7 +38,7 @@ IgbCardModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the [`IgcCardComponent`]({environment:wcApiUrl}/classes/IgcCardComponent.html) along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Card` along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 // index.ts
@@ -115,18 +116,18 @@ Then, to represent the demo card template, we can add the following code to our 
 </IgbCard>
 ```
 
-You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the [`igc-card-header`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html) tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
+You will notice a few things above. First, when we want to _tag_ an element as a header title, like the `h3` heading, we place it between the `CardHeader` tags and set its slot name to `title`. Conversely, if we wanted to make another heading element a `subtitle` we would name its slot `subtitle`.
 
-Any image or video we want to show in the card, we wrap inside the [`igc-card-media`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html) tags. The `igc-card-media` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+Any image or video we want to show in the card, we wrap inside the `CardMedia` tags. The `CardMedia` allows us to size the content placed inside so that it maintains its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
 
-You can place anything inside the [`igc-card-content`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html) tags. Usually text goes there.
+You can place anything inside the `CardContent` tags. Usually text goes there.
 
-Finally, the [`igc-card-actions`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html) is where you'd place any actionable items, like buttons.
+Finally, the `CardActions` is where you'd place any actionable items, like buttons.
 
 ### Media, Thumbs, and Avatars
 If you want to show an image or icon in the card header next to the title and subtitle, you can do it by assigning the element's slot property to `thumbnail`.
 
-Taking the card above as an example, we can edit the contents of the `igc-card-header` and add an avatar with `slot="thumbnail"`:
+Taking the card above as an example, we can edit the contents of the `CardHeader` and add an avatar with `slot="thumbnail"`:
 
 ```html
 <igc-card-header>
@@ -207,7 +208,7 @@ Here's an example of an outlined horizontal card:
 </IgbCard>
 ```
 
-We are using an additional `div` element to bundle the `igc-card-header` and `igc-card-content` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally.
+We are using an additional `div` element to bundle the `CardHeader` and `CardContent` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally.
 
 The styles that `.card-horizontal` class applies are:
 
@@ -239,9 +240,9 @@ If everything went well, our card should look like this:
 
 ### Alternative layouts
 
-You can get even more creative with the layout of the `igc-card`.
+You can get even more creative with the layout of the `Card`.
 
-Below is an example showing how you can create a semi-horizontal card, where we have every section of the card layed out vertically, while the `igc-card-media` appears alongside the vertical sections.
+Below is an example showing how you can create a semi-horizontal card, where we have every section of the card layed out vertically, while the `CardMedia` appears alongside the vertical sections.
 
 ```html
 <igc-card>
@@ -360,7 +361,7 @@ You can also add more content in-between by simply omitting the slot property an
 
 ## Styling
 
-Since the card is a container that wraps different elements, styling it is done by styling its building blocks - the header, content, media and actions sub-components. In addition, the `header` component (`igc-card-header`) exposes three CSS parts - `header`, `title` and `subtitle` that allow you to style the wrapping element as well as the two title elements.
+Since the card is a container that wraps different elements, styling it is done by styling its building blocks - the header, content, media and actions sub-components. In addition, the `header` component (`CardHeader`) exposes three CSS parts - `header`, `title` and `subtitle` that allow you to style the wrapping element as well as the two title elements.
 
 ```css
 igc-card {
@@ -396,20 +397,20 @@ In this article we covered a lot of ground with the card component. We created a
 ## API References
 
 For more detailed information regarding the card's API, refer to the following links:
-* [`IgcCardComponent API`]({environment:wcApiUrl}/classes/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`]({environment:wcApiUrl}/classes/IgcCardHeaderComponent.html)
-* [`IgcCardContentComponent API`]({environment:wcApiUrl}/classes/IgcCardContentComponent.html)
-* [`IgcCardMediaComponent API`]({environment:wcApiUrl}/classes/IgcCardMediaComponent.html)
-* [`IgcCardActionsComponent API`]({environment:wcApiUrl}/classes/IgcCardActionsComponent.html)
+* `Card`
+* `CardHeader`
+* `CardContent`
+* `CardMedia`
+* `CardActions`
 
 
 Additional components and/or directives that were used:
 
-* [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
-* [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
-* [`IgcButtonComponent`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-* [`IgcIconButtonComponent`]({environment:wcApiUrl}/classes/IgcIconButtonComponent.html)
-* [`IgcRippleComponent`]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* `Avatar`
+* `Icon`
+* `Button`
+* `IconButton`
+* `Ripple`
 
 <div class="divider"></div>
 
