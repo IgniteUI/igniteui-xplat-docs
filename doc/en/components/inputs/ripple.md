@@ -2,7 +2,7 @@
 title: $Platform$ Ripple
 _description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
-mentionedTypes: ['Ripple']
+mentionedTypes: ['Ripple', 'Button']
 ---
 
 # $Platform$ Ripple Overview
@@ -23,7 +23,7 @@ The $ProductName$ Ripple component creates an animation in response to a touch o
 
 <!-- Blazor -->
 
-To get started with the Ripple component, we first need to import its module, like so:
+To get started with the `Ripple` component, we first need to import its module, like so:
 
 ```razor
 IgbRippleModule.Register(IgniteUIBlazor);
@@ -35,7 +35,7 @@ IgbRippleModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the `Ripple` Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -61,7 +61,7 @@ After we import the ripple component we are ready to start using it, so let's ad
 </IgbButton>
 ```
 
-You can add a ripple to any web element as long as its CSS `position` property is set to any other value than `static`;
+You can add the `Ripple` component to any web element as long as its CSS `position` property is set to any other value than `static`;
 
 ## Examples
 
@@ -81,6 +81,8 @@ igc-ripple {
            github-src="inputs/ripple/color">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Ripple`
@@ -88,6 +90,8 @@ igc-ripple {
 Additional Web Components that were used:
 
 * `Button`
+
+<!-- end: WebComponents -->
 
 ## Additional Resources
 

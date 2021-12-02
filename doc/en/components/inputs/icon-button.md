@@ -7,13 +7,13 @@ mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
 
 # $Platform$ Icon Button Overview
 
-The $ProductName$ `IconButton` component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
+The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
 ## Usage
 
 <!-- Blazor -->
 
-To get started with the `IconButton`, we first need to import its module `IconButtonModule`, like so:
+To get started with the `IconButton`, we first need to import its module, like so:
 
 ```razor
 IgbIconButtonModule.Register(IgniteUIBlazor);
@@ -133,9 +133,13 @@ igc-icon-button::part(icon) {
            github-src="inputs/icon-button/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `IconButton`
+
+<!-- end: WebComponents -->
 
 ## Additional Resources
 

@@ -26,7 +26,7 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 <!-- Blazor -->
 
-To get started with the `Badge` component, you first need to register the `IgbBadgeModule`.
+To get started with the `Badge` component, you first need to register its module, like so:
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
@@ -38,7 +38,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
+To get started with the `Badge` web component, first you need to install $ProductName$ by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -126,13 +126,17 @@ igc-badge::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Badge`
 
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
