@@ -64,7 +64,7 @@ Instantiating the `Calendar` is as easy as placing it in the html. This will dis
 
 ### Multiple Selection
 
-We can easily change the default mode using the `selection` property:
+We can easily change the default mode using the `Selection` property:
 
 ```html
 <!-- Multiple selection mode -->
@@ -80,7 +80,7 @@ We can easily change the default mode using the `selection` property:
 
 ### Range Selection
 
-Following the same approach, we can switch to `range` selection mode:
+Following the same approach, we can switch `Selection` to range mode:
 
 ```html
 <!-- Range selection mode -->
@@ -96,17 +96,17 @@ Following the same approach, we can switch to `range` selection mode:
 
 ### Active View and Date
 
-The Calendar component allows you to switch between three different views: days, months and years. The `activeView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `activeDate` property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
+The Calendar component allows you to switch between three different views: days, months and years. The `ActiveView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `ActiveDate` property. The `ActiveDate` property also reflects the changes of the currently visible date made by the end user.
 
 ### Header Options
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `hasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `headerOrientation` property.
+By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
 
 > [!NOTE]
-> Please note that the Calendar header is not rendered when the selection is `multiple`.
+> Please note that the Calendar header is not rendered when the `Selection` is set to multiple.
 
 > [!NOTE]
-> Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `headerOrientation` property corresponds to the `header-orientation` attribute.
+> Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `HeaderOrientation` property corresponds to the `header-orientation` attribute.
 
 The $ProductName$ Calendar component exposes a `title` slot which allows you to customize the title of the header.
 
@@ -127,9 +127,9 @@ The following sample demonstrates the above configuration:
 
 ### Localization and Formatting
 
-Due to their very nature, localization and formatting are essential to any calendar. In the `Calendar` those are controlled and customized through the following properties - `locale`, `formatOptions`, `weekStart`.
+Due to their very nature, localization and formatting are essential to any calendar. In the `Calendar` those are controlled and customized through the following properties - `Locale`, `FormatOptions`, `WeekStart`.
 
-Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
+Let's go ahead and try those along with other customizations. First thing we need to set is the `WeekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `FormatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `Locale` property to a value, based on the user's location choice:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -175,13 +175,13 @@ If everything went well, we should now have a Calendar with customized display, 
 
 ### Disabled dates
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `disabledDates` property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
+In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `DateRange` which is an array of `Date` objects.
 
 These are the available options for the `type` property:
-*  `After` - disables the dates after the first date in the `dateRange`
-*  `Before` - disables the dates before the first date in the `dateRange`
-*  `Between` - disables the dates between the first and the second date in the `dateRange`
-*  `Specific` - disables the dates specified in the `dateRange` array
+*  `After` - disables the dates after the first date in the `DateRange`
+*  `Before` - disables the dates before the first date in the `DateRange`
+*  `Between` - disables the dates between the first and the second date in the `DateRange`
+*  `Specific` - disables the dates specified in the `DateRange` array
 *  `Weekdays` - disables all weekdays
 *  `Weekends` - disables all weekends
 
@@ -208,7 +208,7 @@ These configurations should have the following result:
 
 ### Special dates
 
-The `specialDates` property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
+The `SpecialDates` property is using almost the same configuration principles as the `DisabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
 
 Let's add some special dates to our Calendar. In order to do this, we will create a `DateRangeDescriptor` and pass the dates between the 3rd and the 8th of the current month:
 
@@ -233,7 +233,7 @@ The following demo illustrates a Calendar with a vacation request option:
 
 ### Week numbers
 
-You can use the `showWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
+You can use the `ShowWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
 
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
@@ -249,9 +249,9 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 ### Multiple Months
 
-Using the `visibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `orientation` property. By default the `orientation` property is set to `horizontal`.
+Using the `VisibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `Orientation` property. By default the `Orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `hideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -268,7 +268,7 @@ The following sample demonstrates the multiple months configuration:
 
 ### Size
 
-You could control the size and spacing of the Calendar inner elements by changing its `size` property. The default `size` value is `large`.
+You could control the size and spacing of the Calendar inner elements by changing its `Size` property. The default `Size` value is `large`.
 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -307,10 +307,10 @@ When a **day** inside the `days` view is focused, use:
 - <kbd>Space</kbd> or <kbd>Enter</kbd> key to select the currently focused day.
 
 When a **month** inside the `months` view is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `activeDate` to the currently focused month and switch to `days` view.
+- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `ActiveDate` to the currently focused month and switch to `days` view.
 
 When an **year** inside the `years` view is focused, use:
-- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `activeDate` to the currently focused year and switch to `months` view.
+- <kbd>Space</kbd> or <kbd>Enter</kbd> key to change the `ActiveDate` to the currently focused year and switch to `months` view.
 
 When the **previous** or the **next** buttons (in the subheader) are focused, use:
 - <kbd>Space</kbd> or <kbd>Enter</kbd> key to switch to the previous/next month/year/years page.

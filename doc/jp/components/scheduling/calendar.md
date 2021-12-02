@@ -47,7 +47,7 @@ defineComponents(IgcCalendarComponent);
 
 ### 複数選択
 
-`selection` プロパティを使用して、デフォルト モードを簡単に変更できます:
+`Selection` プロパティを使用して、デフォルト モードを簡単に変更できます:
 
 ```html
 <!-- Multiple selection mode -->
@@ -79,17 +79,17 @@ defineComponents(IgcCalendarComponent);
 
 ### Active View と Date
 
-Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `activeView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`activeDate` プロパティを設定することで変更できます。`activeDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
+Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `ActiveView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`ActiveDate` プロパティを設定することで変更できます。`ActiveDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
 
 ### ヘッダー オプション
 
-デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`hasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`headerOrientation` プロパティを使用して、ヘッダーの`垂直方向`または`水平方向`を構成することもできます。
+デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの`垂直方向`または`水平方向`を構成することもできます。
 
 > [!NOTE]
 > 選択が複数の場合、Calendar ヘッダーが描画されないことに注意してください。
 
 > [!NOTE]
-> Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`headerOrientation` プロパティは `header-orientation` 属性に対応します。
+> Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
 
 $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
 
@@ -110,9 +110,9 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
 
 ### ローカライズおよび書式設定
 
-カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`Calendar` では、これらは `locale`、`formatOptions`、`weekStart` のプロパティを介して制御およびカスタマイズされます。
+カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`Calendar` では、これらは `Locale`、`FormatOptions`、`WeekStart` のプロパティを介して制御およびカスタマイズされます。
 
-先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `weekStart` です。デフォルトは `sunday` なので、`monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `formatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`locale` プロパティを値に設定します:
+先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `WeekStart` です。デフォルトは `sunday` なので、`monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `FormatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`Locale` プロパティを値に設定します:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -158,13 +158,13 @@ this.radios.forEach(radio => {
 
 ### 日付の無効化
 
-場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`disabledDates` プロパティを使用して実現されます。`disabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `type` があり、オプションで `Date` オブジェクトの配列である `dateRange` があります。
+場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
 
 `type` プロパティで使用できるオプションは次のとおりです:
-*  `After` - `dateRange` の最初の日付以降の日付を無効にします。
-*  `Before` - `dateRange` の最初の日付より前の日付を無効にします。
-*  `Between` - `dateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
-*  `Specific` - `dateRange` 配列で指定された日付を無効にします。
+*  `After` - `DateRange` の最初の日付以降の日付を無効にします。
+*  `Before` - `DateRange` の最初の日付より前の日付を無効にします。
+*  `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。
+*  `Specific` - `DateRange` 配列で指定された日付を無効にします。
 *  `Weekdays` - すべての平日を無効にします。
 *  `Weekends` - すべての週末を無効にします。
 
@@ -191,7 +191,7 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 ### 特定の日付
 
-`specialDates` プロパティは、`disabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
+`SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
 
 Calendar に特別な日付を追加しましょう。これを行うために、`DateRangeDescriptor` を作成し、現在の月の 3 日から 8 日までの日付を渡します。
 
@@ -216,7 +216,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 ### 週番号
 
-`showWeekNumbers` プロパティを使用して、Calendar コンポーネントの週番号を表示できます。これを行うには、対応するブール属性 `show-week-numbers` を次のように使用します:
+`ShowWeekNumbers` プロパティを使用して、Calendar コンポーネントの週番号を表示できます。これを行うには、対応するブール属性 `show-week-numbers` を次のように使用します:
 
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
@@ -232,9 +232,9 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 ### 複数の月
 
-`visibleMonths` プロパティを使用すると、Calendar が日ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`orientation` プロパティは `horizontal` に設定されています。
+`VisibleMonths` プロパティを使用すると、Calendar が日ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`Orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`Orientation` プロパティは `horizontal` に設定されています。
 
-Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`hideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `hide-outside-days` を使用します。
+Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`HideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `hide-outside-days` を使用します。
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -251,7 +251,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 ### サイズ
 
-`size` プロパティを変更することで、Calendar の内部要素のサイズと間隔を制御できます。デフォルトの `size` 値は `large` です。
+`Size` プロパティを変更することで、Calendar の内部要素のサイズと間隔を制御できます。デフォルトの `Size` 値は `large` です。
 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -290,10 +290,10 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 - <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押して、現在フォーカスされている日を選択します。
 
 `months` ビュー内の**月**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、`activeDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、`ActiveDate` が現在フォーカスされている月に変更され、`days` ビューに切り替わります。
 
 `years` ビュー内の**年**がフォーカスされている場合は、次を使用します:
-- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを使用して、`activeDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
+- <kbd>Space</kbd> または <kbd>Enter</kbd> キーを使用して、`ActiveDate` を現在フォーカスされている年に変更し、`months` ビューに切り替えます。
 
 サブヘッダー内の**前**または**次**のボタンにフォーカスがある場合は、次を使用します:
 - <kbd>Space</kbd> または <kbd>Enter</kbd> キーを押すと、前/翌月/年のページに切り替わります。
