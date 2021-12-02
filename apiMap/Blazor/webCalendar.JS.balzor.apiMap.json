@@ -1,0 +1,38 @@
+{ "types":[
+  { "originalName":"Calendar",
+    "names":[{"platform":"Blazor","fileName":"Calendar.cs","mappedName":"IgbCalendar"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Name"}],"originalName":"Name"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"activeDate"}],"originalName":"ActiveDate"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"activeView"}],"originalName":"ActiveView"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DisabledDates"}],"originalName":"DisabledDates"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FormatOptions"}],"originalName":"FormatOptions"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HasHeader"}],"originalName":"HasHeader"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeaderOrientation"}],"originalName":"HeaderOrientation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HideOutsideDays"}],"originalName":"HideOutsideDays"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ResourceStrings"}],"originalName":"ResourceStrings"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Selection"}],"originalName":"Selection"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShowWeekNumbers"}],"originalName":"ShowWeekNumbers"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Size"}],"originalName":"Size"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SpecialDates"}],"originalName":"SpecialDates"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"VisibleMonths"}],"originalName":"VisibleMonths"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"WeekStart"}],"originalName":"WeekStart"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"EmitEvent"}],"originalName":"EmitEvent"}
+  ],"originalBaseTypeName":"CalendarBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"CalendarInput",
+    "names":[{"platform":"Blazor","fileName":"igc-input-component.ts","mappedName":"IgbInputComponent"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"InputDir","mappedName":"dir"}],"originalName":"Dir"},
+    { "names":[{"platform":"Blazor","mappedType":"InputType","mappedName":"Type"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"pattern"}],"originalName":"Pattern"},
+    { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"step"}],"originalName":"Step"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"autocomplete"}],"originalName":"Autocomplete"},
+    { "names":[{"platform":"Blazor","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"setRangeText"}],"originalName":"SetRangeText"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Blur"}],"originalName":"BlurComponent"}],
+    "originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"}
+]}
