@@ -36,6 +36,8 @@ IgbCardModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
 To get started we need to import the `Card` along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:

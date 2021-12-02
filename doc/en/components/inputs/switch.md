@@ -35,6 +35,8 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
 To get started with the switch web component, first you need to install the $ProductName$ by typing the following command:

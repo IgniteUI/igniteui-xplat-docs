@@ -13,13 +13,15 @@ The $ProductName$ `IconButton` component allows developers to use registered ico
 
 <!-- Blazor -->
 
-To get started with the Icon Button, we first need to import its module, like so:
+To get started with the `IconButton`, we first need to import its module `IconButtonModule`, like so:
 
 ```razor
 IgbIconButtonModule.Register(IgniteUIBlazor);
 ```
 
 <!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 

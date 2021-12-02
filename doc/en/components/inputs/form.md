@@ -20,7 +20,21 @@ The following example represents a form that has some inputs, buttons and a chec
            github-src="inputs/form/overview">
 </code-view>
 
-## Dependencies
+## Usage
+
+<!-- Blazor -->
+
+To get started with the `IgbForm` component, you first need to register the `IgbFormModule`.
+
+```razor
+IgbFormModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 In order to use the Form component, the web components package must be installed.
 
@@ -28,21 +42,16 @@ In order to use the Form component, the web components package must be installed
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
+<!-- end: WebComponents -->
 
 Once the Form component is imported, you can add it on the page and add your content.
 
-```html
-<igc-form>
-  <div>Subscribe</div>
-  <igc-input required name="name" type="text" label="Your Name"></igc-input>
-  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
-  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
-  <br />
-  <igc-button type="reset">Reset</igc-button>
-  <igc-button type="submit">Submit</igc-button>
-</igc-form>
-```
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
+           alt="$Platform$ Form Example"
+           github-src="inputs/form/overview">
+</code-view>
 
 ```ts
 import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';

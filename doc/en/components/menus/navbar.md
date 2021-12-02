@@ -20,7 +20,21 @@ The following example represents a `Navbar` with icons and text header:
            github-src="menus/nav-bar/overview">
 </code-view>
 
-## Dependencies
+## Usage
+
+<!-- Blazor -->
+
+To get started with the `IgbNavbar` component, you first need to register the `IgbNavbarModule`.
+
+```razor
+IgbNavbarModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 In order to use the Navigation Bar component, the web components package must be installed.
 
@@ -28,11 +42,13 @@ In order to use the Navigation Bar component, the web components package must be
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
-
 To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
-```typescript
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+```ts
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcNavbarComponent);
 ```
@@ -45,6 +61,23 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Content
 
+<!-- Blazor -->
+
+In the following sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
+           alt="$Platform$ Navbar Styling Example"
+           github-src="menus/nav-bar/content">
+</code-view>
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 In the sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
 
 ```html
@@ -56,6 +89,8 @@ In the sample of our `Navbar` we have added some `Icon` icons using the `start` 
     <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
 </igc-navbar>
 ```
+
+<!-- end: WebComponents -->
 
 ## Styling
 

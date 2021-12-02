@@ -31,6 +31,8 @@ IgbRippleModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
 To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:

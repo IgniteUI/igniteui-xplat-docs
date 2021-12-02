@@ -36,6 +36,8 @@ IgbListModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
 To get started with the list Web component, first you need to install Ignite UI for Web Components by typing the following command:
