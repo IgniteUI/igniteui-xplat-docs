@@ -20,7 +20,25 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the `Button` component, you first need to register the `IgbButtonModule`.
+
+```razor
+IgbButtonModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 To get started we need to import the `Button` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';

@@ -21,6 +21,20 @@ $ProductName$ Icon component allows developers to use any registered SVG as icon
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the `Icon` component, you first need to register the `IgbIconModule`.
+
+```razor
+IgbIconModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 To get started with the icon web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
@@ -28,6 +42,10 @@ npm install igniteui-webcomponents
 ```
 
 The next step is to import the `Icon` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";

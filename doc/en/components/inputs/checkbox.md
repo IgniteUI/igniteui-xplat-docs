@@ -33,7 +33,9 @@ To get started with the `Checkbox` component, you will need to include its modul
 IgbCheckboxModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end:Blazor>
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 

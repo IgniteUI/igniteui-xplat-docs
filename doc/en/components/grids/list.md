@@ -36,6 +36,8 @@ IgbListModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
 To get started with the `List` web component, first you need to install $ProductName$ by typing the following command:
