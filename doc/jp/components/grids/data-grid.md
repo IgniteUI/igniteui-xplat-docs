@@ -423,6 +423,8 @@ grid1.dataSource = data;
 - [行のピン固定](data-grid-row-pinning.md)
 - [行グループ](data-grid-row-grouping.md)
 - [行の強調表示](data-grid-row-highlighting.md)
+
+<!-- TODO fix build flagging list items -->
 <!-- React -->
-- [行のページング](data-grid-row-paging.md)
+<!-- - [行のページング](data-grid-row-paging.md) -->
 <!-- end: React -->

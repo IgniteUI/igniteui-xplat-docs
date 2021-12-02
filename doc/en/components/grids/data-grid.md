@@ -422,6 +422,8 @@ The following code demonstrates how to style specific columns using the provided
 - [Row Pinning](data-grid-row-pinning.md)
 - [Row Grouping](data-grid-row-grouping.md)
 - [Row Highlighting](data-grid-row-highlighting.md)
+
+<!-- TODO fix build flagging list items -->
 <!-- React -->
-- [Row Paging](data-grid-row-paging.md)
+<!-- - [Row Paging](data-grid-row-paging.md) -->
 <!-- end: React -->
