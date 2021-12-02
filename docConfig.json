@@ -142,6 +142,7 @@
             "Badge",
             "Button",
             "ButtonBase",
+            "Calendar",
             "CardActions",
             "CardContent",
             "CardHeader",

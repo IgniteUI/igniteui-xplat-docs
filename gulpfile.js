@@ -97,7 +97,7 @@ function transformFiles() {
       console.log("- " + file.path);
       //var typeName = "CategoryChart";
 
-      transformer.transformContent(typeName, fileContent,
+      transformer.transformContent(typeName, fileContent, // file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
@@ -189,7 +189,7 @@ exports.updateApiBlazor = updateApiBlazor;
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
     // cleanup previous API mapping files
-    del.sync("apiMap/" + platformName + "/*apiMap.json");
+    // del.sync("apiMap/" + platformName + "/*apiMap.json");
 
     return gulp.src([
         fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
