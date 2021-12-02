@@ -23,11 +23,11 @@ $ProductName$ Switch component is a binary choice selection component that behav
 
 ## Usage
 
-At its core the switch component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
+At its core the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- Blazor -->
 
-To get started with the switch component, we first need to import its module, like so:
+To get started with the `Switch` component, we first need to import its module, like so:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
@@ -37,7 +37,7 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the switch web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the `Switch` web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -53,7 +53,7 @@ defineComponents(IgcSwitchComponent);
 
 <!-- end: WebComponents -->
 
-The simplest way to start using the switch is as follows:
+The simplest way to start using the `Switch` is as follows:
 
 ```html
 <igc-switch></igc-switch>
@@ -64,7 +64,7 @@ The simplest way to start using the switch is as follows:
 ```
 
 >[!WARNING]
-> The switch component doesn't work with the standard `<form>` element. Use `Form` instead.
+> The `Switch` component doesn't work with the standard `<form>` element. Use `Form` instead.
 
 ## Examples
 
@@ -201,13 +201,17 @@ igc-switch::part(thumb) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Switch`
 
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

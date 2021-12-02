@@ -2,12 +2,12 @@
 title: Card Component
 _description: Present users with dashboards and engaging text, images, icons or buttons as an entry point for detailed information with Ignite UI for Web Card component.
 _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
-mentionedTypes: ['Card']
+mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 ---
 
 # Card
 
-The $ProductName$ `Card` displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
+The $ProductName$ Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
 ## Card Example
 
@@ -28,7 +28,7 @@ Cards allow you to easily display content composed of different types of objects
 
 <!-- Blazor -->
 
-To get started, we will need to register the `IgbCardModule` like so:
+To get started, we will need to register the its module, like so:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
@@ -394,6 +394,8 @@ igc-icon-button+igc-icon-button {
 ### Summary
 In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
+<!-- Web Components -->
+
 ## API References
 
 For more detailed information regarding the card's API, refer to the following links:
@@ -411,6 +413,8 @@ Additional components and/or directives that were used:
 * `Button`
 * `IconButton`
 * `Ripple`
+
+<!-- end: WebComponents -->
 
 <div class="divider"></div>
 

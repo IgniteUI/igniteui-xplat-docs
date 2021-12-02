@@ -2,7 +2,7 @@
 title: $Platform$ Checkbox Component
 _description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
-mentionedTypes: ['Checkbox']
+mentionedTypes: ['Checkbox', 'Form']
 ---
 
 # $Platform$ Checkbox Overview
@@ -23,11 +23,11 @@ The $ProductName$ Checkbox component is a selection control that allows users to
 
 ## Usage
 
-At its core, the checkbox component allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
+At its core, the `Checkbox` component allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- Blazor -->
 
-To get started with the checkbox component, you will need to include its module, like so:
+To get started with the `Checkbox` component, you will need to include its module, like so:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
@@ -37,7 +37,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the checkbox web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the `Checkbox` web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -53,7 +53,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- end: WebComponents -->
 
-The simplest way to start using the checkbox is as follows:
+The simplest way to start using the `Checkbox` is as follows:
 
 ```html
 <igc-checkbox></igc-checkbox>
@@ -64,7 +64,7 @@ The simplest way to start using the checkbox is as follows:
 ```
 
 >[!WARNING]
-> The checkbox component doesn't work with the standard `<form>` element. Use `Form` instead.
+> The `Checkbox` component doesn't work with the standard `<form>` element. Use `Form` instead.
 
 
 ## Examples
@@ -277,9 +277,13 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Checkbox`
+
+<!-- end: WebComponents -->
 
 ## Additional Resources
 

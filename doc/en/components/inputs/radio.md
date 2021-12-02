@@ -2,12 +2,12 @@
 title: Radio and Radio Group
 _description: With $ProductName$ Radio Button and Radio Group controls, developers can seamlessly present lists of options for users to select for better UI in template-driven and reactive forms.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Radio Button components, $Platform$ Radio Button controls, $Platform$ Radio Group component, $Platform$ Radio Group control
-mentionedTypes: ['Radio', 'RadioGroup']
+mentionedTypes: ['Radio', 'RadioGroup', 'Form']
 ---
 
 # $Platform$ Radio & Radio Group
 
-The $ProductName$ Radio Button component allows the user to select a single option from an available set of options that are listed side by side.
+The $ProductName$ Radio component allows the user to select a single option from an available set of options that are listed side by side.
 
 ## $ProductName$ Radio Example
 
@@ -23,7 +23,7 @@ The $ProductName$ Radio Button component allows the user to select a single opti
 
 <!-- Blazor -->
 
-To get started with the radio component, we first need to import its module, like so:
+To get started with the `Radio` component, we first need to import its module, like so:
 
 ```razor
 IgbRadioModule.Register(IgniteUIBlazor);
@@ -33,7 +33,7 @@ IgbRadioModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the radio web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the `Radio` web component, first you need to install the $ProductName$ by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -49,7 +49,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 <!-- end: WebComponents -->
 
-The simplest way to start using the radio is as follows:
+The simplest way to start using the `Radio` is as follows:
 
 ```html
 <igc-radio-group>
@@ -70,13 +70,13 @@ The simplest way to start using the radio is as follows:
 ```
 
 > [!WARNING]
-> The radio component doesn't work with the standard `<form>` element. Use `Form` instead.
+> The `Radio` component doesn't work with the standard `<form>` element. Use `Form` instead.
 
 ## Examples
 
 ### Label
 
-To provide a meaningful label for the radio, simply place some text between the opening and closing tags:
+To provide a meaningful label for the `Radio`, simply place some text between the opening and closing tags:
 
 ```html
 <igc-radio>Apple</igc-radio>
@@ -86,7 +86,7 @@ To provide a meaningful label for the radio, simply place some text between the 
 <IgbRadio>Apple</IgbRadio>
 ```
 
-You can specify if the label should be positioned before or after the radio button by setting the `label-position` attribute. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the `Radio` button by setting the `label-position` attribute. Allowed values are `before` and `after`(default):
 
 
 ```html
@@ -97,7 +97,7 @@ You can specify if the label should be positioned before or after the radio butt
 <IgbRadio LabelPosition="@RadioLabelPosition.Before">Apple</IgbRadio>
 ```
 
-The radio can also be labelled by elements external to it. In this case the user is given full control to position and style the label in accordance to their needs.
+The `Radio` can also be labelled by elements external to it. In this case the user is given full control to position and style the label in accordance to their needs.
 
 ```html
 <span id="radio-label">Label</span>
@@ -195,7 +195,7 @@ Use the `disabled` attribute to disable the radio.
 
 ### Group Alignment
 
-The radio group allows you to easily change the placement directionality of the radio buttons it contains using the `alignment` attribute. Allowed values are `vertical`(default) and `horizontal`.
+The `RadioGroup` allows you to easily change the placement directionality of the radio buttons it contains using the `alignment` attribute. Allowed values are `vertical`(default) and `horizontal`.
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -237,7 +237,7 @@ Use the `name` and `value` attributes when using the radio with `Form`.
 
 ## Styling
 
-The radio component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling. You can also modify the global palette colors to change the colors of the radio component:
+The `Radio` component exposes several CSS parts (`base`, `control`, and `label`) to give you full control over its styling. You can also modify the global palette colors to change the colors of the radio component:
 
 ```scss
 :root {
@@ -258,20 +258,19 @@ igc-radio::part(control) {
            github-src="inputs/radio/styling">
 </code-view>
 
-## Additional Resources
-
-<div class="divider--half"></div>
-
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- WebComponents -->
 
 ## API Reference
 
 * `Radio`
 * `RadioGroup`
 
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
+
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

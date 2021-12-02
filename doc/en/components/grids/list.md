@@ -2,12 +2,12 @@
 title: $Platform$ List Component | Infragistics
 _description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
-mentionedTypes: ['List']
+mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
 ---
 
 # $Platform$ List Overview
 
-The List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The List component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
+The $ProductName$ List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
 
 ## $Platform$ List Example
 
@@ -28,7 +28,7 @@ At its core the list web component allows you to easily display a vertical list 
 
 <!-- Blazor -->
 
-To get started with the `IgbList` component, you first need to register the `IgbListModule`.
+To get started with the `List` component, you first need to register its module, like so:
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);
@@ -38,7 +38,8 @@ IgbListModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the list Web component, first you need to install Ignite UI for Web Components by typing the following command:
+To get started with the `List` web component, first you need to install $ProductName$ by typing the following command:
+
 ```cmd
 npm install igniteui-webcomponents
 ```
@@ -332,24 +333,28 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API References
 
-In this article we covered a lot of ground with the list web component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional Ignite UI Web Components, like avatars and buttons. Finally, we changed the component's appearance through the exposed CSS parts.
+In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional $ProductName$ components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
 * `List`
 * `ListHeader`
 * `ListItem`
 
-Additional Web Components that were used:
+Additional components that were used:
 
 * `Avatar`
 * `Button`
 * `RadioGroup`
 * `Radio`
 
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

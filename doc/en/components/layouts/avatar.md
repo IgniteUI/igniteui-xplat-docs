@@ -26,7 +26,7 @@ The $ProductName$ Avatar helps to display initials, images, or icons in your app
 
 <!-- Blazor -->
 
-To get started, we need to register the `IgbAvatarModule`.
+To get started with the `Avatar`, we first need to register its module, like so:
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
@@ -46,10 +46,10 @@ defineComponents(IgcAvatarComponent);
 
 <!-- end: WebComponents -->
 
-After we import the avatar component we are ready to start using it, so let's add our first avatar.
+After we import the `Avatar` component we are ready to start using it, so let's add our first avatar.
 
 The avatar component is capable of displaying images, initials, or any other content, including icons.
-Declaring an avatar is as simple as:
+Declaring an `Avatar` is as simple as:
 
 ```html
 <igc-avatar></igc-avatar>
@@ -166,14 +166,17 @@ igc-avatar::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Avatar`
 
-
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
