@@ -20,6 +20,21 @@ The Infragistics $Platform$ Navigation Drawer provides side navigation that can 
 
 ## Usage
 
+<!-- Blazor -->
+
+To get started with the `Navbar` component, you first need to register the `IgbNavbarModule` and optional `IgbNavDrawerHeaderItemModule`.
+
+```razor
+IgbNavDrawerModule.Register(IgniteUIBlazor);
+IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 To get started with the `NavDrawer`, first you need to install $ProductName$ by executing the following command:
 
 ```cmd
@@ -27,6 +42,10 @@ npm install {PackageComponents}
 ```
 
 Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
