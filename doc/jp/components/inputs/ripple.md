@@ -13,7 +13,7 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## $Platform$ Ripple の例
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/button">
@@ -21,7 +21,7 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## 使用方法
 
-Ripple Web コンポーネントの使用を開始するには、[`IgcRippleComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcripplecomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+Ripple Web コンポーネントの使用を開始するには、`Ripple` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -52,7 +52,7 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple の例"
            github-src="inputs/ripple/color">
@@ -60,11 +60,11 @@ igc-ripple {
 
 ## API リファレンス
 
-* [IgcRippleComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRippleComponent.html)
+* `Ripple`
 
 使用したその他の WEB コンポーネント:
 
-* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
+* `Button`
 
 ## その他のリソース
 

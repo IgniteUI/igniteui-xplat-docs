@@ -24,7 +24,7 @@ Use the $Platform$ map component's `GeographicShapeSeries` to display geo-spatia
 The `GeographicShapeSeries` works a lot like the `GeographicPolylineSeries` except that geo-spatial data is rendered with polygons instead of polylines.
 
 ## Data Requirements
-Similar to other types of geographic series in the map control, the `GeographicShapeSeries` has the `DataSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the `ShapeMemberPath` property. The `GeographicShapeSeries` uses points of this mapped data column to plot polygons in the map control.
+Similar to other types of geographic series in the map control, the `GeographicShapeSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the `ShapeMemberPath` property. The `GeographicShapeSeries` uses points of this mapped data column to plot polygons in the map control.
 
 ## Code Snippet
 The following code demonstrates how to bind the `GeographicShapeSeries` to shapes of countries in the world loaded from a shape file using the `ShapeDataSource`.

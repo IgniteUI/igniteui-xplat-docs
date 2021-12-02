@@ -1,8 +1,5 @@
-{"types": [{"originalName": "DocumentEncryptedException", 
-  "names": [
-    {"platform": "Angular", "fileName": "DocumentEncryptedException.ts", "mappedName": "DocumentEncryptedException"}
-  ], 
-  "members": [
-    {"names": [{"platform": "Angular", "mappedType": "void", "mappedName": ".ctor"}], "originalName": ".ctor"}
-  ], 
-  "originalBaseTypeName": "InvalidOperationException", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Documents.Core"}]}
+{"types":[
+  { "originalName":"DocumentEncryptedException",
+    "names":[{"platform":"Angular","fileName":"DocumentEncryptedException.ts","mappedName":"DocumentEncryptedException"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"InvalidOperationException","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Documents.Core"}]}

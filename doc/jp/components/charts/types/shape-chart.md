@@ -54,7 +54,7 @@ $Platform$ 散布ポリライン チャートは、`XamDataChart` コントロ�
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

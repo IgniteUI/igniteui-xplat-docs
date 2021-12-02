@@ -6,7 +6,7 @@ mentionedTypes: ['XamGeographicMap']
 ---
 # $Platform$ Data Binding
 
-The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `DataSource` property of geographic series is used for the purpose of binding to data models.
+The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models.
 
 ## Types of Data Sources
 The following section list some of data source that you can bind in the geographic map component

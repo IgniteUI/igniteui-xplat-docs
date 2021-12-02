@@ -160,7 +160,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 以下は、上記のセクションで説明されている API メンバーのリストです。
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

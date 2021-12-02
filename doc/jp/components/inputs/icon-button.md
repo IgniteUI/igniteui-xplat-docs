@@ -1,18 +1,18 @@
 <!-- --- -->
 <!-- title: $Platform$ Icon Button コンポーネント -->
 <!-- _description: 開発者は、$ProductName$ Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。 -->
-<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール 
+<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール
 _language: ja
 -->
 <!-- --- -->
 
 # $Platform$ Icon Button (アイコン ボタン) の概要
 
-$ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
+$ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
 ## 使用方法
 
-Icon Button Web コンポーネントの使用を開始するには、[`IgcIconButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconButtonComponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+Icon Button Web コンポーネントの使用を開始するには、`IconButton` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -30,7 +30,7 @@ defineComponents(IgcIconButtonComponent);
 
 ### バリアント
 
-通常のボタン コンポーネントと同様に、アイコン ボタンはいくつかのバリアントをサポートします - `flat` (デフォルト)、`contained`、および `outlined`。アイコン ボタンのタイプを変更するには、アイコン ボタンの [`variant`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconButtonComponent.html#variant) 属性を設定します。
+通常のボタン コンポーネントと同様に、アイコン ボタンはいくつかのバリアントをサポートします - `flat` (デフォルト)、`contained`、および `outlined`。アイコン ボタンのタイプを変更するには、アイコン ボタンの `variant` 属性を設定します。
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -44,7 +44,7 @@ defineComponents(IgcIconButtonComponent);
 
 ### サイズ
 
-ボタンのサイズは、[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconButtonComponent.html#size) 属性をサポートされている 3 つのサイズ (`small`、`medium`、`large` (デフォルト)) のいずれかに設定することで変更できます。
+ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ (`small`、`medium`、`large` (デフォルト)) のいずれかに設定することで変更できます。
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -101,7 +101,7 @@ igc-icon-button::part(icon) {
 
 ## API リファレンス
 
-* [IgcIconButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconButtonComponent.html)
+* `IconButton`
 
 ## その他のリソース
 

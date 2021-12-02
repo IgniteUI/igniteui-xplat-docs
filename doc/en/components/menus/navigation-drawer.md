@@ -1,6 +1,13 @@
+---
+title: $Platform$ NavDrawer | Infragistics
+_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: $Platform$ navbar, $ProductName$, Infragistics
+mentionedTypes: ['NavDrawer']
+---
+
 # $Platform$ Navigation Drawer Overview
 
-The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The Infragistics $Platform$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 ## $Platform$ Navigation Drawer Example
 
@@ -13,13 +20,13 @@ The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides si
 
 ## Usage
 
-To get started with the [`IgcNavDrawerComponent`]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html), first you need to install $ProductName$ by executing the following command:
+To get started with the `NavDrawer`, first you need to install $ProductName$ by executing the following command:
 
 ```cmd
 npm install {PackageComponents}
 ```
 
-Next, you need to import the `IgcNavDrawerComponent`, along with the [`IgcNavDrawerHeaderItemComponent`]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html) and [`IgcNavDrawerItemComponent`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -60,9 +67,9 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
-While any content can be provided in the drawer, the [`igc-nav-drawer-item`]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html) is available to apply out-of-the-box styling to the items.
+While any content can be provided in the drawer, the `NavDrawerItem` is available to apply out-of-the-box styling to the items.
 
-To enhance our component a bit, we can use it in conjunction with the [`IgcNavbarComponent`]({environment:wcApiUrl}/classes/igcnavbarcomponent.html). This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
+To enhance our component a bit, we can use it in conjunction with the `Navbar`. This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
 
 ```html
     <igc-navbar>
@@ -89,7 +96,7 @@ To enhance our component a bit, we can use it in conjunction with the [`IgcNavba
     </div>
 ```
 
-Let's also add some radio buttons to display all [`position`]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html#position) values. This way whenever one gets selected, we will change the position of the drawer.
+Let's also add some radio buttons to display all `position` values. This way whenever one gets selected, we will change the position of the drawer.
 
 ```ts
 // ...
@@ -136,7 +143,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 If all goes well, your component should now look like this:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar Example"
@@ -177,7 +184,7 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 
 And here's the result:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
            alt="$Platform$ Navigation Drawer Mini Example"
@@ -211,7 +218,7 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
            alt="$Platform$ Navigation Drawer Styling Example"
@@ -220,16 +227,16 @@ igc-nav-drawer-header-item {
 
 ## API References
 
-* [IgcNavDrawerComponent]({environment:wcApiUrl}/classes/igcnavdrawercomponent.html)
-* [IgcNavDrawerItemComponent]({environment:wcApiUrl}/classes/igcnavdraweritemcomponent.html)
-* [IgcNavDrawerHeaderItemComponent]({environment:wcApiUrl}/classes/igcnavdrawerheaderitemcomponent.html)
+* `NavDrawer`
+* `NavDrawerItem`
+* `NavDrawerHeaderItem`
 
 Additional Web Components that were used:
 
-* [IgcIconComponent]({environment:wcApiUrl}/classes/igciconcomponent.html)
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/igcbuttoncomponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/igcradiocomponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
+* `Icon`
+* `Button`
+* `Radio`
+* `RadioGroup`
 
 ## Additional Resources
 

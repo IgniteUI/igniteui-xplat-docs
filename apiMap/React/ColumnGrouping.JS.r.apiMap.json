@@ -1,16 +1,16 @@
-{"extraFiles": ["igr-column-grouping-module.ts"], "types": [{"originalName": "ColumnGrouping", 
-  "names": [
-    {"platform": "React", "fileName": "igr-column-grouping.ts", "mappedName": "IgrColumnGrouping"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "IgrDataGrid", "mappedName": "targetGrid"}], "originalName": "TargetGrid"}, 
-    {"names": [{"platform": "React", "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}], "originalName": "BaseTheme"}, 
-    {"names": [{"platform": "React", "mappedType": "ControlDisplayDensity", "mappedName": "density"}], "originalName": "Density"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "title"}], "originalName": "Title"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "titleColor"}], "originalName": "TitleColor"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "textColor"}], "originalName": "TextColor"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "iconColor"}], "originalName": "IconColor"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "backgroundColor"}], "originalName": "BackgroundColor"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "hoverBackgroundColor"}], "originalName": "HoverBackgroundColor"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "exportVisualModel"}], "originalName": "ExportVisualModel"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "exportSerializedVisualModel"}], "originalName": "ExportSerializedVisualModel"}], "originalNamespace": "Infragistics.Controls.Grids.Implementation"}]}
+{"extraFiles":["igr-column-grouping-module.ts"],
+  "types":[
+  { "originalName":"ColumnGrouping",
+    "names":[{"platform":"React","fileName":"igr-column-grouping.ts","mappedName":"IgrColumnGrouping"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrDataGrid","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"iconColor"}],"originalName":"IconColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"hoverBackgroundColor"}],"originalName":"HoverBackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

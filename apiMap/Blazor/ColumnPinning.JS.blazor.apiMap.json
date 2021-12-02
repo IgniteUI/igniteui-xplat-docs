@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"ColumnPinning","names":[{"platform":"Blazor","fileName":"ColumnPinning.cs","mappedName":"IgbColumnPinning"}],
+  { "originalName":"ColumnPinning",
+    "names":[{"platform":"Blazor","fileName":"ColumnPinning.cs","mappedName":"IgbColumnPinning"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbDataGrid","mappedName":"TargetGrid"}],"originalName":"TargetGrid"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Title"}],"originalName":"Title"},

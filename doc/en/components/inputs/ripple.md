@@ -2,6 +2,7 @@
 title: $Platform$ Ripple
 _description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
+mentionedTypes: ['Ripple']
 ---
 
 # $Platform$ Ripple Overview
@@ -20,13 +21,27 @@ The $ProductName$ Ripple component creates an animation in response to a touch o
 
 ## Usage
 
-To get started with the Ripple Web Component we need to import the [`IgcRippleComponent`]({environment:wcApiUrl}/classes/igcripplecomponent.html) in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+<!-- Blazor -->
+
+To get started with the Ripple component, we first need to import its module, like so:
+
+```razor
+IgbRippleModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcRippleComponent);
 ```
+
+<!-- end: WebComponents -->
 
 After we import the ripple component we are ready to start using it, so let's add the ripple to an existing component from our library.
 
@@ -35,6 +50,13 @@ After we import the ripple component we are ready to start using it, so let's ad
   <igc-ripple></igc-ripple>
   Ripple Button
 </igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    Ripple Button
+    <IgbRipple></IgbRipple>
+</IgbButton>
 ```
 
 You can add a ripple to any web element as long as its CSS `position` property is set to any other value than `static`;
@@ -59,11 +81,11 @@ igc-ripple {
 
 ## API Reference
 
-* [IgcRippleComponent]({environment:wcApiUrl}/classes/IgcRippleComponent.html)
+* `Ripple`
 
 Additional Web Components that were used:
 
-* [IgcButtonComponent]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
+* `Button`
 
 ## Additional Resources
 

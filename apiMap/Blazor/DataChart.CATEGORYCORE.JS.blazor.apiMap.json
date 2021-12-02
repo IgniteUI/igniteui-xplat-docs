@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"CategorySeries","names":[{"platform":"Blazor","fileName":"CategorySeries.cs","mappedName":"IgbCategorySeries"}],
+  { "originalName":"CategorySeries",
+    "names":[{"platform":"Blazor","fileName":"CategorySeries.cs","mappedName":"IgbCategorySeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},

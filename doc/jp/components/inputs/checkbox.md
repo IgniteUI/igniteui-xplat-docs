@@ -42,7 +42,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcCheckboxComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Checkbox` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -63,7 +63,7 @@ defineComponents(IgcCheckboxComponent);
 ```
 
 >[!WARNING]
->チェックボックス コンポーネントは標準の `<form>` 要素では機能しません。代わりに `<igc-form>` を使用してください。
+>チェックボックス コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 
 ## 例
@@ -80,7 +80,7 @@ defineComponents(IgcCheckboxComponent);
 <IgbCheckbox>Label</IgbCheckbox>
 ```
 
-チェックボックスの [`label-position`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#label-position) 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
+チェックボックスの `label-position` 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
@@ -120,7 +120,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- WebComponents -->
 
-チェックボックスをオンに切り替えるには、[`checked`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#checked) 属性を使用します。
+チェックボックスをオンに切り替えるには、`checked` 属性を使用します。
 
 <!-- end: WebComponents -->
 
@@ -149,7 +149,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- WebComponents -->
 
-[`indeterminate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#indeterminate) 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
+`indeterminate` 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
 
 <!-- end: WebComponents -->
 
@@ -178,7 +178,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- WebComponents -->
 
-[`required`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#required) 属性を使用して、チェックボックスを必須としてマークします。
+`required` 属性を使用して、チェックボックスを必須としてマークします。
 
 <!-- end: WebComponents -->
 
@@ -200,7 +200,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- WebComponents -->
 
-[`invalid`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#invalid) 属性を使用して、チェックボックスを無効としてマークします。
+`invalid` 属性を使用して、チェックボックスを無効としてマークします。
 
 <!-- end: WebComponents -->
 
@@ -222,7 +222,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- WebComponents -->
 
-チェックボックスをオフにするには、[`disabled`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#disabled) 属性を使用します。
+チェックボックスをオフにするには、`disabled` 属性を使用します。
 
 <!-- end: WebComponents -->
 
@@ -243,7 +243,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### フォーム
 
-`<igc-form>` でチェックボックスを使用する場合は、[`name`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#name) と [`value`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html#value) の属性を使用します。
+`Form` でチェックボックスを使用する場合は、`name` と `value` の属性を使用します。
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -278,7 +278,7 @@ igc-checkbox::part(indicator checked) {
 
 ## API リファレンス
 
-* [IgcCheckboxComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
+* `Checkbox`
 
 ## その他のリソース
 

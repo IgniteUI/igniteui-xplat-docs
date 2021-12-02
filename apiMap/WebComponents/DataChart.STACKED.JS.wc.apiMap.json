@@ -1,325 +1,250 @@
-{"types": [{"originalName": "StackedSeriesCreatedEventArgs", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-series-created-event-args.ts", "mappedName": "IgcStackedSeriesCreatedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "brush"}], "originalName": "Brush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "legendItemTemplate"}], "originalName": "LegendItemTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}], "originalName": "LegendItemBadgeTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "legendItemVisibility"}], "originalName": "LegendItemVisibility"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "outline"}], "originalName": "Outline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "index"}], "originalName": "Index"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "thickness"}], "originalName": "Thickness"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "title"}], "originalName": "Title"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "markerBrush"}], "originalName": "MarkerBrush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "markerOutline"}], "originalName": "MarkerOutline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcStyle", "mappedName": "markerStyle"}], "originalName": "MarkerStyle"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "MarkerType", "mappedName": "markerType"}], "originalName": "MarkerType"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "markerThickness"}], "originalName": "MarkerThickness"}
-  ], 
-  "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "AreaFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-area-fragment-component.ts", "dynamicModuleName": "igc-area-fragment-dynamic-module.ts", "moduleName": "igc-area-fragment-module.ts", "mappedName": "IgcAreaFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}
-  ], 
-  "originalBaseTypeName": "FragmentBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "BarFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-bar-fragment-component.ts", "dynamicModuleName": "igc-bar-fragment-dynamic-module.ts", "moduleName": "igc-bar-fragment-module.ts", "mappedName": "IgcBarFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isBar"}], "originalName": "IsBar"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isColumn"}], "originalName": "IsColumn"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcNumericXAxisComponent", "mappedName": "barFragmentXAxis"}], "originalName": "XAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcCategoryYAxisComponent", "mappedName": "barFragmentYAxis"}], "originalName": "YAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVertical"}], "originalName": "IsVertical"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getExactItemIndex"}], "originalName": "GetExactItemIndex"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}
-  ], 
-  "originalBaseTypeName": "ColumnFragment", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "ColumnFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-column-fragment-component.ts", "dynamicModuleName": "igc-column-fragment-dynamic-module.ts", "moduleName": "igc-column-fragment-module.ts", "mappedName": "IgcColumnFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isColumn"}], "originalName": "IsColumn"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusX"}], "originalName": "RadiusX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusY"}], "originalName": "RadiusY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcCategoryAxisBaseComponent", "mappedName": "fragmentXAxis"}], "originalName": "XAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcNumericAxisBaseComponent", "mappedName": "fragmentYAxis"}], "originalName": "YAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}
-  ], 
-  "originalBaseTypeName": "FragmentBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "FragmentBase", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-fragment-base-component.ts", "mappedName": "IgcFragmentBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFragment"}], "originalName": "IsFragment"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}
-  ], 
-  "originalBaseTypeName": "HorizontalAnchoredCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "LineFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-line-fragment-component.ts", "dynamicModuleName": "igc-line-fragment-dynamic-module.ts", "moduleName": "igc-line-fragment-module.ts", "mappedName": "IgcLineFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLineOnly"}], "originalName": "IsLineOnly"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"}
-  ], 
-  "originalBaseTypeName": "FragmentBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "SplineAreaFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-spline-area-fragment-component.ts", "dynamicModuleName": "igc-spline-area-fragment-dynamic-module.ts", "moduleName": "igc-spline-area-fragment-module.ts", "mappedName": "IgcSplineAreaFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}
-  ], 
-  "originalBaseTypeName": "SplineFragmentBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "SplineFragment", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-spline-fragment-component.ts", "dynamicModuleName": "igc-spline-fragment-dynamic-module.ts", "moduleName": "igc-spline-fragment-module.ts", "mappedName": "IgcSplineFragmentComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"}
-  ], 
-  "originalBaseTypeName": "SplineFragmentBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "SplineFragmentBase", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-spline-fragment-base-component.ts", "mappedName": "IgcSplineFragmentBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isFragment"}], "originalName": "IsFragment"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}
-  ], 
-  "originalBaseTypeName": "SplineSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100AreaSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-area-series-component.ts", "dynamicModuleName": "igc-stacked-100-area-series-dynamic-module.ts", "moduleName": "igc-stacked-100-area-series-module.ts", "mappedName": "IgcStacked100AreaSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedAreaSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100BarSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-bar-series-component.ts", "dynamicModuleName": "igc-stacked-100-bar-series-dynamic-module.ts", "moduleName": "igc-stacked-100-bar-series-module.ts", "mappedName": "IgcStacked100BarSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedBarSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100ColumnSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-column-series-component.ts", "dynamicModuleName": "igc-stacked-100-column-series-dynamic-module.ts", "moduleName": "igc-stacked-100-column-series-module.ts", "mappedName": "IgcStacked100ColumnSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedColumnSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100LineSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-line-series-component.ts", "dynamicModuleName": "igc-stacked-100-line-series-dynamic-module.ts", "moduleName": "igc-stacked-100-line-series-module.ts", "mappedName": "IgcStacked100LineSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedLineSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100SplineAreaSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-spline-area-series-component.ts", "dynamicModuleName": "igc-stacked-100-spline-area-series-dynamic-module.ts", "moduleName": "igc-stacked-100-spline-area-series-module.ts", "mappedName": "IgcStacked100SplineAreaSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedSplineAreaSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "Stacked100SplineSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-100-spline-series-component.ts", "dynamicModuleName": "igc-stacked-100-spline-series-dynamic-module.ts", "moduleName": "igc-stacked-100-spline-series-module.ts", "mappedName": "IgcStacked100SplineSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}
-  ], 
-  "originalBaseTypeName": "StackedSplineSeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedAreaSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-area-series-component.ts", "dynamicModuleName": "igc-stacked-area-series-dynamic-module.ts", "moduleName": "igc-stacked-area-series-module.ts", "mappedName": "IgcStackedAreaSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}
-  ], 
-  "originalBaseTypeName": "HorizontalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedBarSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-bar-series-component.ts", "dynamicModuleName": "igc-stacked-bar-series-dynamic-module.ts", "moduleName": "igc-stacked-bar-series-module.ts", "mappedName": "IgcStackedBarSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isBar"}], "originalName": "IsBar"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusX"}], "originalName": "RadiusX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusY"}], "originalName": "RadiusY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}
-  ], 
-  "originalBaseTypeName": "VerticalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedColumnSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-column-series-component.ts", "dynamicModuleName": "igc-stacked-column-series-dynamic-module.ts", "moduleName": "igc-stacked-column-series-module.ts", "mappedName": "IgcStackedColumnSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isColumn"}], "originalName": "IsColumn"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusX"}], "originalName": "RadiusX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusY"}], "originalName": "RadiusY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}
-  ], 
-  "originalBaseTypeName": "HorizontalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedFragmentSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-fragment-series-component.ts", "dynamicModuleName": "igc-stacked-fragment-series-dynamic-module.ts", "moduleName": "igc-stacked-fragment-series-module.ts", "mappedName": "IgcStackedFragmentSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "any[]", "mappedName": "dataSource"}], "originalName": "ItemsSource"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "brush"}], "originalName": "Brush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualBrush"}], "originalName": "ActualBrush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isDropShadowEnabled"}], "originalName": "IsDropShadowEnabled"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualIsDropShadowEnabled"}], "originalName": "ActualIsDropShadowEnabled"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "shadowBlur"}], "originalName": "ShadowBlur"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualShadowBlur"}], "originalName": "ActualShadowBlur"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "shadowColor"}], "originalName": "ShadowColor"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualShadowColor"}], "originalName": "ActualShadowColor"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "useSingleShadow"}], "originalName": "UseSingleShadow"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualUseSingleShadow"}], "originalName": "ActualUseSingleShadow"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "shadowOffsetX"}], "originalName": "ShadowOffsetX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualShadowOffsetX"}], "originalName": "ActualShadowOffsetX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "shadowOffsetY"}], "originalName": "ShadowOffsetY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualShadowOffsetY"}], "originalName": "ActualShadowOffsetY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "legendItemBadgeTemplate"}], "originalName": "LegendItemBadgeTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "actualLegendItemBadgeTemplate"}], "originalName": "ActualLegendItemBadgeTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "legendItemTemplate"}], "originalName": "LegendItemTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "actualLegendItemTemplate"}], "originalName": "ActualLegendItemTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "legendItemVisibility"}], "originalName": "LegendItemVisibility"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "actualLegendItemVisibility"}], "originalName": "ActualLegendItemVisibility"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "LegendItemBadgeShape", "mappedName": "legendItemBadgeShape"}], "originalName": "LegendItemBadgeShape"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "LegendItemBadgeMode", "mappedName": "legendItemBadgeMode"}], "originalName": "LegendItemBadgeMode"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "LegendItemBadgeShape", "mappedName": "actualLegendItemBadgeShape"}], "originalName": "ActualLegendItemBadgeShape"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "LegendItemBadgeMode", "mappedName": "actualLegendItemBadgeMode"}], "originalName": "ActualLegendItemBadgeMode"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "markerBrush"}], "originalName": "MarkerBrush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualMarkerBrush"}], "originalName": "ActualMarkerBrush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "markerOutline"}], "originalName": "MarkerOutline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualMarkerOutline"}], "originalName": "ActualMarkerOutline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "markerTemplate"}], "originalName": "MarkerTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgDataTemplate", "mappedName": "actualMarkerTemplate"}], "originalName": "ActualMarkerTemplate"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "MarkerType", "mappedName": "markerType"}], "originalName": "MarkerType"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "MarkerType", "mappedName": "actualMarkerType"}], "originalName": "ActualMarkerType"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "opacity"}], "originalName": "Opacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualOpacity"}], "originalName": "ActualOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "outline"}], "originalName": "Outline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "actualOutline"}], "originalName": "ActualOutline"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "areaFillOpacity"}], "originalName": "AreaFillOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualAreaFillOpacity"}], "originalName": "ActualAreaFillOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "markerFillOpacity"}], "originalName": "MarkerFillOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualMarkerFillOpacity"}], "originalName": "ActualMarkerFillOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "SeriesOutlineMode", "mappedName": "outlineMode"}], "originalName": "OutlineMode"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "SeriesOutlineMode", "mappedName": "actualOutlineMode"}], "originalName": "ActualOutlineMode"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "highlightingFadeOpacity"}], "originalName": "HighlightingFadeOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualHighlightingFadeOpacity"}], "originalName": "ActualHighlightingFadeOpacity"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusX"}], "originalName": "RadiusX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualRadiusX"}], "originalName": "ActualRadiusX"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "actualIsSplineShapePartOfRange"}], "originalName": "ActualIsSplineShapePartOfRange"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "radiusY"}], "originalName": "RadiusY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualRadiusY"}], "originalName": "ActualRadiusY"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "thickness"}], "originalName": "Thickness"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualThickness"}], "originalName": "ActualThickness"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "markerThickness"}], "originalName": "MarkerThickness"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "number", "mappedName": "actualMarkerThickness"}], "originalName": "ActualMarkerThickness"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "any", "mappedName": "title"}], "originalName": "Title"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "valueMemberPath"}], "originalName": "ValueMemberPath"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "visibility"}], "originalName": "Visibility"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "Visibility", "mappedName": "actualVisibility"}], "originalName": "ActualVisibility"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "string", "mappedName": "parentOrLocalBrush"}], "originalName": "ParentOrLocalBrush"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemIndex"}], "originalName": "GetItemIndex"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItem"}], "originalName": "GetItem"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}], "originalName": "GetSeriesValueMarkerBoundingBox"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}], "originalName": "GetSeriesHighValuePosition"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesLowValue"}], "originalName": "GetSeriesLowValue"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}], "originalName": "GetSeriesLowValuePosition"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValuePositionFromSeriesPixel"}], "originalName": "GetSeriesValuePositionFromSeriesPixel"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getSeriesValueFromSeriesPixel"}], "originalName": "GetSeriesValueFromSeriesPixel"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "toWorldPosition"}], "originalName": "ToWorldPosition"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "fromWorldPosition"}], "originalName": "FromWorldPosition"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getEffectiveViewport"}], "originalName": "GetEffectiveViewport"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}], "originalName": "NotifyVisualPropertiesChanged"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "simulateHover"}], "originalName": "SimulateHover"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "moveCursorPoint"}], "originalName": "MoveCursorPoint"}
-  ], 
-  "originalBaseTypeName": "DependencyObject", "originalBaseTypeNamespace": "System.Windows", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedLineSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-line-series-component.ts", "dynamicModuleName": "igc-stacked-line-series-dynamic-module.ts", "moduleName": "igc-stacked-line-series-module.ts", "mappedName": "IgcStackedLineSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isLineOnly"}], "originalName": "IsLineOnly"}
-  ], 
-  "originalBaseTypeName": "HorizontalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "HorizontalStackedSeriesBase", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-horizontal-stacked-series-base-component.ts", "mappedName": "IgcHorizontalStackedSeriesBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcCategoryAxisBaseComponent", "mappedName": "xAxis"}], "originalName": "XAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcNumericYAxisComponent", "mappedName": "yAxis"}], "originalName": "YAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "canUseAsYAxis"}], "originalName": "CanUseAsYAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "canUseAsXAxis"}], "originalName": "CanUseAsXAxis"}
-  ], 
-  "originalBaseTypeName": "StackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "VerticalStackedSeriesBase", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-vertical-stacked-series-base-component.ts", "mappedName": "IgcVerticalStackedSeriesBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcNumericXAxisComponent", "mappedName": "xAxis"}], "originalName": "XAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "IgcCategoryYAxisComponent", "mappedName": "yAxis"}], "originalName": "YAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isVertical"}], "originalName": "IsVertical"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "canUseAsYAxis"}], "originalName": "CanUseAsYAxis"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "canUseAsXAxis"}], "originalName": "CanUseAsXAxis"}
-  ], 
-  "originalBaseTypeName": "StackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedSeriesBase", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-series-base-component.ts", "mappedName": "IgcStackedSeriesBaseComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "autoGenerateSeries"}], "originalName": "AutoGenerateSeries"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "reverseLegendOrder"}], "originalName": "ReverseLegendOrder"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isStacked"}], "originalName": "IsStacked"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isPercentBased"}], "originalName": "IsPercentBased"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "notifyIndexedPropertiesChanged"}], "originalName": "NotifyIndexedPropertiesChanged"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "simulateHover"}], "originalName": "SimulateHover"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}
-  ], 
-  "originalBaseTypeName": "CategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedSplineAreaSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-spline-area-series-component.ts", "dynamicModuleName": "igc-stacked-spline-area-series-dynamic-module.ts", "moduleName": "igc-stacked-spline-area-series-module.ts", "mappedName": "IgcStackedSplineAreaSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}
-  ], 
-  "originalBaseTypeName": "HorizontalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "StackedSplineSeries", 
-  "names": [
-    {"platform": "WebComponents", "fileName": "igc-stacked-spline-series-component.ts", "dynamicModuleName": "igc-stacked-spline-series-dynamic-module.ts", "moduleName": "igc-stacked-spline-series-module.ts", "mappedName": "IgcStackedSplineSeriesComponent"}
-  ], 
-  "members": [
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSplineShapePartOfRange"}], "originalName": "IsSplineShapePartOfRange"}, 
-    {"names": [{"platform": "WebComponents", "mappedType": "boolean", "mappedName": "isSpline"}], "originalName": "IsSpline"}
-  ], 
-  "originalBaseTypeName": "HorizontalStackedSeriesBase", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}
+{"types":[
+  { "originalName":"StackedSeriesCreatedEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-series-created-event-args.ts","mappedName":"IgcStackedSeriesCreatedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"brush"}],"originalName":"Brush"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemTemplate"}],"originalName":"LegendItemTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"legendItemVisibility"}],"originalName":"LegendItemVisibility"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"index"}],"originalName":"Index"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"markerBrush"}],"originalName":"MarkerBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"markerOutline"}],"originalName":"MarkerOutline"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcStyle","mappedName":"markerStyle"}],"originalName":"MarkerStyle"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"markerTemplate"}],"originalName":"MarkerTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"MarkerType","mappedName":"markerType"}],"originalName":"MarkerType"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"markerThickness"}],"originalName":"MarkerThickness"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AreaFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-area-fragment-component.ts","dynamicModuleName":"igc-area-fragment-dynamic-module.ts","moduleName":"igc-area-fragment-module.ts","mappedName":"IgcAreaFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"FragmentBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BarFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-bar-fragment-component.ts","dynamicModuleName":"igc-bar-fragment-dynamic-module.ts","moduleName":"igc-bar-fragment-module.ts","mappedName":"IgcBarFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isBar"}],"originalName":"IsBar"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isColumn"}],"originalName":"IsColumn"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcNumericXAxisComponent","mappedName":"barFragmentXAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcCategoryYAxisComponent","mappedName":"barFragmentYAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isVertical"}],"originalName":"IsVertical"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"}],"originalBaseTypeName":"ColumnFragment","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ColumnFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-column-fragment-component.ts","dynamicModuleName":"igc-column-fragment-dynamic-module.ts","moduleName":"igc-column-fragment-module.ts","mappedName":"IgcColumnFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isColumn"}],"originalName":"IsColumn"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcCategoryAxisBaseComponent","mappedName":"fragmentXAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcNumericAxisBaseComponent","mappedName":"fragmentYAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"}],"originalBaseTypeName":"FragmentBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FragmentBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-fragment-base-component.ts","mappedName":"IgcFragmentBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFragment"}],"originalName":"IsFragment"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"}],"originalBaseTypeName":"HorizontalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LineFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-line-fragment-component.ts","dynamicModuleName":"igc-line-fragment-dynamic-module.ts","moduleName":"igc-line-fragment-module.ts","mappedName":"IgcLineFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"}],"originalBaseTypeName":"FragmentBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SplineAreaFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-spline-area-fragment-component.ts","dynamicModuleName":"igc-spline-area-fragment-dynamic-module.ts","moduleName":"igc-spline-area-fragment-module.ts","mappedName":"IgcSplineAreaFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"}],"originalBaseTypeName":"SplineFragmentBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SplineFragment",
+    "names":[{"platform":"WebComponents","fileName":"igc-spline-fragment-component.ts","dynamicModuleName":"igc-spline-fragment-dynamic-module.ts","moduleName":"igc-spline-fragment-module.ts","mappedName":"IgcSplineFragmentComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"}],"originalBaseTypeName":"SplineFragmentBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SplineFragmentBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-spline-fragment-base-component.ts","mappedName":"IgcSplineFragmentBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFragment"}],"originalName":"IsFragment"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"}],"originalBaseTypeName":"SplineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100AreaSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-area-series-component.ts","dynamicModuleName":"igc-stacked-100-area-series-dynamic-module.ts","moduleName":"igc-stacked-100-area-series-module.ts","mappedName":"IgcStacked100AreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedAreaSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100BarSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-bar-series-component.ts","dynamicModuleName":"igc-stacked-100-bar-series-dynamic-module.ts","moduleName":"igc-stacked-100-bar-series-module.ts","mappedName":"IgcStacked100BarSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedBarSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100ColumnSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-column-series-component.ts","dynamicModuleName":"igc-stacked-100-column-series-dynamic-module.ts","moduleName":"igc-stacked-100-column-series-module.ts","mappedName":"IgcStacked100ColumnSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedColumnSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100LineSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-line-series-component.ts","dynamicModuleName":"igc-stacked-100-line-series-dynamic-module.ts","moduleName":"igc-stacked-100-line-series-module.ts","mappedName":"IgcStacked100LineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedLineSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100SplineAreaSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-spline-area-series-component.ts","dynamicModuleName":"igc-stacked-100-spline-area-series-dynamic-module.ts","moduleName":"igc-stacked-100-spline-area-series-module.ts","mappedName":"IgcStacked100SplineAreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedSplineAreaSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Stacked100SplineSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-100-spline-series-component.ts","dynamicModuleName":"igc-stacked-100-spline-series-dynamic-module.ts","moduleName":"igc-stacked-100-spline-series-module.ts","mappedName":"IgcStacked100SplineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"}],"originalBaseTypeName":"StackedSplineSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedAreaSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-area-series-component.ts","dynamicModuleName":"igc-stacked-area-series-dynamic-module.ts","moduleName":"igc-stacked-area-series-module.ts","mappedName":"IgcStackedAreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedBarSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-bar-series-component.ts","dynamicModuleName":"igc-stacked-bar-series-dynamic-module.ts","moduleName":"igc-stacked-bar-series-module.ts","mappedName":"IgcStackedBarSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isBar"}],"originalName":"IsBar"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedColumnSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-column-series-component.ts","dynamicModuleName":"igc-stacked-column-series-dynamic-module.ts","moduleName":"igc-stacked-column-series-module.ts","mappedName":"IgcStackedColumnSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isColumn"}],"originalName":"IsColumn"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedFragmentSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-fragment-series-component.ts","dynamicModuleName":"igc-stacked-fragment-series-dynamic-module.ts","moduleName":"igc-stacked-fragment-series-module.ts","mappedName":"IgcStackedFragmentSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"dataSource"}],"originalName":"ItemsSource"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"brush"}],"originalName":"Brush"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualBrush"}],"originalName":"ActualBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDropShadowEnabled"}],"originalName":"IsDropShadowEnabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"actualIsDropShadowEnabled"}],"originalName":"ActualIsDropShadowEnabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"shadowBlur"}],"originalName":"ShadowBlur"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualShadowBlur"}],"originalName":"ActualShadowBlur"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"shadowColor"}],"originalName":"ShadowColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualShadowColor"}],"originalName":"ActualShadowColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useSingleShadow"}],"originalName":"UseSingleShadow"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"actualUseSingleShadow"}],"originalName":"ActualUseSingleShadow"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"shadowOffsetX"}],"originalName":"ShadowOffsetX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualShadowOffsetX"}],"originalName":"ActualShadowOffsetX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"shadowOffsetY"}],"originalName":"ShadowOffsetY"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualShadowOffsetY"}],"originalName":"ActualShadowOffsetY"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"actualLegendItemBadgeTemplate"}],"originalName":"ActualLegendItemBadgeTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemTemplate"}],"originalName":"LegendItemTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"actualLegendItemTemplate"}],"originalName":"ActualLegendItemTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"legendItemVisibility"}],"originalName":"LegendItemVisibility"},
+    { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"actualLegendItemVisibility"}],"originalName":"ActualLegendItemVisibility"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeShape","mappedName":"legendItemBadgeShape"}],"originalName":"LegendItemBadgeShape"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeMode","mappedName":"legendItemBadgeMode"}],"originalName":"LegendItemBadgeMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeShape","mappedName":"actualLegendItemBadgeShape"}],"originalName":"ActualLegendItemBadgeShape"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeMode","mappedName":"actualLegendItemBadgeMode"}],"originalName":"ActualLegendItemBadgeMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"markerBrush"}],"originalName":"MarkerBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerBrush"}],"originalName":"ActualMarkerBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"markerOutline"}],"originalName":"MarkerOutline"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualMarkerOutline"}],"originalName":"ActualMarkerOutline"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"markerTemplate"}],"originalName":"MarkerTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"actualMarkerTemplate"}],"originalName":"ActualMarkerTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"MarkerType","mappedName":"markerType"}],"originalName":"MarkerType"},
+    { "names":[{"platform":"WebComponents","mappedType":"MarkerType","mappedName":"actualMarkerType"}],"originalName":"ActualMarkerType"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"Opacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualOpacity"}],"originalName":"ActualOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualOutline"}],"originalName":"ActualOutline"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"areaFillOpacity"}],"originalName":"AreaFillOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualAreaFillOpacity"}],"originalName":"ActualAreaFillOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"markerFillOpacity"}],"originalName":"MarkerFillOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualMarkerFillOpacity"}],"originalName":"ActualMarkerFillOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"SeriesOutlineMode","mappedName":"outlineMode"}],"originalName":"OutlineMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"SeriesOutlineMode","mappedName":"actualOutlineMode"}],"originalName":"ActualOutlineMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"highlightingFadeOpacity"}],"originalName":"HighlightingFadeOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualHighlightingFadeOpacity"}],"originalName":"ActualHighlightingFadeOpacity"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualRadiusX"}],"originalName":"ActualRadiusX"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"actualIsSplineShapePartOfRange"}],"originalName":"ActualIsSplineShapePartOfRange"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSplineShapePartOfRange"}],"originalName":"IsSplineShapePartOfRange"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualRadiusY"}],"originalName":"ActualRadiusY"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualThickness"}],"originalName":"ActualThickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"markerThickness"}],"originalName":"MarkerThickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualMarkerThickness"}],"originalName":"ActualMarkerThickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"Visibility"},
+    { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"actualVisibility"}],"originalName":"ActualVisibility"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"parentOrLocalBrush"}],"originalName":"ParentOrLocalBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueMarkerBoundingBox"}],"originalName":"GetSeriesValueMarkerBoundingBox"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesHighValue"}],"originalName":"GetSeriesHighValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesHighValuePosition"}],"originalName":"GetSeriesHighValuePosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesLowValue"}],"originalName":"GetSeriesLowValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesLowValuePosition"}],"originalName":"GetSeriesLowValuePosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePositionFromSeriesPixel"}],"originalName":"GetSeriesValuePositionFromSeriesPixel"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueFromSeriesPixel"}],"originalName":"GetSeriesValueFromSeriesPixel"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"toWorldPosition"}],"originalName":"ToWorldPosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"fromWorldPosition"}],"originalName":"FromWorldPosition"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getEffectiveViewport"}],"originalName":"GetEffectiveViewport"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyVisualPropertiesChanged"}],"originalName":"NotifyVisualPropertiesChanged"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"simulateHover"}],"originalName":"SimulateHover"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"moveCursorPoint"}],"originalName":"MoveCursorPoint"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedLineSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-line-series-component.ts","dynamicModuleName":"igc-stacked-line-series-dynamic-module.ts","moduleName":"igc-stacked-line-series-module.ts","mappedName":"IgcStackedLineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"}],"originalBaseTypeName":"HorizontalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"HorizontalStackedSeriesBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-horizontal-stacked-series-base-component.ts","mappedName":"IgcHorizontalStackedSeriesBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"IgcCategoryAxisBaseComponent","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcNumericYAxisComponent","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"StackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"VerticalStackedSeriesBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-vertical-stacked-series-base-component.ts","mappedName":"IgcVerticalStackedSeriesBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"IgcNumericXAxisComponent","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcCategoryYAxisComponent","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isVertical"}],"originalName":"IsVertical"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"StackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedSeriesBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-series-base-component.ts","mappedName":"IgcStackedSeriesBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"autoGenerateSeries"}],"originalName":"AutoGenerateSeries"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"reverseLegendOrder"}],"originalName":"ReverseLegendOrder"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isStacked"}],"originalName":"IsStacked"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPercentBased"}],"originalName":"IsPercentBased"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyIndexedPropertiesChanged"}],"originalName":"NotifyIndexedPropertiesChanged"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"simulateHover"}],"originalName":"SimulateHover"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedSplineAreaSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-spline-area-series-component.ts","dynamicModuleName":"igc-stacked-spline-area-series-dynamic-module.ts","moduleName":"igc-stacked-spline-area-series-module.ts","mappedName":"IgcStackedSplineAreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSplineShapePartOfRange"}],"originalName":"IsSplineShapePartOfRange"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"}],"originalBaseTypeName":"HorizontalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StackedSplineSeries",
+    "names":[{"platform":"WebComponents","fileName":"igc-stacked-spline-series-component.ts","dynamicModuleName":"igc-stacked-spline-series-dynamic-module.ts","moduleName":"igc-stacked-spline-series-module.ts","mappedName":"IgcStackedSplineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSplineShapePartOfRange"}],"originalName":"IsSplineShapePartOfRange"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"}],"originalBaseTypeName":"HorizontalStackedSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

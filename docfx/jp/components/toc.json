@@ -89,7 +89,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "ドック マネージャー (追加予定)",
-    "href": "dock-manager.md",
+    "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
@@ -1168,6 +1168,11 @@
         "status": ""
       },
       {
+        "name": "Series Overview",
+        "href": "geo-map-type-series.md",
+        "status": ""
+      },
+      {
         "name": "散布エリア シリーズ",
         "href": "geo-map-type-scatter-area-series.md",
         "status": ""
@@ -1217,6 +1222,11 @@
         "exclude": ["Blazor"],
         "name": "シェープ スタイリング ユーティリティ",
         "href": "geo-map-resources-shape-styling-utility.md",
+        "status": ""
+      },
+      {
+        "name": "Esri Utility",
+        "href": "geo-map-resources-esri.md",
         "status": ""
       },
       {
@@ -1365,7 +1375,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "カレンダー",
     "href": "scheduling/calendar.md",
     "status": "NEW"

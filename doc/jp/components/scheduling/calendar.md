@@ -27,7 +27,7 @@ Calendar コンポーネントの使用を開始するには、最初に次の�
 npm install {PackageComponents}
 </pre>
 
-次の手順は、[`IgcCalendarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igccalendarcomponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Calendar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -37,7 +37,7 @@ defineComponents(IgcCalendarComponent);
 
 ### 単一選択の Calendar
 
-`IgcCalendarComponent` のインスタンス化は、html に配置するのと同じくらい簡単です。これにより、現在の月が単一選択モードで表示されます。
+`Calendar` のインスタンス化は、html に配置するのと同じくらい簡単です。これにより、現在の月が単一選択モードで表示されます。
 
 
 ```html
@@ -110,7 +110,7 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
 
 ### ローカライズおよび書式設定
 
-カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`IgcCalendarComponent` では、これらは `locale`、`formatOptions`、`weekStart` のプロパティを介して制御およびカスタマイズされます。
+カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`Calendar` では、これらは `locale`、`formatOptions`、`weekStart` のプロパティを介して制御およびカスタマイズされます。
 
 先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `weekStart` です。デフォルトは `sunday` なので、`monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `formatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`locale` プロパティを値に設定します:
 
@@ -270,14 +270,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 
 ## キーボード ナビゲーション
 
-<kbd>Tab</kbd> キーを使用してページを移動する場合、`IgcCalendarComponent` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
+<kbd>Tab</kbd> キーを使用してページを移動する場合、`Calendar` が [W3 アクセシビリティ推奨事項 (英語)](https://www.w3.org/TR/wai-aria-practices/#layoutGrid)に基づいて以下のタブ ストップを導入することに注意してください。
 - [月の選択] ボタン
 - [年の選択] ボタン
 - [前へ] ボタン
 - [次へ] ボタン
 - アクティブな日付要素
 
-`IgcCalendarComponent` コンポーネントの**日/月/年**がフォーカスされている場合は、次を使用します:
+`Calendar` コンポーネントの**日/月/年**がフォーカスされている場合は、次を使用します:
 - <kbd>PageUp</kbd> キーを押すと、前の月/年のページに移動します。
 - <kbd>PageDown</kbd> キーを押すと、次の月/年のページに移動します。
 - <kbd>Home</kbd> キーを使用して、現在の月の最初の日/最初の月を表示/最初の年を表示します。
@@ -391,9 +391,9 @@ igc-calendar::part(year-inner current selected) {
 
 ## API リファレンス
 
-* [IgcCalendarComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igccalendarcomponent.html)
-* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiocomponent.html)
-* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiogroupcomponent.html)
+* `Calendar`
+* `Radio`
+* `RadioGroup`
 
 ## その他のリソース
 

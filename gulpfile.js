@@ -188,8 +188,14 @@ exports.updateApiBlazor = updateApiBlazor;
 
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
+    // cleanup previous API mapping files
+    del.sync("apiMap/" + platformName + "/*apiMap.json");
+
     return gulp.src([
-        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json"
+        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
+        // excluding API mapping files for conflicting components with WebInputs
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Inputs*apiMap.json",
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Calendar*apiMap.json"
     ])
     .pipe(es.map(function(file, fileCallback) {
         var jsonContent = file.contents.toString();
@@ -198,12 +204,15 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
+
+        fileContent = fileContent.split('],"types":').join('],\n  "types":');
         fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
         fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
         // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
         // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
         fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
         fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
+        fileContent = fileContent.split(',"names":').join        (',\n    "names":');
         // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
         // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
         // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
@@ -280,10 +289,14 @@ function buildPlatform(cb) {
 
     // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
     let isFirstRelease = docs[platformName].isFirstRelease;
-    // gendering TOC.yml files from TOC.json files:
-    generateTocFor(platformName, 'en', isFirstRelease);
-    generateTocFor(platformName, 'jp', isFirstRelease);
-    generateTocFor(platformName, 'kr', isFirstRelease);
+    // generating topic list and TOC.yml files from TOC.json files:
+    let enTopics = generateTocFor(platformName, 'en', isFirstRelease);
+    let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease);
+    let krTopics = generateTocFor(platformName, 'kr', isFirstRelease);
+    let tocTopics = [];
+    tocTopics = tocTopics.concat(enTopics); // including EN topics
+    tocTopics = tocTopics.concat(jpTopics); // including JP topics
+    tocTopics = tocTopics.concat(krTopics); // including KR topics
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
     log("API source mapping: " + apiSourcePath);
@@ -295,34 +308,69 @@ function buildPlatform(cb) {
     .on("end", () => {
         transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
 
-        let sources = [
-            'doc/**/*.md', // including all markdown files
-            '!doc/**/obsolete/*.md' // excluding old chart topics
-        ];
+        // excluding topics that are not present in any of EN/JP/KR TOC files
+        let topicExclusions = [];
+        gulp.src(['doc/**/*.md'])
+        .pipe(es.map(function(file, fileCallback) {
+            var filePath = file.path.split('\\').join('/');
+            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+            var fileMatch = false;
+            for (const topic of tocTopics) {
+                if (filePath.indexOf(topic) >= 0) {
+                    fileMatch = true;
+                }
+            }
+            if (fileMatch) {
+            //    console.log('>> TOC contains "' + fileLocal + '"');
+            } else {
+            //    console.log('>> TOC excludes "' + fileLocal + '"');
+               topicExclusions.push('!' + fileLocal);
+            }
+            fileCallback(null, file);
+        }))
+        .on("end", () => {
 
-        if (platformName == "Angular") {
-            // excluding topics for controls that are not in Angular product, e.g. Data-grid
-            sources.push('!doc/**/dock-manager*.md');
-            sources.push('!doc/**/data-grid*.md');
-            sources.push('!doc/**/date-picker.md');
-            sources.push('!doc/**/multi-column-combobox.md');
-        } else if (platformName == "Blazor") {
-            // excluding topics for controls that are not in Blazor product or API is broken for these components/features
-            // sources.push('!doc/**/dock-manager*.md');
-            sources.push('!doc/**/spreadsheet*.md');
-            // sources.push('!doc/**/excel*.md');
-            // sources.push('!doc/**/treemap*.md');
-            sources.push('!doc/**/general-cli*.md');
-            // sources.push('!doc/**/general-breaking-changes*.md');
-            // sources.push('!doc/**/data-chart-type-stacked*.md');
-            // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
-            // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
-            // sources.push('!doc/**/zoomslider*.md');
-        }
+            console.log('>> excluding ' + topicExclusions.length + ' topics');
+            let sources = [
+               'doc/**/*.md', // including all markdown files
+               '!doc/**/obsolete/*.md' // excluding old chart topics
+            ];
+            sources = sources.concat(topicExclusions);
+
+            // NOTE there is not need to exclude topics based on platform
+            // because they are already filtered based on build flags in toc.json
+
+            // if (platformName == "Angular") {
+            //     // excluding topics for controls that are not in Angular product, e.g. Data-grid
+            //     sources.push('!doc/**/layouts/*avatar*.md');
+            //     sources.push('!doc/**/layouts/*card*.md');
+            //     sources.push('!doc/**/layouts/*icon*.md');
+            //     sources.push('!doc/**/layouts/dock-manager*.md');
+            //     sources.push('!doc/**/grids/data-grid*.md');
+            //     sources.push('!doc/**/grids/grids.md');
+            //     sources.push('!doc/**/grids/list.md');
+            //     sources.push('!doc/**/editors/multi-column-combobox.md');
+            //     sources.push('!doc/**/editors/date-picker.md');
+            //     sources.push('!doc/**/inputs/*.md');     // e.g. badge, checkbox
+            //     sources.push('!doc/**/menus/*.md');      // e.g. nav-bar
+            //     sources.push('!doc/**/scheduling/*calendar*.md'); // e.g. calendar
+            // } else if (platformName == "Blazor") {
+            //     // excluding topics for controls that are not in Blazor product or API is broken for these components/features
+            //     // sources.push('!doc/**/dock-manager*.md');
+            //     sources.push('!doc/**/spreadsheet*.md');
+            //     // sources.push('!doc/**/excel*.md');
+            //     // sources.push('!doc/**/treemap*.md');
+            //     sources.push('!doc/**/general-cli*.md');
+            //     // sources.push('!doc/**/general-breaking-changes*.md');
+            //     // sources.push('!doc/**/data-chart-type-stacked*.md');
+            //     // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
+            //     // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
+            //     // sources.push('!doc/**/zoomslider*.md');
+            // }
 
         // uncomment to test faster build
         // sources.push('!doc/**/obsolete/**/*.md');
-        // sources.push('!doc/**/grid/**/*.md');
+        // sources.push('!doc/**/grids/**/*.md');
         // sources.push('!doc/**/charts/**/*.md');
         // sources.push('!doc/**/editors/**/*.md');
         // sources.push('!doc/**/inputs/**/*.md');
@@ -334,6 +382,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
         // sources.push('!doc/**/general*.md');
+        // sources.push('!doc/**/general-changelog-dv.md');
         // sources.push('!doc/**/*map*.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
@@ -344,6 +393,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/zoomslider*.md');
         // sources.push('!doc/**/sparkline*.md');
         // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/scheduling/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
         // sources.push('!doc/**/types/**/*.md');
@@ -379,6 +429,8 @@ function buildPlatform(cb) {
             console.log("ERROR building platform: " + platformName.toString());
             cb(err);
         });
+
+        }) // end of finding topicExclusions
     })
     .on("error", (err) => {
         console.log("ERROR building platform: " + platformName.toString());
@@ -438,8 +490,15 @@ exports.generateTocYML = generateTocYML;
 // e.g.  generateTocFor('Angular', 'en');
 function generateTocFor(platformName, language, isFirstRelease) {
     ensureEnvironment();
-    let jsonPath = './docfx/' + language + '/components/toc.json';
-    transformer.generateTOC(jsonPath, platformName, isFirstRelease);
+    transformer.docsLanguage = language;
+    let tocPath = './docfx/' + language + '/components/toc.json';
+    let tocTopics = transformer.generateTOC(tocPath, platformName, isFirstRelease);
+    tocTopics.sort();
+    for (let i = 0; i < tocTopics.length; i++) {
+        tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
+      //  console.log('>> generateTocFor "' + tocTopics[i] + '"');
+    }
+    return tocTopics;
 }
 
 function copyWebConfig(cb) {

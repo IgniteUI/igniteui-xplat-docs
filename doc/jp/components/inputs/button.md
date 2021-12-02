@@ -13,7 +13,7 @@ Ignite UI for Web Components ボタンは、実現したい外観と機能に一
 
 ## 使用方法
 
-開始するには、typescript ファイルに [`IgcButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Button` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
@@ -35,8 +35,8 @@ defineComponents(IgcButtonComponent);
 
 ## タイプ
 
-[`href`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#href) 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、[`rel`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#rel)、[`target`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#target) および [`download`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#download) 属性も設定できます。
-ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その [`type`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#type) を指定できます。
+`href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、`rel`、`target` および `download` 属性も設定できます。
+ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `type` を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -46,7 +46,7 @@ defineComponents(IgcButtonComponent);
 
 ### Contained ボタン
 
-[`バリアント`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#variant) を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
+`variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
 ```html
 <igc-button variant="contained">Contained</igc-button>
@@ -64,7 +64,7 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="outlined">Outlined</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
+<div class="sample-container loading" style="height: 80px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
 </iframe></div>
 
@@ -94,7 +94,7 @@ defineComponents(IgcButtonComponent);
 
 ## ボタンのサイズ設定
 
-[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#size) プロパティを使用して、ユーザーが `igc-button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
+`size` プロパティを使用して、ユーザーが `button` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびにボタンの size プロパティを変更します。
 
 ```ts
 import { defineComponents, IgcButtonComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -135,7 +135,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 ### ダウンロード
 
-[`download`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html#download) プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
+`download` プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
 
 ```html
 <igc-button
@@ -172,12 +172,12 @@ igc-button::part(base) {
 
 ## API リファレンス
 
-* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
+* `Button`
 
 使用したその他の Web Components:
 
-* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
+* `RadioGroup`
+* `Radio`
 
 ## その他のリソース
 

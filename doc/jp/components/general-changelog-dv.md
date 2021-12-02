@@ -24,15 +24,11 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 > [!NOTE]
-> 'Igb' は、すべてのコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは、$ProductName$ のコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
->例:
+> 例えば, ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 >
->`<IgbDataGrid>`
->
->   `<IgbTextColumn Field="ProductID" />`
->
->`</IgbDataGrid>`
+
 
 <!-- end: Blazor -->
 
@@ -47,7 +43,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
-<!-- Blazor, WebComponents -->
+<!-- WebComponents -->
 ### 新しいコンポーネント
 
 * [Avatar](layouts/avatar.md)
@@ -65,7 +61,28 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * [Ripple](inputs/ripple.md)
 * [Switch](inputs/switch.md)
 
-<!-- end: Blazor, WebComponents -->
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+### 新しいコンポーネント
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navbar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
@@ -127,21 +144,6 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
-* シリーズとマーカーの再設計されたカラー パレット:
-
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
-
-例:
-
-|
-------------- | -------------
-<img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" />
-<img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" />
-
-<div class="divider--half"></div>
-
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
 * heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
@@ -171,6 +173,18 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
 * 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
 * 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
+* シリーズとマーカーの再設計されたカラー パレット:
+
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+
+例:
+
+|   |   |
+|---|---|
+| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
 
 ### チャート凡例
 
@@ -312,9 +326,8 @@ Import ステートメントは、API クラスと列挙型へのフル パス�
 | <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [マップ](geo-map.md)、[ツリーマップ](charts/types/treemap-chart.md)  |
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [ブレット グラフ](bullet-graph.md)、[リニア ゲージ](linear-gauge.md)、[ラジアル ゲージ](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| カテゴリ チャート、データ チャート、ドーナツ チャート、ファイナンシャル チャート、円チャート、[ズーム スライダー](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a>             | [データ グリッド](data-grid.md)       |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
-
+| <!-- Blazor, React, WebComponents --> <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> <!-- end: Blazor, React, WebComponents --> | <!-- Blazor, React, WebComponents --> [データ グリッド](grids/data-grid.md) <!-- end: Blazor, React, WebComponents --> |
 
 - 変更後のコード
 
@@ -327,18 +340,15 @@ API クラスと列挙型へのフル パスの代わりにパッケージ名の
 import { IgxLinearGauge } from "igniteui-angular-gauges";
 import { IgxLinearGaugeModule } from "igniteui-angular-gauges";
 import { IgxLinearGraphRange } from "igniteui-angular-gauges";
-
 import { IgxRadialGauge } from 'igniteui-angular-gauges}';
 import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
 import { IgxRadialGaugeRange } from 'igniteui-angular-gauges';
 import { SweepDirection } from 'igniteui-angular-core';
-
 // charts:
 import { IgxFinancialChartComponent } from "igniteui-angular-charts";
 import { IgxFinancialChartModule } from "igniteui-angular-charts";
 import { IgxDataChartComponent } from "igniteui-angular-charts";
 import { IgxDataChartCoreModule } from "igniteui-angular-charts";
-
 // maps:
 import { IgxGeographicMapComponent } from "igniteui-angular-maps";
 import { IgxGeographicMapModule } from "igniteui-angular-maps";
@@ -349,22 +359,18 @@ import { IgxGeographicMapModule } from "igniteui-angular-maps";
 import { IgcLinearGaugeComponent } from "igniteui-webcomponents-gauges";
 import { IgcLinearGaugeModule } from "igniteui-webcomponents-gauges";
 import { IgcLinearGraphRange } from "igniteui-webcomponents-gauges";
-
 import { IgcRadialGaugeComponent } from 'igniteui-webcomponents-gauges';
 import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 import { IgcRadialGaugeRange } from 'igniteui-webcomponents-gauges';
 import { SweepDirection } from 'igniteui-webcomponents-core';
-
 // charts:
 import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts";
 import { IgcFinancialChartModule } from "igniteui-webcomponents-charts";
 import { IgcDataChartComponent } from "igniteui-webcomponents-charts";
 import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts";
-
 // maps:
 import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps";
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps";
-
 // grids:
 import { IgcDataGridComponent } from "igniteui-webcomponents-grids";
 import { IgcDataGridModule } from "igniteui-webcomponents-grids";
@@ -375,22 +381,18 @@ import { IgcDataGridModule } from "igniteui-webcomponents-grids";
 import { IgrLinearGauge } from "igniteui-react-gauges";
 import { IgrLinearGaugeModule } from "igniteui-react-gauges";
 import { IgrLinearGraphRange } from "igniteui-react-gauges";
-
 import { IgrRadialGauge } from 'igniteui-react-gauges';
 import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
 import { IgrRadialGaugeRange } from 'igniteui-react-gauges';
 import { SweepDirection } from 'igniteui-react-core';
-
 // charts:
 import { IgrFinancialChart } from 'igniteui-react-charts';
 import { IgrFinancialChartModule } from 'igniteui-react-charts';
 import { IgrDataChart } from 'igniteui-react-charts';
 import { IgrDataChartCoreModule } from 'igniteui-react-charts';
-
 // maps:
 import { IgrGeographicMap } from "igniteui-react-maps";
 import { IgrGeographicMapModule } from "igniteui-react-maps";
-
 // grids:
 import { IgrLiveGrid } from "igniteui-react-grids";
 import { IgrLiveGridModule } from 'igniteui-react-grids';
@@ -405,18 +407,15 @@ import { IgrLiveGridModule } from 'igniteui-react-grids';
 import { IgxLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-component';
 import { IgxLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-module';
 import { IgxLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igx-linear-graph-range';
-
 import { IgxRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-component";
 import { IgxRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-module";
 import { IgxRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-range";
 import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
-
 // charts:
 import { IgxFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-component";
 import { IgxFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-module";
 import { IgxDataChartComponent } from "igniteui-webcomponents-charts/ES5/igx-data-chart-component";
 import { IgxDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igx-data-chart-core-module";
-
 // maps:
 import { IgxGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-component";
 import { IgxGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-module";
@@ -427,22 +426,18 @@ import { IgxGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igx-geog
 import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component';
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module';
 import { IgcLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igc-linear-graph-range';
-
 import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-component";
 import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-module";
 import { IgcRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-range";
 import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
-
 // charts:
 import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-component";
 import { IgcFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-module";
 import { IgcDataChartComponent } from "igniteui-webcomponents-charts/ES5/igc-data-chart-component";
 import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igc-data-chart-core-module";
-
 // maps:
 import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-component";
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
-
 // grids:
 import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
 import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
@@ -453,22 +448,18 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-
 import { IgrLinearGauge } from "igniteui-react-gauges/ES5/igr-linear-gauge";
 import { IgrLinearGaugeModule } from "igniteui-react-gauges/ES5/igr-linear-gauge-module";
 import { IgrLinearGraphRange } from "igniteui-react-gauges/ES5/igr-linear-graph-range";
-
 import { IgrRadialGauge } from "igniteui-react-gauges/ES5/igr-radial-gauge";
 import { IgrRadialGaugeModule } from "igniteui-react-gauges/ES5/igr-radial-gauge-module";
 import { IgrRadialGaugeRange } from "igniteui-react-gauges/ES5/igr-radial-gauge-range";
 import { SweepDirection } from "igniteui-react-core/ES5/SweepDirection";
-
 // charts:
 import { IgrFinancialChart } from "igniteui-react-charts/ES5/igr-financial-chart";
 import { IgrFinancialChartModule } from "igniteui-react-charts/ES5/igr-financial-chart-module";
 import { IgrDataChart } from "igniteui-react-charts/ES5/igr-data-chart";
 import { IgrDataChartCoreModule } from "igniteui-react-charts/ES5/igr-data-chart-core-module";
-
 // maps:
 import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
-
 // grids:
 import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
 import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';

@@ -2,13 +2,15 @@
 title: $Platform$ Calendar | Calendar | Infragistics
 _description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
 _keywords: $Platform$ Calendar, $ProductName$, Infragistics
+mentionedTypes: ['Calendar']
 ---
 
 # $Platform$ Calendar Overview
+
 The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
 
-
 ## $Platform$ Calendar Example
+
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
@@ -26,7 +28,7 @@ To get started with the Calendar component, first you need to install $ProductNa
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the [`IgcCalendarComponent`]({environment:wcApiUrl}/classes/igccalendarcomponent.html) and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
+The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -36,7 +38,7 @@ defineComponents(IgcCalendarComponent);
 
 ### Single Selection Calendar
 
-Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. This will display the current month in single selection mode.
+Instantiating the `Calendar` is as easy as placing it in the html. This will display the current month in single selection mode.
 
 
 ```html
@@ -46,7 +48,7 @@ Instantiating the `IgcCalendarComponent` is as easy as placing it in the html. T
 
 ### Multiple Selection
 
-We can easily change the default mode using the [`selection`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#selection) property:
+We can easily change the default mode using the `selection` property:
 
 ```html
 <!-- Multiple selection mode -->
@@ -78,11 +80,11 @@ Following the same approach, we can switch to `range` selection mode:
 
 ### Active View and Date
 
-The Calendar component allows you to switch between three different views: days, months and years. The [`activeView`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activeView) property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the [`activeDate`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#activeDate) property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
+The Calendar component allows you to switch between three different views: days, months and years. The `activeView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `activeDate` property. The `activeDate` property also reflects the changes of the currently visible date made by the end user.
 
 ### Header Options
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the [`hasHeader`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hasHeader) property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the [`headerOrientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#headerOrientation) property.
+By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `hasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `headerOrientation` property.
 
 > [!NOTE]
 > Please note that the Calendar header is not rendered when the selection is `multiple`.
@@ -109,7 +111,7 @@ The following sample demonstrates the above configuration:
 
 ### Localization and Formatting
 
-Due to their very nature, localization and formatting are essential to any calendar. In the `IgcCalendarComponent` those are controlled and customized through the following properties - [`locale`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#locale), [`formatOptions`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#formatOptions), [`weekStart`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#weekStart).
+Due to their very nature, localization and formatting are essential to any calendar. In the `Calendar` those are controlled and customized through the following properties - `locale`, `formatOptions`, `weekStart`.
 
 Let's go ahead and try those along with other customizations. First thing we need to set is the `weekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `formatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `locale` property to a value, based on the user's location choice:
 
@@ -157,7 +159,7 @@ If everything went well, we should now have a Calendar with customized display, 
 
 ### Disabled dates
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the [`disabledDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#disabledDates) property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
+In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `disabledDates` property. The `disabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `dateRange` which is an array of `Date` objects.
 
 These are the available options for the `type` property:
 *  `After` - disables the dates after the first date in the `dateRange`
@@ -190,7 +192,7 @@ These configurations should have the following result:
 
 ### Special dates
 
-The [`specialDates`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#specialDates) property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
+The `specialDates` property is using almost the same configuration principles as the `disabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
 
 Let's add some special dates to our Calendar. In order to do this, we will create a `DateRangeDescriptor` and pass the dates between the 3rd and the 8th of the current month:
 
@@ -215,7 +217,7 @@ The following demo illustrates a Calendar with a vacation request option:
 
 ### Week numbers
 
-You can use the [`showWeekNumbers`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#showWeekNumbers) property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
+You can use the `showWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
 
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
@@ -231,9 +233,9 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 ### Multiple Months
 
-Using the [`visibleMonths`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#visibleMonths) property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the [`orientation`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#orientation) property. By default the `orientation` property is set to `horizontal`.
+Using the `visibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `orientation` property. By default the `orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the [`hideOutsideDays`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#hideOutsideDays) property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `hideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -250,7 +252,7 @@ The following sample demonstrates the multiple months configuration:
 
 ### Size
 
-You could control the size and spacing of the Calendar inner elements by changing its [`size`]({environment:wcApiUrl}/classes/igccalendarcomponent.html#size) property. The default `size` value is `large`.
+You could control the size and spacing of the Calendar inner elements by changing its `size` property. The default `size` value is `large`.
 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -269,14 +271,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 
 ## Keyboard navigation
 
-If you traverse the page using the <kbd>Tab</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `IgcCalendarComponent` introduces the following tab stops:
+If you traverse the page using the <kbd>Tab</kbd> key you should keep in mind that based on [W3 accessability recommendations](https://www.w3.org/TR/wai-aria-practices/#layoutGrid) the `Calendar` introduces the following tab stops:
 - Month selection button
 - Year selection button
 - Previous button
 - Next button
 - Active date element
 
-When a **day/month/year** in the `IgcCalendarComponent` component is focused, use:
+When a **day/month/year** in the `Calendar` component is focused, use:
 - <kbd>PageUp</kbd> key to move to the previous month/year/years page.
 - <kbd>PageDown</kbd> key to move to the next month/year/years page.
 - <kbd>Home</kbd> key to focus the first day of the current month/first month in view/first year in view.
@@ -390,9 +392,9 @@ The following sample demonstrates the above CSS configuration:
 
 ## API References
 
-* [IgcCalendarComponent]({environment:wcApiUrl}/classes/igccalendarcomponent.html)
-* [IgcRadioComponent]({environment:wcApiUrl}/classes/igcradiocomponent.html)
-* [IgcRadioGroupComponent]({environment:wcApiUrl}/classes/igcradiogroupcomponent.html)
+* `Calendar`
+* `Radio`
+* `RadioGroup`
 
 ## Additional Resources
 

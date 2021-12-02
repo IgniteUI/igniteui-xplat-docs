@@ -1,52 +1,41 @@
-{"extraFiles": ["igr-horizontal-range-category-series-proxy-module.ts"], "types": [{"originalName": "RangeAreaSeries", 
-  "names": [
-    {"platform": "React", "fileName": "igr-range-area-series.ts", "dynamicModuleName": "igr-range-area-series-dynamic-module.ts", "moduleName": "igr-range-area-series-module.ts", "mappedName": "IgrRangeAreaSeries"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isAreaOrLine"}], "originalName": "IsAreaOrLine"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isArea"}], "originalName": "IsArea"}
-  ], 
-  "originalBaseTypeName": "HorizontalRangeCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "HorizontalRangeCategorySeries", 
-  "names": [
-    {"platform": "React", "fileName": "igr-horizontal-range-category-series.ts", "mappedName": "IgrHorizontalRangeCategorySeries"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "IgrCategoryAxisBase", "mappedName": "xAxis"}], "originalName": "XAxis"}, 
-    {"names": [{"platform": "React", "mappedType": "IgrNumericYAxis", "mappedName": "yAxis"}], "originalName": "YAxis"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isRange"}], "originalName": "IsRange"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getOffsetValue"}], "originalName": "GetOffsetValue"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getCategoryWidth"}], "originalName": "GetCategoryWidth"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getNextOrExactIndex"}], "originalName": "GetNextOrExactIndex"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}], "originalName": "GetPreviousOrExactIndex"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValue"}], "originalName": "GetSeriesValue"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesLowValue"}], "originalName": "GetSeriesLowValue"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesHighValue"}], "originalName": "GetSeriesHighValue"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesHighValuePosition"}], "originalName": "GetSeriesHighValuePosition"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesLowValuePosition"}], "originalName": "GetSeriesLowValuePosition"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValuePosition"}], "originalName": "GetSeriesValuePosition"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsYAxis"}], "originalName": "CanUseAsYAxis"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "canUseAsXAxis"}], "originalName": "CanUseAsXAxis"}
-  ], 
-  "originalBaseTypeName": "RangeCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RangeCategorySeries", 
-  "names": [
-    {"platform": "React", "fileName": "igr-range-category-series.ts", "mappedName": "IgrRangeCategorySeries"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "lowMemberPath"}], "originalName": "LowMemberPath"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "highMemberPath"}], "originalName": "HighMemberPath"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemValue"}], "originalName": "GetItemValue"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "scrollIntoView"}], "originalName": "ScrollIntoView"}
-  ], 
-  "originalBaseTypeName": "CategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}, {"originalName": "RangeColumnSeries", 
-  "names": [
-    {"platform": "React", "fileName": "igr-range-column-series.ts", "dynamicModuleName": "igr-range-column-series-dynamic-module.ts", "moduleName": "igr-range-column-series-module.ts", "mappedName": "IgrRangeColumnSeries"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isColumn"}], "originalName": "IsColumn"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}], "originalName": "IsMarkerlessDisplayPreferred"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "radiusX"}], "originalName": "RadiusX"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "radiusY"}], "originalName": "RadiusY"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}], "originalName": "GetSeriesValueBoundingBox"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getItemSpan"}], "originalName": "GetItemSpan"}
-  ], 
-  "originalBaseTypeName": "HorizontalRangeCategorySeries", "originalBaseTypeNamespace": "Infragistics.Controls.Charts", "originalNamespace": "Infragistics.Controls.Charts"}]}
+{"extraFiles":["igr-horizontal-range-category-series-proxy-module.ts"],
+  "types":[
+  { "originalName":"RangeAreaSeries",
+    "names":[{"platform":"React","fileName":"igr-range-area-series.ts","dynamicModuleName":"igr-range-area-series-dynamic-module.ts","moduleName":"igr-range-area-series-module.ts","mappedName":"IgrRangeAreaSeries"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"HorizontalRangeCategorySeries",
+    "names":[{"platform":"React","fileName":"igr-horizontal-range-category-series.ts","mappedName":"IgrHorizontalRangeCategorySeries"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrCategoryAxisBase","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"React","mappedType":"IgrNumericYAxis","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isRange"}],"originalName":"IsRange"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesLowValue"}],"originalName":"GetSeriesLowValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesHighValue"}],"originalName":"GetSeriesHighValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesHighValuePosition"}],"originalName":"GetSeriesHighValuePosition"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesLowValuePosition"}],"originalName":"GetSeriesLowValuePosition"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"RangeCategorySeries",
+    "names":[{"platform":"React","fileName":"igr-range-category-series.ts","mappedName":"IgrRangeCategorySeries"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowMemberPath"}],"originalName":"LowMemberPath"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"highMemberPath"}],"originalName":"HighMemberPath"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"RangeColumnSeries",
+    "names":[{"platform":"React","fileName":"igr-range-column-series.ts","dynamicModuleName":"igr-range-column-series-dynamic-module.ts","moduleName":"igr-range-column-series-module.ts","mappedName":"IgrRangeColumnSeries"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isColumn"}],"originalName":"IsColumn"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

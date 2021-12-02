@@ -19,7 +19,7 @@ alt="$Platform$ ドック マネージャー デスクトップ統合"/>
 ### プロジェクト構造
 
 [Electron Forge](https://www.electronforge.io/) CLI ツールとその [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) テンプレートを使用して、Electron アプリケーションを作成しました。Electron には、メインとレンダラーの 2 種類のプロセスがあります。
-- メイン プロセスは、`BrowserWindow` インスタンスを作成することによって Web ページを作成します。各 `Browser Window` インスタンスは、レンダラー プロセスで Web ページを実行します。
+- メイン プロセスは、`BrowserWindow` インスタンスを作成することによって Web ページを作成します。各 `BrowserWindow` インスタンスは、レンダラー プロセスで Web ページを実行します。
 - レンダラー プロセスは、対応する Web ページのみを管理します。
 
 `index.ts` スクリプトは、メイン プロセスを実行する Electron アプリケーションのエントリ ポイントを指定します。アプリケーションのコードのほとんどは、レンダラー プロセスで実行される `renderer.ts` ファイル内にあります。`index.html` は、Web ページのコンテンツを表します。Web ページのスタイルは、`index.css` ファイルでホストされます。
@@ -103,7 +103,7 @@ const handleDocumentDrop = async (event: DragEvent) => {
 
     if (docked) {
         const contentElement = dockManager.querySelector('[slot=' + contentId + ']');
-        
+
         // if the content element is missing from the current dock manager it means it comes from another window
         if (!contentElement) {
             await droppedInAnotherWindow();

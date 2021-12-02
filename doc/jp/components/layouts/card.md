@@ -2,16 +2,17 @@
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
 _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
+mentionedTypes: ['Card']
 _language: ja
 ---
 
 # Card (カード)
 
-$ProductName$ `Card Component` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
+$ProductName$ `Card ` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 ## Card の例
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card の例"
@@ -38,7 +39,7 @@ IgbCardModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-開始するには、[`IgcCardComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html) をその構成要素とともに typescript ファイルにインポートし、[`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+開始するには、`Card` をその構成要素とともに typescript ファイルにインポートし、`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```typescript
 // index.ts
@@ -116,18 +117,18 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCard>
 ```
 
-上記を確認することができます。まず、`h3` 見出しのように、要素をヘッダー タイトルとしてタグ付けする場合は、要素を [`igc-card-header`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeaderComponent.html) タグの間に配置し、そのスロット名を `title` に設定します。逆に、別の見出し要素を `subtitle` にしたい場合は、そのスロットに `subtitle` という名前を付けます。
+上記を確認することができます。まず、`h3` 見出しのように、要素をヘッダー タイトルとしてタグ付けする場合は、要素を `CardHeader` タグの間に配置し、そのスロット名を `title` に設定します。逆に、別の見出し要素を `subtitle` にしたい場合は、そのスロットに `subtitle` という名前を付けます。
 
-カードに表示する画像や動画は、[`igc-card-media`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMediaComponent.html) タグで囲みます。`igc-card-media` を使用すると、内部に配置されたコンテンツのサイズを変更して、要素のコンテンツ ボックス全体を埋めながらアスペクト比を維持できます。オブジェクトのアスペクト比がボックスのアスペクト比と一致しない場合、オブジェクトは収まるようにクリップされます。
+カードに表示する画像や動画は、`CardMedia` タグで囲みます。`CardMedia` を使用すると、内部に配置されたコンテンツのサイズを変更して、要素のコンテンツ ボックス全体を埋めながらアスペクト比を維持できます。オブジェクトのアスペクト比がボックスのアスペクト比と一致しない場合、オブジェクトは収まるようにクリップされます。
 
-[`igc-card-content`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContentComponent.html) タグ内には何でも配置できます。通常テキストが配置されます。
+`CardContent` タグ内には何でも配置できます。通常テキストが配置されます。
 
-最後に、[`igc-card-actions`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardActionsComponent.html) は、ボタンなどのアクション可能な項目を配置する場所です。
+最後に、`CardActions` は、ボタンなどのアクション可能な項目を配置する場所です。
 
 ### メディア、サムネイル、アバター
 タイトルとサブタイトルの横のカード ヘッダーに画像またはアイコンを表示する場合は、要素のスロット プロパティを `thumbnail` に割り当てることで実行できます。
 
-上記のカードを例にとると、`igc-card-header` の内容を編集し、`slot="thumbnail"` でアバターを追加できます。
+上記のカードを例にとると、`CardHeader` の内容を編集し、`slot="thumbnail"` でアバターを追加できます。
 
 ```html
 <igc-card-header>
@@ -208,7 +209,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCard>
 ```
 
-追加の `div` 要素を使用して `igc-card-header` と `igc-card-content` をバンドルし、それらを垂直方向に整列させ、`.card-horizontal` クラスをラッピング `div` 要素に適用して、カードの 2 つのセクションを水平方向に整列させます。
+追加の `div` 要素を使用して `CardHeader` と `CardContent` をバンドルし、それらを垂直方向に整列させ、`.card-horizontal` クラスをラッピング `div` 要素に適用して、カードの 2 つのセクションを水平方向に整列させます。
 
 `.card-horizontal` クラスが適用されるスタイルは次のとおりです。
 
@@ -231,7 +232,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 すべて適切に設定できると、結果は以下のようになります。
 
-<code-view style="height: 220px"
+<code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
            alt="$Platform$ Card の例"
@@ -240,9 +241,9 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 ### その他のレイアウト
 
-`igc-card` のレイアウトを使用すると、創造をさらに発展させることもできます。
+`Card` のレイアウトを使用すると、創造をさらに発展させることもできます。
 
-以下は、半水平カードを作成する方法を示す例です。このカードでは、カードのすべてのセクションが垂直に配置され、`igc-card-media` が垂直セクションの横に表示されます。
+以下は、半水平カードを作成する方法を示す例です。このカードでは、カードのすべてのセクションが垂直に配置され、`CardMedia` が垂直セクションの横に表示されます。
 
 ```html
 <igc-card>
@@ -307,7 +308,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 }
 ```
 
-<code-view style="height: 295px"
+<code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
            alt="$Platform$ Semi Horizontal Card Example"
@@ -361,7 +362,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 
 ## スタイル設定
 
-カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (ヘッダー、コンテンツ、メディア、およびアクションのサブコンポーネント) をスタイル設定することによって行われます。さらに、`header` コンポーネント (`igc-card-header`) は、3 つの CSS パーツ (`header`、`title`、`subtitle`) を公開します。これにより、ラッピング要素と 2 つのタイトル要素のスタイルを設定できます。
+カードはさまざまな要素をラップするコンテナであるため、スタイル設定は、その基本要素 (ヘッダー、コンテンツ、メディア、およびアクションのサブコンポーネント) をスタイル設定することによって行われます。さらに、`header` コンポーネント (`CardHeader`) は、3 つの CSS パーツ (`header`、`title`、`subtitle`) を公開します。これにより、ラッピング要素と 2 つのタイトル要素のスタイルを設定できます。
 
 ```css
 igc-card {
@@ -383,7 +384,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 580px"
+<code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card スタイル設定の例"
@@ -397,20 +398,20 @@ igc-icon-button+igc-icon-button {
 ## API リファレンス
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
-* [`IgcCardComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardComponent.html)
-* [`IgcCardHeaderComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardHeader.html)
-* [`IgcCardContentComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardContent.html)
-* [`IgcCardMediaComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCardMedia.html)
-* [`IgcCardActionsComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcCardActions.html)
+* `Card`
+* `CardHeader`
+* `CardContent`
+* `CardMedia`
+* `CardActions`
 
 
 使用したその他のコンポーネントとディレクティブ:
 
-* [`IgcAvatarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html)
-* [`IgcIconComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconComponent.html)
-* [`IgcButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
-* [`IgcIconButtonComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcIconButtonComponent.html)
-* [`IgcRippleComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRippleComponent.html)
+* `Avatar`
+* `Icon`
+* `Button`
+* `IconButton`
+* `Ripple`
 
 <div class="divider"></div>
 

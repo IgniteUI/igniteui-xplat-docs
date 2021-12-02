@@ -288,9 +288,13 @@ var configurations: any[] = [
         { from: "sparkline.html$", to: "charts/types/sparkline-chart" },
         { from: "treemap-overview.html$", to: "charts/types/treemap-chart" },
     ]},
-    // redirects for moved data-grid topics to grids folder
+    // redirects for moved topics to sub folder in 21.2 release
     { platforms: ["React", "Blazor", "WC"],
       redirects: [
+        { from: "dock-manager.html$",                       to: "layouts/dock-manager" },
+        { from: "dock-manager-electron.html$",              to: "layouts/dock-manager-electron" },
+        { from: "dock-manager-embedding-frames.html$",      to: "layouts/dock-manager-embedding-frames" },
+        { from: "dock-manager-updating-panes.html$",        to: "layouts/dock-manager-updating-panes" },
         { from: "data-grid-accessibility.html$"           , to: "grids/data-grid-accessibility" },
         { from: "data-grid-cell-activation.html$"         , to: "grids/data-grid-cell-activation" },
         { from: "data-grid-cell-editing.html$"            , to: "grids/data-grid-cell-editing" },
