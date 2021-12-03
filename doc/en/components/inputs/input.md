@@ -6,11 +6,11 @@ mentionedTypes: ['Form']
 ---
 # $Platform$ Input Overview
 
-The [`Input Component`]({environment:wcApiUrl}/classes/IgcInputComponent.html) is a component where the user can enter data.
+The $ProductName$ Input is a component where the user can enter data.
 
 ## $Platform$ Input Example
 
-The following example represents an `Input` for e-mail:
+<div class="divider--half"></div>
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,13 +21,29 @@ The following example represents an `Input` for e-mail:
 
 ## Dependencies
 
-To get started we need to import the [`IgcInputComponent`]({environment:wcApiUrl}/classes/IgcInputComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+<!-- Blazor -->
+
+To get started with the Input component, you first need to register its module.
+
+```razor
+IgbInputModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
+To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcInputComponent);
 ```
+
+<!-- end: WebComponents -->
 
 After we import the `Input` component we are ready to start using it, so let's add our first Input.
 
@@ -68,7 +84,7 @@ The `helper-text` slot provides a hint placed below the Input. Let's add a helpe
 
 ## Input Sizing
 
-We can allow the user to choose the size of the `Input` by using its [`Size`]({environment:wcApiUrl}/classes/IgcInputComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the Input.
+We can allow the user to choose the size of the `Input` by using its `Size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input.
 
 ```ts
 import { defineComponents, IgcInputComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -114,7 +130,7 @@ In the sample above we have demonstrated the use of the following attributes:
 - `disabled` - Used to disable the input
 - `readonly` - Used to mark the input as readonly
 
-The full list of attributes can be found in [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html).
+The full list of attributes can be found in `Input` API.
 
 ## Styling
 
@@ -157,11 +173,11 @@ igc-input::part(suffix){
 ## API References
 
 For more detailed information regarding the Input's API, refer to the following links:
-* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+* `Input`
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
-* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+* `Icon`
+* `Radio`
 
 <div class="divider"></div>
 ## Additional Resources
