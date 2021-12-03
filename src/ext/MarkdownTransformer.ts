@@ -195,7 +195,7 @@ function transformCodeRefs(options: any) {
 
             if (link) {
                 // overriding api root for components specified in docsConfig.json
-                if (apiDocOverrideComponents !== null) {
+                if (apiDocOverrideComponents !== undefined) {
                     //console.log("getApiLink replace apiDocOverride " + link.url);
                     for (const component of apiDocOverrideComponents) {
                         //var name = (options.platformPascalPrefix + "" + component).toLowerCase();
@@ -209,6 +209,7 @@ function transformCodeRefs(options: any) {
                         }
                     }
                 }
+                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
