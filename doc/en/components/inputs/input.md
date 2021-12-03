@@ -1,0 +1,173 @@
+---
+title: $Platform$ Input | Data Visualization Tools | Infragistics
+_description: Infragistics' $Platform$ input is a component where the user can enter data. Improve your application with Ignite UI for $Platform$!
+_keywords: $Platform$ form, $ProductName$, Infragistics
+mentionedTypes: ['Form']
+---
+# $Platform$ Input Overview
+
+The [`Input Component`]({environment:wcApiUrl}/classes/IgcInputComponent.html) is a component where the user can enter data.
+
+## $Platform$ Input Example
+
+The following example represents an `Input` for e-mail:
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
+           alt="$Platform$ Input Example"
+           github-src="inputs/input/overview">
+</code-view>
+
+## Dependencies
+
+To get started we need to import the [`IgcInputComponent`]({environment:wcApiUrl}/classes/IgcInputComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+
+```ts
+import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcInputComponent);
+```
+
+After we import the `Input` component we are ready to start using it, so let's add our first Input.
+
+```html
+<igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
+```
+
+## Prefix & Suffix
+
+With `prefix` and `suffix` slots we can add different content before and after the main content of the Input. In the following sample we will create a new Input field with a text prefix and an icon suffix:
+
+```html
+<igc-input type="tel" label="Phone" placeholder="888 123456">
+  <span slot="prefix">+359</span>
+  <igc-icon name="phone" slot="suffix"></igc-icon>
+</igc-input>
+```
+
+<div class="sample-container loading" style="height: 80px; width: 400px">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix">
+</iframe></div>
+
+## Helper Text
+
+The `helper-text` slot provides a hint placed below the Input. Let's add a helper text to our phone Input:
+
+```html
+<igc-input type="tel" label="Phone">
+  <span slot="prefix">+359</span>
+  <igc-icon name="phone" slot="suffix"></igc-icon>
+  <span slot="helper-text">Ex.: +359 888 123 456</span>
+</igc-input>
+```
+
+<div class="sample-container loading" style="height: 100px; width: 400px">
+    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text">
+</iframe></div>
+
+## Input Sizing
+
+We can allow the user to choose the size of the `Input` by using its [`Size`]({environment:wcApiUrl}/classes/IgcInputComponent.html#size) property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the Input.
+
+```ts
+import { defineComponents, IgcInputComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+defineComponents(IgcInputComponent, IgcRadioComponent, IgcRadioGroupComponent);
+```
+
+```html
+<igc-radio-group id="radio-group" alignment="horizontal">
+  <igc-radio name="size" value="small" label-position="after">Small</igc-radio>
+  <igc-radio name="size" value="medium" label-position="after" checked>Medium</igc-radio>
+  <igc-radio name="size" value="large" label-position="after">Large</igc-radio>
+</igc-radio-group>
+
+<igc-input id="input-required" type="text" label="Required" value="This input is required" required></igc-input>
+<igc-input id="input-disabled" type="text" label="Disabled" value="This input is disabled" disabled></igc-input>
+<igc-input id="input-readonly" type="text" label="Readonly" value="This input is readonly" readonly></igc-input>
+```
+
+```ts
+this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
+this.inputRequired = document.getElementById('input-required') as IgcInputComponent;
+this.inputDisabled = document.getElementById('input-disabled') as IgcInputComponent;
+this.inputReadonly = document.getElementById('input-readonly') as IgcInputComponent;
+
+this.radioGroup.addEventListener('click', (radio: any) => {
+    this.inputRequired.size = radio.target.value;
+    this.inputDisabled.size = radio.target.value;
+    this.inputReadonly.size = radio.target.value;
+});
+```
+
+And here's the result of all that work:
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
+           alt="$Platform$ Input Sizing Example"
+           github-src="inputs/input/size">
+</code-view>
+
+In the sample above we have demonstrated the use of the following attributes:
+- `required` - Used to mark the input as required
+- `disabled` - Used to disable the input
+- `readonly` - Used to mark the input as readonly
+
+The full list of attributes can be found in [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html).
+
+## Styling
+
+The Input component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Input:
+
+|Name|Description|
+|--|--|
+| container | The main wrapper that holds all main input elements. |
+| input | The native input element. |
+| label | The native label element. |
+| prefix | The prefix wrapper. |
+| suffix | The suffix wrapper. |
+| helper-text | The helper text wrapper. |
+
+```scss
+igc-input::part(input){
+    background-color: rgb(169, 214, 229);
+    border-color: rgb(42, 111, 151);
+}
+
+igc-input::part(label){
+    color: rgb(1, 42, 74);
+}
+
+igc-input::part(prefix),
+igc-input::part(suffix){
+    color: white;
+    border-color: rgb(42, 111, 151);
+    background-color: rgb(70, 143, 175);
+}
+```
+
+<code-view style="height: 150px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
+           alt="$Platform$ Input Styling"
+           github-src="inputs/input/styling">
+</code-view>
+
+## API References
+
+For more detailed information regarding the Input's API, refer to the following links:
+* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
+
+Additional components and/or directives that were used:
+* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
+
+<div class="divider"></div>
+## Additional Resources
+
+<div class="divider--half"></div>
+Our community is active and always welcoming to new ideas.
+
+* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

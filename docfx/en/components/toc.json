@@ -1337,6 +1337,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Input",
+    "href": "inputs/input.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group",
     "href": "inputs/radio.md",
     "status": "NEW"
