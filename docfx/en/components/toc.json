@@ -1314,8 +1314,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Data Entry & Display",    
-    "header": true,
-    "href": "inputs/inputs-overview.md"
+    "header": true    
   },
   {
     "exclude": ["Angular", "React"],
@@ -1325,8 +1324,14 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Icon",
-    "href": "layouts/icon.md",
+    "name": "Button",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Checkbox",
+    "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
@@ -1337,8 +1342,8 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Button",
-    "href": "inputs/button.md",
+    "name": "Icon",
+    "href": "layouts/icon.md",
     "status": "NEW"
   },
   {
@@ -1351,12 +1356,6 @@
     "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group",
     "href": "inputs/radio.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Checkbox",
-    "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {

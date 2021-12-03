@@ -97,6 +97,8 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-bar/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API References
 
 For more detailed information regarding the navbar's API, refer to the following links:
@@ -105,12 +107,24 @@ For more detailed information regarding the navbar's API, refer to the following
 Additional components and/or directives that were used:
 * `Icon`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
 
 ## Additional Resources
 
-<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
