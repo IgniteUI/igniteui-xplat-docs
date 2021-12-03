@@ -4,9 +4,10 @@ _description: Infragistics' $Platform$ navbar provides optimal UI experience wit
 _keywords: $Platform$ navbar, $ProductName$, Infragistics
 mentionedTypes: ['Navbar']
 ---
+
 # $Platform$ Navbar Overview
 
- $Platform$ [`Navbar Component`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html) informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+ $Platform$ `Navbar` informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 ## $Platform$ Navbar Example
 
@@ -19,7 +20,21 @@ The following example represents a `Navbar` with icons and text header:
            github-src="menus/nav-bar/overview">
 </code-view>
 
-## Dependencies
+## Usage
+
+<!-- Blazor -->
+
+To get started with the `Navbar` component, you first need to register the `IgbNavbarModule`.
+
+```razor
+IgbNavbarModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 In order to use the Navigation Bar component, the web components package must be installed.
 
@@ -27,11 +42,13 @@ In order to use the Navigation Bar component, the web components package must be
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
-
 To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
-```typescript
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+```ts
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcNavbarComponent);
 ```
@@ -44,7 +61,24 @@ Then in the template of our component we can add the following code to show a ba
 
 ## Content
 
-In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environment:wcApiUrl}/classes/IgcIconComponent.html) icons using the `start` and `end` slots:
+<!-- Blazor -->
+
+In the following sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
+           alt="$Platform$ Navbar Styling Example"
+           github-src="menus/nav-bar/content">
+</code-view>
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
+In the sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
 
 ```html
 <igc-navbar style="height:65px">
@@ -55,6 +89,8 @@ In the sample of our `Navbar` we have added some [`IgcIconComponent`]({environme
     <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
 </igc-navbar>
 ```
+
+<!-- end: WebComponents -->
 
 ## Styling
 
@@ -95,10 +131,10 @@ If all went well, you should see the following in your browser:
 ## API References
 
 For more detailed information regarding the navbar's API, refer to the following links:
-* [`IgcNavbarComponent API`]({environment:wcApiUrl}/classes/IgcNavbarComponent.html)
+* `Navbar`
 
 Additional components and/or directives that were used:
-* [`IgcIconComponent API`]({environment:wcApiUrl}/classes/IgcIconComponent.html)
+* `Icon`
 
 <div class="divider"></div>
 

@@ -31,7 +31,7 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcSwitchComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents（）`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Switch` を使用する typescript ファイルにインポートし、次のように [`defineComponents（）`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -46,7 +46,7 @@ defineComponents(IgcSwitchComponent);
 ```
 
 >[!WARNING]
->スイッチ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `<igc-form>` を使用してください。
+>スイッチ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 ## 例
 
@@ -58,7 +58,7 @@ defineComponents(IgcSwitchComponent);
 <igc-switch>Label</igc-switch>
 ```
 
-スイッチの [`label-position`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#label-position) 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
+スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
@@ -80,7 +80,7 @@ defineComponents(IgcSwitchComponent);
 
 ### チェック済み
 
-スイッチをオンに切り替えるには、[`checked`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#checked) 属性を使用します。
+スイッチをオンに切り替えるには、`checked` 属性を使用します。
 
 ```html
 <igc-switch checked></igc-switch>
@@ -94,7 +94,7 @@ defineComponents(IgcSwitchComponent);
 
 ### 必須
 
-[`required`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#required) 属性を使用して、スイッチを必須としてマークします。
+`required` 属性を使用して、スイッチを必須としてマークします。
 
 ```html
 <igc-switch required></igc-switch>
@@ -102,7 +102,7 @@ defineComponents(IgcSwitchComponent);
 
 ### 無効
 
-[`invalid`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#invalid) 属性を使用して、スイッチを無効としてマークします。
+`invalid` 属性を使用して、スイッチを無効としてマークします。
 
 ```html
 <igc-switch invalid></igc-switch>
@@ -110,7 +110,7 @@ defineComponents(IgcSwitchComponent);
 
 ### オフ
 
-スイッチをオフにするには、[`disabled`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#disabled) 属性を使用します。
+スイッチをオフにするには、`disabled` 属性を使用します。
 
 ```html
 <igc-switch disabled></igc-switch>
@@ -124,7 +124,7 @@ defineComponents(IgcSwitchComponent);
 
 ### フォーム
 
-`<igc-form>` でスイッチを使用する場合は、[`name`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#name) と [`value`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html#value) の属性を使用します。
+`Form` でスイッチを使用する場合は、`name` と `value` の属性を使用します。
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
@@ -149,7 +149,7 @@ igc-switch::part(thumb) {
 
 ## API リファレンス
 
-* [IgcSwitchComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html)
+* `Switch`
 
 ## その他のリソース
 

@@ -82,6 +82,8 @@ function transformCodeRefs(options: any) {
         let memberName = node.value;
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
+        let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
+        let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
         let createLink: boolean = <boolean><any>apiDocRoot;
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
@@ -173,22 +175,46 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             //console.log("couldn't find name");
             //console.log(options);
+
+            // console.log("getApiLink not resolved " + memberName);
+            // if (filePath.indexOf("calendar.md")) {
+            // }
+
             return;
         }
 
         if (createLink) {
+            let link: any = null;
+            // console.log("getApiLink memberName " + memberName);
             if (isTypeName) {
-                let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
-                }
+                link = getApiLink(apiDocRoot, apiTypeName!, null, options);
+
+
+                // if (link) {
+                //     parent.children.splice(index, 1, link);
+                //     return;
+                // }
             } else {
-                let link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
+                link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
+                // console.log("getApiLink other " + link.url);
+            }
+
+            // overriding api root for components specified in docsConfig.json
+            for (const component of apiDocOverrideComponents) {
+                var name = (options.platformPascalPrefix + component).toLowerCase();
+                //var name = component.toLowerCase();
+                var urls = link.url.toLowerCase();
+                if (urls.indexOf(name) >= 0) {
+                    // console.log("getApiLink replace " + name + " " + urls);
+                    // link.url = urls.replace(apiDocRoot, apiDocOverrideRoot);
+                    link.url = urls.replace("\/api\/docs\/", "\/docs\/");
                 }
+            }
+
+            //console.log("getApiLink " + link.url);
+            if (link) {
+                parent.children.splice(index, 1, link);
+                return;
             }
 
         }
@@ -870,6 +896,7 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
+        // filePath: string,
         callback: (err: any, results: string | null) => void): void {
 
         // check for strings that should be API links:
@@ -947,7 +974,7 @@ export class MarkdownTransformer {
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
         .use(getFrontMatterTypes, options)
-        .use(transformCodeRefs, options)
+        .use(transformCodeRefs, options) // filePath
         .use(transformDocLinks, options)
         .use(transformDocPlaceholders, options)
         .use(omitPlatformSpecificSections, options)

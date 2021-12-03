@@ -36,7 +36,7 @@ IgbAvatarModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに [`IgcAvatarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html) をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Avatar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
@@ -73,7 +73,7 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-[`initials`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#initials) 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
+`initials` 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
 
 
 ```html
@@ -92,7 +92,7 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-[`src`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#src) 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`initials` 値は無視され、子要素は描画されません。
+`src` 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`initials` 値は無視され、子要素は描画されません。
 
 ```html
 <igc-avatar
@@ -111,9 +111,9 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-アバターは、`circle`、`circle`、`square`の 3 つの形状をサポートしています。アバターの形状は、[`shape`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#shape) 属性を介して変更できます。
+アバターは、`circle`、`circle`、`square`の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
-形状とは別に、[`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html#size) 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
+形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
 ## 例
 
@@ -168,7 +168,7 @@ igc-avatar::part(base) {
 
 ## API リファレンス
 
-* [IgcAvatarComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html)
+* `Avatar`
 
 
 ## その他のリソース

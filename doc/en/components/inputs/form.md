@@ -4,9 +4,10 @@ _description: Infragistics' $Platform$ form is a component used to collect user 
 _keywords: $Platform$ form, $ProductName$, Infragistics
 mentionedTypes: ['Form']
 ---
+
 # $Platform$ Form Overview
 
-The [`Form Component`]({environment:wcApiUrl}/classes/IgcFormComponent.html) collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+The `Form` collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
 ## $Platform$ Form Example
 
@@ -19,7 +20,21 @@ The following example represents a form that has some inputs, buttons and a chec
            github-src="inputs/form/overview">
 </code-view>
 
-## Dependencies
+## Usage
+
+<!-- Blazor -->
+
+To get started with the `Form` component, you first need to register the `IgbFormModule`.
+
+```razor
+IgbFormModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 In order to use the Form component, the web components package must be installed.
 
@@ -27,21 +42,16 @@ In order to use the Form component, the web components package must be installed
 npm install {PackageWebComponents}
 </pre>
 
-## Usage
+<!-- end: WebComponents -->
 
 Once the Form component is imported, you can add it on the page and add your content.
 
-```html
-<igc-form>
-  <div>Subscribe</div>
-  <igc-input required name="name" type="text" label="Your Name"></igc-input>
-  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
-  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
-  <br />
-  <igc-button type="reset">Reset</igc-button>
-  <igc-button type="submit">Submit</igc-button>
-</igc-form>
-```
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
+           alt="$Platform$ Form Example"
+           github-src="inputs/form/overview">
+</code-view>
 
 ```ts
 import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
@@ -50,18 +60,12 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 ```
 
 Form data is collected for the following components:
-- [`igc-checkbox`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
-- [`igc-input`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-- [`igc-radio`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-- [`igc-switch`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
-- checkbox
-- input
-- radio
-- select
-- switch
-- textarea
+- `Checkbox`
+- `Input`
+- `Radio`
+- `Switch`
 
-When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the [`novalidate`]({environment:wcApiUrl}/classes/IgcFormComponent.html#novalidate) attribute to the `<igc-form>` element:
+When a form control is invalid, the form will not be submitted and an error message will be shown. If you want to specify that the form elements should not be validated when the form is submitted you can add the `novalidate` attribute to the `Form` element:
 
 
 ```html
@@ -76,7 +80,7 @@ The Form component raises the following events:
 - igcSubmit - Raised when the form is submitted
 - igcReset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the [`igcSubmit`] event:
+Here is an example showing how to add an event listener for the `Submit`] event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -91,22 +95,22 @@ The Form component exposes the following methods:
 
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
-|[`submit`]({environment:wcApiUrl}/classes/IgcFormComponent.html#submit)|Submits the form data.|
-|[`reset`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reset)|Resets the form data.|
-|[`getFormData`]({environment:wcApiUrl}/classes/IgcFormComponent.html#getFormData)|Collects the form data and returns a single FormData object.|
-|[`reportValidity`]({environment:wcApiUrl}/classes/IgcFormComponent.html#reportValidity)|Returns whether the element's child controls satisfy their validation constraints.|
+|`submit`|Submits the form data.|
+|`reset`|Resets the form data.|
+|`getFormData`|Collects the form data and returns a single FormData object.|
+|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
 
 ## API References
 
 For more detailed information regarding the form's API, refer to the following links:
-* [`IgcFormComponent API`]({environment:wcApiUrl}/classes/IgcFormComponent.html)
+* `Form`
 
 Additional components and/or directives that were used:
-- [`IgcButtonComponent API`]({environment:wcApiUrl}/classes/IgcButtonComponent.html)
-- [`IgcCheckboxComponent API`]({environment:wcApiUrl}/classes/IgcCheckboxComponent.html)
-* [`IgcInputComponent API`]({environment:wcApiUrl}/classes/IgcInputComponent.html)
-* [`IgcRadioComponent API`]({environment:wcApiUrl}/classes/IgcRadioComponent.html)
-* [`IgcSwitchComponent API`]({environment:wcApiUrl}/classes/IgcSwitchComponent.html)
+- `Button`
+- `Checkbox`]
+* `Input`
+* `Radio`
+* `Switch`
 
 <div class="divider"></div>
 ## Additional Resources

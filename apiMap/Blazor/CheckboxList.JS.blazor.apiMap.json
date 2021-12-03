@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"CheckboxList","names":[{"platform":"Blazor","fileName":"CheckboxList.cs","mappedName":"IgbCheckboxList"}],
+  { "originalName":"CheckboxList",
+    "names":[{"platform":"Blazor","fileName":"CheckboxList.cs","mappedName":"IgbCheckboxList"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbGridSelectedKeysCollection","mappedName":"Keys"}],"originalName":"Keys"},
     { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"PrimaryKey"}],"originalName":"PrimaryKey"},
@@ -8,7 +9,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedMemberPath"}],"originalName":"SelectedMemberPath"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FilterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
     { "names":[{"platform":"Blazor","mappedType":"InputGroupDisplayType","mappedName":"SearchInputType"}],"originalName":"SearchInputType"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"RowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"RowHeight"}],"originalName":"RowHeight"},
     { "names":[{"platform":"Blazor","mappedType":"CheckboxListIndexType","mappedName":"IndexType"}],"originalName":"IndexType"},
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
@@ -30,10 +31,12 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveKeyValue"}],"originalName":"RemoveKeyValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsNothingSelected"}],"originalName":"IsNothingSelected"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsEverythingSelected"}],"originalName":"IsEverythingSelected"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
-  { "originalName":"CheckedChangedEventArgs","names":[{"platform":"Blazor","fileName":"CheckedChangedEventArgs.cs","mappedName":"IgbCheckedChangedEventArgs"}],
+  { "originalName":"CheckedChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"CheckedChangedEventArgs.cs","mappedName":"IgbCheckedChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"Index"}],"originalName":"Index"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
-  { "originalName":"SelectAllCheckboxChangedEventArgs","names":[{"platform":"Blazor","fileName":"SelectAllCheckboxChangedEventArgs.cs","mappedName":"IgbSelectAllCheckboxChangedEventArgs"}],
+  { "originalName":"SelectAllCheckboxChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SelectAllCheckboxChangedEventArgs.cs","mappedName":"IgbSelectAllCheckboxChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

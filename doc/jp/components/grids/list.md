@@ -1,10 +1,17 @@
+---
+title: $Platform$ List Component | Infragistics
+_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
+_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+mentionedTypes: ['List']
+---
+
 # $Platform$ List (リスト) の概要
 
 List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。List コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
 
 ## $Platform$ List の例
 
-次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。[`IgcList`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListComponent.html) コンポーネントは、[`IgcAvatar`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html) と [`IgcButton`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html) を使用して、ユーザー エクスペリエンスを向上させ、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
+次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。`List` コンポーネントは、`Avatar` と `Button` を使用して、ユーザー エクスペリエンスを向上させ、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -36,7 +43,7 @@ List Web コンポーネントの使用を開始するには、最初に次の�
 npm install igniteui-webcomponents
 ```
 
-次の手順は、typescript ファイル内の項目とともに `IgcListComponent` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
+次の手順は、typescript ファイル内の項目とともに `List` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
 
 ```typescript
 // index.ts
@@ -133,7 +140,7 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-スロットの `title` と `subtitle` の両方が、[`list item`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListItemComponent.html) にデフォルトの外観を与えます。
+スロットの `title` と `subtitle` の両方が、`ListItem` にデフォルトの外観を与えます。
 
 結果は次のようになります:
 
@@ -146,7 +153,7 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 
 ### アバターおよびボタンの追加
 
-他のコンポーネントのいくつかを [IgcList](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListComponent.html) コンポーネントと組み合わせて使用して、エクスペリエンスを充実させ、いくつかの機能を追加することができます。名前や電話番号の値の左に画像のアバターを表示できます。さらに、右側にいくつかのボタンを追加して、ユーザーが連絡先にテキスト メッセージを送信したり電話をかけたりできるようにすることができるので、連絡先リスト コンポーネントを更新して、アバターとボタンを表示します。リスト項目のスロットのいくつかを使用することでそれを行うことができます。
+他のコンポーネントのいくつかを `List` コンポーネントと組み合わせて使用して、エクスペリエンスを充実させ、いくつかの機能を追加することができます。名前や電話番号の値の左に画像のアバターを表示できます。さらに、右側にいくつかのボタンを追加して、ユーザーが連絡先にテキスト メッセージを送信したり電話をかけたりできるようにすることができるので、連絡先リスト コンポーネントを更新して、アバターとボタンを表示します。リスト項目のスロットのいくつかを使用することでそれを行うことができます。
 
 ```html
     <igc-list>
@@ -228,7 +235,7 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 
 `end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。igc-buttons を使用します。
 
-また、ユーザーがその [`size`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListComponent.html#size) プロパティを使用してリストのサイズを選択できるようにします。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストの size プロパティを変更します。
+また、ユーザーがその `size` プロパティを使用してリストのサイズを選択できるようにします。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストの size プロパティを変更します。
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
@@ -329,16 +336,16 @@ igc-list-item::part(end) {
 
 この記事では、List Web コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、アバターやボタンなどの追加の Ignite UI Web Components を使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 
-* [IgcListComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListComponent.html)
-* [IgcListHeaderComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListHeaderComponent.html)
-* [IgcListItemComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcListItemComponent.html)
+* `List`
+* `ListHeader`
+* `ListItem`
 
 使用したその他の Web Components:
 
-* [IgcAvatarComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcAvatarComponent.html)
-* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
-* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html)
-* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
+* `Avatar`
+* `Button`
+* `RadioGroup`
+* `Radio`
 
 ## その他のリソース
 

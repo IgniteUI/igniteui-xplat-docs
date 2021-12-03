@@ -1,11 +1,12 @@
 {"types":[
-  { "originalName":"FinancialChart","names":[{"platform":"Blazor","fileName":"FinancialChart.cs","mappedName":"IgbFinancialChart"}],
+  { "originalName":"FinancialChart",
+    "names":[{"platform":"Blazor","fileName":"FinancialChart.cs","mappedName":"IgbFinancialChart"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeftMargin"}],"originalName":"LeftMargin"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsHorizontalZoomEnabled"}],"originalName":"IsHorizontalZoomEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ToolbarHeight"}],"originalName":"ToolbarHeight"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"YAxisIsLogarithmic"}],"originalName":"YAxisIsLogarithmic"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"YAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"YAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisInterval"}],"originalName":"YAxisInterval"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMinimumValue"}],"originalName":"YAxisMinimumValue"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMaximumValue"}],"originalName":"YAxisMaximumValue"},
@@ -35,12 +36,12 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OverlayMultiplier"}],"originalName":"OverlayMultiplier"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"IndicatorThickness"}],"originalName":"IndicatorThickness"},
     { "names":[{"platform":"Blazor","mappedType":"IgbIndicatorDisplayTypeCollection","mappedName":"IndicatorDisplayTypes"}],"originalName":"IndicatorDisplayTypes"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"IndicatorPeriod"}],"originalName":"IndicatorPeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IndicatorPeriod"}],"originalName":"IndicatorPeriod"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"IndicatorMultiplier"}],"originalName":"IndicatorMultiplier"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"IndicatorSmoothingPeriod"}],"originalName":"IndicatorSmoothingPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"IndicatorShortPeriod"}],"originalName":"IndicatorShortPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"IndicatorLongPeriod"}],"originalName":"IndicatorLongPeriod"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"IndicatorSignalPeriod"}],"originalName":"IndicatorSignalPeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IndicatorSmoothingPeriod"}],"originalName":"IndicatorSmoothingPeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IndicatorShortPeriod"}],"originalName":"IndicatorShortPeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IndicatorLongPeriod"}],"originalName":"IndicatorLongPeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"IndicatorSignalPeriod"}],"originalName":"IndicatorSignalPeriod"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFinancialChartRangeSelectorOptionCollection","mappedName":"RangeSelectorOptions"}],"originalName":"RangeSelectorOptions"},
     { "names":[{"platform":"Blazor","mappedType":"String[]","mappedName":"CustomIndicatorNames"}],"originalName":"CustomIndicatorNames"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsVerticalZoomEnabled"}],"originalName":"IsVerticalZoomEnabled"},
@@ -56,7 +57,8 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"FinancialChartCustomIndicatorArgs","names":[{"platform":"Blazor","fileName":"FinancialChartCustomIndicatorArgs.cs","mappedName":"IgbFinancialChartCustomIndicatorArgs"}],
+  { "originalName":"FinancialChartCustomIndicatorArgs",
+    "names":[{"platform":"Blazor","fileName":"FinancialChartCustomIndicatorArgs.cs","mappedName":"IgbFinancialChartCustomIndicatorArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"Index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"}]}

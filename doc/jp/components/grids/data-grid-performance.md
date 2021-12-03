@@ -28,7 +28,8 @@ $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ 
 ### その他のリソース
 
 <!-- Angular, React, WebComponents -->
-- [仮想データのバインディング](data-grid-remote-data.md)
+<!-- TODO fix build flagging list items -->
+<!-- - [仮想データのバインディング](data-grid-remote-data.md) -->
 <!-- end: Angular, React, WebComponents -->
 - [列タイプ ](data-grid-column-types.md)
 - [行のグループ化](data-grid-row-grouping.md)

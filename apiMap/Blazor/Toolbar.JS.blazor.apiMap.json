@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"DataGridToolbar","names":[{"platform":"Blazor","fileName":"DataGridToolbar.cs","mappedName":"IgbDataGridToolbar"}],
+  { "originalName":"DataGridToolbar",
+    "names":[{"platform":"Blazor","fileName":"DataGridToolbar.cs","mappedName":"IgbDataGridToolbar"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbDataGrid","mappedName":"TargetGrid"}],"originalName":"TargetGrid"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ToolbarTitle"}],"originalName":"ToolbarTitle"},

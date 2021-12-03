@@ -13,13 +13,13 @@ Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーション�
 
 ## 使用方法
 
-[`IgcNavDrawerComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawercomponent.html) の使用を開始するには、最初に次のコマンドを実行して $ProductName$ をインストールする必要があります:
+`NavDrawer` の使用を開始するには、最初に次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageComponents}
 ```
 
-次に、`IgcNavDrawerComponent` と [`IgcNavDrawerHeaderItemComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawerheaderitemcomponent.html) および[`IgcNavDrawerItemComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdraweritemcomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+次に、`NavDrawer` と `NavDrawerHeaderItem` および `NavDrawerItem` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -60,9 +60,9 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
-ドロワーには任意のコンテンツを提供できますが、[`igc-nav-drawer-item`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdraweritemcomponent.html) が定義済みのスタイル設定を項目に適用します。
+ドロワーには任意のコンテンツを提供できますが、`NavDrawerItem` が定義済みのスタイル設定を項目に適用します。
 
-コンポーネントを少し強化するために、[`IgcNavbarComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavbarcomponent.html) と組み合わせて使用できます。このようにして、より完成された外観を実現し、ドロワーの方法を使用できます。次の例でこれを見てみましょう:
+コンポーネントを少し強化するために、`Navbar` と組み合わせて使用できます。このようにして、より完成された外観を実現し、ドロワーの方法を使用できます。次の例でこれを見てみましょう:
 
 ```html
     <igc-navbar>
@@ -89,7 +89,7 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
     </div>
 ```
 
-また、すべての [`position`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawercomponent.html#position) の値を表示するためにいくつかのラジオ ボタンを追加しましょう。このように、1 つが選択されるたびに、ドロワーの位置を変更します。
+また、すべての `position` の値を表示するためにいくつかのラジオ ボタンを追加しましょう。このように、1 つが選択されるたびに、ドロワーの位置を変更します。
 
 ```ts
 // ...
@@ -220,16 +220,16 @@ igc-nav-drawer-header-item {
 
 ## API リファレンス
 
-* [IgcNavDrawerComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawercomponent.html)
-* [IgcNavDrawerItemComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdraweritemcomponent.html)
-* [IgcNavDrawerHeaderItemComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcnavdrawerheaderitemcomponent.html)
+* `NavDrawer`
+* `NavDrawerItem`
+* `NavDrawerHeaderItem`
 
 使用したその他の Web Components:
 
-* [IgcIconComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igciconcomponent.html)
-* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcbuttoncomponent.html)
-* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiocomponent.html)
-* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcradiogroupcomponent.html)
+* `Icon`
+* `Button`
+* `Radio`
+* `RadioGroup`
 
 ## その他のリソース
 

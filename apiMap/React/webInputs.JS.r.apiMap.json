@@ -1,283 +1,205 @@
-{"extraFiles": ["igr-avatar-module.ts", "igr-badge-module.ts", "igr-button-base-module.ts", "igr-button-module.ts", "igr-icon-module.ts", "igr-radio-group-module.ts", "igr-radio-module.ts", "igr-card-module.ts", "igr-checkbox-base-module.ts", "igr-checkbox-module.ts", "igr-input-module.ts", "igr-list-header-module.ts", "igr-list-item-module.ts", "igr-list-module.ts", "igr-navbar-module.ts", "igr-ripple-module.ts", "igr-switch-module.ts", "igr-form-module.ts", "igr-icon-button-module.ts", "igr-nav-drawer-header-item-module.ts", "igr-nav-drawer-item-module.ts", "igr-nav-drawer-module.ts", "igr-card-actions-module.ts", "igr-card-content-module.ts", "igr-card-header-module.ts", "igr-card-media-module.ts"], "types": [{"originalName": "CardActions", 
-  "names": [
-    {"platform": "React", "fileName": "igr-card-actions.ts", "mappedName": "IgrCardActions"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardContent", 
-  "names": [
-    {"platform": "React", "fileName": "igr-card-content.ts", "mappedName": "IgrCardContent"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardHeader", 
-  "names": [
-    {"platform": "React", "fileName": "igr-card-header.ts", "mappedName": "IgrCardHeader"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CardMedia", 
-  "names": [
-    {"platform": "React", "fileName": "igr-card-media.ts", "mappedName": "IgrCardMedia"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "SizableComponentSize", "isEnum": true, 
-  "names": [
-    {"platform": "React", "fileName": "SizableComponentSize.ts", "mappedName": "SizableComponentSize"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "Large"}], "originalName": "Large"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "Small"}], "originalName": "Small"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "Medium"}], "originalName": "Medium"}, 
-    {"names": [{"platform": "React", "mappedType": "void", "mappedName": "init"}], "originalName": ".ctor"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "FocusOptions", 
-  "names": [
-    {"platform": "React", "fileName": "igr-focus-options.ts", "mappedName": "IgrFocusOptions"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "preventScroll"}], "originalName": "PreventScroll"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "Card", 
-  "names": [
-    {"platform": "React", "fileName": "igr-card.ts", "mappedName": "IgrCard"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Checkbox", 
-  "names": [
-    {"platform": "React", "fileName": "igr-checkbox.ts", "mappedName": "IgrCheckbox"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "indeterminate"}], "originalName": "Indeterminate"}
-  ], 
-  "originalBaseTypeName": "CheckboxBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "CheckboxBase", 
-  "names": [
-    {"platform": "React", "fileName": "igr-checkbox-base.ts", "mappedName": "IgrCheckboxBase"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
-    {"names": [{"platform": "React", "mappedType": "CheckboxBaseLabelPosition", "mappedName": "labelPosition"}], "originalName": "LabelPosition"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "ariaLabelledby"}], "originalName": "AriaLabelledby"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "click"}], "originalName": "Click"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ComponentBoolValueChangedEventArgs", 
-  "names": [
-    {"platform": "React", "fileName": "igr-component-bool-value-changed-event-args.ts", "mappedName": "IgrComponentBoolValueChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "Form", 
-  "names": [
-    {"platform": "React", "fileName": "igr-form.ts", "mappedName": "IgrForm"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "novalidate"}], "originalName": "Novalidate"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "performSubmit"}], "originalName": "PerformSubmit"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "performReset"}], "originalName": "PerformReset"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "getFormData"}], "originalName": "GetFormData"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "FormData", 
-  "names": [
-    {"platform": "React", "fileName": "igr-form-data.ts", "mappedName": "IgrFormData"}
-  ], 
-  "members": [], "originalNamespace": "Infragistics.Controls"}, {"originalName": "FormDataEventArgs", 
-  "names": [
-    {"platform": "React", "fileName": "igr-form-data-event-args.ts", "mappedName": "IgrFormDataEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "IgrFormData", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "IconButton", 
-  "names": [
-    {"platform": "React", "fileName": "igr-icon-button.ts", "mappedName": "IgrIconButton"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "collection"}], "originalName": "Collection"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "mirrored"}], "originalName": "Mirrored"}, 
-    {"names": [{"platform": "React", "mappedType": "IconButtonVariant", "mappedName": "variant"}], "originalName": "Variant"}
-  ], 
-  "originalBaseTypeName": "ButtonBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Input", 
-  "names": [
-    {"platform": "React", "fileName": "igr-input.ts", "mappedName": "IgrInput"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "InputDir", "mappedName": "dir"}], "originalName": "Dir"}, 
-    {"names": [{"platform": "React", "mappedType": "InputType", "mappedName": "displayType"}], "originalName": "DisplayType"}, 
-    {"names": [{"platform": "React", "mappedType": "InputInputmode", "mappedName": "inputmode"}], "originalName": "Inputmode"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "pattern"}], "originalName": "Pattern"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "label"}], "originalName": "Label"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "placeholder"}], "originalName": "Placeholder"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "required"}], "originalName": "Required"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "readonly"}], "originalName": "Readonly"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "minlength"}], "originalName": "Minlength"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "maxlength"}], "originalName": "Maxlength"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "min"}], "originalName": "Min"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "max"}], "originalName": "Max"}, 
-    {"names": [{"platform": "React", "mappedType": "number", "mappedName": "step"}], "originalName": "Step"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "autofocus"}], "originalName": "Autofocus"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "autocomplete"}], "originalName": "Autocomplete"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "select"}], "originalName": "Select"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setSelectionRange"}], "originalName": "SetSelectionRange"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setRangeText"}], "originalName": "SetRangeText"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "stepUp"}], "originalName": "StepUp"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "stepDown"}], "originalName": "StepDown"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "List", 
-  "names": [
-    {"platform": "React", "fileName": "igr-list.ts", "mappedName": "IgrList"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ListHeader", 
-  "names": [
-    {"platform": "React", "fileName": "igr-list-header.ts", "mappedName": "IgrListHeader"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ListItem", 
-  "names": [
-    {"platform": "React", "fileName": "igr-list-item.ts", "mappedName": "IgrListItem"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Navbar", 
-  "names": [
-    {"platform": "React", "fileName": "igr-navbar.ts", "mappedName": "IgrNavbar"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawer", 
-  "names": [
-    {"platform": "React", "fileName": "igr-nav-drawer.ts", "mappedName": "IgrNavDrawer"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "NavDrawerPosition", "mappedName": "position"}], "originalName": "Position"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "open"}], "originalName": "Open"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "show"}], "originalName": "Show"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "hide"}], "originalName": "Hide"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "toggle"}], "originalName": "Toggle"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawerHeaderItem", 
-  "names": [
-    {"platform": "React", "fileName": "igr-nav-drawer-header-item.ts", "mappedName": "IgrNavDrawerHeaderItem"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "NavDrawerItem", 
-  "names": [
-    {"platform": "React", "fileName": "igr-nav-drawer-item.ts", "mappedName": "IgrNavDrawerItem"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "active"}], "originalName": "Active"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Ripple", 
-  "names": [
-    {"platform": "React", "fileName": "igr-ripple.ts", "mappedName": "IgrRipple"}
-  ], 
-  "members": [], "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Switch", 
-  "names": [
-    {"platform": "React", "fileName": "igr-switch.ts", "mappedName": "IgrSwitch"}
-  ], 
-  "members": [], "originalBaseTypeName": "CheckboxBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ComponentValueChangedEventArgs", 
-  "names": [
-    {"platform": "React", "fileName": "igr-component-value-changed-event-args.ts", "mappedName": "IgrComponentValueChangedEventArgs"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "detail"}], "originalName": "Detail"}], "originalNamespace": "Infragistics.Controls"}, {"originalName": "VoidEventArgs", 
-  "names": [
-    {"platform": "React", "fileName": "igr-void-event-args.ts", "mappedName": "IgrVoidEventArgs"}
-  ], 
-  "members": [], "originalBaseTypeName": "EventArgs", "originalBaseTypeNamespace": "System", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Avatar", 
-  "names": [
-    {"platform": "React", "fileName": "igr-avatar.ts", "mappedName": "IgrAvatar"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "src"}], "originalName": "Src"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "alt"}], "originalName": "Alt"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "initials"}], "originalName": "Initials"}, 
-    {"names": [{"platform": "React", "mappedType": "AvatarShape", "mappedName": "shape"}], "originalName": "Shape"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Badge", 
-  "names": [
-    {"platform": "React", "fileName": "igr-badge.ts", "mappedName": "IgrBadge"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "BadgeVariant", "mappedName": "variant"}], "originalName": "Variant"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "outlined"}], "originalName": "Outlined"}, 
-    {"names": [{"platform": "React", "mappedType": "BadgeShape", "mappedName": "shape"}], "originalName": "Shape"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Button", 
-  "names": [
-    {"platform": "React", "fileName": "igr-button.ts", "mappedName": "IgrButton"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "ButtonVariant", "mappedName": "variant"}], "originalName": "Variant"}
-  ], 
-  "originalBaseTypeName": "ButtonBase", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "ButtonBase", 
-  "names": [
-    {"platform": "React", "fileName": "igr-button-base.ts", "mappedName": "IgrButtonBase"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "ButtonBaseType", "mappedName": "displayType"}], "originalName": "DisplayType"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "href"}], "originalName": "Href"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "download"}], "originalName": "Download"}, 
-    {"names": [{"platform": "React", "mappedType": "ButtonBaseTarget", "mappedName": "target"}], "originalName": "Target"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "rel"}], "originalName": "Rel"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Icon", 
-  "names": [
-    {"platform": "React", "fileName": "igr-icon.ts", "mappedName": "IgrIcon"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "iconName"}], "originalName": "IconName"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "collection"}], "originalName": "Collection"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "mirrored"}], "originalName": "Mirrored"}, 
-    {"names": [{"platform": "React", "mappedType": "SizableComponentSize", "mappedName": "size"}], "originalName": "Size"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "connectedCallback"}], "originalName": "ConnectedCallback"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "disconnectedCallback"}], "originalName": "DisconnectedCallback"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "registerIcon"}], "originalName": "RegisterIcon"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "registerIconFromText"}], "originalName": "RegisterIconFromText"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "Radio", 
-  "names": [
-    {"platform": "React", "fileName": "igr-radio.ts", "mappedName": "IgrRadio"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "name"}], "originalName": "Name"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "value"}], "originalName": "Value"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "checked"}], "originalName": "Checked"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "disabled"}], "originalName": "Disabled"}, 
-    {"names": [{"platform": "React", "mappedType": "boolean", "mappedName": "invalid"}], "originalName": "Invalid"}, 
-    {"names": [{"platform": "React", "mappedType": "RadioLabelPosition", "mappedName": "labelPosition"}], "originalName": "LabelPosition"}, 
-    {"names": [{"platform": "React", "mappedType": "string", "mappedName": "ariaLabelledby"}], "originalName": "AriaLabelledby"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "click"}], "originalName": "Click"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "focusComponent"}], "originalName": "FocusComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "blurComponent"}], "originalName": "BlurComponent"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "reportValidity"}], "originalName": "ReportValidity"}, 
-    {"names": [{"platform": "React", "mappedType": "method", "mappedName": "setCustomValidity"}], "originalName": "SetCustomValidity"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}, {"originalName": "RadioGroup", 
-  "names": [
-    {"platform": "React", "fileName": "igr-radio-group.ts", "mappedName": "IgrRadioGroup"}
-  ], 
-  "members": [
-    {"names": [{"platform": "React", "mappedType": "RadioGroupAlignment", "mappedName": "alignment"}], "originalName": "Alignment"}
-  ], 
-  "originalBaseTypeName": "BaseElement", "originalBaseTypeNamespace": "Infragistics.Controls", "originalNamespace": "Infragistics.Controls"}]}
+{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts"],
+  "types":[
+  { "originalName":"CardActions",
+    "names":[{"platform":"React","fileName":"igr-card-actions.ts","mappedName":"IgrCardActions"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"CardContent",
+    "names":[{"platform":"React","fileName":"igr-card-content.ts","mappedName":"IgrCardContent"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"CardHeader",
+    "names":[{"platform":"React","fileName":"igr-card-header.ts","mappedName":"IgrCardHeader"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"CardMedia",
+    "names":[{"platform":"React","fileName":"igr-card-media.ts","mappedName":"IgrCardMedia"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"SizableComponentSize","isEnum":true,
+    "names":[{"platform":"React","fileName":"SizableComponentSize.ts","mappedName":"SizableComponentSize"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"Large"}],"originalName":"Large"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"Small"}],"originalName":"Small"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"Medium"}],"originalName":"Medium"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"FocusOptions",
+    "names":[{"platform":"React","fileName":"igr-focus-options.ts","mappedName":"IgrFocusOptions"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"preventScroll"}],"originalName":"PreventScroll"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Card",
+    "names":[{"platform":"React","fileName":"igr-card.ts","mappedName":"IgrCard"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"outlined"}],"originalName":"Outlined"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Checkbox",
+    "names":[{"platform":"React","fileName":"igr-checkbox.ts","mappedName":"IgrCheckbox"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"indeterminate"}],"originalName":"Indeterminate"}],"originalBaseTypeName":"CheckboxBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"CheckboxBase",
+    "names":[{"platform":"React","fileName":"igr-checkbox-base.ts","mappedName":"IgrCheckboxBase"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"checked"}],"originalName":"Checked"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"required"}],"originalName":"Required"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},
+    { "names":[{"platform":"React","mappedType":"CheckboxBaseLabelPosition","mappedName":"labelPosition"}],"originalName":"LabelPosition"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"ariaLabelledby"}],"originalName":"AriaLabelledby"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"click"}],"originalName":"Click"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"focusComponent"}],"originalName":"FocusComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"blurComponent"}],"originalName":"BlurComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setCustomValidity"}],"originalName":"SetCustomValidity"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ComponentBoolValueChangedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-component-bool-value-changed-event-args.ts","mappedName":"IgrComponentBoolValueChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"detail"}],"originalName":"Detail"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Form",
+    "names":[{"platform":"React","fileName":"igr-form.ts","mappedName":"IgrForm"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"novalidate"}],"originalName":"Novalidate"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"performSubmit"}],"originalName":"PerformSubmit"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"performReset"}],"originalName":"PerformReset"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getFormData"}],"originalName":"GetFormData"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"FormData",
+    "names":[{"platform":"React","fileName":"igr-form-data.ts","mappedName":"IgrFormData"}],"members":[],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"FormDataEventArgs",
+    "names":[{"platform":"React","fileName":"igr-form-data-event-args.ts","mappedName":"IgrFormDataEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrFormData","mappedName":"detail"}],"originalName":"Detail"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"IconButton",
+    "names":[{"platform":"React","fileName":"igr-icon-button.ts","mappedName":"IgrIconButton"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"collection"}],"originalName":"Collection"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"mirrored"}],"originalName":"Mirrored"},
+    { "names":[{"platform":"React","mappedType":"IconButtonVariant","mappedName":"variant"}],"originalName":"Variant"}],"originalBaseTypeName":"ButtonBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Input",
+    "names":[{"platform":"React","fileName":"igr-input.ts","mappedName":"IgrInput"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"InputDir","mappedName":"dir"}],"originalName":"Dir"},
+    { "names":[{"platform":"React","mappedType":"InputType","mappedName":"displayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"React","mappedType":"InputInputmode","mappedName":"inputmode"}],"originalName":"Inputmode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"pattern"}],"originalName":"Pattern"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"placeholder"}],"originalName":"Placeholder"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"outlined"}],"originalName":"Outlined"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"required"}],"originalName":"Required"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"readonly"}],"originalName":"Readonly"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"minlength"}],"originalName":"Minlength"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"maxlength"}],"originalName":"Maxlength"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"min"}],"originalName":"Min"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"max"}],"originalName":"Max"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"step"}],"originalName":"Step"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"autofocus"}],"originalName":"Autofocus"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"autocomplete"}],"originalName":"Autocomplete"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setCustomValidity"}],"originalName":"SetCustomValidity"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setSelectionRange"}],"originalName":"SetSelectionRange"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setRangeText"}],"originalName":"SetRangeText"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"stepUp"}],"originalName":"StepUp"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"stepDown"}],"originalName":"StepDown"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"focusComponent"}],"originalName":"FocusComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"blurComponent"}],"originalName":"BlurComponent"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"List",
+    "names":[{"platform":"React","fileName":"igr-list.ts","mappedName":"IgrList"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ListHeader",
+    "names":[{"platform":"React","fileName":"igr-list-header.ts","mappedName":"IgrListHeader"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ListItem",
+    "names":[{"platform":"React","fileName":"igr-list-item.ts","mappedName":"IgrListItem"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Navbar",
+    "names":[{"platform":"React","fileName":"igr-navbar.ts","mappedName":"IgrNavbar"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NavDrawer",
+    "names":[{"platform":"React","fileName":"igr-nav-drawer.ts","mappedName":"IgrNavDrawer"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"NavDrawerPosition","mappedName":"position"}],"originalName":"Position"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"open"}],"originalName":"Open"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"show"}],"originalName":"Show"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"toggle"}],"originalName":"Toggle"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NavDrawerHeaderItem",
+    "names":[{"platform":"React","fileName":"igr-nav-drawer-header-item.ts","mappedName":"IgrNavDrawerHeaderItem"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NavDrawerItem",
+    "names":[{"platform":"React","fileName":"igr-nav-drawer-item.ts","mappedName":"IgrNavDrawerItem"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"active"}],"originalName":"Active"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Ripple",
+    "names":[{"platform":"React","fileName":"igr-ripple.ts","mappedName":"IgrRipple"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Switch",
+    "names":[{"platform":"React","fileName":"igr-switch.ts","mappedName":"IgrSwitch"}],"members":[],"originalBaseTypeName":"CheckboxBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ComponentValueChangedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-component-value-changed-event-args.ts","mappedName":"IgrComponentValueChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"detail"}],"originalName":"Detail"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"VoidEventArgs",
+    "names":[{"platform":"React","fileName":"igr-void-event-args.ts","mappedName":"IgrVoidEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Avatar",
+    "names":[{"platform":"React","fileName":"igr-avatar.ts","mappedName":"IgrAvatar"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"src"}],"originalName":"Src"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"alt"}],"originalName":"Alt"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"initials"}],"originalName":"Initials"},
+    { "names":[{"platform":"React","mappedType":"AvatarShape","mappedName":"shape"}],"originalName":"Shape"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Badge",
+    "names":[{"platform":"React","fileName":"igr-badge.ts","mappedName":"IgrBadge"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"BadgeVariant","mappedName":"variant"}],"originalName":"Variant"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"outlined"}],"originalName":"Outlined"},
+    { "names":[{"platform":"React","mappedType":"BadgeShape","mappedName":"shape"}],"originalName":"Shape"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Button",
+    "names":[{"platform":"React","fileName":"igr-button.ts","mappedName":"IgrButton"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"ButtonVariant","mappedName":"variant"}],"originalName":"Variant"}],"originalBaseTypeName":"ButtonBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ButtonBase",
+    "names":[{"platform":"React","fileName":"igr-button-base.ts","mappedName":"IgrButtonBase"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"ButtonBaseType","mappedName":"displayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"href"}],"originalName":"Href"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"download"}],"originalName":"Download"},
+    { "names":[{"platform":"React","mappedType":"ButtonBaseTarget","mappedName":"target"}],"originalName":"Target"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"rel"}],"originalName":"Rel"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"focusComponent"}],"originalName":"FocusComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"blurComponent"}],"originalName":"BlurComponent"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Icon",
+    "names":[{"platform":"React","fileName":"igr-icon.ts","mappedName":"IgrIcon"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"iconName"}],"originalName":"IconName"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"collection"}],"originalName":"Collection"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"mirrored"}],"originalName":"Mirrored"},
+    { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"disconnectedCallback"}],"originalName":"DisconnectedCallback"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"registerIcon"}],"originalName":"RegisterIcon"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"registerIconFromText"}],"originalName":"RegisterIconFromText"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Radio",
+    "names":[{"platform":"React","fileName":"igr-radio.ts","mappedName":"IgrRadio"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"checked"}],"originalName":"Checked"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},
+    { "names":[{"platform":"React","mappedType":"RadioLabelPosition","mappedName":"labelPosition"}],"originalName":"LabelPosition"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"ariaLabelledby"}],"originalName":"AriaLabelledby"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"click"}],"originalName":"Click"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"focusComponent"}],"originalName":"FocusComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"blurComponent"}],"originalName":"BlurComponent"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setCustomValidity"}],"originalName":"SetCustomValidity"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"RadioGroup",
+    "names":[{"platform":"React","fileName":"igr-radio-group.ts","mappedName":"IgrRadioGroup"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"RadioGroupAlignment","mappedName":"alignment"}],"originalName":"Alignment"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"}]}

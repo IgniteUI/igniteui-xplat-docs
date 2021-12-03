@@ -27,7 +27,8 @@ This sample demonstrates this performance by binding thousands of financial reco
 ### Additional Resources
 
 <!-- Angular, React, WebComponents -->
-- [Binding Virtual Data](data-grid-remote-data.md)
+<!-- TODO fix build flagging list items -->
+<!-- - [Binding Virtual Data](data-grid-remote-data.md) -->
 <!-- end: Angular, React, WebComponents -->
 - [Column Types ](data-grid-column-types.md)
 - [Row Grouping](data-grid-row-grouping.md)

@@ -2,6 +2,7 @@
 title: $Platform$ Badge | インフラジスティックス
 _description: インフラジスティックスの $Platform$ Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
 _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, $Platform$ バッジ コンポーネント, インフラジスティックス
+mentionedTypes: ['Badge']
 _language: ja
 ---
 
@@ -42,7 +43,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcBadgeComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html) を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Badge` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -62,7 +63,7 @@ defineComponents(IgcBadgeComponent);
 <IgbBadge />
 ```
 
-バッジの周囲に微妙な境界線を表示するには、バッジの [`outlined`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#outlined) 属性を設定します。
+バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定します。
 
 ```html
 <igc-badge outlined></igc-badge>
@@ -76,7 +77,7 @@ defineComponents(IgcBadgeComponent);
 
 ### バリアント
 
-$ProductName$ バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを [`variant`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#variant) 属性に割り当てることにより、バリアントを変更できます。
+$ProductName$ バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -95,7 +96,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 
 ### 形状
 
-バッジ コンポーネントは、`rounded` (default) 形状と `square` をサポートします。これらの値は、[`shape`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html#shape) 属性に割り当てることができます。
+バッジ コンポーネントは、`rounded` (default) 形状と `square` をサポートします。これらの値は、`shape` 属性に割り当てることができます。
 
 ```html
 <igc-badge shape="square"></igc-badge>
@@ -126,7 +127,7 @@ igc-badge::part(base) {
 
 ## API リファレンス
 
-* [IgcBadgeComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcBadgeComponent.html)
+* `Badge`
 
 ## その他のリソース
 

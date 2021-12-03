@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"ColumnGrouping","names":[{"platform":"Blazor","fileName":"ColumnGrouping.cs","mappedName":"IgbColumnGrouping"}],
+  { "originalName":"ColumnGrouping",
+    "names":[{"platform":"Blazor","fileName":"ColumnGrouping.cs","mappedName":"IgbColumnGrouping"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbDataGrid","mappedName":"TargetGrid"}],"originalName":"TargetGrid"},
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},

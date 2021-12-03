@@ -27,7 +27,7 @@ $ProductName$ Radio Button コンポーネントを使用すると、ユーザ�
 npm install igniteui-webcomponents
 ```
 
-次の手順は、[IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html) と [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+次の手順は、`Radio` と `RadioGroup` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -47,7 +47,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
 > [!WARNING]
-> ラジオ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `<igc-form>` を使用してください。
+> ラジオ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 ## 例
 
@@ -137,7 +137,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### グループの配置
 
-ラジオ グループを使用すると、[`alignment`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html#alignment) 属性を使用して、含まれているラジオ ボタンの配置方向を簡単に変更できます。許可される値は、`vertical` (デフォルト) と `horizontal` です。
+ラジオ グループを使用すると、`alignment` 属性を使用して、含まれているラジオ ボタンの配置方向を簡単に変更できます。許可される値は、`vertical` (デフォルト) と `horizontal` です。
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -157,7 +157,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### フォーム
 
-`<igc-form>` で無線を使用する場合は、`name` 属性と `value` 属性を使用してください。
+`Form` で無線を使用する場合は、`name` 属性と `value` 属性を使用してください。
 
 ```html
 <igc-radio-group>
@@ -199,8 +199,8 @@ igc-radio::part(control checked) {
 
 ## API リファレンス
 
-* [IgcRadioComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
-* [IgcRadioGroupComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioGroupComponent.html)
+* `Radio`
+* `RadioGroup`
 
 ## その他のリソース
 

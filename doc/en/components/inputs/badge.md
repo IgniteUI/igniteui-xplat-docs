@@ -2,6 +2,7 @@
 title: $Platform$ Badge | Infragistics
 _description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+mentionedTypes: ['Badge']
 ---
 
 # $Platform$ Badge
@@ -25,7 +26,7 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 <!-- Blazor -->
 
-To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
+To get started with the `Badge` component, you first need to register its module, like so:
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
@@ -33,15 +34,17 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
-To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
+To get started with the `Badge` web component, first you need to install $ProductName$ by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the [IgcBadgeComponent]({environment:wcApiUrl}/classes/IgcBadgeComponent.html) in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -61,7 +64,7 @@ The simplest way to start using the badge is as follows:
 <IgbBadge />
 ```
 
-To display a subtle border around the badge set the [`outlined`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#outlined) attribute of the badge.
+To display a subtle border around the badge set the `outlined` attribute of the badge.
 
 ```html
 <igc-badge outlined></igc-badge>
@@ -75,7 +78,7 @@ To display a subtle border around the badge set the [`outlined`]({environment:wc
 
 ### Variants
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the [`variant`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#variant) attribute.
+The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -94,7 +97,7 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 
 ### Shape
 
-The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the [`shape`]({environment:wcApiUrl}/classes/IgcBadgeComponent.html#shape) attribute.
+The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
 
 ```html
 <igc-badge shape="square"></igc-badge>
@@ -123,13 +126,17 @@ igc-badge::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
-* [IgcBadgeComponent]({environment:wcApiUrl}/classes/IgcBadgeComponent.html)
+* `Badge`
 
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

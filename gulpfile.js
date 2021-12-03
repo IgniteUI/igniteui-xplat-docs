@@ -97,7 +97,7 @@ function transformFiles() {
       console.log("- " + file.path);
       //var typeName = "CategoryChart";
 
-      transformer.transformContent(typeName, fileContent,
+      transformer.transformContent(typeName, fileContent, // file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
@@ -188,8 +188,14 @@ exports.updateApiBlazor = updateApiBlazor;
 
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
+    // cleanup previous API mapping files
+    // del.sync("apiMap/" + platformName + "/*apiMap.json");
+
     return gulp.src([
-        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json"
+        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
+        // excluding API mapping files for conflicting components with WebInputs
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Inputs*apiMap.json",
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Calendar*apiMap.json"
     ])
     .pipe(es.map(function(file, fileCallback) {
         var jsonContent = file.contents.toString();
@@ -198,12 +204,15 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
+
+        fileContent = fileContent.split('],"types":').join('],\n  "types":');
         fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
         fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
         // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
         // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
         fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
         fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
+        fileContent = fileContent.split(',"names":').join        (',\n    "names":');
         // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
         // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
         // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
@@ -361,7 +370,7 @@ function buildPlatform(cb) {
 
         // uncomment to test faster build
         // sources.push('!doc/**/obsolete/**/*.md');
-        // sources.push('!doc/**/grid/**/*.md');
+        // sources.push('!doc/**/grids/**/*.md');
         // sources.push('!doc/**/charts/**/*.md');
         // sources.push('!doc/**/editors/**/*.md');
         // sources.push('!doc/**/inputs/**/*.md');
@@ -373,6 +382,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
         // sources.push('!doc/**/general*.md');
+        // sources.push('!doc/**/general-changelog-dv.md');
         // sources.push('!doc/**/*map*.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
@@ -383,6 +393,7 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/zoomslider*.md');
         // sources.push('!doc/**/sparkline*.md');
         // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/scheduling/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
         // sources.push('!doc/**/types/**/*.md');

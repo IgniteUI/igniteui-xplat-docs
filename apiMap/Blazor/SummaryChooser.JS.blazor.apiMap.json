@@ -1,5 +1,6 @@
 {"types":[
-  { "originalName":"SummaryChangedEventArgs","names":[{"platform":"Blazor","fileName":"SummaryChangedEventArgs.cs","mappedName":"IgbSummaryChangedEventArgs"}],
+  { "originalName":"SummaryChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SummaryChangedEventArgs.cs","mappedName":"IgbSummaryChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ID"}],"originalName":"ID"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsEnabled"}],"originalName":"IsEnabled"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}

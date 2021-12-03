@@ -21,7 +21,7 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## 使用方法
 
-Ripple Web コンポーネントの使用を開始するには、[`IgcRippleComponent`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/igcripplecomponent.html) を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+Ripple Web コンポーネントの使用を開始するには、`Ripple` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -60,11 +60,11 @@ igc-ripple {
 
 ## API リファレンス
 
-* [IgcRippleComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRippleComponent.html)
+* `Ripple`
 
 使用したその他の WEB コンポーネント:
 
-* [IgcButtonComponent](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
+* `Button`
 
 ## その他のリソース
 

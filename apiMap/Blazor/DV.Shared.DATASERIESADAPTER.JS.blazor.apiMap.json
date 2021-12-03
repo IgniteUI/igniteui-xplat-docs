@@ -1,9 +1,11 @@
 {"types":[
-  { "originalName":"IDataSeriesAdapterRule","names":[{"platform":"Blazor","fileName":"IDataSeriesAdapterRule.cs","mappedName":"IDataSeriesAdapterRule"}],
+  { "originalName":"IDataSeriesAdapterRule",
+    "names":[{"platform":"Blazor","fileName":"IDataSeriesAdapterRule.cs","mappedName":"IDataSeriesAdapterRule"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"evaluate"}],"originalName":"Evaluate"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"priority"}],"originalName":"Priority"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"DataSeriesAdapterRunContext","names":[{"platform":"Blazor","fileName":"DataSeriesAdapterRunContext.cs","mappedName":"DataSeriesAdapterRunContext"}],
+  { "originalName":"DataSeriesAdapterRunContext",
+    "names":[{"platform":"Blazor","fileName":"DataSeriesAdapterRunContext.cs","mappedName":"DataSeriesAdapterRunContext"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbDataSeriesAdapterImplementation","mappedName":"owner"}],"originalName":"Owner"},
     { "names":[{"platform":"Blazor","mappedType":"DataSeriesDataProviderAnalyzer","mappedName":"analyzer"}],"originalName":"Analyzer"},
@@ -39,7 +41,8 @@
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"clearDataSeries"}],"originalName":"ClearDataSeries"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"getDataSeriesCount"}],"originalName":"GetDataSeriesCount"},
     { "names":[{"platform":"Blazor","mappedType":"DataSeries","mappedName":"getDataSeriesAt"}],"originalName":"GetDataSeriesAt"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"DataSeriesDataProviderAnalyzer","names":[{"platform":"Blazor","fileName":"DataSeriesDataProviderAnalyzer.cs","mappedName":"DataSeriesDataProviderAnalyzer"}],
+  { "originalName":"DataSeriesDataProviderAnalyzer",
+    "names":[{"platform":"Blazor","fileName":"DataSeriesDataProviderAnalyzer.cs","mappedName":"DataSeriesDataProviderAnalyzer"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"DataSeriesAdapterRunContext","mappedName":"owner"}],"originalName":"Owner"},
@@ -97,7 +100,8 @@
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"isDateTimePropertyDistinct"}],"originalName":"IsDateTimePropertyDistinct"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"coerceToDouble"}],"originalName":"CoerceToDouble"},
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"isNumericPropertyDistinct"}],"originalName":"IsNumericPropertyDistinct"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"DataSeries","names":[{"platform":"Blazor","fileName":"DataSeries.cs","mappedName":"DataSeries"}],
+  { "originalName":"DataSeries",
+    "names":[{"platform":"Blazor","fileName":"DataSeries.cs","mappedName":"DataSeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"List","mappedName":"_memberPathHints"}],"originalName":"_memberPathHints"},
@@ -124,7 +128,8 @@
     { "names":[{"platform":"Blazor","mappedType":"List","mappedName":"getAllPathHints"}],"originalName":"GetAllPathHints"},
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"equals"}],"originalName":"Equals"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"DataSeriesMemberPathHint","names":[{"platform":"Blazor","fileName":"DataSeriesMemberPathHint.cs","mappedName":"DataSeriesMemberPathHint"}],
+  { "originalName":"DataSeriesMemberPathHint",
+    "names":[{"platform":"Blazor","fileName":"DataSeriesMemberPathHint.cs","mappedName":"DataSeriesMemberPathHint"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"path"}],"originalName":"Path"},
     { "names":[{"platform":"Blazor","mappedType":"DataSeriesIntent","mappedName":"intent"}],"originalName":"Intent"},
@@ -135,10 +140,12 @@
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"hasPath"}],"originalName":"HasPath"},
     { "names":[{"platform":"Blazor","mappedType":"DataSeriesMemberPathHint","mappedName":"clone"}],"originalName":"Clone"},
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"IExternalDataSeriesAdapter","names":[{"platform":"Blazor","fileName":"IExternalDataSeriesAdapter.cs","mappedName":"IExternalDataSeriesAdapter"}],
+  { "originalName":"IExternalDataSeriesAdapter",
+    "names":[{"platform":"Blazor","fileName":"IExternalDataSeriesAdapter.cs","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"DataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
-  { "originalName":"SimpleFinancialPriceSeriesRule","names":[{"platform":"Blazor","fileName":"SimpleFinancialPriceSeriesRule.cs","mappedName":"SimpleFinancialPriceSeriesRule"}],
+  { "originalName":"SimpleFinancialPriceSeriesRule",
+    "names":[{"platform":"Blazor","fileName":"SimpleFinancialPriceSeriesRule.cs","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"priority"}],"originalName":"Priority"},
@@ -146,7 +153,8 @@
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"except"}],"originalName":"Except"},
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"evaluate"}],"originalName":"Evaluate"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getDataSourceTitle"}],"originalName":"GetDataSourceTitle"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters.Rules"},
-  { "originalName":"SimpleScatterSeriesRule","names":[{"platform":"Blazor","fileName":"SimpleScatterSeriesRule.cs","mappedName":"SimpleScatterSeriesRule"}],
+  { "originalName":"SimpleScatterSeriesRule",
+    "names":[{"platform":"Blazor","fileName":"SimpleScatterSeriesRule.cs","mappedName":"SimpleScatterSeriesRule"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"priority"}],"originalName":"Priority"},
@@ -157,13 +165,15 @@
     { "names":[{"platform":"Blazor","mappedType":"List","mappedName":"getXProps"}],"originalName":"GetXProps"},
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"isXProp"}],"originalName":"IsXProp"},
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"createScatterSeries"}],"originalName":"CreateScatterSeries"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters.Rules"},
-  { "originalName":"SubCollectionsRule","names":[{"platform":"Blazor","fileName":"SubCollectionsRule.cs","mappedName":"SubCollectionsRule"}],
+  { "originalName":"SubCollectionsRule",
+    "names":[{"platform":"Blazor","fileName":"SubCollectionsRule.cs","mappedName":"SubCollectionsRule"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"priority"}],"originalName":"Priority"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"collectionTransformationThreshold"}],"originalName":"CollectionTransformationThreshold"},
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"evaluate"}],"originalName":"Evaluate"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters.Rules"},
-  { "originalName":"SimpleCategorySeriesRule","names":[{"platform":"Blazor","fileName":"SimpleCategorySeriesRule.cs","mappedName":"SimpleCategorySeriesRule"}],
+  { "originalName":"SimpleCategorySeriesRule",
+    "names":[{"platform":"Blazor","fileName":"SimpleCategorySeriesRule.cs","mappedName":"SimpleCategorySeriesRule"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
     { "names":[{"platform":"Blazor","mappedType":"number","mappedName":"priority"}],"originalName":"Priority"},

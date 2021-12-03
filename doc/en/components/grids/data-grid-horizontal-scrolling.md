@@ -92,5 +92,5 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
     <IgbTextColumn Field="City" Width="300" />
     <IgbNumericColumn Field="Salary" Width="300" />
     <IgbNumericColumn Field="Sales" Width="300" />
-</DataGrid>
+</IgbDataGrid>
 ```

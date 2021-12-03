@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ (フォーム) の概要
 
-[`Form Component`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html) は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+`Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
 
 ## $Platform$ の例
 
@@ -51,18 +51,12 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 ```
 
 フォーム データは、次のコンポーネントについて収集されます:
-- [`igc-checkbox`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
-- [`igc-input`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcInputComponent.html)
-- [`igc-radio`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
-- [`igc-switch`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html)
-- checkbox
-- input
-- radio
-- select
-- switch
-- textarea
+- `checkbox`
+- `input`
+- `radio`
+- `switch`
 
-フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、[`novalidate`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#novalidate) 属性を `<igc-form>` 要素に追加できます。
+フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、`novalidate` 属性を `Form` 要素に追加できます。
 
 
 ```html
@@ -77,7 +71,7 @@ Form コンポーネントは、次のイベントを発生させます:
 - igcSubmit - フォームが送信されたときに発生します。
 - igcSubmit - フォームがリセットされたときに発生します。
 
-[`igcSubmit`] イベントのイベント リスナーを追加する方法を示す例を次に示します:
+`Submit` イベントのイベント リスナーを追加する方法を示す例を次に示します:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -92,22 +86,22 @@ Form コンポーネントは、次のメソッドを公開します:
 
 | メソッド			| 説明     			|
 | ------------- 	|:-------------:			|
-|[`submit`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#submit)|フォーム データを送信します。|
-|[`reset`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#reset)|フォーム データをリセットします。|
-|[`getFormData`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#getFormData)|フォーム データを収集し、単一の FormData オブジェクトを返します。|
-|[`reportValidity`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcFormComponent.html#reportValidity)|要素の子コントロールが検証制約を満たしているかどうかを返します。|
+|`submit`|フォーム データを送信します。|
+|`reset`|フォーム データをリセットします。|
+|`getFormData`|フォーム データを収集し、単一の FormData オブジェクトを返します。|
+|`reportValidity`|要素の子コントロールが検証制約を満たしているかどうかを返します。|
 
 ## API リファレンス
 
 フォームの API の詳細については、次のリンクを参照してください。
-* [`IgcFormComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/classes/IgcFormComponent.html)
+* `Form`
 
 使用したその他のコンポーネントとディレクティブ:
-- [`IgcButtonComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcButtonComponent.html)
-- [`IgcCheckboxComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcCheckboxComponent.html)
-* [`IgcInputComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcInputComponent.html)
-* [`IgcRadioComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcRadioComponent.html)
-* [`IgcSwitchComponent API`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/classes/IgcSwitchComponent.html)
+- `Button`
+- `Checkbox`
+* `Input`
+* `Radio`
+* `Switch`
 
 <div class="divider"></div>
 ## その他のリソース

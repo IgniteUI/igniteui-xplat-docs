@@ -2,6 +2,7 @@
 title: $Platform$ Avatar | Layout Controls | Infragistics
 _description: Use Infragistics' $Platform$ avatar component to display an image, icon, or initials.
 _keywords: avatar, layout, $ProductName$, Infragistics
+mentionedTypes: ['Avatar']
 ---
 
 # $Platform$ Avatar
@@ -25,7 +26,7 @@ The $ProductName$ Avatar helps to display initials, images, or icons in your app
 
 <!-- Blazor -->
 
-To get started, we need to register the `IgbAvatarModule`.
+To get started with the `Avatar`, we first need to register its module, like so:
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
@@ -33,9 +34,11 @@ IgbAvatarModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
-To get started we need to import the [`IgcAvatarComponent`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html) in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Avatar` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
@@ -45,10 +48,10 @@ defineComponents(IgcAvatarComponent);
 
 <!-- end: WebComponents -->
 
-After we import the avatar component we are ready to start using it, so let's add our first avatar.
+After we import the `Avatar` component we are ready to start using it, so let's add our first avatar.
 
 The avatar component is capable of displaying images, initials, or any other content, including icons.
-Declaring an avatar is as simple as:
+Declaring an `Avatar` is as simple as:
 
 ```html
 <igc-avatar></igc-avatar>
@@ -72,7 +75,7 @@ The avatar has several attributes that allow rendering different content based o
 </IgbAvatar>
 ```
 
-If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initials) attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 
 ```html
@@ -91,7 +94,7 @@ If the [`initials`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#initi
 </IgbAvatar>
 ```
 
-The avatar can also display an image when the [`src`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#src) attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
+The avatar can also display an image when the `src` attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
 
 ```html
 <igc-avatar
@@ -110,9 +113,9 @@ The avatar can also display an image when the [`src`]({environment:wcApiUrl}/cla
 </IgbAvatar>
 ```
 
-The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the [`shape`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#shape) attribute.
+The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the `shape` attribute.
 
-Apart from the shape, the size of the avatar can also be changed by setting the [`size`]({environment:wcApiUrl}/classes/IgcAvatarComponent.html#size) attribute. The supported sizes are `small`, `medium`, and `large`.
+Apart from the shape, the size of the avatar can also be changed by setting the `size` attribute. The supported sizes are `small`, `medium`, and `large`.
 
 ## Examples
 
@@ -165,14 +168,17 @@ igc-avatar::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API Reference
 
-* [IgcAvatarComponent]({environment:wcApiUrl}/classes/IgcAvatarComponent.html)
+* `Avatar`
 
-
-## Additional Resources
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## Additional Resources
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

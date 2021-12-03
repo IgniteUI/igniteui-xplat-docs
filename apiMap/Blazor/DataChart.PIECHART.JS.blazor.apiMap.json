@@ -1,29 +1,35 @@
 {"types":[
-  { "originalName":"LabelClickEventArgs","names":[{"platform":"Blazor","fileName":"LabelClickEventArgs.cs","mappedName":"IgbLabelClickEventArgs"}],
+  { "originalName":"LabelClickEventArgs",
+    "names":[{"platform":"Blazor","fileName":"LabelClickEventArgs.cs","mappedName":"IgbLabelClickEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowSliceClick"}],"originalName":"AllowSliceClick"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SelectedItemChangedEventArgs","names":[{"platform":"Blazor","fileName":"SelectedItemChangedEventArgs.cs","mappedName":"IgbSelectedItemChangedEventArgs"}],
+  { "originalName":"SelectedItemChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SelectedItemChangedEventArgs.cs","mappedName":"IgbSelectedItemChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"OldItem"}],"originalName":"OldItem"},
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"NewItem"}],"originalName":"NewItem"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SelectedItemChangingEventArgs","names":[{"platform":"Blazor","fileName":"SelectedItemChangingEventArgs.cs","mappedName":"IgbSelectedItemChangingEventArgs"}],
+  { "originalName":"SelectedItemChangingEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SelectedItemChangingEventArgs.cs","mappedName":"IgbSelectedItemChangingEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SelectedItemsChangedEventArgs","names":[{"platform":"Blazor","fileName":"SelectedItemsChangedEventArgs.cs","mappedName":"IgbSelectedItemsChangedEventArgs"}],
+  { "originalName":"SelectedItemsChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SelectedItemsChangedEventArgs.cs","mappedName":"IgbSelectedItemsChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbObjectCollection","mappedName":"OldItems"}],"originalName":"OldItems"},
     { "names":[{"platform":"Blazor","mappedType":"IgbObjectCollection","mappedName":"NewItems"}],"originalName":"NewItems"},
     { "names":[{"platform":"Blazor","mappedType":"IgbObjectCollection","mappedName":"CurrentItems"}],"originalName":"CurrentItems"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SelectedItemsChangingEventArgs","names":[{"platform":"Blazor","fileName":"SelectedItemsChangingEventArgs.cs","mappedName":"IgbSelectedItemsChangingEventArgs"}],
+  { "originalName":"SelectedItemsChangingEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SelectedItemsChangingEventArgs.cs","mappedName":"IgbSelectedItemsChangingEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Cancel"}],"originalName":"Cancel"}],"originalBaseTypeName":"SelectedItemsChangedEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SliceClickEventArgs","names":[{"platform":"Blazor","fileName":"SliceClickEventArgs.cs","mappedName":"IgbSliceClickEventArgs"}],
+  { "originalName":"SliceClickEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SliceClickEventArgs.cs","mappedName":"IgbSliceClickEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSelected"}],"originalName":"IsSelected"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsExploded"}],"originalName":"IsExploded"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsOthersSlice"}],"originalName":"IsOthersSlice"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"Index"}],"originalName":"Index"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"DataContext"}],"originalName":"DataContext"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"OriginalEvent"}],"originalName":"OriginalEvent"},
     { "names":[{"platform":"Blazor","mappedType":"Point","mappedName":"Origin"}],"originalName":"Origin"},
@@ -33,12 +39,13 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EndAngle"}],"originalName":"EndAngle"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Fill"}],"originalName":"Fill"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SliceEventArgs","names":[{"platform":"Blazor","fileName":"SliceEventArgs.cs","mappedName":"IgbSliceEventArgs"}],
+  { "originalName":"SliceEventArgs",
+    "names":[{"platform":"Blazor","fileName":"SliceEventArgs.cs","mappedName":"IgbSliceEventArgs"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSelected"}],"originalName":"IsSelected"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsExploded"}],"originalName":"IsExploded"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsOthersSlice"}],"originalName":"IsOthersSlice"},
-    { "names":[{"platform":"Blazor","mappedType":"int","mappedName":"Index"}],"originalName":"Index"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Index"}],"originalName":"Index"},
     { "names":[{"platform":"Blazor","mappedType":"Point","mappedName":"Origin"}],"originalName":"Origin"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Radius"}],"originalName":"Radius"},
     { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"Bounds"}],"originalName":"Bounds"},
@@ -48,7 +55,8 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"DataContext"}],"originalName":"DataContext"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"OriginalEvent"}],"originalName":"OriginalEvent"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PieChartBase","names":[{"platform":"Blazor","fileName":"PieChartBase.cs","mappedName":"IgbPieChartBase"}],
+  { "originalName":"PieChartBase",
+    "names":[{"platform":"Blazor","fileName":"PieChartBase.cs","mappedName":"IgbPieChartBase"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"DataSource"}],"originalName":"ItemsSource"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerExtent"}],"originalName":"InnerExtent"},
@@ -75,14 +83,22 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelExtent"}],"originalName":"LabelExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartAngle"}],"originalName":"StartAngle"},
     { "names":[{"platform":"Blazor","mappedType":"SweepDirection","mappedName":"SweepDirection"}],"originalName":"SweepDirection"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"othersCategoryStyle.fill", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"othersCategoryStyle.stroke", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"othersCategoryStyle.opacity", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedStyle.fill", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedStyle.stroke", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedStyle.strokeThickness", "isVirtual":true },
-    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedStyle.opacity", "isVirtual":true },
+    { 
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"othersCategoryStyle.fill"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"othersCategoryStyle.stroke"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"othersCategoryStyle.opacity"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedStyle.fill"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedStyle.stroke"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualBrushes"}],"originalName":"ActualBrushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outlines"}],"originalName":"Outlines"},
@@ -119,9 +135,12 @@
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetWidgetLevelDataSource"}],"originalName":"SetWidgetLevelDataSource"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveWidgetLevelDataSource"}],"originalName":"RemoveWidgetLevelDataSource"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PieSliceOthersContext","names":[{"platform":"Blazor","fileName":"PieSliceOthersContext.cs","mappedName":"IgbPieSliceOthersContext"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"XamPieChart","names":[{"platform":"Blazor","fileName":"PieChart.cs","mappedName":"IgbPieChart"}],"members":[],"originalBaseTypeName":"PieChartBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"PieSliceDataContext","names":[{"platform":"Blazor","fileName":"PieSliceDataContext.cs","mappedName":"IgbPieSliceDataContext"}],
+  { "originalName":"PieSliceOthersContext",
+    "names":[{"platform":"Blazor","fileName":"PieSliceOthersContext.cs","mappedName":"IgbPieSliceOthersContext"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"XamPieChart",
+    "names":[{"platform":"Blazor","fileName":"PieChart.cs","mappedName":"IgbPieChart"}],"members":[],"originalBaseTypeName":"PieChartBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PieSliceDataContext",
+    "names":[{"platform":"Blazor","fileName":"PieSliceDataContext.cs","mappedName":"IgbPieSliceDataContext"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PercentValue"}],"originalName":"PercentValue"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsOthersSlice"}],"originalName":"IsOthersSlice"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
