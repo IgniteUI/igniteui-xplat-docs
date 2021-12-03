@@ -198,14 +198,14 @@ function transformCodeRefs(options: any) {
                 if (apiDocOverrideComponents !== undefined) {
                     //console.log("getApiLink replace apiDocOverride " + link.url);
                     for (const component of apiDocOverrideComponents) {
-                        //var name = (options.platformPascalPrefix + "" + component).toLowerCase();
-                        var name = component.toLowerCase();
-                        var urls = link.url.toLowerCase();
-                        if (urls.indexOf(name) >= 0) {
-                            //console.log("getApiLink replace " + name + " '" + urls + "'");
-                            //link.url = urls.replace(apiDocRoot, apiDocOverrideRoot);
-                            link.url = urls.replace("\/api\/docs\/", "\/docs\/");
-                            //console.log("getApiLink replace " + name + " '" + link.url + "'");
+                        let className = new RegExp(component.toLowerCase() + ".*.html", "im")
+                        if (link.url.match(className)) {
+                            // if (link.url.indexOf("calendar") >= 0)
+                            //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
+                            link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                            //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
+                            //if (link.url.indexOf("calendar") >= 0)
+                            //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
                         }
                     }
                 }
