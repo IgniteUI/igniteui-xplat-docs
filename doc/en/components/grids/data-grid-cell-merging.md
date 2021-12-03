@@ -7,7 +7,7 @@ mentionedTypes: ['Grid', 'MergedCellMode', 'MergedCellEvaluationCriteria']
 
 # $Platform$ Grid Cell Merging
 
-The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not in edit mode, the value displays across the cells.
+The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in and detect when adjacent sibling records for a specific column contains the same value. While the cells are not active, selected, or in edit mode, the value displays across the cells.
 
 ## $Platform$ Grid Cell Merging Example
 
@@ -31,7 +31,7 @@ Cell Merging in the $Platform$ data grid can be configured by using the `MergedC
 
 Note, regardless of the value of this property, cells can only be merged across sibling records.
 
-In addition, there is a `MergedCellEvaluationCriteria` property which can be used depending on if formatting is applied. This property takes two options, listed below:
+In addition, there is a `MergedCellEvaluationCriteria` property which can be used depending on if formatting is applied for a particular column or entire grid. This property takes two options, listed below:
 
 - `RawValue`: Merge cells from adjacent rows when the raw values from the cells are the same. This is the default value.
 - `FormattedText`: Merge cells from adjacent rows when the formatted value from the cells is the same.
