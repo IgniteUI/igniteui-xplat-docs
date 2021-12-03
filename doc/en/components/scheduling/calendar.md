@@ -22,29 +22,19 @@ The $ProductName$ Calendar component provides an easy and intuitive way to displ
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the Calendar component, you first need to register its module.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Calendar`, you need and register it as follows:
 
 ```razor
 IgbCalendarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the Calendar component, first you need to install $ProductName$ package by typing the following command:
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageComponents}
-</pre>
-
-The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
-
-<!-- end: WebComponents -->
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -52,22 +42,21 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-### Single Selection Calendar
+```razor
+IgbCalendarModule.Register(IgniteUIBlazor);
+```
 
-Instantiating the `Calendar` is as easy as placing it in the html. This will display the current month in single selection mode.
-
+The simplest way to start using the `Calendar` is as follows:
 
 ```html
-<!-- Single selection mode -->
 <igc-calendar></igc-calendar>
 ```
 
-### Multiple Selection
+### Single Modes
 
-We can easily change the default mode using the `Selection` property:
+By default the `Calendar` is using single selection mode but you can changed it by setting the `Selection` property as shown in this example.
 
 ```html
-<!-- Multiple selection mode -->
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 

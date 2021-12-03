@@ -23,29 +23,21 @@ The $ProductName$ Checkbox component is a selection control that allows users to
 
 ## Usage
 
-At its core, the `Checkbox` component allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
+At its core, the `Checkbox` allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Checkbox` component, you will need to include its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Checkbox`, you need and register it as follows:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `Checkbox` web component, first you need to install the $ProductName$ by typing the following command:
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -53,7 +45,8 @@ import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
 defineComponents(IgcCheckboxComponent);
 ```
 
-<!-- end: WebComponents -->
+<div class="divider--half"></div>
+
 
 The simplest way to start using the `Checkbox` is as follows:
 
