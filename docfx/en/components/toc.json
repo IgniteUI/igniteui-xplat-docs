@@ -1312,9 +1312,10 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React"],
     "name": "Data Entry & Display",    
     "header": true,
-    "href": "inputs/inputs-overview.md"    
+    "href": "inputs/inputs-overview.md"
   },
   {
     "exclude": ["Angular", "React"],
