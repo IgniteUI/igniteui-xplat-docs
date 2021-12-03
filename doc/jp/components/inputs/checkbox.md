@@ -2,6 +2,7 @@
 title: $Platform$ Checkbox コンポーネント
 _description: $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Checkbox コンポーネント, $Platform$ Checkbox コントロール
+mentionedTypes: ['Checkbox', 'Form']
 _language: ja
 ---
 
@@ -22,21 +23,23 @@ $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件
 
 ## 使用方法
 
-チェックボックス コンポーネントは、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
+`Checkbox` コンポーネントは、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
 <!-- Blazor -->
 
-チェックボックス コンポーネントの使用を開始するには、次のようにそのモジュールを含める必要があります:
+`Checkbox` コンポーネントの使用を開始するには、次のようにそのモジュールを含める必要があります:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end:Blazor>
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 
-チェックボックス ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
+`Checkbox` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
@@ -52,7 +55,7 @@ defineComponents(IgcCheckboxComponent);
 
 <!-- end: WebComponents -->
 
-チェックボックスの使用を開始する最も簡単な方法は次のとおりです:
+`Checkbox` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-checkbox></igc-checkbox>
@@ -63,7 +66,7 @@ defineComponents(IgcCheckboxComponent);
 ```
 
 >[!WARNING]
->チェックボックス コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
+>`Checkbox` コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 
 ## 例
@@ -276,9 +279,13 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Checkbox`
+
+<!-- end: WebComponents -->
 
 ## その他のリソース
 

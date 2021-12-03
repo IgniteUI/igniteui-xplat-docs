@@ -1,13 +1,14 @@
 ---
-title: $Platform$ List Component | Infragistics
-_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+title: $Platform$ List コンポーネント | インフラジスティックス
+_description: インフラジスティックスの $Platform$ List コンポーネントは、項目のグループを表示するのに役立ちます。$ProductName$ を使用したデータの表示方法について説明します。
+_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics, $Platform$ リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['List']
+_language: ja
 ---
 
 # $Platform$ List (リスト) の概要
 
-List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。List コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
+$ProductName$ List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。`List` コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
 
 ## $Platform$ List の例
 
@@ -28,7 +29,7 @@ List Web コンポーネントは、項目の垂直リストを簡単に表示�
 
 <!-- Blazor -->
 
-`IgbList` コンポーネントの使用を開始するには、最初に `IgbListModule` を登録する必要があります。
+`List` コンポーネントの使用を開始するには、最初に次のようにそのモジュールを登録する必要があります:
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);
@@ -36,9 +37,11 @@ IgbListModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
-List Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して Ignite UI for Web Components をインストールする必要があります。
+`List` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して ProductName$ をインストールする必要があります。
 ```cmd
 npm install igniteui-webcomponents
 ```
@@ -332,24 +335,29 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
-この記事では、List Web コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、アバターやボタンなどの追加の Ignite UI Web Components を使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
+この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の $ProductName$ コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 
 * `List`
 * `ListHeader`
 * `ListItem`
 
-使用したその他の Web Components:
+使用したその他のコンポーネント:
 
 * `Avatar`
 * `Button`
 * `RadioGroup`
 * `Radio`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
+## その他のリソース
+
 * [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+

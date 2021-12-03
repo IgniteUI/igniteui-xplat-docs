@@ -2,7 +2,7 @@
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
 _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
-mentionedTypes: ['Card']
+mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 _language: ja
 ---
 
@@ -29,13 +29,15 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 <!-- Blazor -->
 
-開始するには、次のように `IgbCardModule` を登録する必要があります。
+開始するには、次のようにモジュールを登録する必要があります:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
 ```
 
 <!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 
@@ -395,6 +397,8 @@ igc-icon-button+igc-icon-button {
 ### まとめ
 このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の $Platform$ を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
 
+<!-- Web Components -->
+
 ## API リファレンス
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
@@ -412,6 +416,8 @@ igc-icon-button+igc-icon-button {
 * `Button`
 * `IconButton`
 * `Ripple`
+
+<!-- end: WebComponents -->
 
 <div class="divider"></div>
 

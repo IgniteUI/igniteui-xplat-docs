@@ -27,7 +27,7 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 
 <!-- Blazor -->
 
-`IgbBadge` コンポーネントの使用を開始するには、最初に `IgbBadgeModule` を登録する必要があります。
+`Badge` コンポーネントの使用を開始するには、最初に次のようにそのモジュールを登録する必要があります。
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
@@ -35,9 +35,11 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
+<div class="divider--half"></div>
+
 <!-- WebComponents -->
 
-バッジ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
+`Badge` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
@@ -125,13 +127,17 @@ igc-badge::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Badge`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## その他のリソース
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

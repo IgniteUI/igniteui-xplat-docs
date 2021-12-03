@@ -1,6 +1,14 @@
+---
+title: $Platform$ NavDrawer | インフラジスティックス
+_description: インフラジスティックスの $Platform$ NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
+_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+mentionedTypes: ['NavDrawer']
+_language: ja
+---
+
 # $Platform$ Navigation Drawer (ナビゲーション ドロワー) の概要
 
-Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーションを提供する WebComponent です。コンテンツ内で展開または縮小されることができます。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
+インフラジスティックスの $Platform$ Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
 
 ## $Platform$ Navigation Drawer の例
 
@@ -13,6 +21,21 @@ Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーション�
 
 ## 使用方法
 
+<!-- Blazor -->
+
+`Navbar` コンポーネントの使用を開始するには、最初に `IgbNavbarModule` とオプションの `IgbNavDrawerHeaderItemModule` を登録する必要があります。
+
+```razor
+IgbNavDrawerModule.Register(IgniteUIBlazor);
+IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 `NavDrawer` の使用を開始するには、最初に次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
@@ -20,6 +43,11 @@ npm install {PackageComponents}
 ```
 
 次に、`NavDrawer` と `NavDrawerHeaderItem` および `NavDrawerItem` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -136,7 +164,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 すべてがうまくいけば、コンポーネントは次のようになります:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar の例"
@@ -177,7 +205,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 以下は結果です:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
            alt="$Platform$ Navigation Drawer Mini の例"
@@ -211,7 +239,7 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
            alt="$Platform$ Navigation Drawer スタイル設定の例"

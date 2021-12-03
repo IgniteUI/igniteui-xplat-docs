@@ -2,6 +2,7 @@
 title: $Platform$ Icon コンポーネント
 _description: 開発者は、$ProductName$ Icon コンポーネントを使用して、さまざまなアイコンをカスタム色などと交換可能に使用できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
+mentionedTypes: ['Icon']
 _language: ja
 ---
 
@@ -21,6 +22,20 @@ $ProductName$ アイコン コンポーネントを使用すると、開発者�
 
 ## 使用方法
 
+<!-- Blazor -->
+
+`Icon` コンポーネントの使用を開始するには、最初に `IgbIconModule` を登録する必要があります。
+
+```razor
+IgbIconModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 Icon Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
@@ -28,6 +43,10 @@ npm install igniteui-webcomponents
 ```
 
 次の手順は、`Icon` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";

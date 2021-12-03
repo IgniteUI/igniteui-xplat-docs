@@ -5,6 +5,7 @@ _keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム
 mentionedTypes: ['Form']
 _language: ja
 ---
+
 # $Platform$ (フォーム) の概要
 
 `Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
@@ -20,7 +21,21 @@ _language: ja
            github-src="inputs/form/overview">
 </code-view>
 
-## 依存関係
+## 使用方法
+
+<!-- Blazor -->
+
+`Form` コンポーネントの使用を開始するには、最初に `IgbFormModule` を登録する必要があります。
+
+```razor
+IgbFormModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 Form コンポーネントを使用するには、Web コンポーネント パッケージをインストールする必要があります。
 
@@ -28,21 +43,16 @@ Form コンポーネントを使用するには、Web コンポーネント パ�
 npm install {PackageWebComponents}
 </pre>
 
-## 使用方法
+<!-- end: WebComponents -->
 
 Form コンポーネントがインポートされたら、それをページに追加してコンテンツを追加できます。
 
-```html
-<igc-form>
-  <div>Subscribe</div>
-  <igc-input required name="name" type="text" label="Your Name"></igc-input>
-  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
-  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
-  <br />
-  <igc-button type="reset">Reset</igc-button>
-  <igc-button type="submit">Submit</igc-button>
-</igc-form>
-```
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
+           alt="$Platform$ Form Example"
+           github-src="inputs/form/overview">
+</code-view>
 
 ```ts
 import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';

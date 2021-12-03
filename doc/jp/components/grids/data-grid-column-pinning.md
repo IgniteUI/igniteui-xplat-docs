@@ -255,7 +255,7 @@ onButtonUnPin () {
     <IgbTextColumn Field="Street" Pinned="PinnedPositions.Right" />
     <IgbTextColumn Field="City" Pinned="PinnedPositions.Right" />
     <IgbTextColumn Field="Country" Pinned="PinnedPositions.Right" />
-</DataGrid>
+</IgbDataGrid>
 ```
 
 ## ツールバーの列ピン固定 UI

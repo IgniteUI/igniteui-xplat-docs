@@ -2,6 +2,7 @@
 title: $Platform$ Switch コンポーネント – $ProductName$
 _description: $ProductName$ Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Switch コントロール
+mentionedTypes: ['Switch']
 _language: ja
 ---
 
@@ -23,9 +24,23 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 
 ## 使用方法
 
-スイッチ コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
+`Switch` コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
-スイッチ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
+<!-- Blazor -->
+
+`Switch` コンポーネントの使用を開始するには、最初に次のようにそのモジュールをインポートする必要があります:
+
+```razor
+IgbSwitchModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
+`Switch` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install igniteui-webcomponents
@@ -39,14 +54,20 @@ import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
 defineComponents(IgcSwitchComponent);
 ```
 
-スイッチの使用を開始する最も簡単な方法は次のとおりです:
+<!-- end: WebComponents -->
+
+`Switch` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-switch></igc-switch>
 ```
 
+```razor
+<IgbSwitch />
+```
+
 >[!WARNING]
->スイッチ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
+>`Switch` コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 ## 例
 
@@ -58,11 +79,19 @@ defineComponents(IgcSwitchComponent);
 <igc-switch>Label</igc-switch>
 ```
 
+```razor
+<IgbSwitch>Label</IgbSwitch>
+```
+
 スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
+```
+
+```razor
+<IgbSwitch LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbSwitch>
 ```
 
 スイッチには、スイッチの外部の要素でラベルを付けることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
@@ -71,6 +100,12 @@ defineComponents(IgcSwitchComponent);
 <span id="switch-label">Label</span>
 <igc-switch aria-labelledby="switch-label"></igc-switch>
 ```
+
+```razor
+<span id="switch-label>Label</span>
+<IgbSwitch AriaLabelledBy="switch-label" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
@@ -85,6 +120,11 @@ defineComponents(IgcSwitchComponent);
 ```html
 <igc-switch checked></igc-switch>
 ```
+
+```razor
+<IgbSwitch Checked="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
@@ -100,12 +140,20 @@ defineComponents(IgcSwitchComponent);
 <igc-switch required></igc-switch>
 ```
 
+```razor
+<IgbSwitch Required="true" />
+```
+
 ### 無効
 
 `invalid` 属性を使用して、スイッチを無効としてマークします。
 
 ```html
 <igc-switch invalid></igc-switch>
+```
+
+```razor
+<IgbSwitch Invalid="true" />
 ```
 
 ### オフ
@@ -115,6 +163,11 @@ defineComponents(IgcSwitchComponent);
 ```html
 <igc-switch disabled></igc-switch>
 ```
+
+```razor
+<IgbSwitch Disabled="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
@@ -128,6 +181,10 @@ defineComponents(IgcSwitchComponent);
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
+```
+
+```razor
+<IgbSwitch Value="enabled" />
 ```
 
 ## スタイル設定
@@ -147,13 +204,17 @@ igc-switch::part(thumb) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Switch`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## その他のリソース
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

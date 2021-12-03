@@ -2,6 +2,7 @@
 title: $Platform$ Avatar | レイアウト コントロール | インフラジスティックス
 _description: インフラジスティックスの $Platform$ Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
 _keywords: avatar, layout, $ProductName$, Infragistics, アバター, レイアウト, インフラジスティックス
+mentionedTypes: ['Avatar']
 _language: ja
 ---
 
@@ -26,13 +27,15 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 
 <!-- Blazor -->
 
-開始するには、次のように `IgbAvatarModule` を登録する必要があります。
+`Avatar` の使用を開始するには、最初に次のようにモジュールを登録する必要があります:
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
 ```
 
 <!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 
@@ -46,10 +49,10 @@ defineComponents(IgcAvatarComponent);
 
 <!-- end: WebComponents -->
 
-アバター コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のアバターを追加しましょう。
+`Avatar` コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のアバターを追加しましょう。
 
 アバター コンポーネントは、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。
-アバターの宣言は次のように簡単です:
+`Avatar` の宣言は次のように簡単です:
 
 ```html
 <igc-avatar></igc-avatar>
@@ -111,7 +114,7 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-アバターは、`circle`、`circle`、`square`の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
+アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
 形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
@@ -166,14 +169,17 @@ igc-avatar::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Avatar`
 
-
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+## その他のリソース
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)

@@ -2,6 +2,7 @@
 title: $Platform$ Ripple
 _description: $ProductName$ Ripple を使用すると、開発者は、視覚的に魅力的な UI 拡張のためにリップル アニメーション効果を受け取った領域を定義できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Ripple コンポーネント, $Platform$ Ripple コントロール
+mentionedTypes: ['Ripple', 'Button']
 _language: ja
 ---
 
@@ -21,6 +22,20 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## 使用方法
 
+<!-- Blazor -->
+
+`Ripple` コンポーネントの使用を開始するには、最初に次のようにそのモジュールをインポートする必要があります:
+
+```razor
+IgbRippleModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 Ripple Web コンポーネントの使用を開始するには、`Ripple` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
@@ -28,6 +43,8 @@ import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcRippleComponent);
 ```
+
+<!-- end: WebComponents -->
 
 リップル コンポーネントをインポートしたら、使用を開始する準備ができたので、ライブラリから既存のコンポーネントにリップルを追加しましょう。
 
@@ -38,7 +55,14 @@ defineComponents(IgcRippleComponent);
 </igc-button>
 ```
 
-CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素にリップルを追加できます。
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    Ripple Button
+    <IgbRipple></IgbRipple>
+</IgbButton>
+```
+
+CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素に `Ripple` を追加できます。
 
 ## 例
 
@@ -58,6 +82,8 @@ igc-ripple {
            github-src="inputs/ripple/color">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Ripple`
@@ -65,6 +91,8 @@ igc-ripple {
 使用したその他の WEB コンポーネント:
 
 * `Button`
+
+<!-- end: WebComponents -->
 
 ## その他のリソース
 

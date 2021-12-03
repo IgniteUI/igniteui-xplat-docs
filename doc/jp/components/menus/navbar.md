@@ -5,6 +5,7 @@ _keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲ�
 mentionedTypes: ['Navbar']
 _language: ja
 ---
+
 # $Platform$ Navbar の概要
 
 $Platform$ `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
@@ -13,14 +14,28 @@ $Platform$ `Navbar` は、アプリ内の現在の位置をユーザーに通知
 
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar 概要の例"
            github-src="menus/nav-bar/overview">
 </code-view>
 
-## 依存関係
+## 使用方法
+
+<!-- Blazor -->
+
+`Navbar` コンポーネントの使用を開始するには、最初に `IgbNavbarModule` を登録する必要があります。
+
+```razor
+IgbNavbarModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
 
 Navigation Bar コンポーネントを使用するには、以下のパッケージをインストールする必要があります:
 
@@ -28,11 +43,13 @@ Navigation Bar コンポーネントを使用するには、以下のパッケ�
 npm install {PackageWebComponents}
 </pre>
 
-## 使用方法
-
 `Navbar` コンポーネントの使用を開始するには、最初に typescript ファイルにコンポーネントをインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
-```typescript
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
+```ts
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcNavbarComponent);
 ```
@@ -45,6 +62,23 @@ defineComponents(IgcNavbarComponent);
 
 ## コンテンツ
 
+<!-- Blazor -->
+
+次の `Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの `Icon` アイコンを追加しました。
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
+           alt="$Platform$ Navbar スタイル設定の例"
+           github-src="menus/nav-bar/content">
+</code-view>
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 `Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの `Icon` アイコンを追加しました。
 
 ```html
@@ -56,6 +90,8 @@ defineComponents(IgcNavbarComponent);
     <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
 </igc-navbar>
 ```
+
+<!-- end: WebComponents -->
 
 ## スタイル設定
 
@@ -86,7 +122,7 @@ igc-navbar::part(end) {
 
 以下は結果です:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
            alt="$Platform$ Navbar スタイル設定の例"
