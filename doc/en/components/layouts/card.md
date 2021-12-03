@@ -26,32 +26,28 @@ Cards allow you to easily display content composed of different types of objects
 
 ### Getting Started
 
-<!-- Blazor -->
 
-To get started, we will need to register the its module, like so:
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Card`, you need and register it as follows:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started we need to import the `Card` along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-```typescript
-// index.ts
-...
+```ts
 import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+
 defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
 
-<!-- end: WebComponents -->
-
-Then, to represent the demo card template, we can add the following code to our html file.
+Then, to represent the demo card template, we can add the following code:
 
 ```html
 <igc-card>

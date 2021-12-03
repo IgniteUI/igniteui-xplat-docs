@@ -22,48 +22,36 @@ The following example represents a `Navbar` with icons and text header:
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Navbar` component, you first need to register the `IgbNavbarModule`.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Navbar`, you need and register it as follows:
 
 ```razor
 IgbNavbarModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-In order to use the Navigation Bar component, the web components package must be installed.
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageWebComponents}
-</pre>
-
-To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ```ts
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+
 defineComponents(IgcNavbarComponent);
 ```
 
-Then in the template of our component we can add the following code to show a basic `Navbar` with a title only:
+
+Then in the template of `Navbar`, you can add the following code to show a basic `Navbar` with a title only:
 
 ```html
-<igc-navbar>Ignite UI for Web Components</igc-navbar>
+<igc-navbar>Navigation Title</igc-navbar>
 ```
 
 ## Content
 
-<!-- Blazor -->
-
-In the following sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
+You can added some `Icon` icons using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -72,25 +60,6 @@ In the following sample of our `Navbar` we have added some `Icon` icons using th
            github-src="menus/nav-bar/content">
 </code-view>
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-In the sample of our `Navbar` we have added some `Icon` icons using the `start` and `end` slots:
-
-```html
-<igc-navbar style="height:65px">
-    <igc-icon name="home" slot="start" size="large"></igc-icon>
-    <h2>Sample App</h2>
-    <igc-icon name="search" slot="end" size="large"></igc-icon>
-    <igc-icon name="favorite" slot="end" size="large"></igc-icon>
-    <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
-</igc-navbar>
-```
-
-<!-- end: WebComponents -->
 
 ## Styling
 
@@ -143,6 +112,8 @@ Additional components and/or directives that were used:
 <div class="divider"></div>
 
 ## Additional Resources
+
+Our community is active and always welcoming to new ideas.
 
 <!-- Blazor -->
 

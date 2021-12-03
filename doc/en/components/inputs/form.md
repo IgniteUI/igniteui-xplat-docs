@@ -22,29 +22,28 @@ The following example represents a form that has some inputs, buttons and a chec
 
 ## Usage
 
-<!-- Blazor -->
 
-To get started with the `Form` component, you first need to register the `IgbFormModule`.
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Form`, you need and register it as follows:
 
 ```razor
 IgbFormModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
+```ts
+import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
 
-<div class="divider--half"></div>
+defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
+```
 
-<!-- WebComponents -->
-
-In order to use the Form component, the web components package must be installed.
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageWebComponents}
-</pre>
-
-<!-- end: WebComponents -->
-
-Once the Form component is imported, you can add it on the page and add your content.
+The simplest way to start using the `Form` is as follows:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -52,12 +51,6 @@ Once the Form component is imported, you can add it on the page and add your con
            alt="$Platform$ Form Example"
            github-src="inputs/form/overview">
 </code-view>
-
-```ts
-import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
-
-defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
-```
 
 Form data is collected for the following components:
 - `Checkbox`

@@ -24,21 +24,19 @@ The $ProductName$ Avatar helps to display initials, images, or icons in your app
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Avatar`, we first need to register its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Avatar`, you need and register it as follows:
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started we need to import the `Avatar` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
@@ -46,12 +44,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-<!-- end: WebComponents -->
-
-After we import the `Avatar` component we are ready to start using it, so let's add our first avatar.
-
-The avatar component is capable of displaying images, initials, or any other content, including icons.
-Declaring an `Avatar` is as simple as:
+The `Avatar` is capable of displaying images, initials, or any other content, including icons. Declaring an `Avatar` is as simple as:
 
 ```html
 <igc-avatar></igc-avatar>
