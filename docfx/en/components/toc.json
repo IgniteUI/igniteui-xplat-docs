@@ -44,18 +44,6 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Badge",
-    "href": "inputs/badge.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Icon",
-    "href": "layouts/icon.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
     "name": "Card",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -1324,8 +1312,22 @@
     "status": ""
   },
   {
-    "name": "Inputs",
-    "header": true
+    "exclude": ["Angular", "React"],
+    "name": "Data Entry & Display",    
+    "header": true,
+    "href": "inputs/inputs-overview.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Badge",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Icon",
+    "href": "layouts/icon.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1365,12 +1367,17 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Interactions",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Ripple",
     "href": "inputs/ripple.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Scheduling",
     "header": true
   },
