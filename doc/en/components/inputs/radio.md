@@ -9,6 +9,7 @@ mentionedTypes: ['Radio', 'RadioGroup', 'Form']
 
 The $ProductName$ Radio component allows the user to select a single option from an available set of options that are listed side by side.
 
+
 ## $ProductName$ Radio Example
 
 <code-view style="height: 205px"

@@ -9,6 +9,7 @@ mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 
 The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
 
+
 ## $Platform$ Calendar Example
 
 <div class="divider--half"></div>

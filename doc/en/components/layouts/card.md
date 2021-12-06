@@ -5,11 +5,12 @@ _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Nat
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 ---
 
-# Card
+# $Platform$ Card Overview
 
 The $ProductName$ Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
-## Card Example
+
+## $Platform$ Card Example
 
 <code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

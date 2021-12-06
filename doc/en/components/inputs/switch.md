@@ -7,11 +7,12 @@ mentionedTypes: ['Switch']
 
 # $Platform$ Switch
 
-$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+The $ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+
 
 <div class="divider"></div>
 
-## Switch Example
+## $Platform$ Switch Example
 
 <code-view style="height:200px"
            data-demos-base-url="{environment:demosBaseUrl}"

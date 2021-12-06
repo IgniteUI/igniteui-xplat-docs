@@ -9,6 +9,7 @@ mentionedTypes: ['Ripple', 'Button']
 
 The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
 
+
 <div class="divider"></div>
 
 ## $Platform$ Ripple Example

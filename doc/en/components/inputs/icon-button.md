@@ -9,6 +9,19 @@ mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
 
 The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
+
+<div class="divider"></div>
+
+# $Platform$ Icon Button Example
+
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
+           github-src="inputs/icon-button/size">
+</code-view>
+
+<div class="divider"></div>
+
 ## Usage
 
 <!-- WebComponents -->

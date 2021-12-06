@@ -7,7 +7,8 @@ mentionedTypes: ['NavDrawer']
 
 # $Platform$ Navigation Drawer Overview
 
-The Infragistics $Platform$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The $ProductName$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+
 
 ## $Platform$ Navigation Drawer Example
 

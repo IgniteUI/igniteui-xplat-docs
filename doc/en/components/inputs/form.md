@@ -7,11 +7,14 @@ mentionedTypes: ['Form']
 
 # $Platform$ Form Overview
 
-The `Form` collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+The $ProductName$ Form collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
+
+
+<div class="divider"></div>
 
 ## $Platform$ Form Example
 
-The following example represents a form that has some inputs, buttons and a checkbox inside.
+The following example represents `Form` that has some inputs, buttons and a checkbox inside.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
