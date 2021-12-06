@@ -93,23 +93,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Editors",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
@@ -551,12 +534,6 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
-        },
-        {
-          "exclude": ["Blazor"],
-          "name": "Zoom Slider",
-          "href": "zoomslider-overview.md",
           "status": ""
         }
       ]
@@ -1281,18 +1258,24 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Angular"],
     "name": "Interactions",
     "header": true
   },
   {
+    "exclude": ["Angular", "React"],
+    "name": "Ripple {ReleaseStatus_WebsInputs}",
+    "href": "interactions/ripple.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Blazor"],
     "name": "Zoom Slider",
-    "href": "zoomslider-overview.md",
+    "href": "interactions/zoomslider-overview.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Data Entry & Display",
     "header": true
   },
@@ -1323,7 +1306,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Icon {ReleaseStatus_WebsInputs}",
-    "href": "layouts/icon.md",
+    "href": "inputs/icon.md",
     "status": "NEW"
   },
   {
@@ -1331,6 +1314,12 @@
     "name": "Icon Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "inputs/multi-column-combobox.md",
+    "status": ""
   },
   {
     "exclude": ["Angular", "React"],
@@ -1345,17 +1334,6 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "Interactions",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Ripple {ReleaseStatus_WebsInputs}",
-    "href": "inputs/ripple.md",
-    "status": "NEW"
-  },
-  {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Scheduling",
     "header": true
@@ -1365,5 +1343,11 @@
     "name": "Calendar {ReleaseStatus_WebsInputs}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "scheduling/date-picker.md",
+    "status": "UPDATED"
   }
 ]
