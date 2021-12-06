@@ -23,29 +23,21 @@ $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件
 
 ## 使用方法
 
-`Checkbox` コンポーネントは、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
+`Checkbox` は、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
-`Checkbox` コンポーネントの使用を開始するには、次のようにそのモジュールを含める必要があります:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Checkbox` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-`Checkbox` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-次の手順は、`Checkbox` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -53,7 +45,8 @@ import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
 defineComponents(IgcCheckboxComponent);
 ```
 
-<!-- end: WebComponents -->
+<div class="divider--half"></div>
+
 
 `Checkbox` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -289,7 +282,16 @@ igc-checkbox::part(indicator checked) {
 
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -23,29 +23,19 @@ $ProductName$ Calendar コンポーネントは、日付情報を表示するた
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-Calendar コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Calendar` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbCalendarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-Calendar コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ パッケージをインストールする必要があります。
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageComponents}
-</pre>
-
-次の手順は、`Calendar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
-
-<!-- end: WebComponents -->
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -53,22 +43,21 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-### 単一選択の Calendar
+```razor
+IgbCalendarModule.Register(IgniteUIBlazor);
+```
 
-`Calendar` のインスタンス化は、html に配置するのと同じくらい簡単です。これにより、現在の月が単一選択モードで表示されます。
-
+`Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 
 ```html
-<!-- Single selection mode -->
 <igc-calendar></igc-calendar>
 ```
 
-### 複数選択
+### 単一モード
 
-`Selection` プロパティを使用して、デフォルト モードを簡単に変更できます:
+デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
 
 ```html
-<!-- Multiple selection mode -->
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 
@@ -407,16 +396,28 @@ igc-calendar::part(year-inner current selected) {
            github-src="scheduling/calendar/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Calendar`
 * `Radio`
 * `RadioGroup`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
-コミュニティに参加して新しいアイデアをご提案ください。
+<!-- Blazor -->
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

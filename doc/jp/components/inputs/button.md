@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ Button (ボタン) の概要
 
-Ignite UI for Web Components ボタンは、実現したい外観と機能に一致するように簡単に構成できるさまざまなバリアントとスタイルを提供します。
+$ProductName$ Button は、実現したい外観と機能に一致するように簡単に構成できるさまざまなバリアントとスタイルを提供します。
 
 ## $Platform$ Button の例
 
@@ -21,39 +21,31 @@ Ignite UI for Web Components ボタンは、実現したい外観と機能に一
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`Button` コンポーネントを使い始めるには、最初に `IgbButtonModule` を登録する必要があります:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Button` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbButtonModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-開始するには、typescript ファイルに `Button` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ```ts
-import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcButtonComponent);
 ```
 
-ボタン コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のボタンを追加しましょう。
+`Button` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-button type="button" variant="contained">
-    <span slot="prefix">+</span>
-    Click me
-    <span slot="suffix">-</span>
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </igc-button>
 ```
 
@@ -62,7 +54,7 @@ defineComponents(IgcButtonComponent);
 ## タイプ
 
 `href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、`rel`、`target` および `download` 属性も設定できます。
-ボタン コンポーネントが実際の `button` 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `Type` を指定できます。
+ボタン コンポーネントが実際の **<button>** 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -196,6 +188,8 @@ igc-button::part(base) {
            github-src="inputs/button/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Button`
@@ -205,9 +199,22 @@ igc-button::part(base) {
 * `RadioGroup`
 * `Radio`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 <div class="divider--half"></div>
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

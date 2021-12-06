@@ -26,35 +26,25 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 
 `Switch` コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
-`Switch` コンポーネントの使用を開始するには、最初に次のようにそのモジュールをインポートする必要があります:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Switch` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-`Switch` ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-次の手順は、`Switch` を使用する typescript ファイルにインポートし、次のように [`defineComponents（）`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcSwitchComponent);
 ```
-
-<!-- end: WebComponents -->
 
 `Switch` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -84,7 +74,6 @@ defineComponents(IgcSwitchComponent);
 ```
 
 スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
-
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
@@ -216,5 +205,16 @@ igc-switch::part(thumb) {
 
 ## その他のリソース
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

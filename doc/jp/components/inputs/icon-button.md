@@ -12,21 +12,19 @@ $ProductName$ Icon Button コンポーネントを使用すると、開発者は
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`IconButton` の使用を開始するには、最初に次のようにモジュールをインポートする必要があります:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`IconButton` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbIconButtonModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-Icon Button Web コンポーネントの使用を開始するには、`IconButton` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -34,9 +32,7 @@ import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents
 defineComponents(IgcIconButtonComponent);
 ```
 
-<!-- end: WebComponents -->
-
-アイコン ボタン コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のボタンを追加しましょう。
+`IconButton` の使用を開始する最も簡単な方法は次のとおりです。
 
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
@@ -130,7 +126,7 @@ igc-icon-button::part(icon) {
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button の例"
            github-src="inputs/icon-button/styling">
 </code-view>
 
@@ -144,7 +140,16 @@ igc-icon-button::part(icon) {
 
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
