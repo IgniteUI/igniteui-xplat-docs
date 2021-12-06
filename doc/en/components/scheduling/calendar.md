@@ -2,7 +2,7 @@
 title: $Platform$ Calendar | Calendar | Infragistics
 _description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
 _keywords: $Platform$ Calendar, $ProductName$, Infragistics
-mentionedTypes: ['Calendar']
+mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 ---
 
 # $Platform$ Calendar Overview
@@ -22,29 +22,19 @@ The $ProductName$ Calendar component provides an easy and intuitive way to displ
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the Calendar component, you first need to register its module.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Calendar`, you need and register it as follows:
 
 ```razor
 IgbCalendarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the Calendar component, first you need to install $ProductName$ package by typing the following command:
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageComponents}
-</pre>
-
-The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
-
-<!-- end: WebComponents -->
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -52,22 +42,21 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-### Single Selection Calendar
+```razor
+IgbCalendarModule.Register(IgniteUIBlazor);
+```
 
-Instantiating the `Calendar` is as easy as placing it in the html. This will display the current month in single selection mode.
-
+The simplest way to start using the `Calendar` is as follows:
 
 ```html
-<!-- Single selection mode -->
 <igc-calendar></igc-calendar>
 ```
 
-### Multiple Selection
+### Single Modes
 
-We can easily change the default mode using the `Selection` property:
+By default the `Calendar` is using single selection mode but you can changed it by setting the `Selection` property as shown in this example.
 
 ```html
-<!-- Multiple selection mode -->
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 
@@ -129,7 +118,7 @@ The following sample demonstrates the above configuration:
 
 Due to their very nature, localization and formatting are essential to any calendar. In the `Calendar` those are controlled and customized through the following properties - `Locale`, `FormatOptions`, `WeekStart`.
 
-Let's go ahead and try those along with other customizations. First thing we need to set is the `WeekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `FormatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `Locale` property to a value, based on the user's location choice:
+Let's go ahead and try those along with other customizations. First thing we need to set is the `WeekStart`, which controls the starting day of the week. It defaults to `Sunday`, so we will set it to `Monday`. We will also customize the `FormatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `Locale` property to a value, based on the user's location choice:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -175,9 +164,9 @@ If everything went well, we should now have a Calendar with customized display, 
 
 ### Disabled dates
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `DateRange` which is an array of `Date` objects.
+In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
 
-These are the available options for the `type` property:
+These are the available options for the `Type` property:
 *  `After` - disables the dates after the first date in the `DateRange`
 *  `Before` - disables the dates before the first date in the `DateRange`
 *  `Between` - disables the dates between the first and the second date in the `DateRange`
@@ -406,16 +395,28 @@ The following sample demonstrates the above CSS configuration:
            github-src="scheduling/calendar/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API References
 
 * `Calendar`
 * `Radio`
 * `RadioGroup`
 
+<!-- end: WebComponents -->
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+<!-- Blazor -->
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

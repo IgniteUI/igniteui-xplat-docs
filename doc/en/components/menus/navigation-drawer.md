@@ -20,32 +20,20 @@ The Infragistics $Platform$ Navigation Drawer provides side navigation that can 
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Navbar` component, you first need to register the `IgbNavbarModule` and optional `IgbNavDrawerHeaderItemModule`.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `NavDrawer`, you need and register it as follows:
 
 ```razor
 IgbNavDrawerModule.Register(IgniteUIBlazor);
 IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `NavDrawer`, first you need to install $ProductName$ by executing the following command:
-
-```cmd
-npm install {PackageComponents}
-```
-
-Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -53,9 +41,10 @@ import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponen
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
 ```
 
+
 ## Adding Navigation Drawer Items
 
-After the Navigation Drawer component is imported, we are ready to start using it! We can add the following code that displays a simple Navigation Drawer with some items:
+The simplest way to start using the `NavDrawer` is as follows:
 
 ```html
     <div style="display: flex;">
@@ -85,6 +74,8 @@ If all went well, you should see the following in your browser:
            alt="$Platform$ Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
+
+## Nabbar Integration
 
 While any content can be provided in the drawer, the `NavDrawerItem` is available to apply out-of-the-box styling to the items.
 
@@ -121,7 +112,6 @@ Let's also add some radio buttons to display all `position` values. This way whe
 // ...
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
   IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
-
 
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
     IgcRadioComponent, IgcRadioGroupComponent);
@@ -244,6 +234,8 @@ igc-nav-drawer-header-item {
            github-src="menus/nav-drawer/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API References
 
 * `NavDrawer`
@@ -257,11 +249,20 @@ Additional Web Components that were used:
 * `Radio`
 * `RadioGroup`
 
+<!-- end: WebComponents -->
+
 ## Additional Resources
 
-<div class="divider--half"></div>
+<!-- Blazor -->
 
-Our community is active and always welcoming to new ideas.
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

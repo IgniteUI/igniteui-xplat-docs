@@ -21,35 +21,26 @@ The $ProductName$ Radio component allows the user to select a single option from
 
 ### Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Radio` component, we first need to import its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Radio` and the `RadioGroup`, you need and register them as follows:
 
 ```razor
 IgbRadioModule.Register(IgniteUIBlazor);
+gbRadioGroupModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `Radio` web component, first you need to install the $ProductName$ by typing the following command:
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-The next step is to import the `Radio` and `RadioGroup` in the typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
-
-<!-- end: WebComponents -->
 
 The simplest way to start using the `Radio` is as follows:
 
@@ -273,6 +264,16 @@ igc-radio::part(control) {
 
 ## Additional Resources
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -25,35 +25,25 @@ $ProductName$ Switch component is a binary choice selection component that behav
 
 At its core the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Switch` component, we first need to import its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Switch`, you need and register it as follows:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `Switch` web component, first you need to install the $ProductName$ by typing the following command:
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-The next step is to import the `Switch` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcSwitchComponent);
 ```
-
-<!-- end: WebComponents -->
 
 The simplest way to start using the `Switch` is as follows:
 
@@ -83,7 +73,6 @@ To provide a meaningful label for the switch, simply place some text between the
 ```
 
 You can specify if the label should be positioned before or after the switch toggle by setting the `label-position` attribute of the switch. Allowed values are `before` and `after`(default):
-
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
@@ -215,5 +204,16 @@ igc-switch::part(thumb) {
 
 ## Additional Resources
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

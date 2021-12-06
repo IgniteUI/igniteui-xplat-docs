@@ -2,6 +2,7 @@
 title: $Platform$ Calendar | Calendar | Infragistics
 _description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
 _keywords: $Platform$ Calendar, $ProductName$, Infragistics
+mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 ---
 
 # $Platform$ Calendar Overview
@@ -111,7 +112,7 @@ The following sample demonstrates the above configuration:
 
 Due to their very nature, localization and formatting are essential to any calendar. In the `Calendar` those are controlled and customized through the following properties - `Locale`, `FormatOptions`, `WeekStart`.
 
-Let's go ahead and try those along with other customizations. First thing we need to set is the `WeekStart`, which controls the starting day of the week. It defaults to `sunday`, so we will set it to `monday`. We will also customize the `FormatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `Locale` property to a value, based on the user's location choice:
+Let's go ahead and try those along with other customizations. First thing we need to set is the `WeekStart`, which controls the starting day of the week. It defaults to `Sunday`, so we will set it to `Monday`. We will also customize the `FormatOptions` property which specifies the options used to format the months and the weekdays in the Calendar views. Finally, we will set the `Locale` property to a value, based on the user's location choice:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -157,9 +158,9 @@ If everything went well, we should now have a Calendar with customized display, 
 
 ### Disabled dates
 
-In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `type` and optionally a `DateRange` which is an array of `Date` objects.
+In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
 
-These are the available options for the `type` property:
+These are the available options for the `Type` property:
 *  `After` - disables the dates after the first date in the `DateRange`
 *  `Before` - disables the dates before the first date in the `DateRange`
 *  `Between` - disables the dates between the first and the second date in the `DateRange`

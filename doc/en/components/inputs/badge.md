@@ -24,37 +24,27 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Badge` component, you first need to register its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Badge`, you need and register it as follows:
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `Badge` web component, first you need to install $ProductName$ by typing the following command:
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
 ```ts
-import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcBadgeComponent);
 ```
 
-<!-- end: WebComponents -->
-
-The simplest way to start using the badge is as follows:
+The simplest way to start using the `Badge` is as follows:
 
 ```html
 <igc-badge></igc-badge>
@@ -138,5 +128,16 @@ igc-badge::part(base) {
 
 ## Additional Resources
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

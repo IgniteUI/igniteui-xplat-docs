@@ -11,21 +11,19 @@ The $ProductName$ Icon Button component allows developers to use registered icon
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `IconButton`, we first need to import its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `IconButton`, you need and register it as follows:
 
 ```razor
 IgbIconButtonModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -33,9 +31,7 @@ import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents
 defineComponents(IgcIconButtonComponent);
 ```
 
-<!-- end: WebComponents -->
-
-After we import the icon button component we are ready to start using it, so let's add our first button.
+The simplest way to start using the `IconButton` is as follows:
 
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
@@ -143,7 +139,16 @@ igc-icon-button::part(icon) {
 
 ## Additional Resources
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

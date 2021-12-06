@@ -2,7 +2,7 @@
 title: $Platform$ Calendar | Calendar | インフラジスティックス
 _description: アプリケーションが日付情報を表示し、ユーザーが $ProductName$ Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
 _keywords: $Platform$ Calendar, $Platform$ カレンダー, $ProductName$, インフラジスティックス
-mentionedTypes: ['Calendar']
+mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 _language: ja
 ---
 
@@ -130,7 +130,7 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
 
 カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`Calendar` では、これらは `Locale`、`FormatOptions`、`WeekStart` のプロパティを介して制御およびカスタマイズされます。
 
-先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `WeekStart` です。デフォルトは `sunday` なので、`monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `FormatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`Locale` プロパティを値に設定します:
+先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `WeekStart` です。デフォルトは `Sunday` なので、`Monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `FormatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`Locale` プロパティを値に設定します:
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -176,9 +176,9 @@ this.radios.forEach(radio => {
 
 ### 日付の無効化
 
-場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
+場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `Type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
 
-`type` プロパティで使用できるオプションは次のとおりです:
+`Type` プロパティで使用できるオプションは次のとおりです:
 *  `After` - `DateRange` の最初の日付以降の日付を無効にします。
 *  `Before` - `DateRange` の最初の日付より前の日付を無効にします。
 *  `Between` - `DateRange` の最初の日付と 2 番目の日付の間の日付を無効にします。

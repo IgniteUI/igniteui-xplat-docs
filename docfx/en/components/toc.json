@@ -44,18 +44,6 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Badge",
-    "href": "inputs/badge.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Icon",
-    "href": "layouts/icon.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
     "name": "Card",
     "href": "layouts/card.md",
     "status": "NEW"
@@ -1324,8 +1312,27 @@
     "status": ""
   },
   {
-    "name": "Inputs",
-    "header": true
+    "exclude": ["Angular", "React"],
+    "name": "Data Entry & Display",    
+    "header": true    
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Badge",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Button",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Checkbox",
+    "href": "inputs/checkbox.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1335,8 +1342,8 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Button",
-    "href": "inputs/button.md",
+    "name": "Icon",
+    "href": "layouts/icon.md",
     "status": "NEW"
   },
   {
@@ -1353,15 +1360,14 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Checkbox",
-    "href": "inputs/checkbox.md",
+    "name": "Switch",
+    "href": "inputs/switch.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Switch",
-    "href": "inputs/switch.md",
-    "status": "NEW"
+    "name": "Interactions",
+    "header": true
   },
   {
     "exclude": ["Angular", "React"],
@@ -1370,7 +1376,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Scheduling",
     "header": true
   },
