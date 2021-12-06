@@ -2,14 +2,16 @@
 title: $Platform$ Calendar | Calendar | インフラジスティックス
 _description: アプリケーションが日付情報を表示し、ユーザーが $ProductName$ Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
 _keywords: $Platform$ Calendar, $Platform$ カレンダー, $ProductName$, インフラジスティックス
+mentionedTypes: ['Calendar']
 _language: ja
 ---
 
 # $Platform$ Calendar (カレンダー) の概要
+
 $ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。
 
-
 ## $Platform$ Calendar の例
+
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
@@ -21,6 +23,20 @@ $ProductName$ Calendar コンポーネントは、日付情報を表示するた
 
 ## 使用方法
 
+<!-- Blazor -->
+
+Calendar コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
+
+```razor
+IgbCalendarModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
+
+<!-- WebComponents -->
+
 Calendar コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ パッケージをインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -28,6 +44,8 @@ npm install {PackageComponents}
 </pre>
 
 次の手順は、`Calendar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+
+<!-- end: WebComponents -->
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -63,7 +81,7 @@ defineComponents(IgcCalendarComponent);
 
 ### 範囲選択
 
-同じ方法に従って、`range` 選択モードに切り替えることができます:
+同じ方法に従って、`Selection` を範囲モードに切り替えることができます:
 
 ```html
 <!-- Range selection mode -->
@@ -83,10 +101,10 @@ Calendar コンポーネントを使用すると、日、月、年の 3 つの�
 
 ### ヘッダー オプション
 
-デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの`垂直方向`または`水平方向`を構成することもできます。
+デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
 
 > [!NOTE]
-> 選択が複数の場合、Calendar ヘッダーが描画されないことに注意してください。
+> `Selection` が複数に設定されている場合、Calendar ヘッダーが描画されないことに注意してください。
 
 > [!NOTE]
 > Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
