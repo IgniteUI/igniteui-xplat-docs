@@ -10,7 +10,7 @@ _language: ja
 
 $ProductName$ Data Table / Data Grid は、データを $Platform$ データ グリッドに表示する方法を 5 つの列タイプとテンプレート列タイプから選択できます。サポートされている列タイプは、Text 列、Numeric 列、DateTime 列、Image 列、ComboBox および Template です。
 
-各列は、`Field` プロパティを、グリッドにバインドされた基になる データソースの項目の対応するプロパティの名前に設定することによって $Platform$ データ グリッドにバインドします。
+各列は、`Field` プロパティを、グリッドにバインドされた基になる データ ソースの項目の対応するプロパティの名前に設定することによって $Platform$ データ グリッドにバインドします。
 
 ## $Platform$ 列タイプの例
 
@@ -196,7 +196,7 @@ public onAddressCellUpdating(s: IgrTemplateColumn, e: IgrTemplateCellUpdatingEve
 }
 ```
 
-以下は、上記の列で使用するサンプルデータソースです。
+以下は、上記の列で使用するサンプルデータ ソースです。
 
 ```ts
 const maleNames: string[] = ["Kyle", "Oscar", "Ralph", "Torrey", "Bill", "Frank", "Howard", "Jack", "Larry", "Pete", "Steve", "Vince", "Mark", "Alex", "Max", "Brian", "Chris", "Andrew", "Martin", "Mike", "Steve", "Glenn", "Bruce"];
