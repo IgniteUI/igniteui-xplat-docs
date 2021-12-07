@@ -90,24 +90,7 @@
     "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Editors",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
-  },
+  },  
   {
     "exclude": ["Angular"],
     "name": "Grids & Lists",
@@ -551,12 +534,6 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
-        },
-        {
-          "exclude": ["Blazor"],
-          "name": "Zoom Slider",
-          "href": "zoomslider-overview.md",
           "status": ""
         }
       ]
@@ -1281,17 +1258,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
-    "name": "Interactions",
-    "header": true
-  },
-  {
-    "exclude": ["Blazor"],
-    "name": "Zoom Slider",
-    "href": "zoomslider-overview.md",
-    "status": ""
-  },
-  {
     "exclude": ["Angular", "React"],
     "name": "Data Entry & Display",
     "header": true
@@ -1333,6 +1299,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md",
@@ -1344,8 +1316,7 @@
     "href": "inputs/switch.md",
     "status": "NEW"
   },
-  {
-    "exclude": ["Angular", "React"],
+  {    
     "name": "Interactions",
     "header": true
   },
@@ -1356,7 +1327,13 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Blazor"],
+    "name": "Zoom Slider",
+    "href": "zoomslider-overview.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
     "name": "Scheduling",
     "header": true
   },
@@ -1365,5 +1342,11 @@
     "name": "Calendar {ReleaseStatus_WebsInputs}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   }
 ]
