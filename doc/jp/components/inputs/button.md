@@ -10,6 +10,8 @@ _language: ja
 
 $ProductName$ Button は、実現したい外観と機能に一致するように簡単に構成できるさまざまなバリアントとスタイルを提供します。
 
+<div class="divider"></div>
+
 ## $Platform$ Button の例
 
 <code-view style="height: 100px"

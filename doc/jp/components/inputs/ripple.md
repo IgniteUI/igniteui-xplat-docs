@@ -10,6 +10,7 @@ _language: ja
 
 $ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。
 
+
 <div class="divider"></div>
 
 ## $Platform$ Ripple の例

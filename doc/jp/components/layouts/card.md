@@ -6,11 +6,12 @@ mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia'
 _language: ja
 ---
 
-# Card (カード)
+# $Platform$ Card (カード) の概要
 
 $ProductName$ `Card ` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
-## Card の例
+
+## $Platform$ Card の例
 
 <code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

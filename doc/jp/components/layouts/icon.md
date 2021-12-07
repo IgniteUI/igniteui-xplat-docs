@@ -10,6 +10,7 @@ _language: ja
 
 $ProductName$ アイコン コンポーネントを使用すると、開発者は登録済みの SVG をアプリケーションのアイコンとして使用できます。
 
+
 ## $Platform$ Icon の例
 
 <code-view style="height: 50px"

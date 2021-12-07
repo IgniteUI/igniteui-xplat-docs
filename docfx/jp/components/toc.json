@@ -38,30 +38,30 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "アバター",
+    "name": "アバター {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "カード",
+    "name": "カード {ReleaseStatus_WebsInputs}",
     "href": "layouts/card.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor"],
-    "name": "ドック マネージャー",
+    "exclude": ["Angular"],
+    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "ペインの更新",
         "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "フレームの埋め込み",
         "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
@@ -75,39 +75,19 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "ドック マネージャー (追加予定)",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "ペインの更新",
-        "href": "dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "フレームの埋め込み",
-        "href": "dock-manager-embedding-frames.md",
-        "status": ""
-      }
-    ]
-  },
-  {
     "exclude": ["Angular", "React"],
     "name": "メニュー",
     "header": true
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "ナビゲーション バー",
+    "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
     "href": "menus/navbar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "ナビゲーション ドロワー",
+    "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
   },
@@ -136,7 +116,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "リスト",
+    "name": "リスト {ReleaseStatus_WebsList}",
     "href": "grids/list.md",
     "status": "NEW"
   },
@@ -1318,49 +1298,49 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "バッジ",
+    "name": "バッジ {ReleaseStatus_WebsInputs}",
     "href": "inputs/badge.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "ボタン",
+    "name": "ボタン {ReleaseStatus_WebsInputs}",
     "href": "inputs/button.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "チェックボックス",
+    "name": "チェックボックス {ReleaseStatus_WebsInputs}",
     "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "フォーム",
+    "name": "フォーム {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "アイコン",
+    "name": "アイコン {ReleaseStatus_WebsInputs}",
     "href": "layouts/icon.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "アイコン ボタン",
+    "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "ラジオ & ラジオ グループ",
+    "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "スイッチ",
+    "name": "スイッチ {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md",
     "status": "NEW"
   },
@@ -1371,7 +1351,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "リップル",
+    "name": "リップル {ReleaseStatus_WebsInputs}",
     "href": "inputs/ripple.md",
     "status": "NEW"
   },
@@ -1382,7 +1362,7 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "カレンダー",
+    "name": "カレンダー {ReleaseStatus_WebsInputs}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
   }

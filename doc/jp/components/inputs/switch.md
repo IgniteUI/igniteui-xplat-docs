@@ -10,9 +10,10 @@ _language: ja
 
 $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
 
+
 <div class="divider"></div>
 
-## Switch の例
+## $Platform$ Switch の例
 
 <code-view style="height:200px"
            data-demos-base-url="{environment:demosBaseUrl}"

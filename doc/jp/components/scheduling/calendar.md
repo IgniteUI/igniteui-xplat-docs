@@ -10,6 +10,7 @@ _language: ja
 
 $ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。
 
+
 ## $Platform$ Calendar の例
 
 <div class="divider--half"></div>

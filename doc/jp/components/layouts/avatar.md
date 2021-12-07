@@ -10,6 +10,7 @@ _language: ja
 
 $ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
 
+
 <div class="divider"></div>
 
 ## $Platform$ Icon Avatar の例

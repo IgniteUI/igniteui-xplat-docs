@@ -10,6 +10,18 @@ _language: ja
 
 $ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
+<div class="divider"></div>
+
+# $Platform$ Icon Button の例
+
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button の例"
+           github-src="inputs/icon-button/size">
+</code-view>
+
+<div class="divider"></div>
+
 ## 使用方法
 
 <!-- WebComponents -->

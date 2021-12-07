@@ -8,11 +8,13 @@ _language: ja
 
 # $Platform$ (フォーム) の概要
 
-`Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+$ProductName$ `Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+
+<div class="divider"></div>
 
 ## $Platform$ の例
 
-次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがあるフォームを表しています。
+次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがある `Form` を表しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
