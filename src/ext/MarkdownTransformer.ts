@@ -188,31 +188,28 @@ function transformCodeRefs(options: any) {
             // console.log("getApiLink memberName " + memberName);
             if (isTypeName) {
                 link = getApiLink(apiDocRoot, apiTypeName!, null, options);
-
-
-                // if (link) {
-                //     parent.children.splice(index, 1, link);
-                //     return;
-                // }
             } else {
                 link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
                 // console.log("getApiLink other " + link.url);
             }
 
-            // overriding api root for components specified in docsConfig.json
-            for (const component of apiDocOverrideComponents) {
-                var name = (options.platformPascalPrefix + component).toLowerCase();
-                //var name = component.toLowerCase();
-                var urls = link.url.toLowerCase();
-                if (urls.indexOf(name) >= 0) {
-                    // console.log("getApiLink replace " + name + " " + urls);
-                    // link.url = urls.replace(apiDocRoot, apiDocOverrideRoot);
-                    link.url = urls.replace("\/api\/docs\/", "\/docs\/");
-                }
-            }
-
-            //console.log("getApiLink " + link.url);
             if (link) {
+                // overriding api root for components specified in docsConfig.json
+                if (apiDocOverrideComponents !== undefined) {
+                    //console.log("getApiLink replace apiDocOverride " + link.url);
+                    for (const component of apiDocOverrideComponents) {
+                        let className = new RegExp(component.toLowerCase() + ".*.html", "im")
+                        if (link.url.match(className)) {
+                            // if (link.url.indexOf("calendar") >= 0)
+                            //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
+                            link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                            //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
+                            //if (link.url.indexOf("calendar") >= 0)
+                            //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
+                        }
+                    }
+                }
+                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
@@ -1296,6 +1293,9 @@ export class MarkdownTransformer {
                         status = "";
                     }
 
+                    // if (node.name && node.name.indexOf("BETA") > 0) {
+                    //     yml += tab + "  beta: true" + "\n";
+                    // } else
                     if (status.toUpperCase() === "NEW") {
                         yml += tab + "  new: true" + "\n";
                     }

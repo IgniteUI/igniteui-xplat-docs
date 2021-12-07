@@ -9,6 +9,7 @@ mentionedTypes: ['Ripple', 'Button']
 
 The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
 
+
 <div class="divider"></div>
 
 ## $Platform$ Ripple Example
@@ -21,21 +22,19 @@ The $ProductName$ Ripple component creates an animation in response to a touch o
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Ripple` component, we first need to import its module, like so:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Ripple`, you need and register it as follows:
 
 ```razor
 IgbRippleModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the `Ripple` Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -43,9 +42,7 @@ import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
 defineComponents(IgcRippleComponent);
 ```
 
-<!-- end: WebComponents -->
-
-After we import the ripple component we are ready to start using it, so let's add the ripple to an existing component from our library.
+The simplest way to start using the `Ripple` is as follows:
 
 ```html
 <igc-button>
@@ -95,7 +92,16 @@ Additional Web Components that were used:
 
 ## Additional Resources
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -7,7 +7,10 @@ mentionedTypes: ['Button', 'ButtonBase']
 
 # $Platform$ Button Overview
 
-The Ignite UI for Web Components Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+The $ProductName$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+
+
+<div class="divider"></div>
 
 ## $Platform$ Button Example
 
@@ -20,39 +23,31 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Button` component, you first need to register the `IgbButtonModule`.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Button`, you need and register it as follows:
 
 ```razor
 IgbButtonModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started we need to import the `Button` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ```ts
-import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcButtonComponent);
 ```
 
-After we import the button component we are ready to start using it, so let's add our first button.
+The simplest way to start using the `Button` is as follows:
 
 ```html
 <igc-button type="button" variant="contained">
-    <span slot="prefix">+</span>
-    Click me
-    <span slot="suffix">-</span>
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </igc-button>
 ```
 
@@ -195,6 +190,8 @@ igc-button::part(base) {
            github-src="inputs/button/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Button`
@@ -204,9 +201,20 @@ Additional Web Components that were used:
 * `RadioGroup`
 * `Radio`
 
+<!-- end: WebComponents -->
+
 ## Additional Resources
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

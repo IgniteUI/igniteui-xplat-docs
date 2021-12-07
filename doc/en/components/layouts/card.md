@@ -5,11 +5,12 @@ _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Nat
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 ---
 
-# Card
+# $Platform$ Card Overview
 
 The $ProductName$ Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
-## Card Example
+
+## $Platform$ Card Example
 
 <code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -26,32 +27,28 @@ Cards allow you to easily display content composed of different types of objects
 
 ### Getting Started
 
-<!-- Blazor -->
 
-To get started, we will need to register the its module, like so:
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Card`, you need and register it as follows:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started we need to import the `Card` along with its building blocks in our typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-```typescript
-// index.ts
-...
+```ts
 import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+
 defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
 
-<!-- end: WebComponents -->
-
-Then, to represent the demo card template, we can add the following code to our html file.
+Then, to represent the demo card template, we can add the following code:
 
 ```html
 <igc-card>
@@ -422,8 +419,16 @@ Additional components and/or directives that were used:
 
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+<!-- Blazor -->
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

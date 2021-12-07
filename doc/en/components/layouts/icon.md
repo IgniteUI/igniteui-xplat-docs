@@ -9,6 +9,7 @@ mentionedTypes: ['Icon']
 
 $ProductName$ Icon component allows developers to use any registered SVG as icon in their application.
 
+
 ## $Platform$ Icon Example
 
 <code-view style="height: 50px"
@@ -21,31 +22,19 @@ $ProductName$ Icon component allows developers to use any registered SVG as icon
 
 ## Usage
 
-<!-- Blazor -->
+<!-- WebComponents -->
+First, you need to install the $ProductName$ by running the following command:
 
-To get started with the `Icon` component, you first need to register the `IgbIconModule`.
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+Before using the `Icon`, you need and register it as follows:
 
 ```razor
 IgbIconModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-To get started with the icon web component, first you need to install the $ProductName$ by typing the following command:
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-The next step is to import the `Icon` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -53,9 +42,7 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
-## Usage
-
-The $ProductName$ icon component doesn't contain any icons on its own. It's a conduit for displaying any _registered_ SVG images.
+The `Icon` doesn't contain any icons on its own. It's a conduit for displaying any _registered_ SVG images.
 
 ### Adding Icons
 
@@ -136,13 +123,26 @@ igc-icon {
            github-src="layouts/icon/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API Reference
 
 * `Icon`
 
+<!-- end: WebComponents -->
+
 ## Additional Resources
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
