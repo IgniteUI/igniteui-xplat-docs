@@ -9,6 +9,9 @@ mentionedTypes: ['Button', 'ButtonBase']
 
 The $ProductName$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
 
+
+<div class="divider"></div>
+
 ## $Platform$ Button Example
 
 <code-view style="height: 100px"

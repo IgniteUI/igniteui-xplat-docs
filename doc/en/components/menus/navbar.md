@@ -7,7 +7,8 @@ mentionedTypes: ['Navbar']
 
 # $Platform$ Navbar Overview
 
- $Platform$ `Navbar` informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+The $ProductName$ Navbar informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+
 
 ## $Platform$ Navbar Example
 

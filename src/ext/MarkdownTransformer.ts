@@ -1293,6 +1293,9 @@ export class MarkdownTransformer {
                         status = "";
                     }
 
+                    // if (node.name && node.name.indexOf("BETA") > 0) {
+                    //     yml += tab + "  beta: true" + "\n";
+                    // } else
                     if (status.toUpperCase() === "NEW") {
                         yml += tab + "  new: true" + "\n";
                     }

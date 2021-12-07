@@ -9,6 +9,7 @@ mentionedTypes: ['Icon']
 
 $ProductName$ Icon component allows developers to use any registered SVG as icon in their application.
 
+
 ## $Platform$ Icon Example
 
 <code-view style="height: 50px"

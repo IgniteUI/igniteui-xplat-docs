@@ -38,30 +38,30 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Avatar",
+    "name": "Avatar {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Card",
+    "name": "Card {ReleaseStatus_WebsInputs}",
     "href": "layouts/card.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor"],
-    "name": "Dock Manager",
+    "exclude": ["Angular"],
+    "name": "Dock Manager {ReleaseStatus_DockManager}",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "Using Panes",
         "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "Embedding Frames",
         "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
@@ -75,39 +75,19 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Dock Manager (Coming Soon)",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
-        "status": ""
-      }
-    ]
-  },
-  {
     "exclude": ["Angular", "React"],
     "name": "Menus",
     "header": true
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Navbar",
+    "name": "Navbar {ReleaseStatus_WebsMenus}",
     "href": "menus/navbar.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Navigation Drawer",
+    "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
   },
@@ -136,7 +116,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "List",
+    "name": "List {ReleaseStatus_WebsList}",
     "href": "grids/list.md",
     "status": "NEW"
   },
@@ -1313,54 +1293,54 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Data Entry & Display",    
-    "header": true    
+    "name": "Data Entry & Display",
+    "header": true
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Badge",
+    "name": "Badge {ReleaseStatus_WebsInputs}",
     "href": "inputs/badge.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Button",
+    "name": "Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/button.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Checkbox",
+    "name": "Checkbox {ReleaseStatus_WebsInputs}",
     "href": "inputs/checkbox.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Form",
+    "name": "Form {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Icon",
+    "name": "Icon {ReleaseStatus_WebsInputs}",
     "href": "layouts/icon.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Icon Button",
+    "name": "Icon Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Radio & Radio Group",
+    "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Switch",
+    "name": "Switch {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md",
     "status": "NEW"
   },
@@ -1371,7 +1351,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Ripple",
+    "name": "Ripple {ReleaseStatus_WebsInputs}",
     "href": "inputs/ripple.md",
     "status": "NEW"
   },
@@ -1382,7 +1362,7 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Calendar",
+    "name": "Calendar {ReleaseStatus_WebsInputs}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
   }

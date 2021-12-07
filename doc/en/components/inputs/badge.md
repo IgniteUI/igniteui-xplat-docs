@@ -5,9 +5,10 @@ _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Pl
 mentionedTypes: ['Badge']
 ---
 
-# $Platform$ Badge
+# $Platform$ Badge Overview
 
 The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+
 
 <div class="divider"></div>
 

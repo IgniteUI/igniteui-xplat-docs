@@ -9,6 +9,7 @@ mentionedTypes: ['Avatar']
 
 The $ProductName$ Avatar helps to display initials, images, or icons in your application.
 
+
 <div class="divider"></div>
 
 ## $Platform$ Icon Avatar Example
