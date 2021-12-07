@@ -25,21 +25,19 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`Avatar` の使用を開始するには、最初に次のようにモジュールを登録する必要があります:
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Avatar` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-開始するには、typescript ファイルに `Avatar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
@@ -47,12 +45,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-<!-- end: WebComponents -->
-
-`Avatar` コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のアバターを追加しましょう。
-
-アバター コンポーネントは、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。
-`Avatar` の宣言は次のように簡単です:
+`Avatar` は、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。`Avatar` の宣言は次のように簡単です。
 
 ```html
 <igc-avatar></igc-avatar>
@@ -181,5 +174,16 @@ igc-avatar::part(base) {
 
 ## その他のリソース
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

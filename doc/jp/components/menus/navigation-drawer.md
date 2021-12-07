@@ -21,33 +21,20 @@ _language: ja
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`Navbar` コンポーネントの使用を開始するには、最初に `IgbNavbarModule` とオプションの `IgbNavDrawerHeaderItemModule` を登録する必要があります。
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`NavDrawer` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbNavDrawerModule.Register(IgniteUIBlazor);
 IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-`NavDrawer` の使用を開始するには、最初に次のコマンドを実行して $ProductName$ をインストールする必要があります:
-
-```cmd
-npm install {PackageComponents}
-```
-
-次に、`NavDrawer` と `NavDrawerHeaderItem` および `NavDrawerItem` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
-
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -55,9 +42,10 @@ import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponen
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
 ```
 
+
 ## Navigation Drawer 項目の追加
 
-Navigation Drawer コンポーネントがインポートされたら、使用を開始する準備が整いました。いくつかの項目を含む単純な Navigation Drawer を表示する次のコードを追加できます。
+`NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
     <div style="display: flex;">
@@ -87,6 +75,8 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
            alt="$Platform$ Navigation Drawer 項目の例"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
+
+## Navbar の統合
 
 ドロワーには任意のコンテンツを提供できますが、`NavDrawerItem` が定義済みのスタイル設定を項目に適用します。
 
@@ -123,7 +113,6 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
 // ...
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
   IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
-
 
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
     IgcRadioComponent, IgcRadioGroupComponent);
@@ -246,6 +235,8 @@ igc-nav-drawer-header-item {
            github-src="menus/nav-drawer/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `NavDrawer`
@@ -259,11 +250,20 @@ igc-nav-drawer-header-item {
 * `Radio`
 * `RadioGroup`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
 
-コミュニティに参加して新しいアイデアをご提案ください。
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
