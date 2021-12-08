@@ -2,6 +2,7 @@
 title: $Platform$ Switch コンポーネント – $ProductName$
 _description: $ProductName$ Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Switch コントロール
+mentionedTypes: ['Switch']
 _language: ja
 ---
 
@@ -9,9 +10,10 @@ _language: ja
 
 $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
 
+
 <div class="divider"></div>
 
-## Switch の例
+## $Platform$ Switch の例
 
 <code-view style="height:200px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -23,15 +25,21 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 
 ## 使用方法
 
-スイッチ コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
+`Switch` コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
-スイッチ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
-npm install igniteui-webcomponents
+npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
-次の手順は、`Switch` を使用する typescript ファイルにインポートし、次のように [`defineComponents（）`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+`Switch` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbSwitchModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -39,14 +47,18 @@ import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
 defineComponents(IgcSwitchComponent);
 ```
 
-スイッチの使用を開始する最も簡単な方法は次のとおりです:
+`Switch` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-switch></igc-switch>
 ```
 
+```razor
+<IgbSwitch />
+```
+
 >[!WARNING]
->スイッチ コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
+>`Switch` コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
 ## 例
 
@@ -58,11 +70,18 @@ defineComponents(IgcSwitchComponent);
 <igc-switch>Label</igc-switch>
 ```
 
-スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
+```razor
+<IgbSwitch>Label</IgbSwitch>
+```
 
+スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
+```
+
+```razor
+<IgbSwitch LabelPosition="@CheckboxBaseLabelPosition.Before">Label</IgbSwitch>
 ```
 
 スイッチには、スイッチの外部の要素でラベルを付けることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
@@ -71,6 +90,12 @@ defineComponents(IgcSwitchComponent);
 <span id="switch-label">Label</span>
 <igc-switch aria-labelledby="switch-label"></igc-switch>
 ```
+
+```razor
+<span id="switch-label>Label</span>
+<IgbSwitch AriaLabelledBy="switch-label" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
@@ -85,6 +110,11 @@ defineComponents(IgcSwitchComponent);
 ```html
 <igc-switch checked></igc-switch>
 ```
+
+```razor
+<IgbSwitch Checked="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
@@ -100,12 +130,20 @@ defineComponents(IgcSwitchComponent);
 <igc-switch required></igc-switch>
 ```
 
+```razor
+<IgbSwitch Required="true" />
+```
+
 ### 無効
 
 `invalid` 属性を使用して、スイッチを無効としてマークします。
 
 ```html
 <igc-switch invalid></igc-switch>
+```
+
+```razor
+<IgbSwitch Invalid="true" />
 ```
 
 ### オフ
@@ -115,6 +153,11 @@ defineComponents(IgcSwitchComponent);
 ```html
 <igc-switch disabled></igc-switch>
 ```
+
+```razor
+<IgbSwitch Disabled="true" />
+```
+
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
@@ -128,6 +171,10 @@ defineComponents(IgcSwitchComponent);
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
+```
+
+```razor
+<IgbSwitch Value="enabled" />
 ```
 
 ## スタイル設定
@@ -147,13 +194,28 @@ igc-switch::part(thumb) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Switch`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
+## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

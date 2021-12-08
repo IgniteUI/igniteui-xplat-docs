@@ -1,18 +1,42 @@
-<!-- --- -->
-<!-- title: $Platform$ Icon Button コンポーネント -->
-<!-- _description: 開発者は、$ProductName$ Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。 -->
-<!-- _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール
+---
+title: $Platform$ Icon Button コンポーネント
+ _description: 開発者は、$ProductName$ Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール
+mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
 _language: ja
--->
-<!-- --- -->
+---
 
 # $Platform$ Icon Button (アイコン ボタン) の概要
 
 $ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
+<div class="divider"></div>
+
+# $Platform$ Icon Button の例
+
+<code-view style="height: 75px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button の例"
+           github-src="inputs/icon-button/size">
+</code-view>
+
+<div class="divider"></div>
+
 ## 使用方法
 
-Icon Button Web コンポーネントの使用を開始するには、`IconButton` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`IconButton` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbIconButtonModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -20,10 +44,14 @@ import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents
 defineComponents(IgcIconButtonComponent);
 ```
 
-アイコン ボタン コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のボタンを追加しましょう。
+`IconButton` の使用を開始する最も簡単な方法は次のとおりです。
 
 ```html
 <igc-icon-button name="thumb-up" collection="material"></igc-icon-button>
+```
+
+```razor
+<IgbIconButton Collection="material" />
 ```
 
 ## 例
@@ -42,6 +70,10 @@ defineComponents(IgcIconButtonComponent);
 <igc-icon-button name="search" variant="contained"></igc-icon-button>
 ```
 
+```razor
+<IgbIconButton Variant="@IconButtonVariant.Contained" />
+```
+
 ### サイズ
 
 ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ (`small`、`medium`、`large` (デフォルト)) のいずれかに設定することで変更できます。
@@ -56,6 +88,10 @@ defineComponents(IgcIconButtonComponent);
 <igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
 ```
 
+```razor
+<IgbIconButton Size="@SizableComponentSize.Medium" />
+```
+
 ### タイプ
 
 `href` 属性が設定されると、アイコン ボタン コンポーネントはその内部構造を `<button>` から `<a>` タイプ要素に変更します。その場合、アイコン ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、アイコン ボタンの `rel`、`target`、および `download` 属性も設定できます。
@@ -65,9 +101,12 @@ defineComponents(IgcIconButtonComponent);
   name="thumb-up"
   collection="material"
   href="https://duckduckgo.com"
-  target="_blank"
->
+  target="_blank">
 </igc-icon-button>
+```
+
+```razor
+<IgbIconButton Collection="material" Href="https://duckduckgo.com" Target="_blank" />
 ```
 
 ### Mirrored (ミラー化済み)
@@ -76,6 +115,10 @@ defineComponents(IgcIconButtonComponent);
 
 ```html
 <igc-icon-button name="thumb-up" mirrored></igc-icon-button>
+```
+
+```razor
+<IgbIconButton Mirrored="true" />
 ```
 
 ## スタイル設定
@@ -95,17 +138,30 @@ igc-icon-button::part(icon) {
 
 <code-view style="height: 75px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button の例"
            github-src="inputs/icon-button/styling">
 </code-view>
+
+<!-- WebComponents -->
 
 ## API リファレンス
 
 * `IconButton`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

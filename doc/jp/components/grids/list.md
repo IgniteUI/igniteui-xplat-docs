@@ -1,13 +1,14 @@
 ---
-title: $Platform$ List Component | Infragistics
-_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+title: $Platform$ List コンポーネント | インフラジスティックス
+_description: インフラジスティックスの $Platform$ List コンポーネントは、項目のグループを表示するのに役立ちます。$ProductName$ を使用したデータの表示方法について説明します。
+_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics, $Platform$ リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['List']
+_language: ja
 ---
 
 # $Platform$ List (リスト) の概要
 
-List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。List コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
+$ProductName$ List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。`List` コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
 
 ## $Platform$ List の例
 
@@ -26,34 +27,28 @@ List 要素は、項目のグループを番号の付いた形式または黒丸
 
 List Web コンポーネントは、項目の垂直リストを簡単に表示できます。
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`IgbList` コンポーネントの使用を開始するには、最初に `IgbListModule` を登録する必要があります。
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`List` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-List Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して Ignite UI for Web Components をインストールする必要があります。
-```cmd
-npm install igniteui-webcomponents
-```
-
-次の手順は、typescript ファイル内の項目とともに `List` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してそれらを登録することです。
-
-```typescript
-// index.ts
-...
+```ts
 import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
 
-<!-- end: WebComponents -->
+`List` の使用を開始する最も簡単な方法は次のとおりです:
+
 
 ### リスト項目の追加
 
@@ -332,24 +327,40 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
-この記事では、List Web コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、アバターやボタンなどの追加の Ignite UI Web Components を使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
+この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の $ProductName$ コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 
 * `List`
 * `ListHeader`
 * `ListItem`
 
-使用したその他の Web Components:
+使用したその他のコンポーネント:
 
 * `Avatar`
 * `Button`
 * `RadioGroup`
 * `Radio`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
+## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
+

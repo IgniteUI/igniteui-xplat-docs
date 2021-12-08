@@ -6,7 +6,7 @@ mentionedTypes: ['Badge']
 _language: ja
 ---
 
-# $Platform$ Badge (バッジ)
+# $Platform$ Badge (バッジ) の概要
 
 $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
@@ -25,35 +25,27 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-`IgbBadge` コンポーネントの使用を開始するには、最初に `IgbBadgeModule` を登録する必要があります。
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Badge` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-バッジ ウェブ コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
-
-```cmd
-npm install igniteui-webcomponents
-```
-
-次の手順は、`Badge` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
-
 ```ts
-import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
 
 defineComponents(IgcBadgeComponent);
 ```
 
-<!-- end: WebComponents -->
-
-バッジの使用を開始する最も簡単な方法は次のとおりです:
+`Badge` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-badge></igc-badge>
@@ -125,13 +117,28 @@ igc-badge::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Badge`
 
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
+## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

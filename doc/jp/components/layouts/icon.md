@@ -2,12 +2,14 @@
 title: $Platform$ Icon コンポーネント
 _description: 開発者は、$ProductName$ Icon コンポーネントを使用して、さまざまなアイコンをカスタム色などと交換可能に使用できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
+mentionedTypes: ['Icon']
 _language: ja
 ---
 
 # $Platform$ Icon (アイコン) の概要
 
 $ProductName$ アイコン コンポーネントを使用すると、開発者は登録済みの SVG をアプリケーションのアイコンとして使用できます。
+
 
 ## $Platform$ Icon の例
 
@@ -21,13 +23,19 @@ $ProductName$ アイコン コンポーネントを使用すると、開発者�
 
 ## 使用方法
 
-Icon Web コンポーネントの使用を開始するには、最初に次のコマンドを入力して $ProductName$ をインストールする必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
 ```cmd
-npm install igniteui-webcomponents
+npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
-次の手順は、`Icon` を使用する typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録することです。
+`Icon` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbIconModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
@@ -35,9 +43,7 @@ import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 defineComponents(IgcIconComponent);
 ```
 
-## 使用方法
-
-$ProductName$ アイコン コンポーネントには、それ自体にアイコンは含まれていません。これは、登録された SVG 画像を表示するためのコンジットです。
+`Icon` には、それ自体にアイコンは含まれていません。これは、登録された SVG 画像を表示するためのコンジットです。
 
 ### アイコンの追加
 
@@ -118,13 +124,26 @@ igc-icon {
            github-src="layouts/icon/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Icon`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

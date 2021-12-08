@@ -5,13 +5,16 @@ _keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム
 mentionedTypes: ['Form']
 _language: ja
 ---
+
 # $Platform$ (フォーム) の概要
 
-`Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+$ProductName$ `Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+
+<div class="divider"></div>
 
 ## $Platform$ の例
 
-次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがあるフォームを表しています。
+次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがある `Form` を表しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,28 +23,21 @@ _language: ja
            github-src="inputs/form/overview">
 </code-view>
 
-## 依存関係
-
-Form コンポーネントを使用するには、Web コンポーネント パッケージをインストールする必要があります。
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageWebComponents}
-</pre>
-
 ## 使用方法
 
-Form コンポーネントがインポートされたら、それをページに追加してコンテンツを追加できます。
 
-```html
-<igc-form>
-  <div>Subscribe</div>
-  <igc-input required name="name" type="text" label="Your Name"></igc-input>
-  <igc-input required name="email" type="email" label="Your E-mail"></igc-input>
-  <igc-checkbox name="agreement">I accept the license agreement</igc-checkbox>
-  <br />
-  <igc-button type="reset">Reset</igc-button>
-  <igc-button type="submit">Submit</igc-button>
-</igc-form>
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Form` を使用する前に、次のように登録する必要があります。
+
+```razor
+IgbFormModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -50,11 +46,20 @@ import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxCompon
 defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
 ```
 
+`Form` の使用を開始する最も簡単な方法は次のとおりです:
+
+<code-view style="height: 300px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
+           alt="$Platform$ Form の例"
+           github-src="inputs/form/overview">
+</code-view>
+
 フォーム データは、次のコンポーネントについて収集されます:
-- `checkbox`
-- `input`
-- `radio`
-- `switch`
+- `Checkbox`
+- `Input`
+- `Radio`
+- `Switch`
 
 フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、`novalidate` 属性を `Form` 要素に追加できます。
 
@@ -91,6 +96,8 @@ Form コンポーネントは、次のメソッドを公開します:
 |`getFormData`|フォーム データを収集し、単一の FormData オブジェクトを返します。|
 |`reportValidity`|要素の子コントロールが検証制約を満たしているかどうかを返します。|
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 フォームの API の詳細については、次のリンクを参照してください。
@@ -103,11 +110,22 @@ Form コンポーネントは、次のメソッドを公開します:
 * `Radio`
 * `Switch`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
+
 ## その他のリソース
 
-<div class="divider--half"></div>
-コミュニティに参加して新しいアイデアをご提案ください。
+<!-- Blazor -->
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

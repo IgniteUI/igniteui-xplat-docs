@@ -1,13 +1,13 @@
 ---
 title: $Platform$ データ グリッド | リモート データ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ グリッド コンポーネントの仮想データソースを使用してリモート データをバインドします。$ProductName$ テーブル チュートリアルを是非お試しください!
+_description: インフラジスティックスの $Platform$ グリッド コンポーネントの仮想データ ソースを使用してリモート データをバインドします。$ProductName$ テーブル チュートリアルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, virtual data, $ProductName$, Infragistics, data binding, $Platform$ テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
 # $Platform$ グリッド仮想データのバインド
 
-$ProductName$ Data Table / Data Grid は、1 行のコードでリモート データソースへのデータ バインドをサポートします。$Platform$ データ テーブルの仮想データソースを使用すると、リモート URI と返される Odata エンティティで $Platform$ グリッドを設定するだけで、残りの作業は $Platform$ グリッドが行います。
+$ProductName$ Data Table / Data Grid は、1 行のコードでリモート データ ソースへのデータ バインドをサポートします。$Platform$ データ テーブルの仮想データ ソースを使用すると、リモート URI と返される Odata エンティティで $Platform$ グリッドを設定するだけで、残りの作業は $Platform$ グリッドが行います。
 
 ## $Platform$ グリッド仮想データのバインドの例
 
@@ -24,7 +24,7 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 
 
 <!-- Angular, React, WebComponents -->
-コア パッケージとグリッド パッケージに加えて、データソース パッケージもインストールする必要があります。
+コア パッケージとグリッド パッケージに加えて、データ ソース パッケージもインストールする必要があります。
 
 - **npm install --save {PackageCore}**
 - **npm install --save {PackageGrids}**
@@ -67,7 +67,7 @@ ModuleManager.register(
 
 ## コード スニペット
 
-グリッド モジュールがインポートされました。以下のステップはリモート データにバインドするグリッドの基本的な設定です。仮想データソースを作成します。データが取得される URL を `baseUri` プロパティに割り当てます。`entitySet` プロパティを設定すると、仮想データソースから取得するテーブルがわかります。
+グリッド モジュールがインポートされました。以下のステップはリモート データにバインドするグリッドの基本的な設定です。仮想データ ソースを作成します。データが取得される URL を `baseUri` プロパティに割り当てます。`entitySet` プロパティを設定すると、仮想データ ソースから取得するテーブルがわかります。
 
 ```tsx
 <IgrDataGrid
@@ -85,7 +85,7 @@ ModuleManager.register(
 </igc-data-grid>
 ```
 
-データソースをグリッドに割り当てます。
+データ ソースをグリッドに割り当てます。
 
 ```ts
 private virtualData: ODataVirtualDataSource;
