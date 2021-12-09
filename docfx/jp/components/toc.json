@@ -90,24 +90,7 @@
     "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "エディター",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "複数列コンボ ボックス",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "日付選択",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
-  },
+  },  
   {
     "exclude": ["Angular"],
     "name": "グリッド & リスト",
@@ -551,12 +534,6 @@
         {
           "name": "チャート トレンドライン",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
-        },
-        {
-          "exclude": ["Blazor"],
-          "name": "ズーム スライダー",
-          "href": "zoomslider-overview.md",
           "status": ""
         }
       ]
@@ -1281,17 +1258,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
-    "name": "インタラクション",
-    "header": true
-  },
-  {
-    "exclude": ["Blazor"],
-    "name": "ズーム スライダー",
-    "href": "zoomslider-overview.md",
-    "status": ""
-  },
-  {
     "exclude": ["Angular", "React"],
     "name": "データ入力と表示",    
     "header": true
@@ -1333,6 +1299,18 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular"],
+    "name": "複数列コンボ ボックス",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "入力 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/input.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md",
@@ -1344,8 +1322,7 @@
     "href": "inputs/switch.md",
     "status": "NEW"
   },
-  {
-    "exclude": ["Angular", "React"],
+  {    
     "name": "インタラクション",
     "header": true
   },
@@ -1356,7 +1333,13 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Blazor"],
+    "name": "ズーム スライダー",
+    "href": "zoomslider-overview.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
     "name": "スケジュール",
     "header": true
   },
@@ -1365,5 +1348,11 @@
     "name": "カレンダー {ReleaseStatus_WebsInputs}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "日付ピッカー",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   }
 ]
