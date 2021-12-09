@@ -2,6 +2,8 @@
 title: $Platform$ Ripple
 _description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
+_language: kr
+mentionedTypes: ['Ripple']
 ---
 
 # $Platform$ Ripple Overview

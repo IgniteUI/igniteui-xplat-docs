@@ -5,57 +5,63 @@ _keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲ�
 mentionedTypes: ['Navbar']
 _language: ja
 ---
+
 # $Platform$ Navbar の概要
 
 $Platform$ `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
+
 
 ## $Platform$ Navbar の例
 
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar 概要の例"
            github-src="menus/nav-bar/overview">
 </code-view>
 
-## 依存関係
-
-Navigation Bar コンポーネントを使用するには、以下のパッケージをインストールする必要があります:
-
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-npm install {PackageWebComponents}
-</pre>
-
 ## 使用方法
 
-`Navbar` コンポーネントの使用を開始するには、最初に typescript ファイルにコンポーネントをインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-```typescript
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Navbar` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbNavbarModule.Register(IgniteUIBlazor);
+```
+
+```ts
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+
 defineComponents(IgcNavbarComponent);
 ```
 
-次に、コンポーネントのテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
+
+次に、`Navbar` のテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
 
 ```html
-<igc-navbar>Ignite UI for Web Components</igc-navbar>
+<igc-navbar>Navigation Title</igc-navbar>
 ```
 
 ## コンテンツ
 
-`Navbar` のサンプルでは、`start` スロットと `end` スロットを使用していくつかの `Icon` アイコンを追加しました。
+次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` アイコンを追加できます。
 
-```html
-<igc-navbar style="height:65px">
-    <igc-icon name="home" slot="start" size="large"></igc-icon>
-    <h2>Sample App</h2>
-    <igc-icon name="search" slot="end" size="large"></igc-icon>
-    <igc-icon name="favorite" slot="end" size="large"></igc-icon>
-    <igc-icon name="more_vert" slot="end" size="large"></igc-icon>
-</igc-navbar>
-```
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
+           alt="$Platform$ Navbar スタイル設定の例"
+           github-src="menus/nav-bar/content">
+</code-view>
+
 
 ## スタイル設定
 
@@ -86,12 +92,14 @@ igc-navbar::part(end) {
 
 以下は結果です:
 
-<code-view style="height: 300px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
            alt="$Platform$ Navbar スタイル設定の例"
            github-src="menus/nav-bar/styling">
 </code-view>
+
+<!-- WebComponents -->
 
 ## API リファレンス
 
@@ -101,11 +109,24 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 使用したその他のコンポーネントとディレクティブ:
 * `Icon`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
 
 ## その他のリソース
-<div class="divider--half"></div>
+
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

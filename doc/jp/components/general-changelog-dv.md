@@ -407,15 +407,18 @@ import { IgrLiveGridModule } from 'igniteui-react-grids';
 import { IgxLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-component';
 import { IgxLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-module';
 import { IgxLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igx-linear-graph-range';
+
 import { IgxRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-component";
 import { IgxRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-module";
 import { IgxRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-range";
 import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
+
 // charts:
 import { IgxFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-component";
 import { IgxFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-module";
 import { IgxDataChartComponent } from "igniteui-webcomponents-charts/ES5/igx-data-chart-component";
 import { IgxDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igx-data-chart-core-module";
+
 // maps:
 import { IgxGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-component";
 import { IgxGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-module";
@@ -426,18 +429,22 @@ import { IgxGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igx-geog
 import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-component';
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igc-linear-gauge-module';
 import { IgcLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igc-linear-graph-range';
+
 import { IgcRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-component";
 import { IgcRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-module";
 import { IgcRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igc-radial-gauge-range";
 import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
+
 // charts:
 import { IgcFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-component";
 import { IgcFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igc-financial-chart-module";
 import { IgcDataChartComponent } from "igniteui-webcomponents-charts/ES5/igc-data-chart-component";
 import { IgcDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igc-data-chart-core-module";
+
 // maps:
 import { IgcGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-component";
 import { IgcGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igc-geographic-map-module";
+
 // grids:
 import { IgcLiveGridModule } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-module';
 import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-grid-component';
@@ -448,18 +455,22 @@ import { IgcLiveGridComponent } from 'igniteui-webcomponents-grids/ES5/igc-live-
 import { IgrLinearGauge } from "igniteui-react-gauges/ES5/igr-linear-gauge";
 import { IgrLinearGaugeModule } from "igniteui-react-gauges/ES5/igr-linear-gauge-module";
 import { IgrLinearGraphRange } from "igniteui-react-gauges/ES5/igr-linear-graph-range";
+
 import { IgrRadialGauge } from "igniteui-react-gauges/ES5/igr-radial-gauge";
 import { IgrRadialGaugeModule } from "igniteui-react-gauges/ES5/igr-radial-gauge-module";
 import { IgrRadialGaugeRange } from "igniteui-react-gauges/ES5/igr-radial-gauge-range";
 import { SweepDirection } from "igniteui-react-core/ES5/SweepDirection";
+
 // charts:
 import { IgrFinancialChart } from "igniteui-react-charts/ES5/igr-financial-chart";
 import { IgrFinancialChartModule } from "igniteui-react-charts/ES5/igr-financial-chart-module";
 import { IgrDataChart } from "igniteui-react-charts/ES5/igr-data-chart";
 import { IgrDataChartCoreModule } from "igniteui-react-charts/ES5/igr-data-chart-core-module";
+
 // maps:
 import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
 import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
+
 // grids:
 import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
 import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';

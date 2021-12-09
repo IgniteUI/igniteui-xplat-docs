@@ -1,41 +1,41 @@
 ---
-title: $Platform$ List コンポーネント | インフラジスティックス
-_description: インフラジスティックスの $Platform$ List コンポーネントは、項目のグループを表示するのに役立ちます。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics, $Platform$ リスト, 項目リスト, 概要, データ バインディング, インフラジスティックス
-mentionedTypes: ['List']
-_language: ja
+title: $Platform$ List Component | Infragistics
+_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
+_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+_language: kr
+mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
 ---
 
-# $Platform$ List (リスト) の概要
+# $Platform$ List Overview
 
-$ProductName$ List 要素は、項目のグループを番号の付いた形式または黒丸の付いた形式のいずれかで提示する時に非常に役に立ちます。さまざまなレイアウト要素の配列を含むテキスト アイテムの単純なリスト、またはより複雑なリストを作成できます。`List` コンポーネントは項目の行を表示し、1 つ以上のヘッダーもサポートします。各リスト項目は完全にテンプレート化可能であり、有効な HTML またはその他のコンポーネントをサポートします。
+The $ProductName$ List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
 
-## $Platform$ List の例
+## $Platform$ List Example
 
-次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。`List` コンポーネントは、`Avatar` と `Button` を使用して、ユーザー エクスペリエンスを向上させ、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
+The following example represents a list populated with contacts with a name and a phone number properties. The `List` component uses `Avatar` and `Button` to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List の例"
+           alt="$Platform$ List Example"
            github-src="grids/list/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## 使用方法
+## Usage
 
-List Web コンポーネントは、項目の垂直リストを簡単に表示できます。
+At its core the list web component allows you to easily display a vertical list of items.
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-`List` を使用する前に、次のように登録する必要があります。
+Before using the `List`, you need and register it as follows:
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);
@@ -47,12 +47,12 @@ import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemC
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
 
-`List` の使用を開始する最も簡単な方法は次のとおりです:
+The simplest way to start using the `List` is as follows:
 
 
-### リスト項目の追加
+### Add List Items
 
-これで、次のコードを追加して、項目の簡単なリストを取得できます。
+Now, we can add the following code to get a simple list of items:
 
 ```html
     <igc-list>
@@ -84,16 +84,16 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-以下は結果です:
+If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="$Platform$ リスト項目の追加の例"
+           alt="$Platform$ Add list items Example"
            github-src="grids/list/add-list-items">
 </code-view>
 
-リスト項目を次のように強化できます。名前と名前の下に表示される電話番号を使用して連絡先のリストを作成するとします。これを実現するために、次の例に示すように、リスト項目に付属するいくつかのスロットを使用できます。
+Let's up our game a bit and enhance our list items. Say we want to create a list of contacts with a name and a phone number displayed under the name. To achieve that we can use some of the slots that come with the list items as demonstrated in the next example:
 
 ```html
 <igc-list>
@@ -135,20 +135,20 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-スロットの `title` と `subtitle` の両方が、`ListItem` にデフォルトの外観を与えます。
+Both slots `title` and `subtitle` give our `ListItems` some default look.
 
-結果は次のようになります:
+After all that our list component should now look like that:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="$Platform$ List の例"
+           alt="$Platform$ List Example"
            github-src="grids/list/list-item-content">
 </code-view>
 
-### アバターおよびボタンの追加
+### Adding Avatar and Buttons
 
-他のコンポーネントのいくつかを `List` コンポーネントと組み合わせて使用して、エクスペリエンスを充実させ、いくつかの機能を追加することができます。名前や電話番号の値の左に画像のアバターを表示できます。さらに、右側にいくつかのボタンを追加して、ユーザーが連絡先にテキスト メッセージを送信したり電話をかけたりできるようにすることができるので、連絡先リスト コンポーネントを更新して、アバターとボタンを表示します。リスト項目のスロットのいくつかを使用することでそれを行うことができます。
+We can use some of our other components in conjunction with the `List` component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -226,11 +226,11 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-`start` スロットは、リスト項目の他のすべてのコンテンツの前に、ある種のメディアを追加するために使用することを目的としています。ターゲット要素 (この場合は igc-avatar) にも、デフォルトの位置と間隔が提供されます。
+The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case igc-avatar, will also be provided with a default position and spacing.
 
-`end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。igc-buttons を使用します。
+The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
 
-また、ユーザーがその `size` プロパティを使用してリストのサイズを選択できるようにします。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストの size プロパティを変更します。
+Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
 
 ```html
 <igc-radio-group id="radio-group" alignment="horizontal">
@@ -286,7 +286,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
-結果は以下のようになります。
+And here's the result of all that work:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -295,9 +295,9 @@ this.radioGroup.addEventListener('click', (radio: any) => {
            github-src="grids/list/overview">
 </code-view>
 
-## スタイル設定
+## Styling
 
-公開されている CSS パーツ (`title`、`subtitle`、`end`) を使用して、リストの外観を変更する方法を見てみましょう。
+Let's see how we can change the appearance of our list, by using some of the exposed CSS parts - `title`, `subtitle` and `end`.
 
 ```css
 igc-list-header {
@@ -329,15 +329,15 @@ igc-list-item::part(end) {
 
 <!-- WebComponents -->
 
-## API リファレンス
+## API References
 
-この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の $ProductName$ コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
+In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional $ProductName$ components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
 * `List`
 * `ListHeader`
 * `ListItem`
 
-使用したその他のコンポーネント:
+Additional components that were used:
 
 * `Avatar`
 * `Button`
@@ -348,19 +348,19 @@ igc-list-item::part(end) {
 
 <div class="divider--half"></div>
 
-## その他のリソース
+## Additional Resources
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 

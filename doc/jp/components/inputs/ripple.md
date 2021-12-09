@@ -2,12 +2,14 @@
 title: $Platform$ Ripple
 _description: $ProductName$ Ripple を使用すると、開発者は、視覚的に魅力的な UI 拡張のためにリップル アニメーション効果を受け取った領域を定義できます。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Ripple コンポーネント, $Platform$ Ripple コントロール
+mentionedTypes: ['Ripple', 'Button']
 _language: ja
 ---
 
 # $Platform$ Ripple (リップル) の概要
 
 $ProductName$ Ripple コンポーネントは、タッチまたはマウス クリックに応答してアニメーションを作成します。
+
 
 <div class="divider"></div>
 
@@ -21,7 +23,19 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 
 ## 使用方法
 
-Ripple Web コンポーネントの使用を開始するには、`Ripple` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Ripple` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbRippleModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
@@ -29,7 +43,7 @@ import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
 defineComponents(IgcRippleComponent);
 ```
 
-リップル コンポーネントをインポートしたら、使用を開始する準備ができたので、ライブラリから既存のコンポーネントにリップルを追加しましょう。
+`Ripple` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-button>
@@ -38,7 +52,14 @@ defineComponents(IgcRippleComponent);
 </igc-button>
 ```
 
-CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素にリップルを追加できます。
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    Ripple Button
+    <IgbRipple></IgbRipple>
+</IgbButton>
+```
+
+CSS `position` プロパティが `static` 以外の値に設定されている限り、任意の Web 要素に `Ripple` を追加できます。
 
 ## 例
 
@@ -58,6 +79,8 @@ igc-ripple {
            github-src="inputs/ripple/color">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Ripple`
@@ -66,9 +89,20 @@ igc-ripple {
 
 * `Button`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

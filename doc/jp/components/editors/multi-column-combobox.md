@@ -91,7 +91,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }

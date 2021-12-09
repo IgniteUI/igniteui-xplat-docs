@@ -2,7 +2,9 @@
 title: $Platform$ Map | Data Visualization Tools | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
+_language: kr
 ---
+
 # $Platform$ Using Scatter Proportional Series
 
 Use the map component's `GeographicProportionalSymbolSeries` to plot markers for the geographic points specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.

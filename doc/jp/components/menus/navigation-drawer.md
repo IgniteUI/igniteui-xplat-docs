@@ -1,6 +1,15 @@
+---
+title: $Platform$ NavDrawer | インフラジスティックス
+_description: インフラジスティックスの $Platform$ NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
+_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+mentionedTypes: ['NavDrawer']
+_language: ja
+---
+
 # $Platform$ Navigation Drawer (ナビゲーション ドロワー) の概要
 
-Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーションを提供する WebComponent です。コンテンツ内で展開または縮小されることができます。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
+$Platform$ Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
+
 
 ## $Platform$ Navigation Drawer の例
 
@@ -13,13 +22,20 @@ Infragistics $Platform$ Navigation Drawer は、サイド ナビゲーション�
 
 ## 使用方法
 
-`NavDrawer` の使用を開始するには、最初に次のコマンドを実行して $ProductName$ をインストールする必要があります:
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
 ```cmd
-npm install {PackageComponents}
+npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
-次に、`NavDrawer` と `NavDrawerHeaderItem` および `NavDrawerItem` を typescript ファイルにインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出して登録する必要があります。
+`NavDrawer` を使用する前に、次のように登録する必要があります。
+
+```razor
+IgbNavDrawerModule.Register(IgniteUIBlazor);
+IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
@@ -27,9 +43,10 @@ import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponen
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
 ```
 
+
 ## Navigation Drawer 項目の追加
 
-Navigation Drawer コンポーネントがインポートされたら、使用を開始する準備が整いました。いくつかの項目を含む単純な Navigation Drawer を表示する次のコードを追加できます。
+`NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
     <div style="display: flex;">
@@ -59,6 +76,8 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
            alt="$Platform$ Navigation Drawer 項目の例"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
+
+## Navbar の統合
 
 ドロワーには任意のコンテンツを提供できますが、`NavDrawerItem` が定義済みのスタイル設定を項目に適用します。
 
@@ -95,7 +114,6 @@ Navigation Drawer コンポーネントがインポートされたら、使用�
 // ...
 import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
   IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
-
 
 defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
     IgcRadioComponent, IgcRadioGroupComponent);
@@ -136,7 +154,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 すべてがうまくいけば、コンポーネントは次のようになります:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
            alt="$Platform$ Navigation Drawer Navbar の例"
@@ -177,7 +195,7 @@ document.getElementById('root')!.onclick = (e) => {
 
 以下は結果です:
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
            alt="$Platform$ Navigation Drawer Mini の例"
@@ -211,12 +229,14 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 500px"
+<code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
            alt="$Platform$ Navigation Drawer スタイル設定の例"
            github-src="menus/nav-drawer/styling">
 </code-view>
+
+<!-- WebComponents -->
 
 ## API リファレンス
 
@@ -231,11 +251,20 @@ igc-nav-drawer-header-item {
 * `Radio`
 * `RadioGroup`
 
+<!-- end: WebComponents -->
+
 ## その他のリソース
 
-<div class="divider--half"></div>
+<!-- Blazor -->
 
-コミュニティに参加して新しいアイデアをご提案ください。
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

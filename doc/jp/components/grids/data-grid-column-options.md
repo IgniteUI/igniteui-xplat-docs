@@ -91,5 +91,5 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
     HeaderClickAction="HeaderClickAction.SortByOneColumnOnly"
     IsColumnOptionsEnabled="true">
     <IgbTextColumn Field="ID" IsFilteringEnabled="false" />
-</DataGrid>
+</IgbDataGrid>
 ```

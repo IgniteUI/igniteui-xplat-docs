@@ -2,6 +2,7 @@
 title: $Platform$ Combo | Data Visualization Tools | Infragistics
 _description: Infragistics' $Platform$ combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  $Platform$!
 _keywords: $Platform$ combo, drop down, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: []
 ---
 # $Platform$ Multi-Column Combo Box Overview

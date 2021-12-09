@@ -2,7 +2,9 @@
 title: $Platform$ Excel Library Using Worksheets
 _description: The Ignite UI for Excel Library component with Worksheet Operations.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine, Worksheet, Conditional Formatting, Sorting, Filtering, Gridlines, Headers, Protection
+_language: kr
 ---
+
 # $Platform$ Using Worksheets
 
 The Infragistics Excel Engine's `Worksheet` is where your data is kept. You can input data by working with the Worksheet's rows and cells and setting their corresponding values. The `Worksheet` allows you to filter, sort, and customize the formats of the cells, as shown below.

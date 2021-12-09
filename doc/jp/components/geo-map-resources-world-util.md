@@ -1,5 +1,5 @@
 ---
-title: $Platform$ マップ | ワールド ユーティリティ | データソース | インフラジスティックス
+title: $Platform$ マップ | ワールド ユーティリティ | データ ソース | インフラジスティックス
 _description: インフラジスティックスの $Platform$ JavaScript マップ データ ユーティリティを使用して、地理的データを生成します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, map data, $ProductName$, Infragistics, $Platform$ マップ, マップ データ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']

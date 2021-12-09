@@ -2,12 +2,14 @@
 title: $Platform$ Avatar | レイアウト コントロール | インフラジスティックス
 _description: インフラジスティックスの $Platform$ Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
 _keywords: avatar, layout, $ProductName$, Infragistics, アバター, レイアウト, インフラジスティックス
+mentionedTypes: ['Avatar']
 _language: ja
 ---
 
 # $Platform$ Avatar (アバター)
 
 $ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
+
 
 <div class="divider"></div>
 
@@ -24,19 +26,19 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 
 ## 使用方法
 
-<!-- Blazor -->
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-開始するには、次のように `IgbAvatarModule` を登録する必要があります。
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Avatar` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
 ```
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-開始するには、typescript ファイルに `Avatar` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
@@ -44,12 +46,7 @@ import { defineComponents, IgcAvatarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcAvatarComponent);
 ```
 
-<!-- end: WebComponents -->
-
-アバター コンポーネントをインポートしたら、使用を開始する準備ができたので、最初のアバターを追加しましょう。
-
-アバター コンポーネントは、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。
-アバターの宣言は次のように簡単です:
+`Avatar` は、画像、イニシャル、またはアイコンを含むその他のコンテンツを表示できます。`Avatar` の宣言は次のように簡単です。
 
 ```html
 <igc-avatar></igc-avatar>
@@ -111,7 +108,7 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-アバターは、`circle`、`circle`、`square`の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
+アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
 形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
@@ -166,14 +163,28 @@ igc-avatar::part(base) {
 }
 ```
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 * `Avatar`
 
-
-## その他のリソース
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
+## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

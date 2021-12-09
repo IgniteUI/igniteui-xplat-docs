@@ -1,13 +1,13 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 複数のデータソースのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
+title: $Platform$ マップ | データ可視化ツール | 複数のデータ ソースのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データ ソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
 _keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'SeriesViewer']
 _language: ja
 ---
 # $Platform$ 複数データ ソースのバインド
 
-$ProductName$ マップでは、カスタム データソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
+$ProductName$ マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
 
 
 ## $Platform$ 複数データ ソースのバインドの例

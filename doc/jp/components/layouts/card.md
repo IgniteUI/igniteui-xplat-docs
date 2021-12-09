@@ -2,15 +2,16 @@
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
 _keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
-mentionedTypes: ['Card']
+mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 _language: ja
 ---
 
-# Card (カード)
+# $Platform$ Card (カード) の概要
 
 $ProductName$ `Card ` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
-## Card の例
+
+## $Platform$ Card の例
 
 <code-view style="height: 610px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -27,30 +28,28 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 ### 作業の開始
 
-<!-- Blazor -->
 
-開始するには、次のように `IgbCardModule` を登録する必要があります。
+<!-- WebComponents -->
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+
+```cmd
+npm install {PackageWebComponents}
+```
+<!-- end: WebComponents -->
+
+`Card` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
 ```
 
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-開始するには、`Card` をその構成要素とともに typescript ファイルにインポートし、`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/index.html#defineComponents) 関数を呼び出して登録する必要があります。
-
-```typescript
-// index.ts
-...
+```ts
 import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+
 defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
 ```
 
-<!-- end: WebComponents -->
-
-次に、デモ カード テンプレートを表すために、次のコードを html ファイルに追加できます。
+次に、デモのカード テンプレートを表すために、以下のコードを追加します:
 
 ```html
 <igc-card>
@@ -395,6 +394,8 @@ igc-icon-button+igc-icon-button {
 ### まとめ
 このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の $Platform$ を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
 
+<!-- Web Components -->
+
 ## API リファレンス
 
 カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
@@ -413,12 +414,22 @@ igc-icon-button+igc-icon-button {
 * `IconButton`
 * `Ripple`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
 
 ## その他のリソース
 
-<div class="divider--half"></div>
-コミュニティに参加して新しいアイデアをご提案ください。
+<!-- Blazor -->
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
