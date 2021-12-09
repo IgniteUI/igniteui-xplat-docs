@@ -1,3 +1,11 @@
+---
+title: $Platform$ NavDrawer | Infragistics
+_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: $Platform$ navbar, $ProductName$, Infragistics
+_language: kr
+mentionedTypes: ['NavDrawer']
+---
+
 # $Platform$ Navigation Drawer Overview
 
 The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.

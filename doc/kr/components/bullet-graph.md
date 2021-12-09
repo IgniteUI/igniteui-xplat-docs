@@ -5,6 +5,7 @@ _keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native
 _language: kr
 mentionedTypes: ['XamBulletGraph']
 ---
+
 # $Platform$ Bullet Graph
 
 The Bullet Graph Component allows for a linear and concise view of measures compared against a scale.

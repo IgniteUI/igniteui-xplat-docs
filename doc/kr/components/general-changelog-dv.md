@@ -2,10 +2,11 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 ---
-# $ProductName$ Changelog (Data Visualization)
 
+# $ProductName$ Changelog (Data Visualization)
 
 All notable changes for each version of $ProductName$ are documented on this page.
 

@@ -2,8 +2,10 @@
 title: $Platform$ Spreadsheet | Grid Controls | Conditional Formatting | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ['Spreadsheet']
 ---
+
 # $Platform$ Spreadsheet Conditional Formatting
 
 The $Platform$ Spreadsheet component allows you conditionally format the cells of a worksheet. This allows you to highlight different pieces of your data based on a condition.

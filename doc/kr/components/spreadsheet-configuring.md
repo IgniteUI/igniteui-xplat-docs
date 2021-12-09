@@ -2,8 +2,10 @@
 title: $Platform$ Spreadsheet | Grid Controls | Configuration | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
 _keywords: Spreadsheet, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ['Spreadsheet']
 ---
+
 # $Platform$ Configuring Spreadsheet
 
 The `Spreadsheet` allows the user to configure many different aspects of the control, including but not limited to editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.

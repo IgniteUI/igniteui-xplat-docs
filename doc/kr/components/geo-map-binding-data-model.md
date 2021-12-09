@@ -2,7 +2,9 @@
 title: $Platform$ Map | Data Visualization Tools | Geographic Data Models | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
+_language: kr
 ---
+
 # $Platform$ Binding Geographic Data Models
 
 The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.

@@ -2,6 +2,8 @@
 title: $Platform$ Checkbox Component
 _description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+_language: kr
+mentionedTypes: ['Checkbox']
 ---
 
 # $Platform$ Checkbox Overview

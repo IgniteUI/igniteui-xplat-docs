@@ -2,6 +2,7 @@
 title: $Platform$ CLI | Data Visualization Tools and Tables | Infragistics
 _description: The $ProductName$ toolset has a $Platform$ CLI to help you boost productivity and get your project started quickly. Create a $ProductName$ application now!
 _keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics
+_language: kr
 ---
 
 # Ignite UI CLI for $Platform$

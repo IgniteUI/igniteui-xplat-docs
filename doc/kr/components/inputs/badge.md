@@ -2,6 +2,7 @@
 title: $Platform$ Badge | Infragistics
 _description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+_language: kr
 mentionedTypes: ['Badge']
 ---
 
