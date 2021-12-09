@@ -728,35 +728,35 @@ function verifyMarkdown(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    // 'doc/en/**/types/*.md',
-    // 'doc/en/**/features/chart-*.md',
-    //'doc/en/**/*.md',
-    //'doc/en/**/test/**/*.md',
-    //'doc/jp/**/*.md',
+    'doc/en/**/*.md',
+    'doc/jp/**/*.md',
     //'doc/kr/**/*.md',
-    'doc/kr/**/chart-legends.md',
-    // 'doc/**/obsolete/**/_test.md',
-   '!doc/**/obsolete/**/*.md',
+    //'doc/kr/**/chart-legends.md',
+    '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         // console.log('verifying code viewer in: ' + filePath);
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        //errorsCount += transformer.verifyCodeViewer(fileContent, filePath);
-        fileContent = transformer.verifyMetadata(fileContent, filePath);
-
-        //file.contents = Buffer.from(fileContent);
-        // auto-update topics with corrections if any
-        //fs.writeFileSync(filePath, fileContent);
-
         filesCount++;
+        //errorsCount += transformer.verifyCodeViewer(fileContent, filePath);
+        var result = transformer.verifyMetadata(fileContent, filePath);
+        if (result.isValid) {
+            fileContent = result.fileContent;
+            //file.contents = Buffer.from(fileContent);
+            // auto-update topics with corrections if any
+            //fs.writeFileSync(filePath, fileContent);
+        } else {
+            errorsCount++;
+        }
         fileCallback(null, file);
     }))
     .on("end", () => {
         if (errorsCount > 0) {
-            var msg = "Found " + errorsCount + " issues in " + filesCount + " markdown files";
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
             if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
         } else {
             var msg = 'verifying .md ' + filesCount + ' files ... done';
             console.log(msg);

@@ -1062,12 +1062,12 @@ export class MarkdownTransformer {
         return errorsCount;
     }
 
-    verifyMetadata(fileContent: string, filePath: string): string {
-        var errorsCount = 0;
+    verifyMetadata(fileContent: string, filePath: string): any {
         var md = new MarkdownContent(fileContent, filePath);
+        var mdValidated = false;
+
         if (md.metadata.hasContent())
         {
-
             // if (md.isLocalEN()) {
             //     md.metadata.language = '_language: en';
             // }
@@ -1081,26 +1081,27 @@ export class MarkdownTransformer {
             //     md.metadata.language = '_language: kr';
             // }
 
-            fileContent = md.toString();
+            //fileContent = md.toString();
             //console.log("metadata: \n" + meta);
 
             //var meta = md.metadata.toString();
             if (!md.metadata.hasTitle())
-                console.log("metadata is missing 'title:' in " + filePath);
+                console.log("ERROR: missing metadata 'title:' in " + filePath);
             else if (!md.metadata.hasDescription())
-                console.log("metadata is missing '_description:' in " + filePath);
+                console.log("ERROR: missing metadata '_description:' in " + filePath);
             else if (!md.metadata.hasKeywords())
-                console.log("metadata is missing '_keywords:' in " + filePath);
+                console.log("ERROR: missing metadata '_keywords:' in " + filePath);
             else if (!md.metadata.hasLanguage() && filePath.indexOf('\\en\\') < 0)
-                console.log("metadata is missing '_language:' in " + filePath);
-
+                console.log("ERROR: missing metadata '_language:' in " + filePath);
+            else
+                mdValidated = true;
         } else {
-            console.log("metadata is missing in " + filePath);
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
         }
 
         //console.log("metadata " + filePath);
 
-        return fileContent;
+        return { fileContent: fileContent, isValid: mdValidated};
     }
 
     updateApiSection(fileContent: string, filePath: string): string {
