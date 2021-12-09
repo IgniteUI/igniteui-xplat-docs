@@ -9,8 +9,7 @@ mentionedTypes: ['Grid']
 
 The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
 
-## $Platform$ Row Grouping Example
-
+## $Platform$ Row Group-By Area Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,71 +24,16 @@ The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky he
 
 Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the example above, to the user interface. The group-by area allows users more options to group and sort columns without interact when interacting the DataGrid indirectly. Groups can be positioned and reordered based on the users needs. This area also populates when columns are programmatically added as `GroupDescriptions` on the DataGrid as well.
 
-## Multiple Groups
+## Using Group Descriptions Example
 
-```ts
-import { IgrColumnGroupDescription } from 'igniteui-react-grids';
-import { ListSortDirection } from 'igniteui-react-core';
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-group-descriptions"
+           alt="$Platform$ Row Grouping Example"
+           github-src="grids/data-grid/row-grouping-descriptions">
+</code-view>
 
-public componentDidMount() {
-    window.addEventListener('load', this.onLoad);
-}
-
-public onLoad() {
-    const state = new IgrColumnGroupDescription();
-    state.field = "Country";
-    state.displayName = "Location";
-    state.sortDirection = ListSortDirection.Descending;
-    const city = new IgrColumnGroupDescription();
-    city.field = "City";
-    city.displayName = "";
-    const income = new IgrColumnGroupDescription();
-    income.field = "Income";
-    income.displayName = "Income";
-
-    this.grid.groupDescriptions.add(state);
-    this.grid.groupDescriptions.add(city);
-    this.grid.groupDescriptions.add(income);
-}
-```
-
-```ts
-import { IgcIgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
-import { ListSortDirection } from 'igniteui-webcomponents-core';
-
-public connectedCallback() {
-    const state = new IgcColumnGroupDescription();
-    state.field = "Country";
-    state.displayName = "Location";
-    state.sortDirection = ListSortDirection.Descending;
-    const city = new IgcColumnGroupDescription();
-    city.field = "City";
-    city.displayName = "";
-    const income = new IgcColumnGroupDescription();
-    income.field = "Income";
-    income.displayName = "Income";
-
-    this.grid = document.getElementById("grid") as IgcDataGridComponent;
-    this.grid.groupDescriptions.add(state);
-    this.grid.groupDescriptions.add(city);
-    this.grid.groupDescriptions.add(income);
-}
-```
-
-```razor
-@code {
-    private void OnGridCreated()
-    {
-        var state = new ColumnGroupDescription { Field = "Country", DisplayName = "Location" };
-        var city = new ColumnGroupDescription { Field = "City", DisplayName = "" };
-        var income = new ColumnGroupDescription { Field = "Income", DisplayName = "Income" };
-
-        this.DataGridRef.GroupDescriptions.Add(state);
-        this.DataGridRef.GroupDescriptions.Add(city);
-        this.DataGridRef.GroupDescriptions.Add(income);
-    }
-}
-```
+<div class="divider--half"></div>
 
 ## Hierarchical Groups
 
