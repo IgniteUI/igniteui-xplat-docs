@@ -199,7 +199,7 @@
       {
         "name": "列フィルタリング",
         "href": "grids/data-grid-column-filtering.md",
-        "status": "UPDATED"
+        "status": "NEW"
       },
       {
         "name": "列移動",
@@ -264,7 +264,7 @@
       {
         "name": "行グループ",
         "href": "grids/data-grid-row-grouping.md",
-        "status": "UPDATED"
+        "status": "NEW"
       },
       {
         "name": "行の強調表示",
@@ -515,7 +515,7 @@
         {
           "name": "チャート強調表示",
           "href": "charts/features/chart-highlighting.md",
-          "status": "UPDATED"
+          "status": ""
         },
         {
           "name": "チャート マーカー",
