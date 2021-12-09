@@ -182,7 +182,7 @@
       {
         "name": "Column Filtering",
         "href": "grids/data-grid-column-filtering.md",
-        "status": "UPDATED"
+        "status": "NEW"
       },
       {
         "name": "Column Moving",
@@ -247,7 +247,7 @@
       {
         "name": "Row Grouping",
         "href": "grids/data-grid-row-grouping.md",
-        "status": "UPDATED"
+        "status": "New"
       },
       {
         "name": "Row Highlighting",
