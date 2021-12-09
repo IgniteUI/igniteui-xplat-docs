@@ -53,6 +53,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 * [Checkbox](inputs/checkbox.md)
 * [Form](inputs/form.md)
 * [Icon](layouts/icon.md)
+* [Input](inputs/input.md)
 * [List](grids/list.md)
 * [Navbar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
