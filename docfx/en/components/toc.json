@@ -11,7 +11,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Adding Nuget Feed",
-    "href": "nuget-feed.md",
+    "href": "general-nuget-feed.md",
     "status": ""
   },
   {
@@ -90,7 +90,7 @@
     "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
-  },  
+  },
   {
     "exclude": ["Angular"],
     "name": "Grids & Lists",
@@ -1322,7 +1322,7 @@
     "href": "inputs/switch.md",
     "status": "NEW"
   },
-  {    
+  {
     "name": "Interactions",
     "header": true
   },

@@ -11,7 +11,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "NuGet フィードの追加",
-    "href": "nuget-feed.md",
+    "href": "general-nuget-feed.md",
     "status": ""
   },
   {
@@ -90,7 +90,7 @@
     "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md",
     "status": "NEW"
-  },  
+  },
   {
     "exclude": ["Angular"],
     "name": "グリッド & リスト",
@@ -1259,7 +1259,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "データ入力と表示",    
+    "name": "データ入力と表示",
     "header": true
   },
   {
@@ -1322,7 +1322,7 @@
     "href": "inputs/switch.md",
     "status": "NEW"
   },
-  {    
+  {
     "name": "インタラクション",
     "header": true
   },

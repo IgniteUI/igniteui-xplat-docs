@@ -11,7 +11,7 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Adding Nuget Feed",
-    "href": "nuget-feed.md",
+    "href": "general-nuget-feed.md",
     "status": ""
   },
   {

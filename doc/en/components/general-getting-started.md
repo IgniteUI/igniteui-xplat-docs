@@ -360,7 +360,7 @@ Alternatively, you can manually select a version by following these steps:
 > If you are a trial user, you can install the `IgniteUI.Blazor` trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
 
 > [!Note]
-> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./nuget-feed.md).
+> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
 
 ## Step 3 - Register Ignite UI for Blazor Component
 
