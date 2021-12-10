@@ -320,8 +320,6 @@ The final result should look something like this screenshot:
 
 <!-- Blazor -->
 
-The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance apps for modern desktop browsers.
-
 ## Step 1 - Create a New Blazor Project
 The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to [**Step 2**](#step-2---install-the-ignite-ui-for-blazor-nuget-package).
 
