@@ -5,26 +5,26 @@ _keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, イ
 mentionedTypes: ['Input']
 _language: ja
 ---
-# $Platform$ Input Overview
+# $Platform$ Input の概要
 
-The $ProductName$ Input is a component where the user can enter data.
+$ProductName$ Input は、ユーザーがデータを入力できるコンポーネントです。
 
-## $Platform$ Input Example
+## $Platform$ Input の例
 
 <div class="divider--half"></div>
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="$Platform$ Input Example"
+           alt="$Platform$ Input の例"
            github-src="inputs/input/overview">
 </code-view>
 
-## Dependencies
+## 依存関係
 
 <!-- Blazor -->
 
-To get started with the Input component, you first need to register its module.
+Input コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
 ```razor
 IgbInputModule.Register(IgniteUIBlazor);
@@ -36,7 +36,7 @@ IgbInputModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+開始するには、typescript ファイルに `Input` をインポートし、次のように [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
@@ -46,64 +46,64 @@ defineComponents(IgcInputComponent);
 
 <!-- end: WebComponents -->
 
-After we import the `Input` component we are ready to start using it, so let's add our first Input.
+`Input` コンポーネントをインポートしたら、使用を開始する準備ができているので、最初の Input を追加しましょう。
 
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
 ```
 
-## Prefix & Suffix
+## Prefix と Suffix
 
-With `prefix` and `suffix` slots we can add different content before and after the main content of the Input. In the following sample we will create a new Input field with a text prefix and an icon suffix:
+`prefix` スロットと `suffix` スロットを使用すると、入力のメイン コンテンツの前後に異なるコンテンツを追加できます。次のサンプルでは、テキスト プレフィックスとアイコン サフィックスを使用して新しい Input フィールドを作成します:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="$Platform$ Input Prefix & Suffix Example"
+           alt="$Platform$ Input Prefix & Suffix の例"
            github-src="inputs/input/prefix-suffix">
 </code-view>
 
-## Helper Text
+## ヘルパー テキスト
 
-The `helper-text` slot provides a hint placed below the Input. Let's add a helper text to our phone Input:
+`helper-text` スロットは、入力の下に配置されたヒントを提供します。Phone Input にヘルパー テキストを追加しましょう:
 
 <code-view style="height: 140px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="$Platform$ Input Helper Text Example"
+           alt="$Platform$ Input ヘルパー テキストの例"
            github-src="inputs/input/helper-text">
 </code-view>
 
-## Input Sizing
+## Input のサイズ設定
 
-We can allow the user to choose the size of the `Input` by using its `Size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input:
+`size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="$Platform$ Input Sizing Example"
+           alt="$Platform$ Input サイズ設定の例"
            github-src="inputs/input/size">
 </code-view>
 
-In the sample above we have demonstrated the use of the following attributes:
-- `required` - Used to mark the input as required
-- `disabled` - Used to disable the input
-- `readonly` - Used to mark the input as readonly
+上記のサンプルでは、次の属性の使用法を示しています:
+- `required` - 入力を必須としてマークするために使用されます。
+- `disabled` - 入力を無効にするために使用されます。
+- `required` - 入力を読み取り専用としてマークするために使用されます。
 
-The full list of attributes can be found in `Input` API.
+属性の完全なリストは、`Input` API にあります。
 
-## Styling
+## スタイル設定
 
-The Input component exposes CSS parts for almost all of its inner elements. The following table lists all CSS parts exposed by the Input:
+Input コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。次の表に、Input によって公開されるすべての CSS パーツを示します:
 
-|Name|Description|
+|名|説明|
 |--|--|
-| container | The main wrapper that holds all main input elements. |
-| input | The native input element. |
-| label | The native label element. |
-| prefix | The prefix wrapper. |
-| suffix | The suffix wrapper. |
-| helper-text | The helper text wrapper. |
+| container | すべての主要な入力要素を保持するメイン ラッパー。 |
+| input | ネイティブ入力要素。 |
+| label | ネイティブ ラベル要素。 |
+| prefix | プレフィックス ラッパー。 |
+| suffix | サフィックス ラッパー。 |
+| helper-text | ヘルパー テキスト ラッパー。 |
 
 ```scss
 igc-input::part(input){
@@ -126,16 +126,16 @@ igc-input::part(suffix){
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="$Platform$ Input Styling"
+           alt="$Platform$ Input のスタイル設定"
            github-src="inputs/input/styling">
 </code-view>
 
 ## API リファレンス
 
-For more detailed information regarding the Input's API, refer to the following links:
+Input API の詳細については、次のリンクを参照してください。
 * `Input`
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 * `Icon`
 * `Radio`
 
