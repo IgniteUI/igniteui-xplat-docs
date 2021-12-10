@@ -344,22 +344,28 @@ function transformDocLinks(options: any) {
 
 function transformDocPlaceholders(options: any) {
     function transformText(node: any) {
-        if (!node.value) {
-            return;
+        if (node.value) {
+            node.value = replaceVariables(node.value);
+            //console.log('transformText ' + node.value);
         }
-        let value = node.value;
 
+        if (node.url) {
+            node.url = replaceVariables(node.url);
+            //console.log('transformText ' + node.url);
+        }
+    }
+
+    function replaceVariables(nodeValue: string) {
         let docs = options.docs;
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
                 let curr = docs.replacements[i];
                 let name = curr.name;
                 let r = new RegExp(name, "g");
-                value = value.replace(r, curr.value);
+                nodeValue = nodeValue.replace(r, curr.value);
             }
-
-            node.value = value;
         }
+        return nodeValue;
     }
 
     return function (tree: any) {
