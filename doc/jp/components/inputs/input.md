@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Input | データ可視化ツール | インフラジスティックス
-_description: Infragistics' $Platform$ input is a component where the user can enter data. Improve your application with Ignite UI for $Platform$!
+_description: インフラジスティックスの $Platform$ Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
 _keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
 mentionedTypes: ['Input']
 _language: ja
@@ -76,7 +76,7 @@ defineComponents(IgcInputComponent);
 
 ## Input のサイズ設定
 
-`size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
+`Size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -88,7 +88,7 @@ defineComponents(IgcInputComponent);
 上記のサンプルでは、次の属性の使用法を示しています:
 - `required` - 入力を必須としてマークするために使用されます。
 - `disabled` - 入力を無効にするために使用されます。
-- `required` - 入力を読み取り専用としてマークするために使用されます。
+- `readonly` - 入力を読み取り専用としてマークするために使用されます。
 
 属性の完全なリストは、`Input` API にあります。
 
