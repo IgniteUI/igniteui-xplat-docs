@@ -1,14 +1,13 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+title: $Platform$ Button Component | $ProductName$
+_description: Get started with the $Platform$ Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the $Platform$ Button OnClick event.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
 # $Platform$ Button Overview
 
-The $ProductName$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
-
+The $Platform$ Button Component lets you enable clickable elements that trigger actions in your $Platform$ app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the $Platform$ Button OnClick event, toggle the $Platform$ button, disable the $Platform$ button, and more.
 
 <div class="divider"></div>
 

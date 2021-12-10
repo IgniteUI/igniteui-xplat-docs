@@ -1,14 +1,13 @@
 ---
-title: $Platform$ Form | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ form is a component used to collect user input from interactive controls. Improve your application with Ignite UI for  $Platform$!
+title: $Platform$ Form Component | $ProductName$
+_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here. 
 _keywords: $Platform$ form, $ProductName$, Infragistics
 mentionedTypes: ['Form']
 ---
 
 # $Platform$ Form Overview
 
-The $ProductName$ Form collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
-
+The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
 
 <div class="divider"></div>
 
@@ -73,8 +72,8 @@ When a form control is invalid, the form will not be submitted and an error mess
 ### Events
 
 The Form component raises the following events:
-- igcSubmit - Raised when the form is submitted
-- igcReset - Raised when the form is reset
+- Submit - Raised when the form is submitted
+- Reset - Raised when the form is reset
 
 Here is an example showing how to add an event listener for the `Submit`] event:
 
