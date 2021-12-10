@@ -263,7 +263,7 @@ function updateApiSection(cb) {
         var fileContent = file.contents.toString();
         if (transformer) {
             // file.contents = Buffer.from(transformer.updateApiSection(fileContent));
-            var newContent = transformer.updateApiSection(fileContent);
+            var newContent = transformer.updateApiSection(fileContent, filePath);
             fs.writeFileSync(filePath, newContent);
         }
 
@@ -532,7 +532,7 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
-var verifyFiles = gulp.series(verifyCodeViewer);
+var verifyFiles = gulp.series(verifyMarkdown);
 
 function buildCore(cb) {
     // clean output files
@@ -718,44 +718,55 @@ function copyTemplateBackup(cb) {
 exports.copyTemplateBackup = copyTemplateBackup;
 
 
-function verifyCodeViewer(cb) {
+function verifyMarkdown(cb) {
     ensureEnvironment();
     if (transformer === null || transformer === undefined) {
         if (cb) cb("transformer failed to load"); return;
     }
-    console.log('verifying code viewer in .md files ...');
+    console.log('verifying .md files ...');
 
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    // 'doc/en/**/types/*.md',
-    // 'doc/en/**/features/chart-*.md',
     'doc/en/**/*.md',
     'doc/jp/**/*.md',
-    // 'doc/**/obsolete/**/_test.md',
-   '!doc/**/obsolete/**/*.md',
+    //'doc/kr/**/*.md',
+    //'doc/kr/**/chart-legends.md',
+    '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
-        // var filePath = file.dirname + "\\" + file.basename
         // console.log('verifying code viewer in: ' + filePath);
-        errorsCount += transformer.verifyCodeViewer(file);
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
         filesCount++;
+        //errorsCount += transformer.verifyCodeViewer(fileContent, filePath);
+        var result = transformer.verifyMetadata(fileContent, filePath);
+        if (result.isValid) {
+            fileContent = result.fileContent;
+            //file.contents = Buffer.from(fileContent);
+            // auto-update topics with corrections if any
+            //fs.writeFileSync(filePath, fileContent);
+        } else {
+            errorsCount++;
+        }
         fileCallback(null, file);
     }))
     .on("end", () => {
         if (errorsCount > 0) {
-            var msg = "Found " + errorsCount + " issues in " + filesCount + " markdown files";
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
             if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
         } else {
-            var msg = 'verifying code viewer in .md files ... done: ' + filesCount;
+            var msg = 'verifying .md ' + filesCount + ' files ... done';
             console.log(msg);
             if (cb) cb();
         }
     })
     .on("error", (err) => {
-        console.log("Error in verifyCodeViewer()");
+        console.log("Error in verifyMarkdown()");
         if (cb) cb(err);
     });
 }
 
-exports.verifyCodeViewer = verifyCodeViewer;
+exports.verifyMarkdown = verifyMarkdown;

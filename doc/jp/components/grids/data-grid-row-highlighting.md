@@ -1,6 +1,7 @@
 ---
 title: $Platform$ Data Grid | 行の強調表示 | インフラジスティックス
 _description: マウスオーバーでインフラジスティックス $Platform$ データ グリッドの行強調表示の構成。$ProductName$ テーブルの行強調表示を設定する方法について説明します。
+_language: ja
 _keywords: $Platform$ Table, Data Grid, row highlighting, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行の強調表示, インフラジスティックス
 mentionedTypes: ['Grid', 'IsRowHoverEnabled', 'RowHoverBackground']
 ---

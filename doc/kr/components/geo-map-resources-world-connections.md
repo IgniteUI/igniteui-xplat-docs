@@ -2,7 +2,9 @@
 title: $Platform$ Map | Data Visualization Tools | Data Utility | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
+_language: kr
 ---
+
 # $Platform$ World Connections
 
 The resource topic provides implementation of data utility for generating locations of airports, flight paths, and geographic gridlines. You can use these data sources as reference point for creating your own geographic data. Note that this utility depends on [WorldUtil](geo-map-resources-world-util.md) and [WorldLocations](geo-map-resources-world-locations.md) scripts.

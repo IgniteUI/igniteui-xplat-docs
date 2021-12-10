@@ -11,7 +11,7 @@
     "toc2WC": "tsc && gulp generateTocYML --plat=WebComponents --lang=en",
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApiSection": "tsc && gulp updateApiSection",
-    "verifyCodeViewer": "tsc && gulp verifyCodeViewer",
+    "verifyMarkdown": "tsc && gulp verifyMarkdown",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
     "generateRedirects": "tsc && gulp generateRedirects",
     "build": "tsc",

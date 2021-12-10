@@ -2,6 +2,7 @@
 title: $Platform$ Calendar | Calendar | Infragistics
 _description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
 _keywords: $Platform$ Calendar, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 ---
 

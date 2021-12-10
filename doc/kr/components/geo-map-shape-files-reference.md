@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Shape Files Reference | Shape
 _description: Learn about shape files format to use with Infragistics' $Platform$ map. Check out $ProductName$ map tutorials!
 _keywords: $Platform$ map, shape files, $ProductName$, Infragistics, shape editing
 mentionedTypes: ['XamGeographicMap']
+_language: kr
 ---
 
 # $Platform$ Shape Files Reference

@@ -1027,12 +1027,12 @@ export class MarkdownTransformer {
         }
         return url;
     }
-    verifyCodeViewer(file: any): number {
-        var fileContent = file.contents.toString();
-        var filePath = file.dirname + "\\" + file.basename
-        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+    verifyCodeViewer(fileContent: string, filePath: string): number {
+        // var fileContent = file.contents.toString();
+        // var filePath = file.dirname + "\\" + file.basename
+        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
 
-        var md = new MarkdownContent(fileContent);
+        var md = new MarkdownContent(fileContent, filePath);
 
         // console.log("sections " + md.sections.length);
         var errorsCount = 0;
@@ -1062,10 +1062,52 @@ export class MarkdownTransformer {
         return errorsCount;
     }
 
-    updateApiSection(fileContent: string): string {
+    verifyMetadata(fileContent: string, filePath: string): any {
+        var md = new MarkdownContent(fileContent, filePath);
+        var mdValidated = false;
+
+        if (md.metadata.hasContent())
+        {
+            // if (md.isLocalEN()) {
+            //     md.metadata.language = '_language: en';
+            // }
+
+            // auto-correct metadata
+            // if (md.isLocalJP()) {
+            //     md.metadata.language = '_language: jp';
+            // }
+
+            // if (md.isLocalKR()) {
+            //     md.metadata.language = '_language: kr';
+            // }
+
+            //fileContent = md.toString();
+            //console.log("metadata: \n" + meta);
+
+            //var meta = md.metadata.toString();
+            if (!md.metadata.hasTitle())
+                console.log("ERROR: missing metadata 'title:' in " + filePath);
+            else if (!md.metadata.hasDescription())
+                console.log("ERROR: missing metadata '_description:' in " + filePath);
+            else if (!md.metadata.hasKeywords())
+                console.log("ERROR: missing metadata '_keywords:' in " + filePath);
+            else if (!md.metadata.hasLanguage() && filePath.indexOf('\\en\\') < 0)
+                console.log("ERROR: missing metadata '_language:' in " + filePath);
+            else
+                mdValidated = true;
+        } else {
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
+        }
+
+        //console.log("metadata " + filePath);
+
+        return { fileContent: fileContent, isValid: mdValidated};
+    }
+
+    updateApiSection(fileContent: string, filePath: string): string {
         var newApiMembers = [];
 
-        var md = new MarkdownContent(fileContent);
+        var md = new MarkdownContent(fileContent, filePath);
 
         var apiSection = new MarkdownSection('');
         for (const section of md.sections) {
@@ -1389,28 +1431,53 @@ class MarkdownContent {
     public sections: MarkdownSection[];
     public metadata: MarkdownMetadata;
     public content: string = '';
+    public filePath: string = '';
+    public sectionStrings: string[];
 
-    constructor(content: string) {
+    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0; }
+    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0; }
+    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0; }
+
+    public toString() {
+        var str = '';
+        if (this.metadata.hasContent()) {
+            str = '---\r\n' + this.metadata.toString() + '---\r\n\r\n';
+        }
+        for (const section of this.sections) {
+            str += section.toString() + '\r\n';
+        }
+        return str;
+    }
+
+    constructor(content: string, filePath: string) {
 
         this.sections = [];
+        this.sectionStrings = [];
+        this.filePath = filePath;
         this.metadata = new MarkdownMetadata('');
 
         if (content === undefined) return;
 
         var parts = content.split('---');
-        if (parts === undefined || parts.length < 3) {
-            console.log('Failed on creating MarkdownContent from file without metadata');
+        if (parts === undefined) return;
+
+        if (parts.length < 3) { // metadata missing
+            // console.log('Failed on creating MarkdownContent from file without metadata ' + path);
             // console.log(content);
-            return;
+            // return;
+
+            this.metadata = new MarkdownMetadata('');
+            this.sectionStrings = parts[0].split('\n## ');
+        } else { // metadata found
+            this.metadata = new MarkdownMetadata(parts[1]);
+            this.sectionStrings = parts[2].split('\n## ');
         }
-        // console.log("parts:" + parts.length);
+        // console.log("parts: " + parts.length);
         // console.log("parts0:" + parts[0]);
         // console.log("parts1:" + parts[1]);
         // console.log("parts2:" + parts[2]);
-        this.metadata = new MarkdownMetadata(parts[1]);
 
-        var sections = parts[2].split('\n## ');
-        for (const s of sections) {
+        for (const s of this.sectionStrings) {
             var section = new MarkdownSection('## ' + s);
             section.index = this.sections.length;
             this.sections.push(section);
@@ -1435,6 +1502,18 @@ class MarkdownSection {
 
     public withParagraphs() {
         return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
+    }
+
+    public toString() {
+        var str = '';
+        for (const line of this.lines) {
+            var content = line.content.trim();
+            if (line.index === 0)
+                str = content + '\n';
+            else
+                str += content + '\r\n\r\n';
+        }
+        return str;
     }
 
     constructor(content: string) {
@@ -1465,6 +1544,26 @@ class MarkdownMetadata  {
     public content: string = '';
     public lines: MarkdownLine[] = [];
     public mentionedTypes: string = '';
+    public title: string = '';
+    public keywords: string = '';
+    public description: string = '';
+    public language: string = '';
+
+    public isEmpty() { return this.content === ""; }
+    public hasContent() { return this.content !== ""; }
+    public hasMentions() { return this.mentionedTypes !== ""; }
+    public hasTitle() { return this.title.indexOf('title:') >= 0; }
+    public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
+    public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
+    public hasDescription() { return this.description.indexOf('_description:') >= 0; }
+    public toString() {
+        var str: string = this.title + '\n';
+        if (this.hasDescription()) str += this.description + '\n';
+        if (this.hasLanguage()) str += this.language + '\n';
+        if (this.hasKeywords()) str += this.keywords + '\n';
+        if (this.hasMentions()) str += this.mentionedTypes + '\n';
+        return str;
+    }
 
     constructor(content: string) {
         if (content === undefined) return;
@@ -1472,12 +1571,17 @@ class MarkdownMetadata  {
         this.content = content;
         var lines = content.split('\n');
         for (const line of lines) {
-            this.lines.push(new MarkdownLine(line));
-            if (line.indexOf('mentionedTypes') === 0 )
-                this.mentionedTypes = line;
+            this.lines.push(new MarkdownLine(line.trim()));
+            if (line.indexOf('title:') >= 0) this.title = line.trim();
+            if (line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
+            if (line.indexOf('_language:') >= 0) this.language = line.trim();
+            if (line.indexOf('_description:') >= 0) this.description = line.trim();
+            if (line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
         }
-
     }
+
+
+
 }
 
 class MarkdownLine {

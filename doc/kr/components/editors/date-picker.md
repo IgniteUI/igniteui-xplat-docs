@@ -2,6 +2,7 @@
 title: $Platform$ Date Picker | Data Visualization Tools | Infragistics
 _description: Infragistics' $Platform$ date picker component helps your users select dates. Improve your graphs and visualization with Ignite UI for  $Platform$!
 _keywords: $Platform$ date picker, drop down, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ['DatePicker']
 ---
 # $Platform$ Date Picker Overview

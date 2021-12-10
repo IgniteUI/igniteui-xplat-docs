@@ -2,6 +2,8 @@
 title: $Platform$ Switch Component – $ProductName$
 _description: $ProductName$ Switch component enables developers to use binary on/off or true/false data input functions within their applications.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls
+_language: kr
+mentionedTypes: ['Switch']
 ---
 
 # $Platform$ Switch

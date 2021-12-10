@@ -3,7 +3,9 @@ title: $Platform$ Map | Data Visualization Tools | Shape Styling | Conditional F
 _description: Learn how to apply custom styling to Infragistics' $Platform$ map's shape series. Check out $ProductName$ map tutorials!
 _keywords: $Platform$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling
 mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries']
+_language: kr
 ---
+
 # $Platform$ Shape Styling on Geographic Shape Series
 
 This topic explains how to apply custom styling to the `GeographicShapeSeries` in the $Platform$ `XamGeographicMap`.

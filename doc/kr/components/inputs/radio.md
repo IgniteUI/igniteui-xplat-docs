@@ -2,6 +2,8 @@
 title: Radio and Radio Group
 _description: With $ProductName$ Radio Button and Radio Group controls, developers can seamlessly present lists of options for users to select for better UI in template-driven and reactive forms.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Radio Button components, $Platform$ Radio Button controls, $Platform$ Radio Group component, $Platform$ Radio Group control
+_language: kr
+mentionedTypes: ['Radio']
 ---
 
 # $Platform$ Radio & Radio Group

@@ -2,7 +2,9 @@
 title: $Platform$ Data Visualization Tools | Infragistics
 _description: The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 _keywords: $ProductName$, Infragistics, Getting started, IG, Install $Platform$
+_language: kr
 ---
+
 # $Platform$ Getting Started With $ProductName$
 
 The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
