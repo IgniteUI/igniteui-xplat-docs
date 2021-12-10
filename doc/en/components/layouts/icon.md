@@ -1,11 +1,11 @@
 ---
-title: $Platform$ Icons | $ProductName$
+title: $Platform$ Icon Component | $ProductName$
 _description: See how you can easily get started with $Platform$ Icon Component. Choose icons and select from different styling options to customize them further.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls
 mentionedTypes: ['Icon']
 ---
 
-# $Platform$ Icon Component Overview
+# $Platform$ Icon Overview
 
 The $Platform$ Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it. 
 

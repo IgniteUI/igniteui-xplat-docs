@@ -5,7 +5,7 @@ _keywords: $Platform$ form, $ProductName$, Infragistics
 mentionedTypes: ['Form']
 ---
 
-# $Platform$ Form Component Overview
+# $Platform$ Form Overview
 
 The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
 

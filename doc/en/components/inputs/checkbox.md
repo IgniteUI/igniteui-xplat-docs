@@ -5,7 +5,7 @@ _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widge
 mentionedTypes: ['Checkbox', 'Form']
 ---
 
-# $Platform$ Checkbox Component Overview
+# $Platform$ Checkbox Overview
 
 The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
 
