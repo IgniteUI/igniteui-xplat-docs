@@ -73,8 +73,8 @@ When a form control is invalid, the form will not be submitted and an error mess
 ### Events
 
 The Form component raises the following events:
-- igcSubmit - Raised when the form is submitted
-- igcReset - Raised when the form is reset
+- Submit - Raised when the form is submitted
+- Reset - Raised when the form is reset
 
 Here is an example showing how to add an event listener for the `Submit`] event:
 
