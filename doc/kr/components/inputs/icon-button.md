@@ -32,7 +32,7 @@ After we import the icon button component we are ready to start using it, so let
 
 Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the `variant` attribute of the icon button.
 
-<code-view style="height: 120px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/variant">
@@ -46,7 +46,7 @@ Similar to the regular button components, the icon button supports several varia
 
 The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
-<code-view style="height: 120px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/size">
@@ -93,7 +93,7 @@ igc-icon-button::part(icon) {
 }
 ```
 
-<code-view style="height: 120px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
            github-src="inputs/icon-button/styling">
