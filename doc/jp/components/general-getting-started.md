@@ -328,25 +328,25 @@ $ProductName$ は、開発者がモダンなデスクトップ ブラウザー�
 
 1 - Visual Studio 2019 を起動し、スタート ページで **[新しいプロジェクトの作成]** をクリックします。**Blazor App** テンプレートを選択し、**[次へ]** をクリックします。
 
-<img src="../images/new-blazor-project.jpg" />
+<img src="../images/general/new-blazor-project.jpg" />
 
 2 - プロジェクト名と説明を入力し、**[作成]** をクリックします。
 
-<img src="../images/new-blazor-project-name.jpg" />
+<img src="../images/general/new-blazor-project-name.jpg" />
 
 3 - 使用したい Blazor テンプレート (サーバーまたは Web アセンブリ (WASM)) を選択します。
 
-<img src="../images/new-blazor-project-template.jpg" />
+<img src="../images/general/new-blazor-project-template.jpg" />
 
 ## 手順 2 - Ignite UI for Blazor NuGet パッケージのインストール
 
 1 - ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
 
-<img src="../images/nuget-manage-packages.jpg" />
+<img src="../images/general/nuget-manage-packages.jpg" />
 
 2 - パッケージ マネージャー ダイアログで **[参照]** タブを開き、**Infragistics** パッケージ ソースを選択して **IgniteUI.Blazor** NuGet パッケージをプロジェクトにインストールします。
 
-<img src="../images/nuget-package-manager-browse.jpg" />
+<img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
 > トライアル版をお使いの場合、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial) にある `IgniteUI.Blazor` トライアル版 NuGet パッケージをインストールできます。

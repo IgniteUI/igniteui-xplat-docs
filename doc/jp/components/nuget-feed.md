@@ -20,7 +20,7 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
 1 - Visual Studio で **[ツール] → [NuGet パッケージ マネージャー] → [パッケージ マネージャー設定]** を選択します。
 
-<img src="../images/nuget-package-manager-setting-menu-item.jpg" />
+<img src="../images/general/nuget-package-manager-setting-menu-item.jpg" />
 
 2 - [**パッケージ ソース**] セクションで、ダイアログの右上にある **[+]** アイコンをクリックして新しいパッケージ ソースを追加します。
    - 名前を **Infragistics** に設定します。
@@ -28,7 +28,7 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
     [**更新**] ボタンをクリックし、[OK] をクリックしてダイアログを閉じます。
 
-<img src="../images/nuget-package-manager-package-sources-ig-server.jpg" />
+<img src="../images/general/nuget-package-manager-package-sources-ig-server.jpg" />
 
 > [!Note]
 > このソースから NuGet パッケージを初めて追加する場合、Infragistics 資格情報の入力を求められます。

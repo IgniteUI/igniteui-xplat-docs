@@ -325,25 +325,25 @@ The steps below describe how to create a new Blazor project. If you want to add 
 
 1 - Start Visual Studio 2019 and click **Create a new project** on the start page, select the **Blazor App** template, and click **Next**.
 
-<img src="../images/new-blazor-project.jpg" />
+<img src="../images/general/new-blazor-project.jpg" />
 
 2 - Provide a project name and description, and click **Create**
 
-<img src="../images/new-blazor-project-name.jpg" />
+<img src="../images/general/new-blazor-project-name.jpg" />
 
 3 - Choose which Blazor template you'd like to use. Server or Web Assembly (WASM)
 
-<img src="../images/new-blazor-project-template.jpg" />
+<img src="../images/general/new-blazor-project-template.jpg" />
 
 ## Step 2 - Install the Ignite UI for Blazor NuGet package
 
 1 - Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
 
-<img src="../images/nuget-manage-packages.jpg" />
+<img src="../images/general/nuget-manage-packages.jpg" />
 
 2 - In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
 
-<img src="../images/nuget-package-manager-browse.jpg" />
+<img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
 > If you are a trial user, you can install the `IgniteUI.Blazor` trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
