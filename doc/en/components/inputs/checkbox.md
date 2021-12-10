@@ -1,13 +1,13 @@
 ---
-title: $Platform$ Checkbox Component
-_description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
+title: $Platform$ Checkbox Component | $ProductName$
+_description: Learn how to use the $Platform$ Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
 mentionedTypes: ['Checkbox', 'Form']
 ---
 
 # $Platform$ Checkbox Overview
 
-The $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.
+The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
 
 <div class="divider"></div>
 
