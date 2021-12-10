@@ -7,6 +7,9 @@ _keywords: $ProductName$, Infragistics, Getting Started
 
 The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
+> [!NOTE]
+> You can get an example of $Platform$ project with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
+
 <!-- Angular, React, WebComponents -->
 
 ## Setting Up Computer
