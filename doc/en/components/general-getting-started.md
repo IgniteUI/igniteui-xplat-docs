@@ -337,6 +337,14 @@ The steps below describe how to create a new Blazor project. If you want to add 
 
 ## Step 2 - Install Ignite UI for Blazor Package
 
+You can either install Ignite UI for Blazor package in **VS Package Manage Console** with this command:
+
+```cmd
+dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+```
+
+Alternatively, you can manually select a version by following these steps:
+
 1 - Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
 
 <img src="../images/general/nuget-manage-packages.jpg" />
