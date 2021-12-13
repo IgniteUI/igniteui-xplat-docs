@@ -76,7 +76,7 @@ defineComponents(IgcIconButtonComponent);
 
 ### サイズ
 
-ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ (`small`、`medium`、`large` (デフォルト)) のいずれかに設定することで変更できます。
+ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ - `small`、`medium`、`large` (デフォルト) - のいずれかに設定することで変更できます。
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"

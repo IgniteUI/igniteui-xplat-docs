@@ -88,7 +88,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 
 ### 形状
 
-バッジ コンポーネントは、`rounded` (default) 形状と `square` をサポートします。これらの値は、`shape` 属性に割り当てることができます。
+バッジ コンポーネントは、`rounded` (デフォルト) 形状と `square` をサポートします。これらの値は、`shape` 属性に割り当てることができます。
 
 ```html
 <igc-badge shape="square"></igc-badge>
