@@ -2,7 +2,7 @@
 title: $Platform$ Form Component | $ProductName$
 _description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here. 
 _keywords: $Platform$ form, $ProductName$, Infragistics
-mentionedTypes: ['Form']
+mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 ---
 
 # $Platform$ Form Overview
@@ -67,6 +67,10 @@ When a form control is invalid, the form will not be submitted and an error mess
   <igc-form novalidate>
     <!-- Form content -->
   </igc-form>
+```
+
+```razor
+<IgbForm NoValidate="true" />
 ```
 
 ### Events

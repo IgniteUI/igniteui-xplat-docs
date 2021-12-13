@@ -47,24 +47,36 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 
 The simplest way to start using the `NavDrawer` is as follows:
 
-```html
-    <div style="display: flex;">
-        <igc-nav-drawer open="true">
-            <igc-nav-drawer-header-item>
-                Sample Drawer
-            </igc-nav-drawer-header-item>
+```html    
+<igc-nav-drawer open="true">
+    <igc-nav-drawer-header-item>
+        Sample Drawer
+    </igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+</igc-nav-drawer>    
+```
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-        </igc-nav-drawer>
-    </div>
+```razor
+<IgbNavDrawer Open="true">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@HomeIcon" slot="icon" IconName="home" Collection="material"></IgbIcon>
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@SearchIcon" slot="icon" IconName="search" Collection="material"></IgbIcon>
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+</IgbNavDrawer>
 ```
 
 If all went well, you should see the following in your browser:
@@ -76,35 +88,52 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
-## Nabbar Integration
+## Navbar Integration
 
 While any content can be provided in the drawer, the `NavDrawerItem` is available to apply out-of-the-box styling to the items.
 
 To enhance our component a bit, we can use it in conjunction with the `Navbar`. This way we can achieve a more completed look and use the drawer's methods. Let's look at how we can use this in the next example:
 
 ```html
-    <igc-navbar>
-      <igc-icon slot="start" name="menu" id="menu"></igc-icon>
-      <h2>Home</h2>
-    </igc-navbar>
+<igc-navbar>
+  <igc-icon slot="start" name="menu" id="menu"></igc-icon>
+  <h2>Home</h2>
+</igc-navbar>
 
-    <div id="root" style="display: flex;">
-        <igc-nav-drawer id="navDrawer">
-            <igc-nav-drawer-header-item>
-                Sample Drawer
-            </igc-nav-drawer-header-item>
+<igc-nav-drawer id="navDrawer">
+    <igc-nav-drawer-header-item>
+        Sample Drawer
+    </igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+</igc-nav-drawer>    
+```
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
+```razor
+<IgbNavbar>
+    <IgbIcon slot="start" IconName="menu" Collection="material" />
+    <h2>Home</h2>
+</IgbNavbar>
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-        </igc-nav-drawer>
-    </div>
+<IgbNavDrawer @ref="NavDrawerRef">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon slot="icon" IconName="home" Collection="material" />
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon slot="icon" IconName="search" Collection="material" @onclick="OnMenuIconClick" />
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+</IgbNavDrawer>
 ```
 
 Let's also add some radio buttons to display all `position` values. This way whenever one gets selected, we will change the position of the drawer.
@@ -132,6 +161,52 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </igc-radio-group>
 ```
 
+```razor
+<IgbRadioGroup id="radio-group" Alignment="RadioGroupAlignment.Horizontal">
+    <IgbRadio Value="Start" LabelPosition="RadioLabelPosition.After" Checked="true" Change="OnRadioOptionClick">Start</IgbRadio>
+    <IgbRadio Value="End" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">End</IgbRadio>
+    <IgbRadio Value="Top" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">Top</IgbRadio>
+    <IgbRadio Value="Bottom" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">Bottom</IgbRadio>
+</IgbRadioGroup>
+
+@code {
+    
+    public IgbNavDrawer NavDrawerRef { get; set; }
+
+    public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
+    {
+        IgbRadio radio = args.Parent as IgbRadio;
+
+        if (this.NavDrawerRef != null)
+        {
+            switch (radio.Value)
+            {
+                case "Start":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Start;
+                        break;
+                    }
+                case "End":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.End;
+                        break;
+                    }
+                case "Top":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Top;
+                        break;
+                    }
+                case "Bottom":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Bottom;
+                        break;
+                    }
+            }
+        }
+    }
+}
+```
+
 And finally, we need a way to open and close our navigation drawer. There are a couple of ways to achieve this, but for the sake of this example we will do the following:
 
 ```ts
@@ -150,6 +225,17 @@ document.getElementById('root')!.onclick = (e) => {
 }
 ```
 
+```razor
+public void OnMenuIconClick()
+{
+    if(this.NavDrawerRef != null)
+    {
+        this.NavDrawerRef.Show();
+        hitMenuIconFirst = true;
+        isNavDrawerOpen = true;
+    }
+}
+```
 
 If all goes well, your component should now look like this:
 
@@ -164,32 +250,50 @@ If all goes well, your component should now look like this:
 
 With the mini variant, the Navigation Drawer changes its width instead of closing. It is used to maintain quick navigation, available at all times, leaving just the icons. To achieve that, you only need to set up the `mini` slot of the drawer.
 
-```html
-    <div style="display: flex;">
-        <igc-nav-drawer position="start">
-            <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-
-            <div slot="mini">
-                <igc-nav-drawer-item>
-                    <igc-icon slot="icon" name="home"></igc-icon>
-                </igc-nav-drawer-item>
-
-                <igc-nav-drawer-item>
-                    <igc-icon slot="icon" name="search"></igc-icon>
-                </igc-nav-drawer-item>
-            </div>
-        </igc-nav-drawer>
+```html    
+<igc-nav-drawer position="start">
+    <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+    <div slot="mini">
+        <igc-nav-drawer-item>
+            <igc-icon slot="icon" name="home"></igc-icon>
+        </igc-nav-drawer-item>
+        <igc-nav-drawer-item>
+            <igc-icon slot="icon" name="search"></igc-icon>
+        </igc-nav-drawer-item>
     </div>
+</igc-nav-drawer>    
+```
+
+```razor
+<IgbNavDrawer @ref="@NavDrawerRef" Open="true" style="position: relative">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@HomeIcon" slot="icon" Collection="material" IconName="home" />
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@SearchIcon" slot="icon" Collection="material" IconName="search" />
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+    <div slot="mini">
+        <IgbNavDrawerItem>
+            <IgbIcon slot="icon" Collection="material" IconName="home" />
+        </IgbNavDrawerItem>
+        <IgbNavDrawerItem>
+            <IgbIcon slot="icon" Collection="material" IconName="search" />
+        </IgbNavDrawerItem>
+    </div>
+</IgbNavDrawer>
 ```
 
 And here's the result:

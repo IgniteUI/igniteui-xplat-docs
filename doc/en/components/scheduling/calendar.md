@@ -53,12 +53,20 @@ The simplest way to start using the `Calendar` is as follows:
 <igc-calendar></igc-calendar>
 ```
 
-### Single Modes
+```razor
+<IgbCalendar />
+```
+
+### Selection Modes
 
 By default the `Calendar` is using single selection mode but you can changed it by setting the `Selection` property as shown in this example.
 
 ```html
 <igc-calendar selection="multiple"></igc-calendar>
+```
+
+```razor
+<IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
 ```
 
 <code-view style="height: 370px"
@@ -77,6 +85,10 @@ Following the same approach, we can switch `Selection` to range mode:
 <igc-calendar selection="range"></igc-calendar>
 ```
 
+```razor
+<IgbCalendar Selection="@CalendarBaseSelection.Range" />
+```
+
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
@@ -87,6 +99,8 @@ Following the same approach, we can switch `Selection` to range mode:
 ### Active View and Date
 
 The Calendar component allows you to switch between three different views: days, months and years. The `ActiveView` property of the component reflects the current view. By default, the Calendar displays the current date when loaded initially. You could modify this by setting the `ActiveDate` property. The `ActiveDate` property also reflects the changes of the currently visible date made by the end user.
+
+<!-- WebComponents -->
 
 ### Header Options
 
@@ -114,6 +128,10 @@ The following sample demonstrates the above configuration:
            alt="$Platform$ Calendar Header Example"
            github-src="scheduling/calendar/header">
 </code-view>
+
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
 
 ### Localization and Formatting
 
@@ -163,6 +181,10 @@ If everything went well, we should now have a Calendar with customized display, 
            github-src="scheduling/calendar/formatting">
 </code-view>
 
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
+
 ### Disabled dates
 
 In some cases you would want to have disabled dates in the Calendar which can't be selected by the end user. This functionality is achieved by using the `DisabledDates` property. The `DisabledDates` property is an array of `DateRangeDescriptor` objects. Each descriptor has a `Type` and optionally a `DateRange` which is an array of `Date` objects.
@@ -196,6 +218,10 @@ These configurations should have the following result:
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
+
 ### Special dates
 
 The `SpecialDates` property is using almost the same configuration principles as the `DisabledDates`. The special dates have a highlighted look and feel and unlike the disabled ones can be selected.
@@ -221,6 +247,8 @@ The following demo illustrates a Calendar with a vacation request option:
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
+<!-- end: WebComponents -->
+
 ### Week numbers
 
 You can use the `ShowWeekNumbers` property to show the week numbers of the Calendar component. You can do this by using its corresponding boolean attribute `show-week-numbers` like this:
@@ -228,6 +256,11 @@ You can use the `ShowWeekNumbers` property to show the week numbers of the Calen
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
 ```
+
+```razor
+<IgbCalendar ShowWeekNumbers="true" />
+```
+
 The following demo illustrates a Calendar with enabled week numbers:
 
 <code-view style="height: 480px"
@@ -245,6 +278,10 @@ The Calendar displays leading and trailing dates from the previous and the next 
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
+```
+
+```razor
+<IgbCalendar VisibleMonths="2" HideOutsideDays="true" />
 ```
 
 The following sample demonstrates the multiple months configuration:
