@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Icon コンポーネント
-_description: 開発者は、$ProductName$ Icon コンポーネントを使用して、さまざまなアイコンをカスタム色などと交換可能に使用できます。
+title: $Platform$ Icon コンポーネント | $ProductName$
+_description: See how you can easily get started with $Platform$ Icon Component. Choose icons and select from different styling options to customize them further.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
 mentionedTypes: ['Icon']
 _language: ja
@@ -8,8 +8,7 @@ _language: ja
 
 # $Platform$ Icon (アイコン) の概要
 
-$ProductName$ アイコン コンポーネントを使用すると、開発者は登録済みの SVG をアプリケーションのアイコンとして使用できます。
-
+The $Platform$ Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it.
 
 ## $Platform$ Icon の例
 

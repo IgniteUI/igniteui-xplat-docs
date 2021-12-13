@@ -8,6 +8,9 @@ _language: ja
 
 $ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $Platform$ コンポーネントのコンプリート セットです。
 
+> [!NOTE]
+> You can get an example of $Platform$ project with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
+
 <!-- Angular, React, WebComponents -->
 
 ## コンピューターのセットアップ
@@ -321,10 +324,8 @@ npm run-script start
 
 <!-- Blazor -->
 
-$ProductName$ は、開発者がモダンなデスクトップ ブラウザー用の最新の高性能アプリケーションを構築できるように設計された $Platform$ コンポーネントの完全なセットです。
-
 ## 手順 1 - 新しい Blazor プロジェクトの作成
-以下の手順では、新しい Blazor プロジェクトを作成する方法を説明します。Ignite UI for Blazor コンポーネントを既存のアプリケーションに追加する場合は、[**手順 2**](#手順-2---ignite-ui-for-blazor-nuget-パッケージのインストール) に進みます。
+以下の手順では、新しい Blazor プロジェクトを作成する方法を説明します。Ignite UI for Blazor コンポーネントを既存のアプリケーションに追加する場合は、[**手順 2 - Ignite UI for Blazor パッケージのインストール**](#手順-2---ignite-ui-for-blazor-パッケージのインストール) に進みます。
 
 1 - Visual Studio 2019 を起動し、スタート ページで **[新しいプロジェクトの作成]** をクリックします。**Blazor App** テンプレートを選択し、**[次へ]** をクリックします。
 
@@ -338,7 +339,15 @@ $ProductName$ は、開発者がモダンなデスクトップ ブラウザー�
 
 <img src="../images/general/new-blazor-project-template.jpg" />
 
-## 手順 2 - Ignite UI for Blazor NuGet パッケージのインストール
+## 手順 2 - Ignite UI for Blazor パッケージのインストール
+
+You can either install Ignite UI for Blazor package in **VS Package Manage Console** with this command:
+
+```cmd
+dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+```
+
+Alternatively, you can manually select a version by following these steps:
 
 1 - ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
 
@@ -354,27 +363,27 @@ $ProductName$ は、開発者がモダンなデスクトップ ブラウザー�
 > [!Note]
 > Infragistics パッケージソースがない場合、追加するには [Infragistics NuGet フィード トピック](./general-nuget-feed.md)を参照してください。
 
-## 手順 3 - Ignite UI for Blazor の登録
+## 手順 3 - Ignite UI for Blazor コンポーネントの登録
 
 1 - Ignite UI for Blazor スクリプトをデフォルトの Blazor スクリプトの上に追加します。
 
-Blazor Web アセンブリで **wwwroot/index.html** ファイルを変更します。
+**Blazor Web Assembly** プロジェクトで **wwwroot/index.html** ファイルを変更します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.webassembly.js"></script>
 ```
 
-Blazor サーバーで **Pages/_Host.cshtml** ファイルを変更します。
+**Blazor Server** プロジェクトで **Pages/_Host.cshtml** ファイルを変更します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-2 - `AddIgniteUIBlazor` メソッドを使用して Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
+2 - Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
-Blazor Web アセンブリのプロジェクトで **Program.cs** ファイルを変更します。
+**Blazor Web Assembly** プロジェクトで **Program.cs** ファイルを変更します。
 
 ```razor
 using IgniteUI.Blazor.Controls;
@@ -382,12 +391,13 @@ using IgniteUI.Blazor.Controls;
 
 public static async Task Main(string[] args)
 {
+    var builder = WebAssemblyHostBuilder.CreateDefault(args);
     // ...
-    builder.Services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
+    builder.Services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
 
-In Blazor Server project - change the **Startup.cs** file:
+In **Blazor Server** project - change the **Startup.cs** file:
 
 ```razor
 using IgniteUI.Blazor.Controls;
@@ -396,37 +406,35 @@ using IgniteUI.Blazor.Controls;
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-    services.AddIgniteUIBlazor(typeof(IgbGeographicMapModule));
+    services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
 
 オプションで、アプリケーション レベルでモジュールを登録できない場合は、ページの初期化時にモジュールを razor りファイルに登録できます。
 
-```
-@page ...
+```razor
+@page "/pages/some-page-name"
 
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor;
 
 @code
 {
-
-   protected override void OnInitialized()
+    protected override void OnInitialized()
     {
         base.OnInitialized();
-        GeographicMapModule.Register(IgniteUIBlazor);
-
-        ...
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
+        IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+        // ...
     }
 }
-
 ```
 
 > [!Note]
-> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `GeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
+> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `IgbGeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
 
 
-3 - `_Imports.razor` に `IgniteUI.Blazor.Controls` 名前空間を追加します。
+3 - Add a namespace to $ProductName$ components in `_Imports.razor` file:
 
 ```razor
 @using IgniteUI.Blazor.Controls;
@@ -435,8 +443,10 @@ public void ConfigureServices(IServiceCollection services)
 4 - Ignite UI for Blazor コンポーネントを razor ページに追加します。
 
 ```razor
-<IgbGeographicMap Height="100%" Width="100%" />
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
 </IgbGeographicMap>
 ```
+
+5 - Build and run the Blazor app.
 
 <!-- end: Blazor -->

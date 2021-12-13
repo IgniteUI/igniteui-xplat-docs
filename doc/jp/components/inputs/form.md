@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Form | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ フォームは、インタラクティブ コントロールからユーザー入力を収集するために使用されるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
+title: $Platform$ Form コンポーネント | $ProductName$
+_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
 _keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
 mentionedTypes: ['Form']
 _language: ja
@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ (フォーム) の概要
 
-$ProductName$ `Form` は、Ignite UI Web Components フォーム コントロールおよびネイティブ フォーム コントロールからデータを収集します。結果のフォーム データは、単一の FormData オブジェクトに公開されます。
+The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
 
 <div class="divider"></div>
 

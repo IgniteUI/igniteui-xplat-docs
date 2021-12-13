@@ -1,7 +1,7 @@
 ---
 title: $Platform$ データ グリッド | フィルタリング | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ グリッド コンポーネントを使用して表現的なソート条件を実行し、データを簡単に返します。詳細については、$ProductName$ テーブルのサンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column, filtering, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, フィルタリング, インフラジスティックス
+_keywords: $Platform$ Table, Data Grid, column, filtering, filter expressions, filter operands, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, フィルタリング, フィルター式, フィルター オペランド, インフラジスティックス
 mentionedTypes: ['Grid']
 _language: ja
 ---
@@ -22,227 +22,34 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <div class="divider--half"></div>
 
-上記のように、`FilterUIType` プロパティを FilterRow に設定すると、ユーザー インターフェイスでレコードをフィルタリングできるようになり、ユーザーはレコードをフィルタリングするためのフィルター基準を指定できます。指定されたフィルター基準に一致しないレコードは非表示になります。フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。
+上記のように、`FilterUIType` プロパティを FilterRow に設定すると、ユーザー インターフェイスでレコードをフィルタリングできるようになり、ユーザーはレコードをフィルタリングするためのフィルター基準を指定できます。指定されたフィルター基準に一致しないレコードは非表示になります。
 
-## コード スニペット
+フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。This is achieved when setting the `FilterUIType` to ColumnOptions. Please refer to the sample below.
 
-<!-- Angular, React, WebComponents -->
-FilterExpression と FilterFactory をインポートして、フィルターのコレクションを作成できるようにします。
-<!-- end: Angular, React, WebComponents -->
+## Filter Expressions
 
-<!--WebComponents-->
-```ts
-import { FilterExpression } from 'igniteui-webcomponents-core';
-import { FilterFactory } from 'igniteui-webcomponents-core';
-```
+In the example below, the data grid's FilterExpressions collection is updated to incorporate custom `FilterExpression`.
 
-<!--React-->
-```ts
-import { FilterExpression } from 'igniteui-react-core';
-import { FilterFactory } from 'igniteui-react-core';
-```
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-filter-expressions"
+           alt="$Platform$ Grid Filter Expressions Example"
+           github-src="grids/data-grid/column-filter-expressions">
+</code-view>
 
-フィルターのコレクションに追加するための FilterExpression を作成します。
+<div class="divider--half"></div>
 
-<!--React-->
-```ts
-public grid: IgrDataGrid;
-public filterText: string = "New York";
-public filterMode: string = "Contains";
-public filterColumn: string = "City";
-public filterFactory: FilterFactory;
-// ...
-public onGridRef(grid: IgrDataGrid) {
-    this.grid = grid;
-    this.applyFilter();
-}
+## Filter Operators
 
-public onFilterTextChanged = (e: any) => {
-    this.filterText = e.target.value;
-    this.setState({filterText: e.target.value});
-    this.applyFilter();
-}
+Columns can be given a custom `FilterOperand` that will appear in the filter-row operand dropdown. The key requirements is to ensure the operand is given a `DisplayName` and to utilize the `FilterRequested` event on the operand so you can apply a `FilterFactory`, which is responsible for assigning the operator and value you wish to the filter the column by. Eg. StartsWith with value of "A".
 
-public onFilterModeChanged = (e: any) => {
-    this.filterMode = e.target.value;
-    this.setState({filterMode: e.target.value});
-    this.applyFilter();
-}
+Since the operands are applied to the column they can be added inline, in-code, or in a separate class. Each approach is demonstrated in the example below.
 
-public onFilterColumnChanged = (e: any) => {
-    this.filterColumn = e.target.value;
-    this.setState({filterColumn: e.target.value});
-    this.applyFilter();
-}
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
+           alt="$Platform$ Grid Filtering Example"
+           github-src="grids/data-grid/column-filter-operands">
+</code-view>
 
-public applyFilter()
-{
-    if (this.filterText === "") {
-        return;
-    }
-
-    this.filterFactory = new FilterFactory();
-
-    const expression = this.filterText.toUpperCase();
-    const column = this.filterFactory.property(this.filterColumn).toUpper();
-
-    let filter: FilterExpression;
-    if (this.filterMode === "Contains")
-    {
-        filter = column.contains(expression)
-    }
-    else if (this.filterMode === "StartsWith")
-    {
-        filter = column.startsWith(expression);
-    }
-    else // if (this.filterMode === "EndsWith")
-    {
-        filter = column.endsWith(expression);
-    }
-
-    this.grid.filterExpressions.clear();
-    this.grid.filterExpressions.add(filter);
-}
-```
-<!--WebComponents-->
-```ts
-private grid: IgcDataGridComponent;
-private filterText : string = "";
-private filterMode : string = "Contains";
-private filterColumn : string = "Name";
-private filterFactory : FilterFactory;
-// ...
-
- this.grid = document.getElementById("grid") as IgcDataGridComponent;
-
-document.getElementById("filterColumnDropDown").addEventListener("change", this.onFilterColumnDropDownValueChanged);
-document.getElementById("filterModeDropDown").addEventListener("change", this.onFilterModeDropDownValueChanged);
-document.getElementById("filterTextBox").addEventListener("change", this.onFilterTextBoxTextChanged);
-
- public onFilterColumnDropDownValueChanged() {
-        let dropDown = document.getElementById("filterColumnDropDown") as any;
-        this.filterColumn = dropDown.value;
-        this.applyFilter();
-    }
-
-    public onFilterModeDropDownValueChanged() {
-        let dropDown = document.getElementById("filterModeDropDown") as any;
-        this.filterMode = dropDown.value;
-        this.applyFilter();
-    }
-
-    public onFilterTextBoxTextChanged() {
-        let textBox = document.getElementById("filterTextBox") as any;
-        this.filterText = textBox.value;
-        this.applyFilter();
-    }
-
-    public applyFilter(){
-        this.grid.filterExpressions.clear();
-        if (this.filterText === "" || this.filterText === null) {
-            return;
-        }
-
-        this.filterFactory = new FilterFactory();
-        const expression = this.filterText.toUpperCase();
-        const column = this.filterFactory.property(this.filterColumn).toUpper();
-
-        let filter: FilterExpression;
-        if (this.filterMode === "Contains")
-        {
-            filter = column.contains(expression)
-        }
-        else if (this.filterMode === "StartsWith")
-        {
-            filter = column.startsWith(expression);
-        }
-        else // if (this.filterMode === "EndsWith")
-        {
-            filter = column.endsWith(expression);
-        }
-
-        this.grid.filterExpressions.add(filter);
-    }
-```
-
-```razor
-<IgbDataGrid Height="100%" Width="100%"
-          @ref="DataGridRef"
-          DataSource="DataSource" />
-
-@code {
-
-    public IgbDataGrid DataGridRef;
-
-    public string FilterText = "";
-    public string FilterMode = "Contains";
-    public string FilterColumn = "Name";
-
-    public FilterFactory FilterFactory = new FilterFactory();
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-        IgbDataGridModule.Register(IgniteUIBlazor);
-        IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
-        IgbGridColumnFilterOptionsModule.Register(IgniteUIBlazor);
-    }
-
-    public void OnFilterTextChanged(ChangeEventArgs e)
-    {
-        this.FilterText = e.Value.ToString();
-        this.ApplyFilter();
-    }
-
-    public void OnFilterModeChanged(ChangeEventArgs e)
-    {
-        this.FilterMode = e.Value.ToString();
-        this.ApplyFilter();
-    }
-
-    public void OnFilterColumnChanged(ChangeEventArgs e)
-    {
-        this.FilterColumn = e.Value.ToString();
-        this.ApplyFilter();
-    }
-
-    public void ApplyFilter()
-    {
-        this.DataGridRef.FilterExpressions.Clear();
-
-        if (this.FilterText == "")
-        {
-            return;
-        }
-
-        string expression = this.FilterText.ToUpper();
-
-        FilterExpression column = this.FilterFactory.Property(this.FilterColumn).ToUpper();
-
-        FilterExpression filter = new FilterExpression();
-
-        switch (this.FilterMode)
-        {
-            case "Contains":
-                {
-                    filter = column.Contains(expression);
-                    break;
-                }
-            case "StartsWith":
-                {
-                    filter = column.StartsWith(expression);
-                    break;
-                }
-            case "EndsWith":
-                {
-                    filter = column.EndsWith(expression);
-                    break;
-                }
-        }
-
-        this.DataGridRef.FilterExpressions.Add(filter);
-
-        StateHasChanged();
-    }
-}
-```
+<div class="divider--half"></div>

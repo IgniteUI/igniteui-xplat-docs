@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Button | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Button は、さまざまなバリエーションとスタイルを提供します。これらは、実現したい外観と機能に合わせて簡単に構成できます。
+title: $Platform$ Button コンポーネント | $ProductName$
+_description: Get started with the $Platform$ Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the $Platform$ Button OnClick event.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ Button コンポーネント, インフラジスティックス
 mentionedTypes: ['Button', 'ButtonBase']
 _language: ja
@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ Button (ボタン) の概要
 
-$ProductName$ Button は、実現したい外観と機能に一致するように簡単に構成できるさまざまなバリアントとスタイルを提供します。
+The $Platform$ Button Component lets you enable clickable elements that trigger actions in your $Platform$ app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the $Platform$ Button OnClick event, toggle the $Platform$ button, disable the $Platform$ button, and more.
 
 <div class="divider"></div>
 

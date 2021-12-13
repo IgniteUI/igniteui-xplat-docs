@@ -1,13 +1,14 @@
 ---
-title: $Platform$ Checkbox コンポーネント
-_description: $ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。
+title: $Platform$ Checkbox コンポーネント | $ProductName$
+_description: Learn how to use the $Platform$ Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Checkbox コンポーネント, $Platform$ Checkbox コントロール
 mentionedTypes: ['Checkbox', 'Form']
 _language: ja
 ---
 
 # $Platform$ Checkbox (チェックボックス) の概要
-$ProductName$ Checkbox コンポーネントは、ユーザーが特定の条件に対してバイナリ選択を行えるようにする選択コントロールです。ネイティブ ブラウザーのチェックボックスと同様に動作します。
+
+The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
 
 <div class="divider"></div>
 
