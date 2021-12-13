@@ -51,7 +51,7 @@ The simplest way to start using the `IconButton` is as follows:
 ```
 
 ```razor
-<IgbIconButton Collection="material" />
+<IgbIconButton IconName="thumb-up" Collection="material" />
 ```
 
 ## Examples
@@ -71,7 +71,7 @@ Similar to the regular button components, the icon button supports several varia
 ```
 
 ```razor
-<IgbIconButton Variant="@IconButtonVariant.Contained" />
+<IgbIconButton IconName="search" Variant="@IconButtonVariant.Contained" Collection="material" />
 ```
 
 ### Size
@@ -89,7 +89,7 @@ The size of the button can be changed by setting the `size` attribute to any of 
 ```
 
 ```razor
-<IgbIconButton Size="@SizableComponentSize.Medium" />
+<IgbIconButton IconName="thumb-up" Collection="material" Size="@SizableComponentSize.Medium" />
 ```
 
 ### Type
@@ -106,7 +106,7 @@ The icon button component will change its internal structure from `<button>` to 
 ```
 
 ```razor
-<IgbIconButton Collection="material" Href="https://duckduckgo.com" Target="_blank" />
+<IgbIconButton IconName="thumb-up" Collection="material" Href="https://duckduckgo.com" Target="_blank" />
 ```
 
 ### Mirrored
@@ -118,7 +118,7 @@ Some icons need to look a little different when used in Right-to-Left(RTL) mode.
 ```
 
 ```razor
-<IgbIconButton Mirrored="true" />
+<IgbIconButton IconName="thumb-up" Collection="material" Mirrored="true" />
 ```
 
 ## Styling

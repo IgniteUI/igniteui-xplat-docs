@@ -15,8 +15,8 @@ The $Platform$ Checkbox is a component that lets you add checkboxes to your $Pla
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/sample-1">
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox Example"
+           github-src="inputs/checkbox/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -130,9 +130,9 @@ Use the `checked` attribute to toggle on the checkbox.
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
            alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/checked">
+           github-src="inputs/checkbox/checking">
 </code-view>
 
 ### Indeterminate
@@ -271,6 +271,13 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-styling"
+           alt="$Platform$ Checkbox Example"
+           github-src="inputs/checkbox/styling">
+</code-view>
 
 <!-- WebComponents -->
 

@@ -2,7 +2,7 @@
 title: $Platform$ Input | Data Visualization Tools | Infragistics
 _description: Infragistics' $Platform$ input is a component where the user can enter data. Improve your application with Ignite UI for $Platform$!
 _keywords: $Platform$ input, $ProductName$, Infragistics
-mentionedTypes: ['Input']
+mentionedTypes: ['Input', 'Icon', 'Radio']
 ---
 # $Platform$ Input Overview
 
@@ -51,6 +51,10 @@ After we import the `Input` component we are ready to start using it, so let's a
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
 ```
 
+```razor
+<IgbInput DisplayType="@InputType.Email" Label="Subscribe" Placeholder="john.doe@mail.com" />
+```
+
 ## Prefix & Suffix
 
 With `prefix` and `suffix` slots we can add different content before and after the main content of the Input. In the following sample we will create a new Input field with a text prefix and an icon suffix:
@@ -89,7 +93,11 @@ In the sample above we have demonstrated the use of the following attributes:
 - `disabled` - Used to disable the input
 - `readonly` - Used to mark the input as readonly
 
+<!-- WebComponents -->
+
 The full list of attributes can be found in `Input` API.
+
+<!-- end: WebComponents -->
 
 ## Styling
 
@@ -129,6 +137,8 @@ igc-input::part(suffix){
            github-src="inputs/input/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API References
 
 For more detailed information regarding the Input's API, refer to the following links:
@@ -138,11 +148,22 @@ Additional components and/or directives that were used:
 * `Icon`
 * `Radio`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+<!-- Blazor -->
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -50,15 +50,19 @@ Then in the template of `Navbar`, you can add the following code to show a basic
 <igc-navbar>Navigation Title</igc-navbar>
 ```
 
+```razor
+<IgbNavbar>Navigation Title</IgbNavbar>
+```
+
 ## Content
 
 You can added some `Icon` icons using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
+           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
            alt="$Platform$ Navbar Styling Example"
-           github-src="menus/nav-bar/content">
+           github-src="menus/nav-bar/overview">
 </code-view>
 
 
