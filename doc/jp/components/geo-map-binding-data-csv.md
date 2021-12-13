@@ -23,7 +23,7 @@ $ProductName$ Map コンポーネントを使用すると、さまざまな種�
 
 
 ## データ例
-CSVファイルからのデータの例:
+CSV ファイルからのデータの例:
 
 ```ts
 City,Lat,Lon,State,Code,County,Density,Population
