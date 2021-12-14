@@ -71,7 +71,7 @@ defineComponents(IgcIconButtonComponent);
 ```
 
 ```razor
-<IgbIconButton Variant="@IconButtonVariant.Contained" />
+<IgbIconButton IconName="search" Variant="@IconButtonVariant.Contained" Collection="material" />
 ```
 
 ### サイズ
@@ -89,7 +89,7 @@ defineComponents(IgcIconButtonComponent);
 ```
 
 ```razor
-<IgbIconButton Size="@SizableComponentSize.Medium" />
+<IgbIconButton IconName="thumb-up" Collection="material" Size="@SizableComponentSize.Medium" />
 ```
 
 ### タイプ
@@ -106,7 +106,7 @@ defineComponents(IgcIconButtonComponent);
 ```
 
 ```razor
-<IgbIconButton Collection="material" Href="https://duckduckgo.com" Target="_blank" />
+<IgbIconButton IconName="thumb-up" Collection="material" Href="https://duckduckgo.com" Target="_blank" />
 ```
 
 ### Mirrored (ミラー化済み)

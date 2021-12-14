@@ -52,6 +52,10 @@ defineComponents(IgcInputComponent);
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
 ```
 
+```razor
+<IgbInput DisplayType="@InputType.Email" Label="Subscribe" Placeholder="john.doe@mail.com" />
+```
+
 ## Prefix と Suffix
 
 `prefix` スロットと `suffix` スロットを使用すると、入力のメイン コンテンツの前後に異なるコンテンツを追加できます。次のサンプルでは、テキスト プレフィックスとアイコン サフィックスを使用して新しい Input フィールドを作成します:
@@ -89,8 +93,11 @@ defineComponents(IgcInputComponent);
 - `required` - 入力を必須としてマークするために使用されます。
 - `disabled` - 入力を無効にするために使用されます。
 - `readonly` - 入力を読み取り専用としてマークするために使用されます。
+<!-- WebComponents -->
 
 属性の完全なリストは、`Input` API にあります。
+
+<!-- end: WebComponents -->
 
 ## スタイル設定
 
@@ -130,6 +137,8 @@ igc-input::part(suffix){
            github-src="inputs/input/styling">
 </code-view>
 
+<!-- WebComponents -->
+
 ## API リファレンス
 
 Input API の詳細については、次のリンクを参照してください。
@@ -139,11 +148,22 @@ Input API の詳細については、次のリンクを参照してください�
 * `Icon`
 * `Radio`
 
+<!-- end: WebComponents -->
+
 <div class="divider"></div>
+
 ## その他のリソース
 
-<div class="divider--half"></div>
-コミュニティに参加して新しいアイデアをご提案ください。
+<!-- Blazor -->
 
-* [$Platform$ **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -17,8 +17,8 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 
 <code-view style="height:200px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch の例"
-           github-src="inputs/switch/sample-1">
+           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch の例"
+           github-src="inputs/switches/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -98,9 +98,9 @@ defineComponents(IgcSwitchComponent);
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
            alt="$Platform$ Avatar の例"
-           github-src="inputs/switch/label">
+           github-src="inputs/switches/label">
 </code-view>
 
 ### チェック済み
@@ -117,9 +117,9 @@ defineComponents(IgcSwitchComponent);
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
            alt="$Platform$ Avatar の例"
-           github-src="inputs/switch/checked">
+           github-src="inputs/switches/checking">
 </code-view>
 
 ### 必須
@@ -160,9 +160,9 @@ defineComponents(IgcSwitchComponent);
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
            alt="$Platform$ Avatar の例"
-           github-src="inputs/switch/disabled">
+           github-src="inputs/switches/disabled">
 </code-view>
 
 ### フォーム

@@ -54,12 +54,20 @@ IgbCalendarModule.Register(IgniteUIBlazor);
 <igc-calendar></igc-calendar>
 ```
 
+```razor
+<IgbCalendar />
+```
+
 ### 単一モード
 
 デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
 
 ```html
 <igc-calendar selection="multiple"></igc-calendar>
+```
+
+```razor
+<IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
 ```
 
 <code-view style="height: 370px"
@@ -78,6 +86,10 @@ IgbCalendarModule.Register(IgniteUIBlazor);
 <igc-calendar selection="range"></igc-calendar>
 ```
 
+```razor
+<IgbCalendar Selection="@CalendarBaseSelection.Range" />
+```
+
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
@@ -88,6 +100,8 @@ IgbCalendarModule.Register(IgniteUIBlazor);
 ### Active View と Date
 
 Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `ActiveView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`ActiveDate` プロパティを設定することで変更できます。`ActiveDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
+
+<!-- WebComponents -->
 
 ### ヘッダー オプション
 
@@ -115,6 +129,10 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
            alt="$Platform$ Calendar ヘッダーの例"
            github-src="scheduling/calendar/header">
 </code-view>
+
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
 
 ### ローカライズおよび書式設定
 
@@ -164,6 +182,10 @@ this.radios.forEach(radio => {
            github-src="scheduling/calendar/formatting">
 </code-view>
 
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
+
 ### 日付の無効化
 
 場合によっては、エンド ユーザーが選択できない Calendar の日付を無効にしたいことがあります。この機能は、`DisabledDates` プロパティを使用して実現されます。`DisabledDates` プロパティは、`DateRangeDescriptor` オブジェクトの配列です。各記述子には `Type` があり、オプションで `Date` オブジェクトの配列である `DateRange` があります。
@@ -197,6 +219,10 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
+<!-- end: WebComponents -->
+
+<!-- WebComponents -->
+
 ### 特定の日付
 
 `SpecialDates` プロパティは、`DisabledDates` とほぼ同じ構成原則を使用しています。特別な日付は強調表示されたルック アンド フィールを持ち、無効な日付とは異なり、選択することができます。
@@ -222,6 +248,8 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
+<!-- end: WebComponents -->
+
 ### 週番号
 
 `ShowWeekNumbers` プロパティを使用して、Calendar コンポーネントの週番号を表示できます。これを行うには、対応するブール属性 `show-week-numbers` を次のように使用します:
@@ -229,6 +257,11 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 ```html
 <igc-calendar show-week-numbers></igc-calendar>
 ```
+
+```razor
+<IgbCalendar ShowWeekNumbers="true" />
+```
+
 次のデモは、週番号が有効になっている Calendar を示しています:
 
 <code-view style="height: 480px"
@@ -246,6 +279,10 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
+```
+
+```razor
+<IgbCalendar VisibleMonths="2" HideOutsideDays="true" />
 ```
 
 次のサンプルは、複数月の構成を示しています:

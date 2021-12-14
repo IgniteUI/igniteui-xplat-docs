@@ -48,24 +48,36 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 
 `NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
 
-```html
-    <div style="display: flex;">
-        <igc-nav-drawer open="true">
-            <igc-nav-drawer-header-item>
-                Sample Drawer
-            </igc-nav-drawer-header-item>
+```html    
+<igc-nav-drawer open="true">
+    <igc-nav-drawer-header-item>
+        Sample Drawer
+    </igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+</igc-nav-drawer>    
+```
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-        </igc-nav-drawer>
-    </div>
+```razor
+<IgbNavDrawer Open="true">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@HomeIcon" slot="icon" IconName="home" Collection="material"></IgbIcon>
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@SearchIcon" slot="icon" IconName="search" Collection="material"></IgbIcon>
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+</IgbNavDrawer>
 ```
 
 以下は結果です:
@@ -84,28 +96,45 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 コンポーネントを少し強化するために、`Navbar` と組み合わせて使用できます。このようにして、より完成された外観を実現し、ドロワーの方法を使用できます。次の例でこれを見てみましょう:
 
 ```html
-    <igc-navbar>
-      <igc-icon slot="start" name="menu" id="menu"></igc-icon>
-      <h2>Home</h2>
-    </igc-navbar>
+<igc-navbar>
+  <igc-icon slot="start" name="menu" id="menu"></igc-icon>
+  <h2>Home</h2>
+</igc-navbar>
 
-    <div id="root" style="display: flex;">
-        <igc-nav-drawer id="navDrawer">
-            <igc-nav-drawer-header-item>
-                Sample Drawer
-            </igc-nav-drawer-header-item>
+<igc-nav-drawer id="navDrawer">
+    <igc-nav-drawer-header-item>
+        Sample Drawer
+    </igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+</igc-nav-drawer>    
+```
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
+```razor
+<IgbNavbar>
+    <IgbIcon slot="start" IconName="menu" Collection="material" />
+    <h2>Home</h2>
+</IgbNavbar>
 
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-        </igc-nav-drawer>
-    </div>
+<IgbNavDrawer @ref="NavDrawerRef">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon slot="icon" IconName="home" Collection="material" />
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon slot="icon" IconName="search" Collection="material" @onclick="OnMenuIconClick" />
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+</IgbNavDrawer>
 ```
 
 また、すべての `position` の値を表示するためにいくつかのラジオ ボタンを追加しましょう。このように、1 つが選択されるたびに、ドロワーの位置を変更します。
@@ -133,6 +162,52 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </igc-radio-group>
 ```
 
+```razor
+<IgbRadioGroup id="radio-group" Alignment="RadioGroupAlignment.Horizontal">
+    <IgbRadio Value="Start" LabelPosition="RadioLabelPosition.After" Checked="true" Change="OnRadioOptionClick">Start</IgbRadio>
+    <IgbRadio Value="End" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">End</IgbRadio>
+    <IgbRadio Value="Top" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">Top</IgbRadio>
+    <IgbRadio Value="Bottom" LabelPosition="RadioLabelPosition.After" Change="OnRadioOptionClick">Bottom</IgbRadio>
+</IgbRadioGroup>
+
+@code {
+    
+    public IgbNavDrawer NavDrawerRef { get; set; }
+
+    public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
+    {
+        IgbRadio radio = args.Parent as IgbRadio;
+
+        if (this.NavDrawerRef != null)
+        {
+            switch (radio.Value)
+            {
+                case "Start":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Start;
+                        break;
+                    }
+                case "End":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.End;
+                        break;
+                    }
+                case "Top":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Top;
+                        break;
+                    }
+                case "Bottom":
+                    {
+                        this.NavDrawerRef.Position = NavDrawerPosition.Bottom;
+                        break;
+                    }
+            }
+        }
+    }
+}
+```
+
 そして最後に、Navigation Drawer を開閉する方法が必要です。これを実現するにはいくつかの方法がありますが、この例のために、次のことを行います:
 
 ```ts
@@ -151,6 +226,17 @@ document.getElementById('root')!.onclick = (e) => {
 }
 ```
 
+```razor
+public void OnMenuIconClick()
+{
+    if(this.NavDrawerRef != null)
+    {
+        this.NavDrawerRef.Show();
+        hitMenuIconFirst = true;
+        isNavDrawerOpen = true;
+    }
+}
+```
 
 すべてがうまくいけば、コンポーネントは次のようになります:
 
@@ -165,32 +251,50 @@ document.getElementById('root')!.onclick = (e) => {
 
 ミニ バリアントを使用する場合、Navigation Drawer を閉じる代わりに幅を変更します。アイコンだけを残して、いつでも利用できるクイック ナビゲーションを維持するために使用されます。これを実現するには、ドロワーの `mini` スロットを設定するだけです。
 
-```html
-    <div style="display: flex;">
-        <igc-nav-drawer position="start">
-            <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="home"></igc-icon>
-                <span slot="content">Home</span>
-            </igc-nav-drawer-item>
-
-            <igc-nav-drawer-item>
-                <igc-icon slot="icon" name="search"></igc-icon>
-                <span slot="content">Search</span>
-            </igc-nav-drawer-item>
-
-            <div slot="mini">
-                <igc-nav-drawer-item>
-                    <igc-icon slot="icon" name="home"></igc-icon>
-                </igc-nav-drawer-item>
-
-                <igc-nav-drawer-item>
-                    <igc-icon slot="icon" name="search"></igc-icon>
-                </igc-nav-drawer-item>
-            </div>
-        </igc-nav-drawer>
+```html    
+<igc-nav-drawer position="start">
+    <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="home"></igc-icon>
+        <span slot="content">Home</span>
+    </igc-nav-drawer-item>
+    <igc-nav-drawer-item>
+        <igc-icon slot="icon" name="search"></igc-icon>
+        <span slot="content">Search</span>
+    </igc-nav-drawer-item>
+    <div slot="mini">
+        <igc-nav-drawer-item>
+            <igc-icon slot="icon" name="home"></igc-icon>
+        </igc-nav-drawer-item>
+        <igc-nav-drawer-item>
+            <igc-icon slot="icon" name="search"></igc-icon>
+        </igc-nav-drawer-item>
     </div>
+</igc-nav-drawer>    
+```
+
+```razor
+<IgbNavDrawer @ref="@NavDrawerRef" Open="true" style="position: relative">
+    <IgbNavDrawerHeaderItem>
+        Sample Drawer
+    </IgbNavDrawerHeaderItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@HomeIcon" slot="icon" Collection="material" IconName="home" />
+        <span slot="content">Home</span>
+    </IgbNavDrawerItem>
+    <IgbNavDrawerItem>
+        <IgbIcon @ref="@SearchIcon" slot="icon" Collection="material" IconName="search" />
+        <span slot="content">Search</span>
+    </IgbNavDrawerItem>
+    <div slot="mini">
+        <IgbNavDrawerItem>
+            <IgbIcon slot="icon" Collection="material" IconName="home" />
+        </IgbNavDrawerItem>
+        <IgbNavDrawerItem>
+            <IgbIcon slot="icon" Collection="material" IconName="search" />
+        </IgbNavDrawerItem>
+    </div>
+</IgbNavDrawer>
 ```
 
 以下は結果です:

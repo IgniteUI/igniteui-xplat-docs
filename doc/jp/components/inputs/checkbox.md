@@ -273,6 +273,13 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-styling"
+           alt="$Platform$ Checkbox の例"
+           github-src="inputs/checkbox/styling">
+</code-view>
+
 <!-- WebComponents -->
 
 ## API リファレンス

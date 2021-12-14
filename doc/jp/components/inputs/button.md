@@ -52,6 +52,12 @@ defineComponents(IgcButtonComponent);
 </igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+</IgbButton>
+```
+
 `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
 
 ## タイプ
@@ -73,6 +79,10 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="contained">Contained</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
 </iframe></div>
@@ -83,6 +93,10 @@ defineComponents(IgcButtonComponent);
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
 <div class="sample-container loading" style="height: 80px">
@@ -97,6 +111,10 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="flat">Flat</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Flat" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
 </iframe></div>
@@ -107,6 +125,10 @@ defineComponents(IgcButtonComponent);
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
 <div class="sample-container loading" style="height: 70px">
@@ -145,6 +167,40 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```razor
+<IgbRadioGroup id="radioGroup" Alignment="RadioGroupAlignment.Horizontal" >
+    <IgbRadio Value="small" LabelPosition="RadioLabelPosition.After" @onclick="OnSmallClick">Small</IgbRadio>
+    <IgbRadio Value="medium" LabelPosition="RadioLabelPosition.After" @onclick="OnMediumClick">Medium</IgbRadio>
+    <IgbRadio Value="large" LabelPosition="RadioLabelPosition.After" Checked="true" @onclick="OnLargeClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+@code {
+    private SizableComponentSize SizableComponentSize = SizableComponentSize.Large;
+
+    protected override void OnInitialized()
+    {
+        IgbButtonModule.Register(IgniteUIBlazor);
+        IgbRadioModule.Register(IgniteUIBlazor);
+        IgbRadioGroupModule.Register(IgniteUIBlazor);
+    }
+
+    public void OnSmallClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Small;
+    }
+
+    public void OnMediumClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Medium;
+    }
+
+    public void OnLargeClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Large;
+    }
+}
+```
+
 結果は以下のようになります。
 
 <code-view style="height: 200px"
@@ -166,6 +222,12 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     target="_blank">
     Download
 </igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" Download="Url" Href="https://www.infragistics.com/" Target="@ButtonBaseTarget._blank">
+    Download
+</IgbButton>
 ```
 
 <div class="sample-container loading" style="height: 70px">

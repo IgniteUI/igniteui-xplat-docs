@@ -70,6 +70,10 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
   </igc-form>
 ```
 
+```razor
+<IgbForm NoValidate="true" />
+```
+
 ### イベント
 
 Form コンポーネントは、次のイベントを発生させます:
