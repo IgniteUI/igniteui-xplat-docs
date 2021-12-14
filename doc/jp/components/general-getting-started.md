@@ -9,7 +9,7 @@ _language: ja
 $ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $Platform$ コンポーネントのコンプリート セットです。
 
 > [!NOTE]
-> You can get an example of $Platform$ project with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
+> この [GitHub]({RepoSamples}) リポジトリから $ProductName$ を使用した $Platform$ プロジェクトの例を取得するか、新しい $Platform$ プロジェクトを作成する方法について次の手順に従うことができます。
 
 <!-- Angular, React, WebComponents -->
 
@@ -341,13 +341,13 @@ npm run-script start
 
 ## 手順 2 - Ignite UI for Blazor パッケージのインストール
 
-You can either install Ignite UI for Blazor package in **VS Package Manage Console** with this command:
+次のコマンドを使用して、**VS Package Manage Console** に Ignite UI for Blazor パッケージをインストールできます。
 
 ```cmd
 dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 ```
 
-Alternatively, you can manually select a version by following these steps:
+または、次の手順に従って手動でバージョンを選択することもできます:
 
 1 - ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
 
@@ -434,7 +434,7 @@ public void ConfigureServices(IServiceCollection services)
 > この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `IgbGeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
 
 
-3 - Add a namespace to $ProductName$ components in `_Imports.razor` file:
+3 - `_Imports.razor` ファイルの $ProductName$ コンポーネントに名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls;
@@ -447,6 +447,6 @@ public void ConfigureServices(IServiceCollection services)
 </IgbGeographicMap>
 ```
 
-5 - Build and run the Blazor app.
+5 - Blazor アプリをビルドして実行します。
 
 <!-- end: Blazor -->

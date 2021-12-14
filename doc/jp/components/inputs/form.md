@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Form コンポーネント | $ProductName$
-_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
+_description: $Platform$ Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
 _keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
 mentionedTypes: ['Form']
 _language: ja
@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ (フォーム) の概要
 
-The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
+$Platform$ の Form コンポーネントは、アプリケーションの要件に適合するお問い合わせフォームや登録ページを設定するために使用されます。$Platform$ フォーム検証を簡単に提供し、フォームの向きを定義し、必要なレイアウトを構成またはカスタマイズすることもできます。$Platform$ フォーム コンポーネントは、ユーザー アクションに応答する機会を与えるイベントも公開します。
 
 <div class="divider"></div>
 

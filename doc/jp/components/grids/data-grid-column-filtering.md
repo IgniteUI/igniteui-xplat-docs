@@ -24,32 +24,32 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 上記のように、`FilterUIType` プロパティを FilterRow に設定すると、ユーザー インターフェイスでレコードをフィルタリングできるようになり、ユーザーはレコードをフィルタリングするためのフィルター基準を指定できます。指定されたフィルター基準に一致しないレコードは非表示になります。
 
-フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。This is achieved when setting the `FilterUIType` to ColumnOptions. Please refer to the sample below.
+フィールドにカーソルを合わせて垂直の省略記号をクリックすると、列オプション UI にもフィルタリングが表示されます。これは、`FilterUIType` を ColumnOptions に設定するときに実現されます。以下のサンプルを参照してください。
 
-## Filter Expressions
+## フィルター式
 
-In the example below, the data grid's FilterExpressions collection is updated to incorporate custom `FilterExpression`.
+以下の例では、データ グリッドの FilterExpressions コレクションが更新され、カスタムの `FilterExpression` が組み込まれています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-filter-expressions"
-           alt="$Platform$ Grid Filter Expressions Example"
+           alt="$Platform$ グリッド フィルター式の例"
            github-src="grids/data-grid/column-filter-expressions">
 </code-view>
 
 <div class="divider--half"></div>
 
 <!-- Blazor -->
-## Filter Operators
+## フィルター演算子
 
-Columns can be given a custom `FilterOperand` that will appear in the filter-row operand dropdown. The key requirements is to ensure the operand is given a `DisplayName` and to utilize the `FilterRequested` event on the operand so you can apply a `FilterFactory`, which is responsible for assigning the operator and value you wish to the filter the column by. Eg. StartsWith with value of "A".
+列には、filter-row オペランド ドロップダウンに表示されるカスタムの  `FilterOperand` を指定できます。重要な要件は、オペランドに `DisplayName` が指定されていることを確認し、オペランドで `FilterRequested` イベントを利用して、`FilterFactory` を適用できるようにすることです。これにより、列をフィルタリングする演算子と値を割り当てることができます。例えば、「A」の値で開始します。
 
-Since the operands are applied to the column they can be added inline, in-code, or in a separate class. Each approach is demonstrated in the example below.
+オペランドは列に適用されるため、インライン、コード内、または別のクラスに追加できます。各アプローチは、以下の例で示されています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
-           alt="$Platform$ Grid Filtering Example"
+           alt="$Platform$ グリッド フィルターの例"
            github-src="grids/data-grid/column-filter-operands">
 </code-view>
 
