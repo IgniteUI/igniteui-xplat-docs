@@ -51,6 +51,10 @@ defineComponents(IgcNavbarComponent);
 <igc-navbar>Navigation Title</igc-navbar>
 ```
 
+```razor
+<IgbNavbar>Navigation Title</IgbNavbar>
+```
+
 ## コンテンツ
 
 次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` アイコンを追加できます。

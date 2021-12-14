@@ -8,12 +8,12 @@ _language: ja
 
 # $Platform$ Card (カード) の概要
 
-$ProductName$ `Card ` は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
+$ProductName$ Card は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 
 ## $Platform$ Card の例
 
-<code-view style="height: 610px"
+<code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card の例"
@@ -310,7 +310,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 <code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="$Platform$ Semi Horizontal Card Example"
+           alt="$Platform$ Semi Horizontal Card の例"
            github-src="layouts/card/semi-horizontal">
 </code-view>
 
@@ -383,7 +383,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 610px"
+<code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card スタイル設定の例"

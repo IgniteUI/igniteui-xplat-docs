@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Icon コンポーネント
-_description: 開発者は、$ProductName$ Icon コンポーネントを使用して、さまざまなアイコンをカスタム色などと交換可能に使用できます。
+title: $Platform$ Icon コンポーネント | $ProductName$
+_description: $Platform$ Icon コンポーネントを簡単に使い始める方法をご覧ください。アイコンを選択し、さまざまなスタイル設定オプションから選択して、さらにカスタマイズします。
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Icon コントロール
 mentionedTypes: ['Icon']
 _language: ja
@@ -8,8 +8,7 @@ _language: ja
 
 # $Platform$ Icon (アイコン) の概要
 
-$ProductName$ アイコン コンポーネントを使用すると、開発者は登録済みの SVG をアプリケーションのアイコンとして使用できます。
-
+$Platform$ Icon コンポーネントを使用すると、フォントを簡単に表示したり、事前定義された SVG アイコンの大規模なセットから選択したりできます。プロジェクトのカスタム フォント アイコンを作成することもできます。多数の属性を利用して、使用中のアイコンのサイズを定義または変更したり、さまざまなスタイルをアイコンに適用したりできます。
 
 ## $Platform$ Icon の例
 
@@ -56,7 +55,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
+[`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
 ```ts
 registerIcon(

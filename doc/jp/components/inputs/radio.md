@@ -35,7 +35,7 @@ npm install {PackageWebComponents}
 
 ```razor
 IgbRadioModule.Register(IgniteUIBlazor);
-gbRadioGroupModule.Register(IgniteUIBlazor);
+IgbRadioGroupModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

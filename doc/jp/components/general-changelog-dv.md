@@ -313,7 +313,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 <!-- Angular, React, WebComponents -->
 ## **$Platform$ {PackageVerChangedImports}**
 
-- import ステートメントの変更
+- Import ステートメントの変更
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 

@@ -1,6 +1,6 @@
 ---
-title: $Platform$ Button | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Button は、さまざまなバリエーションとスタイルを提供します。これらは、実現したい外観と機能に合わせて簡単に構成できます。
+title: $Platform$ Button コンポーネント | $ProductName$
+_description: $Platform$ Button コンポーネントの使用を開始します。$Platform$ Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ Button コンポーネント, インフラジスティックス
 mentionedTypes: ['Button', 'ButtonBase']
 _language: ja
@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ Button (ボタン) の概要
 
-$ProductName$ Button は、実現したい外観と機能に一致するように簡単に構成できるさまざまなバリアントとスタイルを提供します。
+$Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
 
 <div class="divider"></div>
 
@@ -51,11 +51,17 @@ defineComponents(IgcButtonComponent);
 </igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+</IgbButton>
+```
+
 `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
 
 ## タイプ
 
-`href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`href` 属性を設定すると、`rel`、`target` および `download` 属性も設定できます。
+`Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
 ボタン コンポーネントが実際の **<button>** 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
 - `submit` -フォーム データを送信する場合
@@ -72,6 +78,10 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="contained">Contained</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
 </iframe></div>
@@ -82,6 +92,10 @@ defineComponents(IgcButtonComponent);
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
 <div class="sample-container loading" style="height: 80px">
@@ -96,6 +110,10 @@ defineComponents(IgcButtonComponent);
 <igc-button variant="flat">Flat</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Flat" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
 </iframe></div>
@@ -106,6 +124,10 @@ defineComponents(IgcButtonComponent);
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
 <div class="sample-container loading" style="height: 70px">
@@ -144,6 +166,40 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```razor
+<IgbRadioGroup id="radioGroup" Alignment="RadioGroupAlignment.Horizontal" >
+    <IgbRadio Value="small" LabelPosition="RadioLabelPosition.After" @onclick="OnSmallClick">Small</IgbRadio>
+    <IgbRadio Value="medium" LabelPosition="RadioLabelPosition.After" @onclick="OnMediumClick">Medium</IgbRadio>
+    <IgbRadio Value="large" LabelPosition="RadioLabelPosition.After" Checked="true" @onclick="OnLargeClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+@code {
+    private SizableComponentSize SizableComponentSize = SizableComponentSize.Large;
+
+    protected override void OnInitialized()
+    {
+        IgbButtonModule.Register(IgniteUIBlazor);
+        IgbRadioModule.Register(IgniteUIBlazor);
+        IgbRadioGroupModule.Register(IgniteUIBlazor);
+    }
+
+    public void OnSmallClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Small;
+    }
+
+    public void OnMediumClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Medium;
+    }
+
+    public void OnLargeClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Large;
+    }
+}
+```
+
 結果は以下のようになります。
 
 <code-view style="height: 200px"
@@ -165,6 +221,12 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     target="_blank">
     Download
 </igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" Download="Url" Href="https://www.infragistics.com/" Target="@ButtonBaseTarget._blank">
+    Download
+</IgbButton>
 ```
 
 <div class="sample-container loading" style="height: 70px">
@@ -213,8 +275,6 @@ igc-button::part(base) {
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
-
-<div class="divider--half"></div>
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
