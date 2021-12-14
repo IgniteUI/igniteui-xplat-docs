@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Column Sparkline | Infragistics
 _description: See how $ProductName$ Data Table & Grid supports a template column which provides you a way to embed other components such as the column sparkline.
 _keywords: $Platform$ Table, Data Grid, column sparkline, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid', 'CellInfo', 'TemplateCellInfo', 'Sparkline']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Column Sparkline

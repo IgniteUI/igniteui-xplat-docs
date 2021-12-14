@@ -3,6 +3,7 @@ title: $Platform$ Radial Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Radial Chart
 _keywords: $Platform$ Charts, Radial Chart, Infragistics
 mentionedTypes: ["XamDataChart", "RadialLineSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Radial Chart
 

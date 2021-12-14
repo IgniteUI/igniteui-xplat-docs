@@ -3,6 +3,7 @@ title: $Platform$ Scatter Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Scatter Chart
 _keywords: $Platform$ Charts, Scatter Chart, Infragistics
 mentionedTypes: ["XamDataChart", "ScatterSeries", "ScatterLineSeries", "ScatterSplineSeries", "HighDensityScatterSeries", "ScatterAreaSeries", "ScatterContourSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Scatter Charts
 

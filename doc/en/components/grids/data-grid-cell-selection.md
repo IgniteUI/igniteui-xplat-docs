@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Cell Selection | Selection | Infragistics
 _description: Use cell and row selection of the Infragistics' $Platform$ data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the $ProductName$ table.
 _keywords: $Platform$ Table, Data Grid, cell selection, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'GridSelectionMode']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Selection

@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Matrix Data | Data Binding | Infragistics
 _description: Use Infragistics' $Platform$ grid component's template columns to create a matrix table. View our $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, column template, matrix table, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Binding Matrix Data

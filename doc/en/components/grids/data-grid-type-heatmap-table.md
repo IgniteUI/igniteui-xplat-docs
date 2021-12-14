@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | HeatMap Table | Data Binding | Infragistics
 _description: Use Infragistics' $Platform$ grid component's template columns to create a heatmap table. View our $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, column template, heatmap table, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Binding Heatmap Data

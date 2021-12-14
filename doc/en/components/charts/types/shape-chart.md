@@ -3,6 +3,7 @@ title: $Platform$ Shape Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Shape Chart
 _keywords: $Platform$ Charts, Shape Chart, Infragistics
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Shape Charts
 

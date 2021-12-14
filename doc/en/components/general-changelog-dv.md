@@ -3,6 +3,7 @@ title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ Changelog (Data Visualization)
 

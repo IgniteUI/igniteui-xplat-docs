@@ -3,6 +3,7 @@ title: $Platform$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Gridlines
 _keywords: $Platform$ Axis, Gridlines, Infragistics
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Axis Gridlines

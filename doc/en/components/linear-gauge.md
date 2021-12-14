@@ -3,6 +3,7 @@ title: $Platform$ Linear Gauge | Data Visualization Tools | Infragistics
 _description: Use Infragistics' $Platform$ linear gauge control to visualize data with a simple and concise view. Learn about the $ProductName$ linear gauge configurable elements!
 _keywords: linear gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamLinearGauge']
+namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Linear Gauge Overview
 

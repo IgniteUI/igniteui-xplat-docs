@@ -3,6 +3,7 @@ title: $Platform$ Chart Markers | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Markers
 _keywords: $Platform$ Charts, Markers, Infragistics
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Chart Markers

@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Data Binding | Infragistics
 _description: Use Infragistics'  $Platform$ map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View $ProductName$ map demos!
 _keywords: $Platform$ map, geo-spatial data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Data Binding
 

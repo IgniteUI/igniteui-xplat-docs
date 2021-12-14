@@ -3,6 +3,7 @@ title: $Platform$ Pyramid Chart | Population Pyramid | Data Visualization | Infr
 _description: Infragistics' $Platform$ Pyramid Chart
 _keywords: $Platform$ Charts, Pyramid Chart, Population Pyramid, Infragistics
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Pyramid Chart
 

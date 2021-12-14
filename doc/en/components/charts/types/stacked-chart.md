@@ -3,6 +3,7 @@ title: $Platform$ Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Stacked Chart
 _keywords: $Platform$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Stacked Chart
 
@@ -114,7 +115,7 @@ The example below shows a study made for online shopping traffic by departments 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           github-src="charts/data-chart/stacked-100-column-chart" 
+           github-src="charts/data-chart/stacked-100-column-chart"
            alt="$Platform$ Stacked 100 Column Chart" >
 </code-view>
 
@@ -190,7 +191,7 @@ The Stacked Spline Chart is often used to show the change of value over time suc
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           github-src="charts/data-chart/stacked-spline-chart" 
+           github-src="charts/data-chart/stacked-spline-chart"
            alt="$Platform$ Stacked Spline Chart" >
 </code-view>
 

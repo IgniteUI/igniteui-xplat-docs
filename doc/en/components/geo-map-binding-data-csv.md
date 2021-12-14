@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Binding CSV Data | Infragisti
 _description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
 _keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Binding CSV Files with Geographic Locations
 

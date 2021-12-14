@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Horizontal Scrolling | Infragistics
 _description: Use Infragistics' $Platform$ grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Horizontal Scrolling

@@ -3,6 +3,7 @@ title: $Platform$ Bullet Graph | Data Visualization Tools | Infragistics
 _description: Infragistics' $Platform$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
 _keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
 mentionedTypes: ['XamBulletGraph']
+namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Bullet Graph Overview
 
@@ -918,7 +919,7 @@ For your convenience, all above code snippets are combined into one code block b
     MinorTickEndExtent="0.1"
     MinorTickStartExtent="0.2"
     MinorTickStrokeThickness="1"
-    
+
     RangeBrushes="#C62828,#F96232,#FF9800"
     RangeOutlines="#C62828,#F96232,#FF9800">
     <IgbLinearGraphRange StartValue="20" EndValue="40"

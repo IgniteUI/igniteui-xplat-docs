@@ -3,6 +3,7 @@ title: $Platform$ Radial Gauge Chart | Data Visualization Tools | Infragistics
 _description: Use Infragistics' $Platform$ radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the $ProductName$ radial gauge configurable elements!
 _keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
+namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Radial Gauge Overview
 

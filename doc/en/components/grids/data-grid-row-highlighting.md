@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Row Highlighting | Infragistics
 _description: Configuring the row highlight of the Infragistics' $Platform$ data grid on mouse over. Learn how to configure row highlight for the $ProductName$ table.
 _keywords: $Platform$ Table, Data Grid, row highlighting, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'IsRowHoverEnabled', 'RowHoverBackground']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Highlighting

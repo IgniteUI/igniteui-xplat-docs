@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Row Grouping | Infragistics
 _description: Use Infragistics' $Platform$ grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Row Grouping

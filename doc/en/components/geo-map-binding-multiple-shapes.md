@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Binding Multiple Data Shapes 
 _description: Use Infragistics' $Platform$ to add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. View $ProductName$ map tutorials!
 _keywords: $Platform$ map, shape files, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Binding and Overlaying Multiple Shape Files
 

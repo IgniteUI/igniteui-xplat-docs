@@ -2,7 +2,8 @@
 title: $Platform$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
-mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["FinancialChart", "CategoryChartType", "IndicatorTypes", "ZoomSliderType"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Stock Chart
 

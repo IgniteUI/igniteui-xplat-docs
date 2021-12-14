@@ -3,6 +3,7 @@ title: $Platform$ Data Chart | Data Visualization Tools | Navigation | Infragist
 _description: Navigate Infragistics' $Platform$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
 _keywords: $Platform$ charts, data chart, navigation, $ProductName$, Infragistics
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Chart Navigation
 

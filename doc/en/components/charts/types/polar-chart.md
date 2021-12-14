@@ -3,6 +3,7 @@ title: $Platform$ Polar Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Polar Chart
 _keywords: $Platform$ Charts, Polar Chart, Infragistics
 mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Polar Chart
 

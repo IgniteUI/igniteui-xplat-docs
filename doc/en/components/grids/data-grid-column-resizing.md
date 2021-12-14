@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Column Resizing | Infragistics
 _description: Start using Infragistics' $Platform$ grid component to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each. View $ProductName$ table demos for more information!
 _keywords: $Platform$ Table, Data Grid, column resizing, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'ColumnResizingMode', 'ColumnResizingAnimationMode']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Column Resizing

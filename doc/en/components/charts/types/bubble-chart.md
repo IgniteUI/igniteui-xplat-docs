@@ -3,6 +3,7 @@ title: $Platform$ Bubble Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Bubble Chart
 _keywords: $Platform$ Charts, Bubble Chart, Infragistics
 mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Bubble Chart
 

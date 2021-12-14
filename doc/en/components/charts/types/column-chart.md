@@ -2,7 +2,7 @@
 title: $Platform$ Column Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Column Chart
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType"]
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Column Chart
@@ -13,7 +13,7 @@ The $ProductName$ Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 The $Platform$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to Column enum, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to `Column` enum, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

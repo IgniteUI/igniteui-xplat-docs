@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Column Moving | Infragistics
 _description: See how Infragistics' $ProductName$ Data Grid supports the ability to move columns and gives you the flexibility over how you wish to display your columns. View $ProductName$ table demos for more information!
 _keywords: $Platform$ Table, Data Grid, column moving, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Column Moving Overview

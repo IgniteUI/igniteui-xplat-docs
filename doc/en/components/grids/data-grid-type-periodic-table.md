@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Periodic Table | Data Binding | Infragistics
 _description: Use Infragistics' $Platform$ grid component's template columns to create a periodic table. View our $ProductName$ table demos!
 _keywords: $Platform$ Table, Data Grid, column template, periodic table, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Binding Periodic Table

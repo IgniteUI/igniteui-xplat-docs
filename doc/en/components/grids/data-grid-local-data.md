@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Binding Local Data | Infragistics
 _description: Use Infragistics' $Platform$ grid control to bind to an array of data. Learn how $ProductName$ table can help you better display your data!
 _keywords: $Platform$ Table, Data Grid, binding to data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Binding Local Data

@@ -3,6 +3,7 @@ title: $Platform$ Chart Annotations | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Annotations
 _keywords: $Platform$ Charts, Annotations, Infragistics
 mentionedTypes: ["CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Chart Annotations

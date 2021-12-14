@@ -3,6 +3,7 @@ title: $Platform$ Composite Chart | Combo Chart| Data Visualization | Infragisti
 _description: Infragistics' $Platform$ Composite Chart
 _keywords: $Platform$ Charts, Composite Chart, Combo Chart, Infragistics
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Composite / Combo Chart
 

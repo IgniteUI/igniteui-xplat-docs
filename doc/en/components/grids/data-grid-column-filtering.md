@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Filtering | Infragistics
 _description: Use Infragistics' $ProductName$ grid component to perform expressive sort conditions and return data easily. View $ProductName$ table's demo for more information!
 _keywords: $Platform$ Table, Data Grid, column, filtering, filter expressions, filter operands, $ProductName$, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Filtering Overview
@@ -21,7 +22,7 @@ The $ProductName$ Data Table / Data Grid includes column filtering with both a f
 
 <div class="divider--half"></div>
 
-As seen above, setting the `FilterUIType` property to FilterRow will enables the record filtering record to the user interface where the user can specify filter criteria to filter records. Records that do not match the specified filter criteria will be hidden. 
+As seen above, setting the `FilterUIType` property to FilterRow will enables the record filtering record to the user interface where the user can specify filter criteria to filter records. Records that do not match the specified filter criteria will be hidden.
 
 Filtering is also exposed in the column options UI by hovering a field and clicking the vertical ellipsis. This is achieved when setting the `FilterUIType` to ColumnOptions. Please refer to the sample below.
 

@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Column Chooser | Infragistics
 _description: Learn how Infragistics' $ProductName$ grid component supports the ability to show and hide columns directly through the UI or by using the $Platform$ control. View $ProductName$ table demos for more information!
 _keywords: $Platform$ Table, Data Grid, column chooser, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'DataGridToolbar', 'Button', 'ColumnChooser', 'IsHidden', 'ColumnHidingAnimationMode', 'ColumnShowingAnimationMode', 'ColumnChooserTitle', 'Column']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Column Chooser Overview

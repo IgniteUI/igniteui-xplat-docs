@@ -3,6 +3,7 @@ title: $Platform$ Data Grid | Column Pinning | Infragistics
 _description: See how Infragistics' $ProductName$ grid component supports the ability to pin columns and gives you the flexibility over how you wish to position your columns. View $ProductName$ table demos for more information!
 _keywords: $Platform$ Table, Data Grid, column pinning, $ProductName$, Infragistics
 mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid Column Pinning Overview

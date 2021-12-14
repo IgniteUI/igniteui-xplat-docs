@@ -3,6 +3,7 @@ title: $Platform$ Data Grid Component | Real-Time $Platform$ Tables | Infragisti
 _description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 ---
 # $Platform$ Data Grid Overview
 
