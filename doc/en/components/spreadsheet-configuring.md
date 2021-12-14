@@ -26,7 +26,7 @@ When a user edits a cell value and confirms the new input, the `Spreadsheet` con
 
 In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to `true`. If set to false, the active cell will stay the same when pressing the `Enter` key.
 
-You can also configure the direction of the adjacent cell navigated to on press of the `Enter` key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
+You can also configure the direction of the adjacent cell navigated to on press of the `Enter` key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, **Left** or **Right**.
 
 The following code snippets demonstrate the above:
 
@@ -131,7 +131,7 @@ this.spreadsheet.areHeadersVisible = false;
 
 The `Spreadsheet` control allows you to configure navigation between a worksheet's cells by configuring whether or not the control is in "end mode." End mode is the functionality where, on press of an arrow key, the active cell will be moved from the current cell to the end of the row or column where data exists in the adjacent cells, depending on the direction of the arrow key pressed. This functionality is good for navigating to the end of large blocks of data very quickly.
 
-For example, if you are in end mode, and you click in a large 100x100 block of data, and press the `Right` arrow key, this will navigate to the right end of the row that you are in to the furthest right column with data. After this operation, the `Spreadsheet` will pop out of end mode.
+For example, if you are in end mode, and you click in a large 100x100 block of data, and press the **Right** arrow key, this will navigate to the right end of the row that you are in to the furthest right column with data. After this operation, the `Spreadsheet` will pop out of end mode.
 
 End mode goes into effect at runtime when the user presses the `End` key, but it can be configured programmatically by setting the `IsInEndMode` property of the spreadsheet control.
 

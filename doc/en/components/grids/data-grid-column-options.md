@@ -27,7 +27,7 @@ To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` 
 
 Filtering can be toggled per column by setting the column's `IsFilteringEnabled` property. Setting true or false will show or hide the filtering section in the column's options ui.
 
-Sorting can be toggled for the entire grid if the `HeaderClickAction` property is applied. Setting this to `None` for example will completely remove sorting from grid and reflect in the options ui for each column. And setting `SortByOneColumnOnly` for example will continue to allow one column to be sorted at a time.
+Sorting can be toggled for the entire grid if the `HeaderClickAction` property is applied. Setting this to **None** for example will completely remove sorting from grid and reflect in the options ui for each column. And setting `SortByOneColumnOnly` for example will continue to allow one column to be sorted at a time.
 
 ## Code Snippet
 

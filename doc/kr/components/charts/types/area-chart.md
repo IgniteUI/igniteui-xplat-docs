@@ -12,7 +12,7 @@ Area Chart is based on [Line Chart](line-chart.md) or [Spline Chart](splin
 
 ## $Platform$ Area Chart Example
 
-You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
+You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Area** value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -57,7 +57,7 @@ There are several common use cases for choosing an Area Chart:
 
 ## $Platform$ Area Chart with Single Series
 
-$Platform$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to `Area` value, as shown in the example below.
+$Platform$ Area Chart is often used to show the change of value over time such as the amount of renewable electricity produced. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to **Area** value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -100,7 +100,7 @@ The following sections explain more advanced types of $Platform$ Area Charts tha
 
 ## $Platform$ Step Area Chart
 
-The $Platform$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to `StepArea` value, as shown in the example below.
+The $Platform$ Step Area Chart belongs to a group of category charts and it is rendered using a collection of points connected by continuous vertical and horizontal lines with the area below lines filled in. Values are represented on the y-axis and categories are displayed on the x-axis. The step area chart emphasizes the amount of change over a period of time or compares multiple items. You can create this type of chart in `CategoryChart` control by binding your data and setting `ChartType` property to **StepArea** value, as shown in the example below.
 
 
 <code-view style="height: 600px"
@@ -238,8 +238,8 @@ The following table lists API members mentioned in above sections:
 
 Chart Type               | Control Name       | API Members
 -------------------------|--------------------|-----------------------
-Area                     | `CategoryChart` | `ChartType` = `Area`
-Step Area                | `CategoryChart` | `ChartType` = `StepArea`
+Area                     | `CategoryChart` | `ChartType` = **Area**
+Step Area                | `CategoryChart` | `ChartType` = **StepArea**
 Range Area               | `XamDataChart`     | `RangeAreaSeries`
 Radial Area              | `XamDataChart`     | `RadialAreaSeries`
 Polar Area               | `XamDataChart`     | `PolarAreaSeries`

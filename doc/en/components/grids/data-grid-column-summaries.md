@@ -25,10 +25,10 @@ The $ProductName$ Data Table / Data Grid supports column summaries. In some case
 
 The $Platform$ data grid supports 4 summary settings that you can configure using the `SummaryScope` property. These are listed and described below:
 
-- `Root`: This will display a grand total for all rows in the grid for the column the summary is applied to.
-- `Groups`: This is specific to grouped rows and shows the grand total for all rows in a particular group.
-- `Both`: This will use the `Groups` and `Root` options simultaneously.
-- `None`: This will disable summaries for the grid.
+- **Root** - This will display a grand total for all rows in the grid for the column the summary is applied to.
+- **Groups** - This is specific to grouped rows and shows the grand total for all rows in a particular group.
+- **Both** - This will use the **Groups** and **Root** options simultaneously.
+- **None** - This will disable summaries for the grid.
 
 ## Group Summary Display Mode Property
 
@@ -36,9 +36,9 @@ The $Platform$ data grid supports configuration of the locations that summaries 
 
 - `List`: This will render the group summaries in a flat list in the spanning group header.
 - `Cells`: This will render the group header as cells, and the summary values will be rendered inside the cells, aligned with their corresponding column. The grid will only display a single summary per column using this option.
-- `RowTop`: This will render the group summaries as summary rows at the top of the group.
-- `RowBottom`: This will render the group summaries as summary rows at the bottom of the group.
-- `None`: This will disable group summary rendering.
+- **RowTop** - This will render the group summaries as summary rows at the top of the group.
+- **RowBottom** - This will render the group summaries as summary rows at the bottom of the group.
+- **None** - This will disable group summary rendering.
 
 ## Code Snippets
 

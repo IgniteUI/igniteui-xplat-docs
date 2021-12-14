@@ -11,7 +11,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 
 ## $Platform$ ポイント チャートの例
 
-`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
+`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Point** 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

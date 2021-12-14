@@ -54,7 +54,7 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 
 縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -67,7 +67,7 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 
 ## 複数シリーズの $Platform$ 縦棒チャート
 
-縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -191,7 +191,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 
 チャート タイプ          | コントロール名       | API メンバー
 --------------------|--------------------|------------------------
-縦棒              | `CategoryChart` | `ChartType` = `Column`
+縦棒              | `CategoryChart` | `ChartType` = **Column**
 ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries`
 範囲縦棒        | `XamDataChart`     | `RangeColumnSeries`
 積層型縦棒      | `XamDataChart`     | `StackedColumnSeries`

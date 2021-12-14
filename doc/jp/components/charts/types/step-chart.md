@@ -11,7 +11,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 
 ## $Platform$ ステップ エリア チャート
 
-`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを `StepArea` 値に設定します。
+`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを **StepArea** 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -26,7 +26,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 
 $Platform$ ステップ折れ線チャートは、線の下の領域が塗りつぶされていないことを除いて、ステップ エリア チャートと非常によく似ています。
 
-次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
+次の例に示すように、データをバインドし、`ChartType` プロパティを **StepLine** 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -64,8 +64,6 @@ $Platform$ ステップ折れ線チャートは、線の下の領域が塗りつ
 
 - `CategoryChart`
 - `ChartType`
-- `StepArea`
-- `StepLine`
 - `Brushes`
 - `Outlines`
 - `MarkerBrushes`

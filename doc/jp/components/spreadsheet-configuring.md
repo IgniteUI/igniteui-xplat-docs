@@ -27,7 +27,7 @@ $Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線
 
 この `Enter` キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを `true` に設定できます。false に設定すると、`Enter` キーを押してもアクティブ セルは変わりません。
 
-Enter キーを押したときに移動する隣接セルの方向は、`EnterKeyNavigationDirection` プロパティを `Down`、`Up`、`Left`、`Right` に設定して構成することもできます。
+Enter キーを押したときに移動する隣接セルの方向は、`EnterKeyNavigationDirection` プロパティを `Down`、`Up`、**Left**、**Right** に設定して構成することもできます。
 
 以下のコード スニペットは上記のデモです。
 

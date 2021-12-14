@@ -538,16 +538,16 @@ Setting a lot of panes using `IndicatorTypes` and `OverlayTypes` options, might 
 
 ### Zoom Slider
 
-Setting the `ZoomSliderType` option to `None` will improve chart performance and enable more vertical space for other indicators and the volume pane.
+Setting the `ZoomSliderType` option to **None** will improve chart performance and enable more vertical space for other indicators and the volume pane.
 
 ### Volume Type
 
 Setting the `VolumeType` property can have the following impact on chart performance:
 
-* `None` - is the least expensive since it does not display the volume pane.
-* `Line` - is more expensive volume type to render and it is recommended when rendering a lot of data points or when plotting a lot of data sources.
-* `Area` - is more expensive to render than the `Line` volume type.
-* `Column` - is more expensive to render than the `Area` volume type and it is recommended when rendering volume data of 1-3 stocks.
+* **None** - is the least expensive since it does not display the volume pane.
+* **Line** - is more expensive volume type to render and it is recommended when rendering a lot of data points or when plotting a lot of data sources.
+* **Area** - is more expensive to render than the **Line** volume type.
+* **Column** - is more expensive to render than the **Area** volume type and it is recommended when rendering volume data of 1-3 stocks.
 
 ## Performance in Data Chart
 

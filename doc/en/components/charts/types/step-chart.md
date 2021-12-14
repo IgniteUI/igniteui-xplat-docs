@@ -10,7 +10,7 @@ The $ProductName$ Step Chart belongs to a group of category charts that render a
 
 ## $Platform$ Step Area Chart
 
-You can create $Platform$ Step Area Chart in the `CategoryChart` control by setting `ChartType` property to `StepArea` value, as shown in the example below.
+You can create $Platform$ Step Area Chart in the `CategoryChart` control by setting `ChartType` property to **StepArea** value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,7 +25,7 @@ You can create $Platform$ Step Area Chart in the `CategoryChart` control by sett
 
 The $Platform$ Step Line Chart is very similar to Step Area Chart, except that the area below lines are filled in.
 
-You can create Step Line Chart in the `CategoryChart` control by binding your data and setting `ChartType` property to `StepLine` value, as shown in the example below.
+You can create Step Line Chart in the `CategoryChart` control by binding your data and setting `ChartType` property to **StepLine** value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -63,8 +63,6 @@ The following table lists API members mentioned in the above sections:
 
 - `CategoryChart`
 - `ChartType`
-- `StepArea`
-- `StepLine`
 - `Brushes`
 - `Outlines`
 - `MarkerBrushes`

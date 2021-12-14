@@ -25,21 +25,21 @@ The $ProductName$ Data Table / Data Grid supports single or multiple row and cel
 
 Selection in the $Platform$ data grid is enabled on a row and cell level and can be configured by using the `SelectionMode` option of the $Platform$ grid. This property takes five different options, listed below:
 
-- `None`: Selection is not enabled.
-- `SingleCell`: Selection of a single cell is enabled.
-- `SingleRow`: Selection of a single row is enabled.
-- `MultipleCell`: Selection of multiple cells is enabled.
-- `MultipleRow`: Selection of multiple rows is enabled.
-- `RangeCell`: Selection of a range of multiple cells by clicking and dragging is enabled.
+- **None** - Selection is not enabled.
+- **SingleCell** - Selection of a single cell is enabled.
+- **SingleRow** - Selection of a single row is enabled.
+- **MultipleCell** - Selection of multiple cells is enabled.
+- **MultipleRow** - Selection of multiple rows is enabled.
+- **RangeCell** - Selection of a range of multiple cells by clicking and dragging is enabled.
 
 `SelectionBehavior` defaults to `ModifierBased`, where only one row or cell is selected at a time and modifier keys (CTRL) are required to multi-select items. `SelectionBehavior` set to `Toggle` will allow multiple rows or cells to be selected on single click only.
 
-`MultipleRow` includes the following functionality:
+**MultipleRow** includes the following functionality:
 - Click and drag to select rows
 - Shift and click to select multiple rows.
 - Shift and press the up/down arrow keys to select multiple rows.
 
-Pressing the space bar toggles selection of active row via `MultipleRow` or `SingleRow`.
+Pressing the space bar toggles selection of active row via **MultipleRow** or **SingleRow**.
 
 ## Row Range Selection
 

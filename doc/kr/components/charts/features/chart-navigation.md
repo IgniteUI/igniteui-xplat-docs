@@ -27,17 +27,17 @@ Like this sample? Get access to our complete $Platform$ toolkit and start buildi
 
 Zooming is on by default on the chart. In order to disable navigation in the UI, you need to set either the `IsHorizontalZoomEnabled` and/or the `IsVerticalZoomEnabled` properties of the chart to false, depending on the direction that you wish to disable zooming.
 
-It is also possible to zoom or pan simply by clicking the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to `DragZoom` and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either `DragPan` to allow panning or `None` to prevent these operations.
+It is also possible to zoom or pan simply by clicking the mouse or using touch. The `DefaultInteraction` property of the data chart determines what happens on mouse click or touch events. This property defaults to **DragZoom** and when set to this with zooming enabled, clicking and dragging will place a preview rectangle over the plot area that will become the zoomed area of the chart. This `DefaultInteraction` property can also be set to either **DragPan** to allow panning or **None** to prevent these operations.
 
 ## Chart Navigation with Touch, Mouse and Keyboard
 
 Navigation in the $Platform$ data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default:
 
-- **Panning**: Using arrow keys on the keyboard or holding the Shift key, clicking and dragging with the mouse or pressing and moving your finger via touch.
-- **Zoom In**: Using the PageUp key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
-- **Zoom Out**: Using the PageDown key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
-- **Fit to Chart Plot Area**: Using the Home key on the keyboard. There is no mouse or touch operation for this.
-- **Area Zoom**: Click and drag the mouse within the plot area with the `DefaultInteraction` property set to its default - `DragZoom`.
+- **Panning** - Using arrow keys on the keyboard or holding the Shift key, clicking and dragging with the mouse or pressing and moving your finger via touch.
+- **Zoom In** - Using the PageUp key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
+- **Zoom Out** - Using the PageDown key on the keyboard, rolling the mouse wheel down, or pinching to zoom out via touch.
+- **Fit to Chart Plot Area** - Using the Home key on the keyboard. There is no mouse or touch operation for this.
+- **Area Zoom** - Click and drag the mouse within the plot area with the `DefaultInteraction` property set to its default - **DragZoom**.
 
 The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed:
 
