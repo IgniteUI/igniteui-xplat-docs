@@ -8,8 +8,7 @@ _language: ja
 
 # $Platform$ Button (ボタン) の概要
 
-$Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。
-Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
+$Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
 
 <div class="divider"></div>
 
