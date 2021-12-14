@@ -9,9 +9,6 @@ mentionedTypes: ['Badge']
 
 The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
 
-
-<div class="divider"></div>
-
 ## $Platform$ Badge Example
 
 <code-view style="height: 60px"
@@ -33,7 +30,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Badge`, you need and register it as follows:
+Before using the `Badge`, you need to register it as follows:
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
@@ -55,7 +52,7 @@ The simplest way to start using the `Badge` is as follows:
 <IgbBadge />
 ```
 
-To display a subtle border around the badge set the `outlined` attribute of the badge.
+To display a subtle border around the badge, you can set the `outlined` attribute of the badge.
 
 ```html
 <igc-badge outlined></igc-badge>

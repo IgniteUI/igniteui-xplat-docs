@@ -12,7 +12,7 @@ The $ProductName$ Input is a component where the user can enter data.
 
 <div class="divider--half"></div>
 
-<code-view style="height: 100px"
+<code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
            alt="$Platform$ Input Example"
@@ -59,7 +59,7 @@ After we import the `Input` component we are ready to start using it, so let's a
 
 With `prefix` and `suffix` slots we can add different content before and after the main content of the Input. In the following sample we will create a new Input field with a text prefix and an icon suffix:
 
-<code-view style="height: 100px"
+<code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
            alt="$Platform$ Input Prefix & Suffix Example"
@@ -68,7 +68,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 
 ## Helper Text
 
-The `helper-text` slot provides a hint placed below the Input. Let's add a helper text to our phone Input:
+The `helper-text` slot provides a hint placed below the Input. Let's add some helper text to our phone Input:
 
 <code-view style="height: 140px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -81,7 +81,7 @@ The `helper-text` slot provides a hint placed below the Input. Let's add a helpe
 
 We can allow the user to choose the size of the `Input` by using its `Size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input:
 
-<code-view style="height: 400px"
+<code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
            alt="$Platform$ Input Sizing Example"

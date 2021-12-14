@@ -9,9 +9,6 @@ mentionedTypes: ['Ripple', 'Button']
 
 The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
 
-
-<div class="divider"></div>
-
 ## $Platform$ Ripple Example
 
 <code-view style="height: 80px"
@@ -30,7 +27,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Ripple`, you need and register it as follows:
+Before using the `Ripple`, you need to register it as follows:
 
 ```razor
 IgbRippleModule.Register(IgniteUIBlazor);

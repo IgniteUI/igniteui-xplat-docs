@@ -9,9 +9,6 @@ mentionedTypes: ['Avatar']
 
 The $ProductName$ Avatar helps to display initials, images, or icons in your application.
 
-
-<div class="divider"></div>
-
 ## $Platform$ Icon Avatar Example
 
 <code-view style="height: 80px"
@@ -33,7 +30,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Avatar`, you need and register it as follows:
+Before using the `Avatar`, you need to register it as follows:
 
 ```razor
 IgbAvatarModule.Register(IgniteUIBlazor);
@@ -55,7 +52,7 @@ The `Avatar` is capable of displaying images, initials, or any other content, in
 <IgbAvatar />
 ```
 
-The avatar has several attributes that allow rendering different content based on the context; The most basic way to display content in the boundaries of the avatar is to provide content between the opening and closing tags.
+The avatar has several attributes that allow rendering different content based on the context. The most basic way to display content in the boundaries of the avatar is to provide content between the opening and closing tags.
 
 ```html
 <igc-avatar>
@@ -69,8 +66,9 @@ The avatar has several attributes that allow rendering different content based o
 </IgbAvatar>
 ```
 
-If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
+### Initials
 
+If the `initials` attribute is set all children elements of the avatar will be ignored and the string passed to this attribute will be displayed.
 
 ```html
 <!-- Initials("AZ") will be displayed instead of the icon. -->
@@ -87,6 +85,15 @@ If the `initials` attribute is set all children elements of the avatar will be i
   <IgbIcon Name="home" />
 </IgbAvatar>
 ```
+
+<code-view style="height: 80px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
+           alt="$Platform$ Avatar Example"
+           github-src="layouts/avatar/initials">
+</code-view>
+
+### Image
 
 The avatar can also display an image when the `src` attribute is assigned a valid URL to a static asset. In that case the `initials` value will be ignored and children elements will not be rendered.
 
@@ -107,29 +114,14 @@ The avatar can also display an image when the `src` attribute is assigned a vali
 </IgbAvatar>
 ```
 
-The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the `shape` attribute.
-
-Apart from the shape, the size of the avatar can also be changed by setting the `size` attribute. The supported sizes are `small`, `medium`, and `large`.
-
-## Examples
-
-### Initials
-
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
-           alt="$Platform$ Avatar Example"
-           github-src="layouts/avatar/initials">
-</code-view>
-
-### Image
-
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar Example"
            github-src="layouts/avatar/image">
 </code-view>
+
+The avatar supports three shapes - `circle`, `rounded`, and `square`. The shape of the avatar can be changed via the `shape` attribute.
 
 ### Shape
 
@@ -142,6 +134,8 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
 
 ### Size
 
+Apart from the shape, the size of the avatar can also be changed by setting the `size` attribute. The supported sizes are `small`, `medium`, and `large`.
+
 <code-view style="height: 130px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
@@ -149,7 +143,7 @@ Apart from the shape, the size of the avatar can also be changed by setting the 
            github-src="layouts/avatar/size">
 </code-view>
 
-## Styling
+### Styling
 
 The avatar component exposes a `base` part that can be used to change all of its style properties.
 

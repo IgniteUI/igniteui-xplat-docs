@@ -9,8 +9,6 @@ mentionedTypes: ['Button', 'ButtonBase']
 
 The $Platform$ Button Component lets you enable clickable elements that trigger actions in your $Platform$ app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the $Platform$ Button OnClick event, toggle the $Platform$ button, disable the $Platform$ button, and more.
 
-<div class="divider"></div>
-
 ## $Platform$ Button Example
 
 <code-view style="height: 100px"
@@ -30,7 +28,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Button`, you need and register it as follows:
+Before using the `Button`, you need to register it as follows:
 
 ```razor
 IgbButtonModule.Register(IgniteUIBlazor);
@@ -45,6 +43,18 @@ defineComponents(IgcButtonComponent);
 The simplest way to start using the `Button` is as follows:
 
 ```html
+<igc-button>Click me</igc-button>
+```
+
+```razor
+<IgbButton />
+```
+
+## Prefix / Suffix
+
+With `prefix` and `suffix` slots of the `Button` component, we can add different content before and after the main content of the button.
+
+```html
 <igc-button type="button" variant="contained">
     <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </igc-button>
@@ -56,12 +66,10 @@ The simplest way to start using the `Button` is as follows:
 </IgbButton>
 ```
 
-With `prefix` and `suffix` slots we can add different content before and after the main content of the button.
-
 ## Type
 
 The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
-In the case when the button component uses an actual **<button>** element internally, we can specify its `DisplayType` by setting the property to any of the following values:
+In the case when the button component uses an actual [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
 
 - `submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
@@ -71,7 +79,7 @@ In the case when the button component uses an actual **<button>** element intern
 
 ### Contained Button
 
-Use `variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
+Use the `variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
 
 ```html
 <igc-button variant="contained">Contained</igc-button>
@@ -129,7 +137,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
+<div class="sample-container loading" style="height: 75px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
 </iframe></div>
 
@@ -199,7 +207,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
-And here's the result of all that work:
+The result of implementing the above code should look like the following:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -7,7 +7,7 @@ mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 
 # $Platform$ Calendar Overview
 
-The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
+The $ProductName$ Calendar component provides an easy and intuitive way to display date information.
 
 
 ## $Platform$ Calendar Example
@@ -31,7 +31,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Calendar`, you need and register it as follows:
+Before using the `Calendar`, you need to register it as follows:
 
 ```razor
 IgbCalendarModule.Register(IgniteUIBlazor);
@@ -41,10 +41,6 @@ IgbCalendarModule.Register(IgniteUIBlazor);
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcCalendarComponent);
-```
-
-```razor
-IgbCalendarModule.Register(IgniteUIBlazor);
 ```
 
 The simplest way to start using the `Calendar` is as follows:
@@ -59,7 +55,7 @@ The simplest way to start using the `Calendar` is as follows:
 
 ### Selection Modes
 
-By default the `Calendar` is using single selection mode but you can changed it by setting the `Selection` property as shown in this example.
+Users can choose from three different selection modes - single selection, multiple selection or range selection. By default, the `Calendar` is using single selection mode but you can change it by setting the `Selection` property as shown in this example.
 
 ```html
 <igc-calendar selection="multiple"></igc-calendar>
@@ -272,9 +268,9 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 ### Multiple Months
 
-Using the `VisibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `Orientation` property. By default the `Orientation` property is set to `horizontal`.
+Using the `VisibleMonths` property, you can display more than one month when the Calendar is in `days` view. When multiple months are displayed, you can configure whether you want to stack them vertically or horizontally by using the `Orientation` property. By default, the `Orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to `true` or using its corresponding boolean attribute `HideOutsideDays`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -306,10 +302,21 @@ You could control the size and spacing of the Calendar inner elements by changin
 
 ### Events
 
-The Calendar component emits the `igcChange` event when the selected dates are changed by the end user. You can subscribe to the event like this:
+The Calendar component emits the `Change` event when the selected dates are changed by the end user. You can subscribe to the event like this:
 
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
+```
+
+```razor
+<IgbCalendar Change="@OnCalendarChange" />
+
+@code {
+    public void OnCalendarChange(IgbComponentDataValueChangedEventArgs args)
+    {
+        
+    }
+}
 ```
 
 ## Keyboard navigation
