@@ -29,7 +29,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `NavDrawer`, you need and register it as follows:
+Before using the `NavDrawer`, you need to register it as follows:
 
 ```razor
 IgbNavDrawerModule.Register(IgniteUIBlazor);
@@ -230,9 +230,7 @@ public void OnMenuIconClick()
 {
     if(this.NavDrawerRef != null)
     {
-        this.NavDrawerRef.Show();
-        hitMenuIconFirst = true;
-        isNavDrawerOpen = true;
+        this.NavDrawerRef.Show();        
     }
 }
 ```

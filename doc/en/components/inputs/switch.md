@@ -9,12 +9,9 @@ mentionedTypes: ['Switch']
 
 The $ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
 
-
-<div class="divider"></div>
-
 ## $Platform$ Switch Example
 
-<code-view style="height:200px"
+<code-view style="height:100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch Example"
            github-src="inputs/switches/overview">
@@ -24,7 +21,7 @@ The $ProductName$ Switch component is a binary choice selection component that b
 
 ## Usage
 
-At its core the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
+At its core, the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
 First, you need to install the $ProductName$ by running the following command:
@@ -34,7 +31,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Switch`, you need and register it as follows:
+Before using the `Switch`, you need to register it as follows:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
@@ -73,7 +70,7 @@ To provide a meaningful label for the switch, simply place some text between the
 <IgbSwitch>Label</IgbSwitch>
 ```
 
-You can specify if the label should be positioned before or after the switch toggle by setting the `label-position` attribute of the switch. Allowed values are `before` and `after`(default):
+You can specify if the label should be positioned before or after the switch toggle by setting the `LabelPosition` attribute of the switch. Allowed values are `before` and `after`(default):
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
@@ -95,7 +92,7 @@ The switch can also be labelled by elements external to the switch. In this case
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
            alt="$Platform$ Avatar Example"
@@ -104,7 +101,7 @@ The switch can also be labelled by elements external to the switch. In this case
 
 ### Checked
 
-Use the `checked` attribute to toggle on the switch.
+You can use the `checked` attribute to toggle on the switch.
 
 ```html
 <igc-switch checked></igc-switch>
@@ -114,7 +111,7 @@ Use the `checked` attribute to toggle on the switch.
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
            alt="$Platform$ Avatar Example"
@@ -123,7 +120,7 @@ Use the `checked` attribute to toggle on the switch.
 
 ### Required
 
-Use the `required` attribute to mark the switch as required.
+You can use the `required` attribute to mark the switch as required.
 
 ```html
 <igc-switch required></igc-switch>
@@ -135,7 +132,7 @@ Use the `required` attribute to mark the switch as required.
 
 ### Invalid
 
-Use the `invalid` attribute to mark the switch as invalid.
+You can use the `invalid` attribute to mark the switch as invalid.
 
 ```html
 <igc-switch invalid></igc-switch>
@@ -147,7 +144,7 @@ Use the `invalid` attribute to mark the switch as invalid.
 
 ### Disabled
 
-Use the `disabled` attribute to disable the switch.
+You can use the `disabled` attribute to disable the switch.
 
 ```html
 <igc-switch disabled></igc-switch>
@@ -157,7 +154,7 @@ Use the `disabled` attribute to disable the switch.
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
            alt="$Platform$ Avatar Example"
@@ -166,14 +163,14 @@ Use the `disabled` attribute to disable the switch.
 
 ### Forms
 
-Use the `name` and `value` attributes when using the switch with `Form`.
+You can use the `name` and `value` attributes when using the switch with `Form`.
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
 ```
 
 ```razor
-<IgbSwitch Value="enabled" />
+<IgbSwitch Name="wifi" Value="enabled" />
 ```
 
 ## Styling

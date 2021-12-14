@@ -11,7 +11,7 @@ The $ProductName$ List element is extremely useful when presenting a group of it
 
 ## $Platform$ List Example
 
-The following example represents a list populated with contacts with a name and a phone number properties. The `List` component uses `Avatar` and `Button` to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
+The following example represents a list populated with contacts with a name and a phone number properties. The `List` component demonstrated below uses the `Avatar` and `Button` elements to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -34,7 +34,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `List`, you need and register it as follows:
+Before using the `List`, you need to register it as follows:
 
 ```razor
 IgbListModule.Register(IgniteUIBlazor);
@@ -134,9 +134,7 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 </IgbList>
 ```
 
-Both slots `title` and `subtitle` give our `ListItems` some default look.
-
-After all that our list component should now look like that:
+After implementing the above code, our list component should now look like the following:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -147,7 +145,7 @@ After all that our list component should now look like that:
 
 ### Adding Avatar and Buttons
 
-We can use some of our other components in conjunction with the `List` component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. Again, we can do that by using some of the list item's slots.
+We can use some of our other components in conjunction with the `List` component to enrich the experience and add some functionality. We can have a nice picture avatar to the left of the name and phone values. Additionally, we can add some buttons to the right of them to allow the user to text and call contacts, so let's update our contacts list component to show the avatar and the buttons. We can do that by using some of the list item's slots.
 
 ```html
     <igc-list>
@@ -225,9 +223,9 @@ We can use some of our other components in conjunction with the `List` component
 </IgbList>
 ```
 
-The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case igc-avatar, will also be provided with a default position and spacing.
+The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case the `Avatar` component, will also be provided with a default position and spacing.
 
-The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use igc-buttons.
+The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use `Button` components.
 
 Let's also allow the user to choose the size of the list by using its `size` property. We will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size property of the list.
 
@@ -285,7 +283,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
-And here's the result of all that work:
+The result of implementing the above code should look like the following:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -296,7 +294,7 @@ And here's the result of all that work:
 
 ## Styling
 
-Let's see how we can change the appearance of our list, by using some of the exposed CSS parts - `title`, `subtitle` and `end`.
+You can change the appearance of our list, by using some of the exposed CSS parts - `title`, `subtitle` and `end`.
 
 ```css
 igc-list-header {

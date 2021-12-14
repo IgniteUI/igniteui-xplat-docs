@@ -31,7 +31,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Navbar`, you need and register it as follows:
+Before using the `Navbar`, you need to register it as follows:
 
 ```razor
 IgbNavbarModule.Register(IgniteUIBlazor);
@@ -56,7 +56,7 @@ Then in the template of `Navbar`, you can add the following code to show a basic
 
 ## Content
 
-You can added some `Icon` icons using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
+You can added some `Icon` elements using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

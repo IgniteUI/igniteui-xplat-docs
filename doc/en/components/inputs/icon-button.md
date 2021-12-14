@@ -9,9 +9,6 @@ mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
 
 The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
-
-<div class="divider"></div>
-
 # $Platform$ Icon Button Example
 
 <code-view style="height: 100px"
@@ -32,7 +29,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `IconButton`, you need and register it as follows:
+Before using the `IconButton`, you need to register it as follows:
 
 ```razor
 IgbIconButtonModule.Register(IgniteUIBlazor);

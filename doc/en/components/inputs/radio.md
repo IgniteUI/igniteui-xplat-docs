@@ -30,7 +30,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Radio` and the `RadioGroup`, you need and register them as follows:
+Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
 
 ```razor
 IgbRadioModule.Register(IgniteUIBlazor);
@@ -112,7 +112,7 @@ The `Radio` can also be labelled by elements external to it. In this case the us
 
 ### Checked
 
-Use the `checked` attribute to toggle on the radio.
+You can use the `checked` attribute to toggle on the radio.
 
 ```html
 <igc-radio-group>
@@ -141,7 +141,7 @@ Use the `checked` attribute to toggle on the radio.
 
 ### Invalid
 
-Use the `invalid` attribute to mark the radio as invalid.
+You can use the `invalid` attribute to mark the radio as invalid.
 
 ```html
 <igc-radio invalid></igc-radio>
@@ -151,7 +151,7 @@ Use the `invalid` attribute to mark the radio as invalid.
 <IgbRadio Invalid="true" />
 ```
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
            alt="$Platform$ Radio Example"
@@ -160,7 +160,7 @@ Use the `invalid` attribute to mark the radio as invalid.
 
 ### Disabled
 
-Use the `disabled` attribute to disable the radio.
+You can use the `disabled` attribute to disable the radio.
 
 ```html
 <igc-radio-group>
@@ -218,7 +218,7 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 
 ### Forms
 
-Use the `name` and `value` attributes when using the radio with `Form`.
+You can use the `name` and `value` attributes when using the radio with `Form`.
 
 ```html
 <igc-radio-group>
@@ -227,6 +227,15 @@ Use the `name` and `value` attributes when using the radio with `Form`.
   <igc-radio name="option4" value="mango">Mango</igc-radio>
   <igc-radio name="option3" value="banana">Orange</igc-radio>
 </igc-radio-group>
+```
+
+```razor
+<IgbRadioGroup>
+    <IgbRadio Name="option1" Value="apple">Apple</IgbRadio>
+    <IgbRadio Name="option2" Value="banana">Banana</IgbRadio>
+    <IgbRadio Name="option3" Value="mango">Mango</IgbRadio>
+    <IgbRadio Name="option4" Value="orange">Orange</IgbRadio>
+</IgbRadioGroup>
 ```
 
 ## Styling

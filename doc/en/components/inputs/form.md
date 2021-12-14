@@ -1,15 +1,13 @@
 ---
 title: $Platform$ Form Component | $ProductName$
-_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here. 
+_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
 _keywords: $Platform$ form, $ProductName$, Infragistics
 mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 ---
 
 # $Platform$ Form Overview
 
-The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
-
-<div class="divider"></div>
+The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
 
 ## $Platform$ Form Example
 
@@ -33,7 +31,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Form`, you need and register it as follows:
+Before using the `Form`, you need to register it as follows:
 
 ```razor
 IgbFormModule.Register(IgniteUIBlazor);
@@ -79,7 +77,7 @@ The Form component raises the following events:
 - Submit - Raised when the form is submitted
 - Reset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the `Submit`] event:
+Here is an example showing how to add an event listener for the `Submit` event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {

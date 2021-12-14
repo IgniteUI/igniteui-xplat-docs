@@ -36,7 +36,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Card`, you need and register it as follows:
+Before using the `Card`, you need to register it as follows:
 
 ```razor
 IgbCardModule.Register(IgniteUIBlazor);
@@ -393,7 +393,7 @@ igc-icon-button+igc-icon-button {
 ### Summary
 In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
-<!-- Web Components -->
+<!-- WebComponents -->
 
 ## API References
 

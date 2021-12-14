@@ -9,8 +9,6 @@ mentionedTypes: ['Checkbox', 'Form']
 
 The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
 
-<div class="divider"></div>
-
 ## Checkbox Example
 
 <code-view style="height: 100px"
@@ -33,7 +31,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Checkbox`, you need and register it as follows:
+Before using the `Checkbox`, you need to register it as follows:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
@@ -108,17 +106,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 
 ### Checked
 
-<!-- Blazor -->
-
-Use the `Checked` property of the component in order to determine whether the checkbox should be toggled on or off by default.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Use the `checked` attribute to toggle on the checkbox.
-
-<!-- end: WebComponents -->
+You can use the `Checked` attribute of the component to determine whether the checkbox should be toggled on or off by default.
 
 ```html
 <igc-checkbox checked></igc-checkbox>
@@ -137,17 +125,7 @@ Use the `checked` attribute to toggle on the checkbox.
 
 ### Indeterminate
 
-<!-- Blazor -->
-
-Use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Use the `indeterminate` attribute to set the value of the checkbox to neither `true` nor `false`.
-
-<!-- end: WebComponents -->
+You can use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
@@ -166,17 +144,7 @@ Use the `indeterminate` attribute to set the value of the checkbox to neither `t
 
 ### Required
 
-<!-- Blazor -->
-
-Use the `Required` property to mark the checkbox as required.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Use the `required` attribute to mark the checkbox as required.
-
-<!-- end: WebComponents -->
+You can use the `Required` property to mark the checkbox as required.
 
 ```html
 <igc-checkbox required></igc-checkbox>
@@ -188,17 +156,7 @@ Use the `required` attribute to mark the checkbox as required.
 
 ### Invalid
 
-<!-- Blazor -->
-
-Use the `Invalid` property to mark the checkbox as invalid.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Use the `invalid` attribute to mark the checkbox as invalid.
-
-<!-- end: WebComponents -->
+You can use the `Invalid` attribute to mark the checkbox as invalid.
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
@@ -210,17 +168,7 @@ Use the `invalid` attribute to mark the checkbox as invalid.
 
 ### Disabled
 
-<!-- Blazor -->
-
-Use the `Disabled` property to disable the checkbox.
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-Use the `disabled` attribute to disable the checkbox.
-
-<!-- end: WebComponents -->
+You can use the `Disabled` attribute to disable the checkbox.
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
@@ -239,7 +187,7 @@ Use the `disabled` attribute to disable the checkbox.
 
 ### Forms
 
-Use the `name` and `value` attributes when using the checkbox with `Form`.
+You can use the `name` and `value` attributes when using the checkbox with `Form`.
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -271,13 +219,6 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
-
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-styling"
-           alt="$Platform$ Checkbox Example"
-           github-src="inputs/checkbox/styling">
-</code-view>
 
 <!-- WebComponents -->
 
