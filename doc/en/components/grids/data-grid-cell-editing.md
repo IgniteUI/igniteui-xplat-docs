@@ -24,12 +24,12 @@ The $ProductName$ Data Table / Data Grid supports cell and row editing with batc
 
 Editing in the $Platform$ data grid is configured by using the `EditMode` option of the $Platform$ grid. This property takes three different options, listed below:
 
-- **None** - Editing is not enabled.
-- **Cell** - Allow cells to enter edit mode and commit the value on exiting edit mode.
-- **CellBatch** - Allows cells to enter edit mode but changes will be cached later until they are committed.
-- **Row** - Allow rows to enter edit mode and commit the value on exit.
+- `None`: Editing is not enabled.
+- `Cell`: Allow cells to enter edit mode and commit the value on exiting edit mode.
+- `CellBatch`: Allows cells to enter edit mode but changes will be cached later until they are committed.
+- `Row`: Allow rows to enter edit mode and commit the value on exit.
 
-When set to **CellBatch**, in order to commit the changes you must perform the `commitEdits` method from the grid. The grid will italicize the cells until they are committed providing control over when to push changes back to the datasource.
+When set to `CellBatch`, in order to commit the changes you must perform the `commitEdits` method from the grid. The grid will italicize the cells until they are committed providing control over when to push changes back to the datasource.
 
 In addition, error handling can be performed by hooking the `onCellValueChanging` event and inspecting new values before they are committed. The grid exposes a `setEditError` method that can output an error message. This keeps the cell in edit mode until a valid value is entered. Otherwise the grid's `rejectEdit` method can be performed to revert the invalid value. If no invalid value is found, you can also commit your changes by calling the grid's `acceptEdit` method.
 

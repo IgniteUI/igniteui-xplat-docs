@@ -21,13 +21,13 @@ The $ProductName$ Data Grid supports the ability to resize columns, giving you f
 
 Column resizing in the $ProductName$ DataGrid is on by default, and can be controlled by using the `ColumnResizingMode` property of the grid. This property has three options. Each option is explained below:
 
-- **Deferred** - The default option. When resizing, a separator will appear showing how large or small the column will become when resized.
-- **Immediate** - When resizing, there will be no separator. The column's width will follow the pointer as you drag the edge of the column and resize accordingly.
-- **None** - Columns cannot be resized.
+- `Deferred`: The default option. When resizing, a separator will appear showing how large or small the column will become when resized.
+- `Immediate`: When resizing, there will be no separator. The column's width will follow the pointer as you drag the edge of the column and resize accordingly.
+- `None`: Columns cannot be resized.
 
-When column resizing is set to **Deferred**, the separator that shows up can be modified in color and width by using the `ColumnResizingSeparatorBackground` and `ColumnResizingSeparatorWidth` properties of the grid, respectively.
+When column resizing is set to `Deferred`, the separator that shows up can be modified in color and width by using the `ColumnResizingSeparatorBackground` and `ColumnResizingSeparatorWidth` properties of the grid, respectively.
 
-You can also animate the columns as they resize when the resizing mode is set to **Deferred** only. This is done by setting the `ColumnResizingAnimationMode` property to `Interpolate`.
+You can also animate the columns as they resize when the resizing mode is set to `Deferred` only. This is done by setting the `ColumnResizingAnimationMode` property to `Interpolate`.
 
 Each column in the grid can be determined whether or not it can resize individually. If you want to enable or disable resizing on a particular column, you can set the `IsResizingEnabled` property of that column.
 

@@ -7,7 +7,7 @@ mentionedTypes: ['Grid', 'GridActivationMode']
 
 # $Platform$ Grid Cell Activation
 
-The $ProductName$ Data Table / Data Grid supports a cell activation feature that will enable keyboard navigation through the cells of the grid. This is activated by setting the `ActivationMode` property of the grid to **Cell**.
+The $ProductName$ Data Table / Data Grid supports a cell activation feature that will enable keyboard navigation through the cells of the grid. This is activated by setting the `ActivationMode` property of the grid to `Cell`.
 
 ## $Platform$ Grid Cell Activation Example
 
@@ -27,7 +27,7 @@ The $ProductName$ Data Table / Data Grid supports a cell activation feature that
 
 ## Keyboard Navigation
 
-After setting the `ActivationMode` property of the grid to **Cell**, this will enable a range of keyboard navigation options in the data grid. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
+After setting the `ActivationMode` property of the grid to `Cell`, this will enable a range of keyboard navigation options in the data grid. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
 
 - <b>Arrow Key Up</b>: Navigate one cell up.
 - <b>Arrow Key Down</b>: Navigate one cell down.

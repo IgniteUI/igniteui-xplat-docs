@@ -21,9 +21,9 @@ The $ProductName$ Data Grid supports the ability to move columns, giving you the
 
 <div class="divider--half"></div>
 
-Column moving in the $ProductName$ Data Grid is on by default, and can be controlled by setting the `ColumnMovingMode` property of the grid. This property has two options, **Deferred** or **None**. **Deferred** will allow column moving, while **None** will disable column moving for the entire grid.
+Column moving in the $ProductName$ Data Grid is on by default, and can be controlled by setting the `ColumnMovingMode` property of the grid. This property has two options, `Deferred` or `None`. `Deferred` will allow column moving, while `None` will disable column moving for the entire grid.
 
-When column moving is set to **Deferred**, a separator will show up while moving a column. While moving a column, once the mouse pointer is released, the moved column will take the place of the column placed to the right of the separator. This separator can also be customized in width and color by using the `ColumnMovingSeparatorWidth` and `ColumnMovingSeparatorBackground` properties, respectively.
+When column moving is set to `Deferred`, a separator will show up while moving a column. While moving a column, once the mouse pointer is released, the moved column will take the place of the column placed to the right of the separator. This separator can also be customized in width and color by using the `ColumnMovingSeparatorWidth` and `ColumnMovingSeparatorBackground` properties, respectively.
 
 You can also animate the column movements, if you wish. This can be done by setting the `ColumnMovingAnimationMode` property of the grid. Animations are not on by default.
 

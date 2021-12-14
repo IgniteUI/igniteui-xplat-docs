@@ -10,7 +10,7 @@ The $ProductName$ Stock Chart, sometimes referred to as $Platform$ Financial Cha
 
 ## $Platform$ Stock Chart Example
 
-You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to **Line** value, as shown in the example below.
+You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

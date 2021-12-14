@@ -13,11 +13,11 @@ The sparkline control has several visual elements and corresponding features tha
 
 ## $Platform$ Sparkline Example
 
-The following example shows all the different sparkline types available. The type is defined by setting the `DisplayType` property. If the `DisplayType` property is not specified, then by default, the **Line** type is displayed.
+The following example shows all the different sparkline types available. The type is defined by setting the `DisplayType` property. If the `DisplayType` property is not specified, then by default, the `Line` type is displayed.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
            github-src="charts/sparkline/display-types"
            alt="$Platform$ Sparkline Example" >
 </code-view>
@@ -60,14 +60,14 @@ The $Platform$ Sparkline has the ability to mark the data points with elliptical
 
 The $Platform$ Sparkline supports the following types of sparklines by setting the `DisplayType` property accordingly:
 
-- **Line** -  Displays the line chart type of Sparkline with numeric data, connecting the data points with line segments. At least two data points must be supplied to visualize the data in Sparkline.
-- **Area** - Displays the Area chart type of Sparkline with numeric data. This is like line type with additional steps of closing the area after each line is drawn. At least two data points must be supplied to visualize the data in Sparkline.
-- **Column** - Displays the Column chart type of Sparkline with numeric data. Some may refer to it as vertical bars. This type can render a single data point, but it would require specifying the minimum value range property (minimum) in Sparkline so the supplied single data point can be visible, otherwise the value will be treated as the minimum value and will not be visible.
-- **WinLoss** - This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the $Platform$ Sparkline will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
+- `Line`:  Displays the line chart type of Sparkline with numeric data, connecting the data points with line segments. At least two data points must be supplied to visualize the data in Sparkline.
+- `Area`: Displays the Area chart type of Sparkline with numeric data. This is like line type with additional steps of closing the area after each line is drawn. At least two data points must be supplied to visualize the data in Sparkline.
+- `Column`: Displays the Column chart type of Sparkline with numeric data. Some may refer to it as vertical bars. This type can render a single data point, but it would require specifying the minimum value range property (minimum) in Sparkline so the supplied single data point can be visible, otherwise the value will be treated as the minimum value and will not be visible.
+- `WinLoss`: This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the $Platform$ Sparkline will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
            github-src="charts/sparkline/display-types"
            alt="$Platform$ Sparkline Example" >
 </code-view>
@@ -76,7 +76,7 @@ The $Platform$ Sparkline supports the following types of sparklines by setting t
 
 ## Markers
 
-The $Platform$ Sparkline allows you to show markers as circular-colored icons on your series to indicate the individual data points based on X/Y coordinates. Markers can be set on sparklines of display types of **Line**, **Area**, and **Column**. The **WinLoss** type of sparkline does not currently accept markers. By default, markers are not displayed, but they can be enabled by setting the corresponding marker visibility property.
+The $Platform$ Sparkline allows you to show markers as circular-colored icons on your series to indicate the individual data points based on X/Y coordinates. Markers can be set on sparklines of display types of `Line`, `Area`, and `Column`. The `WinLoss` type of sparkline does not currently accept markers. By default, markers are not displayed, but they can be enabled by setting the corresponding marker visibility property.
 
 Markers in the sparkline can be placed in any combination of the following locations:
 
@@ -101,7 +101,7 @@ All of the markers mentioned above can be customized using the related marker ty
 
 The normal range feature of the $Platform$ Sparkline is a horizontal stripe representing some pre-defined meaningful range when the data is being visualized. The normal range can be set as a shaded area outlined with the desired color.
 
-The normal range can be wider than the maximum data point or beyond, and it can also be as thin as the sparkline's **Line** display type, to serve as a threshold indicator, for instance. The width of the normal range is determined by the following three properties, which serve as the minimum settings required for displaying the normal range:
+The normal range can be wider than the maximum data point or beyond, and it can also be as thin as the sparkline's `Line` display type, to serve as a threshold indicator, for instance. The width of the normal range is determined by the following three properties, which serve as the minimum settings required for displaying the normal range:
 
 - `NormalRangeVisibility`: Whether the normal range is visible.
 - `NormalRangeMaximum`: The bottom border of the range.

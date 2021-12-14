@@ -11,7 +11,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 
 ## $Platform$ 株価チャートの例
 
-`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Line** 値に設定します。
+`FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

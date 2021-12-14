@@ -22,9 +22,9 @@ $ProductName$ Data Grid は列を移動する機能をサポートしている�
 
 <div class="divider--half"></div>
 
-$ProductName$ Data Grid の列移動はデフォルトで有効になっているため、グリッドの `ColumnMovingMode` プロパティを設定して制御できます。このプロパティには、Deferred または None の 2 つのオプションがあります。**Deferred** は列の移動を許可しますが、**None** はグリッド全体の列の移動を無効にします。
+$ProductName$ Data Grid の列移動はデフォルトで有効になっているため、グリッドの `ColumnMovingMode` プロパティを設定して制御できます。このプロパティには、Deferred または None の 2 つのオプションがあります。`Deferred` は列の移動を許可しますが、`None` はグリッド全体の列の移動を無効にします。
 
-列の移動が **Deferred** に設定されていると、列を移動している間、セパレーターが表示されます。列を移動しているときにマウス ポインタを離すと、移動した列は区切り記号の右側にある列の位置に移動します。このセパレータは、それぞれ `ColumnMovingSeparatorWidth` プロパティと `ColumnMovingSeparatorBackground` プロパティを使用して幅と色をカスタマイズすることもできます。
+列の移動が `Deferred` に設定されていると、列を移動している間、セパレーターが表示されます。列を移動しているときにマウス ポインタを離すと、移動した列は区切り記号の右側にある列の位置に移動します。このセパレータは、それぞれ `ColumnMovingSeparatorWidth` プロパティと `ColumnMovingSeparatorBackground` プロパティを使用して幅と色をカスタマイズすることもできます。
 
 必要に応じて、列の動きをアニメートすることもできます。これは、グリッドの `ColumnMovingAnimationMode` プロパティを設定することによって実行できます。アニメーションはデフォルトで編集できません。
 

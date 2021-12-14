@@ -27,9 +27,9 @@ The Column Pinning API in the Data Grid can be enabled by setting either a colum
 
 The `Pinned` property has three options:
 
-- Left - enabling **Left** will position pinned columns to the left-hand side of the grid.
-- Right - enabling **Right** will position pinned columns to the right side of the grid.
-- None - enabling **None** will unpin a column and reposition its default placement within the grid.
+- Left - enabling `Left` will position pinned columns to the left-hand side of the grid.
+- Right - enabling `Right` will position pinned columns to the right side of the grid.
+- None - enabling `None` will unpin a column and reposition its default placement within the grid.
 
 Unpinned columns that are adjacent to pinned columns will still maintain horizontal scrolling.
 

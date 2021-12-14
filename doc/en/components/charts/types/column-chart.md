@@ -13,7 +13,7 @@ The $ProductName$ Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 The $Platform$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to **Column** enum, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to Column enum, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -54,7 +54,7 @@ There are several uses cases for Column Charts. When you:
 
 Column Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the bottom to top of the chart towards the values of data points.
 
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** enum, as shown in the example below:
+You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Column`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -67,7 +67,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 ## $Platform$ Column Chart with Multiple Series
 
-The Column Chart is able to render multiple columns per category for comparison purposes. You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** enum, as shown in the example below:
+The Column Chart is able to render multiple columns per category for comparison purposes. You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Column`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -191,7 +191,7 @@ The following table lists API members mentioned in the above sections:
 
 Chart Type          | Control Name       | API Members
 --------------------|--------------------|------------------------
-Column              | `CategoryChart` | `ChartType` = **Column**
+Column              | `CategoryChart` | `ChartType` = `Column`
 Radial Column       | `XamDataChart`     | `RadialColumnSeries`
 Range Column        | `XamDataChart`     | `RangeColumnSeries`
 Stacked Column      | `XamDataChart`     | `StackedColumnSeries`
