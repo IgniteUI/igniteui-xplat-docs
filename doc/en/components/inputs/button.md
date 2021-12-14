@@ -50,6 +50,12 @@ The simplest way to start using the `Button` is as follows:
 </igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained">
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+</IgbButton>
+```
+
 With `prefix` and `suffix` slots we can add different content before and after the main content of the button.
 
 ## Type
@@ -71,6 +77,10 @@ Use `variant` attribute to add a simple contained button in your component templ
 <igc-button variant="contained">Contained</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
 </iframe></div>
@@ -81,6 +91,10 @@ All you have to do to create an `outlined` button is to change the value of the 
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
 <div class="sample-container loading" style="height: 80px">
@@ -95,6 +109,10 @@ Analogically, we can switch to `flat` variant.
 <igc-button variant="flat">Flat</igc-button>
 ```
 
+```razor
+<IgbButton Variant="@ButtonVariant.Flat" />
+```
+
 <div class="sample-container loading" style="height: 70px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
 </iframe></div>
@@ -105,6 +123,10 @@ We can create a floating action button by setting the `variant` property to `fab
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
 <div class="sample-container loading" style="height: 70px">
@@ -143,6 +165,40 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```razor
+<IgbRadioGroup id="radioGroup" Alignment="RadioGroupAlignment.Horizontal" >
+    <IgbRadio Value="small" LabelPosition="RadioLabelPosition.After" @onclick="OnSmallClick">Small</IgbRadio>
+    <IgbRadio Value="medium" LabelPosition="RadioLabelPosition.After" @onclick="OnMediumClick">Medium</IgbRadio>
+    <IgbRadio Value="large" LabelPosition="RadioLabelPosition.After" Checked="true" @onclick="OnLargeClick">Large</IgbRadio>
+</IgbRadioGroup>
+
+@code {
+    private SizableComponentSize SizableComponentSize = SizableComponentSize.Large;
+
+    protected override void OnInitialized()
+    {
+        IgbButtonModule.Register(IgniteUIBlazor);
+        IgbRadioModule.Register(IgniteUIBlazor);
+        IgbRadioGroupModule.Register(IgniteUIBlazor);
+    }
+
+    public void OnSmallClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Small;
+    }
+
+    public void OnMediumClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Medium;
+    }
+
+    public void OnLargeClick(EventArgs e)
+    {
+        SizableComponentSize = SizableComponentSize.Large;
+    }
+}
+```
+
 And here's the result of all that work:
 
 <code-view style="height: 200px"
@@ -164,6 +220,12 @@ Setting the `download` property will prompt the user to save the linked URL inst
     target="_blank">
     Download
 </igc-button>
+```
+
+```razor
+<IgbButton Variant="@ButtonVariant.Contained" Download="Url" Href="https://www.infragistics.com/" Target="@ButtonBaseTarget._blank">
+    Download
+</IgbButton>
 ```
 
 <div class="sample-container loading" style="height: 70px">

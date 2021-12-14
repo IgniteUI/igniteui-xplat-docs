@@ -34,7 +34,7 @@ Before using the `Radio` and the `RadioGroup`, you need and register them as fol
 
 ```razor
 IgbRadioModule.Register(IgniteUIBlazor);
-gbRadioGroupModule.Register(IgniteUIBlazor);
+IgbRadioGroupModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

@@ -12,7 +12,7 @@ The $ProductName$ Card displays text, images, icons, and buttons in a visually r
 
 ## $Platform$ Card Example
 
-<code-view style="height: 610px"
+<code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
            alt="$Platform$ Card Example"
@@ -382,7 +382,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 610px"
+<code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
            alt="$Platform$ Card Styling Example"

@@ -1344,8 +1344,8 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Calendar {ReleaseStatus_WebsInputs}",
+    "exclude": ["Angular", "React"],
+    "name": "Calendar {ReleaseStatus_WebCalendar}",
     "href": "scheduling/calendar.md",
     "status": "NEW"
   },
