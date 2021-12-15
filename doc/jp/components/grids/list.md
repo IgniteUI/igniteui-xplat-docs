@@ -289,7 +289,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="grids/list/overview">
 </code-view>
 
@@ -321,7 +321,7 @@ igc-list-item::part(end) {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="grids/list/styling">
 </code-view>
 

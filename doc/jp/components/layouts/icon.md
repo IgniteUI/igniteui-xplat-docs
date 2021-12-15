@@ -12,7 +12,7 @@ $Platform$ Icon コンポーネントを使用すると、フォントを簡単�
 
 ## $Platform$ Icon の例
 
-<code-view style="height: 50px"
+<code-view style="height: 60px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon の例"
            github-src="layouts/icon/sizing">
@@ -46,6 +46,7 @@ defineComponents(IgcIconComponent);
 
 ### アイコンの追加
 
+<!-- WebComponents -->
 画像をアイコンとして登録するには、アイコンをアイコン コレクションに追加できるアイコン レジストリ サービスから 2 つのユーティリティ関数のいずれかをインポートするだけです。
 
 ```ts
@@ -65,6 +66,33 @@ registerIcon(
 );
 ```
 
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+画像をアイコンとして登録するには、単一の `Icon` 要素で 2 つの「register」メソッドの 1 つを呼び出すだけで、アイコンをアイコン コレクションに追加できます。
+
+`RegisterIcon` メソッドを使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
+
+```razor
+<IgbIcon @ref="@IconRef" />
+
+@code {
+  private IgbIcon IconRef { get; set; }
+      
+  protected override void OnAfterRender(bool firstRender)
+  {
+     base.OnAfterRender(firstRender);
+     if (this.IconRef != null && firstRender)
+     {
+       this.IconRef.RegisterIcon("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
+     }
+  }
+}
+```
+
+<!-- end: Blazor -->
+
 上記の方法では、`search` という名前のアイコンが `material` という名前のコレクションに追加されます。
 
 次に、新しく登録されたアイコンを使用するには、名前とコレクションを `Icon` 要素に渡すだけです。
@@ -73,13 +101,35 @@ registerIcon(
 <igc-icon name="search" collection="material"></igc-icon>
 ```
 
-アイコンを登録する 2 番目の方法は、SVG 文字列を [`registerIconFromText`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIconFromText) 関数に渡すことです。
+```razor
+IgbIcon IconName="search" Collection="material" />
+```
+
+アイコンを登録する 2 番目の方法は、SVG 文字列を [`RegisterIconFromText`] メソッドに渡すことです。
 
 ```ts
 const searchIcon =
   '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
 
 registerIconFromText("search", searchIcon, "material");
+```
+
+```razor
+<IgbIcon @ref="@IconRef" />
+
+@code {
+  private IgbIcon IconRef { get; set; }
+      
+  protected override void OnAfterRender(bool firstRender)
+  {
+     base.OnAfterRender(firstRender);
+     if (this.IconRef != null && firstRender)
+     {
+       const string searchIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/></svg>";
+       this.IconRef.RegisterIconFromText("search", searchIcon, "material");
+     }
+  }
+}
 ```
 
 次に、上記のコンポーネント サンプルで説明したのと同じ方法で使用します。
@@ -92,7 +142,11 @@ registerIconFromText("search", searchIcon, "material");
 <igc-icon size="large"></igc-icon>
 ```
 
-<code-view style="height: 50px"
+```razor
+<IgbIcon Size="@SizableComponentSize.Large">
+```
+
+<code-view style="height: 60px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon のサイズ変更"
            github-src="layouts/icon/sizing">
@@ -104,6 +158,10 @@ registerIconFromText("search", searchIcon, "material");
 
 ```html
 <igc-icon name="search" mirrored></igc-icon>
+```
+
+```razor
+IgbIcon IconName="search" Collection="material" Mirrored="true" />
 ```
 
 ## スタイル設定

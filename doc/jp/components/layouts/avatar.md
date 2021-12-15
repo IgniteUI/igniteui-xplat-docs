@@ -10,9 +10,6 @@ _language: ja
 
 $ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
 
-
-<div class="divider"></div>
-
 ## $Platform$ Icon Avatar の例
 
 <code-view style="height: 80px"
@@ -70,8 +67,9 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-`initials` 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
+### イニシャル
 
+`initials` 属性が設定されている場合、アバターのすべての子要素は無視され、この属性に渡された文字列が表示されます。
 
 ```html
 <!-- Initials("AZ") will be displayed instead of the icon. -->
@@ -88,6 +86,15 @@ defineComponents(IgcAvatarComponent);
   <IgbIcon Name="home" />
 </IgbAvatar>
 ```
+
+<code-view style="height: 80px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
+           alt="$Platform$ Avatar の例"
+           github-src="layouts/avatar/initials">
+</code-view>
+
+### 画像
 
 `src` 属性に静的アセットに有効な URL が割り当てられている場合、アバターは画像を表示することもできます。その場合、`initials` 値は無視され、子要素は描画されません。
 
@@ -108,29 +115,14 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
-
-形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
-
-## 例
-
-### イニシャル
-
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
-           alt="$Platform$ Avatar の例"
-           github-src="layouts/avatar/initials">
-</code-view>
-
-### 画像
-
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
            alt="$Platform$ Avatar の例"
            github-src="layouts/avatar/image">
 </code-view>
+
+アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
 ### 形状
 
@@ -143,6 +135,8 @@ defineComponents(IgcAvatarComponent);
 
 ### サイズ
 
+形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
+
 <code-view style="height: 130px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
@@ -150,7 +144,7 @@ defineComponents(IgcAvatarComponent);
            github-src="layouts/avatar/size">
 </code-view>
 
-## スタイル設定
+### スタイル設定
 
 アバター コンポーネントは、すべてのスタイル プロパティを変更するために使用できる `base` パーツを公開します。
 

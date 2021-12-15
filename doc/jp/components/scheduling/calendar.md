@@ -8,10 +8,12 @@ _language: ja
 
 # $Platform$ Calendar (カレンダー) の概要
 
-$ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。
+$ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。
 
 
 ## $Platform$ Calendar の例
+
+このサンプルは、単一の日付を選択するオプションを使用して `Calendar` を作成する方法を示しています。
 
 <div class="divider--half"></div>
 
@@ -44,10 +46,6 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-```razor
-IgbCalendarModule.Register(IgniteUIBlazor);
-```
-
 `Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 
 ```html
@@ -60,7 +58,7 @@ IgbCalendarModule.Register(IgniteUIBlazor);
 
 ### 単一モード
 
-デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
+ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
 
 ```html
 <igc-calendar selection="multiple"></igc-calendar>
@@ -273,9 +271,9 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 ### 複数の月
 
-`VisibleMonths` プロパティを使用すると、Calendar が日ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`Orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`Orientation` プロパティは `horizontal` に設定されています。
+`VisibleMonths` プロパティを使用すると、Calendar が `days` ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`Orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`Orientation` プロパティは `horizontal` に設定されています。
 
-Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`HideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `hide-outside-days` を使用します。
+Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`HideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `HideOutsideDays` を使用します。
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -307,10 +305,21 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 ### イベント
 
-選択した日付がエンド ユーザーによって変更されると、Calendar コンポーネントは `igcChange` イベントを発行します。このようにイベントをサブスクライブできます:
+選択した日付がエンド ユーザーによって変更されると、Calendar コンポーネントは `Change` イベントを発行します。このようにイベントをサブスクライブできます:
 
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
+```
+
+```razor
+<IgbCalendar Change="@OnCalendarChange" />
+
+@code {
+    public void OnCalendarChange(IgbComponentDataValueChangedEventArgs args)
+    {
+
+    }
+}
 ```
 
 ## キーボード ナビゲーション
