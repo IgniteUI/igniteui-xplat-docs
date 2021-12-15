@@ -8,7 +8,7 @@ _keywords: $ProductName$, Infragistics, Getting Started
 The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
 > [!NOTE]
-> You can get an example of $Platform$ project with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
+> You can get an example of $Platform$ projects with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
 
 <!-- Angular, React, WebComponents -->
 
@@ -324,7 +324,7 @@ The final result should look something like this screenshot:
 <!-- Blazor -->
 
 ## Step 1 - Create a New Blazor Project
-The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to [**Step 2 - Install Ignite UI for Blazor Package**](#step-2---install-ignite-ui-for-blazor-package).
+The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to the [**Install Ignite UI for Blazor Package**](#step-2---install-ignite-ui-for-blazor-package) section.
 
 1 - Start Visual Studio 2019 and click **Create a new project** on the start page, select the **Blazor App** template, and click **Next**.
 
