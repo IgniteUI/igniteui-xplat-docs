@@ -4,7 +4,6 @@ _description: インフラジスティックスの $Platform$ チャート パ�
 _keywords: $Platform$ Charts, Performance, Infragistics, $Platform$ チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
-namespace: Infragistics.Controls
 _language: ja
 ---
 
