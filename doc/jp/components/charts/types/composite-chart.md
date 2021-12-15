@@ -3,6 +3,7 @@ title: $Platform$ 複合チャート | コンボ チャート | データ可視�
 _description: インフラジスティックスの $Platform$ 複合チャート
 _keywords: $Platform$ Charts, Composite Chart, Combo Chart, Infragistics, $Platform$ チャート, 複合チャート, コンボ チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 複合 / コンボ チャート

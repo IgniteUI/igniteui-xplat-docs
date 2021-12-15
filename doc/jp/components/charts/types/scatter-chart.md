@@ -3,6 +3,7 @@ title: $Platform$ 散布図 | データ可視化 | インフラジスティッ�
 _description: インフラジスティックスの $Platform$ 散布図
 _keywords: $Platform$ Charts, Scatter Chart, Infragistics, $Platform$ チャート, 散布図, インフラジスティックス
 mentionedTypes: ["XamDataChart", "ScatterSeries", "ScatterLineSeries", "ScatterSplineSeries", "HighDensityScatterSeries", "ScatterAreaSeries", "ScatterContourSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 散布図

@@ -3,6 +3,7 @@ title: $Platform$ チャート マーカー | データ可視化 | インフラ�
 _description: インフラジスティックスの $Platform$ チャート マーカー
 _keywords: $Platform$ Charts, Markers, Infragistics, $Platform$ チャート, マーカー, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

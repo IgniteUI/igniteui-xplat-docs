@@ -3,6 +3,7 @@ title: $Platform$ NavDrawer | インフラジスティックス
 _description: インフラジスティックスの $Platform$ NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
 _keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['NavDrawer']
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

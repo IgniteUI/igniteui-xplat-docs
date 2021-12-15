@@ -11,6 +11,7 @@ _language: ja
 
 ## $Platform$ 複数列コンボ ボックスの例
 
+このサンプルは、ポップアップ ウィンドウの複数の列にデータを表示する `MultiColumnComboBox` を作成する方法を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

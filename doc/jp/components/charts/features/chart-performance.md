@@ -3,6 +3,7 @@ title: $Platform$ チャート パフォーマンス | データ可視化 | イ�
 _description: インフラジスティックスの $Platform$ チャート パフォーマンス
 _keywords: $Platform$ Charts, Performance, Infragistics, $Platform$ チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
