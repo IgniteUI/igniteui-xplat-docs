@@ -12,7 +12,6 @@ The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in a
 
 ## $Platform$ Grid Cell Merging Example
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
@@ -24,15 +23,15 @@ The $ProductName$ Data Table / Data Grid supports cell merging. You may opt-in a
 
 ## Overview
 
-Cell Merging in the $Platform$ data grid can be configured by using the `MergedCellMode` option of the $Platform$ grid. This property takes three different options, listed below:
+Cell Merging in the $Platform$ data grid can be configured by using the `MergedCellMode` option of the entire $Platform$ grid or individual columns. This property can be set to one of the following options, listed below:
 
-- `Never`: The grid will never merge cells. This is the default behavior.
-- `Always`: The grid will always attempt to merge cells.
-- `OnlyWhenSorted`: The grid will only attempt to merge cells when a column is sorted.
+- `Never`: The grid or column will never merge cells. This is the default behavior.
+- `Always`: The grid or column will always attempt to merge cells.
+- `OnlyWhenSorted`: The grid or column will only attempt to merge cells when a column is sorted.
 
 Note, regardless of the value of this property, cells can only be merged across sibling records.
 
-In addition, there is a `MergedCellEvaluationCriteria` property which can be used depending on if formatting is applied for a particular column or entire grid. This property takes two options, listed below:
+Cell merging can be evaulated based on whether the data is formatted or not using the `MergedCellEvaluationCriteria` property. This is applicable to the entire grid or individual columns and can be set to one of the following options, listed below:
 
 - `RawValue`: Merge cells from adjacent rows when the raw values from the cells are the same. This is the default value.
 - `FormattedText`: Merge cells from adjacent rows when the formatted value from the cells is the same.
