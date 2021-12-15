@@ -133,7 +133,7 @@ Old brushes/outlines | New outline/brushes
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
 * Breaking Changes:
-    - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
+    - Changed grid's `SummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
     - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
 
 <!-- end: Blazor, React, WebComponents -->
