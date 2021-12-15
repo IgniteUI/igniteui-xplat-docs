@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 This topic provides information on using the chart title and subtitle feature of the $Platform$ charts.
 
-## Example 
+## Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -29,24 +29,24 @@ When adding a title or subtitle to the chart control, the content of the chart a
 Property Name         | Property Type   |     Description
 ----------------------|------------------|------------
 `ChartTitle`          | string |  Title’s text content.
-`TitleTextColor`      | string |  Title’s text. color                         
+`TitleTextColor`      | string |  Title’s text. color
 `TitleAlignment`      | HorizontalAlignment |  Title’s horizontal alignment.
-`TitleTextStyle`      | string | Title’s font style. eg. Italic Bold 8pt Times New Roman 
+`TitleTextStyle`      | string | Title’s font style. e.g. Italic Bold 8pt Times New Roman
 `TitleTopMargin`      | number | Title's top margin.
 `TitleLeftMargin`     | number | Title's left margin.
 `TitleRightMargin`    | number | Title's right margin.
 `TitleBottomMargin`   | number | Title's bottom margin.
 `Subtitle`            | string |  Title’s text content.
-`SubtitleTextColor`   | string |  Title’s text. color                         
+`SubtitleTextColor`   | string |  Title’s text. color
 `SubtitleAlignment`   | HorizontalAlignment |  Title’s horizontal alignment.
-`SubtitleTextStyle`   | string | Title’s font style. eg. Italic Bold 8pt Times New Roman 
+`SubtitleTextStyle`   | string | Title’s font style. e.g. Italic Bold 8pt Times New Roman
 `SubtitleTopMargin`   | number | Title's top margin.
 `SubtitleLeftMargin`  | number | Title's left margin.
 `SubtitleRightMargin` | number | Title's right margin.
 `SubtitleBottomMargin`| number | Title's bottom margin.
 
-                
-                         
+
+
 
 
 

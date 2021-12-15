@@ -130,7 +130,7 @@ Old brushes/outlines | New outline/brushes
     - [Cell Merging](grids/data-grid-cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
-     eg. Multiple row selection.
+     e.g. Multiple row selection.
 * Breaking Changes:
     - Changed `GridSummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
     - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
@@ -166,7 +166,7 @@ This release introduces several new and improved visual design and configuration
     - chart.`ComputedPlotAreaMarginMode`
 * New Highlighting Properties
     - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position eg. directly over or nearest item
+    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
     - Note, in previous releases the highlighting was limited to fade on hover.
 * Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
 * Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
@@ -210,8 +210,8 @@ for example:
 
 * Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. eg. Options are (none, edit, move up, down, left, right)
-* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. eg. Options are (moves to the cell below, above, right, left)
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. e.g. Options are (none, edit, move up, down, left, right)
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. e.g. Options are (moves to the cell below, above, right, left)
 * Added `SelectAllRows` - method.
 * Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
@@ -225,10 +225,10 @@ for example:
 * `ShowTodayButton` - Toggles Today button visibility
 * `Label` - Adds a label above the date value
 * `Placeholder` property - adds custom text when no value is selected
-* `FormatString` - Customize input date string eg. (`yyyy-MM-dd`)
+* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
 * `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
 * `FirstDayOfWeek` - Specifies first day of week
-* `FirstWeekOfYear` - Specifies when to display first week of the year. eg. (First Full Week, First Four day Week)
+* `FirstWeekOfYear` - Specifies when to display first week of the year. e.g. (First Full Week, First Four day Week)
 * `ShowWeekNumbers` - Toggles Week number visibility
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
 * Added Accessibility
