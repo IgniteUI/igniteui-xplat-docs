@@ -219,6 +219,8 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCategory"}],"originalName":"IsCategory"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"itemsCount"}],"originalName":"ItemsCount"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"gap"}],"originalName":"Gap"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumGap"}],"originalName":"MaximumGap"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumGapSize"}],"originalName":"MinimumGapSize"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"overlap"}],"originalName":"Overlap"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useClusteringMode"}],"originalName":"UseClusteringMode"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},

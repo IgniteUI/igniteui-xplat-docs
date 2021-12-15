@@ -183,6 +183,8 @@
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"DataSource"}],"originalName":"ItemsSource"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemsCount"}],"originalName":"ItemsCount"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Gap"}],"originalName":"Gap"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumGap"}],"originalName":"MaximumGap"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumGapSize"}],"originalName":"MinimumGapSize"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Overlap"}],"originalName":"Overlap"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseClusteringMode"}],"originalName":"UseClusteringMode"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},
