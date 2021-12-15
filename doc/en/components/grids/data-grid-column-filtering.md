@@ -32,7 +32,7 @@ In the example below, the data grid's FilterExpressions collection is updated to
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-filter-expressions"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
            alt="$Platform$ Grid Filter Expressions Example"
            github-src="grids/data-grid/column-filter-expressions">
 </code-view>
