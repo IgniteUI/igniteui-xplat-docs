@@ -12,6 +12,8 @@ The $ProductName$ Calendar component provides an easy and intuitive way to displ
 
 ## $Platform$ Calendar Example
 
+This sample demonstrates how to create  `Calendar` with option to select a single date.
+
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
@@ -314,7 +316,7 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 @code {
     public void OnCalendarChange(IgbComponentDataValueChangedEventArgs args)
     {
-        
+
     }
 }
 ```

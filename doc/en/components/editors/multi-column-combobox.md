@@ -10,6 +10,7 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 ## $Platform$ Multi-Column Combo Box Example
 
+This sample demonstrates how to create `MultiColumnComboBox` that displays data in multiple columns in a popup window.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

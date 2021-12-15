@@ -10,6 +10,7 @@ The Date Picker component allows users to use a drop-down calendar UI allowing t
 
 ## $Platform$ Date Picker Example
 
+This sample demonstrates how to create `DatePicker` with option to select a single date.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
