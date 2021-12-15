@@ -4,6 +4,7 @@ _description: マウスオーバーでインフラジスティックス $Platfor
 _language: ja
 _keywords: $Platform$ Table, Data Grid, row highlighting, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行の強調表示, インフラジスティックス
 mentionedTypes: ['Grid', 'IsRowHoverEnabled', 'RowHoverBackground']
+namespace: Infragistics.Controls
 ---
 
 # $Platform$ Grid 強調表示

@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド コンポーネント | リアルタイ
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。$ProductName$ を使用したデータの表示方法について説明します。
 _keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 # $Platform$ Data Grid 概要

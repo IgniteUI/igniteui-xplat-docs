@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 列オプション | インフラジ�
 _description: インフラジスティックスの $ProductName$ データ グリッドは、各列ヘッダーのドロップダウン UI を介して列のピン固定、移動、フィルター、およびソートの機能をサポートします。$ProductName$ テーブルの列オプションを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, column options, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列オプション, インフラジスティックス
 mentionedTypes: ['Grid', 'HeaderClickAction', 'IsColumnOptionsEnabled', 'IsFilteringEnabled', 'Column']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

@@ -10,14 +10,12 @@ _language: ja
 
 $Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追加できるコンポーネントです。これは標準の HTML チェックボックスとして動作し、ユーザーが基本的なチェック状態とチェックなし状態、または追加の不確定状態を選択できるようにします。また、$Platform$ Checkbox コンポーネントのスタイルと、フォームで使用する機能を完全に制御できます。
 
-<div class="divider"></div>
-
 ## Checkbox の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/sample-1">
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox の例"
+           github-src="inputs/checkbox/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -109,17 +107,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### チェック済み
 
-<!-- Blazor -->
-
-チェックボックスをデフォルトでオンにするかオフにするかを決定するには、コンポーネントの `Checked` プロパティを使用します。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-チェックボックスをオンに切り替えるには、`checked` 属性を使用します。
-
-<!-- end: WebComponents -->
+コンポーネントの `Checked` 属性を使用して、チェックボックスをデフォルトでオンにするかオフにするかを決定できます。
 
 ```html
 <igc-checkbox checked></igc-checkbox>
@@ -131,24 +119,14 @@ defineComponents(IgcCheckboxComponent);
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
            alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/checked">
+           github-src="inputs/checkbox/checking">
 </code-view>
 
 ### 不確定
 
-<!-- Blazor -->
-
 コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を `true` にも `false` にも設定しません。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-`indeterminate` 属性を使用して、チェックボックスの値を `true` にも `false` にも設定しません。
-
-<!-- end: WebComponents -->
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
@@ -167,17 +145,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 必須
 
-<!-- Blazor -->
-
-`Required` プロパティを使用して、チェックボックスを必要に応じてマークします。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-`required` 属性を使用して、チェックボックスを必須としてマークします。
-
-<!-- end: WebComponents -->
+`Required` プロパティを使用して、チェックボックスを必須としてマークできます。
 
 ```html
 <igc-checkbox required></igc-checkbox>
@@ -189,17 +157,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 無効
 
-<!-- Blazor -->
-
-チェックボックスを無効としてマークするには、`Invalid` プロパティを使用します。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-`invalid` 属性を使用して、チェックボックスを無効としてマークします。
-
-<!-- end: WebComponents -->
+`Invalid` 属性を使用して、チェックボックスを無効としてマークすることができます。
 
 ```html
 <igc-checkbox invalid></igc-checkbox>
@@ -211,17 +169,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### オフ
 
-<!-- Blazor -->
-
-チェックボックスを無効にするには、`Disabled` プロパティを使用します。
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-チェックボックスをオフにするには、`disabled` 属性を使用します。
-
-<!-- end: WebComponents -->
+チェックボックスをオフにするには、`Disabled` 属性を使用します。
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
@@ -240,7 +188,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### フォーム
 
-`Form` でチェックボックスを使用する場合は、`name` と `value` の属性を使用します。
+`Form` でチェックボックスを使用する場合は、`name` と `value` の属性を使用できます。
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -272,13 +220,6 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
-
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-styling"
-           alt="$Platform$ Checkbox の例"
-           github-src="inputs/checkbox/styling">
-</code-view>
 
 <!-- WebComponents -->
 

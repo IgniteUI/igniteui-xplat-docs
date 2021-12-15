@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 列タイプ | インフラジステ�
 _description: インフラジスティックスの $ProductName$ データ テーブルとグリッドは、画像、テキスト、数値、日付列、テンプレート列などのコンテンツを表示する 4 つの列タイプをサポートします。$ProductName$ チュートリアルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, column types, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列タイプ, インフラジスティックス
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
