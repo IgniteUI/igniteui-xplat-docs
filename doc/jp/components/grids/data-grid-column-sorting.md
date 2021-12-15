@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 列ソート | インフラジステ�
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントのソート機能を使用して、豊富な API とデータ並び替えによって、ソート可能な列とソート不可の列の組み合わせを設定します。$ProductName$ チュートリアルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, column, sorting, row, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, ソート, 行, インフラジスティックス
 mentionedTypes: ['Grid', 'HeaderClickAction']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

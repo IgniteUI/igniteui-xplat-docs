@@ -3,6 +3,7 @@ title: $Platform$ マップ | データ可視化ツール | データ バイン�
 _description: インフラジスティックスの $Platform$ マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, geo-spatial data, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理空間のデータ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
 # $Platform$ データ バインド

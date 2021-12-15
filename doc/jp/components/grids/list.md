@@ -12,7 +12,7 @@ $ProductName$ List 要素は、項目のグループを番号の付いた形式�
 
 ## $Platform$ List の例
 
-次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。`List` コンポーネントは、`Avatar` と `Button` を使用して、ユーザー エクスペリエンスを向上させ、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
+次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。以下に示す `List` コンポーネントは、`Avatar` 要素と `Button` 要素を使用して、ユーザー エクスペリエンスを強化し、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -135,9 +135,7 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-スロットの `title` と `subtitle` の両方が、`ListItem` にデフォルトの外観を与えます。
-
-結果は次のようになります:
+上記のコードを実装すると、リスト コンポーネントは次のようになります:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -226,9 +224,9 @@ defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent)
 </IgbList>
 ```
 
-`start` スロットは、リスト項目の他のすべてのコンテンツの前に、ある種のメディアを追加するために使用することを目的としています。ターゲット要素 (この場合は igc-avatar) にも、デフォルトの位置と間隔が提供されます。
+`start` スロットは、リスト項目の他のすべてのコンテンツの前に、ある種のメディアを追加するために使用することを目的としています。ターゲット要素 (この場合は `Avatar` コンポーネント) にも、デフォルトの位置と間隔が提供されます。
 
-`end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。igc-buttons を使用します。
+`end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。`Button` コンポーネントを使用します。
 
 また、ユーザーがその `size` プロパティを使用してリストのサイズを選択できるようにします。すべてのサイズ値を表示するために、いくつかのラジオ ボタンを追加します。このようにして、選択されるたびに、リストの size プロパティを変更します。
 
@@ -286,18 +284,18 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
-結果は以下のようになります。
+上記のコードを実装した結果は、次のようになります:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="grids/list/overview">
 </code-view>
 
 ## スタイル設定
 
-公開されている CSS パーツ (`title`、`subtitle`、`end`) を使用して、リストの外観を変更する方法を見てみましょう。
+公開されている CSS パーツ (`title`、`subtitle`、`end`) を使用して、リストの外観を変更できます。
 
 ```css
 igc-list-header {
@@ -323,7 +321,7 @@ igc-list-item::part(end) {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="$Platform$ List Example"
+           alt="$Platform$ List の例"
            github-src="grids/list/styling">
 </code-view>
 

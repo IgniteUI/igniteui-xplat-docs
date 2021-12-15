@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 水平方向スクロール | イン�
 _description: Infragistics のグリッド コンポーネントの水平方向スクロール機能を使用して、列をシームレスにスクロールします。$ProductName$ テーブルのサンプルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

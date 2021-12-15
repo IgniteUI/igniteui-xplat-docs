@@ -10,8 +10,6 @@ _language: ja
 
 $ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
-<div class="divider"></div>
-
 # $Platform$ Icon Button の例
 
 <code-view style="height: 100px"
@@ -51,7 +49,7 @@ defineComponents(IgcIconButtonComponent);
 ```
 
 ```razor
-<IgbIconButton Collection="material" />
+<IgbIconButton IconName="thumb-up" Collection="material" />
 ```
 
 ## 例
@@ -118,7 +116,7 @@ defineComponents(IgcIconButtonComponent);
 ```
 
 ```razor
-<IgbIconButton Mirrored="true" />
+<IgbIconButton IconName="thumb-up" Collection="material" Mirrored="true" />
 ```
 
 ## スタイル設定

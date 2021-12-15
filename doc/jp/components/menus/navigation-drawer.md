@@ -232,8 +232,6 @@ public void OnMenuIconClick()
     if(this.NavDrawerRef != null)
     {
         this.NavDrawerRef.Show();
-        hitMenuIconFirst = true;
-        isNavDrawerOpen = true;
     }
 }
 ```

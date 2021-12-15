@@ -4,6 +4,7 @@ _description: セルおよび行の編集機能をサポートするインフラ
 _language: ja
 _keywords: $Platform$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $Platform$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
+namespace: Infragistics.Controls
 ---
 # $Platform$ Grid 編集
 

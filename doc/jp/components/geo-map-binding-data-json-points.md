@@ -3,6 +3,7 @@ title: $Platform$ マップ | データ可視化ツール | JSON ファイルの
 _description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding, $Platform$ マップ, JSON ファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
 # $Platform$ JSON ファイルを地理的な場所にバインド

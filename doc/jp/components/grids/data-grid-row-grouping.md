@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 行のグループ化 | インフラ�
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

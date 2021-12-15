@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | リモート データ | インフラ
 _description: インフラジスティックスの $Platform$ グリッド コンポーネントの仮想データ ソースを使用してリモート データをバインドします。$ProductName$ テーブル チュートリアルを是非お試しください!
 _keywords: $Platform$ Table, Data Grid, virtual data, $ProductName$, Infragistics, data binding, $Platform$ テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 # $Platform$ グリッド仮想データのバインド

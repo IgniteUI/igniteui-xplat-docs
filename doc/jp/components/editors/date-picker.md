@@ -11,6 +11,7 @@ _language: ja
 
 ## $Platform$ 日付選択の例
 
+このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -2,7 +2,8 @@
 title: $Platform$ ステップ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ステップ チャート
 _keywords: $Platform$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics, $Platform$ チャート, ステップ チャート, ステップ エリア チャート, ステップ折れ線チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "ChartType"]
+mentionedTypes: ["CategoryChart", "CategoryChartType"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ステップ チャート

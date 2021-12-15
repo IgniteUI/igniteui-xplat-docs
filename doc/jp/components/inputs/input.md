@@ -13,7 +13,7 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 
 <div class="divider--half"></div>
 
-<code-view style="height: 100px"
+<code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
            alt="$Platform$ Input の例"
@@ -60,7 +60,7 @@ defineComponents(IgcInputComponent);
 
 `prefix` スロットと `suffix` スロットを使用すると、入力のメイン コンテンツの前後に異なるコンテンツを追加できます。次のサンプルでは、テキスト プレフィックスとアイコン サフィックスを使用して新しい Input フィールドを作成します:
 
-<code-view style="height: 100px"
+<code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
            alt="$Platform$ Input Prefix & Suffix の例"
@@ -82,7 +82,7 @@ defineComponents(IgcInputComponent);
 
 `Size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
-<code-view style="height: 400px"
+<code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
            alt="$Platform$ Input サイズ設定の例"

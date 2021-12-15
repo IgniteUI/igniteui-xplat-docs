@@ -3,6 +3,7 @@ title: $Platform$ リニア ゲージ | データ可視化ツール | インフ�
 _description: インフラジスティックスの $Platform$ リニア ゲージ コントロールを使用して、シンプルで簡潔なビューでデータを可視化します。$ProductName$ リニア ゲージの設定可能な要素について説明します。
 _keywords: linear gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, リニア ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamLinearGauge']
+namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
 # $Platform$ リニア ゲージの概要
@@ -13,7 +14,7 @@ $ProductName$ Linear Gauge コンポーネントは、データをリニア ゲ�
 
 ## $Platform$ リニア ゲージの例
 
-以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
+以下のサンプルは、同じ `XamLinearGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
 <code-view style="height: 155px"
@@ -934,3 +935,19 @@ ModuleManager.register(
     </IgbLinearGraphRange>
 </IgbLinearGauge>
 ```
+
+<div class="divider--half"></div>
+
+## その他のリソース
+
+その他のゲージ タイプの詳細については、以下のトピックを参照してください。
+
+- [ブレット グラフ](bullet-graph.md)
+- [ラジアル ゲージ](radial-gauge.md)
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamLinearGauge`
+- `XamLinearGraphRange`

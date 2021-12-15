@@ -10,8 +10,6 @@ _language: ja
 
 $Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
 
-<div class="divider"></div>
-
 ## $Platform$ Button の例
 
 <code-view style="height: 100px"
@@ -46,6 +44,18 @@ defineComponents(IgcButtonComponent);
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
+<igc-button>Click me</igc-button>
+```
+
+```razor
+<IgbButton />
+```
+
+## Prefix / Suffix
+
+`Button` コンポーネントの `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
+
+```html
 <igc-button type="button" variant="contained">
     <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
 </igc-button>
@@ -57,12 +67,10 @@ defineComponents(IgcButtonComponent);
 </IgbButton>
 ```
 
-`prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
-
 ## タイプ
 
 `Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
-ボタン コンポーネントが実際の **<button>** 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
+ボタン コンポーネントが実際の [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -130,7 +138,7 @@ defineComponents(IgcButtonComponent);
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
+<div class="sample-container loading" style="height: 75px">
     <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
 </iframe></div>
 
@@ -200,7 +208,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
-結果は以下のようになります。
+上記のコードを実装した結果は、次のようになります:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

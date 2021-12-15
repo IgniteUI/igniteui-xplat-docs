@@ -113,7 +113,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### チェック済み
 
-ラジオをオンに切り替えるには、`checked` 属性を使用します。
+ラジオをオンに切り替えるには、`checked` 属性を使用できます。
 
 ```html
 <igc-radio-group>
@@ -142,7 +142,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### 無効
 
-`invalid` 属性を使用して、ラジオを無効としてマークします。
+`invalid` 属性を使用して、ラジオを無効としてマークできます。
 
 ```html
 <igc-radio invalid></igc-radio>
@@ -161,7 +161,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### オフ
 
-ラジオをオフにするには、`disabled` 属性を使用します。
+ラジオをオフにするには、`disabled` 属性を使用できます。
 
 ```html
 <igc-radio-group>
@@ -219,7 +219,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ### フォーム
 
-`Form` で無線を使用する場合は、`name` 属性と `value` 属性を使用してください。
+`Form` で無線を使用する場合は、`name` 属性と `value` 属性を使用できます。
 
 ```html
 <igc-radio-group>
@@ -228,6 +228,15 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
   <igc-radio name="option4" value="mango">Mango</igc-radio>
   <igc-radio name="option3" value="banana">Orange</igc-radio>
 </igc-radio-group>
+```
+
+```razor
+<IgbRadioGroup>
+    <IgbRadio Name="option1" Value="apple">Apple</IgbRadio>
+    <IgbRadio Name="option2" Value="banana">Banana</IgbRadio>
+    <IgbRadio Name="option3" Value="mango">Mango</IgbRadio>
+    <IgbRadio Name="option4" Value="orange">Orange</IgbRadio>
+</IgbRadioGroup>
 ```
 
 ## スタイル設定

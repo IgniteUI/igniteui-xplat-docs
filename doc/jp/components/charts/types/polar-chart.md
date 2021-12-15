@@ -3,6 +3,7 @@ title: $Platform$ 極座標チャート | データ可視化 | インフラジ�
 _description: インフラジスティックスの $Platform$ 極座標チャート
 _keywords: $Platform$ Charts, Polar Chart, Infragistics, $Platform$ チャート, 極座標チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 極座標チャート

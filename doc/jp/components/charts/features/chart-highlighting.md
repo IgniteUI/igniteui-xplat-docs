@@ -3,6 +3,7 @@ title: $Platform$ チャート強調表示 | データ可視化 | インフラ�
 _description: インフラジスティックスの $Platform$ チャート強調表示
 _keywords: $Platform$ Charts, Highlighting, Infragistics, $Platform$ チャート, 強調表示, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

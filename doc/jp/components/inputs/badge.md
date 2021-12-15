@@ -10,8 +10,6 @@ _language: ja
 
 $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
-<div class="divider"></div>
-
 ## $Platform$ Badge の例
 
 <code-view style="height: 60px"
@@ -55,7 +53,7 @@ defineComponents(IgcBadgeComponent);
 <IgbBadge />
 ```
 
-バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定します。
+バッジの周囲に微妙な境界線を表示するには、バッジの `outlined` 属性を設定できます。
 
 ```html
 <igc-badge outlined></igc-badge>

@@ -3,6 +3,7 @@ title: $Platform$ スパークライン | データ可視化ツール | イン�
 _description: インフラジスティックスの $Platform$ スパークライン チャート コントロールを使用して、グリッド セルやスタンドアロンなどのコンパクトなレイアウトで描画します。$ProductName$ スパークライン チャートの設定可能な要素について説明します。
 _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column, スパークライン, インフラジスティックス, エリア, 列
 mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
@@ -18,7 +19,7 @@ $ProductName$ スパークラインは、軽量なチャート コントロー�
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
            github-src="charts/sparkline/display-types"
            alt="$Platform$ スパークラインの例" >
 </code-view>
@@ -68,7 +69,7 @@ $Platform$ スパークライン コンポーネントは、それに応じて  
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
            github-src="charts/sparkline/display-types"
            alt="$Platform$ スパークラインの例" >
 </code-view>

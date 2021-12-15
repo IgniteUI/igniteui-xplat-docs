@@ -3,6 +3,7 @@ title: $Platform$ マップ | データ可視化ツール | CSV データのバ�
 _description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding, $Platform$ マップ, プロット データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
 # $Platform$ CSV ファイルを地理的な場所にバインド

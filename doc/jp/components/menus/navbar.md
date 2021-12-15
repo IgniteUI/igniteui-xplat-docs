@@ -57,7 +57,7 @@ defineComponents(IgcNavbarComponent);
 
 ## コンテンツ
 
-次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` アイコンを追加できます。
+次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` 要素を追加できます。
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -10,12 +10,9 @@ _language: ja
 
 $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
 
-
-<div class="divider"></div>
-
 ## $Platform$ Switch の例
 
-<code-view style="height:200px"
+<code-view style="height:100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch の例"
            github-src="inputs/switches/overview">
@@ -74,7 +71,7 @@ defineComponents(IgcSwitchComponent);
 <IgbSwitch>Label</IgbSwitch>
 ```
 
-スイッチの `label-position` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
+スイッチの `LabelPosition` 属性を設定することにより、スイッチの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
 ```html
 <igc-switch label-position="before">Label</igc-switch>
@@ -96,7 +93,7 @@ defineComponents(IgcSwitchComponent);
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
            alt="$Platform$ Avatar の例"
@@ -105,7 +102,7 @@ defineComponents(IgcSwitchComponent);
 
 ### チェック済み
 
-スイッチをオンに切り替えるには、`checked` 属性を使用します。
+スイッチをオンに切り替えるには、`checked` 属性を使用できます。
 
 ```html
 <igc-switch checked></igc-switch>
@@ -115,7 +112,7 @@ defineComponents(IgcSwitchComponent);
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
            alt="$Platform$ Avatar の例"
@@ -124,7 +121,7 @@ defineComponents(IgcSwitchComponent);
 
 ### 必須
 
-`required` 属性を使用して、スイッチを必須としてマークします。
+`required` 属性を使用して、スイッチを必須としてマークできます。
 
 ```html
 <igc-switch required></igc-switch>
@@ -136,7 +133,7 @@ defineComponents(IgcSwitchComponent);
 
 ### 無効
 
-`invalid` 属性を使用して、スイッチを無効としてマークします。
+`invalid` 属性を使用して、スイッチを無効としてマークできます。
 
 ```html
 <igc-switch invalid></igc-switch>
@@ -148,7 +145,7 @@ defineComponents(IgcSwitchComponent);
 
 ### オフ
 
-スイッチをオフにするには、`disabled` 属性を使用します。
+スイッチをオフにするには、`disabled` 属性を使用できます。
 
 ```html
 <igc-switch disabled></igc-switch>
@@ -158,7 +155,7 @@ defineComponents(IgcSwitchComponent);
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 150px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
            alt="$Platform$ Avatar の例"
@@ -167,14 +164,14 @@ defineComponents(IgcSwitchComponent);
 
 ### フォーム
 
-`Form` でスイッチを使用する場合は、`name` と `value` の属性を使用します。
+`Form` でスイッチを使用する場合は、`name` と `value` の属性を使用できます。
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
 ```
 
 ```razor
-<IgbSwitch Value="enabled" />
+<IgbSwitch Name="wifi" Value="enabled" />
 ```
 
 ## スタイル設定

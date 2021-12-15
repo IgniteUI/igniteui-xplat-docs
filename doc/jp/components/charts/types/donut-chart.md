@@ -3,6 +3,7 @@ title: $Platform$ ドーナツ チャート | データ可視化 | インフラ�
 _description: インフラジスティックスの $Platform$ ドーナツ チャート
 _keywords: $Platform$ Charts, Donut Chart, Infragistics, $Platform$ チャート, ドーナツ チャート, インフラジスティックス
 mentionedTypes: ["XamDoughnutChart", "DoughnutChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ドーナツ チャート

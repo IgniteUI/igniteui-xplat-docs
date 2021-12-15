@@ -3,6 +3,7 @@ title: $Platform$ データ グリッド | 列ピン固定 | インフラジス�
 _description: インフラジスティックスの $ProductName$ グリッド コンポーネントは列のピン固定をサポートし、列の位置を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
 _keywords: $Platform$ Table, Data Grid, column pinning, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列ピン固定, インフラジスティックス
 mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
