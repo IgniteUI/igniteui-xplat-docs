@@ -304,7 +304,7 @@ Follow this section only if you have access to XPlatform source code.
 - in VS terminal, run this command to copy API Mapping files to the **apiMap** folder
 
 ```
-gulp updateApi
+gulp updateApiMapping
 ```
 
 - commit changes made in the **apiMap** folder

@@ -237,7 +237,7 @@ function updateApiFor(platformName) {
     .pipe(gulp.dest("apiMap/" + platformName));
 }
 // updates API mapping files in ./apiMap folder for all platforms
-exports.updateApi = updateApi = gulp.series(
+exports.updateApiMapping = updateApiMapping = gulp.series(
     updateApiAngular,
     updateApiBlazor,
     updateApiReact,
