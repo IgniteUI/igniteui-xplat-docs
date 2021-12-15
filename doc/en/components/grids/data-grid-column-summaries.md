@@ -35,11 +35,11 @@ The $Platform$ data grid supports 4 summary settings that you can configure usin
 
 The $Platform$ data grid supports configuration of the locations that summaries are displayed. You can configure this by using the `GroupSummaryDisplayMode` property. The different options for this property are listed and described below:
 
-- `List`: This will render the group summaries in a flat list in the spanning group header.
-- `Cells`: This will render the group header as cells, and the summary values will be rendered inside the cells, aligned with their corresponding column. The grid will only display a single summary per column using this option.
-- `RowTop`: This will render the group summaries as summary rows at the top of the group.
-- `RowBottom`: This will render the group summaries as summary rows at the bottom of the group.
-- `None`: This will disable group summary rendering.
+- **List**: This will render the group summaries in a flat list in the spanning group header.
+- **Cells**: This will render the group header as cells, and the summary values will be rendered inside the cells, aligned with their corresponding column. The grid will only display a single summary per column using this option.
+- **RowTop**: This will render the group summaries as summary rows at the top of the group.
+- **RowBottom**: This will render the group summaries as summary rows at the bottom of the group.
+- **None**: This will disable group summary rendering.
 
 ## Code Snippets
 
