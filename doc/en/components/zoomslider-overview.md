@@ -3,13 +3,15 @@ title: $Platform$ ZoomSlider | Data Visualization Tools | Navigation | Zooming |
 _description: Use Infragistics' $Platform$ zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with $ProductName$ zoom slider!
 _keywords: zoom slider, $ProductName$, Infragistics, data chart
 mentionedTypes: ['ZoomSlider, XamDataChart']
-namespace: Infragistics.Controls.Charts
+
 ---
 # $Platform$ Zoom Slider Overview
+
 The $Platform$ ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
 
 ## $Platform$ Zoom Slider Example
 
+The following sample demonstrates how to use `ZoomSlider` to navigate content in `XamDataChart`.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -104,3 +106,14 @@ The following code demonstrates how to setup the ZoomSlider.
   </igc-zoom-slider>
 ```
 <div class="divider--half"></div>
+
+## Additional Resources
+
+You can find more information about charts in [Chart Features](charts/chart-features.md) topic.
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `ZoomSlider`
+- `XamDataChart`

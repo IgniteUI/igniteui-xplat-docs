@@ -9,12 +9,11 @@ namespace: Infragistics.Controls.Gauges
 
 The $Platform$ bullet graph component allows for a linear and concise view of measures compared against a scale.
 
-## $Platform$ Bullet Graph Example
-
 The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
-The following sample demonstrates how setting multiple properties on the same bullet graph can transform it to completely different bullet graph.
+## $Platform$ Bullet Graph Example
 
+The following sample demonstrates how setting multiple properties on the same `XamBulletGraph` can transform it to completely different bullet graph.
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -936,3 +935,17 @@ For your convenience, all above code snippets are combined into one code block b
     </IgbLinearGraphRange>
 </IgbBulletGraph>
 ```
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Linear Gauge](Linear-gauge.md)
+- [Radial Gauge](radial-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`

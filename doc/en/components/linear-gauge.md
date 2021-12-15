@@ -13,7 +13,7 @@ The $ProductName$ linear gauge component allows for visualizing data in the form
 
 ## $Platform$ Linear Gauge Example
 
-The following sample demonstrates how setting multiple properties on the same linear gauge can transform it to completely different linear gauge.
+The following sample demonstrates how setting multiple properties on the same `XamLinearGauge` can transform it to completely different linear gauge.
 
 
 <code-view style="height: 155px"
@@ -934,3 +934,18 @@ For your convenience, all above code snippets are combined into one code block b
     </IgbLinearGraphRange>
 </IgbLinearGauge>
 ```
+<div class="divider--half"></div>
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Bullet Graph](bullet-graph.md)
+- [Radial Gauge](radial-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamLinearGauge`
+- `XamLinearGraphRange`

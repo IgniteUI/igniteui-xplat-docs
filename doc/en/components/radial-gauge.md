@@ -13,7 +13,7 @@ The $ProductName$ radial gauge component is a data visualization tool capable of
 
 ## $Platform$ Radial Gauge Example
 
-The following sample demonstrates how setting multiple properties on the same radial gauge can transform it to completely different radial gauge.
+The following sample demonstrates how setting multiple properties on the same `XamRadialGauge` can transform it to completely different radial gauge.
 
 
 <code-view style="height: 375px"
@@ -944,3 +944,17 @@ For your convenience, all above code snippets are combined into one code block b
     </IgbRadialGaugeRange>
 </IgbRadialGauge>
 ```
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Bullet Graph](bullet-graph.md)
+- [Linear Gauge](Linear-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
