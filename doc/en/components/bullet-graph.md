@@ -3,17 +3,17 @@ title: $Platform$ Bullet Graph | Data Visualization Tools | Infragistics
 _description: Infragistics' $Platform$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
 _keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
 mentionedTypes: ['XamBulletGraph']
+namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Bullet Graph Overview
 
 The $Platform$ bullet graph component allows for a linear and concise view of measures compared against a scale.
 
-## $Platform$ Bullet Graph Example
-
 The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
-The following sample demonstrates how setting multiple properties on the same bullet graph can transform it to completely different bullet graph.
+## $Platform$ Bullet Graph Example
 
+The following sample demonstrates how setting multiple properties on the same `XamBulletGraph` can transform it to completely different bullet graph.
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -42,7 +42,7 @@ npm install --save {PackageGauges}
 The `XamBulletGraph` requires the following modules:
 
 ```razor
-BulletGraphModule.Register(IgniteUIBlazor);
+IgbBulletGraphModule.Register(IgniteUIBlazor);
 ```
 
 <!-- Angular, React, WebComponents -->
@@ -154,19 +154,19 @@ The following code walks through creating a bullet graph component, and configur
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
-<LinearGraphRange StartValue="0"
+<IgbLinearGraphRange StartValue="0"
   EndValue="15"
   Brush="#828181" />
-<LinearGraphRange StartValue="15"
+<IgbLinearGraphRange StartValue="15"
   EndValue="30"
   Brush="#AAAAAA" />
-<LinearGraphRange StartValue="30"
+<IgbLinearGraphRange StartValue="30"
   EndValue="55"
   Brush="#D0D0D0" />
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 <div class="divider--half"></div>
@@ -237,7 +237,7 @@ Performance value is the primary measure displayed by the component and it is vi
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
 
@@ -254,7 +254,7 @@ Performance value is the primary measure displayed by the component and it is vi
     TargetValueStrokeThickness="1"
     TargetValueInnerExtent="0.3"
     TargetValueOuterExtent="0.85">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -340,35 +340,35 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="80" Interval="10"
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange
+<IgbLinearGraphRange
   StartValue="0"
   EndValue="40"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange
+</IgbLinearGraphRange>
+<IgbLinearGraphRange
   StartValue="40"
   EndValue="70"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange StartValue="70"
+</IgbLinearGraphRange>
+<IgbLinearGraphRange StartValue="70"
   EndValue="100"
   InnerStartExtent="0.075"
   InnerEndExtent="0.075"
   OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-</BulletGraph>
+</IgbLinearGraphRange>
+</IgbBulletGraph>
 ```
 
 
@@ -442,7 +442,7 @@ The tick marks serve as a visual division of the scale into intervals in order t
   </igc-bullet-graph>
 ```
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"
     MaximumValue="100" TargetValue="90"
 
@@ -458,7 +458,7 @@ The tick marks serve as a visual division of the scale into intervals in order t
     MinorTickEndExtent="0.1"
     MinorTickStartExtent="0.2"
     MinorTickStrokeThickness="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -513,7 +513,7 @@ The labels indicate the measures on the scale.
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   LabelInterval="10"
@@ -522,7 +522,7 @@ The labels indicate the measures on the scale.
   LabelsPostInitial="0"
   FontBrush="DodgerBlue"
   Font="11px Verdana">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -574,7 +574,7 @@ The backing element represents background and border of the bullet graph compone
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   BackingBrush="#BDDCFC"
@@ -582,7 +582,7 @@ The backing element represents background and border of the bullet graph compone
   BackingStrokeThickness="4"
   BackingInnerExtent="0"
   BackingOuterExtent="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 
@@ -637,7 +637,7 @@ The scale is visual element that highlights the full range of values in the gaug
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   IsScaleInverted="false"
@@ -646,7 +646,7 @@ The scale is visual element that highlights the full range of values in the gaug
   ScaleBackgroundThickness="2"
   ScaleStartExtent="0.05"
   ScaleEndExtent="0.95">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 <code-view style="height: 125px"
@@ -872,7 +872,7 @@ For your convenience, all above code snippets are combined into one code block b
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="50" Interval="10"
     MaximumValue="100" TargetValue="90"
     IsScaleInverted="false"
@@ -921,17 +921,31 @@ For your convenience, all above code snippets are combined into one code block b
 
     RangeBrushes="#C62828,#F96232,#FF9800"
     RangeOutlines="#C62828,#F96232,#FF9800">
-    <LinearGraphRange StartValue="20" EndValue="40"
+    <IgbLinearGraphRange StartValue="20" EndValue="40"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="40" EndValue="60"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="40" EndValue="60"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="60" EndValue="90"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="60" EndValue="90"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9 OuterEndExtent="0.9">
-    </LinearGraphRange>
-</BulletGraph>
+    </IgbLinearGraphRange>
+</IgbBulletGraph>
 ```
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Linear Gauge](Linear-gauge.md)
+- [Radial Gauge](radial-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`

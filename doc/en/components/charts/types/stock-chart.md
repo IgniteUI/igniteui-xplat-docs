@@ -2,7 +2,8 @@
 title: $Platform$ Stock/Financial Charts | $ProductName$
 _description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
 _keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
-mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["FinancialChart", "CategoryChartType", "IndicatorTypes", "ZoomSliderType"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Stock Chart
 
@@ -15,6 +16,7 @@ You can create Stock Chart using the `FinancialChart` control by binding your da
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ Stock Chart Example" >
 </code-view>
 
@@ -64,6 +66,7 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ Stock Index Chart" >
 </code-view>
 
@@ -76,6 +79,7 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
+           github-src="charts/financial-chart/stock-index-chart"
            alt="$Platform$ Stock Index Chart" >
 </code-view>
 
@@ -107,6 +111,7 @@ Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point t
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
+           github-src="charts/financial-chart/annotations"
            alt="$Platform$ Chart Annotations" >
 </code-view>
 
@@ -145,6 +150,7 @@ In this example, the stock chart is plotting revenue for United States.
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
+           github-src="charts/financial-chart/panes"
            alt="$Platform$ Chart Panes" >
 </code-view>
 

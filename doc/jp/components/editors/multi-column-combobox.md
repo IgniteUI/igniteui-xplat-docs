@@ -11,6 +11,7 @@ _language: ja
 
 ## $Platform$ 複数列コンボ ボックスの例
 
+このサンプルは、ポップアップ ウィンドウの複数の列にデータを表示する `MultiColumnComboBox` を作成する方法を示しています。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,7 +26,9 @@ Chart コンポーネントをインストールするときに core パッケ�
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
+npm install --save {PackageGrids}
 npm install --save {PackageInputs}
+npm install --save {PackageLayouts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
@@ -34,7 +37,7 @@ npm install --save {PackageInputs}
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
 ```razor
-MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -84,14 +87,14 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
+<IgbMultiColumnComboBox Height="50px" Width="400px" DataSource="CountryNames" />
 
 @code {
     protected List<CountryInfo> CountryNames;
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -129,7 +132,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      TextField="Country"
                      ValueField="@(new string[]{ "ID" })" />
@@ -139,7 +142,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -172,7 +175,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Fields="@(new string[] { "ID", "Country" })" />
 
@@ -181,7 +184,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -212,7 +215,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      Placeholder="Please choose a country" />
 
@@ -221,7 +224,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -256,7 +259,7 @@ constructor() {
 <!-- end:WebComponents -->
 
 ```razor
-<MultiColumnComboBox Height="50px" Width="400px"
+<IgbMultiColumnComboBox Height="50px" Width="400px"
                      DataSource="CountryNames"
                      SortMode="SortMode.SortByMultipleColumnsTriState" />
 
@@ -265,7 +268,7 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        MultiColumnComboBoxModule.Register(IgniteUIBlazor);
+        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }

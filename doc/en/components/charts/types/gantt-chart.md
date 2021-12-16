@@ -3,6 +3,7 @@ title: $Platform$ Gantt Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Gantt Chart
 _keywords: $Platform$ Charts, Gantt Chart, Infragistics
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Gantt Chart
 
@@ -16,6 +17,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-gantt-chart"
+           github-src="charts/data-chart/gantt-chart"
            alt="$Platform$ Gantt Chart Example" >
 </code-view>
 

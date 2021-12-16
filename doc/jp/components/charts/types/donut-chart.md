@@ -3,6 +3,7 @@ title: $Platform$ ドーナツ チャート | データ可視化 | インフラ�
 _description: インフラジスティックスの $Platform$ ドーナツ チャート
 _keywords: $Platform$ Charts, Donut Chart, Infragistics, $Platform$ チャート, ドーナツ チャート, インフラジスティックス
 mentionedTypes: ["XamDoughnutChart", "DoughnutChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ドーナツ チャート
@@ -16,6 +17,7 @@ The $ProductName$ ドーナツ チャートは[円チャート](pie-chart.md)と
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
+           github-src="charts/doughnut-chart/legend"
            alt="$Platform$ ドーナツ チャートの凡例" >
 </code-view>
 
@@ -67,6 +69,7 @@ $Platform$ ドーナツ チャートには、クリック時にスライスを�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
+           github-src="charts/doughnut-chart/selection"
            alt="$Platform$ ドーナツ スライスの選択" >
 </code-view>
 
@@ -79,6 +82,7 @@ $Platform$ ドーナツ チャートに複数の輪を表示して、各輪を�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
+           github-src="charts/doughnut-chart/rings"
            alt="$Platform$ ドーナツ チャート複数のリング" >
 </code-view>
 

@@ -3,6 +3,7 @@ title: $Platform$ 軸グリッド線 | データ可視化 | インフラジス�
 _description: インフラジスティックスの $Platform$ 軸グリッド線
 _keywords: $Platform$ Axis, Gridlines, Infragistics, $Platform$ 軸, グリッド線, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

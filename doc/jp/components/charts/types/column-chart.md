@@ -2,7 +2,8 @@
 title: $Platform$ 縦棒チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 縦棒チャート
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics, $Platform$ チャート, 縦棒チャート, 縦棒グラフ, 垂直棒チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]
+mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 縦棒チャート
@@ -13,11 +14,12 @@ $ProductName$ 縦棒チャート、縦棒グラフ、または垂直棒チャー
 
 $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、それらを縦棒または長方形として描画します。値は Y 軸に表示され、カテゴリは X 軸に表示されます。
 
-次の例に示すように、データをバインドし、`ChartType` をColumn列挙型に設定することで、`CategoryChart` コントロールでこのタイプのチャートを作成できます。
+次の例に示すように、データをバインドし、`ChartType` を **Column** 値に設定することで、`CategoryChart` コントロールでこのタイプのチャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
+           github-src="charts/category-chart/column-chart-multiple-sources"
            alt="$Platform$ 複数ソースの縦棒チャート" >
 </code-view>
 
@@ -53,11 +55,12 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 
 縦棒シリーズは、カテゴリ シリーズのグループに属し、チャートの下から上へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。
 
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source"
+           github-src="charts/category-chart/column-chart-single-source"
            alt="単一シリーズの $Platform$ 縦棒チャート" >
 </code-view>
 
@@ -65,12 +68,13 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 
 ## 複数シリーズの $Platform$ 縦棒チャート
 
-縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Column` に設定します:
+縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="複数シリーズの $Platform$ 縦棒チャート"           github-src="charts/category-chart/column-chart-multiple-sources" >
+           alt="$Platform$ 複数シリーズの $Platform$ 縦棒チャート"
+           github-src="charts/category-chart/column-chart-multiple-sources" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -105,6 +109,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart"
+           github-src="charts/data-chart/waterfall-chart"
            alt="$Platform$ ウォーターフォール チャート" >
 </code-view>
 
@@ -119,6 +124,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
+           github-src="charts/data-chart/stacked-column-chart"
            alt="$Platform$ 積層型縦棒チャート" >
 </code-view>
 
@@ -133,6 +139,7 @@ $Platform$ 縦棒チャートには、外観のスタイル設定と変更のた
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
+           github-src="charts/data-chart/stacked-100-column-chart"
            alt="$Platform$ 積層型 100% 縦棒チャート" >
 </code-view>
 
@@ -149,6 +156,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart"
+           github-src="charts/data-chart/range-column-chart"
            alt="$Platform$ 範囲縦棒チャート" >
 </code-view>
 
@@ -163,6 +171,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
+           github-src="charts/data-chart/radial-column-chart"
            alt="$Platform$ ラジアル縦棒チャート" >
 </code-view>
 
@@ -183,7 +192,7 @@ $ProductName$ 範囲縦棒チャートは、範囲チャートのグループに
 
 チャート タイプ          | コントロール名       | API メンバー
 --------------------|--------------------|------------------------
-縦棒              | `CategoryChart` | `ChartType` = `Column`
+縦棒              | `CategoryChart` | `ChartType` = **Column**
 ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries`
 範囲縦棒        | `XamDataChart`     | `RangeColumnSeries`
 積層型縦棒      | `XamDataChart`     | `StackedColumnSeries`

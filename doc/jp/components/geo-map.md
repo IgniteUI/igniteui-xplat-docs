@@ -11,6 +11,8 @@ $ProductName$ Map コンポーネントを使用すると、ビューモデル�
 
 # $Platform$ マップの例
 
+以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
+
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
@@ -42,8 +44,8 @@ npm install --save {PackageMaps}
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -144,5 +146,33 @@ ModuleManager.register(
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true" />
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
 ```
+
+<div class="divider--half"></div>
+
+## その他のリソース
+
+関連する $Platform$ マップ機能の詳細については、以下のトピックを参照してください。
+
+- [地理マップのナビゲーション](geo-map-navigation.md)
+<!-- - [地理マップ画像](geo-map-display-imagery-types.md) -->
+- [散布図記号シリーズの使用](geo-map-type-scatter-symbol-series.md)
+- [散布図比例シリーズの使用](geo-map-type-scatter-bubble-series.md)
+- [散布等高線シリーズの使用](geo-map-type-scatter-contour-series.md)
+- [散布図密度シリーズの使用](geo-map-type-scatter-density-series.md)
+- [散布エリア シリーズの使用](geo-map-type-scatter-area-series.md)
+- [シェイプ ポリゴン シリーズの使用](geo-map-type-shape-polygon-series.md)
+- [シェイプ ポリライン シリーズの使用](geo-map-type-shape-polyline-series.md)
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamGeographicMap`
+- `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicSymbolSeries`

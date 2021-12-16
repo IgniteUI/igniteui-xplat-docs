@@ -11,6 +11,7 @@ _language: ja
 
 ## $Platform$ 日付選択の例
 
+このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -26,6 +27,7 @@ _language: ja
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
 npm install --save {PackageInputs}
+npm install --save {PackageLayouts}
 </pre>
 <!-- end: React, WebComponents -->
 
@@ -34,7 +36,7 @@ npm install --save {PackageInputs}
 日付選択コンポーネントを使用するには、以下のモジュールを登録する必要があります。
 
 ```razor
-DatePickerModule.Register(IgniteUIBlazor);
+IgbDatePickerModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -67,7 +69,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 `IconColor` | string | カレンダー ボタンの色を変更します。
 `AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
 `DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。
-`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。 例えば、月曜日から日曜日。
+`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。例えば、月曜日から日曜日。
 `FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
 `Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
 `MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。

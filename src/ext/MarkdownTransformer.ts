@@ -82,6 +82,8 @@ function transformCodeRefs(options: any) {
         let memberName = node.value;
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
+        let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
+        let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
         let createLink: boolean = <boolean><any>apiDocRoot;
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
@@ -106,7 +108,8 @@ function transformCodeRefs(options: any) {
         }
 
         if (memberName.indexOf("Ig$") >= 0) {
-            memberName = memberName.replace("Ig$", options.platformPascalPrefix);
+            memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
+            memberName = memberName.replace("Component", options.platformPascalSuffix);
             apiTypeName = memberName;
             if (createLink) {
                 let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
@@ -118,9 +121,10 @@ function transformCodeRefs(options: any) {
             node.value = memberName;
             return;
         }
-        if (memberName.indexOf("ig$-") >= 0) {
-            memberName = memberName.replace("ig$-", options.platformSpinalPrefix);
 
+        if (memberName.indexOf("ig$-") >= 0) {
+            memberName = memberName.replace("ig$-",       options.platformSpinalPrefix);
+            memberName = memberName.replace("-component", options.platformSpinalSuffix);
             node.value = memberName;
             return;
         }
@@ -171,22 +175,43 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             //console.log("couldn't find name");
             //console.log(options);
+
+            // console.log("getApiLink not resolved " + memberName);
+            // if (filePath.indexOf("calendar.md")) {
+            // }
+
             return;
         }
 
         if (createLink) {
+            let link: any = null;
+            // console.log("getApiLink memberName " + memberName);
             if (isTypeName) {
-                let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
-                }
+                link = getApiLink(apiDocRoot, apiTypeName!, null, options);
             } else {
-                let link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
+                link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
+                // console.log("getApiLink other " + link.url);
+            }
+
+            if (link) {
+                // overriding api root for components specified in docsConfig.json
+                if (apiDocOverrideComponents !== undefined) {
+                    //console.log("getApiLink replace apiDocOverride " + link.url);
+                    for (const component of apiDocOverrideComponents) {
+                        let className = new RegExp(component.toLowerCase() + ".*.html", "im")
+                        if (link.url.match(className)) {
+                            // if (link.url.indexOf("calendar") >= 0)
+                            //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
+                            link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                            //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
+                            //if (link.url.indexOf("calendar") >= 0)
+                            //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
+                        }
+                    }
                 }
+                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
+                parent.children.splice(index, 1, link);
+                return;
             }
 
         }
@@ -319,22 +344,28 @@ function transformDocLinks(options: any) {
 
 function transformDocPlaceholders(options: any) {
     function transformText(node: any) {
-        if (!node.value) {
-            return;
+        if (node.value) {
+            node.value = replaceVariables(node.value);
+            //console.log('transformText ' + node.value);
         }
-        let value = node.value;
 
+        if (node.url) {
+            node.url = replaceVariables(node.url);
+            //console.log('transformText ' + node.url);
+        }
+    }
+
+    function replaceVariables(nodeValue: string) {
         let docs = options.docs;
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
                 let curr = docs.replacements[i];
                 let name = curr.name;
                 let r = new RegExp(name, "g");
-                value = value.replace(r, curr.value);
+                nodeValue = nodeValue.replace(r, curr.value);
             }
-
-            node.value = value;
         }
+        return nodeValue;
     }
 
     return function (tree: any) {
@@ -777,6 +808,8 @@ export class MarkdownTransformer {
     private _envTarget: string = "development";
     private _envBrowser: string = "";
 
+    public docsLanguage: string = '';
+
     shouldOmitFencedCode(language: string, platform: APIPlatform[]) {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
@@ -866,6 +899,7 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
+        // filePath: string,
         callback: (err: any, results: string | null) => void): void {
 
         // check for strings that should be API links:
@@ -892,6 +926,8 @@ export class MarkdownTransformer {
             toDelete: deleteMap,
             platformDetector: this._platformDetector,
             docs: this._docs,
+            platformSpinalSuffix: null as string | null,
+            platformPascalSuffix: null as string | null,
             platformPascalPrefix: null as string | null,
             platformSpinalPrefix: null as string | null
         };
@@ -909,20 +945,28 @@ export class MarkdownTransformer {
 
         switch (this._platform) {
             case APIPlatform.Angular:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igx";
                 options.platformSpinalPrefix = "igx-";
                 break;
             case APIPlatform.React:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igr";
                 options.platformSpinalPrefix = "igr-";
                 break;
             case APIPlatform.WebComponents:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igc";
                 options.platformSpinalPrefix = "igc-";
                 break;
             case APIPlatform.Blazor:
-                options.platformPascalPrefix = "";
-                options.platformSpinalPrefix = "";
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igb";
+                options.platformSpinalPrefix = "Igb";
         }
 
         remark().data('settings', {
@@ -933,7 +977,7 @@ export class MarkdownTransformer {
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
         .use(getFrontMatterTypes, options)
-        .use(transformCodeRefs, options)
+        .use(transformCodeRefs, options) // filePath
         .use(transformDocLinks, options)
         .use(transformDocPlaceholders, options)
         .use(omitPlatformSpecificSections, options)
@@ -955,10 +999,121 @@ export class MarkdownTransformer {
         });
     }
 
-    updateApiSection(fileContent: string): string {
+    getGithubURL(codeViewerLine: string): string {
+        var url = "url/to/sample/folder";
+        var lines = codeViewerLine.split('\r\n');
+        var iframe = "";
+        for (const line of lines) {
+            if (line.indexOf("iframe-src=") >= 0) {
+                iframe = line; break;
+            }
+        }
+        if (iframe !== "") {
+            // console.log(">> iframe \n" +  iframe );
+
+            url = iframe.replace('iframe-src=', '');
+            url = url.replace('{environment:dvDemosBaseUrl}/', '');
+            url = url.replace('{environment:demosBaseUrl}/', '');
+            url = url.replace('-chart-', '-chart/');
+            url = url.replace('-gauge-', '-gauge/');
+            url = url.replace('-graph-', '-graph/');
+            url = url.replace('data-grid-', 'data-grid/');
+            url = url.replace('geo-map-', 'geo-map/');
+            url = url.replace('data-picker-', 'data-picker/');
+            url = url.replace('dock-manager-', 'dock-manager/');
+            url = url.replace('multi-column-combobox-', 'multi-column-combobox/');
+            url = url.replace('spreadsheet-', 'spreadsheet/');
+            url = url.replace('excel-library-', 'excel-library/');
+            url = url.replace('zoomslider-', 'zoomslider/');
+            url = url.replace('sparkline-', 'sparkline/');
+            url = url.replace('>', '');
+            url = url.split('"').join('');
+            url = url.trim();
+            // console.log(">> iframe \n" +  iframe + "\n>> url  " + url);
+        }
+        return url;
+    }
+    verifyCodeViewer(fileContent: string, filePath: string): number {
+        // var fileContent = file.contents.toString();
+        // var filePath = file.dirname + "\\" + file.basename
+        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+
+        var md = new MarkdownContent(fileContent, filePath);
+
+        // console.log("sections " + md.sections.length);
+        var errorsCount = 0;
+        for (const section of md.sections) {
+
+            for (const line of section.lines) {
+                if (line.isCodeViewer()) {
+
+                    // console.log(line.index + " s=" + line.isCodeViewerWithStyle());
+                    // console.log(line.index + " u=" + line.isCodeViewerWithURL());
+                    // console.log(line.index + " f=" + line.isCodeViewerWithIFrame());
+                    // console.log(line.index + " a=" + line.isCodeViewerWithAltName());
+                    // console.log(line.index + " g=" + line.isCodeViewerWithGithub());
+                    // console.log("");
+                    // console.log(line);
+                    if (!line.isCodeViewerWithGithub()) {
+                        var url = '"' + this.getGithubURL(line.content) + '"';
+                        console.log("");
+                        console.log('>> Missing github-src=' + url + ' on code-view in: ' +  filePath);
+                        console.log("" + line.content + "");
+                        errorsCount++;
+                    }
+                }
+            }
+        }
+        // errorsCount = 0;
+        return errorsCount;
+    }
+
+    verifyMetadata(fileContent: string, filePath: string): any {
+        var md = new MarkdownContent(fileContent, filePath);
+        var mdValidated = false;
+
+        if (md.metadata.hasContent())
+        {
+            // if (md.isLocalEN()) {
+            //     md.metadata.language = '_language: en';
+            // }
+
+            // auto-correct metadata
+            // if (md.isLocalJP()) {
+            //     md.metadata.language = '_language: jp';
+            // }
+
+            // if (md.isLocalKR()) {
+            //     md.metadata.language = '_language: kr';
+            // }
+
+            //fileContent = md.toString();
+            //console.log("metadata: \n" + meta);
+
+            //var meta = md.metadata.toString();
+            if (!md.metadata.hasTitle())
+                console.log("ERROR: missing metadata 'title:' in " + filePath);
+            else if (!md.metadata.hasDescription())
+                console.log("ERROR: missing metadata '_description:' in " + filePath);
+            else if (!md.metadata.hasKeywords())
+                console.log("ERROR: missing metadata '_keywords:' in " + filePath);
+            else if (!md.metadata.hasLanguage() && filePath.indexOf('\\en\\') < 0)
+                console.log("ERROR: missing metadata '_language:' in " + filePath);
+            else
+                mdValidated = true;
+        } else {
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
+        }
+
+        //console.log("metadata " + filePath);
+
+        return { fileContent: fileContent, isValid: mdValidated};
+    }
+
+    updateApiSection(fileContent: string, filePath: string): string {
         var newApiMembers = [];
 
-        var md = new MarkdownContent(fileContent);
+        var md = new MarkdownContent(fileContent, filePath);
 
         var apiSection = new MarkdownSection('');
         for (const section of md.sections) {
@@ -1115,7 +1270,7 @@ export class MarkdownTransformer {
     }
 
     // generates toc.yml file from toc.json file by filtering out its nodes for specified platform
-    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string {
+    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string[] {
 
         // console.log('generateTOC for "' + platform + '"  platform from');
         console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
@@ -1138,7 +1293,23 @@ export class MarkdownTransformer {
 
         fs.writeFileSync(ymlPath, ymlContent);
 
-        return ymlContent;
+        let topicPaths: string[] = [];
+        this.generateTopics(topicPaths, tocNodes);
+
+        return topicPaths;
+    }
+
+    // generates list of topic paths from TOC nodes that were filter for specific platform
+    generateTopics(paths: string[], tocNodes: TocNode[]) {
+        for (const node of tocNodes) {
+            if (node.href !== undefined && node.href.indexOf(".md") > 0) {
+                paths.push(node.href);
+                // console.log('>> TOC match ' + node.href);
+                if (node.items !== undefined) {
+                    this.generateTopics(paths, node.items);
+                }
+            }
+        }
     }
 
     // generates nodes recursively for toc.yml file
@@ -1170,6 +1341,9 @@ export class MarkdownTransformer {
                         status = "";
                     }
 
+                    // if (node.name && node.name.indexOf("BETA") > 0) {
+                    //     yml += tab + "  beta: true" + "\n";
+                    // } else
                     if (status.toUpperCase() === "NEW") {
                         yml += tab + "  new: true" + "\n";
                     }
@@ -1226,12 +1400,21 @@ export class MarkdownTransformer {
                     node.items = this.filterNodes(node.items, platform);
                 }
                 matchingNodes.push(node);
+                console.log('>> TOC filter in  ' + this.getNodeInfo(node));
             }
             else {
-                console.log('>> TOC filtering out "' + node.name + '" node with exclude="' + node.exclude.join(',') + '"');
+                console.log('>> TOC filter out ' + this.getNodeInfo(node) + ' with exclude="' + node.exclude.join(',') + '"');
             }
         }
         return matchingNodes;
+    }
+
+    getNodeInfo(node: TocNode) {
+        if (node.href !== undefined) {
+            return '"' + './doc/' + this.docsLanguage + '/components/' + node.href + '" node';
+        } else {
+            return '"' + node.name + '" node header';
+        }
     }
 }
 
@@ -1254,27 +1437,53 @@ class MarkdownContent {
     public sections: MarkdownSection[];
     public metadata: MarkdownMetadata;
     public content: string = '';
+    public filePath: string = '';
+    public sectionStrings: string[];
 
-    constructor(content: string) {
+    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0; }
+    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0; }
+    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0; }
+
+    public toString() {
+        var str = '';
+        if (this.metadata.hasContent()) {
+            str = '---\r\n' + this.metadata.toString() + '---\r\n\r\n';
+        }
+        for (const section of this.sections) {
+            str += section.toString() + '\r\n';
+        }
+        return str;
+    }
+
+    constructor(content: string, filePath: string) {
 
         this.sections = [];
+        this.sectionStrings = [];
+        this.filePath = filePath;
         this.metadata = new MarkdownMetadata('');
 
         if (content === undefined) return;
 
         var parts = content.split('---');
-        if (parts === undefined || parts.length < 3) {
-            console.log('Failed on creating MarkdownContent');
-            return;
+        if (parts === undefined) return;
+
+        if (parts.length < 3) { // metadata missing
+            // console.log('Failed on creating MarkdownContent from file without metadata ' + path);
+            // console.log(content);
+            // return;
+
+            this.metadata = new MarkdownMetadata('');
+            this.sectionStrings = parts[0].split('\n## ');
+        } else { // metadata found
+            this.metadata = new MarkdownMetadata(parts[1]);
+            this.sectionStrings = parts[2].split('\n## ');
         }
-        // console.log("parts:" + parts.length);
+        // console.log("parts: " + parts.length);
         // console.log("parts0:" + parts[0]);
         // console.log("parts1:" + parts[1]);
         // console.log("parts2:" + parts[2]);
-        this.metadata = new MarkdownMetadata(parts[1]);
 
-        var sections = parts[2].split('\n## ');
-        for (const s of sections) {
+        for (const s of this.sectionStrings) {
             var section = new MarkdownSection('## ' + s);
             section.index = this.sections.length;
             this.sections.push(section);
@@ -1299,6 +1508,18 @@ class MarkdownSection {
 
     public withParagraphs() {
         return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
+    }
+
+    public toString() {
+        var str = '';
+        for (const line of this.lines) {
+            var content = line.content.trim();
+            if (line.index === 0)
+                str = content + '\n';
+            else
+                str += content + '\r\n\r\n';
+        }
+        return str;
     }
 
     constructor(content: string) {
@@ -1329,6 +1550,26 @@ class MarkdownMetadata  {
     public content: string = '';
     public lines: MarkdownLine[] = [];
     public mentionedTypes: string = '';
+    public title: string = '';
+    public keywords: string = '';
+    public description: string = '';
+    public language: string = '';
+
+    public isEmpty() { return this.content === ""; }
+    public hasContent() { return this.content !== ""; }
+    public hasMentions() { return this.mentionedTypes !== ""; }
+    public hasTitle() { return this.title.indexOf('title:') >= 0; }
+    public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
+    public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
+    public hasDescription() { return this.description.indexOf('_description:') >= 0; }
+    public toString() {
+        var str: string = this.title + '\n';
+        if (this.hasDescription()) str += this.description + '\n';
+        if (this.hasLanguage()) str += this.language + '\n';
+        if (this.hasKeywords()) str += this.keywords + '\n';
+        if (this.hasMentions()) str += this.mentionedTypes + '\n';
+        return str;
+    }
 
     constructor(content: string) {
         if (content === undefined) return;
@@ -1336,12 +1577,17 @@ class MarkdownMetadata  {
         this.content = content;
         var lines = content.split('\n');
         for (const line of lines) {
-            this.lines.push(new MarkdownLine(line));
-            if (line.indexOf('mentionedTypes') === 0 )
-                this.mentionedTypes = line;
+            this.lines.push(new MarkdownLine(line.trim()));
+            if (line.indexOf('title:') >= 0) this.title = line.trim();
+            if (line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
+            if (line.indexOf('_language:') >= 0) this.language = line.trim();
+            if (line.indexOf('_description:') >= 0) this.description = line.trim();
+            if (line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
         }
-
     }
+
+
+
 }
 
 class MarkdownLine {
@@ -1354,6 +1600,11 @@ class MarkdownLine {
             this.content = content;
         }
     }
+    public isCodeViewerWithGithub() { return this.content.indexOf('github-src') > 0; }
+    public isCodeViewerWithAltName() { return this.content.indexOf('alt=') > 0; }
+    public isCodeViewerWithIFrame() { return this.content.indexOf('iframe-src=') > 0; }
+    public isCodeViewerWithURL() { return this.content.indexOf('data-demos-base-url=') > 0; }
+    public isCodeViewerWithStyle() { return this.content.indexOf('style=') > 0; }
 
     public isCodeViewer() { return this.content.indexOf('<code-view') === 0; }
     public isDivider() { return this.content.indexOf('<div class="divider--half"') === 0; }

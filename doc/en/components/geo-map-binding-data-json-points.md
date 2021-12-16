@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Binding JSON Files | Infragis
 _description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View $ProductName$ map demos!
 _keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Binding JSON Files with Geographic Locations
 
@@ -206,14 +207,14 @@ onDataLoaded(jsonData: any[]) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="DataSource"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="LightGray"
         MarkerOutline="Black" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 

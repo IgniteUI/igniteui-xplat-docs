@@ -109,6 +109,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
+           github-src="charts/category-chart/high-volume"
            alt="$Platform$ チャート パフォーマンスの例" >
 </code-view>
 

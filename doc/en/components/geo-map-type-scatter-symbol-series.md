@@ -21,7 +21,7 @@ Use the $Platform$ map component's `GeographicSymbolSeries` to display geo-spati
 <div class="divider--half"></div>
 
 ## Data Requirements
-Similarly to other types of geographic series in the map component, the `GeographicSymbolSeries` has the `DataSource` property which can be bound to an array of objects. In addition, each data item in this object must have two numeric data columns that store a geographic location (longitude and latitude). These data columns are then mapped to the `LatitudeMemberPath` and `LongitudeMemberPath` properties. The `GeographicSymbolSeries` uses values of these mapped data columns to plot symbol elements in the geographic map component.
+Similarly to other types of geographic series in the map component, the `GeographicSymbolSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have two numeric data columns that store a geographic location (longitude and latitude). These data columns are then mapped to the `LatitudeMemberPath` and `LongitudeMemberPath` properties. The `GeographicSymbolSeries` uses values of these mapped data columns to plot symbol elements in the geographic map component.
 
 ## Code Snippet
 The following code shows how to bind the `GeographicSymbolSeries` to locations of cities loaded from a shape file using the `ShapeDataSource`.
@@ -181,20 +181,20 @@ addSeriesWith(locations: any[], brush: string)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="Cities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="Cities"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="Gray" />
-    <GeographicSymbolSeries DataSource="Capitals"
+    <IgbGeographicSymbolSeries DataSource="Capitals"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="rgb(32, 146, 252)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -203,7 +203,7 @@ addSeriesWith(locations: any[], brush: string)
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.Cities = WorldLocations.GetCities();
         this.Capitals = WorldLocations.GetCapitals();

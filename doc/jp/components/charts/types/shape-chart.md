@@ -3,6 +3,7 @@ title: $Platform$ シェープ チャート | データ可視化 | インフラ�
 _description: インフラジスティックスの $Platform$ シェープ チャート
 _keywords: $Platform$ Charts, Shape Chart, Infragistics, $Platform$ チャート, シェープ チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ シェープ チャート
@@ -18,6 +19,7 @@ $Platform$ 散布ポリゴン チャートは、`XamDataChart` コントロー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           github-src="charts/data-chart/type-scatter-polygon-series"
            alt="$Platform$ 散布ポリゴン チャート" >
 </code-view>
 
@@ -32,6 +34,7 @@ $Platform$ 散布ポリライン チャートは、`XamDataChart` コントロ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
+           github-src="charts/data-chart/type-scatter-polyline-series"
            alt="$Platform$ 散布ポリライン チャート" >
 </code-view>
 
@@ -52,7 +55,7 @@ $Platform$ 散布ポリライン チャートは、`XamDataChart` コントロ�
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

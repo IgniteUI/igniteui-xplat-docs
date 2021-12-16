@@ -1,547 +1,121 @@
-{
-"types": [
-{
-    "originalName": "HighDensityScatterSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-high-density-scatter-series-component.ts",
-    "dynamicModuleName": "igx-high-density-scatter-series-dynamic-module.ts",
-    "moduleName": "igx-high-density-scatter-series-module.ts",
- "mappedName": "IgxHighDensityScatterSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isScatter"}            ],
-           "originalName": "IsScatter"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericXAxisComponent", "mappedName": "xAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericYAxisComponent", "mappedName": "yAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useBruteForce"}            ],
-           "originalName": "UseBruteForce"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "progressiveLoad"}            ],
-           "originalName": "ProgressiveLoad"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "heatMinimum"}            ],
-           "originalName": "HeatMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "heatMaximum"}            ],
-           "originalName": "HeatMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "heatMinimumColor"}            ],
-           "originalName": "HeatMinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "heatMaximumColor"}            ],
-           "originalName": "HeatMaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "pointExtent"}            ],
-           "originalName": "PointExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "progressiveStatus"}            ],
-           "originalName": "ProgressiveStatus"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ProgressiveLoadStatusEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-progressive-load-status-event-args.ts",
- "mappedName": "IgxProgressiveLoadStatusEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "currentStatus"}            ],
-           "originalName": "CurrentStatus"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BrushScale",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-brush-scale-component.ts",
-    "dynamicModuleName": "igx-brush-scale-dynamic-module.ts",
-    "moduleName": "igx-brush-scale-module.ts",
- "mappedName": "IgxBrushScaleComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isReady"}            ],
-           "originalName": "IsReady"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isBrushScale"}            ],
-           "originalName": "IsBrushScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "registerSeries"}            ],
-           "originalName": "RegisterSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "unregisterSeries"}            ],
-           "originalName": "UnregisterSeries"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getBrush"}            ],
-           "originalName": "GetBrush"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BubbleSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-bubble-series-component.ts",
-    "dynamicModuleName": "igx-bubble-series-dynamic-module.ts",
-    "moduleName": "igx-bubble-series-module.ts",
- "mappedName": "IgxBubbleSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "radiusMemberPath"}            ],
-           "originalName": "RadiusMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSizeScaleComponent", "mappedName": "radiusScale"}            ],
-           "originalName": "RadiusScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "fillMemberPath"}            ],
-           "originalName": "FillMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxBrushScaleComponent", "mappedName": "fillScale"}            ],
-           "originalName": "FillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "fillScaleUseGlobalValues"}            ],
-           "originalName": "FillScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "markerOutlineUsesFillScale"}            ],
-           "originalName": "MarkerOutlineUsesFillScale"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerOutlineBrightness"}            ],
-           "originalName": "MarkerOutlineBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerBrushBrightness"}            ],
-           "originalName": "MarkerBrushBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "radiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CustomPaletteBrushScale",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-custom-palette-brush-scale-component.ts",
-    "dynamicModuleName": "igx-custom-palette-brush-scale-dynamic-module.ts",
-    "moduleName": "igx-custom-palette-brush-scale-module.ts",
- "mappedName": "IgxCustomPaletteBrushScaleComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BrushSelectionMode", "mappedName": "brushSelectionMode"}            ],
-           "originalName": "BrushSelectionMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isReady"}            ],
-           "originalName": "IsReady"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getBrush1"}            ],
-           "originalName": "GetBrush"
-       }   ],
-    "originalBaseTypeName": "BrushScale",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "SizeScale",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-size-scale-component.ts",
-    "dynamicModuleName": "igx-size-scale-dynamic-module.ts",
-    "moduleName": "igx-size-scale-module.ts",
- "mappedName": "IgxSizeScaleComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "globalMinimum"}            ],
-           "originalName": "GlobalMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "globalMaximum"}            ],
-           "originalName": "GlobalMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLogarithmic"}            ],
-           "originalName": "IsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentGlobalMinimum"}            ],
-           "originalName": "GetCurrentGlobalMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCurrentGlobalMaximum"}            ],
-           "originalName": "GetCurrentGlobalMaximum"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ValueBrushScale",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-value-brush-scale-component.ts",
-    "dynamicModuleName": "igx-value-brush-scale-dynamic-module.ts",
-    "moduleName": "igx-value-brush-scale-module.ts",
- "mappedName": "IgxValueBrushScaleComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isLogarithmic"}            ],
-           "originalName": "IsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "logarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isReady"}            ],
-           "originalName": "IsReady"
-       }   ],
-    "originalBaseTypeName": "BrushScale",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-scatter-base-component.ts",
- "mappedName": "IgxScatterBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isScatter"}            ],
-           "originalName": "IsScatter"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericXAxisComponent", "mappedName": "xAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericYAxisComponent", "mappedName": "yAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CollisionAvoidanceType", "mappedName": "markerCollisionAvoidance"}            ],
-           "originalName": "MarkerCollisionAvoidance"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineZIndex"}            ],
-           "originalName": "TrendLineZIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "itemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "itemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ScatterItemSearchMode", "mappedName": "actualItemSearchMode"}            ],
-           "originalName": "ActualItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterStyleAllowed"}            ],
-           "originalName": "IsCustomScatterStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isCustomScatterMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomScatterMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
-           "originalName": "GetSeriesValueMarkerBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "MarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterLineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-scatter-line-series-component.ts",
-    "dynamicModuleName": "igx-scatter-line-series-dynamic-module.ts",
-    "moduleName": "igx-scatter-line-series-module.ts",
- "mappedName": "IgxScatterLineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-scatter-series-component.ts",
-    "dynamicModuleName": "igx-scatter-series-dynamic-module.ts",
-    "moduleName": "igx-scatter-series-module.ts",
- "mappedName": "IgxScatterSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isMarkerlessDisplayPreferred"}            ],
-           "originalName": "IsMarkerlessDisplayPreferred"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterSplineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-scatter-spline-series-component.ts",
-    "dynamicModuleName": "igx-scatter-spline-series-dynamic-module.ts",
-    "moduleName": "igx-scatter-spline-series-module.ts",
- "mappedName": "IgxScatterSplineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"HighDensityScatterSeries",
+    "names":[{"platform":"Angular","fileName":"igx-high-density-scatter-series-component.ts","dynamicModuleName":"igx-high-density-scatter-series-dynamic-module.ts","moduleName":"igx-high-density-scatter-series-module.ts","mappedName":"IgxHighDensityScatterSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isPixel"}],"originalName":"IsPixel"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isScatter"}],"originalName":"IsScatter"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericXAxisComponent","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericYAxisComponent","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xMemberPath"}],"originalName":"XMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yMemberPath"}],"originalName":"YMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useBruteForce"}],"originalName":"UseBruteForce"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"progressiveLoad"}],"originalName":"ProgressiveLoad"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"heatMinimum"}],"originalName":"HeatMinimum"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"heatMaximum"}],"originalName":"HeatMaximum"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"heatMinimumColor"}],"originalName":"HeatMinimumColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"heatMaximumColor"}],"originalName":"HeatMaximumColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"pointExtent"}],"originalName":"PointExtent"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"progressiveStatus"}],"originalName":"ProgressiveStatus"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ProgressiveLoadStatusEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-progressive-load-status-event-args.ts","mappedName":"IgxProgressiveLoadStatusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"currentStatus"}],"originalName":"CurrentStatus"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BrushScale",
+    "names":[{"platform":"Angular","fileName":"igx-brush-scale-component.ts","dynamicModuleName":"igx-brush-scale-dynamic-module.ts","moduleName":"igx-brush-scale-module.ts","mappedName":"IgxBrushScaleComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"brushes"}],"originalName":"Brushes"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isReady"}],"originalName":"IsReady"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isBrushScale"}],"originalName":"IsBrushScale"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"registerSeries"}],"originalName":"RegisterSeries"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"unregisterSeries"}],"originalName":"UnregisterSeries"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getBrush"}],"originalName":"GetBrush"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySeries"}],"originalName":"NotifySeries"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BubbleSeries",
+    "names":[{"platform":"Angular","fileName":"igx-bubble-series-component.ts","dynamicModuleName":"igx-bubble-series-dynamic-module.ts","moduleName":"igx-bubble-series-module.ts","mappedName":"IgxBubbleSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasOnlyMarkers"}],"originalName":"HasOnlyMarkers"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"radiusMemberPath"}],"originalName":"RadiusMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"IgxSizeScaleComponent","mappedName":"radiusScale"}],"originalName":"RadiusScale"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelMemberPath"}],"originalName":"LabelMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"fillMemberPath"}],"originalName":"FillMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"IgxBrushScaleComponent","mappedName":"fillScale"}],"originalName":"FillScale"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"fillScaleUseGlobalValues"}],"originalName":"FillScaleUseGlobalValues"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"markerOutlineUsesFillScale"}],"originalName":"MarkerOutlineUsesFillScale"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"markerOutlineBrightness"}],"originalName":"MarkerOutlineBrightness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"markerBrushBrightness"}],"originalName":"MarkerBrushBrightness"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"radiusScaleUseGlobalValues"}],"originalName":"RadiusScaleUseGlobalValues"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CustomPaletteBrushScale",
+    "names":[{"platform":"Angular","fileName":"igx-custom-palette-brush-scale-component.ts","dynamicModuleName":"igx-custom-palette-brush-scale-dynamic-module.ts","moduleName":"igx-custom-palette-brush-scale-module.ts","mappedName":"IgxCustomPaletteBrushScaleComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"BrushSelectionMode","mappedName":"brushSelectionMode"}],"originalName":"BrushSelectionMode"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isReady"}],"originalName":"IsReady"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getBrush1"}],"originalName":"GetBrush"}],"originalBaseTypeName":"BrushScale","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SizeScale",
+    "names":[{"platform":"Angular","fileName":"igx-size-scale-component.ts","dynamicModuleName":"igx-size-scale-dynamic-module.ts","moduleName":"igx-size-scale-module.ts","mappedName":"IgxSizeScaleComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"globalMinimum"}],"originalName":"GlobalMinimum"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"globalMaximum"}],"originalName":"GlobalMaximum"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isLogarithmic"}],"originalName":"IsLogarithmic"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"logarithmBase"}],"originalName":"LogarithmBase"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentGlobalMinimum"}],"originalName":"GetCurrentGlobalMinimum"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCurrentGlobalMaximum"}],"originalName":"GetCurrentGlobalMaximum"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ValueBrushScale",
+    "names":[{"platform":"Angular","fileName":"igx-value-brush-scale-component.ts","dynamicModuleName":"igx-value-brush-scale-dynamic-module.ts","moduleName":"igx-value-brush-scale-module.ts","mappedName":"IgxValueBrushScaleComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isLogarithmic"}],"originalName":"IsLogarithmic"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"logarithmBase"}],"originalName":"LogarithmBase"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isReady"}],"originalName":"IsReady"}],"originalBaseTypeName":"BrushScale","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterBase",
+    "names":[{"platform":"Angular","fileName":"igx-scatter-base-component.ts","mappedName":"IgxScatterBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isScatter"}],"originalName":"IsScatter"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericXAxisComponent","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericYAxisComponent","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xMemberPath"}],"originalName":"XMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yMemberPath"}],"originalName":"YMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Angular","mappedType":"CollisionAvoidanceType","mappedName":"markerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineZIndex"}],"originalName":"TrendLineZIndex"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumMarkers"}],"originalName":"MaximumMarkers"},
+    { "names":[{"platform":"Angular","mappedType":"ScatterItemSearchMode","mappedName":"itemSearchMode"}],"originalName":"ItemSearchMode"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"},
+    { "names":[{"platform":"Angular","mappedType":"ScatterItemSearchMode","mappedName":"actualItemSearchMode"}],"originalName":"ActualItemSearchMode"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueMarkerBoundingBox"}],"originalName":"GetSeriesValueMarkerBoundingBox"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterLineSeries",
+    "names":[{"platform":"Angular","fileName":"igx-scatter-line-series-component.ts","dynamicModuleName":"igx-scatter-line-series-dynamic-module.ts","moduleName":"igx-scatter-line-series-module.ts","mappedName":"IgxScatterLineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterSeries",
+    "names":[{"platform":"Angular","fileName":"igx-scatter-series-component.ts","dynamicModuleName":"igx-scatter-series-dynamic-module.ts","moduleName":"igx-scatter-series-module.ts","mappedName":"IgxScatterSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasOnlyMarkers"}],"originalName":"HasOnlyMarkers"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterSplineSeries",
+    "names":[{"platform":"Angular","fileName":"igx-scatter-spline-series-component.ts","dynamicModuleName":"igx-scatter-spline-series-dynamic-module.ts","moduleName":"igx-scatter-spline-series-module.ts","mappedName":"IgxScatterSplineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

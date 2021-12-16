@@ -1,47 +1,11 @@
-{
-"types": [
-{
-    "originalName": "ColumnChooser",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ColumnChooser.cs",
- "mappedName": "ColumnChooser"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "DataGrid", "mappedName": "TargetGrid"}            ],
-           "originalName": "TargetGrid"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Title"}            ],
-           "originalName": "Title"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleColor"}            ],
-           "originalName": "TitleColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FilterPlaceholderText"}            ],
-           "originalName": "FilterPlaceholderText"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "BaseControlTheme", "mappedName": "BaseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ControlDisplayDensity", "mappedName": "Density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "BackgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
-}
-]
-}
+{"types":[
+  { "originalName":"ColumnChooser",
+    "names":[{"platform":"Blazor","fileName":"ColumnChooser.cs","mappedName":"IgbColumnChooser"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbDataGrid","mappedName":"TargetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Title"}],"originalName":"Title"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TitleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FilterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
+    { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackgroundColor"}],"originalName":"BackgroundColor"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

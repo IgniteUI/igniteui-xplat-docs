@@ -3,6 +3,7 @@ title: $Platform$ 折れ線チャートとグラフ | $ProductName$
 _description: $Platform$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: $Platform$ Charts, Line Chart, Line Graph, Infragistics, $Platform$ チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
 mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 折れ線チャート
@@ -18,6 +19,7 @@ $ProductName$ 折れ線チャート (または折れ線グラフ) は、カテ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           github-src="charts/category-chart/line-chart-multiple-sources"
            alt="$Platform$ 複数ソースの折れ線チャート" >
 </code-view>
 

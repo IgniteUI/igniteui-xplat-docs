@@ -3,6 +3,7 @@ title: $Platform$ Radial Gauge Chart | Data Visualization Tools | Infragistics
 _description: Use Infragistics' $Platform$ radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the $ProductName$ radial gauge configurable elements!
 _keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
+namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Radial Gauge Overview
 
@@ -12,7 +13,7 @@ The $ProductName$ radial gauge component is a data visualization tool capable of
 
 ## $Platform$ Radial Gauge Example
 
-The following sample demonstrates how setting multiple properties on the same radial gauge can transform it to completely different radial gauge.
+The following sample demonstrates how setting multiple properties on the same `XamRadialGauge` can transform it to completely different radial gauge.
 
 
 <code-view style="height: 375px"
@@ -37,7 +38,7 @@ npm install --save {PackageGauges}
 <!-- Blazor -->
 Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Getting Started](general-getting-started.md)
-- [Adding Nuget Package](nuget-feed.md)
+- [Adding Nuget Package](general-nuget-feed.md)
 
 Afterwards you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -51,7 +52,7 @@ Afterwards you may start implementing the control by adding the following namesp
 The `XamRadialGauge` requires the following modules:
 
 ```razor
-RadialGaugeModule.Register(IgniteUIBlazor);
+IgbRadialGaugeModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -161,25 +162,25 @@ The following code demonstrates how create a radial gauge containing a needle an
 
 ```razor
 
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
-    <RadialGaugeRange
+    <IgbRadialGaugeRange
           StartValue="0"
           EndValue="30"
           Brush="red">
-    </RadialGaugeRange>
-    <RadialGaugeRange
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange
           StartValue="30"
           EndValue="60"
           Brush="Yellow" >
-    </RadialGaugeRange>
-    <RadialGaugeRange
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange
           StartValue="60"
           EndValue="100"
           Brush="Green">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
 
 <div class="divider--half"></div>
@@ -243,7 +244,7 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
 ```
 
 ```razor
- <RadialGauge Height="100%" Width="100%"
+ <IgbRadialGauge Height="100%" Width="100%"
     BackingShape="RadialGaugeBackingShape.Fitted"
     BackingBrush="#FCFCFC"
     BackingOutline="DodgerBlue"
@@ -259,7 +260,7 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
     MaximumValue="80"
     Value="50"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -321,7 +322,7 @@ The scale is visual element that highlights full range of values in the gauge wh
 ```
 
 ```razor
-<RadialGauge
+<IgbRadialGauge
   ScaleStartAngle="135"
   ScaleEndAngle="45"
   ScaleBrush="DodgerBlue"
@@ -334,7 +335,7 @@ The scale is visual element that highlights full range of values in the gauge wh
   MaximumValue="80"
   Value="50"
   Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 ```
 
 
@@ -383,7 +384,7 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 ```
 
 ```razor
-<RadialGauge
+<IgbRadialGauge
   Height="100%" Width="100%"
   LabelInterval="10"
   LabelInterval="10"
@@ -393,7 +394,7 @@ The radial gauge labels are visual elements displaying numeric values at a speci
   MaximumValue="80"
   Value="50"
   Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -458,7 +459,7 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
 ```
 
 ```razor
- <RadialGauge Height="100%" Width="100%"
+ <IgbRadialGauge Height="100%" Width="100%"
     TickStartExtent="0.5"
     TickEndExtent="0.57"
     TickStrokeThickness="2"
@@ -472,7 +473,7 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
     MaximumValue="80"
     Value="50"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -543,26 +544,26 @@ A range highlights a set of continuous values bound by a specified `MinimumValue
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="50"
       MaximumValue="80" Interval="10"
       RangeBrushes="#A4BD29, #F86232"
       RangeOutlines="#A4BD29, #F86232">
-    <RadialGaugeRange StartValue="10"
+    <IgbRadialGaugeRange StartValue="10"
           EndValue="25"
           InnerStartExtent="0.50"
           InnerEndExtent="0.50"
           OuterStartExtent="0.57"
           OuterEndExtent="0.57">
-    </RadialGaugeRange>
-    <RadialGaugeRange StartValue="25"
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange StartValue="25"
           EndValue="40"
           InnerStartExtent="0.50"
           InnerEndExtent="0.50"
           OuterStartExtent="0.57"
           OuterEndExtent="0.57">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
 
 
@@ -642,7 +643,7 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
     IsNeedleDraggingEnabled="true"
     IsNeedleDraggingConstrained="true"
     NeedleShape="RadialGaugeNeedleShape.NeedleWithBulb"
@@ -659,7 +660,7 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
     MinimumValue="0"
     MaximumValue="80"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 ```
 
 <code-view style="height: 320px"
@@ -874,7 +875,7 @@ For your convenience, all above code snippets are combined into one code block b
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
              MinimumValue="0"
              MaximumValue="80"
              Value="50"
@@ -927,19 +928,33 @@ For your convenience, all above code snippets are combined into one code block b
 
              RangeBrushes="#A4BD29, #F86232"
              RangeOutlines="#A4BD29, #F86232">
-    <RadialGaugeRange StartValue="20"
+    <IgbRadialGaugeRange StartValue="20"
         EndValue="40"
         InnerStartExtent="0.50"
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>
-    <RadialGaugeRange StartValue="40"
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange StartValue="40"
         EndValue="60"
         InnerStartExtent="0.50"
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Bullet Graph](bullet-graph.md)
+- [Linear Gauge](Linear-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`

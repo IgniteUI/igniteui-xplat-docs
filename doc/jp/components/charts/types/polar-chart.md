@@ -3,6 +3,7 @@ title: $Platform$ 極座標チャート | データ可視化 | インフラジ�
 _description: インフラジスティックスの $Platform$ 極座標チャート
 _keywords: $Platform$ Charts, Polar Chart, Infragistics, $Platform$ チャート, 極座標チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 極座標チャート
@@ -20,6 +21,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
+           github-src="charts/data-chart/polar-area-chart"
            alt="$Platform$ 極座標型エリア チャート" >
 </code-view>
 
@@ -34,6 +36,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
+           github-src="charts/data-chart/polar-spline-area-chart"
            alt="$Platform$ 極座標型エリア チャート" >
 </code-view>
 
@@ -48,6 +51,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-scatter-chart"
+           github-src="charts/data-chart/polar-scatter-chart"
            alt="$Platform$ 極座標型マーカー チャート" >
 </code-view>
 
@@ -62,6 +66,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
+           github-src="charts/data-chart/polar-line-chart"
            alt="$Platform$ 極座標型折れ線チャート" >
 </code-view>
 
@@ -76,6 +81,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-chart"
+           github-src="charts/data-chart/polar-spline-chart"
            alt="$Platform$ 極座標スプライン チャート" >
 </code-view>
 
@@ -90,6 +96,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
+           github-src="charts/data-chart/polar-area-chart-styling"
            alt="$Platform$ 極座標チャートのスタイル設定" >
 </code-view>
 
@@ -117,7 +124,7 @@ $ProductName$ 極座標チャートは、デカルト (x、y) 座標系の代わ
 - `PolarSplineSeries`
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
-- `DataSource`
+- `ItemsSource`
 - `AngleAxisName`
 - `AngleMemberPath`
 - `RadiusAxisName`

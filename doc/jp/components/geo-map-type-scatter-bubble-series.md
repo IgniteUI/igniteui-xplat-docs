@@ -24,13 +24,13 @@ _language: ja
 上記のデモは、`GeographicProportionalSymbolSeries` シリーズと、シリーズのデータ​​バインディングオプションを指定する方法を示しています。予定表連動マーカー選択は、マーカー競合回避ロジックと合わせて構成され、マーカー アウトラインと塗りつぶしの色も指定されます。
 
 ## 構成の概要
- マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
+ マップコントロールの他のタイプの散布シリーズと同様に、`GeographicProportionalSymbolSeries` シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。また、項目ソースの各項目は、地理経度および緯度を表す 2 つのデータ列があります。`LongitudeMemberPath` と `LatitudeMemberPath` プロパティを使用してこのデータ列をマップします。`RadiusScale` と `RadiusMemberPath` は、バブルの半径を設定します。
 
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
 プロパティ|タイプ|概要
 ---|---|---
-`DataSource`|any|項目のソースを取得または設定します
+`ItemsSource`|any|項目のソースを取得または設定します
 `LongitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の経度の値の場所を特定します。
 `LatitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の緯度値の場所を決定します。
 `RadiusMemberPath`|string|シリーズの半径値を取得するために使用するパスを設定します。
@@ -146,37 +146,37 @@ export class MapTypeScatterBubbleSeriesComponent implements AfterViewInit {
     }
 
     public ngAfterViewInit(): void {
-		const sds = new IgxShapeDataSource();
-		sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
-		sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
-		sds.dataBind();
-		sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
-	}
+    const sds = new IgxShapeDataSource();
+    sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
+    sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
+    sds.dataBind();
+    sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
+}
 
     public onDataLoaded(sds: IgxShapeDataSource, e: any) {
-		const shapeRecords = sds.getPointData();
-		console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
+    const shapeRecords = sds.getPointData();
+    console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
 
-		const contourPoints: any[] = [];
-		for (const record of shapeRecords) {
-			const temp = record.fieldValues.Contour;
-			// using only major contours (every 10th degrees Celsius)
-			if (temp % 10 === 0 && temp >= 0) {
-				for (const shapes of record.points) {
-					 for (let i = 0; i < shapes.length; i++) {
-						if (i % 5 === 0) {
-							const p = shapes[i];
-							const item = { lon: p.x, lat: p.y, value: temp};
-							contourPoints.push(item);
-						}
-					 }
-				}
-			}
-		}
+    const contourPoints: any[] = [];
+    for (const record of shapeRecords) {
+        const temp = record.fieldValues.Contour;
+        // using only major contours (every 10th degrees Celsius)
+        if (temp % 10 === 0 && temp >= 0) {
+            for (const shapes of record.points) {
+                 for (let i = 0; i < shapes.length; i++) {
+                    if (i % 5 === 0) {
+                        const p = shapes[i];
+                        const item = { lon: p.x, lat: p.y, value: temp};
+                        contourPoints.push(item);
+                    }
+                 }
+            }
+        }
+    }
 
-		console.log("loaded contour points: " + contourPoints.length);
-		this.addSeriesWith(WorldLocations.getAll());
-	}
+    console.log("loaded contour points: " + contourPoints.length);
+    this.addSeriesWith(WorldLocations.getAll());
+}
 
     public addSeriesWith(locations: any[]) {
         const sizeScale = new IgxSizeScaleComponent();
@@ -265,8 +265,8 @@ addSeriesWith(locations: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicProportionalSymbolSeries DataSource="WorldCities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
         MarkerType="MarkerType.Circle"
         RadiusScale="SeriesSizeScale"
         FillScale="ColorScale"
@@ -275,7 +275,7 @@ addSeriesWith(locations: any[])
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerOutline="rgba(0,0,0,0.3)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -285,7 +285,7 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.WorldCities = WorldLocations.GetAll();
 

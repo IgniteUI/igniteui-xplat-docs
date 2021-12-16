@@ -3,6 +3,7 @@ title: $Platform$ マップ | データ可視化ツール | JSON ファイルの
 _description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding, $Platform$ マップ, JSON ファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
 # $Platform$ JSON ファイルを地理的な場所にバインド
@@ -207,14 +208,14 @@ onDataLoaded(jsonData: any[]) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="DataSource"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="LightGray"
         MarkerOutline="Black" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -242,3 +243,4 @@ onDataLoaded(jsonData: any[]) {
     }
 }
 ```
+

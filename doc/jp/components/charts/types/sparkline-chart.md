@@ -3,6 +3,7 @@ title: $Platform$ スパークライン | データ可視化ツール | イン�
 _description: インフラジスティックスの $Platform$ スパークライン チャート コントロールを使用して、グリッド セルやスタンドアロンなどのコンパクトなレイアウトで描画します。$ProductName$ スパークライン チャートの設定可能な要素について説明します。
 _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column, スパークライン, インフラジスティックス, エリア, 列
 mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
@@ -19,8 +20,8 @@ $ProductName$ スパークラインは、軽量なチャート コントロー�
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           alt="$Platform$ スパークラインの例"
-           github-src="charts/sparkline/display-types">
+           github-src="charts/sparkline/display-types"
+           alt="$Platform$ スパークラインの例" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -61,14 +62,16 @@ $Platform$ スパークライン コンポーネントには、最高、最低�
 
 $Platform$ スパークライン コンポーネントは、それに応じて  `DisplayType` プロパティを設定することにより、以下のスパークライン タイプをサポートしています。
 
-- `Line`:  スパークラインの折れ線チャート タイプを数値データで表示し、データ ポイントを線分で接続します。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
-- `Area`: Area: スパークラインのエリア チャート タイプを数値データで表示します。これは折れ線タイプに似ており、各線が描画された後に領域を閉じる追加の手順があります。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
+- `Line`: スパークラインの折れ線チャート タイプを数値データで表示し、データ ポイントを線分で接続します。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
+- `Area`: スパークラインのエリア チャート タイプを数値データで表示します。これは折れ線タイプに似ており、各線が描画された後に領域を閉じる追加の手順があります。スパークラインでデータを視覚化するには、少なくとも 2 つのデータ ポイントを指定する必要があります。
 - `Column`: スパークラインの縦棒チャート タイプを数値データで表示します。縦棒と表現される場合もあります。このタイプは単一データ ポイントを描画できますが、Sparkline に最小の値範囲プロパティ (minimum) を指定する必要があるので、供給される単一データ ポイントは表示可能です。そうでなければ、値は最小値として取り扱われ、表示されません。
 - `WinLoss`: このタイプは、外観は柱状チャートに似ています。各列の値はデータセットの正の最大値 (正の値の場合) または負の最小値 (負の値の場合) に等しくなります。ウィンまたはロス シナリオを示すのが目的です。Win/Loss チャートを正しく表示するには、データセットには正の値と負の値がなければなりません。WinLoss スパークラインが、数値のコレクションにバインドできる Line タイプなどの他のタイプと同じデータにバインドされている場合、$Platform$ スパークライン コンポーネントはそのコレクションから最大値と最小値の 2 つの値を選択し、それらの値に基づいてスパークラインをレンダリングします。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
+           github-src="charts/sparkline/display-types"
+           alt="$Platform$ スパークラインの例" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -90,7 +93,8 @@ $Platform$ スパークライン コンポーネントを使用すると、マ�
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"
+           github-src="charts/sparkline/markers" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -111,7 +115,8 @@ $Platform$ スパークラインの通常の範囲機能は、データが視覚
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"
+           github-src="charts/sparkline/normal-range" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -128,7 +133,8 @@ $Platform$ スパークラインは、実際のスパークライン レイヤ�
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"
+           github-src="charts/sparkline/trendlines" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -141,7 +147,8 @@ $Platform$ スパークラインは、不明な値を検出し、指定された
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"
+           github-src="charts/sparkline/unknown-values"  >
 </code-view>
 
 <div class="divider--half"></div>
@@ -153,7 +160,8 @@ $Platform$ スパークラインは、データ グリッドのテンプレー�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"  >
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
+           github-src="charts/sparkline/grid" >
 </code-view>
 
 ## その他のリソース

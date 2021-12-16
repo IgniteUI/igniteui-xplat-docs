@@ -1,80 +1,18 @@
-{
-"extraFiles": [
-"igx-data-grid-toolbar-module.ts"
-],
-"types": [
-{
-    "originalName": "DataGridToolbar",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-data-grid-toolbar-component.ts",
- "mappedName": "IgxDataGridToolbarComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxDataGridComponent", "mappedName": "targetGrid"}            ],
-           "originalName": "TargetGrid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "toolbarTitle"}            ],
-           "originalName": "ToolbarTitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "toolbarTitleColor"}            ],
-           "originalName": "ToolbarTitleColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "dialogBackgroundColor"}            ],
-           "originalName": "DialogBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "columnChooser"}            ],
-           "originalName": "ColumnChooser"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "columnChooserText"}            ],
-           "originalName": "ColumnChooserText"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "columnChooserTitle"}            ],
-           "originalName": "ColumnChooserTitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "columnPinning"}            ],
-           "originalName": "ColumnPinning"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "columnPinningText"}            ],
-           "originalName": "ColumnPinningText"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "columnPinningTitle"}            ],
-           "originalName": "ColumnPinningTitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
-           "originalName": "BaseTheme"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
-}
-]
-}
+{"extraFiles":["igx-data-grid-toolbar-module.ts"],
+  "types":[
+  { "originalName":"DataGridToolbar",
+    "names":[{"platform":"Angular","fileName":"igx-data-grid-toolbar-component.ts","mappedName":"IgxDataGridToolbarComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"toolbarTitle"}],"originalName":"ToolbarTitle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"toolbarTitleColor"}],"originalName":"ToolbarTitleColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"dialogBackgroundColor"}],"originalName":"DialogBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"columnChooser"}],"originalName":"ColumnChooser"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnChooserText"}],"originalName":"ColumnChooserText"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnChooserTitle"}],"originalName":"ColumnChooserTitle"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"columnPinning"}],"originalName":"ColumnPinning"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnPinningText"}],"originalName":"ColumnPinningText"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnPinningTitle"}],"originalName":"ColumnPinningTitle"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

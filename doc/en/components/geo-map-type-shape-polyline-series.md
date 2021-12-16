@@ -23,7 +23,7 @@ Use the $Platform$ map component's `GeographicPolylineSeries` to display geo-spa
 The `GeographicPolylineSeries` works a lot like the `GeographicShapeSeries` except that geo-spatial data is rendered with polylines instead of polygons.
 
 ## Data Requirements
-Similarly to other types of geographic series in the control, the `GeographicPolylineSeries` has the `DataSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the ShapeMemberPath property. The `GeographicPolylineSeries` uses points of this mapped data column to plot polygons in the control.
+Similarly to other types of geographic series in the control, the `GeographicPolylineSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the ShapeMemberPath property. The `GeographicPolylineSeries` uses points of this mapped data column to plot polygons in the control.
 
 ## Code Snippet
 The following code shows how to bind the `GeographicPolylineSeries` to locations of cities loaded from a shape file using the ``ShapeDataSource``.
@@ -283,19 +283,19 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.dbf"

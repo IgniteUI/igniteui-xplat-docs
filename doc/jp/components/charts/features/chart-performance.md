@@ -3,6 +3,7 @@ title: $Platform$ チャート パフォーマンス | データ可視化 | イ�
 _description: インフラジスティックスの $Platform$ チャート パフォーマンス
 _keywords: $Platform$ Charts, Performance, Infragistics, $Platform$ チャート, パフォーマンス, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
@@ -21,6 +22,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
+           github-src="charts/category-chart/high-frequency"
            alt="高頻度 $Platform$ チャート" >
 </code-view>
 
@@ -33,6 +35,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
+           github-src="charts/category-chart/high-volume"
            alt="大量のデータの $Platform$ チャート" >
 </code-view>
 
@@ -52,7 +55,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 
 ### データ構造
 
-$Platform$ チャートは、データ ポイントの配列の配列を `DataSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
+$Platform$ チャートは、データ ポイントの配列の配列を `ItemsSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();
@@ -251,11 +254,11 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、`FinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
 
 ```razor
-<FinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
+<IgbFinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
 
-<DataChart >
-    <CategoryXAxis Label="Time" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Label="Time" />
+</IgbDataChart>
 ```
 
 ```html
@@ -291,14 +294,14 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸の主間隔を設定する方法を示しています。
 
 ```razor
-<CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
+<IgbCategoryChart  XAxisInterval="5" YAxisInterval="50"/>
 
-<FinancialChart XAxisInterval="5" YAxisInterval="50"/>
+<IgbFinancialChart XAxisInterval="5" YAxisInterval="50"/>
 
-<DataChart >
-    <CategoryXAxis Name="xAxis" Interval="5" />
-    <NumericYAxis  Name="yAxis" Interval="50" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Name="xAxis" Interval="5" />
+    <IgbNumericYAxis  Name="yAxis" Interval="50" />
+</IgbDataChart>
 ```
 
 ```html
@@ -345,20 +348,20 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸ラベルを非表示にする方法を示しています。
 
 ```razor
-<CategoryChart
+<IgbCategoryChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</CategoryChart>
+</IgbCategoryChart>
 
-<FinancialChart
+<IgbFinancialChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</FinancialChart>
+</IgbFinancialChart>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
-    <NumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
+    <IgbNumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
+</IgbDataChart>
 ```
 
 ```html
@@ -405,13 +408,13 @@ this.LineSeries.Resolution = 10;
 このコード スニペットは、$Platform$ チャートで軸のタイトルを設定する方法を示しています。
 
 ```razor
-<CategoryChart  YAxisTitle="In millions of Dollars"/>
+<IgbCategoryChart  YAxisTitle="In millions of Dollars"/>
 
-<FinancialChart YAxisTitle="In millions of Dollars"/>
+<IgbFinancialChart YAxisTitle="In millions of Dollars"/>
 
-<DataChart >
-    <NumericYAxis Title="In millions of Dollars" />
-</DataChart>
+<IgbDataChart >
+    <IgbNumericYAxis Title="In millions of Dollars" />
+</IgbDataChart>
 ```
 
 ```html
@@ -451,14 +454,14 @@ this.LineSeries.Resolution = 10;
 次のコード スニペットは、$Platform$ チャートの y 軸のラベルに固定されたラベル範囲を設定する方法を示します。
 
 ```razor
-<CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbCategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<FinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbFinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelExtent="50" />
-    <NumericYAxis  Name="yAxis" LabelExtent="50" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelExtent="50" />
+    <IgbNumericYAxis  Name="yAxis" LabelExtent="50" />
+</IgbDataChart>
 ```
 
 ```html

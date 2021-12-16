@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Binding CSV Data | Infragisti
 _description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
 _keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Binding CSV Files with Geographic Locations
 
@@ -246,8 +247,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         HeatMaximumColor="Red"
@@ -256,14 +257,14 @@ onDataLoaded(csvData: string) {
         HeatMaximum="5"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
     private List<WorldPlaceCsv> DataSource;
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/UsaCitiesPopulation.csv";
         string csv = await Http.GetStringAsync(url);

@@ -11,11 +11,11 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Adding Nuget Feed",
-    "href": "nuget-feed.md",
+    "href": "general-nuget-feed.md",
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
     "status": ""
@@ -37,224 +37,232 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor"],
-    "name": "Dock Manager",
-    "href": "dock-manager.md",
+    "exclude": ["Angular", "React"],
+    "name": "Avatar {ReleaseStatus_WebsInputs}",
+    "href": "layouts/avatar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Card {ReleaseStatus_WebsInputs}",
+    "href": "layouts/card.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Dock Manager {ReleaseStatus_DockManager}",
+    "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
+        "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
+        "exclude": ["Angular", "Blazor"],
         "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
+        "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
       },
       {
         "exclude": ["Angular", "Blazor", "React"],
         "name": "Desktop Integration",
-        "href": "dock-manager-electron.md",
+        "href": "layouts/dock-manager-electron.md",
         "status": "NEW"
       }
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Dock Manager (Coming Soon)",
-    "href": "dock-manager.md",
-    "status": "",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Editors",
+    "exclude": ["Angular", "React"],
+    "name": "Menus",
     "header": true
   },
   {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
+    "exclude": ["Angular", "React"],
+    "name": "Navbar {ReleaseStatus_WebsMenus}",
+    "href": "menus/navbar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Grids",
+    "name": "Grids & Lists",
     "header": true,
-    "href": "grids.md"
+    "href": "grids/grids.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "List {ReleaseStatus_WebsList}",
+    "href": "grids/list.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
     "name": "Table / Grid",
-    "href": "data-grid.md",
+    "href": "grids/data-grid.md",
     "status": "UPDATED",
     "items": [
       {
         "name": "Accessibility Compliance",
-        "href": "data-grid-accessibility.md",
+        "href": "grids/data-grid-accessibility.md",
         "status": ""
       },
       {
         "name": "Binding Live Data",
-        "href": "data-grid-live-data.md",
+        "href": "grids/data-grid-live-data.md",
         "status": ""
       },
       {
         "name": "Binding Local Data",
-        "href": "data-grid-local-data.md",
+        "href": "grids/data-grid-local-data.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Comparison Data",
-        "href": "data-grid-type-comparison-table.md",
+        "href": "grids/data-grid-type-comparison-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Heatmap Data",
-        "href": "data-grid-type-heatmap-table.md",
+        "href": "grids/data-grid-type-heatmap-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Matrix Data",
-        "href": "data-grid-type-matrix-table.md",
+        "href": "grids/data-grid-type-matrix-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Periodic Data",
-        "href": "data-grid-type-periodic-table.md",
+        "href": "grids/data-grid-type-periodic-table.md",
         "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "Binding Virtual Data",
-        "href": "data-grid-remote-data.md",
+        "href": "grids/data-grid-remote-data.md",
         "status": ""
       },
       {
         "name": "Cell Activation",
-        "href": "data-grid-cell-activation.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-cell-activation.md",
+        "status": ""
       },
       {
         "name": "Grid Editing",
-        "href": "data-grid-cell-editing.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-cell-editing.md",
+        "status": ""
+      },
+      {
+        "name": "Cell Merging",
+        "href": "grids/data-grid-cell-merging.md",
+        "status": "NEW"
       },
       {
         "name": "Cell Selection",
-        "href": "data-grid-cell-selection.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-cell-selection.md",
+        "status": ""
       },
       {
         "name": "Column Animations",
-        "href": "data-grid-column-animation.md",
+        "href": "grids/data-grid-column-animation.md",
         "status": ""
       },
       {
         "name": "Column Filtering",
-        "href": "data-grid-column-filtering.md",
-        "status": ""
+        "href": "grids/data-grid-column-filtering.md",
+        "status": "NEW"
       },
       {
         "name": "Column Moving",
-        "href": "data-grid-column-moving.md",
+        "href": "grids/data-grid-column-moving.md",
         "status": ""
       },
       {
         "name": "Column Chooser",
-        "href": "data-grid-column-chooser.md",
+        "href": "grids/data-grid-column-chooser.md",
         "status": ""
       },
       {
         "name": "Column Options",
-        "href": "data-grid-column-options.md",
+        "href": "grids/data-grid-column-options.md",
         "status": ""
       },
       {
         "name": "Column Pinning",
-        "href": "data-grid-column-pinning.md",
+        "href": "grids/data-grid-column-pinning.md",
         "status": ""
       },
       {
         "name": "Column Resizing",
-        "href": "data-grid-column-resizing.md",
+        "href": "grids/data-grid-column-resizing.md",
         "status": ""
       },
       {
         "name": "Column Sorting",
-        "href": "data-grid-column-sorting.md",
+        "href": "grids/data-grid-column-sorting.md",
         "status": ""
       },
       {
         "name": "Column Sparkline",
-        "href": "data-grid-type-sparkline-table.md",
+        "href": "grids/data-grid-type-sparkline-table.md",
         "status": ""
       },
       {
         "name": "Column Summaries",
-        "href": "data-grid-column-summaries.md",
+        "href": "grids/data-grid-column-summaries.md",
         "status": ""
       },
       {
         "name": "Column Types",
-        "href": "data-grid-column-types.md",
+        "href": "grids/data-grid-column-types.md",
         "status": ""
       },
       {
         "name": "High Performance",
-        "href": "data-grid-performance.md",
+        "href": "grids/data-grid-performance.md",
         "status": ""
       },
       {
         "name": "Horizontal Scrolling",
-        "href": "data-grid-horizontal-scrolling.md",
+        "href": "grids/data-grid-horizontal-scrolling.md",
         "status": ""
+      },
+      {
+        "name": "Load & Save Grid Layout",
+        "href": "grids/data-grid-load-save-layout.md",
+        "status": "NEW"
       },
       {
         "name": "Row Grouping",
-        "href": "data-grid-row-grouping.md",
-        "status": ""
+        "href": "grids/data-grid-row-grouping.md",
+        "status": "New"
       },
       {
         "name": "Row Highlighting",
-        "href": "data-grid-row-highlighting.md",
+        "href": "grids/data-grid-row-highlighting.md",
         "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
         "name": "Row Paging",
-        "href": "data-grid-row-paging.md",
+        "href": "grids/data-grid-row-paging.md",
         "status": ""
       },
       {
         "name": "Row Pinning",
-        "href": "data-grid-row-pinning.md",
+        "href": "grids/data-grid-row-pinning.md",
         "status": ""
       }
     ]
@@ -490,7 +498,7 @@
         {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
-          "status": "UPDATED"
+          "status": ""
         },
         {
           "name": "Chart Markers",
@@ -526,12 +534,6 @@
         {
           "name": "Chart Trendlines",
           "href": "charts/features/chart-trendlines.md",
-          "status": ""
-        },
-        {
-          "exclude": ["Blazor"],
-          "name": "Zoom Slider",
-          "href": "zoomslider-overview.md",
           "status": ""
         }
       ]
@@ -1111,6 +1113,11 @@
         "status": ""
       },
       {
+        "name": "Series Overview",
+        "href": "geo-map-type-series.md",
+        "status": ""
+      },
+      {
         "name": "Scatter Area Series",
         "href": "geo-map-type-scatter-area-series.md",
         "status": ""
@@ -1160,6 +1167,11 @@
         "exclude": ["Blazor"],
         "name": "Shape Styling Utility",
         "href": "geo-map-resources-shape-styling-utility.md",
+        "status": ""
+      },
+      {
+        "name": "Esri Utility",
+        "href": "geo-map-resources-esri.md",
         "status": ""
       },
       {
@@ -1246,14 +1258,101 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "Data Entry & Display",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Badge {ReleaseStatus_WebsInputs}",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Button {ReleaseStatus_WebsInputs}",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Checkbox {ReleaseStatus_WebsInputs}",
+    "href": "inputs/checkbox.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Form {ReleaseStatus_WebsInputs}",
+    "href": "inputs/form.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Icon {ReleaseStatus_WebsInputs}",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Icon Button {ReleaseStatus_WebsInputs}",
+    "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Input {ReleaseStatus_WebsInputs}",
+    "href": "inputs/input.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
+    "href": "inputs/radio.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Switch {ReleaseStatus_WebsInputs}",
+    "href": "inputs/switch.md",
+    "status": "NEW"
+  },
+  {
     "name": "Interactions",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Ripple {ReleaseStatus_WebsInputs}",
+    "href": "inputs/ripple.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Blazor"],
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Scheduling",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Calendar {ReleaseStatus_WebCalendar}",
+    "href": "scheduling/calendar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   }
 ]

@@ -26,7 +26,7 @@ $Platform$ Spreadsheet (Excel ビューア) コンポーネントは軽量で機
 
 Excel スプレッドシートと同様に、フィルタリング機能、ソート、セルの移動、セルの色に関するカスタマイズ、キーボード ショートカットを適用したり、数式を計算する機能を追加したりできます。
 
-Ignite UI for React スプレッドシートを使用する理由 
+## Spreadsheet の使用
 
 * パフォーマンス 
 
@@ -67,8 +67,8 @@ npm install --save {PackageSpreadsheet}
 `Spreadsheet` を作成するには、以下のモジュールが必要です。
 
 ```razor
-ExcelModule.Register(IgniteUIBlazor);
-SpreadsheetModule.Register(IgniteUIBlazor);
+IgbExcelModule.Register(IgniteUIBlazor);
+IgbSpreadsheetModule.Register(IgniteUIBlazor);
 ```
 
 ```ts

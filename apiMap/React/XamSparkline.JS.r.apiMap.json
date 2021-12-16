@@ -1,338 +1,70 @@
-{
-"extraFiles": [
-"SparklineStylingDefaults.ts",
-"igr-sparkline-core-module.ts",
-"igr-sparkline-module.ts"
-],
-"types": [
-{
-    "originalName": "SparklineDisplayType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "SparklineDisplayType.ts",
- "mappedName": "SparklineDisplayType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SparklineDisplayType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SparklineDisplayType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SparklineDisplayType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SparklineDisplayType", "mappedName": "WinLoss"}            ],
-           "originalName": "WinLoss"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XamSparkline",
-   "names": [
-        { "platform": "React",     "fileName": "igr-sparkline.ts",
- "mappedName": "IgrSparkline"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "brush"}            ],
-           "originalName": "Brush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "negativeBrush"}            ],
-           "originalName": "NegativeBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "markerBrush"}            ],
-           "originalName": "MarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "negativeMarkerBrush"}            ],
-           "originalName": "NegativeMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "firstMarkerBrush"}            ],
-           "originalName": "FirstMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lastMarkerBrush"}            ],
-           "originalName": "LastMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "highMarkerBrush"}            ],
-           "originalName": "HighMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowMarkerBrush"}            ],
-           "originalName": "LowMarkerBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "horizontalAxisBrush"}            ],
-           "originalName": "HorizontalAxisBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "verticalAxisBrush"}            ],
-           "originalName": "VerticalAxisBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "normalRangeFill"}            ],
-           "originalName": "NormalRangeFill"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "horizontalAxisVisibility"}            ],
-           "originalName": "HorizontalAxisVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "verticalAxisVisibility"}            ],
-           "originalName": "VerticalAxisVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "markerVisibility"}            ],
-           "originalName": "MarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "negativeMarkerVisibility"}            ],
-           "originalName": "NegativeMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "firstMarkerVisibility"}            ],
-           "originalName": "FirstMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "lastMarkerVisibility"}            ],
-           "originalName": "LastMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "lowMarkerVisibility"}            ],
-           "originalName": "LowMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "highMarkerVisibility"}            ],
-           "originalName": "HighMarkerVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Visibility", "mappedName": "normalRangeVisibility"}            ],
-           "originalName": "NormalRangeVisibility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "displayNormalRangeInFront"}            ],
-           "originalName": "DisplayNormalRangeInFront"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "markerSize"}            ],
-           "originalName": "MarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "firstMarkerSize"}            ],
-           "originalName": "FirstMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lastMarkerSize"}            ],
-           "originalName": "LastMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "highMarkerSize"}            ],
-           "originalName": "HighMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowMarkerSize"}            ],
-           "originalName": "LowMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "negativeMarkerSize"}            ],
-           "originalName": "NegativeMarkerSize"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lineThickness"}            ],
-           "originalName": "LineThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minimum"}            ],
-           "originalName": "Minimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maximum"}            ],
-           "originalName": "Maximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "valueMemberPath"}            ],
-           "originalName": "ValueMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "labelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "normalRangeMinimum"}            ],
-           "originalName": "NormalRangeMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "normalRangeMaximum"}            ],
-           "originalName": "NormalRangeMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "SparklineDisplayType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "verticalAxisLabel"}            ],
-           "originalName": "VerticalAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "horizontalAxisLabel"}            ],
-           "originalName": "HorizontalAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "(arg1: any) => string", "mappedName": "formatLabel"}            ],
-           "originalName": "FormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "horizontalLabelFormat"}            ],
-           "originalName": "HorizontalLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any[]", "mappedName": "horizontalLabelFormatSpecifiers"}            ],
-           "originalName": "HorizontalLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "verticalLabelFormat"}            ],
-           "originalName": "VerticalLabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any[]", "mappedName": "verticalLabelFormatSpecifiers"}            ],
-           "originalName": "VerticalLabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportVisualData"}            ],
-           "originalName": "ExportVisualData"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles":["SparklineStylingDefaults.ts","igr-sparkline-core-module.ts","igr-sparkline-module.ts"],
+  "types":[
+  { "originalName":"SparklineDisplayType","isEnum":true,
+    "names":[{"platform":"React","fileName":"SparklineDisplayType.ts","mappedName":"SparklineDisplayType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"Line"}],"originalName":"Line"},
+    { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"Area"}],"originalName":"Area"},
+    { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"WinLoss"}],"originalName":"WinLoss"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"XamSparkline",
+    "names":[{"platform":"React","fileName":"igr-sparkline.ts","mappedName":"IgrSparkline"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"brush"}],"originalName":"Brush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"negativeBrush"}],"originalName":"NegativeBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"markerBrush"}],"originalName":"MarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"negativeMarkerBrush"}],"originalName":"NegativeMarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"firstMarkerBrush"}],"originalName":"FirstMarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lastMarkerBrush"}],"originalName":"LastMarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"highMarkerBrush"}],"originalName":"HighMarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowMarkerBrush"}],"originalName":"LowMarkerBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"horizontalAxisBrush"}],"originalName":"HorizontalAxisBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"verticalAxisBrush"}],"originalName":"VerticalAxisBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"normalRangeFill"}],"originalName":"NormalRangeFill"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"horizontalAxisVisibility"}],"originalName":"HorizontalAxisVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"verticalAxisVisibility"}],"originalName":"VerticalAxisVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"markerVisibility"}],"originalName":"MarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"negativeMarkerVisibility"}],"originalName":"NegativeMarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"firstMarkerVisibility"}],"originalName":"FirstMarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"lastMarkerVisibility"}],"originalName":"LastMarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"lowMarkerVisibility"}],"originalName":"LowMarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"highMarkerVisibility"}],"originalName":"HighMarkerVisibility"},
+    { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"normalRangeVisibility"}],"originalName":"NormalRangeVisibility"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"displayNormalRangeInFront"}],"originalName":"DisplayNormalRangeInFront"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"markerSize"}],"originalName":"MarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"firstMarkerSize"}],"originalName":"FirstMarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lastMarkerSize"}],"originalName":"LastMarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"highMarkerSize"}],"originalName":"HighMarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowMarkerSize"}],"originalName":"LowMarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"negativeMarkerSize"}],"originalName":"NegativeMarkerSize"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lineThickness"}],"originalName":"LineThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"minimum"}],"originalName":"Minimum"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"maximum"}],"originalName":"Maximum"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"labelMemberPath"}],"originalName":"LabelMemberPath"},
+    { "names":[{"platform":"React","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"normalRangeMinimum"}],"originalName":"NormalRangeMinimum"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"normalRangeMaximum"}],"originalName":"NormalRangeMaximum"},
+    { "names":[{"platform":"React","mappedType":"SparklineDisplayType","mappedName":"displayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"React","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"verticalAxisLabel"}],"originalName":"VerticalAxisLabel"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"horizontalAxisLabel"}],"originalName":"HorizontalAxisLabel"},
+    { "names":[{"platform":"React","mappedType":"(arg1: any) => string","mappedName":"formatLabel"}],"originalName":"FormatLabel"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"horizontalLabelFormat"}],"originalName":"HorizontalLabelFormat"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"horizontalLabelFormatSpecifiers"}],"originalName":"HorizontalLabelFormatSpecifiers"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"verticalLabelFormat"}],"originalName":"VerticalLabelFormat"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"verticalLabelFormatSpecifiers"}],"originalName":"VerticalLabelFormatSpecifiers"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyResized"}],"originalName":"NotifyResized"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}

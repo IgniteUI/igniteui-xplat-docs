@@ -79,22 +79,22 @@ var configurations: any[] = [
     { platforms: ["React"],
       redirects: [
         // NOTE keep the following redirects here
-        { from: "grid_table_remote_databinding.html$", to: "data-grid-remote-data" },
-        { from: "grid_table_cell_activation.html$", to: "data-grid-cell-activation" },
-        { from: "grid_table_cell_selection.html$", to: "data-grid-cell-selection" },
-        { from: "grid_table_column_animation.html$", to: "data-grid-column-animation" },
-        { from: "grid_table_column_filtering.html$", to: "data-grid-column-filtering" },
-        { from: "grid_table_column_moving.html$", to: "data-grid-column-moving" },
-        { from: "grid_table_column_resizing.html$", to: "data-grid-column-resizing" },
-        { from: "grid_table_column_sorting.html$", to: "data-grid-column-sorting" },
-        { from: "grid_table_column_sparkline.html$", to: "data-grid-type-sparkline-table" },
-        { from: "grid_table_column_types.html$", to: "data-grid-column-types" },
-        { from: "grid_table_performance.html$", to: "data-grid-performance" },
-        { from: "grid_table_horizontal_scrolling.html$", to: "data-grid-horizontal-scrolling" },
-        { from: "grid_table_row_grouping.html$", to: "data-grid-row-grouping" },
-        { from: "grid_table_row_paging.html$", to: "data-grid-row-paging" },
-        { from: "grid_table_row_pinning.html$", to: "data-grid-row-pinning" },
-        { from: "grid_table.html$", to: "data-grid" },
+        { from: "grid_table_remote_databinding.html$", to: "grids/data-grid-remote-data" },
+        { from: "grid_table_cell_activation.html$", to: "grids/data-grid-cell-activation" },
+        { from: "grid_table_cell_selection.html$", to: "grids/data-grid-cell-selection" },
+        { from: "grid_table_column_animation.html$", to: "grids/data-grid-column-animation" },
+        { from: "grid_table_column_filtering.html$", to: "grids/data-grid-column-filtering" },
+        { from: "grid_table_column_moving.html$", to: "grids/data-grid-column-moving" },
+        { from: "grid_table_column_resizing.html$", to: "grids/data-grid-column-resizing" },
+        { from: "grid_table_column_sorting.html$", to: "grids/data-grid-column-sorting" },
+        { from: "grid_table_column_sparkline.html$", to: "grids/data-grid-type-sparkline-table" },
+        { from: "grid_table_column_types.html$", to: "grids/data-grid-column-types" },
+        { from: "grid_table_performance.html$", to: "grids/data-grid-performance" },
+        { from: "grid_table_horizontal_scrolling.html$", to: "grids/data-grid-horizontal-scrolling" },
+        { from: "grid_table_row_grouping.html$", to: "grids/data-grid-row-grouping" },
+        { from: "grid_table_row_paging.html$", to: "grids/data-grid-row-paging" },
+        { from: "grid_table_row_pinning.html$", to: "grids/data-grid-row-pinning" },
+        { from: "grid_table.html$", to: "grids/data-grid" },
     ]},
     // redirects for renamed chart topics with underscore
     { platforms: ["XPLAT"], // platforms: ["Angular", "Blazor"],
@@ -288,6 +288,46 @@ var configurations: any[] = [
         { from: "sparkline.html$", to: "charts/types/sparkline-chart" },
         { from: "treemap-overview.html$", to: "charts/types/treemap-chart" },
     ]},
+    // redirects for moved topics to sub folder in 21.2 release
+    { platforms: ["React", "Blazor", "WC"],
+      redirects: [
+        { from: "dock-manager.html$",                       to: "layouts/dock-manager" },
+        { from: "dock-manager-electron.html$",              to: "layouts/dock-manager-electron" },
+        { from: "dock-manager-embedding-frames.html$",      to: "layouts/dock-manager-embedding-frames" },
+        { from: "dock-manager-updating-panes.html$",        to: "layouts/dock-manager-updating-panes" },
+        { from: "data-grid-accessibility.html$"           , to: "grids/data-grid-accessibility" },
+        { from: "data-grid-cell-activation.html$"         , to: "grids/data-grid-cell-activation" },
+        { from: "data-grid-cell-editing.html$"            , to: "grids/data-grid-cell-editing" },
+        { from: "data-grid-cell-merging.html$"            , to: "grids/data-grid-cell-merging" },
+        { from: "data-grid-cell-selection.html$"          , to: "grids/data-grid-cell-selection" },
+        { from: "data-grid-column-animation.html$"        , to: "grids/data-grid-column-animation" },
+        { from: "data-grid-column-chooser.html$"          , to: "grids/data-grid-column-chooser" },
+        { from: "data-grid-column-filtering.html$"        , to: "grids/data-grid-column-filtering" },
+        { from: "data-grid-column-moving.html$"           , to: "grids/data-grid-column-moving" },
+        { from: "data-grid-column-options.html$"          , to: "grids/data-grid-column-options" },
+        { from: "data-grid-column-pinning.html$"          , to: "grids/data-grid-column-pinning" },
+        { from: "data-grid-column-resizing.html$"         , to: "grids/data-grid-column-resizing" },
+        { from: "data-grid-column-sorting.html$"          , to: "grids/data-grid-column-sorting" },
+        { from: "data-grid-column-summaries.html$"        , to: "grids/data-grid-column-summaries" },
+        { from: "data-grid-column-types.html$"            , to: "grids/data-grid-column-types" },
+        { from: "data-grid-horizontal-scrolling.html$"    , to: "grids/data-grid-horizontal-scrolling" },
+        { from: "data-grid-live-data.html$"               , to: "grids/data-grid-live-data" },
+        { from: "data-grid-load-save-layout.html$"        , to: "grids/data-grid-load-save-layout" },
+        { from: "data-grid-local-data.html$"              , to: "grids/data-grid-local-data" },
+        { from: "data-grid-performance.html$"             , to: "grids/data-grid-performance" },
+        { from: "data-grid-remote-data.html$"             , to: "grids/data-grid-remote-data" },
+        { from: "data-grid-row-grouping.html$"            , to: "grids/data-grid-row-grouping" },
+        { from: "data-grid-row-highlighting.html$"        , to: "grids/data-grid-row-highlighting" },
+        { from: "data-grid-row-paging.html$"              , to: "grids/data-grid-row-paging" },
+        { from: "data-grid-row-pinning.html$"             , to: "grids/data-grid-row-pinning" },
+        { from: "data-grid-type-comparison-table.html$"   , to: "grids/data-grid-type-comparison-table" },
+        { from: "data-grid-type-heatmap-table.html$"      , to: "grids/data-grid-type-heatmap-table" },
+        { from: "data-grid-type-matrix-table.html$"       , to: "grids/data-grid-type-matrix-table" },
+        { from: "data-grid-type-periodic-table.html$"     , to: "grids/data-grid-type-periodic-table" },
+        { from: "data-grid-type-sparkline-table.html$"    , to: "grids/data-grid-type-sparkline-table" },
+        { from: "data-grid.html$"                         , to: "grids/data-grid" }
+      ]
+    },
 ];
 
 // generates redirect rules for all platforms using above configuration arrays
@@ -316,6 +356,8 @@ export function generateRules(withProduct: boolean): string {
 
     var matchURLs: string[] = [];
     var platforms = withProduct ? platformsWithProduct : platformsWithoutProduct;
+
+    var lineEnding = withProduct ? " \n" : "\n";
 
     // looping over all platforms in the order they are defined in the start of file
     // this way, all rules for a given platform are listed next to each other
@@ -348,8 +390,13 @@ export function generateRules(withProduct: boolean): string {
                   if (!actionURL.startsWith('/'))
                        actionURL = '/' + actionURL;
 
-                  if (actionURL.endsWith('.html'))
-                      actionURL = actionURL.replace('.html','');
+                  if (actionURL.endsWith('$') >= 0)
+                       actionURL = actionURL.replace('$', '');
+
+                  if (actionURL.indexOf('.html') >= 0)
+                      actionURL = actionURL.replace('.html', '');
+
+                  // console.log(actionURL);
 
                   // ensure that redirects for the following platforms have .html in their URLs
                   // if (platform.name === "Blazor" || platform.name === "React" ||
@@ -360,11 +407,12 @@ export function generateRules(withProduct: boolean): string {
 
                   // TODO add logic for checking if the actionURL exists for .md file in ./doc/en/component folder
 
+
                   // generating redirect rule
-                  rules += '  <rule name="' + name + '" enabled="true" stopProcessing="true"> \n';
-                  rules += '     <match  url="' + matchURL + '" /> <conditions logicalGrouping="MatchAll" trackAllCaptures="false" /> \n';
-                  rules += '     <action url="{R:1}' + actionURL + '" type="Redirect" redirectType="Permanent" /> \n';
-                  rules += '  </rule> \n';
+                  rules += '  <rule name="' + name + '" enabled="true" stopProcessing="true">' + lineEnding;
+                  rules += '     <match  url="' + matchURL + '" /> <conditions logicalGrouping="MatchAll" trackAllCaptures="false" />' + lineEnding;
+                  rules += '     <action url="{R:1}' + actionURL + '" type="Redirect" redirectType="Permanent" />' + lineEnding;
+                  rules += '  </rule>' + lineEnding;
                   rulesCount++;
                 }
             }
@@ -373,8 +421,8 @@ export function generateRules(withProduct: boolean): string {
         ret += rules;
         ret += '  <!-- ========================================================================================== --> \n';
 
-        if (withProduct)
-            console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
+        // if (withProduct)
+        //     console.log(">> generated  " + rulesCount + " redirect rules for '" + platform.name + "' platform");
     }
     ret += '  <!-- end of auto-generated rules --> \n';
 

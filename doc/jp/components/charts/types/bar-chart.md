@@ -3,6 +3,7 @@ title: $Platform$ 棒チャートとグラフ | $ProductName$
 _description: $Platform$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
 _keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics, $Platform$ チャート, 棒チャート, 棒グラフ, 水平チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 棒チャート
@@ -18,6 +19,7 @@ $ProductName$ カテゴリ棒チャートは、複数のデータ ソースの�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ 複数ソースの棒チャート" >
 </code-view>
 
@@ -66,7 +68,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 
 ### 棒チャートのデータ構造:
 
-- データソースはデータ項目の配列またはリストである必要があります。
+- データ ソースはデータ項目の配列またはリストである必要があります。
 - データ ソースに少なくとも 1 つのデータ項目を含む必要があります。
 - リストには、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - リストには、少なくとも 1 つの数値データ列が含まれている必要があります。
@@ -80,6 +82,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
+           github-src="charts/data-chart/bar-chart-single-source"
            alt="$Platform$ 単一シリーズの $Platform$ 棒チャート" >
 </code-view>
 
@@ -92,6 +95,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ 複数シリーズの $Platform$ 棒チャート" >
 </code-view>
 
@@ -104,6 +108,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
+           github-src="charts/data-chart/bar-chart-styling"
            alt="$Platform$ 棒チャートのスタイル設定" >
 </code-view>
 
@@ -120,6 +125,7 @@ $Platform$ 棒チャートには、データまたはデータを使用して正
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
+           github-src="charts/data-chart/stacked-bar-chart"
            alt="$Platform$ 積層型棒チャート" >
 </code-view>
 
@@ -134,6 +140,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
+           github-src="charts/data-chart/stacked-100-bar-chart"
            alt="$Platform$ 積層型 100 棒チャート" >
 </code-view>
 
@@ -154,7 +161,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 以下は、上記のセクションで説明されている API メンバーのリストです。
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

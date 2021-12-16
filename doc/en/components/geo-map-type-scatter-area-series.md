@@ -23,7 +23,7 @@ Use the $Platform$ map component's `GeographicScatterAreaSeries` to draw a color
 The `GeographicScatterAreaSeries` works a lot like the `GeographicContourLineSeries` except that it represents data as interpolated and colored surface instead of contour lines connecting data points with the same values.
 
 ## Data Requirements
-Similar to other types of geographic series in the map component, the `GeographicScatterAreaSeries` has the `DataSource` property which can be bound to an array of objects. In addition, each item in the items source must have three data columns, two that store a geographic longitude and latitude coordinates and one data column that stores a value associated with the geographic location. The `LongitudeMemberPath`, `LatitudeMemberPath`, and `ColorMemberPath` properties of the geographic series identify these data column.
+Similar to other types of geographic series in the map component, the `GeographicScatterAreaSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each item in the items source must have three data columns, two that store a geographic longitude and latitude coordinates and one data column that stores a value associated with the geographic location. The `LongitudeMemberPath`, `LatitudeMemberPath`, and `ColorMemberPath` properties of the geographic series identify these data column.
 The `GeographicScatterAreaSeries` automatically performs built-in data triangulation on items in the ItemsSource if no triangulation is set to the `TrianglesSource` property. However, computing triangulation can be a very time-consuming process, so the runtime performance will be better when specifying a TriangulationSource for this property, especially when a large number of data items are present.
 
 ## Data Binding
@@ -31,9 +31,9 @@ The following table summarizes properties of GeographicScatterAreaSeries used fo
 
 | Property Name  | Property Type   | Description   |
 |--------------|---------------| ---------------|
-|`DataSource`|any|The source of data items to perform triangulation on if the `TrianglesSource` property provides no triangulation data.|
-|`LongitudeMemberPath`|string|The name of the property containing the Longitude for all items bound to the `DataSource`.|
-|`LatitudeMemberPath`|string|The name of the property containing the Latitude for all items bound to the `DataSource`.|
+|`ItemsSource`|any|The source of data items to perform triangulation on if the `TrianglesSource` property provides no triangulation data.|
+|`LongitudeMemberPath`|string|The name of the property containing the Longitude for all items bound to the `ItemsSource`.|
+|`LatitudeMemberPath`|string|The name of the property containing the Latitude for all items bound to the `ItemsSource`.|
 |`ColorMemberPath`|string|The name of the property containing a value at Latitude and Longitude coordinates of each data item. This numeric value will be be converted to a color when the `ColorScale` property is set.|
 |`TrianglesSource`|any|The source of triangulation data. Setting Triangles of the `TriangulationSource` object to this property improves both runtime performance and geographic series rendering.|
 |`TriangleVertexMemberPath1`|string|The name of the property of the `TrianglesSource` items which, for each triangle, contains the index of the first vertex point in the ItemsSource. It is not mandatory to set this property. It is taken by default unless custom triangulation logic is provided.|
@@ -309,14 +309,14 @@ createAreaSeries(data: any[]) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicScatterAreaSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ColorMemberPath="Value"
         ColorScale="ColorScale"
         DataSource="Data">
-    </GeographicScatterAreaSeries>
-</GeographicMap>
+    </IgbGeographicScatterAreaSeries>
+</IgbGeographicMap>
 
 @code {
 
@@ -325,7 +325,7 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue

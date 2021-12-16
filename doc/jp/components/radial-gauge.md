@@ -3,6 +3,7 @@ title: $Platform$ ラジアル ゲージ チャート | データ可視化ツー
 _description: インフラジスティックスの $Platform$ ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。$ProductName$ ラジアル ゲージの設定可能な要素について説明します。
 _keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
+namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
 # $Platform$ ラジアル ゲージの概要
@@ -13,7 +14,7 @@ $ProductName$ Radial Gauge コンポーネントは、ゲージを表示する�
 
 ## $Platform$ ラジアル ゲージの例
 
-以下のサンプルは、同じゲージでいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
+以下のサンプルは、同じ `XamRadialGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
 <code-view style="height: 375px"
@@ -38,7 +39,7 @@ npm install --save {PackageGauges}
 <!-- Blazor -->
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 - [作業の開始](general-getting-started.md)
-- [NuGet パッケージの追加](nuget-feed.md)
+- [NuGet パッケージの追加](general-nuget-feed.md)
 
 以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -52,7 +53,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 `XamRadialGauge` を作成するには、以下のモジュールが必要です。
 
 ```razor
-RadialGaugeModule.Register(IgniteUIBlazor);
+IgbRadialGaugeModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -162,25 +163,25 @@ IgrRadialGaugeModule.register();
 
 ```razor
 
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
-    <RadialGaugeRange
+    <IgbRadialGaugeRange
           StartValue="0"
           EndValue="30"
           Brush="red">
-    </RadialGaugeRange>
-    <RadialGaugeRange
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange
           StartValue="30"
           EndValue="60"
           Brush="Yellow" >
-    </RadialGaugeRange>
-    <RadialGaugeRange
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange
           StartValue="60"
           EndValue="100"
           Brush="Green">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
 
 <div class="divider--half"></div>
@@ -244,7 +245,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
- <RadialGauge Height="100%" Width="100%"
+ <IgbRadialGauge Height="100%" Width="100%"
     BackingShape="RadialGaugeBackingShape.Fitted"
     BackingBrush="#FCFCFC"
     BackingOutline="DodgerBlue"
@@ -260,7 +261,7 @@ IgrRadialGaugeModule.register();
     MaximumValue="80"
     Value="50"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -322,7 +323,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge
+<IgbRadialGauge
   ScaleStartAngle="135"
   ScaleEndAngle="45"
   ScaleBrush="DodgerBlue"
@@ -335,7 +336,7 @@ IgrRadialGaugeModule.register();
   MaximumValue="80"
   Value="50"
   Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 ```
 
 
@@ -384,7 +385,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge
+<IgbRadialGauge
   Height="100%" Width="100%"
   LabelInterval="10"
   LabelInterval="10"
@@ -394,7 +395,7 @@ IgrRadialGaugeModule.register();
   MaximumValue="80"
   Value="50"
   Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -459,7 +460,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
- <RadialGauge Height="100%" Width="100%"
+ <IgbRadialGauge Height="100%" Width="100%"
     TickStartExtent="0.5"
     TickEndExtent="0.57"
     TickStrokeThickness="2"
@@ -473,7 +474,7 @@ IgrRadialGaugeModule.register();
     MaximumValue="80"
     Value="50"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 
 ```
 
@@ -544,26 +545,26 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="50"
       MaximumValue="80" Interval="10"
       RangeBrushes="#A4BD29, #F86232"
       RangeOutlines="#A4BD29, #F86232">
-    <RadialGaugeRange StartValue="10"
+    <IgbRadialGaugeRange StartValue="10"
           EndValue="25"
           InnerStartExtent="0.50"
           InnerEndExtent="0.50"
           OuterStartExtent="0.57"
           OuterEndExtent="0.57">
-    </RadialGaugeRange>
-    <RadialGaugeRange StartValue="25"
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange StartValue="25"
           EndValue="40"
           InnerStartExtent="0.50"
           InnerEndExtent="0.50"
           OuterStartExtent="0.57"
           OuterEndExtent="0.57">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
 
 
@@ -643,7 +644,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
     IsNeedleDraggingEnabled="true"
     IsNeedleDraggingConstrained="true"
     NeedleShape="RadialGaugeNeedleShape.NeedleWithBulb"
@@ -660,7 +661,7 @@ IgrRadialGaugeModule.register();
     MinimumValue="0"
     MaximumValue="80"
     Interval="10">
-</RadialGauge>
+</IgbRadialGauge>
 ```
 
 <code-view style="height: 320px"
@@ -875,7 +876,7 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-<RadialGauge Height="100%" Width="100%"
+<IgbRadialGauge Height="100%" Width="100%"
              MinimumValue="0"
              MaximumValue="80"
              Value="50"
@@ -928,19 +929,33 @@ IgrRadialGaugeModule.register();
 
              RangeBrushes="#A4BD29, #F86232"
              RangeOutlines="#A4BD29, #F86232">
-    <RadialGaugeRange StartValue="20"
+    <IgbRadialGaugeRange StartValue="20"
         EndValue="40"
         InnerStartExtent="0.50"
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>
-    <RadialGaugeRange StartValue="40"
+    </IgbRadialGaugeRange>
+    <IgbRadialGaugeRange StartValue="40"
         EndValue="60"
         InnerStartExtent="0.50"
         InnerEndExtent="0.50"
         OuterStartExtent="0.57"
         OuterEndExtent="0.57">
-    </RadialGaugeRange>
-</RadialGauge>
+    </IgbRadialGaugeRange>
+</IgbRadialGauge>
 ```
+
+## その他のリソース
+
+その他のゲージ タイプの詳細については、以下のトピックを参照してください。
+
+- [ブレット グラフ](bullet-graph.md)
+- [リニア ゲージ](linear-gauge.md)
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`

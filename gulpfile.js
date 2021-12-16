@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2020.2/'
+var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2021.2/'
 
 var mt = null; // MarkdownTransformer
 var ml = null; // MappingLoader
@@ -97,7 +97,7 @@ function transformFiles() {
       console.log("- " + file.path);
       //var typeName = "CategoryChart";
 
-      transformer.transformContent(typeName, fileContent,
+      transformer.transformContent(typeName, fileContent, // file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
@@ -188,14 +188,56 @@ exports.updateApiBlazor = updateApiBlazor;
 
 // updates API mapping files in ./apiMap folder for specified platform
 function updateApiFor(platformName) {
+    // cleanup previous API mapping files
+    // del.sync("apiMap/" + platformName + "/*apiMap.json");
+
     return gulp.src([
-        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json"
+        fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/*apiMap.json",
+        // excluding API mapping files for conflicting components with WebInputs
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Inputs*apiMap.json",
+  '!' + fileRoot + "Source/*.JS/**/bin/**/" + platformName + "/Calendar*apiMap.json"
     ])
+    .pipe(es.map(function(file, fileCallback) {
+        var jsonContent = file.contents.toString();
+        let jsonNodes = JSON.parse(jsonContent);
+        // let fileContent = JSON.stringify(jsonNodes,  null, '  ');
+        // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
+        let fileContent = JSON.stringify(jsonNodes);
+        // changing JSON format to pretty-compact
+
+        fileContent = fileContent.split('],"types":').join('],\n  "types":');
+        fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
+        fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
+        // fileContent = fileContent.split('}],"members":[').join('}\n  ],\n  "members":[');
+        // fileContent = fileContent.split('}],"members":[').join('}],\n  "members":[');
+        fileContent = fileContent.split('{"isVirtual":true').join('\n    { "isVirtual":true');
+        fileContent = fileContent.split('{"names":').join        ('\n    { "names":');
+        fileContent = fileContent.split(',"names":').join        (',\n    "names":');
+        // fileContent = fileContent.split('{"names":').join        ('\n    {                    "names":');
+        // fileContent = fileContent.split('}],"originalBase').join('}\n  ],\n  "originalBase');
+        // fileContent = fileContent.split(',"names":[').join(',\n  "names":[\n    ');
+
+        var lines = fileContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].indexOf('"isVirtual":true,') >= 0) {
+                lines[i] = lines[i].replace('"isVirtual":true,', '');
+                lines[i] = lines[i].replace('"},', '", "isVirtual":true },');
+            }
+        }
+        fileContent = lines.join('\n');
+        fileContent = fileContent.split('"mappedType":"bool"').join('"mappedType":"bool"  ');
+        fileContent = fileContent.split('"mappedType":"int"' ).join('"mappedType":"int"   ');
+        // fileContent = fileContent.split(',').join(', ');
+        // fileContent = fileContent.split(':').join(': ');
+
+        file.contents = Buffer.from(fileContent);
+        fileCallback(null, file);
+    }))
     .pipe(flatten())
     .pipe(gulp.dest("apiMap/" + platformName));
 }
 // updates API mapping files in ./apiMap folder for all platforms
-exports.updateApi = updateApi = gulp.series(
+exports.updateApiMapping = updateApiMapping = gulp.series(
     updateApiAngular,
     updateApiBlazor,
     updateApiReact,
@@ -221,7 +263,7 @@ function updateApiSection(cb) {
         var fileContent = file.contents.toString();
         if (transformer) {
             // file.contents = Buffer.from(transformer.updateApiSection(fileContent));
-            var newContent = transformer.updateApiSection(fileContent);
+            var newContent = transformer.updateApiSection(fileContent, filePath);
             fs.writeFileSync(filePath, newContent);
         }
 
@@ -247,10 +289,14 @@ function buildPlatform(cb) {
 
     // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
     let isFirstRelease = docs[platformName].isFirstRelease;
-    // gendering TOC.yml files from TOC.json files:
-    generateTocFor(platformName, 'en', isFirstRelease);
-    generateTocFor(platformName, 'jp', isFirstRelease);
-    generateTocFor(platformName, 'kr', isFirstRelease);
+    // generating topic list and TOC.yml files from TOC.json files:
+    let enTopics = generateTocFor(platformName, 'en', isFirstRelease);
+    let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease);
+    let krTopics = generateTocFor(platformName, 'kr', isFirstRelease);
+    let tocTopics = [];
+    tocTopics = tocTopics.concat(enTopics); // including EN topics
+    tocTopics = tocTopics.concat(jpTopics); // including JP topics
+    tocTopics = tocTopics.concat(krTopics); // including KR topics
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
     log("API source mapping: " + apiSourcePath);
@@ -262,39 +308,81 @@ function buildPlatform(cb) {
     .on("end", () => {
         transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
 
-        let sources = [
-            'doc/**/*.md', // including all markdown files
-            '!doc/**/obsolete/*.md' // excluding old chart topics
-        ];
+        // excluding topics that are not present in any of EN/JP/KR TOC files
+        let topicExclusions = [];
+        gulp.src(['doc/**/*.md'])
+        .pipe(es.map(function(file, fileCallback) {
+            var filePath = file.path.split('\\').join('/');
+            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+            var fileMatch = false;
+            for (const topic of tocTopics) {
+                if (filePath.indexOf(topic) >= 0) {
+                    fileMatch = true;
+                }
+            }
+            if (fileMatch) {
+            //    console.log('>> TOC contains "' + fileLocal + '"');
+            } else {
+            //    console.log('>> TOC excludes "' + fileLocal + '"');
+               topicExclusions.push('!' + fileLocal);
+            }
+            fileCallback(null, file);
+        }))
+        .on("end", () => {
 
-        if (platformName == "Angular") {
-            // excluding topics for controls that are not in Angular product, e.g. Data-grid
-            sources.push('!doc/**/dock-manager*.md');
-            sources.push('!doc/**/data-grid*.md');
-            sources.push('!doc/**/date-picker.md');
-            sources.push('!doc/**/multi-column-combobox.md');
-        } else if (platformName == "Blazor") {
-            // excluding topics for controls that are not in Blazor product or API is broken for these components/features
-            // sources.push('!doc/**/dock-manager*.md');
-            sources.push('!doc/**/spreadsheet*.md');
-            // sources.push('!doc/**/excel*.md');
-            // sources.push('!doc/**/treemap*.md');
-            sources.push('!doc/**/general-cli*.md');
-            //sources.push('!doc/**/general-breaking-changes*.md');
-            // sources.push('!doc/**/data-chart-type-stacked*.md');
-            // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
-            // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
-            // sources.push('!doc/**/zoomslider*.md');
-        }
+            console.log('>> excluding ' + topicExclusions.length + ' topics');
+            let sources = [
+               'doc/**/*.md', // including all markdown files
+               '!doc/**/obsolete/*.md' // excluding old chart topics
+            ];
+            sources = sources.concat(topicExclusions);
+
+            // NOTE there is not need to exclude topics based on platform
+            // because they are already filtered based on build flags in toc.json
+
+            // if (platformName == "Angular") {
+            //     // excluding topics for controls that are not in Angular product, e.g. Data-grid
+            //     sources.push('!doc/**/layouts/*avatar*.md');
+            //     sources.push('!doc/**/layouts/*card*.md');
+            //     sources.push('!doc/**/layouts/*icon*.md');
+            //     sources.push('!doc/**/layouts/dock-manager*.md');
+            //     sources.push('!doc/**/grids/data-grid*.md');
+            //     sources.push('!doc/**/grids/grids.md');
+            //     sources.push('!doc/**/grids/list.md');
+            //     sources.push('!doc/**/editors/multi-column-combobox.md');
+            //     sources.push('!doc/**/editors/date-picker.md');
+            //     sources.push('!doc/**/inputs/*.md');     // e.g. badge, checkbox
+            //     sources.push('!doc/**/menus/*.md');      // e.g. nav-bar
+            //     sources.push('!doc/**/scheduling/*calendar*.md'); // e.g. calendar
+            // } else if (platformName == "Blazor") {
+            //     // excluding topics for controls that are not in Blazor product or API is broken for these components/features
+            //     // sources.push('!doc/**/dock-manager*.md');
+            //     sources.push('!doc/**/spreadsheet*.md');
+            //     // sources.push('!doc/**/excel*.md');
+            //     // sources.push('!doc/**/treemap*.md');
+            //     sources.push('!doc/**/general-cli*.md');
+            //     // sources.push('!doc/**/general-breaking-changes*.md');
+            //     // sources.push('!doc/**/data-chart-type-stacked*.md');
+            //     // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
+            //     // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
+            //     // sources.push('!doc/**/zoomslider*.md');
+            // }
+
         // uncomment to test faster build
-        // sources.push('!doc/**/*grid*.md');
-        // sources.push('!doc/**/*chart*.md');
+        // sources.push('!doc/**/obsolete/**/*.md');
+        // sources.push('!doc/**/grids/**/*.md');
+        // sources.push('!doc/**/charts/**/*.md');
+        // sources.push('!doc/**/editors/**/*.md');
+        // sources.push('!doc/**/inputs/**/*.md');
+        // sources.push('!doc/**/layouts/**/*.md');
+        // sources.push('!doc/**/menus/**/*.md');
         // sources.push('!doc/**/data-chart*.md');
         // sources.push('!doc/**/financial-chart*.md');
         // sources.push('!doc/**/category-chart*.md');
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
         // sources.push('!doc/**/general*.md');
+        // sources.push('!doc/**/general-changelog-dv.md');
         // sources.push('!doc/**/*map*.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
@@ -305,9 +393,9 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/zoomslider*.md');
         // sources.push('!doc/**/sparkline*.md');
         // sources.push('!doc/**/editors/*.md');
+        // sources.push('!doc/**/scheduling/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
-        // sources.push('!doc/**/types/**/*.md');
         // sources.push('!doc/**/types/**/*.md');
 
         gulp.src(sources)
@@ -341,6 +429,8 @@ function buildPlatform(cb) {
             console.log("ERROR building platform: " + platformName.toString());
             cb(err);
         });
+
+        }) // end of finding topicExclusions
     })
     .on("error", (err) => {
         console.log("ERROR building platform: " + platformName.toString());
@@ -400,8 +490,15 @@ exports.generateTocYML = generateTocYML;
 // e.g.  generateTocFor('Angular', 'en');
 function generateTocFor(platformName, language, isFirstRelease) {
     ensureEnvironment();
-    let jsonPath = './docfx/' + language + '/components/toc.json';
-    transformer.generateTOC(jsonPath, platformName, isFirstRelease);
+    transformer.docsLanguage = language;
+    let tocPath = './docfx/' + language + '/components/toc.json';
+    let tocTopics = transformer.generateTOC(tocPath, platformName, isFirstRelease);
+    tocTopics.sort();
+    for (let i = 0; i < tocTopics.length; i++) {
+        tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
+      //  console.log('>> generateTocFor "' + tocTopics[i] + '"');
+    }
+    return tocTopics;
 }
 
 function copyWebConfig(cb) {
@@ -435,6 +532,8 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
+var verifyFiles = gulp.series(verifyMarkdown);
+
 function buildCore(cb) {
     // clean output files
     log("cleaning ...");
@@ -453,11 +552,11 @@ function buildWC(cb)        { PLAT = "WebComponents"; buildCore(cb); }
 // function for building output of a platform specified in arguments, e.g. --plat=React
 function buildWithArgs(cb)  { buildCore(cb); }
 // exporting build functions for each platform:
-exports['buildOutputAngular'] = buildAngular
-exports['buildOutputBlazor'] = buildBlazor
-exports['buildOutputReact'] = buildReact
-exports['buildOutputWC'] = buildWC
-exports['buildWithArgs'] = buildWithArgs
+exports['buildOutputAngular'] = gulp.series(verifyFiles, buildAngular)
+exports['buildOutputBlazor'] = gulp.series(verifyFiles, buildBlazor)
+exports['buildOutputReact'] = gulp.series(verifyFiles, buildReact)
+exports['buildOutputWC'] = gulp.series(verifyFiles, buildWC)
+exports['buildWithArgs'] = gulp.series(verifyFiles, buildWithArgs)
 // function for building all platforms:
 exports.buildAll = buildAll = gulp.series(buildAngular, buildReact, buildWC, buildBlazor);
 
@@ -502,7 +601,6 @@ function serveCore(cb) {
     cb();
 }
 
-
 function watchCore(cb) {
     browserSync.reload();
     done();
@@ -531,12 +629,13 @@ function buildSite(cb) {
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
+
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(buildAll, buildSite, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(buildAngular, buildSite, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(buildBlazor, buildSite, updateSiteMap);
-var buildDocfx_React    = gulp.series(buildReact, buildSite, updateSiteMap);
-var buildDocfx_WC       = gulp.series(buildWC, buildSite, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, updateSiteMap);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, updateSiteMap);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
 var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
 // exporting functions for building Docfx for each platform:
@@ -554,7 +653,6 @@ exports['startBlazor']  = startBlazor  = gulp.series(buildDocfx_Blazor, serveCor
 exports['startReact']   = startReact   = gulp.series(buildDocfx_React, serveCore);
 exports['startWC']      = startWC      = gulp.series(buildDocfx_WC, serveCore);
 exports.watch = watch = gulp.series(buildDocfx_All, watchCore);
-
 
 function logArgs(cb) {
     console.log('logArgs PLAT=' + PLAT + ' LANG=' + LANG);
@@ -593,7 +691,7 @@ function generateRedirects(cb) {
 
     console.log(">>");
     console.log(">> Now, do the following steps:");
-    console.log(">> - copy all rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
+    console.log(">> - copy Angular and XPLAT rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
     console.log(">> - copy all rules from ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
     cb();
 }
@@ -618,3 +716,57 @@ function copyTemplateBackup(cb) {
     });
 }
 exports.copyTemplateBackup = copyTemplateBackup;
+
+
+function verifyMarkdown(cb) {
+    ensureEnvironment();
+    if (transformer === null || transformer === undefined) {
+        if (cb) cb("transformer failed to load"); return;
+    }
+    console.log('verifying .md files ...');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    'doc/en/**/*.md',
+    'doc/jp/**/*.md',
+    //'doc/kr/**/*.md',
+    //'doc/kr/**/chart-legends.md',
+    '!doc/**/obsolete/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        // console.log('verifying code viewer in: ' + filePath);
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        filesCount++;
+        //errorsCount += transformer.verifyCodeViewer(fileContent, filePath);
+        var result = transformer.verifyMetadata(fileContent, filePath);
+        if (result.isValid) {
+            fileContent = result.fileContent;
+            //file.contents = Buffer.from(fileContent);
+            // auto-update topics with corrections if any
+            //fs.writeFileSync(filePath, fileContent);
+        } else {
+            errorsCount++;
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md ' + filesCount + ' files ... done';
+            console.log(msg);
+            if (cb) cb();
+        }
+    })
+    .on("error", (err) => {
+        console.log("Error in verifyMarkdown()");
+        if (cb) cb(err);
+    });
+}
+
+exports.verifyMarkdown = verifyMarkdown;

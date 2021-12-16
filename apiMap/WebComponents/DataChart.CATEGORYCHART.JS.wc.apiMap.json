@@ -1,237 +1,51 @@
-{
-"extraFiles": [
-"igc-category-chart-core-module.ts",
-"igc-category-chart-module.ts"
-],
-"types": [
-{
-    "originalName": "CategoryChart",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-category-chart-component.ts",
- "mappedName": "IgcCategoryChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "transitionInDuration"}            ],
-           "originalName": "TransitionInDuration"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "(time: number) => number", "mappedName": "transitionInEasingFunction"}            ],
-           "originalName": "TransitionInEasingFunction"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "chartType"}            ],
-           "originalName": "ChartType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategorySeriesMarkerCollisionAvoidance", "mappedName": "markerCollisionAvoidance"}            ],
-           "originalName": "MarkerCollisionAvoidance"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
-           "originalName": "IsTransitionInEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
-           "originalName": "TransitionInMode"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TransitionInSpeedType", "mappedName": "transitionInSpeedType"}            ],
-           "originalName": "TransitionInSpeedType"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisInterval"}            ],
-           "originalName": "XAxisInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisMinorInterval"}            ],
-           "originalName": "XAxisMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisGap"}            ],
-           "originalName": "XAxisGap"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisOverlap"}            ],
-           "originalName": "XAxisOverlap"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisInterval"}            ],
-           "originalName": "YAxisInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}            ],
-           "originalName": "YAxisIsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisLogarithmBase"}            ],
-           "originalName": "YAxisLogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMinimumValue"}            ],
-           "originalName": "YAxisMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMaximumValue"}            ],
-           "originalName": "YAxisMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisMinorInterval"}            ],
-           "originalName": "YAxisMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisActualMinimum"}            ],
-           "originalName": "XAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "xAxisActualMaximum"}            ],
-           "originalName": "XAxisActualMaximum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisActualMinimum"}            ],
-           "originalName": "YAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "yAxisActualMaximum"}            ],
-           "originalName": "YAxisActualMaximum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "negativeBrushes"}            ],
-           "originalName": "NegativeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string[]", "mappedName": "negativeOutlines"}            ],
-           "originalName": "NegativeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "yAxisAbbreviateLargeNumbers"}            ],
-           "originalName": "YAxisAbbreviateLargeNumbers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isCategoryHighlightingEnabled"}            ],
-           "originalName": "IsCategoryHighlightingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemHighlightingEnabled"}            ],
-           "originalName": "IsItemHighlightingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMinimum"}            ],
-           "originalName": "GetCurrentXAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMinimum"}            ],
-           "originalName": "GetCurrentYAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentXAxisActualMaximum"}            ],
-           "originalName": "GetCurrentXAxisActualMaximum"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "getCurrentYAxisActualMaximum"}            ],
-           "originalName": "GetCurrentYAxisActualMaximum"
-       }   ],
-    "originalBaseTypeName": "XYChart",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryChartType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "CategoryChartType.ts",
- "mappedName": "CategoryChartType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Point"}            ],
-           "originalName": "Point"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "StepLine"}            ],
-           "originalName": "StepLine"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "StepArea"}            ],
-           "originalName": "StepArea"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Spline"}            ],
-           "originalName": "Spline"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "SplineArea"}            ],
-           "originalName": "SplineArea"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Waterfall"}            ],
-           "originalName": "Waterfall"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "CategoryChartType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles":["igc-category-chart-core-module.ts","igc-category-chart-module.ts"],
+  "types":[
+  { "originalName":"CategoryChart",
+    "names":[{"platform":"WebComponents","fileName":"igc-category-chart-component.ts","mappedName":"IgcCategoryChartComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"transitionInDuration"}],"originalName":"TransitionInDuration"},
+    { "names":[{"platform":"WebComponents","mappedType":"(time: number) => number","mappedName":"transitionInEasingFunction"}],"originalName":"TransitionInEasingFunction"},
+    { "names":[{"platform":"WebComponents","mappedType":"DomainType","mappedName":"domainType"}],"originalName":"DomainType"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"chartType"}],"originalName":"ChartType"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategorySeriesMarkerCollisionAvoidance","mappedName":"markerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isTransitionInEnabled"}],"originalName":"IsTransitionInEnabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryTransitionInMode","mappedName":"transitionInMode"}],"originalName":"TransitionInMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"TransitionInSpeedType","mappedName":"transitionInSpeedType"}],"originalName":"TransitionInSpeedType"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisInterval"}],"originalName":"XAxisInterval"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisMinorInterval"}],"originalName":"XAxisMinorInterval"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisGap"}],"originalName":"XAxisGap"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisOverlap"}],"originalName":"XAxisOverlap"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisInterval"}],"originalName":"YAxisInterval"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"yAxisIsLogarithmic"}],"originalName":"YAxisIsLogarithmic"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisMinimumValue"}],"originalName":"YAxisMinimumValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisMaximumValue"}],"originalName":"YAxisMaximumValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisMinorInterval"}],"originalName":"YAxisMinorInterval"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisActualMinimum"}],"originalName":"XAxisActualMinimum"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisActualMaximum"}],"originalName":"XAxisActualMaximum"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisActualMinimum"}],"originalName":"YAxisActualMinimum"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisActualMaximum"}],"originalName":"YAxisActualMaximum"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"negativeBrushes"}],"originalName":"NegativeBrushes"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"negativeOutlines"}],"originalName":"NegativeOutlines"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"yAxisAbbreviateLargeNumbers"}],"originalName":"YAxisAbbreviateLargeNumbers"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCategoryHighlightingEnabled"}],"originalName":"IsCategoryHighlightingEnabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isItemHighlightingEnabled"}],"originalName":"IsItemHighlightingEnabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCurrentXAxisActualMinimum"}],"originalName":"GetCurrentXAxisActualMinimum"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCurrentYAxisActualMinimum"}],"originalName":"GetCurrentYAxisActualMinimum"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCurrentXAxisActualMaximum"}],"originalName":"GetCurrentXAxisActualMaximum"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getCurrentYAxisActualMaximum"}],"originalName":"GetCurrentYAxisActualMaximum"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategoryChartType","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"CategoryChartType.ts","mappedName":"CategoryChartType"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Line"}],"originalName":"Line"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Area"}],"originalName":"Area"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Point"}],"originalName":"Point"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"StepLine"}],"originalName":"StepLine"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"StepArea"}],"originalName":"StepArea"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Spline"}],"originalName":"Spline"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"SplineArea"}],"originalName":"SplineArea"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Waterfall"}],"originalName":"Waterfall"},
+    { "names":[{"platform":"WebComponents","mappedType":"CategoryChartType","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

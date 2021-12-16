@@ -22,7 +22,7 @@ $Platform$ マップ コンポーネントの `GeographicSymbolSeries` を使用
 <div class="divider--half"></div>
 
 ## データ要件
-マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicSymbolSeries` には、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。さらに、このオブジェクトの各データ項目は、地理的位置 (経度と緯度) を保存する 2 つの数値データ列を持つ必要があります。これらのデータ列は、`LatitudeMemberPath` および `LongitudeMemberPath` プロパティにマップされます。`GeographicSymbolSeries` は、これらのマップされたデータ列の値を使用して、地理マップコンポーネントにシンボル要素をプロットします。
+マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicSymbolSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目は、地理的位置 (経度と緯度) を保存する 2 つの数値データ列を持つ必要があります。これらのデータ列は、`LatitudeMemberPath` および `LongitudeMemberPath` プロパティにマップされます。`GeographicSymbolSeries` は、これらのマップされたデータ列の値を使用して、地理マップコンポーネントにシンボル要素をプロットします。
 
 ## コード スニペット
 以下のコードは、`ShapeDataSource` を使用してシェイプ ファイルからロードした都市の場所に `GeographicSymbolSeries` をバインドする方法を示します。
@@ -182,20 +182,20 @@ addSeriesWith(locations: any[], brush: string)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="Cities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="Cities"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="Gray" />
-    <GeographicSymbolSeries DataSource="Capitals"
+    <IgbGeographicSymbolSeries DataSource="Capitals"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="rgb(32, 146, 252)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -204,7 +204,7 @@ addSeriesWith(locations: any[], brush: string)
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.Cities = WorldLocations.GetCities();
         this.Capitals = WorldLocations.GetCapitals();

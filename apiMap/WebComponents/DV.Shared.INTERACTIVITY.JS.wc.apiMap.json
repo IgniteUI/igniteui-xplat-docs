@@ -1,92 +1,21 @@
-{
-"extraFiles": [
-"igc-dv-interactivity-module.ts",
-"igc-simple-default-tooltip-component.ts"
-],
-"types": [
-{
-    "originalName": "KeyEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-key-event-args.ts",
- "mappedName": "IgcKeyEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "alt"}            ],
-           "originalName": "Alt"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "ctrl"}            ],
-           "originalName": "Ctrl"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "keyCode"}            ],
-           "originalName": "KeyCode"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ModifierKeys", "mappedName": "modifiers"}            ],
-           "originalName": "Modifiers"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "shift"}            ],
-           "originalName": "Shift"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "defaultPrevented"}            ],
-           "originalName": "DefaultPrevented"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "preventDefault"}            ],
-           "originalName": "PreventDefault"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "stopPropagation"}            ],
-           "originalName": "StopPropagation"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs"
-},
-{
-    "originalName": "MouseButton",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "MouseButton.ts",
- "mappedName": "MouseButton"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MouseButton", "mappedName": "Left"}            ],
-           "originalName": "Left"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MouseButton", "mappedName": "Middle"}            ],
-           "originalName": "Middle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MouseButton", "mappedName": "Right"}            ],
-           "originalName": "Right"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "MouseButton", "mappedName": "Unkown"}            ],
-           "originalName": "Unkown"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Inputs"
-}
-]
-}
+{"extraFiles":["igc-dv-interactivity-module.ts","igc-simple-default-tooltip-component.ts"],
+  "types":[
+  { "originalName":"KeyEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-key-event-args.ts","mappedName":"IgcKeyEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"alt"}],"originalName":"Alt"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"ctrl"}],"originalName":"Ctrl"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"keyCode"}],"originalName":"KeyCode"},
+    { "names":[{"platform":"WebComponents","mappedType":"ModifierKeys","mappedName":"modifiers"}],"originalName":"Modifiers"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shift"}],"originalName":"Shift"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"defaultPrevented"}],"originalName":"DefaultPrevented"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"preventDefault"}],"originalName":"PreventDefault"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"stopPropagation"}],"originalName":"StopPropagation"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs"},
+  { "originalName":"MouseButton","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"MouseButton.ts","mappedName":"MouseButton"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"MouseButton","mappedName":"Left"}],"originalName":"Left"},
+    { "names":[{"platform":"WebComponents","mappedType":"MouseButton","mappedName":"Middle"}],"originalName":"Middle"},
+    { "names":[{"platform":"WebComponents","mappedType":"MouseButton","mappedName":"Right"}],"originalName":"Right"},
+    { "names":[{"platform":"WebComponents","mappedType":"MouseButton","mappedName":"Unkown"}],"originalName":"Unkown"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs"}]}

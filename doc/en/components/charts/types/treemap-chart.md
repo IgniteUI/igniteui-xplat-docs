@@ -3,6 +3,7 @@ title: $Platform$ Treemap | Data Visualization Tools | Orientation | Layout | Da
 _description: Use Infragistics' $Platform$ Treemap control show relative weighting of data points at more than one level supporting strip, squarified, and slice-and-dice algorithms. Learn about $ProductName$ treemap!
 _keywords: $Platform$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics
 mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Treemap
 

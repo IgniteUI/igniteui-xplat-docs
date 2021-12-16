@@ -3,6 +3,7 @@ title: $Platform$ ピラミッド チャート | 人口ピラミッド | デー�
 _description: インフラジスティックスの $Platform$ ピラミッド チャート
 _keywords: $Platform$ Charts, Pyramid Chart, Population Pyramid, Infragistics, $Platform$ チャート, ピラミッド チャート, 人口ピラミッド, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ピラミッド チャート
@@ -16,6 +17,7 @@ $ProductName$ ピラミッド チャートは、年齢ピラミッドまたは�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-pyramid-chart"
+           github-src="charts/data-chart/pyramid-chart"
            alt="$Platform$ ピラミッド チャートの例" >
 </code-view>
 

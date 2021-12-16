@@ -3,6 +3,7 @@ title: $Platform$ 軸オプション | データ可視化 | インフラジス�
 _description: インフラジスティックスの $Platform$ 軸オプション
 _keywords: $Platform$ Axis, Options, Infragistics, $Platform$ 軸, オプション, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

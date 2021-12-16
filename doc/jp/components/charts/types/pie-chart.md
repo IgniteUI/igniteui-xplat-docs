@@ -3,6 +3,7 @@ title: $Platform$ 円チャートとグラフ | $ProductName$
 _description: $ProductName$ 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊な UI コントロールです。無料でお試しください。
 _keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ["XamPieChart", "XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 円チャート
@@ -18,6 +19,7 @@ $ProductName$ 円チャート (円グラフ) は、データセットのカテ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           github-src="charts/pie-chart/overview"
            alt="$Platform$ 円チャートの概要" >
 </code-view>
 
@@ -75,6 +77,7 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
+           github-src="charts/pie-chart/legend"
            alt="凡例付きの $Platform$ 円チャート" >
 </code-view>
 
@@ -88,10 +91,10 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 
 `OthersCategoryType` を Percent に設定すると、`OthersCategoryThreshold` は値ではなくパーセンテージとして解釈されます。つまり、値がすべての項目の値の合計の 2% 未満である項目は、Others カテゴリに割り当てられます。使用しているアプリケーションに最も適切な `OthersCategoryType` を使用できます。
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
+           github-src="charts/pie-chart/others"
            alt="$Platform$ 円チャートその他の分類項目" >
 </code-view>
 
@@ -104,6 +107,7 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
+           github-src="charts/pie-chart/explosion"
            alt="$Platform$ 円チャートの展開" >
 </code-view>
 
@@ -130,10 +134,10 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 
 「その他」スライスをクリックすると、`PieSliceOthersContext` オブジェクトが返されます。オブジェクトは、「その他」スライスに含まれるデータ項目のリストがあります。
 
-
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
+           github-src="charts/pie-chart/selection"
            alt="$Platform$ 円チャートの選択" >
 </code-view>
 
@@ -148,6 +152,7 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
+           github-src="charts/pie-chart/animation"
            alt="$Platform$ 円チャートのアニメーション" >
 </code-view>
 
@@ -193,7 +198,6 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 - `OthersCategoryThreshold`
 - `OthersCategoryType`
 - `SelectionMode`
-- `XamPieChart`
 
 チャート タイプ       | コントロール名   | API メンバー
 -----------------|----------------|------------

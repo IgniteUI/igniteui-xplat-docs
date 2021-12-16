@@ -6,10 +6,12 @@ mentionedTypes: ['ZoomSlider, XamDataChart']
 _language: ja
 ---
 # $Platform$ ズーム スライダーの概要
+
 $Platform$ ZoomSlider コントロールは、範囲対応コントロールにズーム機能を提供します。ZoomSlider には、水平スクロールバー、全範囲の縮小表示、サイズ変更可能なズーム範囲ウィンドウの機能があります。ZoomSlider は、スタンド アロン コントロールとして機能できません。または、DataChart や CategoryChart などの範囲ベースのコントロールの拡張機能として動作します。
 
 ## $Platform$ ズーム スライダーの例
 
+以下のサンプルは、`ZoomSlider` を使用して `XamDataChart` のコンテンツをナビゲートする方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -45,7 +47,7 @@ npm install --save {PackageCharts}
 `ZoomSlider` を作成するには、以下のモジュールが必要です。
 
 ```razor
-ZoomSliderModule.Register(IgniteUIBlazor);
+IgbZoomSliderModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -103,3 +105,14 @@ IgcZoomSliderModule.register();
   </igc-zoom-slider>
 ```
 <div class="divider--half"></div>
+
+## その他のリソース
+
+チャートの詳細については、[グラフの機能](charts/chart-features.md)トピックを参照してください。
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `ZoomSlider`
+- `XamDataChart`

@@ -3,6 +3,7 @@ title: $Platform$ バブル チャート | データ可視化 | インフラジ�
 _description: インフラジスティックス の $Platform$ バブル チャート
 _keywords: $Platform$ Charts, Bubble Chart, Infragistics, $Platform$ チャート, バブル チャート, インフラジスティックス
 mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ バブル チャート
@@ -16,6 +17,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="$Platform$ バブル チャートの例" >
 </code-view>
 
@@ -23,11 +25,12 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 
 ## 単一シリーズの $Platform$ バブル チャート
 
-以下の例に示すように、データを `BubbleSeries` の `DataSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
+以下の例に示すように、データを `BubbleSeries` の `ItemsSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
+           github-src="charts/data-chart/scatter-bubble-chart-single-source"
            alt="単一シリーズの  $Platform$ バブル チャート" >
 </code-view>
 
@@ -35,11 +38,12 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 
 ## 複数シリーズの $Platform$ バブル チャート
 
-$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `DataSource` プロパティに設定することで機能します。
+$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
+           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
            alt="複数シリーズの $Platform$ バブル チャート" >
 </code-view>
 
@@ -52,6 +56,7 @@ $Platform$ バブル チャートでは、`MarkerType` プロパティを使用�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
+           github-src="charts/data-chart/scatter-bubble-chart-styling"
            alt="$Platform$ バブル チャートのスタイル設定" >
 </code-view>
 
@@ -70,7 +75,7 @@ $Platform$ バブル チャートでは、`MarkerType` プロパティを使用�
 - `XamDataChart`
 - `BubbleSeries`
 - `ScatterSeries`
-- `DataSource`
+- `ItemsSource`
 - `FillMemberPath`
 - `FillScale`
 - `MarkerType`

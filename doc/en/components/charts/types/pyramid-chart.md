@@ -3,6 +3,7 @@ title: $Platform$ Pyramid Chart | Population Pyramid | Data Visualization | Infr
 _description: Infragistics' $Platform$ Pyramid Chart
 _keywords: $Platform$ Charts, Pyramid Chart, Population Pyramid, Infragistics
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Pyramid Chart
 
@@ -15,6 +16,7 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-pyramid-chart"
+           github-src="charts/data-chart/pyramid-chart"
            alt="$Platform$ Pyramid Chart Example" >
 </code-view>
 

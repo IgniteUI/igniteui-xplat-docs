@@ -3,6 +3,7 @@ title: $Platform$ Bar Chart and Graph | $ProductName$
 _description: $Platform$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
 _keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Bar Chart
 
@@ -17,6 +18,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ Bar Chart Multiple Sources" >
 </code-view>
 
@@ -79,6 +81,7 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
+           github-src="charts/data-chart/bar-chart-single-source"
            alt="$Platform$ Bar Chart with Single Source" >
 </code-view>
 
@@ -91,6 +94,7 @@ The Bar Chart is able to render multiple bars per category for comparison purpos
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
+           github-src="charts/data-chart/bar-chart-multiple-sources"
            alt="$Platform$ Bar Chart with Multiple Sources" >
 </code-view>
 
@@ -103,6 +107,7 @@ The Bar Chart can be styled, and allows for the ability to use [annotation value
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
+           github-src="charts/data-chart/bar-chart-styling"
            alt="$Platform$ Bar Chart Styling" >
 </code-view>
 
@@ -119,6 +124,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
+           github-src="charts/data-chart/stacked-bar-chart"
            alt="$Platform$ Stacked Bar Chart" >
 </code-view>
 
@@ -133,6 +139,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
+           github-src="charts/data-chart/stacked-100-bar-chart"
            alt="$Platform$ Stacked 100 Bar Chart" >
 </code-view>
 
@@ -153,7 +160,7 @@ You can find more information about related chart types in these topics:
 The following table lists API members mentioned in the above sections:
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

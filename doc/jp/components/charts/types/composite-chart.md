@@ -3,6 +3,7 @@ title: $Platform$ 複合チャート | コンボ チャート | データ可視�
 _description: インフラジスティックスの $Platform$ 複合チャート
 _keywords: $Platform$ Charts, Composite Chart, Combo Chart, Infragistics, $Platform$ チャート, 複合チャート, コンボ チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 複合 / コンボ チャート
@@ -16,6 +17,7 @@ $ProductName$ 複合チャートまたはコンボ チャートは、同じプ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
+           github-src="charts/data-chart/composite-chart"
            alt="$Platform$ 複合チャートの例" >
 </code-view>
 

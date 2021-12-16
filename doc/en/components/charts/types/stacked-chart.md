@@ -3,6 +3,7 @@ title: $Platform$ Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Stacked Chart
 _keywords: $Platform$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics
 mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Stacked Chart
 
@@ -15,6 +16,7 @@ The following example, you can use the drop-down to switch between all of the di
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-chart-types"
+           github-src="charts/data-chart/stacked-chart-types"
            alt="$Platform$ Stacked Chart Types" >
 </code-view>
 
@@ -31,6 +33,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
+           github-src="charts/data-chart/stacked-area-chart"
            alt="$Platform$ Stacked Area Chart" >
 </code-view>
 
@@ -46,6 +49,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
+           github-src="charts/data-chart/stacked-100-area-chart"
            alt="$Platform$ Stacked 100 Area Chart" >
 </code-view>
 
@@ -63,6 +67,7 @@ In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
+           github-src="charts/data-chart/stacked-bar-chart"
            alt="$Platform$ Stacked Bar Chart" >
 </code-view>
 
@@ -78,6 +83,7 @@ In this example of a Stacked 100% Bar Chart, the Energy Product values are shown
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
+           github-src="charts/data-chart/stacked-100-bar-chart"
            alt="$Platform$ Stacked 100 Bar Chart" >
 </code-view>
 
@@ -93,6 +99,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
+           github-src="charts/data-chart/stacked-column-chart"
            alt="$Platform$ Stacked Column Chart" >
 </code-view>
 
@@ -108,6 +115,7 @@ The example below shows a study made for online shopping traffic by departments 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
+           github-src="charts/data-chart/stacked-100-column-chart"
            alt="$Platform$ Stacked 100 Column Chart" >
 </code-view>
 
@@ -153,6 +161,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
+           github-src="charts/data-chart/stacked-spline-area-chart"
            alt="$Platform$ Stacked Spline Area Chart" >
 </code-view>
 
@@ -168,6 +177,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
+           github-src="charts/data-chart/stacked-100-spline-area-chart"
            alt="$Platform$ Stacked 100 Spline Area Chart" >
 </code-view>
 
@@ -181,6 +191,7 @@ The Stacked Spline Chart is often used to show the change of value over time suc
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
+           github-src="charts/data-chart/stacked-spline-chart"
            alt="$Platform$ Stacked Spline Chart" >
 </code-view>
 
@@ -196,6 +207,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
+           github-src="charts/data-chart/stacked-100-spline-chart"
            alt="$Platform$ Stacked 100 Spline Chart" >
 </code-view>
 

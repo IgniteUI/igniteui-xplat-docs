@@ -1,689 +1,157 @@
-{
-"types": [
-{
-    "originalName": "InterpolationMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "InterpolationMode.ts",
- "mappedName": "InterpolationMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InterpolationMode", "mappedName": "RGB"}            ],
-           "originalName": "RGB"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InterpolationMode", "mappedName": "HSV"}            ],
-           "originalName": "HSV"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "EasingFunctions",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "EasingFunctions.ts",
- "mappedName": "EasingFunctions"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "DoubleValueChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-double-value-changed-event-args.ts",
- "mappedName": "IgcDoubleValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorReference",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "ErrorBarCalculatorReference.ts",
- "mappedName": "ErrorBarCalculatorReference"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "X"}            ],
-           "originalName": "X"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "Y"}            ],
-           "originalName": "Y"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "ErrorBarCalculatorType.ts",
- "mappedName": "ErrorBarCalculatorType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Fixed"}            ],
-           "originalName": "Fixed"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Percentage"}            ],
-           "originalName": "Percentage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Data"}            ],
-           "originalName": "Data"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardDeviation"}            ],
-           "originalName": "StandardDeviation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardError"}            ],
-           "originalName": "StandardError"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "RectChangedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-rect-changed-event-args.ts",
- "mappedName": "IgcRectChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "oldRect"}            ],
-           "originalName": "OldRect"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgRect", "mappedName": "newRect"}            ],
-           "originalName": "NewRect"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "InteractionState",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "InteractionState.ts",
- "mappedName": "InteractionState"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InteractionState", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InteractionState", "mappedName": "DragZoom"}            ],
-           "originalName": "DragZoom"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InteractionState", "mappedName": "DragPan"}            ],
-           "originalName": "DragPan"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "InteractionState", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "FormatSpecifier",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-format-specifier.ts",
-    "dynamicModuleName": "igc-format-specifier-dynamic-module.ts",
-    "moduleName": "igc-format-specifier-module.ts",
- "mappedName": "IgcFormatSpecifier"}   ],
-   "members": [
-   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "NumberFormatSpecifier",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-number-format-specifier.ts",
-    "dynamicModuleName": "igc-number-format-specifier-dynamic-module.ts",
-    "moduleName": "igc-number-format-specifier-module.ts",
- "mappedName": "IgcNumberFormatSpecifier"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "locale"}            ],
-           "originalName": "Locale"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "compactDisplay"}            ],
-           "originalName": "CompactDisplay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "currency"}            ],
-           "originalName": "Currency"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "currencyDisplay"}            ],
-           "originalName": "CurrencyDisplay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "currencySign"}            ],
-           "originalName": "CurrencySign"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
-           "originalName": "LocaleMatcher"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "notation"}            ],
-           "originalName": "Notation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
-           "originalName": "NumberingSystem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "signDisplay"}            ],
-           "originalName": "SignDisplay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "style"}            ],
-           "originalName": "Style"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "unit"}            ],
-           "originalName": "Unit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "unitDisplay"}            ],
-           "originalName": "UnitDisplay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "useGrouping"}            ],
-           "originalName": "UseGrouping"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumIntegerDigits"}            ],
-           "originalName": "MinimumIntegerDigits"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumFractionDigits"}            ],
-           "originalName": "MinimumFractionDigits"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumFractionDigits"}            ],
-           "originalName": "MaximumFractionDigits"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "minimumSignificantDigits"}            ],
-           "originalName": "MinimumSignificantDigits"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "maximumSignificantDigits"}            ],
-           "originalName": "MaximumSignificantDigits"
-       }   ],
-    "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DateTimeFormatSpecifier",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-date-time-format-specifier.ts",
-    "dynamicModuleName": "igc-date-time-format-specifier-dynamic-module.ts",
-    "moduleName": "igc-date-time-format-specifier-module.ts",
- "mappedName": "IgcDateTimeFormatSpecifier"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "locale"}            ],
-           "originalName": "Locale"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "dateStyle"}            ],
-           "originalName": "DateStyle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "timeStyle"}            ],
-           "originalName": "TimeStyle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "fractionalSecondDigits"}            ],
-           "originalName": "FractionalSecondDigits"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "calendar"}            ],
-           "originalName": "Calendar"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "dayPeriod"}            ],
-           "originalName": "DayPeriod"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "numberingSystem"}            ],
-           "originalName": "NumberingSystem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "localeMatcher"}            ],
-           "originalName": "LocaleMatcher"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "timeZone"}            ],
-           "originalName": "TimeZone"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hour12"}            ],
-           "originalName": "Hour12"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hourCycle"}            ],
-           "originalName": "HourCycle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "formatMatcher"}            ],
-           "originalName": "FormatMatcher"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "weekDay"}            ],
-           "originalName": "WeekDay"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "era"}            ],
-           "originalName": "Era"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "year"}            ],
-           "originalName": "Year"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "month"}            ],
-           "originalName": "Month"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "day"}            ],
-           "originalName": "Day"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "hour"}            ],
-           "originalName": "Hour"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "minute"}            ],
-           "originalName": "Minute"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "second"}            ],
-           "originalName": "Second"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "timeZoneName"}            ],
-           "originalName": "TimeZoneName"
-       }   ],
-    "originalBaseTypeName": "FormatSpecifier",
-    "originalBaseTypeNamespace": "Infragistics.Controls",
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ISyncableObservableCollectionChangedListener",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "SyncableObservableCollectionChangedListener.ts",
- "mappedName": "SyncableObservableCollectionChangedListener"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "onChanged"}            ],
-           "originalName": "OnChanged"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DataContext",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-data-context.ts",
- "mappedName": "IgcDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "actualItemBrush"}            ],
-           "originalName": "ActualItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "itemLabel"}            ],
-           "originalName": "ItemLabel"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "itemBrush"}            ],
-           "originalName": "ItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "number", "mappedName": "thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "legendLabel"}            ],
-           "originalName": "LegendLabel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TrendLineType",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "TrendLineType.ts",
- "mappedName": "TrendLineType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "LinearFit"}            ],
-           "originalName": "LinearFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "QuadraticFit"}            ],
-           "originalName": "QuadraticFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "CubicFit"}            ],
-           "originalName": "CubicFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "QuarticFit"}            ],
-           "originalName": "QuarticFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "QuinticFit"}            ],
-           "originalName": "QuinticFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "LogarithmicFit"}            ],
-           "originalName": "LogarithmicFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "ExponentialFit"}            ],
-           "originalName": "ExponentialFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "PowerLawFit"}            ],
-           "originalName": "PowerLawFit"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "SimpleAverage"}            ],
-           "originalName": "SimpleAverage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "ExponentialAverage"}            ],
-           "originalName": "ExponentialAverage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "ModifiedAverage"}            ],
-           "originalName": "ModifiedAverage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "CumulativeAverage"}            ],
-           "originalName": "CumulativeAverage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "TrendLineType", "mappedName": "WeightedAverage"}            ],
-           "originalName": "WeightedAverage"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "UnknownValuePlotting",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "UnknownValuePlotting.ts",
- "mappedName": "UnknownValuePlotting"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "UnknownValuePlotting", "mappedName": "LinearInterpolate"}            ],
-           "originalName": "LinearInterpolate"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "UnknownValuePlotting", "mappedName": "DontPlot"}            ],
-           "originalName": "DontPlot"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PropertyUpdatedEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-property-updated-event-args.ts",
- "mappedName": "IgcPropertyUpdatedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "propertyName"}            ],
-           "originalName": "PropertyName"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BaseControlTheme",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "BaseControlTheme.ts",
- "mappedName": "BaseControlTheme"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "Default"}            ],
-           "originalName": "Default"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "DenaliLight"}            ],
-           "originalName": "DenaliLight"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "MaterialLight"}            ],
-           "originalName": "MaterialLight"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-},
-{
-    "originalName": "ElevationMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "ElevationMode.ts",
- "mappedName": "ElevationMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ElevationMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ElevationMode", "mappedName": "MaterialShadow"}            ],
-           "originalName": "MaterialShadow"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ElevationMode", "mappedName": "HaloShadow"}            ],
-           "originalName": "HaloShadow"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-},
-{
-    "originalName": "ControlDisplayDensity",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "ControlDisplayDensity.ts",
- "mappedName": "ControlDisplayDensity"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "Comfortable"}            ],
-           "originalName": "Comfortable"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "Cosy"}            ],
-           "originalName": "Cosy"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "Compact"}            ],
-           "originalName": "Compact"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-}
-]
-}
+{"types":[
+  { "originalName":"InterpolationMode","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"InterpolationMode.ts","mappedName":"InterpolationMode"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"InterpolationMode","mappedName":"RGB"}],"originalName":"RGB"},
+    { "names":[{"platform":"WebComponents","mappedType":"InterpolationMode","mappedName":"HSV"}],"originalName":"HSV"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"EasingFunctions",
+    "names":[{"platform":"WebComponents","fileName":"EasingFunctions.ts","mappedName":"EasingFunctions"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"DoubleValueChangedEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-double-value-changed-event-args.ts","mappedName":"IgcDoubleValueChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"oldValue"}],"originalName":"OldValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics"},
+  { "originalName":"ErrorBarCalculatorReference","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ErrorBarCalculatorReference.ts","mappedName":"ErrorBarCalculatorReference"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorReference","mappedName":"X"}],"originalName":"X"},
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorReference","mappedName":"Y"}],"originalName":"Y"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"ErrorBarCalculatorType","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ErrorBarCalculatorType.ts","mappedName":"ErrorBarCalculatorType"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"Fixed"}],"originalName":"Fixed"},
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"Percentage"}],"originalName":"Percentage"},
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"Data"}],"originalName":"Data"},
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
+    { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"RectChangedEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-rect-changed-event-args.ts","mappedName":"IgcRectChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"IgRect","mappedName":"oldRect"}],"originalName":"OldRect"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgRect","mappedName":"newRect"}],"originalName":"NewRect"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics"},
+  { "originalName":"InteractionState","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"InteractionState.ts","mappedName":"InteractionState"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"DragZoom"}],"originalName":"DragZoom"},
+    { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"DragPan"}],"originalName":"DragPan"},
+    { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"FormatSpecifier",
+    "names":[{"platform":"WebComponents","fileName":"igc-format-specifier.ts","dynamicModuleName":"igc-format-specifier-dynamic-module.ts","moduleName":"igc-format-specifier-module.ts","mappedName":"IgcFormatSpecifier"}],"members":[],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NumberFormatSpecifier",
+    "names":[{"platform":"WebComponents","fileName":"igc-number-format-specifier.ts","dynamicModuleName":"igc-number-format-specifier-dynamic-module.ts","moduleName":"igc-number-format-specifier-module.ts","mappedName":"IgcNumberFormatSpecifier"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"compactDisplay"}],"originalName":"CompactDisplay"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"currency"}],"originalName":"Currency"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"currencyDisplay"}],"originalName":"CurrencyDisplay"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"currencySign"}],"originalName":"CurrencySign"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"localeMatcher"}],"originalName":"LocaleMatcher"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"notation"}],"originalName":"Notation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"numberingSystem"}],"originalName":"NumberingSystem"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"signDisplay"}],"originalName":"SignDisplay"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"style"}],"originalName":"Style"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unit"}],"originalName":"Unit"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitDisplay"}],"originalName":"UnitDisplay"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useGrouping"}],"originalName":"UseGrouping"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"minimumIntegerDigits"}],"originalName":"MinimumIntegerDigits"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"minimumFractionDigits"}],"originalName":"MinimumFractionDigits"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"maximumFractionDigits"}],"originalName":"MaximumFractionDigits"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"minimumSignificantDigits"}],"originalName":"MinimumSignificantDigits"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"maximumSignificantDigits"}],"originalName":"MaximumSignificantDigits"}],"originalBaseTypeName":"FormatSpecifier","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DateTimeFormatSpecifier",
+    "names":[{"platform":"WebComponents","fileName":"igc-date-time-format-specifier.ts","dynamicModuleName":"igc-date-time-format-specifier-dynamic-module.ts","moduleName":"igc-date-time-format-specifier-module.ts","mappedName":"IgcDateTimeFormatSpecifier"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"dateStyle"}],"originalName":"DateStyle"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"timeStyle"}],"originalName":"TimeStyle"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"fractionalSecondDigits"}],"originalName":"FractionalSecondDigits"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"calendar"}],"originalName":"Calendar"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"dayPeriod"}],"originalName":"DayPeriod"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"numberingSystem"}],"originalName":"NumberingSystem"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"localeMatcher"}],"originalName":"LocaleMatcher"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"timeZone"}],"originalName":"TimeZone"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"hour12"}],"originalName":"Hour12"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"hourCycle"}],"originalName":"HourCycle"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"formatMatcher"}],"originalName":"FormatMatcher"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"weekDay"}],"originalName":"WeekDay"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"era"}],"originalName":"Era"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"year"}],"originalName":"Year"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"month"}],"originalName":"Month"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"day"}],"originalName":"Day"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"hour"}],"originalName":"Hour"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"minute"}],"originalName":"Minute"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"second"}],"originalName":"Second"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"timeZoneName"}],"originalName":"TimeZoneName"}],"originalBaseTypeName":"FormatSpecifier","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ISyncableObservableCollectionChangedListener",
+    "names":[{"platform":"WebComponents","fileName":"SyncableObservableCollectionChangedListener.ts","mappedName":"SyncableObservableCollectionChangedListener"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"onChanged"}],"originalName":"OnChanged"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DataContext",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-context.ts","mappedName":"IgcDataContext"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualItemBrush"}],"originalName":"ActualItemBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"itemLabel"}],"originalName":"ItemLabel"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"itemBrush"}],"originalName":"ItemBrush"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"legendLabel"}],"originalName":"LegendLabel"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TrendLineType","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"TrendLineType.ts","mappedName":"TrendLineType"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"LinearFit"}],"originalName":"LinearFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"QuadraticFit"}],"originalName":"QuadraticFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"CubicFit"}],"originalName":"CubicFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"QuarticFit"}],"originalName":"QuarticFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"QuinticFit"}],"originalName":"QuinticFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"LogarithmicFit"}],"originalName":"LogarithmicFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"ExponentialFit"}],"originalName":"ExponentialFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"PowerLawFit"}],"originalName":"PowerLawFit"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"SimpleAverage"}],"originalName":"SimpleAverage"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"ExponentialAverage"}],"originalName":"ExponentialAverage"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"ModifiedAverage"}],"originalName":"ModifiedAverage"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"CumulativeAverage"}],"originalName":"CumulativeAverage"},
+    { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"WeightedAverage"}],"originalName":"WeightedAverage"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"UnknownValuePlotting","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"UnknownValuePlotting.ts","mappedName":"UnknownValuePlotting"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"LinearInterpolate"}],"originalName":"LinearInterpolate"},
+    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"DontPlot"}],"originalName":"DontPlot"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PropertyUpdatedEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-property-updated-event-args.ts","mappedName":"IgcPropertyUpdatedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"oldValue"}],"originalName":"OldValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BaseControlTheme","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"BaseControlTheme.ts","mappedName":"BaseControlTheme"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"Default"}],"originalName":"Default"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"DenaliLight"}],"originalName":"DenaliLight"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"MaterialLight"}],"originalName":"MaterialLight"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
+  { "originalName":"ElevationMode","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ElevationMode.ts","mappedName":"ElevationMode"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ElevationMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"ElevationMode","mappedName":"MaterialShadow"}],"originalName":"MaterialShadow"},
+    { "names":[{"platform":"WebComponents","mappedType":"ElevationMode","mappedName":"HaloShadow"}],"originalName":"HaloShadow"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
+  { "originalName":"ControlDisplayDensity","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ControlDisplayDensity.ts","mappedName":"ControlDisplayDensity"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Comfortable"}],"originalName":"Comfortable"},
+    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Cosy"}],"originalName":"Cosy"},
+    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Compact"}],"originalName":"Compact"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"}]}

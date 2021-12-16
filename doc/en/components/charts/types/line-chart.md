@@ -3,6 +3,7 @@ title: $Platform$ Line Chart and Graph | $ProductName$
 _description: The $Platform$ Line chart is capable of handling high volumes of data, ranging into millions of data points, and updating them every few milliseconds. Try for FREE.
 _keywords: $Platform$ Charts, Line Chart, Line Graph, Infragistics
 mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Line Chart
 
@@ -17,6 +18,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
+           github-src="charts/category-chart/line-chart-multiple-sources"
            alt="$Platform$ Line Chart Multiple Sources" >
 </code-view>
 

@@ -3,6 +3,7 @@ title: $Platform$ ガント チャート | データ可視化 | インフラジ�
 _description: インフラジスティックスの $Platform$ ガント チャート
 _keywords: $Platform$ Charts, Gantt Chart, Infragistics, $Platform$ チャート, ガント チャート, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ガント チャート
@@ -17,6 +18,7 @@ $ProductName$ ガント チャートは棒チャートの一種で、さまざ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-gantt-chart"
+           github-src="charts/data-chart/gantt-chart"
            alt="$Platform$ ガント チャートの例" >
 </code-view>
 

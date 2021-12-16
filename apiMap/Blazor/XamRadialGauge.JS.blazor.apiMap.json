@@ -1,481 +1,98 @@
-{
-"types": [
-{
-    "originalName": "XamRadialGauge",
-   "names": [
-        { "platform": "Blazor",     "fileName": "RadialGauge.cs",
- "mappedName": "RadialGauge"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RangeBrushes"}            ],
-           "originalName": "RangeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RangeOutlines"}            ],
-           "originalName": "RangeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMinimumValue"}            ],
-           "originalName": "ActualMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualMaximumValue"}            ],
-           "originalName": "ActualMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CenterX"}            ],
-           "originalName": "CenterX"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CenterY"}            ],
-           "originalName": "CenterY"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ScaleStartAngle"}            ],
-           "originalName": "ScaleStartAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ScaleEndAngle"}            ],
-           "originalName": "ScaleEndAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "SweepDirection", "mappedName": "ScaleSweepDirection"}            ],
-           "originalName": "ScaleSweepDirection"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NeedleBrush"}            ],
-           "originalName": "NeedleBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NeedleOutline"}            ],
-           "originalName": "NeedleOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleStartExtent"}            ],
-           "originalName": "NeedleStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleEndExtent"}            ],
-           "originalName": "NeedleEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeNeedleShape", "mappedName": "NeedleShape"}            ],
-           "originalName": "NeedleShape"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleStartWidthRatio"}            ],
-           "originalName": "NeedleStartWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleEndWidthRatio"}            ],
-           "originalName": "NeedleEndWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleBaseFeatureWidthRatio"}            ],
-           "originalName": "NeedleBaseFeatureWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleBaseFeatureExtent"}            ],
-           "originalName": "NeedleBaseFeatureExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedlePointFeatureWidthRatio"}            ],
-           "originalName": "NeedlePointFeatureWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedlePointFeatureExtent"}            ],
-           "originalName": "NeedlePointFeatureExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedlePivotWidthRatio"}            ],
-           "originalName": "NeedlePivotWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedlePivotInnerWidthRatio"}            ],
-           "originalName": "NeedlePivotInnerWidthRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugePivotShape", "mappedName": "NeedlePivotShape"}            ],
-           "originalName": "NeedlePivotShape"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ScaleStartExtent"}            ],
-           "originalName": "ScaleStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NeedlePivotBrush"}            ],
-           "originalName": "NeedlePivotBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "NeedlePivotOutline"}            ],
-           "originalName": "NeedlePivotOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedleStrokeThickness"}            ],
-           "originalName": "NeedleStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "NeedlePivotStrokeThickness"}            ],
-           "originalName": "NeedlePivotStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ScaleEndExtent"}            ],
-           "originalName": "ScaleEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelExtent"}            ],
-           "originalName": "LabelExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LabelInterval"}            ],
-           "originalName": "LabelInterval"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TickStartExtent"}            ],
-           "originalName": "TickStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TickEndExtent"}            ],
-           "originalName": "TickEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TickStrokeThickness"}            ],
-           "originalName": "TickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TickBrush"}            ],
-           "originalName": "TickBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FontBrush"}            ],
-           "originalName": "FontBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorTickStartExtent"}            ],
-           "originalName": "MinorTickStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorTickEndExtent"}            ],
-           "originalName": "MinorTickEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorTickStrokeThickness"}            ],
-           "originalName": "MinorTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MinorTickBrush"}            ],
-           "originalName": "MinorTickBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinorTickCount"}            ],
-           "originalName": "MinorTickCount"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ScaleBrush"}            ],
-           "originalName": "ScaleBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "BackingBrush"}            ],
-           "originalName": "BackingBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "BackingOutline"}            ],
-           "originalName": "BackingOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackingStrokeThickness"}            ],
-           "originalName": "BackingStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackingOuterExtent"}            ],
-           "originalName": "BackingOuterExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackingOversweep"}            ],
-           "originalName": "BackingOversweep"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ScaleOversweep"}            ],
-           "originalName": "ScaleOversweep"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeScaleOversweepShape", "mappedName": "ScaleOversweepShape"}            ],
-           "originalName": "ScaleOversweepShape"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackingCornerRadius"}            ],
-           "originalName": "BackingCornerRadius"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackingInnerExtent"}            ],
-           "originalName": "BackingInnerExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeBackingShape", "mappedName": "BackingShape"}            ],
-           "originalName": "BackingShape"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeRangeCollection", "mappedName": "Ranges"}            ],
-           "originalName": "Ranges"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RadiusMultiplier"}            ],
-           "originalName": "RadiusMultiplier"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "RadialGaugeDuplicateLabelOmissionStrategy", "mappedName": "DuplicateLabelOmissionStrategy"}            ],
-           "originalName": "DuplicateLabelOmissionStrategy"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNeedleDraggingEnabled"}            ],
-           "originalName": "IsNeedleDraggingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsNeedleDraggingConstrained"}            ],
-           "originalName": "IsNeedleDraggingConstrained"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Font"}            ],
-           "originalName": "Font"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TransitionProgress"}            ],
-           "originalName": "TransitionProgress"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "ActualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScaleValue"}            ],
-           "originalName": "ScaleValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UnscaleValue"}            ],
-           "originalName": "UnscaleValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetValueForPoint"}            ],
-           "originalName": "GetValueForPoint"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetPointForValue"}            ],
-           "originalName": "GetPointForValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "StyleUpdated"}            ],
-           "originalName": "StyleUpdated"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NeedleContainsPoint"}            ],
-           "originalName": "NeedleContainsPoint"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ContainerResized"}            ],
-           "originalName": "ContainerResized"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "Control",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "FormatRadialGaugeLabelEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FormatRadialGaugeLabelEventArgs.cs",
- "mappedName": "FormatRadialGaugeLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "AlignRadialGaugeLabelEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "AlignRadialGaugeLabelEventArgs.cs",
- "mappedName": "AlignRadialGaugeLabelEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "FormatRadialGaugeLabelEventArgs",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Gauges",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-},
-{
-    "originalName": "XamRadialGaugeRange",
-   "names": [
-        { "platform": "Blazor",     "fileName": "RadialGaugeRange.cs",
- "mappedName": "RadialGaugeRange"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brush"}            ],
-           "originalName": "Brush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StartValue"}            ],
-           "originalName": "StartValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "EndValue"}            ],
-           "originalName": "EndValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "InnerStartExtent"}            ],
-           "originalName": "InnerStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "InnerEndExtent"}            ],
-           "originalName": "InnerEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OuterStartExtent"}            ],
-           "originalName": "OuterStartExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "OuterEndExtent"}            ],
-           "originalName": "OuterEndExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Gauges"
-}
-]
-}
+{"types":[
+  { "originalName":"XamRadialGauge",
+    "names":[{"platform":"Blazor","fileName":"RadialGauge.cs","mappedName":"IgbRadialGauge"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RangeBrushes"}],"originalName":"RangeBrushes"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RangeOutlines"}],"originalName":"RangeOutlines"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualMinimumValue"}],"originalName":"ActualMinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualMaximumValue"}],"originalName":"ActualMaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CenterX"}],"originalName":"CenterX"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CenterY"}],"originalName":"CenterY"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ScaleStartAngle"}],"originalName":"ScaleStartAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ScaleEndAngle"}],"originalName":"ScaleEndAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"SweepDirection","mappedName":"ScaleSweepDirection"}],"originalName":"ScaleSweepDirection"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NeedleBrush"}],"originalName":"NeedleBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NeedleOutline"}],"originalName":"NeedleOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleStartExtent"}],"originalName":"NeedleStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleEndExtent"}],"originalName":"NeedleEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"RadialGaugeNeedleShape","mappedName":"NeedleShape"}],"originalName":"NeedleShape"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleStartWidthRatio"}],"originalName":"NeedleStartWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleEndWidthRatio"}],"originalName":"NeedleEndWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleBaseFeatureWidthRatio"}],"originalName":"NeedleBaseFeatureWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleBaseFeatureExtent"}],"originalName":"NeedleBaseFeatureExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedlePointFeatureWidthRatio"}],"originalName":"NeedlePointFeatureWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedlePointFeatureExtent"}],"originalName":"NeedlePointFeatureExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedlePivotWidthRatio"}],"originalName":"NeedlePivotWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedlePivotInnerWidthRatio"}],"originalName":"NeedlePivotInnerWidthRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"RadialGaugePivotShape","mappedName":"NeedlePivotShape"}],"originalName":"NeedlePivotShape"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ScaleStartExtent"}],"originalName":"ScaleStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NeedlePivotBrush"}],"originalName":"NeedlePivotBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NeedlePivotOutline"}],"originalName":"NeedlePivotOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedleStrokeThickness"}],"originalName":"NeedleStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"NeedlePivotStrokeThickness"}],"originalName":"NeedlePivotStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ScaleEndExtent"}],"originalName":"ScaleEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelExtent"}],"originalName":"LabelExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelInterval"}],"originalName":"LabelInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TickStartExtent"}],"originalName":"TickStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TickEndExtent"}],"originalName":"TickEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TickStrokeThickness"}],"originalName":"TickStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TickBrush"}],"originalName":"TickBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FontBrush"}],"originalName":"FontBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorTickStartExtent"}],"originalName":"MinorTickStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorTickEndExtent"}],"originalName":"MinorTickEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorTickStrokeThickness"}],"originalName":"MinorTickStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MinorTickBrush"}],"originalName":"MinorTickBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorTickCount"}],"originalName":"MinorTickCount"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ScaleBrush"}],"originalName":"ScaleBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackingBrush"}],"originalName":"BackingBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackingOutline"}],"originalName":"BackingOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackingStrokeThickness"}],"originalName":"BackingStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackingOuterExtent"}],"originalName":"BackingOuterExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackingOversweep"}],"originalName":"BackingOversweep"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ScaleOversweep"}],"originalName":"ScaleOversweep"},
+    { "names":[{"platform":"Blazor","mappedType":"RadialGaugeScaleOversweepShape","mappedName":"ScaleOversweepShape"}],"originalName":"ScaleOversweepShape"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackingCornerRadius"}],"originalName":"BackingCornerRadius"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackingInnerExtent"}],"originalName":"BackingInnerExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"RadialGaugeBackingShape","mappedName":"BackingShape"}],"originalName":"BackingShape"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbRadialGaugeRangeCollection","mappedName":"Ranges"}],"originalName":"Ranges"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusMultiplier"}],"originalName":"RadiusMultiplier"},
+    { "names":[{"platform":"Blazor","mappedType":"RadialGaugeDuplicateLabelOmissionStrategy","mappedName":"DuplicateLabelOmissionStrategy"}],"originalName":"DuplicateLabelOmissionStrategy"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsNeedleDraggingEnabled"}],"originalName":"IsNeedleDraggingEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsNeedleDraggingConstrained"}],"originalName":"IsNeedleDraggingConstrained"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Font"}],"originalName":"Font"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelFormat"}],"originalName":"LabelFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"LabelFormatSpecifiers"}],"originalName":"LabelFormatSpecifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TransitionProgress"}],"originalName":"TransitionProgress"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScaleValue"}],"originalName":"ScaleValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"UnscaleValue"}],"originalName":"UnscaleValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetValueForPoint"}],"originalName":"GetValueForPoint"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetPointForValue"}],"originalName":"GetPointForValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StyleUpdated"}],"originalName":"StyleUpdated"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NeedleContainsPoint"}],"originalName":"NeedleContainsPoint"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ContainerResized"}],"originalName":"ContainerResized"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"},
+  { "originalName":"FormatRadialGaugeLabelEventArgs",
+    "names":[{"platform":"Blazor","fileName":"FormatRadialGaugeLabelEventArgs.cs","mappedName":"IgbFormatRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Gauges"},
+  { "originalName":"AlignRadialGaugeLabelEventArgs",
+    "names":[{"platform":"Blazor","fileName":"AlignRadialGaugeLabelEventArgs.cs","mappedName":"IgbAlignRadialGaugeLabelEventArgs"}],"members":[],"originalBaseTypeName":"FormatRadialGaugeLabelEventArgs","originalBaseTypeNamespace":"Infragistics.Controls.Gauges","originalNamespace":"Infragistics.Controls.Gauges"},
+  { "originalName":"XamRadialGaugeRange",
+    "names":[{"platform":"Blazor","fileName":"RadialGaugeRange.cs","mappedName":"IgbRadialGaugeRange"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brush"}],"originalName":"Brush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartValue"}],"originalName":"StartValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EndValue"}],"originalName":"EndValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerStartExtent"}],"originalName":"InnerStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerEndExtent"}],"originalName":"InnerEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterStartExtent"}],"originalName":"OuterStartExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OuterEndExtent"}],"originalName":"OuterEndExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Gauges"}]}

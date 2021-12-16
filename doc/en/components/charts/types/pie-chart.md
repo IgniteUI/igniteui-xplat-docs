@@ -3,6 +3,7 @@ title: $Platform$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized UI control that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
 mentionedTypes: ["XamPieChart", "XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Pie Chart
 
@@ -17,6 +18,7 @@ This example of an $Platform$ Pie Chart includes a simple data set with 6 values
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
+           github-src="charts/pie-chart/overview"
            alt="$Platform$ Pie Chart Overview" >
 </code-view>
 
@@ -74,6 +76,7 @@ Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
+           github-src="charts/pie-chart/legend"
            alt="$Platform$ Pie Chart Legend" >
 </code-view>
 
@@ -90,6 +93,7 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
+           github-src="charts/pie-chart/others"
            alt="$Platform$ Pie Chart Others" >
 </code-view>
 
@@ -102,6 +106,7 @@ The pie chart supports explosion of individual pie slices as well as a `SliceCli
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
+           github-src="charts/pie-chart/explosion"
            alt="$Platform$ Pie Chart Explosion" >
 </code-view>
 
@@ -131,6 +136,7 @@ For scenarios where you click on the Others slice, the pie chart will return an 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
+           github-src="charts/pie-chart/selection"
            alt="$Platform$ Pie Chart Selection" >
 </code-view>
 
@@ -145,6 +151,7 @@ In the code below, the radiusFactor is increasing the chart by 0.25% of the size
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
+           github-src="charts/pie-chart/animation"
            alt="$Platform$ Pie Chart Animation" >
 </code-view>
 

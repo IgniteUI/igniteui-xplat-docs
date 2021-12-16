@@ -1,136 +1,32 @@
-{
-"types": [
-{
-    "originalName": "LegendMouseEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "LegendMouseEventArgs.cs",
- "mappedName": "LegendMouseEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalSource"}            ],
-           "originalName": "OriginalSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendItem"}            ],
-           "originalName": "LegendItem"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "LegendMouseButtonEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "LegendMouseButtonEventArgs.cs",
- "mappedName": "LegendMouseButtonEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Handled"}            ],
-           "originalName": "Handled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "OriginalSource"}            ],
-           "originalName": "OriginalSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "LegendItem"}            ],
-           "originalName": "LegendItem"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ItemLegend",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ItemLegend.cs",
- "mappedName": "ItemLegend"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "LegendOrientation", "mappedName": "Orientation"}            ],
-           "originalName": "Orientation"
-       }   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "Legend",
-   "names": [
-        { "platform": "Blazor",     "fileName": "Legend.cs",
- "mappedName": "Legend"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "LegendOrientation", "mappedName": "Orientation"}            ],
-           "originalName": "Orientation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextStyle"}            ],
-           "originalName": "TextStyle"
-       }   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "LegendBase",
-   "names": [
-        { "platform": "Blazor",     "fileName": "LegendBase.cs",
- "mappedName": "LegendBase"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ExportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "ContentControl",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialLegend",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FinancialLegend.cs",
- "mappedName": "FinancialLegend"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScaleLegend",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ScaleLegend.cs",
- "mappedName": "ScaleLegend"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"LegendMouseEventArgs",
+    "names":[{"platform":"Blazor","fileName":"LegendMouseEventArgs.cs","mappedName":"IgbLegendMouseEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"OriginalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"LegendItem"}],"originalName":"LegendItem"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendMouseButtonEventArgs",
+    "names":[{"platform":"Blazor","fileName":"LegendMouseButtonEventArgs.cs","mappedName":"IgbLegendMouseButtonEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Handled"}],"originalName":"Handled"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"OriginalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"LegendItem"}],"originalName":"LegendItem"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ItemLegend",
+    "names":[{"platform":"Blazor","fileName":"ItemLegend.cs","mappedName":"IgbItemLegend"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Legend",
+    "names":[{"platform":"Blazor","fileName":"Legend.cs","mappedName":"IgbLegend"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendBase",
+    "names":[{"platform":"Blazor","fileName":"LegendBase.cs","mappedName":"IgbLegendBase"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialLegend",
+    "names":[{"platform":"Blazor","fileName":"FinancialLegend.cs","mappedName":"IgbFinancialLegend"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScaleLegend",
+    "names":[{"platform":"Blazor","fileName":"ScaleLegend.cs","mappedName":"IgbScaleLegend"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

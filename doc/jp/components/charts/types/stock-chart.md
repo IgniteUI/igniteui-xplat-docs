@@ -2,7 +2,8 @@
 title: $Platform$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $Platform$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
-mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["FinancialChart", "CategoryChartType", "IndicatorTypes", "ZoomSliderType"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 株価チャート
@@ -16,6 +17,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ 株価チャートの例" >
 </code-view>
 
@@ -65,6 +67,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
+           github-src="charts/financial-chart/multiple-data"
            alt="$Platform$ 株価指数チャート" >
 </code-view>
 
@@ -77,6 +80,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
+           github-src="charts/financial-chart/stock-index-chart"
            alt="$Platform$ 株価指数チャート" >
 </code-view>
 
@@ -85,6 +89,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 ## $Platform$ 株価チャートのスタイル設定
 
 他のシリーズの複合などのより多くの機能を備えた株価チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、株価チャートは Amazon、Microsoft、Tesla の収益を比較しています。
+
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -107,6 +112,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
+           github-src="charts/financial-chart/annotations"
            alt="$Platform$ チャートの注釈" >
 </code-view>
 
@@ -144,6 +150,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
+           github-src="charts/financial-chart/panes"
            alt="$Platform$ チャートのペイン" >
 </code-view>
 

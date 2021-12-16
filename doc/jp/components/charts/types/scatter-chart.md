@@ -3,6 +3,7 @@ title: $Platform$ 散布図 | データ可視化 | インフラジスティッ�
 _description: インフラジスティックスの $Platform$ 散布図
 _keywords: $Platform$ Charts, Scatter Chart, Infragistics, $Platform$ チャート, 散布図, インフラジスティックス
 mentionedTypes: ["XamDataChart", "ScatterSeries", "ScatterLineSeries", "ScatterSplineSeries", "HighDensityScatterSeries", "ScatterAreaSeries", "ScatterContourSeries"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ 散布図
@@ -18,6 +19,7 @@ $Platform$ 散布図は、マーカーのコレクションとして描画され
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
+           github-src="charts/data-chart/scatter-point-chart"
            alt="$Platform$ 散布マーカー チャート" >
 </code-view>
 
@@ -32,6 +34,7 @@ $Platform$ は、直線で接続されたマーカーのコレクションとし
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart"
+           github-src="charts/data-chart/scatter-line-chart"
            alt="$Platform$ 散布折れ線チャート" >
 </code-view>
 
@@ -45,7 +48,8 @@ $Platform$ は、曲線スプラインで接続されたマーカーのコレク
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-spline-chart"
+           github-src="charts/data-chart/scatter-spline-chart"
            alt="$Platform$ 散布スプライン チャート" >
 </code-view>
 
@@ -60,6 +64,7 @@ $Platform$ 散布高密度 (HD) チャートを使用して、わずかな読み
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-hd-series"
+           github-src="charts/data-chart/type-scatter-hd-series"
            alt="$Platform$ 散布 HD チャート" >
 </code-view>
 
@@ -74,6 +79,7 @@ $Platform$ 散布エリア チャートは各ポイントに割り当てられ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series"
+           github-src="charts/data-chart/type-scatter-area-series"
            alt="$Platform$ 散布エリア チャート" >
 </code-view>
 
@@ -88,6 +94,7 @@ $Platform$ 散布等高線チャートは、X データと Y データの三角�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series"
+           github-src="charts/data-chart/type-scatter-contour-series"
            alt="$Platform$ 散布等高線チャート" >
 </code-view>
 

@@ -3,6 +3,7 @@ title: $Platform$ Shape Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Shape Chart
 _keywords: $Platform$ Charts, Shape Chart, Infragistics
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Shape Charts
 
@@ -17,6 +18,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
+           github-src="charts/data-chart/type-scatter-polygon-series"
            alt="$Platform$ Scatter Polygon Chart" >
 </code-view>
 
@@ -31,6 +33,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
+           github-src="charts/data-chart/type-scatter-polyline-series"
            alt="$Platform$ Scatter Polyline Chart" >
 </code-view>
 
@@ -51,7 +54,7 @@ The following table lists API members mentioned in the above sections:
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

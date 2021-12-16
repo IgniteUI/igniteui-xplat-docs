@@ -1,50 +1,12 @@
-{
-"extraFiles": [
-"igx-column-chooser-module.ts"
-],
-"types": [
-{
-    "originalName": "ColumnChooser",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-column-chooser-component.ts",
- "mappedName": "IgxColumnChooserComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxDataGridComponent", "mappedName": "targetGrid"}            ],
-           "originalName": "TargetGrid"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "title"}            ],
-           "originalName": "Title"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "titleColor"}            ],
-           "originalName": "TitleColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
-           "originalName": "FilterPlaceholderText"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
-}
-]
-}
+{"extraFiles":["igx-column-chooser-module.ts"],
+  "types":[
+  { "originalName":"ColumnChooser",
+    "names":[{"platform":"Angular","fileName":"igx-column-chooser-component.ts","mappedName":"IgxColumnChooserComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"filterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

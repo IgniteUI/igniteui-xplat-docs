@@ -3,6 +3,7 @@ title: $Platform$ チャート アニメーション | データ可視化 | イ�
 _description: インフラジスティックスの $Platform$ チャート アニメーション
 _keywords: $Platform$ Charts, Animations, Infragistics, $Platform$ チャート, アニメーション, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 

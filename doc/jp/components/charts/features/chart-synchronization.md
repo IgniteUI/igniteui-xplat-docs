@@ -3,11 +3,12 @@ title: $Platform$  $Platform$ データ チャート | データ可視化ツー�
 _description: ズーム操作、パン操作および十字線イベントを含む複数のインフラジスティックスの $Platform$ チャート コントロール間で同期します。$ProductName$ のグラフ同期機能について説明します。
 _keywords: $Platform$ charts, data chart, synchronization, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 同期化, インフラジスティックス
 mentionedTypes: ["XamDataChart"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ チャート同期化
 
-$ ProductName$ データ チャートを使用すると、複数のチャート間のズーム、パン、および十字線イベントの調整に関して同期をとることができます。これは、データソースが軸に関して似ているか同じであると仮定して、複数のチャートの同じ領域を視覚化するのに役立ちます。
+$ ProductName$ データ チャートを使用すると、複数のチャート間のズーム、パン、および十字線イベントの調整に関して同期をとることができます。これは、データ ソースが軸に関して似ているか同じであると仮定して、複数のチャートの同じ領域を視覚化するのに役立ちます。
 
 ## $Platform$ チャート同期化の例
 

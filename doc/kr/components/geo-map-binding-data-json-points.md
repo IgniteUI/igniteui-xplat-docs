@@ -2,7 +2,9 @@
 title: $Platform$ Map | Data Visualization Tools | Geographic JSON Data | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
+_language: kr
 ---
+
 # $Platform$ Binding JSON Files with Geographic Locations
 
 With `XamGeographicMap`, you can plot geographic data loaded from various file types. For example, you can load geographic locations from JavaScript Object Notation (JSON) file.

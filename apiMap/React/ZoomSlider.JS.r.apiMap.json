@@ -1,323 +1,68 @@
-{
-"extraFiles": [
-"igr-zoom-slider-module.ts"
-],
-"types": [
-{
-    "originalName": "ZoomSlider",
-   "names": [
-        { "platform": "React",     "fileName": "igr-zoom-slider.ts",
- "mappedName": "IgrZoomSlider"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "panTransitionDuration"}            ],
-           "originalName": "PanTransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "maxZoomWidth"}            ],
-           "originalName": "MaxZoomWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualPixelScalingRatio"}            ],
-           "originalName": "ActualPixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgRect", "mappedName": "windowRect"}            ],
-           "originalName": "WindowRect"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minZoomWidth"}            ],
-           "originalName": "MinZoomWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "startInset"}            ],
-           "originalName": "StartInset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "endInset"}            ],
-           "originalName": "EndInset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trackStartInset"}            ],
-           "originalName": "TrackStartInset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "trackEndInset"}            ],
-           "originalName": "TrackEndInset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "barExtent"}            ],
-           "originalName": "BarExtent"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "ZoomSliderOrientation", "mappedName": "orientation"}            ],
-           "originalName": "Orientation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerThumbBrush"}            ],
-           "originalName": "LowerThumbBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowerThumbStrokeThickness"}            ],
-           "originalName": "LowerThumbStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "higherThumbStrokeThickness"}            ],
-           "originalName": "HigherThumbStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherThumbBrush"}            ],
-           "originalName": "HigherThumbBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerThumbOutline"}            ],
-           "originalName": "LowerThumbOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherThumbOutline"}            ],
-           "originalName": "HigherThumbOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerThumbRidgesBrush"}            ],
-           "originalName": "LowerThumbRidgesBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherThumbRidgesBrush"}            ],
-           "originalName": "HigherThumbRidgesBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowerThumbWidth"}            ],
-           "originalName": "LowerThumbWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "higherThumbWidth"}            ],
-           "originalName": "HigherThumbWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowerThumbHeight"}            ],
-           "originalName": "LowerThumbHeight"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "higherThumbHeight"}            ],
-           "originalName": "HigherThumbHeight"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerShadeBrush"}            ],
-           "originalName": "LowerShadeBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerShadeOutline"}            ],
-           "originalName": "LowerShadeOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowerShadeStrokeThickness"}            ],
-           "originalName": "LowerShadeStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherShadeBrush"}            ],
-           "originalName": "HigherShadeBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherShadeOutline"}            ],
-           "originalName": "HigherShadeOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "higherShadeStrokeThickness"}            ],
-           "originalName": "HigherShadeStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "barBrush"}            ],
-           "originalName": "BarBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "barOutline"}            ],
-           "originalName": "BarOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "barStrokeThickness"}            ],
-           "originalName": "BarStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "rangeThumbBrush"}            ],
-           "originalName": "RangeThumbBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "rangeThumbOutline"}            ],
-           "originalName": "RangeThumbOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "rangeThumbStrokeThickness"}            ],
-           "originalName": "RangeThumbStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "rangeThumbRidgesBrush"}            ],
-           "originalName": "RangeThumbRidgesBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerCalloutBrush"}            ],
-           "originalName": "LowerCalloutBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerCalloutTextColor"}            ],
-           "originalName": "LowerCalloutTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "lowerCalloutOutline"}            ],
-           "originalName": "LowerCalloutOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "lowerCalloutStrokeThickness"}            ],
-           "originalName": "LowerCalloutStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherCalloutBrush"}            ],
-           "originalName": "HigherCalloutBrush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherCalloutTextColor"}            ],
-           "originalName": "HigherCalloutTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "higherCalloutOutline"}            ],
-           "originalName": "HigherCalloutOutline"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "higherCalloutStrokeThickness"}            ],
-           "originalName": "HigherCalloutStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomThumbProvided"}            ],
-           "originalName": "IsCustomThumbProvided"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomRangeThumbProvided"}            ],
-           "originalName": "IsCustomRangeThumbProvided"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomBarProvided"}            ],
-           "originalName": "IsCustomBarProvided"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomShadeProvided"}            ],
-           "originalName": "IsCustomShadeProvided"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "areThumbCalloutsEnabled"}            ],
-           "originalName": "AreThumbCalloutsEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "onDetachedFromUI"}            ],
-           "originalName": "OnDetachedFromUI"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "onAttachedToUI"}            ],
-           "originalName": "OnAttachedToUI"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "destroy"}            ],
-           "originalName": "Destroy"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "trackDirty"}            ],
-           "originalName": "TrackDirty"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "show"}            ],
-           "originalName": "Show"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "hide"}            ],
-           "originalName": "Hide"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Navigation.Implementation"
-},
-{
-    "originalName": "ZoomSliderResolvingAxisValueEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-zoom-slider-resolving-axis-value-event-args.ts",
- "mappedName": "IgrZoomSliderResolvingAxisValueEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "position"}            ],
-           "originalName": "Position"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "any", "mappedName": "value"}            ],
-           "originalName": "Value"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Navigation.Implementation"
-}
-]
-}
+{"extraFiles":["igr-zoom-slider-module.ts"],
+  "types":[
+  { "originalName":"ZoomSlider",
+    "names":[{"platform":"React","fileName":"igr-zoom-slider.ts","mappedName":"IgrZoomSlider"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"panTransitionDuration"}],"originalName":"PanTransitionDuration"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"maxZoomWidth"}],"originalName":"MaxZoomWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"IgRect","mappedName":"windowRect"}],"originalName":"WindowRect"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"minZoomWidth"}],"originalName":"MinZoomWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"startInset"}],"originalName":"StartInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"endInset"}],"originalName":"EndInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"trackStartInset"}],"originalName":"TrackStartInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"trackEndInset"}],"originalName":"TrackEndInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"barExtent"}],"originalName":"BarExtent"},
+    { "names":[{"platform":"React","mappedType":"ZoomSliderOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerThumbBrush"}],"originalName":"LowerThumbBrush"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowerThumbStrokeThickness"}],"originalName":"LowerThumbStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"higherThumbStrokeThickness"}],"originalName":"HigherThumbStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherThumbBrush"}],"originalName":"HigherThumbBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerThumbOutline"}],"originalName":"LowerThumbOutline"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherThumbOutline"}],"originalName":"HigherThumbOutline"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerThumbRidgesBrush"}],"originalName":"LowerThumbRidgesBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherThumbRidgesBrush"}],"originalName":"HigherThumbRidgesBrush"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowerThumbWidth"}],"originalName":"LowerThumbWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"higherThumbWidth"}],"originalName":"HigherThumbWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowerThumbHeight"}],"originalName":"LowerThumbHeight"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"higherThumbHeight"}],"originalName":"HigherThumbHeight"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerShadeBrush"}],"originalName":"LowerShadeBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerShadeOutline"}],"originalName":"LowerShadeOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowerShadeStrokeThickness"}],"originalName":"LowerShadeStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherShadeBrush"}],"originalName":"HigherShadeBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherShadeOutline"}],"originalName":"HigherShadeOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"higherShadeStrokeThickness"}],"originalName":"HigherShadeStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"barBrush"}],"originalName":"BarBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"barOutline"}],"originalName":"BarOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"barStrokeThickness"}],"originalName":"BarStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"rangeThumbBrush"}],"originalName":"RangeThumbBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"rangeThumbOutline"}],"originalName":"RangeThumbOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"rangeThumbStrokeThickness"}],"originalName":"RangeThumbStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"rangeThumbRidgesBrush"}],"originalName":"RangeThumbRidgesBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerCalloutBrush"}],"originalName":"LowerCalloutBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerCalloutTextColor"}],"originalName":"LowerCalloutTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"lowerCalloutOutline"}],"originalName":"LowerCalloutOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"lowerCalloutStrokeThickness"}],"originalName":"LowerCalloutStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherCalloutBrush"}],"originalName":"HigherCalloutBrush"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherCalloutTextColor"}],"originalName":"HigherCalloutTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"higherCalloutOutline"}],"originalName":"HigherCalloutOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"higherCalloutStrokeThickness"}],"originalName":"HigherCalloutStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomThumbProvided"}],"originalName":"IsCustomThumbProvided"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomRangeThumbProvided"}],"originalName":"IsCustomRangeThumbProvided"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomBarProvided"}],"originalName":"IsCustomBarProvided"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomShadeProvided"}],"originalName":"IsCustomShadeProvided"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"areThumbCalloutsEnabled"}],"originalName":"AreThumbCalloutsEnabled"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"onDetachedFromUI"}],"originalName":"OnDetachedFromUI"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"onAttachedToUI"}],"originalName":"OnAttachedToUI"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"trackDirty"}],"originalName":"TrackDirty"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"show"}],"originalName":"Show"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"},
+  { "originalName":"ZoomSliderResolvingAxisValueEventArgs",
+    "names":[{"platform":"React","fileName":"igr-zoom-slider-resolving-axis-value-event-args.ts","mappedName":"IgrZoomSliderResolvingAxisValueEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"position"}],"originalName":"Position"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"}]}

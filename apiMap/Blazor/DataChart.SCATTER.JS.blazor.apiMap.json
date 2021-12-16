@@ -1,490 +1,109 @@
-{
-"types": [
-{
-    "originalName": "HighDensityScatterSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "HighDensityScatterSeries.cs",
- "mappedName": "HighDensityScatterSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseBruteForce"}            ],
-           "originalName": "UseBruteForce"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ProgressiveLoad"}            ],
-           "originalName": "ProgressiveLoad"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HeatMinimum"}            ],
-           "originalName": "HeatMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "HeatMaximum"}            ],
-           "originalName": "HeatMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HeatMinimumColor"}            ],
-           "originalName": "HeatMinimumColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HeatMaximumColor"}            ],
-           "originalName": "HeatMaximumColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "PointExtent"}            ],
-           "originalName": "PointExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ProgressiveStatus"}            ],
-           "originalName": "ProgressiveStatus"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
-           "originalName": "GetItem"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ProgressiveLoadStatusEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ProgressiveLoadStatusEventArgs.cs",
- "mappedName": "ProgressiveLoadStatusEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CurrentStatus"}            ],
-           "originalName": "CurrentStatus"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BrushScale",
-   "names": [
-        { "platform": "Blazor",     "fileName": "BrushScale.cs",
- "mappedName": "BrushScale"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "RegisterSeries"}            ],
-           "originalName": "RegisterSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "UnregisterSeries"}            ],
-           "originalName": "UnregisterSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetBrush"}            ],
-           "originalName": "GetBrush"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BubbleSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "BubbleSeries.cs",
- "mappedName": "BubbleSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "RadiusMemberPath"}            ],
-           "originalName": "RadiusMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "SizeScale", "mappedName": "RadiusScale"}            ],
-           "originalName": "RadiusScale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "FillMemberPath"}            ],
-           "originalName": "FillMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "BrushScale", "mappedName": "FillScale"}            ],
-           "originalName": "FillScale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "FillScaleUseGlobalValues"}            ],
-           "originalName": "FillScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "MarkerOutlineUsesFillScale"}            ],
-           "originalName": "MarkerOutlineUsesFillScale"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerOutlineBrightness"}            ],
-           "originalName": "MarkerOutlineBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MarkerBrushBrightness"}            ],
-           "originalName": "MarkerBrushBrightness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "RadiusScaleUseGlobalValues"}            ],
-           "originalName": "RadiusScaleUseGlobalValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
-           "originalName": "GetItemValue"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CustomPaletteBrushScale",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CustomPaletteBrushScale.cs",
- "mappedName": "CustomPaletteBrushScale"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "BrushSelectionMode", "mappedName": "BrushSelectionMode"}            ],
-           "originalName": "BrushSelectionMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetBrush1"}            ],
-           "originalName": "GetBrush"
-       }   ],
-    "originalBaseTypeName": "BrushScale",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "SizeScale",
-   "names": [
-        { "platform": "Blazor",     "fileName": "SizeScale.cs",
- "mappedName": "SizeScale"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "GlobalMinimum"}            ],
-           "originalName": "GlobalMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "GlobalMaximum"}            ],
-           "originalName": "GlobalMaximum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLogarithmic"}            ],
-           "originalName": "IsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "LogarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentGlobalMinimum"}            ],
-           "originalName": "GetCurrentGlobalMinimum"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetCurrentGlobalMaximum"}            ],
-           "originalName": "GetCurrentGlobalMaximum"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ValueBrushScale",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ValueBrushScale.cs",
- "mappedName": "ValueBrushScale"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MinimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "MaximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsLogarithmic"}            ],
-           "originalName": "IsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "LogarithmBase"}            ],
-           "originalName": "LogarithmBase"
-       }   ],
-    "originalBaseTypeName": "BrushScale",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterBase",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ScatterBase.cs",
- "mappedName": "ScatterBase"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "NumericXAxis", "mappedName": "XAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "NumericYAxis", "mappedName": "YAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "TrendLineType", "mappedName": "TrendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TrendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ActualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TrendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CollisionAvoidanceType", "mappedName": "MarkerCollisionAvoidance"}            ],
-           "originalName": "MarkerCollisionAvoidance"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLineZIndex"}            ],
-           "originalName": "TrendLineZIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MaximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ItemSearchMode"}            ],
-           "originalName": "ItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "ItemSearchThreshold"}            ],
-           "originalName": "ItemSearchThreshold"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ScatterItemSearchMode", "mappedName": "ActualItemSearchMode"}            ],
-           "originalName": "ActualItemSearchMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterStyleAllowed"}            ],
-           "originalName": "IsCustomScatterStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomScatterMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomScatterMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValueMarkerBoundingBox"}            ],
-           "originalName": "GetSeriesValueMarkerBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "CanUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "MarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterLineSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ScatterLineSeries.cs",
- "mappedName": "ScatterLineSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ScatterSeries.cs",
- "mappedName": "ScatterSeries"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScatterSplineSeries",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ScatterSplineSeries.cs",
- "mappedName": "ScatterSplineSeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "ScatterBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"HighDensityScatterSeries",
+    "names":[{"platform":"Blazor","fileName":"HighDensityScatterSeries.cs","mappedName":"IgbHighDensityScatterSeries"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbNumericXAxis","mappedName":"XAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbNumericYAxis","mappedName":"YAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XMemberPath"}],"originalName":"XMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YMemberPath"}],"originalName":"YMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseBruteForce"}],"originalName":"UseBruteForce"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ProgressiveLoad"}],"originalName":"ProgressiveLoad"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeatMinimum"}],"originalName":"HeatMinimum"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeatMaximum"}],"originalName":"HeatMaximum"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeatMinimumColor"}],"originalName":"HeatMinimumColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeatMaximumColor"}],"originalName":"HeatMaximumColor"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"PointExtent"}],"originalName":"PointExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ProgressiveStatus"}],"originalName":"ProgressiveStatus"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ProgressiveLoadStatusEventArgs",
+    "names":[{"platform":"Blazor","fileName":"ProgressiveLoadStatusEventArgs.cs","mappedName":"IgbProgressiveLoadStatusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"CurrentStatus"}],"originalName":"CurrentStatus"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BrushScale",
+    "names":[{"platform":"Blazor","fileName":"BrushScale.cs","mappedName":"IgbBrushScale"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brushes"}],"originalName":"Brushes"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RegisterSeries"}],"originalName":"RegisterSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"UnregisterSeries"}],"originalName":"UnregisterSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetBrush"}],"originalName":"GetBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySeries"}],"originalName":"NotifySeries"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BubbleSeries",
+    "names":[{"platform":"Blazor","fileName":"BubbleSeries.cs","mappedName":"IgbBubbleSeries"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RadiusMemberPath"}],"originalName":"RadiusMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSizeScale","mappedName":"RadiusScale"}],"originalName":"RadiusScale"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelMemberPath"}],"originalName":"LabelMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FillMemberPath"}],"originalName":"FillMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbBrushScale","mappedName":"FillScale"}],"originalName":"FillScale"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"FillScaleUseGlobalValues"}],"originalName":"FillScaleUseGlobalValues"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"MarkerOutlineUsesFillScale"}],"originalName":"MarkerOutlineUsesFillScale"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MarkerOutlineBrightness"}],"originalName":"MarkerOutlineBrightness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MarkerBrushBrightness"}],"originalName":"MarkerBrushBrightness"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"RadiusScaleUseGlobalValues"}],"originalName":"RadiusScaleUseGlobalValues"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CustomPaletteBrushScale",
+    "names":[{"platform":"Blazor","fileName":"CustomPaletteBrushScale.cs","mappedName":"IgbCustomPaletteBrushScale"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"BrushSelectionMode","mappedName":"BrushSelectionMode"}],"originalName":"BrushSelectionMode"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetBrush1"}],"originalName":"GetBrush"}],"originalBaseTypeName":"BrushScale","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SizeScale",
+    "names":[{"platform":"Blazor","fileName":"SizeScale.cs","mappedName":"IgbSizeScale"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"GlobalMinimum"}],"originalName":"GlobalMinimum"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"GlobalMaximum"}],"originalName":"GlobalMaximum"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsLogarithmic"}],"originalName":"IsLogarithmic"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LogarithmBase"}],"originalName":"LogarithmBase"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentGlobalMinimum"}],"originalName":"GetCurrentGlobalMinimum"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCurrentGlobalMaximum"}],"originalName":"GetCurrentGlobalMaximum"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ValueBrushScale",
+    "names":[{"platform":"Blazor","fileName":"ValueBrushScale.cs","mappedName":"IgbValueBrushScale"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsLogarithmic"}],"originalName":"IsLogarithmic"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"LogarithmBase"}],"originalName":"LogarithmBase"}],"originalBaseTypeName":"BrushScale","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterBase",
+    "names":[{"platform":"Blazor","fileName":"ScatterBase.cs","mappedName":"IgbScatterBase"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbNumericXAxis","mappedName":"XAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbNumericYAxis","mappedName":"YAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XMemberPath"}],"originalName":"XMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YMemberPath"}],"originalName":"YMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"TrendLineType","mappedName":"TrendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"CollisionAvoidanceType","mappedName":"MarkerCollisionAvoidance"}],"originalName":"MarkerCollisionAvoidance"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLineZIndex"}],"originalName":"TrendLineZIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"MaximumMarkers"}],"originalName":"MaximumMarkers"},
+    { "names":[{"platform":"Blazor","mappedType":"ScatterItemSearchMode","mappedName":"ItemSearchMode"}],"originalName":"ItemSearchMode"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"ItemSearchThreshold"}],"originalName":"ItemSearchThreshold"},
+    { "names":[{"platform":"Blazor","mappedType":"ScatterItemSearchMode","mappedName":"ActualItemSearchMode"}],"originalName":"ActualItemSearchMode"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterStyleAllowed"}],"originalName":"IsCustomScatterStyleAllowed"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomScatterMarkerStyleAllowed"}],"originalName":"IsCustomScatterMarkerStyleAllowed"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValueMarkerBoundingBox"}],"originalName":"GetSeriesValueMarkerBoundingBox"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"CanUseAsXAxis"}],"originalName":"CanUseAsXAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetExactItemIndex"}],"originalName":"GetExactItemIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterLineSeries",
+    "names":[{"platform":"Blazor","fileName":"ScatterLineSeries.cs","mappedName":"IgbScatterLineSeries"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterSeries",
+    "names":[{"platform":"Blazor","fileName":"ScatterSeries.cs","mappedName":"IgbScatterSeries"}],"members":[],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScatterSplineSeries",
+    "names":[{"platform":"Blazor","fileName":"ScatterSplineSeries.cs","mappedName":"IgbScatterSplineSeries"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"ScatterBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

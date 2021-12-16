@@ -2,7 +2,8 @@
 title: $Platform$ Point Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Point Chart
 _keywords: $Platform$ Charts, Point Chart, Infragistics
-mentionedTypes: ["CategoryChart", "ChartType", "Legend"]
+mentionedTypes: ["CategoryChart", "CategoryChartType", "Legend"]
+namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Point Chart
 
@@ -10,11 +11,12 @@ The $ProductName$ Point Chart renders a collection of points. Values are represe
 
 ## $Platform$ Point Chart Example
 
-You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `DataSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
+You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="$Platform$ Point Chart Example" >
 </code-view>
 
@@ -27,6 +29,7 @@ In the following example, the $Platform$ Point Chart is comparing the generation
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-single-source"
+           github-src="charts/category-chart/point-chart-single-source"
            alt="$Platform$ Point Chart with Single Series" >
 </code-view>
 
@@ -39,6 +42,7 @@ Since the $Platform$ Point Chart allows you to combine multiple series and compa
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="$Platform$ Point Chart with Multiple Series" >
 </code-view>
 
@@ -51,6 +55,7 @@ Once the $Platform$ Point Chart is set up, we may want to make some further styl
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-styling"
+           github-src="charts/category-chart/point-chart-styling"
            alt="$Platform$ Point Chart Styling" >
 </code-view>
 

@@ -3,6 +3,7 @@ title: $Platform$ Chart Tooltips | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Tooltips
 _keywords: $Platform$ Charts, Tooltips, Infragistics
 mentionedTypes: ["CategoryChart", "ToolTipType"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Chart Tooltips

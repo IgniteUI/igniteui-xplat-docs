@@ -3,6 +3,7 @@ title: $Platform$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Options
 _keywords: $Platform$ Axis, Options, Title, Labels, Range Infragistics
 mentionedTypes: ["CategoryChart"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Axis Options

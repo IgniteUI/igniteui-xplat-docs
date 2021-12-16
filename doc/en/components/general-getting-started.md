@@ -7,6 +7,9 @@ _keywords: $ProductName$, Infragistics, Getting Started
 
 The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
+> [!NOTE]
+> You can get an example of $Platform$ projects with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
+
 <!-- Angular, React, WebComponents -->
 
 ## Setting Up Computer
@@ -32,17 +35,26 @@ Before you can run $ProductName$, there are 2 steps to get everything on your ma
     </div>
 </div>
 
-<!-- using a note because there is no other way to build flag content for specific platform. -->
-> [!NOTE]
-> For React:
-> Now that we have everything we need, we can create a new React application.  <br>
-> Open **VS Code**, select **Terminal** menu, **New Terminal** option and type this command in terminal window: <br>
-> **npx create-react-app my-app-name --typescript**
-> <br> or <br>
-> **yarn create react-app my-app-name --typescript**
-> <br> Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+<!-- React -->
 
-<!-- end: Angular, React, WebComponents -->
+## Creating New React Project
+
+With above prerequisites installed, we can create a new React application.
+
+1 - Open **VS Code**, select **Terminal** menu and then **New Terminal** option.
+
+2 - Type one of these commands in terminal window:
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npx create-react-app my-app-name --typescript
+</pre>
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+yarn create react-app my-app-name --typescript
+</pre>
+
+Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+
+<!-- end: React -->
 
 <!-- commented out because this section is present in the "Updating Existing App"
 You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
@@ -70,22 +82,22 @@ Lastly,  -->
 
 1 - Open a command line and create a directory named **wc-html**
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> mkdir wc-html
+mkdir wc-html
 </pre>
 
 2 - Change the command line path to the newly created directory
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> cd wc-html
+cd wc-html
 </pre>
 
 3 - Initialize **npm** in the directory
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm init -y
+npm init -y
 </pre>
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install webpack webpack-cli --save-dev
+npm install webpack webpack-cli --save-dev
 </pre>
 
 > [!Note]
@@ -93,9 +105,10 @@ Lastly,  -->
 
 5 - Open the project in **VS Code**
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> code .
+code .
 </pre>
-6 - Create a new file named **index.html**
+
+6 - Create a new file named **index.html** with this code:
 
 ```
 <html>
@@ -121,65 +134,66 @@ Lastly,  -->
 ```
 
 > [!Note]
-> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**.
+> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder named **dist**.
 >
 > If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
 
 ```
 "scripts": {
-    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+    "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
 ```
 
 ## Step 2 - Install Polyfills
 
-1 - Open a terminal in **VS Code** (View -> Terminal, or CTRL+`) and install the web component polyfills package using npm
+1 - Open a terminal in **VS Code** (**View** -> **Terminal** menu or press <kbd>CTRL</kbd> + <kbd>`</kbd> keys)
+
+2 - Type this command to install the web component polyfills:
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install @webcomponents/custom-elements
+npm install @webcomponents/custom-elements
 </pre>
 
-2 - Import the web component polyfills into **index.js**
-```
+3 - Import the web component polyfills into **index.js**
+```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## Step 3 - Install Ignite UI for Web Components
 
-1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Spreadsheet web component.
+1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Map web component:
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install igniteui-webcomponents-core
-> npm install igniteui-webcomponents-excel
-> npm install igniteui-webcomponents-spreadsheet
+npm install --save {PackageCore}
+npm install --save {PackageCharts}
+npm install --save {PackageMaps}
 </pre>
 
-2 - Import the **ModuleManager** and the web component modules into **index.js**
+2 - Import the Geographic Map modules and **ModuleManager** in **index.ts** file:
 
-```
+```ts
+import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
+import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
-
-// spreadsheet modules
-import { IgcExcelModule } from 'igniteui-webcomponents-excel';
-import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3 - Register the web component modules with the **ModuleManager**
+3 - Register the Geographic Map modules using the **ModuleManager**
 
-```
-// register the modules
+```ts
 ModuleManager.register(
-    IgcExcelModule,
-    IgcSpreadsheetModule
+    IgcGeographicMapModule,
+    IgcDataChartInteractivityModule
 );
 ```
 
-4 - Add the `igc-spreadsheet` web component to the body of **index.html**
+4 - Add the Geographic Map web component to the body of **index.html** file
 
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 </body>
 ```
 
@@ -188,17 +202,17 @@ ModuleManager.register(
 1 - Open a terminal in **VS Code** and execute the **build** script
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm run build
+npm run build
 </pre>
 
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
 
 2 - Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 
     <script src="dist/index.bundle.js"></script>
 </body>
@@ -206,14 +220,14 @@ ModuleManager.register(
 
 3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
-<img src="../images/wc-live-server.jpg" />
+<!-- <img src="../images/wc-live-server.jpg" /> -->
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components spreadsheet should now be rendered in your browser.
+4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components map should now be rendered with shape of the world.
 
-<img src="../images/wc-project-running.jpg" />
+<img src="../images/general/geo-map.png" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
@@ -249,8 +263,8 @@ This will automatically install packages for $ProductName$, along with all of th
 First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -320,60 +334,66 @@ The final result should look something like this screenshot:
 
 <!-- Blazor -->
 
-The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance apps for modern desktop browsers.
-
 ## Step 1 - Create a New Blazor Project
-The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to [**Step 2**](#step-2---install-the-ignite-ui-for-blazor-nuget-package).
+The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to the [**Install Ignite UI for Blazor Package**](#step-2---install-ignite-ui-for-blazor-package) section.
 
 1 - Start Visual Studio 2019 and click **Create a new project** on the start page, select the **Blazor App** template, and click **Next**.
 
-<img src="../images/new-blazor-project.jpg" />
+<img src="../images/general/new-blazor-project.jpg" />
 
 2 - Provide a project name and description, and click **Create**
 
-<img src="../images/new-blazor-project-name.jpg" />
+<img src="../images/general/new-blazor-project-name.jpg" />
 
 3 - Choose which Blazor template you'd like to use. Server or Web Assembly (WASM)
 
-<img src="../images/new-blazor-project-template.jpg" />
+<img src="../images/general/new-blazor-project-template.jpg" />
 
-## Step 2 - Install the Ignite UI for Blazor NuGet package
+## Step 2 - Install Ignite UI for Blazor Package
+
+You can either install Ignite UI for Blazor package in **VS Package Manage Console** with this command:
+
+```cmd
+dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+```
+
+Alternatively, you can manually select a version by following these steps:
 
 1 - Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
 
-<img src="../images/nuget-manage-packages.jpg" />
+<img src="../images/general/nuget-manage-packages.jpg" />
 
 2 - In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
 
-<img src="../images/nuget-package-manager-browse.jpg" />
+<img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
 > If you are a trial user, you can install the `IgniteUI.Blazor` trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
 
 > [!Note]
-> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./nuget-feed.md).
+> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
 
-## Step 3 - Register Ignite UI for Blazor
+## Step 3 - Register Ignite UI for Blazor Component
 
 1 - Add the IgniteUI for Blazor script just above the default Blazor script.
 
-In Blazor Web Assembly - change **wwwroot/index.html** file:
+In **Blazor Web Assembly** project - change **wwwroot/index.html** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.webassembly.js"></script>
 ```
 
-In Blazor Server - change **Pages/_Host.cshtml** file:
+In **Blazor Server** project - change **Pages/_Host.cshtml** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-2 - Register service modules for IgniteUI Blazor components using the `AddIgniteUIBlazor` method:
+2 - Register service modules for IgniteUI Blazor components:
 
-In Blazor Web Assembly project - change the **Program.cs** file:
+In **Blazor Web Assembly** project - change the **Program.cs** file:
 
 ```razor
 using IgniteUI.Blazor.Controls;
@@ -381,12 +401,13 @@ using IgniteUI.Blazor.Controls;
 
 public static async Task Main(string[] args)
 {
+    var builder = WebAssemblyHostBuilder.CreateDefault(args);
     // ...
-    builder.Services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    builder.Services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
 
-In Blazor Server project - change the **Startup.cs** file:
+In **Blazor Server** project - change the **Startup.cs** file:
 
 ```razor
 using IgniteUI.Blazor.Controls;
@@ -395,37 +416,35 @@ using IgniteUI.Blazor.Controls;
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-    services.AddIgniteUIBlazor(typeof(GeographicMapModule));
+    services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
 
 Optionally, modules can be registered within razor files at the time the page is initialized if registering modules at the application level is not feasible:
 
-```
-@page ...
+```razor
+@page "/pages/some-page-name"
 
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor;
 
 @code
 {
-
-   protected override void OnInitialized()
+    protected override void OnInitialized()
     {
         base.OnInitialized();
-        GeographicMapModule.Register(IgniteUIBlazor);
-
-        ...
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
+        IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+        // ...
     }
 }
-
 ```
 
 > [!Note]
-> In this example, we registered the `GeographicMapModule` to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
+> In this example, we registered the `IgbGeographicMapModule` to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
 
 
-3 - Add the `IgniteUI.Blazor.Controls` namespace in `_Imports.razor` file:
+3 - Add a namespace to $ProductName$ components in `_Imports.razor` file:
 
 ```razor
 @using IgniteUI.Blazor.Controls;
@@ -434,8 +453,10 @@ Optionally, modules can be registered within razor files at the time the page is
 4 - Add Ignite UI for Blazor component in your razor page:
 
 ```razor
-<GeographicMap Height="100%" Width="100%" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
+</IgbGeographicMap>
 ```
+
+5 - Build and run the Blazor app.
 
 <!-- end: Blazor -->

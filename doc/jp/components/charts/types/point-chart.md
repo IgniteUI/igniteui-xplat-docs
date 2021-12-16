@@ -2,7 +2,8 @@
 title: $Platform$ ポイント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ポイント チャート
 _keywords: $Platform$ Charts, Point Chart, Infragistics, $Platform$ チャート, ポイント チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "ChartType", "Legend"]
+mentionedTypes: ["CategoryChart", "CategoryChartType", "Legend"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 # $Platform$ ポイント チャート
@@ -11,11 +12,12 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 
 ## $Platform$ ポイント チャートの例
 
-`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `DataSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
+`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="$Platform$ ポイント チャートの例" >
 </code-view>
 
@@ -28,6 +30,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-single-source"
+           github-src="charts/category-chart/point-chart-single-source"
            alt="単一シリーズの $Platform$ ポイント チャート" >
 </code-view>
 
@@ -40,6 +43,7 @@ $Platform$ ポイント チャートを使用すると、複数のシリーズ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
+           github-src="charts/category-chart/point-chart-multiple-sources"
            alt="複数シリーズの $Platform$ ポイント チャート" >
 </code-view>
 
@@ -52,6 +56,7 @@ $Platform$ ポイント チャートを設定したら、マーカーとその�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-styling"
+           github-src="charts/category-chart/point-chart-styling"
            alt="ポイント チャートのスタイル設定" >
 </code-view>
 

@@ -24,7 +24,7 @@ $Platform$ マップ コンポーネントの `GeographicScatterAreaSeries` を�
 `GeographicScatterAreaSeries` は `GeographicContourLineSeries` と同様ですが、同じ値を持つデータポイントを接続する等線の置換に補完で色つきサーフェス エリアとしてデータを表します。
 
 ## データ要件
-マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicScatterAreaSeries` には、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。さらに、項目ソースの各項目にはデータ列が 3 つあり、2 つは地理的な経度および緯度座標を保管し、1 つのデータ列は地理的位置に関連した値を保管します。地理的シリーズの `LongitudeMemberPath`、`LatitudeMemberPath` および `ColorMemberPath` プロパティはこれらのデータ列を識別します。
+マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicScatterAreaSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、項目ソースの各項目にはデータ列が 3 つあり、2 つは地理的な経度および緯度座標を保管し、1 つのデータ列は地理的位置に関連した値を保管します。地理的シリーズの `LongitudeMemberPath`、`LatitudeMemberPath` および `ColorMemberPath` プロパティはこれらのデータ列を識別します。
 `GeographicScatterAreaSeries` は、三角測量が `TrianglesSource` プロパティに設定されていない場合、ItemsSource の項目で組み込みのデータ三角測量を自動的に実行します。ただし、三角測量の計算は非常に時間のかかるプロセスであるため、このプロパティのために TriangulationSource を指定すると、ランタイム パフォーマンスがよくなります。特にデータ項目が多数ある場合には顕著です。
 
 ## データ バインディング
@@ -32,9 +32,9 @@ $Platform$ マップ コンポーネントの `GeographicScatterAreaSeries` を�
 
 | プロパティ名  | プロパティ型   | 説明   |
 |--------------|---------------| ---------------|
-|`DataSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
-|`LongitudeMemberPath`|文字列|`DataSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
-|`LatitudeMemberPath`|文字列|`DataSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
+|`ItemsSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
+|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
+|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
 |`ColorMemberPath`|文字列|各データ項目の緯度および経度座標の値を含むプロパティの名前。`ColorScale` プロパティが設定されている場合、この数値は色に変換されます。|
 |`TrianglesSource`|任意|三角測量データのソース。`TriangulationSource` オブジェクトの Triangles をこのプロパティに設定すると、ランタイム パフォーマンスと地理的シリーズの描画の両方が改善します。|
 |`TriangleVertexMemberPath1`|文字列|各三角形に対して ItemsSource の最初の頂点のインデックスを含む、`TrianglesSource` 項目のプロパティ名。このプロパティを設定することは義務ではありません。カスタムの三角測量ロジックが提供されない場合はデフォルトで取得されます。|
@@ -310,14 +310,14 @@ createAreaSeries(data: any[]) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicScatterAreaSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ColorMemberPath="Value"
         ColorScale="ColorScale"
         DataSource="Data">
-    </GeographicScatterAreaSeries>
-</GeographicMap>
+    </IgbGeographicScatterAreaSeries>
+</IgbGeographicMap>
 
 @code {
 
@@ -326,7 +326,7 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue

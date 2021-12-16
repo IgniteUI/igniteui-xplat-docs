@@ -3,6 +3,7 @@ title: $Platform$ Chart Performance | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Performance
 _keywords: $Platform$ Charts, Performance, Infragistics
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Chart Performance
@@ -20,6 +21,7 @@ In High-Frequency scenario, the $Platform$ Charts can render data items that are
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
+           github-src="charts/category-chart/high-frequency"
            alt="$Platform$ Chart with High-Frequency" >
 </code-view>
 
@@ -32,6 +34,7 @@ In High-Volume scenario, the $Platform$ Charts can render 1 million of data poin
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
+           github-src="charts/category-chart/high-volume"
            alt="$Platform$ Chart with High-Volume" >
 </code-view>
 
@@ -51,7 +54,7 @@ If you need to plot data sources with large number of data points (e.g. 10,000+)
 
 ### Data Structure
 
-Although $Platform$ charts support rendering of multiple data sources by binding array of arrays of data points to `DataSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
+Although $Platform$ charts support rendering of multiple data sources by binding array of arrays of data points to `ItemsSource` property. It is much faster for charts if multiple data sources are flatten into single data source where each data item contains multiple data columns rather just one data column. For example:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();
@@ -250,11 +253,11 @@ Usage of x-axis with DateTime support is not recommended if spaces between data 
 This code snippet shows how to ordinal/category x-axis in the `FinancialChart` and `XamDataChart` controls.
 
 ```razor
-<FinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
+<IgbFinancialChart XAxisMode="FinancialChartXAxisMode.Ordinal"/>
 
-<DataChart >
-    <CategoryXAxis Label="Time" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Label="Time" />
+</IgbDataChart>
 ```
 
 ```html
@@ -290,14 +293,14 @@ By default, $Platform$ charts will automatically calculate `YAxisInterval` based
 This code snippet shows how to set axis major interval in the $Platform$ charts.
 
 ```razor
-<CategoryChart  XAxisInterval="5" YAxisInterval="50"/>
+<IgbCategoryChart  XAxisInterval="5" YAxisInterval="50"/>
 
-<FinancialChart XAxisInterval="5" YAxisInterval="50"/>
+<IgbFinancialChart XAxisInterval="5" YAxisInterval="50"/>
 
-<DataChart >
-    <CategoryXAxis Name="xAxis" Interval="5" />
-    <NumericYAxis  Name="yAxis" Interval="50" />
-</DataChart>
+<IgbDataChart >
+    <IgbCategoryXAxis Name="xAxis" Interval="5" />
+    <IgbNumericYAxis  Name="yAxis" Interval="50" />
+</IgbDataChart>
 ```
 
 ```html
@@ -344,20 +347,20 @@ In the same way as Markers, axis labels are also expensive because they use temp
 This code snippet shows how to hide axis labels in the $Platform$ charts.
 
 ```razor
-<CategoryChart
+<IgbCategoryChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</CategoryChart>
+</IgbCategoryChart>
 
-<FinancialChart
+<IgbFinancialChart
     XAxisLabelVisibility="Visibility.Collapsed"
     YAxisLabelVisibility="Visibility.Collapsed">
-</FinancialChart>
+</IgbFinancialChart>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
-    <NumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelVisibility="Visibility.Collapsed" />
+    <IgbNumericYAxis  Name="yAxis" LabelVisibility="Visibility.Collapsed" />
+</IgbDataChart>
 ```
 
 ```html
@@ -404,13 +407,13 @@ Although, the $Platform$ charts support abbreviation of large numbers (e.g. 10,0
 This code snippet shows how to set axis title in the $Platform$ charts.
 
 ```razor
-<CategoryChart  YAxisTitle="In millions of Dollars"/>
+<IgbCategoryChart  YAxisTitle="In millions of Dollars"/>
 
-<FinancialChart YAxisTitle="In millions of Dollars"/>
+<IgbFinancialChart YAxisTitle="In millions of Dollars"/>
 
-<DataChart >
-    <NumericYAxis Title="In millions of Dollars" />
-</DataChart>
+<IgbDataChart >
+    <IgbNumericYAxis Title="In millions of Dollars" />
+</IgbDataChart>
 ```
 
 ```html
@@ -450,14 +453,14 @@ At runtime, the $Platform$ charts adjust extent of labels on y-axis based on a l
 The following code snippet shows how to set a fixed extent for labels on y-axis in the $Platform$ charts.
 
 ```razor
-<CategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbCategoryChart  XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<FinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
+<IgbFinancialChart XAxisLabelExtent="50" YAxisLabelExtent="50"/>
 
-<DataChart>
-    <CategoryXAxis Name="xAxis" LabelExtent="50" />
-    <NumericYAxis  Name="yAxis" LabelExtent="50" />
-</DataChart>
+<IgbDataChart>
+    <IgbCategoryXAxis Name="xAxis" LabelExtent="50" />
+    <IgbNumericYAxis  Name="yAxis" LabelExtent="50" />
+</IgbDataChart>
 ```
 
 ```html

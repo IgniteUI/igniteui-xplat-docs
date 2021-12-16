@@ -10,6 +10,8 @@ The $ProductName$ map component allows you to display data that contains geograp
 
 # $Platform$ Map Example
 
+The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
+
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
@@ -41,8 +43,8 @@ npm install --save {PackageMaps}
 The `XamGeographicMap` requires the following modules, however the DataChartInteractivityModule is only required for mouse interactions, such as panning and zooming the map content.
 
 ```razor
-GeographicMapModule.Register(IgniteUIBlazor);
-DataChartInteractivityModule.Register(IgniteUIBlazor);
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
@@ -143,5 +145,34 @@ Now that the map module is imported, next step is to create geographic map. The 
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true" />
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
 ```
+
+<div class="divider--half"></div>
+
+## Additional Resources
+
+You can find more information about related $Platform$ map features in these topics:
+
+- [Geographic Map Navigation](geo-map-navigation.md)
+<!-- - [Geographic Map Imagery](geo-map-display-imagery-types.md) -->
+- [Using Scatter Symbol Series](geo-map-type-scatter-symbol-series.md)
+- [Using Scatter Proportional Series](geo-map-type-scatter-bubble-series.md)
+- [Using Scatter Contour Series](geo-map-type-scatter-contour-series.md)
+- [Using Scatter Density Series](geo-map-type-scatter-density-series.md)
+- [Using Scatter Area Series](geo-map-type-scatter-area-series.md)
+- [Using Shape Polygon Series](geo-map-type-shape-polygon-series.md)
+- [Using Shape Polyline Series](geo-map-type-shape-polyline-series.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamGeographicMap`
+- `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicSymbolSeries`
+- `GeographicScatterAreaSeries`

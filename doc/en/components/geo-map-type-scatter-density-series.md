@@ -25,14 +25,14 @@ The demo above shows the `GeographicHighDensityScatterSeries` series in the map 
 Because there are so many data points, the series displays the scatter data as tiny dots as opposed to full size markers, and displays areas with the most data using a higher color density representing a cluster of data points.
 
 ## Data Requirements
-Similar to other types of scatter series in the map control, the `GeographicHighDensityScatterSeries` series has the `DataSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns.
+Similar to other types of scatter series in the map control, the `GeographicHighDensityScatterSeries` series has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in the items source must have two data columns that store geographic longitude and latitude coordinates and uses the `LongitudeMemberPath` and `LatitudeMemberPath` properties to map these data columns.
 
 ### Data Binding
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
 Property|Type|Description
 ---|---|---
-`DataSource`|any|Gets or sets the items source
+`ItemsSource`|any|Gets or sets the items source
 `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
 `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
 
@@ -231,8 +231,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         HeatMaximumColor="Red"
@@ -241,7 +241,7 @@ onDataLoaded(csvData: string) {
         HeatMinimum="0"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -250,7 +250,7 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 
