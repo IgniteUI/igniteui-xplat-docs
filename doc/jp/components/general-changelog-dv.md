@@ -57,7 +57,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * [Icon](layouts/icon.md)
 * [Input](inputs/input.md)
 * [List](grids/list.md)
-* [Navbar](menus/navbar.md)
+* [Navigation Bar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
 * [Radio & Radio Group](inputs/radio.md)
 * [Ripple](inputs/ripple.md)
@@ -78,7 +78,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * [Form](inputs/form.md)
 * [Icon](layouts/icon.md)
 * [List](grids/list.md)
-* [Navbar](menus/navbar.md)
+* [Navigation Bar](menus/navbar.md)
 * [Navigation Drawer](menus/navigation-drawer.md)
 * [Radio & Radio Group](inputs/radio.md)
 * [Ripple](inputs/ripple.md)
@@ -133,7 +133,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択の相互作用の変化を検出するために使用されます。
 * 重大な変更:
-    - `GridSummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
+    - グリッドの `SummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
     - `GroupHeaderDisplayMode` プロパティのタイプを DataSourceSectionHeaderDisplayMode から `GroupHeaderDisplayMode` に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->

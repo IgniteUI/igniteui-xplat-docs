@@ -69,7 +69,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 `IconColor` | string | カレンダー ボタンの色を変更します。
 `AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
 `DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。
-`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。 例えば、月曜日から日曜日。
+`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。例えば、月曜日から日曜日。
 `FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
 `Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
 `MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。
