@@ -11,7 +11,7 @@ _language: ja
 
 このトピックでは、$Platform$ チャートのチャート タイトルおよびサブタイトル機能の使用に関する情報を提供します。
 
-## 例 
+## 例
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -30,7 +30,7 @@ _language: ja
 プロパティ名         | プロパティ タイプ   |     説明
 ----------------------|------------------|------------
 `ChartTitle`          | 文字列 |  タイトルのテキスト コンテンツ
-`TitleTextColor`      | 文字列 |  タイトルのテキスト色                         
+`TitleTextColor`      | 文字列 |  タイトルのテキスト色
 `TitleAlignment`      | HorizontalAlignment |  タイトルの水平方向の配置
 `TitleTextStyle`      | 文字列 | タイトルのフォント スタイル。例えば、Italic Bold 8pt Times New Roman
 `TitleTopMargin`      | 数 | タイトルの上マージン。
@@ -38,16 +38,16 @@ _language: ja
 `TitleRightMargin`    | 数 | タイトルの右マージン。
 `TitleBottomMargin`   | 数 | タイトルの下マージン。
 `Subtitle`            | 文字列 |  タイトルのテキスト コンテンツ
-`SubtitleTextColor`   | 文字列 |  タイトルのテキスト色                         
+`SubtitleTextColor`   | 文字列 |  タイトルのテキスト色
 `SubtitleAlignment`   | HorizontalAlignment |  タイトルの水平方向の配置
-`SubtitleTextStyle`   | 文字列 | タイトルのフォント スタイル。例えば、Italic Bold 8pt Times New Roman 
+`SubtitleTextStyle`   | 文字列 | タイトルのフォント スタイル。例えば、Italic Bold 8pt Times New Roman
 `SubtitleTopMargin`   | 数 | タイトルの上マージン。
 `SubtitleLeftMargin`  | 数 | タイトルの左マージン。
 `SubtitleRightMargin` | 数 | タイトルの右マージン。
 `SubtitleBottomMargin`| 数 | タイトルの下マージン。
 
-                
-                         
+
+
 
 
 

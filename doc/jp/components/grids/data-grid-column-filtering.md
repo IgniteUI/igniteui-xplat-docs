@@ -33,7 +33,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-filter-expressions"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
            alt="$Platform$ グリッド フィルター式の例"
            github-src="grids/data-grid/column-filter-expressions">
 </code-view>
