@@ -36,17 +36,26 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
     </div>
 </div>
 
-<!-- using a note because there is no other way to build flag content for specific platform. -->
-> [!NOTE]
-> For React:
-> 以上ですべて準備が整いました。新しい React アプリケーションを作成しましょう。  <br>
-> **VS Code** で、**ターミナル** メニュー、**新しいターミナル** オプションを選択し、ターミナル ウィンドウで以下のコマンドを入力します。 <br>
-> **npx create-react-app my-app-name --typescript**
-> <br> または <br>
-> **yarn create react-app my-app-name --typescript**
-> <br> 以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
+<!-- React -->
 
-<!-- end: Angular, React, WebComponents -->
+## 新しい React プロジェクトの作成
+
+前提条件のインストール後、新しい React アプリケーションを作成できます。
+
+1 - **VS Code** を開き、**[ターミナル]** メニューを選択してから、**[新しいターミナル]** オプションを選択します。
+
+2 - ターミナル ウィンドウに以下のコマンドのいずれかを入力します。
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npx create-react-app my-app-name --typescript
+</pre>
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+yarn create react-app my-app-name --typescript
+</pre>
+
+以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
+
+<!-- end: React -->
 
 <!-- commented out because this section is present in the "Updating Existing App"
 You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
@@ -74,17 +83,17 @@ Lastly,  -->
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> mkdir wc-html
+mkdir wc-html
 </pre>
 
 2 - コマンドライン パスを新しく作成したディレクトリに変更します。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> cd wc-html
+cd wc-html
 </pre>
 
 3 - ディレクトリで **npm** を初期化します。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm init -y
+npm init -y
 </pre>
 
 4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
@@ -97,9 +106,10 @@ Lastly,  -->
 
 5 - **VS Code** でプロジェクトを開きます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> code .
+code .
 </pre>
-6 - **index.html** という名前の新しいファイルを作成します。
+
+6 - 以下のコードを使用して **index.html** という名前の新しいファイルを作成します。
 
 ```
 <html>
@@ -131,78 +141,79 @@ Lastly,  -->
 
 ```
 "scripts": {
-    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+    "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
 ```
 
 ## 手順 2 - ポリフィルのインストール
 
-1 - **VS Code** でターミナルを開き (表示 -> ターミナル、または CTRL + `)、npm を使用して web コンポーネント polyfills パッケージをインストールします。
+1 - Open a terminal in **VS Code** (**View** -> **Terminal** menu or press <kbd>CTRL</kbd> + <kbd>`</kbd> keys)
+
+2 - Web コンポーネントのポリフィルで以下のコマンドを入力します。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install @webcomponents/custom-elements
+npm install @webcomponents/custom-elements
 </pre>
 
-2 - Web コンポーネント ポリフィルを **index.js** にインポートします。
-```
+3 - Web コンポーネントのポリフィルを **index.js** にインポートします。
+```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Spreadsheet Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Map Web コンポーネントをインストールします。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install igniteui-webcomponents-core
-> npm install igniteui-webcomponents-excel
-> npm install igniteui-webcomponents-spreadsheet
+npm install --save {PackageCore}
+npm install --save {PackageCharts}
+npm install --save {PackageMaps}
 </pre>
 
-2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+2 - Geographic Map モジュールと**ModuleManager** を **index.ts** ファイルにインポートします。
 
-```
+```ts
+import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
+import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
-
-// spreadsheet modules
-import { IgcExcelModule } from 'igniteui-webcomponents-excel';
-import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
+3 - **ModuleManager** で Geographic Map モジュールを登録します。
 
-```
-// register the modules
+```ts
 ModuleManager.register(
-    IgcExcelModule,
-    IgcSpreadsheetModule
+    IgcGeographicMapModule,
+    IgcDataChartInteractivityModule
 );
 ```
 
-4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+4 - **index.html** ファイルの本文に GeographicMapWeb コンポーネントを追加します。
 
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 </body>
 ```
 
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
-1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+1 - **VS Code** でターミナルを開き、**build** スクリプトを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm run build
+npm run build
 </pre>
 
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
 2 - **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 
     <script src="dist/index.bundle.js"></script>
 </body>
@@ -210,14 +221,14 @@ ModuleManager.register(
 
 3 - プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
 
-<img src="../images/wc-live-server.jpg" />
+<!-- <img src="../images/wc-live-server.jpg" /> -->
 
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
 4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
 
-<img src="../images/wc-project-running.jpg" />
+<img src="../images/general/geo-map.png" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
