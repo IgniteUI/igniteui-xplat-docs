@@ -143,7 +143,7 @@ Old brushes/outlines | New outline/brushes
 
 ### Charts & Maps
 
-This release introduces several new and improved visual design and configuration options for all of the chart components. e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
 * Changed Bar/Column/Waterfall series to have square corners instead of rounded corners
 * Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
@@ -210,8 +210,8 @@ for example:
 
 * Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
-* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key. e.g. Options are (none, edit, move up, down, left, right)
-* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed. e.g. Options are (moves to the cell below, above, right, left)
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
 * Added `SelectAllRows` - method.
 * Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
     - Click and drag to select rows
@@ -228,7 +228,7 @@ for example:
 * `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
 * `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
 * `FirstDayOfWeek` - Specifies first day of week
-* `FirstWeekOfYear` - Specifies when to display first week of the year. e.g. (First Full Week, First Four day Week)
+* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
 * `ShowWeekNumbers` - Toggles Week number visibility
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
 * Added Accessibility
