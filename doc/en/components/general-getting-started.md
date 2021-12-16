@@ -35,17 +35,26 @@ Before you can run $ProductName$, there are 2 steps to get everything on your ma
     </div>
 </div>
 
-<!-- using a note because there is no other way to build flag content for specific platform. -->
-> [!NOTE]
-> For React:
-> Now that we have everything we need, we can create a new React application.  <br>
-> Open **VS Code**, select **Terminal** menu, **New Terminal** option and type this command in terminal window: <br>
-> **npx create-react-app my-app-name --typescript**
-> <br> or <br>
-> **yarn create react-app my-app-name --typescript**
-> <br> Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+<!-- React -->
 
-<!-- end: Angular, React, WebComponents -->
+## Creating New React Project
+
+With above prerequisites installed, we can create a new React application.
+
+1 - Open **VS Code**, select **Terminal** menu and then **New Terminal** option.
+
+2 - Type one of these commands in terminal window:
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npx create-react-app my-app-name --typescript
+</pre>
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+yarn create react-app my-app-name --typescript
+</pre>
+
+Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
+
+<!-- end: React -->
 
 <!-- commented out because this section is present in the "Updating Existing App"
 You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
@@ -73,22 +82,22 @@ Lastly,  -->
 
 1 - Open a command line and create a directory named **wc-html**
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> mkdir wc-html
+mkdir wc-html
 </pre>
 
 2 - Change the command line path to the newly created directory
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> cd wc-html
+cd wc-html
 </pre>
 
 3 - Initialize **npm** in the directory
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm init -y
+npm init -y
 </pre>
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install webpack webpack-cli --save-dev
+npm install webpack webpack-cli --save-dev
 </pre>
 
 > [!Note]
@@ -96,9 +105,10 @@ Lastly,  -->
 
 5 - Open the project in **VS Code**
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> code .
+code .
 </pre>
-6 - Create a new file named **index.html**
+
+6 - Create a new file named **index.html** with this code:
 
 ```
 <html>
@@ -124,65 +134,66 @@ Lastly,  -->
 ```
 
 > [!Note]
-> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder name **dist**.
+> This script will use webpack to bundle the **index.js** file into another file called **index.bundle.js** and place it into a folder named **dist**.
 >
 > If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
 
 ```
 "scripts": {
-    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+    "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
 ```
 
 ## Step 2 - Install Polyfills
 
-1 - Open a terminal in **VS Code** (View -> Terminal, or CTRL+`) and install the web component polyfills package using npm
+1 - Open a terminal in **VS Code** (**View** -> **Terminal** menu or press <kbd>CTRL</kbd> + <kbd>`</kbd> keys)
+
+2 - Type this command to install the web component polyfills:
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install @webcomponents/custom-elements
+npm install @webcomponents/custom-elements
 </pre>
 
-2 - Import the web component polyfills into **index.js**
-```
+3 - Import the web component polyfills into **index.js**
+```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## Step 3 - Install Ignite UI for Web Components
 
-1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Spreadsheet web component.
+1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Map web component:
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install igniteui-webcomponents-core
-> npm install igniteui-webcomponents-excel
-> npm install igniteui-webcomponents-spreadsheet
+npm install --save {PackageCore}
+npm install --save {PackageCharts}
+npm install --save {PackageMaps}
 </pre>
 
-2 - Import the **ModuleManager** and the web component modules into **index.js**
+2 - Import the Geographic Map modules and **ModuleManager** in **index.ts** file:
 
-```
+```ts
+import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
+import { IgcDataChartInteractivityModule } from 'igniteui-webcomponents-charts';
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
-
-// spreadsheet modules
-import { IgcExcelModule } from 'igniteui-webcomponents-excel';
-import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3 - Register the web component modules with the **ModuleManager**
+3 - Register the Geographic Map modules using the **ModuleManager**
 
-```
-// register the modules
+```ts
 ModuleManager.register(
-    IgcExcelModule,
-    IgcSpreadsheetModule
+    IgcGeographicMapModule,
+    IgcDataChartInteractivityModule
 );
 ```
 
-4 - Add the `igc-spreadsheet` web component to the body of **index.html**
+4 - Add the Geographic Map web component to the body of **index.html** file
 
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 </body>
 ```
 
@@ -191,17 +202,17 @@ ModuleManager.register(
 1 - Open a terminal in **VS Code** and execute the **build** script
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm run build
+npm run build
 </pre>
 
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
 
 2 - Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
-```
+```html
 <body>
-    <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
-    </igc-spreadsheet>
+    <igc-geographic-map id="map" height="500px" width="100%">
+    </igc-geographic-map>
 
     <script src="dist/index.bundle.js"></script>
 </body>
@@ -209,14 +220,14 @@ ModuleManager.register(
 
 3 - To run the project, launch a local development server. In this example, we are using Live Server. Right-click within the editor of **index.html** and select **Open with Live Server**
 
-<img src="../images/wc-live-server.jpg" />
+<!-- <img src="../images/wc-live-server.jpg" /> -->
 
 > [!Note]
 > Live Server is an extension to Visual Studio Code that allows you to launch a local development server with live reload feature for static & dynamic pages. This extension can be installed via the Visual Studio Code Extensions tab, or by downloading it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components spreadsheet should now be rendered in your browser.
+4 - Navigate to the **index.html** using a web browser on your local server, and the Ignite UI for Web Components map should now be rendered with shape of the world.
 
-<img src="../images/wc-project-running.jpg" />
+<img src="../images/general/geo-map.png" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
