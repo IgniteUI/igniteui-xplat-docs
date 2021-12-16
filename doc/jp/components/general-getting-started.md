@@ -147,7 +147,7 @@ code .
 
 ## 手順 2 - ポリフィルのインストール
 
-1 - Open a terminal in **VS Code** (**View** -> **Terminal** menu or press <kbd>CTRL</kbd> + <kbd>`</kbd> keys)
+1 - **VS Code** でターミナルを開きます (**[表示]** -> **[ターミナル]** メニューまたは <kbd>CTRL</kbd> + <kbd>`</kbd> キーを押します)
 
 2 - Web コンポーネントのポリフィルで以下のコマンドを入力します。
 
@@ -189,7 +189,7 @@ ModuleManager.register(
 );
 ```
 
-4 - **index.html** ファイルの本文に GeographicMapWeb コンポーネントを追加します。
+4 - **index.html** ファイルの本文に Geographic Map Web コンポーネントを追加します。
 
 ```html
 <body>
