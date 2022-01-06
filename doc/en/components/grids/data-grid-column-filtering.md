@@ -39,7 +39,6 @@ In the example below, the data grid's FilterExpressions collection is updated to
 
 <div class="divider--half"></div>
 
-<!-- Blazor -->
 ## Filter Operators
 
 Columns can be given a custom `FilterOperand` that will appear in the filter-row operand dropdown. The key requirements is to ensure the operand is given a `DisplayName` and to utilize the `FilterRequested` event on the operand so you can apply a `FilterFactory`, which is responsible for assigning the operator and value you wish to the filter the column by, e.g. StartsWith with value of "A".
@@ -54,4 +53,3 @@ Since the operands are applied to the column they can be added inline, in-code, 
 </code-view>
 
 <div class="divider--half"></div>
-<!-- end:Blazor -->
