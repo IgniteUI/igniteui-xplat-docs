@@ -321,6 +321,20 @@ layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
 this.dockManager.layout = { ...layout };
 ```
 
+### Adding Content At Runtime
+
+Contents and panes can be added to the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) at runtime. In the example below, you can see how you can add content, document and floating panes.
+
+
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
+           alt="$Platform$ Dock Manager Add Content Runtime Example"
+           github-src="layouts/dock-manager/add-content-runtime">
+</code-view>
+
+<div class="divider--half"></div>
+
 ### Events
 
 The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
@@ -334,7 +348,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <!-- end: WebComponents, React, Angular -->
 
 <!-- WebComponents -->
-<code-view style="height: 600px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ Dock Manager Pane Closing Example"
