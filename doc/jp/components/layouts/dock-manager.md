@@ -322,6 +322,20 @@ layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
 this.dockManager.layout = { ...layout };
 ```
 
+### Adding Panes At Runtime
+
+Contents and panes can be added to the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) at runtime. In the example below, you can see how you can add content, document and floating panes.
+
+
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
+           alt="$Platform$ Dock Manager Add Content Runtime Example"
+           github-src="layouts/dock-manager/add-content-runtime">
+</code-view>
+
+<div class="divider--half"></div>
+
 ### イベント
 
 ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
@@ -335,7 +349,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <!-- end: WebComponents, React, Angular -->
 
 <!-- WebComponents -->
-<code-view style="height: 600px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
            alt="$Platform$ ドック マネージャー ペインを閉じる例"
