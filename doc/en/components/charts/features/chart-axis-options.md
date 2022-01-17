@@ -52,12 +52,27 @@ By default, the $Platform$ charts will calculate the minimum and maximum values 
 
 <div class="divider--half"></div>
 
-<!--
-## $Platform$ Axis Scale
 
-TODO add info/example of financial chart with  YAxisMode and YAxisIsLogarithm
+## $Platform$ Axis Modes & Scale in Financial Chart
 
--->
+The `FinancialChart` control allows you to choose how the data in your charts is represented along the x-axis and y-axis. 
+
+The `XAxisMode` allows you to choose between Time and Ordinal modes for the x-axis. Time mode will render space along the x-axis for gaps in data (e.g. no stock trading on weekends or holidays). Ordinal mode will collapse date areas where data does not exist. The default value is Ordinal.
+
+The `YAxisMode` allows you to choose between Numeric and PercentChange modes for the y-axis. Numeric mode will be charted with the exact value of the data. PercentChange mode will display the data as percentage change relative to the first data point provided. The default value is Numeric.
+
+The `FinancialChart` control allows you to choose if the data in your charts is mapped logarithmically along the y-axis.
+
+The `YAxisIsLogarithmic` determines whether the y-axis should use a logarithmic scale instead of a linear one. The default value is false.
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-scale"
+           alt="$Platform$ Axis Range Example"
+           github-src="charts/financial-chart/axis-scale">
+</code-view>
+
+<div class="divider--half"></div>
 
 ## Additional Resources
 
