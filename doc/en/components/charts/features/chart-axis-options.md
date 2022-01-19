@@ -67,9 +67,9 @@ The `YAxisIsLogarithmic` determines whether the y-axis should use a logarithmic 
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-scale"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"
            alt="$Platform$ Axis Range Example"
-           github-src="charts/financial-chart/axis-scale">
+           github-src="charts/financial-chart/axis-types">
 </code-view>
 
 <div class="divider--half"></div>
