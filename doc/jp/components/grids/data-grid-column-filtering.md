@@ -40,12 +40,14 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 <div class="divider--half"></div>
 
-<!-- Blazor -->
+
 ## フィルター演算子
 
 列には、filter-row オペランド ドロップダウンに表示されるカスタムの  `FilterOperand` を指定できます。重要な要件は、オペランドに `DisplayName` が指定されていることを確認し、オペランドで `FilterRequested` イベントを利用して、`FilterFactory` を適用できるようにすることです。これにより、列をフィルタリングする演算子と値を割り当てることができます。例えば、「A」の値で開始します。
 
+<!-- Blazor -->
 オペランドは列に適用されるため、インライン、コード内、または別のクラスに追加できます。各アプローチは、以下の例で示されています。
+<!-- end:Blazor -->
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -55,4 +57,3 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 </code-view>
 
 <div class="divider--half"></div>
-<!-- end:Blazor -->
