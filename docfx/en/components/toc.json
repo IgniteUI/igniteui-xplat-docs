@@ -1333,6 +1333,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React"],
+    "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
+    "href": "inputs/slider.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Blazor"],
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
