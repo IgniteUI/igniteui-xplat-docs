@@ -1,9 +1,9 @@
 ---
 title: $Platform$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸オプション
-_keywords: $Platform$ Axis, Options, Title, Labels, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル、ラベル、範囲, スケール, モード, インフラジスティックス
-mentionedTypes: ["CategoryChart"]
+_keywords: $Platform$ Axis, Options, Title, Labels, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル, ラベル、範囲, スケール, モード, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode"]
+namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
@@ -56,11 +56,11 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 ## $Platform$ 軸モードとスケール
 
-`FinancialChart` および `CategoryChart` コントロールでは、 `YAxisIsLogarithmic` プロパティが true に設定されている場合はデータを Y 軸に沿って対数スケールでプロットするか、このプロパティが false (デフォルト価値) に設定されている場合は線形スケールでプロットするかを選択できます。
+`FinancialChart` および `CategoryChart` コントロールでは、`YAxisIsLogarithmic` プロパティが true に設定されている場合はデータを Y 軸に沿って対数スケールでプロットするか、このプロパティが false (デフォルト価値) に設定されている場合は線形スケールでプロットするかを選択できます。
 
-`YAxisLogarithmBase` プロパティを使用すると、対数スケールのベースをデフォルト値の 10 から他の整数値に変更できます。`FinancialChart` とコントロールを使用すると、`Numeric` モードと  `PercentChange` モードを提供する `YAxisMode` プロパティを使用して、Y 軸に沿ってデータをどのように表現するかを選択できます。`Numeric` モードは正確な値でデータをプロットし、`PercentChange` モードは提供された最初のデータ ポイントに対する変化率としてデータを表示します。デフォルト値は `Numeric` モードです。
+`YAxisLogarithmBase` プロパティを使用すると、対数スケールのベースをデフォルト値の 10 から他の整数値に変更できます。`FinancialChart` とコントロールを使用すると、`Numeric` モードと `PercentChange` モードを提供する `YAxisMode` プロパティを使用して、Y 軸に沿ってデータをどのように表現するかを選択できます。`Numeric` モードは正確な値でデータをプロットし、`PercentChange` モードは提供された最初のデータ ポイントに対する変化率としてデータを表示します。デフォルト値は `Numeric` モードです。
 
-`YAxisMode` プロパティに加えて、`FinancialChart` コントロールには X 軸に `Time` モードと `Ordinal` モードを提供する  `XAxisMode` プロパティがあります。`Time` モードはデータのギャップを X 軸にスペースを用いて描画します。つまり、週末または休日に株取引がないことを示します。`Ordinal` モードはデータがない日付領域を縮小します。デフォルト値は `Ordinal` モードです。
+`YAxisMode` プロパティに加えて、`FinancialChart` コントロールには X 軸に `Time` モードと `Ordinal` モードを提供する `XAxisMode` プロパティがあります。`Time` モードはデータのギャップを X 軸にスペースを用いて描画します。つまり、週末または休日に株取引がないことを示します。`Ordinal` モードはデータがない日付領域を縮小します。デフォルト値は `Ordinal` モードです。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
