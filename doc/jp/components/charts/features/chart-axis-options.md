@@ -27,7 +27,7 @@ $Platform$ チャートの軸タイトル機能を使用すると、チャート
 
 ## $Platform$ 軸ラベル
 
-$Platform$ チャートは、チャートで表示されるラベルの構成、書式設定、およびラベル フォントのスタイル設定を制御することが可能です。軸ラベルの回転角度、マージン、水平および垂直方向の配置、色、余白、および表示設定を変更できます。The following example shows how to use these features of axes.
+$Platform$ チャートは、チャートで表示されるラベルの構成、書式設定、およびラベル フォントのスタイル設定を制御することが可能です。軸ラベルの回転角度、マージン、水平および垂直方向の配置、色、余白、および表示設定を変更できます。次の例は、これらの軸の機能を使用する方法を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -54,13 +54,13 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 <div class="divider--half"></div>
 
 
-## $Platform$ Axis Modes & Scale
+## $Platform$ 軸モードとスケール
 
-In the `FinancialChart` and `CategoryChart` controls, you can choose if your data is plotted on logarithmic scale along the y-axis when the `YAxisIsLogarithmic` property is set to true or on linear scale when this property is set to false (default value). With the `YAxisLogarithmBase` property, you can change base of logarithmic scale from default value of 10 to other integer value.
+`FinancialChart` および `CategoryChart` コントロールでは、 `YAxisIsLogarithmic` プロパティが true に設定されている場合はデータを Y 軸に沿って対数スケールでプロットするか、このプロパティが false (デフォルト価値) に設定されている場合は線形スケールでプロットするかを選択できます。
 
-The `FinancialChart` and control allows you to choose how your data is represented along the y-axis using `YAxisMode` property that provides `Numeric` and `PercentChange` modes. The `Numeric` mode will plot data with the exact values while the `PercentChange` mode will display the data as percentage change relative to the first data point provided. The default value is `Numeric` mode.
+`YAxisLogarithmBase` プロパティを使用すると、対数スケールのベースをデフォルト値の 10 から他の整数値に変更できます。`FinancialChart` とコントロールを使用すると、`Numeric` モードと  `PercentChange` モードを提供する `YAxisMode` プロパティを使用して、Y 軸に沿ってデータをどのように表現するかを選択できます。`Numeric` モードは正確な値でデータをプロットし、`PercentChange` モードは提供された最初のデータ ポイントに対する変化率としてデータを表示します。デフォルト値は `Numeric` モードです。
 
-In addition to `YAxisMode` property, the `FinancialChart` control has `XAxisMode` property that provides `Time` and `Ordinal` modes for the x-axis. The `Time` mode will render space along the x-axis for gaps in data (e.g. no stock trading on weekends or holidays). The `Ordinal` mode will collapse date areas where data does not exist. The default value is `Ordinal` mode.
+`YAxisMode` プロパティに加えて、`FinancialChart` コントロールには X 軸に `Time` モードと `Ordinal` モードを提供する  `XAxisMode` プロパティがあります。`Time` モードはデータのギャップを X 軸にスペースを用いて描画します。つまり、週末または休日に株取引がないことを示します。`Ordinal` モードはデータがない日付領域を縮小します。デフォルト値は `Ordinal` モードです。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
