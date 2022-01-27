@@ -19,6 +19,29 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
+<!-- WebComponents -->
+## **$Platform$ 2.0.0**
+
+### New Components & Themes
+
+* Dark Themes
+* [Slider](inputs/slider.md)
+* [Range Slider](inputs/slider.md)
+
+### Major changes
+
+This release introduces few major changes in the API of the Calendar, Card, Navigation Drawer and Radio components.
+
+* New Features
+    * Support for `required` property in Radio component.
+* Breaking Changes
+    * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
+    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & hide-header respectively.
+    * Replaced Card component's **outlined** property with `elevated`.
+    * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
+
+<!-- end: WebComponents -->
+
 ## **$Platform$ {PackageVerChanges-21-2}**
 
 <!-- Blazor -->
