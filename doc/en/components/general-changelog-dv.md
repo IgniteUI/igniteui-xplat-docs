@@ -25,6 +25,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 ### New Components & Themes
 
 * Dark Themes
+    - As a consequence of adding dark themes, the theme path has changed from `igniteui-webcomponents/themes/bootstrap.css` to either `igniteui-webcomponents/themes/light/bootstrap.css` or `igniteui-webcomponents/themes/dark/bootstrap.css` based on your prefered theme variant;
 * [Slider](inputs/slider.md)
 * [Range Slider](inputs/slider.md)
 
