@@ -37,7 +37,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
     * Support for `required` property in Radio component.
 * Breaking Changes
     * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
-    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & hide-header respectively.
+    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
     * Replaced Card component's **outlined** property with `elevated`.
     * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
 
