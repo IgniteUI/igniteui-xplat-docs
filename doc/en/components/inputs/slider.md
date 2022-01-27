@@ -92,7 +92,7 @@ The track of the sliders has a minimum and maximum values which are configured u
 
 ### Step
 
-The `Step` property specifies the granularity of the slider that the value must adhere to. By default, the slider track looks continuos. Setting the `DiscreteTrack` property of the slider to `true` will make it to display the steps on the track. 
+The `Step` property specifies the granularity of the slider that the value must adhere to. By default, the slider track looks continuous. Setting the `DiscreteTrack` property of the slider to `true` will make it to display the steps on the track. 
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -101,11 +101,11 @@ The `Step` property specifies the granularity of the slider that the value must 
            github-src="inputs/slider/discrete">
 </code-view>
 
-If the `Step` property is set to `0`, no stepping is implied and any value in the slider range is allowed. In this case, the slider will look continuos even if `DiscreteTrack` is set to `true`.
+If the `Step` property is set to `0`, no stepping is implied and any value in the slider range is allowed. In this case, the slider will look continuous even if `DiscreteTrack` is set to `true`.
 
 ### Tick Marks & Labels
 
-The slider components could display tick marks and labels. The slider components support two type of tick marks: primary and secondary. In order to display the primary tick marks, you should set the `PrimaryTicks` property to a value greater than `1`. The number of primary ticks will be evenly distributed on the track. In order to display the secondary tick marks, you should set the `SecondaryTicks` property to a value greater than `0`. The value of `SecondaryTicks` specifies the number of secondary ticks between every two primary ticks.
+The slider components could display tick marks and labels. The slider components support two types of tick marks: primary and secondary. In order to display the primary tick marks, you should set the `PrimaryTicks` property to a value greater than `1`. The number of primary ticks will be evenly distributed on the track. In order to display the secondary tick marks, you should set the `SecondaryTicks` property to a value greater than `0`. The value of `SecondaryTicks` specifies the number of secondary ticks between every two primary ticks.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
