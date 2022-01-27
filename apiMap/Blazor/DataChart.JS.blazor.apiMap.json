@@ -31,6 +31,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Blazor","mappedType":"WindowResponse","mappedName":"WindowResponse"}],"originalName":"WindowResponse"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"WindowRectMinWidth"}],"originalName":"WindowRectMinWidth"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SyncChannel"}],"originalName":"SyncChannel"},
     { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"CrosshairVisibility"}],"originalName":"CrosshairVisibility"},
     { "names":[{"platform":"Blazor","mappedType":"ZoomCoercionMode","mappedName":"ZoomCoercionMode"}],"originalName":"ZoomCoercionMode"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"PlotAreaBackground"}],"originalName":"PlotAreaBackground"},

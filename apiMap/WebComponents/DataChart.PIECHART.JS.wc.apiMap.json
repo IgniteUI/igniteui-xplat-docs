@@ -142,6 +142,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"legendOthersLabelFormatSpecifiers"}],"originalName":"LegendOthersLabelFormatSpecifiers"},
     { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemTemplate"}],"originalName":"LegendItemTemplate"},
     { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"legendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDragInteractionEnabled"}],"originalName":"IsDragInteractionEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
