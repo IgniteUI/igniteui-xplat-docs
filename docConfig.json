@@ -210,7 +210,9 @@
             "NavDrawerItem",
             "Radio",
             "RadioGroup",
+            "RangeSlider",
             "Ripple",
+            "Slider",
             "Switch",
             "SizableComponentSize",
             "VoidEventArgs"
