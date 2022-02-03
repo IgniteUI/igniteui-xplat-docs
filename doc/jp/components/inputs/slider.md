@@ -1,35 +1,35 @@
 ---
-title: $Platform$ Slider & Range Slider Components | $ProductName$
-_description: Learn how to configure a selection in a given range by using the thumb track with $Platform$ Slider & Range Slider part of $ProductName$. Choose between single and range slider.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics
+title: $Platform$ スライダーと範囲スライダー コンポーネント | $ProductName$
+_description: $ProductName$ の $Platform$ スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
+_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ スライダー コンポーネント, インフラジスティックス
 mentionedTypes: ['Slider', 'RangeSlider']
 _language: ja
 ---
 
-# $Platform$ Slider & Range Slider Overview
+# $Platform$ Slider & Range Slider (スライダーと範囲スライダー) の概要
 
-The $Platform$ Slider & Range Slider components allow selection in a given range by moving the thumb along the track. The track can be defined as continuous or stepped and you can choose between single and range slider.
+$Platform$ スライダーと範囲スライダー コンポーネントを使用すると、つまみをトラックに沿って動かすことで、特定の範囲を選択できます。トラックを連続またはステップに定義でき、単一または範囲スライダーのどちらかを選択できます。
 
-## $Platform$ Slider & Range Slider Example
+## $Platform$ スライダーと範囲スライダーの例
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-overview"
-           alt="$Platform$ Slider Example"
+           alt="$Platform$ Slider の例"
            github-src="inputs/slider/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Slider` and `RangeSlider`, you need to register them as follows:
+`Slider` と `RangeSlider` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbSliderModule.Register(IgniteUIBlazor);
@@ -42,7 +42,7 @@ import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "i
 defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 ```
 
-The simplest way to start using the `Slider` and `RangeSlider` is as follows:
+`Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-slider value="40"></igc-slider>
@@ -54,94 +54,94 @@ The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 <IgbRangeSlider Lower="20" Upper="70" />
 ```
 
-### Value
+### Value (値)
 
-The main difference between the Slider and Range Slider components is that the Slider component has a single thumb, while the Range Slider component has two thumbs. The single thumb of the Slider component displays its `Value` property. The two thumbs of the Range Slider component display its `Lower` and `Upper` value properties.
+スライダーと範囲スライダー コンポーネントの主な違いは、スライダー コンポーネントには単一のつまみがあり、範囲スライダー コンポーネントには 2 つのつまみがあることです。スライダー コンポーネントの単一のつまみで、その `Value` プロパティが表示されます。範囲スライダー コンポーネントの 2 つのつまみは、`Lower` 値と `Upper` 値のプロパティを表示します。
 
-Both sliders emit two events when any of the values is changed. The `igcInput` event is emitted whenever a value is changed using keyboard or drag interaction while the `igcChange` event is emitted when the value change is committed on drag end or keyboard interaction.
+いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`igcInput` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value"
-           alt="$Platform$ Slider Value Example"
+           alt="$Platform$ Slider Value の例"
            github-src="inputs/slider/value">
 </code-view>
 
-While dragging a slider thumb, it displays its value in a tooltip. You could hide this tooltip using the `HideTooltip` property.
+スライダーつまみをドラッグしている間、ツールチップにその値が表示されます。`HideTooltip` プロパティを使用して、このツールチップを非表示にすることができます。
 
-### Disabled
+### Disabled (無効)
 
-You can use the `Disabled` property of the sliders to disable their user interactions.
+スライダーの `Disabled` プロパティを使用して、ユーザーの操作を無効にすることができます。
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-disabled"
-           alt="$Platform$ Slider Disabled Example"
+           alt="$Platform$ Slider Disabled の例"
            github-src="inputs/slider/disabled">
 </code-view>
 
-### Constraints
+### 制約
 
-The track of the sliders has a minimum and maximum values which are configured using the `Min` and `Max` properties. Additionally, you can restrict the thumb dragging using the `LowerBound` and `UpperBound` properties.
+スライダーのトラックには、最小値と最大値があり、`Min` と `Max` プロパティを使用して構成されます。さらに、`LowerBound` プロパティと `UpperBound` プロパティを使用して、つまみのドラッグを制限できます。
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-constraints"
-           alt="$Platform$ Slider Constraints Example"
+           alt="$Platform$ Slider 制約の例"
            github-src="inputs/slider/constraints">
 </code-view>
 
-### Step
+### Step (ステップ)
 
-The `Step` property specifies the granularity of the slider that the value must adhere to. By default, the slider track looks continuous. Setting the `DiscreteTrack` property of the slider to `true` will make it to display the steps on the track. 
+`Step` プロパティは、値が順守するスライダーの精度を指定します。デフォルトでは、スライダー トラックは連続して見えます。スライダーの `DiscreteTrack` プロパティを `true` に設定すると、トラックのステップが表示されます。 
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-discrete"
-           alt="$Platform$ Slider Discrete Track Example"
+           alt="$Platform$ Slider Discrete Track の例"
            github-src="inputs/slider/discrete">
 </code-view>
 
-If the `Step` property is set to `0`, no stepping is implied and any value in the slider range is allowed. In this case, the slider will look continuous even if `DiscreteTrack` is set to `true`.
+`Step` プロパティが `0` に設定されている場合、ステッピングは暗黙指定されず、スライダー範囲内の任意の値が許可されます。この場合、`DiscreteTrack` が `true` に設定されていても、スライダーは連続して見えます。
 
-### Tick Marks & Labels
+### Tick Marks & Labels (目盛りとラベル)
 
-The slider components could display tick marks and labels. The slider components support two types of tick marks: primary and secondary. In order to display the primary tick marks, you should set the `PrimaryTicks` property to a value greater than `1`. The number of primary ticks will be evenly distributed on the track. In order to display the secondary tick marks, you should set the `SecondaryTicks` property to a value greater than `0`. The value of `SecondaryTicks` specifies the number of secondary ticks between every two primary ticks.
+スライダー コンポーネントは、目盛りとラベルを表示できます。スライダー コンポーネントは、プライマリとセカンダリの 2 種類の目盛りをサポートしています。プライマリ目盛りを表示するには、`PrimaryTicks` プロパティを `1` より大きい値に設定する必要があります。プライマリ目盛りの数は、トラック上で均等に分散されます。セカンダリ目盛りを表示するには、`SecondaryTicks` プロパティを 0 より大きい値に設定する必要があります。`SecondaryTicks` の値は、2 つのプライマリ目盛りごとのセカンダリ目盛りの数を指定します。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-ticks"
-           alt="$Platform$ Slider Tick Marks Example"
+           alt="$Platform$ Slider Tick Marks の例"
            github-src="inputs/slider/ticks">
 </code-view>
 
-Additionally, you could configure the orientation of the tick marks using the `TickOrientation` property. By default, the `TickOrientation` value is `end` which displays the ticks below the slider track. You could set it to `start` which displays them above the track and `mirror` which mirrors the ticks above and below the track.
+さらに、`TickOrientation` プロパティを使用して、目盛りの方向を構成できます。デフォルトでは、`TickOrientation` 値は `end` で、スライダー トラックの下に目盛りが表示されます。トラックの上に表示する `start` と、トラックの上下の目盛りをミラーする `mirror` に設定できます。
 
-By default, the tick marks display labels with their values. You could modify the rotation of the tick labels using the `TickLabelRotation` property. Additionally, you could hide the labels of the primary and secondary ticks using the `HidePrimaryLabels` and `HideSecondaryLabels` properties.
+デフォルトでは、目盛りはラベルとその値を表示します。`TickLabelRotation` プロパティを使用して、目盛りラベルの回転を変更できます。さらに、`HidePrimaryLabels` プロパティと `HideSecondaryLabels` プロパティを使用して、プライマリ目盛りとセカンダリ目盛りのラベルを非表示にすることができます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
-           alt="$Platform$ Slider Tick Mark Labels Example"
+           alt="$Platform$ Slider Tick Mark Labels の例"
            github-src="inputs/slider/labels">
 </code-view>
 
-### Label Formatter
+### Label Formatter (ラベル フォーマッタ)
 
-The `LabelFormatter` property of the sliders specifies a custom function used to format the tick mark labels and the thumb tooltip label. It is also used to set the `aria-valuetext` attribute of the slider thumb.
+スライダーの `LabelFormatter` プロパティは、目盛りラベルとつまみのツールチップ ラベルのフォーマットに使用されるカスタム関数を指定します。また、スライダーつまみの `aria-valuetext` 属性を設定するためにも使用されます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-label-formatter"
-           alt="$Platform$ Slider Label Formatter Example"
+           alt="$Platform$ Slider Label Formatter の例"
            github-src="inputs/slider/label-formatter">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The slider components expose CSS parts for their inner elements. The following table lists all CSS parts:
+スライダー コンポーネントは、内部要素の CSS パーツを公開します。次の表に、すべての CSS パーツを示します:
 
-|Name|Description|
+|名|説明|
 |--|--|
 | base | The base wrapper of the slider. |
 | ticks | The ticks container. |
@@ -157,12 +157,12 @@ The slider components expose CSS parts for their inner elements. The following t
 | inactive | The inactive element of the track. |
 | fill | The filled part of the track. |
 
-The following sample demonstrates how to style the track fill and thumb parts:
+次のサンプルは、トラックの塗りつぶしとつまみのパーツのスタイルを設定する方法を示しています。
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-styling"
-           alt="$Platform$ Slider Styling Example"
+           alt="$Platform$ Slider スタイル設定の例"
            github-src="inputs/slider/styling">
 </code-view>
 
