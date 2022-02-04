@@ -143,19 +143,19 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 |名|説明|
 |--|--|
-| base | The base wrapper of the slider. |
-| ticks | The ticks container. |
-| tick-group | The tick group container. |
-| tick | The tick element. |
-| tick-label | The tick label element. |
-| tick-label-inner | The inner element of the tick label. |
-| thumbs | The thumbs container. |
-| thumb | The thumb element. |
-| thumb-label | The label of the thumb tooltip. |
-| track | The track container. |
-| steps | The track steps element. |
-| inactive | The inactive element of the track. |
-| fill | The filled part of the track. |
+| base | スライダーの基本ラッパー。|
+| ticks | 目盛りのコンテナー。|
+| tick-group | 目盛りグループ コンテナー。|
+| tick | 目盛りの要素。|
+| tick-label | 目盛りラベルの要素。|
+| tick-label-inner | 目盛りラベルの内側の要素。|
+| thumbs | つまみのコンテナー。|
+| thumb | つまみの要素。|
+| thumb-label | つまみツールチップのラベル。|
+| track | トラックのコンテナー。|
+| steps | トラック ステップの要素。|
+| inactive | トラックの非アクティブな要素。|
+| fill | トラックの塗りつぶし部分。|
 
 次のサンプルは、トラックの塗りつぶしとつまみのパーツのスタイルを設定する方法を示しています。
 
