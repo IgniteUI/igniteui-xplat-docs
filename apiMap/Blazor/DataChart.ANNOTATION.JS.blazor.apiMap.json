@@ -193,4 +193,9 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"VerticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"HorizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryToolTipLayer",
+    "names":[{"platform":"Blazor","fileName":"SummaryToolTipLayer.cs","mappedName":"IgbSummaryToolTipLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

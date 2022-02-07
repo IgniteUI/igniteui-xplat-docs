@@ -245,4 +245,20 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"React","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryToolTipLayer",
+    "names":[{"platform":"React","fileName":"igr-summary-tool-tip-layer.ts","dynamicModuleName":"igr-summary-tool-tip-layer-dynamic-module.ts","moduleName":"igr-summary-tool-tip-layer-module.ts","mappedName":"IgrSummaryToolTipLayer"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryTooltipLayerPosition","isEnum":true,
+    "names":[{"platform":"React","fileName":"SummaryTooltipLayerPosition.ts","mappedName":"SummaryTooltipLayerPosition"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"SummaryTooltipLayerPosition","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideStart"}],"originalName":"OutsideStart"},
+    { "names":[{"platform":"React","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
+    { "names":[{"platform":"React","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
+    { "names":[{"platform":"React","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

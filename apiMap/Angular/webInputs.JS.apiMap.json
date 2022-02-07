@@ -1,5 +1,7 @@
-{"extraFiles":["igx-avatar-module.ts","igx-badge-module.ts","igx-button-base-module.ts","igx-button-module.ts","igx-icon-module.ts","igx-radio-group-module.ts","igx-radio-module.ts","igx-card-module.ts","igx-checkbox-base-module.ts","igx-checkbox-module.ts","igx-input-module.ts","igx-list-header-module.ts","igx-list-item-module.ts","igx-list-module.ts","igx-navbar-module.ts","igx-ripple-module.ts","igx-switch-module.ts","igx-form-module.ts","igx-icon-button-module.ts","igx-nav-drawer-header-item-module.ts","igx-nav-drawer-item-module.ts","igx-nav-drawer-module.ts","igx-card-actions-module.ts","igx-card-content-module.ts","igx-card-header-module.ts","igx-card-media-module.ts","igx-calendar-base-module.ts","igx-calendar-module.ts","igx-range-slider-module.ts","igx-slider-base-module.ts","igx-slider-module.ts"],
+{"extraFiles":["igx-avatar-module.ts","igx-badge-module.ts","igx-button-base-module.ts","igx-button-module.ts","igx-icon-module.ts","igx-radio-group-module.ts","igx-radio-module.ts","igx-card-module.ts","igx-checkbox-base-module.ts","igx-checkbox-module.ts","igx-input-module.ts","igx-list-header-module.ts","igx-list-item-module.ts","igx-list-module.ts","igx-navbar-module.ts","igx-ripple-module.ts","igx-switch-module.ts","igx-form-module.ts","igx-icon-button-module.ts","igx-nav-drawer-header-item-module.ts","igx-nav-drawer-item-module.ts","igx-nav-drawer-module.ts","igx-card-actions-module.ts","igx-card-content-module.ts","igx-card-header-module.ts","igx-card-media-module.ts","igx-calendar-base-module.ts","igx-calendar-module.ts","igx-range-slider-module.ts","igx-slider-base-module.ts","igx-slider-module.ts","igx-slider-label-module.ts"],
   "types":[
+  { "originalName":"SliderLabel",
+    "names":[{"platform":"Angular","fileName":"igx-slider-label-component.ts","mappedName":"IgxSliderLabelComponent"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"NumberEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-number-event-args.ts","mappedName":"IgxNumberEventArgs"}],
     "members":[
@@ -38,6 +40,9 @@
     { "names":[{"platform":"Angular","mappedType":"SliderBaseTickOrientation","mappedName":"tickOrientation"}],"originalName":"TickOrientation"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hidePrimaryLabels"}],"originalName":"HidePrimaryLabels"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hideSecondaryLabels"}],"originalName":"HideSecondaryLabels"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueFormat"}],"originalName":"ValueFormat"},
+    { "names":[{"platform":"Angular","mappedType":"NumberFormatOptions","mappedName":"valueFormatOptions"}],"originalName":"ValueFormatOptions"},
     { "names":[{"platform":"Angular","mappedType":"TickLabelRotation","mappedName":"tickLabelRotation"}],"originalName":"TickLabelRotation"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"RangeSliderValue",
@@ -65,10 +70,11 @@
     { "names":[{"platform":"Angular","mappedType":"IgxCalendarResourceStrings","mappedName":"resourceStrings"}],"originalName":"ResourceStrings"},
     { "names":[{"platform":"Angular","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"}],"originalBaseTypeName":"CalendarBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"DateRangeDescriptor",
-    "names":[{"platform":"Angular","fileName":"igx-date-range-descriptor.ts","mappedName":"IgxDateRangeDescriptor"}],
+    "names":[{"platform":"Angular","fileName":"DateRangeDescriptor.ts","mappedName":"DateRangeDescriptor"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"DateRangeType","mappedName":"rangeType"}],"originalName":"RangeType"},
-    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"}],"originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"CalendarDate",
     "names":[{"platform":"Angular","fileName":"igx-calendar-date.ts","mappedName":"IgxCalendarDate"}],
     "members":[
@@ -110,8 +116,8 @@
     { "names":[{"platform":"Angular","mappedType":"CalendarBaseWeekStart","mappedName":"weekStart"}],"originalName":"WeekStart"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"activeDate"}],"originalName":"ActiveDate"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
-    { "names":[{"platform":"Angular","mappedType":"IgxDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
-    { "names":[{"platform":"Angular","mappedType":"IgxDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"Angular","mappedType":"IDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
+    { "names":[{"platform":"Angular","mappedType":"IDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"ComponentDataValueChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-component-data-value-changed-event-args.ts","mappedName":"IgxComponentDataValueChangedEventArgs"}],
     "members":[
@@ -309,6 +315,7 @@
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"required"}],"originalName":"Required"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"checked"}],"originalName":"Checked"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},

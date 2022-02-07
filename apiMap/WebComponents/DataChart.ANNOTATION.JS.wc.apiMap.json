@@ -245,4 +245,20 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryToolTipLayer",
+    "names":[{"platform":"WebComponents","fileName":"igc-summary-tool-tip-layer-component.ts","dynamicModuleName":"igc-summary-tool-tip-layer-dynamic-module.ts","moduleName":"igc-summary-tool-tip-layer-module.ts","mappedName":"IgcSummaryToolTipLayerComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryTooltipLayerPosition","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"SummaryTooltipLayerPosition.ts","mappedName":"SummaryTooltipLayerPosition"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideStart"}],"originalName":"OutsideStart"},
+    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
+    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
+    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

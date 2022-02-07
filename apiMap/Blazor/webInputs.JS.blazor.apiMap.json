@@ -1,4 +1,6 @@
 {"types":[
+  { "originalName":"SliderLabel",
+    "names":[{"platform":"Blazor","fileName":"SliderLabel.cs","mappedName":"IgbSliderLabel"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"NumberEventArgs",
     "names":[{"platform":"Blazor","fileName":"NumberEventArgs.cs","mappedName":"IgbNumberEventArgs"}],
     "members":[
@@ -37,6 +39,9 @@
     { "names":[{"platform":"Blazor","mappedType":"SliderBaseTickOrientation","mappedName":"TickOrientation"}],"originalName":"TickOrientation"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"HidePrimaryLabels"}],"originalName":"HidePrimaryLabels"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"HideSecondaryLabels"}],"originalName":"HideSecondaryLabels"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueFormat"}],"originalName":"ValueFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbNumberFormatSpecifier","mappedName":"ValueFormatOptions"}],"originalName":"ValueFormatOptions"},
     { "names":[{"platform":"Blazor","mappedType":"TickLabelRotation","mappedName":"TickLabelRotation"}],"originalName":"TickLabelRotation"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ConnectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"RangeSliderValue",
@@ -63,9 +68,13 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbCalendarFormatOptions","mappedName":"FormatOptions"}],"originalName":"FormatOptions"},
     { "names":[{"platform":"Blazor","mappedType":"IgbCalendarResourceStrings","mappedName":"ResourceStrings"}],"originalName":"ResourceStrings"},
     { "names":[{"platform":"Blazor","mappedType":"SizableComponentSize","mappedName":"Size"}],"originalName":"Size"}],"originalBaseTypeName":"CalendarBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"IDateRangeDescriptor",
+    "names":[{"platform":"Blazor","fileName":"DateRangeDescriptor.cs","mappedName":"IgbDateRangeDescriptor"}],"members":[],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"DateRangeDescriptor",
     "names":[{"platform":"Blazor","fileName":"DateRangeDescriptor.cs","mappedName":"IgbDateRangeDescriptor"}],
     "members":[
+    { "names":[{"platform":"Blazor","mappedType":"DateRangeType","mappedName":"RangeType"}],"originalName":"RangeType"},
+    { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"DateRange"}],"originalName":"DateRange"},
     { "names":[{"platform":"Blazor","mappedType":"DateRangeType","mappedName":"RangeType"}],"originalName":"RangeType"},
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"DateRange"}],"originalName":"DateRange"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"CalendarDate",
@@ -298,6 +307,7 @@
     "names":[{"platform":"Blazor","fileName":"Radio.cs","mappedName":"IgbRadio"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Required"}],"originalName":"Required"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Checked"}],"originalName":"Checked"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Disabled"}],"originalName":"Disabled"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Invalid"}],"originalName":"Invalid"},

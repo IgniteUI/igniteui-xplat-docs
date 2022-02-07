@@ -1,5 +1,7 @@
-{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts"],
+{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts","igr-slider-label-module.ts"],
   "types":[
+  { "originalName":"SliderLabel",
+    "names":[{"platform":"React","fileName":"igr-slider-label.ts","mappedName":"IgrSliderLabel"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"NumberEventArgs",
     "names":[{"platform":"React","fileName":"igr-number-event-args.ts","mappedName":"IgrNumberEventArgs"}],
     "members":[
@@ -38,6 +40,9 @@
     { "names":[{"platform":"React","mappedType":"SliderBaseTickOrientation","mappedName":"tickOrientation"}],"originalName":"TickOrientation"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hidePrimaryLabels"}],"originalName":"HidePrimaryLabels"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hideSecondaryLabels"}],"originalName":"HideSecondaryLabels"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueFormat"}],"originalName":"ValueFormat"},
+    { "names":[{"platform":"React","mappedType":"NumberFormatOptions","mappedName":"valueFormatOptions"}],"originalName":"ValueFormatOptions"},
     { "names":[{"platform":"React","mappedType":"TickLabelRotation","mappedName":"tickLabelRotation"}],"originalName":"TickLabelRotation"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"RangeSliderValue",
@@ -65,10 +70,11 @@
     { "names":[{"platform":"React","mappedType":"IgrCalendarResourceStrings","mappedName":"resourceStrings"}],"originalName":"ResourceStrings"},
     { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"}],"originalBaseTypeName":"CalendarBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"DateRangeDescriptor",
-    "names":[{"platform":"React","fileName":"igr-date-range-descriptor.ts","mappedName":"IgrDateRangeDescriptor"}],
+    "names":[{"platform":"React","fileName":"DateRangeDescriptor.ts","mappedName":"DateRangeDescriptor"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"DateRangeType","mappedName":"rangeType"}],"originalName":"RangeType"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"}],"originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"CalendarDate",
     "names":[{"platform":"React","fileName":"igr-calendar-date.ts","mappedName":"IgrCalendarDate"}],
     "members":[
@@ -110,8 +116,8 @@
     { "names":[{"platform":"React","mappedType":"CalendarBaseWeekStart","mappedName":"weekStart"}],"originalName":"WeekStart"},
     { "names":[{"platform":"React","mappedType":"Date","mappedName":"activeDate"}],"originalName":"ActiveDate"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
-    { "names":[{"platform":"React","mappedType":"IgrDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
-    { "names":[{"platform":"React","mappedType":"IgrDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"React","mappedType":"IDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
+    { "names":[{"platform":"React","mappedType":"IDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"ComponentDataValueChangedEventArgs",
     "names":[{"platform":"React","fileName":"igr-component-data-value-changed-event-args.ts","mappedName":"IgrComponentDataValueChangedEventArgs"}],
     "members":[
@@ -309,6 +315,7 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"required"}],"originalName":"Required"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"checked"}],"originalName":"Checked"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},
