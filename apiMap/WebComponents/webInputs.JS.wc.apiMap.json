@@ -1,5 +1,7 @@
-{"extraFiles":["igc-avatar-module.ts","igc-badge-module.ts","igc-button-base-module.ts","igc-button-module.ts","igc-icon-module.ts","igc-radio-group-module.ts","igc-radio-module.ts","igc-card-module.ts","igc-checkbox-base-module.ts","igc-checkbox-module.ts","igc-input-module.ts","igc-list-header-module.ts","igc-list-item-module.ts","igc-list-module.ts","igc-navbar-module.ts","igc-ripple-module.ts","igc-switch-module.ts","igc-form-module.ts","igc-icon-button-module.ts","igc-nav-drawer-header-item-module.ts","igc-nav-drawer-item-module.ts","igc-nav-drawer-module.ts","igc-card-actions-module.ts","igc-card-content-module.ts","igc-card-header-module.ts","igc-card-media-module.ts","igc-calendar-base-module.ts","igc-calendar-module.ts","igc-range-slider-module.ts","igc-slider-base-module.ts","igc-slider-module.ts"],
+{"extraFiles":["igc-avatar-module.ts","igc-badge-module.ts","igc-button-base-module.ts","igc-button-module.ts","igc-icon-module.ts","igc-radio-group-module.ts","igc-radio-module.ts","igc-card-module.ts","igc-checkbox-base-module.ts","igc-checkbox-module.ts","igc-input-module.ts","igc-list-header-module.ts","igc-list-item-module.ts","igc-list-module.ts","igc-navbar-module.ts","igc-ripple-module.ts","igc-switch-module.ts","igc-form-module.ts","igc-icon-button-module.ts","igc-nav-drawer-header-item-module.ts","igc-nav-drawer-item-module.ts","igc-nav-drawer-module.ts","igc-card-actions-module.ts","igc-card-content-module.ts","igc-card-header-module.ts","igc-card-media-module.ts","igc-calendar-base-module.ts","igc-calendar-module.ts","igc-range-slider-module.ts","igc-slider-base-module.ts","igc-slider-module.ts","igc-slider-label-module.ts"],
   "types":[
+  { "originalName":"SliderLabel",
+    "names":[{"platform":"WebComponents","fileName":"igc-slider-label-component.ts","mappedName":"IgcSliderLabelComponent"}],"members":[],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"NumberEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-number-event-args.ts","mappedName":"IgcNumberEventArgs"}],
     "members":[
@@ -38,6 +40,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"SliderBaseTickOrientation","mappedName":"tickOrientation"}],"originalName":"TickOrientation"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hidePrimaryLabels"}],"originalName":"HidePrimaryLabels"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hideSecondaryLabels"}],"originalName":"HideSecondaryLabels"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormat"}],"originalName":"ValueFormat"},
+    { "names":[{"platform":"WebComponents","mappedType":"NumberFormatOptions","mappedName":"valueFormatOptions"}],"originalName":"ValueFormatOptions"},
     { "names":[{"platform":"WebComponents","mappedType":"TickLabelRotation","mappedName":"tickLabelRotation"}],"originalName":"TickLabelRotation"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"RangeSliderValue",
@@ -65,10 +70,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcCalendarResourceStrings","mappedName":"resourceStrings"}],"originalName":"ResourceStrings"},
     { "names":[{"platform":"WebComponents","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"}],"originalBaseTypeName":"CalendarBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"DateRangeDescriptor",
-    "names":[{"platform":"WebComponents","fileName":"igc-date-range-descriptor.ts","mappedName":"IgcDateRangeDescriptor"}],
+    "names":[{"platform":"WebComponents","fileName":"DateRangeDescriptor.ts","mappedName":"DateRangeDescriptor"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"DateRangeType","mappedName":"Type"}],"originalName":"RangeType"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"}],"originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"dateRange"}],"originalName":"DateRange"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"CalendarDate",
     "names":[{"platform":"WebComponents","fileName":"igc-calendar-date.ts","mappedName":"IgcCalendarDate"}],
     "members":[
@@ -110,8 +116,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"CalendarBaseWeekStart","mappedName":"weekStart"}],"originalName":"WeekStart"},
     { "names":[{"platform":"WebComponents","mappedType":"Date","mappedName":"activeDate"}],"originalName":"ActiveDate"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"WebComponents","mappedType":"IDateRangeDescriptor[]","mappedName":"disabledDates"}],"originalName":"DisabledDates"},
+    { "names":[{"platform":"WebComponents","mappedType":"IDateRangeDescriptor[]","mappedName":"specialDates"}],"originalName":"SpecialDates"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"ComponentDataValueChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-component-data-value-changed-event-args.ts","mappedName":"IgcComponentDataValueChangedEventArgs"}],
     "members":[
@@ -309,6 +315,7 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"required"}],"originalName":"Required"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"checked"}],"originalName":"Checked"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"invalid"}],"originalName":"Invalid"},

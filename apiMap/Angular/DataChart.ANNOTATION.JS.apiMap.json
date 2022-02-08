@@ -245,4 +245,20 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryToolTipLayer",
+    "names":[{"platform":"Angular","fileName":"igx-summary-tool-tip-layer-component.ts","dynamicModuleName":"igx-summary-tool-tip-layer-dynamic-module.ts","moduleName":"igx-summary-tool-tip-layer-module.ts","mappedName":"IgxSummaryToolTipLayerComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SummaryTooltipLayerPosition","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"SummaryTooltipLayerPosition.ts","mappedName":"SummaryTooltipLayerPosition"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"SummaryTooltipLayerPosition","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideStart"}],"originalName":"OutsideStart"},
+    { "names":[{"platform":"Angular","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
+    { "names":[{"platform":"Angular","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
+    { "names":[{"platform":"Angular","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
