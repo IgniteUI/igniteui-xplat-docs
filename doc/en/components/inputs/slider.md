@@ -2,7 +2,7 @@
 title: $Platform$ Slider & Range Slider Components | $ProductName$
 _description: Learn how to configure a selection in a given range by using the thumb track with $Platform$ Slider & Range Slider part of $ProductName$. Choose between single and range slider.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics
-mentionedTypes: ['Slider', 'RangeSlider']
+mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
 ---
 
 # $Platform$ Slider & Range Slider Overview
@@ -103,7 +103,7 @@ The `Step` property specifies the granularity of the slider that the value must 
 
 If the `Step` property is set to `0`, no stepping is implied and any value in the slider range is allowed. In this case, the slider will look continuous even if `DiscreteTrack` is set to `true`.
 
-### Tick Marks & Labels
+### Tick Marks
 
 The slider components could display tick marks and labels. The slider components support two types of tick marks: primary and secondary. In order to display the primary tick marks, you should set the `PrimaryTicks` property to a value greater than `1`. The number of primary ticks will be evenly distributed on the track. In order to display the secondary tick marks, you should set the `SecondaryTicks` property to a value greater than `0`. The value of `SecondaryTicks` specifies the number of secondary ticks between every two primary ticks.
 
@@ -120,20 +120,31 @@ By default, the tick marks display labels with their values. You could modify th
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-tick-labels"
            alt="$Platform$ Slider Tick Mark Labels Example"
-           github-src="inputs/slider/labels">
+           github-src="inputs/slider/tick-labels">
 </code-view>
 
-### Label Formatter
+### Value Format
 
-The `LabelFormatter` property of the sliders specifies a custom function used to format the tick mark labels and the thumb tooltip label. It is also used to set the `aria-valuetext` attribute of the slider thumb.
+If you want to format the thumb and tick label values, the slider provides `ValueFormat`, `ValueFormatOptions` and `Locale` properties. Тhe `ValueFormatOptions` allows you to specify the number of fraction and significant digits, style (decimal, currency, percent, unit), notation and others taking into account the specified `Locale`. The `ValueFormat` is a string which may contain the `{0}` identifier which will be replaced by the value with applied format options.
+
+<code-view style="height: 230px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value-format"
+           alt="$Platform$ Slider Value Format Example"
+           github-src="inputs/slider/value-format">
+</code-view>
+
+### Labels
+
+In some cases you would want to format the values of the slider as string values i.e. map the values `[0, 1, 2]` to `['Low', 'Medium', 'High']`. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-label-formatter"
-           alt="$Platform$ Slider Label Formatter Example"
-           github-src="inputs/slider/label-formatter">
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
+           alt="$Platform$ Slider Labels Example"
+           github-src="inputs/slider/labels">
 </code-view>
 
 ## Styling
@@ -150,7 +161,8 @@ The slider components expose CSS parts for their inner elements. The following t
 | tick-label-inner | The inner element of the tick label. |
 | thumbs | The thumbs container. |
 | thumb | The thumb element. |
-| thumb-label | The label of the thumb tooltip. |
+| thumb-label | The label container of the thumb tooltip. |
+| thumb-label-inner | The label element of the thumb tooltip. |
 | track | The track container. |
 | steps | The track steps element. |
 | inactive | The inactive element of the track. |
