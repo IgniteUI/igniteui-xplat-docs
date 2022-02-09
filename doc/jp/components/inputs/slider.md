@@ -2,7 +2,7 @@
 title: $Platform$ スライダーと範囲スライダー コンポーネント | $ProductName$
 _description: $ProductName$ の $Platform$ スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ スライダー コンポーネント, インフラジスティックス
-mentionedTypes: ['Slider', 'RangeSlider']
+mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
 _language: ja
 ---
 
@@ -104,7 +104,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 `Step` プロパティが `0` に設定されている場合、ステッピングは暗黙指定されず、スライダー範囲内の任意の値が許可されます。この場合、`DiscreteTrack` が `true` に設定されていても、スライダーは連続して見えます。
 
-### Tick Marks & Labels (目盛りとラベル)
+### Tick Marks (目盛り)
 
 スライダー コンポーネントは、目盛りとラベルを表示できます。スライダー コンポーネントは、プライマリとセカンダリの 2 種類の目盛りをサポートしています。プライマリ目盛りを表示するには、`PrimaryTicks` プロパティを `1` より大きい値に設定する必要があります。プライマリ目盛りの数は、トラック上で均等に分散されます。セカンダリ目盛りを表示するには、`SecondaryTicks` プロパティを 0 より大きい値に設定する必要があります。`SecondaryTicks` の値は、2 つのプライマリ目盛りごとのセカンダリ目盛りの数を指定します。
 
@@ -121,20 +121,31 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-tick-labels"
            alt="$Platform$ Slider Tick Mark Labels の例"
-           github-src="inputs/slider/labels">
+           github-src="inputs/slider/tick-labels">
 </code-view>
 
-### Label Formatter (ラベル フォーマッタ)
+### Value Format
 
-スライダーの `LabelFormatter` プロパティは、目盛りラベルとつまみのツールチップ ラベルのフォーマットに使用されるカスタム関数を指定します。また、スライダーつまみの `aria-valuetext` 属性を設定するためにも使用されます。
+If you want to format the thumb and tick label values, the slider provides `ValueFormat`, `ValueFormatOptions` and `Locale` properties. Тhe `ValueFormatOptions` allows you to specify the number of fraction and significant digits, style (decimal, currency, percent, unit), notation and others taking into account the specified `Locale`. The `ValueFormat` is a string which may contain the `{0}` identifier which will be replaced by the value with applied format options.
+
+<code-view style="height: 230px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value-format"
+           alt="$Platform$ Slider Value Format の例"
+           github-src="inputs/slider/value-format">
+</code-view>
+
+### Labels
+
+In some cases you would want to format the values of the slider as string values i.e. map the values `[0, 1, 2]` to `['Low', 'Medium', 'High']`. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-label-formatter"
-           alt="$Platform$ Slider Label Formatter の例"
-           github-src="inputs/slider/label-formatter">
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
+           alt="$Platform$ Slider Labels の例"
+           github-src="inputs/slider/labels">
 </code-view>
 
 ## スタイル設定
@@ -151,7 +162,8 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 | tick-label-inner | 目盛りラベルの内側の要素。|
 | thumbs | つまみのコンテナー。|
 | thumb | つまみの要素。|
-| thumb-label | つまみツールチップのラベル。|
+| thumb-label | The label container of the thumb tooltip. |
+| thumb-label-inner | The label element of the thumb tooltip. |
 | track | トラックのコンテナー。|
 | steps | トラック ステップの要素。|
 | inactive | トラックの非アクティブな要素。|
