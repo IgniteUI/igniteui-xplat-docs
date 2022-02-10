@@ -126,9 +126,9 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
            github-src="inputs/slider/tick-labels">
 </code-view>
 
-### Value Format
+### Value Format (値の形式)
 
-If you want to format the thumb and tick label values, the slider provides `ValueFormat`, `ValueFormatOptions` and `Locale` properties. Тhe `ValueFormatOptions` allows you to specify the number of fraction and significant digits, style (decimal, currency, percent, unit), notation and others taking into account the specified `Locale`. The `ValueFormat` is a string which may contain the `{0}` identifier which will be replaced by the value with applied format options.
+つまみと目盛りのラベル値をを書式設定する場合、スライダーは `ValueFormat`、`ValueFormatOptions`、および `Locale` プロパティを提供します。`ValueFormatOptions` を使用すると、指定された `Locale` を考慮して、小数部と有効桁数、スタイル (10進数、通貨、パーセント、単位)、表記などを指定できます。`ValueFormat` は、書式設定オプションが適用された値に置き換えられる `{0}` 識別子を含む可能性のある文字列です。
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -137,9 +137,9 @@ If you want to format the thumb and tick label values, the slider provides `Valu
            github-src="inputs/slider/value-format">
 </code-view>
 
-### Labels
+### ラベル
 
-In some cases you would want to format the values of the slider as string values i.e. map the values `[0, 1, 2]` to `['Low', 'Medium', 'High']`. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
+場合によっては、スライダーの値を文字列値として書式設定する必要があります。つまり、値 `[0, 1, 2]` を `['Low', 'Medium', 'High']` にマップします。このシナリオでは、スライダーを使用して、スライダー内に `SliderLabel` 要素を定義できます。スライダー ラベルのテキスト コンテンツは、つまみラベルと目盛りラベルに使用されます。スライダー ラベルが提供されている場合、`Min`、`Max`、および `Step` プロパティが自動的に計算されるため、提供されたラベルにマップされない値は許可されないことに注意してください。'Low'、'Medium'、および 'High' ラベルの場合、`Min` は `0` に設定され、`Max` は `2` に設定され、`Step` は `1` に設定されます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -162,8 +162,8 @@ In some cases you would want to format the values of the slider as string values
 | tick-label-inner | 目盛りラベルの内側の要素。|
 | thumbs | つまみのコンテナー。|
 | thumb | つまみの要素。|
-| thumb-label | The label container of the thumb tooltip. |
-| thumb-label-inner | The label element of the thumb tooltip. |
+| thumb-label | つまみツールチップのラベル コンテナー。|
+| thumb-label-inner | つまみツールチップのラベル要素。|
 | track | トラックのコンテナー。|
 | steps | トラック ステップの要素。|
 | inactive | トラックの非アクティブな要素。|
