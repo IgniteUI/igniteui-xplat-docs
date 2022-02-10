@@ -128,7 +128,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 ### Value Format (値の形式)
 
-つまみと目盛りのラベル値をを書式設定する場合、スライダーは `ValueFormat`、`ValueFormatOptions`、および `Locale` プロパティを提供します。`ValueFormatOptions` を使用すると、指定された `Locale` を考慮して、小数部と有効桁数、スタイル (10進数、通貨、パーセント、単位)、表記などを指定できます。`ValueFormat` は、書式設定オプションが適用された値に置き換えられる `{0}` 識別子を含む可能性のある文字列です。
+つまみと目盛りのラベル値をを書式設定する場合、スライダーは `ValueFormat`、`ValueFormatOptions`、および `Locale` プロパティを提供します。`ValueFormatOptions` を使用すると、指定された `Locale` を考慮して、小数部と有効桁数、スタイル (10 進数、通貨、パーセント、単位)、表記などを指定できます。`ValueFormat` は、書式設定オプションが適用された値に置き換えられる `{0}` 識別子を含む可能性のある文字列です。
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
