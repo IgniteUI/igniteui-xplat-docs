@@ -1333,7 +1333,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "スライダー & 範囲スライダー {ReleaseStatus_WebsInputs}",
     "href": "inputs/slider.md",
     "status": "NEW"
