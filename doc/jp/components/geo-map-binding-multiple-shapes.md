@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 複数のデータ図形のバインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ を使用して、複数の地理的シリーズオブジェクトを追加し、いくつかのシェープファイルを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
 _keywords: $Platform$ map, shape files, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープ ファイル, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
@@ -22,7 +22,7 @@ $ProductName$ マップでは、複数の地理的シリーズオブジェクト
 
 <div class="divider--half"></div>
 
-このトピックでは、マップ コンポーネントに複数の地理的シリーズを表示する方法について段階的に説明します。すべての地理的シリーズは、`ShapeDataSource` クラスを使用して形状ファイルからロードされた地理空間データに従ってプロットします。ShapeDataSource オブジェクトの詳細については、[シェープファイルのバインディング](geo-map-binding-shp-file.md)のトピックを参照してください。
+このトピックでは、マップ コンポーネントに複数の地理的シリーズを表示する方法について段階的に説明します。すべての地理的シリーズは、`ShapefileConverter` クラスを使用して形状ファイルからロードされた地理空間データに従ってプロットします。ShapeDataSource オブジェクトの詳細については、[シェープファイルのバインディング](geo-map-binding-shp-file.md)のトピックを参照してください。
 
 - `GeographicSymbolSeries` – 主要都市の場所を表示します。
 - `GeographicPolylineSeries` – 主要ポート間のルートを表示します。
@@ -204,7 +204,7 @@ public render() {
 
 ## シェープファイルの読み込み
 
-次に、ページのコンストラクターで、地理マップコンポーネントに表示する各シェープファイルの `ShapeDataSource` を追加します。
+次に、ページのコンストラクターで、地理マップコンポーネントに表示する各シェープファイルの `ShapefileConverter` を追加します。
 
 ```ts
 const sdsPolygons = new IgrShapeDataSource();
@@ -287,7 +287,7 @@ protected override void OnInitialized()
 
 ## ポリゴンの処理
 
-世界の国々の `ShapeDataSource` に読み込まれた形状データを処理し、`GeographicShapeSeries` オブジェクトに割り当てます。
+世界の国々の `ShapefileConverter` に読み込まれた形状データを処理し、`GeographicShapeSeries` オブジェクトに割り当てます。
 
 ```ts
 import { IgrGeographicShapeSeries } from 'igniteui-react-maps';
@@ -366,7 +366,7 @@ public onPolygonsLoaded(sds: IgcShapeDataSource, e: any) {
 
 ## ポリラインの処理
 
-`ShapeDataSource` に読み込まれた形状データを処理し、主要都市間の通信ルートを使用して、`GeographicPolylineSeries` オブジェクトに割り当てます。
+`ShapefileConverter` に読み込まれた形状データを処理し、主要都市間の通信ルートを使用して、`GeographicPolylineSeries` オブジェクトに割り当てます。
 
 ```ts
 import { IgrGeographicPolylineSeries } from 'igniteui-react-maps';
@@ -453,7 +453,7 @@ public onPolylinesLoaded(sds: IgcShapeDataSource, e: any) {
 
 ## ポイントの処理
 
-`ShapeDataSource` に読み込まれた世界各国の形状データを処理し、`GeographicSymbolSeries` オブジェクトに割り当てます。
+`ShapefileConverter` に読み込まれた世界各国の形状データを処理し、`GeographicSymbolSeries` オブジェクトに割り当てます。
 
 ```ts
 import { IgrGeographicSymbolSeries } from 'igniteui-react-maps';

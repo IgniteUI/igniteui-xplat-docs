@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 散布図記号シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップの散布図記号シリーズを使用して、地理的コンテキストでポイントまたはマーカーを使用し、地理空間データを表示します。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics, $Platform$ マップ, 散布図記号シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 _language: ja
 ---
 # $Platform$ 散布図記号シリーズの使用
@@ -25,7 +25,7 @@ $Platform$ マップ コンポーネントの `GeographicSymbolSeries` を使用
 マップコンポーネントの他の種類の地理的シリーズと同様に、`GeographicSymbolSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目は、地理的位置 (経度と緯度) を保存する 2 つの数値データ列を持つ必要があります。これらのデータ列は、`LatitudeMemberPath` および `LongitudeMemberPath` プロパティにマップされます。`GeographicSymbolSeries` は、これらのマップされたデータ列の値を使用して、地理マップコンポーネントにシンボル要素をプロットします。
 
 ## コード スニペット
-以下のコードは、`ShapeDataSource` を使用してシェイプ ファイルからロードした都市の場所に `GeographicSymbolSeries` をバインドする方法を示します。
+以下のコードは、`ShapefileConverter` を使用してシェイプ ファイルからロードした都市の場所に `GeographicSymbolSeries` をバインドする方法を示します。
 
 <!-- React -->
 ```tsx
