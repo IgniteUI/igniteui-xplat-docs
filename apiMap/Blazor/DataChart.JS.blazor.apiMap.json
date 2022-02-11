@@ -14,6 +14,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsWindowSyncedToVisibleRange"}],"originalName":"IsWindowSyncedToVisibleRange"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldSimulateHoverMoveCrosshairPoint"}],"originalName":"ShouldSimulateHoverMoveCrosshairPoint"},
     { "names":[{"platform":"Blazor","mappedType":"SeriesHighlightingMode","mappedName":"HighlightingMode"}],"originalName":"HighlightingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesViewerScrollbarMode","mappedName":"ScrollbarMode"}],"originalName":"ScrollbarMode"},
     { "names":[{"platform":"Blazor","mappedType":"SeriesHighlightingBehavior","mappedName":"HighlightingBehavior"}],"originalName":"HighlightingBehavior"},
     { "names":[{"platform":"Blazor","mappedType":"LegendHighlightingMode","mappedName":"LegendHighlightingMode"}],"originalName":"LegendHighlightingMode"},
     { "names":[{"platform":"Blazor","mappedType":"LegendItemBadgeShape","mappedName":"LegendItemBadgeShape"}],"originalName":"LegendItemBadgeShape"},

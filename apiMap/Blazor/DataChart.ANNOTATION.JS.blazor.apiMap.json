@@ -95,6 +95,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
     { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CollisionChannel"}],"originalName":"CollisionChannel"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbCalloutPlacementPositionsCollection","mappedName":"AllowedPositions"}],"originalName":"AllowedPositions"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsAutoCalloutBehaviorEnabled"}],"originalName":"IsAutoCalloutBehaviorEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseValueForAutoCalloutLabels"}],"originalName":"UseValueForAutoCalloutLabels"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCalloutStyleEnabled"}],"originalName":"IsCustomCalloutStyleEnabled"},
