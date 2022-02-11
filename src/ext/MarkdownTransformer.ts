@@ -11,6 +11,63 @@ let visit = require('unist-util-visit');
 let jsyaml = require('js-yaml');
 let fs = require('fs');
 
+// this array defines blazor namespaces mapped to API members
+// and it is converted to a lookup table for finding blazor namespaces in getApiLink()
+let BlazorNamespaces = [
+    {   "namespace": "Infragistics.Core",
+        "members": [
+            "ImageWrapper",
+            "Rect",
+            "Point",
+            "Size",
+        ]
+    },
+    {   "namespace": "Infragistics.Core.Graphics",
+        "members": [
+            "Colors",
+            "Color",
+        ]
+    },
+    {   "namespace": "Infragistics.IO",
+        "members": [
+            "FileAccess",
+            "FileMode",
+        ]
+    },
+    {   "namespace": "Infragistics.Documents.Excel",
+        "members": [
+            "Workbook",
+            "WorkbookSaveOptions",
+            "WorkbookFormat",
+            "WorkbookProtection",
+            "Worksheet",
+            "WorksheetCell",
+            "WorksheetRegion",
+            "WorksheetRow",
+            "WorksheetColumn",
+            "WorkbookColorInfo",
+            "WorksheetTable",
+            "WorksheetTableStyle",
+            "WorksheetCellComment",
+            "NamedReference",
+            "FormattedString",
+        ]
+    },
+];
+
+var BlazorNamespaceLookup: any = null;
+// converts above array to a lookup table for finding blazor namespaces in getApiLink()
+function getBlazorNamespaceLookup() {
+    if (BlazorNamespaceLookup === null) {
+        BlazorNamespaceLookup = {};
+        for (const item of BlazorNamespaces) {
+            for (const member of item.members) {
+                BlazorNamespaceLookup[member] = item.namespace
+            }
+        }
+    }
+    return BlazorNamespaceLookup;
+}
 
 function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
@@ -18,9 +75,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
+    let platform = <APIPlatform>options.platform;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-
         resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
         if (resolvedTypeName) {
             let typeInfo = mappings.getType(typeName);
@@ -36,18 +93,39 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     } else {
         isClass = true;
     }
+
     let linkText: string | null = null;
     if (resolvedTypeName) {
-        if (isClass) {
-            linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
-        } else if (isEnum) {
-            linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
-        } else if (isInterface) {
-            linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+        //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html
+        // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html
+        if (platform === APIPlatform.Blazor) {
+            var namespaceLookup = getBlazorNamespaceLookup();
+            var namespace = "IgniteUI.Blazor.Controls";
+            if (namespaceLookup[resolvedTypeName]) {
+                namespace = namespaceLookup[resolvedTypeName];
+            }
+            linkText = apiRoot + namespace + "." + resolvedTypeName + ".html";
+            // console.log( namespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
+
+        } else { // Angular || React || WC
+            if (isClass) {
+                linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
+            } else if (isEnum) {
+                linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
+            } else if (isInterface) {
+                linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+            }
         }
     }
+
     if (linkText && memberName) {
-        linkText = linkText + "#" + memberName.toLowerCase();
+        //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html#ChartType
+        // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
+        if (platform === APIPlatform.Blazor) {
+            linkText = linkText + "#" + memberName;
+        } else { // Angular, React, WC
+            linkText = linkText + "#" + memberName.toLowerCase();
+        }
     }
 
     if (linkText) {
@@ -1400,10 +1478,10 @@ export class MarkdownTransformer {
                     node.items = this.filterNodes(node.items, platform);
                 }
                 matchingNodes.push(node);
-                console.log('>> TOC filter in  ' + this.getNodeInfo(node));
+                // console.log('>> TOC filter in  ' + this.getNodeInfo(node));
             }
             else {
-                console.log('>> TOC filter out ' + this.getNodeInfo(node) + ' with exclude="' + node.exclude.join(',') + '"');
+                // console.log('>> TOC filter out ' + this.getNodeInfo(node) + ' with exclude="' + node.exclude.join(',') + '"');
             }
         }
         return matchingNodes;

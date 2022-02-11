@@ -270,6 +270,7 @@
             "staging":     "https://staging.infragistics.com/blazor-client",
             "production":  "https://www.infragistics.com/blazor-client"
         },
+        "apiDocRoot": "{environment:dvApiBaseUrl}/blazor-apps/blazor-api/api/",
         "Main":     "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html",
         "Overview": "https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/{CONTROL_NAME}.html"
     }
