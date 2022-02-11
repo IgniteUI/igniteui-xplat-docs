@@ -382,8 +382,12 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
         // sources.push('!doc/**/general*.md');
+        // sources.push('!doc/**/general-getting-started.md');
         // sources.push('!doc/**/general-changelog-dv.md');
         // sources.push('!doc/**/*map*.md');
+        // sources.push('!doc/**/bullet-graph.md');
+        // sources.push('!doc/**/linear-gauge.md');
+        // sources.push('!doc/**/radial-gauge.md');
         // sources.push('!doc/**/*gauge*.md');
         // sources.push('!doc/**/*excel*.md');
         // sources.push('!doc/**/spreadsheet*.md');
