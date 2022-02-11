@@ -372,6 +372,8 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/obsolete/**/*.md');
         // sources.push('!doc/**/grids/**/*.md');
         // sources.push('!doc/**/charts/**/*.md');
+        // sources.push('!doc/**/charts/types/**/*.md');
+        // sources.push('!doc/**/charts/features/**/*.md');
         // sources.push('!doc/**/editors/**/*.md');
         // sources.push('!doc/**/inputs/**/*.md');
         // sources.push('!doc/**/layouts/**/*.md');
@@ -381,6 +383,9 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/category-chart*.md');
         // sources.push('!doc/**/doughnut-chart.md');
         // sources.push('!doc/**/pie-chart.md');
+        // sources.push('!doc/**/zoomslider*.md');
+        // sources.push('!doc/**/sparkline*.md');
+        // sources.push('!doc/**/treemap*.md');
         // sources.push('!doc/**/general*.md');
         // sources.push('!doc/**/general-getting-started.md');
         // sources.push('!doc/**/general-changelog-dv.md');
@@ -392,15 +397,10 @@ function buildPlatform(cb) {
         // sources.push('!doc/**/*excel*.md');
         // sources.push('!doc/**/spreadsheet*.md');
         // sources.push('!doc/**/dock-manager*.md');
-        // sources.push('!doc/**/*graph.md');
-        // sources.push('!doc/**/treemap*.md');
-        // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/sparkline*.md');
         // sources.push('!doc/**/editors/*.md');
         // sources.push('!doc/**/scheduling/*.md');
         // sources.push('!doc/**/jp/**/*.md');
         // sources.push('!doc/**/kr/**/*.md');
-        // sources.push('!doc/**/types/**/*.md');
 
         gulp.src(sources)
         .pipe(transformFiles())
