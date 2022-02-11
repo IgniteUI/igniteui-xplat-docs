@@ -124,9 +124,10 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
         if (platform === APIPlatform.Blazor) {
             var prefix = blazorNamespace.split('.').join('_') + '_';
             if (linkText.indexOf('.IgbDataGrid') > 0) {
-                prefix += 'IgbDataGrid_';
+                linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
+            } else {
+                linkText = linkText + "#" + prefix + memberName;
             }
-            linkText = linkText + "#" + prefix + memberName;
         } else { // Angular, React, WC
             linkText = linkText + "#" + memberName.toLowerCase();
         }
