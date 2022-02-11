@@ -179,6 +179,7 @@ function updateApiWebComponents() {
     return updateApiFor("WebComponents");
 }
 exports.updateApiWebComponents = updateApiWebComponents;
+exports.updateApiWC = updateApiWebComponents;
 
 // updates API mapping files in ./apiMap folder for Blazor platform
 function updateApiBlazor() {
