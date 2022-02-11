@@ -2,7 +2,7 @@
 title: $Platform$ Tree Component | Infragistics
 _description: Infragistics' $Platform$ Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Tree, Item Tree, overview, $ProductName$, Infragistics
-mentionedTypes: ['Tree', 'TreeItem']
+mentionedTypes: ['Tree', 'TreeItem', 'CircularProgress']
 ---
 
 # $Platform$ Tree Overview
@@ -12,13 +12,13 @@ The $ProductName$ Tree element allows users to represent hierarchical data in a 
 
 ## $Platform$ Tree Example
 
-In this basic $ProductName$ Tree example, you can see how to define an `igc-tree` and its nodes by specifying the node hierarchy and iterating through a hierarchical data set.
+In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy and iterating through a hierarchical data set.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-sample"
            alt="$Platform$ Tree Example"
-           github-src="grids/tree/overview">
+           github-src="grids/tree/tree-basic-sample">
 </code-view>
 
 <div class="divider--half"></div>
@@ -31,7 +31,6 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 Before using the `Tree`, you need to register it as follows:
 
@@ -41,6 +40,7 @@ import {defineComponents, IgcTreeComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcTreeComponent);
 ```
+<!-- end: WebComponents -->
 
 The simplest way to start using the `Tree` is as follows:
 
@@ -48,48 +48,33 @@ The simplest way to start using the `Tree` is as follows:
 ### Declaring a tree
 `TreeItem` is the representation of every item that belongs to the `Tree`.  
 Items provide `disabled`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement. 
-`data` property can be used to add a reference to the data entry the item represents.
+`value` property can be used to add a reference to the data entry the item represents.
 
 Items can be declared using one of the following approaches.
 
-- Declaring the tree and its items by specifying the item hierarchy and iterating through a data set
-
-```html
-   
-```
-
-Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
-
-```html
-   
-```
+- Declaring the tree and its items by specifying the item hierarchy and iterating through a data set - The tree items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
 
 - Declaring a tree by creating static unbound item
 
-In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model:
+<!-- WebComponents -->
 
-```html
-   
-```
+In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
+
+> [!NOTE]
+> You can provide a custom slot content for each `TreeItem` indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
+
+<!-- end: WebComponents -->
 
 ### Items with focusable content
 
-When an item should render a focusable element (e.g. link, button), enable the `Tree` `hasFocusableContent` property. This will ensure that the proper aria role is assigned to the items's DOM elements.
-```html
-<igc-tree hasFocusableContent>
-    <igc-tree-item>
-        <p slot="label">
-            <a href="https://www.infragistics.com/" target="_blank">Infragistics</a>
-        </p>
-    </igc-tree-item>
-</igc-tree>
-```
+When an item should render a focusable element (e.g. link, button), enable the `Tree`'s `hasFocusableContent` property. This will ensure that the proper aria role is assigned to the items's DOM elements.
+
 ### Item Interactions
 The `Tree` provides the following API methods for item interactions:
-- **expand** - expands all items. If an items array is passed, expands only the specified items.
-- **collapse** - collapses all items. If an items array is passed, collapses only the specified items.
-- **select** - selects all items. If an items array is passed, selects only the specified items. Does not emit igcSelection event.
-- **deselect** - deselects all items. If an items array is passed, deselects only the specified items. Does not emit igcSelection event.
+- `expand` - expands all items. If an items array is passed, expands only the specified items.
+- `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
+- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit igcSelection event.
+- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit igcSelection event.
 
 ## $Platform$ Tree Selection
 
@@ -99,18 +84,9 @@ In order to setup item selection in the $ProductName$ Tree, you just need to set
 In the `Tree` by default item selection is disabled. Users cannot select or deselect an item through UI interaction, but these actions can still be completed through the provided API method.
 ### Multiple
 To enable multiple item selection in the `Tree` just set the `selection` property to **Multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
-
-```html
-<igc-tree selection="multiple">
-</igc-tree>
-```
 ### Cascade
 To enable cascade item selection in the `Tree`, just set the selection property to **Cascade**. This will render a checkbox for every item. 
 
-```html
-<igc-tree selection="cascade">
-</igc-tree>
-```
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
 ## Keyboard Navigation
@@ -140,6 +116,24 @@ When selection is enabled, end-user selection of items is only allowed through t
  - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
  - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
 
+## $Platform$ Tree Load On Demand
+
+The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-advanced-sample"
+           alt="$Platform$ Tree Load On Demand Example"
+           github-src="grids/tree/tree-advanced-sample">
+</code-view>
+
+After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
+
+<!-- WebComponents -->
+
+You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
+
+<!-- end: WebComponents -->
 ## Styling
 
 You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
@@ -155,6 +149,22 @@ Part name | Description
 `text` | The tree item displayed text.
 `select` | The checkbox of the tree item when selection is enabled.
 
+Using these CSS parts we can customize thе appearance of the `Tree` component like this:
+
+```css
+igc-tree-item::part(active) {
+    background: #ecaa53;
+}
+
+igc-tree-item::part(selected) {
+    background: #ffe6cc;
+}
+
+igc-tree-item::part(active selected) {
+    background: #ff8c1a;
+    color: white;
+}
+```
 
 <!-- WebComponents -->
 
@@ -162,6 +172,7 @@ Part name | Description
 
 * `Tree`
 * `TreeItem`
+* `CircularProgress`
 * `Icon`
 
 <!-- end: WebComponents -->
