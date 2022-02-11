@@ -94,18 +94,18 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
         isClass = true;
     }
 
+    let blazorNamespace: string = "IgniteUI.Blazor.Controls";
     let linkText: string | null = null;
     if (resolvedTypeName) {
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html
         if (platform === APIPlatform.Blazor) {
-            var namespaceLookup = getBlazorNamespaceLookup();
-            var namespace = "IgniteUI.Blazor.Controls";
-            if (namespaceLookup[resolvedTypeName]) {
-                namespace = namespaceLookup[resolvedTypeName];
+            var blazorNamespaceLookup = getBlazorNamespaceLookup();
+            if (blazorNamespaceLookup[resolvedTypeName]) {
+                blazorNamespace = blazorNamespaceLookup[resolvedTypeName];
             }
-            linkText = apiRoot + namespace + "." + resolvedTypeName + ".html";
-            // console.log( namespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
+            linkText = apiRoot + blazorNamespace + "." + resolvedTypeName + ".html";
+            // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
             if (isClass) {
@@ -122,7 +122,8 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
         //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html#ChartType
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
         if (platform === APIPlatform.Blazor) {
-            linkText = linkText + "#" + memberName;
+            var prefix = blazorNamespace.split('.').join('_') + '_';
+            linkText = linkText + "#" + prefix + memberName;
         } else { // Angular, React, WC
             linkText = linkText + "#" + memberName.toLowerCase();
         }
