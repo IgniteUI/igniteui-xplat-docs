@@ -1,7 +1,7 @@
 ---
 title: $Platform$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Options
-_keywords: $Platform$ Axis, Options, Title, Labels, Range, Scale, Mode, Infragistics
+_keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
 mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 In all $ProductName$ charts, the axes provide properties for visual configurations such as titles, labels, and ranges. These features are demonstrated in the examples provided below.
 
-## $Platform$ Axis Titles
+## Axis Titles Example
 
 The axis titles feature of the $Platform$ charts, allows you to add contextual information to the your chart. You can customize the look and feel of the axis titles in many different ways such as applying different font styles, colors, margins, and alignments.
 
@@ -24,7 +24,7 @@ The axis titles feature of the $Platform$ charts, allows you to add contextual i
 <div class="divider--half"></div>
 
 
-## $Platform$ Axis Labels
+## Axis Labels Example
 
 The $Platform$ Charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels. The following example shows how to use these features of axes.
 
@@ -37,7 +37,7 @@ The $Platform$ Charts allows you full control over configuring, formatting, and 
 
 <div class="divider--half"></div>
 
-## $Platform$ Axis Range
+## Axis Range Example
 
 In the $Platform$ charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.
 
@@ -53,7 +53,7 @@ By default, charts will calculate the minimum and maximum values for the numeric
 <div class="divider--half"></div>
 
 
-## $Platform$ Axis Modes & Scale
+## Axis Modes & Scale
 
 In the `FinancialChart` and `CategoryChart` controls, you can choose if your data is plotted on logarithmic scale along the y-axis when the `YAxisIsLogarithmic` property is set to true or on linear scale when this property is set to false (default value). With the `YAxisLogarithmBase` property, you can change base of logarithmic scale from default value of 10 to other integer value.
 
@@ -70,6 +70,36 @@ In addition to `YAxisMode` property, the `FinancialChart` control has `XAxisMode
 
 <div class="divider--half"></div>
 
+## Axis Gap Example
+
+The `XAxisGap` property of the $Platform$ charts, determines the amount of space between columns or bars of plotted series. This property accepts a numeric value between 0.0 and 1.0. The value represents a relative width of the gap out of the available number of pixels between the series. Setting this property to 0 would mean there is no gap rendered between the series, and setting it 1 would render the maximum available gap.
+
+The following example shows the average maximum temperature in Celsius in New York City's Central Park represented by a [Column Chart](../types/column-chart.md) with an `XAxisGap` initially set to 1, and so there will be a full category's width between the columns. There is a slider that allows you to configure the gap in this example so that you can see what the different values do.
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
+           alt="$Platform$ Axis Gap Example"
+           github-src="charts/category-chart/axis-gap">
+</code-view>
+
+<div class="divider--half"></div>
+
+## Axis Overlap Example
+
+The `XAxisOverlap` property of the $Platform$ charts, allows setting the overlap of the rendered columns or bars of plotted series. This property accepts a numeric value between -1.0 and 1.0. The value represents a relative overlap out of the available number of pixels dedicated to each series. Setting this property to a negative value (down to -1.0) results in the categories being pushed away from each other, producing a gap between themselves. Conversely, setting this property to a positive value (up to 1.0) results in the categories overlapping each other. A value of 1 directs the chart to render the categories on top of each other.
+
+The following example shows a comparison of the highest grossing worldwide film franchises compared by the total world box office revenue of the franchise and the highest grossing movie in the series, represented by a [Column Chart](../types/column-chart.md) with an `XAxisOverlap` initially set to 1, and so the columns will completely overlap each other. There is a slider that allows you to configure the overlap in this example so that you can see what the different values do.
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
+           alt="$Platform$ Axis Overlap Example"
+           github-src="charts/category-chart/axis-overlap">
+</code-view>
+
+<div class="divider--half"></div>
+
 ## Additional Resources
 
 You can find more information about related chart features in these topics:
@@ -81,12 +111,15 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-| `FinancialChart`      | `CategoryChart`      |
-| --------------------- | -------------------- |
-| `YAxisMaxmumValue`    | `YAxisMaxmumValue`   |
-| `YAxisMinimumValue`   | `YAxisMinimumValue`  |
-| `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` |
-| `YAxisLogarithmBase`  | `YAxisLogarithmBase` |
-| `YAxisMode`           |                      |
-| `XAxisMode`           |                      |
- 
+| `FinancialChart`      | `CategoryChart`      | `XamDataChart`                              |
+| --------------------- | -------------------- | ------------------------------------------- |
+| `YAxisMaximumValue`   | `YAxisMaximumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
+| `YAxisMinimumValue`   | `YAxisMinimumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
+| `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` | `Axes` -> `NumericYAxis` -> `IsLogarithmic` |
+| `YAxisLogarithmBase`  | `YAxisLogarithmBase` | `Axes` -> `NumericYAxis` -> `LogarithmBase` |
+| `XAxisGap`            | `XAxisGap`           | `Axes` -> `CategoryXAxis` -> `Gap`          |
+| `XAxisOverlap`        | `XAxisOverlap`       | `Axes` -> `CategoryXAxis` -> `Overlap`      |
+| `XAxisMode`           | None                 | `Axes` -> `TimeXAxis`                       |
+| `YAxisMode`           | None                 | `Axes` -> `PercentChangeYAxis`              |
+
+
