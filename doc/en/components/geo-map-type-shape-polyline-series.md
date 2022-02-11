@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Shape Polyline Series | Infragistics
 _description: Use Infragistics $Platform$ map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 # $Platform$ Using Shape Polyline Series
 
@@ -26,7 +26,7 @@ The `GeographicPolylineSeries` works a lot like the `GeographicShapeSeries` exce
 Similarly to other types of geographic series in the control, the `GeographicPolylineSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the ShapeMemberPath property. The `GeographicPolylineSeries` uses points of this mapped data column to plot polygons in the control.
 
 ## Code Snippet
-The following code shows how to bind the `GeographicPolylineSeries` to locations of cities loaded from a shape file using the ``ShapeDataSource``.
+The following code shows how to bind the `GeographicPolylineSeries` to locations of cities loaded from a shape file using the `ShapefileConverter`.
 
 <!-- React -->
 ```tsx

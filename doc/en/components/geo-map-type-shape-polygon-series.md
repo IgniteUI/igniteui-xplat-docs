@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
 _description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
 # $Platform$ Using Shape Polygon Series
@@ -27,7 +27,7 @@ The `GeographicShapeSeries` works a lot like the `GeographicPolylineSeries` exce
 Similar to other types of geographic series in the map control, the `GeographicShapeSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the `ShapeMemberPath` property. The `GeographicShapeSeries` uses points of this mapped data column to plot polygons in the map control.
 
 ## Code Snippet
-The following code demonstrates how to bind the `GeographicShapeSeries` to shapes of countries in the world loaded from a shape file using the `ShapeDataSource`.
+The following code demonstrates how to bind the `GeographicShapeSeries` to shapes of countries in the world loaded from a shape file using the `ShapefileConverter`.
 
 <!-- React -->
 ```tsx
