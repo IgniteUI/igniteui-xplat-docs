@@ -120,9 +120,11 @@ The following is a list of API members mentioned in the above sections:
 | `Axes` -> `NumericYAxis` -> `MinorStrokeThickness` | `YAxisMinorStrokeThickness` |
 | `Axes` -> `NumericXAxis` -> `StrokeThickness`      | `XAxisStrokeThickness`   |
 | `Axes` -> `NumericYAxis` -> `StrokeThickness`      | `YAxisStrokeThickness`   |
-| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (Axis Line Color)   |
-| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (Axis Line Color)   |
+| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (Axis Line Color) |
+| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (Axis Line Color) |
 | `Axes` -> `NumericXAxis` -> `TickLength`           | `XAxisTickLength`    |
 | `Axes` -> `NumericYAxis` -> `TickLength`           | `YAxisTickLength`    |
 | `Axes` -> `NumericXAxis` -> `TickStroke`           | `XAxisTickStroke`    |
 | `Axes` -> `NumericYAxis` -> `TickStroke`           | `YAxisTickStroke`    |
+| `Axes` -> `NumericXAxis` -> `Strip`                | `XAxisStrip` (Space between Major Gridlines) |
+| `Axes` -> `NumericYAxis` -> `Strip`                | `YAxisStrip` (Space between Major Gridlines) |

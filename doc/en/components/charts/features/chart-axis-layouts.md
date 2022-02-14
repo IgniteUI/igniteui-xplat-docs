@@ -78,14 +78,26 @@ You can find more information about related chart features in these topics:
 The following is a list of API members mentioned in the above sections:
 d in the above sections:
 
-| `XamDataChart`                               | `CategoryChart`      |
-| -------------------------------------------- | -------------------- |
-| `Axes` -> `NumericXAxis` -> `Location`       | `XAxisLabelLocation` |
-| `Axes` -> `NumericYAxis` -> `Location`       | `YAxisLabelLocation` |
-| `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisInverted`    |
-| `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisInverted`    |
-| `Axes` -> `NumericYAxis` -> `CrossingAxis`   | None  |
-| `Axes` -> `NumericYAxis` -> `CrossingValue`  | None  |
-| `Series` -> `XAxis`  | None   |
-| `Series` -> `YAxis`  | None   |
+
+| `XamDataChart`                                         | `CategoryChart`                 |
+| ------------------------------------------------------ | ------------------------------- |
+| `Axes` -> `NumericYAxis` -> `CrossingAxis`             | None                            |
+| `Axes` -> `NumericYAxis` -> `CrossingValue`            | None                            |
+| `Axes` -> `NumericXAxis` -> `IsInverted`               | `XAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `IsInverted`               | `YAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `LabelLocation`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `LabelLocation`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `LabelHorizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `LabelVerticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `LabelVisibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `LabelVisibility`          | `XAxisLabelVisibility`          |
+
+<!-- TODO correct links in Transformer -->
+<!--
+| `Axes` -> `NumericYAxis` -> `labelSettings.location`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `labelSettings.location`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `labelSettings.horizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `labelSettings.verticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `labelSettings.visibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `labelSettings.visibility`          | `XAxisLabelVisibility`          | -->
 
