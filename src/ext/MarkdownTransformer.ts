@@ -1027,6 +1027,9 @@ export class MarkdownTransformer {
             }
         }
 
+        // using better looking arrows between API links this way we do not mess markdown with custom symbols
+        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
+
         switch (this._platform) {
             case APIPlatform.Angular:
                 options.platformPascalSuffix = "Component";
