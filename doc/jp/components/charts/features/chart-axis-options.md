@@ -1,7 +1,7 @@
 ---
 title: $Platform$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸オプション
-_keywords: $Platform$ Axis, Options, Title, Labels, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル, ラベル、範囲, スケール, モード, インフラジスティックス
+_keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル, ラベル、間隔, 重複, 範囲, スケール, モード, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode"]
 namespace: Infragistics.Controls.Charts
 _language: ja
@@ -11,7 +11,7 @@ _language: ja
 
 すべての $ProductName$ チャートで、軸はタイトル、ラベル、範囲などの視覚的構成のプロパティを提供します。これらの機能は、以下の例で示されています。
 
-## $Platform$ 軸タイトル
+## 軸タイトルの例
 
 $Platform$ チャートの軸タイトル機能を使用すると、チャートにコンテキスト情報を追加できます。さまざまなフォントスタイル、色、マージン、および配置を適用するなど、さまざまな方法で軸タイトルの外観をカスタマイズできます。
 
@@ -25,7 +25,7 @@ $Platform$ チャートの軸タイトル機能を使用すると、チャート
 <div class="divider--half"></div>
 
 
-## $Platform$ 軸ラベル
+## 軸ラベルの例
 
 $Platform$ チャートは、チャートで表示されるラベルの構成、書式設定、およびラベル フォントのスタイル設定を制御することが可能です。軸ラベルの回転角度、マージン、水平および垂直方向の配置、色、余白、および表示設定を変更できます。次の例は、これらの軸の機能を使用する方法を示しています。
 
@@ -38,7 +38,7 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 <div class="divider--half"></div>
 
-## $Platform$ 軸範囲
+## 軸範囲の例
 
 チャートでは数値軸または時間軸の範囲の最小値と最大値を定義できます。範囲の最小値は軸の最小値で、範囲の最大値は軸の最大値です。これらは、`YAxisMinimumValue` および `YAxisMaximumValue` オプションを設定することによって設定されます。
 
@@ -54,7 +54,7 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 <div class="divider--half"></div>
 
 
-## $Platform$ 軸モードとスケール
+## 軸モードとスケール
 
 `FinancialChart` および `CategoryChart` コントロールでは、`YAxisIsLogarithmic` プロパティが true に設定されている場合はデータを Y 軸に沿って対数スケールでプロットするか、このプロパティが false (デフォルト価値) に設定されている場合は線形スケールでプロットするかを選択できます。
 
@@ -71,6 +71,36 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 <div class="divider--half"></div>
 
+## 軸間隔の例
+
+$Platform$ チャートの `XAxisGap` プロパティは、プロットされた系列の縦棒または棒間のスペースの量を決定します。このプロパティは、0.0 から 1.0 までの数値を受け入れます。値は、シリーズ間の利用可能なピクセル数からのギャップの相対幅を表します。このプロパティを 0 に設定すると、シリーズ間にギャップがレンダリングされず、1 に設定すると最大ギャップがレンダリングされます。
+
+以下の例は、ニューヨーク市のセントラル パークの摂氏の平均最高気温を示しています。これは、`XAxisGap` が最初に 1 に設定された[縦棒チャート](../types/column-chart.md)で表されているため、列の間にカテゴリ全体の幅があります。スライダーを使用すると、この例のギャップを構成して、さまざまな値の効果を確認できます。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
+           alt="$Platform$ 軸間隔の例"
+           github-src="charts/category-chart/axis-gap">
+</code-view>
+
+<div class="divider--half"></div>
+
+## 軸重複の例
+
+$Platform$ チャートの `XAxisOverlap` プロパティを使用すると、プロットされた系列の描画された縦棒または棒の重複を設定できます。このプロパティは、-1.0 から 1.0 までの数値を受け入れます。値は、各シリーズ専用の使用可能なピクセル数からの相対的な重なりを表します。このプロパティを負の値 (-1.0 まで) に設定すると、カテゴリが互いから離れてしまい、それらの間にギャップが生じます。逆に、このプロパティを正の値 (最大 1.0) に設定すると、カテゴリが互いに重なります。値が 1 の場合、チャートはカテゴリを互いの上に表示します。
+
+以下の例は、フランチャイズの世界の興行収入の合計とシリーズで最も収益の高い映画を比較した、世界で最も収益の高い映画フランチャイズの比較を示しています。これは、`XAxisOverlap` が最初に 1 に設定された[縦棒チャート](../types/column-chart.md)で表されており、列は完全に重なり合います。スライダーを使用すると、この例の重複を構成して、さまざまな値の効果を確認できます。
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
+           alt="$Platform$ 軸重複の例"
+           github-src="charts/category-chart/axis-overlap">
+</code-view>
+
+<div class="divider--half"></div>
+
 ## その他のリソース
 
 関連するチャート機能の詳細については、以下のトピックを参照してください。
@@ -82,12 +112,15 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
-| `FinancialChart`      | `CategoryChart`      |
-| --------------------- | -------------------- |
-| `YAxisMaxmumValue`    | `YAxisMaxmumValue`   |
-| `YAxisMinimumValue`   | `YAxisMinimumValue`  |
-| `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` |
-| `YAxisLogarithmBase`  | `YAxisLogarithmBase` |
-| `YAxisMode`           |                      |
-| `XAxisMode`           |                      |
+| `FinancialChart`      | `CategoryChart`      | `XamDataChart`                              |
+| --------------------- | -------------------- | ------------------------------------------- |
+| `YAxisMaximumValue`   | `YAxisMaximumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
+| `YAxisMinimumValue`   | `YAxisMinimumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
+| `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` | `Axes` -> `NumericYAxis` -> `IsLogarithmic` |
+| `YAxisLogarithmBase`  | `YAxisLogarithmBase` | `Axes` -> `NumericYAxis` -> `LogarithmBase` |
+| `XAxisGap`            | `XAxisGap`           | `Axes` -> `CategoryXAxis` -> `Gap`          |
+| `XAxisOverlap`        | `XAxisOverlap`       | `Axes` -> `CategoryXAxis` -> `Overlap`      |
+| `XAxisMode`           | None                 | `Axes` -> `TimeXAxis`                       |
+| `YAxisMode`           | None                 | `Axes` -> `PercentChangeYAxis`              |
+
 
