@@ -2,7 +2,7 @@
 title: $Platform$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Gridlines
 _keywords: $Platform$ Axis, Gridlines, Infragistics
-mentionedTypes: ["CategoryChart"]
+mentionedTypes: ["CategoryChart", "XYChart", "DomainChart", "XamDataChart", "NumericXAxis", "NumericYAxis", "NumericAxisBase" ]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -45,6 +45,8 @@ Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorS
 Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | These properties set the thickness in pixels of the axis minor gridlines.
 Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`                         | These properties set interval between axis major gridlines and labels.
 Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | These properties set interval between axis minor gridlines, if used.
+Axis Line Stroke Color     | string  | `XAxisStroke` <br> `YAxisStroke`                   | These properties set the color of an axis line.
+Axis Stroke Thickness | number  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | These properties set the thickness in pixels of an axis line.
 
 Regarding the Major and Minor Interval in the table above, it is important to note that the major interval for axis labels will also be set by this value, displaying one label at the point on the axis associated with the interval. The minor interval gridlines are always rendered between the major gridlines, and as such, the minor interval properties should always be set to something much smaller (usually 2-5 times smaller) than the value of the major Interval properties.
 
@@ -104,20 +106,23 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-- `CategoryChart`
-- `FinancialChart`
-- `XAxisInterval`
-- `YAxisInterval`
-- `XAxisMinorInterval`
-- `YAxisMinorInterval`
-- `XAxisMajorStrokeThickness`
-- `YAxisMajorStrokeThickness`
-- `XAxisMinorStrokeThickness`
-- `YAxisMinorStrokeThickness`
-- `XAxisTickLength`
-- `YAxisTickLength`
-- `XAxisTickStroke`
-- `YAxisTickStroke`
-- `XAxisMajorStroke`
-- `YAxisMajorStroke`
-
+| `XamDataChart`                                     | `CategoryChart` or `FinancialChart` |
+| -------------------------------------------------- | ----------------------------------- |
+| `Axes` -> `NumericXAxis` -> `Interval`             | `XAxisInterval` (Major Interval) |
+| `Axes` -> `NumericYAxis` -> `Interval`             | `YAxisInterval` (Major Interval) |
+| `Axes` -> `NumericXAxis` -> `MinorInterval`        | `XAxisMinorInterval`    |
+| `Axes` -> `NumericYAxis` -> `MinorInterval`        | `YAxisMinorInterval`    |
+| `Axes` -> `NumericXAxis` -> `MajorStroke`          | `XAxisMajorStroke`    |
+| `Axes` -> `NumericYAxis` -> `MajorStroke`          | `YAxisMajorStroke`    |
+| `Axes` -> `NumericXAxis` -> `MajorStrokeThickness` | `XAxisMajorStrokeThickness` |
+| `Axes` -> `NumericYAxis` -> `MajorStrokeThickness` | `YAxisMajorStrokeThickness` |
+| `Axes` -> `NumericXAxis` -> `MinorStrokeThickness` | `XAxisMinorStrokeThickness` |
+| `Axes` -> `NumericYAxis` -> `MinorStrokeThickness` | `YAxisMinorStrokeThickness` |
+| `Axes` -> `NumericXAxis` -> `StrokeThickness`      | `XAxisStrokeThickness`   |
+| `Axes` -> `NumericYAxis` -> `StrokeThickness`      | `YAxisStrokeThickness`   |
+| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (Axis Line Color)   |
+| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (Axis Line Color)   |
+| `Axes` -> `NumericXAxis` -> `TickLength`           | `XAxisTickLength`    |
+| `Axes` -> `NumericYAxis` -> `TickLength`           | `YAxisTickLength`    |
+| `Axes` -> `NumericXAxis` -> `TickStroke`           | `XAxisTickStroke`    |
+| `Axes` -> `NumericYAxis` -> `TickStroke`           | `YAxisTickStroke`    |
