@@ -2,7 +2,7 @@
 title: $Platform$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Layouts
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics
-mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "Series" ]
+mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
 ---
 
 # $Platform$ Axis Layouts
@@ -80,8 +80,8 @@ d in the above sections:
 
 | `XamDataChart`                               | `CategoryChart`      |
 | -------------------------------------------- | -------------------- |
-| `Axes` -> `NumericXAxis` -> `LabelLocation`  | `XAxisLabelLocation` |
-| `Axes` -> `NumericYAxis` -> `LabelLocation`  | `YAxisLabelLocation` |
+| `Axes` -> `NumericXAxis` -> `Location`       | `XAxisLabelLocation` |
+| `Axes` -> `NumericYAxis` -> `Location`       | `YAxisLabelLocation` |
 | `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisIsInverted`    |
 | `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisIsInverted`    |
 | `Axes` -> `NumericYAxis` -> `CrossingAxis`   | None  |

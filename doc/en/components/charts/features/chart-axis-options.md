@@ -2,7 +2,7 @@
 title: $Platform$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Options
 _keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
-mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode"]
+mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -114,11 +114,11 @@ The following is a list of API members mentioned in the above sections:
 | `FinancialChart`      | `CategoryChart`      | `XamDataChart`                              |
 | --------------------- | -------------------- | ------------------------------------------- |
 | `YAxisMaximumValue`   | `YAxisMaximumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
-| `YAxisMinimumValue`   | `YAxisMinimumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
+| `YAxisMinimumValue`   | `YAxisMinimumValue`  | `Axes` -> `NumericYAxis` -> `MinimumValue`  |
 | `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` | `Axes` -> `NumericYAxis` -> `IsLogarithmic` |
 | `YAxisLogarithmBase`  | `YAxisLogarithmBase` | `Axes` -> `NumericYAxis` -> `LogarithmBase` |
-| `XAxisGap`            | `XAxisGap`           | `Axes` -> `CategoryXAxis` -> `Gap`          |
-| `XAxisOverlap`        | `XAxisOverlap`       | `Axes` -> `CategoryXAxis` -> `Overlap`      |
+| None                  | `XAxisGap`           | `Axes` -> `CategoryXAxis` -> `Gap`          |
+| None                  | `XAxisOverlap`       | `Axes` -> `CategoryXAxis` -> `Overlap`      |
 | `XAxisMode`           | None                 | `Axes` -> `TimeXAxis`                       |
 | `YAxisMode`           | None                 | `Axes` -> `PercentChangeYAxis`              |
 
