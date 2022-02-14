@@ -26,7 +26,7 @@ The following example depicts the amount of renewable electricity produced since
 
 <!-- ## Axis Orientation Example
 
-TODO add info/example of 4 charts with all possible combinations of XAxisIsInverted and YAxisIsInverted
+TODO add info/example of 4 charts with all possible combinations of XAxisInverted and YAxisInverted
 e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
  -->
 
@@ -82,8 +82,8 @@ d in the above sections:
 | -------------------------------------------- | -------------------- |
 | `Axes` -> `NumericXAxis` -> `Location`       | `XAxisLabelLocation` |
 | `Axes` -> `NumericYAxis` -> `Location`       | `YAxisLabelLocation` |
-| `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisIsInverted`    |
-| `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisIsInverted`    |
+| `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisInverted`    |
+| `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisInverted`    |
 | `Axes` -> `NumericYAxis` -> `CrossingAxis`   | None  |
 | `Axes` -> `NumericYAxis` -> `CrossingValue`  | None  |
 | `Series` -> `XAxis`  | None   |
