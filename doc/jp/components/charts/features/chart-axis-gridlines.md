@@ -2,7 +2,7 @@
 title: $Platform$ 軸グリッド線 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸グリッド線
 _keywords: $Platform$ Axis, Gridlines, Infragistics, $Platform$ 軸, グリッド線, インフラジスティックス
-mentionedTypes: ["CategoryChart"]
+mentionedTypes: ["CategoryChart", "XYChart", "DomainChart", "XamDataChart", "NumericXAxis", "NumericYAxis", "NumericAxisBase" ]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -46,6 +46,8 @@ _language: ja
 副ストロークの太さ | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | これらのプロパティは、軸の副グリッド線の太さをピクセル単位で設定します。
 主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`                         | これらのプロパティは、軸の主グリッド線とラベルの間隔を設定します。
 副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | これらのプロパティは、軸の副グリッド線の間隔を設定します (使用する場合)。
+Axis Line Stroke Color     | 文字列  | `XAxisStroke` <br> `YAxisStroke`                   | These properties set the color of an axis line.
+Axis Stroke Thickness | 数  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | These properties set the thickness in pixels of an axis line.
 
 上記のテーブルの主間隔と副間隔については、軸ラベルの主間隔も、この値によって設定され、間隔に関連付けられた軸のポイントにラベルが 1 つ表示されることに注意してください。副間隔グリッド線は常に主グリッド線の間に描画されるため、副間隔プロパティは常に主間隔プロパティの値よりもはるかに小さい値 (通常は 2〜5 倍小さい値) に設定する必要があります。
 
@@ -105,20 +107,25 @@ _language: ja
 
 以下は、上記のセクションで説明されている API メンバーのリストです。
 
-- `CategoryChart`
-- `FinancialChart`
-- `XAxisInterval`
-- `YAxisInterval`
-- `XAxisMinorInterval`
-- `YAxisMinorInterval`
-- `XAxisMajorStrokeThickness`
-- `YAxisMajorStrokeThickness`
-- `XAxisMinorStrokeThickness`
-- `YAxisMinorStrokeThickness`
-- `XAxisTickLength`
-- `YAxisTickLength`
-- `XAxisTickStroke`
-- `YAxisTickStroke`
-- `XAxisMajorStroke`
-- `YAxisMajorStroke`
-
+| `XamDataChart`                                     | `CategoryChart` または `FinancialChart` |
+| -------------------------------------------------- | ----------------------------------- |
+| `Axes` -> `NumericXAxis` -> `Interval`             | `XAxisInterval` (主間隔) |
+| `Axes` -> `NumericYAxis` -> `Interval`             | `YAxisInterval` (主間隔) |
+| `Axes` -> `NumericXAxis` -> `MinorInterval`        | `XAxisMinorInterval`    |
+| `Axes` -> `NumericYAxis` -> `MinorInterval`        | `YAxisMinorInterval`    |
+| `Axes` -> `NumericXAxis` -> `MajorStroke`          | `XAxisMajorStroke`    |
+| `Axes` -> `NumericYAxis` -> `MajorStroke`          | `YAxisMajorStroke`    |
+| `Axes` -> `NumericXAxis` -> `MajorStrokeThickness` | `XAxisMajorStrokeThickness` |
+| `Axes` -> `NumericYAxis` -> `MajorStrokeThickness` | `YAxisMajorStrokeThickness` |
+| `Axes` -> `NumericXAxis` -> `MinorStrokeThickness` | `XAxisMinorStrokeThickness` |
+| `Axes` -> `NumericYAxis` -> `MinorStrokeThickness` | `YAxisMinorStrokeThickness` |
+| `Axes` -> `NumericXAxis` -> `StrokeThickness`      | `XAxisStrokeThickness`   |
+| `Axes` -> `NumericYAxis` -> `StrokeThickness`      | `YAxisStrokeThickness`   |
+| `Axes` -> `NumericXAxis` -> `Stroke`               | `XAxisStroke` (軸線色) |
+| `Axes` -> `NumericYAxis` -> `Stroke`               | `YAxisStroke` (軸線色) |
+| `Axes` -> `NumericXAxis` -> `TickLength`           | `XAxisTickLength`    |
+| `Axes` -> `NumericYAxis` -> `TickLength`           | `YAxisTickLength`    |
+| `Axes` -> `NumericXAxis` -> `TickStroke`           | `XAxisTickStroke`    |
+| `Axes` -> `NumericYAxis` -> `TickStroke`           | `YAxisTickStroke`    |
+| `Axes` -> `NumericXAxis` -> `Strip`                | `XAxisStrip` (軸の主グリッド線の空間) |
+| `Axes` -> `NumericYAxis` -> `Strip`                | `YAxisStrip` (軸の主グリッド線の空間) |

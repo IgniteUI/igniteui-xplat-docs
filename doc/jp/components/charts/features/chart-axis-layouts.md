@@ -1,14 +1,14 @@
 ---
 title: $Platform$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸レイアウト
-_keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, Share, Multiple, Crossing, インフラジスティックス
-mentionedTypes:  [ "CategoryChart", "XamDataChart", "Axis", "Series" ]
+_keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, 位置、配置、共有、複数、交差, インフラジスティックス
+mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
 _language: ja
 ---
 
 # $Platform$ 軸レイアウト
 
-すべての $ProductName$ チャートには、位置、間隔、重複などの多くの軸レイアウト オプションを構成するオプションが含まれているほか、軸を共有して同じチャートに複数の軸を含めることができます。これらの機能は、以下の例で示されています。
+All $ProductName$ charts include options to configure many axis layout options such as location as well as having the ability to share axis between series or have multiple axes in the same chart. これらの機能は、以下の例で示されています。
 
 > 注: 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
@@ -27,13 +27,13 @@ _language: ja
 
 <!-- ## 軸方向の例
 
-TODO add info/example of 4 charts with all possible combinations of XAxisIsInverted and YAxisIsInverted
+TODO add info/example of 4 charts with all possible combinations of XAxisInverted and YAxisInverted
 e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
  -->
 
 ## 軸の高度なシナリオ
 
-For more advanced axis layout scenarios, you can use $Platform$ Data Chart to share axis, add multiple y-axis and/or x-axis in the same plot area, or even cross axes at specific values. The following examples show how to use these features of the `XamDataChart`.
+より高度な軸レイアウト シナリオでは、$Platform$ データ チャートを使用して軸を共有したり、同じプロット領域に複数の y 軸や x 軸を追加したり、特定の値で軸を交差させたりすることができます。次の例は、`XamDataChart` のこれらの機能の使用方法を示しています。
 
 ### 軸共有の例
 
@@ -78,14 +78,26 @@ In addition to placing axes outside plot area, the $Platform$ `XamDataChart` als
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
-| `XamDataChart`                               | `CategoryChart`      |
-| -------------------------------------------- | -------------------- |
-| `Axes` -> `NumericXAxis` -> `LabelLocation`  | `XAxisLabelLocation` |
-| `Axes` -> `NumericYAxis` -> `LabelLocation`  | `YAxisLabelLocation` |
-| `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisIsInverted`    |
-| `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisIsInverted`    |
-| `Axes` -> `NumericYAxis` -> `CrossingAxis`   | None  |
-| `Axes` -> `NumericYAxis` -> `CrossingValue`  | None  |
-| `Series` -> `XAxis`  | None   |
-| `Series` -> `YAxis`  | None   |
+
+| `XamDataChart`                                         | `CategoryChart`                 |
+| ------------------------------------------------------ | ------------------------------- |
+| `Axes` -> `NumericYAxis` -> `CrossingAxis`             | None                            |
+| `Axes` -> `NumericYAxis` -> `CrossingValue`            | None                            |
+| `Axes` -> `NumericXAxis` -> `IsInverted`               | `XAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `IsInverted`               | `YAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `LabelLocation`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `LabelLocation`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `LabelHorizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `LabelVerticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `LabelVisibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `LabelVisibility`          | `XAxisLabelVisibility`          |
+
+<!-- TODO correct links in Transformer -->
+<!--
+| `Axes` -> `NumericYAxis` -> `labelSettings.location`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `labelSettings.location`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `labelSettings.horizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `labelSettings.verticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `labelSettings.visibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `labelSettings.visibility`          | `XAxisLabelVisibility`          | -->
 
