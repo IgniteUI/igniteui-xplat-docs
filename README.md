@@ -115,7 +115,7 @@ This is some Angular specific stuff preceding an Angular specific code block
 
 ```html
 <igx-category-chart dataSource="data"
-    yAxisIsInverted="true">
+    yAxisInverted="true">
 </igx-category-chart>
 ```
 ````

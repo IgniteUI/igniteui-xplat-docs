@@ -2,12 +2,12 @@
 title: $Platform$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Layouts
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics
-mentionedTypes: [ "CategoryChart", "XamDataChart", "Axis", "Series" ]
+mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
 ---
 
 # $Platform$ Axis Layouts
 
-All $ProductName$ charts include options to configure many axis layout options such as location, gap, and overlap as well as having the ability to share axes and have multiple axes in the same chart. These features are demonstrated in the examples given below.
+All $ProductName$ charts include options to configure many axis layout options such as location as well as having the ability to share axis between series or have multiple axes in the same chart. These features are demonstrated in the examples given below.
 
 > NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
@@ -26,7 +26,7 @@ The following example depicts the amount of renewable electricity produced since
 
 <!-- ## Axis Orientation Example
 
-TODO add info/example of 4 charts with all possible combinations of XAxisIsInverted and YAxisIsInverted
+TODO add info/example of 4 charts with all possible combinations of XAxisInverted and YAxisInverted
 e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
  -->
 
@@ -78,14 +78,26 @@ You can find more information about related chart features in these topics:
 The following is a list of API members mentioned in the above sections:
 d in the above sections:
 
-| `XamDataChart`                               | `CategoryChart`      |
-| -------------------------------------------- | -------------------- |
-| `Axes` -> `NumericXAxis` -> `LabelLocation`  | `XAxisLabelLocation` |
-| `Axes` -> `NumericYAxis` -> `LabelLocation`  | `YAxisLabelLocation` |
-| `Axes` -> `NumericXAxis` -> `IsInverted`     | `XAxisIsInverted`    |
-| `Axes` -> `NumericYAxis` -> `IsInverted`     | `YAxisIsInverted`    |
-| `Axes` -> `NumericYAxis` -> `CrossingAxis`   | None  |
-| `Axes` -> `NumericYAxis` -> `CrossingValue`  | None  |
-| `Series` -> `XAxis`  | None   |
-| `Series` -> `YAxis`  | None   |
+
+| `XamDataChart`                                         | `CategoryChart`                 |
+| ------------------------------------------------------ | ------------------------------- |
+| `Axes` -> `NumericYAxis` -> `CrossingAxis`             | None                            |
+| `Axes` -> `NumericYAxis` -> `CrossingValue`            | None                            |
+| `Axes` -> `NumericXAxis` -> `IsInverted`               | `XAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `IsInverted`               | `YAxisInverted`                 |
+| `Axes` -> `NumericYAxis` -> `LabelLocation`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `LabelLocation`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `LabelHorizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `LabelVerticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `LabelVisibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `LabelVisibility`          | `XAxisLabelVisibility`          |
+
+<!-- TODO correct links in Transformer -->
+<!--
+| `Axes` -> `NumericYAxis` -> `labelSettings.location`            | `YAxisLabelLocation`            |
+| `Axes` -> `NumericXAxis` -> `labelSettings.location`            | `XAxisLabelLocation`            |
+| `Axes` -> `NumericYAxis` -> `labelSettings.horizontalAlignment` | `YAxisLabelHorizontalAlignment` |
+| `Axes` -> `NumericXAxis` -> `labelSettings.verticalAlignment`   | `XAxisLabelVerticalAlignment`   |
+| `Axes` -> `NumericYAxis` -> `labelSettings.visibility`          | `YAxisLabelVisibility`          |
+| `Axes` -> `NumericXAxis` -> `labelSettings.visibility`          | `XAxisLabelVisibility`          | -->
 

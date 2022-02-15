@@ -123,11 +123,12 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
         // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
         if (platform === APIPlatform.Blazor) {
             var prefix = blazorNamespace.split('.').join('_') + '_';
-            if (linkText.indexOf('.IgbDataGrid') > 0) {
-                linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
-            } else {
-                linkText = linkText + "#" + prefix + memberName;
-            }
+            linkText = linkText + "#" + prefix + resolvedTypeName + '_' + memberName;
+            // if (linkText.indexOf('.IgbDataGrid') > 0) {
+            //     linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
+            // } else {
+            //     linkText = linkText + "#" + prefix + memberName;
+            // }
         } else { // Angular, React, WC
             linkText = linkText + "#" + memberName.toLowerCase();
         }
@@ -1025,6 +1026,9 @@ export class MarkdownTransformer {
                 fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", this._envBrowser);
             }
         }
+
+        // using better looking arrows between API links this way we do not mess markdown with custom symbols
+        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
 
         switch (this._platform) {
             case APIPlatform.Angular:

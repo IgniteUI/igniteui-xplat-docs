@@ -18,3 +18,5 @@ docfx/**/web.config
 
 # excluding to avoid errors with yarn install
 # package-lock.json
+
+_exported_templates

@@ -2,7 +2,7 @@
 title: $Platform$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Options
 _keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
-mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode"]
+mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
 ---
 
@@ -111,15 +111,20 @@ You can find more information about related chart features in these topics:
 
 The following is a list of API members mentioned in the above sections:
 
-| `FinancialChart`      | `CategoryChart`      | `XamDataChart`                              |
-| --------------------- | -------------------- | ------------------------------------------- |
-| `YAxisMaximumValue`   | `YAxisMaximumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
-| `YAxisMinimumValue`   | `YAxisMinimumValue`  | `Axes` -> `NumericYAxis` -> `MaximumValue`  |
-| `YAxisIsLogarithmic`  | `YAxisIsLogarithmic` | `Axes` -> `NumericYAxis` -> `IsLogarithmic` |
-| `YAxisLogarithmBase`  | `YAxisLogarithmBase` | `Axes` -> `NumericYAxis` -> `LogarithmBase` |
-| `XAxisGap`            | `XAxisGap`           | `Axes` -> `CategoryXAxis` -> `Gap`          |
-| `XAxisOverlap`        | `XAxisOverlap`       | `Axes` -> `CategoryXAxis` -> `Overlap`      |
-| `XAxisMode`           | None                 | `Axes` -> `TimeXAxis`                       |
-| `YAxisMode`           | None                 | `Axes` -> `PercentChangeYAxis`              |
-
+| `XamDataChart`                                         | `FinancialChart`       | `CategoryChart`        |
+| ------------------------------------------------------ | ---------------------- | ---------------------- |
+| `Axes` -> `NumericYAxis` -> `MaximumValue`             | `YAxisMaximumValue`    | `YAxisMaximumValue`    |
+| `Axes` -> `NumericYAxis` -> `MinimumValue`             | `YAxisMinimumValue`    | `YAxisMinimumValue`    |
+| `Axes` -> `NumericYAxis` -> `IsLogarithmic`            | `YAxisIsLogarithmic`   | `YAxisIsLogarithmic`   |
+| `Axes` -> `NumericYAxis` -> `LogarithmBase`            | `YAxisLogarithmBase`   | `YAxisLogarithmBase`   |
+| `Axes` -> `CategoryXAxis` -> `Gap`                     | None                   | `XAxisGap`             |
+| `Axes` -> `CategoryXAxis` -> `Overlap`                 | None                   | `XAxisOverlap`         |
+| `Axes` -> `TimeXAxis`                                  | `XAxisMode`            | None                   |
+| `Axes` -> `PercentChangeYAxis`                         | `YAxisMode`            | None                   |
+| `Axes` -> `NumericYAxis` -> `labelSettings.angle`      | `YAxisLabelAngle`      | `YAxisLabelAngle`      |
+| `Axes` -> `NumericXAxis` -> `labelSettings.angle`      | `XAxisLabelAngle`      | `XAxisLabelAngle`      |
+| `Axes` -> `NumericYAxis` -> `labelSettings.textColor`  | `YAxisLabelForeground` | `YAxisLabelForeground` |
+| `Axes` -> `NumericXAxis` -> `labelSettings.textColor`  | `XAxisLabelForeground` | `XAxisLabelForeground` |
+| `Axes` -> `NumericYAxis` -> `labelSettings.visibility` | `YAxisLabelVisibility` | `YAxisLabelVisibility` |
+| `Axes` -> `NumericXAxis` -> `labelSettings.visibility` | `XAxisLabelVisibility` | `XAxisLabelVisibility` |
 
