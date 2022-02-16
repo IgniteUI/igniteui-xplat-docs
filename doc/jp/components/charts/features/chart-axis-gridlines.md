@@ -46,8 +46,8 @@ _language: ja
 副ストロークの太さ | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | これらのプロパティは、軸の副グリッド線の太さをピクセル単位で設定します。
 主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`                         | これらのプロパティは、軸の主グリッド線とラベルの間隔を設定します。
 副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | これらのプロパティは、軸の副グリッド線の間隔を設定します (使用する場合)。
-Axis Line Stroke Color     | 文字列  | `XAxisStroke` <br> `YAxisStroke`                   | これらのプロパティは、軸線の色を設定します。
-Axis Stroke Thickness | 数  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | これらのプロパティは、軸線のピクセル単位の太さを設定します。
+軸線のストローク色    | 文字列  | `XAxisStroke` <br> `YAxisStroke`                   | これらのプロパティは、軸線の色を設定します。
+軸のストロークの太さ | 数  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | これらのプロパティは、軸線のピクセル単位の太さを設定します。
 
 上記のテーブルの主間隔と副間隔については、軸ラベルの主間隔も、この値によって設定され、間隔に関連付けられた軸のポイントにラベルが 1 つ表示されることに注意してください。副間隔グリッド線は常に主グリッド線の間に描画されるため、副間隔プロパティは常に主間隔プロパティの値よりもはるかに小さい値 (通常は 2〜5 倍小さい値) に設定する必要があります。
 
