@@ -8,7 +8,7 @@ _language: ja
 
 # $Platform$ 軸レイアウト
 
-All $ProductName$ charts include options to configure many axis layout options such as location as well as having the ability to share axis between series or have multiple axes in the same chart. これらの機能は、以下の例で示されています。
+すべての $ProductName$ チャートには、位置などの多くの軸レイアウト オプションを構成するオプションが含まれているほか、シリーズ間で軸を共有したり、同じチャートに複数の軸を含めることができます。これらの機能は、以下の例で示されています。
 
 > 注: 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
@@ -52,7 +52,7 @@ $Platform$ `XamDataChart` の同じプロット領域に複数の軸を共有し
 
 ### 軸交差の例
 
-In addition to placing axes outside plot area, the $Platform$ `XamDataChart` also provides options to position axes inside of plot area and make them cross at specific values. たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0, 0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
+軸をプロット領域の外側に配置することに加えて、$Platform$  `XamDataChart` は、軸をプロット領域の内側に配置し、特定の値で交差させるオプションも提供します。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0, 0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
 
 以下の例は、[散布スプライン チャート](../types/scatter-chart.md)で表される Sin と Cos 波を示します。X 軸と Y 軸は (0、0) 原点で交差します。
 
