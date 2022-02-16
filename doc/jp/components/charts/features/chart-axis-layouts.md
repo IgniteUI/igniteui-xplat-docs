@@ -1,7 +1,7 @@
 ---
 title: $Platform$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸レイアウト
-_keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, 位置、配置、共有、複数、交差, インフラジスティックス
+_keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, 位置, 配置, 共有, 複数, 交差, インフラジスティックス
 mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
 _language: ja
 ---

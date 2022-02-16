@@ -1,7 +1,7 @@
 ---
 title: $Platform$ 軸オプション | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸オプション
-_keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル, ラベル、間隔, 重複, 範囲, スケール, モード, インフラジスティックス
+_keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics, $Platform$ 軸, オプション, タイトル, ラベル, 間隔, 重複, 範囲, スケール, モード, インフラジスティックス
 mentionedTypes: ["CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
 _language: ja
