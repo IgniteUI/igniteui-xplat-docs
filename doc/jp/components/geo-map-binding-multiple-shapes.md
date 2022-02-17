@@ -22,7 +22,7 @@ $ProductName$ マップでは、複数の地理的シリーズオブジェクト
 
 <div class="divider--half"></div>
 
-このトピックでは、マップ コンポーネントに複数の地理的シリーズを表示する方法について段階的に説明します。すべての地理的シリーズは、`ShapefileConverter` クラスを使用して形状ファイルからロードされた地理空間データに従ってプロットします。ShapeDataSource オブジェクトの詳細については、[シェープファイルのバインディング](geo-map-binding-shp-file.md)のトピックを参照してください。
+このトピックでは、マップ コンポーネントに複数の地理的シリーズを表示する方法について段階的に説明します。すべての地理的シリーズは、`ShapefileConverter` クラスを使用して形状ファイルからロードされた地理空間データに従ってプロットします。`ShapefileConverter` オブジェクトの詳細については、[シェープ ファイルのバインディング](geo-map-binding-shp-file.md)のトピックを参照してください。
 
 - `GeographicSymbolSeries` – 主要都市の場所を表示します。
 - `GeographicPolylineSeries` – 主要ポート間のルートを表示します。
