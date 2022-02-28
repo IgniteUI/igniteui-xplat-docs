@@ -405,6 +405,13 @@ The following code demonstrates how to style specific columns using the provided
 />
 ```
 
+<!-- Blazor -->
+### Video Tutorial/Walk-through
+
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/aT1L3nXqN6o">
+</iframe>
+<!-- end: Blazor -->
+
 ### Additional Resources
 
 - [Accessibility Compliance](data-grid-accessibility.md)
