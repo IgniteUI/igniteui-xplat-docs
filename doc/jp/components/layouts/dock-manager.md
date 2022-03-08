@@ -160,6 +160,10 @@ const contentPane = {
 
 [`allowClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose)、[`allowPinning`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning)、[`allowDocking`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) および [`allowFloating`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) プロパティを使用して、コンテンツ ペインで許可されるエンドユーザー操作を設定できます。
 
+When defining a content pane, you can set the [`documentOnly`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#documentonly) property to true so the pane can be docked only in a document host.
+
+To restrict the user interaction with the content pane and its content, you can set the [`disabled`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#disabled) property to true. This will prevent all user interactions with the pane unless it is a single floating pane. The latter could be moved, maximized or closed (according to the pane's settings for maximizing and closing), so the user can have a look at the elements under it but will not be able to interact with its content.
+
 デフォルトでは、ペインを閉じると、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトから削除されます。ただし、場合によってはペインを一時的に非表示にして後で表示することもできます。[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトを変更せずにそれを行うには、コンテンツペインの [`hidden`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) プロパティを使用できます。プロパティを `true` に設定すると UI から非表示になりますが、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトに残ります。デフォルトの閉じる動作をオーバーライドするには、このように [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントにサブスクライブできます。
 
 
@@ -197,6 +201,8 @@ const splitPane: IgcSplitPane = {
 
 分割ペインは、他のスプリットされたペインを含むすべてのペイン タイプの子ペインを含むことができます。
 
+By default, if the split pane is empty it is not displayed. Yet if you would like to change that behavior you can set its [`allowEmpty`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#allowempty) property to true and the split pane will be presented in the UI even when there is no panes inside it.
+
 ### タブ グループ ペイン
 
 [Tab group pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html) は、その子コンテンツ [`ペイン`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#panes)をタブ コンポーネントのタブとして表示します。以下は、2 つのタブそれぞれにコンテンツ ペインを持つタブ グループ ペインの定義方法です。
@@ -222,6 +228,8 @@ const tabGroupPane: IgcTabGroupPane = {
 すべてのタブ ヘッダーを表示する十分なスペースがない場合、タブ グループは非表示タブを含む **[その他のタブ]** メニューを表示します。そのメニューのタブ項目をクリックすると、タブが選択され、最初の位置に移動します。
 
 タブは、それらが配置されているタブ グループから切り離さずに並べ替えることもできます。タブをクリックして、希望の位置まで左または右にドラッグできます。選択したタブをタブ領域の外にドラッグすると、フローティング ペインにデタッチされます。
+
+In case you would like the tab group pane to be displayed in the UI when it has no tabs, you can set the [`allowEmpty`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#allowempty) property to true.
 
 ### ドキュメント ホスト
 
