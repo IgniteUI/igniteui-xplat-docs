@@ -391,6 +391,31 @@ In **Blazor Server** project - change **Pages/_Host.cshtml** file:
 <script src="_framework/blazor.server.js"></script>
 ```
 
+There is an additional CSS file that you will need to link if you are using any of the input controls. You can link this CSS file using the following code in the same file as the scripts mentioned above:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+The list of controls this additional CSS file applies to is as follows:
+
+- [Avatar](layouts/avatar.md)
+- [Badge](inputs/badge.md)
+- [Button](inputs/button.md)
+- [Card](layouts/card.md)
+- [Calendar](scheduling/calendar.md)
+- [Checkbox](inputs/checkbox.md)
+- [Form](inputs/form.md)
+- [Icon](layouts/icon.md)
+- [Icon Button](inputs/icon-button.md)
+- [Input](inputs/input.md)
+- [List](grids/list.md)
+- [NavBar](menus/navbar.md)
+- [Navigation Drawer](menus/navigation-drawer.md)
+- [Radio & Radio Group](inputs/radio.md)
+- [Ripple](inputs/ripple.md)
+- [Switch](inputs/switch.md)
+
 2 - Register service modules for IgniteUI Blazor components:
 
 In **Blazor Web Assembly** project - change the **Program.cs** file:
