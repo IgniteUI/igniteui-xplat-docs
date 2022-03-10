@@ -1281,6 +1281,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Circular Progress",
+    "href": "circulare-progress.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Form {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
@@ -1296,6 +1302,12 @@
     "exclude": ["Angular", "React"],
     "name": "Icon Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Linear Progress",
+    "href": "linear-progress.md",
     "status": "NEW"
   },
   {
