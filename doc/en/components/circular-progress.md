@@ -12,9 +12,9 @@ The $ProductName$ Circular Progress Indicator component provides a visual indica
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/circular-progress-overview"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
            alt="$Platform$ Circular Progress Example"
-           github-src="circular-progress/overview">
+           github-src="inputs/circular-progress-indicator/simple">
 </code-view>
 
 <div class="divider--half"></div>
@@ -62,9 +62,9 @@ The following sample demonstrates the above configuration:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/circular-indeterminate-progressbar"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
            alt="$Platform$ Circular Progress Indeterminate Example"
-           github-src="circular-progress/circular-indeterminate-progressbar">
+           github-src="inputs/circular-progress-indicator/indeterminate">
 </code-view>
 
 <div class="divider--half"></div>
@@ -99,9 +99,9 @@ After reproducing the steps above, you should get this as a result:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/circular-dynamic-sample"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
            alt="$Platform$ Circular Progress Dynamic Example"
-           github-src="circular-progress/circular-dynamic-sampler">
+           github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
 <div class="divider--half"></div>
@@ -134,9 +134,9 @@ Using these CSS parts we can customize thе appearance of the Circular Progress 
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/circular-progress-styling"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
            alt="$Platform$ Circular Progress Styling"
-           github-src="circular-progress/circular-progress-styling">
+           github-src="inputs/circular-progress-indicator/styling">
 </code-view>
 
 <!-- WebComponents -->

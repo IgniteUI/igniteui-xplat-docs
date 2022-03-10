@@ -12,9 +12,9 @@ The $ProductName$ Linear Progress Indicator component provides a visual indicato
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/linear-progress-overview"
+           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
            alt="$Platform$  Linear Progress Example"
-           github-src="linear-progress/overview">
+           github-src="inputs/linear-progress-indicator/simple">
 </code-view>
 
 <div class="divider--half"></div>
@@ -54,9 +54,9 @@ You can make the indicator striped, using the `striped` property and setting it 
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/linear-progressbar-sample-1"
+           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
            alt="$Platform$  Linear Progress Striped Example"
-           github-src="linear-progress/linear-progressbar-sample-1">
+           github-src="inputs/linear-progress-indicator/types">
 </code-view>
 
 <div class="divider--half"></div>
@@ -81,9 +81,9 @@ The following sample demonstrates the above configuration:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/linear-progressbar-sample-2"
+           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
            alt="$Platform$ Linear Progress Text Example"
-           github-src="linear-progress/linear-progressbar-sample-2">
+           github-src="inputs/linear-progress-indicator/striped">
 </code-view>
 
 <div class="divider--half"></div>
@@ -97,9 +97,9 @@ You can dynamically change the value of the progress indicator by using external
 
 <code-view style="height:200px" 
             data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/linear-progressbar-sample-3"
+           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
            alt="$Platform$ Linear Progress Dynamic Example"
-           github-src="linear-progress/linear-progressbar-sample-3">
+           github-src="inputs/linear-progress-indicator/dynamic">
 </code-view>
 
 <div class="divider--half"></div>
@@ -146,9 +146,9 @@ igc-linear-progress::part(label){
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/linear-progress-styling"
+           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
            alt="$Platform$ Linear Progress Styling"
-           github-src="linear-progress/linear-progress-styling">
+           github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 
 <!-- WebComponents -->
