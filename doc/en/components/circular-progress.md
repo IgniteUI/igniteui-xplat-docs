@@ -44,19 +44,16 @@ The simplest way to start using the `CircularProgress` is as follows:
 <igc-circular-progress value="100"></igc-circular-progress>
 ```
 
-> [!NOTE]
-> The default progress increments by **1% of the `max` value** per update cycle.
-
 ### Progress Types
 
-You can set the type of your indicator, using  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+You can set the type of your indicator, using the  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can enable the `indeterminate`.
+If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
 
 >[!NOTE]
->You can hide the label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property value to `true` and customize the progress indicator default label via the exposed `labelFormat` property.
+>You can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
 
 The following sample demonstrates the above configuration:
 
@@ -73,17 +70,12 @@ The following sample demonstrates the above configuration:
 
 The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
 
-### Dynamic Progress
-
-You can dynamically change the value of the progress by using external controls like buttons.
-
-
 ### Gradient Progress
 
-Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which define gradient stops. 
+Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops. 
 
 >[!NOTE]
->For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` element a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
+>For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
 <!-- WebComponents -->
 ```html
@@ -95,7 +87,7 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 ```
 <!-- end: WebComponents -->
 
-After reproducing the steps above, you should get this as a result:
+Using the steps above, you could create a custom dynamic progress indicator with gradient color:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -128,8 +120,15 @@ The $ProductName$ Circular Procress Indicator component exposes CSS parts for al
 
 Using these CSS parts we can customize thе appearance of the Circular Progress Indicator component like this:
 
-```scss
+```css
+igc-circular-progress::part(gradient_end),
+igc-circular-progress::part(gradient_start){
+    stop-color: #72da67;
+}
 
+igc-circular-progress::part(track){
+    stroke: rgb(216, 211, 211);
+}
 ```
 
 <code-view style="height: 100px"

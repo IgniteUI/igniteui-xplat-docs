@@ -46,11 +46,11 @@ The simplest way to start using the `LinearProgress` is as follows:
 
 ### Progress Types
 
-You can set the type of your indicator, using  `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
 ### Striped Progress
 
-You can make the indicator striped, using the `striped` property and setting it to `true`:
+You can make the indicator striped, using the `striped` property:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -63,7 +63,7 @@ You can make the indicator striped, using the `striped` property and setting it 
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property to `true`.
+If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
 
 ### Animation Duration
 
@@ -71,11 +71,11 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ### Text Properties
 
-You can align the value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**. 
+You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**. 
 
-To hide the value of the progress indicator, use the `hideLabel` property and set its value to `true`.
+To hide the default label of the progress indicator, use the `hideLabel` attribute.
 
-The `labelFormat` property can be used to customize the $ProductName$ `LinearProgress` default label.
+The `labelFormat` property can be used to customize the `LinearProgress` default label.
 
 The following sample demonstrates the above configuration:
 
@@ -87,9 +87,6 @@ The following sample demonstrates the above configuration:
 </code-view>
 
 <div class="divider--half"></div>
-
-> [!NOTE]
-> By design the progress update is **1% of the `max` value**. 
 
 ### Dynamic Progress
 
@@ -130,7 +127,7 @@ The Linear Procress Indicator component exposes CSS parts for almost all of its 
 
 Using these CSS parts we can customize thе appearance of the Linear Progress Indicator component like this:
 
-```scss
+```css
 igc-linear-progress::part(track){
     background-color: #D3D3D3;
 }
