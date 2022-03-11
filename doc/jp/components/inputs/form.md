@@ -38,6 +38,16 @@ npm install {PackageWebComponents}
 IgbFormModule.Register(IgniteUIBlazor);
 ```
 
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Form` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 ```ts
 import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
 
