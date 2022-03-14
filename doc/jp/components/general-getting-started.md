@@ -392,13 +392,13 @@ dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 <script src="_framework/blazor.server.js"></script>
 ```
 
-There is an additional CSS file that you will need to link if you are using any of the input controls. You can link this CSS file using the following code in the same file as the scripts mentioned above:
+入力コントロールのいずれかを使用している場合は、リンクする必要がある追加の CSS ファイルがあります。上記のスクリプトと同じファイル内の次のコードを使用して、この CSS ファイルをリンクできます:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
 
-The list of controls this additional CSS file applies to is as follows:
+この追加の CSS ファイルが適用されるコントロールのリストは次のとおりです:
 
 - [Avatar](layouts/avatar.md)
 - [Badge](inputs/badge.md)
