@@ -10,13 +10,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerTextColor"}],"originalName":"HeaderTextColor"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fa.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"headerTextMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fa.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"headerTextMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fa.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"headerTextMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fa.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"headerTextMargin.top"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryTextColor"}],"originalName":"SummaryTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryValueColor"}],"originalName":"SummaryValueColor"},
     { "names":[{"platform":"WebComponents","mappedType":"DataLegendSummaryType","mappedName":"summaryType"}],"originalName":"SummaryType"},
@@ -24,45 +24,45 @@
     { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"summaryValueFormatSpecifiers"}],"originalName":"SummaryValueFormatSpecifiers"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryText"}],"originalName":"SummaryText"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fg.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryTextMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fg.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"summaryTextMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fg.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"summaryTextMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fg.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"summaryTextMargin.top"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fb.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"rowMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fb.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"rowMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fb.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"rowMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fb.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"rowMargin.top"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fc.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"seriesBadgeMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fc.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"seriesBadgeMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fc.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"seriesBadgeMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fc.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"seriesBadgeMargin.top"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fd.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"seriesTitleMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fd.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"seriesTitleMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fd.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"seriesTitleMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fd.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"seriesTitleMargin.top"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"ff.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"seriesValueMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"ff.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"seriesValueMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"ff.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"seriesValueMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"ff.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"seriesValueMargin.top"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetCursorPositionX"}],"originalName":"TargetCursorPositionX"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetCursorPositionY"}],"originalName":"TargetCursorPositionY"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"targetAxisValue"}],"originalName":"TargetAxisValue"},
@@ -70,13 +70,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesUnitsText"}],"originalName":"SeriesUnitsText"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesUnitsColor"}],"originalName":"SeriesUnitsColor"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"fe.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"seriesUnitsMargin.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"fe.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"seriesUnitsMargin.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"fe.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"seriesUnitsMargin.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"fe.e"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"seriesUnitsMargin.top"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesValueColor"}],"originalName":"SeriesValueColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesTitleColor"}],"originalName":"SeriesTitleColor"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},

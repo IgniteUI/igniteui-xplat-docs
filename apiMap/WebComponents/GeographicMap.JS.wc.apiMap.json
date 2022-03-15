@@ -100,13 +100,13 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPolyline"}],"originalName":"IsPolyline"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"q7.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"q7.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"q7.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"q7.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-geographic-proportional-symbol-series-component.ts","dynamicModuleName":"igc-geographic-proportional-symbol-series-dynamic-module.ts","moduleName":"igc-geographic-proportional-symbol-series-module.ts","mappedName":"IgcGeographicProportionalSymbolSeriesComponent"}],
     "members":[
@@ -203,13 +203,13 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isPolygon"}],"originalName":"IsPolygon"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"r8.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"r8.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"r8.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"r8.opacity"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"},
     { "names":[{"platform":"WebComponents","mappedType":"MarkerType","mappedName":"markerType"}],"originalName":"MarkerType"},
     { "names":[{"platform":"WebComponents","mappedType":"MarkerOutlineMode","mappedName":"markerOutlineMode"}],"originalName":"MarkerOutlineMode"},
     { "names":[{"platform":"WebComponents","mappedType":"MarkerFillMode","mappedName":"markerFillMode"}],"originalName":"MarkerFillMode"},

@@ -33,13 +33,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"LabelsPosition","mappedName":"labelsPosition"}],"originalName":"LabelsPosition"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"leaderLineVisibility"}],"originalName":"LeaderLineVisibility"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"ei.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"leaderLineStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"ei.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"leaderLineStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ei.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"leaderLineStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"ei.opacity"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"leaderLineStyle.opacity"},
     { "names":[{"platform":"WebComponents","mappedType":"LeaderLineType","mappedName":"leaderLineType"}],"originalName":"LeaderLineType"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"leaderLineMargin"}],"originalName":"LeaderLineMargin"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"othersCategoryThreshold"}],"originalName":"OthersCategoryThreshold"},
@@ -58,21 +58,21 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"labelExtent"}],"originalName":"LabelExtent"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"startAngle"}],"originalName":"StartAngle"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"ej.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"othersCategoryStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"ej.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"othersCategoryStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ej.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"ej.opacity"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"othersCategoryStyle.opacity"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"ek.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"ek.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ek.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"ek.opacity"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"outlines"}],"originalName":"Outlines"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelOuterColor"}],"originalName":"LabelOuterColor"},
@@ -88,13 +88,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"allowSliceExplosion"}],"originalName":"AllowSliceExplosion"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"innerExtent"}],"originalName":"InnerExtent"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"cg.fill"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"cg.stroke"},
+    "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"cg.strokeThickness"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"cg.opacity"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},

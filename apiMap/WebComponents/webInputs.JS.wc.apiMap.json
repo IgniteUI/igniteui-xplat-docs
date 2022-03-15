@@ -299,7 +299,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"autofocus"}],"originalName":"Autofocus"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"autocomplete"}],"originalName":"Autocomplete"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setRangeText"}],"originalName":"SetRangeText"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setRangeText1"}],"originalName":"SetRangeText"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setCustomValidity"}],"originalName":"SetCustomValidity"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"stepUp"}],"originalName":"StepUp"},
