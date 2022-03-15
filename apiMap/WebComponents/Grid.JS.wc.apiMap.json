@@ -416,6 +416,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorTextField"}],"originalName":"EditorTextField"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"editorValueField"}],"originalName":"EditorValueField"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"dateFormatString"}],"originalName":"DateFormatString"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"showTodayButton"}],"originalName":"ShowTodayButton"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetRow"}],"originalName":"TargetRow"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetColumn"}],"originalName":"TargetColumn"}],"originalBaseTypeName":"CellModel","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"FilterCellModel",
@@ -661,13 +662,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"rowHoverTextColor"}],"originalName":"RowHoverTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editRowBorder"}],"originalName":"EditRowBorder"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"editRowBorderWidth.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"y2.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"editRowBorderWidth.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"y2.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"editRowBorderWidth.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"y2.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"editRowBorderWidth.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"y2.e"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSectionHeaderComponent","mappedName":"sectionHeader"}],"originalName":"SectionHeader"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSummaryRowRootComponent","mappedName":"summaryRowRoot"}],"originalName":"SummaryRowRoot"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSummaryRowSectionComponent","mappedName":"summaryRowSection"}],"originalName":"SummaryRowSection"},
@@ -762,30 +763,30 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"border"}],"originalName":"Border"},
     { "names":[{"platform":"WebComponents","mappedType":"Thickness","mappedName":"actualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"yz.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"yz.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"yz.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"yz.e"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"notifyOnAllSelectionChanges"}],"originalName":"NotifyOnAllSelectionChanges"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"cornerRadius.bottomRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"ws.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"ws.a"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"cornerRadius.topLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"ws.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"cornerRadius.topRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"ws.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"wq.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"wq.a"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"actualCornerRadius.topLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"wq.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"actualCornerRadius.topRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"wq.d"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isActiveCellStyleEnabled"}],"originalName":"IsActiveCellStyleEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcResponsiveStatesCollection","mappedName":"responsiveStates"}],"originalName":"ResponsiveStates"},
     { "names":[{"platform":"WebComponents","mappedType":"IgRect","mappedName":"actualVisibleRegion"}],"originalName":"ActualVisibleRegion"},
@@ -1124,7 +1125,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"IDataSource","mappedName":"actualDataSource"}],"originalName":"ActualDataSource"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"dataSource"}],"originalName":"ItemsSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textField"}],"originalName":"TextField"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"valueField"}],"originalName":"ValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueField"}],"originalName":"ValueField"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"valueMultiField"}],"originalName":"ValueMultiField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"DateTimeColumn",
     "names":[{"platform":"WebComponents","fileName":"igc-date-time-column-component.ts","dynamicModuleName":"igc-date-time-column-dynamic-module.ts","moduleName":"igc-date-time-column-module.ts","mappedName":"IgcDateTimeColumnComponent"}],
     "members":[
@@ -1133,10 +1135,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorFormatString"}],"originalName":"EditorFormatString"},
     { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"formatSpecifiers"}],"originalName":"FormatSpecifiers"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"formatOverride"}],"originalName":"FormatOverride"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"showTodayButton"}],"originalName":"ShowTodayButton"},
     { "names":[{"platform":"WebComponents","mappedType":"EditorType","mappedName":"editorType"}],"originalName":"EditorType"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"editorDataSource"}],"originalName":"EditorItemsSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorTextField"}],"originalName":"EditorTextField"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"DefinitionBase",
     "names":[{"platform":"WebComponents","fileName":"igc-definition-base-component.ts","mappedName":"IgcDefinitionBaseComponent"}],
     "members":[
@@ -1295,7 +1298,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"EditorType","mappedName":"editorType"}],"originalName":"EditorType"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"editorDataSource"}],"originalName":"EditorItemsSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorTextField"}],"originalName":"EditorTextField"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"NumericColumn",
     "names":[{"platform":"WebComponents","fileName":"igc-numeric-column-component.ts","dynamicModuleName":"igc-numeric-column-dynamic-module.ts","moduleName":"igc-numeric-column-module.ts","mappedName":"IgcNumericColumnComponent"}],
     "members":[
@@ -1313,7 +1316,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"EditorType","mappedName":"editorType"}],"originalName":"EditorType"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"editorDataSource"}],"originalName":"EditorItemsSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorTextField"}],"originalName":"EditorTextField"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"PinnedAreaSeparator",
     "names":[{"platform":"WebComponents","fileName":"igc-pinned-area-separator-component.ts","dynamicModuleName":"igc-pinned-area-separator-dynamic-module.ts","moduleName":"igc-pinned-area-separator-module.ts","mappedName":"IgcPinnedAreaSeparatorComponent"}],"members":[],"originalBaseTypeName":"DefinitionBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"LayoutAction","isEnum":true,
@@ -1378,7 +1381,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"EditorType","mappedName":"editorType"}],"originalName":"EditorType"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"editorDataSource"}],"originalName":"EditorItemsSource"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorTextField"}],"originalName":"EditorTextField"},
-    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editorValueField"}],"originalName":"EditorValueField"}],"originalBaseTypeName":"Column","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"TextHeader",
     "names":[{"platform":"WebComponents","fileName":"igc-text-header-component.ts","dynamicModuleName":"igc-text-header-dynamic-module.ts","moduleName":"igc-text-header-module.ts","mappedName":"IgcTextHeaderComponent"}],"members":[],"originalBaseTypeName":"Header","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"FilterUIType","isEnum":true,

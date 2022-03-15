@@ -36,37 +36,37 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"columnHeadersVisible"}],"originalName":"ColumnHeadersVisible"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"contentPadding.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"h7.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"contentPadding.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"h7.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"contentPadding.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"h7.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"contentPadding.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"h7.e"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"actualContentPadding.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"h6.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"actualContentPadding.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"h6.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"actualContentPadding.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"h6.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"actualContentPadding.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"h6.e"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"cornerRadius.bottomRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"gj.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"gj.a"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"cornerRadius.topLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"gj.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"cornerRadius.topRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"gj.d"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"gi.b"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"gi.a"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"actualCornerRadius.topLeft"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"gi.c"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"actualCornerRadius.topRight"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"gi.d"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"dataSourceDesiredProperties"}],"originalName":"DataSourceDesiredProperties"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualDensity"}],"originalName":"ActualDensity"},

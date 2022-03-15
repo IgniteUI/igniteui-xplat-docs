@@ -34,8 +34,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isRadial"}],"originalName":"IsRadial"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusExtentScale"}],"originalName":"RadiusExtentScale"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"innerRadiusExtentScale"}],"originalName":"InnerRadiusExtentScale"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getScaledValue3"}],"originalName":"GetScaledValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getScaledValue"}],"originalName":"GetScaledValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getUnscaledValue"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"OrdinalTimeXAxis",
     "names":[{"platform":"WebComponents","fileName":"igc-ordinal-time-x-axis-component.ts","dynamicModuleName":"igc-ordinal-time-x-axis-dynamic-module.ts","moduleName":"igc-ordinal-time-x-axis-module.ts","mappedName":"IgcOrdinalTimeXAxisComponent"}],
     "members":[
