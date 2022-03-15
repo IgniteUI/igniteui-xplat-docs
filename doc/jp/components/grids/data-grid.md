@@ -406,6 +406,15 @@ grid1.dataSource = data;
 />
 ```
 
+<!-- Blazor -->
+### ビデオ チュートリアル
+
+Blazor データ グリッドの作成について詳しくは、このチュートリアル ビデオ (英語) をご覧ください。
+
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/aT1L3nXqN6o">
+</iframe>
+<!-- end: Blazor -->
+
 ### その他のリソース
 
 - [アクセシビリティの遵守](data-grid-accessibility.md)

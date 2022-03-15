@@ -392,6 +392,31 @@ dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 <script src="_framework/blazor.server.js"></script>
 ```
 
+入力コントロールのいずれかを使用している場合は、リンクする必要がある追加の CSS ファイルがあります。上記のスクリプトと同じファイル内の次のコードを使用して、この CSS ファイルをリンクできます:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+この追加の CSS ファイルが適用されるコントロールのリストは次のとおりです:
+
+- [Avatar](layouts/avatar.md)
+- [Badge](inputs/badge.md)
+- [Button](inputs/button.md)
+- [Card](layouts/card.md)
+- [Calendar](scheduling/calendar.md)
+- [Checkbox](inputs/checkbox.md)
+- [Form](inputs/form.md)
+- [Icon](layouts/icon.md)
+- [Icon Button](inputs/icon-button.md)
+- [Input](inputs/input.md)
+- [List](grids/list.md)
+- [NavBar](menus/navbar.md)
+- [Navigation Drawer](menus/navigation-drawer.md)
+- [Radio & Radio Group](inputs/radio.md)
+- [Ripple](inputs/ripple.md)
+- [Switch](inputs/switch.md)
+
 2 - Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
 **Blazor Web Assembly** プロジェクトで **Program.cs** ファイルを変更します。

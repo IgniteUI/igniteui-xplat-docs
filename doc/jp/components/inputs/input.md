@@ -30,6 +30,16 @@ Input コンポーネントの使用を開始するには、最初にそのモ�
 IgbInputModule.Register(IgniteUIBlazor);
 ```
 
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 <!-- end: Blazor -->
 
 <div class="divider--half"></div>
