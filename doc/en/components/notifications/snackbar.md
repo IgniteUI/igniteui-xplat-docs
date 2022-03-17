@@ -35,7 +35,7 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
-The simplest way to display the snackbar component is to use its `show()` method and call it on a button click.
+The simplest way to display the snackbar component is to use its `Show()` method and call it on a button click.
 
 ```html
 <igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
@@ -46,12 +46,7 @@ The simplest way to display the snackbar component is to use its `show()` method
 
 ### Display Time
 
-Use the `display-time` attribute to configure how long the snackbar component is visible. By default, it's set to 4000 miliseconds.
-
-```html
-<igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
-<igc-snackbar id="snackbar" display-time="6000">Snackbar with different display time</igc-snackbar>
-```
+Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 miliseconds.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -62,21 +57,7 @@ Use the `display-time` attribute to configure how long the snackbar component is
 
 ### Action Text
 
-By default, the snackbar component is hidden automatically after a period specified by the `display-time` input. You can use `keep-open` attribute to change this behavior. In this way, the snackbar will remain visible. Using the snackbar `action-text` you can display an action button inside the component.
-
-
-```html
-<igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
-<igc-snackbar id="snackbar" keep-open action-text="Close">Snackbar with enabled keep-open option</igc-snackbar>
-```
-
-```ts
-const snackbar = document.querySelector('igc-snackbar') as IgcSnackbarComponent
-
-document.addEventListener('igcAction', () => {
-    snackbar.hide();
-});
-```
+By default, the snackbar component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the snackbar will remain visible. Using the snackbar `ActionText` you can display an action button inside the component.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -96,6 +77,13 @@ igc-snackbar::part(base) {
     color: white;
 }
 ```
+
+<code-view style="height: 230px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
+           alt="$Platform$ Sanckbar Styling Example"
+           github-src="notifications/snackbar/styling">
+</code-view>
 
 ## API Reference
 
