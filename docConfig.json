@@ -213,6 +213,7 @@
             "RangeSlider",
             "Ripple",
             "Slider",
+            "Snackbar",
             "Switch",
             "SizableComponentSize",
             "VoidEventArgs"

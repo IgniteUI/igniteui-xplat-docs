@@ -35,7 +35,7 @@ import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcSnackbarComponent);
 ```
 
-The simplest way to display the snackbar component is to use its `Show()` method and call it on a button click.
+The simplest way to display the snackbar component is to use its `Show` method and call it on a button click.
 
 ```html
 <igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
