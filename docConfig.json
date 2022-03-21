@@ -189,6 +189,7 @@
             "Card",
             "Checkbox",
             "CheckboxBase",
+            "Chip",
             "ComponentBoolValueChangedEventArgs",
             "ComponentValueChangedEventArgs",
             "DateRangeType",

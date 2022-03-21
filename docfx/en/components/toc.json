@@ -1282,6 +1282,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Chip {ReleaseStatus_WebsInputs}",
+    "href": "inputs/chip.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Form {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
