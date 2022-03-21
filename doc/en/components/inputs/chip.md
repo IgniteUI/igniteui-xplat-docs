@@ -22,33 +22,16 @@ $ProductName$ Chips help people enter information, make selections, filter conte
 
 ## Usage
 
-<!-- WebComponents -->
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 Before using the `Chip`, you need to register it as follows:
 
-```razor
-IgbChipModule.Register(IgniteUIBlazor);
-```
-
-<!-- Blazor -->
-
-You will also need to link an additional CSS file to apply the styling to the `Chip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
-
-```razor
-<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-```
-
-<!-- end: Blazor -->
-
 ```ts
-import { defineComponents, IgcChipComponent } from "igniteui-webcomponents";
-
+import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
 defineComponents(IgcChipComponent);
 ```
 
@@ -58,42 +41,26 @@ The simplest way to start using the `Chip` is as follows:
 <igc-chip></igc-chip>
 ```
 
-```razor
-<IgbChip>Chip</IgbChip>
-```
-
-To display a selectable chip, you can set the `selectable` attribute of the chip.
+To display a selectable chip, you can use the `Selectable` property of the chip.
 
 ```html
 <igc-chip selectable></igc-chip>
 ```
 
-```razor
-<IgbChip Selectable="true">Chip</IgbChip>
-```
-
-To display a removable chip, you can set the `removable` attribute of the chip.
+To display a removable chip, you can use the `Removable` property of the chip.
 
 ```html
 <igc-chip removable></igc-chip>
-```
-
-```razor
-<IgbChip Removable="true">Chip</IgbChip>
 ```
 
 ## Examples
 
 ### Variants
 
-The $ProductName$ chip supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`, `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The $ProductName$ chip supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `Primary`, `Info`, `Success`, `Warning`, or `Danger` to the `Variant` property.
 
 ```html
 <igc-chip variant="success"></igc-chip>
-```
-
-```razor
-<IgbChip Variant="@ChipVariant.Success"></IgbChip>
 ```
 
 <code-view style="height: 60px"
@@ -105,19 +72,15 @@ The $ProductName$ chip supports several pre-defined stylistic variants. You can 
 
 ### Disabled
 
-The $ProductName$ chip can be disabled by using the `disabled` attribute.
+The $ProductName$ chip can be disabled by using the `Disabled` property.
 
 ```html
 <igc-chip disabled></igc-chip>
 ```
 
-```razor
-<IgbChip Disabled="true"></IgbChip>
-```
-
 ### Prefix / Suffix
 
-With `prefix` and `suffix` parts of the `Chip` component and their slots, we can add different content before and after the main content of the chip. We provide default select and remove icons but you can customize them using the `select` and `remove` slots. You can add additional content before or after the main content, using the `start` and `end` slots
+With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we can add different content before and after the main content of the chip. We provide default select and remove icons but you can customize them using the `Select` and `Remove` slots. You can add additional content before or after the main content, using the `Start` and `End` slots
 
 ```html
 <igc-chip selectable removable>
@@ -129,16 +92,6 @@ With `prefix` and `suffix` parts of the `Chip` component and their slots, we can
 </igc-chip>
 ```
 
-```razor
-<IgbChip Selectable="true" Removable="true">
-  <span slot="select"><igc-icon name="verified-account"></igc-icon></span>
-  <span slot="start"><igc-icon name="brush"></igc-icon></span>
-    Chip
-  <span slot="end"><igc-icon name="blood"></igc-icon></span>
-  <span slot="remove"><igc-icon name="pacifier"></igc-icon></span>
-</IgbChip>
-```
-
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
@@ -148,7 +101,7 @@ With `prefix` and `suffix` parts of the `Chip` component and their slots, we can
 
 ## Size
 
-We can allow the user to choose the size of the `chip` by using its `size` property.
+We allow the user to choose the size of the `Chip` by using its `Size` property.
 
 ```html
 <igc-chip size="small" selectable removable>Chip</igc-chip>
@@ -165,7 +118,7 @@ We can allow the user to choose the size of the `chip` by using its `size` prope
 
 ## Styling
 
-The chip component exposes a `base`, `prefix` and `sufix` parts and several slots that can be used to change all of its style properties.
+The chip component exposes a `Base`, `Prefix`, `Sufix` parts and several slots that can be used to change all of its style properties.
 
 ```css
 igc-chip::part(base) {
@@ -185,24 +138,15 @@ igc-chip::part(suffix) {
            github-src="inputs/chip/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API Reference
 
 * `Chip`
 
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
 ## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
 
 <!-- WebComponents -->
 
