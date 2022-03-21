@@ -214,6 +214,7 @@
             "Ripple",
             "Slider",
             "Switch",
+            "Toast",
             "SizableComponentSize",
             "VoidEventArgs"
         ]
