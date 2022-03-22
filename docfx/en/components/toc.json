@@ -1351,6 +1351,16 @@
     "status": ""
   },
   {
+    "name": "Notifications",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Toast {ReleaseStatus_WebsInputs}",
+    "href": "notifications/toast.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "Scheduling",
     "header": true
