@@ -189,6 +189,7 @@
             "Card",
             "Checkbox",
             "CheckboxBase",
+            "Chip",
             "ComponentBoolValueChangedEventArgs",
             "ComponentValueChangedEventArgs",
             "DateRangeType",
@@ -215,6 +216,7 @@
             "Slider",
             "Snackbar",
             "Switch",
+            "Toast",
             "SizableComponentSize",
             "VoidEventArgs"
         ]

@@ -1282,6 +1282,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Chip {ReleaseStatus_WebsInputs}",
+    "href": "inputs/chip.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Form {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
@@ -1353,6 +1359,12 @@
     "name": "Snackbar {ReleaseStatus_WebsInputs}",
     "href": "notifications/snackbar.md",
     "status": "NEW"
+  },
+  {
+     "exclude": ["Angular", "React"],
+     "name": "Toast {ReleaseStatus_WebsInputs}",
+     "href": "notifications/toast.md",
+     "status": "NEW"
   },
   {
     "exclude": ["Angular"],
