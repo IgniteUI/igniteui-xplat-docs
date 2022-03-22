@@ -5,17 +5,35 @@ _keywords: Changelog, What's New,  $ProductName$, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ Changelog (Data Visualization)
-
+# $ProductName$ Changelog
 
 All notable changes for each version of $ProductName$ are documented on this page.
 
 <!-- Angular -->
 
 > [!NOTE]
+> This topic discusses changes only for DV related controls eg. (charts, excel, spreadsheet, maps)
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
+## **$Platform$ {PackageVerChanges-21-2.1}**
+
+> [!NOTE]
+> This breaking changes was introduce in the grid package.
+
+> `ValueField` property is now a string for ease of use. 
+> * Changed `ValueChanged` event to `SelectedValueChanged`
+> * Changed `TextChanged` event to `TextValueChanged`
+
+> The following change were made to the input package
+> * Changed `ValueChanged` event to `SelectedValueChanged`
+
+<!-- end: Blazor, React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -157,8 +175,8 @@ Old brushes/outlines | New outline/brushes
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
 * Breaking Changes:
-    - Changed grid's `SummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 <!-- end: Blazor, React, WebComponents -->
 

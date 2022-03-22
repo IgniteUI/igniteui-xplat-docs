@@ -31,7 +31,7 @@ Cell Merging in the $Platform$ data grid can be configured by using the `MergedC
 
 Note, regardless of the value of this property, cells can only be merged across sibling records.
 
-Cell merging can be evaulated based on whether the data is formatted or not using the `MergedCellEvaluationCriteria` property. This is applicable to the entire grid or individual columns and can be set to one of the following options, listed below:
+Cell merging can be evaluated based on whether the data is formatted or not using the `MergedCellEvaluationCriteria` property. This is applicable to the entire grid or individual columns and can be set to one of the following options, listed below:
 
 - `RawValue`: Merge cells from adjacent rows when the raw values from the cells are the same. This is the default value.
 - `FormattedText`: Merge cells from adjacent rows when the formatted value from the cells is the same.

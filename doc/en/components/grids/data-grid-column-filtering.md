@@ -2,7 +2,7 @@
 title: $Platform$ Data Grid | Filtering | Infragistics
 _description: Use Infragistics' $ProductName$ grid component to perform expressive sort conditions and return data easily. View $ProductName$ table's demo for more information!
 _keywords: $Platform$ Table, Data Grid, column, filtering, filter expressions, filter operands, $ProductName$, Infragistics
-mentionedTypes: ['Grid']
+mentionedTypes: ['Grid', 'FilterExpressions']
 namespace: Infragistics.Controls
 ---
 
@@ -28,7 +28,7 @@ Filtering is also exposed in the column options UI by hovering a field and click
 
 ## Filter Expressions
 
-In the example below, the data grid's FilterExpressions collection is updated to incorporate custom `FilterExpression`.
+In the example below, the data grid's FilterExpressions collection is updated to incorporate custom `FilterExpressions`.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
