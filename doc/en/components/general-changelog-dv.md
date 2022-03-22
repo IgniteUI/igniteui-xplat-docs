@@ -2,7 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ Changelog
@@ -24,14 +24,17 @@ All notable changes for each version of $ProductName$ are documented on this pag
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
 > [!NOTE]
-> This breaking changes was introduce in the grid package.
+> These breaking changes were introduced.
 
-> `ValueField` property is now a string for ease of use. 
-> * Changed `ValueChanged` event to `SelectedValueChanged`
-> * Changed `TextChanged` event to `TextValueChanged`
+### Data Grid
 
-> The following change were made to the input package
-> * Changed `ValueChanged` event to `SelectedValueChanged`
+- Changed `ValueField` property from type string array to string. 
+
+### Date Picker 
+- Changed `ValueChanged` event to `SelectedValueChanged`
+
+### Multi-Column Combo Box
+- Changed `TextChanged` event to `TextValueChanged`
 
 <!-- end: Blazor, React, WebComponents -->
 
