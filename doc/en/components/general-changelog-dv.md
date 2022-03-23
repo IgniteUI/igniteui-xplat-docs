@@ -2,7 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ Changelog
@@ -19,21 +19,43 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
-<!-- Blazor, React, WebComponents -->
-
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
+<!-- React, WebComponents -->
+
+### Data Grid
+
+- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+<!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
 > [!NOTE]
-> This breaking changes was introduce in the grid package.
+> The following breaking changes were introduced
 
-> `ValueField` property is now a string for ease of use. 
-> * Changed `ValueChanged` event to `SelectedValueChanged`
-> * Changed `TextChanged` event to `TextValueChanged`
+### Data Grid
 
-> The following change were made to the input package
-> * Changed `ValueChanged` event to `SelectedValueChanged`
+- Changed `ValueField` property from type string[] to string. 
+
+### Date Picker 
+- Changed ValueChanged event to `SelectedValueChanged`.
+
+### Multi-Column ComboBox
+- Changed `TextChanged` event to `TextValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
 
 <!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+
+- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
