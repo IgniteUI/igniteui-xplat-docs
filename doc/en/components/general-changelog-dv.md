@@ -19,24 +19,43 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
-<!-- Blazor, React, WebComponents -->
-
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
-> [!NOTE]
-> These breaking changes were introduced.
+<!-- React, WebComponents -->
 
 ### Data Grid
 
-- Changed `ValueField` property from type string array to string. 
+- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+<!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
+> [!NOTE]
+> The following breaking changes were introduced
+
+### Data Grid
+
+- Changed `ValueField` property from type string[] to string. 
 
 ### Date Picker 
-- Changed `ValueChanged` event to `SelectedValueChanged`
+- Changed `ValueChanged` event to `SelectedValueChanged`.
 
-### Multi-Column Combo Box
-- Changed `TextChanged` event to `TextValueChanged`
+### Multi-Column ComboBox
+- Changed `ValueChanged` event to `SelectedValueChanged`.
+- Changed `TextChanged` event to `TextValueChanged`, while a new `TextChanged` event has been added.
 
 <!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+
+The `ValueChanged` event has been added to support 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
