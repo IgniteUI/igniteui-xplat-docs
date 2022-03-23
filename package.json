@@ -24,6 +24,7 @@
     "start": "tsc && gulp startDefault",
     "startAngular": "tsc && gulp startAngular",
     "startBlazor": "tsc && gulp startBlazor",
+    "startBlazorStaging": "tsc && set NODE_ENV=staging && gulp startBlazor",
     "startReact": "tsc && gulp startReact",
     "startWC": "tsc && gulp startWC",
     "build-docfx": "tsc && gulp buildDocfx_All",
