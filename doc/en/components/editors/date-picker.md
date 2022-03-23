@@ -100,7 +100,7 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 
 The following example demonstrates how to restrict selected dates in the `DatePicker`.
 
-<code-view style="height: 350px"
+<code-view style="height: 360px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
            alt="$Platform$ Date Picker Date Limits Example"
