@@ -41,11 +41,11 @@ All notable changes for each version of $ProductName$ are documented on this pag
 - Changed `ValueField` property from type string[] to string. 
 
 ### Date Picker 
-- Changed `ValueChanged` event to `SelectedValueChanged`.
+- Changed ValueChanged event to `SelectedValueChanged`.
 
 ### Multi-Column ComboBox
 - Changed `TextChanged` event to `TextValueChanged`, while a new `TextChanged` event has been added.
-- Changed `ValueChanged` event to `SelectedValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`, while a new `ValueChanged` event has been added.
 
 <!-- end: Blazor, React, WebComponents -->
 
@@ -53,7 +53,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <!-- Blazor -->
 
-The `ValueChanged` event has been added to support 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+The new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
 <!-- end: Blazor -->
 
