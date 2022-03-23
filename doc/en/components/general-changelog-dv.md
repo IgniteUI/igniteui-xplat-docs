@@ -44,8 +44,8 @@ All notable changes for each version of $ProductName$ are documented on this pag
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
 ### Multi-Column ComboBox
-- Changed `ValueChanged` event to `SelectedValueChanged`.
 - Changed `TextChanged` event to `TextValueChanged`, while a new `TextChanged` event has been added.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
 
 <!-- end: Blazor, React, WebComponents -->
 
