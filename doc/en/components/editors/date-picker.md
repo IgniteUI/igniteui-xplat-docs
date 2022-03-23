@@ -12,7 +12,7 @@ The Date Picker component allows users to use a drop-down calendar UI allowing t
 
 This sample demonstrates how to create `DatePicker` with option to select a single date.
 
-<code-view style="height: 300px"
+<code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
            alt="$Platform$ Date Picker Example"
@@ -100,7 +100,7 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 
 The following example demonstrates how to restrict selected dates in the `DatePicker`.
 
-<code-view style="height: 300px"
+<code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
            alt="$Platform$ Date Picker Date Limits Example"
@@ -113,7 +113,7 @@ The following example demonstrates how to restrict selected dates in the `DatePi
 
 The following example demonstrates how apply a long date in the `DatePicker`.
 
-<code-view style="height: 300px"
+<code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
            alt="$Platform$ Date Picker Format Example"
