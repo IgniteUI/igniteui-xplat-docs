@@ -1282,6 +1282,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "チップ {ReleaseStatus_WebsInputs}",
+    "href": "inputs/chip.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "フォーム {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
@@ -1343,6 +1349,16 @@
     "name": "ズーム スライダー",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "name": "Notifications",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "トースト {ReleaseStatus_WebsInputs}",
+    "href": "notifications/toast.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],

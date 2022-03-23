@@ -6,17 +6,35 @@ _language: ja
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ 変更ログ (データ可視化)
-
+# $ProductName$ 変更ログ
 
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Angular -->
 
 > [!NOTE]
+> This topic discusses changes only for DV related controls eg. (charts, excel, spreadsheet, maps)
 > Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
+## **$Platform$ {PackageVerChanges-21-2.1}**
+
+> [!NOTE]
+> This breaking changes was introduce in the grid package.
+
+> `ValueField` property is now a string for ease of use. 
+> * Changed `ValueChanged` event to `SelectedValueChanged`
+> * Changed `TextChanged` event to `TextValueChanged`
+
+> The following change were made to the input package
+> * Changed `ValueChanged` event to `SelectedValueChanged`
+
+<!-- end: Blazor, React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -157,8 +175,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択の相互作用の変化を検出するために使用されます。
 * 重大な変更:
-    - グリッドの `SummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
-    - `GroupHeaderDisplayMode` プロパティのタイプを DataSourceSectionHeaderDisplayMode から `GroupHeaderDisplayMode` に変更しました。
+    - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+    - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->
 
