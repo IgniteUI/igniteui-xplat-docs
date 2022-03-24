@@ -2,6 +2,7 @@
 title: $Platform$ Polar Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Polar Chart
 _keywords: $Platform$ Charts, Polar Chart, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
 ---
 # $Platform$ Polar Chart

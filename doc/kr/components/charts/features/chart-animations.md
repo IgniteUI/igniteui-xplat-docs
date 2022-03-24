@@ -2,6 +2,7 @@
 title: $Platform$ Chart Animations | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Animations
 _keywords: $Platform$ Charts, Animations, Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart"]
 ---
 

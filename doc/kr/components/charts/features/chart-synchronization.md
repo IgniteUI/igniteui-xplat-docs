@@ -2,6 +2,7 @@
 title: $Platform$ Data Chart | Data Visualization Tools | Synchronization | Infragistics
 _description: Synchronize between multiple Infragistics' $Platform$ charts controls including zooming, panning and crosshair events. Learn about our $ProductName$ graph synchronization capabilities!
 _keywords: $Platform$ charts, data chart, synchronization, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart"]
 ---
 # $Platform$ Chart Synchronization

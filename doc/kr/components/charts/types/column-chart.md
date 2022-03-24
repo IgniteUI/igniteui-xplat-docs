@@ -2,6 +2,7 @@
 title: $Platform$ Column Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Column Chart
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries"]
 ---
 # $Platform$ Column Chart

@@ -3,6 +3,7 @@ title: $Platform$ Linear Gauge Component - Native $Platform$ | $ProductName$
 _description: Use the Linear Gauge component to see a simple display of a value compared against a scale and one or more ranges.
 _keywords: $Platform$, $ProductName$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Grid, $Platform$ Chart Control, $Platform$ Grid Component, $Platform$ linear graph Component, $Platform$ linear graph
 _language: kr
+mentionedTypes: ['XamLinearGauge']
 ---
 
 # $Platform$ Linear Gauge

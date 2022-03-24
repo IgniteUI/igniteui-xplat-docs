@@ -1,9 +1,11 @@
 ---
-제목: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 원격 데이터 바인딩 | Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 원격 데이터 바인딩 | Infragistics
 _description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
 _keywords: grid, table, $ProductName$, Infragistics
 _language: kr
+mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
+
 # $Platform$ 가상 데이터 소스
 
 $ProductName$ 데이터 표/데이터 그리드는 하나의 코드 행으로 원격 데이터 소스에의 바인딩을 지원합니다.  $Platform$ 데이터 표의 가상 데이터 소스를 사용하면 원격 URI와 반환할 OData 엔터티로 $Platform$ 그리드를 설정하는 것만으로 $Platform$ 그리드가 나머지 작업을 실행합니다.

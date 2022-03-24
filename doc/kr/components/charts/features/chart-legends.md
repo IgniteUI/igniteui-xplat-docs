@@ -2,6 +2,7 @@
 title: $Platform$ Chart Legends | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart with legends in horizontal or vertical orientation!
 _keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "Legend"]
 namespace: Infragistics.Controls.Charts
 ---

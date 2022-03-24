@@ -3,6 +3,7 @@ title: $Platform$ Excel Library Component - Native Angular | Ignite UI for Angul
 _description: The Ignite UI for Excel Library component ... TODO.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine
 _language: kr
+mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 ---
 
 # $Platform$ Excel Library
