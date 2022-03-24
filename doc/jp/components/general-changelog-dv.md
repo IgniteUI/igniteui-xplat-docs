@@ -3,7 +3,7 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ 変更ログ
@@ -20,21 +20,43 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
-<!-- Blazor, React, WebComponents -->
-
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
+<!-- React, WebComponents -->
+
+### データ グリッド
+
+- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+<!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
 > [!NOTE]
-> この重大な変更は、グリッド パッケージで導入されました。
+> The following breaking changes were introduced
 
-> `ValueField` プロパティは、使いやすいように文字列になりました。
-> * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
-> * `TextChanged` イベントを `TextValueChanged` に変更しました。
+### データ グリッド
 
-> 入力パッケージに次の変更が加えられました:
-> * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+- Changed `ValueField` property from type string[] to string. 
+
+### 日付選択 
+- Changed ValueChanged event to `SelectedValueChanged`.
+
+### 複数列コンボ ボックス
+- Changed `TextChanged` event to `TextValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
 
 <!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+
+- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
