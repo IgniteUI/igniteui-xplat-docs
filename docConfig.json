@@ -214,6 +214,7 @@
             "RangeSlider",
             "Ripple",
             "Slider",
+            "Snackbar",
             "Switch",
             "Toast",
             "SizableComponentSize",
