@@ -74,7 +74,7 @@ worksheet.displayOptions.showRowAndColumnHeaders = false;
 
 
 ## Configuring Editing of the Worksheet
-By default, the `Worksheet` objects that you save will be editable. You can disable editing of a worksheet by protecting it using the `Worksheet` object's `protect` method. This method has a lot of nullable `bool` arguments that determine which pieces are protected, and one of these options is to allow editing of objects, which if set to `false` will prevent editing of the worksheet.
+By default, the `Worksheet` objects that you save will be editable. You can disable editing of a worksheet by protecting it using the `Worksheet` object's `protect` method. This method has a lot of nullable `bool` arguments that determine which pieces are protected, and one of these options is to allow editing of objects, which if set to **false** will prevent editing of the worksheet.
 
 The following code demonstrates how to disable editing in your worksheet:
 
@@ -88,7 +88,7 @@ worksheet.protect();
 
 You can also use the `Worksheet` object's `protect` method to protect a worksheet against structural changes.
 
-When protection is set, you can set the `CellFormat` object's `locked` property on individual cells, rows, merged cell regions, or columns to override the worksheet object's protection on those objects. For example, if you need all cells of a worksheet to be read-only except for the cells of one column, you can protect the worksheet and then set the `CellFormat` object's `locked` property to `false` on a specific `WorksheetColumn` object. This will allow your users to edit cells within the column while disabling editing of the other cells in the worksheet.
+When protection is set, you can set the `CellFormat` object's `locked` property on individual cells, rows, merged cell regions, or columns to override the worksheet object's protection on those objects. For example, if you need all cells of a worksheet to be read-only except for the cells of one column, you can protect the worksheet and then set the `CellFormat` object's `locked` property to **false** on a specific `WorksheetColumn` object. This will allow your users to edit cells within the column while disabling editing of the other cells in the worksheet.
 
 The following code demonstrates how you can do this:
 
@@ -135,7 +135,7 @@ worksheet.filterSettings.applyAverageFilter(0, AverageFilterType.AboveAverage);
 ## Freezing and Splitting Panes
 You can freeze rows at the top of your worksheet or columns at the left using the freezing panes features. Frozen rows and columns remain visible at all times while the user is scrolling. The frozen rows and columns are separated from the rest of the worksheet by a single, solid line, which cannot be removed.
 
-In order to enable pane freezing, you need to set the `panesAreFrozen` property of the `Worksheet` object's `displayOptions` to `true`. You can then specify the rows or columns to freeze by using the `frozenRows` and `frozenColumns` properties of the display options `frozenPaneSettings`, respectively.
+In order to enable pane freezing, you need to set the `panesAreFrozen` property of the `Worksheet` object's `displayOptions` to **true**. You can then specify the rows or columns to freeze by using the `frozenRows` and `frozenColumns` properties of the display options `frozenPaneSettings`, respectively.
 
 You can also specify the first row in the bottom pane or first column in the right pane using the `firstRowInBottomPane` and `firstColumnInRightPane` properties, respectively.
 

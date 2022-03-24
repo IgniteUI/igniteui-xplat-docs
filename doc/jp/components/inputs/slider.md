@@ -93,7 +93,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 ### Step (ステップ)
 
-`Step` プロパティは、値が順守するスライダーの精度を指定します。デフォルトでは、スライダー トラックは連続して見えます。スライダーの `DiscreteTrack` プロパティを `true` に設定すると、トラックのステップが表示されます。 
+`Step` プロパティは、値が順守するスライダーの精度を指定します。デフォルトでは、スライダー トラックは連続して見えます。スライダーの `DiscreteTrack` プロパティを **true** に設定すると、トラックのステップが表示されます。
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -102,7 +102,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
            github-src="inputs/slider/discrete">
 </code-view>
 
-`Step` プロパティが `0` に設定されている場合、ステッピングは暗黙指定されず、スライダー範囲内の任意の値が許可されます。この場合、`DiscreteTrack` が `true` に設定されていても、スライダーは連続して見えます。
+`Step` プロパティが `0` に設定されている場合、ステッピングは暗黙指定されず、スライダー範囲内の任意の値が許可されます。この場合、`DiscreteTrack` が **true** に設定されていても、スライダーは連続して見えます。
 
 ### Tick Marks (目盛り)
 

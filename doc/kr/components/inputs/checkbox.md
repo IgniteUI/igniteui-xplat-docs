@@ -145,13 +145,13 @@ Use the `checked` attribute to toggle on the checkbox.
 
 <!-- Blazor -->
 
-Use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
+Use the `Indeterminate` property of the component to set the checkbox's value to neither **true** nor **false**.
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-Use the `indeterminate` attribute to set the value of the checkbox to neither `true` nor `false`.
+Use the `indeterminate` attribute to set the value of the checkbox to neither **true** nor **false**.
 
 <!-- end: WebComponents -->
 

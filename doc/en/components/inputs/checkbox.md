@@ -135,7 +135,7 @@ You can use the `Checked` attribute of the component to determine whether the ch
 
 ### Indeterminate
 
-You can use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
+You can use the `Indeterminate` property of the component to set the checkbox's value to neither **true** nor **false**.
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>

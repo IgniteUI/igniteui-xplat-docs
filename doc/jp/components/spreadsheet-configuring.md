@@ -25,7 +25,7 @@ $Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線
 
 ユーザーがセルの値を編集して新しい入力を確認すると、スプレッドシートの構成に応じて、`Spreadsheet` コントロールに `Enter` キーを押すと現在アクティブなセルに隣接するセルに移動できます。
 
-この `Enter` キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを `true` に設定できます。false に設定すると、`Enter` キーを押してもアクティブ セルは変わりません。
+この `Enter` キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを **true** に設定できます。false に設定すると、`Enter` キーを押してもアクティブ セルは変わりません。
 
 Enter キーを押したときに移動する隣接セルの方向は、`EnterKeyNavigationDirection` プロパティを `Down`、`Up`、`Left`、`Right` に設定して構成することもできます。
 

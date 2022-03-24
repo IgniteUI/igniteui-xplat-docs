@@ -208,7 +208,8 @@ npm run build
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
 
-2 - Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
+2 - Add the **index.bundle.js** script to the end of **body** element in **index.html** file.
+
 ```html
 <body>
     <igc-geographic-map id="map" height="500px" width="100%">
@@ -368,7 +369,7 @@ Alternatively, you can manually select a version by following these steps:
 <img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
-> If you are a trial user, you can install the `IgniteUI.Blazor` trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
+> If you are a trial user, you can install the **IgniteUI.Blazor** trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
 
 > [!Note]
 > If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
@@ -466,10 +467,10 @@ Optionally, modules can be registered within razor files at the time the page is
 ```
 
 > [!Note]
-> In this example, we registered the `IgbGeographicMapModule` to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
+> In this example, we registered the **IgbGeographicMapModule** to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
 
 
-3 - Add a namespace to $ProductName$ components in `_Imports.razor` file:
+3 - Add a namespace to $ProductName$ components in **_Imports.razor** file:
 
 ```razor
 @using IgniteUI.Blazor.Controls;

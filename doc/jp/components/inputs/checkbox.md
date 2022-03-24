@@ -136,7 +136,7 @@ defineComponents(IgcCheckboxComponent);
 
 ### 不確定
 
-コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を `true` にも `false` にも設定しません。
+コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を **true** にも **false** にも設定しません。
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>

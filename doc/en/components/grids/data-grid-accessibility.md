@@ -11,11 +11,11 @@ namespace: Infragistics.Controls
 The $ProductName$ Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid.
 
 <!-- React, WebComponents -->
-This is activated by setting the `useAccessibility` property of the grid to `true`.
+This is activated by setting the `useAccessibility` property of the grid to **true**.
 <!-- end: React, WebComponents -->
 
 <!-- Blazor -->
-This is activated by setting `--use-accessibility` property to `true` explicitly in CSS, preferably using a div tag around the grid.
+This is activated by setting `--use-accessibility` property to **true** explicitly in CSS, preferably using a div tag around the grid.
 <!-- end: Blazor -->
 
 ## $Platform$ Grid Accessible Example
@@ -62,7 +62,7 @@ When inspecting the grid's DOM elements the following roles and properties are s
 
 ## Keyboard Navigation
 
-After setting the `useAccessibility` property to `true`, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
+After setting the `useAccessibility` property to **true**, this will enable a range of keyboard navigation options in the data grid that screen readers can recognize. Below is a description of each of the key presses / combinations and the effect they will have relative to the currently activated cell:
 
 Navigating within the Grid
 

@@ -35,12 +35,12 @@ $ProductName$ マップ コントロールには、Shape ファイルをタイ�
 
 ヒートマップ機能を使用する際の地理的タイルシリーズの表示は、`MinimumColor` プロパティと `MaximumColor` プロパティを `HeatTileGenerator` の `Values` プロパティに割り当てるコレクションの最小値と最大値に対応する色を記述する「rgba」文字列に設定することでカスタマイズできます。これをさらにカスタマイズするには、ジェネレーターの `ScaleColors` プロパティを設定して、色を説明する文字列のコレクションを含めます。これにより、`HeatTileGenerator` に、マップに表示される値に使用する色がわかります。`BlurRadius`、`MaxBlurRadius`、`UseBlurRadiusAdjustedForZoom` プロパティを使用して、`ScaleColors` コレクション内の色が一緒にぼやける方法をカスタマイズすることもできます。
 
-`HeatTileGenerator` は対数スケールも使用できます。これを使用する場合は、`UseLogarithmicScale` プロパティを `true` に設定できます。
+`HeatTileGenerator` は対数スケールも使用できます。これを使用する場合は、`UseLogarithmicScale` プロパティを **true** に設定できます。
 
 
 ## Web Worker
 
-また、`HeatTileGenerator` は、Web Worker が、別のスレッドでシェイプ ファイルからタイル イメージをロードする際の重いリフティングをサポートしています。これにより、ヒートマップ機能を使用する際に地理マップのパフォーマンスが大幅に向上します。ジェネレーターでWebワーカーを使用するには、`UseWebWorkers` プロパティを `true` に設定し、`WebWorkerInstance` プロパティを Web Worker のインスタンスに設定できます。
+また、`HeatTileGenerator` は、Web Worker が、別のスレッドでシェイプ ファイルからタイル イメージをロードする際の重いリフティングをサポートしています。これにより、ヒートマップ機能を使用する際に地理マップのパフォーマンスが大幅に向上します。ジェネレーターでWebワーカーを使用するには、`UseWebWorkers` プロパティを **true** に設定し、`WebWorkerInstance` プロパティを Web Worker のインスタンスに設定できます。
 
 <!-- Angular -->
 ```ts

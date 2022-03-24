@@ -29,7 +29,7 @@ $ ProductName$ データ チャートを使用すると、複数のチャート�
 
 チャートのセットを同期する場合は、それらに `SyncChannel` プロパティに同じ名前を割り当ててから、`SynchronizeHorizontally` と `SynchronizeVertically` プロパティを対応するブール値に設定して、チャートを水平または垂直に同期するかどうかを指定できます。
 
-垂直または水平に同期するには、`IsHorizontalZoomEnabled` または `IsVerticalZoomEnabled` プロパティをそれぞれ `true` に設定する必要があります。他のチャートに依存している同期チャートは、このプロパティ設定に関係なく、ズームできます。
+垂直または水平に同期するには、`IsHorizontalZoomEnabled` または `IsVerticalZoomEnabled` プロパティをそれぞれ **true** に設定する必要があります。他のチャートに依存している同期チャートは、このプロパティ設定に関係なく、ズームできます。
 
 ## API メンバー
 
