@@ -1,64 +1,64 @@
 ---
-title: $Platform$ Chip | Infragistics
-_description: Infragistics' $Platform$ Chip component allows you to display content in a predefined style to decorate other components anywhere in an application.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Chip Components, Infragistics
+title: $Platform$ Chip | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
+_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, $Platform$ Chip コンポーネント, インフラジスティックス
 mentionedTypes: ['Chip']
 _language: ja
 ---
 
-# $Platform$ Chip Overview
+# $Platform$ Chip (チップ) の概要
 
-$ProductName$ Chips help people enter information, make selections, filter content, or trigger actions.
+$ProductName$ Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
 
-## $Platform$ Chip Example
+## $Platform$ Chip の例
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="$Platform$ Chip Example"
+           alt="$Platform$ Chip の例"
            github-src="inputs/chip/overview">
 </code-view>
 
 <div class="divider"></div>
 
-## Usage
+## 使用方法
 
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 
-Before using the `Chip`, you need to register it as follows:
+`Chip` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
 defineComponents(IgcChipComponent);
 ```
 
-The simplest way to start using the `Chip` is as follows:
+`Chip` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-chip></igc-chip>
 ```
 
-To display a selectable chip, you can use the `Selectable` property of the chip.
+選択可能な Chip を表示するには、Chip の `Selectable` プロパティを使用できます。
 
 ```html
 <igc-chip selectable></igc-chip>
 ```
 
-To display a removable chip, you can use the `Removable` property of the chip.
+削除可能可能な Chip を表示するには、Chip の `Removable` プロパティを使用できます。
 
 ```html
 <igc-chip removable></igc-chip>
 ```
 
-## Examples
+## コード例
 
-### Variants
+### バリアント
 
-The $ProductName$ chip supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `Primary`, `Info`, `Success`, `Warning`, or `Danger` to the `Variant` property.
+$ProductName$ Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
 
 ```html
 <igc-chip variant="success"></igc-chip>
@@ -67,21 +67,21 @@ The $ProductName$ chip supports several pre-defined stylistic variants. You can 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="$Platform$ Chip Variants Example"
+           alt="$Platform$ Chip バリアントの例"
            github-src="inputs/chip/variants">
 </code-view>
 
-### Disabled
+### 無効
 
-The $ProductName$ chip can be disabled by using the `Disabled` property.
+$ProductName$ Chip は、`Disabled` プロパティを使用して無効にできます。
 
 ```html
 <igc-chip disabled></igc-chip>
 ```
 
-### Prefix / Suffix
+### Prefix / Suffix (プレフィックス / サフィックス)
 
-With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we can add different content before and after the main content of the chip. We provide default select and remove icons but you can customize them using the `Select` and `Remove` slots. You can add additional content before or after the main content, using the `Start` and `End` slots
+`Chip` コンポーネントの `Prefix` と `Suffix` の部分とそれらのスロットを使用して、Chip のメイン コンテンツの前後に異なるコンテンツを追加できます。デフォルトの選択アイコンと削除アイコンが用意されていますが、`Select` スロットと `Remove` スロットを使用してカスタマイズできます。`Start` スロットと `End` スロットを使用して、メイン コンテンツの前後にコンテンツを追加できます。
 
 ```html
 <igc-chip selectable removable>
@@ -100,9 +100,9 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
            github-src="inputs/chip/multiple">
 </code-view>
 
-## Size
+## Size (サイズ)
 
-We allow the user to choose the size of the `Chip` by using its `Size` property.
+`Size` プロパティを使用して、ユーザーが `Chip` のサイズを選択できるようにします。
 
 ```html
 <igc-chip size="small" selectable removable>Chip</igc-chip>
@@ -117,9 +117,9 @@ We allow the user to choose the size of the `Chip` by using its `Size` property.
            github-src="inputs/chip/size">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The chip component exposes a `Base`, `Prefix`, `Sufix` parts and several slots that can be used to change all of its style properties.
+Chip コンポーネントは、`Base`、`Prefix`、`Sufix` 部分、およびすべてのスタイル プロパティを変更するために使用できるいくつかのスロットを公開します。
 
 ```css
 igc-chip::part(base) {
@@ -135,23 +135,23 @@ igc-chip::part(suffix) {
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="$Platform$ Chip Styling Example"
+           alt="$Platform$ Chip スタイル設定の例"
            github-src="inputs/chip/styling">
 </code-view>
 
 
-## API Reference
+## API リファレンス
 
 * `Chip`
 
 
 <div class="divider--half"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

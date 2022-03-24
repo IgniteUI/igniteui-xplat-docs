@@ -13,7 +13,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for DV related controls eg. (charts, excel, spreadsheet, maps)
+> このトピックでは、DV 関連のコントロール (チャート、Excel、スプレッドシート、マップ) の変更についてのみ説明します。
 > Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
@@ -25,14 +25,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
 > [!NOTE]
-> This breaking changes was introduce in the grid package.
+> この重大な変更は、グリッド パッケージで導入されました。
 
-> `ValueField` property is now a string for ease of use. 
-> * Changed `ValueChanged` event to `SelectedValueChanged`
-> * Changed `TextChanged` event to `TextValueChanged`
+> `ValueField` プロパティは、使いやすいように文字列になりました。
+> * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+> * `TextChanged` イベントを `TextValueChanged` に変更しました。
 
-> The following change were made to the input package
-> * Changed `ValueChanged` event to `SelectedValueChanged`
+> 入力パッケージに次の変更が加えられました:
+> * `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->
 
