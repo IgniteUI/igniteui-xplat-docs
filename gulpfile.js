@@ -735,20 +735,21 @@ function verifyMarkdown(cb) {
     gulp.src([
     'doc/en/**/*.md',
     'doc/jp/**/*.md',
-    //'doc/kr/**/*.md',
+    'doc/kr/**/*.md',
     //'doc/kr/**/chart-legends.md',
+    // 'doc/en/**/zoomslider*.md',
     '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
-        // console.log('verifying code viewer in: ' + filePath);
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
-        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // console.log('verifying: ' + filePath);
         filesCount++;
-        //errorsCount += transformer.verifyCodeViewer(fileContent, filePath);
         var result = transformer.verifyMetadata(fileContent, filePath);
         if (result.isValid) {
-            fileContent = result.fileContent;
+            // console.log('verified:  ' + filePath);
+            // fileContent = result.fileContent;
             //file.contents = Buffer.from(fileContent);
             // auto-update topics with corrections if any
             //fs.writeFileSync(filePath, fileContent);
@@ -763,7 +764,7 @@ function verifyMarkdown(cb) {
             if (cb) cb(new Error(msg)); else console.log(msg);
             // if (cb) cb(msg); else console.log(msg);
         } else {
-            var msg = 'verifying .md ' + filesCount + ' files ... done';
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
             console.log(msg);
             if (cb) cb();
         }
