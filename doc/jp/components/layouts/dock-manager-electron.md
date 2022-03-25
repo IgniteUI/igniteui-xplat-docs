@@ -20,7 +20,7 @@ alt="$Platform$ ドック マネージャー デスクトップ統合"/>
 ### プロジェクト構造
 
 [Electron Forge](https://www.electronforge.io/) CLI ツールとその [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) テンプレートを使用して、Electron アプリケーションを作成しました。Electron には、メインとレンダラーの 2 種類のプロセスがあります。
-- メイン プロセスは、`BrowserWindow` インスタンスを作成することによって Web ページを作成します。各 `BrowserWindow` インスタンスは、レンダラー プロセスで Web ページを実行します。
+- メイン プロセスは、**BrowserWindow** インスタンスを作成することによって Web ページを作成します。各 **BrowserWindow** インスタンスは、レンダラー プロセスで Web ページを実行します。
 - レンダラー プロセスは、対応する Web ページのみを管理します。
 
 **index.ts** スクリプトは、メイン プロセスを実行する Electron アプリケーションのエントリ ポイントを指定します。アプリケーションのコードのほとんどは、レンダラー プロセスで実行される **renderer.ts** ファイル内にあります。**index.html** は、Web ページのコンテンツを表します。Web ページのスタイルは、**index.css** ファイルでホストされます。
@@ -33,7 +33,7 @@ alt="$Platform$ ドック マネージャー デスクトップ統合"/>
 
 ### ドラッグ アンド ドロップ
 
-ブラウザー/アプリケーション ウィンドウの外側でのペインのドラッグをサポートするために、ブラウザー内のフローティング ペインを作成する組み込みのドラッグアンドドロップを、[HTML ドラッグアンドドロップ API](https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API) に基づくカスタム実装に置き換えました。ヘッダー要素が DOM に接続されたときに発生する [`paneHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) イベントと [`tabHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) イベントにサブスクライブしました。ヘッダー要素が接続されると、組み込みの [`dragService`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) をリセットし、`dragstart`/`dragend` イベント リスナーをアタッチします。
+ブラウザー/アプリケーション ウィンドウの外側でのペインのドラッグをサポートするために、ブラウザー内のフローティング ペインを作成する組み込みのドラッグアンドドロップを、[HTML ドラッグアンドドロップ API](https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API) に基づくカスタム実装に置き換えました。ヘッダー要素が DOM に接続されたときに発生する [`paneHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) イベントと [`tabHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) イベントにサブスクライブしました。ヘッダー要素が接続されると、組み込みの [`dragService`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) をリセットし、`dragstart` および `dragend` イベント リスナーをアタッチします。
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
