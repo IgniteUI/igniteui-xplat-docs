@@ -36,12 +36,12 @@ The `HeatTileGenerator` object works such that it has three value paths, `XValue
 
 The display of the geographic tile series when using the heat-map functionality can be customized by setting the `MinimumColor` and `MaximumColor` properties to "rgba" strings that describe colors that you wish to correspond to the minimum and maximum values of the collection that you assign to the `Values` property of the `HeatTileGenerator.` You can further customize this by setting the `ScaleColors` property of the generator to contain a collection of strings that describe colors, as this will tell the `HeatTileGenerator` what colors to use for the displayed values in the map. It is also possible to customize how colors in your `ScaleColors` collection blur together by using the `BlurRadius`, `MaxBlurRadius`, and `UseBlurRadiusAdjustedForZoom` properties.
 
-The `HeatTileGenerator` can also use a logarithmic scale. If you want to use this, you can set the `UseLogarithmicScale` property to `true`.
+The `HeatTileGenerator` can also use a logarithmic scale. If you want to use this, you can set the `UseLogarithmicScale` property to **true**.
 
 
 ## Web Worker
 
-The `HeatTileGenerator` also has support for web workers to do the heavy lifting of the loading of the tile imagery from your shape file on a separate thread. This can greatly improve the performance of your geographic map when using the heat-map functionality. In order to use a web worker with the generator, you can set the `UseWebWorkers` property to `true` and then set the `WebWorkerInstance` property to an instance of your web worker.
+The `HeatTileGenerator` also has support for web workers to do the heavy lifting of the loading of the tile imagery from your shape file on a separate thread. This can greatly improve the performance of your geographic map when using the heat-map functionality. In order to use a web worker with the generator, you can set the `UseWebWorkers` property to **true** and then set the `WebWorkerInstance` property to an instance of your web worker.
 
 <!-- Angular -->
 ```ts

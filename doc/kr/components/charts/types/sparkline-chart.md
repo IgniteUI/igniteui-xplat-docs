@@ -2,6 +2,7 @@
 title: $Platform$ Sparkline | Data Visualization Tools | Infragistics
 _description: Use Infragistics' $Platform$ sparkline chart control to render in a small scale layout such as a grid cell or stand alone. Learn about the $ProductName$ sparkline chart configurable elements!
 _keywords: Sparkline, $ProductName$, Infragistics, WinLoss, Area, Column
+_language: kr
 mentionedTypes: ["XamSparkline", "SparklineDisplayType", "TrendLineType"]
 ---
 
@@ -17,7 +18,7 @@ The following example shows all the different sparkline types available. The typ
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
            github-src="charts/sparkline/display-types"
            alt="$Platform$ Sparkline Example" >
 </code-view>
@@ -67,7 +68,7 @@ The $Platform$ Sparkline supports the following types of sparklines by setting t
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types" 
+           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
            github-src="charts/sparkline/display-types"
            alt="$Platform$ Sparkline Example" >
 </code-view>

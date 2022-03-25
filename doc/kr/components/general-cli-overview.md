@@ -28,7 +28,7 @@ To create an application that is configured to use the $ProductName$ controls us
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
 </pre>
 
-Using the above template, if you wanted to create a `React` application named "My Project" targeting ES6, you could write the following command:
+Using the above template, if you wanted to create a **React** application named "My Project" targeting ES6, you could write the following command:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig new "My Project" --framework=react --type=igr-es6

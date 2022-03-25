@@ -2,6 +2,7 @@
 title: $Platform$ Bar Chart and Graph | $ProductName$
 _description: $Platform$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
 _keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
 # $Platform$ Bar Chart

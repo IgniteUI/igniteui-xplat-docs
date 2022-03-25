@@ -25,7 +25,7 @@ The `Spreadsheet` allows the user to configure many different aspects of the con
 
 When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the `Enter` key, depending on the configuration of the spreadsheet.
 
-In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to `true`. If set to false, the active cell will stay the same when pressing the `Enter` key.
+In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the `Enter` key.
 
 You can also configure the direction of the adjacent cell navigated to on press of the `Enter` key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
 

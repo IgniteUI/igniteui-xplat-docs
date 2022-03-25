@@ -2,6 +2,7 @@
 title: $Platform$ Chart API | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart provides useful API to configure and styles chart visuals
 _keywords: $Platform$ charts, chart API, API, $ProductName$, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart"]
 namespace: Infragistics.Controls.Charts
 ---

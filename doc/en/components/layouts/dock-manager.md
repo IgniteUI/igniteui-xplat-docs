@@ -2,6 +2,7 @@
 title: $Platform$ Dock Manager | Layout Controls | Infragistics
 _description: Use Infragistics' $Platform$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, $ProductName$, Infragistics
+mentionedTypes: ['DockManager']
 ---
 # $Platform$ Dock Manager Overview
 
@@ -39,7 +40,7 @@ To install the Dock Manager package execute the following command:
 npm install --save {PackageDockManager}
 </pre>
 
-Then it is necessary to import and call the `defineCustomElements()` function:
+Then it is necessary to import and call the **defineCustomElements()** function:
 
 ```ts
 import { defineCustomElements } from 'igniteui-dockmanager/loader';
@@ -85,7 +86,7 @@ this.dockManager.layout = {
 };
 ```
 
-To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [`slot`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [`contentId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to `100%` for predictable response when the end-user is resizing panes.
+To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [`slot`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [`contentId`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to **100%** for predictable response when the end-user is resizing panes.
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -142,7 +143,7 @@ const contentPane: IgcContentPane = {
 }
 ```
 
-When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its [`isPinned`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) property to `false`.
+When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its [`isPinned`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) property to **false**.
 
 ```ts
 const contentPane = {
@@ -163,7 +164,7 @@ When defining a content pane, you can set the [`documentOnly`]({environment:infr
 
 To restrict the user interaction with the content pane and its content, you can set the [`disabled`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#disabled) property to true. This will prevent all user interactions with the pane unless it is a single floating pane. The latter could be moved, maximized or closed (according to the pane's settings for maximizing and closing), so the user can have a look at the elements under it but will not be able to interact with its content.
 
-By default, when you close a pane it gets removed from the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object you can use the [`hidden`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) property of the content pane. Setting the property to `true` will hide it from the UI, but it will remain in the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. In order to override the default close behavior you can subscribe to the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event like this:
+By default, when you close a pane it gets removed from the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object you can use the [`hidden`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) property of the content pane. Setting the property to **true** will hide it from the UI, but it will remain in the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. In order to override the default close behavior you can subscribe to the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event like this:
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => {
@@ -292,7 +293,7 @@ const layout: IgcDockManagerLayout = {
 The [`floatingLocation`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [`floatingWidth`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [`floatingHeight`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [`floatingPanes`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
 
 With the [`floatingResizable`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) and
-[`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) you can set whether resizing floating panes is allowed. The `allowFloatingPanesResize` is an **IgcDockManagerComponent** property, so if the value is set to `false` none of the floating panes can be resized. The `floatingResizable` property can be applied separately on each split pane in the `floatingPanes` array and if the property value is not set, it defaults to the value of the `allowFloatingPanesResize` property. If the `floatingResizable` property is set for a specific pane, its value takes precedence over the `allowFloatingPanesResize` property value.
+[`allowFloatingPanesResize`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) you can set whether resizing floating panes is allowed. The `allowFloatingPanesResize` is an **IgcDockManagerComponent** property, so if the value is set to **false** none of the floating panes can be resized. The `floatingResizable` property can be applied separately on each split pane in the `floatingPanes` array and if the property value is not set, it defaults to the value of the `allowFloatingPanesResize` property. If the `floatingResizable` property is set for a specific pane, its value takes precedence over the `allowFloatingPanesResize` property value.
 
 ### Active Pane
 
@@ -404,7 +405,7 @@ Practice all of the above mentioned actions in the sample [`demo`](dock-manager.
 
 ## Styling
 
-The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components `parts` that can be targeted with the `::part` CSS selector.
+The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components **parts** that can be targeted with the **::part** CSS selector.
 
 ```css
 igc-dockmanager::part(content-pane) {
@@ -460,7 +461,7 @@ Part name | Description
 
 ### Themes
 
-The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the `igc.themes.css` file in your css and add the `dark-theme` class to the Dock Manager or any of its parents:
+The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the **igc.themes.css** file in your css and add the **dark-theme** class to the Dock Manager or any of its parents:
 
 ```
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';

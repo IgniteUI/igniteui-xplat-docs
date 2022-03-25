@@ -2,6 +2,7 @@
 title: $Platform$ Shape Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Shape Chart
 _keywords: $Platform$ Charts, Shape Chart, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
 ---
 # $Platform$ Shape Charts

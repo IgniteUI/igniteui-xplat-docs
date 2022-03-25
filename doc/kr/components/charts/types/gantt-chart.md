@@ -2,6 +2,7 @@
 title: $Platform$ Gantt Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Gantt Chart
 _keywords: $Platform$ Charts, Gantt Chart, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart"]
 ---
 # $Platform$ Gantt Chart

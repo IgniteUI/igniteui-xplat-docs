@@ -2,6 +2,7 @@
 title: $Platform$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Gridlines
 _keywords: $Platform$ Axis, Gridlines, Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart"]
 ---
 

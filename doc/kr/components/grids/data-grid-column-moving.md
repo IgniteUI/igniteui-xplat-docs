@@ -2,6 +2,8 @@
 title: $Platform$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
 _description: The $ProductName$ Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
 _keywords: grid, table, $ProductName$, Infragistics
+_language: kr
+mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
 # $Platform$ Column Moving

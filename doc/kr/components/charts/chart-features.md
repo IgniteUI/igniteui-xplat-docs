@@ -2,6 +2,7 @@
 title: $Platform$ Chart Features | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Features
 _keywords: $Platform$ Charts, Features, Infragistics
+_language: kr
 mentionedTypes: []
 ---
 # $Platform$ Chart Features

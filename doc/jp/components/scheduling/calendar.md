@@ -113,7 +113,7 @@ Calendar コンポーネントを使用すると、日、月、年の 3 つの�
 
 ### ヘッダー オプション
 
-デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを `false` に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
+デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを **false** に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
 
 > [!NOTE]
 > `Selection` が複数に設定されている場合、Calendar ヘッダーが描画されないことに注意してください。
@@ -283,7 +283,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 `VisibleMonths` プロパティを使用すると、Calendar が `days` ビューのときに 1 か月以上表示できます。複数の月が表示されている場合は、`Orientation` プロパティを使用して、月を垂直方向にスタックするか水平方向にスタックするかを構成できます。デフォルトでは、`Orientation` プロパティは `horizontal` に設定されています。
 
-Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`HideOutsideDays` プロパティを `true` に設定するか、対応するブール属性 `HideOutsideDays` を使用します。
+Calendar には、前月と翌月の前後の日付が表示されます。これらの日付を非表示にするには、`HideOutsideDays` プロパティを **true** に設定するか、対応するブール属性 `HideOutsideDays` を使用します。
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>

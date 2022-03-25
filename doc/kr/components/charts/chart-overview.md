@@ -2,6 +2,7 @@
 title: $Platform$ Charts & Graphs Library | $ProductName$
 _description: $ProductName$ Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: $Platform$ Charts, Chart, Infragistics
+_language: kr
 ---
 # $Platform$ Charts & Graphs Overview
 

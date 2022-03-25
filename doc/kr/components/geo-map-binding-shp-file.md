@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Geographic Shape Files | Infr
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files. View the demo, dependencies, usage and toolbar for more information.
 _keywords: map, $ProductName$, Infragistics
 _language: kr
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
 # $Platform$ Binding Shape Files with Geo-spatial Data
