@@ -26,7 +26,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### データ グリッド
 
-- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+- ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
 <!-- end: React, WebComponents -->
 
@@ -35,18 +35,18 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor, React, WebComponents -->
 
 > [!NOTE]
-> The following breaking changes were introduced
+> 以下の重大な変更が導入されました:
 
 ### データ グリッド
 
-- Changed `ValueField` property from type string[] to string. 
+- `ValueField` プロパティを string[] 型から string に変更しました。
 
 ### 日付選択 
-- Changed ValueChanged event to `SelectedValueChanged`.
+- ValueChanged イベントを `SelectedValueChanged` に変更しました。
 
 ### 複数列コンボ ボックス
-- Changed `TextChanged` event to `TextValueChanged`.
-- Changed `ValueChanged` event to `SelectedValueChanged`.
+- `TextChanged` イベントを `TextValueChanged` に変更しました。
+- `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->
 
@@ -54,7 +54,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- Blazor -->
 
-- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+- 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
 <!-- end: Blazor -->
 
