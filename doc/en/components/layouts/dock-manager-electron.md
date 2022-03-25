@@ -2,6 +2,7 @@
 title: $Platform$ Dock Manager | Desktop Integration | Infragistics
 _description: Use Infragistics' $Platform$ dock manager component to manage the layout of multi-window Electron desktop application. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, $ProductName$, Infragistics
+mentionedTypes: ['DockManager']
 ---
 # $Platform$ Dock Manager Desktop Integration
 
@@ -18,20 +19,20 @@ Let's go through the most important parts of the implementation of this applicat
 ### Project Structure
 
 We have used the [Electron Forge](https://www.electronforge.io/) CLI tool and its [Typescript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) template to create an Electron application. Electron has two types of processes: Main and Renderer.
-- The Main process creates web pages by creating `BrowserWindow` instances. Each `BrowserWindow` instance runs the web page in its Renderer process.
+- The Main process creates web pages by creating **BrowserWindow** instances. Each **BrowserWindow** instance runs the web page in its Renderer process.
 - The Renderer process manages only the corresponding web page.
 
-The `index.ts` script specifies the entry point of the Electron application that will run the Main process. Most of the code of our application is inside the `renderer.ts` file which runs in the Renderer process. The `index.html` represents the content of the web page. The styles of the web page are hosted in the `index.css` file.
+The **index.ts** script specifies the entry point of the Electron application that will run the Main process. Most of the code of our application is inside the **renderer.ts** file which runs in the Renderer process. The **index.html** represents the content of the web page. The styles of the web page are hosted in the **index.css** file.
 
 ### Dock Manager Setup
 
-After installing the Dock Manager package, we have registered the Dock Manager component using the `defineCustomElements()` in the `renderer.ts` file. This allows to add the `<igc-dockmanager>` in the `index.html` file.
+After installing the Dock Manager package, we have registered the Dock Manager component using the **defineCustomElements()** in the **renderer.ts** file. This allows to add the **<igc-dockmanager>** in the **index.html** file.
 
-For the Dock Manager pane contents we have used `iframe` elements which host different urls. In our case these urls point to [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) samples. Since the `iframe` elements are self-contained, moving them from one window to another is easily accomplished.
+For the Dock Manager pane contents we have used **iframe** elements which host different urls. In our case these urls point to [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) samples. Since the **iframe** elements are self-contained, moving them from one window to another is easily accomplished.
 
 ### Drag and drop
 
-In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the [`paneHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) and [`tabHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in [`dragService`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) and attach `dragstart`/`dragend` event listeners.
+In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the [`paneHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) and [`tabHeaderConnected`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in [`dragService`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) and attach `dragstart` and `dragend` event listeners.
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
@@ -92,7 +93,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-When the pane header is dropped inside a document we call the [`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns `true`. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
+When the pane header is dropped inside a document we call the [`dropPane`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns **true**. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -102,7 +103,7 @@ const handleDocumentDrop = async (event: DragEvent) => {
 
     if (docked) {
         const contentElement = dockManager.querySelector('[slot=' + contentId + ']');
-        
+
         // if the content element is missing from the current dock manager it means it comes from another window
         if (!contentElement) {
             await droppedInAnotherWindow();
@@ -131,7 +132,7 @@ newDockManager.appendChild(adoptedNode);
 
 ### Window Management
 
-We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to `true` when creating the `BrowserWindow` in the `index.ts`. This gives us direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
+We are using the native [`window.open()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method to open a new window in the Renderer process. We set the `nativeWindowOpen` option to **true** when creating the `BrowserWindow` in the **index.ts**. This gives us direct access to the child `Window` object and its `document`. You could read more about opening windows from the Renderer process in this Electron [topic](https://www.electronjs.org/docs/api/window-open). Please note that the `nativeWindowOpen` option is still experimental.
 
 ```ts
 mainWindow = new BrowserWindow({

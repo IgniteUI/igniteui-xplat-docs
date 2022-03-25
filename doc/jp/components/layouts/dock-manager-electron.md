@@ -3,6 +3,7 @@ title: $Platform$ ドック マネージャー | デスクトップ統合 | イ�
 _description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、複数ウィンドウの Electron デスクトップ アプリケーションのレイアウトを管理します。$ProductName$ ドック マネージャーのチュートリアルを是非お試しください!
 _keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
+mentionedTypes: ['DockManager']
 ---
 # $Platform$ ドック マネージャー デスクトップ統合
 
@@ -22,13 +23,13 @@ alt="$Platform$ ドック マネージャー デスクトップ統合"/>
 - メイン プロセスは、`BrowserWindow` インスタンスを作成することによって Web ページを作成します。各 `BrowserWindow` インスタンスは、レンダラー プロセスで Web ページを実行します。
 - レンダラー プロセスは、対応する Web ページのみを管理します。
 
-`index.ts` スクリプトは、メイン プロセスを実行する Electron アプリケーションのエントリ ポイントを指定します。アプリケーションのコードのほとんどは、レンダラー プロセスで実行される `renderer.ts` ファイル内にあります。`index.html` は、Web ページのコンテンツを表します。Web ページのスタイルは、`index.css` ファイルでホストされます。
+**index.ts** スクリプトは、メイン プロセスを実行する Electron アプリケーションのエントリ ポイントを指定します。アプリケーションのコードのほとんどは、レンダラー プロセスで実行される **renderer.ts** ファイル内にあります。**index.html** は、Web ページのコンテンツを表します。Web ページのスタイルは、**index.css** ファイルでホストされます。
 
 ### ドック マネージャーのセットアップ
 
-ドック マネージャー パッケージをインストールした後、`renderer.ts` ファイルの `defineCustomElements()` を使用してドック マネージャー コンポーネントを登録しました。これにより、`index.html` ファイルに `<igc-dockmanager>` を追加できます。
+ドック マネージャー パッケージをインストールした後、**renderer.ts** ファイルの **defineCustomElements()** を使用してドック マネージャー コンポーネントを登録しました。これにより、**index.html** ファイルに **<igc-dockmanager>** を追加できます。
 
-ドック マネージャー ペインのコンテンツには、さまざまな URL をホストする `iframe` 要素を使用しました。この場合、これらの URL は [Ignite UI for Angular](https://jp.infragistics.com/products/ignite-ui-angular) のサンプルを指しています。`iframe` 要素は自己完結型であるため、あるウィンドウから別のウィンドウに簡単に移動できます。
+ドック マネージャー ペインのコンテンツには、さまざまな URL をホストする **iframe** 要素を使用しました。この場合、これらの URL は [Ignite UI for Angular](https://jp.infragistics.com/products/ignite-ui-angular) のサンプルを指しています。**iframe** 要素は自己完結型であるため、あるウィンドウから別のウィンドウに簡単に移動できます。
 
 ### ドラッグ アンド ドロップ
 
@@ -93,7 +94,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-ペイン ヘッダーがドキュメント内にドロップされると、[`dropPane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) メソッドが呼び出され、ドラッグされたペインがドロップされたことをドック マネージャーに通知します。ペインがドッキング インジケーターにドロップされた場合、メソッドは `true` を返します。ペインがドラッグ元と同じウィンドウにドロップされた場合、ペインは自動的に新しい位置にドッキングされます。ただし、別のウィンドウにドロップされた場合は、`droppedInAnotherWindow` 関数を呼び出します。この関数は、最初にソースのドック マネージャーからペインを削除してから、新しいペインに追加します。
+ペイン ヘッダーがドキュメント内にドロップされると、[`dropPane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) メソッドが呼び出され、ドラッグされたペインがドロップされたことをドック マネージャーに通知します。ペインがドッキング インジケーターにドロップされた場合、メソッドは **true** を返します。ペインがドラッグ元と同じウィンドウにドロップされた場合、ペインは自動的に新しい位置にドッキングされます。ただし、別のウィンドウにドロップされた場合は、`droppedInAnotherWindow` 関数を呼び出します。この関数は、最初にソースのドック マネージャーからペインを削除してから、新しいペインに追加します。
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -132,7 +133,7 @@ newDockManager.appendChild(adoptedNode);
 
 ### ウィンドウ管理
 
-ネイティブの [`window.open()`](https://developer.mozilla.org/ja-JP/docs/Web/API/Window/open) メソッドを使用して、レンダラー プロセスで新しいウィンドウを開きます。`index.ts` に `BrowserWindow` を作成するときに、`nativeWindowOpen` オプションを `true` に設定します。これにより、子 `Window` オブジェクトとその `document` に直接アクセスできます。この Electron [トピック](https://www.electronjs.org/docs/api/window-open)で、レンダラー プロセスからウィンドウを開く方法について詳しく読むことができます。`nativeWindowOpen` オプションはまだ実験段階であることに注意してください。
+ネイティブの [`window.open()`](https://developer.mozilla.org/ja-JP/docs/Web/API/Window/open) メソッドを使用して、レンダラー プロセスで新しいウィンドウを開きます。**index.ts** に `BrowserWindow` を作成するときに、`nativeWindowOpen` オプションを **true** に設定します。これにより、子 `Window` オブジェクトとその `document` に直接アクセスできます。この Electron [トピック](https://www.electronjs.org/docs/api/window-open)で、レンダラー プロセスからウィンドウを開く方法について詳しく読むことができます。`nativeWindowOpen` オプションはまだ実験段階であることに注意してください。
 
 ```ts
 mainWindow = new BrowserWindow({

@@ -1284,6 +1284,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Circular Progress",
     "href": "circular-progress.md",
+     "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Chip {ReleaseStatus_WebsInputs}",
+    "href": "inputs/chip.md",
     "status": "NEW"
   },
   {
@@ -1355,6 +1361,23 @@
     "name": "Zoom Slider",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Notifications",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "Snackbar {ReleaseStatus_WebsInputs}",
+    "href": "notifications/snackbar.md",
+    "status": "NEW"
+  },
+  {
+     "exclude": ["Angular", "Blazor", "React"],
+     "name": "Toast {ReleaseStatus_WebsInputs}",
+     "href": "notifications/toast.md",
+     "status": "NEW"
   },
   {
     "exclude": ["Angular"],

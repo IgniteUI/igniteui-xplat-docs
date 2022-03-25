@@ -1175,7 +1175,7 @@ export class MarkdownTransformer {
             // }
 
             //fileContent = md.toString();
-            //console.log("metadata: \n" + meta);
+            // console.log("metadata: \n" + md.metadata);
 
             //var meta = md.metadata.toString();
             if (!md.metadata.hasTitle())
@@ -1184,10 +1184,23 @@ export class MarkdownTransformer {
                 console.log("ERROR: missing metadata '_description:' in " + filePath);
             else if (!md.metadata.hasKeywords())
                 console.log("ERROR: missing metadata '_keywords:' in " + filePath);
-            else if (!md.metadata.hasLanguage() && filePath.indexOf('\\en\\') < 0)
+            else if (!md.metadata.hasLanguage() && !md.isLocalEN())
                 console.log("ERROR: missing metadata '_language:' in " + filePath);
+            else if (md.metadata.hasMentionedLinks())
+            {
+                if (!md.metadata.hasMentionedTypes())
+                    console.log("ERROR: missing metadata 'mentionedTypes:' in " + filePath);
+                else if (md.metadata.mentionedLinks.includes("`true`"))
+                    console.log("ERROR: replace `true` with **true** in " + filePath);
+                else if (md.metadata.mentionedLinks.includes("`false`"))
+                    console.log("ERROR: replace `false` with **false** in " + filePath);
+                else
+                    mdValidated = true;
+            }
             else
+            {
                 mdValidated = true;
+            }
         } else {
             console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
         }
@@ -1505,6 +1518,44 @@ export class MarkdownTransformer {
     }
 }
 
+export class Strings {
+
+    public static endsWith(str: string, pattern: string): boolean {
+        return str.endsWith(pattern);
+    }
+
+    public static excludes(str: string, exclusions: string[], useEndsWith?: boolean): boolean {
+        for (const exclusion of exclusions) {
+            if (useEndsWith) {
+                if (str.endsWith(exclusion)) { return false; }
+            } else {
+                if (str.includes(exclusion)) { return false; }
+            }
+        }
+        return true;
+    }
+
+    public static includes(str: string, pattern: string): boolean {
+        return str.includes(pattern);
+    }
+
+    public static replace(orgStr: string, oldStr: string, newStr: string): string {
+        return orgStr.split(oldStr).join(newStr);
+    }
+
+    public static toTitleCase(str: string, separator?: string) {
+        if (separator === undefined) { separator = ' '; }
+        return str.toLowerCase().split(separator).map(function(word) {
+          return (word.charAt(0).toUpperCase() + word.slice(1));
+        }).join(separator);
+    }
+
+    public static splitCamel(orgStr: string): string {
+        return orgStr.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
+    }
+
+}
+
 export class TocNode {
     public name: string;
     public status?: string;
@@ -1526,10 +1577,11 @@ class MarkdownContent {
     public content: string = '';
     public filePath: string = '';
     public sectionStrings: string[];
+    public apiMembers: string[] = [];
 
-    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0; }
-    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0; }
-    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0; }
+    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0 || this.filePath.indexOf('/en/') >= 0; }
+    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0 || this.filePath.indexOf('/jp/') >= 0; }
+    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0 || this.filePath.indexOf('/kr/') >= 0; }
 
     public toString() {
         var str = '';
@@ -1551,6 +1603,15 @@ class MarkdownContent {
 
         if (content === undefined) return;
 
+        var words = content.split(' ');
+        for (const word of words) {
+            if (word.indexOf("```") >= 0) continue;
+
+            if (word.startsWith("`") && word.endsWith("`"))
+                this.apiMembers.push(word);
+        }
+        this.apiMembers = this.apiMembers.filter((v, i, a) => a.indexOf(v) === i);
+
         var parts = content.split('---');
         if (parts === undefined) return;
 
@@ -1563,6 +1624,7 @@ class MarkdownContent {
             this.sectionStrings = parts[0].split('\n## ');
         } else { // metadata found
             this.metadata = new MarkdownMetadata(parts[1]);
+            this.metadata.mentionedLinks = this.apiMembers;
             this.sectionStrings = parts[2].split('\n## ');
         }
         // console.log("parts: " + parts.length);
@@ -1637,6 +1699,7 @@ class MarkdownMetadata  {
     public content: string = '';
     public lines: MarkdownLine[] = [];
     public mentionedTypes: string = '';
+    public mentionedLinks: string[] = [];
     public title: string = '';
     public keywords: string = '';
     public description: string = '';
@@ -1644,17 +1707,20 @@ class MarkdownMetadata  {
 
     public isEmpty() { return this.content === ""; }
     public hasContent() { return this.content !== ""; }
-    public hasMentions() { return this.mentionedTypes !== ""; }
+    public hasMentionedTypes() { return this.mentionedTypes !== ""; }
+    public hasMentionedLinks() { return this.mentionedLinks.length > 0; }
     public hasTitle() { return this.title.indexOf('title:') >= 0; }
     public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
     public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
     public hasDescription() { return this.description.indexOf('_description:') >= 0; }
+
     public toString() {
         var str: string = this.title + '\n';
         if (this.hasDescription()) str += this.description + '\n';
         if (this.hasLanguage()) str += this.language + '\n';
         if (this.hasKeywords()) str += this.keywords + '\n';
-        if (this.hasMentions()) str += this.mentionedTypes + '\n';
+        if (this.hasMentionedLinks()) str += this.mentionedLinks.length + '\n';
+        if (this.hasMentionedTypes()) str += this.mentionedTypes + '\n';
         return str;
     }
 
@@ -1665,11 +1731,12 @@ class MarkdownMetadata  {
         var lines = content.split('\n');
         for (const line of lines) {
             this.lines.push(new MarkdownLine(line.trim()));
-            if (line.indexOf('title:') >= 0) this.title = line.trim();
-            if (line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
-            if (line.indexOf('_language:') >= 0) this.language = line.trim();
-            if (line.indexOf('_description:') >= 0) this.description = line.trim();
-            if (line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
+            // find metadata lines while ignoring any commented out lines
+            if (line.indexOf('#') !== 0 && line.indexOf('title:') >= 0) this.title = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_language:') >= 0) this.language = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
         }
     }
 

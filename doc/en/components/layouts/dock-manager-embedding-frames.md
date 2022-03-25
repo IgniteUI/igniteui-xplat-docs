@@ -2,6 +2,7 @@
 title: $Platform$ Dock Manager | Embed Frames | Infragistics
 _description: Use Infragistics' $Platform$ dock manager to embed interactive content using panes. View $ProductName$ dock manager tutorials!
 _keywords: dock manager, embed frames, $ProductName$, Infragistics
+mentionedTypes: ['DockManager']
 ---
 # $Platform$ Embedding Frames in Dock Manager
 

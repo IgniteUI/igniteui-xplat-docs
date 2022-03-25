@@ -2,6 +2,7 @@
 title: $Platform$ Scatter Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Scatter Chart
 _keywords: $Platform$ Charts, Scatter Chart, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "ScatterSeries", "ScatterLineSeries", "ScatterSplineSeries", "HighDensityScatterSeries", "ScatterAreaSeries", "ScatterContourSeries"]
 ---
 # $Platform$ Scatter Charts

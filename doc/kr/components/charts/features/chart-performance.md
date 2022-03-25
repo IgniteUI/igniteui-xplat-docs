@@ -2,6 +2,7 @@
 title: $Platform$ Chart Performance | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Performance
 _keywords: $Platform$ Charts, Performance, Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
 ---
 

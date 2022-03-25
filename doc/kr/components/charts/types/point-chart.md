@@ -2,6 +2,7 @@
 title: $Platform$ Point Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Point Chart
 _keywords: $Platform$ Charts, Point Chart, Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart", "ChartType", "Legend"]
 ---
 # $Platform$ Point Chart

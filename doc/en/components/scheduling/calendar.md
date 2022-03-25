@@ -39,6 +39,16 @@ Before using the `Calendar`, you need to register it as follows:
 IgbCalendarModule.Register(IgniteUIBlazor);
 ```
 
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 
@@ -102,7 +112,7 @@ The Calendar component allows you to switch between three different views: days,
 
 ### Header Options
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
+By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to **false**. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
 
 > [!NOTE]
 > Please note that the Calendar header is not rendered when the `Selection` is set to multiple.
@@ -272,7 +282,7 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 Using the `VisibleMonths` property, you can display more than one month when the Calendar is in `days` view. When multiple months are displayed, you can configure whether you want to stack them vertically or horizontally by using the `Orientation` property. By default, the `Orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to `true` or using its corresponding boolean attribute `HideOutsideDays`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to **true** or using its corresponding boolean attribute `HideOutsideDays`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>

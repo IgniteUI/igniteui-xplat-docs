@@ -100,7 +100,6 @@
   { "originalName":"MoneyFlowIndexIndicator",
     "names":[{"platform":"WebComponents","fileName":"igc-money-flow-index-indicator-component.ts","dynamicModuleName":"igc-money-flow-index-indicator-dynamic-module.ts","moduleName":"igc-money-flow-index-indicator-module.ts","mappedName":"IgcMoneyFlowIndexIndicatorComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFinancialIndicator"}],"originalName":"IsFinancialIndicator"},
     { "names":[{"platform":"WebComponents","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"MovingAverageConvergenceDivergenceIndicator",

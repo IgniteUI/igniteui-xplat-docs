@@ -2,6 +2,7 @@
 title: $Platform$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Layouts
 _keywords: $Platform$ Axis, Layouts, Location, Position, Gap, Overlap, Infragistics
+_language: kr
 mentionedTypes: [ "CategoryChart", "XamDataChart" ]
 ---
 

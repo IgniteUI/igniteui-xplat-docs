@@ -2,6 +2,7 @@
 title: $Platform$ Pie Charts and Graphs | $ProductName$
 _description: The $ProductName$ pie chart is a specialized UI control that renders a pie chart, consisting of a circular area divided into sections.  Try for FREE.
 _keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation
+_language: kr
 mentionedTypes: ["XamPieChart", "XamDataChart"]
 ---
 # $Platform$ Pie Chart

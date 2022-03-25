@@ -3,6 +3,7 @@ title: $Platform$ Map | Data Visualization Tools | Map Navigation | Infragistics
 _description: The Map allows you to navigate using geographic coordinates or relative window coordinates.
 _keywords: map, $ProductName$, Infragistics
 _language: kr
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
 # $Platform$ Navigating Map Content

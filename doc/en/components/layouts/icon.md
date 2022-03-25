@@ -35,6 +35,16 @@ Before using the `Icon`, you need to register it as follows:
 IgbIconModule.Register(IgniteUIBlazor);
 ```
 
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Icon` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 ```ts
 import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
 

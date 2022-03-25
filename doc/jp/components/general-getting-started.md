@@ -209,7 +209,8 @@ npm run build
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
-2 - **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
+2 - **index.bundle.js** スクリプトを **index.html** の。
+
 ```html
 <body>
     <igc-geographic-map id="map" height="500px" width="100%">
@@ -369,7 +370,7 @@ dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 <img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
-> トライアル版をお使いの場合、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial) にある `IgniteUI.Blazor` トライアル版 NuGet パッケージをインストールできます。
+> トライアル版をお使いの場合、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial) にある **IgniteUI.Blazor** トライアル版 NuGet パッケージをインストールできます。
 
 > [!Note]
 > Infragistics パッケージソースがない場合、追加するには [Infragistics NuGet フィード トピック](./general-nuget-feed.md)を参照してください。
@@ -391,6 +392,31 @@ dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
+
+入力コントロールのいずれかを使用している場合は、リンクする必要がある追加の CSS ファイルがあります。上記のスクリプトと同じファイル内の次のコードを使用して、この CSS ファイルをリンクできます:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+この追加の CSS ファイルが適用されるコントロールのリストは次のとおりです:
+
+- [Avatar](layouts/avatar.md)
+- [Badge](inputs/badge.md)
+- [Button](inputs/button.md)
+- [Card](layouts/card.md)
+- [Calendar](scheduling/calendar.md)
+- [Checkbox](inputs/checkbox.md)
+- [Form](inputs/form.md)
+- [Icon](layouts/icon.md)
+- [Icon Button](inputs/icon-button.md)
+- [Input](inputs/input.md)
+- [List](grids/list.md)
+- [NavBar](menus/navbar.md)
+- [Navigation Drawer](menus/navigation-drawer.md)
+- [Radio & Radio Group](inputs/radio.md)
+- [Ripple](inputs/ripple.md)
+- [Switch](inputs/switch.md)
 
 2 - Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
@@ -442,10 +468,10 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 > [!Note]
-> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `IgbGeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
+> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために **IgbGeographicMapModule** を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
 
 
-3 - `_Imports.razor` ファイルの $ProductName$ コンポーネントに名前空間を追加します。
+3 - **_Imports.razor** ファイルの $ProductName$ コンポーネントに名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls;

@@ -208,7 +208,8 @@ npm run build
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
 
-2 - Add the **index.bundle.js** script to the body of **index.html** after the `igc-spreadsheet`.
+2 - Add the **index.bundle.js** script to the end of **body** element in **index.html** file.
+
 ```html
 <body>
     <igc-geographic-map id="map" height="500px" width="100%">
@@ -368,7 +369,7 @@ Alternatively, you can manually select a version by following these steps:
 <img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
-> If you are a trial user, you can install the `IgniteUI.Blazor` trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
+> If you are a trial user, you can install the **IgniteUI.Blazor** trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
 
 > [!Note]
 > If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
@@ -390,6 +391,31 @@ In **Blazor Server** project - change **Pages/_Host.cshtml** file:
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
+
+There is an additional CSS file that you will need to link if you are using any of the input controls. You can link this CSS file using the following code in the same file as the scripts mentioned above:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+The list of controls this additional CSS file applies to is as follows:
+
+- [Avatar](layouts/avatar.md)
+- [Badge](inputs/badge.md)
+- [Button](inputs/button.md)
+- [Card](layouts/card.md)
+- [Calendar](scheduling/calendar.md)
+- [Checkbox](inputs/checkbox.md)
+- [Form](inputs/form.md)
+- [Icon](layouts/icon.md)
+- [Icon Button](inputs/icon-button.md)
+- [Input](inputs/input.md)
+- [List](grids/list.md)
+- [NavBar](menus/navbar.md)
+- [Navigation Drawer](menus/navigation-drawer.md)
+- [Radio & Radio Group](inputs/radio.md)
+- [Ripple](inputs/ripple.md)
+- [Switch](inputs/switch.md)
 
 2 - Register service modules for IgniteUI Blazor components:
 
@@ -441,10 +467,10 @@ Optionally, modules can be registered within razor files at the time the page is
 ```
 
 > [!Note]
-> In this example, we registered the `IgbGeographicMapModule` to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
+> In this example, we registered the **IgbGeographicMapModule** to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
 
 
-3 - Add a namespace to $ProductName$ components in `_Imports.razor` file:
+3 - Add a namespace to $ProductName$ components in **_Imports.razor** file:
 
 ```razor
 @using IgniteUI.Blazor.Controls;

@@ -2,6 +2,7 @@
 title: $Platform$ Dock Manager | Updating Panes | Infragistics
 _description: Use Infragistics' $Platform$ dock manager control to create interactive content using panes that can update based on actions. Check out $ProductName$ dock manager tutorials!
 _keywords: dock manager, layout, updating panes, $ProductName$
+mentionedTypes: ['DockManager']
 ---
 # $Platform$ Updating Panes in Dock Manager
 

@@ -2,20 +2,60 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ Changelog (Data Visualization)
-
+# $ProductName$ Changelog
 
 All notable changes for each version of $ProductName$ are documented on this page.
 
 <!-- Angular -->
 
 > [!NOTE]
+> This topic discusses changes only for DV related controls eg. (charts, excel, spreadsheet, maps)
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
+
+<div class="divider--half"></div>
+
+## **$Platform$ {PackageVerChanges-21-2.1}**
+
+<!-- React, WebComponents -->
+
+### Data Grid
+
+- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+<!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
+> [!NOTE]
+> The following breaking changes were introduced
+
+### Data Grid
+
+- Changed `ValueField` property from type string[] to string. 
+
+### Date Picker 
+- Changed ValueChanged event to `SelectedValueChanged`.
+
+### Multi-Column ComboBox
+- Changed `TextChanged` event to `TextValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
+
+<!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+
+- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
@@ -157,8 +197,8 @@ Old brushes/outlines | New outline/brushes
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
 * Breaking Changes:
-    - Changed grid's `SummaryScope` property's type to `SummaryScope` from `DataSourceSummaryScope`
-    - Changed `GroupHeaderDisplayMode` property's type to `GroupHeaderDisplayMode` from DataSourceSectionHeaderDisplayMode
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 <!-- end: Blazor, React, WebComponents -->
 

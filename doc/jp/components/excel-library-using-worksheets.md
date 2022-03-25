@@ -96,7 +96,7 @@ worksheet.DisplayOptions.ShowRowAndColumnHeaders = false;
 ```
 
 ## ワークシートの編集を設定
-デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、`false` に設定した場合はワークシートの編集を防止します。
+デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、**false** に設定した場合はワークシートの編集を防止します。
 
 以下のコードは、ワークシートで編集を無効にする方法を示します。
 
@@ -116,7 +116,7 @@ worksheet.Protect();
 
 `Worksheet` オブジェクトの `Protect` メソッドを使用して構造変更からワークシートを保護できます。
 
-保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を `false` に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
+保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を **false** に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
 
 以下のコードはその方法を示します。
 
@@ -177,7 +177,7 @@ worksheet.FilterSettings.ApplyAverageFilter(0, Documents.Excel.Filtering.Average
 ## ペインの固定と分割
 ペイン固定機能は、行をワークシートの上または列を左にで固定できます。ユーザーがスクロールしている間、固定した行や列は表示されたままになります。固定された行列は、削除できない実線によってワークシートの残りの部分と区切られます。
 
-ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを `true` に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
+ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを **true** に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
 
 また `FirstRowInBottomPane` と `FirstColumnInRightPane` を個々に使用して下ペインの最初の行または右ペインの最初の列を指定できます。
 

@@ -2,6 +2,7 @@
 title: $Platform$ Axis Options | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Options
 _keywords: $Platform$ Axis, Options, Title, Labels, Range Infragistics
+_language: kr
 mentionedTypes: ["CategoryChart"]
 ---
 
