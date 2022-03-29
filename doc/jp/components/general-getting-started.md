@@ -209,7 +209,7 @@ npm run build
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
-2 - **index.bundle.js** スクリプトを **index.html** の。
+2 - **index.html** ファイルの **body** 要素の最後に **index.bundle.js** スクリプトを追加します。
 
 ```html
 <body>

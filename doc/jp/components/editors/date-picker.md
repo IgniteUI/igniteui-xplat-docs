@@ -13,7 +13,7 @@ _language: ja
 
 このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
-<code-view style="height: 300px"
+<code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
            alt="$Platform$ 日付選択の例"
@@ -101,7 +101,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 
 次の例は、`DatePicker` で選択した日付を制限する方法を示しています。
 
-<code-view style="height: 300px"
+<code-view style="height: 360px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
            alt="$Platform$ Date Picker 日付制限の例"
@@ -114,7 +114,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 
 次の例は、`DatePicker` で長い日付を適用する方法を示しています。
 
-<code-view style="height: 300px"
+<code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
            alt="$Platform$ Date Picker 書式の例"

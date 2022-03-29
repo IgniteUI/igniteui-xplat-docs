@@ -3,20 +3,60 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ 変更ログ (データ可視化)
-
+# $ProductName$ 変更ログ
 
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Angular -->
 
 > [!NOTE]
+> このトピックでは、DV 関連のコントロール (チャート、Excel、スプレッドシート、マップ) の変更についてのみ説明します。
 > Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
+
+<div class="divider--half"></div>
+
+## **$Platform$ {PackageVerChanges-21-2.1}**
+
+<!-- React, WebComponents -->
+
+### データ グリッド
+
+- ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
+
+<!-- end: React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor, React, WebComponents -->
+
+> [!NOTE]
+> 以下の重大な変更が導入されました:
+
+### データ グリッド
+
+- `ValueField` プロパティを string[] 型から string に変更しました。
+
+### 日付選択 
+- ValueChanged イベントを `SelectedValueChanged` に変更しました。
+
+### 複数列コンボ ボックス
+- `TextChanged` イベントを `TextValueChanged` に変更しました。
+- `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+
+<!-- end: Blazor, React, WebComponents -->
+
+<div class="divider--half"></div>
+
+<!-- Blazor -->
+
+- 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 
@@ -157,8 +197,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択の相互作用の変化を検出するために使用されます。
 * 重大な変更:
-    - グリッドの `SummaryScope` プロパティのタイプを `DataSourceSummaryScope` から `SummaryScope` に変更しました。
-    - `GroupHeaderDisplayMode` プロパティのタイプを DataSourceSectionHeaderDisplayMode から `GroupHeaderDisplayMode` に変更しました。
+    - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+    - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 <!-- end: Blazor, React, WebComponents -->
 

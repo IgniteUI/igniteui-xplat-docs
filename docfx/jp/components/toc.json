@@ -1282,6 +1282,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "チップ {ReleaseStatus_WebsInputs}",
+    "href": "inputs/chip.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "フォーム {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
@@ -1343,6 +1349,23 @@
     "name": "ズーム スライダー",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "通知",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "Blazor", "React"],
+    "name": "スナックバー {ReleaseStatus_WebsInputs}",
+    "href": "notifications/snackbar.md",
+    "status": "NEW"
+  },
+  {
+     "exclude": ["Angular", "Blazor", "React"],
+     "name": "トースト {ReleaseStatus_WebsInputs}",
+     "href": "notifications/toast.md",
+     "status": "NEW"
   },
   {
     "exclude": ["Angular"],
