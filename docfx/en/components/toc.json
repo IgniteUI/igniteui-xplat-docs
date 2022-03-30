@@ -37,6 +37,7 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": ""
