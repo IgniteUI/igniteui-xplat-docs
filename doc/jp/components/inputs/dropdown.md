@@ -1,36 +1,36 @@
 ---
-title: $Platform$ Drop Down Component | $ProductName$
-_description: Add interactivity and see styling options to a scrollable list of items in your app. Get started using the Drop Down Component in $ProductName$ now.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Drop Down Component, Infragistics
+title: $Platform$ Drop Down コンポーネント | $ProductName$
+_description: インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示します。今すぐ $ProductName$ のドロップダウン コンポーネントの使用を開始しましょう。
+_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ ドロップダウン コンポーネント, インフラジスティックス
 mentionedTypes: ['DropDown', 'DropDownItem', 'DropDownHeader', 'DropDownGroup']
 _language: ja
 ---
 
-# $Platform$ Drop Down Overview
+# $Platform$ Drop Down (ドロップダウン) の概要
 
 
-The $Platform$ Drop Down is a component, which displays a toggleable list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a drop down menu or you can simply use it to deliver more useful visual information by grouping data. With grouping you can use both flat and hierarchical data.
+$Platform$ ドロップダウンは、事前定義された値の切り替え可能なリストを表示し、ユーザーがクリックするだけで単一のオプション項目を簡単に選択できるようにするコンポーネントです。ドロップダウン メニューとして機能するようにすばやく構成することも、データをグループ化することでより有用な視覚情報を提供するために使用することもできます。グループ化を使用すると、フラット データと階層データの両方を使用できます。
 
-## $Platform$ Drop Down Example
+## $Platform$ Drop Down の例
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
-           alt="$Platform$ Drop Down Example"
+           alt="$Platform$ Drop Down の例"
            github-src="inputs/dropdown/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `DropDown`, you need to register it as follows:
+`DropDown` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbDropDownModule.Register(IgniteUIBlazor);
@@ -48,7 +48,7 @@ import {
 defineComponents(IgcDropDownComponent, IgcDropDownItemComponent, IgcDropDownHeaderComponent, IgcDropDownGroupComponent);
 ```
 
-The simplest way to start using the `DropDown` is as follows:
+`DropDown` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-dropdown>
@@ -59,87 +59,87 @@ The simplest way to start using the `DropDown` is as follows:
 </igc-dropdown>
 ```
 
-### Target
+### Target (ターゲット)
 
-The Drop Down list is positioned relatively to its target. The `target` slot allows you to provide a built-in component which toggles the `open` property on click. In some cases you would want to use an external target or use another event to toggle the opening of the Drop Down. You can achieve this using the `Show`, `Hide` and `Toggle` methods which allow you to provide the target as a parameter. By default, the Drop Down list uses `absolute` CSS position. You will need to set the `PositionStrategy` of the Drop Down to `fixed` when the target element is inside a fixed container, but the Drop Down is not. The Drop Down list is automatically sized based on its content, if you want the list to have the same width as the target, you should set the `SameWidth` property to `true`.
+ドロップダウン リストは、ターゲットに対して相対的に配置されます。`target` スロットを使用すると、クリック時に `open` プロパティを切り替える組み込みコンポーネントを提供できます。場合によっては、外部ターゲットを使用するか、別のイベントを使用してドロップダウンの開始を切り替えることができます。これは、ターゲットをパラメーターとして提供できる `Show`、`Hide`、および `Toggle` メソッドを使用して実現できます。デフォルトでは、ドロップダウン リストは CSS の `absolute` 位置を使用します。ターゲット要素が固定コンテナー内にあるが、ドロップダウンがそうではない場合、ドロップダウンの `PositionStrategy` を `fixed` に設定する必要があります。ドロップダウン リストは、その内容に基づいて自動的にサイズ変更されます。リストの幅をターゲットと同じにする場合は、`SameWidth` プロパティを `true` に設定する必要があります。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-target"
-           alt="$Platform$ Drop Down Target Example"
+           alt="$Platform$ Drop Down Target の例"
            github-src="inputs/dropdown/target">
 </code-view>
 
-### Position
+### 位置
 
 The preferred placement of the Drop Down can be set using the `Placement` property. The default placement of the Drop Down is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Drop Down at the specified placement. The distance from the Drop Down list to its target can be specified using the `Distance` property.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
-           alt="$Platform$ Drop Down Position Example"
+           alt="$Platform$ Drop Down Position の例"
            github-src="inputs/dropdown/position">
 </code-view>
 
-### Selection
+### 選択
 
-The `DropDown` emits the `igcChange` event when the user selects an item. The `Select` method of the Drop Down allows you to select an item by its index or value.
+ユーザーが項目を選択すると、`DropDown` は `igcChange` イベントを発行します。ドロップダウンの `Select` メソッドを使用すると、インデックスまたは値で項目を選択できます。
 
-### Item
+### Item (項目)
 
-The `DropDownItem` represents a selectable item in the Drop Down list. You could predefine a selected item by setting the `Selected` property. You could also disable an item so that it can't be selected using the `Disabled` property. The `DropDownItem` has a default slot which allows you to specify the content of the item. You could also provide custom content to be rendered before or after the content using the `prefix` and `suffix` slots. The `Value` property allows you to provide a custom value to an item. If the `Value` is not set, it resolves to the text content of the item.
+`DropDownItem` は、ドロップダウン リストで選択可能な項目を表します。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、項目を無効にして選択できないようにすることもできます。`DropDownItem` には、項目のコンテンツを指定できるデフォルトのスロットがあります。`prefix` スロットと `suffix` スロットを使用して、コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Value` プロパティを使用すると、項目にカスタム値を提供できます。`Value` が設定されていない場合は、項目のテキスト コンテンツに解決されます。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
-           alt="$Platform$ Drop Down Item Example"
+           alt="$Platform$ Drop Down Item の例"
            github-src="inputs/dropdown/item">
 </code-view>
 
-### Header
+### Header (ヘッダー)
 
 You could use the `DropDownHeader` to provide a header for a group of items.
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-header"
-           alt="$Platform$ Drop Down Header Example"
+           alt="$Platform$ Drop Down Header の例"
            github-src="inputs/dropdown/header">
 </code-view>
 
-### Group
+### Group (グループ)
 
-The Drop Down items can also be grouped using the `DropDownGroup`, making it easier for users to differentiate separate categories.
+ドロップダウン項目は、`DropDownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
-           alt="$Platform$ Drop Down Group Example"
+           alt="$Platform$ Drop Down Group の例"
            github-src="inputs/dropdown/group">
 </code-view>
 
-### Scroll Strategy
+### Scroll Strategy (スクロール方法)
 
-The `ScrollStrategy` property determines the behavior of the component during scrolling the container of the target element. The default value is `scroll` which means that the Drop Down will be scrolled with its target. Setting the property to `block` will block the scrolling if the Drop Down is opened. You could also set the property to `close` which means that the Drop Down will be closed automatically on scroll.
+`ScrollStrategy` プロパティは、ターゲット要素のコンテナーをスクロールする際のコンポーネントの動作を決定します。デフォルト値は `scroll` です。これは、ドロップダウンがターゲットとともにスクロールされることを意味します。プロパティを `block` に設定すると、ドロップダウンが開いている場合にスクロールがブロックされます。プロパティを `close` ように設定することもできます。これは、スクロール時にドロップダウンが自動的に閉じられることを意味します。
 
-### Keep Open
+### Keep Open (開いたままにする)
 
-By default, the Drop Down is closed automatically when the user clicks outside of it or selects an item. You could prevent this behavior using the `KeepOpenOnOutsideClick` and `KeepOpenOnSelect` properties.
+デフォルトでは、ユーザーがドロップダウンの外側をクリックするか項目を選択すると、ドロップダウンは自動的に閉じられます。`KeepOpenOnOutsideClick` プロパティと `KeepOpenOnSelect` プロパティを使用して、この動作を防ぐことができます。
 
-## Styling
+## スタイル設定
 
-You can change the appearance of the Drop Down and its items, by using the exposed CSS parts. The `DropDown` exposes `base` and `list` parts, the `DropDownItem` exposes `prefix`, `content` and `suffix` parts and the `DropDownGroup` exposes `label` part.
+公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`DropDown` は `base` 部分と `list` 部分を公開し、`DropDownItem` は `prefix`、 `content`、`suffix` 部分を公開し、`DropDownGroup` は `label` 部分を公開します。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
-           alt="$Platform$ Drop Down Styling Example"
+           alt="$Platform$ Drop Down Styling の例"
            github-src="inputs/dropdown/styling">
 </code-view>
 
 <!-- WebComponents -->
 
-## API Reference
+## API リファレンス
 
 * `DropDown`
 * `DropDownItem`
@@ -148,18 +148,18 @@ You can change the appearance of the Drop Down and its items, by using the expos
 
 <!-- end: WebComponents -->
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
