@@ -72,7 +72,7 @@ defineComponents(IgcDropDownComponent, IgcDropDownItemComponent, IgcDropDownHead
 
 ### 位置
 
-The preferred placement of the Drop Down can be set using the `Placement` property. The default placement of the Drop Down is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Drop Down at the specified placement. The distance from the Drop Down list to its target can be specified using the `Distance` property.
+ドロップダウンの優先配置は、`Placement` プロパティを使用して設定できます。ドロップダウンのデフォルトの配置は `bottom-start` です。`Flip` プロパティは、指定された配置でドロップダウンを表示するのに十分なスペースがない場合に配置を反転するかどうかを決定します。ドロップダウン リストからそのターゲットまでの距離は、`Distance` プロパティを使用して指定できます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -98,7 +98,7 @@ The preferred placement of the Drop Down can be set using the `Placement` proper
 
 ### Header (ヘッダー)
 
-You could use the `DropDownHeader` to provide a header for a group of items.
+`DropDownHeader` を使用して、項目のグループのヘッダーを提供できます。
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
