@@ -1288,6 +1288,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "ドロップダウン {ReleaseStatus_WebsInputs}",
+    "href": "inputs/dropdown.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "フォーム {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md",
     "status": "NEW"
