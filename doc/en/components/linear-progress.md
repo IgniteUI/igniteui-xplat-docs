@@ -48,6 +48,10 @@ The simplest way to start using the `LinearProgress` is as follows:
 
 You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
+```html
+<igc-linear-progress value="100" variant="success"></igc-linear-progress>
+```
+
 ### Striped Progress
 
 You can make the indicator striped, using the `striped` property:
@@ -68,6 +72,10 @@ If you want to track a process that is not determined precisely, you can set the
 ### Animation Duration
 
 The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+
+```html
+<igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
+```
 
 ### Text Properties
 
@@ -103,29 +111,8 @@ You can dynamically change the value of the progress indicator by using external
 
 ## Styling
 
-The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements:
-
-|Name|Description|
-|--|--|
-| track | The progress ring's track area. |
-| fill | The progress indicator area. |
-| striped | The progress striped indicator. |
-| label | The progress indicator label. |
-| value | The progress label value. |
-| indeterminate | The progress indeterminate state. |
-| primary | The progress indicator primary state. |
-| danger | The progress indicator error state. |
-| warning | The progress indicator warning state. |
-| info | The progress indicator info state. |
-| success | The progress indicator success state. |
-| top | The progress label position. |
-| top-start | The progress label position. |
-| top-end | The progress label position. |
-| bottom | The progress label position. |
-| bottom-start | The progress label position. |
-| bottom-end | The progress label position. |
-
-Using these CSS parts we can customize thе appearance of the Linear Progress Indicator component like this:
+The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
+Using them we can customize thе appearance of the indicator like this:
 
 ```css
 igc-linear-progress::part(track){
@@ -147,6 +134,29 @@ igc-linear-progress::part(label){
            alt="$Platform$ Linear Progress Styling"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
+
+The following table lists all CSS parts exposed by the Linear Progress:
+
+|Name|Description|
+|--|--|
+| track | The progress ring's track area. |
+| fill | The progress indicator area. |
+| striped | The progress striped indicator. |
+| label | The progress indicator label. |
+| value | The progress label value. |
+| indeterminate | The progress indeterminate state. |
+| primary | The progress indicator primary state. |
+| danger | The progress indicator error state. |
+| warning | The progress indicator warning state. |
+| info | The progress indicator info state. |
+| success | The progress indicator success state. |
+| top | The progress label position. |
+| top-start | The progress label position. |
+| top-end | The progress label position. |
+| bottom | The progress label position. |
+| bottom-start | The progress label position. |
+| bottom-end | The progress label position. |
+
 
 <!-- WebComponents -->
 

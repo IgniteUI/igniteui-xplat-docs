@@ -48,6 +48,11 @@ The simplest way to start using the `CircularProgress` is as follows:
 
 You can set the type of your indicator, using the  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
+
+```html
+<igc-circular-progress value="100" variant="success"></igc-circular-progress>
+```
+
 ### Indeterminate Progress
 
 If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
@@ -69,6 +74,11 @@ The following sample demonstrates the above configuration:
 ### Animation Duration
 
 The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+
+
+```html
+<igc-circular-progress animation-duration="5000" indeterminate></igc-circular-progress>
+```
 
 ### Gradient Progress
 
@@ -100,25 +110,11 @@ Using the steps above, you could create a custom dynamic progress indicator with
 
 ## Styling
 
-The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements:
+The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
-|Name|Description|
-|--|--|
-| svg                | The progress SVG element.                 |
-| gradient_start     | The progress linear-gradient start color. |
-| gradient_end       | The progress linear-gradient end color.   |
-| track              | The progress ring's track area.           |
-| fill               | The progress indicator area.              |
-| label              | The progress label.                       |
-| value              | The progress label value.                 |
-| indeterminate      | The progress indeterminate state.         |
-| primary            | The progress indicator primary state.     |
-| danger             | The progress indicator error state.       |
-| warning            | The progress indicator warning state.     |
-| info               | The progress indicator info state.        |
-| success            | The progress indicator success state.     |
 
-Using these CSS parts we can customize thе appearance of the Circular Progress Indicator component like this:
+
+Using them we can customize thе appearance of the Circular Progress Indicator component like this:
 
 ```css
 igc-circular-progress::part(gradient_end),
@@ -137,6 +133,24 @@ igc-circular-progress::part(track){
            alt="$Platform$ Circular Progress Styling"
            github-src="inputs/circular-progress-indicator/styling">
 </code-view>
+
+The following table lists all CSS parts exposed by the Circular Progress:
+
+|Name|Description|
+|--|--|
+| svg                | The progress SVG element.                 |
+| gradient_start     | The progress linear-gradient start color. |
+| gradient_end       | The progress linear-gradient end color.   |
+| track              | The progress ring's track area.           |
+| fill               | The progress indicator area.              |
+| label              | The progress label.                       |
+| value              | The progress label value.                 |
+| indeterminate      | The progress indeterminate state.         |
+| primary            | The progress indicator primary state.     |
+| danger             | The progress indicator error state.       |
+| warning            | The progress indicator warning state.     |
+| info               | The progress indicator info state.        |
+| success            | The progress indicator success state.     |
 
 <!-- WebComponents -->
 
