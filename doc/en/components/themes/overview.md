@@ -2,6 +2,7 @@
 title: $Platform$ Styling and Themes | $Platform$ Theming | Theme Switching | Infragistics
 _description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
 _keywords: $ProductName$, Infragistics, Themes, Styling
+mentionedTypes: ["ConfigureTheme"]
 ---
 
 # Themes in $ProductName$

@@ -60,7 +60,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-## **$Platform$ 2.0.0**
+## **$Platform$ 2.0.0 (Non-Core)**
 
 ### New Components & Themes
 
