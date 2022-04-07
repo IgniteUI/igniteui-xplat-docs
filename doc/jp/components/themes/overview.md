@@ -1,39 +1,39 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Theming | Theme Switching | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Themes, Styling
+title: $Platform$ スタイル設定およびテーマ | $Platform$ テーマ化 | テーマの切り替え | インフラジスティックス
+_description: インフラジスティックスの $Platform$ コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとストリーミングのファイナンシャルおよびビジネスと チャートを使用して、データの視覚化を改善します。
+_keywords: $ProductName$, インフラジスティックス, テーマ, スタイル設定
 _language: ja
 ---
 
-# Themes in $ProductName$
+# $ProductName$ のテーマ
 
-$ProductName$ ships with four distinct themes - Bootstrap, Material, Fluent, and Indigo. All component themes are baked into the components, however, a global style file is required for palettes, typography, and other global configurations to work.
+$ProductName$ には、Bootstrap、Material、Fluent、Indigo の 4 つの異なるテーマが付属しています。すべてのコンポーネント テーマはコンポーネントに組み込まれていますが、パレット、タイポグラフィ、およびその他のグローバル構成を機能させるには、グローバル スタイル ファイルが必要です。
 
-## Loading a Theme 
+## テーマの読み込み
 
-To enable a theme, a theme file should be loaded. Depending on your project configuration you can either `import` or `link`.
+テーマを有効にするには、テーマ ファイルを読み込む必要があります。プロジェクトの構成に応じて、`インポート`または`リンク`することができます。
 
-Here's the complete list of all bundled themes and their path:
+バンドルされているすべてのテーマとそのパスの完全なリストは次のとおりです:
 
-| Name        | Variant | Location                                          |
+| 名前        | バリアント | 場所                                        |
 | ----------- | ------- | ------------------------------------------------- |
-| Bootstrap   | Light   | igniteui-webcomponents/themes/light/bootstrap.css |
-| Material    | Light   | igniteui-webcomponents/themes/light/material.css  |
-| Fluent      | Light   | igniteui-webcomponents/themes/light/fluent.css    |
-| Indigo      | Light   | igniteui-webcomponents/themes/light/indigo.css    |
-| Bootstrap   | Dark    | igniteui-webcomponents/themes/dark/bootstrap.css  |
-| Material    | Dark    | igniteui-webcomponents/themes/dark/material.css   |
-| Fluent      | Dark    | igniteui-webcomponents/themes/dark/fluent.css     |
-| Indigo      | Dark    | igniteui-webcomponents/themes/dark/indigo.css     |
+| Bootstrap   | ライト   | igniteui-webcomponents/themes/light/bootstrap.css |
+| Material    | ライト   | igniteui-webcomponents/themes/light/material.css  |
+| Fluent      | ライト   | igniteui-webcomponents/themes/light/fluent.css    |
+| Indigo      | ライト   | igniteui-webcomponents/themes/light/indigo.css    |
+| Bootstrap   | ダーク    | igniteui-webcomponents/themes/dark/bootstrap.css  |
+| Material    | ダーク    | igniteui-webcomponents/themes/dark/material.css   |
+| Fluent      | ダーク    | igniteui-webcomponents/themes/dark/fluent.css     |
+| Indigo      | ダーク    | igniteui-webcomponents/themes/dark/indigo.css     |
 
 
-## Runtime Theme Switching
+## ランタイム テーマの切り替え
 
-> [!NOTE] Changing the theme at runtime also requires you to replace the global stylesheet from the table above.
+> [!NOTE] ランタイムにテーマを変更するには、上の表のグローバル スタイルシートも置き換える必要があります。
 
-$ProductName$ allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
+$ProductName$ を使用すると、ライブラリによってエクスポートされた `ConfigureTheme` 関数を使用して、実行時にコンポーネントのテーマを切り替えることができます。
 
-Calling it and passing one of the four valid themes - bootstrap, material, fluent, or indigo as a string will change the loaded component styles;
+それを呼び出して、4 つの有効なテーマ (bootstrap、material、fluent、または indigo) のいずれかを文字列として渡すと、読み込まれたコンポーネントのスタイルが変更されます。
 
 ```ts
 import { configureTheme } from "igniteui-webcomponents";
