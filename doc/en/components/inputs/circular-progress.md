@@ -117,19 +117,6 @@ The $ProductName$ Circular Procress Indicator component exposes CSS parts for al
            github-src="inputs/circular-progress-indicator/styling">
 </code-view>
 
-Using CSS parts, you can customize thе appearance of the Circular Progress Indicator component like this:
-
-```css
-igc-circular-progress::part(gradient_end),
-igc-circular-progress::part(gradient_start){
-    stop-color: #72da67;
-}
-
-igc-circular-progress::part(track){
-    stroke: rgb(216, 211, 211);
-}
-```
-
 The following table lists all CSS parts exposed by the Circular Progress:
 
 |Name|Description|

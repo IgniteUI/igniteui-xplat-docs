@@ -112,21 +112,6 @@ You can dynamically change the value of the progress indicator by using external
 ## Styling
 
 The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
-Using them we can customize thе appearance of the indicator like this:
-
-```css
-igc-linear-progress::part(track){
-    background-color: #D3D3D3;
-}
-
-igc-linear-progress::part(fill){
-    background-color: #ECAA53;
-}
-
-igc-linear-progress::part(label){
-    color: #ECAA53;
-}
-```
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -156,7 +141,6 @@ The following table lists all CSS parts exposed by the Linear Progress:
 | bottom | The progress label position. |
 | bottom-start | The progress label position. |
 | bottom-end | The progress label position. |
-
 
 <!-- WebComponents -->
 
