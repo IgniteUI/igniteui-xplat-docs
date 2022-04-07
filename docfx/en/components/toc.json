@@ -1283,7 +1283,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Circular Progress",
-    "href": "circular-progress.md",
+    "href": "inputs/circular-progress.md",
      "status": "NEW"
   },
   {
@@ -1313,7 +1313,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Linear Progress",
-    "href": "linear-progress.md",
+    "href": "inputs/linear-progress.md",
     "status": "NEW"
   },
   {
