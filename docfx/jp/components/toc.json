@@ -32,6 +32,17 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スタイル設定およびとテーマ",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "概要",
+    "href": "themes/overview.md",
+    "status": ""
+  },
+  {
     "exclude": ["Angular"],
     "name": "レイアウト",
     "header": true
