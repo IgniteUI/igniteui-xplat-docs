@@ -73,7 +73,7 @@ The following sample demonstrates the above configuration:
 
 ### Animation Duration
 
-The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+The `animationDuration` property is used to specify how long the animation cycle should take in milliseconds.
 
 
 ```html
@@ -83,6 +83,13 @@ The `animationDuration` property is used to specify how long the animation cycle
 ### Gradient Progress
 
 Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops. 
+
+<code-view style="height: 200px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
+           alt="$Platform$ Circular Progress Dynamic Example"
+           github-src="inputs/circular-progress-indicator/dynamic">
+</code-view>
 
 >[!NOTE]
 >For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
@@ -97,24 +104,20 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 ```
 <!-- end: WebComponents -->
 
-Using the steps above, you could create a custom dynamic progress indicator with gradient color:
-
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
-           alt="$Platform$ Circular Progress Dynamic Example"
-           github-src="inputs/circular-progress-indicator/dynamic">
-</code-view>
-
 <div class="divider--half"></div>
 
 ## Styling
 
 The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
+           alt="$Platform$ Circular Progress Styling"
+           github-src="inputs/circular-progress-indicator/styling">
+</code-view>
 
-
-Using them we can customize thе appearance of the Circular Progress Indicator component like this:
+Using CSS parts, you can customize thе appearance of the Circular Progress Indicator component like this:
 
 ```css
 igc-circular-progress::part(gradient_end),
@@ -126,13 +129,6 @@ igc-circular-progress::part(track){
     stroke: rgb(216, 211, 211);
 }
 ```
-
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
-           alt="$Platform$ Circular Progress Styling"
-           github-src="inputs/circular-progress-indicator/styling">
-</code-view>
 
 The following table lists all CSS parts exposed by the Circular Progress:
 
