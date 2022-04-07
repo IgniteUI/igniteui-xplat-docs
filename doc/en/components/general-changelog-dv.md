@@ -12,7 +12,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for DV related controls eg. (charts, excel, spreadsheet, maps)
+> This topic discusses changes only for Angular Daa Visualization related controls eg. (charts, excel, spreadsheet, maps)
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
@@ -60,28 +60,29 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-## **$Platform$ 2.0.0 (Non-Core)**
+## **$Platform$ 2.0.0**
 
 ### New Components & Themes
 
-* Dark Themes
-    - As a consequence of adding dark themes, the theme path has changed from `igniteui-webcomponents/themes/bootstrap.css` to either `igniteui-webcomponents/themes/light/bootstrap.css` or `igniteui-webcomponents/themes/dark/bootstrap.css` based on your prefered theme variant;
-* [Slider](inputs/slider.md)
-* [Range Slider](inputs/slider.md)
+* Added [Slider](inputs/slider.md)
+* Added [Range Slider](inputs/slider.md)
+* Added Dark Theme which change structure of previous themes from:
+`igniteui-webcomponents/themes/bootstrap.css` 
+to:
+`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
+`igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
 
 ### Major changes
 
 This release introduces few major changes in the API of the Calendar, Card, Navigation Drawer and Radio components.
 
-* New Features
-    * Support for `required` property in Radio component.
-* Breaking Changes
+* Added a feature to support `required` property in Radio component.
+* Breaking Changes:
     * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
     * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
     * Replaced Card component's **outlined** property with `elevated`.
     * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
 
-<!-- end: WebComponents -->
 
 ## **$Platform$ {PackageVerChanges-21-2}**
 
@@ -92,7 +93,6 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
 >
-
 
 <!-- end: Blazor -->
 
