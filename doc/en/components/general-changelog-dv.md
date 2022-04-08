@@ -12,7 +12,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for Angular Daa Visualization related controls eg. (charts, excel, spreadsheet, maps)
+> This topic discusses changes only for Angular Data Visualization related controls eg. (charts, excel, spreadsheet, maps)
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
@@ -22,6 +22,13 @@ All notable changes for each version of $ProductName$ are documented on this pag
 ## **$Platform$ {PackageVerChanges-21-2.1}**
 
 <!-- React, WebComponents -->
+
+| Related Packages |
+|------------------|
+| {PackageGrids} | 
+| {PackageCore} | 
+| {PackageInputs} |
+| {PackageLayouts} |
 
 ### Data Grid
 
@@ -35,8 +42,6 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 > [!NOTE]
 > The following breaking changes were introduced
-
-### Data Grid
 
 - Changed `ValueField` property from type string[] to string. 
 
@@ -62,6 +67,10 @@ All notable changes for each version of $ProductName$ are documented on this pag
 <!-- WebComponents -->
 ## **$Platform$ 2.0.0**
 
+| Related Package |
+|------------------|
+| {PackageComponents} |
+
 ### New Components & Themes
 
 * Added [Slider](inputs/slider.md)
@@ -82,11 +91,23 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
     * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
     * Replaced Card component's **outlined** property with `elevated`.
     * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
-
-
+<!-- end:WebComponents -->
 ## **$Platform$ {PackageVerChanges-21-2}**
 
 <!-- Blazor -->
+
+| Related Packages |
+|------------------|
+| {PackageCore} | 
+| {PackageCharts} |
+| {PackageGauges} | 
+| {PackageMaps} | 
+| {PackageExcel} | 
+| {PackageSpreadsheet} | 
+| {PackageGrids} | 
+| {PackageInputs} |
+| {PackageLayouts} |
+| {PackageDataSources} | 
 
 > [!NOTE]
 > The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
@@ -100,14 +121,12 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 <!-- WebComponents -->
 
-> [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+## **$Platform$ 1.0.0**
 
-<!-- end: WebComponents -->
+| Related Package |
+|------------------|
+| {PackageComponents} |
 
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
 ### New Components
 
 * [Avatar](layouts/avatar.md)
@@ -131,6 +150,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 <div class="divider--half"></div>
 
 <!-- Blazor -->
+## **$Platform$ {PackageVerChanges-21-2}**
 ### New Components
 
 * [Avatar](layouts/avatar.md)
@@ -150,6 +170,22 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 <!-- end: Blazor -->
 
 <div class="divider--half"></div>
+
+<!-- Angular, WebComponents, React -->
+## **$Platform$ {PackageVerChanges-21-2}**
+
+> [!Note]
+> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+
+| Related Package |
+|------------------|
+| {PackageCore} |
+| {PackageCharts} |
+| {PackageMaps} |
+| {PackageGrids} |
+| {PackageInputs} |
+| {PackageLayouts} |
+<!-- end:Angular, WebComponents, React -->
 
 ### Charts & Maps
 
@@ -205,6 +241,13 @@ Old brushes/outlines | New outline/brushes
 <div class="divider--half"></div>
 
 ## **$Platform$ {PackageVerChanges-21-1}**
+
+| Related Package |
+|------------------|
+| {PackageCore} |
+| {PackageGrids} |
+| {PackageInputs} |
+| {PackageLayouts} |
 
 ### Charts & Maps
 
@@ -305,6 +348,13 @@ for example:
 <!-- React, WebComponents -->
 ## **$Platform$ {PackageVerChangedFields}**
 
+| Related Package |
+|------------------|
+| {PackageCore} |
+| {PackageGrids} |
+| {PackageInputs} |
+| {PackageLayouts} |
+
 > [!NOTE]
 > These breaking changes were introduce in the grid package.
 
@@ -343,6 +393,14 @@ income.field = "Income";
 
 ```
 ## **$Platform$ {PackageVerRenamedGrid}**
+
+| Related Package |
+|------------------|
+| {PackageCore} |
+| {PackageGrids} |
+| {PackageInputs} |
+| {PackageLayouts} |
+
 ### Data Grid
 
 - Changed Name of Live Grid
