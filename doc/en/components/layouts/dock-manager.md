@@ -330,6 +330,7 @@ layout.rootPane.orientation = IgcSplitPaneOrientation.vertical;
 this.dockManager.layout = { ...layout };
 ```
 
+<!-- WebComponents -->
 ### Adding Panes At Runtime
 
 Contents and panes can be added to the [`layout`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) at runtime. In the example below, you can see how you can add content, document and floating panes.
@@ -341,6 +342,7 @@ Contents and panes can be added to the [`layout`]({environment:infragisticsBaseU
            alt="$Platform$ Dock Manager Add Content Runtime Example"
            github-src="layouts/dock-manager/add-content-runtime">
 </code-view>
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
