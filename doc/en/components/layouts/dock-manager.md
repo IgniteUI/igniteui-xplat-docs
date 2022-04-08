@@ -342,9 +342,9 @@ Contents and panes can be added to the [`layout`]({environment:infragisticsBaseU
            alt="$Platform$ Dock Manager Add Content Runtime Example"
            github-src="layouts/dock-manager/add-content-runtime">
 </code-view>
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+<!-- end: WebComponents -->
 
 ### Events
 
