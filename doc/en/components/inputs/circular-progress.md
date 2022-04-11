@@ -2,7 +2,7 @@
 title: $Platform$ Circular Progress | Circular Progress | Infragistics
 _description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
 _keywords: $Platform$ Circular Progress, $ProductName$, Infragistics
-mentionedTypes: ['CircularProgress']
+mentionedTypes: ['CircularProgress', 'CircularGradient']
 ---
 
 # $Platform$ Circular Progress Overview
