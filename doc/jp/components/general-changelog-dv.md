@@ -65,19 +65,17 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### 新しいコンポーネントとテーマ
 
-* Added [Slider](inputs/slider.md)
-* Added [Range Slider](inputs/slider.md)
-* Added Dark Theme which change structure of previous themes from:
-`igniteui-webcomponents/themes/bootstrap.css` 
-to:
-`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
-`igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
+* [スライダー](inputs/slider.md)を追加しました。
+* [範囲スライダー](inputs/slider.md)を追加しました。
+* `igniteui-webcomponents/themes/bootstrap.css` のテーマの構造を変更するダーク テーマを追加しました:
+ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css` 
+ダーク テーマの場合は `igniteui-webcomponents/themes/dark/bootstrap.css`
 
 ### 重大な変更
 
 このリリースでは、Calendar、Card、Navigation Drawer、および Radio コンポーネントの API にいくつかの重大な変更が導入されています。
 
-* Added a feature to support `required` property in Radio component.
+* Radio コンポーネントの `required` プロパティをサポートする機能が追加されました。
 * 重大な変更点:
     * Calendar コンポーネントの **value: Date | Date[]** プロパティを 2 つのプロパティに分割しました: `value`: Date おとび `values`: Date[]。
     * Calendar コンポーネントの **hasHeader** プロパティと **has-header** 属性をそれぞれ `hideHeader` と `hide-header` に置き換えました。
