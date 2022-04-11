@@ -55,10 +55,7 @@ You can set the type of your indicator, using the  `variant` attribute. There ar
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
-
->[!NOTE]
->You can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
+If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
 
 The following sample demonstrates the above configuration:
 
@@ -73,7 +70,7 @@ The following sample demonstrates the above configuration:
 
 ### Animation Duration
 
-The `animationDuration` property is used to specify how long the animation cycle should take in milliseconds.
+You can use the `animationDuration` property on the `CircularProgress` component to specify how long the animation cycle should take in milliseconds.
 
 
 ```html
