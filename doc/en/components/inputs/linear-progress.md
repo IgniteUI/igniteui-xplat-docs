@@ -6,7 +6,7 @@ mentionedTypes: ['LinearProgress']
 ---
 
 # $Platform$ Linear Progress Overview
-The $ProductName$ Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The indicator updates its appearance as its state changes. The indicator can be styled with a choice of colors in stripes or solids.
+The $ProductName$ Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
 
 ## $Platform$ Linear Progress Example
 
@@ -124,23 +124,23 @@ The following table lists all CSS parts exposed by the Linear Progress:
 
 |Name|Description|
 |--|--|
-| track | The progress ring's track area. |
-| fill | The progress indicator area. |
-| striped | The progress striped indicator. |
-| label | The progress indicator label. |
-| value | The progress label value. |
+| track         | The progress ring's track area. |
+| fill          | The progress indicator area. |
+| striped       | The progress striped indicator. |
+| label         | The progress indicator label. |
+| value         | The progress label value. |
 | indeterminate | The progress indeterminate state. |
-| primary | The progress indicator primary state. |
-| danger | The progress indicator error state. |
-| warning | The progress indicator warning state. |
-| info | The progress indicator info state. |
-| success | The progress indicator success state. |
-| top | The progress label position. |
-| top-start | The progress label position. |
-| top-end | The progress label position. |
-| bottom | The progress label position. |
-| bottom-start | The progress label position. |
-| bottom-end | The progress label position. |
+| primary       | The progress indicator primary state. |
+| danger        | The progress indicator error state. |
+| warning       | The progress indicator warning state. |
+| info          | The progress indicator info state. |
+| success       | The progress indicator success state. |
+| top           | The progress label position. |
+| top-start     | The progress label position. |
+| top-end       | The progress label position. |
+| bottom        | The progress label position. |
+| bottom-start  | The progress label position. |
+| bottom-end    | The progress label position. |
 
 <!-- WebComponents -->
 
