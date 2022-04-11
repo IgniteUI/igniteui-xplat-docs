@@ -9,22 +9,54 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of $ProductName$ are documented on this page.
 
+<!-- WebComponents -->
+> [!NOTE]
+Versions listed with (*) are separate and are related only in the {PackageComponents} package.
+<!-- end:WebComponents -->
+
+
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for Angular Daa Visualization related controls eg. (charts, excel, spreadsheet, maps)
+> This topic discusses changes only for Angular Data Visualization related controls eg. (charts, excel, spreadsheet, maps)
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
 
-## **$Platform$ {PackageVerChanges-21-2.1}**
+<!-- WebComponents -->
+##  (*) **2.0.0** 
+### {PackageComponents}
+#### New Components & Themes
+
+* Added [Slider](inputs/slider.md)
+* Added [Range Slider](inputs/slider.md)
+* Added Dark Theme which change structure of previous themes from:
+`igniteui-webcomponents/themes/bootstrap.css` 
+to:
+`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
+`igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
+
+#### Major changes
+
+This release introduces few major changes in the API of the Calendar, Card, Navigation Drawer and Radio components.
+
+* Added a feature to support `required` property in Radio component.
+* Breaking Changes:
+    * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
+    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
+    * Replaced Card component's **outlined** property with `elevated`.
+    * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
+<!-- end:WebComponents -->
+
+## **{PackageVerChanges-21-2.1}**
 
 <!-- React, WebComponents -->
 
-### Data Grid
+### {PackageGrids}
 
+#### Data Grid 
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
 
 <!-- end: React, WebComponents -->
@@ -36,14 +68,14 @@ All notable changes for each version of $ProductName$ are documented on this pag
 > [!NOTE]
 > The following breaking changes were introduced
 
-### Data Grid
-
 - Changed `ValueField` property from type string[] to string. 
 
-### Date Picker 
+### {PackageInputs}
+
+#### Date Picker 
 - Changed ValueChanged event to `SelectedValueChanged`.
 
-### Multi-Column ComboBox
+#### Multi-Column ComboBox
 - Changed `TextChanged` event to `TextValueChanged`.
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
@@ -59,34 +91,9 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
-<!-- WebComponents -->
-## **$Platform$ 2.0.0**
-
-### New Components & Themes
-
-* Added [Slider](inputs/slider.md)
-* Added [Range Slider](inputs/slider.md)
-* Added Dark Theme which change structure of previous themes from:
-`igniteui-webcomponents/themes/bootstrap.css` 
-to:
-`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
-`igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
-
-### Major changes
-
-This release introduces few major changes in the API of the Calendar, Card, Navigation Drawer and Radio components.
-
-* Added a feature to support `required` property in Radio component.
-* Breaking Changes:
-    * Split Calendar component's **value: Date | Date[]** property into two properties - `value`: Date and `values`: Date[].
-    * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
-    * Replaced Card component's **outlined** property with `elevated`.
-    * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
-
-
-## **$Platform$ {PackageVerChanges-21-2}**
-
 <!-- Blazor -->
+
+## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
 > The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
@@ -100,15 +107,9 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 <!-- WebComponents -->
 
-> [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-### New Components
+## (*) **1.0.0**
+### {PackageComponents}
+#### New Components
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -131,7 +132,8 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 <div class="divider--half"></div>
 
 <!-- Blazor -->
-### New Components
+## **{PackageVerChanges-21-2}**
+#### New Components
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -151,7 +153,15 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 <div class="divider--half"></div>
 
-### Charts & Maps
+<!-- Angular, WebComponents, React -->
+## **{PackageVerChanges-21-2}**
+
+> [!Note]
+> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+<!-- end:Angular, WebComponents, React -->
+
+### {PackageCharts}
+### {PackageMaps}
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -186,7 +196,7 @@ Old brushes/outlines | New outline/brushes
 
 <!-- Blazor, React, WebComponents -->
 
-### DataGrid
+### {PackageGrids}
 
 * New Features Added:
     - [Filter Row](grids/data-grid-column-filtering.md)
@@ -204,9 +214,11 @@ Old brushes/outlines | New outline/brushes
 
 <div class="divider--half"></div>
 
-## **$Platform$ {PackageVerChanges-21-1}**
+## **{PackageVerChanges-21-1}**
+### {PackageCharts}
+### {PackageMaps}
 
-### Charts & Maps
+#### Charts & Maps
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -252,12 +264,12 @@ for example:
 | <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
 | <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
 
-### Chart Legend
+#### Chart Legend
 
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### Geographic Map
+#### Geographic Map
 
 > [!NOTE]
 > These features are CTP
@@ -271,7 +283,9 @@ for example:
 
 <!-- Blazor, React, WebComponents -->
 
-### Data Grid
+### {PackageGrids}
+
+#### Data Grid
 
 * Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
@@ -285,7 +299,9 @@ for example:
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
-### Date Picker
+### {PackageInputs}
+
+#### Date Picker
 
 * `ShowTodayButton` - Toggles Today button visibility
 * `Label` - Adds a label above the date value
@@ -303,12 +319,15 @@ for example:
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-## **$Platform$ {PackageVerChangedFields}**
+## **{PackageVerChangedFields}**
+
+### {PackageGrids}
+
 
 > [!NOTE]
 > These breaking changes were introduce in the grid package.
 
-### Data Grid
+#### Data Grid
 
 - Changed name of PropertyPath
 
@@ -342,8 +361,12 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
-## **$Platform$ {PackageVerRenamedGrid}**
-### Data Grid
+## **{PackageVerRenamedGrid}**
+
+### {PackageGrids}
+
+
+#### Data Grid
 
 - Changed Name of Live Grid
 
@@ -376,7 +399,7 @@ The data grid component requires the "inputs" package.
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
-## **$Platform$ {PackageVerChangedImports}**
+## **{PackageVerChangedImports}**
 
 - Changed Import Statements
 
