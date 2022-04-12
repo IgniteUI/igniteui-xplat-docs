@@ -2,8 +2,8 @@
 title: $Platform$ スタイル設定およびテーマ | $Platform$ テーマ化 | テーマの切り替え | インフラジスティックス
 _description: インフラジスティックスの $Platform$ コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとストリーミングのファイナンシャルおよびビジネスと チャートを使用して、データの視覚化を改善します。
 _keywords: $ProductName$, インフラジスティックス, テーマ, スタイル設定
-_language: ja,
 mentionedTypes: ["ConfigureTheme"]
+_language: ja,
 ---
 
 # $ProductName$ のテーマ
