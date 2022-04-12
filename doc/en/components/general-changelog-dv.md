@@ -209,7 +209,7 @@ for example:
 
 <!-- WebComponents -->
 > [!NOTE]
-Changes listed with (*) are separate and are related only in the {PackageComponents} package.
+Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
 <div class="divider--half"></div>
 
