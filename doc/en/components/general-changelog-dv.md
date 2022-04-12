@@ -2,7 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ Changelog
@@ -193,7 +193,6 @@ for example:
 * `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
 * Added Accessibility
 
-
 <!-- end: Blazor -->
 
 <div class="divider--half"></div>
@@ -236,9 +235,10 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
     * Replaced Calendar component's **hasHeader** property & **has-header** attribute with `hideHeader` & `hide-header` respectively.
     * Replaced Card component's **outlined** property with `elevated`.
     * Removed **igcOpening**, **igcOpened**, **igcClosing** and **igcClosed** events from Navigation drawer component.
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
+
+<!-- end: WebComponents -->
 
 <!-- React, WebComponents -->
 
@@ -333,6 +333,8 @@ Old brushes/outlines | New outline/brushes
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
 <!-- end: Angular, WebComponents, React -->
 
+<div class="divider--half"></div>
+
 <!-- React, WebComponents -->
 
 ### {PackageGrids}
@@ -352,7 +354,6 @@ Old brushes/outlines | New outline/brushes
 <!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
-
 
 <!-- Angular, WebComponents, React -->
 
