@@ -41,7 +41,7 @@
             { "name": "{PackageVerLatest}",         "value": "9.1.1"},
             { "name": "{PackageVerChanges-21-1}",   "value": "11.2.0"},
             { "name": "{PackageVerChanges-21-2}",   "value": "13.1.0"},
-            { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"},
+            { "name": "{PackageAngularComponents}",     "value": "igniteui-angular"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/browser"}
         ],

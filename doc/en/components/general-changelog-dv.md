@@ -18,8 +18,8 @@ Versions listed with (*) are separate and are related only in the {PackageCompon
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for Angular Data Visualization related controls eg. (charts, excel, spreadsheet, maps)
-> For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
+> For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
 
