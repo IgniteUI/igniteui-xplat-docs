@@ -1,36 +1,36 @@
 ---
-title: $Platform$ Circular Progress | Circular Progress | Infragistics
-_description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
-_keywords: $Platform$ Circular Progress, $ProductName$, Infragistics
+title: $Platform$ Circular Progress | Circular Progress | インフラジスティックス
+_description: Circular Progress Indicator コンポーネントを使用すると、開発者は無限のカスタマイズ オプションを使用して進行状況を円で表示できます。
+_keywords: $Platform$ Circular Progress, $ProductName$, インフラジスティックス
 mentionedTypes: ['CircularProgress', 'CircularGradient']
 _language: ja
 ---
 
-# $Platform$ Circular Progress Overview
-The $ProductName$ Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
+# $Platform$ Circular Progress (円形プログレス) の概要
+$ProductName$ Circular Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。丸形インジケーターは状態変更で外観を更新します。
 
-## $Platform$ Circular Progress Example
+## $Platform$ Circular Progress の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
-           alt="$Platform$ Circular Progress Example"
+           alt="$Platform$ Circular Progress の例"
            github-src="inputs/circular-progress-indicator/simple">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `CircularProgress`, you need to register it as follows:
+`CircularProgress` を使用する前に、次のように登録する必要があります:
 
 
 ```ts
@@ -39,58 +39,58 @@ import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcompon
 defineComponents(IgcCircularProgressComponent);
 ```
 
-The simplest way to start using the `CircularProgress` is as follows:
+`CircularProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
 ```
 
-### Progress Types
+### 進行状況タイプ
 
-You can set the type of your indicator, using the  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+`variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning**の 5 種類があります。
 
 
 ```html
 <igc-circular-progress value="100" variant="success"></igc-circular-progress>
 ```
 
-### Indeterminate Progress
+### 不確定のプログレス
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
+正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。また、`hideLabel` プロパティを設定することで、$ProductName$ `CircularProgress` のデフォルトのラベルを非表示にし、公開された `labelFormat` プロパティを介して進行状況インジケーターのデフォルトのラベルをカスタマイズできます。
 
-The following sample demonstrates the above configuration:
+次のサンプルは、上記の構成を示しています:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
-           alt="$Platform$ Circular Progress Indeterminate Example"
+           alt="$Platform$ Circular Progress Indeterminate の例"
            github-src="inputs/circular-progress-indicator/indeterminate">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Animation Duration
+### アニメーション期間
 
-You can use the `animationDuration` property on the `CircularProgress` component to specify how long the animation cycle should take in milliseconds.
+`CircularProgress` コンポーネントの `animationDuration` プロパティを使用して、アニメーション サイクルにかかる時間をミリ秒単位で指定できます。
 
 
 ```html
 <igc-circular-progress animation-duration="5000" indeterminate></igc-circular-progress>
 ```
 
-### Gradient Progress
+### グラデーション プログレス
 
-Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops. 
+単色の代わりにカラー グラデーションを使用するためにプログレス バーをカスタマイズするには、公開された `gradient` スロットとグラデーション境界を定義する `CircularGradient` を使用します。 
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
-           alt="$Platform$ Circular Progress Dynamic Example"
+           alt="$Platform$ Circular Progress Dynamic の例"
            github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
 >[!NOTE]
->For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
+>$ProductName$ `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
 
 <!-- WebComponents -->
 ```html
@@ -104,43 +104,43 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 <div class="divider--half"></div>
 
-## Styling
+## スタイル設定
 
-The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
+$ProductName$ Circular Procress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
-           alt="$Platform$ Circular Progress Styling"
+           alt="$Platform$ Circular Progress のスタイル設定"
            github-src="inputs/circular-progress-indicator/styling">
 </code-view>
 
-The following table lists all CSS parts exposed by the Circular Progress:
+次の表に、Circular Progress によって公開されるすべての CSS パーツを示します:
 
-|Name|Description|
+|名前|説明|
 |--|--|
-| svg                | The progress SVG element.                 |
-| gradient_start     | The progress linear-gradient start color. |
-| gradient_end       | The progress linear-gradient end color.   |
-| track              | The progress ring's track area.           |
-| fill               | The progress indicator area.              |
-| label              | The progress label.                       |
-| value              | The progress label value.                 |
-| indeterminate      | The progress indeterminate state.         |
-| primary            | The progress indicator primary state.     |
-| danger             | The progress indicator error state.       |
-| warning            | The progress indicator warning state.     |
-| info               | The progress indicator info state.        |
-| success            | The progress indicator success state.     |
+| svg                | 進行状況 SVG 要素。                |
+| gradient_start     | 進行線形グラデーションの開始色。 |
+| gradient_end       | 進行線形グラデーションの終了色。   |
+| track              | プログレス リングのトラック領域。          |
+| fill               | 進行状況インジケーター領域。              |
+| label              | 進行状況ラベル。                       |
+| value              | 進行状況ラベルの値。                |
+| indeterminate      | 進行状況の indeterminate 状態。         |
+| primary            | 進行状況インジケーターの primary 状態。     |
+| danger             | 進行状況インジケーターの error 状態。       |
+| warning            | 進行状況インジケーターの warning 状態。     |
+| info               | 進行状況インジケーターの info の状態。       |
+| success            | 進行状況インジケーターの success 状態。  |
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the Circular Progress Indicator's API, refer to the following links:
+Circular Progress Indicator の API の詳細については、次のリンクを参照してください:
 * `CircularProgress`
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 * `CircularGradient`
 * `Button`
 
@@ -148,11 +148,11 @@ Additional components and/or directives that were used:
 
 <div class="divider"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

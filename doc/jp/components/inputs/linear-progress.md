@@ -1,35 +1,35 @@
 ---
-title: $Platform$ Linear Progress | Linear Progress | Infragistics
-_description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
-_keywords: $Platform$ Linear Progress, $ProductName$, Infragistics
+title: $Platform$ Linear Progress | Linear Progress | インフラジスティックス
+_description: プログレス バーを表示し、Linear Progress Indicator コンポーネントを使用して、無限の色とストライプ オプションで外観をカスタマイズします。
+_keywords: $Platform$ Linear Progress, $ProductName$, インフラジスティックス
 mentionedTypes: ['LinearProgress']
 _language: ja
 ---
 
-# $Platform$ Linear Progress Overview
-The $ProductName$ Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
+# $Platform$ Linear Progress (リニア プログレス) の概要
+$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、 このコンポーネントがストライプまたは実線色でスタイル設定できます。
 
-## $Platform$ Linear Progress Example
+## $Platform$ Linear Progress の例
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="$Platform$  Linear Progress Example"
+           alt="$Platform$  Linear Progress の例"
            github-src="inputs/linear-progress-indicator/simple">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 
-Before using the `LinearProgress`, you need to register it as follows:
+`LinearProgress` を使用する前に、次のように登録する必要があります:
 
 
 ```ts
@@ -39,129 +39,129 @@ defineComponents(IgcLinearProgressComponent);
 ```
 <!-- end: WebComponents -->
 
-The simplest way to start using the `LinearProgress` is as follows:
+`LinearProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
 ```
 
-### Progress Types
+### 進行状況タイプ
 
-You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+`variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning**の 5 種類があります。
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
 ```
 
-### Striped Progress
+### ストライプ プログレス
 
-You can make the indicator striped, using the `striped` property:
+`striped` プロパティを使用して、インジケーターをストライプにすることができます:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="$Platform$  Linear Progress Striped Example"
+           alt="$Platform$  Linear Progress Striped の例"
            github-src="inputs/linear-progress-indicator/types">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Indeterminate Progress
+### 不確定のプログレス
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property.
+正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。
 
-### Animation Duration
+### アニメーション期間
 
-The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+`animationDuration` プロパティは、アニメーション サイクルにかかる時間を指定するために使用されます。値として、アニメーションの継続時間をミリ秒単位で表す数値を取ります。
 
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
 ```
 
-### Text Properties
+### Text プロパティ
 
-You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**. 
+`labelAlign` プロパティを使用して、デフォルト値を調整できます。許可される値は、**top**、**bottom**、**top-start**、**top-end**、**bottom-start**、および **bottom-end** です。
 
-To hide the default label of the progress indicator, use the `hideLabel` attribute.
+進行状況インジケーターのデフォルトのラベルを非表示にするには、`hideLabel` 属性を使用します。
 
-The `labelFormat` property can be used to customize the `LinearProgress` default label.
+`labelFormat` プロパティを使用して、`LinearProgress` のデフォルト ラベルをカスタマイズできます。
 
-The following sample demonstrates the above configuration:
+次のサンプルは、上記の構成を示しています:
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="$Platform$ Linear Progress Text Example"
+           alt="$Platform$ Linear Progress Text の例"
            github-src="inputs/linear-progress-indicator/striped">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Dynamic Progress
+### ダイナミック プログレス
 
-You can dynamically change the value of the progress indicator by using external controls like buttons. To achieve this, we can bind the value to a class property:
+ボタンなどの外部コントロールを使用して進行状況インジケーターの値を動的に変更できます。これを実現するには、値をクラス プロパティにバインドします。
 
 <code-view style="height:200px" 
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="$Platform$ Linear Progress Dynamic Example"
+           alt="$Platform$ Linear Progress Dynamic の例"
            github-src="inputs/linear-progress-indicator/dynamic">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Styling
+## スタイル設定
 
-The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
+Linear Procress Indicatorコンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 <code-view style="height: 50px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="$Platform$ Linear Progress Styling"
+           alt="$Platform$ Linear Progress のスタイル設定"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 
-The following table lists all CSS parts exposed by the Linear Progress:
+次の表に、LinearProgress によって公開されるすべての CSS パーツを示します:
 
-|Name|Description|
+|名前|説明|
 |--|--|
-| track         | The progress ring's track area. |
-| fill          | The progress indicator area. |
-| striped       | The progress striped indicator. |
-| label         | The progress indicator label. |
-| value         | The progress label value. |
-| indeterminate | The progress indeterminate state. |
-| primary       | The progress indicator primary state. |
-| danger        | The progress indicator error state. |
-| warning       | The progress indicator warning state. |
-| info          | The progress indicator info state. |
-| success       | The progress indicator success state. |
-| top           | The progress label position. |
-| top-start     | The progress label position. |
-| top-end       | The progress label position. |
-| bottom        | The progress label position. |
-| bottom-start  | The progress label position. |
-| bottom-end    | The progress label position. |
+| track         | プログレス リングのトラック領域。 |
+| fill          | 進行状況インジケーター領域。|
+| striped       | 進行状況のストライプ インジケーター。 |
+| label         | 進行状況インジケーター ラベル。 |
+| value         | 進行状況ラベルの値。 |
+| indeterminate | 進行状況の indeterminate 状態。 |
+| primary       | 進行状況インジケーターの primary 状態。 |
+| danger        | 進行状況インジケーターの error 状態。 |
+| warning       | 進行状況インジケーターの warning 状態。 |
+| info          | 進行状況インジケーターの info の状態。|
+| success       | 進行状況インジケーターの success 状態。 |
+| top           | 進行状況ラベルの配置。 |
+| top-start     | 進行状況ラベルの配置。 |
+| top-end       | 進行状況ラベルの配置。 |
+| bottom        | 進行状況ラベルの配置。 |
+| bottom-start  | 進行状況ラベルの配置。 |
+| bottom-end    | 進行状況ラベルの配置。 |
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the Linear Progress Indicator's API, refer to the following links:
+Linear Progress Indicator の API の詳細については、次のリンクを参照してください:
 * `LinearProgress`
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 * `Button`
 
 <!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

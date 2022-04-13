@@ -12,7 +12,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- WebComponents -->
 > [!NOTE]
-Versions listed with (*) are separate and are related only in the {PackageComponents} package.
+(*) でリストされているバージョンは個別であり、{PackageComponents} パッケージでのみ関連しています。
 <!-- end:WebComponents -->
 
 
@@ -156,7 +156,7 @@ Versions listed with (*) are separate and are related only in the {PackageCompon
 ## **{PackageVerChanges-21-2}**
 
 > [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+> パッケージ「lit-html」を確認してください。最適な互換性のために、「^2.0.0」以降がプロジェクトに追加されます。
 <!-- end:Angular, WebComponents, React -->
 
 ### {PackageCharts}
