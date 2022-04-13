@@ -47,7 +47,7 @@ defineComponents(IgcCircularProgressComponent);
 
 ### 進行状況タイプ
 
-`variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning**の 5 種類があります。
+`variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
 
 
 ```html

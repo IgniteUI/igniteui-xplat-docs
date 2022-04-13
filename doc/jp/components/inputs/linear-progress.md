@@ -47,7 +47,7 @@ defineComponents(IgcLinearProgressComponent);
 
 ### 進行状況タイプ
 
-`variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning**の 5 種類があります。
+`variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
