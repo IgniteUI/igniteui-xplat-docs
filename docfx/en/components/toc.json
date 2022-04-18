@@ -1305,7 +1305,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Drop Down {ReleaseStatus_WebsInputs}",
+    "name": "Dropdown {ReleaseStatus_WebsInputs}",
     "href": "inputs/dropdown.md",
     "status": "NEW"
   },
