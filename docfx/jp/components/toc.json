@@ -1292,6 +1292,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "円形プログレス",
+    "href": "inputs/circular-progress.md",
+     "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "チップ {ReleaseStatus_WebsInputs}",
     "href": "inputs/chip.md",
@@ -1319,6 +1325,12 @@
     "exclude": ["Angular", "React"],
     "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "リニア プログレス",
+    "href": "inputs/linear-progress.md",
     "status": "NEW"
   },
   {
