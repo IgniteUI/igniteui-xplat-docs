@@ -1292,7 +1292,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Circular Progress",
     "href": "inputs/circular-progress.md",
      "status": "NEW"
@@ -1328,7 +1328,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Linear Progress",
     "href": "inputs/linear-progress.md",
     "status": "NEW"
@@ -1391,7 +1391,7 @@
     "status": "NEW"
   },
   {
-     "exclude": ["Angular", "Blazor", "React"],
+     "exclude": ["Angular", "React"],
      "name": "Toast {ReleaseStatus_WebsInputs}",
      "href": "notifications/toast.md",
      "status": "NEW"
