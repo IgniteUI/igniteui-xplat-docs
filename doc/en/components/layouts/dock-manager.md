@@ -47,9 +47,11 @@ import { defineCustomElements } from 'igniteui-dockmanager/loader';
 
 defineCustomElements();
 ```
+<!-- end: Angular, React, WebComponents -->
+
 <div class="divider--half"></div>
 
-<!-- end: Angular, React, WebComponents -->
+<!-- WebComponents -->
 
 ## Usage
 
@@ -348,6 +350,10 @@ Contents and panes can be added to the [`layout`]({environment:infragisticsBaseU
 
 The Dock Manager component raises events when specific end-user interactions are performed for example closing, pinning, resizing and dragging a pane. You can find the full list of Dock Manager events [here]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html).
 
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
  <!-- WebComponents, React, Angular -->
  Here is how to add an event listener for the [`paneClose`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
 
@@ -355,6 +361,8 @@ The Dock Manager component raises events when specific end-user interactions are
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
 <!-- end: WebComponents, React, Angular -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 <code-view style="height: 700px"
@@ -364,6 +372,8 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
 <!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ## Keyboard Navigation
 
@@ -403,6 +413,8 @@ The shortcuts are as follows:
 
 Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
+<!-- WebComponents -->
+
 ## Styling
 
 The Dock Manager uses a shadow DOM to encapsulate his styles and behaviors. As a result, you can't simply target its internal elements with the usual CSS selectors. That is why we expose components **parts** that can be targeted with the **::part** CSS selector.
@@ -413,7 +425,6 @@ igc-dockmanager::part(content-pane) {
 }
 ```
 
-<!-- WebComponents -->
 In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
 <code-view style="height: 700px"
@@ -422,7 +433,8 @@ In the following example, we demonstrate the ability of customizing the Dock Man
            alt="$Platform$ Dock Manager Styling Example"
            github-src="layouts/dock-manager/styling">
 </code-view>
-<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ### CSS Parts
 
@@ -487,3 +499,6 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 
 The Dock Manager exposes [`resourceStrings`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) property which allows you to modify the strings. If you set the [`resourceStrings`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) property, the Dock Manager will use your strings no matter what [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
+
+<!-- end: WebComponents -->
+

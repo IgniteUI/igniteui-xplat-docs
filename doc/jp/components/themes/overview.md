@@ -4,6 +4,7 @@ _description: インフラジスティックスの $Platform$ コンポーネン
 _keywords: $ProductName$, インフラジスティックス, テーマ, スタイル設定
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
+mentionedTypes: [""]
 ---
 
 # $ProductName$ のテーマ
