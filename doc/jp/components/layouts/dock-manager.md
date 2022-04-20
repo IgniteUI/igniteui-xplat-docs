@@ -48,9 +48,11 @@ import { defineCustomElements } from 'igniteui-dockmanager/loader';
 
 defineCustomElements();
 ```
+<!-- end: Angular, React, WebComponents -->
+
 <div class="divider--half"></div>
 
-<!-- end: Angular, React, WebComponents -->
+<!-- WebComponents -->
 
 ## 使用方法
 
@@ -349,6 +351,10 @@ this.dockManager.layout = { ...layout };
 
 ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
 
+<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
+
  <!-- WebComponents, React, Angular -->
  [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
 
@@ -356,6 +362,8 @@ this.dockManager.layout = { ...layout };
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 ```
 <!-- end: WebComponents, React, Angular -->
+
+<div class="divider--half"></div>
 
 <!-- WebComponents -->
 <code-view style="height: 700px"
@@ -365,6 +373,8 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
 <!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ## キーボード ナビゲーション
 
@@ -404,6 +414,8 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
+<!-- WebComponents -->
+
 ## スタイル設定
 
 ドック マネージャーは、シャドウ DOM を使用してスタイルと動作をカプセル化します。その結果、通常の CSS セレクターでその内部要素を単純にターゲットにすることはできません。そのため **:: part** CSS セレクターでターゲットにできるコンポーネント **parts** を公開しています。
@@ -414,7 +426,6 @@ igc-dockmanager::part(content-pane) {
 }
 ```
 
-<!-- WebComponents -->
 次の例では、公開した CSS パーツのいくつかを使用してドック マネージャーをカスタマイズする機能を紹介します。
 
 <code-view style="height: 700px"
@@ -423,7 +434,8 @@ igc-dockmanager::part(content-pane) {
            alt="$Platform$ ドック マネージャー スタイル設定の例"
            github-src="layouts/dock-manager/styling">
 </code-view>
-<!-- end: WebComponents -->
+
+<div class="divider--half"></div>
 
 ### CSS パーツ
 
@@ -487,3 +499,6 @@ addResourceStrings('fr', dockManagerStringsFr);
 ```
 
 ドック マネージャーは、文字列を変更できる [`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+
+<!-- end: WebComponents -->
+

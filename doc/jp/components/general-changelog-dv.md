@@ -3,32 +3,219 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ 変更ログ
 
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
-<!-- WebComponents -->
-> [!NOTE]
-(*) でリストされているバージョンは個別であり、{PackageComponents} パッケージでのみ関連しています。
-<!-- end:WebComponents -->
+<!-- Blazor -->
+## **{PackageVerChanges-21-2.1}**
 
+> [!NOTE]
+> The following breaking changes were introduced
+
+### {PackageGrids}
+
+- `ValueField` プロパティを string[] 型から string に変更しました。
+
+### {PackageInputs}
+
+- 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
+
+#### 日付のピッカー 
+- `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+
+#### 複数列コンボボックス
+- `TextChanged` イベントを `TextValueChanged` に変更しました。
+- `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
+
+## **{PackageVerChanges-21-2}**
+
+> [!NOTE]
+> The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+>
+> For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
+
+### 新しいコンポーネント
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navigation Bar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+### Chart and Map Improvements
+
+このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
+
+* Changed `YAxisLabelLocation` property's type to **YAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart` and `CategoryChart`
+* Changed `XAxisLabelLocation` property's type to **XAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart`
+* `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
+* Added support for representing geographic series of `XamGeographicMap` in a legend
+* `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
+* `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
+* Added final value annotation by default in `FinancialChart`
+* Added new properties in Category Chart and Financial Chart:
+   - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
+   - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
+   - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
+   - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
+   - `MarkerThickness` that allows changing thickness of markers
+* カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
+   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
+   - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+* データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
+   - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
+   - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
+* Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
+* 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
+* チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
+* Changed color palette of series and markers displayed in all charts to improve accessibility
+
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+
+### {PackageGrids}
+
+* 新規機能:
+    - [フィルター行](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [セルの結合](grids/data-grid-cell-merging.md)
+* 新規 API:
+    - `SelectionChanged` イベントを追加しました。Used to detect changes on selection interactions
+     e.g. Multiple row selection.
+* 重大な変更:
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+
+## **{PackageVerChanges-21-1}**
+### New Visual Designs
+
+#### チャートとマップ
+
+This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+
+* 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
+* Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
+* Changed Scatter High Density series’ colors for heat max property from <span style="color:#ee5879">#ee5879</span> to <span style="color:#ee5879">#ee5879</span>
+* Changed Financial/Waterfall series’ `NegativeBrush` and `NegativeOutline` properties from <span style="color:#C62828">#C62828</span> to <span style="color:#ee5879">#ee5879</span>
+* マーカーの厚さを 1 pxから 2 pxに変更しました。
+* `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
+* `TimeXAxis` と`OrdinalTimeXAxis` のラベリングを圧縮しました。
+* 新しいマーカー プロパティ:
+    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
+    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
+    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
+* New Series Property:
+    - series.`OutlineMode` - Can be set to toggle the series outline visibility. データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
+* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
+    - chart.`PlotAreaMarginLeft`
+    - chart.`PlotAreaMarginTop`
+    - chart.`PlotAreaMarginRight`
+    - chart.`PlotAreaMarginBottom`
+    - chart.`ComputedPlotAreaMarginMode`
+* 新しい強調表示プロパティ:
+    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
+    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+    - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
+* Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
+* Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
+* 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
+* 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
+* 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
+* 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
+* シリーズとマーカーの再設計されたカラー パレット:
+
+古いのブラシ/アウトライン | 新のアウトライン/ブラシ
+-------------------- | -------------------
+<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+
+例:
+
+|   |   |
+|---|---|
+| <img class="responsive-img" src="../images/chartDefaults1.png" /> | <img class="responsive-img" src="../images/chartDefaults2.png" /> |
+| <img class="responsive-img" src="../images/chartDefaults3.png" /> | <img class="responsive-img" src="../images/chartDefaults4.png" /> |
+
+#### チャート凡例
+
+* Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
+* Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
+
+#### 地理マップ
+
+> [!NOTE]
+> これらの機能は CTP です。
+
+* マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
+* 座標原点を折り返しながら、一部のマップ シリーズの表示をシフトするためのサポートが追加されました。
+* シェイプ シリーズの強調表示のサポートが追加されました。
+* シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
+
+### {PackageGrids}
+
+* `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
+* `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
+* Added `SelectAllRows` - method.
+* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+    - クリックしてドラッグし、行を選択します。
+    - Shift キーを押しながらクリックして、複数の行を選択します。
+    - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
+* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+* 列オプション ダイアログに列集計を追加しました。
+
+### {PackageInputs}
+
+#### 日付ピッカー
+
+* `ShowTodayButton` - Toggles Today button visibility
+* `Label` - Adds a label above the date value
+* `Placeholder` property - adds custom text when no value is selected
+* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
+* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
+* `FirstDayOfWeek` - Specifies first day of week
+* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
+* `ShowWeekNumbers` - Toggles Week number visibility
+* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+* アクセシビリティの追加
+
+<!-- end: Blazor -->
+
+<div class="divider--half"></div>
 
 <!-- Angular -->
 
 > [!NOTE]
-> このトピックでは、Angular データ可視化関連のコントロール (チャート、Excel、スプレッドシート、マップ) の変更についてのみ説明します。
-> Angular LOB コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
+> Angular {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
 
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-##  (*) **2.0.0** 
-### {PackageComponents}
+> [!NOTE]
+Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
+
+<div class="divider--half"></div>
+
+## **2.0.0** 
+### (*) {PackageComponents}
 #### 新しいコンポーネントとテーマ
 
 * [スライダー](inputs/slider.md)を追加しました。
@@ -47,22 +234,19 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
     * Calendar コンポーネントの **hasHeader** プロパティと **has-header** 属性をそれぞれ `hideHeader` と `hide-header` に置き換えました。
     * Card コンポーネントの **outlined** プロパティを `elevated` に置き換えました。
     * Navigation Drawer コンポーネントの **igcOpening**、**igcOpened**、**igcClosing**、および **igcClosed** イベントを削除しました。
-<!-- end:WebComponents -->
 
-## **{PackageVerChanges-21-2.1}**
+<div class="divider--half"></div>
+
+<!-- end: WebComponents -->
 
 <!-- React, WebComponents -->
+
+## **{PackageVerChanges-21-2.1}**
 
 ### {PackageGrids}
 
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
-
-<!-- end: React, WebComponents -->
-
-<div class="divider--half"></div>
-
-<!-- Blazor, React, WebComponents -->
 
 > [!NOTE]
 > 以下の重大な変更が導入されました:
@@ -78,36 +262,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 - `TextChanged` イベントを `TextValueChanged` に変更しました。
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
-<!-- end: Blazor, React, WebComponents -->
-
-<div class="divider--half"></div>
-
-<!-- Blazor -->
-
-- 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
-<!-- Blazor -->
-
-## **{PackageVerChanges-21-2}**
-
-> [!NOTE]
-> **Igb** プレフィックスは、$ProductName$ のコンポーネントと各コンポーネント内のネストされた要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
->
-> 例えば, ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
->
-
-<!-- end: Blazor -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
 
-## (*) **1.0.0**
-### {PackageComponents}
+## **1.0.0**
+### (*) {PackageComponents}
 #### 新しいコンポーネント
 
 * [Avatar](layouts/avatar.md)
@@ -130,37 +292,13 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
-<!-- Blazor -->
-## **{PackageVerChanges-21-2}**
-#### 新しいコンポーネント
-
-* [Avatar](layouts/avatar.md)
-* [Badge](inputs/badge.md)
-* [Button & Icon Button](inputs/button.md)
-* [Card](layouts/card.md)
-* [Checkbox](inputs/checkbox.md)
-* [Form](inputs/form.md)
-* [Icon](layouts/icon.md)
-* [List](grids/list.md)
-* [Navigation Bar](menus/navbar.md)
-* [Navigation Drawer](menus/navigation-drawer.md)
-* [Radio & Radio Group](inputs/radio.md)
-* [Ripple](inputs/ripple.md)
-* [Switch](inputs/switch.md)
-
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
 <!-- Angular, WebComponents, React -->
 ## **{PackageVerChanges-21-2}**
 
 > [!Note]
 > パッケージ「lit-html」を確認してください。最適な互換性のために、「^2.0.0」以降がプロジェクトに追加されます。
-<!-- end:Angular, WebComponents, React -->
 
 ### {PackageCharts}
-### {PackageMaps}
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
@@ -192,8 +330,11 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 古いのブラシ/アウトライン | 新のアウトライン/ブラシ
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+<!-- end: Angular, WebComponents, React -->
 
-<!-- Blazor, React, WebComponents -->
+<div class="divider--half"></div>
+
+<!-- React, WebComponents -->
 
 ### {PackageGrids}
 
@@ -208,15 +349,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
     - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
     - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
+<!-- Angular, WebComponents, React -->
+
 ## **{PackageVerChanges-21-1}**
 ### {PackageCharts}
-### {PackageMaps}
-
-#### チャートとマップ
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
@@ -267,7 +407,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 *バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
 * `LegendHighlightingMode` プロパティを追加 - 凡例項目にカーソルを合わせたときにシリーズの強調表示を有効にします。
 
-#### 地理マップ
+### {PackageMaps}
 
 > [!NOTE]
 > これらの機能は CTP です。
@@ -277,13 +417,13 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * シェイプ シリーズの強調表示のサポートが追加されました。
 * シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
 
+<!-- end: Angular, WebComponents, React -->
+
 <div class="divider--half"></div>
 
-<!-- Blazor, React, WebComponents -->
+<!-- React, WebComponents -->
 
 ### {PackageGrids}
-
-#### データ グリッド
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
@@ -312,7 +452,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
 * アクセシビリティの追加
 
-<!-- end: Blazor, React, WebComponents -->
+<!-- end: React, WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -321,11 +461,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### {PackageGrids}
 
-
 > [!NOTE]
 > これらの重大な変更は、グリッド パッケージで導入されました。
-
-#### データ グリッド
 
 - PropertyPath の名称変更
 
@@ -362,9 +499,6 @@ income.field = "Income";
 ## **{PackageVerRenamedGrid}**
 
 ### {PackageGrids}
-
-
-#### データ グリッド
 
 - Live Grid の名称変更
 
