@@ -31,6 +31,9 @@ npm install {PackageWebComponents}
 
 Before using the `CircularProgress`, you need to register it as follows:
 
+```razor
+IgbCircularProgressModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcomponents';
@@ -38,10 +41,22 @@ import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcompon
 defineComponents(IgcCircularProgressComponent);
 ```
 
+<!-- Blazor -->
+You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 The simplest way to start using the `CircularProgress` is as follows:
 
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
+```
+
+```razor
+<IgbCircularProgress Value=100/>
 ```
 
 ### Progress Types
@@ -52,6 +67,10 @@ You can set the type of your indicator, using the  `variant` attribute. There ar
 ```html
 <igc-circular-progress value="100" variant="success"></igc-circular-progress>
 ```
+
+```razor
+<IgbCircularProgress Value=100 Variant=@ProgressBaseVariant.Success  />
+ ```
 
 ### Indeterminate Progress
 
@@ -77,6 +96,10 @@ You can use the `animationDuration` property on the `CircularProgress` component
 <igc-circular-progress animation-duration="5000" indeterminate></igc-circular-progress>
 ```
 
+```razor
+<IgbCircularProgress AnimationDuration=5000 Indeterminate=true />
+```
+
 ### Gradient Progress
 
 Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops. 
@@ -91,7 +114,6 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 >[!NOTE]
 >For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
-<!-- WebComponents -->
 ```html
 <igc-circular-progress> 
     <igc-circular-gradient slot="gradient" offset="0%" color="#ff9a40"></igc-circular-gradient>
@@ -99,7 +121,14 @@ Customizing the progress bar in order to use a color gradient instead of a solid
     <igc-circular-gradient slot="gradient" offset="100%" color="#ff0079"></igc-circular-gradient>
 </igc-circular-progress>
 ```
-<!-- end: WebComponents -->
+
+```razor
+<IgbCircularProgress>
+    <IgbCircularGradient slot="gradient" Offset="0%"   Color="#ff9a40"/>        
+    <IgbCircularGradient slot="gradient" Offset="50%"  Color="#1eccd4"/>        
+    <IgbCircularGradient slot="gradient" Offset="100%" Color="#ff0079"/>        
+</IgbCircularProgress>
+```
 
 <div class="divider--half"></div>
 
@@ -148,6 +177,13 @@ Additional components and/or directives that were used:
 <div class="divider"></div>
 
 ## Additional Resources
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 
