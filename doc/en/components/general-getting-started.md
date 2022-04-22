@@ -406,16 +406,19 @@ The list of controls this additional CSS file applies to is as follows:
 - [Card](layouts/card.md)
 - [Calendar](scheduling/calendar.md)
 - [Checkbox](inputs/checkbox.md)
+- [Circular Progress](inputs/circular-progress.md)
 - [Form](inputs/form.md)
 - [Icon](layouts/icon.md)
 - [Icon Button](inputs/icon-button.md)
 - [Input](inputs/input.md)
+- [Linear Progress](inputs/linear-progress.md)
 - [List](grids/list.md)
 - [NavBar](menus/navbar.md)
 - [Navigation Drawer](menus/navigation-drawer.md)
 - [Radio & Radio Group](inputs/radio.md)
 - [Ripple](inputs/ripple.md)
 - [Switch](inputs/switch.md)
+- [Toast](notifications/toast.md)
 
 2 - Register service modules for IgniteUI Blazor components:
 

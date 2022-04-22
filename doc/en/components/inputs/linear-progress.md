@@ -27,21 +27,37 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 Before using the `LinearProgress`, you need to register it as follows:
 
+```razor
+IgbLinearProgressModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcLinearProgressComponent);
 ```
-<!-- end: WebComponents -->
+
+<!-- Blazor -->
+You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 
 The simplest way to start using the `LinearProgress` is as follows:
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress Value=100 />
 ```
 
 ### Progress Types
@@ -50,6 +66,10 @@ You can set the type of your indicator, using  the `variant` attribute. There ar
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress Value=100 Variant=@ProgressBaseVariant.Success />
 ```
 
 ### Striped Progress
@@ -75,6 +95,10 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress AnimationDuration=5000 Indeterminate=true />
 ```
 
 ### Text Properties
@@ -157,6 +181,14 @@ Additional components and/or directives that were used:
 <div class="divider"></div>
 
 ## Additional Resources
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
 
 <!-- WebComponents -->
 
