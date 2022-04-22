@@ -406,6 +406,7 @@ The list of controls this additional CSS file applies to is as follows:
 - [Card](layouts/card.md)
 - [Calendar](scheduling/calendar.md)
 - [Checkbox](inputs/checkbox.md)
+- [Dropdown](inputs/dropdown.md)
 - [Form](inputs/form.md)
 - [Icon](layouts/icon.md)
 - [Icon Button](inputs/icon-button.md)
@@ -415,6 +416,8 @@ The list of controls this additional CSS file applies to is as follows:
 - [Navigation Drawer](menus/navigation-drawer.md)
 - [Radio & Radio Group](inputs/radio.md)
 - [Ripple](inputs/ripple.md)
+- [Slider & Range Slider](inputs/slider.md)
+- [Snackbar](notifications/switch.md)
 - [Switch](inputs/switch.md)
 
 2 - Register service modules for IgniteUI Blazor components:

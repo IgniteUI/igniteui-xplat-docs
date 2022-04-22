@@ -22,13 +22,29 @@ $ProductName$ Chips help people enter information, make selections, filter conte
 
 ## Usage
 
+<!-- WebComponents -->
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 Before using the `Chip`, you need to register it as follows:
+
+```razor
+IgbChipModule.Register(IgniteUIBlazor);
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Chip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
 import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
@@ -36,6 +52,22 @@ defineComponents(IgcChipComponent);
 ```
 
 The simplest way to start using the `Chip` is as follows:
+
+```razor
+<div class="container sample vertical">
+    <IgbChip>Chip</IgbChip>
+</div>
+
+@code {
+
+    private IgbIcon RegisterIconRef { get; set; }
+
+    protected override void OnInitialized()
+    {
+        IgbChipModule.Register(IgniteUIBlazor);
+    }
+}
+```
 
 ```html
 <igc-chip></igc-chip>
@@ -47,10 +79,18 @@ To display a selectable chip, you can use the `Selectable` property of the chip.
 <igc-chip selectable></igc-chip>
 ```
 
+```razor
+<IgbChip Selectable="true"></IgbChip>
+```
+
 To display a removable chip, you can use the `Removable` property of the chip.
 
 ```html
 <igc-chip removable></igc-chip>
+```
+
+```razor
+<IgbChip Removable="true"></IgbChip>
 ```
 
 ## Examples
@@ -61,6 +101,10 @@ The $ProductName$ chip supports several pre-defined stylistic variants. You can 
 
 ```html
 <igc-chip variant="success"></igc-chip>
+```
+
+```razor
+<IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
 <code-view style="height: 60px"

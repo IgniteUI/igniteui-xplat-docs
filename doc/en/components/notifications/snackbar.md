@@ -21,13 +21,29 @@ The $ProductName$ Snackbar component is used to provide feedback about an operat
 
 ### Usage
 
+<!-- WebComponents -->
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 Before using the `Snackbar`, you need to register it as follows:
+
+```razor
+IgbSnackbarModule.Register(IgniteUIBlazor);
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Snackbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
 import { defineComponents, IgcSnackbarComponent } from 'igniteui-webcomponents';
@@ -40,6 +56,22 @@ The simplest way to display the snackbar component is to use its `Show` method a
 ```html
 <igc-button onclick="snackbar.show()" variant="contained">Show Snackbar</igc-button>
 <igc-snackbar id="snackbar">Snackbar Message</igc-snackbar>
+```
+
+```razor
+<div class="container vertical">
+    <IgbButton onclick="snackbar.show()">Show Snackbar</IgbButton>
+    <IgbSnackbar id="snackbar"> Snackbar Message </IgbSnackbar>
+</div>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        IgbSnackbarModule.Register(IgniteUIBlazor);
+        IgbButtonModule.Register(IgniteUIBlazor);
+    }
+}
 ```
 
 ## Examples
