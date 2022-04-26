@@ -1368,7 +1368,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "スライダー & 範囲スライダー {ReleaseStatus_WebsInputs}",
     "href": "inputs/slider.md",
     "status": "NEW"
@@ -1385,7 +1385,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "スナックバー {ReleaseStatus_WebsInputs}",
     "href": "notifications/snackbar.md",
     "status": "NEW"

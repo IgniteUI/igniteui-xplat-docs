@@ -407,16 +407,22 @@ dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 - [Card](layouts/card.md)
 - [Calendar](scheduling/calendar.md)
 - [Checkbox](inputs/checkbox.md)
+- [Circular Progress](inputs/circular-progress.md)
+- [Dropdown](inputs/dropdown.md)
 - [Form](inputs/form.md)
 - [Icon](layouts/icon.md)
 - [Icon Button](inputs/icon-button.md)
 - [Input](inputs/input.md)
+- [Linear Progress](inputs/linear-progress.md)
 - [List](grids/list.md)
 - [NavBar](menus/navbar.md)
 - [Navigation Drawer](menus/navigation-drawer.md)
 - [Radio & Radio Group](inputs/radio.md)
 - [Ripple](inputs/ripple.md)
+- [Slider & Range Slider](inputs/slider.md)
+- [Snackbar](notifications/switch.md)
 - [Switch](inputs/switch.md)
+- [Toast](notifications/toast.md)
 
 2 - Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
