@@ -47,8 +47,8 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 In addition, the grid's `FilterLogicalOperator` property is responsible for indicating how filters across fields are combined:
 
-- `And` logical operator. In order for a successful match, all conditions have to pass.
-- `Or` logical operator. In order for a successful match, at least one of the conditions have to pass.
+- `And` logical operator. 正しく一致させるためには、すべての条件をパスする必要があります。
+- `Or` logical operator. 正しく一致させるためには、少なくとも 1 つの条件をパスする必要があります。
 
 <!-- Blazor -->
 Since the operands are applied to the column they can be added in several ways, such as inline, in-code, or in a separate class. 各アプローチは、以下の例で示されています。
