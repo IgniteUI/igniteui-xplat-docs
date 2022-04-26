@@ -38,15 +38,15 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 <div class="divider--half"></div>
 
-## Axis Labels Management
+## 軸ラベルの管理
 
-The axes of the chart have the ability to perform an enhanced calculation regarding the amount of space available to the labels of the owning axis. This enhanced calculation allows the axis to optimize the amount of space given to it in order to display more labels for the given axis.
+チャートの軸には、所有する軸のラベルに使用可能なスペースの量に関する拡張計算を実行する機能があります。この拡張された計算により、軸は、指定された軸に対してより多くのラベルを表示するために、指定されたスペースの量を最適化できます。
 
-This enhanced calculation is something that you need to opt-in to, which you can do by setting the `UseEnhancedIntervalManagement` property to true. Then, if you prefer to display as many labels as can fit in the dimensions of the axis without manually setting the `Interval` property of the axis, you can set the `EnhancedIntervalPreferMoreCategoryLabels` property on the axis to true.
+この拡張された計算は、オプトインする必要があるものです。これは、`UseEnhancedIntervalManagement` プロパティを true に設定することで実行できます。次に、軸の `Interval` プロパティを手動で設定せずに、軸のディメンションに収まるだけの数のラベルを表示したい場合は、軸の `EnhancedIntervalPreferMoreCategoryLabels` プロパティを true に設定できます。
 
-The chart also has the ability to consider auto-rotation of the labels if they will not fit in the allotted space as well as the ability to apply an automatic margin to the plot area to ensure the labels can fit. This is something that can be opted into initially by first setting the `AutoMarginAndAngleUpdateMode` property on the chart to either `SizeChanging` or `SizeChangingAndZoom`. This will tell the chart when to re-evaluate the auto margin and angle applied to the labels, if desired.
+チャートには、ラベルが割り当てられたスペースに収まらない場合にラベルの自動回転を考慮する機能と、ラベルが収まるようにプロット領域に自動マージンを適用する機能もあります。これは、最初にチャートの `AutoMarginAndAngleUpdateMode` プロパティを `SizeChanging` または `SizeChangingAndZoom` に設定することで最初にオプトインできるものです。これにより、必要に応じて、ラベルに適用された自動マージンと角度をいつ再評価するかがチャートに通知されます。
 
-After setting the `AutoMarginAndAngleUpdateMode`, you can set the `ShouldAutoExpandMarginForInitialLabels` property to true to opt into the automatic margin or set the `ShouldConsiderAutoRotationForInitialLabels` property to true for the auto-rotation. You can also further customize the automatic margin that is applied by setting the `AutoExpandMarginExtraPadding` and `AutoExpandMarginMaximumValue` to provide extra space or a maximum possible margin, respectively.
+`AutoMarginAndAngleUpdateMode` を設定した後、`ShouldAutoExpandMarginForInitialLabels` プロパティを true に設定して自動マージンをオプトインするか `ShouldConsiderAutoRotationForInitialLabels` プロパティを true に設定して自動回転を行うことができます。`AutoExpandMarginExtraPadding` と `AutoExpandMarginMaximumValue` を設して、それぞれ追加のスペースまたは可能な最大マージンを提供することにより、適用される自動マージンをさらにカスタマイズすることもできます。
 
 ## 軸範囲の例
 

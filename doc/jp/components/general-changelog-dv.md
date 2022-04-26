@@ -14,7 +14,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **{PackageVerChanges-21-2.1}**
 
 > [!NOTE]
-> The following breaking changes were introduced
+> 以下の重大な変更が導入されました。
 
 ### {PackageGrids}
 
@@ -24,7 +24,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 - 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
-#### 日付のピッカー 
+#### 日付ピッカー 
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス
@@ -34,9 +34,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
-> The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは $ProductName$ のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
-> For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
+> たとえば、 ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 
 ### 新しいコンポーネント
 
@@ -54,34 +54,34 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * [Ripple](inputs/ripple.md)
 * [Switch](inputs/switch.md)
 
-### Chart and Map Improvements
+### チャートとマップの改善
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
-* Changed `YAxisLabelLocation` property's type to **YAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart` and `CategoryChart`
-* Changed `XAxisLabelLocation` property's type to **XAxisLabelLocation** from **AxisLabelLocation** in `FinancialChart`
+* `FinancialChart` と `CategoryChart` の `YAxisLabelLocation` プロパティのタイプを **AxisLabelLocation** から **YAxisLabelLocation** に変更しました。
+* `FinancialChart` の **AxisLabelLocation** から **XAxisLabelLocation** に `XAxisLabelLocation` プロパティのタイプを変更しました。
 * `CategoryChart` に `XAxisLabelLocation` プロパティを追加しました。
-* Added support for representing geographic series of `XamGeographicMap` in a legend
+* 凡例で `XamGeographicMap` の地理的なシリーズを表すためのサポートが追加されました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
-* Added final value annotation by default in `FinancialChart`
-* Added new properties in Category Chart and Financial Chart:
+* `FinancialChart` にデフォルトで最終値の注釈を追加しました。
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
-   - `AreaFillOpacity` that allow changing opacity of series fill (e.g. Area chart)
-   - `MarkerThickness` that allows changing thickness of markers
+   - シリーズ塗りつぶしの不透明度を変更できる `AreaFillOpacity` (エリア チャートなど)
+   - マーカーの厚さを変更できる `MarkerThickness`
 * カテゴリ チャート、ファイナンシャル チャート、データ チャート、および地理マップに新しいプロパティを追加しました。
-   - `MarkerAutomaticBehavior` that allows which marker type is assigned to multiple series in the same chart
+   - 同じチャート内の複数のシリーズにどのマーカー タイプを割り当てることができる `MarkerAutomaticBehavior`
    - 凡例で表されるすべてのシリーズのバッジの形状を設定するための `LegendItemBadgeShape`
    - 凡例のすべてのシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
 * データ チャートと地理マップのシリーズに新しいプロパティを追加しました。
    - 凡例で表される特定のシリーズにバッジの形状を設定するための `LegendItemBadgeShape`
    - 凡例の特定のシリーズにバッジの複雑さを設定するための `LegendItemBadgeMode`
-* Changed default vertical crosshair line stroke from <span style="color:#000000">#000000</span> to <span style="color:#BBBBBB">#BBBBBB</span> in category chart and series
+* カテゴリ チャートとシリーズで、デフォルトの垂直十字線ストロークを<span style="color:#000000">#000000</span> から <span style="color:#BBBBBB">#BBBBBB</span> に変更しました。
 * 同じチャートにプロットされたすべてのシリーズのマーカーの図形を円に変更しました。これは、チャートの `MarkerAutomaticBehavior` プロパティを `SmartIndexed` 列挙値に設定することで元に戻すことができます。
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
-* Changed color palette of series and markers displayed in all charts to improve accessibility
+* アクセシビリティを向上させるために、すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました。
 
 古いのブラシ/アウトライン | 新のアウトライン/ブラシ
 -------------------- | -------------------
@@ -91,48 +91,47 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 * 新規機能:
     - [フィルター行](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid-load-save-layout.md)
+    - [列をグループ化するための GroupBy 領域](grids/data-grid-row-grouping.md)
     - [セルの結合](grids/data-grid-cell-merging.md)
 * 新規 API:
-    - `SelectionChanged` イベントを追加しました。Used to detect changes on selection interactions
-     e.g. Multiple row selection.
+    - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
 * 重大な変更:
-    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
-    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
+    - グリッドの SummaryScope プロパティのタイプを `DataSourceSummaryScope` から SummaryScope に変更しました。
+    - GroupHeaderDisplayMode プロパティのタイプを `DataSourceSectionHeaderDisplayMode` から GroupHeaderDisplayMode に変更しました。
 
 ## **{PackageVerChanges-21-1}**
-### New Visual Designs
+### 新しいビジュアル デザイン
 
 #### チャートとマップ
 
-This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
-* Changed Scatter High Density series’ colors for heat min property from <span style="color:#8a5bb1">#8a5bb1</span> to <span style="color:#000000">#000000</span>
-* Changed Scatter High Density series’ colors for heat max property from <span style="color:#ee5879">#ee5879</span> to <span style="color:#ee5879">#ee5879</span>
-* Changed Financial/Waterfall series’ `NegativeBrush` and `NegativeOutline` properties from <span style="color:#C62828">#C62828</span> to <span style="color:#ee5879">#ee5879</span>
+* heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
+* heat max プロパティの 散布高密度シリーズの色を <span style="color:#ee5879">#ee5879</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
+* ファイナンシャル/ウォーターフォール シリーズの `NegativeBrush` および `NegativeOutline` プロパティを <span style="color:#C62828">#C62828</span> から <span style="color:#ee5879">#ee5879</span> に変更しました。
 * マーカーの厚さを 1 pxから 2 pxに変更しました。
 * `PointSeries`、`BubbleSeries`、`ScatterSeries`、`PolarScatterSeries` のマーカーのアウトラインに一致するようにマーカーの塗りつぶしを変更しました。`MarkerFillMode` プロパティを Normal に設定すると、この変更を元に戻すことができます。
 * `TimeXAxis` と`OrdinalTimeXAxis` のラベリングを圧縮しました。
 * 新しいマーカー プロパティ:
-    - series.`MarkerFillMode` - Can be set to `MatchMarkerOutline` so the marker depends on the outline
-    - series.`MarkerFillOpacity` - Can be set to a value 0 to 1
-    - series.`MarkerOutlineMode` - Can be set to `MatchMarkerBrush` so the marker's outline depends on the fill brush color
-* New Series Property:
-    - series.`OutlineMode` - Can be set to toggle the series outline visibility. データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
-* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。Note, the `ComputedPlotAreaMarginMode`, listed below, will automatically set the margin when markers are enabled. The others are designed to specify a `Double` to represent the thickness, where PlotAreaMarginLeft etc. adjusts the space to all four sides of the chart:
+    - series.`MarkerFillMode` - マーカーがアウトラインに依存するように、`MatchMarkerOutline` に設定できます。
+    - series.`MarkerFillOpacity` - 0〜1 の値に設定できます。
+    - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、`MatchMarkerBrush` に設定できます。
+* 新シリーズ  プロパティ:
+    - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
+* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
     - chart.`PlotAreaMarginLeft`
     - chart.`PlotAreaMarginTop`
     - chart.`PlotAreaMarginRight`
     - chart.`PlotAreaMarginBottom`
     - chart.`ComputedPlotAreaMarginMode`
 * 新しい強調表示プロパティ:
-    - chart.`HighlightingMode` - Sets whether hovered or non-hovered series to fade, brighten
-    - chart.`HighlightingBehavior` - Sets whether the series highlights depending on mouse position e.g. directly over or nearest item
+    - chart.`HighlightingMode` - ホバーされたシリーズとホバーされていないシリーズをフェードまたは明るくするかを設定します。
+    - chart.`HighlightingBehavior` - 真上または最も近い項目など、マウスの位置に応じてシリーズを強調表示するかどうかを設定します。
     - 以前のリリースでは、強調表示はホバー時にフェードするように制限されていたことに注意してください。
-* Added Highlighting Stacked, Scatter, Polar, Radial, and Shape series:
-* Added Annotation layers to Stacked, Scatter, Polar, Radial, and Shape series:
+* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに強調表示を追加しました。
+* 積層型、散布、極座標、ラジアル、およびシェイプ シリーズに注釈レイヤーを追加しました。
 * 積層型シリーズ内の個々の積層フラグメントのデータ ソースをオーバーライドするためのサポートが追加されました。
 * 積層型、散布、範囲、極座標、ラジアル、シェイプ シリーズにカスタム スタイルのイベントを追加しました。
 * 垂直ズームをシリーズ コンテンツに自動的に同期するサポートが追加されました。
@@ -152,8 +151,8 @@ This release introduces several new and improved visual design and configuration
 
 #### チャート凡例
 
-* Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
-* Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
+* バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
+* `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズの強調表示を有効にします。
 
 #### 地理マップ
 
@@ -169,29 +168,29 @@ This release introduces several new and improved visual design and configuration
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
-* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
-* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
-* Added `SelectAllRows` - method.
-* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+* `EnterKeyBehaviors` プロパティの追加 - 別名 Excel スタイル ナビゲーション (Enter 動作) - Enter キーの動作を制御します。たとえば、オプションは none、edit、move up、down、left、right です。
+* `EnterKeyBehaviorAfterEdit` プロパティの追加 - 編集モードでは、このプロパティは Enter キーが押されたときを制御します。例えば、オプションは (下、上、右、左のセルに移動) です。
+* `SelectAllRows` メソッドを追加しました。
+* 行範囲の選択の追加 - `GridSelectionMode` プロパティを MultipleRow に設定すると、次の新しい機能が含まれるようになりました:
     - クリックしてドラッグし、行を選択します。
     - Shift キーを押しながらクリックして、複数の行を選択します。
     - Shift キーを押しながら上下の矢印キーを押して、複数の行を選択します。
-* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+* スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 
 ### {PackageInputs}
 
 #### 日付ピッカー
 
-* `ShowTodayButton` - Toggles Today button visibility
-* `Label` - Adds a label above the date value
-* `Placeholder` property - adds custom text when no value is selected
-* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
-* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
-* `FirstDayOfWeek` - Specifies first day of week
-* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
-* `ShowWeekNumbers` - Toggles Week number visibility
-* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+* `ShowTodayButton` - 現在の日付のボタンの表示を切り替えます。
+* `Label` - 日付値の上にラベルを追加します。
+* `Placeholder` プロパティ - 値が選択されていない場合にカスタム テキストを追加します。
+* `FormatString` - 入力日付文字列をカスタマイズします (例: `yyyy-MM-dd`)。
+* `DateFormat` - 選択した日付を LongDate または ShortDate のどちらとして表示するかを指定します。
+* `FirstDayOfWeek` - 週の最初の曜日を指定します。
+* `FirstWeekOfYear` - 年の最初の週をいつ表示するかを指定します。例えば、最初の 1 週間、最初の 4 日間の週です。
+* `ShowWeekNumbers` - 週番号の表示を切り替えます。
+* `MinDate` & `MaxDate` - 使用可能の選択できる日付の範囲を指定する日付制限。
 * アクセシビリティの追加
 
 <!-- end: Blazor -->
@@ -201,7 +200,7 @@ This release introduces several new and improved visual design and configuration
 <!-- Angular -->
 
 > [!NOTE]
-> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
+> このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > Angular {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 <!-- end: Angular -->
@@ -210,7 +209,7 @@ This release introduces several new and improved visual design and configuration
 
 <!-- WebComponents -->
 > [!NOTE]
-Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
+(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
 
 <div class="divider--half"></div>
 
