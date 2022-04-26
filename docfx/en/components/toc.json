@@ -1298,7 +1298,7 @@
      "status": "NEW"
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "Chip {ReleaseStatus_WebsInputs}",
     "href": "inputs/chip.md",
     "status": "NEW"
@@ -1368,7 +1368,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
     "href": "inputs/slider.md",
     "status": "NEW"
@@ -1385,7 +1385,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "Snackbar {ReleaseStatus_WebsInputs}",
     "href": "notifications/snackbar.md",
     "status": "NEW"
