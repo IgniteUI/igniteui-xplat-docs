@@ -65,7 +65,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
 * `FinancialChart` にデフォルトで最終値の注釈を追加しました。
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
