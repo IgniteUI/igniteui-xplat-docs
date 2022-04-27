@@ -22,13 +22,19 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 ### 使用方法
 
+<!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 `Toast` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbToastModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
@@ -36,11 +42,42 @@ import { defineComponents, IgcToastComponent } from 'igniteui-webcomponents';
 defineComponents(IgcToastComponent);
 ```
 
+<!-- Blazor -->
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 Toast コンポーネントを表示する最も簡単な方法は、`Show` メソッドを使用して、ボタン クリックで呼び出すことです。
 
 ```html
 <igc-button onclick="toast.show()" variant="contained">Show Toast</igc-button>
 <igc-toast id="toast">Toast Message</igc-toast>
+```
+
+```razor
+<IgbButton @onclick=@OnToastButtonClick Variant=@ButtonVariant.Contained>Show Toast</IgbButton>
+<IgbToast @ref="ToastRef">Toast Message</IgbToast>
+
+@code {
+    public IgbToast ToastRef { get; set; }
+
+    protected override void OnInitialized()
+    {
+        IgbButtonModule.Register(IgniteUIBlazor);
+        IgbToastModule.Register(IgniteUIBlazor);        
+    }
+
+    public void OnToastButtonClick(MouseEventArgs args)
+    {
+        if(this.ToastRef != null)
+        {
+            this.ToastRef.Show();
+        }
+    }
+}
 ```
 
 ## コード例
@@ -55,8 +92,50 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 <igc-button onclick="toast.toggle()" variant="contained">Toggle Toast</igc-button>
 <igc-button onclick="toast.keepOpen = !toast.keepOpen" variant="contained">Toggle keepOpen property</igc-button>
 <igc-button onclick="toast.displayTime = 8000" variant="contained">Set DisplayTime to 8000</igc-button>
-</div>
+
 <igc-toast id="toast">Toast Message</igc-toast>
+```
+
+```razor    
+<IgbButton @onclick=@OnToggleToastButtonClick Variant="ButtonVariant.Contained">Toggle Toast</IgbButton>
+<IgbButton @onclick=@OnToggleKeepOpenButtonClick Variant="ButtonVariant.Contained">Toggle KeepOpen Property</IgbButton>
+<IgbButton @onclick=@OnDisplayTimeButtonClick Variant="ButtonVariant.Contained">Set DisplayTime to 8000</IgbButton>
+    
+<IgbToast @ref=ToastRef>Toast Message</IgbToast>
+
+@code {
+    public IgbToast ToastRef{  get;  set; } 
+
+    protected override void OnInitialized()
+    {        
+        IgbButtonModule.Register(IgniteUIBlazor);
+        IgbToastModule.Register(IgniteUIBlazor);
+    }
+
+    public void OnToggleToastButtonClick(MouseEventArgs args)
+    {
+        if(this.ToastRef != null)
+        {
+            this.ToastRef.Toggle();
+        }
+    }
+
+    public void OnToggleKeepOpenButtonClick(MouseEventArgs args)
+    {
+        if(this.ToastRef != null)
+        {
+            this.ToastRef.KeepOpen = !this.ToastRef.KeepOpen;
+        }
+    }
+
+    public void OnDisplayTimeButtonClick(MouseEventArgs args)
+    {
+        if(this.ToastRef != null)
+        {
+            this.ToastRef.DisplayTime = 8000;
+        }
+    }
+}
 ```
 
 <code-view style="height: 230px"
@@ -93,5 +172,16 @@ igc-toast {
 
 ## その他のリソース
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -28,21 +28,37 @@ $ProductName$ Linear Progress Indicator コンポーネントは、変更でア�
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 `LinearProgress` を使用する前に、次のように登録する必要があります:
 
+```razor
+IgbLinearProgressModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcLinearProgressComponent);
 ```
-<!-- end: WebComponents -->
+
+<!-- Blazor -->
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
+
 
 `LinearProgress` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress Value=100 />
 ```
 
 ### 進行状況タイプ
@@ -51,6 +67,10 @@ defineComponents(IgcLinearProgressComponent);
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress Value=100 Variant=@ProgressBaseVariant.Success />
 ```
 
 ### ストライプ プログレス
@@ -76,6 +96,10 @@ defineComponents(IgcLinearProgressComponent);
 
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
+```
+
+```razor
+<IgbLinearProgress AnimationDuration=5000 Indeterminate=true />
 ```
 
 ### Text プロパティ
@@ -158,6 +182,13 @@ Linear Progress Indicator の API の詳細については、次のリンクを�
 <div class="divider"></div>
 
 ## その他のリソース
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
 
 <!-- WebComponents -->
 

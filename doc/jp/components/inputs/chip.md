@@ -23,13 +23,29 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 
 ## 使用方法
 
+<!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
 
 `Chip` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbChipModule.Register(IgniteUIBlazor);
+```
+
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
 import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
@@ -37,6 +53,22 @@ defineComponents(IgcChipComponent);
 ```
 
 `Chip` の使用を開始する最も簡単な方法は次のとおりです:
+
+```razor
+<div class="container sample vertical">
+    <IgbChip>Chip</IgbChip>
+</div>
+
+@code {
+
+    private IgbIcon RegisterIconRef { get; set; }
+
+    protected override void OnInitialized()
+    {
+        IgbChipModule.Register(IgniteUIBlazor);
+    }
+}
+```
 
 ```html
 <igc-chip></igc-chip>
@@ -48,10 +80,18 @@ defineComponents(IgcChipComponent);
 <igc-chip selectable></igc-chip>
 ```
 
+```razor
+<IgbChip Selectable="true"></IgbChip>
+```
+
 削除可能可能な Chip を表示するには、Chip の `Removable` プロパティを使用できます。
 
 ```html
 <igc-chip removable></igc-chip>
+```
+
+```razor
+<IgbChip Removable="true"></IgbChip>
 ```
 
 ## コード例
@@ -62,6 +102,10 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 
 ```html
 <igc-chip variant="success"></igc-chip>
+```
+
+```razor
+<IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
 <code-view style="height: 60px"
