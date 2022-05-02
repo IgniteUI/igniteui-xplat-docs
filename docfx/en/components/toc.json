@@ -21,9 +21,23 @@
     ]
   },
   {
+    "exclude": ["Blazor"],
     "name": "Getting Started",
     "href": "general-getting-started.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Getting Started",
+    "status": "",
+    "items": [
+      {
+        
+        "name": "Blazor Server App",
+        "href": "getting-started-blazor-server.md",
+        "status": ""
+      }
+    ]
   },
   {
     "exclude": ["Angular", "Blazor"],
