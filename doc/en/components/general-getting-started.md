@@ -419,7 +419,7 @@ The list of controls this additional CSS file applies to is as follows:
 - [Radio & Radio Group](inputs/radio.md)
 - [Ripple](inputs/ripple.md)
 - [Slider & Range Slider](inputs/slider.md)
-- [Snackbar](notifications/switch.md)
+- [Snackbar](notifications/snackbar.md)
 - [Switch](inputs/switch.md)
 - [Toast](notifications/toast.md)
 
