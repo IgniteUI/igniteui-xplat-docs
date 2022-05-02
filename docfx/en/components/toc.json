@@ -36,6 +36,12 @@
         "name": "Blazor Server App",
         "href": "getting-started-blazor-server.md",
         "status": ""
+      },
+      {
+        
+        "name": "Blazor WebAssembly App",
+        "href": "getting-started-blazor-client.md",
+        "status": ""
       }
     ]
   },
