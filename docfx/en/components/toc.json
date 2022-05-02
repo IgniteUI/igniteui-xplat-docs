@@ -4,14 +4,25 @@
     "header": true
   },
   {
-    "name": "Getting Started",
-    "href": "general-getting-started.md",
-    "status": ""
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Installation",
+    "status": "",
+    "items": [
+      {
+        "name": "Adding Licensed NuGet Feed",
+        "href": "general-nuget-feed.md",
+        "status": ""
+      },
+      {
+        "name": "Installing Ignite UI for Blazor",
+        "href": "installing-igniteui-blazor.md",
+        "status": ""
+      }
+    ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Adding Nuget Feed",
-    "href": "general-nuget-feed.md",
+    "name": "Getting Started",
+    "href": "general-getting-started.md",
     "status": ""
   },
   {
