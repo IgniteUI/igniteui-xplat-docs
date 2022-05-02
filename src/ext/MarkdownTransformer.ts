@@ -1402,12 +1402,14 @@ export class MarkdownTransformer {
     // generates list of topic paths from TOC nodes that were filter for specific platform
     generateTopics(paths: string[], tocNodes: TocNode[]) {
         for (const node of tocNodes) {
+            // generating path to referenced topic
             if (node.href !== undefined && node.href.indexOf(".md") > 0) {
                 paths.push(node.href);
                 // console.log('>> TOC match ' + node.href);
-                if (node.items !== undefined) {
-                    this.generateTopics(paths, node.items);
-                }
+            }
+            // generating paths to children topics
+            if (node.items !== undefined) {
+                this.generateTopics(paths, node.items);
             }
         }
     }
