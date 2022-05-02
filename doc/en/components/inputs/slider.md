@@ -138,7 +138,7 @@ If you want to format the thumb and tick label values, the slider provides `Valu
 
 ### Labels
 
-In some cases you would want to format the values of the slider as string values i.e. map the values `[0, 1, 2]` to `['Low', 'Medium', 'High']`. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
+In some cases you would want to format the values of the slider as string values i.e. map the values **[0, 1, 2]** to **['Low', 'Medium', 'High']**. For this scenario the slider allows you to define `SliderLabel` elements inside it. The text content of the slider labels is going to be used for thumb and tick labels. Please note that when slider labels are provided, the `Min`, `Max` and `Step` properties are automatically calculated so that they do not allow values that do not map to the provided labels. In the case of 'Low', 'Medium' and 'High' labels, `Min` is set to `0`, `Max` is set to `2` and `Step` is set to `1`.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
