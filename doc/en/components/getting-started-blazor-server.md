@@ -102,9 +102,25 @@ public void ConfigureServices(IServiceCollection services)
 Add an Ignite UI for Blazor component to your razor page:
 
 ```razor
-<IgbRadialGauge Height="250px" IsNeedleDraggingEnabled="true" Value="25" />
+<IgbCard style="width:350px">
+    <IgbCardMedia>
+        <img src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80" />
+    </IgbCardMedia>
+    <IgbCardHeader>
+        <h4>Jane Doe</h4>
+        <h6>Professional Photographer</h6>
+    </IgbCardHeader>
+    <IgbCardContent>Hi! I'm Jane, photographer and filmmaker.
+        Photography is a way of feeling, of touching,
+        of loving. What you have caught on film is captured forever...
+        it remembers little things, long after you have
+        forgotten everything.</IgbCardContent>
+    <IgbCardActions>
+        <IgbButton>More Info</IgbButton>
+    </IgbCardActions>
+</IgbCard>
 ```
 
 Build and run the Blazor app.
 
-<img src="../images/general/getting-started-blazor-radial-gauge.jpg" />
+<img src="../images/general/getting-started-blazor-card.jpg" />
