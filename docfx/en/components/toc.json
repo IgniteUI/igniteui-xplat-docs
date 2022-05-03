@@ -42,6 +42,12 @@
         "name": "Blazor WebAssembly App",
         "href": "getting-started-blazor-client.md",
         "status": ""
+      },
+      {
+        
+        "name": ".NET MAUI Blazor App",
+        "href": "getting-started-blazor-maui.md",
+        "status": ""
       }
     ]
   },
