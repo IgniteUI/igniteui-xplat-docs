@@ -109,6 +109,8 @@ You can also customize this annotation by setting the following properties:
 - `CalloutBackground`: This property is used to choose the brush for the annotation's background color. The default is to use the series brush.
 - `CalloutTextColor`: This property is used to choose the brush for the annotation's text color.
 - `CalloutStrokeThickness`: This property is used to choose the thickness for the callout backing.
+- `CalloutCornerRadius`: This property is used to curve the corners of the callouts.
+- `AllowedPositions`: This property is used to choose which positions that the callout layer is allowed to use. eg. top, bottom
 
 The following example demonstrates how to style the callout layer annotations by setting the properties listed above:
 
@@ -160,6 +162,19 @@ chart.calloutsXMemberPath = "index";
 chart.calloutsYMemberPath = "value";
 chart.calloutsLabelMemberPath = "info";
 ```
+
+<!-- Blazor -->
+### Timeline Styling
+
+The following example demonstrates how to style the data chart as a timeline with annotations by setting the `AllowedPositions` properties listed above:
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
+           alt="$Platform$ TimeLine with Callout Layer"
+           github-src="charts/data-chart/timeline-axis-type">
+</code-view>
+<!-- end: Blazor -->
 
 ## API Members
 
