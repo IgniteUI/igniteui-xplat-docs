@@ -2,21 +2,21 @@
 title: $Platform$ Chart Data Legend | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart with the data legend!
 _keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
-mentionedTypes: ["XamDataChart", "Legend", "DataLegend"]
+mentionedTypes: ["XamCategoryChart", "DataLegend", "Series"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $Platform$ Chart Data Legend
+# $Platform$ Data Legend
 
-The `DataLegend` is a component that works much like the `Legend`, but it shows values of series and provides many configuration properties for styling and formatting values. This legend updates when moving the mouse inside of the plot area of the `XamDataChart` and has a persistent state that remembers the last hovered point when the user's mouse pointer exits the plot area. It displays this content using a set of three rows and four columns.
+In $ProductName$, the `DataLegend` is a component that works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. This legend updates when moving the mouse inside of the plot area of the `XamDataChart` and has a persistent state that remembers the last hovered point when the user's mouse pointer exits the plot area. It displays this content using a set of three type of rows and four types of columns.
 
 ## $Platform$ Data Legend Rows
 
-The rows of the `DataLegend` from top to bottom include the header row, series row(s), and the summary row.
+The rows of the `DataLegend` include the header row, series row(s), and the summary row.
 
 The header row displays the axis label of the point that is hovered, and can be changed using the `HeaderText` property.
 
-The series row can actually be a set of rows corresponding to each series plotted in the chart. These rows will display the legend badge, series title, actual/abbreviated value of the the series, and a multiplier and unit, if specified.
+The series row can actually be a set of rows corresponding to each series plotted in the chart. These rows will display the legend badge, series title, actual/abbreviated value of the the series, and abbreviation symbol and unit, if specified.
 
 Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `SummaryText` property of the legend. Also, you can use the `SummaryType` property to customize whether you display the Total, Min, Max, or Average of series values in the summary row.
 
@@ -25,11 +25,32 @@ Finally, there is a summary row that displays the total of all series values. Th
 
 The columns of the `DataLegend` from left to right include the title column, value column, and units column.
 
-The title column displays legend badges and series titles, which come from the `Title` property of the different series plotted in the chart.
+The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
 
 The value column displays series values as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Procession of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
-The units column displays an abbreviation symbol and unit text, which can be set either on the `DataLegend` by setting the `SeriesUnitText` (???) or using the `Unit` (???) property on each series in the `XamDataChart`.
+The units column displays an abbreviation symbol and/or unit text, which can be set either on the `DataLegend` by setting the `UnitText` for all columns or using the the following properties on each series in the chart:
+
+* Category Series (e.g. ColumnSeries)
+    * ValueMemberAsLegendUnit="K"
+
+* Financial Price Series:
+    * OpenMemberAsLegendUnit="K"
+    * LowMemberAsLegendUnit="K"
+    * HighMemberAsLegendUnit="K"
+    * CloseMemberAsLegendUnit="K"
+    
+* Range Series:
+    * LowMemberAsLegendUnit="K"
+    * HighMemberAsLegendUnit="K"
+        
+* Radial Series:
+    * ValueMemberAsLegendUnit="K"
+    * AngleMemberAsLegendUnit="K"
+
+* Polar Series:
+    * RadiusMemberAsLegendUnit="K"
+    * AngleMemberAsLegendUnit="K"
 
 ## $Platform$ Data Legend Styling
 
@@ -41,11 +62,9 @@ The `DataLegend` provides automatic abbreviation of large numbers using its `Val
 
 You can customize the number of fractional digits that are displayed by setting the `ValueFormatMinFractions` and `ValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
 
-## $Platform$ Data Legend Culture Formatting
+## $Platform$ Data Legend Value Mode
 
-You have the ability to change the default decimal display of values within the `DataLegend` to be currency by changing the `ValueFormatMode` property of the control. The `DataLegend` also exposes the ability to modify the culture of the displayed currency symbol by using its `ValueFormatCulture` property and setting it to its corresponding culture tag.
-
-For example, the following sample demonstrates a chart with the `ValueFormatCulture` set to en-GB:
+You have the ability to change the default decimal display of values within the `DataLegend` to be currency by changing the `ValueFormatMode` property of the control. The `DataLegend` also exposes the ability to modify the culture of the displayed currency symbol by using its `ValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `ValueFormatCulture` set to "en-GB":
 
 ## $Platform$ Data Legend Styling Events
 
