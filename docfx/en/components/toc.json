@@ -15,7 +15,7 @@
       },
       {
         "name": "Installing Ignite UI for Blazor",
-        "href": "installing-igniteui-blazor.md",
+        "href": "general-installing-blazor.md",
         "status": ""
       }
     ]
@@ -32,21 +32,21 @@
     "status": "",
     "items": [
       {
-        
+
         "name": "Blazor Server App",
         "href": "general-getting-started.md",
         "status": ""
       },
       {
-        
+
         "name": "Blazor WebAssembly App",
-        "href": "getting-started-blazor-client.md",
+        "href": "general-getting-started-blazor-client.md",
         "status": ""
       },
       {
-        
+
         "name": ".NET MAUI Blazor App",
-        "href": "getting-started-blazor-maui.md",
+        "href": "general-getting-started-blazor-maui.md",
         "status": ""
       }
     ]

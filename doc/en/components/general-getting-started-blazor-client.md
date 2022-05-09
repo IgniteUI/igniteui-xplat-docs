@@ -28,7 +28,7 @@ Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for B
 
 In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
 
-For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](installing-igniteui-blazor.md) topic.
+For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
 ## Register Ignite UI for Blazor
 

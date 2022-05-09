@@ -7,6 +7,8 @@ _keywords: $ProductName$, Infragistics, Getting Started
 
 <!-- React -->
 
+This topic provides step-by-step instructions for creating React applications with Ignite UI for React
+
 ## Creating New React Project
 
 With above prerequisites installed, we can create a new React application.
@@ -27,6 +29,9 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 <!-- end: React -->
 
 <!-- WebComponents -->
+
+This topic provides step-by-step instructions for creating Web Components applications with Ignite UI for Web Components
+
 ## Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
@@ -307,7 +312,7 @@ Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for B
 
 In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
 
-For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](installing-igniteui-blazor.md) topic.
+For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
 
 ## Register Ignite UI for Blazor
 
