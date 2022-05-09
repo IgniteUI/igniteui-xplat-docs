@@ -10,6 +10,14 @@ namespace: Infragistics.Controls.Charts
 All notable changes for each version of $ProductName$ are documented on this page.
 
 <!-- Blazor -->
+
+## {22.1}
+#### Charts
+
+* Added Highlighting support for Stacked Series
+* New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
+* New `CalloutCornerRadius` for CalloutLayer. Used to round out the corners of the callouts.
+
 ## **{PackageVerChanges-21-2.1}**
 
 > [!NOTE]
