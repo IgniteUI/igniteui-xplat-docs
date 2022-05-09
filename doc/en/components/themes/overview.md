@@ -9,7 +9,7 @@ mentionedTypes: ["ConfigureTheme"]
 
 $ProductName$ ships with four distinct themes - Bootstrap, Material, Fluent, and Indigo. All component themes are baked into the components, however, a global style file is required for palettes, typography, and other global configurations to work.
 
-## Loading a Theme 
+## Loading a Theme
 
 To enable a theme, a theme file should be loaded. Depending on your project configuration you can either `import` or `link`.
 
@@ -29,7 +29,8 @@ Here's the complete list of all bundled themes and their path:
 
 ## Runtime Theme Switching
 
-> [!NOTE] Changing the theme at runtime also requires you to replace the global stylesheet from the table above.
+> [!NOTE]
+Changing the theme at runtime also requires you to replace the global stylesheet from the table above.
 
 $ProductName$ allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
 

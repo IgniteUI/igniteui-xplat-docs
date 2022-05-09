@@ -14,7 +14,6 @@ This topic contains the following sections:
 - Adding the Infragistics NuGet Feed with Visual Studio
 - Adding the Infragistics NuGet Feed with the NuGet CLI
 
-
 ## Adding with Visual Studio
 
 1 - In Visual Studio, select **Tools → NuGet Package Manager → Package Manager Settings**.

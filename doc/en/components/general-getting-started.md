@@ -5,37 +5,9 @@ _keywords: $ProductName$, Infragistics, Getting Started
 ---
 # Getting Started With $ProductName$
 
-The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
-
-> [!NOTE]
-> You can get an example of $Platform$ projects with $ProductName$ from this [GitHub]({RepoSamples}) repository or you can follow the following instructions on how to create a new $Platform$ project.
-
-<!-- Angular, React, WebComponents -->
-
-## Setting Up Computer
-
-Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $Platform$ app, including $ProductName$, and to build $Platform$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $Platform$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $Platform$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
-
-<div style="display:block;width:100%;margin:50px;">
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/nodejs.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://nodejs.org/en/download/"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
-        DOWNLOAD NODE JS
-      </a>
-    </div>
-    <div style="display:inline-block;width:45%;text-align:center;">
-      <img src="../images/general/vs-code.svg"
-           style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
-      <a target="_blank" href="https://code.visualstudio.com/download"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
-        DOWNLOAD VS CODE
-      </a>
-    </div>
-</div>
-
 <!-- React -->
+
+This topic provides step-by-step instructions for creating React applications with Ignite UI for React
 
 ## Creating New React Project
 
@@ -56,28 +28,10 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 
 <!-- end: React -->
 
-<!-- commented out because this section is present in the "Updating Existing App"
-You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
-
-- **npm install --save {PackageCharts} {PackageCore}**
-- **npm install --save {PackageExcel} {PackageCore}**
-- **npm install --save {PackageGauges} {PackageCore}**
-- **npm install --save {PackageGrids} {PackageCore}**
-- **npm install --save {PackageMaps} {PackageCore}**
-- **npm install --save {PackageSpreadsheet} {PackageCore}**
-
-Or
-
-- **yarn add {PackageCharts} {PackageCore}**
-- **yarn add {PackageExcel} {PackageCore}**
-- **yarn add {PackageGauges} {PackageCore}**
-- **yarn add {PackageGrids} {PackageCore}**
-- **yarn add {PackageMaps} {PackageCore}**
-- **yarn add {PackageSpreadsheet} {PackageCore}**
-
-Lastly,  -->
-
 <!-- WebComponents -->
+
+This topic provides step-by-step instructions for creating Web Components applications with Ignite UI for Web Components
+
 ## Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
@@ -335,160 +289,124 @@ The final result should look something like this screenshot:
 
 <!-- Blazor -->
 
-## Step 1 - Create a New Blazor Project
-The steps below describe how to create a new Blazor project. If you want to add Ignite UI for Blazor components to an existing application, go to the [**Install Ignite UI for Blazor Package**](#step-2---install-ignite-ui-for-blazor-package) section.
+This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
 
-1 - Start Visual Studio 2019 and click **Create a new project** on the start page, select the **Blazor App** template, and click **Next**.
+## Create a New Blazor Server Project
+The steps below describe how to create a new Blazor Server project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 
-<img src="../images/general/new-blazor-project.jpg" />
+Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
 
-2 - Provide a project name and description, and click **Create**
+<img src="../images/general/new-blazor-project-server.jpg" />
 
-<img src="../images/general/new-blazor-project-name.jpg" />
+Provide a project name and location, and click **Next**
 
-3 - Choose which Blazor template you'd like to use. Server or Web Assembly (WASM)
+<img src="../images/general/new-blazor-project-configure-server.jpg" />
 
-<img src="../images/general/new-blazor-project-template.jpg" />
+Specify additional project options, and click **Create**
 
-## Step 2 - Install Ignite UI for Blazor Package
+<img src="../images/general/new-blazor-project-info-server.jpg" />
 
-You can either install Ignite UI for Blazor package in **VS Package Manage Console** with this command:
+## Install Ignite UI for Blazor
 
-```cmd
-dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
+
+In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
+
+For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
+
+## Register Ignite UI for Blazor
+
+### .NET 6 Applications
+
+1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+
+```
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
+
+builder.Services.AddIgniteUIBlazor();
+
+var app = builder.Build();
 ```
 
-Alternatively, you can manually select a version by following these steps:
-
-1 - Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
-
-<img src="../images/general/nuget-manage-packages.jpg" />
-
-2 - In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
-
-<img src="../images/general/nuget-package-manager-browse.jpg" />
-
-> [!Note]
-> If you are a trial user, you can install the **IgniteUI.Blazor** trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial).
-
-> [!Note]
-> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
-
-## Step 3 - Register Ignite UI for Blazor Component
-
-1 - Add the IgniteUI for Blazor script just above the default Blazor script.
-
-In **Blazor Web Assembly** project - change **wwwroot/index.html** file:
+2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
 
 ```razor
-<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-<script src="_framework/blazor.webassembly.js"></script>
+@using IgniteUI.Blazor.Controls
 ```
 
-In **Blazor Server** project - change **Pages/_Host.cshtml** file:
+3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Layout.cshtml** file:
+
+```razor
+<head>
+    ...
+    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+</head>
+```
+
+### .NET 5 Applications
+
+1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:
+
+```razor
+public void ConfigureServices(IServiceCollection services)
+{
+    // ...
+    services.AddIgniteUIBlazor();
+}
+```
+
+2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+
+```razor
+@using IgniteUI.Blazor.Controls
+```
+
+3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Host.cshtml** file:
+
+```razor
+<head>
+    ...
+    <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+</head>
+```
+
+4 - Add Script Reference to the **Pages/_Host.cshtml** file:
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-There is an additional CSS file that you will need to link if you are using any of the input controls. You can link this CSS file using the following code in the same file as the scripts mentioned above:
+## Add Ignite UI for Blazor Component
+
+Add an Ignite UI for Blazor component to your razor page:
 
 ```razor
-<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+<IgbCard style="width:350px">
+    <IgbCardMedia>
+        <img src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80" />
+    </IgbCardMedia>
+    <IgbCardHeader>
+        <h4>Jane Doe</h4>
+        <h6>Professional Photographer</h6>
+    </IgbCardHeader>
+    <IgbCardContent>Hi! I'm Jane, photographer and filmmaker.
+        Photography is a way of feeling, of touching,
+        of loving. What you have caught on film is captured forever...
+        it remembers little things, long after you have
+        forgotten everything.</IgbCardContent>
+    <IgbCardActions>
+        <IgbButton>More Info</IgbButton>
+    </IgbCardActions>
+</IgbCard>
 ```
 
-The list of controls this additional CSS file applies to is as follows:
+Build and run the Blazor app.
 
-- [Avatar](layouts/avatar.md)
-- [Badge](inputs/badge.md)
-- [Button](inputs/button.md)
-- [Card](layouts/card.md)
-- [Calendar](scheduling/calendar.md)
-- [Checkbox](inputs/checkbox.md)
-- [Circular Progress](inputs/circular-progress.md)
-- [Dropdown](inputs/dropdown.md)
-- [Form](inputs/form.md)
-- [Icon](layouts/icon.md)
-- [Icon Button](inputs/icon-button.md)
-- [Input](inputs/input.md)
-- [Linear Progress](inputs/linear-progress.md)
-- [List](grids/list.md)
-- [NavBar](menus/navbar.md)
-- [Navigation Drawer](menus/navigation-drawer.md)
-- [Radio & Radio Group](inputs/radio.md)
-- [Ripple](inputs/ripple.md)
-- [Slider & Range Slider](inputs/slider.md)
-- [Snackbar](notifications/snackbar.md)
-- [Switch](inputs/switch.md)
-- [Toast](notifications/toast.md)
-
-2 - Register service modules for IgniteUI Blazor components:
-
-In **Blazor Web Assembly** project - change the **Program.cs** file:
-
-```razor
-using IgniteUI.Blazor.Controls;
-// ...
-
-public static async Task Main(string[] args)
-{
-    var builder = WebAssemblyHostBuilder.CreateDefault(args);
-    // ...
-    builder.Services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
-}
-```
-
-In **Blazor Server** project - change the **Startup.cs** file:
-
-```razor
-using IgniteUI.Blazor.Controls;
-// ...
-
-public void ConfigureServices(IServiceCollection services)
-{
-    // ...
-    services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
-}
-```
-
-Optionally, modules can be registered within razor files at the time the page is initialized if registering modules at the application level is not feasible:
-
-```razor
-@page "/pages/some-page-name"
-
-@using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor;
-
-@code
-{
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-        IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
-        // ...
-    }
-}
-```
-
-> [!Note]
-> In this example, we registered the **IgbGeographicMapModule** to use Blazor Radial Gauge component. However, you will need to register additional modules for other Blazor components and their features in order for them to work properly in your Blazor applications. Please see each component's documentation for more information on which modules they require.
-
-
-3 - Add a namespace to $ProductName$ components in **_Imports.razor** file:
-
-```razor
-@using IgniteUI.Blazor.Controls;
-```
-
-4 - Add Ignite UI for Blazor component in your razor page:
-
-```razor
-<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
-</IgbGeographicMap>
-```
-
-5 - Build and run the Blazor app.
+<img src="../images/general/getting-started-blazor-card.jpg" />
 
 <!-- end: Blazor -->
