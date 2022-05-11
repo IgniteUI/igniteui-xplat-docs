@@ -56,9 +56,9 @@ The chart can be scrolled by enabling the `VerticalViewScrollbarMode` and `Horiz
 
 These can be configured to the following options
 
-- `Persistent` - The scrollbars always stay visible, even when not in use.
-- `Fading` - The scrollbars disappear after use and reappear when the mouse is positioned near the edge.
-- `FadeToLine` - The scrollbars are reduced to a thinner line after use and grow after mouse moves over them again.
+- `Persistent` - The scrollbars always stay visible, as long as the chart is zoomed in, and fade away when fully zoomed out. 
+- `Fading` - The scrollbars disappear after use and reappear when the mouse is near their location.
+- `FadeToLine` - The scrollbars are reduced to a thinner line when zooming is not in use.
 - `None` - Default, no scrollbars are shown.
 
 The following example demonstrates enabling scrollbars.
