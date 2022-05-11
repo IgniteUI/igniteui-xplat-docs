@@ -50,6 +50,27 @@ Modifier Value | Corresponding Key
 `Apple`        | <kbd>Apple</kbd>
 `None`         | no keys
 
+## Chart Navigation with Scrollbars
+
+The chart can be scrolled by enabling the `VerticalViewScrollbarMode` and `HorizontalViewScrollbarMode` properties. 
+
+These can be configured to the following options
+
+- `Persistent` - The scrollbars always stay visible, even when not in use.
+- `Fading` - The scrollbars disappear after use and reappear when the mouse is positioned near the edge.
+- `FadeToLine` - The scrollbars are reduced to a thinner line after use and grow after mouse moves over them again.
+- `None` - Default, no scrollbars are shown.
+
+The following example demonstrates enabling scrollbars.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-scrollbars"
+           alt="$Platform$ Navigation Example"
+           github-src="charts/data-chart/chart-scrollbars">
+</code-view>
+
+<div class="divider--half"></div>
 
 ## Chart Navigation through Code
 
