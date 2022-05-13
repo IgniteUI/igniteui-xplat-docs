@@ -65,9 +65,9 @@ The following example demonstrates enabling scrollbars.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-scrollbars"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
            alt="$Platform$ Navigation Example"
-           github-src="charts/data-chart/chart-scrollbars">
+           github-src="charts/financial-chart/scrollbars">
 </code-view>
 
 <div class="divider--half"></div>
