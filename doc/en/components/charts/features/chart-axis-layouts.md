@@ -2,7 +2,7 @@
 title: $Platform$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Layouts
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics
-mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
+mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
 ---
 
 # $Platform$ Axis Layouts
@@ -64,6 +64,20 @@ The following example shows a Sin and Cos wave represented by a [Scatter Spline 
 
 <div class="divider--half"></div>
 
+<!-- Blazor -->
+### Axis Timeline Example
+
+The following example demonstrates how to style the data chart using the `TimeXAxis` as a timeline:
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
+           alt="$Platform$ TimeLine with Callout Layer"
+           github-src="charts/data-chart/timeline-axis-type">
+</code-view>
+
+<div class="divider--half"></div>
+<!-- end: Blazor -->
 
 ## Additional Resources
 
