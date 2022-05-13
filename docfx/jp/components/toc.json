@@ -4,15 +4,52 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "インストール",
+    "status": "",
+    "items": [
+      {
+        "name": "Adding Licensed NuGet Feed",
+        "href": "general-nuget-feed.md",
+        "status": ""
+      },
+      {
+        "name": "Installing Ignite UI for Blazor",
+        "href": "general-installing-blazor.md",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "exclude": ["Blazor"],
     "name": "作業の開始",
     "href": "general-getting-started.md",
     "status": ""
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
-    "name": "NuGet フィードの追加",
-    "href": "general-nuget-feed.md",
-    "status": ""
+    "name": "作業の開始",
+    "status": "",
+    "items": [
+      {
+
+        "name": "Blazor Server App",
+        "href": "general-getting-started.md",
+        "status": ""
+      },
+      {
+
+        "name": "Blazor WebAssembly App",
+        "href": "general-getting-started-blazor-client.md",
+        "status": ""
+      },
+      {
+
+        "name": ".NET MAUI Blazor App",
+        "href": "general-getting-started-blazor-maui.md",
+        "status": ""
+      }
+    ]
   },
   {
     "exclude": ["Angular", "Blazor"],

@@ -15,7 +15,6 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 - Visual Studio で Infragistics NuGet フィードを追加
 - NuGet CLI で Infragistics NuGet フィードを追加
 
-
 ## Visual Studio を使用した追加
 
 1 - Visual Studio で **[ツール] → [NuGet パッケージ マネージャー] → [パッケージ マネージャー設定]** を選択します。
