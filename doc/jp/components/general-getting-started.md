@@ -8,7 +8,7 @@ _language: ja
 
 <!-- React -->
 
-This topic provides step-by-step instructions for creating React applications with Ignite UI for React
+このトピックでは、Ignite UI for React を使用して React アプリケーションを作成するための手順を説明します。
 
 ## 新しい React プロジェクトの作成
 
@@ -31,7 +31,7 @@ yarn create react-app my-app-name --typescript
 
 <!-- WebComponents -->
 
-This topic provides step-by-step instructions for creating Web Components applications with Ignite UI for Web Components
+このトピックでは、Ignite UI for Web Components を使用して Web Components アプリケーションを作成するための手順を説明します。
 
 ## 手順 1 - Web コンポーネント プロジェクトの作成
 
@@ -290,36 +290,36 @@ npm run-script start
 
 <!-- Blazor -->
 
-This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
+このトピックでは、Visual Studio および Ignite UI for Blazor を使用して Blazor Server アプリケーションを作成するための手順を説明します。
 
-## Create a New Blazor Server Project
-The steps below describe how to create a new Blazor Server project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
+## 新しい Blazor Server プロジェクトを作成する
+以下の手順では、新しい Blazor Server プロジェクトを作成する方法を説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#ignite-ui-for-blazor-パッケージをインストール)セクションに移動します。
 
-Start Visual Studio 2022 and click **Create a new project** on the start page, select the **Blazor Server App** template, and click **Next**.
+Visual Studio 2022 を起動し、開始ページで [新しいプロジェクトの作成] をクリックし、**Blazor Server App** テンプレートを選択して、**[次へ]** をクリックします。
 
 <img src="../images/general/new-blazor-project-server.jpg" />
 
-Provide a project name and location, and click **Next**
+プロジェクト名と場所を入力し、**[次へ]** をクリックします。
 
 <img src="../images/general/new-blazor-project-configure-server.jpg" />
 
-Specify additional project options, and click **Create**
+追加のプロジェクト オプションを指定し、**[作成]** をクリックします。
 
 <img src="../images/general/new-blazor-project-info-server.jpg" />
 
-## Install Ignite UI for Blazor
+## Ignite UI for Blazor のインストール
 
-Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
+Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
-In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
+Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。**IgniteUI.Blazor** NuGet パッケージを検索してインストールします。
 
-For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
+NuGet を使用した Ignite UI for Blazor のインストールの詳細については、[Ignite UI for Blazor のインストール](general-installing-blazor.md) トピックを参照してください。
 
-## Register Ignite UI for Blazor
+## Ignite UI for Blazor の登録
 
-### .NET 6 Applications
+### .NET 6 アプリケーション
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```
 var builder = WebApplication.CreateBuilder(args);
@@ -333,13 +333,13 @@ builder.Services.AddIgniteUIBlazor();
 var app = builder.Build();
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - **IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Layout.cshtml** file:
+3 - **Pages/_Layout.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -348,9 +348,9 @@ var app = builder.Build();
 </head>
 ```
 
-### .NET 5 Applications
+### .NET 5 アプリケーション
 
-1 - Open the **Startup.cs** file and register the Ignite UI for Blazor Service by calling **services.AddIgniteUIBlazor()**:
+1 - **Startup.cs** ファイルを開き、**services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```razor
 public void ConfigureServices(IServiceCollection services)
@@ -360,13 +360,13 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - **IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **Pages/_Host.cshtml** file:
+3 - **Pages/_Host.cshtml** ファイルの **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -375,16 +375,16 @@ public void ConfigureServices(IServiceCollection services)
 </head>
 ```
 
-4 - Add Script Reference to the **Pages/_Host.cshtml** file:
+4 - スクリプト参照を **Pages/_Host.cshtml** ファイルに追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-## Add Ignite UI for Blazor Component
+## Ignite UI for Blazor コンポーネントの追加
 
-Add an Ignite UI for Blazor component to your razor page:
+Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 ```razor
 <IgbCard style="width:350px">
@@ -406,7 +406,7 @@ Add an Ignite UI for Blazor component to your razor page:
 </IgbCard>
 ```
 
-Build and run the Blazor app.
+Blazor アプリケーションをビルドして実行します。
 
 <img src="../images/general/getting-started-blazor-card.jpg" />
 

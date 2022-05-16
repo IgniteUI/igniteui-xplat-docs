@@ -9,12 +9,12 @@
     "status": "",
     "items": [
       {
-        "name": "Adding Licensed NuGet Feed",
+        "name": "ライセンス付き NuGet フィードの追加",
         "href": "general-nuget-feed.md",
         "status": ""
       },
       {
-        "name": "Installing Ignite UI for Blazor",
+        "name": "Ignite UI for Blazor のインストール",
         "href": "general-installing-blazor.md",
         "status": ""
       }
@@ -33,19 +33,19 @@
     "items": [
       {
 
-        "name": "Blazor Server App",
+        "name": "Blazor Server のアプリケーション",
         "href": "general-getting-started.md",
         "status": ""
       },
       {
 
-        "name": "Blazor WebAssembly App",
+        "name": "Blazor WebAssembly のアプリケーション",
         "href": "general-getting-started-blazor-client.md",
         "status": ""
       },
       {
 
-        "name": ".NET MAUI Blazor App",
+        "name": ".NET MAUI Blazor のアプリケーション",
         "href": "general-getting-started-blazor-maui.md",
         "status": ""
       }
