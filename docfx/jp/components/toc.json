@@ -266,7 +266,6 @@
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
         "name": "行のページング",
         "href": "grids/data-grid-row-paging.md",
         "status": ""
