@@ -106,7 +106,7 @@ The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C acce
 
 The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subTitle` and `content`) to give you full control over its styling.
 
-<code-view style="height: 380px"
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
            alt="$Platform$ Expansion Panel Styling"
