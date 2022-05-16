@@ -11,6 +11,17 @@ namespace: Infragistics.Controls.Charts
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Blazor -->
+
+## {22.1}
+#### Charts
+
+* Added highlighting support for Stacked Series
+* New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
+* New `CalloutCornerRadius` for CalloutLayer. Used to round out the corners of the callouts.
+* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` to enable scrollbars.
+* New `FavorLabellingScaleEnd`, only be on Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
+* New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
+
 ## **{PackageVerChanges-21-2.1}**
 
 > [!NOTE]

@@ -110,6 +110,8 @@ $Platform$ チャートのホバー操作と注釈は、シリーズ コレク�
 - `CalloutBackground`: このプロパティは注釈の背景色を選択するために使用されます。デフォルトはシリーズのブラシを使用します。
 - `CalloutTextColor`: このプロパティは注釈のテキストの色のブラシを選択するために使用されます。
 - `CalloutStrokeThickness`: このプロパティは、コールアウト バッキングの厚さを選択するために使用されます。
+- `CalloutCornerRadius`: This property is used to curve the corners of the callouts.
+- `AllowedPositions`: This property is used to choose which positions that the callout layer is allowed to use. eg. top, bottom
 
 次の例は、上記のプロパティを設定して、コールアウト レイヤーの注釈のスタイルを設定する方法を示しています。
 
@@ -161,6 +163,19 @@ chart.calloutsXMemberPath = "index";
 chart.calloutsYMemberPath = "value";
 chart.calloutsLabelMemberPath = "info";
 ```
+
+<!-- Blazor -->
+### Timeline Styling
+
+The following example demonstrates how to style the data chart as a timeline with annotations by setting the `AllowedPositions` properties listed above:
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
+           alt="$Platform$ TimeLine with Callout Layer"
+           github-src="charts/data-chart/timeline-axis-type">
+</code-view>
+<!-- end: Blazor -->
 
 ## API メンバー
 

@@ -42,12 +42,35 @@ $Platform$ データ チャートのナビゲーションは、タッチ、マ�
 
 ズーム操作とパン操作は、それぞれ `DragModifier` プロパティと `PanModifier` プロパティを設定し、修飾キーを使用して有効にすることもできます。これらのプロパティは以下の修飾キーに設定することができ、押すと対応する操作が実行されます。
 
-- Shift
-- Alt
-- Control
-- Windows キー
-- Apple キー
-- None
+修飾値 | 対応するキー
+---------------|------------------
+`Shift`        | <kbd>Shift</kbd>
+`Control`      | <kbd>Ctrl</kbd>
+`Windows`      | <kbd>Win</kbd>
+`Apple`        | <kbd>Apple</kbd>
+`None`         | なし
+
+## Chart Navigation with Scrollbars
+
+The chart can be scrolled by enabling the `VerticalViewScrollbarMode` and `HorizontalViewScrollbarMode` properties. 
+
+These can be configured to the following options
+
+- `Persistent` - The scrollbars always stay visible, as long as the chart is zoomed in, and fade away when fully zoomed out. 
+- `Fading` - The scrollbars disappear after use and reappear when the mouse is near their location.
+- `FadeToLine` - The scrollbars are reduced to a thinner line when zooming is not in use.
+- `None` - Default, no scrollbars are shown.
+
+The following example demonstrates enabling scrollbars.
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
+           alt="$Platform$ Navigation Example"
+           github-src="charts/financial-chart/scrollbars">
+</code-view>
+
+<div class="divider--half"></div>
 
 ## コードによるチャート ナビゲーション
 
