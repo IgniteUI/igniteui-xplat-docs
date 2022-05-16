@@ -25,7 +25,7 @@ Row Paging is enabled within the $ProductName$ Data Table / Data Grid by setting
 
 ## Overview
 
-From a UX perspective, table pagination has pros and cons.  According to a [recent article](https://www.uxmatters.com/mt/archives/2018/11/paging-scrolling-and-infinite-scroll.php) on UX Matters, here is a breakdown of the good and the bad when it comes to table pagination.
+From a UX perspective, table pagination has pros and cons. According to a [recent article](https://www.uxmatters.com/mt/archives/2018/11/paging-scrolling-and-infinite-scroll.php) on UX Matters, here is a breakdown of the good and the bad when it comes to table pagination.
 
 Table Pagination Benefits:
 
@@ -51,10 +51,8 @@ With the Ignite UI $Platform$ grid, we allow the developer to add paging, howeve
 
 ## $Platform$ Grid/Page Synchronization
 
-When users interact with the Grid like sorting and grouping, and you have enabled the $Platform$ Pager component on the grid, you need to use the following functions to ensure that the $Platform$ Pagination data is synchronized with the $Platform$ table display.
+When users interact with the Grid like sorting and grouping, and you have enabled the $Platform$ Pager on the grid, you need to use the following functions to ensure that the $Platform$ Pagination data is synchronized with the $Platform$ table display.
 
 - applySorts
 - applyGroups
 - applyFilters
-
-The <b>pageChanged</b> event on the Pager component will notify us when it changes the page and will provide the data for the new page.  The sample takes this data and passes it to the $Platform$ data grid for display.
