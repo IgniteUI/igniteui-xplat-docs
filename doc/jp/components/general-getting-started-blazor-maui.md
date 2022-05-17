@@ -1,45 +1,45 @@
 ---
-title: $Platform$ Data Visualization Tools | $Platform$ Data Visualization Tools | Getting Started | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Getting Started
+title: $Platform$ データ視覚化ツール | 作業の開始 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとストリーミング ファイナンシャルおよびビジネス チャートを使用して、データの視覚化を向上させます。
+_keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
-# Getting Started with Ignite UI for Blazor .NET MAUI
+# Ignite UI for Blazor .NET MAUI で作業を開始
 
-This topic provides step-by-step instructions for creating .NET MAUI Blazor applications with Ignite UI for Blazor using Visual Studio 2022 Preview.
+このトピックでは、Visual Studio 2022 プレビューを使用して Ignite UI for Blazor で .NET MAUI Blazor アプリケーションを作成するための手順を説明します。
 
 > [!NOTE]
 > .NET Multi-platform App UI (.NET MAUI) is currently in preview. This content relates to a pre-release product that may be substantially modified before it's released. Infragistics makes no warranties, express or implied, with respect to the information provided here.
 
-## Prerequisites
+## 前提条件
 
-* .NET SDK 6.0.101 or above
-* Visual Studio 2022 Preview 17.1 or above, with the following workloads:
-    - Mobile development with .NET
-    - ASP.NET and Web Development
+* .NET SDK 6.0.101 以降
+* Visual Studio 2022 プレビュー 17.1 以降および次のワークロード:
+    - .NET によるモバイル開発
+    - ASP.NET と Web 開発
 
-## Create a New .NET MAUI Blazor Project
-The steps below describe how to create a new .NET MAUI Blazor project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
+## 新しい. NET MAUI Blazor プロジェクトを作成する
+以下の手順では、新しい .NET MAUI Blazor プロジェクトを作成する方法について説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#ignite-ui-for-blazor-のインストール) セクションに移動します。
 
-Start Visual Studio 2022 Preview and click **Create a new project** on the start page, select the **.NET MAUI Blazor App (Preview)** template, and click **Next**.
+Visual Studio 2022 プレビューを起動し、開始ページで **[新しいプロジェクトの作成]** をクリックし、**.NET MAUI Blazor アプリ (プレビュー)** テンプレートを選択して、**[次へ]** をクリックします。
 
 <img src="../images/general/new-blazor-project-maui.jpg" />
 
-Provide a project name and location, and click **Create**
+プロジェクト名と場所を入力し、**[作成]** をクリックします。
 
 <img src="../images/general/new-blazor-project-configure-maui.jpg" />
 
-## Install Ignite UI for Blazor
+## Ignite UI for Blazor のインストール
 
-Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
+Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
-In Visual Studio, open the NuGet package manager by selecting **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**. Search for and install the **IgniteUI.Blazor** NuGet package.
+Visual Studio で、**[ツール]** → **[NuGet パッケージ マネージャー]** → **[ソリューションの NuGet パッケージの管理]** を選択して、NuGet パッケージ マネージャーを開きます。**IgniteUI.Blazor** NuGet パッケージを検索してインストールします。
 
-For more information on installing Ignite UI for Blazor using NuGet, read the [Installing Ignite UI for Blazor](general-installing-blazor.md) topic.
+NuGet を使用した Ignite UI for Blazor のインストールの詳細については、[Ignite UI for Blazor のインストール](general-installing-blazor.md) トピックを参照してください。
 
-## Register Ignite UI for Blazor
+## Ignite UI for Blazor の登録
 
-1 - Open the **MauiProgram.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```
 public static class MauiProgram
@@ -67,13 +67,13 @@ public static class MauiProgram
 }
 ```
 
-2 - Add the **IgniteUI.Blazor.Controls** namespace in the **_Imports.razor** file:
+2 - **IgniteUI.Blazor.Controls** 名前空間を **_Imports.razor** ファイルに追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
 
-3 - Add the Style Sheet in the **<head\>** element of the **wwwroot/index.html** file:
+3 - **wwwroot/index.html** ファイルの **<head\>** 要素にスタイル シートを追加します。
 
 ```razor
 <head>
@@ -82,16 +82,16 @@ public static class MauiProgram
 </head>
 ```
 
-4 - Add Script Reference to the **wwwroot/index.html** file:
+4 - スクリプト参照を **wwwroot/index.html** ファイルに追加します。
 
 ```razor
 	<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 	<script src="_framework/blazor.webview.js" autostart="false"></script>
 ```
 
-## Add Ignite UI for Blazor Component
+## Ignite UI for Blazor コンポーネントの追加
 
-Add an Ignite UI for Blazor component to your razor page:
+Razor ページに Ignite UI for Blazor コンポーネントの追加:
 
 ```razor
 <IgbCard style="width:350px">
@@ -113,9 +113,9 @@ Add an Ignite UI for Blazor component to your razor page:
 </IgbCard>
 ```
 
-Build and run the .NET MAUI Blazor app for Windows.
+Windows 用の .NET MAUI Blazor アプリをビルドして実行します。
 
 <img src="../images/general/getting-started-blazor-card-windows.jpg" />
 
 > [!NOTE]
-> For more information about building corss platform applications with .NET MAUI, visit the [Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-android).
+> .NET MAUI を使用したクロス プラットフォーム アプリケーションの構築の詳細については、[Microsoft のドキュメント](https://docs.microsoft.com/ja-jp/dotnet/maui/get-started/first-app?pivots=devices-android)を参照してください。

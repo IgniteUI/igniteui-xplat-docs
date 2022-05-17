@@ -1,45 +1,45 @@
 ---
-title: Installing Ignite UI for Blazor
-_description: How to install $Platform$ using nuget packages.
-_keywords: $Platform$, NuGet, Feed, Infragistics, Install
+title: Ignite UI for Blazor のインストール
+_description: NuGet パッケージを使用して $Platform$ をインストールする方法
+_keywords: $Platform$, NuGet, Feed, Infragistics, Install, フィード, インフラジスティックス, インストール
 mentionedTypes: []
 _language: ja
 ---
 
-# Installing Ignite UI for Blazor
+# Ignite UI for Blazor のインストール
 
-Ignite UI for Blazor is delivered via NuGet packages. To use the Ignite UI for Blazor components in your Blazor applications, you must first install the appropriate NuGet packages.
+Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
-There are three ways to install Ignite UI for Blazor using NuGet:
-* [Using Visual Studio](#using-visual-studio)
-* [Using the .NET CLI](#using-the-net-cli)
-* [Using the Package Manager](#using-the-package-manager)
+NuGet を使用してIgnite UI for Blazor をインストールするには、次の 3 つの方法があります:
+[Visual Studio を使用する場合](#visual-studio-を使用する場合)
+[Ignite NET CLI を使用する場合](#.net-cli-を使用する場合)
+[パッケージ マネージャーを使用する場合](#パッケージ-マネージャーを使用する場合)
 
-Licensed users should use the official licensed Ignite UI for Blazor NuGet packages provided on the [Infragistics Private NuGet Feed](./general-nuget-feed.md).
+ライセンスを取得したユーザーは、[Infragistics プライベート NuGet フィード](./general-nuget-feed.md) で提供されている公式のライセンス付き Ignite UI for Blazor NuGet パッケージを使用する必要があります。
 
 > [!Note]
-> Trial users can install the **IgniteUI.Blazor** trial NuGet package found on [NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor).
+> トライアル ユーザーは、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor) にある **IgniteUI.Blazor** トライアル NuGet パッケージをインストールできます。
 
-## Using Visual Studio
+## Visual Studio を使用する場合
 
-Right click the Solution, or Project, and select **Manage NuGet Packages for Solution**.
+ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
 
 <img src="../images/general/nuget-manage-packages.jpg" />
 
-In the package manager dialog, open the **Browse** tab, select the **Infragistics** package source, and install the **IgniteUI.Blazor** NuGet package into the project.
+パッケージ マネージャー ダイアログで **[参照]** タブを開き、**Infragistics** パッケージ ソースを選択して **IgniteUI.Blazor** NuGet パッケージをプロジェクトにインストールします。
 
 <img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
-> If you do not have an Infragistics package source available, learn how to add it by reading the [Infragistics NuGet feed topic](./general-nuget-feed.md).
+> Infragistics パッケージ ソースがない場合、追加するには[ Infragistics NuGet フィード トピック](./general-nuget-feed.md)を参照してください。
 
-## Using the .NET CLI
+## .NET CLI を使用する場合
 
 ```cmd
 > dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
 ```
 
-## Using the Package Manager
+## パッケージ マネージャーを使用する場合
 
 ```cmd
 PM> Install-Package IgniteUI.Blazor -Version {PackageVerLatest}
