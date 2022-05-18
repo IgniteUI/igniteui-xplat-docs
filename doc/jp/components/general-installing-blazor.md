@@ -10,12 +10,12 @@ _language: ja
 
 Ignite UI for Blazor は、NuGet パッケージで提供されます。Blazor アプリケーションで Ignite UI for Blazor コンポーネントを使用するには、最初に適切な NuGet パッケージをインストールする必要があります。
 
-NuGet を使用してIgnite UI for Blazor をインストールするには、次の 3 つの方法があります:
-[Visual Studio を使用する場合](#visual-studio-を使用する場合)
-[Ignite NET CLI を使用する場合](#.net-cli-を使用する場合)
-[パッケージ マネージャーを使用する場合](#パッケージ-マネージャーを使用する場合)
+NuGet を使用して Ignite UI for Blazor をインストールするには、次の 3 つの方法があります:
+* [Visual Studio を使用する場合](#visual-studio-を使用する場合)
+* [Ignite NET CLI を使用する場合](#net-cli-を使用する場合)
+* [パッケージ マネージャーを使用する場合](#パッケージ-マネージャーを使用する場合)
 
-ライセンスを取得したユーザーは、[Infragistics プライベート NuGet フィード](./general-nuget-feed.md) で提供されている公式のライセンス付き Ignite UI for Blazor NuGet パッケージを使用する必要があります。
+ライセンスを取得したユーザーは、[Infragistics プライベート NuGet フィード](./general-nuget-feed.md)で提供されている公式のライセンス付き Ignite UI for Blazor NuGet パッケージを使用する必要があります。
 
 > [!Note]
 > トライアル ユーザーは、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor) にある **IgniteUI.Blazor** トライアル NuGet パッケージをインストールできます。
