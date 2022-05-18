@@ -52,13 +52,50 @@ Items provide `disabled`, `selected` and `expanded` properties, which give you o
 
 Items can be declared using one of the following approaches.
 
-- Declaring the tree and its items by specifying the item hierarchy and iterating through a data set - The tree items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
+- Declaring the tree and its items by specifying the item hierarchy and iterating through a data set
+
+```html
+<igc-tree>
+    ${data.map((x) => html`
+        <igc-tree-item .value=${x} .expanded=${x.expanded} .selected=${x.selected} .label=${x.value}>
+              ${x.children.map((y) => html`
+                  <igc-tree-item .value=${y} .expanded=${y.expanded} .selected=${y.selected}>
+                      <img slot="label" src=${y.image} alt=${y.imageAlt}>
+                  </igc-tree-item>
+              `
+        </igc-tree-item>
+    `
+</igc-tree>
+```
+
+Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
 
 - Declaring a tree by creating static unbound item
-
 <!-- WebComponents -->
 
 In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
+
+```html
+<igc-tree>
+    <igc-tree-item>
+        <div slot="label">
+            I am a parent item 1
+	        <img src="hard_coded_src.webb" alt="Alt Text">
+        </div>
+	    <igc-tree-item .label="I am a child item 1">    
+	    </igc-tree-item>
+    </igc-tree-item>
+	
+    <igc-tree-item>
+        <div slot="label">
+            I am a parent item 2
+	        <img src="hard_coded_src.webb" alt="Alt Text">
+        </div>
+	    <igc-tree-item .label="I am a child item 1">
+	    </igc-tree-item>
+    </igc-tree-item>
+</igc-tree>
+```
 
 > [!NOTE]
 > You can provide a custom slot content for each `TreeItem` indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
@@ -69,6 +106,15 @@ In order to render a tree you do not necessarily need a data set - individual it
 
 When an item should render a focusable element (e.g. link, button), enable the `Tree`'s `hasFocusableContent` property. This will ensure that the proper aria role is assigned to the items's DOM elements.
 
+```html
+<igc-tree hasFocusableContent>
+    <igc-tree-item>
+        <p slot="label">
+            <a href="https://www.infragistics.com/" target="_blank">Infragistics</a>
+        </p>
+    </igc-tree-item>
+</igc-tree>
+```
 ### Item Interactions
 The `Tree` provides the following API methods for item interactions:
 - `expand` - expands all items. If an items array is passed, expands only the specified items.
@@ -84,9 +130,17 @@ In order to setup item selection in the $ProductName$ Tree, you just need to set
 In the `Tree` by default item selection is disabled. Users cannot select or deselect an item through UI interaction, but these actions can still be completed through the provided API method.
 ### Multiple
 To enable multiple item selection in the `Tree` just set the `selection` property to **Multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+```html
+<igc-tree selection="multiple">
+</igc-tree>
+```
 ### Cascade
 To enable cascade item selection in the `Tree`, just set the selection property to **Cascade**. This will render a checkbox for every item. 
 
+```html
+<igc-tree selection="cascade">
+</igc-tree>
+```
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
 ## Keyboard Navigation
