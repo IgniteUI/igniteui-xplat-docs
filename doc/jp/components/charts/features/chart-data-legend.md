@@ -1,78 +1,78 @@
 ---
-title: $Platform$ Chart Data Legend | Data Visualization Tools | Infragistics
-_description: Use Infragistics $ProductName$ chart with the data legend!
-_keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
+title: $Platform$ チャート データの凡例 | データ視覚化ツール | インフラジスティックス
+_description: インフラジスティックス $ProductName$ チャートでデータ凡例を使用する
+_keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics, $Platform$ チャート、チャート凡例、凡例、凡例タイプ、インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "DataLegend", "Series"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $Platform$ Data Legend
+# $Platform$ データ凡例
 
-In $ProductName$, the `DataLegend` is a component that works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. This legend updates when moving the mouse inside of the plot area of the `XamDataChart` and has a persistent state that remembers the last hovered point when the user's mouse pointer exits the plot area. It displays this content using a set of three type of rows and four types of columns.
+$ProductName$ では、`DataLegend` は `Legend` のように機能するコンポーネントですが、シリーズの値の表示や、シリーズの行と値の列のフィルタリング、値のスタイルと書式を設定するための多くの構成プロパティを提供します。この凡例は、`XamDataChart` のプロット領域内でマウスを移動すると更新され、ユーザーのマウス ポインターがプロット領域を離れたときに最後にホバーされたポイントを記憶する永続的な状態になります。このコンテンツは、3 種類の行と 4 種類の列のセットを使用して表示されます。
 
-## $Platform$ Data Legend Rows
+## $Platform$ データ凡例行
 
-The rows of the `DataLegend` include the header row, series row(s), and the summary row.
+`DataLegend` の行には、ヘッダー行、シリーズ行、および集計行が含まれます。
 
-The header row displays the axis label of the point that is hovered, and can be changed using the `HeaderText` property.
+ヘッダー行には、ホバーされたポイントの軸ラベルが表示され、`HeaderText` プロパティを使用して変更できます。
 
-The series row can actually be a set of rows corresponding to each series plotted in the chart. These rows will display the legend badge, series title, actual/abbreviated value of the the series, and abbreviation symbol and unit, if specified.
+シリーズ行は、実際には、チャートにプロットされた各シリーズに対応する行のセットにすることができます。これらの行には、凡例バッジ、シリーズ タイトル、シリーズの実際の値 / 省略値、および指定されている場合は省略記号と単位が表示されます。
 
-Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `SummaryText` property of the legend. Also, you can use the `SummaryType` property to customize whether you display the Total, Min, Max, or Average of series values in the summary row.
+最後に、すべてのシリーズ値の合計を表示する集計行があります。デフォルトの集計タイトルは、凡例の `SummaryText` プロパティを使用して変更できます。また、`SummaryType` プロパティを使用して、シリーズ値の合計、最小、最大、または平均を集計行に表示するかどうかをカスタマイズできます。
 
 
-## $Platform$ Data Legend Columns
+## $Platform$ データ凡例の列
 
-The columns of the `DataLegend` from left to right include the title column, value column, and units column.
+`DataLegend` の左から右への列には、タイトル列、値列、および単位列が含まれます。
 
-The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
+タイトル列には、チャートにプロットされたさまざまな`シリーズ`の `Title` プロパティに由来する凡例バッジとシリーズ タイトルが表示されます。
 
-The value column displays series values as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Procession of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
+値の列には、一連の値が省略形のテキストとして表示されます。このテキストは、`ValueFormatAbbreviation` プロパティを使用してフォーマットでき、このプロパティを `Auto` または `Shared` に設定することで、すべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の処理は、最小桁数と最大桁数にそれぞれ `ValueFormatMinFractions` と `ValueFormatMaxFractions` を使用して制御されます。
 
-The units column displays an abbreviation symbol and/or unit text, which can be set either on the `DataLegend` by setting the `UnitText` for all columns or using the the following properties on each series in the chart:
+単位列には、省略記号や単位テキストが表示されます。これらは、すべての列に `UnitText` を設定するか、チャートの各シリーズで次のプロパティを使用して、`DataLegend` で設定できます:
 
-* Category Series (e.g. ColumnSeries)
+* カテゴリ シリーズ (例: ColumnSeries)
     * ValueMemberAsLegendUnit="K"
 
-* Financial Price Series:
+* 財務物価シリーズ:
     * OpenMemberAsLegendUnit="K"
     * LowMemberAsLegendUnit="K"
     * HighMemberAsLegendUnit="K"
     * CloseMemberAsLegendUnit="K"
     
-* Range Series:
+* 範囲シリーズ:
     * LowMemberAsLegendUnit="K"
     * HighMemberAsLegendUnit="K"
         
-* Radial Series:
+* ラジアル シリーズ:
     * ValueMemberAsLegendUnit="K"
     * AngleMemberAsLegendUnit="K"
 
-* Polar Series:
+* 極座標シリーズ:
     * RadiusMemberAsLegendUnit="K"
     * AngleMemberAsLegendUnit="K"
 
-## $Platform$ Data Legend Styling
+## $Platform$ データ凡例のスタイル設定
 
-The `DataLegend` provides properties for styling each type of column. Each of these properties begins with Title, Label, Value, or Units, and you can style the text's color, font, and margin. For example, if you wanted to set the text color of each of these, you would set the `TitleTextColor`, `LabelTextColor`, `ValueTextColor`, and `UnitsTextColor` properties.
+`DataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。
 
-## $Platform$ Data Legend Value Formatting
+## $Platform$ データ凡例値の書式設定
 
-The `DataLegend` provides automatic abbreviation of large numbers using its `ValueFormatAbbreviation` property. This adds a multiplier in the units column such as kilo, million, billion, etc.
+`DataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。
 
-You can customize the number of fractional digits that are displayed by setting the `ValueFormatMinFractions` and `ValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
+`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。
 
-## $Platform$ Data Legend Value Mode
+## $Platform$ データ凡例値モード
 
-You have the ability to change the default decimal display of values within the `DataLegend` to be currency by changing the `ValueFormatMode` property of the control. The `DataLegend` also exposes the ability to modify the culture of the displayed currency symbol by using its `ValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `ValueFormatCulture` set to "en-GB":
+コントロールの `ValueFormatMode` プロパティを変更することにより、`DataLegend` 内の値のデフォルトの 10 進表示を通貨に変更することができます。`DataLegend` は、その `ValueFormatCulture` プロパティに対応するカルチャ タグを設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`ValueFormatCulture` が 「en-GB」 に設定されたチャートを示しています:
 
-## $Platform$ Data Legend Styling Events
+## $Platform$ データ凡例のスタイル設定イベント
 
-The `DataLegend` has three events that fire when rendering their corresponding row. These events are listed below with a description of what they are designed to be used for:
+`DataLegend` には、対応する行を描画するときに発生する 3 つのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
 
-- `StyleHeaderRow`: This event fires once when rendering the header row.
-- `StyleSeriesRow`: This event fires once for each series row which allows conditional styling of the values of the series.
-- `StyleSummaryRow`: This event fires once when rendering the summary row.
+- `StyleHeaderRow`: このイベントは、ヘッダー行を描画するときに 1 回発生します。
+- `StyleSeriesRow`: このイベントは、シリーズの行ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
+- `StyleSummaryRow`: このイベントは、集計行を描画するときに 1 回発生します。
 
-Each of the above events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series.
+上記の各イベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。

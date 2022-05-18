@@ -66,14 +66,14 @@ $Platform$ `XamDataChart` の同じプロット領域に複数の軸を共有し
 <div class="divider--half"></div>
 
 <!-- Blazor -->
-### Axis Timeline Example
+### 軸タイムラインの例
 
-The following example demonstrates how to style the data chart using the `TimeXAxis` as a timeline:
+次の例は、`TimeXAxis` をタイムラインとして使用してデータ チャートのスタイルを設定する方法を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
-           alt="$Platform$ TimeLine with Callout Layer"
+           alt="コールアウト レイヤーを使用した $Platform$ タイムライン"
            github-src="charts/data-chart/timeline-axis-type">
 </code-view>
 

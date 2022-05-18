@@ -50,23 +50,23 @@ $Platform$ データ チャートのナビゲーションは、タッチ、マ�
 `Apple`        | <kbd>Apple</kbd>
 `None`         | なし
 
-## Chart Navigation with Scrollbars
+## スクロールバーを使用したチャート ナビゲーション
 
-The chart can be scrolled by enabling the `VerticalViewScrollbarMode` and `HorizontalViewScrollbarMode` properties. 
+チャートは、`VerticalViewScrollbarMode` プロパティと `HorizontalViewScrollbarMode` プロパティを有効にすることでスクロールできます。 
 
-These can be configured to the following options
+これらは、次のオプションに構成できます:
 
-- `Persistent` - The scrollbars always stay visible, as long as the chart is zoomed in, and fade away when fully zoomed out. 
-- `Fading` - The scrollbars disappear after use and reappear when the mouse is near their location.
-- `FadeToLine` - The scrollbars are reduced to a thinner line when zooming is not in use.
-- `None` - Default, no scrollbars are shown.
+- `Persistent` - チャートがズームインされている限り、スクロールバーは常に表示されたままになり、完全にズームアウトされるとフェードアウトします。 
+- `Fading` - スクロールバーは使用後に消え、マウスがその位置に近づくと再び表示されます。
+- `FadeToLine` - ズームを使用していないときは、スクロールバーが細い線に縮小されます。
+- `None` - 既定値で、スクロールバーは表示されません。
 
-The following example demonstrates enabling scrollbars.
+次の例は、スクロールバーを有効にする方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
-           alt="$Platform$ Navigation Example"
+           alt="$Platform$ ナビゲーションの例"
            github-src="charts/financial-chart/scrollbars">
 </code-view>
 

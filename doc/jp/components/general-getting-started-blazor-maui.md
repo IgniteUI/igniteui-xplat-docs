@@ -9,7 +9,7 @@ _language: ja
 このトピックでは、Visual Studio 2022 プレビューを使用して Ignite UI for Blazor で .NET MAUI Blazor アプリケーションを作成するための手順を説明します。
 
 > [!NOTE]
-> .NET Multi-platform App UI (.NET MAUI) is currently in preview. This content relates to a pre-release product that may be substantially modified before it's released. Infragistics makes no warranties, express or implied, with respect to the information provided here.
+> .NET Multi-platform App UI (.NET MAUI) は現在プレビュー中です。このコンテンツは、リリース前に大幅に変更される可能性のあるプレリリース製品に関連しています。インフラジスティックスは、ここに提供される情報に関して、明示または黙示を問わず、いかなる保証も致しません。
 
 ## 前提条件
 

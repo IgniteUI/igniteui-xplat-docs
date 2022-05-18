@@ -13,14 +13,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 ## {22.1}
-#### Charts
+#### チャート
 
-* Added highlighting support for Stacked Series
-* New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
-* New `CalloutCornerRadius` for CalloutLayer. Used to round out the corners of the callouts.
-* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` to enable scrollbars.
-* New `FavorLabellingScaleEnd`, only be on Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
-* New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
+* 積層型シリーズのハイライト サポートが追加されました。
+* CalloutLayer の 新しい `AllowedPositions`。チャート内のどこにコールアウトを配置するかを制限するために使用されます。 
+* CalloutLayer の新しい `CalloutCornerRadius`。コールアウトの角を丸めるために使用されます。
+* スクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` と `VerticalViewScrollbarMode`。
+* 新しい `FavorLabellingScaleEnd` は、数値軸 (NumericX、NumericY、PercentChangeY など) にのみ存在します。 
+* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
 
 ## **{PackageVerChanges-21-2.1}**
 
