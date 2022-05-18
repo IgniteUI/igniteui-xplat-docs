@@ -78,7 +78,7 @@ The `IgcExpansionPanel` control allows all sorts of content to be added inside o
 
 The `IgcExpansionPanel` allows for easy customization of the header throught the eposed *title*, *subTitle* and *indicator* slots.
 
-Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start** and **end**. 
+Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**. 
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
@@ -104,7 +104,7 @@ The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C acce
 
 ## Styling
 
-The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subTitle` and `content`) to give you full control over its styling.
+The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
