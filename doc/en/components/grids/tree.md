@@ -2,12 +2,12 @@
 title: $Platform$ Tree Component | Infragistics
 _description: Infragistics' $Platform$ Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how $ProductName$ can help you better display your data!
 _keywords: $Platform$ Tree, Item Tree, overview, $ProductName$, Infragistics
-mentionedTypes: ['Tree', 'TreeItem', 'CircularProgress']
+mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 ---
 
 # $Platform$ Tree Overview
 
-The $ProductName$ Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, bi-state and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
+The $ProductName$ Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
 
 ## $Platform$ Tree Example
@@ -36,9 +36,9 @@ Before using the `Tree`, you need to register it as follows:
 
 
 ```ts
-import {defineComponents, IgcTreeComponent} from 'igniteui-webcomponents';
+import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
 
-defineComponents(IgcTreeComponent);
+defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
 <!-- end: WebComponents -->
 
@@ -47,8 +47,8 @@ The simplest way to start using the `Tree` is as follows:
 
 ### Declaring a tree
 `TreeItem` is the representation of every item that belongs to the `Tree`.  
-Items provide `disabled`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement. 
-`value` property can be used to add a reference to the data entry the item represents.
+Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement. 
+The `value` property can be used to add a reference to the data entry the item represents.
 
 Items can be declared using one of the following approaches.
 
@@ -57,10 +57,10 @@ Items can be declared using one of the following approaches.
 ```html
 <igc-tree>
     ${data.map((x) => html`
-        <igc-tree-item .value=${x} .expanded=${x.expanded} .selected=${x.selected} .label=${x.value}>
+        <igc-tree-item .value=${x} .expanded=${x.expanded} .label=${x.label}>
               ${x.children.map((y) => html`
-                  <igc-tree-item .value=${y} .expanded=${y.expanded} .selected=${y.selected}>
-                      <img slot="label" src=${y.image} alt=${y.imageAlt}>
+                  <igc-tree-item .value=${y} .expanded=${y.expanded}>
+                      <span slot="label">${y.label}</slot>
                   </igc-tree-item>
               `
         </igc-tree-item>
@@ -70,7 +70,7 @@ Items can be declared using one of the following approaches.
 
 Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
 
-- Declaring a tree by creating static unbound item
+- Declaring a tree by creating static unbound items
 <!-- WebComponents -->
 
 In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
@@ -82,7 +82,7 @@ In order to render a tree you do not necessarily need a data set - individual it
             I am a parent item 1
 	        <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item .label="I am a child item 1">    
+	    <igc-tree-item label="I am a child item 1">    
 	    </igc-tree-item>
     </igc-tree-item>
 	
@@ -91,30 +91,17 @@ In order to render a tree you do not necessarily need a data set - individual it
             I am a parent item 2
 	        <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item .label="I am a child item 1">
+	    <igc-tree-item label="I am a child item 1">
 	    </igc-tree-item>
     </igc-tree-item>
 </igc-tree>
 ```
 
 > [!NOTE]
-> You can provide a custom slot content for each `TreeItem` indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
+> You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
 
 <!-- end: WebComponents -->
 
-### Items with focusable content
-
-When an item should render a focusable element (e.g. link, button), enable the `Tree`'s `hasFocusableContent` property. This will ensure that the proper aria role is assigned to the items's DOM elements.
-
-```html
-<igc-tree hasFocusableContent>
-    <igc-tree-item>
-        <p slot="label">
-            <a href="https://www.infragistics.com/" target="_blank">Infragistics</a>
-        </p>
-    </igc-tree-item>
-</igc-tree>
-```
 ### Item Interactions
 The `Tree` provides the following API methods for item interactions:
 - `expand` - expands all items. If an items array is passed, expands only the specified items.
@@ -129,13 +116,13 @@ In order to setup item selection in the $ProductName$ Tree, you just need to set
 ### None
 In the `Tree` by default item selection is disabled. Users cannot select or deselect an item through UI interaction, but these actions can still be completed through the provided API method.
 ### Multiple
-To enable multiple item selection in the `Tree` just set the `selection` property to **Multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+To enable multiple item selection in the `Tree` just set the `selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
 ```html
 <igc-tree selection="multiple">
 </igc-tree>
 ```
 ### Cascade
-To enable cascade item selection in the `Tree`, just set the selection property to **Cascade**. This will render a checkbox for every item. 
+To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item. 
 
 ```html
 <igc-tree selection="cascade">
@@ -150,20 +137,20 @@ The `Tree` navigation is compliant with W3C accesibility standards and convenien
 
 **Key Combinations**
 
- - <kbd>Arrow Down</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item
- - <kbd>Ctrl + Arrow Down</kbd> - navigates to the next visible item. Does nothing if on the LAST item
- - <kbd>Arrow Up</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item
- - <kbd>Ctrl + Arrow Up</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item
- - <kbd>Arrow Left</kbd> - on an expanded parent item, collapses it. If on a child item, moves to its parent item.
- - <kbd>Arrow Right</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it.
- - <kbd>Home</kbd> - navigates to the FIRST item
- - <kbd>End</kbd> - navigates to the LAST visible item
- - <kbd>Tab</kbd> - navigates to the next focusable element on the page, outside of the tree
- - <kbd>Shift + Tab</kbd> - navigates to the previous focusable element on the page, outside of the tree
+ - <kbd>Arrow Down</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
+ - <kbd>Ctrl + Arrow Down</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
+ - <kbd>Arrow Up</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
+ - <kbd>Ctrl + Arrow Up</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
+ - <kbd>Arrow Left</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
+ - <kbd>Arrow Right</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
+ - <kbd>Home</kbd> - navigates to the FIRST item.
+ - <kbd>End</kbd> - navigates to the LAST visible item.
+ - <kbd>Tab</kbd> - navigates to the next focusable element on the page, outside of the tree.
+ - <kbd>Shift + Tab</kbd> - navigates to the previous focusable element on the page, outside of the tree.
  - <kbd>Space</kbd> - toggles selection of the current item. Marks the node as active.
- - <kbd>Shift + Space</kbd> - toggles selection of all items between the active one and the one pressed Space while holding Shift if selection is enabled
- - <kbd>Enter</kbd> - activates the focused item. If the item has link in it, open the link
- - <kbd>*</kbd> - expands the item and all sibling items on the same level
+ - <kbd>Shift + Space</kbd> - toggles selection of all items between the active one and the one pressed Space while holding Shift if selection is enabled.
+ - <kbd>Enter</kbd> - activates the focused item. If the item has link in it, opens the link.
+ - <kbd>*</kbd> - expands the item and all sibling items on the same level.
 
 When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse + keyboard interactions are available:
 
