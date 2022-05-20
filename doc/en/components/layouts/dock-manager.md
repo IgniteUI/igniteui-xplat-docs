@@ -402,6 +402,7 @@ Slot name | Description
 `minimizeButton` | The minimize buttons.
 `pinButton` | The pin buttons.
 `unpinButton` | The unpin buttons.
+`splitterHandle` | The splitter handle.
 
 ## Keyboard Navigation
 
