@@ -375,6 +375,34 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 <div class="divider--half"></div>
 
+## Customization
+
+The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the coresponding identifier. In the example below, you can see how you can change the close buttons using the `closeButton` slot:
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+
+    <button slot="closeButton">CLOSE</button>
+</igc-dockmanager>
+```
+
+// TODO: sample here
+
+Here is the full list of slot names for all buttons:
+
+Slot name | Description
+----------|------------
+`closeButton` | The close buttons.
+`moreTabsButton` | The more tabs buttons.
+`moreOptionsButton` | The more options buttons.
+`maximizeButton` | The maximize buttons.
+`minimizeButton` | The minimize buttons.
+`pinButton` | The pin buttons.
+`unpinButton` | The unpin buttons.
+
 ## Keyboard Navigation
 
 Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
@@ -470,6 +498,7 @@ Part name | Description
 `pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
 `pane-navigator-item` | An item in the pane navigator.
 
+// TODO: add parts for all the buttons
 
 ### Themes
 
