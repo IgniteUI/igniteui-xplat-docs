@@ -303,7 +303,6 @@
         "status": ""
       },
       {
-        "exclude": ["Blazor", "WebComponents"],
         "name": "Row Paging",
         "href": "grids/data-grid-row-paging.md",
         "status": ""
