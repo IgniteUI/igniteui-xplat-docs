@@ -2,7 +2,7 @@
 title: $Platform$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸レイアウト
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, 位置, 配置, 共有, 複数, 交差, インフラジスティックス
-mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries" ]
+mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
 _language: ja
 ---
 
@@ -65,6 +65,20 @@ $Platform$ `XamDataChart` の同じプロット領域に複数の軸を共有し
 
 <div class="divider--half"></div>
 
+<!-- Blazor -->
+### 軸タイムラインの例
+
+次の例は、`TimeXAxis` をタイムラインとして使用してデータ チャートのスタイルを設定する方法を示しています。
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
+           alt="コールアウト レイヤーを使用した $Platform$ タイムライン"
+           github-src="charts/data-chart/timeline-axis-type">
+</code-view>
+
+<div class="divider--half"></div>
+<!-- end: Blazor -->
 
 ## その他のリソース
 

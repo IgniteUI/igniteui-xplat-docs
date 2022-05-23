@@ -11,6 +11,17 @@ namespace: Infragistics.Controls.Charts
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Blazor -->
+
+## {22.1}
+#### チャート
+
+* 積層型シリーズのハイライト サポートが追加されました。
+* CalloutLayer の 新しい `AllowedPositions`。チャート内のどこにコールアウトを配置するかを制限するために使用されます。 
+* CalloutLayer の新しい `CalloutCornerRadius`。コールアウトの角を丸めるために使用されます。
+* スクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` と `VerticalViewScrollbarMode`。
+* 新しい `FavorLabellingScaleEnd` は、数値軸 (NumericX、NumericY、PercentChangeY など) にのみ存在します。 
+* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
+
 ## **{PackageVerChanges-21-2.1}**
 
 > [!NOTE]

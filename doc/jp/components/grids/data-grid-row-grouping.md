@@ -44,21 +44,21 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 
 <!-- React -->
 ```ts
-import { DataSourceSectionHeaderDisplayMode } from 'igniteui-react-core';
+import { GroupHeaderDisplayMode } from 'igniteui-react-core';
 
 public componentDidMount() {
     // ...
-    this.grid.groupHeaderDisplayMode = DataSourceSectionHeaderDisplayMode.Split;
+    this.grid.groupHeaderDisplayMode = GroupHeaderDisplayMode.Split;
 }
 ```
 
 <!-- WebComponents -->
 ```ts
-import { DataSourceSectionHeaderDisplayMode } from 'igniteui-webcomponents-core';
+import { GroupHeaderDisplayMode } from 'igniteui-webcomponents-core';
 
 public connectedCallback() {
     // ...
-    this.grid.groupHeaderDisplayMode = DataSourceSectionHeaderDisplayMode.Split;
+    this.grid.groupHeaderDisplayMode = GroupHeaderDisplayMode.Split;
 }
 ```
 
@@ -66,7 +66,7 @@ public connectedCallback() {
 <IgbDataGrid Height="100%" Width="100%"
     @ref="DataGridRef"
     DataSource="DataSource"
-    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split" />
+    GroupHeaderDisplayMode="GroupHeaderDisplayMode.Split" />
 ```
 
 ## 縮小可能なグループ
@@ -103,7 +103,7 @@ public connectedCallback() {
 ```ts
 import { IgrColumnGroupDescription } from 'igniteui-react-grids';
 import { ListSortDirection } from 'igniteui-react-core';
-import { DataSourceSectionHeaderDisplayMode } from 'igniteui-react-core';
+import { GroupHeaderDisplayMode } from 'igniteui-react-core';
 
 public componentDidMount() {
     window.addEventListener('load', this.onLoad);
@@ -126,14 +126,14 @@ public onLoad() {
     this.grid.groupDescriptions.add(income);
 
     this.grid.isGroupCollapsable = true;
-    this.grid.groupHeaderDisplayMode = DataSourceSectionHeaderDisplayMode.Split;
+    this.grid.groupHeaderDisplayMode = GroupHeaderDisplayMode.Split;
 }
 ```
 
 ```ts
 import { IgcIgcColumnGroupDescription } from 'igniteui-webcomponents-grids';
 import { ListSortDirection } from 'igniteui-webcomponents-core';
-import { DataSourceSectionHeaderDisplayMode } from 'igniteui-webcomponents-core';
+import { GroupHeaderDisplayMode } from 'igniteui-webcomponents-core';
 
 public connectedCallback() {
     const state = new IgcColumnGroupDescription();
@@ -153,14 +153,14 @@ public connectedCallback() {
     this.grid.groupDescriptions.add(income);
 
     this.grid.isGroupCollapsable = true;
-    this.grid.groupHeaderDisplayMode = DataSourceSectionHeaderDisplayMode.Split;
+    this.grid.groupHeaderDisplayMode = GroupHeaderDisplayMode.Split;
 }
 ```
 
 ```razor
 <IgbDataGrid @ref="DataGridRef" Height="100%" Width="100%"
     DataSource="DataSource"
-    GroupHeaderDisplayMode="DataSourceSectionHeaderDisplayMode.Split"
+    GroupHeaderDisplayMode="GroupHeaderDisplayMode.Split"
     IsGroupCollapsable="true" />
 
 @code {
@@ -182,7 +182,7 @@ public connectedCallback() {
     private void OnGridCreated()
     {
         var state = new ColumnGroupDescription { Field = "Country", DisplayName = "Location" };
-        var city = new ColumnGroupDescription { Field = "City", DisplayName = "" };
+        var city = new ColumnGroupDescription { Field = "City", DisplayName = "City" };
         var income = new ColumnGroupDescription { Field = "Income", DisplayName = "Income" };
 
         this.DataGridRef.GroupDescriptions.Add(state);
