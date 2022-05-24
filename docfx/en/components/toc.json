@@ -173,6 +173,11 @@
         "status": ""
       },
       {
+        "name": "Localization",
+        "href": "grids/data-grid-localization.md",
+        "status": ""
+      },
+      {
         "exclude": ["Blazor"],
         "name": "Binding Comparison Data",
         "href": "grids/data-grid-type-comparison-table.md",
