@@ -672,6 +672,7 @@
   { "originalName":"ISummaryResult",
     "names":[{"platform":"Angular","fileName":"ISummaryResult.ts","mappedName":"ISummaryResult"}],
     "members":[
+    { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"Angular","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
@@ -680,10 +681,12 @@
     "names":[{"platform":"Angular","fileName":"DefaultSummaryResult.ts","mappedName":"DefaultSummaryResult"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"_groupKey"}],"originalName":"_groupKey"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"_propertyName"}],"originalName":"_propertyName"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"_value"}],"originalName":"_value"},
     { "names":[{"platform":"Angular","mappedType":"SummaryOperand","mappedName":"_operand"}],"originalName":"_operand"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"_summaryIndex"}],"originalName":"_summaryIndex"},
+    { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"Angular","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"},

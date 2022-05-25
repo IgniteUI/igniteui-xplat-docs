@@ -19,6 +19,8 @@
     "names":[{"platform":"Blazor","fileName":"AnchoredCategorySeries.cs","mappedName":"IgbAnchoredCategorySeries"}],
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueMemberAsLegendLabel"}],"originalName":"ValueMemberAsLegendLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueMemberAsLegendUnit"}],"originalName":"ValueMemberAsLegendUnit"},
     { "names":[{"platform":"Blazor","mappedType":"TrendLineType","mappedName":"TrendLineType"}],"originalName":"TrendLineType"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},

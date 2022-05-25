@@ -10,7 +10,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"iconColor"}],"originalName":"IconColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"itemBackgroundColor"}],"originalName":"ItemBackgroundColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"itemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"hoverBackgroundColor"}],"originalName":"HoverBackgroundColor"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

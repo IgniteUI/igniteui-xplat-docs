@@ -94,6 +94,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getFirstDistinctDateTimeProperty"}],"originalName":"GetFirstDistinctDateTimeProperty"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getFirstStringPropertyPreferringDistinct"}],"originalName":"GetFirstStringPropertyPreferringDistinct"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getTitleString"}],"originalName":"GetTitleString"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getTitleStringWithSeparator"}],"originalName":"GetTitleStringWithSeparator"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"extractTitle"}],"originalName":"ExtractTitle"},
     { "names":[{"platform":"Blazor","mappedType":"any","mappedName":"getNonNullPropertyValue"}],"originalName":"GetNonNullPropertyValue"},
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"isStringPropertyDistinct"}],"originalName":"IsStringPropertyDistinct"},

@@ -1,5 +1,148 @@
 {"extraFiles":["igr-legend-module.ts","igr-item-legend-module.ts","igr-scale-legend-module.ts","igr-financial-legend-module.ts","igr-data-legend-module.ts"],
   "types":[
+  { "originalName":"XamDataLegend",
+    "names":[{"platform":"React","fileName":"igr-data-legend.ts","mappedName":"IgrDataLegend"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"actualBadgesVisible"}],"originalName":"ActualBadgesVisible"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"includedSeries"}],"originalName":"IncludedSeries"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"excludedSeries"}],"originalName":"ExcludedSeries"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"includedColumns"}],"originalName":"IncludedColumns"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"excludedColumns"}],"originalName":"ExcludedColumns"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldUpdateWhenSeriesDataChanges"}],"originalName":"ShouldUpdateWhenSeriesDataChanges"},
+    { "names":[{"platform":"React","mappedType":"DataAbbreviationMode","mappedName":"valueFormatAbbreviation"}],"originalName":"ValueFormatAbbreviation"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"valueFormatMaxFractions"}],"originalName":"ValueFormatMaxFractions"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"valueFormatMinFractions"}],"originalName":"ValueFormatMinFractions"},
+    { "names":[{"platform":"React","mappedType":"DataLegendValueMode","mappedName":"valueFormatMode"}],"originalName":"ValueFormatMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueFormatCulture"}],"originalName":"ValueFormatCulture"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueFormatCurrencyCode"}],"originalName":"ValueFormatCurrencyCode"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"valueFormatUseGrouping"}],"originalName":"ValueFormatUseGrouping"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueFormatString"}],"originalName":"ValueFormatString"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"valueFormatSpecifiers"}],"originalName":"ValueFormatSpecifiers"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"valueRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"valueRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"valueRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"valueRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"valueRowVisible"}],"originalName":"ValueRowVisible"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueTextWhenMissingData"}],"originalName":"ValueTextWhenMissingData"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"valueTextUseSeriesColors"}],"originalName":"ValueTextUseSeriesColors"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"valueTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"valueTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"valueTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"valueTextMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerFormatString"}],"originalName":"HeaderFormatString"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"headerFormatSpecifiers"}],"originalName":"HeaderFormatSpecifiers"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerFormatCulture"}],"originalName":"HeaderFormatCulture"},
+    { "names":[{"platform":"React","mappedType":"DataLegendHeaderDateMode","mappedName":"headerFormatDate"}],"originalName":"HeaderFormatDate"},
+    { "names":[{"platform":"React","mappedType":"DataLegendHeaderTimeMode","mappedName":"headerFormatTime"}],"originalName":"HeaderFormatTime"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerTextColor"}],"originalName":"HeaderTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"headerTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"headerTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"headerTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"headerTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"headerRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"headerRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"headerRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"headerRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"headerRowVisible"}],"originalName":"HeaderRowVisible"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryTitleTextColor"}],"originalName":"SummaryTitleTextColor"},
+    { "names":[{"platform":"React","mappedType":"DataLegendSummaryType","mappedName":"summaryType"}],"originalName":"SummaryType"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryTitleText"}],"originalName":"SummaryTitleText"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"summaryTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"summaryTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"summaryTitleTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"summaryRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"summaryRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"summaryRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryValueTextColor"}],"originalName":"SummaryValueTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryLabelText"}],"originalName":"SummaryLabelText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryLabelTextColor"}],"originalName":"SummaryLabelTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryUnitsText"}],"originalName":"SummaryUnitsText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryUnitsTextColor"}],"originalName":"SummaryUnitsTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"badgeMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"badgeMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"badgeMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"badgeMargin.top"},
+    { "names":[{"platform":"React","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"targetCursorPositionX"}],"originalName":"TargetCursorPositionX"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"targetCursorPositionY"}],"originalName":"TargetCursorPositionY"},
+    { "names":[{"platform":"React","mappedType":"DataLegendUnitsMode","mappedName":"unitsDisplayMode"}],"originalName":"UnitsDisplayMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"unitsTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"unitsTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"unitsTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"unitsTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"titleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"titleTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"titleTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"titleTextMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"},
+    { "names":[{"platform":"React","mappedType":"DataLegendLabelMode","mappedName":"labelDisplayMode"}],"originalName":"LabelDisplayMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"labelTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"labelTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySizeChanged"}],"originalName":"NotifySizeChanged"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedNumber"}],"originalName":"GetAbbreviatedNumber"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedSymbol"}],"originalName":"GetAbbreviatedSymbol"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataLegendSummaryEventArgs",
+    "names":[{"platform":"React","fileName":"igr-data-legend-summary-event-args.ts","mappedName":"IgrDataLegendSummaryEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number[]","mappedName":"columnValues"}],"originalName":"ColumnValues"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"columnMemberPath"}],"originalName":"ColumnMemberPath"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"summaryValue"}],"originalName":"SummaryValue"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryUnits"}],"originalName":"SummaryUnits"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendMouseEventArgs",
     "names":[{"platform":"React","fileName":"igr-legend-mouse-event-args.ts","mappedName":"IgrLegendMouseEventArgs"}],
     "members":[
@@ -19,51 +162,31 @@
     { "names":[{"platform":"React","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"XamDataLegend",
-    "names":[{"platform":"React","fileName":"igr-data-legend.ts","mappedName":"IgrDataLegend"}],
+  { "originalName":"DataLegendStylingRowEventArgs",
+    "names":[{"platform":"React","fileName":"igr-data-legend-styling-row-event-args.ts","mappedName":"IgrDataLegendStylingRowEventArgs"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"rowMargin.bottom"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"rowMargin.left"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"rowMargin.right"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"rowMargin.top"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"columnSpacing"}],"originalName":"ColumnSpacing"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"badgeMargin.bottom"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"badgeMargin.left"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"badgeMargin.right"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"badgeMargin.top"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"displayTextMargin.bottom"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"displayTextMargin.left"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"displayTextMargin.right"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"displayTextMargin.top"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"valueTextMargin.bottom"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"valueTextMargin.left"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"valueTextMargin.right"},
-    { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"valueTextMargin.top"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"summaryText"}],"originalName":"SummaryText"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"targetCursorPositionX"}],"originalName":"TargetCursorPositionX"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"targetCursorPositionY"}],"originalName":"TargetCursorPositionY"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"targetAxisValue"}],"originalName":"TargetAxisValue"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySizeChanged"}],"originalName":"NotifySizeChanged"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isBadgeVisible"}],"originalName":"IsBadgeVisible"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isRowVisible"}],"originalName":"IsRowVisible"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleText"}],"originalName":"TitleText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataLegendStylingColumnEventArgs",
+    "names":[{"platform":"React","fileName":"igr-data-legend-styling-column-event-args.ts","mappedName":"IgrDataLegendStylingColumnEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"columnIndex"}],"originalName":"ColumnIndex"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"valueOriginal"}],"originalName":"ValueOriginal"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"React","mappedType":"DataAbbreviationMode","mappedName":"valueAbbreviation"}],"originalName":"ValueAbbreviation"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"labelText"}],"originalName":"LabelText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueText"}],"originalName":"ValueText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemLegend",
     "names":[{"platform":"React","fileName":"igr-item-legend.ts","mappedName":"IgrItemLegend"}],
     "members":[
