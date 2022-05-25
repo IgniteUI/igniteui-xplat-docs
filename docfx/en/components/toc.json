@@ -66,7 +66,7 @@
   {
     "name": "Changelog",
     "href": "general-changelog-dv.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -87,14 +87,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Avatar {ReleaseStatus_WebsInputs}",
-    "href": "layouts/avatar.md",
-    "status": "NEW"
+    "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Card {ReleaseStatus_WebsInputs}",
-    "href": "layouts/card.md",
-    "status": "NEW"
+    "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
@@ -130,14 +128,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Navbar {ReleaseStatus_WebsMenus}",
-    "href": "menus/navbar.md",
-    "status": "NEW"
+    "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
-    "href": "menus/navigation-drawer.md",
-    "status": "NEW"
+    "href": "menus/navigation-drawer.md"
   },
   {
     "exclude": ["Angular"],
@@ -148,8 +144,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "List {ReleaseStatus_WebsList}",
-    "href": "grids/list.md",
-    "status": "NEW"
+    "href": "grids/list.md"
   },
   {
     "exclude": ["Angular"],
@@ -214,8 +209,7 @@
       },
       {
         "name": "Cell Merging",
-        "href": "grids/data-grid-cell-merging.md",
-        "status": "NEW"
+        "href": "grids/data-grid-cell-merging.md"
       },
       {
         "name": "Cell Selection",
@@ -229,8 +223,7 @@
       },
       {
         "name": "Column Filtering",
-        "href": "grids/data-grid-column-filtering.md",
-        "status": "NEW"
+        "href": "grids/data-grid-column-filtering.md"
       },
       {
         "name": "Column Moving",
@@ -289,13 +282,11 @@
       },
       {
         "name": "Load & Save Grid Layout",
-        "href": "grids/data-grid-load-save-layout.md",
-        "status": "NEW"
+        "href": "grids/data-grid-load-save-layout.md"
       },
       {
         "name": "Row Grouping",
-        "href": "grids/data-grid-row-grouping.md",
-        "status": "New"
+        "href": "grids/data-grid-row-grouping.md"
       },
       {
         "name": "Row Highlighting",
@@ -530,7 +521,7 @@
         {
           "name": "Axis Options",
           "href": "charts/features/chart-axis-options.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Animations",
@@ -540,7 +531,7 @@
         {
           "name": "Chart Annotations",
           "href": "charts/features/chart-annotations.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Highlighting",
@@ -555,7 +546,7 @@
         {
           "name": "Chart Navigation",
           "href": "charts/features/chart-navigation.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "Chart Overlays",
@@ -1447,6 +1438,6 @@
     "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "editors/date-picker.md",
-    "status": "UPDATED"
+    "status": ""
   }
 ]

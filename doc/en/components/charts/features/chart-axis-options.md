@@ -84,6 +84,10 @@ In addition to `YAxisMode` property, the `FinancialChart` control has `XAxisMode
 
 The `XAxisGap` property of the $Platform$ charts, determines the amount of space between columns or bars of plotted series. This property accepts a numeric value between 0.0 and 1.0. The value represents a relative width of the gap out of the available number of pixels between the series. Setting this property to 0 would mean there is no gap rendered between the series, and setting it 1 would render the maximum available gap.
 
+The `XAxisMaximumGap` property of the $Platform$ charts, determines the maximum gap value to allow. This default is set to 1.0 but can be changed depending on what you set `XAxisGap` to.
+
+The `XAxisMinimumGapSize` property of the $Platform$ charts, determines the minimum amount of pixels to use for the gap between the categories, if possible.
+
 The following example shows the average maximum temperature in Celsius in New York City's Central Park represented by a [Column Chart](../types/column-chart.md) with an `XAxisGap` initially set to 1, and so there will be a full category's width between the columns. There is a slider that allows you to configure the gap in this example so that you can see what the different values do.
 
 <code-view style="height: 450px"
