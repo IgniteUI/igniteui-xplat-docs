@@ -16,7 +16,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 * Added highlighting support for Stacked Series
 * New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
-* New `CalloutCornerRadius` for CalloutLayer. Used to round out the corners of the callouts.
+* New `CalloutCornerRadius`, `XAxisAnnotationBackgroundCornerRadius`, `YAxisAnnotationBackgroundCornerRadius` for Annotation Layers in `DataChart`. Used to round out the corners of the callouts. A corner radius has now been added by default.
 * New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` to enable scrollbars.
 * New `FavorLabellingScaleEnd`, only be on Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
