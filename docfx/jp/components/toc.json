@@ -173,6 +173,11 @@
         "status": ""
       },
       {
+        "name": "ローカライズ",
+        "href": "grids/data-grid-localization.md",
+        "status": ""
+      },
+      {
         "exclude": ["Blazor"],
         "name": "比較データのバインディング",
         "href": "grids/data-grid-type-comparison-table.md",

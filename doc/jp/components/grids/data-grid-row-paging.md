@@ -11,7 +11,7 @@ _language: ja
 
 表形式のテーブル UI は、多くの Web 製品で一般的に使用されています。表形式のテーブル UI を最初から作成するのは簡単ではありませんが、Ignite UI for $Platform$ グリッドを使用すると、テーブル UI の作成が簡単になり、大量のローカル データまたはリモート データを $Platform$ グリッドにバインドするのも簡単です。グリッドはデフォルトで仮想化されているため、大きなデータ セットを表示するためにテーブルのページネーションを含める必要はありません。これは主に、UI で複雑なデータを整理する最も効率的な方法のために使用されます。テーブルのページネーションを使用すると、データを設定された行数で表示できるため、ユーザーは実際にスクロールバーを必要とせずに、データをスクロールできます。テーブルのページネーション UI には通常、現在のページ、合計ページ、クリック可能な [前へ] と [次へ] の矢印/ボタンなどが含まれ、ユーザーは次のようにページをめくることができます:
 
-Row Paging is enabled within the $ProductName$ Data Table / Data Grid by setting the `IsPagerVisible` property. In addition, you can limit the maximum number of visible rows by setting `PageSize`. 
+行のページングは、`IsPagerVisible` プロパティを設定することにより、$ProductName$ データ テーブル / データ グリッド内で有効になります。さらに、`PageSize` を設定することで、表示される行の最大数を制限できます。
 
 ## $Platform$ 行のページングの例
 
