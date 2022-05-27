@@ -12,13 +12,13 @@ The $ProductName$ Tree element allows users to represent hierarchical data in a 
 
 ## $Platform$ Tree Example
 
-In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy and iterating through a hierarchical data set.
+In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
            alt="$Platform$ Tree Example"
-           github-src="grids/tree/tree-basic-sample">
+           github-src="grids/tree/basic-example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -163,9 +163,9 @@ The $ProductName$ Tree can be rendered in such way that it requires the minimal 
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-advanced-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
            alt="$Platform$ Tree Load On Demand Example"
-           github-src="grids/tree/tree-advanced-sample">
+           github-src="grids/tree/load-on-demand">
 </code-view>
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
