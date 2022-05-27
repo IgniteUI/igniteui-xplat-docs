@@ -14,15 +14,18 @@ All notable changes for each version of $ProductName$ are documented on this pag
 ## {22.1}
 #### Charts
 
-* Added highlighting support for Stacked Series
-* Added `AssigningCategoryStyle` event to all series in `DataChart`.
-* New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
-* New `CalloutCornerRadius`, `XAxisAnnotationBackgroundCornerRadius`, `YAxisAnnotationBackgroundCornerRadius` for Annotation Layers in `DataChart`. Used to round out the corners of the callouts. A corner radius has now been added by default.
-* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` to enable scrollbars.
+* Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
+* Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+* New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
+* New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
+    - `CalloutCornerRadius` for CalloutLayer
+    - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
+    - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
+* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
 * New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
-* New `XAxisMaximumGap`, determines the maximum allowed value for the `XAxisGap`.
-* New `XAxisMinimumGapSize`, determines the pixel based gap size between categories. 
+* New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
+* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
 
 ## **{PackageVerChanges-21-2.1}**
 
