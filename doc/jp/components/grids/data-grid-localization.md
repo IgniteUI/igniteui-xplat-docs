@@ -1,26 +1,26 @@
 ---
-title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Localization | Infragistics
-_description: Use Infragistics' $ProductName$ Data Table & Grid which supports localization. View $ProductName$ table tutorials!
-_keywords: $Platform$ Table, Data Grid, cell accessibility, $ProductName$, Infragistics
+title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | ローカリゼーション | インフラジスティックス
+_description: ローカリゼーションをサポートするインフラジスティックスの $ProductName$ データ テーブルとグリッドを試しましょう。$ProductName$ テーブルのチュートリアルをご覧ください。
+_keywords: $Platform$ テーブル、データ グリッド、セル アクセシビリティ、$ProductName$、インフラジスティック
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ Grid Localization
+# $Platform$ グリッドのローカリゼーション
 
-The $ProductName$ Data Table / Data Grid supports localizing the resource strings specific to the column options pop-up and summaries. Note, this is not intended to be used nor capable of translating the data.
+$ProductName$ データ テーブル / データ グリッドは、列オプションのポップアップと要約に固有のリソース文字列のローカライズをサポートします。これは、データの翻訳に使用することを意図したものではないことに注意してください。
 
 <!-- Blazor -->
-The Data Grid contains `SetCustomizedStringAsync` for assigning strings associated with the column options. The grid's `ActualDataSource` property also has this method for assigning resource strings necessary for the summaries.
+データ グリッドには、列オプションに関連付けられた文字列を割り当てるための `SetCustomizedStringAsync` が含まれています。グリッドの `ActualDataSource` プロパティには、集計に必要なリソース文字列を割り当てるためのこのメソッドもあります。
 <!-- end: Blazor -->
 
-## $Platform$ Grid Localization Example
+## $Platform$ グリッド ローカリゼーションの例
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-localization"
-           alt="$Platform$ Grid Localization Example"
+           alt="$Platform$ グリッド ローカリゼーションの例"
            github-src="grids/data-grid/localization">
 </code-view>
 
