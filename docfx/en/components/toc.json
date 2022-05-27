@@ -96,7 +96,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Dock Manager {ReleaseStatus_DockManager}",
+    "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -1308,20 +1308,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Badge {ReleaseStatus_WebsInputs}",
-    "href": "inputs/badge.md",
-    "status": "NEW"
+    "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Button {ReleaseStatus_WebsInputs}",
-    "href": "inputs/button.md",
-    "status": "NEW"
+    "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Checkbox {ReleaseStatus_WebsInputs}",
-    "href": "inputs/checkbox.md",
-    "status": "NEW"
+    "href": "inputs/checkbox.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1344,20 +1341,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Form {ReleaseStatus_WebsInputs}",
-    "href": "inputs/form.md",
-    "status": "NEW"
+    "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Icon {ReleaseStatus_WebsInputs}",
-    "href": "layouts/icon.md",
-    "status": "NEW"
+    "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Icon Button {ReleaseStatus_WebsInputs}",
-    "href": "inputs/icon-button.md",
-    "status": "NEW"
+    "href": "inputs/icon-button.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1374,20 +1368,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Input {ReleaseStatus_WebsInputs}",
-    "href": "inputs/input.md",
-    "status": "NEW"
+    "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
-    "href": "inputs/radio.md",
-    "status": "NEW"
+    "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Switch {ReleaseStatus_WebsInputs}",
-    "href": "inputs/switch.md",
-    "status": "NEW"
+    "href": "inputs/switch.md"
   },
   {
     "name": "Interactions",
@@ -1396,8 +1387,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Ripple {ReleaseStatus_WebsInputs}",
-    "href": "inputs/ripple.md",
-    "status": "NEW"
+    "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1412,7 +1402,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "Notifications",
     "header": true
   },
@@ -1436,8 +1426,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Calendar {ReleaseStatus_WebCalendar}",
-    "href": "scheduling/calendar.md",
-    "status": "NEW"
+    "href": "scheduling/calendar.md"
   },
   {
     "exclude": ["Angular"],
