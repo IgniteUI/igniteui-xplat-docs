@@ -15,6 +15,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 #### Charts
 
 * Added highlighting support for Stacked Series
+* Added `AssigningCategoryStyle` event to all series in `DataChart`.
 * New `AllowedPositions` for CalloutLayer. Used to limit where the callouts are to be placed within the chart. 
 * New `CalloutCornerRadius`, `XAxisAnnotationBackgroundCornerRadius`, `YAxisAnnotationBackgroundCornerRadius` for Annotation Layers in `DataChart`. Used to round out the corners of the callouts. A corner radius has now been added by default.
 * New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` to enable scrollbars.
