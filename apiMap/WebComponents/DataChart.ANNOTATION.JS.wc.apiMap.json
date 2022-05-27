@@ -36,6 +36,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"(item: any) => string","mappedName":"axisAnnotationFormatLabel"}],"originalName":"AxisAnnotationFormatLabel"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationTextColor"}],"originalName":"AxisAnnotationTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationBackground"}],"originalName":"AxisAnnotationBackground"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationBackgroundCornerRadius"}],"originalName":"AxisAnnotationBackgroundCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationInterpolatedValuePrecision"}],"originalName":"AxisAnnotationInterpolatedValuePrecision"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationOutline"}],"originalName":"AxisAnnotationOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationPaddingLeft"}],"originalName":"AxisAnnotationPaddingLeft"},
@@ -68,6 +69,7 @@
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"text"}],"originalName":"Text"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelFormat"}],"originalName":"LabelFormat"},
     { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"labelFormatSpecifiers"}],"originalName":"LabelFormatSpecifiers"},
     { "names":[{"platform":"WebComponents","mappedType":"(item: any) => string","mappedName":"formatLabel"}],"originalName":"FormatLabel"},
@@ -99,7 +101,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingLeft"}],"originalName":"BackgroundPaddingLeft"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingTop"}],"originalName":"BackgroundPaddingTop"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryHighlightLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-category-highlight-layer-component.ts","dynamicModuleName":"igc-category-highlight-layer-dynamic-module.ts","moduleName":"igc-category-highlight-layer-module.ts","mappedName":"IgcCategoryHighlightLayerComponent"}],
     "members":[
@@ -123,7 +126,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcCalloutPlacementPositionsCollection","mappedName":"allowedPositions"}],"originalName":"AllowedPositions"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAutoCalloutBehaviorEnabled"}],"originalName":"IsAutoCalloutBehaviorEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolatedValueForAutoCalloutLabels"}],"originalName":"UseInterpolatedValueForAutoCalloutLabels"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useSeriesColorForOutline"}],"originalName":"UseSeriesColorForOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useValueForAutoCalloutLabels"}],"originalName":"UseValueForAutoCalloutLabels"},
+    { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"autoCalloutVisibilityMode"}],"originalName":"AutoCalloutVisibilityMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"calloutCornerRadius"}],"originalName":"CalloutCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomCalloutStyleEnabled"}],"originalName":"IsCustomCalloutStyleEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomCalloutRenderStyleEnabled"}],"originalName":"IsCustomCalloutRenderStyleEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"autoCalloutLabelPrecision"}],"originalName":"AutoCalloutLabelPrecision"},
@@ -172,34 +178,168 @@
     { "names":[{"platform":"WebComponents","mappedType":"CalloutCollisionMode","mappedName":"Greedy"}],"originalName":"Greedy"},
     { "names":[{"platform":"WebComponents","mappedType":"CalloutCollisionMode","mappedName":"GreedyCenterOfMass"}],"originalName":"GreedyCenterOfMass"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"CalloutRenderStyleUpdatingEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-callout-render-style-updating-event-args.ts","mappedName":"IgcCalloutRenderStyleUpdatingEventArgs"}],
+  { "originalName":"AutoCalloutVisibilityMode","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"AutoCalloutVisibilityMode.ts","mappedName":"AutoCalloutVisibilityMode"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"labelPositionX"}],"originalName":"LabelPositionX"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"labelPositionY"}],"originalName":"LabelPositionY"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetPositionX"}],"originalName":"TargetPositionX"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetPositionY"}],"originalName":"TargetPositionY"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"actualPosition"}],"originalName":"ActualPosition"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcSeriesComponent","mappedName":"series"}],"originalName":"Series"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"background"}],"originalName":"Background"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"leaderBrush"}],"originalName":"LeaderBrush"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"StrokeThickness"}],"originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"CalloutPlacementPositions","isEnum":true,
-    "names":[{"platform":"WebComponents","fileName":"CalloutPlacementPositions.ts","mappedName":"CalloutPlacementPositions"}],
+    { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"Normal"}],"originalName":"Normal"},
+    { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"DedicatedLanes"}],"originalName":"DedicatedLanes"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataTooltipConstraintMode","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"DataTooltipConstraintMode.ts","mappedName":"DataTooltipConstraintMode"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"Top"}],"originalName":"Top"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"Left"}],"originalName":"Left"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"Right"}],"originalName":"Right"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"Bottom"}],"originalName":"Bottom"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"TopLeft"}],"originalName":"TopLeft"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"TopRight"}],"originalName":"TopRight"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"BottomLeft"}],"originalName":"BottomLeft"},
-    { "names":[{"platform":"WebComponents","mappedType":"CalloutPlacementPositions","mappedName":"BottomRight"}],"originalName":"BottomRight"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"Application"}],"originalName":"Application"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"Chart"}],"originalName":"Chart"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"PlotArea"}],"originalName":"PlotArea"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataToolTipLayer",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-tool-tip-layer-component.ts","dynamicModuleName":"igc-data-tool-tip-layer-dynamic-module.ts","moduleName":"igc-data-tool-tip-layer-module.ts","mappedName":"IgcDataToolTipLayerComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcAxisComponent","mappedName":"targetAxis"}],"originalName":"TargetAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerGroupingMode","mappedName":"groupingMode"}],"originalName":"GroupingMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerGroupingMode","mappedName":"actualGroupingMode"}],"originalName":"ActualGroupingMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"positionOffsetX"}],"originalName":"PositionOffsetX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"positionOffsetY"}],"originalName":"PositionOffsetY"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"defaultPositionOffsetX"}],"originalName":"DefaultPositionOffsetX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"defaultPositionOffsetY"}],"originalName":"DefaultPositionOffsetY"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipGroupedPositionX","mappedName":"groupedPositionModeX"}],"originalName":"GroupedPositionModeX"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipGroupedPositionX","mappedName":"actualGroupedPositionModeX"}],"originalName":"ActualGroupedPositionModeX"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipGroupedPositionY","mappedName":"groupedPositionModeY"}],"originalName":"GroupedPositionModeY"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataTooltipGroupedPositionY","mappedName":"actualGroupedPositionModeY"}],"originalName":"ActualGroupedPositionModeY"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldUpdateWhenSeriesDataChanges"}],"originalName":"ShouldUpdateWhenSeriesDataChanges"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"includedSeries"}],"originalName":"IncludedSeries"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"excludedSeries"}],"originalName":"ExcludedSeries"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"includedColumns"}],"originalName":"IncludedColumns"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"excludedColumns"}],"originalName":"ExcludedColumns"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataAbbreviationMode","mappedName":"valueFormatAbbreviation"}],"originalName":"ValueFormatAbbreviation"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"valueFormatMaxFractions"}],"originalName":"ValueFormatMaxFractions"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"valueFormatMinFractions"}],"originalName":"ValueFormatMinFractions"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendValueMode","mappedName":"valueFormatMode"}],"originalName":"ValueFormatMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormatCulture"}],"originalName":"ValueFormatCulture"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueFormatUseGrouping"}],"originalName":"ValueFormatUseGrouping"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormatString"}],"originalName":"ValueFormatString"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"valueFormatSpecifiers"}],"originalName":"ValueFormatSpecifiers"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"valueRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"valueRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"valueRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"valueRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueRowVisible"}],"originalName":"ValueRowVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueTextWhenMissingData"}],"originalName":"ValueTextWhenMissingData"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueTextUseSeriesColors"}],"originalName":"ValueTextUseSeriesColors"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"valueTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"valueTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"valueTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"valueTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerFormatString"}],"originalName":"HeaderFormatString"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"headerFormatSpecifiers"}],"originalName":"HeaderFormatSpecifiers"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerFormatCulture"}],"originalName":"HeaderFormatCulture"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendHeaderDateMode","mappedName":"headerFormatDate"}],"originalName":"HeaderFormatDate"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendHeaderTimeMode","mappedName":"headerFormatTime"}],"originalName":"HeaderFormatTime"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerTextColor"}],"originalName":"HeaderTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"headerTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"headerTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"headerTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"headerTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"headerRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"headerRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"headerRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"headerRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"headerRowVisible"}],"originalName":"HeaderRowVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryTitleTextColor"}],"originalName":"SummaryTitleTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendSummaryType","mappedName":"summaryType"}],"originalName":"SummaryType"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryTitleText"}],"originalName":"SummaryTitleText"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"summaryTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"summaryTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"summaryTitleTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"summaryRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"summaryRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"summaryRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryValueTextColor"}],"originalName":"SummaryValueTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryLabelText"}],"originalName":"SummaryLabelText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryLabelTextColor"}],"originalName":"SummaryLabelTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryUnitsText"}],"originalName":"SummaryUnitsText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryUnitsTextColor"}],"originalName":"SummaryUnitsTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"badgeMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"badgeMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"badgeMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"badgeMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendUnitsMode","mappedName":"unitsDisplayMode"}],"originalName":"UnitsDisplayMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"unitsTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"unitsTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"unitsTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"unitsTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"titleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"titleTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"titleTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"titleTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendLabelMode","mappedName":"labelDisplayMode"}],"originalName":"LabelDisplayMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"labelTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"labelTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataToolTipLayerPosition","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"OutsideStart"}],"originalName":"OutsideStart"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-final-value-layer-component.ts","dynamicModuleName":"igc-final-value-layer-dynamic-module.ts","moduleName":"igc-final-value-layer-module.ts","mappedName":"IgcFinalValueLayerComponent"}],
@@ -210,6 +350,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"FinalValueSelectionMode","mappedName":"finalValueSelectionMode"}],"originalName":"FinalValueSelectionMode"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationTextColor"}],"originalName":"AxisAnnotationTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationBackground"}],"originalName":"AxisAnnotationBackground"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationBackgroundCornerRadius"}],"originalName":"AxisAnnotationBackgroundCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationInterpolatedValuePrecision"}],"originalName":"AxisAnnotationInterpolatedValuePrecision"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"axisAnnotationOutline"}],"originalName":"AxisAnnotationOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationPaddingLeft"}],"originalName":"AxisAnnotationPaddingLeft"},
@@ -259,6 +400,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAxisAnnotationEnabled"}],"originalName":"IsAxisAnnotationEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"xAxisAnnotationTextColor"}],"originalName":"XAxisAnnotationTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"xAxisAnnotationBackground"}],"originalName":"XAxisAnnotationBackground"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisAnnotationBackgroundCornerRadius"}],"originalName":"XAxisAnnotationBackgroundCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisAnnotationInterpolatedValuePrecision"}],"originalName":"XAxisAnnotationInterpolatedValuePrecision"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"xAxisAnnotationOutline"}],"originalName":"XAxisAnnotationOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisAnnotationPaddingLeft"}],"originalName":"XAxisAnnotationPaddingLeft"},
@@ -272,25 +414,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"xAxisAnnotationStrokeThickness"}],"originalName":"XAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"yAxisAnnotationTextColor"}],"originalName":"YAxisAnnotationTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"yAxisAnnotationBackground"}],"originalName":"YAxisAnnotationBackground"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisAnnotationBackgroundCornerRadius"}],"originalName":"YAxisAnnotationBackgroundCornerRadius"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisAnnotationInterpolatedValuePrecision"}],"originalName":"YAxisAnnotationInterpolatedValuePrecision"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"yAxisAnnotationOutline"}],"originalName":"YAxisAnnotationOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SummaryToolTipLayer",
-    "names":[{"platform":"WebComponents","fileName":"igc-summary-tool-tip-layer-component.ts","dynamicModuleName":"igc-summary-tool-tip-layer-dynamic-module.ts","moduleName":"igc-summary-tool-tip-layer-module.ts","mappedName":"IgcSummaryToolTipLayerComponent"}],
-    "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
-  { "originalName":"SummaryTooltipLayerPosition","isEnum":true,
-    "names":[{"platform":"WebComponents","fileName":"SummaryTooltipLayerPosition.ts","mappedName":"SummaryTooltipLayerPosition"}],
-    "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"Auto"}],"originalName":"Auto"},
-    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideStart"}],"originalName":"OutsideStart"},
-    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
-    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
-    { "names":[{"platform":"WebComponents","mappedType":"SummaryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

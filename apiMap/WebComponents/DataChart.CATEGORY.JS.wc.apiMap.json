@@ -43,6 +43,8 @@
     "names":[{"platform":"WebComponents","fileName":"igc-anchored-category-series-component.ts","mappedName":"IgcAnchoredCategorySeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberAsLegendLabel"}],"originalName":"ValueMemberAsLegendLabel"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberAsLegendUnit"}],"originalName":"ValueMemberAsLegendUnit"},
     { "names":[{"platform":"WebComponents","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},

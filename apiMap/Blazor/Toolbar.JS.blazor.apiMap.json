@@ -13,5 +13,15 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ColumnPinning"}],"originalName":"ColumnPinning"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningText"}],"originalName":"ColumnPinningText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningTitle"}],"originalName":"ColumnPinningTitle"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"borderWidth.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"borderWidth.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"borderWidth.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"borderWidth.top"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
-    { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

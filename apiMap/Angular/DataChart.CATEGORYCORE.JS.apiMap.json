@@ -26,6 +26,8 @@
   { "originalName":"CategorySeries",
     "names":[{"platform":"Angular","fileName":"igx-category-series-component.ts","mappedName":"IgxCategorySeriesComponent"}],
     "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasValueAxis"}],"originalName":"HasValueAxis"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isValueAxisInverted"}],"originalName":"IsValueAxisInverted"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCategory"}],"originalName":"IsCategory"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},

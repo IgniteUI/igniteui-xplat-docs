@@ -9,7 +9,8 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TitleColor"}],"originalName":"TitleColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"IconColor"}],"originalName":"IconColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ItemBackgroundColor"}],"originalName":"ItemBackgroundColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ItemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"BackgroundColor"}],"originalName":"BackgroundColor"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HoverBackgroundColor"}],"originalName":"HoverBackgroundColor"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
