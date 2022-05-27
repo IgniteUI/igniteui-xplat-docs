@@ -16,11 +16,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 #### チャート
 
 * 積層型シリーズのハイライト サポートが追加されました。
+* Added `AssigningCategoryStyle` event to all series in `DataChart`.
 * CalloutLayer の 新しい `AllowedPositions`。チャート内のどこにコールアウトを配置するかを制限するために使用されます。 
-* CalloutLayer の新しい `CalloutCornerRadius`。コールアウトの角を丸めるために使用されます。
+* New `CalloutCornerRadius`, `XAxisAnnotationBackgroundCornerRadius`, `YAxisAnnotationBackgroundCornerRadius` for Annotation Layers in `DataChart`. Used to round out the corners of the callouts. A corner radius has now been added by default.
 * スクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` と `VerticalViewScrollbarMode`。
-* 新しい `FavorLabellingScaleEnd` は、数値軸 (NumericX、NumericY、PercentChangeY など) にのみ存在します。 
+* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY).
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
+* New `XAxisMaximumGap`, determines the maximum allowed value for the `XAxisGap`.
+* New `XAxisMinimumGapSize`, determines the pixel based gap size between categories. 
 
 ## **{PackageVerChanges-21-2.1}**
 

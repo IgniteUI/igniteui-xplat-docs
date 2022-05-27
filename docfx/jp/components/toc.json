@@ -66,7 +66,7 @@
   {
     "name": "変更ログ",
     "href": "general-changelog-dv.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -87,14 +87,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "アバター {ReleaseStatus_WebsInputs}",
-    "href": "layouts/avatar.md",
-    "status": "NEW"
+    "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "カード {ReleaseStatus_WebsInputs}",
-    "href": "layouts/card.md",
-    "status": "NEW"
+    "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
@@ -130,14 +128,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
-    "href": "menus/navbar.md",
-    "status": "NEW"
+    "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
-    "href": "menus/navigation-drawer.md",
-    "status": "NEW"
+    "href": "menus/navigation-drawer.md"
   },
   {
     "exclude": ["Angular"],
@@ -148,8 +144,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "リスト {ReleaseStatus_WebsList}",
-    "href": "grids/list.md",
-    "status": "NEW"
+    "href": "grids/list.md"
   },
   {
     "exclude": ["Angular"],
@@ -219,8 +214,7 @@
       },
       {
         "name": "セルの結合",
-        "href": "grids/data-grid-cell-merging.md",
-        "status": "NEW"
+        "href": "grids/data-grid-cell-merging.md"
       },
       {
         "name": "セル選択",
@@ -234,8 +228,7 @@
       },
       {
         "name": "列フィルタリング",
-        "href": "grids/data-grid-column-filtering.md",
-        "status": "NEW"
+        "href": "grids/data-grid-column-filtering.md"
       },
       {
         "name": "列移動",
@@ -294,13 +287,11 @@
       },
       {
         "name": "グリッド レイアウトの読み込みと保存",
-        "href": "grids/data-grid-load-save-layout.md",
-        "status": "NEW"
+        "href": "grids/data-grid-load-save-layout.md"
       },
       {
         "name": "行グループ",
-        "href": "grids/data-grid-row-grouping.md",
-        "status": "NEW"
+        "href": "grids/data-grid-row-grouping.md"
       },
       {
         "name": "行の強調表示",
@@ -535,7 +526,7 @@
         {
           "name": "軸オプション",
           "href": "charts/features/chart-axis-options.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート アニメーション",
@@ -545,7 +536,7 @@
         {
           "name": "チャート注釈",
           "href": "charts/features/chart-annotations.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート強調表示",
@@ -560,7 +551,7 @@
         {
           "name": "チャート ナビゲーション",
           "href": "charts/features/chart-navigation.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート オーバーレイ",
@@ -1452,6 +1443,6 @@
     "exclude": ["Angular"],
     "name": "日付ピッカー",
     "href": "editors/date-picker.md",
-    "status": "UPDATED"
+    "status": ""
   }
 ]

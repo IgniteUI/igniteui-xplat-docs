@@ -85,6 +85,10 @@ $Platform$ チャートは、チャートで表示されるラベルの構成、
 
 $Platform$ チャートの `XAxisGap` プロパティは、プロットされた系列の縦棒または棒間のスペースの量を決定します。このプロパティは、0.0 から 1.0 までの数値を受け入れます。値は、シリーズ間の利用可能なピクセル数からのギャップの相対幅を表します。このプロパティを 0 に設定すると、シリーズ間にギャップがレンダリングされず、1 に設定すると最大ギャップがレンダリングされます。
 
+The `XAxisMaximumGap` property of the $Platform$ charts, determines the maximum gap value to allow. This default is set to 1.0 but can be changed depending on what you set `XAxisGap` to.
+
+The `XAxisMinimumGapSize` property of the $Platform$ charts, determines the minimum amount of pixels to use for the gap between the categories, if possible.
+
 以下の例は、ニューヨーク市のセントラル パークの摂氏の平均最高気温を示しています。これは、`XAxisGap` が最初に 1 に設定された[縦棒チャート](../types/column-chart.md)で表されているため、列の間にカテゴリ全体の幅があります。スライダーを使用すると、この例のギャップを構成して、さまざまな値の効果を確認できます。
 
 <code-view style="height: 450px"
