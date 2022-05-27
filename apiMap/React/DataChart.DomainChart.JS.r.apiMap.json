@@ -21,6 +21,133 @@
     { "names":[{"platform":"React","mappedType":"(time: number) => number","mappedName":"transitionEasingFunction"}],"originalName":"TransitionEasingFunction"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"subtitleTextStyle"}],"originalName":"SubtitleTextStyle"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"titleTextStyle"}],"originalName":"TitleTextStyle"},
+    { "names":[{"platform":"React","mappedType":"DataToolTipLayerGroupingMode","mappedName":"dataToolTipGroupingMode"}],"originalName":"DataToolTipGroupingMode"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipPositionOffsetX"}],"originalName":"DataToolTipPositionOffsetX"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipPositionOffsetY"}],"originalName":"DataToolTipPositionOffsetY"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipDefaultPositionOffsetX"}],"originalName":"DataToolTipDefaultPositionOffsetX"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipDefaultPositionOffsetY"}],"originalName":"DataToolTipDefaultPositionOffsetY"},
+    { "names":[{"platform":"React","mappedType":"DataTooltipGroupedPositionX","mappedName":"dataToolTipGroupedPositionModeX"}],"originalName":"DataToolTipGroupedPositionModeX"},
+    { "names":[{"platform":"React","mappedType":"DataTooltipGroupedPositionY","mappedName":"dataToolTipGroupedPositionModeY"}],"originalName":"DataToolTipGroupedPositionModeY"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"dataToolTipShouldUpdateWhenSeriesDataChanges"}],"originalName":"DataToolTipShouldUpdateWhenSeriesDataChanges"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dataToolTipIncludedSeries"}],"originalName":"DataToolTipIncludedSeries"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dataToolTipExcludedSeries"}],"originalName":"DataToolTipExcludedSeries"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dataToolTipIncludedColumns"}],"originalName":"DataToolTipIncludedColumns"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dataToolTipExcludedColumns"}],"originalName":"DataToolTipExcludedColumns"},
+    { "names":[{"platform":"React","mappedType":"DataAbbreviationMode","mappedName":"dataToolTipValueFormatAbbreviation"}],"originalName":"DataToolTipValueFormatAbbreviation"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipValueFormatMaxFractions"}],"originalName":"DataToolTipValueFormatMaxFractions"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataToolTipValueFormatMinFractions"}],"originalName":"DataToolTipValueFormatMinFractions"},
+    { "names":[{"platform":"React","mappedType":"DataLegendValueMode","mappedName":"dataToolTipValueFormatMode"}],"originalName":"DataToolTipValueFormatMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipValueFormatCulture"}],"originalName":"DataToolTipValueFormatCulture"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"dataToolTipValueFormatUseGrouping"}],"originalName":"DataToolTipValueFormatUseGrouping"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipValueFormatString"}],"originalName":"DataToolTipValueFormatString"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"dataToolTipValueFormatSpecifiers"}],"originalName":"DataToolTipValueFormatSpecifiers"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipValueRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipValueRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipValueRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipValueRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"dataToolTipValueRowVisible"}],"originalName":"DataToolTipValueRowVisible"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipValueTextWhenMissingData"}],"originalName":"DataToolTipValueTextWhenMissingData"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"dataToolTipValueTextUseSeriesColors"}],"originalName":"DataToolTipValueTextUseSeriesColors"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipValueTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipValueTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipValueTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipValueTextMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipValueTextColor"}],"originalName":"DataToolTipValueTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipHeaderFormatString"}],"originalName":"DataToolTipHeaderFormatString"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"dataToolTipHeaderFormatSpecifiers"}],"originalName":"DataToolTipHeaderFormatSpecifiers"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipHeaderFormatCulture"}],"originalName":"DataToolTipHeaderFormatCulture"},
+    { "names":[{"platform":"React","mappedType":"DataLegendHeaderDateMode","mappedName":"dataToolTipHeaderFormatDate"}],"originalName":"DataToolTipHeaderFormatDate"},
+    { "names":[{"platform":"React","mappedType":"DataLegendHeaderTimeMode","mappedName":"dataToolTipHeaderFormatTime"}],"originalName":"DataToolTipHeaderFormatTime"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipHeaderText"}],"originalName":"DataToolTipHeaderText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipHeaderTextColor"}],"originalName":"DataToolTipHeaderTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipHeaderTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipHeaderTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipHeaderTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipHeaderTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipHeaderRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipHeaderRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipHeaderRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipHeaderRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"dataToolTipHeaderRowVisible"}],"originalName":"DataToolTipHeaderRowVisible"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryTitleTextColor"}],"originalName":"DataToolTipSummaryTitleTextColor"},
+    { "names":[{"platform":"React","mappedType":"DataLegendSummaryType","mappedName":"dataToolTipSummaryType"}],"originalName":"DataToolTipSummaryType"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryTitleText"}],"originalName":"DataToolTipSummaryTitleText"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipSummaryTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipSummaryTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipSummaryTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipSummaryTitleTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipSummaryRowMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipSummaryRowMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipSummaryRowMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipSummaryRowMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryValueTextColor"}],"originalName":"DataToolTipSummaryValueTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryLabelText"}],"originalName":"DataToolTipSummaryLabelText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryLabelTextColor"}],"originalName":"DataToolTipSummaryLabelTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryUnitsText"}],"originalName":"DataToolTipSummaryUnitsText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipSummaryUnitsTextColor"}],"originalName":"DataToolTipSummaryUnitsTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipBadgeMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipBadgeMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipBadgeMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipBadgeMargin.top"},
+    { "names":[{"platform":"React","mappedType":"LegendItemBadgeShape","mappedName":"dataToolTipBadgeShape"}],"originalName":"DataToolTipBadgeShape"},
+    { "names":[{"platform":"React","mappedType":"DataLegendUnitsMode","mappedName":"dataToolTipUnitsDisplayMode"}],"originalName":"DataToolTipUnitsDisplayMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipUnitsText"}],"originalName":"DataToolTipUnitsText"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipUnitsTextColor"}],"originalName":"DataToolTipUnitsTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipUnitsTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipUnitsTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipUnitsTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipUnitsTextMargin.top"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipTitleTextMargin.top"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipTitleTextColor"}],"originalName":"DataToolTipTitleTextColor"},
+    { "names":[{"platform":"React","mappedType":"DataLegendLabelMode","mappedName":"dataToolTipLabelDisplayMode"}],"originalName":"DataToolTipLabelDisplayMode"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dataToolTipLabelTextColor"}],"originalName":"DataToolTipLabelTextColor"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"dataToolTipLabelTextMargin.bottom"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"dataToolTipLabelTextMargin.left"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"dataToolTipLabelTextMargin.right"},
+    { 
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"dataToolTipLabelTextMargin.top"},
     { "names":[{"platform":"React","mappedType":"DomainType","mappedName":"domainType"}],"originalName":"DomainType"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"includedProperties"}],"originalName":"IncludedProperties"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"excludedProperties"}],"originalName":"ExcludedProperties"},
@@ -63,12 +190,16 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"plotAreaMarginRight"}],"originalName":"PlotAreaMarginRight"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"plotAreaMarginBottom"}],"originalName":"PlotAreaMarginBottom"},
     { "names":[{"platform":"React","mappedType":"ComputedPlotAreaMarginMode","mappedName":"computedPlotAreaMarginMode"}],"originalName":"ComputedPlotAreaMarginMode"},
+    { "names":[{"platform":"React","mappedType":"SeriesPlotAreaMarginHorizontalMode","mappedName":"seriesPlotAreaMarginHorizontalMode"}],"originalName":"SeriesPlotAreaMarginHorizontalMode"},
+    { "names":[{"platform":"React","mappedType":"SeriesPlotAreaMarginVerticalMode","mappedName":"seriesPlotAreaMarginVerticalMode"}],"originalName":"SeriesPlotAreaMarginVerticalMode"},
     { "names":[{"platform":"React","mappedType":"SeriesHighlightingMode","mappedName":"highlightingMode"}],"originalName":"HighlightingMode"},
     { "names":[{"platform":"React","mappedType":"SeriesHighlightingBehavior","mappedName":"highlightingBehavior"}],"originalName":"HighlightingBehavior"},
     { "names":[{"platform":"React","mappedType":"LegendHighlightingMode","mappedName":"legendHighlightingMode"}],"originalName":"LegendHighlightingMode"},
     { "names":[{"platform":"React","mappedType":"LegendItemBadgeShape","mappedName":"legendItemBadgeShape"}],"originalName":"LegendItemBadgeShape"},
     { "names":[{"platform":"React","mappedType":"LegendItemBadgeMode","mappedName":"legendItemBadgeMode"}],"originalName":"LegendItemBadgeMode"},
+    { "names":[{"platform":"React","mappedType":"AutoMarginsAndAngleUpdateMode","mappedName":"autoMarginAndAngleUpdateMode"}],"originalName":"AutoMarginAndAngleUpdateMode"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldAutoExpandMarginForInitialLabels"}],"originalName":"ShouldAutoExpandMarginForInitialLabels"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldConsiderAutoRotationForInitialLabels"}],"originalName":"ShouldConsiderAutoRotationForInitialLabels"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"autoExpandMarginExtraPadding"}],"originalName":"AutoExpandMarginExtraPadding"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"autoExpandMarginMaximumValue"}],"originalName":"AutoExpandMarginMaximumValue"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
@@ -92,10 +223,35 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"finalValueAnnotationsPrecision"}],"originalName":"FinalValueAnnotationsPrecision"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"calloutsVisible"}],"originalName":"CalloutsVisible"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"calloutStyleUpdatingEventEnabled"}],"originalName":"CalloutStyleUpdatingEventEnabled"},
+    { "names":[{"platform":"React","mappedType":"IgrCalloutPlacementPositionsCollection","mappedName":"calloutsAllowedPositions"}],"originalName":"CalloutsAllowedPositions"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"calloutsXMemberPath"}],"originalName":"CalloutsXMemberPath"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"calloutsYMemberPath"}],"originalName":"CalloutsYMemberPath"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"calloutsLabelMemberPath"}],"originalName":"CalloutsLabelMemberPath"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"calloutsContentMemberPath"}],"originalName":"CalloutsContentMemberPath"},
+    { "names":[{"platform":"React","mappedType":"SeriesViewerScrollbarMode","mappedName":"horizontalViewScrollbarMode"}],"originalName":"HorizontalViewScrollbarMode"},
+    { "names":[{"platform":"React","mappedType":"SeriesViewerScrollbarMode","mappedName":"verticalViewScrollbarMode"}],"originalName":"VerticalViewScrollbarMode"},
+    { "names":[{"platform":"React","mappedType":"SeriesViewerHorizontalScrollbarPosition","mappedName":"horizontalViewScrollbarPosition"}],"originalName":"HorizontalViewScrollbarPosition"},
+    { "names":[{"platform":"React","mappedType":"SeriesViewerVerticalScrollbarPosition","mappedName":"verticalViewScrollbarPosition"}],"originalName":"VerticalViewScrollbarPosition"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"horizontalViewScrollbarFill"}],"originalName":"HorizontalViewScrollbarFill"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"horizontalViewScrollbarOutline"}],"originalName":"HorizontalViewScrollbarOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarStrokeThickness"}],"originalName":"HorizontalViewScrollbarStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarMaxOpacity"}],"originalName":"HorizontalViewScrollbarMaxOpacity"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarCornerRadius"}],"originalName":"HorizontalViewScrollbarCornerRadius"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarHeight"}],"originalName":"HorizontalViewScrollbarHeight"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarInset"}],"originalName":"HorizontalViewScrollbarInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarTrackStartInset"}],"originalName":"HorizontalViewScrollbarTrackStartInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"horizontalViewScrollbarTrackEndInset"}],"originalName":"HorizontalViewScrollbarTrackEndInset"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"horizontalViewScrollbarShouldAddAutoTrackInsets"}],"originalName":"HorizontalViewScrollbarShouldAddAutoTrackInsets"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"verticalViewScrollbarFill"}],"originalName":"VerticalViewScrollbarFill"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"verticalViewScrollbarOutline"}],"originalName":"VerticalViewScrollbarOutline"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarStrokeThickness"}],"originalName":"VerticalViewScrollbarStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarMaxOpacity"}],"originalName":"VerticalViewScrollbarMaxOpacity"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarCornerRadius"}],"originalName":"VerticalViewScrollbarCornerRadius"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarWidth"}],"originalName":"VerticalViewScrollbarWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarInset"}],"originalName":"VerticalViewScrollbarInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarTrackStartInset"}],"originalName":"VerticalViewScrollbarTrackStartInset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"verticalViewScrollbarTrackEndInset"}],"originalName":"VerticalViewScrollbarTrackEndInset"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"verticalViewScrollbarShouldAddAutoTrackInsets"}],"originalName":"VerticalViewScrollbarShouldAddAutoTrackInsets"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyResized"}],"originalName":"NotifyResized"},
@@ -106,7 +262,8 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"recalculateMarginAutoExpansion"}],"originalName":"RecalculateMarginAutoExpansion"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XYChart",
     "names":[{"platform":"React","fileName":"igr-xy-chart.ts","mappedName":"IgrXYChart"}],
     "members":[
@@ -169,6 +326,8 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"xAxisExtent"}],"originalName":"XAxisExtent"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisExtent"}],"originalName":"YAxisExtent"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"xAxisTitleAngle"}],"originalName":"XAxisTitleAngle"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"xAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"XAxisEnhancedIntervalPreferMoreCategoryLabels"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"yAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"YAxisEnhancedIntervalPreferMoreCategoryLabels"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisTitleAngle"}],"originalName":"YAxisTitleAngle"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"xAxisInverted"}],"originalName":"XAxisInverted"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"yAxisInverted"}],"originalName":"YAxisInverted"},
@@ -198,6 +357,7 @@
     { "names":[{"platform":"React","mappedType":"ToolTipType","mappedName":"Item"}],"originalName":"Item"},
     { "names":[{"platform":"React","mappedType":"ToolTipType","mappedName":"Category"}],"originalName":"Category"},
     { "names":[{"platform":"React","mappedType":"ToolTipType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"React","mappedType":"ToolTipType","mappedName":"Data"}],"originalName":"Data"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CrosshairsDisplayMode","isEnum":true,
     "names":[{"platform":"React","fileName":"CrosshairsDisplayMode.ts","mappedName":"CrosshairsDisplayMode"}],

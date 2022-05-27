@@ -299,6 +299,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSectionHeaders"}],"originalName":"ShouldEmitSectionHeaders"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSectionFooters"}],"originalName":"ShouldEmitSectionFooters"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitShiftedRows"}],"originalName":"ShouldEmitShiftedRows"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSummaryRows"}],"originalName":"ShouldEmitSummaryRows"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsPlaceholderItem"}],"originalName":"IsPlaceholderItem"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemPropertyAtIndex"}],"originalName":"GetItemPropertyAtIndex"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemProperty"}],"originalName":"GetItemProperty"},
@@ -468,6 +469,7 @@
   { "originalName":"DefaultSummaryResult",
     "names":[{"platform":"Blazor","fileName":"SummaryResult.cs","mappedName":"IgbSummaryResult"}],
     "members":[
+    { "names":[{"platform":"Blazor","mappedType":"object[]","mappedName":"GroupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"PropertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"Blazor","mappedType":"SummaryOperand","mappedName":"Operand"}],"originalName":"Operand"},
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"Value"}],"originalName":"Value"},
@@ -596,6 +598,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSectionHeaders"}],"originalName":"ShouldEmitSectionHeaders"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSectionFooters"}],"originalName":"ShouldEmitSectionFooters"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitShiftedRows"}],"originalName":"ShouldEmitShiftedRows"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldEmitSummaryRows"}],"originalName":"ShouldEmitSummaryRows"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"UpdatePropertyAtKey"}],"originalName":"UpdatePropertyAtKey"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveItemByKey"}],"originalName":"RemoveItemByKey"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"RemoveItem"}],"originalName":"RemoveItem"},
@@ -661,6 +664,13 @@
     { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"TargetRow"}],"originalName":"TargetRow"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"Level"}],"originalName":"Level"},
     { "names":[{"platform":"Blazor","mappedType":"IgbSummaryResult[]","mappedName":"SummaryResults"}],"originalName":"SummaryResults"}],"originalNamespace":"Infragistics.Controls.DataSource.Implementation"},
+  { "originalName":"PagedDataSource",
+    "names":[{"platform":"Blazor","fileName":"PagedDataSource.cs","mappedName":"IgbPagedDataSource"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"IsPlaceholderItem"}],"originalName":"IsPlaceholderItem"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemPropertyAtIndex"}],"originalName":"GetItemPropertyAtIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemProperty"}],"originalName":"GetItemProperty"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"SetSchema"}],"originalName":"SetSchema"}],"originalBaseTypeName":"LocalDataSource","originalBaseTypeNamespace":"Infragistics.Controls.DataSource.Implementation","originalNamespace":"Infragistics.Controls.DataSource.Implementation"},
   { "originalName":"LocalDataSource",
     "names":[{"platform":"Blazor","fileName":"LocalDataSource.cs","mappedName":"IgbLocalDataSource"}],
     "members":[

@@ -41,6 +41,7 @@
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"dateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
     { "names":[{"platform":"Angular","mappedType":"TimeAxisLabellingMode","mappedName":"labellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isOrdinal"}],"originalName":"IsOrdinal"},
     { "names":[{"platform":"Angular","mappedType":"IgxTimeAxisLabelFormatCollection","mappedName":"labelFormats"}],"originalName":"LabelFormats"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"maximumValue"}],"originalName":"MaximumValue"},

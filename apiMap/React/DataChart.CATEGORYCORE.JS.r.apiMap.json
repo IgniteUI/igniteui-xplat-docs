@@ -26,6 +26,8 @@
   { "originalName":"CategorySeries",
     "names":[{"platform":"React","fileName":"igr-category-series.ts","mappedName":"IgrCategorySeries"}],
     "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hasValueAxis"}],"originalName":"HasValueAxis"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isValueAxisInverted"}],"originalName":"IsValueAxisInverted"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCategory"}],"originalName":"IsCategory"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},

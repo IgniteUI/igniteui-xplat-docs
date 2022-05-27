@@ -26,6 +26,8 @@
   { "originalName":"CategorySeries",
     "names":[{"platform":"WebComponents","fileName":"igc-category-series-component.ts","mappedName":"IgcCategorySeriesComponent"}],
     "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hasValueAxis"}],"originalName":"HasValueAxis"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isValueAxisInverted"}],"originalName":"IsValueAxisInverted"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCategory"}],"originalName":"IsCategory"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},

@@ -672,6 +672,7 @@
   { "originalName":"ISummaryResult",
     "names":[{"platform":"React","fileName":"ISummaryResult.ts","mappedName":"ISummaryResult"}],
     "members":[
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"React","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
@@ -680,10 +681,12 @@
     "names":[{"platform":"React","fileName":"DefaultSummaryResult.ts","mappedName":"DefaultSummaryResult"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"_groupKey"}],"originalName":"_groupKey"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"_propertyName"}],"originalName":"_propertyName"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"_value"}],"originalName":"_value"},
     { "names":[{"platform":"React","mappedType":"SummaryOperand","mappedName":"_operand"}],"originalName":"_operand"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"_summaryIndex"}],"originalName":"_summaryIndex"},
+    { "names":[{"platform":"React","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"React","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"value"}],"originalName":"Value"},

@@ -43,6 +43,8 @@
     "names":[{"platform":"React","fileName":"igr-anchored-category-series.ts","mappedName":"IgrAnchoredCategorySeries"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberAsLegendLabel"}],"originalName":"ValueMemberAsLegendLabel"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberAsLegendUnit"}],"originalName":"ValueMemberAsLegendUnit"},
     { "names":[{"platform":"React","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},

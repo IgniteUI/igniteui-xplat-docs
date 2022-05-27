@@ -672,6 +672,7 @@
   { "originalName":"ISummaryResult",
     "names":[{"platform":"WebComponents","fileName":"ISummaryResult.ts","mappedName":"ISummaryResult"}],
     "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"WebComponents","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
@@ -680,10 +681,12 @@
     "names":[{"platform":"WebComponents","fileName":"DefaultSummaryResult.ts","mappedName":"DefaultSummaryResult"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"_groupKey"}],"originalName":"_groupKey"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"_propertyName"}],"originalName":"_propertyName"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"_value"}],"originalName":"_value"},
     { "names":[{"platform":"WebComponents","mappedType":"SummaryOperand","mappedName":"_operand"}],"originalName":"_operand"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"_summaryIndex"}],"originalName":"_summaryIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"groupKey"}],"originalName":"GroupKey"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
     { "names":[{"platform":"WebComponents","mappedType":"SummaryOperand","mappedName":"operand"}],"originalName":"Operand"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"value"}],"originalName":"Value"},

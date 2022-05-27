@@ -6,6 +6,10 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"IgbCategoryAxisBase","mappedName":"XAxis"}],"originalName":"XAxis"},
     { "names":[{"platform":"Blazor","mappedType":"IgbNumericYAxis","mappedName":"YAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LowMemberAsLegendLabel"}],"originalName":"LowMemberAsLegendLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HighMemberAsLegendLabel"}],"originalName":"HighMemberAsLegendLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LowMemberAsLegendUnit"}],"originalName":"LowMemberAsLegendUnit"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HighMemberAsLegendUnit"}],"originalName":"HighMemberAsLegendUnit"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetOffsetValue"}],"originalName":"GetOffsetValue"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryWidth"}],"originalName":"GetCategoryWidth"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
