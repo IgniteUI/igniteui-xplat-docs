@@ -16,14 +16,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 #### チャート
 
 * 積層型シリーズのハイライト サポートが追加されました。
-* Added `AssigningCategoryStyle` event to all series in `DataChart`.
+* `DataChart` のすべてのシリーズに `AssigningCategoryStyle` イベントを追加しました。
 * CalloutLayer の 新しい `AllowedPositions`。チャート内のどこにコールアウトを配置するかを制限するために使用されます。 
-* New `CalloutCornerRadius`, `XAxisAnnotationBackgroundCornerRadius`, `YAxisAnnotationBackgroundCornerRadius` for Annotation Layers in `DataChart`. Used to round out the corners of the callouts. A corner radius has now been added by default.
+* `DataChart` の注釈レイヤーに `CalloutCornerRadius`、 `XAxisAnnotationBackgroundCornerRadius`、`YAxisAnnotationBackgroundCornerRadius`を新たに追加。コールアウトの角を丸めるために使用されます。コーナー半径がデフォルトで追加されました。
 * スクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` と `VerticalViewScrollbarMode`。
-* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY).
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (NumericX、NumericY、PercentChangeY など) とのみ互換性があります。
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
-* New `XAxisMaximumGap`, determines the maximum allowed value for the `XAxisGap`.
-* New `XAxisMinimumGapSize`, determines the pixel based gap size between categories. 
+* 新しい `XAxisMaximumGap` は、`XAxisGap` の最大許容値を決定します。
+* 新しい `XAxisMinimumGapSize` は、カテゴリ間のピクセル ベースのギャップ サイズを決定します。
 
 ## **{PackageVerChanges-21-2.1}**
 
