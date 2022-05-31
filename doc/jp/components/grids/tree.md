@@ -1,39 +1,39 @@
 ---
-title: $Platform$ Tree Component | Infragistics
-_description: Infragistics' $Platform$ Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ Tree, Item Tree, overview, $ProductName$, Infragistics
+title: $Platform$ ツリー コンポーネント | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。$ProductName$ がデータの表示を改善するのにどのように役立つかをご覧ください。
+_keywords: $Platform$ ツリー、項目ツリー、概要、$ProductName$、インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
 ---
 
-# $Platform$ Tree Overview
+# $Platform$ Tree (ツリー) の概要
 
-The $ProductName$ Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
+$ProductName$ ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
 
-## $Platform$ Tree Example
+## $Platform$ ツリーの例
 
-In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
+この基本的な $ProductName$ ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="$Platform$ Tree Example"
+           alt="$Platform$ ツリーの例"
            github-src="grids/tree/basic-example">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 
-Before using the `Tree`, you need to register it as follows:
+`Tree` を使用する前に、次のように登録する必要があります:
 
 
 ```ts
@@ -43,17 +43,17 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
 <!-- end: WebComponents -->
 
-The simplest way to start using the `Tree` is as follows:
+`Tree` の使用を開始する最も簡単な方法は次のとおりです:
 
 
-### Declaring a tree
+### ツリーの宣言
 `TreeItem` is the representation of every item that belongs to the `Tree`.  
-Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement. 
-The `value` property can be used to add a reference to the data entry the item represents.
+項目は、`disabled`、`active`、`active`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
+`value` プロパティを使用して、項目が表すデータ エントリへの参照を追加できます。
 
-Items can be declared using one of the following approaches.
+項目は、次のいずれかのアプローチを使用して宣言できます:
 
-- Declaring the tree and its items by specifying the item hierarchy and iterating through a data set
+- 項目階層を指定し、データ セットを反復処理することにより、ツリーとその項目を宣言します。
 
 ```html
 <igc-tree>
@@ -69,12 +69,12 @@ Items can be declared using one of the following approaches.
 </igc-tree>
 ```
 
-Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
+項目をデータ モデルにバインドして、展開された状態と選択された状態が基になるデータにも反映されるようにすることができます。
 
-- Declaring a tree by creating static unbound items
+- 静的な非バインド項目を作成してツリーを宣言します。
 <!-- WebComponents -->
 
-In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
+ツリーを描画するために、必ずしもデータ セットは必要ありません。公開された `label` プロパティを使用して、基になるデータ モデルなしで個々の項目を作成したり、`TreeItem` ラベルのカスタム スロット コンテンツを提供したりできます。
 
 ```html
 <igc-tree>
@@ -99,99 +99,99 @@ In order to render a tree you do not necessarily need a data set - individual it
 ```
 
 > [!NOTE]
-> You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
+> 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
 
 <!-- end: WebComponents -->
 
-### Item Interactions
-The `Tree` provides the following API methods for item interactions:
-- `expand` - expands all items. If an items array is passed, expands only the specified items.
-- `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
-- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit igcSelection event.
-- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit igcSelection event.
+### 項目のインタラクション
+`Tree` は、項目のインタラクションのために次の API メソッドを提供します:
+- expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。
+- `collapse` - すべての項目を縮小します。項目配列が渡されると、指定された項目のみが縮小されます。
+- `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。igcSelection イベントを発行しません。
+- `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。igcSelection イベントを発行しません。
 
-## $Platform$ Tree Selection
+## $Platform$ ツリーの選択
 
-In order to setup item selection in the $ProductName$ Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+$ProductName$ ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
-In the `Tree` by default item selection is disabled. Users cannot select or deselect an item through UI interaction, but these actions can still be completed through the provided API method.
+`Tree` では、デフォルトで項目の選択が無効になっています。ユーザーは UI インタラクションを介して項目を選択または選択解除することはできませんが、これらのアクションは提供された API メソッドを介して実行できます。
 ### Multiple
-To enable multiple item selection in the `Tree` just set the `selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+`Tree` で複数の項目を選択できるようにするには、`selection` プロパティを **multiple** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。各項目には、選択されているまたは選択されていないの 2 つの状態があります。このモードは複数選択をサポートします。
 ```html
 <igc-tree selection="multiple">
 </igc-tree>
 ```
 ### Cascade
-To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item. 
+`Tree` カスケード項目の選択を有効にするには、selection プロパティを **cascade** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。 
 
 ```html
 <igc-tree selection="cascade">
 </igc-tree>
 ```
-In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
+このモードでは、親の選択状態はその子の選択状態に完全に依存します。親に選択された子と選択解除された子がある場合、そのチェックボックスは不確定な状態になります。
 
-## Keyboard Navigation
-Keyboard navigation in `Tree` provides a rich variety of keyboard interactions for the user. This functionality is enabled by default and allows users to navigate through the items.
+## キーボード ナビゲーション
+`Tree` のキーボード ナビゲーションは、ユーザーにさまざまなキーボード インタラクションを提供します。この機能はデフォルトで有効になっており、ユーザーは項目間を移動できます。
 
-The `Tree` navigation is compliant with W3C accesibility standards and convenient to use.
+`Tree` ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすいです。
 
-**Key Combinations**
+**キーの組み合わせ**
 
- - <kbd>Arrow Down</kbd> - navigates to the next visible item. Marks the item as active. Does nothing if on the LAST item.
- - <kbd>Ctrl + Arrow Down</kbd> - navigates to the next visible item. Does nothing if on the LAST item.
- - <kbd>Arrow Up</kbd> - navigates to the previous visible item. Marks the item as active. Does nothing if on the FIRST item.
- - <kbd>Ctrl + Arrow Up</kbd> - navigates to the previous visible item. Does nothing if on the FIRST item.
- - <kbd>Arrow Left</kbd> - on an expanded parent item, collapses it. If the item is collapsed or does not have children, moves to its parent item. Does nothing if there is no parent item.
- - <kbd>Arrow Right</kbd> - on an expanded parent item, navigates to the first child of the item. If on a collapsed parent item, expands it. Does nothing if the item does not have children.
- - <kbd>Home</kbd> - navigates to the FIRST item.
- - <kbd>End</kbd> - navigates to the LAST visible item.
- - <kbd>Tab</kbd> - navigates to the next focusable element on the page, outside of the tree.
- - <kbd>Shift + Tab</kbd> - navigates to the previous focusable element on the page, outside of the tree.
- - <kbd>Space</kbd> - toggles selection of the current item. Marks the node as active.
- - <kbd>Shift + Space</kbd> - toggles selection of all items between the active one and the one pressed Space while holding Shift if selection is enabled.
- - <kbd>Enter</kbd> - activates the focused item. If the item has link in it, opens the link.
- - <kbd>*</kbd> - expands the item and all sibling items on the same level.
+ - <kbd>下矢印</kbd> - 次に表示されている項目に移動します。項目をアクティブとしてマークします。最後の項目の場合は何もしません。
+ - <kbd>Ctrl + 下矢印</kbd> - 次に表示されている項目に移動します。最後の項目の場合は何もしません。
+ - <kbd>上矢印</kbd> - 前に表示されていた項目に移動します。項目をアクティブとしてマークします。最初の項目の場合は何もしません。
+ - <kbd>Ctrl + 上矢印</kbd> - 前に表示されていた項目に移動します。最初の項目の場合は何もしません。
+ - <kbd>左矢印</kbd> - 展開された親項目の場合、項目を縮小します。項目が縮小されているか、子がない場合は、その親項目に移動します。親項目がない場合は何もしません。
+ - <kbd>右矢印</kbd> - 展開された親項目の場合、項目の最初の子に移動します。縮小された親項目の場合は、それを展開します。項目に子がない場合は何もしません。
+ - <kbd>Home</kbd> - 最初の項目に移動します。
+ - <kbd>End</kbd> - 最後に表示された項目に移動します。
+ - <kbd>Tab</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
+ - <kbd>Shift +Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
+ - <kbd>Space</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
+ - <kbd>Shift + Space</kbd> - 選択が有効になっている場合、Shift キーを押しながら、アクティブな項目と Space を押した項目の間ですべての項目の選択を切り替えます。
+ - <kbd>Enter</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
+ - <kbd>*</kbd> - 項目とすべての兄弟項目を同じレベルで展開します。
 
-When selection is enabled, end-user selection of items is only allowed through the rendered checkbox. Since both selection types allow multiple selection, the following mouse + keyboard interactions are available:
+選択が有効になっている場合、エンドユーザーによる項目の選択は、描画されたチェックボックスを介してのみ許可されます。どちらの選択タイプでも複数選択できるため、次のマウスとキーボードの操作を利用できます。
 
- - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
- - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
+ - <kbd>>クリック</kbd> - 項目のチェックボックスで実行すると、選択が有効になっている場合に項目の選択を切り替えます。それ以外の場合は、項目にフォーカスします。
+ - <kbd>Shift + クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、Shift キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
 
-## $Platform$ Tree Load On Demand
+## $Platform$ Tree ロードオンデマンド
 
-The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
+$ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモートデータとの設定が簡単にできます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="$Platform$ Tree Load On Demand Example"
+           alt="$Platform$ Tree ロードオンデマンドの例"
            github-src="grids/tree/load-on-demand">
 </code-view>
 
-After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
+ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
 
 <!-- WebComponents -->
 
-You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
+`loadingIndicator` スロットを使用して、読み込み領域にカスタム スロット コンテンツを提供できます。そのようなスロットが定義されていない場合、`CircularProgress` が使用されます。
 
 <!-- end: WebComponents -->
-## Styling
+## スタイル設定
 
-You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
+以下にリストされている公開された CSS パーツのいくつかを使用して、`TreeItem` の外観を変更できます:
 
-Part name | Description
+部分名 | 説明
 ---------|------------
-`wrapper` | The wrapper for the tree item.
-`selected`  | Indicates selected state. Applies to `wrapper`.
-`focused` | Indicates focused state. Applies to `wrapper`.
-`active` | Indicates an active state. Applies to `wrapper`.
-`indicator` | The expand indicator of the tree item.
-`label` | The tree item content.
-`text` | The tree item displayed text.
-`select` | The checkbox of the tree item when selection is enabled.
+`wrapper` | ツリー項目のラッパー。
+`selected`  | 選択された状態を示します。`wrapper` に適用されます。
+`focused` | フォーカスされた状態を示します。`wrapper` に適用されます。
+`active` | アクティブ状態を示します。`wrapper` に適用されます。
+`indicator` | ツリー項目の展開インジケーター。
+`label` | ツリー項目のコンテンツ。
+`text` | ツリー項目の表示テキスト。
+`select` | 選択が有効になっている場合のツリー項目のチェックボックス。
 
-Using these CSS parts we can customize thе appearance of the `Tree` component like this:
+これらの CSS パーツを使用して、次のように `Tree` コンポーネントの外観をカスタマイズできます:
 
 ```css
 igc-tree-item::part(active) {
@@ -210,7 +210,7 @@ igc-tree-item::part(active selected) {
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
 * `Tree`
 * `TreeItem`
@@ -221,11 +221,11 @@ igc-tree-item::part(active selected) {
 
 <div class="divider--half"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
