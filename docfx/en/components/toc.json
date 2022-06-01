@@ -170,7 +170,7 @@
       {
         "name": "Localization",
         "href": "grids/data-grid-localization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Blazor"],
@@ -301,7 +301,7 @@
       {
         "name": "Row Paging",
         "href": "grids/data-grid-row-paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "Row Pinning",
