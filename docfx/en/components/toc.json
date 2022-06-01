@@ -1431,7 +1431,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Calendar {ReleaseStatus_WebCalendar}",
+    "name": "Calendar",
     "href": "scheduling/calendar.md"
   },
   {
