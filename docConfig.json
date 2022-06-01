@@ -228,7 +228,7 @@
         "showStackblitzButtons": false,
         "codeSandboxButtonInject": false,
         "replacements": [
-            { "name": "{ReleaseStatus_DockManager}",  "value": "(Coming Soon)"},
+            { "name": "{ReleaseStatus_DockManager}",  "value": "BETA"},
             { "name": "{ReleaseStatus_WebsMenus}",    "value": ""},
             { "name": "{ReleaseStatus_WebsInputs}",   "value": ""},
             { "name": "{ReleaseStatus_WebsCalendar}", "value": ""},
