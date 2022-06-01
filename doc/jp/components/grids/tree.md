@@ -47,8 +47,7 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 
 
 ### ツリーの宣言
-`TreeItem` is the representation of every item that belongs to the `Tree`.  
-項目は、`disabled`、`active`、`active`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
+`TreeItem` は、`Tree` に属するすべての項の表現です。項目は、`disabled`、`active`、`active`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
 `value` プロパティを使用して、項目が表すデータ エントリへの参照を追加できます。
 
 項目は、次のいずれかのアプローチを使用して宣言できます:
@@ -105,7 +104,7 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 
 ### 項目のインタラクション
 `Tree` は、項目のインタラクションのために次の API メソッドを提供します:
-- expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。
+- `expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。
 - `collapse` - すべての項目を縮小します。項目配列が渡されると、指定された項目のみが縮小されます。
 - `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。igcSelection イベントを発行しません。
 - `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。igcSelection イベントを発行しません。
@@ -160,7 +159,7 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 
 ## $Platform$ Tree ロードオンデマンド
 
-$ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモートデータとの設定が簡単にできます。
+$ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
