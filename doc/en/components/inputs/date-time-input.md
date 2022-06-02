@@ -82,7 +82,8 @@ The `IgcDateTimeInput` supports different display and input formats.
 
 It uses [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `displayFormat` is provided, the component will use the `inputFormat` as such.
 
-The table bellow shows formats that are supported by the component:
+### Input Format
+The table bellow shows formats that are supported by the component's `inputFormat`:
 
 |Format|Description|
 |-------|----------|
@@ -114,6 +115,56 @@ If all went well, you should see the following in your browser:
            alt="$Platform$ Date Time Input Input Format Display Format Example"
            github-src="inputs/date-time-input/input-format-display-format">
 </code-view>
+
+### Display format
+The date time input exposes predefined formats for displaying date/time in various manners. All of the examples below are given in en-US locale.
+
+| Option | Example |
+|:-------:|:-----------|
+| `short` | 7/17/22, 12:00 AM |
+| `medium` | Jul 17, 2022, 12:00:00 AM |
+| `long` | July 17, 2022 at 12:00:00 AM GMT+3 |
+| `full` | Sunday, July 17, 2022 at 12:00:00 AM Eastern European Summer Time |
+| `shortDate` | 7/17/22 |
+| `mediumDate` | Jul 17, 2022 |
+| `longDate` | July 17, 2022 |
+| `fullDate` | Sunday, July 17, 2022 |
+| `shortTime` | 12:00 AM |
+| `mediumTime` | 12:00:00 AM |
+| `longTime` | 12:00:00 AM GMT+3 |
+| `fullTime` | 12:00:00 AM Eastern European Summer Time |
+
+Furthermore, users can construct a displayFormat string using the supported symbols described in the following table.
+
+Type | Format | Description | Example |
+|:---|:-------:|:-----------|:--------|
+Date | `d` | Minimum digits. | 7, 17 |
+|| `dd` | Zero padded. | 07, 17 |
+Month | `M` | Minimum digits. | 3, 10 |
+|| `MM` | Zero padded. | 03, 10 |
+|| `MMM` | Abbreviated | Oct |
+|| `MMMM` | Wide | October |
+|| `MMMMM` | Narrow | O |
+Year | `y` | Numeric | 2022
+|| `yy` | Two digit | 22
+|| `yyy` | Numeric | 2022
+|| `yyyy` | Numeric  | 2022
+Hour 1-12 | `h` | Minimum digits | 1, 12
+|| `hh` | Zero padded | 01, 12
+Hour 1-24 | `H` | Zero padded | 01, 23
+|| `HH` | Zero padded | 01, 23
+Minute | `m` | Minimum digits | 1, 60
+|| `mm` | Zero padded | 01, 60
+Second | `s` | Minimum digits | 1, 60
+|| `ss` | Zero padded | 01, 60
+Time Period | `t` | Abbreviated | AM, PM 
+|| `tt` | Abbreviated | AM, PM
+|| `ttt` | Short | noon
+|| `tttt` | Long | noon
+|| `ttttt` | Narrow | n
+
+> Note: 
+Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used. 
 
 ## Min/max value
 
