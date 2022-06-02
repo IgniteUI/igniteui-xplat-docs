@@ -170,7 +170,7 @@
       {
         "name": "ローカリゼーション",
         "href": "grids/data-grid-localization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Blazor"],
@@ -301,7 +301,7 @@
       {
         "name": "行のページング",
         "href": "grids/data-grid-row-paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "行のピン固定",
@@ -1431,7 +1431,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "カレンダー {ReleaseStatus_WebCalendar}",
+    "name": "カレンダー",
     "href": "scheduling/calendar.md"
   },
   {
