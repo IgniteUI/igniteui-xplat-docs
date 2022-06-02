@@ -66,7 +66,7 @@
   {
     "name": "変更ログ",
     "href": "general-changelog-dv.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -87,18 +87,16 @@
   {
     "exclude": ["Angular", "React"],
     "name": "アバター {ReleaseStatus_WebsInputs}",
-    "href": "layouts/avatar.md",
-    "status": "NEW"
+    "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "カード {ReleaseStatus_WebsInputs}",
-    "href": "layouts/card.md",
-    "status": "NEW"
+    "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
+    "name": "ドック マネージャー ",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -130,14 +128,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
-    "href": "menus/navbar.md",
-    "status": "NEW"
+    "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
-    "href": "menus/navigation-drawer.md",
-    "status": "NEW"
+    "href": "menus/navigation-drawer.md"
   },
   {
     "exclude": ["Angular"],
@@ -148,8 +144,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "リスト {ReleaseStatus_WebsList}",
-    "href": "grids/list.md",
-    "status": "NEW"
+    "href": "grids/list.md"
   },
   {
     "exclude": ["Angular"],
@@ -170,6 +165,11 @@
       {
         "name": "ローカル データのバインディング",
         "href": "grids/data-grid-local-data.md",
+        "status": ""
+      },
+      {
+        "name": "ローカリゼーション",
+        "href": "grids/data-grid-localization.md",
         "status": ""
       },
       {
@@ -214,8 +214,7 @@
       },
       {
         "name": "セルの結合",
-        "href": "grids/data-grid-cell-merging.md",
-        "status": "NEW"
+        "href": "grids/data-grid-cell-merging.md"
       },
       {
         "name": "セル選択",
@@ -229,8 +228,7 @@
       },
       {
         "name": "列フィルタリング",
-        "href": "grids/data-grid-column-filtering.md",
-        "status": "NEW"
+        "href": "grids/data-grid-column-filtering.md"
       },
       {
         "name": "列移動",
@@ -289,13 +287,11 @@
       },
       {
         "name": "グリッド レイアウトの読み込みと保存",
-        "href": "grids/data-grid-load-save-layout.md",
-        "status": "NEW"
+        "href": "grids/data-grid-load-save-layout.md"
       },
       {
         "name": "行グループ",
-        "href": "grids/data-grid-row-grouping.md",
-        "status": "NEW"
+        "href": "grids/data-grid-row-grouping.md"
       },
       {
         "name": "行の強調表示",
@@ -313,6 +309,12 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ツリー",
+    "href": "grids/tree.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Blazor"],
@@ -530,7 +532,7 @@
         {
           "name": "軸オプション",
           "href": "charts/features/chart-axis-options.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート アニメーション",
@@ -540,7 +542,7 @@
         {
           "name": "チャート注釈",
           "href": "charts/features/chart-annotations.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート強調表示",
@@ -555,7 +557,7 @@
         {
           "name": "チャート ナビゲーション",
           "href": "charts/features/chart-navigation.md",
-          "status": ""
+          "status": "UPDATED"
         },
         {
           "name": "チャート オーバーレイ",
@@ -1312,20 +1314,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "バッジ {ReleaseStatus_WebsInputs}",
-    "href": "inputs/badge.md",
-    "status": "NEW"
+    "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "ボタン {ReleaseStatus_WebsInputs}",
-    "href": "inputs/button.md",
-    "status": "NEW"
+    "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "チェックボックス {ReleaseStatus_WebsInputs}",
-    "href": "inputs/checkbox.md",
-    "status": "NEW"
+    "href": "inputs/checkbox.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1348,20 +1347,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "フォーム {ReleaseStatus_WebsInputs}",
-    "href": "inputs/form.md",
-    "status": "NEW"
+    "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "アイコン {ReleaseStatus_WebsInputs}",
-    "href": "layouts/icon.md",
-    "status": "NEW"
+    "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
-    "href": "inputs/icon-button.md",
-    "status": "NEW"
+    "href": "inputs/icon-button.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1378,20 +1374,17 @@
   {
     "exclude": ["Angular", "React"],
     "name": "入力 {ReleaseStatus_WebsInputs}",
-    "href": "inputs/input.md",
-    "status": "NEW"
+    "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
-    "href": "inputs/radio.md",
-    "status": "NEW"
+    "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "スイッチ {ReleaseStatus_WebsInputs}",
-    "href": "inputs/switch.md",
-    "status": "NEW"
+    "href": "inputs/switch.md"
   },
   {
     "name": "インタラクション",
@@ -1400,8 +1393,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "リップル {ReleaseStatus_WebsInputs}",
-    "href": "inputs/ripple.md",
-    "status": "NEW"
+    "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular", "React"],
@@ -1416,7 +1408,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "通知",
     "header": true
   },
@@ -1440,13 +1432,12 @@
   {
     "exclude": ["Angular", "React"],
     "name": "カレンダー {ReleaseStatus_WebCalendar}",
-    "href": "scheduling/calendar.md",
-    "status": "NEW"
+    "href": "scheduling/calendar.md"
   },
   {
     "exclude": ["Angular"],
     "name": "日付ピッカー",
     "href": "editors/date-picker.md",
-    "status": "UPDATED"
+    "status": ""
   }
 ]
