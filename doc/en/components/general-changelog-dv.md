@@ -2,7 +2,7 @@
 title: $Platform$ What's New | $ProductName$ | Infragistics
 _description: Learn about new features in the $ProductName$.
 _keywords: Changelog, What's New,  $ProductName$, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ Changelog
@@ -11,7 +11,7 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <!-- Blazor -->
 
-## {22.1}
+## **{PackageVerChanges-22-1}**
 #### Charts
 
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
