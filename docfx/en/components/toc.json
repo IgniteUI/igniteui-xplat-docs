@@ -96,7 +96,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Dock Manager",
+    "name": "Dock Manager {ReleaseStatus_DockManager}",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
