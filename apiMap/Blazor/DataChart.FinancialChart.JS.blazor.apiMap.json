@@ -22,6 +22,8 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbFinancialOverlayTypeCollection","mappedName":"OverlayTypes"}],"originalName":"OverlayTypes"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"YAxisAbbreviateLargeNumbers"}],"originalName":"YAxisAbbreviateLargeNumbers"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"XAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"XAxisEnhancedIntervalPreferMoreCategoryLabels"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"YAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"YAxisEnhancedIntervalPreferMoreCategoryLabels"},
     { "names":[{"platform":"Blazor","mappedType":"FinancialChartZoomSliderType","mappedName":"ZoomSliderType"}],"originalName":"ZoomSliderType"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NegativeBrushes"}],"originalName":"NegativeBrushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"NegativeOutlines"}],"originalName":"NegativeOutlines"},
