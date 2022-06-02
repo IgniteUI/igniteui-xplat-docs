@@ -268,6 +268,7 @@
             { "name": "{PackageVerChanges-21-1}",   "value": "21.1.52"},
             { "name": "{PackageVerChanges-21-2}",   "value": "21.2.22"},
             { "name": "{PackageVerChanges-21-2.1}", "value": "21.2.52"},
+            { "name": "{PackageVerChanges-22-1}", "value": "22.1.22"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"}
         ],
