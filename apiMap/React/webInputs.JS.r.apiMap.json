@@ -1,4 +1,4 @@
-{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts","igr-slider-label-module.ts","igr-input-base-module.ts","igr-chip-module.ts","igr-circular-gradient-module.ts","igr-circular-progress-module.ts","igr-linear-progress-module.ts","igr-progress-base-module.ts","igr-rating-module.ts","igr-rating-symbol-module.ts","igr-snackbar-module.ts","igr-toast-module.ts","igr-dropdown-group-module.ts","igr-dropdown-header-module.ts","igr-dropdown-item-module.ts","igr-dropdown-module.ts","igr-dock-manager-module.ts"],
+{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts","igr-slider-label-module.ts","igr-input-base-module.ts","igr-chip-module.ts","igr-circular-gradient-module.ts","igr-circular-progress-module.ts","igr-linear-progress-module.ts","igr-progress-base-module.ts","igr-rating-module.ts","igr-rating-symbol-module.ts","igr-snackbar-module.ts","igr-toast-module.ts","igr-dropdown-group-module.ts","igr-dropdown-header-module.ts","igr-dropdown-item-module.ts","igr-dropdown-module.ts","igr-dock-manager-module.ts","igr-expansion-panel-module.ts","igr-mask-input-module.ts","igr-tree-item-module.ts","igr-tree-module.ts"],
   "types":[
   { "originalName":"DockManagerLayout",
     "names":[{"platform":"React","fileName":"igr-dock-manager-layout.ts","dynamicModuleName":"igr-dock-manager-layout-dynamic-module.ts","moduleName":"igr-dock-manager-layout-module.ts","mappedName":"IgrDockManagerLayout"}],
@@ -7,6 +7,20 @@
     { "names":[{"platform":"React","mappedType":"IgrSplitPaneCollection","mappedName":"floatingPanes"}],"originalName":"FloatingPanes"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"DockManagerPane",
     "names":[{"platform":"React","fileName":"igr-dock-manager-pane.ts","dynamicModuleName":"igr-dock-manager-pane-dynamic-module.ts","moduleName":"igr-dock-manager-pane-module.ts","mappedName":"IgrDockManagerPane"}],"members":[],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ExpansionPanel",
+    "names":[{"platform":"React","fileName":"igr-expansion-panel.ts","mappedName":"IgrExpansionPanel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"open"}],"originalName":"Open"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"React","mappedType":"ExpansionPanelIndicatorPosition","mappedName":"indicatorPosition"}],"originalName":"IndicatorPosition"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"toggle"}],"originalName":"Toggle"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"show"}],"originalName":"Show"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ExpansionPanelComponentEventArgs",
+    "names":[{"platform":"React","fileName":"igr-expansion-panel-component-event-args.ts","mappedName":"IgrExpansionPanelComponentEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrExpansionPanel","mappedName":"detail"}],"originalName":"Detail"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"TreeSelectionOptionsEventArgs",
     "names":[{"platform":"React","fileName":"igr-tree-selection-options-event-args.ts","mappedName":"IgrTreeSelectionOptionsEventArgs"}],
     "members":[
@@ -42,13 +56,9 @@
   { "originalName":"TreeItem",
     "names":[{"platform":"React","fileName":"igr-tree-item.ts","mappedName":"IgrTreeItem"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"IgrTree","mappedName":"tree"}],"originalName":"Tree"},
     { "names":[{"platform":"React","mappedType":"IgrTreeItem","mappedName":"parent"}],"originalName":"Parent"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"init"}],"originalName":"Init"},
-    { "names":[{"platform":"React","mappedType":"BaseElement","mappedName":"wrapper"}],"originalName":"Wrapper"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hasChildren"}],"originalName":"HasChildren"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"level"}],"originalName":"Level"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"indeterminate"}],"originalName":"Indeterminate"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"expanded"}],"originalName":"Expanded"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"active"}],"originalName":"Active"},

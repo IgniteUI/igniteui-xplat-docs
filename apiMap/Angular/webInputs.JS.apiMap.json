@@ -1,4 +1,4 @@
-{"extraFiles":["igx-avatar-module.ts","igx-badge-module.ts","igx-button-base-module.ts","igx-button-module.ts","igx-icon-module.ts","igx-radio-group-module.ts","igx-radio-module.ts","igx-card-module.ts","igx-checkbox-base-module.ts","igx-checkbox-module.ts","igx-input-module.ts","igx-list-header-module.ts","igx-list-item-module.ts","igx-list-module.ts","igx-navbar-module.ts","igx-ripple-module.ts","igx-switch-module.ts","igx-form-module.ts","igx-icon-button-module.ts","igx-nav-drawer-header-item-module.ts","igx-nav-drawer-item-module.ts","igx-nav-drawer-module.ts","igx-card-actions-module.ts","igx-card-content-module.ts","igx-card-header-module.ts","igx-card-media-module.ts","igx-calendar-base-module.ts","igx-calendar-module.ts","igx-range-slider-module.ts","igx-slider-base-module.ts","igx-slider-module.ts","igx-slider-label-module.ts","igx-input-base-module.ts","igx-chip-module.ts","igx-circular-gradient-module.ts","igx-circular-progress-module.ts","igx-linear-progress-module.ts","igx-progress-base-module.ts","igx-rating-module.ts","igx-rating-symbol-module.ts","igx-snackbar-module.ts","igx-toast-module.ts","igx-dropdown-group-module.ts","igx-dropdown-header-module.ts","igx-dropdown-item-module.ts","igx-dropdown-module.ts","igx-dock-manager-module.ts"],
+{"extraFiles":["igx-avatar-module.ts","igx-badge-module.ts","igx-button-base-module.ts","igx-button-module.ts","igx-icon-module.ts","igx-radio-group-module.ts","igx-radio-module.ts","igx-card-module.ts","igx-checkbox-base-module.ts","igx-checkbox-module.ts","igx-input-module.ts","igx-list-header-module.ts","igx-list-item-module.ts","igx-list-module.ts","igx-navbar-module.ts","igx-ripple-module.ts","igx-switch-module.ts","igx-form-module.ts","igx-icon-button-module.ts","igx-nav-drawer-header-item-module.ts","igx-nav-drawer-item-module.ts","igx-nav-drawer-module.ts","igx-card-actions-module.ts","igx-card-content-module.ts","igx-card-header-module.ts","igx-card-media-module.ts","igx-calendar-base-module.ts","igx-calendar-module.ts","igx-range-slider-module.ts","igx-slider-base-module.ts","igx-slider-module.ts","igx-slider-label-module.ts","igx-input-base-module.ts","igx-chip-module.ts","igx-circular-gradient-module.ts","igx-circular-progress-module.ts","igx-linear-progress-module.ts","igx-progress-base-module.ts","igx-rating-module.ts","igx-rating-symbol-module.ts","igx-snackbar-module.ts","igx-toast-module.ts","igx-dropdown-group-module.ts","igx-dropdown-header-module.ts","igx-dropdown-item-module.ts","igx-dropdown-module.ts","igx-dock-manager-module.ts","igx-expansion-panel-module.ts","igx-mask-input-module.ts","igx-tree-item-module.ts","igx-tree-module.ts"],
   "types":[
   { "originalName":"DockManagerLayout",
     "names":[{"platform":"Angular","fileName":"igx-dock-manager-layout-component.ts","dynamicModuleName":"igx-dock-manager-layout-dynamic-module.ts","moduleName":"igx-dock-manager-layout-module.ts","mappedName":"IgxDockManagerLayoutComponent"}],
@@ -7,6 +7,20 @@
     { "names":[{"platform":"Angular","mappedType":"IgxSplitPaneCollection","mappedName":"floatingPanes"}],"originalName":"FloatingPanes"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"DockManagerPane",
     "names":[{"platform":"Angular","fileName":"igx-dock-manager-pane-component.ts","dynamicModuleName":"igx-dock-manager-pane-dynamic-module.ts","moduleName":"igx-dock-manager-pane-module.ts","mappedName":"IgxDockManagerPaneComponent"}],"members":[],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ExpansionPanel",
+    "names":[{"platform":"Angular","fileName":"igx-expansion-panel-component.ts","mappedName":"IgxExpansionPanelComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"open"}],"originalName":"Open"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"disabled"}],"originalName":"Disabled"},
+    { "names":[{"platform":"Angular","mappedType":"ExpansionPanelIndicatorPosition","mappedName":"indicatorPosition"}],"originalName":"IndicatorPosition"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toggle"}],"originalName":"Toggle"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"show"}],"originalName":"Show"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ExpansionPanelComponentEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-expansion-panel-component-event-args.ts","mappedName":"IgxExpansionPanelComponentEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxExpansionPanelComponent","mappedName":"detail"}],"originalName":"Detail"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"TreeSelectionOptionsEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-tree-selection-options-event-args.ts","mappedName":"IgxTreeSelectionOptionsEventArgs"}],
     "members":[
@@ -42,13 +56,9 @@
   { "originalName":"TreeItem",
     "names":[{"platform":"Angular","fileName":"igx-tree-item-component.ts","mappedName":"IgxTreeItemComponent"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"IgxTreeComponent","mappedName":"tree"}],"originalName":"Tree"},
     { "names":[{"platform":"Angular","mappedType":"IgxTreeItemComponent","mappedName":"parent"}],"originalName":"Parent"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"init"}],"originalName":"Init"},
-    { "names":[{"platform":"Angular","mappedType":"BaseElement","mappedName":"wrapper"}],"originalName":"Wrapper"},
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasChildren"}],"originalName":"HasChildren"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"level"}],"originalName":"Level"},
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"indeterminate"}],"originalName":"Indeterminate"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"expanded"}],"originalName":"Expanded"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"active"}],"originalName":"Active"},

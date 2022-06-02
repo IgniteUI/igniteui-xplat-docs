@@ -26,6 +26,8 @@
     { "names":[{"platform":"Angular","mappedType":"IgxFinancialOverlayTypeCollection","mappedName":"overlayTypes"}],"originalName":"OverlayTypes"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"yAxisAbbreviateLargeNumbers"}],"originalName":"YAxisAbbreviateLargeNumbers"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"xAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"XAxisEnhancedIntervalPreferMoreCategoryLabels"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"yAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"YAxisEnhancedIntervalPreferMoreCategoryLabels"},
     { "names":[{"platform":"Angular","mappedType":"FinancialChartZoomSliderType","mappedName":"zoomSliderType"}],"originalName":"ZoomSliderType"},
     { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"negativeBrushes"}],"originalName":"NegativeBrushes"},
     { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"negativeOutlines"}],"originalName":"NegativeOutlines"},
