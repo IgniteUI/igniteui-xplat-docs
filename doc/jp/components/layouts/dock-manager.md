@@ -9,17 +9,6 @@ mentionedTypes: ['DockManager']
 
 Infragistics $Platform$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
-<!-- Blazor -->
-> [!NOTE]
-> <b>追加予定</b>
-
-Blazor ドック マネージャーは現在開発中で、間もなく完成します。Blazor ドック マネージャー コンポーネントの完成後、このトピックとサンプルが更新される予定です。この間にドック マネージャーコ ンポーネントが必要な場合、Blazor アプリケーションで Ignite UI for Web Components ドック マネージャーを使用できます。
-
-以下のブログ (英語) に記載されている手順に従ってください。
-
- <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
-<!-- end: Blazor -->
-
 ## $Platform$ ドック マネージャーの例
 
 この例は、$Platform$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
@@ -32,7 +21,6 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 </code-view>
 
 <div class="divider--half"></div>
-
 
 <!-- Angular, React, WebComponents -->
 ドック マネージャー パッケージをインストールするには、以下のコマンドを実行します。

@@ -96,7 +96,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "ドック マネージャー ",
+    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [

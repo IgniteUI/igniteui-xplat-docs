@@ -3,7 +3,7 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ 変更ログ
@@ -12,7 +12,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- Blazor -->
 
-## {22.1}
+## **{PackageVerChanges-22-1}**
 #### チャート
 
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
