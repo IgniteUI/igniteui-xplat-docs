@@ -115,7 +115,7 @@ registerIcon(
 IgbIcon IconName="search" Collection="material" />
 ```
 
-アイコンを登録する 2 番目の方法は、SVG 文字列を [`RegisterIconFromText`] メソッドに渡すことです。
+アイコンを登録する 2 番目の方法は、SVG 文字列を `RegisterIconFromText` メソッドに渡すことです。
 
 ```ts
 const searchIcon =
