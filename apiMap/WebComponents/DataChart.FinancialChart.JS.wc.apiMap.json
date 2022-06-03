@@ -26,6 +26,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcFinancialOverlayTypeCollection","mappedName":"overlayTypes"}],"originalName":"OverlayTypes"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"yAxisAbbreviateLargeNumbers"}],"originalName":"YAxisAbbreviateLargeNumbers"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"xAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"XAxisEnhancedIntervalPreferMoreCategoryLabels"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"yAxisEnhancedIntervalPreferMoreCategoryLabels"}],"originalName":"YAxisEnhancedIntervalPreferMoreCategoryLabels"},
     { "names":[{"platform":"WebComponents","mappedType":"FinancialChartZoomSliderType","mappedName":"zoomSliderType"}],"originalName":"ZoomSliderType"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"negativeBrushes"}],"originalName":"NegativeBrushes"},
     { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"negativeOutlines"}],"originalName":"NegativeOutlines"},

@@ -8,17 +8,6 @@ mentionedTypes: ['DockManager']
 
 The Infragistics $Platform$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
 
-<!-- Blazor -->
-> [!NOTE]
-> <b>Coming Soon</b>
-
-The Blazor Dock Manager is currently under development and will be completed soon.  When the Blazor Dock Manager component has been completed, this topic and sample will be updated. If you need a dock manager component during this time, you can use the Ignite UI for Web Components dock manager in your Blazor applications.
-
-Please follow the steps outlined in the blog post titled:
-
- <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
-<!-- end: Blazor -->
-
 ## $Platform$ Dock Manager Example
 
 This example shows most functionalities and docking options of the $Platform$ Dock Manager.
@@ -31,7 +20,6 @@ This example shows most functionalities and docking options of the $Platform$ Do
 </code-view>
 
 <div class="divider--half"></div>
-
 
 <!-- Angular, React, WebComponents -->
 To install the Dock Manager package execute the following command:
