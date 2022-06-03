@@ -43,7 +43,7 @@ defineComponents(IgcToastComponent);
 ```
 
 <!-- Blazor -->
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -86,7 +86,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
 `DisplayTime` プロパティを使用して、Toast コンポーネントが表示される期間を構成します。デフォルトでは、4000 ミリ秒に設定されています。
 
-デフォルトでは、Toast コンポーネントは、`DisplayTime` で指定された期間が経過すると自動的に非表示になります。`KeepOpen` プロパティを使用して、この動作を変更できます。このようにして、Toast  は表示されたままになります。
+デフォルトでは、Toast コンポーネントは、`DisplayTime` で指定された期間が経過すると自動的に非表示になります。`KeepOpen` プロパティを使用して、この動作を変更できます。このようにして、Toast は表示されたままになります。
 
 ```html
 <igc-button onclick="toast.toggle()" variant="contained">Toggle Toast</igc-button>
@@ -147,7 +147,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
 ## スタイル設定
 
-タグ セレクターを直接使用して、Toast  のスタイルを設定できます: 
+タグ セレクターを直接使用して、Toast のスタイルを設定できます: 
 
 ```css
 igc-toast {

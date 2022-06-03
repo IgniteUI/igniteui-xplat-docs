@@ -47,7 +47,7 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 
 
 ### ツリーの宣言
-`TreeItem` は、`Tree` に属するすべての項の表現です。項目は、`disabled`、`active`、`active`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
+`TreeItem` は、`Tree` に属するすべての項の表現です。項目は、`disabled`、`active`、`selected`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
 `value` プロパティを使用して、項目が表すデータ エントリへの参照を追加できます。
 
 項目は、次のいずれかのアプローチを使用して宣言できます:
