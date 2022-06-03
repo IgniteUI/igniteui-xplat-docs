@@ -9,6 +9,21 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of $ProductName$ are documented on this page.
 
+<!-- Angular -->
+
+> [!NOTE]
+> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
+> For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+> [!NOTE]
+Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
+
+<!-- end: WebComponents -->
+
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
@@ -212,21 +227,27 @@ for example:
 
 <!-- end: Blazor -->
 
-<div class="divider--half"></div>
+<!-- Angular, WebComponents, React -->
 
-<!-- Angular -->
+## Latest
+### {PackageCharts} 
 
-> [!NOTE]
-> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
-> For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
+* Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
+* Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+* New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
+* New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
+    - `CalloutCornerRadius` for CalloutLayer
+    - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
+    - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
+* New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
+* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
+* New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
+* New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
+* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
 
-<!-- end: Angular -->
-
-<div class="divider--half"></div>
+<!-- end: Angular, WebComponents, React -->
 
 <!-- WebComponents -->
-> [!NOTE]
-Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
 <div class="divider--half"></div>
 
