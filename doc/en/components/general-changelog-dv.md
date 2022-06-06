@@ -269,7 +269,35 @@ for example:
 
 <!-- end: Angular, WebComponents, React -->
 
+<!-- React -->
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+<!-- end: React -->
+
 <!-- WebComponents -->
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### New Components
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 <div class="divider--half"></div>
 
