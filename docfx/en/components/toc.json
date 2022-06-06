@@ -121,6 +121,12 @@
     ]
   },
   {
+    "exclude":  ["Angular", "React", "Blazor"],
+    "name": "Expansion Panel",
+    "href": "layouts/expansion-panel.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Menus",
     "header": true
