@@ -27,7 +27,8 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
-#### Charts
+
+#### {PackageCharts}
 
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
 * Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
@@ -41,6 +42,27 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
+
+### {PackageDockManager}
+
+* The $Platform$ Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### New Components
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 ## **{PackageVerChanges-21-2.1}**
 
