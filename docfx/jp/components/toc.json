@@ -121,6 +121,12 @@
     ]
   },
   {
+    "exclude":  ["Angular", "React", "Blazor"],
+    "name": "展開パネル",
+    "href": "layouts/expansion-panel.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "メニュー",
     "header": true
