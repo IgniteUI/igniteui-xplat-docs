@@ -1,36 +1,36 @@
 ---
-title: $Platform$ Expansion Panel | Expansion Panel | Infragistics
-_description: Expansion Panel component provides an easily configurable expandable component with two states - collapsed and expanded.
-_keywords: $Platform$ Expansion Panel, $ProductName$, Infragistics
+title: $Platform$ 展開パネル | 展開パネル | インフラジスティックス
+_description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
+_keywords: $Platform$ 展開パネル、$ProductName$、インフラジスティックス
 mentionedTypes: ['ExpansionPanel']
 _language: ja
 ---
 
-# $Platform$ Expansion Panel Overview
-The $ProductName$ Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
+# $Platform$ 展開パネルの概要
+$ProductName$ 展開パネルは、縮小または展開の 2 つの状態で描画できる軽量のアコーディオン コンポーネントです。展開パネルは、マウス クリックまたはキーボード操作によって切り替えることができます。
 
-## $Platform$ Expansion Panel Example
+## $Platform$ 展開パネルの例
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="$Platform$ Expansion Panel Example"
+           alt="$Platform$ 展開パネルの例"
            github-src="layouts/expansion-panel/usage">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `ExpansionPanel`, you need to register it as follows:
+`ExpansionPanel` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponents';
@@ -38,7 +38,7 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 defineComponents(IgcExpansionPanelComponent);
 ```
 
-The simplest way to start using the `ExpansionPanel` is as follows:
+`ExpansionPanel` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-expansion-panel>
@@ -53,64 +53,64 @@ The simplest way to start using the `ExpansionPanel` is as follows:
 </igc-expansion-panel>
 ```
 
-## Binding to events
+## イベントにバインド
 
-The Expansion Panel component raises the following events:
-- igcClosed - Raised when the expansion panel is collapsed
-- igcOpeneded - Raised when the expansion panel is expanded
-- igcClosing - Raised when the expansion panel starts collapsing
-- igcOpening - Raised when the expansion panel starts expanding
+展開パネル コンポーネントは、次のイベントを発生させます:
+- igcClosed - 展開パネルが縮小されたときに発生します。
+- igcOpeneded - 展開パネルが展開パネルされたときに発生します。
+- igcClosing - 展開パネルが縮小を開始たときに発生します。
+- igcOpening - 展開パネルが展開パネルを開始したときに発生します。
 
-The following sample demonstrates how we can add some logic to our component to make it show/hide the `subtitle` depending on the current state of the panel.
+次のサンプルは、コンポーネントにロジックを追加して、パネルの現在の状態に応じて `subtitle` を表示 / 非表示にする方法を示しています。
 
-We can do this by binding to the `igcOpened` and `igcClosed` event emitters:
+これを行うには、`igcOpened` および `igcClosed` イベント エミッターにバインドします。
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="$Platform$ Expansion Panel Events"
+           alt="$Platform$ 展開パネル"
            github-src="layouts/expansion-panel/properties-and-events">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Component Customization
-The `IgcExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
+## コンポーネントのカスタマイズ
+`IgcExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[`Input`](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
 
-The `IgcExpansionPanel` allows for easy customization of the header throught the eposed *title*, *subTitle* and *indicator* slots.
+`IgcExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
 
-Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**. 
+展開インジケーターの位置の構成は、展開パネルの `indicatorAlignment` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。 
 
-The next code sample demonstrates how to configure the component's button to go on the *right* side.
+次のコードサンプルは、コンポーネントのボタンが右側に移動するように構成する方法を示しています。
 
 <code-view style="height: 460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="$Platform$ Expansion Panel Customization"
+           alt="$Platform$ 展開パネルのカスタマイズ"
            github-src="layouts/expansion-panel/component-customization">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C accessibility standards and convenient to use.
+$ProductName$ 展開パネルのキーボード ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすくなっています。
 
-**Key Combinations**
+**キーの組み合わせ**
 
- - <kbd>Alt + Arrow Down</kbd> - expands the focused panel
- - <kbd>Alt + Arrow Up</kbd> - collapses the focused panel
- - <kbd>Space</kbd>/<kbd>Enter</kbd> - toggle the expansion state of the focused panel
+ - <kbd> Alt + 下矢印</kbd> - フォーカスされたパネルを展開します。
+ - <kbd>Alt + 上矢印</kbd> - フォーカスされたパネルを縮小します。
+ - <kbd>Space</kbd> / <kbd>Enter</kbd> - フォーカスされたパネルの展開状態を切り替えます。
  
 
-## Styling
+## スタイル設定
 
-The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
+$ProductName$ 展開パネル コンポーネントは、いくつかの CSS パーツ (`header`、`indicator`、`title`、`subtitle` および `content`) を公開して、スタイルを完全に制御できるようにします。
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="$Platform$ Expansion Panel Styling"
+           alt="$Platform$ 展開パネルのスタイル設定"
            github-src="layouts/expansion-panel/styling">
 </code-view>
 
@@ -118,9 +118,9 @@ The $ProductName$ Expansion Panel component exposes several CSS parts (`header`,
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the Expansion Panel's API, refer to the following links:
+展開パネルの API の詳細については、次のリンクを参照してください:
 * `ExpansionPanel`
 
 
@@ -128,18 +128,18 @@ For more detailed information regarding the Expansion Panel's API, refer to the 
 
 <div class="divider"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
