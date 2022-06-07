@@ -1055,7 +1055,10 @@ There are multiple options to get access to our award-winning support at Infragi
     <div class="faqs-accordion h4">What is the Pricing for the Infragistics $ProductName$ Data Grid?</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
+Our $ProductName$ components are included as a part of our Ignite UI bundle. A single developer license starts at $1,295 USD for a
+one-year subscription, including one year of standard support and updates.
+<div class="divider--half"></div>
+$ProductName$ is a commercially licensed product available via a subscription model. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
 <div class="divider--half"></div>
 We also offer discounts for multi-year licenses. Please <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">refer to our Pricing page</a> for more information on pricing.
 <div class="divider--half"></div>
@@ -1102,7 +1105,10 @@ If you are developing applications on multiple platforms, consider our complete 
     <div class="faqs-accordion h4">What is the Pricing for the Infragistics $ProductName$ Data Grid?</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ is a commercially licensed product available via a subscription model. A single developer license starts at $749 USD for a one-year subscription, which includes one year of standard support and product updates. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
+Our $ProductName$ components are included as a part of our Ignite UI bundle. A single developer license starts at $1,295 USD for a
+one-year subscription, including one year of standard support and updates.
+<div class="divider--half"></div>
+$ProductName$ is a commercially licensed product available via a subscription model. This subscription includes the $Platform$ Grid, plus $Platform$ Charts and dozens on other $Platform$ UI Controls.
 <div class="divider--half"></div>
 We also offer discounts for multi-year licenses. Please <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">refer to our Pricing page</a> for more information on pricing.
 <div class="divider--half"></div>

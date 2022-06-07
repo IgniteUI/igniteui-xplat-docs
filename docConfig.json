@@ -264,7 +264,7 @@
             { "name": "{PackageLayouts}",           "value": "IgniteUI.Blazor (Layouts)"},
             { "name": "{PackageMaps}",              "value": "IgniteUI.Blazor (Maps)"},
             { "name": "{PackageSpreadsheet}",       "value": "IgniteUI.Blazor (Spreadsheet)"},
-            { "name": "{PackageDockManager}",       "value": "DockManager"},
+            { "name": "{PackageDockManager}",       "value": "IgniteUI.Blazor (DockManager)"},
             { "name": "{PackageWebsite}",           "value": "https://www.npmjs.com/package/"},
             { "name": "{PackageVerChangedImports}", "value": "1.0.6"},
             { "name": "{PackageVerLatest}",         "value": "21.2.0"},
