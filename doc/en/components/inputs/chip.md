@@ -11,7 +11,7 @@ $ProductName$ Chips help people enter information, make selections, filter conte
 
 ## $Platform$ Chip Example
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
            alt="$Platform$ Chip Example"
@@ -107,7 +107,7 @@ The $ProductName$ chip supports several pre-defined stylistic variants. You can 
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
            alt="$Platform$ Chip Variants Example"
@@ -136,7 +136,7 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
 </igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
            alt="$Platform$ Chip Multiple Example"
@@ -153,7 +153,7 @@ We allow the user to choose the size of the `Chip` by using its `Size` property.
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
            alt="$Platform$ Chip Size Example"
@@ -175,7 +175,7 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
            alt="$Platform$ Chip Styling Example"

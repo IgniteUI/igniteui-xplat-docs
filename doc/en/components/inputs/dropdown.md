@@ -12,7 +12,7 @@ The $Platform$ Dropdown is a component, which displays a toggleable list of pred
 
 ## $Platform$ Dropdown Example
 
-<code-view style="height: 200px"
+<code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
            alt="$Platform$ Dropdown Example"
@@ -73,7 +73,7 @@ The Dropdown list is positioned relatively to its target. The `target` slot allo
 
 The preferred placement of the Dropdown can be set using the `Placement` property. The default placement of the Dropdown is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Dropdown at the specified placement. The distance from the Dropdown list to its target can be specified using the `Distance` property.
 
-<code-view style="height: 500px"
+<code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
            alt="$Platform$ Dropdown Position Example"
@@ -88,7 +88,7 @@ The `Dropdown` emits the `igcChange` event when the user selects an item. The `S
 
 The `DropdownItem` represents a selectable item in the Dropdown list. You could predefine a selected item by setting the `Selected` property. You could also disable an item so that it can't be selected using the `Disabled` property. The `DropdownItem` has a default slot which allows you to specify the content of the item. You could also provide custom content to be rendered before or after the content using the `prefix` and `suffix` slots. The `Value` property allows you to provide a custom value to an item. If the `Value` is not set, it resolves to the text content of the item.
 
-<code-view style="height: 200px"
+<code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
            alt="$Platform$ Dropdown Item Example"
@@ -110,7 +110,7 @@ You could use the `DropdownHeader` to provide a header for a group of items.
 
 The Dropdown items can also be grouped using the `DropdownGroup`, making it easier for users to differentiate separate categories.
 
-<code-view style="height: 400px"
+<code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
            alt="$Platform$ Dropdown Group Example"
@@ -129,7 +129,7 @@ By default, the Dropdown is closed automatically when the user clicks outside of
 
 You can change the appearance of the Dropdown and its items, by using the exposed CSS parts. The `Dropdown` exposes `base` and `list` parts, the `DropdownItem` exposes `prefix`, `content` and `suffix` parts and the `DropdownGroup` exposes `label` part.
 
-<code-view style="height: 300px"
+<code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
            alt="$Platform$ Dropdown Styling Example"
