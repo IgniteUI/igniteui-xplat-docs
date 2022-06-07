@@ -28,7 +28,8 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
-#### チャート
+
+#### {PackageCharts}
 
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
@@ -41,7 +42,28 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (NumericX、NumericY、PercentChangeY など) とのみ互換性があります。
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
-* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。 
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
+
+### {PackageDockManager}
+
+* The $Platform$ Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -247,7 +269,35 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- end: Angular, WebComponents, React -->
 
+<!-- React -->
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+<!-- end: React -->
+
 <!-- WebComponents -->
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 <div class="divider--half"></div>
 
