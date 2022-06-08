@@ -10,7 +10,7 @@ The $ProductName$ Linear Progress Indicator component provides a visual indicato
 
 ## $Platform$ Linear Progress Example
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
            alt="$Platform$  Linear Progress Example"
@@ -137,7 +137,7 @@ You can dynamically change the value of the progress indicator by using external
 
 The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
            alt="$Platform$ Linear Progress Styling"

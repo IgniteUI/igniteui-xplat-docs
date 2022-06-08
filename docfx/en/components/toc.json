@@ -551,6 +551,16 @@
           "status": "UPDATED"
         },
         {
+          "name": "Chart Data Legend",
+          "href": "charts/features/chart-data-legend.md",
+          "status": "NEW"
+        },
+        {
+          "name": "Chart Data Tooltip",
+          "href": "charts/features/chart-data-tooltip.md",
+          "status": "NEW"
+        },
+        {
           "name": "Chart Highlighting",
           "href": "charts/features/chart-highlighting.md",
           "status": ""
