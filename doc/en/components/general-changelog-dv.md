@@ -28,7 +28,7 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 ## **{PackageVerChanges-22-1}**
 
-#### {PackageCharts}
+### {PackageCharts}
 
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
 * Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
