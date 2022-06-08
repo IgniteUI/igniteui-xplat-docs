@@ -46,14 +46,14 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### {PackageDockManager}
 
-* The $Platform$ Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+* $Platform$ ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
 ### 新しいコンポーネント
 
@@ -273,10 +273,10 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
 <!-- end: React -->
 
@@ -284,10 +284,10 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
 ### 新しいコンポーネント
 
