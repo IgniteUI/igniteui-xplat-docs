@@ -11,7 +11,7 @@ $ProductName$ Linear Progress Indicator コンポーネントは、変更でア�
 
 ## $Platform$ Linear Progress の例
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
            alt="$Platform$  Linear Progress の例"
@@ -138,7 +138,7 @@ defineComponents(IgcLinearProgressComponent);
 
 Linear Procress Indicatorコンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
            alt="$Platform$ Linear Progress のスタイル設定"
