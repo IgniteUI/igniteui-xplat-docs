@@ -64,8 +64,27 @@
     "status": ""
   },
   {
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "Changelog",
     "href": "general-changelog-dv.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-blazor.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-react.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-wc.md",
     "status": "UPDATED"
   },
   {
