@@ -311,7 +311,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css` 
 ダーク テーマの場合は `igniteui-webcomponents/themes/dark/bootstrap.css`
 
-### 重大な変更
+#### 重大な変更
 
 このリリースでは、Calendar、Card、Navigation Drawer、および Radio コンポーネントの API にいくつかの重大な変更が導入されています。
 
