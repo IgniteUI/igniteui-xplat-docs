@@ -66,8 +66,8 @@ The `IgcDateTimeInputComponent` has intuitive keyboard navigation that makes it 
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Move one character to the left |
-| <kbd>&rarr;</kbd> | Move one character to the right |
+| <kbd>&larr;</kbd> | Move one character to the beginning |
+| <kbd>&rarr;</kbd> | Move one character to the end |
 | <kbd>Home</kbd> | Move to the beginning |
 | <kbd>End</kbd> | Move to the end |
 | <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | Move to the beginning of the date/time section - current one or left one |
@@ -171,7 +171,6 @@ Many locales use the same time period string, irrespective of the format specifi
 You can specify `minValue` and `maxValue` properties to restrict input and control the validity of the component. Just like the `value` property, they can be of type `string`.
 
 ```ts
-// ...
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
 
 input.minValue = new Date(2021, 0, 1);
@@ -200,7 +199,6 @@ In the first scenario, if no specific DatePart is passed to the method, a defaul
 Additionally, `spinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `stepUp` and `stepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `spinDelta`.
 
 ```ts
-// ...
 const input = document.getElementById('dateTimeInput') as IgcDateTimeInputComponent;
 
 const spinDelta: DatePartDeltas = {
