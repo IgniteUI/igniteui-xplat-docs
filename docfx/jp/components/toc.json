@@ -96,7 +96,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "ドック マネージャー ",
+    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -119,6 +119,12 @@
         "status": "NEW"
       }
     ]
+  },
+  {
+    "exclude":  ["Angular", "React", "Blazor"],
+    "name": "展開パネル",
+    "href": "layouts/expansion-panel.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
@@ -170,7 +176,7 @@
       {
         "name": "ローカリゼーション",
         "href": "grids/data-grid-localization.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "exclude": ["Blazor"],
@@ -301,7 +307,7 @@
       {
         "name": "行のページング",
         "href": "grids/data-grid-row-paging.md",
-        "status": ""
+        "status": "NEW"
       },
       {
         "name": "行のピン固定",
@@ -543,6 +549,16 @@
           "name": "チャート注釈",
           "href": "charts/features/chart-annotations.md",
           "status": "UPDATED"
+        },
+        {
+          "name": "チャート データの凡例",
+          "href": "charts/features/chart-data-legend.md",
+          "status": "NEW"
+        },
+        {
+          "name": "チャート データ ツールチップ",
+          "href": "charts/features/chart-data-tooltip.md",
+          "status": "NEW"
         },
         {
           "name": "チャート強調表示",
@@ -1431,7 +1447,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "カレンダー {ReleaseStatus_WebCalendar}",
+    "name": "カレンダー",
     "href": "scheduling/calendar.md"
   },
   {

@@ -16,7 +16,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 ## $Platform$ データ ツールチップのプロパティ
 `DataToolTipLayer` のすべてのプロパティには **DataToolTip** のプレフィックスが付けられ、`XamCategoryChart` および `XamFinancialChart` コンポーネントの API で公開されます。ただし、ラジアル チャート、極座標チャート、散布図で使用する場合は、 `DataToolTipLayer` のインスタンスを作成し、それを `XamDataChart` コンポーネントのシリーズ コレクションに追加する必要があります。
 
-## $Platform$ データ ツールチップ要素
+## $Platform$ データ ツールチップの要素
 **DataToolTip** は、3 種類の行と 4 種類の列のセットを使用してコンテンツを表示します。 
 
 ### $Platform$ データ ツールチップの行
@@ -72,6 +72,6 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 **DataToolTip** は、その `DataToolTipValueFormatAbbreviation` プロパティを使用して、大きな数の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。`DataToolTipValueFormatMinFractions` および `DataToolTipValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。
 
-## $Platform$ データ ツールチップ値モード
+## $Platform$ データ ツールチップの値モード
 
 レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が 「en-GB」 に設定されたチャートを示しています。

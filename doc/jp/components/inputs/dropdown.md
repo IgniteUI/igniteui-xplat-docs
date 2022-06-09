@@ -13,7 +13,7 @@ $Platform$ ドロップダウンは、事前定義された値の切り替え可
 
 ## $Platform$ Dropdown の例
 
-<code-view style="height: 200px"
+<code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
            alt="$Platform$ Dropdown の例"
@@ -74,7 +74,7 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 
 ドロップダウンの優先配置は、`Placement` プロパティを使用して設定できます。ドロップダウンのデフォルトの配置は `bottom-start` です。`Flip` プロパティは、指定された配置でドロップダウンを表示するのに十分なスペースがない場合に配置を反転するかどうかを決定します。ドロップダウン リストからそのターゲットまでの距離は、`Distance` プロパティを使用して指定できます。
 
-<code-view style="height: 500px"
+<code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
            alt="$Platform$ Dropdown Position の例"
@@ -89,7 +89,7 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 
 `DropdownItem` は、ドロップダウン リストで選択可能な項目を表します。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、項目を無効にして選択できないようにすることもできます。`DropdownItem` には、項目のコンテンツを指定できるデフォルトのスロットがあります。`prefix` スロットと `suffix` スロットを使用して、コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Value` プロパティを使用すると、項目にカスタム値を提供できます。`Value` が設定されていない場合は、項目のテキスト コンテンツに解決されます。
 
-<code-view style="height: 200px"
+<code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
            alt="$Platform$ Dropdown Item の例"
@@ -111,7 +111,7 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 
 ドロップダウン項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。
 
-<code-view style="height: 400px"
+<code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
            alt="$Platform$ Dropdown Group の例"
@@ -130,7 +130,7 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 
 公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` 部分と `list` 部分を公開し、`DropdownItem` は `prefix`、 `content`、`suffix` 部分を公開し、`DropdownGroup` は `label` 部分を公開します。
 
-<code-view style="height: 300px"
+<code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
            alt="$Platform$ Dropdown Styling の例"

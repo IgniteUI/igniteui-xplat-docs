@@ -54,10 +54,14 @@ npm install --save {PackageInputs}
 
 `Grid` を作成するには、以下のモジュールが必要です。
 
+<!-- Blazor -->
+
 ```razor
 IgbDataGridModule.Register(IgniteUIBlazor);
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
 
 ```ts
 import { IgrDataGridModule } from 'igniteui-react-grids';
@@ -65,6 +69,10 @@ import { IgrDataGrid } from 'igniteui-react-grids';
 
 IgrDataGridModule.register();
 ```
+
+<!-- end: React -->
+
+<!-- WebComponents -->
 
 ```ts
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -75,6 +83,8 @@ ModuleManager.register(
     IgcDataGridModule
 );
 ```
+
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 

@@ -43,7 +43,7 @@ defineComponents(IgcCircularProgressComponent);
 ```
 
 <!-- Blazor -->
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ defineComponents(IgcCircularProgressComponent);
 ```razor
 <IgbCircularProgress Value=100/>
 ```
+
 ### 進行状況タイプ
 
 `variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
@@ -99,6 +100,7 @@ defineComponents(IgcCircularProgressComponent);
 ```razor
 <IgbCircularProgress AnimationDuration=5000 Indeterminate=true />
 ```
+
 ### グラデーション プログレス
 
 単色の代わりにカラー グラデーションを使用するためにプログレス バーをカスタマイズするには、公開された `gradient` スロットとグラデーション境界を定義する `CircularGradient` を使用します。 

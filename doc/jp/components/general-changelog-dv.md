@@ -3,17 +3,33 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ 変更ログ
 
 $ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
 
+<!-- Angular -->
+
+> [!NOTE]
+> このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
+> {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+> [!NOTE]
+(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+
+<!-- end: WebComponents -->
+
 <!-- Blazor -->
 
-## {22.1}
-#### チャート
+## **{PackageVerChanges-22-1}**
+
+#### {PackageCharts}
 
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
@@ -26,7 +42,28 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (NumericX、NumericY、PercentChangeY など) とのみ互換性があります。
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
-* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。 
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
+
+### {PackageDockManager}
+
+* $Platform$ ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
+
+### {PackageGrids}
+
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -212,21 +249,55 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- end: Blazor -->
 
-<div class="divider--half"></div>
+<!-- Angular, WebComponents, React -->
 
-<!-- Angular -->
+## 最新
+### {PackageCharts} 
 
-> [!NOTE]
-> このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
-> Angular {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+* 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
+* 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
+* 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
+    - CalloutLayer の `CalloutCornerRadius`
+    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
+    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
+* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (NumericX、NumericY、PercentChangeY など) とのみ互換性があります。
+* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
+* 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents, React -->
 
-<div class="divider--half"></div>
+<!-- React -->
+
+### {PackageGrids}
+
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+<!-- end: React -->
 
 <!-- WebComponents -->
-> [!NOTE]
-(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+
+### {PackageGrids}
+
+* 新規機能:
+- [行のページング](grids/data-grid-row-paging.md)
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 <div class="divider--half"></div>
 
@@ -240,7 +311,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css` 
 ダーク テーマの場合は `igniteui-webcomponents/themes/dark/bootstrap.css`
 
-### 重大な変更
+#### 重大な変更
 
 このリリースでは、Calendar、Card、Navigation Drawer、および Radio コンポーネントの API にいくつかの重大な変更が導入されています。
 

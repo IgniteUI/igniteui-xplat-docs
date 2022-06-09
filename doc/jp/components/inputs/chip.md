@@ -12,7 +12,7 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 
 ## $Platform$ Chip の例
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
            alt="$Platform$ Chip の例"
@@ -39,7 +39,7 @@ IgbChipModule.Register(IgniteUIBlazor);
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -108,7 +108,7 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
            alt="$Platform$ Chip バリアントの例"
@@ -137,7 +137,7 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 </igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
            alt="$Platform$ Chip Multiple Example"
@@ -154,7 +154,7 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
            alt="$Platform$ Chip Size Example"
@@ -176,7 +176,7 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
            alt="$Platform$ Chip スタイル設定の例"
