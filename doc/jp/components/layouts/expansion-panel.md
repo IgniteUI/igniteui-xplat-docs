@@ -1,7 +1,7 @@
 ---
 title: $Platform$ 展開パネル | 展開パネル | インフラジスティックス
 _description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
-_keywords: $Platform$ 展開パネル、$ProductName$、インフラジスティックス
+_keywords: $Platform$ Expansion Panel, Infragistics, $Platform$ 展開パネル, $ProductName$, インフラジスティックス
 mentionedTypes: ['ExpansionPanel']
 _language: ja
 ---
@@ -75,7 +75,7 @@ defineComponents(IgcExpansionPanelComponent);
 <div class="divider--half"></div>
 
 ## コンポーネントのカスタマイズ
-`IgcExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[`Input`](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
+`IgcExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[Input](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
 
 `IgcExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
 
