@@ -23,11 +23,13 @@ Finally, there is a summary row that displays the total of all series values. Th
 
 ## $Platform$ Data Legend Columns
 
-The columns of the `DataLegend` from left to right include the title column, value column, and units column.
+The columns of the `DataLegend` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `IncludedColumns` or `ExcludedColumns` collections of the legend.
 
 The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
 
-The value column displays series values as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Procession of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
+The label column displays the name or abbreviation of the different property paths in the `IncludedColumns` or `ExcludedColumns` collections of the legend.
+
+The value column displays series values as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
 The units column displays an abbreviation symbol and/or unit text, which can be set either on the `DataLegend` by setting the `UnitText` for all columns or using the the following properties on each series in the chart:
 
@@ -45,12 +47,15 @@ The units column displays an abbreviation symbol and/or unit text, which can be 
     * HighMemberAsLegendUnit="K"
         
 * Radial Series:
-    * ValueMemberAsLegendUnit="K"
-    * AngleMemberAsLegendUnit="K"
+    * ValueMemberAsLegendUnit="K"    
 
 * Polar Series:
     * RadiusMemberAsLegendUnit="K"
     * AngleMemberAsLegendUnit="K"
+
+For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
+
+The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the legend.
 
 ## $Platform$ Data Legend Styling
 
@@ -71,7 +76,9 @@ You have the ability to change the default decimal display of values within the 
 The `DataLegend` has three events that fire when rendering their corresponding row. These events are listed below with a description of what they are designed to be used for:
 
 - `StyleHeaderRow`: This event fires once when rendering the header row.
-- `StyleSeriesRow`: This event fires once for each series row which allows conditional styling of the values of the series.
+- `StyleSeriesRow`: This event fires once for each series row, which allows conditional styling of the values of the series.
+- `StyleSeriesColumn`: This event fires once for each series column, which allows conditional styling of the different columns for the series in the chart.
 - `StyleSummaryRow`: This event fires once when rendering the summary row.
+- `StyleSummaryColumn`: This event fires once when rendering the summary column.
 
 Each of the above events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series.
