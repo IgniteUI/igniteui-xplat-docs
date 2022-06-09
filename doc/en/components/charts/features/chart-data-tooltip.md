@@ -30,11 +30,13 @@ Finally, there is a summary row that displays the total of all series values. Th
 
 ### $Platform$ Data Tooltip Columns
 
-The columns of the **DataToolTip** from left to right include the title column, value column, and units column.
+The columns of the `DataToolTip` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `IncludedColumns` or `ExcludedColumns` collections of the legend.
 
 The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
 
-The value column displays series values as abbreviated text which can be formatted using the `DataToolTipValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Procession of abbreviated values is controlled using the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions` for minimum and maximum digits, respectively.
+The label column displays the name or abbreviation of the different property paths in the `IncludedColumns` or `ExcludedColumns` collections of the tooltip.
+
+The value column displays series values as abbreviated text which can be formatted using the `DataToolTipValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
 The units column displays an abbreviation symbol and/or unit text, which can be set either on the **DataToolTip** by setting the `DataToolTipUnitText` for all columns or using the following properties on each series in the chart:
 
@@ -52,12 +54,15 @@ The units column displays an abbreviation symbol and/or unit text, which can be 
     * HighMemberAsLegendUnit="K"
         
 * Radial Series:
-    * ValueMemberAsLegendUnit="km"
-    * AngleMemberAsLegendUnit="degrees" 
+    * ValueMemberAsLegendUnit="km"    
 
 * Polar Series:
     * RadiusMemberAsLegendUnit="km"
     * AngleMemberAsLegendUnit="degrees"
+
+For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
+
+The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip.    
 
 ## $Platform$ Data Tooltip Styling
 
