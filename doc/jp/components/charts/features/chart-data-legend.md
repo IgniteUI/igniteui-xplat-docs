@@ -24,11 +24,13 @@ $ProductName$ では、`DataLegend` は `Legend` のように機能するコン�
 
 ## $Platform$ データ凡例の列
 
-`DataLegend` の左から右への列には、タイトル列、値列、および単位列が含まれます。
+The columns of the `DataLegend` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `IncludedColumns` or `ExcludedColumns` collections of the legend.
 
 タイトル列には、チャートにプロットされたさまざまな `Series` の `Title` プロパティに由来する凡例バッジとシリーズ タイトルが表示されます。
 
-値の列には、一連の値が省略形のテキストとして表示されます。このテキストは、`ValueFormatAbbreviation` プロパティを使用してフォーマットでき、このプロパティを `Auto` または `Shared` に設定することで、すべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の処理は、最小桁数と最大桁数にそれぞれ `ValueFormatMinFractions` と `ValueFormatMaxFractions` を使用して制御されます。
+The label column displays the name or abbreviation of the different property paths in the `IncludedColumns` or `ExcludedColumns` collections of the legend.
+
+The value column displays series values as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
 単位列には、省略記号や単位テキストが表示されます。これらは、すべての列に `UnitText` を設定するか、チャートの各シリーズで次のプロパティを使用して、`DataLegend` で設定できます:
 
@@ -47,11 +49,14 @@ $ProductName$ では、`DataLegend` は `Legend` のように機能するコン�
         
 * ラジアル シリーズ:
     * ValueMemberAsLegendUnit="K"
-    * AngleMemberAsLegendUnit="K"
 
 * 極座標シリーズ:
     * RadiusMemberAsLegendUnit="K"
     * AngleMemberAsLegendUnit="K"
+
+For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
+
+The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the legend.
 
 ## $Platform$ データ凡例のスタイル設定
 

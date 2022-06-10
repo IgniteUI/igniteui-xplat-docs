@@ -28,8 +28,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
-
-#### {PackageCharts}
+### {PackageCharts}
 
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
