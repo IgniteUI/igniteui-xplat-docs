@@ -377,7 +377,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Customization
 
-The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. Furthermore, you can access each slot via its exported part.
+The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. 
+
+The Dock Manager also exposes CSS parts for each button slot to give you full control over its styling. 
 
 In the example below, you can see how you can change all the close buttons using the `closeButton` slot:
 
