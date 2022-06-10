@@ -6,7 +6,7 @@ mentionedTypes: ['DockManager']
 ---
 # $Platform$ Dock Manager Overview
 
-The Infragistics $Platform$ Dock Manager is a WebComponent that provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
+The Infragistics $Platform$ Dock Manager provides a means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
 
 ## $Platform$ Dock Manager Example
 
