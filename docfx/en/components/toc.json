@@ -101,13 +101,13 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Using Panes",
         "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "Embedding Frames",
         "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
