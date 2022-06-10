@@ -20,6 +20,14 @@ The series row can actually be a set of rows corresponding to each series plotte
 
 Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `SummaryText` property of the legend. Also, you can use the `SummaryType` property to customize whether you display the Total, Min, Max, or Average of series values in the summary row.
 
+The following example demonstrates the `DataLegend` with a summary applied:
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend"
+           alt="$Platform$ Category Chart Data Legend Example"
+           github-src="charts/category-chart/data-legend">
+</code-view>
 
 ## $Platform$ Data Legend Columns
 
@@ -57,9 +65,27 @@ For each of the above-listed properties, there is a corresponding `MemberAsLegen
 
 The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the legend.
 
+The following example demonstrates a `DataLegend` with added columns of Open, High, Low, Close, and Change:
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend"
+           alt="$Platform$ Financial Chart Data Legend Example"
+           github-src="charts/financial-chart/data-legend">
+</code-view>
+
 ## $Platform$ Data Legend Styling
 
 The `DataLegend` provides properties for styling each type of column. Each of these properties begins with Title, Label, Value, or Units, and you can style the text's color, font, and margin. For example, if you wanted to set the text color of each of these, you would set the `TitleTextColor`, `LabelTextColor`, `ValueTextColor`, and `UnitsTextColor` properties.
+
+The following example demonstrates a utilization of the styling properties mentioned above:
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-styling-props"
+           alt="$Platform$ Data Legend Styling Example"
+           github-src="charts/financial-chart/data-legend-styling-props">
+</code-view>
 
 ## $Platform$ Data Legend Value Formatting
 
@@ -67,9 +93,27 @@ The `DataLegend` provides automatic abbreviation of large numbers using its `Val
 
 You can customize the number of fractional digits that are displayed by setting the `ValueFormatMinFractions` and `ValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
 
+The following example demonstrates a `DataLegend` with the `ValueFormatMinFractions` and `ValueFormatMaxFractions` set:
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend-formatting-decimals"
+           alt="$Platform$ Data Legend Formatting Decimals Example"
+           github-src="charts/category-chart/data-legend-formatting-decimals">
+</code-view>
+
 ## $Platform$ Data Legend Value Mode
 
-You have the ability to change the default decimal display of values within the `DataLegend` to be currency by changing the `ValueFormatMode` property of the control. The `DataLegend` also exposes the ability to modify the culture of the displayed currency symbol by using its `ValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `ValueFormatCulture` set to "en-GB":
+You have the ability to change the default decimal display of values within the `DataLegend` to be currency by changing the `ValueFormatMode` property of the control. The `DataLegend` also exposes the ability to modify the culture of the displayed currency symbol by using its `ValueFormatCulture` property and setting it to its corresponding culture tag.
+
+For example, the following example demonstrates a chart with the `ValueFormatCulture` set to "en-GB":
+
+<code-view style="height: 450px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-formatting-currency"
+           alt="$Platform$ Formatting Currency Example"
+           github-src="charts/financial-chart/data-legend-formatting-currency">
+</code-view>
 
 ## $Platform$ Data Legend Styling Events
 
