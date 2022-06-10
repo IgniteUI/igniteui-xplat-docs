@@ -377,11 +377,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Customization
 
-The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. 
+The Dock Manager component provides the option to customize all buttons using slots and parts. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. 
 
-The Dock Manager also exposes CSS parts for each button slot to give you full control over its styling. 
-
-In the example below, you can see how you can change all the close buttons using the `closeButton` slot:
+Let's utilize these slots and parts to create a customized Dock Manager layout. First, we will provide our own icons, using the `closeButton`, `maximizeButton`, `minimizeButton`, `pinButton` and `unpinButton` slots:
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -390,9 +388,71 @@ In the example below, you can see how you can change all the close buttons using
     <div slot="content3" class="dockManagerContent">Content 3</div>
     <!-- ... -->
 
-    <button style="background: mediumvioletred" slot="closeButton">x</button>
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
 </igc-dockmanager>
 ```
+
+Then, we will use the exposed parts in our stylesheet. This way we have full control of the component's styling:
+
+```css
+igc-dockmanager::part(unpinned-tab-area) {
+    background: #bee9ec;
+}
+  
+igc-dockmanager::part(unpinned-tab-area--left) {
+    border-right: 1px dashed #004d7a;
+}
+  
+igc-dockmanager::part(unpinned-tab-area--bottom) {
+    border-top: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(tab-header-close-button), 
+igc-dockmanager::part(pane-header-close-button) {
+    background-color: #e73c7e;
+}
+
+igc-dockmanager::part(pane-header-pin-button),
+igc-dockmanager::part(pane-header-unpin-button) {
+  background: rgb(218, 218, 218);
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+igc-dockmanager::part(tabs-maximize-button),
+igc-dockmanager::part(tabs-minimize-button),
+igc-dockmanager::part(pane-header-minimize-button),
+igc-dockmanager::part(pane-header-maximize-button) {
+  width: 24px;
+  height: 24px;
+  border: none;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0.3;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-left: 0px;
+}
+```
+
+If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
 
 <!-- WebComponents -->
 <code-view style="height: 700px"
