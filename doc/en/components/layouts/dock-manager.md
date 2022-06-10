@@ -377,21 +377,31 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Customization
 
-The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the coresponding identifier. In the example below, you can see how you can change the close buttons using the `closeButton` slot:
+The Dock Manager component provides the option to customize all buttons using slots. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. Furthermore, you can access each slot via its exported part.
+
+In the example below, you can see how you can change all the close buttons using the `closeButton` slot:
 
 ```html
 <igc-dockmanager id="dockManager">
     <div slot="content1" class="dockManagerContent">Content 1</div>
     <div slot="content2" class="dockManagerContent">Content 2</div>
     <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
 
-    <button slot="closeButton">CLOSE</button>
+    <button style="background: mediumvioletred" slot="closeButton">x</button>
 </igc-dockmanager>
 ```
 
-// TODO: sample here
+<!-- WebComponents -->
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
+           alt="$Platform$ Dock Manager Customize Buttons Example"
+           github-src="layouts/dock-manager/customize-buttons">
+</code-view>
+<!-- end: WebComponents -->
 
-Here is the full list of slot names for all buttons:
+Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
 
 Slot name | Description
 ----------|------------
@@ -403,6 +413,8 @@ Slot name | Description
 `pinButton` | The pin buttons.
 `unpinButton` | The unpin buttons.
 `splitterHandle` | The splitter handle.
+
+You can find each slot's corresponding part in the [CSS Parts](dock-manager.md#css-parts) section of this page.
 
 ## Keyboard Navigation
 
@@ -498,8 +510,19 @@ Part name | Description
 `pane-navigator-items-group` | An items group in the pane navigator component.
 `pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
 `pane-navigator-item` | An item in the pane navigator.
-
-// TODO: add parts for all the buttons
+`pane-header-close-button` | The close button in the pane header.
+`pane-header-maximize-button` | The maximize button in the pane header.
+`pane-header-minimize-button` | The minimize button in the pane header.
+`pane-header-pin-button` | The pin button in the pane header.
+`pane-header-unpin-button` | The unpin button in the pane header.
+`tab-header-more-options-button` | The more options button in the tab header.
+`tab-header-close-button` | The close button in the tab header.
+`tabs-maximize-button` | The tabs maximize button.
+`tabs-minimize-button` | The tabs minimize button.
+`tabs-more-button` | The tabs minimize button.
+`context-menu-unpin-button` | The unpin button in the context menu.
+`context-menu-close-button` | The close button in the context menu.
+`splitter-handle` | The splitter handle.
 
 ### Themes
 
