@@ -317,7 +317,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Tree",
     "href": "grids/tree.md",
     "status": "NEW"
