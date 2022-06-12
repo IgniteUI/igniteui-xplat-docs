@@ -2,17 +2,17 @@
 title: $Platform$ Chart Data Tooltip | Data Visualization Tools | Infragistics
 _description: Use Infragistics $ProductName$ chart with the data tooltip layer!
 _keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
-mentionedTypes: ["XamDataChart", "Legend", "XamCategoryChart"]
+mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
 ---
 
 # $Platform$ Chart Data Tooltip
 
-In $ProductName$, the **DataToolTip** displays values and titles of series as well as legend badges of series in a tooltip. In addition, it provides many configuration properties of the `DataLegend` for filtering series rows and values columns, styling, and formatting values. This tooltip type updates while moving the mouse inside of the plot area of the `XamCategoryChart`, `XamFinancialChart`, and `XamDataChart` components.
+In $ProductName$, the **DataToolTip** displays values and titles of series as well as legend badges of series in a tooltip. In addition, it provides many configuration properties of the `XamDataLegend` for filtering series rows and values columns, styling, and formatting values. This tooltip type updates while moving the mouse inside of the plot area of the `CategoryChart`, `FinancialChart`, and `XamDataChart` components.
 
 ## $Platform$ Data Tooltip Properties
 
-All properties of `DataToolTipLayer` are prefixed with **DataToolTip** and exposed on API of `XamCategoryChart` and `XamFinancialChart` components. However, you will need to create an instance of `DataToolTipLayer` and add it to series collection of `XamDataChart` component if you want to use it with Radial Charts, Polar Charts, Scatter Charts.
+All properties of `DataToolTipLayer` are prefixed with **DataToolTip** and exposed on API of `CategoryChart` and `FinancialChart` components. However, you will need to create an instance of `DataToolTipLayer` and add it to series collection of `XamDataChart` component if you want to use it with Radial Charts, Polar Charts, Scatter Charts.
 
 ## $Platform$ Data Tooltip Elements
 
@@ -26,7 +26,7 @@ The header row displays the axis label of the point that is hovered, and can be 
 
 The series row can actually be a set of rows corresponding to each series plotted in the chart. These rows will display the legend badge, series title, actual/abbreviated value of the the series, and abbreviation symbol and unit, if specified.
 
-Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `DataToolTipSummaryText` property of the legend. Also, you can use the `DataToolTipSummaryType` property to customize whether you display the Total, Min, Max, or Average of series values in the summary row.
+Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `DataToolTipSummaryTitleText` property of the legend. Also, you can use the `DataToolTipSummaryType` property to customize whether you display the Total, Min, Max, or Average of series values in the summary row.
 
 The following example demonstrates the data tooltip with a summary applied:
 
@@ -39,39 +39,35 @@ The following example demonstrates the data tooltip with a summary applied:
 
 ### $Platform$ Data Tooltip Columns
 
-The columns of the `DataToolTip` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `IncludedColumns` or `ExcludedColumns` collections of the legend.
+The columns of the `DataToolTipLayer` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `DataToolTipIncludedColumns` or `DataToolTipExcludedColumns` collections of the chart.
 
 The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
 
-The label column displays the name or abbreviation of the different property paths in the `IncludedColumns` or `ExcludedColumns` collections of the tooltip.
+The label column displays the name or abbreviation of the different property paths in the `DataToolTipIncludedColumns` or `DataToolTipExcludedColumns` collections of the tooltip.
 
 The value column displays series values as abbreviated text which can be formatted using the `DataToolTipValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions` for minimum and maximum digits, respectively.
 
-The units column displays an abbreviation symbol and/or unit text, which can be set either on the **DataToolTip** by setting the `DataToolTipUnitText` for all columns or using the following properties on each series in the chart:
+The units column displays an abbreviation symbol and/or unit text, which can be set either on the **DataToolTip** by setting the `DataToolTipUnitsText` for all columns or using the following properties on each series in the chart:
 
-* Category Series (e.g. ColumnSeries)
-    * ValueMemberAsLegendUnit="K"
-
-* Financial Price Series:
-    * OpenMemberAsLegendUnit="K"
-    * LowMemberAsLegendUnit="K"
-    * HighMemberAsLegendUnit="K"
-    * CloseMemberAsLegendUnit="K"
-    
-* Range Series:
-    * LowMemberAsLegendUnit="K"
-    * HighMemberAsLegendUnit="K"
-        
-* Radial Series:
-    * ValueMemberAsLegendUnit="km"    
-
-* Polar Series:
-    * RadiusMemberAsLegendUnit="km"
-    * AngleMemberAsLegendUnit="degrees"
+- Category Series (e.g. ColumnSeries)
+    - ValueMemberAsLegendUnit="K"
+- Financial Price Series:
+    - OpenMemberAsLegendUnit="K"
+    - LowMemberAsLegendUnit="K"
+    - HighMemberAsLegendUnit="K"
+    - CloseMemberAsLegendUnit="K"
+- Range Series:
+    - LowMemberAsLegendUnit="K"
+    - HighMemberAsLegendUnit="K"
+- Radial Series:
+    - ValueMemberAsLegendUnit="km"    
+- Polar Series:
+    - RadiusMemberAsLegendUnit="km"
+    - AngleMemberAsLegendUnit="degrees"
 
 For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
 
-The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip.    
+The columns included in the `DataToolTipIncludedColumns` and `DataToolTipExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip.    
 
 The following example demonstrates a data tooltip with the added columns of Open, High, Low, Close, and Change:
 
