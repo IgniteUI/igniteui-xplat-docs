@@ -114,7 +114,7 @@ The following example demonstrates a `XamDataLegend` with the `ValueFormatMinFra
 
 ## $Platform$ データ凡例のスタイル設定イベント
 
-`XamDataLegend` には、対応する行を描画するときに発生する 3 つのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
+`XamDataLegend` には、対応する行を描画するときに発生する 5 つのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
 
 - `StyleHeaderRow`: このイベントは、ヘッダー行を描画するときに 1 回発生します。
 - `StyleSeriesRow`: このイベントは、シリーズの行ごとに 1 回発生し、シリーズの値の条件付きスタイル設定を可能にします。
