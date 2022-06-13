@@ -26,11 +26,11 @@ $ProductName$ データ テーブル / データ グリッドは、列オプシ�
 
 <div class="divider--half"></div>
 
-## Resource Strings
+## リソース文字列
 
-This is the full list of strings to localize the grid. 
+これは、グリッドをローカライズするための文字列の完全なリストです。
 
-### Column Option Strings
+### 列オプションの文字列
 
 - Apply 
 - Cancel
@@ -90,7 +90,7 @@ This is the full list of strings to localize the grid.
 - Column_Options_Summary_Sum 
 - Column_Options_Summaries
 
-### Summary Strings
+### 集計の文字列
 
 - DataSource_Summary_Avg  
 - DataSource_Summary_Count
@@ -99,7 +99,7 @@ This is the full list of strings to localize the grid.
 - DataSource_Summary_Sum  
 
 <!-- React, WebComponents -->
-### Date-Time Column Strings
+### 日時列の文字列
 
 - January_Full 
 - January_Short
@@ -148,7 +148,7 @@ This is the full list of strings to localize the grid.
 - Sunday_Short
 - Sunday_Single
 
-### ComboBox Column Strings
+### コンボボックス列の文字列
 
 - NoMatches
 <!-- end: React, WebComponents -->

@@ -31,13 +31,13 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 ### $Platform$ データ ツールチップの列
 
-The columns of the `DataToolTip` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `IncludedColumns` or `ExcludedColumns` collections of the legend.
+`DataToolTip` の列には、タイトル、ラベル、値、および単位の列が含まれます。チャートの各シリーズには、凡例の `IncludedColumns` または `ExcludedColumns` コレクションに応じて、ラベル、値、および単位の複数の列を含めることができます。
 
 タイトル列には、チャートにプロットされた各 `Series` の `Title` プロパティに由来する凡例バッジとシリーズ タイトルが表示されます。 
 
-The label column displays the name or abbreviation of the different property paths in the `IncludedColumns` or `ExcludedColumns` collections of the tooltip.
+ラベル列には、ツールチップの `IncludedColumns` または `ExcludedColumns` コレクション内のさまざまなプロパティパスの名前または省略形が表示されます。
 
-The value column displays series values as abbreviated text which can be formatted using the `DataToolTipValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Auto` or `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions` for minimum and maximum digits, respectively.
+値の列には、一連の値が省略形のテキストとして表示されます。この省略形は、 `DataToolTipValueFormatAbbreviation` プロパティを使用して書式設定でき、このプロパティを `Auto` または `Shared` に設定することですべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の精度は、最小桁数と最大桁数にそれぞれ `DataToolTipValueFormatMinFractions` と `DataToolTipValueFormatMaxFractions` を使用して制御されます。
 
 単位の列には、省略記号や単位のテキストが表示されます。これらは、すべての列に `DataToolTipUnitText` を設定するか、チャートの各系列で次のプロパティを使用して、**DataToolTip** で設定できます:
 
@@ -61,9 +61,9 @@ The value column displays series values as abbreviated text which can be formatt
     * RadiusMemberAsLegendUnit="km"
     * AngleMemberAsLegendUnit="degrees"
 
-For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
+上記の各プロパティには、前述のラベル列のテキストを判別するための対応する `MemberAsLegendLabel` プロパティもあります。
 
-The columns included in the `IncludedColumns` and `ExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip. 
+`IncludedColumns` および `ExcludedColumns` コレクションに含まれる列は、通常、基になるデータ項目の値パスに対応しますが、ファイナンシャル シリーズには、正しくプロットするために必要な `High`、`Low`、`Open`、`Close` パス、および、いくつかの特別なパスを含めるオプションがあります 。ツールチップ内に `TypicalPrice`、`Change`、および `Volume` オプションを表示することができます。
 
 ## $Platform$ データ ツールチップのスタイル設定
 
