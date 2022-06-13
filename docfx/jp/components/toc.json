@@ -101,13 +101,13 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "ペインの更新",
         "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "フレームの埋め込み",
         "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
@@ -317,7 +317,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "ツリー",
     "href": "grids/tree.md",
     "status": "NEW"

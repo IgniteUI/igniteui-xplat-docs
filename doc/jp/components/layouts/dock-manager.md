@@ -7,7 +7,7 @@ mentionedTypes: ['DockManager']
 ---
 # $Platform$ ドック マネージャーの概要
 
-Infragistics $Platform$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
+Infragistics $Platform$ Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
 ## $Platform$ ドック マネージャーの例
 
