@@ -156,7 +156,8 @@ When selection is enabled, end-user selection of items is only allowed through t
 
  - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
  - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
-
+ 
+<!-- WebComponents -->
 ## $Platform$ Tree Load On Demand
 
 The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
@@ -170,7 +171,7 @@ The $ProductName$ Tree can be rendered in such way that it requires the minimal 
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
 
-<!-- WebComponents -->
+
 
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
 
