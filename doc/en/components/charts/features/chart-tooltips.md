@@ -28,6 +28,7 @@ The `ToolTipType` property is configurable and can be set to one of the followin
 Property Value     | Description
 -------------------|----------------
 `Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.
+`Data` Tooltip | Display the data tooltips for all series in the chart.
 `Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.
 `Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.
 
