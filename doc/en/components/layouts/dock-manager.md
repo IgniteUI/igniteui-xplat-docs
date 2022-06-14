@@ -581,7 +581,7 @@ Part name | Description
 `tab-header-close-button` | The close button in the tab header.
 `tabs-maximize-button` | The tabs maximize button.
 `tabs-minimize-button` | The tabs minimize button.
-`tabs-more-button` | The tabs minimize button.
+`tabs-more-button` | The more tabs button.
 `context-menu-unpin-button` | The unpin button in the context menu.
 `context-menu-close-button` | The close button in the context menu.
 `splitter-handle` | The splitter handle.
