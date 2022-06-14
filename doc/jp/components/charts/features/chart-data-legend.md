@@ -21,12 +21,12 @@ $ProductName$ では、`XamDataLegend` は `Legend` のように機能するコ�
 
 最後に、すべてのシリーズ値の合計を表示する集計行があります。デフォルトの集計タイトルは、凡例の `SummaryTitleText` プロパティを使用して変更できます。また、`SummaryType` プロパティを使用して、シリーズ値の合計、最小、最大、または平均を集計行に表示するかどうかをカスタマイズできます。
 
-The following example demonstrates the `XamDataLegend` with a summary applied:
+次の例は、集計が適用された `XamDataLegend` を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend"
-           alt="$Platform$ Category Chart Data Legend Example"
+           alt="$Platform$ カテゴリ チャート データ凡例の例"
            github-src="charts/category-chart/data-legend">
 </code-view>
 
@@ -53,21 +53,21 @@ The following example demonstrates the `XamDataLegend` with a summary applied:
     - LowMemberAsLegendUnit="K"
     - HighMemberAsLegendUnit="K"
 - ラジアル シリーズ:
-    - ValueMemberAsLegendUnit="K
+    - ValueMemberAsLegendUnit="km"
 - 極座標シリーズ:
-    - RadiusMemberAsLegendUnit="K"
-    - AngleMemberAsLegendUnit="K"
+    - RadiusMemberAsLegendUnit="km"
+    - AngleMemberAsLegendUnit="degrees"
 
 上記の各プロパティには、前述のラベル列のテキストを判別するための対応する `MemberAsLegendLabel` プロパティもあります。
 
 `IncludedColumns` および `ExcludedColumns` コレクションに含まれる列は、通常、基になるデータ項目の値パスに対応しますが、ファイナンシャル シリーズには、正しくプロットするために必要な `High`、`Low`、`Open`、`Close` パス、および、いくつかの特別なパスを含めるオプションがあります 。凡例内に `TypicalPrice`、`Change`、および `Volume` オプションを表示することができます。
 
-The following example demonstrates a `XamDataLegend` with added columns of Open, High, Low, Close, and Change:
+次の例は、Open、High、Low、Close、および Change の列が追加された `XamDataLegend` を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend"
-           alt="$Platform$ Financial Chart Data Legend Example"
+           alt="$Platform$ ファイナンシャル チャート データ凡例の例"
            github-src="charts/financial-chart/data-legend">
 </code-view>
 
@@ -75,12 +75,12 @@ The following example demonstrates a `XamDataLegend` with added columns of Open,
 
 `XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。
 
-The following example demonstrates a utilization of the styling properties mentioned above:
+次の例は、上記のスタイル設定プロパティの使用法を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-styling-props"
-           alt="$Platform$ Data Legend Styling Example"
+           alt="$Platform$ データ凡例のスタイル設定"
            github-src="charts/financial-chart/data-legend-styling-props">
 </code-view>
 
@@ -90,12 +90,12 @@ The following example demonstrates a utilization of the styling properties menti
 
 `ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。
 
-The following example demonstrates a `XamDataLegend` with the `ValueFormatMinFractions` and `ValueFormatMaxFractions` set:
+次の例は、`ValueFormatMinFractions` と `ValueFormatMaxFractions` が設定された `XamDataLegend` を示しています。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend-formatting-decimals"
-           alt="$Platform$ Data Legend Formatting Decimals Example"
+           alt="$Platform$ データ凡例の小数の書式設定"
            github-src="charts/category-chart/data-legend-formatting-decimals">
 </code-view>
 
@@ -108,7 +108,7 @@ The following example demonstrates a `XamDataLegend` with the `ValueFormatMinFra
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-formatting-currency"
-           alt="$Platform$ Formatting Currency Example"
+           alt="$Platform$ 通貨の書式設定"
            github-src="charts/financial-chart/data-legend-formatting-currency">
 </code-view>
 
