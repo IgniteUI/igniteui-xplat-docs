@@ -255,6 +255,8 @@ for example:
 ## Latest
 ### {PackageCharts} 
 
+* Added the highly-configurable `DataLegend` component, which is a component that works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. You can read about the [New Data Legend Component, here](chart-data-legend.md)
+* Added the highly-configurable `DataToolTipLayer` series type, which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types. You can read about the [New Data Tooltip Layer component, here](chart-data-tooltip.md).
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
 * Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
