@@ -79,4 +79,4 @@ In addition to elevation levels, $ProductName$ exposes a CSS variable that makes
 }
 ```
 
-The `--igc-elevation-factor` can also be set to a decimal value or a value bigger than 1. The larger the value, the bigger the shadow will be.
+The `--igc-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.

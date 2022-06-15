@@ -15,19 +15,19 @@ Here's a list of all 13 category styles as defined for the Bootstrap Theme in $P
 
 | **Scale Category** | **Font Family** | **Font Weight** | **Font Size** | **Text Transform** | **Letter Spacing** | **Line Height** |
 |--------------------|-----------------|-----------------|---------------|--------------------|--------------------|-----------------|
-| **h1**             |   | 500             | 2.5 rem       | none               | -.09375 rem        | 3 rem           |
-| **h2**             |   | 500             | 2 rem         | none               | -.0312 rem         | 2.4 rem         |
-| **h3**             |   | 500             | 1.75 rem      | none               | 0                  | 2.1 rem         |
-| **h4**             |   | 500             | 1.5 rem       | none               | .015625 rem        | 1.8 rem         |
-| **h5**             |   | 500             | 1.25 rem      | none               | 0                  | 1.5 rem         |
-| **h6**             |   | 500             | 1 rem         | none               | .009375 rem        | 1.2 rem         |
-| **subtitle-1**     |   | 400             | .875 rem      | none               | .009375 rem        | 1.5 rem         |
-| **subtitle-2**     |   | 400             | .9 rem        | none               | .00625 rem         | 1.35 rem        |
-| **body-1**         |   | 400             | 1 rem         | none               | .03125 rem         | 1.5 rem         |
-| **body-2**         |   | 400             | .9 rem        | none               | .015625 rem        | 1.5 rem         |
-| **button**         |   | 500             | 1 rem         | none               | .046875 rem        | 1.5 rem         |
-| **caption**        |   | 400             | .75 rem       | none               | .025 rem           | 1 rem           |
-| **overline**       |   | 400             | .625 rem      | uppercase          | .09375 rem         | 1 rem           |
+| **h1**             |  System Font    | 500             | 2.5 rem       | none               | -.09375 rem        | 3 rem           |
+| **h2**             |  System Font    | 500             | 2 rem         | none               | -.0312 rem         | 2.4 rem         |
+| **h3**             |  System Font    | 500             | 1.75 rem      | none               | 0                  | 2.1 rem         |
+| **h4**             |  System Font    | 500             | 1.5 rem       | none               | .015625 rem        | 1.8 rem         |
+| **h5**             |  System Font    | 500             | 1.25 rem      | none               | 0                  | 1.5 rem         |
+| **h6**             |  System Font    | 500             | 1 rem         | none               | .009375 rem        | 1.2 rem         |
+| **subtitle-1**     |  System Font    | 400             | .875 rem      | none               | .009375 rem        | 1.5 rem         |
+| **subtitle-2**     |  System Font    | 400             | .9 rem        | none               | .00625 rem         | 1.35 rem        |
+| **body-1**         |  System Font    | 400             | 1 rem         | none               | .03125 rem         | 1.5 rem         |
+| **body-2**         |  System Font    | 400             | .9 rem        | none               | .015625 rem        | 1.5 rem         |
+| **button**         |  System Font    | 500             | 1 rem         | none               | .046875 rem        | 1.5 rem         |
+| **caption**        |  System Font    | 400             | .75 rem       | none               | .025 rem           | 1 rem           |
+| **overline**       |  System Font    | 400             | .625 rem      | uppercase          | .09375 rem         | 1 rem           |
 
 Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Boostrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
 

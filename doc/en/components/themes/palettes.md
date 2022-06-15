@@ -80,7 +80,7 @@ Here's an excerpt of the `primary` color as declared in the Light Bootstrap Pale
 }
 ```
 
-All color variants are derived from 4 base variables - `--igc-primary-h`, `--igc-primary-s`, `--igc-primary-l`, and `--igc-primary-a`. Each one of these variables holds the [HSLA](https://drafts.csswg.org/css-color/#the-hsl-notation) parts for a single color. HSLA stands for `hue`, `saturation`, `lightness`, and `alpha`. It's another color scheme used to describe colors. We decided to use this approach as it allows us to modify all variants of the `primary`, `secondary` and other colors at runtime.
+All color variants are derived from 4 base variables - `--igc-primary-h`, `--igc-primary-s`, `--igc-primary-l`, and `--igc-primary-a`. Each one of these variables holds the [HSLA](https://drafts.csswg.org/css-color/#the-hsl-notation) parts for a single color. HSLA stands for `hue`, `saturation`, `lightness`, and `alpha`. It's another color space used to represent colors. We decided to use this approach as it allows us to modify all variants of the `primary`, `secondary` and other colors at runtime.
 
 ## Defining Palettes
 
@@ -102,8 +102,9 @@ This will automatically update all the other primary variants.
 You will notice that color variants for each color are monochromatic. This is because all color variants are generated from the HSLA variables. You can override individual colors only using any color scheme:
 
 ```css
+/* The HSLA representation of darkorange (#ff6e00) */
 :root {
-  --igc-primary-600: darkorange;
+  --igc-primary-600: 25.9deg, 100%, 50%, 1;
 }
 ```
 
@@ -111,8 +112,11 @@ Be cautious when doing this:
 
 ```css
 :root {
-  --igc-primary-500: orange;
-  --igc-primary-600: blue;
+  /* The HSLA representation of orange (#ffa500) */
+  --igc-primary-500: 38.8deg, 100%, 50%, 1;
+
+  /* The HSLA representation of blue (#0080ff) */
+  --igc-primary-600: 210deg, 100%, 50%, 1;
 }
 ```
 
@@ -126,20 +130,18 @@ Let's say your corporate primary color is `#9f349c` and you want to create prima
 
 ```css
 :root {
-  --igc-primary-50: #f3e6f2;
-  --igc-primary-100: #e2c0e0;
-  --igc-primary-200: #d096cd;
-  --igc-primary-300: #d096cd;
-  --igc-primary-400: #bd6db9;
-  --igc-primary-500: #9f349c;
-  --igc-primary-600: #923095;
-  --igc-primary-700: #81298d;
-  --igc-primary-800: #722584;
-  --igc-primary-900: #561d74;
+  --igc-primary-50: 305deg, 35%, 93%, 1;
+  --igc-primary-100: 304deg, 37%, 82%, 1;
+  --igc-primary-200: 303deg, 38%, 70%, 1;
+  --igc-primary-300: 303deg, 38%, 58%, 1;
+  --igc-primary-400: 303deg, 38%, 50%, 1;
+  --igc-primary-500: 302deg, 51%, 41%, 1;
+  --igc-primary-600: 298deg, 51%, 39%, 1;
+  --igc-primary-700: 293deg, 55%, 36%, 1;
+  --igc-primary-800: 289deg, 56%, 33%, 1;
+  --igc-primary-900: 279deg, 60%, 28%, 1;
 }
 ```
-
-This approach disregards the `calc` function we use for coming up with color variants from HSLA scheme at runtime, however, it allows you to specify a hand-picked palette.
 
 The Material Color Tool doesn't give you the contrast color for each color variant. There are many tools out there that will help you determine if a specific color has enough contrast when used in combination with another color. You can use the built-in contrast checker in Chrome when determining the contrast color you want to pick for each color variant.
 
@@ -169,45 +171,55 @@ Then you can simply overhaul the colors in your application by changing the valu
 
 Palettes in $ProductName$ dictate whether a theme is going to be light or dark. The two colors that have the biggest impact on that are `gray` and `surface`. See, the `gray` color variants in all themes are based on either a very light color shade, like `#fff`, or a very dark one like `#222`. Light themes have `gray` variants based on dark shades of gray, while dark themes are the opposite - all `gray` variants are a shade of white. These `gray` colors will be displayed against another color, usually the `surface` color. The `surface` color should always be on the opposite end of the `gray` in the gray scale to ensure themes look good.
 
-To make this a bit clearer, below is the complete list of all `gray` and `surface` color variants in both a light and a dark theme as represented in the RGBA color space.
+To make this a bit clearer, below is the complete list of all `gray` and `surface` color variants in both a light and a dark theme.
 
-*Material Light:*
+*Bootstrap Light:*
 ```css
 :root {
-  /* surface is set to white */
-  --igc-surface-500: #fff;
+  /* surface is set to a shade of white */
+  --igc-surface-500: 210deg, 17%, 98%, 1;
 
-  /* gray are based on black to contrast the surface color */
-  --igc-gray-50: rgba(0, 0, 0, 0.02);
-  --igc-gray-100: rgba(0, 0, 0, 0.04);
-  --igc-gray-200: rgba(0, 0, 0, 0.08);
-  --igc-gray-300: rgba(0, 0, 0, 0.12);
-  --igc-gray-400: rgba(0, 0, 0, 0.26);
-  --igc-gray-500: rgba(0, 0, 0, 0.38);
-  --igc-gray-600: rgba(0, 0, 0, 0.54);
-  --igc-gray-700: rgba(0, 0, 0, 0.62);
-  --igc-gray-800: rgba(0, 0, 0, 0.74);
-  --igc-gray-900: rgba(0, 0, 0, 0.87);
+  /* gray variants */
+  --igc-gray-h: 210deg; 
+  --igc-gray-s: 11%; 
+  --igc-gray-l: 71%; 
+  --igc-gray-a: 1;
+
+  --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 98%;
+  --igc-gray-100: var(--igc-gray-h), var(--igc-gray-s), 96%;
+  --igc-gray-200: var(--igc-gray-h), var(--igc-gray-s), 93%;
+  --igc-gray-300: var(--igc-gray-h), var(--igc-gray-s), 88%;
+  --igc-gray-400: var(--igc-gray-h), var(--igc-gray-s), 74%;
+  --igc-gray-500: var(--igc-gray-h), var(--igc-gray-s), 62%;
+  --igc-gray-600: var(--igc-gray-h), var(--igc-gray-s), 54%;
+  --igc-gray-700: var(--igc-gray-h), var(--igc-gray-s), 38%;
+  --igc-gray-800: var(--igc-gray-h), var(--igc-gray-s), 26%;
+  --igc-gray-900: var(--igc-gray-h), var(--igc-gray-s), 13%;
 }
 ```
 
-*Material Dark:*
+*Bootstrap Dark:*
 ```css
 :root {
-  /* surface is a dark shade of gray */
-  --igc-surface-500: #222;
+  /* surface is set to a dark shade of gray */
+  --igc-surface-500: 210deg, 11%, 15%, 1;
 
-  /* gray are based on white to contrast the surface color */
-  --igc-gray-50: rgba(255, 255, 255, 0.02);
-  --igc-gray-100: rgba(255, 255, 255, 0.04);
-  --igc-gray-200: rgba(255, 255, 255, 0.08);
-  --igc-gray-300: rgba(255, 255, 255, 0.12);
-  --igc-gray-400: rgba(255, 255, 255, 0.26);
-  --igc-gray-500: rgba(255, 255, 255, 0.38);
-  --igc-gray-600: rgba(255, 255, 255, 0.54);
-  --igc-gray-700: rgba(255, 255, 255, 0.62);
-  --igc-gray-800: rgba(255, 255, 255, 0.74);
-  --igc-gray-900: rgba(255, 255, 255, 0.87);
+  /* gray variants */
+  --igc-gray-h: 210deg; 
+  --igc-gray-s: 11%; 
+  --igc-gray-l: 71%; 
+  --igc-gray-a: 1;
+
+  --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 13%;
+  --igc-gray-100: var(--igc-gray-h), var(--igc-gray-s), 26%;
+  --igc-gray-200: var(--igc-gray-h), var(--igc-gray-s), 38%;
+  --igc-gray-300: var(--igc-gray-h), var(--igc-gray-s), 54%;
+  --igc-gray-400: var(--igc-gray-h), var(--igc-gray-s), 62%;
+  --igc-gray-500: var(--igc-gray-h), var(--igc-gray-s), 74%;
+  --igc-gray-600: var(--igc-gray-h), var(--igc-gray-s), 88%;
+  --igc-gray-700: var(--igc-gray-h), var(--igc-gray-s), 93%;
+  --igc-gray-800: var(--igc-gray-h), var(--igc-gray-s), 96%;
+  --igc-gray-900: var(--igc-gray-h), var(--igc-gray-s), 98%;
 }
 ```
 
@@ -219,9 +231,9 @@ So far we've covered the `primary`, `secondary`, `gray`, and `surface` color var
 
 ```css
 :root {
-  --igc-info-500: blue;
-  --igc-success-500: green;
-  --igc-warn-500: orange;
-  --igc-error-500: red;
+  --igc-info-500: 190deg, 90%, 50%, 1;
+  --igc-success-500: 152deg, 69%, 31%, 1;
+  --igc-warn-500: 45deg, 100%, 51%, 1;
+  --igc-error-500: 354deg, 70%, 54%, 1;
 }
 ```
