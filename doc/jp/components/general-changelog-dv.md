@@ -3,7 +3,7 @@ title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
 _description: $ProductName$ の新機能について学んでください。
 _keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
 namespace: Infragistics.Controls.Charts
 ---
 # $ProductName$ 変更ログ
@@ -28,9 +28,10 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
+### {PackageCharts}
 
-#### {PackageCharts}
-
+* 高度に構成可能な `DataLegend` コンポーネントを追加しました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。新しいデータ凡例コンポーネントについての詳細は、[ここ](chart-data-legend.md)にあります。
+* 高度に構成可能な `DataToolTipLayer` シリーズ タイプが追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。新しいデータ ツールチップ レイヤー コンポーネントについての詳細は、[ここ](chart-data-tooltip.md)にあります。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
 * CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。

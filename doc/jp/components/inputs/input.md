@@ -13,6 +13,8 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 
 <div class="divider--half"></div>
 
+<!-- React, WebComponents -->
+
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
@@ -20,9 +22,18 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
            github-src="inputs/input/overview">
 </code-view>
 
-## 依存関係
+<!-- end:React, WebComponents -->
 
 <!-- Blazor -->
+
+<code-view style="height: 120px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
+           alt="$Platform$ Input の例"
+           github-src="inputs/input/binding">
+</code-view>
+
+## 依存関係
 
 Input コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
