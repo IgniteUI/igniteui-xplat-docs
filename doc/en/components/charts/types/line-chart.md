@@ -79,7 +79,7 @@ You can create this type of chart in the `CategoryChart` control by binding your
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
            alt="$Platform$ Line Chart with Single Source"
-           github-src="charts/category-chart/chart-single-source">
+           github-src="charts/category-chart/line-chart-single-source">
 </code-view>
 
 <div class="divider--half"></div>
