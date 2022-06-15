@@ -81,7 +81,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 ## $Platform$ Column Chart Styling
 
-The $Platform$ Column Chart has many options for styling and modification of the visual appearance. For example, the sample below demonstrates changing appearance of columns and using [Marker Templates](../features/chart-markers.md) to display the value of an item above (or below) its corresponding column.
+The $Platform$ Column Chart has many options for styling and modification of the visual appearance.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ColumnSeries`, as shown in the example below:
 
