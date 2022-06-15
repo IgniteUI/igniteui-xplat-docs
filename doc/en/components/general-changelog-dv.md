@@ -27,10 +27,10 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 <!-- Blazor -->
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
-* Added the highly-configurable `DataLegend` component, which is a component that works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. You can read about the [New Data Legend Component, here](chart-data-legend.md)
-* Added the highly-configurable `DataToolTipLayer` series type, which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types. You can read about the [New Data Tooltip Layer component, here](chart-data-tooltip.md).
+* Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
+* Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
 * Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
@@ -39,10 +39,10 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
     - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
     - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
 * New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
-* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
+* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY).
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
-* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
+* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
 ### {PackageDockManager}
 
@@ -50,8 +50,7 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* Added [Row Paging](grids/data-grid-row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
@@ -72,13 +71,13 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-- Changed `ValueField` property from type string[] to string. 
+- Changed `ValueField` property from type string[] to string.
 
 ### {PackageInputs}
 
 - A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
-#### Date Picker 
+#### Date Picker
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox
@@ -252,9 +251,11 @@ for example:
 
 <!-- Angular, WebComponents, React -->
 
-## Latest
-### {PackageCharts} 
+## **{PackageVerChanges-22-1}**
+### {PackageCharts}
 
+* Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
+* Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
 * Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
@@ -263,10 +264,10 @@ for example:
     - `AxisAnnotationBackgroundCornerRadius` for FinalValueLayer
     - `XAxisAnnotationBackgroundCornerRadius` and `YAxisAnnotationBackgroundCornerRadius` for CrosshairLayer
 * New `HorizontalViewScrollbarMode` and `VerticalViewScrollbarMode` enumeration to enable scrollbars in various ways. When paired with `IsVerticalZoomEnabled` or `IsHorizontalZoomEnabled`, you'll be able to persist or fade-in and out the scrollbars along the axes to navigate the chart.
-* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY). 
+* New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with Numeric axes (e.g. NumericX, NumericY, PercentChangeY).
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
-* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
+* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
 <!-- end: Angular, WebComponents, React -->
 
@@ -274,8 +275,7 @@ for example:
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* Added [Row Paging](grids/data-grid-row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
@@ -285,8 +285,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-* New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+* Added [Row Paging](grids/data-grid-row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
@@ -302,16 +301,16 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 <div class="divider--half"></div>
 
-## **2.0.0** 
+## **2.0.0**
 ### (*) {PackageComponents}
 #### New Components & Themes
 
 * Added [Slider](inputs/slider.md)
 * Added [Range Slider](inputs/slider.md)
 * Added Dark Theme which change structure of previous themes from:
-`igniteui-webcomponents/themes/bootstrap.css` 
+`igniteui-webcomponents/themes/bootstrap.css`
 to:
-`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
+`igniteui-webcomponents/themes/light/bootstrap.css` for light theme
 `igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
 
 #### Major changes
@@ -335,17 +334,17 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 ### {PackageGrids}
 
-#### Data Grid 
+#### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
 
 > [!NOTE]
 > The following breaking changes were introduced
 
-- Changed `ValueField` property from type string[] to string. 
+- Changed `ValueField` property from type string[] to string.
 
 ### {PackageInputs}
 
-#### Date Picker 
+#### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox
@@ -388,7 +387,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts} 
+### {PackageCharts}
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
