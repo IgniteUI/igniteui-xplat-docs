@@ -364,6 +364,109 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 <div class="divider--half"></div>
 
+## カスタマイズ
+
+Dock Manager コンポーネントは、スロットとパーツを使用してすべてのボタンをカスタマイズするオプションを提供します。ボタンを変更するには、Dock Manager 内で独自の要素を定義し、slot 属性を対応する識別子に設定します。
+
+これらのスロットとパーツを使用して、カスタマイズされた Dock Manager レイアウトを作成してみましょう。最初に、`closeButton`、`maximizeButton`、`minimizeButton`、`pinButton`、および `unpinButton` スロットを使用して独自のアイコンを提供します。
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+</igc-dockmanager>
+```
+
+次に、スタイルシートで公開されたパーツを使用します。このようにして、コンポーネントのスタイル設定を完全に制御できます。
+
+```css
+igc-dockmanager::part(unpinned-tab-area) {
+    background: #bee9ec;
+}
+  
+igc-dockmanager::part(unpinned-tab-area--left) {
+    border-right: 1px dashed #004d7a;
+}
+  
+igc-dockmanager::part(unpinned-tab-area--bottom) {
+    border-top: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(tab-header-close-button), 
+igc-dockmanager::part(pane-header-close-button) {
+    background-color: #e73c7e;
+}
+
+igc-dockmanager::part(pane-header-pin-button),
+igc-dockmanager::part(pane-header-unpin-button) {
+  background: rgb(218, 218, 218);
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+igc-dockmanager::part(tabs-maximize-button),
+igc-dockmanager::part(tabs-minimize-button),
+igc-dockmanager::part(pane-header-minimize-button),
+igc-dockmanager::part(pane-header-maximize-button) {
+  width: 24px;
+  height: 24px;
+  border: none;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0.3;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-left: 0px;
+}
+```
+
+すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
+
+<!-- WebComponents -->
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
+           alt="$Platform$ Dock Manager カスタマイズ ボタンの例"
+           github-src="layouts/dock-manager/customize-buttons">
+</code-view>
+<!-- end: WebComponents -->
+
+以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
+
+スロット名 | 説明
+----------|------------
+`closeButton` | 閉じるボタン。
+`moreTabsButton` | その他のタブボタン。
+`moreOptionsButton` | その他のオプションボタン。
+`maximizeButton` | 最大化ボタン。
+`minimizeButton` | 最小化ボタン。
+`pinButton` | ピン固定ボタン。
+`unpinButton` | ピン固定解除ボタン。
+`splitterHandle` | スプリッターのハンドル。
+
+各スロットの対応するパーツは、このページの [CSS パーツ](dock-manager.md#css-parts) セクションにあります。
+
 ## キーボード ナビゲーション
 
 キーボード ナビゲーションは、**ドック マネージャー**のアクセシビリティを強化し、すべてのペインをナビゲートしたり、アクティブなペインをドッキングしてビューを複数の方向に分割したりするなど、エンドユーザーにさまざまな操作を提供します。
@@ -458,6 +561,19 @@ igc-dockmanager::part(content-pane) {
 `pane-navigator-items-group` | ペイン ナビゲーター コンポーネントの項目グループ。
 `pane-navigator-items-group-title` | ペイン ナビゲーターの項目グループのタイトル要素。
 `pane-navigator-item` | ペイン ナビゲーターの項目。
+`pane-header-close-button` | ペイン ヘッダーの閉じるボタン。
+`pane-header-maximize-button` | ペイン ヘッダーの最大化ボタン。
+`pane-header-minimize-button` | ペイン ヘッダーの最小化ボタン。
+`pane-header-pin-button` | ペイン ヘッダーのピン固定ボタン。
+`pane-header-unpin-button` | ペイン ヘッダーのピン固定解除ボタン。
+`tab-header-more-options-button` | タブ ヘッダーのその他のオプションボタン。
+`tab-header-close-button` | タブ ヘッダーの閉じるボタン。
+`tabs-maximize-button` | タブの最大化ボタン。
+`tabs-minimize-button` | タブの最小化ボタン。
+`tabs-more-button` | その他のタブ ボタン。
+`context-menu-unpin-button` | コンテキスト メニューのピン固定解除ボタン。
+`context-menu-close-button` | コンテキスト メニューの閉じるボタン。
+`splitter-handle` | スプリッターのハンドル。
 
 ## テーマ
 
@@ -489,4 +605,3 @@ addResourceStrings('fr', dockManagerStringsFr);
 ドック マネージャーは、文字列を変更できる [`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
 
 <!-- end: WebComponents -->
-
