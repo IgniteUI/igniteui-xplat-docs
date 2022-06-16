@@ -80,7 +80,7 @@ $ProductName$ 折れ線チャート (または折れ線グラフ) は、カテ�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
            alt="単一シリーズの $Platform$ 折れ線チャート"
-           github-src="charts/category-chart/chart-single-source">
+           github-src="charts/category-chart/line-chart-single-source">
 </code-view>
 
 <div class="divider--half"></div>
