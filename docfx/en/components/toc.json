@@ -1393,6 +1393,12 @@
     "href": "inputs/input.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Date Time Input",
+    "href": "inputs/date-time-input.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md"
