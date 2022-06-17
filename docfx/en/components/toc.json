@@ -536,7 +536,7 @@
     "exclude": ["Blazor"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "Chart Features",
