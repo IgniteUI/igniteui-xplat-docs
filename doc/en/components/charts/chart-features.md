@@ -57,7 +57,7 @@ Bring focus to visuals such as lines, columns, or markers by highlighting them a
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
            alt="$Platform$ Highlighting Example"
-           github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
+           github-src="charts/category-chart/column-chart-with-highlighting">
 </code-view>
 
 <div class="divider--half"></div>

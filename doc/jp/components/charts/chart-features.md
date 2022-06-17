@@ -58,7 +58,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
            alt="$Platform$ 強調表示の例"
-           github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
+           github-src="charts/category-chart/column-chart-with-highlighting">
 </code-view>
 
 <div class="divider--half"></div>
