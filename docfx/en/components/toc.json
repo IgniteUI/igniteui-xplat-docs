@@ -83,19 +83,19 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Palettes",
     "href": "themes/palettes.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Elevations",
     "href": "themes/elevations.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Typography",
     "href": "themes/typography.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
