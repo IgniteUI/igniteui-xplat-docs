@@ -31,19 +31,30 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+You will also need to link an additional CSS file to apply the styling to the `Tree` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
 
 Before using the `Tree`, you need to register it as follows:
-
 
 ```ts
 import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
-<!-- end: WebComponents -->
+
+```razor
+IgbTreeModule.Register(IgniteUIBlazor);
+IgbTreeItemModule.Register(IgniteUIBlazor);
+```
 
 The simplest way to start using the `Tree` is as follows:
-
 
 ### Declaring a tree
 `TreeItem` is the representation of every item that belongs to the `Tree`.  
@@ -68,10 +79,19 @@ Items can be declared using one of the following approaches.
 </igc-tree>
 ```
 
+```razor
+<IgbTree>
+    @foreach (var student in this.Students)
+    {
+        <IgbTreeItem Value="@item.Id" Label="@item.Name">
+        </IgbTreeItem>
+    }
+</IgbTree>
+```
+
 Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
 
 - Declaring a tree by creating static unbound items
-<!-- WebComponents -->
 
 In order to render a tree you do not necessarily need a data set - individual items can be created without an underlying data model using the exposed `label` property or provide a custom slot content for the `TreeItem` label.
 
@@ -97,17 +117,34 @@ In order to render a tree you do not necessarily need a data set - individual it
 </igc-tree>
 ```
 
+```razor
+<IgbTree>
+    <IgbTreeItem Label="North America">
+        <IgbTreeItem Label="United States"></IgbTreeItem>
+        <IgbTreeItem Label="Canada"></IgbTreeItem>
+        <IgbTreeItem Label="Mexico"></IgbTreeItem>
+    </IgbTreeItem>
+    <IgbTreeItem Label="South America">
+        <IgbTreeItem Label="Brazil"></IgbTreeItem>
+        <IgbTreeItem Label="Uruguay"></IgbTreeItem>
+    </IgbTreeItem>
+    <IgbTreeItem Label="Europe">
+        <IgbTreeItem Label="United Kingdom"></IgbTreeItem>
+        <IgbTreeItem Label="Germany"></IgbTreeItem>
+        <IgbTreeItem Label="Bulgaria"></IgbTreeItem>
+    </IgbTreeItem>
+</IgbTree>
+```
+
 > [!NOTE]
 > You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
-
-<!-- end: WebComponents -->
 
 ### Item Interactions
 The `Tree` provides the following API methods for item interactions:
 - `expand` - expands all items. If an items array is passed, expands only the specified items.
 - `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
-- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit igcSelection event.
-- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit igcSelection event.
+- `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
+- `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `Selection` event.
 
 ## $Platform$ Tree Selection
 
@@ -121,12 +158,20 @@ To enable multiple item selection in the `Tree` just set the `selection` propert
 <igc-tree selection="multiple">
 </igc-tree>
 ```
+```razor
+<IgbTree Selection=TreeSelection.Multiple>
+</IgbTree>
+```
 ### Cascade
 To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item. 
 
 ```html
-<igc-tree selection="cascade">
+<igc-tree selection="Cascade">
 </igc-tree>
+```
+```razor
+<IgbTree Selection=TreeSelection.Multiple>
+</IgbTree>
 ```
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
@@ -170,8 +215,6 @@ The $ProductName$ Tree can be rendered in such way that it requires the minimal 
 </code-view>
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
-
-
 
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
 
@@ -229,3 +272,13 @@ igc-tree-item::part(active selected) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
+<!-- end: Blazor>
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React>
