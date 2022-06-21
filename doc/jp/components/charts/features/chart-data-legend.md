@@ -2,26 +2,18 @@
 title: $Platform$ チャート データの凡例 | データ視覚化ツール | インフラジスティックス
 _description: インフラジスティックス $ProductName$ チャートでデータ凡例を使用する
 _keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics, $Platform$ チャート、チャート凡例、凡例、凡例タイプ、インフラジスティックス
-mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series"]
+mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
 # $Platform$ データ凡例
 
-$ProductName$ では、`XamDataLegend` は `Legend` のように機能するコンポーネントですが、シリーズの値の表示や、シリーズの行と値の列のフィルタリング、値のスタイルと書式を設定するための多くの構成プロパティを提供します。この凡例は、`XamDataChart` のプロット領域内でマウスを移動すると更新され、ユーザーのマウス ポインターがプロット領域を離れたときに最後にホバーされたポイントを記憶する永続的な状態になります。このコンテンツは、3 種類の行と 4 種類の列のセットを使用して表示されます。
+In $ProductName$, the `XamDataLegend` is highly-customizable version of the `Legend`, that shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values. This legend updates when moving the mouse inside of the plot area of the `CategoryChart`, `FinancialChart`, and `XamDataChart`. Also, it has a persistent state that remembers the last hovered point when the user's mouse pointer exits the plot area. It displays this content using a set of three type of rows (header, series, summary) and four types of columns (title, label, value, unit).
 
 ## $Platform$ データ凡例の行
 
-`XamDataLegend` の行には、ヘッダー行、シリーズ行、および集計行が含まれます。
-
-ヘッダー行には、ホバーされたポイントの軸ラベルが表示され、`HeaderText` プロパティを使用して変更できます。
-
-シリーズ行は、実際には、チャートにプロットされた各シリーズに対応する行のセットにすることができます。これらの行には、凡例バッジ、シリーズ タイトル、シリーズの実際の値 / 省略値、および指定されている場合は省略記号と単位が表示されます。
-
-最後に、すべてのシリーズ値の合計を表示する集計行があります。デフォルトの集計タイトルは、凡例の `SummaryTitleText` プロパティを使用して変更できます。また、`SummaryType` プロパティを使用して、シリーズ値の合計、最小、最大、または平均を集計行に表示するかどうかをカスタマイズできます。
-
-次の例は、集計が適用された `XamDataLegend` を示しています。
+`XamDataLegend` の行には、ヘッダー行、シリーズ行、および集計行が含まれます。ヘッダー行には、ホバーされたポイントの軸ラベルが表示され、`HeaderText` プロパティを使用して変更できます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -30,39 +22,21 @@ $ProductName$ では、`XamDataLegend` は `Legend` のように機能するコ�
            github-src="charts/category-chart/data-legend">
 </code-view>
 
-## $Platform$ データ凡例の列
+### Header Row
 
-`XamDataLegend` の列には、タイトル、ラベル、値、および単位の列が含まれます。チャートの各シリーズには、凡例の `IncludedColumns` または `ExcludedColumns` コレクションに応じて、ラベル、値、および単位の複数の列を含めることができます。
+The header row displays the current label of x-axis when hovering mouse over category series and financial series. You can use `HeaderFormatDate` and `HeaderFormatTime` properties to format date and time in the `XamDataLegend` if the x-axis shows dates. For other types of series, the `XamDataLegend` does not render the header row.
 
-タイトル列には、チャートにプロットされたさまざまな `Series` の `Title` プロパティに由来する凡例バッジとシリーズ タイトルが表示されます。
+### Series Row
 
-ラベル列には、凡例の `IncludedColumns` または `ExcludedColumns` コレクション内のさまざまなプロパティパスの名前または省略形が表示されます。
+The series row represents each series plotted in the chart. These rows will display the legend badge, series title, actual/abbreviated value of the the series, and abbreviation symbol or unit of measurement, if specified. You can filter series rows by setting `IncludedSeries` or `ExcludedSeries` properties to a collection of series' indexes (1, 2, 3) or series' titles (Tesla, Microsoft).
 
-値の列には、一連の値が省略形のテキストとして表示されます。この省略形は、`ValueFormatAbbreviation` プロパティを使用して書式設定でき、このプロパティを `Auto` または `Shared` に設定することですべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の精度は、最小桁数と最大桁数にそれぞれ `ValueFormatMinFractions` と `ValueFormatMaxFractions` を使用して制御されます。
+### Summary Row
 
-単位列には、省略記号や単位テキストが表示されます。これらは、すべての列に `UnitText` を設定するか、チャートの各シリーズで次のプロパティを使用して、`XamDataLegend` で設定できます:
+Finally, there is a summary row that displays the total of all series values. The default summary title can be changed using the `SummaryTitleText` property of the legend. Also, you can use the `SummaryType` property to customize whether you display the `Total`, `Min`, `Max`, or `Average` of series values in the summary row.
 
-- カテゴリ シリーズ (例: ColumnSeries)
-    - ValueMemberAsLegendUnit="K"
-- 財務物価シリーズ:
-    - OpenMemberAsLegendUnit="K"
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
-    - CloseMemberAsLegendUnit="K"
-- 範囲シリーズ:
-    - LowMemberAsLegendUnit="K"
-    - HighMemberAsLegendUnit="K"
-- ラジアル シリーズ:
-    - ValueMemberAsLegendUnit="km"
-- 極座標シリーズ:
-    - RadiusMemberAsLegendUnit="km"
-    - AngleMemberAsLegendUnit="degrees"
+## $Platform$ Data Legend Columns
 
-上記の各プロパティには、前述のラベル列のテキストを判別するための対応する `MemberAsLegendLabel` プロパティもあります。
-
-`IncludedColumns` および `ExcludedColumns` コレクションに含まれる列は、通常、基になるデータ項目の値パスに対応しますが、ファイナンシャル シリーズには、正しくプロットするために必要な `High`、`Low`、`Open`、`Close` パス、および、いくつかの特別なパスを含めるオプションがあります 。凡例内に `TypicalPrice`、`Change`、および `Volume` オプションを表示することができます。
-
-次の例は、Open、High、Low、Close、および Change の列が追加された `XamDataLegend` を示しています。
+The columns of the `XamDataLegend` include the series title, label, value of data column, and optional unit associated with the value. Some series in the chart can have multiple columns for label, value, and units. For example, financial price series has **High**, **Low**, **Open**, and **Close** data columns which can be filtered in the `XamDataLegend` using the `IncludedColumns` or `ExcludedColumns` properties.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -71,11 +45,54 @@ $ProductName$ では、`XamDataLegend` は `Legend` のように機能するコ�
            github-src="charts/financial-chart/data-legend">
 </code-view>
 
-## $Platform$ データ凡例のスタイル設定
+Setting values on the `IncludedColumns` and `ExcludedColumns` properties, depends on type of series and how many data columns they support. For example, you can set `IncludedColumns` property to a collection of **Open** and **Close** strings and the legend will show only open and close values for stock prices when the chart is plotting financial series. The following table lists all column names that can be use to filter columns in data legend.
 
-`XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。
+ Type of Series  | Column Names
+-----------------|--------------
+Category Series  | Value
+Radial Series    | Value
+Polar Series     | Radius, Angle
+Bubble Series    | X, Y, Radius
+Scatter Series   | X, Y
+Range Series     | High, Low
+Financial Series | High, Low, Open, Close, Change, TypicalPrice, Volume
 
-次の例は、上記のスタイル設定プロパティの使用法を示しています。
+Where the **TypicalPrice** and percentage **Change** of OHLC prices are automatically calculated by financial series so you do not need to include them in your data sources.
+
+### Title Column
+
+The title column displays legend badges and series titles, which come from the `Title` property of the different `Series` plotted in the chart.
+
+### Label Column
+
+The label column displays short name on the left side of value column, e.g. "O" for **Open** stock price. You can toggle visibility of this column using the `LabelDisplayMode` property.
+
+### Value Column
+
+The value column displays values of series as abbreviated text which can be formatted using the `ValueFormatAbbreviation` property to apply the same abbreviation for all numbers by setting this property to `Shared`. Alternatively, a user can select other abbreviations such as `Independent`, `Kilo`, `Million`, etc. Precision of abbreviated values is controlled using the `ValueFormatMinFractions` and `ValueFormatMaxFractions` for minimum and maximum digits, respectively.
+
+
+### Unit Column
+
+The unit column displays an abbreviation symbol on the right side of value column. The unit symbol depends on the `ValueFormatAbbreviation` property, e.g. "M" for the `Million` abbreviation.
+
+### Customizing Columns
+
+You can customize text displayed in the **Label** and **Unit** columns using  properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit**  on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
+
+ Type of Series | Series Properties
+------|----
+Category Series | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M"
+Radial Series | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM"
+Polar Series | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°"
+Range Series | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K"
+Financial Series | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br>
+
+Also, you can use the `UnitText` property on the `XamDataLegend` to change text displayed in all Unit columns.
+
+## $Platform$ Data Legend Styling
+
+The `XamDataLegend` provides properties for styling each type of column. Each of these properties begins with **Title**, **Label**, **Value**, or **Units**. You can style the text's color, font, and margin. For example, if you wanted to set the text color of all columns, you would set the `TitleTextColor`, `LabelTextColor`, `ValueTextColor`, and `UnitsTextColor` properties. The following example demonstrates a utilization of the styling properties mentioned above:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -84,13 +101,10 @@ $ProductName$ では、`XamDataLegend` は `Legend` のように機能するコ�
            github-src="charts/financial-chart/data-legend-styling-props">
 </code-view>
 
-## $Platform$ データ凡例値の書式設定
+## $Platform$ Data Legend Value Formatting
 
-`XamDataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。
-
-`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。
-
-次の例は、`ValueFormatMinFractions` と `ValueFormatMaxFractions` が設定された `XamDataLegend` を示しています。
+The `XamDataLegend` provides automatic abbreviation of large numbers using its `ValueFormatAbbreviation` property. This adds a multiplier in the units column such as kilo, million, billion, etc. You can customize the number of fractional digits that are displayed by setting the `ValueFormatMinFractions` and `ValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
+The following example demonstrates how to use those properties:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -99,11 +113,9 @@ $ProductName$ では、`XamDataLegend` は `Legend` のように機能するコ�
            github-src="charts/category-chart/data-legend-formatting-decimals">
 </code-view>
 
-## $Platform$ データ凡例の値モード
+## $Platform$ Data Legend Value Mode
 
-コントロールの `ValueFormatMode` プロパティを変更することにより、`XamDataLegend` 内の値のデフォルトの 10 進表示を通貨に変更することができます。`XamDataLegend` は、その `ValueFormatCulture` プロパティに対応するカルチャ タグを設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。
-
-たとえば、次の例は、`ValueFormatCulture` が「en-GB」に設定されたチャートを示しています:
+You have the ability to change the default decimal display of values within the `XamDataLegend` to a currency by changing the `ValueFormatMode` property. Also, you can change the culture of the displayed currency symbol by setting the `ValueFormatCulture` property a culture tag. For example, the following example data legend with the `ValueFormatCulture` set to "en-GB" to display British Pounds (£) symbol:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
