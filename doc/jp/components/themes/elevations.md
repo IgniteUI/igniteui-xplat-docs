@@ -1,33 +1,33 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Elevations | Infragistics
+title: $Platform$ スタイル設定およびテーマ | $Platform$ エレベーション | インフラジスティックス
 _description: 
-_keywords: $ProductName$, Infragistics, Elevations, Styling
+_keywords: $ProductName$, Infragistics, Elevations, Styling, インフラジスティックス, エレベーション, スタイル設定
 mentionedTypes: ["Elevations"]
 _language: ja
 ---
 
-# Elevations in $ProductName$
+# $ProductName$ のエレベーション
 
-The implementation of the Elevations in $ProductName$ is modeled after the [Elevations in Material Design](https://material.io/design/environment/elevation.html#elevation-in-material-design). They are used to establish and maintain functional boundaries between Document Object Model trees to enable better functional encapsulation. 
+$ProductName$ のエレベーションの実装は、[マテリアル デザインでのエレベーション (英語)](https://material.io/design/environment/elevation.html#elevation-in-material-design) をモデルにしています。これらは、ドキュメント オブジェクト モデル ツリー間の機能境界を確立および維持して、より優れた機能カプセル化を可能にするために使用されます。
 
-## Overview
+## 概要
 
 $ProductName$ shadows closely follow the Material Design guidelines for establishing depth hierarchy based on 25 elevation levels. The size of the shadow cast is related to the elevation level number. The higher the elevation level number, the larger the shadow will be. Elevations in $ProductName$ are exposed as CSS variables. Each variable stores a set of 3 `box-shadows`. These `box-shadows` represent the umbra, penumbra, and antumbra elements that are the properties of shadows as observed in the real world.
 
-Here's a list of resting elevations as used in various components in $ProductName$ in the Bootstrap Theme and their corresponding CSS variable names:
+$ProductName$ のブートストラップ テーマのさまざまなコンポーネントで使用される静止エレベーションと、それに対応する CSS 変数名のリストを次に示します:
 
-| Component                                       | Default Elevation Level | CSS Variable       |
+| コンポーネント                                       | デフォルトのエレベーション レベル | CSS 変数       |
 | ----------------------------------------------- | ----------------------- | ------------------ |
 | Button                                          | 0                       | --igc-elevation-0  |
 | Elevated Card                                   | 2                       | --igc-elevation-2  |
 | Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
 | Navdrawer                                       | 16                      | --igc-elevation-16 |
 
-As you can see from the `CSS Variable` column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
+`CSS 変数`列からわかるように、すべてのエレベーションは `--igc-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
 
-## Usage
+## 使用方法
 
-To begin using elevations in your own components all you need is to reference the variable name of the desired level:
+独自のコンポーネントでエレベーションの使用を開始するには、目的のレベルの変数名を参照するだけです。
 
 ```css
 .custom-element {
@@ -35,7 +35,7 @@ To begin using elevations in your own components all you need is to reference th
 }
 ```
 
-Changing the elevation in an existing component theme works in a similar way:
+既存のコンポーネント テーマのエレベーションを変更することも同様に機能します:
 
 ```css
 igc-navbar {
@@ -43,11 +43,11 @@ igc-navbar {
 }
 ```
 
-## Defining Elevations
+## エレベーションの定義
 
-Updating the default elevations works in a similar way to updating the palette colors. You simply need to reassign the variable to a different value. With elevations, make sure the value is `box-shadow`.
+デフォルトのエレベーションの更新は、パレットの色の更新と同じように機能します。変数を別の値に再割り当てするだけです。エレベーションの場合、値が `box-shadow` であることを確認してください。
 
-Example:
+例:
 
 ```css
 :root {
@@ -56,10 +56,10 @@ Example:
 }
 ```
 
-Now, all components that use elevation levels 1 and 2 will have their shadows updated.
+これで、エレベーション レベル 1 と 2 を使用するすべてのコンポーネントのシャドウが更新されます。
 
-### Shadowing
-You can shadow the globally set elevations for a specific scope only. We already saw that the Snackbar and the Toast component use elevation level 10. To change the shadows for both of them, all you need to do is:
+### シャドウイング
+特定のスコープに対してのみ、グローバルに設定されたエレベーションをシャドーイングすることができます。スナックバーとトースト コンポーネントがエレベーション レベル 10 を使用していることはすでに見てきました。両方のシャドウを変更するには、次のことを行う必要があります:
 
 ```css
 igc-snackbar,
@@ -68,11 +68,11 @@ igc-toast {
 }
 ```
 
-This will set the toast and the snackbar shadows to the value assigned to `--igc-elevation-10`.
+これにより、トーストとスナックバーのシャドウが `--igc-elevation-` 10 に割り当てられた値に設定されます。
 
-## Using Elevation Factor
+## エレベーション係数の使用
 
-In addition to elevation levels, $ProductName$ exposes a CSS variable that makes it easy to control the global elevation factor. The default value is set to 1 which means all component shadows will be the same as defined in their component themes. If you want to remove all shadows, you just need to change the property value to 0:
+エレベーション レベルに加えて、$ProductName$ は、グローバル エレベーション係数の制御を容易にする CSS 変数を公開します。デフォルト値は 1 に設定されています。これは、すべてのコンポーネント シャドウがコンポーネント テーマで定義されているものと同じになることを意味します。すべてのシャドウを削除する場合は、プロパティ値を 0 に変更するだけです:
 
 ```css
 :root {
@@ -80,4 +80,4 @@ In addition to elevation levels, $ProductName$ exposes a CSS variable that makes
 }
 ```
 
-The `--igc-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.
+`--igc-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。

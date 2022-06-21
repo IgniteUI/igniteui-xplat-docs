@@ -1,33 +1,33 @@
 ---
-title: $Platform$ DateTimeInput | Infragistics
-_description: Infragistics' $Platform$ DateTimeInput allows the user to edit date and time in an input element
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: $Platform$ 日時入力 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
+_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
 mentionedTypes: ['DateTimeInput']
 _language: ja
 ---
 
-# $Platform$ Date Time Input Overview
+# $Platform$ 日時入力の概要
 
-The $ProductName$ Date Time Input allows the user to set and edit the date and time in a chosen input element. The user can edit both date and time portions using an editable masked input. Additionally, one can specify a desired display and input format, as well as min and max values to utilize validation.
+$ProductName$ 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="$Platform$ Date Time Input Overview Example"
+           alt="$Platform$ 日時入力の概要の例"
            github-src="inputs/date-time-input/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `DateTimeInput`, you need to register it as follows:
+`DateTimeInput` を使用する前に、次のように登録する必要があります:
 
 
 ```ts
@@ -36,8 +36,8 @@ import { defineComponents, IgcDateTimeInput } from 'igniteui-webcomponents';
 defineComponents(IgcDateTimeInput);
 ```
 
-### Value binding
-The easiest way to set the value of the `IgcDateTimeInputComponent` component is by passing a Date object to the `value` property:
+### 値バインディング
+`IgcDateTimeInputComponent` コンポーネントの値を設定する最も簡単な方法は、Date オブジェクトを `value` プロパティに渡すことです。
 
 ```typescript
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
@@ -46,81 +46,81 @@ const date = new Date();
 input.value = date;
 ```
 
-The `IgcDateTimeInputComponent` also accepts [`ISO 8601`](https://tc39.es/ecma262/#sec-date-time-string-format) strings.
+`IgcDateTimeInputComponent` は、[`ISO 8601`](https://tc39.es/ecma262/#sec-date-time-string-format) 文字列も受け入れます。
 
-The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
+文字列は、`YYYY-MM-DDTHH:mm:ss.sssZ` の形式の完全な `ISO` 文字列にすることも、日付のみと時間のみの部分に分割することもできます。
 
-##### Date-only
-If a date-only string is bound to the `value` property of the component, it needs to be in the format `YYYY-MM-DD`. The `inputFormat` is still used when typing values in the input and it does not have to be in the same format. Additionally, when binding a date-only string, the directive will prevent time shifts by coercing the time to be `T00:00:00`.
+##### 日付のみ
+日付のみの文字列がコンポーネントの `value` プロパティにバインドされている場合は、`YYYY-MM-DD` の形式である必要があります。`inputFormat` は、入力に値を入力するときに引き続き使用され、同じ形式である必要はありません。さらに、日付のみの文字列をバインドする場合、ディレクティブは時刻を `T00:00:00` に強制することにより、時刻のずれを防ぎます。
 
-##### Time-only
-Time-only strings are normally not defined in the `ECMA` specification, however to allow the directive to be integrated in scenarios which require time-only solutions, it supports the 24 hour format - `HH:mm:ss`. The 12 hour format is not supported.
+##### 時刻のみ
+時刻のみの文字列は通常、`ECMA` 仕様では定義されていませんが、時刻のみのソリューションを必要とするシナリオにディレクティブを統合できるようにするために、24 時間形式 (`HH:mm:ss`) をサポートしています。12 時間形式はサポートされていません。
 
-##### Full ISO string
-If a full `ISO` string is bound, the directive will parse it only if all elements required by [`Date.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) are provided.
+##### 完全な ISO 文字列
+完全な ISO 文字列がバインドされている場合、ディレクティブは、[`Date.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
 
-All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete date-only, time-only, or full `ISO` strings will be parsed as `InvalidDate`.
+`InvalidDate` を含むすべての falsy の値は、`null` として解析されます。不完全な日付のみ、時間のみ、または完全な `ISO` 文字列は、`InvalidDate` として解析されます。
 
-### Keyboard Navigation
+### キーボード ナビゲーション
 
-The `IgcDateTimeInputComponent` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different `DateParts` among others without having to touch the mouse.
+`IgcDateTimeInputComponent` には直感的なキーボード ナビゲーションがあり、マウスに触れることなく、さまざまな `DatePart` を簡単に増分、減分、またはジャンプできます。
 
-|Keys|Description|
+|キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | Move one character to the beginning |
-| <kbd>&rarr;</kbd> | Move one character to the end |
-| <kbd>Home</kbd> | Move to the beginning |
-| <kbd>End</kbd> | Move to the end |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | Move to the beginning of the date/time section - current one or left one |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | Move to the end of the date/time section - current on or right one |
-| Focus on a date/time part + <kbd>&darr;</kbd> | Decrements a date/time part |
-| Focus on a date/time part + <kbd>&uarr;</kbd> | Increments a date/time part |
-| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | Sets the current date/time as the value of the editor |
+| <kbd>&larr;</kbd> | 1 文字を先頭に移動 |
+| <kbd>&rarr;</kbd> | 1 文字を最後に移動 |
+| <kbd>Home</kbd> | 最初に移動 |
+| <kbd>End</kbd> | 最後に移動 |
+| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&larr;</kbd> | 日付 / 時刻セクションの先頭に移動 - 現在のセクションまたは左側のセクション |
+| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>&rarr;</kbd> | 日付 / 時刻セクションの最後に移動 - 現在または右側のセクション |
+| 日付 / 時刻の部分にフォーカス + <kbd>&darr;</kbd> | 日付 / 時刻部分を減分 |
+| 日付 / 時刻の部分にフォーカス + <kbd>&uarr;</kbd> | 日付 / 時刻の部分を増分 |
+| <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>;</kbd> | 現在の日付 / 時刻をエディターの値として設定 |
 
-## Setting formats
+## 書式の設定
 
-The `IgcDateTimeInput` supports different display and input formats. 
+`IgcDateTimeInput` は、さまざまな表示形式と入力形式をサポートしています。 
 
-It uses [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `displayFormat` is provided, the component will use the `inputFormat` as such.
+[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`displayFormat` が指定されていない場合、コンポーネントは `inputFormat` をそのまま使用します。
 
-### Input Format
-The table bellow shows formats that are supported by the component's `inputFormat`:
+### 入力書式
+次の表は、コンポーネントの `inputFormat` でサポートされている形式を示しています。
 
-|Format|Description|
+|書式|説明|
 |-------|----------|
-| `d` | Date, will be coerced with a leading zero while editing. |
-| `dd` | Date with an explicitly set leading zero. |
-| `M` | Month, will be coerced with a leading zero while editing. |
-| `MM` | Month with an explicitly set leading zero. |
-| `yy` | Short year format. |
-| `yyyy` | Full year format. |
-| `h` | Hours in 12-hour format, will be coerced with a leading zero while editing. |
-| `hh` | Hours in 12-hour format with an explicitly set leading zero. |
-| `H` | Hours in 24-hour format, will be coerced with a leading zero while editing. |
-| `HH` | Hours in 24-hour format, with an explicitly set leading zero. |
-| `m` | Minutes, will be coerced with a leading zero while editing. |
-| `mm` | Minutes with an explicitly set leading zero. |
-| `tt` | AM/PM section for 12-hour format. |
+| `d` | 日付。編集中は先行ゼロで強制されます。 |
+| `dd` | 先行ゼロが明示的に設定された日付。 |
+| `M` | 月。編集中は先行ゼロで強制されます。 |
+| `MM` | 先行ゼロが明示的に設定されている月。 |
+| `yy` | 短い年形式。 |
+| `yyyy` | 完全な年形式。 |
+| `h` | 12 時間形式の時間。編集中は先行ゼロで強制されます。 |
+| `hh` | 明示的に先行ゼロが設定された 12 時間形式の時間。 |
+| `H` | 24 時間形式の時間。編集中は先行ゼロで強制されます。 |
+| `HH` | 明示的に先行ゼロが設定された 24 時間形式の時間。 |
+| `m` | 分。編集中に先行ゼロで強制されます。 |
+| `mm` | 先行ゼロが明示的に設定された分。 |
+| `tt` | 12 時間形式の AM/PM セクション。 |
 
-To set a specific input format, pass it as a string to the `IgcDateTimeInput`. This will set both the expected user input format and the `mask`. Additionally, the `inputFormat` is locale based, so if none is provided, the editor will default to `dd/MM/yyyy`.
+特定の入力形式を設定するには、それを文字列として `IgcDateTimeInput` に渡します。これにより、予想されるユーザー入力形式と `mask` の両方が設定されます。さらに、`inputFormat` はロケール ベースであるため、何も指定されていない場合、エディターはデフォルトで `dd/MM/yyyy` になります。
 
 ```html
 <igc-date-time-input input-format="dd-MM-yy" display-format="medium"/>
 ```
 
-If all went well, you should see the following in your browser:
+以下は結果です:
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="$Platform$ Date Time Input Input Format Display Format Example"
+           alt="$Platform$ 日時入力の表示書式の例"
            github-src="inputs/date-time-input/input-format-display-format">
 </code-view>
 
-### Display format
-The date time input exposes predefined formats for displaying date/time in various manners. All of the examples below are given in en-US locale.
+### 表示書式
+日時入力は、さまざまな方法で日付 / 時刻を表示するための事前定義された形式を公開します。以下の例はすべて、en-US ロケールで示されています。
 
-| Option | Example |
+| オプション | 例 |
 |:-------:|:-----------|
 | `short` | 7/17/22, 12:00 AM |
 | `medium` | Jul 17, 2022, 12:00:00 AM |
@@ -135,41 +135,41 @@ The date time input exposes predefined formats for displaying date/time in vario
 | `longTime` | 12:00:00 AM GMT+3 |
 | `fullTime` | 12:00:00 AM Eastern European Summer Time |
 
-Furthermore, users can construct a displayFormat string using the supported symbols described in the following table.
+さらに、ユーザーは、次の表で説明されているサポートされている記号を使用して、displayFormat 文字列を作成できます。
 
-Type | Format | Description | Example |
+タイプ | 書式 | 説明 | 例 |
 |:---|:-------:|:-----------|:--------|
-Date | `d` | Minimum digits. | 7, 17 |
-|| `dd` | Zero padded. | 07, 17 |
-Month | `M` | Minimum digits. | 3, 10 |
-|| `MM` | Zero padded. | 03, 10 |
-|| `MMM` | Abbreviated | Oct |
-|| `MMMM` | Wide | October |
-|| `MMMMM` | Narrow | O |
-Year | `y` | Numeric | 2022
-|| `yy` | Two digit | 22
-|| `yyy` | Numeric | 2022
-|| `yyyy` | Numeric  | 2022
-Hour 1-12 | `h` | Minimum digits | 1, 12
-|| `hh` | Zero padded | 01, 12
-Hour 1-24 | `H` | Zero padded | 01, 23
-|| `HH` | Zero padded | 01, 23
-Minute | `m` | Minimum digits | 1, 60
-|| `mm` | Zero padded | 01, 60
-Second | `s` | Minimum digits | 1, 60
-|| `ss` | Zero padded | 01, 60
-Time Period | `t` | Abbreviated | AM, PM 
-|| `tt` | Abbreviated | AM, PM
-|| `ttt` | Short | noon
-|| `tttt` | Long | noon
-|| `ttttt` | Narrow | n
+Date | `d` | 最小桁数。 | 7, 17 |
+|| `dd` |ゼロ埋込み | 07, 17 |
+Month | `M` | 最小桁数。 | 3, 10 |
+|| `MM` | ゼロ埋込み | 03, 10 |
+|| `MMM` | 省略 | Oct |
+|| `MMMM` | ワイド | October |
+|| `MMMMM` | 狭い | O |
+Year | `y` | 数値 | 2022
+|| `yy` | 2 桁 | 22
+|| `yyy` | 数値 | 2022
+|| `yyyy` | 数値  | 2022
+Hour 1-12 | `h` | 最小桁数。 | 1, 12
+|| `hh` | ゼロ埋込み | 01, 12
+Hour 1-24 | `H` | ゼロ埋込み | 01, 23
+|| `HH` | ゼロ埋込み | 01, 23
+Minute | `m` | 最小桁数。 | 1, 60
+|| `mm` | ゼロ埋込み | 01, 60
+Second | `s` | 最小桁数。 | 1, 60
+|| `ss` | ゼロ埋込み | 01, 60
+Time Period | `t` | 省略 | AM, PM 
+|| `tt` | 省略 | AM, PM
+|| `ttt` | 短い | noon
+|| `tttt` | 長い | noon
+|| `ttttt` | 狭い | n
 
-> Note: 
-Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used. 
+> 注: 
+多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。 また、12 時間制を使用した場合にのみ効果があります。 
 
-## Min/max value
+## 最小値 / 最大値
 
-You can specify `minValue` and `maxValue` properties to restrict input and control the validity of the component. Just like the `value` property, they can be of type `string`.
+`minValue` および `maxValue` プロパティを指定して、コンポーネントの入力を制限し、有効性を制御できます。`value` プロパティと同様に、`string` 型にすることができます。
 
 ```ts
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
@@ -181,23 +181,23 @@ input.minValue = new Date(2021, 0, 1);
 <igc-date-time-input max-value="2022-01-01T21:00:00.000Z"></igc-date-time-input>
 ```
 
-If all went well, the component will be `invalid` if the value is greater or lower than the given dates. Check out the example below:
+すべてがうまくいった場合、値が指定された日付よりも大きいか小さい場合、コンポーネントは`無効`になります。以下の例をご覧ください:
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="$Platform$ Date Time Input Min Max Value Example"
+           alt="$Platform$ 日時入力最小 / 最大値の例"
            github-src="inputs/date-time-input/min-max-value">
 </code-view>
 
 
-## Step up/down
+## ステップアップ / ステップダウン
 
-The `IgcDateTimeInputComponent` exposes public `stepUp` and `stepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
+`IgcDateTimeInputComponent` は、公開な `stepUp` メソッドと `stepDown` メソッドを公開します。現在設定されている日付と時刻の特定の `DatePart` を増減し、いくつかの方法で使用できます。
 
-In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `inputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/Down step.
+最初のシナリオでは、特定の DatePart がメソッドに渡されない場合、指定した `inputFormat` および内部コンポーネントの実装に基づいてデフォルトの DatePart が増減します。2 番目のシナリオでは、さまざまな要件を満たすために操作する DatePart を明示的に指定できます。また、どちらのメソッドも、stepUp/Down ステップを設定するために使用できるタイプ番号のオプションの `delta` パラメーターを受け入れます。
 
-Additionally, `spinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `stepUp` and `stepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `spinDelta`.
+さらに、`spinDelta` は、各日時セグメントに異なる delta を適用するために使用できるプロパティです。キーボード、マウス ホイール、または `stepUp` メソッドと `stepDown` メソッドを使用してスピンする場合に適用されます。ただし、`spinDelta` よりも優先されるため、delta パラメーターが提供されていない場合に限ります。
 
 ```ts
 const input = document.getElementById('dateTimeInput') as IgcDateTimeInputComponent;
@@ -211,44 +211,43 @@ const spinDelta: DatePartDeltas = {
 input.spinDelta = spinDelta;
 ```
 
-Try it in the example below:
+以下の例をご覧ください。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="$Platform$ Date Time Input Step Up/Down Example"
+           alt="$Platform$ 日時入力ステップアップ / ステップダウンの例"
            github-src="inputs/date-time-input/step-up-down">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The `IgcDateTimeInput` component derives from the `IgcInput` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+`IgcDateTimeInput` コンポーネントは `IgcInput` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#styling)を参照してください。
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
 * `Input`
 * `MaskInput`
 
-Additional Web Components that were used:
+使用したその他の WEB コンポーネント:
 
 * `Icon`
 
 <!-- end: WebComponents -->
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

@@ -1,42 +1,42 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Typography | Infragistics
+title: $Platform$ スタイル設定およびテーマ | $Platform$ タイポグラフィ | インフラジスティックス
 _description: 
-_keywords: $ProductName$, Infragistics, Typography, Styling
+_keywords: $ProductName$, Infragistics, Typography, Styling, インフラジスティックス, タイポグラフィ, スタイル設定
 mentionedTypes: ["Typography"]
 _language: ja
 ---
 
-# Typography in $ProductName$
-The typography in $ProductName$ is modeled after the [Material Type System](https://material.io/design/typography/the-type-system.html#). It's non-intrusive and optional, allowing you to modify the type styles using CSS only.
+# $ProductName$ のタイポグラフィ
+$ProductName$ のタイポグラフィは、[マテリアル タイプ システム (英語)](https://material.io/design/typography/the-type-system.html#) をモデルにしています。邪魔にならないオプションで、CSS のみを使用してタイプ スタイルを変更できます。
 
-## Overview
-The type system is a **_type scale_** consisting of **_13 different category type styles_** used across most components. All of the scale categories are completely reusable and adjustable by the end user.
+## 概要
+タイプ システムは、**タイプ スケール**でほとんどのコンポーネントで使用されている **13 の異なるカテゴリ タイプ スタイル**で構成されます。エンドユーザーはすべてのスケール カテゴリの完全な再利用、調整ができます。
 
-Here's a list of all 13 category styles as defined for the Bootstrap Theme in $ProductName$:
+すべての $ProductName$ のブートストラップ テーマに定義されている 13 のカテゴリ スタイルのリストを次に示します。
 
-| **Scale Category** | **Font Family** | **Font Weight** | **Font Size** | **Text Transform** | **Letter Spacing** | **Line Height** |
+| **スケール カテゴリ** | **フォント ファミリ** | **フォントの太さ** | **フォント サイズ** | **テキスト変換** | **文字間隔** | **行の高さ** |
 |--------------------|-----------------|-----------------|---------------|--------------------|--------------------|-----------------|
-| **h1**             |  System Font    | 500             | 2.5 rem       | none               | -.09375 rem        | 3 rem           |
-| **h2**             |  System Font    | 500             | 2 rem         | none               | -.0312 rem         | 2.4 rem         |
-| **h3**             |  System Font    | 500             | 1.75 rem      | none               | 0                  | 2.1 rem         |
-| **h4**             |  System Font    | 500             | 1.5 rem       | none               | .015625 rem        | 1.8 rem         |
-| **h5**             |  System Font    | 500             | 1.25 rem      | none               | 0                  | 1.5 rem         |
-| **h6**             |  System Font    | 500             | 1 rem         | none               | .009375 rem        | 1.2 rem         |
-| **subtitle-1**     |  System Font    | 400             | .875 rem      | none               | .009375 rem        | 1.5 rem         |
-| **subtitle-2**     |  System Font    | 400             | .9 rem        | none               | .00625 rem         | 1.35 rem        |
-| **body-1**         |  System Font    | 400             | 1 rem         | none               | .03125 rem         | 1.5 rem         |
-| **body-2**         |  System Font    | 400             | .9 rem        | none               | .015625 rem        | 1.5 rem         |
-| **button**         |  System Font    | 500             | 1 rem         | none               | .046875 rem        | 1.5 rem         |
-| **caption**        |  System Font    | 400             | .75 rem       | none               | .025 rem           | 1 rem           |
-| **overline**       |  System Font    | 400             | .625 rem      | uppercase          | .09375 rem         | 1 rem           |
+| **h1**             |  システム フォント    | 500             | 2.5 rem       | none               | -.09375 rem        | 3 rem           |
+| **h2**             |  システム フォント    | 500             | 2 rem         | none               | -.0312 rem         | 2.4 rem         |
+| **h3**             |  システム フォント    | 500             | 1.75 rem      | none               | 0                  | 2.1 rem         |
+| **h4**             |  システム フォント    | 500             | 1.5 rem       | none               | .015625 rem        | 1.8 rem         |
+| **h5**             |  システム フォント    | 500             | 1.25 rem      | none               | 0                  | 1.5 rem         |
+| **h6**             |  システム フォント    | 500             | 1 rem         | none               | .009375 rem        | 1.2 rem         |
+| **subtitle-1**     |  システム フォント    | 400             | .875 rem      | none               | .009375 rem        | 1.5 rem         |
+| **subtitle-2**     |  システム フォント    | 400             | .9 rem        | none               | .00625 rem         | 1.35 rem        |
+| **body-1**         |  システム フォント    | 400             | 1 rem         | none               | .03125 rem         | 1.5 rem         |
+| **body-2**         |  システム フォント    | 400             | .9 rem        | none               | .015625 rem        | 1.5 rem         |
+| **button**         |  システム フォント    | 500             | 1 rem         | none               | .046875 rem        | 1.5 rem         |
+| **caption**        |  システム フォント    | 400             | .75 rem       | none               | .025 rem           | 1 rem           |
+| **overline**       |  システム フォント    | 400             | .625 rem      | uppercase          | .09375 rem         | 1 rem           |
 
-Each theme defines its own type scale. This means each one of the themes we ship - Material, Fluent, Boostrap, and Indigo will have its own type scale. They all share the same _scale categories_, but can have different font family, weight, size, text transform, letter spacing, and line height.
+各テーマは独自のタイプ スケールを定義します。つまり、Material、Fluent、Boostrap、および Indigo の各テーマに独自のタイプ スケールがあります。これらはすべて同じ**スケール カテゴリ**を共有しますが、異なるフォント ファミリ、太さ、サイズ、テキスト変換、文字間隔、線の高さを持つことができます。
 
-## Usage
+## 使用方法
 
-### Changing font family
+### フォント ファミリの変更
 
-To change the font family in all components, all you have to do is overwrite the `--igc-font-family` CSS variable:
+すべてのコンポーネントのフォント ファミリを変更するには、`--igc-font-family` CSS 変数を上書きするだけです。
 
 ```css
 :root {
@@ -44,10 +44,10 @@ To change the font family in all components, all you have to do is overwrite the
 }
 ```
 
-### Changing type styles
+### タイプ スタイルの変更
 
-The type styles are used internally by most of the components in $ProductName$. For instance, the `igc-button` component uses the button type style. 
-To change any of the type style properties, we need to overwrite the corresponding CSS variable:
+タイプ スタイルは、$ProductName$ のほとんどのコンポーネントによって内部的に使用されます。たとえば、`igc-button` コンポーネントはボタン タイプ スタイルを使用します。 
+タイプ スタイルのプロパティを変更するには、対応する CSS 変数を上書きする必要があります:
 
 ```css
 :root {
@@ -57,4 +57,4 @@ To change any of the type style properties, we need to overwrite the correspondi
 }
 ```
 
-Keep in mind that this will update the global button typography styles. If you want to apply these changes to a specific button, you can make use of a class selector. 
+これにより、グローバル ボタンのタイポグラフィ スタイルが更新されることに注意してください。これらの変更を特定のボタンに適用する場合は、クラス セレクターを使用できます。 
