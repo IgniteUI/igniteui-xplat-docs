@@ -74,7 +74,7 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 ### 単位列
 
-単位列には、値列の右側に省略記号が表示されます。単位記号は、`ValueFormatAbbreviation` プロパティに依存します。「M」 は 「Million」 の略語です。
+単位列には、値列の右側に省略記号が表示されます。単位記号は、`ValueFormatAbbreviation` プロパティに依存します。「M」は「Million」の略語です。
 
 ### 列のカスタマイズ
 

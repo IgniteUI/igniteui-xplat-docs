@@ -18,8 +18,8 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 
 <table>
     <tr>
-        <th colspan="10" style="text-align: center !important">All</th>
-        <th colspan="4" style="text-align: center !important">*Without Gray*</th>
+        <th colspan="10" style="text-align: center !important">すべて</th>
+        <th colspan="4" style="text-align: center !important">グレーなし</th>
     </tr>
     <tr>
         <td>**50**</td>
