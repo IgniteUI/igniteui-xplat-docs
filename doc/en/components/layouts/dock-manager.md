@@ -464,7 +464,7 @@ Slot name | Description
 `unpinButton` | The unpin buttons.
 `splitterHandle` | The splitter handle.
 
-You can find each slot's corresponding part in the [CSS Parts](dock-manager.md#css-parts) section of this page.
+You can find each slot's corresponding part in the **CSS Parts** under **Styling** section of this page.
 
 ## Keyboard Navigation
 
