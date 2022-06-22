@@ -32,19 +32,30 @@ $ProductName$ ツリー要素を使用すると、ユーザーはツリービュ
 ```cmd
 npm install {PackageWebComponents}
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+<!-- end: Blazor -->
 
 `Tree` を使用する前に、次のように登録する必要があります:
-
 
 ```ts
 import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
 
 defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
-<!-- end: WebComponents -->
+
+```razor
+IgbTreeModule.Register(IgniteUIBlazor);
+IgbTreeItemModule.Register(IgniteUIBlazor);
+```
 
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
-
 
 ### ツリーの宣言
 `TreeItem` は、`Tree` に属するすべての項の表現です。項目は、`disabled`、`active`、`selected`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
@@ -68,10 +79,19 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 </igc-tree>
 ```
 
+```razor
+<IgbTree>
+    @foreach (var student in this.Students)
+    {
+        <IgbTreeItem Value="@item.Id" Label="@item.Name">
+        </IgbTreeItem>
+    }
+</IgbTree>
+```
+
 項目をデータ モデルにバインドして、展開された状態と選択された状態が基になるデータにも反映されるようにすることができます。
 
 - 静的な非バインド項目を作成してツリーを宣言します。
-<!-- WebComponents -->
 
 ツリーを描画するために、必ずしもデータ セットは必要ありません。公開された `label` プロパティを使用して、基になるデータ モデルなしで個々の項目を作成したり、`TreeItem` ラベルのカスタム スロット コンテンツを提供したりできます。
 
@@ -97,17 +117,34 @@ defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 </igc-tree>
 ```
 
+```razor
+<IgbTree>
+    <IgbTreeItem Label="North America">
+        <IgbTreeItem Label="United States"></IgbTreeItem>
+        <IgbTreeItem Label="Canada"></IgbTreeItem>
+        <IgbTreeItem Label="Mexico"></IgbTreeItem>
+    </IgbTreeItem>
+    <IgbTreeItem Label="South America">
+        <IgbTreeItem Label="Brazil"></IgbTreeItem>
+        <IgbTreeItem Label="Uruguay"></IgbTreeItem>
+    </IgbTreeItem>
+    <IgbTreeItem Label="Europe">
+        <IgbTreeItem Label="United Kingdom"></IgbTreeItem>
+        <IgbTreeItem Label="Germany"></IgbTreeItem>
+        <IgbTreeItem Label="Bulgaria"></IgbTreeItem>
+    </IgbTreeItem>
+</IgbTree>
+```
+
 > [!NOTE]
 > 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
-
-<!-- end: WebComponents -->
 
 ### 項目のインタラクション
 `Tree` は、項目のインタラクションのために次の API メソッドを提供します:
 - `expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。
 - `collapse` - すべての項目を縮小します。項目配列が渡されると、指定された項目のみが縮小されます。
-- `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。igcSelection イベントを発行しません。
-- `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。igcSelection イベントを発行しません。
+- `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。`Selection` イベントを発行しません。
+- `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。`Selection` イベントを発行しません。
 
 ## $Platform$ ツリーの選択
 
@@ -121,12 +158,20 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 <igc-tree selection="multiple">
 </igc-tree>
 ```
+```razor
+<IgbTree Selection=TreeSelection.Multiple>
+</IgbTree>
+```
 ### Cascade
 `Tree` カスケード項目の選択を有効にするには、selection プロパティを **cascade** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。 
 
 ```html
-<igc-tree selection="cascade">
+<igc-tree selection="Cascade">
 </igc-tree>
+```
+```razor
+<IgbTree Selection=TreeSelection.Multiple>
+</IgbTree>
 ```
 このモードでは、親の選択状態はその子の選択状態に完全に依存します。親に選択された子と選択解除された子がある場合、そのチェックボックスは不確定な状態になります。
 
@@ -170,8 +215,6 @@ $ProductName$ Tree は、サーバーから最小限のデータのみ取得し�
 </code-view>
 
 ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
-
-
 
 `loadingIndicator` スロットを使用して、読み込み領域にカスタム スロット コンテンツを提供できます。そのようなスロットが定義されていない場合、`CircularProgress` が使用されます。
 
@@ -229,3 +272,15 @@ igc-tree-item::part(active selected) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
+
+<!-- end: Blazor>
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React>

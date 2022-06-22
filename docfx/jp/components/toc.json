@@ -80,6 +80,24 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "パレット",
+    "href": "themes/palettes.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "エレベーション",
+    "href": "themes/elevations.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "タイポグラフィ",
+    "href": "themes/typography.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "レイアウト",
     "header": true
@@ -518,7 +536,7 @@
     "exclude": ["Blazor"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "チャート機能",
@@ -1391,6 +1409,12 @@
     "exclude": ["Angular", "React"],
     "name": "入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/input.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor", "WebComponents"],
+    "name": "日時入力",
+    "href": "inputs/date-time-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
