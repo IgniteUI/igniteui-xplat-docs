@@ -50,3 +50,9 @@ The following code snippet demonstrates how to add a hyperlink to the currently 
 ```ts
 this.spreadsheet.activeWorksheet.hyperlinks().add(new WorksheetHyperlink("A1", "http://www.infragistics.com", "Infragistics", "Infragistics Home Page"));
 ```
+
+ ## API Members
+
+ - `Hyperlinks`
+ - `Spreadsheet`
+ - `WorksheetHyperlink`

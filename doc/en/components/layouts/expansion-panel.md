@@ -78,7 +78,7 @@ The `IgcExpansionPanel` control allows all sorts of content to be added inside o
 
 The `IgcExpansionPanel` allows for easy customization of the header throught the eposed *title*, *subTitle* and *indicator* slots.
 
-Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**. 
+Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
@@ -100,7 +100,7 @@ The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C acce
  - <kbd>Alt + Arrow Down</kbd> - expands the focused panel
  - <kbd>Alt + Arrow Up</kbd> - collapses the focused panel
  - <kbd>Space</kbd>/<kbd>Enter</kbd> - toggle the expansion state of the focused panel
- 
+
 
 ## Styling
 
@@ -142,3 +142,7 @@ For more detailed information regarding the Expansion Panel's API, refer to the 
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `ExpansionPanel`

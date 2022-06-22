@@ -201,3 +201,19 @@ The following sample demonstrates how to style the track fill and thumb parts:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+  k`
+ - `HidePrimaryLabels`
+ - `HideSecondaryLabels`
+ - `HideTooltip`
+ - `PrimaryTicks`
+ - `RangeSlider`
+ - `SecondaryTicks`
+ - `SliderLabel`
+ - `Slider`
+ - `TickLabelRotation`
+ - `TickOrientation`
+ - `UpperBound`
+ - `ValueFormatOptions`
+ - `ValueFormat`

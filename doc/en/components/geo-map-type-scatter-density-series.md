@@ -289,3 +289,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+ ## API Members
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

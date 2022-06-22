@@ -210,3 +210,11 @@ addSeriesWith(locations: any[], brush: string)
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `ShapefileConverter`

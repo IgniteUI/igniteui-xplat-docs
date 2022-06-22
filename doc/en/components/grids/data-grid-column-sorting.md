@@ -122,3 +122,10 @@ grid1.sortDescriptions.add(colSortDesc);
     }
 }
 ```
+
+ ## API Members
+
+ - `HeaderClickAction`
+ - `SortByMultipleColumnsTriState`
+ - `SortByMultipleColumns`
+ - `SortByOneColumnOnlyTriState`

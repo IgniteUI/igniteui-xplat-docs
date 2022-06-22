@@ -337,3 +337,16 @@ createContourSeries(data: any[])
     }
 }
 ```
+
+ ## API Members
+
+ - `FillScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`
+ - `ValueBrushScale`
+ - `ValueMemberPath`

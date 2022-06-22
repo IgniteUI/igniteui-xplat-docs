@@ -243,3 +243,11 @@ onDataLoaded(jsonData: any[]) {
 }
 ```
 
+ ## API Members
+
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicMap`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`

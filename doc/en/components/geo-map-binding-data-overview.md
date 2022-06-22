@@ -17,3 +17,9 @@ The following section list some of data source that you can bind in the geograph
 - [Binding CSV Files](geo-map-binding-data-csv.md)
 - [Binding Data Models](geo-map-binding-data-model.md)
 - [Binding Multiple Sources](geo-map-binding-multiple-sources.md)
+
+
+ ## API Members
+
+- `GeographicMap`
+- `DataSource`

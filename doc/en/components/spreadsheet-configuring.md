@@ -249,3 +249,17 @@ The following code snippets show how to configure the spreadsheet's zoom level:
 ```ts
 this.spreadsheet.zoomLevel = 200;
 ```
+
+## API Members
+
+ - `ActiveCell`
+ - `ActiveSelection`
+ - `CellRanges`
+ - `ExtendSelection`:
+ - `SelectionMode`
+ - `SpreadsheetCellRange`
+ - `SpreadsheetSelection`
+ - `Spreadsheet`
+ - `WindowOptions`
+ - `Workbook`
+ - `ZoomLevel`

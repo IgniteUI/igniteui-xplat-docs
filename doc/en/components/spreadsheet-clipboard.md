@@ -59,3 +59,8 @@ public paste(): void {
     this.spreadsheet.executeAction(SpreadsheetAction.Paste);
 }
 ```
+
+ ## API Members
+
+ - `SpreadsheetAction`
+ - `Spreadsheet`

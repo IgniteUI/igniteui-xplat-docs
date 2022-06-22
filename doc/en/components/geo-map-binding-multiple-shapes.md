@@ -1064,3 +1064,10 @@ export class MapBindingMultipleShapes extends SampleBase {
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `GeographicSymbolSeries`
+ - `ShapefileConverter`

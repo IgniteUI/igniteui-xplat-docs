@@ -303,3 +303,12 @@ addSeriesWith(locations: any[])
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicProportionalSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `RadiusMemberPath`
+ - `RadiusScale`

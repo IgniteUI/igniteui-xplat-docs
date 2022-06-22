@@ -103,7 +103,7 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ### Text Properties
 
-You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**. 
+You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
 
 To hide the default label of the progress indicator, use the `hideLabel` attribute.
 
@@ -124,7 +124,7 @@ The following sample demonstrates the above configuration:
 
 You can dynamically change the value of the progress indicator by using external controls like buttons. To achieve this, we can bind the value to a class property:
 
-<code-view style="height:200px" 
+<code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
            alt="$Platform$ Linear Progress Dynamic Example"
@@ -196,3 +196,9 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API Members
+
+ - `Button`
+ - `Calendar`
+ - `LinearProgress`

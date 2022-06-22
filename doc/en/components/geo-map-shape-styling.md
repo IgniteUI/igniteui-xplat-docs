@@ -403,3 +403,8 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
     args.shapeStrokeThickness = shapeStyle.strokeThickness;
 }
 ```
+
+ ## API Members
+
+ - `GeographicShapeSeries`
+ - `XamGeographicMap`

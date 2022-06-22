@@ -57,8 +57,8 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 The simplest way to start using the `Tree` is as follows:
 
 ### Declaring a tree
-`TreeItem` is the representation of every item that belongs to the `Tree`.  
-Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement. 
+`TreeItem` is the representation of every item that belongs to the `Tree`.
+Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
 The `value` property can be used to add a reference to the data entry the item represents.
 
 Items can be declared using one of the following approaches.
@@ -102,10 +102,10 @@ In order to render a tree you do not necessarily need a data set - individual it
             I am a parent item 1
 	        <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">    
+	    <igc-tree-item label="I am a child item 1">
 	    </igc-tree-item>
     </igc-tree-item>
-	
+
     <igc-tree-item>
         <div slot="label">
             I am a parent item 2
@@ -163,7 +163,7 @@ To enable multiple item selection in the `Tree` just set the `selection` propert
 </IgbTree>
 ```
 ### Cascade
-To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item. 
+To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item.
 
 ```html
 <igc-tree selection="Cascade">
@@ -201,7 +201,7 @@ When selection is enabled, end-user selection of items is only allowed through t
 
  - <kbd>Click</kbd> - when performed on the item checkbox, toggles selection of the item if selection is enabled. Otherwise, focuses the item
  - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
- 
+
 <!-- WebComponents -->
 ## $Platform$ Tree Load On Demand
 
@@ -214,7 +214,7 @@ The $ProductName$ Tree can be rendered in such way that it requires the minimal 
            github-src="grids/tree/load-on-demand">
 </code-view>
 
-After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded. 
+After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded.
 
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
 
@@ -281,4 +281,9 @@ igc-tree-item::part(active selected) {
 <!-- React -->
 * [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React>
+<!-- end: React -->
+
+## API Members
+
+ - `TreeItem`
+ - `Tree`

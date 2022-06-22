@@ -56,3 +56,8 @@ The following demonstrates how to enable row highlighting on the $Platform$ data
     IsRowHoverEnabled="true"
     RowHoverBackground="#bfbfff" />
 ```
+
+ ## API Members
+
+ - `IsRowHoverEnabled`
+ - `RowHoverBackground`

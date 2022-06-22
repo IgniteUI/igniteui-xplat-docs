@@ -214,3 +214,9 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 ```
 >
 <!-- -->
+
+ ## API Members
+
+ - `Load`
+ - `WorkbookInProcessRuntime`
+ - `Workbook`

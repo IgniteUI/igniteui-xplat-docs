@@ -365,7 +365,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ## Customization
 
-The Dock Manager component provides the option to customize all buttons using slots and parts. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier. 
+The Dock Manager component provides the option to customize all buttons using slots and parts. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier.
 
 Let's utilize these slots and parts to create a customized Dock Manager layout. First, we will provide our own icons, using the `closeButton`, `maximizeButton`, `minimizeButton`, `pinButton` and `unpinButton` slots:
 
@@ -402,16 +402,16 @@ Then, we will use the exposed parts in our stylesheet. This way we have full con
 igc-dockmanager::part(unpinned-tab-area) {
     background: #bee9ec;
 }
-  
+
 igc-dockmanager::part(unpinned-tab-area--left) {
     border-right: 1px dashed #004d7a;
 }
-  
+
 igc-dockmanager::part(unpinned-tab-area--bottom) {
     border-top: 1px dashed #004d7a;
 }
 
-igc-dockmanager::part(tab-header-close-button), 
+igc-dockmanager::part(tab-header-close-button),
 igc-dockmanager::part(pane-header-close-button) {
     background-color: #e73c7e;
 }
@@ -605,3 +605,6 @@ The Dock Manager exposes [`resourceStrings`]({environment:infragisticsBaseUrl}/p
 
 <!-- end: WebComponents -->
 
+ ## API Members
+
+ - `DockManager`

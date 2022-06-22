@@ -25,3 +25,6 @@ The $Platform$ Geographic Map component supports the following types of geograph
 - [Using Shape Polygon Series](geo-map-type-shape-polygon-series.md)
 - [Using Shape Polyline Series](geo-map-type-shape-polyline-series.md)
 
+ ## API Members
+
+ - `XamGeographicMap`

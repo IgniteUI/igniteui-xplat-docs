@@ -257,3 +257,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
     }
 }
 ```
+
+ ## API Members
+
+ - `Fields`
+ - `GeographicPolylineSeries`
+ - `ImportCompleted`
+ - `ItemsSource`
+ - `Points`
+ - `ShapefileConverter`

@@ -125,3 +125,8 @@ public class EsriStyle
     public static string UsaRailNetwork = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
 }
 ```
+
+ ## API Members
+
+ - `ArcGISOnlineMapImagery`
+ - `XamGeographicMap`

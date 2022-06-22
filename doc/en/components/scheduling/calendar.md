@@ -477,3 +477,16 @@ The following sample demonstrates the above CSS configuration:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `ActiveDate`
+ - `ActiveView`
+ - `After`
+ - `Before`
+ - `Between`
+ - `Calendar`
+ - `Change`
+ - `DateRangeDescriptor`
+ - `DateRangeType`
+ - `DateRange`

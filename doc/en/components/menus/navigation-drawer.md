@@ -57,7 +57,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 
 The simplest way to start using the `NavDrawer` is as follows:
 
-```html    
+```html
 <igc-nav-drawer open="true">
     <igc-nav-drawer-header-item>
         Sample Drawer
@@ -70,7 +70,7 @@ The simplest way to start using the `NavDrawer` is as follows:
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -122,7 +122,7 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -180,7 +180,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </IgbRadioGroup>
 
 @code {
-    
+
     public IgbNavDrawer NavDrawerRef { get; set; }
 
     public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
@@ -240,7 +240,7 @@ public void OnMenuIconClick()
 {
     if(this.NavDrawerRef != null)
     {
-        this.NavDrawerRef.Show();        
+        this.NavDrawerRef.Show();
     }
 }
 ```
@@ -258,7 +258,7 @@ If all goes well, your component should now look like this:
 
 With the mini variant, the Navigation Drawer changes its width instead of closing. It is used to maintain quick navigation, available at all times, leaving just the icons. To achieve that, you only need to set up the `mini` slot of the drawer.
 
-```html    
+```html
 <igc-nav-drawer position="start">
     <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
     <igc-nav-drawer-item>
@@ -277,7 +277,7 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
             <igc-icon slot="icon" name="search"></igc-icon>
         </igc-nav-drawer-item>
     </div>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -379,3 +379,14 @@ Additional Web Components that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Button`
+ - `Icon`
+ - `NavDrawerHeaderItem`
+ - `NavDrawerItem`
+ - `NavDrawer`
+ - `Navbar`
+ - `RadioGroup`
+ - `Radio`

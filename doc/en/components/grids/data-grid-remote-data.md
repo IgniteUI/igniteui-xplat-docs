@@ -104,3 +104,7 @@ vds.entitySet = ("Orders");
 let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = vds;
 ```
+
+ ## API Members
+
+ - `Grid`

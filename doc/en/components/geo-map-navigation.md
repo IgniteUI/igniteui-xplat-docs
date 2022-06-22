@@ -77,3 +77,10 @@ The following table summarizes properties that can be used in navigation of the 
 |`ActualWindowScale`| number | Indicates current size of the navigation window in of the map control. It is equivalent to smallest value of Width or Height stored in the `ActualWindowRect` property |
 |`ActualWindowPositionHorizontal`| number | Indicates current horizontal position of the navigation window’s anchor point from the left edge of the map control. It is equivalent to value stored in the Left of the `ActualWindowRect` property. |
 |`ActualWindowPositionVertical`| number | Indicates vertical position of the navigation window’s anchor point from the top edge of the map control. It is equivalent to value stored in the Top of the `ActualWindowRect` property. |
+
+ ## API Members
+
+ - `ActualWindowRect`
+ - `WindowRect`
+ - `XamGeographicMap`
+ - `Zoomable`

@@ -342,3 +342,16 @@ createAreaSeries(data: any[]) {
     }
 }
 ```
+
+ ## API Members
+
+ - `ColorMemberPath`
+ - `ColorScale`
+ - `CustomPaletteColorScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`

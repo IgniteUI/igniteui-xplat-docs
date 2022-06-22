@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 The $ProductName$ charts provide simple and easy to use APIs to plot various types of charts.
 
-## $Platform$ Category Chart API
+## $Platform$ Category Chart API Members
 
 The $Platform$ `CategoryChart` has the following API members:
 
@@ -18,7 +18,7 @@ Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
  - `DataSource` <br> - `ExcludedProperties` <br> - `IncludedProperties` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> - `XAxisGap` <br> - `XAxisOverlap` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes` <br> <br> <br>
 
-## $Platform$ Financial Chart API
+## $Platform$ Financial Chart API Members
 
 The $Platform$ `FinancialChart` has the following API members:
 
@@ -26,7 +26,7 @@ Chart Properties | Axis Properties | Series Properties
 -----------------|-----------------|-------------------
 - `DataSource` <br> - `ExcludedProperties` <br> - `IncludedProperties` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `ToolTipType`  <br> - `CrosshairsDisplayMode` |  - `XAxisInterval` <br> - `XAxisLabelLocation` <br> - `XAxisTitle` <br> - `YAxisInterval` <br> - `YAxisLabelLocation`  <br> - `YAxisTitle` <br> | - `ChartType` <br>  - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `MarkerTypes`
 
-## $Platform$ Data Chart API
+## $Platform$ Data Chart API Members
 
 The $Platform$ `XamDataChart` has the following API members:
 
@@ -51,7 +51,7 @@ Radial Series | Polar Series
 - `RadialLineSeries` <br> -  `RadialAreaSeries` <br> -  `RadialPieSeries` <br> -  `RadialColumnSeries` <br> <br> | - `PolarScatterSeries` <br> -  `PolarLineSeries` <br> -  `PolarAreaSeries` <br> -  `PolarSplineSeries` <br> -  `PolarSplineAreaSeries` <br>
 
 
-## $Platform$ Data Legend API
+## $Platform$ Data Legend API Members
 
 The $Platform$ `XamDataLegend` has the following API members:
 

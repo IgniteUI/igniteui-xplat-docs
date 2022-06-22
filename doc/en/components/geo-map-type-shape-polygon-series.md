@@ -314,3 +314,11 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`

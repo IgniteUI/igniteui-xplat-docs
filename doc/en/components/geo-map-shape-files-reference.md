@@ -106,3 +106,12 @@ The following topics provide additional information related to this topic.
 
  * [Binding Shape Files](geo-map-binding-shp-file.md)
  * [Geographic Series](geo-map-type-series.md)
+
+  ## API Members
+
+ - `XamGeographicMap`
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`
