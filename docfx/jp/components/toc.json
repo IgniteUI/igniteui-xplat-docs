@@ -1411,7 +1411,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React", "Blazor", "WebComponents"],
     "name": "日時入力",
     "href": "inputs/date-time-input.md",
     "status": "NEW"
