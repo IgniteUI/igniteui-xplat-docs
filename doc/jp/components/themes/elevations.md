@@ -12,7 +12,7 @@ $ProductName$ のエレベーションの実装は、[マテリアル デザイ�
 
 ## 概要
 
-$ProductName$ shadows closely follow the Material Design guidelines for establishing depth hierarchy based on 25 elevation levels. The size of the shadow cast is related to the elevation level number. The higher the elevation level number, the larger the shadow will be. Elevations in $ProductName$ are exposed as CSS variables. Each variable stores a set of 3 `box-shadows`. These `box-shadows` represent the umbra, penumbra, and antumbra elements that are the properties of shadows as observed in the real world.
+$ProductName$ シャドウは、25 のエレベーション レベルに基づく深度階層を確立するためのマテリアル デザイン ガイドラインに厳密に準拠します。シャドウ キャストのサイズは、エレベーション レベル番号に関連しています。エレベーション レベル番号が高いほど、シャドウが大きくなります。$ProductName$ のエレベーションは、CSS 変数として公開されます。各変数は、3 つの `box-shadows` のセットを格納します。これらの `box-shadows` は、実世界で観察されるシャドウのプロパティである本影、半影、および擬本影を表します。
 
 $ProductName$ のブートストラップ テーマのさまざまなコンポーネントで使用される静止エレベーションと、それに対応する CSS 変数名のリストを次に示します:
 

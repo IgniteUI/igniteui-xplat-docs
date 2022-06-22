@@ -8,7 +8,7 @@ _language: ja
 
 # $ProductName$ のパレット
 
-$ProductName$ exposes CSS variables that allow you to update the colors in your application in a consistent way.
+$ProductName$ は、アプリケーションで一貫した方法でカラーを更新できる CSS 変数を公開します。
 
 ## 概要
 
