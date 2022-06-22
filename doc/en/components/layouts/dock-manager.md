@@ -475,32 +475,32 @@ The shortcuts are as follows:
 
 ### Docking
 
-- <kbd>Cmd/Ctrl + Shift + Arrow up</kbd> Docks to global top
-- <kbd>Cmd/Ctrl + Shift + Arrow down</kbd> Docks to global bottom
-- <kbd>Cmd/Ctrl + Shift + Arrow right</kbd> Docks to global right
-- <kbd>Cmd/Ctrl + Shift + Arrow left</kbd> Docks to global left
-- <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
-- <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
-- <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
-- <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow up</kbd> Docks to global top
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow down</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow right</kbd> Docks to global right
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow left</kbd> Docks to global left
+- <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift</kbd> + <kbd>Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift</kbd> + <kbd>Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift</kbd> + <kbd>Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focuses next tab in document host
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focuses previous tab in document host
- - <kbd>Alt + F6</kbd> Focuses next content pane
- - <kbd>Alt + Shift + F6</kbd> Focuses previous content pane
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow right</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Alt</kbd> + <kbd>F6</kbd> Focuses next content pane
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
 Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  Starts from the first document forward
- - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> Starts from the first pane forward
- - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> Starts from the last document backwards
- - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> Starts from the last pane backwards
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  Starts from the first document forward
+ - <kbd>Alt</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>F8</kbd> Starts from the first pane forward
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last document backwards
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
 
 ### Other
- - <kbd>Alt + F3</kbd> Closes the active pane
+ - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
 Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
