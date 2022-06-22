@@ -135,7 +135,7 @@ You can dynamically change the value of the progress indicator by using external
 
 ## Styling
 
-The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
+The Linear Progress Indicator component exposes CSS parts for almost all of its inner elements.
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

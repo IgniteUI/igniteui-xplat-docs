@@ -78,7 +78,7 @@ The simplest way to display the snackbar component is to use its `Show` method a
 
 ### Display Time
 
-Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 miliseconds.
+Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 milliseconds.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

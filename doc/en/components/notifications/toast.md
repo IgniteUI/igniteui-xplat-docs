@@ -83,7 +83,7 @@ The simplest way to display the toast component is to use its `Show` method and 
 
 ### Properties
 
-Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 miliseconds.
+Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 milliseconds.
 
 By default, the toast component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the toast will remain visible.
 

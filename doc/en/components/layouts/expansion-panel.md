@@ -76,7 +76,7 @@ We can do this by binding to the `igcOpened` and `igcClosed` event emitters:
 ## Component Customization
 The `IgcExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
 
-The `IgcExpansionPanel` allows for easy customization of the header throught the eposed *title*, *subTitle* and *indicator* slots.
+The `IgcExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 
 Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
 
