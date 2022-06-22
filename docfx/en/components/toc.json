@@ -533,7 +533,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
     "status": "UPDATED"
